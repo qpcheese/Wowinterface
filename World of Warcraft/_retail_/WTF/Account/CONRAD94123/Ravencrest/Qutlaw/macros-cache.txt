@@ -1,0 +1,44 @@
+VER 3 010000000000000C "cb+st" "132305"
+#showtooltip secret technique
+/castsequence reset=5 Cold Blood, Secret Technique
+END
+VER 3 0100000000000008 "DÖDA" "134400"
+#showtooltip Secret Technique
+/cast cold blood
+/cast Secret Technique
+END
+VER 3 0100000000000003 "EXSAN" "132305"
+/castsequence reset=10 Marked for Death, Kidney Shot, Garrote, shiv, Echoing Reprimand, Rupture, deathmark, Exsanguinate, Mutilate, Envenom, Mutilate, Envenom
+END
+VER 3 0100000000000001 "Grapl" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Grappling hook
+END
+VER 3 0100000000000007 "negerslakt." "132177"
+/castsequence reset=10 Garrote, ambush, kidney shot, Echoing Reprimand, rupture, deathmark, exsanquinate, mark for death, Crimson Tempest , 
+END
+VER 3 010000000000000D "quad" "132108"
+/castsequence reset=20 Numbing Poison, Crippling Poison, Amplifying Poison, Deadly Poison
+END
+VER 3 0100000000000004 "SHADOWKICK" "132303"
+#showtooltip
+/cast [target=focus] Shadowstep
+/cast [target=focus] Kick
+END
+VER 3 0100000000000006 "sTEALTH" "134400"
+#showtooltip Stealth
+/cast !Stealth
+END
+VER 3 010000000000000B "the move" "132177"
+/castsequence reset=30 Marked for Death, Kidney Shot, Garrote, Echoing Reprimand, Rupture, exsanguinate, Deathmark, thistle tea, shiv, Sepsis, mutilate, envenom, Thistle tea mutilate, envenom, mutilate, envenom
+END
+VER 3 0100000000000010 "tirnket" "134400"
+#showtooltip
+/use 13
+END
+VER 3 0100000000000002 "ToT" "INV_MISC_QUESTIONMARK"
+/use [nomod,@Loveshisha] Tricks of the Trade
+/stopmacro [nomod]
+/run t=GetUnitName("target"):gsub(" %(%*%)","")
+/run b=GetMacroBody("ToT"):gsub("@[^%]]*","@"..t,1)
+/run EditMacro("ToT",nil,nil,b)
+END

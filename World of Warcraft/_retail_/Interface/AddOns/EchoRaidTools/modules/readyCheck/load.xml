@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+	<Script file="readyCheck.lua"/>
+	<Script file="config.lua"/>
+	<Script file="SavedSettings.lua"/>
+	<Script file="EventHandling.lua"/>
+	<Script file="Types.lua"/>
+    <Script file="Templates\ReadyCheckWindow.lua"/>
+
+    <Include file="Templates\ReadyCheckWindow.xml"/>
+	
+</Ui>

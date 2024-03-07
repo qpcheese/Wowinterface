@@ -1,0 +1,10 @@
+package-as: UltraSquirt
+
+ignore:
+    - .git/
+    - .gitattributes
+
+
+enable-nolib-creation: no
+
+license-output: LICENSE

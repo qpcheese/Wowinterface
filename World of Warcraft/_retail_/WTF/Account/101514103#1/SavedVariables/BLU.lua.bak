@@ -1,0 +1,19 @@
+
+BLUDB = {
+	["profileKeys"] = {
+		["Qpfromagee - Ragnaros"] = "Default",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["MuteLevelDefault"] = true,
+			["MuteQuestDefault"] = true,
+			["MuteBattlePetLevelDefault"] = true,
+			["MuteHonorDefault"] = true,
+			["MuteQuestAcceptDefault"] = true,
+		},
+	},
+}

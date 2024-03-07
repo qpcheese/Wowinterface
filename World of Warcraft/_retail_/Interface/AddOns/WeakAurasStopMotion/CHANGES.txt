@@ -1,0 +1,10 @@
+lightweight tag ea6618c750992229711611173b6c5a904ebe59f7 1.0.4
+Author:	Infus <infus@squorn.de>
+Date:	Tue Feb 20 20:23:39 2024 +0100
+
+commit ea6618c750992229711611173b6c5a904ebe59f7
+Author: Infus <infus@squorn.de>
+Date:   Tue Feb 20 20:23:39 2024 +0100
+
+    Update .toc file
+

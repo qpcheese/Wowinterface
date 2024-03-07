@@ -1,0 +1,42 @@
+tag 69963da9aa8a2d9bd521eadb599d595a46b1d3df v3.049
+Author:	max-ri <51713394+max-ri@users.noreply.github.com>
+Date:	Tue Dec 19 15:26:45 2023 +0100
+
+v3.049
+
+commit 0b12fd323be124661fa4046332bc59d94036bd96
+Author: max-ri <51713394+max-ri@users.noreply.github.com>
+Date:   Tue Dec 19 15:26:44 2023 +0100
+
+    v3.049
+
+commit fd4e41beb46d86441e70bd60659d201b3a1fdd4e
+Author: max-ri <51713394+max-ri@users.noreply.github.com>
+Date:   Tue Dec 19 15:23:35 2023 +0100
+
+    bugfix: stop scanning for elements once a matching one was found
+
+commit 48f63fcb7b4c70bee1d8b641b8e02fcc896e1958
+Author: max-ri <max_r_@web.de>
+Date:   Mon Dec 18 15:00:01 2023 +0100
+
+    bugfix: error when you click on the "Reset guide" button when no guide is selected
+
+commit 8a55e88fe4ff012771af6d9551106bf0b4a6bf8a
+Author: max-ri <51713394+max-ri@users.noreply.github.com>
+Date:   Tue Dec 12 09:50:36 2023 +0100
+
+    bugfix: bug when opening editor
+
+commit 35699d7a7f413fd4d9e34defe8cda157550f4172
+Author: max-ri <max_r_@web.de>
+Date:   Mon Dec 11 14:02:47 2023 +0100
+
+    bugfix: auto detection for learning professions was not always working
+
+commit 19542f7e0a928f5a46cfdad6242888db7651f999
+Author: max-ri <max_r_@web.de>
+Date:   Wed Dec 6 16:20:51 2023 +0100
+
+    bugfix: when multiple active/available quests are offered at an npc, an incomplete quest can get opened automatically
+

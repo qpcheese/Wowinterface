@@ -1,0 +1,12 @@
+tag 766f6e98006bdca9bf06c3907d2a1492790ddf75 10.2.5
+Author:	Rubio <RubioTwitch@curseforge>
+Date:	Wed Jan 17 10:15:29 2024 -0600
+
+Release 10.2.5
+
+commit 4a23ebfa18a1f696b4c76de831e4a7e809767a43
+Author: Rubio <RubioTwitch@curseforge>
+Date:   Wed Jan 17 10:14:47 2024 -0600
+
+    Bump TOC and version to 10.2.5
+

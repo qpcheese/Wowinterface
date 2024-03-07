@@ -1,0 +1,364 @@
+
+AdiBagsDB = {
+	["namespaces"] = {
+		["FilterOverride"] = {
+			["profiles"] = {
+				["Default"] = {
+					["version"] = 3,
+					["overrides"] = {
+						[204973] = "Consumable#Runes/phial",
+						[194820] = "Consumable#Runes/phial",
+						[180653] = "New#|cff7997dbKeystone|r",
+						[204072] = "Consumable#Runes/phial",
+						[191383] = "Consumable#Runes/phial",
+						[191341] = "Consumable#Runes/phial",
+						[194823] = "Consumable#Runes/phial",
+						[49040] = "New#|cff7997dbKeystone|r",
+						[191328] = "Consumable#Runes/phial",
+					},
+				},
+			},
+		},
+		["Cata"] = {
+		},
+		["WoW"] = {
+		},
+		["Battle Pet Items"] = {
+		},
+		["DataSource"] = {
+			["profiles"] = {
+				["Default"] = {
+					["format"] = "free",
+				},
+			},
+		},
+		["Shadowlands"] = {
+		},
+		["CurrencyFrame"] = {
+		},
+		["Junk"] = {
+		},
+		["TBC"] = {
+		},
+		["ItemLevel"] = {
+		},
+		["WoD"] = {
+		},
+		["MoneyFrame"] = {
+		},
+		["Dragonflight"] = {
+			["profiles"] = {
+				["Default"] = {
+					["moveJewelcrafting"] = true,
+					["artisan_curios"] = false,
+					["moveMergedConsumables"] = true,
+					["magmammoth"] = false,
+					["primordial_stones"] = false,
+					["coloredCategories"] = false,
+					["drakewatcher"] = false,
+					["fortune_card"] = false,
+					["phoenix_wishwing"] = false,
+					["moveEnchantingInsightoftheBlue"] = true,
+					["snailemental"] = false,
+					["crests"] = false,
+					["magmashell"] = false,
+					["treasure_sack"] = false,
+					["mossy_mammoth"] = false,
+					["profession_knowledge"] = false,
+					["moveEnchanting"] = true,
+					["chip_pet"] = false,
+					["moveHerbs"] = true,
+					["moveHerbsSeeds"] = true,
+					["time_rifts"] = false,
+					["moveInscription"] = true,
+					["storms_fury"] = false,
+					["primal_storms"] = false,
+					["fyrakk"] = false,
+					["moveFishingLures"] = true,
+					["contracts"] = false,
+					["reputation"] = false,
+					["loamm"] = false,
+					["moveAlchemyFlasks"] = true,
+					["moveCooking"] = true,
+					["moveEngineering"] = true,
+					["lizis_reins"] = false,
+					["moveCloth"] = true,
+					["temperamental_skyclaw"] = false,
+					["zskera_vaults"] = false,
+					["darkmoon_cards"] = false,
+					["diamanthia_journal"] = false,
+					["moveMergedForbiddenReach1007"] = true,
+				},
+			},
+		},
+		["ItemCategory"] = {
+			["profiles"] = {
+				["Default"] = {
+					["splitBySubclass"] = {
+						["Recipe"] = false,
+						["Consumable"] = false,
+						["Gem"] = false,
+						["Tradeskill"] = false,
+						["Glyph"] = false,
+						["Miscellaneous"] = false,
+					},
+				},
+			},
+		},
+		["abe_dragonflight"] = {
+		},
+		["NewItem"] = {
+			["profiles"] = {
+				["Default"] = {
+					["glowColor"] = {
+						0.9960784912109375, -- [1]
+						nil, -- [2]
+						0.5529412031173706, -- [3]
+						0.8700000047683716, -- [4]
+					},
+					["glowScale"] = 2.25,
+				},
+			},
+		},
+		["MoP"] = {
+		},
+		["AdiBags_TooltipInfo"] = {
+		},
+		["Legion"] = {
+		},
+		["Wrath"] = {
+		},
+		["Equipment"] = {
+			["profiles"] = {
+				["Default"] = {
+					["dispatchRule"] = "one",
+					["armorTypes"] = true,
+				},
+			},
+		},
+		["BfA"] = {
+		},
+		["Bound"] = {
+		},
+		["ItemSets"] = {
+		},
+		["Dragonflight Crafting"] = {
+			["profiles"] = {
+				["Default"] = {
+					["inscription"] = false,
+					["jewelcrafting"] = false,
+					["ore_stone"] = false,
+					["cooking"] = false,
+					["crafting"] = false,
+					["parts"] = false,
+					["alchemy"] = false,
+					["titan_matrix"] = false,
+					["leather"] = false,
+					["cloth"] = false,
+					["enchanting"] = false,
+					["herbs"] = false,
+					["reagents"] = false,
+				},
+			},
+		},
+	},
+	["char"] = {
+		["Qpfromage - Ragnaros"] = {
+			["collapsedSections"] = {
+				["05. MoP -  Skinning#05. MoP -  Skinning"] = true,
+				["08. BfA -  Cloth#08. BfA -  Cloth"] = true,
+				["Free space#Free space"] = true,
+				["BoA#BoA"] = true,
+				["|cffa00000|rCloth#|cffa00000|rCloth"] = true,
+				["|cffa00000|rForbidden Reach (10.0.7)#|cffa00000|rForbidden Reach (10.0.7)"] = true,
+				["08. BfA - Other#08. BfA - Other"] = true,
+				["|cffa00000|rConsumables#|cffa00000|rConsumables"] = true,
+				["|cffa00000|rEmbers of Neltharion (10.1)#|cffa00000|rEmbers of Neltharion (10.1)"] = true,
+				["Quest#Quest"] = true,
+				["10. 10 - Trade Materials#10. 10 - Trade Materials"] = true,
+				["04. Cata - Equipment (The Vortex Pinnacle)#04. Cata - Equipment (The Vortex Pinnacle)"] = true,
+				["|cffa00000|r|cff1eff00Reputation Items|r#|cffa00000|r|cff1eff00Reputation Items|r"] = true,
+				["Key#Key"] = true,
+				["10. 10 - Equipment (Uldaman: Legacy of Tyr)#10. 10 - Equipment (Uldaman: Legacy of Tyr)"] = true,
+				["08. BfA - Equipment (Freehold)#08. BfA - Equipment (Freehold)"] = true,
+				["|cffa00000|rCavern Currencies#|cffa00000|rCavern Currencies"] = true,
+				["10. 10 - Equipment (Neltharus)#10. 10 - Equipment (Neltharus)"] = true,
+				["10. 10 - Equipment (Halls of Infusion)#10. 10 - Equipment (Halls of Infusion)"] = true,
+				["08. BfA - Equipment (The Underrot)#08. BfA - Equipment (The Underrot)"] = true,
+				["|cffa00000|rGeneral Crafting Reagents#|cffa00000|rGeneral Crafting Reagents"] = true,
+				["10. 10 - Equipment (Brackenhide Hollow)#10. 10 - Equipment (Brackenhide Hollow)"] = true,
+				["|cffa00000|rFyrak Assault#|cffa00000|rFyrak Assault"] = true,
+				["07. Legion - Equipment (Neltharion's Lair)#07. Legion - Equipment (Neltharion's Lair)"] = true,
+				["|cffa00000|rFood#|cffa00000|rFood"] = true,
+				["05. MoP -  Cooking#05. MoP -  Cooking"] = true,
+				["|cffa00000|r|cff00ff42Forbidden Reach (10.0.7)|r#|cffa00000|r|cff00ff42Forbidden Reach (10.0.7)|r"] = true,
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Qpfromage - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["virtualStacks"] = {
+				["stackable"] = true,
+				["freeSpace"] = false,
+				["incomplete"] = true,
+			},
+			["columnWidth"] = {
+				["Backpack"] = 9,
+			},
+			["maxHeight"] = 0.8999999999999999,
+			["theme"] = {
+				["currentTheme"] = "lol",
+				["themes"] = {
+					["lol"] = {
+						["reagentBank"] = {
+							["sectionFont"] = {
+								["name"] = "Friz Quadrata TT",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 12,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["border"] = "Blizzard Tooltip",
+							["bagFont"] = {
+								["name"] = "Friz Quadrata TT",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["background"] = "Blizzard Dialog Background",
+							["borderWidth"] = 16,
+							["insets"] = 3,
+						},
+						["bank"] = {
+							["sectionFont"] = {
+								["name"] = "Friz Quadrata TT",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 12,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["border"] = "Blizzard Tooltip",
+							["bagFont"] = {
+								["name"] = "Friz Quadrata TT",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["background"] = "Blizzard Dialog Background",
+							["borderWidth"] = 16,
+							["insets"] = 3,
+						},
+						["backpack"] = {
+							["sectionFont"] = {
+								["name"] = "Friz Quadrata TT",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 12,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["border"] = "Blizzard Tooltip",
+							["bagFont"] = {
+								["name"] = "Friz Quadrata TT",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["background"] = "Blizzard Dialog Background",
+							["borderWidth"] = 16,
+							["insets"] = 3,
+						},
+					},
+				},
+				["backpack"] = {
+					["sectionFont"] = {
+						["name"] = "Bebas Neue Cyrillic Regular",
+					},
+					["borderWidth"] = 53,
+					["bagFont"] = {
+						["name"] = "Bebas Neue Cyrillic Regular",
+						["size"] = 22,
+					},
+					["background"] = "Solid",
+					["border"] = "Details BarBorder 2",
+					["insets"] = -1,
+				},
+			},
+			["filters"] = {
+				["Bears Battle Pet Stones"] = false,
+				["Battle Pet Reagents"] = false,
+				["Dragonflight Crafting"] = false,
+				["Keystones"] = false,
+				["Bears Battle Pet Currency"] = false,
+				["Dragonflight"] = false,
+				["ItemSets"] = false,
+				["Bears Battle Pet Toys"] = false,
+				["Bears Battle Pet Costumes"] = false,
+				["Bears Battle Pet Items"] = false,
+				["Bound"] = false,
+				["Bears Battle Pet Eggs"] = false,
+				["Bears Battle Pet Supplies"] = false,
+			},
+			["compactLayout"] = true,
+			["autoDeposit"] = true,
+			["scale"] = 0.9,
+			["positions"] = {
+				["Backpack"] = {
+					["xOffset"] = -8.001027213176712,
+					["yOffset"] = 9.500136028392149,
+				},
+			},
+			["experiments"] = {
+				["Bag Lag Fix"] = {
+					["Enabled"] = true,
+					["Percent"] = 1,
+					["Name"] = "Bag Lag Fix",
+					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
+				},
+			},
+			["filterPriorities"] = {
+				["Bears Battle Pet Stones"] = 100,
+				["Bears Battle Pet Currency"] = 100,
+				["ItemSets"] = 9,
+				["FilterOverride"] = 100,
+				["Battle Pet Reagents"] = 100,
+				["Keystones"] = 0,
+				["NewItem"] = 100,
+				["Equipment"] = 76,
+				["Dragonflight"] = 100,
+				["Quest"] = 100,
+				["ItemCategory"] = 100,
+				["Bears Battle Pet Costumes"] = 0,
+				["Dragonflight Crafting"] = 100,
+				["Battle Pet Items"] = 100,
+				["Junk"] = 100,
+				["Hearthstones"] = 100,
+			},
+		},
+	},
+}

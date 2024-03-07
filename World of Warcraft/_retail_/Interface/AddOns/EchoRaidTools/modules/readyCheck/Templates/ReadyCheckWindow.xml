@@ -1,0 +1,677 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Button name="EchoRaidTools_CloseButton" virtual="true" mixin="EchoRaidTools_CloseButtonMixin">
+        <Size x="23" y="23"/>
+        <NormalTexture  parentKey="ButtonTexture" atlas="perks-dropdown-clear" setAllPoints="true" desaturated="true"/>
+        <HighlightTexture  parentKey="HighlightTexture" atlas="perks-dropdown-clear" setAllPoints="true" desaturated="false"/>
+        <DisabledTexture  parentKey="DisabledTexture" atlas="perks-dropdown-clear" setAllPoints="true" desaturated="true" alpha="0.5"/>
+        <KeyValues>
+            <KeyValue key="tooltip" value="Close" type="string"/>
+        </KeyValues>
+        <Scripts>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Button>
+
+    <Button name="EchoRaidTools_MinimiseButton" virtual="true" mixin="EchoRaidTools_MinimiseButtonMixin">
+        <Size x="15" y="10"/>
+        <NormalTexture parentKey="ButtonTexture" atlas="Azerite-PointingArrow" setAllPoints="true" desaturated="true" alpha="0.6"/>
+        <HighlightTexture parentKey="HighlightTexture" atlas="Azerite-PointingArrow" setAllPoints="true" desaturated="false"/>
+        <DisabledTexture parentKey="DisabledTexture" atlas="Azerite-PointingArrow" setAllPoints="true" desaturated="true" alpha="0.3"/>
+        <Scripts>
+            <OnClick method="OnClick"/>
+            <OnLoad method="OnLoad"/>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Button>
+
+    <StatusBar name="EchoRaidTools_ReadyCheckDurationBar" virtual="true">
+        <BarTexture atlas="_Talent-green-glow"> <!--UI-Frame-Bar-Fill-Red  Cast_Empowered_OuterGlow/-->
+            <!--TexCoords left="0.1" right="0.9" top="0" bottom="1"/-->
+        </BarTexture>
+        <Size x="1" y="10"/>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="BackgroundTexture" atlas="_Talent-green-glow" setAllPoints="true" desaturated="true" alpha="0.2"/>
+            </Layer>
+        </Layers>
+    </StatusBar>
+
+    <Frame name="EchoRaidTools_ReadyCheckCounter" virtual="true" mixin="EchoRaidTools_ReadyCheckCounterMixin">
+        <Size x="40" y="20"/>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="Texture" atlas="communities-chat-icon-plus">
+                    <Size x="20" y="20"/>   
+                    <Anchors>
+                        <Anchor point="LEFT"/>
+                    </Anchors>
+                </Texture>
+                <FontString parentKey="Count" font="GameFontNormalSmall">
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Texture" relativePoint="RIGHT" x="1"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <Frame name="EchoRaidTools_ReadyCheckWindowHeader" virtual="true">
+        <Frames>
+            <Button parentKey="CloseButton" inherits="EchoRaidTools_CloseButton">
+                <Anchors>
+                    <Anchor point="RIGHT" x="-3" y="0"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick"/>
+                </Scripts>
+            </Button>
+            <Button parentKey="MinimiseButton" inherits="EchoRaidTools_MinimiseButton">
+                <Anchors>
+                    <Anchor point="RIGHT" x="-3" y="0" relativeKey="$parent.CloseButton" relativePoint="LEFT"/>
+                </Anchors>
+            </Button>
+            <StatusBar parentKey="ReadyCheckDuration" inherits="EchoRaidTools_ReadyCheckDurationBar">
+                <Anchors>
+                    <Anchor point="BOTTOMLEFT" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" x="0" y="0"/>
+                </Anchors>
+            </StatusBar>
+            <Frame parentKey="NegativeCount" inherits="EchoRaidTools_ReadyCheckCounter">
+                <Anchors>
+                    <Anchor point="RIGHT" relativeKey="$parent.MinimiseButton" relativePoint="LEFT" x="-15" y="0"/>
+                </Anchors>
+                <KeyValues>
+                    <KeyValue key="Negative" value="true" type="boolean"/>
+                </KeyValues>
+            </Frame>
+            <Frame parentKey="PositiveCount" inherits="EchoRaidTools_ReadyCheckCounter">
+                <Anchors>
+                    <Anchor point="RIGHT" relativeKey="$parent.NegativeCount" relativePoint="LEFT" x="-1" y="0"/>
+                </Anchors>
+                <KeyValues>
+                    <KeyValue key="Positive" value="true" type="boolean"/>
+                </KeyValues>
+            </Frame>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture setAllPoints="true" parentKey="BackgroundTexture">
+                    <Color r="0" g="0" b="0" a="1"/>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+                <FontString parentKey="TitleText" font="GameFontNormal" text="Ready Check" justifyH="LEFT">
+                    <Anchors>
+                        <Anchor point="LEFT" x="10" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Frame name="EchoRaidTools_ReadyCheck_ReadyIndicator" virtual="true" mixin="EchoRaidTools_ReadyCheck_ReadyIndicatorMixin">
+        <Size x="20" y="20"/>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="ReadyStatusTexture" atlas="perks-owned-large" setAllPoints="true"/>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Frame name="EchoRaidTools_ReadyCheck_BasicIconFrame" virtual="true" mixin="EchoRaidTools_ReadyCheck_BasicIconFrameMixin">
+        <Size x="16" y="16"/>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="Icon" setAllPoints="true"/>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Frame>
+    <Frame name="EchoRaidTools_ReadyCheck_RoleIcon" virtual="true" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame" mixin="EchoRaidTools_ReadyCheck_RoleIconMixin"/>
+    <Frame name="EchoRaidTools_ReadyCheck_ClassIcon" virtual="true" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame" mixin="EchoRaidTools_ReadyCheck_ClassIconMixin">
+        <Size x="16" y="16"/>
+    </Frame>
+    <Frame name="EchoRaidTools_ReadyCheck_SpecIcon" virtual="true" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame" mixin="EchoRaidTools_ReadyCheck_SpecIconMixin">
+        <Size x="16" y="16"/>
+    </Frame>
+    <Frame name="EchoRaidTools_ReadyCheck_LeaderIcon" virtual="true" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame" mixin="EchoRaidTools_ReadyCheck_LeaderIconMixin">
+        <Size x="12" y="12"/>
+    </Frame> 
+    <Frame name="EchoRaidTools_ReadyCheck_IconWithQuality" virtual="true" mixin="EchoRaidTools_ReadyCheck_IconWithQualityMixin" > <!-- inherits="EchoRaidTools_ReadyCheck_BasicIconFrame"-->
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="3">
+                <Texture parentKey="Quality">
+                    <Size x="16" y="16"/>
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" x="5" y="4"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+    
+    <Frame name="EchoRaidTools_ReadyCheck_IconWithText" virtual="true" mixin="EchoRaidTools_ReadyCheck_IconWithTextMixin"> <!--  inherits="EchoRaidTools_ReadyCheck_BasicIconFrame"-->
+        <Layers>
+            <Layer level="ARTWORK">
+                <Fontstring parentKey="Text" font="GameFontWhiteTiny2" wordwrap="false">
+                    <Size x="35"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT" x="-4" y="2"/>
+                    </Anchors>
+                </Fontstring>
+            </Layer>
+        </Layers>
+    </Frame>
+    <Frame name="EchoRaidTools_ReadyCheck_IconWithDuration" virtual="true" mixin="EchoRaidTools_ReadyCheck_IconWithDurationMixin"> <!-- inherits="EchoRaidTools_ReadyCheck_BasicIconFrame"-->
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture parentKey="DurationBG" setAllPoints="true" hidden="true">
+                    <Color r="0" g="0" b="0" a="0.5"/>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK" textureSubLevel="2">
+                <Fontstring parentKey="Duration" font="GameFontWhiteTiny" wordwrap="false" outline="NORMAL" hidden="true">
+                    <Anchors>
+                        <Anchor point="BOTTOM" x="0" y="0"/>
+                    </Anchors>
+                </Fontstring>
+            </Layer>
+        </Layers>
+    </Frame>
+    <Frame name="EchoRaidTools_ReadyCheck_BasicTextFrame" virtual="true" mixin="EchoRaidTools_ReadyCheck_BasicTextFrameMixin">
+        <Size x="40" y="20"/>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <FontString parentKey="Text" font="GameFontNormalTiny" justifyH="CENTER">
+                    <Anchors>
+                        <Anchor point="CENTER"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Frame>
+
+    <Frame name="EchoRaidTools_ReadyCheckPlayerLine" virtual="true" mixin="EchoRaidTools_ReadyCheckPlayerLineMixin">
+        <Size x="530" y="20"/>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="lineBG" atlas="perks-list-active" desaturated="true"> <!--Options_List_Hover  -->
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture parentKey="IndicatorBG" atlas="CovenantSanctum-Renown-Icon-Border-Disabled">
+                    <Size x="20" y="20"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="2"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+                <Texture parentKey="ReadyIndicator" atlas="perks-owned-large" hidden="true">
+                    <Size x="20" y="20"/>
+                    <Anchors>
+                        <Anchor point="CENTER" relativeKey="$parent.IndicatorBG"/>
+                    </Anchors>
+                </Texture>
+                <FontString parentKey="PlayerName" font="GameFontNormalTiny" justifyH="LEFT">
+                    <Anchors>
+                        <Anchor point="LEFT" x="75"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame parentKey="RoleIcon" inherits="EchoRaidTools_ReadyCheck_RoleIcon">
+                <Anchors>
+                    <Anchor point="CENTER" x="32" relativePoint="LEFT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="ClassIcon" inherits="EchoRaidTools_ReadyCheck_ClassIcon">
+                <Anchors>
+                    <Anchor point="CENTER" x="16" relativePoint="CENTER" relativeKey="$parent.RoleIcon"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="SpecIcon" inherits="EchoRaidTools_ReadyCheck_SpecIcon">
+                <Anchors>
+                    <Anchor point="CENTER" x="16" relativePoint="CENTER" relativeKey="$parent.ClassIcon"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="LeaderIcon" inherits="EchoRaidTools_ReadyCheck_LeaderIcon">
+                <Anchors>
+                    <Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.PlayerName" x="1"/>
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="Durability" inherits="EchoRaidTools_ReadyCheck_BasicTextFrame" mixin="EchoRaidTools_ReadyCheck_Durability" >
+                <KeyValues>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="CENTER" x="160" relativePoint="LEFT"/>
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="Food" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame,EchoRaidTools_ReadyCheck_IconWithDuration">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Durability" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Durability" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Phial" inherits="EchoRaidTools_ReadyCheck_IconWithQuality,EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Food" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Food" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Augment" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="4644002" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Phial" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Phial" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Weapon" inherits="EchoRaidTools_ReadyCheck_IconWithQuality,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Augment" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Augment" x="19" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Weapon2" inherits="EchoRaidTools_ReadyCheck_IconWithQuality,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Weapon" x="1" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Weapon" x="17" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Vantus" inherits="EchoRaidTools_ReadyCheck_IconWithQuality,EchoRaidTools_ReadyCheck_IconWithText,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Weapon2" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Weapon2" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="Versatility" inherits="EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="136078" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Vantus" x="18" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Vantus" x="40" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Stamina" inherits="EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="135987" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Versatility" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Versatility" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Intellect" inherits="EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="135932" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Stamina" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Stamina" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="AttackPower" inherits="EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="132333" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Intellect" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Intellect" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Movement" inherits="EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="4622448" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.AttackPower" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.AttackPower" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            
+            <Frame parentKey="Soulstone" inherits="EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="136210" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Movement" x="18" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Movement" x="40" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Bloodlust" inherits="EchoRaidTools_ReadyCheck_IconWithDuration,EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <KeyValues>
+                    <KeyValue key="IconSize" value="16" type="number"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                    <KeyValue key="texture" value="136012" type="number"/> 
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Soulstone" x="3" relativePoint="RIGHT"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Soulstone" x="25" relativePoint="RIGHT"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+    </Frame>
+
+    <Frame name="EchoRaidTools_ReadyChecktopLine" virtual="true">
+        <Size x="530" y="26"/>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture setAllPoints="true" parentKey="toplineBG1">
+                    <Color r="0" g="0" b="0" a="1"/>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+                <FontString parentKey="TitleText" font="GameFontNormal" text="Ready Check" justifyH="LEFT" hidden="true">
+                    <Anchors>
+                        <Anchor point="LEFT" x="10" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame parentKey="Durability" inherits="EchoRaidTools_ReadyCheck_BasicTextFrame">
+                <KeyValues>
+                    <KeyValue key="tooltip" value="Durability" type="string"/> 
+                    <KeyValue key="text" value="Dur" type="string"/>
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="CENTER" x="160" relativePoint="LEFT"/>
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="Food" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="136000" type="number"/>
+                    <KeyValue key="tooltip" value="Well Fed" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Durability" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Durability" relativePoint="RIGHT" x="25"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Phial" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="463931" type="number"/>
+                    <KeyValue key="tooltip" value="Phial" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Food" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Food" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Food"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Augment" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="4644002" type="number"/> 
+                    <KeyValue key="tooltip" value="Augment Rune" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Phial" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Phial" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Phial"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Weapon" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="135328" type="number"/>
+                    <KeyValue key="tooltip" value="Temporary Weapon Enchant" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Augment" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Augment" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Augment"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Vantus" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="4555026" type="number"/> 
+                    <KeyValue key="tooltip" value="Vantus Rune" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Weapon" relativePoint="RIGHT" x="14"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Weapon" relativePoint="RIGHT" x="36"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Weapon"/-->
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="Versatility" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="136078" type="number"/> 
+                    <KeyValue key="tooltip" value="Mark of the Wild (Druid)" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Vantus" relativePoint="RIGHT" x="18"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Vantus" relativePoint="RIGHT" x="40"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Vantus"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Stamina" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="135987" type="number"/> 
+                    <KeyValue key="tooltip" value="Power Word: Fortitude (Priest)" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Versatility" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Versatility" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Versatility"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Intellect" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="135932" type="number"/> 
+                    <KeyValue key="tooltip" value="Arcane Intellect (Mage)" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Stamina" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Stamina" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Stamina"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="AttackPower" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="132333" type="number"/> 
+                    <KeyValue key="tooltip" value="Battle Shout (Warrior)" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Intellect" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Intellect" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Intellect"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Movement" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="4622448" type="number"/> 
+                    <KeyValue key="tooltip" value="Blessing of the Bronze (Evoker)" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.AttackPower" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.AttackPower" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.AttackPower"/-->
+                </Anchors>
+            </Frame>
+            
+            <Frame parentKey="Soustone" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="136210" type="number"/> 
+                    <KeyValue key="tooltip" value="This character has a Soulstone active" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Movement" relativePoint="RIGHT" x="18"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Movement" relativePoint="RIGHT" x="40"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Movement"/-->
+                </Anchors>
+            </Frame>
+            <Frame parentKey="Bloodlust" inherits="EchoRaidTools_ReadyCheck_BasicIconFrame">
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="texture" value="136012" type="number"/> 
+                    <KeyValue key="tooltip" value="This character can't get Bloodlust/Heroism" type="string"/> 
+                    <KeyValue key="MaximisedOnly" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Soustone" relativePoint="RIGHT" x="3"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Soustone" relativePoint="RIGHT" x="25"/>
+                    <!--Anchor point="CENTER" x="25" relativePoint="CENTER" relativeKey="$parent.Soustone"/-->
+                </Anchors>
+            </Frame>
+        </Frames>
+    </Frame>
+
+    <Frame name="EchoRaidTools_ReadyCheckWindow" virtual="true" mixin="EchoRaidTools_ReadyCheckWindowMixin" 
+    movable="true" clampedToScreen="true" enableMouse="true" frameStrata="DIALOG">
+        <Size x="530" y="200"/>
+        <Frames>
+            <Frame parentKey="MaximisedFrameParent" setAllPoints="true" mixin="EchoRaidTools_MaximisedFrameParentMixin">
+                <Scripts>
+                    <OnLoad method="OnLoad"/>
+                </Scripts>
+            </Frame>
+            <Frame parentKey="Header" inherits="EchoRaidTools_ReadyCheckWindowHeader">
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" y="-26"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="TopLine" inherits="EchoRaidTools_ReadyChecktopLine">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Header" relativePoint="BOTTOMLEFT"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent.Header" relativePoint="BOTTOMRIGHT"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="Glow1" atlas="GarrMission_ListGlow-Select" desaturated="true">
+                    <TexCoords left="0" right="1" top="1" bottom="0"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT"  x="0" y="0"/>
+                        <Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" x="0" y="20"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="Glow2" atlas="GarrMission_ListGlow-Select" desaturated="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT"  x="0" y="0"/>
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" x="0" y="-20"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture setAllPoints="true" parentKey="BackgroundTexture">
+                    <Color r="0.1" g="0.1" b="0.1" a="1"/>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Animations>
+            <AnimationGroup parentKey="FadeOutAnim" mixin="EchoRaidTools_WindowFadeAnimMixin">
+                <!--Alpha fromAlpha="1" toAlpha="0.6" duration="0.6" order="1" smoothing="IN"/>
+                <Alpha fromAlpha="0.6" toAlpha="1" duration="0.6" order="2" smoothing="OUT"/>
+                <Alpha fromAlpha="1" toAlpha="0.6" duration="0.6" order="3" smoothing="IN"/>
+                <Alpha fromAlpha="0.6" toAlpha="1" duration="0.6" order="4" smoothing="OUT"/>
+                <Alpha fromAlpha="1" toAlpha="0.6" duration="0.6" order="5" smoothing="IN"/>
+                <Alpha fromAlpha="0.6" toAlpha="1" duration="0.6" order="6" smoothing="OUT"/-->
+                <Alpha fromAlpha="1" toAlpha="0" duration="1.5" order="1" smoothing="IN" startDelay="5"/>
+                <Scripts>
+                    <OnFinished method="OnFinished"/>
+                </Scripts>
+            </AnimationGroup>
+            <AnimationGroup parentKey="SimpleFadeOutAnim" mixin="EchoRaidTools_WindowFadeAnimMixin">
+                <Alpha fromAlpha="1" toAlpha="0" duration="0.5" order="1" smoothing="IN"/>
+                <Scripts>
+                    <OnFinished method="OnFinished"/>
+                </Scripts>
+            </AnimationGroup>
+        </Animations>
+        <Scripts>
+            <OnShow method="OnShow"/>
+            <OnLoad method="OnLoad"/>
+            <OnDragStart method="OnDragStart"/>
+            <OnDragStop method="OnDragStop"/>
+            <OnMouseDown method="OnMouseDown"/>
+        </Scripts>
+    </Frame>
+</Ui>

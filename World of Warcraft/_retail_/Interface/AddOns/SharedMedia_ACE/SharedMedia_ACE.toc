@@ -1,0 +1,12 @@
+## Interface: 100250
+
+## Title: SharedMedia_ACE
+## Notes: Essential tool to improve your Quality of life in WOW.
+## IconTexture: Interface\AddOns\SharedMedia_ACE\images\minimap
+
+## X-Curse-Project-ID: 805597
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+embeds.xml
+Media_ACE.lua

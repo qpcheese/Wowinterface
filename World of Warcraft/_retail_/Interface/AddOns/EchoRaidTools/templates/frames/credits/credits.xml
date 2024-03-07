@@ -1,0 +1,32 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidToolsCreditsTemplate" virtual="true">
+        <Size x="500" y="400" />
+        <Frames>
+            <Frame parentKey="Developers" inherits="EchoRaidToolsCreditsDevelopersTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="5" y="-10" />
+                    <Anchor point="BOTTOMRIGHT" x="-5" y="-110" relativePoint="TOPRIGHT" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="ChangeLog" inherits="EchoRaidToolsCreditsChangelogTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="0" y="-5" relativeKey="$parent.Developers" relativePoint="BOTTOMLEFT" />
+                    <Anchor point="BOTTOMRIGHT" x="-5" y="5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="ChangeLog2" inherits="EchoRaidToolsCreditsChangelogTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="0" y="-5" relativeKey="$parent.ChangeLog" relativePoint="BOTTOMLEFT" />
+                    <Anchor point="BOTTOMRIGHT" x="-5" y="5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="ChangeLog3" inherits="EchoRaidToolsCreditsChangelogTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="0" y="-5" relativeKey="$parent.ChangeLog2" relativePoint="BOTTOMLEFT" />
+                    <Anchor point="BOTTOMRIGHT" x="-5" y="5" />
+                </Anchors>
+            </Frame>
+        </Frames>
+    </Frame>
+</Ui>

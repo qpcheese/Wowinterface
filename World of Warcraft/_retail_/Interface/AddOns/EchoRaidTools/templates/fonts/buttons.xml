@@ -1,0 +1,22 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Font name="EchoRaidTools_ButtonTextNormal" inherits="GameFontHighlightSmall" virtual="true" justifyH="CENTER">
+        <Color r="1" g="1" b="1"/>
+    </Font>
+    <Font name="EchoRaidTools_ButtonTextHighlight" inherits="GameFontHighlightSmall" virtual="true" justifyH="CENTER">
+        <Color r="1.0" g="0.82" b="0"/>
+    </Font>
+    <Font name="EchoRaidTools_ButtonTextDisable" inherits="GameFontHighlightSmall" virtual="true" justifyH="CENTER">
+        <Color r="0.5" g="0.5" b="0.5"/>
+    </Font>
+
+    <Font name="EchoRaidTools_ButtonTextNormalLeft" inherits="GameFontHighlightSmall" virtual="true" justifyH="LEFT">
+        <Color r="1" g="1" b="1"/>
+    </Font>
+    <Font name="EchoRaidTools_ButtonTextHighlightLeft" inherits="GameFontHighlightSmall" virtual="true" justifyH="LEFT">
+        <Color r="1.0" g="0.82" b="0"/>
+    </Font>
+    <Font name="EchoRaidTools_ButtonTextDisableLeft" inherits="GameFontHighlightSmall" virtual="true" justifyH="LEFT">
+        <Color r="0.5" g="0.5" b="0.5"/>
+    </Font>
+</Ui>

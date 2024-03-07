@@ -1,0 +1,10 @@
+
+lexf_usercache = {
+	["IconPosx"] = -208.9998626708984,
+	["showpet"] = true,
+	["lock"] = false,
+	["cronly"] = false,
+	["IconPosy"] = 159.0005340576172,
+	["show"] = true,
+	["IconPosrel"] = "BOTTOM",
+}

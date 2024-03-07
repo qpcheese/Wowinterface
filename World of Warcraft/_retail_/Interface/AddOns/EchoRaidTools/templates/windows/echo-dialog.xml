@@ -1,0 +1,65 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoDialogTemplate" mixin="EchoDialogTemplateMixin" inherits="SettingsFrameTemplate" parent="UIParent" toplevel="true" movable="true" resizable="true" enableMouse="true" clampedToScreen="true" frameStrata="DIALOG" virtual="true">
+        <Size x="900" y="600" />
+        <Anchors>
+            <Anchor point="CENTER" />
+        </Anchors>
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString parentKey="status" inherits="GameFontNormal" justifyH="LEFT">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="10" y="23"  relativePoint="BOTTOMLEFT" />
+                        <Anchor point="BOTTOMRIGHT" x="-10" y="3" relativePoint="BOTTOMRIGHT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="version" inherits="GameFontNormal" justifyH="RIGHT" text="v0.1.0">
+                    <Anchors>
+                        <!-- <Anchor point="LEFT" x="0" y="0" relativeKey="$parent.status" relativePoint="RIGHT" /> -->
+                        <!-- <Anchor point="RIGHT" x="40" y="0" relativeKey="$parent.status" relativePoint="RIGHT" /> -->
+                        <Anchor point="RIGHT" x="-5" relativeKey="$parent.ClosePanelButton" relativePoint="LEFT" />
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <!--
+            <Button parentKey="ResizeButton" inherits="PanelResizeButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT" x="-4" y="4"/>
+				</Anchors>
+			</Button>
+            -->
+            <Frame parentKey="PortraitContainer" frameLevel="400">
+				<Size x="1" y="1"/>
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+				</Anchors>
+				<Layers>
+                    <Layer level="OVERLAY" textureSubLevel="1">
+                        <Texture parentKey="Corner" atlas="UI-Frame-PortraitMetal-CornerTopLeft" useAtlasSize="true">
+                            <Anchors>
+								<Anchor point="TOPLEFT" x="-8" y="16" />
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+					<Layer level="OVERLAY" textureSubLevel="2">
+						<Texture parentKey="portrait">
+							<Size x="60" y="60"/>
+							<Anchors>
+								<Anchor point="TOPLEFT" x="1" y="8" />
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</Frame>
+        </Frames>
+		<Scripts>
+			<OnLoad method="OnLoad" inherit="append" />
+            <OnShow method="OnShow" inherit="append" /> 
+            <OnSizeChanged method="OnSizeChanged" inherit="append"/>
+            <OnDragStart method="OnDragStart" inherit="append" />
+            <OnDragStop method="OnDragStop" inherit="append" />
+		</Scripts>
+    </Frame>
+</Ui>

@@ -1,0 +1,15 @@
+VER 3 0100000000000002 "a+c" "134400"
+#showtooltip agony
+/castsequence reset=10 agony, corruption
+END
+VER 3 0100000000000004 "FD" "134400"
+/castsequence reset=20 Fel domination, summon sayaad
+END
+VER 3 0100000000000005 "mant" "132264"
+#showtooltip
+/use Cliffside Wylderdrake
+/use Jeweled Onyx Panther
+END
+VER 3 0100000000000003 "ua" "134400"
+/castsequence reset=5 unstable affliction,  agony, corruption
+END

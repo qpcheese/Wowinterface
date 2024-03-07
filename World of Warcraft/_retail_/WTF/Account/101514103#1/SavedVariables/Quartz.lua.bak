@@ -1,0 +1,274 @@
+
+Quartz3DB = {
+	["namespaces"] = {
+		["Swing"] = {
+			["profiles"] = {
+				["Qubit - Ragnaros"] = {
+					["swinggap"] = -6,
+				},
+			},
+		},
+		["Buff"] = {
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["Flight"] = {
+		},
+		["Pet"] = {
+			["profiles"] = {
+				["Qubit - Ragnaros"] = {
+					["y"] = -244.9998779296875,
+					["x"] = 4.999969482421875,
+					["point"] = "CENTER",
+				},
+				["Dogson"] = {
+					["y"] = 231.0001525878906,
+					["x"] = 13,
+					["point"] = "BOTTOM",
+				},
+				["Default"] = {
+					["x"] = 860,
+				},
+				["qpcheese"] = {
+					["y"] = 231.0001525878906,
+					["point"] = "BOTTOM",
+					["x"] = 13,
+				},
+			},
+		},
+		["Range"] = {
+		},
+		["Mirror"] = {
+			["profiles"] = {
+				["qpcheese"] = {
+					["mirroranchor"] = "free",
+					["mirrorgrowdirection"] = "down",
+					["mirrorheight"] = 19,
+					["mirrortexture"] = "Cilo",
+					["mirrorx"] = 1431,
+					["mirrorwidth"] = 150,
+				},
+				["Dogson"] = {
+					["mirrortexture"] = "Cilo",
+					["mirrorheight"] = 19,
+					["mirroranchor"] = "free",
+					["mirrorwidth"] = 150,
+					["mirrorgrowdirection"] = "down",
+					["mirrorx"] = 1431,
+				},
+			},
+		},
+		["EnemyCasts"] = {
+		},
+		["GCD"] = {
+			["profiles"] = {
+				["Qubit - Ragnaros"] = {
+					["gcdgap"] = 0,
+					["x"] = 786.00048828125,
+					["y"] = 373.0001831054688,
+					["gcdposition"] = "free",
+				},
+				["qpcheese"] = {
+					["gcdgap"] = -3,
+					["gcdposition"] = "top",
+					["gcdalpha"] = 1,
+					["gcdheight"] = 16,
+					["sparkcolor"] = {
+						0.9921569228172302, -- [1]
+						0.9490196704864502, -- [2]
+						nil, -- [3]
+						1, -- [4]
+					},
+				},
+			},
+		},
+		["Focus"] = {
+			["profiles"] = {
+				["Qubit - Ragnaros"] = {
+					["y"] = 14.99953651428223,
+					["x"] = 296.99951171875,
+					["point"] = "BOTTOM",
+				},
+				["Dogson"] = {
+					["y"] = 232.0001678466797,
+					["x"] = 12,
+					["point"] = "BOTTOM",
+				},
+				["Default"] = {
+					["x"] = 860,
+				},
+				["qpcheese"] = {
+					["y"] = 232.0001678466797,
+					["x"] = 12,
+					["point"] = "BOTTOM",
+				},
+			},
+		},
+		["Target"] = {
+			["profiles"] = {
+				["Qubit - Ragnaros"] = {
+					["x"] = 860,
+				},
+				["Dogson"] = {
+					["y"] = -233,
+					["x"] = 285.0000610351563,
+					["w"] = 180,
+					["point"] = "CENTER",
+				},
+				["Default"] = {
+					["x"] = 860,
+				},
+				["qpcheese"] = {
+					["w"] = 180,
+					["y"] = -233,
+					["point"] = "CENTER",
+					["x"] = 285.0000610351563,
+				},
+			},
+		},
+		["Interrupt"] = {
+		},
+		["Player"] = {
+			["profiles"] = {
+				["Qubit - Ragnaros"] = {
+					["point"] = "BOTTOM",
+					["w"] = 347,
+					["y"] = 206.0010223388672,
+					["font"] = "Bebas Neue Cyrillic Regular",
+					["fontsize"] = 20,
+					["x"] = 0.000579833984375,
+					["border"] = "None",
+					["timefontsize"] = 13,
+					["nametextx"] = 0,
+					["texture"] = "Clean",
+				},
+				["Dogson"] = {
+					["point"] = "BOTTOM",
+					["border"] = "None",
+					["hideicon"] = true,
+					["w"] = 473,
+					["nametextx"] = 19,
+					["y"] = 192.0010070800781,
+					["font"] = "Bebas Neue Cyrillic Regular",
+					["fontsize"] = 20,
+					["nametexty"] = -2,
+					["x"] = 0,
+					["timefontsize"] = 20,
+					["h"] = 30,
+					["texture"] = "Wglass",
+				},
+				["Default"] = {
+					["point"] = "BOTTOM",
+					["w"] = 350,
+					["y"] = 211.0006561279297,
+					["font"] = "Bebas Neue Cyrillic Regular",
+					["fontsize"] = 20,
+					["x"] = 1.000244140625,
+					["border"] = "None",
+					["timefontsize"] = 13,
+					["nametextx"] = 0,
+					["texture"] = "Wglass",
+				},
+				["qpcheese"] = {
+					["h"] = 30,
+					["nametextx"] = 19,
+					["w"] = 473,
+					["hideicon"] = true,
+					["font"] = "Bebas Neue Cyrillic Regular",
+					["point"] = "BOTTOM",
+					["border"] = "None",
+					["fontsize"] = 20,
+					["texture"] = "Wglass",
+					["timefontsize"] = 20,
+					["nametexty"] = -2,
+					["y"] = 192.0010070800781,
+					["x"] = 0,
+				},
+			},
+		},
+		["Latency"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Dogson - Ragnaros"] = "Dogson",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Jerwin - Ragnaros"] = "Default",
+		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+		["Qpfromage - Ragnaros"] = "qpcheese",
+		["Qpcheese - Ragnaros"] = "qpcheese",
+		["Fishanus - Ragnaros"] = "Default",
+		["Qpebank - Draenor"] = "Default",
+		["Qpc - Draenor"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Djagon - Ragnaros"] = "Default",
+		["Laurs - Ragnaros"] = "Default",
+		["Zelení - Draenor"] = "Default",
+		["Qpew - Ragnaros"] = "Default",
+		["Cyclosarin - Ragnaros"] = "Default",
+	},
+	["profiles"] = {
+		["Qubit - Ragnaros"] = {
+			["channelingcolor"] = {
+				0.6000000238418579, -- [1]
+				0.5058823823928833, -- [2]
+				nil, -- [3]
+				1, -- [4]
+			},
+			["bordercolor"] = {
+				nil, -- [1]
+				nil, -- [2]
+				nil, -- [3]
+				1, -- [4]
+			},
+			["backgroundcolor"] = {
+				nil, -- [1]
+				nil, -- [2]
+				nil, -- [3]
+				1, -- [4]
+			},
+			["modules"] = {
+				["Timer"] = false,
+				["Swing"] = false,
+				["Buff"] = false,
+			},
+		},
+		["Dogson"] = {
+			["channelingcolor"] = {
+				0.6000000238418579, -- [1]
+				0.5058823823928833, -- [2]
+				nil, -- [3]
+				1, -- [4]
+			},
+			["modules"] = {
+				["Timer"] = false,
+				["Buff"] = false,
+			},
+			["borderalpha"] = 0.5750000000000001,
+		},
+		["Default"] = {
+			["channelingcolor"] = {
+				0.6000000238418579, -- [1]
+				0.5058823823928833, -- [2]
+				nil, -- [3]
+				1, -- [4]
+			},
+			["modules"] = {
+				["Timer"] = false,
+			},
+			["borderalpha"] = 0.5750000000000001,
+		},
+		["qpcheese"] = {
+			["channelingcolor"] = {
+				0.6000000238418579, -- [1]
+				0.5058823823928833, -- [2]
+				nil, -- [3]
+				1, -- [4]
+			},
+			["borderalpha"] = 0.5750000000000001,
+			["modules"] = {
+				["Timer"] = false,
+				["Buff"] = false,
+			},
+		},
+	},
+}

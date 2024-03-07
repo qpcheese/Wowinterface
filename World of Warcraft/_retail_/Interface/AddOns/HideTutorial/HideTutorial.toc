@@ -1,0 +1,11 @@
+## Interface: 100005
+## Version: 1.1.3
+## Title: HideTutorial
+## Notes: Hides those annoying help plates and tutorials
+## Author: Ketho
+## SavedVariablesPerCharacter: HideTutorialDB2
+## X-Curse-Project-ID: 399282
+## X-WoWI-ID: 25635
+## X-Wago-ID: e56nnd69
+
+HideTutorial.lua

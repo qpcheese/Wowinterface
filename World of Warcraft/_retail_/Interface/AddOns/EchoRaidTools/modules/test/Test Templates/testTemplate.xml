@@ -1,0 +1,75 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Button name="EchoRaidTools_TestButtonFrame" inherits="EchoRaidTools_Treeview_Button" mixin="EchoRaidTools_TestButtonFrameMixin" virtual="true">
+        <Frames>
+            <CheckButton parentKey="CheckButton" inherits="EchoRaidTools_CheckButtonTemplate">
+                <Size x="15" y="15"/>
+                <Anchors>   
+                    <Anchor point="LEFT"/>
+                </Anchors>
+            </CheckButton>
+            <Button parentKey="DeleteButton" inherits="EchoRaidTools_MainMenu_DeleteButtonTemplate">
+                <Anchors>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="CopyButton" inherits="EchoRaidTools_MainMenu_CopyButtonTemplate">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.DeleteButton"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="RenameButton" inherits="EchoRaidTools_MainMenu_RenameButtonTemplate" mixin="EchoRaidTools_TestTemplate_RenameButtonMixin">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.CopyButton"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick"/>
+                </Scripts>
+            </Button>
+            <EditBox parentKey="EditBox" numeric="false" multiLine="false" autoFocus="false" justifyH="left"
+            hidden="true" inherits="EchoRaidToolsConfig_EditboxTemplate" mixin="EchoRaidTools_TestTemplate_EditBoxMixin">
+                <FontString justifyH="LEFT" inherits="GameFontNormalTiny"/>
+                <Size x="190" y="25"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.ButtonText"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.ButtonText"/>
+                    <!--Anchor point="LEFT" x="4"/>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.RenameButton" x="-3"/-->
+                </Anchors>
+                <Scripts>
+                    <OnEscapePressed method="OnEscapePressed"/>
+                    <OnEnterPressed method="OnEnterPressed"/>
+                    <OnEditFocusLost method="OnEditFocusLost"/>
+                </Scripts>
+            </EditBox>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="NotLoadedTexture" setAllPoints="true" alphaMode="ADD" atlas="UI-Frame-Venthyr-Subtitle" alpha="0.6" hidden="true"/>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture parentKey="SelectedTexture" atlas="groupfinder-button-select" setAllPoints="true" alphaMode="ADD" alpha="0.4" hidden="true"/>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="TestButtonFrameAdditionalLoad" inherit="append"/>
+        </Scripts>
+    </Button>
+
+    <Frame name="EchoRaidTools_TestNodeFrame" inherits="EchoRaidTools_Treeview_Node" mixin="EchoRaidTools_TestNodeFrameMixin" virtual="true">
+        <Frames>
+            <Button parentKey="AddButton" inherits="EchoRaidTools_MainMenu_AddButtonTemplate" > <!--frameStrata="TOOLTIP" mixin="EchoRaidTools_MainMenu_ExpandButton_AddButtonMixin"-->
+                <Size x="15" y="15"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.Button.ButtonText" x="3"/>
+                </Anchors>
+                <!--Scripts>
+                    <OnClick method="OnClick" inherit="append"/>
+                </Scripts-->
+            </Button>
+        </Frames>
+        <Scripts>
+            <OnLoad method="TestNodeFrameAdditionalLoad" inherit="append"/>
+        </Scripts>
+    </Frame>
+</Ui>

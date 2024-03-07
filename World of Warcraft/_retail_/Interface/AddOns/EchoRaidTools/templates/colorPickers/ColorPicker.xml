@@ -1,0 +1,46 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Button name="EchoRaidToolsConfig_NewColorPicker" virtual="true" mixin="EchoRaidToolsConfig_NewColorPickerMixin">
+        <Size x="60" y="32"/>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="Background" file="Interface/AddOns/EchoRaidTools/assets/textures/transparent_color2.tga" alpha="0.5">
+                    <TexCoords right="0.7" bottom="0.625"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="-8"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="7"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="DisabledBG" atlas="charactercreate-customize-palette-glow" setAllPoints="true" hidden="true"/>
+            </Layer>
+            <Layer level="ARTWORK">
+                <FontString parentKey="TopText" inherits="GameTooltipTextSmall" nonspacewrap="false" maxLines="1" justifyH="LEFT" hidden="true">
+                    <Color r="1.0" g="0.82" b="0" a="0.7"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" x="0" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <NormalTexture parentKey="NormalTexture" atlas="charactercreate-customize-palette">
+            <Anchors>
+                <Anchor point="TOPLEFT" x="0" y="-7"/>
+                <Anchor point="BOTTOMRIGHT" x="0" y="7"/>
+            </Anchors>
+        </NormalTexture>
+        <HighlightTexture parentKey="HighlightTexture" atlas="charactercreate-customize-palette" alphaMode="BLEND" alpha="0.2"> <!--  useAtlasSize="true"-->
+            <Anchors>
+                <Anchor point="TOPLEFT" x="0" y="-7"/>
+                <Anchor point="BOTTOMRIGHT" x="0" y="7"/>
+            </Anchors>
+        </HighlightTexture>
+        <Scripts>
+            <Onload method="OnLoad"/>
+            <OnClick method="OnClick"/>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Button>
+
+</Ui>

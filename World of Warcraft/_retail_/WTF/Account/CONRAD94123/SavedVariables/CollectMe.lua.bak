@@ -1,0 +1,22 @@
+
+CollectMeDB = {
+	["profileKeys"] = {
+		["Qpfromagee - Ragnaros"] = "Qpfromagee - Ragnaros",
+		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+	},
+	["profiles"] = {
+		["Qpfromagee - Ragnaros"] = {
+		},
+		["Qpaladin - Ragnaros"] = {
+		},
+		["Qpfromage - Ragnaros"] = {
+		},
+		["Flurrq - Ragnaros"] = {
+		},
+		["Dogson - Ragnaros"] = {
+		},
+	},
+}

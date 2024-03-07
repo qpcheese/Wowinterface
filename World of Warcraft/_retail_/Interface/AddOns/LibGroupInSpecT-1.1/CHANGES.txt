@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r98 | nebula169 | 2020-10-18 17:03:06 +0000 (Sun, 18 Oct 2020) | 1 line
+Changed paths:
+   M /trunk/LibGroupInSpecT-1.1.toc
+
+Update the TOC for 9.0.1
+------------------------------------------------------------------------
+r97 | nebula169 | 2020-10-18 17:02:46 +0000 (Sun, 18 Oct 2020) | 1 line
+Changed paths:
+   M /trunk/LibGroupInSpecT-1.1.lua
+
+Update number of pvp talent slots
+------------------------------------------------------------------------
+

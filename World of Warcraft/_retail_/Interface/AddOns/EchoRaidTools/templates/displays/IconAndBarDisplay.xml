@@ -1,0 +1,90 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+	<Frame name="EchoIconAndBarBaseTemplate" virtual="true" mixin="EchoIconAndBarBaseTemplateMixin">
+    <Size x="200" y="20"/>
+		<Frames>
+			<Frame parentKey="Icon" drawLayer="BORDER" >
+				<Frames>
+					<Cooldown parentKey="Cooldown" inherits="CooldownFrameTemplate" useParentLevel="true" setAllPoints="true"/>
+				</Frames>
+				<Size x="20" y="20"/>
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+					<Anchor point="BOTTOMLEFT"/>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="IconTexture" file="Interface\Icons\INV_Misc_QuestionMark">
+							<Color r="1" g="1" b="1" a="1"/>
+						</Texture>
+						
+					</Layer>
+				</Layers>
+			</Frame>
+			<StatusBar parentKey="StatusBar" drawLayer="BORDER"> <!-- ignoreParentAlpha="true"--> 
+				<Anchors>
+					<Anchor point="LEFT" relativeKey="$parent.Icon" relativePoint="RIGHT"/>
+					<Anchor point="RIGHT"/>
+					<Anchor point="TOP"/>
+					<Anchor point="BOTTOM"/>
+				</Anchors>
+				<BarTexture parentKey="BarTexture" file="Interface\TargetingFrame\UI-StatusBar"/>
+				<BarColor r="0.58" g="0.0" b="0.55"/>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="Background">
+							<Color r="0.0" g="0.0" b="0.0" a="0.5"/>
+						</Texture>
+					</Layer>
+					<Layer level="ARTWORK">
+						<Texture parentKey="Spark" atlas="objectivewidget-bar-spark-neutral" alphaMode="ADD" alpha="0.8">
+							<Size x="4" y="30"/>
+							<Anchors>
+								<Anchor point="CENTER" relativeKey="$parent.BarTexture" relativePoint="RIGHT"/>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</StatusBar>
+			<Frame parentKey="TextFrame" setAllPoints="true">
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString parentKey="DurationText" inherits="Number13FontWhite" hidden="true">
+							<Anchors>
+								<Anchor point="RIGHT" relativePoint="RIGHT" x="-2" y="0"/>
+							</Anchors>
+						</FontString>
+						<FontString parentKey="SpellNameText" inherits="Number13FontWhite" nonspacewrap="false" maxLines="1" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="LEFT" relativePoint="LEFT" x="2" y="0"/>
+							</Anchors>
+						</FontString>
+						<FontString parentKey="UnitNameText" inherits="Number13FontWhite" nonspacewrap="false" maxLines="1" justifyH="LEFT">
+							<Anchors>
+								<Anchor point="LEFT" relativePoint="RIGHT" x="2" y="0"/>
+							</Anchors>
+						</FontString>
+						<FontString parentKey="ChargesText" inherits="Number11FontWhite">
+							<Anchors>
+								<Anchor point="BOTTOMRIGHT" x="-2" y="2"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+			<Frame parentKey="Border" drawLayer="OVERLAY" frameLevel="100" inherits="BackdropTemplate" hidden="true" setAllPoints="true"/>
+			<Frame parentKey="Glow" drawLayer="OVERLAY" frameLevel="100" hidden="true" setAllPoints="true"/>
+		</Frames>
+		<Animations>
+			<AnimationGroup parentKey="Flash" looping="REPEAT">
+				<Alpha parentKey="FadeIn" duration=".5" order="2" fromAlpha=".5" toAlpha="1"/>
+				<Alpha parentKey="FadeOut" duration=".5" order="1" fromAlpha="1" toAlpha=".5"/>
+			</AnimationGroup>
+		</Animations>
+		<Scripts>
+			<OnLoad method="OnLoad"/>
+		</Scripts>
+	</Frame>
+
+</Ui>

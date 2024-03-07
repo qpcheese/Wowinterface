@@ -1,0 +1,47 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+<!-- atlases = interface/common/commonsearch-->
+    <Frame name="EchoRaidToolsConfig_FilterSpellButton" mixin="EchoRaidToolsConfig_FilterSpellButtonMixin" virtual="true">
+        <Size x="1" y="19"/>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="Icon">
+                    <Size x="13" y="13"/>
+                    <TexCoords left="0.1" top="0.1" right="0.9" bottom="0.9"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="2"/>
+                    </Anchors>
+                </Texture>
+                <FontString parentKey="SpellText" inherits="Number11FontWhite" maxLines="1" justifyH="LEFT">
+                    <Anchors>
+                        <Anchor point="LEFT" x="2" relativeKey="$parent.Icon" relativePoint="RIGHT"/>
+                    </Anchors>
+                </FontString>
+                <Texture parentKey="Border" atlas="ClickCastList-ButtonHighlight" setAllPoints="true"/> <!--  atlas="Looting_ItemCard_HighlightState" atlas="Looting_ItemCard_Stroke_ClickState" -->
+            </Layer>
+        </Layers>
+        <Frames>
+            <!--Frame parentKey="Border" useParentLevel="true" inherits="NineSlicePanelTemplate">
+				<KeyValues>
+					<KeyValue key="layoutType" value="TooltipGluesLayout" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="0" y="0"/>
+					<Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+				</Anchors>
+			</Frame-->
+            <Button parentKey="DeleteButton">
+                <Size x="9" y="9"/>
+                <NormalTexture parentKey="Normal" atlas="common-search-clearbutton" setAllPoints="true"/>
+                <HighlightTexture parentKey="Highlight" atlas="common-search-clearbutton" setAllPoints="true" alpha="0.5" alphaMode="ADD"/>
+                <Anchors>
+                    <Anchor point="RIGHT" x="-4"/>
+                </Anchors>
+            </Button>
+        </Frames>
+        
+        <Scripts>
+
+        </Scripts>
+    </Frame>
+</Ui>

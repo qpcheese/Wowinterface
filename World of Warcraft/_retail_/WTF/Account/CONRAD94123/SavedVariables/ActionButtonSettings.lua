@@ -1,0 +1,18 @@
+
+ActionButtonSettingsDB = {
+	["profileKeys"] = {
+		["Qubit - Ragnaros"] = "Default",
+		["Cheddarboy - Ravencrest"] = "Default",
+		["Fishanus - Ragnaros"] = "Default",
+		["Qutlaw - Ravencrest"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

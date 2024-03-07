@@ -1,0 +1,77 @@
+
+SilverDragon3DB = {
+	["profileKeys"] = {
+		["Qpcheese - Ragnaros"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Qubit - Ragnaros"] = "Default",
+		["Zelení - Draenor"] = "Default",
+		["Qpcheese - Chamber of Aspects"] = "Default",
+		["Qpew - Ragnaros"] = "Default",
+	},
+	["namespaces"] = {
+		["Overlay"] = {
+		},
+		["VignetteStretch"] = {
+		},
+		["TomTom"] = {
+		},
+		["Macro"] = {
+		},
+		["Tooltip"] = {
+		},
+		["Scan_Chat"] = {
+		},
+		["ClickTarget"] = {
+			["profiles"] = {
+				["Default"] = {
+					["anchor"] = {
+						["y"] = -245.4998626708984,
+						["point"] = "RIGHT",
+					},
+				},
+			},
+		},
+		["LDB"] = {
+		},
+		["Scan_Vignettes"] = {
+		},
+		["Marker"] = {
+		},
+		["Sync"] = {
+		},
+		["Announce"] = {
+			["profiles"] = {
+				["Default"] = {
+					["flash_texture"] = "Blizzard Dialog Background Gold",
+					["sound"] = false,
+					["sound_loot"] = false,
+					["sound_boss"] = false,
+					["flash_mount"] = false,
+					["soundfile_loot"] = "Huh?",
+					["sound_mount"] = false,
+				},
+			},
+		},
+		["Scan_Targets"] = {
+		},
+	},
+	["global"] = {
+		["mob_count"] = {
+			[156676] = 1,
+			[181249] = 1,
+			[156986] = 1,
+			[50330] = 1,
+		},
+		["mob_seen"] = {
+			[156676] = 1675896615,
+			[181249] = 1675996534,
+			[156986] = 1675898105,
+			[50330] = 1675902919,
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+SilverDragon2DB = nil

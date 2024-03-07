@@ -1,0 +1,81 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <CheckButton name="EchoRaidTools_CheckButtonTemplate" inherits="SettingsCheckBoxTemplate" virtual="true" mixin="EchoRaidTools_CheckButtonTemplateMixin">
+        <HitRectInsets>
+			<AbsInset left="4" right="4" top="0" bottom="0"/>
+		</HitRectInsets>
+        <Scripts>
+            <PreClick method="PreClick"/>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </CheckButton>
+
+    <Frame name="EchoRaidToolsConfig_CheckButton" virtual="true" mixin="EchoRaidToolsConfig_CheckButtonMixin">
+        <Frames>
+            <CheckButton parentKey="CheckButton" inherits="EchoRaidTools_CheckButtonTemplate">
+                <Size>
+                    <AbsDimension x="28" y="28"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="LEFT" x="-3" y="0"/>
+                </Anchors>
+            </CheckButton>
+        </Frames>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString parentKey="TopText" inherits="GameTooltipTextSmall" nonspacewrap="false" maxLines="1" justifyH="LEFT" hidden="true">
+                    <Color r="1.0" g="0.82" b="0" a="0.7"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.CheckButton" relativePoint="TOPLEFT" x="4" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <CheckButton name="EchoRaidTools_ModuleEnableCheckButton" inherits="EchoRaidTools_CheckButtonTemplate" virtual="true" mixin="EchoRaidTools_ModuleEnableCheckButtonMixin">
+        <Size x="28" y="28"/>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString parentKey="EnableText" inherits="GameFontNormal" text="Enable">
+                    <Anchors>
+                        <Anchor point="LEFT" x="0" y="0" relativePoint="RIGHT"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad" inherit="append"/>
+        </Scripts>
+    </CheckButton>
+
+    <Button name="EchoRaidTools_TristateTemplate" mixin="EchoRaidTools_TristateTemplateMixin" virtual="true">
+		<Size x="28" y="28"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture parentKey="Background" atlas="checkbox-minimal" setAllPoints="true"/>
+			</Layer>
+            <Layer level="ARTWORK">
+                <Texture parentKey="OnState" atlas="checkmark-minimal" setAllPoints="true"/>
+                <Texture parentKey="OffState" atlas="checkmark-minimal" setAllPoints="true" desaturated="true">
+                    <Color r="1" g="0" b="0" a="1"/>
+                </Texture>
+                <FontString parentKey="Label" font="GameFontNormalTiny">
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Background" relativePoint="RIGHT" x="3" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad method="OnLoad"/>
+			<OnEnter method="OnEnter"/>
+			<OnLeave method="OnLeave"/>
+            <OnClick method="OnClick"/>
+		</Scripts>
+	</Button>
+</Ui>

@@ -1,0 +1,14 @@
+## Interface: 100105
+## Title: Media: |cfff48cbaNewsom|r
+## Notes: Inserts Newsom's UI media into LibSharedMedia's storage
+## Version: 10.1.5
+## Author: Leo (Newsom)
+## IconTexture: 4200124
+
+## OptionalDeps: LibStub, LibSharedMedia-3.0
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibSharedMedia-3.0\lib.xml
+
+Media_Newsom.lua

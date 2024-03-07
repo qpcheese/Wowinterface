@@ -1,0 +1,21 @@
+VER 3 0000000000000003 "Aspect swap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast aspect of the cheetah
+/cast aspect of the hawk
+END
+VER 3 0000000000000002 "Auto attack" "INV_MISC_QUESTIONMARK"
+#showtooltip Auto Shot
+/cleartarget [dead]
+/targetenemy [noharm]
+/cast !Auto Shot
+/petattack
+END
+VER 3 0000000000000001 "nameplates" "136034"
+/run SetCVar("nameplateMaxDistance", "6e1")
+END
+VER 3 0000000000000005 "spit" "132104"
+/me Spits on you.
+END
+VER 3 0000000000000004 "wave" "135984"
+/wave
+END

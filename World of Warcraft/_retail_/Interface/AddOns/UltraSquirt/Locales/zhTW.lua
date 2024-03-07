@@ -1,0 +1,30 @@
+--localization file for Chinese (Traditional)
+local L = LibStub("AceLocale-3.0"):NewLocale("UltraSquirt", "zhTW")
+
+if not L then return end
+
+L["Keybind Missing"] = "未设置键绑定"
+L["Cannot Modify In Battle"] = "宠物战斗中无法修改目标宠物战NPC - 战斗结束后请重试"
+L["Invalid Target"] = "目标无效 - 请选择有效的可重复宠物战斗NPC，然后重试"
+L["Addon Enabled"] = "插件已启用"
+L["Addon Disabled"] = "插件已禁用"
+L["Resetting Options"] = "重置插件选项和窗口位置"
+L["Resetting Options OOC"] = "战斗结束时将重置选项。"
+L["General Settings Group"] = "常规设置"
+L["Delay Settings Group"] = "延迟设置"
+L["Delay Settings Description"] = "以下设置允许您自定义使用的延迟计时器。 默认值应该在绝大多数情况下有效。 如果您的延迟很高，或者遇到插件意外修复的问题，请尝试稍微增加时间。"
+L["Rematch Load Team Delay Setting"] = "复赛加载团队延迟"
+L["Rematch Load Team Delay Description"] = "使用复赛选项“加载最健康的宠物”和“宠物战斗后”时，在宠物战斗完成后，插件将暂停任何进一步的操作，而重新比赛加载新团队。 这最多需要 1 或 2 秒。 调整此设置将更改允许的最大延迟。"
+L["Pet Battle Close Delay Setting"] = "宠物战斗关闭延迟"
+L["Pet Battle Close Delay Description"] = "宠物对战完成后，插件将延迟一小段时间，以允许游戏更新加载宠物的状态和生命值。 更改此值可增加或减少最大延迟。 这仅适用于不使用复赛选项“加载最健康的宠物”和“宠物战斗后”的情况。"
+L["Heal Delay Setting"] = "愈合延迟"
+L["Heal Delay Description"] = "用绷带或Revice Battle宠物治愈您的宠物后，插件将延迟一小段时间以允许游戏更新。 更改此值可增加或减少最大延迟。"
+L["Help Header"] = "可用的斜杠命令："
+L["Help Default"] = "切换 UltraSquirt 主窗口。"
+L["Help Config"] = "显示配置面板。"
+L["Help Advanced"] = "显示“高级团队”面板。"
+L["Help Reset"] = "将所有 UltraSquirt 设置和窗口位置重置为默认值。"
+L["Help Help"] = "显示此可用命令列表。"
+L["Invalid Command"] = "命令无效。"
+L["Team Name"] = "团队名称"
+L["Mute Addon Enabled and Disabled Messages"] = "启用和禁用插件的静音消息"

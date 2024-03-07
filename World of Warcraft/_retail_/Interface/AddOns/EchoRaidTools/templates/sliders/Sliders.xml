@@ -1,0 +1,217 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Slider name="EchoRaidToolsConfig_SliderTemplate" inherits="MinimalSliderTemplate"  mixin="EchoRaidToolsConfig_SliderTemplateMixin" virtual="true">
+        <Scripts>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </Slider>
+
+    <Frame name="EchoRaidToolsConfig_Slider" virtual="true" mixin="EchoRaidToolsConfig_SliderMixin" > 
+        <Size>
+            <AbsDimension x="200" y="28"/>
+        </Size>
+        <Frames>
+            <EditBox parentKey="ValueEditbox" letters="3" multiLine="false" enableMouse="true" inherits="EchoRaidToolsConfig_EditboxTemplate" autoFocus="false"> <!-- numeric="true" -->
+				<Size x="35" y="28"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="5" y="0"/>
+                </Anchors>
+            </EditBox>
+            <Slider parentKey="Slider" inherits="EchoRaidToolsConfig_SliderTemplate">
+                <Size>
+                    <AbsDimension x="200" y="18"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.ValueEditbox" relativePoint="RIGHT" x="1" y="0"/>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+            </Slider>
+        </Frames>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString parentKey="TopText" inherits="GameTooltipTextSmall" nonspacewrap="false" maxLines="1" justifyH="LEFT" hidden="true">
+                    <Color r="1.0" g="0.82" b="0" a="0.7"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.ValueEditbox" relativePoint="TOPLEFT" x="-3" y="-3"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <Slider name="EchoRaidTools_BetterSlider_SliderTemplate" virtual="true" orientation="HORIZONTAL" obeyStepOnDrag="true" Mixin="EchoRaidTools_BetterSlider_SliderTemplateMixin" >
+        <Size x="170" y="25"/>
+        <ThumbTexture parentKey="Thumb" atlas="UI-Frame-Bar-BorderTick" useAtlasSize="true"/>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="Bar" atlas="widgetstatusbar-fill-yellow" useAtlasSize="true" alpha="0.1">
+                    <Anchors>
+						<Anchor point="TOPLEFT" x="8" y="-4"/>
+						<Anchor point="BOTTOMRIGHT" x="-8" y="4" />
+					</Anchors>
+                </Texture>
+                <Texture parentKey="BarLeft" atlas="UI-Frame-Bar-GlowLeft" alpha="0.5" useAtlasSize="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="0"/>
+                        <Anchor point="BOTTOMLEFT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="BarRight" atlas="UI-Frame-Bar-GlowRight" alpha="0.5" useAtlasSize="true">
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" x="0" y="0"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="BarMiddle" atlas="UI-Frame-Bar-GlowCenter" alpha="0.5" useAtlasSize="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeKey="$parent.BarLeft"/>
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeKey="$parent.BarRight"/>
+                    </Anchors>
+                </Texture>
+                <MaskTexture parentKey="BarTexture" file="Interface\Buttons\WHITE8X8" hWrapMode="CLAMPTOBLACKADDITIVE" vWrapMode="CLAMPTOBLACKADDITIVE">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="0"/>
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent.Thumb" relativePoint="BOTTOMRIGHT" x="0" y="0"/>
+                    </Anchors>
+                    <MaskedTextures>
+                        <MaskedTexture childKey="BarLeft"/>
+                        <MaskedTexture childKey="BarRight"/>
+                        <MaskedTexture childKey="BarMiddle"/>
+                        <MaskedTexture childKey="Bar"/>
+                    </MaskedTextures>
+                </MaskTexture>
+            </Layer>
+            <Layer level="BORDER">
+                <Texture parentKey="BorderLeft" atlas="widgetstatusbar-borderleft" useAtlasSize="true" alpha="1">
+					<Anchors>
+						<Anchor point="LEFT" x="0" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="BorderRight" atlas="widgetstatusbar-borderright" useAtlasSize="true" alpha="1">
+					<Anchors>
+						<Anchor point="RIGHT" x="0" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="BorderMiddle" atlas="widgetstatusbar-bordercenter" useAtlasSize="true" alpha="1">
+					<Anchors>
+						<Anchor point="LEFT" relativeKey="$parent.BorderLeft" relativePoint="RIGHT"/>
+						<Anchor point="RIGHT" relativeKey="$parent.BorderRight" relativePoint="LEFT"/>
+					</Anchors>
+				</Texture>
+            </Layer>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="BGLeft" atlas="widgetstatusbar-bgleft" useAtlasSize="true" alpha="0.3">
+					<Anchors>
+						<Anchor point="LEFT" x="4" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="BGRight" atlas="widgetstatusbar-bgright" useAtlasSize="true" alpha="0.3">
+					<Anchors>
+						<Anchor point="RIGHT" x="-4" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="BGMiddle" atlas="widgetstatusbar-bgcenter" useAtlasSize="true" alpha="0.3">
+					<Anchors>
+						<Anchor point="LEFT" relativeKey="$parent.BGLeft" relativePoint="RIGHT"/>
+						<Anchor point="RIGHT" relativeKey="$parent.BGRight" relativePoint="LEFT"/>
+					</Anchors>
+				</Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+            <OnLoad method="OnLoad" inherit="append"/>
+        </Scripts>
+    </Slider>
+
+    <Frame name="EchoRaidTools_BetterSlider" virtual="true" mixin="EchoRaidTools_BetterSliderMixin" enableMouse="true">
+        <Size>
+            <AbsDimension x="200" y="28"/>
+        </Size>
+        <Frames>
+            <Button parentKey="Decrement">
+                <Size x="20" y="20"/>
+                <Anchors>
+                    <Anchor point="LEFT"/>
+                </Anchors>
+                <NormalTexture atlas="Soulbinds_Collection_CategoryHeader_Collapse" desaturated="true"/>
+                <HighlightTexture atlas="Soulbinds_Collection_CategoryHeader_Collapse" desaturated="true">
+                    <Color r="1" g=".82" b="0" a="1"/>
+                </HighlightTexture>
+                <DisabledTexture  atlas="Soulbinds_Collection_CategoryHeader_Collapse" desaturated="true">
+                    <Color r="0.5" g="0.5" b="0.5" a="1"/>
+                </DisabledTexture >
+            </Button>
+            <Button parentKey="Increment">
+                <Size x="20" y="20"/>
+                <Anchors>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+                <NormalTexture atlas="Soulbinds_Collection_CategoryHeader_Expand" desaturated="true"/>
+                <HighlightTexture atlas="Soulbinds_Collection_CategoryHeader_Expand" desaturated="true">
+                    <Color r="1" g=".82" b="0" a="1"/>
+                </HighlightTexture>
+                <DisabledTexture  atlas="Soulbinds_Collection_CategoryHeader_Expand" desaturated="true">
+                    <Color r="0.5" g="0.5" b="0.5" a="1"/>
+                </DisabledTexture >
+            </Button>
+            <Slider parentKey="Slider" inherits="EchoRaidTools_BetterSlider_SliderTemplate">
+                <Size x="1" y="28"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Decrement" relativePoint="RIGHT" x="-4"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Increment" relativePoint="LEFT" x="4"/>
+                </Anchors>
+            </Slider>
+            <EditBox parentKey="ValueEditbox" autoFocus="false" hidden="true">
+                <Size x="1" y="28"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Decrement" relativePoint="RIGHT" x="-4"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.Increment" relativePoint="LEFT" x="4"/>
+                </Anchors>
+                <!--HighlightColor r="1" g="1" b="1" a="0.3"/-->
+                <HighlightColor r="1" g=".82" b="0" a="0.3"/>
+                <FontString justifyH="CENTER" inherits="ChatFontNormal"/>
+            </EditBox>
+            <Frame parentKey="Overlay">
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="OVERLAY" textureSublevel="7">
+                        <FontString parentKey="ValueText" inherits="ChatFontNormal" nonspacewrap="false" maxLines="1" justifyH="CENTER">
+                            <Color r="0.8" g="0.8" b="0.8" a="1"/>
+                            <!--Shadow x="1" y="-1"/-->
+                            <Anchors>
+                                <Anchor point="CENTER" />
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+        </Frames>
+        <Layers>
+            <Layer level="ARTWORK">
+				<FontString parentKey="TopText" inherits="GameTooltipTextSmall" nonspacewrap="false" maxLines="1" justifyH="LEFT" hidden="true">
+                    <Color r="1.0" g="0.82" b="0" a="0.7"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.Decrement" relativePoint="TOPLEFT" x="4" y="5"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnMouseDown method="OnMouseDown" inherit="prepend"/>
+            <OnEnter method="OnEnter" inherit="prepend"/>
+            <OnLeave method="OnLeave" inherit="prepend"/>
+        </Scripts>
+    </Frame>
+
+</Ui>

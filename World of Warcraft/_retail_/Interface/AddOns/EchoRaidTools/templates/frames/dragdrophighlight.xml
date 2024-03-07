@@ -1,0 +1,85 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidTools_DragDropHighlight" virtual="true">
+        <Anchors>
+            <Anchor point="TOPLEFT" />
+            <Anchor point="BOTTOMRIGHT" />
+        </Anchors>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="Full" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                    <!-- <Color r="67" g="217" b="247" a="0.25" /> -->
+                    <Color r="0.262745" g="0.85098" b="0.968627" a="0.25" />
+                </Texture>
+                <Texture parentKey="Top" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="RIGHT" />
+                    </Anchors>
+                    <!-- <Color r="67" g="217" b="247" a="0.25" /> -->
+                    <Color r="0.262745" g="0.85098" b="0.968627" a="0.25" />
+                </Texture>
+                <Texture parentKey="Right" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOP" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                    <!-- <Color r="67" g="217" b="247" a="0.25" /> -->
+                    <Color r="0.262745" g="0.85098" b="0.968627" a="0.25" />
+                </Texture>
+                <Texture parentKey="Bottom" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="LEFT" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                    <!-- <Color r="67" g="217" b="247" a="0.25" /> -->
+                    <Color r="0.262745" g="0.85098" b="0.968627" a="0.25" />
+                </Texture>
+                <Texture parentKey="Left" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOM" />
+                    </Anchors>
+                    <!-- <Color r="67" g="217" b="247" a="0.25" /> -->
+                    <Color r="0.262745" g="0.85098" b="0.968627" a="0.25" />
+                </Texture>
+                <Texture parentKey="TopBorder" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" y="-5" />
+                    </Anchors>
+                    <!-- <Color r="23" g="174" b="255" a="0.25" /> -->
+                    <Color r="0.0901961" g="0.682353" b="1" a="0.25" />
+                </Texture>
+                <Texture parentKey="RightBorder" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="-5" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                    <!-- <Color r="23" g="174" b="255" a="0.25" /> -->
+                    <Color r="0.0901961" g="0.682353" b="1" a="0.25" />
+                </Texture>
+                <Texture parentKey="BottomBorder" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" y="5" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                    <!-- <Color r="23" g="174" b="255" a="0.25" /> -->
+                    <Color r="0.0901961" g="0.682353" b="1" a="0.25" />
+                </Texture>
+                <Texture parentKey="LeftBorder" hidden="true">  
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="5" />
+                    </Anchors>
+                    <!-- <Color r="23" g="174" b="255" a="0.25" /> -->
+                    <Color r="0.0901961" g="0.682353" b="1" a="0.25" />
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

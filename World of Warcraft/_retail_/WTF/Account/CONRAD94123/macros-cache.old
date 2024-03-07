@@ -1,0 +1,160 @@
+VER 3 0000000000000218 "AI" "134400"
+#showtooltip
+/cast [@player]Arcane Intellect
+END
+VER 3 000000000000021A "asd" "134400"
+#showtooltip
+/click DeleteManaGem
+/use Conjure Mana Gem
+END
+VER 3 00000000000001CC "belt" "134400"
+/use 6
+END
+VER 3 00000000000001D3 "BITE ME" "132091"
+/y Слон в посудной лавке
+END
+VER 3 00000000000001D4 "Blizzard" "134400"
+#showtooltip
+/cqs
+/cast [@cursor] Blizzard
+END
+VER 3 00000000000001D8 "comb/trink" "134400"
+#showtooltip combustion
+/castsequence  fire blast, fire blast, combustion, pyroblast
+END
+VER 3 0000000000000215 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] Spellsteal;  [@mouseover,exists,mod:ctrl] Polymorph; [@mouseover,exists,mod:shift] Spellsteal
+END
+VER 3 00000000000001DE "fake" "134400"
+#showtooltip
+/run SKBFakeQueueCQS()
+/cast [@cursor] Flamestrike
+/run SKBFakeQueueCQS()
+END
+VER 3 00000000000001C6 "fake" "236205"
+#showtooltip
+/run ABarrFakeQueueCQS()
+/cast Arcane Barrage
+/run ABarrFakeQueueCQS()
+END
+VER 3 00000000000001E1 "Fireball" "134400"
+#showtooltip
+/cast Fireball
+/targetenemy [noexists][dead]
+END
+VER 3 0000000000000213 "fireworks" "538566"
+/use Bronze Fireflight
+/use Blue Fireflight
+/use Red Fireflight
+/use Green Fireflight
+/use Black Fireflight
+END
+VER 3 0000000000000211 "guild" "1500888"
+/2 |cffffd100|HclubFinder:ClubFinder-1-316908-3682-93077620|h[Guild: Ripple]|h|r is looking for active warrior/monk/mage for our mythic roster, 4/8M ,raiding Mon/wed/thur , 20:30-22:30. https://ripple.sickers.be or PM for more info :]
+END
+VER 3 00000000000001ED "IB CANCEL" "135841"
+#showtooltip Ice Block
+/stopcasting
+/cancelaura Ice Block
+/cast Ice Block
+END
+VER 3 000000000000020F "in" "1381294"
+#showtooltip
+/castsequence reset=25 fire blast ,ice nova
+END
+VER 3 0000000000000210 "meld" "134400"
+#showtooltip
+/cast shadowmeld
+/cast !stealth
+END
+VER 3 000000000000020E "Meteor" "134400"
+#showtooltip
+/cast [@cursor] meteor
+END
+VER 3 0000000000000216 "mount" "4622499"
+#showtooltip
+/use Cliffside Wylderdrake
+/use Ash'adar, Harbinger of Dawn
+END
+VER 3 00000000000001C9 "mount" "132117"
+/use surf jelly
+/use Grotto Netherwing Drake
+/use Ashes of Al'ar
+/dismount
+END
+VER 3 0000000000000202 "no pot" "135838"
+#showtooltip
+/cast icy veins
+/cast Berserking(Racial)
+END
+VER 3 000000000000021B "omegablink" "134400"
+#showtooltip blink
+/castsequence Alter Time,Blink,Alter Time,Blink,Displacement
+END
+VER 3 00000000000001F3 "Pf" "134400"
+#showtooltip
+/cast Phoenix Flames
+/targetenemy [noexists][dead]
+END
+VER 3 0000000000000212 "R3 hp" "134400"
+#showtooltip
+/use item:191380
+END
+VER 3 0000000000000219 "Razorstone" "134400"
+#showtooltip
+/use [button:1][button:2] Primal Razorstone
+/use [button:1] 23
+/use [button:2] 23
+END
+VER 3 00000000000001CB "RoP+staff" "609815"
+#showtooltip Rune of power
+/use 14
+/cast Rune of power
+END
+VER 3 000000000000020C "RS/staff" "3565446"
+#showtooltip radiant spark
+/use 14
+/cast Berserking(Racial)
+/cast Radiant spark
+END
+VER 3 00000000000001F9 "sc" "134400"
+#showtooltip
+/cast scorch
+/use Neural Synapse Enhancer
+END
+VER 3 00000000000001FA "snack!" "237568"
+#showtooltip
+/join general
+/join trade
+/join localdefense
+/join lookingforgroup
+END
+VER 3 00000000000001FB "Soul igniter" "3536195"
+#showtooltip
+/use 14
+/cancelaura Soul Ignition
+/use 14
+END
+VER 3 00000000000001FD "spit" "1035053"
+/spit
+END
+VER 3 00000000000001FF "sunlight" "135954"
+/s first druid, sunlight
+END
+VER 3 00000000000001DD "totm" "134400"
+#showtooltip touch of the magi
+/castsequence reset=5 arcane barrage, touch of the magi
+END
+VER 3 0000000000000214 "Trink" "134400"
+#showtooltip
+/use 14
+/use item:191913
+/use item:36799
+END
+VER 3 0000000000000217 "use" "134400"
+/use item:191340
+END
+VER 3 000000000000020A "Š 1 1 €" "132298"
+/s Š 1 1 €
+END

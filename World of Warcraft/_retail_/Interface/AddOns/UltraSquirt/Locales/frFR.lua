@@ -1,0 +1,30 @@
+--localization file for French
+local L = LibStub("AceLocale-3.0"):NewLocale("UltraSquirt", "frFR")
+
+if not L then return end
+
+L["Keybind Missing"] = "La liaison de clés n’est pas définie"
+L["Cannot Modify In Battle"] = "Impossible de modifier le PNJ de combat d’animaux de compagnie cible pendant une bataille d’animaux de compagnie - veuillez réessayer lorsque la bataille est terminée"
+L["Invalid Target"] = "Cible non valide - sélectionnez un PNJ de combat d’animaux de compagnie répétable valide et réessayez"
+L["Addon Enabled"] = "Addon activé"
+L["Addon Disabled"] = "Addon désactivé"
+L["Resetting Options"] = "Réinitialisation des options de l’addon et de la position de la fenêtre"
+L["Resetting Options OOC"] = "Les options seront réinitialisées à la fin du combat"
+L["General Settings Group"] = "Paramètres généraux"
+L["Delay Settings Group"] = "Paramètres de délai"
+L["Delay Settings Description"] = "Les paramètres ci-dessous vous permettent de personnaliser les temporisateurs utilisés.  Les valeurs par défaut devraient fonctionner dans la grande majorité des cas.  Si vous avez une latence élevée, ou si vous rencontrez des problèmes où l’addon résout de manière inattendue, essayez d’augmenter légèrement les temps."
+L["Rematch Load Team Delay Setting"] = "Délai de chargement de l’équipe de revanche"
+L["Rematch Load Team Delay Description"] = "Lors de l’utilisation des options Rematch « Charger les animaux les plus sains » et « Après les batailles d’animaux aussi », une fois une bataille d’animaux terminée, l’addon mettra en pause toutes les autres actions pendant que Rematch charge une nouvelle équipe.  Cela devrait prendre 1 ou 2 secondes au maximum.  L’ajustement de ce paramètre modifiera le délai maximal autorisé."
+L["Pet Battle Close Delay Setting"] = "Retard de fermeture de la bataille d’animaux"
+L["Pet Battle Close Delay Description"] = "Une fois la bataille d’animaux terminée, l’addon retardera pendant une courte période pour permettre au jeu de mettre à jour le statut et la santé des animaux chargés.  Modifiez cette valeur pour augmenter ou diminuer le délai maximal.  Cela ne s’applique que lorsque vous n’utilisez pas les options de match critique « Charger les animaux les plus sains » et « Après les batailles d’animaux aussi »."
+L["Heal Delay Setting"] = "Délai de guérison"
+L["Heal Delay Description"] = "Après avoir guéri vos animaux de compagnie avec un bandage, ou Revice Battle Pets, l’addon retardera pendant une courte période pour permettre au jeu de se mettre à jour.  Modifiez cette valeur pour augmenter ou diminuer le délai maximal."
+L["Help Header"] = "Barres obliques disponibles :"
+L["Help Default"] = "Basculez la fenêtre principale UltraSquirt."
+L["Help Config"] = "Afficher le panneau de configuration."
+L["Help Advanced"] = "Afficher le panneau Équipes avancées."
+L["Help Reset"] = "Réinitialisez tous les paramètres UltraSquirt et les positions des fenêtres par défaut."
+L["Help Help"] = "Affichez cette liste de commandes disponibles."
+L["Invalid Command"] = "Commande non valide."
+L["Team Name"] = "Nom de l’équipe"
+L["Mute Addon Enabled and Disabled Messages"] = "Désactiver les messages activés et désactivés du module complémentaire"

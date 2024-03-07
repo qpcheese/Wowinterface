@@ -1,0 +1,36 @@
+VER 3 0100000000000004 "bb" "134400"
+#showtooltip
+/cast [@cursor] Bonedust Brew
+END
+VER 3 0100000000000001 "mount" "134400"
+#showtooltip
+/use Renewed Proto-Drake
+/cast Zen flight
+END
+VER 3 0100000000000005 "Rop" "134400"
+#showtooltip
+/cast [@cursor] Ring of peace
+END
+VER 3 0100000000000009 "rw" "134400"
+/rw 1,3 {rt6} Left    [Group 2,4 {rt4} Right]
+END
+VER 3 0100000000000008 "spellsteal" "134400"
+/w Астрамара-Гордунни Spellsteal boss
+END
+VER 3 0100000000000002 "TL" "134400"
+#showtooltip
+/cast [@player] Tiger's lust
+END
+VER 3 0100000000000003 "trance" "134400"
+#showtooltip
+/castsequence Transcendence, Transcendence: Transfer
+END
+VER 3 0100000000000006 "trink" "134400"
+#showtooltip
+/use 13
+/use 14
+END
+VER 3 0100000000000007 "trinket" "134400"
+#showtooltip
+/use 13
+END

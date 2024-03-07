@@ -1,0 +1,12 @@
+tag f296fc3155e0dbaf983ac0b52a430d73b017f860 v5.10
+Author:	rose <114445450+rosebtgf@users.noreply.github.com>
+Date:	Thu Sep 28 19:28:16 2023 +0100
+
+commit bb5680e633fb878c0cc2bdaac5e31c52f33fffa1
+Author: rose <114445450+rosebtgf@users.noreply.github.com>
+Date:   Mon Sep 25 17:03:34 2023 +0100
+
+    5.10 WotLKC defaults
+    
+    Default spell values now correctly populate for the version of the game running, no check was implemented for wrath classic resulting in retail values being used, mind flay has 3 ticks, etc
+

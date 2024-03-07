@@ -1,0 +1,57 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Button name="EchoRaidToolsMainMenuButtonTemplate" virtual="true" mixin="EchoRaidToolsMainMenuButtonTemplateMixin">
+		<Size x="250" y="30"/>
+        <ButtonText>Main Menu Button</ButtonText>
+        <Layers>
+			<Layer level="BACKGROUND">
+				<!--<Texture parentKey="NormalTexture" atlas="garrmissionlocation-maw-buttonbg" useAtlasSize="false">-->
+                <!--<Texture parentKey="NormalTexture" atlas="challenges-timerbg" useAtlasSize="false">-->
+                <Texture parentKey="NormalTexture" atlas="common-gray-button-entrybox-right" useAtlasSize="false"> <!--PetList-ButtonBackground-->
+					<Anchors>
+						<Anchor point="TOPLEFT" x="-2" y="0" />
+                        <Anchor point="BOTTOMRIGHT" x="2" y="0" />
+					</Anchors>
+				</Texture>
+			</Layer>
+            <Layer level="ARTWORK">
+                <Texture parentKey="HighlightTexture" atlas="PetList-ButtonHighlight" useAtlasSize="false" hidden="true" alpha="0.4" alphaMode="ADD">
+                    <TexCoords left="0.1" right="1" top="0" bottom="1"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" x="0" y="-2" />
+                        <Anchor point="BOTTOMRIGHT" x="-1" y="2" />
+					</Anchors>
+				</Texture>
+            </Layer>
+			<Layer level="OVERLAY">
+                <Texture parentKey="SelectedTexture" atlas="PetList-ButtonSelect" useAtlasSize="false" hidden="true" alpha="0.6" alphaMode="ADD">
+                    <TexCoords left="0.1" right="1" top="0" bottom="1"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" x="0" y="-2" />
+                        <Anchor point="BOTTOMRIGHT" x="-1" y="2" />
+					</Anchors>
+				</Texture>
+				<FontString parentKey="Label" inherits="GameFontHighlight" JustifyH="RIGHT">
+					<Anchors>
+						<Anchor point="RIGHT" x="-10" />
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+        <Scripts>
+            <OnClick>
+                self.SelectedTexture:Show()
+            </OnClick>
+            <OnEnter>
+                self.HighlightTexture:Show()
+            </OnEnter>
+            <OnLeave>
+                self.HighlightTexture:Hide()
+            </OnLeave>
+            <OnLoad>
+                self.isModule=false
+                self.Label:SetText(self:GetText())
+            </OnLoad>
+        </Scripts>
+	</Button>
+</Ui>

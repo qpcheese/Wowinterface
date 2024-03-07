@@ -1,0 +1,13 @@
+
+AtlasLootClassicDB = {
+	["global"] = {
+		["__addonrevision"] = 1010001,
+	},
+	["profileKeys"] = {
+		["Qpfromage - Living Flame"] = "Qpfromage - Living Flame",
+	},
+	["profiles"] = {
+		["Qpfromage - Living Flame"] = {
+		},
+	},
+}

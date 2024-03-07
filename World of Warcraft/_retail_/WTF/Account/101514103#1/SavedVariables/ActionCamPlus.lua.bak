@@ -1,0 +1,28 @@
+
+ActionCamPlusDB = {
+	["ACP_CombatSetCameraZoom"] = false,
+	["ACP_ActionCam"] = true,
+	["ACP_CombatFocusing"] = true,
+	["lastVersion"] = 0.21,
+	["defaultZoomSpeed"] = "20",
+	["ACP_MountSpecificZoom"] = false,
+	["ACP_DruidFormMounts"] = true,
+	["ACP_SetCameraZoom"] = true,
+	["unmountedCamDistance"] = 19.5,
+	["combatCamDistance"] = 20,
+	["ACP_Pitch"] = true,
+	["ACP_CombatPitch"] = true,
+	["ACP_Focusing"] = false,
+	["ACP_MountedFocusing"] = false,
+	["ACP_MountedPitch"] = false,
+	["ACP_MountedSetCameraZoom"] = true,
+	["ACP_AddonEnabled"] = true,
+	["mountedCamDistance"] = 30,
+	["ACP_Mounted"] = true,
+	["ACP_Combat"] = false,
+	["ACP_CombatActionCam"] = true,
+	["transitionSpeed"] = 12,
+	["mountZooms"] = {
+	},
+	["ACP_MountedActionCam"] = false,
+}

@@ -1,0 +1,32 @@
+## Interface: 11500
+
+## Author: StormFX
+## Title: Masque: Fusion
+## Version: 10.2.5
+
+## Dependencies: Masque
+## IconTexture: Interface\AddOns\Masque_Fusion\Textures\Icon
+
+## Notes: Fusion skin for Masque.
+## Notes-deDE: Fusion-Skin für Masque.
+## Notes-esMX: Skin Fusion para Masque.
+## Notes-esES: Skin Fusion para Masque.
+## Notes-frFR: Skin de Fusion pour Masque.
+## Notes-itIT: Skin Fusion per Masque.
+## Notes-ruRU: Скин Fusion для Masque.
+## Notes-zhTW: Masque的Fusion皮膚。
+
+## X-Category: Interface Enhancements
+## X-Credits: Zeal, Caith
+## X-Discord: https://discord.gg/7MTWRgDzz8
+## X-Website: https://github.com/SFX-WoW/Masque_Fusion
+
+## X-Curse-Project-ID: 648535
+## X-Wago-ID: RXKq75Ny
+## X-WoWI-ID: 26369
+
+# Locales
+Locales.lua
+
+# Skins
+Skins.lua

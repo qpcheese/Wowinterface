@@ -1,0 +1,46 @@
+
+HandyNotes_OribosDB = {
+	["profileKeys"] = {
+		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+		["Qute - Sylvanas"] = "Qute - Sylvanas",
+		["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+		["Qpebank - Draenor"] = "Qpebank - Draenor",
+		["Qpc - Draenor"] = "Qpc - Draenor",
+		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Zelení - Draenor"] = "Zelení - Draenor",
+		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
+		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+	},
+	["profiles"] = {
+		["Djagon - Ragnaros"] = {
+		},
+		["Qubit - Ragnaros"] = {
+		},
+		["Qute - Sylvanas"] = {
+		},
+		["Qpfromage - Sylvanas"] = {
+		},
+		["Dogson - Ragnaros"] = {
+		},
+		["Qpebank - Draenor"] = {
+		},
+		["Qpc - Draenor"] = {
+		},
+		["Qpe - Ravencrest"] = {
+		},
+		["Qpaladin - Ragnaros"] = {
+		},
+		["Zelení - Draenor"] = {
+		},
+		["Qpfromage - Ragnaros"] = {
+		},
+		["Qpew - Ragnaros"] = {
+		},
+		["Cyclosarin - Ragnaros"] = {
+		},
+	},
+}

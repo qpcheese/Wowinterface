@@ -1,0 +1,2 @@
+
+DetailsTimeLineDB = nil

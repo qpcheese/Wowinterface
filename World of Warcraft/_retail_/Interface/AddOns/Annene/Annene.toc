@@ -1,0 +1,13 @@
+## Interface: 100200
+## Title: Annene
+## Author: Urtgard
+## Version: v10.2.0-1
+## X-Curse-Project-ID: 92404
+## X-WoWI-ID: 23879
+## X-Wago-ID: x61zxxK1
+## SavedVariables: AnneneDB
+## OptionalDeps: BattlePetBattleUITweaks, DerangementPetBattleCooldowns, PetTracker
+
+embeds.xml
+Annene.lua
+OtherAddons.lua

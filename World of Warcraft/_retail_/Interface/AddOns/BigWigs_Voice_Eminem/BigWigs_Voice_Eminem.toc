@@ -1,0 +1,9 @@
+## Interface: 80100
+## Author: Klix
+## Version: 0.31
+## Title: BigWigs |cffff7f3f+|r|cffffffffVoice: Eminem|r
+## Notes: Thanks to Crooked on Mal'Ganis-US for providing the .ogg files!
+## Dependencies: BigWigs
+
+BigWigs_Voice_Eminem.lua
+

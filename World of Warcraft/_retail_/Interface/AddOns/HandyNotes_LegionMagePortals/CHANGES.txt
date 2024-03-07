@@ -1,0 +1,12 @@
+tag fc7bac4ae8698513fd25c8eb718dbead85235681 v2.7
+Author:	David Mcanulty <github@hellspark.com>
+Date:	Wed Jan 17 00:32:40 2024 +0000
+
+Release 2.7
+
+commit 51c9d0b3fc23ca61207605105534fd6226dcf933
+Author: David Mcanulty <github@hellspark.com>
+Date:   Wed Jan 17 00:31:56 2024 +0000
+
+    Bump toc for 10.2.5
+

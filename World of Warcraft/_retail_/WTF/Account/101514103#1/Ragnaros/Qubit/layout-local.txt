@@ -1,0 +1,15 @@
+Version: 1
+Frame: ColorPickerFrame
+FrameLevel: 22
+Anchor: LEFT
+X: 336
+Y: 155
+W: 365
+H: 200
+Frame: LootHistoryFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -382
+Y: -69
+W: 210
+H: 463

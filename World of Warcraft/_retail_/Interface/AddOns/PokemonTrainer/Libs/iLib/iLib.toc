@@ -1,0 +1,8 @@
+## Interface: 90002
+## Version: 1.3
+## Title: Lib: iLib
+## Notes: A library which provides shared functionality for grdn's addons.
+## Author: grdn
+## OptionalDeps: Ace3, LibQTip-1.0
+
+lib.xml

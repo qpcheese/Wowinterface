@@ -1,0 +1,30 @@
+--localization file for Italian
+local L = LibStub("AceLocale-3.0"):NewLocale("UltraSquirt", "itIT")
+
+if not L then return end
+
+L["Keybind Missing"] = "L'associazione a chiave non è impostata"
+L["Cannot Modify In Battle"] = "Non è possibile modificare l'NPC della battaglia con animali domestici durante una battaglia con animali domestici - riprova quando la battaglia è finita"
+L["Invalid Target"] = "Bersaglio non valido: seleziona un NPC valido e ripetibile e riprova"
+L["Addon Enabled"] = "Addon abilitato"
+L["Addon Disabled"] = "Addon disabilitato"
+L["Resetting Options"] = "Ripristino delle opzioni del componente aggiuntivo e della posizione della finestra"
+L["Resetting Options OOC"] = "Le opzioni verranno ripristinate al termine del combattimento"
+L["General Settings Group"] = "Impostazioni generali"
+L["Delay Settings Group"] = "Impostazioni di ritardo"
+L["Delay Settings Description"] = "Le impostazioni riportate di seguito consentono di personalizzare i timer di ritardo utilizzati.  Le impostazioni predefinite dovrebbero funzionare nella stragrande maggioranza dei casi.  Se hai una latenza elevata o altrimenti incontri problemi in cui l'addon si risolve in modo imprevisto, prova ad aumentare leggermente i tempi."
+L["Rematch Load Team Delay Setting"] = "Ritardo della squadra del carico di rivincita"
+L["Rematch Load Team Delay Description"] = "Durante l'utilizzo delle opzioni di rivincita \"Carica animali più sani\" e \"Anche dopo le battaglie degli animali domestici\", dopo il completamento di una battaglia con animali domestici, l'addon metterà in pausa qualsiasi ulteriore azione mentre la rivincita carica una nuova squadra.  Questo dovrebbe richiedere 1 o 2 secondi al massimo.  La regolazione di questa impostazione modificherà il ritardo massimo consentito."
+L["Pet Battle Close Delay Setting"] = "Pet Battle Close Delay"
+L["Pet Battle Close Delay Description"] = "Al termine di una Pet Battle, l'addon ritarderà per un breve periodo per consentire al gioco di aggiornare lo stato e la salute degli animali caricati.  Modificare questo valore per aumentare o diminuire il ritardo massimo.  Questo vale solo quando non si utilizzano le opzioni di rivincita \"Carica gli animali più sani\" e \"Anche dopo le battaglie degli animali domestici\"."
+L["Heal Delay Setting"] = "Guarisci il ritardo"
+L["Heal Delay Description"] = "Dopo aver guarito i tuoi animali domestici con una benda, o Revice Battle Pets, l'addon ritarderà per un breve periodo per consentire al gioco di aggiornarsi.  Modificare questo valore per aumentare o diminuire il ritardo massimo."
+L["Help Header"] = "Comandi barra disponibili:"
+L["Help Default"] = "Attiva o disattiva la finestra principale di UltraSquirt."
+L["Help Config"] = "Visualizza il pannello di configurazione."
+L["Help Advanced"] = "Visualizza il pannello Team avanzati."
+L["Help Reset"] = "Ripristina tutte le impostazioni UltraSquirt e le posizioni delle finestre ai valori predefiniti."
+L["Help Help"] = "Visualizza questo elenco di comandi disponibili."
+L["Invalid Command"] = "Comando non valido."
+L["Team Name"] = "Nome della squadra"
+L["Mute Addon Enabled and Disabled Messages"] = "Messaggi abilitati e disabilitati per l'audio dell'addon"

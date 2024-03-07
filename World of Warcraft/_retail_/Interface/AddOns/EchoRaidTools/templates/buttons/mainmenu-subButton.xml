@@ -1,0 +1,221 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+   
+    <Button name="EchoRaidTools_MainMenu_MiniButton" virtual="true" mixin="EchoRaidTools_MainMenu_MiniButtonMixin">
+        <Size x="12" y="12"/>
+        <Scripts>
+            <OnClick method="PreClick"/>
+        </Scripts>
+    </Button>
+    <Button name="EchoRaidTools_MainMenu_DeleteButtonTemplate" inherits="EchoRaidTools_MainMenu_MiniButton" virtual="true" mixin="EchoRaidTools_MainMenu_DeleteButtonTemplateMixin">
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture file="Interface/AddOns/EchoRaidTools/assets/textures/Delete.tga" parentKey="ButtonTexture" alpha="0.8">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="1" y="-1"/>
+                        <Anchor point="BOTTOMRIGHT" x="-1" y="1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </Button>
+    <Button name="EchoRaidTools_MainMenu_CopyButtonTemplate" inherits="EchoRaidTools_MainMenu_MiniButton" virtual="true" mixin="EchoRaidTools_MainMenu_CopyButtonTemplateMixin">
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture file="Interface/AddOns/EchoRaidTools/assets/textures/Copy.tga" parentKey="ButtonTexture" alpha="0.8"> <!--   -->
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="1" y="-1"/>
+                        <Anchor point="BOTTOMRIGHT" x="-1" y="1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </Button>
+    <Button name="EchoRaidTools_MainMenu_RenameButtonTemplate" inherits="EchoRaidTools_MainMenu_MiniButton" virtual="true" mixin="EchoRaidTools_MainMenu_RenameButtonTemplateMixin">
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture file="Interface/AddOns/EchoRaidTools/assets/textures/rename.tga" parentKey="ButtonTexture" alpha="0.8">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="1" y="-1"/>
+                        <Anchor point="BOTTOMRIGHT" x="-1" y="1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </Button>
+    <Button name="EchoRaidTools_MainMenu_AddButtonTemplate" inherits="EchoRaidTools_MainMenu_MiniButton" virtual="true" mixin="EchoRaidTools_MainMenu_AddButtonTemplateMixin">
+        <Size x="15" y="15"/>
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture atlas="communities-chat-icon-plus" parentKey="ButtonTexture" alpha="1" desaturated="true">
+                    <Color r="1" g="1" b="1"/> <!-- r="1" g="0.82" b="0.1"/-->
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="1" y="-1"/>
+                        <Anchor point="BOTTOMRIGHT" x="-1" y="1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnClick method="PreClick"/>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </Button>
+
+    <Frame name="EchoRaidTools_MainMenu_ExpandButton" virtual="true" mixin="EchoRaidTools_MainMenu_ExpandButtonMixin">
+        <Size x="200" y="25"/>
+        <Anchors>
+            <Anchor point="LEFT"/>
+        </Anchors>
+        <Frames>
+            <Frame parentKey="ChildFrame">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT"/> 
+                    <Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString parentKey="ButtonText" inherits="GameFontNormal">
+                    <Color r="1" g="1" b="1" a="1"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="7" y="0"/>
+                    </Anchors>
+                </FontString>
+                <Texture parentKey="OpenArrow" atlas="Azerite-PointingArrow" desaturated="true" alpha="0.3">
+                    <Size x="15" y="10"/>
+                    <Anchors>
+                        <Anchor point="RIGHT" x="-5"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="OVERLAY">
+                <Texture parentKey="HighlightTexture" atlas="GarrMission_FollowerListButton-Select" setAllPoints="true" alpha="0.3" hidden="true"/> <!-- BattleBar-SwapPetFrame-Highlight-->
+                <Texture parentKey="ExpandedTexture" atlas="GarrMission_FollowerListButton-Highlight" setAllPoints="true" alpha="0.3" hidden="true"/> <!-- BattleBar-SwapPetFrame-Highlight-->
+                <Texture parentKey="CollapsedTexture" atlas="GarrMission_ListGlow-Highlight" setAllPoints="true" alpha="0.3" hidden="true"/> <!-- BattleBar-SwapPetFrame-Highlight-->
+            </Layer>
+        </Layers>
+        <Frames>
+            <Button parentKey="AddButton" inherits="EchoRaidTools_MainMenu_AddButtonTemplate" mixin="EchoRaidTools_MainMenu_ExpandButton_AddButtonMixin">
+                <Anchors>
+                    <Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.ButtonText" x="3"/> <!-- relativeKey="$parent.OpenArrow" -->
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick" inherit="append"/>
+                </Scripts>
+            </Button>
+        </Frames>
+        <Scripts>
+            <OnLoad method="OnLoad" />
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+            <OnMouseDown method="OnMouseDown"/>
+        </Scripts>
+    </Frame>
+
+    <Frame name="EchoRaidTools_MainMenu_SubButton" virtual="true" mixin="EchoRaidTools_MainMenu_SubButtonMixin">
+        <Size x="200" y="25"/>
+        <Anchors>
+            <Anchor point="LEFT"/>
+        </Anchors>
+        <Frames>
+            <Button parentKey="DeleteButton" inherits="EchoRaidTools_MainMenu_DeleteButtonTemplate" mixin="EchoRaidTools_MainMenu_DeleteButtonMixin">
+                <Anchors>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick" inherit="append"/>
+                </Scripts>
+            </Button>
+            <Button parentKey="CopyButton" inherits="EchoRaidTools_MainMenu_CopyButtonTemplate" mixin="EchoRaidTools_MainMenu_CopyButtonMixin">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.DeleteButton"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick" inherit="append"/>
+                </Scripts>
+            </Button>
+            <Button parentKey="RenameButton" inherits="EchoRaidTools_MainMenu_RenameButtonTemplate" mixin="EchoRaidTools_MainMenu_RenameButtonMixin">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.CopyButton"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick" inherit="append"/>
+                </Scripts>
+            </Button>
+            <EditBox parentKey="EditBox" numeric="false" multiLine="false" autoFocus="false" justifyH="left"
+            hidden="true" inherits="EchoRaidToolsConfig_EditboxTemplate" mixin="EchoRaidTools_MainMenu_SubButton_EditboxMixin">
+                <FontString justifyH="LEFT" inherits="GameFontNormalTiny"/>
+                <Size x="190" y="25"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="4"/>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.RenameButton" x="-3"/>
+                </Anchors>
+                <Scripts>
+                    <OnEscapePressed method="OnEscapePressed"/>
+                    <OnEnterPressed method="OnEnterPressed"/>
+                    <OnEditFocusLost method="OnEditFocusLost"/>
+                </Scripts>
+            </EditBox>
+            <CheckButton parentKey="CheckButton" inherits="EchoRaidTools_CheckButtonTemplate" hidden="true" mixin="EchoRaidTools_MainMenu_Subbutton_CheckButtonMixin">
+                <Size x="18" y="18"/>
+                <Anchors>
+                    <Anchor point="RIGHT" relativeKey="$parent.ButtonText" relativePoint="LEFT" x="4"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick" inherit="append"/>
+                </Scripts>
+            </CheckButton>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="NotLoadedTexture" setAllPoints="true" alphaMode="ADD" atlas="UI-Frame-Venthyr-Subtitle" alpha="0.6" hidden="true"/>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture parentKey="SelectedTexture" atlas="groupfinder-button-select" setAllPoints="true" alphaMode="ADD" alpha="0.4" hidden="true"/>
+            </Layer>
+            <Layer level="ARTWORK">
+                <FontString parentKey="ButtonText" font="GameFontNormalTiny" maxLines="1" wordWrap="false" justifyH="LEFT"> <!-- font="EchoRaidTools_ButtonTextNormalLeft"-->
+                    <Anchors>
+                        <Anchor point="LEFT" x="4"/>
+                        <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.RenameButton"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+            <Layer level="OVERLAY">
+                <!--Texture parentKey="DisabledTexture" atlas="transmog-icon-remove" alpha="1" hidden="true">
+                    <Size x="12" y="12"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="-14"/>
+                    </Anchors>
+                </Texture-->
+                <Texture parentKey="HighlightTexture" atlas="groupfinder-highlightbar-blue" alphaMode="ADD" setAllPoints="true" alpha="0.5" hidden="true"/>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad" />
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+            <OnMouseDown method="OnMouseDown"/>
+        </Scripts>
+    </Frame>
+
+</Ui>

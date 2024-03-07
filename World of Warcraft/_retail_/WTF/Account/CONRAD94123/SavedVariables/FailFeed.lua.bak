@@ -1,0 +1,13 @@
+
+FailFeedDB = {
+	["profileKeys"] = {
+		["Qpefromage - Draenor"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qutlaw - Ravencrest"] = "Default",
+		["Qpcheese - Todeswache"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

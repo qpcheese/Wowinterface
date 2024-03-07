@@ -1,0 +1,20 @@
+*3.01.10 (29-OCT-2020)*
+ * fixed - removed frame names for levels and buttons to avoid potential conflicts
+
+*3.01.09 (03-SEP-2020)*
+ * fixed - level 1 frames should no longer go off screen
+
+*3.01.08 (08-AUG-2020)*
+ * updated - shadowlands backdroptemplate
+
+*3.01.07 (17-JAN-2020)*
+ * fixed - issue with dual monitor code
+
+*3.01.06 (16-JAN-2020)*
+ * changed - toc updated to 80300
+ * changed - menu timeout increased from 3 to 5 seconds
+ * fixed - issue with global mouse event handler
+
+*3.01.05 (27-JUN-2019)*
+ * changed - toc updated to 80200
+ * fixed - issue with button recycling and 8.2 setpoint

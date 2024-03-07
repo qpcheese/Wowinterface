@@ -1,0 +1,74 @@
+﻿<Bindings>
+  <Binding name="ARKINV_CONFIG" category="ArkInventory ">
+    ArkInventory.Frame_Config_Toggle( )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_BAG" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Bag )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_KEYRING" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Keyring )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_BANK" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Bank )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_VAULT" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Vault )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_VOID" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Void )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_MAILBOX" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Mailbox )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_WEARING" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Wearing )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_PET" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Pet )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_MOUNT" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Mount )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_TOYBOX" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Toybox )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_HEIRLOOM" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Heirloom )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_TOKEN" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Currency )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_AUCTION" category="ArkInventory ">
+    ArkInventory.Frame_Main_Toggle( ArkInventory.Const.Location.Auction )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_EDIT" category="ArkInventory ">
+    ArkInventory.Frame_Main_Show( ArkInventory.Const.Location.Bag )
+    ArkInventory.ToggleEditMode( )
+  </Binding>
+  <Binding name="ARKINV_REFRESH" category="ArkInventory ">
+    ArkInventory.Frame_Main_Generate( nil, ArkInventory.Const.Window.Draw.Recalculate )
+  </Binding>
+  <Binding name="ARKINV_RELOAD" category="ArkInventory ">
+    ArkInventory.ItemCacheClear( )
+    ArkInventory.Frame_Main_Generate( nil, ArkInventory.Const.Window.Draw.Recalculate )
+  </Binding>
+  <Binding name="ARKINV_RESTACK" category="ArkInventory ">
+    ArkInventory.Restack( ArkInventory.Const.Location.Bag )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_RULES" category="ArkInventory ">
+    ArkInventory.Frame_Rules_Toggle( )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_SEARCH" category="ArkInventory ">
+    ArkInventory.Search.Frame_Toggle( )
+  </Binding>
+  <Binding name="ARKINV_TOGGLE_DEBUG" category="ArkInventory ">
+    ArkInventory.Debug.Frame_Toggle( )
+  </Binding>
+  <Binding name="ARKINV_LDB_PETS_SUMMON" category="ArkInventory ">
+    ArkInventory.LDB.Pets.OnClick( )
+  </Binding>
+  <Binding name="CLICK ARKINV_MountToggle:LeftButton" category="ArkInventory " />
+  <Binding name="ARKINV_ACTION_MANUAL_RUN" category="ArkInventory ">
+    ArkInventory.Action.ManualRun( )
+  </Binding>
+</Bindings>

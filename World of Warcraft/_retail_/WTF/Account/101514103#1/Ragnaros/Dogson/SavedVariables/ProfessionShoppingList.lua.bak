@@ -1,0 +1,17 @@
+
+pcWindowPosition = {
+	["pslFrame1"] = {
+		["left"] = 1131,
+		["bottom"] = 629.9999389648438,
+	},
+	["pslFrame2"] = {
+		["left"] = 1383.000122070313,
+		["bottom"] = 618,
+	},
+}
+pcRecipesTracked = {
+}
+pcRecipeLinks = {
+}
+personalOrders = {
+}

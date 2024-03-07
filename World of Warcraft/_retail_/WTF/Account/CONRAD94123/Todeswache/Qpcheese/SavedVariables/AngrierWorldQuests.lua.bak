@@ -1,0 +1,2 @@
+
+AngierWorldQuests_CharacterConfig = nil

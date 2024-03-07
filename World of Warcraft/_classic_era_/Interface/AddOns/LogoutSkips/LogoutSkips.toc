@@ -1,0 +1,17 @@
+## Interface: 30400
+## Title: LogoutSkips
+## Notes: Shows logout skip and death skip partitions
+## Author: Yazpad, Zarant, Semlar for original MapLines implementation, Tactics and TommySalami for logout skip discoveries and research 
+## Version: 0.0.4
+## SavedVariablesPerCharacter: locs2, locs_kalimdor2, logout_skip_settings 
+
+Data/eastern_kingdom_partitions.lua
+Data/eastern_kingdom_locs.lua
+Data/eastern_kingdom_gy_locs.lua
+Data/eastern_kingdom_gy_partitions.lua
+Data/kalimdor_partitions.lua
+Data/kalimdor_gy_partitions.lua
+Data/kalimdor_locs.lua
+Data/kalimdor_gy_locs.lua
+LogoutSkips.xml
+LogoutSkips.lua

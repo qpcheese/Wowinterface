@@ -1,0 +1,101 @@
+
+AVKGlobalSettings = {
+	["Destroy"] = {
+		["dddm"] = true,
+		["ded"] = true,
+		["dlit"] = true,
+		["dialsm"] = true,
+		["dtdm"] = true,
+		["dntdm"] = true,
+		["dirlm"] = true,
+		["dialfm"] = true,
+	},
+	["Aardvark"] = {
+		["amfb"] = true,
+		["afabas"] = true,
+		["abajb"] = true,
+		["amfbt"] = true,
+		["afabv"] = true,
+		["abajbt"] = true,
+		["afab"] = true,
+	},
+	["Repair"] = {
+		["rgr"] = false,
+		["rvcrm"] = false,
+		["rer"] = false,
+		["rtrm"] = false,
+		["rcarm"] = false,
+		["rntrm"] = false,
+	},
+	["Sell"] = {
+		["sdsm"] = true,
+		["sialfm"] = true,
+		["stsm"] = true,
+		["stil"] = false,
+		["sntsm"] = true,
+		["ses"] = true,
+		["sialsm"] = true,
+		["seasg"] = true,
+		["sirlm"] = true,
+		["slit"] = true,
+		["seas"] = true,
+	},
+	["Protect"] = {
+		["pep"] = true,
+		["pirlm"] = true,
+		["pialfm"] = true,
+		["pialsm"] = true,
+		["pdpm"] = true,
+		["plit"] = true,
+		["pcbp"] = true,
+	},
+	["FrameScales"] = {
+		["ambs"] = 1,
+		["amfs"] = 1,
+		["aabs"] = 1,
+	},
+}
+AVKGlobalSellTable = {
+}
+AVKGlobalDestroyTable = {
+}
+AVKGlobalProtectTable = {
+	{
+		["itemName"] = "Heavy Junkbox",
+		["iconFileDataID"] = 132596,
+		["bindType"] = 0,
+		["itemSellPrice"] = 0,
+		["itemLink"] = "|cffffffff|Hitem:16885::::::::59:260:::::::::|h[Heavy Junkbox]|h|r",
+		["itemClassID"] = 15,
+		["itemLevel"] = 21,
+		["itemStackCount"] = 1,
+		["expacID"] = 0,
+		["itemRarity"] = 1,
+		["isCraftingReagent"] = false,
+		["itemID"] = 16885,
+		["itemType"] = "Miscellaneous",
+		["itemSubClassID"] = 0,
+		["itemSubType"] = "Junk",
+		["itemEquipLoc"] = "",
+		["itemMinLevel"] = 0,
+	}, -- [1]
+	{
+		["itemName"] = "Pet Cage",
+		["iconFileDataID"] = 132599,
+		["bindType"] = 0,
+		["itemSellPrice"] = 0,
+		["itemLink"] = "|cff0070dd|Hitem:82800::::::::19:256::::::|h[Pet Cage]|h|r",
+		["itemClassID"] = 17,
+		["itemLevel"] = 20,
+		["itemStackCount"] = 1,
+		["expacID"] = 0,
+		["itemRarity"] = 3,
+		["isCraftingReagent"] = false,
+		["itemID"] = 82800,
+		["itemType"] = "Battle Pets",
+		["itemSubClassID"] = 0,
+		["itemSubType"] = "BattlePet",
+		["itemEquipLoc"] = "",
+		["itemMinLevel"] = 0,
+	}, -- [2]
+}

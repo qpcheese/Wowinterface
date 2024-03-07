@@ -1,0 +1,82 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+	<Script file="Stackpack.lua" />
+
+	<Frame name="StackFrame" hidden="true">
+	<Scripts>
+		<OnLoad>
+			Stackpack.OnLoad(self)
+		</OnLoad>
+		<OnEvent>
+			Stackpack.OnEvent(self, event, ...)
+		</OnEvent>
+	</Scripts>
+	</Frame>
+
+	<CheckButton name="Stackpack_SearchButton" parent="UIParent" frameStrata="MEDIUM" frameLevel="101" hidden="false" enableMouse="true" movable="true" clampedToScreen="true">
+		<Size x="18" y="39"/>
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="MainMenuBar" relativePoint="BOTTOMRIGHT">
+				<Offset>
+					<AbsDimension x="6" y="6"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Frames>
+			<Model name="$parentItemAnim">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Model>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+				self:RegisterForDrag("LeftButton")
+				if MainMenuBar.EndCaps then
+					self:SetScale(MainMenuBar.EndCaps:GetScale())
+					hooksecurefunc(MainMenuBar, "EditModeSetScale", function(_,scale) if (scale>1) then scale=1 end; self:SetScale(scale) end)
+				end
+			</OnLoad>
+			<OnClick>
+				Stackpack.SearchDialog()
+			</OnClick>
+			<OnEnter>
+				GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+				GameTooltip:AddLine("Search your bags with |cff3080ffStackpack", HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b)
+				GameTooltip:AddLine("SHIFT-Drag to move this button", 0.5, 0.5, 0.5)
+				GameTooltip:Show()
+			</OnEnter>
+			<OnDragStart>
+				if IsShiftKeyDown() then self:StartMoving() end
+			</OnDragStart>
+			<OnDragStop>
+				self:StopMovingOrSizing()
+			</OnDragStop>
+			<OnLeave function="GameTooltip_Hide"/>
+		</Scripts>
+		<NormalTexture file="Interface\AddOns\Stackpack\Images\Search_Button">
+			<TexCoords left="0" right="0.5625" top="0" bottom="0.609375"/>
+		</NormalTexture>
+		<HighlightTexture file="Interface\AddOns\Stackpack\Images\Search_Button_Highlight" alphaMode="ADD">
+			<TexCoords left="0" right="0.5625" top="0" bottom="0.609375"/>
+		</HighlightTexture>
+		<PushedTexture file="Interface\AddOns\Stackpack\Images\Search_Button_Down">
+			<TexCoords left="0" right="0.5625" top="0" bottom="0.609375"/>
+		</PushedTexture>
+	</CheckButton>
+
+	<GameTooltip name="StackpackTooltip" inherits="GameTooltipTemplate">
+		<Scripts>
+			<Onload>
+				self:SetOwner(WorldFrame, "ANCHOR_NONE")
+			</Onload>
+		</Scripts>
+	</GameTooltip>
+
+</Ui>

@@ -1,0 +1,96 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Frame name="EchoRaidTools_Treeview_Frame" virtual="true" mixin="EchoRaidTools_Treeview_FrameMixin">
+        <Size x="200" y="1"/>
+        <Frames>
+            <Frame parentKey="children" setAllPoints="true"/>
+        </Frames>
+    </Frame>
+
+    <Button name="EchoRaidTools_Treeview_BaseButton" virtual="true" mixin="EchoRaidTools_Treeview_BaseButtonMixin">
+        <Size x="200" y="25"/>
+        <Anchors>
+            <Anchor point="LEFT"/>
+        </Anchors>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="OpenArrow" atlas="Azerite-PointingArrow" desaturated="true" alpha="0.4" hidden="true">
+                    <Size x="15" y="10"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="1"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="Icon" file="Interface\AddOns\EchoRaidTools\assets\textures\ELp1.tga" hidden="true">
+                    <Size x="15" y="15"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="1" relativeKey="$parent.OpenArrow" relativePoint="RIGHT"/>
+                    </Anchors>
+                </Texture>
+                <FontString parentKey="ButtonText" inherits="GameFontNormal" wordwrap="false" justifyH="LEFT">
+                    <Color r="1" g="1" b="1" a="1"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="1" relativeKey="$parent.Icon" relativePoint="RIGHT"/>
+                        <!--Anchor point="RIGHT" x="-1" relativePoint="RIGHT"/-->
+                    </Anchors>
+                </FontString>
+            </Layer>
+            <Layer level="OVERLAY">
+                <Texture parentKey="HighlightTexture" atlas="GarrMission_FollowerListButton-Highlight" setAllPoints="true" alpha="0.5" hidden="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-3" y="1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Button>
+
+    <Button name="EchoRaidTools_Treeview_Button" inherits="EchoRaidTools_Treeview_BaseButton" mixin="EchoRaidTools_Treeview_ButtonMixin" virtual="true">
+        <Scripts>
+            <OnClick method="OnClick"/>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Button>
+
+    <Button name="EchoRaidTools_Treeview_NodeButton" inherits="EchoRaidTools_Treeview_BaseButton" mixin="EchoRaidTools_Treeview_NodeButtonMixin" virtual="true">
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture parentKey="ExpandedTexture" atlas="GarrMission_FollowerListButton-Highlight" setAllPoints="true" alpha="0.15" hidden="true"/> <!-- BattleBar-SwapPetFrame-Highlight-->
+                <Texture parentKey="CollapsedTexture" atlas="GarrMission_ListGlow-Highlight" setAllPoints="true" alpha="0.15" hidden="true"/> <!-- BattleBar-SwapPetFrame-Highlight-->
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnClick method="OnClick"/>
+        </Scripts>
+    </Button>
+
+    <Frame name="EchoRaidTools_Treeview_Node" virtual="true" mixin="EchoRaidTools_Treeview_NodeMixin">
+        <Size x="200" y="25"/>
+        <Anchors>
+            <Anchor point="LEFT"/>
+        </Anchors>
+        <Frames>
+            <Button parentKey="Button" inherits="EchoRaidTools_Treeview_NodeButton">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT"/> 
+                    <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" y="-25"/>
+                </Anchors>
+            </Button>
+            <Frame parentKey="children">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.Button" x="20"/> 
+                    <Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT" relativeKey="$parent.Button"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+        <Scripts>
+            <OnLoad method="OnLoad" />
+        </Scripts>
+    </Frame>
+
+</Ui>

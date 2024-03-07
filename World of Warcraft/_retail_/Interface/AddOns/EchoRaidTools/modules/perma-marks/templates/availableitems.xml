@@ -1,0 +1,187 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidTools_PermaMarks_AvailableItems" virtual="true">
+        <Size x="250" y="30" />
+        <Layers>
+            <Layer level="BORDER">
+                <Texture parentKey="Border" atlas="AdventureMap-InsetMapBorder" useAtlasSize="false">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Button parentKey="class_dk" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" y="-23" x="8"/>
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["DEATHKNIGHT"]
+                        self:SetData("class", "dk", color, color:WrapTextInColorCode("Death Knight"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_dh" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_dk" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["DEMONHUNTER"]
+                        self:SetData("class", "dh", color, color:WrapTextInColorCode("Demon Hunter"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_druid" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_dh" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["DRUID"]
+                        self:SetData("class", "druid", color, color:WrapTextInColorCode("Druid"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_evoker" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_druid" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["EVOKER"]
+                        self:SetData("class", "evoker", color, color:WrapTextInColorCode("Evoker"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_hunter" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_evoker" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["HUNTER"]
+                        self:SetData("class", "hunter", color, color:WrapTextInColorCode("Hunter"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_mage" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_hunter" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["MAGE"]
+                        self:SetData("class", "mage", color, color:WrapTextInColorCode("Mage"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_monk" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_mage" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["MONK"]
+                        self:SetData("class", "monk", color, color:WrapTextInColorCode("Monk"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_paladin" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_monk" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["PALADIN"]
+                        self:SetData("class", "paladin", color, color:WrapTextInColorCode("Paladin"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_priest" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_paladin" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["PRIEST"]
+                        self:SetData("class", "priest", color, color:WrapTextInColorCode("Priest"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_rogue" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_priest" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["ROGUE"]
+                        self:SetData("class", "rogue", color, color:WrapTextInColorCode("Rogue"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_shaman" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_rogue" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["SHAMAN"]
+                        self:SetData("class", "shaman", color, color:WrapTextInColorCode("Shaman"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_warlock" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_shaman" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["WARLOCK"]
+                        self:SetData("class", "warlock", color, color:WrapTextInColorCode("Warlock"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+            <Button parentKey="class_warrior" inherits="EchoRaidTools_PermaMarks_WizardItem">
+                <Size x="234" y="30" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.class_warlock" />
+                </Anchors>
+                <Scripts>
+                    <OnShow inherit="append">
+                        local color = RAID_CLASS_COLORS["WARRIOR"]
+                        self:SetData("class", "warrior", color, color:WrapTextInColorCode("Warrior"))
+                        self:EnableSnapBack(true)
+                    </OnShow>
+                </Scripts>
+            </Button>
+        </Frames>
+    </Frame>        
+</Ui>

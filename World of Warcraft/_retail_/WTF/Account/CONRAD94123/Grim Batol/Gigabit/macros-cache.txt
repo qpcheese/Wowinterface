@@ -1,0 +1,9 @@
+VER 3 0100000000000002 "mount" "463878"
+#showtooltip
+/use Heavenly drum
+/use Mechanized Lumber Extractor
+END
+VER 3 0100000000000001 "SAM_LUTECHI_MM_AIO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click [button:2] SAM_LUTECHI_MM_AIO RightButton; [button:3] SAM_LUTECHI_MM_AIO MiddleButton; [button:4] SAM_LUTECHI_MM_AIO Button4; [button:5] SAM_LUTECHI_MM_AIO Button5; SAM_LUTECHI_MM_AIO
+END

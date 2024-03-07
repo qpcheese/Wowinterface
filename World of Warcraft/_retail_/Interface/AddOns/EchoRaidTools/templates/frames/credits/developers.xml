@@ -1,0 +1,30 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidToolsCreditsDevelopersTemplate" virtual="true">
+        <Size x="500" y="400" />
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString parentKey="Title" inherits="EchoRaidToolsH1" text="Developers">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="5" y="5" />
+					</Anchors>
+				</FontString>
+                <FontString parentKey="Grim" inherits="GameFontHighlight" text="Grim">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="5" y="-2" relativeKey="$parent.Title" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="Dradux" inherits="GameFontHighlight" text="Dradux">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="-2" relativeKey="$parent.Grim" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="Asakawa" inherits="GameFontHighlight" text="Asakawa">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="-2" relativeKey="$parent.Dradux" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

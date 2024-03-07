@@ -1,0 +1,8 @@
+## Interface: 80100
+## Author: Klix
+## Version: 0.11
+## Title: BigWigs |cffff7f3f+|r|cffffffffVoice: Unreal Tournament|r
+## Notes: A compilation of Unreal Tournament countdown sounds.
+## Dependencies: BigWigs
+
+BigWigs_Voice_UT.lua

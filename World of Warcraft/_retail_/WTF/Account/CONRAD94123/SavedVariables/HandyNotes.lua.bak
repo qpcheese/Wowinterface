@@ -1,0 +1,109 @@
+
+HandyNotesDB = {
+	["profileKeys"] = {
+		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
+		["Zelení - Draenor"] = "Zelení - Draenor",
+		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Qpcheese - Chamber of Aspects"] = "Qpcheese - Chamber of Aspects",
+		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+		["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
+		["Qpc - Draenor"] = "Qpc - Draenor",
+		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
+		["Qpebank - Draenor"] = "Qpebank - Draenor",
+		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+	},
+	["profiles"] = {
+		["Cyclosarin - Ragnaros"] = {
+		},
+		["Jerwin - Ragnaros"] = {
+		},
+		["Zelení - Draenor"] = {
+		},
+		["Djagon - Ragnaros"] = {
+		},
+		["Qubit - Ragnaros"] = {
+		},
+		["Laurs - Ragnaros"] = {
+		},
+		["Qpcheese - Chamber of Aspects"] = {
+		},
+		["Qpe - Ravencrest"] = {
+		},
+		["Qpcheese - Ragnaros"] = {
+		},
+		["Qpc - Draenor"] = {
+		},
+		["Qutlaw - Ravencrest"] = {
+		},
+		["Qpebank - Draenor"] = {
+		},
+		["Qpaladin - Ragnaros"] = {
+		},
+		["Qpfromage - Ragnaros"] = {
+		},
+		["Qpew - Ragnaros"] = {
+		},
+		["Dogson - Ragnaros"] = {
+		},
+	},
+}
+HandyNotes_HandyNotesDB = {
+	["profileKeys"] = {
+		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
+		["Zelení - Draenor"] = "Zelení - Draenor",
+		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Qpcheese - Chamber of Aspects"] = "Qpcheese - Chamber of Aspects",
+		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+		["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
+		["Qpc - Draenor"] = "Qpc - Draenor",
+		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
+		["Qpebank - Draenor"] = "Qpebank - Draenor",
+		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+	},
+	["profiles"] = {
+		["Cyclosarin - Ragnaros"] = {
+		},
+		["Jerwin - Ragnaros"] = {
+		},
+		["Zelení - Draenor"] = {
+		},
+		["Djagon - Ragnaros"] = {
+		},
+		["Qubit - Ragnaros"] = {
+		},
+		["Laurs - Ragnaros"] = {
+		},
+		["Qpcheese - Chamber of Aspects"] = {
+		},
+		["Qpe - Ravencrest"] = {
+		},
+		["Qpcheese - Ragnaros"] = {
+		},
+		["Qpc - Draenor"] = {
+		},
+		["Qutlaw - Ravencrest"] = {
+		},
+		["Qpebank - Draenor"] = {
+		},
+		["Qpaladin - Ragnaros"] = {
+		},
+		["Qpfromage - Ragnaros"] = {
+		},
+		["Qpew - Ragnaros"] = {
+		},
+		["Dogson - Ragnaros"] = {
+		},
+	},
+}

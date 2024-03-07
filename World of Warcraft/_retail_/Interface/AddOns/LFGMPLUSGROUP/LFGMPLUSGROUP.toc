@@ -1,0 +1,9 @@
+## Interface: 100205
+## Title: Mythic Plus Group
+## Notes: LFG Keystone tracker
+## Author: Jason Burch
+## Version: 0.10.2.5.3
+## X-Curse-Project-ID: 449091
+## X-Website: https://www.curseforge.com/wow/addons/mythic-plus-key-announcer
+embeds.xml
+LFGMPLUSGROUP.lua

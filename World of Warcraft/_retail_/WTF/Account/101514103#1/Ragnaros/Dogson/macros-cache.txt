@@ -1,0 +1,15 @@
+VER 3 0100000000000003 "kofpds74" "3718862"
+/run local n=UnitName("target") or "player" if not InCombatLockdown() then EditMacro(GetMacroIndexByName("PI"),nil,nil,"#showtooltip\n/cast [@mouseover,help,nodead][@"..n.."] Power Infusion\n/cast Power Infusion\n/use 13") print("PI Updated to "..n) end
+END
+VER 3 0100000000000001 "pi" "134400"
+#showtooltip
+/cast [@mouseover,help,nodead][@player] Power Infusion
+/cast Power Infusion
+/use 13
+END
+VER 3 0100000000000002 "pii" "135939"
+#showtooltip
+/cast [@mouseover,help,nodead][@PLAYERNAME] Power Infusion
+/cast Power Infusion
+/use 13
+END

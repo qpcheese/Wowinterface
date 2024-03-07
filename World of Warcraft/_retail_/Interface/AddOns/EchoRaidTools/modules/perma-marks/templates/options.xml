@@ -1,0 +1,55 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidTools_PermaMarks_Options" inherits="EchoRaidToolsContentFrame" virtual="true">
+        <Size x="500" y="400" />
+        <Frames>
+            <Frame parentKey="rt1" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" y="-50" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="rt2" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.rt1" relativePoint="BOTTOMLEFT" y="-5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="rt3" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.rt2" relativePoint="BOTTOMLEFT" y="-5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="rt4" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.rt3" relativePoint="BOTTOMLEFT" y="-5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="rt5" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.rt4" relativePoint="BOTTOMLEFT" y="-5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="rt6" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.rt5" relativePoint="BOTTOMLEFT" y="-5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="rt7" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.rt6" relativePoint="BOTTOMLEFT" y="-5" />
+                </Anchors>
+            </Frame>
+            <Frame parentKey="rt8" inherits="EchoRaidTools_PermaMarks_RaidTarget">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.rt7" relativePoint="BOTTOMLEFT" y="-5" />
+                </Anchors>
+            </Frame>
+            <Button parentKey="activate" text="Activate" inherits="EchoRaidTools_ButtonTemplate">
+                <Size x="80" y="20" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" x="-90" y="30" />
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" x="-10" y="10" /> 
+                </Anchors>
+            </Button>
+        </Frames>
+    </Frame>
+</Ui>

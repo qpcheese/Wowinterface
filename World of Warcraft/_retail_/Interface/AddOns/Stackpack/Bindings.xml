@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="Toggle On/Off" runOnUp="false" category="BINDING_HEADER_STACKPACK">
+		Stackpack.Toggle()
+	</Binding>
+</Bindings>

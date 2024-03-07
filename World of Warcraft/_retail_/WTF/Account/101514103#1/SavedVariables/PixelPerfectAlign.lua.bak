@@ -1,0 +1,11 @@
+
+pixelPerfectAlignSaved = {
+	["showMinimapIcon"] = true,
+	["addonVersion"] = "v1.14.05",
+	["numX"] = 20,
+	["addonHash"] = "13e1bbe",
+	["lineLength"] = 128,
+	["showSplash"] = 0,
+	["startWithGridOn"] = true,
+	["numY"] = 18,
+}

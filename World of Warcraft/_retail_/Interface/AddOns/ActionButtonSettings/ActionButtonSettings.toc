@@ -1,0 +1,11 @@
+## Interface: 100107
+## Title: ActionButtonSettings
+## Author: Slothpala
+## Version: 1.1
+## SavedVariables: ActionButtonSettingsDB
+## X-Curse-Project-ID: 888266
+
+#Libs
+embeds.xml
+
+ActionButtonSettings.lua

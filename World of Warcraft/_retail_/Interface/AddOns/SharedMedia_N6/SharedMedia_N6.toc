@@ -1,0 +1,9 @@
+## Interface: 100100
+## Version: 1.0.5-release
+## Title: |cFF8C1616<Nexus Sx>|r SharedMedia
+## Notes: Custom media library created for |cFF8C1616<Nexus Sx>|r on |cFFFFFF00Tichondrius-US
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+embeds.xml
+SharedMedia_N6.lua

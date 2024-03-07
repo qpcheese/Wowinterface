@@ -1,0 +1,19 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+<!--_shared_-->
+  <Script file="Modules\_shared_\HealthBarColor_Units_Basic.lua"/>
+  <Script file="Modules\_shared_\HealthBarColor_Units_Extended.lua"/>
+  <Script file="Modules\_shared_\Font_Units_Basic.lua"/>
+  <Script file="Modules\_shared_\Font_Units_Extended.lua"/>
+  <Script file="Modules\_shared_\DarkFrames.lua"/>
+  <Script file="Modules\_shared_\BackgroundTextures.lua"/>
+  <Script file="Modules\_shared_\Textures.lua"/>
+  <Script file="Modules\_shared_\MinimapButton.lua"/>
+<!--_retail_-->
+  <Script file="Modules\_retail_\BiggerHealthBar.lua"/>
+  <Script file="Modules\_retail_\Glow.lua"/>
+  <Script file="Modules\_retail_\BetterBossFrames.lua"/>
+  <Script file="Modules\_retail_\HideClassPowerBar.lua"/>
+  <Script file="Modules\_retail_\DebuffColor.lua"/>
+  <Script file="Modules\_retail_\Overabsorbs.lua"/>
+  <Script file="Modules\_retail_\FrameColorSkin.lua"/>
+</Ui>

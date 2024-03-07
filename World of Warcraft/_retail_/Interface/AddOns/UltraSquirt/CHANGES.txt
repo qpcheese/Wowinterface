@@ -1,0 +1,323 @@
+To-Do List
+
+Add tooltips to the action buttons.
+
+Update Spanish (Mexico) translations from Google (Azure does not have this as an option).
+
+Add ability to add a specific NPC to the list of accepted targets (for future use, or niche cases).
+
+Add element to UI to show what the current action is, especially relevant where no action is being taken.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.8 Release / 2023-11-06
+
+Updated to latest interface version.
+
+Updated to latest version of Ace3 libraries.
+
+Changes to ensure compatibility with Rematch 5, including shortening the default wait time after a battle completes to 3 seconds.
+
+Note that the Advanced Teams function (currently only enabled in the Alpha version) does not work with Rematch 5, so will be automatically disabled.  Rematch now has its own method of mapping multiple teams against a single target NPC, and many of its internal functions have changed, so this function needs to be rethought (suggestions on a postcard!).  Generally it's my intention to defer to Rematch whenever possible, and only to augment or add something Rematch does not provide already.
+
+To-do:
+
+Rethink/redesign Advanced Teams functions, now that Rematch has it's own version of pairing multiple teams against multiple targets.
+
+Find a replacement for tracking when Rematch has finished loading or updating teams (Rematch timers for ReloadLoadIn and TeamlessReloadLoadIn no longer used in Rematch 5).
+
+Change to use PLAYER_INTERACTION_MANAGER_FRAME_SHOW instead of GOSSIP_SHOW.
+
+Look at limiting CTM when fighting regular pets.
+
+Add a way to have custom fights on the accepted list e.g., Icespine Hatchlings.
+
+Update Revive function with Lio/Serr'ah to use gossipOptionID.  Doesn't seem to be necessary for other existing npcs.
+
+?? Block Darkmoon Top Hat on Squirt, as she doesn't give any player XP.  (Are there others too?)
+
+Add better feedback on the main UltraSquirt window when advance teams are being used.
+
+Check BFA menu (being the largest) fits properly on smaller resolutions.  May need to split further into subzones?
+
+Ideas for additional functions for the Advanced Teams window:
+  Count of assigned teams per NPC
+  Filters: zone, npc name, teams assigned, ...?
+  Search function
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.7 Release / 2023-03-22
+
+Updated to latest interface version.
+
+Updated to latest version of Ace3 libraries.
+
+Added additional slash commands (/squirt and /ultrasquirt).
+
+Added LDB provider for addons like TitanPanel and ChocolateBar.
+
+AutoInteract and SoftTargetInteract are now disabled when the addon opens, with their settings cached and restored when it's closed.
+
+Healing threshold slider on the main window should be working again, and once again be disabled if using advanced teams for the selected NPC.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.6 Release / 2022-12-13
+
+Fixed Darkmoon Tophat button.
+
+If a pet battle is already running, close any open gossip frame.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.5 Alpha / 2022-11-30
+
+Refreshing Alpha client with Advanced Teams enabled.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.4 Release / 2022-11-30
+
+Updated Dragonflight NPCs and new gossip options.
+
+Added Mute option for addon Enabled/Disabled messages.
+
+Updated to latest interface version.
+
+Updated to latest version of Ace3 libraries.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.3 Alpha / 2022-10-31
+
+Moved Rematch links to OnInitialize instead of OnEnabled.  Rematch:Start() runs on PLAYER_LOGIN, as does OnEnabled,
+resulting in the hooks to Rematch sometimes failing to load.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.2 Alpha / 2022-10-29
+
+Added toggle to disable Advanced Teams for release version.  Enabling for Alpha.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9.1 Release / 2022-10-27
+
+Macros used to /click spell buttons seem to be broken when CVar ActionButtonUseKeyDown = 0.  Switched to
+use /cast and /use macros for Revive Battle Pets and Bandages instead.  This should now work in both cases.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.9 Release / 2022-10-26
+
+Update .toc Interface number for Dragonflight.
+
+Updates to support Dragonflight UI changes.
+
+Updated to latest version of Ace3 libraries.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.8.1 Alpha / 2022-08-09
+
+Updated to latest version of Ace3 libraries.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.8 Alpha / 2022-08-09
+
+Updated .toc to latest interface version
+
+Added Darkmoon Top Hat button to main window.
+
+"Heal on cooldown" is now toggled by NPC for advanced teams (i.e. makes it a priority list instead of a rotation).
+
+Added quick populate function (USQ:FindRematchAdvancedTeams()) - for current NPC, or for all NPCs.  Further testing required!
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7.6 Alpha / 2021-04-25
+
+Updated .toc to latest interface version
+
+Added Revive Early option to each NPC on the advanced teams window.  This will use Revive Battle Pets as soon as it's off cooldown, assuming at least one battle has been completed.  This effectively turns the list of pet teams into a priority list, rather than a rotation.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7.5 Alpha / 2021-04-04
+
+Bug fix for the Teams table movement buttons not working when new teams were added.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7.4 Alpha / 2021-04-03
+
+Small bug fix for LUA error when Rematch isn't loaded.
+
+Disabled DebugLevel ready for testing.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7.3 Alpha / 2021-04-02
+
+More bug fixes.
+
+Remaining BFA fights added.
+
+Advanced Teams toggle button now properly toggles, as does /ultra adv.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7.2 Alpha / 2021-04-01
+
+Minor bug fixes in testing code.
+
+Removed some headers that were superfluous, and also caused display issues with font replacement addons such as ElvUI.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7.1 Alpha / 2021-03-31
+
+Changed Advanced Teams Frame to use proper Button controls.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7.1 Alpha / 2021-03-28
+
+Updated to latest release of Ace libraries.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.7 Alpha / 2021-03-28
+
+Interface version updated in .toc.
+
+Added Advanced Teams functionality, allowing multiple Rematch pet teams to be assigned to a single NPC (specifically for use in UltraSquirt).
+
+Added Rematch menu items for Advanced Teams functions.  Right click on a team in Rematch to add/remove.  Deleting or renaming a team from Rematch will update accordingly.
+
+Added Advanced Teams config window (/ultra adv, or click the expand button on the main UltraSquirt window).  Teams can be removed, or reordered here.
+
+Added all repeatable fights from Legion and Shadowlands.  (BFA still to be added.)
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.6.2 Release / 2020-10-25
+
+Interface version updated in .toc.
+
+Updated to latest release of Ace libraries.
+
+Removed BFA backward compatibility for SelectGossip.
+
+Updated post-battle timer logic to have an extended delay if the Rematch options LoadHealthiest and LoadHealthiestAfterBattle are both enabled.  Added options to allow the delay timers to be customised if needed.
+
+Casting Revive Battle Pets or using a Battle Pet Bandage will now also trigger a short delay.
+
+The Revive Battle Pets and Battle Pet Bandage buttons on the UltraSquirt window now check if any pets in the current loadout has damage - if not they are temporarily disabled.
+
+Updated Garrison Stable Master healing logic to use a flag on each individual NPC.
+
+Added targetable Garrison NPCs to valid NPC list (i.e those which do not use the Challenge Post to start the fight).  Beyond Squirt these are not useful for levelling pets, but can be a good way to achieve some of the Warlords of Draenor pet battle achievements.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.6.2 Alpha / 2020-10-25
+
+Updated to latest release of Ace libraries.
+
+Added options to allow the delay timers to be customised if needed.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.6.1 Alpha / 2020-10-17
+
+Interface version updated in .toc.
+
+Removed BFA backward compatibility for SelectGossip.
+
+Updated post-battle timer logic to have an extended delay if the Rematch options LoadHealthiest and LoadHealthiestAfterBattle are both enabled.
+
+Casting Revive Battle Pets or using a Battle Pet Bandage will now also trigger a short delay.
+
+The Revive Battle Pets and Battle Pet Bandage buttons on the UltraSquirt window now check if any pets in the current loadout has damage - if not they are temporarily disabled.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.6 Alpha / 2020-09-02
+
+Updated Garrison Stable Master healing logic to use a flag on each individual NPC.
+
+Added targetable Garrison NPCs to valid NPC list (i.e those which do not use the Challenge Post to start the fight).  Beyond Squirt these are not useful for levelling pets, but can be a good way to achieve some of the Warlords of Draenor pet battle achievements.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.5.3 Release / 2020-08-23
+
+Target button added and now allows section of a target other than Squirt.  This is restricted to Squirt and the repeatable Legion trainers and will give an error message if another target is selected.  The logic to heal via the Battle Pet Master is only enabled while fighting Squirt.  The priority order is Revive Battle Pets > Battle Pet Bandage > Stable Master.
+
+Healing threshold slider added so that healing will not be applied until pets are below the target threshold.  Mostly this should be kept at 100%, but it is useful for fights where the pets take little damage throughout a battle and can reduce or even remove the need for bandages.  For example, in the Snail Fight battle (vs. Odrogg) when using a Teroclaw Hatching, this can comfortably be set to 80% or even lower.  This setting is saved for each specific NPC.  Note that it will also be reset to 100% for all NPCs when using the "/ultra reset" command.
+
+All locales have now been added.  This was done using Azure Cognitive Services Translator.  Unfortunately, this does not include a separate option for esMX - Spanish (Mexico), so this is currently a copy of esES - Spanish (Spain).
+
+Localisation required for functionality, e.g. NPC names, is now done directly in-game.
+
+Libraries updated to latest Ace3 Alpha.
+
+Compatibility added for Shadowlands API changes.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.5.3 Alpha / 2020-08-23
+
+In-combat restriction added for /ultra reset command (prevents LUA errors when trying to clear bindings).
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.5.2 Alpha / 2020-08-22
+
+Healing threshold is now saved per target and will update when a new target is loaded.  These settings will be reset along with the other options when /ultra reset is called.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.5.1 Alpha / 2020-08-18
+
+Added a short delay after a bet battle finishes.  This should stop bandages or other actions being taken if the hot key is pressed very quickly as the battle finishes.  The UI takes a moment to update the status of pets' health etc., so this could otherwise result in an action being taken that doesn't make sense (e.g. using bandages).  The delay can end early if using the Rematch option that switches to the healthiest pets when battle completes, by using a post-hook to the Rematch function that manages this, and then watching for the timers Rematch uses to complete the team loading.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.5 Alpha / 2020-08-17
+
+Target button added and now allows section of a target other than Squirt.  This is restricted to Squirt and the repeatable Legion trainers, and will give an error message if another target is selected.  The logic to heal via the Battle Pet Master is only enabled while fighting Squirt.  The priority order is Revive Battle Pets > Battle Pet Bandage > Battle Pet Master.
+
+Healing threshold slider added so that healing will not be applied until pets are below the target threshold.  Mostly this should be kept at 100%, but it's useful for fights where the pets take very little damage throughout a battle and can reduce or even remove the need for bandages.  For example the Snail Fight battle (vs. Odrogg) when using a Teroclaw Hatching, this can comfortably be set to 80% or even lower.
+
+Added new routine added to extract NPC names from the game tooltip (see https://wow.gamepedia.com/UIOBJECT_GameTooltip for info).  All functional localisation (i.e. NPC and item names) is now automatic, so the addon should function in all languages.
+
+New localisation entries added for all output text.  These entries are non-functional, i.e. the localisation is not required for the addon to operate.  This was done using Azure Translator (see https://docs.microsoft.com/en-us/azure/cognitive-services/translator/ for info).  Note - the Translator service does not include a separate version of Spanish for esMX, so that's using a copy of esES (Spanish - Spain) for the time being.
+
+When the addon cannot take any action at a given moment, it will now set the hot key to run a "/target player" macro, rather than simply deactivating the hot key binding.  An example of this is when fighting a repeatable Legion tamer, all pets are damaged, Revive Battle Pets is on cooldown (or disabled) and no Battle Pet Bandages are available (or is disabled).
+
+Updated to latest Ace3 Alpha (r1237-alpha), which also includes fixes for BackdropTemplate in preparation for Shadowlands (see https://www.wowace.com/projects/ace3 for info).
+
+Updated NPC Gossip code to pick the first option from the NPC, rather than using hard coded localised text to select the option.  The updated code also accounts for upcoming API changes on the Shadowlands Beta/PTR.
+
+----------------------------------------------------------------------------------------------------
+
+Version 0.4 / 2020-07-17
+
+The hotkey can now be changed from the Addon settings window (Escape > Interface > Addons tab > UltraSquirt).  The same screen can be access type typing "/ultra config".
+
+The window position can be changed if needed by dragging from the title bar.
+
+Buff and healing options have been added to the main window.  Right click to toggle each button.  By default, the Safari Hat will automatically cast if known, and where the buff is missing, and Revive Battle Pets will be used to heal when off cooldown.  See instructions for details.
+
+To reset the window position, hotkey setting and buff automation/notification settings, you can type "/ultra reset".
+
+German localisation is now added, with the below now available:
+
+enUS	English (United States)
+esMX	Spanish (Mexico)
+ptBR	Portuguese
+deDE	German

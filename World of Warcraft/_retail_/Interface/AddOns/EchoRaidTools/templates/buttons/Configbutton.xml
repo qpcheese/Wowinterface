@@ -1,0 +1,81 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Button name="EchoRaidTools_ButtonTemplate" virtual="true" registerForClicks="AnyUp" mixin="EchoRaidTools_ButtonTemplateMixin">
+        <Size x="200" y="31"/>
+        <NormalTexture atlas="charactercreate-customize-dropdownbox">
+            <Anchors>
+                <Anchor point="TOPLEFT" x="-9" y="4"/>
+                <Anchor point="BOTTOMRIGHT" x="9" y="-4"/>
+            </Anchors>
+            <Color r="1" g="1" b="1" a="1"/>
+        </NormalTexture>
+        <HighlightTexture atlas="charactercreate-customize-dropdownbox-open" alphaMode="ADD">
+            <Anchors>
+                <Anchor point="TOPLEFT" x="-9" y="4"/>
+                <Anchor point="BOTTOMRIGHT" x="9" y="-4"/>
+            </Anchors>
+            <Color r="0.2" g="0.2" b="0.2" a="1"/>
+        </HighlightTexture>
+        <NormalFont style="EchoRaidTools_ButtonTextHighlight"/>
+        <ButtonText inherits="EchoRaidTools_ButtonTextHighlight"/>
+        <DisabledFont style="EchoRaidTools_ButtonTextDisable"/>
+        <HighlightFont style="EchoRaidTools_ButtonTextNormal"/>
+        <Scripts>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </Button>
+
+    <Frame name="EchoRaidToolsConfig_Button" virtual="true" mixin="EchoRaidToolsConfig_ButtonMixin">
+        <Frames>
+            <Button parentKey="Button" inherits="EchoRaidTools_ButtonTemplate">
+                <Anchors>
+                    <Anchor point="LEFT"/>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+            </Button>
+        </Frames>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString parentKey="TopText" inherits="GameTooltipTextSmall" nonspacewrap="false" maxLines="1" justifyH="LEFT" hidden="true">
+                    <Color r="1.0" g="0.82" b="0" a="0.7"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.Button" relativePoint="TOPLEFT" x="0" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <Button name="EchoRaidTools_BasicButton" virtual="true" mixin="EchoRaidTools_BasicButtonMixin">
+        <Size x="22" y="22"/>
+        <Scripts>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Button>
+    <Button name="EchoRaidTools_AddButton" virtual="true" inherits="EchoRaidTools_BasicButton">
+        <NormalTexture atlas="communities-chat-icon-plus" setAllPoints="true" desaturated="true"/>
+        <HighlightTexture atlas="communities-chat-icon-plus" alphaMode="ADD" setAllPoints="true" alpha="1" desaturated="true">
+            <Color r="0" g="1" b="0" a="1"/>
+        </HighlightTexture>
+    </Button>
+    <Button name="EchoRaidTools_MinusButton" virtual="true" inherits="EchoRaidTools_BasicButton">
+        <NormalTexture atlas="communities-chat-icon-minus" desaturated="true">
+            <Size x="22" y="14"/>
+            <Anchors>
+                <Anchor point="CENTER"/>
+            </Anchors>
+        </NormalTexture>
+        <HighlightTexture atlas="communities-chat-icon-minus" alphaMode="ADD" alpha="1">
+            <Size x="22" y="14"/>
+            <Anchors>
+                <Anchor point="CENTER"/>
+            </Anchors>
+        </HighlightTexture>
+    </Button>
+</Ui>

@@ -1,0 +1,12 @@
+## Interface: 100005
+## Title: WeakAuras Companion
+## Author: The WeakAuras Team
+## Version: 4.1.0
+## Notes: Keep your WeakAuras updated!
+## X-Category: Interface Enhancements
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## OptionalDeps: WeakAuras,Plater,
+
+data.lua
+init.lua

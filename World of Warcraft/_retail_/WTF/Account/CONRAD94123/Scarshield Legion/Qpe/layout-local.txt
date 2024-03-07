@@ -1,0 +1,8 @@
+Version: 1
+Frame: RT
+FrameLevel: 1
+Anchor: LEFT
+X: 48
+Y: -104
+W: 298
+H: 24

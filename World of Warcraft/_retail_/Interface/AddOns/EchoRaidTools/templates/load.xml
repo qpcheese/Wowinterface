@@ -1,0 +1,73 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <!-- Fonts -->
+	<Include file="fonts\headlines.xml" />
+    <Include file="fonts\text.xml" />
+    <Include file="fonts\buttons.xml" />
+
+    <!-- Frames -->
+    <Include file="frames\credits\changelog.xml" />
+    <Include file="frames\credits\developers.xml" />
+    <Include file="frames\credits\credits.xml" />
+    <Include file="frames\mainmenu.xml" />
+    <Include file="frames\contentframe.xml" />
+    <Include file="frames\dragdrophighlight.xml" />
+
+    <Script file="frames\ConfigPanel.lua"/>
+    <Include file="frames\ConfigPanel.xml" />
+
+    <!-- Buttons -->
+    <Include file="buttons\mainmenu-button.xml" />
+    <Script file="buttons\mainmenu-button.lua" />
+    <Include file="buttons\mainmenu-modulebutton.xml" />
+    
+    <Include file="buttons\ConfigButton.xml" />
+    <Script file="buttons\ConfigButton.lua"/>
+
+    <Include file="buttons\CheckButton.xml" />
+    <Script file="buttons\CheckButton.lua"/>
+
+    <Include file="buttons\mainmenu-subButton.xml"/>
+    <Script file="buttons\mainmenu-subButton.lua"/>
+
+    <!-- Windows -->
+    <Script file="windows\echo-dialog.lua" />
+    <Include file="windows\echo-dialog.xml" />
+    <Include file="windows\echoraidtools-dialog.xml" />
+    <Script file="windows\echoraidtools-dialog.lua"/>
+
+    <!-- Sections -->
+    <Script file="sections\CollapsableConfigButton.lua" />
+    <Include file="sections\CollapsableConfigButton.xml" />
+
+    <!-- EditBoxes -->    
+    <Script file="editboxes\Editbox.lua" />
+    <Include file="editboxes\Editbox.xml" />
+
+    <Script file="editboxes\EditableText.lua" />
+    <Include file="editboxes\EditableText.xml" />
+
+    <!-- Sliders -->
+    <Script file="sliders\Sliders.lua" />
+    <Include file="sliders\Sliders.xml" />
+
+    <!-- Dropdowns -->
+    <Script file="dropdowns\Dropdown.lua" />
+    <Include file="dropdowns\Dropdown.xml" />
+
+    <!-- Color Picker -->
+    <Script file="colorPickers\ColorPicker.lua" />
+    <Include file="colorPickers\ColorPicker.xml" />
+
+    <!-- Displays -->
+    <Script file="displays\IconAndBarDisplay.lua" />
+    <Include file="displays\IconAndBarDisplay.xml" />
+
+    <!-- Treeview -->
+    <Script file="treeview\treeview.lua" />
+    <Include file="treeview\treeview.xml" />
+
+    <!-- tabs-->
+    <Script file="tabs\tabs.lua" />
+    <Include file="tabs\tabs.xml" />
+</Ui>

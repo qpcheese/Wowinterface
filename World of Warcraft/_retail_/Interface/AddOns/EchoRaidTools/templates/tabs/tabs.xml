@@ -1,0 +1,102 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Font name="EchoRaidTools_TabTextNormal" inherits="GameFontHighlight" virtual="true" justifyH="CENTER">
+        <Color r="1.0" g="0.82" b="0"/>
+    </Font>
+    <Font name="EchoRaidTools_TabTextHighlight" inherits="GameFontHighlight" virtual="true" justifyH="CENTER">
+        <Color r="1.0" g="1" b="1"/>
+    </Font>
+    <Font name="EchoRaidTools_TabTextDisable" inherits="GameFontHighlight" virtual="true" justifyH="CENTER">
+        <Color r="0.5" g="0.5" b="0.5"/>
+    </Font>
+
+    <Button name="EchoRaidTools_TabButton" virtual="true" registerForClicks="AnyUp" mixin="EchoRaidTools_TabButtonMixin">
+        <Size x="1" y="22"/>
+        <NormalTexture atlas="charactercreate-customize-dropdownbox">
+            <TexCoords left="0" right="1" top="0" bottom="0.7"/>
+            <Anchors>
+                <Anchor point="TOPLEFT" x="-5" y="10"/>
+                <Anchor point="BOTTOMRIGHT" x="5" y="0"/>
+            </Anchors>
+            <Color r="1" g="1" b="1" a="1"/>
+        </NormalTexture>
+        <HighlightTexture atlas="charactercreate-customize-dropdownbox-open" alphaMode="ADD">
+            <TexCoords left="0" right="1" top="0" bottom="0.7"/>
+            <Anchors>
+                <Anchor point="TOPLEFT" x="-5" y="10"/>
+                <Anchor point="BOTTOMRIGHT" x="5" y="0"/>
+            </Anchors>
+            <Color r="0.2" g="0.2" b="0.2" a="1"/>
+        </HighlightTexture>
+        <NormalFont style="EchoRaidTools_TabTextNormal"/>
+        <ButtonText inherits="GameFontNormalLarge"/> <!--inherits="EchoRaidTools_ButtonTextHighlight"/-->
+        <DisabledFont style="EchoRaidTools_TabTextDisable"/>
+        <HighlightFont style="EchoRaidTools_TabTextHighlight"/>
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture atlas="charactercreate-customize-dropdownbox-open" alphaMode="ADD" parentKey="SelectedTexture">
+                    <TexCoords left="0" right="1" top="0" bottom="0.7"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-5" y="10"/>
+                        <Anchor point="BOTTOMRIGHT" x="5" y="0"/>
+                    </Anchors>
+                    <Color r="0.2" g="0.2" b="0.2" a="1"/>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+            <OnClick method="OnClick"/>
+        </Scripts>
+    </Button>
+
+    <Frame name="EchoRaidTools_TabTray" virtual="true">
+        <Size x="1" y="30"/>
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture parentKey="BackgroundTexture" setAllPoints="true">
+                    <Gradient orientation="VERTICAL">
+                        <MinColor r="1" g="1" b="1" a="1"/>
+                        <MaxColor r="0" g="0" b="0" a="0"/>
+                    </Gradient>
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Frame name="EchoRaidTools_TabContentPanel" virtual="true">
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture atlas="Artifacts-BG-Shadow" setAllPoints="true" alpha="0.5"/>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="7">
+                <Texture parentKey="BorderTop" atlas="perks-divider">
+                    <TexCoords left="0.3" right="1" top="0" bottom="1"/>
+                    <Color r="0.7" g="0.7" b="0.7" a="1"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="4" y="0"/>
+                        <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="0" y="-3"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Frame name="EchoRaidTools_TabMainPanel" virtual="true" mixin="EchoRaidTools_TabMainPanelMixin">
+        <Frames>
+            <Frame parentKey="TabTray">
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="0" y="-30"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnShow method="OnShow"/>
+        </Scripts>
+    </Frame>
+
+</Ui>

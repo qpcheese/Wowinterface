@@ -1,0 +1,14 @@
+VER 3 0100000000000002 "asd" "135986"
+BIEAAAAAAAAAAAAAAAAAAAAAA0SaJkiodAtkko0kkIRkIBAAIAAAAAAAAiDkkUEIJkkiACAICEAACQA
+END
+VER 3 0100000000000003 "FV WINGS" "134400"
+#showtooltip Final Reckoning
+/cast [@cursor] Final Reckoning
+/cast Avenging Wrath
+END
+VER 3 0100000000000001 "shield" "134400"
+#showtooltip
+/equip Bloodsoaked Skullforge Reaver
+/equip Flamescarred Draconian Deflector
+/equip Reforged Truesilver Champion
+END

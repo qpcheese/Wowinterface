@@ -1,0 +1,206 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <CheckButton name="petbmIconButtonTemplate" inherits="SimplePopupButtonTemplate" virtual="true">
+        <Scripts>
+            <OnClick>
+                petbm.PetTeamView:IconButton_OnClick(self, button, down)
+            </OnClick>
+        </Scripts>
+        <NormalTexture name="$parentIcon" parentKey="icon" nonBlocking="true">
+            <Size x="36" y="36"/>
+            <Anchors>
+                <Anchor point="CENTER" x="0" y="-1"/>
+            </Anchors>
+        </NormalTexture>
+        <HighlightTexture alphaMode="ADD" file="Interface\Buttons\ButtonHilight-Square"/>
+        <CheckedTexture alphaMode="ADD" file="Interface\Buttons\CheckButtonHilight"/>
+    </CheckButton>
+
+    <Frame name="petbmIconLineTemplate" virtual="true">
+        <Size x="220" y="46" />
+        <Frames>
+            <CheckButton name="$parentIconButton1" parentKey="icon1" inherits="petbmIconButtonTemplate" id="1">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="0" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton2" parentKey="icon2" inherits="petbmIconButtonTemplate" id="2">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton1" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton3" parentKey="icon3" inherits="petbmIconButtonTemplate" id="3">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton2" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton4" parentKey="icon4" inherits="petbmIconButtonTemplate" id="4">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton3" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton5" parentKey="icon5" inherits="petbmIconButtonTemplate" id="5">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton4" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton6" parentKey="icon6" inherits="petbmIconButtonTemplate" id="6">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton5" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton7" parentKey="icon7" inherits="petbmIconButtonTemplate" id="7">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton6" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton8" parentKey="icon8" inherits="petbmIconButtonTemplate" id="8">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton7" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton9" parentKey="icon9" inherits="petbmIconButtonTemplate" id="9">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton8" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentIconButton10" parentKey="icon10" inherits="petbmIconButtonTemplate" id="10">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentIconButton9" relativePoint="RIGHT" x="10" y="0"/>
+                </Anchors>
+            </CheckButton>
+        </Frames>
+    </Frame>
+    
+    <Frame name="petbmNameIconEditor" inherits="BackdropTemplate" toplevel="true" parent="UIParent" movable="true"
+        enableMouse="true" hidden="true" frameStrata="FULLSCREEN_DIALOG">
+        <Size x="530" y="500"/>
+        <Anchors>
+            <Anchor point="CENTER" relativeTo="UIParent" relativePoint="CENTER" x="0" y="0"/>
+        </Anchors>
+<!--        <Backdrop edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">-->
+<!--            <EdgeSize>-->
+<!--                <AbsValue val="16"/>-->
+<!--            </EdgeSize>-->
+<!--        </Backdrop>     -->
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture file="Interface\PetBattles\MountJournal-BG" setAllPoints="true">
+                    <TexCoords left="0" right="0.78515625" top="0" bottom="1"/>
+                </Texture>
+                <FontString parentKey="nameLabel" inherits="GameFontHighlightSmall">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="24" y="-21"/>
+                    </Anchors>
+                </FontString>
+                <FontString inherits="GameFontHighlightSmall" text="MACRO_POPUP_CHOOSE_ICON">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="24" y="-69"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <EditBox name="$parentEditBox" parentKey="editBox" letters="26" historyLines="0">
+                <Size x="182" y="20"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="29" y="-35"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="BACKGROUND">
+                        <Texture name="$parentNameLeft" file="Interface\ClassTrainerFrame\UI-ClassTrainer-FilterBorder">
+                            <Size x="12" y="29"/>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" x="-11" y="0"/>
+                            </Anchors>
+                            <TexCoords left="0" right="0.09375" top="0" bottom="1.0"/>
+                        </Texture>
+                        <Texture name="$parentNameMiddle" file="Interface\ClassTrainerFrame\UI-ClassTrainer-FilterBorder">
+                            <Size x="175" y="29"/>
+                            <Anchors>
+                                <Anchor point="LEFT" relativeTo="$parentNameLeft" relativePoint="RIGHT"/>
+                            </Anchors>
+                            <TexCoords left="0.09375" right="0.90625" top="0" bottom="1.0"/>
+                        </Texture>
+                        <Texture name="$parentNameRight" file="Interface\ClassTrainerFrame\UI-ClassTrainer-FilterBorder">
+                            <Size x="12" y="29"/>
+                            <Anchors>
+                                <Anchor point="LEFT" relativeTo="$parentNameMiddle" relativePoint="RIGHT"/>
+                            </Anchors>
+                            <TexCoords left="0.90625" right="1.0" top="0" bottom="1.0"/>
+                        </Texture>
+                    </Layer>
+                </Layers>
+                <FontString inherits="ChatFontNormal"/>
+            </EditBox>
+            <ScrollFrame name="$parentScrollFrame" parentkey="scrollFrame" inherits="FauxScrollFrameTemplate">
+                <Size x="430" y="397"/>
+                <Anchors>
+                    <Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT" x="-39" y="-67"/>
+                </Anchors>
+            </ScrollFrame>
+            
+            <Frame name="$parentIconLine1" parentKey="iconLine1" inherits="petbmIconLineTemplate" id="1">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="24" y="-85"/>
+                </Anchors>
+            </Frame>
+            <Frame name="$parentIconLine2" parentKey="iconLine2" inherits="petbmIconLineTemplate" id="2">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentIconLine1" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                </Anchors>
+            </Frame>
+            <Frame name="$parentIconLine3" parentKey="iconLine3" inherits="petbmIconLineTemplate" id="3">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentIconLine2" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                </Anchors>
+            </Frame>
+            <Frame name="$parentIconLine4" parentKey="iconLine4" inherits="petbmIconLineTemplate" id="4">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentIconLine3" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                </Anchors>
+            </Frame>
+            <Frame name="$parentIconLine5" parentKey="iconLine5" inherits="petbmIconLineTemplate" id="5">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentIconLine4" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                </Anchors>
+            </Frame>
+            <Frame name="$parentIconLine6" parentKey="iconLine6" inherits="petbmIconLineTemplate" id="6">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentIconLine5" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                </Anchors>
+            </Frame>
+            <Frame name="$parentIconLine7" parentKey="iconLine7" inherits="petbmIconLineTemplate" id="7">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentIconLine6" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                </Anchors>
+            </Frame>
+            <Frame name="$parentIconLine8" parentKey="iconLine8" inherits="petbmIconLineTemplate" id="8">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentIconLine7" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                </Anchors>
+            </Frame>
+            
+            <Button name="$parentCancelButton" inherits="UIPanelButtonTemplate" text="CANCEL">
+                <Size x="78" y="22"/>
+                <Anchors>
+                    <Anchor point="BOTTOMRIGHT" relativeTo="$parent" x="-11" y="13"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+                        self:GetParent():Hide()
+                    </OnClick>
+                </Scripts>
+            </Button>
+            <Button name="$parentOkayButton" parentKey="ok" inherits="UIPanelButtonTemplate" text="OKAY">
+                <Size x="78" y="22"/>
+                <Anchors>
+                    <Anchor point="RIGHT" relativeTo="$parentCancelButton" relativePoint="LEFT" x="-2" y="0"/>
+                </Anchors>
+            </Button>
+        </Frames>
+    </Frame>
+
+</Ui>

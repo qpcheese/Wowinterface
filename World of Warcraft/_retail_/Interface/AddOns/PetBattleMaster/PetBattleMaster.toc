@@ -1,0 +1,15 @@
+## Interface: 100002
+## Title: PetBattleMaster
+## Notes: Pet Battles support tool.
+## Author: Udorn
+## SavedVariables: PetBattleMasterDb
+## Version: 10.0.3
+## X-Feedback: http://www.curse.com/addons/wow/petbattlemaster
+## OptionalDeps: Ace3, LibDataBroker-1.1, LibDBIcon-1.0, LibPetJournal-2.0, PetTracker
+## X-Embeds: Ace3, LibDataBroker-1.1, LibDBIcon-1.0, LibPetJournal-2.0
+## DefaultState: enabled
+
+libs\_Import.xml
+src\xml\_Import.xml
+src\locale\_Import.xml
+src\main\_Import.xml

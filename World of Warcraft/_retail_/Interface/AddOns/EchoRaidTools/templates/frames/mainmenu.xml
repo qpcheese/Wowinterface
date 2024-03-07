@@ -1,0 +1,62 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidToolsMainMenuTemplate" virtual="true">
+        <Size x="240" y="550" />
+        <Layers>
+            <!--<Layer level="BACKGROUND">
+                <Texture parentKey="Bg" atlas="adventures-missions-bg-01">
+					<Anchors>
+						<Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" />
+					</Anchors>
+				</Texture>
+            </Layer>-->
+            <!--<Layer level="BORDER">
+                <Texture parentKey="RightBorder" atlas="!adventuresframe-right">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-8" relativePoint="TOPRIGHT" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                </Texture>
+            </Layer>-->
+            <!--
+            <Layer level="OVERLAY">
+                <FontString inherits="GameFontNormal" parentKey="Title" JustifyH="CENTER" text="Main Menu">
+                    <Size x="250" y="10"/>
+                    <Anchors>
+						<Anchor point="TOP" x="0" y="-5" />
+					</Anchors>
+                </FontString>
+            </Layer>
+            -->
+        </Layers>
+        <Frames>
+            <Frame parentKey="NineSlice" inherits="NineSlicePanelTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" />
+                    <Anchor point="BOTTOMRIGHT" />
+                </Anchors>
+            </Frame>
+            <!--
+            <Button parentKey="Button1" inherits="EchoRaidToolsMainMenuModuleButtonTemplate" text="Notes">
+				<Anchors>
+                    <Anchor point="TOPLEFT" x="5" y="-5" />
+                    <Anchor point="BOTTOMRIGHT" x="-10" y="-35" relativePoint="TOPRIGHT" />
+                </Anchors>
+			</Button>
+            <Button parentKey="Button2" inherits="EchoRaidToolsMainMenuButtonTemplate" text="Documentation">
+				<Anchors>
+                    <Anchor point="TOPLEFT" x="0" y="0" relativeKey="$parent.Button1" relativePoint="BOTTOMLEFT" />
+                    <Anchor point="BOTTOMRIGHT" x="0" y="-30" relativeKey="$parent.Button1" relativePoint="BOTTOMRIGHT" />
+                </Anchors>
+			</Button>
+            <Button parentKey="Button3" inherits="EchoRaidToolsMainMenuButtonTemplate" text="Credits">
+				<Anchors>
+                    <Anchor point="TOPLEFT" x="0" y="0" relativeKey="$parent.Button2" relativePoint="BOTTOMLEFT" />
+                    <Anchor point="BOTTOMRIGHT" x="0" y="-30" relativeKey="$parent.Button2" relativePoint="BOTTOMRIGHT" />
+                </Anchors>
+			</Button>
+            -->
+        </Frames>
+    </Frame>
+</Ui>

@@ -1,0 +1,65 @@
+
+HandyNotes_DragonflightDB = {
+	["char"] = {
+		["Qutlaw - Ravencrest"] = {
+			["2200_coord_37263069"] = true,
+			["2200_coord_47055309"] = true,
+			["2200_coord_64231928"] = true,
+			["2200_coord_34105633"] = true,
+		},
+		["Qpaladin - Ragnaros"] = {
+			["2200_coord_59761689"] = true,
+			["2200_coord_49776211"] = true,
+			["2200_coord_50226180"] = true,
+		},
+		["Qpfromage - Ragnaros"] = {
+			["2200_coord_37263069"] = true,
+			["2200_coord_63427298"] = true,
+			["2200_coord_47055309"] = true,
+			["2022_coord_56004490"] = true,
+			["2200_coord_64231928"] = true,
+			["2200_coord_59761689"] = true,
+		},
+		["Qubit - Ragnaros"] = {
+			["2200_coord_64231928"] = true,
+			["2200_coord_53712395"] = true,
+		},
+		["Dogson - Ragnaros"] = {
+			["2200_coord_32938325"] = true,
+			["2200_coord_63427298"] = true,
+			["2200_coord_64231928"] = true,
+			["2200_coord_47055309"] = true,
+		},
+	},
+	["profileKeys"] = {
+		["Laurs - Ragnaros"] = "Default",
+		["Djagon - Ragnaros"] = "Default",
+		["Qubit - Ragnaros"] = "Default",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Cyclosarin - Ragnaros"] = "Default",
+		["Qpebank - Draenor"] = "Default",
+		["Qpc - Draenor"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Qpcheese - Ragnaros"] = "Default",
+		["Qutlaw - Ravencrest"] = "Default",
+		["Zelení - Draenor"] = "Default",
+		["Qpew - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["icon_display_pet_battles"] = false,
+			["icon_display_misc"] = true,
+			["hide_done_rares"] = true,
+			["icon_display_dragon_glyph"] = false,
+			["icon_display_rares"] = false,
+			["icon_display_somnut"] = false,
+			["icon_display_treasures"] = true,
+			["use_char_achieves"] = true,
+			["icon_display_profession_treasures"] = true,
+			["icon_display_disturbed_dirt"] = false,
+			["icon_display_dragonrace"] = false,
+		},
+	},
+}

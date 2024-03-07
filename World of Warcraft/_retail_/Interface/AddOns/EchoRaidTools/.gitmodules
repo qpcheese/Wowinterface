@@ -1,0 +1,3 @@
+[submodule "libs/LibReadOnly"]
+	path = libs/LibReadOnly
+	url = https://github.com/Grimonja/LibReadOnly.git

@@ -1,0 +1,4 @@
+## Interface: 100205
+## Version: 794de8c
+## Title: Lib: CanDispel-1.0
+## Author: Slothpala

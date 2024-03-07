@@ -1,0 +1,10 @@
+lightweight tag b106845d043843c5021b0a7f9efff9e39dd72cc6 4.0.23-release
+Author:	André Pereira <pereirasmandre@gmail.com>
+Date:	Sat Dec 16 21:17:33 2023 +0000
+
+commit b106845d043843c5021b0a7f9efff9e39dd72cc6
+Author: André Pereira <pereirasmandre@gmail.com>
+Date:   Sat Dec 16 21:17:33 2023 +0000
+
+    4.0.23
+

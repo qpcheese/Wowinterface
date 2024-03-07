@@ -1,0 +1,13 @@
+## Interface: 100002
+## Title: |cFFFF0000Customs|r |cff00FF00by|r |cff0000FFdnnsGT|r (Gold and Silver) |TInterface\Icons\Ability_rogue_deadlymomentum:0|t
+## Notes: Graphics and Font für verschiede Inhalte.
+## Author: Thorantos (EU-Blackhand)
+## Version: v10.0.0
+
+## X-Category: Border, Font
+## X-Localizations: deDE
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+embeds.xml
+Custompaths.lua 

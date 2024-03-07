@@ -1,0 +1,159 @@
+local PH=1
+----Temporarily on hold because nested scrollframes cause a client crash.
+
+-- do
+	-- local super=XPRACTICE.GameObject
+	-- XPRACTICE.ScrollBox=XPRACTICE.inheritsFrom(super)
+	-- local class=XPRACTICE.ScrollBox
+	
+	-- function class:Setup(environment,x,y,z)
+		-- super.Setup(self,environment,x,y,z)
+		-- --IMPORTANT: remember to enable/disable mouse when changing button's targetalpha
+		-- self.hscroll=0
+		-- self.vscroll=0
+		-- self:SetScroll(0,0)
+	-- end
+
+	-- function class:CreateDisplayObject()
+		-- self.displayobject=XPRACTICE.ScrollBoxDisplayObject.new()
+		-- self.displayobject:Setup(self)
+	-- end
+	
+	-- function class:SetSize(wid,hgt)
+		-- self.displayobject.back:SetSize(wid,hgt)
+		-- self.displayobject.scrollframe.scrollframe:SetScrollChild(self.displayobject.scrollframe)
+	-- end
+	
+	-- function class:SetScroll(hz,vt)
+		-- self.displayobject.scrollframe.scrollframe:SetHorizontalScroll(hz)
+		-- local vtscroll=self.displayobject.back:GetHeight()+vt
+		-- self.displayobject.scrollframe.scrollframe:SetVerticalScroll(vtscroll)
+		-- print("vtscroll",vtscroll)
+	-- end
+	
+	-- function class:Step(elapsed)
+		-- super.Step(self,elapsed)
+		-- --TODO:
+	-- end
+	
+	-- function class:Draw(elapsed)
+		-- self.displayobject:SetPositionAndScale(self.position,self.scale)
+				
+		-- --local alpha=1
+		-- --self.displayobject:SetAlpha(XPRACTICE.Clamp(alpha,0,1))	
+	-- end	
+	-- function class:Select(toggle)
+		-- if(toggle==true)then			
+			-- self.displayobject.drawable.texture:SetColorTexture(1,1,1,0.5)	
+		-- else
+			-- --ActionButton_HideOverlayGlow(button.displayobject.drawable)
+			-- self.displayobject.drawable.texture:SetColorTexture(0,0,0,0.5)	
+		-- end
+	-- end
+	-- function class:EnableMouse(toggle)
+		-- self.displayobject.drawable:EnableMouse(toggle)
+	-- end	
+	
+-- end
+
+-- do
+	-- local super=XPRACTICE.DisplayObject
+	-- XPRACTICE.ScrollBoxDisplayObject=XPRACTICE.inheritsFrom(super)
+	-- local class=XPRACTICE.ScrollBoxDisplayObject
+	
+	-- function class:CreateDrawable()		
+		-- local f=XPRACTICE.ReusableFrames:GetFrame()
+		-- self.drawable=f
+		-- self.drawable.owner=self
+		-- self.back=f
+		-- tinsert(self.drawables,f)
+		
+		-- local f=XPRACTICE.ReusableScrollFrames:GetFrame()
+		-- --local f=XPRACTICE.ReusableFrames:GetFrame()
+		-- self.scrollframe=f
+		-- f.scrollframe:SetParent(self.owner.environment.hudframe)
+		-- --f.scrollframe:SetParent(UIParent)
+		-- f.scrollframe:SetWidth(f:GetWidth())
+		-- f.scrollframe:SetHeight(f:GetHeight())
+		-- f.scrollframe:SetAllPoints(f)
+		-- f:Show()
+		-- f.scrollframe:Show()
+		-- f.scrollframe:SetScrollChild(f)
+
+		
+		-- --f:SetSize(200,200)--!!!
+		-- f:SetAlpha(1)		
+		-- tinsert(self.drawables,f)
+		
+		-- local f=XPRACTICE.ReusableFrames:GetFrame()
+		-- self.top=f
+		-- tinsert(self.drawables,f)		
+		-- local f=XPRACTICE.ReusableFrames:GetFrame()
+		-- self.bottom=f
+		-- tinsert(self.drawables,f)		
+		-- local f=XPRACTICE.ReusableFrames:GetFrame()
+		-- self.left=f
+		-- tinsert(self.drawables,f)		
+		-- local f=XPRACTICE.ReusableFrames:GetFrame()
+		-- self.right=f
+		-- tinsert(self.drawables,f)				
+
+	
+	-- end
+	-- function class:SetAppearance()
+		-- local linewidth=2		
+		-- --self.parentframe=self.owner.environment.frame	-- assertion failure crash
+		-- --self.parentframe=self.owner.environment.modelsceneframe -- assertion failure crash
+		-- --self.parentframe=self.owner.environment.hudframe	--TODO LATER: why doesn't THIS crash?	--ANSWER: because hudframe was not parented (but it is now)
+		-- --self.parentframe=UIParent
+		
+		-- self.parentframe=self.owner.environment.hudframe
+		
+		-- self.scrollframe:SetParent(self.parentframe)
+		-- self.scrollframe:SetPoint("TOPLEFT",self.parentframe,"TOPLEFT",0,0)
+		-- self.scrollframe:Show();self.scrollframe:SetAlpha(1)
+		-- self.scrollframe:SetSize(600,600)
+		-- --self.scrollframe:SetSize(200,120)
+		-- self.scrollframe:SetFrameLevel(198)
+		-- self.scrollframe.texture:Show();self.scrollframe.texture:SetColorTexture(0,1,0,.5)
+						
+		-- self.back:SetParent(self.scrollframe)
+		-- self.back:SetPoint("TOPLEFT",self.scrollframe,"TOPLEFT",10,-10)
+		-- self.back:Show();self.back:SetAlpha(1)
+		-- self.back:SetFrameLevel(199)	
+		-- self.back.texture:Show();self.back.texture:SetColorTexture(1,0,1,.5)
+		
+		-- self.top:SetParent(self.back)
+		-- self.top.texture:Show();self.top.texture:SetColorTexture(1,1,1,1)
+		-- self.top:Show();self.top:SetAlpha(1)
+		-- self.top:SetPoint("BOTTOMLEFT",self.back,"TOPLEFT",-linewidth,0)
+		-- self.top:SetPoint("BOTTOMRIGHT",self.back,"TOPRIGHT",linewidth,0)
+		-- self.top:SetHeight(linewidth)
+		-- self.bottom:SetParent(self.back)
+		-- self.bottom.texture:Show();self.bottom.texture:SetColorTexture(1,1,1,1)
+		-- self.bottom:Show();self.bottom:SetAlpha(1)
+		-- self.bottom:SetPoint("TOPLEFT",self.back,"BOTTOMLEFT",-linewidth,0)
+		-- self.bottom:SetPoint("TOPRIGHT",self.back,"BOTTOMRIGHT",linewidth,0)
+		-- self.bottom:SetHeight(linewidth)	
+		-- self.left:SetParent(self.back)
+		-- self.left.texture:Show();self.left.texture:SetColorTexture(1,1,1,1)
+		-- self.left:Show();self.left:SetAlpha(1)
+		-- self.left:SetPoint("TOPRIGHT",self.back,"TOPLEFT",0,linewidth)
+		-- self.left:SetPoint("BOTTOMRIGHT",self.back,"BOTTOMLEFT",0,-linewidth)
+		-- self.left:SetWidth(linewidth)
+		-- self.right:SetParent(self.back)
+		-- self.right.texture:Show();self.right.texture:SetColorTexture(1,1,1,1)
+		-- self.right:Show();self.right:SetAlpha(1)
+		-- self.right:SetPoint("TOPLEFT",self.back,"TOPRIGHT",0,linewidth)
+		-- self.right:SetPoint("BOTTOMLEFT",self.back,"BOTTOMRIGHT",0,-linewidth)
+		-- self.right:SetWidth(linewidth)		
+	
+	-- end
+	-- function class:SetPositionAndScale(position,scale)
+		-- --self.scrollframe:SetPoint("TOPLEFT",self.parentframe,"BOTTOMLEFT",position.x,position.y)
+		-- --self.scrollframe:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",position.x,position.y)
+		-- self.scrollframe:SetPoint("TOPLEFT",self.parentframe,"BOTTOMLEFT",position.x,position.y)
+		-- --self.drawable:SetAllPoints(self.parentframe)
+	-- end
+
+-- end

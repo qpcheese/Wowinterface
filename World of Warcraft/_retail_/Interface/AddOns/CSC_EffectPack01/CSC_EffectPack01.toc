@@ -1,0 +1,8 @@
+## Interface: 100007
+## Title: Chat Sound Customizer [Effect Pack 01]
+## Notes: A pack with 61 sound effects to be used in CSC or where else you want. :)
+## Author: Paulo & Eliote
+## Version: 1.1
+
+Sounds.lua
+Main.lua

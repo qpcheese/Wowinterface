@@ -1,0 +1,20 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Font name="EchoRaidToolsH1" font="Fonts\FRIZQT__.ttf" virtual="true">
+        <FontHeight>
+            <AbsValue val="18"/>
+        </FontHeight>
+    </Font>
+
+    <Font name="EchoRaidToolsH2" font="Fonts\FRIZQT__.ttf" virtual="true">
+        <FontHeight>
+            <AbsValue val="16"/>
+        </FontHeight>
+    </Font>
+
+    <Font name="EchoRaidToolsH3" font="Fonts\FRIZQT__.ttf" virtual="true">
+        <FontHeight>
+            <AbsValue val="14"/>
+        </FontHeight>
+    </Font>
+</Ui>

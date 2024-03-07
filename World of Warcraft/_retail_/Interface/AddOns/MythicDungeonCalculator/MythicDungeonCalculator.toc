@@ -1,0 +1,16 @@
+## Interface: 100200
+## Title: Mythic Dungeon Calculator
+## Author: Ravor
+## Version: 2.4.1
+## Notes: Let's you calculate your way to the 'Keystone' Achievements and more
+## Notes-deDE: Tool zur Berechnung der Mythisch+ Wertung um die 'SchlU+00fcsselsteinmeister' Erfolge zu erlangen und mehr
+## DefaultState: Enabled
+## OptionalDeps: Ace3, LibStub, !LibUIDropDownMenu
+## SavedVariables: MDC_Settings, MDCDB
+## AddonCompartmentFunc: MDC_OnAddonCompartmentClick
+## IconTexture: Interface\AddOns\MythicDungeonCalculator\Textures\mdc_icon
+
+Libraries\load_libraries.xml
+initialize.lua
+languages.xml
+MythicDungeonCalculator.lua

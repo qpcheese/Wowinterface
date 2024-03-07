@@ -1,0 +1,46 @@
+
+MacroToolkitDB = {
+	["char"] = {
+		["Qpfromage - Ragnaros"] = {
+			["backups"] = {
+			},
+		},
+	},
+	["global"] = {
+		["extended"] = {
+			["1"] = {
+				["icon"] = "4638427",
+				["name"] = "1314",
+				["body"] = "#showtooltip\n/use 13\n/use 14\n/use item:191914\n/use item:191383\n",
+			},
+			["3"] = {
+				["icon"] = "135822",
+				["name"] = "volcanic macro",
+				["body"] = "|cffffff00|Hachievement:18646:Player-3682-0B236980:1:9:15:23:4294967295:4294967295:4294967295:4294967295|h[Whodunnit?]|h|r    \n",
+			},
+			["2"] = {
+				["icon"] = "135822",
+				["name"] = "volcanic macro",
+				["body"] = "\n",
+			},
+		},
+		["backups"] = {
+		},
+		["ebackups"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Dogson - Ragnaros"] = "profile",
+		["Qpaladin - Ragnaros"] = "profile",
+		["Qpfromage - Ragnaros"] = "profile",
+		["Qpfromage - Sylvanas"] = "profile",
+		["Fishanus - Ragnaros"] = "profile",
+	},
+	["profiles"] = {
+		["profile"] = {
+			["y"] = 351.0000610351563,
+			["x"] = 787.9999389648438,
+			["visconditions"] = true,
+		},
+	},
+}

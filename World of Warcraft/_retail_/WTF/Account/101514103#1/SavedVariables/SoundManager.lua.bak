@@ -1,0 +1,22 @@
+
+ZXSNDMGR_SAVED = {
+	["settings"] = {
+		["visible"] = 1,
+		["version"] = 1.42,
+		["framebtn"] = {
+			["posY"] = 489,
+			["posX"] = 212,
+		},
+		["lastLogout"] = 1692118525,
+		["initialDevice"] = "",
+		["debug"] = 0,
+	},
+	["outputs"] = {
+		["volumes"] = {
+			["Speakers (Realtek(R) Audio)"] = "0.6",
+			["System Default"] = "0.5",
+		},
+		["outputNameToIgnore"] = {
+		},
+	},
+}

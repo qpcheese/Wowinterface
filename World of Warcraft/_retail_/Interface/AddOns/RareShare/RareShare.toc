@@ -1,0 +1,20 @@
+## Interface: 100200
+## Title: Rare Share: |cff1eff00Core
+## Notes: The core library required by other Rare Share addons
+## Author: pffScrub
+## Version: v1.1.6
+## DefaultState: enabled
+## OptionalDependencies: TomTom
+## SavedVariables: RareShareDB
+
+locales\enUS.lua
+locales\ruRU.lua
+locales\frFR.lua
+locales\koKR.lua
+
+Init.lua
+Events.lua
+Modules.lua
+UI.lua
+RareShare.lua
+RareFrame.lua

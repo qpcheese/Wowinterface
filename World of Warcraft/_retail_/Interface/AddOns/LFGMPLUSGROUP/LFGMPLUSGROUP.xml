@@ -1,0 +1,10 @@
+<!--
+<Ui>
+<Script file="LFGMPLUSGROUP.lua" />
+<Frame name="LFGMPLUSGROUP">
+<Scripts>
+<OnEvent function="LFGMPLUSGROUP_OnEvent" />
+</Scripts>
+</Frame>
+</Ui>
+-->

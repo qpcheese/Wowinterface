@@ -1,0 +1,16 @@
+
+hokutoNoMonkConfig = {
+	["moves"] = {
+		["rsk"] = "on",
+		["fof"] = "on",
+		["bok"] = "on",
+		["sck"] = "on",
+		["tod"] = "on",
+		["tb"] = "on",
+		["par"] = "on",
+		["fb"] = "on",
+		["tp"] = "on",
+	},
+	["channel"] = "SFX",
+	["volume"] = "",
+}

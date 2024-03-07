@@ -1,0 +1,32 @@
+
+ClassicNumbersDB = {
+	["profileKeys"] = {
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpcheese - Chamber of Aspects"] = "Default",
+		["Qpcheese - Ragnaros"] = "Default",
+		["Qpc - Draenor"] = "Default",
+		["Zelení - Draenor"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+		["Laurs - Ragnaros"] = "Default",
+		["Kaijid - Ragnaros"] = "Default",
+		["Djagon - Ragnaros"] = "Default",
+		["Qubit - Ragnaros"] = "Default",
+		["Qute - Sylvanas"] = "Default",
+		["Myfficraider - Ragnaros"] = "Default",
+		["Fishanus - Ragnaros"] = "Default",
+		["Qpfromage - Sylvanas"] = "Default",
+		["Qpebank - Draenor"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Jerwin - Ragnaros"] = "Default",
+		["Cyclosarin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qpew - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
+	},
+	["global"] = {
+		["enabled"] = false,
+		["critSize"] = 39,
+		["font"] = "Bebas Neue Cyrillic Regular",
+		["scrollDistance"] = 20,
+	},
+}

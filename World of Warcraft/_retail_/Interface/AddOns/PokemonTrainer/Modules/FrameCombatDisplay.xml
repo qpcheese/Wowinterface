@@ -1,0 +1,547 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	
+	<Script file="FrameCombatDisplay.lua" />
+	
+	<Button name="PTButtonTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="22" y="22" />
+		</Size>
+	</Button>
+	
+	<Texture name="PTTextureBonusTemplate" file="Interface\PetBattles\BattleBar-AbilityBadge-Neutral" inherits="PTButtonTemplate" virtual="true" />
+	
+	<Texture name="PTTextureSpeedTemplate" file="Interface\PetBattles\PetBattle-StatIcons" virtual="true">
+		<Size>
+			<AbsDimension x="11" y="11" />
+		</Size>
+		<TexCoords left="0" right="0.5" top="0.5" bottom="1" />
+	</Texture>
+	
+	<Texture name="PTTextureModelShadow" file="Interface\Addons\PokemonTrainer\Images\Circle" virtual="true" >
+		<Size x="103" y="104"/>	
+	</Texture>
+	
+	<Button name="PTButtonEnemyTemplate" inherits="PTButtonTemplate" virtual="true">
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture parentKey="Icon" setAllPoints="true">
+					<TexCoords left="0.078125" right="0.921875" top="0.078125" bottom="0.921875" />
+				</Texture>
+			</Layer>
+			<Layer level="BORDER">
+				<Texture parentKey="Border" file="Interface\PetBattles\PetBattleHud">
+					<Size>
+						<AbsDimension x="26" y="26" />
+					</Size>
+					<TexCoords left="0.82519531" right="0.87109375" top="0.88085938" bottom="0.97265625" />  
+					<Anchors>
+						<Anchor point="CENTER" />
+					</Anchors>  
+				</Texture>
+				<Texture parentKey="Dead" file="Interface\PetBattles\PetBattleHud" hidden="true">
+					<Size x="26" y="26" />	
+					<TexCoords left="0.77734375" right="0.82324219" top="0.88085938" bottom="0.97265625" />
+					<Anchors>
+						<Anchor point="CENTER" />
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+	</Button>
+	
+	<Frame name="PTFrameRampingTemplate" virtual="true" hidden="true">
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture parentKey="bg" file="Interface\Addons\PokemonTrainer\Images\Ramping" setallpoints="true">
+					<Color r="0" g="0" b="0" a="1" />
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture parentKey="tex" file="Interface\Addons\PokemonTrainer\Images\Ramping">
+					<Size>
+						<AbsDimension x="6" y="6" />
+					</Size>
+				</Texture>
+			</Layer>
+		</Layers>
+	</Frame>
+	
+	<Button name="PTButtonAbilityTemplate" inherits="PTButtonTemplate" virtual="true" hidden="true">
+		<Scripts>
+			<OnHide>
+				PT:GetModule("FrameCombatDisplay").BattleFrame_AbilityButton_Hide(self);
+			</OnHide>
+			<OnEnter>				
+				local parent = self:GetParent();
+				local master = parent:GetParent();
+				
+				if( master:GetID() == Enum.BattlePetOwner.Enemy and PT:IsPVPBattle() ) then					
+					_G.PetBattleAbilityTooltip_SetAbilityByID(
+						master:GetID(),
+						parent:GetID(),
+						master.player[parent:GetID()]["ab"..self:GetID()]
+					);
+				else
+					_G.PetBattleAbilityTooltip_SetAbility(master:GetID(), parent:GetID(), self:GetID());
+				end				
+				
+				if( PT:GetModule("FrameCombatDisplay").GetTooltipPosition() ) then
+					_G.PetBattleAbilityTooltip_Show("TOPLEFT", self, "RIGHT", 10, 0);
+				else
+					_G.PetBattleAbilityTooltip_Show("TOPRIGHT", self, "LEFT", -10, 0);
+				end
+			</OnEnter>
+			<OnLeave>
+				_G.PetBattlePrimaryAbilityTooltip:Hide();
+			</OnLeave>
+		</Scripts>
+		<Layers>
+			<Layer level="OVERLAY">
+				<Texture parentKey="CooldownBG" setallpoints="true" hidden="true">
+				</Texture>
+				<FontString parentKey="Cooldown" inherits="SystemFont_Outline" justifyH="CENTER" justifyV="CENTER">
+					<Anchors>
+						<Anchor point="CENTER" />
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture parentKey="bg" setallpoints="true">
+					
+				</Texture>
+				<Texture parentKey="Bonus1" inherits="PTTextureBonusTemplate">
+					<Anchors>
+						<Anchor point="LEFT" relativePoint="RIGHT" x="3" y="0" />
+					</Anchors>
+				</Texture>
+				<Texture parentKey="Bonus2" inherits="PTTextureBonusTemplate">
+					<Anchors>
+						<Anchor point="LEFT" relativeKey="$parent.Bonus1" relativePoint="RIGHT" x="3" y="0" />
+					</Anchors>
+				</Texture>
+				<Texture parentKey="Bonus3" inherits="PTTextureBonusTemplate">
+					<Anchors>
+						<Anchor point="LEFT" relativeKey="$parent.Bonus2" relativePoint="RIGHT" x="3" y="0" />
+					</Anchors>
+				</Texture>
+				<Texture parentKey="Approved">
+					<Size>
+						<AbsDimension x="12" y="12" />
+					</Size>
+					<Anchors>
+						<Anchor point="RIGHT" relativePoint="LEFT" x="0" y="0" />
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+	</Button>
+	
+	<Frame name="PTFrameHeaderTemplate" virtual="true">
+		<Frames>
+			<Button parentKey="Enemy1" inherits="PTButtonEnemyTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="25" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button parentKey="Enemy2" inherits="PTButtonEnemyTemplate">
+				<Anchors>
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.Enemy1">
+						<Offset>
+							<AbsDimension x="3" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button parentKey="Enemy3" inherits="PTButtonEnemyTemplate">
+				<Anchors>
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.Enemy2">
+						<Offset>
+							<AbsDimension x="3" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+		</Frames>
+	</Frame>
+	
+	<Frame name="PTFramePetTemplate" framestrata="LOW" virtual="true">
+		<Animations>
+			<AnimationGroup parentKey="animHide">
+				<Alpha fromAlpha="1" toAlpha="0" duration="0.5" order="1" />
+				<Scripts>
+					<OnFinished>
+						PT:GetModule("FrameCombatDisplay").BattleFrame_Pet_HideFinished(self);
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+			<AnimationGroup parentKey="animShow">
+				<Alpha fromAlpha="0" toAlpha="1" duration="0.5" order="1" />
+				<Scripts>
+					<OnStop>
+						PT:GetModule("FrameCombatDisplay").BattleFrame_Pet_ShowFinished(self);
+					</OnStop>
+					<OnFinished>
+						PT:GetModule("FrameCombatDisplay").BattleFrame_Pet_ShowFinished(self);
+					</OnFinished>
+					<OnUpdate>
+						PT:GetModule("FrameCombatDisplay").BattleFrame_Pet_WhilePlaying(self);
+					</OnUpdate>
+				</Scripts>
+			</AnimationGroup>
+		</Animations>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture parentKey="activeBG" alpha="0">
+					<Anchors>
+						<Anchor point="LEFT" x="-4" y="0" />
+						<Anchor point="RIGHT" x="2" y="0" />
+						<Anchor point="TOP" x="0" y="4" />
+						<Anchor point="BOTTOM" x="0" y="-4" />
+					</Anchors>
+					<Animations>
+						<AnimationGroup parentKey="animActive">
+							<Alpha fromAlpha="0" toAlpha="1" duration="3" order="1" smoothing="IN_OUT" />
+							<Alpha fromAlpha="1" toAlpha="0" duration="3" order="2" smoothing="IN_OUT" />
+							<Scripts>
+								<OnPlay>
+									self:GetParent():SetAlpha(0);
+								</OnPlay>
+								<OnFinished>
+									self:Play();
+								</OnFinished>
+							</Scripts>
+						</AnimationGroup>
+					</Animations>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<FontString parentKey="Level" inherits="SystemFont_Outline" justifyH="LEFT" justifyV="TOP">
+					<!--<Anchors>
+						<Anchor point="TOP" relativePoint="BOTTOM" x="0" y="-2" />
+					</Anchors>-->
+				</FontString>
+				<FontString parentKey="BreedText" font="Fonts\FRIZQT__.TTF" outline="NORMAL" justifyH="LEFT" justifyV="TOP" hidden="true">
+					<FontHeight>
+						<AbsValue val="8"/>
+					</FontHeight>
+				</FontString>
+				<Texture parentKey="BreedTexture" file="Interface\PetBattles\PetBattle-StatIcons" hidden="true">
+					<Size>
+						<AbsDimension x="12" y="12" />
+					</Size>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<PlayerModel parentKey="Model" hidden="false">
+				<Size x="80" y="80" />
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="Shadow"  hidden="false">
+							<Color r="0" g="0" b="0" a="0.6" />
+							<Size>
+								<AbsDimension x="56" y="56" />
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0" />
+							</Anchors>
+						</Texture>
+					</Layer>
+					<Layer level="BORDER">
+						<Texture parentKey="Border" file="Interface\PetBattles\PetBattleHud">
+							<Size>
+								<AbsDimension x="70" y="70" />
+							</Size>
+							<TexCoords left="0.82519531" right="0.87109375" top="0.88085938" bottom="0.97265625" />  
+							<Anchors>
+								<Anchor point="CENTER" />
+							</Anchors>  
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						self:SetFrameLevel(self:GetParent():GetFrameLevel() - 1);
+					</OnLoad>
+					<OnShow>
+						PT:GetModule("FrameCombatDisplay").BattleFrame_UpdateModel(self);
+					</OnShow>
+				</Scripts>
+			</PlayerModel>
+			<Button parentKey="Button" framestrata="BACKGROUND" hidden="false">
+				<Size>
+					<AbsDimension x="30" y="30" />
+				</Size>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="Icon" setAllPoints="true">
+							<TexCoords left="0.078125" right="0.921875" top="0.078125" bottom="0.921875" />
+						</Texture>
+					</Layer>
+					<Layer level="BORDER">
+						<Texture parentKey="Border" file="Interface\PetBattles\PetBattleHud">
+							<Size>
+								<AbsDimension x="36" y="36" />
+							</Size>
+							<TexCoords left="0.82519531" right="0.87109375" top="0.88085938" bottom="0.97265625" />  
+							<Anchors>
+								<Anchor point="CENTER" />
+							</Anchors>  
+						</Texture>
+						<Texture parentKey="Dead" file="Interface\PetBattles\PetBattleHud" hidden="true">
+							<Size x="36" y="36" />	
+							<TexCoords left="0.77734375" right="0.82324219" top="0.88085938" bottom="0.97265625" />
+							<Anchors>
+								<Anchor point="CENTER" />
+							</Anchors>
+						</Texture>
+					</Layer>
+					<!--<Layer level="OVERLAY">
+						<FontString parentKey="Level" inherits="SystemFont_Outline" justifyH="LEFT" justifyV="TOP">
+							<Anchors>
+								<Anchor point="TOP" relativePoint="BOTTOM" x="0" y="-2" />
+							</Anchors>
+						</FontString>
+						<FontString parentKey="BreedText" font="Fonts\FRIZQT__.TTF" outline="NORMAL" justifyH="LEFT" justifyV="TOP" hidden="true">
+							<FontHeight>
+								<AbsValue val="8"/>
+							</FontHeight>
+						</FontString>
+						<Texture parentKey="BreedTexture" file="Interface\PetBattles\PetBattle-StatIcons" hidden="true">
+							<Size>
+								<AbsDimension x="12" y="12" />
+							</Size>
+						</Texture>
+					</Layer>-->
+				</Layers>
+			</Button>
+			<Button parentKey="Type" inherits="PTButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="0" y="1" />
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture parentKey="Icon" setallpoints="true">
+							<TexCoords left="0.79687500" right="0.49218750" top="0.50390625" bottom="0.65625000" />
+						</Texture>
+						<Texture parentKey="SpeedBG1" inherits="PTTextureBonusTemplate">
+							<Anchors>
+								<Anchor point="LEFT" relativeKey="$parent.Type" relativePoint="RIGHT" x="3" y="0" />
+							</Anchors>
+						</Texture>
+						<Texture parentKey="SpeedBG2" inherits="PTTextureBonusTemplate">
+							<Anchors>
+						<Anchor point="LEFT" relativeKey="$parent.SpeedBG1" relativePoint="RIGHT" x="3" y="0" />
+							</Anchors>
+						</Texture>
+						<Texture parentKey="SpeedBG3" inherits="PTTextureBonusTemplate">
+							<Anchors>
+								<Anchor point="LEFT" relativeKey="$parent.SpeedBG2" relativePoint="RIGHT" x="3" y="0" />
+							</Anchors>
+						</Texture>
+					</Layer>
+					<Layer level="OVERLAY">
+						<Texture parentKey="Speed1" inherits="PTTextureSpeedTemplate">
+							<Anchors>
+								<Anchor point="CENTER" relativeKey="$parent.SpeedBG1" />
+							</Anchors>
+						</Texture>
+						<Texture parentKey="Speed2" inherits="PTTextureSpeedTemplate">
+							<Anchors>
+								<Anchor point="CENTER" relativeKey="$parent.SpeedBG2" />
+							</Anchors>
+						</Texture>
+						<Texture parentKey="Speed3" inherits="PTTextureSpeedTemplate">
+							<Anchors>
+								<Anchor point="CENTER" relativeKey="$parent.SpeedBG3" />
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnEnter>
+						local parent = self:GetParent();
+						local master = parent:GetParent();
+							
+						local aura = _G.PET_BATTLE_PET_TYPE_PASSIVES[master.player[parent:GetID()].type];
+						
+						if( aura ) then
+							_G.PetBattleAbilityTooltip_SetAuraID(master:GetID(), parent:GetID(), aura);
+							
+							if( PT:GetModule("FrameCombatDisplay").GetTooltipPosition() ) then
+								_G.PetBattleAbilityTooltip_Show("TOPLEFT", self, "RIGHT", 10, 0);
+							else
+								_G.PetBattleAbilityTooltip_Show("TOPRIGHT", self, "LEFT", -10, 0);
+							end
+						end
+					</OnEnter>
+					<OnLeave>
+						_G.PetBattlePrimaryAbilityTooltip:Hide();
+					</OnLeave>
+				</Scripts>
+			</Button>
+			<Button parentKey="Ability1" id="1" inherits="PTButtonAbilityTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.Type">
+						<Offset>
+							<AbsDimension x="0" y="-2" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button parentKey="Ability2" id="2" inherits="PTButtonAbilityTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.Ability1">
+						<Offset>
+							<AbsDimension x="0" y="-2" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button parentKey="Ability3" id="3" inherits="PTButtonAbilityTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeKey="$parent.Ability2">
+						<Offset>
+							<AbsDimension x="0" y="-2" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+		</Frames>
+	</Frame>
+	
+	<Frame name="PTFrameTemplate" frameStrata="LOW" enablemouse="true" movable="true" clampedtoscreen="true" hidden="true" virtual="true">
+		<Size>
+			<AbsDimension x="98" y="319" />
+		</Size>
+		<Animations>
+			<AnimationGroup parentKey="animHide">
+				<Alpha fromAlpha="1" toAlpha="0" duration="1" order="1" />
+				<Scripts>
+					<OnFinished>
+						self:GetParent():Hide();
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+			<AnimationGroup parentKey="animShow">
+				<Alpha fromAlpha="0" toAlpha="1" duration="1" order="1" />
+				<Scripts>
+					<OnFinished>
+						self:GetParent():SetAlpha(1);
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+		</Animations>
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture parentKey="bg">
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parent" x="-4" y="0" />
+						<Anchor point="RIGHT" relativeTo="$parent" x="2" y="0" />
+						<Anchor point="TOP" relativeTo="$parent" x="0" y="-23" />
+						<Anchor point="BOTTOM" relativeTo="$parent" x="0" y="-4" />
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				PT:GetModule("FrameCombatDisplay").BattleFrame_OnLoad(self);
+			</OnLoad>
+			<OnShow>
+				self.dragElapsed = 0;
+				self.firstRound = 1;
+				self.animDone = 0;
+				
+				local module = PT:GetModule("FrameCombatDisplay");
+				
+				module.BattleFrame_Resize(self);
+				module.BattleFrame_Initialize(self);
+				module.BattleFrame_UpdateSpeedButtons(self);
+				module.BattleFrame_UpdateActivePetHighlight(self);
+				module.BattleFrame_Pets_Reorganize_Init(self, false);
+				module.BattleFrame_Options_Apply(self);
+			</OnShow>
+			<OnHide>
+				PT:GetModule("FrameCombatDisplay").glowing_hideall(self);
+			</OnHide>
+			<OnDragStart>
+				PT:GetModule("FrameCombatDisplay").BattleFrame_StartDrag(self);
+			</OnDragStart>	
+			<OnDragStop>
+				PT:GetModule("FrameCombatDisplay").BattleFrame_StopDrag(self);
+			</OnDragStop>			
+		</Scripts>
+		<Frames>
+			<Frame parentKey="EnemyActive" frameLevel="6" inherits="BackdropTemplate">
+				<Size>
+					<AbsDimension x="26" />
+				</Size>
+				<KeyValues>
+					<KeyValue key="backdropInfo" value="BACKDROP_TOOLTIP_8_8_1111" type="global" />
+				</KeyValues>
+				<Scripts>
+					<OnLoad>
+						self:Raise(); -- makes it overlay the parent and all other frames
+					</OnLoad>
+				</Scripts>
+			</Frame>
+			<Frame name="$parentHeader" inherits="PTFrameHeaderTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" x="0" y="1" />
+				</Anchors>
+				<Size>
+					<AbsDimension x="98" y="22" />
+				</Size>
+			</Frame>
+			<Frame name="$parentPet1" id="1" inherits="PTFramePetTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$parentHeader">
+						<Offset>
+							<AbsDimension x="0" y="-6" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="98" y="94" />
+				</Size>
+			</Frame>
+			<Frame name="$parentPet2" id="2" inherits="PTFramePetTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$parentPet1">
+						<Offset>
+							<AbsDimension x="0" y="-5" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="98" y="94" />
+				</Size>
+			</Frame>
+			<Frame name="$parentPet3" id="3" inherits="PTFramePetTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$parentPet2">
+						<Offset>
+							<AbsDimension x="0" y="-5" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="98" y="94" />
+				</Size>
+			</Frame>
+		</Frames>
+	</Frame>
+	
+	<!-- Player Frame -->
+	<Frame name="PTPlayer" id="1" inherits="PTFrameTemplate" />
+	
+	<!-- Enemy Frame -->
+	<Frame name="PTEnemy"  id="2" inherits="PTFrameTemplate" />
+	
+</Ui>
