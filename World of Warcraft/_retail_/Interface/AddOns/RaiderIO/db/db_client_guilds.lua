@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on Thu Mar 07 2024 23:31:42 GMT+0000 (Coordinated Universal Time)
+-- RaiderIO Client Data. Generated on Thu Mar 07 2024 23:41:49 GMT+0000 (Coordinated Universal Time)
 --
 local _, ns = ...
 ns.GUILD_BEST_DATA = {
@@ -1520,40 +1520,6 @@ ns.GUILD_BEST_DATA = {
         }
       },
       {
-        ["zone_id"] = 9424,
-        ["level"] = 24,
-        ["upgrades"] = 2,
-        ["fraction"] = 0.7861394804770285,
-        ["clear_time"] = "00:29:06.015",
-        ["party"] = {
-          {
-            ["name"] = "Vaneda",
-            ["role"] = "tank",
-            ["class_id"] = 6
-          },
-          {
-            ["name"] = "Lunatea",
-            ["role"] = "healer",
-            ["class_id"] = 10
-          },
-          {
-            ["name"] = "Arlinn",
-            ["role"] = "dps",
-            ["class_id"] = 2
-          },
-          {
-            ["name"] = "Dabo",
-            ["role"] = "dps",
-            ["class_id"] = 10
-          },
-          {
-            ["name"] = "Thomago",
-            ["role"] = "dps",
-            ["class_id"] = 8
-          }
-        }
-      },
-      {
         ["zone_id"] = 7673,
         ["level"] = 25,
         ["upgrades"] = 1,
@@ -1584,6 +1550,40 @@ ns.GUILD_BEST_DATA = {
             ["name"] = "Breathefuel",
             ["role"] = "dps",
             ["class_id"] = 2
+          }
+        }
+      },
+      {
+        ["zone_id"] = 7673,
+        ["level"] = 25,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.8977789549022515,
+        ["clear_time"] = "00:26:56.899",
+        ["party"] = {
+          {
+            ["name"] = "Xebecs",
+            ["role"] = "tank",
+            ["class_id"] = 1
+          },
+          {
+            ["name"] = "Schutzfuchs",
+            ["role"] = "healer",
+            ["class_id"] = 7
+          },
+          {
+            ["name"] = "Dabo",
+            ["role"] = "dps",
+            ["class_id"] = 10
+          },
+          {
+            ["name"] = "Dando",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          },
+          {
+            ["name"] = "Фелхейм",
+            ["role"] = "dps",
+            ["class_id"] = 9
           }
         }
       }
