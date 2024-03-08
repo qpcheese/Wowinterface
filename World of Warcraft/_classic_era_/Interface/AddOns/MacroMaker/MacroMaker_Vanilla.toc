@@ -1,0 +1,11 @@
+## Title: MacroMaker
+## Version: 1.7
+## Author: CaptJack2883
+## Interface: 11403
+## OptionalDeps: MacroMaker, AceDB-3.0, LibDBIcon-1.0
+## SavedVariablesPerCharacter: MMMainHidden, MMCustomString, MMVerbose, MacroMakerDB, MMMinimapButtonShown
+
+MacroMaker.xml
+MacroMaker.lua
+MacroMakerConfig.xml
+MacroMakerConfig.lua

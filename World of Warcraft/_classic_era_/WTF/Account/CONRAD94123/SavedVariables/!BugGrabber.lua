@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 32,
 	["lastSanitation"] = 3,
+	["session"] = 33,
 	["errors"] = {
 		{
 			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",

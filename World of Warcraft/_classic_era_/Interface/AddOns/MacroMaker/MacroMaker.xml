@@ -1,0 +1,260 @@
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+
+		<!-- 
+			Comment block.	
+			X is Width, Y is Height
+			Buttons need Layers for Texture.	
+			Layers go in Frame, but outside of Frames.
+			Highlight Layer only shows on mouse-over. (Obviously)
+		--> 
+		
+	<Frame name="MacroMakerFrame" parent="UIParent" inherits="BasicFrameTemplate" movable="true" enableMouse="true">
+		<Size x="190" y="450" />
+		<Anchors>
+			<Anchor point="CENTER" relativeTo="UIParent" />
+		</Anchors>
+		<!--
+    <Backdrop bgFile="UI-BARBERSHOP.png" edgeFile="interface/dialogframe/ui-dialogbox-border.blp.meta" tile="false">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+			<EdgeSize>
+				<AbsValue val="32" />
+			</EdgeSize>
+		</Backdrop>
+    -->
+    
+		<Layers>
+			<Layer level="OVERLAY">
+				<!-- All FontString's should go here. -->
+        <FontString name="MMTitle" inherits="GameFontNormalLarge" text="Macro Maker" hidden="false">
+					<Size x="200" y="100" />
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset x="0" y="10" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="60" />
+					</FontHeight>
+				</FontString>
+        
+				<FontString name="MMHelpString" inherits="GameFontNormal" text="Drag a Spell Icon onto the '?' below, then click the 'Create Macro' button above. Once the macro is created, you can drag it from the icon below back to your Action Bars. Right Click the Icon to Reset."  hidden="false">
+					<Size x="140" y="200" />
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset x="0" y="-160" />
+						</Anchor>
+					</Anchors>
+					<FontHeight>
+						<AbsValue val="60" />
+					</FontHeight>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+      <!--
+			<Button name="MMBtnCheck" inherits="UIPanelButtonTemplate" text="Check Macros">
+				<Size>
+					<AbsDimension x="115" y="33" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-35" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						MMBtnCheck_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="MMBtnTest" inherits="UIPanelButtonTemplate" text="Test Macros">
+				<Size>
+					<AbsDimension x="100" y="33" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-70" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						MMBtnTest_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+      
+      -->
+			<Button name="MMBtnCreate" inherits="UIPanelButtonTemplate" text="Create Macro">
+				<Size>
+					<AbsDimension x="123" y="33" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-70" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						MMBtnCreate_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="MMBtnOptions" inherits="UIPanelButtonTemplate" text="Options">
+				<Size>
+					<AbsDimension x="95" y="33" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-110" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						MMBtnOptions_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="MMBtnHide" inherits="UIPanelButtonTemplate" text="Hide">
+				<Size>
+					<AbsDimension x="85" y="33" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-150" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						MMBtnHide_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>			
+			
+			<Button name="MMBtnMacroInput" inherits="ActionButtonTemplate, SecureActionButtonTemplate" frameStrata="HIGH" hidden="false" text="Input">
+				<Size>
+					<AbsDimension x="30" y="30" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="-10" y="-335" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self:RegisterForClicks("LeftButtonUp", "RightButtonDown")
+					</OnLoad>
+					<OnClick>
+						 <!--
+						
+							Seems to work
+						
+						MMPrint("Input Button OnClick")
+						MMPrint("OnClick:"..button)
+							MMPrint("Calling LeftButton Function")
+							MMPrint("Calling RightButton Function")
+						-->						
+						self:SetScript("OnClick", function(self, button)
+						if button == "LeftButton" then
+							MMBtnMacroInput_LeftButton()
+						elseif button == "RightButton" then
+							MMBtnMacroInput_RightButton()
+						end
+						end)
+					</OnClick>
+					<OnMouseDown>
+						 <!--
+						This is apparently Both Buttons... 
+						MMBtnMacroInput_OnClick()
+						MMPrint("OnMouseDown: "..arg1)
+						MMPrint("Input Button OnMouseDown")
+						-->
+					</OnMouseDown>
+					<OnMouseUp>
+					<!-- 
+					This is apparently Both Buttons... 
+					MMBtnMacroInput_OnClick()
+						MMPrint("OnMouseUp: "..arg1)
+						MMPrint("Input Button OnMouseUp")
+					-->
+					</OnMouseUp>
+					
+					<OnDragStart>
+						MMBtnMacroInput_OnDrag()
+					</OnDragStart>
+				</Scripts>
+			</Button>
+			
+			<Button name="MMBtnShowMacroPanel" inherits="UIPanelButtonTemplate, SecureActionButtonTemplate" text="Macro Panel">
+				<Size>
+					<AbsDimension x="105" y="33" />
+				</Size>
+        <Attributes>
+         <Attribute name="type" value="action" />
+         <Attribute name="action" value="1" type="number" />
+        </Attributes>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset x="0" y="-390" />
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+            MMBtnShowMacroPanel_OnClick()
+            
+						<!--RunMacroText("/macro")
+            ShowUIPanel(MacroFrame, true) -->
+            <!--
+            if ( MacroFrame and MacroFrame:IsShown() ) then
+              MacroFrame:Hide()
+              return
+            else
+              if not (MacroFrame) then
+                ShowMacroFrame()
+                return
+              else
+                MacroFrame:Show()
+                return
+              end
+            end
+            tinsert(UISpecialFrames, MacroFrame:GetName()) -->
+					</OnClick>
+				</Scripts>
+			</Button>
+			
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self:RegisterForDrag("LeftButton");
+				MMBtnMacroInput:RegisterForDrag("LeftButton");
+				<!--
+				MMBtnMacroInput:RegisterForDrag("RightButton");
+				MMBtnMacroInput:RegisterForClicks("RightButton");
+				-->
+				MMBtnMacroInput:RegisterForClicks("LeftButtonUp", "RightButtonDown");
+			</OnLoad>
+			
+			<OnDragStart>
+				self:StartMoving();
+			</OnDragStart>
+			
+			<OnDragStop>
+				self:StopMovingOrSizing();
+			</OnDragStop>
+			
+			<OnEvent>
+				
+			</OnEvent>
+			
+			<OnUpdate>
+
+			</OnUpdate>
+		</Scripts>
+		
+		<!-- 
+			Comment block.		
+		--> 
+	</Frame>
+
+</Ui>

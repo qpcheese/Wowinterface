@@ -30,9 +30,12 @@ Bagnon_Sets = {
 	},
 	["display"] = {
 	},
+	["latest"] = {
+	},
+	["leatherColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
-			["y"] = 0,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -59,15 +62,17 @@ Bagnon_Sets = {
 				"contain", -- [23]
 			},
 			["point"] = "BOTTOMRIGHT",
-			["hiddenBags"] = {
+			["lockedSlots"] = {
 			},
 			["color"] = {
 			},
+			["y"] = 0,
+			["x"] = 0,
 			["borderColor"] = {
 			},
-			["lockedSlots"] = {
+			["showBags"] = true,
+			["hiddenBags"] = {
 			},
-			["x"] = 0,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -96,9 +101,9 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["lockedSlots"] = {
-			},
 			["borderColor"] = {
+			},
+			["lockedSlots"] = {
 			},
 		},
 		["guild"] = {
@@ -128,9 +133,9 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["lockedSlots"] = {
-			},
 			["borderColor"] = {
+			},
+			["lockedSlots"] = {
 			},
 		},
 		["bank"] = {
@@ -168,14 +173,10 @@ Bagnon_Sets = {
 			["x"] = 95.00000762939453,
 			["borderColor"] = {
 			},
-			["showBags"] = true,
 			["hiddenBags"] = {
 				[5] = false,
 			},
+			["showBags"] = true,
 		},
-	},
-	["leatherColor"] = {
-	},
-	["latest"] = {
 	},
 }

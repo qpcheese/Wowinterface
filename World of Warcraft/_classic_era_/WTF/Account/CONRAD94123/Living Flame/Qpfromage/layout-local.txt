@@ -20,6 +20,13 @@ X: 0
 Y: 20
 W: 1024
 H: 740
+Frame: WeakAurasOptions
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 141
+Y: -75
+W: 830
+H: 665
 Frame: Five Second Rule Statusbar
 FrameLevel: 1
 Anchor: CENTER

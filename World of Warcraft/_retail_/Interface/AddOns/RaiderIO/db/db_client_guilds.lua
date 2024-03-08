@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on Thu Mar 07 2024 23:41:49 GMT+0000 (Coordinated Universal Time)
+-- RaiderIO Client Data. Generated on Fri Mar 08 2024 01:48:25 GMT+0000 (Coordinated Universal Time)
 --
 local _, ns = ...
 ns.GUILD_BEST_DATA = {
@@ -1769,40 +1769,6 @@ ns.GUILD_BEST_DATA = {
     },
     ["weekly_best"] = {
       {
-        ["zone_id"] = 7109,
-        ["level"] = 13,
-        ["upgrades"] = 3,
-        ["fraction"] = 0.5797468852836372,
-        ["clear_time"] = "00:19:08.478",
-        ["party"] = {
-          {
-            ["name"] = "Оберонн",
-            ["role"] = "tank",
-            ["class_id"] = 2
-          },
-          {
-            ["name"] = "Teyra",
-            ["role"] = "healer",
-            ["class_id"] = 5
-          },
-          {
-            ["name"] = "Aylaila",
-            ["role"] = "dps",
-            ["class_id"] = 3
-          },
-          {
-            ["name"] = "Sattler",
-            ["role"] = "dps",
-            ["class_id"] = 4
-          },
-          {
-            ["name"] = "Xixia",
-            ["role"] = "dps",
-            ["class_id"] = 2
-          }
-        }
-      },
-      {
         ["zone_id"] = 9028,
         ["level"] = 14,
         ["upgrades"] = 3,
@@ -1935,6 +1901,40 @@ ns.GUILD_BEST_DATA = {
             ["name"] = "Varalas",
             ["role"] = "dps",
             ["class_id"] = 3
+          }
+        }
+      },
+      {
+        ["zone_id"] = 7673,
+        ["level"] = 14,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.7440165152784649,
+        ["clear_time"] = "00:22:19.973",
+        ["party"] = {
+          {
+            ["name"] = "Yngbada",
+            ["role"] = "tank",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Vallinadru",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Clàssic",
+            ["role"] = "dps",
+            ["class_id"] = 5
+          },
+          {
+            ["name"] = "Sunmose",
+            ["role"] = "dps",
+            ["class_id"] = 1
+          },
+          {
+            ["name"] = "Thargok",
+            ["role"] = "dps",
+            ["class_id"] = 7
           }
         }
       }
