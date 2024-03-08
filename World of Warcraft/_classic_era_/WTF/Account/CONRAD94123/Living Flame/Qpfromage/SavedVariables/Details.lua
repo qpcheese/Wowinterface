@@ -104,7 +104,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1709775062,
-							["damage_taken"] = 615.003277,
+							["damage_taken"] = 676.003277,
 							["start_time"] = 1709775056,
 							["delay"] = 0,
 							["last_dps"] = 0,
@@ -257,29 +257,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 5,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709775063,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1867",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Apprentice",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1867",
-							["serial"] = "Creature-0-5210-0-126-1867-000069179A",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1867-000069179A",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -308,10 +308,10 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					193382, -- [1]
+					194192, -- [1]
 					26194, -- [2]
 					{
-						84, -- [1]
+						87, -- [1]
 						[0] = 4129,
 						["alternatepower"] = 0,
 						[3] = 440,
@@ -409,6 +409,16 @@ _detalhes_database = {
 							-1, -- [10]
 						}, -- [6]
 						{
+							true, -- [1]
+							3, -- [2]
+							61, -- [3]
+							1709864374.516, -- [4]
+							737, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
 						}, -- [7]
 						{
 						}, -- [8]
@@ -460,17 +470,17 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 7,
+						["n"] = 8,
 					},
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
-					["Dalaran Apprentice"] = {
-						["Frostbolt"] = 1,
-					},
 					["Qpfromage"] = {
 						["Fireball"] = 3,
 						["Fire Blast"] = 1,
+					},
+					["Dalaran Apprentice"] = {
+						["Frostbolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
@@ -764,29 +774,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 7,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709775044,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1867",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Apprentice",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1867",
-							["serial"] = "Creature-0-5210-0-126-1867-000069181C",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1867-000069181C",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -1177,29 +1187,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 11,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709775020,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1867",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Apprentice",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1867",
-							["serial"] = "Creature-0-5210-0-126-1867-000069182C",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1867-000069182C",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -1591,16 +1601,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 7,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774980,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -1991,16 +2001,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 12,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774962,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -2389,29 +2399,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 10,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774922,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1914",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Mage",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1914",
-							["serial"] = "Creature-0-5210-0-126-1914-00006911F3",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1914-00006911F3",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -2842,16 +2852,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 17,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774905,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3252,16 +3262,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 21,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774887,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3842,7 +3852,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "5827-0233AB9A",
+							["classe"] = "MAGE",
 							["totalover"] = 0.0061,
 							["total_without_pet"] = 80.0061,
 							["total"] = 80.0061,
@@ -3898,12 +3908,12 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1709774819,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1709774819,
 							["totaldenied"] = 0.0061,
 							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -4067,14 +4077,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1914",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Mage",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1914",
-							["serial"] = "Creature-0-5210-0-126-1914-000069179F",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1914-000069179F",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -4488,16 +4498,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 10,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774787,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4954,16 +4964,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 13,
-							["buff_uptime_targets"] = {
-							},
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774748,
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -5152,6 +5162,34 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[412545] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Dalaran Mage"] = 42,
+										},
+										["n_total"] = 42,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 42,
+										["c_max"] = 0,
+										["id"] = 412545,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[145] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
@@ -5206,34 +5244,6 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[412545] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Dalaran Mage"] = 42,
-										},
-										["n_total"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = 412545,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -5410,29 +5420,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 11,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774733,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1914",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Mage",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1914",
-							["serial"] = "Creature-0-5210-0-126-1914-00006913C4",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1914-00006913C4",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -5850,29 +5860,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 10,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774702,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1914",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Mage",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1914",
-							["serial"] = "Creature-0-5210-0-126-1914-0000690EDD",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1914-0000690EDD",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -6276,16 +6286,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 12,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774686,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -6704,16 +6714,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 14,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774639,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -7171,16 +7181,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 15,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774620,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -7531,29 +7541,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 10,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774544,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1914",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Mage",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1914",
-							["serial"] = "Creature-0-5210-0-126-1914-0000691395",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1914-0000691395",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -7906,29 +7916,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 8,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774522,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1867",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Apprentice",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1867",
-							["serial"] = "Creature-0-5210-0-126-1867-000069108F",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1867-000069108F",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -8372,8 +8382,7 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 19,
 							["cc_done"] = 1.006148,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Dalaran Protector"] = 1,
@@ -8381,9 +8390,10 @@ _detalhes_database = {
 							["buff_uptime"] = 36,
 							["classe"] = "MAGE",
 							["last_event"] = 1709774503,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
-							["nome"] = "Qpfromage",
 							["serial"] = "Player-5827-0233AB9A",
 							["tipo"] = 4,
 						}, -- [1]
@@ -8815,16 +8825,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 11,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774467,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -9201,29 +9211,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 4,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774453,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1867",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Apprentice",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1867",
-							["serial"] = "Creature-0-5210-0-126-1867-000069135B",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-0-126-1867-000069135B",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -9614,16 +9624,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 7,
-							["buff_uptime_targets"] = {
-							},
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774408,
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -10024,16 +10034,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 13,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774390,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -10451,16 +10461,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 8,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709774376,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -10914,7 +10924,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "5827-0233AB9A",
+							["classe"] = "MAGE",
 							["totalover"] = 0.003454,
 							["total_without_pet"] = 154.003454,
 							["total"] = 154.003454,
@@ -10970,12 +10980,12 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1709773906,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1709773882,
 							["totaldenied"] = 0.003454,
 							["delay"] = 1709773882,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -11580,16 +11590,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 23,
-							["buff_uptime_targets"] = {
-							},
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709773839,
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -12205,29 +12215,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 15,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771937,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "2332",
 							["fight_component"] = true,
 							["nome"] = "Valdred Moray",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "2332",
-							["serial"] = "Creature-0-5208-0-14709-2332-0000690993",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5208-0-14709-2332-0000690993",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -12774,7 +12784,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "5827-0233AB9A",
+							["classe"] = "MAGE",
 							["totalover"] = 23.005369,
 							["total_without_pet"] = 34.005369,
 							["total"] = 34.005369,
@@ -12857,12 +12867,12 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1709771871,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1709771864,
 							["totaldenied"] = 0.005369,
 							["delay"] = 1709771864,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -13024,14 +13034,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "2053",
 							["fight_component"] = true,
 							["nome"] = "Haggard Refugee",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "2053",
-							["serial"] = "Creature-0-5208-0-14709-2053-00006908B8",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5208-0-14709-2053-00006908B8",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -13586,8 +13596,7 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 22,
 							["cc_done"] = 1.001847,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Sickly Refugee"] = 1,
@@ -13595,9 +13604,10 @@ _detalhes_database = {
 							["buff_uptime"] = 22,
 							["classe"] = "MAGE",
 							["last_event"] = 1709771792,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
-							["nome"] = "Qpfromage",
 							["serial"] = "Player-5827-0233AB9A",
 							["tipo"] = 4,
 						}, -- [1]
@@ -13948,7 +13958,8 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 8,
 							["cc_done"] = 1.002024,
-							["nome"] = "Qpfromage",
+							["debuff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Dalaran Watcher"] = 1,
@@ -13956,9 +13967,8 @@ _detalhes_database = {
 							["buff_uptime"] = 40,
 							["aID"] = "5827-0233AB9A",
 							["last_event"] = 1709771658,
+							["nome"] = "Qpfromage",
 							["buff_uptime_targets"] = {
-							},
-							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5827-0233AB9A",
 							["tipo"] = 4,
@@ -13967,14 +13977,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1888",
 							["fight_component"] = true,
 							["nome"] = "Dalaran Watcher",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1888",
-							["serial"] = "Creature-0-5208-0-14709-1888-0000690783",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5208-0-14709-1888-0000690783",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -14609,7 +14619,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "5827-0233AB9A",
+							["classe"] = "MAGE",
 							["totalover"] = 0.007949,
 							["total_without_pet"] = 90.007949,
 							["total"] = 90.007949,
@@ -14665,12 +14675,12 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1709771596,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1709771596,
 							["totaldenied"] = 0.007949,
 							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -14779,8 +14789,7 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 27,
 							["cc_done"] = 4.006062,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Ravenclaw Drudger"] = 4,
@@ -14788,9 +14797,10 @@ _detalhes_database = {
 							["buff_uptime"] = 48,
 							["classe"] = "MAGE",
 							["last_event"] = 1709771603,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
-							["nome"] = "Kakosik",
 							["serial"] = "Player-5827-023408C3",
 							["tipo"] = 4,
 						}, -- [1]
@@ -14931,14 +14941,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1974",
 							["fight_component"] = true,
 							["nome"] = "Ravenclaw Drudger",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1974",
-							["serial"] = "Creature-0-5208-0-14709-1974-0000690A10",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5208-0-14709-1974-0000690A10",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -15524,16 +15534,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 17,
-							["buff_uptime_targets"] = {
-							},
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771562,
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -15596,29 +15606,29 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 4,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771562,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "1973",
 							["fight_component"] = true,
 							["nome"] = "Ravenclaw Guardian",
 							["monster"] = true,
-							["tipo"] = 4,
-							["aID"] = "1973",
-							["serial"] = "Creature-0-5208-0-14709-1973-0000690AC7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5208-0-14709-1973-0000690AC7",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -16219,8 +16229,7 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 44,
 							["cc_done"] = 1.008735,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Ravenclaw Guardian"] = 1,
@@ -16228,9 +16237,10 @@ _detalhes_database = {
 							["buff_uptime"] = 40,
 							["classe"] = "MAGE",
 							["last_event"] = 1709771548,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
-							["nome"] = "Qpfromage",
 							["serial"] = "Player-5827-0233AB9A",
 							["tipo"] = 4,
 						}, -- [2]
@@ -16757,16 +16767,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 5,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771480,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -16818,16 +16828,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 0,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771480,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -17404,7 +17414,8 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 14,
 							["cc_done"] = 1.006306,
-							["nome"] = "Qpfromage",
+							["debuff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Ravenclaw Drudger"] = 1,
@@ -17412,9 +17423,8 @@ _detalhes_database = {
 							["buff_uptime"] = 20,
 							["classe"] = "MAGE",
 							["last_event"] = 1709771452,
+							["nome"] = "Qpfromage",
 							["buff_uptime_targets"] = {
-							},
-							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5827-0233AB9A",
 							["tipo"] = 4,
@@ -17480,16 +17490,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 2,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771452,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -17952,16 +17962,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 1,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771437,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -18013,16 +18023,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 2,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771437,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -18513,16 +18523,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 4,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771422,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -18574,16 +18584,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 4,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771422,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -19048,16 +19058,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 3,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771411,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -19110,16 +19120,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 0,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771411,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -19574,16 +19584,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 4,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771379,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -19646,16 +19656,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 9,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771379,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -20345,16 +20355,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 20,
-							["buff_uptime_targets"] = {
-							},
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Qpfromage",
 							["grupo"] = true,
-							["aID"] = "5827-0233AB9A",
 							["tipo"] = 4,
 							["last_event"] = 1709771363,
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-0233AB9A",
-							["nome"] = "Qpfromage",
+							["aID"] = "5827-0233AB9A",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -20439,16 +20449,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 13,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Kakosik",
 							["grupo"] = true,
-							["aID"] = "5827-023408C3",
 							["tipo"] = 4,
 							["last_event"] = 1709771363,
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-5827-023408C3",
-							["nome"] = "Kakosik",
+							["aID"] = "5827-023408C3",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -20610,8 +20620,9 @@ _detalhes_database = {
 		["show_options"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["height"] = 18,
 		["framme_locked"] = false,
+		["cooldowns"] = {
+		},
 		["own_frame"] = {
 			["defensive-raid"] = false,
 			["ofensive"] = false,
@@ -20619,8 +20630,7 @@ _detalhes_database = {
 			["utility"] = false,
 			["defensive-personal"] = false,
 		},
-		["cooldowns"] = {
-		},
+		["height"] = 18,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
@@ -20742,20 +20752,23 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
+	["on_death_menu"] = false,
+	["mythic_plus_log"] = {
+	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1710693268,
+		["last_version"] = 16,
+	},
+	["cached_roles"] = {
+	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["mythic_plus_log"] = {
-	},
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
-	["cached_roles"] = {
-	},
-	["ignore_nicktag"] = false,
 	["combat_counter"] = 488,
-	["on_death_menu"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
@@ -20791,7 +20804,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				300, -- [1]
+				500.0000305175781, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -20812,22 +20828,6 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -4.57763671875e-05,
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.2, -- [4]
-			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["use_spark"] = true,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -20839,16 +20839,29 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.2, -- [4]
+			},
+			["author"] = "Terciob",
+			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["y"] = -4.57763671875e-05,
+			["font_size"] = 10,
 			["x"] = 0.000152587890625,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["font_size"] = 10,
-			["author"] = "Terciob",
-			["main_frame_locked"] = false,
-			["main_frame_size"] = {
-				300, -- [1]
-				500.0000305175781, -- [2]
+			["use_spark"] = true,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
 			},
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 	},
 	["last_instance_time"] = 1709744746,
@@ -20857,7 +20870,7 @@ _detalhes_database = {
 	},
 	["last_day"] = "08",
 	["character_data"] = {
-		["logons"] = 33,
+		["logons"] = 35,
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -20888,14 +20901,14 @@ _detalhes_database = {
 						["Ragefire Trogg"] = true,
 						["Ragefire Shaman"] = true,
 						["Voidwalker Minion <Searing Blade Warlock>"] = true,
-						["Searing Blade Warlock"] = true,
+						["Oggleflint"] = true,
 						["Jergosh the Invoker"] = true,
-						["Taragaman the Hungerer"] = true,
+						["Searing Blade Warlock"] = true,
 						["Searing Blade Cultist"] = true,
 						["Voidwalker Minion"] = true,
 						["Bazzalan"] = true,
 						["Searing Blade Enforcer"] = true,
-						["Oggleflint"] = true,
+						["Taragaman the Hungerer"] = true,
 						["Molten Elemental"] = true,
 					},
 					["targets"] = {
@@ -20903,14 +20916,14 @@ _detalhes_database = {
 						["Ragefire Trogg"] = 2882,
 						["Ragefire Shaman"] = 1553,
 						["Voidwalker Minion <Searing Blade Warlock>"] = 35,
-						["Searing Blade Warlock"] = 1433,
+						["Oggleflint"] = 465,
 						["Jergosh the Invoker"] = 384,
-						["Taragaman the Hungerer"] = 406,
+						["Searing Blade Warlock"] = 1433,
 						["Searing Blade Cultist"] = 2771,
 						["Voidwalker Minion"] = 232,
 						["Bazzalan"] = 196,
 						["Searing Blade Enforcer"] = 2674,
-						["Oggleflint"] = 465,
+						["Taragaman the Hungerer"] = 406,
 						["Molten Elemental"] = 1918,
 					},
 					["friendlyfire_total"] = 0,
@@ -20943,9 +20956,9 @@ _detalhes_database = {
 									["Oggleflint"] = 132,
 								},
 								["n_total"] = 4451,
-								["a_amt"] = 0,
+								["g_dmg"] = 1374,
 								["n_min"] = 0,
-								["MISS"] = 18,
+								["a_amt"] = 0,
 								["counter"] = 348,
 								["DODGE"] = 19,
 								["r_amt"] = 0,
@@ -20963,7 +20976,7 @@ _detalhes_database = {
 								["c_total"] = 705,
 								["n_amt"] = 184,
 								["total"] = 6530,
-								["g_dmg"] = 1374,
+								["MISS"] = 18,
 							}, -- [1]
 							[425339] = {
 								["c_amt"] = 8,
@@ -20977,13 +20990,13 @@ _detalhes_database = {
 									["Voidwalker Minion <Searing Blade Warlock>"] = 35,
 									["Searing Blade Enforcer"] = 851,
 									["Jergosh the Invoker"] = 76,
-									["Searing Blade Warlock"] = 68,
+									["Taragaman the Hungerer"] = 40,
 									["Searing Blade Cultist"] = 877,
 									["Voidwalker Minion"] = 76,
 									["Bazzalan"] = 42,
-									["Taragaman the Hungerer"] = 40,
-									["Molten Elemental"] = 116,
 									["Oggleflint"] = 35,
+									["Molten Elemental"] = 116,
+									["Searing Blade Warlock"] = 68,
 								},
 								["n_total"] = 3067,
 								["n_min"] = 0,
@@ -21283,28 +21296,28 @@ _detalhes_database = {
 					["total_extra"] = 0,
 					["serial"] = "Player-5827-0235169A",
 					["damage_from"] = {
-						["Voidwalker Minion <Searing Blade Warlock>"] = true,
+						["Ragefire Trogg"] = true,
 						["Molten Elemental"] = true,
 						["Searing Blade Cultist"] = true,
-						["Searing Blade Enforcer"] = true,
+						["Voidwalker Minion <Searing Blade Warlock>"] = true,
 						["Voidwalker Minion"] = true,
 						["Ragefire Shaman"] = true,
 						["Searing Blade Warlock"] = true,
-						["Ragefire Trogg"] = true,
+						["Searing Blade Enforcer"] = true,
 					},
 					["targets"] = {
 						["Earthborer"] = 2811,
 						["Ragefire Trogg"] = 4032,
 						["Ragefire Shaman"] = 1403,
 						["Voidwalker Minion <Searing Blade Warlock>"] = 60,
-						["Searing Blade Warlock"] = 1026,
+						["Oggleflint"] = 403,
 						["Jergosh the Invoker"] = 366,
-						["Taragaman the Hungerer"] = 562,
+						["Searing Blade Warlock"] = 1026,
 						["Searing Blade Cultist"] = 2555,
 						["Voidwalker Minion"] = 235,
 						["Bazzalan"] = 263,
 						["Searing Blade Enforcer"] = 2836,
-						["Oggleflint"] = 403,
+						["Taragaman the Hungerer"] = 562,
 						["Molten Elemental"] = 1826,
 					},
 					["friendlyfire_total"] = 0,
@@ -21340,7 +21353,7 @@ _detalhes_database = {
 								["MISS"] = 9,
 								["counter"] = 163,
 								["a_amt"] = 0,
-								["total"] = 4796,
+								["r_amt"] = 0,
 								["c_max"] = 75,
 								["c_amt"] = 11,
 								["id"] = 1,
@@ -21354,7 +21367,7 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 699,
 								["n_amt"] = 109,
-								["r_amt"] = 0,
+								["total"] = 4796,
 								["n_max"] = 45,
 							}, -- [1]
 							[408441] = {
@@ -21394,13 +21407,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["b_dmg"] = 0,
 								["targets"] = {
+									["Oggleflint"] = 264,
 									["Molten Elemental"] = 0,
-									["Taragaman the Hungerer"] = 314,
 									["Ragefire Trogg"] = 501,
 									["Searing Blade Enforcer"] = 72,
 									["Jergosh the Invoker"] = 75,
 									["Ragefire Shaman"] = 233,
-									["Oggleflint"] = 264,
+									["Taragaman the Hungerer"] = 314,
 									["Earthborer"] = 627,
 								},
 								["n_total"] = 1858,
@@ -21644,14 +21657,14 @@ _detalhes_database = {
 						["Ragefire Trogg"] = 11052,
 						["Ragefire Shaman"] = 3020,
 						["Voidwalker Minion <Searing Blade Warlock>"] = 587,
-						["Searing Blade Warlock"] = 3117,
+						["Oggleflint"] = 406,
 						["Jergosh the Invoker"] = 525,
-						["Taragaman the Hungerer"] = 913,
+						["Searing Blade Warlock"] = 3117,
 						["Searing Blade Cultist"] = 11845,
 						["Voidwalker Minion"] = 442,
 						["Bazzalan"] = 950,
 						["Searing Blade Enforcer"] = 8527,
-						["Oggleflint"] = 406,
+						["Taragaman the Hungerer"] = 913,
 						["Molten Elemental"] = 2920,
 					},
 					["friendlyfire_total"] = 0,
@@ -21870,14 +21883,14 @@ _detalhes_database = {
 									["Earthborer"] = 855,
 									["Voidwalker Minion <Searing Blade Warlock>"] = 225,
 									["Ragefire Shaman"] = 886,
-									["Taragaman the Hungerer"] = 393,
+									["Oggleflint"] = 66,
 									["Searing Blade Enforcer"] = 1297,
 									["Jergosh the Invoker"] = 263,
-									["Searing Blade Warlock"] = 723,
+									["Taragaman the Hungerer"] = 393,
 									["Searing Blade Cultist"] = 2511,
 									["Voidwalker Minion"] = 223,
 									["Bazzalan"] = 172,
-									["Oggleflint"] = 66,
+									["Searing Blade Warlock"] = 723,
 									["Molten Elemental"] = 197,
 									["Ragefire Trogg"] = 4238,
 								},
@@ -21979,14 +21992,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["b_dmg"] = 0,
 								["targets"] = {
+									["Oggleflint"] = 79,
 									["Molten Elemental"] = 256,
-									["Taragaman the Hungerer"] = 78,
 									["Searing Blade Cultist"] = 248,
 									["Searing Blade Enforcer"] = 79,
 									["Bazzalan"] = 133,
 									["Ragefire Shaman"] = 76,
 									["Searing Blade Warlock"] = 160,
-									["Oggleflint"] = 79,
+									["Taragaman the Hungerer"] = 78,
 								},
 								["n_total"] = 976,
 								["n_min"] = 0,
@@ -22112,25 +22125,25 @@ _detalhes_database = {
 						["Rot Hide Savage"] = true,
 						["Vile Fin Lakestalker"] = true,
 						["Imp Minion"] = true,
-						["Thule Ravenclaw"] = true,
+						["Ravenclaw Guardian"] = true,
 						["Searing Blade Enforcer"] = true,
+						["Thule Ravenclaw"] = true,
 						["Voidwalker Minion"] = true,
-						["Rift Spawn"] = true,
 						["Dalaran Wizard"] = true,
 						["Ravenclaw Drudger"] = true,
 						["Raging Rot Hide"] = true,
 						["Molten Elemental"] = true,
 						["Haggard Refugee"] = true,
 						["Ragefire Trogg"] = true,
-						["Valdred Moray"] = true,
-						["Ragefire Shaman"] = true,
 						["Rot Hide Plague Weaver"] = true,
+						["Ragefire Shaman"] = true,
+						["Oggleflint"] = true,
 						["Sickly Refugee"] = true,
 						["Environment (Falling)"] = true,
-						["Oggleflint"] = true,
+						["Valdred Moray"] = true,
 						["Searing Blade Cultist"] = true,
 						["Dalaran Protector"] = true,
-						["Ravenclaw Guardian"] = true,
+						["Rift Spawn"] = true,
 						["Dalaran Apprentice"] = true,
 						["Dalaran Mage"] = true,
 						["Dalaran Watcher"] = true,
@@ -22154,13 +22167,13 @@ _detalhes_database = {
 						["Oggleflint"] = 405,
 						["Raging Rot Hide"] = 6643,
 						["Ravenclaw Drudger"] = 2643,
+						["Ragefire Trogg"] = 5070,
 						["Voidwalker Minion <Searing Blade Warlock>"] = 180,
-						["Haggard Refugee"] = 566,
 						["Rot Hide Plague Weaver"] = 4579,
 						["Ragefire Shaman"] = 1943,
 						["Vile Fin Shredder"] = 22,
 						["Healing Ward <Vile Fin Lakestalker>"] = 18,
-						["Ragefire Trogg"] = 5070,
+						["Haggard Refugee"] = 566,
 						["Taragaman the Hungerer"] = 297,
 						["Searing Blade Cultist"] = 4323,
 						["Sickly Refugee"] = 496,
@@ -22392,8 +22405,8 @@ _detalhes_database = {
 									["Raging Rot Hide"] = 1614,
 									["Molten Elemental"] = 503,
 									["Rift Spawn"] = 453,
+									["Voidwalker Minion <Searing Blade Warlock>"] = 119,
 									["Ragefire Trogg"] = 2643,
-									["Haggard Refugee"] = 110,
 									["Ragefire Shaman"] = 896,
 									["Ravenclaw Guardian"] = 105,
 									["Voidwalker Minion"] = 209,
@@ -22401,7 +22414,7 @@ _detalhes_database = {
 									["Rot Hide Plague Weaver"] = 423,
 									["Searing Blade Cultist"] = 2156,
 									["Oggleflint"] = 104,
-									["Voidwalker Minion <Searing Blade Warlock>"] = 119,
+									["Haggard Refugee"] = 110,
 									["Dalaran Apprentice"] = 39,
 									["Dalaran Mage"] = 77,
 									["Dalaran Watcher"] = 45,
@@ -22483,9 +22496,9 @@ _detalhes_database = {
 									["Rift Spawn"] = 212,
 									["Ragefire Shaman"] = 473,
 									["Searing Blade Enforcer"] = 690,
-									["Valdred Moray"] = 240,
 									["Rot Hide Plague Weaver"] = 561,
 									["Oggleflint"] = 145,
+									["Valdred Moray"] = 240,
 									["Searing Blade Cultist"] = 1355,
 									["Voidwalker Minion <Searing Blade Warlock>"] = 61,
 									["Bazzalan"] = 121,
@@ -22639,12 +22652,12 @@ _detalhes_database = {
 									["Haggard Refugee"] = 63,
 									["Ragefire Trogg"] = 63,
 									["Ragefire Shaman"] = 190,
-									["Oggleflint"] = 66,
-									["Taragaman the Hungerer"] = 93,
-									["Dalaran Protector"] = 1018,
-									["Rot Hide Plague Weaver"] = 374,
-									["Searing Blade Cultist"] = 254,
 									["Valdred Moray"] = 138,
+									["Rot Hide Plague Weaver"] = 374,
+									["Dalaran Protector"] = 1018,
+									["Taragaman the Hungerer"] = 93,
+									["Searing Blade Cultist"] = 254,
+									["Oggleflint"] = 66,
 									["Bazzalan"] = 102,
 									["Dalaran Apprentice"] = 279,
 									["Dalaran Mage"] = 207,
@@ -22714,13 +22727,13 @@ _detalhes_database = {
 									["Ravenclaw Drudger"] = 711,
 									["Sickly Refugee"] = 386,
 									["Haggard Refugee"] = 245,
-									["Ravenclaw Guardian"] = 1212,
+									["Searing Blade Cultist"] = 75,
 									["Valdred Moray"] = 67,
 									["Dalaran Protector"] = 4094,
 									["Dalaran Wizard"] = 134,
-									["Searing Blade Cultist"] = 75,
-									["Taragaman the Hungerer"] = 204,
 									["Rift Spawn"] = 268,
+									["Taragaman the Hungerer"] = 204,
+									["Ravenclaw Guardian"] = 1212,
 									["Searing Blade Enforcer"] = 133,
 									["Jergosh the Invoker"] = 294,
 									["Dalaran Apprentice"] = 1877,
@@ -22867,16 +22880,16 @@ _detalhes_database = {
 					["totalabsorbed"] = 143.038515,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11318",
 					["total_without_pet"] = 5332.038515000001,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 5332.038515000001,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11318-000168A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Fire Nova Totem <Seregaburst>"] = true,
 						["Qpfromage"] = true,
@@ -22897,7 +22910,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1709744842,
 					["nome"] = "Ragefire Trogg",
-					["aID"] = "11318",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23074,16 +23087,16 @@ _detalhes_database = {
 					["totalabsorbed"] = 56.028803,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11319",
 					["total_without_pet"] = 1265.028803,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 1265.028803,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11319-0003E8A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Fire Nova Totem <Seregaburst>"] = true,
 						["Qpfromage"] = true,
@@ -23103,7 +23116,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1709744899,
 					["nome"] = "Ragefire Shaman",
-					["aID"] = "11319",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23210,16 +23223,16 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11517",
 					["total_without_pet"] = 806.0121439999999,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 806.0121439999999,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11517-000068A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Fire Nova Totem <Seregaburst>"] = true,
 						["Qpfromage"] = true,
@@ -23238,7 +23251,7 @@ _detalhes_database = {
 					["totalabsorbed"] = 39.012144,
 					["end_time"] = 1709745120,
 					["nome"] = "Oggleflint",
-					["aID"] = "11517",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23654,16 +23667,16 @@ _detalhes_database = {
 					["totalabsorbed"] = 249.05212,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11322",
 					["total_without_pet"] = 5181.05212,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 5181.05212,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11322-0001E8A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Fire Nova Totem <Seregaburst>"] = true,
 						["Qpfromage"] = true,
@@ -23686,7 +23699,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1709745400,
 					["nome"] = "Searing Blade Cultist",
-					["aID"] = "11322",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23774,16 +23787,16 @@ _detalhes_database = {
 					["pets"] = {
 						"Voidwalker Minion <Searing Blade Warlock>", -- [1]
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11324",
 					["total_without_pet"] = 1047.035805,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 1376.035805,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11324-000068A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Fire Nova Totem <Seregaburst>"] = true,
 						["Qpfromage"] = true,
@@ -23803,7 +23816,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1709745451,
 					["nome"] = "Searing Blade Warlock",
-					["aID"] = "11324",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23989,16 +24002,16 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11520",
 					["total_without_pet"] = 324.0086220000001,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 324.0086220000001,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11520-000068A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Searing Totem <Seregaburst>"] = true,
 						["Uwuforwater"] = true,
@@ -24015,7 +24028,7 @@ _detalhes_database = {
 					["totalabsorbed"] = 79.008622,
 					["end_time"] = 1709745510,
 					["nome"] = "Taragaman the Hungerer",
-					["aID"] = "11520",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24239,16 +24252,16 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11518",
 					["total_without_pet"] = 243.007479,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 243.007479,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11518-000068A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Fire Nova Totem <Seregaburst>"] = true,
 						["Qpfromage"] = true,
@@ -24265,7 +24278,7 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.007479,
 					["end_time"] = 1709745728,
 					["nome"] = "Jergosh the Invoker",
-					["aID"] = "11518",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24435,16 +24448,16 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11519",
 					["total_without_pet"] = 389.011845,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 389.011845,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11519-000068A183",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Torrin"] = true,
 						["Qpfromage"] = true,
@@ -24461,7 +24474,7 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.011845,
 					["end_time"] = 1709745946,
 					["nome"] = "Bazzalan",
-					["aID"] = "11519",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -25602,19 +25615,19 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-0-7311-1943-0000E8B788",
 					["on_hold"] = false,
 					["damage_from"] = {
+						["Potatolover"] = true,
 						["Qpfromage"] = true,
-						["Zeploz <Waraokebozo>"] = true,
 						["Emplight"] = true,
 						["Waraokebozo"] = true,
-						["Potatolover"] = true,
+						["Zeploz <Waraokebozo>"] = true,
 						["Holymaniac"] = true,
 					},
 					["targets"] = {
+						["Qpfromage"] = 3004,
 						["Potatolover"] = 574,
-						["Zeploz <Waraokebozo>"] = 132,
 						["Emplight"] = 241,
 						["Waraokebozo"] = 191,
-						["Qpfromage"] = 3004,
+						["Zeploz <Waraokebozo>"] = 132,
 						["Holymaniac"] = 662,
 					},
 					["friendlyfire_total"] = 0,
@@ -25633,12 +25646,12 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["b_dmg"] = 0,
 								["targets"] = {
+									["Qpfromage"] = 3004,
 									["Potatolover"] = 574,
-									["Zeploz <Waraokebozo>"] = 132,
 									["Emplight"] = 241,
 									["Zeploz"] = 0,
 									["Waraokebozo"] = 191,
-									["Qpfromage"] = 3004,
+									["Zeploz <Waraokebozo>"] = 132,
 									["Holymaniac"] = 662,
 								},
 								["n_total"] = 4202,
@@ -28378,7 +28391,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "5827-02346F49",
 					["totalover"] = 308.138751,
 					["total_without_pet"] = 5978.138751,
 					["total"] = 5978.138751,
@@ -28540,12 +28553,12 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1709751051,
-					["aID"] = "5827-02346F49",
+					["classe"] = "UNGROUPPLAYER",
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.138751,
 					["delay"] = 0,
-					["classe"] = "UNGROUPPLAYER",
+					["heal_enemy_amt"] = 0,
 				}, -- [6]
 				{
 					["flag_original"] = 1298,
@@ -28555,7 +28568,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "5827-02347133",
 					["totalover"] = 0.070557,
 					["total_without_pet"] = 0.070557,
 					["total"] = 0.070557,
@@ -28584,12 +28597,12 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1709751342,
-					["aID"] = "5827-02347133",
+					["classe"] = "MAGE",
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.070557,
 					["delay"] = 0,
-					["classe"] = "MAGE",
+					["heal_enemy_amt"] = 0,
 				}, -- [7]
 				{
 					["flag_original"] = 1352,
@@ -28598,7 +28611,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "5827-01FCD4A3",
+					["classe"] = "UNGROUPPLAYER",
 					["totalover"] = 0.012953,
 					["total_without_pet"] = 0.012953,
 					["total"] = 0.012953,
@@ -28626,13 +28639,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 3,
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["heal_enemy_amt"] = 66,
 					["start_time"] = 1709752063,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.012953,
 					["delay"] = 0,
-					["heal_enemy_amt"] = 66,
+					["aID"] = "5827-01FCD4A3",
 				}, -- [8]
 				{
 					["flag_original"] = 1298,
@@ -28642,7 +28655,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "5827-0234FC29",
 					["totalover"] = 0.024465,
 					["total_without_pet"] = 0.024465,
 					["total"] = 0.024465,
@@ -28671,12 +28684,12 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1709752713,
-					["aID"] = "5827-0234FC29",
+					["classe"] = "WARLOCK",
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.024465,
 					["delay"] = 0,
-					["classe"] = "WARLOCK",
+					["heal_enemy_amt"] = 0,
 				}, -- [9]
 			},
 		}, -- [2]
@@ -28786,7 +28799,7 @@ _detalhes_database = {
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.0406,
+					["resource"] = 0.062494,
 					["pets"] = {
 					},
 					["classe"] = "MAGE",
@@ -28945,7 +28958,7 @@ _detalhes_database = {
 						[0] = 8,
 					},
 					["debuff_uptime"] = 281,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
 					["interrupt_targets"] = {
 						["Ragefire Shaman"] = 1,
@@ -28954,15 +28967,15 @@ _detalhes_database = {
 					["serial"] = "Player-5827-0235169A",
 					["buff_uptime"] = 1268,
 					["boss_fight_component"] = true,
-					["nome"] = "Seregaburst",
+					["interrupt"] = 8.04044,
 					["grupo"] = true,
 					["last_event"] = 0,
 					["aID"] = "5827-0235169A",
 					["tipo"] = 4,
 					["fight_component"] = true,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
-					["interrupt"] = 8.04044,
+					["nome"] = "Seregaburst",
 				}, -- [1]
 				{
 					["flag_original"] = 1047,
@@ -29058,13 +29071,13 @@ _detalhes_database = {
 					["boss_fight_component"] = true,
 					["grupo"] = true,
 					["aID"] = "5827-02312E25",
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
-					["serial"] = "Player-5827-02312E25",
+					["tipo"] = 4,
 					["debuff_uptime_targets"] = {
 					},
+					["serial"] = "Player-5827-02312E25",
+					["last_event"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 1047,
@@ -29185,7 +29198,7 @@ _detalhes_database = {
 						[0] = 7,
 					},
 					["debuff_uptime"] = 468,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 					["interrupt_targets"] = {
 						["Ragefire Shaman"] = 2,
@@ -29193,15 +29206,15 @@ _detalhes_database = {
 					},
 					["serial"] = "Player-5827-0234E7FC",
 					["buff_uptime"] = 2291,
-					["nome"] = "Torrin",
+					["boss_fight_component"] = true,
 					["interrupt"] = 7.024159000000001,
 					["grupo"] = true,
 					["last_event"] = 0,
 					["aID"] = "5827-0234E7FC",
 					["tipo"] = 4,
 					["fight_component"] = true,
-					["boss_fight_component"] = true,
-					["buff_uptime_targets"] = {
+					["nome"] = "Torrin",
+					["debuff_uptime_targets"] = {
 					},
 				}, -- [3]
 				{
@@ -29601,7 +29614,7 @@ _detalhes_database = {
 					["debuff_uptime_targets"] = {
 					},
 					["cc_done_targets"] = {
-						["Moss Stalker"] = 0,
+						["Sickly Refugee"] = 1,
 						["Rot Hide Savage"] = 13,
 						["Krethis Shadowspinner"] = 0,
 						["Vile Fin Lakestalker"] = 1,
@@ -29612,13 +29625,13 @@ _detalhes_database = {
 						["Ravenclaw Drudger"] = 4,
 						["Ragefire Trogg"] = 4,
 						["Ragefire Shaman"] = 1,
-						["Rot Hide Brute"] = 11,
+						["Moss Stalker"] = 0,
 						["Dalaran Protector"] = 2,
 						["Rot Hide Plague Weaver"] = 5,
 						["Searing Blade Cultist"] = 1,
 						["Rift Spawn"] = 3,
 						["Haggard Refugee"] = 1,
-						["Sickly Refugee"] = 1,
+						["Rot Hide Brute"] = 11,
 						["Dalaran Mage"] = 1,
 						["Dalaran Watcher"] = 2,
 					},
@@ -29629,7 +29642,7 @@ _detalhes_database = {
 							[122] = {
 								["id"] = 122,
 								["targets"] = {
-									["Moss Stalker"] = 0,
+									["Sickly Refugee"] = 1,
 									["Rot Hide Savage"] = 13,
 									["Krethis Shadowspinner"] = 0,
 									["Vile Fin Lakestalker"] = 1,
@@ -29640,13 +29653,13 @@ _detalhes_database = {
 									["Ravenclaw Drudger"] = 4,
 									["Ragefire Trogg"] = 4,
 									["Ragefire Shaman"] = 1,
-									["Rot Hide Brute"] = 11,
+									["Moss Stalker"] = 0,
 									["Dalaran Protector"] = 2,
 									["Rot Hide Plague Weaver"] = 5,
 									["Searing Blade Cultist"] = 1,
 									["Rift Spawn"] = 3,
 									["Haggard Refugee"] = 1,
-									["Sickly Refugee"] = 1,
+									["Rot Hide Brute"] = 11,
 									["Dalaran Mage"] = 1,
 									["Dalaran Watcher"] = 2,
 								},
@@ -29670,14 +29683,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11320",
 					["monster"] = true,
 					["nome"] = "Earthborer",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5208-389-15057-11320-0000E8A183",
-					["aID"] = "11320",
+					["classe"] = "UNKNOW",
 				}, -- [6]
 				{
 					["flag_original"] = 8466,
@@ -29723,27 +29736,27 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "11517",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Oggleflint",
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11517-000068A183",
-					["classe"] = "UNKNOW",
+					["aID"] = "11517",
 				}, -- [10]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "11323",
 					["monster"] = true,
 					["nome"] = "Searing Blade Enforcer",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5208-389-15057-11323-0003E8A184",
-					["aID"] = "11323",
+					["classe"] = "UNKNOW",
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
@@ -29842,8 +29855,8 @@ _detalhes_database = {
 					["ownerName"] = "Seregaburst",
 					["nome"] = "Searing Totem <Seregaburst>",
 					["boss_fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-2523-000068A558",
 					["classe"] = "PET",
 				}, -- [15]
@@ -29851,14 +29864,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "11520",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Taragaman the Hungerer",
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11520-000068A183",
-					["classe"] = "UNKNOW",
+					["aID"] = "11520",
 				}, -- [16]
 				{
 					["flag_original"] = 4680,
@@ -29895,14 +29908,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "11518",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Jergosh the Invoker",
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11518-000068A183",
-					["classe"] = "UNKNOW",
+					["aID"] = "11518",
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
@@ -29919,11 +29932,8 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 4,
 					["spellschool"] = 4,
-					["nome"] = "Immolate",
-					["aID"] = "11518",
 					["boss_fight_component"] = true,
-					["last_event"] = 0,
-					["damage_twin"] = "Jergosh the Invoker",
+					["aID"] = "11518",
 					["debuff_uptime_targets"] = {
 						["Torrin"] = {
 							["uptime"] = 0,
@@ -29947,6 +29957,9 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
+					["last_event"] = 0,
+					["damage_twin"] = "Jergosh the Invoker",
+					["nome"] = "Immolate",
 					["serial"] = "Creature-0-5208-389-15057-11518-000068A183",
 					["tipo"] = 4,
 				}, -- [19]
@@ -29965,8 +29978,6 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 0,
 					["spellschool"] = 32,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
 					["debuff_uptime_targets"] = {
 						["Torrin"] = {
 							["uptime"] = 0,
@@ -29983,9 +29994,11 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
+					["classe"] = "UNKNOW",
+					["nome"] = "Curse of Weakness",
 					["tipo"] = 4,
 					["damage_twin"] = "Jergosh the Invoker",
-					["nome"] = "Curse of Weakness",
+					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-5208-389-15057-11518-000068A183",
 					["last_event"] = 0,
 				}, -- [20]
@@ -30005,14 +30018,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "11519",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Bazzalan",
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5208-389-15057-11519-000068A183",
-					["classe"] = "UNKNOW",
+					["aID"] = "11519",
 				}, -- [22]
 				{
 					["flag_original"] = 68168,
@@ -30029,6 +30042,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 0,
 					["spellschool"] = 8,
+					["nome"] = "Poison",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["last_event"] = 0,
+					["damage_twin"] = "Bazzalan",
 					["debuff_uptime_targets"] = {
 						["Uwuforwater"] = {
 							["uptime"] = 0,
@@ -30038,11 +30056,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Poison",
-					["last_event"] = 0,
-					["damage_twin"] = "Bazzalan",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-5208-389-15057-11519-000068A183",
 					["tipo"] = 4,
 				}, -- [23]
@@ -30050,40 +30063,40 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "12433",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Krethis Shadowspinner",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5210-0-126-12433-00006894F8",
 					["last_event"] = 0,
+					["aID"] = "12433",
+					["serial"] = "Creature-0-5210-0-126-12433-00006894F8",
+					["tipo"] = 4,
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "1909",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Vile Fin Lakestalker",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5251-0-7311-1909-0000689AD9",
-					["classe"] = "UNKNOW",
+					["aID"] = "1909",
 				}, -- [25]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "1939",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Rot Hide Brute",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5251-0-7311-1939-000168B606",
-					["classe"] = "UNKNOW",
+					["aID"] = "1939",
 				}, -- [26]
 				{
 					["flag_original"] = 1298,
@@ -30221,14 +30234,14 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "1940",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Rot Hide Plague Weaver",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5251-0-7311-1940-000068B6CF",
-					["classe"] = "UNKNOW",
+					["aID"] = "1940",
 				}, -- [28]
 				{
 					["flag_original"] = 1298,
@@ -30354,41 +30367,41 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["tipo"] = 4,
-					["nome"] = "Holymaniac",
-					["grupo"] = true,
 					["debuff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["buff_uptime_targets"] = {
 					},
 					["last_event"] = 0,
 					["classe"] = "PRIEST",
 					["serial"] = "Player-5827-02346F49",
-					["buff_uptime_targets"] = {
-					},
+					["nome"] = "Holymaniac",
 				}, -- [29]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "1942",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Rot Hide Savage",
 					["monster"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5251-0-7311-1942-000068B7B4",
 					["tipo"] = 4,
+					["aID"] = "1942",
+					["serial"] = "Creature-0-5251-0-7311-1942-000068B7B4",
+					["last_event"] = 0,
 				}, -- [30]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "1943",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Raging Rot Hide",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5251-0-7311-1943-0000E8B788",
-					["classe"] = "UNKNOW",
+					["aID"] = "1943",
 				}, -- [31]
 				{
 					["flag_original"] = 4680,
@@ -30406,14 +30419,14 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "1947",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Thule Ravenclaw",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5251-0-7311-1947-000068B788",
-					["classe"] = "UNKNOW",
+					["aID"] = "1947",
 				}, -- [33]
 				{
 					["flag_original"] = 1352,
@@ -30447,7 +30460,7 @@ _detalhes_database = {
 					["pets"] = {
 						"Zeploz <Waraokebozo>", -- [1]
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["aID"] = "5827-0234FC29",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[436351] = {
@@ -30500,10 +30513,10 @@ _detalhes_database = {
 					["buff_uptime"] = 278,
 					["nome"] = "Waraokebozo",
 					["grupo"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Player-5827-0234FC29",
-					["aID"] = "5827-0234FC29",
+					["classe"] = "UNGROUPPLAYER",
 				}, -- [36]
 				{
 					["flag_original"] = 4376,
@@ -30521,53 +30534,53 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "1867",
 					["fight_component"] = true,
 					["nome"] = "Dalaran Apprentice",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "1867",
-					["serial"] = "Creature-0-5208-0-14709-1867-0000E9051B",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-1867-0000E9051B",
+					["last_event"] = 0,
 				}, -- [38]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "1914",
 					["fight_component"] = true,
 					["nome"] = "Dalaran Mage",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "1914",
-					["serial"] = "Creature-0-5208-0-14709-1914-00006903BC",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-1914-00006903BC",
+					["last_event"] = 0,
 				}, -- [39]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "1888",
 					["monster"] = true,
 					["nome"] = "Dalaran Watcher",
 					["fight_component"] = true,
-					["tipo"] = 4,
-					["aID"] = "1888",
-					["serial"] = "Creature-0-5208-0-14709-1888-000068FC24",
 					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-1888-000068FC24",
+					["tipo"] = 4,
 				}, -- [40]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "1889",
 					["fight_component"] = true,
 					["nome"] = "Dalaran Wizard",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "1889",
-					["serial"] = "Creature-0-5208-0-14709-1889-000068F114",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-1889-000068F114",
+					["last_event"] = 0,
 				}, -- [41]
 				{
 					["flag_original"] = 1298,
@@ -30688,7 +30701,7 @@ _detalhes_database = {
 					},
 					["debuff_uptime"] = 85,
 					["cc_done"] = 4.014919,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["cc_done_targets"] = {
@@ -30697,9 +30710,9 @@ _detalhes_database = {
 					["buff_uptime"] = 351,
 					["aID"] = "5827-023408C3",
 					["tipo"] = 4,
-					["nome"] = "Kakosik",
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
+					["nome"] = "Kakosik",
 					["serial"] = "Player-5827-023408C3",
 					["last_event"] = 0,
 				}, -- [42]
@@ -30707,53 +30720,53 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "1973",
 					["fight_component"] = true,
 					["nome"] = "Ravenclaw Guardian",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "1973",
-					["serial"] = "Creature-0-5208-0-14709-1973-0000690AC7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-1973-0000690AC7",
+					["last_event"] = 0,
 				}, -- [43]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "1974",
 					["fight_component"] = true,
 					["nome"] = "Ravenclaw Drudger",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "1974",
-					["serial"] = "Creature-0-5208-0-14709-1974-0000690A10",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-1974-0000690A10",
+					["last_event"] = 0,
 				}, -- [44]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "2053",
 					["fight_component"] = true,
 					["nome"] = "Haggard Refugee",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "2053",
-					["serial"] = "Creature-0-5208-0-14709-2053-00006908B8",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-2053-00006908B8",
+					["last_event"] = 0,
 				}, -- [45]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "2332",
 					["fight_component"] = true,
 					["nome"] = "Valdred Moray",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "2332",
-					["serial"] = "Creature-0-5208-0-14709-2332-0000690993",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-0-14709-2332-0000690993",
+					["last_event"] = 0,
 				}, -- [46]
 			},
 		}, -- [4]
@@ -30895,8 +30908,11 @@ _detalhes_database = {
 			["Dalaran Apprentice"] = {
 				["Frostbolt"] = 9,
 			},
-			["Valdred Moray"] = {
-				["Sinister Strike"] = 1,
+			["Waraokebozo"] = {
+				["Incinerate"] = 13,
+				["Drain Life"] = 1,
+				["Chaos Bolt"] = 6,
+				["Summon Imp"] = 1,
 			},
 			["Earthbind Totem <Seregaburst>"] = {
 				["Earthbind"] = 1,
@@ -30917,25 +30933,14 @@ _detalhes_database = {
 				["Mind Blast"] = 1,
 				["Power Word: Shield"] = 1,
 			},
-			["Jergosh the Invoker"] = {
-				["Immolate"] = 1,
-				["Curse of Weakness"] = 2,
+			["Taragaman the Hungerer"] = {
+				["Uppercut"] = 1,
+			},
+			["Rot Hide Plague Weaver"] = {
+				["Plague Cloud"] = 3,
 			},
 			["Searing Totem <Seregaburst>"] = {
 				["Attack"] = 2,
-			},
-			["Torrin"] = {
-				["Stoneclaw Totem"] = 3,
-				["Healing Potion"] = 1,
-				["Rockbiter Weapon"] = 3,
-				["Stoneskin Totem"] = 13,
-				["Flame Shock"] = 37,
-				["Lightning Shield"] = 3,
-				["Earthbind Totem"] = 5,
-				["Lightning Bolt"] = 3,
-				["Strength of Earth Totem"] = 1,
-				["Molten Blast"] = 37,
-				["Earth Shock"] = 47,
 			},
 			["Haggard Refugee"] = {
 				["Ignite"] = 1,
@@ -30961,9 +30966,9 @@ _detalhes_database = {
 				["Living Bomb"] = 10,
 				["Living Flame"] = 34,
 				["Intellect"] = 1,
-				["Engrave Chest - Burnout"] = 2,
 				["Frost Nova"] = 28,
 				["Ice Lance"] = 100,
+				["Engrave Chest - Burnout"] = 2,
 				["Replenish Mana I"] = 1,
 			},
 			["Zeploz <Waraokebozo>"] = {
@@ -30986,14 +30991,21 @@ _detalhes_database = {
 				["Arcane Explosion"] = 5,
 				["Fire Blast"] = 10,
 			},
-			["Taragaman the Hungerer"] = {
-				["Uppercut"] = 1,
+			["Valdred Moray"] = {
+				["Sinister Strike"] = 1,
 			},
-			["Waraokebozo"] = {
-				["Incinerate"] = 13,
-				["Drain Life"] = 1,
-				["Chaos Bolt"] = 6,
-				["Summon Imp"] = 1,
+			["Torrin"] = {
+				["Stoneclaw Totem"] = 3,
+				["Healing Potion"] = 1,
+				["Rockbiter Weapon"] = 3,
+				["Stoneskin Totem"] = 13,
+				["Flame Shock"] = 37,
+				["Lightning Shield"] = 3,
+				["Earthbind Totem"] = 5,
+				["Lightning Bolt"] = 3,
+				["Strength of Earth Totem"] = 1,
+				["Molten Blast"] = 37,
+				["Earth Shock"] = 47,
 			},
 			["Earthbind Totem <Torrin>"] = {
 				["Earthbind"] = 5,
@@ -31001,8 +31013,9 @@ _detalhes_database = {
 			["Bazzalan"] = {
 				["Sinister Strike"] = 2,
 			},
-			["Rot Hide Plague Weaver"] = {
-				["Plague Cloud"] = 3,
+			["Jergosh the Invoker"] = {
+				["Immolate"] = 1,
+				["Curse of Weakness"] = 2,
 			},
 			["Dalaran Mage"] = {
 				["Fireball"] = 13,
@@ -31051,8 +31064,12 @@ _detalhes_database = {
 			}, -- [4]
 		},
 		["data_inicio"] = "18:05:58",
+		["frags"] = {
+		},
 		["spells_cast_timeline"] = {
 		},
+		["data_fim"] = "02:31:04",
+		["overall_enemy_name"] = "-- x -- x --",
 		["segments_added"] = {
 			{
 				["elapsed"] = 7.841000000000349,
@@ -31295,10 +31312,6 @@ _detalhes_database = {
 				["clock"] = "01:29:12",
 			}, -- [40]
 		},
-		["data_fim"] = "02:31:04",
-		["overall_enemy_name"] = "-- x -- x --",
-		["frags"] = {
-		},
 		["cleu_timeline"] = {
 		},
 		["start_time"] = 34681.71600000001,
@@ -31308,12 +31321,9 @@ _detalhes_database = {
 		},
 	},
 	["last_realversion"] = 155,
-	["nick_tag_cache"] = {
-		["nextreset"] = 1710693268,
-		["last_version"] = 16,
-	},
 	["data_harvested_for_charts"] = {
 	},
+	["ignore_nicktag"] = false,
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

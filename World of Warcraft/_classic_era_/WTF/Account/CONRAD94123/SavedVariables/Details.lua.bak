@@ -72,11 +72,7 @@ _detalhes_global = {
 	["spell_category_latest_sent"] = 0,
 	["plater"] = {
 		["realtime_dps_enabled"] = false,
-		["damage_taken_anchor"] = {
-			["y"] = 0,
-			["x"] = 0,
-			["side"] = 7,
-		},
+		["realtime_dps_size"] = 12,
 		["realtime_dps_player_shadow"] = true,
 		["damage_taken_enabled"] = false,
 		["realtime_dps_player_size"] = 12,
@@ -92,8 +88,12 @@ _detalhes_global = {
 			["x"] = 0,
 			["side"] = 7,
 		},
-		["realtime_dps_size"] = 12,
 		["damage_taken_shadow"] = true,
+		["damage_taken_anchor"] = {
+			["y"] = 0,
+			["x"] = 0,
+			["side"] = 7,
+		},
 		["damage_taken_color"] = {
 			1, -- [1]
 			1, -- [2]
@@ -284,7 +284,7 @@ _detalhes_global = {
 		[2053] = "Haggard Refugee",
 		[1765] = "Worg",
 		[1654] = "Gregor Agamand",
-		[1543] = "Vile Fin Puddlejumper",
+		[3197] = "Burning Blade Fanatic",
 		[11518] = "Jergosh the Invoker",
 		[11519] = "Bazzalan",
 		[11520] = "Taragaman the Hungerer",
@@ -318,7 +318,7 @@ _detalhes_global = {
 		[1888] = "Dalaran Watcher",
 		[2054] = "Sickly Refugee",
 		[5687] = "Captive Abomination",
-		[3197] = "Burning Blade Fanatic",
+		[8996] = "Voidwalker Minion",
 		[202391] = "Homunculus <Emplight>",
 		[1912] = "Dalaran Protector",
 		[1554] = "Vampiric Duskbat",
@@ -359,10 +359,10 @@ _detalhes_global = {
 		[1522] = "Darkeye Bonecaster",
 		[1538] = "Scarlet Friar",
 		[1935] = "Tirisfal Farmhand",
-		[1655] = "Nissa Agamand",
 		[1940] = "Rot Hide Plague Weaver",
+		[1543] = "Vile Fin Puddlejumper",
 		[1983] = "Nightlash",
-		[8996] = "Voidwalker Minion",
+		[1655] = "Nissa Agamand",
 		[1507] = "Scarlet Initiate",
 		[1544] = "Vile Fin Minor Oracle",
 	},
@@ -377,49 +377,49 @@ _detalhes_global = {
 		8, -- [1]
 		8, -- [2]
 		"Environment (Falling)", -- [3]
-		[8437] = 8,
+		[122] = 8,
 		[837] = 8,
 		[591] = 5,
 		[408525] = 7,
-		[7300] = 8,
+		[1460] = 8,
 		[415320] = 3,
-		[417316] = 5,
+		[18070] = "Earthborer",
 		[29077] = 8,
 		[408685] = 7,
-		[5532] = "Oggleflint",
+		[8437] = 8,
 		[782] = 8,
-		[9095] = 8,
+		[400614] = 8,
 		[20800] = "Jergosh the Invoker",
-		[409554] = 3,
+		[8072] = 7,
 		[5019] = 8,
 		[349981] = 7,
 		[3600] = "Earthbind Totem <Torrin>",
-		[18072] = "Taragaman the Hungerer",
+		[17439] = "Krethis Shadowspinner",
 		[3606] = "Searing Totem <Seregaburst>",
 		[401417] = 8,
-		[1244] = 5,
+		[2645] = 7,
 		[8134] = 7,
 		[410935] = 5,
-		[592] = 5,
-		[409324] = 7,
-		[2052] = 5,
-		[17439] = "Krethis Shadowspinner",
-		[168] = 8,
-		[18070] = "Earthborer",
 		[2053] = 5,
+		[5532] = "Oggleflint",
+		[2052] = 5,
+		[409552] = 3,
+		[168] = 8,
+		[433455] = 8,
+		[18072] = "Taragaman the Hungerer",
 		[13165] = 3,
 		[696] = 9,
 		[8076] = 7,
 		[13549] = 3,
-		[2138] = 8,
-		[409552] = 3,
+		[417316] = 5,
 		[12040] = "Krethis Shadowspinner",
+		[434] = 8,
 		[412538] = 8,
 		[26364] = 7,
-		[8072] = 7,
+		[1244] = 5,
 		[8349] = "Fire Nova Totem <Seregaburst>",
-		[205] = 8,
-		[409333] = 7,
+		[14260] = 3,
+		[20791] = "Searing Blade Warlock",
 		[1449] = 8,
 		[412758] = 9,
 		[436412] = 8,
@@ -432,33 +432,33 @@ _detalhes_global = {
 		[416316] = 7,
 		[2948] = 8,
 		[9252] = 8,
-		[436351] = 9,
+		[409554] = 3,
 		[26635] = 7,
 		[8050] = 7,
 		[402284] = 5,
-		[11986] = "Ragefire Shaman",
+		[409333] = 7,
 		[8242] = "Searing Blade Enforcer",
-		[133] = 8,
+		[429959] = 8,
 		[8091] = 8,
 		[18267] = "Jergosh the Invoker",
 		[403629] = 9,
 		[8156] = 7,
 		[11968] = "Molten Elemental",
 		[401556] = 8,
-		[11976] = "Ragefire Trogg",
-		[409337] = 7,
 		[418459] = 5,
+		[133] = 8,
+		[548] = 7,
 		[7270] = 8,
 		[8096] = 8,
 		[17] = 5,
 		[419307] = 5,
 		[401558] = 8,
-		[139] = 5,
+		[409337] = 7,
 		[707] = 9,
 		[402289] = 5,
 		[400670] = 8,
 		[9532] = "Ragefire Shaman",
-		[8898] = 7,
+		[588] = 5,
 		[412545] = 8,
 		[431] = 5,
 		[439] = 8,
@@ -475,36 +475,36 @@ _detalhes_global = {
 		[8044] = 7,
 		[29469] = 7,
 		[425339] = 7,
-		[588] = 5,
+		[75] = 3,
 		[1075] = 8,
-		[1459] = 8,
-		[548] = 7,
+		[8898] = 7,
+		[139] = 5,
 		[143] = 8,
 		[11841] = 7,
 		[8112] = 8,
 		[400613] = 8,
-		[1460] = 8,
+		[1459] = 8,
 		[2136] = 8,
-		[122] = 8,
-		[400614] = 8,
-		[75] = 3,
-		[2645] = 7,
-		[429959] = 8,
-		[20791] = "Searing Blade Warlock",
 		[14281] = 3,
-		[408680] = 7,
+		[205] = 8,
 		[425204] = 5,
+		[11976] = "Ragefire Trogg",
+		[7300] = 8,
+		[592] = 5,
+		[11986] = "Ragefire Shaman",
+		[408680] = 7,
+		[436351] = 9,
 		[440] = 8,
 		[443320] = 7,
 		[12746] = "Searing Blade Warlock",
-		[434] = 8,
+		[9095] = 8,
 		[3219] = 9,
 		[116] = 8,
 		[6788] = 5,
 		[118] = 8,
-		[433455] = 8,
+		[2138] = 8,
 		[18266] = "Searing Blade Cultist",
-		[14260] = 3,
+		[409324] = 7,
 	},
 	["shield_spellid_cache"] = {
 	},
@@ -943,6 +943,10 @@ _detalhes_global = {
 			["default_bg_alpha"] = 0.5,
 			["trash_concatenate"] = false,
 			["deny_score_messages"] = false,
+			["standard_skin"] = false,
+			["disable_lock_ungroup_buttons"] = false,
+			["animation_speed"] = 33,
+			["animate_scroll"] = false,
 			["disable_stretch_from_toolbar"] = false,
 			["realtime_dps_meter"] = {
 				["enabled"] = false,
@@ -980,10 +984,6 @@ _detalhes_global = {
 				["options_frame"] = {
 				},
 			},
-			["animation_speed"] = 33,
-			["animate_scroll"] = false,
-			["standard_skin"] = false,
-			["disable_lock_ungroup_buttons"] = false,
 			["memory_ram"] = 64,
 			["use_battleground_server_parser"] = false,
 			["death_tooltip_width"] = 350,
@@ -1006,6 +1006,8 @@ _detalhes_global = {
 				["menus"] = "Friz Quadrata TT",
 			},
 			["auto_swap_to_dynamic_overall"] = false,
+			["segments_amount"] = 40,
+			["report_lines"] = 5,
 			["instances"] = {
 				{
 					["__pos"] = {
@@ -1499,8 +1501,6 @@ _detalhes_global = {
 					},
 				}, -- [1]
 			},
-			["report_lines"] = 5,
-			["segments_amount"] = 40,
 			["overall_clear_pvp"] = true,
 			["overall_clear_newboss"] = true,
 			["capture_real"] = {
@@ -1517,26 +1517,32 @@ _detalhes_global = {
 				"out", -- [1]
 				0.2, -- [2]
 			},
-			["realtimedps_always_arena"] = false,
 			["minimum_combat_time"] = 5,
+			["realtimedps_always_arena"] = false,
 			["font_sizes"] = {
 				["menus"] = 10,
 			},
 			["overall_clear_logout"] = false,
+			["new_window_size"] = {
+				["height"] = 158,
+				["width"] = 310,
+			},
+			["cloud_capture"] = true,
+			["damage_taken_everything"] = false,
+			["scroll_speed"] = 2,
 			["window_clamp"] = {
 				-8, -- [1]
 				0, -- [2]
 				21, -- [3]
 				-14, -- [4]
 			},
-			["cloud_capture"] = true,
-			["damage_taken_everything"] = false,
-			["scroll_speed"] = 2,
-			["new_window_size"] = {
-				["height"] = 158,
-				["width"] = 310,
+			["chat_tab_embed"] = {
+				["enabled"] = false,
+				["y_offset"] = 0,
+				["x_offset"] = 0,
+				["tab_name"] = "",
+				["single_window"] = false,
 			},
-			["memory_threshold"] = 3,
 			["deadlog_events"] = 32,
 			["default_bg_color"] = 0.0941,
 			["close_shields"] = false,
@@ -1613,11 +1619,11 @@ _detalhes_global = {
 					0.125, -- [3]
 					0.25, -- [4]
 				},
-				["PALADIN"] = {
-					0, -- [1]
-					0.125, -- [2]
-					0.25, -- [3]
-					0.375, -- [4]
+				["ROGUE"] = {
+					0.248046875, -- [1]
+					0.37109375, -- [2]
+					0, -- [3]
+					0.125, -- [4]
 				},
 				["Alliance"] = {
 					0.248046875, -- [1]
@@ -1643,11 +1649,11 @@ _detalhes_global = {
 					0.375, -- [3]
 					0.5, -- [4]
 				},
-				["ROGUE"] = {
-					0.248046875, -- [1]
-					0.37109375, -- [2]
-					0, -- [3]
-					0.125, -- [4]
+				["PALADIN"] = {
+					0, -- [1]
+					0.125, -- [2]
+					0.25, -- [3]
+					0.375, -- [4]
 				},
 				["EVOKER"] = {
 					0.50390625, -- [1]
@@ -1662,15 +1668,10 @@ _detalhes_global = {
 					0.5, -- [4]
 				},
 			},
-			["total_abbreviation"] = 2,
-			["disable_alldisplays_window"] = false,
-			["trash_auto_remove"] = false,
-			["broadcaster_enabled"] = false,
 			["hotcorner_topleft"] = {
 				["hide"] = false,
 			},
-			["segments_auto_erase"] = 1,
-			["clear_graphic"] = true,
+			["disable_alldisplays_window"] = false,
 			["class_colors"] = {
 				["HUNTER"] = {
 					0.67, -- [1]
@@ -1682,10 +1683,10 @@ _detalhes_global = {
 					0.61, -- [2]
 					0.43, -- [3]
 				},
-				["PALADIN"] = {
-					0.96, -- [1]
-					0.55, -- [2]
-					0.73, -- [3]
+				["SHAMAN"] = {
+					0, -- [1]
+					0.44, -- [2]
+					0.87, -- [3]
 				},
 				["MAGE"] = {
 					0.41, -- [1]
@@ -1727,10 +1728,10 @@ _detalhes_global = {
 					0.372, -- [2]
 					0.905, -- [3]
 				},
-				["SHAMAN"] = {
-					0, -- [1]
-					0.44, -- [2]
-					0.87, -- [3]
+				["ROGUE"] = {
+					1, -- [1]
+					0.96, -- [2]
+					0.41, -- [3]
 				},
 				["UNKNOW"] = {
 					0.2, -- [1]
@@ -1753,17 +1754,17 @@ _detalhes_global = {
 					0.0196, -- [3]
 					1, -- [4]
 				},
-				["WARLOCK"] = {
-					0.58, -- [1]
-					0.51, -- [2]
-					0.79, -- [3]
-				},
+				["version"] = 1,
 				["DEMONHUNTER"] = {
 					0.64, -- [1]
 					0.19, -- [2]
 					0.79, -- [3]
 				},
-				["version"] = 1,
+				["WARLOCK"] = {
+					0.58, -- [1]
+					0.51, -- [2]
+					0.79, -- [3]
+				},
 				["NEUTRAL"] = {
 					1, -- [1]
 					1, -- [2]
@@ -1774,12 +1775,17 @@ _detalhes_global = {
 					0.5764, -- [2]
 					0.498, -- [3]
 				},
-				["ROGUE"] = {
-					1, -- [1]
-					0.96, -- [2]
-					0.41, -- [3]
+				["PALADIN"] = {
+					0.96, -- [1]
+					0.55, -- [2]
+					0.73, -- [3]
 				},
 			},
+			["broadcaster_enabled"] = false,
+			["total_abbreviation"] = 2,
+			["segments_auto_erase"] = 1,
+			["clear_graphic"] = true,
+			["trash_auto_remove"] = false,
 			["animation_speed_triggertravel"] = 5,
 			["options_group_edit"] = true,
 			["segments_amount_to_save"] = 40,
@@ -1796,13 +1802,7 @@ _detalhes_global = {
 				["height"] = 450,
 				["width"] = 480,
 			},
-			["chat_tab_embed"] = {
-				["enabled"] = false,
-				["y_offset"] = 0,
-				["x_offset"] = 0,
-				["tab_name"] = "",
-				["single_window"] = false,
-			},
+			["memory_threshold"] = 3,
 			["only_pvp_frags"] = false,
 			["disable_stretch_button"] = false,
 			["color_by_arena_team"] = true,
@@ -2011,7 +2011,7 @@ _detalhes_global = {
 	["report_where"] = "SAY",
 	["class_time_played"] = {
 		[0] = {
-			["MAGE"] = 58709.36400000002,
+			["MAGE"] = 62220.40500000001,
 		},
 	},
 	["latest_spell_pool_access"] = 1709397268,
@@ -2056,11 +2056,17 @@ _detalhes_global = {
 	},
 	["createauraframe"] = {
 	},
-	["item_level_pool"] = {
+	["data_wipes_exp"] = {
+		["9"] = false,
+		["14"] = false,
+		["13"] = false,
+		["12"] = false,
+		["11"] = false,
+		["10"] = false,
 	},
 	["tutorial"] = {
 		["bookmark_tutorial"] = false,
-		["main_help_button"] = 32,
+		["main_help_button"] = 34,
 		["alert_frames"] = {
 			false, -- [1]
 			false, -- [2]
@@ -2069,7 +2075,7 @@ _detalhes_global = {
 			false, -- [5]
 			false, -- [6]
 		},
-		["logons"] = 32,
+		["logons"] = 34,
 		["version_announce"] = 0,
 		["MIN_COMBAT_TIME"] = true,
 		["WINDOW_LOCK_UNLOCK1"] = true,
@@ -2135,13 +2141,7 @@ _detalhes_global = {
 	},
 	["spell_category_latest_save"] = 0,
 	["realm_sync"] = true,
-	["data_wipes_exp"] = {
-		["9"] = false,
-		["14"] = false,
-		["13"] = false,
-		["12"] = false,
-		["11"] = false,
-		["10"] = false,
+	["item_level_pool"] = {
 	},
 	["savedStyles"] = {
 	},
@@ -2253,39 +2253,39 @@ _detalhes_global = {
 	["deathlog_line_height"] = 16,
 }
 __details_backup = {
-	["_exit_error"] = {
-	},
 	["_instance_backup"] = {
 	},
 	["_general_logs"] = {
-		"2024-03-07 21:10:47 | actor removed Leerel (ungrouped)", -- [1]
-		"2024-03-07 21:10:47 | actor removed Muhis (ungrouped)", -- [2]
-		"2024-03-07 21:10:47 | actor removed Steinkeule (ungrouped)", -- [3]
-		"2024-03-07 21:10:47 | actor removed Spire (ungrouped)", -- [4]
-		"2024-03-07 21:10:47 | actor removed Newmi (ungrouped)", -- [5]
-		"2024-03-07 21:10:47 | actor removed Mayonezbigla (ungrouped)", -- [6]
-		"2024-03-07 21:10:47 | actor removed Moghakh (ungrouped)", -- [7]
-		"2024-03-07 21:10:47 | actor removed Healbulance (ungrouped)", -- [8]
-		"2024-03-07 21:10:47 | actor removed Bigdiqdaddy (ungrouped)", -- [9]
-		"2024-03-07 21:10:47 | actor removed Environment (Falling) (ungrouped)", -- [10]
-		"2024-03-07 21:10:47 | actor removed Qutte (ungrouped)", -- [11]
-		"2024-03-07 21:10:47 | actor removed Royalcheese (ungrouped)", -- [12]
-		"2024-03-07 21:10:47 | actor removed Heiwananas (ungrouped)", -- [13]
-		"2024-03-07 21:10:47 | actor removed Activiste (ungrouped)", -- [14]
-		"2024-03-07 21:10:47 | actor removed Lockios (ungrouped)", -- [15]
-		"2024-03-07 21:10:47 | actor removed Smythe (ungrouped)", -- [16]
-		"2024-03-07 21:10:47 | actor removed Goblinda (ungrouped)", -- [17]
-		"2024-03-07 21:10:47 | actor removed Pinje (ungrouped)", -- [18]
-		"2024-03-07 21:10:47 | actor removed Deathhunter (ungrouped)", -- [19]
-		"2024-03-07 21:10:47 | actor removed Environment (Fire) (ungrouped)", -- [20]
-		"2024-03-07 21:10:47 | actor removed Wasteyrself (ungrouped)", -- [21]
-		"2024-03-07 21:10:47 | actor removed Btz (ungrouped)", -- [22]
-		"2024-03-07 21:10:47 | actor removed Zikh (ungrouped)", -- [23]
-		"2024-03-07 21:10:47 | actor removed Darkmist Recluse (ungrouped)", -- [24]
-		"2024-03-07 21:10:47 | actor removed Welshgoblin (ungrouped)", -- [25]
-		"2024-03-07 21:10:47 | actor removed Akrono (ungrouped)", -- [26]
-		"2024-03-07 21:10:47 | actor removed Noclip (ungrouped)", -- [27]
-		"2024-03-07 21:10:47 | actor removed Gamon (ungrouped)", -- [28]
-		"2024-03-07 21:10:47 | actor removed Yarl (ungrouped)", -- [29]
+		"2024-03-08 02:57:43 | actor removed Environment (Falling) (ungrouped)", -- [1]
+		"2024-03-08 02:57:43 | actor removed Patagonia (ungrouped)", -- [2]
+		"2024-03-08 02:57:43 | actor removed Twobuttøns (ungrouped)", -- [3]
+		"2024-03-08 02:57:43 | actor removed Becquerel (ungrouped)", -- [4]
+		"2024-03-08 02:57:43 | actor removed Antagonisten (ungrouped)", -- [5]
+		"2024-03-08 02:49:37 | actor removed Whitewidowx (ungrouped)", -- [6]
+		"2024-03-08 02:49:37 | actor removed Sullfir (ungrouped)", -- [7]
+		"2024-03-08 02:49:37 | actor removed Jorsal (ungrouped)", -- [8]
+		"2024-03-08 02:49:37 | actor removed Whitewidowx (ungrouped)", -- [9]
+		"2024-03-08 02:49:37 | actor removed Environment (Fire) (ungrouped)", -- [10]
+		"2024-03-08 02:49:37 | actor removed Environment (Falling) (ungrouped)", -- [11]
+		"2024-03-08 02:49:37 | actor removed Flapjackin (ungrouped)", -- [12]
+		"2024-03-08 02:49:37 | actor removed Gamon (ungrouped)", -- [13]
+		"2024-03-08 02:49:37 | actor removed Witherbark Venomblood (ungrouped)", -- [14]
+		"2024-03-07 21:10:47 | actor removed Leerel (ungrouped)", -- [15]
+		"2024-03-07 21:10:47 | actor removed Muhis (ungrouped)", -- [16]
+		"2024-03-07 21:10:47 | actor removed Steinkeule (ungrouped)", -- [17]
+		"2024-03-07 21:10:47 | actor removed Spire (ungrouped)", -- [18]
+		"2024-03-07 21:10:47 | actor removed Newmi (ungrouped)", -- [19]
+		"2024-03-07 21:10:47 | actor removed Mayonezbigla (ungrouped)", -- [20]
+		"2024-03-07 21:10:47 | actor removed Moghakh (ungrouped)", -- [21]
+		"2024-03-07 21:10:47 | actor removed Healbulance (ungrouped)", -- [22]
+		"2024-03-07 21:10:47 | actor removed Bigdiqdaddy (ungrouped)", -- [23]
+		"2024-03-07 21:10:47 | actor removed Environment (Falling) (ungrouped)", -- [24]
+		"2024-03-07 21:10:47 | actor removed Qutte (ungrouped)", -- [25]
+		"2024-03-07 21:10:47 | actor removed Royalcheese (ungrouped)", -- [26]
+		"2024-03-07 21:10:47 | actor removed Heiwananas (ungrouped)", -- [27]
+		"2024-03-07 21:10:47 | actor removed Activiste (ungrouped)", -- [28]
+		"2024-03-07 21:10:47 | actor removed Lockios (ungrouped)", -- [29]
+	},
+	["_exit_error"] = {
 	},
 }

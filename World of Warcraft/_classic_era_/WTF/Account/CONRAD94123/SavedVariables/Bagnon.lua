@@ -58,17 +58,34 @@ Bagnon_Sets = {
 				"contain", -- [23]
 			},
 			["point"] = "BOTTOMRIGHT",
-			["lockedSlots"] = {
-			},
-			["color"] = {
-			},
-			["y"] = 0,
-			["x"] = 0,
-			["borderColor"] = {
-			},
 			["hiddenBags"] = {
 			},
+			["color"] = {
+				0.1372549086809158, -- [1]
+				0.1372549086809158, -- [2]
+				0.1372549086809158, -- [3]
+				1, -- [4]
+			},
+			["skin"] = "Thin",
+			["reverseBags"] = false,
+			["columns"] = 8,
+			["alpha"] = 1,
+			["itemScale"] = 0.92,
+			["scale"] = 1.04,
+			["y"] = 0,
+			["x"] = 0.0001799353337901266,
+			["bagBreak"] = 0,
 			["showBags"] = true,
+			["reverseSlots"] = false,
+			["lockedSlots"] = {
+			},
+			["spacing"] = 3,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 		},
 		["vault"] = {
 			["rules"] = {

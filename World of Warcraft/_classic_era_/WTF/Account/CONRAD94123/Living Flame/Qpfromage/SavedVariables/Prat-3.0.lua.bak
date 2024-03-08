@@ -75,7 +75,7 @@ Prat3HighCPUPerCharDB = {
 		},
 		["ChatFrame3"] = {
 			["EnumerateIndexedEntries"] = nil --[[ skipped inline function ]],
-			["headIndex"] = 7,
+			["headIndex"] = 6,
 			["GetEntryAtIndex"] = nil --[[ skipped inline function ]],
 			["CalculateElementIndex"] = nil --[[ skipped inline function ]],
 			["CalculateElementIndexFromGlobalIndex"] = nil --[[ skipped inline function ]],
@@ -90,60 +90,48 @@ Prat3HighCPUPerCharDB = {
 			["elements"] = {
 				{
 					["message"] = "Speech to text allows you to add closed captioning in a voice channel.",
+					["b"] = 0,
+					["r"] = 1,
+					["serverTime"] = 1709835677,
+					["timestamp"] = 3715.772,
+					["g"] = 1,
 					["extraData"] = {
 						1, -- [1]
 						["n"] = 1,
 					},
-					["b"] = 0,
-					["g"] = 1,
-					["timestamp"] = 32857.998,
-					["serverTime"] = 1709749429,
-					["r"] = 1,
 				}, -- [1]
 				{
 					["message"] = "Speech to text allows you to add closed captioning in a voice channel.",
-					["b"] = 0,
-					["r"] = 1,
-					["serverTime"] = 1709749989,
-					["timestamp"] = 32857.998,
 					["g"] = 1,
+					["r"] = 1,
 					["extraData"] = {
 						1, -- [1]
 						["n"] = 1,
 					},
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709859552,
+					["b"] = 0,
 				}, -- [2]
 				{
 					["message"] = "Speech to text allows you to add closed captioning in a voice channel.",
-					["g"] = 1,
+					["serverTime"] = 1709862581,
 					["r"] = 1,
+					["b"] = 0,
+					["timestamp"] = 3715.772,
 					["extraData"] = {
 						1, -- [1]
 						["n"] = 1,
 					},
-					["timestamp"] = 32857.998,
-					["serverTime"] = 1709770282,
-					["b"] = 0,
+					["g"] = 1,
 				}, -- [3]
 				{
-					["message"] = "Speech to text allows you to add closed captioning in a voice channel.",
-					["serverTime"] = 1709835677,
-					["r"] = 1,
-					["b"] = 0,
-					["timestamp"] = 32857.998,
-					["extraData"] = {
-						1, -- [1]
-						["n"] = 1,
-					},
-					["g"] = 1,
+					["message"] = "0 days, 0 hours, 0 minutes, 0 seconds",
+					["timestamp"] = 3715.772,
 				}, -- [4]
 				{
-					["message"] = "0 days, 0 hours, 0 minutes, 0 seconds",
-					["timestamp"] = 32857.998,
-				}, -- [5]
-				{
 					["message"] = "========== End of Scrollback ==========",
-					["timestamp"] = 32857.998,
-				}, -- [6]
+					["timestamp"] = 3715.772,
+				}, -- [5]
 				{
 					["message"] = "Speech to text allows you to add closed captioning in a voice channel.",
 					["r"] = 1,
@@ -151,10 +139,10 @@ Prat3HighCPUPerCharDB = {
 						1, -- [1]
 						["n"] = 1,
 					},
-					["timestamp"] = 32852.66,
+					["timestamp"] = 3715.772,
 					["g"] = 1,
 					["b"] = 0,
-				}, -- [7]
+				}, -- [6]
 			},
 			["maxElements"] = 128,
 			["TransformIf"] = nil --[[ skipped inline function ]],
@@ -280,7 +268,7 @@ Prat3HighCPUPerCharDB = {
 		},
 		["ChatFrame1"] = {
 			["EnumerateIndexedEntries"] = nil --[[ skipped inline function ]],
-			["headIndex"] = 25,
+			["headIndex"] = 21,
 			["GetEntryAtIndex"] = nil --[[ skipped inline function ]],
 			["CalculateElementIndex"] = nil --[[ skipped inline function ]],
 			["CalculateElementIndexFromGlobalIndex"] = nil --[[ skipped inline function ]],
@@ -294,1796 +282,1731 @@ Prat3HighCPUPerCharDB = {
 			["IsFull"] = nil --[[ skipped inline function ]],
 			["elements"] = {
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:59]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Healbulance-LivingFlame:12386:CHANNEL:2|h|cffd84e4e40|r:|cffffffffHealbulance|r|h|cffd8d8d8]|r: LFM for Gnome need MTank and OTank MS > OS 6/6 exp",
-					["serverTime"] = 1709842198,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						766, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39380.22,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["message"] = "|cff979797|Hpratcopy|h[02:49:41]|h|r |cff59f0dcTacoTip v0.4.3 by kebabstorm loaded. Safe travels!",
+					["timestamp"] = 3720.056,
+					["serverTime"] = 1709862581,
 				}, -- [1]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:03]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Icekill-LivingFlame:12393:CHANNEL:2|h|cff3fc6eaIcekill|r|h|cffd8d8d8]|r: LFM BFD XP run need ALL (staff HR)",
-					["serverTime"] = 1709842202,
+					["message"] = "|cff979797|Hpratcopy|h[02:49:41]|h|r Total time played: 0 days, 18 hours, 28 minutes, 15 seconds",
+					["serverTime"] = 1709862581,
 					["r"] = 1,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						807, -- [3]
-						["n"] = 3,
+						1, -- [1]
+						["n"] = 1,
 					},
-					["timestamp"] = 39384.819,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["timestamp"] = 3720.194,
+					["g"] = 1,
+					["b"] = 0,
 				}, -- [2]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:11]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Dangerøus-LivingFlame:12400:CHANNEL:2|h|cffffffffDangerøus|r|h|cffd8d8d8]|r: buff plz",
-					["serverTime"] = 1709842210,
+					["message"] = "|cff979797|Hpratcopy|h[02:49:41]|h|r Time played this level: 0 days, 3 hours, 4 minutes, 45 seconds",
+					["serverTime"] = 1709862581,
 					["r"] = 1,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						755, -- [3]
-						["n"] = 3,
+						1, -- [1]
+						["n"] = 1,
 					},
-					["timestamp"] = 39392.62,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["timestamp"] = 3720.194,
+					["g"] = 1,
+					["b"] = 0,
 				}, -- [3]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:12]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12403:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842211,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						44, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39393.52,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["message"] = "|cff979797|Hpratcopy|h[02:49:41]|h|r |cffffff00Time played this class (Classic): 0 days 17 hours 8 minutes (/details playedclass)",
+					["timestamp"] = 3720.207,
+					["serverTime"] = 1709862581,
 				}, -- [4]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:13]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12404:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK  (have sum)",
-					["serverTime"] = 1709842212,
+					["message"] = "|cff979797|Hpratcopy|h[02:50:53]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Vovashurpa-LivingFlame:3511:CHANNEL:2|h|cff3fc6eaVovashurpa|r|h|cffd8d8d8]|r: LFM Gnomer fast run before reset MS>OS need tank heals and dps",
+					["serverTime"] = 1709862652,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						783, -- [3]
+						2, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39394.638,
+					["timestamp"] = 3792.256,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [5]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:20]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kotoba-LivingFlame:12413:CHANNEL:2|h|cff3fc6eaKotoba|r|h|cffd8d8d8]|r: |cffffffff<|r|cff00ff00PORTAL|r|cffffffff>|r FROM TB TO UC/ORG + water/food +buff 1G",
-					["serverTime"] = 1709842219,
+					["message"] = "|cff979797|Hpratcopy|h[02:51:35]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Shaoman-LivingFlame:3520:CHANNEL:2|h|cff0070ddShaoman|r|h|cffd8d8d8]|r: lfg rfa",
+					["serverTime"] = 1709862695,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						20, -- [3]
+						4, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39401.704,
+					["timestamp"] = 3833.864,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [6]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:21]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Yumpoo-LivingFlame:12415:CHANNEL:2|h|cffff7c0aYumpoo|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|tWTS TB 2G |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|tLoch Modan Sum 3G|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|tSwamp of Sorrows 3G /w |cffffff00|Hinvplr:Yumpoo-LivingFlame|h[inv]|h|r |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|t",
-					["serverTime"] = 1709842220,
+					["message"] = "|cff979797|Hpratcopy|h[02:51:42]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Vovashurpa-LivingFlame:3522:CHANNEL:2|h|cff3fc6eaVovashurpa|r|h|cffd8d8d8]|r: LFM Gnomer fast run before reset MS>OS need tank heals and dps",
+					["serverTime"] = 1709862702,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						31, -- [3]
+						2, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39402.62,
+					["timestamp"] = 3840.81,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [7]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:25]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12418:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! || Also sell sleep bag XP buff|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842224,
+					["message"] = "|cff979797|Hpratcopy|h[02:51:42]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Levoyosaa-LivingFlame:3523:CHANNEL:2|h|cff3fc6eaLevoyosaa|r|h|cffd8d8d8]|r: WTS RFC Boost 3g a run 1 pull runs 4/5",
+					["serverTime"] = 1709862702,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						739, -- [3]
+						6, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39406.21,
+					["timestamp"] = 3841.559,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [8]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:25]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Beanss-LivingFlame:12420:CHANNEL:2|h|cff3fc6eaBeanss|r|h|cffd8d8d8]|r: LFM WSG Premade",
-					["serverTime"] = 1709842224,
+					["message"] = "|cff979797|Hpratcopy|h[02:51:44]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Levoyosaa-LivingFlame:3525:CHANNEL:1|h|cff3fc6eaLevoyosaa|r|h|cffd8d8d8]|r: WTS RFC Boost 3g a run 1 pull runs 4/5",
+					["serverTime"] = 1709862704,
 					["r"] = 1,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						373, -- [3]
+						70, -- [1]
+						8, -- [2]
+						9, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39406.675,
+					["timestamp"] = 3843.008,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [9]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:27]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Warlor-LivingFlame:12422:CHANNEL:2|h|cff8787edWarlor|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Warlor-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842226,
+					["message"] = "|cff979797|Hpratcopy|h[02:51:52]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Shaoman-LivingFlame:3529:CHANNEL:2|h|cff0070ddShaoman|r|h|cffd8d8d8]|r: LFM TANK & DD RFA",
+					["serverTime"] = 1709862712,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						35, -- [3]
+						4, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39408.143,
+					["timestamp"] = 3851.643,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [10]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:27]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Yumpoo-LivingFlame:12423:CHANNEL:2|h|cffff7c0aYumpoo|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|tWTS TB 2G |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|tLoch Modan Sum 3G|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|tSwamp of Sorrows 3G /w |cffffff00|Hinvplr:Yumpoo-LivingFlame|h[inv]|h|r |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|t",
-					["serverTime"] = 1709842226,
+					["message"] = "|cff979797|Hpratcopy|h[02:52:13]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Shaoman-LivingFlame:3537:CHANNEL:2|h|cff0070ddShaoman|r|h|cffd8d8d8]|r: LFM TANK & DD RFA",
+					["serverTime"] = 1709862733,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						31, -- [3]
+						4, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39408.143,
+					["timestamp"] = 3871.673,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [11]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:35]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Healbulance-LivingFlame:12431:CHANNEL:2|h|cffd84e4e40|r:|cffffffffHealbulance|r|h|cffd8d8d8]|r: LFM for Gnome need MTank and OTank MS > OS 6/6 exp",
-					["serverTime"] = 1709842234,
+					["message"] = "|cff979797|Hpratcopy|h[02:52:30]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Shaoman-LivingFlame:3546:CHANNEL:2|h|cff0070ddShaoman|r|h|cffd8d8d8]|r: LFM TANK & DD RFC",
+					["serverTime"] = 1709862750,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						766, -- [3]
+						4, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39416.241,
+					["timestamp"] = 3889.311,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [12]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:35]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Yumpoo-LivingFlame:12433:CHANNEL:2|h|cffff7c0aYumpoo|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|tWTS TB 2G |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|tLoch Modan Sum 3G|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|tSwamp of Sorrows 3G /w |cffffff00|Hinvplr:Yumpoo-LivingFlame|h[inv]|h|r |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|t",
-					["serverTime"] = 1709842234,
+					["message"] = "|cff979797|Hpratcopy|h[02:52:43]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Rvi-LivingFlame:3552:CHANNEL:2|h|cffff7c0aRvi|r|h|cffd8d8d8]|r: HI",
+					["serverTime"] = 1709862763,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						31, -- [3]
+						11, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39416.943,
+					["timestamp"] = 3901.963,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [13]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:41]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Noctém-LivingFlame:12440:CHANNEL:2|h|cff8787edNoctém|r|h|cffd8d8d8]|r: Enchanter LFW Got ALL enchants /w me",
-					["serverTime"] = 1709842240,
+					["message"] = "|cff979797|Hpratcopy|h[02:53:23]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Shaoman-LivingFlame:3578:CHANNEL:2|h|cff0070ddShaoman|r|h|cffd8d8d8]|r: LFM DD RFC & go",
+					["serverTime"] = 1709862802,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						771, -- [3]
+						4, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39422.175,
+					["timestamp"] = 3941.801,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [14]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:42]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12443:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842241,
+					["message"] = "|cff979797|Hpratcopy|h[02:53:41]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Shaoman-LivingFlame:3591:CHANNEL:2|h|cff0070ddShaoman|r|h|cffd8d8d8]|r: LFM DD RFC & go",
+					["serverTime"] = 1709862820,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						44, -- [3]
+						4, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39423.21,
+					["timestamp"] = 3960.643,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [15]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:42]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Piñitos-LivingFlame:12444:CHANNEL:2|h|cfffff468Piñitos|r|h|cffd8d8d8]|r: LFM GNOMEREGAN 1xMT  & 1xWAR OT - MS>OS 6/6 + WB + CONSUMS",
-					["serverTime"] = 1709842241,
+					["message"] = "|cff979797|Hpratcopy|h[02:54:10]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Phd-LivingFlame:3608:CHANNEL:2|h|cff3fc6eaPhd|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t WTS Portal UC / OG 1G |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
+					["serverTime"] = 1709862849,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						728, -- [3]
+						13, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39423.577,
+					["timestamp"] = 3989.49,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [16]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:42]|h|r [Y] |cffd8d8d8[|r|Hplayer:Drolzu-LivingFlame:12445:YELL|h|cffff7c0aDrolzu|r|h|cffd8d8d8]|r: >>> ENCHANTER 225 - All Recipes Phase 2 including gnomeregan  <<< LFW",
-					["serverTime"] = 1709842241,
-					["r"] = 1,
-					["extraData"] = {
-						7, -- [1]
-						90, -- [2]
-						226, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39423.977,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
-				}, -- [17]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:43]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Beanss-LivingFlame:12446:CHANNEL:2|h|cff3fc6eaBeanss|r|h|cffd8d8d8]|r: LFM WSG Premade",
-					["serverTime"] = 1709842242,
+					["message"] = "|cff979797|Hpratcopy|h[02:54:26]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3618:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["serverTime"] = 1709862865,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						373, -- [3]
+						15, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39424.593,
+					["timestamp"] = 4005.105,
+					["g"] = 0.7529412508010864,
+					["b"] = 0.7529412508010864,
+				}, -- [17]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:54:46]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Cutebaby-LivingFlame:3633:CHANNEL:2|h|cffaad372Cutebaby|r|h|cffd8d8d8]|r: WTT Lone wolf gold",
+					["serverTime"] = 1709862886,
+					["r"] = 1,
+					["extraData"] = {
+						71, -- [1]
+						1, -- [2]
+						17, -- [3]
+						["n"] = 3,
+					},
+					["timestamp"] = 4024.877,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [18]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:45]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Sneat-LivingFlame:12453:CHANNEL:2|h|cffd84e4e40|r:|cff3fc6eaSneat|r|h|cffd8d8d8]|r: LFW ENCHANT 225 (all recipes) - your mats + tip - WTS portals 1g @org",
-					["serverTime"] = 1709842244,
+					["message"] = "|cff979797|Hpratcopy|h[02:55:11]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Vraels-LivingFlame:3647:CHANNEL:1|h|cff3fc6eaVraels|r|h|cffd8d8d8]|r: Enchanter 225 LFW (Dismantle, +3 agi cloak, +2% block, speed boots, mining, etc.) WTS Portal UC 1g.",
+					["serverTime"] = 1709862911,
 					["r"] = 1,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						72, -- [3]
+						70, -- [1]
+						8, -- [2]
+						19, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39426.728,
+					["timestamp"] = 4050.411,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [19]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:45]|h|r [Y] |cffd8d8d8[|r|Hplayer:Sneat-LivingFlame:12454:YELL|h|cffd84e4e40|r:|cff3fc6eaSneat|r|h|cffd8d8d8]|r: LFW ENCHANT 225 (all recipes) - your mats + tip - WTS portals  1g @org",
-					["serverTime"] = 1709842244,
-					["r"] = 1,
-					["extraData"] = {
-						7, -- [1]
-						90, -- [2]
-						715, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39426.728,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
-				}, -- [20]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:46]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12455:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  Nothing HR",
-					["serverTime"] = 1709842245,
+					["message"] = "|cff979797|Hpratcopy|h[02:55:25]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3660:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["serverTime"] = 1709862925,
 					["r"] = 1,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						753, -- [3]
+						15, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39427.243,
+					["timestamp"] = 4064.313,
+					["g"] = 0.7529412508010864,
+					["b"] = 0.7529412508010864,
+				}, -- [20]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:56:53]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Normp:3744:CHANNEL:2|h|cffffffffNormp|r|h|cffd8d8d8]|r: WTB all your |cffffffff|Hitem:2589::::::::5:::::::::|h[Linen Cloth]|h|r 20c each can C.O.D",
+					["serverTime"] = 1709863012,
+					["r"] = 1,
+					["extraData"] = {
+						71, -- [1]
+						1, -- [2]
+						21, -- [3]
+						["n"] = 3,
+					},
+					["timestamp"] = 4152.440000000001,
 					["g"] = 0.7529412508010864,
 					["b"] = 0.7529412508010864,
 				}, -- [21]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:46]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Akan-LivingFlame:12456:CHANNEL:2|h|cffaad372Akan|r|h|cffd8d8d8]|r: NEED ROGUE FOR OPEN LOCKBOXS PAY 1GOLD",
-					["serverTime"] = 1709842245,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						718, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39427.446,
-					["g"] = 0.7529412508010864,
+					["message"] = "|cff979797|Hpratcopy|h[02:37:55]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Vraels-LivingFlame:2611:CHANNEL:1|h|cff3fc6eaVraels|r|h|cffd8d8d8]|r: Enchanter 225 LFW (Dismantle, +3 agi cloak, +2% block, speed boots, mining, etc.) WTS Portal UC 1g.",
 					["b"] = 0.7529412508010864,
-				}, -- [22]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:47]|h|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:CHANNEL:1|h[1. General - Orgrimmar]|h",
-					["serverTime"] = 1709842246,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861875,
 					["extraData"] = {
 						70, -- [1]
-						24, -- [2]
-						102, -- [3]
+						8, -- [2]
+						17, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39428.169,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+				}, -- [22]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:37:58]|h|r You create: |cffffffff|Hitem:4365::::::::20:::::::::|h[Coarse Dynamite]|h|rx2.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861878,
+					["extraData"] = {
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
+						["n"] = 3,
+					},
 				}, -- [23]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:47]|h|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:CHANNEL:2|h[2. Trade - City]|h",
-					["serverTime"] = 1709842246,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:01]|h|r You create: |cffffffff|Hitem:4365::::::::20:::::::::|h[Coarse Dynamite]|h|rx3.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861880,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						104, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39428.169,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [24]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:10:47]|h|r |Hchannel:channel:3|h[3] |h Left Channel: |Hchannel:CHANNEL:3|h[3. LocalDefense - Orgrimmar]|h",
-					["serverTime"] = 1709842246,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:04]|h|r You create: |cffffffff|Hitem:4365::::::::20:::::::::|h[Coarse Dynamite]|h|rx3.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861883,
 					["extraData"] = {
-						72, -- [1]
-						106, -- [2]
-						107, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39428.169,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [25]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:15]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709841974,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:07]|h|r You create: |cffffffff|Hitem:4365::::::::20:::::::::|h[Coarse Dynamite]|h|rx3.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861886,
 					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
-						19, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39156.507,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [26]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:15]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Otherwarrior-LivingFlame:12044:CHANNEL:2|h|cffc69b6dOtherwarrior|r|h|cffd8d8d8]|r: LFM GNOMEREGAN Guild run  fast clear 1 shot all MS OS ROLL Full consumes + w.buffs + 6/6 Log is required.  Mekkatorque's Arcano-Shredder is HR.  NEED WARLOCK  OFF TANK  - DISCO",
-					["serverTime"] = 1709841974,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:10]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Gulugulu-LivingFlame:2640:CHANNEL:2|h|cff0070ddGulugulu|r|h|cffd8d8d8]|r: WTS |cffffffff|Hitem:1685::::::::40:::::::::|h[Troll-hide Bag]|h|r",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861889,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						667, -- [3]
+						147, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39156.507,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [27]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:17]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12046:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK+HEAL+2DD (have sum)",
-					["serverTime"] = 1709841976,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:10]|h|r You create: |cffffffff|Hitem:4365::::::::20:::::::::|h[Coarse Dynamite]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861889,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						783, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39158.976,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [28]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:22]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12052:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  - AND 1 DPS  // Nothing HR",
-					["serverTime"] = 1709841981,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:10]|h|r You create: |cffffffff|Hitem:4365::::::::20:::::::::|h[Coarse Dynamite]|h|rx2.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861889,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39163.34,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [29]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:24]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Alykh-LivingFlame:12054:CHANNEL:2|h|cffc69b6dAlykh|r|h|cffd8d8d8]|r: WTT my gold here with your gold retail-era or wotlk",
-					["serverTime"] = 1709841983,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:12]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Levoyosaa-LivingFlame:2647:CHANNEL:1|h|cff3fc6eaLevoyosaa|r|h|cffd8d8d8]|r: WTS RFC Boost 3g a run 1 pull runs 3/5",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861891,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						731, -- [3]
+						70, -- [1]
+						8, -- [2]
+						84, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39165.996,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [30]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:25]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Eddytrappa-LivingFlame:12056:CHANNEL:2|h|cffaad372Eddytrappa|r|h|cffd8d8d8]|r: LF Tank, Heal, 2x DPS BFD - MS>OS",
-					["serverTime"] = 1709841984,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:13]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Levoyosaa-LivingFlame:2651:CHANNEL:2|h|cff3fc6eaLevoyosaa|r|h|cffd8d8d8]|r: WTS RFC Boost 3g a run 1 pull runs 3/5",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861892,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						789, -- [3]
+						88, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39166.595,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [31]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:27]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Dangerøus-LivingFlame:12061:CHANNEL:2|h|cffffffffDangerøus|r|h|cffd8d8d8]|r: LFG RFC",
-					["serverTime"] = 1709841986,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:13]|h|r You create: |cffffffff|Hitem:4365::::::::20:::::::::|h[Coarse Dynamite]|h|rx3.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861892,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						755, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39168.094,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [32]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:27]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Warlor-LivingFlame:12062:CHANNEL:2|h|cff8787edWarlor|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Warlor-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709841986,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:14]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:2658:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861893,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						35, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39168.361,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [33]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:28]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Piñitos-LivingFlame:12063:CHANNEL:2|h|cfffff468Piñitos|r|h|cffd8d8d8]|r: LFM GNOMEREGAN 1xMT  & 1xWAR OT - MS>OS 6/6 + WB + CONSUMS",
-					["serverTime"] = 1709841987,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:27]|h|r You have learned how to create a new item: Silver Contact.",
+					["b"] = 0,
 					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861906,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						728, -- [3]
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39169.826,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [34]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:29]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12064:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  - AND 1 DPS  // Nothing HR",
-					["serverTime"] = 1709841988,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:28]|h|r You have learned how to create a new item: Flying Tiger Goggles.",
+					["b"] = 0,
 					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861907,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39170.311,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [35]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:31]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kulo-LivingFlame:12067:CHANNEL:2|h|cffd84e4e40|r:|cff0070ddKulo|r|h|cffd8d8d8]|r: LFG Gnomer elem 6/6 wb cons",
-					["serverTime"] = 1709841990,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:47]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Päw:2714:CHANNEL:1|h|cffff7c0aPäw|r|h|cffd8d8d8]|r: LvL15 Dps LF RFC",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861926,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						357, -- [3]
+						70, -- [1]
+						8, -- [2]
+						149, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39172.224,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [36]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:31]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Otherwarrior-LivingFlame:12069:CHANNEL:2|h|cffc69b6dOtherwarrior|r|h|cffd8d8d8]|r: LFM GNOMEREGAN Guild run  fast clear 1 shot all MS OS ROLL Full consumes + w.buffs + 6/6 Log is required.  Mekkatorque's Arcano-Shredder is HR.  NEED WARLOCK  OFF TANK  - DISCO",
-					["serverTime"] = 1709841990,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:38:54]|h|r You create: |cffffffff|Hitem:6219::::::::20:::::::::|h[Arclight Spanner]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861933,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						667, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39172.762,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [37]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:31]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12070:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709841990,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:05]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Gulugulu-LivingFlame:2740:CHANNEL:2|h|cff0070ddGulugulu|r|h|cffd8d8d8]|r: WTS |cffffffff|Hitem:1685::::::::40:::::::::|h[Troll-hide Bag]|h|r",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861944,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						739, -- [3]
+						147, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39172.762,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [38]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:35]|h|r |Hplayer:Mayonezbigla:0:TEXT_EMOTE:|hMayonezbigla|h pokes Octarinecore.  Hey!",
-					["serverTime"] = 1709841994,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:08]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:2745:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861947,
 					["extraData"] = {
-						12, -- [1]
-						115, -- [2]
-						791, -- [3]
+						71, -- [1]
+						1, -- [2]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39176.228,
-					["g"] = 0.501960813999176,
-					["b"] = 0.250980406999588,
 				}, -- [39]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:37]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Otherwarrior-LivingFlame:12075:CHANNEL:2|h|cffc69b6dOtherwarrior|r|h|cffd8d8d8]|r: LFM GNOMEREGAN Guild run  fast clear 1 shot all MS OS ROLL Full consumes + w.buffs + 6/6 Log is required.  Mekkatorque's Arcano-Shredder is HR.  NEED WARLOCK  OFF TANK  - DISCO",
-					["serverTime"] = 1709841996,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:12]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Levoyosaa-LivingFlame:2752:CHANNEL:1|h|cff3fc6eaLevoyosaa|r|h|cffd8d8d8]|r: WTS RFC Boost 3g a run 1 pull runs 3/5",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861951,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						667, -- [3]
+						70, -- [1]
+						8, -- [2]
+						84, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39178.33,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [40]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:41]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12083:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842000,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:15]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Fireflower:2758:CHANNEL:2|h|cff0070ddFireflower|r|h|cffd8d8d8]|r: why cant i dual wield as sham,got my rune.and my wpn",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861954,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						44, -- [3]
+						151, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39182.163,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [41]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:47]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12085:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  - AND 1 DPS  // Nothing HR",
-					["serverTime"] = 1709842006,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:20]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Fireflower-LivingFlame:2766:CHANNEL:2|h|cff0070ddFireflower|r|h|cffd8d8d8]|r: wtf bugged ?",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861959,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						753, -- [3]
+						151, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39188.196,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [42]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:48]|h|r |Hplayer:Sneat:0:TEXT_EMOTE:|hSneat|h thanks Gettinold.",
-					["serverTime"] = 1709842007,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:25]|h|r You create: |cff1eff00|Hitem:4368::::::::20:::::::::|h[Flying Tiger Goggles]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861964,
 					["extraData"] = {
-						12, -- [1]
-						115, -- [2]
-						730, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39189.811,
-					["g"] = 0.501960813999176,
-					["b"] = 0.250980406999588,
 				}, -- [43]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:51]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709842010,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:26]|h|r Your skill in Engineering has increased to 103.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861965,
 					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
-						19, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39192.147,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [44]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:55]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Sneat-LivingFlame:12096:CHANNEL:2|h|cffd84e4e40|r:|cff3fc6eaSneat|r|h|cffd8d8d8]|r: LFW ENCHANT 225 (all recipes) - your mats + tip - WTS portals 1g @org",
-					["serverTime"] = 1709842014,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:42]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Päw-LivingFlame:2804:CHANNEL:2|h|cffff7c0aPäw|r|h|cffd8d8d8]|r: lvl?",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861981,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						72, -- [3]
+						153, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39196.761,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [45]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:55]|h|r [Y] |cffd8d8d8[|r|Hplayer:Sneat-LivingFlame:12097:YELL|h|cffd84e4e40|r:|cff3fc6eaSneat|r|h|cffd8d8d8]|r: LFW ENCHANT 225 (all recipes) - your mats + tip - WTS portals  1g @org",
-					["serverTime"] = 1709842014,
+					["message"] = "|cff979797|Hpratcopy|h[02:39:50]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Rühdiger:2819:CHANNEL:2|h|cffffffffRühdiger|r|h|cffd8d8d8]|r: lol lvl 13",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861989,
 					["extraData"] = {
-						7, -- [1]
-						90, -- [2]
-						715, -- [3]
+						71, -- [1]
+						1, -- [2]
+						155, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39196.761,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [46]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:06:59]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Warlor-LivingFlame:12103:CHANNEL:2|h|cff8787edWarlor|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Warlor-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842018,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:00]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Doombrother:2841:CHANNEL:2|h|cff0070ddDoombrother|r|h|cffd8d8d8]|r: need dual wield specialisation thing",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709861999,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						35, -- [3]
+						157, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39200.911,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [47]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:02]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12107:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  - AND 2 DPS  // Nothing HR",
-					["serverTime"] = 1709842021,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:03]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Levoyosaa-LivingFlame:2845:CHANNEL:1|h|cff3fc6eaLevoyosaa|r|h|cffd8d8d8]|r: WTS RFC Boost 3g a run 1 pull runs 3/5",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862002,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
+						70, -- [1]
+						8, -- [2]
+						84, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39203.828,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [48]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:02]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Stringly-LivingFlame:12108:CHANNEL:2|h|cff3fc6eaStringly|r|h|cffd8d8d8]|r: WTS Teleportation/Enchanting/Tailoring service! /w me for a fast Teleport to either Orgrimmar or Undercity! 1g teleport. Got ALL ENCHANTS!",
-					["serverTime"] = 1709842021,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:05]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Levoyosaa-LivingFlame:2851:CHANNEL:2|h|cff3fc6eaLevoyosaa|r|h|cffd8d8d8]|r: WTS RFC Boost 3g a run 1 pull runs 3/5",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862004,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						707, -- [3]
+						88, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39203.828,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [49]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:03]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12109:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842022,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:09]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:2858:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862008,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						739, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39204.612,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [50]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:07]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12114:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK+HEAL+2DD (have sum)",
-					["serverTime"] = 1709842026,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:13]|h|r |Hchannel:channel:2|h[2] |h<AFK>|cffd8d8d8[|r|Hplayer:Bullen-LivingFlame:2865:CHANNEL:2|h|cffffffffBullen|r|h|cffd8d8d8]|r: Selling SUMMON to FERALAS south island for epic recipe quest chain 4g!",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862012,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						783, -- [3]
+						26, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39208.846,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [51]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:08]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Alykh-LivingFlame:12116:CHANNEL:2|h|cffc69b6dAlykh|r|h|cffd8d8d8]|r: WTT my gold here with your gold retail-era or wotlk",
-					["serverTime"] = 1709842027,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:13]|h|r |Hchannel:channel:1|h[1] |h<AFK>|cffd8d8d8[|r|Hplayer:Bullen-LivingFlame:2866:CHANNEL:1|h|cffffffffBullen|r|h|cffd8d8d8]|r: Selling SUMMON to FERALAS south island for epic recipe quest chain 4g!",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862012,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						731, -- [3]
+						70, -- [1]
+						8, -- [2]
+						28, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39209.629,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [52]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:10]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Taxitb-LivingFlame:12120:CHANNEL:2|h|cffff7c0aTaxitb|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_4:0|tWTS SUMMON TB 2g /w \"|cffffff00|Hinvplr:Taxitb-LivingFlame|h[inv]|h|r\"",
-					["serverTime"] = 1709842029,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:21]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Vraels-LivingFlame:2882:CHANNEL:1|h|cff3fc6eaVraels|r|h|cffd8d8d8]|r: Enchanter 225 LFW (Dismantle, +3 agi cloak, +2% block, speed boots, mining, etc.) WTS Portal UC 1g.",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862020,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						669, -- [3]
+						70, -- [1]
+						8, -- [2]
+						17, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39211.447,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [53]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:13]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Berkane-LivingFlame:12124:CHANNEL:2|h|cfffff468Berkane|r|h|cffd8d8d8]|r: Sham Tank 30 LFG SM GY",
-					["serverTime"] = 1709842032,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:32]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862031,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						353, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39214.661,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [54]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:15]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Eddytrappa-LivingFlame:12126:CHANNEL:2|h|cffaad372Eddytrappa|r|h|cffd8d8d8]|r: LF Tank, Heal, 1x DPS BFD - MS>OS",
-					["serverTime"] = 1709842034,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:32]|h|r Your skill in Engineering has increased to 104.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862031,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						789, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39216.379,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [55]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:16]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Ninjago-LivingFlame:12129:CHANNEL:2|h|cfffff468Ninjago|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|tLFM SM GY|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842035,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:35]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862034,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						792, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39217.781,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [56]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:20]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Noctém-LivingFlame:12134:CHANNEL:2|h|cff8787edNoctém|r|h|cffd8d8d8]|r: Enchanter LFW Got ALL enchants /w me",
-					["serverTime"] = 1709842039,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:35]|h|r Your skill in Engineering has increased to 105.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862034,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						771, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39222.017,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [57]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:24]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12137:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: BFD  NEED TANK  - AND 2 DPS  // Nothing HR",
-					["serverTime"] = 1709842043,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:38]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862037,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39225.067,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [58]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:25]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12138:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842044,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:38]|h|r Your skill in Engineering has increased to 106.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862037,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						44, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39226.252,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [59]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:27]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Piñitos-LivingFlame:12141:CHANNEL:2|h|cfffff468Piñitos|r|h|cffd8d8d8]|r: LFM GNOMEREGAN 1xMT  & 1xWAR OT - MS>OS 6/6 + WB + CONSUMS",
-					["serverTime"] = 1709842046,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:41]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862040,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						728, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39228.468,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [60]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:31]|h|r |Hplayer:Sneat:0:TEXT_EMOTE:|hSneat|h thanks Puglord.",
-					["serverTime"] = 1709842050,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:42]|h|r Your skill in Engineering has increased to 107.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862041,
 					["extraData"] = {
-						12, -- [1]
-						115, -- [2]
-						730, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39232.195,
-					["g"] = 0.501960813999176,
-					["b"] = 0.250980406999588,
 				}, -- [61]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:31]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Healbulance-LivingFlame:12143:CHANNEL:2|h|cffd84e4e40|r:|cffffffffHealbulance|r|h|cffd8d8d8]|r: LFM for Gnome need MTank and OTank MS > OS 6/6 exp",
-					["serverTime"] = 1709842050,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:44]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:2935:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862043,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						766, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39232.39,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [62]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:33]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12147:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842052,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:45]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862044,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						739, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39234.431,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [63]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:33]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Dziednieks-LivingFlame:12148:CHANNEL:2|h|cff0070ddDziednieks|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8:0|t LFM - WC |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8:0|t",
-					["serverTime"] = 1709842052,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:45]|h|r Your skill in Engineering has increased to 108.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862044,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						794, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39234.681,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [64]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:38]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Tuskpit-LivingFlame:12156:CHANNEL:2|h|cff3fc6eaTuskpit|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t TRAFFICKING YOU FROM POINT A, TO POINT B! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t || UC/ORG PORTS ARE UP! || /W ME",
-					["serverTime"] = 1709842057,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:48]|h|r Your skill in Engineering has increased to 109.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862047,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						692, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39239.716,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [65]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:40]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Rishq:12157:CHANNEL:2|h|cff8787edRishq|r|h|cffd8d8d8]|r: LF rfc boost",
-					["serverTime"] = 1709842059,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:48]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862047,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						796, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39241.417,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [66]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:40]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Otherwarrior-LivingFlame:12158:CHANNEL:2|h|cffc69b6dOtherwarrior|r|h|cffd8d8d8]|r: LFM GNOMEREGAN Guild run  fast clear 1 shot all MS OS ROLL Full consumes + w.buffs + 6/6 Log is required.  Mekkatorque's Arcano-Shredder is HR.  NEED WARLOCK  OFF TANK  - DISCO",
-					["serverTime"] = 1709842059,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:51]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kotoba:2955:CHANNEL:2|h|cff3fc6eaKotoba|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|t |cffffffff<|r|cff00ff00PORTAL|r|cffffffff>|r FROM TB TO UC/ORG  + water/food +buff 1G || |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t  Enchanter 225 LFW (no dismantle) ur mats + tip",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862050,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						667, -- [3]
+						159, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39241.919,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [67]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:41]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Taxitb-LivingFlame:12159:CHANNEL:2|h|cffff7c0aTaxitb|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_4:0|tWTS SUMMON TB 2g /w \"|cffffff00|Hinvplr:Taxitb-LivingFlame|h[inv]|h|r\"",
-					["serverTime"] = 1709842060,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:51]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862050,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						669, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39242.699,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [68]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:44]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709842063,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:51]|h|r Your skill in Engineering has increased to 110.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862050,
 					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
-						19, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39245.71,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [69]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:49]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Svartgul:12171:CHANNEL:2|h|cffffffffSvartgul|r|h|cffd8d8d8]|r: WTB PORTAL TO UC",
-					["serverTime"] = 1709842068,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:54]|h|r You create: |cffffffff|Hitem:4404::::::::20:::::::::|h[Silver Contact]|h|rx5.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862053,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						798, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39251.036,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [70]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:52]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Warlor-LivingFlame:12174:CHANNEL:2|h|cff8787edWarlor|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Warlor-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842071,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:40:54]|h|r Your skill in Engineering has increased to 111.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862053,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						35, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39253.102,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [71]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:53]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12176:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK+HEAL (have sum)",
-					["serverTime"] = 1709842072,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:03]|h|r You create: |cff1eff00|Hitem:4368::::::::20:::::::::|h[Flying Tiger Goggles]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862062,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						783, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39254.218,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [72]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:07:54]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Healbulance-LivingFlame:12179:CHANNEL:2|h|cffd84e4e40|r:|cffffffffHealbulance|r|h|cffd8d8d8]|r: LFM for Gnome need MTank and OTank MS > OS 6/6 exp",
-					["serverTime"] = 1709842073,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:03]|h|r Your skill in Engineering has increased to 112.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862062,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						766, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39255.87,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [73]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:02]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kulo-LivingFlame:12188:CHANNEL:2|h|cffd84e4e40|r:|cff0070ddKulo|r|h|cffd8d8d8]|r: LFG Gnomer elem 6/6 wb cons",
-					["serverTime"] = 1709842081,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:10]|h|r You create: |cff1eff00|Hitem:4368::::::::20:::::::::|h[Flying Tiger Goggles]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862069,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						357, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39264.034,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [74]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:04]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12191:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842083,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:10]|h|r Your skill in Engineering has increased to 113.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862069,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						739, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39265.136,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [75]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:08]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12198:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842087,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:17]|h|r You create: |cff1eff00|Hitem:4368::::::::20:::::::::|h[Flying Tiger Goggles]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862076,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						44, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39269.67,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [76]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:09]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Basedchains:12201:CHANNEL:2|h|cff0070ddBasedchains|r|h|cffd8d8d8]|r: wtb port uc",
-					["serverTime"] = 1709842088,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:17]|h|r Your skill in Engineering has increased to 114.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862076,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						800, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39270.303,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [77]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:11]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Jezz:12205:CHANNEL:2|h|cffff7c0aJezz|r|h|cffd8d8d8]|r: lf portal uc im in tb",
-					["serverTime"] = 1709842090,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:24]|h|r You create: |cff1eff00|Hitem:4368::::::::20:::::::::|h[Flying Tiger Goggles]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862083,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						802, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39272.506,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [78]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:12]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Noctém-LivingFlame:12208:CHANNEL:2|h|cff8787edNoctém|r|h|cffd8d8d8]|r: Enchanter LFW Got ALL enchants /w me",
-					["serverTime"] = 1709842091,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:24]|h|r Your skill in Engineering has increased to 115.",
+					["b"] = 1,
+					["r"] = 0.3333333432674408,
+					["g"] = 0.3333333432674408,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862083,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						771, -- [3]
+						27, -- [1]
+						99, -- [2]
+						100, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39273.087,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [79]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:15]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Tuskpit-LivingFlame:12212:CHANNEL:2|h|cff3fc6eaTuskpit|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t TRAFFICKING YOU FROM POINT A, TO POINT B! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t || UC/ORG PORTS ARE UP! || I HAVE FOOD/WATER/BUFF FOR YOUR JOURNEY! || /W ME",
-					["serverTime"] = 1709842094,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:57]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Zato-LivingFlame:3058:CHANNEL:1|h|cfffff468Zato|r|h|cffd8d8d8]|r: LFM STV NEED DD",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862116,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						692, -- [3]
+						70, -- [1]
+						8, -- [2]
+						161, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39276.506,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [80]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:17]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709842096,
+					["message"] = "|cff979797|Hpratcopy|h[02:41:58]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Zato-LivingFlame:3059:CHANNEL:1|h|cfffff468Zato|r|h|cffd8d8d8]|r: LFM STV NEED DD",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862117,
 					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
-						19, -- [3]
+						70, -- [1]
+						8, -- [2]
+						161, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39278.135,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [81]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:18]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Ninjago-LivingFlame:12218:CHANNEL:2|h|cfffff468Ninjago|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|tLF2M SM GY need Heal/Tank|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842097,
+					["message"] = "|cff979797|Hpratcopy|h[02:42:06]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Päw-LivingFlame:3065:CHANNEL:1|h|cffff7c0aPäw|r|h|cffd8d8d8]|r: LvL15 Dps LF RFC",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862125,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						792, -- [3]
+						70, -- [1]
+						8, -- [2]
+						149, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39279.436,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [82]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:18]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Taxithunder-LivingFlame:12221:CHANNEL:2|h|cffff7c0aTaxithunder|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_4:0|tWTS SUMMON TB 2g /w \"|cffffff00|Hinvplr:Taxithunder-LivingFlame|h[inv]|h|r\"",
-					["serverTime"] = 1709842097,
+					["message"] = "|cff979797|Hpratcopy|h[02:42:15]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3075:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862134,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						660, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39279.892,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [83]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:27]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709842106,
+					["message"] = "|cff979797|Hpratcopy|h[02:42:30]|h|r |Hchannel:channel:2|h[2] |h<AFK>|cffd8d8d8[|r|Hplayer:Bullen-LivingFlame:3094:CHANNEL:2|h|cffffffffBullen|r|h|cffd8d8d8]|r: Selling SUMMON to FERALAS south island for epic recipe quest chain 4g!",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862150,
 					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
-						19, -- [3]
+						71, -- [1]
+						1, -- [2]
+						26, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39288.153,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [84]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:27]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12230:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  - 1 DPS",
-					["serverTime"] = 1709842106,
+					["message"] = "|cff979797|Hpratcopy|h[02:42:30]|h|r |Hchannel:channel:1|h[1] |h<AFK>|cffd8d8d8[|r|Hplayer:Bullen-LivingFlame:3095:CHANNEL:1|h|cffffffffBullen|r|h|cffd8d8d8]|r: Selling SUMMON to FERALAS south island for epic recipe quest chain 4g!",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862150,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
+						70, -- [1]
+						8, -- [2]
+						28, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39288.153,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [85]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:30]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12235:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK  (have sum)",
-					["serverTime"] = 1709842109,
+					["message"] = "|cff979797|Hpratcopy|h[02:42:56]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Sneakyduck:3122:CHANNEL:2|h|cfffff468Sneakyduck|r|h|cffd8d8d8]|r: WTB PORTAL FROM UC TO TB!",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862176,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						783, -- [3]
+						163, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39291.855,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [86]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:34]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12240:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842113,
+					["message"] = "|cff979797|Hpratcopy|h[02:43:20]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3142:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862200,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						739, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39296.006,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [87]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:37]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Piñitos-LivingFlame:12245:CHANNEL:2|h|cfffff468Piñitos|r|h|cffd8d8d8]|r: LFM GNOMEREGAN 1xMT  & 1xWAR OT - MS>OS 6/6 + WB + CONSUMS",
-					["serverTime"] = 1709842116,
+					["message"] = "|cff979797|Hpratcopy|h[02:43:21]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Vraels-LivingFlame:3143:CHANNEL:1|h|cff3fc6eaVraels|r|h|cffd8d8d8]|r: Enchanter 225 LFW (Dismantle, +3 agi cloak, +2% block, speed boots, mining, etc.) WTS Portal UC 1g.",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862201,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						728, -- [3]
+						70, -- [1]
+						8, -- [2]
+						17, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39298.825,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [88]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:39]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Basedchains-LivingFlame:12248:CHANNEL:2|h|cff0070ddBasedchains|r|h|cffd8d8d8]|r: uc",
-					["serverTime"] = 1709842118,
+					["message"] = "|cff979797|Hpratcopy|h[02:43:24]|h|r [Y] |cffd8d8d8[|r|Hplayer:Vraels-LivingFlame:3146:YELL|h|cff3fc6eaVraels|r|h|cffd8d8d8]|r: Enchanter 225 LFW (Dismantle, +3 agi cloak, +2% block, speed boots, mining, etc.) WTS Portal UC 1g.",
+					["b"] = 0.250980406999588,
 					["r"] = 1,
+					["g"] = 0.250980406999588,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862204,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						800, -- [3]
+						7, -- [1]
+						6, -- [2]
+						19, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39300.109,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [89]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:40]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12252:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842119,
+					["message"] = "|cff979797|Hpratcopy|h[02:43:36]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Sneakyduck-LivingFlame:3152:CHANNEL:2|h|cfffff468Sneakyduck|r|h|cffd8d8d8]|r: WTB PORTAL FROM UC TO TB!",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862216,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						44, -- [3]
+						163, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39301.242,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [90]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:44]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Tuskpit-LivingFlame:12258:CHANNEL:2|h|cff3fc6eaTuskpit|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t TRAFFICKING YOU FROM POINT A, TO POINT B! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t || UC/ORG PORTS ARE UP! || I HAVE FOOD/WATER/BUFF FOR YOUR JOURNEY! || /W ME",
-					["serverTime"] = 1709842123,
+					["message"] = "|cff979797|Hpratcopy|h[02:43:56]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3177:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862236,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						692, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39305.828,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [91]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:46]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kotoba-LivingFlame:12259:CHANNEL:2|h|cff3fc6eaKotoba|r|h|cffd8d8d8]|r: |cffffffff<|r|cff00ff00PORTAL|r|cffffffff>|r FROM TB TO UC/ORG + water/food +buff 1G",
-					["serverTime"] = 1709842125,
+					["message"] = "|cff979797|Hpratcopy|h[02:44:14]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Sneakyduck-LivingFlame:3194:CHANNEL:2|h|cfffff468Sneakyduck|r|h|cffd8d8d8]|r: WTB PORTAL FROM UC TO TB!",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862253,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						20, -- [3]
+						163, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39307.244,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [92]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:46]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Noctém-LivingFlame:12260:CHANNEL:2|h|cff8787edNoctém|r|h|cffd8d8d8]|r: Enchanter LFW Got ALL enchants /w me",
-					["serverTime"] = 1709842125,
+					["message"] = "|cff979797|Hpratcopy|h[02:44:22]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3202:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862261,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						771, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39307.478,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [93]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:46]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709842125,
+					["message"] = "|cff979797|Hpratcopy|h[02:44:45]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3220:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862284,
 					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
-						19, -- [3]
+						71, -- [1]
+						1, -- [2]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39307.478,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [94]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:46]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Otherwarrior-LivingFlame:12264:CHANNEL:2|h|cffc69b6dOtherwarrior|r|h|cffd8d8d8]|r: LFM GNOMEREGAN Guild run  fast clear 1 shot all MS OS ROLL Full consumes + w.buffs + 6/6 Log is required.  Mekkatorque's Arcano-Shredder is HR.  NEED WARLOCK  OFF TANK  - DISCO",
-					["serverTime"] = 1709842125,
+					["message"] = "|cff979797|Hpratcopy|h[02:45:14]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Fùn-LivingFlame:3252:CHANNEL:2|h|cff3fc6eaFùn|r|h|cffd8d8d8]|r: wtb boost rfc",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862313,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						667, -- [3]
+						121, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39307.826,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [95]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:48]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Stjärtmage:12267:CHANNEL:2|h|cffc69b6dStjärtmage|r|h|cffd8d8d8]|r: why is |cffffffff|Hitem:21151::::::::1:::::::::|h[Rumsey Rum Black Label]|h|r crazy expensive?",
-					["serverTime"] = 1709842127,
+					["message"] = "|cff979797|Hpratcopy|h[02:45:16]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3254:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862315,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						804, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39309.595,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [96]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:53]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Ninjago-LivingFlame:12280:CHANNEL:2|h|cfffff468Ninjago|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|tLF1M SM GY need Tank|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842132,
+					["message"] = "|cff979797|Hpratcopy|h[02:45:57]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Polishdog-LivingFlame:3297:CHANNEL:1|h|cff3fc6eaPolishdog|r|h|cffd8d8d8]|r: LF1M STV, need HEAL",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862356,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						792, -- [3]
+						70, -- [1]
+						8, -- [2]
+						165, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39314.978,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [97]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:55]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Taxitb-LivingFlame:12282:CHANNEL:2|h|cffff7c0aTaxitb|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_4:0|tWTS SUMMON TB 2g /w \"|cffffff00|Hinvplr:Taxitb-LivingFlame|h[inv]|h|r\"",
-					["serverTime"] = 1709842134,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:04]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3307:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862363,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						669, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39316.059,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [98]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:55]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Warlor-LivingFlame:12284:CHANNEL:2|h|cff8787edWarlor|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Warlor-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842134,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:21]|h|r Bid accepted.",
+					["b"] = 0,
 					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862380,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						35, -- [3]
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39316.059,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [99]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:57]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12287:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK  (have sum)",
-					["serverTime"] = 1709842136,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:21]|h|r You won an auction for Lesser Magic Wand",
+					["b"] = 0,
 					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862380,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						783, -- [3]
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39318.535,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [100]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:58]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Otherwarrior-LivingFlame:12289:CHANNEL:2|h|cffc69b6dOtherwarrior|r|h|cffd8d8d8]|r: LFM GNOMEREGAN Guild run  fast clear 1 shot all MS OS ROLL Full consumes + w.buffs + 6/6 Log is required.  Mekkatorque's Arcano-Shredder is HR.  NEED WARLOCK  OFF TANK  - DISCO",
-					["serverTime"] = 1709842137,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:22]|h|r Bid accepted.",
+					["b"] = 0,
 					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862381,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						667, -- [3]
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39319.699,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [101]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:58]|h|r [Y] |cffd8d8d8[|r|Hplayer:Drolzu-LivingFlame:12291:YELL|h|cffff7c0aDrolzu|r|h|cffd8d8d8]|r: >>> ENCHANTER 225 - All Recipes Phase 2 including gnomeregan  <<< LFW",
-					["serverTime"] = 1709842137,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:22]|h|r You won an auction for Lesser Magic Wand",
+					["b"] = 0,
 					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862381,
 					["extraData"] = {
-						7, -- [1]
-						90, -- [2]
-						226, -- [3]
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39319.934,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [102]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:08:59]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Vintrage-LivingFlame:12295:CHANNEL:2|h|cffc69b6dVintrage|r|h|cffd8d8d8]|r: WTB SUMMON Swamp of Sorrows",
-					["serverTime"] = 1709842138,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:25]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Fùn-LivingFlame:3336:CHANNEL:2|h|cff3fc6eaFùn|r|h|cffd8d8d8]|r: wtb boost rfc",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862384,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						777, -- [3]
+						121, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39320.771,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [103]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:01]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kotoba-LivingFlame:12298:CHANNEL:2|h|cff3fc6eaKotoba|r|h|cffd8d8d8]|r: |cffffffff<|r|cff00ff00PORTAL|r|cffffffff>|r FROM TB TO UC/ORG + water/food +buff 1G",
-					["serverTime"] = 1709842140,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:38]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Polishdog-LivingFlame:3341:CHANNEL:1|h|cff3fc6eaPolishdog|r|h|cffd8d8d8]|r: LF1M STV, need HEAL",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862397,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						20, -- [3]
+						70, -- [1]
+						8, -- [2]
+						165, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39322.47,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [104]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:05]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12305:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! || Also sell sleep bag XP buff|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842144,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:42]|h|r You receive item: |cff1eff00|Hitem:11287::::::::20:::::::::|h[Lesser Magic Wand]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862401,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						739, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39326.355,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [105]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:06]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Tuskpit-LivingFlame:12307:CHANNEL:2|h|cff3fc6eaTuskpit|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t TRAFFICKING YOU FROM POINT A, TO POINT B! |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t || UC/ORG PORTS ARE UP! || I HAVE FOOD/WATER/BUFF FOR YOUR JOURNEY! || /W ME",
-					["serverTime"] = 1709842145,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:43]|h|r You receive item: |cff1eff00|Hitem:11287::::::::20:::::::::|h[Lesser Magic Wand]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862402,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						692, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39327.752,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [106]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:07]|h|r [Y] |cffd8d8d8[|r|Hplayer:Helge-LivingFlame:12309:YELL|h|cffffffffHelge|r|h|cffd8d8d8]|r: LF Rogue to OPEN |cff1eff00|Hitem:4637::::::::40:::::::::|h[Steel Lockbox]|h|r",
-					["serverTime"] = 1709842146,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:46]|h|r You receive item: |cff1eff00|Hitem:211367::::::::20:::::::::|h[Supply Shipment]|h|r.",
+					["b"] = 0,
+					["r"] = 0,
+					["g"] = 0.6666666865348816,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862405,
 					["extraData"] = {
-						7, -- [1]
-						90, -- [2]
-						806, -- [3]
+						28, -- [1]
+						38, -- [2]
+						39, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39328.404,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
 				}, -- [107]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:09]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12312:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  - 1 DPS",
-					["serverTime"] = 1709842148,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:52]|h|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Vraels-LivingFlame:3348:CHANNEL:1|h|cff3fc6eaVraels|r|h|cffd8d8d8]|r: Enchanter 225 LFW (Dismantle, +3 agi cloak, +2% block, speed boots, mining, etc.) WTS Portal UC 1g.",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862411,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
+						70, -- [1]
+						8, -- [2]
+						17, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39330.301,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [108]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:10]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12314:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842149,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:54]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Akümad:3350:CHANNEL:2|h|cffaad372Akümad|r|h|cffd8d8d8]|r: |cffffff00|Hinvplr:Akümad|h[inv]|h|r layer 3 pls",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862413,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						44, -- [3]
+						167, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39331.635,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [109]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:15]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kotoba-LivingFlame:12320:CHANNEL:2|h|cff3fc6eaKotoba|r|h|cffd8d8d8]|r: |cffffffff<|r|cff00ff00PORTAL|r|cffffffff>|r FROM TB TO UC/ORG + water/food +buff 1G",
-					["serverTime"] = 1709842154,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						20, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39336.467,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [110]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:15]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709842154,
-					["r"] = 1,
-					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
-						19, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39336.767,
-					["g"] = 0.250980406999588,
+					["message"] = "|cff979797|Hpratcopy|h[02:46:55]|h|r [Y] |cffd8d8d8[|r|Hplayer:Vraels-LivingFlame:3351:YELL|h|cff3fc6eaVraels|r|h|cffd8d8d8]|r: Enchanter 225 LFW (Dismantle, +3 agi cloak, +2% block, speed boots, mining, etc.) WTS Portal UC 1g.",
 					["b"] = 0.250980406999588,
-				}, -- [111]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:17]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12323:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK  (have sum)",
-					["serverTime"] = 1709842156,
 					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						783, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39338.816,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [112]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:20]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12325:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  - 1 DPS Nothing HR",
-					["serverTime"] = 1709842159,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39341.318,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [113]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:22]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Sudo-LivingFlame:12327:CHANNEL:2|h|cff0070ddSudo|r|h|cffd8d8d8]|r: lf enchanter dismantle",
-					["serverTime"] = 1709842161,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						158, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39343.085,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [114]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:26]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Warlor-LivingFlame:12333:CHANNEL:2|h|cff8787edWarlor|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Warlor-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842165,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						35, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39347.27,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [115]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:35]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Frøstt-LivingFlame:12347:CHANNEL:2|h|cff8787edFrøstt|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t  ENCHANTER 225 (GOT ALL ENCHANTS) || Free with your mats. Tips always appreciated! || Also sell sleep bag XP buff|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
-					["serverTime"] = 1709842174,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						739, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39356.714,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [116]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:37]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kotoba-LivingFlame:12349:CHANNEL:2|h|cff3fc6eaKotoba|r|h|cffd8d8d8]|r: |cffffffff<|r|cff00ff00PORTAL|r|cffffffff>|r FROM TB TO UC/ORG + water/food +buff 1G",
-					["serverTime"] = 1709842176,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						20, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39358.108,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [117]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:41]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Summorc-LivingFlame:12359:CHANNEL:2|h|cff8787edSummorc|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Summorc-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842180,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						44, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39362.432,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [118]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:41]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poshlayamol-LivingFlame:12360:CHANNEL:2|h|cffaad372Poshlayamol|r|h|cffd8d8d8]|r: LFM ULDAMAN farm revelosh+ironaya TANK  (have sum)",
-					["serverTime"] = 1709842180,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						783, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39362.432,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [119]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:44]|h|r [Y] |cffd8d8d8[|r|Hplayer:Drolzu-LivingFlame:12365:YELL|h|cffff7c0aDrolzu|r|h|cffd8d8d8]|r: >>> ENCHANTER 225 - All Recipes Phase 2 including gnomeregan  <<< LFW",
-					["serverTime"] = 1709842183,
-					["r"] = 1,
+					["g"] = 0.250980406999588,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862414,
 					["extraData"] = {
 						7, -- [1]
-						90, -- [2]
-						226, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39365.633,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
-				}, -- [120]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:44]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Noctém-LivingFlame:12366:CHANNEL:2|h|cff8787edNoctém|r|h|cffd8d8d8]|r: Enchanter LFW Got ALL enchants /w me",
-					["serverTime"] = 1709842183,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						771, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39365.633,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
-				}, -- [121]
-				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:46]|h|r Nogg yells: Alright everyone listen up. Some stooge... uh, I mean \"brave adventurer\" brought me a whole huge pile of secret gnomish tech and once we finish applying our superior goblin ingenuity to it we are going to use it to BLOW SO MUCH STUFF UP. Gather 'round and let's party!",
-					["serverTime"] = 1709842185,
-					["r"] = 1,
-					["extraData"] = {
-						15, -- [1]
-						18, -- [2]
+						6, -- [2]
 						19, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39367.299,
-					["g"] = 0.250980406999588,
-					["b"] = 0.250980406999588,
+				}, -- [110]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:46:59]|h|r Your Durotar Supply and Logistics reputation has increased by 450.",
+					["b"] = 1,
+					["r"] = 0.501960813999176,
+					["g"] = 0.501960813999176,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862418,
+					["extraData"] = {
+						36, -- [1]
+						169, -- [2]
+						170, -- [3]
+						["n"] = 3,
+					},
+				}, -- [111]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:46:59]|h|r A Full Shipment completed.",
+					["b"] = 0,
+					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862418,
+					["extraData"] = {
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
+						["n"] = 3,
+					},
+				}, -- [112]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:46:59]|h|r Experience gained: 70.",
+					["b"] = 0,
+					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862418,
+					["extraData"] = {
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
+						["n"] = 3,
+					},
+				}, -- [113]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:46:59]|h|r Received 15 Silver.",
+					["b"] = 0,
+					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862418,
+					["extraData"] = {
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
+						["n"] = 3,
+					},
+				}, -- [114]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:47:17]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Verevki-LivingFlame:3373:CHANNEL:2|h|cffc69b6dVerevki|r|h|cffd8d8d8]|r: Enchanter [lvl 225] LFW your mats + tip",
+					["b"] = 0.7529412508010864,
+					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862436,
+					["extraData"] = {
+						71, -- [1]
+						1, -- [2]
+						54, -- [3]
+						["n"] = 3,
+					},
+				}, -- [115]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:47:30]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3386:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
+					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862449,
+					["extraData"] = {
+						71, -- [1]
+						1, -- [2]
+						139, -- [3]
+						["n"] = 3,
+					},
+				}, -- [116]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:48:25]|h|r You have learned a new spell: Frost Armor (Rank 3).",
+					["b"] = 0,
+					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862504,
+					["extraData"] = {
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
+						["n"] = 3,
+					},
+				}, -- [117]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:48:28]|h|r You have learned a new spell: Blizzard (Rank 1).",
+					["b"] = 0,
+					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862507,
+					["extraData"] = {
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
+						["n"] = 3,
+					},
+				}, -- [118]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:48:29]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Shaoman-LivingFlame:3421:CHANNEL:2|h|cff0070ddShaoman|r|h|cffd8d8d8]|r: lfg rfa",
+					["b"] = 0.7529412508010864,
+					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862508,
+					["extraData"] = {
+						71, -- [1]
+						1, -- [2]
+						171, -- [3]
+						["n"] = 3,
+					},
+				}, -- [119]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:48:29]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Fùn-LivingFlame:3422:CHANNEL:2|h|cff3fc6eaFùn|r|h|cffd8d8d8]|r: wtb boost rfc",
+					["b"] = 0.7529412508010864,
+					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862508,
+					["extraData"] = {
+						71, -- [1]
+						1, -- [2]
+						121, -- [3]
+						["n"] = 3,
+					},
+				}, -- [120]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:48:32]|h|r You have learned a new spell: Mana Shield (Rank 1).",
+					["b"] = 0,
+					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862512,
+					["extraData"] = {
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
+						["n"] = 3,
+					},
+				}, -- [121]
+				{
+					["message"] = "|cff979797|Hpratcopy|h[02:49:09]|h|r You have learned a new spell: Fire Ward (Rank 1).",
+					["b"] = 0,
+					["r"] = 1,
+					["g"] = 1,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862549,
+					["extraData"] = {
+						1, -- [1]
+						32, -- [2]
+						33, -- [3]
+						["n"] = 3,
+					},
 				}, -- [122]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:50]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Vintrage-LivingFlame:12372:CHANNEL:2|h|cffc69b6dVintrage|r|h|cffd8d8d8]|r: WTB SUMMON Swamp of Sorrows",
-					["serverTime"] = 1709842189,
+					["message"] = "|cff979797|Hpratcopy|h[02:49:26]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Silox-LivingFlame:3459:CHANNEL:2|h|cffffffffSilox|r|h|cffd8d8d8]|r: --GNOMER ENCHANTs--Dismantle+3 AGI on cloak or feet,+5 SPIRIT,INTELECT or STRENGTH on wrist,STAMINA on feet,+5 damage WEAPON,+3 intelect WEAPON,+2 STAT, 50 MANA on chest, your mats + tip you wish",
+					["b"] = 0.7529412508010864,
 					["r"] = 1,
+					["g"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["serverTime"] = 1709862566,
 					["extraData"] = {
 						71, -- [1]
 						1, -- [2]
-						777, -- [3]
+						139, -- [3]
 						["n"] = 3,
 					},
-					["timestamp"] = 39371.169,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
 				}, -- [123]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:52]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12374:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  Nothing HR",
-					["serverTime"] = 1709842191,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39373.954,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["message"] = "0 days, 0 hours, 0 minutes, 15 seconds",
+					["timestamp"] = 3715.772,
 				}, -- [124]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:53]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skadÿ-LivingFlame:12377:CHANNEL:2|h|cffaad372Skadÿ|r|h|cffd8d8d8]|r: LFM BFD  NEED TANK  Nothing HR",
-					["serverTime"] = 1709842192,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						753, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39374.969,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["message"] = "========== End of Scrollback ==========",
+					["timestamp"] = 3715.772,
 				}, -- [125]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:55]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Piñitos-LivingFlame:12383:CHANNEL:2|h|cfffff468Piñitos|r|h|cffd8d8d8]|r: LFM GNOMEREGAN 1xMT  & 1xWAR OT - MS>OS 6/6 + WB + CONSUMS",
-					["serverTime"] = 1709842194,
-					["r"] = 1,
-					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						728, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39376.27,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["message"] = "|cFFFF1C1C Loaded: LFG Bulletin Board 3.17 by Vyscî-Whitemane",
+					["timestamp"] = 3715.772,
 				}, -- [126]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:56]|h|r |Hplayer:Routpriest:0:TEXT_EMOTE:|hRoutpriest|h thanks Sudo.",
-					["serverTime"] = 1709842195,
-					["r"] = 1,
-					["extraData"] = {
-						12, -- [1]
-						115, -- [2]
-						637, -- [3]
-						["n"] = 3,
-					},
-					["timestamp"] = 39377.402,
-					["g"] = 0.501960813999176,
-					["b"] = 0.250980406999588,
+					["message"] = "PixelPerfectAlign v1.14.06 by MooreaTv: type /ppa for command list/help.",
+					["timestamp"] = 3715.772,
 				}, -- [127]
 				{
-					["message"] = "|cff979797|Hpratcopy|h[21:09:58]|h|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Warlor-LivingFlame:12384:CHANNEL:2|h|cff8787edWarlor|r|h|cffd8d8d8]|r: |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|tWTS  SUMM to TB 2G /w |cffffff00|Hinvplr:Warlor-LivingFlame|h[inv]|h|r|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
-					["serverTime"] = 1709842197,
-					["r"] = 1,
+					["message"] = "|cff979797|Hpratcopy|h[02:49:40]|h|r Guild Message of the Day: 1: suk dik     2: ????       3: profit",
+					["r"] = 0.250980406999588,
 					["extraData"] = {
-						71, -- [1]
-						1, -- [2]
-						35, -- [3]
-						["n"] = 3,
+						5, -- [1]
+						["n"] = 1,
 					},
-					["timestamp"] = 39379.204,
-					["g"] = 0.7529412508010864,
-					["b"] = 0.7529412508010864,
+					["timestamp"] = 3715.772,
+					["g"] = 1,
+					["b"] = 0.250980406999588,
 				}, -- [128]
 			},
 			["maxElements"] = 128,
