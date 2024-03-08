@@ -20,20 +20,6 @@ X: 0
 Y: -47
 W: 800
 H: 694
-Frame: BagnonInventory1
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: 0
-Y: 0
-W: 308
-H: 317
-Frame: WeakAurasOptions
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 83
-Y: -18
-W: 830
-H: 665
 Frame: Five Second Rule Statusbar
 FrameLevel: 1
 Anchor: CENTER
