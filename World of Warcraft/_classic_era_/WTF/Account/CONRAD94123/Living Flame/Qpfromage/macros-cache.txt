@@ -1,8 +1,5 @@
 VER 3 0000000001000005 "Arcane Intellect" "INV_MISC_QUESTIONMARK"
 #showtooltip Arcane Intellect
-/cleartarget [dead][noharm]
-/targetenemy [dead][noharm]
-/startattack
 /cast Arcane Intellect
 END
 VER 3 0000000001000009 "Arcane Missiles" "INV_MISC_QUESTIONMARK"
@@ -38,14 +35,12 @@ VER 3 000000000100000A "Fire Ward" "INV_MISC_QUESTIONMARK"
 #showtooltip Fire Ward
 /cleartarget [dead][noharm]
 /targetenemy [dead][noharm]
-/startattack
 /cast Fire Ward
 END
 VER 3 0000000001000001 "Fireball" "INV_MISC_QUESTIONMARK"
 #showtooltip Fireball
 /cleartarget [dead][noharm]
 /targetenemy [dead][noharm]
-/startattack
 /cast Fireball
 END
 VER 3 0000000001000002 "Flamestrike" "INV_MISC_QUESTIONMARK"
@@ -66,6 +61,11 @@ VER 3 000000000100000B "Mana Shield" "INV_MISC_QUESTIONMARK"
 #showtooltip Mana Shield
 /cleartarget [dead][noharm]
 /targetenemy [dead][noharm]
-/startattack
 /cast Mana Shield
+END
+VER 3 000000000100000C "pyro" "134400"
+#showtooltip Pyroblast
+/cleartarget [dead][noharm]
+/targetenemy [dead][noharm]
+/cast Pyroblast
 END
