@@ -181,7 +181,7 @@ function Tab:CanPurchase()
 end
 
 function Tab:CanEdit()
-	return CanEditGuildBankTabInfo() and not self:IsCached()
+	return CanEditGuildBankTabInfo(self:GetID()) and not self:IsCached()
 end
 
 function Tab:IsActive()

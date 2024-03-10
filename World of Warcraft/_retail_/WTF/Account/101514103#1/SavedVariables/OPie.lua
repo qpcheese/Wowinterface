@@ -5,7 +5,7 @@ OPie_SavedData = {
 	["CharProfiles"] = {
 	},
 	["_TimeBand"] = 0.5625,
-	["_OPieVersion"] = "Zeta 4 (4.119)",
+	["_OPieVersion"] = "Zeta 4.5 (4.119)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingOptions"] = {

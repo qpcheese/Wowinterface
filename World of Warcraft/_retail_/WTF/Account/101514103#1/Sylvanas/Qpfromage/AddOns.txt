@@ -112,7 +112,7 @@ DeleteManaGem: enabled
 Details_Compare2: enabled
 Details_EncounterDetails: enabled
 Details_DataStorage: enabled
-FarmHud: enabled
+FarmHud: disabled
 Hermes: enabled
 I_Hear_You_RealID: enabled
 I_Hear_You_Whisper: enabled
@@ -251,7 +251,7 @@ Bagnonium: enabled
 HandyNotes_Oribos: disabled
 CursorMod: disabled
 LibPeriodicTable-3.1: enabled
-BattlePetBreedID: enabled
+BattlePetBreedID: disabled
 Outfitter: enabled
 ItemRack: enabled
 GearQuipper: enabled
@@ -310,13 +310,13 @@ AdiBags_ByExpansion_Dragonflight: disabled
 AdiBags_ByExpansion: disabled
 AdiBags_Bears_Keystones: disabled
 MinimapLine: disabled
-PetBattleMaster: enabled
+PetBattleMaster: disabled
 AdiBags: disabled
 BrainDead: enabled
 SyLevel: disabled
-Rematch: enabled
-tdBattlePetScript: enabled
-PetTracker: enabled
+Rematch: disabled
+tdBattlePetScript: disabled
+PetTracker: disabled
 OmniCD: disabled
 OmniCD_BattleRes: disabled
 SimpleItemLevel: disabled
@@ -353,17 +353,17 @@ BtWQuestsShadowlands: disabled
 BtWQuestsTheBurningCrusade: disabled
 BtWQuestsWrathOfTheLichKing: disabled
 BtWQuestsWarlordsOfDraenor: disabled
-PetTracker_Battle: enabled
-PetTracker_Config: enabled
-PetTracker_Journal: enabled
-PokemonTrainer: enabled
-PokemonTrainer_Loader: enabled
+PetTracker_Battle: disabled
+PetTracker_Config: disabled
+PetTracker_Journal: disabled
+PokemonTrainer: disabled
+PokemonTrainer_Loader: disabled
 Rarity: disabled
 Rarity_Options: disabled
 BigWigs_BattleForAzeroth: enabled
-AllTheThings: enabled
-Battle Pet Daily Tamer: enabled
-BattlePetBattleUITweaks: enabled
+AllTheThings: disabled
+Battle Pet Daily Tamer: disabled
+BattlePetBattleUITweaks: disabled
 BLU: disabled
 BigWigs_Voice_UT: disabled
 BigWigs_Voice_Marine: disabled
@@ -381,7 +381,7 @@ Overachiever_Cache: disabled
 Overachiever_Tabs: disabled
 Overachiever_Trade: disabled
 PetWalker: disabled
-SharedMedia_Deezi: disabled
+SharedMedia_Deezi: enabled
 CSC_StarCraftPack: enabled
 CSC_NotificationPack02: enabled
 CSC_NotificationPack01: enabled
@@ -396,7 +396,7 @@ Bagnon_Scrap: disabled
 BlizzMovePlugin_Rematch: disabled
 BlizzMove_Debug: enabled
 BlizzMove: enabled
-Annene: enabled
+Annene: disabled
 ActionButtonSettings: enabled
 BigWigs_Amirdrassil: enabled
 BigWigs_Voice_TBD: disabled
@@ -435,7 +435,7 @@ MythicIOGrabber: disabled
 LFGMPLUSGROUP: disabled
 Plumber: enabled
 MythicDungeonCalculator: disabled
-SharedMedia_Celestian: disabled
+SharedMedia_Celestian: enabled
 FailFeed: disabled
 HandyNotes_NooksAndCrannies: disabled
 HandyNotes_TravelGuide: disabled
@@ -451,7 +451,7 @@ SharedMedia_customs_dnnsGT: disabled
 SharedMedia_Haldu: disabled
 SharedMedia_N6: disabled
 SharedMedia_ACE: disabled
-SharedMedia_Isometric: disabled
+SharedMedia_Isometric: enabled
 FishingBuddy: disabled
 HandyNotes_LunarFestival: disabled
 DynamicCam: disabled

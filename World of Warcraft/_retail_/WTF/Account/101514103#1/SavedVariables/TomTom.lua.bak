@@ -7,7 +7,7 @@ TomTomDB = {
 		["Qpc - Draenor"] = "Default",
 		["Zelení - Draenor"] = "Default",
 		["Flurrq - Ragnaros"] = "Default",
-		["Cyclosarin - Ragnaros"] = "Default",
+		["Qpfromage - Sylvanas"] = "Default",
 		["Djagon - Ragnaros"] = "Default",
 		["Qubit - Ragnaros"] = "Default",
 		["Qute - Sylvanas"] = "Default",
@@ -16,11 +16,11 @@ TomTomDB = {
 		["Dogson - Ragnaros"] = "Default",
 		["Laurs - Ragnaros"] = "Default",
 		["Qpe - Ravencrest"] = "Default",
-		["Jerwin - Ragnaros"] = "Default",
 		["Qpebank - Draenor"] = "Default",
+		["Jerwin - Ragnaros"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
 		["Qpew - Ragnaros"] = "Default",
-		["Qpfromage - Sylvanas"] = "Default",
+		["Cyclosarin - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -64,7 +64,7 @@ TomTomWaypointsM = {
 		["Qpc - Draenor"] = "Qpc - Draenor",
 		["Zelení - Draenor"] = "Zelení - Draenor",
 		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
-		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+		["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
 		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
 		["Qute - Sylvanas"] = "Qute - Sylvanas",
@@ -73,11 +73,11 @@ TomTomWaypointsM = {
 		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
 		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
-		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 		["Qpebank - Draenor"] = "Qpebank - Draenor",
+		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
-		["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
+		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
 	},
 	["profiles"] = {
 		["Qpaladin - Ragnaros"] = {
@@ -97,9 +97,9 @@ TomTomWaypointsM = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["minimap"] = {
-						},
 						["world"] = {
+						},
+						["minimap"] = {
 						},
 					},
 					["minimap"] = true,
@@ -120,9 +120,9 @@ TomTomWaypointsM = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["minimap"] = {
-						},
 						["world"] = {
+						},
+						["minimap"] = {
 						},
 					},
 					["minimap"] = true,
@@ -149,9 +149,9 @@ TomTomWaypointsM = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["minimap"] = {
-						},
 						["world"] = {
+						},
+						["minimap"] = {
 						},
 					},
 					["minimap"] = true,
@@ -159,47 +159,24 @@ TomTomWaypointsM = {
 				},
 			},
 			[2151] = {
-				["2151:747200000:361400000:1 Rumbling Deposit 1 Cave"] = {
+				["2151:452800000:428700000:1 Rumbling Deposit 2 Cave"] = {
 					2151, -- [1]
-					0.7472, -- [2]
-					0.3614, -- [3]
+					0.4528, -- [2]
+					0.4287, -- [3]
 					["arrivaldistance"] = 15,
 					["crazy"] = true,
 					["persistent"] = true,
-					["desc"] = "1 Rumbling Deposit 1 Cave",
+					["desc"] = "1 Rumbling Deposit 2 Cave",
 					["silent"] = true,
 					["cleardistance"] = 0,
-					["title"] = "1 Rumbling Deposit 1 Cave",
+					["title"] = "1 Rumbling Deposit 2 Cave",
 					["from"] = "TomTom/way",
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["minimap"] = {
-						},
 						["world"] = {
 						},
-					},
-					["minimap"] = true,
-					["world"] = true,
-				},
-				["2151:786800000:352500000:1 Rumbling Deposit 1"] = {
-					2151, -- [1]
-					0.7868, -- [2]
-					0.3525, -- [3]
-					["arrivaldistance"] = 15,
-					["crazy"] = true,
-					["persistent"] = true,
-					["desc"] = "1 Rumbling Deposit 1",
-					["silent"] = true,
-					["cleardistance"] = 0,
-					["title"] = "1 Rumbling Deposit 1",
-					["from"] = "TomTom/way",
-					["callbacks"] = {
-						["distance"] = {
-						},
 						["minimap"] = {
-						},
-						["world"] = {
 						},
 					},
 					["minimap"] = true,
@@ -220,32 +197,55 @@ TomTomWaypointsM = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["minimap"] = {
-						},
 						["world"] = {
+						},
+						["minimap"] = {
 						},
 					},
 					["minimap"] = true,
 					["world"] = true,
 				},
-				["2151:452800000:428700000:1 Rumbling Deposit 2 Cave"] = {
+				["2151:786800000:352500000:1 Rumbling Deposit 1"] = {
 					2151, -- [1]
-					0.4528, -- [2]
-					0.4287, -- [3]
+					0.7868, -- [2]
+					0.3525, -- [3]
 					["arrivaldistance"] = 15,
 					["crazy"] = true,
 					["persistent"] = true,
-					["desc"] = "1 Rumbling Deposit 2 Cave",
+					["desc"] = "1 Rumbling Deposit 1",
 					["silent"] = true,
 					["cleardistance"] = 0,
-					["title"] = "1 Rumbling Deposit 2 Cave",
+					["title"] = "1 Rumbling Deposit 1",
 					["from"] = "TomTom/way",
 					["callbacks"] = {
 						["distance"] = {
 						},
+						["world"] = {
+						},
 						["minimap"] = {
 						},
+					},
+					["minimap"] = true,
+					["world"] = true,
+				},
+				["2151:747200000:361400000:1 Rumbling Deposit 1 Cave"] = {
+					2151, -- [1]
+					0.7472, -- [2]
+					0.3614, -- [3]
+					["arrivaldistance"] = 15,
+					["crazy"] = true,
+					["persistent"] = true,
+					["desc"] = "1 Rumbling Deposit 1 Cave",
+					["silent"] = true,
+					["cleardistance"] = 0,
+					["title"] = "1 Rumbling Deposit 1 Cave",
+					["from"] = "TomTom/way",
+					["callbacks"] = {
+						["distance"] = {
+						},
 						["world"] = {
+						},
+						["minimap"] = {
 						},
 					},
 					["minimap"] = true,
@@ -268,9 +268,9 @@ TomTomWaypointsM = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["minimap"] = {
-						},
 						["world"] = {
+						},
+						["minimap"] = {
 						},
 					},
 					["minimap"] = true,
@@ -284,7 +284,7 @@ TomTomWaypointsM = {
 		},
 		["Flurrq - Ragnaros"] = {
 		},
-		["Cyclosarin - Ragnaros"] = {
+		["Qpfromage - Sylvanas"] = {
 		},
 		["Djagon - Ragnaros"] = {
 		},
@@ -305,9 +305,9 @@ TomTomWaypointsM = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["minimap"] = true,
@@ -327,9 +327,9 @@ TomTomWaypointsM = {
 		},
 		["Qpe - Ravencrest"] = {
 		},
-		["Jerwin - Ragnaros"] = {
-		},
 		["Qpebank - Draenor"] = {
+		},
+		["Jerwin - Ragnaros"] = {
 		},
 		["Qpfromage - Ragnaros"] = {
 			[1527] = {
@@ -348,9 +348,9 @@ TomTomWaypointsM = {
 					["callbacks"] = {
 						["distance"] = {
 						},
-						["world"] = {
-						},
 						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["minimap"] = true,
@@ -360,7 +360,7 @@ TomTomWaypointsM = {
 		},
 		["Qpew - Ragnaros"] = {
 		},
-		["Qpfromage - Sylvanas"] = {
+		["Cyclosarin - Ragnaros"] = {
 		},
 	},
 }

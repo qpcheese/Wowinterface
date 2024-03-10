@@ -1,5 +1,13 @@
 
 BPBID_Options = {
+	["ManualChange"] = "v1.26.1",
+	["Tooltips"] = {
+		["Enabled"] = true,
+		["FBPT"] = true,
+		["PJT"] = true,
+		["BPT"] = true,
+		["BattleTooltip"] = true,
+	},
 	["Breedtip"] = {
 		["Current"] = true,
 		["Possible"] = true,
@@ -11,15 +19,7 @@ BPBID_Options = {
 		["CurrentStats"] = false,
 		["AllStats25"] = true,
 	},
-	["Tooltips"] = {
-		["Enabled"] = true,
-		["FBPT"] = true,
-		["PJT"] = true,
-		["BPT"] = true,
-		["BattleTooltip"] = true,
-	},
 	["format"] = 3,
-	["ManualChange"] = "v1.26.1",
 	["BattleFontFix"] = false,
 	["Names"] = {
 		["HSFUpdateRarity"] = true,
