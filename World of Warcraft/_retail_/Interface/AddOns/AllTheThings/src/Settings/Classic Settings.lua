@@ -164,9 +164,6 @@ local TooltipSettingsBase = {
 		["PlayDeathSound"] = false,
 		["Precision"] = 2,
 		["Progress"] = true,
-		["Report:Collected"] = true,
-		["Report:CompletedQuests"] = true,
-		["Report:UnsortedQuests"] = true,
 		["ShowIconOnly"] = false,
 		["Show:CraftedItems"] = false,
 		["Show:OtherCharacterQuests"] = false,
@@ -180,15 +177,36 @@ local TooltipSettingsBase = {
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
 		["SourceLocations:Things"] = true,
+		["SourceLocations:Unsorted"] = false,
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
 		["SocialProgress"] = true,
+		
+		-- Features: Reporting
+		["Report:Collected"] = true,
+		["Report:CompletedQuests"] = true,
+		["Report:UnsortedQuests"] = true,
+		
+		-- Nearby Content
+		["Nearby:ReportContent"] = false,
+		["Nearby:Type:npc"] = true,
+		["Nearby:Type:object"] = true,
+		["Nearby:PlotWaypoints"] = false,
+		["Nearby:ClearWaypoints"] = true,
+		["Nearby:IncludeCompleted"] = true,
+		["Nearby:IncludeUnknown"] = true,
+		["Nearby:FlashTheTaskbar"] = true,
+		["RareFind"] = true,
+		
+		-- Information Type Behaviours
+		["MaxTooltipTopLineLength"] = 999,
 		
 		-- Information Types
 		["description"] = true,
 		["playerCoord"] = true,
 		["requireEvent"] = true,
 		["requireSkill"] = true,
+		["providers"] = true,
 		["spellName"] = true,
 		["nextEvent"] = true,
 		["coords"] = true,
@@ -1029,24 +1047,15 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.CompletedThings(true)
 	end
 	
-	--[[
-	-- This isn't here?
-	if self.AccountWide.Achievements then
-		app.AchievementFilter = 4
-	else
-		app.AchievementFilter = 13
-	end
-	]]--
-	
-	
-	if self:Get("Filter:BoEs") then
-		filterSet.ItemUnbound(true)
-	else
-		filterSet.ItemUnbound()
-	end
 	if self:Get("Hide:BoEs") then
+		filterSet.ItemUnbound()
 		filterSet.Bound(true)
 	else
+		if self:Get("Filter:BoEs") then
+			filterSet.ItemUnbound(true)
+		else
+			filterSet.ItemUnbound()
+		end
 		filterSet.Bound()
 	end
 	if self:Get("Hide:PvP") then

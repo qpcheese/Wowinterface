@@ -17,8 +17,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["BetterBags_Backpack"] = {
 					["Backdrop"] = true,
@@ -30,8 +30,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_StanceBar"] = {
 					["Backdrop"] = true,
@@ -44,8 +44,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bagnon_guildbank - bags"] = {
 					["Backdrop"] = true,
@@ -57,8 +57,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
+					["Inherit"] = false,
 				},
 				["WeakAuras_YHx8M6RJMuU"] = {
 					["Backdrop"] = true,
@@ -71,8 +71,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_1"] = {
 					["Backdrop"] = true,
@@ -85,8 +85,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["BetterBags_Bank"] = {
 					["Backdrop"] = true,
@@ -98,8 +98,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["ItemRack_On screen menus"] = {
 					["Backdrop"] = true,
@@ -111,8 +111,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_3"] = {
 					["Backdrop"] = true,
@@ -125,8 +125,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bagnon_guildbank - items"] = {
 					["Backdrop"] = true,
@@ -138,8 +138,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
+					["Inherit"] = false,
 				},
 				["WeakAuras"] = {
 					["Backdrop"] = true,
@@ -151,8 +151,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["ItemRack_Character info menus"] = {
 					["Backdrop"] = true,
@@ -164,8 +164,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_4"] = {
 					["Backdrop"] = true,
@@ -178,8 +178,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_olekz7xQ2aU"] = {
 					["Backdrop"] = true,
@@ -192,8 +192,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_zPLjPLX8jWR"] = {
 					["Backdrop"] = true,
@@ -206,8 +206,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_)DE1Usb8F3b"] = {
 					["Backdrop"] = true,
@@ -220,8 +220,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_5"] = {
 					["Backdrop"] = true,
@@ -234,8 +234,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_I4vEWbAAHSA"] = {
 					["Backdrop"] = true,
@@ -248,8 +248,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_6MiRhsplbT2"] = {
 					["Backdrop"] = true,
@@ -262,8 +262,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_PetBar"] = {
 					["Backdrop"] = true,
@@ -276,8 +276,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["ItemRack"] = {
 					["Backdrop"] = true,
@@ -289,8 +289,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_0zbnqbpGTvp"] = {
 					["Backdrop"] = true,
@@ -303,8 +303,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_r0Np3XxJTPX"] = {
 					["Backdrop"] = true,
@@ -317,8 +317,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_6"] = {
 					["Backdrop"] = true,
@@ -331,8 +331,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_(ug6qHQnIYi"] = {
 					["Backdrop"] = true,
@@ -345,8 +345,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bagnon_bank - bags"] = {
 					["Backdrop"] = true,
@@ -358,8 +358,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
+					["Inherit"] = false,
 				},
 				["WeakAuras_F(0w6q50z4A"] = {
 					["Backdrop"] = true,
@@ -372,8 +372,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["ItemRack_Map icon menu"] = {
 					["Backdrop"] = true,
@@ -385,10 +385,10 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
-				["Bagnon_inventory - bags"] = {
+				["Bagnon_voidstorage - bags"] = {
 					["Backdrop"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
@@ -398,8 +398,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
+					["Inherit"] = false,
 				},
 				["WeakAuras_rHLrcjUfyY8"] = {
 					["Backdrop"] = true,
@@ -412,11 +412,12 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
-				["Bagnon_inventory - items"] = {
+				["WeakAuras_FyRoFObXRm3"] = {
 					["Backdrop"] = true,
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -428,8 +429,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
 				},
-				["Bagnon"] = {
+				["WeakAuras_bVQE18TyD50"] = {
 					["Backdrop"] = true,
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -441,8 +443,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
 				},
-				["Bartender4_Flyout"] = {
+				["WeakAuras_oIjIUHq7uAS"] = {
 					["Backdrop"] = true,
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -451,8 +454,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["BetterBags"] = {
 					["Backdrop"] = true,
@@ -464,8 +467,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_2"] = {
 					["Backdrop"] = true,
@@ -478,11 +481,26 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
-				["Bagnon_bank - items"] = {
+				["WeakAuras_73oVNol7Ywp"] = {
 					["Backdrop"] = true,
+					["Upgraded"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
+				},
+				["Bartender4_BagBar"] = {
+					["Backdrop"] = true,
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -505,22 +523,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
-				},
-				["Bartender4_BagBar"] = {
-					["Backdrop"] = true,
-					["Upgraded"] = true,
-					["Colors"] = {
-						["Backdrop"] = {
-							0.5176470875740051, -- [1]
-							0.5333333611488342, -- [2]
-							0.5568627715110779, -- [3]
-							0.9197917878627777, -- [4]
-						},
-					},
 					["SkinID"] = "Simplicity",
-					["Inherit"] = false,
 				},
 				["WeakAuras_MopcesrRtI7"] = {
 					["Backdrop"] = true,
@@ -533,76 +537,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
-					["Inherit"] = false,
-				},
-				["Bartender4"] = {
-					["Backdrop"] = true,
-					["Colors"] = {
-						["Backdrop"] = {
-							0.5176470875740051, -- [1]
-							0.5333333611488342, -- [2]
-							0.5568627715110779, -- [3]
-							0.9197917878627777, -- [4]
-						},
-					},
-					["SkinID"] = "Simplicity",
-					["Inherit"] = false,
-				},
-				["WeakAuras_fRHug1lIgr5"] = {
-					["Backdrop"] = true,
-					["Upgraded"] = true,
-					["Colors"] = {
-						["Backdrop"] = {
-							0.5176470875740051, -- [1]
-							0.5333333611488342, -- [2]
-							0.5568627715110779, -- [3]
-							0.9197917878627777, -- [4]
-						},
-					},
-					["SkinID"] = "Simplicity",
-					["Inherit"] = false,
-				},
-				["Bagnon_voidstorage - items"] = {
-					["Backdrop"] = true,
-					["Colors"] = {
-						["Backdrop"] = {
-							0.5176470875740051, -- [1]
-							0.5333333611488342, -- [2]
-							0.5568627715110779, -- [3]
-							0.9197917878627777, -- [4]
-						},
-					},
 					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
-				},
-				["WeakAuras_hoO4O(UAhAT"] = {
-					["Backdrop"] = true,
-					["Upgraded"] = true,
-					["Colors"] = {
-						["Backdrop"] = {
-							0.5176470875740051, -- [1]
-							0.5333333611488342, -- [2]
-							0.5568627715110779, -- [3]
-							0.9197917878627777, -- [4]
-						},
-					},
-					["SkinID"] = "Simplicity",
-					["Inherit"] = false,
-				},
-				["WeakAuras_qg0erK)hq7n"] = {
-					["Backdrop"] = true,
-					["Upgraded"] = true,
-					["Colors"] = {
-						["Backdrop"] = {
-							0.5176470875740051, -- [1]
-							0.5333333611488342, -- [2]
-							0.5568627715110779, -- [3]
-							0.9197917878627777, -- [4]
-						},
-					},
-					["SkinID"] = "Simplicity",
-					["Inherit"] = false,
 				},
 				["WeakAuras_mBTNpXjmDz8"] = {
 					["Backdrop"] = true,
@@ -615,8 +551,76 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
+				},
+				["WeakAuras_qg0erK)hq7n"] = {
+					["Backdrop"] = true,
+					["Upgraded"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
+				},
+				["Bagnon_voidstorage - items"] = {
+					["Backdrop"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
 					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+				},
+				["WeakAuras_hoO4O(UAhAT"] = {
+					["Backdrop"] = true,
+					["Upgraded"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
+				},
+				["WeakAuras_fRHug1lIgr5"] = {
+					["Backdrop"] = true,
+					["Upgraded"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
+				},
+				["Bartender4"] = {
+					["Backdrop"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_k(1zh0W2NxO"] = {
 					["Backdrop"] = true,
@@ -629,8 +633,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["WeakAuras_Wp((rlzMwL1"] = {
 					["Backdrop"] = true,
@@ -643,26 +647,11 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
-				},
-				["WeakAuras_73oVNol7Ywp"] = {
-					["Backdrop"] = true,
-					["Upgraded"] = true,
-					["Colors"] = {
-						["Backdrop"] = {
-							0.5176470875740051, -- [1]
-							0.5333333611488342, -- [2]
-							0.5568627715110779, -- [3]
-							0.9197917878627777, -- [4]
-						},
-					},
 					["SkinID"] = "Simplicity",
-					["Inherit"] = false,
 				},
-				["WeakAuras_oIjIUHq7uAS"] = {
+				["Bagnon_bank - items"] = {
 					["Backdrop"] = true,
-					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -674,9 +663,21 @@ MasqueDB = {
 					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bVQE18TyD50"] = {
+				["Bartender4_Flyout"] = {
 					["Backdrop"] = true,
-					["Upgraded"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
+				},
+				["Bagnon"] = {
+					["Backdrop"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -688,9 +689,8 @@ MasqueDB = {
 					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
 				},
-				["WeakAuras_FyRoFObXRm3"] = {
+				["Bagnon_inventory - items"] = {
 					["Backdrop"] = true,
-					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -702,7 +702,7 @@ MasqueDB = {
 					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
 				},
-				["Bagnon_voidstorage - bags"] = {
+				["Bagnon_inventory - bags"] = {
 					["Backdrop"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
@@ -712,8 +712,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
+					["Inherit"] = false,
 				},
 				["ItemRack_On screen panels"] = {
 					["Backdrop"] = true,
@@ -725,8 +725,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Masque"] = {
 					["Backdrop"] = true,

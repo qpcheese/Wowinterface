@@ -15,7 +15,7 @@ for key, value in pairs({
 	-- General Text
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
-	["YOU_DID_IT"] = "YOU DID IT!|r";
+	["YOU_DID_IT"] = "YOU DID IT!";
 
 	-- Big new chunk from AllTheThings.lua
 	["PROGRESS"] = "Progress";
@@ -126,14 +126,6 @@ for key, value in pairs({
 	["NO_ENTRIES"] = "No entries matching your filters were found.";
 	["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
-	["UNSORTED_1"] = "Unsorted";
-	["UNSORTED_2"] = " (Unsorted)";
-	["UNSORTED_DESC"] = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
-	["NEVER_IMPLEMENTED"] = "Never Implemented";
-	["NEVER_IMPLEMENTED_DESC"] = "Items here technically exist within the game but have never been made available to players";
-	["HIDDEN_QUEST_TRIGGERS"] = "Hidden Quest Triggers";
-	["HIDDEN_QUEST_TRIGGERS_DESC"] = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-	["UNSORTED_DESC_2"] = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 	["OPEN_AUTOMATICALLY"] = "Open Automatically";
 	["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
 	["MINI_LIST"] = "Mini List";
@@ -244,6 +236,7 @@ for key, value in pairs({
 	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
 	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
 	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
+	["LOCK_CRITERIA_SOURCE_LABEL"] = "Known Appearance";
 	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
 	["FUTURE_UNOBTAINABLE"] = "Future Unobtainable!";
 	["FUTURE_UNOBTAINABLE_TOOLTIP"] = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
@@ -251,7 +244,7 @@ for key, value in pairs({
 	["NEW_WITH_PATCH_TOOLTIP"] = "This shows you all of the content that has been added with the latest patch of the game.";
 	["TRADING_POST"] = "Trading Post";
 
-	["TIER_DATA"] = {
+	["EXPANSION_DATA"] = {
 		{	-- Classic
 			["icon"] = app.asset("Expansion_CLASSIC"),
 			["lore"] = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.",
@@ -325,6 +318,7 @@ for key, value in pairs({
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000"..ALT_KEY_TEXT.." click to Unlock this Window";
 	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
 	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
+	["SYM_ROW_SKIP_DESC"] = "Linked content is only displayed in the tooltip for this object.";
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["COMPLETED_BY"] = "Completed By: %s";
 	["OWNED_BY"] = "Owned by %s";
@@ -364,13 +358,13 @@ for key, value in pairs({
 				["TITLE_SOLO"] = "Solo ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
-	
+
 	["PRECISION_SLIDER"] = "Precision Level";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
 	["MINIMAP_SLIDER_TOOLTIP"] = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
 	["EXTRA_THINGS_LABEL"] = "Additional Resources";
-	
+
 	["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 	["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
@@ -393,16 +387,6 @@ for key, value in pairs({
 	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
 	["KEYBINDINGS"] = SETTINGS_KEYBINDINGS_LABEL;
 	["KEYBINDINGS_TEXT"] = "You can set keybindings for ATT in the game's options.";
-
-	-- Unobtainables tab
-	["UNOBTAINABLES_TAB"] = "Unobtainables";
-	["UNOBTAINABLE_LABEL"] = "Unobtainable Content";
-	["UNOBTAINABLE_ALL"] = "|cffECBC21Show All Unobtainable";
-	["NO_CHANCE_ALL"] = "|cffECBC21Show All \"No Chance\"";
-	["HIGH_CHANCE_ALL"] = "|cffECBC21Show All \"High Chance\"";
-	["CUSTOM_FILTERS_LABEL"] = "Automated Content";
-	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Interface tab
 	["INTERFACE_PAGE"] = UIOPTIONS_MENU;
@@ -461,8 +445,6 @@ for key, value in pairs({
 	["FOR_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 	["WITH_WRAPPING_CHECKBOX"] = "Allow Wrapping";
 	["WITH_WRAPPING_CHECKBOX_TOOLTIP"] = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
-	["REPLACE_QUEST_TOOLTIPS"] = "Replace Quest Tooltips";
-	["REPLACE_QUEST_TOOLTIPS_TOOLTIP"] = "Enable this option to have ATT replace the default Quest tooltips with custom Quest information and objective tracking.";
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
@@ -474,7 +456,7 @@ for key, value in pairs({
 	["MINI_LIST_SLIDER_LABEL"] = "Mini Lists Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 	["ADDITIONAL_LABEL"] = "Additional Information";
-	
+
 
 	-- Features tab
 	["MINIMAP_LABEL"] = "Minimap Button";
@@ -505,22 +487,6 @@ for key, value in pairs({
 	["NPC_DATA_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to nest all relevant data to a given npc (Common Boss Drops, Drops, etc) when shown in a mini list. This option may cause a significant amount of duplication, but the idea is that the npc will remain visible on the mini list as if you need something specific to that npc.\n\nDefault: Off";
 	["QUEST_CHAIN_NESTED_CHECKBOX"] = "Show Nested Quest Chains";
 	["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
-	["CELEBRATIONS_LABEL"] = "Celebrations & Sound Effects";
-	["AUDIO_CHANNEL"] = "Audio Channel";
-	["CHANNEL_MASTER"] = MASTER;
-	["CHANNEL_MUSIC"] = MUSIC_VOLUME;
-	["CHANNEL_SFX"] = FX_VOLUME;
-	["CHANNEL_AMBIENCE"] = AMBIENCE_VOLUME;
-	["CHANNEL_DIALOG"] = DIALOG_VOLUME;
-	["CELEBRATE_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Celebration";
-	["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-	["SOUNDPACK"] = "Soundpack";
-	["PLAY_DEATH_SOUND_CHECKBOX"] = "Play a Sound Effect when you Die";
-	["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a sound effect when you die.";
-	["WARN_REMOVED_CHECKBOX"] = "Removed Things Trigger a Warning";
-	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-	["SCREENSHOT_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Screenshot";
-	["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to take a screenshot for every Thing you collect.";
 	["ICON_LEGEND_LABEL"] = "Icon Legend";
 	["ICON_LEGEND_TEXT"] = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
 	["CHAT_COMMANDS_LABEL"] = "Chat Commands";

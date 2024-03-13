@@ -40,13 +40,13 @@ RaiderIO_Config = {
 	["showScoreModifier"] = false,
 	["enableLFGTooltips"] = true,
 	["showRoleIcons"] = true,
-	["positionProfileAuto"] = true,
+	["enableFriendsTooltips"] = true,
 	["enableClientEnhancements"] = true,
 	["showDropDownCopyURL"] = true,
 	["enableUnitTooltips"] = true,
 	["enableProfileModifier"] = true,
 	["hidePersonalRaiderIOProfile"] = false,
-	["enableFriendsTooltips"] = true,
+	["positionProfileAuto"] = true,
 	["lockProfile"] = false,
 	["showScoreInCombat"] = true,
 	["showRaiderIOProfile"] = true,
@@ -54,7 +54,10 @@ RaiderIO_Config = {
 }
 RaiderIO_LastCharacter = "eu-Qpfromage-sylvanas"
 RaiderIO_MissingCharacters = {
-	["eu-Jugohunter-tarren-mill"] = true,
+	["eu-Illifluuf-eredar"] = true,
+	["eu-Hunterstears-kazzak"] = true,
+	["eu-Heilewind-antonidas"] = true,
+	["eu-Nevstrasza-eredar"] = true,
 }
 RaiderIO_MissingServers = {
 }

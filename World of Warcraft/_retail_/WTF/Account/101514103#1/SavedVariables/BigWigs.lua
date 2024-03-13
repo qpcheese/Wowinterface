@@ -1,51 +1,17 @@
 
 BigWigs3DB = {
 	["namespaces"] = {
-		["BigWigs_Plugins_Victory"] = {
-			["profiles"] = {
-				["Default"] = {
-					["bigwigsMsg"] = true,
-					["soundName"] = "Gnosis_Electric",
-					["blizzMsg"] = false,
-				},
-			},
-		},
-		["BigWigs_Bosses_Fyrakk the Blazing"] = {
+		["BigWigs_Bosses_Witherbark"] = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Plugins_Sounds"] = {
+		["BigWigs_Bosses_Black Rook Hold Trash"] = {
 		},
-		["BigWigs_Bosses_Igira the Cruel"] = {
-			["profiles"] = {
-				["Default"] = {
-					[414888] = 0,
-				},
-			},
+		["BigWigs_Bosses_Blight of Galakrond"] = {
 		},
-		["BigWigs_Plugins_AutoReply"] = {
-			["profiles"] = {
-				["Default"] = {
-					["exitCombatOther"] = 1,
-					["exitCombat"] = 1,
-					["mode"] = 4,
-				},
-			},
+		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Bosses_Tindral Sageswift, Seer of the Flame"] = {
-		},
-		["BigWigs_Bosses_Nymue, Weaver of the Cycle"] = {
-		},
-		["BigWigs_Plugins_Countdown"] = {
-			["profiles"] = {
-				["Default"] = {
-					["fontSize"] = 100,
-					["fontColor"] = {
-						["b"] = 0.2588235437870026,
-					},
-					["fontName"] = "Bebas Neue Cyrillic Regular",
-				},
-			},
+		["BigWigs_Bosses_Dawn of the Infinite Trash"] = {
 		},
 		["BigWigs_Plugins_AltPower"] = {
 			["profiles"] = {
@@ -59,11 +25,56 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Bosses_Ancient Protectors"] = {
+		},
+		["BigWigs_Bosses_The Everbloom Trash"] = {
+		},
+		["BigWigs_Bosses_Yalnu"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+		},
+		["BigWigs_Bosses_Chronikar"] = {
+		},
+		["BigWigs_Bosses_Archmage Sol"] = {
+		},
+		["BigWigs_Plugins_Victory"] = {
+			["profiles"] = {
+				["Default"] = {
+					["bigwigsMsg"] = true,
+					["soundName"] = "Gnosis_Electric",
+					["blizzMsg"] = false,
+				},
+			},
+		},
+		["BigWigs_Bosses_Fyrakk the Blazing"] = {
+		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Bosses_Igira the Cruel"] = {
+			["profiles"] = {
+				["Default"] = {
+					[414888] = 0,
+				},
+			},
+		},
+		["BigWigs_Bosses_Smashspite"] = {
+		},
+		["BigWigs_Bosses_Amalgam of Souls"] = {
+		},
+		["BigWigs_Plugins_Countdown"] = {
+			["profiles"] = {
+				["Default"] = {
+					["fontSize"] = 100,
+					["fontColor"] = {
+						["b"] = 0.2588235437870026,
+					},
+					["fontName"] = "Bebas Neue Cyrillic Regular",
+				},
+			},
 		},
 		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 		},
@@ -81,17 +92,17 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Larodar, Keeper of the Flame"] = {
+		["BigWigs_Bosses_Kurtalos Ravencrest"] = {
 		},
-		["BigWigs_Bosses_Volcoross"] = {
+		["BigWigs_Bosses_Illysanna Ravencrest"] = {
 		},
-		["BigWigs_Bosses_Council of Dreams"] = {
+		["BigWigs_Bosses_Iridikron the Stonescaled"] = {
 		},
-		["BigWigs_Bosses_Gnarlroot"] = {
+		["LibDualSpec-1.0"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Bosses_Tindral Sageswift, Seer of the Flame"] = {
 		},
-		["BigWigs_Plugins_Messages"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -103,7 +114,14 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Smolderon"] = {
+		["BigWigs_Plugins_AutoReply"] = {
+			["profiles"] = {
+				["Default"] = {
+					["exitCombatOther"] = 1,
+					["exitCombat"] = 1,
+					["mode"] = 4,
+				},
+			},
 		},
 		["BigWigs_Plugins_Pull"] = {
 			["profiles"] = {
@@ -112,7 +130,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Bosses_Manifested Timeways"] = {
 		},
 	},
 	["global"] = {
@@ -147,8 +165,8 @@ BigWigs3DB = {
 			[-1597] = true,
 			[-2233] = true,
 			[956] = true,
-			[1003] = true,
 			[-323] = true,
+			[1003] = true,
 		},
 	},
 	["profileKeys"] = {
@@ -670,7 +688,7 @@ BigWigsStatsDB = {
 			},
 			["heroic"] = {
 				["best"] = 207.5699999999997,
-				["kills"] = 12,
+				["kills"] = 13,
 			},
 			["LFR"] = {
 				["best"] = 289.2940000000017,
@@ -688,7 +706,7 @@ BigWigsStatsDB = {
 				["wipes"] = 2,
 			},
 			["heroic"] = {
-				["kills"] = 17,
+				["kills"] = 18,
 				["wipes"] = 4,
 				["best"] = 167.6320000000005,
 			},
@@ -699,7 +717,7 @@ BigWigsStatsDB = {
 		},
 		[2555] = {
 			["heroic"] = {
-				["kills"] = 12,
+				["kills"] = 13,
 				["wipes"] = 8,
 				["best"] = 179.369999999999,
 			},
@@ -722,7 +740,7 @@ BigWigsStatsDB = {
 				["wipes"] = 152,
 			},
 			["heroic"] = {
-				["kills"] = 17,
+				["kills"] = 18,
 				["wipes"] = 11,
 				["best"] = 190.281999999992,
 			},
@@ -734,7 +752,7 @@ BigWigsStatsDB = {
 		},
 		[2556] = {
 			["heroic"] = {
-				["kills"] = 12,
+				["kills"] = 13,
 				["wipes"] = 4,
 				["best"] = 162.2750000000233,
 			},
@@ -759,7 +777,7 @@ BigWigsStatsDB = {
 				["kills"] = 3,
 			},
 			["heroic"] = {
-				["kills"] = 17,
+				["kills"] = 18,
 				["wipes"] = 4,
 				["best"] = 141.3800000000001,
 			},
@@ -779,7 +797,7 @@ BigWigsStatsDB = {
 				["kills"] = 3,
 			},
 			["heroic"] = {
-				["kills"] = 12,
+				["kills"] = 13,
 				["best"] = 126.530999999959,
 				["wipes"] = 3,
 			},
@@ -794,15 +812,15 @@ BigWigsStatsDB = {
 				["kills"] = 4,
 			},
 			["heroic"] = {
-				["kills"] = 18,
+				["kills"] = 19,
 				["wipes"] = 26,
 				["best"] = 305.1869999999908,
 			},
 		},
 		[2519] = {
 			["heroic"] = {
-				["kills"] = 16,
-				["wipes"] = 34,
+				["kills"] = 17,
+				["wipes"] = 35,
 				["best"] = 385.1480000000011,
 			},
 			["normal"] = {

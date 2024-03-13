@@ -10,12 +10,12 @@ UltraSquirtSettingsDB = {
 		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["global"] = {
-		["HealDelay"] = 1,
 		["BattleHealingThreshold"] = {
 			[107489] = 70,
 		},
-		["PetBattleCloseDelay"] = 1,
 		["AutoBandage"] = true,
+		["HealDelay"] = 1,
+		["PetBattleCloseDelay"] = 1,
 		["KEYBIND"] = "NUMPADDIVIDE",
 		["AutoPetTreat"] = true,
 	},

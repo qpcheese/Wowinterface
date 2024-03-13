@@ -3,7 +3,7 @@
 ## Name: AllTheThings
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Author: Crieve-Sargeras
-## Version: DF-3.9.9
+## Version: DF-3.9.11
 ## Interface: 30403
 ## X-Interface: 30403
 ## X-Wago-ID: yQKyY5K7
@@ -64,6 +64,7 @@ src\Modules\Filter.lua
 src\Modules\Social.lua
 src\Modules\Tooltip.lua
 # src\Modules\Upgrade.lua
+src\Modules\Vignette.lua
 
 # Expansion specific localization files
 db\Wrath\ExplorationDB.lua
@@ -78,6 +79,7 @@ src\Classes\CharacterClass.lua
 src\Classes\Difficulty.lua
 src\Classes\Quests.lua
 src\Classes\Encounter.lua
+src\Classes\Expansion.lua
 src\Classes\Maps.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua
@@ -88,7 +90,6 @@ src\Classes\Illusions.lua
 # src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
 src\Classes\Races.lua
-src\Classes\Tier.lua
 src\Classes\Title.lua
 src\Classes\Transmog.lua
 # src\Classes\CharacterUnlock.lua

@@ -137,16 +137,12 @@ if app.Debugging and app.Version == "[Git]" then
 		end);
 		for _,data in ipairs(CUSTOM_HEADERS) do
 			local id = data[1];
-			print("Custom Header " .. id .. " has " .. data[2] .. " references" .. (data[3] or "."));
 			local header = {};
 			if L.HEADER_NAMES[id] then header.name = L.HEADER_NAMES[id]; end
 			if L.HEADER_ICONS[id] then header.icon = L.HEADER_ICONS[id]; end
 			if L.HEADER_DESCRIPTIONS[id] then header.description = L.HEADER_DESCRIPTIONS[id]; end
-			if data[3] then
-				data[3] = header;
-			else
-				tinsert(data, header);
-			end
+			print("Header " .. id .. " has " .. data[2] .. " references" .. (data[3] or "."), header.name);
+			tinsert(data, header);
 		end
 		app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
 	end
@@ -237,6 +233,9 @@ local fieldConverters = {
 	["encounterID"] = function(group, value)
 		CacheField(group, "encounterID", value);
 	end,
+	["expansionID"] = function(group, value)
+		CacheField(group, "expansionID", value);
+	end,
 	["explorationID"] = function(group, value)
 		CacheField(group, "explorationID", value);
 	end,
@@ -292,9 +291,6 @@ local fieldConverters = {
 	end,
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
-	end,
-	["tierID"] = function(group, value)
-		CacheField(group, "tierID", value);
 	end,
 	["titleID"] = function(group, value)
 		CacheField(group, "titleID", value);
@@ -1081,7 +1077,7 @@ local function GenerateSourcePath(group, l, skip)
 	if group then
 		local parent = group.sourceParent or group.parent;
 		if parent then
-			if not group.itemID and not skip and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and (group.categoryID or group.tierID)))
+			if not group.itemID and not skip and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and (group.categoryID or group.expansionID)))
 				and ((parent.headerID == app.HeaderConstants.VENDORS or parent.headerID == app.HeaderConstants.QUESTS or parent.headerID == app.HeaderConstants.WORLD_BOSSES) or (parent.parent and parent.parent.parent)))) then
 				return GenerateSourcePath(parent.parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
 			end
@@ -1108,7 +1104,7 @@ local function GenerateSourcePath(group, l, skip)
 					return GenerateSourcePath(parent, 5, group.itemID or skip);
 				end
 			end
-			if parent.key == "categoryID" or parent.key == "tierID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
+			if parent.key == "categoryID" or parent.key == "expansionID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
 				return GenerateSourcePath(parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 			end
 			if l < 1 then

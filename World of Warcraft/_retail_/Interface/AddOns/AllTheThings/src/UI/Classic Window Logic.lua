@@ -760,6 +760,7 @@ end
 local function RowOnEnter(self)
 	local reference = self.ref;
 	if not reference then return; end
+	reference.working = nil;
 	local tooltip = GameTooltip;
 	if not tooltip then return end;
 	local modifier = IsModifierKeyDown();
@@ -893,48 +894,6 @@ local function RowOnEnter(self)
 			});
 		end
 	end
-	if reference.providers then
-		local counter = 0;
-		for i,provider in pairs(reference.providers) do
-			local providerType = provider[1];
-			local providerID = provider[2] or 0;
-			local providerString = UNKNOWN;
-			if providerType == "o" then
-				providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
-				if app.Settings:GetTooltipSetting("objectID") then
-					providerString = providerString .. ' (' .. providerID .. ')';
-				end
-			elseif providerType == "n" then
-				providerString = (providerID > 0 and app.NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
-				if app.Settings:GetTooltipSetting("creatureID") then
-					providerString = providerString .. ' (' .. providerID .. ')';
-				end
-			elseif providerType == "i" then
-				local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
-				providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
-				if app.Settings:GetTooltipSetting("itemID") then
-					providerString = providerString .. ' (' .. providerID .. ')';
-				end
-			end
-			tinsert(tooltipInfo, {
-				left = (counter == 0 and "Provider(s)"),
-				right = providerString,
-			});
-			counter = counter + 1;
-		end
-	end
-
-	if reference.questID and not reference.objectiveID then
-		app.AddQuestObjectives(tooltipInfo, reference);
-	end
-	if reference.sym then
-		tinsert(tooltipInfo, {
-			left = "Right click to view more information.",
-			r = 0.8, g = 0.8, b = 1,
-			wrap = true,
-		});
-	end
-	
 	
 	if reference.cost then
 		if type(reference.cost) == "table" then
@@ -978,7 +937,6 @@ local function RowOnEnter(self)
 	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
 		app.ProcessInformationTypes(tooltipInfo, reference);
-		tooltip.ATT_AttachComplete = true;
 	end
 	
 	-- Show Breadcrumb information
@@ -1112,8 +1070,13 @@ local function RowOnEnter(self)
 	
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
+	
+	-- Tooltip for something which was not attached via search, so mark it as complete here
+	tooltip.ATT_AttachComplete = not reference.working;
 end
 local function RowOnLeave(self)
+	local reference = self.ref;
+	if reference then reference.working = nil; end
 	local tooltip = GameTooltip;
 	app.ActiveRowReference = nil;
 	tooltip.ATT_AttachComplete = nil;
@@ -1540,7 +1503,8 @@ end
 local BuildCategory = function(self, headers, searchResults, inst)
 	local sources, header, headerType = {}, self;
 	for j,o in ipairs(searchResults) do
-		if not o.u or o.u ~= 1 then
+		local u = GetRelativeValue(o, "u");
+		if not u or u ~= 1 then
 			app.MergeClone(sources, o);
 			if o.parent then
 				if not o.sourceQuests then

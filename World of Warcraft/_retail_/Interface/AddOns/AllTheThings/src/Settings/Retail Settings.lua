@@ -163,7 +163,9 @@ local GeneralSettingsBase = {
 		["Window:CustomColors"] = {},
 	},
 }
-local FilterSettingsBase = {}
+local FilterSettingsBase = {
+	__index = app.Presets[app.Class] or app.Presets.ALL,
+};
 local TooltipSettingsBase = {
 	__index = {
 		["Auto:BountyList"] = false,
@@ -190,13 +192,10 @@ local TooltipSettingsBase = {
 		["Locations"] = 5,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
-		["Objectives"] = true,
+		["Objectives"] = false,
 		["Precision"] = 2,
 		["PlayDeathSound"] = false,
 		["Progress"] = true,
-		["Report:Collected"] = true,
-		["Report:CompletedQuests"] = true,
-		["Report:UnsortedQuests"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
 		["Show:Remaining"] = false,
@@ -208,6 +207,7 @@ local TooltipSettingsBase = {
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
 		["SourceLocations:Things"] = true,
+		["SourceLocations:Unsorted"] = false,
 		["DropChances"] = true,
 		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
@@ -219,11 +219,31 @@ local TooltipSettingsBase = {
 		["Updates:AdHoc"] = true,
 		["SocialProgress"] = true,
 		
+		-- Features: Reporting
+		["Report:Collected"] = true,
+		["Report:CompletedQuests"] = true,
+		["Report:UnsortedQuests"] = true,
+		
+		-- Nearby Content
+		["Nearby:ReportContent"] = false,
+		["Nearby:Type:npc"] = true,
+		["Nearby:Type:object"] = true,
+		["Nearby:PlotWaypoints"] = false,
+		["Nearby:ClearWaypoints"] = true,
+		["Nearby:IncludeCompleted"] = true,
+		["Nearby:IncludeUnknown"] = true,
+		["Nearby:FlashTheTaskbar"] = true,
+		["RareFind"] = true,
+		
+		-- Information Type Behaviours
+		["MaxTooltipTopLineLength"] = 999,
+		
 		-- Information Types
 		["description"] = true,
 		["playerCoord"] = true,
 		["requireEvent"] = true,
 		["requireSkill"] = true,
+		["providers"] = true,
 		["nextEvent"] = true,
 		["spellName"] = true,
 		["coords"] = true,
@@ -281,7 +301,6 @@ settings.Initialize = function(self)
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {} end
 	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {} end
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase)
-	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL
 
 	-- force re-enable of optional filters which become not optional
 	-- (any filterID's here must be 'true' in all class presets)
@@ -292,6 +311,7 @@ settings.Initialize = function(self)
 		end
 	end
 
+	self.sliderMaxTooltipTopLineLength:SetValue(self:GetTooltipSetting("MaxTooltipTopLineLength"))
 	self.sliderSummarizeThings:SetValue(self:GetTooltipSetting("ContainsCount") or 25)
 	self.sliderSourceLocations:SetValue(self:GetTooltipSetting("Locations") or 5)
 	self.sliderMainListScale:SetValue(self:GetTooltipSetting("MainListScale"))
@@ -812,10 +832,22 @@ ATTSettingsObjectMixin = {
 		label:SetText(text)
 		return label
 	end,
+	MarkAsWIP = function(self)
+		local wip = self:CreateTexture(nil, "OVERLAY");
+		wip:SetPoint("LEFT", self.Text or self, "RIGHT", 2, 0);
+		wip:SetTexture(app.asset("WIP"));
+		wip:SetScale(0.5);
+		--wip:SetRotation(-270);
+		wip:Show();
+	end,
 	-- Registers an Object within itself
 	RegisterObject = function(self, o)
-		if not self.Objects then self.Objects = {} end
-		tinsert(self.Objects, o);
+		local objects = self.Objects
+		if not objects then
+			objects = {}
+			self.Objects = objects;
+		end
+		tinsert(objects, o);
 	end,
 	-- Allows an Object to Refresh all Objects
 	RefreshChildren = function(self)
@@ -1364,19 +1396,16 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.CompletedThings(true)
 	end
-	if self.AccountWide.Achievements then
-		app.AchievementFilter = 4
-	else
-		app.AchievementFilter = 13
-	end
-	if self:Get("Filter:BoEs") and not self:Get("Hide:BoEs") then
-		filterSet.ItemUnbound(true)
-	else
-		filterSet.ItemUnbound()
-	end
+	
 	if self:Get("Hide:BoEs") then
+		filterSet.ItemUnbound()
 		filterSet.Bound(true)
 	else
+		if self:Get("Filter:BoEs") then
+			filterSet.ItemUnbound(true)
+		else
+			filterSet.ItemUnbound()
+		end
 		filterSet.Bound()
 	end
 	if self:Get("Hide:PvP") then

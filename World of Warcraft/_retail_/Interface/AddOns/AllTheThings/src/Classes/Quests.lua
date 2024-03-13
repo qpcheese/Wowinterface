@@ -578,20 +578,21 @@ PrintQuestInfo = function(questID, new)
 			questRef = searchResults[1]
 			nmr = questRef.nmr
 			nmc = questRef.nmc
-			nyi = GetRelativeField(questRef, "u", 1)
+			nyi = GetRelativeField(questRef, "u", 1) or GetRelativeValue(questRef, "_unsorted")
 			hqt = GetRelativeValue(questRef, "_hqt")
 		else
 			for i,searchResult in ipairs(searchResults) do
 				if searchResult.key == "questID" then
 					nmr = nmr or searchResult.nmr
 					nmc = nmc or searchResult.nmc
-					nyi = nyi or GetRelativeField(searchResult, "u", 1)
+					nyi = nyi or GetRelativeField(searchResult, "u", 1) or GetRelativeValue(searchResult, "_unsorted")
 					hqt = hqt or GetRelativeValue(searchResult, "_hqt")
 					questRef = searchResult
 				end
 			end
 			if not questRef then
-				app.PrintDebug(Colorize("Failed to check quest info for: "..(questID or "???"), app.Colors.ChatLinkError))
+				-- This basically happens when a quest is both Sourced 2+ times and none have a key of questID (DMs)
+				-- app.PrintDebug(Colorize("Failed to check quest info for: "..(questID or "???"), app.Colors.ChatLinkError))
 				questRef = searchResults[1]
 			end
 		end
@@ -1039,7 +1040,7 @@ else
 end
 
 -- Set of questIDs which have a lock status cached. This is cleared during 'softRefresh' (i.e. any potential quest state change)
-local LockedQuestCache = {}
+local LockedQuestCache, LockedBreadcrumbCache = {}, {}
 -- Lock Criteria for Complex Quest Locking
 local criteriaFuncs = {
 	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
@@ -1070,9 +1071,7 @@ local criteriaFuncs = {
         return app.CurrentCharacter.Spells[spellID] or app.CurrentCharacter.ActiveSkills[spellID];
     end,
 	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL or "Learned Spell/Mount/Recipe",
-    text_spellID = function(spellID)
-        return app.GetSpellName(spellID);
-    end,
+    text_spellID = app.GetSpellName,
 
     factionID = function(v)
 		-- v = factionID.standingRequiredToLock
@@ -1089,6 +1088,15 @@ local criteriaFuncs = {
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
 		local name = GetFactionInfoByID(factionID) or "#"..(factionID or "??");
         return (L.LOCK_CRITERIA_FACTION_FORMAT or "%s with %s (Current: %s)"):format(app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
+    end,
+
+    sourceID = function(sourceID)
+		return app.IsAccountCached("Sources", sourceID)
+	end,
+	label_sourceID = L.LOCK_CRITERIA_SOURCE_LABEL or "Known Appearance",
+    text_sourceID = function(sourceID)
+		local group = app.SearchForObject("sourceID", sourceID, "field") or app.CreateItemSource(sourceID)
+        return group.link or group.text or RETRIEVING_DATA;
     end,
 };
 local function IsGroupLocked(t)
@@ -1146,7 +1154,7 @@ end
 local function LockedAsBreadcrumb(t)
 	local questID = t.questID;
 	-- already cached a locked status
-	local cached = LockedQuestCache[questID]
+	local cached = LockedBreadcrumbCache[questID]
 	if cached ~= nil then return cached end
 	if not IsQuestFlaggedCompleted(questID) then
 		local nextQuests = t.nextQuests;
@@ -1155,21 +1163,21 @@ local function LockedAsBreadcrumb(t)
 			for _,nqID in ipairs(nextQuests) do
 				if IsQuestFlaggedCompleted(nqID) then
 					-- app.PrintDebug("Locked Breadcrumb from",nqID,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
-					LockedQuestCache[questID] = true
+					LockedBreadcrumbCache[questID] = true
 					return true;
 				else
 					-- this questID may not even be available to pick up, so try to find a Thing with this questID to determine if the object is complete
 					nq = Search("questID", nqID, "field");
 					if nq and (nq.altcollected or nq.locked) then
 						-- app.PrintDebug("Locked Breadcrumb from",nq.hash,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
-						LockedQuestCache[questID] = true
+						LockedBreadcrumbCache[questID] = true
 						return true;
 					end
 				end
 			end
 		end
 		-- app.PrintDebug("Available Breadcrumb",app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
-		LockedQuestCache[questID] = false
+		LockedBreadcrumbCache[questID] = false
 		return false
 	else
 		-- completed quests can be permanently ignored for locked logic handling
@@ -1213,6 +1221,19 @@ local AndLockCriteria = {
 	end,
 }
 app.GlobalVariants.AndLockCriteria = AndLockCriteria
+-- bleh... ideally I'd prefer if the variant could be setup to refer to the original base class fields as well
+-- then appending a variant could append the additional logic, and still rely on the base logic if the additional
+-- logic fell through. i.e. for breadcrumbs... check variant of 'locked' and then fallback to the base breadcrumb.locked
+-- for now I guess this is an explicit variant which covers both
+local AndBreadcrumbWithLockCriteria = {
+	collectible = CollectibleAsQuestOrAsLocked,
+	locked = function(t)
+		return LockedAsQuest(t) or LockedAsBreadcrumb(t)
+	end,
+	__condition = function(t)
+		return t.lc or t.altQuests
+	end,
+}
 if app.IsRetail then
 	local WithTypeName = {
 		name = function(t)
@@ -1461,7 +1482,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end or CollectibleAsQuestOrAsLocked,
 	locked = LockedAsBreadcrumb,
 	variants = {
-		AndLockCriteria = AndLockCriteria,
+		AndBreadcrumbWithLockCriteria = AndBreadcrumbWithLockCriteria,
 	},
 }, (function(t) return t.isBreadcrumb; end)
 -- Both: World Quests (Baked back into Quest for now since multiple types can be WorldQuests)
@@ -1600,94 +1621,82 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		return 0;
 	end
 });
-app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
-	questID = function(t)
-		return t.vignetteID;
-	end,
-	name = function(t)
-		local crs = t.crs;
-		if crs then
-			local names, name, retry = {};
-			for i,creatureID in ipairs(crs) do
-				name = app.NPCNameFromID[creatureID];
-				if name then
-					tinsert(names, name);
-				else
-					retry = true;
+app.AddEventHandler("OnLoad", function()
+	app.Settings.CreateInformationType("Objectives", {
+		priority = 2.9,
+		text = L.OBJECTIVES,
+		Process = function(t, reference, info)
+			if reference.questID and not reference.objectiveID then
+				local objectified = false;
+				local questLogIndex = GetQuestLogIndexByID(reference.questID);
+				if questLogIndex then
+					local lore, objective = GetQuestLogQuestText(questLogIndex);
+					if lore and app.Settings:GetTooltipSetting("Lore") then
+						tinsert(info, {
+							left = lore,
+							color = app.Colors.TooltipLore,
+							wrap = true,
+						});
+					end
+					if objective then
+						tinsert(info, {
+							left = REQUIREMENTS,
+							r = 1, g = 1, b = 1,
+						});
+						tinsert(info, {
+							left = objective,
+							r = 0.4, g = 0.8, b = 1,
+							wrap = true,
+						});
+						objectified = true;
+					end
+				end
+				if not reference.saved then
+					local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
+					if objectives and #objectives > 0 then
+						if not objectified then
+							tinsert(info, {
+								left = REQUIREMENTS,
+								r = 1, g = 1, b = 1,
+							});
+						end
+						for i,objective in ipairs(objectives) do
+							local text = objective.text;
+							if text then
+								if text:sub(1,2) == " :" then
+									text = RETRIEVING_DATA .. text:sub(2);
+									reference.working = true;
+								else
+									local a, b = (" "):split(text);
+									if b == "" then
+										text = a .. " " .. RETRIEVING_DATA;
+										reference.working = true;
+									end
+								end
+							else
+								text = RETRIEVING_DATA;
+								reference.working = true;
+							end
+							
+							tinsert(info, {
+								left = "  " .. text,
+								right = app.GetCompletionIcon(objective.finished),
+								r = 1, g = 1, b = 1,
+								wrap = true,
+							});
+						end
+					end
 				end
 			end
-			if retry then return; end
-
-			local text = "";
-			app.Sort(names, app.SortDefaults.Strings);
-			for i,name in ipairs(names) do
-				if i > 1 then text = text .. ", "; end
-				text = text .. name;
-			end
-			t.name = text;
-			return text;
-		else
-			return "Invalid Vignette #" .. t.vignetteID;
-		end
-	end,
-	icon = function(t)
-		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
-	end,
-});
-app.AddQuestObjectives = function(info, reference)
-	local objectified = false;
-	local questLogIndex = GetQuestLogIndexByID(reference.questID);
-	if questLogIndex then
-		local lore, objective = GetQuestLogQuestText(questLogIndex);
-		if lore and app.Settings:GetTooltipSetting("Lore") then
-			tinsert(info, {
-				left = lore,
-				color = app.Colors.TooltipLore,
-				wrap = true,
-			});
-		end
-		if objective and app.Settings:GetTooltipSetting("Objectives") then
-			tinsert(info, {
-				left = REQUIREMENTS,
-				r = 1, g = 1, b = 1,
-			});
-			tinsert(info, {
-				left = objective,
-				r = 0.4, g = 0.8, b = 1,
-				wrap = true,
-			});
-			objectified = true;
-		end
-	end
-	if not reference.saved and app.Settings:GetTooltipSetting("Objectives") then
-		local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
-		if objectives and #objectives > 0 then
-			if not objectified then
-				tinsert(info, {
-					left = REQUIREMENTS,
-					r = 1, g = 1, b = 1,
-				});
-			end
-			for i,objective in ipairs(objectives) do
-				local _ = objective.text;
-				if not _ or _:sub(1, 1) == " " then
-					_ = RETRIEVING_DATA;
-				end
-				tinsert(info, {
-					left = "  " .. _,
-					right = app.GetCompletionIcon(objective.finished),
-					r = 1, g = 1, b = 1,
-					wrap = true,
-				});
-			end
-		end
-	end
-end
+		end,
+	});
+end);
 
 -- Game Events that trigger visual updates, but no computation updates.
 local softRefresh = function()
 	app.WipeSearchCache();
 	wipe(LockedQuestCache)
+	wipe(LockedBreadcrumbCache)
 end;
 app.events.BAG_NEW_ITEMS_UPDATED = softRefresh;
 if app.IsClassic then

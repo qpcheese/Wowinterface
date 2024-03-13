@@ -13,7 +13,7 @@ RaiderIO: enabled
 RaiderIO_DB_EU_M: enabled
 RaiderIO_DB_EU_R: enabled
 RaiderIO_DB_EU_F: enabled
-WorldQuestsList: enabled
+WorldQuestsList: disabled
 QuickQuest: disabled
 NameplateSCT: disabled
 Masque_OyanaUI: disabled
@@ -28,7 +28,7 @@ BigWigs_WarlordsOfDraenor: disabled
 BigWigs_MistsOfPandaria: disabled
 BigWigs_Legion: disabled
 BigWigs_Classic: disabled
-BigWigs_Cataclysm: disabled
+BigWigs_Cataclysm: enabled
 BigWigs_BurningCrusade: disabled
 BigWigs_Core: enabled
 BigWigs_Options: enabled
@@ -86,7 +86,7 @@ AceGUI-3.0_SFX-Widgets: disabled
 LibDualSpec-1.0: enabled
 ShadowedUFFacade: disabled
 MasqueBlizzBars: disabled
-AddonUsage: enabled
+AddonUsage: disabled
 Details_RaidCheck: enabled
 Details_Streamer: disabled
 Details_TinyThreat: enabled
@@ -388,7 +388,7 @@ CSC_NotificationPack01: enabled
 CSC_EffectPack01: enabled
 SimpleSoundReplacer: disabled
 Rematch_TSMPetValues: disabled
-UltraSquirt: enabled
+UltraSquirt: disabled
 Scrap_Merchant: disabled
 Scrap_Config: disabled
 BigWigs_Shadowlands: disabled

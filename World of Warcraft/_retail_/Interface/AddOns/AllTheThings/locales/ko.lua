@@ -7,7 +7,7 @@ local L = app.L;
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
 	--TODO: L.THING_UNTIL = " THING UNTIL ";
-	--TODO: L.YOU_DID_IT = "YOU DID IT!|r";
+	--TODO: L.YOU_DID_IT = "YOU DID IT!";
 
 -- Big new chunk from AllTheThings.lua
 	--TODO: L.PROGRESS = "Progress";
@@ -53,16 +53,16 @@ local L = app.L;
 	--TODO: L.OPPOSITE_FACTION_EQ = "Opposite faction equivalent: ";
 	--TODO: L.SELFIE_DESC = "Take a selfie using your ";
 	--TODO: L.SELFIE_DESC_2 = " with |cffff8000";
-	--TODO: L.TIER_DATA[1].lore = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.";
-	--TODO: L.TIER_DATA[2].lore = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.";
-	--TODO: L.TIER_DATA[3].lore = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.";
-	--TODO: L.TIER_DATA[4].lore = "Cataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, introduces Archaeology & reforging, & restructures the world itself.";
-	--TODO: L.TIER_DATA[5].lore = "Mists of Pandaria is the fourth expansion pack. The expansion refocuses primarily on the war between the Alliance & Horde, in the wake of the accidental rediscovery of Pandaria. Adventurers rediscover the ancient pandaren people, whose wisdom will help guide them to new destinies; the Pandaren Empire's ancient enemy, the mantid; and their legendary oppressors, the enigmatic mogu. The land changes over time & the conflict between Varian Wrynn & Garrosh Hellscream escalates. As civil war wracks the Horde, the Alliance & forces in the Horde opposed to Hellscream's violent uprising join forces to take the battle directly to Hellscream & his Sha-touched allies in Orgrimmar.";
-	--TODO: L.TIER_DATA[6].lore = "Warlords of Draenor is the fifth expansion. Across Draenor's savage jungles & battle-scarred plains, Azeroth's heroes will engage in a mythic conflict involving mystical draenei champions & mighty orc clans, & cross axes with the likes of Grommash Hellscream, Blackhand, & Ner'zhul at the height of their primal power. Players will need to scour this unwelcoming land in search of allies to help build a desperate defense against the old Horde's formidable engine of conquest, or else watch their own world's bloody, war-torn history repeat itself.";
-	--TODO: L.TIER_DATA[7].lore = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";
-	--TODO: L.TIER_DATA[8].lore = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";
-	--TODO: L.TIER_DATA[9].lore = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.";
-	L.TIER_DATA[10].lore = "용군단 is the ninth expansion. 아제로스의 용군단이 부름을 받들어 선조의 보금자리인 용의 섬을 수호하고자 귀환했습니다. 섬 전역에서 정령 마력과 아제로스의 생명력이 넘쳐흐르는 지금, 용의 섬이 다시 한번 기지개를 켜며 깨어나고 있습니다. 여러분은 이제 태고의 경이를 모험하며 아득히 먼 옛날 잊힌 비밀을 탐구해야 합니다.";	--TODO: First sentence
+	--TODO: L.EXPANSION_DATA[1].lore = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.";
+	--TODO: L.EXPANSION_DATA[2].lore = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.";
+	--TODO: L.EXPANSION_DATA[3].lore = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.";
+	--TODO: L.EXPANSION_DATA[4].lore = "Cataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, introduces Archaeology & reforging, & restructures the world itself.";
+	--TODO: L.EXPANSION_DATA[5].lore = "Mists of Pandaria is the fourth expansion pack. The expansion refocuses primarily on the war between the Alliance & Horde, in the wake of the accidental rediscovery of Pandaria. Adventurers rediscover the ancient pandaren people, whose wisdom will help guide them to new destinies; the Pandaren Empire's ancient enemy, the mantid; and their legendary oppressors, the enigmatic mogu. The land changes over time & the conflict between Varian Wrynn & Garrosh Hellscream escalates. As civil war wracks the Horde, the Alliance & forces in the Horde opposed to Hellscream's violent uprising join forces to take the battle directly to Hellscream & his Sha-touched allies in Orgrimmar.";
+	--TODO: L.EXPANSION_DATA[6].lore = "Warlords of Draenor is the fifth expansion. Across Draenor's savage jungles & battle-scarred plains, Azeroth's heroes will engage in a mythic conflict involving mystical draenei champions & mighty orc clans, & cross axes with the likes of Grommash Hellscream, Blackhand, & Ner'zhul at the height of their primal power. Players will need to scour this unwelcoming land in search of allies to help build a desperate defense against the old Horde's formidable engine of conquest, or else watch their own world's bloody, war-torn history repeat itself.";
+	--TODO: L.EXPANSION_DATA[7].lore = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";
+	--TODO: L.EXPANSION_DATA[8].lore = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";
+	--TODO: L.EXPANSION_DATA[9].lore = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.";
+	L.EXPANSION_DATA[10].lore = "용군단 is the ninth expansion. 아제로스의 용군단이 부름을 받들어 선조의 보금자리인 용의 섬을 수호하고자 귀환했습니다. 섬 전역에서 정령 마력과 아제로스의 생명력이 넘쳐흐르는 지금, 용의 섬이 다시 한번 기지개를 켜며 깨어나고 있습니다. 여러분은 이제 태고의 경이를 모험하며 아득히 먼 옛날 잊힌 비밀을 탐구해야 합니다.";	--TODO: First sentence
 	--TODO: L.TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 	--TODO: L.UPON_COMPLETION = "Upon Completion";
 	--TODO: L.UPON_COMPLETION_DESC = "The above quests need to be completed before being able to complete the things listed below.";
@@ -114,8 +114,7 @@ local L = app.L;
 	--TODO: L.NO_ENTRIES = "No entries matching your filters were found.";
 	--TODO: L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	--TODO: L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
-	--TODO: L.UNSORTED_1 = "Unsorted";
-	--TODO: L.UNSORTED_2 = " (Unsorted)";
+	--TODO: L.UNSORTED = "Unsorted";
 	--TODO: L.UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
 	--TODO: L.NEVER_IMPLEMENTED = "Never Implemented";
 	--TODO: L.NEVER_IMPLEMENTED_DESC = "Items here technically exist within the game but have never been made available to players";
@@ -302,18 +301,6 @@ local L = app.L;
 		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
-	-- Unobtainables tab
-		--TODO: L.UNOBTAINABLES_TAB = "Unobtainables";
-		--TODO: L.SEASONAL_LABEL = "Seasonal";
-		--TODO: L.SEASONAL_ALL = "|cffECBC21Show All Seasonal";
-		--TODO: L.UNOBTAINABLE_LABEL = "Unobtainable Content";
-		--TODO: L.UNOBTAINABLE_ALL = "|cffECBC21Show All Unobtainable";
-		--TODO: L.NO_CHANCE_ALL = "|cffECBC21Show All \"No Chance\"";
-		--TODO: L.HIGH_CHANCE_ALL = "|cffECBC21Show All \"High Chance\"";
-		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated Content";
-		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
-
 	-- Interface tab
 		--TODO: L.TOOLTIP_LABEL = "Tooltips";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
@@ -363,8 +350,6 @@ local L = app.L;
 		--TODO: L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		--TODO: L.WITH_WRAPPING_CHECKBOX = "Allow Wrapping",
 		--TODO: L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
-		--TODO: L.REPLACE_QUEST_TOOLTIPS = "Replace Quest Tooltips";
-		--TODO: L.REPLACE_QUEST_TOOLTIPS_TOOLTIP = "Enable this option to have ATT replace the default Quest tooltips with custom Quest information and objective tracking.";
 		--TODO: L.SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
 		--TODO: L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		--TODO: L.PERCENTAGES_CHECKBOX = "Show Percentage Completion";
@@ -404,17 +389,6 @@ local L = app.L;
 		--TODO: L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." right click) to sort by the total progress of each group (instead of by Name)";
 		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX = "Show Nested Quest Chains";
 		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
-		--TODO: L.CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
-		--TODO: L.AUDIO_CHANNEL = "Audio Channel";
-		--TODO: L.CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
-		--TODO: L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-		--TODO: L.SOUNDPACK = "Soundpack";
-		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
-		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
-		--TODO: L.WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
-		--TODO: L.WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
-		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
 		--TODO: L.ICON_LEGEND_LABEL = "Icon Legend";
 		--TODO: L.ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
 		--TODO: L.CHAT_COMMANDS_LABEL = "Chat Commands";
@@ -717,8 +691,14 @@ for key,value in pairs({
 	-- Classic Only, fully dynamic from within parser.
 
 	-- General: Unobtainables Page
+		--TODO: UNOBTAINABLES_PAGE = "Unobtainables";
+		--TODO: UNOBTAINABLE_LABEL = "Unobtainable Content";
+		--TODO: CUSTOM_FILTERS_LABEL = "Automated Content";
+		--TODO: CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+		--TODO: CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Interface Page
+		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page
 		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
@@ -741,6 +721,17 @@ for key,value in pairs({
 	-- Features Page
 
 	-- Features: Audio Page
+		--TODO: CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
+		--TODO: AUDIO_CHANNEL = "Audio Channel";
+		--TODO: CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
+		--TODO: CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
+		--TODO: SOUNDPACK = "Soundpack";
+		--TODO: PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
+		--TODO: PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
+		--TODO: WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
+		--TODO: WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
+		--TODO: SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
+		--TODO: SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
 
 	-- Features: Reporting Page
 		--TODO: REPORTING_LABEL = "Reporting";
@@ -750,6 +741,24 @@ for key,value in pairs({
 		--TODO: REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
 		--TODO: REPORT_UNSORTED_CHECKBOX = "Only 'Unsourced'";
 		--TODO: REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
+		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX = "Report Nearby Content";
+		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.";
+		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
+		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
+		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX = "Automatically Clear";
+		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically clear the waypoint plotted by the nearby content feature when the content itself becomes unavailable or you go out of range.";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX = "Include Creatures";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered creatures. (Rares, World Bosses, NPCs)";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "Include Treasures";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "Include Completed";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that completed based on your filters in ATT.";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "Include Unknown/Unsourced";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are not sourced in ATT.";
+		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "Flash the Taskbar";
+		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
+		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
+		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
 
 	-- Features: Sync Page
 	-- Retail Only, deprecated.

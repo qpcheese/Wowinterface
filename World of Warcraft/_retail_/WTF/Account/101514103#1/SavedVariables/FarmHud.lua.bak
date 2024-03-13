@@ -89,7 +89,7 @@ FarmHudDB = {
 	["trailPathTimeout"] = 60,
 	["tracking^133888"] = "client",
 	["time_bottom"] = false,
-	["SuperTrackedQuest"] = true,
+	["tracking^136464"] = "client",
 	["MinimapIcon"] = {
 		["minimapPos"] = 296.5650923222779,
 		["radius"] = 80,
@@ -97,21 +97,21 @@ FarmHudDB = {
 	},
 	["tracking^524052"] = "client",
 	["trailPathCount"] = 32,
-	["tracking^136459"] = "client",
+	["holdKeyForMouseOn"] = "C",
 	["tracking^133939"] = "client",
+	["tracking^136466"] = "client",
+	["coords_bottom"] = false,
+	["buttons_alpha"] = 0.6,
+	["gathercircle_show"] = false,
+	["tracking^535616"] = "client",
 	["time_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["coords_bottom"] = false,
-	["tracking^535616"] = "client",
-	["gathercircle_show"] = false,
-	["buttons_alpha"] = 0.6,
-	["tracking^136466"] = "client",
-	["holdKeyForMouseOn"] = "C",
+	["tracking^136459"] = "client",
 	["trailPathIcon"] = "arrow01",
 	["tracking^136452"] = "client",
-	["tracking^136464"] = "client",
+	["SuperTrackedQuest"] = true,
 }

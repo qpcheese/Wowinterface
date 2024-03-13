@@ -16,8 +16,8 @@ H: 694
 Frame: WorldMapFrame
 FrameLevel: 1
 Anchor: CENTER
-X: 0
-Y: 20
+X: 22
+Y: 3
 W: 1024
 H: 740
 Frame: Five Second Rule Statusbar

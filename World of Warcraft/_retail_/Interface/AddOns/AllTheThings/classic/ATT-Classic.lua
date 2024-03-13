@@ -10,6 +10,9 @@ local L = app.L;
 local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
 
+-- Abbreviations
+L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
+
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L.TITLE
 BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L.TOGGLE_ACCOUNT_MODE
@@ -111,7 +114,7 @@ local function PendingCollectionCoroutine()
 
 		-- Check if there was a mount.
 		if allTypes[app.FilterConstants.MOUNTS] then
-			app.Audio:PlayRareFindSound();
+			app.Audio:PlayMountFanfare();
 		else
 			app.Audio:PlayFanfare();
 		end
@@ -239,6 +242,44 @@ app.GetCompletionIcon = GetCompletionIcon;
 app.GetCompletionText = GetCompletionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
 app.GetProgressTextForTooltip = GetProgressTextForTooltip;
+local function GetUnobtainableTexture(group)
+	if not group then return; end
+	if type(group) ~= "table" then
+		-- This function shouldn't be used with only u anymore!
+		app.print("Invalid use of GetUnobtainableTexture", group);
+		return;
+	end
+
+	-- Determine the texture color, default is green for events.
+	-- TODO: Use 4 for inactive events, use 5 for active events
+	local filter, u = 4, group.u;
+	if u then
+		-- only b = 0 (BoE), not BoA/BoP
+		-- removed, elite, bmah, tcg, summon
+		if u > 1 and u < 12 and (group.b or 0) == 0 then
+			filter = 2;
+		else
+			local record = L["AVAILABILITY_CONDITIONS"][u];
+			if record then
+				if not record[5] or app.GameBuildVersion < record[5] then
+					filter = record[1] or 0;
+				else
+					-- This is a phase that's available. No icon.
+					return;
+				end
+			else
+				-- otherwise it's an invalid unobtainable filter
+				app.print("Invalid Unobtainable Filter:",u);
+				return;
+			end
+		end
+		return L["UNOBTAINABLE_ITEM_TEXTURES"][filter];
+	end
+	if group.e then
+		return L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
+	end
+end
+app.GetUnobtainableTexture = GetUnobtainableTexture;
 
 
 app.IsComplete = function(o)
@@ -303,65 +344,6 @@ local function GetNameFromProviders(group)
 end
 app.GetIconFromProviders = GetIconFromProviders;
 app.GetNameFromProviders = GetNameFromProviders;
-
-local function GetBestMapForGroup(group, currentMapID)
-	if group then
-		local mapID = group.mapID;
-		if mapID and mapID == currentMapID then
-			return mapID;
-		end
-
-		local coords = group.coords;
-		if coords then
-			for i,coord in ipairs(coords) do
-				mapID = coord[3];
-				if mapID == currentMapID then
-					return mapID;
-				end
-			end
-		end
-		local maps = group.maps;
-		if maps then
-			for i,otherMapID in ipairs(maps) do
-				mapID = otherMapID;
-				if mapID == currentMapID then
-					return mapID;
-				end
-			end
-		end
-
-		return mapID or GetBestMapForGroup(group.parent, currentMapID);
-	end
-end
-local function GetRelativeDifficulty(group, difficultyID)
-	if group then
-		if group.difficultyID then
-			if group.difficultyID == difficultyID then
-				return true;
-			end
-			if group.difficulties then
-				for i, difficulty in ipairs(group.difficulties) do
-					if difficulty == difficultyID then
-						return true;
-					end
-				end
-			end
-			return false;
-		end
-		if group.parent then
-			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
-		else
-			return true;
-		end
-	end
-end
-local function GetDeepestRelativeValue(group, field)
-	if group then
-		return GetDeepestRelativeValue(group.parent, field) or group[field];
-	end
-end
-app.GetBestMapForGroup = GetBestMapForGroup;
-app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 
 local MergeObject;
 local CloneArray = app.CloneArray;
@@ -499,9 +481,9 @@ subroutines = {
 			{"is", "itemID"},	-- Only Items
 		};
 	end,
-	["pvp_gear_base"] = function(tierID, headerID1, headerID2)
+	["pvp_gear_base"] = function(expansionID, headerID1, headerID2)
 		local b = {
-			{ "select", "tierID", tierID },	-- Select the Expansion header
+			{ "select", "expansionID", expansionID },	-- Select the Expansion header
 			{ "pop" },	-- Discard the Expansion header and acquire the children.
 			{ "where", "headerID", headerID1 },	-- Select the Season header
 		};
@@ -932,7 +914,11 @@ app.GetCachedData = function(cacheKey, method, ...)
 	local cache = searchCache[cacheKey];
 	if not cache then
 		cache, working = method(...);
-		if not working then searchCache[cacheKey] = cache; end
+		if not working then
+			-- Only cache if the tooltip if no additional work is needed.
+			searchCache[cacheKey] = cache;
+		end
+		return cache, working;
 	end
 	return cache;
 end
@@ -943,17 +929,71 @@ app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 
 local InitialCachedSearch;
 local IsQuestReadyForTurnIn = app.IsQuestReadyForTurnIn;
+local SourceLocationSettingsKey = setmetatable({
+	creatureID = "SourceLocations:Creatures",
+}, {
+	__index = function(t, key)
+		return "SourceLocations:Things";
+	end
+});
+local UnobtainableTexture = "|T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local function HasCost(group, idType, id)
+	-- check if the group has a cost which includes the given parameters
+	if group.cost and type(group.cost) == "table" then
+		if idType == "itemID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "i" then
+					return true;
+				end
+			end
+		elseif idType == "currencyID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "c" then
+					return true;
+				end
+			end
+		end
+	end
+	return false;
+end
+local function GetRelativeDifficulty(group, difficultyID)
+	if group then
+		if group.difficultyID then
+			if group.difficultyID == difficultyID then
+				return true;
+			end
+			if group.difficulties then
+				for i, difficulty in ipairs(group.difficulties) do
+					if difficulty == difficultyID then
+						return true;
+					end
+				end
+			end
+			return false;
+		end
+		if group.parent then
+			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
+		else
+			return true;
+		end
+	end
+end
 local function GetSearchResults(method, paramA, paramB, ...)
+	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
+	if not method then
+		print("GetSearchResults: Invalid method: nil");
+		return nil, true;
+	end
 	if not paramA then
 		print("GetSearchResults: Invalid paramA: nil");
 		return nil, true;
 	end
-	
+
 	-- If we are searching for only one parameter, it is a raw link.
 	local rawlink;
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
-	
+
 	-- This method can be called nested, and some logic should only process for the initial call
 	local isTopLevelSearch;
 	if not InitialCachedSearch then
@@ -1088,6 +1128,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	else
 		group = {};
 	end
+	group.working = nil;
 
 	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
 	
@@ -1168,107 +1209,71 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
-	if app.Settings:GetTooltipSetting("SourceLocations") and (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things")) then
-		local temp = {};
-		local unfiltered = {};
+	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
+		local temp, text, parent = {};
+		local unfiltered, right = {};
+		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
+		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local FilterUnobtainable, FilterCharacter, FirstParent
+			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L["ABBREVIATIONS"];
-		local abbrevs_post = L["ABBREVIATIONS_POST"];
-		if not abbrevs_post[" true "] then
-			abbrevs_post[" %> " .. app.GetMapName(947)] = "";
-			abbrevs_post[" %> " .. app.GetMapName(1415)] = "";
-			abbrevs_post[" %> " .. app.GetMapName(1414)] = "";
-			abbrevs_post[" false "] = " 0 ";
-			abbrevs_post[" true "] = " 1 ";
-		end
-		for i,j in ipairs(group) do
-			if j.parent and not GetRelativeValue(j, "hideText") and j.parent.parent
-				and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
-				local text = app.GenerateSourcePathForTooltip(j.parent);
-				for source,replacement in pairs(abbrevs) do
-					text = text:gsub(source, replacement);
-				end
-				for source,replacement in pairs(abbrevs_post) do
-					text = text:gsub(source, replacement);
-				end
-
-				local right = " ";
-				if j.u then
-					local condition = L["AVAILABILITY_CONDITIONS"][j.u];
-					if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-						right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]] .. ":0|t";
+		for _,j in ipairs(group.g or group) do
+			parent = j.parent;
+			if parent and not FirstParent(j, "hideText") and parent.parent
+				and (showCompleted or not app.IsComplete(j))
+				and not HasCost(j, paramA, paramB)
+			then
+				text = app.GenerateSourcePathForTooltip(parent);
+				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+					for source,replacement in pairs(abbrevs) do
+						text = text:gsub(source, replacement);
 					end
-				end
-				if j.rwp then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][2] .. ":0|t"; end
-				if j.e then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][4] .. ":0|t"; end
-
-				if not app.RecursiveCharacterRequirementsFilter(j.parent) then
-					tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
-				elseif not app.RecursiveUnobtainableFilter(j.parent) then
-					tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" });
-				else
-					tinsert(temp, { text, right });
+					-- doesn't meet current unobtainable filters
+					if not FilterUnobtainable(parent) then
+						tinsert(unfiltered, { text, UnobtainableTexture });
+					-- from obtainable, different character source
+					elseif not FilterCharacter(parent) then
+						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+					else
+						-- check if this needs an unobtainable icon even though it's being shown
+						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+						tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
+					end
 				end
 			end
 		end
-		if (#temp < 1 and not (paramA == "creatureID")) or app.MODE_DEBUG then
-			for i,data in ipairs(unfiltered) do
+		-- if in Debug or no sources visible, add any unfiltered sources
+		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
+			for _,data in ipairs(unfiltered) do
 				tinsert(temp, data);
 			end
 		end
 		if #temp > 0 then
-			local listing, listingByText = {}, {};
+			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
-			for i,data in ipairs(temp) do
-				local text = data[1] or RETRIEVING_DATA;
-				if not listingByText[text] then
-					listingByText[text] = data;
-					tinsert(listing, 1, data);
-					if IsRetrieving(text) then working = true; end
+			local count = 0;
+			app.Sort(temp, app.SortDefaults.IndexOneStrings);
+			for _,data in ipairs(temp) do
+				text = data[1];
+				right = data[2];
+				if right and right:len() > 0 then
+					text = text .. " " .. right;
 				end
-			end
-			local count, splitCounts, splitCount = 0, { };
-			for i,data in ipairs(listing) do
-				local left, right = DESCRIPTION_SEPARATOR:split(data[1]);
-				left = left .. data[2];
-				splitCount = splitCounts[left];
-				if not splitCount then
-					splitCount = { count = 0, data=data, variants ={} };
-					splitCounts[left] = splitCount;
-				end
-				if right and not contains(splitCount.variants, right) then
-					tinsert(splitCount.variants, right);
-					if right:find(BATTLE_PET_SOURCE_2) then
-						splitCount.count = splitCount.count + 1;
-					end
-				end
-			end
-			for left,splitCount in pairs(splitCounts) do
-				if splitCount.count < 6 then
-					if #splitCount.variants == 0 then
-						tinsert(tooltipInfo, 1, { left = left, wrap = not left:find(" > ") });
-						count = count + 1;
-					else
-						for i,right in ipairs(splitCount.variants) do
-							tinsert(tooltipInfo, 1, { left = left, right = right, wrap = not left:find(" > ") });
-							count = count + 1;
-						end
-					end
-				else
-					tinsert(tooltipInfo, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not left:find(" > ") });
+				if not contains(listing, text) then
 					count = count + 1;
-					for i,right in ipairs(splitCount.variants) do
-						if not right:find(ATTLE_PET_SOURCE_2) then
-							tinsert(tooltipInfo, 1, { left = left, right = right, wrap = not left:find(" > ") });
-							count = count + 1;
-						end
+					if count <= maximum then
+						tinsert(listing, text);
 					end
 				end
 			end
-			if count > maximum + 1 then
-				for i=count,maximum + 1,-1 do
-					tremove(tooltipInfo, 1);
-				end
-				tinsert(tooltipInfo, 1, "And " .. (count - maximum) .. " other sources...");
+			if count > maximum then
+				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
+			end
+			for _,text in ipairs(listing) do
+				if not working and IsRetrieving(text) then working = true; end
+				local left, right = DESCRIPTION_SEPARATOR:split(text);
+				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
 			end
 		end
 	end
@@ -1392,6 +1397,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
 		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString);
+		if group.working then working = true; end
 	end
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
@@ -1980,19 +1986,19 @@ function app:GetDataCache()
 		-- Now assign the parent hierarchy for this cache.
 		AssignChildren(rootData);
 
-		-- Determine how many tierID instances could be found
-		local tierCounter = 0;
-		local tierCache = SearchForFieldContainer("tierID");
-		for key,value in pairs(tierCache) do
-			tierCounter = tierCounter + 1;
+		-- Determine how many expansionID instances could be found
+		local expansionCounter = 0;
+		local expansionCache = SearchForFieldContainer("expansionID");
+		for key,value in pairs(expansionCache) do
+			expansionCounter = expansionCounter + 1;
 		end
-		if tierCounter == 1 then
-			-- Purge the Tier Objects. This is the Classic Layout style.
-			for key,values in pairs(tierCache) do
+		if expansionCounter == 1 then
+			-- Purge the Expansion Objects. This is the Classic Layout style.
+			for key,values in pairs(expansionCache) do
 				for j,value in ipairs(values) do
 					local parent = value.parent;
 					if parent then
-						-- Remove the tier object reference.
+						-- Remove the expansion object reference.
 						for i=#parent.g,1,-1 do
 							if parent.g[i] == value then
 								tremove(parent.g, i);
@@ -2011,8 +2017,8 @@ function app:GetDataCache()
 				end
 			end
 
-			-- Wipe out the tier object cache.
-			wipe(tierCache);
+			-- Wipe out the expansion object cache.
+			wipe(expansionCache);
 		end
 
 		-- All future calls to this function will return the root data.
@@ -5680,6 +5686,11 @@ end);
 	function app:Linkify(text, color, operation)
 		text = "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
 		return text;
+	end
+	
+	function app:WaypointLink(mapID, x, y, text)
+		return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
+			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 	end
 	
 	-- Stores some information for use by a report popup by id

@@ -8,8 +8,8 @@ local ArrayAppend = app.ArrayAppend;
 local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject;
 
 -- Global locals
-local C_QuestLog_IsOnQuest, ipairs, setmetatable
-	= C_QuestLog.IsOnQuest, ipairs, setmetatable;
+local C_QuestLog_IsOnQuest, ipairs, setmetatable, rawget
+	= C_QuestLog.IsOnQuest, ipairs, setmetatable, rawget;
 
 -- Object Lib (as in "World Object")
 app.CreateObject = app.CreateClass("Object", "objectID", {
@@ -27,6 +27,33 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 	end,
 	["model"] = function(t)
 		return app.ObjectModels[t.objectID];
+	end,
+	["indicatorIcon"] = function(t)
+		if app.ActiveVignettes.object[t.objectID] then
+			return app.asset("Interface_Ping");
+		end
+	end,
+	["g"] = function(t)
+		-- TODO: maybe sub-type this logic into the objects which have a generic object container as their parent from parser?
+		-- on load probably won't work since the groups build from the inside-out, so the class logic can't check parent
+		-- info to determine the sub-type
+		local spg = t._g
+		if spg then return spg end
+		-- direct object which is a child of a 'generic object container' can instead show the generic parent object content
+		-- when the direct object is the root of a window/tooltip
+		if rawget(t,"parent") then return end
+		local sp = t.sourceParent
+		if not sp or sp.__type ~= "ObjectAsGenericObjectContainer" then return end
+		spg = {}
+		-- make a copy of the non-object groups for this object to display
+		for _,o in ipairs(sp.g) do
+			if not o.objectID then
+				spg[#spg + 1] = o
+			end
+		end
+		-- for cached reference
+		t._g = spg
+		return spg
 	end,
 },
 "AsGenericObjectContainer", {
@@ -59,6 +86,19 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 			end
 		end
 		return unsavedCoords;
+	end,
+	["indicatorIcon"] = function(t)
+		local anyActive
+		local activeObjectVignettes = app.ActiveVignettes.object
+		for _,group in ipairs(t.g) do
+			if group.objectID and activeObjectVignettes[group.objectID] then
+				anyActive = true;
+				break
+			end
+		end
+		if anyActive then
+			return app.asset("Interface_Ping");
+		end
 	end,
 	-- This is never used typically since this class is only generated for objects which have a raw .g
 	-- However there are situations where cloning an existing AsGenericObjectContainer object can expect removed .g (rootOnly)

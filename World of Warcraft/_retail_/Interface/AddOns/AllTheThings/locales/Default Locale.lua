@@ -52,6 +52,20 @@ local L = setmetatable({
 	REROLL_RANDOM = "Reroll the Random Selection";
 	MODULES = "Modules";
 	
+	-- Features
+	NEARBY = "Nearby:";
+	
+	-- Windows
+	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
+	HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
+	HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";
+	HIDDEN_QUEST_TRIGGERS_DESC = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
+	NEVER_IMPLEMENTED = "Never Implemented";
+	NEVER_IMPLEMENTED_DESC = "Items here technically exist within the game but have never been made available to players";
+	UNSORTED = "Unsorted";
+	UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
+	UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
+	
 	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
@@ -252,9 +266,16 @@ L.SETTINGS_MENU = {
 	-- Classic Only, fully dynamic from within parser.
 	
 	-- General: Unobtainables Page
-	
+		UNOBTAINABLES_PAGE = "Unobtainables";
+		UNOBTAINABLE_LABEL = "Unobtainable Content";
+		CUSTOM_FILTERS_LABEL = "Automated Content";
+		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
+		-- AVAILABILITY_CONDITIONS [These are defined in a different section]
+		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
 	
 	-- Interface Page
+		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 	
 	-- Interface: Accessibility Page
 		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
@@ -284,6 +305,22 @@ L.SETTINGS_MENU = {
 		FEATURES_PAGE = FEATURES_LABEL;
 	
 	-- Features: Audio Page
+		CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
+		AUDIO_CHANNEL = "Audio Channel";
+		CHANNEL_MASTER = MASTER;
+		CHANNEL_MUSIC = MUSIC_VOLUME;
+		CHANNEL_SFX = FX_VOLUME;
+		CHANNEL_AMBIENCE = AMBIENCE_VOLUME;
+		CHANNEL_DIALOG = DIALOG_VOLUME;
+		CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
+		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
+		SOUNDPACK = "Soundpack";
+		PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
+		PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
+		WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
+		WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
+		SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
+		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
 	
 	-- Features: Reporting Page
 		REPORTING_LABEL = "Reporting";
@@ -293,6 +330,24 @@ L.SETTINGS_MENU = {
 		REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
 		REPORT_UNSORTED_CHECKBOX = "Only 'Unsourced'";
 		REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
+		REPORT_NEARBY_CONTENT_CHECKBOX = "Report Nearby Content";
+		REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.";
+		REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
+		REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
+		REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX = "Automatically Clear";
+		REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically clear the waypoint plotted by the nearby content feature when the content itself becomes unavailable or you go out of range.";
+		REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX = "Include Creatures";
+		REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered creatures. (Rares, World Bosses, NPCs)";
+		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "Include Treasures";
+		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)";
+		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "Include Completed";
+		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that completed based on your filters in ATT.";
+		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "Include Unknown/Unsourced";
+		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are not sourced in ATT.";
+		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "Flash the Taskbar";
+		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
+		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
+		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
 	
 	-- Features: Sync Page
 	-- Retail Only, deprecated.

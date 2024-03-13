@@ -7,7 +7,7 @@ local L = app.L;
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
 	L.THINGS_UNTIL = " 事物到 ";
 	L.THING_UNTIL = " 事物到 ";
-	L.YOU_DID_IT = "你做到了！|r";
+	L.YOU_DID_IT = "你做到了！";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "进度";
@@ -53,16 +53,16 @@ local L = app.L;
 	L.OPPOSITE_FACTION_EQ = "与对立阵营对应：";
 	L.SELFIE_DESC = "使用您的自拍 ";
 	L.SELFIE_DESC_2 = " 和 |cffff8000";
-	L.TIER_DATA[1].lore = "海加尔山之战的四年后，联盟和部落之间的关系又一次紧张了起来。为了能在贫瘠之地杜隆塔尔立足，萨尔邀请亡灵被遗忘者加入到兽人、牛头人和巨魔中，以扩大他的部落。与此同时，在另一边矮人、侏儒和古暗夜精灵则发誓它们将效忠人类暴风城王国所领导的新的联盟。当暴风城的国王瓦里安·乌瑞恩神秘消失之后，领主伯瓦尔·弗塔根担任摄政王，但是伯瓦尔的所做的一切被伪装成人类贵妇的黑龙奥尼克希亚通过意识控制所破坏。当英雄们正在研究对抗奥克尼希亚的手法时，古代的敌人出现在大陆上，并威胁着部落和联盟的生存。";
-	L.TIER_DATA[2].lore = "燃烧的远征是第一个资料片。它的主要内容包括将等级上限提高到70，将血精灵和德莱尼作为可玩的种族引入，以及外域世界的加入，以及许多新区域、地下城、物品、任务和怪物。";
-	L.TIER_DATA[3].lore = "巫妖王之怒是第二个资料片。大部分资料片内容都发生在诺森德，并以巫妖王的计划为中心。内容亮点包括将等级上限从70增加到80，引入英雄职业死亡骑士，以及新的 PvP/世界 PvP 内容。";
-	L.TIER_DATA[4].lore = "大地的裂变是第三个资料片。随着死亡之翼的回归，重做艾泽拉斯大陆的卡利姆多和东部王国，他从位于元素位面深处的巢穴中破土而出，将艾泽拉斯撕成碎片。大灾难让玩家们回到艾泽拉斯的两大洲进行大部分的活动，开辟新的区域，如海加尔山、瓦斯琪尔、深岩之洲、奥丹姆和暮光高地。它包括两个新的可玩的种族，狼人和地精。资料片将等级上限提高到85，增加了在卡利姆多和东部王国飞行的能力，引入考古学和重做，并重做世界本身。";
-	L.TIER_DATA[5].lore = "潘达利亚之谜是第四个资料片。在潘达利亚意外重新发现之后，资料片主要重新集中在联盟和部落之间的战争。冒险者重新发现了古老的熊猫人，他们的智慧将有助于引导他们走向新的命运; 熊猫人帝国的古代敌人螳螂妖; 和他们传说中的压迫者神秘的魔古族。领土随着时间的推移而变化，瓦里安乌瑞恩和加尔鲁什地狱咆哮之间的冲突逐渐升级。内战席卷了部落，联盟和部落中反对地狱咆哮的暴力起义联合起来直接把战争带到地狱咆哮和被煞魔侵蚀的奥格瑞玛的盟友。";
-	L.TIER_DATA[6].lore = "德拉诺之王是第五个资料片。在德拉诺的原始丛林和战争创伤的平原上，艾泽拉斯的英雄们将参与一场神话般的冲突，包括神秘的德莱尼冠军和强大的兽人部落，以及在原始力量的顶峰与格罗玛什地狱咆哮、黑手和耐奥祖等。玩家需要在这片不受欢迎的土地上搜索盟友，以帮助建立一个绝望的防御，对抗旧部落强大的统治，或者观看他们自己世界上血腥的、饱受战争蹂躏的历史重演。";
-	L.TIER_DATA[7].lore = "军团再临是第六个资料片。古尔丹被驱逐到艾泽拉斯，重新开放萨格拉斯之墓和阿古斯之门，开始第三次入侵燃烧军团。在破碎海岸被击败后，艾泽拉斯的卫士们寻找创造之柱，这是艾泽拉斯关闭萨墓中心巨大的恶魔之门的唯一希望。然而，破碎群岛也有自己的危险要克服，从萨维斯到神王斯科瓦德，到夜之子，再到潮汐之力艾萨拉。卡德加将达拉然迁移到这片土地的海岸，这座城市是英雄的中心枢纽。阿彻鲁斯的死亡骑士也将他们漂浮的墓地带到了群岛。艾泽拉斯的英雄们在战斗中寻找传说中的神器，但也发现了伊利达雷的意外盟友。联盟和部落之间正在发生的冲突导致了阶级秩序的形成，特殊的指挥官搁置阵营纷争来领导他们的队伍参加对抗军团的斗争。";
-	L.TIER_DATA[8].lore = "决战艾泽拉斯是第七个资料片。艾泽拉斯为结束军团十字军的天启付出了惨重的代价，但即使世界上的创伤得到了修复，联盟和部落之间破碎的信任也可能是最难弥补的。在艾泽拉斯战役中，燃烧军团的垮台引发了一系列灾难性事件，重新引发了魔兽世界中心的冲突。随着一个新的战争时代的开始，艾泽拉斯的英雄们必须开始征募新的盟友，争夺世界上最强大的资源，并在多条战线上战斗，以确定部落或联盟是否会带领艾泽拉斯进入不确定的未来。";
-	L.TIER_DATA[9].lore = "暗影国度是第八个资料片。你所知道的世界之外还有什么? 暗影国度。每一个世俗的人(无论是邪恶的还是邪恶的)都曾居住过的地方。";
-	L.TIER_DATA[10].lore = "巨龙时代是第九个资料片。艾泽拉斯的巨龙军团已经回归，他们响应了召唤，前去保护自己世代相传的家园：巨龙群岛。巨龙群岛涌动着元素魔法和艾泽拉斯的生命能量，如今它已从睡梦中苏醒，原始的奇观和尘封已久的秘密正等待你去揭露。";
+	L.EXPANSION_DATA[1].lore = "海加尔山之战的四年后，联盟和部落之间的关系又一次紧张了起来。为了能在贫瘠之地杜隆塔尔立足，萨尔邀请亡灵被遗忘者加入到兽人、牛头人和巨魔中，以扩大他的部落。与此同时，在另一边矮人、侏儒和古暗夜精灵则发誓它们将效忠人类暴风城王国所领导的新的联盟。当暴风城的国王瓦里安·乌瑞恩神秘消失之后，领主伯瓦尔·弗塔根担任摄政王，但是伯瓦尔的所做的一切被伪装成人类贵妇的黑龙奥尼克希亚通过意识控制所破坏。当英雄们正在研究对抗奥克尼希亚的手法时，古代的敌人出现在大陆上，并威胁着部落和联盟的生存。";
+	L.EXPANSION_DATA[2].lore = "燃烧的远征是第一个资料片。它的主要内容包括将等级上限提高到70，将血精灵和德莱尼作为可玩的种族引入，以及外域世界的加入，以及许多新区域、地下城、物品、任务和怪物。";
+	L.EXPANSION_DATA[3].lore = "巫妖王之怒是第二个资料片。大部分资料片内容都发生在诺森德，并以巫妖王的计划为中心。内容亮点包括将等级上限从70增加到80，引入英雄职业死亡骑士，以及新的 PvP/世界 PvP 内容。";
+	L.EXPANSION_DATA[4].lore = "大地的裂变是第三个资料片。随着死亡之翼的回归，重做艾泽拉斯大陆的卡利姆多和东部王国，他从位于元素位面深处的巢穴中破土而出，将艾泽拉斯撕成碎片。大灾难让玩家们回到艾泽拉斯的两大洲进行大部分的活动，开辟新的区域，如海加尔山、瓦斯琪尔、深岩之洲、奥丹姆和暮光高地。它包括两个新的可玩的种族，狼人和地精。资料片将等级上限提高到85，增加了在卡利姆多和东部王国飞行的能力，引入考古学和重做，并重做世界本身。";
+	L.EXPANSION_DATA[5].lore = "潘达利亚之谜是第四个资料片。在潘达利亚意外重新发现之后，资料片主要重新集中在联盟和部落之间的战争。冒险者重新发现了古老的熊猫人，他们的智慧将有助于引导他们走向新的命运; 熊猫人帝国的古代敌人螳螂妖; 和他们传说中的压迫者神秘的魔古族。领土随着时间的推移而变化，瓦里安乌瑞恩和加尔鲁什地狱咆哮之间的冲突逐渐升级。内战席卷了部落，联盟和部落中反对地狱咆哮的暴力起义联合起来直接把战争带到地狱咆哮和被煞魔侵蚀的奥格瑞玛的盟友。";
+	L.EXPANSION_DATA[6].lore = "德拉诺之王是第五个资料片。在德拉诺的原始丛林和战争创伤的平原上，艾泽拉斯的英雄们将参与一场神话般的冲突，包括神秘的德莱尼冠军和强大的兽人部落，以及在原始力量的顶峰与格罗玛什地狱咆哮、黑手和耐奥祖等。玩家需要在这片不受欢迎的土地上搜索盟友，以帮助建立一个绝望的防御，对抗旧部落强大的统治，或者观看他们自己世界上血腥的、饱受战争蹂躏的历史重演。";
+	L.EXPANSION_DATA[7].lore = "军团再临是第六个资料片。古尔丹被驱逐到艾泽拉斯，重新开放萨格拉斯之墓和阿古斯之门，开始第三次入侵燃烧军团。在破碎海岸被击败后，艾泽拉斯的卫士们寻找创造之柱，这是艾泽拉斯关闭萨墓中心巨大的恶魔之门的唯一希望。然而，破碎群岛也有自己的危险要克服，从萨维斯到神王斯科瓦德，到夜之子，再到潮汐之力艾萨拉。卡德加将达拉然迁移到这片土地的海岸，这座城市是英雄的中心枢纽。阿彻鲁斯的死亡骑士也将他们漂浮的墓地带到了群岛。艾泽拉斯的英雄们在战斗中寻找传说中的神器，但也发现了伊利达雷的意外盟友。联盟和部落之间正在发生的冲突导致了阶级秩序的形成，特殊的指挥官搁置阵营纷争来领导他们的队伍参加对抗军团的斗争。";
+	L.EXPANSION_DATA[8].lore = "决战艾泽拉斯是第七个资料片。艾泽拉斯为结束军团十字军的天启付出了惨重的代价，但即使世界上的创伤得到了修复，联盟和部落之间破碎的信任也可能是最难弥补的。在艾泽拉斯战役中，燃烧军团的垮台引发了一系列灾难性事件，重新引发了魔兽世界中心的冲突。随着一个新的战争时代的开始，艾泽拉斯的英雄们必须开始征募新的盟友，争夺世界上最强大的资源，并在多条战线上战斗，以确定部落或联盟是否会带领艾泽拉斯进入不确定的未来。";
+	L.EXPANSION_DATA[9].lore = "暗影国度是第八个资料片。你所知道的世界之外还有什么? 暗影国度。每一个世俗的人(无论是邪恶的还是邪恶的)都曾居住过的地方。";
+	L.EXPANSION_DATA[10].lore = "巨龙时代是第九个资料片。艾泽拉斯的巨龙军团已经回归，他们响应了召唤，前去保护自己世代相传的家园：巨龙群岛。巨龙群岛涌动着元素魔法和艾泽拉斯的生命能量，如今它已从睡梦中苏醒，原始的奇观和尘封已久的秘密正等待你去揭露。";
 	L.TITLES_DESC = "头衔会在你的战网中被追踪，但是，你的角色必须符合某些头衔的条件才能在该角色上使用。";
 	L.UPON_COMPLETION = "前置条件";
 	L.UPON_COMPLETION_DESC = "以上任务需要完成后才能够完成以下的事情。";
@@ -114,8 +114,7 @@ local L = app.L;
 	L.NO_ENTRIES = "没有找到符合过滤条件的条目。";
 	L.NO_ENTRIES_DESC = "如果认为这是错误的，请尝试激活'调试模式'。某个过滤条件可能会限制该组的可见性。";
 	L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
-	L.UNSORTED_1 = "未分类";
-	L.UNSORTED_2 = " （未分类）";
+	L.UNSORTED = "未分类";
 	L.UNSORTED_DESC = "此数据尚未在 ATT 中获取 " .. app.Version .. "。";
 	L.NEVER_IMPLEMENTED = "从未生效";
 	L.NEVER_IMPLEMENTED_DESC = "这里的物品在技术上存在于游戏内，但从未向玩家开放过";
@@ -304,18 +303,6 @@ local L = app.L;
 		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 		L.KEYBINDINGS_TEXT = "可以在游戏选项中设置 ATT 的按键绑定。";
 
-	-- Unobtainables tab
-		L.UNOBTAINABLES_TAB = "不可获得";
-		L.SEASONAL_LABEL = "节日";
-		L.SEASONAL_ALL = "|cffECBC21切换所有节日";
-		L.UNOBTAINABLE_LABEL = "无法获取的内容";
-		L.UNOBTAINABLE_ALL = "|cffECBC21切换所有不可获得";
-		L.NO_CHANCE_ALL = "|cffECBC21切换所有 \"没有机会\"";
-		L.HIGH_CHANCE_ALL = "|cffECBC21切换所有 \"很大机会\"";
-		L.CUSTOM_FILTERS_LABEL = "自动化内容";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
-		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
-
 	-- Interface tab
 		L.TOOLTIP_LABEL = "鼠标提示";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "启用鼠标提示";
@@ -365,8 +352,6 @@ local L = app.L;
 		L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "如果你想查看尚未完全输入数据库的来源位置，请启用此选项。";
 		L.WITH_WRAPPING_CHECKBOX = "允许换行";
 		L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "启用此选项允许来源在鼠标提示中换行。\n这将确保鼠标提示不会超过必要的宽度，但不幸的是在许多情况下来源信息会变得更加难以阅读。";
-		--TODO: L.REPLACE_QUEST_TOOLTIPS = "Replace Quest Tooltips";
-		--TODO: L.REPLACE_QUEST_TOOLTIPS_TOOLTIP = "Enable this option to have ATT replace the default Quest tooltips with custom Quest information and objective tracking.";
 		L.SHOW_REMAINING_CHECKBOX = "显示剩余事物";
 		L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩余事物数量而不是总进度，请启用此选项。";
 		L.PERCENTAGES_CHECKBOX = "显示完成百分比";
@@ -408,17 +393,6 @@ local L = app.L;
 		L.NPC_DATA_NESTED_CHECKBOX_TOOLTIP = "如果希望在迷你列表中显示时将所有相关数据嵌套到给定的 NPC（常见首领掉落、掉落等），请启用此选项。此选项可能会导致大量重复，但其想法是该 NPC 将在迷你列表中保持可见，就好像需要特定于该 NPC 的内容一样。\n\n默认：关闭";
 		L.QUEST_CHAIN_NESTED_CHECKBOX = "显示嵌套任务链";
 		L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "如果你想让任务链要求（右键单击任务）窗口将所需任务显示为其后续任务的子组，即它们必须从内到外完成，请启用此选项。\n\n这一点很有用，不会错过个别任务，应该主要用于完成任务的考虑。\n\n否则任务链要求将以自上而下的方式显示，最早的任务在最上面。";
-		L.CELEBRATIONS_LABEL = "庆祝和音效";
-		L.AUDIO_CHANNEL = "声音通道";
-		L.CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效";
-		L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。";
-		L.SOUNDPACK = "声音包";
-		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
-		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
-		L.WARN_REMOVED_CHECKBOX = "移除事物触发警告";
-		L.WARN_REMOVED_CHECKBOX_TOOLTIP = "如果你想在你不小心卖掉或交易一个给予你外观的物品从而导致收藏中失去该外观时听到警告的声音效果，请启用这个选项。\n\n如果你的商品有购买计时这可能非常有用。该插件会告诉你你犯了一个错误。";
-		L.SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品后触发截图";
-		L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想为你收藏的每件物品进行截图请启用此选项。";
 		L.ICON_LEGEND_LABEL = "图标图例";
 		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "不可获得" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "仅在满足先决条件的情况下获得" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. AVAILABLE .."季节性内容" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. UNAVAILABLE .. "季节性内容" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "当前角色不可用";	--TODO: check (un)available seasonal content
 		L.CHAT_COMMANDS_LABEL = "聊天命令";
@@ -791,8 +765,14 @@ for key,value in pairs({
 	-- Classic Only, fully dynamic from within parser.
 
 	-- General: Unobtainables Page
+		UNOBTAINABLES_PAGE = "不可获得";
+		UNOBTAINABLE_LABEL = "无法获取的内容";
+		CUSTOM_FILTERS_LABEL = "自动化内容";
+		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
+		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
 	-- Interface Page
+		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page
 		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
@@ -818,6 +798,17 @@ for key,value in pairs({
 	-- Features Page
 
 	-- Features: Audio Page
+		CELEBRATIONS_LABEL = "庆祝和音效";
+		AUDIO_CHANNEL = "声音通道";
+		CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效";
+		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。";
+		SOUNDPACK = "声音包";
+		--TODO: PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
+		--TODO: PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
+		WARN_REMOVED_CHECKBOX = "移除事物触发警告";
+		WARN_REMOVED_CHECKBOX_TOOLTIP = "如果你想在你不小心卖掉或交易一个给予你外观的物品从而导致收藏中失去该外观时听到警告的声音效果，请启用这个选项。\n\n如果你的商品有购买计时这可能非常有用。该插件会告诉你你犯了一个错误。";
+		SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品后触发截图";
+		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想为你收藏的每件物品进行截图请启用此选项。";
 
 	-- Features: Reporting Page
 		REPORTING_LABEL = "报告";
@@ -827,6 +818,24 @@ for key,value in pairs({
 		REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "如果希望在任务发生后立即看到你完成的任何任务的任务 ID，请启用此选项。（用于报告错误、追踪等）";
 		REPORT_UNSORTED_CHECKBOX = "仅'无来源'";
 		REPORT_UNSORTED_CHECKBOX_TOOLTIP = "如果只想查看任务 ID 且他还没有来源，请启用此选项。";
+		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX = "Report Nearby Content";
+		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.";
+		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
+		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
+		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX = "Automatically Clear";
+		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically clear the waypoint plotted by the nearby content feature when the content itself becomes unavailable or you go out of range.";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX = "Include Creatures";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered creatures. (Rares, World Bosses, NPCs)";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "Include Treasures";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "Include Completed";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that completed based on your filters in ATT.";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "Include Unknown/Unsourced";
+		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are not sourced in ATT.";
+		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "Flash the Taskbar";
+		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
+		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
+		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
 
 	-- Features: Sync Page
 	-- Retail Only, deprecated.

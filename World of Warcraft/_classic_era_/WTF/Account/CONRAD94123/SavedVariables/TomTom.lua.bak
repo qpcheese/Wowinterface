@@ -7,11 +7,11 @@ TomTomDB = {
 		["Default"] = {
 			["arrow"] = {
 				["position"] = {
-					"CENTER", -- [1]
+					"TOP", -- [1]
 					nil, -- [2]
-					"CENTER", -- [3]
-					9.481303215026855, -- [4]
-					5.689990043640137, -- [5]
+					"TOP", -- [3]
+					-0.9485910534858704, -- [4]
+					-49.16184234619141, -- [5]
 				},
 			},
 			["block"] = {
@@ -33,6 +33,39 @@ TomTomWaypointsM = {
 	},
 	["profiles"] = {
 		["Qpfromage - Living Flame"] = {
+			[1439] = {
+				["1439:368000000:436000000:TomTom waypoint"] = {
+					1439, -- [1]
+					0.368, -- [2]
+					0.436, -- [3]
+					["arrivaldistance"] = 15,
+					["crazy"] = true,
+					["persistent"] = true,
+					["desc"] = "TomTom waypoint",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "TomTom waypoint",
+					["from"] = "TomTom/way",
+					["callbacks"] = {
+						["distance"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
+						},
+						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+					},
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
 		},
 	},
 }

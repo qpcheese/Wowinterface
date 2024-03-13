@@ -84,9 +84,9 @@ local ServerUID = select(2, ("-"):split(app.GUID));
 
 -- Player Tooltip Functions
 local PLAYER_TOOLTIPS = {
-	["Player-4647-031D0890"] = function(self, target)
+	["Player-4647-031D0890"] = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 		local leftSide = _G[self:GetName() .. "TextLeft1"];
-		if leftSide then leftSide:SetText("|cff665a2c" .. UnitName(target) .. " the Time-Loser|r"); end
+		if leftSide then leftSide:SetText("|cff665a2c" .. name .. " the Time-Loser|r"); end
 		local rightSide = _G[self:GetName() .. "TextRight2"];
 		if rightSide then rightSide:SetText(GetCollectionIcon(0)); end
 		self:AddLine("This scumbag abused an auto-invite addon to steal the Time-Lost Proto Drake from a person that had them on their friends list. ATT has deemed this unacceptable behaviour and will forever stain this player's reputation so long as they remain on the server.", 0.4, 0.8, 1, true);
@@ -94,10 +94,10 @@ local PLAYER_TOOLTIPS = {
 };
 
 -- AUTHOR GUIDs
-local tooltipFunction = function(self, target)
+local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
-		leftSide:SetText("|c" .. app.Colors.Raid .. UnitName(target) .. " the Completionist|r");
+		leftSide:SetText("|c" .. app.Colors.Raid .. name .. " the Completionist|r");
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
@@ -119,7 +119,7 @@ for i,guid in ipairs({
 end
 
 -- CONTRIBUTOR GUIDS
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
 		leftSide:SetText("|cffa335ee" .. leftSide:GetText() .. "|r");
@@ -217,9 +217,9 @@ for i,guid in ipairs({
 end
 
 -- EXTERMINATOR GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|cffa335ee" .. UnitName(target) .. " the Exterminator|r"); end
+	if leftSide then leftSide:SetText("|cffa335ee" .. name .. " the Exterminator|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-00B131BB",	-- Aivet
@@ -283,9 +283,9 @@ for i,guid in ipairs({
 end
 
 -- GOLD_TYCOON GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Gold Tycoon " .. UnitName(target) .. "|r"); end
+	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Gold Tycoon " .. name .. "|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-004A0418",	-- Jubilee
@@ -298,9 +298,9 @@ for i,guid in ipairs({
 end
 
 -- SCARAB_LORD GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. UnitName(target) .. "|r"); end
+	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. name .. "|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-000B3C4D",	-- Congelatore
@@ -310,9 +310,9 @@ for i,guid in ipairs({
 end
 
 -- THE_HUGGLER GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|cffF58CBA" .. UnitName(target) .. " the Huggler|r"); end
+	if leftSide then leftSide:SetText("|cffF58CBA" .. name .. " the Huggler|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-00006B41",	-- Tahiti-Atiesh
@@ -460,7 +460,7 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 				local rightText = _G[prefix .. "Right1"];
 				if rightText then
 					local strippedText = StripColorAndTextureData((leftText:GetText() or "  ") .. progressText);
-					if strippedText:len() < 80 then
+					if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
 						if tooltip.CloseButton then
 							-- dont think the region for the rightText can be modified within the tooltip, so pad instead
 							progressText = progressText .. "     ";
@@ -495,27 +495,25 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
-local function AttachTooltipRawSearchResults(tooltip, lineNumber, group)
-	if not group then return end
-	-- If nothing was put into the tooltip initially, mark the text of the source.
-	if tooltip:NumLines() == 0 then
-		tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
-	end
-
-	-- If there was info text generated for this search result, then display that first.
-	AttachTooltipInformation(tooltip, group.tooltipInfo);
-	tooltip.ATT_AttachComplete = not group.working;
-end
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
-	local status, group = pcall(app.GetCachedSearchResults, method, ...)
+	local status, group, working = pcall(app.GetCachedSearchResults, method, ...)
 	if status then
-		AttachTooltipRawSearchResults(tooltip, lineNumber, group)
+		if group then
+			-- If nothing was put into the tooltip initially, mark the text of the source.
+			if tooltip:NumLines() == 0 then
+				tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
+			end
+
+			-- If there was info text generated for this search result, then display that first.
+			AttachTooltipInformation(tooltip, group.tooltipInfo);
+		end
 	else
 		print(status, group);
 		app.PrintDebug("pcall tooltip failed",group)
 	end
+	tooltip.ATT_AttachComplete = not (working or (group and group.working));
 	app.SetSkipLevel(0);
 end
 
@@ -587,7 +585,12 @@ if TooltipDataProcessor then
 		end
 	end
 	]]--
-
+	
+	local function RerenderCurrency(self, currencyID)
+		if self:IsVisible() then
+			GameTooltip.SetCurrencyByID(self, currencyID, 1);
+		end
+	end
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
@@ -605,10 +608,12 @@ if TooltipDataProcessor then
 		-- Does the tooltip have an owner?
 		local owner = self:GetOwner();
 		if owner then
-			if owner.SpellHighlightTexture
-			or owner.TrainBook
-			or owner.spendTextShadows then
-				-- Actionbars/Spellbook/Talents UI, don't want that.
+			if owner.SpellHighlightTexture	-- Action bars
+			or owner.TrainBook		-- Spellbook spell tooltips
+			or owner.Caster			-- Retail Death recap spell tooltips
+			or owner.numericValue	-- character 'Mastery' tooltip
+			or owner.spendTextShadows	-- Retail Talents UI tooltips
+			then
 				return true;
 			end
 			-- this is already covered by a default in-game tooltip line:
@@ -703,7 +708,7 @@ if TooltipDataProcessor then
 			-- print(target, type, npc_id);
 			if type == "Player" then
 				local method = PLAYER_TOOLTIPS[id];
-				if method then method(self, target); end
+				if method then method(self, GetPlayerInfoByGUID(id)); end
 				local version = app.PlayerProgressCacheByGUID[id];
 				if version and app.Settings:GetTooltipSetting("SocialProgress") then
 					self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
@@ -789,6 +794,9 @@ if TooltipDataProcessor then
 			if knownSearchField and ttId then
 				-- app.PrintDebug("TT Search",knownSearchField,ttId)
 				AttachTooltipSearchResults(self, 1, SearchForField, knownSearchField, tonumber(ttId));
+				if knownSearchField == "currencyID" and self.ATT_AttachComplete == false then
+					app.CallbackHandlers.DelayedCallback(RerenderCurrency, 0.05, self, ttId);
+				end
 				return true;
 			end
 		end
@@ -856,7 +864,7 @@ else
 						--print(guid, type, npcID);
 						if type == "Player" then
 							local method = PLAYER_TOOLTIPS[guid];
-							if method then method(self, target); end
+							if method then method(self, GetPlayerInfoByGUID(guid)); end
 							local version = app.PlayerProgressCacheByGUID[guid];
 							if version and app.Settings:GetTooltipSetting("SocialProgress") then
 								self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
@@ -1042,7 +1050,6 @@ local api = {};
 app.Modules.Tooltip = api;
 api.AttachTooltipInformation = AttachTooltipInformation;
 api.AttachTooltipInformationEntry = AttachTooltipInformationEntry;
-api.AttachTooltipRawSearchResults = AttachTooltipRawSearchResults;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
 app.AddEventHandler("OnLoad", function()

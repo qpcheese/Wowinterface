@@ -1,14 +1,14 @@
 local _, app = ...;
-local L, settings, ipairs = app.L.SETTINGS_MENU, app.Settings, ipairs;
+local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Global locals
-local pairs, ipairs, tonumber, math_floor, tinsert
-	= pairs, ipairs, tonumber, math.floor, tinsert;
+local pairs, ipairs, tonumber, math_floor, select, tostring, tinsert, RETRIEVING_DATA
+	= pairs, ipairs, tonumber, math.floor, select, tostring, tinsert, RETRIEVING_DATA;
 local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
-local HexToARGB = app.Modules.Color.HexToARGB;
-local GetRealmName = GetRealmName;
+local GetRealmName, GetItemInfo, GetSpellInfo = GetRealmName, GetItemInfo, GetSpellInfo
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -31,6 +31,14 @@ local function GetPatchString(patch)
 end
 local DefaultConversionMethod = function(value)
 	return value;
+end
+-- Handles checking the 'text' and assigning 'reference.working' if the text is in a 'retrieving' state
+local function IsRetrievingConversionMethod(text, reference)
+	if IsRetrieving(text) then
+		reference.working = true
+		text = RETRIEVING_DATA
+	end
+	return text
 end
 local ConversionMethods = setmetatable({
 	filterID = function(val)
@@ -58,19 +66,65 @@ local ConversionMethods = setmetatable({
 	end,
 	creatureName = function(creatureID, reference)
 		if app.Settings:GetTooltipSetting("creatureID") then
-			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or RETRIEVING_DATA) .. " (" .. creatureID .. ")";
+			return IsRetrievingConversionMethod(app.NPCNameFromID[creatureID], reference) .. " (" .. creatureID .. ")";
 		else
-			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or RETRIEVING_DATA);
+			return IsRetrievingConversionMethod(app.NPCNameFromID[creatureID], reference)
 		end
 	end,
-	professionName = function(spellID)
-		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or RETRIEVING_DATA;
+	itemName = function(itemID, reference)
+		local name = select(2, GetItemInfo(itemID));
+		if IsRetrieving(name) then
+			reference.working = true
+			name = "Item: " .. RETRIEVING_DATA;
+		end
+		if app.Settings:GetTooltipSetting("itemID") then
+			return name .. " (" .. itemID .. ")";
+		else
+			return name;
+		end
+	end,
+	itemNameAndIcon = function(itemID, reference)
+		local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
+		if IsRetrieving(name) then
+			reference.working = true
+			name = "Item: " .. RETRIEVING_DATA;
+		end
+		if icon then
+			name = "|T" .. icon .. ":0|t" .. name;
+		end
+		if app.Settings:GetTooltipSetting("itemID") then
+			return name .. " (" .. itemID .. ")";
+		else
+			return name;
+		end
+	end,
+	objectName = function(objectID, reference)
+		if app.Settings:GetTooltipSetting("objectID") then
+			return IsRetrievingConversionMethod(app.ObjectNames[objectID], reference) .. " (" .. objectID .. ")";
+		else
+			return IsRetrievingConversionMethod(app.ObjectNames[objectID], reference)
+		end
+	end,
+	professionName = function(spellID, reference)
+		return IsRetrievingConversionMethod(GetSpellInfo(app.SkillIDToSpellID[spellID] or 0), reference)
 	end,
 }, {
 	__index = function(t, key)
 		return DefaultConversionMethod;
 	end
 });
+ConversionMethods.provider = function(provider, reference)
+	local providerType = provider[1];
+	local providerID = provider[2] or 0;
+	if providerType == "o" then
+		return ConversionMethods.objectName(providerID, reference);
+	elseif providerType == "n" then
+		return ConversionMethods.creatureName(providerID, reference);
+	elseif providerType == "i" then
+		return ConversionMethods.itemNameAndIcon(providerID, reference);
+	end
+	return UNKNOWN;
+end;
 settings.InformationTypeConversionMethods = ConversionMethods;
 
 -- Class Template for creating an Information Type instance.
@@ -128,7 +182,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 end
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	-- If the item is a recipe, then show which characters know this recipe.
-	if reference.collectible then
+	if reference.collectible and not reference.objectiveID then
 		-- Completed By for Quests
 		local id = reference.questID;
 		if id then
@@ -139,7 +193,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 			end
 			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 		end
-		
+
 		-- Pre-Cata Known By types
 		if app.GameBuildVersion < 40000 then
 			id = reference.achievementID;
@@ -152,11 +206,11 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				end
 				BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 			end
-			
+
 			local itemID = reference.itemID;
 			if itemID then
 				local knownByGUID = {};
-				
+
 				-- Prior to Cata, transmog was not tracked account wide
 				id = reference.sourceID;
 				for guid,character in pairs(ATTCharacterData) do
@@ -174,7 +228,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 							end
 						end
 					end
-					
+
 					id = reference.speciesID;
 					if id then
 						for guid,character in pairs(ATTCharacterData) do
@@ -183,7 +237,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 							end
 						end
 					end
-					
+
 					if reference.toyID then
 						for guid,character in pairs(ATTCharacterData) do
 							if character.Toys and character.Toys[itemID] then
@@ -192,7 +246,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 						end
 					end
 				end
-				
+
 				-- For the current character, count how many of the thing they own.
 				local currentCharacter = knownByGUID[app.GUID];
 				if currentCharacter then
@@ -203,12 +257,12 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 					end
 					knownByGUID[app.GUID] = setmetatable({ text = text }, { __index = currentCharacter });
 				end
-				
+
 				-- Convert the GUID dictionary to the knownBy list.
 				for guid,character in pairs(knownByGUID) do
 					tinsert(knownBy, character);
 				end
-				
+
 				-- All of this can be stored together.
 				BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY, knownBy);
 			end
@@ -217,7 +271,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 end
 local function ProcessForKnownBy(t, reference, tooltipInfo)
 	if reference.illusionID then return; end
-	
+
 	-- This is to show which characters have this profession.
 	local id = reference.spellID;
 	if id then
@@ -247,7 +301,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 				return;
 			end
 		end
-		
+
 		-- If the item is a recipe, then show which characters know this recipe.
 		if reference.collectible and reference.filterID ~= 100 then
 			for guid,character in pairs(ATTCharacterData) do
@@ -285,13 +339,16 @@ local InformationTypes = {
 	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, IsStandaloneProperty = false }),
 	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, IsStandaloneProperty = false }),
 	CreateInformationType("Layer", { text = L.LAYER, priority = 1, IsStandaloneProperty = false }),
-	
+
 	-- Progress Fields (top most)
 	CreateInformationType("Progress", { text = L.SOCIAL_PROGRESS, priority = 1, HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
 			local progressText = app.GetProgressTextForTooltip(reference);
 			if progressText then
 				tinsert(tooltipInfo, { progress = progressText });
+				--[[
+				-- I don't remember what the original conditions for showing this were.
+				-- For now just disable it.
 				if reference.total and reference.total >= 2 then
 					-- if collecting this reference type, then show Collection State
 					if reference.collectible then
@@ -307,11 +364,12 @@ local InformationTypes = {
 						});
 					end
 				end
+				]]--
 			end
 		end,
 	}),
 	CreateInformationType("SocialProgress", { text = L.SOCIAL_PROGRESS, priority = 1, IsStandaloneProperty = false }),
-	
+
 	-- Contextual fields
 	CreateInformationType("parent", { text = "Parent", priority = 1.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
@@ -321,9 +379,12 @@ local InformationTypes = {
 					-- Only show this for 2 depth hierarchies and above.
 					local grandparent = parent.parent or parent.sourceParent;
 					if grandparent then
+						local ptext, gptext =
+							IsRetrievingConversionMethod(parent.text, reference),
+							IsRetrievingConversionMethod(grandparent.text, reference)
 						tinsert(tooltipInfo, {
-							left = grandparent.text or RETRIEVING_DATA,
-							right = parent.text or RETRIEVING_DATA
+							left = gptext,
+							right = ptext
 						});
 					end
 				end
@@ -358,9 +419,21 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	
+
 	-- Quest Fields
-	-- Providers
+	CreateInformationType("providers", { text = L.PROVIDERS, priority = 2.05, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			local providers = t.GetValue(t, reference);
+			if providers then
+				for i,provider in pairs(providers) do
+					tinsert(tooltipInfo, {
+						left = (i == 1 and "Provider(s)"),
+						right = ConversionMethods.provider(provider, reference),
+					});
+				end
+			end
+		end,
+	}),
 	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local coords = reference.coords;
@@ -369,10 +442,10 @@ local InformationTypes = {
 				if not coords then return; end
 				coords = { coords };
 			end
-			
+
 			local coordCount = #coords;
 			if coordCount < 1 then return; end
-			
+
 			local maxCoords = 10;
 			local currentMapID, j, str = app.CurrentMapID, 0;
 			local showMapID = app.Settings:GetTooltipSetting("mapID");
@@ -416,7 +489,7 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	
+
 	-- Description fields
 	CreateInformationType("lore", { text = L.LORE, priority = 2.4,
 		Process = function(t, reference, tooltipInfo)
@@ -480,9 +553,10 @@ local InformationTypes = {
 	}),
 	CreateInformationType("pb", {
 		priority = 2.7,
+		isRecursive = true,
 		text = L.PET_BATTLES,
 		Process = function(t, reference, tooltipInfo)
-			if reference.pb then
+			if t.GetValue(t, reference) then
 				tinsert(tooltipInfo, {
 					left = L.REQUIRES_PETBATTLES,
 					wrap = true,
@@ -492,9 +566,10 @@ local InformationTypes = {
 	});
 	CreateInformationType("pvp", {
 		priority = 2.7,
+		isRecursive = true,
 		text = PVP,
 		Process = function(t, reference, tooltipInfo)
-			if reference.pvp then
+			if t.GetValue(t, reference) then
 				tinsert(tooltipInfo, {
 					left = L.REQUIRES_PVP,
 					wrap = true,
@@ -504,9 +579,10 @@ local InformationTypes = {
 	});
 	CreateInformationType("u", {
 		priority = 2.7,
+		isRecursive = true,
 		text = L.AVAILABILITY,
 		Process = function(t, reference, tooltipInfo)
-			local u = reference.u;
+			local u = t.GetValue(t, reference);
 			if u then
 				local condition = L.AVAILABILITY_CONDITIONS[u];
 				if condition then
@@ -518,6 +594,28 @@ local InformationTypes = {
 						});
 					end
 				end
+			end
+		end,
+	});
+	CreateInformationType("sym", {
+		priority = 2.8,
+		text = "SymLink",
+		ForceActive = true,
+		ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			if reference.skipFill then
+				tinsert(tooltipInfo, {
+					left = L.SYM_ROW_SKIP_DESC,
+					r = 0.8, g = 0.8, b = 1,
+					wrap = true,
+				});
+			end
+			if reference.sym then
+				tinsert(tooltipInfo, {
+					left = L.SYM_ROW_INFORMATION,
+					r = 0.8, g = 0.8, b = 1,
+					wrap = true,
+				});
 			end
 		end,
 	});
@@ -573,7 +671,7 @@ local InformationTypes = {
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayInExternalTooltips = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
-	
+
 	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID, priority = 8,
 		GetValue = app.GameBuildVersion >= 30000 and GetValueForInformationType or function(t, reference)
 			local value = GetValueForInformationType(t, reference);
@@ -591,7 +689,7 @@ local InformationTypes = {
 			end
 		end
 	}),
-	
+
 	CreateInformationType("questID", { text = L.QUEST_ID, priority = 8 }),
 	CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 8,
 		Process = function(t, reference, tooltipInfo)
@@ -607,13 +705,13 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
-	
+
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
 	CreateInformationType("artifactID", { text = L.ARTIFACT_ID }),
 	CreateInformationType("azeriteEssenceID", { text = L.AZERITE_ESSENCE_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
-	CreateInformationType("crs", { text = L.CREATURES_LIST,
+	CreateInformationType("crs", { text = L.CREATURES_LIST, ShouldDisplayInExternalTooltips = false,
 		limit = 25,
 		Process = function(t, reference, tooltipInfo)
 			local crs = reference.crs;
@@ -640,6 +738,7 @@ local InformationTypes = {
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),
 	CreateInformationType("displayID", { text = L.DISPLAY_ID }),
 	CreateInformationType("encounterID", { text = L.ENCOUNTER_ID }),
+	CreateInformationType("expansionID", { text = L.EXPANSION_ID }),
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
 	CreateInformationType("flightPathID", { text = L.FLIGHT_PATH_ID }),
@@ -649,15 +748,13 @@ local InformationTypes = {
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
-	CreateInformationType("Objectives", { text = L.OBJECTIVES }),
 	CreateInformationType("runeforgePowerID", { text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
 	CreateInformationType("spellName", { text = L.SPELL_NAME, IsStandaloneProperty = false }),	-- Included as a parameter for the spellID field.
-	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
-	
+
 	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local c = reference.c;-- or GetRelativeValue(reference, "c");	-- TODO: Investigate if we want this.
@@ -735,7 +832,7 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local requireSkill, learnedAt = reference.requireSkill, reference.learnedAt;
 			if requireSkill then
-				local professionName = ConversionMethods.professionName(requireSkill);
+				local professionName = ConversionMethods.professionName(requireSkill, reference);
 				if learnedAt then professionName = professionName .. " (" .. learnedAt .. ")"; end
 				tinsert(tooltipInfo, {
 					left = L.REQUIRES,
@@ -749,16 +846,16 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	
+
 	-- We want these last, usually.
 	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayInExternalTooltips = false, }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayInExternalTooltips = false, }),
-	
+
 	-- Summary Information Types
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
-	
+
 	-- We want this after most of the regular fields.
 	CreateInformationType("OnTooltip", {
 		priority = 10000,
@@ -794,7 +891,7 @@ end
 local function RefreshActiveInformationTypes()
 	wipe(ActiveInformationTypesForExternalTooltips);
 	wipe(ActiveInformationTypes);
-	
+
 	for _,informationType in ipairs(SortedInformationTypes) do
 		if settings:GetTooltipSetting(informationType.informationTypeID) or informationType.ForceActive then
 			if informationType.IsStandaloneProperty then
@@ -805,7 +902,7 @@ local function RefreshActiveInformationTypes()
 			end
 		end
 	end
-	
+
 	-- Insert the Post Processor
 	ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = PostProcessor;
 	ActiveInformationTypes[#ActiveInformationTypes + 1] = PostProcessor;
@@ -813,13 +910,13 @@ end
 
 app.ProcessInformationTypes = function(tooltipInfo, reference)
 	for _,informationType in ipairs(ActiveInformationTypes) do
-		informationType.Process(informationType, reference, tooltipInfo);
+		informationType:Process(reference, tooltipInfo);
 	end
 end
 app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference, itemString)
 	reference.itemString = itemString;
 	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
-		informationType.Process(informationType, reference, tooltipInfo);
+		informationType:Process(reference, tooltipInfo);
 	end
 	reference.itemString = nil;
 end
@@ -844,7 +941,7 @@ settings.RefreshActiveInformationTypes = function()
 	table.sort(SortedInformationTypes, SortInformationTypesByPriority);
 	table.sort(SortedInformationTypesByName, SortInformationTypesByLocalizedName);
 	RefreshActiveInformationTypes();
-	
+
 	local last, lowest = nil, nil
 	local split1 = math.ceil(#SortedInformationTypesByName / 3)
 	local split2 = 2 * split1

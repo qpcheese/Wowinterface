@@ -124,6 +124,7 @@ for key,value in pairs({
 	["LOCK_CRITERIA_QUEST_LABEL"] = "Completed Quest";
 	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
 	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
+	["LOCK_CRITERIA_SOURCE_LABEL"] = "Known Appearance";
 	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
 	["TITLES_DESC"] = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 
@@ -153,6 +154,7 @@ for key,value in pairs({
 	["MUSIC_ROLL_ID"] = "Music Roll ID";
 	["NPC_ID"] = "NPC ID";
 	["OBJECT_ID"] = "Object ID";
+	["PROVIDERS"] = "Provider(s)";
 	["QUEST_ID"] = "Quest ID";
 	["SET_ID"] = "Gear Set ID";
 	["SOURCE_ID"] = "Source ID";
@@ -162,6 +164,10 @@ for key,value in pairs({
 	["TITLE_ID"] = "Title ID";
 	["TOY_ID"] = "Toy ID";
 	["VISUAL_ID"] = "Visual ID";
+	["AND_MORE"] = "And %s more...";
+	["AND_OTHER_SOURCES"] = "And %s other sources...";
+	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
+	["SYM_ROW_SKIP_DESC"] = "Linked content is only displayed in the tooltip for this object.";
 	["ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO"] = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
 	["CLASSES"] = "Classes";
 	
@@ -170,25 +176,9 @@ for key,value in pairs({
 	["ADDITIONAL_LABEL"] = "Additional Information";
 	["CRITERIA_FOR"] = "Criteria for";
 	["CURRENCY_FOR"] = "Currency for";
-	["CELEBRATIONS_LABEL"] = "Celebrations & Sound Effects";
-	["AUDIO_CHANNEL"] = "Audio Channel";
-	["CHANNEL_MASTER"] = MASTER;
-	["CHANNEL_MUSIC"] = MUSIC_VOLUME;
-	["CHANNEL_SFX"] = FX_VOLUME;
-	["CHANNEL_AMBIENCE"] = AMBIENCE_VOLUME;
-	["CHANNEL_DIALOG"] = DIALOG_VOLUME;
-	["CELEBRATE_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Celebration";
-	["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-	["SOUNDPACK"] = "Soundpack";
-	["PLAY_DEATH_SOUND_CHECKBOX"] = "Play a Sound Effect when you Die";
-	["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a sound effect when you die.";
-	["WARN_REMOVED_CHECKBOX"] = "Removed Things Trigger a Warning";
-	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-	["SCREENSHOT_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Screenshot";
-	["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to take a screenshot for every Thing you collect.";
 	
 	["CHAT_COMMANDS_LABEL"] = "Chat Commands";
-	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp*\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
+	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 	["ICON_LEGEND_LABEL"] = "Icon Legend";
 	["ICON_LEGEND_TEXT"] = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
 	["KEYBINDINGS"] = SETTINGS_KEYBINDINGS_LABEL;
@@ -593,7 +583,7 @@ for key,value in pairs({
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 	
-	["TIER_DATA"] = {
+	["EXPANSION_DATA"] = {
 		{	-- Classic
 			["name"] = "Classic",
 			["icon"] = app.asset("Expansion_CLASSIC"),
