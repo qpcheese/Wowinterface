@@ -7,7 +7,7 @@ PasteDB = {
 		["Qpc - Draenor"] = "Qpc - Draenor",
 		["Zelení - Draenor"] = "Zelení - Draenor",
 		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
-		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+		["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
 		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
 		["Qute - Sylvanas"] = "Qute - Sylvanas",
@@ -16,11 +16,11 @@ PasteDB = {
 		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
 		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
 		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
-		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 		["Qpebank - Draenor"] = "Qpebank - Draenor",
+		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
-		["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["profiles"] = {
 		["Qpaladin - Ragnaros"] = {
@@ -33,10 +33,10 @@ PasteDB = {
 			["whispertarget"] = "",
 			["where"] = "Default",
 			["loaded"] = true,
+			["pos"] = {
+			},
 			["minimap"] = {
 				["minimapPos"] = 301.1153769241852,
-			},
-			["pos"] = {
 			},
 		},
 		["Qpc - Draenor"] = {
@@ -48,10 +48,10 @@ PasteDB = {
 		["Flurrq - Ragnaros"] = {
 			["loaded"] = true,
 		},
-		["Dogson - Ragnaros"] = {
+		["Qpfromage - Sylvanas"] = {
 			["loaded"] = true,
-			["whispertarget"] = "",
 			["where"] = "Default",
+			["whispertarget"] = "",
 			["pos"] = {
 			},
 		},
@@ -79,10 +79,10 @@ PasteDB = {
 		["Qpe - Ravencrest"] = {
 			["loaded"] = true,
 		},
-		["Jerwin - Ragnaros"] = {
+		["Qpebank - Draenor"] = {
 			["loaded"] = true,
 		},
-		["Qpebank - Draenor"] = {
+		["Jerwin - Ragnaros"] = {
 			["loaded"] = true,
 		},
 		["Qpfromage - Ragnaros"] = {
@@ -95,10 +95,10 @@ PasteDB = {
 		["Qpew - Ragnaros"] = {
 			["loaded"] = true,
 		},
-		["Qpfromage - Sylvanas"] = {
+		["Dogson - Ragnaros"] = {
 			["loaded"] = true,
-			["where"] = "Default",
 			["whispertarget"] = "",
+			["where"] = "Default",
 			["pos"] = {
 			},
 		},

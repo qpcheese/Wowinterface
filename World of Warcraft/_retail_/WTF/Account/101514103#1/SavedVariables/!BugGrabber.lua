@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2900,
 	["lastSanitation"] = 3,
-	["session"] = 2899,
 	["errors"] = {
 		{
 			["message"] = "...rface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:194: attempt to index global 'FarmHudDB' (a nil value)",
@@ -13,14 +13,14 @@ BugGrabberDB = {
 		}, -- [1]
 		{
 			["message"] = "Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:1 (null)",
-			["session"] = 18,
 			["time"] = "2023/02/07 01:29:17",
+			["session"] = 18,
 			["counter"] = 1,
 		}, -- [2]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:1 (null)",
-			["session"] = 18,
 			["time"] = "2023/02/07 01:29:17",
+			["session"] = 18,
 			["counter"] = 1,
 		}, -- [3]
 		{
@@ -627,26 +627,26 @@ BugGrabberDB = {
 		}, -- [82]
 		{
 			["message"] = "Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML: TitleRegion",
-			["time"] = "2023/05/03 18:28:07",
 			["session"] = 707,
+			["time"] = "2023/05/03 18:28:07",
 			["counter"] = 1,
 		}, -- [83]
 		{
 			["message"] = "Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML attribute: setAllPoints",
-			["time"] = "2023/05/03 18:28:07",
 			["session"] = 707,
+			["time"] = "2023/05/03 18:28:07",
 			["counter"] = 1,
 		}, -- [84]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML: TitleRegion",
-			["time"] = "2023/05/03 18:28:07",
 			["session"] = 707,
+			["time"] = "2023/05/03 18:28:07",
 			["counter"] = 1,
 		}, -- [85]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML attribute: setAllPoints",
-			["time"] = "2023/05/03 18:28:07",
 			["session"] = 707,
+			["time"] = "2023/05/03 18:28:07",
 			["counter"] = 1,
 		}, -- [86]
 		{
@@ -888,62 +888,62 @@ BugGrabberDB = {
 		}, -- [116]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML: Backdrop",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [117]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML attribute: bgFile",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [118]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML attribute: edgeFile",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [119]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML attribute: tile",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [120]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:30 Unrecognized XML: EdgeSize",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [121]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:30 Unrecognized XML attribute: val",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [122]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:31 Unrecognized XML: TileSize",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [123]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:31 Unrecognized XML attribute: val",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [124]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:32 Unrecognized XML: BackgroundInsets",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [125]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:32 Unrecognized XML attribute: left",
-			["time"] = "2023/02/09 10:00:05",
 			["session"] = 910,
+			["time"] = "2023/02/09 10:00:05",
 			["counter"] = 106,
 		}, -- [126]
 		{
@@ -1012,14 +1012,14 @@ BugGrabberDB = {
 		}, -- [134]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:10 File Interface/AddOns/TradeSkillMaster_AppHelper/AppData.lua is empty.",
-			["session"] = 978,
 			["time"] = "2023/06/06 10:37:53",
+			["session"] = 978,
 			["counter"] = 1,
 		}, -- [135]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:10 File Interface/AddOns/TradeSkillMaster_AppHelper/AppData.lua is empty.",
-			["session"] = 978,
 			["time"] = "2023/06/06 10:37:53",
+			["session"] = 978,
 			["counter"] = 1,
 		}, -- [136]
 		{
@@ -1461,50 +1461,50 @@ BugGrabberDB = {
 		}, -- [191]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Rematch.toc",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [192]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Bindings.xml",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [193]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript/tdBattlePetScript.toc",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [194]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript_Rematch/tdBattlePetScript_Rematch.toc",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [195]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Rematch.toc",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [196]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Bindings.xml",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [197]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript/tdBattlePetScript.toc",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [198]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript_Rematch/tdBattlePetScript_Rematch.toc",
-			["session"] = 1370,
 			["time"] = "2023/07/28 00:29:19",
+			["session"] = 1370,
 			["counter"] = 1,
 		}, -- [199]
 		{
@@ -1549,14 +1549,14 @@ BugGrabberDB = {
 		}, -- [204]
 		{
 			["message"] = "Interface/AddOns/RaiderIO/core.xml:25 Error loading Interface/AddOns/RaiderIO/db/db_client_replays.lua",
-			["session"] = 1409,
 			["time"] = "2023/08/01 10:49:59",
+			["session"] = 1409,
 			["counter"] = 12,
 		}, -- [205]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/RaiderIO/core.xml:25 Error loading Interface/AddOns/RaiderIO/db/db_client_replays.lua",
-			["session"] = 1409,
 			["time"] = "2023/08/01 10:49:59",
+			["session"] = 1409,
 			["counter"] = 12,
 		}, -- [206]
 		{
@@ -1577,8 +1577,8 @@ BugGrabberDB = {
 		}, -- [208]
 		{
 			["message"] = "Interface/AddOns/BigWigs_VoiceGCP/Core.lua:1 (null)",
-			["session"] = 1423,
 			["time"] = "2023/08/03 01:31:56",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [209]
 		{
@@ -1895,26 +1895,26 @@ BugGrabberDB = {
 		}, -- [248]
 		{
 			["message"] = "Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:2 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inBattle.lua",
-			["session"] = 1489,
 			["time"] = "2023/08/06 09:27:14",
+			["session"] = 1489,
 			["counter"] = 44,
 		}, -- [249]
 		{
 			["message"] = "Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:3 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inJournal.lua",
-			["session"] = 1489,
 			["time"] = "2023/08/06 09:27:14",
+			["session"] = 1489,
 			["counter"] = 44,
 		}, -- [250]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:2 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inBattle.lua",
-			["session"] = 1489,
 			["time"] = "2023/08/06 09:27:14",
+			["session"] = 1489,
 			["counter"] = 44,
 		}, -- [251]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:3 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inJournal.lua",
-			["session"] = 1489,
 			["time"] = "2023/08/06 09:27:14",
+			["session"] = 1489,
 			["counter"] = 44,
 		}, -- [252]
 		{
@@ -1951,14 +1951,14 @@ BugGrabberDB = {
 		}, -- [256]
 		{
 			["message"] = "Interface/AddOns/Details/Bindings.xml:1 constant table overflow",
-			["time"] = "2023/06/26 13:38:10",
 			["session"] = 1501,
+			["time"] = "2023/06/26 13:38:10",
 			["counter"] = 7,
 		}, -- [257]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/Details/Bindings.xml:1 constant table overflow",
-			["time"] = "2023/06/26 13:38:10",
 			["session"] = 1501,
+			["time"] = "2023/06/26 13:38:10",
 			["counter"] = 7,
 		}, -- [258]
 		{
@@ -2138,44 +2138,44 @@ BugGrabberDB = {
 		}, -- [280]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:147 Unrecognized XML: Backdrop",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1543,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 1,
 		}, -- [281]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:147 Unrecognized XML attribute: bgFile",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1543,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 1,
 		}, -- [282]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:147 Unrecognized XML attribute: edgeFile",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1543,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 1,
 		}, -- [283]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:148 Unrecognized XML: BackgroundInsets",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1543,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 1,
 		}, -- [284]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:149 Unrecognized XML: AbsInset",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1543,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 1,
 		}, -- [285]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:149 Unrecognized XML attribute: left",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1543,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 1,
 		}, -- [286]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:149 Unrecognized XML attribute: right",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1543,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 1,
 		}, -- [287]
 		{
@@ -2188,20 +2188,20 @@ BugGrabberDB = {
 		}, -- [288]
 		{
 			["message"] = "Interface/AddOns/SoundAlerter(Rus by Andrewqtx)/SoundAlerter(Rus by Andrewqtx).lua:1 (null)",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1544,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 2,
 		}, -- [289]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:11 Error loading Interface/AddOns/SoundAlerter(Rus by Andrewqtx)/sponsors.lua",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1544,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 2,
 		}, -- [290]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/SoundList/SoundList.toc",
-			["session"] = 1544,
 			["time"] = "2023/08/15 18:29:38",
+			["session"] = 1544,
 			["counter"] = 1,
 		}, -- [291]
 		{
@@ -2246,14 +2246,14 @@ BugGrabberDB = {
 		}, -- [296]
 		{
 			["message"] = "Interface/AddOns/SuperDuperSoundPackEngine/SuperDuperSoundPackEngine.lua:1 (null)",
-			["session"] = 1546,
 			["time"] = "2023/08/15 18:29:38",
+			["session"] = 1546,
 			["counter"] = 3,
 		}, -- [297]
 		{
 			["message"] = "Interface/AddOns/SuperDuperSoundPackEngine/Load.xml:6 Error loading Interface/AddOns/SuperDuperSoundPackEngine/Old_SuperDuperSoundPackEngine.lua",
-			["session"] = 1546,
 			["time"] = "2023/08/15 18:29:38",
+			["session"] = 1546,
 			["counter"] = 3,
 		}, -- [298]
 		{
@@ -2274,8 +2274,8 @@ BugGrabberDB = {
 		}, -- [300]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/DomDom/DomDom.lua:1 (null)",
-			["session"] = 1550,
 			["time"] = "2023/08/15 19:18:44",
+			["session"] = 1550,
 			["counter"] = 1,
 		}, -- [301]
 		{
@@ -2336,8 +2336,8 @@ BugGrabberDB = {
 		}, -- [308]
 		{
 			["message"] = "Interface/AddOns/DomDom/DomDom.lua:1 (null)",
-			["time"] = "2023/08/15 18:27:22",
 			["session"] = 1551,
+			["time"] = "2023/08/15 18:27:22",
 			["counter"] = 9,
 		}, -- [309]
 		{
@@ -2358,14 +2358,14 @@ BugGrabberDB = {
 		}, -- [311]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:9 Error loading Interface/AddOns/SoundtrackMusic/MyTracks.lua",
-			["session"] = 1552,
 			["time"] = "2023/08/15 18:29:38",
+			["session"] = 1552,
 			["counter"] = 9,
 		}, -- [312]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:9 Error loading Interface/AddOns/SoundtrackMusic/MyTracks.lua",
-			["session"] = 1552,
 			["time"] = "2023/08/15 19:18:44",
+			["session"] = 1552,
 			["counter"] = 2,
 		}, -- [313]
 		{
@@ -2378,14 +2378,14 @@ BugGrabberDB = {
 		}, -- [314]
 		{
 			["message"] = "Interface/AddOns/ExtraActionButtonMover/ExtraActionButtonMover.lua:1 (null)",
-			["session"] = 1556,
 			["time"] = "2023/08/15 23:55:26",
+			["session"] = 1556,
 			["counter"] = 1,
 		}, -- [315]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/ExtraActionButtonMover/ExtraActionButtonMover.lua:1 (null)",
-			["session"] = 1556,
 			["time"] = "2023/08/15 23:55:26",
+			["session"] = 1556,
 			["counter"] = 1,
 		}, -- [316]
 		{
@@ -2526,26 +2526,26 @@ BugGrabberDB = {
 		}, -- [333]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/build.lua:1 (null)",
-			["time"] = "2023/08/14 03:46:13",
 			["session"] = 1656,
+			["time"] = "2023/08/14 03:46:13",
 			["counter"] = 218,
 		}, -- [334]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/Search.lua:1 (null)",
-			["time"] = "2023/08/14 03:46:13",
 			["session"] = 1656,
+			["time"] = "2023/08/14 03:46:13",
 			["counter"] = 217,
 		}, -- [335]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/Suggestions.lua:1 (null)",
-			["time"] = "2023/08/14 03:46:13",
 			["session"] = 1656,
+			["time"] = "2023/08/14 03:46:13",
 			["counter"] = 214,
 		}, -- [336]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/Watch.lua:1 (null)",
-			["time"] = "2023/08/14 03:46:13",
 			["session"] = 1656,
+			["time"] = "2023/08/14 03:46:13",
 			["counter"] = 213,
 		}, -- [337]
 		{
@@ -2653,14 +2653,14 @@ BugGrabberDB = {
 		}, -- [350]
 		{
 			["message"] = "Error loading Interface/AddOns/WeakAurasOptions/AceGUI-Widgets/AceGUIWidget-WeakAurasInputFocus.lua",
-			["time"] = "2023/09/06 18:50:02",
 			["session"] = 1745,
+			["time"] = "2023/09/06 18:50:02",
 			["counter"] = 2,
 		}, -- [351]
 		{
 			["message"] = "Error loading Interface/AddOns/WeakAurasOptions/AceGUI-Widgets/AceGuiWidget-WeakAurasMediaSound.lua",
-			["time"] = "2023/09/06 18:50:02",
 			["session"] = 1745,
+			["time"] = "2023/09/06 18:50:02",
 			["counter"] = 2,
 		}, -- [352]
 		{
@@ -2768,14 +2768,14 @@ BugGrabberDB = {
 		}, -- [365]
 		{
 			["message"] = "Interface/AddOns/MinimapLine/MinimapLine.lua:1 (null)",
-			["session"] = 1831,
 			["time"] = "2023/08/01 00:22:47",
+			["session"] = 1831,
 			["counter"] = 7,
 		}, -- [366]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/MinimapLine/MinimapLine.lua:1 (null)",
-			["session"] = 1831,
 			["time"] = "2023/08/01 00:22:47",
+			["session"] = 1831,
 			["counter"] = 7,
 		}, -- [367]
 		{
@@ -3555,8 +3555,8 @@ BugGrabberDB = {
 		}, -- [465]
 		{
 			["message"] = "Interface/AddOns/PetTracker_Config/PetTracker_Config_Mainline.toc:1 Couldn't open Interface/AddOns/PetTracker_Config/PetTracker_Config_Mainline.toc",
-			["time"] = "2023/11/23 01:28:06",
 			["session"] = 2307,
+			["time"] = "2023/11/23 01:28:06",
 			["counter"] = 2,
 		}, -- [466]
 		{

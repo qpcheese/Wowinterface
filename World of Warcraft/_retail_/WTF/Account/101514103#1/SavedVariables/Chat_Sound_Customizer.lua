@@ -11,13 +11,13 @@ ChatSoundCustomizerDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Dogson - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
 		["Fishanus - Ragnaros"] = "Default",
 		["Qpfromagee - Ragnaros"] = "Default",
 		["Qpaladin - Ragnaros"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
 		["Qpfromage - Sylvanas"] = "Default",
-		["Flurrq - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -28,8 +28,8 @@ ChatSoundCustomizerDB = {
 				["CHAT_MSG_OFFICER"] = "None",
 				["CHAT_MSG_RAID_LEADER"] = "None",
 				["CHAT_MSG_COMMUNITIES_CHANNEL"] = "None",
-				["CHAT_MSG_GUILD"] = "None",
 				["CHAT_MSG_PARTY_LEADER"] = "None",
+				["CHAT_MSG_GUILD"] = "None",
 				["CHAT_MSG_INSTANCE_CHAT_LEADER"] = "None",
 				["CHAT_MSG_WHISPER"] = "CSC Sound 11",
 				["CHAT_MSG_BN_WHISPER"] = "CSC Sound 11",
