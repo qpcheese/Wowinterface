@@ -512,9 +512,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
 				},
-				["WeakAuras_609NDDzAA5x"] = {
+				["Bagnon_bank - items"] = {
 					["Backdrop"] = true,
-					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -523,8 +522,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
+					["Inherit"] = false,
 				},
 				["WeakAuras_MopcesrRtI7"] = {
 					["Backdrop"] = true,
@@ -650,8 +649,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
 				},
-				["Bagnon_bank - items"] = {
+				["WeakAuras_609NDDzAA5x"] = {
 					["Backdrop"] = true,
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Backdrop"] = {
 							0.5176470875740051, -- [1]
@@ -660,8 +660,8 @@ MasqueDB = {
 							0.9197917878627777, -- [4]
 						},
 					},
-					["SkinID"] = "Simplicity",
 					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
 				},
 				["Bartender4_Flyout"] = {
 					["Backdrop"] = true,

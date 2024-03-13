@@ -4,6 +4,8 @@ WeakAurasSaved = {
 	},
 	["editor_tab_spaces"] = 4,
 	["login_squelch_time"] = 10,
+	["features"] = {
+	},
 	["editor_font_size"] = 12,
 	["lastArchiveClear"] = 1709397268,
 	["minimap"] = {
@@ -12,7 +14,7 @@ WeakAurasSaved = {
 	["historyCutoff"] = 730,
 	["dbVersion"] = 70,
 	["migrationCutoff"] = 730,
-	["features"] = {
+	["registered"] = {
 	},
 	["displays"] = {
 		["Brain Freeze Deez"] = {
@@ -108,7 +110,7 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\Addons\\WeakAuras\\Media\\Textures\\BRAIN_FREEZE.BLP",
-			["width"] = 369,
+			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -119,9 +121,9 @@ WeakAurasSaved = {
 			["tocversion"] = 30400,
 			["id"] = "Brain Freeze Deez",
 			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 0.5,
+			["width"] = 369,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["authorOptions"] = {
@@ -399,8 +401,14 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["auto"] = true,
+			["semver"] = "1.0.0",
 			["uid"] = "rHLrcjUfyY8",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -422,8 +430,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["authorOptions"] = {
-			},
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -431,11 +437,11 @@ WeakAurasSaved = {
 			},
 			["displayIcon"] = 135729,
 			["xOffset"] = 406.09564208984,
-			["frameStrata"] = 5,
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.0.0",
+			["frameStrata"] = 5,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
 			["tocversion"] = 30400,
 			["id"] = "Spellsteal",
 			["actions"] = {
@@ -448,9 +454,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["width"] = 60,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -458,11 +464,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 		},
 		["Hot Streak Left"] = {
@@ -558,7 +560,7 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\Addons\\WeakAuras\\Media\\Textures\\Hot_Streak.blp",
-			["width"] = 200,
+			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -569,9 +571,9 @@ WeakAurasSaved = {
 			["tocversion"] = 30400,
 			["id"] = "Hot Streak Left",
 			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 0.55,
+			["width"] = 200,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["authorOptions"] = {
@@ -629,7 +631,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["enableGradient"] = false,
-			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["selfPoint"] = "BOTTOM",
 			["text"] = false,
 			["barColor"] = {
@@ -673,12 +675,12 @@ WeakAurasSaved = {
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["anchorXOffset"] = 0,
-					["text_text_format_p_time_legacy_floor"] = false,
+					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_text_format_p_time_format"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "None",
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -692,7 +694,7 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = -1,
 					["text_text_format_1.percentpower_format"] = "Number",
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "None",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_1.percentpower_decimal_precision"] = 0,
 					["text_shadowColor"] = {
@@ -703,10 +705,10 @@ WeakAurasSaved = {
 					},
 					["text_fontSize"] = 17,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = false,
 				}, -- [4]
 			},
-			["height"] = 20.9111442565918,
+			["gradientOrientation"] = "HORIZONTAL",
 			["icon"] = false,
 			["load"] = {
 				["use_namerealm"] = true,
@@ -751,13 +753,14 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["config"] = {
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["uid"] = "cnmF7sQVhN4",
 			["smoothProgress"] = false,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -766,19 +769,18 @@ WeakAurasSaved = {
 			["width"] = 251.8965606689453,
 			["icon_side"] = "RIGHT",
 			["frameStrata"] = 2,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["texture"] = "ToxiUI Tx Left",
 			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0,
 			["spark"] = false,
 			["tocversion"] = 100205,
 			["id"] = "Manabar",
-			["anchorFrameParent"] = false,
+			["sparkHeight"] = 30,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["anchorFrameFrame"] = "Five Second Rule Statusbar",
-			["config"] = {
-			},
+			["uid"] = "cnmF7sQVhN4",
 			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
@@ -809,7 +811,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["gradientOrientation"] = "HORIZONTAL",
+			["height"] = 20.9111442565918,
 		},
 		["FoF Left"] = {
 			["wagoID"] = "6zWQm2OA8",
@@ -908,7 +910,7 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\Addons\\WeakAuras\\Media\\Textures\\FROZEN_FINGERS.BLP",
-			["width"] = 200,
+			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -919,9 +921,9 @@ WeakAurasSaved = {
 			["tocversion"] = 30400,
 			["id"] = "FoF Left",
 			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 0.4,
+			["width"] = 200,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["authorOptions"] = {
@@ -1030,7 +1032,7 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\Addons\\WeakAuras\\Media\\Textures\\FROZEN_FINGERS.BLP",
-			["width"] = 200,
+			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -1041,9 +1043,9 @@ WeakAurasSaved = {
 			["tocversion"] = 30400,
 			["id"] = "FoF Right",
 			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 0.4,
+			["width"] = 200,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["authorOptions"] = {
@@ -1164,20 +1166,20 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "WotLK Mage Pack (Tri-Spec) by Esquire",
-			["config"] = {
-			},
+			["uid"] = "0GhM8tZS5Fj",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "CENTER",
+			["config"] = {
+			},
+			["alpha"] = 1,
 			["borderInset"] = 1,
-			["uid"] = "0GhM8tZS5Fj",
-			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["alpha"] = 1,
+			["xOffset"] = 0,
 		},
 		["Dorovon Cast Bar"] = {
 			["sparkWidth"] = 10,
@@ -1201,13 +1203,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["events"] = "UNIT_SPELLCAST_START, UNIT_SPELLCAST_STOP, UNIT_SPELLCAST_DELAYED, UNIT_SPELLCAST_CHANNEL_START, UNIT_SPELLCAST_CHANNEL_STOP, UNIT_SPELLCAST_CHANNEL_UPDATE, UNIT_SPELLCAST_EMPOWER_START, UNIT_SPELLCAST_EMPOWER_STOP, UNIT_SPELLCAST_EMPOWER_UPDATE, UNIT_AURA:player",
 						["spellIds"] = {
 						},
+						["custom"] = "function(allstates, event, ...)\n    local cast_events = {\n        UNIT_SPELLCAST_START = true,\n        UNIT_SPELLCAST_STOP = true,\n        UNIT_SPELLCAST_DELAYED = true,\n    }\n    local channel_events = {\n        UNIT_SPELLCAST_CHANNEL_START = true,\n        UNIT_SPELLCAST_CHANNEL_STOP = true,\n        UNIT_SPELLCAST_CHANNEL_UPDATE = true,\n        UNIT_SPELLCAST_EMPOWER_START = true,\n        UNIT_SPELLCAST_EMPOWER_STOP = true,\n        UNIT_SPELLCAST_EMPOWER_UPDATE = true,\n    }\n    if cast_events[event] or channel_events[event] then\n        local unit, _, spellID = select(1, ...)\n        if aura_env.units[unit] and (not aura_env.config.am_only or spellID == 5143) then\n            local state\n            if cast_events[event] then\n                state = aura_env.update_cast(event, unit)\n            end\n            if channel_events[event] then\n                state = aura_env.update_channel(event, unit)\n            end\n            allstates[unit] = state\n            return true\n        end\n    elseif event == \"UNIT_AURA\" then\n        if IsSpellKnown(5143) then -- Arcane Missiles\n            -- Clearcasting affects the tick time of Arcane Missiles\n            local clearcasting_1 = aura_env.get_aura_stacks(263725) or 0\n            local clearcasting_2 = aura_env.get_aura_stacks(276743) or 0\n            if aura_env.clearcasting and aura_env.clearcasting > clearcasting_1 + clearcasting_2 then\n                aura_env.clearcasting_time = GetTime()\n            end\n            aura_env.clearcasting = clearcasting_1 + clearcasting_2\n        end\n    end\nend",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
-						["custom"] = "function(allstates, event, ...)\n    local cast_events = {\n        UNIT_SPELLCAST_START = true,\n        UNIT_SPELLCAST_STOP = true,\n        UNIT_SPELLCAST_DELAYED = true,\n    }\n    local channel_events = {\n        UNIT_SPELLCAST_CHANNEL_START = true,\n        UNIT_SPELLCAST_CHANNEL_STOP = true,\n        UNIT_SPELLCAST_CHANNEL_UPDATE = true,\n        UNIT_SPELLCAST_EMPOWER_START = true,\n        UNIT_SPELLCAST_EMPOWER_STOP = true,\n        UNIT_SPELLCAST_EMPOWER_UPDATE = true,\n    }\n    if cast_events[event] or channel_events[event] then\n        local unit, _, spellID = select(1, ...)\n        if aura_env.units[unit] and (not aura_env.config.am_only or spellID == 5143) then\n            local state\n            if cast_events[event] then\n                state = aura_env.update_cast(event, unit)\n            end\n            if channel_events[event] then\n                state = aura_env.update_channel(event, unit)\n            end\n            allstates[unit] = state\n            return true\n        end\n    elseif event == \"UNIT_AURA\" then\n        if IsSpellKnown(5143) then -- Arcane Missiles\n            -- Clearcasting affects the tick time of Arcane Missiles\n            local clearcasting_1 = aura_env.get_aura_stacks(263725) or 0\n            local clearcasting_2 = aura_env.get_aura_stacks(276743) or 0\n            if aura_env.clearcasting and aura_env.clearcasting > clearcasting_1 + clearcasting_2 then\n                aura_env.clearcasting_time = GetTime()\n            end\n            aura_env.clearcasting = clearcasting_1 + clearcasting_2\n        end\n    end\nend",
+						["events"] = "UNIT_SPELLCAST_START, UNIT_SPELLCAST_STOP, UNIT_SPELLCAST_DELAYED, UNIT_SPELLCAST_CHANNEL_START, UNIT_SPELLCAST_CHANNEL_STOP, UNIT_SPELLCAST_CHANNEL_UPDATE, UNIT_SPELLCAST_EMPOWER_START, UNIT_SPELLCAST_EMPOWER_STOP, UNIT_SPELLCAST_EMPOWER_UPDATE, UNIT_AURA:player",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -1332,18 +1334,18 @@ WeakAurasSaved = {
 					["tick_desaturate"] = false,
 					["automatic_length"] = true,
 					["tick_thickness"] = 4,
+					["tick_placement_mode"] = "AtValue",
+					["use_texture"] = false,
 					["tick_color"] = {
 						1, -- [1]
 						0.3921568627451, -- [2]
 						0.19607843137255, -- [3]
 						1, -- [4]
 					},
-					["use_texture"] = false,
-					["tick_placement_mode"] = "AtValue",
-					["tick_visible"] = true,
-					["tick_placement"] = "0.5",
 					["tick_texture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 					["tick_yOffset"] = 0,
+					["tick_visible"] = true,
+					["tick_placement"] = "0.5",
 					["tick_length"] = 30,
 					["tick_mirror"] = false,
 					["type"] = "subtick",
@@ -1514,12 +1516,12 @@ WeakAurasSaved = {
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["frameStrata"] = 1,
-			["auto"] = true,
+			["spark"] = false,
 			["icon_side"] = "LEFT",
 			["id"] = "Dorovon Cast Bar",
 			["sparkHeight"] = 30,
 			["texture"] = "Solid",
-			["spark"] = false,
+			["auto"] = true,
 			["zoom"] = 0,
 			["semver"] = "1.0.21",
 			["tocversion"] = 100205,
@@ -1615,9 +1617,9 @@ WeakAurasSaved = {
 						["use_hostility"] = false,
 						["custom_type"] = "event",
 						["subeventSuffix"] = "_CAST_START",
-						["use_unit"] = true,
-						["event"] = "Unit Characteristics",
 						["subeventPrefix"] = "SPELL",
+						["event"] = "Unit Characteristics",
+						["hostility"] = "hostile",
 						["unit"] = "target",
 						["type"] = "unit",
 						["spellIds"] = {
@@ -1625,7 +1627,7 @@ WeakAurasSaved = {
 						["use_unitisunit"] = false,
 						["names"] = {
 						},
-						["hostility"] = "hostile",
+						["use_unit"] = true,
 						["use_attackable"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -1778,6 +1780,9 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
+			["cooldownEdge"] = false,
+			["uid"] = "F(0w6q50z4A",
+			["internalVersion"] = 70,
 			["actions"] = {
 				["start"] = {
 				},
@@ -1786,21 +1791,13 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["uid"] = "F(0w6q50z4A",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
 			["displayIcon"] = "236214",
+			["selfPoint"] = "CENTER",
 			["xOffset"] = 202.59527587891,
-			["cooldownEdge"] = false,
 			["width"] = 64,
 			["frameStrata"] = 1,
 			["zoom"] = 0,
@@ -1808,9 +1805,9 @@ WeakAurasSaved = {
 			["tocversion"] = 30400,
 			["id"] = "Deep Freeze",
 			["cooldownTextDisabled"] = false,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -1819,7 +1816,12 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["internalVersion"] = 70,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["Experience Bar - Luxthos"] = {
 			["sparkWidth"] = 10,
@@ -1908,12 +1910,12 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["custom_hide"] = "custom",
-						["custom_type"] = "stateupdate",
+						["subeventSuffix"] = "",
 						["debuffType"] = "HELPFUL",
 						["custom"] = "function(allstates, event, ...)\n    local cfg = aura_env.config\n    local show = cfg[\"showmaxlevel\"] or not aura_env.isPlayerMaxLevel\n    \n    allstates[\"\"] = allstates[\"\"] or { show = false }\n    \n    if show then\n        local WAS = aura_env.GetSavedVars()\n        local level = aura_env.level or UnitLevel(\"player\")\n        local totalTime = WAS.session.realTotalTime or 0\n        local levelTime = WAS.session.realLevelTime or 0\n        local currentTime = time()\n        local sessionTime = 0\n        local gainedXP = WAS.session.gainedXP or 0\n        local coeff, hourlyXP, timeToLevel = 0, 0, 0\n        \n        local currentXP = UnitXP(\"player\") or 0\n        local totalXP = UnitXPMax(\"player\") or 0\n        local remainingXP = totalXP - currentXP\n        local restedXP = GetXPExhaustion() or 0\n        local questXP = aura_env.questXP or 0\n        local completeXP = aura_env.completeXP or 0\n        local incompleteXP = aura_env.incompleteXP or 0\n        \n        if cfg[\"leveltime-text\"] and WAS.session.lastTimePlayedRequest > 0 then\n            totalTime = currentTime - WAS.session.lastTimePlayedRequest + WAS.session.realTotalTime\n            levelTime = currentTime - WAS.session.lastTimePlayedRequest + WAS.session.realLevelTime\n        end\n        \n        if cfg[\"sessiontime-text\"] or cfg[\"showxphour-text\"] then\n            if WAS.session.startTime > 0 then\n                sessionTime = currentTime - WAS.session.startTime\n                \n                coeff = sessionTime / 3600\n                \n                if coeff > 0 and gainedXP > 0 then\n                    hourlyXP = ceil(gainedXP / coeff)\n                    timeToLevel = ceil(remainingXP / hourlyXP * 3600)\n                end\n            end\n        end\n        \n        allstates[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            value = currentXP,\n            total = totalXP,\n            \n            -- Usable Variables\n            level = level,\n            currentXP = currentXP,\n            totalXP = totalXP,\n            remainingXP = remainingXP,\n            restedXP = restedXP,\n            questXP = questXP,\n            completeXP = completeXP,\n            incompleteXP = incompleteXP,\n            hourlyXP = hourlyXP,\n            timeToLevel = timeToLevel,\n            timeToLevelText = timeToLevel > 0 and aura_env.FormatTime(timeToLevel) or \"--\",\n            totalTime = totalTime,\n            totalTimeText = aura_env.FormatTime(totalTime),\n            levelTime = levelTime,\n            levelTimeText = aura_env.FormatTime(levelTime),\n            sessionTime = sessionTime,\n            sessionTimeText = aura_env.FormatTime(sessionTime),\n            percentXP = totalXP > 0 and ((currentXP / totalXP) * 100) or 0,\n            percentremaining = totalXP > 0 and ((remainingXP / totalXP) * 100) or 0,\n            percentrested = totalXP > 0 and ((restedXP / totalXP) * 100) or 0,\n            percentquest = totalXP > 0 and ((questXP / totalXP) * 100) or 0,\n            percentcomplete = totalXP > 0 and ((completeXP / totalXP) * 100) or 0,\n            percentincomplete = totalXP > 0 and ((incompleteXP / totalXP) * 100) or 0,\n            totalpercentcomplete = totalXP > 0 and (((completeXP + currentXP) / totalXP) * 100) or 0,\n            \n            additionalProgress = {\n                {\n                    -- Complete Quest XP\n                    direction = \"forward\",\n                    width = completeXP\n                },\n                {\n                    -- Incomplete Quest XP\n                    direction = \"forward\",\n                    width = aura_env.config[\"showincompletequest-bar\"] and incompleteXP or 0,\n                    offset = completeXP,\n                },\n                {\n                    -- Rested XP\n                    direction = \"forward\",\n                    width = restedXP,\n                    offset = completeXP + (aura_env.config[\"showincompletequest-bar\"] and incompleteXP or 0)\n                }\n            }\n        }\n        \n        aura_env.UpdateCustomTexts(allstates[\"\"])\n        \n        if aura_env.timerHandler then\n            aura_env.timerHandler:Cancel()\n            aura_env.timerHandler = nil\n        end\n        \n        aura_env.timerHandler = C_Timer.NewTimer(1, function()\n                WeakAuras.ScanEvents(\"LWA_EXPERIENCE_UPDATE\")\n        end)\n        \n        return true\n        \n    elseif allstates[\"\"][\"show\"] then\n        allstates[\"\"] = {\n            show = false,\n            changed = true,\n        }\n        \n        return true\n    end\nend",
 						["type"] = "custom",
 						["customName"] = "",
-						["subeventSuffix"] = "",
+						["custom_type"] = "stateupdate",
 						["customDuration"] = "",
 						["spellName"] = {
 							0, -- [1]
@@ -1922,9 +1924,9 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
-						["events"] = "LWA_EXPERIENCE_UPDATE",
 						["spellIds"] = {
 						},
+						["events"] = "LWA_EXPERIENCE_UPDATE",
 						["check"] = "event",
 						["use_genericShowOn"] = true,
 						["use_track"] = true,
@@ -2022,12 +2024,12 @@ WeakAurasSaved = {
 					["text_font"] = "Bebas Neue Cyrillic Regular",
 					["text_text"] = "%c1",
 					["text_shadowYOffset"] = -1,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
-					["text_anchorPoint"] = "INNER_LEFT",
-					["text_text_format_p_time_format"] = 0,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_text_format_c1_format"] = "none",
+					["text_text_format_p_time_format"] = 0,
+					["text_anchorPoint"] = "INNER_LEFT",
 					["text_fontSize"] = 14,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_format"] = "timed",
@@ -2193,7 +2195,7 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
-				["saved"] = "JrXkQ4ulU4mZpVYskNelUKicGdzk8sfLAI5es(LaKiZCtvcgNImnLEIzMxQPerasWi7UeuUjwbq1TwEMuXLKyrLasnAK6730QaRnFsTSubRnglquqgiizdiNeRm1uck1cln1IlbOs37haa",
+				["saved"] = "JrXkQ4ulU4mZpVYskNelUKicO2lvuQjMti5xcqImZnvjyChlTP0tmZ8snLicGdjoAq5MyfazStnMuXLKyrLasjAK6hpFBG1LpPwwQG1fJfikitdKSbKtIvMAkbLAHLMAXLauPxSFad",
 			},
 			["icon_side"] = "LEFT",
 			["sparkColor"] = {
@@ -2208,20 +2210,20 @@ WeakAurasSaved = {
 			["desc"] = "Created by Luxthos & Daemoos\nwww.twitch.tv/luxthos",
 			["auto"] = false,
 			["semver"] = "3.1.0",
-			["sparkHidden"] = "NEVER",
 			["id"] = "Experience Bar - Luxthos",
+			["sparkHidden"] = "NEVER",
 			["width"] = 455.0522766113281,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["config"] = {
-				["showmaxlevel"] = false,
-				["sessiontime-text"] = true,
-				["showxphour-text"] = true,
 				["reset_reload"] = false,
 				["showincompletequest-bar"] = false,
-				["questrested-text"] = true,
+				["showxphour-text"] = true,
+				["showmaxlevel"] = false,
 				["hide_xpbar"] = true,
 				["leveltime-text"] = true,
+				["sessiontime-text"] = true,
+				["questrested-text"] = true,
 			},
 			["zoom"] = 0,
 			["inverse"] = false,
@@ -2410,7 +2412,7 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\Addons\\WeakAuras\\Media\\Textures\\Hot_Streak.blp",
-			["width"] = 200,
+			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2421,9 +2423,9 @@ WeakAurasSaved = {
 			["tocversion"] = 30400,
 			["id"] = "Hot Streak Right",
 			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 0.55,
+			["width"] = 200,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["authorOptions"] = {
@@ -2529,7 +2531,7 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
 			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura2",
-			["width"] = 351,
+			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				0.9921568627451, -- [1]
 				0.49803921568627, -- [2]
@@ -2540,9 +2542,9 @@ WeakAurasSaved = {
 			["tocversion"] = 30400,
 			["id"] = "Missile Barrage",
 			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 0.6,
+			["width"] = 351,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["authorOptions"] = {
@@ -2558,10 +2560,14 @@ WeakAurasSaved = {
 		["Clearcasting"] = {
 			["user_y"] = 0,
 			["wagoID"] = "6zWQm2OA8",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.6789528131485, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura6",
+			["fontSize"] = 12,
 			["yOffset"] = -37.163269042969,
 			["foregroundColor"] = {
 				0.98039215686274, -- [1]
@@ -2571,7 +2577,8 @@ WeakAurasSaved = {
 			},
 			["desaturateBackground"] = false,
 			["user_x"] = 0,
-			["parent"] = "WotLK Mage Pack (Tri-Spec) by Esquire",
+			["authorOptions"] = {
+			},
 			["sameTexture"] = false,
 			["url"] = "https://wago.io/6zWQm2OA8/1",
 			["desaturateForeground"] = false,
@@ -2602,7 +2609,7 @@ WeakAurasSaved = {
 			},
 			["endAngle"] = 360,
 			["internalVersion"] = 70,
-			["fontSize"] = 12,
+			["textureWrapMode"] = "CLAMP",
 			["selfPoint"] = "CENTER",
 			["anchorPoint"] = "CENTER",
 			["xOffset"] = -6.103515625e-05,
@@ -2648,15 +2655,10 @@ WeakAurasSaved = {
 				},
 			},
 			["useAdjustededMax"] = false,
-			["textureWrapMode"] = "CLAMP",
+			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura6",
 			["source"] = "import",
 			["startAngle"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.6789528131485, -- [4]
-			},
+			["parent"] = "WotLK Mage Pack (Tri-Spec) by Esquire",
 			["backgroundColor"] = {
 				0.2156862745098, -- [1]
 				0.2156862745098, -- [2]
@@ -2757,7 +2759,5 @@ WeakAurasSaved = {
 		},
 	},
 	["lastUpgrade"] = 1709397273,
-	["registered"] = {
-	},
 	["editor_theme"] = "Monokai",
 }

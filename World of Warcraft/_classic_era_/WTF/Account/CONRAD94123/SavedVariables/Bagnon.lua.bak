@@ -79,7 +79,7 @@ Bagnon_Sets = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
+			["itemScale"] = 0.92,
 			["spacing"] = 3,
 			["y"] = 0,
 			["x"] = 0.0001799353337901266,
@@ -89,7 +89,7 @@ Bagnon_Sets = {
 			["reverseSlots"] = false,
 			["bagBreak"] = 0,
 			["scale"] = 1.04,
-			["itemScale"] = 0.92,
+			["alpha"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
