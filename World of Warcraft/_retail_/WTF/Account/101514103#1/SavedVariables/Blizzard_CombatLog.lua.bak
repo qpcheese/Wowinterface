@@ -63,10 +63,10 @@ Blizzard_CombatLog_Filters = {
 						["r"] = 1,
 					},
 				},
+				["eventColoring"] = {
+				},
 				["highlightedEvents"] = {
 					["PARTY_KILL"] = true,
-				},
-				["eventColoring"] = {
 				},
 				["defaults"] = {
 					["damage"] = {
@@ -155,12 +155,12 @@ Blizzard_CombatLog_Filters = {
 				["schoolNameHighlighting"] = true,
 				["unitBraces"] = true,
 				["noMeleeSwingColoring"] = false,
-				["hideBuffs"] = true,
+				["unitIcons"] = true,
 				["hideDebuffs"] = true,
 				["amountSchoolColoring"] = false,
 				["amountColoring"] = false,
 				["unitColoring"] = false,
-				["unitIcons"] = true,
+				["hideBuffs"] = true,
 				["timestampFormat"] = "%H:%M:%S",
 				["braces"] = false,
 				["actionActorColoring"] = false,
@@ -309,10 +309,10 @@ Blizzard_CombatLog_Filters = {
 						["r"] = 1,
 					},
 				},
+				["eventColoring"] = {
+				},
 				["highlightedEvents"] = {
 					["PARTY_KILL"] = true,
-				},
-				["eventColoring"] = {
 				},
 				["defaults"] = {
 					["damage"] = {
@@ -401,12 +401,12 @@ Blizzard_CombatLog_Filters = {
 				["schoolNameHighlighting"] = true,
 				["unitBraces"] = true,
 				["noMeleeSwingColoring"] = false,
-				["hideBuffs"] = true,
+				["unitIcons"] = true,
 				["hideDebuffs"] = true,
 				["amountSchoolColoring"] = false,
 				["amountColoring"] = false,
 				["unitColoring"] = false,
-				["unitIcons"] = true,
+				["hideBuffs"] = true,
 				["timestampFormat"] = "%H:%M:%S",
 				["braces"] = false,
 				["actionActorColoring"] = false,
@@ -478,14 +478,14 @@ Blizzard_CombatLog_Filters = {
 						["SPELL_DURABILITY_DAMAGE_ALL"] = true,
 						["ENCHANT_REMOVED"] = true,
 						["SPELL_AURA_REMOVED"] = true,
-						["SPELL_DISPEL_FAILED"] = true,
+						["SPELL_PERIODIC_LEECH"] = true,
 						["SPELL_DURABILITY_DAMAGE"] = true,
 						["SPELL_CAST_FAILED"] = true,
-						["ENCHANT_APPLIED"] = true,
-						["SPELL_PERIODIC_LEECH"] = true,
+						["SPELL_AURA_REMOVED_DOSE"] = true,
+						["SPELL_DISPEL_FAILED"] = true,
 						["SPELL_AURA_REFRESH"] = true,
 						["SPELL_AURA_APPLIED_DOSE"] = true,
-						["SPELL_AURA_REMOVED_DOSE"] = true,
+						["ENCHANT_APPLIED"] = true,
 						["SWING_DAMAGE"] = true,
 						["SPELL_AURA_BROKEN_SPELL"] = true,
 						["SPELL_CREATE"] = true,

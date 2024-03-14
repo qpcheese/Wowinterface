@@ -31,8 +31,8 @@ RaiderIO_Config = {
 		["g"] = 0,
 		["r"] = 0,
 	},
-	["inverseProfileModifier"] = false,
 	["showRaiderIOProfile"] = true,
+	["replaySelection"] = "user_best_replay",
 	["showSimpleScoreColors"] = false,
 	["enableGuildTooltips"] = true,
 	["enableWhoTooltips"] = true,
@@ -40,23 +40,20 @@ RaiderIO_Config = {
 	["showScoreModifier"] = false,
 	["enableLFGTooltips"] = true,
 	["showRoleIcons"] = true,
-	["positionProfileAuto"] = true,
+	["enableFriendsTooltips"] = true,
 	["enableClientEnhancements"] = true,
 	["showDropDownCopyURL"] = true,
 	["enableUnitTooltips"] = true,
 	["enableProfileModifier"] = true,
 	["hidePersonalRaiderIOProfile"] = false,
-	["enableFriendsTooltips"] = true,
+	["positionProfileAuto"] = true,
 	["lockProfile"] = false,
 	["showScoreInCombat"] = true,
-	["replaySelection"] = "user_best_replay",
+	["inverseProfileModifier"] = false,
 	["showClientGuildBest"] = true,
 }
 RaiderIO_LastCharacter = "eu-Qpfromage-sylvanas"
 RaiderIO_MissingCharacters = {
-	["eu-Izara-sylvanas"] = true,
-	["eu-Ennarpala-sylvanas"] = true,
-	["eu-Jobe-sylvanas"] = true,
 }
 RaiderIO_MissingServers = {
 }

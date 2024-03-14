@@ -17,10 +17,10 @@ PetBattleMasterDb = {
 										652, -- [3]
 									},
 									["creatureId"] = 71163,
-									["name"] = "Unborn Val'kyr",
+									["petType"] = 4,
 									["petId"] = "BattlePet-0-000012B521D4",
 									["level"] = 25,
-									["petType"] = 4,
+									["name"] = "Unborn Val'kyr",
 								}, -- [1]
 								{
 									["speciesId"] = 1532,
@@ -30,10 +30,10 @@ PetBattleMasterDb = {
 										581, -- [3]
 									},
 									["creatureId"] = 86447,
-									["name"] = "Ikky",
+									["petType"] = 3,
 									["petId"] = "BattlePet-0-000012B146CB",
 									["level"] = 25,
-									["petType"] = 3,
+									["name"] = "Ikky",
 								}, -- [2]
 								{
 									["speciesId"] = 2834,
@@ -43,10 +43,10 @@ PetBattleMasterDb = {
 										1679, -- [3]
 									},
 									["creatureId"] = 161923,
-									["name"] = "Aqir Hivespawn",
+									["petType"] = 5,
 									["petId"] = "BattlePet-0-000012B822BF",
 									["level"] = 25,
-									["petType"] = 5,
+									["name"] = "Aqir Hivespawn",
 								}, -- [3]
 							},
 							["name"] = "Unnamed",
@@ -58,18 +58,24 @@ PetBattleMasterDb = {
 		},
 	},
 	["profileKeys"] = {
-		["Flurrq - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
 		["Fishanus - Ragnaros"] = "Default",
 		["Qpaladin - Ragnaros"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
 		["Qpfromage - Sylvanas"] = "Default",
-		["Dogson - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["tooltipAttachment"] = false,
 			["frames"] = {
-				["petbmNameIconEditor"] = {
+				["petbmInfoView"] = {
+					["windowPosition"] = {
+						["y"] = -49,
+						["x"] = 0,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				},
 				["CollectionsJournal"] = {
 				},
@@ -81,13 +87,7 @@ PetBattleMasterDb = {
 						["relativePoint"] = "TOP",
 					},
 				},
-				["petbmInfoView"] = {
-					["windowPosition"] = {
-						["y"] = -49,
-						["x"] = 0,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+				["petbmNameIconEditor"] = {
 				},
 			},
 			["minimapIcon"] = {

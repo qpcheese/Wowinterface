@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2899,
+	["session"] = 2901,
 	["errors"] = {
 		{
 			["message"] = "...rface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:194: attempt to index global 'FarmHudDB' (a nil value)",

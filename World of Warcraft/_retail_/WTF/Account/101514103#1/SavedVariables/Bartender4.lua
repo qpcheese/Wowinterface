@@ -396,8 +396,8 @@ Bartender4DB = {
 						{
 							["version"] = 3,
 							["showgrid"] = true,
-							["mouseover"] = true,
 							["WoW10Layout"] = true,
+							["mouseover"] = true,
 							["position"] = {
 								["y"] = 156.3674497595239,
 								["x"] = -241.8249462863969,
@@ -406,8 +406,8 @@ Bartender4DB = {
 							},
 						}, -- [1]
 						{
-							["version"] = 3,
 							["fadeout"] = true,
+							["fadeoutdelay"] = 0.08,
 							["buttons"] = 1,
 							["fadeoutalpha"] = 0,
 							["position"] = {
@@ -417,7 +417,7 @@ Bartender4DB = {
 								["scale"] = 0.550000011920929,
 							},
 							["WoW10Layout"] = true,
-							["fadeoutdelay"] = 0.08,
+							["version"] = 3,
 						}, -- [2]
 						{
 							["showgrid"] = true,
@@ -557,8 +557,8 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["mouseover"] = true,
-							["fadeoutdelay"] = 0,
 							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 180.3670064019316,
 								["x"] = -243.8252011642799,
@@ -570,7 +570,7 @@ Bartender4DB = {
 							},
 							["fadeoutalpha"] = 1,
 							["WoW10Layout"] = true,
-							["fadeout"] = true,
+							["fadeoutdelay"] = 0,
 						}, -- [1]
 						{
 							["fadeoutdelay"] = 0.08,
@@ -589,9 +589,9 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = true,
+							["version"] = 3,
 							["fadeoutdelay"] = 0,
 							["fadeout"] = true,
-							["version"] = 3,
 							["position"] = {
 								["growHorizontal"] = "LEFT",
 								["growVertical"] = "UP",
@@ -698,9 +698,9 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = true,
+							["version"] = 3,
 							["fadeoutdelay"] = 0,
 							["fadeout"] = true,
-							["version"] = 3,
 							["position"] = {
 								["y"] = 90.49850488826814,
 								["x"] = 4.237298164291133,
@@ -718,11 +718,11 @@ Bartender4DB = {
 							["enabled"] = true,
 							["showgrid"] = true,
 							["mouseover"] = true,
-							["fadeoutdelay"] = 0,
+							["fadeoutalpha"] = 1,
 							["visibility"] = {
 								["combat"] = true,
 							},
-							["fadeoutalpha"] = 1,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 188.0030349028357,
 								["x"] = 440.46879330097,
@@ -732,7 +732,7 @@ Bartender4DB = {
 							["buttons"] = 2,
 							["padding"] = 13,
 							["WoW10Layout"] = true,
-							["version"] = 3,
+							["fadeoutdelay"] = 0,
 						},
 						[15] = {
 							["enabled"] = true,
@@ -745,15 +745,15 @@ Bartender4DB = {
 								["vehicleui"] = false,
 							},
 							["mouseover"] = true,
-							["fadeoutdelay"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 1,
 							["position"] = {
 								["y"] = -245.2992616521169,
 								["x"] = 403.9995671378347,
 								["point"] = "CENTER",
 								["scale"] = 1.799999952316284,
 							},
-							["fadeoutalpha"] = 1,
+							["fadeoutdelay"] = 0,
 							["padding"] = 6,
 							["WoW10Layout"] = true,
 							["states"] = {
@@ -853,8 +853,8 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["mouseover"] = false,
-							["version"] = 3,
 							["fadeoutdelay"] = 0,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 180.3674084710347,
 								["x"] = -243.8251492843956,
@@ -866,11 +866,11 @@ Bartender4DB = {
 							},
 							["fadeoutalpha"] = 0,
 							["WoW10Layout"] = true,
-							["fadeout"] = true,
+							["version"] = 3,
 						}, -- [1]
 						{
-							["fadeoutdelay"] = 0.08,
 							["fadeout"] = true,
+							["version"] = 3,
 							["buttons"] = 1,
 							["fadeoutalpha"] = 0,
 							["position"] = {
@@ -880,7 +880,7 @@ Bartender4DB = {
 								["scale"] = 0.550000011920929,
 							},
 							["WoW10Layout"] = true,
-							["version"] = 3,
+							["fadeoutdelay"] = 0.08,
 						}, -- [2]
 						{
 							["rows"] = 3,
@@ -991,20 +991,20 @@ Bartender4DB = {
 						},
 						[13] = {
 							["enabled"] = true,
-							["buttons"] = 2,
-							["version"] = 3,
 							["position"] = {
 								["y"] = 199.0010068717629,
 								["x"] = -432.4994023712134,
 								["point"] = "BOTTOM",
 								["scale"] = 0.949999988079071,
 							},
+							["fadeoutalpha"] = 0,
+							["buttons"] = 2,
 							["WoW10Layout"] = true,
 							["padding"] = 13,
 							["visibility"] = {
 								["combat"] = true,
 							},
-							["fadeoutalpha"] = 0,
+							["version"] = 3,
 						},
 						[15] = {
 							["enabled"] = true,
@@ -1290,8 +1290,8 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["mouseover"] = false,
-							["version"] = 3,
 							["fadeout"] = true,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 180.3674084710347,
 								["x"] = -243.8251492843956,
@@ -1303,11 +1303,11 @@ Bartender4DB = {
 							["visibility"] = {
 								["always"] = false,
 							},
-							["fadeoutdelay"] = 0,
+							["version"] = 3,
 						}, -- [1]
 						{
-							["fadeoutdelay"] = 0.08,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["buttons"] = 1,
 							["fadeout"] = true,
 							["position"] = {
@@ -1317,15 +1317,15 @@ Bartender4DB = {
 								["scale"] = 0.550000011920929,
 							},
 							["WoW10Layout"] = true,
-							["fadeoutalpha"] = 0,
+							["fadeoutdelay"] = 0.08,
 						}, -- [2]
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
+							["version"] = 3,
 							["fadeoutdelay"] = 0,
 							["fadeoutalpha"] = 0.15,
-							["version"] = 3,
 							["position"] = {
 								["growHorizontal"] = "LEFT",
 								["growVertical"] = "UP",
@@ -1345,10 +1345,10 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
-							["fadeout"] = true,
-							["WoW10Layout"] = true,
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["WoW10Layout"] = true,
+							["fadeout"] = true,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 95.62840729961408,
 								["x"] = 457.4476629775454,
@@ -1432,9 +1432,9 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
+							["fadeoutalpha"] = 0.15,
 							["fadeoutdelay"] = 0,
 							["version"] = 3,
-							["fadeoutalpha"] = 0.15,
 							["position"] = {
 								["y"] = 90.49850488826814,
 								["x"] = 4.237298164291133,
@@ -1451,9 +1451,9 @@ Bartender4DB = {
 						[13] = {
 							["enabled"] = true,
 							["showgrid"] = true,
-							["fadeoutdelay"] = 0,
-							["WoW10Layout"] = true,
 							["version"] = 3,
+							["WoW10Layout"] = true,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 188.0030349028357,
 								["x"] = 440.46879330097,
@@ -1475,8 +1475,8 @@ Bartender4DB = {
 							["visibility"] = {
 								["always"] = false,
 							},
-							["fadeoutdelay"] = 0,
 							["fadeoutalpha"] = 0,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 10.34419623628855,
 								["x"] = 255.8266889829974,
@@ -1691,19 +1691,19 @@ Bartender4DB = {
 							["fadeoutdelay"] = 0,
 							["enabled"] = true,
 							["buttons"] = 3,
-							["mouseover"] = false,
+							["alpha"] = 0,
 							["visibility"] = {
 								["always"] = false,
 							},
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = -46.50562830751005,
 								["x"] = 305.8268402463364,
 								["point"] = "CENTER",
 								["scale"] = 1.799999952316284,
 							},
-							["alpha"] = 0,
+							["mouseover"] = false,
 							["WoW10Layout"] = true,
 							["states"] = {
 								["enabled"] = true,
@@ -1716,8 +1716,8 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["mouseover"] = false,
-							["fadeoutalpha"] = 1,
 							["fadeout"] = true,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 180.3674084710347,
 								["x"] = -243.8251492843956,
@@ -1729,11 +1729,11 @@ Bartender4DB = {
 							},
 							["version"] = 3,
 							["WoW10Layout"] = true,
-							["fadeoutdelay"] = 0,
+							["fadeoutalpha"] = 1,
 						}, -- [1]
 						{
-							["version"] = 3,
 							["fadeoutalpha"] = 0,
+							["fadeoutdelay"] = 0.08,
 							["buttons"] = 1,
 							["fadeout"] = true,
 							["position"] = {
@@ -1743,15 +1743,15 @@ Bartender4DB = {
 								["scale"] = 0.550000011920929,
 							},
 							["WoW10Layout"] = true,
-							["fadeoutdelay"] = 0.08,
+							["version"] = 3,
 						}, -- [2]
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
+							["fadeoutdelay"] = 0,
 							["fadeoutalpha"] = 0.15,
 							["fadeout"] = true,
-							["fadeoutdelay"] = 0,
 							["position"] = {
 								["growHorizontal"] = "LEFT",
 								["growVertical"] = "UP",
@@ -1771,14 +1771,14 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
-							["fadeoutalpha"] = 0,
+							["fadeoutdelay"] = 0,
 							["visibility"] = {
 								["customdata"] = "[petbattle]hide;[vehicleui]hide;show",
 								["overridebar"] = false,
 								["custom"] = false,
 							},
+							["fadeoutalpha"] = 0,
 							["fadeout"] = true,
-							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 94.62851980513733,
 								["x"] = -475.1272553816198,
@@ -1858,9 +1858,9 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
+							["fadeoutdelay"] = 0,
 							["fadeoutalpha"] = 0.15,
 							["fadeout"] = true,
-							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 90.49850488826814,
 								["x"] = 4.237298164291133,
@@ -1877,11 +1877,11 @@ Bartender4DB = {
 						[13] = {
 							["enabled"] = true,
 							["showgrid"] = true,
-							["version"] = 3,
+							["fadeoutalpha"] = 1,
 							["visibility"] = {
 								["combat"] = true,
 							},
-							["fadeoutalpha"] = 1,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 185.0030608804218,
 								["x"] = -461.0561677599435,
@@ -1891,7 +1891,7 @@ Bartender4DB = {
 							["buttons"] = 2,
 							["padding"] = 13,
 							["WoW10Layout"] = true,
-							["fadeoutdelay"] = 0,
+							["version"] = 3,
 						},
 						[15] = {
 							["enabled"] = true,
@@ -1901,8 +1901,8 @@ Bartender4DB = {
 							["visibility"] = {
 								["always"] = false,
 							},
-							["fadeoutdelay"] = 0,
 							["fadeoutalpha"] = 0,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = -36.65591848543045,
 								["x"] = 314.8266202813611,
@@ -2029,9 +2029,9 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["fadeout"] = true,
 							["fadeoutdelay"] = 0,
-							["version"] = 3,
+							["fadeout"] = true,
+							["fadeoutalpha"] = 0,
 							["showgrid"] = true,
 							["position"] = {
 								["growHorizontal"] = "LEFT",
@@ -2043,12 +2043,12 @@ Bartender4DB = {
 							},
 							["rows"] = 3,
 							["WoW10Layout"] = true,
-							["fadeoutalpha"] = 0,
+							["version"] = 3,
 						}, -- [3]
 						{
-							["flyoutDirection"] = "LEFT",
 							["fadeout"] = true,
-							["version"] = 3,
+							["flyoutDirection"] = "LEFT",
+							["fadeoutalpha"] = 0,
 							["showgrid"] = true,
 							["position"] = {
 								["y"] = 210.2741903157566,
@@ -2058,7 +2058,7 @@ Bartender4DB = {
 							},
 							["rows"] = 3,
 							["WoW10Layout"] = true,
-							["fadeoutalpha"] = 0,
+							["version"] = 3,
 						}, -- [4]
 						{
 							["version"] = 3,
@@ -2122,8 +2122,8 @@ Bartender4DB = {
 						[15] = {
 							["enabled"] = true,
 							["showgrid"] = true,
-							["fadeoutdelay"] = 0,
 							["fadeout"] = true,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = -203.2632504976245,
 								["x"] = 432.4676144793921,
@@ -2140,9 +2140,9 @@ Bartender4DB = {
 				["Qute - Sylvanas"] = {
 					["actionbars"] = {
 						{
-							["fadeoutdelay"] = 0,
-							["WoW10Layout"] = true,
 							["version"] = 3,
+							["WoW10Layout"] = true,
+							["fadeoutdelay"] = 0,
 							["showgrid"] = true,
 							["position"] = {
 								["y"] = 180.3674084710347,
@@ -2151,14 +2151,14 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 							},
 							["fadeoutalpha"] = 1,
+							["mouseover"] = false,
 							["visibility"] = {
 								["always"] = false,
 							},
-							["mouseover"] = false,
 						}, -- [1]
 						{
-							["fadeoutdelay"] = 0.08,
 							["version"] = 3,
+							["fadeout"] = true,
 							["buttons"] = 1,
 							["fadeoutalpha"] = 0,
 							["position"] = {
@@ -2168,15 +2168,15 @@ Bartender4DB = {
 								["scale"] = 0.550000011920929,
 							},
 							["WoW10Layout"] = true,
-							["fadeout"] = true,
+							["fadeoutdelay"] = 0.08,
 						}, -- [2]
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
+							["version"] = 3,
 							["fadeoutalpha"] = 0,
 							["fadeoutdelay"] = 0,
-							["version"] = 3,
 							["position"] = {
 								["growHorizontal"] = "LEFT",
 								["growVertical"] = "UP",
@@ -2196,10 +2196,10 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["mouseover"] = false,
-							["fadeoutalpha"] = 0,
-							["WoW10Layout"] = true,
-							["fadeoutdelay"] = 0,
 							["version"] = 3,
+							["WoW10Layout"] = true,
+							["fadeoutalpha"] = 0,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 180.6277028203767,
 								["x"] = 240.8728638837711,
@@ -2280,9 +2280,9 @@ Bartender4DB = {
 							["enabled"] = true,
 							["showgrid"] = true,
 							["mouseover"] = false,
+							["version"] = 3,
 							["fadeoutalpha"] = 0.15,
 							["fadeoutdelay"] = 0,
-							["version"] = 3,
 							["position"] = {
 								["y"] = 101.4983762600386,
 								["x"] = -235.7625483502379,
@@ -2299,9 +2299,9 @@ Bartender4DB = {
 						[13] = {
 							["enabled"] = true,
 							["showgrid"] = true,
-							["fadeoutalpha"] = 1,
-							["WoW10Layout"] = true,
 							["version"] = 3,
+							["WoW10Layout"] = true,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 251.0030837033537,
 								["x"] = 432.4687659355368,
@@ -2313,7 +2313,7 @@ Bartender4DB = {
 							["visibility"] = {
 								["combat"] = true,
 							},
-							["fadeoutdelay"] = 0,
+							["fadeoutalpha"] = 1,
 						},
 						[15] = {
 							["enabled"] = true,
@@ -2322,7 +2322,7 @@ Bartender4DB = {
 							["buttons"] = 3,
 							["WoW10Layout"] = true,
 							["alpha"] = 0,
-							["version"] = 3,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 10.34419623628855,
 								["x"] = 255.8266889829974,
@@ -2330,7 +2330,7 @@ Bartender4DB = {
 								["scale"] = 1.799999952316284,
 							},
 							["fadeoutalpha"] = 0,
-							["fadeoutdelay"] = 0,
+							["version"] = 3,
 							["visibility"] = {
 								["always"] = false,
 							},
@@ -2431,8 +2431,8 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["mouseover"] = false,
-							["fadeout"] = true,
 							["version"] = 3,
+							["fadeoutdelay"] = 0,
 							["position"] = {
 								["y"] = 180.3674084710347,
 								["x"] = -243.8251492843956,
@@ -2444,11 +2444,11 @@ Bartender4DB = {
 							["visibility"] = {
 								["always"] = false,
 							},
-							["fadeoutdelay"] = 0,
+							["fadeout"] = true,
 						}, -- [1]
 						{
-							["version"] = 3,
 							["fadeoutdelay"] = 0.08,
+							["fadeout"] = true,
 							["buttons"] = 1,
 							["fadeoutalpha"] = 0,
 							["position"] = {
@@ -2458,14 +2458,14 @@ Bartender4DB = {
 								["scale"] = 0.550000011920929,
 							},
 							["WoW10Layout"] = true,
-							["fadeout"] = true,
+							["version"] = 3,
 						}, -- [2]
 						{
 							["rows"] = 3,
 							["mouseover"] = false,
+							["fadeout"] = true,
 							["fadeoutalpha"] = 1,
 							["version"] = 3,
-							["fadeout"] = true,
 							["position"] = {
 								["growHorizontal"] = "LEFT",
 								["growVertical"] = "UP",
@@ -2484,10 +2484,10 @@ Bartender4DB = {
 						{
 							["rows"] = 3,
 							["mouseover"] = false,
-							["fadeoutalpha"] = 1,
-							["WoW10Layout"] = true,
-							["version"] = 3,
 							["fadeout"] = true,
+							["WoW10Layout"] = true,
+							["fadeoutalpha"] = 1,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 218.6174484538315,
 								["x"] = -396.8251795158722,
@@ -2566,9 +2566,9 @@ Bartender4DB = {
 							["enabled"] = true,
 							["rows"] = 3,
 							["mouseover"] = false,
+							["fadeout"] = true,
 							["fadeoutalpha"] = 1,
 							["version"] = 3,
-							["fadeout"] = true,
 							["position"] = {
 								["y"] = 218.6174484538315,
 								["x"] = 386.8746349467838,
@@ -2585,8 +2585,8 @@ Bartender4DB = {
 						[13] = {
 							["enabled"] = true,
 							["buttons"] = 2,
-							["fadeoutdelay"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 1,
 							["position"] = {
 								["y"] = 183.0032134934072,
 								["x"] = 440.4688802760666,
@@ -2598,7 +2598,7 @@ Bartender4DB = {
 							["visibility"] = {
 								["combat"] = true,
 							},
-							["fadeoutalpha"] = 1,
+							["fadeoutdelay"] = 0,
 						},
 						[15] = {
 							["enabled"] = true,
@@ -2635,12 +2635,12 @@ Bartender4DB = {
 								["point"] = "BOTTOM",
 								["scale"] = 0.8500000238418579,
 							},
-							["WoW10Layout"] = true,
 							["mouseover"] = true,
+							["WoW10Layout"] = true,
 						}, -- [1]
 						{
-							["fadeoutdelay"] = 0.08,
 							["fadeout"] = true,
+							["version"] = 3,
 							["buttons"] = 1,
 							["fadeoutalpha"] = 0,
 							["position"] = {
@@ -2650,7 +2650,7 @@ Bartender4DB = {
 								["scale"] = 0.550000011920929,
 							},
 							["WoW10Layout"] = true,
-							["version"] = 3,
+							["fadeoutdelay"] = 0.08,
 						}, -- [2]
 						{
 							["fadeoutdelay"] = 0,
@@ -2803,9 +2803,9 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["fadeout"] = true,
 							["fadeoutdelay"] = 0,
-							["version"] = 3,
+							["fadeout"] = true,
+							["fadeoutalpha"] = 0,
 							["showgrid"] = true,
 							["position"] = {
 								["growHorizontal"] = "LEFT",
@@ -2817,12 +2817,12 @@ Bartender4DB = {
 							},
 							["rows"] = 3,
 							["WoW10Layout"] = true,
-							["fadeoutalpha"] = 0,
+							["version"] = 3,
 						}, -- [3]
 						{
-							["fadeout"] = true,
 							["flyoutDirection"] = "LEFT",
-							["fadeoutalpha"] = 0,
+							["fadeout"] = true,
+							["version"] = 3,
 							["showgrid"] = true,
 							["position"] = {
 								["y"] = 210.2741903157566,
@@ -2832,7 +2832,7 @@ Bartender4DB = {
 							},
 							["rows"] = 3,
 							["WoW10Layout"] = true,
-							["version"] = 3,
+							["fadeoutalpha"] = 0,
 						}, -- [4]
 						{
 							["version"] = 3,
@@ -2897,8 +2897,8 @@ Bartender4DB = {
 						[15] = {
 							["enabled"] = true,
 							["showgrid"] = true,
-							["fadeout"] = true,
 							["fadeoutdelay"] = 0,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = -203.2632504976245,
 								["x"] = 432.4676144793921,
@@ -3043,10 +3043,10 @@ Bartender4DB = {
 								["point"] = "BOTTOM",
 								["scale"] = 0.8500000238418579,
 							},
-							["WoW10Layout"] = true,
 							["visibility"] = {
 								["overridebar"] = false,
 							},
+							["WoW10Layout"] = true,
 							["fadeoutalpha"] = 0,
 						}, -- [4]
 						{
@@ -3105,8 +3105,8 @@ Bartender4DB = {
 						},
 						[15] = {
 							["enabled"] = true,
-							["fadeoutdelay"] = 0,
 							["fadeoutalpha"] = 0,
+							["version"] = 3,
 							["buttons"] = 2,
 							["fadeout"] = true,
 							["position"] = {
@@ -3116,7 +3116,7 @@ Bartender4DB = {
 								["scale"] = 1.799999952316284,
 							},
 							["WoW10Layout"] = true,
-							["version"] = 3,
+							["fadeoutdelay"] = 0,
 						},
 					},
 				},
@@ -3234,8 +3234,8 @@ Bartender4DB = {
 						[15] = {
 							["enabled"] = true,
 							["showgrid"] = true,
-							["fadeout"] = true,
 							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = -203.4671155434935,
 								["x"] = 350.5004901859356,
@@ -3381,10 +3381,10 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 							},
 							["version"] = 3,
-							["WoW10Layout"] = true,
 							["visibility"] = {
 								["overridebar"] = false,
 							},
+							["WoW10Layout"] = true,
 						}, -- [4]
 						{
 							["version"] = 3,
@@ -3442,8 +3442,8 @@ Bartender4DB = {
 						},
 						[15] = {
 							["enabled"] = true,
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["fadeoutdelay"] = 0,
 							["buttons"] = 2,
 							["fadeout"] = true,
 							["position"] = {
@@ -3453,7 +3453,7 @@ Bartender4DB = {
 								["scale"] = 1.799999952316284,
 							},
 							["WoW10Layout"] = true,
-							["fadeoutdelay"] = 0,
+							["fadeoutalpha"] = 0,
 						},
 					},
 				},
@@ -4113,9 +4113,9 @@ Bartender4DB = {
 					["version"] = 3,
 				},
 				["Laurs - Ragnaros"] = {
+					["fadeoutalpha"] = 0,
 					["version"] = 3,
 					["fadeout"] = true,
-					["fadeoutalpha"] = 0,
 					["position"] = {
 						["y"] = 41.95869064331055,
 						["x"] = 371.500244140625,

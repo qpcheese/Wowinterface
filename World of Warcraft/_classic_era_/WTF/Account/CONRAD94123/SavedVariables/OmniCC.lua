@@ -1,11 +1,11 @@
 
 OmniCCDB = {
-	["profileKeys"] = {
-		["Qpfromage - Living Flame"] = "Default",
-	},
 	["global"] = {
 		["dbVersion"] = 6,
 		["addonVersion"] = "10.2.5",
+	},
+	["profileKeys"] = {
+		["Qpfromage - Living Flame"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -51,9 +51,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
@@ -61,9 +61,9 @@ OmniCCDB = {
 				},
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
