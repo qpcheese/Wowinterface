@@ -26667,10 +26667,6 @@ recipeLibrary = {
 		["itemID"] = 52259,
 		["abilityID"] = 21489,
 	},
-	[55204] = {
-		["itemID"] = 41243,
-		["abilityID"] = 19242,
-	},
 	[359669] = {
 		["itemID"] = 187742,
 		["abilityID"] = 46277,
@@ -26678,6 +26674,10 @@ recipeLibrary = {
 	[138885] = {
 		["itemID"] = 94584,
 		["abilityID"] = 31236,
+	},
+	[55204] = {
+		["itemID"] = 41243,
+		["abilityID"] = 19242,
 	},
 	[106960] = {
 		["itemID"] = 76646,
@@ -29452,13 +29452,14 @@ recipeLibrary = {
 		["itemID"] = 40150,
 		["abilityID"] = 21170,
 	},
-	[104302] = {
-		["itemID"] = 74647,
-		["abilityID"] = 26855,
+	[269729] = {
+		["abilityID"] = 39557,
+		["itemID"] = 159936,
+		["tradeskillID"] = 202,
 	},
-	[143064] = {
-		["itemID"] = 98772,
-		["abilityID"] = 31534,
+	[208596] = {
+		["itemID"] = 136539,
+		["abilityID"] = 35302,
 	},
 	[247805] = {
 		["itemID"] = 151578,
@@ -29650,13 +29651,13 @@ recipeLibrary = {
 		["itemID"] = 23533,
 		["abilityID"] = 14224,
 	},
+	[269741] = {
+		["itemID"] = 159940,
+		["abilityID"] = 39565,
+	},
 	[143070] = {
 		["itemID"] = 98828,
 		["abilityID"] = 31564,
-	},
-	[104305] = {
-		["itemID"] = 74649,
-		["abilityID"] = 26864,
 	},
 	[11461] = {
 		["abilityID"] = 6009,
@@ -29711,10 +29712,6 @@ recipeLibrary = {
 		["itemID"] = 37093,
 		["abilityID"] = 17491,
 	},
-	[143072] = {
-		["itemID"] = 98865,
-		["abilityID"] = 31549,
-	},
 	[400809] = {
 		["itemID"] = 203410,
 		["abilityID"] = 48178,
@@ -29722,6 +29719,10 @@ recipeLibrary = {
 	[104306] = {
 		["itemID"] = 74650,
 		["abilityID"] = 26865,
+	},
+	[143072] = {
+		["itemID"] = 98865,
+		["abilityID"] = 31549,
 	},
 	[9072] = {
 		["itemID"] = 7284,
@@ -30831,9 +30832,9 @@ recipeLibrary = {
 		["itemID"] = 16989,
 		["abilityID"] = 11863,
 	},
-	[269741] = {
-		["itemID"] = 159940,
-		["abilityID"] = 39565,
+	[104305] = {
+		["itemID"] = 74649,
+		["abilityID"] = 26864,
 	},
 	[10482] = {
 		["itemID"] = 8172,
@@ -30977,14 +30978,13 @@ recipeLibrary = {
 		["itemID"] = 127020,
 		["abilityID"] = 34375,
 	},
-	[208596] = {
-		["itemID"] = 136539,
-		["abilityID"] = 35302,
+	[143064] = {
+		["itemID"] = 98772,
+		["abilityID"] = 31534,
 	},
-	[269729] = {
-		["abilityID"] = 39557,
-		["itemID"] = 159936,
-		["tradeskillID"] = 202,
+	[104302] = {
+		["itemID"] = 74647,
+		["abilityID"] = 26855,
 	},
 	[60356] = {
 		["abilityID"] = 20277,

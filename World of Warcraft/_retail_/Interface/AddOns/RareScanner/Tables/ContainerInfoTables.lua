@@ -546,7 +546,7 @@ private.CONTAINER_INFO = {
 	[368952] = { zoneID = 1543, artID = { 1693,1329 }, x = 1910, y = 3320, overlay = { "1910-3320","2530-3330","2530-3830","2780-4180" }, covenantAssaultReset = 0, zoneQuestId = { 63823 }, questID = { 64059 } }; --Stolen Anima Vessel
 	[368953] = { zoneID = 1543, artID = { 1693,1329 }, x = 1720, y = 4790, overlay = { "1720-4790","1860-4260","1890-5030","2260-4840" }, covenantAssaultReset = 0, zoneQuestId = { 63823 }, questID = { 64060 } }; --Stolen Anima Vessel
 	[369141] = { zoneID = 1543, artID = { 1329,1693 }, x = 3500, y = 6975, overlay = { "2780-6140","3500-6970" }, zoneQuestId = { 63543 }, questID = { 64209 } }; --Mawsworn Cache
-	[369216] = { zoneID = 1543, artID = { 1329,1693 }, x = 6916, y = 4517, overlay = { "6920-4520" }, questID = { 64256 } }; --Helsworn Chest
+	[369216] = { zoneID = 1543, artID = { 1329,1693 }, x = 6916, y = 4517, overlay = { "6920-4520" }, questID = { 64256 }, reset = false }; --Helsworn Chest
 	[369224] = { zoneID = 1543, artID = { 1329,1693 }, x = 6649, y = 6227, overlay = { "6640-6220" }, questID = { 64261 } }; --Jeweled Heart of Ezekiel
 	[369227] = { zoneID = 1543, artID = { 1693,1329 }, x = 5096, y = 8542, overlay = { "4740-7630","4770-8640","5090-8540" }, covenantAssaultReset = 1, questID = { 64265 } }; --Stolen Anima Vessel
 	[369235] = { zoneID = 1543, artID = { 1693,1329 }, x = 3564, y = 4627, overlay = { "3240-4320","3570-4630","3620-4200","3840-4840","4440-4770" }, covenantAssaultReset = 1, questID = { 64269 } }; --Stolen Anima Vessel

@@ -1,9 +1,9 @@
 
 MIOG_SavedSettings = {
 	["lastInvitedApplicants"] = {
-		["key"] = "lastInvitedApplicants",
-		["type"] = "variable",
 		["title"] = "Last invited applicants",
+		["type"] = "variable",
+		["key"] = "lastInvitedApplicants",
 		["table"] = {
 		},
 	},
@@ -20,38 +20,38 @@ MIOG_SavedSettings = {
 			["filterForHealers"] = false,
 			["filterForDamager"] = false,
 			["minTanks"] = 0,
-			["dungeonDifficultyID"] = 4,
+			["filterForTanks"] = false,
 			["classSpec"] = {
-				["class"] = {
-				},
 				["spec"] = {
+				},
+				["class"] = {
 				},
 			},
 			["filterForClassSpecs"] = false,
-			["filterForArenaBracket"] = false,
-			["raidDifficultyID"] = 3,
+			["maxDamager"] = 0,
+			["minDamager"] = 0,
 			["maxHealers"] = 0,
-			["filterForDungeonDifficulty"] = false,
-			["dungeonOptions"] = false,
-			["filterForDifficulty"] = false,
+			["filterForScore"] = false,
+			["minScore"] = 0,
+			["maxTanks"] = 0,
 			["dungeons"] = {
 			},
 			["minHealers"] = 0,
 			["difficultyID"] = 4,
-			["maxTanks"] = 0,
-			["minScore"] = 0,
-			["filterForScore"] = false,
-			["minDamager"] = 0,
-			["maxDamager"] = 0,
-			["filterForTanks"] = false,
+			["filterForDifficulty"] = false,
+			["dungeonOptions"] = false,
+			["filterForDungeonDifficulty"] = false,
+			["raidDifficultyID"] = 3,
+			["filterForArenaBracket"] = false,
+			["dungeonDifficultyID"] = 4,
 		},
 	},
 	["backgroundOptions"] = {
 		["type"] = "dropdown",
 		["title"] = "Background options",
 		["value"] = 11,
-		["index"] = 1,
 		["key"] = "backgroundOptions",
+		["index"] = 1,
 	},
 	["frameExtended"] = {
 		["value"] = false,
@@ -63,17 +63,17 @@ MIOG_SavedSettings = {
 		["type"] = "variable",
 		["title"] = "Last active sorting methods for the search panel",
 		["table"] = {
-			["age"] = {
-				["currentLayer"] = 0,
-				["currentState"] = 0,
-				["active"] = false,
-			},
+			["numberOfActiveMethods"] = 0,
 			["primary"] = {
 				["currentLayer"] = 0,
 				["currentState"] = 0,
 				["active"] = false,
 			},
-			["numberOfActiveMethods"] = 0,
+			["age"] = {
+				["currentLayer"] = 0,
+				["currentState"] = 0,
+				["active"] = false,
+			},
 			["secondary"] = {
 				["currentLayer"] = 0,
 				["currentState"] = 0,
@@ -81,23 +81,26 @@ MIOG_SavedSettings = {
 			},
 		},
 	},
-	["frameManuallyResized"] = {
-		["value"] = 0,
-		["type"] = "variable",
-		["title"] = "Resized the mainframe via resize button",
+	["keepInfoFromGroupCreation"] = {
+		["type"] = "checkbox",
+		["key"] = "keepInfoFromGroupCreation",
+		["value"] = true,
+		["index"] = 7,
+		["title"] = "|cFFFFFF00(Experimental)|r Start a group: Don't discard the info you've entered into the group creation fields.|cFFFF0000 REQUIRES A RELOAD |r",
 	},
 	["disableBackgroundImages"] = {
 		["type"] = "checkbox",
 		["key"] = "disableBackgroundImages",
 		["value"] = false,
-		["index"] = 3,
 		["title"] = "Hide the background image and some background colors (mainly for ElvUI users)",
+		["index"] = 3,
 	},
-	["timestamp"] = {
-		["value"] = 1709136201,
-		["type"] = "interal",
-		["title"] = "Timestamp of last setting save",
-		["visual"] = "28/02/24 17:03:21",
+	["enableClassPanel"] = {
+		["type"] = "checkbox",
+		["key"] = "enableClassPanel",
+		["value"] = true,
+		["title"] = "Enable the class panel for your group (shows class and spec data for your whole group after all inspects went through)",
+		["index"] = 2,
 	},
 	["searchPanel_DeclinedGroups"] = {
 		["type"] = "variable",
@@ -107,13 +110,13 @@ MIOG_SavedSettings = {
 	},
 	["lastActiveSortingMethods"] = {
 		["value"] = {
-			["primary"] = {
-				["currentLayer"] = 2,
+			["role"] = {
+				["currentLayer"] = 1,
 				["currentState"] = 1,
 				["active"] = true,
 			},
-			["role"] = {
-				["currentLayer"] = 1,
+			["primary"] = {
+				["currentLayer"] = 2,
 				["currentState"] = 1,
 				["active"] = true,
 			},
@@ -126,15 +129,14 @@ MIOG_SavedSettings = {
 		["type"] = "checkbox",
 		["key"] = "keepSignUpNote",
 		["value"] = true,
-		["title"] = "|cFFFFFF00(Experimental)|r Find a group: Don't discard the sign up not.|cFFFF0000 REQUIRES A RELOAD |r",
 		["index"] = 6,
+		["title"] = "|cFFFFFF00(Experimental)|r Find a group: Don't discard the sign up not.|cFFFF0000 REQUIRES A RELOAD |r",
 	},
-	["enableClassPanel"] = {
-		["type"] = "checkbox",
-		["key"] = "enableClassPanel",
-		["value"] = true,
-		["index"] = 2,
-		["title"] = "Enable the class panel for your group (shows class and spec data for your whole group after all inspects went through)",
+	["timestamp"] = {
+		["value"] = 1711047723,
+		["type"] = "interal",
+		["title"] = "Timestamp of last setting save",
+		["visual"] = "21/03/24 20:02:03",
 	},
 	["favouredApplicants"] = {
 		["type"] = "checkbox,list",
@@ -144,11 +146,9 @@ MIOG_SavedSettings = {
 		["value"] = true,
 		["index"] = 5,
 	},
-	["keepInfoFromGroupCreation"] = {
-		["type"] = "checkbox",
-		["key"] = "keepInfoFromGroupCreation",
-		["value"] = true,
-		["title"] = "|cFFFFFF00(Experimental)|r Start a group: Don't discard the info you've entered into the group creation fields.|cFFFF0000 REQUIRES A RELOAD |r",
-		["index"] = 7,
+	["frameManuallyResized"] = {
+		["value"] = 0,
+		["type"] = "variable",
+		["title"] = "Resized the mainframe via resize button",
 	},
 }

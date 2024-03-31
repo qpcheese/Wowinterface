@@ -1,10 +1,10 @@
-lightweight tag cf544fefb37360c7c962a12cd363b3ad5d83fa57 0.10.2.5.3
+lightweight tag 056145b826225dbdfa7a33a6160228965e437067 0.10.2.6
 Author:	GitHub <noreply@github.com>
-Date:	Tue Feb 27 23:09:06 2024 -0600
+Date:	Tue Mar 19 14:46:35 2024 -0500
 
-commit 39410e64b7564c8624de0399260c879bd7e0abf8
+commit 56dafa37ed99458d3d29ba388816e321a40d0300
 Author: Jason Burch <jburch@runningbirdstudios.com>
-Date:   Tue Feb 27 23:08:34 2024 -0600
+Date:   Mon Mar 18 21:08:13 2024 -0500
 
-    Update LFGMPLUSGROUP.toc
+    10.2.6 update
 

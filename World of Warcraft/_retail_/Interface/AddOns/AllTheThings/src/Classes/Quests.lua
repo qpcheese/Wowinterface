@@ -1056,13 +1056,13 @@ local criteriaFuncs = {
     lvl = function(lvl)
         return app.Level >= lvl;
     end,
-	label_lvl = L.LOCK_CRITERIA_LEVEL_LABEL or "Player Level",
+	label_lvl = L.LOCK_CRITERIA_LEVEL_LABEL,
     text_lvl = function(lvl)
         return lvl;
     end,
 
     questID = IsQuestSaved,
-	label_questID = L.LOCK_CRITERIA_QUEST_LABEL or "Completed Quest",
+	label_questID = L.LOCK_CRITERIA_QUEST_LABEL,
     text_questID = function(questID)
         return ("[%d] %s"):format(questID, QuestNameFromID[questID] or RETRIEVING_DATA);
     end,
@@ -1070,24 +1070,24 @@ local criteriaFuncs = {
     spellID = function(spellID)
         return app.CurrentCharacter.Spells[spellID] or app.CurrentCharacter.ActiveSkills[spellID];
     end,
-	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL or "Learned Spell/Mount/Recipe",
+	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL,
     text_spellID = app.GetSpellName,
 
     factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-        local standing = app.GetCurrentFactionStandings(factionID);
+        local standing = app.CreateFaction(factionID).standing;
 		-- app.PrintDebug(("Check Faction %s Standing (%d) is locked @ (%d)"):format(factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
-	label_factionID = L.LOCK_CRITERIA_FACTION_LABEL or "Faction Reputation",
+	label_factionID = L.LOCK_CRITERIA_FACTION_LABEL,
     text_factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
-		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-		local name = GetFactionInfoByID(factionID) or "#"..(factionID or "??");
-        return (L.LOCK_CRITERIA_FACTION_FORMAT or "%s with %s (Current: %s)"):format(app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
+		local faction = app.CreateFaction(factionID);
+		faction.rank = math_floor((v - factionID) * 10 + 0.00001);
+        return L.LOCK_CRITERIA_FACTION_FORMAT:format(faction.rankText, faction.name, faction.standingText);
     end,
 
     sourceID = function(sourceID)
@@ -1198,16 +1198,10 @@ local function QuestWithReputationCollectibleAsCost(t)
 	-- and the Faction itself is Collectible & Not Collected
 	-- and the Quest is not completed and not locked from being completed
 	if app.Settings.Collectibles.Reputations and not t.saved and not t.locked then
-		local factionID = t.maxReputation[1];
-		local factionRef = Search("factionID", factionID, "key");
-		if factionRef and not factionRef.collected then
-			-- compare the actual standing against the current standing rather than raw vaules (friendships are variable)
-			local maxStanding = app.GetReputationStanding(t.maxReputation);
-			if maxStanding > factionRef.standing then
-				-- app.PrintDebug("Quest",t.questID,"collectible for Faction",factionID,factionRef.text,factionRef.isFriend)
-				return true;
-			end
-		end
+		local faction = app.CreateFaction(t.maxReputation[1]);
+		if faction.collected then return end
+		faction.maxReputation = t.maxReputation;
+		return faction.maxstanding > faction.standing;
 	end
 end
 -- Basically anything in ATT which has QuestID needs to also support being Locked...
@@ -1625,25 +1619,25 @@ app.AddEventHandler("OnLoad", function()
 	app.Settings.CreateInformationType("Objectives", {
 		priority = 2.9,
 		text = L.OBJECTIVES,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			if reference.questID and not reference.objectiveID then
 				local objectified = false;
 				local questLogIndex = GetQuestLogIndexByID(reference.questID);
 				if questLogIndex then
 					local lore, objective = GetQuestLogQuestText(questLogIndex);
 					if lore and app.Settings:GetTooltipSetting("Lore") then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = lore,
 							color = app.Colors.TooltipLore,
 							wrap = true,
 						});
 					end
 					if objective then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = REQUIREMENTS,
 							r = 1, g = 1, b = 1,
 						});
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = objective,
 							r = 0.4, g = 0.8, b = 1,
 							wrap = true,
@@ -1655,7 +1649,7 @@ app.AddEventHandler("OnLoad", function()
 					local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
 					if objectives and #objectives > 0 then
 						if not objectified then
-							tinsert(info, {
+							tinsert(tooltipInfo, {
 								left = REQUIREMENTS,
 								r = 1, g = 1, b = 1,
 							});
@@ -1677,8 +1671,8 @@ app.AddEventHandler("OnLoad", function()
 								text = RETRIEVING_DATA;
 								reference.working = true;
 							end
-							
-							tinsert(info, {
+
+							tinsert(tooltipInfo, {
 								left = "  " .. text,
 								right = app.GetCompletionIcon(objective.finished),
 								r = 1, g = 1, b = 1,

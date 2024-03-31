@@ -1,39 +1,30 @@
 
 HandyNotesDB = {
 	["profileKeys"] = {
-		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
-		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
-		["Zelení - Draenor"] = "Zelení - Draenor",
-		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
-		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
-		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Cheddarboy - Ravencrest"] = "Cheddarboy - Ravencrest",
 		["Qpcheese - Chamber of Aspects"] = "Qpcheese - Chamber of Aspects",
-		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 		["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
 		["Qpc - Draenor"] = "Qpc - Draenor",
 		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
+		["Zelení - Draenor"] = "Zelení - Draenor",
+		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
+		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 		["Qpebank - Draenor"] = "Qpebank - Draenor",
-		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
 		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["profiles"] = {
-		["Cyclosarin - Ragnaros"] = {
+		["Qpaladin - Ragnaros"] = {
 		},
-		["Jerwin - Ragnaros"] = {
-		},
-		["Zelení - Draenor"] = {
-		},
-		["Djagon - Ragnaros"] = {
-		},
-		["Qubit - Ragnaros"] = {
-		},
-		["Laurs - Ragnaros"] = {
+		["Cheddarboy - Ravencrest"] = {
 		},
 		["Qpcheese - Chamber of Aspects"] = {
-		},
-		["Qpe - Ravencrest"] = {
 		},
 		["Qpcheese - Ragnaros"] = {
 		},
@@ -41,9 +32,21 @@ HandyNotesDB = {
 		},
 		["Qutlaw - Ravencrest"] = {
 		},
-		["Qpebank - Draenor"] = {
+		["Zelení - Draenor"] = {
 		},
-		["Qpaladin - Ragnaros"] = {
+		["Cyclosarin - Ragnaros"] = {
+		},
+		["Jerwin - Ragnaros"] = {
+		},
+		["Qubit - Ragnaros"] = {
+		},
+		["Laurs - Ragnaros"] = {
+		},
+		["Qpe - Ravencrest"] = {
+		},
+		["Djagon - Ragnaros"] = {
+		},
+		["Qpebank - Draenor"] = {
 		},
 		["Qpfromage - Ragnaros"] = {
 		},
@@ -55,39 +58,30 @@ HandyNotesDB = {
 }
 HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
-		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
-		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
-		["Zelení - Draenor"] = "Zelení - Draenor",
-		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
-		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
-		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Cheddarboy - Ravencrest"] = "Cheddarboy - Ravencrest",
 		["Qpcheese - Chamber of Aspects"] = "Qpcheese - Chamber of Aspects",
-		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 		["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
 		["Qpc - Draenor"] = "Qpc - Draenor",
 		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
+		["Zelení - Draenor"] = "Zelení - Draenor",
+		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
+		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 		["Qpebank - Draenor"] = "Qpebank - Draenor",
-		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
 		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["profiles"] = {
-		["Cyclosarin - Ragnaros"] = {
+		["Qpaladin - Ragnaros"] = {
 		},
-		["Jerwin - Ragnaros"] = {
-		},
-		["Zelení - Draenor"] = {
-		},
-		["Djagon - Ragnaros"] = {
-		},
-		["Qubit - Ragnaros"] = {
-		},
-		["Laurs - Ragnaros"] = {
+		["Cheddarboy - Ravencrest"] = {
 		},
 		["Qpcheese - Chamber of Aspects"] = {
-		},
-		["Qpe - Ravencrest"] = {
 		},
 		["Qpcheese - Ragnaros"] = {
 		},
@@ -95,9 +89,21 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Qutlaw - Ravencrest"] = {
 		},
-		["Qpebank - Draenor"] = {
+		["Zelení - Draenor"] = {
 		},
-		["Qpaladin - Ragnaros"] = {
+		["Cyclosarin - Ragnaros"] = {
+		},
+		["Jerwin - Ragnaros"] = {
+		},
+		["Qubit - Ragnaros"] = {
+		},
+		["Laurs - Ragnaros"] = {
+		},
+		["Qpe - Ravencrest"] = {
+		},
+		["Djagon - Ragnaros"] = {
+		},
+		["Qpebank - Draenor"] = {
 		},
 		["Qpfromage - Ragnaros"] = {
 		},

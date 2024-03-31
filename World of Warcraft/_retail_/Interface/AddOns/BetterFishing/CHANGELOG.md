@@ -1,3 +1,6 @@
+### 1.1.22
+- Version Update
+
 ### 1.1.21
 - Fix Error
 

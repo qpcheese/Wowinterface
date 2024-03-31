@@ -78,8 +78,6 @@ function RSContainerDB.GetInternalContainerInfo(containerID)
 	return nil
 end
 
-
-
 local function GetInternalContainerInfoByMapID(containerID, mapID)
 	if (containerID and mapID) then
 		if (RSContainerDB.IsInternalContainerMultiZone(containerID)) then

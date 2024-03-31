@@ -6,14 +6,14 @@ local _, app = ...;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
-	= ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
+local ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
+	= ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
 
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 
 -- App locals
-local SearchForField = app.SearchForField;
+local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
 local SearchForLink, L
@@ -35,28 +35,39 @@ end
 local function distance( x1, y1, x2, y2 )
 	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
 end
-local function GetBestObjectIDForName(name)
-	-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
-	-- then correlate those search results by closest distance to the player's current position
-	local o = objectNamesToIDs[name];
-	if o and #o > 0 then
-		local mapID = app.CurrentMapID;
-		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-		if pos then
-			local px, py = pos:GetXY();
-			px, py = px * 100, py * 100;
+local function GetPlayerPosition()
+	local mapID = app.CurrentMapID;
+	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
+	if pos then
+		local px, py = pos:GetXY();
+		return mapID, px * 100, py * 100;
+	end
+	return mapID, 50, 50;
+end
+
+local GetBestObjectIDForName;
+if app.IsRetail then
+	GetBestObjectIDForName = function(name)
+		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
+		-- then correlate those search results by closest distance to the player's current position
+		local o = objectNamesToIDs[name];
+		if o and #o > 0 then
+			local mapID, px, py = GetPlayerPosition();
 			local closestDistance = 99999
-			local closestObjectID, dist, searchCoord
+			local closestObjectID, dist, searchCoord, unmappedObject
 			for i,objectID in ipairs(o) do
-				local searchResults = SearchForField("objectID", objectID);
+				-- SFO includes baked-in accessibility filtering/prioritization of the results
+				local searchResults = SearchForObject("objectID", objectID, "any", true);
 				if searchResults and #searchResults > 0 then
 					for j,searchResult in ipairs(searchResults) do
 						searchCoord = searchResult.coord;
-						if searchCoord and searchCoord[3] == mapID then
-							dist = distance(px, py, searchCoord[1], searchCoord[2]);
-							if dist and dist < closestDistance then
-								closestDistance = dist;
-								closestObjectID = objectID;
+						if searchCoord then
+							if searchCoord[3] == mapID then
+								dist = distance(px, py, searchCoord[1], searchCoord[2]);
+								if dist and dist < closestDistance then
+									closestDistance = dist;
+									closestObjectID = objectID;
+								end
 							end
 						elseif searchResult.coords then
 							for k,coord in ipairs(searchResult.coords) do
@@ -68,13 +79,62 @@ local function GetBestObjectIDForName(name)
 									end
 								end
 							end
+						else
+							-- app.PrintDebug("unmapped object assumed",objectID,app:SearchLink(searchResult))
+							unmappedObject = objectID
 						end
 					end
 				end
 			end
-			return closestObjectID;	-- When player has a valid position, only return valid objects
-		else
-			return o[1];	-- Some instances don't return a valid position, but can still contain objects.
+			-- When player has a valid position, only return valid objects or if there's an unmapped object which matches
+			return closestObjectID or unmappedObject;
+		end
+	end
+else
+	GetBestObjectIDForName = function(name)
+		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
+		-- then correlate those search results by closest distance to the player's current position
+		local o = objectNamesToIDs[name];
+		if o and #o > 0 then
+			local objects = {};
+			local mapID, px, py = GetPlayerPosition();
+			local closestDistance, closestInstance, dist, searchCoord, searchResults;
+			for i,objectID in ipairs(o) do
+				closestInstance = nil;
+				closestDistance = 999999;
+				searchResults = SearchForField("objectID", objectID);
+				if searchResults and #searchResults > 0 then
+					for j,searchResult in ipairs(searchResults) do
+						searchCoord = searchResult.coord;
+						if searchCoord and searchCoord[3] == mapID then
+							dist = distance(px, py, searchCoord[1], searchCoord[2]);
+							if dist and dist < closestDistance then
+								closestDistance = dist;
+								closestInstance = searchResult;
+							end
+						elseif searchResult.coords then
+							for k,coord in ipairs(searchResult.coords) do
+								if coord[3] == mapID then
+									dist = distance(px, py, coord[1], coord[2]);
+									if dist and dist < closestDistance then
+										closestDistance = dist;
+										closestInstance = searchResult;
+									end
+								end
+							end
+						end
+					end
+				end
+				tinsert(objects, {
+					objectID = objectID,
+					parent = closestInstance,
+					distance = closestDistance
+				});
+			end
+			if #objects > 0 then
+				app.Sort(objects, app.SortDefaults.AccessibilityAndDistance);
+				return objects[1].objectID;
+			end
 		end
 	end
 end
@@ -102,12 +162,12 @@ local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gen
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
-		leftSide:SetText(L["TITLE"]);
+		leftSide:SetText(L.TITLE);
 		leftSide:Show();
 		rightSide:SetText(app.Modules.Color.Colorize("Author", app.Colors.White));
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L["TITLE"], app.Modules.Color.Colorize("Author", app.Colors.White));
+		self:AddDoubleLine(L.TITLE, app.Modules.Color.Colorize("Author", app.Colors.White));
 	end
 end
 for i,guid in ipairs({
@@ -127,12 +187,12 @@ tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, n
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	local leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
-		leftSide:SetText(L["TITLE"]);
+		leftSide:SetText(L.TITLE);
 		leftSide:Show();
 		rightSide:SetText(app.Modules.Color.Colorize("Contributor", app.Colors.White));
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L["TITLE"], app.Modules.Color.Colorize("Contributor", app.Colors.White));
+		self:AddDoubleLine(L.TITLE, app.Modules.Color.Colorize("Contributor", app.Colors.White));
 	end
 end
 for i,guid in ipairs({
@@ -585,7 +645,7 @@ if TooltipDataProcessor then
 		end
 	end
 	]]--
-	
+
 	local function RerenderCurrency(self, currencyID)
 		if self:IsVisible() then
 			GameTooltip.SetCurrencyByID(self, currencyID, 1);
@@ -605,6 +665,13 @@ if TooltipDataProcessor then
 			end
 		end
 
+		-- Debug all of the available fields on the self.
+		-- self:AddDoubleLine("Self", tostring(self:GetName()));
+		-- for i,j in pairs(self) do
+		-- 	self:AddDoubleLine(tostring(i), tostring(j));
+		-- end
+		-- self:Show();
+
 		-- Does the tooltip have an owner?
 		local owner = self:GetOwner();
 		if owner then
@@ -621,11 +688,11 @@ if TooltipDataProcessor then
 			-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
 			--	-- print("AH General Item Tooltip")
 			--	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
-			-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
+			-- 	self:AddLine(L.AUCTION_GENERALIZED_ITEM_WARNING);
 			-- end
 			-- print("AttachTooltip-HasOwner");
 
-			--[[--
+			--[[--]
 			-- Debug all of the available fields on the owner.
 			self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
 			for i,j in pairs(owner) do
@@ -660,7 +727,8 @@ if TooltipDataProcessor then
 				else
 					self.AllTheThingsProcessing = target;
 				end
-			else
+			elseif self:GetName() == "ItemRefTooltip" then
+				-- only allow spell info to attach to chat-link standalone ItemRefTooltip
 				-- name, spellID
 				_, spellID = TooltipUtil.GetDisplayedSpell(self);
 				if spellID then
@@ -703,7 +771,7 @@ if TooltipDataProcessor then
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then
-			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
+			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, id) end
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(id);
 			-- print(target, type, npc_id);
 			if type == "Player" then
@@ -802,18 +870,18 @@ if TooltipDataProcessor then
 		end
 		-- print("AttachTooltip-Return");
 	end
-	app.events.TOOLTIP_DATA_UPDATE = function(...)
-		if GameTooltip and GameTooltip:IsVisible() then
-			-- app.PrintDebug("Auto-refresh tooltip")
-			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
-			GameTooltip.ATT_AttachComplete = nil;
-			GameTooltip:Show();
-		end
-	end
+
 	app.AddEventHandler("OnReady", function()
 		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
-		app:RegisterEvent("TOOLTIP_DATA_UPDATE");
+		app:RegisterFuncEvent("TOOLTIP_DATA_UPDATE", function(...)
+			if GameTooltip and GameTooltip:IsVisible() then
+				-- app.PrintDebug("Auto-refresh tooltip")
+				-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+				GameTooltip.ATT_AttachComplete = nil;
+				GameTooltip:Show();
+			end
+		end);
 	end);
 else
 	-- Pre-10.0.2 (Legacy)
@@ -859,7 +927,7 @@ else
 					-- Yes.
 					local guid = UnitGUID(target);
 					if guid then
-						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
+						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
 						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
 						--print(guid, type, npcID);
 						if type == "Player" then

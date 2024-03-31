@@ -1,7 +1,7 @@
-## Interface: 100200
+## Interface: 100206
 ## Title: Mythic Dungeon Calculator
 ## Author: Ravor
-## Version: 2.4.1
+## Version: 2.4.2
 ## Notes: Let's you calculate your way to the 'Keystone' Achievements and more
 ## Notes-deDE: Tool zur Berechnung der Mythisch+ Wertung um die 'SchlU+00fcsselsteinmeister' Erfolge zu erlangen und mehr
 ## DefaultState: Enabled

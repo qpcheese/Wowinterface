@@ -1164,30 +1164,23 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	elseif paramA == "itemID" then
 		itemID = paramB;
 	end
+	
+	-- Find the most accessible version of the thing we're looking for.
+	app.Sort(group, app.SortDefaults.Accessibility);
+	--[[
+	for i,j in ipairs(group) do
+		print(i, j.text, j.AccessibilityScore);
+	end
+	]]--
+	for i,j in ipairs(group) do
+		if j[paramA] == paramB then
+			mostAccessibleSource = j;
+			--print("Most Accessible", i, j.text);
+			break;
+		end
+	end
 
 	if itemID then
-		-- Show the unobtainable source text
-		local u, e = 99999999;
-		app.Sort(group, app.SortDefaults.Accessibility);
-		for i,j in ipairs(group) do
-			if j.itemID == itemID then
-				mostAccessibleSource = j;
-				if j.u and u > j.u and (not j.crs or paramA == "itemID") then
-					u = j.u;
-				end
-				if j.e then
-					e = j.e;
-				end
-				break;
-			end
-		end
-		if u < 99999999 then
-			local condition = L["AVAILABILITY_CONDITIONS"][u];
-			if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-				tinsert(tooltipInfo, { left = condition[2], wrap = true });
-			end
-		end
-
 		local reagentCache = app.GetDataSubMember("Reagents", itemID);
 		if reagentCache then
 			for spellID,count in pairs(reagentCache[1]) do
@@ -1336,6 +1329,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	if mostAccessibleSource then
+		group.parent = mostAccessibleSource.parent;
 		group.rwp = mostAccessibleSource.rwp;
 		group.e = mostAccessibleSource.e;
 		group.u = mostAccessibleSource.u;
@@ -1660,81 +1654,80 @@ local function SearchForLink(link)
 				return SearchForField("itemID", itemID), "itemID", itemID;
 			end
 		end
-	else
-		local kind, id = (":"):split(link);
-		kind = kind:lower():gsub("id", "ID");
-		if kind:sub(1,2) == "|c" then
-			kind = kind:sub(11);
-		end
-		if kind:sub(1,2) == "|h" then
-			kind = kind:sub(3);
-		end
-		if id then id = tonumber(("|["):split(id) or id); end
-		--print("SearchForLink A:", kind, id);
-		--print("SearchForLink B:", link:gsub("|c", "c"):gsub("|h", "h"));
-		if kind == "i" then
-			kind = "itemID";
-		elseif kind == "quest" or kind == "q" then
-			kind = "questID";
-		elseif kind == "faction" or kind == "rep" then
-			kind = "factionID";
-		elseif kind == "ach" or kind == "achievement" then
-			kind = "achievementID";
-		elseif kind == "creature" or kind == "npcID" or kind == "npc" or kind == "n" then
-			kind = "creatureID";
-		elseif kind == "currency" then
-			kind = "currencyID";
-		elseif kind == "spell" or kind == "enchant" or kind == "talent" or kind == "recipe" or kind == "mount" then
-			kind = "spellID";
-		elseif kind == "pet" or kind == "battlepet" then
-			kind = "speciesID";
-		elseif kind == "filterforrwp" then
-			kind = "filterForRWP";
-		elseif kind == "pettype" or kind == "pettypeID" then
-			kind = "petTypeID";
-		elseif kind == "azeriteessence" or kind == "azeriteessenceID" then
-			kind = "azeriteEssenceID";
-		end
-		local cache;
-		if id then
-			cache = SearchForField(kind, id);
-			if #cache == 0 then
-				local obj = CloneClassInstance({
-					key = kind, [kind] = id,
-					hash = kind .. ":" .. id,
-				});
-				if not obj.__type then
-					obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
-					obj.text = "Search Results for '" .. obj.hash .. "'";
-					local response = app:BuildSearchResponse(app:GetDataCache().g, kind, id);
-					if response and #response > 0 then
-						obj.g = {};
-						for i,o in ipairs(response) do
-							tinsert(obj.g, o);
-						end
+	end
+	
+	local kind, id = (":"):split(link);
+	kind = kind:lower():gsub("id", "ID");
+	if kind:sub(1,2) == "|c" then
+		kind = kind:sub(11);
+	end
+	if kind:sub(1,2) == "|h" then
+		kind = kind:sub(3);
+	end
+	if id then id = tonumber(("|["):split(id) or id); end
+	--print("SearchForLink A:", kind, id);
+	--print("SearchForLink B:", link:gsub("|c", "c"):gsub("|h", "h"));
+	if kind == "i" then
+		kind = "itemID";
+	elseif kind == "quest" or kind == "q" then
+		kind = "questID";
+	elseif kind == "faction" or kind == "rep" then
+		kind = "factionID";
+	elseif kind == "ach" or kind == "achievement" then
+		kind = "achievementID";
+	elseif kind == "creature" or kind == "npcID" or kind == "npc" or kind == "n" then
+		kind = "creatureID";
+	elseif kind == "currency" then
+		kind = "currencyID";
+	elseif kind == "spell" or kind == "enchant" or kind == "talent" or kind == "recipe" or kind == "mount" then
+		kind = "spellID";
+	elseif kind == "pet" or kind == "battlepet" then
+		kind = "speciesID";
+	elseif kind == "filterforrwp" then
+		kind = "filterForRWP";
+	elseif kind == "pettype" or kind == "pettypeID" then
+		kind = "petTypeID";
+	elseif kind == "azeriteessence" or kind == "azeriteessenceID" then
+		kind = "azeriteEssenceID";
+	end
+	local cache;
+	if id then
+		cache = SearchForField(kind, id);
+		if #cache == 0 then
+			local obj = CloneClassInstance({
+				key = kind, [kind] = id,
+				hash = kind .. ":" .. id,
+			});
+			if not obj.__type then
+				obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
+				obj.text = "Search Results for '" .. obj.hash .. "'";
+				local response = app:BuildSearchResponse(app:GetDataCache().g, kind, id);
+				if response and #response > 0 then
+					obj.g = {};
+					for i,o in ipairs(response) do
+						tinsert(obj.g, o);
 					end
-				else
-					obj.description = "@Crieve: This has not been sourced in ATT yet!";
 				end
-				tinsert(cache, obj);
+			else
+				obj.description = "@Crieve: This has not been sourced in ATT yet!";
 			end
-		else
-			local obj = { hash = kind };
-			obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
-			obj.text = "Search Results for '" .. obj.hash .. "'";
-			local response = app:BuildSearchResponseForField(app:GetDataCache().g, kind);
-			if response and #response > 0 then
-				obj.g = {};
-				for i,o in ipairs(response) do
-					tinsert(obj.g, o);
-				end
-			end
-			cache = {};
 			tinsert(cache, obj);
 		end
-		return cache, kind, id;
+	else
+		local obj = { hash = kind };
+		obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
+		obj.text = "Search Results for '" .. obj.hash .. "'";
+		local response = app:BuildSearchResponseForField(app:GetDataCache().g, kind);
+		if response and #response > 0 then
+			obj.g = {};
+			for i,o in ipairs(response) do
+				tinsert(obj.g, o);
+			end
+		end
+		cache = {};
+		tinsert(cache, obj);
 	end
-	return {};
+	return cache, kind, id;
 end
 app.SearchForLink = SearchForLink;
 
@@ -3284,7 +3277,7 @@ local speciesFields = {
 	["link"] = function(t)
 		if t.itemID then
 			local link = select(2, GetItemInfo(t.itemID));
-			if link then
+			if link and not IsRetrieving(link) then
 				t.link = link;
 				return link;
 			end
@@ -3330,6 +3323,7 @@ local mountFields = {
 };
 
 if C_PetJournal and app.GameBuildVersion > 30000 then
+	local C_PetJournal = _G["C_PetJournal"];
 	-- Once the Pet Journal API is available, then all pets become account wide.
 	SetBattlePetCollected = function(t, speciesID, collected)
 		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
@@ -3338,7 +3332,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end
 	speciesFields.name = function(t)
-		return C_PetJournal.GetPetInfoBySpeciesID(t.speciesID);
+		return C_PetJournal.GetPetInfoBySpeciesID(t.speciesID) or (t.itemID and GetItemInfo(t.itemID)) or RETRIEVING_DATA;
 	end
 	speciesFields.petTypeID = function(t)
 		return select(3, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
@@ -3666,179 +3660,6 @@ app.CreateCurrencyClass = app.CreateClass("Currency", "currencyID", {
 		return CurrencyCollectedAsCost[t.currencyID];
 	end,
 });
-end)();
-
--- Faction Lib
-(function()
-local setFactionCollected = function(t, factionID, collected)
-	return app.SetCollectedForSubType(t, "Factions", "Reputations", factionID, collected);
-end
-local StandingByID = {
-	{	-- 1: HATED
-		["color"] = GetProgressColor(0),
-		["threshold"] = -42000,
-	},
-	{	-- 2: HOSTILE
-		["color"] = "00FF0000",
-		["threshold"] = -6000,
-	},
-	{	-- 3: UNFRIENDLY
-		["color"] = "00EE6622",
-		["threshold"] = -3000,
-	},
-	{	-- 4: NEUTRAL
-		["color"] = "00FFFF00",
-		["threshold"] = 0,
-	},
-	{	-- 5: FRIENDLY
-		["color"] = "0000FF00",
-		["threshold"] = 3000,
-	},
-	{	-- 6: HONORED
-		["color"] = "0000FF88",
-		["threshold"] = 9000,
-	},
-	{	-- 7: REVERED
-		["color"] = "0000FFCC",
-		["threshold"] = 21000,
-	},
-	{	-- 8: EXALTED
-		["color"] = GetProgressColor(1),
-		["threshold"] = 42000,
-	},
-};
-app.FactionNameByID = setmetatable({}, { __index = function(t, id)
-	local name = GetFactionInfoByID(id);
-	if name then
-		rawset(t, id, name);
-		rawset(app.FactionIDByName, name, id);
-		return name;
-	end
-end });
-app.FactionIDByName = setmetatable({}, { __index = function(t, name)
-	for i=1,3000,1 do
-		if app.FactionNameByID[i] == name then
-			return i;
-		end
-	end
-end });
-app.ColorizeStandingText = function(standingID, text)
-	local standing = StandingByID[standingID];
-	if standing then
-		return Colorize(text, standing.color);
-	else
-		local rgb = FACTION_BAR_COLORS[standingID];
-		return ColorizeRGB(text, rgb.r, rgb.g, rgb.b);
-	end
-end
-app.GetFactionIDByName = function(name)
-	name = name:trim();
-	return app.FactionIDByName[name] or name;
-end
-app.GetFactionStanding = function(reputation)
-	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
-	if reputation then
-		for i=#StandingByID,1,-1 do
-			local threshold = StandingByID[i].threshold;
-			if reputation >= threshold then
-				return i, threshold < 0 and (threshold - reputation) or (reputation - threshold);
-			end
-		end
-	end
-	return 1, 0
-end
-app.GetFactionStandingText = function(standingID)
-	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
-end
-app.GetFactionStandingThresholdFromString = function(replevel)
-	replevel = replevel:trim();
-	for standing=1,8,1 do
-		if _G["FACTION_STANDING_LABEL" .. standing] == replevel then
-			return StandingByID[standing].threshold;
-		end
-	end
-end
-local function GetCurrentFactionStandings(factionID)
-	return select(3, GetFactionInfoByID(factionID)) or 4;
-end
-app.GetCurrentFactionStandings = GetCurrentFactionStandings;	-- Quest Lib needs this.
-app.IsFactionExclusive = function(factionID)
-	return factionID == 934 or factionID == 932 or factionID == 1104 or factionID == 1105;
-end
-local fields = {
-	["text"] = function(t)
-		return app.ColorizeStandingText(t.standing, t.name);
-	end,
-	["name"] = function(t)
-		return app.FactionNameByID[t.factionID] or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
-	end,
-	["icon"] = function(t)
-		return app.asset("Category_Factions");
-	end,
-	["trackable"] = app.ReturnTrue,
-	["collectible"] = function(t)
-		if app.Settings.Collectibles.Reputations then
-			-- If your reputation is higher than the maximum for a different faction, return partial completion.
-			if not app.Settings.AccountWide.Reputations and t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
-				return false;
-			end
-			return true;
-		end
-		return false;
-	end,
-	["saved"] = function(t)
-		local factionID = t.factionID;
-		local minReputation = t.minReputation;
-		if minReputation and minReputation[1] == factionID then
-			return setFactionCollected(t, factionID, (select(6, GetFactionInfoByID(factionID)) or 0) >= minReputation[2]);
-		else
-			return setFactionCollected(t, factionID, t.standing >= t.maxstanding);
-		end
-	end,
-	["title"] = function(t)
-		local reputation = t.reputation;
-		local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
-		local title = _G["FACTION_STANDING_LABEL" .. t.standing];
-		if ceiling then
-			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
-			if reputation < 42000 then
-				return title .. " (" .. (42000 - reputation) .. " to " .. _G["FACTION_STANDING_LABEL8"] .. ")";
-			end
-		end
-		return title;
-	end,
-	["reputation"] = function(t)
-		return select(6, GetFactionInfoByID(t.factionID)) or 0;
-	end,
-	["ceiling"] = function(t)
-		local _, _, _, m, ma = GetFactionInfoByID(t.factionID);
-		return ma and m and (ma - m);
-	end,
-	["standing"] = function(t)
-		return select(3, GetFactionInfoByID(t.factionID)) or 1;
-	end,
-	["maxstanding"] = function(t)
-		if t.minReputation and t.minReputation[1] == t.factionID then
-			return app.GetFactionStanding(t.minReputation[2]);
-		end
-		return 8;
-	end,
-	["description"] = function(t)
-		return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
-	end,
-};
-fields.collected = fields.saved;
-app.CreateFaction = app.CreateClass("Faction", "factionID", fields);
-app.OnUpdateReputationRequired = function(t)
-	if app.MODE_DEBUG_OR_ACCOUNT then
-		t.visible = true;
-		return false;
-	else
-		local reputationID = t.minReputation[1];
-		t.visible = (select(3, GetFactionInfoByID(reputationID)) or 1) >= 4;
-		return true;
-	end
-end
 end)();
 
 -- Flight Path Lib
@@ -4876,7 +4697,7 @@ end)();
 (function()
 app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
-	[794] = 158762,	-- Arch
+	[794] = 78670,	-- Arch
 	[261] = 5149,	-- Beast Training
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
@@ -5151,7 +4972,7 @@ local spellFields = {
 		end
 		return "Interface\\ICONS\\INV_Scroll_04";
 	end,
-	["description"] = function(t)
+	["description"] = app.GameBuildVersion < 20000 and function(t)
 		return GetSpellDescription(t.spellID);
 	end,
 	["craftTypeID"] = function(t)
@@ -5218,11 +5039,8 @@ end)();
 
 -- Unsupported Libs
 (function()
-app.CreateConduit = app.CreateUnimplementedClass("Conduit", "conduitID");
-app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", "questID");
 app.CreateMusicRoll = app.CreateUnimplementedClass("MusicRoll", "questID");
 app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
-app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgePowerID");
 app.CreateSelfieFilter = app.CreateUnimplementedClass("SelfieFilter", "questID");
 end)();
 

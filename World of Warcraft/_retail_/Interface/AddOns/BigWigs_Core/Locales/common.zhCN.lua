@@ -31,6 +31,8 @@ L.extra = "%s（%s）" -- SPELL_NAME (short spell name or extra information)
 
 L.phase = "阶段%d"
 L.stage = "阶段%d"
+L.wave = "第%d波" -- e.g. "Wave 1" (Waves of adds)
+L.wave_count = "第%d波，共%d波" -- Wave 1 of 3 (Usually waves of adds)
 L.normal = "普通模式"
 L.heroic = "英雄模式"
 L.mythic = "史诗模式"
@@ -53,7 +55,7 @@ L.removed_after = "%s移除，用时 %.1f 秒" -- "Spell removed after 1.1s" (s 
 L.incoming = "即将%s" -- Spell Incoming
 L.interrupted = "已打断%s" -- Spell Interrupted
 L.interrupted_by = "%2$s已打断%1$s" -- Spell interrupted by Player
---L.interruptible = "Interruptible" -- when a spell is interruptible
+L.interruptible = "可打断" -- when a spell is interruptible
 L.no = "缺少%s" -- No Spell
 L.intermission = "阶段转换"
 L.percent = "%d%% - %s" -- 20% - Spell
@@ -96,8 +98,9 @@ L.affixes = "词缀" -- Seasonal affixes for raids and mythic+ dungeons
 
 -- Common raid marking locale
 L.marker = "%s标记"
-L.marker_player_desc = "标记受到%s影响的玩家为%s，需要权限。"
-L.marker_npc_desc = "标记%s为%s，需要权限。"
+L.marker_player_desc = "标记受到%s影响的玩家为%s，需要权限。" -- Mark players affected by 'SPELL_NAME' with SKULL_ICON
+L.marker_npc_desc = "标记%s为%s，需要权限。" -- Mark NPC_NAME with SKULL_ICON
+--L.marker_npc_aura_desc = "标记受到'%s'影响的NPC为%s，需要权限。" -- Mark NPCs affected by 'SPELL_NAME' with SKULL_ICON
 
 -- Ability where two players have to move close to each other
 L.link = "连接"

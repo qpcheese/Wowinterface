@@ -4,7 +4,7 @@
 ## Notes: Search for ArkInventory
 ## Author: Arkayenro - Khaz'goroth
 ## Email: arkayenro at gmail dot com
-## Version: 31025
+## Version: 31027
 ## X-ReleaseType: 
 ## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
 

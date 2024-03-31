@@ -1,7 +1,7 @@
 ===========.
  Stackpack :
 ==========='
- 10.2.5 :
+ 10.2.6 :
 ========'
 
 =========.
@@ -41,6 +41,12 @@
     /stackgb <on|off>                   - Toggle Guild bank stacking on or off
 
     You may also use "/stp" with the commands above instead of "/stackpack".
+
+================.
+ Updates 10.2.6 :
+================'
+
+    Updated TOC.
 
 ================.
  Updates 10.2.5 :

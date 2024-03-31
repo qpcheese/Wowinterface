@@ -230,6 +230,7 @@ function BetterFishing:OnEvent(event, ...)
     if internal.clear_override then
       ClearOverrideBindings(BetterFishing:GetSecureButton())
       internal.clear_override = false
+      BetterFishing:ResetCVars()
     end
   elseif event == "UNIT_SPELLCAST_CHANNEL_START" then
     local unit,_,spellID = ...
@@ -247,8 +248,8 @@ function BetterFishing:OnEvent(event, ...)
   elseif event == "UNIT_SPELLCAST_CHANNEL_STOP" then
     local unit,_,spellID = ...
     if unit == "player" and (spellID == self:GetFishingCastID() or spellID == 377895) then
-      BetterFishing:ResetCVars()
       if not IsTaintable() then
+        BetterFishing:ResetCVars()
         ClearOverrideBindings(BetterFishing:GetSecureButton());
       else
         internal.clear_override = true;

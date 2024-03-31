@@ -3377,10 +3377,7 @@ function ArkInventory.ItemSortKeyGenerate( i, bar_id, codex )
 		-- equip location
 		if i.h and info.class == "item" then
 			if info.equiploc ~= "" and _G[info.equiploc] then
-				s.location = ArkInventory.Const.Slot.CharacterPaneOrder[info.equiploc]
-				if not s.location then
-					ArkInventory.OutputWarning( "EquipLocation [", info.equiploc, "] not coded, please let the author know." )
-				end
+				s.location = ArkInventory.Const.Slot.INVTYPE_SortOrder[info.equiploc]
 			end
 		end
 		s.location = s.location or 0

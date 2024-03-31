@@ -1,4 +1,3 @@
--- Generated from CurseForge on Fri Mar  8 08:44:40 UTC 2024
 local ns = select(2, ...) ---@class ns @The addon namespace.
 
 if ns:IsSameLocale("deDE") then
@@ -8,7 +7,7 @@ if ns:IsSameLocale("deDE") then
 
 	L.LOCALE_NAME = "deDE"
 
-L["ALLOW_IN_LFD"] = "Im Dungeonbrowser erlauben"
+	L["ALLOW_IN_LFD"] = "Im Dungeonbrowser erlauben"
 L["ALLOW_IN_LFD_DESC"] = "Rechtsklick auf Gruppen oder Kandidaten im Dungeonbrowser, um den Raider.IO Profil-Link zu kopieren."
 L["ALLOW_ON_PLAYER_UNITS"] = "Am Rahmen bei Spielereinheit erlauben"
 L["ALLOW_ON_PLAYER_UNITS_DESC"] = "Rechtsklick auf Rahmen bei Spielereinheit, um den Raider.IO Profil-Link zu kopieren."
@@ -373,5 +372,6 @@ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "Raider.IO: Du solltest zuerst die autom
 L["WARNING_RWF_MODE_ENABLE"] = "|cffFFFFFF%s|r Wettrennen Welt 1.-Modus ist aktiviert. Du kannst es deaktivieren, indem du |cffFFFFFF/raiderio rwf|r eingibst."
 L["WIPE_RWF_MODE_BUTTON"] = "Löschen"
 L["WIPE_RWF_MODE_BUTTON_TOOLTIP"] = "Klicke hier, um das Protokoll aus der Speicherdatei zu löschen. Dadurch wird deine Benutzeroberfläche neu geladen."
+
 
 end

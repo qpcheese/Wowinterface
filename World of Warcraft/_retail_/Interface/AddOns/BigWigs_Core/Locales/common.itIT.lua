@@ -31,6 +31,8 @@ L.extra = "%s (%s)" -- SPELL_NAME (short spell name or extra information)
 
 L.phase = "Fase %d"
 L.stage = "Fase %d"
+--L.wave = "Wave %d" -- e.g. "Wave 1" (Waves of adds)
+--L.wave_count = "Wave %d of %d" -- Wave 1 of 3 (Usually waves of adds)
 L.normal = "Modalità Normale"
 L.heroic = "Modalità Eroica"
 L.mythic = "Modalità Mitica"
@@ -96,8 +98,9 @@ L.affixes = "Modificatori" -- Seasonal affixes for raids and mythic+ dungeons
 
 -- Common raid marking locale
 L.marker = "Icona bersaglio %s"
-L.marker_player_desc = "Marchia i giocatori affetti da %s con %s, necessario ruolo assistente o capo."
-L.marker_npc_desc = "Marchia %s con %s, necessario ruolo assistente o capo."
+L.marker_player_desc = "Marchia i giocatori affetti da %s con %s, necessario ruolo assistente o capo." -- Mark players affected by 'SPELL_NAME' with SKULL_ICON
+L.marker_npc_desc = "Marchia %s con %s, necessario ruolo assistente o capo." -- Mark NPC_NAME with SKULL_ICON
+--L.marker_npc_aura_desc = "Mark NPCs affected by '%s' with %s, requires promoted or leader." -- Mark NPCs affected by 'SPELL_NAME' with SKULL_ICON
 
 -- Ability where two players have to move close to each other
 L.link = "Vincolo"

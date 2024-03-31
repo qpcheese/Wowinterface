@@ -2,7 +2,7 @@
 IPMTDB = {
 }
 IPMTOptions = {
-	["MDTversion"] = "4.3.4.6",
+	["MDTversion"] = "4.3.5.0",
 	["direction"] = 1,
 	["global"] = {
 		["minimap"] = {

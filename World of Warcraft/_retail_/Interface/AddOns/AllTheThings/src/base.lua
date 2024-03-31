@@ -26,7 +26,7 @@ app.DESCRIPTION_SEPARATOR = "`"
 -- ReloadUI slash command (for ease of use)
 SLASH_RELOADUI1 = "/reloadui";
 SLASH_RELOADUI2 = "/rl";
-SlashCmdList["RELOADUI"] = ReloadUI;
+SlashCmdList.RELOADUI = ReloadUI;
 
 local assetRootPath = "Interface\\Addons\\" .. appName .. "\\assets\\";
 app.asset = function(path)
@@ -39,11 +39,11 @@ app.ReturnFalse = function() return false; end
 
 -- External API
 -- TODO: We will use a common API eventually.
-if not _G["ATTC"] then
-	_G["ATTC"] = app;
+if not _G.ATTC then
+	_G.ATTC = app;
 end
-if not _G["AllTheThings"] then
-	_G["AllTheThings"] = app;
+if not _G.AllTheThings then
+	_G.AllTheThings = app;
 end
 
 -- API Functions
@@ -211,6 +211,73 @@ app.RaceIndex = type(raceIndex) == "table" and raceIndex[factionGroup] or raceIn
 app.RaceID = raceID;
 app.Race = race;
 
+-- Accessibility Sorting
+local function calculateAccessibility(source)
+	local score = source.AccessibilityScore or 0;
+	if score > 0 then return score; end
+	if GetRelativeValue(source, "nmr") then
+		score = score + 20;
+	end
+	if GetRelativeValue(source, "nmc") then
+		score = score + 10;
+	end
+	if GetRelativeValue(source, "rwp") then
+		score = score + 5;
+	end
+	if GetRelativeValue(source, "e") then
+		score = score + 1;
+	end
+	local u = GetRelativeValue(source, "u");
+	if u then
+		if u < 3 then
+			score = score + 100;
+		elseif u < 4 then
+			score = score + 10;
+		else
+			score = score + 1;
+		end
+	end
+	source.AccessibilityScore = score;
+	return score;
+end
+app.SortDefaults.Accessibility = function(a, b)
+	return calculateAccessibility(a) < calculateAccessibility(b);
+end
+
+-- Accessibility + Distance Sorting
+local function calculateAccessibilityAndDistance(source)
+	local score = source.AccessibilityScore or 0;
+	if score > 0 then return score; end
+	if GetRelativeValue(source, "nmr") then
+		score = score + 20;
+	end
+	if GetRelativeValue(source, "nmc") then
+		score = score + 10;
+	end
+	if GetRelativeValue(source, "rwp") then
+		score = score + 5;
+	end
+	if GetRelativeValue(source, "e") then
+		score = score + 1;
+	end
+	local u = GetRelativeValue(source, "u");
+	if u then
+		if u < 3 then
+			score = score + 100;
+		elseif u < 4 then
+			score = score + 10;
+		else
+			score = score + 1;
+		end
+	end
+	score = score + (source.distance or 99999);
+	source.AccessibilityScore = score;
+	return score;
+end
+app.SortDefaults.AccessibilityAndDistance = function(a, b)
+	return calculateAccessibilityAndDistance(a) < calculateAccessibilityAndDistance(b);
+end
+
 -- Whether ATT should ignore saving data experienced during the play session
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<
@@ -354,7 +421,7 @@ editbox:Hide();
 end)();
 
 function app:ShowPopupDialog(msg, callback)
-	local popup = StaticPopupDialogs["ALL_THE_THINGS"];
+	local popup = StaticPopupDialogs.ALL_THE_THINGS;
 	if not popup then
 		popup = {
 			button1 = "Yes",
@@ -366,7 +433,7 @@ function app:ShowPopupDialog(msg, callback)
 			enterClicksFirstButton = true,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
 		};
-		StaticPopupDialogs["ALL_THE_THINGS"] = popup;
+		StaticPopupDialogs.ALL_THE_THINGS = popup;
 	end
 	popup.text = msg or "Are you sure?";
 	popup.OnAccept = callback or print;
@@ -374,7 +441,7 @@ function app:ShowPopupDialog(msg, callback)
 	StaticPopup_Show ("ALL_THE_THINGS");
 end
 function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
-	local popup = StaticPopupDialogs["ALL_THE_THINGS_EDITBOX"];
+	local popup = StaticPopupDialogs.ALL_THE_THINGS_EDITBOX;
 	if not popup then
 		popup = {
 			button1 = "Okay",
@@ -391,7 +458,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 			end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
 		};
-		StaticPopupDialogs["ALL_THE_THINGS_EDITBOX"] = popup;
+		StaticPopupDialogs.ALL_THE_THINGS_EDITBOX = popup;
 	end
 	popup.OnShow = function (self, data)
 		self.editBox:SetText(text);
@@ -498,7 +565,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 	ATTEditBox:Show()
 end
 function app:ShowPopupDialogToReport(reportReason, text)
-	app:ShowPopupDialogWithMultiLineEditBox(text, nil, (reportReason or "Missing Data").."\n"..app.L["PLEASE_REPORT_MESSAGE"]..app.L["REPORT_TIP"]);
+	app:ShowPopupDialogWithMultiLineEditBox(text, nil, (reportReason or "Missing Data").."\n"..app.L.PLEASE_REPORT_MESSAGE..app.L.REPORT_TIP);
 end
 
 -- Define Modules

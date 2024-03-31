@@ -2,6 +2,8 @@
 local cacheObjectStringStandard = { }
 local cacheObjectStringDecode = { }
 
+local equiplocwarningsent = { }
+
 local TooltipStockCaptureSeperator = ""
 if LARGE_NUMBER_SEPERATOR ~= "" then
 	TooltipStockCaptureSeperator = LARGE_NUMBER_SEPERATOR .. "?"
@@ -212,6 +214,22 @@ local function helper_UpdateObjectInfo( info, thread_id )
 				
 				local ilvl
 				local stock = -1
+				
+				
+				-- clear unknown equipment types so they arent seen as equipable and warn user about it
+				if ArkInventory.Const.Slot.INVTYPE_SortOrder[info.equiploc] then
+					if ArkInventory.Const.Slot.INVTYPE_SortOrder[info.equiploc] <= 0 then
+						info.equiploc = ""
+					end
+				else
+					if info.equiploc ~= "" then
+						if not equiplocwarningsent[info.equiploc] then
+							equiplocwarningsent[info.equiploc] = true
+							ArkInventory.OutputWarning( "Equipment Location [", info.equiploc, "] is not coded, please let the author know." )
+						end
+						info.equiploc = ""
+					end
+				end
 				
 				if info.equiploc == "INVTYPE_BAG" then
 					

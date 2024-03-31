@@ -14,9 +14,25 @@ VER 3 0000000001000009 "Arcane Missiles" "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Arcane Missiles
 END
+VER 3 0000000001000010 "blz" "134400"
+#showtooltip blizzard
+/cast [nomod] blizzard
+/cast [mod:shift] Blizzard(Rank 1)
+END
+VER 3 0000000001000012 "Cone of Cold" "INV_MISC_QUESTIONMARK"
+#showtooltip Cone of Cold
+/cleartarget [dead][noharm]
+/targetenemy [dead][noharm]
+/startattack
+/cast Cone of Cold
+END
 VER 3 0000000001000007 "Conjure Food" "INV_MISC_QUESTIONMARK"
 #showtooltip Conjure Food
 /cast Conjure Food
+END
+VER 3 0000000001000011 "Conjure Mana Aga" "INV_MISC_QUESTIONMARK"
+#showtooltip Conjure Mana Agate
+/cast Conjure Mana Agate
 END
 VER 3 0000000001000006 "Conjure Water" "INV_MISC_QUESTIONMARK"
 #showtooltip Conjure Water
@@ -28,6 +44,12 @@ VER 3 0000000001000008 "Evocation" "INV_MISC_QUESTIONMARK"
 /targetenemy [dead][noharm]
 /startattack
 /cast Evocation
+END
+VER 3 000000000100000F "Fb" "134400"
+#showtooltip Frostbolt
+/cleartarget [dead][noharm]
+/targetenemy [dead][noharm]
+/cast Frostbolt
 END
 VER 3 0000000001000003 "Fire Blast" "INV_MISC_QUESTIONMARK"
 #showtooltip Fire Blast

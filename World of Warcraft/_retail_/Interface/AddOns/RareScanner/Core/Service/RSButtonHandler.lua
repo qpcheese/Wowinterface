@@ -183,7 +183,7 @@ local function UpdateRareFound(entityID, vignetteInfo, coordinates)
 		-- MapID always try to get it first from the internal database
 		-- GetBestMapForUnit not always returns the expected value!
 		local eventInfo = RSEventDB.GetInternalEventInfo(entityID)
-		if (eventInfo and eventInfo.zoneID ~= 0) then
+		if (RSEventDB.IsInternalEventMonoZone(entityID) and eventInfo.zoneID ~= 0) then
 			mapID = eventInfo.zoneID
 		else
 			mapID = C_Map.GetBestMapForUnit("player")

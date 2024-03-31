@@ -31,8 +31,8 @@ RaiderIO_Config = {
 		["g"] = 0,
 		["r"] = 0,
 	},
+	["replaySelection"] = "user_best_replay",
 	["inverseProfileModifier"] = false,
-	["showRaiderIOProfile"] = true,
 	["showSimpleScoreColors"] = false,
 	["enableGuildTooltips"] = true,
 	["enableWhoTooltips"] = true,
@@ -49,27 +49,13 @@ RaiderIO_Config = {
 	["enableFriendsTooltips"] = true,
 	["lockProfile"] = false,
 	["showScoreInCombat"] = true,
-	["replaySelection"] = "user_best_replay",
+	["showRaiderIOProfile"] = true,
 	["showClientGuildBest"] = true,
 }
 RaiderIO_LastCharacter = "eu-Qubit-ragnaros"
 RaiderIO_MissingCharacters = {
-	["eu-Lemingwink-ragnaros"] = true,
-	["eu-Joeasaurs-ragnaros"] = true,
-	["eu-Nefraxis-ragnaros"] = true,
-	["eu-Korhaln-ragnaros"] = true,
-	["eu-Xidenn-ragnaros"] = true,
-	["eu-Naomii-ragnaros"] = true,
-	["eu-Dévíl-kazzak"] = true,
-	["eu-Antibiotikum-ragnaros"] = true,
-	["eu-Buldozerstar-ragnaros"] = true,
-	["eu-Greyadragoon-ragnaros"] = true,
-	["eu-Aramusha-ragnaros"] = true,
-	["eu-Xaya-die-ewige-wacht"] = true,
-	["eu-Sinriukas-ragnaros"] = true,
-	["eu-Moontrix-ragnaros"] = true,
-	["eu-Buchbla-ragnaros"] = true,
-	["eu-Frenchy-ragnaros"] = true,
+	["eu-Maestitia-ragnaros"] = true,
+	["eu-Qubit-ragnaros"] = true,
 }
 RaiderIO_MissingServers = {
 }

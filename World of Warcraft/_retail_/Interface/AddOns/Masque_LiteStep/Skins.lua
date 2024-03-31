@@ -29,7 +29,7 @@ local API_VERSION = 100105
 
 -- Skin Info
 local Authors = {"StormFX", "|cff999999Saynt|r"}
-local Version = "10.2.5"
+local Version = "10.2.6"
 local Websites = {
 	"https://github.com/SFX-WoW/Masque_LiteStep",
 	"https://www.curseforge.com/wow/addons/masque-litestep",

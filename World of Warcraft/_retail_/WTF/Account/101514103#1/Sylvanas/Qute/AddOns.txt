@@ -41,7 +41,7 @@ BigWigs_CountDown_Narwhal: disabled
 BigWigs_Countdown_Sabinico: disabled
 BigWigs_Transcriptor: disabled
 BigWigs_Voice: enabled
-BigWigs_VoiceGCP: disabled
+BigWigs_VoiceGCP: enabled
 BigWigs_Voice_Arnold: disabled
 BigWigs_Voice_Eminem: disabled
 BigWigs_Voice_Marine: disabled

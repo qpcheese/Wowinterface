@@ -58,13 +58,6 @@ function RSEventPOI.GetEventPOI(eventID, mapID, eventInfo, alreadyFoundInfo)
 	POI.grouping = true
 	POI.name = RSEventDB.GetEventName(eventID) or AL["EVENT"]
 	POI.mapID = mapID
-	if (alreadyFoundInfo) then
-		POI.x = alreadyFoundInfo.coordX
-		POI.y = alreadyFoundInfo.coordY
-	else
-		POI.x = RSUtils.Lpad(eventInfo.x, 4, '0')
-		POI.y = RSUtils.Lpad(eventInfo.y, 4, '0')
-	end
 	POI.foundTime = alreadyFoundInfo and alreadyFoundInfo.foundTime
 	POI.isCompleted = RSEventDB.IsEventCompleted(eventID)
 	POI.isDiscovered = POI.isCompleted or alreadyFoundInfo ~= nil
@@ -72,6 +65,14 @@ function RSEventPOI.GetEventPOI(eventID, mapID, eventInfo, alreadyFoundInfo)
 	
 	if (eventInfo) then
 		POI.worldmap = eventInfo.worldmap
+	end
+	
+	-- Coordinates
+	if (alreadyFoundInfo and alreadyFoundInfo.mapID == mapID) then
+		POI.x = alreadyFoundInfo.coordX
+		POI.y = alreadyFoundInfo.coordY
+	else
+		POI.x, POI.y = RSEventDB.GetInternalEventCoordinates(eventID, mapID)
 	end
 	
 	-- Textures
@@ -97,9 +98,16 @@ end
 
 local function IsEventPOIFiltered(eventID, mapID, zoneQuestID, vignetteGUIDs, onWorldMap, onMinimap)
 	local name = RSEventDB.GetEventName(eventID) or AL["EVENT"]
+	
 	-- Skip if filtering by name in the world map search box
 	if (name and RSGeneralDB.GetWorldMapTextFilter() and not RSUtils.Contains(name, RSGeneralDB.GetWorldMapTextFilter())) then
 		RSLogger:PrintDebugMessageEntityID(eventID, string.format("Saltado Evento [%s]: Filtrado por nombre [%s][%s].", eventID, name, RSGeneralDB.GetWorldMapTextFilter()))
+		return true
+	end	
+	
+	-- Skip if part of a disabled event
+	if (RSEventDB.IsDisabledEvent(eventID)) then
+		RSLogger:PrintDebugMessageEntityID(eventID, string.format("Saltado Evento [%s]: Parte de un evento (mundial) desactivado.", eventID))
 		return true
 	end
 

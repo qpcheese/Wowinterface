@@ -498,13 +498,10 @@ local createMap = app.CreateClass("Map", "mapID", {
 		return C_Map_GetMapLevels(t.mapID);
 	end,
 	["playerCoord"] = function(t)
-		-- if this map is the same map as the one the player is currently within, allow displaying the player's current coordinates
-		if t.isCurrentMap then
-			local position = C_Map_GetPlayerMapPosition(CurrentMapID, "player")
-			if position then
-				local x,y = position:GetXY()
-				return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, CurrentMapID };
-			end
+		local position = C_Map_GetPlayerMapPosition(t.mapID, "player")
+		if position then
+			local x,y = position:GetXY()
+			return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, t.mapID };
 		end
 	end,
 	["isCurrentMap"] = function(t)
@@ -534,11 +531,13 @@ local createMap = app.CreateClass("Map", "mapID", {
 		return L.HEADER_DESCRIPTIONS[t.headerID];
 	end,
 }, (function(t)
-	local creatureID = t.creatureID;
+	local creatureID = t.creatureID or t.npcID;
 	if creatureID and creatureID < 0 then
 		t.headerID = creatureID;
 		t.creatureID = nil;
 		t.npcID = nil;
+		return true;
+	elseif t.headerID then
 		return true;
 	end
 end));

@@ -7,9 +7,9 @@ FishingBuddy_Player = {
 	["Version"] = 1190400,
 	["WasWearing"] = {
 	},
-	["Outfit"] = {
-	},
 	["WatcherLocation"] = {
+	},
+	["Outfit"] = {
 	},
 	["Settings"] = {
 		["SpecialBobbers"] = -1,

@@ -5,7 +5,7 @@
 ## Title: ArkInventory [Rules] Example
 ## Notes: Example rule for ArkInventory
 ## Author: Arkayenro - Khaz'goroth
-## Version: 3.10.25
+## Version: 3.10.27
 ## X-ReleaseType: 
 ## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
 

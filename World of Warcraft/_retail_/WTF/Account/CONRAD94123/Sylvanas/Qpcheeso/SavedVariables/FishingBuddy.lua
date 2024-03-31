@@ -11,8 +11,8 @@ FishingBuddy_Player = {
 		["SpecialBobbers"] = -1,
 		["TotalTimeFishing"] = 1,
 	},
-	["Outfit"] = {
-	},
 	["WatcherLocation"] = {
+	},
+	["Outfit"] = {
 	},
 }

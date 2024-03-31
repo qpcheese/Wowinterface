@@ -1,3 +1,6 @@
+VER 3 0000000000000007 "asd" "136016"
+/1 you have two year old dried up ramen soup all over your monitor and you know it.
+END
 VER 3 0000000000000006 "asd" "134400"
 /camp
 END
@@ -13,8 +16,16 @@ VER 3 0000000000000002 "Auto attack" "INV_MISC_QUESTIONMARK"
 /cast !Auto Shot
 /petattack
 END
+VER 3 0000000000000009 "chest" "134400"
+#showtooltip
+/cast Chest Rune Ability
+/cast pyroblast
+END
 VER 3 0000000000000001 "nameplates" "136034"
 /run SetCVar("nameplateMaxDistance", "6e1")
+END
+VER 3 0000000000000008 "RXPTargeting" "Ability_eyeoftheowl"
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000005 "spit" "132104"
 /me Spits on you.

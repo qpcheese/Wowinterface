@@ -31,6 +31,8 @@ L.extra = "%s (%s)" -- SPELL_NAME (short spell name or extra information)
 
 L.phase = "Fase %d"
 L.stage = "Etapa %d"
+--L.wave = "Wave %d" -- e.g. "Wave 1" (Waves of adds)
+--L.wave_count = "Wave %d of %d" -- Wave 1 of 3 (Usually waves of adds)
 L.normal = "Modo normal"
 L.heroic = "Modo heroico"
 L.mythic = "Modo mítico"
@@ -96,8 +98,9 @@ L.affixes = "Afijos" -- Seasonal affixes for raids and mythic+ dungeons
 
 -- Common raid marking locale
 L.marker = "%s marcador"
-L.marker_player_desc = "Marca jugadores afectados por %s con %s, requiere ayudante o líder."
-L.marker_npc_desc = "Marca %s con %s, requiere ayudante o líder."
+L.marker_player_desc = "Marca jugadores afectados por %s con %s, requiere ayudante o líder." -- Mark players affected by 'SPELL_NAME' with SKULL_ICON
+L.marker_npc_desc = "Marca %s con %s, requiere ayudante o líder." -- Mark NPC_NAME with SKULL_ICON
+--L.marker_npc_aura_desc = "Mark NPCs affected by '%s' with %s, requires promoted or leader." -- Mark NPCs affected by 'SPELL_NAME' with SKULL_ICON
 
 -- Ability where two players have to move close to each other
 L.link = "Enlace"

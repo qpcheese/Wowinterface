@@ -3,9 +3,9 @@ MDC_Settings = nil
 MDCDB = {
 	["profileKeys"] = {
 		["Kaijid - Ragnaros"] = "Kaijid - Ragnaros",
-		["Qute - Sylvanas"] = "Qute - Sylvanas",
-		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Qute - Sylvanas"] = "Qute - Sylvanas",
 		["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
 		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
@@ -13,9 +13,9 @@ MDCDB = {
 		["Kaijid - Ragnaros"] = {
 			["addonPosition"] = {
 				["xOffset"] = 196.9996948242188,
-				["yOffset"] = -20.33326530456543,
-				["anchorFrom"] = "TOPLEFT",
 				["anchorTo"] = "TOPLEFT",
+				["anchorFrom"] = "TOPLEFT",
+				["yOffset"] = -20.33326530456543,
 			},
 			["optionalBottomFrame"] = {
 				["show"] = true,
@@ -58,10 +58,6 @@ MDCDB = {
 				},
 			},
 		},
-		["Qute - Sylvanas"] = {
-		},
-		["Qpaladin - Ragnaros"] = {
-		},
 		["Qpfromage - Ragnaros"] = {
 			["addonPosition"] = {
 				["xOffset"] = 2.999956607818604,
@@ -72,40 +68,6 @@ MDCDB = {
 				["content"] = 2,
 			},
 			["calculation"] = {
-				["affixTime"] = {
-					{
-						1808, -- [1]
-						1755, -- [2]
-					}, -- [1]
-					{
-						1275, -- [1]
-						1619, -- [2]
-					}, -- [2]
-					{
-						1968, -- [1]
-						1622, -- [2]
-					}, -- [3]
-					{
-						1484, -- [1]
-						1420, -- [2]
-					}, -- [4]
-					{
-						1857, -- [1]
-						2100, -- [2]
-					}, -- [5]
-					{
-						1709, -- [1]
-						2040, -- [2]
-					}, -- [6]
-					{
-						1306, -- [1]
-						1747, -- [2]
-					}, -- [7]
-					{
-						1978, -- [1]
-						2160, -- [2]
-					}, -- [8]
-				},
 				["affixLevel"] = {
 					{
 						22, -- [1]
@@ -140,7 +102,45 @@ MDCDB = {
 						22, -- [2]
 					}, -- [8]
 				},
+				["affixTime"] = {
+					{
+						1808, -- [1]
+						1755, -- [2]
+					}, -- [1]
+					{
+						1275, -- [1]
+						1619, -- [2]
+					}, -- [2]
+					{
+						1968, -- [1]
+						1622, -- [2]
+					}, -- [3]
+					{
+						1484, -- [1]
+						1420, -- [2]
+					}, -- [4]
+					{
+						1857, -- [1]
+						2100, -- [2]
+					}, -- [5]
+					{
+						1709, -- [1]
+						2040, -- [2]
+					}, -- [6]
+					{
+						1306, -- [1]
+						1747, -- [2]
+					}, -- [7]
+					{
+						1978, -- [1]
+						2160, -- [2]
+					}, -- [8]
+				},
 			},
+		},
+		["Qpaladin - Ragnaros"] = {
+		},
+		["Qute - Sylvanas"] = {
 		},
 		["Qpfromage - Sylvanas"] = {
 		},

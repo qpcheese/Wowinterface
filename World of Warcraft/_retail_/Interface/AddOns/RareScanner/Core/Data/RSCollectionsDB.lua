@@ -1055,6 +1055,182 @@ function RSCollectionsDB.RemoveNotCollectedDrakewatcher(spellID, callback) --UNI
 end
 
 ---============================================================================
+-- Custom items
+---============================================================================
+
+function RSCollectionsDB.GetItemGroups()
+	if (not private.dbglobal.explorer_item_groups) then
+		private.dbglobal.explorer_item_groups = {}
+	end
+	
+	if (RSUtils.GetTableLength(private.dbglobal.explorer_item_groups) == 0) then
+		RSCollectionsDB.AddItemGroup(AL["EXPLORER_CUSTOM_ITEMS_GROUP_DEFAULT"])
+	end
+	
+	return private.dbglobal.explorer_item_groups
+end
+
+function RSCollectionsDB.SetGroupName(groupKey, value)
+	if (value and strtrim(value) ~= '' and groupKey and private.dbglobal.explorer_item_groups and private.dbglobal.explorer_item_groups[groupKey]) then
+		-- Ignore if already exists
+		for _, v in pairs (private.dbglobal.explorer_item_groups) do
+			if (value == v) then
+				return
+			end
+		end
+		
+		private.dbglobal.explorer_item_groups[groupKey] = strtrim(value)
+	end
+end
+
+function RSCollectionsDB.GetGroupKeyByName(groupName)
+	if (private.dbglobal.explorer_item_groups) then
+		for key, name in pairs (private.dbglobal.explorer_item_groups) do
+			if (name == groupName) then
+				return key
+			end
+		end
+	end
+	
+	return nil
+end
+
+function RSCollectionsDB.AddItemGroup(value)
+	if (value and strtrim(value) ~= '') then
+		-- Ignore if already exists
+		for _, v in pairs (private.dbglobal.explorer_item_groups) do
+			if (value == v) then
+				return
+			end
+		end
+		
+		local key = 1
+		if (RSUtils.GetTableLength(private.dbglobal.explorer_item_groups) > 0) then
+			local keys = {}
+			for k, _ in pairs (private.dbglobal.explorer_item_groups) do
+				tinsert(keys, k)
+			end
+			
+			key = math.max(unpack(keys)) + 1
+		end
+		
+		private.dbglobal.explorer_item_groups[key] = strtrim(value)
+		return key
+	end
+end
+
+function RSCollectionsDB.DeleteItemGroup(key)
+	if (key) then
+		-- Delete group
+		private.dbglobal.explorer_item_groups[key] = nil
+		
+		-- Delete group's items
+		if (private.dbglobal.explorer_item_list) then
+			private.dbglobal.explorer_item_list[key] = nil
+		end
+		
+		-- Delete explorer filter settings
+		RSConfigDB.SetSearchingCustom(key, nil)
+		
+		-- Delete possible scanned items
+		local droppedGroupKey = string.format(RSConstants.ITEM_TYPE.CUSTOM, key)
+		local routines = {}
+		for source, info in pairs (RSCollectionsDB.GetAllEntitiesCollectionsLoot()) do
+			local removeDroppedGroupRoutine = RSRoutines.LoopRoutineNew()
+			removeDroppedGroupRoutine:Init(function() return RSCollectionsDB.GetAllEntitiesCollectionsLoot()[source] end, 20,
+				function(context, entityID, _)
+					if (RSCollectionsDB.GetAllEntitiesCollectionsLoot()[source][entityID][droppedGroupKey]) then
+						RSCollectionsDB.GetAllEntitiesCollectionsLoot()[source][entityID][droppedGroupKey] = nil
+					end
+									
+					-- Check if the entity doesn't have more collections
+					if (RSUtils.GetTableLength(RSCollectionsDB.GetAllEntitiesCollectionsLoot()[source][entityID]) == 0) then
+						RSCollectionsDB.GetAllEntitiesCollectionsLoot()[source][entityID] = nil
+					end
+				end,
+				function(context) end
+			)
+			tinsert(routines, removeDroppedGroupRoutine)
+		end
+		
+		-- Delete loot filter options
+		RSConfigDB.SetShowingCustomItems(key, nil)
+		
+		local chainRoutines = RSRoutines.ChainLoopRoutineNew()
+		chainRoutines:Init(routines)
+		chainRoutines:Run(function(context) end)
+	end
+end
+
+function RSCollectionsDB.AddGroupItem(key, itemID)
+	if (key) then
+		if (not private.dbglobal.explorer_item_list) then
+			private.dbglobal.explorer_item_list = {}
+		end
+		
+		if (not private.dbglobal.explorer_item_list[key]) then
+			private.dbglobal.explorer_item_list[key] = {}
+		end
+		
+		-- Skip if duplicated
+		for _, itemID_ in ipairs(private.dbglobal.explorer_item_list[key]) do
+			if (itemID == itemID_) then
+				return
+			end
+		end
+		
+		tinsert(private.dbglobal.explorer_item_list[key], itemID)
+	end
+end
+
+function RSCollectionsDB.DeleteGroupItem(key, itemID)
+	if (key and itemID and private.dbglobal.explorer_item_list and private.dbglobal.explorer_item_list[key]) then
+		-- Delete the item for this group
+		for i, item in ipairs (private.dbglobal.explorer_item_list[key]) do
+			if (item == itemID) then
+				tremove(private.dbglobal.explorer_item_list[key], i)
+				break
+			end
+		end
+	end
+end
+
+function RSCollectionsDB.GetGroupItems(key)
+	if (key and private.dbglobal.explorer_item_list and private.dbglobal.explorer_item_list[key]) then
+		return private.dbglobal.explorer_item_list[key]
+	end
+end
+
+function RSCollectionsDB.HasGroupItems(key)
+	if (key and private.dbglobal.explorer_item_list and private.dbglobal.explorer_item_list[key]) then
+		return true
+	end
+	
+	return false
+end
+
+local function CheckUpdateCustom(itemID, entityID, source, checkedItems, customGroupKeys)
+	-- If cached use it
+	for _, customGroupKey in ipairs(customGroupKeys) do
+		if (checkedItems[customGroupKey][itemID]) then
+			UpdateEntityCollection(itemID, entityID, source, customGroupKey)
+			return true
+		end
+	end
+	
+	for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+		local itemIDs = RSCollectionsDB.GetGroupItems(groupKey)
+		if (itemIDs and RSUtils.Contains(itemIDs, itemID)) then
+			UpdateEntityCollection(itemID, entityID, source, string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey))
+			checkedItems[string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)][itemID] = true
+			return true
+		end
+	end
+
+	return false
+end
+
+---============================================================================
 -- Collections database
 ---============================================================================
 
@@ -1072,14 +1248,24 @@ function RSCollectionsDB.UpdateEntityCollectibles(entityID, items, source)
 	end
 	
 	local checkedItems = {}
+	checkedItems[RSConstants.ITEM_TYPE.UNKNOWN] = {}
 	checkedItems[RSConstants.ITEM_TYPE.APPEARANCE] = {}
 	checkedItems[RSConstants.ITEM_TYPE.TOY] = {}
 	checkedItems[RSConstants.ITEM_TYPE.PET] = {}
 	checkedItems[RSConstants.ITEM_TYPE.MOUNT] = {}
 	checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER] = {}
 	
+	local customGroupKeys = {}
+	for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+		local itemTypeCustomKey = string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)
+		tinsert(customGroupKeys, itemTypeCustomKey)
+		checkedItems[itemTypeCustomKey] = {}
+	end
+	
 	for _, itemID in ipairs (items) do
-		if (not checkedItems[itemID]) then			
+		if (not checkedItems[RSConstants.ITEM_TYPE.UNKNOWN][itemID]) then
+			-- Custom items wont be taken into account in other categories
+				
 			-- Check if appearance
 			if (not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID] and not checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER][itemID]) then
 				CheckUpdateAppearance(itemID, entityID, source, checkedItems)
@@ -1104,20 +1290,25 @@ function RSCollectionsDB.UpdateEntityCollectibles(entityID, items, source)
 			if (not checkedItems[RSConstants.ITEM_TYPE.APPEARANCE][itemID] and not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID]) then
 				CheckUpdateDrakewatcher(itemID, entityID, source, checkedItems)
 			end
+	
+			-- Check if custom item
+			CheckUpdateCustom(itemID, entityID, source, checkedItems, customGroupKeys)
 			
-			if (not checkedItems[RSConstants.ITEM_TYPE.APPEARANCE][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID] and not checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER][itemID]) then
-				checkedItems[itemID] = true
+			if (not checkedItems[RSConstants.ITEM_TYPE.APPEARANCE][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID] and not checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER][itemID] and not RSUtils.ContainsKeyValue(checkedItems, customGroupKeys, itemID)) then
+				checkedItems[RSConstants.ITEM_TYPE.UNKNOWN][itemID] = true
 			end
 		end
 	end
 end
 
-local function CheckUpdateCollectibles(checkedItems, getter, source, routines, routineTextOutput)
+local function CheckUpdateCollectibles(checkedItems, customGroupKeys, getter, source, routines, routineTextOutput)
 	local checkUpdateCollectiblesRoutine = RSRoutines.LoopRoutineNew()
 	checkUpdateCollectiblesRoutine:Init(getter, 30, 
 		function(context, entityID, items)
 			for _, itemID in ipairs (items) do
-				if (not checkedItems[itemID]) then							
+				if (not checkedItems[RSConstants.ITEM_TYPE.UNKNOWN][itemID]) then	
+					-- Custom items wont be taken into account in other categories
+				
 					-- Check if appearance
 					if (not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID] and not checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER][itemID]) then
 						CheckUpdateAppearance(itemID, entityID, source, checkedItems)
@@ -1142,9 +1333,12 @@ local function CheckUpdateCollectibles(checkedItems, getter, source, routines, r
 					if (not checkedItems[RSConstants.ITEM_TYPE.APPEARANCE][itemID] and not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID]) then
 						CheckUpdateDrakewatcher(itemID, entityID, source, checkedItems)
 					end
+			
+					-- Check if custom item
+					CheckUpdateCustom(itemID, entityID, source, checkedItems, customGroupKeys)
 					
-					if (not checkedItems[RSConstants.ITEM_TYPE.APPEARANCE][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID] and not checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER][itemID]) then
-						checkedItems[itemID] = true
+					if (not checkedItems[RSConstants.ITEM_TYPE.APPEARANCE][itemID] and not checkedItems[RSConstants.ITEM_TYPE.PET][itemID] and not checkedItems[RSConstants.ITEM_TYPE.TOY][itemID] and not checkedItems[RSConstants.ITEM_TYPE.MOUNT][itemID] and not checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER][itemID] and not RSUtils.ContainsKeyValue(checkedItems, customGroupKeys, itemID)) then
+						checkedItems[RSConstants.ITEM_TYPE.UNKNOWN][itemID] = true
 					end
 				end
 			end
@@ -1169,20 +1363,28 @@ local function UpdateEntitiesCollections(callback, routineTextOutput, manualScan
 	ResetEntitiesCollectionsLoot(manualScan)
 	
 	local checkedItems = {}
+	checkedItems[RSConstants.ITEM_TYPE.UNKNOWN] = {}
 	checkedItems[RSConstants.ITEM_TYPE.APPEARANCE] = {}
 	checkedItems[RSConstants.ITEM_TYPE.TOY] = {}
 	checkedItems[RSConstants.ITEM_TYPE.PET] = {}
 	checkedItems[RSConstants.ITEM_TYPE.MOUNT] = {}
 	checkedItems[RSConstants.ITEM_TYPE.DRAKEWATCHER] = {}
+
+	local customGroupKeys = {}
+	for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+		local itemTypeCustomKey = string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)
+		tinsert(customGroupKeys, itemTypeCustomKey)
+		checkedItems[itemTypeCustomKey] = {}
+	end
 	
 	local routines = {}
 	
 	-- Sync npc loot
-	CheckUpdateCollectibles(checkedItems, RSNpcDB.GetAllInteralNpcLoot, RSConstants.ITEM_SOURCE.NPC, routines, routineTextOutput)
+	CheckUpdateCollectibles(checkedItems, customGroupKeys, RSNpcDB.GetAllInteralNpcLoot, RSConstants.ITEM_SOURCE.NPC, routines, routineTextOutput)
 	RSLogger:PrintDebugMessage("UpdateEntitiesCollections. Actualizada la lista de collecionables de NPCs no conseguidos.")
 	
 	-- Sync container loot
-	CheckUpdateCollectibles(checkedItems, RSContainerDB.GetAllInteralContainerLoot, RSConstants.ITEM_SOURCE.CONTAINER, routines, routineTextOutput)
+	CheckUpdateCollectibles(checkedItems, customGroupKeys, RSContainerDB.GetAllInteralContainerLoot, RSConstants.ITEM_SOURCE.CONTAINER, routines, routineTextOutput)
 	RSLogger:PrintDebugMessage("UpdateEntitiesCollections. Actualizada la lista de collecionables de contenedores no conseguidos.")
 		
 	-- Launch all the routines in order
@@ -1284,6 +1486,13 @@ function RSCollectionsDB.ApplyFilters(filters, callback)
 					removeFilter = true
 				elseif (filters[RSConstants.EXPLORER_FILTER_DROP_DRAKEWATCHER] and collectionsLoot[npcID] and RSUtils.GetTableLength(collectionsLoot[npcID][RSConstants.ITEM_TYPE.DRAKEWATCHER]) > 0) then
 					removeFilter = true
+				else
+					for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+						local droppedGroupKey = string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)				
+						if (filters[string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)] and collectionsLoot[npcID] and RSUtils.GetTableLength(collectionsLoot[npcID][droppedGroupKey]) > 0) then
+							removeFilter = true
+						end
+					end
 				end
 				
 				if (removeFilter) then
@@ -1324,6 +1533,13 @@ function RSCollectionsDB.ApplyFilters(filters, callback)
 					removeFilter = true
 				elseif (filters[RSConstants.EXPLORER_FILTER_DROP_DRAKEWATCHER] and collectionsLoot[containerID] and RSUtils.GetTableLength(collectionsLoot[containerID][RSConstants.ITEM_TYPE.DRAKEWATCHER]) > 0) then
 					removeFilter = true
+				else
+					for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+						local droppedGroupKey = string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)				
+						if (filters[string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)] and collectionsLoot[containerID] and RSUtils.GetTableLength(collectionsLoot[containerID][droppedGroupKey]) > 0) then
+							removeFilter = true
+						end
+					end
 				end
 				
 				if (removeFilter) then
@@ -1383,6 +1599,14 @@ function RSCollectionsDB.GetEntityCollectionsLoot(entityID, type)
 			-- If drakewatcher manuscripts
 			if (RSConfigDB.IsShowingMissingDrakewatcher() and collectionsLoot[entityID][RSConstants.ITEM_TYPE.DRAKEWATCHER]) then
 				items = RSUtils.JoinTables(items, collectionsLoot[entityID][RSConstants.ITEM_TYPE.DRAKEWATCHER])
+			end
+			
+			-- If custom items
+			for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+				local droppedGroupKey = string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)
+				if (RSConfigDB.IsShowingCustomItems(groupKey) and collectionsLoot[entityID][droppedGroupKey]) then
+					items = RSUtils.JoinTables(items, collectionsLoot[entityID][droppedGroupKey])
+				end
 			end
 		end
 	end

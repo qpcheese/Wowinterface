@@ -268,8 +268,7 @@ L["S_OPTIONS_PATHLINE"] = "路线"
 L["S_OPTIONS_QUEST_EMISSARY"] = "使者任务信息"
 L["S_OPTIONS_QUESTBLACKLIST"] = "任务黑名单"
 L["S_OPTIONS_RESET"] = "重置"
---[[Translation missing --]]
-L["S_OPTIONS_SHOW_FILTER_BUTTON"] = "Show Filter Button"
+L["S_OPTIONS_SHOW_FILTER_BUTTON"] = "显示过滤按钮"
 L["S_OPTIONS_SHOW_MINIMIZE_BUTTON"] = "显示最小化按钮"
 --[[Translation missing --]]
 L["S_OPTIONS_SHOW_SORT_BUTTON"] = "Show Sort Button"

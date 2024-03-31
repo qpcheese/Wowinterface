@@ -40,7 +40,6 @@ local L = app.L;
 	L.SOURCES_DESC = "显示这个东西的来源。\n\n特别是特定商人/NPC，任务，战斗，等等。";
 	L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。";
 	L.ARTIFACT_INTRO_REWARD = "完成该神器的介绍任务后获得。";
-	L.FACTION_SPECIFIC_REP = "并非所有声望都可以在单个角色上查看。例：联盟玩家无法看到战歌骑手，部落玩家无法查看银翼哨兵。";
 	L.VISIT_FLIGHT_MASTER = "访问飞行管理员缓存。";
 	L.FLIGHT_PATHS_DESC = "当你与每个大陆上的飞行管理员交谈时会缓存飞行路径。\n  - Crieve";
 	L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中启用此设置，则可以在整个帐号范围内收集追随者。\n\n必须通过 "..SHIFT_KEY_TEXT.."点击标题手动刷新插件才能检测到这一点。";
@@ -78,10 +77,12 @@ local L = app.L;
 	L.AUCTIONATOR_GROUPS = "基于群组的搜索只支持使用 Auctionator。";
 	L.TSM4_ERROR = "TSM4 尚未与 ATT 兼容。如果你知道如何像我们以前在 TSM3 中那样创建预设，请在 Discord 上告诉我！";
 	L.QUEST_MAY_BE_REMOVED = "获取信息失败。这个任务可能已从游戏中移除。";
-	L.MINUMUM_STANDING = "需要至少";
-	L._WITH_ = " 和 ";
-	L.MAXIMUM_STANDING = "需要站立低于";
-	L.MIN_MAX_STANDING = "需要站在";
+	
+	L.FACTION_SPECIFIC_REP = "并非所有声望都可以在单个角色上查看。例：联盟玩家无法看到战歌骑手，部落玩家无法查看银翼哨兵。";
+	L.MINUMUM_STANDING_WITH_FACTION = "需要至少 %s 和 %s.";
+	L.MAXIMUM_STANDING_WITH_FACTION = "需要站立低于 %s 和 %s.";
+	L.MIN_MAX_STANDING_WITH_FACTION = "需要站在 %s 和 %s 和 %s.";
+	
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
 	--TODO: L.ALIVE = "Alive";
@@ -89,7 +90,6 @@ local L = app.L;
 	--TODO: L.OBJECT_TYPE = "Object Type";
 	--TODO: L.OBJECTIVES = "Objectives";
 	--TODO: L.QUEST_GIVERS = "Quest Givers";
-	L._AND = " 和";
 	L.DURING_WQ_ONLY = "可以在世界任务激活时完成";
 	L.COMPLETED_DAILY = "可以每天完成";
 	L.COMPLETED_WEEKLY = "可以每周完成";
@@ -513,8 +513,6 @@ local L = app.L;
 		L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成*|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";	-- Acquired the colors and icon from CanIMogIt.
 		--TODO: L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.KNOWN_ON_CHARACTER = "|T" .. app.asset("known") .. ":0|t |cff15abff当前角色已习得|r";
-		L.UNKNOWN_ON_CHARACTER = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未习得|r";
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff货币|r";
 
 local a = L.ABBREVIATIONS;
@@ -555,12 +553,6 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-520] = "资料片前夕",											-- Expansion Pre-Launch
 		[-543] = "军团入侵",											-- Legion Invasions
-	-- Cataclysm PvP Seasons
-		[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
-		[-656] = "荣誉装备冷酷赛季",									-- Honor Gear Ruthless (S10)
-		[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
-		[-654] = "荣誉装备灾变赛季",									-- Honor Gear Cataclysmic (S11)
-		[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
 		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)

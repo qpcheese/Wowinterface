@@ -1,5 +1,5 @@
 local Addon = (...)
-local Version = "10.2.5"
+local Version = "10.2.6"
 BINDING_HEADER_STACKPACK = Addon
 Stackpack = { Version=Version }
 

@@ -1,12 +1,12 @@
-tag 766f6e98006bdca9bf06c3907d2a1492790ddf75 10.2.5
+tag 7819f44ed3942eb0d380392591fdfa87e664684c 10.2.6
 Author:	Rubio <RubioTwitch@curseforge>
-Date:	Wed Jan 17 10:15:29 2024 -0600
+Date:	Wed Mar 20 15:48:39 2024 -0500
 
-Release 10.2.5
+Release 10.2.6 for DF
 
-commit 4a23ebfa18a1f696b4c76de831e4a7e809767a43
+commit e6e5be9ce94a9fe62701d095a2a54762a66c56d6
 Author: Rubio <RubioTwitch@curseforge>
-Date:   Wed Jan 17 10:14:47 2024 -0600
+Date:   Wed Mar 20 15:48:05 2024 -0500
 
-    Bump TOC and version to 10.2.5
+    Bump TOC and version to 10.2.6
 

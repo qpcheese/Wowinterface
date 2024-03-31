@@ -1,17 +1,22 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Qpfromage - Living Flame"] = "Qpfromage - Living Flame",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Qpfromage|Living Flame|Horde|30|MAGE", -- [1]
+				"Qpfromage|Living Flame|Horde|38|MAGE", -- [1]
 			},
 		},
 	},
+	["profileKeys"] = {
+		["Qpfromage - Living Flame"] = "Qpfromage - Living Flame",
+	},
 	["profiles"] = {
 		["Qpfromage - Living Flame"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Treblinka|Living Flame|Horde", -- [1]
+				},
+			},
 		},
 	},
 }

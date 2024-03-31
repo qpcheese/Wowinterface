@@ -123,6 +123,12 @@ local function PopulateContinentDropDown(mainFrame, continentDropDown)
 					AddContinentDropDownValue(npcID, npcInfo, continentDropDownValuesNotSorted)
 				elseif (filters[RSConstants.EXPLORER_FILTER_WITHOUT_COLLECTIBLES] and (not collectionsLoot or not collectionsLoot[npcID])) then
 					AddContinentDropDownValue(npcID, npcInfo, continentDropDownValuesNotSorted)
+				else
+					for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do	
+						if (filters[string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)] and collectionsLoot and collectionsLoot[npcID] and RSUtils.GetTableLength(collectionsLoot[npcID][string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)]) > 0) then
+							AddContinentDropDownValue(npcID, npcInfo, continentDropDownValuesNotSorted)
+						end
+					end
 				end
 			end
 		end
@@ -159,11 +165,12 @@ local function PopulateContinentDropDown(mainFrame, continentDropDown)
 	-- Tries to select the previous continent/map
 	local previousContinentID = RSConfigDB.GetExplorerContinenMapID()
 	local previousMapID = RSConfigDB.GetExplorerMapID()
-	
+
 	if (previousContinentID and previousMapID and RSUtils.Contains(continentsSorted, previousContinentID) and RSUtils.Contains(currentContinentDropDownValues[previousContinentID], previousMapID)) then
 		LibDD:UIDropDownMenu_SetText(continentDropDown, RSMap.GetMapName(previousMapID))
 		mainFrame:ShowContentPanels()
 		mainFrame.ScanRequired:Hide()
+		mainFrame.CustomLoot:Hide()
 	-- Otherwise select the first map available
 	elseif (RSUtils.GetTableLength(continentsSorted) > 0) then
    		for _, continentID in ipairs(continentsSorted) do
@@ -176,6 +183,7 @@ local function PopulateContinentDropDown(mainFrame, continentDropDown)
 	   	
 		mainFrame:ShowContentPanels()
 		mainFrame.ScanRequired:Hide()
+		mainFrame.CustomLoot:Hide()
 	else
 		LibDD:UIDropDownMenu_SetText(continentDropDown, AL["EXPLORER_NO_RESULTS"])
 		mainFrame:HideContentPanels()
@@ -189,7 +197,7 @@ end
 local function FilterDropDownMenu_Initialize(self)
 	local mainFrame = self.mainFrame
 	local dropDown = self.FilterDropDown
-	local continentDropDown = self.ContinentDropDown
+	
 	LibDD:UIDropDownMenu_SetWidth(dropDown, 100)
 	LibDD:UIDropDownMenu_Initialize(dropDown, function(self, level, menuList)
 		if ((level or 1) == 1) then
@@ -233,6 +241,12 @@ local function FilterDropDownMenu_Initialize(self)
   					RSConfigDB.SetShowFiltered(filtered)
   				elseif (filterID == RSConstants.EXPLORER_FILTER_WITHOUT_COLLECTIBLES) then
   					RSConfigDB.SetShowWithoutCollectibles(filtered)
+  				else
+		  			for groupKey, _ in pairs (RSCollectionsDB.GetItemGroups()) do
+		  				if (filterID == string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)) then
+	  						RSConfigDB.SetSearchingCustom(groupKey, filtered)
+	  					end
+	  				end
   				end
 	    			
 				-- Refresh
@@ -279,6 +293,18 @@ local function FilterDropDownMenu_Initialize(self)
 	  			info.func = refreshList
 	  			info.keepShownOnClick = true;
 	  			LibDD:UIDropDownMenu_AddButton(info, level)
+	  			
+	  			for groupKey, groupName in pairs (RSCollectionsDB.GetItemGroups()) do
+	  				if (RSCollectionsDB.HasGroupItems(groupKey)) then
+			  			info = LibDD:UIDropDownMenu_CreateInfo()
+			  			info.text = string.format(AL["EXPLORER_FILTER_CUSTOM"], groupName)
+			  			info.arg1 = string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)
+			  			info.checked = filters[string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)]
+			  			info.func = refreshList
+			  			info.keepShownOnClick = true;
+			  			LibDD:UIDropDownMenu_AddButton(info, level)
+			  		end
+		  		end
 	  			
 --	  			info = LibDD:UIDropDownMenu_CreateInfo()
 --	  			info.text = AL["EXPLORER_FILTER_ACHIEVEMENT"]
@@ -411,6 +437,7 @@ function RSExplorerFilters:RestartScanning(self, button)
 	mainFrame.ScanRequired.StartScanningButton:SetText(AL["EXPLORER_START_SCAN"])
 	mainFrame.ScanRequired.StartScanningButton:Show()
 	mainFrame.ScanRequired:Show()
+	mainFrame:ShowCustomLootPanels()
 	mainFrame:HideContentPanels()
 end
 
@@ -476,6 +503,11 @@ function RSExplorerRareList_Sort(self)
 			if (raresListInfo[npcID2].hasMissingAppearance) then return false end
 		end
 				
+		if (raresListInfo[npcID1].hasMissingCustom ~= raresListInfo[npcID2].hasMissingCustom) then
+			if (raresListInfo[npcID1].hasMissingCustom) then return true end
+			if (raresListInfo[npcID2].hasMissingCustom) then return false end
+		end
+				
 		if (raresListInfo[npcID1].dead ~= raresListInfo[npcID2].dead) then
 			if (raresListInfo[npcID1].dead) then return false end
 			if (raresListInfo[npcID2].dead) then return true end
@@ -498,6 +530,10 @@ function RSExplorerRareList_Sort(self)
 end
 
 function RSExplorerRareList:Initialize(mainFrame)
+	if (mainFrame.initialized) then
+		return
+	end
+	
 	self.mainFrame = mainFrame
 	local _, _, classIndex = UnitClass("player");
 	self.classIndex = classIndex
@@ -551,6 +587,16 @@ function RSExplorerRareList:AddFilteredRareToList(npcID, npcInfo, npcName)
 		else
 			self.raresListInfo[npcID].hasMissingDrakewatcher = false
 		end
+		
+		-- for custom items we show the texture only if they user is not filtering for an specific group
+		for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do	
+			if (RSUtils.GetTableLength(collectionsLoot[RSConstants.ITEM_SOURCE.NPC][npcID][string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)]) > 0 and RSConfigDB.IsSearchingCustom(groupKey)) then
+				self.raresListInfo[npcID].hasMissingCustom = true
+				break
+			else
+				self.raresListInfo[npcID].hasMissingCustom = false
+			end
+		end
 	end
 end
 
@@ -598,6 +644,12 @@ function RSExplorerRareList:UpdateRareList()
 								
 					if (filters[RSConstants.EXPLORER_FILTER_DROP_DRAKEWATCHER] and collectionsLoot and collectionsLoot[npcID] and RSUtils.GetTableLength(collectionsLoot[npcID][RSConstants.ITEM_TYPE.DRAKEWATCHER]) > 0) then
 						self:AddFilteredRareToList(npcID, npcInfo, npcName)
+					end
+					
+					for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do	
+						if (filters[string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)] and collectionsLoot and collectionsLoot[npcID] and RSUtils.GetTableLength(collectionsLoot[npcID][string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey)]) > 0) then
+							self:AddFilteredRareToList(npcID, npcInfo, npcName)
+						end
 					end
 								
 					if (filters[RSConstants.EXPLORER_FILTER_PART_ACHIEVEMENT] and RSAchievementDB.GetNotCompletedAchievementLink(npcID, self.mapID)) then
@@ -665,6 +717,7 @@ function RSExplorerRareList:UpdateData()
 			activeTextures = ToggleButtonTexture(activeTextures, button.RareNPC.ToyTexture, self.raresListInfo[npcID].hasMissingToy)
 			activeTextures = ToggleButtonTexture(activeTextures, button.RareNPC.DrakewatcherTexture, self.raresListInfo[npcID].hasMissingDrakewatcher)
 			activeTextures = ToggleButtonTexture(activeTextures, button.RareNPC.AppearanceTexture, self.raresListInfo[npcID].hasMissingAppearance)
+			activeTextures = ToggleButtonTexture(activeTextures, button.RareNPC.CustomTexture, self.raresListInfo[npcID].hasMissingCustom)
 			
 			if (self.selectedNpcId and self.selectedNpcId == npcID) then
 				button.RareNPC.Selected:Show()
@@ -691,13 +744,15 @@ function RSExplorerRareList:UpdateData()
 				button.RareNPC.ToyTexture:SetDesaturated(1)
 				button.RareNPC.DrakewatcherTexture:SetDesaturated(1)
 				button.RareNPC.AppearanceTexture:SetDesaturated(1)
+				button.RareNPC.CustomTexture:SetDesaturated(1)
 			else
 				button.RareNPC.PortraitFrame.Portrait:SetDesaturated(nil)
 				button.RareNPC.MountTexture:SetDesaturated(nil)
 				button.RareNPC.PetTexture:SetDesaturated(nil)
 				button.RareNPC.ToyTexture:SetDesaturated(nil)
+				button.RareNPC.DrakewatcherTexture:SetDesaturated(nil)
 				button.RareNPC.AppearanceTexture:SetDesaturated(nil)
-				button.RareNPC.AppearanceTexture:SetDesaturated(nil)
+				button.RareNPC.CustomTexture:SetDesaturated(nil)
 			end
 			
 			if (self.raresListInfo[npcID].custom) then
@@ -725,6 +780,13 @@ function RSExplorerRareList:UpdateData()
 end
 
 local function RSExplorerLoadMap(mapID, mapFrame)
+	-- Avoid refreshing if the map didn't change
+	if (mapFrame.mapID and mapFrame.mapID == mapID) then
+		return
+	end
+	
+	mapFrame.mapID = mapID
+	
 	-- Initialize variables
 	if (not mapFrame.detailLayerPool) then
 		mapFrame.detailLayerPool = CreateFramePool("FRAME", mapFrame, "RSMapCanvasDetailLayerTemplate");
@@ -804,7 +866,7 @@ function RSExplorerRareListButton_OnLeave(self)
 	tooltip:Hide()
 end
 
-function RSExplorerRareList:AddItems(parentFrame, itemType)
+function RSExplorerRareList:AddItems(parentFrame, itemType, customGroupKeys)
 	local mainFrame = self:GetParent()
 	
 	local collectionsLoot = RSCollectionsDB.GetAllEntitiesCollectionsLoot()[RSConstants.ITEM_SOURCE.NPC]
@@ -817,18 +879,29 @@ function RSExplorerRareList:AddItems(parentFrame, itemType)
 		end
 		
 	    if (RSUtils.GetTableLength(itemIDs) > 0) then
-	    	parentFrame.NoItems:Hide()
 			local xOffset = 0
-			local yOffset = itemType == RSConstants.ITEM_TYPE.APPEARANCE and 60 or -2
-			local numItemsRow = 0
+			local yOffset = -8
+			local numColumn = 0
 			local numRow = 0
-			local maxLines = 4
-			local maxItemsPerRow = 8
+			local maxLines = 0
+			local maxItemsPerRow
+    		if (itemType ~= RSConstants.ITEM_TYPE.APPEARANCE and not RSUtils.Contains(customGroupKeys, itemType)) then
+    			maxItemsPerRow = 3
+ 			else
+ 				maxLines = 4
+    			maxItemsPerRow = 7
+ 			end
+ 			
+	    	-- Custom settings reuse grid properties
+	    	if (RSUtils.Contains(customGroupKeys, itemType) and mainFrame.RareInfo.Custom.grid) then
+	    		xOffset, yOffset, numRow, numColumn, maxItemsPerRow = unpack(mainFrame.RareInfo.Custom.grid)
+	    	end
+    				
 	    	for _, itemID in ipairs(itemIDs) do
 	    		local _, _, _, _, icon, _, _ = GetItemInfoInstant(itemID)
 	    		local lootItem = mainFrame.lootItemsPool:Acquire();
 	    		
-	    		if (math.fmod(numItemsRow, maxItemsPerRow) == 0) then
+	    		if (math.fmod(numColumn, maxItemsPerRow) == 0) then
 	    			xOffset = xOffset + 10
 	    		else
 	    			xOffset = xOffset + lootItem:GetWidth() + 2
@@ -841,32 +914,35 @@ function RSExplorerRareList:AddItems(parentFrame, itemType)
 	    		lootItem.istoy = itemType == RSConstants.ITEM_TYPE.TOY
 	    		lootItem.isDrakewatcher = itemType == RSConstants.ITEM_TYPE.DRAKEWATCHER
 	    		lootItem.isAppearance = itemType == RSConstants.ITEM_TYPE.APPEARANCE
+	    		lootItem.isCustom = RSUtils.Contains(customGroupKeys, itemType)
 	    		
-	    		lootItem:SetPoint("LEFT", parentFrame, "LEFT", xOffset, yOffset)
+	    		lootItem:SetPoint("TOPLEFT", parentFrame, "TOPLEFT", xOffset, yOffset)
 	    		lootItem:Show()
 	    		
-	    		numItemsRow = numItemsRow + 1
+	    		numColumn = numColumn + 1
 	    		
-	    		if (math.fmod(numItemsRow, maxItemsPerRow) == 0) then
+	    		if (math.fmod(numColumn, maxItemsPerRow) == 0) then
     				numRow = numRow + 1
-    				if (numRow == maxLines) then
+    				if (numRow == maxLines) then	
     					break
     				end
     				
     				xOffset = 0
-    				numItemsRow = 0
-    				if (numRow > 1 and itemType ~= RSConstants.ITEM_TYPE.APPEARANCE) then
+    				numColumn = 0
+    				if (numRow > 1 and not lootItem.isAppearance and not lootItem.isCustom) then			
 		    			break
-		    		else	    			
+		    		else	
+		    			maxItemsPerRow = 8
 		    			yOffset = yOffset - lootItem:GetHeight() - 2 
 		    		end
     			end
 	    	end
-		else
-	    	parentFrame.NoItems:Show()
+ 			
+	    	-- Custom settings save current grid properties
+	    	if (RSUtils.Contains(customGroupKeys, itemType)) then
+	    		mainFrame.RareInfo.Custom.grid = { xOffset, yOffset, numRow, numColumn, maxItemsPerRow }
+	    	end
 		end
-	else
-    	parentFrame.NoItems:Show()
 	end
 end
 
@@ -922,10 +998,25 @@ function RSExplorerRareList:SelectNpc(npcID)
 	self:AddItems(mainFrame.RareInfo.Toys, RSConstants.ITEM_TYPE.TOY)
 	self:AddItems(mainFrame.RareInfo.Drakewatcher, RSConstants.ITEM_TYPE.DRAKEWATCHER)
 	self:AddItems(mainFrame.RareInfo.Appearances, RSConstants.ITEM_TYPE.APPEARANCE)
+	
+	-- Refresh internal loot grid
+	mainFrame.RareInfo.Custom.grid = nil
+	
+	-- With custom items take into account only if not filtered
+	local customGroupKeys = {}
+	for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+		if (RSConfigDB.IsSearchingCustom(groupKey)) then
+			tinsert(customGroupKeys, string.format(RSConstants.ITEM_TYPE.CUSTOM, groupKey))
+		end
+	end
+	
+	for _, customGroupKey in ipairs(customGroupKeys) do
+		self:AddItems(mainFrame.RareInfo.Custom, customGroupKey, customGroupKeys)
+	end
 end
 
 -----------------------------------------------------
--- Loot items
+-- Rare loot
 -----------------------------------------------------
 
 function RSExplorerRareInfoLootItem_OnEnter(self)
@@ -989,9 +1080,14 @@ end
 RSExplorerDetailMap = { };
 
 function RSExplorerDetailMap:OnLoad()
-	self.detailTilePool = CreateTexturePool(self, "BACKGROUND", -7, "RSMapCanvasDetailTileTemplate");
-	self.overlayTexturePool = CreateTexturePool(self, "ARTWORK", 0, "RSMapCanvasDetailTileTemplate");
+	self.detailTilePool = CreateTexturePool(self, "BACKGROUND", -7);
+	self.overlayTexturePool = CreateTexturePool(self, "ARTWORK", 0);
 	self.textureLoadGroup = CreateFromMixins(TextureLoadingGroupMixin);
+	self.defailedTextureLoadGroup = CreateFromMixins(TextureLoadingGroupMixin);
+end
+
+function RSExplorerDetailMap:IsFullyLoaded()
+	return not self.isWaitingForLoad;
 end
 
 function RSExplorerDetailMap:SetMapAndLayer(mapID, layerIndex, mapFrame)
@@ -1008,7 +1104,9 @@ function RSExplorerDetailMap:RefreshDetailTiles(mapFrame)
 	self.detailTilePool:ReleaseAll();
 	self.overlayTexturePool:ReleaseAll();
 	self.textureLoadGroup:Reset();
+	self.defailedTextureLoadGroup:Reset();
 	self.isWaitingForLoad = true;
+	self:SetAlpha(0);
 	
 	local layers = C_Map.GetMapArtLayers(self.mapID);
 	local layerInfo = layers[self.layerIndex];
@@ -1050,7 +1148,6 @@ function RSExplorerDetailMap:RefreshDetailTiles(mapFrame)
 	end
 	
 	-- Add explored overlay
-	self.textureLoadGroup:Reset();
 	if (exploredMapTextures) then
 		local TILE_SIZE_WIDTH = layerInfo.tileWidth;
 		local TILE_SIZE_HEIGHT = layerInfo.tileHeight;
@@ -1074,7 +1171,7 @@ function RSExplorerDetailMap:RefreshDetailTiles(mapFrame)
 				end
 				for k = 1, numTexturesWide do
 					local texture = self.overlayTexturePool:Acquire();
-					self.textureLoadGroup:AddTexture(texture);
+					self.defailedTextureLoadGroup:AddTexture(texture);
 					if ( k < numTexturesWide ) then
 						texturePixelWidth = TILE_SIZE_WIDTH;
 						textureFileWidth = TILE_SIZE_WIDTH;
@@ -1106,20 +1203,20 @@ function RSExplorerDetailMap:RefreshDetailTiles(mapFrame)
 		local scaleFactor = mapFrame:GetWidth() / mapWidth
 		self:SetScale(scaleFactor)
 	end
-	
-	self:RefreshAlpha()
 end
 
 
 function RSExplorerDetailMap:OnUpdate()
-	if self.isWaitingForLoad and self.textureLoadGroup:IsFullyLoaded() then
+	if (self.isWaitingForLoad and self.textureLoadGroup:IsFullyLoaded() and self.defailedTextureLoadGroup:IsFullyLoaded()) then
 		self.isWaitingForLoad = nil;
 		self:RefreshAlpha();
 		self.textureLoadGroup:Reset();
+		self.defailedTextureLoadGroup:Reset();
 	end
 end
+
 function RSExplorerDetailMap:RefreshAlpha()
-	if (not self.isWaitingForLoad) then
+	if (self:IsFullyLoaded()) then
 		self:SetAlpha(1);
 	else
 		self:SetAlpha(0);
@@ -1133,6 +1230,10 @@ end
 RSExplorerControl = {}
 
 function RSExplorerControl:Initialize(mainFrame)
+	if (mainFrame.initialized) then
+		return
+	end
+	
 	self.mainFrame = mainFrame
 	self.ApplyFiltersButton:SetText(AL["EXPLORER_FILTERING"])
 	self.ApplyFiltersButton.tooltip = string.format(AL["EXPLORER_FILTERING_DESC"], AL["EXPLORER_FILTERS"], AL["EXPLORER_FILTER_COLLECTIONS"])
@@ -1153,13 +1254,15 @@ end
 
 function RSExplorerControl:StartScanning(self, button)
 	if (self:IsShown()) then
+		local mainFrame = self:GetParent():GetParent()
+		
 		self:Hide()
 		self:GetParent().ScanProcessText:Show()
+		mainFrame:HideCustomLootPanels()
 		
 		local manualScan = self:GetParent().ScanRequiredText:GetText() == AL["EXPLORER_SCAN_MANUAL"]
 		
 		RSCollectionsDB.ApplyCollectionsEntitiesFilters(function()
-			local mainFrame = self:GetParent():GetParent()
 	    	self:GetParent():Hide()
 			self:GetParent().ScanProcessText:Hide()
     		mainFrame.RareInfo:Show()
@@ -1184,6 +1287,375 @@ function RSExplorerControl:ApplyFilters(self, button)
 end
 
 -----------------------------------------------------
+-- Custom loot panel
+-----------------------------------------------------
+
+RSExplorerLoot = { };
+
+local GROUP_BUTTON_HEIGHT = 20;
+
+function RSExplorerGroupList_GetButtonHeight()
+	return GROUP_BUTTON_HEIGHT;
+end
+
+function RSExplorerGroupList_GetTopButton(self, offset)
+	local buttonHeight = self.GroupList.listScroll.buttonHeight;
+	local groupList = self.groupList;
+	local totalHeight = 0;
+	for i = 1, #raresList do
+		local height = GROUP_BUTTON_HEIGHT;
+		totalHeight = totalHeight + height;
+		if (totalHeight > offset) then
+			return i - 1, height + offset - totalHeight;
+		end
+	end
+	
+	--We're scrolled completely off the bottom
+	return #self.groupList, 0;
+end
+
+function RSExplorerGroupListButton_OnClick(self, button)
+	local customLoot = self:GetParent():GetParent():GetParent():GetParent():GetParent()
+	if (button == "LeftButton") then
+		customLoot:SelectGroup(self.groupKey, self.groupName)
+	end
+end
+
+local function LootGroupDropDown_Initialize(dropDown)
+	local itemGroups = RSCollectionsDB.GetItemGroups()
+
+	LibDD:UIDropDownMenu_Initialize(dropDown, function(self, level, menuList)
+    	for key, name in pairs(itemGroups) do
+    		if (continentID == menuList) then
+				local info = LibDD:UIDropDownMenu_CreateInfo()
+	  			info.text = name
+	  			info.arg1 = name
+	  			info.arg2 = key
+	  			info.func = function(self, name, key)
+	  				dropDown.selectedGroupKey = key
+					LibDD:UIDropDownMenu_SetText(dropDown, name)
+	  			end
+  				info.notCheckable = true
+	  			LibDD:UIDropDownMenu_AddButton(info)
+	  		end
+  		end
+ 	end)
+ 	
+ 	if (not dropDown.selectedGroupKey) then
+	 	for key, name in pairs (itemGroups) do
+			dropDown.selectedGroupKey = key
+			LibDD:UIDropDownMenu_SetText(dropDown, name)
+			break
+		end
+	end
+end
+
+function RSExplorerLoot:AddNewGroup(editbox)
+	local value = editbox:GetText()
+	if (value and strtrim(value) ~= '') then
+		local key = RSCollectionsDB.AddItemGroup(value)
+		if (key) then
+			editbox:GetParent().LootGroupDropDown.selectedGroupKey = key
+			LibDD:UIDropDownMenu_SetText(editbox:GetParent().LootGroupDropDown, value)
+			editbox:SetText("")
+			editbox:ClearFocus()
+			self:UpdateGroupList()
+		end
+	end
+end
+
+function RSExplorerLoot:EditGroupName(editbox)
+	local mainFrame = editbox:GetParent():GetParent()
+	local controlFrame = mainFrame.ControlFrame
+	local newGroupName = editbox:GetText()
+	
+	-- Change name
+	RSCollectionsDB.SetGroupName(self.GroupList.selectedGroup, newGroupName)
+	
+	-- Refresh group dropdown if selected
+	if (self.ControlFrame.LootGroupDropDown.selectedGroupKey == self.GroupList.selectedGroup) then
+		LootGroupDropDown_Initialize(controlFrame.LootGroupDropDown)
+		LibDD:UIDropDownMenu_SetText(controlFrame.LootGroupDropDown, newGroupName)
+	end
+	
+	self:UpdateGroupList()
+end
+
+function RSExplorerLoot:DeleteGroup(buttonFrame, button)
+	local mainFrame = self
+	local data = {
+		callback = function()
+			RSCollectionsDB.DeleteItemGroup(mainFrame.GroupList.selectedGroup)
+	
+			-- Selects the first item in the list
+			for key, name in pairs(RSCollectionsDB.GetItemGroups()) do
+				mainFrame.ControlFrame.LootGroupDropDown.selectedGroupKey = key
+				LibDD:UIDropDownMenu_SetText(mainFrame.ControlFrame.LootGroupDropDown, name)
+				break
+			end
+			
+			mainFrame.GroupInfo.lootItemsPool:ReleaseAll();
+			mainFrame:UpdateGroupList()
+		end
+	}
+	LibDialog:Spawn(RSConstants.DELETE_GROUP_CONFIRMATION, data)
+end
+
+function RSExplorerLoot:AddItems(editbox)
+	local value = editbox:GetText()
+	local groupKey = self.GroupList.selectedGroup
+	if (value and strtrim(value) ~= '') then
+		-- Validates string
+		if (string.match(value, "[^0-9,]")) then
+			LibDialog:Spawn(RSConstants.ITEM_LIST_VALIDATION_ERROR);
+			return
+		end
+		
+		-- Validates items
+		local errorIDs = {}
+		for itemIDstring in string.gmatch(value, '([^,]+)') do
+			local itemID = tonumber(itemIDstring)
+			local ret, _, itemType, itemSubType, itemEquipLoc, icon, classID, subclassID = pcall(GetItemInfoInstant, itemID)
+			if (not ret or not icon) then
+				tinsert(errorIDs, itemID)
+			else
+				RSCollectionsDB.AddGroupItem(groupKey, itemID)
+			end
+		end
+		
+		-- Prints wrong IDs
+		if (RSUtils.GetTableLength(errorIDs) > 0) then
+			LibDialog:Spawn(RSConstants.ITEM_LIST_WRONG_IDS_ERROR);
+			local errorIDsString
+			for _, itemID in ipairs(errorIDs) do
+				if (not errorIDsString) then
+					errorIDsString = itemID
+				else
+					errorIDsString = string.format("%s, %s", errorIDsString, itemID)
+				end
+			end
+			RSLogger:PrintMessage(string.format(AL["EXPLORER_CUSTOM_ITEMS_WRONG_IDS_CHAT"], errorIDsString))
+			return
+		end
+		
+		-- Clean inputfield
+		editbox:SetText("")
+		
+		-- Refresh info panel
+		self:Refresh()
+	end
+end
+
+function RSExplorerLoot:Refresh()
+	self:SelectGroup(self.GroupList.selectedGroup, self.GroupList.groupName)
+end
+
+function RSExplorerLoot:UpdateData()
+	local scrollFrame = self.GroupList.listScroll;
+	local offset = HybridScrollFrame_GetOffset(scrollFrame);
+	local buttons = scrollFrame.buttons;
+	local numButtons = #buttons;
+	local numGroups = #self.GroupList.groupList
+	
+	local skipped = 0
+	for i = 1, numButtons do
+		local button = buttons[i];
+		local index = offset + i + skipped; -- adjust index
+		
+		if (index <= numGroups) then
+			local groupName = self.GroupList.groupList[i]
+			local groupKey = RSCollectionsDB.GetGroupKeyByName(groupName)
+			button.Group.groupKey = groupKey
+			button.Group.groupName = groupName
+			button.Group.Name:SetText(groupName)
+			
+			if (self.GroupList.selectedGroup and self.GroupList.selectedGroup == groupKey) then
+				button.Group.Selected:Show()
+			else
+				button.Group.Selected:Hide()
+			end
+			
+			button:Show()
+		else
+			button:Hide()
+		end
+	end
+	
+	-- calculate the total height to pass to the HybridScrollFrame
+	local totalHeight = 0;
+	for i = 1, numGroups do
+		totalHeight = totalHeight + (GROUP_BUTTON_HEIGHT);
+	end
+
+	local displayedHeight = numButtons * scrollFrame.buttonHeight;
+	HybridScrollFrame_Update(scrollFrame, totalHeight, displayedHeight);
+end
+
+function RSExplorerLoot:SelectGroup(groupKey, groupName)
+	self.GroupList.selectedGroup = groupKey
+	self.GroupList.groupName = groupName
+	self:UpdateData()
+	self.GroupInfo.EditGroupName:SetText(groupName)
+	
+	-- Cleans current list
+	self.GroupInfo.lootItemsPool:ReleaseAll();
+		
+	-- Name
+	local itemIDs = RSCollectionsDB.GetGroupItems(groupKey)
+	if (RSUtils.GetTableLength(itemIDs) == 0) then
+		self.GroupInfo.NoItems:Show()
+	else
+		self.GroupInfo.NoItems:Hide()
+		
+		local xOffset = 0
+		local yOffset = -2
+		local numColumn = 0
+		local numRow = 0
+		local maxLines = 8
+		local maxItemsPerRow = 17
+    	for _, itemID in ipairs(itemIDs) do
+    		local _, _, _, _, icon, _, _ = GetItemInfoInstant(itemID)
+    		local lootItem = self.GroupInfo.lootItemsPool:Acquire();
+    		
+    		if (math.fmod(numColumn, maxItemsPerRow) ~= 0) then
+    			xOffset = xOffset + lootItem:GetWidth() + 2
+    		end
+    		
+    		lootItem.itemID = itemID
+    		lootItem.groupKey = groupKey
+    		lootItem.Icon:SetTexture(icon)
+    		lootItem:SetPoint("TOPLEFT", self.GroupInfo.ItemPanel, "TOPLEFT", xOffset, yOffset)
+    		lootItem:Show()
+    		
+    		numColumn = numColumn + 1
+    		
+    		if (math.fmod(numColumn, maxItemsPerRow) == 0) then
+				numRow = numRow + 1
+				if (numRow == maxLines) then
+					break
+				end
+				
+				xOffset = 0
+				numColumn = 0
+				yOffset = yOffset - lootItem:GetHeight() - 2
+			end
+    	end
+	end
+end
+
+function RSExplorerLoot:UpdateGroupList()
+	local groupValueList = {}
+	self.GroupList.selectedGroup = nil
+	
+	-- Load list
+	for key, name in pairs(RSCollectionsDB.GetItemGroups()) do
+		tinsert(groupValueList, name)
+	end
+	
+	local comparison = function(value1, value2)
+		-- Otherwise order by name
+		local strCmpResult = strcmputf8i(value1, value2);
+		if (strCmpResult ~= 0) then
+			return strCmpResult < 0;
+		end
+		
+		return false
+	end
+	
+	-- Sort
+	table.sort(groupValueList, comparison)
+	self.GroupList.groupList = groupValueList
+				
+	-- Scroll to top
+	HybridScrollFrame_ScrollToIndex(self.GroupList.listScroll, 1, RSExplorerGroupList_GetButtonHeight);
+	self:Show()	
+	self:UpdateData()
+	
+	-- Select first group	
+	if (not self.GroupList.selectedGroup and RSUtils.GetTableLength(groupValueList) > 0) then
+		self:SelectGroup(RSCollectionsDB.GetGroupKeyByName(groupValueList[1]), groupValueList[1])
+	end
+end
+
+function RSExplorerCustomLootItem_OnEnter(self)
+	local customLoot = self:GetParent():GetParent()
+	local tooltip = customLoot.mainFrame.Tooltip
+	local itemIcon = self
+	local item = Item:CreateFromItemID(self.itemID)
+	item:ContinueOnItemLoad(function()
+		tooltip:SetOwner(itemIcon, "BOTTOM_LEFT")
+		tooltip:SetHyperlink(item:GetItemLink())
+		
+		-- Adds extra information only for this tooltip
+		tooltip:AddLine(RSUtils.TextColor(string.format(AL["EXPLORER_CUSTOM_ITEMS_TOOLTIP_ID"], item:GetItemID()), "FFFF00"))
+		tooltip:AddLine(" ")
+		tooltip:AddLine("|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::256:256:0:96:0:32|t "..RSUtils.TextColor(AL["EXPLORER_CUSTOM_ITEMS_TOOLTIP_DROP"], "00FF00"))
+		
+		tooltip:Show()
+	end)
+end
+
+function RSExplorerCustomLootItem_OnLeave(self)
+	local customLoot = self:GetParent():GetParent()
+	local tooltip = customLoot.mainFrame.Tooltip
+	tooltip:Hide()
+end
+
+function RSExplorerCustomLootItem_OnClick(self, button)
+	local customLoot = self:GetParent():GetParent()
+	local itemIcon = self
+	
+	if (button == "LeftButton" and not IsAltKeyDown() and IsShiftKeyDown()) then
+		local item = Item:CreateFromItemID(itemIcon.itemID)
+		item:ContinueOnItemLoad(function()
+			ChatEdit_LinkItem(self.itemID, item:GetItemLink())
+		end)
+	elseif (button == "LeftButton" and IsAltKeyDown() and IsShiftKeyDown()) then
+		RSCollectionsDB.DeleteGroupItem(self.groupKey, itemIcon.itemID)
+		customLoot:Refresh()
+	end
+end
+
+function RSExplorerLoot:Initialize(mainFrame)
+	if (self.initialized) then
+		return
+	end
+	
+	self.initialized = true
+	self.mainFrame = mainFrame
+	self.ControlFrame.mainFrame = mainFrame
+	
+	-- Control panel
+	self.ControlFrame.LootGroupLabel:SetText(AL["EXPLORER_CUSTOM_ITEMS_GROUP"])
+	self.ControlFrame.LootGroupDropDown = LibDD:Create_UIDropDownMenu("LootGroupDropDown", self)
+	LibDD:UIDropDownMenu_SetWidth(self.ControlFrame.LootGroupDropDown, self.ControlFrame.LootGroupLabel:GetWidth())
+	self.ControlFrame.LootGroupDropDown:SetPoint("TOPLEFT", self.ControlFrame, -5, -15)
+	self.ControlFrame.LootNewGroupLabel:SetText(AL["EXPLORER_CUSTOM_ITEMS_ADD_GROUP"])
+	self.ControlFrame.LootGroupDropDown:SetScript("OnEnter", function(self) mainFrame:ShowTooltip(self, AL["EXPLORER_CUSTOM_ITEMS_GROUP_DESC"]) end)
+	self.ControlFrame.LootGroupDropDown:SetScript("OnLeave", function(self) mainFrame:HideTooltip(self) end)
+	self.ControlFrame.NewGroup.tooltip = AL["EXPLORER_CUSTOM_ITEMS_ADD_GROUP_DESC"]
+	LootGroupDropDown_Initialize(self.ControlFrame.LootGroupDropDown)
+	self.ControlFrame.ItemListLabel:SetText(AL["EXPLORER_CUSTOM_ITEMS_LIST"])
+	self.ControlFrame.ItemList.tooltip = AL["EXPLORER_CUSTOM_ITEMS_LIST_DESC"]
+	
+	-- Group info
+	self.GroupInfo.mainFrame = mainFrame
+	self.GroupInfo.DeleteGroup:SetText(AL["EXPLORER_CUSTOM_ITEMS_DELETE_GROUP"])
+	self.GroupInfo.EditGroupName.tooltip = AL["EXPLORER_CUSTOM_ITEMS_EDIT_GROUP"]
+	self.GroupInfo.NoItems:SetText(AL["EXPLORER_CUSTOM_ITEMS_GROUP_EMPTY"])
+	self.GroupInfo.lootItemsPool = CreateFramePool("Button", self.GroupInfo, "RSExplorerCustomLootItemTemplate");
+	
+	-- Group list
+	self.GroupList.update = function() self:UpdateData(); end;
+	self.GroupList.dynamic = function(offset) return RSExplorerGroupList_GetTopButton(self, offset)	end;
+	HybridScrollFrame_CreateButtons(self.GroupList.listScroll, "RSExplorerGroupListTemplate");
+	self:UpdateGroupList();
+	
+	-- Starts hidding it
+	mainFrame:HideCustomLootPanels()
+end
+
+-----------------------------------------------------
 -- Explorer main frame
 -----------------------------------------------------
 
@@ -1193,21 +1665,68 @@ function RSExplorerMixin:OnLoad()
 	self.lootItemsPool = CreateFramePool("Button", self.RareInfo, "RSExplorerRareInfoLootItemTemplate");
 	self.RareInfo.Mounts.Texture:SetTexture("Interface\\AddOns\\RareScanner\\Media\\Textures\\MountsCorner.blp")
 	self.RareInfo.Mounts.Texture:SetVertexColor(1,1,1,0.5)
-	self.RareInfo.Mounts.NoItems:SetText(AL["EXPLORER_NO_MISSING_MOUNTS"])
+	self.RareInfo.Mounts.Texture.tooltip = AL["EXPLORER_MOUNTS"]
 	self.RareInfo.Pets.Texture:SetTexture("Interface\\AddOns\\RareScanner\\Media\\Textures\\PetsCorner.blp")
 	self.RareInfo.Pets.Texture:SetVertexColor(1,1,1,0.5)
-	self.RareInfo.Pets.NoItems:SetText(AL["EXPLORER_NO_MISSING_PETS"])
+	self.RareInfo.Pets.Texture.tooltip = AL["EXPLORER_PETS"]
 	self.RareInfo.Toys.Texture:SetTexture("Interface\\AddOns\\RareScanner\\Media\\Textures\\ToysCorner.blp")
 	self.RareInfo.Toys.Texture:SetVertexColor(1,1,1,0.5)
-	self.RareInfo.Toys.NoItems:SetText(AL["EXPLORER_NO_MISSING_TOYS"])
+	self.RareInfo.Toys.Texture.tooltip = AL["EXPLORER_TOYS"]
 	self.RareInfo.Drakewatcher.Texture:SetTexture("Interface\\AddOns\\RareScanner\\Media\\Textures\\DrakewatcherCorner.blp")
 	self.RareInfo.Drakewatcher.Texture:SetVertexColor(1,1,1,0.5)
-	self.RareInfo.Drakewatcher.NoItems:SetText(AL["EXPLORER_NO_MISSING_DRAKEWATCHER"])
+	self.RareInfo.Drakewatcher.Texture.tooltip = AL["EXPLORER_DRAKEWATCHER"]
 	self.RareInfo.Appearances.Texture:SetTexture("Interface\\AddOns\\RareScanner\\Media\\Textures\\AppearancesCorner.blp")
 	self.RareInfo.Appearances.Texture:SetVertexColor(1,1,1,0.5)
-	self.RareInfo.Appearances.NoItems:SetText(AL["EXPLORER_NO_MISSING_APPEARANCES"])
+	self.RareInfo.Appearances.Texture.tooltip = AL["EXPLORER_APPEARANCES"]
+	self.RareInfo.Custom.Texture:SetTexture("Interface\\AddOns\\RareScanner\\Media\\Textures\\CustomCorner.blp")
+	self.RareInfo.Custom.Texture:SetVertexColor(1,1,1,0.5)
+	self.RareInfo.Custom.Texture.tooltip = AL["EXPLORER_CUSTOM"]
 	self:RegisterForDrag("LeftButton");
 	tinsert(UISpecialFrames, self:GetName());
+end
+
+function RSExplorerMixin:HideCustomLootPanels()
+	self.CustomLoot:Hide()
+	self.CustomLoot.background:Hide()
+	self.CustomLoot.background2:Hide()
+	self.CustomLoot.BaseFrameTopEdge:Hide()
+	self.CustomLoot.BaseFrameBottomEdge:Hide()
+	self.CustomLoot.BaseFrameLeftEdge:Hide()
+	self.CustomLoot.BaseFrameRightEdge:Hide()
+	self.CustomLoot.BaseFrameTopLeftCorner:Hide()
+	self.CustomLoot.BaseFrameTopRightCorner:Hide()
+	self.CustomLoot.BaseFrameBottomLeftCorner:Hide()
+	self.CustomLoot.BaseFrameBottomRightCorner:Hide()
+	self.CustomLoot.ControlFrame:Hide()
+	self.CustomLoot.ControlFrame.LootGroupDropDown:Hide()
+	self.CustomLoot.GroupList:Hide()
+	self.CustomLoot.GroupInfo:Hide()
+	
+	-- Move to the center
+	self.ScanRequired:SetPoint("TOPLEFT")
+	self.ScanRequired:SetPoint("TOPRIGHT")
+end
+
+function RSExplorerMixin:ShowCustomLootPanels()
+	self.CustomLoot:Show()
+	self.CustomLoot.background:Show()
+	self.CustomLoot.background2:Show()
+	self.CustomLoot.BaseFrameTopEdge:Show()
+	self.CustomLoot.BaseFrameBottomEdge:Show()
+	self.CustomLoot.BaseFrameLeftEdge:Show()
+	self.CustomLoot.BaseFrameRightEdge:Show()
+	self.CustomLoot.BaseFrameTopLeftCorner:Show()
+	self.CustomLoot.BaseFrameTopRightCorner:Show()
+	self.CustomLoot.BaseFrameBottomLeftCorner:Show()
+	self.CustomLoot.BaseFrameBottomRightCorner:Show()
+	self.CustomLoot.ControlFrame:Show()
+	self.CustomLoot.ControlFrame.LootGroupDropDown:Show()
+	self.CustomLoot.GroupList:Show()
+	self.CustomLoot.GroupInfo:Show()
+	
+	-- Move to the bottom
+	local pointte, relativeTote, relativePointte, xOfste, yOfste = self.ScanRequired:GetPoint()
+	self.ScanRequired:SetPoint(pointte, relativeTote, relativePointte, xOfste, yOfste - 300)
 end
 
 function RSExplorerMixin:HideContentPanels()
@@ -1240,27 +1759,28 @@ function RSExplorerMixin:Initialize()
 	filters[RSConstants.EXPLORER_FILTER_FILTERED] = RSConfigDB.IsShowFiltered()
 	filters[RSConstants.EXPLORER_FILTER_WITHOUT_COLLECTIBLES] = RSConfigDB.IsShowWithoutCollectibles()
 	
+	for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+		filters[string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)] = RSConfigDB.IsSearchingCustom(groupKey)
+	end
+	
 	self.Filters:Initialize(self);
 	self.RareNPCList:Initialize(self);
 	self.Control:Initialize(self);
+	self.CustomLoot:Initialize(self);
 	self.initialized = true
 end
 
 function RSExplorerMixin:OnShow()
-    -- check if there is a new database and the whole scan should be done
-    if (not RSCollectionsDB.IsCollectionsScanDoneWithCurrentVersion()) then
+    -- check if there is a new database and the whole scan should be done or if only the current class is missing in the scan
+    if (not RSCollectionsDB.IsCollectionsScanDoneWithCurrentVersion() or not RSCollectionsDB.IsCollectionsScanByClassDone()) then
     	self.ScanRequired.ScanRequiredText:SetText(AL["EXPLORER_SCAN_REQUIRED"])
     	self.ScanRequired.StartScanningButton:SetText(AL["EXPLORER_START_SCAN"])
-    	self.ScanRequired.StartScanningButton:Show()
+    	self.ScanRequired.StartScanningButton:Show()		
+    	self.CustomLoot:Show()
     	self.ScanRequired:Show()
     	self:HideContentPanels()
-    -- check if only the current class is missing in the scan
-    elseif (not RSCollectionsDB.IsCollectionsScanByClassDone()) then
-    	self.ScanRequired.ScanRequiredText:SetText(AL["EXPLORER_SCAN_CLASS_REQUIRED"])
-    	self.ScanRequired.StartScanningButton:SetText(AL["EXPLORER_START_SCAN"])
-    	self.ScanRequired.StartScanningButton:Show()
-    	self.ScanRequired:Show()
-    	self:HideContentPanels()
+		self.CustomLoot:Initialize(self);
+    	self:ShowCustomLootPanels()
     elseif (not self.initialized) then
 		self:Initialize()
 	end
@@ -1279,14 +1799,18 @@ function RSExplorerMixin:Refresh()
 	end
 end
 
-function RSExplorerMixin:ShowTooltip(self, message)
-	local tooltip = self:GetParent().mainFrame.Tooltip
-	tooltip:SetOwner(self, "ANCHOR_CURSOR")
-	tooltip:AddLine(self.tooltip, 1, 1, 1, true)
-	tooltip:Show()
+function RSExplorerMixin:ShowTooltip(frame, message)
+	if (frame.tooltip or message) then
+		local tooltip = self.Tooltip
+		tooltip:SetOwner(frame, "ANCHOR_BOTTOM")
+		tooltip:AddLine(message or frame.tooltip, 1, 1, 1, true)
+		tooltip:Show()
+	end
 end
 
-function RSExplorerMixin:HideTooltip(self)
-	local tooltip = self:GetParent().mainFrame.Tooltip
-	tooltip:Hide()
+function RSExplorerMixin:HideTooltip(frame)
+	if (frame.tooltip or message) then
+		local tooltip = self.Tooltip
+		tooltip:Hide()
+	end
 end

@@ -127,7 +127,11 @@ end
 -- Options tab: Display
 -----------------------------------------------------------------------
 
+local customLine = "custom_%s_line"
+
 function RSLootOptions.GetLootOptions()	
+	local customItemsPosition = 8
+	
 	if (not options) then
 		private.loot_toggle_all = true
 		private.loot_main_category_ID = nil
@@ -342,7 +346,7 @@ function RSLootOptions.GetLootOptions()
 							disabled = function() return (not RSConfigDB.IsFilteringByExplorerResults()) end,
 						},
 						open_explorer = {
-							order = 8,
+							order = RSUtils.GetTableLength(RSCollectionsDB.GetItemGroups()) + customItemsPosition,
 							name = AL["LOOT_EXPLORER_OPEN"],
 							desc = AL["LOOT_EXPLORER_OPEN"],
 							type = "execute",
@@ -352,12 +356,12 @@ function RSLootOptions.GetLootOptions()
 							width = "normal",
 						},
 						separator_reset = {
-							order = 9,
+							order = RSUtils.GetTableLength(RSCollectionsDB.GetItemGroups()) + customItemsPosition + 1,
 							type = "header",
 							name = AL["LOOT_RESET"],
 						},
 						reset = {
-							order = 10,
+							order = RSUtils.GetTableLength(RSCollectionsDB.GetItemGroups()) + customItemsPosition + 2,
 							name = AL["LOOT_RESET"],
 							desc = AL["LOOT_RESET_DESC"],
 							type = "execute",
@@ -369,7 +373,7 @@ function RSLootOptions.GetLootOptions()
 						},
 						category_filters = {
 							type = "group",
-							order = 11,
+							order = RSUtils.GetTableLength(RSCollectionsDB.GetItemGroups()) + customItemsPosition + 3,
 							name = AL["LOOT_CATEGORY_FILTERS"],
 							handler = RareScanner,
 							desc = AL["LOOT_CATEGORY_FILTERS_DESC"],
@@ -440,7 +444,7 @@ function RSLootOptions.GetLootOptions()
 						},
 						individual = {
 							type = "group",
-							order = 12,
+							order = RSUtils.GetTableLength(RSCollectionsDB.GetItemGroups()) + customItemsPosition + 4,
 							name = AL["LOOT_INDIVIDUAL_FILTERS"],
 							handler = RareScanner,
 							desc = AL["LOOT_INDIVIDUAL_FILTERS_DESC"],
@@ -476,7 +480,7 @@ function RSLootOptions.GetLootOptions()
 						},
 						other_filters = {
 							type = "group",
-							order = 13,
+							order = RSUtils.GetTableLength(RSCollectionsDB.GetItemGroups()) + customItemsPosition + 5,
 							name = AL["LOOT_OTHER_FILTERS"],
 							handler = RareScanner,
 							desc = AL["LOOT_OTHER_FILTERS_DESC"],
@@ -574,6 +578,23 @@ function RSLootOptions.GetLootOptions()
 		}
 	end
 		
+	-- Load custom item filters
+	for groupKey, groupName in pairs(RSCollectionsDB.GetItemGroups()) do
+		options.args.filters.args[string.format(customLine, groupKey)] = {
+			order = customItemsPosition,
+			type = "toggle",
+			name = string.format(AL["LOOT_EXPLORER_SHOW_MISSING_CUSTOM"], groupName),
+			desc = string.format(AL["LOOT_EXPLORER_SHOW_MISSING_CUSTOM_DESC"], groupName),
+			get = function() return RSConfigDB.IsShowingCustomItems(groupKey) end,
+			set = function(_, value)
+				RSConfigDB.SetShowingCustomItems(groupKey, value)
+			end,
+			width = "full",
+			disabled = function() return (not RSConfigDB.IsFilteringByExplorerResults()) end,
+		}
+		customItemsPosition = customItemsPosition + 1
+	end
+	
 	-- Load filtered items
 	LoadFilteredItems()
 

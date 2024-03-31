@@ -24,9 +24,10 @@ ClassicNumbersDB = {
 		["Flurrq - Ragnaros"] = "Default",
 	},
 	["global"] = {
-		["enabled"] = false,
 		["critSize"] = 39,
 		["font"] = "Bebas Neue Cyrillic Regular",
+		["smallCritsFilter"] = 43300,
+		["smallHitsFilter"] = 99999,
 		["scrollDistance"] = 20,
 	},
 }

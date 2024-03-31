@@ -138,6 +138,7 @@ L["Portal to Central Encampment"] = "Portal zum Zentrallager"
 L["Portal to The Timeways"] = "Portal zu den Zeitwegen"
 L["Portal to Bel'ameth"] = "Portal nach Bel'ameth"
 L["Portal to Feathermoon Stronghold"] = "Portal zur Mondfederfeste"
+L["Portal to Mount Hyjal"] = "Portal zum Hyjal"
 
 --==========================================SHADOWLANDS===========================================--
 
@@ -149,9 +150,6 @@ L["Into the Maw"] = "In den Schlund"
 L["To Keeper's Respite"] = "Zur Zuflucht des Hüters"
 L["Portal to Torghast"] = "Portal nach Torghast"
 L["Portal to Zereth Mortis"] = "Portal nach Zereth Mortis"
-L["Portal to Karazhan"] = "Portal nach Karazhan"
-L["Portal to Mechagon"] = "Portal nach Mechagon"
-L["Portal to Gorgrond"] = "Portal nach Gorgrond"
 
 --============================================Bastion=============================================--
 

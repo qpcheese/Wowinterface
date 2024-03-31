@@ -17,7 +17,13 @@ local MediaType_STATUSBAR = LSM.MediaType.STATUSBAR
 -- -----
 --   FONT
 -- -----
-LSM:Register(MediaType_FONT, "DorisPP",                     [[Interface\Addons\SharedMedia\fonts\doris_pp\DorisPP.ttf]])
+LSM:Register(MediaType_FONT, "Lexend Deca Black",           [[Interface\Addons\SharedMedia\fonts\LexendDeca\LexendDeca-Black.ttf]])
+LSM:Register(MediaType_FONT, "Accidental Presidency",       [[Interface\Addons\SharedMedia\fonts\AccidentalPresidency\accid___.ttf]])
+LSM:Register(MediaType_FONT, "PT Sans Narrow",              [[Interface\Addons\SharedMedia\fonts\PTSansNarrow\PTSansNarrow-Regular]])
+LSM:Register(MediaType_FONT, "DorisPP",                     [[Interface\Addons\SharedMedia\fonts\DorisPP\DorisPP.ttf]])
+LSM:Register(MediaType_FONT, "League Gothic",               [[Interface\Addons\SharedMedia\fonts\LeagueGothic\LeagueGothic-Regular.ttf]])
+LSM:Register(MediaType_FONT, "Expressway",                  [[Interface\Addons\SharedMedia\fonts\Expressway\exprswy_free.ttf]])
+LSM:Register(MediaType_FONT, "Montserrat",                  [[Interface\Addons\SharedMedia\fonts\Montserrat\Montserrat-Regular.ttf]])
 
 -- -----
 --   SOUND

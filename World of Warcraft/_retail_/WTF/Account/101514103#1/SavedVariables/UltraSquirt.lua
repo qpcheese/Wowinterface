@@ -1,13 +1,13 @@
 
 UltraSquirtSettingsDB = {
 	["profileKeys"] = {
-		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+		["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
 		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
 		["Qpfromagee - Ragnaros"] = "Qpfromagee - Ragnaros",
 		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
-		["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["global"] = {
 		["BattleHealingThreshold"] = {

@@ -340,7 +340,7 @@ local createPlayerScrollBox = function(breakdownWindowFrame, breakdownSideMenu, 
 		local specIcon = OTTFrame:CreateTexture("$parentSpecIcon", "artwork")
 		specIcon:SetSize(headerTable[1].width - 1, headerTable[1].width - 1)
 		specIcon:SetAlpha(0.834)
-		detailsFramework:SetMask(specIcon, [[Interface\COMMON\common-iconmask]])
+		detailsFramework:SetMask(specIcon, Details:GetTextureAtlas("iconmask"))
 
 		local roleIcon = OTTFrame:CreateTexture("$parentRoleIcon", "overlay")
 		roleIcon:SetSize((player_line_height-2) / 2, (player_line_height-2) / 2)
@@ -454,6 +454,7 @@ local createSegmentsScrollBox = function(breakdownWindowFrame, breakdownSideMenu
 			return
 		end
 
+		--current breakdown combat
 		local currentBKCombat = Details:GetCombatFromBreakdownWindow()
 		--unique combat id from the combat the breakdown window is using
 		local currentBKCombatUniqueID = currentBKCombat:GetCombatUID()

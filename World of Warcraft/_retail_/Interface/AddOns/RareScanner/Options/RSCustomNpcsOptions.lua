@@ -418,7 +418,7 @@ local function AddNewCustomNpc(npcID, group)
 					end
 					
 					-- Check if number
-					if (value and tonumber(value) == nil) then
+					if (value and tonumber(value) == nil or RSUtils.Contains(value,"%.")) then
 						return AL["CUSTOM_NPC_VALIDATION_NUMBER"]
 					end
 					

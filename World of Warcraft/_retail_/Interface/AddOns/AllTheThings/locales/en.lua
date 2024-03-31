@@ -48,7 +48,6 @@ for key, value in pairs({
 	["SOURCES_DESC"] = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	["WRONG_FACTION"] = "You might need to be on the other faction to view this.";
 	["ARTIFACT_INTRO_REWARD"] = "Awarded for completing the introductory quest for this Artifact.";
-	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache.";
 	["FLIGHT_PATHS_DESC"] = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
 	["FOLLOWERS_COLLECTION_DESC"] = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
@@ -76,10 +75,12 @@ for key, value in pairs({
 	["AUCTIONATOR_GROUPS"] = "Group-based searches are only supported using Auctionator.";
 	["TSM4_ERROR"] = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. ";
-	["MINUMUM_STANDING"] = "Requires a minimum standing of";
-	["_WITH_"] = " with ";
-	["MAXIMUM_STANDING"] = "Requires a standing lower than";
-	["MIN_MAX_STANDING"] = "Requires a standing between";
+	
+	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	["MINUMUM_STANDING_WITH_FACTION"] = "Requires a minimum standing of %s with %s.";
+	["MAXIMUM_STANDING_WITH_FACTION"] = "Requires a standing lower than %s with %s.";
+	["MIN_MAX_STANDING_WITH_FACTION"] = "Requires a standing between %s and %s with %s.";
+	
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
 	["ALIVE"] = "Alive";
@@ -101,7 +102,6 @@ for key, value in pairs({
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
-	["_AND"] = " and";
 	["DURING_WQ_ONLY"] = "Can be completed when the World Quest is active";
 	["COMPLETED_DAILY"] = "Can be completed daily";
 	["COMPLETED_WEEKLY"] = "Can be completed weekly";
@@ -596,8 +596,6 @@ for key, value in pairs({
 	["COMPLETE_OTHER"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";	-- Acquired the colors and icon from CanIMogIt.
 	["INCOMPLETE"] = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplete|r";	-- Acquired the colors and icon from CanIMogIt.
 	["SAVED"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
-	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abffKnown on current character|r";
-	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
 	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
 	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
 	-- TODO @DeadSerious: NEED GOOD UPGRADE ICON
@@ -752,24 +750,15 @@ for key, value in pairs({
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Misc
 		[-493] = "Interface\\Icons\\Inv_icon_mission_complete_order",						-- Temporary Header WoD Mission Loot
-	-- Mole Machine
-		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
 	-- PvP Headers
-		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
 		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
 		[-651] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Prideful (S15)
 		[-652] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Grievous (S14)
 		[-653] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Tyrannical (S13)
-		[-654] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Cataclysmic (S11)
-		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Ruthless (S10)
-	-- Cataclysm PvP Seasons
-		[-672] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Vicious Gladiator: Season 9
-		[-673] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Ruthless Gladiator: Season 10
-		[-674] = 236235,																	-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Malevolent Gladiator: Season 12
 		[-676] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Tyrannical Gladiator: Season 13
@@ -940,26 +929,9 @@ for key, value in pairs({
 		[-488] = "War Chest",													-- Daily War Chest
 	-- Misc
 		[-493] = "Garrison Mission Loot",										-- Header for WoD Mission Loot
-	-- Mole Machine
-		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-543] = "Legion Invasions",											-- Legion Invasions
-	-- PvP Header
-		-- Special Season Tags
-		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
-		--[-651] = "Honor Gear Prideful Season",								-- Listed under MoP PvP Seasons
-		--[-652] = "Honor Gear Grievous Season",								-- Listed under MoP PvP Seasons
-		--[-653] = "Honor Gear Tyrannical Season",								-- Listed under MoP PvP Seasons
-		--[-654] = "Honor Gear Cataclysmic Season",								-- Listed under Cata PvP Seasons
-		--[-656] = "Honor Gear Ruthless Season",								-- Listed under Cata PvP Seasons
-	-- Cataclysm PvP Seasons
-		[-650] = PVP_RATED_BATTLEGROUND,										-- Rated Battleground
-		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
-		[-656] = "Honor Gear Ruthless Season",									-- Honor Gear Ruthless (S10)
-		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
-		[-654] = "Honor Gear Cataclysmic Season",								-- Honor Gear Cataclysmic (S11)
-		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
 		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)

@@ -6279,6 +6279,21 @@ VMRT = {
 		["OnlyGuild"] = true,
 		["Rank"] = 1,
 	},
+	["Interrupts"] = {
+		["Profile"] = 1,
+		["Disabled"] = {
+		},
+		["Data"] = {
+			{
+			}, -- [1]
+			{
+			}, -- [2]
+			{
+			}, -- [3]
+			[0] = {
+			},
+		},
+	},
 	["Note"] = {
 		["BlackNames"] = {
 		},
@@ -6360,12 +6375,47 @@ VMRT = {
 		["Strata"] = "HIGH",
 		["timeToKillAnalyze"] = 15,
 	},
-	["WhoPulled"] = {
+	["Reminder2"] = {
+		["HistoryFrameShown"] = true,
+		["FontSize"] = 50,
+		["data"] = {
+			{
+			}, -- [1]
+			{
+			}, -- [2]
+			{
+			}, -- [3]
+			{
+			}, -- [4]
+			{
+			}, -- [5]
+			[0] = {
+			},
+		},
+		["SyncPlayers"] = {
+		},
+		["generalSound4"] = "Interface\\AddOns\\MRT\\media\\Sounds\\Applause.ogg",
+		["generalSound1"] = "Interface\\AddOns\\MRT\\media\\Sounds\\CatMeow2.ogg",
+		["generalSound5"] = "Interface\\AddOns\\MRT\\media\\Sounds\\BikeHorn.ogg",
+		["zoneNames"] = {
+		},
+		["HistoryEnabled"] = true,
+		["options"] = {
+		},
+		["v21"] = true,
+		["Profile"] = 1,
+		["generalSound2"] = "Interface\\AddOns\\MRT\\media\\Sounds\\KittenMeow.ogg",
+		["FontOutline"] = true,
+		["v38"] = true,
+		["removed"] = {
+		},
+		["generalSound3"] = "Interface\\Addons\\MRT\\media\\Sounds\\swordecho.ogg",
+		["generalSound6"] = "Interface\\Addons\\MRT\\media\\Sounds\\bam.ogg",
 	},
 	["Addon"] = {
 		["Timer"] = 0.1,
-		["PreVersion"] = 4825,
-		["Version"] = 4825,
+		["PreVersion"] = 4840,
+		["Version"] = 4840,
 		["Scale"] = 1.12,
 	},
 	["Profiles"] = {
@@ -15315,19 +15365,6 @@ VMRT = {
 		},
 		["DisablePopup"] = true,
 	},
-	["Interrupts"] = {
-		["Profile"] = 1,
-		["Disabled"] = {
-		},
-		["Data"] = {
-			{
-			}, -- [1]
-			{
-			}, -- [2]
-			{
-			}, -- [3]
-			[0] = {
-			},
-		},
+	["WhoPulled"] = {
 	},
 }

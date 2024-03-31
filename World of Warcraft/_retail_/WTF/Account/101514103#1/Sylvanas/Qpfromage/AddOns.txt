@@ -9,11 +9,11 @@ RaiderIO_DB_TW_F: disabled
 RaiderIO_DB_KR_R: disabled
 RaiderIO_DB_KR_M: disabled
 RaiderIO_DB_KR_F: disabled
-RaiderIO: enabled
-RaiderIO_DB_EU_M: enabled
-RaiderIO_DB_EU_R: enabled
-RaiderIO_DB_EU_F: enabled
-WorldQuestsList: enabled
+RaiderIO: disabled
+RaiderIO_DB_EU_M: disabled
+RaiderIO_DB_EU_R: disabled
+RaiderIO_DB_EU_F: disabled
+WorldQuestsList: disabled
 QuickQuest: disabled
 NameplateSCT: disabled
 Masque_OyanaUI: disabled
@@ -67,7 +67,7 @@ LibDBIcon-1.0: enabled
 NickTag-1.0: enabled
 LibDataBroker-1.1: enabled
 LibGraph-2.0: enabled
-Masque: enabled
+Masque: disabled
 Masque_ElvUI: disabled
 Masque_Entropy: disabled
 Masque_Epix: disabled
@@ -87,9 +87,9 @@ LibDualSpec-1.0: enabled
 ShadowedUFFacade: disabled
 MasqueBlizzBars: disabled
 AddonUsage: disabled
-Details_RaidCheck: enabled
+Details_RaidCheck: disabled
 Details_Streamer: disabled
-Details_TinyThreat: enabled
+Details_TinyThreat: disabled
 Details_Vanguard: disabled
 LibEasing: enabled
 LittleWigs_WarlordsOfDraenor: enabled
@@ -109,11 +109,11 @@ BigWigs_WrathOfTheLichKing: enabled
 !BugGrabber: enabled
 BugSack: enabled
 DeleteManaGem: enabled
-Details_Compare2: enabled
-Details_EncounterDetails: enabled
-Details_DataStorage: enabled
-FarmHud: enabled
-Hermes: enabled
+Details_Compare2: disabled
+Details_EncounterDetails: disabled
+Details_DataStorage: disabled
+FarmHud: disabled
+Hermes: disabled
 I_Hear_You_RealID: enabled
 I_Hear_You_Whisper: enabled
 idTip: enabled
@@ -128,7 +128,7 @@ LittleWigs_MistsOfPandaria: enabled
 LittleWigs_Shadowlands: enabled
 LittleWigs_WrathOfTheLichKing: enabled
 Mapster: enabled
-Masque_Caith: enabled
+Masque_Caith: disabled
 MRT: enabled
 Misspelled: enabled
 MythicDungeonTools: enabled
@@ -251,7 +251,7 @@ Bagnonium: enabled
 HandyNotes_Oribos: disabled
 CursorMod: disabled
 LibPeriodicTable-3.1: enabled
-BattlePetBreedID: enabled
+BattlePetBreedID: disabled
 Outfitter: enabled
 ItemRack: enabled
 GearQuipper: enabled
@@ -281,7 +281,7 @@ Pawn: disabled
 WarpDeplete: disabled
 Details_CastLog: disabled
 Details_TimeLine: disabled
-Gnosis: enabled
+Gnosis: disabled
 *** ForceTaint_Strong ***: disabled
 CraftSim: disabled
 Auctionator: disabled
@@ -310,13 +310,13 @@ AdiBags_ByExpansion_Dragonflight: disabled
 AdiBags_ByExpansion: disabled
 AdiBags_Bears_Keystones: disabled
 MinimapLine: disabled
-PetBattleMaster: enabled
+PetBattleMaster: disabled
 AdiBags: disabled
 BrainDead: enabled
 SyLevel: disabled
-Rematch: enabled
-tdBattlePetScript: enabled
-PetTracker: enabled
+Rematch: disabled
+tdBattlePetScript: disabled
+PetTracker: disabled
 OmniCD: disabled
 OmniCD_BattleRes: disabled
 SimpleItemLevel: disabled
@@ -329,7 +329,7 @@ Masque_Dominos: disabled
 AddOnSkins: enabled
 ButtonForge: enabled
 ConsolePort: enabled
-BigWigs_VoiceGCP: disabled
+BigWigs_VoiceGCP: enabled
 BigWigs_Voice_PipkinPippa: disabled
 LibPetJournal-2.0: enabled
 pet-battle-hud: disabled
@@ -353,17 +353,17 @@ BtWQuestsShadowlands: disabled
 BtWQuestsTheBurningCrusade: disabled
 BtWQuestsWrathOfTheLichKing: disabled
 BtWQuestsWarlordsOfDraenor: disabled
-PetTracker_Battle: enabled
-PetTracker_Config: enabled
-PetTracker_Journal: enabled
-PokemonTrainer: enabled
-PokemonTrainer_Loader: enabled
+PetTracker_Battle: disabled
+PetTracker_Config: disabled
+PetTracker_Journal: disabled
+PokemonTrainer: disabled
+PokemonTrainer_Loader: disabled
 Rarity: disabled
 Rarity_Options: disabled
 BigWigs_BattleForAzeroth: enabled
-AllTheThings: enabled
-Battle Pet Daily Tamer: enabled
-BattlePetBattleUITweaks: enabled
+AllTheThings: disabled
+Battle Pet Daily Tamer: disabled
+BattlePetBattleUITweaks: disabled
 BLU: disabled
 BigWigs_Voice_UT: disabled
 BigWigs_Voice_Marine: disabled
@@ -382,13 +382,13 @@ Overachiever_Tabs: disabled
 Overachiever_Trade: disabled
 PetWalker: disabled
 SharedMedia_Deezi: enabled
-CSC_StarCraftPack: enabled
-CSC_NotificationPack02: enabled
-CSC_NotificationPack01: enabled
+CSC_StarCraftPack: disabled
+CSC_NotificationPack02: disabled
+CSC_NotificationPack01: disabled
 CSC_EffectPack01: enabled
 SimpleSoundReplacer: disabled
 Rematch_TSMPetValues: disabled
-UltraSquirt: enabled
+UltraSquirt: disabled
 Scrap_Merchant: disabled
 Scrap_Config: disabled
 BigWigs_Shadowlands: disabled
@@ -396,7 +396,7 @@ Bagnon_Scrap: disabled
 BlizzMovePlugin_Rematch: disabled
 BlizzMove_Debug: enabled
 BlizzMove: enabled
-Annene: enabled
+Annene: disabled
 ActionButtonSettings: enabled
 BigWigs_Amirdrassil: enabled
 BigWigs_Voice_TBD: disabled
@@ -406,7 +406,7 @@ HealthBarColor: disabled
 MacroToolkit: disabled
 MacroToolkitIcons: disabled
 PGFinder: disabled
-SharedMedia_Zytech: disabled
+SharedMedia_Zytech: enabled
 SimpleAddonManager: enabled
 AngrierWorldQuests: disabled
 WorldQuestTracker: disabled
@@ -433,7 +433,7 @@ DBM-WorldEvents: disabled
 iPMythicTimer: disabled
 MythicIOGrabber: disabled
 LFGMPLUSGROUP: disabled
-Plumber: enabled
+Plumber: disabled
 MythicDungeonCalculator: disabled
 SharedMedia_Celestian: enabled
 FailFeed: disabled
@@ -484,3 +484,5 @@ DataStore_Reputations: disabled
 DataStore_Spells: disabled
 DataStore_Stats: disabled
 DataStore_Talents: disabled
+SexyMap: disabled
+Peggle: disabled

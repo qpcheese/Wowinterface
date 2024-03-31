@@ -52,7 +52,9 @@ function RSMinimap.LoadMinimapButton()
 		icon = RSConstants.NORMAL_NPC_TEXTURE,
 		OnClick = function(self, button) 
 			if (button == "LeftButton") then
-				RSExplorerFrame:Show()
+				if (not InCombatLockdown()) then
+					RSExplorerFrame:Show()
+				end
 			elseif (button == "RightButton") then
 				Settings.OpenToCategory("RareScanner")
 			end

@@ -95,7 +95,7 @@ function RSGeneralOptions.GetGeneralOptions()
 					type = "range",
 					name = AL["RESCAN_TIMER"],
 					desc = AL["RESCAN_TIMER_DESC"],
-					min	= 3,
+					min	= 1,
 					max	= 60,
 					step = 1,
 					bigStep = 1,

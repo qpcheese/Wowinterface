@@ -40,6 +40,7 @@ Puede desactivar esta automatización siguiendo estos pasos:
 |cffffff782.|r desactive las casillas de cada fuente de datos.]=]
 L["Background"] = "Fondo"
 L["Background Disclaimer"] = "Esto llevará a cabo la generación de ruta TSP en segundo plano mucho más lentamente sin bloquear WoW. Tenga en cuenta que su WoW todavía tendrá un rendimiento notorio."
+L["Background Route Clustering completed."] = "Agrupación de rutas en segundo plano completada."
 L["Cancel route edit"] = "Cancelar la edición de la ruta"
 L["Cancel taboo edit"] = "Cancelar la edición del tabú"
 L["Cartographer_Waypoints module is missing or disabled"] = "Cartographer_Waypoints no se encuentra o está desactivado"
@@ -48,8 +49,10 @@ L["Change default route color"] = "Cambiar el color de ruta"
 L["Change direction (TomTom)"] = "Cambiar dirección (TomTom)"
 L["Change the line color"] = "Cambiar el color de la línea"
 L["Cluster"] = "Agrupación"
+L["Cluster (in Background)"] = "Agrupación (en segundo plano)"
 L["Cluster Radius"] = "Radio de Agrupación"
 L["Cluster this route"] = "Agrupar esta ruta"
+L["Cluster this route in the background"] = "Agrupa esta ruta en segundo plano"
 L["CLUSTER_DESC"] = "Agrupar una ruta hace que Routes coja todos los nodos que están cerca unos de otros y se combinen en un único nodo como un punto de viaje. Este proceso tarda un tiempo, pero es razonablemente rápido."
 L["CLUSTER_RADIUS_DESC"] = "La distancia máxima a un nodo será fuera de su punto de nodo agrupado. El valor por defecto es de 60 metros, porque el radio de detección de seguimiento es de 80 metros."
 L["Color of lines"] = "Color de las líneas"
@@ -75,6 +78,39 @@ L["CREATE_ROUTE_TEXT"] = [=[Para crear una ruta realiza 4 sencillos pasos. En pr
 
 * Si la creación de rutas se realiza correctamente, verá líneas de color rosa que recorren todo el mapa en la zona seleccionada. Se creará en el lado izquierdo debajo de Routes, una nueva ruta. Esta ruta inicial esta sin optimizar y necesitará optimización.
 ]=]
+L["CREATE_TABOOS_TEXT"] = [=[Las |cffffff78Regiones tabú|r son áreas (polígonos 2D) en el Mapa del Mundo que puedes definir fácilmente para decirle a Routes que las ignore. Cuando se definen estas áreas, Routes ignorará activamente cualquier nodo que se encuentre en estas áreas, y hará un esfuerzo extra para que la ruta generada no cruce estas áreas. Esto es muy útil para marcar lugares que están fuera del camino como islas flotantes, cuevas, montañas altas, ciudades enemigas, etc.
+
+Las regiones tabú se crean siguiendo los siguientes pasos:
+
+|cffffff781.|r Accede al árbol raíz |cffffff78Tabúes|r situado a la izquierda de la pantalla de configuración.
+
+|cffffff782.|r Escribe un nombre para la región tabú y pulsa |cffffff78ENTER|r o haz clic en el botón |cffffff78OK|r.
+
+|cffffff783.|r Selecciona una zona en el desplegable para crear la región tabú.
+
+|cffffff784.|r Haz clic en |cffffff78Crear Tabú|r.
+
+|cffffff785.|r Accede al tabú recién creado a la izquierda del árbol de configuración en el árbol |cffffff78Tabúes|r.
+
+|cffffff786.|r Haz clic en el botón |cffffff78Editar región tabú|r.
+
+|cffffff787.|r Abre el Mapa del Mundo y navega hasta el mapa correcto donde se encuentra la región tabú si es necesario.
+
+|cffffff788.|r Deberías ver una región triangular sombreada en el mapa del mundo. Edita la región tabú
+a) |cffffff78Arrastrando|r los nodos del polígono;
+b) Insertando un nodo en el polígono haciendo |cffff78clic izquierdo|r en un nodo intermedio;
+c) Eliminando un nodo del polígono haciendo |cffffff78clic derecho|r sobre un nodo existente.
+
+|cffffff789.|r Haz clic en |cffffff78Guardar edición de tabú|r para guardar los cambios, o en |cffffff78Cancelar edición de tabú|r para cancelarlos.
+
+Las regiones tabú pueden cruzarse sobre sí mismas y superponerse y contener tantos nodos como desees. Esto significa que puedes crear regiones tabú muy complicadas y detalladas si así lo deseas.
+
+
+|cffffd200Notas:|r
+
+* Una vez creada una región tabú, puedes asociarla a una ruta existente dentro de la configuración de la ruta individual. Tendrás que volver a optimizar la ruta después de asociar o eliminar regiones tabú de una ruta.
+
+* Editar una región tabú afectará a todas las rutas que la utilicen, del mismo modo borrar una región tabú la eliminará de todas las rutas que la utilicen.]=]
 L["Creating a route"] = "Creando una ruta"
 L["Creating a taboo region"] = "Creando una región tabú"
 L["Customizing route display"] = "Personalizar la pantalla de ruta"

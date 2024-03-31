@@ -1,8 +1,8 @@
-## Interface: 100205
+## Interface: 100206
 ## Title: BetterBags - Legendary
 ## Notes: Adds a Legendary items filter to BetterBags.
 ## Author: OrenYoh
-## Version: 1.0.0
+## Version: 1.0.1
 ## IconTexture: Interface\AddOns\BetterBags_Legendary\images\legendary
 ## Dependencies: BetterBags
 ## X-Curse-Project-ID: 979171

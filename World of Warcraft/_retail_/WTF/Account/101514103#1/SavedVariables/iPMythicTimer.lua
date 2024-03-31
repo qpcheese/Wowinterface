@@ -2,7 +2,7 @@
 IPMTDB = {
 }
 IPMTOptions = {
-	["MDTversion"] = "4.3.4.6",
+	["MDTversion"] = "4.3.5.1",
 	["direction"] = 1,
 	["global"] = {
 	},
@@ -34,9 +34,9 @@ IPMTOptions = {
 }
 IPMTDungeon = {
 	["combat"] = {
+		["boss"] = false,
 		["killed"] = {
 		},
-		["boss"] = false,
 	},
 	["bossesKilled"] = 4,
 	["checkmobs"] = {
@@ -60,33 +60,33 @@ IPMTDungeon = {
 	["level"] = 18,
 	["players"] = {
 		["Qpfromage"] = {
-			["enemy"] = "Qpfromage",
-			["spellId"] = 371070,
 			["damage"] = 20332,
+			["spellId"] = 371070,
+			["enemy"] = "Qpfromage",
 		},
 		["Youdamonk-Drak'thul"] = {
-			["enemy"] = "Iridikron",
-			["spellId"] = 414483,
 			["damage"] = 142614,
+			["spellId"] = 414483,
+			["enemy"] = "Iridikron",
 		},
 		["Dwizzy-Silvermoon"] = {
 			["spellId"] = 32409,
 			["damage"] = 5261,
 		},
-		["Hopcaa-BurningBlade"] = {
-			["enemy"] = "Hopcaa-BurningBlade",
-			["spellId"] = 425461,
-			["damage"] = 1059,
-		},
 		["Creepypal-Drak'thul"] = {
-			["enemy"] = "Creepypal-Drak'thul",
-			["spellId"] = 425180,
 			["damage"] = 10780,
+			["spellId"] = 425180,
+			["enemy"] = "Creepypal-Drak'thul",
+		},
+		["Hopcaa-BurningBlade"] = {
+			["damage"] = 1059,
+			["spellId"] = 425461,
+			["enemy"] = "Hopcaa-BurningBlade",
 		},
 	},
 	["trash"] = {
-		["grabbed"] = 0,
 		["total"] = 300,
+		["grabbed"] = 0,
 		["current"] = 323,
 		["killed"] = 0,
 	},
@@ -98,26 +98,27 @@ IPMTDungeon = {
 	["artwork"] = 5221768,
 	["bosses"] = {
 		{
-			["encounterID"] = 2666,
-			["name"] = "Chronikar",
 			["killed"] = true,
+			["name"] = "Chronikar",
+			["encounterID"] = 2666,
 		}, -- [1]
 		{
-			["encounterID"] = 2667,
-			["name"] = "Manifested Timeways",
 			["killed"] = true,
+			["name"] = "Manifested Timeways",
+			["encounterID"] = 2667,
 		}, -- [2]
 		{
-			["encounterID"] = 2668,
-			["name"] = "Blight of Galakrond",
 			["killed"] = true,
+			["name"] = "Blight of Galakrond",
+			["encounterID"] = 2668,
 		}, -- [3]
 		{
-			["encounterID"] = 2669,
-			["name"] = "Iridikron the Stonescaled",
 			["killed"] = true,
+			["name"] = "Iridikron the Stonescaled",
+			["encounterID"] = 2669,
 		}, -- [4]
 	},
+	["isTeeming"] = false,
 	["affixes"] = {
 		{
 			["id"] = 11,
@@ -135,7 +136,6 @@ IPMTDungeon = {
 			["name"] = "Tyrannical",
 		}, -- [3]
 	},
-	["isTeeming"] = false,
 }
 IPMTTheme = {
 	{

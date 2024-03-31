@@ -67,6 +67,7 @@ LSM:Register("sound", "|cFFFF0000Enter|r", [[Interface\Addons\SharedMedia_Causes
 LSM:Register("sound", "|cFFFF0000Escort|r", [[Interface\Addons\SharedMedia_Causese\sound\Escort.ogg]])
 LSM:Register("sound", "|cFFFF0000Exit|r", [[Interface\Addons\SharedMedia_Causese\sound\Exit.ogg]])
 LSM:Register("sound", "|cFFFF0000Fixate|r", [[Interface\Addons\SharedMedia_Causese\sound\Fixate.ogg]])
+LSM:Register("sound", "|cFFFF0000Focus|r", [[Interface\Addons\SharedMedia_Causese\sound\Focus.ogg]])
 LSM:Register("sound", "|cFFFF0000Front|r", [[Interface\Addons\SharedMedia_Causese\sound\Front.ogg]])
 LSM:Register("sound", "|cFFFF0000Gate|r", [[Interface\Addons\SharedMedia_Causese\sound\Gate.ogg]])
 LSM:Register("sound", "|cFFFF0000Gather|r", [[Interface\Addons\SharedMedia_Causese\sound\Gather.ogg]])

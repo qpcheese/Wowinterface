@@ -1,4 +1,11 @@
-﻿10.2.19 - 13th March 2024
+﻿10.2.21 - 27th March 2024
+- Leatrix addons for Cataclysm Classic will be available when Blizzard gives me access to Cataclysm Classic beta.  If you wish to request that Blizzard gives me access to the beta, send an email to cs@blizzard.com.
+
+10.2.20 - 20th March 2024
+- Updated for game patch 10.2.6.
+- Updated sounds to game version 10.2.6.53840 (Mar 18 2024) (100206).
+
+10.2.19 - 13th March 2024
 - Updated sounds to game version 10.2.5.53584 (Feb 29 2024) (100205).
 
 10.2.17 - 28th February 2024

@@ -2,7 +2,7 @@
 
 ## Author: StormFX
 ## Title: Masque: Gears
-## Version: 10.2.5
+## Version: 10.2.6
 
 ## Dependencies: Masque
 ## IconTexture: Interface\AddOns\Masque_Gears\Textures\Icon

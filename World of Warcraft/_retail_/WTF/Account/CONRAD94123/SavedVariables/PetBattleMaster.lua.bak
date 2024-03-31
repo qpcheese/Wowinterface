@@ -60,11 +60,11 @@ PetBattleMasterDb = {
 	["profileKeys"] = {
 		["Fishanus - Ragnaros"] = "Default",
 		["Dogson - Ragnaros"] = "Default",
-		["Qutlaw - Ravencrest"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
 		["Qpaladin - Ragnaros"] = "Default",
 		["Qubit - Ragnaros"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
-		["Qpe - Ravencrest"] = "Default",
+		["Qutlaw - Ravencrest"] = "Default",
 		["Flurrq - Ragnaros"] = "Default",
 	},
 	["profiles"] = {

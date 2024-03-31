@@ -33,10 +33,8 @@ VER 3 00000000000001DE "fake" "134400"
 /run SKBFakeQueueCQS()
 END
 VER 3 00000000000001C6 "fake" "236205"
-#showtooltip
-/run ABarrFakeQueueCQS()
-/cast Arcane Barrage
-/run ABarrFakeQueueCQS()
+/target  Frothing gorger
+/Cast arcane barrage
 END
 VER 3 00000000000001E1 "Fireball" "134400"
 #showtooltip

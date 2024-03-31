@@ -8,6 +8,7 @@ local RSEventDB = private.NewLib("RareScannerEventDB")
 -- RareScanner libraries
 local RSLogger = private.ImportLib("RareScannerLogger")
 local RSConstants = private.ImportLib("RareScannerConstants")
+local RSUtils = private.ImportLib("RareScannerUtils")
 
 ---============================================================================
 -- Completed events database
@@ -72,11 +73,57 @@ function RSEventDB.GetInternalEventInfo(eventID)
 	return nil
 end
 
+local function GetInternalEventInfoByMapID(eventID, mapID)
+	if (eventID and mapID) then
+		if (RSEventDB.IsInternalEventMultiZone(eventID)) then
+			for internalMapID, eventInfo in pairs (RSEventDB.GetInternalEventInfo(eventID).zoneID) do
+				if (internalMapID == mapID) then
+					return eventInfo
+				end
+			end
+		elseif (RSEventDB.IsInternalEventMonoZone(eventID)) then
+			local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
+			return eventInfo
+		end
+	end
+
+	return nil
+end
+
+function RSEventDB.GetInternalEventCoordinates(eventID, mapID)
+	if (eventID and mapID) then
+		local eventInfo = GetInternalEventInfoByMapID(eventID, mapID)
+		if (eventInfo) then
+			return RSUtils.Lpad(eventInfo.x, 4, '0'), RSUtils.Lpad(eventInfo.y, 4, '0')
+		end
+	end
+
+	return nil
+end
+
+function RSEventDB.IsInternalEventMultiZone(eventID)
+	local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
+	return eventInfo and type(eventInfo.zoneID) == "table"
+end
+
+function RSEventDB.IsInternalEventMonoZone(eventID)
+	local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
+	return eventInfo and type(eventInfo.zoneID) ~= "table"
+end
+
 function RSEventDB.IsInternalEventInMap(eventID, mapID)
 	if (eventID and mapID) then
-		local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
-		if (eventInfo.zoneID == mapID) then
-			return true;
+		if (RSEventDB.IsInternalEventMultiZone(eventID)) then
+			for internalMapID, internalEventInfo in pairs(RSEventDB.GetInternalEventInfo(eventID).zoneID) do
+				if (internalMapID == mapID and (not internalEventInfo.artID or RSUtils.Contains(internalEventInfo.artID, C_Map.GetMapArtID(mapID)))) then
+					return true;
+				end
+			end
+		elseif (RSEventDB.IsInternalEventMonoZone(eventID)) then
+			local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
+			if (eventInfo.zoneID == mapID and (not eventInfo.artID or RSUtils.Contains(eventInfo.artID, C_Map.GetMapArtID(mapID)))) then
+				return true;
+			end
 		end
 	end
 
@@ -88,6 +135,15 @@ function RSEventDB.IsWorldMap(eventID)
 		local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
 		return eventInfo and eventInfo.worldmap
 	end
+end
+
+function RSEventDB.IsDisabledEvent(eventID)
+	if (eventID) then
+		local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
+		return eventInfo and eventInfo.event and not RSConstants.EVENTS[eventInfo.event]
+	end
+	
+	return false
 end
 
 ---============================================================================

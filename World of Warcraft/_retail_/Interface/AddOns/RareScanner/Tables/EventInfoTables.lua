@@ -168,4 +168,9 @@ private.EVENT_INFO = {
 	[204423] = { zoneID = 2133, artID = { 1775 }, x = 4448, y = 7460, overlay = { "4448-7460" }, questID = { 75612 }, questReset = true }; --Cascades Calling
 	[204460] = { zoneID = 2133, artID = { 1775 }, x = 4535, y = 8318, overlay = { "4535-8318" }, questID = { 75624 }, questReset = true }; --The Champion's Challenge
 	[204763] = { zoneID = 2133, artID = { 1775 }, x = 3435, y = 4790, overlay = { "3435-4790" }, questID = { 75450 }, weeklyReset = true }; --Seismic Ceremony
+	[214985] = { zoneID = {
+			[2112] = { x = 6253, y = 6753, artID = { 1748 }, overlay = { "6253-6753" } };
+			[1] = { x = 5313, y = 1614, artID = { 2 }, overlay = { "5313-1614" } };
+			[84] = { x = 3441, y = 2064, artID = { 89 }, overlay = { "3441-2064" } };
+		  }, reset = true, event = 4 }; --Portal ominoso
 }

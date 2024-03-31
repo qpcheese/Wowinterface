@@ -1,10 +1,10 @@
-## Interface: 100205
+## Interface: 100206
 
 ## Title: ArkInventory
 ## Notes: Allows you to view all items from all your characters on the same account, when ever and where ever you want.
 ## Author: Arkayenro - Khaz'goroth
 ## Email: arkayenro at gmail dot com
-## Version: 31025
+## Version: 31027
 ## X-ReleaseType: 
 ## SavedVariables: ARKINVDB
 ## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green

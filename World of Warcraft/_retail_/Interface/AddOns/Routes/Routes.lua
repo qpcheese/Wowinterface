@@ -1,7 +1,7 @@
 ﻿--[[
 ********************************************************************************
 Routes
-v1.7.4
+v1.8.1
 16 October 2014
 (Originally written for Live Servers v4.3.0.15050)
 (Hotfixed for v6.0.2.19034)
@@ -1067,7 +1067,7 @@ RoutesPinMixin = CreateFromMixins(MapCanvasPinMixin)
 
 function RoutesPinMixin:OnLoad()
 	self:SetIgnoreGlobalPinScale(true)
-	self:UseFrameLevelType("PIN_FRAME_LEVEL_SCENARIO_BLOB")
+	self:UseFrameLevelType("PIN_FRAME_LEVEL_MAP_HIGHLIGHT")
 end
 
 function RoutesPinMixin:OnAcquired(battleField)

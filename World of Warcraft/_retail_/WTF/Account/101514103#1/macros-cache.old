@@ -8,8 +8,8 @@ VER 3 0000000000000022 "1314" "134400"
 END
 VER 3 0000000000000039 "14" "134400"
 #showtooltip
-/use 14
 /use 16
+/use 13
 END
 VER 3 000000000000001E "1ST" "134400"
 #showtooltip
@@ -44,10 +44,6 @@ VER 3 0000000000000013 "a" "134400"
 /use Rogues Deck
 /script AcceptQuest()
 END
-VER 3 000000000000000E "asd" "134400"
-/targetenemy [noharm][dead]
-/cast fire blast
-END
 VER 3 0000000000000014 "asd" "134400"
 /script SelectGossipActiveQuest(1)
 /script CompleteQuest()
@@ -60,6 +56,10 @@ VER 3 0000000000000026 "asd" "134400"
 /cleartarget
 /tar Ivory Cloud Serpent
 /use Zan-Tien Lasso
+END
+VER 3 000000000000000E "asd" "134400"
+/targetenemy [noharm][dead]
+/cast fire blast
 END
 VER 3 000000000000000F "asddd" "135738"
 /run local a=0;TargetNearestEnemy();while (UnitAffectingCombat("target")~=true and a < 10) do TargetNearestEnemy();a=a+1;end

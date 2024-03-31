@@ -7,18 +7,18 @@ Emoticons_Settings = {
 	["ENABLE_ANIMATEDEMOTES"] = true,
 	["CHAT_MSG_RAID_WARNING"] = true,
 	["CHAT_MSG_CHANNEL"] = true,
-	["CHAT_MSG_PARTY_GUIDE"] = true,
-	["CHAT_MSG_WHISPER"] = true,
 	["CHAT_MSG_BN_WHISPER"] = true,
+	["CHAT_MSG_WHISPER"] = true,
+	["CHAT_MSG_PARTY_GUIDE"] = true,
 	["CHAT_MSG_PARTY"] = true,
-	["LARGEEMOTES"] = false,
+	["CHAT_MSG_WHISPER_INFORM"] = true,
 	["CHAT_MSG_INSTANCE_CHAT_LEADER"] = true,
 	["CHAT_MSG_RAID"] = true,
-	["ENABLE_AUTOCOMPLETE"] = true,
-	["MINIMAPBUTTON"] = true,
-	["CHAT_MSG_RAID_LEADER"] = true,
+	["CHAT_MSG_BN_WHISPER_INFORM"] = true,
 	["CHAT_MSG_YELL"] = true,
-	["CHAT_MSG_SAY"] = true,
+	["CHAT_MSG_RAID_LEADER"] = true,
+	["MINIMAPBUTTON"] = true,
+	["CHAT_MSG_BN_CONVERSATION"] = true,
 	["FAVEMOTES"] = {
 		true, -- [1]
 		true, -- [2]
@@ -49,10 +49,10 @@ Emoticons_Settings = {
 		true, -- [27]
 	},
 	["MAIL"] = true,
-	["CHAT_MSG_BN_CONVERSATION"] = true,
+	["CHAT_MSG_SAY"] = true,
 	["ENABLE_CLICKABLEEMOTES"] = true,
-	["CHAT_MSG_BN_WHISPER_INFORM"] = true,
-	["CHAT_MSG_WHISPER_INFORM"] = true,
+	["ENABLE_AUTOCOMPLETE"] = true,
+	["LARGEEMOTES"] = false,
 	["MINIMAPDATA"] = {
 		["minimapPos"] = 135,
 	},
@@ -66,7 +66,7 @@ TwitchEmoteStatistics = {
 	["Sadge"] = {
 		0, -- [1]
 		0, -- [2]
-		1, -- [3]
+		2, -- [3]
 	},
 	["Pepega"] = {
 		0, -- [1]
@@ -76,21 +76,26 @@ TwitchEmoteStatistics = {
 	["EZ"] = {
 		0, -- [1]
 		0, -- [2]
-		72, -- [3]
+		74, -- [3]
 	},
 	["ELE"] = {
 		0, -- [1]
 		0, -- [2]
-		91, -- [3]
+		139, -- [3]
 	},
 	["gachiBASS"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["Pog"] = {
+	["Boomer"] = {
 		0, -- [1]
 		0, -- [2]
+		1, -- [3]
+	},
+	["Pog"] = {
+		0, -- [1]
+		1, -- [2]
 		2, -- [3]
 	},
 	["D:"] = {

@@ -34,9 +34,9 @@ IPMTOptions = {
 }
 IPMTDungeon = {
 	["combat"] = {
-		["boss"] = false,
 		["killed"] = {
 		},
+		["boss"] = false,
 	},
 	["bossesKilled"] = 4,
 	["checkmobs"] = {
@@ -60,33 +60,33 @@ IPMTDungeon = {
 	["level"] = 18,
 	["players"] = {
 		["Qpfromage"] = {
-			["damage"] = 20332,
-			["spellId"] = 371070,
 			["enemy"] = "Qpfromage",
+			["spellId"] = 371070,
+			["damage"] = 20332,
 		},
 		["Youdamonk-Drak'thul"] = {
-			["damage"] = 142614,
-			["spellId"] = 414483,
 			["enemy"] = "Iridikron",
+			["spellId"] = 414483,
+			["damage"] = 142614,
 		},
 		["Dwizzy-Silvermoon"] = {
 			["spellId"] = 32409,
 			["damage"] = 5261,
 		},
-		["Creepypal-Drak'thul"] = {
-			["damage"] = 10780,
-			["spellId"] = 425180,
-			["enemy"] = "Creepypal-Drak'thul",
-		},
 		["Hopcaa-BurningBlade"] = {
-			["damage"] = 1059,
-			["spellId"] = 425461,
 			["enemy"] = "Hopcaa-BurningBlade",
+			["spellId"] = 425461,
+			["damage"] = 1059,
+		},
+		["Creepypal-Drak'thul"] = {
+			["enemy"] = "Creepypal-Drak'thul",
+			["spellId"] = 425180,
+			["damage"] = 10780,
 		},
 	},
 	["trash"] = {
-		["total"] = 300,
 		["grabbed"] = 0,
+		["total"] = 300,
 		["current"] = 323,
 		["killed"] = 0,
 	},
@@ -98,27 +98,26 @@ IPMTDungeon = {
 	["artwork"] = 5221768,
 	["bosses"] = {
 		{
-			["killed"] = true,
-			["name"] = "Chronikar",
 			["encounterID"] = 2666,
+			["name"] = "Chronikar",
+			["killed"] = true,
 		}, -- [1]
 		{
-			["killed"] = true,
-			["name"] = "Manifested Timeways",
 			["encounterID"] = 2667,
+			["name"] = "Manifested Timeways",
+			["killed"] = true,
 		}, -- [2]
 		{
-			["killed"] = true,
-			["name"] = "Blight of Galakrond",
 			["encounterID"] = 2668,
+			["name"] = "Blight of Galakrond",
+			["killed"] = true,
 		}, -- [3]
 		{
-			["killed"] = true,
-			["name"] = "Iridikron the Stonescaled",
 			["encounterID"] = 2669,
+			["name"] = "Iridikron the Stonescaled",
+			["killed"] = true,
 		}, -- [4]
 	},
-	["isTeeming"] = false,
 	["affixes"] = {
 		{
 			["id"] = 11,
@@ -136,6 +135,7 @@ IPMTDungeon = {
 			["name"] = "Tyrannical",
 		}, -- [3]
 	},
+	["isTeeming"] = false,
 }
 IPMTTheme = {
 	{

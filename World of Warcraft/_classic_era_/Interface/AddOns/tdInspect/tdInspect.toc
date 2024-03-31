@@ -1,0 +1,8 @@
+## Interface: 11501
+## Title: tdInspect
+## Author: Dencer
+## Version: 2.1.7
+## OptionalDeps: LibCompress
+## SavedVariables: TDDB_INSPECT2
+
+Load.xml

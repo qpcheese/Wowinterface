@@ -963,7 +963,15 @@ function RSConfigDB.IsEntityZoneFilteredOnlyAlerts(entityID, atlasName)
 		elseif (RSConstants.IsEventAtlas(atlasName)) then
 			local eventInfo = RSEventDB.GetInternalEventInfo(entityID)
 			if (eventInfo) then
-				return RSConfigDB.IsZoneFilteredOnlyAlerts(eventInfo.zoneID)
+				if (RSEventDB.IsInternalEventMultiZone(entityID)) then
+					for mapID, _ in pairs (eventInfo.zoneID) do
+						if (RSConfigDB.GetZoneFiltered(mapID)) then
+							return RSConfigDB.IsZoneFilteredOnlyAlerts(mapID)
+						end
+					end
+				elseif (RSEventDB.IsInternalEventMonoZone(entityID)) then
+					return RSConfigDB.IsZoneFilteredOnlyAlerts(eventInfo.zoneID)
+				end
 			end
 		end
 	end
@@ -1233,6 +1241,24 @@ function RSConfigDB.SetShowingMissingDrakewatcher(value)
 	private.db.loot.showingMissingDrakewatcher = value
 end
 
+function RSConfigDB.IsShowingCustomItems(group)
+	if (group and private.db.loot.showMissingCustomItems) then
+		return private.db.loot.showMissingCustomItems[group]
+	end
+	
+	return false
+end
+
+function RSConfigDB.SetShowingCustomItems(group, value)
+	if (group) then
+		if (not private.db.loot.showMissingCustomItems) then
+			private.db.loot.showMissingCustomItems = {}
+		end
+		
+		private.db.loot.showMissingCustomItems[group] = value
+	end
+end
+
 ---============================================================================
 -- Collection filters
 ---============================================================================
@@ -1307,6 +1333,22 @@ end
 
 function RSConfigDB.IsShowWithoutCollectibles()
 	return private.db.collections.showWithoutCollectibles
+end
+
+function RSConfigDB.SetSearchingCustom(groupKey, value)
+	if (not private.db.collections.showCustom) then
+		private.db.collections.showCustom = {}
+	end
+	
+	private.db.collections.showCustom[groupKey] = value
+end
+
+function RSConfigDB.IsSearchingCustom(groupKey)
+	if (private.db.collections.showCustom and private.db.collections.showCustom[groupKey]) then
+		return true
+	end
+	
+	return false
 end
 
 function RSConfigDB.SetShowDead(value)

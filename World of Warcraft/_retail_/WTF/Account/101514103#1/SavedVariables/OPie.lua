@@ -1,11 +1,11 @@
 
 OneRing_Config = nil
 OPie_SavedData = {
-	["_GameVersion"] = "10.2.5",
+	["_GameVersion"] = "10.2.6",
 	["CharProfiles"] = {
 	},
 	["_TimeBand"] = 0.5625,
-	["_OPieVersion"] = "Zeta 4.5 (4.119)",
+	["_OPieVersion"] = "Zeta 4.5b (4.119)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingOptions"] = {
@@ -217,8 +217,8 @@ OPie_SavedData = {
 				["save"] = true,
 				["v"] = 1,
 				["vm"] = 127,
-				["name"] = "Utility",
 				["limit"] = "MAGE",
+				["name"] = "Utility",
 				["hotkey"] = "BUTTON4",
 			},
 			["TOYS"] = {

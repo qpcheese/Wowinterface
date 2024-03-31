@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 10.2.19 (13th March 2024)
+-- 	Leatrix Plus 10.2.21 (27th March 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -18,7 +18,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "10.2.19"
+	LeaPlusLC["AddonVer"] = "10.2.21"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -2755,12 +2755,12 @@
 					or questID == 71161		-- Waygate: Vakthros (Thaelin Darkanvil, Dragonflight)
 
 					-- Khuri (The Dragon Isles) (Catch and Release quests) (don't select and accept quest if requirements aren't met including bank storage)
-					or questID == 70199 and GetItemCount(194730, true, true, true) < 20 -- Scalebelly Mackerel
-					or questID == 70200 and GetItemCount(194966, true, true, true) < 20 -- Thousandbite Piranha
-					or questID == 70201 and GetItemCount(194967, true, true, true) < 20 -- Aileron Seamoth
-					or questID == 70202 and GetItemCount(194968, true, true, true) < 20 -- Cerulean Spinefish
-					or questID == 70203 and GetItemCount(194969, true, true, true) < 20 -- Temporal Dragonhead
-					or questID == 70935 and GetItemCount(194970, true, true, true) < 20 -- Islefin Dorado
+					or questID == 70199 and C_Item.GetItemCount(194730, true, true, true) < 20 -- Scalebelly Mackerel
+					or questID == 70200 and C_Item.GetItemCount(194966, true, true, true) < 20 -- Thousandbite Piranha
+					or questID == 70201 and C_Item.GetItemCount(194967, true, true, true) < 20 -- Aileron Seamoth
+					or questID == 70202 and C_Item.GetItemCount(194968, true, true, true) < 20 -- Cerulean Spinefish
+					or questID == 70203 and C_Item.GetItemCount(194969, true, true, true) < 20 -- Temporal Dragonhead
+					or questID == 70935 and C_Item.GetItemCount(194970, true, true, true) < 20 -- Islefin Dorado
 
 					then
 						return true
@@ -2790,7 +2790,7 @@
 							-- Quest requires an item
 							local name, texture, numItems, void, void, itemID = GetQuestItemInfo("required", i)
 							if name and itemID then
-								local void, void, void, void, void, void, void, void, void, void, void, void, void, void, void, void, isCraftingReagent = GetItemInfo(itemID)
+								local void, void, void, void, void, void, void, void, void, void, void, void, void, void, void, void, isCraftingReagent = C_Item.GetItemInfo(itemID)
 								if isCraftingReagent or IsItemAccountBound(itemID) then
 									-- Item is a crafting reagent or account-bound so do nothing
 									return true
@@ -2818,35 +2818,35 @@
 					-- Scourgestones
 					elseif qID == 62293 then
 						-- Quest Darkened Scourgestones requires 25 Darkened Scourgestones
-						if GetItemCount(180720) >= 25 then return true end
+						if C_Item.GetItemCount(180720) >= 25 then return true end
 
 					elseif qID == 62292 then
 						-- Quest Pitch Black Scourgestones requires 25 Pitch Black Scourgestones
-						if GetItemCount(183200) >= 25 then return true end
+						if C_Item.GetItemCount(183200) >= 25 then return true end
 
 					elseif qID == 10325 or qID == 10326 then
 						-- Requires 10 More Marks of Kil'jaeden
-						if GetItemCount(29425) >= 10 then return true end
+						if C_Item.GetItemCount(29425) >= 10 then return true end
 
 					elseif qID == 10655 or qID == 10828 then
 						-- Requires 1 Marks of Sargeras (if more than 10, leave for More Marks of Sargeras)
-						if GetItemCount(30809) >= 1 and GetItemCount(30809) < 10 then return true end
+						if C_Item.GetItemCount(30809) >= 1 and C_Item.GetItemCount(30809) < 10 then return true end
 
 					elseif qID == 10654 or qID == 10827 then
 						-- Requires 10 Marks of Sargeras
-						if GetItemCount(30809) >= 10 then return true end
+						if C_Item.GetItemCount(30809) >= 10 then return true end
 
 					elseif qID == 10412 or qID == 10415 then
 						-- Requires 10 Firewing Signets
-						if GetItemCount(29426) >= 10 then return true end
+						if C_Item.GetItemCount(29426) >= 10 then return true end
 
 					elseif qID == 10659 or qID == 10822 then
 						-- Requires 1 Sunfury Signet (if more than 10, leave for More Sunfury Signets)
-						if GetItemCount(30810) >= 1 and GetItemCount(30810) < 10 then return true end
+						if C_Item.GetItemCount(30810) >= 1 and C_Item.GetItemCount(30810) < 10 then return true end
 
 					elseif qID == 10658 or qID == 10823 then
 						-- Requires 10 Sunfury Signets
-						if GetItemCount(30810) >= 10 then return true end
+						if C_Item.GetItemCount(30810) >= 10 then return true end
 
 					else return true
 					end
@@ -3391,7 +3391,7 @@
 						if tipList[i] then
 							tipList[i] = tonumber(tipList[i])
 							if tipList[i] and tipList[i] > 0 and tipList[i] < 999999999 then
-								local void, tLink, Rarity, void, void, void, void, void, void, void, ItemPrice = GetItemInfo(tipList[i])
+								local void, tLink, Rarity, void, void, void, void, void, void, void, ItemPrice = C_Item.GetItemInfo(tipList[i])
 								if tLink and tLink ~= "" then
 									local linkCol = string.sub(tLink, 1, 10)
 									if linkCol then
@@ -3506,7 +3506,7 @@
 					for BagSlot = 1, C_Container.GetContainerNumSlots(BagID) do
 						CurrentItemLink = C_Container.GetContainerItemLink(BagID, BagSlot)
 						if CurrentItemLink then
-							void, void, Rarity, void, void, void, void, void, void, void, ItemPrice, classID = GetItemInfo(CurrentItemLink)
+							void, void, Rarity, void, void, void, void, void, void, void, ItemPrice, classID = C_Item.GetItemInfo(CurrentItemLink)
 							-- Don't sell whitelisted items
 							local itemID = GetItemInfoFromHyperlink(CurrentItemLink)
 							if itemID and whiteList[itemID] then
@@ -3581,7 +3581,7 @@
 				if SoldCount == 0 or SellJunkTicker and SellJunkTicker._remainingIterations == 1 then
 					StopSelling()
 					if totalPrice > 0 and LeaPlusLC["AutoSellShowSummary"] == "On" then
-						LeaPlusLC:Print(L["Sold junk for"] .. " " .. GetCoinText(totalPrice) .. ".")
+						LeaPlusLC:Print(L["Sold junk for"] .. " " .. C_CurrencyInfo.GetCoinText(totalPrice) .. ".")
 					end
 				end
 
@@ -3649,7 +3649,7 @@
 						end
 						-- Show cost summary
 						if LeaPlusLC["AutoRepairShowSummary"] == "On" then
-							LeaPlusLC:Print(L["Repaired for"] .. " " .. GetCoinText(RepairCost) .. ".")
+							LeaPlusLC:Print(L["Repaired for"] .. " " .. C_CurrencyInfo.GetCoinText(RepairCost) .. ".")
 						end
 					end
 				end
@@ -3856,13 +3856,8 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["NoHitIndicators"] == "On" and not LeaLockList["NoHitIndicators"] then
-			if LeaPlusLC.NewPatch then
-				PlayerFrame.PlayerFrameContent.PlayerFrameContentMain.HitIndicator:Hide()
-				hooksecurefunc(PetHitIndicator, "Show", PetHitIndicator.Hide)
-			else
-				hooksecurefunc(PlayerHitIndicator, "Show", PlayerHitIndicator.Hide)
-				hooksecurefunc(PetHitIndicator, "Show", PetHitIndicator.Hide)
-			end
+			PlayerFrame.PlayerFrameContent.PlayerFrameContentMain.HitIndicator:Hide()
+			hooksecurefunc(PetHitIndicator, "Show", PetHitIndicator.Hide)
 		end
 
 		----------------------------------------------------------------------
@@ -6053,9 +6048,12 @@
 			fishEvent:SetScript("OnEvent", function(self, event, unit, void, spellID)
 				if LeaPlusLC["NoTransforms"] == "On" and LeaPlusLC["TransProfessions"] == "On" and spellID == 131476 then -- Fishing
 					for i = 1, 40 do
-						local void, void, void, void, length, expire, void, void, void, spellID = UnitBuff("player", i)
-						if spellID and spellID == 394009 and not UnitAffectingCombat("player") then -- Fishing For Attention
-							CancelUnitBuff("player", i)
+						local BuffData = C_UnitAuras.GetBuffDataByIndex("player", i)
+						if BuffData then
+							local spellID = BuffData.spellId
+							if spellID and spellID == 394009 and not UnitAffectingCombat("player") then -- Fishing For Attention
+								CancelUnitBuff("player", i)
+							end
 						end
 					end
 				end
@@ -6068,12 +6066,15 @@
 			-- Function to cancel buffs
 			local function eventFunc()
 				for i = 1, 40 do
-					local void, void, void, void, length, expire, void, void, void, spellID = UnitBuff("player", i)
-					if spellID and cTable[spellID] then
-						if UnitAffectingCombat("player") then
-							spellFrame:RegisterEvent("PLAYER_REGEN_ENABLED")
-						else
-							CancelUnitBuff("player", i)
+					local BuffData = C_UnitAuras.GetBuffDataByIndex("player", i)
+					if BuffData then
+						local spellID = BuffData.spellId
+						if spellID and cTable[spellID] then
+							if UnitAffectingCombat("player") then
+								spellFrame:RegisterEvent("PLAYER_REGEN_ENABLED")
+							else
+								CancelUnitBuff("player", i)
+							end
 						end
 					end
 				end
@@ -6097,10 +6098,13 @@
 
 					-- Traverse buffs (will only run spell was found in cTable previously)
 					for i = 1, 40 do
-						local void, void, void, void, length, expire, void, void, void, spellID = UnitBuff("player", i)
-						if spellID and cTable[spellID] then
-							spellFrame:UnregisterEvent("PLAYER_REGEN_ENABLED")
-							CancelUnitBuff("player", i)
+						local BuffData = C_UnitAuras.GetBuffDataByIndex("player", i)
+						if BuffData then
+							local spellID = BuffData.spellId
+							if spellID and cTable[spellID] then
+								spellFrame:UnregisterEvent("PLAYER_REGEN_ENABLED")
+								CancelUnitBuff("player", i)
+							end
 						end
 					end
 
@@ -6221,9 +6225,9 @@
 						GameTooltip:SetOwner(self, "ANCHOR_TOP", 0, 4)
 						GameTooltip:ClearLines()
 						if count > 1 then
-							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skills for"] .. " " .. GetCoinTextureString(cost))
+							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skills for"] .. " " .. C_CurrencyInfo.GetCoinTextureString(cost))
 						else
-							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skill for"] .. " " .. GetCoinTextureString(cost))
+							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skill for"] .. " " .. C_CurrencyInfo.GetCoinTextureString(cost))
 						end
 						GameTooltip:Show()
 					end
@@ -6309,6 +6313,7 @@
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockSpellLinks", "Block spell links during combat", 16, -92, false, "If checked, messages containing spell links will be blocked while you are in combat.|n|nThis is useful for blocking spell interrupt spam.|n|nThis applies to the say, party, raid, instance, emote and yell channels.")
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockDrunkenSpam", "Block drunken spam", 16, -112, false, "If checked, drunken messages will be blocked unless they apply to your character.|n|nThis applies to the system channel.")
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockDuelSpam", "Block duel spam", 16, -132, false, "If checked, duel victory and retreat messages will be blocked unless your character took part in the duel.|n|nThis applies to the system channel.")
+			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockAngelisSinny", "Block Angelis and Sinny spam", 16, -152, false, "If checked, messages from Angelis and Sinny (part of Bondable Val'kyr Diadem and Bondable Sinstone toys) will be blocked.|n|nThis applies to the monster whisper channel.")
 
 			-- Lock block drunken spam option for zhTW
 			if GameLocale == "zhTW" then
@@ -6331,8 +6336,21 @@
 			local charRealm = GetNormalizedRealmName()
 			local nameRealm = charName .. "%%-" .. charRealm
 
+			-- Localise Angelis and Sinny spam
+				if GameLocale == "frFR" then L["Sinny"] = "Stèlon"		; L["Angelis"] = "Angélis"
+			elseif GameLocale == "ptBR" then L["Sinny"] = "Pecadito"	; L["Angelis"] = "Ângelis"
+			elseif GameLocale == "ruRU" then L["Sinny"] = "Грешок"		; L["Angelis"] = "Ангелис"
+			elseif GameLocale == "koKR" then L["Sinny"] = "죄악이"			; L["Angelis"] = "안젤리스"
+			elseif GameLocale == "zhTW" then L["Sinny"] = "罪罪"			; L["Angelis"] = "安吉莉丝"
+			elseif GameLocale == "zhCN" then L["Sinny"] = "罪罪"			; L["Angelis"] = "安吉莉丝"
+			elseif GameLocale == "deDE" then L["Sinny"] = "Sündi"
+			elseif GameLocale == "esES" then L["Sinny"] = "Pecadín"
+			elseif GameLocale == "esMX" then L["Sinny"] = "Pecadín"
+			elseif GameLocale == "itIT" then L["Sinny"] = "Peccatello"
+			end
+
 			-- Chat filter
-			local function ChatFilterFunc(self, event, msg)
+			local function ChatFilterFunc(self, event, msg, sender)
 				-- Block duel spam
 				if LeaPlusLC["BlockDuelSpam"] == "On" then
 					-- Block duel messages unless you are part of the duel
@@ -6361,6 +6379,14 @@
 						local drunk1 = _G["DRUNK_MESSAGE_ITEM_OTHER"..i]:gsub("%%s", "%s-")
 						local drunk2 = _G["DRUNK_MESSAGE_OTHER"..i]:gsub("%%s", "%s-")
 						if msg:match(drunk1) or msg:match(drunk2) then
+							return true
+						end
+					end
+				end
+				-- Block Angelis and Sinny spam
+				if LeaPlusLC["BlockAngelisSinny"] == "On" then
+					if sender then
+						if sender == L["Angelis"] or sender == L["Sinny"] then
 							return true
 						end
 					end
@@ -6395,12 +6421,18 @@
 				else
 					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_SYSTEM", ChatFilterFunc)
 				end
+				if LeaPlusLC["BlockAngelisSinny"] == "On" then
+					ChatFrame_AddMessageEventFilter("CHAT_MSG_MONSTER_WHISPER", ChatFilterFunc)
+				else
+					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_MONSTER_WHISPER", ChatFilterFunc)
+				end
 			end
 
 			-- Set chat filter when settings are clicked and on startup
 			LeaPlusCB["BlockSpellLinks"]:HookScript("OnClick", SetChatFilter)
 			LeaPlusCB["BlockDrunkenSpam"]:HookScript("OnClick", SetChatFilter)
 			LeaPlusCB["BlockDuelSpam"]:HookScript("OnClick", SetChatFilter)
+			LeaPlusCB["BlockAngelisSinny"]:HookScript("OnClick", SetChatFilter)
 			SetChatFilter()
 
 			-- Reset button handler
@@ -6410,6 +6442,7 @@
 				LeaPlusLC["BlockSpellLinks"] = "Off"
 				LeaPlusLC["BlockDrunkenSpam"] = "Off"
 				LeaPlusLC["BlockDuelSpam"] = "Off"
+				LeaPlusLC["BlockAngelisSinny"] = "Off"
 				SetChatFilter()
 
 				-- Refresh configuration panel
@@ -6424,6 +6457,7 @@
 					LeaPlusLC["BlockSpellLinks"] = "On"
 					LeaPlusLC["BlockDrunkenSpam"] = "On"
 					LeaPlusLC["BlockDuelSpam"] = "On"
+					LeaPlusLC["BlockAngelisSinny"] = "On"
 					SetChatFilter()
 				else
 					ChatFilterPanel:Show()
@@ -8345,10 +8379,13 @@
 			-- Function to show spell ID in tooltips
 			local function CooldownIDFunc(unit, target, index, auratype)
 				if LeaPlusLC["ShowCooldownID"] == "On" and auratype ~= "HARMFUL" then
-					local spellid = select(10, UnitAura(target, index))
-					if spellid then
-						GameTooltip:AddLine(L["Spell ID"] .. ": " .. spellid)
-						GameTooltip:Show()
+					local AuraData = C_UnitAuras.GetAuraDataByIndex(target, index)
+					if AuraData then
+						local spellid = AuraData.spellId
+						if spellid then
+							GameTooltip:AddLine(L["Spell ID"] .. ": " .. spellid)
+							GameTooltip:Show()
+						end
 					end
 				end
 			end
@@ -8985,6 +9022,8 @@
 						LT["InfoLine"] = LT["InfoLine"] + 1
 						LT["SpecLine"] = LT["SpecLine"] + 1
 					end
+					-- Quit if gametooltip spec line doesn't exist or has no text (such as Akunda the Nimble in Vol'dun)
+					if not _G["GameTooltipTextLeft" .. LT["SpecLine"]] or not _G["GameTooltipTextLeft" .. LT["SpecLine"]]:GetText() then return end
 				end
 
 				-- Determine class color
@@ -10806,6 +10845,7 @@
 				LeaPlusLC:LoadVarChk("BlockSpellLinks", "Off")				-- Block spell links
 				LeaPlusLC:LoadVarChk("BlockDrunkenSpam", "Off")				-- Block drunken spam
 				LeaPlusLC:LoadVarChk("BlockDuelSpam", "Off")				-- Block duel spam
+				LeaPlusLC:LoadVarChk("BlockAngelisSinny", "Off")			-- Block Angelis and Sinny spam
 				LeaPlusLC:LoadVarChk("RestoreChatMessages", "Off")			-- Restore chat messages
 
 				-- Text
@@ -11158,6 +11198,7 @@
 			LeaPlusDB["BlockSpellLinks"]		= LeaPlusLC["BlockSpellLinks"]
 			LeaPlusDB["BlockDrunkenSpam"]		= LeaPlusLC["BlockDrunkenSpam"]
 			LeaPlusDB["BlockDuelSpam"]			= LeaPlusLC["BlockDuelSpam"]
+			LeaPlusDB["BlockAngelisSinny"]		= LeaPlusLC["BlockAngelisSinny"]
 			LeaPlusDB["RestoreChatMessages"]	= LeaPlusLC["RestoreChatMessages"]
 
 			-- Text
@@ -12294,27 +12335,6 @@
 						if npcID then
 							LeaPlusLC:ShowSystemEditBox("https://" .. LeaPlusLC.WowheadLock .. "/npc=" .. npcID, false)
 							LeaPlusLC.FactoryEditBox.f:SetText(L["NPC"] .. ": " .. npcName .. " (" .. npcID .. ")")
-							return
-						end
-					end
-					-- Buffs and debuffs
-					for i = 1, BUFF_MAX_DISPLAY do
-						if _G["BuffButton" .. i] and mouseFocus == _G["BuffButton" .. i] then
-							local spellName, void, void, void, void, void, void, void, void, spellID = UnitBuff("player", i)
-							if spellName and spellID then
-								LeaPlusLC:ShowSystemEditBox("https://" .. LeaPlusLC.WowheadLock .. "/spell=" .. spellID, false)
-								LeaPlusLC.FactoryEditBox.f:SetText(L["Spell"] .. ": " .. spellName .. " (" .. spellID .. ")")
-							end
-							return
-						end
-					end
-					for i = 1, DEBUFF_MAX_DISPLAY do
-						if _G["DebuffButton" .. i] and mouseFocus == _G["DebuffButton" .. i] then
-							local spellName, void, void, void, void, void, void, void, void, spellID = UnitDebuff("player", i)
-							if spellName and spellID then
-								LeaPlusLC:ShowSystemEditBox("https://" .. LeaPlusLC.WowheadLock .. "/spell=" .. spellID, false)
-								LeaPlusLC.FactoryEditBox.f:SetText(L["Spell"] .. ": " .. spellName .. " (" .. spellID .. ")")
-							end
 							return
 						end
 					end
@@ -13753,27 +13773,30 @@
 				-- Myza's Oasis
 				local target
 				for i = 1, 40 do
-					local void, void, void, void, length, expire, void, void, void, spellID = UnitDebuff("player", i)
-					if spellID then
-						if spellID == 352125 or spellID == 358911 or spellID == 358912 then
-							target = "Xy'ghana"
-						elseif spellID == 352127 or spellID == 358905 or spellID == 358906 then
-							target = "Xy'aqida"
-						elseif spellID == 352128 or spellID == 358907 or spellID == 358908 then
-							target = "Xy'tadir"
-						elseif spellID == 352129 or spellID == 358915 or spellID == 358916 then
-							target = "Xy'nara"
-						elseif spellID == 352130 or spellID == 358900 or spellID == 358901 then
-							target = "Xy'mal"
-						elseif spellID == 352131 or spellID == 358917 or spellID == 358918 then
-							target = "Xy'jahid"
-						elseif spellID == 352132 or spellID == 358903 or spellID == 358904 then
-							target = "Xy'kitaab"
-						elseif spellID == 352133 or spellID == 358913 or spellID == 358914 then
-							target = "Xy'har"
-						elseif spellID == 352134 or spellID == 358909 or spellID == 358910 then
-							target = "Xy'zaro"
-						-- elseif spellID == 15007 then target = "Ghost" -- Resurrection sickness (debug)
+					local DebuffData = C_UnitAuras.GetDebuffDataByIndex("player", i)
+					if DebuffData then
+						local spellID = DebuffData.spellId
+						if spellID then
+							if spellID == 352125 or spellID == 358911 or spellID == 358912 then
+								target = "Xy'ghana"
+							elseif spellID == 352127 or spellID == 358905 or spellID == 358906 then
+								target = "Xy'aqida"
+							elseif spellID == 352128 or spellID == 358907 or spellID == 358908 then
+								target = "Xy'tadir"
+							elseif spellID == 352129 or spellID == 358915 or spellID == 358916 then
+								target = "Xy'nara"
+							elseif spellID == 352130 or spellID == 358900 or spellID == 358901 then
+								target = "Xy'mal"
+							elseif spellID == 352131 or spellID == 358917 or spellID == 358918 then
+								target = "Xy'jahid"
+							elseif spellID == 352132 or spellID == 358903 or spellID == 358904 then
+								target = "Xy'kitaab"
+							elseif spellID == 352133 or spellID == 358913 or spellID == 358914 then
+								target = "Xy'har"
+							elseif spellID == 352134 or spellID == 358909 or spellID == 358910 then
+								target = "Xy'zaro"
+							-- elseif spellID == 15007 then target = "Ghost" -- Resurrection sickness (debug)
+							end
 						end
 					end
 				end
@@ -13914,6 +13937,7 @@
 				LeaPlusDB["BlockSpellLinks"] = "On"				-- Block spell links
 				LeaPlusDB["BlockDrunkenSpam"] = "On"			-- Block drunken spam
 				LeaPlusDB["BlockDuelSpam"] = "On"				-- Block duel spam
+				LeaPlusDB["BlockAngelisSinny"] = "On"			-- Block Angelis and Sinny spam
 				LeaPlusDB["RestoreChatMessages"] = "On"			-- Restore chat messages
 
 				-- Text

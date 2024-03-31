@@ -1,3 +1,8 @@
+VER 3 000000000100000D "Arcane Explosion" "INV_MISC_QUESTIONMARK"
+#showtooltip Arcane Explosion
+/cast [nomod] Arcane Explosion
+/cast [mod:shift] Arcane Explosion(Rank 1)
+END
 VER 3 0000000001000005 "Arcane Intellect" "INV_MISC_QUESTIONMARK"
 #showtooltip Arcane Intellect
 /cast Arcane Intellect
@@ -8,6 +13,11 @@ VER 3 0000000001000009 "Arcane Missiles" "INV_MISC_QUESTIONMARK"
 /targetenemy [dead][noharm]
 /startattack
 /cast Arcane Missiles
+END
+VER 3 0000000001000010 "blz" "134400"
+#showtooltip blizzard
+/cast [nomod] blizzard
+/cast [mod:shift] Blizzard(Rank 1)
 END
 VER 3 0000000001000007 "Conjure Food" "INV_MISC_QUESTIONMARK"
 #showtooltip Conjure Food
@@ -23,6 +33,12 @@ VER 3 0000000001000008 "Evocation" "INV_MISC_QUESTIONMARK"
 /targetenemy [dead][noharm]
 /startattack
 /cast Evocation
+END
+VER 3 000000000100000F "Fb" "134400"
+#showtooltip Frostbolt
+/cleartarget [dead][noharm]
+/targetenemy [dead][noharm]
+/cast Frostbolt
 END
 VER 3 0000000001000003 "Fire Blast" "INV_MISC_QUESTIONMARK"
 #showtooltip Fire Blast
@@ -68,4 +84,11 @@ VER 3 000000000100000C "pyro" "134400"
 /cleartarget [dead][noharm]
 /targetenemy [dead][noharm]
 /cast Pyroblast
+END
+VER 3 000000000100000E "Scorch" "INV_MISC_QUESTIONMARK"
+#showtooltip Scorch
+/cleartarget [dead][noharm]
+/targetenemy [dead][noharm]
+/startattack
+/cast Scorch
 END

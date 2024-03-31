@@ -81,6 +81,20 @@ LibDialog:Register(RSConstants.APPLY_COLLECTIONS_LOOT_FILTERS, {
 					RSConfigDB.SetShowingMissingAppearances(false)
 				end
 				
+				if (self.data.filters[RSConstants.EXPLORER_FILTER_DROP_DRAKEWATCHER]) then
+					RSConfigDB.SetShowingMissingDrakewatcher(true)
+				else
+					RSConfigDB.SetShowingMissingDrakewatcher(false)
+				end
+				
+				for groupKey, _ in pairs(RSCollectionsDB.GetItemGroups()) do
+					if (self.data.filters[string.format(RSConstants.EXPLORER_FILTER_DROP_CUSTOM, groupKey)]) then
+						RSConfigDB.SetShowingCustomItems(groupKey, true)
+					else
+						RSConfigDB.SetShowingCustomItems(groupKey, false)
+					end
+				end
+				
 				RSLogger:PrintMessage(AL["LOG_LOOT_FILTERS_APPLIED"])
             end,
         },
@@ -98,7 +112,7 @@ LibDialog:Register(RSConstants.APPLY_COLLECTIONS_LOOT_FILTERS, {
 ---============================================================================
 
 LibDialog:Register(RSConstants.EXPLORER_SCAN_NOT_DONE, {
-	text = string.format(AL["EXPLORER_SCAN_NOT_DONE"]),
+	text = AL["EXPLORER_SCAN_NOT_DONE"],
 	no_close_button = true,
     buttons = {
         {
@@ -121,7 +135,7 @@ LibDialog:Register(RSConstants.EXPLORER_SCAN_NOT_DONE, {
 ---============================================================================
 
 LibDialog:Register(RSConstants.TARGET_UNIT_WARNING, {
-	text = string.format(AL["TARGET_UNIT_WARNING"]),
+	text = AL["TARGET_UNIT_WARNING"],
 	no_close_button = true,
     buttons = {
         {
@@ -136,6 +150,43 @@ LibDialog:Register(RSConstants.TARGET_UNIT_WARNING, {
             on_click = function(self, mouseButton, down)
             	RSConfigDB.SetScanningTargetUnit(false)
             	LibDialog:Dismiss(RSConstants.TARGET_UNIT_WARNING)
+            end,
+        },
+    },          
+})
+
+
+---============================================================================
+-- Explorer custom loot messages
+---============================================================================
+
+LibDialog:Register(RSConstants.ITEM_LIST_VALIDATION_ERROR, {
+	text = AL["EXPLORER_CUSTOM_ITEMS_LIST_VALIDATION"],
+	no_close_button = false,
+	no_cancel_on_escape = true
+})
+
+LibDialog:Register(RSConstants.ITEM_LIST_WRONG_IDS_ERROR, {
+	text = AL["EXPLORER_CUSTOM_ITEMS_WRONG_IDS_VALIDATION"],
+	no_close_button = false,
+	no_cancel_on_escape = true
+})
+
+LibDialog:Register(RSConstants.DELETE_GROUP_CONFIRMATION, {
+	text = AL["EXPLORER_CUSTOM_ITEMS_DELETE_GROUP_CONFIRMATION"],
+	no_close_button = true,
+    buttons = {
+        {
+            text = YES,
+            on_click = function(self, mouseButton, down)
+            	local callback = self.data.callback
+        		callback()
+            end,
+        },
+        {
+            text = NO,
+            on_click = function(self, mouseButton, down)
+            	LibDialog:Dismiss(RSConstants.DELETE_GROUP_CONFIRMATION)
             end,
         },
     },          

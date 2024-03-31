@@ -1,8 +1,8 @@
-## Interface: 100205
+## Interface: 100206
 ## Title: HealthBarColor
 ## Author: Slothpala
 ## SavedVariables: HealthBarColorDB
-## OptionalDeps: Ace3, LibDeflate, LibDBIcon-1.0, LibDualSpec-1.0, LibSharedMedia-3.0, LibDDI-1.0, LibCanDispel
+## OptionalDeps: Ace3, LibDeflate, LibDBIcon-1.0, LibDualSpec-1.0, LibSharedMedia-3.0, LibDDI-1.0, LibCanDispel-1.0
 ## AddonCompartmentFunc: HealthBarColor_OnAddonCompartmentClick
 ## IconTexture: Interface\AddOns\HealthBarColor\Media\Textures\Icon.tga
 ## X-Curse-Project-ID: 682398

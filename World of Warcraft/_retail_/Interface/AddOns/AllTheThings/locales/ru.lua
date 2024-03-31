@@ -40,7 +40,6 @@ local L = app.L;
 	L.SOURCES_DESC = "Показывает Источник этой Штучки.\n\nВ частности, конкретный торговец/НИП, Задание, Событие и т.д.";
 	L.WRONG_FACTION = "Вы должны быть за другую фракцию, чтобы видеть это.";
 	L.ARTIFACT_INTRO_REWARD = "Выдаётся в награду за выполнение вводного задания для данного Артефакта.";
-	L.FACTION_SPECIFIC_REP = "Не все репутации видны одному персонажу. Например, Всадники Песни Войны не видны Игрокам Альянса, а Среброкрылые Часовые - Игрокам Орды.";
 	L.VISIT_FLIGHT_MASTER = "Посетите Распорядителя Полётов для добавления в кэш.";
 	L.FLIGHT_PATHS_DESC = "Пути Полётов засчитываются, когда Вы говорите с Распорядителем Полётов на каждом континенте.\n  - Crieve";
 	L.FOLLOWERS_COLLECTION_DESC = "Спутники могут быть собраны на Весь Аккаунт, если включена соответствующая опция.\n\nВы должны вручную обновить коллекцию через "..SHIFT_KEY_TEXT.." клик по заголовку, чтобы они засчитались.";
@@ -79,10 +78,13 @@ local L = app.L;
 	L.AUCTIONATOR_GROUPS = "Поиск по группам доступен только при использовании Auctionator.";
 	L.TSM4_ERROR = "TSM4 пока что не совместим с ATT. Если Вы знаете, как создавать Группы, как мы делали это в TSM3, пожалуйста, свяжитесь с Crieve в Дискорде!";
 	L.QUEST_MAY_BE_REMOVED = "Ошибка при получении информации. Это задание, возможно, удалено из игры. ";
-	L.MINUMUM_STANDING = "Требуется отношение не менее, чем";
-	L._WITH_ = " с ";
-	L.MAXIMUM_STANDING = "Требуется отношение менее, чем";
-	L.MIN_MAX_STANDING = "Требуется отношение между";
+	
+	
+	L.FACTION_SPECIFIC_REP = "Не все репутации видны одному персонажу. Например, Всадники Песни Войны не видны Игрокам Альянса, а Среброкрылые Часовые - Игрокам Орды.";
+	L.MINUMUM_STANDING_WITH_FACTION = "Требуется отношение не менее, чем %s с %s.";
+	L.MAXIMUM_STANDING_WITH_FACTION = "Требуется отношение менее, чем %s с %s.";
+	L.MIN_MAX_STANDING_WITH_FACTION = "Требуется отношение между %s и %s с %s.";
+	
 	L.ADDED_WITH_PATCH = "Добавлено в патче";
 	L.REMOVED_WITH_PATCH = "Убрано в патче";
 	--TODO: L.ALIVE = "Alive";
@@ -90,7 +92,6 @@ local L = app.L;
 	L.OBJECT_TYPE = "Тип Объекта";
 	L.OBJECTIVES = "Цели";
 	L.QUEST_GIVERS = "Квестодатели";
-	L._AND = " и";
 	L.DURING_WQ_ONLY = "Может быть выполнено, когда локальное задание активно.";
 	L.COMPLETED_DAILY = "Может быть выполнено ежедневно.";
 	L.COMPLETED_WEEKLY = "Может быть выполнено еженедельно.";
@@ -477,8 +478,6 @@ local L = app.L;
 		L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено*|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffНе Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Сохранено|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.KNOWN_ON_CHARACTER = "|T" .. app.asset("known") .. ":0|t |cff15abffИзвестно на текущем персонаже|r";
-		L.UNKNOWN_ON_CHARACTER = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Неизвестно на текущем персонаже|r";
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffВалюта|r";
 
 local a = L.ABBREVIATIONS;
@@ -525,12 +524,6 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
-	-- Cataclysm PvP Seasons
-		[-672] = select(2, GetAchievementInfo(6002))..": Сезон 9",	-- Vicious Gladiator: Season 9
-		[-656] = "Доспехи Беспощадного гладиатора за очки чести",	-- Honor Gear Ruthless Season
-		[-673] = select(2, GetAchievementInfo(6124))..": Сезон 10",	-- Ruthless Gladiator: Season 10
-		[-654] = "Доспехи Гладиатора Катаклизма за очки чести",		-- Honor Gear Cataclysmic Season
-		[-674] = select(2, GetAchievementInfo(6938))..": Сезон 11",	-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
 		[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season

@@ -62,8 +62,8 @@ local CreateDataCache = function(name, skipMapCaching)
 		currentCache = oldCache;
 	end
 	setmetatable(cache, fieldMeta);
-	cache["npcID"] = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
-	--cache["requireSkill"] = cache.professionID;	-- identical cache as professionID (in Retail)
+	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
+	--cache.requireSkill = cache.professionID;	-- identical cache as professionID (in Retail)
 	return cache;
 end
 currentCache = CreateDataCache("default");
@@ -154,9 +154,9 @@ if app.Debugging and app.Version == "[Git]" then
 		end
 	end
 	cacheHeaderID = function(group, headerID)
-		if not group.type and not L["HEADER_NAMES"][headerID] then
+		if not group.type and not L.HEADER_NAMES[headerID] then
 			print("Header Missing Name ", headerID);
-			L["HEADER_NAMES"][headerID] = "Header #" .. headerID;
+			L.HEADER_NAMES[headerID] = "Header #" .. headerID;
 		end
 		referenceCounter[headerID] = (referenceCounter[headerID] or 0) + 1;
 		CacheField(group, "headerID", headerID);
@@ -176,9 +176,11 @@ local providerTypeConverters = {
 	["o"] = cacheObjectID,
 	["c"] = function(group, providerID)
 		CacheField(group, "currencyIDAsCost", providerID);
+		CacheField(group, "currencyID", providerID);
 	end,
 	["i"] = function(group, providerID)
 		CacheField(group, "itemIDAsCost", providerID);
+		CacheField(group, "itemID", providerID);
 	end,
 	["g"] = function(group, providerID)
 		-- Do nothing, nothing to cache.
@@ -584,6 +586,15 @@ if app.IsRetail then
 	fieldConverters.c = nil
 	fieldConverters.r = nil
 	fieldConverters.races = nil
+
+	-- Retail doesn't need to double cache the object attached to currencies/items because it uses the cost
+	-- caches for the same information
+	providerTypeConverters.c = function(group, providerID)
+		CacheField(group, "currencyIDAsCost", providerID);
+	end
+	providerTypeConverters.i = function(group, providerID)
+		CacheField(group, "itemIDAsCost", providerID);
+	end
 
 	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
 	_CacheFields = function(group)

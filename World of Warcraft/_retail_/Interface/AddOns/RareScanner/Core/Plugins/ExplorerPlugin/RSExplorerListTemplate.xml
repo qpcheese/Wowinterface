@@ -38,65 +38,6 @@
       <Frame parentKey="ElevatedFrame" framelevel="50" setAllPoints="true" />
     </Frames>
   </Frame>
-  
-  <Slider name="RSExplorerScrollBarTemplate" parentKey="scrollBar" virtual="true">
-    <Size x="10" y="0"/>
-    <Layers>
-      <Layer level="BACKGROUND" textureSubLevel="1">
-        <Texture name="$parentBG" setAllPoints="true" hidden="true" parentKey="trackBG" atlas="Soulbinds_Collection_Scrollbar_Background" useAtlasSize="true"/>
-      </Layer>
-      <Layer level="BACKGROUND">
-        <Texture atlas="Soulbinds_Collection_Scrollbar_Backplate" useAtlasSize="true">
-          <Anchors>
-            <Anchor point="TOPRIGHT" x="7" y="30"/>
-            <Anchor point="BOTTOMRIGHT" x="7" y="-30"/>
-          </Anchors>
-        </Texture>
-      </Layer>
-    </Layers>
-    <Frames>
-      <Button name="$parentScrollUpButton" parentKey="UpButton" inherits="RSExplorerScrollUpButtonTemplate">
-        <Anchors>
-          <Anchor point="TOP" relativePoint="TOP" x="0" y="15"/>
-        </Anchors>
-        <Scripts>
-          <OnLoad function="HybridScrollFrameScrollUp_OnLoad"/>
-          <OnClick function="HybridScrollFrameScrollButton_OnClick"/>
-        </Scripts>
-      </Button>
-      <Button name="$parentScrollDownButton" parentKey="DownButton" inherits="RSExplorerScrollDownButtonTemplate">
-        <Anchors>
-          <Anchor point="BOTTOM" relativePoint="BOTTOM" x="0" y="-20"/>
-        </Anchors>
-        <Scripts>
-          <OnLoad function="HybridScrollFrameScrollDown_OnLoad"/>
-          <OnClick function="HybridScrollFrameScrollButton_OnClick"/>
-        </Scripts>
-      </Button>
-    </Frames>
-    <Scripts>
-      <OnValueChanged function="HybridScrollFrame_OnValueChanged"/>
-    </Scripts>
-    <ThumbTexture name="$parentThumbTexture" atlas="Soulbinds_Collection_Scrollbar_Thumb_Wide" parentKey="thumbTexture">
-      <Size x="10" y="24"/>
-    </ThumbTexture>
-  </Slider>
-  
-  <Button name="RSExplorerScrollUpButtonTemplate" virtual="true">
-    <Size x="10" y="10"/>
-    <NormalTexture parentKey="Normal" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Up" useAtlasSize="true"/>
-    <PushedTexture parentKey="Pushed" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Up" useAtlasSize="true"/>
-    <DisabledTexture parentKey="Disabled" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Up" useAtlasSize="true"/>
-    <HighlightTexture parentKey="Highlight" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Up" useAtlasSize="true" alphaMode="ADD"/>
-  </Button>
-  
-  <Button name="RSExplorerScrollDownButtonTemplate" virtual="true">
-    <Size x="10" y="10"/>
-    <NormalTexture parentKey="Normal" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Down" useAtlasSize="true" />
-    <PushedTexture parentKey="Pushed" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Down" useAtlasSize="true"/>
-    <DisabledTexture parentKey="Disabled" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Down" useAtlasSize="true"/>
-    <HighlightTexture parentKey="Highlight" inherits="UIPanelScrollBarButton" atlas="Soulbinds_Collection_Scrollbar_Arrow_Down" useAtlasSize="true" alphaMode="ADD"/>
-  </Button>
     
   <Frame name="RSExplorerNpcPortraitTemplate" virtual="true">
     <Size x="52" y="60"/>
@@ -177,6 +118,11 @@
       </Layer>
       <Layer level="BACKGROUND" textureSubLevel="1">
         <Texture parentKey="AppearanceTexture" file="Interface\AddOns\RareScanner\Media\Textures\AppearanceTexture" hidden="true">
+          <Size x="54" y="52"/>
+        </Texture>
+      </Layer>
+      <Layer level="BACKGROUND" textureSubLevel="1">
+        <Texture parentKey="CustomTexture" file="Interface\AddOns\RareScanner\Media\Textures\CustomTexture" hidden="true">
           <Size x="54" y="52"/>
         </Texture>
       </Layer>

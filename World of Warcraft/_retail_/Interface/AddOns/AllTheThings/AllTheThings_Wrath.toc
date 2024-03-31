@@ -3,7 +3,7 @@
 ## Name: AllTheThings
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Author: Crieve-Sargeras
-## Version: DF-3.9.11
+## Version: DF-3.9.12
 ## Interface: 30403
 ## X-Interface: 30403
 ## X-Wago-ID: yQKyY5K7
@@ -77,6 +77,7 @@ db\Presets.lua
 src\Classes\base.lua
 src\Classes\CharacterClass.lua
 src\Classes\Difficulty.lua
+src\Classes\Factions.lua
 src\Classes\Quests.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
@@ -99,6 +100,7 @@ src\Expansions\Warlords.lua
 src\Expansions\Legion.lua
 src\Expansions\Battle For Azeroth.lua
 src\Expansions\Shadowlands.lua
+src\Expansions\Dragonflight.lua
 
 # Load the Settings Menu
 src\Settings\Classic Settings.xml

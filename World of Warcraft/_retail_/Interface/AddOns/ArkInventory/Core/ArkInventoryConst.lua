@@ -994,44 +994,46 @@ ArkInventory.Const = { -- constants
 			Max = 9999,
 		},
 		
-		CharacterPaneOrder = {
+		INVTYPE_SortOrder = { -- sort order to display equipable items in
 			["INVTYPE_HEAD"] = 1,
 			["INVTYPE_NECK"] = 2,
 			["INVTYPE_SHOULDER"] = 3,
 			["INVTYPE_CLOAK"] = 4,
 			["INVTYPE_CHEST"] = 5,
-			["INVTYPE_ROBE"] = 5,
-			["INVTYPE_BODY"] = 6, -- shirt
-			["INVTYPE_TABARD"] = 7,
-			["INVTYPE_WRIST"] = 8,
+			["INVTYPE_ROBE"] = 6,
+			["INVTYPE_BODY"] = 7,
+			["INVTYPE_TABARD"] = 8,
+			["INVTYPE_WRIST"] = 9,
 			
-			["INVTYPE_HAND"] = 9,
-			["INVTYPE_WAIST"] = 10,
-			["INVTYPE_LEGS"] = 11,
-			["INVTYPE_FEET"] = 12,
-			["INVTYPE_FINGER"] = 13,
+			["INVTYPE_HAND"] = 10,
+			["INVTYPE_WAIST"] = 11,
+			["INVTYPE_LEGS"] = 12,
+			["INVTYPE_FEET"] = 13,
+			["INVTYPE_FINGER"] = 14,
 			["INVTYPE_TRINKET"] = 15,
 			
-			["INVTYPE_WEAPON"] = 17,
-			["INVTYPE_2HWEAPON"] = 17,
+			["INVTYPE_WEAPON"] = 16,
 			["INVTYPE_WEAPONMAINHAND"] = 17,
-			["INVTYPE_RANGED"] = 17,
-			["INVTYPE_RANGEDRIGHT"] = 17,
-			
-			["INVTYPE_SHIELD"] = 18,
 			["INVTYPE_WEAPONOFFHAND"] = 18,
-			["INVTYPE_HOLDABLE"] = 18,
+			["INVTYPE_HOLDABLE"] = 19,
+			["INVTYPE_RANGED"] = 20,
+			["INVTYPE_RANGEDRIGHT"] = 21,
+			["INVTYPE_SHIELD"] = 22,
+			["INVTYPE_2HWEAPON"] = 23,
 			
-			["INVTYPE_THROWN"] = 20,
-			["INVTYPE_RELIC"] = 20,
-			["INVTYPE_AMMO"] = 20,
+			["INVTYPE_THROWN"] = 24,
+			["INVTYPE_RELIC"] = 25,
+			["INVTYPE_AMMO"] = 26,
 			
-			-- stuff that needs to exist, but not get shown
+			["INVTYPE_PROFESSION_TOOL"] = 90,
+			["INVTYPE_PROFESSION_GEAR"] = 91,
+			
+			-- items with INVTYPEs that are assigned a value of zero will have their INVTYPE cleared so they cant be seen as equipment
+			-- unknown INVTYPEs will generate a one off warning and will also not be seen as equipment until added to this table
 			["INVTYPE_NON_EQUIP"] = 0,
+			["INVTYPE_NON_EQUIP_IGNORE"] = 0,
 			["INVTYPE_BAG"] = 0,
 			["INVTYPE_QUIVER"] = 0,
-			["INVTYPE_PROFESSION_TOOL"] = 0,
-			["INVTYPE_PROFESSION_GEAR"] = 0,
 		},
 		
 	},

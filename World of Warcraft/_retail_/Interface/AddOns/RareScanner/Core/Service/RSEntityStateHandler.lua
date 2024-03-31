@@ -364,24 +364,13 @@ end
 -- Handle Event state
 ---============================================================================
 
--- While loadding the addon there are several checkings that aren't required
--- This flag can be also used to skip all those checking when needed
-function RSEntityStateHandler.SetEventCompleted(eventID, loadingAddon)
-	if (not eventID) then
-		return
-	end
-	
-	-- Ignore if already completed
-	if (RSEventDB.IsEventCompleted(eventID)) then
+local function SetEventCompletedByZone(eventID, mapID, loadingAddon)
+	if (not eventID or not mapID) then
 		return
 	end
 
-	-- Remove recently seen
-	local x, y = RSRecentlySeenTracker.RemoveRecentlySeen(eventID)
-
-	local eventAlreadyFound = RSGeneralDB.GetAlreadyFoundEntity(eventID)
+	local eventAlreadyFoundInfo = RSGeneralDB.GetAlreadyFoundEntity(eventID)
 	local eventInternalInfo = RSEventDB.GetInternalEventInfo(eventID)
-	local mapID = eventAlreadyFound and eventAlreadyFound.mapID or eventInternalInfo and eventInternalInfo.zoneID
 
 	-- If we know for sure it remains completed
 	if (eventInternalInfo and eventInternalInfo.reset ~= nil and eventInternalInfo.reset == false) then
@@ -403,11 +392,11 @@ function RSEntityStateHandler.SetEventCompleted(eventID, loadingAddon)
 		RSLogger:PrintDebugMessage(string.format("Evento [%s]. Resetea pasados [%s]segundos", eventID))
 		RSEventDB.SetEventCompleted(eventID, time() + eventInternalInfo.resetTimer)
 		-- If its a world quest reseteable event
-	elseif (RSMapDB.IsEntityInReseteableZone(eventID, mapID, eventAlreadyFound)) then
+	elseif (RSMapDB.IsEntityInReseteableZone(eventID, mapID, eventAlreadyFoundInfo)) then
 		RSLogger:PrintDebugMessage(string.format("Evento [%s]. Resetea con las misiones del mundo (por pertenecer a una zona reseteable)", eventID))
 		RSEventDB.SetEventCompleted(eventID, time() + GetQuestResetTime())
 		-- If it wont ever be available anymore
-	elseif (RSMapDB.IsEntityInPermanentZone(eventID, mapID, eventAlreadyFound)) then
+	elseif (RSMapDB.IsEntityInPermanentZone(eventID, mapID, eventAlreadyFoundInfo)) then
 		RSLogger:PrintDebugMessage(string.format("Evento [%s]. No se puede completar de nuevo", eventID))
 		RSEventDB.SetEventCompleted(eventID)
 		-- If it has an associated quest and if its completed
@@ -422,17 +411,57 @@ function RSEntityStateHandler.SetEventCompleted(eventID, loadingAddon)
 	else
 		RSLogger:PrintDebugMessage(string.format("Evento [%s]. Vuelve a estar disponible (por descarte)", eventID))
 	end
+end
 
+-- While loadding the addon there are several checkings that aren't required
+-- This flag can be also used to skip all those checking when needed
+function RSEntityStateHandler.SetEventCompleted(eventID, loadingAddon)
+	if (not eventID) then
+		return
+	end
+	
+	-- Ignore if already completed
+	if (RSEventDB.IsEventCompleted(eventID)) then
+		return
+	end
+	
+	-- Mark as completed
+	local eventInfo = RSEventDB.GetInternalEventInfo(eventID)
+	if (eventInfo) then
+		-- Remove recently seen
+		local x, y = RSRecentlySeenTracker.RemoveRecentlySeen(eventID)
+	
+		-- If the npc belongs to several zones we have to use the players zone
+		if (RSEventDB.IsInternalEventMultiZone(eventID)) then
+			local playerZoneID = C_Map.GetBestMapForUnit("player")
+			if (not playerZoneID) then
+				return
+			end
+
+			for zoneID, zoneInfo in pairs (eventInfo.zoneID) do
+				if (loadingAddon) then
+					SetEventCompletedByZone(eventID, zoneID, loadingAddon)
+					break
+				elseif (playerZoneID == zoneID) then
+					SetEventCompletedByZone(eventID, zoneID, loadingAddon)
+					break
+				end
+			end
+		else
+			SetEventCompletedByZone(eventID, eventInfo.zoneID, loadingAddon)
+		end
+	end
+	
 	-- Extracts quest id if we don't have it
 	-- Avoids shift-left-click events
 	if (not loadingAddon and RSConstants.DEBUG_MODE) then
-		if ((not eventInternalInfo or not eventInternalInfo.questID) and not RSEventDB.GetEventQuestIdFound(eventID)) then
+		if ((not eventInfo or not eventInfo.questID) and not RSEventDB.GetEventQuestIdFound(eventID)) then
 			RSLogger:PrintDebugMessage(string.format("Evento [%s]. Buscando questID...", eventID))
 			RSQuestTracker.FindCompletedHiddenQuestID(eventID, function(eventID, newQuestID) 
 				RSEventDB.SetEventQuestIdFound(eventID, newQuestID) 
 			end)
 		else
-			RSLogger:PrintDebugMessage(string.format("El Evento [%s] ya dispone de questID [%s]", eventID, unpack(eventInternalInfo.questID)))
+			RSLogger:PrintDebugMessage(string.format("El Evento [%s] ya dispone de questID [%s]", eventID, unpack(eventInfo.questID)))
 		end
 	end
 

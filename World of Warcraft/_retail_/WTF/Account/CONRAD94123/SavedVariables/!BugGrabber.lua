@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2601,
+	["session"] = 2605,
 	["errors"] = {
 		{
 			["message"] = "...rface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:194: attempt to index global 'FarmHudDB' (a nil value)",
@@ -4150,20 +4150,20 @@ BugGrabberDB = {
 			["counter"] = 8,
 		}, -- [540]
 		{
-			["message"] = "...ce/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:39: attempt to index global 'ColorPickerCancelButton' (a nil value)",
-			["time"] = "2024/01/17 08:06:08",
-			["locals"] = "AddonName = \"iPMythicTimer\"\nAddon = <table> {\n PROGRESS_FORMAT_PERCENT = 1\n DECOR_FONT = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Regular.ttf\"\n TIMER_DIRECTION_DESC = 1\n cleanDungeon = <table> {\n }\n TIMER_DIRECTION_ASC = 2\n PROGRESS_DIRECTION_ASC = 1\n THEME_ACTIONS_IMPORT = 3\n opened = <table> {\n }\n DECOR_FONTSIZE_DELTA = 0\n PROGRESS_FORMAT_FORCES = 2\n optionList = <table> {\n }\n defaultOption = <table> {\n }\n THEME_ACTIONS_COPY = 2\n frames = <table> {\n }\n FONT_ROBOTO = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Regular.ttf\"\n ACOUSTIC_STRING_X3 = \"Interface\\AddOns\\iPMythicTimer\\media\\acoustic_string_x3.mp3\"\n AFFIX_TEEMING = 5\n backdrop = <table> {\n }\n THEME_ACTIONS_EXPORT = 4\n FONT_ROBOTO_LIGHT = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Light.ttf\"\n affixesCount = 4\n version = 1349\n PROGRESS_DIRECTION_DESC = 2\n localization = <table> {\n }\n season = <table> {\n }\n THEME_ACTIONS_NEW = 1\n DUNGEON_ARTWORK = \"dungeon\"\n}\nbackdrop = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8X8\"\n tileSize = 8\n edgeFile = \"Interface\\Buttons\\WHITE8X8\"\n edgeSize = 1\n tile = false\n}\ncurrentButton = nil\nColorChange = <function> defined @Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:14\nShowColorPicker = <function> defined @Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:27\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'ColorPickerCancelButton' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua\"]:39: in main chunk",
-			["session"] = 2601,
-			["counter"] = 68,
-		}, -- [541]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Gnosis' tried to call the protected function 'MultiBarBottomLeftButton1:SetShown()'.",
 			["time"] = "2023/07/28 13:26:27",
 			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface/FrameXML/ActionBar.lua\"]:196: in function `UpdateShownButtons'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:469: in function `UpdateAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:928: in function `OnEvent'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:207: in function <Interface/FrameXML/ActionButton.lua:204>",
 			["session"] = 2601,
 			["counter"] = 11,
+		}, -- [541]
+		{
+			["message"] = "...ce/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:39: attempt to index global 'ColorPickerCancelButton' (a nil value)",
+			["time"] = "2024/01/17 08:06:08",
+			["locals"] = "AddonName = \"iPMythicTimer\"\nAddon = <table> {\n PROGRESS_FORMAT_PERCENT = 1\n DECOR_FONT = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Regular.ttf\"\n TIMER_DIRECTION_DESC = 1\n cleanDungeon = <table> {\n }\n TIMER_DIRECTION_ASC = 2\n PROGRESS_DIRECTION_ASC = 1\n THEME_ACTIONS_IMPORT = 3\n opened = <table> {\n }\n DECOR_FONTSIZE_DELTA = 0\n PROGRESS_FORMAT_FORCES = 2\n optionList = <table> {\n }\n defaultOption = <table> {\n }\n THEME_ACTIONS_COPY = 2\n frames = <table> {\n }\n FONT_ROBOTO = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Regular.ttf\"\n ACOUSTIC_STRING_X3 = \"Interface\\AddOns\\iPMythicTimer\\media\\acoustic_string_x3.mp3\"\n AFFIX_TEEMING = 5\n backdrop = <table> {\n }\n THEME_ACTIONS_EXPORT = 4\n FONT_ROBOTO_LIGHT = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Light.ttf\"\n affixesCount = 4\n version = 1349\n PROGRESS_DIRECTION_DESC = 2\n localization = <table> {\n }\n season = <table> {\n }\n THEME_ACTIONS_NEW = 1\n DUNGEON_ARTWORK = \"dungeon\"\n}\nbackdrop = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8X8\"\n tileSize = 8\n edgeFile = \"Interface\\Buttons\\WHITE8X8\"\n edgeSize = 1\n tile = false\n}\ncurrentButton = nil\nColorChange = <function> defined @Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:14\nShowColorPicker = <function> defined @Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:27\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'ColorPickerCancelButton' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua\"]:39: in main chunk",
+			["session"] = 2605,
+			["counter"] = 72,
 		}, -- [542]
 	},
 }

@@ -1,4 +1,9 @@
-﻿# 3.10.25 (07-MAR-2024)
+﻿# 3.10.26 (20-MAR-2024)
+ - changed - (retail) toc updated to 100206
+ - changed - (classic) toc updated to 11501
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1871 - issue with INVTYPE_NON_EQUIP_IGNORE
+
+# 3.10.25 (07-MAR-2024)
  - fixed - https://github.com/arkayenro/arkinventory/issues/1829 - issue with add fields in config pages accepting a dropped item but not being able to handle it, they will now ignore it unless it can be used (adding an item to a custom category)
  - fixed - https://github.com/arkayenro/arkinventory/issues/1867 - menu library issue with ColorPickerFrame
  - changed - the search window should now load a bit faster, and should update significantly faster

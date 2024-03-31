@@ -1,0 +1,11 @@
+## Interface: 11500
+## Title: |cff16C3F2Sheepi|r |cFFFFFFFFUI|r
+## RequiredDeps: WeakAuras
+## Notes: Adds Textures and Fonts to the game that I use for my WeakAuras.
+## Author: SheepiWoW
+## Version: 1.0.0
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+embeds.xml
+Sheepi_UI.lua

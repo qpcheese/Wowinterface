@@ -13,40 +13,40 @@ PetBattleMasterDb = {
 									["speciesId"] = 1238,
 									["name"] = "Unborn Val'kyr",
 									["creatureId"] = 71163,
+									["petId"] = "BattlePet-0-000012B521D4",
+									["level"] = 25,
+									["petType"] = 4,
 									["abilities"] = {
 										210, -- [1]
 										218, -- [2]
 										652, -- [3]
 									},
-									["level"] = 25,
-									["petType"] = 4,
-									["petId"] = "BattlePet-0-000012B521D4",
 								}, -- [1]
 								{
 									["speciesId"] = 1532,
 									["name"] = "Ikky",
 									["creatureId"] = 86447,
+									["petId"] = "BattlePet-0-000012B146CB",
+									["level"] = 25,
+									["petType"] = 3,
 									["abilities"] = {
 										1370, -- [1]
 										919, -- [2]
 										581, -- [3]
 									},
-									["level"] = 25,
-									["petType"] = 3,
-									["petId"] = "BattlePet-0-000012B146CB",
 								}, -- [2]
 								{
 									["speciesId"] = 2834,
 									["name"] = "Aqir Hivespawn",
 									["creatureId"] = 161923,
+									["petId"] = "BattlePet-0-000012B822BF",
+									["level"] = 25,
+									["petType"] = 5,
 									["abilities"] = {
 										119, -- [1]
 										1007, -- [2]
 										1679, -- [3]
 									},
-									["level"] = 25,
-									["petType"] = 5,
-									["petId"] = "BattlePet-0-000012B822BF",
 								}, -- [3]
 							},
 							["name"] = "Unnamed",
@@ -58,18 +58,24 @@ PetBattleMasterDb = {
 		},
 	},
 	["profileKeys"] = {
-		["Flurrq - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
 		["Fishanus - Ragnaros"] = "Default",
 		["Qpaladin - Ragnaros"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
 		["Qpfromage - Sylvanas"] = "Default",
-		["Dogson - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["tooltipAttachment"] = false,
 			["frames"] = {
-				["petbmNameIconEditor"] = {
+				["petbmInfoView"] = {
+					["windowPosition"] = {
+						["y"] = -49,
+						["x"] = 0,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				},
 				["CollectionsJournal"] = {
 				},
@@ -81,13 +87,7 @@ PetBattleMasterDb = {
 						["relativePoint"] = "TOP",
 					},
 				},
-				["petbmInfoView"] = {
-					["windowPosition"] = {
-						["y"] = -49,
-						["x"] = 0,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+				["petbmNameIconEditor"] = {
 				},
 			},
 			["minimapIcon"] = {

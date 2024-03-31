@@ -31,6 +31,8 @@ L.extra = "%s (%s)" -- SPELL_NAME (short spell name or extra information)
 
 L.phase = "Фаза %d"
 L.stage = "Этап %d"
+--L.wave = "Wave %d" -- e.g. "Wave 1" (Waves of adds)
+--L.wave_count = "Wave %d of %d" -- Wave 1 of 3 (Usually waves of adds)
 L.normal = "Обычный режим"
 L.heroic = "Героический режим"
 L.mythic = "Эпохальный режим"
@@ -96,8 +98,9 @@ L.affixes = "Аффикс" -- Seasonal affixes for raids and mythic+ dungeons
 
 -- Common raid marking locale
 L.marker = "Метка %s"
-L.marker_player_desc = "Отмечать игроков, затронутых %s меткой %s, требуется быть помощником или лидером рейда."
-L.marker_npc_desc = "Отмечать %s меткой %s, требуется быть помощником или лидером рейда."
+L.marker_player_desc = "Отмечать игроков, затронутых %s меткой %s, требуется быть помощником или лидером рейда." -- Mark players affected by 'SPELL_NAME' with SKULL_ICON
+L.marker_npc_desc = "Отмечать %s меткой %s, требуется быть помощником или лидером рейда." -- Mark NPC_NAME with SKULL_ICON
+--L.marker_npc_aura_desc = "Mark NPCs affected by '%s' with %s, requires promoted or leader." -- Mark NPCs affected by 'SPELL_NAME' with SKULL_ICON
 
 -- Ability where two players have to move close to each other
 L.link = "Связь"

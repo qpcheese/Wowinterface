@@ -17,8 +17,6 @@ categories:CreateCategory(L["CATEGORY_NAME"])
 
 --@param data ItemData
 categories:RegisterCategoryFunction("TabardsCategoryFilter", function(data)
-	local quality = data.itemInfo.itemQuality
-
 	if (data.itemInfo.itemEquipLoc == "INVTYPE_TABARD" and db.GetItemCategoryByItemID(data.itemInfo.itemID) ~= nil) then
         categories:AddItemToCategory(data.itemInfo.itemID, L["CATEGORY_NAME"])
         config:GetBag(const.BAG_KIND.BACKPACK):Refresh()

@@ -107,7 +107,7 @@ function RSUtils.Contains(cTable, item)
 	end
 
 	if (type(cTable) == "table") then
-		for k, v in pairs(cTable) do
+		for _, v in pairs(cTable) do
 			if (type(v) == "table") then
 				return RSUtils.Contains(v, item)
 			elseif (type(item) == "table") then
@@ -129,6 +129,34 @@ function RSUtils.Contains(cTable, item)
 	end
 
 	return false;
+end
+
+function RSUtils.ContainsKeyValue(table, keyTable, value)
+	if (not table or not keyTable or not value) then
+		return false
+	end
+	
+	if (type(table) ~= "table") then
+		return false
+	elseif (type(keyTable) ~= "table") then
+		return false
+	else
+		for k, _ in pairs (table) do
+			local currentKey = nil
+			for _, key in ipairs (keyTable) do
+				if (k == key) then
+					currentKey = k;
+					break
+				end
+			end
+			
+			if (currentKey and table[currentKey][value]) then
+				return true
+			end
+		end
+		
+		return false
+	end
 end
 
 ---============================================================================

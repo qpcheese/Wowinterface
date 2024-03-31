@@ -62,9 +62,14 @@ local savedVariables = {
 			affixLevel = {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 			affixTime = {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 		},
+		class = "",
+		currentKeystone = {"", 0},
+		currentRating = 0,
 		esc = false,
 		frameStrata = "HIGH",
+		iLvl = 0,
 		lfdGroupButtons = true,
+		login = nil,
 		optionalBottomFrame = {
 			enable = true,
 			show = false,
@@ -79,7 +84,12 @@ local savedVariables = {
 		showMinimapIcon = true,
 		showDungeonTexture = true,
 		minimap = {},
+		weeklyRewards = {0, 0, 0, 0},
 	},
+	realm = {
+		weekly = {},
+		loot = {},
+	}
 };
 
 -- WoWGlobalFrame
@@ -90,6 +100,7 @@ local mainFrame = "mdc.main";
 local settingsFrame = mainFrame .. ".settingsFrame";
 local topFrame = mainFrame .. ".topFrame";
 local dungeonsFrame = mainFrame .. ".dungeonsFrame";
+local charsFrame = mainFrame .. ".charsFrame";
 local bottomFrame = mainFrame .. ".bottomFrame";
 local optionalBottomFrame = mainFrame .. ".optionalBottomFrame";
 local debugFrame = "mdc.debugFrame";
@@ -115,16 +126,12 @@ function mdc:OnInitialize()
 	libIcon:Register("MythicDungeonCalculator", miniButton, mdc.db.profile.minimap);
 end
 
-local function mdcLoadSavedVariables()
-	addonSize = mdc.db.profile.addonSize;
-
-	if not mdc.db.profile.optionalBottomFrame.enable then
-		mainY = 835;
-	end
+local function mdcRound(num)
+	return num >= 0 and math.floor(num + 0.5) or math.ceil(num - 0.5);
 end
 
 function mdc:OnEnable()
-	mdcLoadSavedVariables();
+	mdc:LoadSavedVariables();
 	normalFont = "GameFontNormal";
 	highlightFont = "GameFontHighlight";
 	C_MythicPlus.RequestMapInfo();
@@ -213,9 +220,10 @@ end
 
 function mdc:Show()
 	_G["GlobalMDCFrame"]:Hide();
-	F[mainFrame]:Hide();
-	F[mainFrame]:SetParent(nil);
-	overallScore = C_ChallengeMode.GetOverallDungeonScore();
+	if F[mainFrame] then
+		F[mainFrame]:Hide();
+		F[mainFrame]:SetParent(nil);
+	end
 	mdc:OnEnable();
 	mdc:ToggleESC();
 	mdc:GetDungeons();
@@ -383,6 +391,8 @@ function mdc:CreateMain()
 	F[settingsButton]:SetScript("OnLeave", function(self) self:GetNormalTexture():SetVertexColor(0.7, 0.7, 0.7, 0.7) end);
 
 	mdcFrame("dungeonsFrame", mainFrame, mainX, 800, "TOP", mainFrame, "TOP", 0, -35, nil);
+	mdcFrame("charsFrame", mainFrame, mainX, 800, "TOP", mainFrame, "TOP", 0, -35, nil);
+	F[charsFrame]:Hide();
 	mdcFrame("bottomFrame", mainFrame, mainX, 35, "TOP", mainFrame, "TOP", 0, -820, nil);
 end
 
@@ -509,6 +519,8 @@ function mdc:Sync(reset)
 			mdc.db.profile.calculation.affixTime[dungeon][affix] = F[minutes]:GetNumber() * 60 + F[seconds]:GetNumber();
 		end
 	end
+
+
 end
 
 function mdc:GetDungeons()
@@ -557,10 +569,6 @@ local function mdcCalculateAffixScore(mythicLevel, dungeonTime, affixTime)
 	return baseScore + affixScore;
 end
 
-local function mdcRound(num)
-	return num >= 0 and math.floor(num + 0.5) or math.ceil(num - 0.5);
-end
-
 local function mdcUpdateScores(level, dungeon, minutes, seconds, backdrop, affix)
 	local calculatedScore = 0;
 
@@ -580,6 +588,11 @@ local function mdcUpdateScores(level, dungeon, minutes, seconds, backdrop, affix
 		calculatedPlayerRating = calculatedPlayerRating + math.max(affixScores[1], affixScores[2]) * 1.5 + math.min(affixScores[1], affixScores[2]) * 0.5;
 	end
 
+	-- blizzard rounds weird :/
+	if calculatedPlayerRating - overallScore >= -1 and calculatedPlayerRating - overallScore <= 1 then
+		calculatedPlayerRating = overallScore;
+	end
+
 	F[topFrame .. ".calculatedPlayerRating"]:SetText(L["Calculated Rating"] .. ": " .. C_ChallengeMode.GetDungeonScoreRarityColor(mdcRound(calculatedPlayerRating)):WrapTextInColorCode(mdcRound(calculatedPlayerRating)));
 end
 
@@ -593,7 +606,8 @@ local function mdcSetTimeLimit(dungeon, affix, up)
 		local mm = ((dungeons[dungeon][3] * (1.2 - 0.2 * i)) - (dungeons[dungeon][3] * (1.2 - 0.2 * i)) % 60) / 60;
 		local ss = (dungeons[dungeon][3] * (1.2 - 0.2 * i)) % 60;
 
-		if ss > 59.99 and ss <= 60 then -- weird rounding behaviour
+		-- weird rounding behaviour
+		if ss > 59.99 and ss <= 60 then
 			mm = mm + 1;
 			ss = 0;
 		end
@@ -920,12 +934,14 @@ local function getRecommendedLevel()
 		end
 	end
 
-	if recommendedLevel <= highestAffixLevel - 3 then
-		recommendedLevel = highestAffixLevel - 1;
-	elseif recommendedLevel <= highestAffixLevel - 1 then
-		recommendedLevel = highestAffixLevel;
-	elseif recommendedLevel == highestAffixLevel then
-		recommendedLevel = highestAffixLevel + 1;
+	if highestAffixLevel > 0 then
+		if recommendedLevel <= highestAffixLevel - 3 then
+			recommendedLevel = highestAffixLevel - 1;
+		elseif recommendedLevel <= highestAffixLevel - 1 then
+			recommendedLevel = highestAffixLevel;
+		elseif recommendedLevel == highestAffixLevel then
+			recommendedLevel = highestAffixLevel + 1;
+		end
 	end
 
 	if recommendedLevel == 20 and averageAffixLevel >= 18 and highestAffixLevel >= 18 then
@@ -1097,6 +1113,10 @@ local function mdcKeystone(content)
 
 	mdcFontString("cKey", contentFrame, normalFont, "LEFT", contentFrame, "LEFT", 200, 60, L["Your Keystone"], 1.6);
 	mdcFontString("cKeyData", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 200, 20, cName ~= "" and cName .. " +" .. cLevel or "---", 1.6);
+	F[contentFrame .. ".cKeyData"]:SetMaxLines(2);
+	F[contentFrame .. ".cKeyData"]:SetWordWrap(true);
+	F[contentFrame .. ".cKeyData"]:SetJustifyH("LEFT");
+	F[contentFrame .. ".cKeyData"]:SetWidth(300 / addonSize);
 	mdcFontString("cExpectedRating", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 200, -20, L["Rating"] .. (cID ~= 0 and ": +" .. mdcRound(mdcRound(cRatings[2] + calculatedOverallScore) - overallScore) .. " (" .. mdcRound(cRatings[2] + calculatedOverallScore) .. ")" or ": ---"), 1.6);
 	local cExpectedRatingInfo = contentFrame .. ".cExpectedRatingInfo";
 	mdcFrame("cExpectedRatingInfo", contentFrame, 200, 24, "LEFT", contentFrame .. ".cExpectedRating", "LEFT", 0, 0);
@@ -1140,6 +1160,10 @@ local function mdcKeystone(content)
 
 	mdcFontString("rKey", contentFrame, normalFont, "RIGHT", contentFrame, "RIGHT", -200, 60, L["Recommended Keystone"], 1.6);
 	mdcFontString("rKeyData", contentFrame, highlightFont, "RIGHT", contentFrame, "RIGHT", -200, 20, (rDungeon[2] ~= "" and rLevel > 0) and rDungeon[2] .. " +" .. rLevel or "---", 1.6);
+	F[contentFrame .. ".rKeyData"]:SetMaxLines(2);
+	F[contentFrame .. ".rKeyData"]:SetWordWrap(true);
+	F[contentFrame .. ".rKeyData"]:SetJustifyH("RIGHT");
+	F[contentFrame .. ".rKeyData"]:SetWidth(300 / addonSize);
 	mdcFontString("rExpectedRating", contentFrame, highlightFont, "RIGHT", contentFrame, "RIGHT", -200, -20, L["Rating"] .. (rDungeon[3] ~= 0 and ": +" .. mdcRound(mdcRound(rRatings[2] + calculatedOverallScore) - overallScore) .. " (" .. mdcRound(rRatings[2] + calculatedOverallScore) .. ")" or ": ---"), 1.6);
 	local rExpectedRatingInfo = contentFrame .. ".rExpectedRatingInfo";
 	mdcFrame("rExpectedRatingInfo", contentFrame, 200, 24, "LEFT", contentFrame .. ".rExpectedRating", "LEFT", 0, 0);
@@ -1186,7 +1210,7 @@ local function mdcMythicPlusRewards(content)
 	mdcFontString("greatVault", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, -20, L["Great Vault"]);
 	mdcFontString("itemLevel", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, -60, L["Item Level"]);
 
-	local itemUpgrades = {L["Veteran"] .. ": 441 - 463", L["Champion"] .. ": 454 - 479", L["Hero"] .. ": 467 - 483", L["Myth"] .. ": 480 - 489"}
+	local itemUpgrades = {L["Veteran"] .. ": 441 - 463", L["Champion"] .. ": 454 - 476", L["Hero"] .. ": 467 - 483", L["Myth"] .. ": 480 - 489"}
 	for i = 1, 4 do
 		local button = contentFrame .. "." .. i
 		mdcButton(i, contentFrame, nil, 200, 34, "LEFT", contentFrame, "LEFT", 200 + 250 * (i - 1), -60, nil);
@@ -1201,10 +1225,10 @@ local function mdcMythicPlusRewards(content)
 			F[contentFrame .. ".EODLine" .. i]:Hide()
 			F[contentFrame .. ".GVLine" .. i]:Hide()
 		end);
-		mdcLine("leftLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT", 0, 0, "BOTTOMLEFT", 0, 0, 1);
-		mdcLine("rightLine", button, 0.7, 0.7, 0.7, 0.7, "TOPRIGHT", 0, 0, "BOTTOMRIGHT", 0, 0, 1);
-		mdcLine("topLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT",  0, 0, "TOPRIGHT", 0, 0, 1);
-		mdcLine("bottomLine", button, 0.7, 0.7, 0.7, 0.7, "BOTTOMLEFT", 0, 0, "BOTTOMRIGHT", 0, 0, 1);
+		mdcLine("leftLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT", 1, 0, "BOTTOMLEFT", 1, 0, 2);
+		mdcLine("rightLine", button, 0.7, 0.7, 0.7, 0.7, "TOPRIGHT", -1, 0, "BOTTOMRIGHT", -1, 0, 2);
+		mdcLine("topLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT",  0, 0, "TOPRIGHT", 0, 0, 2);
+		mdcLine("bottomLine", button, 0.7, 0.7, 0.7, 0.7, "BOTTOMLEFT", 0, 0, "BOTTOMRIGHT", 0, 0, 2);
 	end
 
 	mdcLine("EODLine1", contentFrame, 1, 1, 1, 0.5, "LEFT", 159, 20, "LEFT", 544, 20, 20);
@@ -1255,11 +1279,12 @@ local function mdcGreatVaultRewards(content)
 	local activities = C_WeeklyRewards.GetActivities(1);
 	local heroic, mythic, mythicPlus = C_WeeklyRewards.GetNumCompletedDungeonRuns();
 	local allRuns = heroic + mythic + mythicPlus;
+	mdc.db.profile.weeklyRewards[1] = allRuns;
+
 	local category = {};
 	local completedRuns = {};
 	local hcReward = 441;
 	local m0Reward = 450;
-
 
 	for _, run in pairs(C_MythicPlus.GetRunHistory(false, true)) do
 		local name = C_ChallengeMode.GetMapUIInfo(run.mapChallengeModeID)
@@ -1324,10 +1349,14 @@ local function mdcGreatVaultRewards(content)
 		mdcFontString("level", rewardFrame, highlightFont, "BOTTOM", rewardFrame, "BOTTOM", 0, -30, "");
 		if difficulties[i] == 'hc' then
 			F[rewardFrame .. ".level"]:SetText(L["Item Level"] .. ": " .. hcReward .. " (" .. L["Heroic"] .. ")");
+			mdc.db.profile.weeklyRewards[1 + i] = hcReward;
 		elseif difficulties[i] == 'm' then
 			F[rewardFrame .. ".level"]:SetText(L["Item Level"] .. ": " .. m0Reward .. " (" .. L["Mythic"] .. " 0)");
+			mdc.db.profile.weeklyRewards[1 + i] = m0Reward;
 		elseif difficulties[i] == 'm+' and category[i][3] > 0 then
-			F[rewardFrame .. ".level"]:SetText(L["Item Level"] .. ": " .. (C_MythicPlus.GetRewardLevelFromKeystoneLevel(category[i][3])) .. " (" .. L["Mythic"] .. " " .. category[i][3] .. ")");
+			local rewardLevel = C_MythicPlus.GetRewardLevelFromKeystoneLevel(category[i][3]);
+			F[rewardFrame .. ".level"]:SetText(L["Item Level"] .. ": " .. rewardLevel .. " (" .. L["Mythic"] .. " " .. category[i][3] .. ")");
+			mdc.db.profile.weeklyRewards[1 + i] = rewardLevel;
 		end
 
 		local _, nextMythicPlusLevel, itemLevel = C_WeeklyRewards.GetNextMythicPlusIncrease(category[i][3])
@@ -1496,6 +1525,69 @@ function mdc:OptionalBottomFrame()
 
 	if mdc.db.profile.optionalBottomFrame.show == true then
 		mdcSwitchOptionalBottomContent(mdc.db.profile.optionalBottomFrame.content);
+	end
+end
+
+function mdc:LoadSavedVariables()
+	overallScore = C_ChallengeMode.GetOverallDungeonScore();
+	mdc.db.profile.currentRating = overallScore;
+
+	addonSize = mdc.db.profile.addonSize;
+	_, mdc.db.profile.class = C_PlayerInfo.GetClass(PlayerLocation:CreateFromUnit("player"));
+
+	local _, iLvl = GetAverageItemLevel();
+	mdc.db.profile.iLvl = mdcRound(iLvl);
+
+	if not mdc.db.profile.optionalBottomFrame.enable then
+		mainY = 835;
+	end
+
+	if C_MythicPlus.GetOwnedKeystoneChallengeMapID() then
+		local cName = C_ChallengeMode.GetMapUIInfo(C_MythicPlus.GetOwnedKeystoneChallengeMapID());
+		local cLevel = C_MythicPlus.GetOwnedKeystoneLevel();
+		mdc.db.profile.currentKeystone = {cName, cLevel};
+	else
+		mdc.db.profile.currentKeystone = {"", 0};
+	end
+
+	local activities = C_WeeklyRewards.GetActivities(1);
+	local heroic, mythic, mythicPlus = C_WeeklyRewards.GetNumCompletedDungeonRuns();
+	local category = {};
+	local hcReward = 441;
+	local m0Reward = 450;
+	mdc.db.profile.weeklyRewards[1] = heroic + mythic + mythicPlus;
+
+	for _, activity in pairs(activities) do
+		local threshold;
+		local level;
+
+		for k, v in pairs(activity) do
+			if k == "level" then
+				level = v;
+			end
+
+			if k == "threshold" then
+				threshold = v;
+			end
+		end
+
+		table.insert(category, {threshold, level});
+	end
+
+	if #category > 0 then
+		for i = 1, 3 do
+			if heroic + mythic + mythicPlus >= category[i][1] then
+				mdc.db.profile.weeklyRewards[1 + i] = hcReward;
+
+				if mythic + mythicPlus >= category[i][1] then
+					mdc.db.profile.weeklyRewards[1 + i] = m0Reward;
+				end
+
+				if mythicPlus >= category[i][1] then
+					mdc.db.profile.weeklyRewards[1 + i] = C_MythicPlus.GetRewardLevelFromKeystoneLevel(category[i][2]);
+				end
+			end
+		end
 	end
 end
 
