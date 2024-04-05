@@ -40,9 +40,9 @@ SpyDB = {
 			["FilteredZones"] = {
 				["Gadgetzan"] = true,
 				["The Salty Sailor Tavern"] = true,
-				["Everlook"] = true,
-				["Ratchet"] = true,
 				["Booty Bay"] = true,
+				["Ratchet"] = true,
+				["Everlook"] = true,
 			},
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,

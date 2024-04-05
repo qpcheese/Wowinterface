@@ -28,12 +28,6 @@ local function chatMessage(type, playerName, duration)
     end
 end
 
-local isClassic = WOW_PROJECT_ID == (WOW_PROJECT_CLASSIC or 2)
-local isWrath = WOW_PROJECT_ID == (WOW_PROJECT_WRATH_CLASSIC or 11)
-
-local DBMPrefix = isClassic and "D5C" or isWrath and "D5WC" or "D5"
-local DBMSyncProtocol = 1
-
 local function SendMessage(cmd, timeValue)
     local message = cmd .. ":" .. (timeValue or "") .. ":" .. UnitName("player")
     local currentTime = GetTime()
@@ -58,22 +52,27 @@ local function SendMessage(cmd, timeValue)
     end
 
 if IsInRaid() then -- Send DBM Message out for DBM users
-        local prefix
-        if cmd == "BREAK" then
-            prefix = "BT"
-        elseif cmd == "BREAK_CANCEL" then
-            prefix, timeValue = "BT", 0
-        elseif cmd == "PULL" then
-            prefix = "PT"
-        elseif cmd == "PULL_CANCEL" then
-            prefix, timeValue = "PT", 0
-        end
-        if prefix then
-            local name, realm = UnitFullName("player")
-            local dbmMessage = ("%s-%s\t%d\t%s\t%s"):format(name, realm, DBMSyncProtocol, prefix, timeValue)
-            C_ChatInfo.SendAddonMessage(DBMPrefix, dbmMessage, "RAID")
-        end
-    end
+    local fullname = UnitName("player")
+    local realm = GetRealmName()
+    local normalizedPlayerRealm = realm:gsub("[%s-]+", "")
+		if cmd == "BREAK" then
+			local _, _, _, _, _, _, _, instanceId = GetInstanceInfo()
+			instanceId = tonumber(instanceId) or 0
+			local dbmMessage = ("%s-%s\t1\tBT\t%s\t%d"):format(fullname, normalizedPlayerRealm, timeValue, instanceId)
+			C_ChatInfo.SendAddonMessage("D5", dbmMessage, "RAID")
+		elseif cmd == "BREAK_CANCEL" then
+			local dbmMessage = fullname .. "\tD5WC\t0\tBT"
+			C_ChatInfo.SendAddonMessage("D5", dbmMessage, "RAID")
+		elseif cmd == "PULL" then
+			local _, _, _, _, _, _, _, instanceId = GetInstanceInfo()
+			instanceId = tonumber(instanceId) or 0
+			local dbmMessage = ("%s-%s\t1\tPT\t%s\t%d"):format(fullname, normalizedPlayerRealm, timeValue, instanceId)
+			C_ChatInfo.SendAddonMessage("D5", dbmMessage, "RAID")
+		elseif cmd == "PULL_CANCEL" then
+			local dbmMessage = fullname .. "\tD5\t0\tPT"
+			C_ChatInfo.SendAddonMessage("D5", dbmMessage, "RAID")
+		end
+	end
 end
 
 local hasReceivedBreakStatus = false
@@ -92,8 +91,8 @@ frame:SetScript("OnEvent", function(self, event, ...)
         end)
     elseif event == "CHAT_MSG_ADDON" then
         local prefix, content, channel, sender = ...
-			if (prefix == DBMPrefix) and channel == "RAID" then
-				local playerName, _, timerType, timerValue = strsplit("\t", content)
+		if (prefix == "D5WCWC" or prefix == "D5WCC" or prefix == "D5WC" or prefix == "D5") and channel == "RAID" then
+			local playerName, _, timerType, timerValue = strsplit("\t", content)
 			if timerType == "BT" and tonumber(timerValue) == 0 then
 				FojjiTimersSavedVars.breakEndTime = nil
 				WeakAuras.ScanEvents("WA_FOJJI_TIMER_BREAK_RECHECK", 0)

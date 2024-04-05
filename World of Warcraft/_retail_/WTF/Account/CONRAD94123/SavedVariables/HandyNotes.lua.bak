@@ -11,13 +11,13 @@ HandyNotesDB = {
 		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
 		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
-		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 		["Qpebank - Draenor"] = "Qpebank - Draenor",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
-		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
 	},
 	["profiles"] = {
 		["Qpaladin - Ragnaros"] = {
@@ -40,7 +40,7 @@ HandyNotesDB = {
 		},
 		["Qubit - Ragnaros"] = {
 		},
-		["Laurs - Ragnaros"] = {
+		["Dogson - Ragnaros"] = {
 		},
 		["Qpe - Ravencrest"] = {
 		},
@@ -52,7 +52,7 @@ HandyNotesDB = {
 		},
 		["Qpew - Ragnaros"] = {
 		},
-		["Dogson - Ragnaros"] = {
+		["Laurs - Ragnaros"] = {
 		},
 	},
 }
@@ -68,13 +68,13 @@ HandyNotes_HandyNotesDB = {
 		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
 		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
-		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 		["Qpebank - Draenor"] = "Qpebank - Draenor",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
-		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
 	},
 	["profiles"] = {
 		["Qpaladin - Ragnaros"] = {
@@ -97,7 +97,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Qubit - Ragnaros"] = {
 		},
-		["Laurs - Ragnaros"] = {
+		["Dogson - Ragnaros"] = {
 		},
 		["Qpe - Ravencrest"] = {
 		},
@@ -109,7 +109,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Qpew - Ragnaros"] = {
 		},
-		["Dogson - Ragnaros"] = {
+		["Laurs - Ragnaros"] = {
 		},
 	},
 }

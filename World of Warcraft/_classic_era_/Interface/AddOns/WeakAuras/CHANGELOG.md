@@ -1,16 +1,25 @@
-# [5.12.5](https://github.com/WeakAuras/WeakAuras2/tree/5.12.5) (2024-03-24)
+# [5.12.7](https://github.com/WeakAuras/WeakAuras2/tree/5.12.7) (2024-04-03)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.4...5.12.5)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.6...5.12.7)
 
 ## Highlights
 
- - bug fixes 
+ - Bug fixes 
 
 ## Commits
 
-InfusOnWoW (3):
+Dave Slutzkin (1):
 
-- ProgressTexture: Fix logic in UpdateTime for inversing
-- Type check various special state progress values
-- Fix Ticks positioned relative to static progress
+- Add missing difficulty IDs from latest WoW patch
+
+Stanzilla (1):
+
+- Update TOC for SoD Patch 1.15.2
+
+mrbuds (4):
+
+- Fix Player Location ID load option tooltip for instanceID
+- Cataclysm: add DK talents and all talent tooltips
+- Only set instance_difficulty_types on Retail
+- Fix Profiling window toggle from keybind and addon compartment
 

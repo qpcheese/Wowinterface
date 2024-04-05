@@ -7,6 +7,8 @@ VER 3 0100000000000070 "ap" "136048"
 /use 13
 /use 14
 END
+VER 3 0100000000000078 "asd" "134400"
+END
 VER 3 0100000000000071 "ayt" "609811"
 #showtooltip
 /castsequence reset=1 alter time, .

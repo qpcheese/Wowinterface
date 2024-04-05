@@ -11,42 +11,42 @@ PetBattleMasterDb = {
 							["pets"] = {
 								{
 									["speciesId"] = 116,
+									["petType"] = 10,
+									["creatureId"] = 15699,
+									["name"] = "Tranquil Mechanical Yeti",
+									["level"] = 25,
 									["abilities"] = {
 										384, -- [1]
 										206, -- [2]
 										208, -- [3]
 									},
-									["creatureId"] = 15699,
-									["name"] = "Tranquil Mechanical Yeti",
 									["petId"] = "BattlePet-0-000012BAC9E8",
-									["level"] = 25,
-									["petType"] = 10,
 								}, -- [1]
 								{
 									["speciesId"] = 120,
+									["petType"] = 1,
+									["creatureId"] = 15705,
+									["name"] = "Winter's Little Helper",
+									["level"] = 25,
 									["abilities"] = {
 										413, -- [1]
 										206, -- [2]
 										624, -- [3]
 									},
-									["creatureId"] = 15705,
-									["name"] = "Winter's Little Helper",
 									["petId"] = "BattlePet-0-000012B01DE0",
-									["level"] = 25,
-									["petType"] = 1,
 								}, -- [2]
 								{
 									["speciesId"] = 3119,
+									["petType"] = 4,
+									["creatureId"] = 179183,
+									["name"] = "Lost Limb",
+									["level"] = 25,
 									["abilities"] = {
 										1958, -- [1]
 										2352, -- [2]
 										780, -- [3]
 									},
-									["creatureId"] = 179183,
-									["name"] = "Lost Limb",
 									["petId"] = "BattlePet-0-000012B589F6",
-									["level"] = 25,
-									["petType"] = 4,
 								}, -- [3]
 							},
 							["name"] = "Unnamed",
@@ -58,26 +58,20 @@ PetBattleMasterDb = {
 		},
 	},
 	["profileKeys"] = {
-		["Fishanus - Ragnaros"] = "Default",
-		["Dogson - Ragnaros"] = "Default",
-		["Qpe - Ravencrest"] = "Default",
-		["Qpaladin - Ragnaros"] = "Default",
-		["Qubit - Ragnaros"] = "Default",
-		["Qpfromage - Ragnaros"] = "Default",
-		["Qutlaw - Ravencrest"] = "Default",
 		["Flurrq - Ragnaros"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Qutlaw - Ravencrest"] = "Default",
+		["Qubit - Ragnaros"] = "Default",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+		["Fishanus - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["tooltipAttachment"] = false,
 			["frames"] = {
-				["petbmInfoView"] = {
-					["windowPosition"] = {
-						["y"] = -49,
-						["x"] = 0,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+				["petbmNameIconEditor"] = {
 				},
 				["CollectionsJournal"] = {
 				},
@@ -89,7 +83,13 @@ PetBattleMasterDb = {
 						["relativePoint"] = "TOP",
 					},
 				},
-				["petbmNameIconEditor"] = {
+				["petbmInfoView"] = {
+					["windowPosition"] = {
+						["y"] = -49,
+						["x"] = 0,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				},
 			},
 			["minimapIcon"] = {

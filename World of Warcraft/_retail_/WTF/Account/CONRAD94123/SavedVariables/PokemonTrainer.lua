@@ -1,12 +1,10 @@
 
 PokemonTrainerDB = {
 	["namespaces"] = {
-		["WildPetTooltip"] = {
+		["FrameCombatDisplay"] = {
 			["profiles"] = {
 				["Default"] = {
-					["enabled"] = false,
-					["battlelevelonlydiff"] = false,
-					["battlelevel"] = false,
+					["model3d"] = false,
 				},
 			},
 		},
@@ -17,10 +15,12 @@ PokemonTrainerDB = {
 				},
 			},
 		},
-		["FrameCombatDisplay"] = {
+		["WildPetTooltip"] = {
 			["profiles"] = {
 				["Default"] = {
-					["model3d"] = false,
+					["enabled"] = false,
+					["battlelevel"] = false,
+					["battlelevelonlydiff"] = false,
 				},
 			},
 		},
@@ -28,19 +28,19 @@ PokemonTrainerDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Dogson - Ragnaros"] = "Default",
-		["Qutlaw - Ravencrest"] = "Default",
-		["Qpe - Ravencrest"] = "Default",
-		["Qubit - Ragnaros"] = "Default",
-		["Qpaladin - Ragnaros"] = "Default",
-		["Qpfromage - Ragnaros"] = "Default",
-		["Flurrq - Ragnaros"] = "Default",
 		["Fishanus - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qubit - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qutlaw - Ravencrest"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["version"] = "10.2.0-20231108_1",
 			["alpha"] = true,
+			["version"] = "10.2.0-20231108_1",
 		},
 	},
 }

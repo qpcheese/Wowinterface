@@ -60,7 +60,7 @@ BigWigs_Voice_PipkinPippa: disabled
 BigWigs_Voice_UT: disabled
 BigWigs_Aberrus: disabled
 BigWigs_Amirdrassil: enabled
-BigWigs_BattleForAzeroth: disabled
+BigWigs_BattleForAzeroth: enabled
 BigWigs_BurningCrusade: disabled
 BigWigs_Cataclysm: enabled
 BigWigs_Classic: disabled

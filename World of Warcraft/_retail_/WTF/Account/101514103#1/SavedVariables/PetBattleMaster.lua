@@ -10,43 +10,43 @@ PetBattleMasterDb = {
 						{
 							["pets"] = {
 								{
-									["speciesId"] = 1238,
-									["name"] = "Unborn Val'kyr",
-									["creatureId"] = 71163,
-									["petId"] = "BattlePet-0-000012B521D4",
+									["speciesId"] = 1442,
+									["name"] = "Ghastly Kid",
+									["creatureId"] = 83817,
+									["abilities"] = {
+										493, -- [1]
+										998, -- [2]
+										654, -- [3]
+									},
 									["level"] = 25,
 									["petType"] = 4,
-									["abilities"] = {
-										210, -- [1]
-										218, -- [2]
-										652, -- [3]
-									},
+									["petId"] = "BattlePet-0-000012B99D22",
 								}, -- [1]
 								{
-									["speciesId"] = 1532,
-									["name"] = "Ikky",
-									["creatureId"] = 86447,
-									["petId"] = "BattlePet-0-000012B146CB",
-									["level"] = 25,
-									["petType"] = 3,
+									["speciesId"] = 538,
+									["name"] = "Scourged Whelpling",
+									["creatureId"] = 62854,
 									["abilities"] = {
-										1370, -- [1]
-										919, -- [2]
-										581, -- [3]
+										122, -- [1]
+										256, -- [2]
+										668, -- [3]
 									},
+									["level"] = 25,
+									["petType"] = 4,
+									["petId"] = "BattlePet-0-000012B675D0",
 								}, -- [2]
 								{
-									["speciesId"] = 2834,
-									["name"] = "Aqir Hivespawn",
-									["creatureId"] = 161923,
-									["petId"] = "BattlePet-0-000012B822BF",
-									["level"] = 25,
-									["petType"] = 5,
+									["speciesId"] = 190,
+									["name"] = "Ghostly Skull",
+									["creatureId"] = 29147,
 									["abilities"] = {
-										119, -- [1]
-										1007, -- [2]
-										1679, -- [3]
+										210, -- [1]
+										442, -- [2]
+										212, -- [3]
 									},
+									["level"] = 25,
+									["petType"] = 4,
+									["petId"] = "BattlePet-0-000012B118B3",
 								}, -- [3]
 							},
 							["name"] = "Unnamed",
@@ -58,17 +58,29 @@ PetBattleMasterDb = {
 		},
 	},
 	["profileKeys"] = {
-		["Dogson - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
 		["Fishanus - Ragnaros"] = "Default",
 		["Qpaladin - Ragnaros"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
 		["Qpfromage - Sylvanas"] = "Default",
-		["Flurrq - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["tooltipAttachment"] = false,
 			["frames"] = {
+				["petbmNameIconEditor"] = {
+				},
+				["CollectionsJournal"] = {
+				},
+				["petbmTeamView"] = {
+					["windowPosition"] = {
+						["y"] = -30,
+						["x"] = 0,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+				},
 				["petbmInfoView"] = {
 					["windowPosition"] = {
 						["y"] = -49,
@@ -76,18 +88,6 @@ PetBattleMasterDb = {
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
-				},
-				["CollectionsJournal"] = {
-				},
-				["petbmTeamView"] = {
-					["windowPosition"] = {
-						["y"] = -11,
-						["x"] = -72,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-				},
-				["petbmNameIconEditor"] = {
 				},
 			},
 			["minimapIcon"] = {

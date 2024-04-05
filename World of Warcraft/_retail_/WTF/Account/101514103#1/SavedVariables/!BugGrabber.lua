@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2944,
 	["lastSanitation"] = 3,
+	["session"] = 2953,
 	["errors"] = {
 		{
 			["message"] = "...rface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:194: attempt to index global 'FarmHudDB' (a nil value)",
@@ -13,14 +13,14 @@ BugGrabberDB = {
 		}, -- [1]
 		{
 			["message"] = "Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:1 (null)",
-			["time"] = "2023/02/07 01:29:17",
 			["session"] = 18,
+			["time"] = "2023/02/07 01:29:17",
 			["counter"] = 1,
 		}, -- [2]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.lua:1 (null)",
-			["time"] = "2023/02/07 01:29:17",
 			["session"] = 18,
+			["time"] = "2023/02/07 01:29:17",
 			["counter"] = 1,
 		}, -- [3]
 		{
@@ -627,26 +627,26 @@ BugGrabberDB = {
 		}, -- [82]
 		{
 			["message"] = "Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML: TitleRegion",
-			["session"] = 707,
 			["time"] = "2023/05/03 18:28:07",
+			["session"] = 707,
 			["counter"] = 1,
 		}, -- [83]
 		{
 			["message"] = "Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML attribute: setAllPoints",
-			["session"] = 707,
 			["time"] = "2023/05/03 18:28:07",
+			["session"] = 707,
 			["counter"] = 1,
 		}, -- [84]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML: TitleRegion",
-			["session"] = 707,
 			["time"] = "2023/05/03 18:28:07",
+			["session"] = 707,
 			["counter"] = 1,
 		}, -- [85]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML attribute: setAllPoints",
-			["session"] = 707,
 			["time"] = "2023/05/03 18:28:07",
+			["session"] = 707,
 			["counter"] = 1,
 		}, -- [86]
 		{
@@ -888,62 +888,62 @@ BugGrabberDB = {
 		}, -- [116]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML: Backdrop",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [117]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML attribute: bgFile",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [118]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML attribute: edgeFile",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [119]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:28 Unrecognized XML attribute: tile",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [120]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:30 Unrecognized XML: EdgeSize",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [121]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:30 Unrecognized XML attribute: val",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [122]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:31 Unrecognized XML: TileSize",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [123]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:31 Unrecognized XML attribute: val",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [124]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:32 Unrecognized XML: BackgroundInsets",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [125]
 		{
 			["message"] = "Interface/AddOns/JojoMonk/JojoMonk.xml:32 Unrecognized XML attribute: left",
-			["session"] = 910,
 			["time"] = "2023/02/09 10:00:05",
+			["session"] = 910,
 			["counter"] = 106,
 		}, -- [126]
 		{
@@ -1012,14 +1012,14 @@ BugGrabberDB = {
 		}, -- [134]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:10 File Interface/AddOns/TradeSkillMaster_AppHelper/AppData.lua is empty.",
-			["time"] = "2023/06/06 10:37:53",
 			["session"] = 978,
+			["time"] = "2023/06/06 10:37:53",
 			["counter"] = 1,
 		}, -- [135]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:10 File Interface/AddOns/TradeSkillMaster_AppHelper/AppData.lua is empty.",
-			["time"] = "2023/06/06 10:37:53",
 			["session"] = 978,
+			["time"] = "2023/06/06 10:37:53",
 			["counter"] = 1,
 		}, -- [136]
 		{
@@ -1461,50 +1461,50 @@ BugGrabberDB = {
 		}, -- [191]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Rematch.toc",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [192]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Bindings.xml",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [193]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript/tdBattlePetScript.toc",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [194]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript_Rematch/tdBattlePetScript_Rematch.toc",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [195]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Rematch.toc",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [196]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/Rematch/Bindings.xml",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [197]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript/tdBattlePetScript.toc",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [198]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/tdBattlePetScript_Rematch/tdBattlePetScript_Rematch.toc",
-			["time"] = "2023/07/28 00:29:19",
 			["session"] = 1370,
+			["time"] = "2023/07/28 00:29:19",
 			["counter"] = 1,
 		}, -- [199]
 		{
@@ -1549,14 +1549,14 @@ BugGrabberDB = {
 		}, -- [204]
 		{
 			["message"] = "Interface/AddOns/RaiderIO/core.xml:25 Error loading Interface/AddOns/RaiderIO/db/db_client_replays.lua",
-			["time"] = "2023/08/01 10:49:59",
 			["session"] = 1409,
+			["time"] = "2023/08/01 10:49:59",
 			["counter"] = 12,
 		}, -- [205]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/RaiderIO/core.xml:25 Error loading Interface/AddOns/RaiderIO/db/db_client_replays.lua",
-			["time"] = "2023/08/01 10:49:59",
 			["session"] = 1409,
+			["time"] = "2023/08/01 10:49:59",
 			["counter"] = 12,
 		}, -- [206]
 		{
@@ -1569,8 +1569,8 @@ BugGrabberDB = {
 		}, -- [207]
 		{
 			["message"] = "Interface/AddOns/BigWigs_VoiceGCP/Core.lua:1 (null)",
-			["time"] = "2023/08/03 01:31:56",
 			["session"] = 1423,
+			["time"] = "2023/08/03 01:31:56",
 			["counter"] = 4,
 		}, -- [208]
 		{
@@ -1887,26 +1887,26 @@ BugGrabberDB = {
 		}, -- [247]
 		{
 			["message"] = "Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:2 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inBattle.lua",
-			["time"] = "2023/08/06 09:27:14",
 			["session"] = 1489,
+			["time"] = "2023/08/06 09:27:14",
 			["counter"] = 44,
 		}, -- [248]
 		{
 			["message"] = "Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:3 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inJournal.lua",
-			["time"] = "2023/08/06 09:27:14",
 			["session"] = 1489,
+			["time"] = "2023/08/06 09:27:14",
 			["counter"] = 44,
 		}, -- [249]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:2 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inBattle.lua",
-			["time"] = "2023/08/06 09:27:14",
 			["session"] = 1489,
+			["time"] = "2023/08/06 09:27:14",
 			["counter"] = 44,
 		}, -- [250]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/PetBreedIDs/PetBreedIDs.xml:3 Error loading Interface/AddOns/PetBreedIDs/PetBreedIDs_inJournal.lua",
-			["time"] = "2023/08/06 09:27:14",
 			["session"] = 1489,
+			["time"] = "2023/08/06 09:27:14",
 			["counter"] = 44,
 		}, -- [251]
 		{
@@ -1943,14 +1943,14 @@ BugGrabberDB = {
 		}, -- [255]
 		{
 			["message"] = "Interface/AddOns/Details/Bindings.xml:1 constant table overflow",
-			["session"] = 1501,
 			["time"] = "2023/06/26 13:38:10",
+			["session"] = 1501,
 			["counter"] = 7,
 		}, -- [256]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/Details/Bindings.xml:1 constant table overflow",
-			["session"] = 1501,
 			["time"] = "2023/06/26 13:38:10",
+			["session"] = 1501,
 			["counter"] = 7,
 		}, -- [257]
 		{
@@ -2130,44 +2130,44 @@ BugGrabberDB = {
 		}, -- [279]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:147 Unrecognized XML: Backdrop",
-			["session"] = 1543,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1543,
 			["counter"] = 1,
 		}, -- [280]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:147 Unrecognized XML attribute: bgFile",
-			["session"] = 1543,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1543,
 			["counter"] = 1,
 		}, -- [281]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:147 Unrecognized XML attribute: edgeFile",
-			["session"] = 1543,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1543,
 			["counter"] = 1,
 		}, -- [282]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:148 Unrecognized XML: BackgroundInsets",
-			["session"] = 1543,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1543,
 			["counter"] = 1,
 		}, -- [283]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:149 Unrecognized XML: AbsInset",
-			["session"] = 1543,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1543,
 			["counter"] = 1,
 		}, -- [284]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:149 Unrecognized XML attribute: left",
-			["session"] = 1543,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1543,
 			["counter"] = 1,
 		}, -- [285]
 		{
 			["message"] = "Interface/AddOns/SoundList/SoundList.xml:149 Unrecognized XML attribute: right",
-			["session"] = 1543,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1543,
 			["counter"] = 1,
 		}, -- [286]
 		{
@@ -2180,20 +2180,20 @@ BugGrabberDB = {
 		}, -- [287]
 		{
 			["message"] = "Interface/AddOns/SoundAlerter(Rus by Andrewqtx)/SoundAlerter(Rus by Andrewqtx).lua:1 (null)",
-			["session"] = 1544,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1544,
 			["counter"] = 2,
 		}, -- [288]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:11 Error loading Interface/AddOns/SoundAlerter(Rus by Andrewqtx)/sponsors.lua",
-			["session"] = 1544,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1544,
 			["counter"] = 2,
 		}, -- [289]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Couldn't open Interface/AddOns/SoundList/SoundList.toc",
-			["time"] = "2023/08/15 18:29:38",
 			["session"] = 1544,
+			["time"] = "2023/08/15 18:29:38",
 			["counter"] = 1,
 		}, -- [290]
 		{
@@ -2238,14 +2238,14 @@ BugGrabberDB = {
 		}, -- [295]
 		{
 			["message"] = "Interface/AddOns/SuperDuperSoundPackEngine/SuperDuperSoundPackEngine.lua:1 (null)",
-			["time"] = "2023/08/15 18:29:38",
 			["session"] = 1546,
+			["time"] = "2023/08/15 18:29:38",
 			["counter"] = 3,
 		}, -- [296]
 		{
 			["message"] = "Interface/AddOns/SuperDuperSoundPackEngine/Load.xml:6 Error loading Interface/AddOns/SuperDuperSoundPackEngine/Old_SuperDuperSoundPackEngine.lua",
-			["time"] = "2023/08/15 18:29:38",
 			["session"] = 1546,
+			["time"] = "2023/08/15 18:29:38",
 			["counter"] = 3,
 		}, -- [297]
 		{
@@ -2266,8 +2266,8 @@ BugGrabberDB = {
 		}, -- [299]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/DomDom/DomDom.lua:1 (null)",
-			["time"] = "2023/08/15 19:18:44",
 			["session"] = 1550,
+			["time"] = "2023/08/15 19:18:44",
 			["counter"] = 1,
 		}, -- [300]
 		{
@@ -2328,8 +2328,8 @@ BugGrabberDB = {
 		}, -- [307]
 		{
 			["message"] = "Interface/AddOns/DomDom/DomDom.lua:1 (null)",
-			["session"] = 1551,
 			["time"] = "2023/08/15 18:27:22",
+			["session"] = 1551,
 			["counter"] = 9,
 		}, -- [308]
 		{
@@ -2350,14 +2350,14 @@ BugGrabberDB = {
 		}, -- [310]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:9 Error loading Interface/AddOns/SoundtrackMusic/MyTracks.lua",
-			["time"] = "2023/08/15 18:29:38",
 			["session"] = 1552,
+			["time"] = "2023/08/15 18:29:38",
 			["counter"] = 9,
 		}, -- [311]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface\\FrameXML\\Bindings.xml:9 Error loading Interface/AddOns/SoundtrackMusic/MyTracks.lua",
-			["time"] = "2023/08/15 19:18:44",
 			["session"] = 1552,
+			["time"] = "2023/08/15 19:18:44",
 			["counter"] = 2,
 		}, -- [312]
 		{
@@ -2370,14 +2370,14 @@ BugGrabberDB = {
 		}, -- [313]
 		{
 			["message"] = "Interface/AddOns/ExtraActionButtonMover/ExtraActionButtonMover.lua:1 (null)",
-			["time"] = "2023/08/15 23:55:26",
 			["session"] = 1556,
+			["time"] = "2023/08/15 23:55:26",
 			["counter"] = 1,
 		}, -- [314]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/ExtraActionButtonMover/ExtraActionButtonMover.lua:1 (null)",
-			["time"] = "2023/08/15 23:55:26",
 			["session"] = 1556,
+			["time"] = "2023/08/15 23:55:26",
 			["counter"] = 1,
 		}, -- [315]
 		{
@@ -2518,26 +2518,26 @@ BugGrabberDB = {
 		}, -- [332]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/build.lua:1 (null)",
-			["session"] = 1656,
 			["time"] = "2023/08/14 03:46:13",
+			["session"] = 1656,
 			["counter"] = 218,
 		}, -- [333]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/Search.lua:1 (null)",
-			["session"] = 1656,
 			["time"] = "2023/08/14 03:46:13",
+			["session"] = 1656,
 			["counter"] = 217,
 		}, -- [334]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/Suggestions.lua:1 (null)",
-			["session"] = 1656,
 			["time"] = "2023/08/14 03:46:13",
+			["session"] = 1656,
 			["counter"] = 214,
 		}, -- [335]
 		{
 			["message"] = "Interface/AddOns/Overachiever_Tabs/Watch.lua:1 (null)",
-			["session"] = 1656,
 			["time"] = "2023/08/14 03:46:13",
+			["session"] = 1656,
 			["counter"] = 213,
 		}, -- [336]
 		{
@@ -2645,14 +2645,14 @@ BugGrabberDB = {
 		}, -- [349]
 		{
 			["message"] = "Error loading Interface/AddOns/WeakAurasOptions/AceGUI-Widgets/AceGUIWidget-WeakAurasInputFocus.lua",
-			["session"] = 1745,
 			["time"] = "2023/09/06 18:50:02",
+			["session"] = 1745,
 			["counter"] = 2,
 		}, -- [350]
 		{
 			["message"] = "Error loading Interface/AddOns/WeakAurasOptions/AceGUI-Widgets/AceGuiWidget-WeakAurasMediaSound.lua",
-			["session"] = 1745,
 			["time"] = "2023/09/06 18:50:02",
+			["session"] = 1745,
 			["counter"] = 2,
 		}, -- [351]
 		{
@@ -2760,14 +2760,14 @@ BugGrabberDB = {
 		}, -- [364]
 		{
 			["message"] = "Interface/AddOns/MinimapLine/MinimapLine.lua:1 (null)",
-			["time"] = "2023/08/01 00:22:47",
 			["session"] = 1831,
+			["time"] = "2023/08/01 00:22:47",
 			["counter"] = 7,
 		}, -- [365]
 		{
 			["message"] = "Interface\\FrameXML\\Bindings.xml:1 Interface/AddOns/MinimapLine/MinimapLine.lua:1 (null)",
-			["time"] = "2023/08/01 00:22:47",
 			["session"] = 1831,
+			["time"] = "2023/08/01 00:22:47",
 			["counter"] = 7,
 		}, -- [366]
 		{
@@ -3531,8 +3531,8 @@ BugGrabberDB = {
 		}, -- [462]
 		{
 			["message"] = "Interface/AddOns/PetTracker_Config/PetTracker_Config_Mainline.toc:1 Couldn't open Interface/AddOns/PetTracker_Config/PetTracker_Config_Mainline.toc",
-			["session"] = 2307,
 			["time"] = "2023/11/23 01:28:06",
+			["session"] = 2307,
 			["counter"] = 2,
 		}, -- [463]
 		{
@@ -4334,29 +4334,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [563]
 		{
-			["message"] = "...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:914: attempt to index field 'animOut' (a nil value)",
-			["time"] = "2023/08/04 02:59:58",
-			["locals"] = "glow = PTGlowFrame1 {\n 0 = <userdata>\n ProcLoop = AnimationGroup {\n }\n OnHide = <function> defined @Interface/FrameXML/ActionButton.lua:894\n ProcStartAnim = AnimationGroup {\n }\n ProcLoopFlipbook = Texture {\n }\n ProcStartFlipbook = Texture {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <function> defined @Interface/AddOns/Paste/libs/LibStrataFix/LibStrataFix.lua:121\n(*temporary) = \"Frame\"\n(*temporary) = \"attempt to index field 'animOut' (a nil value)\"\ntable = <table> {\n setn = <function> defined =[C]:-1\n insert = <function> defined =[C]:-1\n getn = <function> defined =[C]:-1\n foreachi = <function> defined =[C]:-1\n maxn = <function> defined =[C]:-1\n foreach = <function> defined =[C]:-1\n concat = <function> defined =[C]:-1\n removemulti = <function> defined =[C]:-1\n sort = <function> defined =[C]:-1\n wipe = <function> defined =[C]:-1\n remove = <function> defined =[C]:-1\n}\nheap = <table> {\n}\nglownum = 1\n_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined =[C]:-1\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n SettingsSliderOptionsMixin = <table> {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n HUD_EDIT_MODE_SETTING_ACTION_BAR_HIDE_BAR_ART = \"Hide Bar Art\"\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 774\n BT4Button46Shine5 = BT4Button46Shine5 {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 417\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n OPTION_TOOLTIP_SHOW_MULTIBAR4 = \"Attached to the left side of Right Action Bar 1 by default\"\n LE_GAME_ERR_INVALID_FOLLOW_PVP_COMBAT = 371\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n PROFESSIONS_COLUMN_REAGENTS_NONE = \"None\"\n OPTION_SHOW_ACTION_BAR5_TOOLTIP = \"Attached to the left side of Action Bar 4 by default\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Nameplates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n COVENANT_MISSIONS_HEALTH = \"Health\"\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n DetailsFrameworkBarNumber373795Name = DetailsFrameworkBarNumber373795Name {\n }\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface/FrameXML/UnitFrame.lua:927\n PVPReadyDialogBottomArt = PVPReadyDialogBottomArt {\n }\n MultiBar6Button4Flash = MultiBar6Button4Flash {\n }\n MANA = \"Mana\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n ClassNameplateBarPaladinFrameRune5 = ClassNameplateBarPaladinFrameRune5 {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface/FrameXML/FloatingChatFrame.lua:2388\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n MoneyFrame_OnEvent = <function> defined @Interface/FrameXML/MoneyFrame.lua:202\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n AutoCompleteEditBox_OnKeyDown = <function> defined @Interface/FrameXML/AutoComplete.lua:368\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 36\n INT_SPELL_DURATION_HOURS = \"%d |4hour:hrs;\"\n SLASH_LibQTip1 = \"/qtip\"\n ToggleEncounterJournal = <function> defined @Interface/FrameXML/UIParent.lua:1136\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {",
-			["stack"] = "[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:914: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:908>\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:934: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:927>\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:966: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:964>\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:1006: in function `BattleFrame_UpdateAbilityHighlights'\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:262: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:250>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/PokemonTrainer/Libs/AceBucket-3.0-4/AceBucket-3.0.lua\"]:69: in function <.../PokemonTrainer/Libs/AceBucket-3.0/AceBucket-3.0.lua:67>\n[string \"@Interface/AddOns/PokemonTrainer/Libs/AceBucket-3.0-4/AceBucket-3.0.lua\"]:83: in function `func'\n[string \"@Interface/AddOns/Details/Libs/AceTimer-3.0-17/AceTimer-3.0.lua\"]:57: in function <...ce/AddOns/Details/Libs/AceTimer-3.0/AceTimer-3.0.lua:50>",
-			["session"] = 2902,
-			["counter"] = 51292,
-		}, -- [564]
-		{
-			["message"] = "...AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:81: attempt to call field 'GetNumTrackingTypes' (a nil value)",
-			["time"] = "2023/08/08 23:29:56",
-			["locals"] = "self = <table> {\n Button_UpdateCooldown = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:127\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n EnableModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n Button_UpdateUsability = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:139\n SetDraggable = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:100\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:405\n desc = \"When pet tracking is enabled, this module displays two buttons on a separate and draggable frame. One for healing your battle pets with the spellcast, another for healing with pet bandages. Clicking these buttons is allowed when not in combat.\"\n name = \"PokemonTrainer_HealBandageButtons\"\n IsEnabled = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:346\n RegisterMessage = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n CombatEvent = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:67\n baseName = \"PokemonTrainer\"\n GetOptions = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:181\n SetBindings = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:111\n CheckMinimapTracking = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:78\n IsModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:213\n db = <table> {\n }\n SetDefaultModuleState = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:383\n OnDisable = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:55\n OnEnable = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:47\n SetEnabledState = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:420\n OnInitialize = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:26\n enabledState = true\n petBandage = 86143\n RegisterEvent = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n SendMessage = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n displayName = \"Heal Pet Buttons\"\n defaultModuleState = true\n IterateModules = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:433\n NewModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:231\n GetName = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:275\n petHealSpell = 125439\n moduleName = \"HealBandageButtons\"\n UnregisterEvent = <function> defined @Interface/AddOn",
-			["stack"] = "[string \"@Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua\"]:81: in function `CheckMinimapTracking'\n[string \"@Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua\"]:52: in function <...AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:47>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:523: in function <...ionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:516>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:45: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:43>\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:836: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:658>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <.../ActionButtonSettings/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-CheckBox.lua\"]:64: in function <...gs/Libs/AceGUI-3.0/widgets/AceGUIWidget-CheckBox.lua:53>",
-			["session"] = 2903,
-			["counter"] = 4399,
-		}, -- [565]
-		{
 			["message"] = "...nfig-3.0/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua:184: attempt to index local 'option' (a nil value)",
 			["time"] = "2023/06/02 13:40:10",
 			["locals"] = "membername = \"name\"\noption = nil\noptions = <table> {\n type = \"group\"\n name = \"Bar Configuration\"\n args = <table> {\n }\n}\npath = <table> {\n 1 = \"123\"\n}\nappName = \"Gnosis Castbars\"\ninherits = nil\nmember = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'option' (a nil value)\"\nisInherited = <table> {\n confirm = true\n disabled = true\n set = true\n hidden = true\n validate = true\n func = true\n get = true\n}\nGetSubOption = <function> defined @Interface/AddOns/Masque/Libs/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:116\nallIsLiteral = <table> {\n descStyle = true\n type = true\n imageWidth = true\n imageHeight = true\n}\ntype = <function> defined =[C]:-1\nstringIsLiteral = <table> {\n tooltipHyperlink = true\n image = true\n name = true\n fontSize = true\n width = true\n usage = true\n icon = true\n desc = true\n}\nnew = <function> defined @Interface/AddOns/Masque/Libs/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:74\nMAJOR = \"AceConfigDialog-3.0\"\nerror = <function> defined =[C]:-1\nformat = <function> defined =[C]:-1\ndel = <function> defined @Interface/AddOns/Masque/Libs/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:92\n",
 			["stack"] = "[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:184: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:164>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1495: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1474>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:202: in function <...ibs/AceGUI-3.0/widgets/AceGUIContainer-TreeGroup.lua:200>",
 			["session"] = 2907,
 			["counter"] = 52,
-		}, -- [566]
+		}, -- [564]
 		{
 			["message"] = "...akAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2378: attempt to get length of local 'menuList' (a number value)",
 			["time"] = "2024/03/18 14:51:06",
@@ -4364,7 +4348,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:2378: in function `initFunction'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:792: in function `UIDropDownMenu_Initialize'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:1803: in function `ToggleDropDownMenu'\n[string \"@Interface/AddOns/TwitchEmotes/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:384: in function <...hEmotes/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:378>",
 			["session"] = 2909,
 			["counter"] = 13,
-		}, -- [567]
+		}, -- [565]
 		{
 			["message"] = "[string \"return function(event, arg1, arg2)\"]:9: attempt to index global 'aura_env' (a nil value)",
 			["time"] = "2024/03/18 18:58:36",
@@ -4372,7 +4356,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(event, arg1, arg2)\"]:9: in function <[string \"return function(event, arg1, arg2)\"]:9>\n[string \"@Interface/AddOns/WeakAuras/AuraEnvironmentWrappedSystems.lua\"]:56: in function <...e/AddOns/WeakAuras/AuraEnvironmentWrappedSystems.lua:49>",
 			["session"] = 2909,
 			["counter"] = 1,
-		}, -- [568]
+		}, -- [566]
 		{
 			["message"] = "Texture:SetTextCoord(): TexCoord out of range",
 			["time"] = "2023/02/08 21:26:07",
@@ -4380,7 +4364,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetTexCoord'\n[string \"@Interface/SharedXML/Backdrop.lua\"]:208: in function <Interface/SharedXML/Backdrop.lua:207>\n[string \"@Interface/SharedXML/Backdrop.lua\"]:240: in function `SetupTextureCoordinates'\n[string \"@Interface/SharedXML/Backdrop.lua\"]:184: in function <Interface/SharedXML/Backdrop.lua:182>\n[string \"=[C]\"]: in function `GetWidth'\n[string \"@Interface/FrameXML/SecureGroupHeaders.lua\"]:239: in function <Interface/FrameXML/SecureGroupHeaders.lua:130>\n[string \"@Interface/FrameXML/SecureGroupHeaders.lua\"]:495: in function `SecureGroupHeader_Update'\n[string \"@Interface/FrameXML/SecureGroupHeaders.lua\"]:71: in function <Interface/FrameXML/SecureGroupHeaders.lua:66>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:806: in function `SetHeaderAttributes'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:755: in function `ReloadHeader'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:3778: in function <Interface/AddOns/ShadowedUF_Options/config.lua:3760>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:45: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:43>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:836: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:658>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-DropDown.lua\"]:432: in function <...ue/Libs/AceGUI-3.0/widgets/AceGUIWidget-DropDown.lua:423>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-DropDown-Items.lua\"]:351: in function <...s/AceGUI-3.0/widgets/AceGUIWidget-DropDown-Items.lua:341>",
 			["session"] = 2913,
 			["counter"] = 190,
-		}, -- [569]
+		}, -- [567]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'BigWigs' tried to call the protected function 'MultiBar5Button3:SetAttribute()'.",
 			["time"] = "2024/02/22 22:33:10",
@@ -4388,7 +4372,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:485: in function `UpdatePressAndHoldAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:551: in function `Update'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:503: in function `UpdateAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:981: in function `OnEvent'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:207: in function <Interface/FrameXML/ActionButton.lua:204>",
 			["session"] = 2913,
 			["counter"] = 3,
-		}, -- [570]
+		}, -- [568]
 		{
 			["message"] = "Usage: local spellName, spellID = C_Item.GetItemSpell(itemInfo)",
 			["time"] = "2024/03/21 19:51:01",
@@ -4396,7 +4380,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `GetItemSpell'\n[string \"@Interface/AddOns/OPie/Bundle/QuestItems.lua\"]:80: in function <Interface/AddOns/OPie/Bundle/QuestItems.lua:60>\n[string \"@Interface/AddOns/OPie/Bundle/QuestItems.lua\"]:212: in function <Interface/AddOns/OPie/Bundle/QuestItems.lua:203>\n[string \"@Interface/AddOns/OPie/Bundle/QuestItems.lua\"]:251: in function <Interface/AddOns/OPie/Bundle/QuestItems.lua:250>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/OPie/Libs/Evie.lua\"]:37: in function <Interface/AddOns/OPie/Libs/Evie.lua:32>",
 			["session"] = 2917,
 			["counter"] = 3,
-		}, -- [571]
+		}, -- [569]
 		{
 			["message"] = "...ce/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:39: attempt to index global 'ColorPickerCancelButton' (a nil value)",
 			["time"] = "2024/01/17 05:47:08",
@@ -4404,15 +4388,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua\"]:39: in main chunk",
 			["session"] = 2920,
 			["counter"] = 149,
-		}, -- [572]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'BigWigs' tried to call the protected function 'ActionButton5:SetAttribute()'.",
-			["time"] = "2023/09/21 20:19:57",
-			["locals"] = "Skipped (In Encounter)",
-			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:447: in function `UpdatePressAndHoldAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:513: in function `Update'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:465: in function `UpdateAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:928: in function `OnEvent'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:207: in function <Interface/FrameXML/ActionButton.lua:204>",
-			["session"] = 2921,
-			["counter"] = 5,
-		}, -- [573]
+		}, -- [570]
 		{
 			["message"] = "Interface/AddOns/Details/functions/ej_cache.lua:47: attempt to index field 'CacheEncountersBy_EncounterId' (a nil value)",
 			["time"] = "2024/01/18 19:55:21",
@@ -4420,7 +4396,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/Details/functions/ej_cache.lua\"]:47: in function `GetEncounterInfo'\n[string \"@Interface/AddOns/Details/core/control.lua\"]:135: in function <Interface/AddOns/Details/core/control.lua:113>\n[string \"@Interface/AddOns/Details/core/control.lua\"]:387: in function `EntrarEmCombate'\n[string \"@Interface/AddOns/Details/core/parser.lua\"]:917: in function <Interface/AddOns/Details/core/parser.lua:718>\n[string \"=(tail call)\"]: ?",
 			["session"] = 2930,
 			["counter"] = 3,
-		}, -- [574]
+		}, -- [571]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'BigWigs' tried to call the protected function 'MultiBarBottomLeftButton1:SetShown()'.",
 			["time"] = "2024/03/27 01:16:13",
@@ -4428,7 +4404,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface/FrameXML/ActionBar.lua\"]:195: in function `UpdateShownButtons'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:510: in function `UpdateAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:984: in function `OnEvent'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:207: in function <Interface/FrameXML/ActionButton.lua:204>",
 			["session"] = 2930,
 			["counter"] = 1,
-		}, -- [575]
+		}, -- [572]
 		{
 			["message"] = "Interface/AddOns/BigWigs/API.lua:39: Voice pack temp already registered.",
 			["time"] = "2023/08/03 01:31:56",
@@ -4436,13 +4412,13 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BigWigs/API.lua\"]:39: in function `RegisterVoicePack'\n[string \"@Interface/AddOns/BigWigs_VoiceGCP/Core.lua\"]:18: in main chunk\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BigWigs/Loader.lua\"]:410: in function <Interface/AddOns/BigWigs/Loader.lua:390>\n[string \"@Interface/AddOns/BigWigs/Loader.lua\"]:422: in function <Interface/AddOns/BigWigs/Loader.lua:417>\n[string \"@Interface/AddOns/BigWigs/Loader.lua\"]:441: in function <Interface/AddOns/BigWigs/Loader.lua:438>\n[string \"@Interface/AddOns/BigWigs/Loader.lua\"]:447: in function <Interface/AddOns/BigWigs/Loader.lua:446>\n[string \"@Interface/AddOns/BigWigs/Loader.lua\"]:1660: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:5241: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4899: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4935: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:141_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:141_OnEnterPressed\"]:1>\n[string \"=[C]\"]: ?",
 			["session"] = 2938,
 			["counter"] = 13,
-		}, -- [576]
+		}, -- [573]
 		{
 			["message"] = "Interface/AddOns/BigWigs_Voice/BigWigs_Voice.toc:1 Couldn't open Interface/AddOns/BigWigs_Voice/BigWigs_Voice.toc",
-			["session"] = 2939,
 			["time"] = "2024/03/28 20:39:57",
+			["session"] = 2939,
 			["counter"] = 2,
-		}, -- [577]
+		}, -- [574]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'BigWigs' tried to call the protected function 'MultiBarBottomLeftButton1:SetAttribute()'.",
 			["time"] = "2023/09/18 11:30:00",
@@ -4450,6 +4426,38 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:447: in function `UpdatePressAndHoldAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:513: in function `Update'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:465: in function `UpdateAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:928: in function `OnEvent'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:207: in function <Interface/FrameXML/ActionButton.lua:204>",
 			["session"] = 2944,
 			["counter"] = 17,
+		}, -- [575]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'BigWigs' tried to call the protected function 'ActionButton5:SetAttribute()'.",
+			["time"] = "2023/09/21 20:19:57",
+			["locals"] = "Skipped (In Encounter)",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:447: in function `UpdatePressAndHoldAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:513: in function `Update'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:465: in function `UpdateAction'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:928: in function `OnEvent'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:207: in function <Interface/FrameXML/ActionButton.lua:204>",
+			["session"] = 2951,
+			["counter"] = 6,
+		}, -- [576]
+		{
+			["message"] = "...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:914: attempt to index field 'animOut' (a nil value)",
+			["time"] = "2023/08/04 02:59:58",
+			["locals"] = "glow = PTGlowFrame1 {\n 0 = <userdata>\n ProcLoop = AnimationGroup {\n }\n OnHide = <function> defined @Interface/FrameXML/ActionButton.lua:894\n ProcStartAnim = AnimationGroup {\n }\n ProcLoopFlipbook = Texture {\n }\n ProcStartFlipbook = Texture {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <function> defined @Interface/AddOns/Paste/libs/LibStrataFix/LibStrataFix.lua:121\n(*temporary) = \"Frame\"\n(*temporary) = \"attempt to index field 'animOut' (a nil value)\"\ntable = <table> {\n setn = <function> defined =[C]:-1\n insert = <function> defined =[C]:-1\n getn = <function> defined =[C]:-1\n foreachi = <function> defined =[C]:-1\n maxn = <function> defined =[C]:-1\n foreach = <function> defined =[C]:-1\n concat = <function> defined =[C]:-1\n removemulti = <function> defined =[C]:-1\n sort = <function> defined =[C]:-1\n wipe = <function> defined =[C]:-1\n remove = <function> defined =[C]:-1\n}\nheap = <table> {\n}\nglownum = 1\n_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined =[C]:-1\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n SettingsSliderOptionsMixin = <table> {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n HUD_EDIT_MODE_SETTING_ACTION_BAR_HIDE_BAR_ART = \"Hide Bar Art\"\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 774\n BT4Button46Shine5 = BT4Button46Shine5 {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 417\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n OPTION_TOOLTIP_SHOW_MULTIBAR4 = \"Attached to the left side of Right Action Bar 1 by default\"\n LE_GAME_ERR_INVALID_FOLLOW_PVP_COMBAT = 371\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n PROFESSIONS_COLUMN_REAGENTS_NONE = \"None\"\n OPTION_SHOW_ACTION_BAR5_TOOLTIP = \"Attached to the left side of Action Bar 4 by default\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Nameplates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n COVENANT_MISSIONS_HEALTH = \"Health\"\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n DetailsFrameworkBarNumber373795Name = DetailsFrameworkBarNumber373795Name {\n }\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface/FrameXML/UnitFrame.lua:927\n PVPReadyDialogBottomArt = PVPReadyDialogBottomArt {\n }\n MultiBar6Button4Flash = MultiBar6Button4Flash {\n }\n MANA = \"Mana\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n ClassNameplateBarPaladinFrameRune5 = ClassNameplateBarPaladinFrameRune5 {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface/FrameXML/FloatingChatFrame.lua:2388\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n MoneyFrame_OnEvent = <function> defined @Interface/FrameXML/MoneyFrame.lua:202\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n AutoCompleteEditBox_OnKeyDown = <function> defined @Interface/FrameXML/AutoComplete.lua:368\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 36\n INT_SPELL_DURATION_HOURS = \"%d |4hour:hrs;\"\n SLASH_LibQTip1 = \"/qtip\"\n ToggleEncounterJournal = <function> defined @Interface/FrameXML/UIParent.lua:1136\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {",
+			["stack"] = "[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:914: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:908>\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:934: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:927>\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:966: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:964>\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:1006: in function `BattleFrame_UpdateAbilityHighlights'\n[string \"@Interface/AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua\"]:262: in function <...AddOns/PokemonTrainer/Modules/FrameCombatDisplay.lua:250>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/PokemonTrainer/Libs/AceBucket-3.0-4/AceBucket-3.0.lua\"]:69: in function <.../PokemonTrainer/Libs/AceBucket-3.0/AceBucket-3.0.lua:67>\n[string \"@Interface/AddOns/PokemonTrainer/Libs/AceBucket-3.0-4/AceBucket-3.0.lua\"]:83: in function `func'\n[string \"@Interface/AddOns/Details/Libs/AceTimer-3.0-17/AceTimer-3.0.lua\"]:57: in function <...ce/AddOns/Details/Libs/AceTimer-3.0/AceTimer-3.0.lua:50>",
+			["session"] = 2953,
+			["counter"] = 51441,
+		}, -- [577]
+		{
+			["message"] = "Interface/AddOns/Rematch/chrome/toolbar.lua:161: bad argument #3 to 'SetCooldown' (outside of expected range -3.402823e+38 to 3.402823e+38 - Usage: self:SetCooldown(start, duration [, modRate]))",
+			["time"] = "2024/04/04 20:58:58",
+			["locals"] = "(*temporary) = Cooldown {\n 0 = <userdata>\n}\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = true\n(*temporary) = \"outside of expected range -3.402823e+38 to 3.402823e+38 - Usage: self:SetCooldown(start, duration [, modRate])\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetCooldown'\n[string \"@Interface/AddOns/Rematch/chrome/toolbar.lua\"]:161: in function `SPELL_UPDATE_COOLDOWN'\n[string \"@Interface/AddOns/Rematch/chrome/toolbar.lua\"]:137: in function `OnShow'\n[string \"*toolbar.xml:289_OnShow\"]:1: in function <[string \"*toolbar.xml:289_OnShow\"]:1>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/FrameXML/UIParent.lua\"]:2977: in function `SetUIPanel'\n[string \"@Interface/FrameXML/UIParent.lua\"]:2820: in function `ShowUIPanel'\n[string \"@Interface/FrameXML/UIParent.lua\"]:2685: in function <Interface/FrameXML/UIParent.lua:2681>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/FrameXML/UIParent.lua\"]:3288: in function <Interface/FrameXML/UIParent.lua:3267>\n[string \"=[C]\"]: in function `ShowUIPanel'\n[string \"@Interface/FrameXML/UIParent.lua\"]:1226: in function `SetCollectionsJournalShown'\n[string \"@Interface/FrameXML/UIParent.lua\"]:1210: in function `ToggleCollectionsJournal'\n[string \"@Interface/FrameXML/MainMenuBarMicroButtons.lua\"]:1163: in function <Interface/FrameXML/MainMenuBarMicroButtons.lua:1161>\n[string \"=[C]\"]: ?",
+			["session"] = 2953,
+			["counter"] = 148,
 		}, -- [578]
+		{
+			["message"] = "...AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:81: attempt to call field 'GetNumTrackingTypes' (a nil value)",
+			["time"] = "2023/08/08 23:29:56",
+			["locals"] = "self = <table> {\n Button_UpdateCooldown = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:127\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n EnableModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n Button_UpdateUsability = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:139\n SetDraggable = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:100\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:405\n desc = \"When pet tracking is enabled, this module displays two buttons on a separate and draggable frame. One for healing your battle pets with the spellcast, another for healing with pet bandages. Clicking these buttons is allowed when not in combat.\"\n name = \"PokemonTrainer_HealBandageButtons\"\n IsEnabled = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:346\n RegisterMessage = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n CombatEvent = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:67\n baseName = \"PokemonTrainer\"\n GetOptions = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:181\n SetBindings = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:111\n CheckMinimapTracking = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:78\n IsModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:213\n db = <table> {\n }\n SetDefaultModuleState = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:383\n OnDisable = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:55\n OnEnable = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:47\n SetEnabledState = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:420\n OnInitialize = <function> defined @Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:26\n enabledState = true\n petBandage = 86143\n RegisterEvent = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n SendMessage = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n displayName = \"Heal Pet Buttons\"\n defaultModuleState = true\n IterateModules = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:433\n NewModule = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:231\n GetName = <function> defined @Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:275\n petHealSpell = 125439\n moduleName = \"HealBandageButtons\"\n UnregisterEvent = <function> defined @Interface/AddOn",
+			["stack"] = "[string \"@Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua\"]:81: in function `CheckMinimapTracking'\n[string \"@Interface/AddOns/PokemonTrainer/Modules/HealBandageButtons.lua\"]:52: in function <...AddOns/PokemonTrainer/Modules/HealBandageButtons.lua:47>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:523: in function <...ionButtonSettings/Libs/AceAddon-3.0/AceAddon-3.0.lua:516>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:45: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:43>\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:836: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:658>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <.../ActionButtonSettings/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/ActionButtonSettings/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-CheckBox.lua\"]:64: in function <...gs/Libs/AceGUI-3.0/widgets/AceGUIWidget-CheckBox.lua:53>",
+			["session"] = 2953,
+			["counter"] = 4406,
+		}, -- [579]
 	},
 }

@@ -250,8 +250,9 @@ function RSMap.GetWorldMapPOI(objectGUID, vignetteInfo, mapID)
 		return nil
 	end
 	
+	local _, _, _, _, _, vignetteObjectID = strsplit("-", objectGUID)
+		
 	if (vignetteInfo.type == Enum.VignetteType.Treasure or RSConstants.IsContainerAtlas(vignetteInfo.atlasName)) then
-		local _, _, _, _, _, vignetteObjectID = strsplit("-", objectGUID)
 		local containerID = tonumber(vignetteObjectID)
 		local containerInfo = RSContainerDB.GetInternalContainerInfo(containerID)
 		local alreadyFoundInfo = RSGeneralDB.GetAlreadyFoundEntity(containerID)
@@ -259,8 +260,7 @@ function RSMap.GetWorldMapPOI(objectGUID, vignetteInfo, mapID)
 		if (containerInfo or alreadyFoundInfo) then
 			return RSContainerPOI.GetContainerPOI(containerID, mapID, containerInfo, alreadyFoundInfo)
 		end
-	elseif (vignetteInfo.type == Enum.VignetteType.Torghast or RSConstants.IsNpcAtlas(vignetteInfo.atlasName)) then
-		local _, _, _, _, _, vignetteObjectID = strsplit("-", objectGUID)
+	elseif (vignetteInfo.type == Enum.VignetteType.Torghast or RSConstants.IsNpcAtlas(vignetteInfo.atlasName) or (RSConstants.IsEventAtlas(vignetteInfo.atlasName) and RSConstants.NPCS_WITH_PRE_EVENT[tonumber(vignetteObjectID)])) then
 		local npcID = tonumber(vignetteObjectID)
 		
 		-- If Ancestral Spirit in Forbidden Reach or Loam Scoat in Zaralek Cavern, locate real NPC
@@ -278,7 +278,6 @@ function RSMap.GetWorldMapPOI(objectGUID, vignetteInfo, mapID)
 			return RSNpcPOI.GetNpcPOI(npcID, mapID, npcInfo, alreadyFoundInfo)
 		end
 	elseif (RSConstants.IsEventAtlas(vignetteInfo.atlasName)) then
-		local _, _, _, _, _, vignetteObjectID = strsplit("-", objectGUID)
 		local eventID = tonumber(vignetteObjectID)
 		
 		local eventInfo = RSEventDB.GetInternalEventInfo(eventID)

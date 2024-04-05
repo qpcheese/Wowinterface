@@ -13,8 +13,8 @@ BetterBags: disabled
 BetterBags_Bound: disabled
 BetterBags_Hearthstones: enabled
 BetterBags_ItemRack: enabled
-BetterBags_Legendary: enabled
-BetterBags_Tabards: enabled
+BetterBags_Legendary: disabled
+BetterBags_Tabards: disabled
 BigWigs_Classic: enabled
 BiS-Tooltip-SoD: enabled
 BlizzMove: enabled

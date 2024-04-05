@@ -7,11 +7,11 @@ AUCTIONATOR_CONFIG = {
 	["enchant_tooltips"] = false,
 	["selling_grey_post_button"] = true,
 	["columns_buying_auctions_2"] = {
-		["Unit Price"] = false,
-		["Available"] = false,
-		["Seller(s)"] = true,
 		["Stack Price"] = false,
+		["Available"] = false,
 		["Time Left"] = true,
+		["Unit Price"] = false,
+		["Seller(s)"] = true,
 		["You?"] = false,
 	},
 	["debug"] = false,
@@ -46,8 +46,8 @@ AUCTIONATOR_CONFIG = {
 	["columns_buying_historical_prices"] = {
 		["Date"] = false,
 		["Unit Price"] = false,
-		["Upper Unit Price"] = true,
 		["Available"] = false,
+		["Upper Unit Price"] = true,
 	},
 	["selling_post_shortcut"] = "SPACE",
 	["shift_stack_tooltips"] = true,
@@ -64,48 +64,8 @@ AUCTIONATOR_CONFIG = {
 		["414"] = 1,
 	},
 	["selling_confirm_low_price"] = true,
-	["selling_reselect_item_2"] = {
-		["keyName"] = "k_Trade Goods",
-		["sortKey"] = "3685_Raptor Egg_0_1_true",
+	["historical_prices"] = {
 	},
-	["selling_prev_shortcut"] = "BACKSPACE",
-	["cancel_undercut_shortcut"] = "SPACE",
-	["columns_selling_search_3"] = {
-	},
-	["gear_vendor_price_multiplier"] = 0,
-	["auction_tooltips"] = true,
-	["save_last_duration_as_default"] = false,
-	["selling_auto_select_next"] = false,
-	["crafting_info_show_cost"] = true,
-	["auction_mean_tooltips"] = false,
-	["show_selling_bid_price"] = false,
-	["default_list_2"] = "",
-	["columns_shopping_historical_prices"] = {
-		["Date"] = false,
-		["Unit Price"] = false,
-		["Upper Unit Price"] = true,
-		["Available"] = false,
-	},
-	["selling_bag_collapsed"] = false,
-	["prospect_tooltips"] = false,
-	["auto_list_search"] = false,
-	["auction_chat_log"] = true,
-	["crafting_info_show_profit"] = true,
-	["mailbox_tooltips"] = true,
-	["starting_price_percentage_2"] = 95,
-	["selling_post_stack_remainder"] = false,
-	["auction_duration"] = 24,
-	["auction_mean_days_limit"] = 21,
-	["auction_sales_preference"] = "static",
-	["columns_shopping"] = {
-		["Name"] = false,
-		["Available"] = false,
-		["Price"] = false,
-		["Owned?"] = true,
-		["Top?"] = true,
-	},
-	["splash_screen_version"] = "10.1.6",
-	["crafting_info_show"] = true,
 	["columns_cancelling"] = {
 		["Items Ahead"] = false,
 		["Stack Price"] = true,
@@ -113,12 +73,52 @@ AUCTIONATOR_CONFIG = {
 		["Undercut?"] = false,
 		["Quantity"] = false,
 		["Bid Price"] = true,
-		["Name"] = false,
+		["Undercut Price"] = true,
 		["Unit Price"] = false,
 		["Time Left"] = false,
-		["Undercut Price"] = true,
+		["Name"] = false,
 	},
-	["historical_prices"] = {
+	["cancel_undercut_shortcut"] = "SPACE",
+	["columns_selling_search_3"] = {
+	},
+	["gear_vendor_price_multiplier"] = 0,
+	["columns_shopping"] = {
+		["Name"] = false,
+		["Available"] = false,
+		["Price"] = false,
+		["Owned?"] = true,
+		["Top?"] = true,
+	},
+	["save_last_duration_as_default"] = false,
+	["selling_auto_select_next"] = false,
+	["crafting_info_show_cost"] = true,
+	["auction_mean_days_limit"] = 21,
+	["show_selling_bid_price"] = false,
+	["auction_duration"] = 24,
+	["columns_shopping_historical_prices"] = {
+		["Date"] = false,
+		["Unit Price"] = false,
+		["Available"] = false,
+		["Upper Unit Price"] = true,
+	},
+	["selling_post_stack_remainder"] = false,
+	["starting_price_percentage_2"] = 95,
+	["auto_list_search"] = false,
+	["crafting_info_show_profit"] = true,
+	["auction_chat_log"] = true,
+	["mailbox_tooltips"] = true,
+	["prospect_tooltips"] = false,
+	["selling_bag_collapsed"] = false,
+	["default_list_2"] = "",
+	["auction_mean_tooltips"] = false,
+	["auction_sales_preference"] = "static",
+	["auction_tooltips"] = true,
+	["splash_screen_version"] = "10.1.6",
+	["crafting_info_show"] = true,
+	["selling_prev_shortcut"] = "BACKSPACE",
+	["selling_reselect_item_2"] = {
+		["keyName"] = "k_Trade Goods",
+		["sortKey"] = "3685_Raptor Egg_0_1_true",
 	},
 }
 AUCTIONATOR_SAVEDVARS = {
@@ -134,10 +134,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 79892,
 			["h"] = {
 				[1539] = 79892,
 			},
+			["m"] = 79892,
 		},
 		["gn:15613:Bonelink Belt of Healing:42"] = {
 			["a"] = {
@@ -145,10 +145,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 55598,
 			["h"] = {
 				[1539] = 55598,
 			},
+			["m"] = 55598,
 		},
 		["gn:9832:Scaled Leather Gloves of Healing:31"] = {
 			["a"] = {
@@ -156,10 +156,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19900,
 			["h"] = {
 				[1539] = 19900,
 			},
+			["m"] = 19900,
 		},
 		["gn:15013:Lupine Cuffs:14"] = {
 			["a"] = {
@@ -167,10 +167,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4269,
 			["h"] = {
 				[1539] = 4269,
 			},
-			["m"] = 4269,
 		},
 		["gn:3069:Bright Robe:27"] = {
 			["a"] = {
@@ -178,19 +178,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5600,
 			["h"] = {
 				[1538] = 5600,
 			},
-			["m"] = 5600,
 		},
 		["gn:6628:Raven's Claws:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 18527,
 			["h"] = {
 			},
+			["m"] = 18527,
 		},
 		["gn:4566:Sturdy Quarterstaff of Healing:13"] = {
 			["a"] = {
@@ -198,10 +198,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8999,
 			["h"] = {
 				[1539] = 8999,
 			},
+			["m"] = 8999,
 		},
 		["g:3848:20"] = {
 			["a"] = {
@@ -209,10 +209,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10024,
 			["h"] = {
 				[1539] = 10024,
 			},
-			["m"] = 10024,
 		},
 		["3315"] = {
 			["a"] = {
@@ -220,10 +220,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2299,
 			["h"] = {
 				[1539] = 2299,
 			},
-			["m"] = 2299,
 		},
 		["2315"] = {
 			["a"] = {
@@ -231,10 +231,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3594,
 			["h"] = {
 				[1539] = 3594,
 			},
-			["m"] = 3594,
 		},
 		["g:7469:44"] = {
 			["a"] = {
@@ -242,19 +242,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 59999,
 			["h"] = {
 				[1539] = 59999,
 			},
+			["m"] = 59999,
 		},
 		["g:4786:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 18999,
 			["h"] = {
 			},
-			["m"] = 18999,
 		},
 		["6415"] = {
 			["a"] = {
@@ -262,10 +262,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5462,
 			["h"] = {
 				[1540] = 5462,
 			},
+			["m"] = 5462,
 		},
 		["217245"] = {
 			["a"] = {
@@ -273,10 +273,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 102251,
 			["h"] = {
 				[1540] = 102251,
 			},
+			["m"] = 102251,
 		},
 		["gn:3187:Sacrificial Kris of Healing:44"] = {
 			["a"] = {
@@ -284,10 +284,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 52550,
 			["h"] = {
 				[1539] = 52550,
 			},
+			["m"] = 52550,
 		},
 		["gn:15934:Sage's Stave of Healing:32"] = {
 			["a"] = {
@@ -295,10 +295,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9998,
 			["h"] = {
 				[1539] = 9998,
 			},
+			["m"] = 9998,
 		},
 		["g:4038:37"] = {
 			["a"] = {
@@ -307,11 +307,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5719,
 			["h"] = {
 				[1538] = 5889,
 				[1540] = 5719,
 			},
-			["m"] = 5719,
 		},
 		["gn:9844:Conjurer's Vest of Stamina:38"] = {
 			["a"] = {
@@ -319,10 +319,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 34498,
 			["h"] = {
 				[1540] = 34498,
 			},
+			["m"] = 34498,
 		},
 		["14255"] = {
 			["a"] = {
@@ -330,10 +330,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 355498,
 			["h"] = {
 				[1539] = 355498,
 			},
+			["m"] = 355498,
 		},
 		["9825"] = {
 			["a"] = {
@@ -341,10 +341,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5282,
 			["h"] = {
 				[1539] = 5282,
 			},
+			["m"] = 5282,
 		},
 		["5576"] = {
 			["a"] = {
@@ -352,10 +352,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7795,
 			["h"] = {
 				[1539] = 7795,
 			},
+			["m"] = 7795,
 		},
 		["gn:2300:Embossed Leather Vest:12"] = {
 			["a"] = {
@@ -363,10 +363,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3042,
 			["h"] = {
 				[1539] = 3042,
 			},
-			["m"] = 3042,
 		},
 		["g:15225:33"] = {
 			["a"] = {
@@ -374,10 +374,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 48091,
 			["h"] = {
 				[1539] = 48091,
 			},
+			["m"] = 48091,
 		},
 		["gn:15213:Mercenary Blade of Stamina:36"] = {
 			["a"] = {
@@ -385,10 +385,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19896,
 			["h"] = {
 				[1540] = 19896,
 			},
+			["m"] = 19896,
 		},
 		["1725"] = {
 			["a"] = {
@@ -396,10 +396,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19687,
 			["h"] = {
 				[1539] = 19687,
 			},
+			["m"] = 19687,
 		},
 		["15559"] = {
 			["a"] = {
@@ -407,10 +407,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 59999,
 			["h"] = {
 				[1539] = 59999,
 			},
+			["m"] = 59999,
 		},
 		["g:7521:46"] = {
 			["a"] = {
@@ -418,10 +418,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 24998,
 			["h"] = {
 				[1539] = 24998,
 			},
+			["m"] = 24998,
 		},
 		["gn:1793:Patched Leather Shoulderpads:20"] = {
 			["a"] = {
@@ -429,10 +429,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6596,
 			["h"] = {
 				[1539] = 6596,
 			},
-			["m"] = 6596,
 		},
 		["gn:9930:Brigade Gauntlets of Healing:43"] = {
 			["a"] = {
@@ -440,19 +440,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 250000,
 			["h"] = {
 				[1539] = 250000,
 			},
+			["m"] = 250000,
 		},
 		["gn:14159:Pagan Shoes of Stamina:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 5094,
 			["h"] = {
 			},
-			["m"] = 5094,
 		},
 		["g:15008:10"] = {
 			["a"] = {
@@ -460,10 +460,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5000,
 			["h"] = {
 				[1539] = 5000,
 			},
-			["m"] = 5000,
 		},
 		["14211"] = {
 			["a"] = {
@@ -471,10 +471,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7194,
 			["h"] = {
 				[1539] = 7194,
 			},
+			["m"] = 7194,
 		},
 		["9428"] = {
 			["a"] = {
@@ -482,10 +482,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 110000,
 			["h"] = {
 				[1539] = 110000,
 			},
+			["m"] = 110000,
 		},
 		["9911"] = {
 			["a"] = {
@@ -493,10 +493,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 100000,
 			["h"] = {
 				[1539] = 100000,
 			},
+			["m"] = 100000,
 		},
 		["1465"] = {
 			["a"] = {
@@ -505,10 +505,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1540] = 19842,
 			},
-			["m"] = 19842,
 			["h"] = {
 				[1540] = 19843,
 			},
+			["m"] = 19842,
 		},
 		["3465"] = {
 			["a"] = {
@@ -517,37 +517,37 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1539] = 8,
 			},
+			["m"] = 8,
 			["h"] = {
 				[1539] = 9,
 			},
-			["m"] = 8,
 		},
 		["g:4331:25"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 11981,
 			["h"] = {
 			},
+			["m"] = 11981,
 		},
 		["14126"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 1497,
 			["h"] = {
 			},
+			["m"] = 1497,
 		},
 		["gn:14129:Ritual Sandals of the Whale:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 9996,
 			["h"] = {
 			},
-			["m"] = 9996,
 		},
 		["gn:8225:Tainted Pierce:36"] = {
 			["a"] = {
@@ -555,10 +555,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19994,
 			["h"] = {
 				[1540] = 19994,
 			},
+			["m"] = 19994,
 		},
 		["7476"] = {
 			["a"] = {
@@ -568,11 +568,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1541] = 4099,
 			},
-			["m"] = 4099,
 			["h"] = {
 				[1539] = 14398,
 				[1541] = 6900,
 			},
+			["m"] = 4099,
 		},
 		["g:7433:37"] = {
 			["a"] = {
@@ -580,10 +580,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7697,
 			["h"] = {
 				[1539] = 7697,
 			},
+			["m"] = 7697,
 		},
 		["4788"] = {
 			["a"] = {
@@ -591,10 +591,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10290,
 			["h"] = {
 				[1539] = 10290,
 			},
-			["m"] = 10290,
 		},
 		["gn:15310:Feral Gloves of Spirit:18"] = {
 			["a"] = {
@@ -602,10 +602,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9700,
 			["h"] = {
 				[1539] = 9700,
 			},
-			["m"] = 9700,
 		},
 		["1788"] = {
 			["a"] = {
@@ -613,19 +613,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 1050,
 			["h"] = {
 				[1539] = 1050,
 			},
-			["m"] = 1050,
 		},
 		["gn:14159:Pagan Shoes of the Falcon:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 6000,
 			["h"] = {
 			},
-			["m"] = 6000,
 		},
 		["gn:7446:Sentinel Cloak of the Monkey:36"] = {
 			["a"] = {
@@ -633,19 +633,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8795,
 			["h"] = {
 				[1538] = 8795,
 			},
+			["m"] = 8795,
 		},
 		["gn:4313:Red Woolen Boots:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 13969,
 			["h"] = {
 			},
-			["m"] = 13969,
 		},
 		["g:7456:38"] = {
 			["a"] = {
@@ -653,10 +653,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 15000,
 			["h"] = {
 				[1539] = 15000,
 			},
+			["m"] = 15000,
 		},
 		["2303"] = {
 			["a"] = {
@@ -664,10 +664,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5594,
 			["h"] = {
 				[1539] = 5594,
 			},
-			["m"] = 5594,
 		},
 		["gn:9860:Archer's Cloak of Healing:34"] = {
 			["a"] = {
@@ -675,10 +675,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 99999,
 			["h"] = {
 				[1539] = 99999,
 			},
+			["m"] = 99999,
 		},
 		["5765"] = {
 			["a"] = {
@@ -686,10 +686,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 12474,
 			["h"] = {
 				[1539] = 12474,
 			},
+			["m"] = 12474,
 		},
 		["14217"] = {
 			["a"] = {
@@ -697,10 +697,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1539] = 10000,
 			},
+			["m"] = 10000,
 		},
 		["g:15935:34"] = {
 			["a"] = {
@@ -708,25 +708,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 14472,
 			["h"] = {
 				[1539] = 14472,
 			},
+			["m"] = 14472,
 		},
 		["14123"] = {
 			["a"] = {
-				[1530] = 1,
 				[1539] = 1,
 			},
 			["l"] = {
-				[1530] = 4297,
 			},
-			["m"] = 2568,
 			["h"] = {
-				[1530] = 4298,
-				[1531] = 3097,
 				[1539] = 2568,
 			},
+			["m"] = 2568,
 		},
 		["gn:9855:Archer's Belt of Healing:35"] = {
 			["a"] = {
@@ -734,10 +730,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 36993,
 			["h"] = {
 				[1539] = 36993,
 			},
+			["m"] = 36993,
 		},
 		["15011"] = {
 			["a"] = {
@@ -745,10 +741,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4086,
 			["h"] = {
 				[1539] = 4086,
 			},
-			["m"] = 4086,
 		},
 		["gn:15225:Sequoia Hammer of Healing:33"] = {
 			["a"] = {
@@ -756,10 +752,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 48091,
 			["h"] = {
 				[1539] = 48091,
 			},
+			["m"] = 48091,
 		},
 		["gn:15012:Lupine Slippers of the Owl:16"] = {
 			["a"] = {
@@ -767,19 +763,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 8130,
 			["h"] = {
 				[1539] = 8130,
 			},
-			["m"] = 8130,
 		},
 		["gn:4373:Shadow Goggles:24"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 3993,
 			["h"] = {
 			},
+			["m"] = 3993,
 		},
 		["g:7462:37"] = {
 			["a"] = {
@@ -787,10 +783,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 46999,
 			["h"] = {
 				[1539] = 46999,
 			},
+			["m"] = 46999,
 		},
 		["gn:5216:Umbral Wand of Healing:45"] = {
 			["a"] = {
@@ -798,10 +794,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 259993,
 			["h"] = {
 				[1539] = 259993,
 			},
+			["m"] = 259993,
 		},
 		["gn:7370:Elder's Sash of Healing:31"] = {
 			["a"] = {
@@ -809,10 +805,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8996,
 			["h"] = {
 				[1539] = 8996,
 			},
+			["m"] = 8996,
 		},
 		["gn:14165:Pagan Britches of Healing:25"] = {
 			["a"] = {
@@ -820,10 +816,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7496,
 			["h"] = {
 				[1539] = 7496,
 			},
+			["m"] = 7496,
 		},
 		["6565"] = {
 			["a"] = {
@@ -831,10 +827,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1539] = 10000,
 			},
+			["m"] = 10000,
 		},
 		["1613"] = {
 			["a"] = {
@@ -842,10 +838,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 75045,
 			["h"] = {
 				[1539] = 75045,
 			},
+			["m"] = 75045,
 		},
 		["gn:14117:Aboriginal Gloves of Healing:16"] = {
 			["a"] = {
@@ -853,10 +849,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4082,
 			["h"] = {
 				[1539] = 4082,
 			},
+			["m"] = 4082,
 		},
 		["g:2766:29"] = {
 			["a"] = {
@@ -864,10 +860,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7694,
 			["h"] = {
 				[1540] = 7694,
 			},
+			["m"] = 7694,
 		},
 		["g:7429:40"] = {
 			["a"] = {
@@ -875,10 +871,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9963,
 			["h"] = {
 				[1540] = 9963,
 			},
+			["m"] = 9963,
 		},
 		["g:7377:36"] = {
 			["a"] = {
@@ -886,10 +882,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9880,
 			["h"] = {
 				[1538] = 9880,
 			},
+			["m"] = 9880,
 		},
 		["g:865:31"] = {
 			["a"] = {
@@ -897,10 +893,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 39998,
 			["h"] = {
 				[1539] = 39998,
 			},
+			["m"] = 39998,
 		},
 		["15527"] = {
 			["a"] = {
@@ -908,10 +904,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 2011,
 			["h"] = {
 				[1539] = 2011,
 			},
+			["m"] = 2011,
 		},
 		["15298"] = {
 			["a"] = {
@@ -919,10 +915,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4496,
 			["h"] = {
 				[1539] = 4496,
 			},
+			["m"] = 4496,
 		},
 		["g:12248:34"] = {
 			["a"] = {
@@ -930,10 +926,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 79992,
 			["h"] = {
 				[1540] = 79992,
 			},
+			["m"] = 79992,
 		},
 		["gn:9860:Archer's Cloak of the Owl:34"] = {
 			["a"] = {
@@ -941,10 +937,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 13696,
 			["h"] = {
 				[1538] = 13696,
 			},
+			["m"] = 13696,
 		},
 		["7525"] = {
 			["a"] = {
@@ -952,10 +948,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 88497,
 			["h"] = {
 				[1539] = 88497,
 			},
+			["m"] = 88497,
 		},
 		["gn:4571:War Knife of Healing:17"] = {
 			["a"] = {
@@ -964,20 +960,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1539] = 7999,
 			},
-			["m"] = 7999,
 			["h"] = {
 				[1539] = 8000,
 			},
+			["m"] = 7999,
 		},
 		["g:15118:26"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["h"] = {
-				[1531] = 6000,
-			},
 			["m"] = 6000,
+			["h"] = {
+			},
 		},
 		["g:14131:19"] = {
 			["a"] = {
@@ -985,10 +980,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3281,
 			["h"] = {
 				[1539] = 3281,
 			},
-			["m"] = 3281,
 		},
 		["7065"] = {
 			["a"] = {
@@ -996,10 +991,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 17598,
 			["h"] = {
 				[1538] = 17598,
 			},
-			["m"] = 17598,
 		},
 		["gn:7377:Frost Leather Cloak:36"] = {
 			["a"] = {
@@ -1007,10 +1002,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9880,
 			["h"] = {
 				[1538] = 9880,
 			},
+			["m"] = 9880,
 		},
 		["g:1613:44"] = {
 			["a"] = {
@@ -1018,10 +1013,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 75045,
 			["h"] = {
 				[1539] = 75045,
 			},
+			["m"] = 75045,
 		},
 		["gn:215375:Tactician's Staff:31"] = {
 			["a"] = {
@@ -1029,22 +1024,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 1290,
 			["h"] = {
 				[1540] = 1290,
 			},
+			["m"] = 1290,
 		},
 		["gn:14724:War Paint Cloak:16"] = {
 			["a"] = {
-				[1530] = 8,
 			},
 			["l"] = {
-				[1530] = 1081,
+			},
+			["h"] = {
 			},
 			["m"] = 1081,
-			["h"] = {
-				[1530] = 1082,
-			},
 		},
 		["gn:14119:Aboriginal Loincloth of the Whale:17"] = {
 			["a"] = {
@@ -1057,12 +1049,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1540] = 2792,
 				[1541] = 2898,
 			},
+			["m"] = 2898,
 			["h"] = {
 				[1539] = 2797,
 				[1540] = 2793,
 				[1541] = 4899,
 			},
-			["m"] = 2898,
 		},
 		["gn:10401:Blackened Defias Gloves:18"] = {
 			["a"] = {
@@ -1070,10 +1062,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 16795,
 			["h"] = {
 				[1539] = 16795,
 			},
-			["m"] = 16795,
 		},
 		["g:7476:40"] = {
 			["a"] = {
@@ -1083,20 +1075,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1541] = 4099,
 			},
-			["m"] = 4099,
 			["h"] = {
 				[1539] = 14398,
 				[1541] = 6900,
 			},
+			["m"] = 4099,
 		},
 		["g:4698:21"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 8081,
 			["h"] = {
 			},
+			["m"] = 8081,
 		},
 		["gn:15243:Deadly Kris of Shadow Wrath:36"] = {
 			["a"] = {
@@ -1104,10 +1096,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 64442,
 			["h"] = {
 				[1540] = 64442,
 			},
+			["m"] = 64442,
 		},
 		["gn:9844:Conjurer's Vest of Intellect:38"] = {
 			["a"] = {
@@ -1115,10 +1107,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 13997,
 			["h"] = {
 				[1540] = 13997,
 			},
+			["m"] = 13997,
 		},
 		["g:6558:15"] = {
 			["a"] = {
@@ -1126,19 +1118,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5000,
 			["h"] = {
 				[1539] = 5000,
 			},
+			["m"] = 5000,
 		},
 		["gn:4436:Jewel-encrusted Sash:21"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 9999,
 			["h"] = {
 			},
-			["m"] = 9999,
 		},
 		["gn:9847:Conjurer's Cloak of Shadow Wrath:33"] = {
 			["a"] = {
@@ -1146,28 +1138,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 49997,
 			["h"] = {
 				[1538] = 49997,
 			},
+			["m"] = 49997,
 		},
 		["gn:14185:Watcher's Cinch of the Whale:27"] = {
 			["a"] = {
-				[1530] = 6,
-				[1531] = 8,
-				[1533] = 2,
 			},
 			["l"] = {
-				[1530] = 5099,
-				[1531] = 3298,
-				[1533] = 2290,
-			},
-			["h"] = {
-				[1530] = 8300,
-				[1531] = 8299,
-				[1533] = 3291,
 			},
 			["m"] = 2290,
+			["h"] = {
+			},
 		},
 		["gn:5766:Lesser Wizard's Robe:27"] = {
 			["a"] = {
@@ -1175,10 +1158,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 13907,
 			["h"] = {
 				[1538] = 13907,
 			},
-			["m"] = 13907,
 		},
 		["g:15571:35"] = {
 			["a"] = {
@@ -1186,10 +1169,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 99999,
 			["h"] = {
 				[1539] = 99999,
 			},
+			["m"] = 99999,
 		},
 		["14245"] = {
 			["a"] = {
@@ -1197,19 +1180,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 35000,
 			["h"] = {
 				[1539] = 35000,
 			},
+			["m"] = 35000,
 		},
 		["gn:1299:Lesser Belt of the Spire:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 19900,
 			["h"] = {
 			},
-			["m"] = 19900,
 		},
 		["gn:15303:Grizzly Pants of the Bear:14"] = {
 			["a"] = {
@@ -1217,19 +1200,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4999,
 			["h"] = {
 				[1539] = 4999,
 			},
-			["m"] = 4999,
 		},
 		["g:14364:18"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 2356,
 			["h"] = {
 			},
-			["m"] = 2356,
 		},
 		["gn:6552:Bard's Tunic of the Owl:19"] = {
 			["a"] = {
@@ -1237,10 +1220,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10000,
 			["h"] = {
 				[1539] = 10000,
 			},
-			["m"] = 10000,
 		},
 		["gn:9877:Sorcerer Cloak of Intellect:38"] = {
 			["a"] = {
@@ -1248,19 +1231,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 15373,
 			["h"] = {
 				[1538] = 15373,
 			},
+			["m"] = 15373,
 		},
 		["14114"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 2200,
 			["h"] = {
 			},
-			["m"] = 2200,
 		},
 		["8223"] = {
 			["a"] = {
@@ -1268,10 +1251,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 459743,
 			["h"] = {
 				[1540] = 459743,
 			},
+			["m"] = 459743,
 		},
 		["790"] = {
 			["a"] = {
@@ -1282,11 +1265,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1538] = 5086,
 				[1539] = 5099,
 			},
+			["m"] = 5099,
 			["h"] = {
 				[1538] = 8187,
 				[1539] = 8900,
 			},
-			["m"] = 5099,
 		},
 		["gn:15145:Ghostwalker Buckler of Healing:36"] = {
 			["a"] = {
@@ -1294,10 +1277,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 13442,
 			["h"] = {
 				[1539] = 13442,
 			},
+			["m"] = 13442,
 		},
 		["gn:5965:Guardian Cloak:37"] = {
 			["a"] = {
@@ -1305,10 +1288,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 59898,
 			["h"] = {
 				[1538] = 59898,
 			},
+			["m"] = 59898,
 		},
 		["217256"] = {
 			["a"] = {
@@ -1316,10 +1299,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3299,
 			["h"] = {
 				[1538] = 3299,
 			},
-			["m"] = 3299,
 		},
 		["g:9867:33"] = {
 			["a"] = {
@@ -1328,20 +1311,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 18997,
 			["h"] = {
 				[1538] = 2843,
 				[1539] = 18997,
 			},
+			["m"] = 18997,
 		},
 		["3065"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 2998,
 			["h"] = {
 			},
-			["m"] = 2998,
 		},
 		["g:1998:33"] = {
 			["a"] = {
@@ -1349,10 +1332,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10691,
 			["h"] = {
 				[1540] = 10691,
 			},
+			["m"] = 10691,
 		},
 		["gn:9791:Ivycloth Tunic of the Whale:29"] = {
 			["a"] = {
@@ -1360,10 +1343,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 17873,
 			["h"] = {
 				[1538] = 17873,
 			},
-			["m"] = 17873,
 		},
 		["gn:9819:Durable Tunic of Intellect:34"] = {
 			["a"] = {
@@ -1371,10 +1354,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9992,
 			["h"] = {
 				[1538] = 9992,
 			},
-			["m"] = 9992,
 		},
 		["gn:5181:Vibrant Silk Cape:33"] = {
 			["a"] = {
@@ -1382,10 +1365,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 20005,
 			["h"] = {
 				[1538] = 20005,
 			},
+			["m"] = 20005,
 		},
 		["7443"] = {
 			["a"] = {
@@ -1393,19 +1376,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29800,
 			["h"] = {
 				[1539] = 29800,
 			},
+			["m"] = 29800,
 		},
 		["gn:14129:Ritual Sandals of Arcane Wrath:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 2200,
 			["h"] = {
 			},
-			["m"] = 2200,
 		},
 		["gn:7112:Aurora Armor:41"] = {
 			["a"] = {
@@ -1413,10 +1396,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8875,
 			["h"] = {
 				[1540] = 8875,
 			},
+			["m"] = 8875,
 		},
 		["gn:14219:Geomancer's Cloak of Healing:34"] = {
 			["a"] = {
@@ -1425,11 +1408,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 25000,
 			["h"] = {
 				[1538] = 399989,
 				[1539] = 25000,
 			},
+			["m"] = 25000,
 		},
 		["gn:15243:Deadly Kris of the Monkey:36"] = {
 			["a"] = {
@@ -1437,10 +1420,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29989,
 			["h"] = {
 				[1540] = 29989,
 			},
+			["m"] = 29989,
 		},
 		["4245"] = {
 			["a"] = {
@@ -1448,10 +1431,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 30000,
 			["h"] = {
 				[1539] = 30000,
 			},
+			["m"] = 30000,
 		},
 		["14409"] = {
 			["a"] = {
@@ -1459,10 +1442,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 14999,
 			["h"] = {
 				[1538] = 14999,
 			},
+			["m"] = 14999,
 		},
 		["14235"] = {
 			["a"] = {
@@ -1470,10 +1453,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19976,
 			["h"] = {
 				[1539] = 19976,
 			},
+			["m"] = 19976,
 		},
 		["gn:14202:Thistlefur Jerkin of the Whale:36"] = {
 			["a"] = {
@@ -1481,10 +1464,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 13342,
 			["h"] = {
 				[1540] = 13342,
 			},
+			["m"] = 13342,
 		},
 		["gn:7366:Elder's Gloves of Healing:32"] = {
 			["a"] = {
@@ -1492,10 +1475,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9000,
 			["h"] = {
 				[1539] = 9000,
 			},
+			["m"] = 9000,
 		},
 		["6568"] = {
 			["a"] = {
@@ -1503,10 +1486,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 11110,
 			["h"] = {
 				[1539] = 11110,
 			},
+			["m"] = 11110,
 		},
 		["gn:6613:Sage's Bracers of Healing:28"] = {
 			["a"] = {
@@ -1514,10 +1497,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 127789,
 			["h"] = {
 				[1539] = 127789,
 			},
+			["m"] = 127789,
 		},
 		["g:3569:26"] = {
 			["a"] = {
@@ -1525,10 +1508,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6293,
 			["h"] = {
 				[1538] = 6293,
 			},
-			["m"] = 6293,
 		},
 		["4365"] = {
 			["a"] = {
@@ -1543,13 +1526,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1538] = 302,
 				[1541] = 84,
 			},
-			["m"] = 84,
 			["h"] = {
 				[1539] = 291,
 				[1540] = 117,
 				[1538] = 1579,
 				[1541] = 85,
 			},
+			["m"] = 84,
 		},
 		["856"] = {
 			["a"] = {
@@ -1557,10 +1540,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5909,
 			["h"] = {
 				[1539] = 5909,
 			},
+			["m"] = 5909,
 		},
 		["gn:7280:Rugged Leather Pants:11"] = {
 			["a"] = {
@@ -1568,10 +1551,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3594,
 			["h"] = {
 				[1539] = 3594,
 			},
-			["m"] = 3594,
 		},
 		["4235"] = {
 			["a"] = {
@@ -1579,10 +1562,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 399,
 			["h"] = {
 				[1539] = 399,
 			},
+			["m"] = 399,
 		},
 		["7423"] = {
 			["a"] = {
@@ -1590,10 +1573,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 34596,
 			["h"] = {
 				[1539] = 34596,
 			},
+			["m"] = 34596,
 		},
 		["gn:9747:Simple Britches of Healing:14"] = {
 			["a"] = {
@@ -1601,10 +1584,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4695,
 			["h"] = {
 				[1539] = 4695,
 			},
+			["m"] = 4695,
 		},
 		["g:2309:15"] = {
 			["a"] = {
@@ -1612,19 +1595,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3466,
 			["h"] = {
 				[1539] = 3466,
 			},
-			["m"] = 3466,
 		},
 		["gn:14168:Buccaneer's Gloves of the Whale:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 7397,
 			["h"] = {
 			},
+			["m"] = 7397,
 		},
 		["12184"] = {
 			["a"] = {
@@ -1632,10 +1615,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 232,
 			["h"] = {
 				[1539] = 232,
 			},
-			["m"] = 232,
 		},
 		["15003"] = {
 			["a"] = {
@@ -1643,10 +1626,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6815,
 			["h"] = {
 				[1539] = 6815,
 			},
-			["m"] = 6815,
 		},
 		["g:7554:19"] = {
 			["a"] = {
@@ -1654,10 +1637,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5600,
 			["h"] = {
 				[1539] = 5600,
 			},
+			["m"] = 5600,
 		},
 		["gn:7440:Sentinel Trousers of Healing:39"] = {
 			["a"] = {
@@ -1665,10 +1648,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 54880,
 			["h"] = {
 				[1539] = 54880,
 			},
+			["m"] = 54880,
 		},
 		["g:7460:34"] = {
 			["a"] = {
@@ -1676,10 +1659,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4370,
 			["h"] = {
 				[1538] = 4370,
 			},
+			["m"] = 4370,
 		},
 		["gn:9798:Ivycloth Robe of the Owl:29"] = {
 			["a"] = {
@@ -1687,10 +1670,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 8897,
 			["h"] = {
 				[1538] = 8897,
 			},
-			["m"] = 8897,
 		},
 		["gn:14158:Pagan Vest of the Whale:26"] = {
 			["a"] = {
@@ -1698,10 +1681,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3998,
 			["h"] = {
 				[1538] = 3998,
 			},
-			["m"] = 3998,
 		},
 		["gn:7469:Regal Leggings of Healing:44"] = {
 			["a"] = {
@@ -1709,10 +1692,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 59999,
 			["h"] = {
 				[1539] = 59999,
 			},
+			["m"] = 59999,
 		},
 		["gn:9846:Conjurer's Bracers of Healing:35"] = {
 			["a"] = {
@@ -1720,10 +1703,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 35034,
 			["h"] = {
 				[1539] = 35034,
 			},
+			["m"] = 35034,
 		},
 		["g:15970:15"] = {
 			["a"] = {
@@ -1731,10 +1714,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 900,
 			["h"] = {
 				[1539] = 900,
 			},
+			["m"] = 900,
 		},
 		["1265"] = {
 			["a"] = {
@@ -1742,10 +1725,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 25585,
 			["h"] = {
 				[1540] = 25585,
 			},
+			["m"] = 25585,
 		},
 		["866"] = {
 			["a"] = {
@@ -1753,10 +1736,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19959,
 			["h"] = {
 				[1539] = 19959,
 			},
+			["m"] = 19959,
 		},
 		["gn:2973:Hunting Tunic:17"] = {
 			["a"] = {
@@ -1764,10 +1747,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 8626,
 			["h"] = {
 				[1539] = 8626,
 			},
-			["m"] = 8626,
 		},
 		["gn:7489:Captain's Gauntlets of Healing:41"] = {
 			["a"] = {
@@ -1775,10 +1758,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 80000,
 			["h"] = {
 				[1539] = 80000,
 			},
+			["m"] = 80000,
 		},
 		["gn:1613:Spiritchaser Staff of Healing:44"] = {
 			["a"] = {
@@ -1786,10 +1769,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 75045,
 			["h"] = {
 				[1539] = 75045,
 			},
+			["m"] = 75045,
 		},
 		["6379"] = {
 			["a"] = {
@@ -1797,10 +1780,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7588,
 			["h"] = {
 				[1539] = 7588,
 			},
-			["m"] = 7588,
 		},
 		["gn:9852:Conjurer's Robe of Frozen Wrath:38"] = {
 			["a"] = {
@@ -1808,10 +1791,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 22286,
 			["h"] = {
 				[1540] = 22286,
 			},
+			["m"] = 22286,
 		},
 		["gn:4693:Ceremonial Leather Belt:14"] = {
 			["a"] = {
@@ -1819,10 +1802,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 1079,
 			["h"] = {
 				[1539] = 1079,
 			},
-			["m"] = 1079,
 		},
 		["gn:15305:Feral Shoes of the Monkey:18"] = {
 			["a"] = {
@@ -1830,10 +1813,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 19891,
 			["h"] = {
 				[1539] = 19891,
 			},
-			["m"] = 19891,
 		},
 		["gn:217256:Earthen Vest:34"] = {
 			["a"] = {
@@ -1841,10 +1824,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3299,
 			["h"] = {
 				[1538] = 3299,
 			},
-			["m"] = 3299,
 		},
 		["11174"] = {
 			["a"] = {
@@ -1852,10 +1835,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 15425,
 			["h"] = {
 				[1539] = 15425,
 			},
-			["m"] = 15425,
 		},
 		["g:10404:30"] = {
 			["a"] = {
@@ -1863,10 +1846,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3083,
 			["h"] = {
 				[1539] = 3083,
 			},
+			["m"] = 3083,
 		},
 		["gn:9877:Sorcerer Cloak of Stamina:38"] = {
 			["a"] = {
@@ -1874,19 +1857,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 11996,
 			["h"] = {
 				[1538] = 11996,
 			},
+			["m"] = 11996,
 		},
 		["4368"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 2173,
 			["h"] = {
 			},
+			["m"] = 2173,
 		},
 		["7368"] = {
 			["a"] = {
@@ -1894,10 +1877,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7998,
 			["h"] = {
 				[1539] = 7998,
 			},
+			["m"] = 7998,
 		},
 		["15305"] = {
 			["a"] = {
@@ -1905,10 +1888,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 1549,
 			["h"] = {
 				[1539] = 1549,
 			},
-			["m"] = 1549,
 		},
 		["gn:14202:Thistlefur Jerkin of the Eagle:36"] = {
 			["a"] = {
@@ -1916,19 +1899,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19996,
 			["h"] = {
 				[1540] = 19996,
 			},
+			["m"] = 19996,
 		},
 		["gn:4385:Green Tinted Goggles:30"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 5090,
 			["h"] = {
 			},
+			["m"] = 5090,
 		},
 		["15155"] = {
 			["a"] = {
@@ -1936,19 +1919,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50000,
 			["h"] = {
 				[1539] = 50000,
 			},
+			["m"] = 50000,
 		},
 		["g:1769:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 1298,
 			["h"] = {
 			},
+			["m"] = 1298,
 		},
 		["13034"] = {
 			["a"] = {
@@ -1956,10 +1939,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 89997,
 			["h"] = {
 				[1540] = 89997,
 			},
+			["m"] = 89997,
 		},
 		["g:3413:25"] = {
 			["a"] = {
@@ -1967,10 +1950,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 129895,
 			["h"] = {
 				[1540] = 129895,
 			},
+			["m"] = 129895,
 		},
 		["g:10402:18"] = {
 			["a"] = {
@@ -1978,10 +1961,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 31431,
 			["h"] = {
 				[1539] = 31431,
 			},
-			["m"] = 31431,
 		},
 		["g:15364:36"] = {
 			["a"] = {
@@ -1989,10 +1972,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8962,
 			["h"] = {
 				[1538] = 8962,
 			},
+			["m"] = 8962,
 		},
 		["g:15017:19"] = {
 			["a"] = {
@@ -2000,10 +1983,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4974,
 			["h"] = {
 				[1539] = 4974,
 			},
-			["m"] = 4974,
 		},
 		["g:13121:38"] = {
 			["a"] = {
@@ -2011,10 +1994,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 129394,
 			["h"] = {
 				[1538] = 129394,
 			},
+			["m"] = 129394,
 		},
 		["g:15136:31"] = {
 			["a"] = {
@@ -2022,19 +2005,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 14974,
 			["h"] = {
 				[1539] = 14974,
 			},
+			["m"] = 14974,
 		},
 		["g:14157:24"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 2093,
 			["h"] = {
 			},
+			["m"] = 2093,
 		},
 		["gn:15935:Durable Rod of Healing:34"] = {
 			["a"] = {
@@ -2042,10 +2025,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 14472,
 			["h"] = {
 				[1539] = 14472,
 			},
+			["m"] = 14472,
 		},
 		["g:5181:33"] = {
 			["a"] = {
@@ -2053,10 +2036,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 20005,
 			["h"] = {
 				[1538] = 20005,
 			},
+			["m"] = 20005,
 		},
 		["gn:9844:Conjurer's Vest of the Eagle:38"] = {
 			["a"] = {
@@ -2064,10 +2047,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 15035,
 			["h"] = {
 				[1540] = 15035,
 			},
+			["m"] = 15035,
 		},
 		["g:9882:43"] = {
 			["a"] = {
@@ -2075,10 +2058,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 79983,
 			["h"] = {
 				[1539] = 79983,
 			},
+			["m"] = 79983,
 		},
 		["g:15241:26"] = {
 			["a"] = {
@@ -2087,11 +2070,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8999,
 			["h"] = {
 				[1539] = 5095,
 				[1540] = 8999,
 			},
+			["m"] = 8999,
 		},
 		["gn:14229:Embersilk Cloak of the Owl:36"] = {
 			["a"] = {
@@ -2099,10 +2082,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9983,
 			["h"] = {
 				[1538] = 9983,
 			},
+			["m"] = 9983,
 		},
 		["217252"] = {
 			["a"] = {
@@ -2110,10 +2093,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5960,
 			["h"] = {
 				[1538] = 5960,
 			},
+			["m"] = 5960,
 		},
 		["gn:9925:Tracker's Wristguards of Healing:44"] = {
 			["a"] = {
@@ -2121,10 +2104,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 39997,
 			["h"] = {
 				[1539] = 39997,
 			},
+			["m"] = 39997,
 		},
 		["g:6379:17"] = {
 			["a"] = {
@@ -2132,22 +2115,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7588,
 			["h"] = {
 				[1539] = 7588,
 			},
-			["m"] = 7588,
 		},
 		["g:14724:16"] = {
 			["a"] = {
-				[1530] = 8,
 			},
 			["l"] = {
-				[1530] = 1081,
+			},
+			["h"] = {
 			},
 			["m"] = 1081,
-			["h"] = {
-				[1530] = 1082,
-			},
 		},
 		["g:14167:19"] = {
 			["a"] = {
@@ -2155,10 +2135,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7627,
 			["h"] = {
 				[1539] = 7627,
 			},
+			["m"] = 7627,
 		},
 		["gn:9890:Huntsman's Cape of the Whale:38"] = {
 			["a"] = {
@@ -2166,10 +2146,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5184,
 			["h"] = {
 				[1538] = 5184,
 			},
+			["m"] = 5184,
 		},
 		["gn:15310:Feral Gloves of Healing:18"] = {
 			["a"] = {
@@ -2177,10 +2157,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2800,
 			["h"] = {
 				[1539] = 2800,
 			},
-			["m"] = 2800,
 		},
 		["217246"] = {
 			["a"] = {
@@ -2188,10 +2168,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 6515,
 			["h"] = {
 				[1540] = 6515,
 			},
+			["m"] = 6515,
 		},
 		["gn:7436:Twilight Cape of the Owl:35"] = {
 			["a"] = {
@@ -2200,19 +2180,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1538] = 5729,
 			},
-			["m"] = 5729,
 			["h"] = {
 				[1538] = 5731,
 			},
+			["m"] = 5729,
 		},
 		["gn:1772:Brocade Shoes:23"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 997,
 			["h"] = {
 			},
-			["m"] = 997,
 		},
 		["gn:15147:Ghostwalker Cloak of the Owl:33"] = {
 			["a"] = {
@@ -2220,10 +2200,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19998,
 			["h"] = {
 				[1538] = 19998,
 			},
+			["m"] = 19998,
 		},
 		["g:9908:43"] = {
 			["a"] = {
@@ -2231,19 +2211,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29997,
 			["h"] = {
 				[1539] = 29997,
 			},
+			["m"] = 29997,
 		},
 		["gn:1769:Canvas Shoulderpads:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 1298,
 			["h"] = {
 			},
+			["m"] = 1298,
 		},
 		["gn:2077:Magician Staff of Intellect:29"] = {
 			["a"] = {
@@ -2251,10 +2231,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 31999,
 			["h"] = {
 				[1540] = 31999,
 			},
+			["m"] = 31999,
 		},
 		["gn:15241:Battle Knife of the Bear:26"] = {
 			["a"] = {
@@ -2262,23 +2242,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9999,
 			["h"] = {
 				[1540] = 9999,
 			},
+			["m"] = 9999,
 		},
 		["118"] = {
 			["a"] = {
-				[1530] = 206,
 				[1539] = 1,
 			},
 			["l"] = {
 			},
+			["m"] = 1900,
 			["h"] = {
-				[1530] = 300,
 				[1539] = 1900,
 			},
-			["m"] = 1900,
 		},
 		["gn:9826:Durable Robe of Stamina:34"] = {
 			["a"] = {
@@ -2286,10 +2264,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3998,
 			["h"] = {
 				[1538] = 3998,
 			},
-			["m"] = 3998,
 		},
 		["gn:15010:Primal Wraps of the Owl:11"] = {
 			["a"] = {
@@ -2297,10 +2275,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4299,
 			["h"] = {
 				[1539] = 4299,
 			},
-			["m"] = 4299,
 		},
 		["gn:7446:Sentinel Cloak of the Whale:36"] = {
 			["a"] = {
@@ -2308,10 +2286,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9841,
 			["h"] = {
 				[1538] = 9841,
 			},
+			["m"] = 9841,
 		},
 		["9847"] = {
 			["a"] = {
@@ -2320,11 +2298,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3347,
 			["h"] = {
 				[1538] = 4053,
 				[1539] = 3347,
 			},
+			["m"] = 3347,
 		},
 		["gn:9844:Conjurer's Vest of Arcane Wrath:38"] = {
 			["a"] = {
@@ -2332,10 +2310,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29898,
 			["h"] = {
 				[1540] = 29898,
 			},
+			["m"] = 29898,
 		},
 		["g:15223:24"] = {
 			["a"] = {
@@ -2343,10 +2321,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9916,
 			["h"] = {
 				[1539] = 9916,
 			},
+			["m"] = 9916,
 		},
 		["3928"] = {
 			["a"] = {
@@ -2354,19 +2332,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5191,
 			["h"] = {
 				[1539] = 5191,
 			},
+			["m"] = 5191,
 		},
 		["gn:4314:Double-stitched Woolen Shoulders:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 478,
 			["h"] = {
 			},
+			["m"] = 478,
 		},
 		["gn:4571:War Knife of Power:17"] = {
 			["a"] = {
@@ -2374,10 +2352,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9597,
 			["h"] = {
 				[1539] = 9597,
 			},
-			["m"] = 9597,
 		},
 		["gn:7369:Elder's Robe of Arcane Wrath:35"] = {
 			["a"] = {
@@ -2386,11 +2364,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 59498,
 			["h"] = {
 				[1538] = 14983,
 				[1540] = 59498,
 			},
-			["m"] = 59498,
 		},
 		["gn:7353:Elder's Padded Armor of the Eagle:35"] = {
 			["a"] = {
@@ -2399,11 +2377,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 29894,
 			["h"] = {
 				[1538] = 11106,
 				[1540] = 29894,
 			},
-			["m"] = 29894,
 		},
 		["gn:5770:Robes of Arcana:30"] = {
 			["a"] = {
@@ -2411,10 +2389,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 30068,
 			["h"] = {
 				[1538] = 30068,
 			},
-			["m"] = 30068,
 		},
 		["gn:9898:Jazeraint Cloak of Healing:38"] = {
 			["a"] = {
@@ -2422,28 +2400,28 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19994,
 			["h"] = {
 				[1538] = 19994,
 			},
+			["m"] = 19994,
 		},
 		["g:14129:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 2200,
 			["h"] = {
 			},
-			["m"] = 2200,
 		},
 		["gn:14126:Ritual Amice:23"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 1497,
 			["h"] = {
 			},
+			["m"] = 1497,
 		},
 		["gn:2494:Stiletto:8"] = {
 			["a"] = {
@@ -2451,10 +2429,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5800,
 			["h"] = {
 				[1539] = 5800,
 			},
-			["m"] = 5800,
 		},
 		["6268"] = {
 			["a"] = {
@@ -2462,10 +2440,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3000,
 			["h"] = {
 				[1539] = 3000,
 			},
+			["m"] = 3000,
 		},
 		["gn:790:Forester's Axe of the Wolf:23"] = {
 			["a"] = {
@@ -2476,11 +2454,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1538] = 5086,
 				[1539] = 5099,
 			},
+			["m"] = 5099,
 			["h"] = {
 				[1538] = 8187,
 				[1539] = 8900,
 			},
-			["m"] = 5099,
 		},
 		["gn:7460:Knight's Cloak of Defense:34"] = {
 			["a"] = {
@@ -2488,10 +2466,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8924,
 			["h"] = {
 				[1538] = 8924,
 			},
+			["m"] = 8924,
 		},
 		["gn:9890:Huntsman's Cape of the Falcon:38"] = {
 			["a"] = {
@@ -2499,10 +2477,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29999,
 			["h"] = {
 				[1538] = 29999,
 			},
+			["m"] = 29999,
 		},
 		["g:14235:37"] = {
 			["a"] = {
@@ -2510,10 +2488,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19976,
 			["h"] = {
 				[1539] = 19976,
 			},
+			["m"] = 19976,
 		},
 		["g:15124:25"] = {
 			["a"] = {
@@ -2521,19 +2499,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50000,
 			["h"] = {
 				[1539] = 50000,
 			},
+			["m"] = 50000,
 		},
 		["gn:6565:Shimmering Gloves of Spirit:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 2291,
 			["h"] = {
 			},
+			["m"] = 2291,
 		},
 		["g:5770:30"] = {
 			["a"] = {
@@ -2541,10 +2519,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 30068,
 			["h"] = {
 				[1538] = 30068,
 			},
-			["m"] = 30068,
 		},
 		["g:7368:34"] = {
 			["a"] = {
@@ -2552,10 +2530,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7998,
 			["h"] = {
 				[1539] = 7998,
 			},
+			["m"] = 7998,
 		},
 		["gn:15304:Grizzly Jerkin of Spirit:16"] = {
 			["a"] = {
@@ -2563,10 +2541,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10622,
 			["h"] = {
 				[1539] = 10622,
 			},
-			["m"] = 10622,
 		},
 		["gn:2236:Blackfang:25"] = {
 			["a"] = {
@@ -2574,10 +2552,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 59997,
 			["h"] = {
 				[1540] = 59997,
 			},
+			["m"] = 59997,
 		},
 		["gn:6268:Pioneer Tunic of Spirit:13"] = {
 			["a"] = {
@@ -2585,10 +2563,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3000,
 			["h"] = {
 				[1539] = 3000,
 			},
-			["m"] = 3000,
 		},
 		["gn:2077:Magician Staff of the Owl:29"] = {
 			["a"] = {
@@ -2596,10 +2574,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 15014,
 			["h"] = {
 				[1540] = 15014,
 			},
+			["m"] = 15014,
 		},
 		["gn:14213:Vital Raiment of Stamina:37"] = {
 			["a"] = {
@@ -2607,10 +2585,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 20000,
 			["h"] = {
 				[1540] = 20000,
 			},
+			["m"] = 20000,
 		},
 		["g:4242:15"] = {
 			["a"] = {
@@ -2618,10 +2596,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4500,
 			["h"] = {
 				[1539] = 4500,
 			},
-			["m"] = 4500,
 		},
 		["gn:1997:Pressed Felt Robe:34"] = {
 			["a"] = {
@@ -2629,10 +2607,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3776,
 			["h"] = {
 				[1538] = 3776,
 			},
-			["m"] = 3776,
 		},
 		["g:14241:41"] = {
 			["a"] = {
@@ -2640,10 +2618,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 30125,
 			["h"] = {
 				[1539] = 30125,
 			},
+			["m"] = 30125,
 		},
 		["7728"] = {
 			["a"] = {
@@ -2651,10 +2629,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 48796,
 			["h"] = {
 				[1538] = 48796,
 			},
-			["m"] = 48796,
 		},
 		["g:14122:18"] = {
 			["a"] = {
@@ -2662,10 +2640,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7552,
 			["h"] = {
 				[1539] = 7552,
 			},
+			["m"] = 7552,
 		},
 		["g:9909:43"] = {
 			["a"] = {
@@ -2673,10 +2651,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 99999,
 			["h"] = {
 				[1539] = 99999,
 			},
+			["m"] = 99999,
 		},
 		["gn:865:Leaden Mace of Healing:31"] = {
 			["a"] = {
@@ -2684,10 +2662,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 39998,
 			["h"] = {
 				[1539] = 39998,
 			},
+			["m"] = 39998,
 		},
 		["gn:14204:Thistlefur Robe of Arcane Wrath:36"] = {
 			["a"] = {
@@ -2695,10 +2673,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19999,
 			["h"] = {
 				[1540] = 19999,
 			},
+			["m"] = 19999,
 		},
 		["g:7437:36"] = {
 			["a"] = {
@@ -2706,10 +2684,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 11078,
 			["h"] = {
 				[1539] = 11078,
 			},
+			["m"] = 11078,
 		},
 		["g:791:31"] = {
 			["a"] = {
@@ -2717,10 +2695,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 20190,
 			["h"] = {
 				[1540] = 20190,
 			},
+			["m"] = 20190,
 		},
 		["gn:9901:Jazeraint Belt of Healing:40"] = {
 			["a"] = {
@@ -2728,10 +2706,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 49999,
 			["h"] = {
 				[1539] = 49999,
 			},
+			["m"] = 49999,
 		},
 		["15918"] = {
 			["a"] = {
@@ -2739,10 +2717,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 39994,
 			["h"] = {
 				[1539] = 39994,
 			},
+			["m"] = 39994,
 		},
 		["gn:7430:Twilight Robe of Spirit:40"] = {
 			["a"] = {
@@ -2750,10 +2728,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50328,
 			["h"] = {
 				[1540] = 50328,
 			},
+			["m"] = 50328,
 		},
 		["g:14165:25"] = {
 			["a"] = {
@@ -2761,10 +2739,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7496,
 			["h"] = {
 				[1539] = 7496,
 			},
+			["m"] = 7496,
 		},
 		["7414"] = {
 			["a"] = {
@@ -2772,10 +2750,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 79999,
 			["h"] = {
 				[1539] = 79999,
 			},
+			["m"] = 79999,
 		},
 		["gn:15312:Feral Leggings of the Monkey:20"] = {
 			["a"] = {
@@ -2783,28 +2761,28 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 19900,
 			["h"] = {
 				[1539] = 19900,
 			},
-			["m"] = 19900,
 		},
 		["g:2980:15"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 2099,
 			["h"] = {
 			},
+			["m"] = 2099,
 		},
 		["818"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 102,
 			["h"] = {
 			},
+			["m"] = 102,
 		},
 		["14165"] = {
 			["a"] = {
@@ -2812,10 +2790,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7496,
 			["h"] = {
 				[1539] = 7496,
 			},
+			["m"] = 7496,
 		},
 		["g:3321:9"] = {
 			["a"] = {
@@ -2823,10 +2801,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10101,
 			["h"] = {
 				[1539] = 10101,
 			},
-			["m"] = 10101,
 		},
 		["gn:15537:Wicked Chain Cloak of Healing:28"] = {
 			["a"] = {
@@ -2834,10 +2812,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9999,
 			["h"] = {
 				[1539] = 9999,
 			},
+			["m"] = 9999,
 		},
 		["gn:776:Vendetta:31"] = {
 			["a"] = {
@@ -2845,10 +2823,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 222953,
 			["h"] = {
 				[1540] = 222953,
 			},
+			["m"] = 222953,
 		},
 		["gn:4571:War Knife of Frozen Wrath:17"] = {
 			["a"] = {
@@ -2856,10 +2834,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 19898,
 			["h"] = {
 				[1539] = 19898,
 			},
-			["m"] = 19898,
 		},
 		["gn:15304:Grizzly Jerkin of the Monkey:16"] = {
 			["a"] = {
@@ -2867,10 +2845,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7494,
 			["h"] = {
 				[1539] = 7494,
 			},
-			["m"] = 7494,
 		},
 		["gn:9847:Conjurer's Cloak of Healing:33"] = {
 			["a"] = {
@@ -2879,11 +2857,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3347,
 			["h"] = {
 				[1538] = 4053,
 				[1539] = 3347,
 			},
+			["m"] = 3347,
 		},
 		["gn:15242:Honed Stiletto of Healing:30"] = {
 			["a"] = {
@@ -2892,11 +2870,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 17092,
 			["h"] = {
 				[1539] = 20092,
 				[1540] = 17092,
 			},
+			["m"] = 17092,
 		},
 		["gn:14125:Ritual Leggings of Healing:21"] = {
 			["a"] = {
@@ -2904,10 +2882,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 2613,
 			["h"] = {
 				[1539] = 2613,
 			},
+			["m"] = 2613,
 		},
 		["gn:15310:Feral Gloves of the Tiger:18"] = {
 			["a"] = {
@@ -2915,10 +2893,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 12999,
 			["h"] = {
 				[1539] = 12999,
 			},
-			["m"] = 12999,
 		},
 		["gn:9847:Conjurer's Cloak of the Owl:33"] = {
 			["a"] = {
@@ -2926,19 +2904,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7192,
 			["h"] = {
 				[1538] = 7192,
 			},
+			["m"] = 7192,
 		},
 		["gn:14364:Mystic's Slippers:18"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 2356,
 			["h"] = {
 			},
-			["m"] = 2356,
 		},
 		["gn:9877:Sorcerer Cloak of Fiery Wrath:38"] = {
 			["a"] = {
@@ -2946,10 +2924,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 79993,
 			["h"] = {
 				[1538] = 79993,
 			},
+			["m"] = 79993,
 		},
 		["g:14205:32"] = {
 			["a"] = {
@@ -2957,10 +2935,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 49998,
 			["h"] = {
 				[1539] = 49998,
 			},
+			["m"] = 49998,
 		},
 		["gn:7446:Sentinel Cloak of Healing:36"] = {
 			["a"] = {
@@ -2968,10 +2946,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9977,
 			["h"] = {
 				[1539] = 9977,
 			},
+			["m"] = 9977,
 		},
 		["gn:9870:Renegade Circlet of Healing:36"] = {
 			["a"] = {
@@ -2979,10 +2957,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9900,
 			["h"] = {
 				[1539] = 9900,
 			},
+			["m"] = 9900,
 		},
 		["g:10289:32"] = {
 			["a"] = {
@@ -2990,10 +2968,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9982,
 			["h"] = {
 				[1539] = 9982,
 			},
+			["m"] = 9982,
 		},
 		["g:217246:41"] = {
 			["a"] = {
@@ -3001,10 +2979,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 6515,
 			["h"] = {
 				[1540] = 6515,
 			},
+			["m"] = 6515,
 		},
 		["14163"] = {
 			["a"] = {
@@ -3012,10 +2990,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7082,
 			["h"] = {
 				[1538] = 7082,
 			},
-			["m"] = 7082,
 		},
 		["g:9901:40"] = {
 			["a"] = {
@@ -3023,10 +3001,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 49999,
 			["h"] = {
 				[1539] = 49999,
 			},
+			["m"] = 49999,
 		},
 		["gn:7446:Sentinel Cloak of the Owl:36"] = {
 			["a"] = {
@@ -3034,10 +3012,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8705,
 			["h"] = {
 				[1538] = 8705,
 			},
+			["m"] = 8705,
 		},
 		["gn:2632:Curved Dagger of Frozen Wrath:14"] = {
 			["a"] = {
@@ -3045,10 +3023,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5075,
 			["h"] = {
 				[1539] = 5075,
 			},
-			["m"] = 5075,
 		},
 		["gn:3185:Acrobatic Staff of the Owl:34"] = {
 			["a"] = {
@@ -3056,19 +3034,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 18999,
 			["h"] = {
 				[1540] = 18999,
 			},
+			["m"] = 18999,
 		},
 		["gn:9767:Greenweave Sandals of the Eagle:23"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 10000,
 			["h"] = {
 			},
-			["m"] = 10000,
 		},
 		["gn:9434:Elemental Raiment:41"] = {
 			["a"] = {
@@ -3076,10 +3054,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 89996,
 			["h"] = {
 				[1540] = 89996,
 			},
+			["m"] = 89996,
 		},
 		["14173"] = {
 			["a"] = {
@@ -3087,10 +3065,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1539] = 10000,
 			},
+			["m"] = 10000,
 		},
 		["gn:14219:Geomancer's Cloak of Frozen Wrath:34"] = {
 			["a"] = {
@@ -3098,10 +3076,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 24552,
 			["h"] = {
 				[1538] = 24552,
 			},
+			["m"] = 24552,
 		},
 		["gn:9867:Renegade Cloak of Strength:33"] = {
 			["a"] = {
@@ -3109,19 +3087,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 2994,
 			["h"] = {
 				[1538] = 2994,
 			},
+			["m"] = 2994,
 		},
 		["gn:9771:Greenweave Gloves of Fiery Wrath:25"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 9999,
 			["h"] = {
 			},
+			["m"] = 9999,
 		},
 		["gn:9840:Banded Girdle of Healing:31"] = {
 			["a"] = {
@@ -3129,19 +3107,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3500,
 			["h"] = {
 				[1539] = 3500,
 			},
+			["m"] = 3500,
 		},
 		["6628"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 18527,
 			["h"] = {
 			},
+			["m"] = 18527,
 		},
 		["gn:7521:Gossamer Gloves of Healing:46"] = {
 			["a"] = {
@@ -3149,19 +3127,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 24998,
 			["h"] = {
 				[1539] = 24998,
 			},
+			["m"] = 24998,
 		},
 		["gn:4331:Phoenix Gloves:25"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 11981,
 			["h"] = {
 			},
+			["m"] = 11981,
 		},
 		["gn:15012:Lupine Slippers of the Eagle:16"] = {
 			["a"] = {
@@ -3169,10 +3147,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 8477,
 			["h"] = {
 				[1539] = 8477,
 			},
-			["m"] = 8477,
 		},
 		["9925"] = {
 			["a"] = {
@@ -3180,10 +3158,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 39997,
 			["h"] = {
 				[1539] = 39997,
 			},
+			["m"] = 39997,
 		},
 		["gn:15016:Lupine Handwraps of Spirit:16"] = {
 			["a"] = {
@@ -3191,10 +3169,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5987,
 			["h"] = {
 				[1539] = 5987,
 			},
-			["m"] = 5987,
 		},
 		["gn:9852:Conjurer's Robe of Intellect:38"] = {
 			["a"] = {
@@ -3202,10 +3180,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 12996,
 			["h"] = {
 				[1540] = 12996,
 			},
+			["m"] = 12996,
 		},
 		["gn:2140:Carving Knife of Strength:11"] = {
 			["a"] = {
@@ -3213,10 +3191,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7193,
 			["h"] = {
 				[1539] = 7193,
 			},
-			["m"] = 7193,
 		},
 		["gn:9775:Bandit Cinch of the Monkey:19"] = {
 			["a"] = {
@@ -3224,10 +3202,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 19899,
 			["h"] = {
 				[1539] = 19899,
 			},
-			["m"] = 19899,
 		},
 		["9930"] = {
 			["a"] = {
@@ -3235,10 +3213,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 250000,
 			["h"] = {
 				[1539] = 250000,
 			},
+			["m"] = 250000,
 		},
 		["gn:4239:Embossed Leather Gloves:13"] = {
 			["a"] = {
@@ -3246,19 +3224,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 84,
 			["h"] = {
 				[1539] = 84,
 			},
-			["m"] = 84,
 		},
 		["gn:14169:Aboriginal Shoulder Pads:21"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 2900,
 			["h"] = {
 			},
+			["m"] = 2900,
 		},
 		["g:6557:16"] = {
 			["a"] = {
@@ -3266,19 +3244,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 17999,
 			["h"] = {
 				[1539] = 17999,
 			},
-			["m"] = 17999,
 		},
 		["14374"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 3498,
 			["h"] = {
 			},
-			["m"] = 3498,
 		},
 		["gn:3185:Acrobatic Staff of Arcane Wrath:34"] = {
 			["a"] = {
@@ -3286,10 +3264,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10075,
 			["h"] = {
 				[1540] = 10075,
 			},
+			["m"] = 10075,
 		},
 		["g:2140:11"] = {
 			["a"] = {
@@ -3298,10 +3276,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1539] = 5998,
 			},
-			["m"] = 5998,
 			["h"] = {
 				[1539] = 14899,
 			},
+			["m"] = 5998,
 		},
 		["9851"] = {
 			["a"] = {
@@ -3309,10 +3287,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8876,
 			["h"] = {
 				[1539] = 8876,
 			},
+			["m"] = 8876,
 		},
 		["gn:13121:Wing of the Whelpling:38"] = {
 			["a"] = {
@@ -3320,10 +3298,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 129394,
 			["h"] = {
 				[1538] = 129394,
 			},
+			["m"] = 129394,
 		},
 		["9898"] = {
 			["a"] = {
@@ -3331,10 +3309,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4999,
 			["h"] = {
 				[1538] = 4999,
 			},
+			["m"] = 4999,
 		},
 		["g:9898:38"] = {
 			["a"] = {
@@ -3342,10 +3320,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4999,
 			["h"] = {
 				[1538] = 4999,
 			},
+			["m"] = 4999,
 		},
 		["gn:3311:Ceremonial Leather Ankleguards:15"] = {
 			["a"] = {
@@ -3353,10 +3331,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5585,
 			["h"] = {
 				[1539] = 5585,
 			},
-			["m"] = 5585,
 		},
 		["g:9846:35"] = {
 			["a"] = {
@@ -3364,10 +3342,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 35034,
 			["h"] = {
 				[1539] = 35034,
 			},
+			["m"] = 35034,
 		},
 		["6417"] = {
 			["a"] = {
@@ -3375,10 +3353,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 6679,
 			["h"] = {
 				[1538] = 6679,
 			},
+			["m"] = 6679,
 		},
 		["gn:7357:Elder's Hat of Healing:34"] = {
 			["a"] = {
@@ -3386,10 +3364,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5986,
 			["h"] = {
 				[1539] = 5986,
 			},
+			["m"] = 5986,
 		},
 		["gn:9826:Durable Robe of Intellect:34"] = {
 			["a"] = {
@@ -3397,10 +3375,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9999,
 			["h"] = {
 				[1538] = 9999,
 			},
-			["m"] = 9999,
 		},
 		["gn:2819:Cross Dagger of the Tiger:28"] = {
 			["a"] = {
@@ -3408,10 +3386,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 14479,
 			["h"] = {
 				[1540] = 14479,
 			},
+			["m"] = 14479,
 		},
 		["9831"] = {
 			["a"] = {
@@ -3419,10 +3397,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9999,
 			["h"] = {
 				[1539] = 9999,
 			},
+			["m"] = 9999,
 		},
 		["gn:7609:Elder's Amber Stave of Healing:35"] = {
 			["a"] = {
@@ -3430,10 +3408,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50520,
 			["h"] = {
 				[1539] = 50520,
 			},
+			["m"] = 50520,
 		},
 		["9870"] = {
 			["a"] = {
@@ -3441,10 +3419,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9900,
 			["h"] = {
 				[1539] = 9900,
 			},
+			["m"] = 9900,
 		},
 		["15017"] = {
 			["a"] = {
@@ -3452,10 +3430,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4974,
 			["h"] = {
 				[1539] = 4974,
 			},
-			["m"] = 4974,
 		},
 		["g:9428:35"] = {
 			["a"] = {
@@ -3463,10 +3441,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 110000,
 			["h"] = {
 				[1539] = 110000,
 			},
+			["m"] = 110000,
 		},
 		["14420"] = {
 			["a"] = {
@@ -3474,10 +3452,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5490,
 			["h"] = {
 				[1538] = 5490,
 			},
+			["m"] = 5490,
 		},
 		["9877"] = {
 			["a"] = {
@@ -3487,11 +3465,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1538] = 5597,
 			},
-			["m"] = 7483,
 			["h"] = {
 				[1538] = 5598,
 				[1539] = 7483,
 			},
+			["m"] = 7483,
 		},
 		["15010"] = {
 			["a"] = {
@@ -3499,10 +3477,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4299,
 			["h"] = {
 				[1539] = 4299,
 			},
-			["m"] = 4299,
 		},
 		["gn:15971:Aboriginal Rod of Healing:20"] = {
 			["a"] = {
@@ -3510,10 +3488,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9898,
 			["h"] = {
 				[1539] = 9898,
 			},
+			["m"] = 9898,
 		},
 		["gn:4324:Azure Silk Vest:30"] = {
 			["a"] = {
@@ -3521,10 +3499,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2899,
 			["h"] = {
 				[1538] = 2899,
 			},
-			["m"] = 2899,
 		},
 		["5572"] = {
 			["a"] = {
@@ -3532,10 +3510,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 969,
 			["h"] = {
 				[1539] = 969,
 			},
+			["m"] = 969,
 		},
 		["gn:14561:Prospector's Cuffs:17"] = {
 			["a"] = {
@@ -3543,19 +3521,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9999,
 			["h"] = {
 				[1539] = 9999,
 			},
-			["m"] = 9999,
 		},
 		["g:4385:30"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 5090,
 			["h"] = {
 			},
+			["m"] = 5090,
 		},
 		["gn:9898:Jazeraint Cloak of the Eagle:38"] = {
 			["a"] = {
@@ -3563,10 +3541,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 6999,
 			["h"] = {
 				[1538] = 6999,
 			},
+			["m"] = 6999,
 		},
 		["4597"] = {
 			["a"] = {
@@ -3574,23 +3552,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 260,
 			["h"] = {
 				[1539] = 260,
 			},
+			["m"] = 260,
 		},
 		["gn:3473:Runed Copper Pants:13"] = {
 			["a"] = {
-				[1530] = 32,
 				[1539] = 50,
 			},
 			["l"] = {
 			},
-			["m"] = 6117,
 			["h"] = {
-				[1530] = 6995,
 				[1539] = 6117,
 			},
+			["m"] = 6117,
 		},
 		["gn:217246:Black Mageweave Vest:41"] = {
 			["a"] = {
@@ -3598,10 +3574,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 6515,
 			["h"] = {
 				[1540] = 6515,
 			},
+			["m"] = 6515,
 		},
 		["7757"] = {
 			["a"] = {
@@ -3609,10 +3585,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 89908,
 			["h"] = {
 				[1540] = 89908,
 			},
+			["m"] = 89908,
 		},
 		["15974"] = {
 			["a"] = {
@@ -3620,10 +3596,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8899,
 			["h"] = {
 				[1539] = 8899,
 			},
+			["m"] = 8899,
 		},
 		["5752"] = {
 			["a"] = {
@@ -3631,10 +3607,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 18000,
 			["h"] = {
 				[1540] = 18000,
 			},
+			["m"] = 18000,
 		},
 		["gn:7353:Elder's Padded Armor of the Owl:35"] = {
 			["a"] = {
@@ -3643,29 +3619,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6995,
 			["h"] = {
 				[1538] = 8000,
 				[1540] = 6995,
 			},
-			["m"] = 6995,
 		},
 		["gn:6565:Shimmering Gloves of Fiery Wrath:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 11293,
 			["h"] = {
 			},
+			["m"] = 11293,
 		},
 		["gn:4698:Seer's Mantle:21"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 8081,
 			["h"] = {
 			},
+			["m"] = 8081,
 		},
 		["gn:2140:Carving Knife of Fiery Wrath:11"] = {
 			["a"] = {
@@ -3673,10 +3649,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7000,
 			["h"] = {
 				[1539] = 7000,
 			},
-			["m"] = 7000,
 		},
 		["gn:14413:Stonecloth Robe:39"] = {
 			["a"] = {
@@ -3684,27 +3660,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 11596,
 			["h"] = {
 				[1540] = 11596,
 			},
+			["m"] = 11596,
 		},
 		["5571"] = {
 			["a"] = {
-				[1530] = 17,
-				[1531] = 28,
 				[1539] = 15,
 			},
 			["l"] = {
-				[1530] = 515,
-				[1531] = 332,
-			},
-			["h"] = {
-				[1530] = 516,
-				[1531] = 433,
-				[1539] = 781,
 			},
 			["m"] = 781,
+			["h"] = {
+				[1539] = 781,
+			},
 		},
 		["4571"] = {
 			["a"] = {
@@ -3713,10 +3683,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1539] = 7999,
 			},
-			["m"] = 7999,
 			["h"] = {
 				[1539] = 8000,
 			},
+			["m"] = 7999,
 		},
 		["1998"] = {
 			["a"] = {
@@ -3724,10 +3694,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10691,
 			["h"] = {
 				[1540] = 10691,
 			},
+			["m"] = 10691,
 		},
 		["14162"] = {
 			["a"] = {
@@ -3735,10 +3705,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 12774,
 			["h"] = {
 				[1539] = 12774,
 			},
+			["m"] = 12774,
 		},
 		["g:15110:20"] = {
 			["a"] = {
@@ -3746,10 +3716,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10087,
 			["h"] = {
 				[1539] = 10087,
 			},
-			["m"] = 10087,
 		},
 		["gn:2077:Magician Staff of Healing:29"] = {
 			["a"] = {
@@ -3758,11 +3728,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9999,
 			["h"] = {
 				[1539] = 14998,
 				[1540] = 9999,
 			},
+			["m"] = 9999,
 		},
 		["10400"] = {
 			["a"] = {
@@ -3770,19 +3740,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 35160,
 			["h"] = {
 				[1539] = 35160,
 			},
-			["m"] = 35160,
 		},
 		["g:14164:21"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 6511,
 			["h"] = {
 			},
-			["m"] = 6511,
 		},
 		["g:2988:19"] = {
 			["a"] = {
@@ -3790,10 +3760,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5492,
 			["h"] = {
 				[1539] = 5492,
 			},
-			["m"] = 5492,
 		},
 		["gn:9860:Archer's Cloak of the Wolf:34"] = {
 			["a"] = {
@@ -3801,10 +3771,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9783,
 			["h"] = {
 				[1538] = 9783,
 			},
+			["m"] = 9783,
 		},
 		["g:9823:31"] = {
 			["a"] = {
@@ -3812,10 +3782,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3091,
 			["h"] = {
 				[1539] = 3091,
 			},
+			["m"] = 3091,
 		},
 		["g:9890:38"] = {
 			["a"] = {
@@ -3823,10 +3793,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5184,
 			["h"] = {
 				[1538] = 5184,
 			},
+			["m"] = 5184,
 		},
 		["gn:15243:Deadly Kris of Healing:36"] = {
 			["a"] = {
@@ -3835,11 +3805,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50000,
 			["h"] = {
 				[1539] = 19996,
 				[1540] = 50000,
 			},
+			["m"] = 50000,
 		},
 		["gn:14184:Watcher's Robes of Frozen Wrath:30"] = {
 			["a"] = {
@@ -3847,39 +3817,37 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 22997,
 			["h"] = {
 				[1538] = 22997,
 			},
-			["m"] = 22997,
 		},
 		["gn:6570:Shimmering Sash of the Eagle:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 3000,
 			["h"] = {
 			},
-			["m"] = 3000,
 		},
 		["2452"] = {
 			["a"] = {
-				[1530] = 243,
 			},
 			["l"] = {
 			},
-			["m"] = 2190,
 			["h"] = {
-				[1530] = 2190,
 			},
+			["m"] = 2190,
 		},
 		["gn:9767:Greenweave Sandals of Stamina:23"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 6807,
 			["h"] = {
 			},
-			["m"] = 6807,
 		},
 		["13108"] = {
 			["a"] = {
@@ -3887,21 +3855,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 113000,
 			["h"] = {
 				[1538] = 113000,
 			},
+			["m"] = 113000,
 		},
 		["4363"] = {
 			["a"] = {
-				[1530] = 99,
 			},
 			["l"] = {
 			},
-			["h"] = {
-				[1530] = 58,
-			},
 			["m"] = 58,
+			["h"] = {
+			},
 		},
 		["gn:15018:Lupine Vest of Stamina:20"] = {
 			["a"] = {
@@ -3909,10 +3875,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5000,
 			["h"] = {
 				[1539] = 5000,
 			},
-			["m"] = 5000,
 		},
 		["9848"] = {
 			["a"] = {
@@ -3920,10 +3886,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 25950,
 			["h"] = {
 				[1539] = 25950,
 			},
+			["m"] = 25950,
 		},
 		["2836"] = {
 			["a"] = {
@@ -3931,10 +3897,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 30,
 			["h"] = {
 				[1538] = 30,
 			},
+			["m"] = 30,
 		},
 		["15571"] = {
 			["a"] = {
@@ -3942,10 +3908,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 99999,
 			["h"] = {
 				[1539] = 99999,
 			},
+			["m"] = 99999,
 		},
 		["g:2092:2"] = {
 			["a"] = {
@@ -3953,10 +3919,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5997,
 			["h"] = {
 				[1539] = 5997,
 			},
-			["m"] = 5997,
 		},
 		["3490"] = {
 			["a"] = {
@@ -3964,28 +3930,28 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29995,
 			["h"] = {
 				[1540] = 29995,
 			},
+			["m"] = 29995,
 		},
 		["gn:14110:Native Sandals:13"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 99,
 			["h"] = {
 			},
-			["m"] = 99,
 		},
 		["gn:9845:Conjurer's Shoes of Spirit:35"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 3548,
 			["h"] = {
 			},
-			["m"] = 3548,
 		},
 		["g:1207:39"] = {
 			["a"] = {
@@ -3993,10 +3959,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19990,
 			["h"] = {
 				[1539] = 19990,
 			},
+			["m"] = 19990,
 		},
 		["9772"] = {
 			["a"] = {
@@ -4004,10 +3970,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9998,
 			["h"] = {
 				[1539] = 9998,
 			},
+			["m"] = 9998,
 		},
 		["2819"] = {
 			["a"] = {
@@ -4016,11 +3982,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7594,
 			["h"] = {
 				[1539] = 7499,
 				[1540] = 7594,
 			},
+			["m"] = 7594,
 		},
 		["gn:9877:Sorcerer Cloak of Frost Resistance:38"] = {
 			["a"] = {
@@ -4028,10 +3994,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 80559,
 			["h"] = {
 				[1538] = 80559,
 			},
+			["m"] = 80559,
 		},
 		["9819"] = {
 			["a"] = {
@@ -4039,10 +4005,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5994,
 			["h"] = {
 				[1538] = 5994,
 			},
-			["m"] = 5994,
 		},
 		["gn:14255:Lunar Belt of Healing:42"] = {
 			["a"] = {
@@ -4050,10 +4016,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 355498,
 			["h"] = {
 				[1539] = 355498,
 			},
+			["m"] = 355498,
 		},
 		["gn:9889:Huntsman's Cap of Healing:40"] = {
 			["a"] = {
@@ -4061,10 +4027,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29799,
 			["h"] = {
 				[1539] = 29799,
 			},
+			["m"] = 29799,
 		},
 		["g:14213:37"] = {
 			["a"] = {
@@ -4072,10 +4038,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7708,
 			["h"] = {
 				[1540] = 7708,
 			},
+			["m"] = 7708,
 		},
 		["g:9840:31"] = {
 			["a"] = {
@@ -4083,10 +4049,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3500,
 			["h"] = {
 				[1539] = 3500,
 			},
+			["m"] = 3500,
 		},
 		["gn:9910:Royal Gloves of Healing:44"] = {
 			["a"] = {
@@ -4094,10 +4060,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 92596,
 			["h"] = {
 				[1539] = 92596,
 			},
+			["m"] = 92596,
 		},
 		["15122"] = {
 			["a"] = {
@@ -4105,19 +4071,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9971,
 			["h"] = {
 				[1539] = 9971,
 			},
+			["m"] = 9971,
 		},
 		["1777"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 497,
 			["h"] = {
 			},
+			["m"] = 497,
 		},
 		["9771"] = {
 			["a"] = {
@@ -4125,10 +4091,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4386,
 			["h"] = {
 				[1539] = 4386,
 			},
+			["m"] = 4386,
 		},
 		["5770"] = {
 			["a"] = {
@@ -4136,10 +4102,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 30068,
 			["h"] = {
 				[1538] = 30068,
 			},
-			["m"] = 30068,
 		},
 		["gn:4571:War Knife of Strength:17"] = {
 			["a"] = {
@@ -4147,10 +4113,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 11734,
 			["h"] = {
 				[1539] = 11734,
 			},
-			["m"] = 11734,
 		},
 		["gn:9882:Sorcerer Sphere of Healing:43"] = {
 			["a"] = {
@@ -4158,10 +4124,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 79983,
 			["h"] = {
 				[1539] = 79983,
 			},
+			["m"] = 79983,
 		},
 		["g:7448:36"] = {
 			["a"] = {
@@ -4170,10 +4136,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1541] = 4492,
 			},
-			["m"] = 4492,
 			["h"] = {
 				[1541] = 6493,
 			},
+			["m"] = 4492,
 		},
 		["5216"] = {
 			["a"] = {
@@ -4181,19 +4147,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 259993,
 			["h"] = {
 				[1539] = 259993,
 			},
+			["m"] = 259993,
 		},
 		["4331"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 11981,
 			["h"] = {
 			},
+			["m"] = 11981,
 		},
 		["15153"] = {
 			["a"] = {
@@ -4201,10 +4167,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1538] = 10000,
 			},
+			["m"] = 10000,
 		},
 		["gn:5780:Murloc Scale Belt:18"] = {
 			["a"] = {
@@ -4212,19 +4178,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 29999,
 			["h"] = {
 				[1539] = 29999,
 			},
-			["m"] = 29999,
 		},
 		["gn:14164:Pagan Belt of Healing:21"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 8998,
 			["h"] = {
 			},
-			["m"] = 8998,
 		},
 		["g:9900:40"] = {
 			["a"] = {
@@ -4232,10 +4198,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29931,
 			["h"] = {
 				[1539] = 29931,
 			},
+			["m"] = 29931,
 		},
 		["g:9771:25"] = {
 			["a"] = {
@@ -4243,10 +4209,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4386,
 			["h"] = {
 				[1539] = 4386,
 			},
+			["m"] = 4386,
 		},
 		["8183"] = {
 			["a"] = {
@@ -4255,10 +4221,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1538] = 6496,
 			},
+			["m"] = 6496,
 			["h"] = {
 				[1538] = 6497,
 			},
-			["m"] = 6496,
 		},
 		["g:2764:18"] = {
 			["a"] = {
@@ -4266,10 +4232,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3301,
 			["h"] = {
 				[1539] = 3301,
 			},
-			["m"] = 3301,
 		},
 		["gn:2077:Magician Staff of the Wolf:29"] = {
 			["a"] = {
@@ -4277,28 +4243,28 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7000,
 			["h"] = {
 				[1540] = 7000,
 			},
+			["m"] = 7000,
 		},
 		["2770"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 421,
 			["h"] = {
 			},
+			["m"] = 421,
 		},
 		["414"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 108750,
 			["h"] = {
 			},
-			["m"] = 108750,
 		},
 		["g:2072:27"] = {
 			["a"] = {
@@ -4306,10 +4272,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 6999,
 			["h"] = {
 				[1540] = 6999,
 			},
+			["m"] = 6999,
 		},
 		["gn:7446:Sentinel Cloak of Intellect:36"] = {
 			["a"] = {
@@ -4317,10 +4283,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10997,
 			["h"] = {
 				[1538] = 10997,
 			},
+			["m"] = 10997,
 		},
 		["g:15013:14"] = {
 			["a"] = {
@@ -4328,10 +4294,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4269,
 			["h"] = {
 				[1539] = 4269,
 			},
-			["m"] = 4269,
 		},
 		["7470"] = {
 			["a"] = {
@@ -4339,10 +4305,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9999,
 			["h"] = {
 				[1539] = 9999,
 			},
+			["m"] = 9999,
 		},
 		["gn:14253:Lunar Handwraps of Healing:43"] = {
 			["a"] = {
@@ -4350,10 +4316,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 59996,
 			["h"] = {
 				[1539] = 59996,
 			},
+			["m"] = 59996,
 		},
 		["gn:15303:Grizzly Pants of the Monkey:14"] = {
 			["a"] = {
@@ -4361,10 +4327,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7498,
 			["h"] = {
 				[1539] = 7498,
 			},
-			["m"] = 7498,
 		},
 		["7431"] = {
 			["a"] = {
@@ -4372,10 +4338,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50036,
 			["h"] = {
 				[1539] = 50036,
 			},
+			["m"] = 50036,
 		},
 		["2764"] = {
 			["a"] = {
@@ -4383,25 +4349,22 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3301,
 			["h"] = {
 				[1539] = 3301,
 			},
-			["m"] = 3301,
 		},
 		["5972"] = {
 			["a"] = {
-				[1533] = 11,
 				[1539] = 8,
 			},
 			["l"] = {
-				[1533] = 2486,
 				[1539] = 1500,
 			},
-			["m"] = 1500,
 			["h"] = {
-				[1533] = 2487,
 				[1539] = 1501,
 			},
+			["m"] = 1500,
 		},
 		["5764"] = {
 			["a"] = {
@@ -4409,10 +4372,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9850,
 			["h"] = {
 				[1539] = 9850,
 			},
+			["m"] = 9850,
 		},
 		["g:14420:38"] = {
 			["a"] = {
@@ -4420,22 +4383,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5490,
 			["h"] = {
 				[1538] = 5490,
 			},
+			["m"] = 5490,
 		},
 		["5471"] = {
 			["a"] = {
-				[1530] = 67,
 			},
 			["l"] = {
-				[1530] = 30,
-			},
-			["h"] = {
-				[1530] = 31,
 			},
 			["m"] = 30,
+			["h"] = {
+			},
 		},
 		["gn:15306:Feral Bindings of the Whale:16"] = {
 			["a"] = {
@@ -4443,10 +4403,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2000,
 			["h"] = {
 				[1539] = 2000,
 			},
-			["m"] = 2000,
 		},
 		["gn:7369:Elder's Robe of Intellect:35"] = {
 			["a"] = {
@@ -4454,10 +4414,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 25000,
 			["h"] = {
 				[1540] = 25000,
 			},
+			["m"] = 25000,
 		},
 		["gn:9773:Greenweave Robe of Arcane Wrath:27"] = {
 			["a"] = {
@@ -4465,10 +4425,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 19989,
 			["h"] = {
 				[1538] = 19989,
 			},
-			["m"] = 19989,
 		},
 		["6591"] = {
 			["a"] = {
@@ -4476,30 +4436,28 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3000,
 			["h"] = {
 				[1539] = 3000,
 			},
+			["m"] = 3000,
 		},
 		["2997"] = {
 			["a"] = {
-				[1533] = 190,
 			},
 			["l"] = {
 			},
-			["h"] = {
-				[1533] = 568,
-			},
 			["m"] = 568,
+			["h"] = {
+			},
 		},
 		["gn:9766:Greenweave Sash of Fiery Wrath:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 17997,
 			["h"] = {
 			},
-			["m"] = 17997,
 		},
 		["gn:2072:Dwarven Magestaff of the Boar:27"] = {
 			["a"] = {
@@ -4507,10 +4465,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10500,
 			["h"] = {
 				[1540] = 10500,
 			},
+			["m"] = 10500,
 		},
 		["gn:9908:Royal Cape of Healing:43"] = {
 			["a"] = {
@@ -4518,10 +4476,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29997,
 			["h"] = {
 				[1539] = 29997,
 			},
+			["m"] = 29997,
 		},
 		["g:9855:35"] = {
 			["a"] = {
@@ -4529,23 +4487,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 36993,
 			["h"] = {
 				[1539] = 36993,
 			},
+			["m"] = 36993,
 		},
 		["2592"] = {
 			["a"] = {
-				[1530] = 168,
-				[1533] = 263,
 			},
 			["l"] = {
 			},
-			["h"] = {
-				[1530] = 320,
-				[1533] = 207,
-			},
 			["m"] = 207,
+			["h"] = {
+			},
 		},
 		["g:15242:30"] = {
 			["a"] = {
@@ -4554,11 +4508,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9997,
 			["h"] = {
 				[1539] = 20092,
 				[1540] = 9997,
 			},
+			["m"] = 9997,
 		},
 		["13121"] = {
 			["a"] = {
@@ -4566,10 +4520,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 129394,
 			["h"] = {
 				[1538] = 129394,
 			},
+			["m"] = 129394,
 		},
 		["1997"] = {
 			["a"] = {
@@ -4577,19 +4531,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3776,
 			["h"] = {
 				[1538] = 3776,
 			},
-			["m"] = 3776,
 		},
 		["g:14110:13"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 99,
 			["h"] = {
 			},
-			["m"] = 99,
 		},
 		["804"] = {
 			["a"] = {
@@ -4597,10 +4551,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 22220,
 			["h"] = {
 				[1539] = 22220,
 			},
+			["m"] = 22220,
 		},
 		["gn:9773:Greenweave Robe of Frozen Wrath:27"] = {
 			["a"] = {
@@ -4608,10 +4562,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9000,
 			["h"] = {
 				[1538] = 9000,
 			},
-			["m"] = 9000,
 		},
 		["1664"] = {
 			["a"] = {
@@ -4619,10 +4573,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 58499,
 			["h"] = {
 				[1540] = 58499,
 			},
+			["m"] = 58499,
 		},
 		["gn:4788:Agile Boots:20"] = {
 			["a"] = {
@@ -4630,31 +4584,28 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10290,
 			["h"] = {
 				[1539] = 10290,
 			},
-			["m"] = 10290,
 		},
 		["14168"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 7397,
 			["h"] = {
 			},
+			["m"] = 7397,
 		},
 		["15224"] = {
 			["a"] = {
-				[1533] = 4,
 			},
 			["l"] = {
-				[1533] = 3096,
-			},
-			["h"] = {
-				[1533] = 8997,
 			},
 			["m"] = 3096,
+			["h"] = {
+			},
 		},
 		["g:15155:39"] = {
 			["a"] = {
@@ -4662,10 +4613,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50000,
 			["h"] = {
 				[1539] = 50000,
 			},
+			["m"] = 50000,
 		},
 		["g:14559:18"] = {
 			["a"] = {
@@ -4673,10 +4624,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3899,
 			["h"] = {
 				[1539] = 3899,
 			},
-			["m"] = 3899,
 		},
 		["9890"] = {
 			["a"] = {
@@ -4684,10 +4635,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5184,
 			["h"] = {
 				[1538] = 5184,
 			},
+			["m"] = 5184,
 		},
 		["gn:9927:Brigade Bracers of Healing:42"] = {
 			["a"] = {
@@ -4695,10 +4646,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 48797,
 			["h"] = {
 				[1539] = 48797,
 			},
+			["m"] = 48797,
 		},
 		["g:14113:15"] = {
 			["a"] = {
@@ -4706,20 +4657,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 2000,
 			["h"] = {
 				[1539] = 2000,
 			},
+			["m"] = 2000,
 		},
-		["g:1716:40"] = {
+		["gn:9767:Greenweave Sandals of the Whale:23"] = {
 			["a"] = {
-				[1540] = 6,
 			},
 			["l"] = {
 			},
-			["m"] = 315000,
+			["m"] = 2094,
 			["h"] = {
-				[1540] = 315000,
 			},
 		},
 		["4436"] = {
@@ -4727,22 +4676,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9999,
 			["h"] = {
 			},
-			["m"] = 9999,
 		},
-		["g:9877:38"] = {
+		["gn:14215:Vital Tunic of the Whale:37"] = {
 			["a"] = {
-				[1538] = 20,
-				[1539] = 2,
+				[1538] = 1,
+				[1540] = 1,
 			},
 			["l"] = {
-				[1538] = 5597,
 			},
-			["m"] = 7483,
+			["m"] = 8996,
 			["h"] = {
-				[1538] = 5598,
-				[1539] = 7483,
+				[1538] = 10000,
+				[1540] = 8996,
 			},
 		},
 		["gn:10400:Blackened Defias Leggings:18"] = {
@@ -4751,20 +4699,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 35160,
 			["h"] = {
 				[1539] = 35160,
 			},
-			["m"] = 35160,
 		},
-		["8006"] = {
+		["gn:15305:Feral Shoes of the Owl:18"] = {
 			["a"] = {
-				[1540] = 1,
+				[1539] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 189099,
+			["m"] = 7598,
 			["h"] = {
-				[1540] = 189099,
+				[1539] = 7598,
 			},
 		},
 		["gn:15306:Feral Bindings of Healing:16"] = {
@@ -4774,10 +4722,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1539] = 4498,
 			},
-			["m"] = 4498,
 			["h"] = {
 				[1539] = 7800,
 			},
+			["m"] = 4498,
 		},
 		["7436"] = {
 			["a"] = {
@@ -4786,19 +4734,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1538] = 5729,
 			},
-			["m"] = 5729,
 			["h"] = {
 				[1538] = 5731,
 			},
+			["m"] = 5729,
 		},
 		["14164"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 6511,
 			["h"] = {
 			},
-			["m"] = 6511,
 		},
 		["7430"] = {
 			["a"] = {
@@ -4806,10 +4754,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9897,
 			["h"] = {
 				[1540] = 9897,
 			},
+			["m"] = 9897,
 		},
 		["gn:15243:Deadly Kris of the Tiger:36"] = {
 			["a"] = {
@@ -4817,44 +4765,43 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29994,
 			["h"] = {
 				[1540] = 29994,
 			},
+			["m"] = 29994,
 		},
-		["9718"] = {
+		["g:9875:39"] = {
 			["a"] = {
-				[1540] = 4,
+				[1539] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 199550,
 			["h"] = {
-				[1540] = 199550,
+				[1539] = 6957,
 			},
+			["m"] = 6957,
 		},
-		["15306"] = {
+		["gn:9890:Huntsman's Cape of the Monkey:38"] = {
 			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-				[1539] = 2000,
-			},
-			["m"] = 4498,
-			["h"] = {
-				[1539] = 7800,
-			},
-		},
-		["gn:15242:Honed Stiletto of the Monkey:30"] = {
-			["a"] = {
-				[1540] = 4,
+				[1538] = 3,
 			},
 			["l"] = {
 			},
-			["m"] = 33097,
 			["h"] = {
-				[1540] = 33097,
+				[1538] = 9990,
 			},
+			["m"] = 9990,
+		},
+		["gn:2912:Claw of the Shadowmancer:32"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 169992,
+			},
+			["m"] = 169992,
 		},
 		["gn:15242:Honed Stiletto of Agility:30"] = {
 			["a"] = {
@@ -4862,10 +4809,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 85094,
 			["h"] = {
 				[1540] = 85094,
 			},
+			["m"] = 85094,
 		},
 		["gn:6609:Sage's Cloth of Shadow Wrath:32"] = {
 			["a"] = {
@@ -4873,32 +4820,32 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 26960,
 			["h"] = {
 				[1538] = 26960,
 			},
-			["m"] = 26960,
 		},
-		["gn:4244:Hillman's Leather Vest:20"] = {
+		["g:217252:37"] = {
 			["a"] = {
-				[1539] = 2,
+				[1538] = 7,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 9988,
+				[1538] = 5960,
 			},
-			["m"] = 9988,
+			["m"] = 5960,
 		},
-		["2236"] = {
+		["g:5752:26"] = {
 			["a"] = {
-				[1540] = 5,
+				[1540] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 59997,
 			["h"] = {
-				[1540] = 59997,
+				[1540] = 18000,
 			},
+			["m"] = 18000,
 		},
 		["19291"] = {
 			["a"] = {
@@ -4906,10 +4853,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 130000,
 			["h"] = {
 				[1539] = 130000,
 			},
+			["m"] = 130000,
 		},
 		["gn:2077:Magician Staff of the Boar:29"] = {
 			["a"] = {
@@ -4917,10 +4864,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9848,
 			["h"] = {
 				[1540] = 9848,
 			},
+			["m"] = 9848,
 		},
 		["g:3490:25"] = {
 			["a"] = {
@@ -4928,10 +4875,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29995,
 			["h"] = {
 				[1540] = 29995,
 			},
+			["m"] = 29995,
 		},
 		["gn:6610:Sage's Robe of the Eagle:32"] = {
 			["a"] = {
@@ -4939,21 +4886,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 13289,
 			["h"] = {
 				[1538] = 13289,
 			},
-			["m"] = 13289,
 		},
-		["gn:15241:Battle Knife of Strength:26"] = {
+		["gn:15242:Honed Stiletto of Power:30"] = {
 			["a"] = {
 				[1540] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 9500,
 			["h"] = {
-				[1540] = 9500,
+				[1540] = 19147,
 			},
+			["m"] = 19147,
 		},
 		["gn:15303:Grizzly Pants of the Whale:14"] = {
 			["a"] = {
@@ -4961,10 +4908,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2044,
 			["h"] = {
 				[1539] = 2044,
 			},
-			["m"] = 2044,
 		},
 		["gn:7353:Elder's Padded Armor of the Whale:35"] = {
 			["a"] = {
@@ -4972,10 +4919,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 6994,
 			["h"] = {
 				[1540] = 6994,
 			},
+			["m"] = 6994,
 		},
 		["9791"] = {
 			["a"] = {
@@ -4983,10 +4930,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 11116,
 			["h"] = {
 				[1538] = 11116,
 			},
-			["m"] = 11116,
 		},
 		["15969"] = {
 			["a"] = {
@@ -4994,10 +4941,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7515,
 			["h"] = {
 				[1539] = 7515,
 			},
+			["m"] = 7515,
 		},
 		["gn:9819:Durable Tunic of the Owl:34"] = {
 			["a"] = {
@@ -5005,10 +4952,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5994,
 			["h"] = {
 				[1538] = 5994,
 			},
-			["m"] = 5994,
 		},
 		["15009"] = {
 			["a"] = {
@@ -5016,52 +4963,52 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3094,
 			["h"] = {
 				[1539] = 3094,
 			},
-			["m"] = 3094,
 		},
-		["gn:3185:Acrobatic Staff of the Eagle:34"] = {
+		["gn:7446:Sentinel Cloak of Spirit:36"] = {
 			["a"] = {
-				[1540] = 1,
+				[1538] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 12098,
 			["h"] = {
-				[1540] = 12098,
+				[1538] = 8717,
 			},
+			["m"] = 8717,
 		},
 		["14157"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["h"] = {
+			},
 			["m"] = 2093,
-			["h"] = {
-			},
 		},
-		["gn:2819:Cross Dagger of Power:28"] = {
+		["gn:2072:Dwarven Magestaff of the Bear:27"] = {
 			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 8097,
-			["h"] = {
-				[1540] = 8097,
-			},
-		},
-		["g:15010:11"] = {
-			["a"] = {
-				[1539] = 2,
+				[1540] = 3,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 4299,
+				[1540] = 42965,
 			},
-			["m"] = 4299,
+			["m"] = 42965,
+		},
+		["gn:15970:Native Branch of Healing:15"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 900,
+			},
+			["m"] = 900,
 		},
 		["gn:9867:Renegade Cloak of the Tiger:33"] = {
 			["a"] = {
@@ -5069,10 +5016,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8080,
 			["h"] = {
 				[1538] = 8080,
 			},
+			["m"] = 8080,
 		},
 		["7110"] = {
 			["a"] = {
@@ -5080,10 +5027,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5999,
 			["h"] = {
 				[1538] = 5999,
 			},
-			["m"] = 5999,
 		},
 		["gn:2072:Dwarven Magestaff of Spirit:27"] = {
 			["a"] = {
@@ -5091,10 +5038,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 18978,
 			["h"] = {
 				[1540] = 18978,
 			},
+			["m"] = 18978,
 		},
 		["gn:7460:Knight's Cloak of the Bear:34"] = {
 			["a"] = {
@@ -5102,32 +5049,32 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4370,
 			["h"] = {
 				[1538] = 4370,
 			},
+			["m"] = 4370,
 		},
-		["gn:15011:Lupine Cord of the Boar:15"] = {
+		["gn:3185:Acrobatic Staff of Stamina:34"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29998,
+			},
+			["m"] = 29998,
+		},
+		["7412"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 5000,
+				[1539] = 9996,
 			},
-			["m"] = 5000,
-		},
-		["g:4693:14"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1079,
-			},
-			["m"] = 1079,
+			["m"] = 9996,
 		},
 		["g:7280:11"] = {
 			["a"] = {
@@ -5135,10 +5082,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3594,
 			["h"] = {
 				[1539] = 3594,
 			},
-			["m"] = 3594,
 		},
 		["1470"] = {
 			["a"] = {
@@ -5146,21 +5093,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8094,
 			["h"] = {
 				[1539] = 8094,
 			},
+			["m"] = 8094,
 		},
-		["4244"] = {
+		["3685"] = {
 			["a"] = {
-				[1539] = 2,
+				[1539] = 216,
+				[1541] = 145,
 			},
 			["l"] = {
+				[1539] = 125,
+				[1541] = 68,
 			},
+			["m"] = 68,
 			["h"] = {
-				[1539] = 9988,
+				[1539] = 126,
+				[1541] = 69,
 			},
-			["m"] = 9988,
 		},
 		["1685"] = {
 			["a"] = {
@@ -5168,10 +5119,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 180000,
 			["h"] = {
 				[1539] = 180000,
 			},
+			["m"] = 180000,
 		},
 		["7282"] = {
 			["a"] = {
@@ -5179,10 +5130,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2523,
 			["h"] = {
 				[1539] = 2523,
 			},
-			["m"] = 2523,
 		},
 		["4242"] = {
 			["a"] = {
@@ -5190,10 +5141,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4500,
 			["h"] = {
 				[1539] = 4500,
 			},
-			["m"] = 4500,
 		},
 		["gn:14173:Buccaneer's Cord of Healing:20"] = {
 			["a"] = {
@@ -5201,21 +5152,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1539] = 10000,
 			},
+			["m"] = 10000,
 		},
-		["g:15153:37"] = {
+		["gn:2072:Dwarven Magestaff of the Whale:27"] = {
 			["a"] = {
-				[1538] = 3,
+				[1540] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
-				[1538] = 10000,
+				[1540] = 8896,
 			},
+			["m"] = 8896,
 		},
 		["gn:2819:Cross Dagger of Strength:28"] = {
 			["a"] = {
@@ -5223,10 +5174,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10461,
 			["h"] = {
 				[1540] = 10461,
 			},
+			["m"] = 10461,
 		},
 		["g:14255:42"] = {
 			["a"] = {
@@ -5234,10 +5185,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 355498,
 			["h"] = {
 				[1539] = 355498,
 			},
+			["m"] = 355498,
 		},
 		["gn:7423:Phalanx Leggings of Healing:34"] = {
 			["a"] = {
@@ -5245,10 +5196,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 34596,
 			["h"] = {
 				[1539] = 34596,
 			},
+			["m"] = 34596,
 		},
 		["gn:10289:Durable Hat of Healing:32"] = {
 			["a"] = {
@@ -5256,21 +5207,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9982,
 			["h"] = {
 				[1539] = 9982,
 			},
+			["m"] = 9982,
 		},
-		["g:14193:31"] = {
+		["g:7489:41"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 4000,
 			["h"] = {
-				[1539] = 4000,
+				[1539] = 80000,
 			},
+			["m"] = 80000,
 		},
 		["gn:9777:Bandit Bracers of Arcane Wrath:19"] = {
 			["a"] = {
@@ -5278,20 +5229,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 11197,
 			["h"] = {
 				[1539] = 11197,
 			},
-			["m"] = 11197,
 		},
-		["gn:2077:Magician Staff of the Bear:29"] = {
+		["15304"] = {
 			["a"] = {
-				[1540] = 1,
+				[1539] = 4,
 			},
 			["l"] = {
 			},
-			["m"] = 15972,
+			["m"] = 7494,
 			["h"] = {
-				[1540] = 15972,
+				[1539] = 7494,
 			},
 		},
 		["g:4035:31"] = {
@@ -5300,19 +5251,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4828,
 			["h"] = {
 				[1538] = 4828,
 			},
-			["m"] = 4828,
 		},
 		["gn:9766:Greenweave Sash of the Whale:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 4298,
 			["h"] = {
 			},
-			["m"] = 4298,
 		},
 		["gn:15014:Lupine Buckler of Healing:17"] = {
 			["a"] = {
@@ -5320,25 +5271,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 4998,
 			["h"] = {
 				[1539] = 4998,
 			},
+			["m"] = 4998,
 		},
 		["g:14123:17"] = {
 			["a"] = {
-				[1530] = 1,
 				[1539] = 1,
 			},
 			["l"] = {
-				[1530] = 4297,
 			},
-			["m"] = 2568,
 			["h"] = {
-				[1530] = 4298,
-				[1531] = 3097,
 				[1539] = 2568,
 			},
+			["m"] = 2568,
 		},
 		["gn:3185:Acrobatic Staff of the Wolf:34"] = {
 			["a"] = {
@@ -5346,21 +5293,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 11695,
 			["h"] = {
 				[1540] = 11695,
 			},
+			["m"] = 11695,
 		},
-		["gn:2072:Dwarven Magestaff of the Wolf:27"] = {
+		["gn:9852:Conjurer's Robe of Shadow Wrath:38"] = {
 			["a"] = {
-				[1540] = 1,
+				[1540] = 4,
 			},
 			["l"] = {
 			},
-			["m"] = 17769,
 			["h"] = {
-				[1540] = 17769,
+				[1540] = 22216,
 			},
+			["m"] = 22216,
 		},
 		["gn:9867:Renegade Cloak of the Bear:33"] = {
 			["a"] = {
@@ -5368,19 +5315,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 2843,
 			["h"] = {
 				[1538] = 2843,
 			},
+			["m"] = 2843,
 		},
 		["g:11287:15"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 1840,
 			["h"] = {
 			},
-			["m"] = 1840,
 		},
 		["g:9819:34"] = {
 			["a"] = {
@@ -5388,10 +5335,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5994,
 			["h"] = {
 				[1538] = 5994,
 			},
-			["m"] = 5994,
 		},
 		["2140"] = {
 			["a"] = {
@@ -5400,19 +5347,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1539] = 5998,
 			},
-			["m"] = 5998,
 			["h"] = {
 				[1539] = 14899,
 			},
+			["m"] = 5998,
 		},
 		["14169"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 2900,
 			["h"] = {
 			},
+			["m"] = 2900,
 		},
 		["gn:864:Knightly Longsword of Power:38"] = {
 			["a"] = {
@@ -5420,10 +5367,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19984,
 			["h"] = {
 				[1540] = 19984,
 			},
+			["m"] = 19984,
 		},
 		["g:3314:15"] = {
 			["a"] = {
@@ -5431,10 +5378,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 8495,
 			["h"] = {
 				[1539] = 8495,
 			},
-			["m"] = 8495,
 		},
 		["gn:4569:Staunch Hammer of Healing:14"] = {
 			["a"] = {
@@ -5442,43 +5389,43 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3797,
 			["h"] = {
 				[1539] = 3797,
 			},
+			["m"] = 3797,
 		},
-		["gn:3185:Acrobatic Staff of Shadow Wrath:34"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 45999,
-			["h"] = {
-				[1540] = 45999,
-			},
-		},
-		["gn:937:Black Duskwood Staff:38"] = {
-			["a"] = {
-				[1540] = 7,
-			},
-			["l"] = {
-			},
-			["m"] = 19991,
-			["h"] = {
-				[1540] = 19991,
-			},
-		},
-		["3321"] = {
+		["gn:10088:Gothic Plate Girdle of Healing:45"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 10101,
+				[1539] = 16693,
 			},
-			["m"] = 10101,
+			["m"] = 16693,
+		},
+		["gn:7436:Twilight Cape of Stamina:35"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 21097,
+			},
+			["m"] = 21097,
+		},
+		["gn:7429:Twilight Armor of Frozen Wrath:40"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 21498,
+			},
+			["m"] = 21498,
 		},
 		["g:14217:36"] = {
 			["a"] = {
@@ -5486,19 +5433,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1539] = 10000,
 			},
+			["m"] = 10000,
 		},
 		["2583"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 3000,
 			["h"] = {
 			},
-			["m"] = 3000,
 		},
 		["gn:9777:Bandit Bracers of Agility:19"] = {
 			["a"] = {
@@ -5506,10 +5453,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 17298,
 			["h"] = {
 				[1539] = 17298,
 			},
-			["m"] = 17298,
 		},
 		["gn:10581:Death's Head Vestment:40"] = {
 			["a"] = {
@@ -5517,10 +5464,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 194559,
 			["h"] = {
 				[1540] = 194559,
 			},
+			["m"] = 194559,
 		},
 		["g:2494:8"] = {
 			["a"] = {
@@ -5528,10 +5475,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5800,
 			["h"] = {
 				[1539] = 5800,
 			},
-			["m"] = 5800,
 		},
 		["4243"] = {
 			["a"] = {
@@ -5539,10 +5486,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5699,
 			["h"] = {
 				[1539] = 5699,
 			},
-			["m"] = 5699,
 		},
 		["gn:9819:Durable Tunic of Arcane Wrath:34"] = {
 			["a"] = {
@@ -5550,10 +5497,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 17077,
 			["h"] = {
 				[1538] = 17077,
 			},
-			["m"] = 17077,
 		},
 		["2077"] = {
 			["a"] = {
@@ -5562,11 +5509,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7000,
 			["h"] = {
 				[1539] = 14998,
 				[1540] = 7000,
 			},
+			["m"] = 7000,
 		},
 		["g:7609:35"] = {
 			["a"] = {
@@ -5574,10 +5521,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 50520,
 			["h"] = {
 				[1539] = 50520,
 			},
+			["m"] = 50520,
 		},
 		["4035"] = {
 			["a"] = {
@@ -5585,10 +5532,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4828,
 			["h"] = {
 				[1538] = 4828,
 			},
-			["m"] = 4828,
 		},
 		["gn:2315:Dark Leather Boots:20"] = {
 			["a"] = {
@@ -5596,10 +5543,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3594,
 			["h"] = {
 				[1539] = 3594,
 			},
-			["m"] = 3594,
 		},
 		["g:7478:43"] = {
 			["a"] = {
@@ -5607,10 +5554,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 40000,
 			["h"] = {
 				[1539] = 40000,
 			},
+			["m"] = 40000,
 		},
 		["215375"] = {
 			["a"] = {
@@ -5618,10 +5565,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 1290,
 			["h"] = {
 				[1540] = 1290,
 			},
+			["m"] = 1290,
 		},
 		["gn:2072:Dwarven Magestaff of Intellect:27"] = {
 			["a"] = {
@@ -5629,19 +5576,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1540] = 10000,
 			},
+			["m"] = 10000,
 		},
-		["1299"] = {
+		["gn:9848:Conjurer's Gloves of Healing:36"] = {
 			["a"] = {
+				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
+				[1539] = 25950,
 			},
-			["m"] = 19900,
+			["m"] = 25950,
 		},
 		["gn:7728:Beguiler Robes:34"] = {
 			["a"] = {
@@ -5649,21 +5598,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 48796,
 			["h"] = {
 				[1538] = 48796,
 			},
-			["m"] = 48796,
 		},
-		["3784"] = {
+		["gn:14216:Geomancer's Jerkin of Frozen Wrath:41"] = {
 			["a"] = {
-				[1540] = 5,
+				[1540] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 9977,
 			["h"] = {
-				[1540] = 9977,
+				[1540] = 11998,
 			},
+			["m"] = 11998,
 		},
 		["gn:14177:Watcher's Cuffs of Healing:26"] = {
 			["a"] = {
@@ -5671,26 +5620,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8000,
 			["h"] = {
 				[1539] = 8000,
 			},
+			["m"] = 8000,
 		},
 		["15113"] = {
 			["a"] = {
-				[1530] = 2,
-				[1531] = 1,
 			},
 			["l"] = {
-				[1530] = 4994,
-				[1531] = 3731,
-			},
-			["h"] = {
-				[1530] = 8895,
-				[1531] = 16332,
-				[1533] = 2031,
 			},
 			["m"] = 2031,
+			["h"] = {
+			},
 		},
 		["gn:1207:Murphstar of Healing:39"] = {
 			["a"] = {
@@ -5698,30 +5640,30 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19990,
 			["h"] = {
 				[1539] = 19990,
 			},
+			["m"] = 19990,
 		},
-		["7377"] = {
+		["13443"] = {
 			["a"] = {
-				[1538] = 81,
+				[1540] = 22,
 			},
 			["l"] = {
 			},
-			["m"] = 9880,
 			["h"] = {
-				[1538] = 9880,
+				[1540] = 23333,
 			},
+			["m"] = 23333,
 		},
 		["gn:6565:Shimmering Gloves of the Owl:22"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 9701,
 			["h"] = {
 			},
+			["m"] = 9701,
 		},
 		["g:14228:41"] = {
 			["a"] = {
@@ -5729,42 +5671,41 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 30000,
 			["h"] = {
 				[1539] = 30000,
 			},
+			["m"] = 30000,
 		},
 		["11287"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["h"] = {
-			},
 			["m"] = 1840,
+			["h"] = {
+			},
 		},
-		["14225"] = {
+		["1716"] = {
 			["a"] = {
-				[1540] = 3,
+				[1540] = 6,
 			},
 			["l"] = {
 			},
-			["m"] = 26000,
 			["h"] = {
-				[1540] = 26000,
+				[1540] = 315000,
 			},
+			["m"] = 315000,
 		},
-		["gn:2140:Carving Knife of Healing:11"] = {
+		["gn:9844:Conjurer's Vest of the Whale:38"] = {
 			["a"] = {
-				[1539] = 1,
+				[1540] = 1,
 			},
 			["l"] = {
-				[1539] = 9999,
 			},
-			["m"] = 9999,
 			["h"] = {
-				[1539] = 14899,
+				[1540] = 21100,
 			},
+			["m"] = 21100,
 		},
 		["g:8006:39"] = {
 			["a"] = {
@@ -5772,10 +5713,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 189099,
 			["h"] = {
 				[1540] = 189099,
 			},
+			["m"] = 189099,
 		},
 		["g:3197:35"] = {
 			["a"] = {
@@ -5786,21 +5727,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1539] = 11086,
 				[1540] = 5079,
 			},
+			["m"] = 5079,
 			["h"] = {
 				[1539] = 14991,
 				[1540] = 11080,
 			},
-			["m"] = 5079,
 		},
-		["15508"] = {
+		["4861"] = {
 			["a"] = {
-				[1539] = 1,
+				[1539] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 3099,
+			["m"] = 22523,
 			["h"] = {
-				[1539] = 3099,
+				[1539] = 22523,
 			},
 		},
 		["9384"] = {
@@ -5809,119 +5750,51 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 95400,
 			["h"] = {
 				[1540] = 95400,
 			},
+			["m"] = 95400,
 		},
-		["g:14219:34"] = {
-			["a"] = {
-				[1538] = 3,
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 25000,
-			["h"] = {
-				[1538] = 24552,
-				[1539] = 25000,
-			},
-		},
-		["gn:14215:Vital Tunic of Arcane Wrath:37"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29995,
-			["h"] = {
-				[1540] = 29995,
-			},
-		},
-		["6570"] = {
+		["gn:15017:Lupine Leggings of Agility:19"] = {
 			["a"] = {
 				[1539] = 2,
 			},
 			["l"] = {
 			},
+			["m"] = 19999,
 			["h"] = {
-				[1539] = 11000,
+				[1539] = 19999,
 			},
-			["m"] = 11000,
 		},
-		["g:9852:38"] = {
+		["3464"] = {
 			["a"] = {
-				[1540] = 21,
+				[1539] = 2405,
 			},
 			["l"] = {
 			},
-			["m"] = 9400,
+			["m"] = 36,
 			["h"] = {
-				[1540] = 9400,
+				[1539] = 36,
 			},
 		},
-		["gn:15303:Grizzly Pants of Spirit:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5421,
-			},
-			["m"] = 5421,
-		},
-		["g:14561:17"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["gn:15308:Feral Cord of the Whale:17"] = {
+		["g:7438:36"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 4982,
+				[1539] = 6897,
 			},
-			["m"] = 4982,
+			["m"] = 6897,
 		},
-		["gn:2077:Magician Staff of Power:29"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29995,
-			["h"] = {
-				[1540] = 29995,
-			},
-		},
-		["g:1299:22"] = {
+		["14129"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 2200,
 			["h"] = {
-			},
-			["m"] = 19900,
-		},
-		["g:14162:23"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 12774,
-			["h"] = {
-				[1539] = 12774,
 			},
 		},
 		["gn:5752:Wyvern Tailspike:26"] = {
@@ -5930,9 +5803,73 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 18000,
 			["h"] = {
 				[1540] = 18000,
+			},
+			["m"] = 18000,
+		},
+		["g:14561:17"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["gn:15308:Feral Cord of the Whale:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4982,
+			["h"] = {
+				[1539] = 4982,
+			},
+		},
+		["gn:2077:Magician Staff of Power:29"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29995,
+			},
+			["m"] = 29995,
+		},
+		["g:1299:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 19900,
+			["h"] = {
+			},
+		},
+		["g:14162:23"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12774,
+			},
+			["m"] = 12774,
+		},
+		["gn:15303:Grizzly Pants of Spirit:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 5421,
+			["h"] = {
+				[1539] = 5421,
 			},
 		},
 		["gn:14407:Stonecloth Vest:39"] = {
@@ -5941,21 +5878,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9983,
 			["h"] = {
 				[1540] = 9983,
 			},
+			["m"] = 9983,
 		},
-		["3848"] = {
+		["gn:6610:Sage's Robe of Frozen Wrath:32"] = {
 			["a"] = {
-				[1539] = 11,
+				[1538] = 2,
 			},
 			["l"] = {
 			},
+			["m"] = 4544,
 			["h"] = {
-				[1539] = 10024,
+				[1538] = 4544,
 			},
-			["m"] = 10024,
 		},
 		["gn:7429:Twilight Armor of the Whale:40"] = {
 			["a"] = {
@@ -5963,34 +5900,32 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9998,
 			["h"] = {
 				[1540] = 9998,
 			},
+			["m"] = 9998,
 		},
-		["g:9776:20"] = {
+		["gn:9906:Royal Sash of Healing:44"] = {
 			["a"] = {
-				[1539] = 4,
+				[1539] = 2,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 10977,
+				[1539] = 89998,
 			},
-			["m"] = 10977,
+			["m"] = 89998,
 		},
-		["g:7111:37"] = {
+		["gn:9867:Renegade Cloak of the Boar:33"] = {
 			["a"] = {
-				[1538] = 3,
-				[1540] = 12,
+				[1538] = 2,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1538] = 17379,
-				[1540] = 10000,
+				[1538] = 3999,
 			},
-			["m"] = 10000,
+			["m"] = 3999,
 		},
 		["7280"] = {
 			["a"] = {
@@ -5998,20 +5933,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3594,
 			["h"] = {
 				[1539] = 3594,
 			},
-			["m"] = 3594,
 		},
-		["g:15213:36"] = {
+		["g:4246:16"] = {
 			["a"] = {
-				[1540] = 50,
+				[1539] = 29,
 			},
 			["l"] = {
 			},
-			["m"] = 18000,
+			["m"] = 2186,
 			["h"] = {
-				[1540] = 18000,
+				[1539] = 2186,
 			},
 		},
 		["gn:7369:Elder's Robe of the Eagle:35"] = {
@@ -6020,10 +5955,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 19897,
 			["h"] = {
 				[1540] = 19897,
 			},
+			["m"] = 19897,
 		},
 		["gn:13034:Speedsteel Rapier:41"] = {
 			["a"] = {
@@ -6031,10 +5966,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 89997,
 			["h"] = {
 				[1540] = 89997,
 			},
+			["m"] = 89997,
 		},
 		["gn:14167:Buccaneer's Cape of Healing:19"] = {
 			["a"] = {
@@ -6042,10 +5977,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7627,
 			["h"] = {
 				[1539] = 7627,
 			},
+			["m"] = 7627,
 		},
 		["6291"] = {
 			["a"] = {
@@ -6053,31 +5988,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 507,
 			["h"] = {
 				[1539] = 507,
-			},
-			["m"] = 507,
-		},
-		["gn:3185:Acrobatic Staff of the Whale:34"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 10981,
-			["h"] = {
-				[1540] = 10981,
-			},
-		},
-		["8067"] = {
-			["a"] = {
-				[1539] = 600,
-			},
-			["l"] = {
-			},
-			["m"] = 4,
-			["h"] = {
-				[1539] = 4,
 			},
 		},
 		["932"] = {
@@ -6086,10 +5999,32 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10090,
 			["h"] = {
 				[1539] = 10090,
 			},
+			["m"] = 10090,
+		},
+		["gn:14409:Stonecloth Cape:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 14999,
+			},
+			["m"] = 14999,
+		},
+		["gn:3185:Acrobatic Staff of the Whale:34"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10981,
+			},
+			["m"] = 10981,
 		},
 		["gn:3205:Inscribed Leather Bracers:17"] = {
 			["a"] = {
@@ -6097,10 +6032,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9900,
 			["h"] = {
 				[1539] = 9900,
 			},
-			["m"] = 9900,
 		},
 		["7432"] = {
 			["a"] = {
@@ -6108,10 +6043,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9993,
 			["h"] = {
 				[1539] = 9993,
 			},
+			["m"] = 9993,
 		},
 		["9852"] = {
 			["a"] = {
@@ -6119,10 +6054,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9400,
 			["h"] = {
 				[1540] = 9400,
 			},
+			["m"] = 9400,
 		},
 		["g:6591:27"] = {
 			["a"] = {
@@ -6130,21 +6065,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3000,
 			["h"] = {
 				[1539] = 3000,
 			},
+			["m"] = 3000,
 		},
-		["gn:869:Dazzling Longsword:41"] = {
+		["gn:7429:Twilight Armor of the Eagle:40"] = {
 			["a"] = {
-				[1540] = 8,
+				[1540] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 187590,
 			["h"] = {
-				[1540] = 187590,
+				[1540] = 15487,
 			},
+			["m"] = 15487,
 		},
 		["g:8223:37"] = {
 			["a"] = {
@@ -6152,21 +6087,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 459743,
 			["h"] = {
 				[1540] = 459743,
 			},
+			["m"] = 459743,
 		},
-		["gn:9869:Renegade Belt of Healing:35"] = {
+		["gn:9911:Royal Trousers of Healing:46"] = {
 			["a"] = {
-				[1539] = 2,
+				[1539] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 15894,
 			["h"] = {
-				[1539] = 15894,
+				[1539] = 100000,
 			},
+			["m"] = 100000,
 		},
 		["gn:6558:Bard's Belt of Healing:15"] = {
 			["a"] = {
@@ -6174,10 +6109,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5000,
 			["h"] = {
 				[1539] = 5000,
 			},
+			["m"] = 5000,
 		},
 		["g:7369:35"] = {
 			["a"] = {
@@ -6186,11 +6121,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6589,
 			["h"] = {
 				[1538] = 3388,
 				[1540] = 6589,
 			},
-			["m"] = 6589,
 		},
 		["gn:9718:Reforged Blade of Heroes:38"] = {
 			["a"] = {
@@ -6198,22 +6133,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 199550,
 			["h"] = {
 				[1540] = 199550,
 			},
+			["m"] = 199550,
 		},
 		["15269"] = {
 			["a"] = {
-				[1530] = 3,
 			},
 			["l"] = {
-				[1530] = 3091,
-			},
-			["h"] = {
-				[1530] = 5992,
 			},
 			["m"] = 3091,
+			["h"] = {
+			},
 		},
 		["gn:14559:Prospector's Sash:18"] = {
 			["a"] = {
@@ -6221,40 +6153,40 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3899,
 			["h"] = {
 				[1539] = 3899,
 			},
-			["m"] = 3899,
 		},
-		["gn:15018:Lupine Vest of Nature's Wrath:20"] = {
+		["gn:15241:Battle Knife of Stamina:26"] = {
 			["a"] = {
-				[1539] = 1,
+				[1540] = 4,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 5095,
+				[1540] = 20249,
 			},
-			["m"] = 5095,
+			["m"] = 20249,
 		},
 		["g:14168:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 7397,
 			["h"] = {
 			},
+			["m"] = 7397,
 		},
-		["gn:14215:Vital Tunic of Frozen Wrath:37"] = {
+		["6303"] = {
 			["a"] = {
-				[1540] = 1,
+				[1539] = 27,
 			},
 			["l"] = {
 			},
-			["m"] = 19896,
+			["m"] = 6,
 			["h"] = {
-				[1540] = 19896,
+				[1539] = 6,
 			},
 		},
 		["7446"] = {
@@ -6264,45 +6196,42 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9977,
 			["h"] = {
 				[1538] = 8705,
 				[1539] = 9977,
 			},
+			["m"] = 9977,
 		},
 		["3182"] = {
 			["a"] = {
-				[1530] = 162,
 			},
 			["l"] = {
-				[1530] = 1519,
+			},
+			["h"] = {
 			},
 			["m"] = 1519,
-			["h"] = {
-				[1530] = 1520,
-			},
 		},
-		["gn:2309:Embossed Leather Boots:15"] = {
+		["10289"] = {
 			["a"] = {
-				[1539] = 12,
+				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 3466,
+				[1539] = 9982,
 			},
-			["m"] = 3466,
+			["m"] = 9982,
 		},
-		["gn:3185:Acrobatic Staff of the Boar:34"] = {
+		["gn:3185:Acrobatic Staff of the Bear:34"] = {
 			["a"] = {
-				[1540] = 5,
+				[1540] = 4,
 			},
 			["l"] = {
 			},
-			["m"] = 8996,
 			["h"] = {
-				[1540] = 8996,
+				[1540] = 9965,
 			},
+			["m"] = 9965,
 		},
 		["g:8183:27"] = {
 			["a"] = {
@@ -6311,21 +6240,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1538] = 6496,
 			},
+			["m"] = 6496,
 			["h"] = {
 				[1538] = 6497,
 			},
-			["m"] = 6496,
 		},
-		["g:2800:26"] = {
+		["gn:14560:Prospector's Boots:19"] = {
 			["a"] = {
-				[1538] = 2,
+				[1539] = 2,
 			},
 			["l"] = {
 			},
+			["m"] = 3982,
 			["h"] = {
-				[1538] = 109999,
+				[1539] = 3982,
 			},
-			["m"] = 109999,
 		},
 		["g:9860:34"] = {
 			["a"] = {
@@ -6334,33 +6263,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 99999,
 			["h"] = {
 				[1538] = 5495,
 				[1539] = 99999,
 			},
+			["m"] = 99999,
 		},
-		["gn:2961:Burnt Leather Vest:11"] = {
+		["gn:2309:Embossed Leather Boots:15"] = {
 			["a"] = {
-				[1539] = 4,
+				[1539] = 12,
+			},
+			["l"] = {
+			},
+			["m"] = 3466,
+			["h"] = {
+				[1539] = 3466,
+			},
+		},
+		["gn:3185:Acrobatic Staff of the Boar:34"] = {
+			["a"] = {
+				[1540] = 5,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 1996,
+				[1540] = 8996,
 			},
-			["m"] = 1996,
-		},
-		["gn:3185:Acrobatic Staff of the Bear:34"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9965,
-			["h"] = {
-				[1540] = 9965,
-			},
+			["m"] = 8996,
 		},
 		["gn:7430:Twilight Robe of the Whale:40"] = {
 			["a"] = {
@@ -6368,10 +6297,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1540] = 10000,
 			},
+			["m"] = 10000,
 		},
 		["gn:14163:Pagan Wraps of the Owl:26"] = {
 			["a"] = {
@@ -6379,10 +6308,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7900,
 			["h"] = {
 				[1538] = 7900,
 			},
-			["m"] = 7900,
 		},
 		["gn:6269:Pioneer Trousers of the Whale:12"] = {
 			["a"] = {
@@ -6390,21 +6319,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6056,
 			["h"] = {
 				[1539] = 6056,
 			},
-			["m"] = 6056,
 		},
-		["2317"] = {
+		["gn:14193:Raincaller Pants of Healing:31"] = {
 			["a"] = {
-				[1539] = 6,
+				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 9496,
+				[1539] = 4000,
 			},
-			["m"] = 9496,
+			["m"] = 4000,
 		},
 		["gn:9823:Durable Gloves of Healing:31"] = {
 			["a"] = {
@@ -6412,52 +6341,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3091,
 			["h"] = {
 				[1539] = 3091,
 			},
+			["m"] = 3091,
 		},
-		["gn:15213:Mercenary Blade of Strength:36"] = {
+		["6446"] = {
 			["a"] = {
-				[1540] = 3,
+				[1539] = 5,
 			},
 			["l"] = {
 			},
-			["m"] = 22419,
 			["h"] = {
-				[1540] = 22419,
+				[1539] = 9993,
 			},
-		},
-		["gn:7456:Knight's Headguard of Healing:38"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 15000,
-			["h"] = {
-				[1539] = 15000,
-			},
-		},
-		["gn:15364:Trickster's Cloak of Agility:36"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 15593,
-			["h"] = {
-				[1538] = 15593,
-			},
-		},
-		["gn:9771:Greenweave Gloves of the Whale:25"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 24392,
-			["h"] = {
-			},
+			["m"] = 9993,
 		},
 		["15244"] = {
 			["a"] = {
@@ -6465,32 +6363,52 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 34299,
 			["h"] = {
 				[1539] = 34299,
 			},
+			["m"] = 34299,
 		},
-		["gn:15243:Deadly Kris of Agility:36"] = {
+		["gn:15364:Trickster's Cloak of Agility:36"] = {
 			["a"] = {
-				[1540] = 2,
+				[1538] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 85051,
 			["h"] = {
-				[1540] = 85051,
+				[1538] = 15593,
 			},
+			["m"] = 15593,
 		},
-		["g:6568:24"] = {
+		["gn:9771:Greenweave Gloves of the Whale:25"] = {
 			["a"] = {
-				[1539] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 11110,
 			["h"] = {
-				[1539] = 11110,
 			},
+			["m"] = 24392,
+		},
+		["gn:7456:Knight's Headguard of Healing:38"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 15000,
+			},
+			["m"] = 15000,
+		},
+		["g:9424:41"] = {
+			["a"] = {
+				[1540] = 9,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 327083,
+			},
+			["m"] = 327083,
 		},
 		["g:9384:36"] = {
 			["a"] = {
@@ -6498,22 +6416,32 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 95400,
 			["h"] = {
 				[1540] = 95400,
 			},
+			["m"] = 95400,
 		},
-		["14724"] = {
+		["g:6568:24"] = {
 			["a"] = {
-				[1530] = 8,
+				[1539] = 2,
 			},
 			["l"] = {
-				[1530] = 1081,
 			},
-			["m"] = 1081,
 			["h"] = {
-				[1530] = 1082,
+				[1539] = 11110,
 			},
+			["m"] = 11110,
+		},
+		["g:2912:32"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 169992,
+			},
+			["m"] = 169992,
 		},
 		["gn:14158:Pagan Vest of Arcane Wrath:26"] = {
 			["a"] = {
@@ -6521,10 +6449,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9999,
 			["h"] = {
 				[1538] = 9999,
 			},
-			["m"] = 9999,
 		},
 		["g:14163:26"] = {
 			["a"] = {
@@ -6532,19 +6460,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7082,
 			["h"] = {
 				[1538] = 7082,
 			},
-			["m"] = 7082,
 		},
 		["gn:4368:Flying Tiger Goggles:20"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["m"] = 2173,
 			["h"] = {
 			},
+			["m"] = 2173,
 		},
 		["g:6269:12"] = {
 			["a"] = {
@@ -6552,21 +6480,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2000,
 			["h"] = {
 				[1539] = 2000,
 			},
-			["m"] = 2000,
-		},
-		["gn:4571:War Knife of Nature's Wrath:17"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9605,
-			},
-			["m"] = 9605,
 		},
 		["3786"] = {
 			["a"] = {
@@ -6574,21 +6491,32 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 8094,
 			["h"] = {
 				[1540] = 8094,
 			},
+			["m"] = 8094,
 		},
-		["gn:15017:Lupine Leggings of the Owl:19"] = {
+		["gn:4571:War Knife of Nature's Wrath:17"] = {
 			["a"] = {
-				[1539] = 1,
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 9605,
+			["h"] = {
+				[1539] = 9605,
+			},
+		},
+		["3783"] = {
+			["a"] = {
+				[1540] = 6,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 4974,
+				[1540] = 6054,
 			},
-			["m"] = 4974,
+			["m"] = 6054,
 		},
 		["1786"] = {
 			["a"] = {
@@ -6596,74 +6524,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5097,
 			["h"] = {
 				[1538] = 5097,
 			},
-			["m"] = 5097,
 		},
-		["4239"] = {
+		["g:9392:40"] = {
 			["a"] = {
-				[1539] = 11,
+				[1540] = 9,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 84,
+				[1540] = 59483,
 			},
-			["m"] = 84,
+			["m"] = 59483,
 		},
 		["gn:14177:Watcher's Cuffs of Stamina:26"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
-			["h"] = {
-				[1530] = 2000,
-			},
 			["m"] = 2000,
-		},
-		["gn:7429:Twilight Armor of the Owl:40"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9963,
 			["h"] = {
-				[1540] = 9963,
-			},
-		},
-		["14179"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 72239,
-			["h"] = {
-				[1539] = 72239,
-			},
-		},
-		["g:7110:31"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5999,
-			},
-			["m"] = 5999,
-		},
-		["gn:14228:Embersilk Coronet of Healing:41"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 30000,
-			["h"] = {
-				[1539] = 30000,
 			},
 		},
 		["g:9906:44"] = {
@@ -6672,10 +6555,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 89998,
 			["h"] = {
 				[1539] = 89998,
 			},
+			["m"] = 89998,
 		},
 		["g:7282:19"] = {
 			["a"] = {
@@ -6683,10 +6566,54 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 2523,
 			["h"] = {
 				[1539] = 2523,
 			},
-			["m"] = 2523,
+		},
+		["g:7110:31"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5999,
+			["h"] = {
+				[1538] = 5999,
+			},
+		},
+		["gn:14228:Embersilk Coronet of Healing:41"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 30000,
+			},
+			["m"] = 30000,
+		},
+		["gn:7429:Twilight Armor of the Owl:40"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9963,
+			},
+			["m"] = 9963,
+		},
+		["14179"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 72239,
+			},
+			["m"] = 72239,
 		},
 		["g:14190:31"] = {
 			["a"] = {
@@ -6694,33 +6621,31 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 39954,
 			["h"] = {
 				[1538] = 39954,
 			},
-			["m"] = 39954,
 		},
-		["gn:15124:Robust Cloak of Healing:25"] = {
+		["2632"] = {
 			["a"] = {
-				[1539] = 1,
+				[1539] = 45,
 			},
 			["l"] = {
+				[1539] = 3392,
 			},
-			["m"] = 50000,
 			["h"] = {
-				[1539] = 50000,
+				[1539] = 6880,
 			},
+			["m"] = 3392,
 		},
 		["gn:14124:Ritual Gloves of the Owl:20"] = {
 			["a"] = {
-				[1530] = 6,
 			},
 			["l"] = {
-				[1530] = 3090,
+			},
+			["h"] = {
 			},
 			["m"] = 3090,
-			["h"] = {
-				[1530] = 9991,
-			},
 		},
 		["gn:6610:Sage's Robe of the Owl:32"] = {
 			["a"] = {
@@ -6728,10 +6653,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9899,
 			["h"] = {
 				[1538] = 9899,
 			},
-			["m"] = 9899,
 		},
 		["g:6268:13"] = {
 			["a"] = {
@@ -6739,10 +6664,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 3000,
 			["h"] = {
 				[1539] = 3000,
 			},
+			["m"] = 3000,
 		},
 		["gn:9826:Durable Robe of the Owl:34"] = {
 			["a"] = {
@@ -6750,29 +6675,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6996,
 			["h"] = {
 				[1538] = 6996,
 			},
-			["m"] = 6996,
 		},
 		["g:4312:16"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 3554,
 			["h"] = {
 			},
-			["m"] = 3554,
 		},
-		["gn:15243:Deadly Kris of Arcane Wrath:36"] = {
+		["g:4239:13"] = {
 			["a"] = {
-				[1540] = 1,
+				[1539] = 11,
 			},
 			["l"] = {
 			},
-			["m"] = 30000,
+			["m"] = 84,
 			["h"] = {
-				[1540] = 30000,
+				[1539] = 84,
 			},
 		},
 		["g:14204:36"] = {
@@ -6781,10 +6706,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10000,
 			["h"] = {
 				[1540] = 10000,
 			},
+			["m"] = 10000,
 		},
 		["g:15112:20"] = {
 			["a"] = {
@@ -6792,21 +6717,43 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 8000,
 			["h"] = {
 				[1539] = 8000,
 			},
-			["m"] = 8000,
 		},
-		["gn:15214:Nobles Brand of Stamina:40"] = {
+		["g:869:41"] = {
 			["a"] = {
-				[1540] = 1,
+				[1540] = 8,
 			},
 			["l"] = {
 			},
-			["m"] = 32498,
 			["h"] = {
-				[1540] = 32498,
+				[1540] = 187590,
 			},
+			["m"] = 187590,
+		},
+		["1652"] = {
+			["a"] = {
+				[1539] = 7,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19998,
+			},
+			["m"] = 19998,
+		},
+		["13477"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19994,
+			},
+			["m"] = 19994,
 		},
 		["776"] = {
 			["a"] = {
@@ -6814,32 +6761,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 222953,
 			["h"] = {
 				[1540] = 222953,
 			},
-		},
-		["g:15340:27"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 15063,
-			["h"] = {
-				[1539] = 15063,
-			},
-		},
-		["g:217256:34"] = {
-			["a"] = {
-				[1538] = 13,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3299,
-			},
-			["m"] = 3299,
+			["m"] = 222953,
 		},
 		["gn:7369:Elder's Robe of Spirit:35"] = {
 			["a"] = {
@@ -6848,20 +6773,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 16499,
 			["h"] = {
 				[1538] = 16498,
 				[1540] = 16499,
 			},
-			["m"] = 16499,
 		},
 		["9845"] = {
 			["a"] = {
 			},
 			["l"] = {
 			},
+			["m"] = 3548,
 			["h"] = {
 			},
-			["m"] = 3548,
 		},
 		["gn:3197:Stonecutter Claymore of the Boar:35"] = {
 			["a"] = {
@@ -6872,11 +6797,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1539] = 11086,
 				[1540] = 5079,
 			},
+			["m"] = 5079,
 			["h"] = {
 				[1539] = 14991,
 				[1540] = 11080,
 			},
-			["m"] = 5079,
 		},
 		["g:6540:18"] = {
 			["a"] = {
@@ -6884,10 +6809,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 16358,
 			["h"] = {
 				[1539] = 16358,
 			},
+			["m"] = 16358,
 		},
 		["gn:14229:Embersilk Cloak of the Eagle:36"] = {
 			["a"] = {
@@ -6895,10 +6820,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 29994,
 			["h"] = {
 				[1538] = 29994,
 			},
+			["m"] = 29994,
 		},
 		["gn:14184:Watcher's Robes of the Whale:30"] = {
 			["a"] = {
@@ -6906,10 +6831,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 7199,
 			["h"] = {
 				[1538] = 7199,
 			},
-			["m"] = 7199,
 		},
 		["gn:14192:Raincaller Robes of Frozen Wrath:31"] = {
 			["a"] = {
@@ -6917,10 +6842,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 8000,
 			["h"] = {
 				[1538] = 8000,
 			},
-			["m"] = 8000,
 		},
 		["gn:873:Staff of Jordan:40"] = {
 			["a"] = {
@@ -6928,20 +6853,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 2757139,
 			["h"] = {
 				[1540] = 2757139,
 			},
+			["m"] = 2757139,
 		},
-		["g:12259:36"] = {
+		["g:9756:14"] = {
 			["a"] = {
-				[1540] = 3,
+				[1539] = 6,
 			},
 			["l"] = {
 			},
-			["m"] = 89987,
+			["m"] = 2994,
 			["h"] = {
-				[1540] = 89987,
+				[1539] = 2994,
 			},
 		},
 		["9776"] = {
@@ -6950,21 +6875,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 10977,
 			["h"] = {
 				[1539] = 10977,
 			},
-			["m"] = 10977,
 		},
-		["13477"] = {
+		["g:15340:27"] = {
 			["a"] = {
-				[1540] = 5,
+				[1539] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 19994,
 			["h"] = {
-				[1540] = 19994,
+				[1539] = 15063,
 			},
+			["m"] = 15063,
 		},
 		["gn:9890:Huntsman's Cape of Intellect:38"] = {
 			["a"] = {
@@ -6972,10 +6897,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 40000,
 			["h"] = {
 				[1538] = 40000,
 			},
+			["m"] = 40000,
 		},
 		["gn:15303:Grizzly Pants of the Eagle:14"] = {
 			["a"] = {
@@ -6983,10 +6908,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 4999,
 			["h"] = {
 				[1539] = 4999,
 			},
-			["m"] = 4999,
 		},
 		["17922"] = {
 			["a"] = {
@@ -6994,26 +6919,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 1497,
 			["h"] = {
 				[1539] = 1497,
 			},
-			["m"] = 1497,
 		},
 		["gn:15113:Rigid Buckler of Stamina:23"] = {
 			["a"] = {
-				[1530] = 2,
-				[1531] = 1,
 			},
 			["l"] = {
-				[1530] = 4994,
-				[1531] = 3731,
-			},
-			["h"] = {
-				[1530] = 8895,
-				[1531] = 16332,
-				[1533] = 2031,
 			},
 			["m"] = 2031,
+			["h"] = {
+			},
 		},
 		["gn:7053:Azure Silk Cloak:35"] = {
 			["a"] = {
@@ -7021,10 +6939,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 24449,
 			["h"] = {
 				[1538] = 24449,
 			},
+			["m"] = 24449,
 		},
 		["15012"] = {
 			["a"] = {
@@ -7032,10 +6950,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 3998,
 			["h"] = {
 				[1539] = 3998,
 			},
-			["m"] = 3998,
 		},
 		["gn:3184:Hook Dagger of Stamina:20"] = {
 			["a"] = {
@@ -7043,10 +6961,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 9989,
 			["h"] = {
 				[1539] = 9989,
 			},
-			["m"] = 9989,
 		},
 		["1710"] = {
 			["a"] = {
@@ -7054,10 +6972,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 1600,
 			["h"] = {
 				[1539] = 1600,
 			},
+			["m"] = 1600,
 		},
 		["gn:14090:Beaded Britches of Healing:11"] = {
 			["a"] = {
@@ -7065,10 +6983,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 2319,
 			["h"] = {
 				[1539] = 2319,
 			},
+			["m"] = 2319,
 		},
 		["3850"] = {
 			["a"] = {
@@ -7076,21 +6994,23 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 44997,
 			["h"] = {
 				[1540] = 44997,
 			},
+			["m"] = 44997,
 		},
-		["g:1786:29"] = {
+		["gn:14215:Vital Tunic of the Owl:37"] = {
 			["a"] = {
 				[1538] = 1,
+				[1540] = 2,
 			},
 			["l"] = {
 			},
+			["m"] = 8266,
 			["h"] = {
-				[1538] = 5097,
+				[1538] = 11370,
+				[1540] = 8266,
 			},
-			["m"] = 5097,
 		},
 		["gn:1664:Spellforce Rod:41"] = {
 			["a"] = {
@@ -7098,22 +7018,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 58499,
 			["h"] = {
 				[1540] = 58499,
 			},
+			["m"] = 58499,
 		},
-		["gn:1465:Tigerbane:38"] = {
+		["g:15214:40"] = {
 			["a"] = {
-				[1540] = 26,
+				[1540] = 49,
 			},
 			["l"] = {
-				[1540] = 19842,
 			},
-			["m"] = 19842,
 			["h"] = {
-				[1540] = 19843,
+				[1540] = 19878,
 			},
+			["m"] = 19878,
 		},
 		["g:14397:32"] = {
 			["a"] = {
@@ -7126,23 +7045,24 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1540] = 2471,
 				[1538] = 3085,
 			},
+			["m"] = 2471,
 			["h"] = {
 				[1539] = 3078,
 				[1540] = 3072,
 				[1538] = 5586,
 			},
-			["m"] = 2471,
 		},
-		["g:15214:40"] = {
+		["gn:1465:Tigerbane:38"] = {
 			["a"] = {
-				[1540] = 49,
+				[1540] = 26,
 			},
 			["l"] = {
+				[1540] = 19842,
 			},
-			["m"] = 19878,
 			["h"] = {
-				[1540] = 19878,
+				[1540] = 19843,
 			},
+			["m"] = 19842,
 		},
 		["2988"] = {
 			["a"] = {
@@ -7150,10 +7070,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 5492,
 			["h"] = {
 				[1539] = 5492,
 			},
-			["m"] = 5492,
 		},
 		["g:14245:41"] = {
 			["a"] = {
@@ -7161,10 +7081,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 35000,
 			["h"] = {
 				[1539] = 35000,
 			},
+			["m"] = 35000,
 		},
 		["3197"] = {
 			["a"] = {
@@ -7175,11 +7095,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1539] = 11086,
 				[1540] = 5079,
 			},
+			["m"] = 5079,
 			["h"] = {
 				[1539] = 14991,
 				[1540] = 11080,
 			},
-			["m"] = 5079,
 		},
 		["15242"] = {
 			["a"] = {
@@ -7188,21 +7108,23 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9997,
 			["h"] = {
 				[1539] = 20092,
 				[1540] = 9997,
 			},
+			["m"] = 9997,
 		},
-		["gn:15213:Mercenary Blade of the Bear:36"] = {
+		["gn:7111:Nightsky Armor:37"] = {
 			["a"] = {
-				[1540] = 9,
+				[1538] = 3,
+				[1540] = 12,
 			},
 			["l"] = {
 			},
-			["m"] = 19888,
+			["m"] = 10000,
 			["h"] = {
-				[1540] = 19888,
+				[1538] = 17379,
+				[1540] = 10000,
 			},
 		},
 		["gn:9847:Conjurer's Cloak of Arcane Wrath:33"] = {
@@ -7211,22 +7133,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7991,
 			["h"] = {
 				[1538] = 7991,
 			},
+			["m"] = 7991,
 		},
-		["3473"] = {
+		["gn:2140:Carving Knife of Stamina:11"] = {
 			["a"] = {
-				[1530] = 32,
-				[1539] = 50,
+				[1539] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 6117,
+			["m"] = 7099,
 			["h"] = {
-				[1530] = 6995,
-				[1539] = 6117,
+				[1539] = 7099,
 			},
 		},
 		["g:1465:38"] = {
@@ -7236,21 +7156,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["l"] = {
 				[1540] = 19842,
 			},
-			["m"] = 19842,
 			["h"] = {
 				[1540] = 19843,
 			},
+			["m"] = 19842,
 		},
-		["gn:14163:Pagan Wraps of Frozen Wrath:26"] = {
+		["gn:2140:Carving Knife of Power:11"] = {
 			["a"] = {
-				[1538] = 1,
+				[1539] = 10,
 			},
 			["l"] = {
 			},
+			["m"] = 5998,
 			["h"] = {
-				[1538] = 7082,
+				[1539] = 5998,
 			},
-			["m"] = 7082,
 		},
 		["g:15971:20"] = {
 			["a"] = {
@@ -7258,10 +7178,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9898,
 			["h"] = {
 				[1539] = 9898,
 			},
+			["m"] = 9898,
 		},
 		["gn:15153:Nocturnal Cloak of the Owl:37"] = {
 			["a"] = {
@@ -7269,10 +7189,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 10095,
 			["h"] = {
 				[1538] = 10095,
 			},
+			["m"] = 10095,
 		},
 		["15975"] = {
 			["a"] = {
@@ -7280,10988 +7200,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 100000,
 			["h"] = {
 				[1539] = 100000,
 			},
-		},
-		["g:1997:34"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3776,
-			},
-			["m"] = 3776,
-		},
-		["gn:15214:Nobles Brand of the Monkey:40"] = {
-			["a"] = {
-				[1540] = 13,
-			},
-			["l"] = {
-			},
-			["m"] = 19878,
-			["h"] = {
-				[1540] = 19878,
-			},
-		},
-		["gn:864:Knightly Longsword of Strength:38"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 19952,
-			["h"] = {
-				[1540] = 19952,
-			},
-		},
-		["4786"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 18999,
-		},
-		["2986"] = {
-			["a"] = {
-				[1539] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3965,
-			},
-			["m"] = 3965,
-		},
-		["9844"] = {
-			["a"] = {
-				[1540] = 31,
-			},
-			["l"] = {
-			},
-			["m"] = 9996,
-			["h"] = {
-				[1540] = 9996,
-			},
-		},
-		["864"] = {
-			["a"] = {
-				[1540] = 31,
-			},
-			["l"] = {
-			},
-			["m"] = 19561,
-			["h"] = {
-				[1540] = 19561,
-			},
-		},
-		["gn:9384:Stonevault Shiv:36"] = {
-			["a"] = {
-				[1540] = 13,
-			},
-			["l"] = {
-			},
-			["m"] = 95400,
-			["h"] = {
-				[1540] = 95400,
-			},
-		},
-		["gn:9428:Unearthed Bands of Healing:35"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 110000,
-			["h"] = {
-				[1539] = 110000,
-			},
-		},
-		["14090"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 2319,
-			["h"] = {
-				[1539] = 2319,
-			},
-		},
-		["14397"] = {
-			["a"] = {
-				[1539] = 5,
-				[1540] = 5,
-				[1538] = 7,
-			},
-			["l"] = {
-				[1539] = 3077,
-				[1540] = 2471,
-				[1538] = 3085,
-			},
-			["h"] = {
-				[1539] = 3078,
-				[1540] = 3072,
-				[1538] = 5586,
-			},
-			["m"] = 2471,
-		},
-		["gn:7470:Regal Wizard Hat of Healing:42"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9999,
-			["h"] = {
-				[1539] = 9999,
-			},
-		},
-		["4565"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9951,
-			},
-			["m"] = 9951,
-		},
-		["gn:9878:Sorcerer Hat of Healing:41"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 25080,
-			["h"] = {
-				[1539] = 25080,
-			},
-		},
-		["9424"] = {
-			["a"] = {
-				[1540] = 9,
-			},
-			["l"] = {
-			},
-			["m"] = 327083,
-			["h"] = {
-				[1540] = 327083,
-			},
-		},
-		["g:15145:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 13442,
-			["h"] = {
-				[1539] = 13442,
-			},
-		},
-		["g:5756:37"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 99982,
-			["h"] = {
-				[1540] = 99982,
-			},
-		},
-		["g:15298:13"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4496,
-			["h"] = {
-				[1539] = 4496,
-			},
-		},
-		["g:14225:41"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 26000,
-			["h"] = {
-				[1540] = 26000,
-			},
-		},
-		["gn:7476:Regal Sash of Healing:40"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 14398,
-			["h"] = {
-				[1539] = 14398,
-			},
-		},
-		["gn:14229:Embersilk Cloak of the Whale:36"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39998,
-			["h"] = {
-				[1538] = 39998,
-			},
-		},
-		["gn:5756:Sliverblade:37"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 99982,
-			["h"] = {
-				[1540] = 99982,
-			},
-		},
-		["gn:15508:Grunt's Cape of Healing:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 3099,
-			["h"] = {
-				[1539] = 3099,
-			},
-		},
-		["4240"] = {
-			["a"] = {
-				[1539] = 80,
-				[1540] = 50,
-			},
-			["l"] = {
-				[1539] = 960,
-			},
-			["h"] = {
-				[1539] = 2300,
-				[1540] = 1495,
-			},
-			["m"] = 1495,
-		},
-		["2072"] = {
-			["a"] = {
-				[1540] = 18,
-			},
-			["l"] = {
-			},
-			["m"] = 6999,
-			["h"] = {
-				[1540] = 6999,
-			},
-		},
-		["g:14117:16"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4082,
-			["h"] = {
-				[1539] = 4082,
-			},
-		},
-		["3385"] = {
-			["a"] = {
-				[1530] = 125,
-				[1540] = 203,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1530] = 442,
-				[1540] = 381,
-			},
-			["m"] = 381,
-		},
-		["g:9870:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9900,
-			["h"] = {
-				[1539] = 9900,
-			},
-		},
-		["14229"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 9983,
-			["h"] = {
-				[1538] = 9983,
-			},
-		},
-		["gn:7430:Twilight Robe of Arcane Wrath:40"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 49988,
-			["h"] = {
-				[1540] = 49988,
-			},
-		},
-		["g:1425:9"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2900,
-			},
-			["m"] = 2900,
-		},
-		["gn:15017:Lupine Leggings of the Eagle:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11098,
-			},
-			["m"] = 11098,
-		},
-		["g:15312:20"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6000,
-			},
-			["m"] = 6000,
-		},
-		["gn:15016:Lupine Handwraps of the Monkey:16"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19899,
-			},
-			["m"] = 19899,
-		},
-		["4385"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 5090,
-			["h"] = {
-			},
-		},
-		["g:2911:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 299997,
-		},
-		["7448"] = {
-			["a"] = {
-				[1541] = 2,
-			},
-			["l"] = {
-				[1541] = 4492,
-			},
-			["m"] = 4492,
-			["h"] = {
-				[1541] = 6493,
-			},
-		},
-		["gn:15003:Primal Belt:8"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6815,
-			},
-			["m"] = 6815,
-		},
-		["g:7112:41"] = {
-			["a"] = {
-				[1540] = 10,
-			},
-			["l"] = {
-			},
-			["m"] = 8875,
-			["h"] = {
-				[1540] = 8875,
-			},
-		},
-		["gn:9865:Renegade Bracers of Healing:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 22496,
-			["h"] = {
-				[1539] = 22496,
-			},
-		},
-		["gn:7430:Twilight Robe of Stamina:40"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 11999,
-			["h"] = {
-				[1540] = 11999,
-			},
-		},
-		["9846"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 35034,
-			["h"] = {
-				[1539] = 35034,
-			},
-		},
-		["g:13034:41"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 89997,
-			["h"] = {
-				[1540] = 89997,
-			},
-		},
-		["5763"] = {
-			["a"] = {
-				[1539] = 11,
-			},
-			["l"] = {
-			},
-			["m"] = 1497,
-			["h"] = {
-				[1539] = 1497,
-			},
-		},
-		["g:5216:45"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 259993,
-			["h"] = {
-				[1539] = 259993,
-			},
-		},
-		["g:9831:29"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9999,
-			["h"] = {
-				[1539] = 9999,
-			},
-		},
-		["5965"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 59898,
-			["h"] = {
-				[1538] = 59898,
-			},
-		},
-		["g:14215:37"] = {
-			["a"] = {
-				[1538] = 3,
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 10000,
-				[1540] = 8266,
-			},
-			["m"] = 8266,
-		},
-		["gn:7431:Twilight Pants of Healing:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 50036,
-			["h"] = {
-				[1539] = 50036,
-			},
-		},
-		["gn:8183:Precision Bow:27"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-				[1538] = 6496,
-			},
-			["h"] = {
-				[1538] = 6497,
-			},
-			["m"] = 6496,
-		},
-		["9910"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 92596,
-			["h"] = {
-				[1539] = 92596,
-			},
-		},
-		["g:15329:24"] = {
-			["a"] = {
-				[1530] = 1,
-			},
-			["l"] = {
-				[1530] = 3041,
-			},
-			["h"] = {
-				[1530] = 4542,
-			},
-			["m"] = 3041,
-		},
-		["g:7411:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 13098,
-			["h"] = {
-				[1539] = 13098,
-			},
-		},
-		["g:6553:18"] = {
-			["a"] = {
-				[1539] = 10,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4997,
-			},
-			["m"] = 4997,
-		},
-		["g:2569:13"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 1500,
-		},
-		["g:864:38"] = {
-			["a"] = {
-				[1540] = 31,
-			},
-			["l"] = {
-			},
-			["m"] = 19561,
-			["h"] = {
-				[1540] = 19561,
-			},
-		},
-		["g:15003:8"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6815,
-			},
-			["m"] = 6815,
-		},
-		["g:2974:16"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["9751"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5000,
-			},
-			["m"] = 5000,
-		},
-		["gn:3783:Light Scimitar:36"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 6054,
-			["h"] = {
-				[1540] = 6054,
-			},
-		},
-		["937"] = {
-			["a"] = {
-				[1540] = 7,
-			},
-			["l"] = {
-			},
-			["m"] = 19991,
-			["h"] = {
-				[1540] = 19991,
-			},
-		},
-		["3187"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 52550,
-			["h"] = {
-				[1539] = 52550,
-			},
-		},
-		["g:14184:30"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4999,
-			},
-			["m"] = 4999,
-		},
-		["g:7446:36"] = {
-			["a"] = {
-				[1538] = 7,
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9977,
-			["h"] = {
-				[1538] = 8705,
-				[1539] = 9977,
-			},
-		},
-		["13446"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 41999,
-			["h"] = {
-				[1539] = 41999,
-			},
-		},
-		["7475"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 45096,
-			["h"] = {
-				[1539] = 45096,
-			},
-		},
-		["gn:3315:Ceremonial Leather Loincloth:17"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2299,
-			},
-			["m"] = 2299,
-		},
-		["14208"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9264,
-			["h"] = {
-				[1539] = 9264,
-			},
-		},
-		["15935"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 14472,
-			["h"] = {
-				[1539] = 14472,
-			},
-		},
-		["gn:6537:Willow Boots of the Whale:15"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2099,
-		},
-		["gn:7460:Knight's Cloak of the Boar:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 19997,
-			["h"] = {
-				[1538] = 19997,
-			},
-		},
-		["9869"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 15894,
-			["h"] = {
-				[1539] = 15894,
-			},
-		},
-		["gn:14225:Geomancer's Wraps of Intellect:41"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 50000,
-			["h"] = {
-				[1540] = 50000,
-			},
-		},
-		["g:15244:42"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 34299,
-			["h"] = {
-				[1539] = 34299,
-			},
-		},
-		["14560"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3982,
-			},
-			["m"] = 3982,
-		},
-		["g:14208:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9264,
-			["h"] = {
-				[1539] = 9264,
-			},
-		},
-		["2835"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 15,
-			["h"] = {
-			},
-		},
-		["gn:2583:Woolen Boots:19"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3000,
-		},
-		["gn:15312:Feral Leggings of the Eagle:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8938,
-			},
-			["m"] = 8938,
-		},
-		["4566"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8999,
-			["h"] = {
-				[1539] = 8999,
-			},
-		},
-		["gn:9766:Greenweave Sash of Healing:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 9967,
-		},
-		["gn:15306:Feral Bindings of the Eagle:16"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9580,
-			},
-			["m"] = 9580,
-		},
-		["gn:14202:Thistlefur Jerkin of Arcane Wrath:36"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 13341,
-			["h"] = {
-				[1540] = 13341,
-			},
-		},
-		["gn:7430:Twilight Robe of Intellect:40"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 11799,
-			["h"] = {
-				[1540] = 11799,
-			},
-		},
-		["gn:15329:Wrangler's Belt of the Monkey:24"] = {
-			["a"] = {
-				[1530] = 1,
-			},
-			["l"] = {
-				[1530] = 3041,
-			},
-			["h"] = {
-				[1530] = 4542,
-			},
-			["m"] = 3041,
-		},
-		["gn:7353:Elder's Padded Armor of Arcane Wrath:35"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 7789,
-			["h"] = {
-				[1540] = 7789,
-			},
-		},
-		["gn:3184:Hook Dagger of Agility:20"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9998,
-			},
-			["m"] = 9998,
-		},
-		["gn:14158:Pagan Vest of Stamina:26"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8000,
-			},
-			["m"] = 8000,
-		},
-		["gn:14225:Geomancer's Wraps of Stamina:41"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 119998,
-			["h"] = {
-				[1540] = 119998,
-			},
-		},
-		["gn:15571:Marauder's Belt of Healing:35"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 99999,
-			["h"] = {
-				[1539] = 99999,
-			},
-		},
-		["15493"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6998,
-			["h"] = {
-				[1539] = 6998,
-			},
-		},
-		["gn:7433:Twilight Gloves of Healing:37"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7697,
-			["h"] = {
-				[1539] = 7697,
-			},
-		},
-		["g:15224:25"] = {
-			["a"] = {
-				[1533] = 4,
-			},
-			["l"] = {
-				[1533] = 3096,
-			},
-			["h"] = {
-				[1533] = 8997,
-			},
-			["m"] = 3096,
-		},
-		["1769"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 1298,
-			["h"] = {
-			},
-		},
-		["15243"] = {
-			["a"] = {
-				[1539] = 1,
-				[1540] = 46,
-			},
-			["l"] = {
-			},
-			["m"] = 19436,
-			["h"] = {
-				[1539] = 19996,
-				[1540] = 19436,
-			},
-		},
-		["gn:2974:Hunting Pants:16"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["15226"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 19988,
-			["h"] = {
-				[1539] = 19988,
-			},
-		},
-		["gn:15305:Feral Shoes of Spirit:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1549,
-			},
-			["m"] = 1549,
-		},
-		["9775"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10083,
-			},
-			["m"] = 10083,
-		},
-		["gn:14164:Pagan Belt of the Whale:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 6511,
-		},
-		["gn:15340:Pathfinder Cloak of Healing:27"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 15063,
-			["h"] = {
-				[1539] = 15063,
-			},
-		},
-		["15308"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4982,
-			},
-			["m"] = 4982,
-		},
-		["gn:15244:Razor Blade of Healing:42"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 34299,
-			["h"] = {
-				[1539] = 34299,
-			},
-		},
-		["g:6608:27"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 6664,
-			},
-			["m"] = 6664,
-		},
-		["gn:9852:Conjurer's Robe of the Whale:38"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 10045,
-			["h"] = {
-				[1540] = 10045,
-			},
-		},
-		["14564"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5398,
-			},
-			["m"] = 5398,
-		},
-		["14215"] = {
-			["a"] = {
-				[1538] = 3,
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 10000,
-				[1540] = 8266,
-			},
-			["m"] = 8266,
-		},
-		["gn:2819:Cross Dagger of Agility:28"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 17998,
-			["h"] = {
-				[1540] = 17998,
-			},
-		},
-		["210138"] = {
-			["a"] = {
-				[1531] = 728,
-				[1532] = 780,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1531] = 6343,
-				[1532] = 5339,
-			},
-			["m"] = 5339,
-		},
-		["14117"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4082,
-			["h"] = {
-				[1539] = 4082,
-			},
-		},
-		["6610"] = {
-			["a"] = {
-				[1538] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4544,
-			},
-			["m"] = 4544,
-		},
-		["14193"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4000,
-			["h"] = {
-				[1539] = 4000,
-			},
-		},
-		["gn:864:Knightly Longsword of the Tiger:38"] = {
-			["a"] = {
-				[1540] = 15,
-			},
-			["l"] = {
-			},
-			["m"] = 19666,
-			["h"] = {
-				[1540] = 19666,
-			},
-		},
-		["7456"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 15000,
-			["h"] = {
-				[1539] = 15000,
-			},
-		},
-		["12998"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 109085,
-			["h"] = {
-			},
-		},
-		["gn:15213:Mercenary Blade of the Monkey:36"] = {
-			["a"] = {
-				[1540] = 18,
-			},
-			["l"] = {
-			},
-			["m"] = 21982,
-			["h"] = {
-				[1540] = 21982,
-			},
-		},
-		["gn:9780:Bandit Gloves of the Whale:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6462,
-			},
-			["m"] = 6462,
-		},
-		["g:14216:41"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1540] = 10000,
-			},
-		},
-		["gn:15527:Sentry's Gloves of Healing:27"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2011,
-			["h"] = {
-				[1539] = 2011,
-			},
-		},
-		["gn:15018:Lupine Vest of the Monkey:20"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 17593,
-			},
-			["m"] = 17593,
-		},
-		["g:6406:34"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3556,
-		},
-		["9821"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29901,
-			["h"] = {
-				[1539] = 29901,
-			},
-		},
-		["14213"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 7708,
-			["h"] = {
-				[1540] = 7708,
-			},
-		},
-		["gn:9867:Renegade Cloak of the Gorilla:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4999,
-			["h"] = {
-				[1538] = 4999,
-			},
-		},
-		["g:9889:40"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29799,
-			["h"] = {
-				[1539] = 29799,
-			},
-		},
-		["gn:9867:Renegade Cloak of the Monkey:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 14400,
-			["h"] = {
-				[1538] = 14400,
-			},
-		},
-		["gn:14122:Ritual Bands of Healing:18"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 7552,
-			["h"] = {
-				[1539] = 7552,
-			},
-		},
-		["gn:4571:War Knife of Agility:17"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19995,
-			},
-			["m"] = 19995,
-		},
-		["gn:9819:Durable Tunic of Spirit:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["7366"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9000,
-			["h"] = {
-				[1539] = 9000,
-			},
-		},
-		["gn:15155:Nocturnal Gloves of Healing:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 50000,
-			["h"] = {
-				[1539] = 50000,
-			},
-		},
-		["gn:6615:Sage's Gloves of Healing:29"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 12498,
-			["h"] = {
-				[1539] = 12498,
-			},
-		},
-		["g:3065:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2998,
-		},
-		["5635"] = {
-			["a"] = {
-				[1530] = 75,
-			},
-			["l"] = {
-				[1530] = 44,
-			},
-			["h"] = {
-				[1530] = 45,
-			},
-			["m"] = 44,
-		},
-		["9878"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 25080,
-			["h"] = {
-				[1539] = 25080,
-			},
-		},
-		["6537"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2099,
-		},
-		["g:7357:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5986,
-			["h"] = {
-				[1539] = 5986,
-			},
-		},
-		["7554"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5600,
-			["h"] = {
-				[1539] = 5600,
-			},
-		},
-		["3174"] = {
-			["a"] = {
-				[1530] = 98,
-			},
-			["l"] = {
-			},
-			["m"] = 14,
-			["h"] = {
-				[1530] = 14,
-			},
-		},
-		["6149"] = {
-			["a"] = {
-				[1540] = 188,
-			},
-			["l"] = {
-			},
-			["m"] = 6169,
-			["h"] = {
-				[1540] = 6169,
-			},
-		},
-		["gn:7757:Windweaver Staff:37"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 89908,
-			["h"] = {
-				[1540] = 89908,
-			},
-		},
-		["g:937:38"] = {
-			["a"] = {
-				[1540] = 7,
-			},
-			["l"] = {
-			},
-			["m"] = 19991,
-			["h"] = {
-				[1540] = 19991,
-			},
-		},
-		["g:3803:38"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 1495,
-			["h"] = {
-				[1538] = 1495,
-			},
-		},
-		["gn:6562:Shimmering Boots of the Owl:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2904,
-		},
-		["gn:9844:Conjurer's Vest of Frozen Wrath:38"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10082,
-			["h"] = {
-				[1540] = 10082,
-			},
-		},
-		["2766"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7694,
-			["h"] = {
-				[1540] = 7694,
-			},
-		},
-		["gn:7430:Twilight Robe of the Eagle:40"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 14584,
-			["h"] = {
-				[1540] = 14584,
-			},
-		},
-		["9883"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 57999,
-			["h"] = {
-				[1539] = 57999,
-			},
-		},
-		["gn:14216:Geomancer's Jerkin of the Whale:41"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 58644,
-			["h"] = {
-				[1540] = 58644,
-			},
-		},
-		["gn:9898:Jazeraint Cloak of Strength:38"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39998,
-			["h"] = {
-				[1538] = 39998,
-			},
-		},
-		["gn:15918:Conjurer's Sphere of Healing:38"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39994,
-			["h"] = {
-				[1539] = 39994,
-			},
-		},
-		["g:3786:39"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 8094,
-			["h"] = {
-				[1540] = 8094,
-			},
-		},
-		["5766"] = {
-			["a"] = {
-				[1538] = 11,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 13907,
-			},
-			["m"] = 13907,
-		},
-		["3745"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 1,
-			["h"] = {
-				[1539] = 1,
-			},
-		},
-		["4732"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 5484,
-			["h"] = {
-				[1538] = 5484,
-			},
-		},
-		["9766"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 4298,
-		},
-		["14241"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 30125,
-			["h"] = {
-				[1539] = 30125,
-			},
-		},
-		["gn:4246:Fine Leather Belt:16"] = {
-			["a"] = {
-				[1539] = 29,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2186,
-			},
-			["m"] = 2186,
-		},
-		["gn:14158:Pagan Vest of the Eagle:26"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 19900,
-			},
-			["m"] = 19900,
-		},
-		["gn:15243:Deadly Kris of Nature's Wrath:36"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 29984,
-			["h"] = {
-				[1540] = 29984,
-			},
-		},
-		["7433"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7697,
-			["h"] = {
-				[1539] = 7697,
-			},
-		},
-		["gn:14202:Thistlefur Jerkin of Intellect:36"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1540] = 10000,
-			},
-		},
-		["gn:7437:Twilight Cuffs of Healing:36"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 11078,
-			["h"] = {
-				[1539] = 11078,
-			},
-		},
-		["g:9883:42"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 57999,
-			["h"] = {
-				[1539] = 57999,
-			},
-		},
-		["g:6554:17"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9900,
-			},
-			["m"] = 9900,
-		},
-		["gn:9890:Huntsman's Cape of Arcane Wrath:38"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 19999,
-			["h"] = {
-				[1538] = 19999,
-			},
-		},
-		["9823"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 3091,
-			["h"] = {
-				[1539] = 3091,
-			},
-		},
-		["gn:15122:Robust Bracers of Healing:25"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 9971,
-			["h"] = {
-				[1539] = 9971,
-			},
-		},
-		["g:10581:40"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 194559,
-			["h"] = {
-				[1540] = 194559,
-			},
-		},
-		["gn:9844:Conjurer's Vest of the Owl:38"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 29937,
-			["h"] = {
-				[1540] = 29937,
-			},
-		},
-		["873"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 2757139,
-			["h"] = {
-				[1540] = 2757139,
-			},
-		},
-		["gn:7414:Infiltrator Pants of Healing:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 79999,
-			["h"] = {
-				[1539] = 79999,
-			},
-		},
-		["9901"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 49999,
-			["h"] = {
-				[1539] = 49999,
-			},
-		},
-		["gn:15305:Feral Shoes of Agility:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3500,
-			},
-			["m"] = 3500,
-		},
-		["gn:4038:Nightsky Robe:37"] = {
-			["a"] = {
-				[1538] = 4,
-				[1540] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5889,
-				[1540] = 5719,
-			},
-			["m"] = 5719,
-		},
-		["4575"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9544,
-			["h"] = {
-				[1539] = 9544,
-			},
-		},
-		["g:15308:17"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4982,
-			},
-			["m"] = 4982,
-		},
-		["g:3315:17"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2299,
-			},
-			["m"] = 2299,
-		},
-		["gn:15213:Mercenary Blade of the Tiger:36"] = {
-			["a"] = {
-				[1540] = 12,
-			},
-			["l"] = {
-			},
-			["m"] = 18000,
-			["h"] = {
-				[1540] = 18000,
-			},
-		},
-		["g:15122:25"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 9971,
-			["h"] = {
-				[1539] = 9971,
-			},
-		},
-		["gn:3490:Deadly Bronze Poniard:25"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 29995,
-			["h"] = {
-				[1540] = 29995,
-			},
-		},
-		["g:1794:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2228,
-			},
-			["m"] = 2228,
-		},
-		["9889"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29799,
-			["h"] = {
-				[1539] = 29799,
-			},
-		},
-		["4238"] = {
-			["a"] = {
-				[1539] = 49,
-			},
-			["l"] = {
-			},
-			["m"] = 393,
-			["h"] = {
-				[1539] = 393,
-			},
-		},
-		["gn:4242:Embossed Leather Pants:15"] = {
-			["a"] = {
-				[1539] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4500,
-			},
-			["m"] = 4500,
-		},
-		["15241"] = {
-			["a"] = {
-				[1539] = 2,
-				[1540] = 26,
-			},
-			["l"] = {
-			},
-			["m"] = 8999,
-			["h"] = {
-				[1539] = 5095,
-				[1540] = 8999,
-			},
-		},
-		["gn:14374:Sanguine Sandals:24"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3498,
-		},
-		["14561"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["7544"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 79892,
-			["h"] = {
-				[1539] = 79892,
-			},
-		},
-		["gn:1786:Cross-stitched Vest:29"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5097,
-			},
-			["m"] = 5097,
-		},
-		["gn:2632:Curved Dagger of Healing:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 6880,
-			["h"] = {
-				[1539] = 6880,
-			},
-		},
-		["g:14211:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7194,
-			["h"] = {
-				[1539] = 7194,
-			},
-		},
-		["g:2075:12"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 1994,
-			["h"] = {
-				[1539] = 1994,
-			},
-		},
-		["gn:15974:Pagan Rod of Healing:26"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 8899,
-			["h"] = {
-				[1539] = 8899,
-			},
-		},
-		["gn:3185:Acrobatic Staff of Spirit:34"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 49793,
-			["h"] = {
-				[1540] = 49793,
-			},
-		},
-		["gn:1788:Patched Leather Boots:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1050,
-			},
-			["m"] = 1050,
-		},
-		["gn:15112:Rigid Bracelets of Intellect:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11615,
-			},
-			["m"] = 11615,
-		},
-		["gn:14202:Thistlefur Jerkin of the Owl:36"] = {
-			["a"] = {
-				[1538] = 1,
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 13007,
-				[1540] = 13006,
-			},
-			["m"] = 13006,
-		},
-		["gn:7462:Knight's Girdle of Healing:37"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 46999,
-			["h"] = {
-				[1539] = 46999,
-			},
-		},
-		["2075"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 1994,
-			["h"] = {
-				[1539] = 1994,
-			},
-		},
-		["gn:6552:Bard's Tunic of Spirit:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7992,
-			},
-			["m"] = 7992,
-		},
-		["3313"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9992,
-			},
-			["m"] = 9992,
-		},
-		["g:7430:40"] = {
-			["a"] = {
-				[1540] = 30,
-			},
-			["l"] = {
-			},
-			["m"] = 9897,
-			["h"] = {
-				[1540] = 9897,
-			},
-		},
-		["gn:9890:Huntsman's Cape of the Owl:38"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 14771,
-			["h"] = {
-				[1538] = 14771,
-			},
-		},
-		["g:15011:15"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4086,
-			},
-			["m"] = 4086,
-		},
-		["gn:9780:Bandit Gloves of the Gorilla:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11085,
-			},
-			["m"] = 11085,
-		},
-		["gn:1998:Bloodscalp Channeling Staff:33"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 10691,
-			["h"] = {
-				[1540] = 10691,
-			},
-		},
-		["6613"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 127789,
-			["h"] = {
-				[1539] = 127789,
-			},
-		},
-		["4313"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 13969,
-		},
-		["gn:15009:Primal Leggings of the Eagle:11"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3999,
-			},
-			["m"] = 3999,
-		},
-		["g:14126:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 1497,
-			["h"] = {
-			},
-		},
-		["gn:6570:Shimmering Sash of Healing:22"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11000,
-			},
-			["m"] = 11000,
-		},
-		["gn:7412:Infiltrator Gloves of Healing:32"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9996,
-			["h"] = {
-				[1539] = 9996,
-			},
-		},
-		["14192"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8000,
-			},
-			["m"] = 8000,
-		},
-		["791"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 20190,
-			["h"] = {
-				[1540] = 20190,
-			},
-		},
-		["g:4569:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 3797,
-			["h"] = {
-				[1539] = 3797,
-			},
-		},
-		["gn:15136:Cutthroat's Belt of Healing:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 14974,
-			["h"] = {
-				[1539] = 14974,
-			},
-		},
-		["gn:6570:Shimmering Sash of the Owl:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 19993,
-		},
-		["gn:4861:Sleek Feathered Tunic:10"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 22523,
-			},
-			["m"] = 22523,
-		},
-		["gn:15364:Trickster's Cloak of Spirit:36"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8962,
-			["h"] = {
-				[1538] = 8962,
-			},
-		},
-		["gn:13108:Tigerstrike Mantle:34"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 113000,
-			["h"] = {
-				[1538] = 113000,
-			},
-		},
-		["gn:9771:Greenweave Gloves of Spirit:25"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-			},
-		},
-		["gn:9819:Durable Tunic of Frozen Wrath:34"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8896,
-			},
-			["m"] = 8896,
-		},
-		["gn:7555:Regal Star of Healing:45"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["gn:15312:Feral Leggings of Agility:20"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7999,
-			},
-			["m"] = 7999,
-		},
-		["gn:9852:Conjurer's Robe of Arcane Wrath:38"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 34493,
-			["h"] = {
-				[1540] = 34493,
-			},
-		},
-		["gn:864:Knightly Longsword of the Monkey:38"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 19561,
-			["h"] = {
-				[1540] = 19561,
-			},
-		},
-		["gn:6238:Brown Linen Robe:10"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 772,
-		},
-		["gn:9875:Sorcerer Sash of Healing:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6957,
-			["h"] = {
-				[1539] = 6957,
-			},
-		},
-		["gn:9883:Sorcerer Pants of Healing:42"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 57999,
-			["h"] = {
-				[1539] = 57999,
-			},
-		},
-		["gn:9860:Archer's Cloak of Nature's Wrath:34"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 33998,
-			["h"] = {
-				[1538] = 33998,
-			},
-		},
-		["gn:15214:Nobles Brand of Strength:40"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 21998,
-			["h"] = {
-				[1540] = 21998,
-			},
-		},
-		["gn:6609:Sage's Cloth of Spirit:32"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5899,
-			},
-			["m"] = 5899,
-		},
-		["gn:9777:Bandit Bracers of Spirit:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4405,
-			},
-			["m"] = 4405,
-		},
-		["3413"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 129895,
-			["h"] = {
-				[1540] = 129895,
-			},
-		},
-		["g:776:31"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 222953,
-			["h"] = {
-				[1540] = 222953,
-			},
-		},
-		["gn:2077:Magician Staff of Stamina:29"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9996,
-			["h"] = {
-				[1540] = 9996,
-			},
-		},
-		["2911"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 299997,
-		},
-		["gn:14164:Pagan Belt of the Monkey:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 17914,
-		},
-		["g:2303:10"] = {
-			["a"] = {
-				[1539] = 32,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5594,
-			},
-			["m"] = 5594,
-		},
-		["g:9911:46"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
 			["m"] = 100000,
-			["h"] = {
-				[1539] = 100000,
-			},
-		},
-		["9879"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9954,
-			["h"] = {
-				[1539] = 9954,
-			},
-		},
-		["g:7412:32"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9996,
-			["h"] = {
-				[1539] = 9996,
-			},
-		},
-		["gn:9776:Bandit Boots of the Monkey:20"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19899,
-			},
-			["m"] = 19899,
-		},
-		["gn:12248:Daring Dirk:34"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 79992,
-			["h"] = {
-				[1540] = 79992,
-			},
-		},
-		["3205"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9900,
-			},
-			["m"] = 9900,
-		},
-		["g:9865:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 22496,
-			["h"] = {
-				[1539] = 22496,
-			},
-		},
-		["gn:3784:Metal Stave:37"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 9977,
-			["h"] = {
-				[1540] = 9977,
-			},
-		},
-		["gn:9771:Greenweave Gloves of the Falcon:25"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 9500,
-			["h"] = {
-			},
-		},
-		["gn:15224:Battlesmasher of the Monkey:25"] = {
-			["a"] = {
-				[1533] = 4,
-			},
-			["l"] = {
-				[1533] = 3096,
-			},
-			["h"] = {
-				[1533] = 8997,
-			},
-			["m"] = 3096,
-		},
-		["gn:7525:Gossamer Bracers of Healing:45"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 88497,
-			["h"] = {
-				[1539] = 88497,
-			},
-		},
-		["gn:12259:Glinting Steel Dagger:36"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 89987,
-			["h"] = {
-				[1540] = 89987,
-			},
-		},
-		["gn:15303:Grizzly Pants of the Falcon:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7098,
-			},
-			["m"] = 7098,
-		},
-		["gn:4571:War Knife of Stamina:17"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11743,
-			},
-			["m"] = 11743,
-		},
-		["gn:14235:Embersilk Cord of Healing:37"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 19976,
-			["h"] = {
-				[1539] = 19976,
-			},
-		},
-		["gn:15223:Jagged Star of Healing:24"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9916,
-			["h"] = {
-				[1539] = 9916,
-			},
-		},
-		["gn:10402:Blackened Defias Boots:18"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 31431,
-			},
-			["m"] = 31431,
-		},
-		["15312"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6000,
-			},
-			["m"] = 6000,
-		},
-		["g:9844:38"] = {
-			["a"] = {
-				[1540] = 31,
-			},
-			["l"] = {
-			},
-			["m"] = 9996,
-			["h"] = {
-				[1540] = 9996,
-			},
-		},
-		["g:15974:26"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 8899,
-			["h"] = {
-				[1539] = 8899,
-			},
-		},
-		["g:1664:41"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 58499,
-			["h"] = {
-				[1540] = 58499,
-			},
-		},
-		["gn:7430:Twilight Robe of the Owl:40"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9897,
-			["h"] = {
-				[1540] = 9897,
-			},
-		},
-		["857"] = {
-			["a"] = {
-				[1539] = 15,
-			},
-			["l"] = {
-			},
-			["m"] = 8461,
-			["h"] = {
-				[1539] = 8461,
-			},
-		},
-		["1425"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2900,
-			},
-			["m"] = 2900,
-		},
-		["gn:9776:Bandit Boots of the Gorilla:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10977,
-			},
-			["m"] = 10977,
-		},
-		["gn:11287:Lesser Magic Wand:15"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 1840,
-		},
-		["4789"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7694,
-			},
-			["m"] = 7694,
-		},
-		["4496"] = {
-			["a"] = {
-				[1539] = 15,
-			},
-			["l"] = {
-			},
-			["m"] = 984,
-			["h"] = {
-				[1539] = 984,
-			},
-		},
-		["g:15306:16"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-				[1539] = 2000,
-			},
-			["m"] = 4498,
-			["h"] = {
-				[1539] = 7800,
-			},
-		},
-		["gn:3321:Gray Fur Booties:9"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10101,
-			},
-			["m"] = 10101,
-		},
-		["g:15568:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4996,
-			["h"] = {
-				[1538] = 4996,
-			},
-		},
-		["gn:15012:Lupine Slippers of the Whale:16"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3998,
-			},
-			["m"] = 3998,
-		},
-		["gn:9777:Bandit Bracers of the Whale:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 13572,
-			},
-			["m"] = 13572,
-		},
-		["g:7366:32"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9000,
-			["h"] = {
-				[1539] = 9000,
-			},
-		},
-		["gn:2962:Burnt Leather Breeches:10"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4300,
-			},
-			["m"] = 4300,
-		},
-		["gn:14158:Pagan Vest of the Owl:26"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8900,
-			},
-			["m"] = 8900,
-		},
-		["gn:9890:Huntsman's Cape of the Wolf:38"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9990,
-			["h"] = {
-				[1538] = 9990,
-			},
-		},
-		["gn:3184:Hook Dagger of Healing:20"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-				[1539] = 9994,
-			},
-			["m"] = 9994,
-			["h"] = {
-				[1539] = 9996,
-			},
-		},
-		["gn:7353:Elder's Padded Armor of Stamina:35"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 9999,
-			["h"] = {
-				[1540] = 9999,
-			},
-		},
-		["5254"] = {
-			["a"] = {
-				[1539] = 18,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4998,
-			},
-			["m"] = 4998,
-		},
-		["3305"] = {
-			["a"] = {
-				[1530] = 12,
-				[1531] = 18,
-				[1533] = 11,
-				[1534] = 17,
-			},
-			["l"] = {
-				[1530] = 894,
-				[1531] = 2096,
-				[1533] = 1858,
-			},
-			["m"] = 900,
-			["h"] = {
-				[1530] = 895,
-				[1531] = 3097,
-				[1533] = 1859,
-				[1534] = 900,
-			},
-		},
-		["3033"] = {
-			["a"] = {
-				[1539] = 1200,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5,
-			},
-			["m"] = 5,
-		},
-		["gn:6379:Inscribed Leather Belt:17"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7588,
-			},
-			["m"] = 7588,
-		},
-		["g:9775:19"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10083,
-			},
-			["m"] = 10083,
-		},
-		["g:9927:42"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 48797,
-			["h"] = {
-				[1539] = 48797,
-			},
-		},
-		["gn:7429:Twilight Armor of Intellect:40"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 36999,
-			["h"] = {
-				[1540] = 36999,
-			},
-		},
-		["gn:7369:Elder's Robe of Frozen Wrath:35"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 108075,
-			["h"] = {
-				[1540] = 108075,
-			},
-		},
-		["3803"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 1495,
-			["h"] = {
-				[1538] = 1495,
-			},
-		},
-		["gn:15018:Lupine Vest of the Whale:20"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8311,
-			},
-			["m"] = 8311,
-		},
-		["g:217245:41"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 102251,
-			["h"] = {
-				[1540] = 102251,
-			},
-		},
-		["gn:15018:Lupine Vest of Spirit:20"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8382,
-			},
-			["m"] = 8382,
-		},
-		["gn:9879:Sorcerer Bracelets of Healing:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9954,
-			["h"] = {
-				[1539] = 9954,
-			},
-		},
-		["gn:2077:Magician Staff of Frozen Wrath:29"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 24999,
-			["h"] = {
-				[1540] = 24999,
-			},
-		},
-		["7112"] = {
-			["a"] = {
-				[1540] = 10,
-			},
-			["l"] = {
-			},
-			["m"] = 8875,
-			["h"] = {
-				[1540] = 8875,
-			},
-		},
-		["gn:6552:Bard's Tunic of the Whale:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7992,
-			},
-			["m"] = 7992,
-		},
-		["gn:15241:Battle Knife of Power:26"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 8999,
-			["h"] = {
-				[1540] = 8999,
-			},
-		},
-		["gn:9777:Bandit Bracers of the Monkey:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19954,
-			},
-			["m"] = 19954,
-		},
-		["gn:15110:Rigid Belt of the Whale:20"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10087,
-			},
-			["m"] = 10087,
-		},
-		["g:2987:18"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7499,
-			},
-			["m"] = 7499,
-		},
-		["g:9821:30"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29901,
-			["h"] = {
-				[1539] = 29901,
-			},
-		},
-		["14207"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12303,
-			["h"] = {
-				[1539] = 12303,
-			},
-		},
-		["7489"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 80000,
-			["h"] = {
-				[1539] = 80000,
-			},
-		},
-		["208800"] = {
-			["a"] = {
-				[1531] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 15538,
-			["h"] = {
-				[1531] = 15538,
-			},
-		},
-		["858"] = {
-			["a"] = {
-				[1539] = 218,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 22,
-			},
-			["m"] = 22,
-		},
-		["gn:7460:Knight's Cloak of Healing:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4999,
-			["h"] = {
-				[1538] = 4999,
-			},
-		},
-		["gn:9847:Conjurer's Cloak of Frozen Wrath:33"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 7080,
-			["h"] = {
-				[1538] = 7080,
-			},
-		},
-		["g:3311:15"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5585,
-			},
-			["m"] = 5585,
-		},
-		["g:7470:42"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9999,
-			["h"] = {
-				[1539] = 9999,
-			},
-		},
-		["g:3288:13"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7994,
-			},
-			["m"] = 7994,
-		},
-		["15112"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8000,
-			},
-			["m"] = 8000,
-		},
-		["gn:2549:Staff of the Shade:27"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 89999,
-			["h"] = {
-				[1540] = 89999,
-			},
-		},
-		["6554"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9900,
-			},
-			["m"] = 9900,
-		},
-		["8225"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 19994,
-			["h"] = {
-				[1540] = 19994,
-			},
-		},
-		["g:4861:10"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 22523,
-			},
-			["m"] = 22523,
-		},
-		["gn:7524:Gossamer Cape of Healing:44"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 34429,
-			["h"] = {
-				[1539] = 34429,
-			},
-		},
-		["2515"] = {
-			["a"] = {
-				[1539] = 1729,
-			},
-			["l"] = {
-			},
-			["m"] = 5,
-			["h"] = {
-				[1539] = 5,
-			},
-		},
-		["15300"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 583,
-			},
-			["m"] = 583,
-		},
-		["gn:9791:Ivycloth Tunic of the Owl:29"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 11116,
-			},
-			["m"] = 11116,
-		},
-		["g:4571:17"] = {
-			["a"] = {
-				[1539] = 22,
-			},
-			["l"] = {
-				[1539] = 7999,
-			},
-			["m"] = 7999,
-			["h"] = {
-				[1539] = 8000,
-			},
-		},
-		["g:15113:23"] = {
-			["a"] = {
-				[1530] = 2,
-				[1531] = 1,
-			},
-			["l"] = {
-				[1530] = 4994,
-				[1531] = 3731,
-			},
-			["h"] = {
-				[1530] = 8895,
-				[1531] = 16332,
-				[1533] = 2031,
-			},
-			["m"] = 2031,
-		},
-		["g:14158:26"] = {
-			["a"] = {
-				[1538] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3998,
-			},
-			["m"] = 3998,
-		},
-		["7521"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 24998,
-			["h"] = {
-				[1539] = 24998,
-			},
-		},
-		["g:14173:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1539] = 10000,
-			},
-		},
-		["gn:14192:Raincaller Robes of the Owl:31"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 11109,
-			},
-			["m"] = 11109,
-		},
-		["1210"] = {
-			["a"] = {
-				[1533] = 64,
-				[1538] = 75,
-			},
-			["l"] = {
-			},
-			["m"] = 243,
-			["h"] = {
-				[1533] = 3467,
-				[1538] = 243,
-			},
-		},
-		["gn:3287:Tribal Pants:12"] = {
-			["a"] = {
-				[1539] = 13,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3398,
-			},
-			["m"] = 3398,
-		},
-		["gn:8223:Blade of the Basilisk:37"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 459743,
-			["h"] = {
-				[1540] = 459743,
-			},
-		},
-		["gn:15011:Lupine Cord of the Eagle:15"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6844,
-			},
-			["m"] = 6844,
-		},
-		["9903"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 22220,
-			["h"] = {
-				[1539] = 22220,
-			},
-		},
-		["2589"] = {
-			["a"] = {
-				[1530] = 573,
-				[1538] = 434,
-			},
-			["l"] = {
-				[1530] = 16,
-			},
-			["h"] = {
-				[1530] = 46,
-				[1538] = 63,
-			},
-			["m"] = 63,
-		},
-		["9855"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 36993,
-			["h"] = {
-				[1539] = 36993,
-			},
-		},
-		["6557"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 17999,
-			},
-			["m"] = 17999,
-		},
-		["g:4788:20"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10290,
-			},
-			["m"] = 10290,
-		},
-		["g:7443:37"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 29800,
-			["h"] = {
-				[1539] = 29800,
-			},
-		},
-		["2973"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8626,
-			},
-			["m"] = 8626,
-		},
-		["gn:15009:Primal Leggings of the Owl:11"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3094,
-			},
-			["m"] = 3094,
-		},
-		["g:14177:26"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1530] = 2000,
-				[1539] = 8000,
-			},
-			["m"] = 8000,
-		},
-		["gn:15017:Lupine Leggings of Spirit:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4999,
-			},
-			["m"] = 4999,
-		},
-		["14184"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4999,
-			},
-			["m"] = 4999,
-		},
-		["gn:7476:Regal Sash of the Whale:40"] = {
-			["a"] = {
-				[1541] = 1,
-			},
-			["l"] = {
-				[1541] = 4099,
-			},
-			["m"] = 4099,
-			["h"] = {
-				[1541] = 6900,
-			},
-		},
-		["g:3184:20"] = {
-			["a"] = {
-				[1539] = 19,
-			},
-			["l"] = {
-				[1539] = 8148,
-			},
-			["m"] = 8148,
-			["h"] = {
-				[1539] = 9996,
-			},
-		},
-		["g:7432:38"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9993,
-			["h"] = {
-				[1539] = 9993,
-			},
-		},
-		["gn:864:Knightly Longsword of Stamina:38"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 19885,
-			["h"] = {
-				[1540] = 19885,
-			},
-		},
-		["gn:7475:Regal Cuffs of Healing:41"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 45096,
-			["h"] = {
-				[1539] = 45096,
-			},
-		},
-		["gn:15112:Rigid Bracelets of the Owl:20"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 15496,
-			},
-			["m"] = 15496,
-		},
-		["g:15305:18"] = {
-			["a"] = {
-				[1539] = 14,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1549,
-			},
-			["m"] = 1549,
-		},
-		["gn:791:Gnarled Ash Staff:31"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 20190,
-			["h"] = {
-				[1540] = 20190,
-			},
-		},
-		["gn:14129:Ritual Sandals of the Owl:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 7600,
-		},
-		["gn:9756:Gypsy Trousers of the Owl:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6597,
-			},
-			["m"] = 6597,
-		},
-		["gn:7369:Elder's Robe of Shadow Wrath:35"] = {
-			["a"] = {
-				[1538] = 2,
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 10000,
-				[1540] = 12199,
-			},
-			["m"] = 12199,
-		},
-		["gn:12998:Magician's Mantle:25"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 109085,
-			["h"] = {
-			},
-		},
-		["gn:9847:Conjurer's Cloak of the Eagle:33"] = {
-			["a"] = {
-				[1538] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 11197,
-			["h"] = {
-				[1538] = 11197,
-			},
-		},
-		["gn:15594:Steadfast Cloak of Stamina:37"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1538] = 20000,
-			},
-		},
-		["gn:6553:Bard's Trousers of Agility:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7085,
-			},
-			["m"] = 7085,
-		},
-		["gn:4732:Glyphed Cloak:37"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 5484,
-			["h"] = {
-				[1538] = 5484,
-			},
-		},
-		["gn:3185:Acrobatic Staff of Nature's Wrath:34"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 96052,
-			["h"] = {
-				[1540] = 96052,
-			},
-		},
-		["gn:9844:Conjurer's Vest of Shadow Wrath:38"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 12294,
-			["h"] = {
-				[1540] = 12294,
-			},
-		},
-		["gn:6591:Battleforge Wristguards of Healing:27"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 3000,
-			["h"] = {
-				[1539] = 3000,
-			},
-		},
-		["gn:9852:Conjurer's Robe of the Owl:38"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 9400,
-			["h"] = {
-				[1540] = 9400,
-			},
-		},
-		["gn:1716:Robe of the Magi:40"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 315000,
-			["h"] = {
-				[1540] = 315000,
-			},
-		},
-		["gn:6553:Bard's Trousers of the Eagle:18"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4997,
-			},
-			["m"] = 4997,
-		},
-		["gn:15978:Geomancer's Rod of Healing:41"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 97696,
-			["h"] = {
-				[1539] = 97696,
-			},
-		},
-		["gn:2632:Curved Dagger of Strength:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9996,
-			},
-			["m"] = 9996,
-		},
-		["g:9925:44"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39997,
-			["h"] = {
-				[1539] = 39997,
-			},
-		},
-		["gn:14189:Raincaller Cap of Healing:32"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["gn:14159:Pagan Shoes of the Whale:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2498,
-		},
-		["gn:15110:Rigid Belt of the Monkey:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19900,
-			},
-			["m"] = 19900,
-		},
-		["2309"] = {
-			["a"] = {
-				[1539] = 12,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3466,
-			},
-			["m"] = 3466,
-		},
-		["6289"] = {
-			["a"] = {
-				[1539] = 80,
-			},
-			["l"] = {
-				[1539] = 1,
-			},
-			["m"] = 1,
-			["h"] = {
-				[1539] = 2,
-			},
-		},
-		["g:1265:39"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 25585,
-			["h"] = {
-				[1540] = 25585,
-			},
-		},
-		["g:6613:28"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 127789,
-			["h"] = {
-				[1539] = 127789,
-			},
-		},
-		["g:873:40"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 2757139,
-			["h"] = {
-				[1540] = 2757139,
-			},
-		},
-		["gn:14242:Darkmist Pants of Healing:43"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 59993,
-			["h"] = {
-				[1539] = 59993,
-			},
-		},
-		["10288"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29900,
-			["h"] = {
-				[1539] = 29900,
-			},
-		},
-		["g:7053:35"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 24449,
-			["h"] = {
-				[1538] = 24449,
-			},
-		},
-		["865"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39998,
-			["h"] = {
-				[1539] = 39998,
-			},
-		},
-		["g:4368:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 2173,
-			["h"] = {
-			},
-		},
-		["7555"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["g:6537:15"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2099,
-		},
-		["14202"] = {
-			["a"] = {
-				[1538] = 1,
-				[1540] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 13007,
-				[1540] = 10000,
-			},
-			["m"] = 10000,
-		},
-		["g:2583:19"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3000,
-		},
-		["gn:14216:Geomancer's Jerkin of the Eagle:41"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 38631,
-			["h"] = {
-				[1540] = 38631,
-			},
-		},
-		["15934"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9998,
-			["h"] = {
-				[1539] = 9998,
-			},
-		},
-		["g:10088:45"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 16693,
-			["h"] = {
-				[1539] = 16693,
-			},
-		},
-		["1081"] = {
-			["a"] = {
-				[1530] = 52,
-			},
-			["l"] = {
-				[1530] = 48,
-			},
-			["m"] = 48,
-			["h"] = {
-				[1530] = 49,
-			},
-		},
-		["gn:9852:Conjurer's Robe of Stamina:38"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 30000,
-			["h"] = {
-				[1540] = 30000,
-			},
-		},
-		["g:15226:37"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 19988,
-			["h"] = {
-				[1539] = 19988,
-			},
-		},
-		["gn:9867:Renegade Cloak of the Eagle:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 19900,
-			["h"] = {
-				[1538] = 19900,
-			},
-		},
-		["gn:14194:Raincaller Cord of Healing:28"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9991,
-			["h"] = {
-				[1539] = 9991,
-			},
-		},
-		["g:7414:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 79999,
-			["h"] = {
-				[1539] = 79999,
-			},
-		},
-		["g:14229:36"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 9983,
-			["h"] = {
-				[1538] = 9983,
-			},
-		},
-		["gn:2140:Carving Knife of Agility:11"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11497,
-			},
-			["m"] = 11497,
-		},
-		["15978"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 97696,
-			["h"] = {
-				[1539] = 97696,
-			},
-		},
-		["g:4732:37"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 5484,
-			["h"] = {
-				[1538] = 5484,
-			},
-		},
-		["gn:6565:Shimmering Gloves of Healing:22"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1539] = 10000,
-			},
-		},
-		["gn:6609:Sage's Cloth of the Owl:32"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4391,
-			},
-			["m"] = 4391,
-		},
-		["gn:2303:Handstitched Leather Pants:10"] = {
-			["a"] = {
-				[1539] = 32,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5594,
-			},
-			["m"] = 5594,
-		},
-		["gn:14207:Vital Leggings of Healing:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12303,
-			["h"] = {
-				[1539] = 12303,
-			},
-		},
-		["gn:7430:Twilight Robe of Frozen Wrath:40"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 29995,
-			["h"] = {
-				[1540] = 29995,
-			},
-		},
-		["gn:9767:Greenweave Sandals of the Falcon:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 6369,
-		},
-		["gn:2766:Deft Stiletto:29"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7694,
-			["h"] = {
-				[1540] = 7694,
-			},
-		},
-		["gn:8006:The Ziggler:39"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 189099,
-			["h"] = {
-				[1540] = 189099,
-			},
-		},
-		["gn:2632:Curved Dagger of Arcane Wrath:14"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9995,
-			},
-			["m"] = 9995,
-		},
-		["3569"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 6293,
-			},
-			["m"] = 6293,
-		},
-		["gn:2072:Dwarven Magestaff of Power:27"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 12996,
-			["h"] = {
-				[1540] = 12996,
-			},
-		},
-		["g:7475:41"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 45096,
-			["h"] = {
-				[1539] = 45096,
-			},
-		},
-		["gn:7353:Elder's Padded Armor of Intellect:35"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 11093,
-			},
-			["m"] = 11093,
-		},
-		["g:15269:24"] = {
-			["a"] = {
-				[1530] = 3,
-			},
-			["l"] = {
-				[1530] = 3091,
-			},
-			["h"] = {
-				[1530] = 5992,
-			},
-			["m"] = 3091,
-		},
-		["14122"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 7552,
-			["h"] = {
-				[1539] = 7552,
-			},
-		},
-		["g:9832:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 19900,
-			["h"] = {
-				[1539] = 19900,
-			},
-		},
-		["gn:15112:Rigid Bracelets of Spirit:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8000,
-			},
-			["m"] = 8000,
-		},
-		["2569"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 1500,
-		},
-		["gn:15243:Deadly Kris of Stamina:36"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 74445,
-			["h"] = {
-				[1540] = 74445,
-			},
-		},
-		["4569"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 3797,
-			["h"] = {
-				[1539] = 3797,
-			},
-		},
-		["gn:2632:Curved Dagger of Fiery Wrath:14"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5997,
-			},
-			["m"] = 5997,
-		},
-		["5527"] = {
-			["a"] = {
-				[1530] = 415,
-			},
-			["l"] = {
-				[1530] = 341,
-			},
-			["h"] = {
-				[1530] = 342,
-			},
-			["m"] = 341,
-		},
-		["gn:15308:Feral Cord of the Falcon:17"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 22525,
-			},
-			["m"] = 22525,
-		},
-		["gn:15118:Rigid Tunic of the Eagle:26"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1531] = 6000,
-			},
-			["m"] = 6000,
-		},
-		["gn:2819:Cross Dagger of the Bear:28"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9499,
-			["h"] = {
-				[1540] = 9499,
-			},
-		},
-		["g:14185:27"] = {
-			["a"] = {
-				[1530] = 6,
-				[1531] = 8,
-				[1539] = 1,
-				[1533] = 2,
-			},
-			["l"] = {
-				[1530] = 5099,
-				[1531] = 3298,
-				[1533] = 2290,
-			},
-			["h"] = {
-				[1530] = 8300,
-				[1531] = 8299,
-				[1539] = 2997,
-				[1533] = 3291,
-			},
-			["m"] = 2997,
-		},
-		["g:14194:28"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9991,
-			["h"] = {
-				[1539] = 9991,
-			},
-		},
-		["15594"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 7000,
-			["h"] = {
-				[1538] = 7000,
-			},
-		},
-		["gn:4237:Handstitched Leather Belt:10"] = {
-			["a"] = {
-				[1539] = 166,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2069,
-			},
-			["m"] = 2069,
-		},
-		["g:9848:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 25950,
-			["h"] = {
-				[1539] = 25950,
-			},
-		},
-		["g:14192:31"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8000,
-			},
-			["m"] = 8000,
-		},
-		["gn:2569:Linen Boots:13"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 1500,
-		},
-		["gn:14204:Thistlefur Robe of the Whale:36"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12162,
-			["h"] = {
-				[1540] = 12162,
-			},
-		},
-		["9434"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 89996,
-			["h"] = {
-				[1540] = 89996,
-			},
-		},
-		["gn:15241:Battle Knife of Arcane Wrath:26"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 36144,
-			["h"] = {
-				[1540] = 36144,
-			},
-		},
-		["17058"] = {
-			["a"] = {
-				[1531] = 84,
-			},
-			["l"] = {
-				[1531] = 248,
-			},
-			["h"] = {
-				[1531] = 249,
-			},
-			["m"] = 248,
-		},
-		["gn:15310:Feral Gloves of the Eagle:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 12999,
-			},
-			["m"] = 12999,
-		},
-		["gn:14225:Geomancer's Wraps of Frozen Wrath:41"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 26000,
-			["h"] = {
-				[1540] = 26000,
-			},
-		},
-		["gn:6269:Pioneer Trousers of the Eagle:12"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2000,
-			},
-			["m"] = 2000,
-		},
-		["7111"] = {
-			["a"] = {
-				[1538] = 3,
-				[1540] = 12,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 17379,
-				[1540] = 10000,
-			},
-			["m"] = 10000,
-		},
-		["g:14207:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12303,
-			["h"] = {
-				[1539] = 12303,
-			},
-		},
-		["gn:14113:Aboriginal Sash of Healing:15"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2000,
-			["h"] = {
-				[1539] = 2000,
-			},
-		},
-		["g:7555:45"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["17222"] = {
-			["a"] = {
-				[1539] = 50,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1853,
-			},
-			["m"] = 1853,
-		},
-		["g:4244:20"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9988,
-			},
-			["m"] = 9988,
-		},
-		["gn:3185:Acrobatic Staff of Intellect:34"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 10930,
-			["h"] = {
-				[1540] = 10930,
-			},
-		},
-		["g:7436:35"] = {
-			["a"] = {
-				[1538] = 14,
-			},
-			["l"] = {
-				[1538] = 5729,
-			},
-			["m"] = 5729,
-			["h"] = {
-				[1538] = 5731,
-			},
-		},
-		["g:7058:37"] = {
-			["a"] = {
-				[1538] = 8,
-				[1540] = 41,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 2599,
-				[1540] = 2244,
-			},
-			["m"] = 2244,
-		},
-		["gn:15241:Battle Knife of the Monkey:26"] = {
-			["a"] = {
-				[1540] = 10,
-			},
-			["l"] = {
-			},
-			["m"] = 13795,
-			["h"] = {
-				[1540] = 13795,
-			},
-		},
-		["g:15303:14"] = {
-			["a"] = {
-				[1539] = 19,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2044,
-			},
-			["m"] = 2044,
-		},
-		["9927"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 48797,
-			["h"] = {
-				[1539] = 48797,
-			},
-		},
-		["gn:15242:Honed Stiletto of the Bear:30"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 9997,
-			["h"] = {
-				[1540] = 9997,
-			},
-		},
-		["g:14125:21"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2613,
-			["h"] = {
-				[1539] = 2613,
-			},
-		},
-		["g:9847:33"] = {
-			["a"] = {
-				[1538] = 27,
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 3347,
-			["h"] = {
-				[1538] = 4053,
-				[1539] = 3347,
-			},
-		},
-		["gn:9860:Archer's Cloak of Spirit:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9783,
-			["h"] = {
-				[1538] = 9783,
-			},
-		},
-		["gn:2632:Curved Dagger of Nature's Wrath:14"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3392,
-			},
-			["m"] = 3392,
-		},
-		["gn:7478:Ranger Leggings of Healing:43"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 40000,
-			["h"] = {
-				[1539] = 40000,
-			},
-		},
-		["4038"] = {
-			["a"] = {
-				[1538] = 4,
-				[1540] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5889,
-				[1540] = 5719,
-			},
-			["m"] = 5719,
-		},
-		["gn:3184:Hook Dagger of Strength:20"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 14996,
-			},
-			["m"] = 14996,
-		},
-		["gn:4575:Medicine Staff of Healing:19"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9544,
-			["h"] = {
-				[1539] = 9544,
-			},
-		},
-		["6615"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 12498,
-			["h"] = {
-				[1539] = 12498,
-			},
-		},
-		["gn:4035:Silver-thread Robe:31"] = {
-			["a"] = {
-				[1538] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4828,
-			},
-			["m"] = 4828,
-		},
-		["g:4575:19"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9544,
-			["h"] = {
-				[1539] = 9544,
-			},
-		},
-		["g:9826:34"] = {
-			["a"] = {
-				[1538] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3998,
-			},
-			["m"] = 3998,
-		},
-		["g:9772:27"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9998,
-			["h"] = {
-				[1539] = 9998,
-			},
-		},
-		["gn:3288:Tribal Vest:13"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7994,
-			},
-			["m"] = 7994,
-		},
-		["gn:3569:Vicar's Robe:26"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 6293,
-			},
-			["m"] = 6293,
-		},
-		["g:1788:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1050,
-			},
-			["m"] = 1050,
-		},
-		["g:14242:43"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 59993,
-			["h"] = {
-				[1539] = 59993,
-			},
-		},
-		["gn:7353:Elder's Padded Armor of Spirit:35"] = {
-			["a"] = {
-				[1538] = 2,
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9990,
-				[1540] = 9985,
-			},
-			["m"] = 9985,
-		},
-		["2251"] = {
-			["a"] = {
-				[1539] = 60,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 73,
-			},
-			["m"] = 73,
-		},
-		["10581"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 194559,
-			["h"] = {
-				[1540] = 194559,
-			},
-		},
-		["g:1793:20"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6596,
-			},
-			["m"] = 6596,
-		},
-		["g:790:23"] = {
-			["a"] = {
-				[1538] = 2,
-				[1539] = 1,
-			},
-			["l"] = {
-				[1538] = 5086,
-				[1539] = 5099,
-			},
-			["h"] = {
-				[1538] = 8187,
-				[1539] = 8900,
-			},
-			["m"] = 5099,
-		},
-		["gn:9877:Sorcerer Cloak of Shadow Wrath:38"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 22500,
-			["h"] = {
-				[1538] = 22500,
-			},
-		},
-		["gn:15303:Grizzly Pants of the Owl:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2585,
-			},
-			["m"] = 2585,
-		},
-		["4498"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 1891,
-			["h"] = {
-				[1539] = 1891,
-			},
-		},
-		["gn:15018:Lupine Vest of the Wolf:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 14597,
-			},
-			["m"] = 14597,
-		},
-		["g:15613:42"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 55598,
-			["h"] = {
-				[1539] = 55598,
-			},
-		},
-		["g:2819:28"] = {
-			["a"] = {
-				[1539] = 3,
-				[1540] = 17,
-			},
-			["l"] = {
-			},
-			["m"] = 7594,
-			["h"] = {
-				[1539] = 7499,
-				[1540] = 7594,
-			},
-		},
-		["gn:9890:Huntsman's Cape of Agility:38"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 29997,
-			["h"] = {
-				[1538] = 29997,
-			},
-		},
-		["g:6570:22"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11000,
-			},
-			["m"] = 11000,
-		},
-		["1793"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6596,
-			},
-			["m"] = 6596,
-		},
-		["g:15147:33"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 19998,
-			["h"] = {
-				[1538] = 19998,
-			},
-		},
-		["7369"] = {
-			["a"] = {
-				[1538] = 11,
-				[1540] = 22,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3388,
-				[1540] = 6589,
-			},
-			["m"] = 6589,
-		},
-		["14125"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2613,
-			["h"] = {
-				[1539] = 2613,
-			},
-		},
-		["gn:2077:Magician Staff of Arcane Wrath:29"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 19999,
-			["h"] = {
-				[1540] = 19999,
-			},
-		},
-		["g:7440:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 54880,
-			["h"] = {
-				[1539] = 54880,
-			},
-		},
-		["7460"] = {
-			["a"] = {
-				[1538] = 11,
-			},
-			["l"] = {
-			},
-			["m"] = 4370,
-			["h"] = {
-				[1538] = 4370,
-			},
-		},
-		["gn:4789:Stable Boots:18"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7694,
-			},
-			["m"] = 7694,
-		},
-		["15014"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4998,
-			["h"] = {
-				[1539] = 4998,
-			},
-		},
-		["14407"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9983,
-			["h"] = {
-				[1540] = 9983,
-			},
-		},
-		["g:4237:10"] = {
-			["a"] = {
-				[1539] = 166,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2069,
-			},
-			["m"] = 2069,
-		},
-		["gn:12251:Big Stick:37"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 82540,
-			["h"] = {
-				[1540] = 82540,
-			},
-		},
-		["gn:2632:Curved Dagger of Stamina:14"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6698,
-			},
-			["m"] = 6698,
-		},
-		["14228"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 30000,
-			["h"] = {
-				[1539] = 30000,
-			},
-		},
-		["gn:9756:Gypsy Trousers of the Eagle:14"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6994,
-			},
-			["m"] = 6994,
-		},
-		["15145"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 13442,
-			["h"] = {
-				[1539] = 13442,
-			},
-		},
-		["3185"] = {
-			["a"] = {
-				[1539] = 1,
-				[1540] = 47,
-			},
-			["l"] = {
-			},
-			["m"] = 8763,
-			["h"] = {
-				[1539] = 9973,
-				[1540] = 8763,
-			},
-		},
-		["9865"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 22496,
-			["h"] = {
-				[1539] = 22496,
-			},
-		},
-		["9747"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4695,
-			["h"] = {
-				[1539] = 4695,
-			},
-		},
-		["15225"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 48091,
-			["h"] = {
-				[1539] = 48091,
-			},
-		},
-		["gn:9860:Archer's Cloak of Intellect:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 13499,
-			["h"] = {
-				[1538] = 13499,
-			},
-		},
-		["g:9795:26"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8203,
-			["h"] = {
-				[1539] = 8203,
-			},
-		},
-		["g:3783:36"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 6054,
-			["h"] = {
-				[1540] = 6054,
-			},
-		},
-		["gn:9898:Jazeraint Cloak of the Bear:38"] = {
-			["a"] = {
-				[1538] = 7,
-			},
-			["l"] = {
-			},
-			["m"] = 4999,
-			["h"] = {
-				[1538] = 4999,
-			},
-		},
-		["gn:2911:Keller's Girdle:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 299997,
-		},
-		["gn:9877:Sorcerer Cloak of the Owl:38"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-				[1538] = 5597,
-			},
-			["m"] = 5597,
-			["h"] = {
-				[1538] = 5598,
-			},
-		},
-		["gn:2140:Carving Knife of Shadow Wrath:11"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19998,
-			},
-			["m"] = 19998,
-		},
-		["gn:6609:Sage's Cloth of Frozen Wrath:32"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 6665,
-			},
-			["m"] = 6665,
-		},
-		["g:9853:34"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 13096,
-			["h"] = {
-				[1539] = 13096,
-			},
-		},
-		["15367"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["4357"] = {
-			["a"] = {
-				[1539] = 20,
-			},
-			["l"] = {
-			},
-			["m"] = 6,
-			["h"] = {
-				[1539] = 6,
-			},
-		},
-		["7357"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5986,
-			["h"] = {
-				[1539] = 5986,
-			},
-		},
-		["gn:7436:Twilight Cape of the Whale:35"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 9988,
-			["h"] = {
-				[1538] = 9988,
-			},
-		},
-		["g:15493:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6998,
-			["h"] = {
-				[1539] = 6998,
-			},
-		},
-		["gn:15310:Feral Gloves of the Whale:18"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 12996,
-			},
-			["m"] = 12996,
-		},
-		["7469"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 59999,
-			["h"] = {
-				[1539] = 59999,
-			},
-		},
-		["gn:9791:Ivycloth Tunic of Intellect:29"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 11965,
-			},
-			["m"] = 11965,
-		},
-		["15223"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9916,
-			["h"] = {
-				[1539] = 9916,
-			},
-		},
-		["g:12998:25"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 109085,
-			["h"] = {
-			},
-		},
-		["15613"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 55598,
-			["h"] = {
-				[1539] = 55598,
-			},
-		},
-		["15971"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9898,
-			["h"] = {
-				[1539] = 9898,
-			},
-		},
-		["4324"] = {
-			["a"] = {
-				[1538] = 15,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 2899,
-			},
-			["m"] = 2899,
-		},
-		["7474"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12192,
-			["h"] = {
-				[1539] = 12192,
-			},
-		},
-		["g:14413:39"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 11596,
-			["h"] = {
-				[1540] = 11596,
-			},
-		},
-		["g:9751:12"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5000,
-			},
-			["m"] = 5000,
-		},
-		["7478"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 40000,
-			["h"] = {
-				[1539] = 40000,
-			},
-		},
-		["gn:15243:Deadly Kris of Strength:36"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 19898,
-			["h"] = {
-				[1540] = 19898,
-			},
-		},
-		["g:3850:35"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 44997,
-			["h"] = {
-				[1540] = 44997,
-			},
-		},
-		["2549"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 89999,
-			["h"] = {
-				[1540] = 89999,
-			},
-		},
-		["g:7544:44"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 79892,
-			["h"] = {
-				[1539] = 79892,
-			},
-		},
-		["gn:14185:Watcher's Cinch of Healing:27"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2997,
-			["h"] = {
-				[1539] = 2997,
-			},
-		},
-		["9798"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8897,
-			},
-			["m"] = 8897,
-		},
-		["gn:2317:Dark Leather Tunic:20"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9496,
-			},
-			["m"] = 9496,
-		},
-		["g:4566:13"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8999,
-			["h"] = {
-				[1539] = 8999,
-			},
-		},
-		["gn:15213:Mercenary Blade of Power:36"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 59000,
-			["h"] = {
-				[1540] = 59000,
-			},
-		},
-		["gn:14215:Vital Tunic of the Eagle:37"] = {
-			["a"] = {
-				[1538] = 1,
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 29900,
-				[1540] = 29900,
-			},
-			["m"] = 29900,
-		},
-		["g:15537:28"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9999,
-			["h"] = {
-				[1539] = 9999,
-			},
-		},
-		["14413"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 11596,
-			["h"] = {
-				[1540] = 11596,
-			},
-		},
-		["gn:14124:Ritual Gloves of Fiery Wrath:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 20094,
-			["h"] = {
-			},
-		},
-		["gn:14131:Ritual Belt of the Owl:19"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 6998,
-		},
-		["4698"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 8081,
-			["h"] = {
-			},
-		},
-		["gn:2072:Dwarven Magestaff of the Monkey:27"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 6999,
-			["h"] = {
-				[1540] = 6999,
-			},
-		},
-		["g:1777:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 497,
-			["h"] = {
-			},
-		},
-		["2519"] = {
-			["a"] = {
-				[1539] = 600,
-			},
-			["l"] = {
-			},
-			["m"] = 2,
-			["h"] = {
-				[1539] = 2,
-			},
-		},
-		["g:6417:37"] = {
-			["a"] = {
-				[1538] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 6679,
-			["h"] = {
-				[1538] = 6679,
-			},
-		},
-		["gn:9898:Jazeraint Cloak of the Monkey:38"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 14973,
-			["h"] = {
-				[1538] = 14973,
-			},
-		},
-		["gn:9847:Conjurer's Cloak of Intellect:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5986,
-			["h"] = {
-				[1538] = 5986,
-			},
-		},
-		["g:15527:27"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2011,
-			["h"] = {
-				[1539] = 2011,
-			},
-		},
-		["gn:7438:Twilight Belt of Healing:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6897,
-			["h"] = {
-				[1539] = 6897,
-			},
-		},
-		["gn:15300:Grizzly Gloves:14"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 583,
-			},
-			["m"] = 583,
-		},
-		["6558"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5000,
-			["h"] = {
-				[1539] = 5000,
-			},
-		},
-		["g:15243:36"] = {
-			["a"] = {
-				[1539] = 1,
-				[1540] = 46,
-			},
-			["l"] = {
-			},
-			["m"] = 19436,
-			["h"] = {
-				[1539] = 19996,
-				[1540] = 19436,
-			},
-		},
-		["gn:7353:Elder's Padded Armor of Shadow Wrath:35"] = {
-			["a"] = {
-				[1538] = 2,
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 31999,
-				[1540] = 12991,
-			},
-			["m"] = 12991,
-		},
-		["gn:7110:Silver-thread Armor:31"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5999,
-			},
-			["m"] = 5999,
-		},
-		["g:14179:24"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 72239,
-			["h"] = {
-				[1539] = 72239,
-			},
-		},
-		["10088"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 16693,
-			["h"] = {
-				[1539] = 16693,
-			},
-		},
-		["9756"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2994,
-			},
-			["m"] = 2994,
-		},
-		["14204"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1540] = 10000,
-			},
-		},
-		["g:15012:16"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3998,
-			},
-			["m"] = 3998,
-		},
-		["g:6609:32"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4391,
-			},
-			["m"] = 4391,
-		},
-		["gn:3184:Hook Dagger of Arcane Wrath:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 16728,
-			},
-			["m"] = 16728,
-		},
-		["gn:2092:Worn Dagger:2"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5997,
-			},
-			["m"] = 5997,
-		},
-		["gn:9821:Durable Bracers of Healing:30"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29901,
-			["h"] = {
-				[1539] = 29901,
-			},
-		},
-		["g:2236:25"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 59997,
-			["h"] = {
-				[1540] = 59997,
-			},
-		},
-		["gn:15222:Barbed Club of Healing:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7585,
-			["h"] = {
-				[1539] = 7585,
-			},
-		},
-		["gn:15016:Lupine Handwraps of the Whale:16"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7744,
-			},
-			["m"] = 7744,
-		},
-		["gn:9851:Conjurer's Breeches of Healing:37"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8876,
-			["h"] = {
-				[1539] = 8876,
-			},
-		},
-		["gn:7448:Sentinel Girdle of the Owl:36"] = {
-			["a"] = {
-				[1541] = 2,
-			},
-			["l"] = {
-				[1541] = 4492,
-			},
-			["m"] = 4492,
-			["h"] = {
-				[1541] = 6493,
-			},
-		},
-		["g:15310:18"] = {
-			["a"] = {
-				[1539] = 12,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2800,
-			},
-			["m"] = 2800,
-		},
-		["gn:7436:Twilight Cape of Intellect:35"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9898,
-			["h"] = {
-				[1538] = 9898,
-			},
-		},
-		["g:2300:12"] = {
-			["a"] = {
-				[1539] = 108,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3042,
-			},
-			["m"] = 3042,
-		},
-		["g:4565:6"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9951,
-			},
-			["m"] = 9951,
-		},
-		["gn:15011:Lupine Cord of the Whale:15"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5070,
-			},
-			["m"] = 5070,
-		},
-		["gn:7429:Twilight Armor of Spirit:40"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 18701,
-			["h"] = {
-				[1540] = 18701,
-			},
-		},
-		["g:9766:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 4298,
-		},
-		["4480"] = {
-			["a"] = {
-				[1541] = 68,
-			},
-			["l"] = {
-				[1541] = 3063,
-			},
-			["m"] = 3063,
-			["h"] = {
-				[1541] = 3064,
-			},
-		},
-		["gn:9826:Durable Robe of Shadow Wrath:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 12392,
-			},
-			["m"] = 12392,
-		},
-		["2996"] = {
-			["a"] = {
-				[1530] = 215,
-				[1533] = 259,
-			},
-			["l"] = {
-			},
-			["m"] = 124,
-			["h"] = {
-				[1530] = 127,
-				[1533] = 124,
-			},
-		},
-		["6269"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2000,
-			},
-			["m"] = 2000,
-		},
-		["14405"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9996,
-			},
-			["m"] = 9996,
-		},
-		["g:14090:11"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 2319,
-			["h"] = {
-				[1539] = 2319,
-			},
-		},
-		["g:14114:16"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2200,
-		},
-		["gn:3185:Acrobatic Staff of Healing:34"] = {
-			["a"] = {
-				[1539] = 1,
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8763,
-			["h"] = {
-				[1539] = 9973,
-				[1540] = 8763,
-			},
-		},
-		["gn:9756:Gypsy Trousers of the Whale:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2994,
-			},
-			["m"] = 2994,
-		},
-		["gn:4565:Simple Dagger:6"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9951,
-			},
-			["m"] = 9951,
-		},
-		["6406"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3556,
-		},
-		["gn:9860:Archer's Cloak of the Falcon:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 18562,
-			["h"] = {
-				[1538] = 18562,
-			},
-		},
-		["15147"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 19998,
-			["h"] = {
-				[1538] = 19998,
-			},
-		},
-		["gn:3305:Brackwater Leggings:16"] = {
-			["a"] = {
-				[1530] = 12,
-				[1531] = 18,
-				[1533] = 11,
-				[1534] = 17,
-			},
-			["l"] = {
-				[1530] = 894,
-				[1531] = 2096,
-				[1533] = 1858,
-			},
-			["m"] = 900,
-			["h"] = {
-				[1530] = 895,
-				[1531] = 3097,
-				[1533] = 1859,
-				[1534] = 900,
-			},
-		},
-		["gn:14420:Silksand Cape:38"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5490,
-			["h"] = {
-				[1538] = 5490,
-			},
-		},
-		["6609"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4391,
-			},
-			["m"] = 4391,
-		},
-		["gn:17922:Lionfur Armor:10"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1497,
-			},
-			["m"] = 1497,
-		},
-		["2987"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7499,
-			},
-			["m"] = 7499,
-		},
-		["9840"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 3500,
-			["h"] = {
-				[1539] = 3500,
-			},
-		},
-		["14119"] = {
-			["a"] = {
-				[1539] = 2,
-				[1540] = 3,
-				[1541] = 2,
-				[1530] = 1,
-			},
-			["l"] = {
-				[1539] = 2796,
-				[1540] = 2792,
-				[1541] = 2898,
-				[1530] = 2008,
-			},
-			["m"] = 2898,
-			["h"] = {
-				[1539] = 2797,
-				[1540] = 2793,
-				[1541] = 4899,
-				[1530] = 3309,
-			},
-		},
-		["gn:3786:Shiny Dirk:39"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 8094,
-			["h"] = {
-				[1540] = 8094,
-			},
-		},
-		["15008"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5000,
-			},
-			["m"] = 5000,
-		},
-		["2800"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 109999,
-			},
-			["m"] = 109999,
-		},
-		["7609"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 50520,
-			["h"] = {
-				[1539] = 50520,
-			},
-		},
-		["15568"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4996,
-			["h"] = {
-				[1538] = 4996,
-			},
-		},
-		["14110"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 99,
-		},
-		["g:2312:15"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4598,
-			},
-			["m"] = 4598,
-		},
-		["2980"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 2099,
-			["h"] = {
-			},
-		},
-		["g:10288:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29900,
-			["h"] = {
-				[1539] = 29900,
-			},
-		},
-		["gn:9392:Annealed Blade:40"] = {
-			["a"] = {
-				[1540] = 9,
-			},
-			["l"] = {
-			},
-			["m"] = 59483,
-			["h"] = {
-				[1540] = 59483,
-			},
-		},
-		["9826"] = {
-			["a"] = {
-				[1538] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3998,
-			},
-			["m"] = 3998,
-		},
-		["gn:4312:Soft-soled Linen Boots:16"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3554,
-		},
-		["gn:15975:Raincaller Scepter of Healing:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 100000,
-			["h"] = {
-				[1539] = 100000,
-			},
-		},
-		["gn:6540:Willow Pants of Healing:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 16358,
-			["h"] = {
-				[1539] = 16358,
-			},
-		},
-		["gn:14208:Vital Headband of Healing:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9264,
-			["h"] = {
-				[1539] = 9264,
-			},
-		},
-		["gn:10288:Sage's Circlet of Healing:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29900,
-			["h"] = {
-				[1539] = 29900,
-			},
-		},
-		["14131"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3281,
-			},
-			["m"] = 3281,
-		},
-		["g:6562:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2904,
-		},
-		["gn:10404:Durable Belt of Healing:30"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 3083,
-			["h"] = {
-				[1539] = 3083,
-			},
-		},
-		["gn:3850:Jade Serpentblade:35"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 44997,
-			["h"] = {
-				[1540] = 44997,
-			},
-		},
-		["9767"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2094,
-		},
-		["4306"] = {
-			["a"] = {
-				[1539] = 410,
-			},
-			["l"] = {
-				[1539] = 206,
-			},
-			["h"] = {
-				[1539] = 207,
-			},
-			["m"] = 206,
-		},
-		["gn:3184:Hook Dagger of Power:20"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8148,
-			},
-			["m"] = 8148,
-		},
-		["gn:14192:Raincaller Robes of Spirit:31"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9995,
-			},
-			["m"] = 9995,
-		},
-		["2841"] = {
-			["a"] = {
-				[1530] = 207,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1530] = 736,
-			},
-			["m"] = 736,
-		},
-		["gn:9825:Durable Pants of Healing:33"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 5282,
-			["h"] = {
-				[1539] = 5282,
-			},
-		},
-		["15537"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9999,
-			["h"] = {
-				[1539] = 9999,
-			},
-		},
-		["3314"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8495,
-			},
-			["m"] = 8495,
-		},
-		["g:5965:37"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 59898,
-			["h"] = {
-				[1538] = 59898,
-			},
-		},
-		["gn:15214:Nobles Brand of the Bear:40"] = {
-			["a"] = {
-				[1540] = 8,
-			},
-			["l"] = {
-			},
-			["m"] = 19986,
-			["h"] = {
-				[1540] = 19986,
-			},
-		},
-		["3287"] = {
-			["a"] = {
-				[1539] = 13,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3398,
-			},
-			["m"] = 3398,
-		},
-		["gn:4786:Wise Man's Belt:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 18999,
-		},
-		["15303"] = {
-			["a"] = {
-				[1539] = 19,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2044,
-			},
-			["m"] = 2044,
-		},
-		["g:15304:16"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7494,
-			},
-			["m"] = 7494,
-		},
-		["g:14119:17"] = {
-			["a"] = {
-				[1539] = 2,
-				[1540] = 3,
-				[1541] = 2,
-				[1530] = 1,
-			},
-			["l"] = {
-				[1539] = 2796,
-				[1540] = 2792,
-				[1541] = 2898,
-				[1530] = 2008,
-			},
-			["m"] = 2898,
-			["h"] = {
-				[1539] = 2797,
-				[1540] = 2793,
-				[1541] = 4899,
-				[1530] = 3309,
-			},
-		},
-		["gn:9900:Jazeraint Gauntlets of Healing:40"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 29931,
-			["h"] = {
-				[1539] = 29931,
-			},
-		},
-		["gn:6268:Pioneer Tunic of Agility:13"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 2000,
-			["h"] = {
-			},
-		},
-		["gn:9898:Jazeraint Cloak of Stamina:38"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6999,
-			["h"] = {
-				[1538] = 6999,
-			},
-		},
-		["6553"] = {
-			["a"] = {
-				[1539] = 10,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4997,
-			},
-			["m"] = 4997,
-		},
-		["9900"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 29931,
-			["h"] = {
-				[1539] = 29931,
-			},
-		},
-		["4246"] = {
-			["a"] = {
-				[1539] = 29,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2186,
-			},
-			["m"] = 2186,
-		},
-		["gn:15243:Deadly Kris of the Bear:36"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 19436,
-			["h"] = {
-				[1540] = 19436,
-			},
-		},
-		["gn:5781:Murloc Scale Breastplate:19"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 29992,
-			},
-			["m"] = 29992,
-		},
-		["gn:6553:Bard's Trousers of Healing:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["g:7370:31"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 8996,
-			["h"] = {
-				[1539] = 8996,
-			},
-		},
-		["929"] = {
-			["a"] = {
-				[1539] = 194,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 407,
-			},
-			["m"] = 407,
-		},
-		["g:9767:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2094,
-		},
-		["gn:9890:Huntsman's Cape of Nature's Wrath:38"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 16018,
-			["h"] = {
-				[1538] = 16018,
-			},
-		},
-		["9860"] = {
-			["a"] = {
-				[1538] = 15,
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 99999,
-			["h"] = {
-				[1538] = 5495,
-				[1539] = 99999,
-			},
-		},
-		["14253"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 59996,
-			["h"] = {
-				[1539] = 59996,
-			},
-		},
-		["g:9845:35"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3548,
-		},
-		["g:9780:20"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6462,
-			},
-			["m"] = 6462,
-		},
-		["14185"] = {
-			["a"] = {
-				[1530] = 6,
-				[1531] = 8,
-				[1539] = 1,
-				[1533] = 2,
-			},
-			["l"] = {
-				[1530] = 5099,
-				[1531] = 3298,
-				[1533] = 2290,
-			},
-			["h"] = {
-				[1530] = 8300,
-				[1531] = 8299,
-				[1539] = 2997,
-				[1533] = 3291,
-			},
-			["m"] = 2997,
-		},
-		["gn:6552:Bard's Tunic of the Wolf:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 17625,
-			},
-			["m"] = 17625,
-		},
-		["gn:9860:Archer's Cloak of Stamina:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12989,
-			["h"] = {
-				[1538] = 12989,
-			},
-		},
-		["g:6615:29"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 12498,
-			["h"] = {
-				[1539] = 12498,
-			},
-		},
-		["3184"] = {
-			["a"] = {
-				[1539] = 19,
-			},
-			["l"] = {
-				[1539] = 8148,
-			},
-			["m"] = 8148,
-			["h"] = {
-				[1539] = 9996,
-			},
-		},
-		["9773"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9000,
-			},
-			["m"] = 9000,
-		},
-		["gn:14405:Resilient Robe:33"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9996,
-			},
-			["m"] = 9996,
-		},
-		["gn:15305:Feral Shoes of the Wolf:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19894,
-			},
-			["m"] = 19894,
-		},
-		["gn:14119:Aboriginal Loincloth of the Falcon:17"] = {
-			["a"] = {
-				[1530] = 1,
-			},
-			["l"] = {
-				[1530] = 2008,
-			},
-			["m"] = 2008,
-			["h"] = {
-				[1530] = 3309,
-			},
-		},
-		["2842"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 158,
-			["h"] = {
-			},
-		},
-		["gn:14184:Watcher's Robes of the Owl:30"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4999,
-			},
-			["m"] = 4999,
-		},
-		["1206"] = {
-			["a"] = {
-				[1531] = 58,
-			},
-			["l"] = {
-				[1531] = 1396,
-			},
-			["h"] = {
-				[1531] = 1397,
-			},
-			["m"] = 1396,
-		},
-		["g:15300:14"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 583,
-			},
-			["m"] = 583,
-		},
-		["g:6415:41"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 5462,
-			["h"] = {
-				[1540] = 5462,
-			},
-		},
-		["gn:866:Monk's Staff of Healing:42"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 19959,
-			["h"] = {
-				[1539] = 19959,
-			},
-		},
-		["15124"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 50000,
-			["h"] = {
-				[1539] = 50000,
-			},
-		},
-		["12251"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 82540,
-			["h"] = {
-				[1540] = 82540,
-			},
-		},
-		["4461"] = {
-			["a"] = {
-				[1539] = 208,
-				[1541] = 229,
-			},
-			["l"] = {
-				[1539] = 225,
-			},
-			["h"] = {
-				[1539] = 226,
-				[1541] = 226,
-			},
-			["m"] = 226,
-		},
-		["gn:14217:Geomancer's Cord of Healing:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1539] = 10000,
-			},
-		},
-		["15110"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10087,
-			},
-			["m"] = 10087,
-		},
-		["10402"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 31431,
-			},
-			["m"] = 31431,
-		},
-		["g:1772:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 997,
-		},
-		["15310"] = {
-			["a"] = {
-				[1539] = 12,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2800,
-			},
-			["m"] = 2800,
-		},
-		["7053"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 24449,
-			["h"] = {
-				[1538] = 24449,
-			},
-		},
-		["gn:9847:Conjurer's Cloak of Fiery Wrath:33"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 59992,
-			["h"] = {
-				[1538] = 59992,
-			},
-		},
-		["14167"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7627,
-			["h"] = {
-				[1539] = 7627,
-			},
-		},
-		["g:12251:37"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 82540,
-			["h"] = {
-				[1540] = 82540,
-			},
-		},
-		["9882"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 79983,
-			["h"] = {
-				[1539] = 79983,
-			},
-		},
-		["gn:7436:Twilight Cape of Healing:35"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9191,
-			["h"] = {
-				[1538] = 9191,
-			},
-		},
-		["14216"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1540] = 10000,
-			},
-		},
-		["gn:14245:Darkmist Girdle of Healing:41"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 35000,
-			["h"] = {
-				[1539] = 35000,
-			},
-		},
-		["g:4314:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 478,
-			["h"] = {
-			},
-		},
-		["g:2315:20"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3594,
-			},
-			["m"] = 3594,
-		},
-		["2455"] = {
-			["a"] = {
-				[1530] = 69,
-				[1540] = 198,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1530] = 12,
-				[1540] = 3,
-			},
-			["m"] = 3,
-		},
-		["gn:15312:Feral Leggings of Spirit:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8400,
-			},
-			["m"] = 8400,
-		},
-		["gn:7369:Elder's Robe of Stamina:35"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 19969,
-			},
-			["m"] = 19969,
-		},
-		["gn:2988:Inscribed Leather Gloves:19"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5492,
-			},
-			["m"] = 5492,
-		},
-		["gn:1777:Brocade Shoulderpads:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 497,
-			["h"] = {
-			},
-		},
-		["9862"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 49998,
-			["h"] = {
-				[1539] = 49998,
-			},
-		},
-		["gn:9424:Ginn-su Sword:41"] = {
-			["a"] = {
-				[1540] = 9,
-			},
-			["l"] = {
-			},
-			["m"] = 327083,
-			["h"] = {
-				[1540] = 327083,
-			},
-		},
-		["gn:3413:Doomspike:25"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 129895,
-			["h"] = {
-				[1540] = 129895,
-			},
-		},
-		["g:14159:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2498,
-		},
-		["gn:7432:Twilight Cowl of Healing:38"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9993,
-			["h"] = {
-				[1539] = 9993,
-			},
-		},
-		["2840"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 417,
-			["h"] = {
-			},
-		},
-		["g:15508:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 3099,
-			["h"] = {
-				[1539] = 3099,
-			},
-		},
-		["gn:15308:Feral Cord of the Boar:17"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7979,
-			},
-			["m"] = 7979,
-		},
-		["15520"] = {
-			["a"] = {
-				[1539] = 6,
-				[1540] = 3,
-				[1538] = 5,
-				[1541] = 3,
-			},
-			["l"] = {
-				[1539] = 2903,
-				[1540] = 2399,
-				[1538] = 2912,
-				[1541] = 2109,
-			},
-			["h"] = {
-				[1539] = 2904,
-				[1540] = 2900,
-				[1538] = 3248,
-				[1541] = 2110,
-			},
-			["m"] = 2109,
-		},
-		["5762"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2194,
-			["h"] = {
-				[1539] = 2194,
-			},
-		},
-		["gn:14216:Geomancer's Jerkin of the Owl:41"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1540] = 10000,
-			},
-		},
-		["gn:7411:Infiltrator Cloak of Healing:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 13098,
-			["h"] = {
-				[1539] = 13098,
-			},
-		},
-		["4314"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 478,
-			["h"] = {
-			},
-		},
-		["gn:9877:Sorcerer Cloak of Healing:38"] = {
-			["a"] = {
-				[1538] = 2,
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7483,
-			["h"] = {
-				[1538] = 7491,
-				[1539] = 7483,
-			},
-		},
-		["gn:15153:Nocturnal Cloak of Agility:37"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1538] = 10000,
-			},
-		},
-		["2961"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1996,
-			},
-			["m"] = 1996,
-		},
-		["gn:9852:Conjurer's Robe of the Eagle:38"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 29893,
-			["h"] = {
-				[1540] = 29893,
-			},
-		},
-		["g:7423:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 34596,
-			["h"] = {
-				[1539] = 34596,
-			},
-		},
-		["7353"] = {
-			["a"] = {
-				[1538] = 7,
-				[1540] = 20,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8000,
-				[1540] = 6994,
-			},
-			["m"] = 6994,
-		},
-		["gn:15493:Bloodspattered Loincloth of Healing:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6998,
-			["h"] = {
-				[1539] = 6998,
-			},
-		},
-		["gn:15310:Feral Gloves of the Monkey:18"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19698,
-			},
-			["m"] = 19698,
-		},
-		["g:2317:20"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9496,
-			},
-			["m"] = 9496,
-		},
-		["gn:14157:Pagan Mantle:24"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 2093,
-			["h"] = {
-			},
-		},
-		["2912"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 169992,
-			["h"] = {
-				[1540] = 169992,
-			},
-		},
-		["gn:15559:Pillager's Cloak of Healing:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 59999,
-			["h"] = {
-				[1539] = 59999,
-			},
-		},
-		["6562"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2904,
-		},
-		["gn:4243:Fine Leather Tunic:17"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5699,
-			},
-			["m"] = 5699,
-		},
-		["g:9879:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9954,
-			["h"] = {
-				[1539] = 9954,
-			},
-		},
-		["gn:14205:Thistlefur Belt of Healing:32"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 49998,
-			["h"] = {
-				[1539] = 49998,
-			},
-		},
-		["gn:6562:Shimmering Boots of Frozen Wrath:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 20000,
-		},
-		["gn:14168:Buccaneer's Gloves of Healing:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 16091,
-			["h"] = {
-			},
-		},
-		["g:3305:16"] = {
-			["a"] = {
-				[1530] = 12,
-				[1531] = 18,
-				[1533] = 11,
-				[1534] = 17,
-			},
-			["l"] = {
-				[1530] = 894,
-				[1531] = 2096,
-				[1533] = 1858,
-			},
-			["m"] = 900,
-			["h"] = {
-				[1530] = 895,
-				[1531] = 3097,
-				[1533] = 1859,
-				[1534] = 900,
-			},
-		},
-		["gn:14123:Ritual Cape of Shadow Wrath:17"] = {
-			["a"] = {
-				[1530] = 1,
-			},
-			["l"] = {
-				[1530] = 4297,
-			},
-			["m"] = 3097,
-			["h"] = {
-				[1530] = 4298,
-				[1531] = 3097,
-			},
-		},
-		["7440"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 54880,
-			["h"] = {
-				[1539] = 54880,
-			},
-		},
-		["15136"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 14974,
-			["h"] = {
-				[1539] = 14974,
-			},
-		},
-		["2962"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4300,
-			},
-			["m"] = 4300,
-		},
-		["5756"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 99982,
-			["h"] = {
-				[1540] = 99982,
-			},
-		},
-		["gn:15594:Steadfast Cloak of the Gorilla:37"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7000,
-			["h"] = {
-				[1538] = 7000,
-			},
-		},
-		["gn:9751:Gypsy Sandals:12"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5000,
-			},
-			["m"] = 5000,
-		},
-		["g:14564:19"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5398,
-			},
-			["m"] = 5398,
-		},
-		["g:2632:14"] = {
-			["a"] = {
-				[1539] = 45,
-			},
-			["l"] = {
-				[1539] = 3392,
-			},
-			["m"] = 3392,
-			["h"] = {
-				[1539] = 6880,
-			},
-		},
-		["11084"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5,
-			},
-			["m"] = 5,
-		},
-		["7411"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 13098,
-			["h"] = {
-				[1539] = 13098,
-			},
-		},
-		["gn:15011:Lupine Cord of Defense:15"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9994,
-			},
-			["m"] = 9994,
-		},
-		["15222"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7585,
-			["h"] = {
-				[1539] = 7585,
-			},
-		},
-		["gn:7436:Twilight Cape of the Eagle:35"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7999,
-			["h"] = {
-				[1538] = 7999,
-			},
-		},
-		["g:9773:27"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9000,
-			},
-			["m"] = 9000,
-		},
-		["2881"] = {
-			["a"] = {
-				[1530] = 15,
-				[1531] = 18,
-				[1533] = 17,
-			},
-			["l"] = {
-				[1530] = 253,
-				[1531] = 2991,
-				[1533] = 1495,
-			},
-			["h"] = {
-				[1530] = 254,
-				[1531] = 2992,
-				[1533] = 1496,
-			},
-			["m"] = 1495,
-		},
-		["7437"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 11078,
-			["h"] = {
-				[1539] = 11078,
-			},
-		},
-		["g:15559:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 59999,
-			["h"] = {
-				[1539] = 59999,
-			},
-		},
-		["gn:15969:Beaded Orb of Healing:10"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7515,
-			["h"] = {
-				[1539] = 7515,
-			},
-		},
-		["gn:7065:Green Silk Armor:33"] = {
-			["a"] = {
-				[1538] = 11,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 17598,
-			},
-			["m"] = 17598,
-		},
-		["g:9862:37"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 49998,
-			["h"] = {
-				[1539] = 49998,
-			},
-		},
-		["gn:9898:Jazeraint Cloak of the Boar:38"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 11533,
-			["h"] = {
-				[1538] = 11533,
-			},
-		},
-		["15340"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 15063,
-			["h"] = {
-				[1539] = 15063,
-			},
-		},
-		["4360"] = {
-			["a"] = {
-				[1538] = 210,
-				[1539] = 242,
-			},
-			["l"] = {
-				[1539] = 516,
-			},
-			["h"] = {
-				[1538] = 519,
-				[1539] = 517,
-			},
-			["m"] = 516,
-		},
-		["gn:15367:Trickster's Protector of Healing:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["gn:15241:Battle Knife of Healing:26"] = {
-			["a"] = {
-				[1539] = 2,
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 25522,
-			["h"] = {
-				[1539] = 5095,
-				[1540] = 25522,
-			},
-		},
-		["g:4789:18"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7694,
-			},
-			["m"] = 7694,
-		},
-		["gn:6417:Aurora Cloak:37"] = {
-			["a"] = {
-				[1538] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 6679,
-			["h"] = {
-				[1538] = 6679,
-			},
-		},
-		["g:866:42"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 19959,
-			["h"] = {
-				[1539] = 19959,
-			},
-		},
-		["1772"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 997,
-		},
-		["g:5781:19"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 29992,
-			},
-			["m"] = 29992,
-		},
-		["gn:14190:Raincaller Vest of Intellect:31"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 39954,
-			},
-			["m"] = 39954,
-		},
-		["g:3185:34"] = {
-			["a"] = {
-				[1539] = 1,
-				[1540] = 47,
-			},
-			["l"] = {
-			},
-			["m"] = 8763,
-			["h"] = {
-				[1539] = 9973,
-				[1540] = 8763,
-			},
-		},
-		["gn:2764:Small Dagger:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3301,
-			},
-			["m"] = 3301,
-		},
-		["g:15975:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 100000,
-			["h"] = {
-				[1539] = 100000,
-			},
-		},
-		["gn:15112:Rigid Bracelets of the Eagle:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9310,
-			},
-			["m"] = 9310,
-		},
-		["gn:9877:Sorcerer Cloak of the Whale:38"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 7483,
-			["h"] = {
-				[1538] = 7483,
-			},
-		},
-		["6540"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 16358,
-			["h"] = {
-				[1539] = 16358,
-			},
-		},
-		["6552"] = {
-			["a"] = {
-				[1539] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7992,
-			},
-			["m"] = 7992,
-		},
-		["gn:15594:Steadfast Cloak of Defense:37"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10080,
-			["h"] = {
-				[1538] = 10080,
-			},
-		},
-		["14124"] = {
-			["a"] = {
-				[1530] = 6,
-			},
-			["l"] = {
-				[1530] = 3090,
-			},
-			["m"] = 3090,
-			["h"] = {
-				[1530] = 9991,
-			},
-		},
-		["gn:14163:Pagan Wraps of the Eagle:26"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 19900,
-			},
-			["m"] = 19900,
-		},
-		["gn:9771:Greenweave Gloves of the Monkey:25"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 8496,
-			["h"] = {
-			},
-		},
-		["g:15222:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7585,
-			["h"] = {
-				[1539] = 7585,
-			},
-		},
-		["gn:14131:Ritual Belt of Healing:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 3281,
-			["h"] = {
-				[1539] = 3281,
-			},
-		},
-		["3311"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5585,
-			},
-			["m"] = 5585,
-		},
-		["g:9903:42"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 22220,
-			["h"] = {
-				[1539] = 22220,
-			},
-		},
-		["gn:7460:Knight's Cloak of the Monkey:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9996,
-			["h"] = {
-				[1538] = 9996,
-			},
-		},
-		["gn:9795:Ivycloth Gloves of Healing:26"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8203,
-			["h"] = {
-				[1539] = 8203,
-			},
-		},
-		["gn:15018:Lupine Vest of the Owl:20"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["g:7065:33"] = {
-			["a"] = {
-				[1538] = 11,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 17598,
-			},
-			["m"] = 17598,
-		},
-		["15013"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4269,
-			},
-			["m"] = 4269,
-		},
-		["gn:6552:Bard's Tunic of the Monkey:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9042,
-			},
-			["m"] = 9042,
-		},
-		["1794"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2228,
-			},
-			["m"] = 2228,
-		},
-		["g:14407:39"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9983,
-			["h"] = {
-				[1540] = 9983,
-			},
-		},
-		["869"] = {
-			["a"] = {
-				[1540] = 8,
-			},
-			["l"] = {
-			},
-			["m"] = 187590,
-			["h"] = {
-				[1540] = 187590,
-			},
-		},
-		["10512"] = {
-			["a"] = {
-				[1539] = 4605,
-			},
-			["l"] = {
-				[1539] = 3,
-			},
-			["m"] = 3,
-			["h"] = {
-				[1539] = 5,
-			},
-		},
-		["9867"] = {
-			["a"] = {
-				[1538] = 14,
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 18997,
-			["h"] = {
-				[1538] = 2843,
-				[1539] = 18997,
-			},
-		},
-		["14205"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 49998,
-			["h"] = {
-				[1539] = 49998,
-			},
-		},
-		["g:14202:36"] = {
-			["a"] = {
-				[1538] = 1,
-				[1540] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 13007,
-				[1540] = 10000,
-			},
-			["m"] = 10000,
-		},
-		["gn:9772:Greenweave Leggings of Healing:27"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9998,
-			["h"] = {
-				[1539] = 9998,
-			},
-		},
-		["gn:3313:Ceremonial Leather Harness:18"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9992,
-			},
-			["m"] = 9992,
-		},
-		["gn:15312:Feral Leggings of the Owl:20"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6000,
-			},
-			["m"] = 6000,
-		},
-		["5781"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 29992,
-			},
-			["m"] = 29992,
-		},
-		["g:4324:30"] = {
-			["a"] = {
-				[1538] = 15,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 2899,
-			},
-			["m"] = 2899,
-		},
-		["gn:7436:Twilight Cape of Shadow Wrath:35"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39999,
-			["h"] = {
-				[1538] = 39999,
-			},
-		},
-		["g:6238:10"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 772,
-		},
-		["4537"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4,
-			},
-			["m"] = 4,
-		},
-		["15016"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5987,
-			},
-			["m"] = 5987,
-		},
-		["4373"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 3993,
-			["h"] = {
-			},
-		},
-		["gn:5254:Rugged Spaulders:20"] = {
-			["a"] = {
-				[1539] = 18,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4998,
-			},
-			["m"] = 4998,
-		},
-		["gn:14241:Darkmist Handguards of Healing:41"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 30125,
-			["h"] = {
-				[1539] = 30125,
-			},
-		},
-		["9908"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 29997,
-			["h"] = {
-				[1539] = 29997,
-			},
-		},
-		["gn:7368:Elder's Pants of Healing:34"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 7998,
-			["h"] = {
-				[1539] = 7998,
-			},
-		},
-		["g:2961:11"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1996,
-			},
-			["m"] = 1996,
-		},
-		["gn:9903:Jazeraint Leggings of Healing:42"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 22220,
-			["h"] = {
-				[1539] = 22220,
-			},
-		},
-		["g:15594:37"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 7000,
-			["h"] = {
-				[1538] = 7000,
-			},
-		},
-		["gn:6557:Bard's Boots of the Monkey:16"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 17999,
-			},
-			["m"] = 17999,
-		},
-		["g:6565:22"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1539] = 10000,
-			},
-		},
-		["gn:3185:Acrobatic Staff of Power:34"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1540] = 20000,
-			},
-		},
-		["gn:9780:Bandit Gloves of the Owl:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9000,
-			},
-			["m"] = 9000,
-		},
-		["14158"] = {
-			["a"] = {
-				[1538] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3998,
-			},
-			["m"] = 3998,
-		},
-		["gn:14114:Aboriginal Footwraps of the Falcon:16"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2200,
-		},
-		["g:7728:34"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 48796,
-			},
-			["m"] = 48796,
-		},
-		["gn:9853:Conjurer's Cinch of Healing:34"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 13096,
-			["h"] = {
-				[1539] = 13096,
-			},
-		},
-		["3827"] = {
-			["a"] = {
-				[1540] = 701,
-			},
-			["l"] = {
-			},
-			["m"] = 1300,
-			["h"] = {
-				[1540] = 1300,
-			},
-		},
-		["gn:15214:Nobles Brand of the Tiger:40"] = {
-			["a"] = {
-				[1540] = 15,
-			},
-			["l"] = {
-			},
-			["m"] = 20088,
-			["h"] = {
-				[1540] = 20088,
-			},
-		},
-		["5573"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 4885,
-			["h"] = {
-				[1539] = 4885,
-			},
-		},
-		["gn:9775:Bandit Cinch of the Owl:19"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10083,
-			},
-			["m"] = 10083,
-		},
-		["9909"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 99999,
-			["h"] = {
-				[1539] = 99999,
-			},
-		},
-		["gn:14192:Raincaller Robes of Arcane Wrath:31"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 19999,
-			},
-			["m"] = 19999,
-		},
-		["gn:6553:Bard's Trousers of the Owl:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7500,
-			},
-			["m"] = 7500,
-		},
-		["gn:14213:Vital Raiment of the Whale:37"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7708,
-			["h"] = {
-				[1540] = 7708,
-			},
-		},
-		["gn:6562:Shimmering Boots of the Falcon:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 7634,
-		},
-		["g:3069:27"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5600,
-			},
-			["m"] = 5600,
-		},
-		["gn:7369:Elder's Robe of the Owl:35"] = {
-			["a"] = {
-				[1538] = 2,
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 3388,
-				[1540] = 6589,
-			},
-			["m"] = 6589,
-		},
-		["gn:6568:Shimmering Trousers of Healing:24"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 11110,
-			["h"] = {
-				[1539] = 11110,
-			},
-		},
-		["5081"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 796,
-			["h"] = {
-				[1539] = 796,
-			},
-		},
-		["5780"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 29999,
-			},
-			["m"] = 29999,
-		},
-		["gn:14162:Pagan Mitts of Healing:23"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 12774,
-			["h"] = {
-				[1539] = 12774,
-			},
-		},
-		["g:9825:33"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 5282,
-			["h"] = {
-				[1539] = 5282,
-			},
-		},
-		["g:9869:35"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 15894,
-			["h"] = {
-				[1539] = 15894,
-			},
-		},
-		["9780"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6462,
-			},
-			["m"] = 6462,
-		},
-		["2447"] = {
-			["a"] = {
-				[1539] = 545,
-			},
-			["l"] = {
-				[1539] = 33,
-			},
-			["h"] = {
-				[1539] = 34,
-			},
-			["m"] = 33,
-		},
-		["gn:14211:Vital Handwraps of Healing:34"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 7194,
-			["h"] = {
-				[1539] = 7194,
-			},
-		},
-		["gn:2632:Curved Dagger of Power:14"] = {
-			["a"] = {
-				[1539] = 24,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7499,
-			},
-			["m"] = 7499,
-		},
-		["g:5766:27"] = {
-			["a"] = {
-				[1538] = 11,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 13907,
-			},
-			["m"] = 13907,
-		},
-		["14177"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1530] = 2000,
-				[1539] = 8000,
-			},
-			["m"] = 8000,
-		},
-		["7462"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 46999,
-			["h"] = {
-				[1539] = 46999,
-			},
-		},
-		["gn:15269:Massive Battle Axe of the Whale:24"] = {
-			["a"] = {
-				[1530] = 3,
-			},
-			["l"] = {
-				[1530] = 3091,
-			},
-			["h"] = {
-				[1530] = 5992,
-			},
-			["m"] = 3091,
-		},
-		["gn:15305:Feral Shoes of the Whale:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7599,
-			},
-			["m"] = 7599,
-		},
-		["g:5254:20"] = {
-			["a"] = {
-				[1539] = 18,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4998,
-			},
-			["m"] = 4998,
-		},
-		["gn:7282:Light Leather Pants:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2523,
-			},
-			["m"] = 2523,
-		},
-		["gn:2075:Priest's Mace of Healing:12"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 1994,
-			["h"] = {
-				[1539] = 1994,
-			},
-		},
-		["gn:7058:Crimson Silk Vest:37"] = {
-			["a"] = {
-				[1538] = 8,
-				[1540] = 41,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 2599,
-				[1540] = 2244,
-			},
-			["m"] = 2244,
-		},
-		["805"] = {
-			["a"] = {
-				[1530] = 23,
-				[1531] = 22,
-				[1539] = 20,
-			},
-			["l"] = {
-				[1530] = 494,
-				[1531] = 313,
-			},
-			["h"] = {
-				[1530] = 495,
-				[1531] = 414,
-				[1539] = 871,
-			},
-			["m"] = 871,
-		},
-		["gn:14164:Pagan Belt of Fiery Wrath:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 17913,
-		},
-		["g:9930:43"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 250000,
-			["h"] = {
-				[1539] = 250000,
-			},
-		},
-		["gn:14397:Resilient Mantle:32"] = {
-			["a"] = {
-				[1539] = 5,
-				[1540] = 5,
-				[1538] = 7,
-			},
-			["l"] = {
-				[1539] = 3077,
-				[1540] = 2471,
-				[1538] = 3085,
-			},
-			["h"] = {
-				[1539] = 3078,
-				[1540] = 3072,
-				[1538] = 5586,
-			},
-			["m"] = 2471,
-		},
-		["gn:15298:Grizzly Buckler of Healing:13"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4496,
-			["h"] = {
-				[1539] = 4496,
-			},
-		},
-		["14242"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 59993,
-			["h"] = {
-				[1539] = 59993,
-			},
-		},
-		["g:3205:17"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9900,
-			},
-			["m"] = 9900,
-		},
-		["15329"] = {
-			["a"] = {
-				[1530] = 1,
-			},
-			["l"] = {
-				[1530] = 3041,
-			},
-			["h"] = {
-				[1530] = 4542,
-			},
-			["m"] = 3041,
-		},
-		["gn:9771:Greenweave Gloves of Healing:25"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4386,
-			["h"] = {
-				[1539] = 4386,
-			},
-		},
-		["6290"] = {
-			["a"] = {
-				[1539] = 412,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1038,
-			},
-			["m"] = 1038,
-		},
-		["14559"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3899,
-			},
-			["m"] = 3899,
-		},
-		["4237"] = {
-			["a"] = {
-				[1539] = 166,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2069,
-			},
-			["m"] = 2069,
-		},
-		["g:15018:20"] = {
-			["a"] = {
-				[1539] = 15,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5000,
-			},
-			["m"] = 5000,
-		},
-		["5181"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 20005,
-			["h"] = {
-				[1538] = 20005,
-			},
-		},
-		["g:6610:32"] = {
-			["a"] = {
-				[1538] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4544,
-			},
-			["m"] = 4544,
-		},
-		["gn:7369:Elder's Robe of the Whale:35"] = {
-			["a"] = {
-				[1538] = 3,
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 7996,
-				[1540] = 10024,
-			},
-			["m"] = 10024,
-		},
-		["gn:6552:Bard's Tunic of the Eagle:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9042,
-			},
-			["m"] = 9042,
-		},
-		["g:4436:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 9999,
-		},
-		["4596"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 549,
-			["h"] = {
-				[1539] = 549,
-			},
-		},
-		["gn:14159:Pagan Shoes of Spirit:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3500,
-		},
-		["gn:15153:Nocturnal Cloak of Arcane Wrath:37"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39900,
-			["h"] = {
-				[1538] = 39900,
-			},
-		},
-		["gn:7474:Regal Cloak of Healing:40"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12192,
-			["h"] = {
-				[1539] = 12192,
-			},
-		},
-		["g:3187:44"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 52550,
-			["h"] = {
-				[1539] = 52550,
-			},
-		},
-		["5574"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["m"] = 1590,
-			["h"] = {
-				[1539] = 1590,
-			},
-		},
-		["gn:9860:Archer's Cloak of Defense:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 8500,
-			["h"] = {
-				[1538] = 8500,
-			},
-		},
-		["gn:6553:Bard's Trousers of the Whale:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6000,
-			},
-			["m"] = 6000,
-		},
-		["gn:14204:Thistlefur Robe of Intellect:36"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12164,
-			["h"] = {
-				[1540] = 12164,
-			},
-		},
-		["gn:9860:Archer's Cloak of the Monkey:34"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 11787,
-			["h"] = {
-				[1538] = 11787,
-			},
-		},
-		["gn:9766:Greenweave Sash of Intellect:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 12200,
-		},
-		["gn:3803:Hardened Cloak:38"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 1495,
-			["h"] = {
-				[1538] = 1495,
-			},
-		},
-		["gn:15520:Spiked Chain Gauntlets of the Bear:26"] = {
-			["a"] = {
-				[1539] = 6,
-				[1540] = 3,
-				[1538] = 5,
-				[1541] = 3,
-			},
-			["l"] = {
-				[1539] = 2903,
-				[1540] = 2399,
-				[1538] = 2912,
-				[1541] = 2109,
-			},
-			["h"] = {
-				[1539] = 2904,
-				[1540] = 2900,
-				[1538] = 3248,
-				[1541] = 2110,
-			},
-			["m"] = 2109,
-		},
-		["2494"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5800,
-			},
-			["m"] = 5800,
-		},
-		["gn:2800:Black Velvet Robes:26"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 109999,
-			},
-			["m"] = 109999,
-		},
-		["9777"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4405,
-			},
-			["m"] = 4405,
-		},
-		["7524"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 34429,
-			["h"] = {
-				[1539] = 34429,
-			},
-		},
-		["g:7431:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 50036,
-			["h"] = {
-				[1539] = 50036,
-			},
-		},
-		["gn:2987:Inscribed Leather Boots:18"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7499,
-			},
-			["m"] = 7499,
-		},
-		["g:14409:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 14999,
-			["h"] = {
-				[1538] = 14999,
-			},
-		},
-		["gn:2819:Cross Dagger of the Monkey:28"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 18000,
-			["h"] = {
-				[1540] = 18000,
-			},
-		},
-		["gn:14179:Watcher's Cape of Healing:24"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 72239,
-			["h"] = {
-				[1539] = 72239,
-			},
-		},
-		["gn:3848:Big Bronze Knife:20"] = {
-			["a"] = {
-				[1539] = 11,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 10024,
-			},
-			["m"] = 10024,
-		},
-		["g:15367:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["15018"] = {
-			["a"] = {
-				[1539] = 15,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5000,
-			},
-			["m"] = 5000,
-		},
-		["2657"] = {
-			["a"] = {
-				[1539] = 12,
-			},
-			["l"] = {
-			},
-			["m"] = 1561,
-			["h"] = {
-				[1539] = 1561,
-			},
-		},
-		["g:215375:31"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 1290,
-			["h"] = {
-				[1540] = 1290,
-			},
-		},
-		["gn:2072:Dwarven Magestaff of Arcane Wrath:27"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 40000,
-			["h"] = {
-				[1540] = 40000,
-			},
-		},
-		["gn:6554:Bard's Gloves of Healing:17"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9900,
-			},
-			["m"] = 9900,
-		},
-		["g:3287:12"] = {
-			["a"] = {
-				[1539] = 13,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3398,
-			},
-			["m"] = 3398,
-		},
-		["g:15934:32"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9998,
-			["h"] = {
-				[1539] = 9998,
-			},
-		},
-		["gn:15226:Giant Club of Healing:37"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 19988,
-			["h"] = {
-				[1539] = 19988,
-			},
-		},
-		["gn:15008:Primal Mitts:10"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5000,
-			},
-			["m"] = 5000,
-		},
-		["g:9747:14"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4695,
-			["h"] = {
-				[1539] = 4695,
-			},
-		},
-		["gn:9831:Scaled Cloak of Healing:29"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9999,
-			["h"] = {
-				[1539] = 9999,
-			},
-		},
-		["gn:7430:Twilight Robe of Shadow Wrath:40"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 49985,
-			["h"] = {
-				[1540] = 49985,
-			},
-		},
-		["gn:15364:Trickster's Cloak of Stamina:36"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29171,
-			["h"] = {
-				[1538] = 29171,
-			},
-		},
-		["g:9718:38"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 199550,
-			["h"] = {
-				[1540] = 199550,
-			},
-		},
-		["3069"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 5600,
-			},
-			["m"] = 5600,
-		},
-		["gn:9860:Archer's Cloak of the Whale:34"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5495,
-			["h"] = {
-				[1538] = 5495,
-			},
-		},
-		["g:3784:37"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 9977,
-			["h"] = {
-				[1540] = 9977,
-			},
-		},
-		["g:14253:43"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 59996,
-			["h"] = {
-				[1539] = 59996,
-			},
-		},
-		["828"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 530,
-			},
-			["m"] = 530,
-		},
-		["3288"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7994,
-			},
-			["m"] = 7994,
-		},
-		["gn:9867:Renegade Cloak of Healing:33"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 18997,
-			["h"] = {
-				[1539] = 18997,
-			},
-		},
-		["gn:217252:Long Silken Cloak:37"] = {
-			["a"] = {
-				[1538] = 7,
-			},
-			["l"] = {
-			},
-			["m"] = 5960,
-			["h"] = {
-				[1538] = 5960,
-			},
-		},
-		["3914"] = {
-			["a"] = {
-				[1539] = 28,
-			},
-			["l"] = {
-			},
-			["m"] = 187914,
-			["h"] = {
-				[1539] = 187914,
-			},
-		},
-		["g:14189:32"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["gn:7443:Sentinel Gloves of Healing:37"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 29800,
-			["h"] = {
-				[1539] = 29800,
-			},
-		},
-		["g:15978:41"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 97696,
-			["h"] = {
-				[1539] = 97696,
-			},
-		},
-		["g:2986:20"] = {
-			["a"] = {
-				[1539] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3965,
-			},
-			["m"] = 3965,
-		},
-		["g:9791:29"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 11116,
-			},
-			["m"] = 11116,
-		},
-		["g:7353:35"] = {
-			["a"] = {
-				[1538] = 7,
-				[1540] = 20,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8000,
-				[1540] = 6994,
-			},
-			["m"] = 6994,
-		},
-		["gn:2072:Dwarven Magestaff of Nature's Wrath:27"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 74663,
-			["h"] = {
-				[1540] = 74663,
-			},
-		},
-		["gn:3065:Bright Boots:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2998,
-		},
-		["gn:2077:Magician Staff of the Whale:29"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 15594,
-			["h"] = {
-				[1540] = 15594,
-			},
-		},
-		["gn:2312:Fine Leather Gloves:15"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4598,
-			},
-			["m"] = 4598,
-		},
-		["10401"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 16795,
-			},
-			["m"] = 16795,
-		},
-		["g:7757:37"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 89908,
-			["h"] = {
-				[1540] = 89908,
-			},
-		},
-		["g:4243:17"] = {
-			["a"] = {
-				[1539] = 8,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5699,
-			},
-			["m"] = 5699,
-		},
-		["15213"] = {
-			["a"] = {
-				[1540] = 50,
-			},
-			["l"] = {
-			},
-			["m"] = 18000,
-			["h"] = {
-				[1540] = 18000,
-			},
-		},
-		["gn:15017:Lupine Leggings of the Wolf:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9998,
-			},
-			["m"] = 9998,
-		},
-		["6238"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 772,
-		},
-		["14159"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2498,
-		},
-		["9853"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 13096,
-			["h"] = {
-				[1539] = 13096,
-			},
-		},
-		["g:7525:45"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 88497,
-			["h"] = {
-				[1539] = 88497,
-			},
-		},
-		["7058"] = {
-			["a"] = {
-				[1538] = 8,
-				[1540] = 41,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 2599,
-				[1540] = 2244,
-			},
-			["m"] = 2244,
-		},
-		["g:13108:34"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 113000,
-			["h"] = {
-				[1538] = 113000,
-			},
-		},
-		["14364"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2356,
-		},
-		["gn:2077:Magician Staff of the Eagle:29"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 28591,
-			["h"] = {
-				[1540] = 28591,
-			},
-		},
-		["5575"] = {
-			["a"] = {
-				[1539] = 17,
-			},
-			["l"] = {
-			},
-			["m"] = 7569,
-			["h"] = {
-				[1539] = 7569,
-			},
-		},
-		["7370"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 8996,
-			["h"] = {
-				[1539] = 8996,
-			},
-		},
-		["gn:15305:Feral Shoes of Stamina:18"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8999,
-			},
-			["m"] = 8999,
-		},
-		["9392"] = {
-			["a"] = {
-				[1540] = 9,
-			},
-			["l"] = {
-			},
-			["m"] = 59483,
-			["h"] = {
-				[1540] = 59483,
-			},
-		},
-		["17056"] = {
-			["a"] = {
-				[1533] = 607,
-				[1539] = 130,
-			},
-			["l"] = {
-			},
-			["m"] = 28,
-			["h"] = {
-				[1533] = 27,
-				[1539] = 28,
-			},
-		},
-		["gn:6553:Bard's Trousers of the Monkey:18"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 17713,
-			},
-			["m"] = 17713,
-		},
-		["gn:6406:Nightsky Boots:34"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3556,
-		},
-		["gn:6610:Sage's Robe of Arcane Wrath:32"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 15012,
-			},
-			["m"] = 15012,
-		},
-		["15364"] = {
-			["a"] = {
-				[1538] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 8962,
-			["h"] = {
-				[1538] = 8962,
-			},
-		},
-		["774"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 4090,
-		},
-		["2312"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4598,
-			},
-			["m"] = 4598,
-		},
-		["gn:2980:Veteran Gloves:15"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 2099,
-			["h"] = {
-			},
-		},
-		["4312"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3554,
-		},
-		["gn:2986:Inscribed Leather Pants:20"] = {
-			["a"] = {
-				[1539] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3965,
-			},
-			["m"] = 3965,
-		},
-		["g:14169:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 2900,
-			["h"] = {
-			},
-		},
-		["15214"] = {
-			["a"] = {
-				[1540] = 49,
-			},
-			["l"] = {
-			},
-			["m"] = 19878,
-			["h"] = {
-				[1540] = 19878,
-			},
-		},
-		["14113"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2000,
-			["h"] = {
-				[1539] = 2000,
-			},
-		},
-		["gn:15110:Rigid Belt of the Owl:20"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 11579,
-			},
-			["m"] = 11579,
-		},
-		["gn:7460:Knight's Cloak of Strength:34"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 8998,
-			["h"] = {
-				[1538] = 8998,
-			},
-		},
-		["gn:15303:Grizzly Pants of Agility:14"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 39998,
-			},
-			["m"] = 39998,
-		},
-		["g:10401:18"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 16795,
-			},
-			["m"] = 16795,
-		},
-		["g:10400:18"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 35160,
-			},
-			["m"] = 35160,
-		},
-		["15118"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1531] = 6000,
-			},
-			["m"] = 6000,
-		},
-		["gn:3185:Acrobatic Staff of the Monkey:34"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 24591,
-			["h"] = {
-				[1540] = 24591,
-			},
-		},
-		["g:2549:27"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 89999,
-			["h"] = {
-				[1540] = 89999,
-			},
-		},
-		["4241"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 20999,
-			["h"] = {
-				[1539] = 20999,
-			},
-		},
-		["gn:2140:Carving Knife of Nature's Wrath:11"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["9906"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 89998,
-			["h"] = {
-				[1539] = 89998,
-			},
-		},
-		["g:7474:40"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 12192,
-			["h"] = {
-				[1539] = 12192,
-			},
-		},
-		["gn:14204:Thistlefur Robe of the Owl:36"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 10000,
-			["h"] = {
-				[1540] = 10000,
-			},
-		},
-		["14190"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 39954,
-			},
-			["m"] = 39954,
-		},
-		["gn:1265:Scorpion Sting:39"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 25585,
-			["h"] = {
-				[1540] = 25585,
-			},
-		},
-		["gn:4571:War Knife of Arcane Wrath:17"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["g:4373:24"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 3993,
-			["h"] = {
-			},
-		},
-		["g:4313:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 13969,
-		},
-		["g:9851:37"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8876,
-			["h"] = {
-				[1539] = 8876,
-			},
-		},
-		["gn:14123:Ritual Cape of Healing:17"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 2568,
-			["h"] = {
-				[1539] = 2568,
-			},
-		},
-		["2300"] = {
-			["a"] = {
-				[1539] = 108,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3042,
-			},
-			["m"] = 3042,
-		},
-		["g:2973:17"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8626,
-			},
-			["m"] = 8626,
-		},
-		["g:14560:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3982,
-			},
-			["m"] = 3982,
-		},
-		["gn:1425:Worn Leather Vest:9"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2900,
-			},
-			["m"] = 2900,
-		},
-		["2092"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5997,
-			},
-			["m"] = 5997,
-		},
-		["9832"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 19900,
-			["h"] = {
-				[1539] = 19900,
-			},
-		},
-		["2318"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 16,
-			["h"] = {
-			},
-		},
-		["g:9910:44"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 92596,
-			["h"] = {
-				[1539] = 92596,
-			},
-		},
-		["12259"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 89987,
-			["h"] = {
-				[1540] = 89987,
-			},
-		},
-		["9875"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6957,
-			["h"] = {
-				[1539] = 6957,
-			},
-		},
-		["g:9878:41"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 25080,
-			["h"] = {
-				[1539] = 25080,
-			},
-		},
-		["gn:6553:Bard's Trousers of Spirit:18"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7085,
-			},
-			["m"] = 7085,
-		},
-		["g:6552:19"] = {
-			["a"] = {
-				[1539] = 7,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 7992,
-			},
-			["m"] = 7992,
-		},
-		["gn:15241:Battle Knife of the Tiger:26"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 14257,
-			["h"] = {
-				[1540] = 14257,
-			},
-		},
-		["gn:6269:Pioneer Trousers of the Monkey:12"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 15094,
-			},
-			["m"] = 15094,
-		},
-		["gn:9826:Durable Robe of the Eagle:34"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 19897,
-			},
-			["m"] = 19897,
-		},
-		["gn:9756:Gypsy Trousers of Agility:14"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6900,
-			},
-			["m"] = 6900,
-		},
-		["gn:9862:Archer's Trousers of Healing:37"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 49998,
-			["h"] = {
-				[1539] = 49998,
-			},
-		},
-		["7438"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6897,
-			["h"] = {
-				[1539] = 6897,
-			},
-		},
-		["g:8225:36"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 19994,
-			["h"] = {
-				[1540] = 19994,
-			},
-		},
-		["gn:14564:Prospector's Mitts:19"] = {
-			["a"] = {
-				[1539] = 3,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5398,
-			},
-			["m"] = 5398,
-		},
-		["gn:15364:Trickster's Cloak of the Owl:36"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 29169,
-			["h"] = {
-				[1538] = 29169,
-			},
-		},
-		["g:14374:24"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3498,
-		},
-		["gn:7554:Willow Branch of Healing:19"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 5600,
-			["h"] = {
-				[1539] = 5600,
-			},
-		},
-		["gn:9844:Conjurer's Vest of Spirit:38"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9996,
-			["h"] = {
-				[1540] = 9996,
-			},
-		},
-		["14189"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 20000,
-			["h"] = {
-				[1539] = 20000,
-			},
-		},
-		["gn:9767:Greenweave Sandals of Arcane Wrath:23"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 10093,
-		},
-		["g:9777:19"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4405,
-			},
-			["m"] = 4405,
-		},
-		["g:7524:44"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 34429,
-			["h"] = {
-				[1539] = 34429,
-			},
-		},
-		["g:9434:41"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 89996,
-			["h"] = {
-				[1540] = 89996,
-			},
-		},
-		["g:15918:38"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 39994,
-			["h"] = {
-				[1539] = 39994,
-			},
-		},
-		["g:14405:33"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 9996,
-			},
-			["m"] = 9996,
-		},
-		["gn:6562:Shimmering Boots of the Whale:21"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 9995,
-		},
-		["gn:9877:Sorcerer Cloak of Arcane Wrath:38"] = {
-			["a"] = {
-				[1538] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 19007,
-			["h"] = {
-				[1538] = 19007,
-			},
-		},
-		["1207"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 19990,
-			["h"] = {
-				[1539] = 19990,
-			},
-		},
-		["gn:3314:Ceremonial Leather Gloves:15"] = {
-			["a"] = {
-				[1539] = 9,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 8495,
-			},
-			["m"] = 8495,
-		},
-		["4693"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 1079,
-			},
-			["m"] = 1079,
-		},
-		["gn:15243:Deadly Kris of Power:36"] = {
-			["a"] = {
-				[1540] = 14,
-			},
-			["l"] = {
-			},
-			["m"] = 39999,
-			["h"] = {
-				[1540] = 39999,
-			},
-		},
-		["g:9798:29"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 8897,
-			},
-			["m"] = 8897,
 		},
 		["g:15520:26"] = {
 			["a"] = {
@@ -18276,328 +7218,480 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1538] = 2912,
 				[1541] = 2109,
 			},
+			["m"] = 2109,
 			["h"] = {
 				[1539] = 2904,
 				[1540] = 2900,
 				[1538] = 3248,
 				[1541] = 2110,
 			},
-			["m"] = 2109,
 		},
-		["gn:2140:Carving Knife of Power:11"] = {
+		["gn:15214:Nobles Brand of the Monkey:40"] = {
 			["a"] = {
-				[1539] = 10,
+				[1540] = 13,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 5998,
+				[1540] = 19878,
 			},
-			["m"] = 5998,
+			["m"] = 19878,
 		},
-		["g:3473:13"] = {
+		["gn:15243:Deadly Kris of Power:36"] = {
 			["a"] = {
-				[1530] = 32,
-				[1539] = 50,
-			},
-			["l"] = {
-			},
-			["m"] = 6117,
-			["h"] = {
-				[1530] = 6995,
-				[1539] = 6117,
-			},
-		},
-		["gn:2140:Carving Knife of Stamina:11"] = {
-			["a"] = {
-				[1539] = 2,
+				[1540] = 14,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 7099,
+				[1540] = 39999,
 			},
-			["m"] = 7099,
+			["m"] = 39999,
 		},
-		["gn:7111:Nightsky Armor:37"] = {
-			["a"] = {
-				[1538] = 3,
-				[1540] = 12,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 17379,
-				[1540] = 10000,
-			},
-			["m"] = 10000,
-		},
-		["gn:14129:Ritual Sandals of Spirit:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 3500,
-		},
-		["gn:15011:Lupine Cord of the Owl:15"] = {
-			["a"] = {
-				[1539] = 4,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 4086,
-			},
-			["m"] = 4086,
-		},
-		["gn:14215:Vital Tunic of the Owl:37"] = {
-			["a"] = {
-				[1538] = 1,
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 11370,
-				[1540] = 8266,
-			},
-			["m"] = 8266,
-		},
-		["gn:2077:Magician Staff of the Monkey:29"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 9997,
-			["h"] = {
-				[1540] = 9997,
-			},
-		},
-		["2974"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 9999,
-			},
-			["m"] = 9999,
-		},
-		["g:9756:14"] = {
-			["a"] = {
-				[1539] = 6,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2994,
-			},
-			["m"] = 2994,
-		},
-		["g:2962:10"] = {
+		["4693"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
+			["m"] = 1079,
 			["h"] = {
-				[1539] = 4300,
+				[1539] = 1079,
 			},
-			["m"] = 4300,
 		},
-		["1652"] = {
+		["2986"] = {
 			["a"] = {
 				[1539] = 7,
 			},
 			["l"] = {
 			},
-			["m"] = 19998,
+			["m"] = 3965,
 			["h"] = {
-				[1539] = 19998,
+				[1539] = 3965,
 			},
 		},
-		["g:869:41"] = {
-			["a"] = {
-				[1540] = 8,
-			},
-			["l"] = {
-			},
-			["m"] = 187590,
-			["h"] = {
-				[1540] = 187590,
-			},
-		},
-		["gn:9771:Greenweave Gloves of the Eagle:25"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 7000,
-			["h"] = {
-			},
-		},
-		["g:4239:13"] = {
-			["a"] = {
-				[1539] = 11,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 84,
-			},
-			["m"] = 84,
-		},
-		["2632"] = {
-			["a"] = {
-				[1539] = 45,
-			},
-			["l"] = {
-				[1539] = 3392,
-			},
-			["m"] = 3392,
-			["h"] = {
-				[1539] = 6880,
-			},
-		},
-		["9795"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 8203,
-			["h"] = {
-				[1539] = 8203,
-			},
-		},
-		["g:5780:18"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 29999,
-			},
-			["m"] = 29999,
-		},
-		["g:9392:40"] = {
-			["a"] = {
-				[1540] = 9,
-			},
-			["l"] = {
-			},
-			["m"] = 59483,
-			["h"] = {
-				[1540] = 59483,
-			},
-		},
-		["3783"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 6054,
-			["h"] = {
-				[1540] = 6054,
-			},
-		},
-		["gn:9909:Royal Bands of Healing:43"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 99999,
-			["h"] = {
-				[1539] = 99999,
-			},
-		},
-		["g:2912:32"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 169992,
-			["h"] = {
-				[1540] = 169992,
-			},
-		},
-		["12248"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 79992,
-			["h"] = {
-				[1540] = 79992,
-			},
-		},
-		["g:9424:41"] = {
-			["a"] = {
-				[1540] = 9,
-			},
-			["l"] = {
-			},
-			["m"] = 327083,
-			["h"] = {
-				[1540] = 327083,
-			},
-		},
-		["10050"] = {
-			["a"] = {
-				[1539] = 77,
-			},
-			["l"] = {
-			},
-			["m"] = 19658,
-			["h"] = {
-				[1539] = 19658,
-			},
-		},
-		["6446"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 9993,
-			["h"] = {
-				[1539] = 9993,
-			},
-		},
-		["gn:14193:Raincaller Pants of Healing:31"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4000,
-			["h"] = {
-				[1539] = 4000,
-			},
-		},
-		["g:3313:18"] = {
+		["gn:3314:Ceremonial Leather Gloves:15"] = {
 			["a"] = {
 				[1539] = 9,
 			},
 			["l"] = {
 			},
+			["m"] = 8495,
 			["h"] = {
-				[1539] = 9992,
+				[1539] = 8495,
 			},
-			["m"] = 9992,
 		},
-		["g:17922:10"] = {
+		["864"] = {
+			["a"] = {
+				[1540] = 31,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19561,
+			},
+			["m"] = 19561,
+		},
+		["gn:9877:Sorcerer Cloak of Arcane Wrath:38"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 19007,
+			},
+			["m"] = 19007,
+		},
+		["gn:9428:Unearthed Bands of Healing:35"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 110000,
+			},
+			["m"] = 110000,
+		},
+		["14090"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2319,
+			},
+			["m"] = 2319,
+		},
+		["14397"] = {
+			["a"] = {
+				[1539] = 5,
+				[1540] = 5,
+				[1538] = 7,
+			},
+			["l"] = {
+				[1539] = 3077,
+				[1540] = 2471,
+				[1538] = 3085,
+			},
+			["m"] = 2471,
+			["h"] = {
+				[1539] = 3078,
+				[1540] = 3072,
+				[1538] = 5586,
+			},
+		},
+		["gn:6562:Shimmering Boots of the Whale:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 9995,
+			["h"] = {
+			},
+		},
+		["4565"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9951,
+			["h"] = {
+				[1539] = 9951,
+			},
+		},
+		["gn:9878:Sorcerer Hat of Healing:41"] = {
 			["a"] = {
 				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 25080,
+			},
+			["m"] = 25080,
+		},
+		["9424"] = {
+			["a"] = {
+				[1540] = 9,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 327083,
+			},
+			["m"] = 327083,
+		},
+		["g:15145:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 13442,
+			},
+			["m"] = 13442,
+		},
+		["g:7524:44"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 34429,
+			},
+			["m"] = 34429,
+		},
+		["g:15298:13"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4496,
+			},
+			["m"] = 4496,
+		},
+		["g:9777:19"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 4405,
+			["h"] = {
+				[1539] = 4405,
+			},
+		},
+		["gn:9767:Greenweave Sandals of Arcane Wrath:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 10093,
+			["h"] = {
+			},
+		},
+		["gn:14229:Embersilk Cloak of the Whale:36"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 39998,
+			},
+			["m"] = 39998,
+		},
+		["14189"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["gn:15508:Grunt's Cape of Healing:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3099,
+			},
+			["m"] = 3099,
+		},
+		["4240"] = {
+			["a"] = {
+				[1539] = 80,
+				[1540] = 50,
+			},
+			["l"] = {
+				[1539] = 960,
+			},
+			["m"] = 1495,
+			["h"] = {
+				[1539] = 2300,
+				[1540] = 1495,
+			},
+		},
+		["g:14374:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3498,
+			["h"] = {
+			},
+		},
+		["gn:15364:Trickster's Cloak of the Owl:36"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 29169,
+			},
+			["m"] = 29169,
+		},
+		["gn:15016:Lupine Handwraps of the Monkey:16"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 19899,
+			["h"] = {
+				[1539] = 19899,
+			},
+		},
+		["g:9870:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9900,
+			},
+			["m"] = 9900,
+		},
+		["14229"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9983,
+			},
+			["m"] = 9983,
+		},
+		["g:8225:36"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19994,
+			},
+			["m"] = 19994,
+		},
+		["g:1425:9"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2900,
+			["h"] = {
+				[1539] = 2900,
+			},
+		},
+		["g:2911:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 299997,
+			["h"] = {
+			},
+		},
+		["g:15312:20"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 6000,
+			["h"] = {
+				[1539] = 6000,
+			},
+		},
+		["3385"] = {
+			["a"] = {
+				[1540] = 203,
+			},
+			["l"] = {
+			},
+			["m"] = 381,
+			["h"] = {
+				[1540] = 381,
+			},
+		},
+		["4385"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 5090,
+		},
+		["gn:15017:Lupine Leggings of the Eagle:19"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 11098,
+			["h"] = {
+				[1539] = 11098,
+			},
+		},
+		["7448"] = {
+			["a"] = {
+				[1541] = 2,
+			},
+			["l"] = {
+				[1541] = 4492,
+			},
+			["h"] = {
+				[1541] = 6493,
+			},
+			["m"] = 4492,
+		},
+		["gn:15003:Primal Belt:8"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 6815,
+			["h"] = {
+				[1539] = 6815,
+			},
+		},
+		["gn:9862:Archer's Trousers of Healing:37"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 49998,
+			},
+			["m"] = 49998,
+		},
+		["gn:9756:Gypsy Trousers of Agility:14"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 6900,
+			["h"] = {
+				[1539] = 6900,
+			},
+		},
+		["gn:15241:Battle Knife of the Tiger:26"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 14257,
+			},
+			["m"] = 14257,
+		},
+		["5965"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 59898,
+			},
+			["m"] = 59898,
+		},
+		["gn:7430:Twilight Robe of Stamina:40"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 11999,
+			},
+			["m"] = 11999,
+		},
+		["5763"] = {
+			["a"] = {
+				[1539] = 11,
 			},
 			["l"] = {
 			},
@@ -18606,517 +7700,2542 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["m"] = 1497,
 		},
-		["gn:14560:Prospector's Boots:19"] = {
+		["g:5216:45"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 259993,
+			},
+			["m"] = 259993,
+		},
+		["g:9831:29"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9999,
+			},
+			["m"] = 9999,
+		},
+		["9846"] = {
 			["a"] = {
 				[1539] = 2,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 3982,
+				[1539] = 35034,
 			},
-			["m"] = 3982,
+			["m"] = 35034,
 		},
-		["gn:14229:Embersilk Cloak of Intellect:36"] = {
+		["g:6552:19"] = {
 			["a"] = {
-				[1538] = 1,
+				[1539] = 7,
 			},
 			["l"] = {
 			},
-			["m"] = 28644,
+			["m"] = 7992,
 			["h"] = {
-				[1538] = 28644,
+				[1539] = 7992,
 			},
 		},
-		["10289"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 9982,
-			["h"] = {
-				[1539] = 9982,
-			},
-		},
-		["6303"] = {
-			["a"] = {
-				[1539] = 27,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 6,
-			},
-			["m"] = 6,
-		},
-		["gn:15241:Battle Knife of Stamina:26"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 20249,
-			["h"] = {
-				[1540] = 20249,
-			},
-		},
-		["gn:217245:Crimson Silk Robe:41"] = {
-			["a"] = {
-				[1540] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 102251,
-			["h"] = {
-				[1540] = 102251,
-			},
-		},
-		["gn:9911:Royal Trousers of Healing:46"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 100000,
-			["h"] = {
-				[1539] = 100000,
-			},
-		},
-		["7429"] = {
-			["a"] = {
-				[1540] = 15,
-			},
-			["l"] = {
-			},
-			["m"] = 9963,
-			["h"] = {
-				[1540] = 9963,
-			},
-		},
-		["gn:7429:Twilight Armor of the Eagle:40"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 15487,
-			["h"] = {
-				[1540] = 15487,
-			},
-		},
-		["gn:15214:Nobles Brand of Power:40"] = {
-			["a"] = {
-				[1540] = 7,
-			},
-			["l"] = {
-			},
-			["m"] = 19997,
-			["h"] = {
-				[1540] = 19997,
-			},
-		},
-		["gn:1794:Patched Leather Jerkin:20"] = {
+		["gn:7431:Twilight Pants of Healing:39"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 2228,
+				[1539] = 50036,
 			},
-			["m"] = 2228,
+			["m"] = 50036,
 		},
-		["gn:14409:Stonecloth Cape:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 14999,
-			["h"] = {
-				[1538] = 14999,
-			},
-		},
-		["g:15009:11"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 3094,
-			},
-			["m"] = 3094,
-		},
-		["g:2077:29"] = {
-			["a"] = {
-				[1539] = 1,
-				[1540] = 34,
-			},
-			["l"] = {
-			},
-			["m"] = 7000,
-			["h"] = {
-				[1539] = 14998,
-				[1540] = 7000,
-			},
-		},
-		["g:4246:16"] = {
-			["a"] = {
-				[1539] = 29,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 2186,
-			},
-			["m"] = 2186,
-		},
-		["gn:9867:Renegade Cloak of the Boar:33"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 3999,
-			["h"] = {
-				[1538] = 3999,
-			},
-		},
-		["gn:9906:Royal Sash of Healing:44"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 89998,
-			["h"] = {
-				[1539] = 89998,
-			},
-		},
-		["gn:15568:Marauder's Cloak of the Bear:33"] = {
-			["a"] = {
-				[1538] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 4996,
-			["h"] = {
-				[1538] = 4996,
-			},
-		},
-		["gn:6610:Sage's Robe of Frozen Wrath:32"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 4544,
-			},
-			["m"] = 4544,
-		},
-		["gn:6608:Bright Armor:27"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1538] = 6664,
-			},
-			["m"] = 6664,
-		},
-		["gn:15310:Feral Gloves of Defense:18"] = {
+		["g:7411:31"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 4993,
+				[1539] = 13098,
 			},
-			["m"] = 4993,
+			["m"] = 13098,
 		},
-		["14129"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 2200,
-		},
-		["g:7438:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6897,
-			["h"] = {
-				[1539] = 6897,
-			},
-		},
-		["3464"] = {
-			["a"] = {
-				[1539] = 2405,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 36,
-			},
-			["m"] = 36,
-		},
-		["gn:15017:Lupine Leggings of Agility:19"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 19999,
-			},
-			["m"] = 19999,
-		},
-		["4861"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 22523,
-			},
-			["m"] = 22523,
-		},
-		["gn:9844:Conjurer's Vest of the Whale:38"] = {
-			["a"] = {
-				[1540] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 21100,
-			["h"] = {
-				[1540] = 21100,
-			},
-		},
-		["1716"] = {
-			["a"] = {
-				[1540] = 6,
-			},
-			["l"] = {
-			},
-			["m"] = 315000,
-			["h"] = {
-				[1540] = 315000,
-			},
-		},
-		["13443"] = {
-			["a"] = {
-				[1540] = 22,
-			},
-			["l"] = {
-			},
-			["m"] = 23333,
-			["h"] = {
-				[1540] = 23333,
-			},
-		},
-		["gn:14216:Geomancer's Jerkin of Frozen Wrath:41"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 11998,
-			["h"] = {
-				[1540] = 11998,
-			},
-		},
-		["gn:9848:Conjurer's Gloves of Healing:36"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 25950,
-			["h"] = {
-				[1539] = 25950,
-			},
-		},
-		["gn:14213:Vital Raiment of the Owl:37"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 11723,
-			["h"] = {
-				[1540] = 11723,
-			},
-		},
-		["g:6628:22"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["m"] = 18527,
-			["h"] = {
-			},
-		},
-		["g:15016:16"] = {
-			["a"] = {
-				[1539] = 5,
-			},
-			["l"] = {
-			},
-			["h"] = {
-				[1539] = 5987,
-			},
-			["m"] = 5987,
-		},
-		["gn:14129:Ritual Sandals of the Falcon:20"] = {
-			["a"] = {
-			},
-			["l"] = {
-			},
-			["h"] = {
-			},
-			["m"] = 4997,
-		},
-		["15970"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 900,
-			["h"] = {
-				[1539] = 900,
-			},
-		},
-		["gn:7429:Twilight Armor of Frozen Wrath:40"] = {
-			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 21498,
-			["h"] = {
-				[1540] = 21498,
-			},
-		},
-		["gn:7436:Twilight Cape of Stamina:35"] = {
-			["a"] = {
-				[1538] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 21097,
-			["h"] = {
-				[1538] = 21097,
-			},
-		},
-		["gn:10088:Gothic Plate Girdle of Healing:45"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 16693,
-			["h"] = {
-				[1539] = 16693,
-			},
-		},
-		["gn:9852:Conjurer's Robe of Shadow Wrath:38"] = {
-			["a"] = {
-				[1540] = 4,
-			},
-			["l"] = {
-			},
-			["m"] = 22216,
-			["h"] = {
-				[1540] = 22216,
-			},
-		},
-		["10404"] = {
-			["a"] = {
-				[1539] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 3083,
-			["h"] = {
-				[1539] = 3083,
-			},
-		},
-		["gn:2819:Cross Dagger of Healing:28"] = {
+		["9910"] = {
 			["a"] = {
 				[1539] = 3,
-				[1540] = 3,
 			},
 			["l"] = {
 			},
-			["m"] = 7594,
 			["h"] = {
-				[1539] = 7499,
-				[1540] = 7594,
+				[1539] = 92596,
+			},
+			["m"] = 92596,
+		},
+		["g:15329:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3041,
+			["h"] = {
 			},
 		},
-		["15304"] = {
+		["gn:8183:Precision Bow:27"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+				[1538] = 6496,
+			},
+			["m"] = 6496,
+			["h"] = {
+				[1538] = 6497,
+			},
+		},
+		["g:9878:41"] = {
 			["a"] = {
 				[1539] = 4,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 7494,
+				[1539] = 25080,
 			},
-			["m"] = 7494,
+			["m"] = 25080,
 		},
-		["g:7489:41"] = {
+		["g:2569:13"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 1500,
+			["h"] = {
+			},
+		},
+		["g:864:38"] = {
+			["a"] = {
+				[1540] = 31,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19561,
+			},
+			["m"] = 19561,
+		},
+		["g:15003:8"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 80000,
+			["m"] = 6815,
 			["h"] = {
-				[1539] = 80000,
+				[1539] = 6815,
 			},
 		},
-		["gn:2072:Dwarven Magestaff of the Whale:27"] = {
+		["9875"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6957,
+			},
+			["m"] = 6957,
+		},
+		["12259"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89987,
+			},
+			["m"] = 89987,
+		},
+		["gn:3783:Light Scimitar:36"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 6054,
+			},
+			["m"] = 6054,
+		},
+		["7475"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 45096,
+			},
+			["m"] = 45096,
+		},
+		["2318"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 16,
+		},
+		["g:14184:30"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 4999,
+			["h"] = {
+				[1538] = 4999,
+			},
+		},
+		["g:7446:36"] = {
+			["a"] = {
+				[1538] = 7,
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 8705,
+				[1539] = 9977,
+			},
+			["m"] = 9977,
+		},
+		["13446"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 41999,
+			},
+			["m"] = 41999,
+		},
+		["937"] = {
+			["a"] = {
+				[1540] = 7,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19991,
+			},
+			["m"] = 19991,
+		},
+		["9832"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19900,
+			},
+			["m"] = 19900,
+		},
+		["14208"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9264,
+			},
+			["m"] = 9264,
+		},
+		["15935"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 14472,
+			},
+			["m"] = 14472,
+		},
+		["gn:6537:Willow Boots of the Whale:15"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2099,
+			["h"] = {
+			},
+		},
+		["g:14560:19"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 3982,
+			["h"] = {
+				[1539] = 3982,
+			},
+		},
+		["gn:14123:Ritual Cape of Healing:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2568,
+			},
+			["m"] = 2568,
+		},
+		["9869"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 15894,
+			},
+			["m"] = 15894,
+		},
+		["g:15244:42"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 34299,
+			},
+			["m"] = 34299,
+		},
+		["2300"] = {
+			["a"] = {
+				[1539] = 108,
+			},
+			["l"] = {
+			},
+			["m"] = 3042,
+			["h"] = {
+				[1539] = 3042,
+			},
+		},
+		["g:14208:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9264,
+			},
+			["m"] = 9264,
+		},
+		["2835"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 15,
+		},
+		["gn:14202:Thistlefur Jerkin of Arcane Wrath:36"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 13341,
+			},
+			["m"] = 13341,
+		},
+		["gn:15312:Feral Leggings of the Eagle:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8938,
+			["h"] = {
+				[1539] = 8938,
+			},
+		},
+		["g:2973:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8626,
+			["h"] = {
+				[1539] = 8626,
+			},
+		},
+		["gn:9766:Greenweave Sash of Healing:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 9967,
+			["h"] = {
+			},
+		},
+		["g:4313:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 13969,
+			["h"] = {
+			},
+		},
+		["g:9851:37"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8876,
+			},
+			["m"] = 8876,
+		},
+		["g:4373:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 3993,
+		},
+		["gn:15329:Wrangler's Belt of the Monkey:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3041,
+			["h"] = {
+			},
+		},
+		["4566"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8999,
+			},
+			["m"] = 8999,
+		},
+		["gn:15571:Marauder's Belt of Healing:35"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 99999,
+			},
+			["m"] = 99999,
+		},
+		["gn:14158:Pagan Vest of Stamina:26"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8000,
+			["h"] = {
+				[1538] = 8000,
+			},
+		},
+		["gn:14225:Geomancer's Wraps of Stamina:41"] = {
 			["a"] = {
 				[1540] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 8896,
 			["h"] = {
-				[1540] = 8896,
+				[1540] = 119998,
 			},
+			["m"] = 119998,
 		},
-		["3685"] = {
+		["gn:4571:War Knife of Arcane Wrath:17"] = {
 			["a"] = {
-				[1539] = 216,
-				[1541] = 145,
+				[1539] = 2,
 			},
 			["l"] = {
-				[1539] = 125,
-				[1541] = 68,
 			},
+			["m"] = 9999,
 			["h"] = {
-				[1539] = 126,
-				[1541] = 69,
+				[1539] = 9999,
 			},
-			["m"] = 68,
 		},
-		["g:15014:17"] = {
+		["15493"] = {
 			["a"] = {
 				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6998,
+			},
+			["m"] = 6998,
+		},
+		["gn:7433:Twilight Gloves of Healing:37"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7697,
+			},
+			["m"] = 7697,
+		},
+		["g:15224:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3096,
+			["h"] = {
+			},
+		},
+		["1769"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 1298,
+		},
+		["15243"] = {
+			["a"] = {
+				[1539] = 1,
+				[1540] = 46,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19996,
+				[1540] = 19436,
+			},
+			["m"] = 19436,
+		},
+		["gn:1265:Scorpion Sting:39"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 25585,
+			},
+			["m"] = 25585,
+		},
+		["15226"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19988,
+			},
+			["m"] = 19988,
+		},
+		["gn:15305:Feral Shoes of Spirit:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 1549,
+			["h"] = {
+				[1539] = 1549,
+			},
+		},
+		["9775"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 10083,
+			["h"] = {
+				[1539] = 10083,
+			},
+		},
+		["gn:14164:Pagan Belt of the Whale:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 6511,
+			["h"] = {
+			},
+		},
+		["gn:15340:Pathfinder Cloak of Healing:27"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 15063,
+			},
+			["m"] = 15063,
+		},
+		["15308"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 4982,
+			["h"] = {
+				[1539] = 4982,
+			},
+		},
+		["gn:15244:Razor Blade of Healing:42"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 34299,
+			},
+			["m"] = 34299,
+		},
+		["g:6608:27"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 6664,
+			["h"] = {
+				[1538] = 6664,
+			},
+		},
+		["gn:9852:Conjurer's Robe of the Whale:38"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10045,
+			},
+			["m"] = 10045,
+		},
+		["gn:2819:Cross Dagger of Agility:28"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 17998,
+			},
+			["m"] = 17998,
+		},
+		["14215"] = {
+			["a"] = {
+				[1538] = 3,
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 8266,
+			["h"] = {
+				[1538] = 10000,
+				[1540] = 8266,
+			},
+		},
+		["14564"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5398,
+			["h"] = {
+				[1539] = 5398,
+			},
+		},
+		["210138"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 5339,
+			["h"] = {
+			},
+		},
+		["14117"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4082,
+			},
+			["m"] = 4082,
+		},
+		["g:7474:40"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12192,
+			},
+			["m"] = 12192,
+		},
+		["14193"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4000,
+			},
+			["m"] = 4000,
+		},
+		["gn:864:Knightly Longsword of the Tiger:38"] = {
+			["a"] = {
+				[1540] = 15,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19666,
+			},
+			["m"] = 19666,
+		},
+		["gn:2140:Carving Knife of Nature's Wrath:11"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["12998"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 109085,
+		},
+		["gn:15213:Mercenary Blade of the Monkey:36"] = {
+			["a"] = {
+				[1540] = 18,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 21982,
+			},
+			["m"] = 21982,
+		},
+		["gn:9780:Bandit Gloves of the Whale:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 6462,
+			["h"] = {
+				[1539] = 6462,
+			},
+		},
+		["g:14216:41"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["gn:15527:Sentry's Gloves of Healing:27"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2011,
+			},
+			["m"] = 2011,
+		},
+		["g:2549:27"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89999,
+			},
+			["m"] = 89999,
+		},
+		["g:6406:34"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3556,
+			["h"] = {
+			},
+		},
+		["9821"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29901,
+			},
+			["m"] = 29901,
+		},
+		["g:10400:18"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 35160,
+			["h"] = {
+				[1539] = 35160,
+			},
+		},
+		["14213"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 7708,
+			},
+			["m"] = 7708,
+		},
+		["g:9889:40"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29799,
+			},
+			["m"] = 29799,
+		},
+		["gn:9867:Renegade Cloak of the Monkey:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 14400,
+			},
+			["m"] = 14400,
+		},
+		["gn:15303:Grizzly Pants of Agility:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 39998,
+			["h"] = {
+				[1539] = 39998,
+			},
+		},
+		["gn:4571:War Knife of Agility:17"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 19995,
+			["h"] = {
+				[1539] = 19995,
+			},
+		},
+		["gn:9819:Durable Tunic of Spirit:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1538] = 9999,
+			},
+		},
+		["7366"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9000,
+			},
+			["m"] = 9000,
+		},
+		["gn:15110:Rigid Belt of the Owl:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 11579,
+			["h"] = {
+				[1539] = 11579,
+			},
+		},
+		["gn:6615:Sage's Gloves of Healing:29"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12498,
+			},
+			["m"] = 12498,
+		},
+		["g:3065:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2998,
+			["h"] = {
+			},
+		},
+		["5635"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 44,
+			["h"] = {
+			},
+		},
+		["9878"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 25080,
+			},
+			["m"] = 25080,
+		},
+		["14113"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2000,
+			},
+			["m"] = 2000,
+		},
+		["g:7357:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5986,
+			},
+			["m"] = 5986,
+		},
+		["15214"] = {
+			["a"] = {
+				[1540] = 49,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19878,
+			},
+			["m"] = 19878,
+		},
+		["3174"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 14,
+		},
+		["6149"] = {
+			["a"] = {
+				[1540] = 188,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 6169,
+			},
+			["m"] = 6169,
+		},
+		["gn:7757:Windweaver Staff:37"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89908,
+			},
+			["m"] = 89908,
+		},
+		["gn:7430:Twilight Robe of the Eagle:40"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 14584,
+			},
+			["m"] = 14584,
+		},
+		["gn:2986:Inscribed Leather Pants:20"] = {
+			["a"] = {
+				[1539] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 3965,
+			["h"] = {
+				[1539] = 3965,
+			},
+		},
+		["gn:6562:Shimmering Boots of the Owl:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2904,
+			["h"] = {
+			},
+		},
+		["4312"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3554,
+			["h"] = {
+			},
+		},
+		["2766"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 7694,
+			},
+			["m"] = 7694,
+		},
+		["g:937:38"] = {
+			["a"] = {
+				[1540] = 7,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19991,
+			},
+			["m"] = 19991,
+		},
+		["gn:2980:Veteran Gloves:15"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 2099,
+		},
+		["2312"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4598,
+			["h"] = {
+				[1539] = 4598,
+			},
+		},
+		["gn:9898:Jazeraint Cloak of Strength:38"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 39998,
+			},
+			["m"] = 39998,
+		},
+		["gn:15918:Conjurer's Sphere of Healing:38"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 39994,
+			},
+			["m"] = 39994,
+		},
+		["g:3786:39"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 8094,
+			},
+			["m"] = 8094,
+		},
+		["5766"] = {
+			["a"] = {
+				[1538] = 11,
+			},
+			["l"] = {
+			},
+			["m"] = 13907,
+			["h"] = {
+				[1538] = 13907,
+			},
+		},
+		["774"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 4090,
+			["h"] = {
+			},
+		},
+		["15364"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 8962,
+			},
+			["m"] = 8962,
+		},
+		["14241"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 30125,
+			},
+			["m"] = 30125,
+		},
+		["9766"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 4298,
+			["h"] = {
+			},
+		},
+		["gn:4246:Fine Leather Belt:16"] = {
+			["a"] = {
+				[1539] = 29,
+			},
+			["l"] = {
+			},
+			["m"] = 2186,
+			["h"] = {
+				[1539] = 2186,
+			},
+		},
+		["gn:14202:Thistlefur Jerkin of Intellect:36"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["gn:15243:Deadly Kris of Nature's Wrath:36"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29984,
+			},
+			["m"] = 29984,
+		},
+		["7433"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7697,
+			},
+			["m"] = 7697,
+		},
+		["gn:14158:Pagan Vest of the Eagle:26"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19900,
+			["h"] = {
+				[1538] = 19900,
+			},
+		},
+		["gn:7437:Twilight Cuffs of Healing:36"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 11078,
+			},
+			["m"] = 11078,
+		},
+		["17056"] = {
+			["a"] = {
+				[1539] = 130,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 28,
+			},
+			["m"] = 28,
+		},
+		["g:6554:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9900,
+			["h"] = {
+				[1539] = 9900,
+			},
+		},
+		["gn:15305:Feral Shoes of Stamina:18"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 8999,
+			["h"] = {
+				[1539] = 8999,
+			},
+		},
+		["gn:4038:Nightsky Robe:37"] = {
+			["a"] = {
+				[1538] = 4,
+				[1540] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 5719,
+			["h"] = {
+				[1538] = 5889,
+				[1540] = 5719,
+			},
+		},
+		["gn:15122:Robust Bracers of Healing:25"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9971,
+			},
+			["m"] = 9971,
+		},
+		["7370"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8996,
+			},
+			["m"] = 8996,
+		},
+		["5575"] = {
+			["a"] = {
+				[1539] = 17,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7569,
+			},
+			["m"] = 7569,
+		},
+		["g:1794:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2228,
+			["h"] = {
+				[1539] = 2228,
+			},
+		},
+		["14364"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2356,
+			["h"] = {
+			},
+		},
+		["9901"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 49999,
+			},
+			["m"] = 49999,
+		},
+		["7544"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 79892,
+			},
+			["m"] = 79892,
+		},
+		["9823"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3091,
+			},
+			["m"] = 3091,
+		},
+		["4575"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9544,
+			},
+			["m"] = 9544,
+		},
+		["g:15308:17"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 4982,
+			["h"] = {
+				[1539] = 4982,
+			},
+		},
+		["g:14211:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7194,
+			},
+			["m"] = 7194,
+		},
+		["gn:9844:Conjurer's Vest of the Owl:38"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29937,
+			},
+			["m"] = 29937,
+		},
+		["g:15122:25"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9971,
+			},
+			["m"] = 9971,
+		},
+		["gn:3490:Deadly Bronze Poniard:25"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29995,
+			},
+			["m"] = 29995,
+		},
+		["gn:2077:Magician Staff of the Eagle:29"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 28591,
+			},
+			["m"] = 28591,
+		},
+		["9889"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29799,
+			},
+			["m"] = 29799,
+		},
+		["9853"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 13096,
+			},
+			["m"] = 13096,
+		},
+		["gn:4242:Embossed Leather Pants:15"] = {
+			["a"] = {
+				[1539] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 4500,
+			["h"] = {
+				[1539] = 4500,
+			},
+		},
+		["15241"] = {
+			["a"] = {
+				[1539] = 2,
+				[1540] = 26,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5095,
+				[1540] = 8999,
+			},
+			["m"] = 8999,
+		},
+		["gn:14374:Sanguine Sandals:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3498,
+			["h"] = {
+			},
+		},
+		["14561"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["gn:15305:Feral Shoes of Agility:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 3500,
+			["h"] = {
+				[1539] = 3500,
+			},
+		},
+		["gn:1786:Cross-stitched Vest:29"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5097,
+			["h"] = {
+				[1538] = 5097,
+			},
+		},
+		["gn:2632:Curved Dagger of Healing:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6880,
+			},
+			["m"] = 6880,
+		},
+		["g:3315:17"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 2299,
+			["h"] = {
+				[1539] = 2299,
+			},
+		},
+		["14159"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2498,
+			["h"] = {
+			},
+		},
+		["gn:15974:Pagan Rod of Healing:26"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8899,
+			},
+			["m"] = 8899,
+		},
+		["gn:3185:Acrobatic Staff of Spirit:34"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 49793,
+			},
+			["m"] = 49793,
+		},
+		["gn:1788:Patched Leather Boots:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 1050,
+			["h"] = {
+				[1539] = 1050,
+			},
+		},
+		["gn:15112:Rigid Bracelets of Intellect:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 11615,
+			["h"] = {
+				[1539] = 11615,
+			},
+		},
+		["gn:14202:Thistlefur Jerkin of the Owl:36"] = {
+			["a"] = {
+				[1538] = 1,
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 13006,
+			["h"] = {
+				[1538] = 13007,
+				[1540] = 13006,
+			},
+		},
+		["gn:7462:Knight's Girdle of Healing:37"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 46999,
+			},
+			["m"] = 46999,
+		},
+		["2075"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 1994,
+			},
+			["m"] = 1994,
+		},
+		["gn:15017:Lupine Leggings of the Wolf:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9998,
+			["h"] = {
+				[1539] = 9998,
+			},
+		},
+		["3313"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 9992,
+			["h"] = {
+				[1539] = 9992,
+			},
+		},
+		["gn:9890:Huntsman's Cape of the Owl:38"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 14771,
+			},
+			["m"] = 14771,
+		},
+		["g:7430:40"] = {
+			["a"] = {
+				[1540] = 30,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9897,
+			},
+			["m"] = 9897,
+		},
+		["g:4243:17"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 5699,
+			["h"] = {
+				[1539] = 5699,
+			},
+		},
+		["gn:9780:Bandit Gloves of the Gorilla:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 11085,
+			["h"] = {
+				[1539] = 11085,
+			},
+		},
+		["gn:1998:Bloodscalp Channeling Staff:33"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10691,
+			},
+			["m"] = 10691,
+		},
+		["g:7757:37"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89908,
+			},
+			["m"] = 89908,
+		},
+		["4313"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 13969,
+			["h"] = {
+			},
+		},
+		["10401"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 16795,
+			["h"] = {
+				[1539] = 16795,
+			},
+		},
+		["g:14126:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 1497,
+		},
+		["gn:6570:Shimmering Sash of Healing:22"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 11000,
+			["h"] = {
+				[1539] = 11000,
+			},
+		},
+		["gn:7412:Infiltrator Gloves of Healing:32"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9996,
+			},
+			["m"] = 9996,
+		},
+		["gn:2077:Magician Staff of the Whale:29"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 15594,
+			},
+			["m"] = 15594,
+		},
+		["791"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 20190,
+			},
+			["m"] = 20190,
+		},
+		["14192"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 8000,
+			["h"] = {
+				[1538] = 8000,
+			},
+		},
+		["gn:15136:Cutthroat's Belt of Healing:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 14974,
+			},
+			["m"] = 14974,
+		},
+		["gn:3065:Bright Boots:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2998,
+			["h"] = {
+			},
+		},
+		["gn:2072:Dwarven Magestaff of Nature's Wrath:27"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 74663,
+			},
+			["m"] = 74663,
+		},
+		["gn:15364:Trickster's Cloak of Spirit:36"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 8962,
+			},
+			["m"] = 8962,
+		},
+		["g:7353:35"] = {
+			["a"] = {
+				[1538] = 7,
+				[1540] = 20,
+			},
+			["l"] = {
+			},
+			["m"] = 6994,
+			["h"] = {
+				[1538] = 8000,
+				[1540] = 6994,
+			},
+		},
+		["gn:7555:Regal Star of Healing:45"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["gn:9819:Durable Tunic of Frozen Wrath:34"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 8896,
+			["h"] = {
+				[1538] = 8896,
+			},
+		},
+		["gn:9771:Greenweave Gloves of Spirit:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 10000,
+		},
+		["gn:15312:Feral Leggings of Agility:20"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 7999,
+			["h"] = {
+				[1539] = 7999,
+			},
+		},
+		["g:15978:41"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 97696,
+			},
+			["m"] = 97696,
+		},
+		["gn:864:Knightly Longsword of the Monkey:38"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19561,
+			},
+			["m"] = 19561,
+		},
+		["gn:6238:Brown Linen Robe:10"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 772,
+			["h"] = {
+			},
+		},
+		["gn:7443:Sentinel Gloves of Healing:37"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29800,
+			},
+			["m"] = 29800,
+		},
+		["gn:9883:Sorcerer Pants of Healing:42"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 57999,
+			},
+			["m"] = 57999,
+		},
+		["g:14189:32"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["3914"] = {
+			["a"] = {
+				[1539] = 28,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 187914,
+			},
+			["m"] = 187914,
+		},
+		["gn:217252:Long Silken Cloak:37"] = {
+			["a"] = {
+				[1538] = 7,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5960,
+			},
+			["m"] = 5960,
+		},
+		["gn:9867:Renegade Cloak of Healing:33"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 18997,
+			},
+			["m"] = 18997,
+		},
+		["3413"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 129895,
+			},
+			["m"] = 129895,
+		},
+		["3288"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 7994,
+			["h"] = {
+				[1539] = 7994,
+			},
+		},
+		["g:776:31"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 222953,
+			},
+			["m"] = 222953,
+		},
+		["828"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 530,
+			["h"] = {
+				[1539] = 530,
+			},
+		},
+		["gn:14164:Pagan Belt of the Monkey:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 17914,
+			["h"] = {
+			},
+		},
+		["g:2303:10"] = {
+			["a"] = {
+				[1539] = 32,
+			},
+			["l"] = {
+			},
+			["m"] = 5594,
+			["h"] = {
+				[1539] = 5594,
+			},
+		},
+		["g:9911:46"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 100000,
+			},
+			["m"] = 100000,
+		},
+		["9879"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9954,
+			},
+			["m"] = 9954,
+		},
+		["g:7412:32"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9996,
+			},
+			["m"] = 9996,
+		},
+		["gn:9776:Bandit Boots of the Monkey:20"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 19899,
+			["h"] = {
+				[1539] = 19899,
+			},
+		},
+		["gn:12248:Daring Dirk:34"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 79992,
+			},
+			["m"] = 79992,
+		},
+		["3205"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9900,
+			["h"] = {
+				[1539] = 9900,
+			},
+		},
+		["gn:3784:Metal Stave:37"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9977,
+			},
+			["m"] = 9977,
+		},
+		["g:9865:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 22496,
+			},
+			["m"] = 22496,
+		},
+		["gn:12259:Glinting Steel Dagger:36"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89987,
+			},
+			["m"] = 89987,
+		},
+		["gn:15364:Trickster's Cloak of Stamina:36"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 29171,
+			},
+			["m"] = 29171,
+		},
+		["gn:7525:Gossamer Bracers of Healing:45"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 88497,
+			},
+			["m"] = 88497,
+		},
+		["gn:9771:Greenweave Gloves of the Falcon:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 9500,
+		},
+		["gn:15303:Grizzly Pants of the Falcon:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 7098,
+			["h"] = {
+				[1539] = 7098,
+			},
+		},
+		["gn:9831:Scaled Cloak of Healing:29"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9999,
+			},
+			["m"] = 9999,
+		},
+		["g:15974:26"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8899,
+			},
+			["m"] = 8899,
+		},
+		["gn:15223:Jagged Star of Healing:24"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9916,
+			},
+			["m"] = 9916,
+		},
+		["gn:15008:Primal Mitts:10"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["1425"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2900,
+			["h"] = {
+				[1539] = 2900,
+			},
+		},
+		["g:9844:38"] = {
+			["a"] = {
+				[1540] = 31,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9996,
+			},
+			["m"] = 9996,
+		},
+		["gn:14235:Embersilk Cord of Healing:37"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19976,
+			},
+			["m"] = 19976,
+		},
+		["g:1664:41"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 58499,
+			},
+			["m"] = 58499,
+		},
+		["gn:7430:Twilight Robe of the Owl:40"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9897,
+			},
+			["m"] = 9897,
+		},
+		["857"] = {
+			["a"] = {
+				[1539] = 15,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8461,
+			},
+			["m"] = 8461,
+		},
+		["gn:4571:War Knife of Stamina:17"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 11743,
+			["h"] = {
+				[1539] = 11743,
+			},
+		},
+		["gn:9776:Bandit Boots of the Gorilla:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 10977,
+			["h"] = {
+				[1539] = 10977,
+			},
+		},
+		["gn:11287:Lesser Magic Wand:15"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 1840,
+			["h"] = {
+			},
+		},
+		["4789"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 7694,
+			["h"] = {
+				[1539] = 7694,
+			},
+		},
+		["g:3287:12"] = {
+			["a"] = {
+				[1539] = 13,
+			},
+			["l"] = {
+			},
+			["m"] = 3398,
+			["h"] = {
+				[1539] = 3398,
+			},
+		},
+		["g:15306:16"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+				[1539] = 2000,
+			},
+			["h"] = {
+				[1539] = 7800,
+			},
+			["m"] = 4498,
+		},
+		["gn:3321:Gray Fur Booties:9"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 10101,
+			["h"] = {
+				[1539] = 10101,
+			},
+		},
+		["gn:6554:Bard's Gloves of Healing:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9900,
+			["h"] = {
+				[1539] = 9900,
+			},
+		},
+		["gn:15012:Lupine Slippers of the Whale:16"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 3998,
+			["h"] = {
+				[1539] = 3998,
+			},
+		},
+		["g:215375:31"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 1290,
+			},
+			["m"] = 1290,
+		},
+		["g:7366:32"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9000,
+			},
+			["m"] = 9000,
+		},
+		["2657"] = {
+			["a"] = {
+				[1539] = 12,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 1561,
+			},
+			["m"] = 1561,
+		},
+		["gn:14158:Pagan Vest of the Owl:26"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 8900,
+			["h"] = {
+				[1538] = 8900,
+			},
+		},
+		["gn:9890:Huntsman's Cape of the Wolf:38"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9990,
+			},
+			["m"] = 9990,
+		},
+		["15018"] = {
+			["a"] = {
+				[1539] = 15,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["gn:7429:Twilight Armor of Intellect:40"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 36999,
+			},
+			["m"] = 36999,
+		},
+		["5254"] = {
+			["a"] = {
+				[1539] = 18,
 			},
 			["l"] = {
 			},
@@ -19125,22 +10244,863 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1539] = 4998,
 			},
 		},
-		["14219"] = {
+		["3305"] = {
 			["a"] = {
-				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 900,
+		},
+		["3033"] = {
+			["a"] = {
+				[1539] = 1200,
+			},
+			["l"] = {
+			},
+			["m"] = 5,
+			["h"] = {
+				[1539] = 5,
+			},
+		},
+		["gn:6379:Inscribed Leather Belt:17"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 7588,
+			["h"] = {
+				[1539] = 7588,
+			},
+		},
+		["gn:3848:Big Bronze Knife:20"] = {
+			["a"] = {
+				[1539] = 11,
+			},
+			["l"] = {
+			},
+			["m"] = 10024,
+			["h"] = {
+				[1539] = 10024,
+			},
+		},
+		["g:9927:42"] = {
+			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 25000,
 			["h"] = {
-				[1538] = 24552,
-				[1539] = 25000,
+				[1539] = 48797,
+			},
+			["m"] = 48797,
+		},
+		["gn:7353:Elder's Padded Armor of Stamina:35"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9999,
+			},
+			["m"] = 9999,
+		},
+		["gn:7369:Elder's Robe of Frozen Wrath:35"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 108075,
+			},
+			["m"] = 108075,
+		},
+		["g:9775:19"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 10083,
+			["h"] = {
+				[1539] = 10083,
 			},
 		},
-		["7412"] = {
+		["gn:15241:Battle Knife of Power:26"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 8999,
+			},
+			["m"] = 8999,
+		},
+		["g:14409:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 14999,
+			},
+			["m"] = 14999,
+		},
+		["gn:15018:Lupine Vest of Spirit:20"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 8382,
+			["h"] = {
+				[1539] = 8382,
+			},
+		},
+		["gn:9879:Sorcerer Bracelets of Healing:39"] = {
 			["a"] = {
 				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9954,
+			},
+			["m"] = 9954,
+		},
+		["gn:2077:Magician Staff of Frozen Wrath:29"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 24999,
+			},
+			["m"] = 24999,
+		},
+		["gn:2987:Inscribed Leather Boots:18"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 7499,
+			["h"] = {
+				[1539] = 7499,
+			},
+		},
+		["3803"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 1495,
+			},
+			["m"] = 1495,
+		},
+		["gn:15018:Lupine Vest of the Whale:20"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 8311,
+			["h"] = {
+				[1539] = 8311,
+			},
+		},
+		["gn:9777:Bandit Bracers of the Monkey:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19954,
+			["h"] = {
+				[1539] = 19954,
+			},
+		},
+		["7524"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 34429,
+			},
+			["m"] = 34429,
+		},
+		["9777"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 4405,
+			["h"] = {
+				[1539] = 4405,
+			},
+		},
+		["gn:2800:Black Velvet Robes:26"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 109999,
+			["h"] = {
+				[1538] = 109999,
+			},
+		},
+		["14207"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12303,
+			},
+			["m"] = 12303,
+		},
+		["7489"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 80000,
+			},
+			["m"] = 80000,
+		},
+		["208800"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 15538,
+		},
+		["gn:15520:Spiked Chain Gauntlets of the Bear:26"] = {
+			["a"] = {
+				[1539] = 6,
+				[1540] = 3,
+				[1538] = 5,
+				[1541] = 3,
+			},
+			["l"] = {
+				[1539] = 2903,
+				[1540] = 2399,
+				[1538] = 2912,
+				[1541] = 2109,
+			},
+			["m"] = 2109,
+			["h"] = {
+				[1539] = 2904,
+				[1540] = 2900,
+				[1538] = 3248,
+				[1541] = 2110,
+			},
+		},
+		["gn:7460:Knight's Cloak of Healing:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4999,
+			},
+			["m"] = 4999,
+		},
+		["gn:9766:Greenweave Sash of Intellect:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 12200,
+			["h"] = {
+			},
+		},
+		["gn:9860:Archer's Cloak of the Monkey:34"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 11787,
+			},
+			["m"] = 11787,
+		},
+		["15112"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 8000,
+			["h"] = {
+				[1539] = 8000,
+			},
+		},
+		["g:3288:13"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 7994,
+			["h"] = {
+				[1539] = 7994,
+			},
+		},
+		["gn:14204:Thistlefur Robe of Intellect:36"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 12164,
+			},
+			["m"] = 12164,
+		},
+		["gn:2549:Staff of the Shade:27"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89999,
+			},
+			["m"] = 89999,
+		},
+		["gn:6553:Bard's Trousers of the Whale:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 6000,
+			["h"] = {
+				[1539] = 6000,
+			},
+		},
+		["gn:9860:Archer's Cloak of Defense:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 8500,
+			},
+			["m"] = 8500,
+		},
+		["g:4861:10"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 22523,
+			["h"] = {
+				[1539] = 22523,
+			},
+		},
+		["gn:7524:Gossamer Cape of Healing:44"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 34429,
+			},
+			["m"] = 34429,
+		},
+		["2515"] = {
+			["a"] = {
+				[1539] = 1729,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5,
+			},
+			["m"] = 5,
+		},
+		["g:3187:44"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 52550,
+			},
+			["m"] = 52550,
+		},
+		["gn:9791:Ivycloth Tunic of the Owl:29"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 11116,
+			["h"] = {
+				[1538] = 11116,
+			},
+		},
+		["g:4571:17"] = {
+			["a"] = {
+				[1539] = 22,
+			},
+			["l"] = {
+				[1539] = 7999,
+			},
+			["h"] = {
+				[1539] = 8000,
+			},
+			["m"] = 7999,
+		},
+		["gn:7474:Regal Cloak of Healing:40"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12192,
+			},
+			["m"] = 12192,
+		},
+		["g:14158:26"] = {
+			["a"] = {
+				[1538] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 3998,
+			["h"] = {
+				[1538] = 3998,
+			},
+		},
+		["gn:15153:Nocturnal Cloak of Arcane Wrath:37"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 39900,
+			},
+			["m"] = 39900,
+		},
+		["gn:14159:Pagan Shoes of Spirit:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3500,
+			["h"] = {
+			},
+		},
+		["4596"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 549,
+			},
+			["m"] = 549,
+		},
+		["1210"] = {
+			["a"] = {
+				[1538] = 75,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 243,
+			},
+			["m"] = 243,
+		},
+		["gn:15011:Lupine Cord of the Eagle:15"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 6844,
+			["h"] = {
+				[1539] = 6844,
+			},
+		},
+		["gn:8223:Blade of the Basilisk:37"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 459743,
+			},
+			["m"] = 459743,
+		},
+		["gn:3287:Tribal Pants:12"] = {
+			["a"] = {
+				[1539] = 13,
+			},
+			["l"] = {
+			},
+			["m"] = 3398,
+			["h"] = {
+				[1539] = 3398,
+			},
+		},
+		["9903"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 22220,
+			},
+			["m"] = 22220,
+		},
+		["2589"] = {
+			["a"] = {
+				[1538] = 434,
+			},
+			["l"] = {
+			},
+			["m"] = 63,
+			["h"] = {
+				[1538] = 63,
+			},
+		},
+		["gn:6552:Bard's Tunic of the Eagle:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9042,
+			["h"] = {
+				[1539] = 9042,
+			},
+		},
+		["gn:7369:Elder's Robe of the Whale:35"] = {
+			["a"] = {
+				[1538] = 3,
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 10024,
+			["h"] = {
+				[1538] = 7996,
+				[1540] = 10024,
+			},
+		},
+		["g:4788:20"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 10290,
+			["h"] = {
+				[1539] = 10290,
+			},
+		},
+		["g:7443:37"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29800,
+			},
+			["m"] = 29800,
+		},
+		["g:15018:20"] = {
+			["a"] = {
+				[1539] = 15,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["2973"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8626,
+			["h"] = {
+				[1539] = 8626,
+			},
+		},
+		["4237"] = {
+			["a"] = {
+				[1539] = 166,
+			},
+			["l"] = {
+			},
+			["m"] = 2069,
+			["h"] = {
+				[1539] = 2069,
+			},
+		},
+		["g:14177:26"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8000,
+			["h"] = {
+				[1539] = 8000,
+			},
+		},
+		["14559"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 3899,
+			["h"] = {
+				[1539] = 3899,
+			},
+		},
+		["6290"] = {
+			["a"] = {
+				[1539] = 412,
+			},
+			["l"] = {
+			},
+			["m"] = 1038,
+			["h"] = {
+				[1539] = 1038,
+			},
+		},
+		["g:3184:20"] = {
+			["a"] = {
+				[1539] = 19,
+			},
+			["l"] = {
+				[1539] = 8148,
+			},
+			["h"] = {
+				[1539] = 9996,
+			},
+			["m"] = 8148,
+		},
+		["g:7432:38"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9993,
+			},
+			["m"] = 9993,
+		},
+		["gn:864:Knightly Longsword of Stamina:38"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19885,
+			},
+			["m"] = 19885,
+		},
+		["gn:7475:Regal Cuffs of Healing:41"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 45096,
+			},
+			["m"] = 45096,
+		},
+		["gn:15112:Rigid Bracelets of the Owl:20"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 15496,
+			["h"] = {
+				[1539] = 15496,
+			},
+		},
+		["gn:9756:Gypsy Trousers of the Owl:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 6597,
+			["h"] = {
+				[1539] = 6597,
+			},
+		},
+		["gn:15298:Grizzly Buckler of Healing:13"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4496,
+			},
+			["m"] = 4496,
+		},
+		["15329"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3041,
+			["h"] = {
+			},
+		},
+		["gn:6553:Bard's Trousers of Agility:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7085,
+			["h"] = {
+				[1539] = 7085,
+			},
+		},
+		["gn:14397:Resilient Mantle:32"] = {
+			["a"] = {
+				[1539] = 5,
+				[1540] = 5,
+				[1538] = 7,
+			},
+			["l"] = {
+				[1539] = 3077,
+				[1540] = 2471,
+				[1538] = 3085,
+			},
+			["m"] = 2471,
+			["h"] = {
+				[1539] = 3078,
+				[1540] = 3072,
+				[1538] = 5586,
+			},
+		},
+		["gn:12998:Magician's Mantle:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 109085,
+		},
+		["gn:9847:Conjurer's Cloak of the Eagle:33"] = {
+			["a"] = {
+				[1538] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 11197,
+			},
+			["m"] = 11197,
+		},
+		["gn:15594:Steadfast Cloak of Stamina:37"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["gn:791:Gnarled Ash Staff:31"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 20190,
+			},
+			["m"] = 20190,
+		},
+		["gn:4732:Glyphed Cloak:37"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5484,
+			},
+			["m"] = 5484,
+		},
+		["gn:3185:Acrobatic Staff of Nature's Wrath:34"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 96052,
+			},
+			["m"] = 96052,
+		},
+		["gn:14129:Ritual Sandals of the Owl:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 7600,
+			["h"] = {
+			},
+		},
+		["gn:2632:Curved Dagger of Strength:14"] = {
+			["a"] = {
+				[1539] = 2,
 			},
 			["l"] = {
 			},
@@ -19149,61 +11109,7856 @@ AUCTIONATOR_PRICE_DATABASE = {
 				[1539] = 9996,
 			},
 		},
-		["gn:3185:Acrobatic Staff of Stamina:34"] = {
-			["a"] = {
-				[1540] = 5,
-			},
-			["l"] = {
-			},
-			["m"] = 29998,
-			["h"] = {
-				[1540] = 29998,
-			},
-		},
-		["g:14124:20"] = {
-			["a"] = {
-				[1530] = 6,
-			},
-			["l"] = {
-				[1530] = 3090,
-			},
-			["m"] = 3090,
-			["h"] = {
-				[1530] = 9991,
-			},
-		},
-		["gn:15970:Native Branch of Healing:15"] = {
+		["g:9925:44"] = {
 			["a"] = {
 				[1539] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 900,
 			["h"] = {
-				[1539] = 900,
+				[1539] = 39997,
+			},
+			["m"] = 39997,
+		},
+		["gn:1716:Robe of the Magi:40"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 315000,
+			},
+			["m"] = 315000,
+		},
+		["gn:6553:Bard's Trousers of the Eagle:18"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 4997,
+			["h"] = {
+				[1539] = 4997,
 			},
 		},
-		["gn:2072:Dwarven Magestaff of the Bear:27"] = {
+		["805"] = {
+			["a"] = {
+				[1539] = 20,
+			},
+			["l"] = {
+			},
+			["m"] = 871,
+			["h"] = {
+				[1539] = 871,
+			},
+		},
+		["g:4368:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 2173,
+		},
+		["gn:15269:Massive Battle Axe of the Whale:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3091,
+			["h"] = {
+			},
+		},
+		["6289"] = {
+			["a"] = {
+				[1539] = 80,
+			},
+			["l"] = {
+				[1539] = 1,
+			},
+			["h"] = {
+				[1539] = 2,
+			},
+			["m"] = 1,
+		},
+		["g:1265:39"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 25585,
+			},
+			["m"] = 25585,
+		},
+		["gn:15110:Rigid Belt of the Monkey:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19900,
+			["h"] = {
+				[1539] = 19900,
+			},
+		},
+		["g:5254:20"] = {
+			["a"] = {
+				[1539] = 18,
+			},
+			["l"] = {
+			},
+			["m"] = 4998,
+			["h"] = {
+				[1539] = 4998,
+			},
+		},
+		["gn:2075:Priest's Mace of Healing:12"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 1994,
+			},
+			["m"] = 1994,
+		},
+		["gn:6591:Battleforge Wristguards of Healing:27"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3000,
+			},
+			["m"] = 3000,
+		},
+		["10288"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29900,
+			},
+			["m"] = 29900,
+		},
+		["g:873:40"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 2757139,
+			},
+			["m"] = 2757139,
+		},
+		["gn:14242:Darkmist Pants of Healing:43"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59993,
+			},
+			["m"] = 59993,
+		},
+		["gn:15305:Feral Shoes of the Whale:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7599,
+			["h"] = {
+				[1539] = 7599,
+			},
+		},
+		["g:7053:35"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 24449,
+			},
+			["m"] = 24449,
+		},
+		["865"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 39998,
+			},
+			["m"] = 39998,
+		},
+		["7462"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 46999,
+			},
+			["m"] = 46999,
+		},
+		["14177"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8000,
+			["h"] = {
+				[1539] = 8000,
+			},
+		},
+		["g:5766:27"] = {
+			["a"] = {
+				[1538] = 11,
+			},
+			["l"] = {
+			},
+			["m"] = 13907,
+			["h"] = {
+				[1538] = 13907,
+			},
+		},
+		["14202"] = {
+			["a"] = {
+				[1538] = 1,
+				[1540] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 10000,
+			["h"] = {
+				[1538] = 13007,
+				[1540] = 10000,
+			},
+		},
+		["15934"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9998,
+			},
+			["m"] = 9998,
+		},
+		["gn:14211:Vital Handwraps of Healing:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7194,
+			},
+			["m"] = 7194,
+		},
+		["2447"] = {
+			["a"] = {
+				[1539] = 545,
+			},
+			["l"] = {
+				[1539] = 33,
+			},
+			["m"] = 33,
+			["h"] = {
+				[1539] = 34,
+			},
+		},
+		["9780"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 6462,
+			["h"] = {
+				[1539] = 6462,
+			},
+		},
+		["g:9869:35"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 15894,
+			},
+			["m"] = 15894,
+		},
+		["gn:9852:Conjurer's Robe of Stamina:38"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 30000,
+			},
+			["m"] = 30000,
+		},
+		["g:15226:37"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19988,
+			},
+			["m"] = 19988,
+		},
+		["5780"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 29999,
+			["h"] = {
+				[1539] = 29999,
+			},
+		},
+		["gn:14162:Pagan Mitts of Healing:23"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12774,
+			},
+			["m"] = 12774,
+		},
+		["gn:9867:Renegade Cloak of the Eagle:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 19900,
+			},
+			["m"] = 19900,
+		},
+		["g:14229:36"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9983,
+			},
+			["m"] = 9983,
+		},
+		["gn:2140:Carving Knife of Agility:11"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 11497,
+			["h"] = {
+				[1539] = 11497,
+			},
+		},
+		["15978"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 97696,
+			},
+			["m"] = 97696,
+		},
+		["gn:6568:Shimmering Trousers of Healing:24"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 11110,
+			},
+			["m"] = 11110,
+		},
+		["gn:7369:Elder's Robe of the Owl:35"] = {
+			["a"] = {
+				[1538] = 2,
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 6589,
+			["h"] = {
+				[1538] = 3388,
+				[1540] = 6589,
+			},
+		},
+		["gn:6609:Sage's Cloth of the Owl:32"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4391,
+			["h"] = {
+				[1538] = 4391,
+			},
+		},
+		["gn:2303:Handstitched Leather Pants:10"] = {
+			["a"] = {
+				[1539] = 32,
+			},
+			["l"] = {
+			},
+			["m"] = 5594,
+			["h"] = {
+				[1539] = 5594,
+			},
+		},
+		["g:3069:27"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5600,
+			["h"] = {
+				[1538] = 5600,
+			},
+		},
+		["14122"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7552,
+			},
+			["m"] = 7552,
+		},
+		["gn:15112:Rigid Bracelets of Spirit:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8000,
+			["h"] = {
+				[1539] = 8000,
+			},
+		},
+		["gn:2766:Deft Stiletto:29"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 7694,
+			},
+			["m"] = 7694,
+		},
+		["gn:6553:Bard's Trousers of the Owl:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7500,
+			["h"] = {
+				[1539] = 7500,
+			},
+		},
+		["gn:2632:Curved Dagger of Arcane Wrath:14"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 9995,
+			["h"] = {
+				[1539] = 9995,
+			},
+		},
+		["gn:15243:Deadly Kris of Stamina:36"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 74445,
+			},
+			["m"] = 74445,
+		},
+		["gn:2072:Dwarven Magestaff of Power:27"] = {
 			["a"] = {
 				[1540] = 3,
 			},
 			["l"] = {
 			},
-			["m"] = 42965,
 			["h"] = {
-				[1540] = 42965,
+				[1540] = 12996,
+			},
+			["m"] = 12996,
+		},
+		["gn:14207:Vital Leggings of Healing:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12303,
+			},
+			["m"] = 12303,
+		},
+		["gn:7353:Elder's Padded Armor of Intellect:35"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 11093,
+			["h"] = {
+				[1538] = 11093,
 			},
 		},
-		["gn:7446:Sentinel Cloak of Spirit:36"] = {
+		["gn:15118:Rigid Tunic of the Eagle:26"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 6000,
+			["h"] = {
+			},
+		},
+		["gn:6562:Shimmering Boots of the Falcon:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 7634,
+			["h"] = {
+			},
+		},
+		["g:9832:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19900,
+			},
+			["m"] = 19900,
+		},
+		["gn:9767:Greenweave Sandals of the Falcon:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 6369,
+			["h"] = {
+			},
+		},
+		["2569"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 1500,
+			["h"] = {
+			},
+		},
+		["3569"] = {
 			["a"] = {
 				[1538] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 8717,
+			["m"] = 6293,
 			["h"] = {
-				[1538] = 8717,
+				[1538] = 6293,
 			},
+		},
+		["4569"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3797,
+			},
+			["m"] = 3797,
+		},
+		["gn:2632:Curved Dagger of Fiery Wrath:14"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5997,
+			["h"] = {
+				[1539] = 5997,
+			},
+		},
+		["gn:9775:Bandit Cinch of the Owl:19"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 10083,
+			["h"] = {
+				[1539] = 10083,
+			},
+		},
+		["gn:15308:Feral Cord of the Falcon:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 22525,
+			["h"] = {
+				[1539] = 22525,
+			},
+		},
+		["g:15269:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3091,
+			["h"] = {
+			},
+		},
+		["gn:2819:Cross Dagger of the Bear:28"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9499,
+			},
+			["m"] = 9499,
+		},
+		["5573"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4885,
+			},
+			["m"] = 4885,
+		},
+		["3827"] = {
+			["a"] = {
+				[1540] = 701,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 1300,
+			},
+			["m"] = 1300,
+		},
+		["g:14194:28"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9991,
+			},
+			["m"] = 9991,
+		},
+		["gn:9853:Conjurer's Cinch of Healing:34"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 13096,
+			},
+			["m"] = 13096,
+		},
+		["g:9848:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 25950,
+			},
+			["m"] = 25950,
+		},
+		["g:14192:31"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 8000,
+			["h"] = {
+				[1538] = 8000,
+			},
+		},
+		["gn:2569:Linen Boots:13"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 1500,
+			["h"] = {
+			},
+		},
+		["gn:15241:Battle Knife of Arcane Wrath:26"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 36144,
+			},
+			["m"] = 36144,
+		},
+		["gn:14114:Aboriginal Footwraps of the Falcon:16"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2200,
+			["h"] = {
+			},
+		},
+		["gn:14204:Thistlefur Robe of the Whale:36"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 12162,
+			},
+			["m"] = 12162,
+		},
+		["17058"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 248,
+			["h"] = {
+			},
+		},
+		["14158"] = {
+			["a"] = {
+				[1538] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 3998,
+			["h"] = {
+				[1538] = 3998,
+			},
+		},
+		["gn:14225:Geomancer's Wraps of Frozen Wrath:41"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 26000,
+			},
+			["m"] = 26000,
+		},
+		["gn:6269:Pioneer Trousers of the Eagle:12"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 2000,
+			["h"] = {
+				[1539] = 2000,
+			},
+		},
+		["gn:15310:Feral Gloves of the Eagle:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 12999,
+			["h"] = {
+				[1539] = 12999,
+			},
+		},
+		["gn:9780:Bandit Gloves of the Owl:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9000,
+			["h"] = {
+				[1539] = 9000,
+			},
+		},
+		["g:4244:20"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9988,
+			["h"] = {
+				[1539] = 9988,
+			},
+		},
+		["g:7555:45"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["g:6565:22"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["gn:3185:Acrobatic Staff of Power:34"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["gn:6557:Bard's Boots of the Monkey:16"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 17999,
+			["h"] = {
+				[1539] = 17999,
+			},
+		},
+		["g:7436:35"] = {
+			["a"] = {
+				[1538] = 14,
+			},
+			["l"] = {
+				[1538] = 5729,
+			},
+			["h"] = {
+				[1538] = 5731,
+			},
+			["m"] = 5729,
+		},
+		["g:15594:37"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 7000,
+			},
+			["m"] = 7000,
+		},
+		["gn:15241:Battle Knife of the Monkey:26"] = {
+			["a"] = {
+				[1540] = 10,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 13795,
+			},
+			["m"] = 13795,
+		},
+		["gn:9903:Jazeraint Leggings of Healing:42"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 22220,
+			},
+			["m"] = 22220,
+		},
+		["g:2961:11"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 1996,
+			["h"] = {
+				[1539] = 1996,
+			},
+		},
+		["gn:7368:Elder's Pants of Healing:34"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7998,
+			},
+			["m"] = 7998,
+		},
+		["gn:14241:Darkmist Handguards of Healing:41"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 30125,
+			},
+			["m"] = 30125,
+		},
+		["gn:15242:Honed Stiletto of the Bear:30"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9997,
+			},
+			["m"] = 9997,
+		},
+		["g:14125:21"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2613,
+			},
+			["m"] = 2613,
+		},
+		["gn:5254:Rugged Spaulders:20"] = {
+			["a"] = {
+				[1539] = 18,
+			},
+			["l"] = {
+			},
+			["m"] = 4998,
+			["h"] = {
+				[1539] = 4998,
+			},
+		},
+		["gn:7478:Ranger Leggings of Healing:43"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 40000,
+			},
+			["m"] = 40000,
+		},
+		["4038"] = {
+			["a"] = {
+				[1538] = 4,
+				[1540] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 5719,
+			["h"] = {
+				[1538] = 5889,
+				[1540] = 5719,
+			},
+		},
+		["gn:3184:Hook Dagger of Strength:20"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 14996,
+			["h"] = {
+				[1539] = 14996,
+			},
+		},
+		["4537"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 4,
+			["h"] = {
+				[1539] = 4,
+			},
+		},
+		["6615"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12498,
+			},
+			["m"] = 12498,
+		},
+		["gn:7436:Twilight Cape of Shadow Wrath:35"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 39999,
+			},
+			["m"] = 39999,
+		},
+		["g:4575:19"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9544,
+			},
+			["m"] = 9544,
+		},
+		["g:9826:34"] = {
+			["a"] = {
+				[1538] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 3998,
+			["h"] = {
+				[1538] = 3998,
+			},
+		},
+		["g:4324:30"] = {
+			["a"] = {
+				[1538] = 15,
+			},
+			["l"] = {
+			},
+			["m"] = 2899,
+			["h"] = {
+				[1538] = 2899,
+			},
+		},
+		["5781"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 29992,
+			["h"] = {
+				[1539] = 29992,
+			},
+		},
+		["gn:3569:Vicar's Robe:26"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 6293,
+			["h"] = {
+				[1538] = 6293,
+			},
+		},
+		["g:9772:27"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9998,
+			},
+			["m"] = 9998,
+		},
+		["g:14242:43"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59993,
+			},
+			["m"] = 59993,
+		},
+		["gn:7353:Elder's Padded Armor of Spirit:35"] = {
+			["a"] = {
+				[1538] = 2,
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9985,
+			["h"] = {
+				[1538] = 9990,
+				[1540] = 9985,
+			},
+		},
+		["gn:3313:Ceremonial Leather Harness:18"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 9992,
+			["h"] = {
+				[1539] = 9992,
+			},
+		},
+		["10581"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 194559,
+			},
+			["m"] = 194559,
+		},
+		["gn:15303:Grizzly Pants of the Owl:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 2585,
+			["h"] = {
+				[1539] = 2585,
+			},
+		},
+		["g:7440:39"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 54880,
+			},
+			["m"] = 54880,
+		},
+		["g:14407:39"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9983,
+			},
+			["m"] = 9983,
+		},
+		["1794"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2228,
+			["h"] = {
+				[1539] = 2228,
+			},
+		},
+		["4498"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 1891,
+			},
+			["m"] = 1891,
+		},
+		["gn:15018:Lupine Vest of the Wolf:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 14597,
+			["h"] = {
+				[1539] = 14597,
+			},
+		},
+		["g:790:23"] = {
+			["a"] = {
+				[1538] = 2,
+				[1539] = 1,
+			},
+			["l"] = {
+				[1538] = 5086,
+				[1539] = 5099,
+			},
+			["m"] = 5099,
+			["h"] = {
+				[1538] = 8187,
+				[1539] = 8900,
+			},
+		},
+		["10512"] = {
+			["a"] = {
+				[1539] = 4605,
+			},
+			["l"] = {
+				[1539] = 3,
+			},
+			["h"] = {
+				[1539] = 5,
+			},
+			["m"] = 3,
+		},
+		["g:7065:33"] = {
+			["a"] = {
+				[1538] = 11,
+			},
+			["l"] = {
+			},
+			["m"] = 17598,
+			["h"] = {
+				[1538] = 17598,
+			},
+		},
+		["g:6570:22"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 11000,
+			["h"] = {
+				[1539] = 11000,
+			},
+		},
+		["gn:9877:Sorcerer Cloak of Shadow Wrath:38"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 22500,
+			},
+			["m"] = 22500,
+		},
+		["g:15147:33"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 19998,
+			},
+			["m"] = 19998,
+		},
+		["7369"] = {
+			["a"] = {
+				[1538] = 11,
+				[1540] = 22,
+			},
+			["l"] = {
+			},
+			["m"] = 6589,
+			["h"] = {
+				[1538] = 3388,
+				[1540] = 6589,
+			},
+		},
+		["14125"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2613,
+			},
+			["m"] = 2613,
+		},
+		["15014"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4998,
+			},
+			["m"] = 4998,
+		},
+		["g:15613:42"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 55598,
+			},
+			["m"] = 55598,
+		},
+		["15013"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4269,
+			["h"] = {
+				[1539] = 4269,
+			},
+		},
+		["gn:9890:Huntsman's Cape of Agility:38"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 29997,
+			},
+			["m"] = 29997,
+		},
+		["gn:2077:Magician Staff of Arcane Wrath:29"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19999,
+			},
+			["m"] = 19999,
+		},
+		["gn:15018:Lupine Vest of the Owl:20"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["gn:9795:Ivycloth Gloves of Healing:26"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8203,
+			},
+			["m"] = 8203,
+		},
+		["gn:12251:Big Stick:37"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 82540,
+			},
+			["m"] = 82540,
+		},
+		["gn:2632:Curved Dagger of Stamina:14"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 6698,
+			["h"] = {
+				[1539] = 6698,
+			},
+		},
+		["g:9903:42"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 22220,
+			},
+			["m"] = 22220,
+		},
+		["gn:9756:Gypsy Trousers of the Eagle:14"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 6994,
+			["h"] = {
+				[1539] = 6994,
+			},
+		},
+		["14228"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 30000,
+			},
+			["m"] = 30000,
+		},
+		["3185"] = {
+			["a"] = {
+				[1539] = 1,
+				[1540] = 47,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9973,
+				[1540] = 8763,
+			},
+			["m"] = 8763,
+		},
+		["9865"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 22496,
+			},
+			["m"] = 22496,
+		},
+		["gn:14131:Ritual Belt of Healing:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3281,
+			},
+			["m"] = 3281,
+		},
+		["15225"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 48091,
+			},
+			["m"] = 48091,
+		},
+		["gn:9771:Greenweave Gloves of the Monkey:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 8496,
+		},
+		["g:9795:26"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8203,
+			},
+			["m"] = 8203,
+		},
+		["14124"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 3090,
+		},
+		["gn:9898:Jazeraint Cloak of the Bear:38"] = {
+			["a"] = {
+				[1538] = 7,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4999,
+			},
+			["m"] = 4999,
+		},
+		["gn:2911:Keller's Girdle:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 299997,
+			["h"] = {
+			},
+		},
+		["6552"] = {
+			["a"] = {
+				[1539] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 7992,
+			["h"] = {
+				[1539] = 7992,
+			},
+		},
+		["gn:6609:Sage's Cloth of Frozen Wrath:32"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 6665,
+			["h"] = {
+				[1538] = 6665,
+			},
+		},
+		["gn:2140:Carving Knife of Shadow Wrath:11"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19998,
+			["h"] = {
+				[1539] = 19998,
+			},
+		},
+		["gn:9877:Sorcerer Cloak of the Whale:38"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 7483,
+			},
+			["m"] = 7483,
+		},
+		["gn:15112:Rigid Bracelets of the Eagle:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9310,
+			["h"] = {
+				[1539] = 9310,
+			},
+		},
+		["g:9853:34"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 13096,
+			},
+			["m"] = 13096,
+		},
+		["7357"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5986,
+			},
+			["m"] = 5986,
+		},
+		["g:15975:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 100000,
+			},
+			["m"] = 100000,
+		},
+		["gn:2764:Small Dagger:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 3301,
+			["h"] = {
+				[1539] = 3301,
+			},
+		},
+		["g:3185:34"] = {
+			["a"] = {
+				[1539] = 1,
+				[1540] = 47,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9973,
+				[1540] = 8763,
+			},
+			["m"] = 8763,
+		},
+		["7469"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59999,
+			},
+			["m"] = 59999,
+		},
+		["gn:9791:Ivycloth Tunic of Intellect:29"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 11965,
+			["h"] = {
+				[1538] = 11965,
+			},
+		},
+		["15223"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9916,
+			},
+			["m"] = 9916,
+		},
+		["g:12998:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 109085,
+		},
+		["gn:15310:Feral Gloves of the Whale:18"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 12996,
+			["h"] = {
+				[1539] = 12996,
+			},
+		},
+		["15971"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9898,
+			},
+			["m"] = 9898,
+		},
+		["4324"] = {
+			["a"] = {
+				[1538] = 15,
+			},
+			["l"] = {
+			},
+			["m"] = 2899,
+			["h"] = {
+				[1538] = 2899,
+			},
+		},
+		["1772"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 997,
+			["h"] = {
+			},
+		},
+		["g:14413:39"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 11596,
+			},
+			["m"] = 11596,
+		},
+		["g:866:42"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19959,
+			},
+			["m"] = 19959,
+		},
+		["g:7544:44"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 79892,
+			},
+			["m"] = 79892,
+		},
+		["g:4789:18"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 7694,
+			["h"] = {
+				[1539] = 7694,
+			},
+		},
+		["g:3850:35"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 44997,
+			},
+			["m"] = 44997,
+		},
+		["2549"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89999,
+			},
+			["m"] = 89999,
+		},
+		["7478"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 40000,
+			},
+			["m"] = 40000,
+		},
+		["gn:15241:Battle Knife of Healing:26"] = {
+			["a"] = {
+				[1539] = 2,
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5095,
+				[1540] = 25522,
+			},
+			["m"] = 25522,
+		},
+		["gn:15367:Trickster's Protector of Healing:39"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["g:4566:13"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8999,
+			},
+			["m"] = 8999,
+		},
+		["gn:2317:Dark Leather Tunic:20"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 9496,
+			["h"] = {
+				[1539] = 9496,
+			},
+		},
+		["15340"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 15063,
+			},
+			["m"] = 15063,
+		},
+		["gn:9898:Jazeraint Cloak of the Boar:38"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 11533,
+			},
+			["m"] = 11533,
+		},
+		["g:9862:37"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 49998,
+			},
+			["m"] = 49998,
+		},
+		["14413"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 11596,
+			},
+			["m"] = 11596,
+		},
+		["gn:2072:Dwarven Magestaff of the Monkey:27"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 6999,
+			},
+			["m"] = 6999,
+		},
+		["g:15537:28"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9999,
+			},
+			["m"] = 9999,
+		},
+		["4698"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 8081,
+		},
+		["gn:14124:Ritual Gloves of Fiery Wrath:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 20094,
+		},
+		["g:1777:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 497,
+		},
+		["gn:15969:Beaded Orb of Healing:10"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7515,
+			},
+			["m"] = 7515,
+		},
+		["g:15559:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59999,
+			},
+			["m"] = 59999,
+		},
+		["7437"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 11078,
+			},
+			["m"] = 11078,
+		},
+		["2881"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 1495,
+			["h"] = {
+			},
+		},
+		["g:14179:24"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 72239,
+			},
+			["m"] = 72239,
+		},
+		["g:15012:16"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 3998,
+			["h"] = {
+				[1539] = 3998,
+			},
+		},
+		["gn:9821:Durable Bracers of Healing:30"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29901,
+			},
+			["m"] = 29901,
+		},
+		["gn:15011:Lupine Cord of Defense:15"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9994,
+			["h"] = {
+				[1539] = 9994,
+			},
+		},
+		["g:15243:36"] = {
+			["a"] = {
+				[1539] = 1,
+				[1540] = 46,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19996,
+				[1540] = 19436,
+			},
+			["m"] = 19436,
+		},
+		["7411"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 13098,
+			},
+			["m"] = 13098,
+		},
+		["gn:15016:Lupine Handwraps of the Whale:16"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7744,
+			["h"] = {
+				[1539] = 7744,
+			},
+		},
+		["g:15527:27"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2011,
+			},
+			["m"] = 2011,
+		},
+		["10088"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 16693,
+			},
+			["m"] = 16693,
+		},
+		["g:2632:14"] = {
+			["a"] = {
+				[1539] = 45,
+			},
+			["l"] = {
+				[1539] = 3392,
+			},
+			["h"] = {
+				[1539] = 6880,
+			},
+			["m"] = 3392,
+		},
+		["g:14564:19"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5398,
+			["h"] = {
+				[1539] = 5398,
+			},
+		},
+		["gn:7438:Twilight Belt of Healing:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6897,
+			},
+			["m"] = 6897,
+		},
+		["gn:9751:Gypsy Sandals:12"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["14119"] = {
+			["a"] = {
+				[1539] = 2,
+				[1540] = 3,
+				[1541] = 2,
+			},
+			["l"] = {
+				[1539] = 2796,
+				[1540] = 2792,
+				[1541] = 2898,
+			},
+			["h"] = {
+				[1539] = 2797,
+				[1540] = 2793,
+				[1541] = 4899,
+			},
+			["m"] = 2898,
+		},
+		["gn:2092:Worn Dagger:2"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5997,
+			["h"] = {
+				[1539] = 5997,
+			},
+		},
+		["gn:15300:Grizzly Gloves:14"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 583,
+			["h"] = {
+				[1539] = 583,
+			},
+		},
+		["g:2236:25"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 59997,
+			},
+			["m"] = 59997,
+		},
+		["g:4565:6"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9951,
+			["h"] = {
+				[1539] = 9951,
+			},
+		},
+		["g:14114:16"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2200,
+			["h"] = {
+			},
+		},
+		["gn:3184:Hook Dagger of Arcane Wrath:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 16728,
+			["h"] = {
+				[1539] = 16728,
+			},
+		},
+		["15136"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 14974,
+			},
+			["m"] = 14974,
+		},
+		["g:15310:18"] = {
+			["a"] = {
+				[1539] = 12,
+			},
+			["l"] = {
+			},
+			["m"] = 2800,
+			["h"] = {
+				[1539] = 2800,
+			},
+		},
+		["gn:7436:Twilight Cape of Intellect:35"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9898,
+			},
+			["m"] = 9898,
+		},
+		["g:2300:12"] = {
+			["a"] = {
+				[1539] = 108,
+			},
+			["l"] = {
+			},
+			["m"] = 3042,
+			["h"] = {
+				[1539] = 3042,
+			},
+		},
+		["gn:7110:Silver-thread Armor:31"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5999,
+			["h"] = {
+				[1538] = 5999,
+			},
+		},
+		["gn:15011:Lupine Cord of the Whale:15"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5070,
+			["h"] = {
+				[1539] = 5070,
+			},
+		},
+		["gn:7429:Twilight Armor of Spirit:40"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 18701,
+			},
+			["m"] = 18701,
+		},
+		["7440"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 54880,
+			},
+			["m"] = 54880,
+		},
+		["gn:14123:Ritual Cape of Shadow Wrath:17"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 3097,
+		},
+		["gn:4565:Simple Dagger:6"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9951,
+			["h"] = {
+				[1539] = 9951,
+			},
+		},
+		["2996"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 124,
+		},
+		["6269"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 2000,
+			["h"] = {
+				[1539] = 2000,
+			},
+		},
+		["6558"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5000,
+			},
+			["m"] = 5000,
+		},
+		["g:14090:11"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2319,
+			},
+			["m"] = 2319,
+		},
+		["2962"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4300,
+			["h"] = {
+				[1539] = 4300,
+			},
+		},
+		["gn:3185:Acrobatic Staff of Healing:34"] = {
+			["a"] = {
+				[1539] = 1,
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9973,
+				[1540] = 8763,
+			},
+			["m"] = 8763,
+		},
+		["gn:9756:Gypsy Trousers of the Whale:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 2994,
+			["h"] = {
+				[1539] = 2994,
+			},
+		},
+		["gn:9826:Durable Robe of Shadow Wrath:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 12392,
+			["h"] = {
+				[1538] = 12392,
+			},
+		},
+		["6406"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3556,
+			["h"] = {
+			},
+		},
+		["gn:17922:Lionfur Armor:10"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 1497,
+			["h"] = {
+				[1539] = 1497,
+			},
+		},
+		["gn:14168:Buccaneer's Gloves of Healing:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 16091,
+		},
+		["gn:3305:Brackwater Leggings:16"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 900,
+		},
+		["gn:14420:Silksand Cape:38"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5490,
+			},
+			["m"] = 5490,
+		},
+		["gn:6562:Shimmering Boots of Frozen Wrath:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 20000,
+			["h"] = {
+			},
+		},
+		["gn:15594:Steadfast Cloak of the Gorilla:37"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 7000,
+			},
+			["m"] = 7000,
+		},
+		["gn:9860:Archer's Cloak of the Falcon:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 18562,
+			},
+			["m"] = 18562,
+		},
+		["9840"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3500,
+			},
+			["m"] = 3500,
+		},
+		["15147"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 19998,
+			},
+			["m"] = 19998,
+		},
+		["6562"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2904,
+			["h"] = {
+			},
+		},
+		["gn:4243:Fine Leather Tunic:17"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 5699,
+			["h"] = {
+				[1539] = 5699,
+			},
+		},
+		["2800"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 109999,
+			["h"] = {
+				[1538] = 109999,
+			},
+		},
+		["7609"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 50520,
+			},
+			["m"] = 50520,
+		},
+		["6609"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 4391,
+			["h"] = {
+				[1538] = 4391,
+			},
+		},
+		["2912"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 169992,
+			},
+			["m"] = 169992,
+		},
+		["g:2312:15"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4598,
+			["h"] = {
+				[1539] = 4598,
+			},
+		},
+		["gn:15975:Raincaller Scepter of Healing:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 100000,
+			},
+			["m"] = 100000,
+		},
+		["g:2317:20"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 9496,
+			["h"] = {
+				[1539] = 9496,
+			},
+		},
+		["gn:15310:Feral Gloves of the Monkey:18"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 19698,
+			["h"] = {
+				[1539] = 19698,
+			},
+		},
+		["9826"] = {
+			["a"] = {
+				[1538] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 3998,
+			["h"] = {
+				[1538] = 3998,
+			},
+		},
+		["gn:4312:Soft-soled Linen Boots:16"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3554,
+			["h"] = {
+			},
+		},
+		["14110"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 99,
+			["h"] = {
+			},
+		},
+		["3287"] = {
+			["a"] = {
+				[1539] = 13,
+			},
+			["l"] = {
+			},
+			["m"] = 3398,
+			["h"] = {
+				[1539] = 3398,
+			},
+		},
+		["gn:14208:Vital Headband of Healing:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9264,
+			},
+			["m"] = 9264,
+		},
+		["gn:10288:Sage's Circlet of Healing:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29900,
+			},
+			["m"] = 29900,
+		},
+		["g:7423:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 34596,
+			},
+			["m"] = 34596,
+		},
+		["g:6562:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2904,
+			["h"] = {
+			},
+		},
+		["gn:10404:Durable Belt of Healing:30"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3083,
+			},
+			["m"] = 3083,
+		},
+		["gn:3850:Jade Serpentblade:35"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 44997,
+			},
+			["m"] = 44997,
+		},
+		["2980"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 2099,
+		},
+		["4306"] = {
+			["a"] = {
+				[1539] = 410,
+			},
+			["l"] = {
+				[1539] = 206,
+			},
+			["m"] = 206,
+			["h"] = {
+				[1539] = 207,
+			},
+		},
+		["g:14119:17"] = {
+			["a"] = {
+				[1539] = 2,
+				[1540] = 3,
+				[1541] = 2,
+			},
+			["l"] = {
+				[1539] = 2796,
+				[1540] = 2792,
+				[1541] = 2898,
+			},
+			["h"] = {
+				[1539] = 2797,
+				[1540] = 2793,
+				[1541] = 4899,
+			},
+			["m"] = 2898,
+		},
+		["gn:14192:Raincaller Robes of Spirit:31"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9995,
+			["h"] = {
+				[1538] = 9995,
+			},
+		},
+		["2841"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 736,
+			["h"] = {
+			},
+		},
+		["gn:9825:Durable Pants of Healing:33"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5282,
+			},
+			["m"] = 5282,
+		},
+		["15537"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9999,
+			},
+			["m"] = 9999,
+		},
+		["2961"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 1996,
+			["h"] = {
+				[1539] = 1996,
+			},
+		},
+		["gn:15153:Nocturnal Cloak of Agility:37"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["gn:15214:Nobles Brand of the Bear:40"] = {
+			["a"] = {
+				[1540] = 8,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19986,
+			},
+			["m"] = 19986,
+		},
+		["gn:3184:Hook Dagger of Power:20"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 8148,
+			["h"] = {
+				[1539] = 8148,
+			},
+		},
+		["gn:4786:Wise Man's Belt:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 18999,
+			["h"] = {
+			},
+		},
+		["15303"] = {
+			["a"] = {
+				[1539] = 19,
+			},
+			["l"] = {
+			},
+			["m"] = 2044,
+			["h"] = {
+				[1539] = 2044,
+			},
+		},
+		["gn:9877:Sorcerer Cloak of Healing:38"] = {
+			["a"] = {
+				[1538] = 2,
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 7491,
+				[1539] = 7483,
+			},
+			["m"] = 7483,
+		},
+		["g:10288:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29900,
+			},
+			["m"] = 29900,
+		},
+		["g:5965:37"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 59898,
+			},
+			["m"] = 59898,
+		},
+		["gn:6268:Pioneer Tunic of Agility:13"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 2000,
+		},
+		["4314"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 478,
+		},
+		["6553"] = {
+			["a"] = {
+				[1539] = 10,
+			},
+			["l"] = {
+			},
+			["m"] = 4997,
+			["h"] = {
+				[1539] = 4997,
+			},
+		},
+		["g:7370:31"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8996,
+			},
+			["m"] = 8996,
+		},
+		["4246"] = {
+			["a"] = {
+				[1539] = 29,
+			},
+			["l"] = {
+			},
+			["m"] = 2186,
+			["h"] = {
+				[1539] = 2186,
+			},
+		},
+		["gn:15243:Deadly Kris of the Bear:36"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19436,
+			},
+			["m"] = 19436,
+		},
+		["gn:5781:Murloc Scale Breastplate:19"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 29992,
+			["h"] = {
+				[1539] = 29992,
+			},
+		},
+		["gn:9890:Huntsman's Cape of Nature's Wrath:38"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 16018,
+			},
+			["m"] = 16018,
+		},
+		["9900"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29931,
+			},
+			["m"] = 29931,
+		},
+		["929"] = {
+			["a"] = {
+				[1539] = 194,
+			},
+			["l"] = {
+			},
+			["m"] = 407,
+			["h"] = {
+				[1539] = 407,
+			},
+		},
+		["g:9767:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2094,
+			["h"] = {
+			},
+		},
+		["gn:14216:Geomancer's Jerkin of the Owl:41"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["9860"] = {
+			["a"] = {
+				[1538] = 15,
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5495,
+				[1539] = 99999,
+			},
+			["m"] = 99999,
+		},
+		["2840"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 417,
+		},
+		["g:6615:29"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12498,
+			},
+			["m"] = 12498,
+		},
+		["g:9780:20"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 6462,
+			["h"] = {
+				[1539] = 6462,
+			},
+		},
+		["gn:15308:Feral Cord of the Boar:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7979,
+			["h"] = {
+				[1539] = 7979,
+			},
+		},
+		["gn:6552:Bard's Tunic of the Wolf:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 17625,
+			["h"] = {
+				[1539] = 17625,
+			},
+		},
+		["gn:14405:Resilient Robe:33"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9996,
+			["h"] = {
+				[1538] = 9996,
+			},
+		},
+		["5762"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2194,
+			},
+			["m"] = 2194,
+		},
+		["3184"] = {
+			["a"] = {
+				[1539] = 19,
+			},
+			["l"] = {
+				[1539] = 8148,
+			},
+			["h"] = {
+				[1539] = 9996,
+			},
+			["m"] = 8148,
+		},
+		["9773"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 9000,
+			["h"] = {
+				[1538] = 9000,
+			},
+		},
+		["g:9845:35"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3548,
+			["h"] = {
+			},
+		},
+		["gn:14119:Aboriginal Loincloth of the Falcon:17"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 2008,
+		},
+		["gn:9860:Archer's Cloak of Stamina:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 12989,
+			},
+			["m"] = 12989,
+		},
+		["15124"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 50000,
+			},
+			["m"] = 50000,
+		},
+		["g:14159:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2498,
+			["h"] = {
+			},
+		},
+		["1206"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 1396,
+			["h"] = {
+			},
+		},
+		["g:15300:14"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 583,
+			["h"] = {
+				[1539] = 583,
+			},
+		},
+		["gn:15305:Feral Shoes of the Wolf:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19894,
+			["h"] = {
+				[1539] = 19894,
+			},
+		},
+		["gn:14217:Geomancer's Cord of Healing:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["gn:7432:Twilight Cowl of Healing:38"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9993,
+			},
+			["m"] = 9993,
+		},
+		["g:1772:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 997,
+			["h"] = {
+			},
+		},
+		["4461"] = {
+			["a"] = {
+				[1539] = 208,
+				[1541] = 229,
+			},
+			["l"] = {
+				[1539] = 225,
+			},
+			["m"] = 226,
+			["h"] = {
+				[1539] = 226,
+				[1541] = 226,
+			},
+		},
+		["gn:866:Monk's Staff of Healing:42"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19959,
+			},
+			["m"] = 19959,
+		},
+		["15110"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 10087,
+			["h"] = {
+				[1539] = 10087,
+			},
+		},
+		["9862"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 49998,
+			},
+			["m"] = 49998,
+		},
+		["gn:9424:Ginn-su Sword:41"] = {
+			["a"] = {
+				[1540] = 9,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 327083,
+			},
+			["m"] = 327083,
+		},
+		["gn:1777:Brocade Shoulderpads:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 497,
+		},
+		["7053"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 24449,
+			},
+			["m"] = 24449,
+		},
+		["gn:9847:Conjurer's Cloak of Fiery Wrath:33"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 59992,
+			},
+			["m"] = 59992,
+		},
+		["gn:2988:Inscribed Leather Gloves:19"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 5492,
+			["h"] = {
+				[1539] = 5492,
+			},
+		},
+		["g:12251:37"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 82540,
+			},
+			["m"] = 82540,
+		},
+		["gn:7369:Elder's Robe of Stamina:35"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19969,
+			["h"] = {
+				[1538] = 19969,
+			},
+		},
+		["14216"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["gn:7436:Twilight Cape of Healing:35"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9191,
+			},
+			["m"] = 9191,
+		},
+		["2455"] = {
+			["a"] = {
+				[1540] = 198,
+			},
+			["l"] = {
+			},
+			["m"] = 3,
+			["h"] = {
+				[1540] = 3,
+			},
+		},
+		["g:2315:20"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 3594,
+			["h"] = {
+				[1539] = 3594,
+			},
+		},
+		["g:4314:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 478,
+		},
+		["gn:14245:Darkmist Girdle of Healing:41"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 35000,
+			},
+			["m"] = 35000,
+		},
+		["gn:15312:Feral Leggings of Spirit:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 8400,
+			["h"] = {
+				[1539] = 8400,
+			},
+		},
+		["9882"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 79983,
+			},
+			["m"] = 79983,
+		},
+		["14167"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7627,
+			},
+			["m"] = 7627,
+		},
+		["15310"] = {
+			["a"] = {
+				[1539] = 12,
+			},
+			["l"] = {
+			},
+			["m"] = 2800,
+			["h"] = {
+				[1539] = 2800,
+			},
+		},
+		["10402"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 31431,
+			["h"] = {
+				[1539] = 31431,
+			},
+		},
+		["12251"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 82540,
+			},
+			["m"] = 82540,
+		},
+		["gn:3413:Doomspike:25"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 129895,
+			},
+			["m"] = 129895,
+		},
+		["gn:14184:Watcher's Robes of the Owl:30"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 4999,
+			["h"] = {
+				[1538] = 4999,
+			},
+		},
+		["2842"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 158,
+		},
+		["g:6415:41"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 5462,
+			},
+			["m"] = 5462,
+		},
+		["g:15508:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3099,
+			},
+			["m"] = 3099,
+		},
+		["14185"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2997,
+			["h"] = {
+				[1539] = 2997,
+			},
+		},
+		["15520"] = {
+			["a"] = {
+				[1539] = 6,
+				[1540] = 3,
+				[1538] = 5,
+				[1541] = 3,
+			},
+			["l"] = {
+				[1539] = 2903,
+				[1540] = 2399,
+				[1538] = 2912,
+				[1541] = 2109,
+			},
+			["m"] = 2109,
+			["h"] = {
+				[1539] = 2904,
+				[1540] = 2900,
+				[1538] = 3248,
+				[1541] = 2110,
+			},
+		},
+		["14253"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59996,
+			},
+			["m"] = 59996,
+		},
+		["gn:6553:Bard's Trousers of Healing:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["gn:7411:Infiltrator Cloak of Healing:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 13098,
+			},
+			["m"] = 13098,
+		},
+		["gn:9898:Jazeraint Cloak of Stamina:38"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 6999,
+			},
+			["m"] = 6999,
+		},
+		["g:15304:16"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 7494,
+			["h"] = {
+				[1539] = 7494,
+			},
+		},
+		["gn:9900:Jazeraint Gauntlets of Healing:40"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29931,
+			},
+			["m"] = 29931,
+		},
+		["3314"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 8495,
+			["h"] = {
+				[1539] = 8495,
+			},
+		},
+		["gn:9852:Conjurer's Robe of the Eagle:38"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29893,
+			},
+			["m"] = 29893,
+		},
+		["14131"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 3281,
+			["h"] = {
+				[1539] = 3281,
+			},
+		},
+		["7353"] = {
+			["a"] = {
+				[1538] = 7,
+				[1540] = 20,
+			},
+			["l"] = {
+			},
+			["m"] = 6994,
+			["h"] = {
+				[1538] = 8000,
+				[1540] = 6994,
+			},
+		},
+		["gn:15493:Bloodspattered Loincloth of Healing:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6998,
+			},
+			["m"] = 6998,
+		},
+		["15008"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["9767"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2094,
+			["h"] = {
+			},
+		},
+		["gn:14157:Pagan Mantle:24"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 2093,
+		},
+		["gn:9392:Annealed Blade:40"] = {
+			["a"] = {
+				[1540] = 9,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 59483,
+			},
+			["m"] = 59483,
+		},
+		["gn:15559:Pillager's Cloak of Healing:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59999,
+			},
+			["m"] = 59999,
+		},
+		["gn:3786:Shiny Dirk:39"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 8094,
+			},
+			["m"] = 8094,
+		},
+		["15568"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4996,
+			},
+			["m"] = 4996,
+		},
+		["g:9879:39"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9954,
+			},
+			["m"] = 9954,
+		},
+		["gn:14205:Thistlefur Belt of Healing:32"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 49998,
+			},
+			["m"] = 49998,
+		},
+		["gn:6540:Willow Pants of Healing:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 16358,
+			},
+			["m"] = 16358,
+		},
+		["2987"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 7499,
+			["h"] = {
+				[1539] = 7499,
+			},
+		},
+		["g:3305:16"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 900,
+		},
+		["4480"] = {
+			["a"] = {
+				[1541] = 68,
+			},
+			["l"] = {
+				[1541] = 3063,
+			},
+			["h"] = {
+				[1541] = 3064,
+			},
+			["m"] = 3063,
+		},
+		["g:9766:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 4298,
+			["h"] = {
+			},
+		},
+		["gn:7448:Sentinel Girdle of the Owl:36"] = {
+			["a"] = {
+				[1541] = 2,
+			},
+			["l"] = {
+				[1541] = 4492,
+			},
+			["h"] = {
+				[1541] = 6493,
+			},
+			["m"] = 4492,
+		},
+		["14405"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9996,
+			["h"] = {
+				[1538] = 9996,
+			},
+		},
+		["5756"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 99982,
+			},
+			["m"] = 99982,
+		},
+		["gn:9851:Conjurer's Breeches of Healing:37"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8876,
+			},
+			["m"] = 8876,
+		},
+		["g:6609:32"] = {
+			["a"] = {
+				[1538] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 4391,
+			["h"] = {
+				[1538] = 4391,
+			},
+		},
+		["14204"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["9756"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 2994,
+			["h"] = {
+				[1539] = 2994,
+			},
+		},
+		["11084"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 5,
+			["h"] = {
+				[1539] = 5,
+			},
+		},
+		["gn:7353:Elder's Padded Armor of Shadow Wrath:35"] = {
+			["a"] = {
+				[1538] = 2,
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 12991,
+			["h"] = {
+				[1538] = 31999,
+				[1540] = 12991,
+			},
+		},
+		["gn:15222:Barbed Club of Healing:19"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7585,
+			},
+			["m"] = 7585,
+		},
+		["15222"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7585,
+			},
+			["m"] = 7585,
+		},
+		["gn:7436:Twilight Cape of the Eagle:35"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 7999,
+			},
+			["m"] = 7999,
+		},
+		["g:9773:27"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 9000,
+			["h"] = {
+				[1538] = 9000,
+			},
+		},
+		["gn:9847:Conjurer's Cloak of Intellect:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5986,
+			},
+			["m"] = 5986,
+		},
+		["gn:9898:Jazeraint Cloak of the Monkey:38"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 14973,
+			},
+			["m"] = 14973,
+		},
+		["g:6417:37"] = {
+			["a"] = {
+				[1538] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 6679,
+			},
+			["m"] = 6679,
+		},
+		["2519"] = {
+			["a"] = {
+				[1539] = 600,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2,
+			},
+			["m"] = 2,
+		},
+		["gn:7065:Green Silk Armor:33"] = {
+			["a"] = {
+				[1538] = 11,
+			},
+			["l"] = {
+			},
+			["m"] = 17598,
+			["h"] = {
+				[1538] = 17598,
+			},
+		},
+		["gn:14131:Ritual Belt of the Owl:19"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 6998,
+			["h"] = {
+			},
+		},
+		["gn:14215:Vital Tunic of the Eagle:37"] = {
+			["a"] = {
+				[1538] = 1,
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 29900,
+			["h"] = {
+				[1538] = 29900,
+				[1540] = 29900,
+			},
+		},
+		["gn:15213:Mercenary Blade of Power:36"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 59000,
+			},
+			["m"] = 59000,
+		},
+		["4360"] = {
+			["a"] = {
+				[1538] = 210,
+				[1539] = 242,
+			},
+			["l"] = {
+				[1539] = 516,
+			},
+			["m"] = 516,
+			["h"] = {
+				[1538] = 519,
+				[1539] = 517,
+			},
+		},
+		["9798"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 8897,
+			["h"] = {
+				[1538] = 8897,
+			},
+		},
+		["gn:14185:Watcher's Cinch of Healing:27"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2997,
+			},
+			["m"] = 2997,
+		},
+		["gn:15243:Deadly Kris of Strength:36"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19898,
+			},
+			["m"] = 19898,
+		},
+		["gn:6417:Aurora Cloak:37"] = {
+			["a"] = {
+				[1538] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 6679,
+			},
+			["m"] = 6679,
+		},
+		["g:9751:12"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["7474"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12192,
+			},
+			["m"] = 12192,
+		},
+		["g:5781:19"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 29992,
+			["h"] = {
+				[1539] = 29992,
+			},
+		},
+		["gn:14190:Raincaller Vest of Intellect:31"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 39954,
+			["h"] = {
+				[1538] = 39954,
+			},
+		},
+		["15613"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 55598,
+			},
+			["m"] = 55598,
+		},
+		["g:15493:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6998,
+			},
+			["m"] = 6998,
+		},
+		["gn:7436:Twilight Cape of the Whale:35"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9988,
+			},
+			["m"] = 9988,
+		},
+		["15367"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["4357"] = {
+			["a"] = {
+				[1539] = 20,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6,
+			},
+			["m"] = 6,
+		},
+		["6540"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 16358,
+			},
+			["m"] = 16358,
+		},
+		["gn:9877:Sorcerer Cloak of the Owl:38"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+				[1538] = 5597,
+			},
+			["h"] = {
+				[1538] = 5598,
+			},
+			["m"] = 5597,
+		},
+		["gn:15594:Steadfast Cloak of Defense:37"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 10080,
+			},
+			["m"] = 10080,
+		},
+		["g:3783:36"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 6054,
+			},
+			["m"] = 6054,
+		},
+		["gn:14163:Pagan Wraps of the Eagle:26"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19900,
+			["h"] = {
+				[1538] = 19900,
+			},
+		},
+		["gn:9860:Archer's Cloak of Intellect:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 13499,
+			},
+			["m"] = 13499,
+		},
+		["g:15222:19"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7585,
+			},
+			["m"] = 7585,
+		},
+		["9747"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4695,
+			},
+			["m"] = 4695,
+		},
+		["3311"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 5585,
+			["h"] = {
+				[1539] = 5585,
+			},
+		},
+		["15145"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 13442,
+			},
+			["m"] = 13442,
+		},
+		["gn:7460:Knight's Cloak of the Monkey:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9996,
+			},
+			["m"] = 9996,
+		},
+		["g:4237:10"] = {
+			["a"] = {
+				[1539] = 166,
+			},
+			["l"] = {
+			},
+			["m"] = 2069,
+			["h"] = {
+				[1539] = 2069,
+			},
+		},
+		["14407"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9983,
+			},
+			["m"] = 9983,
+		},
+		["gn:4789:Stable Boots:18"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 7694,
+			["h"] = {
+				[1539] = 7694,
+			},
+		},
+		["7460"] = {
+			["a"] = {
+				[1538] = 11,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4370,
+			},
+			["m"] = 4370,
+		},
+		["gn:6552:Bard's Tunic of the Monkey:19"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9042,
+			["h"] = {
+				[1539] = 9042,
+			},
+		},
+		["gn:15312:Feral Leggings of the Owl:20"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 6000,
+			["h"] = {
+				[1539] = 6000,
+			},
+		},
+		["1793"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 6596,
+			["h"] = {
+				[1539] = 6596,
+			},
+		},
+		["869"] = {
+			["a"] = {
+				[1540] = 8,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 187590,
+			},
+			["m"] = 187590,
+		},
+		["g:2819:28"] = {
+			["a"] = {
+				[1539] = 3,
+				[1540] = 17,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7499,
+				[1540] = 7594,
+			},
+			["m"] = 7594,
+		},
+		["9867"] = {
+			["a"] = {
+				[1538] = 14,
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 2843,
+				[1539] = 18997,
+			},
+			["m"] = 18997,
+		},
+		["14205"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 49998,
+			},
+			["m"] = 49998,
+		},
+		["g:14202:36"] = {
+			["a"] = {
+				[1538] = 1,
+				[1540] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 10000,
+			["h"] = {
+				[1538] = 13007,
+				[1540] = 10000,
+			},
+		},
+		["gn:9772:Greenweave Leggings of Healing:27"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9998,
+			},
+			["m"] = 9998,
+		},
+		["g:1793:20"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 6596,
+			["h"] = {
+				[1539] = 6596,
+			},
+		},
+		["2251"] = {
+			["a"] = {
+				[1539] = 60,
+			},
+			["l"] = {
+			},
+			["m"] = 73,
+			["h"] = {
+				[1539] = 73,
+			},
+		},
+		["gn:3288:Tribal Vest:13"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 7994,
+			["h"] = {
+				[1539] = 7994,
+			},
+		},
+		["g:1788:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 1050,
+			["h"] = {
+				[1539] = 1050,
+			},
+		},
+		["gn:4035:Silver-thread Robe:31"] = {
+			["a"] = {
+				[1538] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 4828,
+			["h"] = {
+				[1538] = 4828,
+			},
+		},
+		["g:6238:10"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 772,
+			["h"] = {
+			},
+		},
+		["gn:4575:Medicine Staff of Healing:19"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9544,
+			},
+			["m"] = 9544,
+		},
+		["15016"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 5987,
+			["h"] = {
+				[1539] = 5987,
+			},
+		},
+		["4373"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 3993,
+		},
+		["gn:2632:Curved Dagger of Nature's Wrath:14"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 3392,
+			["h"] = {
+				[1539] = 3392,
+			},
+		},
+		["gn:9860:Archer's Cloak of Spirit:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9783,
+			},
+			["m"] = 9783,
+		},
+		["9908"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29997,
+			},
+			["m"] = 29997,
+		},
+		["g:9847:33"] = {
+			["a"] = {
+				[1538] = 27,
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4053,
+				[1539] = 3347,
+			},
+			["m"] = 3347,
+		},
+		["9927"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 48797,
+			},
+			["m"] = 48797,
+		},
+		["g:15303:14"] = {
+			["a"] = {
+				[1539] = 19,
+			},
+			["l"] = {
+			},
+			["m"] = 2044,
+			["h"] = {
+				[1539] = 2044,
+			},
+		},
+		["g:7058:37"] = {
+			["a"] = {
+				[1538] = 8,
+				[1540] = 41,
+			},
+			["l"] = {
+			},
+			["m"] = 2244,
+			["h"] = {
+				[1538] = 2599,
+				[1540] = 2244,
+			},
+		},
+		["gn:3185:Acrobatic Staff of Intellect:34"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10930,
+			},
+			["m"] = 10930,
+		},
+		["17222"] = {
+			["a"] = {
+				[1539] = 50,
+			},
+			["l"] = {
+			},
+			["m"] = 1853,
+			["h"] = {
+				[1539] = 1853,
+			},
+		},
+		["gn:14113:Aboriginal Sash of Healing:15"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 2000,
+			},
+			["m"] = 2000,
+		},
+		["g:14207:36"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 12303,
+			},
+			["m"] = 12303,
+		},
+		["7111"] = {
+			["a"] = {
+				[1538] = 3,
+				[1540] = 12,
+			},
+			["l"] = {
+			},
+			["m"] = 10000,
+			["h"] = {
+				[1538] = 17379,
+				[1540] = 10000,
+			},
+		},
+		["9434"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89996,
+			},
+			["m"] = 89996,
+		},
+		["g:7728:34"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 48796,
+			["h"] = {
+				[1538] = 48796,
+			},
+		},
+		["gn:4237:Handstitched Leather Belt:10"] = {
+			["a"] = {
+				[1539] = 166,
+			},
+			["l"] = {
+			},
+			["m"] = 2069,
+			["h"] = {
+				[1539] = 2069,
+			},
+		},
+		["15594"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 7000,
+			},
+			["m"] = 7000,
+		},
+		["gn:15214:Nobles Brand of the Tiger:40"] = {
+			["a"] = {
+				[1540] = 15,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 20088,
+			},
+			["m"] = 20088,
+		},
+		["g:14185:27"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2997,
+			["h"] = {
+				[1539] = 2997,
+			},
+		},
+		["5527"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 341,
+			["h"] = {
+			},
+		},
+		["9909"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 99999,
+			},
+			["m"] = 99999,
+		},
+		["gn:14192:Raincaller Robes of Arcane Wrath:31"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 19999,
+			["h"] = {
+				[1538] = 19999,
+			},
+		},
+		["gn:8006:The Ziggler:39"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 189099,
+			},
+			["m"] = 189099,
+		},
+		["gn:14213:Vital Raiment of the Whale:37"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 7708,
+			},
+			["m"] = 7708,
+		},
+		["gn:7430:Twilight Robe of Frozen Wrath:40"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29995,
+			},
+			["m"] = 29995,
+		},
+		["g:7475:41"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 45096,
+			},
+			["m"] = 45096,
+		},
+		["gn:6565:Shimmering Gloves of Healing:22"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["g:4732:37"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5484,
+			},
+			["m"] = 5484,
+		},
+		["5081"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 796,
+			},
+			["m"] = 796,
+		},
+		["g:7414:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 79999,
+			},
+			["m"] = 79999,
+		},
+		["gn:14194:Raincaller Cord of Healing:28"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9991,
+			},
+			["m"] = 9991,
+		},
+		["g:9825:33"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5282,
+			},
+			["m"] = 5282,
+		},
+		["1081"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 48,
+		},
+		["g:2583:19"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3000,
+			["h"] = {
+			},
+		},
+		["g:6613:28"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 127789,
+			},
+			["m"] = 127789,
+		},
+		["gn:14216:Geomancer's Jerkin of the Eagle:41"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 38631,
+			},
+			["m"] = 38631,
+		},
+		["g:10088:45"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 16693,
+			},
+			["m"] = 16693,
+		},
+		["2309"] = {
+			["a"] = {
+				[1539] = 12,
+			},
+			["l"] = {
+			},
+			["m"] = 3466,
+			["h"] = {
+				[1539] = 3466,
+			},
+		},
+		["7555"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["gn:2632:Curved Dagger of Power:14"] = {
+			["a"] = {
+				[1539] = 24,
+			},
+			["l"] = {
+			},
+			["m"] = 7499,
+			["h"] = {
+				[1539] = 7499,
+			},
+		},
+		["g:6537:15"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2099,
+			["h"] = {
+			},
+		},
+		["gn:14159:Pagan Shoes of the Whale:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2498,
+			["h"] = {
+			},
+		},
+		["gn:14189:Raincaller Cap of Healing:32"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["gn:7282:Light Leather Pants:19"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 2523,
+			["h"] = {
+				[1539] = 2523,
+			},
+		},
+		["gn:9852:Conjurer's Robe of the Owl:38"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9400,
+			},
+			["m"] = 9400,
+		},
+		["gn:7058:Crimson Silk Vest:37"] = {
+			["a"] = {
+				[1538] = 8,
+				[1540] = 41,
+			},
+			["l"] = {
+			},
+			["m"] = 2244,
+			["h"] = {
+				[1538] = 2599,
+				[1540] = 2244,
+			},
+		},
+		["gn:15978:Geomancer's Rod of Healing:41"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 97696,
+			},
+			["m"] = 97696,
+		},
+		["gn:14164:Pagan Belt of Fiery Wrath:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 17913,
+			["h"] = {
+			},
+		},
+		["g:9930:43"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 250000,
+			},
+			["m"] = 250000,
+		},
+		["gn:7369:Elder's Robe of Shadow Wrath:35"] = {
+			["a"] = {
+				[1538] = 2,
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 12199,
+			["h"] = {
+				[1538] = 10000,
+				[1540] = 12199,
+			},
+		},
+		["gn:9844:Conjurer's Vest of Shadow Wrath:38"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 12294,
+			},
+			["m"] = 12294,
+		},
+		["14242"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59993,
+			},
+			["m"] = 59993,
+		},
+		["g:3205:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9900,
+			["h"] = {
+				[1539] = 9900,
+			},
+		},
+		["g:15305:18"] = {
+			["a"] = {
+				[1539] = 14,
+			},
+			["l"] = {
+			},
+			["m"] = 1549,
+			["h"] = {
+				[1539] = 1549,
+			},
+		},
+		["gn:9771:Greenweave Gloves of Healing:25"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4386,
+			},
+			["m"] = 4386,
+		},
+		["gn:7476:Regal Sash of the Whale:40"] = {
+			["a"] = {
+				[1541] = 1,
+			},
+			["l"] = {
+				[1541] = 4099,
+			},
+			["h"] = {
+				[1541] = 6900,
+			},
+			["m"] = 4099,
+		},
+		["14184"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 4999,
+			["h"] = {
+				[1538] = 4999,
+			},
+		},
+		["gn:15017:Lupine Leggings of Spirit:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4999,
+			["h"] = {
+				[1539] = 4999,
+			},
+		},
+		["gn:15009:Primal Leggings of the Owl:11"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 3094,
+			["h"] = {
+				[1539] = 3094,
+			},
+		},
+		["5181"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 20005,
+			},
+			["m"] = 20005,
+		},
+		["g:6610:32"] = {
+			["a"] = {
+				[1538] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 4544,
+			["h"] = {
+				[1538] = 4544,
+			},
+		},
+		["6557"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 17999,
+			["h"] = {
+				[1539] = 17999,
+			},
+		},
+		["9855"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 36993,
+			},
+			["m"] = 36993,
+		},
+		["g:4436:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+			},
+		},
+		["gn:14192:Raincaller Robes of the Owl:31"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 11109,
+			["h"] = {
+				[1538] = 11109,
+			},
+		},
+		["g:14173:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["7521"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 24998,
+			},
+			["m"] = 24998,
+		},
+		["g:15113:23"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2031,
+			["h"] = {
+			},
+		},
+		["15300"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 583,
+			["h"] = {
+				[1539] = 583,
+			},
+		},
+		["5574"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 1590,
+			},
+			["m"] = 1590,
+		},
+		["8225"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19994,
+			},
+			["m"] = 19994,
+		},
+		["6554"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9900,
+			["h"] = {
+				[1539] = 9900,
+			},
+		},
+		["g:7470:42"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9999,
+			},
+			["m"] = 9999,
+		},
+		["g:3311:15"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 5585,
+			["h"] = {
+				[1539] = 5585,
+			},
+		},
+		["gn:9847:Conjurer's Cloak of Frozen Wrath:33"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 7080,
+			},
+			["m"] = 7080,
+		},
+		["gn:3803:Hardened Cloak:38"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 1495,
+			},
+			["m"] = 1495,
+		},
+		["858"] = {
+			["a"] = {
+				[1539] = 218,
+			},
+			["l"] = {
+			},
+			["m"] = 22,
+			["h"] = {
+				[1539] = 22,
+			},
+		},
+		["2494"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5800,
+			["h"] = {
+				[1539] = 5800,
+			},
+		},
+		["g:9821:30"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 29901,
+			},
+			["m"] = 29901,
+		},
+		["g:2987:18"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 7499,
+			["h"] = {
+				[1539] = 7499,
+			},
+		},
+		["gn:15110:Rigid Belt of the Whale:20"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 10087,
+			["h"] = {
+				[1539] = 10087,
+			},
+		},
+		["g:7431:39"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 50036,
+			},
+			["m"] = 50036,
+		},
+		["7112"] = {
+			["a"] = {
+				[1540] = 10,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 8875,
+			},
+			["m"] = 8875,
+		},
+		["g:217245:41"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 102251,
+			},
+			["m"] = 102251,
+		},
+		["gn:2819:Cross Dagger of the Monkey:28"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 18000,
+			},
+			["m"] = 18000,
+		},
+		["gn:2962:Burnt Leather Breeches:10"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4300,
+			["h"] = {
+				[1539] = 4300,
+			},
+		},
+		["gn:14179:Watcher's Cape of Healing:24"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 72239,
+			},
+			["m"] = 72239,
+		},
+		["g:15367:39"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20000,
+			},
+			["m"] = 20000,
+		},
+		["gn:6552:Bard's Tunic of the Whale:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7992,
+			["h"] = {
+				[1539] = 7992,
+			},
+		},
+		["gn:3184:Hook Dagger of Healing:20"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+				[1539] = 9994,
+			},
+			["h"] = {
+				[1539] = 9996,
+			},
+			["m"] = 9994,
+		},
+		["gn:9777:Bandit Bracers of the Whale:19"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 13572,
+			["h"] = {
+				[1539] = 13572,
+			},
+		},
+		["gn:2072:Dwarven Magestaff of Arcane Wrath:27"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 40000,
+			},
+			["m"] = 40000,
+		},
+		["g:15568:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4996,
+			},
+			["m"] = 4996,
+		},
+		["4496"] = {
+			["a"] = {
+				[1539] = 15,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 984,
+			},
+			["m"] = 984,
+		},
+		["g:15934:32"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9998,
+			},
+			["m"] = 9998,
+		},
+		["gn:15226:Giant Club of Healing:37"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19988,
+			},
+			["m"] = 19988,
+		},
+		["gn:10402:Blackened Defias Boots:18"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 31431,
+			["h"] = {
+				[1539] = 31431,
+			},
+		},
+		["g:9747:14"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4695,
+			},
+			["m"] = 4695,
+		},
+		["15312"] = {
+			["a"] = {
+				[1539] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 6000,
+			["h"] = {
+				[1539] = 6000,
+			},
+		},
+		["gn:7430:Twilight Robe of Shadow Wrath:40"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 49985,
+			},
+			["m"] = 49985,
+		},
+		["gn:15224:Battlesmasher of the Monkey:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3096,
+			["h"] = {
+			},
+		},
+		["g:9718:38"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 199550,
+			},
+			["m"] = 199550,
+		},
+		["3069"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5600,
+			["h"] = {
+				[1538] = 5600,
+			},
+		},
+		["gn:9860:Archer's Cloak of the Whale:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5495,
+			},
+			["m"] = 5495,
+		},
+		["g:3784:37"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9977,
+			},
+			["m"] = 9977,
+		},
+		["g:14253:43"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 59996,
+			},
+			["m"] = 59996,
+		},
+		["2911"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 299997,
+			["h"] = {
+			},
+		},
+		["gn:2077:Magician Staff of Stamina:29"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9996,
+			},
+			["m"] = 9996,
+		},
+		["gn:9777:Bandit Bracers of Spirit:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4405,
+			["h"] = {
+				[1539] = 4405,
+			},
+		},
+		["gn:6609:Sage's Cloth of Spirit:32"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5899,
+			["h"] = {
+				[1538] = 5899,
+			},
+		},
+		["gn:15214:Nobles Brand of Strength:40"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 21998,
+			},
+			["m"] = 21998,
+		},
+		["gn:9860:Archer's Cloak of Nature's Wrath:34"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 33998,
+			},
+			["m"] = 33998,
+		},
+		["gn:9875:Sorcerer Sash of Healing:39"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6957,
+			},
+			["m"] = 6957,
+		},
+		["gn:9852:Conjurer's Robe of Arcane Wrath:38"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 34493,
+			},
+			["m"] = 34493,
+		},
+		["g:2986:20"] = {
+			["a"] = {
+				[1539] = 7,
+			},
+			["l"] = {
+			},
+			["m"] = 3965,
+			["h"] = {
+				[1539] = 3965,
+			},
+		},
+		["g:9791:29"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 11116,
+			["h"] = {
+				[1538] = 11116,
+			},
+		},
+		["gn:13108:Tigerstrike Mantle:34"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 113000,
+			},
+			["m"] = 113000,
+		},
+		["gn:4861:Sleek Feathered Tunic:10"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 22523,
+			["h"] = {
+				[1539] = 22523,
+			},
+		},
+		["gn:6570:Shimmering Sash of the Owl:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 19993,
+			["h"] = {
+			},
+		},
+		["g:4569:14"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3797,
+			},
+			["m"] = 3797,
+		},
+		["gn:2312:Fine Leather Gloves:15"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4598,
+			["h"] = {
+				[1539] = 4598,
+			},
+		},
+		["gn:15009:Primal Leggings of the Eagle:11"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 3999,
+			["h"] = {
+				[1539] = 3999,
+			},
+		},
+		["6613"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 127789,
+			},
+			["m"] = 127789,
+		},
+		["g:15011:15"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 4086,
+			["h"] = {
+				[1539] = 4086,
+			},
+		},
+		["15213"] = {
+			["a"] = {
+				[1540] = 50,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 18000,
+			},
+			["m"] = 18000,
+		},
+		["gn:6552:Bard's Tunic of Spirit:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7992,
+			["h"] = {
+				[1539] = 7992,
+			},
+		},
+		["6238"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 772,
+			["h"] = {
+			},
+		},
+		["g:2075:12"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 1994,
+			},
+			["m"] = 1994,
+		},
+		["4238"] = {
+			["a"] = {
+				[1539] = 49,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 393,
+			},
+			["m"] = 393,
+		},
+		["873"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 2757139,
+			},
+			["m"] = 2757139,
+		},
+		["7058"] = {
+			["a"] = {
+				[1538] = 8,
+				[1540] = 41,
+			},
+			["l"] = {
+			},
+			["m"] = 2244,
+			["h"] = {
+				[1538] = 2599,
+				[1540] = 2244,
+			},
+		},
+		["g:13108:34"] = {
+			["a"] = {
+				[1538] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 113000,
+			},
+			["m"] = 113000,
+		},
+		["gn:7414:Infiltrator Pants of Healing:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 79999,
+			},
+			["m"] = 79999,
+		},
+		["g:7525:45"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 88497,
+			},
+			["m"] = 88497,
+		},
+		["gn:15213:Mercenary Blade of the Tiger:36"] = {
+			["a"] = {
+				[1540] = 12,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 18000,
+			},
+			["m"] = 18000,
+		},
+		["g:10581:40"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 194559,
+			},
+			["m"] = 194559,
+		},
+		["g:9883:42"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 57999,
+			},
+			["m"] = 57999,
+		},
+		["9392"] = {
+			["a"] = {
+				[1540] = 9,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 59483,
+			},
+			["m"] = 59483,
+		},
+		["gn:9890:Huntsman's Cape of Arcane Wrath:38"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 19999,
+			},
+			["m"] = 19999,
+		},
+		["gn:6553:Bard's Trousers of the Monkey:18"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 17713,
+			["h"] = {
+				[1539] = 17713,
+			},
+		},
+		["gn:6406:Nightsky Boots:34"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3556,
+			["h"] = {
+			},
+		},
+		["gn:6610:Sage's Robe of Arcane Wrath:32"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 15012,
+			["h"] = {
+				[1538] = 15012,
+			},
+		},
+		["4732"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 5484,
+			},
+			["m"] = 5484,
+		},
+		["3745"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 1,
+			},
+			["m"] = 1,
+		},
+		["gn:14216:Geomancer's Jerkin of the Whale:41"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 58644,
+			},
+			["m"] = 58644,
+		},
+		["9883"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 57999,
+			},
+			["m"] = 57999,
+		},
+		["gn:9844:Conjurer's Vest of Frozen Wrath:38"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10082,
+			},
+			["m"] = 10082,
+		},
+		["g:3803:38"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 1495,
+			},
+			["m"] = 1495,
+		},
+		["g:14169:21"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 2900,
+		},
+		["7554"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5600,
+			},
+			["m"] = 5600,
+		},
+		["6537"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 2099,
+			["h"] = {
+			},
+		},
+		["gn:15155:Nocturnal Gloves of Healing:39"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 50000,
+			},
+			["m"] = 50000,
+		},
+		["gn:7460:Knight's Cloak of Strength:34"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 8998,
+			},
+			["m"] = 8998,
+		},
+		["gn:14122:Ritual Bands of Healing:18"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7552,
+			},
+			["m"] = 7552,
+		},
+		["g:10401:18"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 16795,
+			["h"] = {
+				[1539] = 16795,
+			},
+		},
+		["gn:9867:Renegade Cloak of the Gorilla:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4999,
+			},
+			["m"] = 4999,
+		},
+		["15118"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 6000,
+			["h"] = {
+			},
+		},
+		["gn:3185:Acrobatic Staff of the Monkey:34"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 24591,
+			},
+			["m"] = 24591,
+		},
+		["gn:15018:Lupine Vest of the Monkey:20"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 17593,
+			["h"] = {
+				[1539] = 17593,
+			},
+		},
+		["4241"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 20999,
+			},
+			["m"] = 20999,
+		},
+		["7456"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 15000,
+			},
+			["m"] = 15000,
+		},
+		["9906"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 89998,
+			},
+			["m"] = 89998,
+		},
+		["6610"] = {
+			["a"] = {
+				[1538] = 8,
+			},
+			["l"] = {
+			},
+			["m"] = 4544,
+			["h"] = {
+				[1538] = 4544,
+			},
+		},
+		["gn:14204:Thistlefur Robe of the Owl:36"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["14190"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 39954,
+			["h"] = {
+				[1538] = 39954,
+			},
+		},
+		["gn:2974:Hunting Pants:16"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["gn:3184:Hook Dagger of Agility:20"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 9998,
+			["h"] = {
+				[1539] = 9998,
+			},
+		},
+		["gn:7430:Twilight Robe of Intellect:40"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 11799,
+			},
+			["m"] = 11799,
+		},
+		["gn:7353:Elder's Padded Armor of Arcane Wrath:35"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 7789,
+			},
+			["m"] = 7789,
+		},
+		["gn:15306:Feral Bindings of the Eagle:16"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 9580,
+			["h"] = {
+				[1539] = 9580,
+			},
+		},
+		["gn:2583:Woolen Boots:19"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3000,
+			["h"] = {
+			},
+		},
+		["14560"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 3982,
+			["h"] = {
+				[1539] = 3982,
+			},
+		},
+		["gn:14225:Geomancer's Wraps of Intellect:41"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 50000,
+			},
+			["m"] = 50000,
+		},
+		["gn:7460:Knight's Cloak of the Boar:34"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 19997,
+			},
+			["m"] = 19997,
+		},
+		["gn:1425:Worn Leather Vest:9"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2900,
+			["h"] = {
+				[1539] = 2900,
+			},
+		},
+		["2092"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5997,
+			["h"] = {
+				[1539] = 5997,
+			},
+		},
+		["gn:3315:Ceremonial Leather Loincloth:17"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 2299,
+			["h"] = {
+				[1539] = 2299,
+			},
+		},
+		["3187"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 52550,
+			},
+			["m"] = 52550,
+		},
+		["g:9910:44"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 92596,
+			},
+			["m"] = 92596,
+		},
+		["9751"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["g:2974:16"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["g:6553:18"] = {
+			["a"] = {
+				[1539] = 10,
+			},
+			["l"] = {
+			},
+			["m"] = 4997,
+			["h"] = {
+				[1539] = 4997,
+			},
+		},
+		["gn:6553:Bard's Trousers of Spirit:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7085,
+			["h"] = {
+				[1539] = 7085,
+			},
+		},
+		["g:14215:37"] = {
+			["a"] = {
+				[1538] = 3,
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 8266,
+			["h"] = {
+				[1538] = 10000,
+				[1540] = 8266,
+			},
+		},
+		["g:13034:41"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89997,
+			},
+			["m"] = 89997,
+		},
+		["gn:6269:Pioneer Trousers of the Monkey:12"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 15094,
+			["h"] = {
+				[1539] = 15094,
+			},
+		},
+		["gn:9826:Durable Robe of the Eagle:34"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 19897,
+			["h"] = {
+				[1538] = 19897,
+			},
+		},
+		["gn:9865:Renegade Bracers of Healing:34"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 22496,
+			},
+			["m"] = 22496,
+		},
+		["g:7112:41"] = {
+			["a"] = {
+				[1540] = 10,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 8875,
+			},
+			["m"] = 8875,
+		},
+		["7438"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6897,
+			},
+			["m"] = 6897,
+		},
+		["gn:7430:Twilight Robe of Arcane Wrath:40"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 49988,
+			},
+			["m"] = 49988,
+		},
+		["gn:14564:Prospector's Mitts:19"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 5398,
+			["h"] = {
+				[1539] = 5398,
+			},
+		},
+		["g:14117:16"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4082,
+			},
+			["m"] = 4082,
+		},
+		["2072"] = {
+			["a"] = {
+				[1540] = 18,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 6999,
+			},
+			["m"] = 6999,
+		},
+		["gn:7554:Willow Branch of Healing:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 5600,
+			},
+			["m"] = 5600,
+		},
+		["gn:9844:Conjurer's Vest of Spirit:38"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9996,
+			},
+			["m"] = 9996,
+		},
+		["gn:5756:Sliverblade:37"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 99982,
+			},
+			["m"] = 99982,
+		},
+		["gn:7476:Regal Sash of Healing:40"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 14398,
+			},
+			["m"] = 14398,
+		},
+		["g:14225:41"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 26000,
+			},
+			["m"] = 26000,
+		},
+		["g:5756:37"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 99982,
+			},
+			["m"] = 99982,
+		},
+		["g:9434:41"] = {
+			["a"] = {
+				[1540] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89996,
+			},
+			["m"] = 89996,
+		},
+		["g:15918:38"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 39994,
+			},
+			["m"] = 39994,
+		},
+		["g:14405:33"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9996,
+			["h"] = {
+				[1538] = 9996,
+			},
+		},
+		["gn:7470:Regal Wizard Hat of Healing:42"] = {
+			["a"] = {
+				[1539] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 9999,
+			},
+			["m"] = 9999,
+		},
+		["gn:9384:Stonevault Shiv:36"] = {
+			["a"] = {
+				[1540] = 13,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 95400,
+			},
+			["m"] = 95400,
+		},
+		["1207"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19990,
+			},
+			["m"] = 19990,
+		},
+		["9844"] = {
+			["a"] = {
+				[1540] = 31,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9996,
+			},
+			["m"] = 9996,
+		},
+		["4786"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 18999,
+			["h"] = {
+			},
+		},
+		["gn:864:Knightly Longsword of Strength:38"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19952,
+			},
+			["m"] = 19952,
+		},
+		["g:9798:29"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 8897,
+			["h"] = {
+				[1538] = 8897,
+			},
+		},
+		["g:1997:34"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["m"] = 3776,
+			["h"] = {
+				[1538] = 3776,
+			},
+		},
+		["gn:14163:Pagan Wraps of Frozen Wrath:26"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 7082,
+			["h"] = {
+				[1538] = 7082,
+			},
+		},
+		["g:3473:13"] = {
+			["a"] = {
+				[1539] = 50,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6117,
+			},
+			["m"] = 6117,
+		},
+		["3473"] = {
+			["a"] = {
+				[1539] = 50,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 6117,
+			},
+			["m"] = 6117,
+		},
+		["gn:15213:Mercenary Blade of the Bear:36"] = {
+			["a"] = {
+				[1540] = 9,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19888,
+			},
+			["m"] = 19888,
+		},
+		["gn:14129:Ritual Sandals of Spirit:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 3500,
+			["h"] = {
+			},
+		},
+		["gn:15011:Lupine Cord of the Owl:15"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 4086,
+			["h"] = {
+				[1539] = 4086,
+			},
+		},
+		["g:1786:29"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5097,
+			["h"] = {
+				[1538] = 5097,
+			},
+		},
+		["gn:2077:Magician Staff of the Monkey:29"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9997,
+			},
+			["m"] = 9997,
+		},
+		["2974"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9999,
+			["h"] = {
+				[1539] = 9999,
+			},
+		},
+		["g:12259:36"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 89987,
+			},
+			["m"] = 89987,
+		},
+		["g:2962:10"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4300,
+			["h"] = {
+				[1539] = 4300,
+			},
+		},
+		["g:217256:34"] = {
+			["a"] = {
+				[1538] = 13,
+			},
+			["l"] = {
+			},
+			["m"] = 3299,
+			["h"] = {
+				[1538] = 3299,
+			},
+		},
+		["gn:15214:Nobles Brand of Stamina:40"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 32498,
+			},
+			["m"] = 32498,
+		},
+		["gn:9771:Greenweave Gloves of the Eagle:25"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 7000,
+		},
+		["gn:15243:Deadly Kris of Arcane Wrath:36"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 30000,
+			},
+			["m"] = 30000,
+		},
+		["gn:15124:Robust Cloak of Healing:25"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 50000,
+			},
+			["m"] = 50000,
+		},
+		["9795"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 8203,
+			},
+			["m"] = 8203,
+		},
+		["g:5780:18"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 29999,
+			["h"] = {
+				[1539] = 29999,
+			},
+		},
+		["4239"] = {
+			["a"] = {
+				[1539] = 11,
+			},
+			["l"] = {
+			},
+			["m"] = 84,
+			["h"] = {
+				[1539] = 84,
+			},
+		},
+		["gn:15017:Lupine Leggings of the Owl:19"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4974,
+			["h"] = {
+				[1539] = 4974,
+			},
+		},
+		["gn:9909:Royal Bands of Healing:43"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 99999,
+			},
+			["m"] = 99999,
+		},
+		["14724"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 1081,
+		},
+		["12248"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 79992,
+			},
+			["m"] = 79992,
+		},
+		["gn:15243:Deadly Kris of Agility:36"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 85051,
+			},
+			["m"] = 85051,
+		},
+		["10050"] = {
+			["a"] = {
+				[1539] = 77,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 19658,
+			},
+			["m"] = 19658,
+		},
+		["gn:15213:Mercenary Blade of Strength:36"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 22419,
+			},
+			["m"] = 22419,
+		},
+		["2317"] = {
+			["a"] = {
+				[1539] = 6,
+			},
+			["l"] = {
+			},
+			["m"] = 9496,
+			["h"] = {
+				[1539] = 9496,
+			},
+		},
+		["g:3313:18"] = {
+			["a"] = {
+				[1539] = 9,
+			},
+			["l"] = {
+			},
+			["m"] = 9992,
+			["h"] = {
+				[1539] = 9992,
+			},
+		},
+		["g:17922:10"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 1497,
+			["h"] = {
+				[1539] = 1497,
+			},
+		},
+		["g:2800:26"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 109999,
+			["h"] = {
+				[1538] = 109999,
+			},
+		},
+		["gn:14229:Embersilk Cloak of Intellect:36"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 28644,
+			},
+			["m"] = 28644,
+		},
+		["gn:2961:Burnt Leather Vest:11"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 1996,
+			["h"] = {
+				[1539] = 1996,
+			},
+		},
+		["gn:14215:Vital Tunic of Frozen Wrath:37"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19896,
+			},
+			["m"] = 19896,
+		},
+		["gn:15018:Lupine Vest of Nature's Wrath:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5095,
+			["h"] = {
+				[1539] = 5095,
+			},
+		},
+		["gn:217245:Crimson Silk Robe:41"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 102251,
+			},
+			["m"] = 102251,
+		},
+		["gn:9869:Renegade Belt of Healing:35"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 15894,
+			},
+			["m"] = 15894,
+		},
+		["7429"] = {
+			["a"] = {
+				[1540] = 15,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9963,
+			},
+			["m"] = 9963,
+		},
+		["gn:869:Dazzling Longsword:41"] = {
+			["a"] = {
+				[1540] = 8,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 187590,
+			},
+			["m"] = 187590,
+		},
+		["gn:15214:Nobles Brand of Power:40"] = {
+			["a"] = {
+				[1540] = 7,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19997,
+			},
+			["m"] = 19997,
+		},
+		["gn:1794:Patched Leather Jerkin:20"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 2228,
+			["h"] = {
+				[1539] = 2228,
+			},
+		},
+		["8067"] = {
+			["a"] = {
+				[1539] = 600,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4,
+			},
+			["m"] = 4,
+		},
+		["g:15009:11"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 3094,
+			["h"] = {
+				[1539] = 3094,
+			},
+		},
+		["g:2077:29"] = {
+			["a"] = {
+				[1539] = 1,
+				[1540] = 34,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 14998,
+				[1540] = 7000,
+			},
+			["m"] = 7000,
+		},
+		["g:15213:36"] = {
+			["a"] = {
+				[1540] = 50,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 18000,
+			},
+			["m"] = 18000,
+		},
+		["g:7111:37"] = {
+			["a"] = {
+				[1538] = 3,
+				[1540] = 12,
+			},
+			["l"] = {
+			},
+			["m"] = 10000,
+			["h"] = {
+				[1538] = 17379,
+				[1540] = 10000,
+			},
+		},
+		["g:9776:20"] = {
+			["a"] = {
+				[1539] = 4,
+			},
+			["l"] = {
+			},
+			["m"] = 10977,
+			["h"] = {
+				[1539] = 10977,
+			},
+		},
+		["gn:15568:Marauder's Cloak of the Bear:33"] = {
+			["a"] = {
+				[1538] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 4996,
+			},
+			["m"] = 4996,
+		},
+		["3848"] = {
+			["a"] = {
+				[1539] = 11,
+			},
+			["l"] = {
+			},
+			["m"] = 10024,
+			["h"] = {
+				[1539] = 10024,
+			},
+		},
+		["gn:6608:Bright Armor:27"] = {
+			["a"] = {
+				[1538] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 6664,
+			["h"] = {
+				[1538] = 6664,
+			},
+		},
+		["gn:15310:Feral Gloves of Defense:18"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 4993,
+			["h"] = {
+				[1539] = 4993,
+			},
+		},
+		["g:9852:38"] = {
+			["a"] = {
+				[1540] = 21,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9400,
+			},
+			["m"] = 9400,
+		},
+		["6570"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 11000,
+			["h"] = {
+				[1539] = 11000,
+			},
+		},
+		["gn:14215:Vital Tunic of Arcane Wrath:37"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 29995,
+			},
+			["m"] = 29995,
+		},
+		["g:14219:34"] = {
+			["a"] = {
+				[1538] = 3,
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 24552,
+				[1539] = 25000,
+			},
+			["m"] = 25000,
+		},
+		["15508"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3099,
+			},
+			["m"] = 3099,
+		},
+		["gn:2140:Carving Knife of Healing:11"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+				[1539] = 9999,
+			},
+			["h"] = {
+				[1539] = 14899,
+			},
+			["m"] = 9999,
+		},
+		["14225"] = {
+			["a"] = {
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 26000,
+			},
+			["m"] = 26000,
+		},
+		["7377"] = {
+			["a"] = {
+				[1538] = 81,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 9880,
+			},
+			["m"] = 9880,
+		},
+		["3784"] = {
+			["a"] = {
+				[1540] = 5,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 9977,
+			},
+			["m"] = 9977,
+		},
+		["1299"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 19900,
+			["h"] = {
+			},
+		},
+		["gn:14213:Vital Raiment of the Owl:37"] = {
+			["a"] = {
+				[1540] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 11723,
+			},
+			["m"] = 11723,
+		},
+		["g:6628:22"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 18527,
+		},
+		["g:15016:16"] = {
+			["a"] = {
+				[1539] = 5,
+			},
+			["l"] = {
+			},
+			["m"] = 5987,
+			["h"] = {
+				[1539] = 5987,
+			},
+		},
+		["gn:14129:Ritual Sandals of the Falcon:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["m"] = 4997,
+			["h"] = {
+			},
+		},
+		["15970"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 900,
+			},
+			["m"] = 900,
+		},
+		["3321"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 10101,
+			["h"] = {
+				[1539] = 10101,
+			},
+		},
+		["gn:937:Black Duskwood Staff:38"] = {
+			["a"] = {
+				[1540] = 7,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 19991,
+			},
+			["m"] = 19991,
+		},
+		["gn:3185:Acrobatic Staff of Shadow Wrath:34"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 45999,
+			},
+			["m"] = 45999,
+		},
+		["gn:2072:Dwarven Magestaff of the Wolf:27"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 17769,
+			},
+			["m"] = 17769,
+		},
+		["10404"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 3083,
+			},
+			["m"] = 3083,
+		},
+		["gn:2819:Cross Dagger of Healing:28"] = {
+			["a"] = {
+				[1539] = 3,
+				[1540] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 7499,
+				[1540] = 7594,
+			},
+			["m"] = 7594,
+		},
+		["gn:2077:Magician Staff of the Bear:29"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 15972,
+			},
+			["m"] = 15972,
+		},
+		["g:14193:31"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4000,
+			},
+			["m"] = 4000,
+		},
+		["g:15153:37"] = {
+			["a"] = {
+				[1538] = 3,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 10000,
+			},
+			["m"] = 10000,
+		},
+		["4244"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 9988,
+			["h"] = {
+				[1539] = 9988,
+			},
+		},
+		["g:15014:17"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1539] = 4998,
+			},
+			["m"] = 4998,
+		},
+		["14219"] = {
+			["a"] = {
+				[1538] = 3,
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1538] = 24552,
+				[1539] = 25000,
+			},
+			["m"] = 25000,
+		},
+		["g:4693:14"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 1079,
+			["h"] = {
+				[1539] = 1079,
+			},
+		},
+		["gn:15011:Lupine Cord of the Boar:15"] = {
+			["a"] = {
+				[1539] = 1,
+			},
+			["l"] = {
+			},
+			["m"] = 5000,
+			["h"] = {
+				[1539] = 5000,
+			},
+		},
+		["g:14124:20"] = {
+			["a"] = {
+			},
+			["l"] = {
+			},
+			["h"] = {
+			},
+			["m"] = 3090,
+		},
+		["g:15010:11"] = {
+			["a"] = {
+				[1539] = 2,
+			},
+			["l"] = {
+			},
+			["m"] = 4299,
+			["h"] = {
+				[1539] = 4299,
+			},
+		},
+		["gn:2819:Cross Dagger of Power:28"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 8097,
+			},
+			["m"] = 8097,
+		},
+		["gn:3185:Acrobatic Staff of the Eagle:34"] = {
+			["a"] = {
+				[1540] = 1,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 12098,
+			},
+			["m"] = 12098,
 		},
 		["6608"] = {
 			["a"] = {
@@ -19211,10 +18966,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
+			["m"] = 6664,
 			["h"] = {
 				[1538] = 6664,
 			},
-			["m"] = 6664,
 		},
 		["gn:6415:Aurora Robe:41"] = {
 			["a"] = {
@@ -19222,21 +18977,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 5462,
 			["h"] = {
 				[1540] = 5462,
 			},
+			["m"] = 5462,
 		},
-		["gn:15242:Honed Stiletto of Power:30"] = {
+		["gn:15241:Battle Knife of Strength:26"] = {
 			["a"] = {
 				[1540] = 1,
 			},
 			["l"] = {
 			},
-			["m"] = 19147,
 			["h"] = {
-				[1540] = 19147,
+				[1540] = 9500,
 			},
+			["m"] = 9500,
 		},
 		["14194"] = {
 			["a"] = {
@@ -19244,31 +18999,31 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 9991,
 			["h"] = {
 				[1539] = 9991,
 			},
+			["m"] = 9991,
 		},
-		["g:5752:26"] = {
+		["2236"] = {
 			["a"] = {
-				[1540] = 2,
+				[1540] = 5,
 			},
 			["l"] = {
 			},
-			["m"] = 18000,
 			["h"] = {
-				[1540] = 18000,
+				[1540] = 59997,
 			},
+			["m"] = 59997,
 		},
-		["g:217252:37"] = {
+		["gn:4244:Hillman's Leather Vest:20"] = {
 			["a"] = {
-				[1538] = 7,
+				[1539] = 2,
 			},
 			["l"] = {
 			},
-			["m"] = 5960,
+			["m"] = 9988,
 			["h"] = {
-				[1538] = 5960,
+				[1539] = 9988,
 			},
 		},
 		["g:15969:10"] = {
@@ -19277,76 +19032,80 @@ AUCTIONATOR_PRICE_DATABASE = {
 			},
 			["l"] = {
 			},
-			["m"] = 7515,
 			["h"] = {
 				[1539] = 7515,
 			},
+			["m"] = 7515,
 		},
-		["gn:2912:Claw of the Shadowmancer:32"] = {
+		["gn:15242:Honed Stiletto of the Monkey:30"] = {
 			["a"] = {
-				[1540] = 2,
-			},
-			["l"] = {
-			},
-			["m"] = 169992,
-			["h"] = {
-				[1540] = 169992,
-			},
-		},
-		["gn:9890:Huntsman's Cape of the Monkey:38"] = {
-			["a"] = {
-				[1538] = 3,
-			},
-			["l"] = {
-			},
-			["m"] = 9990,
-			["h"] = {
-				[1538] = 9990,
-			},
-		},
-		["g:9875:39"] = {
-			["a"] = {
-				[1539] = 1,
-			},
-			["l"] = {
-			},
-			["m"] = 6957,
-			["h"] = {
-				[1539] = 6957,
-			},
-		},
-		["gn:15305:Feral Shoes of the Owl:18"] = {
-			["a"] = {
-				[1539] = 2,
+				[1540] = 4,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1539] = 7598,
+				[1540] = 33097,
 			},
-			["m"] = 7598,
+			["m"] = 33097,
 		},
-		["gn:14215:Vital Tunic of the Whale:37"] = {
+		["15306"] = {
 			["a"] = {
-				[1538] = 1,
+				[1539] = 3,
+			},
+			["l"] = {
+				[1539] = 2000,
+			},
+			["h"] = {
+				[1539] = 7800,
+			},
+			["m"] = 4498,
+		},
+		["9718"] = {
+			["a"] = {
+				[1540] = 4,
+			},
+			["l"] = {
+			},
+			["h"] = {
+				[1540] = 199550,
+			},
+			["m"] = 199550,
+		},
+		["8006"] = {
+			["a"] = {
 				[1540] = 1,
 			},
 			["l"] = {
 			},
 			["h"] = {
-				[1538] = 10000,
-				[1540] = 8996,
+				[1540] = 189099,
 			},
-			["m"] = 8996,
+			["m"] = 189099,
 		},
-		["gn:9767:Greenweave Sandals of the Whale:23"] = {
+		["g:9877:38"] = {
 			["a"] = {
+				[1538] = 20,
+				[1539] = 2,
+			},
+			["l"] = {
+				[1538] = 5597,
+			},
+			["h"] = {
+				[1538] = 5598,
+				[1539] = 7483,
+			},
+			["m"] = 7483,
+		},
+		["g:1716:40"] = {
+			["a"] = {
+				[1540] = 6,
 			},
 			["l"] = {
 			},
 			["h"] = {
+				[1540] = 315000,
 			},
-			["m"] = 2094,
+			["m"] = 315000,
 		},
 	},
 }
@@ -19774,39 +19533,34 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710115723,
 		}, -- [1]
 	},
-	["g:7448:36"] = {
+	["3685"] = {
 		{
-			["price"] = 4492,
-			["quantity"] = 1,
-			["time"] = 1711044985,
+			["price"] = 125,
+			["quantity"] = 9,
+			["time"] = 1710884710,
 		}, -- [1]
+		{
+			["price"] = 68,
+			["quantity"] = 9,
+			["time"] = 1711045034,
+		}, -- [2]
 	},
-	["gn:15520:Spiked Chain Gauntlets of the Bear:26"] = {
+	["gn:14397:Resilient Mantle:32"] = {
 		{
-			["price"] = 3247,
+			["price"] = 3085,
 			["quantity"] = 1,
-			["time"] = 1710754830,
+			["time"] = 1710802345,
 		}, -- [1]
 		{
-			["price"] = 2912,
+			["price"] = 3077,
 			["quantity"] = 1,
-			["time"] = 1710802340,
+			["time"] = 1710859612,
 		}, -- [2]
 		{
-			["price"] = 2903,
+			["price"] = 2471,
 			["quantity"] = 1,
-			["time"] = 1710859619,
+			["time"] = 1710889987,
 		}, -- [3]
-		{
-			["price"] = 2399,
-			["quantity"] = 1,
-			["time"] = 1710889992,
-		}, -- [4]
-		{
-			["price"] = 2109,
-			["quantity"] = 1,
-			["time"] = 1711044960,
-		}, -- [5]
 	},
 	["__dbversion"] = 1,
 	["2251"] = {
@@ -19816,12 +19570,22 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710884719,
 		}, -- [1]
 	},
-	["4480"] = {
+	["gn:14119:Aboriginal Loincloth of the Whale:17"] = {
 		{
-			["price"] = 3063,
+			["price"] = 2796,
 			["quantity"] = 1,
-			["time"] = 1711044754,
+			["time"] = 1710859607,
 		}, -- [1]
+		{
+			["price"] = 2792,
+			["quantity"] = 1,
+			["time"] = 1710889980,
+		}, -- [2]
+		{
+			["price"] = 2898,
+			["quantity"] = 1,
+			["time"] = 1711044995,
+		}, -- [3]
 	},
 	["4461"] = {
 		{
@@ -19835,21 +19599,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1711045029,
 		}, -- [2]
 	},
-	["g:15113:23"] = {
+	["3197"] = {
 		{
-			["price"] = 4994,
+			["price"] = 11090,
 			["quantity"] = 1,
-			["time"] = 1710107367,
+			["time"] = 1710814884,
 		}, -- [1]
 		{
-			["price"] = 3731,
+			["price"] = 761085,
 			["quantity"] = 1,
-			["time"] = 1710195227,
+			["time"] = 1710859588,
 		}, -- [2]
 		{
-			["price"] = 2031,
+			["price"] = 5079,
 			["quantity"] = 1,
-			["time"] = 1710338800,
+			["time"] = 1710890005,
 		}, -- [3]
 	},
 	["gn:7476:Regal Sash of the Whale:40"] = {
@@ -19859,22 +19623,17 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1711044973,
 		}, -- [1]
 	},
-	["15113"] = {
+	["g:790:23"] = {
 		{
-			["price"] = 4994,
-			["quantity"] = 1,
-			["time"] = 1710107367,
+			["price"] = 5086,
+			["quantity"] = 2,
+			["time"] = 1710802436,
 		}, -- [1]
 		{
-			["price"] = 3731,
+			["price"] = 5099,
 			["quantity"] = 1,
-			["time"] = 1710195227,
+			["time"] = 1710859628,
 		}, -- [2]
-		{
-			["price"] = 2031,
-			["quantity"] = 1,
-			["time"] = 1710338800,
-		}, -- [3]
 	},
 	["3305"] = {
 		{
@@ -19905,12 +19664,22 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710195240,
 		}, -- [2]
 	},
-	["3464"] = {
+	["gn:14185:Watcher's Cinch of the Whale:27"] = {
 		{
-			["price"] = 35,
-			["quantity"] = 200,
-			["time"] = 1710803589,
+			["price"] = 5099,
+			["quantity"] = 1,
+			["time"] = 1710111370,
 		}, -- [1]
+		{
+			["price"] = 3298,
+			["quantity"] = 1,
+			["time"] = 1710195235,
+		}, -- [2]
+		{
+			["price"] = 2290,
+			["quantity"] = 1,
+			["time"] = 1710338795,
+		}, -- [3]
 	},
 	["4365"] = {
 		{
@@ -19944,58 +19713,63 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1711045022,
 		}, -- [6]
 	},
-	["g:14177:26"] = {
+	["g:14397:32"] = {
 		{
-			["price"] = 2000,
+			["price"] = 3085,
 			["quantity"] = 1,
-			["time"] = 1710111384,
-		}, -- [1]
-	},
-	["g:3305:16"] = {
-		{
-			["price"] = 894,
-			["quantity"] = 1,
-			["time"] = 1710096827,
+			["time"] = 1710802345,
 		}, -- [1]
 		{
-			["price"] = 2096,
+			["price"] = 3077,
 			["quantity"] = 1,
-			["time"] = 1710195214,
+			["time"] = 1710859612,
 		}, -- [2]
 		{
-			["price"] = 1858,
+			["price"] = 2471,
 			["quantity"] = 1,
-			["time"] = 1710338767,
+			["time"] = 1710889987,
 		}, -- [3]
 	},
-	["5527"] = {
+	["gn:3197:Stonecutter Claymore of the Boar:35"] = {
 		{
-			["price"] = 341,
-			["quantity"] = 16,
-			["time"] = 1710108322,
-		}, -- [1]
-	},
-	["14119"] = {
-		{
-			["price"] = 2008,
+			["price"] = 11090,
 			["quantity"] = 1,
-			["time"] = 1710096847,
+			["time"] = 1710814884,
 		}, -- [1]
 		{
-			["price"] = 2796,
+			["price"] = 761085,
 			["quantity"] = 1,
-			["time"] = 1710859607,
+			["time"] = 1710859588,
 		}, -- [2]
 		{
-			["price"] = 2792,
+			["price"] = 5079,
 			["quantity"] = 1,
-			["time"] = 1710889980,
+			["time"] = 1710890005,
 		}, -- [3]
+	},
+	["14124"] = {
 		{
-			["price"] = 2898,
+			["price"] = 3090,
 			["quantity"] = 1,
-			["time"] = 1711044995,
-		}, -- [4]
+			["time"] = 1710107358,
+		}, -- [1]
+	},
+	["4240"] = {
+		{
+			["price"] = 967,
+			["quantity"] = 8,
+			["time"] = 1710803349,
+		}, -- [1]
+		{
+			["price"] = 2299,
+			["quantity"] = 8,
+			["time"] = 1710859577,
+		}, -- [2]
+		{
+			["price"] = 1494,
+			["quantity"] = 3,
+			["time"] = 1710890021,
+		}, -- [3]
 	},
 	["15269"] = {
 		{
@@ -20004,11 +19778,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710107375,
 		}, -- [1]
 	},
-	["g:15269:24"] = {
+	["5527"] = {
 		{
-			["price"] = 3091,
-			["quantity"] = 1,
-			["time"] = 1710107375,
+			["price"] = 341,
+			["quantity"] = 16,
+			["time"] = 1710108322,
 		}, -- [1]
 	},
 	["gn:14123:Ritual Cape of Shadow Wrath:17"] = {
@@ -20047,11 +19821,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1711044985,
 		}, -- [1]
 	},
-	["gn:8183:Precision Bow:27"] = {
+	["14177"] = {
 		{
-			["price"] = 6496,
+			["price"] = 2000,
 			["quantity"] = 1,
-			["time"] = 1710754817,
+			["time"] = 1710111384,
 		}, -- [1]
 	},
 	["3182"] = {
@@ -20073,18 +19847,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710859628,
 		}, -- [2]
 	},
+	["gn:15118:Rigid Tunic of the Eagle:26"] = {
+		{
+			["price"] = 6000,
+			["quantity"] = 1,
+			["time"] = 1710115511,
+		}, -- [1]
+	},
 	["gn:15269:Massive Battle Axe of the Whale:24"] = {
 		{
 			["price"] = 3091,
 			["quantity"] = 1,
 			["time"] = 1710107375,
-		}, -- [1]
-	},
-	["g:8183:27"] = {
-		{
-			["price"] = 6496,
-			["quantity"] = 1,
-			["time"] = 1710754817,
 		}, -- [1]
 	},
 	["15118"] = {
@@ -20094,18 +19868,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710115511,
 		}, -- [1]
 	},
-	["2447"] = {
-		{
-			["price"] = 33,
-			["quantity"] = 2,
-			["time"] = 1710884712,
-		}, -- [1]
-	},
 	["12184"] = {
 		{
 			["price"] = 231,
 			["quantity"] = 9,
 			["time"] = 1710884707,
+		}, -- [1]
+	},
+	["2447"] = {
+		{
+			["price"] = 33,
+			["quantity"] = 2,
+			["time"] = 1710884712,
 		}, -- [1]
 	},
 	["17058"] = {
@@ -20120,13 +19894,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["price"] = 48,
 			["quantity"] = 10,
 			["time"] = 1710097103,
-		}, -- [1]
-	},
-	["g:14124:20"] = {
-		{
-			["price"] = 3090,
-			["quantity"] = 1,
-			["time"] = 1710107358,
 		}, -- [1]
 	},
 	["14185"] = {
@@ -20145,6 +19912,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["quantity"] = 1,
 			["time"] = 1710338795,
 		}, -- [3]
+	},
+	["g:14124:20"] = {
+		{
+			["price"] = 3090,
+			["quantity"] = 1,
+			["time"] = 1710107358,
+		}, -- [1]
 	},
 	["15520"] = {
 		{
@@ -20173,11 +19947,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1711044960,
 		}, -- [5]
 	},
-	["gn:15118:Rigid Tunic of the Eagle:26"] = {
+	["g:8183:27"] = {
 		{
-			["price"] = 6000,
+			["price"] = 6496,
 			["quantity"] = 1,
-			["time"] = 1710115511,
+			["time"] = 1710754817,
 		}, -- [1]
 	},
 	["g:15329:24"] = {
@@ -20187,11 +19961,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710111376,
 		}, -- [1]
 	},
-	["14177"] = {
+	["gn:8183:Precision Bow:27"] = {
 		{
-			["price"] = 2000,
+			["price"] = 6496,
 			["quantity"] = 1,
-			["time"] = 1710111384,
+			["time"] = 1710754817,
 		}, -- [1]
 	},
 	["6268"] = {
@@ -20201,92 +19975,82 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1709775556,
 		}, -- [1]
 	},
-	["4240"] = {
+	["14119"] = {
 		{
-			["price"] = 967,
-			["quantity"] = 8,
-			["time"] = 1710803349,
+			["price"] = 2008,
+			["quantity"] = 1,
+			["time"] = 1710096847,
 		}, -- [1]
 		{
-			["price"] = 2299,
-			["quantity"] = 8,
-			["time"] = 1710859577,
+			["price"] = 2796,
+			["quantity"] = 1,
+			["time"] = 1710859607,
 		}, -- [2]
 		{
-			["price"] = 1494,
-			["quantity"] = 3,
-			["time"] = 1710890021,
+			["price"] = 2792,
+			["quantity"] = 1,
+			["time"] = 1710889980,
+		}, -- [3]
+		{
+			["price"] = 2898,
+			["quantity"] = 1,
+			["time"] = 1711044995,
+		}, -- [4]
+	},
+	["g:15269:24"] = {
+		{
+			["price"] = 3091,
+			["quantity"] = 1,
+			["time"] = 1710107375,
+		}, -- [1]
+	},
+	["g:3305:16"] = {
+		{
+			["price"] = 894,
+			["quantity"] = 1,
+			["time"] = 1710096827,
+		}, -- [1]
+		{
+			["price"] = 2096,
+			["quantity"] = 1,
+			["time"] = 1710195214,
+		}, -- [2]
+		{
+			["price"] = 1858,
+			["quantity"] = 1,
+			["time"] = 1710338767,
 		}, -- [3]
 	},
-	["14124"] = {
+	["g:14177:26"] = {
 		{
-			["price"] = 3090,
+			["price"] = 2000,
 			["quantity"] = 1,
-			["time"] = 1710107358,
+			["time"] = 1710111384,
 		}, -- [1]
 	},
-	["gn:3197:Stonecutter Claymore of the Boar:35"] = {
+	["3464"] = {
 		{
-			["price"] = 11090,
+			["price"] = 35,
+			["quantity"] = 200,
+			["time"] = 1710803589,
+		}, -- [1]
+	},
+	["15113"] = {
+		{
+			["price"] = 4994,
 			["quantity"] = 1,
-			["time"] = 1710814884,
+			["time"] = 1710107367,
 		}, -- [1]
 		{
-			["price"] = 761085,
+			["price"] = 3731,
 			["quantity"] = 1,
-			["time"] = 1710859588,
+			["time"] = 1710195227,
 		}, -- [2]
 		{
-			["price"] = 5079,
+			["price"] = 2031,
 			["quantity"] = 1,
-			["time"] = 1710890005,
+			["time"] = 1710338800,
 		}, -- [3]
-	},
-	["g:14397:32"] = {
-		{
-			["price"] = 3085,
-			["quantity"] = 1,
-			["time"] = 1710802345,
-		}, -- [1]
-		{
-			["price"] = 3077,
-			["quantity"] = 1,
-			["time"] = 1710859612,
-		}, -- [2]
-		{
-			["price"] = 2471,
-			["quantity"] = 1,
-			["time"] = 1710889987,
-		}, -- [3]
-	},
-	["gn:14185:Watcher's Cinch of the Whale:27"] = {
-		{
-			["price"] = 5099,
-			["quantity"] = 1,
-			["time"] = 1710111370,
-		}, -- [1]
-		{
-			["price"] = 3298,
-			["quantity"] = 1,
-			["time"] = 1710195235,
-		}, -- [2]
-		{
-			["price"] = 2290,
-			["quantity"] = 1,
-			["time"] = 1710338795,
-		}, -- [3]
-	},
-	["g:790:23"] = {
-		{
-			["price"] = 5086,
-			["quantity"] = 2,
-			["time"] = 1710802436,
-		}, -- [1]
-		{
-			["price"] = 5099,
-			["quantity"] = 1,
-			["time"] = 1710859628,
-		}, -- [2]
 	},
 	["805"] = {
 		{
@@ -20305,68 +20069,63 @@ AUCTIONATOR_POSTING_HISTORY = {
 			["time"] = 1710195247,
 		}, -- [3]
 	},
-	["3197"] = {
+	["g:15113:23"] = {
 		{
-			["price"] = 11090,
+			["price"] = 4994,
 			["quantity"] = 1,
-			["time"] = 1710814884,
+			["time"] = 1710107367,
 		}, -- [1]
 		{
-			["price"] = 761085,
+			["price"] = 3731,
 			["quantity"] = 1,
-			["time"] = 1710859588,
+			["time"] = 1710195227,
 		}, -- [2]
 		{
-			["price"] = 5079,
+			["price"] = 2031,
 			["quantity"] = 1,
-			["time"] = 1710890005,
+			["time"] = 1710338800,
 		}, -- [3]
 	},
-	["gn:14119:Aboriginal Loincloth of the Whale:17"] = {
+	["4480"] = {
 		{
-			["price"] = 2796,
+			["price"] = 3063,
 			["quantity"] = 1,
-			["time"] = 1710859607,
+			["time"] = 1711044754,
 		}, -- [1]
-		{
-			["price"] = 2792,
-			["quantity"] = 1,
-			["time"] = 1710889980,
-		}, -- [2]
-		{
-			["price"] = 2898,
-			["quantity"] = 1,
-			["time"] = 1711044995,
-		}, -- [3]
 	},
-	["gn:14397:Resilient Mantle:32"] = {
+	["gn:15520:Spiked Chain Gauntlets of the Bear:26"] = {
 		{
-			["price"] = 3085,
+			["price"] = 3247,
 			["quantity"] = 1,
-			["time"] = 1710802345,
+			["time"] = 1710754830,
 		}, -- [1]
 		{
-			["price"] = 3077,
+			["price"] = 2912,
 			["quantity"] = 1,
-			["time"] = 1710859612,
+			["time"] = 1710802340,
 		}, -- [2]
 		{
-			["price"] = 2471,
+			["price"] = 2903,
 			["quantity"] = 1,
-			["time"] = 1710889987,
+			["time"] = 1710859619,
 		}, -- [3]
+		{
+			["price"] = 2399,
+			["quantity"] = 1,
+			["time"] = 1710889992,
+		}, -- [4]
+		{
+			["price"] = 2109,
+			["quantity"] = 1,
+			["time"] = 1711044960,
+		}, -- [5]
 	},
-	["3685"] = {
+	["g:7448:36"] = {
 		{
-			["price"] = 125,
-			["quantity"] = 9,
-			["time"] = 1710884710,
+			["price"] = 4492,
+			["quantity"] = 1,
+			["time"] = 1711044985,
 		}, -- [1]
-		{
-			["price"] = 68,
-			["quantity"] = 9,
-			["time"] = 1711045034,
-		}, -- [2]
 	},
 }
 AUCTIONATOR_VENDOR_PRICE_CACHE = {
@@ -20545,124 +20304,124 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 	["1845"] = 877,
 	["15327"] = 4,
 	["2026"] = 6286,
-	["1205"] = 100,
-	["3135"] = 0.375,
-	["3591"] = 2097,
-	["5140"] = 25,
+	["852"] = 1739,
+	["2490"] = 540,
+	["2029"] = 4419,
+	["2132"] = 102,
 	["2438"] = 20996,
-	["8925"] = 450,
+	["4595"] = 300,
 	["2596"] = 120,
 	["2519"] = 0.25,
 	["795"] = 280,
-	["2594"] = 1500,
-	["849"] = 1326,
+	["1194"] = 104,
+	["1707"] = 200,
 	["8923"] = 200,
 	["4498"] = 2500,
-	["6892"] = 250,
+	["854"] = 3022,
 	["2509"] = 414,
 	["212588"] = 1259,
 	["17033"] = 2000,
-	["4599"] = 400,
 	["5976"] = 10000,
+	["4599"] = 400,
+	["2493"] = 701,
 	["2207"] = 2390,
-	["6529"] = 50,
-	["792"] = 207,
-	["4608"] = 360,
+	["2134"] = 82,
+	["8932"] = 800,
 	["787"] = 5,
-	["3590"] = 578,
-	["8957"] = 800,
+	["11285"] = 5,
+	["2139"] = 57,
 	["2473"] = 25753,
 	["414"] = 25,
 	["2158"] = 2066,
 	["2532"] = 52608,
 	["203"] = 1147,
-	["17036"] = 800,
-	["4606"] = 90,
-	["__dbversion"] = 1,
-	["2474"] = 17233,
+	["3713"] = 160,
+	["3137"] = 1,
+	["422"] = 100,
+	["2480"] = 72,
 	["3892"] = 21940,
 	["2025"] = 5304,
 	["17034"] = 200,
 	["215370"] = 700,
 	["4497"] = 20000,
 	["4600"] = 340,
-	["2617"] = 9892,
-	["3587"] = 14314,
-	["3890"] = 10201,
+	["17026"] = 1000,
+	["21552"] = 400,
+	["2930"] = 50,
 	["8950"] = 800,
-	["18567"] = 150000,
+	["5441"] = 1000,
 	["1197"] = 2666,
-	["17030"] = 2000,
-	["3857"] = 500,
-	["6523"] = 1422,
+	["16335"] = 40000,
+	["4496"] = 500,
+	["3770"] = 100,
 	["2469"] = 6334,
 	["200"] = 2270,
 	["2465"] = 12477,
-	["10647"] = 1800,
 	["3107"] = 0.375,
+	["10647"] = 1800,
 	["16341"] = 21425,
-	["2595"] = 2000,
+	["4499"] = 100000,
 	["4542"] = 100,
-	["18256"] = 5400,
-	["2515"] = 0.25,
+	["3131"] = 0.15,
+	["2321"] = 100,
 	["2946"] = 0.15,
-	["4340"] = 350,
-	["2143"] = 3944,
-	["17020"] = 1000,
-	["5956"] = 18,
+	["2472"] = 34211,
 	["18428"] = 30000,
-	["17029"] = 1000,
-	["2928"] = 20,
+	["2463"] = 13695,
+	["17020"] = 1000,
+	["2027"] = 3815,
+	["2604"] = 50,
+	["8952"] = 800,
 	["2141"] = 5223,
 	["2435"] = 27683,
 	["2533"] = 61107,
 	["3108"] = 1,
 	["215369"] = 700,
-	["8952"] = 800,
-	["2604"] = 50,
-	["2027"] = 3815,
-	["2463"] = 13695,
-	["2472"] = 34211,
-	["2321"] = 100,
-	["3131"] = 0.15,
+	["2928"] = 20,
+	["17029"] = 1000,
+	["5956"] = 18,
+	["2143"] = 3944,
+	["4340"] = 350,
+	["2515"] = 0.25,
+	["18256"] = 5400,
 	["4399"] = 200,
-	["4499"] = 100000,
+	["2595"] = 2000,
 	["8924"] = 100,
 	["211386"] = 20000,
 	["211390"] = 20000,
-	["3770"] = 100,
-	["4496"] = 500,
-	["16335"] = 40000,
-	["5441"] = 1000,
-	["2930"] = 50,
-	["21552"] = 400,
-	["17026"] = 1000,
+	["6523"] = 1422,
+	["3857"] = 500,
+	["17030"] = 2000,
+	["18567"] = 150000,
+	["3890"] = 10201,
+	["3587"] = 14314,
+	["2617"] = 9892,
 	["1846"] = 880,
 	["3594"] = 5497,
 	["4594"] = 200,
 	["794"] = 279,
-	["2480"] = 72,
-	["422"] = 100,
-	["3137"] = 1,
-	["3713"] = 160,
+	["2474"] = 17233,
+	["__dbversion"] = 1,
+	["4606"] = 90,
+	["17036"] = 800,
 	["18427"] = 6611,
 	["3372"] = 36,
-	["2139"] = 57,
-	["11285"] = 5,
-	["8932"] = 800,
-	["2134"] = 82,
-	["2493"] = 701,
+	["8957"] = 800,
+	["3590"] = 578,
+	["4608"] = 360,
+	["792"] = 207,
+	["6529"] = 50,
 	["4593"] = 100,
 	["3593"] = 5477,
 	["2593"] = 150,
-	["854"] = 3022,
-	["1707"] = 200,
-	["1194"] = 104,
-	["4595"] = 300,
-	["2132"] = 102,
-	["2029"] = 4419,
-	["2490"] = 540,
-	["852"] = 1739,
+	["6892"] = 250,
+	["849"] = 1326,
+	["2594"] = 1500,
+	["8925"] = 450,
+	["5140"] = 25,
+	["3591"] = 2097,
+	["3135"] = 0.375,
+	["1205"] = 100,
 	["2429"] = 10138,
 }
 AUCTIONATOR_RECENT_SEARCHES = {
@@ -20700,9 +20459,9 @@ AUCTIONATOR_RECENT_SEARCHES = {
 AUCTIONATOR_SELLING_GROUPS = {
 	["CustomGroups"] = {
 		{
-			["name"] = "FAVOURITES",
-			["type"] = 1,
 			["hidden"] = false,
+			["type"] = 1,
+			["name"] = "FAVOURITES",
 			["list"] = {
 			},
 		}, -- [1]

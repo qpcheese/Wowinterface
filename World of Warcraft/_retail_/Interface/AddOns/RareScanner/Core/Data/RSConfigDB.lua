@@ -929,20 +929,20 @@ function RSConfigDB.IsZoneFilteredOnlyAlerts(zoneID)
 	return false
 end
 
-function RSConfigDB.IsEntityZoneFilteredOnlyAlerts(entityID, atlasName)
+function RSConfigDB.IsEntityZoneFilteredOnlyAlerts(entityID, atlasName, mapID)
 	if (entityID and atlasName) then
 		-- If npc
 		if (RSConstants.IsNpcAtlas(atlasName)) then
 			local npcInfo = RSNpcDB.GetInternalNpcInfo(entityID)
 			if (npcInfo) then
 				if (RSNpcDB.IsInternalNpcMultiZone(entityID)) then
-					for mapID, _ in pairs (npcInfo.zoneID) do
-						if (RSConfigDB.GetZoneFiltered(mapID)) then
+					for zoneMapID, _ in pairs (npcInfo.zoneID) do
+						if (mapID == zoneMapID and RSConfigDB.GetZoneFiltered(mapID)) then
 							return RSConfigDB.IsZoneFilteredOnlyAlerts(mapID)
 						end
 					end
 				elseif (RSNpcDB.IsInternalNpcMonoZone(entityID)) then
-					return RSConfigDB.IsZoneFilteredOnlyAlerts(npcInfo.zoneID)
+					return RSConfigDB.IsZoneFilteredOnlyAlerts(mapID)
 				end
 			end
 		-- If container
@@ -950,13 +950,13 @@ function RSConfigDB.IsEntityZoneFilteredOnlyAlerts(entityID, atlasName)
 			local containerInfo = RSContainerDB.GetInternalContainerInfo(entityID)
 			if (containerInfo) then
 				if (RSContainerDB.IsInternalContainerMultiZone(entityID)) then
-					for mapID, _ in pairs (containerInfo.zoneID) do
-						if (RSConfigDB.GetZoneFiltered(mapID)) then
+					for zoneMapID, _ in pairs (containerInfo.zoneID) do
+						if (mapID == zoneMapID and RSConfigDB.GetZoneFiltered(mapID)) then
 							return RSConfigDB.IsZoneFilteredOnlyAlerts(mapID)
 						end
 					end
 				elseif (RSContainerDB.IsInternalContainerMonoZone(entityID)) then
-					return RSConfigDB.IsZoneFilteredOnlyAlerts(containerInfo.zoneID)
+					return RSConfigDB.IsZoneFilteredOnlyAlerts(mapID)
 				end
 			end
 		-- If event
@@ -964,13 +964,13 @@ function RSConfigDB.IsEntityZoneFilteredOnlyAlerts(entityID, atlasName)
 			local eventInfo = RSEventDB.GetInternalEventInfo(entityID)
 			if (eventInfo) then
 				if (RSEventDB.IsInternalEventMultiZone(entityID)) then
-					for mapID, _ in pairs (eventInfo.zoneID) do
-						if (RSConfigDB.GetZoneFiltered(mapID)) then
+					for zoneMapID, _ in pairs (eventInfo.zoneID) do
+						if (mapID == zoneMapID and RSConfigDB.GetZoneFiltered(mapID)) then
 							return RSConfigDB.IsZoneFilteredOnlyAlerts(mapID)
 						end
 					end
 				elseif (RSEventDB.IsInternalEventMonoZone(entityID)) then
-					return RSConfigDB.IsZoneFilteredOnlyAlerts(eventInfo.zoneID)
+					return RSConfigDB.IsZoneFilteredOnlyAlerts(mapID)
 				end
 			end
 		end

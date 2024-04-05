@@ -1,8 +1,8 @@
-## Interface: 11501
+## Interface: 11502 
 ## Title: Fojji Core
 ## RequiredDeps: WeakAuras
 ## SavedVariables: FojjiTimersSavedVars, FojjiSkipWTF
-## Version: 1.2.1
+## Version: 1.2.3
 
 libs\LibStub\LibStub.lua
 libs\CallbackHandler-1.0\CallbackHandler-1.0.lua

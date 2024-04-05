@@ -1,13 +1,13 @@
 
 ActionButtonSettingsDB = {
 	["profileKeys"] = {
-		["Flurrq - Ragnaros"] = "Default",
-		["Fishanus - Ragnaros"] = "Default",
-		["Qpfromage - Ragnaros"] = "Default",
-		["Qpaladin - Ragnaros"] = "Default",
-		["Qute - Sylvanas"] = "Default",
-		["Qpfromage - Sylvanas"] = "Default",
 		["Dogson - Ragnaros"] = "Default",
+		["Fishanus - Ragnaros"] = "Default",
+		["Qute - Sylvanas"] = "Default",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qpfromage - Sylvanas"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

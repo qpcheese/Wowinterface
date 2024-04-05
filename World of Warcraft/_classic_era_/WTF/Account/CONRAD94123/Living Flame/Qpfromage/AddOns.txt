@@ -17,8 +17,8 @@ BetterBags_Bound: disabled
 BetterBags: disabled
 BetterBags_Hearthstones: enabled
 BetterBags_ItemRack: enabled
-BetterBags_Legendary: enabled
-BetterBags_Tabards: enabled
+BetterBags_Legendary: disabled
+BetterBags_Tabards: disabled
 Guidelime: disabled
 Guidelime_Bustea's 1-60 leveling: disabled
 MacroMaker: enabled

@@ -67,8 +67,11 @@ private.NPC_INFO = {
 	[209864] = { zoneID = 0, displayID = 95199 }; --Enormous Dream Moth
 	[209916] = { zoneID = 0, displayID = 108113 }; --Template Solo Rare
 	[212410] = { zoneID = 0, displayID = 113870 }; --Splinterlimb
-	[213665] = { zoneID = 0, displayID = 103921 }; --Daetan Swiftplume
-	[216295] = { zoneID = 0, displayID = 103921 }; --Daetan Swiftplume
+	[213665] = { zoneID = {
+				[37] = { x = 3380, y = 9000, artID = { 41 }, overlay = { "3380-9000" } };
+				[1] = { x = 4444, y = 3510, artID = { 2 }, overlay = { "4444-3510" } };
+			  }, displayID = 103921, event = 5 }; --Daetan Swiftplume
+	[219007] = { zoneID = 0, displayID = 89251, questID = { 80183 } }; --Pieces of Hate
 	[5809] = { zoneID = 1, artID = { 2 }, x = 5920, y = 5820, overlay = { "5920-5820" }, friendly = { "A" }, displayID = 33165 }; --Sergeant Curtis
 	[5822] = { zoneID = {
 				[1] = { x = 5280, y = 8920, artID = { 2 }, overlay = { "5280-8920" } };

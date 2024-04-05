@@ -3,12 +3,12 @@ AnneneDB = {
 	["profileKeys"] = {
 		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
 		["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
-		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
 		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 		["Qpfromagee - Ragnaros"] = "Qpfromagee - Ragnaros",
-		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
-		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
-		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
+		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 }

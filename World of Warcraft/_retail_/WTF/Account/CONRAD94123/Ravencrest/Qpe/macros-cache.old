@@ -1,0 +1,81 @@
+VER 3 0100000000000068 "/ert note" "237133"
+/ert note
+END
+VER 3 0100000000000070 "ap" "136048"
+#showtooltip Arcane Power
+/cast Arcane Power
+/use 13
+/use 14
+END
+VER 3 0100000000000071 "ayt" "609811"
+#showtooltip
+/castsequence reset=1 alter time, .
+END
+VER 3 010000000000006D "blink stopcast" "135736"
+#showtooltip
+/stopcasting
+/cast Blink
+END
+VER 3 010000000000006B "COV MAGE" "3565446"
+#showtooltip
+/cast Radiant Spark
+/cast Mirrors of Torment
+/cast Deathborne
+/cast Shifting Power
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"Radiant Spark" or G"Mirrors of Torment" or G"Deathborne"or G"Shifting Power")
+END
+VER 3 0100000000000072 "Hp pot" "3566860"
+#showooltip
+/use Spiritual Healing Potion
+END
+VER 3 0100000000000067 "iceblock" "135841"
+#showtooltip
+/stopcasting
+/cancelaura Ice Block
+/cast Ice Block
+END
+VER 3 010000000000006A "mana gem" "134132"
+#showtooltip
+/click DeleteManaGem
+/use Conjure Mana Gem
+END
+VER 3 010000000000006F "Meow" "3742944"
+/meow
+END
+VER 3 0100000000000073 "missile" "136096"
+#showtooltip
+/cast arcane missiles
+/use Celebration Firework
+END
+VER 3 0100000000000074 "Phial" "134400"
+#showtooltip
+/use Phial of Serenity
+END
+VER 3 0100000000000075 "pi" "4095289"
+/w wishful Pi plz!
+END
+VER 3 010000000000006C "pomgem" "136031"
+#showtooltip Presence of Mind
+/cast Presence of Mind
+/Use Mana Gem
+/cast Arcane Blast
+END
+VER 3 0100000000000069 "Shadowcore" "463543"
+#showtooltip
+/use Shadowcore oil
+END
+VER 3 010000000000006E "slowfall" "135992"
+#showtooltip
+/cast slow fall
+/cancelaura slow fall
+END
+VER 3 0100000000000076 "tinker" "132536"
+/script TradeSkillFrame.DetailsFrame:Create();
+/use 6
+/click StaticPopup1Button1
+END
+VER 3 0100000000000077 "trink" "1411833"
+#showtooltip
+/use 13
+/use 14
+END

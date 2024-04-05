@@ -1067,4 +1067,15 @@ private.CONTAINER_INFO = {
 	[411463] = { zoneID = 2200, artID = { 1806 }, x = 6956, y = 5287, overlay = { "6957-5284" }, reset = false, questID = { 78550 }, factionID = { 2574 } }; --Unwaking Echo
 	[411465] = { zoneID = 2200, artID = { 1806 }, x = 5528, y = 4533, overlay = { "5532-4538" }, reset = false, questID = { 78551 }, factionID = { 2574 } }; --Unwaking Echo
 	[411466] = { zoneID = 2200, artID = { 1806 }, x = 4639, y = 8620, overlay = { "4640-8614" }, reset = false, questID = { 78552 }, factionID = { 2574 } }; --Unwaking Echo
+	[421179] = { zoneID = 2239, artID = { 1847 }, x = 5473, y = 7730, overlay = { "5468-7720" }, reset = false, questID = { 79473 } }; --Saco de dormir kaldorei
+	[421180] = { zoneID = 2239, artID = { 1847 }, x = 5248, y = 1780, overlay = { "5254-1770" }, reset = false, questID = { 79494 } }; --Mochila kaldorei
+	[421181] = { zoneID = 2239, artID = { 1847 }, x = 3135, y = 1609, overlay = { "3130-1612" }, reset = false, questID = { 79496 } }; --Daga kaldorei
+	[421182] = { zoneID = 2239, artID = { 1847 }, x = 4912, y = 7031, overlay = { "4912-7031" }, reset = false, questID = { 79497 } }; --Cuerno kaldorei
+	[421183] = { zoneID = 2239, artID = { 1847 }, x = 5530, y = 6431, overlay = { "5529-6436" }, reset = false, questID = { 79472 } }; --Kaldorei Bag
+	[421184] = { zoneID = 2239, artID = { 1847 }, x = 4788, y = 5679, overlay = { "4789-5688" }, reset = false, questID = { 79499 } }; --Escudo kaldorei
+	[421185] = { zoneID = 2239, artID = { 1847 }, x = 5341, y = 5572, overlay = { "5347-5574" }, reset = false, questID = { 79490 } }; --Lanza kaldorei
+	[421186] = { zoneID = 2239, artID = { 1847 }, x = 5189, y = 0576, overlay = { "5191-0589" }, reset = false, questID = { 79500 } }; --Catalejo kaldorei
+	[421338] = { zoneID = 2239, artID = { 1847 }, x = 4824, y = 7639, overlay = { "4828-7642" }, reset = false, questID = { 79493 } }; --Bolsa kaldorei
+	[421339] = { zoneID = 2239, artID = { 1847 }, x = 5844, y = 5185, overlay = { "5844-5190" }, reset = false, questID = { 79498 } }; --Cuerno kaldorei
+	[421555] = { zoneID = 2239, artID = { 1847 }, x = 2910, y = 2890, overlay = { "2910-2890" }, reset = false, questID = { 79520 } }; --Arco lunar kaldorei
 }

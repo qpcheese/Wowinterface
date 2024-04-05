@@ -1,22 +1,22 @@
 
 WeakAurasOptionsSaved = {
 	["magnetAlign"] = false,
-	["spellCacheAchievements"] = true,
 	["savedSnippets"] = {
 	},
-	["spellCache"] = {
-	},
+	["spellCacheAchievements"] = true,
+	["spellCacheStrings"] = true,
 	["locale"] = "enUS",
 	["needsRebuild"] = true,
-	["version"] = "5.11.3",
+	["version"] = "5.12.1",
 	["lockPositions"] = false,
-	["spellCacheAchivements"] = true,
-	["spellCacheStrings"] = true,
 	["frame"] = {
 		["xOffset"] = 424.9993591308594,
-		["width"] = 830.0001831054688,
-		["height"] = 665.0001220703125,
 		["yOffset"] = 1059.000244140625,
+		["height"] = 665.0001220703125,
+		["width"] = 830.0001831054688,
 	},
-	["build"] = "53584",
+	["spellCacheAchivements"] = true,
+	["spellCache"] = {
+	},
+	["build"] = "53989",
 }

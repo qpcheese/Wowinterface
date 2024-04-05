@@ -917,4 +917,15 @@ private.CONTAINER_LOOT = {
 	[411463] = {202023,210686}; --Unwaking Echo
 	[411465] = {202023,210678}; --Unwaking Echo
 	[411466] = {202023,210682}; --Unwaking Echo
+	[421179] = {213003}; --Saco de dormir kaldorei
+	[421180] = {213005}; --Mochila kaldorei
+	[421181] = {213008}; --Daga kaldorei
+	[421182] = {213007}; --Cuerno kaldorei
+	[421183] = {213010}; --Kaldorei Bag
+	[421184] = {213011}; --Escudo kaldorei
+	[421185] = {213012}; --Lanza kaldorei
+	[421186] = {213013}; --Catalejo kaldorei
+	[421338] = {213009}; --Bolsa kaldorei
+	[421339] = {213006}; --Cuerno kaldorei
+	[421555] = {213160}; --Arco lunar kaldorei
 }

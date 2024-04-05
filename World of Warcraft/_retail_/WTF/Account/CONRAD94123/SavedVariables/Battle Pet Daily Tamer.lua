@@ -5,7 +5,7 @@ BattlePetDailyTamerSettings = {
 	["OnAzerothMap"] = true,
 	["TrackFables"] = true,
 	["TrackCompleted"] = true,
-	["TrackPetDungeons"] = true,
-	["TrackNonSatchels"] = true,
 	["TrackWorldQuests"] = true,
+	["TrackNonSatchels"] = true,
+	["TrackPetDungeons"] = true,
 }
