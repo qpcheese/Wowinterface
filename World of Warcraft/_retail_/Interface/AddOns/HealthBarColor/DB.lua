@@ -91,6 +91,17 @@ local defaults = {
         b = 1,
         a = 1,
       },
+      alternatePowerFont = "Friz Quadrata TT", -- currently not used will use power font setting
+      alternatePowerFontSize = 10, 
+      alternatePowerFontOutlineMode = 2, -- currently not used will use power font setting
+      colorModeAlternatePower = 1,
+      customColorAlternatePower = 
+      {
+        r = 1,
+        g = 1,
+        b = 1,
+        a = 1,
+      },
       --Glow
       colorModeGlow = 1,
       customColorGlow =         

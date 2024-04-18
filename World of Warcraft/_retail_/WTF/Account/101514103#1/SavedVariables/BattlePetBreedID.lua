@@ -1,6 +1,6 @@
 
 BPBID_Options = {
-	["ManualChange"] = "v1.26.1",
+	["ManualChange"] = "v1.27.0",
 	["Tooltips"] = {
 		["Enabled"] = true,
 		["FBPT"] = true,

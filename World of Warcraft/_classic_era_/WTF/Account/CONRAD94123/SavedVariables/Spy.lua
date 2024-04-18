@@ -21,21 +21,29 @@ SpyDB = {
 		["Qpfromage - Living Flame"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = 414.5517883300781,
-					["x"] = 1319.08154296875,
-					["w"] = 159.9999542236328,
-					["h"] = 51.00000762939453,
+					["y"] = 682.8258666992188,
+					["x"] = 1347.889282226563,
+					["w"] = 160.0000762939453,
+					["h"] = 275,
 				},
 			},
 			["OnlySoundKoS"] = true,
-			["SoundChannel"] = "Master",
 			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
 				},
 			},
+			["SoundChannel"] = "Master",
 			["HideSpy"] = true,
 			["FilteredZones"] = {
 				["Gadgetzan"] = true,
@@ -45,7 +53,6 @@ SpyDB = {
 				["Everlook"] = true,
 			},
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 	},

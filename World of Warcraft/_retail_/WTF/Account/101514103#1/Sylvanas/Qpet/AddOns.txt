@@ -47,7 +47,7 @@ BeQuiet: disabled
 BetterFishing: disabled
 BLU: disabled
 BigWigs: disabled
-BigWigs_CommonAuras: disabled
+BigWigs_CommonAuras: enabled
 BigWigs_CountDown_Narwhal: disabled
 BigWigs_Countdown_Sabinico: disabled
 BigWigs_Transcriptor: disabled
@@ -60,9 +60,9 @@ BigWigs_Voice_PipkinPippa: disabled
 BigWigs_Voice_UT: disabled
 BigWigs_Aberrus: disabled
 BigWigs_Amirdrassil: enabled
-BigWigs_BattleForAzeroth: enabled
+BigWigs_BattleForAzeroth: disabled
 BigWigs_BurningCrusade: disabled
-BigWigs_Cataclysm: enabled
+BigWigs_Cataclysm: disabled
 BigWigs_Classic: disabled
 BigWigs_Core: enabled
 BigWigs_DragonIsles: disabled
@@ -170,15 +170,15 @@ LFGSpamFilter: disabled
 AceGUI-3.0-SharedMediaWidgets: disabled
 LibGroupInSpecT-1.1: disabled
 LibSharedMedia-3.0: disabled
-LittleWigs: enabled
-LittleWigs_BattleForAzeroth: enabled
+LittleWigs: disabled
+LittleWigs_BattleForAzeroth: disabled
 LittleWigs_BurningCrusade: disabled
-LittleWigs_Cataclysm: enabled
+LittleWigs_Cataclysm: disabled
 LittleWigs_Classic: disabled
 LittleWigs_Legion: enabled
 LittleWigs_MistsOfPandaria: disabled
 LittleWigs_Shadowlands: disabled
-LittleWigs_WarlordsOfDraenor: enabled
+LittleWigs_WarlordsOfDraenor: disabled
 LittleWigs_WrathOfTheLichKing: disabled
 MacroToolkit: disabled
 MacroToolkitIcons: disabled
@@ -305,3 +305,4 @@ Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
 OPie_Classic: disabled
 Blizzard_CombatText: enabled
+SexyMap: disabled

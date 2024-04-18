@@ -59,6 +59,7 @@ settings.RequiredForInsaneMode = {
 	CharacterUnlocks = true,
 	Conduits = true,
 	DrakewatcherManuscripts = true,
+	Exploration = false,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
 	FlightPaths = true,
 	Followers = true,
 	Heirlooms = true,
@@ -84,12 +85,12 @@ local Things = {
 	"Conduits",
 	"Deaths",
 	"DrakewatcherManuscripts",
+	"Exploration",
 	"FlightPaths",
 	"Followers",
 	"Heirlooms",
 	"HeirloomUpgrades",
 	"Illusions",
-	"Loot",
 	"Mounts",
 	"MusicRollsAndSelfieFilters",
 	"Quests",
@@ -136,6 +137,7 @@ local GeneralSettingsBase = {
 		["Thing:CharacterUnlocks"] = true,
 		["Thing:Conduits"] = true,
 		["Thing:DrakewatcherManuscripts"] = true,
+		["Thing:Exploration"] = false,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
@@ -333,13 +335,24 @@ settings.Initialize = function(self)
 	self:UpdateMode()
 
 	if self:GetTooltipSetting("Auto:MainList") then
-		app:GetWindow("Prime"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("Prime"):SetVisible(true)
+		end)
+	end
+	if self:GetTooltipSetting("Auto:MiniList") then
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("CurrentInstance"):SetVisible(true)
+		end)
 	end
 	if self:GetTooltipSetting("Auto:RaidAssistant") then
-		app:GetWindow("RaidAssistant"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("RaidAssistant"):SetVisible(true)
+		end)
 	end
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
-		app:GetWindow("WorldQuests"):Show()
+		app.AddEventHandler("OnReady", function()
+			app:GetWindow("WorldQuests"):SetVisible(true)
+		end)
 	end
 
 	if settings.RefreshActiveInformationTypes then
@@ -350,8 +363,9 @@ settings.Initialize = function(self)
 	-- Somehow some forced Account-Wide Things were set to false in user Profiles, so using app.IsAccountTracked ALWAYS returned false
 	-- so let's erase that data, and assign those Things in the Base General class
 	for thing,_ in pairs(settings.ForceAccountWide) do
-		settings:Set("AccountWide:"..thing, nil)
-		GeneralSettingsBase[thing] = true
+		local accountWideThing = "AccountWide:"..thing;
+		settings:Set(accountWideThing, nil)
+		GeneralSettingsBase.__index[accountWideThing] = true
 		settings.AccountWide[thing] = true
 	end
 
@@ -1187,6 +1201,11 @@ end
 settings.ToggleAccountMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetAccountMode(not self:Get("AccountMode"))
+	if self:Get("AccountMode") == true then
+		app.print(L["TITLE_ACCOUNT"]..L["MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["TITLE_ACCOUNT"]..L["MODE"].."|R "..L["DISABLED"]..".")
+	end
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode)
@@ -1196,6 +1215,11 @@ end
 settings.ToggleCompletionistMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetCompletionistMode(not self:Get("Completionist"))
+	if self:Get("Completionist") == true then
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["DISABLED"]..".")
+	end
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode)
@@ -1217,6 +1241,11 @@ end
 settings.ToggleDebugMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetDebugMode(not self:Get("DebugMode"))
+	if self:Get("DebugMode") == true then
+		app.print(L["TITLE_DEBUG"]..L["MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["TITLE_DEBUG"]..L["MODE"].."|R "..L["DISABLED"]..".")
+	end
 end
 settings.SetFactionMode = function(self, factionMode)
 	self:Set("FactionMode", factionMode)
@@ -1440,6 +1469,7 @@ settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
 		app:RegisterEvent("TAXIMAP_OPENED")
 	end
+	self.Collectibles.Loot = self:Get("Thing:Loot");
 
 	-- refresh forced from toggle
 	if self.ToggleRefresh then

@@ -267,6 +267,21 @@ end
 app.BaseObjectFields = BaseObjectFields;
 app.BaseClass = BaseObjectFields(nil, "BaseClass");
 
+local MaximumInfoRetries = 40;
+app.MaximumItemInfoRetries = MaximumInfoRetries
+app.TryGetField = function(t, field, fieldFunc, giveUpFunc)
+	local fieldVal = fieldFunc(t, field)
+	-- app.PrintDebug("TGF",t.hash,field,fieldVal)
+	if fieldVal then return fieldVal end
+	local retries = t.retries or 0
+	retries = retries + 1
+	t.retries = retries
+	-- app.PrintDebug("TGF:R",retries)
+	if retries > MaximumInfoRetries then
+		return giveUpFunc(t, field)
+	end
+end
+
 -- Create a dictionary of classes by their classKey, for reference in generic object contructors.
 local classesByKey = setmetatable({}, {
 	__newindex = function(t, key, value)
@@ -485,14 +500,22 @@ app.CreateClass = function(className, classKey, fields, ...)
 			end
 			return setmetatable(t, Class);
 		end;
-		classesByKey[classKey] = classConstructor;
+		if not classesByKey[classKey] then
+			classesByKey[classKey] = classConstructor;
+		elseif not fields.IsClassIsolated then
+			print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
+		end
 		return classConstructor, Class;
 	else
 		local Class = BaseObjectFields(fields, className);
 		local classConstructor = function(id, t)
 			return setmetatable(constructor(id, t, classKey), Class);
 		end;
-		classesByKey[classKey] = classConstructor;
+		if not classesByKey[classKey] then
+			classesByKey[classKey] = classConstructor;
+		elseif not fields.IsClassIsolated then
+			print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
+		end
 		return classConstructor, Class;
 	end
 end
@@ -557,6 +580,7 @@ app.CreateUnimplementedClass = function(className, classKey)
 		title = function(t)
 			return app.L.DATA_TYPE_NOT_SUPPORTED;
 		end,
+		IsClassIsolated = true,
 		isInvalid = app.ReturnTrue,
 		collected = app.ReturnFalse,
 		collectible = app.ReturnTrue,
@@ -573,6 +597,8 @@ app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 		end
 		fields.__type = nil;
 		fields.key = nil;
+		fields.conditionals = nil;
+		fields.simplemeta = nil;
 	else
 		print("Could not find specified base class:", baseClassName);
 	end

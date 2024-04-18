@@ -10,7 +10,6 @@ local sources = {
 }
 
 
-
 local db_defaults = {
     char = {
         class_index = 1,

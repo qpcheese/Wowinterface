@@ -1,5 +1,5 @@
 
-MMMainHidden = 1
+MMMainHidden = 0
 MMCustomString = nil
 MMVerbose = false
 MacroMakerDB = {

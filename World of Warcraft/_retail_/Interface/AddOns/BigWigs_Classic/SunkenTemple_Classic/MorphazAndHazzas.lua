@@ -4,8 +4,14 @@
 
 local mod, CL = BigWigs:NewBoss("Morphaz and Hazzas Discovery", 109, -2958)
 if not mod then return end
-mod:RegisterEnableMob(220007) -- Morphaz and Hazzas
+mod:RegisterEnableMob(221943, 221942) -- Hazzas, Morphaz
 mod:SetEncounterID(2958)
+
+--------------------------------------------------------------------------------
+-- Locals
+--
+
+local dreamingOnMe = false
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -20,107 +26,90 @@ end
 -- Initialization
 --
 
-local desiccatedFalloutMarker = mod:AddMarkerOption(true, "npc", 8, "desiccated_fallout", 8, 7, 6) -- Desiccated Fallout
 function mod:GetOptions()
 	return {
-		434358, -- Summon Irradiated Goo
-		desiccatedFalloutMarker,
-		433546, -- Radiation Burn
-		434434, -- Sludge
+		446489, -- Backfire
+		446468, -- Dreamer's Lament
+		445158, -- Lucid Dreaming
+		446487, -- Corrupted Breath
+		446661, -- Animate Flame
 	},nil,{
-		[434358] = CL.adds, -- Summon Irradiated Goo (Adds)
+		[446489] = CL.knockback, -- Backfire (Knockback)
+		[445158] = CL.you_die, -- Lucid Dreaming (You die)
+		[446661] = CL.adds, -- Animate Flame (Adds)
 	}
 end
 
 function mod:OnRegister()
 	self.displayName = L.bossName
-	-- Delayed for custom locale
-	desiccatedFalloutMarker = mod:AddMarkerOption(true, "npc", 8, "desiccated_fallout", 8, 7, 6) -- Desiccated Fallout
 end
 
 function mod:OnBossEnable()
-	self:Log("SPELL_CAST_START", "SummonIrradiatedGooStart", 434358)
-	self:Log("SPELL_CAST_SUCCESS", "SummonIrradiatedGoo", 434358)
-	self:Log("SPELL_AURA_APPLIED", "ToxicEmissionApplied", 434399)
-	self:Log("SPELL_CAST_START", "RadiationBurnStart", 433546)
-	self:Log("SPELL_CAST_SUCCESS", "RadiationBurn", 433546)
-	self:Log("SPELL_CAST_SUCCESS", "Sludge", 434434)
-	self:Log("SPELL_AURA_APPLIED", "SludgeDamage", 434433)
-	self:Log("SPELL_PERIODIC_DAMAGE", "SludgeDamage", 434433)
-	self:Log("SPELL_PERIODIC_MISSED", "SludgeDamage", 434433)
+	self:Log("SPELL_CAST_START", "BackfireStart", 446489)
+	self:Log("SPELL_CAST_SUCCESS", "DreamersLament", 446468)
+	self:Log("SPELL_AURA_APPLIED", "LucidDreamingApplied", 445158)
+	self:Log("SPELL_AURA_REMOVED", "LucidDreamingRemoved", 445158)
+	self:Log("SPELL_CAST_START", "EternalSlumberStart", 446034)
+	self:Log("SPELL_AURA_APPLIED", "CorruptedBreathApplied", 446487)
+	self:Log("SPELL_AURA_APPLIED_DOSE", "CorruptedBreathApplied", 446487)
+	self:Log("SPELL_CAST_START", "AnimateFlameStart", 446661)
 end
 
 function mod:OnEngage()
-	self:CDBar(434358, 11, CL.adds) -- Summon Irradiated Goo
-	self:CDBar(434434, 15.8) -- Sludge
+	dreamingOnMe = false
 end
 
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
 
-do
-	local gooCollector, gooIcon, falloutIcon = {}, 8, 8
-	function mod:GooMarking(_, unit, guid)
-		if gooCollector[guid] then
-			self:CustomIcon(desiccatedFalloutMarker, unit, gooCollector[guid])
-		end
-	end
-
-	function mod:SummonIrradiatedGooStart(args)
-		self:Message(args.spellId, "cyan", CL.incoming:format(CL.adds))
-		self:CDBar(args.spellId, 63, CL.adds)
-		self:PlaySound(args.spellId, "long")
-	end
-
-	function mod:SummonIrradiatedGoo(args)
-		gooCollector = {}
-		gooIcon, falloutIcon = 8, 8
-		self:RegisterTargetEvents("GooMarking")
-	end
-
-	function mod:ToxicEmissionApplied(args)
-		if not gooCollector[args.destGUID] then -- Mark Irradiated Goo
-			gooCollector[args.destGUID] = gooIcon
-			gooIcon = gooIcon - 1
-			local unit = self:GetUnitIdByGUID(args.destGUID)
-			if unit then
-				self:CustomIcon(desiccatedFalloutMarker, unit, gooCollector[args.destGUID])
-			end
-		end
-	end
-
-	function mod:RadiationBurnStart(args)
-		if not gooCollector[args.sourceGUID] then -- Mark Desiccated Fallout
-			gooCollector[args.sourceGUID] = falloutIcon
-			falloutIcon = falloutIcon - 1
-		end
-		local icon = self:GetIconTexture(gooCollector[args.sourceGUID])
-		self:Message(args.spellId, "orange", icon.. CL.casting:format(args.spellName))
-		if self:Interrupter() then
-			self:PlaySound(args.spellId, "info")
-		end
-	end
-end
-
-function mod:RadiationBurn(args)
-	self:Message(args.spellId, "orange", CL.on_group:format(args.spellName))
-	self:PlaySound(args.spellId, "warning")
-end
-
-function mod:Sludge(args)
-	self:Message(args.spellId, "red")
-	self:Bar(args.spellId, 16.1)
+function mod:BackfireStart(args)
+	self:Message(args.spellId, "red", CL.knockback)
 	self:PlaySound(args.spellId, "alarm")
 end
 
-do
-	local prev = 0
-	function mod:SludgeDamage(args)
-		if self:Me(args.destGUID) and args.time - prev > 3 then
-			prev = args.time
-			self:PersonalMessage(434434, "underyou")
-			self:PlaySound(434434, "underyou")
+function mod:DreamersLament(args)
+	self:Message(args.spellId, "orange", CL.on_group:format(args.spellName))
+	self:PlaySound(args.spellId, "alert")
+end
+
+function mod:LucidDreamingApplied(args)
+	if self:Me(args.destGUID) then
+		dreamingOnMe = true
+	end
+end
+
+function mod:LucidDreamingRemoved(args)
+	if self:Me(args.destGUID) then
+		dreamingOnMe = false
+		self:StopBar(CL.you_die)
+	end
+end
+
+function mod:EternalSlumberStart(args)
+	if dreamingOnMe then
+		self:Bar(445158, 30, CL.you_die)
+	end
+end
+
+function mod:CorruptedBreathApplied(args)
+	if self:Me(args.destGUID) then
+		self:StackMessage(args.spellId, "blue", args.destName, args.amount, 2)
+		if args.amount then
+			self:PlaySound(args.spellId, "alert")
+		end
+	else
+		local bossUnit = self:GetUnitIdByGUID(args.sourceGUID)
+		if bossUnit and self:Tanking(bossUnit, args.destName) then
+			self:StackMessage(args.spellId, "purple", args.destName, args.amount, 2)
+			if args.amount then
+				self:PlaySound(args.spellId, "alert")
+			end
 		end
 	end
+end
+
+function mod:AnimateFlameStart(args)
+	self:Message(args.spellId, "cyan", CL.adds)
+	self:PlaySound(args.spellId, "info")
 end

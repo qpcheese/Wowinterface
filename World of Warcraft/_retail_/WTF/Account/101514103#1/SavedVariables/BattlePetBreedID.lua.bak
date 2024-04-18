@@ -2,7 +2,7 @@
 BPBID_Options = {
 	["format"] = 3,
 	["BattleFontFix"] = false,
-	["ManualChange"] = "v1.26.1",
+	["ManualChange"] = "v1.27.0",
 	["Breedtip"] = {
 		["Current"] = true,
 		["Possible"] = true,

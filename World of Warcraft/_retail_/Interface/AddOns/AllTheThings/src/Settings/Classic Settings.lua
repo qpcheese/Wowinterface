@@ -244,6 +244,9 @@ if season > 0 then
 		local reasons = L.AVAILABILITY_CONDITIONS;
 		reasons[1605][5] = 11500;
 		reasons[1606][5] = 11501;
+		reasons[1607][5] = 11502;
+		reasons[1608][5] = 11503;
+		reasons[1609][5] = 11504;
 		if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
 		elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
 		else app.MaximumSkillLevel = 150; end
@@ -298,6 +301,15 @@ settings.Initialize = function(self)
 	if settings.RefreshActiveInformationTypes then
 		settings.RefreshActiveInformationTypes()
 		settings.RefreshActiveInformationTypes = nil
+	end
+
+	-- Somehow some forced Account-Wide Things were set to false in user Profiles, so using app.IsAccountTracked ALWAYS returned false
+	-- so let's erase that data, and assign those Things in the Base General class
+	for thing,_ in pairs(settings.ForceAccountWide) do
+		local accountWideThing = "AccountWide:"..thing;
+		settings:Set(accountWideThing, nil)
+		GeneralSettingsBase.__index[accountWideThing] = true
+		settings.AccountWide[thing] = true
 	end
 
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
@@ -493,6 +505,14 @@ ATTSettingsObjectMixin = {
 		label:SetHeight(18)
 		label:SetText(text)
 		return label
+	end,
+	MarkAsWIP = function(self)
+		local wip = self:CreateTexture(nil, "OVERLAY");
+		wip:SetPoint("LEFT", self.Text or self, "RIGHT", 2, 0);
+		wip:SetTexture(app.asset("WIP"));
+		wip:SetScale(0.5);
+		--wip:SetRotation(-270);
+		wip:Show();
 	end,
 	-- Registers an Object within itself
 	RegisterObject = function(self, o)
@@ -841,6 +861,20 @@ end
 settings.ToggleAccountMode = function(self)
 	self:SetAccountMode(not self:Get("AccountMode"));
 end
+settings.SetCompletionistMode = function(self, completionistMode)
+	self:Set("Completionist", completionistMode)
+	app.DoRefreshAppearanceSources = true
+	self:UpdateMode(1)
+end
+settings.ToggleCompletionistMode = function(self)
+	self:ForceRefreshFromToggle()
+	self:SetCompletionistMode(not self:Get("Completionist"))
+	if self:Get("Completionist") == true then
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["ENABLED"]..".")
+	else
+		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["DISABLED"]..".")
+	end
+end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
 	self:UpdateMode(1);
@@ -918,6 +952,15 @@ settings.SetThingTracking = function(self, force)
 end
 settings.UpdateMode = function(self, doRefresh)
 	local filterSet = app.Modules.Filter.Set;
+	if self:Get("Completionist") then
+		filterSet.ItemSource()
+	else
+		if self:Get("MainOnly") and not self:Get("AccountMode") and not self:Get("DebugMode") then
+			filterSet.ItemSource(true, true)
+		else
+			filterSet.ItemSource(true)
+		end
+	end
 	if self:Get("DebugMode") then
 		app.MODE_ACCOUNT = nil;
 		app.MODE_DEBUG = true
@@ -1080,6 +1123,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.SkillLevel()
 	end
+	self.Collectibles.Loot = self:Get("Thing:Loot");
 	
 	app:UnregisterEvent("GOSSIP_SHOW");
 	app:UnregisterEvent("TAXIMAP_OPENED");

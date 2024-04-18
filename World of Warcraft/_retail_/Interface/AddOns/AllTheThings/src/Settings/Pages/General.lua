@@ -364,25 +364,28 @@ child:CreateTrackingCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks", true)
 	:AlignAfter(accwideCheckboxCharacterUnlocks)
 end
 
-local accwideCheckboxExploration;
+local accwideCheckboxDeaths;
 if app.IsClassic then
 -- Classic wants you to collect these, but Retail doesn't yet.
-local accwideCheckboxDeaths =
+accwideCheckboxDeaths =
 child:CreateAccountWideCheckbox("DEATHS", "Deaths")
 	:AlignBelow(accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
 child:CreateTrackingCheckbox("DEATHS", "Deaths", true)
 	:AlignAfter(accwideCheckboxDeaths)
+end
 
 accwideCheckboxExploration =
 child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
-	:AlignBelow(accwideCheckboxDeaths)
-child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
+	:AlignBelow(accwideCheckboxDeaths or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
+local explorationCheckbox = child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
 	:AlignAfter(accwideCheckboxExploration)
+if app.IsRetail then
+	explorationCheckbox:MarkAsWIP();
 end
 
 local accwideCheckboxFlightPaths =
 child:CreateAccountWideCheckbox("FLIGHT_PATHS", "FlightPaths")
-	:AlignBelow(accwideCheckboxExploration or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
+	:AlignBelow(accwideCheckboxExploration)
 child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths", true)
 	:AlignAfter(accwideCheckboxFlightPaths)
 

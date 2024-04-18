@@ -106,20 +106,16 @@ local function SetCostTotals(costs, isCost, refresh)
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
 			if not blockedBy then
 				c.isCost = isCost;
-				c._CheckCollectible = isCost;
 				-- app.PrintDebug("Unblocked Cost",app:SearchLink(c))
 			else
 				c.isCost = nil;
-				c._CheckCollectible = nil;
 				-- app.PrintDebug("Skipped cost under locked/saved parent"
-				-- 	,Linkify(c)
-				-- 	,Linkify(blockedBy))
+				-- 	,app:SearchLink(c)
+				-- 	,app:SearchLink(blockedBy))
 			end
 		else
-			-- app.PrintDebug("Not a cost"
-			-- 	,app:Linkify(c.hash, app.Colors.ChatLink, "search:"..c.key..":"..c[c.key]))
+			-- app.PrintDebug("Not a cost",app:SearchLink(c))
 			c.isCost = nil;
-			c._CheckCollectible = nil;
 		end
 		-- regardless of the Cost state, make sure to update this specific cost group for visibility
 		DGU(c)
@@ -127,7 +123,9 @@ local function SetCostTotals(costs, isCost, refresh)
 end
 local function UpdateCostsByItemID(itemID, refresh, refs)
 	local costs = SearchForObject("itemID", itemID, "field", true);
+	-- app.Debugging = math.floor(itemID) == 99678
 	if costs then
+		-- app.PrintDebug(#costs,"cost groups @",itemID)
 		local isCost
 		refs = refs or GetRawField("itemIDAsCost", itemID)
 		if refs then
@@ -143,6 +141,7 @@ local function UpdateCostsByItemID(itemID, refresh, refs)
 		SetCostTotals(costs, isCost, refresh)
 	-- else app.PrintDebug("Item as Cost is not Sourced!",itemID)
 	end
+	-- app.Debugging = nil
 	return costs;
 end
 local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
@@ -167,10 +166,19 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
 end
 
 local function CostCalcStart()
-	app.print("Cost Updates Starting...")
+	if app.Debugging then
+		app.print("Cost Updates Starting...")
+	end
 end
 local function CostCalcComplete()
-	app.print("Cost Updates Done")
+	if app.Debugging then
+		app.print("Cost Updates Done")
+	end
+	for suffix,window in pairs(app.Windows) do
+		if suffix ~= "Prime" then
+			app.UpdateRunner.Run(window.Update, window, true)
+		end
+	end
 end
 
 local function UpdateCosts()
@@ -180,10 +188,8 @@ local function UpdateCosts()
 	UpdateRunner.Reset()
 	UpdateRunner.SetPerFrame(50)
 
-	if app.Debugging then
-		UpdateRunner.OnEnd(CostCalcComplete)
-		UpdateRunner.Run(CostCalcStart)
-	end
+	UpdateRunner.OnEnd(CostCalcComplete)
+	UpdateRunner.Run(CostCalcStart)
 	-- app.PrintDebug("UpdateCosts",refresh)
 
 	-- app.Debugging = nil
@@ -277,12 +283,12 @@ app.CollectibleAsCost = function(t)
 	local lastSettings, appSettings = t._SettingsRefresh, app._SettingsRefresh
 	-- previously checked without Settings changed
 	if lastSettings and lastSettings == appSettings then
-		-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible,settingsChange)
-		return t._CheckCollectible;
+		-- app.PrintDebug("CAC:Cached",t.hash,t.isCost,settingsChange)
+		return t.isCost;
 	end
 	-- app.PrintDebug("CAC:Check",app:SearchLink(t))
 	t._SettingsRefresh = appSettings;
-	t._CheckCollectible = nil;
+	t.isCost = nil;
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
@@ -290,7 +296,7 @@ app.CollectibleAsCost = function(t)
 	for _,ref in ipairs(collectibles) do
 		-- Use the common collectibility check logic
 		if CheckCollectible(ref) then
-			t._CheckCollectible = true;
+			t.isCost = true;
 			t.collectibleAsCost = nil;
 			-- app.PrintDebug("CAC:Set",app:SearchLink(t),"from",app:SearchLink(ref),"@",t._SettingsRefresh)
 			return true;

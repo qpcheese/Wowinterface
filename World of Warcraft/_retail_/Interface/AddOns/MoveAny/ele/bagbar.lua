@@ -49,11 +49,11 @@ function MoveAny:UpdateBags()
 
 	if BagsBar then
 		BagsBar:SetSize(sw, sh)
-		if BagsBar_DRAG then
-			if BagsBar_DRAG.hooksetsize == nil then
-				BagsBar_DRAG.hooksetsize = true
+		if BagsBar_MA_DRAG then
+			if BagsBar_MA_DRAG.hooksetsize == nil then
+				BagsBar_MA_DRAG.hooksetsize = true
 				hooksecurefunc(
-					BagsBar_DRAG,
+					BagsBar_MA_DRAG,
 					"SetSize",
 					function(sel, w, h)
 						if sel.ma_bags_setsize then return end
@@ -64,7 +64,7 @@ function MoveAny:UpdateBags()
 				)
 			end
 
-			BagsBar_DRAG:SetSize(sw, sh)
+			BagsBar_MA_DRAG:SetSize(sw, sh)
 		end
 
 		local x = 0
@@ -134,7 +134,7 @@ function MoveAny:InitBags()
 
 			if MicroButtonAndBagsBar then
 				BagsBar:SetPoint("BOTTOMRIGHT", MoveAny:GetMainPanel(), "BOTTOMRIGHT", 0, 36)
-			elseif MoveAny:GetWoWBuild() ~= "RETAIL" then
+			elseif D4:GetWoWBuild() ~= "RETAIL" then
 				BagsBar:SetPoint("BOTTOMRIGHT", MoveAny:GetMainPanel(), "BOTTOMRIGHT", 0, 36)
 			else
 				BagsBar:SetPoint("CENTER", MoveAny:GetMainPanel(), "CENTER", 0, 0)
@@ -142,7 +142,7 @@ function MoveAny:InitBags()
 
 			for i, mbname in pairs(BAGS) do
 				local bb = _G[mbname]
-				if bb and MoveAny:GetWoWBuild() ~= "RETAIL" then
+				if bb and D4:GetWoWBuild() ~= "RETAIL" then
 					hooksecurefunc(
 						bb,
 						"Hide",

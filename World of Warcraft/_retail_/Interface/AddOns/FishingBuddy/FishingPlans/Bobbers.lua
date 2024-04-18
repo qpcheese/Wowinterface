@@ -27,6 +27,11 @@ BigBobbers[136377] = {
 	["enUS"] = "Oversized Bobber",
 	spell = 207700,
 }
+BigBobbers[202207] = {
+    ["enUS"] = "Reusable Oversized Bobber",
+    spell = 397827,
+    toy = 1,
+}
 
 local Bobbers = {}
 Bobbers[142531] = {

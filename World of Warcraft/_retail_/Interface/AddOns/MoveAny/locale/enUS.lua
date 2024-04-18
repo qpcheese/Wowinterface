@@ -41,12 +41,12 @@ function MoveAny:LangenUS()
 		["LID_TARGETOFFOCUSFRAME"] = "Target of Focus Frame",
 		["LID_RUNEFRAME"] = "Deathknight - Runes Frame",
 		["LID_TOTEMFRAME"] = "Totem Timers (Also used by other classes)",
-		["LID_WARLOCKPOWERFRAME"] = "Warlock Power frame",
+		["LID_WARLOCKPOWERFRAME"] = "Warlock Power Frame (Shards)",
 		["LID_MONKHARMONYBARFRAME"] = "Monk Harmony frame  (Chi)",
 		["LID_MONKSTAGGERBAR"] = "Monk Stagger bar  (Chi)",
 		["LID_MAGEARCANECHARGESFRAME"] = "Mage Arcane Charges frame",
 		["LID_ESSENCEPLAYERFRAME"] = "Essence Player Frame (Evoker)",
-		["LID_PALADINPOWERBARFRAME"] = "Paladin Power Bar",
+		["LID_PALADINPOWERBARFRAME"] = "Paladin Power Bar (Holy Power)",
 		["LID_MAFPSFrame"] = "FPS",
 		["LID_IAPingFrame"] = "Ping",
 		["LID_IACoordsFrame"] = "Coords Frame",
@@ -158,7 +158,6 @@ function MoveAny:LangenUS()
 		["LID_FLIPPED"] = "Flipped",
 		["LID_GHOSTFRAME"] = "Ghost Frame (Teleport to Graveyard)",
 		["LID_TICKETSTATUSFRAME"] = "Ticket Frame",
-		["LID_HELPOPENWEBTICKETBUTTON"] = "Ticket Button (Status)",
 		["LID_LOSSOFCONTROLFRAME"] = "Loss of Control Frame",
 		["LID_MainStatusTrackingBarContainer"] = "StatusBar1 (Exp Bar, Reputation Bar)",
 		["LID_SecondaryStatusTrackingBarContainer"] = "StatusBar2 (Reputation Bar)",
@@ -208,9 +207,12 @@ function MoveAny:LangenUS()
 		["LID_BOSS6"] = "Boss 6",
 		["LID_MAPAGES"] = "Actionbar Pages",
 		["LID_HIDEHIDDENFRAMES"] = "Hide hidden Elements",
+		["LID_TIMERTRACKER1"] = "Timer Tracker (only visible when available)",
+		["LID_PALADINPOWERBAR"] = "Paladin Power Bar (Holy Power)",
+		["LID_SHARDBARFRAME"] = "Warlock Power Frame (Shards)",
 	}
 
-	if MoveAny:GetWoWBuild() ~= "RETAIL" then
+	if D4:GetWoWBuild() ~= "RETAIL" then
 		tab["LID_ACTIONBARS"] = "Actionbars 1 + 5 + 6"
 		tab["LID_ACTIONBAR1"] = "Actionbars 1 (Main Bar)"
 		tab["LID_ACTIONBAR2"] = "Actionbars 2 (2. Page of Actionbar 1)"

@@ -28,14 +28,22 @@ SpyDB = {
 				},
 			},
 			["OnlySoundKoS"] = true,
-			["SoundChannel"] = "Master",
 			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
 				},
 			},
+			["SoundChannel"] = "Master",
 			["HideSpy"] = true,
 			["FilteredZones"] = {
 				["Gadgetzan"] = true,
@@ -45,7 +53,6 @@ SpyDB = {
 				["Booty Bay"] = true,
 			},
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 	},

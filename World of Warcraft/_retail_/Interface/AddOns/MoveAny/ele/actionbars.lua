@@ -67,64 +67,64 @@ function MoveAny:UpdateActionBar(frame)
 	local rows = opts["ROWS"] or 1
 	rows = tonumber(rows)
 	if frame == MAMenuBar then
-		if MoveAny:GetWoWBuild() == "RETAIL" then
+		if D4:GetWoWBuild() == "RETAIL" then
 			if rows == 3 or rows == 4 or rows == 12 then
 				if HelpMicroButton then
-					HelpMicroButton:GetParent():SetParent(MAMenuBar)
+					HelpMicroButton:SetParent(MAMenuBar)
 				end
 
 				if MainMenuMicroButton then
-					MainMenuMicroButton:GetParent():SetParent(MAMenuBar)
+					MainMenuMicroButton:SetParent(MAMenuBar)
 				end
 			elseif rows == 11 or rows == 6 or rows == 4 or rows == 3 or rows == 1 then
 				if HelpMicroButton then
-					HelpMicroButton:GetParent():SetParent(MAHIDDEN)
+					HelpMicroButton:SetParent(MAHIDDEN)
 				end
 
 				if MainMenuMicroButton then
-					MainMenuMicroButton:GetParent():SetParent(MAMenuBar)
+					MainMenuMicroButton:SetParent(MAMenuBar)
 				end
 			elseif rows == 10 or rows == 5 or rows == 2 then
 				if HelpMicroButton then
-					HelpMicroButton:GetParent():SetParent(MAHIDDEN)
+					HelpMicroButton:SetParent(MAHIDDEN)
 				end
 
 				if MainMenuMicroButton then
-					MainMenuMicroButton:GetParent():SetParent(MAHIDDEN)
+					MainMenuMicroButton:SetParent(MAHIDDEN)
 				end
 			else
 				if HelpMicroButton then
-					HelpMicroButton:GetParent():SetParent(MAHIDDEN)
+					HelpMicroButton:SetParent(MAHIDDEN)
 				end
 
 				if MainMenuMicroButton then
-					MainMenuMicroButton:GetParent():SetParent(MAMenuBar)
+					MainMenuMicroButton:SetParent(MAMenuBar)
 				end
 			end
-		elseif MoveAny:GetWoWBuild() == "WRATH" then
-			if rows == 10 or rows == 5 or rows == 2 or rows == 1 then
+		elseif D4:GetWoWBuild() == "WRATH" then
+			if rows == 11 or rows == 9 or rows == 8 or rows == 7 or rows == 6 or rows == 4 or rows == 1 then
 				if HelpMicroButton then
-					HelpMicroButton:GetParent():SetParent(MAMenuBar)
+					HelpMicroButton:SetParent(MAMenuBar)
 				end
 
 				if MainMenuMicroButton then
-					MainMenuMicroButton:GetParent():SetParent(MAMenuBar)
+					MainMenuMicroButton:SetParent(MAMenuBar)
 				end
-			elseif rows == 9 or rows == 3 then
+			elseif rows == 10 or rows == 5 or rows == 2 then
 				if HelpMicroButton then
-					HelpMicroButton:GetParent():SetParent(MAHIDDEN)
+					HelpMicroButton:SetParent(MAHIDDEN)
 				end
 
 				if MainMenuMicroButton then
-					MainMenuMicroButton:GetParent():SetParent(MAMenuBar)
+					MainMenuMicroButton:SetParent(MAMenuBar)
 				end
 			else
 				if HelpMicroButton then
-					HelpMicroButton:GetParent():SetParent(MAHIDDEN)
+					HelpMicroButton:SetParent(MAHIDDEN)
 				end
 
 				if MainMenuMicroButton then
-					MainMenuMicroButton:GetParent():SetParent(MAHIDDEN)
+					MainMenuMicroButton:SetParent(MAHIDDEN)
 				end
 			end
 		end
@@ -166,16 +166,30 @@ function MoveAny:UpdateActionBar(frame)
 	spacing = tonumber(spacing)
 	if frame.btns and frame.btns[1] then
 		local fSizeW, fSizeH = frame.btns[1]:GetSize()
-		fSizeW = MoveAny:MathR(fSizeW, 0)
-		fSizeH = MoveAny:MathR(fSizeH, 0)
+		local ofx = frame.btns[1].ofx or 0
+		local ofy = frame.btns[1].ofy or 0
+		local rsw = frame.btns[1].rsw
+		local rsh = frame.btns[1].rsh
+		if rsw then
+			fSizeW = MoveAny:MathR(rsw, 0)
+		else
+			fSizeW = MoveAny:MathR(fSizeW, 0)
+		end
+
+		if rsh then
+			fSizeH = MoveAny:MathR(rsh, 0)
+		else
+			fSizeH = MoveAny:MathR(fSizeH, 0)
+		end
+
 		local id = 1
 		for i, abtn in pairs(frame.btns) do
 			if not InCombatLockdown() then
 				abtn:ClearAllPoints()
 				if flipped then
-					abtn:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", (id - 1) % cols * (fSizeW + spacing), ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing))
+					abtn:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", (id - 1) % cols * (fSizeW + spacing) + ofx, ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing) + ofy)
 				else
-					abtn:SetPoint("TOPLEFT", frame, "TOPLEFT", (id - 1) % cols * (fSizeW + spacing), 1 - ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing))
+					abtn:SetPoint("TOPLEFT", frame, "TOPLEFT", (id - 1) % cols * (fSizeW + spacing) + ofx, 1 - ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing) + ofy)
 				end
 
 				if abtn.setup == nil then
@@ -232,7 +246,7 @@ function MoveAny:UpdateActionBar(frame)
 
 		if not InCombatLockdown() then
 			frame:SetSize(cols * (fSizeW + spacing) - spacing, rows * (fSizeH + spacing) - spacing)
-			local mover = _G[name .. "_DRAG"]
+			local mover = _G[name .. "_MA_DRAG"]
 			local sw, sh = frame:GetSize()
 			local osw, osh = MoveAny:GetEleSize(name)
 			sw = MoveAny:MathR(sw)
@@ -249,7 +263,7 @@ function MoveAny:UpdateActionBar(frame)
 end
 
 function MoveAny:InitActionBarLayouts()
-	if MoveAny:GetWoWBuild() == "RETAIL" then
+	if D4:GetWoWBuild() == "RETAIL" then
 		MASetPoint("MainMenuBar", "BOTTOM", MoveAny:GetMainPanel(), "BOTTOM", 0, 0, 1) -- MainMenuBar
 		MASetPoint("MultiBarBottomLeft", "BOTTOM", MoveAny:GetMainPanel(), "BOTTOM", 0, -60, 1) -- MultiBarBottomLeft
 		MASetPoint("MultiBarBottomRight", "BOTTOM", MoveAny:GetMainPanel(), "BOTTOM", 0, -120, 1) -- MultiBarBottomRight
@@ -302,7 +316,7 @@ end
 
 local once = true
 function MoveAny:CustomBars()
-	if MoveAny:GetWoWBuild() ~= "RETAIL" and MoveAny:IsEnabled("ACTIONBARS", false) then
+	if D4:GetWoWBuild() ~= "RETAIL" and MoveAny:IsEnabled("ACTIONBARS", false) then
 		for i = 0, 3 do
 			local texture = _G["MainMenuMaxLevelBar" .. i]
 			if texture then
@@ -397,7 +411,7 @@ function MoveAny:CustomBars()
 		end
 	end
 
-	if MoveAny:GetWoWBuild() ~= "RETAIL" then
+	if D4:GetWoWBuild() ~= "RETAIL" then
 		for i = 7, MAMaxAB do
 			for x = 1, 12 do
 				_G["BINDING_NAME_CLICK ActionBar" .. i .. "Button" .. x .. ":LeftButton"] = _G["BINDING_NAME_CLICK ActionBar" .. i .. "Button" .. x .. ":LeftButton"] or "Actionbar " .. i .. " Button " .. x
@@ -525,7 +539,7 @@ f:RegisterEvent("UPDATE_SHAPESHIFT_FORM")
 f:SetScript(
 	"OnEvent",
 	function(sel, event)
-		if MoveAny:GetWoWBuild() ~= "RETAIL" then
+		if D4:GetWoWBuild() ~= "RETAIL" then
 			local frame = _G["MAActionBar" .. 1]
 			if frame and frame.init == nil then
 				frame.init = true
@@ -544,17 +558,17 @@ f:SetScript(
 					end
 
 					if not newstate then
-						print("FAILED TO FIND NEWSTATE!: " .. tostring(newstate))
+						print("[MOVEANY] FAILED TO FIND NEWSTATE!: " .. tostring(newstate))
 						newstate = 12
 					end
 				end
 				self:SetAttribute( "actionpage", newstate );
 			]])
-				if MoveAny:GetWoWBuild() ~= "RETAIL" then
+				if D4:GetWoWBuild() ~= "RETAIL" then
 					local bars = "[overridebar]" .. GetOverrideBarIndex() .. ";[shapeshift]" .. GetTempShapeshiftBarIndex() .. ";[vehicleui]" .. GetVehicleBarIndex() .. ";[possessbar]16;[bonusbar:5,bar:2]2;[bonusbar:5]11;[bonusbar:4,bar:2]2;[bonusbar:4]10;[bonusbar:3,bar:2]2;[bonusbar:3]9;[bonusbar:2,bar:2]2;[bonusbar:2]8;[bonusbar:1,bar:2]2;[bonusbar:1]7;[bar:6]6;[bar:5]5;[bar:4]4;[bar:3]3;[bar:2]2;1"
 					RegisterStateDriver(frame, "page", bars)
 				else
-					print("[MoveAny] MISSING EXPANSION")
+					print("[MOVEANY] MISSING EXPANSION")
 				end
 
 				local _onAttributeChanged = [[
@@ -579,7 +593,7 @@ f:SetScript(
 					end
 				end
 			]]
-				if MoveAny:GetWoWBuild() == "CLASSIC" then
+				if D4:GetWoWBuild() == "CLASSIC" then
 					_onAttributeChanged = [[
 				if name == 'statehidden' then
 					for i = 1, 12 do

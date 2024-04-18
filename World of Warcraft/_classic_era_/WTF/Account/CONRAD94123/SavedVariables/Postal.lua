@@ -6,7 +6,7 @@ Postal3DB = {
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Qpfromage|Living Flame|Horde|38|MAGE", -- [1]
+				"Qpfromage|Living Flame|Horde|50|MAGE", -- [1]
 			},
 		},
 	},

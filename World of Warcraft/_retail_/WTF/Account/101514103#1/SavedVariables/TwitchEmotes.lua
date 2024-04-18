@@ -7,18 +7,18 @@ Emoticons_Settings = {
 	["ENABLE_ANIMATEDEMOTES"] = true,
 	["CHAT_MSG_RAID_WARNING"] = true,
 	["CHAT_MSG_CHANNEL"] = true,
-	["CHAT_MSG_BN_WHISPER"] = true,
-	["CHAT_MSG_WHISPER"] = true,
 	["CHAT_MSG_PARTY_GUIDE"] = true,
+	["CHAT_MSG_WHISPER"] = true,
+	["CHAT_MSG_BN_WHISPER"] = true,
 	["CHAT_MSG_PARTY"] = true,
-	["CHAT_MSG_WHISPER_INFORM"] = true,
+	["LARGEEMOTES"] = false,
 	["CHAT_MSG_INSTANCE_CHAT_LEADER"] = true,
 	["CHAT_MSG_RAID"] = true,
-	["CHAT_MSG_BN_WHISPER_INFORM"] = true,
-	["CHAT_MSG_YELL"] = true,
-	["CHAT_MSG_RAID_LEADER"] = true,
+	["ENABLE_AUTOCOMPLETE"] = true,
 	["MINIMAPBUTTON"] = true,
-	["CHAT_MSG_BN_CONVERSATION"] = true,
+	["CHAT_MSG_RAID_LEADER"] = true,
+	["CHAT_MSG_YELL"] = true,
+	["CHAT_MSG_SAY"] = true,
 	["FAVEMOTES"] = {
 		true, -- [1]
 		true, -- [2]
@@ -49,10 +49,10 @@ Emoticons_Settings = {
 		true, -- [27]
 	},
 	["MAIL"] = true,
-	["CHAT_MSG_SAY"] = true,
+	["CHAT_MSG_BN_CONVERSATION"] = true,
 	["ENABLE_CLICKABLEEMOTES"] = true,
-	["ENABLE_AUTOCOMPLETE"] = true,
-	["LARGEEMOTES"] = false,
+	["CHAT_MSG_BN_WHISPER_INFORM"] = true,
+	["CHAT_MSG_WHISPER_INFORM"] = true,
 	["MINIMAPDATA"] = {
 		["minimapPos"] = 147.1152037468866,
 	},
@@ -176,7 +176,7 @@ TwitchEmoteStatistics = {
 	["Pog"] = {
 		0, -- [1]
 		5, -- [2]
-		55, -- [3]
+		57, -- [3]
 	},
 	["peepoNOOO"] = {
 		0, -- [1]
@@ -240,7 +240,7 @@ TwitchEmoteStatistics = {
 	},
 	["LMAO"] = {
 		0, -- [1]
-		0, -- [2]
+		1, -- [2]
 		2, -- [3]
 	},
 	["KEKL"] = {
@@ -286,22 +286,27 @@ TwitchEmoteStatistics = {
 	["KEKW"] = {
 		0, -- [1]
 		23, -- [2]
-		271, -- [3]
+		272, -- [3]
 	},
 	["4Shrug"] = {
 		0, -- [1]
 		0, -- [2]
-		4, -- [3]
+		5, -- [3]
 	},
-	["Riotge"] = {
+	["PepeL"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["o_O"] = {
+	["WTFF"] = {
+		0, -- [1]
+		1, -- [2]
+		0, -- [3]
+	},
+	["spit1"] = {
 		0, -- [1]
 		0, -- [2]
-		7, -- [3]
+		1, -- [3]
 	},
 	[":wave:"] = {
 		0, -- [1]
@@ -328,7 +333,7 @@ TwitchEmoteStatistics = {
 		0, -- [2]
 		1, -- [3]
 	},
-	["zubGEGZ"] = {
+	["Prayge"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
@@ -338,10 +343,10 @@ TwitchEmoteStatistics = {
 		2, -- [2]
 		3, -- [3]
 	},
-	["squadPepega"] = {
+	["WOAW"] = {
 		0, -- [1]
-		0, -- [2]
-		1, -- [3]
+		2, -- [2]
+		0, -- [3]
 	},
 	["om"] = {
 		0, -- [1]
@@ -373,32 +378,32 @@ TwitchEmoteStatistics = {
 		0, -- [2]
 		1, -- [3]
 	},
-	["potter"] = {
+	["YEP"] = {
 		0, -- [1]
 		0, -- [2]
-		23, -- [3]
+		1, -- [3]
 	},
 	["cmon"] = {
 		0, -- [1]
 		7, -- [2]
 		20, -- [3]
 	},
-	["YEP"] = {
+	["potter"] = {
 		0, -- [1]
 		0, -- [2]
-		1, -- [3]
+		23, -- [3]
 	},
 	["FeelsBoomieMan"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["WOAW"] = {
+	["squadPepega"] = {
 		0, -- [1]
-		2, -- [2]
-		0, -- [3]
+		0, -- [2]
+		1, -- [3]
 	},
-	["Prayge"] = {
+	["zubGEGZ"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
@@ -413,15 +418,15 @@ TwitchEmoteStatistics = {
 		0, -- [2]
 		1, -- [3]
 	},
-	["spit1"] = {
+	["Riotge"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["WTFF"] = {
+	["o_O"] = {
 		0, -- [1]
-		1, -- [2]
-		0, -- [3]
+		0, -- [2]
+		7, -- [3]
 	},
 	[":wink:"] = {
 		0, -- [1]

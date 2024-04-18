@@ -75,12 +75,12 @@ for key, value in pairs({
 	["AUCTIONATOR_GROUPS"] = "Group-based searches are only supported using Auctionator.";
 	["TSM4_ERROR"] = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. ";
-	
+
 	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	["MINUMUM_STANDING_WITH_FACTION"] = "Requires a minimum standing of %s with %s.";
 	["MAXIMUM_STANDING_WITH_FACTION"] = "Requires a standing lower than %s with %s.";
 	["MIN_MAX_STANDING_WITH_FACTION"] = "Requires a standing between %s and %s with %s.";
-	
+
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
 	["ALIVE"] = "Alive";
@@ -322,6 +322,7 @@ for key, value in pairs({
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["COMPLETED_BY"] = "Completed By: %s";
 	["OWNED_BY"] = "Owned by %s";
+	["GARRISON_BUILDINGS_REQUIRE_GARRISON"] = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison",
 
 	-- Social Module
 	["NEW_VERSION_AVAILABLE"] = "A newer version of %s is available. Please update the AddOn, %s.";
@@ -358,7 +359,6 @@ for key, value in pairs({
 				["TITLE_SOLO"] = "Solo ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
-
 	["PRECISION_SLIDER"] = "Precision Level";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
@@ -375,8 +375,6 @@ for key, value in pairs({
 	["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.";
 	["BEHAVIOR_LABEL"] = "List Behavior";
 	["DYNAMIC_CATEGORY_LABEL"] = "Dynamic Categories";
-	["DYNAMIC_CATEGORY_OFF"] = OFF;
-	["DYNAMIC_CATEGORY_OFF_TOOLTIP"] = "Do not generate any Dynamic Categories.";
 	["DYNAMIC_CATEGORY_SIMPLE"] = "Simple";
 	["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"] = "Generate Dynamic Categories based only on the very highest Category.";
 	["DYNAMIC_CATEGORY_NESTED"] = "Nested";
@@ -457,7 +455,6 @@ for key, value in pairs({
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 	["ADDITIONAL_LABEL"] = "Additional Information";
 
-
 	-- Features tab
 	["MINIMAP_LABEL"] = "Minimap Button";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
@@ -477,14 +474,14 @@ for key, value in pairs({
 	["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
 	["AUTO_WQ_LIST_CHECKBOX"] = "Automatically Open the World Quests List";
 	["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
-	["CURRENCIES_IN_WQ_CHECKBOX"] = "Show Collectible Cost Groups";
-	["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"] = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.";
+	["CURRENCIES_IN_WQ_CHECKBOX"] = "Fill Dynamic Quests";
+	["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"] = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be filled with those purchases when under automatically-populated Quests.\n\nFor example, this will cause the [World Quests] window to behave like the minilist rather than the Main list regarding Cost display.\nNote that in most cases, this will drastically increase the apparent content within the window.";
 	["AUCTION_TAB_CHECKBOX"] = "Show the Auction House Module Tab";
 	["AUCTION_TAB_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
 	["SORT_BY_PROGRESS_CHECKBOX"] = "Sort By Progress";
 	["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." right click) to sort by the total progress of each group (instead of by Name)";
-	["NPC_DATA_NESTED_CHECKBOX"] = "Show Nested NPC Data";
-	["NPC_DATA_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to nest all relevant data to a given npc (Common Boss Drops, Drops, etc) when shown in a mini list. This option may cause a significant amount of duplication, but the idea is that the npc will remain visible on the mini list as if you need something specific to that npc.\n\nDefault: Off";
+	["NPC_DATA_NESTED_CHECKBOX"] = "Fill NPC Data";
+	["NPC_DATA_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc) when shown in a mini list. This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible on the mini list if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off";
 	["QUEST_CHAIN_NESTED_CHECKBOX"] = "Show Nested Quest Chains";
 	["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
 	["ICON_LEGEND_LABEL"] = "Icon Legend";
@@ -558,6 +555,7 @@ for key, value in pairs({
 	["HEADER_ID"] = "Header ID";
 	["ILLUSION_ID"] = "Illusion ID";
 	["INSTANCE_ID"] = "Instance ID";
+	["SAVED_INSTANCE_ID"] = "Saved Instance ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
 	["FLIGHT_PATH_ID"] = "Flight Path ID";
@@ -582,6 +580,10 @@ for key, value in pairs({
 	["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
 	["NOT_TRADEABLE"] = "Not Tradeable";
 	["TRADEABLE"] = "Tradeable";
+
+	-- Keybind usage
+	["ENABLED"] = "enabled";
+	["DISABLED"] = "disabled";
 
 	-- Icons and Collection Text
 	["COLLECTED_ICON"] = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
@@ -637,16 +639,28 @@ for key, value in pairs({
 		["25 Player (Heroic)"] = "25M (H)",
 		[BATTLEGROUNDS] = "BGs",
 		-- Dungeon&Raids Names
+		-- BFA
+		["Ny'alotha, the Waking City"] = "Ny'alotha",
+		-- Cata
+		["Baleroc, the Gatekeeper"] = "Baleroc",
+		["The Conclave of Wind"] = "Conclave",
+		["Hagara the Stormbinder"] = "Hagara",
+		["Majordomo Staghelm"] = "Majordomo",
+		["Omnotron Defense System"] = "Omnotron",
+		["Theralion and Valiona"] = "Theralion&Valiona",
+		["Yor'sahj the Unsleeping"] = "Yor'sahj",
+		-- DF
 		["Aberrus, the Shadowed Crucible"] = "Aberrus",
 		["Antorus, the Burning Throne"] = "Antorus",
 		["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
 		["Kazzara, the Hellforged"] = "Kazzara",
 		["Larodar, Keeper of the Flame"] = "Larodar",
-		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
 		["Nymue, Weaver of the Cycle"] = "Nymue",
-		["Ny'alotha, the Waking City"] = "Ny'alotha",
-		["Tazavesh, the Veiled Market"] = "Tazavesh",
 		["Tindral Sageswift, Seer of the Flame"] = "Tindral Sageswift",
+		-- Legion
+		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
+		-- SL
+		["Tazavesh, the Veiled Market"] = "Tazavesh",
 		-- Outdoor Zones
 		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
 		["Season "] = "S",
@@ -744,8 +758,6 @@ for key, value in pairs({
 		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Hearthfire Tavern (horde)
 	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
-	-- 5.3
-		[-398] = "Interface\\Icons\\ability_vehicle_oiljets",								-- Battlefield: Barrens
 	-- BFA War Chest
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Misc
@@ -923,8 +935,6 @@ for key, value in pairs({
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
-	-- 5.3
-		[-398] = "Battlefield: Barrens",										-- Battlefield: Barrens
 	-- BFA War Chest
 		[-488] = "War Chest",													-- Daily War Chest
 	-- Misc
@@ -968,6 +978,7 @@ for key, value in pairs({
 	-- Shadowlands Header
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
+	--	[-902] = "Renown Rewards",												-- Renown Rewards
 		[-905] = GetSpellInfo(280630),											-- Command Table
 		[-916] = sformat(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
 		[-917] = sformat(COVENANT_SANCTUM_TIER, 2),						-- Tier 2

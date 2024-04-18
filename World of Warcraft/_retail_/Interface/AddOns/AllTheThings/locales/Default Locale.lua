@@ -19,18 +19,8 @@ local L = setmetatable({
 	HEADER_NAMES = {};
 	QUEST_NAMES = {};
 	
-	-- These are alternative map names that we don't want to display, but used for mapID calculations.
 	-- If there is a name provided in the table above, it will prefer that name association.
-	ART_ID_TO_MAP_ID = {};
 	MAP_ID_TO_ZONE_TEXT = {};
-	QUEST_ID_TO_MAP_ID = {};
-	ZONE_TEXT_TO_MAP_ID = {};
-	ALT_ZONE_TEXT_TO_MAP_ID = {
-		["Gates of Ahn'Qiraj"] = 1451,
-		["The Temple of Atal'Hakkar"] = 220,
-		["The Battle for Mount Hyjal"] = 329,
-		["The Eye"] = 334,
-	};
 	
 	-- Binding Localizations
 	TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
@@ -191,7 +181,7 @@ L.SETTINGS_MENU = {
 		DEATHS_CHECKBOX = "Deaths";
 		DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 		EXPLORATION_CHECKBOX = "Exploration";
-		EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps. \n\nNOTE: Collection logic is based on the visible map data, so if it isn't marked collected, try reloading or relogging first.";
+		EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.";
 		FLIGHT_PATHS_CHECKBOX = "Flight Paths";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
 		HEIRLOOMS_CHECKBOX = HEIRLOOMS;
@@ -341,7 +331,7 @@ L.SETTINGS_MENU = {
 		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "Include Treasures";
 		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)";
 		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "Include Completed";
-		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that completed based on your filters in ATT.";
+		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are completed based on your filters in ATT.";
 		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "Include Unknown/Unsourced";
 		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are not sourced in ATT.";
 		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "Flash the Taskbar";
@@ -371,4 +361,23 @@ L.SETTINGS_MENU = {
 		PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
 		SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
+};
+
+-- All of the locales related to the Player Tooltips module.
+L.TOOLTIP_MODULE = {
+	RANKS = {
+		AUTHOR = "Author";
+		CONTRIBUTOR = "Contributor";
+		COLLECTOR = "Collector";
+	},
+	TITLES = {
+		XX_THE_COMPLETIONIST = "%s the Completionist";
+		XX_THE_CONTRIBUTOR = "%s";	-- NOTE: Contributors didn't want a different title.
+		XX_THE_EXTERMINATOR = "%s the Exterminator";
+		XX_THE_GOLD_TYCOON = "Gold Tycoon %s";
+		XX_THE_LORD_KING = "Lord King %s";
+		XX_THE_LORD_QUEEN = "Lord Queen %s";
+		XX_THE_SCARAB_LORD = "Scarab Lord %s";
+		XX_THE_HUGGLER = "%s the Huggler";
+	},
 };

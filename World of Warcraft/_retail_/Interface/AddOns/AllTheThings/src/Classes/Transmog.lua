@@ -4,10 +4,6 @@ local appName,app = ...;
 local C_TransmogCollection = C_TransmogCollection;
 if not C_TransmogCollection then
 	-- Transmog is NOT supported.
-	-- Gear Sets
-	app.CreateGearSet = app.CreateUnimplementedClass("GearSet", "setID");
-	app.CreateGearSetHeader = app.CreateUnimplementedClass("GearSetHeader", "setID");
-	app.CreateGearSetSubHeader = app.CreateUnimplementedClass("GearSetSubHeader", "setID");
 	app.CreateItemSource = function(sourceID, itemID, t)
 		if not t then
 			t = { sourceID = sourceID };
@@ -33,7 +29,6 @@ local ipairs, select, tinsert, pairs, rawget
 	= ipairs, select, tinsert, pairs, rawget;
 local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
 	= GetItemInfoInstant, C_Item.IsDressableItemByID, GetItemInfo, C_Transmog.GetSlotForInventoryType
-local Callback = app.CallbackHandlers.Callback;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local L, contains, containsAny, SearchForField, SearchForFieldContainer
 	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer;
@@ -83,7 +78,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 };
 local DressUpModel = CreateFrame('DressUpModel');
 local function GetSourceID(itemLink)
-	if not itemLink or not C_Item_IsDressableItemByID(itemLink) then return nil, false end
+	if not itemLink or (C_Item_IsDressableItemByID and not C_Item_IsDressableItemByID(itemLink)) then return nil, false end
 
 	-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 	-- (requires loaded ItemInfo to work for modified appearances)
@@ -167,7 +162,7 @@ app.DetermineItemLink = function(sourceID)
 
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
-	for b=1,9999,1 do
+	for b=1,10999,1 do
 		link = itemFormat:format(b);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
@@ -304,7 +299,7 @@ local function CompletionistItemCollectionHelper(sourceID, oldState)
 			local searchResults = SearchForField("sourceID", sourceID);
 			if #searchResults > 0 then
 				local firstMatch = searchResults[1];
-				print(L.ITEM_ID_ADDED:format(firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
+				app.print(L.ITEM_ID_ADDED:format(firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 			else
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
@@ -312,13 +307,12 @@ local function CompletionistItemCollectionHelper(sourceID, oldState)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
 
-				print(L.ITEM_ID_ADDED_MISSING:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+				app.print(L.ITEM_ID_ADDED_MISSING:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
 			end
-			Callback(app.Audio.PlayFanfare);
-			Callback(app.TakeScreenShot, "Transmog");
+			app.HandleEvent("OnThingCollected", "Transmog")
 		end
 
 		-- Update the groups for the sourceID results
@@ -348,10 +342,11 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 
 		-- Show the collection message if learning this Source actually contributed as a new Unique appearance
 		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
+			local newCollected = newAppearancesLearned > 0
 			-- Search for the item that actually was unlocked.
 			local firstMatch = SearchForSourceIDQuickly(sourceID);
 			if firstMatch then
-				print(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"]:format(firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, newAppearancesLearned));
+				app.print(L[newCollected and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"]:format(firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, newAppearancesLearned));
 			else
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
@@ -359,13 +354,14 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
 
-				print(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
+				app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
 			end
-			Callback(app.Audio.PlayFanfare);
-			Callback(app.TakeScreenShot, "Transmog");
+			if newCollected then
+				app.HandleEvent("OnThingCollected", "Transmog")
+			end
 		end
 
 		-- Update the groups for the sourceIDs
@@ -501,7 +497,7 @@ local function RefreshAppearanceSources()
 	app.DoRefreshAppearanceSources = nil;
 	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
 	wipe(collectedSources);
-	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
+	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then
 		-- app.PrintDebug("Initial Session Refresh")
@@ -547,14 +543,8 @@ local function RefreshAppearanceSources()
 		-- app.PrintDebug("Unique Refresh done")
 	end
 end
-app.AddEventHandler("OnRefreshCollections", function()
-	-- Refresh Sources from Cache if tracking Transmog
-	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
-		RefreshAppearanceSources();
-	end
-end);
 app.AddEventHandler("OnRecalculate", function()
-	if app.DoRefreshAppearanceSources then
+	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
 		RefreshAppearanceSources();
 	end
 end);
@@ -563,7 +553,18 @@ end);
 app.SaveHarvestSource = function(data)
 	local sourceID, itemID = data.sourceID, data.modItemID;
 	if sourceID and itemID then
-		-- app.PrintDebug("Harvest:sourceID",itemID,"=>",sourceID)
+		-- artifacts do a special modItemID...
+		if not data.artifactID then
+			local i, m, b = app.GetItemIDAndModID(itemID)
+			-- we either want to save using modID OR bonusID, but not both
+			if b and b > 0 then
+				itemID = app.GetGroupItemIDWithModID(nil, i, nil, b)
+			elseif m and m > 0 then
+				itemID = app.GetGroupItemIDWithModID(nil, i, m)
+			end
+		end
+		if itemID < 1 then return end
+		app.PrintDebug("Harvest",sourceID,"<=",itemID,app:SearchLink(data),data.link or data.text or data.hash)
 		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
 end
@@ -596,6 +597,10 @@ do
 		["collected"] = function(t)
 			return ATTAccountWideData.Sources[t.sourceID];
 		end,
+		trackable = app.ReturnTrue,
+		saved = function(t)
+			return app.IsAccountCached("Sources", t.sourceID) == 1
+		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
 		["itemID"] = function(t)
 			if t.__autolink then return; end
@@ -615,98 +620,6 @@ do
 		return t;
 	end
 end
-
--- Gear Sets
-local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
-local C_TransmogSets_GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
-app.CreateGearSet = app.CreateClass("GearSet", "setID", {
-	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
-	end,
-	["name"] = function(t)
-		return t.info.name;
-	end,
-	["icon"] = function(t)
-		local sources = t.sources;
-		if sources then
-			for i, sourceID in ipairs(sources) do
-				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-				if sourceInfo and sourceInfo.invType == 2 then
-					local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
-					if icon then t.icon = icon; end
-					return icon;
-				end
-			end
-		end
-		return QUESTION_MARK_ICON;
-	end,
-	["description"] = function(t)
-		local info = t.info;
-		if info.description then
-			if info.label then return info.label .. " (" .. info.description .. ")"; end
-			return info.description;
-		end
-		return info.label;
-	end,
-	["header"] = function(t)
-		return t.info.label;
-	end,
-	["subheader"] = function(t)
-		return t.info.description;
-	end,
-	["title"] = function(t)
-		return t.info.requiredFaction;
-	end,
-	["sources"] = function(t)
-		local sources = C_TransmogSets_GetAllSourceIDs(t.setID);
-		if sources then
-			t.sources = sources;
-			return sources;
-		end
-	end,
-});
-app.CreateGearSetHeader = app.CreateClass("GearSetHeader", "setID", {
-	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
-	end,
-	["name"] = function(t)
-		return t.info.label;
-	end,
-	["icon"] = function(t)
-		return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
-	end,
-	["link"] = function(t)
-		return t.achievementID and GetAchievementLink(t.achievementID);
-	end,
-	["achievementID"] = function(t)
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		if achievementID then
-			t.achievementID = achievementID;
-			return achievementID;
-		end
-	end,
-});
-app.CreateGearSetSubHeader = app.CreateClass("GearSetSubHeader", "setID", {
-	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
-	end,
-	["name"] = function(t)
-		return t.info.description;
-	end,
-	["icon"] = function(t)
-		return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
-	end,
-	["link"] = function(t)
-		return t.achievementID and GetAchievementLink(t.achievementID);
-	end,
-	["achievementID"] = function(t)
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		if achievementID then
-			t.achievementID = achievementID;
-			return achievementID;
-		end
-	end,
-});
 
 -- External Functionality
 app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
@@ -968,73 +881,8 @@ app.BuildSourceInformationForPopout = function(group)
 			else group.g = { appearanceGroup } end
 		end
 
-		-- Determine if this source is part of a set or two.
-		local allSets = {};
-		local sourceSets = {};
-		local GetVariantSets = C_TransmogSets.GetVariantSets;
-		local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
-		for i,data in ipairs(C_TransmogSets.GetAllSets()) do
-			local sources = GetAllSourceIDs(data.setID);
-			if #sources > 0 then allSets[data.setID] = sources; end
-			for j,sourceID in ipairs(sources) do
-				local sourceSet = sourceSets[sourceID];
-				if not sourceSet then
-					sourceSet = {};
-					sourceSets[sourceID] = sourceSet;
-				end
-				sourceSet[data.setID] = 1;
-			end
-			local variants = GetVariantSets(data.setID);
-			if type(variants) == "table" then
-				for j,data in ipairs(variants) do
-					local sources = GetAllSourceIDs(data.setID);
-					if #sources > 0 then allSets[data.setID] = sources; end
-					for k, sourceID in ipairs(sources) do
-						local sourceSet = sourceSets[sourceID];
-						if not sourceSet then
-							sourceSet = {};
-							sourceSets[sourceID] = sourceSet;
-						end
-						sourceSet[data.setID] = 1;
-					end
-				end
-			end
-		end
-		local data, g = sourceSets[group.sourceID];
-		if data then
-			for setID,value in pairs(data) do
-				g = {};
-				setID = tonumber(setID);
-				for _,sourceID in ipairs(allSets[setID]) do
-					local search = app.SearchForMergedObject("sourceID", sourceID);
-					if search then
-						search = app.__CreateObject(search, true);
-						search.hideText = true;
-						tinsert(g, search);
-					else
-						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-						if otherSourceInfo then
-							local newItem = app.CreateItemSource(sourceID);
-							if otherSourceInfo.isCollected then
-								ATTAccountWideData.Sources[sourceID] = 1;
-							end
-							tinsert(g, newItem);
-						end
-					end
-				end
-				-- add the group showing the related Set information for this popout
-				if not group.g then group.g = { app.CreateGearSet(setID, {
-					["OnUpdate"] = app.AlwaysShowUpdate,
-					["sourceIgnored"] = true,
-					["skipFill"] = true,
-					["g"] = g }) }
-				else tinsert(group.g, app.CreateGearSet(setID, {
-					["OnUpdate"] = app.AlwaysShowUpdate,
-					["sourceIgnored"] = true,
-					["skipFill"] = true,
-					["g"] = g })) end
-			end
-		end
+		-- Now apply Gear Sets, if relevant.
+		app.BuildGearSetInformationForGroup(group);
 	end
 end
 
@@ -1096,11 +944,12 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 
 		-- Refresh the Data and Cry!
 		app.UpdateRawIDs("sourceID", unlearnedSourceIDs);
-		Callback(app.Audio.PlayRemoveSound);
+		app.HandleEvent("OnThingRemoved", "Transmog")
 		app.WipeSearchCache();
 	end
 end
 app.AddEventHandler("OnStartup", function()
+	-- TODO: app.AddEventRegistration
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 
@@ -1113,6 +962,7 @@ app.AddEventHandler("OnStartup", function()
 end);
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
+	if not accountWideData.Sources then accountWideData.Sources = {}; end
 end);
 
 -- Extend the Filter Module to include ItemSource

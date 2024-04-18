@@ -14,6 +14,7 @@ function addon:OnCombatEnd()
   for i=1, #queue do
     queue[i]()
   end
+  queue = {}
   self:UnregisterEvent("PLAYER_REGEN_ENABLED")
 end
 

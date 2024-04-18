@@ -10,43 +10,43 @@ PetBattleMasterDb = {
 						{
 							["pets"] = {
 								{
-									["speciesId"] = 1442,
-									["name"] = "Ghastly Kid",
-									["creatureId"] = 83817,
-									["abilities"] = {
-										493, -- [1]
-										998, -- [2]
-										654, -- [3]
-									},
+									["speciesId"] = 3100,
+									["name"] = "Timeless Mechanical Dragonling",
+									["creatureId"] = 179125,
+									["petId"] = "BattlePet-0-000012B0D34C",
 									["level"] = 25,
-									["petType"] = 4,
-									["petId"] = "BattlePet-0-000012B99D22",
+									["petType"] = 10,
+									["abilities"] = {
+										501, -- [1]
+										602, -- [2]
+										1025, -- [3]
+									},
 								}, -- [1]
 								{
-									["speciesId"] = 538,
-									["name"] = "Scourged Whelpling",
-									["creatureId"] = 62854,
-									["abilities"] = {
-										122, -- [1]
-										256, -- [2]
-										668, -- [3]
-									},
+									["speciesId"] = 4406,
+									["name"] = "Sarge",
+									["creatureId"] = 216179,
+									["petId"] = "BattlePet-0-000012FA8F1B",
 									["level"] = 25,
-									["petType"] = 4,
-									["petId"] = "BattlePet-0-000012B675D0",
+									["petType"] = 5,
+									["abilities"] = {
+										2515, -- [1]
+										592, -- [2]
+										163, -- [3]
+									},
 								}, -- [2]
 								{
-									["speciesId"] = 190,
-									["name"] = "Ghostly Skull",
-									["creatureId"] = 29147,
-									["abilities"] = {
-										210, -- [1]
-										442, -- [2]
-										212, -- [3]
-									},
+									["speciesId"] = 1266,
+									["name"] = "Xu-Fu, Cub of Xuen",
+									["creatureId"] = 71942,
+									["petId"] = "BattlePet-0-000012B528FE",
 									["level"] = 25,
-									["petType"] = 4,
-									["petId"] = "BattlePet-0-000012B118B3",
+									["petType"] = 8,
+									["abilities"] = {
+										974, -- [1]
+										595, -- [2]
+										536, -- [3]
+									},
 								}, -- [3]
 							},
 							["name"] = "Unnamed",

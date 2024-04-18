@@ -45,6 +45,8 @@ L["outlineMode"] = "Outlinemode"
 L["nameFontSize"] = "Name - Size"
 L["healthFontSize"] = "Health - Size"
 L["powerFontSize"] = "Power - Size"
+L["alternatePowerFontSize"] = " Alternate - Power - Size"
+L["alterNatePowerFontColor"] = "Alternate Power"
 --Units
 L["player"] = "Player"
 L["target"] = "Target"

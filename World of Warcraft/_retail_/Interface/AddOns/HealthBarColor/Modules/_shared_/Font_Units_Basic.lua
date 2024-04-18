@@ -104,6 +104,31 @@ for _, unit in pairs(units) do
       color = defaultColor,
     }
     hbc_unit:SetPowerTextFont(font, fontSize, outlinemode)
+    --Alternate Power
+    if addonTable.isRetail and unit == "player" then
+      local defaultColor = {}
+      defaultColor.r, defaultColor.g, defaultColor.b, defaultColor.a = hbc_unit.alternatePowerBarTextLeft:GetVertexColor()
+      if dbObj.colorModeAlternatePower == 1 then
+        hbc_unit:SetAlternatePowerTextToCustomColor(dbObj.customColorAlternatePower)
+      else
+        hbc_unit.updatePowerCallbacks["update_alternate_power_font_color"] = function()
+          hbc_unit:SetAlternatePowerTextToAlternatePowerColor()
+        end
+        hbc_unit:SetAlternatePowerTextToAlternatePowerColor()
+      end
+      local font = Media:Fetch("font", dbObj.powerFont) -- TODO implement a dropdown in gui to make this independent 
+      local fontSize = dbObj.alternatePowerFontSize
+      local outlinemode = addon:ConvertDbNumberToOutlinemode(dbObj.powerFontOutlineMode) 
+      local defaultFont, defaultFontSize, defaultOutlinemode = hbc_unit.alternatePowerBarTextLeft:GetFont()
+      module.defaultFonts.alternatePower =
+      {
+        font = defaultFont,
+        size = defaultFontSize,
+        outlinemode = defaultOutlinemode,
+        color = defaultColor,
+      }
+      hbc_unit:SetAlternatePowerTextFont(font, fontSize, outlinemode)
+    end
   end
 
   function module:OnDisable()
@@ -117,6 +142,10 @@ for _, unit in pairs(units) do
       hbc_unit:SetHealthTextToCustomColor(defaultFonts.health.color)
       hbc_unit:SetPowerTextFont(defaultFonts.power.font, defaultFonts.power.size, defaultFonts.power.outlinemode)
       hbc_unit:SetPowerTextToCustomColor(defaultFonts.power.color)
+      if addonTable.isRetail and unit == "player" then
+        hbc_unit:SetAlternatePowerTextFont(defaultFonts.alternatePower.font, defaultFonts.alternatePower.size, defaultFonts.alternatePower.outlinemode)
+        hbc_unit:SetAlternatePowerTextToCustomColor(defaultFonts.alternatePower.color)
+      end
     end
   end
 end

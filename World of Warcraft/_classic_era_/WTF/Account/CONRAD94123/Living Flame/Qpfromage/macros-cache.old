@@ -19,9 +19,20 @@ VER 3 0000000001000010 "blz" "134400"
 /cast [nomod] blizzard
 /cast [mod:shift] Blizzard(Rank 1)
 END
+VER 3 0000000001000012 "Cone of Cold" "INV_MISC_QUESTIONMARK"
+#showtooltip Cone of Cold
+/cleartarget [dead][noharm]
+/targetenemy [dead][noharm]
+/startattack
+/cast Cone of Cold
+END
 VER 3 0000000001000007 "Conjure Food" "INV_MISC_QUESTIONMARK"
 #showtooltip Conjure Food
 /cast Conjure Food
+END
+VER 3 0000000001000011 "Conjure Mana Aga" "INV_MISC_QUESTIONMARK"
+#showtooltip Conjure Mana Agate
+/cast Conjure Mana Agate
 END
 VER 3 0000000001000006 "Conjure Water" "INV_MISC_QUESTIONMARK"
 #showtooltip Conjure Water

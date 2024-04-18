@@ -58,7 +58,7 @@ RSConstants.EVENTS = {
 	[RSConstants.DIABLO_4_GOBLIN_EVENT] = false;
 	[RSConstants.WARCRAFT_RUMBLE_CROSSOVER_EVENT] = true;
 	[RSConstants.HEARTHSTONE_10TH_EVENT] = false;
-	[RSConstants.NOBLEGARDEN_EVENT] = true;
+	[RSConstants.NOBLEGARDEN_EVENT] = false;
 }
 
 ---============================================================================

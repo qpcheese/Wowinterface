@@ -3,16 +3,13 @@ local _, app = ...
 local L = app.L
 
 -- App locals
-local AssignChildren, GetRelativeField, GetRelativeValue, SearchForField, GetRawField
-	= app.AssignChildren, app.GetRelativeField, app.GetRelativeValue, app.SearchForField, app.GetRawField
+local GetRawField
+	= app.GetRawField
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
-local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local Colorize = app.Modules.Color.Colorize;
-local Search = app.SearchForObject
 
 -- Global locals
-local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber, tostring, tremove
-	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber, tostring, tremove
+local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tostring, tremove
+	= ipairs, pairs, rawset, rawget, tinsert, math.floor, select, tonumber, tostring, tremove
 local GetItemCount, GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
 	= GetItemCount, GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
 
@@ -88,7 +85,7 @@ local function GetSpecsString(specs, includeNames, trim)
 	return app.TableConcat(icons);
 end
 app.GetSpecsString = GetSpecsString
--- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100 and bonusID/1000000
+-- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/1000 and bonusID/10000000
 -- or converts a raw ItemID/ModID/BonusID into the combined modItemID value
 -- Ex. 12345 (ModID 5) => 12345.05
 -- Ex. 87654 (ModID 23)=> 87654.23
@@ -105,10 +102,10 @@ local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
 		b = rawBonusID and tonumber(rawBonusID);
 	end
 	if m then
-		i = i + (m / 100);
+		i = i + (m / 1000);
 	end
 	if b and b ~= 3524 then
-		i = i + (b / 1000000);
+		i = i + (b / 100000000);
 	end
 	return i;
 end
@@ -121,9 +118,9 @@ local function GetItemIDAndModID(modItemID)
 	if modItemID and tonumber(modItemID) then
 		-- print("GetItemIDAndModID",modItemID)
 		local itemID = math_floor(modItemID);
-		modItemID = (modItemID - itemID) * 100.0 + 0.0000005;
+		modItemID = (modItemID - itemID) * 1000.0 + 0.00000005;
 		local modID = math_floor(modItemID);
-		modItemID = (modItemID - modID) * 10000.0 + 0.0000005;
+		modItemID = (modItemID - modID) * 100000.0 + 0.00000005;
 		local bonusID = math_floor(modItemID);
 		-- print(itemID,modID,bonusID)
 		return itemID, modID, bonusID;
@@ -349,7 +346,7 @@ local function default_costCollectibles(t)
 	end
 	if results and #results > 0 then
 		-- not sure we need to copy these into another table
-		-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
+		-- app.PrintDebug("default_costCollectibles",id,#results,app:SearchLink(t))
 		return results;
 	end
 	return app.EmptyTable;
@@ -409,6 +406,17 @@ local itemFields = {
 	["collectibleAsCost"] = app.CollectibleAsCost,
 	["costsCount"] = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
+	end,
+	-- some calculated properties can let fall-through to the merge source of a group instead of needing to re-calculate in every copy
+	isCost = function(t)
+		local merge = t.__merge
+		if not merge then return end
+		return merge.isCost
+	end,
+	isUpgrade = function(t)
+		local merge = t.__merge
+		if not merge then return end
+		return merge.isUpgrade
 	end,
 };
 -- Module imports

@@ -1,4 +1,4 @@
-SET cameraDistanceMaxZoomFactor "2.6"
+SET cameraDistanceMaxZoomFactor "1.9"
 SET spellActivationOverlayOpacity "1"
 SET cameraPitchSmoothSpeed "67.5"
 SET cameraZoomSpeed "20"

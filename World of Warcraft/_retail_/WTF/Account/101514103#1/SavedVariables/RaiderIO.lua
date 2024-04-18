@@ -31,16 +31,16 @@ RaiderIO_Config = {
 		["g"] = 0,
 		["b"] = 0,
 	},
-	["inverseProfileModifier"] = false,
 	["showRaiderIOProfile"] = true,
+	["replaySelection"] = "user_best_replay",
 	["showScoreInCombat"] = true,
 	["enableGuildTooltips"] = true,
 	["enableWhoTooltips"] = true,
-	["positionProfileAuto"] = true,
+	["enableFriendsTooltips"] = true,
 	["hidePersonalRaiderIOProfile"] = false,
 	["enableProfileModifier"] = true,
 	["showRoleIcons"] = true,
-	["enableFriendsTooltips"] = true,
+	["positionProfileAuto"] = true,
 	["enableUnitTooltips"] = true,
 	["showDropDownCopyURL"] = true,
 	["enableClientEnhancements"] = true,
@@ -49,22 +49,11 @@ RaiderIO_Config = {
 	["enableCombatLogTracking"] = false,
 	["lockProfile"] = false,
 	["showSimpleScoreColors"] = false,
-	["replaySelection"] = "user_best_replay",
+	["inverseProfileModifier"] = false,
 	["showClientGuildBest"] = true,
 }
 RaiderIO_LastCharacter = "eu-Qpfromage-sylvanas"
 RaiderIO_MissingCharacters = {
-	["eu-Arys-twisting-nether"] = true,
-	["eu-Artarian-ravencrest"] = true,
-	["eu-Omnicient-silvermoon"] = true,
-	["eu-Hüppefrosch-antonidas"] = true,
-	["eu-Fùrÿ-kazzak"] = true,
-	["eu-Señorgrande-kazzak"] = true,
-	["eu-Toolpriest-malganis"] = true,
-	["eu-Draktano-eredar"] = true,
-	["eu-Bnc-kazzak"] = true,
-	["eu-Rìpped-tarren-mill"] = true,
-	["eu-Convokekekw-kazzak"] = true,
 }
 RaiderIO_MissingServers = {
 }

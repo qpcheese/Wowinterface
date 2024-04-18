@@ -11,13 +11,13 @@ RoutesDB = {
 		["Jerwin - Ragnaros"] = "Default",
 		["Qubit - Ragnaros"] = "Default",
 		["Myfficraider - Ragnaros"] = "Default",
-		["Laurs - Ragnaros"] = "Default",
+		["Qpet - Kor'gall"] = "Default",
 		["Qpe - Ravencrest"] = "Default",
 		["Cyclosarin - Ragnaros"] = "Default",
 		["Qpcheese - Todeswache"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
 		["Qpew - Ragnaros"] = "Default",
-		["Qpet - Kor'gall"] = "Default",
+		["Laurs - Ragnaros"] = "Default",
 	},
 	["global"] = {
 		["routes"] = {

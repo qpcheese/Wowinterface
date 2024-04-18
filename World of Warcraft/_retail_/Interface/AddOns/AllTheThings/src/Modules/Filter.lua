@@ -141,6 +141,7 @@ end);
 
 -- MinReputation
 local ExclusiveFactions = {
+	[70]=1,		-- Syndicate
 	[932]=1,	-- The Aldor
 	[934]=1,	-- The Scryers
 	[1104]=1,	-- Frenzyheart Tribe
@@ -255,7 +256,7 @@ end);
 -- Race
 local SettingsFilterRace_CurrentFaction;
 -- Whether this is for the current 'race'
-local function FilterRace(item)	-- FilterItemClass_RequireRaces
+local function FilterRace(item)
 	return not item.nmr;
 end
 api.Filters.Race = FilterRace
@@ -269,7 +270,7 @@ local function FilterRace_Alliance(item)
 	return races and containsAny(races, ALLIANCE_ONLY);
 end
 api.Filters.Race_Alliance = FilterRace_Alliance
-local function FilterRace_CurrentFaction(item)	-- FilterItemClass_RequireRacesCurrentFaction
+local function FilterRace_CurrentFaction(item)
 	if item.nmr then
 		local r = item.r;
 		if r then
@@ -432,9 +433,7 @@ app.CurrentCharacterFilters = CurrentCharacterFilters
 
 -- TODO: adjust these function names
 -- Used as the general Group filter during updates
-api.Filters.Group = function()
-	return SettingsFilters;
-end
+api.Filters.Group = SettingsFilters
 api.Get.Group = function()
 	return app.GroupFilter == SettingsFilters;
 end
@@ -442,9 +441,7 @@ api.Set.Group = function(active)
 	app.GroupFilter = active and SettingsFilters or NoFilter;
 end
 -- Used to show completed Groups
-api.Filters.CompletedGroups = function()
-	return FilterCompletion;
-end
+api.Filters.CompletedGroups = FilterCompletion
 api.Get.CompletedGroups = function()
 	return app.GroupVisibilityFilter == FilterCompletion;
 end

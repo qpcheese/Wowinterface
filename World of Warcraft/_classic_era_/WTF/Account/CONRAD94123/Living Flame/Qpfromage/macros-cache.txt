@@ -77,12 +77,9 @@ VER 3 0000000001000002 "Flamestrike" "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Flamestrike
 END
-VER 3 0000000001000004 "Frost Armor" "INV_MISC_QUESTIONMARK"
-#showtooltip Frost Armor
-/cleartarget [dead][noharm]
-/targetenemy [dead][noharm]
-/startattack
-/cast Frost Armor
+VER 3 0000000001000013 "Ice Armor" "INV_MISC_QUESTIONMARK"
+#showtooltip Ice Armor
+/cast Ice Armor
 END
 VER 3 000000000100000B "Mana Shield" "INV_MISC_QUESTIONMARK"
 #showtooltip Mana Shield

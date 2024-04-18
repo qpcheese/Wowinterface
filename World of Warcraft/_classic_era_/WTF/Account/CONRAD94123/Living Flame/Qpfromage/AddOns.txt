@@ -94,3 +94,4 @@ Chinchilla: disabled
 RXPGuides: disabled
 RankSentinel: disabled
 SexyMap: disabled
+Spy: disabled

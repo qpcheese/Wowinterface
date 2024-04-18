@@ -167,7 +167,7 @@ local function createClassColorEntrys()
         {
           order = 1,
           name = "",
-          image = "Interface\\AddOns\\HealthBarColor\\Media\\Textures\\CharacterCreateIcons.BLP",
+          image = "Interface\\AddOns\\HealthBarColor\\Media\\Textures\\CharacterCreateIcons.BLP", -- I made a copy so that we are unaffected by changes
           imageCoords = classIconCoords[class] or {0,1,0,1},
           imageWidth = 28,
           imageHeight = 28,

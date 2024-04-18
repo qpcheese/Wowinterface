@@ -1,14 +1,9 @@
 # BigWigs [Classic]
 
-## [v10.2.60](https://github.com/BigWigsMods/BigWigs_Classic/tree/v10.2.60) (2024-04-05)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_Classic/compare/v10.2.59...v10.2.60) [Previous Releases](https://github.com/BigWigsMods/BigWigs_Classic/releases)
+## [v10.2.66](https://github.com/BigWigsMods/BigWigs_Classic/tree/v10.2.66) (2024-04-06)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_Classic/compare/v10.2.65...v10.2.66) [Previous Releases](https://github.com/BigWigsMods/BigWigs_Classic/releases)
 
+- SunkenTemple\_Classic/AvatarOfHakkar: Fix removed message  
 - Update option files  
-- SunkenTemple\_Classic: Cleanups  
-- SunkenTemple\_Classic: Cleanups  
-- SunkenTemple\_Classic/FesteringRotslime: Initial module  
-- SunkenTemple\_Classic: Cleanup  
-- SunkenTemple\_Classic/Atalalarion: Initial module  
-- Sunken Temple plumbing  
-- Cleanups  
-- bump toc  
+- Update zhCN.lua (#139)  
+- SunkenTemple\_Classic/AvatarOfHakkar: Initial module  

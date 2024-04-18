@@ -21,51 +21,51 @@ CraftSimOptions = {
 	["modulesCustomerService"] = false,
 	["recipeScanIncludeSoulbound"] = false,
 	["tsmPriceKeyMaterials"] = "first(DBRecent, DBMinbuyout)",
-	["recipeScanFilteredExpansions"] = {
-		[9] = true,
-	},
+	["transparencyMaterials"] = 1,
 	["customMulticraftConstant"] = "2.5",
 	["recipeScanImportAllProfessions"] = false,
 	["modulesCraftQueue"] = false,
-	["customerHistoryMigrationDoneV3"] = true,
+	["modulesMaterials"] = true,
 	["priceSource"] = "TradeSkillMaster",
-	["modulesStatWeights"] = false,
+	["recipeScanIncludedProfessions"] = {
+	},
 	["craftGarbageCollectCrafts"] = 500,
-	["modulesCraftResults"] = true,
+	["modulesCraftBuffs"] = false,
 	["craftQueueShoppingListPerCharacter"] = false,
 	["detailedCraftingInfoTooltip"] = true,
 	["newsChecksum"] = 107,
 	["modulesCostDetails"] = false,
 	["customerHistoryAutoPurgeInterval"] = 2,
-	["craftQueueGeneralRestockRestockAmount"] = 1,
+	["craftGarbageCollectEnabled"] = true,
 	["craftQueueRestockPerRecipeOptions"] = {
 	},
-	["breakPointOffset"] = false,
+	["craftQueueGeneralRestockSaleRateThreshold"] = 0,
 	["transparencyTopGear"] = 1,
-	["customerHistoryAutoPurgeLastPurge"] = 1708215180,
+	["maxHistoryEntriesPerClient"] = 200,
 	["modulesPriceOverride"] = false,
 	["recipeScanIncludeNotLearned"] = false,
-	["recipeScanOptimizeProfessionTools"] = false,
+	["craftQueueGeneralRestockProfitMarginThreshold"] = 0,
 	["openLastRecipe"] = true,
 	["recipeScanIncludeGear"] = false,
-	["materialSuggestionInspirationThreshold"] = false,
-	["modulesHistoryService"] = false,
 	["topGearAutoUpdate"] = false,
+	["modulesHistoryService"] = false,
+	["materialSuggestionInspirationThreshold"] = false,
 	["optionsShowNews"] = true,
 	["modulesSpecInfo"] = false,
-	["craftQueueGeneralRestockProfitMarginThreshold"] = 0,
+	["recipeScanOptimizeProfessionTools"] = false,
 	["customerServiceRecipeWhisperFormat"] = "Highest Result: %gc\nwith Inspiration: %ic (%insp)\nCrafting Costs: %cc\n%ccd\n",
-	["maxHistoryEntriesPerClient"] = 200,
-	["craftQueueGeneralRestockSaleRateThreshold"] = 0,
+	["customerHistoryAutoPurgeLastPurge"] = 1712727300,
+	["breakPointOffset"] = false,
 	["modulesRecipeScan"] = false,
-	["craftGarbageCollectEnabled"] = true,
+	["craftQueueGeneralRestockRestockAmount"] = 1,
 	["transparencyStatWeights"] = 1,
-	["modulesCraftBuffs"] = false,
+	["modulesCraftResults"] = true,
 	["modulesTopGear"] = false,
-	["recipeScanIncludedProfessions"] = {
+	["modulesStatWeights"] = false,
+	["customerHistoryMigrationDoneV3"] = true,
+	["recipeScanFilteredExpansions"] = {
+		[9] = true,
 	},
-	["modulesMaterials"] = true,
-	["transparencyMaterials"] = 1,
 }
 CraftSimGGUIConfig = {
 	["savedPos_CRAFT_DATA"] = {
@@ -100,9 +100,9 @@ CraftSimGGUIConfig = {
 		["offsetX"] = 610.9996948242188,
 		["offsetY"] = 290.9998779296875,
 	},
-	["savedPos_CONTROL_PANEL"] = {
-		["offsetX"] = 2.99945068359375,
-		["offsetY"] = 387.4996337890625,
+	["savedPos_PRICE_OVERRIDE"] = {
+		["offsetX"] = -246.0000610351563,
+		["offsetY"] = 24.99981689453125,
 	},
 	["savedPos_CRAFT_BUFFS"] = {
 		["offsetX"] = 475.0000305175781,
@@ -112,9 +112,9 @@ CraftSimGGUIConfig = {
 		["offsetX"] = -0.99993896484375,
 		["offsetY"] = -1.99993896484375,
 	},
-	["savedPos_PRICE_OVERRIDE"] = {
-		["offsetX"] = -246.0000610351563,
-		["offsetY"] = 24.99981689453125,
+	["savedPos_CONTROL_PANEL"] = {
+		["offsetX"] = 2.99945068359375,
+		["offsetY"] = 387.4996337890625,
 	},
 }
 CraftSimPriceOverridesV2 = {
@@ -127,46 +127,12 @@ CraftSimLoadedProfessionRecipes = {
 	12, -- [1]
 }
 CraftSimCustomerHistoryV2 = {
-	["Qpfromage-Sylvanas"] = {
-		["chatHistory"] = {
-			{
-				["fromPlayer"] = false,
-				["content"] = "Completed trade with Qpfromage-Silvermoon. - I gave: 50000g 00s 00c",
-				["timestamp"] = 1708215300,
-			}, -- [1]
-			{
-				["fromPlayer"] = false,
-				["content"] = "Completed trade with Qpfromage-Silvermoon. - I gave: 10000g 00s 00c",
-				["timestamp"] = 1708215780,
-			}, -- [2]
-			{
-				["fromPlayer"] = false,
-				["content"] = "Completed trade with Qpfromage-Silvermoon. - I gave: 20000g 00s 00c",
-				["timestamp"] = 1708215900,
-			}, -- [3]
-			{
-				["fromPlayer"] = false,
-				["content"] = "Completed trade with Qpfromage-Silvermoon. - I gave: 30000g 00s 00c",
-				["timestamp"] = 1708216020,
-			}, -- [4]
-		},
-		["totalOrders"] = 0,
-		["customer"] = "Qpfromage",
-		["v"] = 2,
-		["craftHistory"] = {
-		},
-		["provisionSome"] = 0,
-		["provisionNone"] = 0,
-		["totalTip"] = 0,
-		["provisionAll"] = 0,
-		["realm"] = "Sylvanas",
-	},
 }
 CraftSimCustomerHistory = {
 	["profileKeys"] = {
 		["Qpfromage - Ragnaros"] = "Default",
-		["Djagon - Ragnaros"] = "Default",
 		["Dogson - Ragnaros"] = "Default",
+		["Djagon - Ragnaros"] = "Default",
 	},
 	["realm"] = {
 		["Ragnaros"] = {
@@ -177,60 +143,60 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686222646660,
 					}, -- [1]
 					{
-						["from"] = "We need to talk me and you, i wrote to you on discord today",
 						["timestamp"] = 1686222661595,
+						["from"] = "We need to talk me and you, i wrote to you on discord today",
 					}, -- [2]
 					{
 						["to"] = "Yes but not right now, ",
 						["timestamp"] = 1686222685321,
 					}, -- [3]
 					{
-						["from"] = "No right now i am working",
 						["timestamp"] = 1686222690528,
+						["from"] = "No right now i am working",
 					}, -- [4]
 					{
-						["from"] = "Let me fix disco",
 						["timestamp"] = 1686222704794,
+						["from"] = "Let me fix disco",
 					}, -- [5]
 					{
 						["to"] = "please just make sure trials at least cant see application and recruitment, people might just fake trial to poach your applications",
 						["timestamp"] = 1686222717208,
 					}, -- [6]
 					{
-						["from"] = "Removed trials from applicaiton",
 						["timestamp"] = 1686222746941,
+						["from"] = "Removed trials from applicaiton",
 					}, -- [7]
 					{
 						["to"] = "++",
 						["timestamp"] = 1686222752801,
 					}, -- [8]
 					{
-						["from"] = "removed from recruiting",
 						["timestamp"] = 1686222761175,
+						["from"] = "removed from recruiting",
 					}, -- [9]
 					{
-						["from"] = "try to check",
 						["timestamp"] = 1686222762569,
+						["from"] = "try to check",
 					}, -- [10]
 					{
-						["from"] = "if its done",
 						["timestamp"] = 1686222764076,
+						["from"] = "if its done",
 					}, -- [11]
 					{
-						["from"] = "please",
 						["timestamp"] = 1686222766573,
+						["from"] = "please",
 					}, -- [12]
 					{
-						["from"] = "I am going back to work, I think i fixed discord as you said sort of",
 						["timestamp"] = 1686222840602,
+						["from"] = "I am going back to work, I think i fixed discord as you said sort of",
 					}, -- [13]
 					{
 						["to"] = "one ",
 						["timestamp"] = 1686222846830,
 					}, -- [14]
 					{
-						["from"] = "Officer rank is done in the guild",
 						["timestamp"] = 1686222847505,
+						["from"] = "Officer rank is done in the guild",
 					}, -- [15]
 					{
 						["to"] = "sec",
@@ -245,40 +211,40 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686222876596,
 					}, -- [18]
 					{
-						["from"] = "I want to have a chat with Scar about removing Mythic raider ingame",
 						["timestamp"] = 1686222891579,
+						["from"] = "I want to have a chat with Scar about removing Mythic raider ingame",
 					}, -- [19]
 					{
 						["to"] = "ah ok, ",
 						["timestamp"] = 1686222910081,
 					}, -- [20]
 					{
-						["from"] = "Because honestly i would like to change the loot system aswell",
 						["timestamp"] = 1686222910483,
+						["from"] = "Because honestly i would like to change the loot system aswell",
 					}, -- [21]
 					{
-						["from"] = "Meritocrazy=attendace > rest",
 						["timestamp"] = 1686222920007,
+						["from"] = "Meritocrazy=attendace > rest",
 					}, -- [22]
 					{
-						["from"] = "You play good, you loot",
 						["timestamp"] = 1686222925210,
+						["from"] = "You play good, you loot",
 					}, -- [23]
 					{
 						["to"] = "holylok for example is raider ingame, but has access to all channels for mythic progression in disc",
 						["timestamp"] = 1686222932826,
 					}, -- [24]
 					{
-						["from"] = "you play bad, you do not loot or you loot late",
 						["timestamp"] = 1686222933630,
+						["from"] = "you play bad, you do not loot or you loot late",
 					}, -- [25]
 					{
-						["from"] = "Yea thats the issue",
 						["timestamp"] = 1686222944541,
+						["from"] = "Yea thats the issue",
 					}, -- [26]
 					{
-						["from"] = "Let me talk with Scar about it because we are overcomplicating everything",
 						["timestamp"] = 1686222959659,
+						["from"] = "Let me talk with Scar about it because we are overcomplicating everything",
 					}, -- [27]
 					{
 						["to"] = "maybe just make aa mythic raider disc roll and give that one to your core",
@@ -293,96 +259,96 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686223038807,
 					}, -- [30]
 					{
-						["from"] = "We need to change a lot of stuff in the guild and to be frankly rebuild with Officers",
 						["timestamp"] = 1686223077201,
+						["from"] = "We need to change a lot of stuff in the guild and to be frankly rebuild with Officers",
 					}, -- [31]
 					{
 						["to"] = "if someone has exceptional parses on public logs, they get headhunted",
 						["timestamp"] = 1686223079000,
 					}, -- [32]
 					{
-						["from"] = "also 3 raid days for 2 hours pointless",
 						["timestamp"] = 1686223117006,
+						["from"] = "also 3 raid days for 2 hours pointless",
 					}, -- [33]
 					{
-						["from"] = "better 2 days for 3 hours",
 						["timestamp"] = 1686223121299,
+						["from"] = "better 2 days for 3 hours",
 					}, -- [34]
 					{
 						["to"] = "agreed",
 						["timestamp"] = 1686223129711,
 					}, -- [35]
 					{
-						["from"] = "WCL should be locked down but people disagree with it",
 						["timestamp"] = 1686223135670,
+						["from"] = "WCL should be locked down but people disagree with it",
 					}, -- [36]
 					{
 						["to"] = "thats what i have said whole expansion",
 						["timestamp"] = 1686223136176,
 					}, -- [37]
 					{
-						["from"] = "In my ex guild WCL was locked down",
 						["timestamp"] = 1686223139791,
+						["from"] = "In my ex guild WCL was locked down",
 					}, -- [38]
 					{
-						["from"] = "ergo nobody can see your parse or rank",
 						["timestamp"] = 1686223147811,
+						["from"] = "ergo nobody can see your parse or rank",
 					}, -- [39]
 					{
 						["to"] = "parse is still visable on your character page, just no on leaderboard",
 						["timestamp"] = 1686223168312,
 					}, -- [40]
 					{
-						["from"] = "yea we will do big changes and restart again",
 						["timestamp"] = 1686223403989,
+						["from"] = "yea we will do big changes and restart again",
 					}, -- [41]
 					{
-						["from"] = "anyway like this doesn't work. I know you've spoken to scar abit",
 						["timestamp"] = 1686223413463,
+						["from"] = "anyway like this doesn't work. I know you've spoken to scar abit",
 					}, -- [42]
 					{
-						["from"] = "some stuff can be changed in better overall",
 						["timestamp"] = 1686223428288,
+						["from"] = "some stuff can be changed in better overall",
 					}, -- [43]
 					{
 						["to"] = "Yeah idk what to do atm, i kinda feel that i want to raid mythic and i want to progress, season 1 was my warmup",
 						["timestamp"] = 1686223468019,
 					}, -- [44]
 					{
-						["from"] = "That's up to you",
 						["timestamp"] = 1686223488193,
+						["from"] = "That's up to you",
 					}, -- [45]
 					{
-						["from"] = "I don't think we can offer Mythic currently but for sure changes will be done including officers",
 						["timestamp"] = 1686223506292,
+						["from"] = "I don't think we can offer Mythic currently but for sure changes will be done including officers",
 					}, -- [46]
 					{
-						["from"] = "but yea right now i prefer to put mythic aside probably until actually stuff is sorted",
 						["timestamp"] = 1686223525108,
+						["from"] = "but yea right now i prefer to put mythic aside probably until actually stuff is sorted",
 					}, -- [47]
 					{
 						["to"] = "the time to blow up and reach next level is slipping away, thats all",
 						["timestamp"] = 1686223537711,
 					}, -- [48]
 					{
-						["from"] = "it's already gone that tim",
 						["timestamp"] = 1686223548348,
+						["from"] = "it's already gone that tim",
 					}, -- [49]
 					{
-						["from"] = "time*",
 						["timestamp"] = 1686223550928,
+						["from"] = "time*",
 					}, -- [50]
 					{
-						["from"] = "Going back to work, think about it",
 						["timestamp"] = 1686223562210,
+						["from"] = "Going back to work, think about it",
 					}, -- [51]
 					{
-						["from"] = "if then you decide to stick around, we will have a chat",
 						["timestamp"] = 1686223574000,
+						["from"] = "if then you decide to stick around, we will have a chat",
 					}, -- [52]
 					{
-						["from"] = "see you later on",
 						["timestamp"] = 1686223587575,
+						["from"] = "see you later on",
 					}, -- [53]
 					{
 						["to"] = "ok",
@@ -401,8 +367,8 @@ CraftSimCustomerHistory = {
 			["Kaybu-Blackrock"] = {
 				["history"] = {
 					{
-						["from"] = "wich spec ?",
 						["timestamp"] = 1686047531263,
+						["from"] = "wich spec ?",
 					}, -- [1]
 					{
 						["to"] = "arcane",
@@ -413,8 +379,8 @@ CraftSimCustomerHistory = {
 			["Nindz-Ragnaros"] = {
 				["history"] = {
 					{
-						["timestamp"] = 1686302889024,
 						["from"] = "hey man, r u looing for a guild? :D",
+						["timestamp"] = 1686302889024,
 					}, -- [1]
 				},
 			},
@@ -425,28 +391,28 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1685858933845,
 					}, -- [1]
 					{
-						["from"] = "nah",
 						["timestamp"] = 1685859013515,
+						["from"] = "nah",
 					}, -- [2]
 					{
 						["to"] = "its unhinged af",
 						["timestamp"] = 1685859025690,
 					}, -- [3]
 					{
-						["from"] = "getting my 20s",
 						["timestamp"] = 1685859062513,
+						["from"] = "getting my 20s",
 					}, -- [4]
 					{
-						["from"] = "for portals",
 						["timestamp"] = 1685859064523,
+						["from"] = "for portals",
 					}, -- [5]
 					{
-						["from"] = "and im outta here",
 						["timestamp"] = 1685859067750,
+						["from"] = "and im outta here",
 					}, -- [6]
 					{
-						["from"] = "till 10.2",
 						["timestamp"] = 1685859068149,
+						["from"] = "till 10.2",
 					}, -- [7]
 					{
 						["to"] = "10.1.5 mage rework",
@@ -465,16 +431,16 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1685859152698,
 					}, -- [11]
 					{
-						["from"] = "dunno",
 						["timestamp"] = 1685860149914,
+						["from"] = "dunno",
 					}, -- [12]
 					{
-						["from"] = "not very impressed by the current forst changes",
 						["timestamp"] = 1685860156312,
+						["from"] = "not very impressed by the current forst changes",
 					}, -- [13]
 					{
-						["from"] = "we still do negative aoe dmg",
 						["timestamp"] = 1685860160559,
+						["from"] = "we still do negative aoe dmg",
 					}, -- [14]
 					{
 						["to"] = "they havent really dont much yet in ptr",
@@ -517,20 +483,20 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686043656474,
 					}, -- [3]
 					{
-						["from"] = "sure ",
 						["timestamp"] = 1686043662185,
+						["from"] = "sure ",
 					}, -- [4]
 					{
-						["from"] = "what do you need me to do ?",
 						["timestamp"] = 1686043675354,
+						["from"] = "what do you need me to do ?",
 					}, -- [5]
 					{
 						["to"] = "just kill the mob when i drain it",
 						["timestamp"] = 1686043684906,
 					}, -- [6]
 					{
-						["from"] = "ok ",
 						["timestamp"] = 1686043690632,
+						["from"] = "ok ",
 					}, -- [7]
 					{
 						["to"] = "|cffffff00|Hworldmap:1978:6484:6901|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r",
@@ -545,32 +511,32 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686043985268,
 					}, -- [10]
 					{
-						["from"] = "did you do it ",
 						["timestamp"] = 1686043995409,
+						["from"] = "did you do it ",
 					}, -- [11]
 					{
-						["from"] = "now we wait ",
 						["timestamp"] = 1686044035623,
+						["from"] = "now we wait ",
 					}, -- [12]
 					{
-						["from"] = "or we dont ?",
 						["timestamp"] = 1686044039265,
+						["from"] = "or we dont ?",
 					}, -- [13]
 					{
 						["to"] = "go portal",
 						["timestamp"] = 1686044188708,
 					}, -- [14]
 					{
-						["from"] = "ok ",
 						["timestamp"] = 1686044268747,
+						["from"] = "ok ",
 					}, -- [15]
 					{
 						["to"] = "get on",
 						["timestamp"] = 1686044273608,
 					}, -- [16]
 					{
-						["from"] = "i am with you ^^ ",
 						["timestamp"] = 1686044280622,
+						["from"] = "i am with you ^^ ",
 					}, -- [17]
 					{
 						["to"] = "gogo",
@@ -581,8 +547,8 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686044815524,
 					}, -- [19]
 					{
-						["timestamp"] = 1686044828567,
 						["from"] = "what happened ?",
+						["timestamp"] = 1686044828567,
 					}, -- [20]
 					{
 						["to"] = "they collapsed a dam",
@@ -593,28 +559,28 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686044852574,
 					}, -- [22]
 					{
-						["timestamp"] = 1686044922515,
 						["from"] = "fuck thats messed up ",
+						["timestamp"] = 1686044922515,
 					}, -- [23]
 					{
-						["timestamp"] = 1686045318427,
 						["from"] = "i will see you later bro ",
+						["timestamp"] = 1686045318427,
 					}, -- [24]
 					{
 						["to"] = "cya",
 						["timestamp"] = 1686045324600,
 					}, -- [25]
 					{
-						["timestamp"] = 1686045326514,
 						["from"] = "do take care ^^ ",
+						["timestamp"] = 1686045326514,
 					}, -- [26]
 				},
 			},
 			["Еллизаздрра-Гордунни"] = {
 				["history"] = {
 					{
-						["from"] = "Please take the remove curses talent and help the healer dispel Afix souls",
 						["timestamp"] = 1685857810428,
+						["from"] = "Please take the remove curses talent and help the healer dispel Afix souls",
 					}, -- [1]
 					{
 						["to"] = "+",
@@ -625,12 +591,12 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1685858068243,
 					}, -- [3]
 					{
-						["from"] = "autokeylink_wa: I am busy in a mythic plus",
 						["timestamp"] = 1685858068546,
+						["from"] = "autokeylink_wa: I am busy in a mythic plus",
 					}, -- [4]
 					{
-						["from"] = "autokeylink_weakaura: My mythic plus is done",
 						["timestamp"] = 1685858821159,
+						["from"] = "autokeylink_weakaura: My mythic plus is done",
 					}, -- [5]
 				},
 			},
@@ -645,44 +611,44 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686719813553,
 					}, -- [2]
 					{
-						["from"] = "|cffa335ee|Hitem:206180::::::::70:263::35:7:9382:6652:9415:8784:9144:1669:8767::::::|h[Choker of Stolen Thunder]|h|r on this",
 						["timestamp"] = 1686719884110,
+						["from"] = "|cffa335ee|Hitem:206180::::::::70:263::35:7:9382:6652:9415:8784:9144:1669:8767::::::|h[Choker of Stolen Thunder]|h|r on this",
 					}, -- [3]
 					{
-						["from"] = "anvil on codhead",
 						["timestamp"] = 1686719889142,
+						["from"] = "anvil on codhead",
 					}, -- [4]
 					{
-						["from"] = "447 bellt on DH",
 						["timestamp"] = 1686719894995,
+						["from"] = "447 bellt on DH",
 					}, -- [5]
 					{
-						["from"] = "|cffa335ee|Hitem:202469:6490:::::::70:263::35:4:6652:9382:9228:1504::::::|h[Braies of the Cinderwolf]|h|r just catalyst",
 						["timestamp"] = 1686719908708,
+						["from"] = "|cffa335ee|Hitem:202469:6490:::::::70:263::35:4:6652:9382:9228:1504::::::|h[Braies of the Cinderwolf]|h|r just catalyst",
 					}, -- [6]
 					{
 						["to"] = "fair",
 						["timestamp"] = 1686720418785,
 					}, -- [7]
 					{
-						["from"] = "doing weekly on dh in a mo",
 						["timestamp"] = 1686720543630,
+						["from"] = "doing weekly on dh in a mo",
 					}, -- [8]
 					{
-						["from"] = "wanna come?",
 						["timestamp"] = 1686720550436,
+						["from"] = "wanna come?",
 					}, -- [9]
 					{
-						["from"] = "5 TW",
 						["timestamp"] = 1686720562362,
+						["from"] = "5 TW",
 					}, -- [10]
 					{
 						["to"] = "nah im prospecting",
 						["timestamp"] = 1686720563838,
 					}, -- [11]
 					{
-						["from"] = "k nps",
 						["timestamp"] = 1686720568337,
+						["from"] = "k nps",
 					}, -- [12]
 					{
 						["to"] = "gem prices are off the fucking hinges atm",
@@ -701,8 +667,8 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686060965975,
 					}, -- [1]
 					{
-						["timestamp"] = 1686060970231,
 						["from"] = "yes",
+						["timestamp"] = 1686060970231,
 					}, -- [2]
 					{
 						["to"] = "what do you have written under TSM in craftsim?",
@@ -717,8 +683,8 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686061008545,
 					}, -- [5]
 					{
-						["timestamp"] = 1686061020170,
 						["from"] = "lemme check",
+						["timestamp"] = 1686061020170,
 					}, -- [6]
 					{
 						["to"] = "OOH",
@@ -733,12 +699,12 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686061058276,
 					}, -- [9]
 					{
-						["timestamp"] = 1686061064216,
 						["from"] = "if you have desktop app",
+						["timestamp"] = 1686061064216,
 					}, -- [10]
 					{
-						["timestamp"] = 1686061068601,
 						["from"] = "then yea",
+						["timestamp"] = 1686061068601,
 					}, -- [11]
 					{
 						["to"] = "yes yes i have",
@@ -753,8 +719,8 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686061240522,
 					}, -- [14]
 					{
-						["from"] = "yes look into craft results",
 						["timestamp"] = 1686061257110,
+						["from"] = "yes look into craft results",
 					}, -- [15]
 					{
 						["to"] = "first prospect is always a diamond r3 xD",
@@ -765,48 +731,48 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686061302434,
 					}, -- [17]
 					{
-						["from"] = "xD",
 						["timestamp"] = 1686061304118,
+						["from"] = "xD",
 					}, -- [18]
 					{
 						["to"] = "it jumps to 200g profit insatnt",
 						["timestamp"] = 1686061309650,
 					}, -- [19]
 					{
-						["from"] = "also use phial of quick hands",
 						["timestamp"] = 1686061327440,
+						["from"] = "also use phial of quick hands",
 					}, -- [20]
 					{
 						["to"] = "do i reset?",
 						["timestamp"] = 1686061337935,
 					}, -- [21]
 					{
-						["from"] = "if u want yeah",
 						["timestamp"] = 1686061350629,
+						["from"] = "if u want yeah",
 					}, -- [22]
 					{
 						["to"] = "im getting profit but its very +-0",
 						["timestamp"] = 1686061450141,
 					}, -- [23]
 					{
-						["from"] = "then the market is shit",
 						["timestamp"] = 1686061460854,
+						["from"] = "then the market is shit",
 					}, -- [24]
 					{
 						["to"] = "yeah ore is 2g each",
 						["timestamp"] = 1686061472518,
 					}, -- [25]
 					{
-						["from"] = "oh yeah",
 						["timestamp"] = 1686061476502,
+						["from"] = "oh yeah",
 					}, -- [26]
 					{
-						["from"] = "then defo its not worth it",
 						["timestamp"] = 1686061482852,
+						["from"] = "then defo its not worth it",
 					}, -- [27]
 					{
-						["from"] = "are u using 2 star?",
 						["timestamp"] = 1686061487350,
+						["from"] = "are u using 2 star?",
 					}, -- [28]
 					{
 						["to"] = "no 3",
@@ -817,8 +783,8 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686061496920,
 					}, -- [30]
 					{
-						["from"] = "use 2 star",
 						["timestamp"] = 1686061497142,
+						["from"] = "use 2 star",
 					}, -- [31]
 					{
 						["to"] = "ill try",
@@ -833,20 +799,20 @@ CraftSimCustomerHistory = {
 						["timestamp"] = 1686061631189,
 					}, -- [34]
 					{
-						["from"] = "this is why i buy so much",
 						["timestamp"] = 1686061651566,
+						["from"] = "this is why i buy so much",
 					}, -- [35]
 					{
-						["from"] = "it takes time",
 						["timestamp"] = 1686061654696,
+						["from"] = "it takes time",
 					}, -- [36]
 					{
 						["to"] = "if i use r3 ore, i have 100% chance of r3 gems",
 						["timestamp"] = 1686061669075,
 					}, -- [37]
 					{
-						["from"] = "they dont go that much more expensive",
 						["timestamp"] = 1686061688216,
+						["from"] = "they dont go that much more expensive",
 					}, -- [38]
 					{
 						["to"] = "okay lets try 1k r2 ",
@@ -861,28 +827,28 @@ CraftSimCustomerHistory = {
 			["Fyshzel-Ragnaros"] = {
 				["history"] = {
 					{
-						["from"] = "wtf",
 						["timestamp"] = 1686250056765,
+						["from"] = "wtf",
 					}, -- [1]
 					{
-						["from"] = "sorry not for u xd",
 						["timestamp"] = 1686250062621,
+						["from"] = "sorry not for u xd",
 					}, -- [2]
 					{
 						["to"] = "okiii",
 						["timestamp"] = 1686250077575,
 					}, -- [3]
 					{
-						["from"] = "ty",
 						["timestamp"] = 1686250161817,
+						["from"] = "ty",
 					}, -- [4]
 					{
-						["from"] = "again xd",
 						["timestamp"] = 1686250165499,
+						["from"] = "again xd",
 					}, -- [5]
 					{
-						["from"] = "i'm so dumb xd",
 						["timestamp"] = 1686250168464,
+						["from"] = "i'm so dumb xd",
 					}, -- [6]
 				},
 			},
@@ -904,14 +870,14 @@ CraftSimRecipeDataCache = {
 	},
 	["specializationDataCache"] = {
 	},
-	["professionInfoCache"] = {
+	["cacheVersions"] = {
+		["cooldownCache"] = 1,
 	},
 	["postLoadedMulticraftInformationProfessions"] = {
 	},
 	["cooldownCache"] = {
 	},
-	["cacheVersions"] = {
-		["cooldownCache"] = 1,
+	["professionInfoCache"] = {
 	},
 }
 CraftSimCraftQueueCache = {

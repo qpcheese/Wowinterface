@@ -61,7 +61,7 @@ local function CreateTabs(frame, args)
 	local sw, sh = frame:GetSize()
 	for i = 1, frame.numTabs do
 		local template = "CharacterFrameTabButtonTemplate"
-		if MoveAny:GetWoWBuild() == "RETAIL" then
+		if D4:GetWoWBuild() == "RETAIL" then
 			template = "PanelTabButtonTemplate"
 		end
 
@@ -279,7 +279,7 @@ function MoveAny:MenuOptions(opt, frame)
 					MoveAny:SetEleOption(name, "Hide", checked)
 					local maframe1 = _G["MA" .. name]
 					local maframe2 = _G[string.gsub(name, "MA", "")]
-					local dragf = _G[name .. "_DRAG"]
+					local dragf = _G[name .. "_MA_DRAG"]
 					if checked then
 						frame.oldparent = frame.oldparent or frame:GetParent()
 						frame:SetParent(MAHIDDEN)
@@ -332,7 +332,7 @@ function MoveAny:MenuOptions(opt, frame)
 				function()
 					local checked = clickthrough:GetChecked()
 					MoveAny:SetEleOption(name, "ClickThrough", checked)
-					local dragf = _G[name .. "_DRAG"]
+					local dragf = _G[name .. "_MA_DRAG"]
 					if checked then
 						dragf.t:SetVertexColor(MoveAny:GetColor("clickthrough"))
 						if frame then
@@ -526,7 +526,7 @@ function MoveAny:MenuOptions(opt, frame)
 		elseif string.find(content.name, MoveAny:GT("LID_BUFFS")) then
 			--MoveAny:CreateSlider(parent, x, y, name, key, value, steps, vmin, vmax, func)
 			local y = -20
-			if MoveAny:GetWoWBuild() ~= "RETAIL" then
+			if D4:GetWoWBuild() ~= "RETAIL" then
 				MoveAny:CreateSlider(
 					content,
 					10,
@@ -607,7 +607,7 @@ function MoveAny:MenuOptions(opt, frame)
 		elseif string.find(content.name, MoveAny:GT("LID_DEBUFFS")) then
 			--MoveAny:CreateSlider(parent, x, y, name, key, value, steps, vmin, vmax, func)
 			local y = -20
-			if MoveAny:GetWoWBuild() ~= "RETAIL" then
+			if D4:GetWoWBuild() ~= "RETAIL" then
 				MoveAny:CreateSlider(
 					content,
 					10,
@@ -706,7 +706,9 @@ function MoveAny:GetFrame(ele, name)
 		end
 	end
 
-	return ele
+	if ele and ele.GetName then return ele end
+
+	return nil
 end
 
 local ses = {}
@@ -789,7 +791,7 @@ function MoveAny:RegisterWidget(tab)
 	local enabled1, forced1 = MoveAny:IsInEditModeEnabled(name)
 	local enabled2, forced2 = MoveAny:IsInEditModeEnabled(lstr)
 	if enabled1 or enabled2 then
-		if not MoveAny:IsEnabled("EDITMODE", MoveAny:GetWoWBuildNr() < 100000) then
+		if not MoveAny:IsEnabled("EDITMODE", D4:GetWoWBuildNr() < 100000) then
 			MoveAny:MSG("YOU NEED EDITMODE IN MOVEANY ENABLED")
 
 			return
@@ -808,7 +810,7 @@ function MoveAny:RegisterWidget(tab)
 			enabled1, forced1 = MoveAny:IsInEditModeEnabled(name)
 			enabled2, forced2 = MoveAny:IsInEditModeEnabled(lstr)
 			if enabled1 or enabled2 then
-				if not MoveAny:IsEnabled("EDITMODE", MoveAny:GetWoWBuildNr() < 100000) then
+				if not MoveAny:IsEnabled("EDITMODE", D4:GetWoWBuildNr() < 100000) then
 					MoveAny:MSG("YOU NEED EDITMODE IN MOVEANY ENABLED")
 
 					return
@@ -832,9 +834,9 @@ function MoveAny:RegisterWidget(tab)
 		MoveAny:AddFrameName(frame, name)
 	end
 
-	if _G[name .. "_DRAG"] == nil then
-		_G[name .. "_DRAG"] = CreateFrame("FRAME", name .. "_DRAG", MoveAny:GetMainPanel())
-		local dragframe = _G[name .. "_DRAG"]
+	if _G[name .. "_MA_DRAG"] == nil then
+		_G[name .. "_MA_DRAG"] = CreateFrame("FRAME", name .. "_MA_DRAG", MoveAny:GetMainPanel())
+		local dragframe = _G[name .. "_MA_DRAG"]
 		dragframe:SetClampedToScreen(true)
 		dragframe:SetFrameStrata("MEDIUM")
 		dragframe:SetFrameLevel(99)
@@ -847,9 +849,9 @@ function MoveAny:RegisterWidget(tab)
 		end
 
 		dragframe:ClearAllPoints()
-		dragframe:SetPoint("CENTER", frame, "CENTER", 0, 0)
+		dragframe:SetPoint("CENTER", frame or UIParent, "CENTER", 0, 0)
 		dragframe:SetToplevel(true)
-		dragframe.t = dragframe:CreateTexture(name .. "_DRAG.t", "BACKGROUND", nil, 1)
+		dragframe.t = dragframe:CreateTexture(name .. "_MA_DRAG.t", "BACKGROUND", nil, 1)
 		dragframe.t:SetAllPoints(dragframe)
 		if dragframe.t.SetColorTexture then
 			dragframe.t:SetColorTexture(1, 1, 1, 1)
@@ -1012,7 +1014,7 @@ function MoveAny:RegisterWidget(tab)
 					if sel.scri then return end
 					sel.scri = true
 					sel:SetClampRectInsets(l, r, t, b)
-					local df = _G[name .. "_DRAG"]
+					local df = _G[name .. "_MA_DRAG"]
 					if df then
 						df:SetClampRectInsets(l, r, t, b)
 					end
@@ -1053,7 +1055,7 @@ function MoveAny:RegisterWidget(tab)
 
 	local maframe1 = _G["MA" .. name]
 	local maframe2 = _G[string.gsub(name, "MA", "")]
-	local dragf = _G[name .. "_DRAG"]
+	local dragf = _G[name .. "_MA_DRAG"]
 	if MoveAny:GetEleOption(name, "Hide", false, "Hide2") then
 		frame.oldparent = frame.oldparent or frame:GetParent()
 		hooksecurefunc(
@@ -1334,7 +1336,7 @@ function MoveAny:RegisterWidget(tab)
 				sel:SetScale(newScale)
 			end
 
-			local dragframe = _G[name .. "_DRAG"]
+			local dragframe = _G[name .. "_MA_DRAG"]
 			if dragframe then
 				dragframe:SetScale(newScale)
 			end
@@ -1352,7 +1354,7 @@ function MoveAny:RegisterWidget(tab)
 		"SetSize",
 		function(sel, w, h)
 			local isToSmall = false
-			local df = _G[name .. "_DRAG"]
+			local df = _G[name .. "_MA_DRAG"]
 			df:SetSize(w, h)
 			if w < sw then
 				w = sw
@@ -1375,7 +1377,7 @@ function MoveAny:RegisterWidget(tab)
 		frame:SetSize(sw, sh)
 	end
 
-	local dragframe = _G[name .. "_DRAG"]
+	local dragframe = _G[name .. "_MA_DRAG"]
 	dragframe:SetSize(sw, sh)
 	dragframe:ClearAllPoints()
 	dragframe:SetPoint("CENTER", frame, "CENTER", posx, posy)
@@ -1455,18 +1457,21 @@ function MoveAny:CheckAlphas()
 
 	local ele = GetMouseFocus()
 	if ele and ele ~= CompactRaidFrameManager then
-		if tContains(MoveAny:GetAlphaFrames(), ele) then
-			ele:SetAlpha(1)
-			MoveAny:SetMouseEleAlpha(ele)
-		elseif ele.GetMAEle then
-			ele = ele:GetMAEle()
-			if ele then
+		local dufloaded = IsAddOnLoaded("DUnitFrames")
+		if not dufloaded or (dufloaded and ele ~= PlayerFrame and ele ~= TargetFrame and ele.GetMAEle and ele:GetMAEle() and ele:GetMAEle() ~= PlayerFrame and ele:GetMAEle() ~= TargetFrame) then
+			if tContains(MoveAny:GetAlphaFrames(), ele) then
 				ele:SetAlpha(1)
 				MoveAny:SetMouseEleAlpha(ele)
+			elseif ele.GetMAEle then
+				ele = ele:GetMAEle()
+				if ele then
+					ele:SetAlpha(1)
+					MoveAny:SetMouseEleAlpha(ele)
+				end
+			elseif lastEle then
+				lastEle = nil
+				MoveAny:UpdateAlphas()
 			end
-		elseif lastEle then
-			lastEle = nil
-			MoveAny:UpdateAlphas()
 		end
 	elseif lastEle then
 		lastEle = nil
@@ -1477,6 +1482,7 @@ function MoveAny:CheckAlphas()
 end
 
 function MoveAny:UpdateAlpha(ele, mouseEle)
+	local dufloaded = IsAddOnLoaded("DUnitFrames")
 	if ele == nil then
 		MoveAny:MSG("UpdateAlphas: ele is nil")
 	else
@@ -1490,24 +1496,26 @@ function MoveAny:UpdateAlpha(ele, mouseEle)
 			local alphaIsStealthed = MoveAny:GetEleOption(name, "ALPHAISSTEALTHED", 1, "Alpha6")
 			local alphaIsInPetBattle = MoveAny:GetEleOption(name, "ALPHAISINPETBATTLE", 1, "Alpha7")
 			local alphaNotInCombat = MoveAny:GetEleOption(name, "ALPHANOTINCOMBAT", 1, "Alpha8")
-			if MoveAny.IsInPetBattle and MoveAny:IsInPetBattle() then
-				MoveAny:SetEleAlpha(ele, alphaIsInPetBattle)
-			elseif ele == mouseEle then
-				MoveAny:SetEleAlpha(ele, 1)
-			elseif incombat then
-				MoveAny:SetEleAlpha(ele, alphaInCombat)
-			elseif MoveAny:GetEleOption(name, "FULLHPENABLED", false, "fullhp2") and UnitHealth("player") >= UnitHealthMax("player") then
-				MoveAny:SetEleAlpha(ele, alphaIsFullHealth)
-			elseif UnitInVehicle and invehicle then
-				MoveAny:SetEleAlpha(ele, alphaInVehicle)
-			elseif IsMounted and ismounted then
-				MoveAny:SetEleAlpha(ele, alphaIsMounted)
-			elseif IsResting and isresting then
-				MoveAny:SetEleAlpha(ele, alphaInRestedArea)
-			elseif IsStealthed and isstealthed then
-				MoveAny:SetEleAlpha(ele, alphaIsStealthed)
-			elseif not incombat then
-				MoveAny:SetEleAlpha(ele, alphaNotInCombat)
+			if not dufloaded or (dufloaded and ele ~= PlayerFrame and ele ~= TargetFrame) then
+				if MoveAny.IsInPetBattle and MoveAny:IsInPetBattle() then
+					MoveAny:SetEleAlpha(ele, alphaIsInPetBattle)
+				elseif ele == mouseEle then
+					MoveAny:SetEleAlpha(ele, 1)
+				elseif incombat then
+					MoveAny:SetEleAlpha(ele, alphaInCombat)
+				elseif MoveAny:GetEleOption(name, "FULLHPENABLED", false, "fullhp2") and UnitHealth("player") >= UnitHealthMax("player") then
+					MoveAny:SetEleAlpha(ele, alphaIsFullHealth)
+				elseif UnitInVehicle and invehicle then
+					MoveAny:SetEleAlpha(ele, alphaInVehicle)
+				elseif IsMounted and ismounted then
+					MoveAny:SetEleAlpha(ele, alphaIsMounted)
+				elseif IsResting and isresting then
+					MoveAny:SetEleAlpha(ele, alphaInRestedArea)
+				elseif IsStealthed and isstealthed then
+					MoveAny:SetEleAlpha(ele, alphaIsStealthed)
+				elseif not incombat then
+					MoveAny:SetEleAlpha(ele, alphaNotInCombat)
+				end
 			end
 		end
 	end
@@ -1520,7 +1528,7 @@ function MoveAny:UpdateAlphas(mouseEle)
 end
 
 function MoveAny:AnyActionbarEnabled()
-	if MoveAny:GetWoWBuild() ~= "RETAIL" then
+	if D4:GetWoWBuild() ~= "RETAIL" then
 		return MoveAny:IsEnabled("ACTIONBARS", false) or MoveAny:IsEnabled("ACTIONBAR3", false) or MoveAny:IsEnabled("ACTIONBAR4", false) or MoveAny:IsEnabled("ACTIONBAR7", false) or MoveAny:IsEnabled("ACTIONBAR8", false) or MoveAny:IsEnabled("ACTIONBAR9", false) or MoveAny:IsEnabled("ACTIONBAR10", false)
 	else
 		return false

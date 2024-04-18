@@ -374,6 +374,47 @@ function hbc_unit:SetPowerTextToCustomColor(color)
   end
 end
 
+--[[
+  Alternate Power Text
+  This currently only affects the PlayerFrame
+  ]]
+
+function hbc_unit:SetAlternatePowerTextFont(font, fontSize, outlinemode)
+  for _, text in pairs(
+    {
+      self.alternatePowerBarTextLeft,
+      self.alternatePowerBarTextMiddle,
+      self.alternatePowerBarTextRight
+    }
+  ) do
+    text:SetFont(font, fontSize, outlinemode)
+  end
+end
+
+function hbc_unit:SetAlternatePowerTextToAlternatePowerColor()
+  for _, text in pairs(
+    {
+      self.alternatePowerBarTextLeft,
+      self.alternatePowerBarTextMiddle,
+      self.alternatePowerBarTextRight
+    }
+  ) do
+    text:SetTextColor(self.alternatePowerColor.r, self.alternatePowerColor.g, self.alternatePowerColor.b, self.alternatePowerColor.a)
+  end
+end
+
+function hbc_unit:SetAlternatePowerTextToCustomColor(color)
+  for _, text in pairs(
+    {
+      self.alternatePowerBarTextLeft,
+      self.alternatePowerBarTextMiddle,
+      self.alternatePowerBarTextRight
+    }
+  ) do
+    text:SetTextColor(color.r, color.g, color.b, color.a)
+  end
+end
+
 --Glow
 function hbc_unit:SetGlowToClassColor()
   self.glowTexture:SetVertexColor(self.classColor.r, self.classColor.g, self.classColor.b, self.classColor.a)

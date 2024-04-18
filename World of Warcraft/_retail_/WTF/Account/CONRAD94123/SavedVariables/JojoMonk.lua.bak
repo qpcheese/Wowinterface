@@ -4,7 +4,7 @@ JojoMonk_Config = {
 	["ActiveQuoteSFX"] = false,
 	["ActiveSFX"] = true,
 	["ActiveDeadEliteSFX"] = true,
-	["ActiveCharacter"] = "Dio Brando (WW)",
-	["lang"] = "English",
 	["QuoteFrequencyTime"] = 336,
+	["lang"] = "English",
+	["ActiveCharacter"] = "Dio Brando (WW)",
 }

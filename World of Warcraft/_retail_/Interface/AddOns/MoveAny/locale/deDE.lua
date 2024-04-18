@@ -35,12 +35,12 @@ function MoveAny:LangdeDE()
 		["LID_TARGETOFFOCUSFRAME"] = "Ziel des Fokusfenster",
 		["LID_RUNEFRAME"] = "Todesritter - Runen Fenster",
 		["LID_TOTEMFRAME"] = "Totem Zähler (Auch von anderen Klassen benutzt)",
-		["LID_WARLOCKPOWERFRAME"] = "Hexenmeister Macht Fenster",
+		["LID_WARLOCKPOWERFRAME"] = "Hexenmeister Macht Fenster (Splitter)",
 		["LID_MONKHARMONYBARFRAME"] = "Mönch Harmonie Fenster (Chi)",
 		["LID_MONKSTAGGERBAR"] = "Monk Staffeln Leiste  (Chi)",
 		["LID_MAGEARCANECHARGESFRAME"] = "Magier Arkane Ladungen Fenster",
 		["LID_ESSENCEPLAYERFRAME"] = "Essenz Spieler Fenster (Rufer)",
-		["LID_PALADINPOWERBARFRAME"] = "Paladin Machtleiste",
+		["LID_PALADINPOWERBARFRAME"] = "Paladin Machtleiste (Heilige Macht)",
 		["LID_MAFPSFrame"] = "FPS",
 		["LID_IAPingFrame"] = "Ping",
 		["LID_IACoordsFrame"] = "Koordinatenfenster",
@@ -152,7 +152,6 @@ function MoveAny:LangdeDE()
 		["LID_FLIPPED"] = "Umgedreht",
 		["LID_GHOSTFRAME"] = "Geisterfenster (Teleport zum Friedhof)",
 		["LID_TICKETSTATUSFRAME"] = "Ticket Fenster",
-		["LID_HELPOPENWEBTICKETBUTTON"] = "Ticket Knopf (Status)",
 		["LID_LOSSOFCONTROLFRAME"] = "Kontrollverlustfenster",
 		["LID_MainStatusTrackingBarContainer"] = "StatusBar1 (Erfahrungsleiste/Rufleiste)",
 		["LID_SecondaryStatusTrackingBarContainer"] = "StatusBar2 (Rufleiste)",
@@ -202,9 +201,12 @@ function MoveAny:LangdeDE()
 		["LID_BOSS6"] = "Boss 6",
 		["LID_MAPAGES"] = "Aktionsleisten-Seiten",
 		["LID_HIDEHIDDENFRAMES"] = "Verstecke versteckte Elemente",
+		["LID_TIMERTRACKER1"] = "Zeitmesser (erst sichtbar wenn verfügbar)",
+		["LID_PALADINPOWERBAR"] = "Paladin Machtleiste (Heilige Macht)",
+		["LID_SHARDBARFRAME"] = "Hexenmeister Macht Fenster (Splitter)",
 	}
 
-	if MoveAny:GetWoWBuild() ~= "RETAIL" then
+	if D4:GetWoWBuild() ~= "RETAIL" then
 		tab["LID_ACTIONBARS"] = "Aktionsleisten 1 + 5 + 6"
 		tab["LID_ACTIONBAR1"] = "Aktionsleiste 1 (Hauptleiste)"
 		tab["LID_ACTIONBAR2"] = "Aktionsleiste 2 (2. Seite von Aktionsleiste 1)"

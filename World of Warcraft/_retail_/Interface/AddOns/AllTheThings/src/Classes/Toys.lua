@@ -8,7 +8,7 @@ local L = app.L;
 -- Toy Lib
 local AccountWideToyData = {};
 local toyFields = {
-	filterID = function(t)
+	f = function(t)
 		return 102;
 	end,
 	collectible = function(t)
@@ -54,13 +54,12 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 		if itemID and not AccountWideToyData[itemID] and PlayerHasToy(itemID) then
 			AccountWideToyData[itemID] = 1;
 			app.UpdateRawID("itemID", itemID);
-			app.Audio:PlayFanfare();
-			app:TakeScreenShot("Toys");
+			app.HandleEvent("OnThingCollected", "Toys")
 			app.WipeSearchCache();
 
 			if app.Settings:GetTooltipSetting("Report:Collected") then
 				local name, link = GetItemInfo(itemID);
-				if link then print(L.ITEM_ID_ADDED:format(link, itemID)); end
+				if link then app.print(L.ITEM_ID_ADDED:format(link, itemID)); end
 			end
 		end
 	end or function(toyID, new)
@@ -75,7 +74,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 	app.AddEventHandler("OnRefreshCollections", function()
 		-- Refresh Toys
 		local collected;
-		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
+		for id,t in pairs(app.GetRawFieldContainer("toyID")) do
 			if #t > 0 then
 				collected = t[1].collected;	-- Run the collected field's code.
 			end

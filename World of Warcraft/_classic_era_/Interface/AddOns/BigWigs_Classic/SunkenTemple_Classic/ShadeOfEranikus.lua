@@ -4,8 +4,9 @@
 
 local mod, CL = BigWigs:NewBoss("Shade of Eranikus Discovery", 109, -2959)
 if not mod then return end
-mod:RegisterEnableMob(220007) -- Shade of Eranikus
+mod:RegisterEnableMob(218571) -- Shade of Eranikus
 mod:SetEncounterID(2959)
+mod:SetStage(1)
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -14,113 +15,171 @@ mod:SetEncounterID(2959)
 local L = mod:GetLocale()
 if L then
 	L.bossName = "Shade of Eranikus"
+	L.deep_slumber_clouds = "Clouds" -- Clouds of Slumber
+	L.deep_slumber_player_debuff = "Player"
 end
 
 --------------------------------------------------------------------------------
 -- Initialization
 --
 
-local desiccatedFalloutMarker = mod:AddMarkerOption(true, "npc", 8, "desiccated_fallout", 8, 7, 6) -- Desiccated Fallout
 function mod:GetOptions()
 	return {
-		434358, -- Summon Irradiated Goo
-		desiccatedFalloutMarker,
-		433546, -- Radiation Burn
-		434434, -- Sludge
-	},nil,{
-		[434358] = CL.adds, -- Summon Irradiated Goo (Adds)
+		"stages",
+		437353, -- Corrosive Breath
+		445498, -- Bellowing Roar
+		437301, -- Deep Slumber (Clouds)
+		437324, -- Deep Slumber (Player)
+		437390, -- Lethargic Poison
+		437398, -- Waking Nightmare
+		{3391, "TANK"}, -- Thrash
+		{437416, "CASTBAR"}, -- Dreamwalker
+	},{},{
+		[437353] = CL.breath,
+		[437301] = L.deep_slumber_clouds,
+		[437324] = L.deep_slumber_player_debuff,
 	}
 end
 
 function mod:OnRegister()
 	self.displayName = L.bossName
-	-- Delayed for custom locale
-	desiccatedFalloutMarker = mod:AddMarkerOption(true, "npc", 8, "desiccated_fallout", 8, 7, 6) -- Desiccated Fallout
 end
 
 function mod:OnBossEnable()
-	self:Log("SPELL_CAST_START", "SummonIrradiatedGooStart", 434358)
-	self:Log("SPELL_CAST_SUCCESS", "SummonIrradiatedGoo", 434358)
-	self:Log("SPELL_AURA_APPLIED", "ToxicEmissionApplied", 434399)
-	self:Log("SPELL_CAST_START", "RadiationBurnStart", 433546)
-	self:Log("SPELL_CAST_SUCCESS", "RadiationBurn", 433546)
-	self:Log("SPELL_CAST_SUCCESS", "Sludge", 434434)
-	self:Log("SPELL_AURA_APPLIED", "SludgeDamage", 434433)
-	self:Log("SPELL_PERIODIC_DAMAGE", "SludgeDamage", 434433)
-	self:Log("SPELL_PERIODIC_MISSED", "SludgeDamage", 434433)
+	self:Log("SPELL_CAST_START", "CorrosiveBreath", 437353)
+	self:Log("SPELL_AURA_APPLIED", "CorrosiveBreathApplied", 437353)
+	self:Log("SPELL_CAST_START", "BellowingRoar", 445498)
+	self:Log("SPELL_CAST_START", "DeepSlumberClouds", 437301)
+	self:Log("SPELL_AURA_APPLIED", "DeepSlumberApplied", 437324)
+	self:Log("SPELL_AURA_REMOVED", "DeepSlumberRemoved", 437324)
+	self:Log("SPELL_CAST_START", "LethargicPoison", 437390)
+	self:Log("SPELL_AURA_APPLIED", "LethargicPoisonApplied", 437390)
+	self:Log("SPELL_AURA_REMOVED", "LethargicPoisonRemoved", 437390)
+
+	self:Log("SPELL_CAST_START", "WakingNightmare", 437398)
+	self:Log("SPELL_CAST_SUCCESS", "Thrash", 3391)
+
+	-- Dreamwalker / Sleeping Boss, Cast at 70% and 40%
+	self:Log("SPELL_CAST_SUCCESS", "Dreamwalker", 437416)
+	self:Log("SPELL_AURA_REMOVED", "DreamwalkerOver", 437410) -- Deep Slumber Removed
 end
 
 function mod:OnEngage()
-	self:CDBar(434358, 11, CL.adds) -- Summon Irradiated Goo
-	self:CDBar(434434, 15.8) -- Sludge
+	self:SetStage(1)
+	self:Message("stages", "cyan", CL.stage:format(1), false)
+	self:CDBar(437353, 6, CL.breath) -- Corrosive Breath
+	self:CDBar(437301, 14.5, L.deep_slumber_clouds) -- Deep Slumber (Clouds)
+	self:CDBar(437390, 16.5) -- Lethargic Poison
+	self:CDBar(445498, 21) -- Bellowing Roar
+	self:CDBar(437398, 66) -- Waking Nightmare
 end
 
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
 
-do
-	local gooCollector, gooIcon, falloutIcon = {}, 8, 8
-	function mod:GooMarking(_, unit, guid)
-		if gooCollector[guid] then
-			self:CustomIcon(desiccatedFalloutMarker, unit, gooCollector[guid])
-		end
+function mod:CorrosiveBreath(args)
+	self:StopBar(CL.breath)
+	self:Message(args.spellId, "purple", CL.breath)
+	if self:Tank() then
+		self:PlaySound(args.spellId, "alert")
 	end
-
-	function mod:SummonIrradiatedGooStart(args)
-		self:Message(args.spellId, "cyan", CL.incoming:format(CL.adds))
-		self:CDBar(args.spellId, 63, CL.adds)
-		self:PlaySound(args.spellId, "long")
-	end
-
-	function mod:SummonIrradiatedGoo(args)
-		gooCollector = {}
-		gooIcon, falloutIcon = 8, 8
-		self:RegisterTargetEvents("GooMarking")
-	end
-
-	function mod:ToxicEmissionApplied(args)
-		if not gooCollector[args.destGUID] then -- Mark Irradiated Goo
-			gooCollector[args.destGUID] = gooIcon
-			gooIcon = gooIcon - 1
-			local unit = self:GetUnitIdByGUID(args.destGUID)
-			if unit then
-				self:CustomIcon(desiccatedFalloutMarker, unit, gooCollector[args.destGUID])
-			end
-		end
-	end
-
-	function mod:RadiationBurnStart(args)
-		if not gooCollector[args.sourceGUID] then -- Mark Desiccated Fallout
-			gooCollector[args.sourceGUID] = falloutIcon
-			falloutIcon = falloutIcon - 1
-		end
-		local icon = self:GetIconTexture(gooCollector[args.sourceGUID])
-		self:Message(args.spellId, "orange", icon.. CL.casting:format(args.spellName))
-		if self:Interrupter() then
-			self:PlaySound(args.spellId, "info")
-		end
-	end
+	self:CDBar(args.spellId, 19.5, CL.breath)
 end
 
-function mod:RadiationBurn(args)
-	self:Message(args.spellId, "orange", CL.on_group:format(args.spellName))
-	self:PlaySound(args.spellId, "warning")
+function mod:CorrosiveBreathApplied(args)
+    if self:Me(args.destGUID) then
+        self:PersonalMessage(args.spellId)
+        self:PlaySound(args.spellId, "alarm")
+    end
 end
 
-function mod:Sludge(args)
+function mod:BellowingRoar(args)
+	self:StopBar(args.spellId)
 	self:Message(args.spellId, "red")
-	self:Bar(args.spellId, 16.1)
-	self:PlaySound(args.spellId, "alarm")
+	self:PlaySound(args.spellId, "warning")
+	-- This timer is based on combattime? It's not a fixed timer.
+	--self:CDBar(args.spellId, 34) -- 34~63s
 end
 
-do
-	local prev = 0
-	function mod:SludgeDamage(args)
-		if self:Me(args.destGUID) and args.time - prev > 3 then
-			prev = args.time
-			self:PersonalMessage(434434, "underyou")
-			self:PlaySound(434434, "underyou")
-		end
+function mod:DeepSlumberClouds(args)
+	self:StopBar(args.spellId)
+	self:Message(args.spellId, "cyan")
+	self:PlaySound(args.spellId, "info")
+	self:CDBar(args.spellId, 19, L.deep_slumber_clouds)
+end
+
+function mod:DeepSlumberApplied(args)
+	if self:Me(args.destGUID) then
+		self:PersonalMessage(args.spellId)
+		self:PlaySound(args.spellId, "alarm")
 	end
+end
+
+function mod:DeepSlumberRemoved(args)
+	if self:Me(args.destGUID) then
+		self:Message(args.spellId, "green", CL.removed:format(args.spellName))
+		self:PlaySound(args.spellId, "info")
+	end
+end
+
+function mod:LethargicPoison(args)
+	self:StopBar(args.spellId)
+	self:Message(args.spellId, "yellow")
+	if self:Dispeller("poison") then
+		self:PlaySound(args.spellId, "alert")
+	end
+	self:CDBar(args.spellId, self:GetStage() > 1 and 17 or 19)
+end
+
+function mod:LethargicPoisonApplied(args)
+	if self:Me(args.destGUID) then
+		self:PersonalMessage(args.spellId)
+		self:PlaySound(args.spellId, "alarm")
+	end
+end
+
+function mod:LethargicPoisonRemoved(args)
+	if self:Me(args.destGUID) then
+		self:Message(args.spellId, "green", CL.removed:format(args.spellName))
+		self:PlaySound(args.spellId, "info")
+	end
+end
+
+function mod:WakingNightmare(args)
+	self:StopBar(args.spellId)
+	self:Message(args.spellId, "orange", CL.casting:format(args.spellName))
+	self:PlaySound(args.spellId, "warning")
+	self:CDBar(args.spellId, 66)
+end
+
+function mod:Thrash(args)
+	self:Message(args.spellId, "purple")
+	self:PlaySound(args.spellId, "info")
+end
+
+function mod:Dreamwalker(args)
+	-- Increment stage by +1 every dreamwalker
+	local stage = self:GetStage()
+	self:SetStage(stage + 1)
+
+	self:StopBar(CL.breath) -- Corrosive Breath
+	self:StopBar(445498) -- Bellowing Roar
+	self:StopBar(L.deep_slumber_clouds) -- Deep Slumber (Clouds)
+	self:StopBar(437390) -- Lethargic Poison
+	self:StopBar(437398) -- Waking Nightmare
+
+	self:Message(args.spellId, "cyan")
+	self:PlaySound(args.spellId, "long")
+	self:CastBar(args.spellId, 23) -- 3s cast, 20s buff before waking up again
+end
+
+function mod:DreamwalkerOver(args)
+	local stage = self:GetStage()
+	self:CDBar(437301, stage == 3 and 10 or 2, L.deep_slumber_clouds) -- Deep Slumber (Clouds)
+	self:CDBar(437390, 3) -- Lethargic Poison
+	self:CDBar(437353, 4, CL.breath) -- Corrosive Breath
+	-- Bellowing Roar seems to be based on combattime, so hard to judge here right now.
+	--self:CDBar(445498, 21) -- Bellowing Roar
+	self:CDBar(437398, 45) -- Waking Nightmare ~45~65
 end

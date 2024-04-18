@@ -7,16 +7,16 @@ PeggleData = {
 				["progress"] = 3,
 			}, -- [1]
 			{
-				["score"] = 0,
-				["progress"] = 0,
+				["score"] = 105780,
+				["progress"] = 1,
 			}, -- [2]
 			{
 				["score"] = 94620,
 				["progress"] = 1,
 			}, -- [3]
 			{
-				["score"] = 0,
-				["progress"] = 0,
+				["score"] = 96770,
+				["progress"] = 1,
 			}, -- [4]
 			{
 				["score"] = 0,
@@ -96,7 +96,9 @@ PeggleData = {
 	},
 	["recent"] = {
 		436530, -- [1]
-		[3] = 94620,
+		105780, -- [2]
+		94620, -- [3]
+		96770, -- [4]
 	},
 	["legalDisplayed"] = true,
 	["version"] = 2.2,

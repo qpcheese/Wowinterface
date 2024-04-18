@@ -8,7 +8,6 @@ local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
 	  GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles
 
 -- Module
-local GetProgressColor = app.Modules.Color.GetProgressColor;
 
 -- App
 local ATTAccountWideData
@@ -120,7 +119,6 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = app.IsClassic and function(t)
 		local titleID = t.titleID;
-		-- NOTE: Retail doesn't support SetCollected.
 		return app.SetCollected(t, "Titles", titleID, IsTitleKnown(titleID));
 	end or function(t)
 		local titleID = t.titleID;

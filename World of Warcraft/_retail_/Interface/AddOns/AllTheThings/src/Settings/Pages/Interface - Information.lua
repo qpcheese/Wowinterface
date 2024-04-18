@@ -40,12 +40,18 @@ local function IsRetrievingConversionMethod(text, reference)
 	end
 	return text
 end
+local BindTypes = {
+	ITEM_BIND_ON_PICKUP,
+	ITEM_BIND_ON_EQUIP,
+	ITEM_BIND_ON_USE,
+	ITEM_BIND_QUEST,
+}
 local ConversionMethods = setmetatable({
 	filterID = function(val)
 		return L.FILTER_ID_TYPES[val]
 	end,
 	b = function(val)
-		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
+		return BindTypes[val]
 	end,
 	questID = function(questID, reference)
 		-- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
@@ -138,7 +144,10 @@ end
 local function ProcessInformationType(t, reference, tooltipInfo)
 	local val = t.GetValue(t, reference);
 	if val then
-		tinsert(tooltipInfo, { left = t.text, right = ConversionMethods[t.informationTypeID](val, reference)});
+		local text = ConversionMethods[t.informationTypeID](val, reference)
+		if text then
+			tinsert(tooltipInfo, { left = t.text, right = text});
+		end
 	end
 end
 local CreateInformationType = app.CreateClass("InformationType", "informationTypeID", {
@@ -749,6 +758,7 @@ local InformationTypes = {
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
 	CreateInformationType("runeforgePowerID", { text = L.RUNEFORGE_POWER_ID }),
+	CreateInformationType("savedInstanceID", { text = L.SAVED_INSTANCE_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
@@ -873,6 +883,64 @@ settings.CreateInformationType = function(key, t)
 	tinsert(InformationTypes, informationType);
 	return informationType;
 end
+
+-- Debugging Information Types
+settings.CreateInformationType("ExclusionFilters", {
+	priority = 99999,
+	text = "DEBUG: Exclusion Filters",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, reference, tooltipInfo)
+		local excludes = {}
+		local Filter = app.Modules.Filter
+		for filterName,filterFunc in pairs(Filter.Filters) do
+			if not filterFunc(reference) then
+				excludes[#excludes + 1] = Colorize(filterName, app.Colors.ChatLinkError)
+			else
+				excludes[#excludes + 1] = Colorize(filterName, app.Colors.ChatLinkHQT)
+			end
+		end
+		if #excludes > 0 then
+			tinsert(tooltipInfo, {
+				left = "Filter Checks",
+			});
+			tinsert(tooltipInfo, {
+				left = app.TableConcat(excludes, nil, nil, ", "),
+				wrap = true
+			});
+		end
+	end
+})
+settings.CreateInformationType("LinkSourceID", {
+	priority = 99999,
+	text = "DEBUG: Link SourceID",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, data, tooltipInfo)
+		local link, source = data.link or data.silentLink, data.sourceID;
+		if not link then return; end
+		local itemName = GetItemInfo(link)
+		-- If it doesn't, the source ID will need to be harvested.
+		local sourceID, success = app.GetSourceID(link);
+		-- app.PrintDebug("SourceIDs",data.modItemID,source,sourceID,success,link)
+		if sourceID and sourceID > 0 then
+			-- only save the source if it is different than what we already have, or being forced
+			if not source or source < 1 or source ~= sourceID then
+				-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
+				-- print(GetItemInfo(text))
+				app.SaveHarvestSource(data);
+			end
+		end
+		tinsert(tooltipInfo, {
+			left = Colorize("Link Source", success and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError).." / "
+				..Colorize("Item Info", itemName and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError),
+			right = "Sourced:"..(source or "?").." / Checked:"..(sourceID or "?")
+		});
+	end
+})
+settings.CreateInformationType("modItemID", {
+	priority = 99999,
+	text = "DEBUG: modItemID",
+	HideCheckBox = not app.Debugging,
+})
 
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};

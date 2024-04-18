@@ -215,7 +215,7 @@ function Ala:RecvEquipmentV1(code)
     return {equips = equips}
 end
 
-function Ala:RecvTalentV1(code)
+function Ala:RecvTalentV1(code, maybeOld)
     local classIndex = __debase64[strsub(code, 1, 1)]
     if not classIndex then
         return
@@ -227,14 +227,19 @@ function Ala:RecvTalentV1(code)
 
     local level = __debase64[strsub(code, -2, -2)] + __debase64[strsub(code, -1, -1)] * 64
     local talent = self:DecodeTalentV1(strsub(code, 2, -3))
+    local result = {class = class, level = level}
 
-    return { --
-        class = class,
-        level = level,
-        numGroups = 1,
-        activeGroup = 1,
-        talents = {talent},
-    }
+    if maybeOld then
+        talent = ns.ResolveTalent(ns.GetClassFileName(class), talent)
+    end
+
+    if talent then
+        result.numGroups = 1
+        result.activeGroup = 1
+        result.talents = {talent}
+    end
+
+    return result
 end
 
 function Ala:RecvCommV1(msg)
@@ -242,7 +247,7 @@ function Ala:RecvCommV1(msg)
     if cmd == '_repeq' or cmd == '_r_equ' or cmd == '_r_eq3' then
         return self:RecvEquipmentV1(strsub(msg, CMD_LEN_V1 + 1, -1))
     elseif cmd == '_reply' or cmd == '_r_tal' then
-        return self:RecvTalentV1(strsub(msg, CMD_LEN_V1 + 1, -1))
+        return self:RecvTalentV1(strsub(msg, CMD_LEN_V1 + 1, -1), true)
     end
 end
 
@@ -466,6 +471,9 @@ function Ala:RecvCommV2(msg, sender)
         elseif v2_ctrl_code == '!N' then
             r = merge(r, self:RecvRune(code))
         end
+    end
+    if r then
+        r.v2 = true
     end
     return r
 end

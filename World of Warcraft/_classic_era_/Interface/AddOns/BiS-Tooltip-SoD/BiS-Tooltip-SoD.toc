@@ -1,12 +1,12 @@
-## Interface: 11501
+## Interface: 11502
 ## Title: BiS-Tooltip-SoD
-## Notes: v1.1.5 In game BiS lists.
-## Author: Hellixoid
-## Author: Dweem
+## Notes: In game BiS lists.
 ## Author: Tomzopo	
-## Version: 1.1.5
+## Version: v1.3 
 ## SavedVariables: BisTooltipDB
 ## OptionalDeps:
+## X-Curse-Project-ID: 961545
+## X-Wago-ID: 56n9EAN9
 
 # Libs.
 libs\LibStub\LibStub.lua
@@ -14,26 +14,39 @@ libs\LibExtraTip\Load.xml
 libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
 libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
-libs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
-libs\Ace3\AceDB-3.0\AceDB-3.0.lua
-libs\Ace3\AceConsole-3.0\AceConsole-3.0.xml
-libs\Ace3\AceAddon-3.0\AceAddon-3.0.xml
-libs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.lua
+libs\AceConsole-3.0\AceConsole-3.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
 
 # Data.
 data\Constants.lua
 data\HordeToAllianceItems.lua
 
 # BiS Lists.
-data\BiS_Lists\Druid.lua
-data\BiS_Lists\Hunter.lua
-data\BiS_Lists\Mage.lua
-data\BiS_Lists\Paladin.lua
-data\BiS_Lists\Priest.lua
-data\BiS_Lists\Rogue.lua
-data\BiS_Lists\Shaman.lua
-data\BiS_Lists\Warlock.lua
-data\BiS_Lists\Warrior.lua
+data\BiS_Lists\Druid_Balance.lua
+data\BiS_Lists\Druid_Feral.lua
+data\BiS_Lists\Druid_Tank.lua
+data\BiS_Lists\Druid_Healer.lua
+data\BiS_Lists\Hunter_DPS.lua
+data\BiS_Lists\Mage_DPS.lua
+data\BiS_Lists\Mage_Healer.lua
+data\BiS_Lists\Paladin_DPS.lua
+data\BiS_Lists\Paladin_Healer.lua
+data\BiS_Lists\Paladin_Tank.lua
+data\BiS_Lists\Priest_DPS.lua
+data\BiS_Lists\Priest_Healer.lua
+data\BiS_Lists\Rogue_DPS.lua
+data\BiS_Lists\Rogue_Tank.lua
+data\BiS_Lists\Shaman_Elemental.lua
+data\BiS_Lists\Shaman_Enhancement.lua
+data\BiS_Lists\Shaman_Healer.lua
+data\BiS_Lists\Shaman_Tank.lua
+data\BiS_Lists\Warlock_DPS.lua
+data\BiS_Lists\Warlock_Tank.lua
+data\BiS_Lists\Warrior_DPS.lua
+data\BiS_Lists\Warrior_Tank.lua
 data\BiS_Lists.lua
 
 # BiS Tooltips.

@@ -17,8 +17,8 @@ if app.IsRetail then
 -- I'd much rather have parser export these.
 local wipe, math_max, tonumber, type, select, pcall, ipairs, pairs =
 	  wipe, math.max, tonumber, type, select, pcall, ipairs, pairs;
-local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, GetAchievementInfo =
-	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, GetAchievementInfo;
+local GetAchievementInfo =
+	  GetAchievementInfo;
 local ATTAccountWideData
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
@@ -247,53 +247,11 @@ local function FixWrongAccountWideQuests(accountWideData)
 	end
 end
 
-
-RefreshCollections = function()
-	local currentCharacter = app.CurrentCharacter;
-	local charGuid = app.GUID;
-	if InCombatLockdown() then
-		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
-		while InCombatLockdown() do coroutine.yield(); end
-	else
-		print(app.L.REFRESHING_COLLECTION);
-	end
-
-	-- Refresh Mounts / Pets
-	local acctSpells, charSpells = ATTAccountWideData.Spells, currentCharacter.Spells;
-	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
-		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-		if spellID then
-			if isCollected then
-				if not acctSpells[spellID] then print("Added Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
-				charSpells[spellID] = 1;
-			else
-				charSpells[spellID] = nil;
-			end
-		end
-	end
-	coroutine.yield();
-
-	-- Refresh Factions
-	local faction;
-	wipe(currentCharacter.Factions);
-	for factionID,_ in pairs(app.SearchForFieldContainer("factionID")) do
-		faction = app.SearchForObject("factionID", factionID);
-		-- simply reference the .saved property of each known Faction to re-calculate the character value
-		if faction and faction.saved then end
-	end
-	coroutine.yield();
-
-	-- Harvest Item Collections that are used by the addon.
-	app:GetDataCache();
-	coroutine.yield();
-
-	-- Refresh Achievements
-	app.RefreshAchievementCollection();
-	coroutine.yield();
-
+local function CheckOncePerAccountQuestsForCharacter(accountWideData)
 	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
-	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
+	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
+	local charGuid = app.GUID;
 	for questID,questGuid in pairs(oneTimeQuests) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
 		if IsQuestFlaggedCompleted(questID) then
@@ -307,24 +265,41 @@ RefreshCollections = function()
 			oneTimeQuests[questID] = charGuid;
 		end
 	end
-	coroutine.yield();
+end
 
-	CacheAccountWideCompleteViaAchievement(ATTAccountWideData);
-	coroutine.yield();
-	CacheAccountWideMiscQuests(ATTAccountWideData);
-	coroutine.yield();
-	CacheAccountWideSharedQuests(ATTAccountWideData);
-	coroutine.yield();
-	FixWrongAccountWideQuests(ATTAccountWideData);
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideCompleteViaAchievement)
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
+app.AddEventHandler("OnRefreshCollections", CacheAccountWideSharedQuests)
+app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
+app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
+
+RefreshCollections = function()
+	local currentCharacter = app.CurrentCharacter;
+	if InCombatLockdown() then
+		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
+		while InCombatLockdown() do coroutine.yield(); end
+	else
+		print(app.L.REFRESHING_COLLECTION);
+	end
+
+	-- Refresh Factions
+	local faction;
+	wipe(currentCharacter.Factions);
+	for factionID,_ in pairs(app.GetRawFieldContainer("factionID")) do
+		faction = app.SearchForObject("factionID", factionID);
+		-- simply reference the .saved property of each known Faction to re-calculate the character value
+		if faction and faction.saved then end
+	end
 	coroutine.yield();
 
 	-- Execute the OnRefreshCollections handlers.
 	-- TODO: Take all the bulk of this function and make them use the event handler.
 	-- The function used in the Classic section is what I want to see when this is completed.
-	app.HandleEvent("OnRefreshCollections")
+	app.HandleEvent("OnRefreshCollections", ATTAccountWideData)
+end
 
-	app:RecalculateAccountWideData();
-	coroutine.yield();
+-- [Event]Done is called automatically when processed by a Runner and it completes the set of functions
+app.AddEventHandler("OnRefreshCollectionsDone", function()
 
 	-- Need to update the Settings window as well if User does not have auto-refresh for Settings
 	if app.Settings:Get("Skip:AutoRefresh") or app.Settings.NeedsRefresh then
@@ -333,16 +308,13 @@ RefreshCollections = function()
 		app:RefreshData(false, false, true);
 	end
 
-	-- Wait for refresh to actually finish
-	while app.Processing_RefreshData do coroutine.yield(); end
-
 	-- Report success once refresh is done
 	print(app.L.DONE_REFRESHING);
 	if __FirstRefresh then
 		__FirstRefresh = nil;
 		print = app.print;
 	end
-end
+end)
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 end)
@@ -374,3 +346,4 @@ end
 end
 
 app.RefreshCollections = function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections) end
+app.AddEventHandler("OnInit", app.RefreshCollections)

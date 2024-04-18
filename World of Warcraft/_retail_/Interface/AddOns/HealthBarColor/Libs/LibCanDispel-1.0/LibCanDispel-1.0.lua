@@ -1,13 +1,10 @@
-local MAJOR, MINOR = "LibCanDispel-1.0", 1
+local MAJOR, MINOR = "LibCanDispel-1.0", 2
 assert(LibStub, MAJOR .. " requires LibStub.")
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
 if not lib then
     return
 end
 
-local IsSpellKnown = IsSpellKnown
-local IsPlayerSpell = IsPlayerSpell
-local IsSpellKnownOrOverridesKnown = IsSpellKnownOrOverridesKnown
 
 local DispelCapabilities = {}
 lib.DispelCapabilities = DispelCapabilities
@@ -20,11 +17,11 @@ local class = select(2,UnitClass("player"))
 
 local dispelAbilities = {
     ["DRUID"] = function()
-        if IsSpellKnown(2782) then --Remove Corruption
+        if IsSpellKnownOrOverridesKnown(2782) then --Remove Corruption
             DispelCapabilities.Curse = true
             DispelCapabilities.Poison = true
         end
-        if IsSpellKnown(88423) then --Nature's Cure
+        if IsSpellKnownOrOverridesKnown(88423) then --Nature's Cure
             DispelCapabilities.Magic = true
             if IsPlayerSpell(392378) then --Improved Nature's Cure
                 DispelCapabilities.Curse = true
@@ -33,89 +30,89 @@ local dispelAbilities = {
         end
     end,
     ["MAGE"] = function()
-        if IsSpellKnown(475) then --Remove Curse
+        if IsSpellKnownOrOverridesKnown(475) then --Remove Curse
             DispelCapabilities.Curse = true
         end
     end,
     ["MONK"] = function()
-        if IsSpellKnown(218164) then --Detox BM/WW
+        if IsSpellKnownOrOverridesKnown(218164) then --Detox BM/WW
             DispelCapabilities.Poison = true
             DispelCapabilities.Disease = true
         end
-        if IsSpellKnown(115450) then --Detox MW 
+        if IsSpellKnownOrOverridesKnown(115450) then --Detox MW 
             DispelCapabilities.Magic = true
             if IsPlayerSpell(388874) then --Improved Detox 
                 DispelCapabilities.Poison = true
                 DispelCapabilities.Disease = true
             end
         end
-        if IsSpellKnown(115310) then --Revival
+        if IsSpellKnownOrOverridesKnown(115310) then --Revival
             DispelCapabilities.Magic = true
             DispelCapabilities.Poison = true
             DispelCapabilities.Disease = true
         end
-        if IsSpellKnown(115310) then --Restoral
+        if IsSpellKnownOrOverridesKnown(115310) then --Restoral
             DispelCapabilities.Poison = true
             DispelCapabilities.Disease = true
         end
     end,
     ["PALADIN"] = function()
-        if IsSpellKnown(213644) then --Cleanse Toxins
+        if IsSpellKnownOrOverridesKnown(213644) then --Cleanse Toxins
             DispelCapabilities.Poison = true
             DispelCapabilities.Disease = true
         end
-        if IsSpellKnown(4987) then --Cleanse
+        if IsSpellKnownOrOverridesKnown(4987) then --Cleanse
             DispelCapabilities.Magic = true
             if IsPlayerSpell(393024) then --Improved Cleanse
                 DispelCapabilities.Poison = true
                 DispelCapabilities.Disease = true
             end
         end
-        if IsSpellKnown(1022) then --Blessing of Protection
+        if IsSpellKnownOrOverridesKnown(1022) then --Blessing of Protection
             DispelCapabilities.Bleed = true
         end
     end,
     ["PRIEST"] = function()
-        if IsSpellKnown(527) then --Purify
+        if IsSpellKnownOrOverridesKnown(527) then --Purify
             DispelCapabilities.Magic = true
             if IsPlayerSpell(390632) then --Improved Purify
                 DispelCapabilities.Disease = true
             end
         end
-        if IsSpellKnown(213634) then --Purify Disease
+        if IsSpellKnownOrOverridesKnown(213634) then --Purify Disease
             DispelCapabilities.Disease = true
         end
-        if IsSpellKnown(32375) then --Mass Dispel
+        if IsSpellKnownOrOverridesKnown(32375) then --Mass Dispel
             DispelCapabilities.Magic = true
         end
     end,
     ["SHAMAN"] = function()
-        if IsSpellKnown(51886) then --Cleanse Spirit
+        if IsSpellKnownOrOverridesKnown(51886) then --Cleanse Spirit
             DispelCapabilities.Curse = true
         end
-        if IsSpellKnown(77130) then --Purify Spirit
+        if IsSpellKnownOrOverridesKnown(77130) then --Purify Spirit
             DispelCapabilities.Magic = true
             if IsPlayerSpell(383016) then --Improved Purify Spirit
                 DispelCapabilities.Curse = true
             end
         end
-        if IsSpellKnown(383013) then --Poision Cleansing Totem
+        if IsSpellKnownOrOverridesKnown(383013) then --Poision Cleansing Totem
             DispelCapabilities.Poison = true
         end
     end,
     ["WARLOCK"] = function()
-        if IsSpellKnown(89808, true) then --Singe Magic
+        if IsSpellKnownOrOverridesKnown(89808, true) then --Singe Magic
             DispelCapabilities.Magic = true
         end
     end,
     ["EVOKER"] = function()
-        if IsSpellKnown(374251) then --Cauterizing Flame
+        if IsSpellKnownOrOverridesKnown(374251) then --Cauterizing Flame
             DispelCapabilities.Curse = true
             DispelCapabilities.Poison = true
             DispelCapabilities.Disease = true
             DispelCapabilities.Bleed = true
         end
-        if IsSpellKnown(365585) then --Expunge 
+        if IsSpellKnownOrOverridesKnown(365585) then --Expunge 
             DispelCapabilities.Poison = true
         end
         if IsSpellKnownOrOverridesKnown(360823) then --Naturalize 
@@ -124,12 +121,12 @@ local dispelAbilities = {
         end
     end,
     ["DEMONHUNTER"] = function()
-        if IsSpellKnown(205604) then --Reverse Magic
+        if IsSpellKnownOrOverridesKnown(205604) then --Reverse Magic
             DispelCapabilities.Magic = true
         end
     end,
     ["HUNTER"] = function()
-        if IsSpellKnown(212640) then --Mending Bandage
+        if IsSpellKnownOrOverridesKnown(212640) then --Mending Bandage
             DispelCapabilities.Poison = true
             DispelCapabilities.Disease = true
         end
@@ -145,6 +142,13 @@ end
 
 local frame = CreateFrame("Frame")
 frame:SetScript("OnEvent", function(self, event, ...)
+    if event == "TRAIT_CONFIG_UPDATED" then
+        local configID = ...
+        local activeConfigID  = C_ClassTalents.GetActiveConfigID()
+        if configID ~= activeConfigID then
+            return -- This will filter out profession changes
+        end
+    end
     updateDispelCapabilities()
 end)
 frame:RegisterEvent("TRAIT_CONFIG_UPDATED") 

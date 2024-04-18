@@ -187,6 +187,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Simplicity",
 				},
+				["WeakAuras_BnO(DJyfZI7"] = {
+					["Backdrop"] = true,
+					["Upgraded"] = true,
+					["Colors"] = {
+						["Backdrop"] = {
+							0.5176470875740051, -- [1]
+							0.5333333611488342, -- [2]
+							0.5568627715110779, -- [3]
+							0.9197917878627777, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Simplicity",
+				},
 				["WeakAuras_Zt7HpuS7Ghj"] = {
 					["Backdrop"] = true,
 					["Upgraded"] = true,

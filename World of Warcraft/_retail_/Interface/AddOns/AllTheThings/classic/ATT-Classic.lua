@@ -768,8 +768,13 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
 				if GetAchievementNumCriteria then
 					local achievementID = o.achievementID;
+					local num = GetAchievementNumCriteria(achievementID);
+					if type(num) ~= "number" then
+						--print("Attempting to use 'achievement_criteria' with achievement", achievementID);
+						return;
+					end
 					local cache;
-					for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
+					for criteriaID=1,num,1 do
 						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 						if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
 						local criteriaObject = app.CreateAchievementCriteria(uniqueID);
@@ -1636,21 +1641,6 @@ local function SearchForLink(link)
 			if itemID then
 				-- Ensure that the itemID and suffixID are properly formatted.
 				itemID = tonumber(itemID) or 0;
-				if suffixID and suffixID ~= "" then
-					suffixID = tonumber(suffixID) or 0;
-					if suffixID > 0 then
-						-- Record the Suffix as valid for this itemID.
-						local suffixes = GetDataSubMember("ValidSuffixesPerItemID", itemID);
-						if not suffixes then
-							suffixes = {};
-							GetDataSubMember("ValidSuffixesPerItemID", itemID, suffixes);
-						end
-						if not suffixes[suffixID] then
-							suffixes[suffixID] = 1;
-							app.ClearItemCache();
-						end
-					end
-				end
 				return SearchForField("itemID", itemID), "itemID", itemID;
 			end
 		end
@@ -1934,9 +1924,6 @@ function app:GetDataCache()
 				isEventCategory = true,
 			});
 		end
-
-		-- Now that we have all of the root data, cache it.
-		app.CacheFields(rootData);
 		
 		-- Dynamic Categories
 		if app.Windows then
@@ -1978,6 +1965,9 @@ function app:GetDataCache()
 
 		-- Now assign the parent hierarchy for this cache.
 		AssignChildren(rootData);
+
+		-- Now that we have all of the root data, cache it.
+		app.CacheFields(rootData);
 
 		-- Determine how many expansionID instances could be found
 		local expansionCounter = 0;
@@ -3256,262 +3246,6 @@ end
 app.CreateAchievementCategory = app.CreateClass("AchievementCategory", "achievementCategoryID", categoryFields);
 end)();
 
--- Companion Lib
-(function()
-local SetBattlePetCollected = function(t, speciesID, collected)
-	return app.SetCollected(t, "BattlePets", speciesID, collected);
-end
-local SetMountCollected = function(t, spellID, collected)
-	return app.SetCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
-end
-local speciesFields = {
-	["f"] = function(t)
-		return app.FilterConstants.BATTLE_PETS;
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.BattlePets;
-	end,
-	["text"] = function(t)
-		return "|cff0070dd" .. (t.name or RETRIEVING_DATA) .. "|r";
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local link = select(2, GetItemInfo(t.itemID));
-			if link and not IsRetrieving(link) then
-				t.link = link;
-				return link;
-			end
-		end
-	end,
-	["tsm"] = function(t)
-		if t.itemID then return ("i:%d"):format(t.itemID); end
-		return ("p:%d:1:3"):format(t.speciesID);
-	end,
-};
-local mountFields = {
-	["text"] = function(t)
-		return "|cffb19cd9" .. t.name .. "|r";
-	end,
-	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID));
-	end,
-	["link"] = function(t)
-		return (t.itemID and select(2, GetItemInfo(t.itemID))) or GetSpellLink(t.spellID);
-	end,
-	["f"] = function(t)
-		return app.FilterConstants.MOUNTS;
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Mounts;
-	end,
-	["explicitlyCollected"] = function(t)
-		return IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) or (t.itemID and GetItemCount(t.itemID, true) > 0);
-	end,
-	["b"] = function(t)
-		return (t.parent and t.parent.b) or 1;
-	end,
-	["name"] = function(t)
-		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
-	end,
-	["tsmForItem"] = function(t)
-		if t.itemID then return ("i:%d"):format(t.itemID); end
-		if t.parent and t.parent.itemID then return ("i:%d"):format(t.parent.itemID); end
-	end,
-	["linkForItem"] = function(t)
-		return select(2, GetItemInfo(t.itemID)) or GetSpellLink(t.spellID);
-	end,
-};
-
-if C_PetJournal and app.GameBuildVersion > 30000 then
-	local C_PetJournal = _G["C_PetJournal"];
-	-- Once the Pet Journal API is available, then all pets become account wide.
-	SetBattlePetCollected = function(t, speciesID, collected)
-		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
-	end
-	speciesFields.icon = function(t)
-		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end
-	speciesFields.name = function(t)
-		return C_PetJournal.GetPetInfoBySpeciesID(t.speciesID) or (t.itemID and GetItemInfo(t.itemID)) or RETRIEVING_DATA;
-	end
-	speciesFields.petTypeID = function(t)
-		return select(3, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end
-	speciesFields.displayID = function(t)
-		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end
-	speciesFields.description = function(t)
-		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end
-	speciesFields.collected = function(t)
-		local count = C_PetJournal.GetNumCollectedInfo(t.speciesID);
-		return SetBattlePetCollected(t, t.speciesID, count and count > 0);
-	end
-
-	local C_MountJournal = _G["C_MountJournal"];
-	if C_MountJournal then
-		-- Once the Mount Journal API is available, then all mounts become account wide.
-		SetMountCollected = function(t, spellID, collected)
-			return app.SetAccountCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
-		end
-		local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
-			local allMountIDs = C_MountJournal.GetMountIDs();
-			if allMountIDs and #allMountIDs > 0 then
-				for i,mountID in ipairs(allMountIDs) do
-					local spellID = select(2, C_MountJournal.GetMountInfoByID(mountID));
-					if spellID then rawset(t, spellID, mountID); end
-				end
-				setmetatable(t, nil);
-				return rawget(t, id);
-			end
-		end });
-		mountFields.mountID = function(t)
-			return SpellIDToMountID[t.spellID];
-		end
-		mountFields.name = function(t)
-			local mountID = t.mountID;
-			if mountID then return C_MountJournal.GetMountInfoByID(mountID); end
-			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
-		end
-		mountFields.displayID = function(t)
-			local mountID = t.mountID;
-			if mountID then return C_MountJournal.GetMountInfoExtraByID(mountID); end
-		end
-		mountFields.lore = function(t)
-			local mountID = t.mountID;
-			if mountID then return select(2, C_MountJournal.GetMountInfoExtraByID(mountID)); end
-		end
-		mountFields.collected = function(t)
-			local mountID = t.mountID;
-			if mountID then
-				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountID);
-				return SetMountCollected(t, spellID, isCollected);
-			else
-				local spellID = t.spellID;
-				for i,o in ipairs(SearchForField("spellID", spellID)) do
-					if o.explicitlyCollected then
-						return SetMountCollected(t, spellID, true);
-					end
-				end
-				return SetMountCollected(t, spellID, false);
-			end
-		end
-	else
-		mountFields.name = function(t)
-			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
-		end
-		mountFields.collected = function(t)
-			local spellID = t.spellID;
-			for i,o in ipairs(SearchForField("spellID", spellID)) do
-				if o.explicitlyCollected then
-					return SetMountCollected(t, spellID, true);
-				end
-			end
-			return SetMountCollected(t, spellID, false);
-		end
-	end
-else
-	speciesFields.icon = function(t)
-		if t.itemID then
-			return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
-		end
-		return "Interface\\Icons\\INV_Misc_QuestionMark";
-	end
-	speciesFields.name = function(t)
-		return t.itemID and GetItemInfo(t.itemID) or RETRIEVING_DATA;
-	end
-	mountFields.name = function(t)
-		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
-	end
-	if GetCompanionInfo and GetNumCompanions("CRITTER") ~= nil then
-		local CollectedBattlePetHelper = {};
-		local CollectedMountHelper = {};
-		local function RefreshCompanionCollectionStatus(companionType)
-			local anythingNew = false;
-			if not companionType or companionType == "CRITTER" then
-				setmetatable(CollectedBattlePetHelper, nil);
-				local critterCount = GetNumCompanions("CRITTER");
-				if not critterCount then
-					print("Failed to get Companion Info for Critters");
-				else
-					for i=critterCount,1,-1 do
-						local spellID = select(3, GetCompanionInfo("CRITTER", i));
-						if spellID then
-							if not CollectedBattlePetHelper[spellID] then
-								CollectedBattlePetHelper[spellID] = true;
-								anythingNew = true;
-							end
-						else
-							print("Failed to get Companion Info for Critter ".. i);
-						end
-					end
-				end
-			end
-			if not companionType or companionType == "MOUNT" then
-				setmetatable(CollectedMountHelper, nil);
-				for i=GetNumCompanions("MOUNT"),1,-1 do
-					local spellID = select(3, GetCompanionInfo("MOUNT", i));
-					if spellID then
-						if not CollectedMountHelper[spellID] then
-							CollectedMountHelper[spellID] = true;
-							anythingNew = true;
-						end
-					else
-						print("Failed to get Companion Info for Mount ".. i);
-					end
-				end
-			end
-			if anythingNew then app:RefreshDataQuietly("RefreshCompanionCollectionStatus", true); end
-		end
-		local meta = { __index = function(t, spellID)
-			RefreshCompanionCollectionStatus();
-			return rawget(t, spellID);
-		end };
-		setmetatable(CollectedBattlePetHelper, meta);
-		setmetatable(CollectedMountHelper, meta);
-		speciesFields.collected = function(t)
-			return SetBattlePetCollected(t, t.speciesID, (t.spellID and CollectedBattlePetHelper[t.spellID]));
-		end
-		mountFields.collected = function(t)
-			return SetMountCollected(t, t.spellID, (t.spellID and CollectedMountHelper[t.spellID]));
-		end
-		app:RegisterEvent("COMPANION_LEARNED");
-		app:RegisterEvent("COMPANION_UNLEARNED");
-		app:RegisterEvent("COMPANION_UPDATE");
-		app.events.COMPANION_LEARNED = RefreshCompanionCollectionStatus;
-		app.events.COMPANION_UNLEARNED = RefreshCompanionCollectionStatus;
-		app.events.COMPANION_UPDATE = RefreshCompanionCollectionStatus;
-	else
-		speciesFields.collected = function(t)
-			return SetBattlePetCollected(t, t.speciesID, t.itemID and GetItemCount(t.itemID, true) > 0);
-		end
-		mountFields.collected = function(t)
-			local spellID = t.spellID;
-			for i,o in ipairs(SearchForField("spellID", spellID)) do
-				if o.explicitlyCollected then
-					return SetMountCollected(t, spellID, true);
-				end
-			end
-			return SetMountCollected(t, spellID, false);
-		end
-	end
-end
-
-app.CreateMount = app.CreateClass("Mount", "spellID", mountFields,
-	"WithItem", {	-- This is a conditional contructor.
-		link = mountFields.linkForItem;
-		tsm = mountFields.tsmForItem
-	}, function(t) return t.itemID; end);
-app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["text"] = function(t)
-		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
-	end,
-	["icon"] = function(t)
-		return app.asset("Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID]);
-	end,
-});
-app.CreateSpecies = app.CreateClass("Species", "speciesID", speciesFields);
-end)();
 
 -- Currency Lib
 (function()
@@ -3886,529 +3620,6 @@ app.events.TAXIMAP_OPENED = function()
 end
 end)();
 
--- Item Lib
-(function()
-local suffixItemStringFormat = "item:%d:0:0:0:0:0:%d";
-local BestSuffixPerItemID = setmetatable({}, { __index = function(t, id)
-	local suffixes = GetDataSubMember("ValidSuffixesPerItemID", id);
-	if suffixes then
-		for suffixID,_ in pairs(suffixes) do
-			rawset(t, id, suffixID);
-			return suffixID;
-		end
-	else
-		-- No valid suffixes
-		rawset(t, id, 0);
-		return 0;
-	end
-end });
-local TotalRetriesPerItemID = setmetatable({}, { __index = function(t, id)
-	return 0;
-end });
-local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
-	local suffixID = BestSuffixPerItemID[id];
-	local link = select(2, GetItemInfo(suffixID > 0 and suffixItemStringFormat:format(id, suffixID) or id));
-	if link then
-		rawset(t, id, link);
-		return link;
-	end
-end });
-local baseGetItemCount = function(t)
-	return GetItemCount(t.itemID, true);
-end;
-app.ParseItemID = function(itemName)
-	if type(itemName) == "number" then
-		return itemName;
-	else
-		local itemID = tonumber(itemName);
-		if tostring(itemID):match(itemName) then
-			-- This was actually an item ID.
-			return itemID;
-		else
-			-- The itemID given was actually the name or a link.
-			itemID = GetItemInfoInstant(itemName);
-			if itemID then
-				-- Oh good, it was cached by WoW.
-				return itemID;
-			else
-				-- Oh no, gonna need to work for it.
-				for id,_ in pairs(SearchForFieldContainer("itemID")) do
-					local text = BestItemLinkPerItemID[id];
-					if text and text:match(itemName) then
-						return id;
-					end
-				end
-			end
-		end
-	end
-end
-app.ClearItemCache = function()
-	wipe(BestSuffixPerItemID);
-	wipe(BestItemLinkPerItemID);
-end
-local collectibleAsCostForItem = function(t)
-	local id = t.itemID;
-	local results = SearchForField("itemIDAsCost", id);
-	if #results > 0 then
-		local costTotal = 0;
-		if not t.parent or not t.parent.saved then
-			for _,ref in pairs(results) do
-				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-					if ref.key == "instanceID" or ((ref.key == "difficultyID" or ref.key == "mapID" or ref.key == "headerID") and (ref.parent and GetRelativeValue(ref.parent, "instanceID"))) then
-						if costTotal < 1 then	-- This is for Keys
-							costTotal = costTotal + 1;
-						end
-					elseif (ref.collectible and not ref.collected) or (ref.total and ref.total > ref.progress) then
-						if ref.cost then
-							for k,v in ipairs(ref.cost) do
-								if v[2] == id and v[1] == "i" then
-									costTotal = costTotal + (v[3] or 1);
-								end
-							end
-						end
-						if ref.providers then
-							for k,v in ipairs(ref.providers) do
-								if v[2] == id and v[1] == "i" then
-									if ref.objectiveID then
-										costTotal = costTotal + (t.objectiveCost or 0);
-									else
-										costTotal = costTotal + 1;
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-		t.costTotal = costTotal;
-		return costTotal > 0;
-	elseif t.simplemeta then
-		-- If no references to the item were used as a cost evaluation, then simplify the meta.
-		setmetatable(t, t.simplemeta);
-		return false;
-	end
-end;
-local collectedAsCostForItem = function(t)
-	if t.costTotal and t.costTotal > 0 then
-		return t.GetItemCount(t) >= t.costTotal;
-	end
-end;
-local collectibleAsQuest = function(t)
-	if app.Settings.Collectibles.Quests then
-		if (not t.repeatable and not t.isBreadcrumb) or C_QuestLog_IsOnQuest(t.questID) then
-			return true;
-		end
-	end
-end
-local isCollectibleTransmog = function(t)
-	if t.f and app.Settings:GetFilterForTransmogBase(t.f) then
-		if t.sourceID then
-			return true;
-		end
-		local itemID = t.itemID;
-		if itemID and t.collectible ~= false then
-			--if t.rwp or (t.u and (t.u == 2 or t.u == 3 or t.u == 4)) then
-			--	print("Missing SourceID for RWP", itemID);
-			--end
-			t.missingSourceID = true;
-		end
-	end
-end
-local collectedAsTransmog = function(t)
-	local sourceID = t.sourceID;
-	if sourceID and app.Settings.Collectibles.Transmog then
-		-- If it's a BOE we can collect it on this character.
-		local id, b = t.itemID, t.b;
-		if not b or b == 2 or b == 3 then
-			-- This item is BOE. You CAN collect this on this character! (but not from a quest)
-			return app.SetCollected(t, "Transmog", sourceID, GetItemCount(id, true) > 0);
-		elseif app.Settings:GetFilterForTransmog(t.f) or (t.filterForRWP and app.Settings:GetFilterForTransmog(t.filterForRWP)) then
-			-- This character matches requirements
-			if GetItemCount(id, true) > 0 then
-				-- You kept this item. Nice!
-				return app.SetCollected(t, "Transmog", sourceID, true);
-			else
-				-- Check to see if this item was a quest reward.
-				local searchResults = SearchForField("itemID", id);
-				if #searchResults > 0 then
-					for i,o in ipairs(searchResults) do
-						if ((o.key == "questID" and o.saved) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultCharacterRequirementsFilter(o) then
-							return app.SetCollected(t, "Transmog", sourceID, true);
-						end
-					end
-					return app.SetCollected(t, "Transmog", sourceID, false);
-				end
-			end
-		else
-			-- This character does NOT match requirements and the item is BOP. You can't collect these on this character. :(
-			return app.SetCollected(t, "Transmog", sourceID, false);
-		end
-	end
-end;
-local isCollectibleTransmogField = function(t)
-	if t.collectibleAsCost then return true; end
-	if app.Settings.Collectibles.Transmog then
-		if app.Settings.OnlyRWP and not t.rwp then return false; end
-		return true;
-	end
-end
-local itemFields = {
-	["text"] = function(t)
-		return t.link;
-	end,
-	["icon"] = function(t)
-		return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
-	end,
-	["link"] = function(t)
-		return BestItemLinkPerItemID[t.itemID];
-	end,
-	["name"] = function(t)
-		local link = t.link;
-		return link and GetItemInfo(link);
-	end,
-	["iLvl"] = function(t)
-		local link = t.link;
-		return link and select(4, GetItemInfo(link));
-	end,
-	["f"] = function(t)
-		if t.questID then return app.FilterConstants.QUEST_ITEMS; end
-		if #SearchForField("itemIDAsCost", t.itemID) > 0 then
-			return app.FilterConstants.QUEST_ITEMS;
-		end
-	end,
-	["tsm"] = function(t)
-		return ("i:%d"):format(t.itemID);
-	end,
-	["GetItemCount"] = function(t)
-		return baseGetItemCount;
-	end,
-	["collectible"] = function(t)
-		return t.collectibleAsCost;
-	end,
-	["collected"] = function(t)
-		return t.collectedAsCost;
-	end,
-	["collectibleAsCost"] = collectibleAsCostForItem,	-- These two references can get replaced/removed
-	["collectedAsCost"] = collectedAsCostForItem,
-};
-app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
-"AsTransmog", {
-	collectible = isCollectibleTransmogField,
-	collected = function(t)
-		if t.collectedAsCost == false then
-			return;
-		end
-		return collectedAsTransmog(t);
-	end,
-}, isCollectibleTransmog,
-"WithQuest", {
-	collectible = function(t)
-		return t.collectibleAsCost or collectibleAsQuest(t);
-	end,
-	collected = function(t)
-		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
-	end,
-	trackable = app.ReturnTrue,
-	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
-	end
-}, (function(t) return t.questID; end),
-"WithFaction", {
-	collectible = function(t)
-		return t.collectibleAsCost or app.Settings.Collectibles.Reputations;
-	end,
-	collected = function(t)
-		if t.collectedAsCost == false then
-			return 0;
-		end
-		-- This is used by reputation tokens. (turn in items)
-		if app.CurrentCharacter.Factions[t.factionID] then return 1; end
-		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
-	end,
-}, (function(t) return t.factionID; end));
-
--- Heirloom Lib
-if C_Heirloom and app.GameBuildVersion >= 30000 then
-	-- Heirloom API is available. Awesome!
-	local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
-	local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
-	local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
-	local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
-	local heirloomIDs = {};
-	local CreateHeirloomUnlock = app.CreateClass("HeirloomUnlock", "heirloomUnlockID", {
-		name = function(t)
-			return L["HEIRLOOM_TEXT"];
-		end,
-		icon = function(t)
-			return app.asset("Weapon_Type_Heirloom");
-		end,
-		description = function(t)
-			return L["HEIRLOOM_TEXT_DESC"];
-		end,
-		collectible = function(t)
-			return app.Settings.Collectibles.Heirlooms;
-		end,
-		collected = function(t)
-			return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
-		end,
-	});
-
-	-- Clone base item fields and extend the properties.
-	local heirloomFields = {
-		icon = function(t)
-			return select(4, C_Heirloom_GetHeirloomInfo(t.heirloomID)) or select(5, GetItemInfoInstant(t.heirloomID));
-		end,
-		link = function(t)
-			return C_Heirloom_GetHeirloomLink(t.heirloomID) or select(2, GetItemInfo(t.heirloomID));
-		end,
-		itemID = function(t)
-			return t.heirloomID;
-		end
-	};
-
-	-- Are heirloom upgrades available? (6.1.0.19445)
-	local gameBuildVersion = app.GameBuildVersion;
-	if gameBuildVersion > 60100 then
-		-- Extend the heirloom lib to account for upgrade levels.
-		local armorTextures = {
-			"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
-			"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
-			"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
-			"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder",
-			"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder",
-			"Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02",
-		};
-		local weaponTextures = {
-			"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
-			"Interface/ICONS/INV_Icon_HeirloomToken_Weapon02",
-			"Interface/ICONS/inv_weapon_shortblade_112",
-			"Interface/ICONS/inv_weapon_shortblade_111",
-			"Interface/ICONS/inv_weapon_shortblade_102",
-			"Interface/ICONS/inv_weapon_shortblade_84",
-		};
-
-		local weaponFilterIDs = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
-		local hierloomLevelFields = {
-			["key"] = function(t)
-				return "heirloomLevelID";
-			end,
-			["level"] = function(t)
-				return 1;
-			end,
-			["name"] = function(t)
-				t.name = HEIRLOOM_UPGRADE_TOOLTIP_FORMAT:format(t.level, t.levelMax);
-				return t.name;
-			end,
-			["icon"] = function(t)
-				return t.isWeapon and weaponTextures[t.level] or armorTextures[t.level];
-			end,
-			["description"] = function(t)
-				return L["HEIRLOOMS_UPGRADES_DESC"];
-			end,
-			["collectible"] = function(t)
-				return app.Settings.Collectibles.Heirlooms and app.Settings.Collectibles.HeirloomUpgrades;
-			end,
-			["collected"] = function(t)
-				local itemID = t.heirloomLevelID;
-				if itemID then
-					if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return true; end
-					local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
-					if level then
-						ATTAccountWideData.HeirloomRanks[itemID] = level;
-						if t.level <= level then return true; end
-					end
-				end
-			end,
-			["trackable"] = app.ReturnTrue,
-			["isWeapon"] = function(t)
-				local isWeapon = t.f and contains(weaponFilterIDs, t.f);
-				t.isWeapon = isWeapon;
-				return isWeapon;
-			end,
-		};
-		local CreateHeirloomLevel = app.CreateClass("HeirloomLevel", "heirloomLevelID", hierloomLevelFields);
-		heirloomFields.isWeapon = hierloomLevelFields.isWeapon;
-		heirloomFields.saved = function(t)
-			return t.collected == 1;
-		end
-
-		-- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
-		-- upgrade levels into the respective upgrade tokens
-		app.CacheHeirlooms = function()
-			-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
-			if #heirloomIDs < 1 then return; end
-
-			-- Setup upgrade tokens that contain levels for the heirlooms. Order matters.
-			-- Ranks 1 & 2 were added with WOD (6.1.0.19445)
-			local armorTokenItemIDs = {
-				122338,	-- Rank 1: Ancient Heirloom Armor Casing
-				122340,	-- Rank 2: Timeworn Heirloom Armor Casing
-			};
-			local weaponTokenItemIDs = {
-				122339,	-- Rank 1: Ancient Heirloom Scabbard
-				122341,	-- Rank 2: Timeworn Heirloom Scabbard
-			};
-
-			-- Rank 3 was added with Legion (7.2.5.24076)
-			if gameBuildVersion > 70205 then
-				tinsert(armorTokenItemIDs, 151614);		-- Weathered Heirloom Armor Casing
-				tinsert(weaponTokenItemIDs, 151615);		-- Weathered Heirloom Scabbard
-
-				-- Rank 4 was added with BFA (8.1.5.29701)
-				if gameBuildVersion > 80105 then
-					tinsert(armorTokenItemIDs, 167731);		-- Battle-Hardened Heirloom Armor Casing
-					tinsert(weaponTokenItemIDs, 167732);		-- Battle-Hardened Heirloom Scabbard
-
-					-- Rank 5 was added with Shadowlands (9.1.5.40871)
-					if gameBuildVersion > 90105 then
-						tinsert(armorTokenItemIDs, 187997);		-- Eternal Heirloom Armor Casing
-						tinsert(weaponTokenItemIDs, 187998);		-- Eternal Heirloom Scabbard
-
-						-- Rank 6 was added with Dragonflight (10.1.0.49407)
-						if gameBuildVersion > 100100 then
-							tinsert(armorTokenItemIDs, 204336);		-- Awakened Heirloom Armor Casing
-							tinsert(weaponTokenItemIDs, 204337);		-- Awakened Heirloom Scabbard
-						end
-					end
-				end
-			end
-
-			-- Build headers that will contain each type.
-			local armorTokens, weaponTokens = {}, {};
-			for i=#armorTokenItemIDs,1,-1 do
-				tinsert(armorTokens, app.CreateItem(armorTokenItemIDs[i], {
-					collectible = false,
-					g = {},
-				}));
-				tinsert(weaponTokens, app.CreateItem(weaponTokenItemIDs[i], {
-					collectible = false,
-					g = {},
-				}));
-			end
-
-
-			-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
-			local Search = app.SearchForObject;
-			local uniques, heirloom, upgrades = {};
-			for _,itemID in ipairs(heirloomIDs) do
-				if not uniques[itemID] then
-					uniques[itemID] = true;
-					heirloom = Search("itemID", itemID, "field");
-					if heirloom then
-						upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
-						if upgrades and upgrades > 0 then
-							local meta = { __index = heirloom };
-							local tokenType = heirloom.isWeapon and weaponTokens or armorTokens;
-							for i=1,upgrades,1 do
-								-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
-								tinsert(tokenType[upgrades + 1 - i].g,
-								setmetatable({ collectible = false, g = {
-									CreateHeirloomLevel({
-										heirloomLevelID = itemID,
-										levelMax = upgrades,
-										level = i,
-										f = heirloom.f,
-										e = heirloom.e,
-										u = heirloom.u,
-									})
-								}}, meta));
-							end
-						end
-					end
-				end
-			end
-
-			-- build groups for each upgrade token
-			-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
-			-- where the sources of the upgrade tokens exist
-			for i,item in ipairs(armorTokens) do
-				for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-					-- ensure the tokens do not have a modID attached
-					token.modID = nil;
-					token.modItemID = nil;
-					if not token.sym then
-						for _,heirloom in ipairs(item.g) do
-							NestObject(token, heirloom, true);
-						end
-						AssignChildren(token);
-					end
-				end
-			end
-			for i,item in ipairs(weaponTokens) do
-				for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-					-- ensure the tokens do not have a modID attached
-					token.modID = nil;
-					token.modItemID = nil;
-					if not token.sym then
-						for _,heirloom in ipairs(item.g) do
-							NestObject(token, heirloom, true);
-						end
-						AssignChildren(token);
-					end
-				end
-			end
-
-			wipe(heirloomIDs);
-		end
-	end
-
-	local CreateHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", heirloomFields,
-	"AsTransmog", {
-		collectible = function(t)
-			return t.collectibleAsCost or app.Settings.Collectibles.Transmog;
-		end,
-		collected = function(t)
-			if t.collectedAsCost == false then
-				return;
-			end
-			return collectedAsTransmog(t);
-		end,
-		description = function()
-			return "This item also has a sourceID with it, keep at least one somewhere on your account. I'm not sure if Blizzard is planning on deprecating this completely before transmog comes out or not!\n\n  - Crieve";
-		end,
-	}, isCollectibleTransmog,
-	"WithFaction", {
-		collectible = function(t)
-			return t.collectibleAsCost or app.Settings.Collectibles.Reputations;
-		end,
-		collected = function(t)
-			if t.collectedAsCost == false then
-				return 0;
-			end
-			if t.repeatable then
-				return (app.CurrentCharacter.Factions[t.factionID] and 1)
-					or (ATTAccountWideData.Factions[t.factionID] and 2);
-			else
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if select(15, GetFactionInfoByID(t.factionID)) then
-					ATTAccountWideData.FactionBonus[t.factionID] = 1;
-					return 1;
-				end
-			end
-			-- This is used by reputation tokens. (turn in items)
-			if app.CurrentCharacter.Factions[t.factionID] then return 1; end
-			if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
-		end,
-	}, (function(t) return t.factionID; end));
-	app.CreateHeirloom = function(id, t)
-		t = CreateHeirloom(id, t);
-		--t.b = 2;	-- Heirlooms are always BoA
-
-		-- unlocking the heirloom is the only thing contained in the heirloom
-		t.g = { CreateHeirloomUnlock(id, { e = t.e, u = t.u }); }
-		tinsert(heirloomIDs, id);
-		return t;
-	end
-else
-	-- No difference between an item and an heirloom in classic, yet.
-	app.CreateHeirloom = function(id, t)
-		return app.CreateItem(id, t);
-	end
-end
-end)();
-
 -- NPC Lib
 (function()
 -- NPC Model Harvester (also acquires the displayID)
@@ -4612,6 +3823,7 @@ local HeaderTypeAbbreviations = {
 	["m"] = "mapID",
 	["n"] = "npcID",
 	["i"] = "itemID",
+	["o"] = "objectID",
 	["q"] = "questID",
 	["s"] = "spellID",
 };
@@ -4655,6 +3867,12 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 		if typ then
 			local cache = SearchForField(typ, t.autoID);
 			if #cache > 0 then
+				for i,o in ipairs(cache) do
+					if o.key == typ then
+						t.result = o;
+						return o;
+					end
+				end
 				t.result = cache[1];
 				return cache[1];
 			else
@@ -4922,21 +4140,23 @@ app.SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
 			for spellIndex=1,numSpells do
 				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset, BOOKTYPE_SPELL);
-				currentSpellRank = GetSpellRank(spellID);
-				if not currentSpellRank then
-					if lastSpellName == spellName then
-						currentSpellRank = lastSpellRank + 1;
-					else
-						lastSpellName = spellName;
-						currentSpellRank = 1;
+				if spellName then
+					currentSpellRank = GetSpellRank(spellID);
+					if not currentSpellRank then
+						if lastSpellName == spellName then
+							currentSpellRank = lastSpellRank + 1;
+						else
+							lastSpellName = spellName;
+							currentSpellRank = 1;
+						end
 					end
+					app.GetSpellName(spellID, currentSpellRank);
+					if not rawget(t, spellName) then
+						rawset(t, spellName, spellID);
+					end
+					lastSpellRank = currentSpellRank;
+					offset = offset + 1;
 				end
-				app.GetSpellName(spellID, currentSpellRank);
-				if not rawget(t, spellName) then
-					rawset(t, spellName, spellID);
-				end
-				lastSpellRank = currentSpellRank;
-				offset = offset + 1;
 			end
 		end
 		return rawget(t, key);
@@ -4978,7 +4198,9 @@ local spellFields = {
 	["craftTypeID"] = function(t)
 		return app.CurrentCharacter.SpellRanks[t.spellID];
 	end,
-	["trackable"] = app.ReturnTrue,
+	["trackable"] = function(t)
+		return GetSpellCooldown(t.spellID) > 0;
+	end,
 	["saved"] = function(t)
 		return GetSpellCooldown(t.spellID) > 0 and 1;
 	end,
@@ -5000,6 +4222,7 @@ end;
 recipeFields.f = function(t)
 	return app.FilterConstants.RECIPES;
 end;
+recipeFields.IsClassIsolated = true;
 local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 "WithItem", {
 	baseIcon = function(t)
@@ -5037,6 +4260,265 @@ app.CreateSpell = function(id, t)
 end
 end)();
 
+
+-- Companion Lib
+(function()
+local SetBattlePetCollected = function(t, speciesID, collected)
+	return app.SetCollected(t, "BattlePets", speciesID, collected);
+end
+local SetMountCollected = function(t, spellID, collected)
+	return app.SetCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
+end
+local speciesFields = {
+	["f"] = function(t)
+		return app.FilterConstants.BATTLE_PETS;
+	end,
+	["collectible"] = function(t)
+		return app.Settings.Collectibles.BattlePets;
+	end,
+	["text"] = function(t)
+		return "|cff0070dd" .. (t.name or RETRIEVING_DATA) .. "|r";
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local link = select(2, GetItemInfo(t.itemID));
+			if link and not IsRetrieving(link) then
+				t.link = link;
+				return link;
+			end
+		end
+	end,
+	["tsm"] = function(t)
+		if t.itemID then return ("i:%d"):format(t.itemID); end
+		return ("p:%d:1:3"):format(t.speciesID);
+	end,
+};
+local mountFields = {
+	IsClassIsolated = true,
+	["text"] = function(t)
+		return "|cffb19cd9" .. t.name .. "|r";
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["link"] = function(t)
+		return (t.itemID and select(2, GetItemInfo(t.itemID))) or GetSpellLink(t.spellID);
+	end,
+	["f"] = function(t)
+		return app.FilterConstants.MOUNTS;
+	end,
+	["collectible"] = function(t)
+		return app.Settings.Collectibles.Mounts;
+	end,
+	["explicitlyCollected"] = function(t)
+		return IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) or (t.itemID and GetItemCount(t.itemID, true) > 0);
+	end,
+	["b"] = function(t)
+		return (t.parent and t.parent.b) or 1;
+	end,
+	["name"] = function(t)
+		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+	end,
+	["tsmForItem"] = function(t)
+		if t.itemID then return ("i:%d"):format(t.itemID); end
+		if t.parent and t.parent.itemID then return ("i:%d"):format(t.parent.itemID); end
+	end,
+	["linkForItem"] = function(t)
+		return select(2, GetItemInfo(t.itemID)) or GetSpellLink(t.spellID);
+	end,
+};
+
+if C_PetJournal and app.GameBuildVersion > 30000 then
+	local C_PetJournal = _G["C_PetJournal"];
+	-- Once the Pet Journal API is available, then all pets become account wide.
+	SetBattlePetCollected = function(t, speciesID, collected)
+		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
+	end
+	speciesFields.icon = function(t)
+		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end
+	speciesFields.name = function(t)
+		return C_PetJournal.GetPetInfoBySpeciesID(t.speciesID) or (t.itemID and GetItemInfo(t.itemID)) or RETRIEVING_DATA;
+	end
+	speciesFields.petTypeID = function(t)
+		return select(3, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end
+	speciesFields.displayID = function(t)
+		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end
+	speciesFields.description = function(t)
+		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end
+	speciesFields.collected = function(t)
+		local count = C_PetJournal.GetNumCollectedInfo(t.speciesID);
+		return SetBattlePetCollected(t, t.speciesID, count and count > 0);
+	end
+
+	local C_MountJournal = _G["C_MountJournal"];
+	if C_MountJournal then
+		-- Once the Mount Journal API is available, then all mounts become account wide.
+		SetMountCollected = function(t, spellID, collected)
+			return app.SetAccountCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
+		end
+		local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
+			local allMountIDs = C_MountJournal.GetMountIDs();
+			if allMountIDs and #allMountIDs > 0 then
+				for i,mountID in ipairs(allMountIDs) do
+					local spellID = select(2, C_MountJournal.GetMountInfoByID(mountID));
+					if spellID then rawset(t, spellID, mountID); end
+				end
+				setmetatable(t, nil);
+				return rawget(t, id);
+			end
+		end });
+		mountFields.mountID = function(t)
+			return SpellIDToMountID[t.spellID];
+		end
+		mountFields.name = function(t)
+			local mountID = t.mountID;
+			if mountID then return C_MountJournal.GetMountInfoByID(mountID); end
+			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+		end
+		mountFields.displayID = function(t)
+			local mountID = t.mountID;
+			if mountID then return C_MountJournal.GetMountInfoExtraByID(mountID); end
+		end
+		mountFields.lore = function(t)
+			local mountID = t.mountID;
+			if mountID then return select(2, C_MountJournal.GetMountInfoExtraByID(mountID)); end
+		end
+		mountFields.collected = function(t)
+			local mountID = t.mountID;
+			if mountID then
+				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountID);
+				return SetMountCollected(t, spellID, isCollected);
+			else
+				local spellID = t.spellID;
+				for i,o in ipairs(SearchForField("spellID", spellID)) do
+					if o.explicitlyCollected then
+						return SetMountCollected(t, spellID, true);
+					end
+				end
+				return SetMountCollected(t, spellID, false);
+			end
+		end
+	else
+		mountFields.name = function(t)
+			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+		end
+		mountFields.collected = function(t)
+			local spellID = t.spellID;
+			for i,o in ipairs(SearchForField("spellID", spellID)) do
+				if o.explicitlyCollected then
+					return SetMountCollected(t, spellID, true);
+				end
+			end
+			return SetMountCollected(t, spellID, false);
+		end
+	end
+else
+	speciesFields.icon = function(t)
+		if t.itemID then
+			return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		end
+		return "Interface\\Icons\\INV_Misc_QuestionMark";
+	end
+	speciesFields.name = function(t)
+		return t.itemID and GetItemInfo(t.itemID) or RETRIEVING_DATA;
+	end
+	mountFields.name = function(t)
+		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+	end
+	if GetCompanionInfo and GetNumCompanions("CRITTER") ~= nil then
+		local CollectedBattlePetHelper = {};
+		local CollectedMountHelper = {};
+		local function RefreshCompanionCollectionStatus(companionType)
+			local anythingNew = false;
+			if not companionType or companionType == "CRITTER" then
+				setmetatable(CollectedBattlePetHelper, nil);
+				local critterCount = GetNumCompanions("CRITTER");
+				if not critterCount then
+					print("Failed to get Companion Info for Critters");
+				else
+					for i=critterCount,1,-1 do
+						local spellID = select(3, GetCompanionInfo("CRITTER", i));
+						if spellID then
+							if not CollectedBattlePetHelper[spellID] then
+								CollectedBattlePetHelper[spellID] = true;
+								anythingNew = true;
+							end
+						else
+							print("Failed to get Companion Info for Critter ".. i);
+						end
+					end
+				end
+			end
+			if not companionType or companionType == "MOUNT" then
+				setmetatable(CollectedMountHelper, nil);
+				for i=GetNumCompanions("MOUNT"),1,-1 do
+					local spellID = select(3, GetCompanionInfo("MOUNT", i));
+					if spellID then
+						if not CollectedMountHelper[spellID] then
+							CollectedMountHelper[spellID] = true;
+							anythingNew = true;
+						end
+					else
+						print("Failed to get Companion Info for Mount ".. i);
+					end
+				end
+			end
+			if anythingNew then app:RefreshDataQuietly("RefreshCompanionCollectionStatus", true); end
+		end
+		local meta = { __index = function(t, spellID)
+			RefreshCompanionCollectionStatus();
+			return rawget(t, spellID);
+		end };
+		setmetatable(CollectedBattlePetHelper, meta);
+		setmetatable(CollectedMountHelper, meta);
+		speciesFields.collected = function(t)
+			return SetBattlePetCollected(t, t.speciesID, (t.spellID and CollectedBattlePetHelper[t.spellID]));
+		end
+		mountFields.collected = function(t)
+			return SetMountCollected(t, t.spellID, (t.spellID and CollectedMountHelper[t.spellID]));
+		end
+		app:RegisterEvent("COMPANION_LEARNED");
+		app:RegisterEvent("COMPANION_UNLEARNED");
+		app:RegisterEvent("COMPANION_UPDATE");
+		app.events.COMPANION_LEARNED = RefreshCompanionCollectionStatus;
+		app.events.COMPANION_UNLEARNED = RefreshCompanionCollectionStatus;
+		app.events.COMPANION_UPDATE = RefreshCompanionCollectionStatus;
+	else
+		speciesFields.collected = function(t)
+			return SetBattlePetCollected(t, t.speciesID, t.itemID and GetItemCount(t.itemID, true) > 0);
+		end
+		mountFields.collected = function(t)
+			local spellID = t.spellID;
+			for i,o in ipairs(SearchForField("spellID", spellID)) do
+				if o.explicitlyCollected then
+					return SetMountCollected(t, spellID, true);
+				end
+			end
+			return SetMountCollected(t, spellID, false);
+		end
+	end
+end
+
+app.CreateMount = app.CreateClass("Mount", "spellID", mountFields,
+	"WithItem", {	-- This is a conditional contructor.
+		link = mountFields.linkForItem;
+		tsm = mountFields.tsmForItem
+	}, function(t) return t.itemID; end);
+app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
+	["text"] = function(t)
+		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
+	end,
+	["icon"] = function(t)
+		return app.asset("Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID]);
+	end,
+});
+app.CreateSpecies = app.CreateClass("Species", "speciesID", speciesFields);
+end)();
+
 -- Unsupported Libs
 (function()
 app.CreateMusicRoll = app.CreateUnimplementedClass("MusicRoll", "questID");
@@ -5065,7 +4547,7 @@ local function RefreshSaves()
 	for guid,character in pairs(ATTCharacterData) do
 		local locks = character.Lockouts;
 		if locks then
-			for name,instance in pairs(locks) do
+			for instanceID,instance in pairs(locks) do
 				local count = 0;
 				for difficulty,lock in pairs(instance) do
 					if type(lock) ~= "table" or type(lock.reset) ~= "number" or serverTime >= lock.reset then
@@ -5077,7 +4559,7 @@ local function RefreshSaves()
 				end
 				if count == 0 then
 					-- Clean this up.
-					locks[name] = nil;
+					locks[instanceID] = nil;
 				end
 			end
 		end
@@ -5098,15 +4580,15 @@ local function RefreshSaves()
 	-- Update Saved Instances
 	local myLockouts = app.CurrentCharacter.Lockouts;
 	for instanceIter=1,GetNumSavedInstances() do
-		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
-		if locked then
+		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters, encounterProgress, extendDisabled, savedInstanceID = GetSavedInstanceInfo(instanceIter);
+		if locked and savedInstanceID then
 			-- Update the name of the instance and cache the lock for this instance
 			difficulty = difficulty or 7;
 			reset = serverTime + reset;
-			local locks = myLockouts[name];
+			local locks = myLockouts[savedInstanceID];
 			if not locks then
 				locks = {};
-				myLockouts[name] = locks;
+				myLockouts[savedInstanceID] = locks;
 			end
 
 			-- Create the lock for this difficulty
@@ -5625,6 +5107,9 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;
+		local function IsAccountCached(field, id)
+			return accountWideData[field][id] or nil
+		end
 		local function SetAccountCollected(t, field, id, collected)
 			local container = accountWideData[field];
 			local oldstate = container[id];
@@ -5741,6 +5226,7 @@ local ADDON_LOADED_HANDLERS = {
 				return 2;
 			end
 		end
+		app.IsAccountCached = IsAccountCached;
 		app.SetAccountCollected = SetAccountCollected;
 		app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
 		app.SetCollected = SetCollected;
@@ -5751,7 +5237,6 @@ local ADDON_LOADED_HANDLERS = {
 		
 		-- Check to see if we have a leftover ItemDB cache
 		GetDataMember("GroupQuestsByGUID", {});
-		GetDataMember("ValidSuffixesPerItemID", {});
 
 		-- Clean up settings
 		local oldsettings = {};
@@ -5762,7 +5247,6 @@ local ADDON_LOADED_HANDLERS = {
 			"Reagents",
 			"SoftReserves",
 			"SoftReservePersistence",
-			"ValidSuffixesPerItemID",
 		}) do
 			oldsettings[key] = AllTheThingsAD[key];
 		end

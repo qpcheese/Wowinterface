@@ -166,7 +166,7 @@ for k, module in pairs(addonTable.fontModules) do
       },
       newline1 = 
       {
-        order = 3.1,
+        order = 3.2,
         type = "description",
         name = "",
       },
@@ -199,11 +199,17 @@ for k, module in pairs(addonTable.fontModules) do
           return addon.db.profile[module].colorModePower ~= 1 and true or false
         end,
         name = L["colorPicker_name"],
-        order = 9.1,
+        order = 8.1,
         type = "color",
         get = "GetColor",
         set = "SetColor",
-      }
+      },
+      newline4 = 
+      {
+        order = 9,
+        type = "description",
+        name = "",
+      },
     },
   }
   if module:match("target") or module:match("focus") then --extended color options (threat based coloring)
@@ -303,7 +309,48 @@ for k, module in pairs(addonTable.fontModules) do
       set = "SetColor",
     }
   end
+  if module == "Font_player" and addonTable.isRetail then
+    options.args[module].args.alternatePowerFontSize = 
+    {
+      name = L["alternatePowerFontSize"],
+      order = 3.1,
+      type = "range",
+      get = "GetStatus",
+      set = "SetStatus",
+      min = 1,
+      max = 40,
+      step = 1,
+    }
+    --[[
+      -- TODO implement alternate power type
+    options.args[module].args.colorModeAlternatePower = 
+    {
+      name = "color alternate power",
+      order = 10,
+      type = "select",
+      values = {L["optionCustom"], L["optionPower"]},
+      sorting = {1,2},
+      get = "GetStatus",
+      set = "SetStatus",
+    }
+    ]]
+    options.args[module].args.customColorAlternatePower = 
+    {
+      --[[
+      hidden = function()
+        return addon.db.profile[module].colorModeAlternatePower ~= 1 and true or false
+      end,
+      ]]
+      name = L["alterNatePowerFontColor"],
+      order = 10.1,
+      type = "color",
+      get = "GetColor",
+      set = "SetColor",
+    }
+  end
 end
+
+
 
 function addon:GetFontsTabOptions()
   return options
