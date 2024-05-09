@@ -16,4 +16,5 @@
   <Script file="Modules\_retail_\DebuffColor.lua"/>
   <Script file="Modules\_retail_\Overabsorbs.lua"/>
   <Script file="Modules\_retail_\FrameColorSkin.lua"/>
+  <Script file="Modules\_retail_\PartyColor.lua"/>
 </Ui>

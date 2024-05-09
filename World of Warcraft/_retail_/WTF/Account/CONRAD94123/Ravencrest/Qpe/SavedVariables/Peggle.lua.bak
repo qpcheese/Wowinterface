@@ -6,6 +6,7 @@ PeggleProfile = {
 	["duelTracking"] = {
 	},
 	["lastDuels"] = {
+		"Snookik", -- [1]
 	},
 	["levelTracking"] = {
 	},

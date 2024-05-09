@@ -5,8 +5,8 @@ local appName,app = ...;
 local C_ArtifactUI = C_ArtifactUI;
 if not C_ArtifactUI then
 	-- Artifacts are not supported by this version of the game client.
-	app.AddArtifactRelicInformation = app.DoNothing;
-	app.GetArtifactModItemID = app.DoNothing
+	app.AddArtifactRelicInformation = app.EmptyFunction;
+	app.GetArtifactModItemID = app.EmptyFunction
 	app.CreateArtifact = app.CreateUnimplementedClass("Artifact", "artifactID");
 	return
 end
@@ -109,7 +109,7 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 			-- 1 -> Off-Hand Appearance
 			-- 2 -> Main-Hand Appearance
 			-- return select(2, GetItemInfo(("item:%d::::::::%d:::11:::8:%d:"):format(itemID, app.Level, t.artifactID)));
-			local link = ("item:%d::::::::%d:::11::%d:8:%d:"):format(math_floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
+			local link = ("item:%d::::::::%d:::%s::1:8:%d:"):format(math_floor(itemID), app.Level, t.isOffHand and "" or "9", t.artifactID);
 			-- app.PrintDebug("Artifact link",t.artifactID,itemID,link);
 			local link = select(2, GetItemInfo(link));
 			if not link then return end

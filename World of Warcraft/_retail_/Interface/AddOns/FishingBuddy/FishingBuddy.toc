@@ -1,6 +1,6 @@
-## Interface: 100206
+## Interface: 100207
 ## Title: Fishing Buddy
-## Version: 1.24
+## Version: 1.24.1
 ## X-Curse-Project-ID: 15093
 ## X-WoWI-ID: 4239
 ## Notes: Help with fishing related tasks -- clothing, fish information, etc.

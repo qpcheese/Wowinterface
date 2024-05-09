@@ -5,12 +5,12 @@ MDCDB = {
 		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
 		["Qpe - Scarshield Legion"] = "Qpe - Scarshield Legion",
 		["Qpfromage - Blackmoore"] = "Qpfromage - Blackmoore",
-		["Qpet - Kor'gall"] = "Qpet - Kor'gall",
 		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
-		["Qpcheese - Todeswache"] = "Qpcheese - Todeswache",
-		["Qpefromage - Draenor"] = "Qpefromage - Draenor",
-		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qpet - Kor'gall"] = "Qpet - Kor'gall",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+		["Qpcheese - Todeswache"] = "Qpcheese - Todeswache",
+		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qpefromage - Draenor"] = "Qpefromage - Draenor",
 		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["profiles"] = {
@@ -20,99 +20,12 @@ MDCDB = {
 		},
 		["Qpfromage - Blackmoore"] = {
 		},
-		["Qpet - Kor'gall"] = {
-		},
 		["Qutlaw - Ravencrest"] = {
 		},
-		["Qpcheese - Todeswache"] = {
-		},
-		["Qpefromage - Draenor"] = {
-		},
-		["Qpfromage - Ragnaros"] = {
-			["addonPosition"] = {
-				["xOffset"] = 2.999956607818604,
-				["yOffset"] = 3.282587567809969e-05,
-			},
-			["optionalBottomFrame"] = {
-				["show"] = true,
-				["content"] = 2,
-			},
-			["calculation"] = {
-				["affixLevel"] = {
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [1]
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [2]
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [3]
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [4]
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [5]
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [6]
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [7]
-					{
-						22, -- [1]
-						22, -- [2]
-					}, -- [8]
-				},
-				["affixTime"] = {
-					{
-						1808, -- [1]
-						1755, -- [2]
-					}, -- [1]
-					{
-						1275, -- [1]
-						1619, -- [2]
-					}, -- [2]
-					{
-						1968, -- [1]
-						1622, -- [2]
-					}, -- [3]
-					{
-						1484, -- [1]
-						1420, -- [2]
-					}, -- [4]
-					{
-						1857, -- [1]
-						2100, -- [2]
-					}, -- [5]
-					{
-						1709, -- [1]
-						2040, -- [2]
-					}, -- [6]
-					{
-						1306, -- [1]
-						1747, -- [2]
-					}, -- [7]
-					{
-						1978, -- [1]
-						2160, -- [2]
-					}, -- [8]
-				},
-			},
+		["Qpet - Kor'gall"] = {
 		},
 		["Qubit - Ragnaros"] = {
-			["optionalBottomFrame"] = {
-				["show"] = true,
-				["content"] = 2,
-			},
+			["class"] = "MONK",
 			["calculation"] = {
 				["affixTime"] = {
 					{
@@ -149,6 +62,95 @@ MDCDB = {
 					}, -- [8]
 				},
 			},
+			["iLvl"] = 469,
+			["optionalBottomFrame"] = {
+				["show"] = true,
+				["content"] = 2,
+			},
+		},
+		["Qpcheese - Todeswache"] = {
+		},
+		["Qpfromage - Ragnaros"] = {
+			["addonPosition"] = {
+				["xOffset"] = 2.999956607818604,
+				["yOffset"] = 3.282587567809969e-05,
+			},
+			["optionalBottomFrame"] = {
+				["show"] = true,
+				["content"] = 2,
+			},
+			["calculation"] = {
+				["affixTime"] = {
+					{
+						1808, -- [1]
+						1755, -- [2]
+					}, -- [1]
+					{
+						1275, -- [1]
+						1619, -- [2]
+					}, -- [2]
+					{
+						1968, -- [1]
+						1622, -- [2]
+					}, -- [3]
+					{
+						1484, -- [1]
+						1420, -- [2]
+					}, -- [4]
+					{
+						1857, -- [1]
+						2100, -- [2]
+					}, -- [5]
+					{
+						1709, -- [1]
+						2040, -- [2]
+					}, -- [6]
+					{
+						1306, -- [1]
+						1747, -- [2]
+					}, -- [7]
+					{
+						1978, -- [1]
+						2160, -- [2]
+					}, -- [8]
+				},
+				["affixLevel"] = {
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [1]
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [2]
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [3]
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [4]
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [5]
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [6]
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [7]
+					{
+						22, -- [1]
+						22, -- [2]
+					}, -- [8]
+				},
+			},
+		},
+		["Qpefromage - Draenor"] = {
 		},
 		["Dogson - Ragnaros"] = {
 		},

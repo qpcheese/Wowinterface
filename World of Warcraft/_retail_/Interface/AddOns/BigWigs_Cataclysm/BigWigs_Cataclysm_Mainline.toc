@@ -1,4 +1,4 @@
-## Interface: 100205
+## Interface: 100206
 
 ## Title: BigWigs [|cffeda55fCataclysm|r]
 ## Title-zhCN: BigWigs [|cffeda55f大地的裂变|r]
@@ -25,13 +25,14 @@
 
 ## LoadOnDemand: 1
 ## Dependencies: BigWigs
-## Version: v10.2.1
+## Version: v10.2.6
 ## IconTexture: Interface\AddOns\BigWigs\Media\Icons\minimap_legacy.tga
 
 ## X-Category: Raid
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 ## X-Curse-Project-ID: 45694
 ## X-WoWI-ID: 21755
+## X-Wago-ID: kGr0z76y
 ## X-BigWigs-LoadOn-InstanceId: 669, 671, 720, 754, 757, 967
 
 modules.xml

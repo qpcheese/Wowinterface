@@ -28,11 +28,20 @@ end
 local L = BigWigsAPI:GetLocale("BigWigs: Common")
 local LibSpec = LibStub("LibSpecialization", true)
 local loader = BigWigsLoader
-local isClassic, isRetail, isClassicEra = loader.isClassic, loader.isRetail, loader.isVanilla
-local C_EncounterJournal_GetSectionInfo = isRetail and C_EncounterJournal.GetSectionInfo or function(key) return BigWigsAPI:GetLocale("BigWigs: Encounter Info")[key] end
+local isClassic, isRetail, isClassicEra, isCata = loader.isClassic, loader.isRetail, loader.isVanilla, loader.isCata
+local C_EncounterJournal_GetSectionInfo = isCata and function(key)
+	return C_EncounterJournal.GetSectionInfo(key) or BigWigsAPI:GetLocale("BigWigs: Encounter Info")[key]
+end or C_EncounterJournal and C_EncounterJournal.GetSectionInfo or function(key)
+	return BigWigsAPI:GetLocale("BigWigs: Encounter Info")[key]
+end
 local UnitAffectingCombat, UnitIsPlayer, UnitPosition, UnitIsConnected, UnitClass, UnitTokenFromGUID = UnitAffectingCombat, UnitIsPlayer, UnitPosition, UnitIsConnected, UnitClass, UnitTokenFromGUID
-local GetSpellInfo, GetSpellTexture, GetTime, IsSpellKnown, IsPlayerSpell = GetSpellInfo, GetSpellTexture, GetTime, IsSpellKnown, IsPlayerSpell
-local UnitGroupRolesAssigned, C_UIWidgetManager, EJ_GetEncounterInfo = UnitGroupRolesAssigned, C_UIWidgetManager, EJ_GetEncounterInfo
+local GetSpellName, GetSpellTexture, GetTime, IsSpellKnown, IsPlayerSpell = loader.GetSpellName, loader.GetSpellTexture, GetTime, IsSpellKnown, IsPlayerSpell
+local UnitGroupRolesAssigned, C_UIWidgetManager = UnitGroupRolesAssigned, C_UIWidgetManager
+local EJ_GetEncounterInfo = isCata and function(key)
+	return EJ_GetEncounterInfo(key) or BigWigsAPI:GetLocale("BigWigs: Encounters")[key]
+end or EJ_GetEncounterInfo or function(key)
+	return BigWigsAPI:GetLocale("BigWigs: Encounters")[key]
+end
 local SendChatMessage, GetInstanceInfo, Timer, SetRaidTarget = loader.SendChatMessage, loader.GetInstanceInfo, loader.CTimerAfter, loader.SetRaidTarget
 local UnitGUID, UnitHealth, UnitHealthMax, Ambiguate = loader.UnitGUID, loader.UnitHealth, loader.UnitHealthMax, loader.Ambiguate
 local RegisterAddonMessagePrefix = loader.RegisterAddonMessagePrefix
@@ -93,7 +102,7 @@ local updateData = function(module)
 	local spent = 0
 	local talentTree = 0
 	for tree = 1, 3 do
-		local _, _, pointsSpent = GetTalentTabInfo(tree)
+		local pointsSpent = select(isCata and 5 or 3, GetTalentTabInfo(tree))
 		if pointsSpent > spent then
 			spent = pointsSpent
 			talentTree = tree
@@ -215,7 +224,7 @@ local spells = setmetatable({}, {__index =
 	function(self, key)
 		local value
 		if key > 0 then
-			value = GetSpellInfo(key)
+			value = GetSpellName(key)
 			if not value then
 				value = "INVALID"
 				core:Print(format("An invalid spell id (%d) is being used in a boss module.", key))
@@ -233,7 +242,7 @@ local spells = setmetatable({}, {__index =
 		return value
 	end
 })
-local bossNames = isRetail and setmetatable({}, {__index =
+local bossNames = setmetatable({}, {__index =
 	function(self, key)
 		local name = EJ_GetEncounterInfo(key)
 		if name then
@@ -245,18 +254,6 @@ local bossNames = isRetail and setmetatable({}, {__index =
 			return ""
 		end
 	end
-}) or setmetatable({}, {__index =
-function(self, key)
-	local name = BigWigsAPI:GetLocale("BigWigs: Encounters")[key]
-	if name then
-		self[key] = name
-		return name
-	else
-		core:Print(format("An invalid boss name id (%d) is being used in a boss module.", key))
-		self[key] = ""
-		return ""
-	end
-end
 })
 
 -------------------------------------------------------------------------------
@@ -719,7 +716,7 @@ do
 		if not eventMap[self][event] then eventMap[self][event] = {} end
 		for i = 1, select("#", ...) do
 			local id = select(i, ...)
-			if (type(id) == "number" and GetSpellInfo(id)) or id == "*" then
+			if (type(id) == "number" and GetSpellName(id)) or id == "*" then
 				if eventMap[self][event][id] then
 					core:Print(format(multipleRegistration, self.moduleName, event, id))
 				end
@@ -1411,7 +1408,7 @@ function boss:MobId(guid)
 	return tonumber(id) or 1
 end
 
---- Get a localized name from an id. Positive ids for spells (GetSpellInfo) and negative ids for journal-based section entries (C_EncounterJournal.GetSectionInfo).
+--- Get a localized name from an id. Positive ids for spells (C_Spell.GetSpellName) and negative ids for journal-based section entries (C_EncounterJournal.GetSectionInfo).
 -- @number spellIdOrSectionId The spell id or the journal-based section id (as a negative number)
 -- @return spell name
 function boss:SpellName(spellIdOrSectionId)
@@ -1645,7 +1642,10 @@ end
 --- Register a wrapper around the CHAT_MSG_ADDON event that listens to Transcriptor comms sent by the core on every RAID_BOSS_WHISPER.
 -- @param func callback function, passed (msg, player)
 function boss:RegisterWhisperEmoteComms(func)
-	RegisterAddonMessagePrefix("Transcriptor")
+	local _, result = RegisterAddonMessagePrefix("Transcriptor")
+	if type(result) == "number" and result > 2 then
+		core:Error("Failed to register the TS addon message prefix. Error code: ".. result)
+	end
 	self:RegisterEvent("CHAT_MSG_ADDON", function(_, prefix, msg, channel, sender)
 		if channel ~= "RAID" and channel ~= "PARTY" and channel ~= "INSTANCE_CHAT" then
 			return
@@ -1879,7 +1879,7 @@ do
 end
 
 do
-	local GetSpellCooldown = GetSpellCooldown
+	local GetSpellCooldown = loader.GetSpellCooldown
 	local canInterrupt = false
 	local spellListClassic = {
 		-- 16979, -- Feral Charge (Druid)
@@ -1903,7 +1903,7 @@ do
 	local spellList = isClassicEra and spellListClassic or spellListWrath
 	function UpdateInterruptStatus()
 		if IsSpellKnown(19244, true) or IsSpellKnown(19647, true) then -- Spell Lock (Warlock Felhunter)
-			canInterrupt = GetSpellInfo(19647)
+			canInterrupt = GetSpellName(19647)
 			return
 		end
 		canInterrupt = false
@@ -1923,6 +1923,9 @@ do
 		if canInterrupt then
 			local ready = true
 			local start, duration = GetSpellCooldown(canInterrupt)
+			if type(start) == "table" then
+				start, duration = start.startTime, start.duration
+			end
 			if start > 0 then -- On cooldown currently
 				local endTime = start + duration
 				local t = GetTime()

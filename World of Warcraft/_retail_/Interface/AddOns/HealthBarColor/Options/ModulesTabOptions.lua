@@ -13,15 +13,15 @@ local options = {
   inline = true,
   args =
   {
-    modules = 
+    modules =
     {
       order = 0,
       name = L["enabledModules"],
       type = "group",
       inline = true,
-      args = 
+      args =
       {
-        Textures = 
+        Textures =
         {
           order = 1,
           name = L["Textures_name"],
@@ -53,7 +53,7 @@ local options = {
           end,
           width = moduleToggleWidth,
         },
-        Overabsorbs = 
+        Overabsorbs =
         {
           order = 3,
           hidden = not addonTable.isRetail,
@@ -64,7 +64,7 @@ local options = {
           set = "SetModuleStatus",
           width = moduleToggleWidth,
         },
-        BackgroundTextures = 
+        BackgroundTextures =
         {
           order = 4,
           name = L["BackgroundTextures_name"],
@@ -74,7 +74,7 @@ local options = {
           set = "SetModuleStatus",
           width = moduleToggleWidth,
         },
-        BetterBossFrames = 
+        BetterBossFrames =
         {
           hidden = not addonTable.isRetail,
           order = 5,
@@ -85,7 +85,7 @@ local options = {
           set = "SetModuleStatus",
           width = moduleToggleWidth,
         },
-        Glow = 
+        Glow =
         {
           hidden = not addonTable.isRetail,
           order = 6,
@@ -111,7 +111,7 @@ local options = {
           end,
           width = moduleToggleWidth,
         },
-        DarkFrames = 
+        DarkFrames =
         {
           order = 7,
           name = L["DarkFrames_name"],
@@ -121,7 +121,7 @@ local options = {
           set = "SetModuleStatus",
           width = moduleToggleWidth,
         },
-        BiggerHealthBars = 
+        BiggerHealthBars =
         {
           hidden = not addonTable.isClassic,
           order = 8,
@@ -132,9 +132,20 @@ local options = {
           set = "SetModuleStatus",
           width = moduleToggleWidth,
         },
-        MinimapButton = 
+        PartyColor =
         {
+          hidden = not addonTable.isRetail,
           order = 9,
+          name = L["PartyColor_name"],
+          desc = L["PartyColor_desc"],
+          type = "toggle",
+          get = "GetModuleStatus",
+          set = "SetModuleStatus",
+          width = moduleToggleWidth,
+        },
+        MinimapButton =
+        {
+          order = 20,
           name = L["MinimapButton_name"],
           desc = L["MinimapButton_desc"],
           type = "toggle",
@@ -144,7 +155,7 @@ local options = {
         },
       },
     },
-    Textures = 
+    Textures =
     {
       hidden = function()
           return not addon:IsModuleEnabled("Textures")
@@ -153,9 +164,9 @@ local options = {
       name = L["Textures_name"],
       type = "group",
       inline = true,
-      args = 
+      args =
       {
-        healthBarTexture = 
+        healthBarTexture =
         {
           order = 1,
           type = "select",
@@ -166,7 +177,7 @@ local options = {
           dialogControl = "LSM30_Statusbar",
           width = 1.8,
         },
-        powerBarTexture = 
+        powerBarTexture =
         {
           order = 2,
           type = "select",
@@ -177,7 +188,7 @@ local options = {
           dialogControl = "LSM30_Statusbar",
           width = 1.8,
         },
-        excludePowerBar = 
+        excludePowerBar =
         {
           order = 3,
           type = "toggle",
@@ -194,7 +205,7 @@ local options = {
         },
       },
     },
-    Glow = 
+    Glow =
     {
       hidden = function()
         return ( not addon:IsModuleEnabled("Glow_player") and not addon:IsModuleEnabled("Glow_target") and not addon:IsModuleEnabled("Glow_focus") ) or not addonTable.isRetail
@@ -203,9 +214,9 @@ local options = {
       name = L["Glow_name"],
       type = "group",
       inline = true,
-      args = 
+      args =
       {
-        Glow_player_colorModeGlow = 
+        Glow_player_colorModeGlow =
         {
           order = 1,
           name = L["player"],
@@ -220,8 +231,8 @@ local options = {
             addon.db.profile.Glow_player.colorModeGlow = value
             addon:ReloadModule("Glow_player")
           end,
-        }, 
-        Glow_player_customColorGlow = 
+        },
+        Glow_player_customColorGlow =
         {
           order = 2,
           name = L["colorPicker_name"],
@@ -238,7 +249,7 @@ local options = {
           end,
           width = 0.5,
         },
-        Glow_target_colorModeGlow = 
+        Glow_target_colorModeGlow =
         {
           order = 3,
           name = L["target"],
@@ -253,8 +264,8 @@ local options = {
             addon.db.profile.Glow_target.colorModeGlow = value
             addon:ReloadModule("Glow_target")
           end,
-        }, 
-        Glow_target_customColorGlow = 
+        },
+        Glow_target_customColorGlow =
         {
           order = 4,
           name = L["colorPicker_name"],
@@ -271,7 +282,7 @@ local options = {
           end,
           width = 0.5,
         },
-        Glow_focus_colorModeGlow = 
+        Glow_focus_colorModeGlow =
         {
           order = 5,
           name = L["focus"],
@@ -286,8 +297,8 @@ local options = {
             addon.db.profile.Glow_focus.colorModeGlow = value
             addon:ReloadModule("Glow_focus")
           end,
-        }, 
-        Glow_focus_customColorGlow = 
+        },
+        Glow_focus_customColorGlow =
         {
           order = 6,
           name = L["colorPicker_name"],
@@ -306,7 +317,7 @@ local options = {
         },
       },
     },
-    BackgroundTextures = 
+    BackgroundTextures =
     {
       hidden = function()
         return not addon:IsModuleEnabled("BackgroundTextures")
@@ -315,9 +326,9 @@ local options = {
       name = L["BackgroundTextures_name"],
       type = "group",
       inline = true,
-      args = 
+      args =
       {
-        texture = 
+        texture =
         {
           order = 1,
           type = "select",
@@ -328,7 +339,7 @@ local options = {
           dialogControl = "LSM30_Statusbar",
           width = 1.8,
         },
-        color = 
+        color =
         {
           order = 2,
           name = L["colorPicker_name"],

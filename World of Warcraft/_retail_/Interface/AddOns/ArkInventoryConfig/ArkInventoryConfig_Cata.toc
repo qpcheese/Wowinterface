@@ -1,0 +1,15 @@
+## Interface: 40400
+
+## Title: ArkInventory [Cataclysm] [Configuration]
+## Notes: Configuration options for ArkInventory
+## Author: Arkayenro - Khaz'goroth
+## Email: arkayenro at gmail dot com
+## Version: 31029
+## X-ReleaseType: 
+## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
+
+## DefaultState: Enabled
+## LoadOnDemand: 1
+## RequiredDeps: ArkInventory
+
+ArkInventoryConfig.lua

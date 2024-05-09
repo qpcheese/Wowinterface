@@ -102,6 +102,11 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_KOKDhe0ylfE"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_aFNyEHM6XnE"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
@@ -391,6 +396,11 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_)RR1fSqNwwd"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["ShadowedUF_Raid"] = {
 					["Inherit"] = false,
 				},
@@ -415,6 +425,16 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 				},
 				["Dominos_Pet Bar"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_ORDKNe0uZns"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_9oH3npletej"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_kfNBY5YolAa"] = {
@@ -580,6 +600,11 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_0KjTgigEObU"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_OLpruBMPzII"] = {
 					["Upgraded"] = true,
@@ -1461,6 +1486,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_Ugnl82Ddx4d"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_X)GDms2rFtt"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
@@ -1589,6 +1619,11 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_5Wt49815U1p"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_yA9qgW9sY8y"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
@@ -1599,7 +1634,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_5Fv6oCTctNI"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_6g)C9pt3lev"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_wxXUTis9ZYO"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1609,15 +1654,26 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["ElvUI_ActionBar 5"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_zpqamh8lyca"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_BI7pXf96qOl"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_zCcV1AXQ2Eo"] = {
+				["WeakAuras_QNIZkxkjacM"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["ShadowedUF"] = {
+					["Inherit"] = false,
 				},
 				["WeakAuras_IumtYWam2F3"] = {
 					["Upgraded"] = true,
@@ -1629,20 +1685,47 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_p4c6jWmFrxN"] = {
+				["WeakAuras_lf0qEMOF92y"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["ShadowedUF"] = {
+				["WeakAuras_xTSVf2fhhNd"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_gpP89uaVXOa"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_2qlng2qSGdI"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
+				},
+				["WeakAuras_p4c6jWmFrxN"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_jIiNCg(XHId"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_dfbK1CxD7Ia"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_8PcgjNzpsGk"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_oCks4gjtvA1"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1652,7 +1735,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_78BJHr13Z1y"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_th9V5QfbemB"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_1Owmk1hH8Le"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_UvHVBPQrr(T"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1662,7 +1760,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_CO3cKAc)rvL"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_81vVVMXqSGH"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_d9LVll4RYlq"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -1672,10 +1780,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_d9LVll4RYlq"] = {
+				["WeakAuras_ezdyv5OjpiC"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_x0WwzhOFVVl"] = {
 					["Upgraded"] = true,
@@ -1692,7 +1800,27 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_WmuXvPZwRgp"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_EU8dv)qrY9R"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_zCcV1AXQ2Eo"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_out5vVLeZPz"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_DE83xZtq42h"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1702,7 +1830,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_HMPRSbsq2cn"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["ElvUI_ActionBar 15"] = {
+					["Inherit"] = false,
+				},
 				["WeakAuras_e1hMFUxihu7"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_(RR1NDh9RIn"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_opA5fev(86("] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -1712,12 +1858,37 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_4bHc3b73K1A"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_sw5HA2Hs47O"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Zg(Qydayd2v"] = {
+				["WeakAuras_0(YppaMGHas"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_Mnj3tiI3xnt"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_7NXTYDkaeNf"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_EczLY3WdW0R"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_cKF2KVDNf)l"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1747,12 +1918,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_nkd36azvVg)"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_JXOJlggjVaI"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_c8Xy3fA6xFX"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["ShadowedUF_Arena"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_YZCJAmkHY)z"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -1772,12 +1956,42 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_pVVESn(wUtI"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_OFiVXmKxF0o"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_GVSdG35zaxr"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_uwV6FQ64dgb"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_dXEraS3YaHI"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_zUraPlfFbl4"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mjJW2JYMei6"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_1ASRxa8YpLg"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1792,12 +2006,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_ZHlJtRWesls"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_jXtML3XDg5("] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_WmuXvPZwRgp"] = {
+				["WeakAuras_TiWiivkOJij"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1807,40 +2026,42 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_EU8dv)qrY9R"] = {
+				["WeakAuras_qek0d9(XFxp"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_xjXsfiDybp7"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_gpP89uaVXOa"] = {
+				["WeakAuras_sAXm0arkH6L"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_cKF2KVDNf)l"] = {
+				["WeakAuras_Epb2eix6j4E"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_q1QFykOwSVZ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_zpqamh8lyca"] = {
+				["WeakAuras_ggMgsQhQJvW"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["ElvUI_ActionBar 5"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_lf0qEMOF92y"] = {
+				["WeakAuras_HRWgCYtMLzU"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_o5dplV5rfo8"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -1850,10 +2071,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_2qlng2qSGdI"] = {
+				["WeakAuras_XFonEGRquI1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_1vtxlsCBDoa"] = {
 					["Upgraded"] = true,
@@ -1865,10 +2086,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_EczLY3WdW0R"] = {
+				["WeakAuras_olekz7xQ2aU"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_zqWZK0VaGd5"] = {
 					["Upgraded"] = true,
@@ -1885,12 +2106,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_bnch8puMViZ"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
-					["Inherit"] = false,
-				},
 				["WeakAuras_8k2WX)MB1l4"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_C)cBM2HSgBu"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -1905,12 +2126,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_oCks4gjtvA1"] = {
+				["WeakAuras_jTha)6ak29e"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_1Owmk1hH8Le"] = {
+				["WeakAuras_Eh1RTTLTWIB"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -1920,37 +2141,37 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_qek0d9(XFxp"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_dfbK1CxD7Ia"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_CO3cKAc)rvL"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_GVSdG35zaxr"] = {
+				["WeakAuras_WM5ebwaf5GR"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_iWvf5lfszKS"] = {
+				["WeakAuras_9JbVpH3PE7d"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_J2sK8QY)bgC"] = {
+				["WeakAuras_g()eJVpIqvU"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_ovcLA5mud2Q"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_KA22U2n5umm"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_5HAgIsBtriA"] = {
+				["WeakAuras_9kj5MLK2wbU"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ibeOvDPksiX"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -1978,7 +2199,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["ElvUI_ActionBar 15"] = {
+				["ElvUI_ActionBar 3"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_OHRnP(XvaB)"] = {
@@ -1986,22 +2207,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_qKad7JWL4r5"] = {
+				["WeakAuras_Y6gyb13P1xy"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_v3ZfdvvXLUC"] = {
+				["WeakAuras_Zi)jh67(cyy"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_opA5fev(86("] = {
+				["WeakAuras_X0Zb3hS6YT)"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_4bHc3b73K1A"] = {
+				["WeakAuras_F6iJ9Vwq982"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2011,7 +2232,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_0(YppaMGHas"] = {
+				["WeakAuras_5hef8SVrhSh"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2026,27 +2247,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Z3VxVtQHMJH"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_Mnj3tiI3xnt"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_1ASRxa8YpLg"] = {
+				["WeakAuras_mWPCC6v0h97"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hEMWCQ8kkQC"] = {
+				["WeakAuras_9cfPcSY201c"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_fq(Pj5crHi9"] = {
+				["WeakAuras_P8IvMcxhd6)"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2056,15 +2267,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_fq(Pj5crHi9"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mQHq(H5qbxl"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_rRbMRRQ04fd"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ibeOvDPksiX"] = {
+				["WeakAuras_hEMWCQ8kkQC"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_L5vC5NBk2AX"] = {
 					["Upgraded"] = true,
@@ -2081,7 +2302,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_YZCJAmkHY)z"] = {
+				["WeakAuras_aHNlQU4WhGt"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2096,10 +2317,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mQHq(H5qbxl"] = {
+				["WeakAuras_BOjS4Fz)vna"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_DmuG(MuHkY3"] = {
 					["Upgraded"] = true,
@@ -2121,7 +2342,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_C)cBM2HSgBu"] = {
+				["WeakAuras_SIf2JFPZREw"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2136,12 +2357,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_nkd36azvVg)"] = {
+				["WeakAuras_ncuAu2gni(2"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_bc(8lKEEBZD"] = {
+				["WeakAuras_IYLwXYQk8yp"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2151,29 +2372,29 @@ MasqueDB = {
 					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
 				},
-				["WeakAuras_pVVESn(wUtI"] = {
+				["WeakAuras_q)6jyCaikAe"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_e88EwFEoJ3P"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_OFiVXmKxF0o"] = {
+				["WeakAuras_9TIiUdGcQtT"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dXEraS3YaHI"] = {
+				["WeakAuras_TuXNX)OgwGI"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mjJW2JYMei6"] = {
+				["WeakAuras_ionOZ(f3CFo"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_ArL4e9fEQSv"] = {
 					["Upgraded"] = true,
@@ -2185,7 +2406,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_zWl79f805k1"] = {
+				["WeakAuras_vXtwDVdoIZa"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2195,17 +2416,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_)MYEarTX31)"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_vXtwDVdoIZa"] = {
+				["WeakAuras_FhhfWrvdS1Q"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_BOjS4Fz)vna"] = {
+				["WeakAuras_zWl79f805k1"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_CJLxULnN4fg"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2225,10 +2446,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_BvTH3Czhy9B"] = {
+				["WeakAuras_rvGWbX7xO2P"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_3(Nl)QO5iHG"] = {
 					["Upgraded"] = true,
@@ -2245,10 +2466,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Epb2eix6j4E"] = {
+				["WeakAuras_Ix3qvQiyn0)"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_UOXgTAQpsau"] = {
 					["Upgraded"] = true,
@@ -2260,7 +2481,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_CJLxULnN4fg"] = {
+				["WeakAuras_E88VguFzSIr"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2280,7 +2501,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ovcLA5mud2Q"] = {
+				["WeakAuras_Kqi)8F(BwZZ"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2295,27 +2516,27 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Y6gyb13P1xy"] = {
+				["WeakAuras_mRyptO0mxha"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_ogXlteT)N3x"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_o5dplV5rfo8"] = {
+				["WeakAuras_cb7TSpbMR9p"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_hmQITctOPwU"] = {
+				["WeakAuras_)V5(c57Y)Zd"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_zPXYdZMxXom"] = {
+				["WeakAuras_EIF9hhkY(oA"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2345,12 +2566,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_olekz7xQ2aU"] = {
+				["WeakAuras_Dh9)ZQLFq)C"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_jTha)6ak29e"] = {
+				["WeakAuras_erS2Y3I7rKb"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2360,20 +2581,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_hoO4O(UAhAT"] = {
+				["WeakAuras_iVwmSI7vktm"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mBTNpXjmDz8"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "ElvUIesque",
 				},
-				["WeakAuras_Eh1RTTLTWIB"] = {
+				["WeakAuras_evJdZ9Yf67h"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_erS2Y3I7rKb"] = {
-					["Upgraded"] = true,
 					["SkinID"] = "Caith",
-					["Inherit"] = false,
 				},
 				["WeakAuras_Is3d5hMwT4H"] = {
 					["Upgraded"] = true,
@@ -2390,32 +2611,32 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_pBcDa6quxds"] = {
+				["WeakAuras_hoO4O(UAhAT"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_nNfnvoQTVe1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_5hef8SVrhSh"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_P8IvMcxhd6)"] = {
+				["WeakAuras_XCXajHhSWYj"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_FhhfWrvdS1Q"] = {
+				["WeakAuras_zxfCjppulIl"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9JbVpH3PE7d"] = {
+				["WeakAuras_qIDD)52gMgS"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_EhrtHZGMF6B"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2425,33 +2646,35 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_KA22U2n5umm"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_aHNlQU4WhGt"] = {
+				["WeakAuras_qNdQ(mc9fTW"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["ElvUI_ActionBar 3"] = {
+				["WeakAuras_C(8C(Z9yDtw"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_rrdNckc1Blr"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_U3hkTm2Swhl"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_9kj5MLK2wbU"] = {
+				["WeakAuras_yxWBMeV4(4T"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ionOZ(f3CFo"] = {
+				["WeakAuras_gE97sJ4sVEa"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_a1m2rd63Lr1"] = {
 					["Upgraded"] = true,
@@ -2463,7 +2686,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Zi)jh67(cyy"] = {
+				["WeakAuras_Bt9S0MqVNiL"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2478,20 +2701,20 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_F6iJ9Vwq982"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_bzwWFg8uBqc"] = {
+				["WeakAuras_XhyNKiBdqQP"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_5TL(Rz4S5Iw"] = {
+				["WeakAuras_bwH9OfdfA(q"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_C3ucy3TvKQk"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_)QohCvF3CnQ"] = {
 					["Upgraded"] = true,
@@ -2508,17 +2731,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ZHlJtRWesls"] = {
+				["WeakAuras_saGfkc9PV3c"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_XnJD7SrOV9g"] = {
+				["WeakAuras_yRgjmW79NXA"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_zGSj4zJFgnn"] = {
+				["WeakAuras_TYasyO6Ni09"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2528,7 +2751,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_TYasyO6Ni09"] = {
+				["WeakAuras_zGSj4zJFgnn"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2553,7 +2776,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Kqi)8F(BwZZ"] = {
+				["WeakAuras_4et6xO8gr48"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2562,15 +2785,15 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_swVzYTqapzm"] = {
+				["WeakAuras_6y463Sqdit1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mWPCC6v0h97"] = {
+				["WeakAuras_kgZy9vZti3v"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_VPZrccznFT)"] = {
 					["Upgraded"] = true,
@@ -2582,23 +2805,23 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_4egCfj6V(vL"] = {
+				["WeakAuras_nRpvuAD7pva"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_xTSVf2fhhNd"] = {
+				["WeakAuras_qnOoh78Lcms"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["ElvUI_ActionBar 13"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_)V5(c57Y)Zd"] = {
+				["WeakAuras_YZy(iaG0zad"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_UDb)GDTU8Vc"] = {
 					["Upgraded"] = true,
@@ -2608,17 +2831,17 @@ MasqueDB = {
 				["Dominos_Possess Bar"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_cb7TSpbMR9p"] = {
+				["WeakAuras_lxAxH8i(WNU"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_mBTNpXjmDz8"] = {
-					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
 				},
-				["WeakAuras_XCXajHhSWYj"] = {
+				["WeakAuras_tpu9AGkUbus"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_TOsfnRC4F(j"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2638,27 +2861,27 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_q)6jyCaikAe"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_C(8C(Z9yDtw"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rvGWbX7xO2P"] = {
+				["WeakAuras_swVzYTqapzm"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_XhyNKiBdqQP"] = {
+				["WeakAuras_sGSf(0xehIK"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_Ix3qvQiyn0)"] = {
+				["WeakAuras_LQYXSsteK)w"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_BtHylNuW2Sx"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ZqET1zin2IA"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -2668,20 +2891,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_5dXrchdmFtD"] = {
+				["WeakAuras_zmj2OcHdQ3u"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_TuXNX)OgwGI"] = {
+				["WeakAuras_DP3FjIvIXmk"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mRyptO0mxha"] = {
+				["WeakAuras_68Ro1dk)pYP"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_84BxaQS7UeA"] = {
 					["Upgraded"] = true,
@@ -2703,35 +2926,35 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_iVwmSI7vktm"] = {
+				["WeakAuras_oaTcFXoliBb"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Ha(()3kqwXx"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_EVeQRlO0HJL"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_Dh9)ZQLFq)C"] = {
+				["WeakAuras_sq(AXHkzZ6Y"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_gE97sJ4sVEa"] = {
+				["WeakAuras_Md5PYGLrLXH"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_QNIZkxkjacM"] = {
+				["WeakAuras_4QNOMAdYtIU"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_EPQDmFpWREg"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
 				},
 				["WeakAuras_mJIowKEcqKl"] = {
 					["Upgraded"] = true,
@@ -2743,7 +2966,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6y463Sqdit1"] = {
+				["WeakAuras_Sxo)NFuVmQX"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2758,15 +2981,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_0hCUcWSF4aE"] = {
+				["WeakAuras_va4tdpziWSS"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_EFzO76u(Rd1"] = {
+				["WeakAuras_rkzRwxpAGao"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_TzVrIY5SeLp"] = {
 					["Upgraded"] = true,
@@ -2778,7 +3001,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_zxfCjppulIl"] = {
+				["WeakAuras_Sa(tZhGtzxC"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2793,10 +3016,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_qIDD)52gMgS"] = {
+				["WeakAuras_OCiSKX2wp67"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["Bagnon_bank - items"] = {
 					["Gloss"] = true,
@@ -2826,7 +3049,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_qNdQ(mc9fTW"] = {
+				["WeakAuras_1b1CFve4z3k"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2836,34 +3059,33 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_EhrtHZGMF6B"] = {
+				["WeakAuras_Do2SW2WPw88"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_)ENG)tPjtfT"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_rrdNckc1Blr"] = {
+				["WeakAuras_mHSk2s0)ABO"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_JY5a)hODcI)"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_yxWBMeV4(4T"] = {
+				["WeakAuras_cz7MrJXliG4"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9jc7FyNXACL"] = {
+				["Blizzard Action Bars_MultiBarRight"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_5bpyErVh)Mr"] = {
@@ -2880,25 +3102,23 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_C3ucy3TvKQk"] = {
+				["WeakAuras_DDnbN7zIylZ"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["Dominos_Action Bar 12"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_Dcv0FWwOuWb"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_n2wqWYwWpfb"] = {
+				["WeakAuras_S4xI2TCepKU"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_TOsfnRC4F(j"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_Sw56vaIqP3V"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_(CZpvjxy6YZ"] = {
 					["Upgraded"] = true,
@@ -2933,35 +3153,35 @@ MasqueDB = {
 				["AdiBags_Bank"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_S4xI2TCepKU"] = {
+				["WeakAuras_Sw56vaIqP3V"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_p1Wm4VoJvkK"] = {
+				["WeakAuras_mFRPd9uoARW"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_LL6UAi3hCzx"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_o0wYZYU380Y"] = {
+				["WeakAuras_kmoLfwEwK(d"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_kTxZRu50w9("] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Sxo)NFuVmQX"] = {
+				["WeakAuras_HEs(JmHCB1q"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_WZIuwjVSW6b"] = {
 					["Upgraded"] = true,
@@ -2973,22 +3193,22 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_LQYXSsteK)w"] = {
+				["WeakAuras_WuNd5AB4e93"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_TWqMfwZ)gvD"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_gJe8)fQZg77"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kcgus7)kfKi"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_t5dOVc07YIk"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_YZy(iaG0zad"] = {
+				["WeakAuras_1VhOxbe3VPM"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -2998,15 +3218,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_68Ro1dk)pYP"] = {
+				["WeakAuras_IEcC4MnjZ0u"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_lxAxH8i(WNU"] = {
+				["WeakAuras_bG)rleOliin"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["Dominos_Bag Bar"] = {
 					["Inherit"] = false,
@@ -3059,7 +3279,7 @@ MasqueDB = {
 				["ElvUI_ActionBar 6"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_FZHnVJzniCx"] = {
+				["WeakAuras_zYBq6jfIyVJ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3074,10 +3294,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nRpvuAD7pva"] = {
+				["WeakAuras_Wwzg9s)L25V"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_yelqvxyL(uZ"] = {
 					["Upgraded"] = true,
@@ -3094,9 +3314,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_tpu9AGkUbus"] = {
+				["Blizzard Action Bars_MultiBar5"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_(Um6trebFkE"] = {
@@ -3104,35 +3323,34 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_GHpN7qDRjg0"] = {
+				["WeakAuras_eKu6TQ3)9EY"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_(1V0HiE32Am"] = {
+				["WeakAuras_2y)lzEpKYMs"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_sGSf(0xehIK"] = {
+				["WeakAuras_PpFuQuxoYZP"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_zmj2OcHdQ3u"] = {
+				["WeakAuras_koy7ugEEKTW"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_mJzHNcfSO9e"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_5RR07ufpXWS"] = {
+				["Blizzard Action Bars_ActionBar"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_XGxKKa7GNvi"] = {
 					["Upgraded"] = true,
@@ -3144,22 +3362,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_benz3bB2t1z"] = {
+				["WeakAuras_A5FDavf)CsK"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_BtHylNuW2Sx"] = {
+				["WeakAuras_3b7UOmnIx18"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_zLhtsrMjeph"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_IEcC4MnjZ0u"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_yGkw1cQYyk9"] = {
+				["WeakAuras_PkZ3i6a1vw4"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3169,17 +3387,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_otfhfTG(VK2"] = {
+				["WeakAuras_p6Ymjl7mjMJ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_QxRRbdBsvC("] = {
+				["WeakAuras_Sg(9dIuYDWk"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_Md5PYGLrLXH"] = {
+				["WeakAuras_Rah3WVHkjC7"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3194,20 +3412,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6MiRhsplbT2"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
-				},
-				["WeakAuras_EPQDmFpWREg"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rkzRwxpAGao"] = {
+				["WeakAuras_NOq(UWuGcvy"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_iempeaLExAV"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_xvoPNEo4aJw"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_hUXhaLCIF4S"] = {
 					["Upgraded"] = true,
@@ -3219,7 +3437,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Sa(tZhGtzxC"] = {
+				["WeakAuras_Fb7ryUd9nh3"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3234,46 +3452,46 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Fb7ryUd9nh3"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_mFRPd9uoARW"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
-					["Inherit"] = false,
-				},
-				["WeakAuras_gJe8)fQZg77"] = {
+				["WeakAuras_ofh4jjExHUr"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_va4tdpziWSS"] = {
+				["Blizzard Action Bars_MultiBar7"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+				},
+				["WeakAuras_4qsoVpazbSF"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_smF3ux6snTo"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_)ihh68Sk4BE"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_cz7MrJXliG4"] = {
+				["WeakAuras_rq6o)jArzCK"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Blizzard Action Bars_MultiBarRight"] = {
+				["WeakAuras_jPkyBfMzojc"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
-				},
-				["WeakAuras_hiMft3h3YBG"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_(RR1NDh9RIn"] = {
+				["WeakAuras_GAhBtot)5Be"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_raNer8OfxSr"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3288,15 +3506,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hUvw7l85cMc"] = {
+				["WeakAuras_4R1yclrDLFc"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_4qsoVpazbSF"] = {
+				["WeakAuras_5rsHdwaLUOq"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_EcADrp(7AgK"] = {
 					["Upgraded"] = true,
@@ -3308,17 +3526,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_SJilAhpHQoQ"] = {
+				["WeakAuras_XhBDXuOQl8b"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kmoLfwEwK(d"] = {
+				["WeakAuras_slaToPcxLNu"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_HEs(JmHCB1q"] = {
+				["WeakAuras_WG37XGUQCT("] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3328,19 +3545,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_NOq(UWuGcvy"] = {
+				["WeakAuras_)nbhD3mjGNX"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_xmA4YwfIy05"] = {
-					["Upgraded"] = true,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_jHwyJ2mjCLy"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
-				},
-				["WeakAuras_p6Ymjl7mjMJ"] = {
-					["Upgraded"] = true,
 					["SkinID"] = "Caith",
+				},
+				["AdiBags"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_MC2N1aSV)SW"] = {
@@ -3353,26 +3568,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_XDhkwSZx7TR"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["Blizzard Action Bars_MultiBar7"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-				},
-				["WeakAuras_iempeaLExAV"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_8CWnq0HVXKo"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_G0KPiJiU88A"] = {
+				["WeakAuras_CXFQyKNaHBs"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3382,10 +3578,30 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_eKu6TQ3)9EY"] = {
+				["WeakAuras_l8rSajh83(Y"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_(UdxuFXTxjy"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_G0KPiJiU88A"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_6UGyDWyDJjl"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_es1UMlzwfv("] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_jXi7vHI8fk8"] = {
 					["Upgraded"] = true,
@@ -3412,7 +3628,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_zYBq6jfIyVJ"] = {
+				["WeakAuras_8CWnq0HVXKo"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3422,13 +3638,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6UGyDWyDJjl"] = {
+				["WeakAuras_kMHifl398oH"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["Blizzard Action Bars_MultiBar5"] = {
+				["WeakAuras_LN8x)vu96RJ"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_3dIePnmvYl6"] = {
@@ -3436,27 +3653,27 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_0aN)07kQZkI"] = {
+				["WeakAuras_Bhhzf3OJbFt"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_QdhofXvrjxM"] = {
+				["WeakAuras_uX8hBqxq)Uo"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_RVEa0VcQcPn"] = {
+				["WeakAuras_N6Ed668BGdP"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_iurQ2FVUFZV"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_UhwcifLm5Ii"] = {
+				["WeakAuras_5fsefIYy)Em"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3466,7 +3683,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_3b7UOmnIx18"] = {
+				["WeakAuras_F1e9RRu0MBM"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3478,7 +3695,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_fq(09JtNJTQ"] = {
+				["WeakAuras_V6pvrbMlrJ2"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3488,7 +3705,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_5fsefIYy)Em"] = {
+				["WeakAuras_RVEa0VcQcPn"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3498,7 +3715,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PkZ3i6a1vw4"] = {
+				["WeakAuras_KPyAZulpQAe"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3508,12 +3725,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Wwzg9s)L25V"] = {
+				["WeakAuras_wIz(Ug30IXo"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_pbwasdOIjSH"] = {
+				["WeakAuras_4LBGJ6D8aG2"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3523,7 +3740,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_VXal92acmUl"] = {
+				["WeakAuras_BDrJIfB4Rx4"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3538,20 +3755,20 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_V6pvrbMlrJ2"] = {
+				["WeakAuras_VXal92acmUl"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Pts)nT6lfFI"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_DP3FjIvIXmk"] = {
+				["WeakAuras_L1zlzse9Z(z"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_SYyQAEoFt(l"] = {
 					["Upgraded"] = true,
@@ -3568,10 +3785,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_KPyAZulpQAe"] = {
+				["WeakAuras_f5CtP)bhiiW"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_ztjX6B41h5L"] = {
 					["Upgraded"] = true,
@@ -3598,20 +3815,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_4LBGJ6D8aG2"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_smF3ux6snTo"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
 				["WeakAuras_Bh73MMzbVee"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_tVcxFkXau4I"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_r)dVDZoVelv"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_0YDL45MDZkN"] = {
 					["Upgraded"] = true,
@@ -3628,27 +3845,27 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_knxAUE(mA6d"] = {
+				["WeakAuras_zvvxcuWfYoX"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_zLhtsrMjeph"] = {
+				["WeakAuras_8iK1xLVHd8V"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_fKLgaZOUDv1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_2cyM4J7VU(u"] = {
+				["WeakAuras_LFepjdx1Lxo"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_rq6o)jArzCK"] = {
+				["WeakAuras_2cyM4J7VU(u"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3658,12 +3875,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_LFepjdx1Lxo"] = {
+				["WeakAuras_U4XeHD1eFKP"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_GAhBtot)5Be"] = {
+				["WeakAuras_oQKmfwVATh1"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3673,20 +3890,20 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xJ3pLhjbEQJ"] = {
+				["WeakAuras_g4FQ8dp8lW0"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_M1Ga2IFcKZk"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_U4XeHD1eFKP"] = {
+				["WeakAuras_nfDx4r7csSm"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_mxXALmwSHYS"] = {
 					["Upgraded"] = true,
@@ -3716,15 +3933,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_m65y6F5TZSI"] = {
+				["WeakAuras_bgPY6YWdwEl"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_oQKmfwVATh1"] = {
+				["WeakAuras_JT4JVqyeZ3K"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_hk1aLI0nAzv"] = {
 					["Upgraded"] = true,
@@ -3746,40 +3963,40 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_jHwyJ2mjCLy"] = {
-					["Upgraded"] = true,
+				["ElvUI_ActionBar 14"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_gH5HuKRqPyG"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_)nbhD3mjGNX"] = {
+				["WeakAuras_nAGO6WSSET0"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Rah3WVHkjC7"] = {
+				["WeakAuras_ZOCU5JWzAJw"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_ki4sIJqBxwo"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["AdiBags"] = {
-					["Inherit"] = false,
-				},
-				["WeakAuras_bgPY6YWdwEl"] = {
+				["WeakAuras_)TeX17VFWdW"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_dNZc2FFXiOH"] = {
+				["WeakAuras_tAtMb7TI6CG"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_R2owUM07qv8"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3789,12 +4006,14 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_0MOcY9Hz8Lu"] = {
+				["WeakAuras_dNZc2FFXiOH"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["Masque"] = {
+				["WeakAuras_Fh9hqyg1hFM"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
 				["WeakAuras_KIuiQ)VIxrl"] = {
@@ -3802,12 +4021,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_l8rSajh83(Y"] = {
+				["WeakAuras_I7P38X9(9h6"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_v)sU0pRlSbz"] = {
+				["WeakAuras_JsJuBwBsa5o"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -3843,22 +4062,22 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_CXFQyKNaHBs"] = {
+				["WeakAuras_73oVNol7Ywp"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_YC5PEY6Cr)J"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_JsJuBwBsa5o"] = {
+				["WeakAuras_jfsGOe6OVav"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_GYRNkbAceNV"] = {
+				["WeakAuras_OzLW0A1XijE"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3893,10 +4112,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9TrYQJ9ecoj"] = {
+				["WeakAuras_BonkPHTLOYB"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_zFk44b36zQE"] = {
 					["Upgraded"] = true,
@@ -3918,7 +4137,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_N6Ed668BGdP"] = {
+				["WeakAuras_PNiBMkrqTLF"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -3952,10 +4171,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_DCIAZQ1IyLo"] = {
+				["WeakAuras_gZd(4ryekRH"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_(5of5rWpLnc"] = {
 					["Upgraded"] = true,
@@ -3983,12 +4202,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_2aS8((TYdZe"] = {
+				["WeakAuras_CqblLNy4a6m"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_F1e9RRu0MBM"] = {
+				["WeakAuras_k)3aT1suFi)"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -4003,7 +4222,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_5rsHdwaLUOq"] = {
+				["WeakAuras_a4utpU9MWj6"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -4029,70 +4248,70 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_jPkyBfMzojc"] = {
+				["WeakAuras_2aS8((TYdZe"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_4R1yclrDLFc"] = {
+				["WeakAuras_QAa4S0IOm1h"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_BonkPHTLOYB"] = {
+				["WeakAuras_y6bym4iSYWJ"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_o1eEvspgqba"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_WG37XGUQCT("] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tAtMb7TI6CG"] = {
+				["WeakAuras_K2DV6CRpTpC"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_tVcxFkXau4I"] = {
+				["WeakAuras_1u4n8nZkC0l"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_r)dVDZoVelv"] = {
+				["WeakAuras_IgYBhHcrS1J"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["WeakAuras_277RtUVwQFm"] = {
+				["WeakAuras_U6kZJfzOM3P"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ZFc5kAGjSgN"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_EpmaeZOXXFx"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_iaHhD40v5vh"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_GJXb5PdjGBw"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_a4utpU9MWj6"] = {
+				["WeakAuras_W4dvDQd(aCR"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_58bdhbbsMAq"] = {
-					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_dgE600qQirh"] = {
 					["Upgraded"] = true,
@@ -4113,10 +4332,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6l8EKuO5zah"] = {
+				["WeakAuras_bDYnUy9vIQK"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_rrOxc(PlSf8"] = {
 					["Upgraded"] = true,
@@ -4128,7 +4347,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_1u4n8nZkC0l"] = {
+				["WeakAuras_NhruM2cg)GX"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4148,17 +4367,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_K2DV6CRpTpC"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
+				["Bagnon_guildbank - bags"] = {
+					["Gloss"] = true,
+					["Colors"] = {
+						["Gloss"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.102409303188324, -- [4]
+						},
+					},
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_TSlUgC)NqkG"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_iaHhD40v5vh"] = {
+				["WeakAuras_((nIR3AnsyE"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4173,22 +4400,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_U6kZJfzOM3P"] = {
+				["WeakAuras_cjCT6HprXbe"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_8RjPfKvWv(9"] = {
+				["WeakAuras_maGXy1MNze3"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_MX(c8ZoiUF9"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ZFc5kAGjSgN"] = {
+				["WeakAuras_3mJ8IpGSj0U"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4198,55 +4425,47 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PNiBMkrqTLF"] = {
+				["WeakAuras_(BvYcB4YjBB"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_YgsHLroLxNX"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Bagnon_guildbank - bags"] = {
-					["Gloss"] = true,
-					["Colors"] = {
-						["Gloss"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.102409303188324, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_LN8x)vu96RJ"] = {
+				["WeakAuras_8RjPfKvWv(9"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_((nIR3AnsyE"] = {
+				["WeakAuras_0LmKkJhV8Jk"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_bVQE18TyD50"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_fUhXvHuC1MT"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_uX8hBqxq)Uo"] = {
+				["WeakAuras_4JWT(JgFHnl"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nAGO6WSSET0"] = {
+				["WeakAuras_bXmQRzfSzbh"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ZOCU5JWzAJw"] = {
+				["WeakAuras_(hqaQQdWOXK"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -4260,44 +4479,44 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_wIz(Ug30IXo"] = {
+				["WeakAuras_8VNxeHwtaJJ"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_PXN(bCphFBA"] = {
+				["WeakAuras_z8JMKMxlUVZ"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_qDVU)rOTe0a"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_BDrJIfB4Rx4"] = {
+				["WeakAuras_oIjIUHq7uAS"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_zPLjPLX8jWR"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "ElvUIesque",
 				},
-				["WeakAuras_i9t9ivq488G"] = {
+				["WeakAuras_zVpZaP63QLE"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_apzloEN4exy"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_qOhmsQS)dJe"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
-					["Inherit"] = false,
 				},
 				["Blizzard Action Bars_MultiBarLeft"] = {
 					["Upgraded"] = true,
@@ -4308,10 +4527,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_73oVNol7Ywp"] = {
+				["WeakAuras_PbNHrLhnK(4"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_WoUIFFnctkc"] = {
 					["Upgraded"] = true,
@@ -4333,7 +4552,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_TUw)KDkjW7e"] = {
+				["WeakAuras_bsRXJctwWdX"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4348,20 +4567,20 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_(hqaQQdWOXK"] = {
+				["WeakAuras_xVVTVajvO7k"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_K06jKwv63pS"] = {
+				["WeakAuras_TUw)KDkjW7e"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_8iK1xLVHd8V"] = {
+				["WeakAuras_IylRuHAafyt"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_xMymhj1dsCE"] = {
 					["Upgraded"] = true,
@@ -4373,30 +4592,30 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_LAMNWWU7zoB"] = {
+				["WeakAuras_HjVCyjb6pLG"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ADzo4X6FudG"] = {
+				["WeakAuras_pjhAgAlz0Nr"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_4bwkvVEivdE"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_cjCT6HprXbe"] = {
+				["WeakAuras_Mr1Offh2Tjx"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kHEn3lN8jAp"] = {
+				["WeakAuras_dqLMxZbAE8A"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_eW647aWPjck"] = {
 					["Upgraded"] = true,
@@ -4413,15 +4632,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_CqblLNy4a6m"] = {
+				["WeakAuras_)MDvs)Rv2t2"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_Mr1Offh2Tjx"] = {
+				["WeakAuras_ZnBnlJ08sxT"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_uwTJFKxVWjc"] = {
 					["Upgraded"] = true,
@@ -4431,10 +4650,15 @@ MasqueDB = {
 				["ElvUI_ActionBar 10"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_kogNxhuYqiU"] = {
+				["WeakAuras_HeP3pACTQhZ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_CkrZwCdcZZT"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_qwrOA8ILUCW"] = {
 					["Upgraded"] = true,
@@ -4445,11 +4669,6 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_QAa4S0IOm1h"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
 				},
 				["WeakAuras_KFc2JcmAbVe"] = {
 					["Upgraded"] = true,
@@ -4494,12 +4713,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_CkrZwCdcZZT"] = {
+				["WeakAuras_kHEn3lN8jAp"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_HeP3pACTQhZ"] = {
+				["WeakAuras_kogNxhuYqiU"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4524,15 +4743,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_A2jXZG)4UeW"] = {
+				["WeakAuras_qpKRGehTprd"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_n06SBlspai5"] = {
+				["WeakAuras_JUt5E8uPV7e"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_C0n4JcIdEkL"] = {
 					["Upgraded"] = true,
@@ -4554,12 +4773,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_eZYDEy4Vojg"] = {
+				["WeakAuras_XWAB(ASySSM"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_FyRoFObXRm3"] = {
+				["WeakAuras_0zbnqbpGTvp"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "ElvUIesque",
@@ -4569,25 +4788,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_0owQQcsKXHl"] = {
+				["WeakAuras_FyRoFObXRm3"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_IkU)hikP(91"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_qpKRGehTprd"] = {
+				["WeakAuras_n06SBlspai5"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_k)3aT1suFi)"] = {
+				["WeakAuras_6Ujcw2lgN1N"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_39ZWY9aYdgc"] = {
 					["Upgraded"] = true,
@@ -4604,32 +4823,32 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_4mx3HxG1cS4"] = {
+				["WeakAuras_txYEg7ujNAW"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_BvOUKyImq9Y"] = {
+				["WeakAuras_EJDtHs3pR77"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_DR)DIJhPmtH"] = {
+				["WeakAuras_pbBx4hlsZFQ"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_8hL0kggX6n5"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Tl5Fw65MDqS"] = {
+				["WeakAuras_zdkumqWcRrj"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_XWAB(ASySSM"] = {
+				["WeakAuras_eZYDEy4Vojg"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -4644,15 +4863,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_BkPsK(VLrp4"] = {
+				["WeakAuras_kfzkWSTGgzt"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_txYEg7ujNAW"] = {
+				["WeakAuras_mqUGyO1aQ1i"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_K)2PD2YISoZ"] = {
 					["Upgraded"] = true,
@@ -4674,10 +4893,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_0LmKkJhV8Jk"] = {
+				["WeakAuras_23GyVwHawBg"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_qOAgqHIWvPQ"] = {
 					["Upgraded"] = true,
@@ -4694,7 +4913,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_YyyZUOGxd1T"] = {
+				["WeakAuras_0owQQcsKXHl"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -4704,40 +4923,38 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Hs3wFv2fs2o"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_bXmQRzfSzbh"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_J2iVe(5E7ba"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_pbBx4hlsZFQ"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_23GyVwHawBg"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["ElvUI_Buffs"] = {
-					["Inherit"] = false,
-				},
 				["WeakAuras_yFBfvSC4cF4"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mWKkWZZoOhJ"] = {
+				["WeakAuras_xbw5cp6VYTt"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["Dominos_Action Bar 11"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_BvOUKyImq9Y"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_DR)DIJhPmtH"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["ElvUI_Buffs"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_Tl5Fw65MDqS"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_Hs3wFv2fs2o"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -4747,7 +4964,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_8VNxeHwtaJJ"] = {
+				["WeakAuras_4mx3HxG1cS4"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4757,17 +4974,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PAfrA5pYFvy"] = {
+				["WeakAuras_J2iVe(5E7ba"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_maGXy1MNze3"] = {
+				["WeakAuras_YyyZUOGxd1T"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_OzLW0A1XijE"] = {
+				["WeakAuras_lWHfN1GXkUk"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4777,62 +4994,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_apzloEN4exy"] = {
+				["WeakAuras_rh5IsIqmT5H"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_oIjIUHq7uAS"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
-				},
-				["WeakAuras_dBwvR2dU)jQ"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_M2bcUhT6uTq"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_0zbnqbpGTvp"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
-				},
-				["WeakAuras_EJDtHs3pR77"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_dv3A4mgLa1L"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_dfpISWVQ8v9"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_)MDvs)Rv2t2"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_lrlXG6r)keu"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_Fh9hqyg1hFM"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_gNvC8qBCRwU"] = {
+				["WeakAuras_1spInNKWeqN"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -4842,17 +5009,66 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_HjVCyjb6pLG"] = {
+				["WeakAuras_M2bcUhT6uTq"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_xFoWo5VFAG9"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["Blizzard Action Bars_OverrideActionBar"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+				},
+				["WeakAuras_ydHsO0bNFIW"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_1opwEebhPg8"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
+				},
+				["WeakAuras_GhGApe4SUGc"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_lrlXG6r)keu"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_UfyS1NdJnpF"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_mdXu6)86xzT"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_3VBQ55cdM8q"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_gNvC8qBCRwU"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_1kuXK0x6R70"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_jST)wWky2lq"] = {
+				["WeakAuras_ONof3bxjywn"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -4862,10 +5078,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_K5Kht14cejM"] = {
+				["WeakAuras_qoC3mRo0E(p"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_yrf(A5sNBOM"] = {
 					["Upgraded"] = true,
@@ -4913,30 +5129,44 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_qoC3mRo0E(p"] = {
+				["Blizzard Action Bars_SpellFlyout"] = {
 					["Upgraded"] = true,
+					["Inherit"] = false,
+				},
+				["Bartender4_Flyout"] = {
+					["Gloss"] = true,
+					["Backdrop"] = true,
+					["Colors"] = {
+						["Gloss"] = {
+							0.2980392277240753, -- [1]
+							0.2980392277240753, -- [2]
+							0.2980392277240753, -- [3]
+							0.5, -- [4]
+						},
+						["Backdrop"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							1, -- [4]
+						},
+					},
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ONof3bxjywn"] = {
+				["WeakAuras_6ky0j9h27PS"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_eXBpJNtma2M"] = {
-					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_L48o3Uiy0O9"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_uGmU27JQWcv"] = {
+				["WeakAuras_pz0cWTzWqLR"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_KtbslQWW)C9"] = {
 					["Upgraded"] = true,
@@ -4953,23 +5183,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Cxjks3JxvCk"] = {
+				["WeakAuras_M(hMekf6qIp"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Bagnon_inventory - items"] = {
-					["Gloss"] = true,
-					["Colors"] = {
-						["Gloss"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.102409303188324, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
+				["WeakAuras_(LtxhA9Icxi"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["Bartender4_5"] = {
 					["Gloss"] = true,
@@ -5002,15 +5224,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_ZxiyYU20ka1"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_qdhhaCWg7NO"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_wSUnArUwJz3"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_NdfWpEYAp(X"] = {
 					["Upgraded"] = true,
@@ -5022,7 +5244,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_JUt5E8uPV7e"] = {
+				["WeakAuras_pSbcZip84RO"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5042,25 +5264,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9okrIshkJzm"] = {
+				["WeakAuras_wtDQkbi9oQo"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_sOFEOSO5Hcu"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_zdkumqWcRrj"] = {
+				["WeakAuras_qsz(qu4Khup"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_f3OxkH)jhkz"] = {
+				["WeakAuras_rK42pZlqDem"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_bDCLp4jOhkD"] = {
 					["Upgraded"] = true,
@@ -5072,7 +5294,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Ep7KP2ZXVOf"] = {
+				["WeakAuras_6KBFxRAUudV"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5082,7 +5304,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xbw5cp6VYTt"] = {
+				["WeakAuras_ZNUYXrjgu4G"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5092,32 +5314,32 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_rXThfFQ1w3R"] = {
+				["WeakAuras_PGZxlZxpkmo"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_oMYh2)lNyX1"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_z8JMKMxlUVZ"] = {
+				["WeakAuras_d7Us3T7DU0g"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_ruHawwiIZY)"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9Sq3fRUzbLx"] = {
+				["WeakAuras_EBFNSqVXkzB"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_6ky0j9h27PS"] = {
+				["WeakAuras_FVm83uojM(X"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5127,7 +5349,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_FVm83uojM(X"] = {
+				["WeakAuras_bZbN1ii5(5X"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5146,17 +5368,17 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_1spInNKWeqN"] = {
+				["WeakAuras_8VkAWQ(3ZDn"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_)Y8e2uYJe2u"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_yygoFnc9((x"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_)Y8e2uYJe2u"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5171,56 +5393,47 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_eGj(zOmTTWU"] = {
+				["WeakAuras_wSUnArUwJz3"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_lWHfN1GXkUk"] = {
+				["WeakAuras_OAa3g7NpBqz"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Hsf(Vm5aqm8"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_rh5IsIqmT5H"] = {
+				["WeakAuras_E9pFMaBnIcY"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_GhGApe4SUGc"] = {
+				["WeakAuras_nLuZcfd8gVN"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mdXu6)86xzT"] = {
+				["WeakAuras_KLqxoI7(mgi"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_QQX5S4IHSxi"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_BjFsf3TESI1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_xFoWo5VFAG9"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Blizzard Action Bars_OverrideActionBar"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-				},
-				["WeakAuras_b5tsFs1e6hS"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_1opwEebhPg8"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
-					["Inherit"] = false,
-				},
-				["WeakAuras_oh4v4xtf1CC"] = {
+				["WeakAuras_RxN5nel)C3j"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5230,12 +5443,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_5k3ErfZ9qQ1"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_xR3y8zmZIXg"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_ylb1)0WeLB5"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_GmTaTeW3toV"] = {
+				["WeakAuras_YaJ(FuR8cPC"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5255,7 +5478,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_xugV(2CgD(d"] = {
+				["WeakAuras_WFDlTZbI6SD"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5275,17 +5498,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_YaJ(FuR8cPC"] = {
+				["WeakAuras_xugV(2CgD(d"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_lPIQ0uMvv8G"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6PGKwLLp0ly"] = {
+				["WeakAuras_PLTei7au1dy"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5295,22 +5518,22 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_9P91)z0ycCI"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_(LtxhA9Icxi"] = {
+				["WeakAuras_KoA0b(IFZzi"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_h2sF6zBrLfR"] = {
+				["WeakAuras_C4ma4A7EP6F"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_wtDQkbi9oQo"] = {
+				["WeakAuras_g9AU3WjukoG"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_VyNqelW(EpR"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5330,12 +5553,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_g9AU3WjukoG"] = {
+				["WeakAuras_nxMG5fwK1D1"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_hw1n9FwAfOO"] = {
+				["WeakAuras_xI2ruox8OC8"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5348,7 +5571,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ODh4)VHB9UF"] = {
+				["WeakAuras_hw1n9FwAfOO"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5358,14 +5581,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rK42pZlqDem"] = {
+				["WeakAuras_mtvv(TVDsea"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["WeakAuras_pz0cWTzWqLR"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
+				["PitBull4 Aura_Normal"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_uKvyUjq8wj0"] = {
@@ -5383,9 +5604,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_NAwc8l)K8qj"] = {
+				["WeakAuras_aHZekfvV1DJ"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_IyQtzntdf78"] = {
@@ -5398,7 +5619,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PGZxlZxpkmo"] = {
+				["WeakAuras_j(Yzw)aogVW"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5408,10 +5629,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ZNUYXrjgu4G"] = {
+				["WeakAuras_d1A0DBWhQ(K"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_OT7JawcV0Q9"] = {
 					["Upgraded"] = true,
@@ -5433,20 +5654,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_EBFNSqVXkzB"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_InjgwChlXJ8"] = {
+				["WeakAuras_d1FKkVB0Oek"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_UHX4MfIrpM4"] = {
+				["WeakAuras_NjWdDcQGkSt"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_(g8cZ5sWcSm"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_GytXwqS2YpT"] = {
 					["Upgraded"] = true,
@@ -5458,10 +5679,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9JUpBfxLZPx"] = {
+				["WeakAuras_mr(jKyjghV8"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_m2Y0qOmcTUr"] = {
 					["Upgraded"] = true,
@@ -5488,242 +5709,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_WFDlTZbI6SD"] = {
+				["WeakAuras_UHX4MfIrpM4"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_)XU22wU3sQt"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_)1GFOY7vVqb"] = {
+				["WeakAuras_8loJPxd37XV"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
 				["WeakAuras_gaRBZ275whr"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_NjWdDcQGkSt"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_Tz5)dahBFVv"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_7TpLI4GsjNW"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_qq9(6wolykF"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_DnbLDKY7KHn"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_LMtBwUtGCSj"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_mE7tcgq9Vjb"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_V1ttNK(V2zS"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_mr(jKyjghV8"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_qsz(qu4Khup"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_WXYlXVRL83P"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_pe6aYE6k5do"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_QQX5S4IHSxi"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_gAHbjR9A5ar"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_eD4JZyqjZQJ"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_d7Us3T7DU0g"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_nLuZcfd8gVN"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_vwThxtA1m8e"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_AaPcTC(rS1d"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_XNCTx4FhCTC"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_2qmM8ArfgjT"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_(G6Ao42HWgT"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_ZQuFdI6kua2"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_xR3y8zmZIXg"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_DF7xLwe)VgF"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_bZbN1ii5(5X"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_0(6hPIZRvRu"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_PLTei7au1dy"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_E9pqNAOZ)y9"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_OgYsqTC88kr"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_C4ma4A7EP6F"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_v2vvBau)HlF"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_jc8sC0eHC1A"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_nxMG5fwK1D1"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_QkLyQqQvLf5"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_OFlc7Q6I(wO"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_RxN5nel)C3j"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_wY0vavs3wKs"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_euXMegOQYea"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_Gy1xhe(v02n"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_DIAmjSB2PCi"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_n74kcWt5Eom"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_qI4IoGG2Rlv"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_DnnLNfZDTs1"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5749,9 +5750,227 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_A8CaMKHKpMd"] = {
+				["WeakAuras_Tz5)dahBFVv"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_z5DG6WGI9r6"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_d3ixklDjwCE"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_DnbLDKY7KHn"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_LMtBwUtGCSj"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_7TpLI4GsjNW"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_WI6yrdbJh)X"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_V1ttNK(V2zS"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_FR2PlFmXFOA"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_Ky2kc1624kH"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_jisgeROLcDb"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_DnnLNfZDTs1"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_gAHbjR9A5ar"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_eD4JZyqjZQJ"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_AaPcTC(rS1d"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_8Rl0uB9HV5V"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_vwThxtA1m8e"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_v2vvBau)HlF"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_XNCTx4FhCTC"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_7vy9JYxPCUP"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_jzmZvMJKK14"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ZQuFdI6kua2"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["Dominos_Action Bar 7"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_DF7xLwe)VgF"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_InjgwChlXJ8"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_Vk(fusUaORq"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_iE(duvbpzCl"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_E9pqNAOZ)y9"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_OgYsqTC88kr"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_8h8YtcS6Yxa"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_qq9(6wolykF"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_jc8sC0eHC1A"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_BlNR4KKOZ93"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_QkLyQqQvLf5"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_OFlc7Q6I(wO"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_VvSMC(yjj)s"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_wY0vavs3wKs"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_euXMegOQYea"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_Gy1xhe(v02n"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_DIAmjSB2PCi"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_sklKUC9s(ng"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_qI4IoGG2Rlv"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_vtK6tpcd95f"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_)V7l19DB5Bu"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_dBRU5xTij61"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_CCikGe5jkaY"] = {
@@ -5764,9 +5983,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kOXnuQ4sezN"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
+				["PitBull4 Aura"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_auAa9LNNeT2"] = {
@@ -5774,12 +5991,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_5k3ErfZ9qQ1"] = {
+				["WeakAuras_4HCk0BLahmE"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_m(fi8)2xyZa"] = {
+				["WeakAuras_4XVLDhFCjKm"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5789,22 +6006,24 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_VyNqelW(EpR"] = {
+				["WeakAuras_mXTBUxAfK5D"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_xI2ruox8OC8"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_mtvv(TVDsea"] = {
+				["WeakAuras_TZO0wWiiHWa"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["PitBull4 Aura_Normal"] = {
+				["WeakAuras_d5O15rsAXaQ"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_yEIJ5M2i1Mn"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_A)1ZBBx22T4"] = {
@@ -5817,7 +6036,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "ElvUIesque",
 				},
-				["WeakAuras_aHZekfvV1DJ"] = {
+				["WeakAuras_wM27NdnE84P"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5852,17 +6071,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_j(Yzw)aogVW"] = {
+				["WeakAuras_gLsR8acl)kb"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bxeLu1VtsMf"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_WI6yrdbJh)X"] = {
+				["WeakAuras_)wF7soV3Hsl"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5877,7 +6096,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_FR2PlFmXFOA"] = {
+				["WeakAuras_XUd2XeknJTC"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5887,22 +6106,22 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Ky2kc1624kH"] = {
+				["WeakAuras_kTMjVS0Oesz"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_)V7l19DB5Bu"] = {
+				["WeakAuras_6HaBxuTz5ux"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_Bq9gaE6HQfh"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_GEaYPbFiDRv"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_Po9BZLkf2HK"] = {
+				["WeakAuras_wODuYxSugbA"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5912,7 +6131,9 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["PitBull4 Aura"] = {
+				["WeakAuras_UU6)9qXeGY8"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_kS)ZMpSDKwo"] = {
@@ -5925,40 +6146,42 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_8Rl0uB9HV5V"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_Bq9gaE6HQfh"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_jzmZvMJKK14"] = {
+				["WeakAuras_aeamQwbMz0L"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Dominos_Action Bar 7"] = {
-					["Inherit"] = false,
-				},
-				["WeakAuras_jisgeROLcDb"] = {
+				["WeakAuras_oAYLuNrv7qy"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_xVebp8aKiVq"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_Po9BZLkf2HK"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_gIJoUCMT0Lz"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_KqaFVtpuS)I"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6e0PnMEhdEh"] = {
+				["WeakAuras_PSXE9SsskW6"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_wODuYxSugbA"] = {
+				["WeakAuras_tmohuiR1Bdf"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -5968,7 +6191,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kGM9YcOtQhZ"] = {
+				["WeakAuras_qTqtXlFJh3W"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -5978,12 +6201,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_oPXZ244f1i0"] = {
+				["WeakAuras_3oXFtibnR5P"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_BF)6(i(r(X4"] = {
+				["WeakAuras_(4CzQppcwAh"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6003,42 +6226,42 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_K8Defj0f8Ws"] = {
+				["WeakAuras_GTOE2t9anms"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_3oXFtibnR5P"] = {
+				["WeakAuras_X8PVFIoTK)m"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_mYZ1mC7RGPb"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_gIJoUCMT0Lz"] = {
+				["WeakAuras_oPXZ244f1i0"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_hc3R3ENQCCg"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "ElvUIesque",
 				},
-				["WeakAuras_xIDrsIETdlo"] = {
+				["WeakAuras_0YWUCS(OQ4l"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_vtK6tpcd95f"] = {
+				["WeakAuras_3GTmB1RoC17"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_8KmdkgKlzG6"] = {
+				["WeakAuras_WTRtZae25r0"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6048,7 +6271,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_(4CzQppcwAh"] = {
+				["WeakAuras_aV0uDkyLaTj"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6058,7 +6281,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_dBRU5xTij61"] = {
+				["WeakAuras_kGM9YcOtQhZ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6068,32 +6291,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_)C)e(aO9ufz"] = {
+				["WeakAuras_8KmdkgKlzG6"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_fl9qLhux3S7"] = {
+				["WeakAuras_LR3TUQ)WzuT"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_4XVLDhFCjKm"] = {
-					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mXTBUxAfK5D"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_m1vd8vPbxZF"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_RZud)bnGQ9W"] = {
+				["WeakAuras_kS9zBHep1I5"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6103,7 +6311,37 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_fl9qLhux3S7"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_TPrvpguE97a"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_2iwS3MSL)Yr"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_pyMUfekDLGp"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_WFxvX8(00zb"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_RZud)bnGQ9W"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_ZEnrRSP6mJg"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6113,25 +6351,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_g9BW8EEUpXR"] = {
+				["WeakAuras_kNRHb3sdkv2"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_wM27NdnE84P"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ZEnrRSP6mJg"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_Vk(fusUaORq"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_I25K2c20weQ"] = {
 					["Upgraded"] = true,
@@ -6158,12 +6381,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_4HCk0BLahmE"] = {
+				["WeakAuras_BF)6(i(r(X4"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_C7jzinu(ZFl"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_C7jzinu(ZFl"] = {
+				["WeakAuras_RH3hTnstZ04"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6173,22 +6401,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_yEIJ5M2i1Mn"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_kTMjVS0Oesz"] = {
+				["WeakAuras_XLzSagpWAVX"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6HaBxuTz5ux"] = {
+				["WeakAuras_iqZrdE5xJtx"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_rKH7rkPitNz"] = {
+				["WeakAuras_HcRFKO80uJd"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6203,38 +6426,32 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Bartender4_1"] = {
-					["Gloss"] = true,
-					["Backdrop"] = true,
-					["Upgraded"] = true,
-					["Colors"] = {
-						["Gloss"] = {
-							0.2980392277240753, -- [1]
-							0.2980392277240753, -- [2]
-							0.2980392277240753, -- [3]
-							0.5, -- [4]
-						},
-						["Backdrop"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_UU6)9qXeGY8"] = {
+				["WeakAuras_rKH7rkPitNz"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_2ExvIS4EoQt"] = {
+				["WeakAuras_sVWRnE080HK"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_Yc4imbfWkHY"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_y2)R0LqWOCJ"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_JqZI0rhU9gW"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_tmohuiR1Bdf"] = {
+				["WeakAuras_6QQ)eN8KF9b"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6260,18 +6477,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_6QQ)eN8KF9b"] = {
+				["WeakAuras_5Osk)dTKirT"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["ElvUI_ActionBars"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_LnWmkzScC7l"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_A9UWjYFXJI1"] = {
 					["Upgraded"] = true,
@@ -6288,57 +6497,37 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PSXE9SsskW6"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
 				["WeakAuras_nNUxIzPetDK"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_dVPAdtIKG3b"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ldJy1BpsMhm"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_bD8CH10beXE"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_HhBF5ZpZQn1"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_X5we(j5zlEZ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_TPrvpguE97a"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_hoeTrpnqOr("] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_niZjwOOKFGq"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_0YWUCS(OQ4l"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_WTRtZae25r0"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_CBUQ5RaNWdJ"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_nOLSzmhmity"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_5DiFP)wmC2I"] = {
+				["WeakAuras_2ExvIS4EoQt"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6348,22 +6537,40 @@ MasqueDB = {
 					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
 				},
+				["WeakAuras_CBUQ5RaNWdJ"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_osNrQDxjrHw"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
 				["WeakAuras_A5YD)9QVAWm"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_z)6uw0NVd9b"] = {
+				["WeakAuras_niZjwOOKFGq"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_wR4UYhlMAZ9"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["ElvUI_ActionBars"] = {
+					["Inherit"] = false,
 				},
 				["WeakAuras_fK0tFRcd7wp"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mgQxL9cz)4("] = {
+				["WeakAuras_z)6uw0NVd9b"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6373,7 +6580,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_)wF7soV3Hsl"] = {
+				["WeakAuras_qMWMv(JPpyu"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6383,10 +6590,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kS9zBHep1I5"] = {
+				["WeakAuras_ah59QkNCtd)"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_0J0GYHyO)VE"] = {
 					["Upgraded"] = true,
@@ -6398,15 +6605,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_v3OTzqihg5Y"] = {
+				["WeakAuras_ObmOhjdtq29"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_WFxvX8(00zb"] = {
+				["WeakAuras_vKiGqQn9kfp"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_1uNfyQHn0Rp"] = {
 					["Upgraded"] = true,
@@ -6418,15 +6625,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_LR3TUQ)WzuT"] = {
+				["WeakAuras_BJAUVncC9Le"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_dVPAdtIKG3b"] = {
+				["WeakAuras_dQxvFpQmE9B"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_RMpLOfx6eSs"] = {
 					["Upgraded"] = true,
@@ -6443,7 +6650,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_2iwS3MSL)Yr"] = {
+				["WeakAuras_5DiFP)wmC2I"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6471,24 +6678,23 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_dQxvFpQmE9B"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_iqZrdE5xJtx"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
 				["WeakAuras_lBTT)Aqg4HN"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_y2)R0LqWOCJ"] = {
+				["WeakAuras_xgUul5c35nH"] = {
 					["Upgraded"] = true,
+					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_0JM22WKR0WX"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["Blizzard Action Bars_MultiBar6"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
 				["WeakAuras_uhbUcZFXBFl"] = {
@@ -6496,12 +6702,32 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_KSo2dJw0l9D"] = {
+				["WeakAuras_1hMgDOgsOyE"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Yc4imbfWkHY"] = {
+				["WeakAuras_h1JxWItoxKT"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_F0gPTVqcxpA"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_egZmsvbecId"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_imagB(N6yhv"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_AYLXW6JUfyu"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6511,30 +6737,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_JqZI0rhU9gW"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
 				["WeakAuras_BRT2M76rEmD"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_5Osk)dTKirT"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_3q3KbUWkzaT"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_imagB(N6yhv"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_GVjQCHrxWSg"] = {
 					["Upgraded"] = true,
@@ -6551,22 +6757,22 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_KSo2dJw0l9D"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_nkSDg2ZSl1R"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_EK8PSGbqVbJ"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_JAg3DZHFfRr"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bYmo6ZCuZn4"] = {
+				["WeakAuras_RLFO4zLQVt1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6576,22 +6782,21 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_bD8CH10beXE"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_osNrQDxjrHw"] = {
+				["WeakAuras_qW(l79R39tL"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ugYl9uue0gn"] = {
+				["WeakAuras_Boj4dO(0YHh"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kTrYpqeoQon"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["WeakAuras_frqdOKt8JYT"] = {
+				["WeakAuras_IvuGlHb)Vzl"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6601,12 +6806,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["ShadowedUF_Boss"] = {
-					["Inherit"] = false,
-				},
-				["WeakAuras_vxQSGovhDVY"] = {
+				["WeakAuras_Mw0zJhr2bRJ"] = {
 					["Upgraded"] = true,
+					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["ShadowedUF_Boss"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_1HbXVy2BaVI"] = {
@@ -6619,27 +6824,27 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_q)c4NJtezpU"] = {
+				["WeakAuras_dNvm018RaPY"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Boj4dO(0YHh"] = {
+				["WeakAuras_frqdOKt8JYT"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_4IxbIYY(rj8"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_LiwYTe1dj8h"] = {
+				["WeakAuras_1KJ5HxWP2RO"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Mw0zJhr2bRJ"] = {
+				["WeakAuras_ugYl9uue0gn"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6649,34 +6854,35 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_qMWMv(JPpyu"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_rJi6(53JX3h"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_E)NM0fSyn)s"] = {
+				["WeakAuras_mPa06nL61nS"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dNvm018RaPY"] = {
+				["WeakAuras_q)c4NJtezpU"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_QteSb7CPoDg"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_LiwYTe1dj8h"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_CoOMakdlJtg"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Blizzard Action Bars_MultiBar6"] = {
+				["WeakAuras_8i5QBSEnSWr"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_jeI2fXw1K7A"] = {
 					["Upgraded"] = true,
@@ -6688,12 +6894,32 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_yolPwD7aD9w"] = {
+				["WeakAuras_Zqc6JDdjeKS"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_v)Awd21J(Tb"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_v)Awd21J(Tb"] = {
+				["WeakAuras_nKiXNMmnJbI"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_pOadp0h7HgP"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_z8xgo4DsZYa"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_yolPwD7aD9w"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6703,38 +6929,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_0JM22WKR0WX"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_z8xgo4DsZYa"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_upWoN1jKtqD"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_1KJ5HxWP2RO"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_QteSb7CPoDg"] = {
+				["WeakAuras_eAncN97L)eq"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_0RT1DvKHS)f"] = {
+				["WeakAuras_zM6((4QEOZs"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["ElvUI_Pet Bar"] = {
+				["WeakAuras_McDq3cDgT3n"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_P3HfKgJiFyZ"] = {
 					["Upgraded"] = true,
@@ -6756,10 +6964,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_L2sDhFGz9tx"] = {
+				["WeakAuras_9Vu1epxfZxR"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_c5smDWZfUQa"] = {
 					["Upgraded"] = true,
@@ -6771,15 +6979,15 @@ MasqueDB = {
 					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
 				},
-				["WeakAuras_DhiWPoh)xuK"] = {
+				["WeakAuras_FaPk92F60fY"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["ElvUI_ActionBar Flyouts"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_F0gPTVqcxpA"] = {
+				["WeakAuras_tF(H5Hn1Qad"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6794,7 +7002,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Dominos_Action Bar 14"] = {
+				["WeakAuras_2GVwA)NyZdr"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_gfEjk3iVbww"] = {
@@ -6802,37 +7012,37 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_zM6((4QEOZs"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_McDq3cDgT3n"] = {
+				["WeakAuras_WpPOd0OKW4s"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_IvuGlHb)Vzl"] = {
+				["WeakAuras_DhiWPoh)xuK"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_RLFO4zLQVt1"] = {
+				["WeakAuras_upWoN1jKtqD"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_qHETdJTZmSt"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_M)DYen1Ofcr"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_5R5YIiFaf1P"] = {
+				["WeakAuras_L2sDhFGz9tx"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_PKI1iiaFPMV"] = {
+				["WeakAuras_vxQSGovhDVY"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -6847,45 +7057,43 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_tF(H5Hn1Qad"] = {
+				["WeakAuras_y43pzf7VX4n"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Lu)lW)eOdDQ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
 				},
-				["WeakAuras_AfDQJw8KrjZ"] = {
+				["Dominos_Action Bar 14"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_0RT1DvKHS)f"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_qW(l79R39tL"] = {
+				["WeakAuras_PLLg1IGZGXn"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_eAncN97L)eq"] = {
-					["Upgraded"] = true,
 					["SkinID"] = "Caith",
-					["Inherit"] = false,
 				},
 				["WeakAuras_Rg0GOvxOvNt"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nKiXNMmnJbI"] = {
+				["WeakAuras_5R5YIiFaf1P"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Zqc6JDdjeKS"] = {
+				["WeakAuras_PKI1iiaFPMV"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_SXLeBzEJiml"] = {
 					["Upgraded"] = true,
@@ -6902,20 +7110,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mPa06nL61nS"] = {
+				["WeakAuras_AfDQJw8KrjZ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_8i5QBSEnSWr"] = {
+				["WeakAuras_E)NM0fSyn)s"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_pOadp0h7HgP"] = {
+				["WeakAuras_rJi6(53JX3h"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_m6YC4cmSC2H"] = {
 					["Upgraded"] = true,
@@ -6925,7 +7133,7 @@ MasqueDB = {
 				["Dominos_Action Bar 13"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_y43pzf7VX4n"] = {
+				["WeakAuras_EK8PSGbqVbJ"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6951,7 +7159,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_egZmsvbecId"] = {
+				["WeakAuras_2H72qBzZpA5"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6961,17 +7169,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PLLg1IGZGXn"] = {
+				["WeakAuras_9)jgVtaIHoD"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9Vu1epxfZxR"] = {
+				["WeakAuras_nOLSzmhmity"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_WpPOd0OKW4s"] = {
+				["WeakAuras_3q3KbUWkzaT"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -6986,8 +7194,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kTrYpqeoQon"] = {
+				["WeakAuras_zt3onbVM94r"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_8o01dtKDWxw"] = {
@@ -6995,17 +7204,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_2GVwA)NyZdr"] = {
+				["WeakAuras_hKio4i(ED0D"] = {
 					["Upgraded"] = true,
+					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["ElvUI_Pet Bar"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_aBuX8bqj71R"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_zt3onbVM94r"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -7030,27 +7237,27 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_BJAUVncC9Le"] = {
+				["WeakAuras_PjmcKr9k3Hv"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_7wpsw3nH5Rk"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PjmcKr9k3Hv"] = {
+				["WeakAuras_mgQxL9cz)4("] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_4dLRYgNgAMD"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_qHETdJTZmSt"] = {
+				["WeakAuras_(wCJUsso0mu"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -7065,9 +7272,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_AYLXW6JUfyu"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
+				["Blizzard Action Bars"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_QIFpeKkuRwu"] = {
@@ -7075,7 +7280,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_2H72qBzZpA5"] = {
+				["WeakAuras_bYmo6ZCuZn4"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7090,10 +7295,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9)jgVtaIHoD"] = {
+				["WeakAuras_K8Defj0f8Ws"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_GeyoQ4M0464"] = {
 					["Upgraded"] = true,
@@ -7123,10 +7328,26 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_1hMgDOgsOyE"] = {
+				["Bartender4_1"] = {
+					["Gloss"] = true,
+					["Backdrop"] = true,
 					["Upgraded"] = true,
-					["Inherit"] = false,
+					["Colors"] = {
+						["Gloss"] = {
+							0.2980392277240753, -- [1]
+							0.2980392277240753, -- [2]
+							0.2980392277240753, -- [3]
+							0.5, -- [4]
+						},
+						["Backdrop"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							1, -- [4]
+						},
+					},
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["ElvUI_ActionBar 4"] = {
 					["Inherit"] = false,
@@ -7146,17 +7367,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ObmOhjdtq29"] = {
+				["WeakAuras_xIDrsIETdlo"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_vKiGqQn9kfp"] = {
+				["WeakAuras_g9BW8EEUpXR"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_ldJy1BpsMhm"] = {
+				["WeakAuras_8kLqN)AspB8"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7171,35 +7392,37 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hKio4i(ED0D"] = {
+				["WeakAuras_kw9AF5YhvsZ"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Blizzard Action Bars"] = {
-					["Inherit"] = false,
-				},
-				["WeakAuras_(wCJUsso0mu"] = {
+				["WeakAuras_FM5l5B7)mQx"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_)C)e(aO9ufz"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Uql90XaxF5m"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_wR4UYhlMAZ9"] = {
+				["WeakAuras_WmXH9HioIwu"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_iASbkb4RyBl"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_8kLqN)AspB8"] = {
+				["WeakAuras_hoeTrpnqOr("] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7219,15 +7442,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_h1JxWItoxKT"] = {
+				["WeakAuras_LnWmkzScC7l"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_XLzSagpWAVX"] = {
+				["Blizzard Action Bars_MultiBarBottomRight"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_scgGW9riijo"] = {
 					["Upgraded"] = true,
@@ -7239,8 +7461,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Blizzard Action Bars_MultiBarBottomRight"] = {
+				["WeakAuras_)7NnJCs97yZ"] = {
 					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_k)lluzmwlgp"] = {
@@ -7258,7 +7481,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_HhBF5ZpZQn1"] = {
+				["WeakAuras_GEaYPbFiDRv"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7278,32 +7501,30 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_RH3hTnstZ04"] = {
-					["Upgraded"] = true,
+				["AdiBags_Backpack"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kNRHb3sdkv2"] = {
+				["WeakAuras_F55PAHwYSCK"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_HcRFKO80uJd"] = {
+				["WeakAuras_ygLXYvZ8sZv"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sklKUC9s(ng"] = {
+				["WeakAuras_m0ipca5gq9o"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sVWRnE080HK"] = {
+				["WeakAuras_2qmM8ArfgjT"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_xVebp8aKiVq"] = {
+				["WeakAuras_6e0PnMEhdEh"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7337,7 +7558,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_WmXH9HioIwu"] = {
+				["WeakAuras_kOXnuQ4sezN"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -7345,15 +7566,15 @@ MasqueDB = {
 				["ElvUI_ActionBar 1"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_X8PVFIoTK)m"] = {
+				["WeakAuras_)1GFOY7vVqb"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_aV0uDkyLaTj"] = {
+				["WeakAuras_m1vd8vPbxZF"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_PMEH6WvZF0a"] = {
 					["Upgraded"] = true,
@@ -7365,17 +7586,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_qTqtXlFJh3W"] = {
+				["WeakAuras_kENUcpuOwEY"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_klJe8yBFqa9"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_oAYLuNrv7qy"] = {
+				["WeakAuras_(G6Ao42HWgT"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7400,13 +7621,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xgUul5c35nH"] = {
+				["WeakAuras_pe6aYE6k5do"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["AdiBags_Backpack"] = {
+				["WeakAuras_j1DQtt2Owkj"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Dp6Fby1dTGR"] = {
 					["Upgraded"] = true,
@@ -7428,75 +7651,75 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_FM5l5B7)mQx"] = {
+				["WeakAuras_mE7tcgq9Vjb"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_d5O15rsAXaQ"] = {
+				["WeakAuras_xsTN(zco4a0"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_TZO0wWiiHWa"] = {
+				["WeakAuras_9JUpBfxLZPx"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_)7NnJCs97yZ"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_m0ipca5gq9o"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_XUd2XeknJTC"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_z5DG6WGI9r6"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_gLsR8acl)kb"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_8h8YtcS6Yxa"] = {
+				["WeakAuras_m(fi8)2xyZa"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kENUcpuOwEY"] = {
+				["WeakAuras_0C8Yidk0od("] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_5TnTsjpcJ6d"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_A8CaMKHKpMd"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
+				},
+				["WeakAuras_NAwc8l)K8qj"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
+				},
+				["WeakAuras_0(6hPIZRvRu"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_9P91)z0ycCI"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_m3fdHbnVuMW"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kw9AF5YhvsZ"] = {
+				["WeakAuras_lh3yWpItxXi"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_VvSMC(yjj)s"] = {
+				["WeakAuras_ODh4)VHB9UF"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_wxXUTis9ZYO"] = {
+				["WeakAuras_n74kcWt5Eom"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_U((zNJ)Wnbd"] = {
 					["Upgraded"] = true,
@@ -7529,12 +7752,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_iE(duvbpzCl"] = {
+				["WeakAuras_GmTaTeW3toV"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_8loJPxd37XV"] = {
+				["WeakAuras_eGj(zOmTTWU"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7549,20 +7772,20 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_7vy9JYxPCUP"] = {
+				["WeakAuras_0dMRYHyyi)s"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_O08nZ01UCTM"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_5TnTsjpcJ6d"] = {
+				["WeakAuras_h2sF6zBrLfR"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_wSZHzjV3hw8"] = {
 					["Upgraded"] = true,
@@ -7574,192 +7797,32 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_BjFsf3TESI1"] = {
+				["WeakAuras_WXYlXVRL83P"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_E9pFMaBnIcY"] = {
+				["WeakAuras_oh4v4xtf1CC"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_2Go5N(TNpNc"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_(g8cZ5sWcSm"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_j1DQtt2Owkj"] = {
+				["WeakAuras_b5tsFs1e6hS"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_d1FKkVB0Oek"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_d1A0DBWhQ(K"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_5X9siSftGsk"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_I4vEWbAAHSA"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
-				},
-				["WeakAuras_0dMRYHyyi)s"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_duXEHGFQ6mh"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_8VkAWQ(3ZDn"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_KLqxoI7(mgi"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_DI5XUkHGcp4"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_JvJ5GiKAqm9"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_lh3yWpItxXi"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_pSbcZip84RO"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_NnzxxFd0RYH"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
-					["Inherit"] = false,
-				},
-				["WeakAuras_5IVd8H)OWcm"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_KoA0b(IFZzi"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_QYio4lv38M1"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
-					["Inherit"] = false,
-				},
-				["WeakAuras_6KBFxRAUudV"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_ovw4s5acoXd"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_hoS(nk9mznT"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_0C8Yidk0od("] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_e2iXI2)PNoL"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_iBFzyENlzNq"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_OAa3g7NpBqz"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_v)GePGGr41y"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_qbDamPE5fM1"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Bartender4_Flyout"] = {
-					["Gloss"] = true,
-					["Backdrop"] = true,
-					["Colors"] = {
-						["Gloss"] = {
-							0.2980392277240753, -- [1]
-							0.2980392277240753, -- [2]
-							0.2980392277240753, -- [3]
-							0.5, -- [4]
-						},
-						["Backdrop"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sfwkV0882k7"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_54WyqvxcPR1"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_ZxiyYU20ka1"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_pEAfZTE)XAJ"] = {
+				["WeakAuras_f3OxkH)jhkz"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -7785,22 +7848,167 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_5X9siSftGsk"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_I4vEWbAAHSA"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
+				},
+				["WeakAuras_v)GePGGr41y"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_duXEHGFQ6mh"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_Ep7KP2ZXVOf"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_9okrIshkJzm"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_DI5XUkHGcp4"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_JvJ5GiKAqm9"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_sfwkV0882k7"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_szq2iHLCIY8"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_NnzxxFd0RYH"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
+				},
+				["WeakAuras_5IVd8H)OWcm"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_6PGKwLLp0ly"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_QYio4lv38M1"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
+				},
+				["WeakAuras_vx(R8Ny(RFT"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ovw4s5acoXd"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_hoS(nk9mznT"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_K5Kht14cejM"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_e2iXI2)PNoL"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
+				},
+				["WeakAuras_dfpISWVQ8v9"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_z11kBFlYmZo"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_(vG0)HeJBg5"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_qbDamPE5fM1"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_jST)wWky2lq"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_9Sq3fRUzbLx"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_54WyqvxcPR1"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_mWKkWZZoOhJ"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_pEAfZTE)XAJ"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_2mYdjNVDEVL"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_YG21)kgMxoq"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_UfyS1NdJnpF"] = {
+				["WeakAuras_dv3A4mgLa1L"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_W4dvDQd(aCR"] = {
+				["WeakAuras_zN6rRjNVGI3"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_3VBQ55cdM8q"] = {
+				["WeakAuras_PAfrA5pYFvy"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -7830,41 +8038,52 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_M(hMekf6qIp"] = {
+				["WeakAuras_A2jXZG)4UeW"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_xSBX7z)M4p6"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Dominos_Action Bar 11"] = {
-					["Inherit"] = false,
-				},
-				["WeakAuras_(vG0)HeJBg5"] = {
+				["WeakAuras_BkPsK(VLrp4"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_rXThfFQ1w3R"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
+					["Inherit"] = false,
 				},
 				["WeakAuras_(g7AdKMDkwd"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "ElvUIesque",
 				},
-				["WeakAuras_vx(R8Ny(RFT"] = {
+				["WeakAuras_r0Np3XxJTPX"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_B7MtwtHtdYR"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Blizzard Action Bars_SpellFlyout"] = {
-					["Upgraded"] = true,
+				["Bagnon_inventory - items"] = {
+					["Gloss"] = true,
+					["Colors"] = {
+						["Gloss"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.102409303188324, -- [4]
+						},
+					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["WeakAuras_jSkCw5e1lgG"] = {
@@ -7885,15 +8104,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_2mYdjNVDEVL"] = {
+				["WeakAuras_E)qtcd24Xrl"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_z11kBFlYmZo"] = {
+				["WeakAuras_LVuVbbxELv0"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_nCv17h574Dx"] = {
 					["Upgraded"] = true,
@@ -7915,25 +8134,25 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PbNHrLhnK(4"] = {
+				["WeakAuras_ADzo4X6FudG"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_LAMNWWU7zoB"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
-				},
-				["WeakAuras_r0Np3XxJTPX"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
 				},
 				["WeakAuras_JG57eQ5DeDU"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bsRXJctwWdX"] = {
+				["WeakAuras_K06jKwv63pS"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_bi1gVRcn6eE"] = {
 					["Upgraded"] = true,
@@ -7990,17 +8209,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_6Ujcw2lgN1N"] = {
+				["WeakAuras_58bdhbbsMAq"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_mqUGyO1aQ1i"] = {
+				["WeakAuras_6l8EKuO5zah"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kfzkWSTGgzt"] = {
+				["WeakAuras_(7cxJhHbCcX"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8010,12 +8229,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_(jQ9NHgPwcL"] = {
+				["WeakAuras_eXBpJNtma2M"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_dqLMxZbAE8A"] = {
+				["WeakAuras_Cxjks3JxvCk"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8030,12 +8249,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_IylRuHAafyt"] = {
+				["WeakAuras_I6axcEHooaj"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_E)qtcd24Xrl"] = {
+				["WeakAuras_dBwvR2dU)jQ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8045,25 +8264,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_R2owUM07qv8"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_I7P38X9(9h6"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["WeakAuras_pjhAgAlz0Nr"] = {
+				["WeakAuras_DCIAZQ1IyLo"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xVVTVajvO7k"] = {
+				["WeakAuras_(jQ9NHgPwcL"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_9TrYQJ9ecoj"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_GYRNkbAceNV"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_iCuTQ71btHX"] = {
 					["Upgraded"] = true,
@@ -8080,15 +8299,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bVQE18TyD50"] = {
+				["WeakAuras_0nhjlEWX(Ik"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
+					["SkinID"] = "Caith",
 				},
-				["ElvUI_ActionBar 14"] = {
+				["WeakAuras_0MOcY9Hz8Lu"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
 				},
-				["WeakAuras_JT4JVqyeZ3K"] = {
+				["WeakAuras_277RtUVwQFm"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8103,47 +8324,47 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_(BvYcB4YjBB"] = {
+				["WeakAuras_E40DNW0kYvb"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_PXN(bCphFBA"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_0nhjlEWX(Ik"] = {
+				["WeakAuras_m65y6F5TZSI"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_I6axcEHooaj"] = {
-					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_wK3wEq(SO0X"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_3mJ8IpGSj0U"] = {
+				["WeakAuras_qOhmsQS)dJe"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
+					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
 				},
-				["WeakAuras_NhruM2cg)GX"] = {
+				["WeakAuras_xJ3pLhjbEQJ"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Jc(W5npLgfB"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_IgYBhHcrS1J"] = {
+				["WeakAuras_H59MpODfsv8"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "ElvUIesque",
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bDYnUy9vIQK"] = {
+				["WeakAuras_i9t9ivq488G"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8163,7 +8384,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_H59MpODfsv8"] = {
+				["WeakAuras_knxAUE(mA6d"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8173,17 +8394,17 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_y6bym4iSYWJ"] = {
+				["WeakAuras_pbwasdOIjSH"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nfDx4r7csSm"] = {
+				["WeakAuras_fq(09JtNJTQ"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_es1UMlzwfv("] = {
+				["WeakAuras_UhwcifLm5Ii"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8193,7 +8414,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_Bhhzf3OJbFt"] = {
+				["WeakAuras_QdhofXvrjxM"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8203,15 +8424,13 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gZd(4ryekRH"] = {
+				["WeakAuras_v)sU0pRlSbz"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "ElvUIesque",
-				},
-				["WeakAuras_jfsGOe6OVav"] = {
-					["Upgraded"] = true,
 					["SkinID"] = "Caith",
-					["Inherit"] = false,
+				},
+				["Masque"] = {
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_zh6i9hIQQ9X"] = {
 					["Upgraded"] = true,
@@ -8246,7 +8465,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_)TeX17VFWdW"] = {
+				["WeakAuras_PfTPaFpKTrQ"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8296,12 +8515,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_g4FQ8dp8lW0"] = {
+				["WeakAuras_)7qMpyGLpSt"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_zvvxcuWfYoX"] = {
+				["WeakAuras_p3YOC5XzBpW"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8316,7 +8535,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ezdyv5OjpiC"] = {
+				["WeakAuras_sF5agkolWL2"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8331,45 +8550,47 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_p3YOC5XzBpW"] = {
+				["WeakAuras_XDhkwSZx7TR"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_XhBDXuOQl8b"] = {
+				["WeakAuras_xmA4YwfIy05"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
-				},
-				["WeakAuras_)7qMpyGLpSt"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_Ac7kMkOyWsW"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["WeakAuras_5RR07ufpXWS"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_aiNrunUPPDu"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xvoPNEo4aJw"] = {
+				["WeakAuras_benz3bB2t1z"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_PfTPaFpKTrQ"] = {
+				["WeakAuras_00JBfNPRdit"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["Blizzard Action Bars_ActionBar"] = {
-					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_koy7ugEEKTW"] = {
+				["WeakAuras_(1V0HiE32Am"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_0aN)07kQZkI"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8379,10 +8600,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ofh4jjExHUr"] = {
+				["WeakAuras_w7dkZ6UvP9v"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_eyVm0sA5L8n"] = {
 					["Upgraded"] = true,
@@ -8424,35 +8645,37 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Sg(9dIuYDWk"] = {
+				["WeakAuras_SJilAhpHQoQ"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_E88VguFzSIr"] = {
+				["WeakAuras_QxRRbdBsvC("] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_sF5agkolWL2"] = {
+				["WeakAuras_p1Wm4VoJvkK"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_G1bPHOBCX5p"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bG)rleOliin"] = {
+				["WeakAuras_hiMft3h3YBG"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Dominos_Action Bar 12"] = {
+				["WeakAuras_qRvrgBWo2Po"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PpFuQuxoYZP"] = {
+				["WeakAuras_(VxVZkCs838"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8467,10 +8690,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_1b1CFve4z3k"] = {
+				["WeakAuras_9jc7FyNXACL"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_pV3Pyri2dk1"] = {
 					["Upgraded"] = true,
@@ -8492,42 +8715,42 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_WuNd5AB4e93"] = {
+				["WeakAuras_PvZPHdjItGu"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["WeakAuras_03)K7y)Niip"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_DDnbN7zIylZ"] = {
+				["WeakAuras_FZHnVJzniCx"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["WeakAuras_Do2SW2WPw88"] = {
-					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_37RXZ8362fC"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_PvZPHdjItGu"] = {
+				["WeakAuras_6MiRhsplbT2"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "ElvUIesque",
 				},
-				["WeakAuras_(VxVZkCs838"] = {
+				["WeakAuras_t5dOVc07YIk"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_BS9HjpOYXRI"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_1VhOxbe3VPM"] = {
+				["WeakAuras_yGkw1cQYyk9"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8542,22 +8765,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_w7dkZ6UvP9v"] = {
+				["WeakAuras_otfhfTG(VK2"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_2y)lzEpKYMs"] = {
+				["WeakAuras_kcgus7)kfKi"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_TWqMfwZ)gvD"] = {
+				["WeakAuras_n2wqWYwWpfb"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_Dcv0FWwOuWb"] = {
+				["WeakAuras_GHpN7qDRjg0"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8567,15 +8790,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_4QNOMAdYtIU"] = {
+				["WeakAuras_nES66LeOgG2"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sq(AXHkzZ6Y"] = {
+				["WeakAuras_MnyWNrbdAae"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_CDMBpA7Lfub"] = {
 					["Upgraded"] = true,
@@ -8605,12 +8828,12 @@ MasqueDB = {
 				["Dominos"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_03)K7y)Niip"] = {
+				["WeakAuras_o0wYZYU380Y"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_EIF9hhkY(oA"] = {
+				["WeakAuras_fbfC2xvDp9c"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8620,7 +8843,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_oaTcFXoliBb"] = {
+				["WeakAuras_vSJDCzx0cCj"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8630,10 +8853,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_MnyWNrbdAae"] = {
+				["WeakAuras_bzwWFg8uBqc"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_aRIg4S0yDSF"] = {
 					["Upgraded"] = true,
@@ -8648,27 +8871,27 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_OCiSKX2wp67"] = {
+				["WeakAuras_5dXrchdmFtD"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_dI20(haZmda"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nES66LeOgG2"] = {
+				["WeakAuras_EVeQRlO0HJL"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_yRgjmW79NXA"] = {
+				["WeakAuras_EFzO76u(Rd1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_vSJDCzx0cCj"] = {
+				["WeakAuras_i0zH)Hpg8q1"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8683,27 +8906,27 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_4et6xO8gr48"] = {
+				["WeakAuras_bEcVpzzxHHY"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_IECxRTfpL4d"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_fbfC2xvDp9c"] = {
+				["WeakAuras_pBcDa6quxds"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_)v3351NI7Ao"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_saGfkc9PV3c"] = {
+				["WeakAuras_yXWR9zkp0uV"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8713,7 +8936,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ZqET1zin2IA"] = {
+				["WeakAuras_zPXYdZMxXom"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8723,7 +8946,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_kgZy9vZti3v"] = {
+				["WeakAuras_XnJD7SrOV9g"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8733,7 +8956,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Bt9S0MqVNiL"] = {
+				["WeakAuras_4egCfj6V(vL"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8743,7 +8966,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_i0zH)Hpg8q1"] = {
+				["WeakAuras_)MYEarTX31)"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8778,7 +9001,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_yXWR9zkp0uV"] = {
+				["WeakAuras_YJCbTFBhtBJ"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8808,35 +9031,35 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_IYLwXYQk8yp"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_bwH9OfdfA(q"] = {
+				["WeakAuras_eLDaB5nALQ7"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9TIiUdGcQtT"] = {
+				["WeakAuras_5TL(Rz4S5Iw"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_hUvw7l85cMc"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_1LEUzHy5XIs"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ncuAu2gni(2"] = {
+				["WeakAuras_bc(8lKEEBZD"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_SIf2JFPZREw"] = {
+				["WeakAuras_e5OzewoiXIa"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_JXDYLbXKq(G"] = {
 					["Upgraded"] = true,
@@ -8848,10 +9071,10 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_9cfPcSY201c"] = {
+				["WeakAuras_BvTH3Czhy9B"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_0D8uRZTci(g"] = {
 					["Upgraded"] = true,
@@ -8886,7 +9109,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_evJdZ9Yf67h"] = {
+				["WeakAuras_hmQITctOPwU"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8896,7 +9119,7 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_eLDaB5nALQ7"] = {
+				["WeakAuras_d1Ach)oR1NI"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
@@ -8926,47 +9149,47 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_XFonEGRquI1"] = {
+				["WeakAuras_U2xirdHSwhw"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_RE4gX5JZNMX"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_sAXm0arkH6L"] = {
+				["WeakAuras_EVpRPiuRQqA"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_X0Zb3hS6YT)"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["WeakAuras_d1Ach)oR1NI"] = {
+				["WeakAuras_v3ZfdvvXLUC"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_WM5ebwaf5GR"] = {
+				["WeakAuras_0pFZxnOk4k4"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
+				},
+				["WeakAuras_5HAgIsBtriA"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_ErdePo(DA4u"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_g()eJVpIqvU"] = {
+				["WeakAuras_qvoldBqROdt"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["WeakAuras_e5OzewoiXIa"] = {
+				["WeakAuras_b60jXaDaJC0"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -8976,25 +9199,27 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["ShadowedUF_Arena"] = {
+				["WeakAuras_9yp(4JheqrN"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_YJCbTFBhtBJ"] = {
+				["WeakAuras_iWvf5lfszKS"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["WeakAuras_TWU2bbzKMCi"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_U2xirdHSwhw"] = {
+				["WeakAuras_Z3VxVtQHMJH"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_ggMgsQhQJvW"] = {
+				["WeakAuras_Zg(Qydayd2v"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -9004,7 +9229,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_TiWiivkOJij"] = {
+				["WeakAuras_qKad7JWL4r5"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -9018,12 +9243,12 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_HRWgCYtMLzU"] = {
+				["WeakAuras_J2sK8QY)bgC"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_0pFZxnOk4k4"] = {
+				["WeakAuras_KOQFhwAklmC"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -9033,7 +9258,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_EVpRPiuRQqA"] = {
+				["WeakAuras_VBNqetyOtvq"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
@@ -9048,15 +9273,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_b60jXaDaJC0"] = {
+				["WeakAuras_LRXVFhag1CE"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_7NXTYDkaeNf"] = {
+				["WeakAuras_0hCUcWSF4aE"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_ME7)9fhPKZ9"] = {
 					["Upgraded"] = true,
@@ -9093,9 +9318,9 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_KOQFhwAklmC"] = {
+				["WeakAuras_bnch8puMViZ"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
+					["SkinID"] = "ElvUIesque",
 					["Inherit"] = false,
 				},
 				["WeakAuras_u8CtQp2RgkU"] = {
@@ -9103,15 +9328,15 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["WeakAuras_DE83xZtq42h"] = {
+				["WeakAuras_uGmU27JQWcv"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_VBNqetyOtvq"] = {
+				["WeakAuras_v3OTzqihg5Y"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Caith",
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_v4ZOgfiIgQp"] = {
 					["Upgraded"] = true,

@@ -1,0 +1,71 @@
+local _, addonTable = ...
+local addon = addonTable.addon
+
+local module = addon:NewModule("WorldMapFrame")
+local color1, color2, color4
+
+function module:OnEnable()
+    local dbObj = addon.db.profile["Windows"]["WorldMapFrame"]
+    if dbObj.classcolored1 then
+        color1 = addonTable.classColor
+    else
+        color1 = dbObj.color1
+    end
+    if dbObj.classcolored2 then
+        color2 = addonTable.classColor
+    else
+        color2 = dbObj.color2
+    end
+    if dbObj.classcolored4 then
+        color4 = addonTable.classColor
+    else
+        color4 = dbObj.color4
+    end
+    self:Recolor(color1, color2, color4, 1)
+end
+
+function module:OnDisable()
+    local color = {r=1,g=1,b=1,a=1}
+    self:Recolor(color, color, color, 0)
+end
+
+function module:Recolor(color1, color2, color4, desaturation)
+    --reskin frames
+    for _ ,frame in pairs({
+        WorldMapFrame.BorderFrame
+    })
+    do 
+        addon:SkinNineSliced(frame, color1, desaturation)
+    end
+    local bg = QuestMapFrame.Background
+    if bg then
+        bg:SetDesaturation(desaturation)
+        bg:SetVertexColor(color2.r,color2.g,color2.b,color2.a)
+    end
+    --reskin scrollbars
+    for _ ,frame in pairs({
+        QuestScrollFrame,
+        QuestMapDetailsScrollFrame
+    })
+    do 
+        addon:SkinScrollBar(frame, color4)
+    end
+    --window specific regions
+    --normal
+    for _ ,frame in pairs({
+        WorldMapFrameBg,
+        WorldMapFrame.NavBar.InsetBorderBottom,
+        WorldMapFrame.NavBar.InsetBorderBottomLeft,
+        WorldMapFrame.NavBar.InsetBorderBottomRight,
+        WorldMapFrame.NavBar.InsetBorderTop,
+        WorldMapFrame.NavBar.InsetBorderLeft,
+        WorldMapFrame.NavBar.InsetBorderRight,
+        QuestMapFrame.VerticalSeparator
+    })
+    do 
+        frame:SetDesaturation(desaturation)
+        frame:SetVertexColor(color1.r,color1.g,color1.b,color1.a)
+    end
+end
+
+

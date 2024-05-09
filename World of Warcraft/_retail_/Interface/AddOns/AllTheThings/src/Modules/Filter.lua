@@ -229,11 +229,12 @@ end);
 RawCharacterFilters.Bound = nil
 
 -- RequireSkill
+local Professions, ActiveSkills
 DefineToggleFilter("RequireSkill", CharacterFilters,
 app.IsRetail and function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
-		return app.CurrentCharacter.Professions[requireSkill];
+		return Professions[requireSkill];
 	else
 		return true;
 	end
@@ -241,11 +242,15 @@ end or function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
 		requireSkill = app.SkillIDToSpellID[requireSkill];
-		return requireSkill and app.CurrentCharacter.ActiveSkills[requireSkill];
+		return requireSkill and ActiveSkills[requireSkill];
 	else
 		return true;
 	end
 end);
+app.AddEventHandler("OnStartup", function()
+	Professions = app.CurrentCharacter.Professions
+	ActiveSkills = app.CurrentCharacter.ActiveSkills
+end)
 
 -- Class
 DefineToggleFilter("Class", CharacterFilters,
@@ -289,11 +294,6 @@ api.Filters.Race_CurrentFaction = FilterRace_CurrentFaction
 api.Set.Race = function(active, factionOnly)
 	if active then
 		if factionOnly then
-			if FactionID == Enum.FlightPathFaction.Horde then
-				SettingsFilterRace_CurrentFaction = api.Filters.Race_Horde;
-			else
-				SettingsFilterRace_CurrentFaction = api.Filters.Race_Alliance;
-			end
 			CharacterFilters.Race = api.Filters.Race_CurrentFaction;
 		else
 			CharacterFilters.Race = api.Filters.Race;
@@ -484,6 +484,7 @@ end
 app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
 local function RecursiveUnobtainableFilter(group)
 	while group do
+		---@diagnostic disable-next-line: redundant-parameter
 		if not ((AccountFilters.Unobtainable or NoFilter)(group) and (AccountFilters.Event or NoFilter)(group)) then return; end
 		group = group.parent;
 	end
@@ -508,6 +509,15 @@ local function RecursiveDefaultCharacterRequirementsFilter(group)
 	return true;
 end
 app.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter;
+local function RecursiveFilter(group, filterName)
+	local filter = api.Filters[filterName]
+	while group do
+		if not filter(group) then return; end
+		group = group.sourceParent or group.parent;
+	end
+	return true;
+end
+app.RecursiveFilter = RecursiveFilter;
 
 -- Caching Helpers
 local function CacheSettingsData()
@@ -531,6 +541,11 @@ end
 
 app.AddEventHandler("OnLoad", function()
 	FactionID = app.FactionID;
+	if FactionID == Enum.FlightPathFaction.Horde then
+		SettingsFilterRace_CurrentFaction = api.Filters.Race_Horde;
+	else
+		SettingsFilterRace_CurrentFaction = api.Filters.Race_Alliance;
+	end
 end)
 app.AddEventHandler("OnStartup", function()
 	-- this table is set once in ATT, but contents are volatile

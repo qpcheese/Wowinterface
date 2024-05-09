@@ -1,9 +1,15 @@
 ---@class CraftSim
 local CraftSim = select(2, ...)
 
+---@class CraftSim.AVERAGEPROFIT
 CraftSim.AVERAGEPROFIT = {}
 
-local print = CraftSim.UTIL:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.AVERAGE_PROFIT)
+---@type GGUI.Frame
+CraftSim.AVERAGEPROFIT.frame = nil
+---@type GGUI.Frame
+CraftSim.AVERAGEPROFIT.frameWO = nil
+
+local print = CraftSim.DEBUG:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.AVERAGE_PROFIT)
 
 local statIncreaseFactor = 5
 
@@ -80,7 +86,7 @@ end
 function CraftSim.AVERAGEPROFIT:GetExpectedQualityBySkill(recipeData, skill)
     local expectedQuality = 1
     local thresholds = CraftSim.AVERAGEPROFIT:GetQualityThresholds(recipeData.maxQuality,
-        recipeData.professionStats.recipeDifficulty.value, CraftSimOptions.breakPointOffset)
+        recipeData.professionStats.recipeDifficulty.value, CraftSim.DB.OPTIONS:Get("QUALITY_BREAKPOINT_OFFSET"))
 
     for _, threshold in pairs(thresholds) do
         if skill >= threshold then

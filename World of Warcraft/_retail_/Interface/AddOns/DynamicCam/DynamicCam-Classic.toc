@@ -1,5 +1,5 @@
 ## Interface: 11501
-## Version: 2.6.7
+## Version: 2.6.8
 ## Title: DynamicCam
 ## Author: mpstark, LudiusMaximus
 ## Notes: A more dynamic camera.

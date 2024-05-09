@@ -210,6 +210,8 @@ function MoveAny:LangenUS()
 		["LID_TIMERTRACKER1"] = "Timer Tracker (only visible when available)",
 		["LID_PALADINPOWERBAR"] = "Paladin Power Bar (Holy Power)",
 		["LID_SHARDBARFRAME"] = "Warlock Power Frame (Shards)",
+		["LID_OFFSET"] = "Offset",
+		["LID_EclipseBarFrame"] = "Eclipse Bar Frame (Druid)",
 	}
 
 	if D4:GetWoWBuild() ~= "RETAIL" then

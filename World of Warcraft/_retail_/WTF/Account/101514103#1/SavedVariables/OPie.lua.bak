@@ -5,7 +5,7 @@ OPie_SavedData = {
 	["CharProfiles"] = {
 	},
 	["_TimeBand"] = 0.5625,
-	["_OPieVersion"] = "Zeta 4.5b (4.119)",
+	["_OPieVersion"] = "Zeta 5a (4.121)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingOptions"] = {
@@ -158,7 +158,7 @@ OPie_SavedData = {
 					["id"] = 159901,
 				}, -- [15]
 				["save"] = true,
-				["v"] = 1,
+				["v"] = 2,
 				["name"] = "Specializations and Travel",
 				["vm"] = 127,
 				["hotkey"] = "ALT-H",

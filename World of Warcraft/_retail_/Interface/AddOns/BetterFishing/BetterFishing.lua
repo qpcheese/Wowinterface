@@ -11,6 +11,8 @@ local internal = {
   isClassic = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE,
 }
 
+local GetItemInfoInstant = GetItemInfoInstant or C_Item.GetItemInfoInstant
+
 local soundCache = {}
 local CVarCacheSounds = {
   "Sound_MasterVolume",
@@ -26,7 +28,7 @@ local CVarCacheSounds = {
 BINDING_NAME_BETTERFISHINGKEY = "Cast and Interact"
 
 local ClassicFishingIDs = {
-  7620, 7731, 7732, 18248, 33095, 51294
+  7620, 7731, 7732, 18248, 33095, 51294, 88868
 }
 
 function BetterFishing:GetFishingCastID()

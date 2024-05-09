@@ -11,6 +11,7 @@ app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 
 
 -- Generate the version identifier.
+---@diagnostic disable-next-line: deprecated
 local v = (C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata)(appName, "Version");
 if v:match("version") then
 	app.Version = "[Git]";
@@ -213,69 +214,10 @@ app.Race = race;
 
 -- Accessibility Sorting
 local function calculateAccessibility(source)
-	local score = source.AccessibilityScore or 0;
-	if score > 0 then return score; end
-	if GetRelativeValue(source, "nmr") then
-		score = score + 20;
-	end
-	if GetRelativeValue(source, "nmc") then
-		score = score + 10;
-	end
-	if GetRelativeValue(source, "rwp") then
-		score = score + 5;
-	end
-	if GetRelativeValue(source, "e") then
-		score = score + 1;
-	end
-	local u = GetRelativeValue(source, "u");
-	if u then
-		if u < 3 then
-			score = score + 100;
-		elseif u < 4 then
-			score = score + 10;
-		else
-			score = score + 1;
-		end
-	end
-	source.AccessibilityScore = score;
-	return score;
+	return source.AccessibilityScore or 10000000;
 end
 app.SortDefaults.Accessibility = function(a, b)
 	return calculateAccessibility(a) < calculateAccessibility(b);
-end
-
--- Accessibility + Distance Sorting
-local function calculateAccessibilityAndDistance(source)
-	local score = source.AccessibilityScore or 0;
-	if score > 0 then return score; end
-	if GetRelativeValue(source, "nmr") then
-		score = score + 20;
-	end
-	if GetRelativeValue(source, "nmc") then
-		score = score + 10;
-	end
-	if GetRelativeValue(source, "rwp") then
-		score = score + 5;
-	end
-	if GetRelativeValue(source, "e") then
-		score = score + 1;
-	end
-	local u = GetRelativeValue(source, "u");
-	if u then
-		if u < 3 then
-			score = score + 100;
-		elseif u < 4 then
-			score = score + 10;
-		else
-			score = score + 1;
-		end
-	end
-	score = score + (source.distance or 99999);
-	source.AccessibilityScore = score;
-	return score;
-end
-app.SortDefaults.AccessibilityAndDistance = function(a, b)
-	return calculateAccessibilityAndDistance(a) < calculateAccessibilityAndDistance(b);
 end
 
 -- Whether ATT should ignore saving data experienced during the play session
@@ -394,6 +336,7 @@ local SetATTTooltip = function(self, text)
 	end);
 end
 
+---@class ATTFrameClass: Frame
 local frameClass = getmetatable(frame).__index;
 frameClass.SetATTTooltip = SetATTTooltip;
 frameClass.StartATTCoroutine = StartATTCoroutine;
@@ -408,18 +351,23 @@ else
 	end
 end
 
-local button = CreateFrame("BUTTON", nil, frame);
+local button = CreateFrame("Button", nil, frame);
+---@class ATTButtonClass: Button
 local buttonClass = getmetatable(button).__index;
 buttonClass.StartATTCoroutine = StartATTCoroutine;
 buttonClass.SetATTTooltip = SetATTTooltip;
 button:Hide();
 
-local checkbutton = CreateFrame("CHECKBUTTON", nil, frame);
-getmetatable(checkbutton).__index.SetATTTooltip = SetATTTooltip;
+local checkbutton = CreateFrame("CheckButton", nil, frame);
+---@class ATTCheckButtonClass: CheckButton
+local checkButtonClass = getmetatable(checkbutton).__index;
+checkButtonClass.SetATTTooltip = SetATTTooltip;
 checkbutton:Hide();
 
-local editbox = CreateFrame("EDITBOX", nil, frame);
-getmetatable(editbox).__index.SetATTTooltip = SetATTTooltip;
+local editbox = CreateFrame("EditBox", nil, frame);
+---@class ATTEditBoxClass: EditBox
+local editBoxClass = getmetatable(editbox).__index;
+editBoxClass.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
 end)();
 
@@ -477,8 +425,10 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
 end
 function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
-	if not ATTEditBox then
-		local f = CreateFrame("Frame", "ATTEditBox", UIParent, "DialogBoxFrame")
+	local f = ATTEditBox;
+	if not f then
+		---@class ATTEditBox: BackdropTemplate, Frame
+		f = CreateFrame("Frame", "ATTEditBox", UIParent, "DialogBoxFrame")
 		f:SetPoint("CENTER")
 		f:SetSize(600, 500)
 		f:SetBackdrop({
@@ -498,10 +448,13 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		f:SetScript("OnMouseUp", f.StopMovingOrSizing)
 
 		-- ScrollFrame
-		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", ATTEditBox, "UIPanelScrollFrameTemplate")
+		---@class ATTEditBoxScrollFrame: ScrollFrame
+		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", f, "UIPanelScrollFrameTemplate")
+		---@diagnostic disable-next-line: undefined-field
+		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 4)
 		sf:SetPoint("LEFT", 16, 0)
 		sf:SetPoint("RIGHT", -32, 0)
-		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 0)
+		f.ScrollFrame = sf;
 
 		-- Label (conditionally create)
 		if label then
@@ -516,25 +469,29 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		end
 
 		-- EditBox
-		local eb = CreateFrame("EditBox", "ATTEditBoxEditBox", ATTEditBoxScrollFrame)
+		---@class ATTEditBoxEditBox: EditBox
+		local eb = CreateFrame("EditBox", "ATTEditBoxEditBox", sf)
 		eb:SetSize(sf:GetSize())
 		eb:SetMultiLine(true)
 		eb:SetAutoFocus(false) -- dont automatically focus
 		eb:SetFontObject("ChatFontNormal")
 		eb:SetScript("OnEscapePressed", function() f:Hide() end)
+		---@diagnostic disable-next-line: undefined-field
 		ATTEditBoxButton:SetScript("OnClick", function (self, button, down)
 			if self:GetParent().OnClick then
-				self:GetParent().OnClick(ATTEditBoxEditBox:GetText());
+				self:GetParent().OnClick(eb:GetText());
 			end
 			self:GetParent():Hide();
 		end);
 		sf:SetScrollChild(eb)
+		f.EditBox = eb;
 
 		-- Resizable
 		f:SetResizable(true)
 		if f.SetResizeBounds then
 			f:SetResizeBounds(150, 100, 600, 600);
 		else
+			---@diagnostic disable-next-line: undefined-field
 			f:SetMinResize(150, 100);
 		end
 
@@ -559,17 +516,17 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		end)
 		f:Show()
 	end
-	ATTEditBox.OnClick = onclick;
+	f.OnClick = onclick;
 	if text then
 		if label then
-			local l = ATTEditBox.Label;
+			local l = f.Label;
 			if l then l:SetText(label); end
 		end
-		ATTEditBoxEditBox:SetText(text)
-		ATTEditBoxEditBox:HighlightText();
-		ATTEditBoxEditBox:SetFocus();
+		f.EditBox:SetText(text)
+		f.EditBox:HighlightText();
+		f.EditBox:SetFocus();
 	end
-	ATTEditBox:Show()
+	f:Show()
 end
 function app:ShowPopupDialogToReport(reportReason, text)
 	app:ShowPopupDialogWithMultiLineEditBox(text, nil, (reportReason or "Missing Data").."\n"..app.L.PLEASE_REPORT_MESSAGE..app.L.REPORT_TIP);

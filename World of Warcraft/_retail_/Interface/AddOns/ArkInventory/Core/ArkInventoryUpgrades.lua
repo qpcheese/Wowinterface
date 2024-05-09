@@ -2155,6 +2155,74 @@ function ArkInventory.DatabaseUpgradePostLoad( )
 	end
 	
 	
+	upgrade_version = 31027.02
+	if ArkInventory.acedb.global.option.version < upgrade_version then
+		
+		ArkInventory.Output( string.format( ArkInventory.Localise["UPGRADE_GLOBAL"], "style/layout", upgrade_version ) )
+		
+		for id, design in pairs( ArkInventory.acedb.global.option.design.data ) do
+			if design.slot.compress then
+				
+				design.slot.stack.limit.count = design.slot.compress.count
+				design.slot.stack.limit.identify = design.slot.compress.identify
+				design.slot.stack.limit.position = design.slot.compress.position
+				
+				design.slot.compress = nil
+				
+			end
+		end
+		
+		
+		ArkInventory.acedb.global.version = upgrade_version
+		
+	end
+	
+	
+	upgrade_version = 31027.09
+	if ArkInventory.acedb.global.option.version < upgrade_version then
+		
+		ArkInventory.Output( string.format( ArkInventory.Localise["UPGRADE_GLOBAL"], "style/layout", upgrade_version ) )
+		
+		for id, design in pairs( ArkInventory.acedb.global.option.design.data ) do
+			
+			if type( design.slot.stack.limit.identify ) ~= "table" then
+				local temp = design.slot.stack.limit.identify
+				design.slot.stack.limit.identify = ArkInventory.Table.Copy( ArkInventory.acedb.global.option.design.data[0].slot.stack.limit.identify )
+				
+				design.slot.stack.limit.identify.count.enable = temp
+			end
+			
+			if design.slot.stack.limit.count ~= nil then
+				design.slot.stack.limit.enable = design.slot.stack.limit.count
+				design.slot.stack.limit.count = nil
+			end
+			
+			if design.slot.stack.limit.position ~= nil then
+				design.slot.stack.limit.identify.count.position = design.slot.stack.limit.position
+				design.slot.stack.limit.position = nil
+			end
+			
+			
+			if type( design.slot.stack.compress.identify ) ~= "table" then
+				local temp = design.slot.stack.compress.identify
+				design.slot.stack.compress.identify = ArkInventory.Table.Copy( ArkInventory.acedb.global.option.design.data[0].slot.stack.compress.identify )
+				
+				design.slot.stack.compress.identify.count.enable = temp
+			end
+			
+			if design.slot.stack.compress.position ~= nil then
+				design.slot.stack.compress.identify.count.position = design.slot.stack.compress.position
+				design.slot.stack.compress.position = nil
+			end
+			
+		end
+		
+		
+		ArkInventory.acedb.global.version = upgrade_version
+		
+	end
+	
+	
 	if ArkInventory.acedb.global.vendor then
 		ArkInventory.acedb.global.vendor = nil
 	end

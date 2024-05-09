@@ -1,3 +1,3 @@
-# 11.1.44 (2024-04-13)
+# 11.2.7 (2024-05-07)
 
-* Fixed a Lua error that occured because of a missing line in the library loading code [GH-510].
+* Fixed a bug that resulted in setting ShowOnlyNammes not being saved after reloading the UI or logging out [GH-517].

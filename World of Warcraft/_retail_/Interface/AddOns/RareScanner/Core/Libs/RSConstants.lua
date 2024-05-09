@@ -24,7 +24,7 @@ RSConstants.LOOT_ITEM_ID = nil
 -- Current versions
 ---============================================================================
 
-RSConstants.CURRENT_DB_VERSION = 123
+RSConstants.CURRENT_DB_VERSION = 124
 RSConstants.CURRENT_LOOT_DB_VERSION = 135
 
 ---============================================================================
@@ -265,6 +265,7 @@ RSConstants.PROFILE_DEFAULTS = {
 			tooltipsState = true,
 			tooltipsSeen = true,
 			tooltipsCommands = true,
+			tooltipsFilterState = true,
 			lootAchievTooltipsScale = 0.7,
 			lootAchievementsPosition = "ANCHOR_LEFT",
 			overlayMaxColours = 10,

@@ -10,43 +10,43 @@ PetBattleMasterDb = {
 						{
 							["pets"] = {
 								{
-									["speciesId"] = 3100,
-									["name"] = "Timeless Mechanical Dragonling",
-									["creatureId"] = 179125,
+									["speciesId"] = 2565,
 									["abilities"] = {
-										501, -- [1]
-										602, -- [2]
-										1025, -- [3]
+										626, -- [1]
+										2239, -- [2]
+										282, -- [3]
 									},
+									["creatureId"] = 149361,
+									["name"] = "Rebuilt Mechanical Spider",
+									["petId"] = "BattlePet-0-00001308723A",
 									["level"] = 25,
 									["petType"] = 10,
-									["petId"] = "BattlePet-0-000012B0D34C",
 								}, -- [1]
 								{
-									["speciesId"] = 4406,
-									["name"] = "Sarge",
-									["creatureId"] = 216179,
+									["speciesId"] = 3233,
 									["abilities"] = {
-										2515, -- [1]
-										592, -- [2]
-										163, -- [3]
+										445, -- [1]
+										2460, -- [2]
+										564, -- [3]
 									},
-									["level"] = 25,
+									["creatureId"] = 184187,
+									["name"] = "Archetype of Vigilance",
+									["petId"] = "BattlePet-0-000013019B3A",
+									["level"] = 22,
 									["petType"] = 5,
-									["petId"] = "BattlePet-0-000012FA8F1B",
 								}, -- [2]
 								{
-									["speciesId"] = 1266,
-									["name"] = "Xu-Fu, Cub of Xuen",
-									["creatureId"] = 71942,
+									["speciesId"] = 2717,
 									["abilities"] = {
-										974, -- [1]
-										595, -- [2]
-										536, -- [3]
+										1585, -- [1]
+										208, -- [2]
+										209, -- [3]
 									},
+									["creatureId"] = 154856,
+									["name"] = "Microbot XD",
+									["petId"] = "BattlePet-0-000012B673F3",
 									["level"] = 25,
-									["petType"] = 8,
-									["petId"] = "BattlePet-0-000012B528FE",
+									["petType"] = 10,
 								}, -- [3]
 							},
 							["name"] = "Unnamed",
@@ -58,24 +58,18 @@ PetBattleMasterDb = {
 		},
 	},
 	["profileKeys"] = {
-		["Dogson - Ragnaros"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
 		["Fishanus - Ragnaros"] = "Default",
 		["Qpaladin - Ragnaros"] = "Default",
 		["Qpfromage - Ragnaros"] = "Default",
 		["Qpfromage - Sylvanas"] = "Default",
-		["Flurrq - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["tooltipAttachment"] = false,
 			["frames"] = {
-				["petbmInfoView"] = {
-					["windowPosition"] = {
-						["y"] = -49,
-						["x"] = 0,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+				["petbmNameIconEditor"] = {
 				},
 				["CollectionsJournal"] = {
 				},
@@ -87,7 +81,13 @@ PetBattleMasterDb = {
 						["relativePoint"] = "TOP",
 					},
 				},
-				["petbmNameIconEditor"] = {
+				["petbmInfoView"] = {
+					["windowPosition"] = {
+						["y"] = -49,
+						["x"] = 0,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				},
 			},
 			["minimapIcon"] = {

@@ -841,7 +841,7 @@ spec:RegisterHook( "COMBAT_LOG_EVENT_UNFILTERED", function( _, subtype, _, sourc
 end, false )
 
 
-spec:RegisterGear( "tier31", 207270, 207271, 207272, 207273, 207275 )
+spec:RegisterGear( "tier31", 207270, 207271, 207272, 207273, 207275, 217212, 217214, 217215, 217211, 217213 )
 -- (4) Soul Rot grants 3 Umbrafire Kindling which increase the damage of your next Malefic Rapture to deal 50% or your next Seed of Corruption by 60%. Additionally, Umbrafire Kindling causes Malefic Rapture to extend the duration of your damage over time effects and Haunt by 2 sec.
 spec:RegisterAura( "umbrafire_kindling", {
     id = 423765,
@@ -2063,7 +2063,7 @@ spec:RegisterAbilities( {
             interrupt()
         end,
 
-        bind = { 19647, 119910, 132409, 119898 }
+        copy = { 19647, 119910, 132409, 119898 }
     },
 
     -- Subjugates the target demon up to level 61, forcing it to do your bidding for 5 min.

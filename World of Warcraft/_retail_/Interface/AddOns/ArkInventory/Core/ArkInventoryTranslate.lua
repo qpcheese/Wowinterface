@@ -274,7 +274,7 @@ local function GetWowTooltipTextHelper( id )
 	
 	local tooltipInfo = ArkInventory.TooltipSet( ArkInventory.Global.Tooltip.Scan, nil, nil, nil, string.format( "item:%s", id ) )
 	
-	local skill, level = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_SKILL"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
+	local skill, level = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ITEM_REQUIRES_SKILL"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
 	
 	if skill and level then
 		--ArkInventory.Output( "tooltip: got ", id, ", skill = ", skill, ", level = ", level )

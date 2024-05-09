@@ -22,28 +22,25 @@ ArkInventory.LDB = {
 		text = BLIZZARD_STORE_LOADING,
 	} ),
 	Pets = ArkInventory.Lib.DataBroker:NewDataObject( string.format( "%s_%s", ArkInventory.Const.Program.Name, "Pets" ), {
-		proj = ArkInventory.Global.Location[ArkInventory.Const.Location.Pet].proj,
-		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Pet].proj ) and "data source" or "hiddden",
+		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Pet].ClientCheck ) and "data source" or "hidden",
 		text = BLIZZARD_STORE_LOADING,
 		next = 0,
 	} ),
 	Mounts = ArkInventory.Lib.DataBroker:NewDataObject( string.format( "%s_%s", ArkInventory.Const.Program.Name, "Mounts" ), {
-		proj = ArkInventory.Global.Location[ArkInventory.Const.Location.Mount].proj,
-		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Mount].proj ) and "data source" or "hidden",
+		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Mount].ClientCheck ) and "data source" or "hidden",
 		text = BLIZZARD_STORE_LOADING,
 		next = 0,
 	} ),
 	Tracking_Currency = ArkInventory.Lib.DataBroker:NewDataObject( string.format( "%s_%s_%s", ArkInventory.Const.Program.Name, "Tracking", "Currency" ), {
-		proj = ArkInventory.Global.Location[ArkInventory.Const.Location.Currency].proj,
-		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Currency].proj ) and "data source" or "hidden",
+		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Currency].ClientCheck ) and "data source" or "hidden",
 		text = BLIZZARD_STORE_LOADING,
 	} ),
 	Tracking_Reputation = ArkInventory.Lib.DataBroker:NewDataObject( string.format( "%s_%s_%s", ArkInventory.Const.Program.Name, "Tracking", "Reputation" ), {
-		proj = ArkInventory.Global.Location[ArkInventory.Const.Location.Reputation].proj,
-		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Reputation].proj ) and "data source" or "hidden",
+		type = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Reputation].ClientCheck ) and "data source" or "hidden",
 		text = BLIZZARD_STORE_LOADING,
 	} ),
 }
+
 
 local companionTable = { }
 
@@ -697,98 +694,6 @@ function ArkInventory.LDB.Mounts.Cleanup( )
 	
 end
 
-function ArkInventory.LDB.Mounts.IsFlyable( )
-	
-	if IsIndoors( ) or ArkInventory.Collection.Mount.SkillLevel( ) < 225 then
-		return false
-	end
-	
-	local IsFlyable = IsFlyableArea( )  -- its dynamic based off skill and location but its got some issues.  its usually only wrong about flying zones but it got worse in 7.3.5
-	
-	--local name, instanceType, difficulty, difficultyName, maxPlayers, playerDifficulty, isDynamicInstance, instanceMapId, instanceGroupSize, lfgID = GetInstanceInfo( )
-	local instancemapid = select( 8, GetInstanceInfo( ) )
-	local uimapid = C_Map.GetBestMapForUnit( "player" )
-	
-	if IsFlyable then
-		
-		--ArkInventory.Output( "blizzard says this is a flyable area" )
-		
-		-- dont care what blizzard says, you cant actually fly in this zone
-		if IsFlyable and ArkInventory.Const.Flying.Never.Instance[instancemapid] then
-			--ArkInventory.Output( "zone ", instancemapid, " is non flyable" )
-			IsFlyable = false
-		end
-		
-		-- you can fly here but you need a specific achievement
-		if IsFlyable and ArkInventory.Const.Flying.Achievement[instancemapid] then
-			local known = select( 4, GetAchievementInfo( ArkInventory.Const.Flying.Achievement[instancemapid] ) )
-			if not known then
-				--ArkInventory.Output( "zone ", instancemapid, " but you do not have achievement ", ArkInventory.Const.Flying.Achievement[instancemapid] )
-				IsFlyable = false
-			end
-		end
-		
-		-- you can fly here but you need a specific quest
-		if IsFlyable and ArkInventory.Const.Flying.Quest[instancemapid] then
-			local known = C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted( ArkInventory.Const.Flying.Quest[instancemapid] )
-			if not known then
-				--ArkInventory.Output( "zone ", instancemapid, " but you do not have quest ", ArkInventory.Const.Flying.Spell[instancemapid] )
-				IsFlyable = false
-			end
-		end
-		
-		-- you can fly here but you need a specific spell
-		if IsFlyable and ArkInventory.Const.Flying.Spell[instancemapid] then
-			local known = IsSpellKnown( ArkInventory.Const.Flying.Spell[instancemapid] )
-			if not known then
-				--ArkInventory.Output( "zone ", instancemapid, " but you do not have spell ", ArkInventory.Const.Flying.Spell[instancemapid] )
-				IsFlyable = false
-			end
-		end
-		
-		-- while you can fly in this zone, you cannot fly in this particular map
-		if IsFlyable and ArkInventory.Const.Flying.Never.Map[uimapid] then
-			--ArkInventory.Output( "zone ", instancemapid, " is flyable but map ", uimapid, " is not" )
-			IsFlyable = false
-		end
-		
-	else
-		
-		--ArkInventory.Output( "blizzard says this is NOT a flyable area" )
-		
-		-- /run ArkInventory.Output(IsFlyableArea())
-		-- /run ArkInventory.Output({GetInstanceInfo()})
-		
-		if ArkInventory.Const.Flying.Bug735[instancemapid] then
-			--ArkInventory.Output( "zone, instancemapid, " is not flyable, but you can actually fly here" )
-			IsFlyable = true
-		end
-		
-	end
-	
-	if IsFlyable then
-		
-		-- world pvp battle in progress?
-		
-		for index = 1, GetNumWorldPVPAreas( ) do
-			
-			local pvpID, pvpZone, isActive = GetWorldPVPAreaInfo( index )
-			--ArkInventory.Output( pvpID, " / ", pvpZone, " / ", isActive )
-			
-			if isActive and GetRealZoneText( ) == pvpZone then
-				-- ArkInventory.Output( "battle in progress, no flying allowed" )
-				IsFlyable = false
-				break
-			end
-			
-		end
-		
-	end
-	
-	return IsFlyable
-	
-end
-
 function ArkInventory.LDB.Mounts.IsSubmerged( )
 	
 	-- its always right about being in the water, just not under the water
@@ -861,7 +766,7 @@ function ArkInventory.LDB.Mounts.GetUsable( forceAlternative, forceDragonridingA
 		else
 			
 			ArkInventory.OutputDebug( "ignore underwater, force flying (or land if you cant fly here)" )
-			if ArkInventory.LDB.Mounts.IsFlyable( ) then
+			if ArkInventory.Collection.Mount.IsFlyable( ) then
 				forceAlternative = false
 			end
 		end
@@ -879,7 +784,7 @@ function ArkInventory.LDB.Mounts.GetUsable( forceAlternative, forceDragonridingA
 --				end
 			else
 				ArkInventory.OutputDebug( "ignore surface, force flying (or land if you cant fly here)" )
-				if ArkInventory.LDB.Mounts.IsFlyable( ) then
+				if ArkInventory.Collection.Mount.IsFlyable( ) then
 					forceAlternative = false
 				end
 			end
@@ -888,7 +793,7 @@ function ArkInventory.LDB.Mounts.GetUsable( forceAlternative, forceDragonridingA
 		
 	end
 	
-	if ArkInventory.LDB.Mounts.IsFlyable( ) then
+	if ArkInventory.Collection.Mount.IsFlyable( ) then
 		ArkInventory.OutputDebug( "flight check - can fly here" )
 		if not forceAlternative then
 			ArkInventory.OutputDebug( "primary - check flying" )

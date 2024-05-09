@@ -1,10 +1,10 @@
-## Interface: 11501
+## Interface: 11502
 
 ## Title: ArkInventory [Classic]
 ## Notes: Allows you to view all items from all your characters on the same account, when ever and where ever you want.
 ## Author: Arkayenro - Khaz'goroth
 ## Email: arkayenro at gmail dot com
-## Version: 31027
+## Version: 31029
 ## X-ReleaseType: 
 ## SavedVariables: ARKINVDB
 ## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
@@ -35,12 +35,9 @@ ArkInventoryExternals.xml
 #@end-no-lib-strip@
 Core\ArkInventoryExternals.lua
 
-Libs\ArkDewdrop\lib.xml
-Libs\LibDataBroker\lib.xml
-
-
 Core\ArkInventoryConst.lua
 Core\ArkInventoryClient.lua
+
 Core\ArkInventoryPT.lua
 Core\ArkInventoryCPU.lua
 Core\ArkInventoryCodex.lua

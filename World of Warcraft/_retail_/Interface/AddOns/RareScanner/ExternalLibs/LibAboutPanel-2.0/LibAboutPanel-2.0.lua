@@ -35,9 +35,9 @@
 --    LibStub("AceConfig-3.0"):RegisterOptionsTable("MyAddOn", options)
 -- end
 
-local MAJOR, MINOR = "LibAboutPanel-2.0", 107 -- MINOR incremented manually
+local MAJOR, MINOR = "LibAboutPanel-2.0", 111 -- MINOR incremented manually
 assert(LibStub, MAJOR .. " requires LibStub")
-local AboutPanel, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
+local AboutPanel = LibStub:NewLibrary(MAJOR, MINOR)
 if not AboutPanel then return end  -- no upgrade necessary
 
 AboutPanel.embeds = AboutPanel.embeds or {} -- table containing objects AboutPanel is embedded in.
@@ -45,9 +45,10 @@ AboutPanel.aboutTable = AboutPanel.aboutTable or {} -- tables for
 AboutPanel.aboutFrame = AboutPanel.aboutFrame or {}
 
 -- Lua APIs
-local setmetatable, tostring, rawset, pairs = setmetatable, tostring, rawset, pairs
+local setmetatable, tostring, rawset, pairs, pcall = setmetatable, tostring, rawset, pairs, pcall
 -- WoW APIs
-local GetLocale, GetAddOnMetadata, CreateFrame = GetLocale, GetAddOnMetadata, CreateFrame
+local GetLocale, CreateFrame = GetLocale, CreateFrame
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
 
 -- localization ---------------------------------
 local L = setmetatable({}, {
@@ -196,7 +197,7 @@ elseif locale == "ruRU" then
 	L["Email"] = "Почта"
 	L["License"] = "Лицензия"
 	L["Localizations"] = "Языки"
-	L["on the %s realm"] = "с реалма \\\"%s\\\""
+	L["on the %s realm"] = "с реалма \"%s\""
 	L["Repository"] = "Репозиторий"
 	L["Version"] = "Версия"
 	L["Website"] = "Сайт"
@@ -215,8 +216,7 @@ elseif locale == "zhCN" then
 	L["Localizations"] = "本地化"
 	--[[Translation missing --]]
 	L["on the %s realm"] = "on the %s realm"
-	--[[Translation missing --]]
-	L["Repository"] = "Repository"
+	L["Repository"] = "知识库"
 	L["Version"] = "版本"
 	L["Website"] = "网站"
 elseif locale == "zhTW" then

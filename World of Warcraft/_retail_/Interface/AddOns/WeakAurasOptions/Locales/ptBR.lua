@@ -584,6 +584,10 @@ Off Screen]=] ] = "Aura está fora da tela"
 	--[[Translation missing --]]
 	L["Fade Out"] = "Fade Out"
 	--[[Translation missing --]]
+	L["Fadeout Sound"] = "Fadeout Sound"
+	--[[Translation missing --]]
+	L["Fadeout Time (seconds)"] = "Fadeout Time (seconds)"
+	--[[Translation missing --]]
 	L["False"] = "False"
 	--[[Translation missing --]]
 	L["Fetch Affected/Unaffected Names and Units"] = "Fetch Affected/Unaffected Names and Units"
@@ -652,8 +656,6 @@ Can use \ to escape -.]=]
 	L["Frame Height"] = "Frame Height"
 	--[[Translation missing --]]
 	L["Frame Rate"] = "Frame Rate"
-	--[[Translation missing --]]
-	L["Frame Selector"] = "Frame Selector"
 	L["Frame Strata"] = "Camada do quadro"
 	--[[Translation missing --]]
 	L["Frame Width"] = "Frame Width"
@@ -877,6 +879,8 @@ Can use \ to escape -.]=]
 	--[[Translation missing --]]
 	L["Length of |cFFFF0000%s|r"] = "Length of |cFFFF0000%s|r"
 	--[[Translation missing --]]
+	L["LibSharedMedia"] = "LibSharedMedia"
+	--[[Translation missing --]]
 	L["Limit"] = "Limit"
 	--[[Translation missing --]]
 	L["Line"] = "Line"
@@ -920,8 +924,6 @@ Can use \ to escape -.]=]
 	L["Medium Icon"] = "Medium Icon"
 	--[[Translation missing --]]
 	L["Message"] = "Message"
-	L["Message Prefix"] = "Prefixo de Mensagem"
-	L["Message Suffix"] = "Sufixo de Mensagem"
 	--[[Translation missing --]]
 	L["Message Type"] = "Message Type"
 	--[[Translation missing --]]
@@ -974,8 +976,6 @@ Can use \ to escape -.]=]
 	L["Name Pattern Match"] = "Name Pattern Match"
 	L["Name(s)"] = "Nome(s)"
 	L["Name:"] = "Nome:"
-	--[[Translation missing --]]
-	L["Nameplate"] = "Nameplate"
 	--[[Translation missing --]]
 	L["Nameplates"] = "Nameplates"
 	L["Negator"] = "Negador"
@@ -1347,6 +1347,10 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	--[[Translation missing --]]
 	L["Sub Option %i"] = "Sub Option %i"
 	--[[Translation missing --]]
+	L["Subevent"] = "Subevent"
+	--[[Translation missing --]]
+	L["Subevent Suffix"] = "Subevent Suffix"
+	--[[Translation missing --]]
 	L["Supports multiple entries, separated by commas"] = "Supports multiple entries, separated by commas"
 	--[[Translation missing --]]
 	L["Swipe Overlay Settings"] = "Swipe Overlay Settings"
@@ -1365,6 +1369,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Texture Picker"] = "Texture Picker"
 	--[[Translation missing --]]
 	L["Texture Rotation"] = "Texture Rotation"
+	--[[Translation missing --]]
+	L["Texture Selection Mode"] = "Texture Selection Mode"
 	L["Texture Settings"] = "Configurações da Textura"
 	--[[Translation missing --]]
 	L["Texture Wrap"] = "Texture Wrap"
@@ -1495,8 +1501,6 @@ Upgrade your version of WeakAuras or wait for next release before installing thi
 	L["Unit %s is not a valid unit for RegisterUnitEvent"] = "Unit %s is not a valid unit for RegisterUnitEvent"
 	--[[Translation missing --]]
 	L["Unit Count"] = "Unit Count"
-	--[[Translation missing --]]
-	L["Unit Frame"] = "Unit Frame"
 	--[[Translation missing --]]
 	L["Unit Frames"] = "Unit Frames"
 	--[[Translation missing --]]

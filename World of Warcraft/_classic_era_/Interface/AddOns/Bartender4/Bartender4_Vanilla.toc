@@ -1,10 +1,10 @@
-## Interface: 11501
+## Interface: 11502
 
 ## Title: Bartender4
 ## Notes: Simple and Advanced combined - Bartender4 ActionBar AddOn
 ## IconTexture: Interface\Icons\INV_Drink_05
 
-## Version: 4.14.15
+## Version: 4.14.17
 
 ## Author: Nevcairiel
 ## X-Email: h.leppkes at gmail dot com
@@ -81,7 +81,7 @@ StatusTrackingBar.lua
 
 ## Classic-only ##
 XPBarClassic.lua
-
+MultiCastBar.lua
 
 ## Options ##
 Options\AceGUIWidget-NumberEditBox.lua
@@ -103,7 +103,7 @@ Options\StatusTrackingBar.lua
 
 ## Classic-only ##
 Options\XPBarClassic.lua
-
+Options\MultiCastBar.lua
 
 ## XML
 ArtBarTemplates.xml

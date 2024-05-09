@@ -11,6 +11,7 @@ local RefreshCollections;
 -- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
 local print = app.EmptyFunction;
 local __FirstRefresh = true;
+local IsRefreshing
 
 if app.IsRetail then
 -- CRIEVE NOTE: I really don't like the explicit listed data here
@@ -274,23 +275,12 @@ app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
 app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
 
 RefreshCollections = function()
-	local currentCharacter = app.CurrentCharacter;
 	if InCombatLockdown() then
 		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
 		while InCombatLockdown() do coroutine.yield(); end
 	else
 		print(app.L.REFRESHING_COLLECTION);
 	end
-
-	-- Refresh Factions
-	local faction;
-	wipe(currentCharacter.Factions);
-	for factionID,_ in pairs(app.GetRawFieldContainer("factionID")) do
-		faction = app.SearchForObject("factionID", factionID);
-		-- simply reference the .saved property of each known Faction to re-calculate the character value
-		if faction and faction.saved then end
-	end
-	coroutine.yield();
 
 	-- Execute the OnRefreshCollections handlers.
 	-- TODO: Take all the bulk of this function and make them use the event handler.
@@ -314,6 +304,7 @@ app.AddEventHandler("OnRefreshCollectionsDone", function()
 		__FirstRefresh = nil;
 		print = app.print;
 	end
+	IsRefreshing = nil
 end)
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
@@ -342,8 +333,13 @@ RefreshCollections = function()
 		__FirstRefresh = nil;
 		print = app.print;
 	end
+	IsRefreshing = nil
 end
 end
 
-app.RefreshCollections = function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections) end
+app.RefreshCollections = function()
+	if IsRefreshing then return end
+	IsRefreshing = true
+	app:StartATTCoroutine("RefreshingCollections", RefreshCollections)
+end
 app.AddEventHandler("OnInit", app.RefreshCollections)

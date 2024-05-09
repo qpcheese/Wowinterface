@@ -311,7 +311,7 @@ local function helper_GoodToScan1( )
 	if not ArkInventory.Tradeskill.IsReady( ) then return end
 	
 	local loc_id = ArkInventory.Const.Location.Tradeskill
-	if not ArkInventory.Global.Location[loc_id].proj then
+	if not ArkInventory.ClientCheck( ArkInventory.Global.Location[loc_id].ClientCheck ) then
 		ArkInventory.OutputDebug( "TRADESKILL: SCAN ABORTED> tradeskill location is not supported in this expansion" )
 		return
 	end

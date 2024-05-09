@@ -20,10 +20,3 @@ X: -290
 Y: -70
 W: 261
 H: 590
-Frame: AltoholicFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 31
-Y: -30
-W: 925
-H: 538

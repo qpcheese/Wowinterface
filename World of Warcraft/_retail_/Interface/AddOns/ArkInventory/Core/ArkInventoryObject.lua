@@ -17,40 +17,50 @@ local maxRetry = 5
 
 local objectCorrections = {
 	["item"] = {
-		[86592] = {
+		[86592] = { -- Hozen Peace Pipe
 			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.EXPANSION] = ArkInventory.ENUM.EXPANSION.PANDARIA,
 		},
-		[108257] = {
+		[108257] = { -- Truesteel Ingot
 			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.EXPANSION] = ArkInventory.ENUM.EXPANSION.DRAENOR,
 		},
-		[120945] = {
+		[120945] = { -- Primal Spirit
 			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.EXPANSION] = ArkInventory.ENUM.EXPANSION.DRAENOR,
 		},
-		[124461] = {
+		[124461] = { -- Demonsteel Bar
 			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.EXPANSION] = ArkInventory.ENUM.EXPANSION.LEGION,
 		},
-		[182441] = {
+		[182441] = { -- Marksman's Advantage (conduit)
 			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.EXPANSION] = ArkInventory.ENUM.EXPANSION.SHADOWLANDS,
 		},
-		[186727] = {
+		[186727] = { -- Seal Breaker Key
 			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.EXPANSION] = ArkInventory.ENUM.EXPANSION.SHADOWLANDS,
-		},
-		[187082] = {
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPEID] = ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC,
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPE] = GetItemSubClassInfo( ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ),
-		},
-		[187083] = {
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPEID] = ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC,
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPE] = GetItemSubClassInfo( ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ),
-		},
-		[194510] = {
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.TYPEID] = ArkInventory.ENUM.ITEM.TYPE.MISC.PARENT,
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPEID] = ArkInventory.ENUM.ITEM.TYPE.MISC.OTHER,
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.TYPE] = GetItemClassInfo( ArkInventory.ENUM.ITEM.TYPE.MISC.PARENT ),
-			[ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPE] = GetItemSubClassInfo( ArkInventory.ENUM.ITEM.TYPE.MISC.PARENT, ArkInventory.ENUM.ITEM.TYPE.MISC.OTHER ),
 		},
 	},
 }
+
+local function helper_ResetObjectData( c, id, t, s )
+	objectCorrections[c][id] = objectCorrections[id] or { }
+	objectCorrections[c][id][ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.TYPEID] = t
+	objectCorrections[c][id][ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPEID] = s
+	objectCorrections[c][id][ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.TYPE] = GetItemClassInfo( t )
+	objectCorrections[c][id][ArkInventory.Const.BLIZZARD.FUNCTION.GETITEMINFO.SUBTYPE] = GetItemSubClassInfo( t, s )
+end
+
+local function helper_ResetItemData( id, t, s )
+	helper_ResetObjectData( "item", id, t, s )
+end
+
+helper_ResetItemData( 186515, ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) -- Ensemble: Aspiring Aspirant's Regalia
+helper_ResetItemData( 186727, ArkInventory.ENUM.ITEM.TYPE.KEY.PARENT, ArkInventory.ENUM.ITEM.TYPE.KEY.KEY ) -- Seal Breaker Key
+helper_ResetItemData( 199752, ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) -- Ensemble: Crimson Valdrakken Clothing
+helper_ResetItemData( 199753, ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) -- Ensemble: Black Valdrakken Clothing
+helper_ResetItemData( 199754, ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) -- Ensemble: Azure Valdrakken Clothing
+helper_ResetItemData( 199756, ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) -- Ensemble: Bronze Valdrakken Clothing
+helper_ResetItemData( 198776, ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) -- Ensemble: Renowned Expeditioner's Leather Armor
+helper_ResetItemData( 208831, ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT, ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) -- Tyr's Titan Key
+helper_ResetItemData( 211383, ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.PARENT, ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.FOOD_AND_DRINK ) -- Luvkip
+helper_ResetItemData( 224298, ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.PARENT, ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.OTHER ) -- Dilated Eon Canister
+
 
 local function helper_CorrectData( info, tmp )
 	-- correct any data
@@ -216,12 +226,13 @@ local function helper_UpdateObjectInfo( info, thread_id )
 				local stock = -1
 				
 				
-				-- clear unknown equipment types so they arent seen as equipable and warn user about it
 				if ArkInventory.Const.Slot.INVTYPE_SortOrder[info.equiploc] then
 					if ArkInventory.Const.Slot.INVTYPE_SortOrder[info.equiploc] <= 0 then
+						-- clear unwanted equipment types so they arent seen as equipable
 						info.equiploc = ""
 					end
 				else
+					-- clear unknown equipment types so they arent seen as equipable, and warn user about it
 					if info.equiploc ~= "" then
 						if not equiplocwarningsent[info.equiploc] then
 							equiplocwarningsent[info.equiploc] = true
@@ -231,12 +242,13 @@ local function helper_UpdateObjectInfo( info, thread_id )
 					end
 				end
 				
-				if info.equiploc == "INVTYPE_BAG" then
+				if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.CONTAINER.PARENT then
 					
-					--ArkInventory.TooltipDump( ArkInventory.Global.Tooltip.Scan )
-					stock = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, "^(%d+) ", false, true, true )
-					stock = ArkInventory.TooltipTextToNumber( stock )
-					--ArkInventory.OutputDebug( info.name, " stock = [", stock, "] ", ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, "^(%d+) ", false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short ) )
+					local stock1, stock2 = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ITEM_CONTAINER_SLOTS"], false, true, true )
+					stock = ArkInventory.TooltipTextToNumber( stock1 )
+					if not stock then
+						stock = ArkInventory.TooltipTextToNumber( stock2 )
+					end
 					
 				elseif info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.GEM.ARTIFACTRELIC then
 					
@@ -490,9 +502,12 @@ function ArkInventory.ObjectStringDecode( h, i )
 		end
 	end
 	
-	chs = cacheObjectStringStandard[h1]
-	if chs and cacheObjectStringDecode[chs] then
-		return cacheObjectStringDecode[chs]
+	if h1 and h1 ~= "" then
+		chs = cacheObjectStringStandard[h1]
+		if chs and cacheObjectStringDecode[chs] then
+			--ArkInventory.Output( "cached h1 [", h1, "] [", chs, "]", cacheObjectStringDecode[chs] )
+			return cacheObjectStringDecode[chs]
+		end
 	end
 	
 	
@@ -505,11 +520,13 @@ function ArkInventory.ObjectStringDecode( h, i )
 		h2 = string.match( h1, "|H(.-)|h" ) or string.match( h1, "^([a-z]-:.+)" ) or "empty:0:0"
 	end
 	
-	chs = cacheObjectStringStandard[h2]
-	if chs and cacheObjectStringDecode[chs] then
-		return cacheObjectStringDecode[chs]
+	if h2 and h2 ~= "" then
+		chs = cacheObjectStringStandard[h2]
+		if chs and cacheObjectStringDecode[chs] then
+			--ArkInventory.Output( "cached h2 [", h2, "] [", chs, "]", cacheObjectStringDecode[chs] )
+			return cacheObjectStringDecode[chs]
+		end
 	end
-	
 	
 	-- data is not cached
 	-- build it and cache it
@@ -807,10 +824,16 @@ function ArkInventory.ObjectStringDecode( h, i )
 	if h and h ~= "" then
 		cacheObjectStringStandard[h] = hs
 	end
-	cacheObjectStringStandard[h1] = hs
-	cacheObjectStringStandard[h2] = hs
-	cacheObjectStringStandard[hs] = hs
 	
+	if h1 and h1 ~= "" then
+		cacheObjectStringStandard[h1] = hs
+	end
+	
+	if h2 and h2 ~= "" then
+		cacheObjectStringStandard[h2] = hs
+	end
+	
+	cacheObjectStringStandard[hs] = hs
 	return cacheObjectStringDecode[hs]
 	
 end
@@ -968,7 +991,11 @@ function ArkInventory.ObjectIDBonus( t, h, i )
 	
 	local v = osd.h_base
 	
-	if osd.class == "item" then
+	if osd.class == "empty" then
+		
+		v = osd.h1
+		
+	elseif osd.class == "item" then
 		
 		v = string.format( "%s:0:0:0:0:0", v )
 		
@@ -1044,6 +1071,58 @@ function ArkInventory.ObjectIDCount( h, i )
 	
 end
 
+function ArkInventory.ObjectIDCategory( i, isRule )
+	
+	-- if you change these values then you need to upgrade the savedvariable data as well
+	
+	local soulbound = ArkInventory.ENUM.BIND.NEVER
+	if ArkInventory.IsBound( i.sb ) then
+		soulbound = 1
+	end
+	
+	local info = ArkInventory.GetObjectInfo( i.h )
+	local osd = info.osd
+	local r
+	
+	if osd.class == "item" then
+		r = string.format( "%s:%i:%i", osd.class, osd.id, soulbound )
+		if isRule and info.equiploc ~= "" then
+			-- equipable items get an expanded rule id
+			r = string.format( "%s:%s", r, osd.exrid )
+		end
+	elseif osd.class == "empty" then
+		local blizzard_id = ArkInventory.InternalIdToBlizzardBagId( i.loc_id, i.bag_id )
+		soulbound = ArkInventory.BagType( blizzard_id ) -- allows for unique codes per bag type
+		r = string.format( "%s:%i:%i", osd.class, osd.id, soulbound )
+	elseif osd.class == "spell" or osd.class == "currency" or osd.class == "copper" or osd.class == "reputation" or osd.class == "enchant" then
+		r = string.format( "%s:%i", osd.class, osd.id )
+	elseif osd.class == "battlepet" then
+		r = string.format( "%s:%i:%i", osd.class, osd.id, soulbound )
+	elseif osd.class == "keystone" then
+		r = string.format( "%s:%i:%i", osd.class, osd.instance, soulbound )
+	else
+		ArkInventory.OutputWarning( "uncoded object class [", i.h, "] = [", osd.class, "] [", soulbound, "]" )
+		r = string.format( "%s:%i:%i", osd.class, osd.id, soulbound )
+	end
+	
+	local codex = ArkInventory.GetLocationCodex( i.loc_id )
+	local cr = string.format( "%i:%s", codex.catset_id, r )
+	
+	return cr, r, codex
+	
+end
+
+function ArkInventory.ObjectIDRule( i )
+	-- not saved, cached only, can be changed at any time
+	local id, _, codex = ArkInventory.ObjectIDCategory( i, true )
+	local rid = string.format( "%i:%i:%i:%i:%s", i.loc_id or 0, i.bag_id or 0, i.slot_id or 0, i.sb or ArkInventory.ENUM.BIND.NEVER, id )
+	return rid, id, codex
+end
+
+function ArkInventory.ObjectIDStack( bar_id, i )
+	local id = ArkInventory.ObjectIDCategory( i )
+	return string.format( "%s-%s", bar_id, id )
+end
 
 local cacheObjectIDSearch = { }
 

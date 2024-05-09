@@ -1,5 +1,5 @@
 
 AddonUsageSettings = {
-	["Play"] = false,
-	["sortOrder"] = 2,
+	["Play"] = true,
+	["sortOrder"] = 3,
 }

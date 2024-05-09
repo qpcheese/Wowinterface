@@ -90,10 +90,10 @@ local function FilterActionBackup( )
 		
 		for index = 1, n do
 			
-			local factionInfo = ArkInventory.CrossClient.GetFactionInfo( index )
-			if factionInfo and factionInfo.isHeader and factionInfo.isCollapsed then
-				--ArkInventory.Output( "expanding ", index, " / ", factionInfo.name )
-				collection.filter.expanded[factionInfo.name] = true
+			local info = ArkInventory.CrossClient.GetFactionInfo( index )
+			if info and info.isHeader and info.isCollapsed then
+				--ArkInventory.Output( "expanding [", index, "] [", info.name, "]" )
+				collection.filter.expanded[index] = true
 				ArkInventory.CrossClient.ExpandFactionHeader( index )
 				e = false
 				break
@@ -113,32 +113,19 @@ local function FilterActionRestore( )
 	
 	if not collection.filter.backup then return end
 	
-	local n, e, c
-	local p = 0
-	
 	collection.filter.ignore = true
 	
-	repeat
+	local n = ArkInventory.CrossClient.GetNumFactions( )
+	
+	for index = n, 1, -1 do
 		
-		p = p + 1
-		n = ArkInventory.CrossClient.GetNumFactions( )
-		--ArkInventory.Output( "pass=", p, " num=", n )
-		e = true
-		
-		for index = 1, n do
-			
-			local factionInfo = ArkInventory.CrossClient.GetFactionInfo( index )
-			if factionInfo and factionInfo.isHeader and not factionInfo.isCollapsed and collection.filter.expanded[factionInfo.name] then
-				--ArkInventory.Output( "collapsing ", index, " / ", factionInfo.name )
-				collection.filter.expanded[factionInfo.name] = nil
-				ArkInventory.CrossClient.CollapseFactionHeader( index )
-				e = false
-				break
-			end
-			
+		if collection.filter.expanded[index] then
+			local info = ArkInventory.CrossClient.GetFactionInfo( index )
+			--ArkInventory.Output( "collapse header i=[",index,"] [", info.name, "]" )
+			ArkInventory.CrossClient.CollapseFactionHeader( index )
 		end
 		
-	until e or p > n * 1.5
+	end
 	
 	collection.filter.ignore = false
 	
@@ -317,11 +304,12 @@ function ArkInventory.Collection.Reputation.ToggleAtWar( id )
 		
 		local data = ArkInventory.Collection.Reputation.GetByID( id )
 		if data and data.canToggleAtWar then
-			--ArkInventory.Output2( "FactionToggleAtWar( ", data.index, " )" )
 			FactionToggleAtWar( data.index )
 		end
 		
 		FilterActionRestore( )
+		
+		ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_REPUTATION_UPDATE_BUCKET", "TOGGLE_AT_WAR" )
 		
 	end
 	
@@ -339,20 +327,25 @@ function ArkInventory.Collection.Reputation.ListSetActive( index, state, bulk )
 	local entry = ArkInventory.Collection.Reputation.GetByIndex( index )
 	if entry then
 		
-		if state and not entry.active then
-			--ArkInventory.Output( "Active: INDEX[=", entry.index, "] NAME=[", entry.name, "]" )
-			SetFactionActive( entry.index )
-		end
+		--ArkInventory.Output( "INDEX=[", entry.index, "] NAME=[", entry.name, "] ACTIVE=[", entry.active, "]" )
 		
-		if not state and entry.active then
-			--ArkInventory.Output( "Inactive: INDEX[=", entry.index, "] NAME=[", entry.name, "]" )
-			SetFactionInactive( entry.index )
+		if state then
+			if not entry.active then
+				--ArkInventory.Output( "Active: INDEX=[", entry.index, "] NAME=[", entry.name, "]" )
+				SetFactionActive( entry.index )
+			end
+		else
+			if entry.active then
+				--ArkInventory.Output( "Inactive: INDEX=[", entry.index, "] NAME=[", entry.name, "]" )
+				SetFactionInactive( entry.index )
+			end
 		end
 		
 	end
 	
 	if not bulk then
 		FilterActionRestore( )
+		ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_REPUTATION_UPDATE_BUCKET", "TOGGLE_ACTIVE" )
 	end
 	
 end
@@ -375,6 +368,8 @@ function ArkInventory.Collection.Reputation.ToggleShowAsExperienceBar( id )
 		end
 		
 		FilterActionRestore( )
+		
+		ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_REPUTATION_UPDATE_BUCKET", "TOGGLE_SHOW_AS_XP" )
 		
 	end
 	
@@ -421,8 +416,9 @@ local function ScanBase( id )
 						link = string.format( "reputation:%s", id ),
 						name = factionInfo.name,
 						description = factionInfo.description,
-						canToggleAtWar = factionInfo.canToggleAtWar,
 						hasRep = factionInfo.hasRep,
+						canToggleAtWar = factionInfo.canToggleAtWar,
+						canSetInactive = factionInfo.canSetInactive,
 					}
 					
 					collection.numTotal = collection.numTotal + 1
@@ -430,8 +426,9 @@ local function ScanBase( id )
 					ArkInventory.db.cache.reputation[id] = {
 						n = factionInfo.name,
 						d = factionInfo.description,
-						w = factionInfo.canToggleAtWar,
 						r = factionInfo.hasRep,
+						w = factionInfo.canToggleAtWar,
+						i = factionInfo.canSetInactive,
 					}
 					
 				else
@@ -443,8 +440,9 @@ local function ScanBase( id )
 							link = string.format( "reputation:%s", id ),
 							name = cr.n,
 							description = cr.d,
-							canToggleAtWar = cr.w,
 							hasRep = cr.r,
+							canToggleAtWar = cr.w,
+							canSetInactive = cr.i,
 							icon = ArkInventory.Global.Location[ArkInventory.Const.Location.Reputation].Texture
 						}
 					end
@@ -460,8 +458,6 @@ local function ScanBase( id )
 				link = "",
 				name = string.format( "Header %s", math.abs( id ) ),
 				description = "fake entry for an index header",
-				canToggleAtWar = false,
-				hasRep = false,
 			}
 			
 		end
@@ -609,6 +605,16 @@ local function Scan_Threaded( thread_id )
 						
 						if cache[id].atWarWith ~= factionInfo.atWarWith then
 							cache[id].atWarWith = factionInfo.atWarWith
+							update = true
+						end
+						
+						if cache[id].canToggleAtWar ~= factionInfo.canToggleAtWar then
+							cache[id].canToggleAtWar = factionInfo.canToggleAtWar
+							update = true
+						end
+						
+						if cache[id].canSetInactive ~= factionInfo.canSetInactive then
+							cache[id].canSetInactive = factionInfo.canSetInactive
 							update = true
 						end
 						

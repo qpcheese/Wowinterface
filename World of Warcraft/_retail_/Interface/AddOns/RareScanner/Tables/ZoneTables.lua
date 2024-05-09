@@ -191,6 +191,16 @@ private.ZONES_WITHOUT_VIGNETTE = {
 	[274] = { 285 }; --Old hillsbrad foothills
 	[462] = { 474 }; --Camp Narache
 	[425] = { 437 }; --Northshire
+	--[2112]  = { 1748 }; --Valdrakken
+	[2022]  = { 1706 }; --The walking shores
+	[2023]  = { 1705 }; --Ohn'ahran plains
+	[2024]  = { 1707 }; --The Azure span
+	[2025]  = { 1708 }; --Thaldraszus
+	--[2085]  = { 1736 }; --The primalist future
+	--[2133]  = { 1775 }; --Zaralek cavern
+	--[2151]  = { 1781 }; --The forbidden reach
+	--[2199]  = { 1805 }; --Tyrhold reservoir
+	--[2200]  = { 1806 }; --Emerald dream
 }
 
 private.RESETABLE_KILLS_ZONE_IDS = {

@@ -29,7 +29,7 @@ end
 
 function Talented:ClearTalentTab(tab)
 	local template = self.template
-	if template and template ~= template.current and self.mode == "edit" then
+	if template and not template.talentGroup and self.mode == "edit" then
 		local tab = template[tab]
 		for index, value in ipairs(tab) do
 			tab[index] = 0

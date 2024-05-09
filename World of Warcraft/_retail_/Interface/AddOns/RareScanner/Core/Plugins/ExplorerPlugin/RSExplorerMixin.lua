@@ -1705,6 +1705,7 @@ function RSExplorerMixin:HideCustomLootPanels()
 	-- Move to the center
 	self.ScanRequired:SetPoint("TOPLEFT")
 	self.ScanRequired:SetPoint("TOPRIGHT")
+	self.ScanRequired.moved = false
 end
 
 function RSExplorerMixin:ShowCustomLootPanels()
@@ -1725,8 +1726,11 @@ function RSExplorerMixin:ShowCustomLootPanels()
 	self.CustomLoot.GroupInfo:Show()
 	
 	-- Move to the bottom
-	local pointte, relativeTote, relativePointte, xOfste, yOfste = self.ScanRequired:GetPoint()
-	self.ScanRequired:SetPoint(pointte, relativeTote, relativePointte, xOfste, yOfste - 300)
+	if (not self.ScanRequired.moved) then
+		local pointte, relativeTote, relativePointte, xOfste, yOfste = self.ScanRequired:GetPoint()
+		self.ScanRequired:SetPoint(pointte, relativeTote, relativePointte, xOfste, yOfste - 300)
+		self.ScanRequired.moved = true
+	end
 end
 
 function RSExplorerMixin:HideContentPanels()

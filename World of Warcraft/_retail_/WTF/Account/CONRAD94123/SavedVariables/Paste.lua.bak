@@ -59,8 +59,8 @@ PasteDB = {
 		},
 		["Qubit - Ragnaros"] = {
 			["loaded"] = true,
-			["where"] = "Default",
 			["whispertarget"] = "",
+			["where"] = "Default",
 			["pos"] = {
 				["height"] = 320,
 				["top"] = 470.9998474121094,
@@ -86,8 +86,8 @@ PasteDB = {
 		},
 		["Qpe - Ravencrest"] = {
 			["loaded"] = true,
-			["whispertarget"] = "",
 			["where"] = "Default",
+			["whispertarget"] = "",
 			["pos"] = {
 			},
 		},

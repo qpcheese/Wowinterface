@@ -1,13 +1,15 @@
 
 BToolsDB = {
 	["profileKeys"] = {
-		["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
-		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
-		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
-		["Qpfromagee - Ragnaros"] = "Qpfromagee - Ragnaros",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
-		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
+		["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
+		["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
+		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+		["Qpfromagee - Ragnaros"] = "Qpfromagee - Ragnaros",
 		["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+		["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
 		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["global"] = {
@@ -10336,6 +10338,20 @@ BToolsDB = {
 				["serverTime"] = 1708945437,
 				["result"] = "Completed",
 			}, -- [165]
+			{
+				["targetMoney"] = 3440000000,
+				["playerMoney"] = 0,
+				["id"] = 166,
+				["playerItems"] = {
+				},
+				["targetItems"] = {
+				},
+				["player"] = "Qpcheese-Ragnaros",
+				["location"] = "Valdrakken",
+				["result"] = "Completed",
+				["serverTime"] = 1714451994,
+				["target"] = "Qpfromage-Sylvanas",
+			}, -- [166]
 		},
 	},
 }

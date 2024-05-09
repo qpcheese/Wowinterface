@@ -379,6 +379,8 @@ L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "다른 캐릭터"
 L["S_TEXT_SIZE"] = "Text Size"
 --[[Translation missing --]]
 L["S_TORGAST"] = "Torgasth"
+--[[Translation missing --]]
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "받을 수 있는 보상의 양을 나타냅니다"
 L["S_TUTORIAL_CLICKTOTRACK"] = "퀘스트를 추적하려면 클릭하세요."
 L["S_TUTORIAL_PARTY"] = "파티 중일 때 모든 파티원이 수행 중인 퀘스트에 파란색 별이 표시됩니다!"

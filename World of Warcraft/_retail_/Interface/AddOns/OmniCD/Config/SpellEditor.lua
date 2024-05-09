@@ -3,7 +3,7 @@ local E, L = select(2, ...):unpack()
 local GetNumSpecializationsForClassID = GetNumSpecializationsForClassID
 local GetSpecializationInfoForClassID = GetSpecializationInfoForClassID
 local GetSpecializationInfoByID = GetSpecializationInfoByID
-if E.preCata then
+if E.preMoP then
 	GetNumSpecializationsForClassID = function() return 0 end
 	GetSpecializationInfoForClassID = E.Noop
 	GetSpecializationInfoByID = E.Noop
@@ -345,7 +345,7 @@ local customSpellInfo = {
 			return not E.L_HIGHLIGHTS[OmniCDDB.cooldowns[id].type]
 		end,
 		name = L["Buff ID (Optional)"],
-		desc = L["Enter buff ID if it differs from spell ID for Highlights to work"],
+		desc = format("%s\n\n|cffff2020%s", L["Enter buff ID if it differs from spell ID for Highlights to work"], L["0: Disable option"]),
 		order = 15,
 		type = "input",
 		get = function(info)
@@ -383,7 +383,7 @@ local customSpellInfo = {
 	},
 }
 
-if not E.preCata then
+if not E.preMoP then
 	local customSpellSpecInfo = {
 		enabled = {
 			name = ENABLE,

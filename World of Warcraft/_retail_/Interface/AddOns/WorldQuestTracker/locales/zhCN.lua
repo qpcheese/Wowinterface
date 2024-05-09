@@ -346,6 +346,8 @@ L["S_SUMMARYPANEL_LIFETIMESTATISTICS_CHARACTER"] = "角色在线时间统计"
 L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "其他角色"
 L["S_TEXT_SIZE"] = "文字大小"
 L["S_TORGAST"] = "托加斯特"
+--[[Translation missing --]]
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "显示接收量"
 L["S_TUTORIAL_CLICKTOTRACK"] = "点击追踪任务。"
 L["S_TUTORIAL_PARTY"] = "队伍中时，蓝星显示此全部队友有此任务！"

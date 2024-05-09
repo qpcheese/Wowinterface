@@ -148,13 +148,7 @@ local function _RefreshDialogAnchors()
         current_dialog:ClearAllPoints()
 
         if index == 1 then
-            local default_dialog = _G.StaticPopup_DisplayedFrames[#_G.StaticPopup_DisplayedFrames]
-
-            if default_dialog then
-                current_dialog:SetPoint("TOP", default_dialog, "BOTTOM", 0, 0)
-            else
-                current_dialog:SetPoint("TOP", _G.UIParent, "TOP", 0, -135)
-            end
+            _SetupAnchor(current_dialog)
         else
             current_dialog:SetPoint("TOP", active_dialogs[index - 1], "BOTTOM", 0, 0)
         end
@@ -287,6 +281,32 @@ end
 local function _Dialog_OnEvent(self, event, ...)
     if self[event] then
         return self[event](self, event, ...)
+    end
+end
+
+-----------------------------------------------------------------------
+--helper function for cata classic
+--thx Road-block
+--https://github.com/Torhal/LibDialog-1.0/issues/5
+-----------------------------------------------------------------------
+local function _SetupAnchor(dialog)
+    local default_dialog
+    if _G.StaticPopup_DisplayedFrames then
+        default_dialog = _G.StaticPopup_DisplayedFrames[#_G.StaticPopup_DisplayedFrames]
+    elseif (_G.StaticPopup_HasDisplayedFrames and _G.StaticPopup_IsLastDisplayedFrame) then
+        if StaticPopup_HasDisplayedFrames() then
+            for idx = STATICPOPUP_NUMDIALOGS,1,-1 do
+                local test_dialog = _G["StaticPopup"..idx]
+                if StaticPopup_IsLastDisplayedFrame(test_dialog) then
+                    default_dialog = test_dialog
+                end
+            end
+        end
+    end
+    if default_dialog then
+        dialog:SetPoint("TOP", default_dialog, "BOTTOM", 0, 0)
+    else
+        dialog:SetPoint("TOP", _G.UIParent, "TOP", 0, -135)
     end
 end
 
@@ -830,13 +850,7 @@ function lib:Spawn(reference, data)
     if #active_dialogs > 0 then
         dialog:SetPoint("TOP", active_dialogs[#active_dialogs], "BOTTOM", 0, 0)
     else
-        local default_dialog = _G.StaticPopup_DisplayedFrames[#_G.StaticPopup_DisplayedFrames]
-
-        if default_dialog then
-            dialog:SetPoint("TOP", default_dialog, "BOTTOM", 0, 0)
-        else
-            dialog:SetPoint("TOP", _G.UIParent, "TOP", 0, -135)
-        end
+        _SetupAnchor(dialog)
     end
     active_dialogs[#active_dialogs + 1] = dialog
     dialog:Show()

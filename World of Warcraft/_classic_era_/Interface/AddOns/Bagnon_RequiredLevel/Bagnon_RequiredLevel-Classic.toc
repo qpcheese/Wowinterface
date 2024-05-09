@@ -1,5 +1,5 @@
-## Interface: 11501
-## Version: 1.21.5
+## Interface: 11502
+## Version: 1.21.7
 ## Title: Bagnon RequiredLevel
 ## Author: LudiusMaximus
 ## Notes: A simple Bagnon plugin that displays |nitems and recipes in red for which |nthe required character or skill level |nis not yet fulfilled. The required level |nis then displayed in the corner. |n(Based on "Bagnon ItemLevel" |nby Lars "Goldpaw" Norberg.)

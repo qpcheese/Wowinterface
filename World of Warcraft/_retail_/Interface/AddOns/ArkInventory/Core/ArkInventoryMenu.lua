@@ -210,7 +210,7 @@ function ArkInventory.MenuMainOpen( frame )
 					end
 				)
 				
-				if ArkInventory.Global.Location[ArkInventory.Const.Location.Mount].proj then
+				if ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Mount].ClientCheck ) then
 					
 					ArkInventory.Lib.Dewdrop:AddLine(
 						"icon", ArkInventory.Global.Location[ArkInventory.Const.Location.Mount].Texture,
@@ -2961,7 +2961,7 @@ function ArkInventory.MenuSwitchLocation( offset, level, value, frame )
 			
 			local t = ArkInventory.Global.Location
 			for loc_id, loc_data in ArkInventory.spairs( t, function( a, b ) return ( t[a].Name or "" ) < ( t[b].Name or "" ) end ) do
-				if loc_data.canView and ArkInventory.ClientCheck( loc_data.proj ) then
+				if loc_data.canView and ArkInventory.ClientCheck( loc_data.ClientCheck ) then
 					ArkInventory.Lib.Dewdrop:AddLine(
 						"text", loc_data.Name,
 						"tooltipTitle", loc_data.Name,
@@ -2980,7 +2980,7 @@ function ArkInventory.MenuSwitchLocation( offset, level, value, frame )
 		else
 			
 			for loc_id, loc_data in ArkInventory.spairs( ArkInventory.Global.Location ) do
-				if loc_data.canView and ArkInventory.ClientCheck( loc_data.proj ) then
+				if loc_data.canView and ArkInventory.ClientCheck( loc_data.ClientCheck ) then
 					ArkInventory.Lib.Dewdrop:AddLine(
 						"text", loc_data.Name,
 						"tooltipTitle", loc_data.Name,
@@ -3537,6 +3537,27 @@ function ArkInventory.MenuLDBBagsOpen( frame )
 					)
 					
 					ArkInventory.Lib.Dewdrop:AddLine(
+						"text", ArkInventory.Localise["DISPLAY"],
+						"hasArrow", true,
+						"value", "LDB_BAG_TYPES"
+					)
+					
+				end
+				
+			end
+			
+			if level == 3 and value then
+				
+				if value == "LDB_BAG_TYPES" then
+				
+					ArkInventory.Lib.Dewdrop:AddLine(
+						"text", ArkInventory.Localise["DISPLAY"],
+						"isTitle", true
+					)
+					
+					ArkInventory.Lib.Dewdrop:AddLine( )
+					
+					ArkInventory.Lib.Dewdrop:AddLine(
 						"text", ArkInventory.Localise["LDB_BAGS_INCLUDE_TYPE"],
 						"tooltipTitle", ArkInventory.Localise["LDB_BAGS_INCLUDE_TYPE"],
 						"tooltipText", ArkInventory.Localise["LDB_BAGS_INCLUDE_TYPE_DESC"],
@@ -3547,8 +3568,35 @@ function ArkInventory.MenuLDBBagsOpen( frame )
 						end
 					)
 					
+					ArkInventory.Lib.Dewdrop:AddLine( )
+					
+					local data = ArkInventory.Const.Slot.Data
+					
+					for k, v in ArkInventory.spairs( ArkInventory.Const.Slot.Data, function(a,b) return ( data[a] and data[a].name or "" ) < ( data[b] and data[b].name or "" ) end ) do
+						
+						if not v.hide then
+							
+							if ArkInventory.ClientCheck( v.ClientCheck ) then
+								
+								ArkInventory.Lib.Dewdrop:AddLine(
+									"text", v.name,
+									"tooltipTitle", v.name,
+									"tooltipText", ArkInventory.Localise["LDB_BAGS_INCLUDE_COUNT_DESC"],
+									"checked", codex.player.data.ldb.bags.include[k],
+									"func", function( )
+										codex.player.data.ldb.bags.include[k] = not codex.player.data.ldb.bags.include[k]
+										ArkInventory.LDB.Bags:Update( )
+									end
+								)
+								
+								
+							end
+							
+						end
+						
+					end
+					
 				end
-				
 				
 			end
 			
@@ -3821,6 +3869,8 @@ function ArkInventory.MenuLDBTrackingCurrencyListOptions( value, codex )
 		local entry = ArkInventory.Collection.Currency.GetByIndex( index )
 		local data = entry.data
 		
+		--ArkInventory.Output( entry )
+		
 		ArkInventory.Lib.Dewdrop:AddLine(
 			"text", entry.name,
 			"isTitle", true
@@ -3835,7 +3885,7 @@ function ArkInventory.MenuLDBTrackingCurrencyListOptions( value, codex )
 		local checked = not entry.active
 		
 		if checked then
-			--text = string.format( "%s%s", GREEN_FONT_COLOR_CODE, text )
+			text = string.format( "%s%s", RED_FONT_COLOR_CODE, text )
 			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["RESTORE"] )
 		else
 			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["MOVE"] )
@@ -3849,7 +3899,6 @@ function ArkInventory.MenuLDBTrackingCurrencyListOptions( value, codex )
 			"closeWhenClicked", true,
 			"func", function( )
 				ArkInventory.Collection.Currency.ListSetActive( entry.index, not entry.active )
-				ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_CURRENCY_UPDATE_BUCKET", "LDB_MENU" )
 			end
 		)
 		
@@ -4189,6 +4238,7 @@ function ArkInventory.MenuLDBTrackingReputationListOptions( value, codex )
 		
 		ArkInventory.Lib.Dewdrop:AddLine( )
 		
+		
 		-- at war
 		
 		local text = ArkInventory.Localise["AT_WAR"]
@@ -4196,6 +4246,7 @@ function ArkInventory.MenuLDBTrackingReputationListOptions( value, codex )
 		local checked = data.atWarWith
 		
 		if checked then
+			text = string.format( "%s%s", RED_FONT_COLOR_CODE, text )
 			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["ENABLE"] )
 		else
 			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["DISABLE"] )
@@ -4207,37 +4258,9 @@ function ArkInventory.MenuLDBTrackingReputationListOptions( value, codex )
 			"tooltipTitle", text,
 			"tooltipText", desc,
 			"closeWhenClicked", true,
-			"disabled", not checked,
+			"disabled", not data.canToggleAtWar,
 			"func", function( )
 				ArkInventory.Collection.Reputation.ToggleAtWar( data.id )
-				ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_REPUTATION_UPDATE_BUCKET", "LDB_MENU" )
-			end
-		)
-		
-		
-		
-		-- show as experience bar
-		
-		local text = ArkInventory.Localise["SHOW_FACTION_ON_MAINSCREEN"]
-		local desc = ArkInventory.Localise["REPUTATION_SHOW_AS_XP"]
-		local checked = data.isWatched
-		
-		if checked then
-			--text = string.format( "%s%s", GREEN_FONT_COLOR_CODE, text )
-			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["CLEAR"] )
-		else
-			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["SET"] )
-		end
-		
-		ArkInventory.Lib.Dewdrop:AddLine(
-			"icon", checked and ArkInventory.Const.Texture.Checked or "",
-			"text", text,
-			"tooltipTitle", text,
-			"tooltipText", desc,
-			"closeWhenClicked", true,
-			"func", function( )
-				ArkInventory.Collection.Reputation.ToggleShowAsExperienceBar( data.id )
-				ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_REPUTATION_UPDATE_BUCKET", "LDB_MENU" )
 			end
 		)
 		
@@ -4261,12 +4284,36 @@ function ArkInventory.MenuLDBTrackingReputationListOptions( value, codex )
 			"tooltipTitle", text,
 			"tooltipText", desc,
 			"closeWhenClicked", true,
+			"disabled", not data.canSetInactive,
 			"func", function( )
 				ArkInventory.Collection.Reputation.ListSetActive( entry.index, not entry.active )
-				ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_REPUTATION_UPDATE_BUCKET", "LDB_MENU" )
 			end
 		)
 		
+		
+		-- show as experience bar
+		
+		local text = ArkInventory.Localise["SHOW_FACTION_ON_MAINSCREEN"]
+		local desc = ArkInventory.Localise["REPUTATION_SHOW_AS_XP"]
+		local checked = data.isWatched
+		
+		if checked then
+			--text = string.format( "%s%s", GREEN_FONT_COLOR_CODE, text )
+			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["CLEAR"] )
+		else
+			desc = string.format( ArkInventory.Localise["ADD_CLICK_TO_ACTION"], desc, ArkInventory.Localise["SET"] )
+		end
+		
+		ArkInventory.Lib.Dewdrop:AddLine(
+			"icon", checked and ArkInventory.Const.Texture.Checked or "",
+			"text", text,
+			"tooltipTitle", text,
+			"tooltipText", desc,
+			"closeWhenClicked", true,
+			"func", function( )
+				ArkInventory.Collection.Reputation.ToggleShowAsExperienceBar( data.id )
+			end
+		)
 		
 		
 		-- ldb options

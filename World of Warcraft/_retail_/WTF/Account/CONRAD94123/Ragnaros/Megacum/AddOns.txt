@@ -8,7 +8,7 @@ LibGroupInSpecT-1.1: disabled
 GatherMate2: disabled
 GatherMate2_Data: disabled
 BigWigs_Transcriptor: disabled
-BigWigs_CommonAuras: disabled
+BigWigs_CommonAuras: enabled
 BigWigs_WarlordsOfDraenor: disabled
 BigWigs_MistsOfPandaria: disabled
 BigWigs_Legion: disabled
@@ -34,7 +34,7 @@ Bartender4: disabled
 BeQuiet: disabled
 BigWigs: disabled
 BigWigs_Core: enabled
-BigWigs_DragonIsles: disabled
+BigWigs_DragonIsles: enabled
 BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 BigWigs_VaultOfTheIncarnates: disabled
@@ -154,7 +154,7 @@ ArkInventoryConfig: disabled
 ArkInventoryRules: disabled
 ArkInventoryRules_Example: disabled
 ArkInventorySearch: disabled
-BigWigs_Aberrus: disabled
+BigWigs_Aberrus: enabled
 CursorMod: disabled
 CursorTrail: disabled
 Details_ExplosiveOrbs: disabled
@@ -195,7 +195,7 @@ Battle Pet Daily Tamer: disabled
 BLU: disabled
 BigWigs_CountDown_Narwhal: disabled
 BigWigs_Countdown_Sabinico: disabled
-BigWigs_VoiceGCP: disabled
+BigWigs_VoiceGCP: enabled
 BigWigs_Voice_Arnold: disabled
 BigWigs_Voice_Eminem: disabled
 BigWigs_Voice_Marine: disabled

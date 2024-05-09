@@ -1272,6 +1272,7 @@ end
 
 function ArkInventory.Collection.Mount.GetCount( mta )
 	if mta then
+		ArkInventory.OutputDebug("mounts [", mta, "] [", ArkInventory.Table.Elements( collection.usable[mta] ), " / ", ArkInventory.Table.Elements( collection.owned[mta] ), "]" )
 		return ArkInventory.Table.Elements( collection.usable[mta] ), ArkInventory.Table.Elements( collection.owned[mta] )
 	else
 		return collection.numOwned, collection.numTotal
@@ -1300,8 +1301,6 @@ function ArkInventory.Collection.Mount.GetUsable( mta )
 end
 
 function ArkInventory.Collection.Mount.isDragonridingAvailable( )
-	
---	return IsAdvancedFlyableArea() and IsOutdoors()
 	
 	local DragonRidingMounts = C_MountJournal.GetCollectedDragonridingMounts( )
 	for _, mountID in pairs( DragonRidingMounts ) do
@@ -1374,6 +1373,123 @@ function ArkInventory.Collection.Mount.SetFavorite( id, value )
 	end
 end
 
+
+function ArkInventory.Collection.Mount.IsFlyableAdvanced( )
+	
+	local IsFlyable = ArkInventory.CrossClient.IsAdvancedFlyableArea( ) and IsOutdoors( )
+	
+	return IsFlyable
+	
+end
+
+function ArkInventory.Collection.Mount.IsFlyableNormal( )
+	
+	local IsFlyable = IsFlyableArea( ) -- its dynamic based off skill and location but its got some issues.  its usually only wrong about flying zones but it got worse in 7.3.5
+	
+	--local name, instanceType, difficulty, difficultyName, maxPlayers, playerDifficulty, isDynamicInstance, instanceMapId, instanceGroupSize, lfgID = GetInstanceInfo( )
+	local instancemapid = select( 8, GetInstanceInfo( ) )
+	local uimapid = C_Map.GetBestMapForUnit( "player" )
+	
+	if not IsFlyable then
+		
+		--ArkInventory.Output( "blizzard says this is NOT a flyable area" )
+		
+		-- /run ArkInventory.Output(IsFlyableArea())
+		-- /run ArkInventory.Output({GetInstanceInfo()})
+		
+		if ArkInventory.Const.Flying.Bug735[instancemapid] then
+			
+			--ArkInventory.Output( "zone, instancemapid, " is not flyable, but you can actually fly here" )
+			IsFlyable = true
+			
+		end
+		
+	end
+	
+	return IsFlyable
+	
+end
+
+function ArkInventory.Collection.Mount.IsFlyable( )
+	
+	if IsIndoors( ) or ArkInventory.Collection.Mount.SkillLevel( ) < 225 then
+		return false
+	end
+	
+	local IsFlyable = ArkInventory.Collection.Mount.IsFlyableNormal( ) or ArkInventory.Collection.Mount.IsFlyableAdvanced( )
+	
+	--local name, instanceType, difficulty, difficultyName, maxPlayers, playerDifficulty, isDynamicInstance, instanceMapId, instanceGroupSize, lfgID = GetInstanceInfo( )
+	local instancemapid = select( 8, GetInstanceInfo( ) )
+	local uimapid = C_Map.GetBestMapForUnit( "player" )
+	
+	if IsFlyable then
+		
+		--ArkInventory.Output( "blizzard says this is a flyable area" )
+		
+		-- dont care what blizzard says, you cant actually fly in this zone
+		if IsFlyable and ArkInventory.Const.Flying.Never.Instance[instancemapid] then
+			--ArkInventory.Output( "zone ", instancemapid, " is non flyable" )
+			IsFlyable = false
+		end
+		
+		-- you can fly here but you need a specific achievement
+		if IsFlyable and ArkInventory.Const.Flying.Achievement[instancemapid] then
+			local known = select( 4, GetAchievementInfo( ArkInventory.Const.Flying.Achievement[instancemapid] ) )
+			if not known then
+				--ArkInventory.Output( "zone ", instancemapid, " but you do not have achievement ", ArkInventory.Const.Flying.Achievement[instancemapid] )
+				IsFlyable = false
+			end
+		end
+		
+		-- you can fly here but you need a specific quest
+		if IsFlyable and ArkInventory.Const.Flying.Quest[instancemapid] then
+			local known = C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted( ArkInventory.Const.Flying.Quest[instancemapid] )
+			if not known then
+				--ArkInventory.Output( "zone ", instancemapid, " but you do not have quest ", ArkInventory.Const.Flying.Spell[instancemapid] )
+				IsFlyable = false
+			end
+		end
+		
+		-- you can fly here but you need a specific spell
+		if IsFlyable and ArkInventory.Const.Flying.Spell[instancemapid] then
+			local known = IsSpellKnown( ArkInventory.Const.Flying.Spell[instancemapid] )
+			if not known then
+				--ArkInventory.Output( "zone ", instancemapid, " but you do not have spell ", ArkInventory.Const.Flying.Spell[instancemapid] )
+				IsFlyable = false
+			end
+		end
+		
+		-- while you can fly in this zone, you cannot fly in this particular map
+		if IsFlyable and ArkInventory.Const.Flying.Never.Map[uimapid] then
+			--ArkInventory.Output( "zone ", instancemapid, " is flyable but map ", uimapid, " is not" )
+			IsFlyable = false
+		end
+		
+	end
+	
+	if IsFlyable then
+		
+		-- world pvp battle in progress?
+		
+		for index = 1, ArkInventory.CrossClient.GetNumWorldPVPAreas( ) do
+			
+			local pvpID, pvpZone, isActive = GetWorldPVPAreaInfo( index )
+			--ArkInventory.Output( pvpID, " / ", pvpZone, " / ", isActive )
+			
+			if isActive and GetRealZoneText( ) == pvpZone then
+				-- ArkInventory.Output( "battle in progress, no flying allowed" )
+				IsFlyable = false
+				break
+			end
+			
+		end
+		
+	end
+	
+	return IsFlyable
+	
+end
+
 function ArkInventory.Collection.Mount.isUsable( id )
 	
 	local md = ArkInventory.Collection.Mount.GetMount( id )
@@ -1383,27 +1499,32 @@ function ArkInventory.Collection.Mount.isUsable( id )
 			
 			local mz = false
 			
-			local mu = select( 5, C_MountJournal.GetMountInfoByID( id ) ) -- is not always correct
+			--local mu = select( 5, C_MountJournal.GetMountInfoByID( id ) ) -- is not always correct
+			local mu = C_MountJournal.GetMountUsabilityByID( id, IsIndoors( ) )
 			if mu then
+				
+				if md.mta == "a" then
+					if md.isDragonriding then
+						if not ArkInventory.Collection.Mount.IsFlyableAdvanced( ) then
+							mu = false
+						end
+					else
+						if not ArkInventory.Collection.Mount.IsFlyableNormal( ) then
+							mu = false
+						end
+					end
+				end
 				
 				if ZoneRestrictions[md.spellID] then
 					
 					ArkInventory.OutputDebug( "mount ", md.spellID, " has zone restrictions ", ZoneRestrictions[md.spellID] )
 					
-					if #ZoneRestrictions == 0 then
-						
-						mz = true
-						
-					else
-						
-						local map = C_Map.GetBestMapForUnit( "player" )
-						for _, z in pairs( ZoneRestrictions[md.spellID] ) do
-							if map == z then
-								mz = true
-								break
-							end
+					local map = C_Map.GetBestMapForUnit( "player" )
+					for _, z in pairs( ZoneRestrictions[md.spellID] ) do
+						if map == z then
+							mz = true
+							break
 						end
-						
 					end
 					
 					if not mz then
@@ -1413,9 +1534,9 @@ function ArkInventory.Collection.Mount.isUsable( id )
 					
 				end
 				
+				return mu, mz
+				
 			end
-			
-			return mu, mz
 			
 		end
 		
@@ -1507,14 +1628,17 @@ function ArkInventory.Collection.Mount.UpdateUsable( useDragonridingWhenAvailabl
 	if n == 0 then return end
 	
 	local me = ArkInventory.GetPlayerCodex( )
-	local isDragonridingAvailable = ArkInventory.Collection.Mount.isDragonridingAvailable( )
-	ArkInventory.OutputDebug( "isDragonridingAvailable = ", isDragonridingAvailable )
+	
+	ArkInventory.OutputDebug( "Area Flyable (Normal) = ", ArkInventory.Collection.Mount.IsFlyableNormal( ) )
+	ArkInventory.OutputDebug( "Area Flyable (Advanced) = ", ArkInventory.Collection.Mount.IsFlyableAdvanced( ) )
 	
 	for mta, mt in pairs( ArkInventory.Const.Mount.Types ) do
 		
-		for zr = 0, 1 do
-			-- 0 = only select zone specific mounts
-			-- 1 = pick any mount
+		for checkType = 0, 2 do
+			
+			-- 0 = check for zone specific mounts
+			-- 1 = preferred flying mount type (normal/dragonriding)
+			-- 2 = pick any mount that works
 			
 			for _, md in ArkInventory.Collection.Mount.Iterate( mta ) do
 				
@@ -1529,12 +1653,13 @@ function ArkInventory.Collection.Mount.UpdateUsable( useDragonridingWhenAvailabl
 				
 				if usable then
 					usable, mz = ArkInventory.Collection.Mount.isUsable( md.index )
-					if zr == 0 and usable and not mz then
-						usable = false
-					end
 				end
 				
-				if usable and mta == "a" and isDragonridingAvailable then
+				if usable and checkType == 0 and not mz then
+					usable = false
+				end
+				
+				if usable and checkType == 1 and mta == "a" then
 					if useDragonridingWhenAvailable then
 						if forceDragonridingAlternative then
 							if md.isDragonriding then
@@ -1564,11 +1689,11 @@ function ArkInventory.Collection.Mount.UpdateUsable( useDragonridingWhenAvailabl
 				
 			end
 			
---			if mta == "l" then
---				ArkInventory.OutputDebug( "usable [", zr, "] ", mta, " = ", collection.usable[mta] )
---			end
+			local c = ArkInventory.Table.Elements( collection.usable[mta] )
 			
-			if ArkInventory.Table.Elements( collection.usable[mta] ) > 0 then
+			ArkInventory.OutputDebug( "check type [", mta, "] [", checkType, "] mounts found [", c, "]" )
+			
+			if c > 0 then
 				break
 			end
 			

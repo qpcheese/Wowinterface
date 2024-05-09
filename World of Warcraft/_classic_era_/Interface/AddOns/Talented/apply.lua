@@ -18,12 +18,13 @@ function Talented:ApplyCurrentTemplate()
 		return
 	end
 	local count = 0
-	local current = self.current
+	local current = self:GetActiveSpec()
+	local group = GetActiveTalentGroup()
 	-- check if enough talent points are available
 	local available = UnitCharacterPoints("player")
 	for tab, tree in ipairs(self:GetTalentInfo(template.class)) do
 		for index = 1, #tree.talents do
-			local delta = template[tab][index] - self.current[tab][index]
+			local delta = template[tab][index] - current[tab][index]
 			if delta > 0 then
 				count = count + delta
 			end
@@ -91,7 +92,7 @@ function Talented:ApplyNextTalentPoint()
 	local cp = UnitCharacterPoints("player")
 	
 	local found = false
-	local current = self.current
+	local current = self:GetActiveSpec()
 	local template = self.template
 	local class = template.class
 	assert(select(2, UnitClass"player") == template.class, "Player class doesn't match template class")
@@ -122,12 +123,12 @@ end
 
 function Talented:CheckTalentPointsApplied()
 	local template = self.template
-	local current = self.current
+	local current = self:GetActiveSpec()
 	local failed
 	for tab, tree in ipairs(self:GetTalentInfo(template.class)) do
 		local ttab = template[tab]
 		for index = 1, #tree do
-			local delta = ttab[index] - select(5, self:MatchedGetTalentInfo(tab, index))
+			local delta = ttab[index] - select(5, self:MatchedGetTalentInfo(tab, index, false, GetActiveTalentGroup()))
 			if delta > 0 then
 				failed = true
 				break

@@ -488,7 +488,7 @@ local function FindProfessionItem( loc_id, cl, cb, bp, cs, ct )
 								
 								-- ignore bags
 								local info = ArkInventory.GetObjectInfo( h )
-								if info.equiploc ~= "INVTYPE_BAG" then
+								if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.CONTAINER.PARENT then
 									
 									local check_item = true
 									if loc_id ~= cl and not info.craft then

@@ -1,170 +1,33 @@
 # AllTheThings
 
-## [DF-3.10.6](https://github.com/DFortun81/AllTheThings/tree/DF-3.10.6) (2024-04-14)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.10.5...DF-3.10.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.12.0](https://github.com/DFortun81/AllTheThings/tree/DF-3.12.0) (2024-05-07)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.11.2...DF-3.12.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-- minimum weekly contribution to att so I get my 5000€/weekly from crieve  
-- Isle of Thunder zone achievements (and a correction to the original file!)  
-- Removed already sorted ensembles from unsorted.  
-- Added all new SoO ensembles and raid gear.  
-- Dread Wastes zone achievements  
-- New Wago csv files  
-- Added Daily Quests  
-- Added Plate Ensembles  
-- Classic: Fixed the tooltip on the Dalson Outhouse.  
-- Mop remix raid achievement criteria  
-- AchievementDB and ptr parse  
-- Retail: Added some iterative update handling in cases where large amounts of groups are requested to be updated all at once to reduce any apparent stutter  
-    Some unused Map locals  
-- Split meta achievements up into their respective subachievements  
-- Added all Mail Ensembles  
-- Added all Leather Ensembles  
-- ItemWithAppearance is only 'saved' if the Source is actually known on the Account  
-- Herioc Dungeons not needed in Tier 14 Riads  
-- Sacrificed some gold to track down & fix why Mount collection notifications were bugged  
-    Fixed class filterID assignments (we expect 'f' with a fallback to 'filterID' if missing, eventually only 'f' I hope)  
-    Added protection for calling SearchLink with a missing group  
-- -- Added all Cloth Ensembles  
-- Added some old HQTs.  
-- Removed empty armor groups.  
-- Added all new Tier 14 sets.  
-- HQT for Legion Archeaology  
-- Classic: Fixed couple source quests  
-- -- Added Gem/Toy/Consum Vendor  
-- Added all Shared Cosmetic Ensembles  
-- Added Classe Ensemble/Arsenals  
-    Fixed up the zones  
-- Added many new and also old HQTs for Ensembles and Arsenals.  
-- Remix Raids and WB added  
-    Shaman Tier Added with Ensembles  
-- Added some more missing providers/objectives.  
-- Bad Quest chain error  
-- Fixed some locking Quests using incorrect names within tooltips  
-- Retail: When Costs finish re-calculating (i.e. when changing Settings), any open ATT windows (other than Main list) will re-update themselves to reflect the latest Cost information due to the changes in Settings  
-- Fixed ignored quest conditional being outside of the existence check  
-- Retail: Some rearrangement of Locked Quest collectible logic  
-- Broodling Essence object.  
-- PTR: MOP remix backlog for Jade Forest on druid (ne)  
-- Added some missing objects to Classic and fixed objective cost.  
-- Fixed quest 72129 as Evoker only  
-- Minor fix to update learned mounts  
-- Fixed logic for Mount collection (un-tested)  
-- Found out what are renown HQTs for Plunderstorm + added new ones too.  
-- Fixed [IGNORE\_QUEST\_PRINT] table not functioning as intended & added chat warning if we need to clear it automatically due to lots of bad data contamination from previous updates  
-- Doti update - removed 2 items which are not in quantum.  
-- Not needed  
-- Added Dungeons and made Armor Meta instead  
-- Added Mount Vendor  
-- Infinite Bazaar Start  
-- Mock up and Start of dungeons  
-- Achievement Categories Added  
-- Mock up and start of raid MSV  
-- I mock up and start of Jade Forest  
-- Added lot of "Misc" Rewards  
-- Updated providers and objectives for the Swamp of Sorrows.  
-- Some Remix Quests  
-- You can now specify "learnedAt" on objects and quests that use requireSkill already to indicate at which skill level a thing becomes available.  
-- Added the Hippogryph Egg object to Feralas.  
-    Rebuilt Classic DBs to use the new sourceIDs from the Cata Beta.  
-- Fixed Are We There, Yeti? (3/3)'s objectives.  
-- Removed already sorted quest from NYI.  
-- Generate Missing Files  
-- BFA JC  
-- Cleaned up Remix a bit  
-- Sorted Mail and Class Sets  
-- Added some HQT for tormentors  
-    Added description to Wrath of the jailer  
-- Cata: Harvested new sourceIDs. (Cataclysm uses a different set of sourceIDs exclusive to classic... :(  
-- PTR: Valdrakken and Amirdrassil quests  
-- The beads quests do not require neutral.  
-- Winterfall Activity is not alliance only nor does it require neutral.  
-- Added Pet, Toy, Illusion and remaining Unsorted  
-- First Sorting + MountDB  
-- Fixed merge confusion  
-- Doti update.  
-- Added some 10.2.7 achievements  
-- Missing object data to silithus.  
-- PTR Parse  
-- bump ptr parser  
-- Generating Missing  
-- Some Remix temporary fixes  
-- Classic Engineering Reworked  
-- Remix Prep and PH Files  
-- Clarified friend of a friend quests unlock criteria  
-- Petbattle WQ's for Shadowlands and Embercourt issues  
-- Added the object for Scrimshank's Surveying Gear.  
-- Fixed a scuffed object name that was in the DB incorrectly for venomhide eggs.  
-- Added the Inconspicuous Landmark object to Cuergo's Treasure.  
-- Wrath Classic: Fixed an issue with Caverns of Time's map.  
-- Updated the note on An Unholy Alliance.  
-- Added the Sapphires of Aku'Mai.  
-- Added the Naga Brazier for Vorsha the Lasher.  
-- Harvest: 10.2.7.54171  
-- Digmaster Shovelphlange retail coords  
-- Added Cortello's Riddle's object.  
-- Heroic requries Heroic not Mythic  
-- Doti update.  
-- Exploration node clarification  
-- 9.0.1 QIs (should be done now ? :D )  
-- Classic: Disabled the reporting on the Recipe and Mount classes.  
-- Classic: Finally fixed the bug with spells getting counted as collected despite not being in ATT! (order of class creation matters!)  
-- Classes declared as IsClassIsolated will not have their class contructor made available to CreateClassInstance without access to the original object's metatable.  
-    Now reporting when someone attempts to make a new class and uses the same classKey when not using that new IsClassIsolated field.  
-- Update Quests.lua  
-- Heirlooms now use a unique classKey.  
-- Drakewatcher Manuscripts now utilize a unique classKey so that they can be CreateObject'd  
-- Class extensions no longer copy conditionals or the simple metas.  
-- Gear Set Header class instances now have a unique classKey.  
-- classesByKey will now only allow the first class to register for a given key.  
-- The dressable API wasn't added until later, apparently.  
-- Classic: EJ\_GetEncounterInfo is implemented in Cata Beta, but is unusable.  
-- Classic: Fixed a number of spell related bugs.  
-- Classic: Fixed a bug with completionist mode.  
-    The multiline edit box label now updates.  
-- Classic: Moved the Item class to a class file for Transmog compatibility.  
-- StartATTCoroutine errors now get reported as a stack trace clickable link.  
-- EJ\_GetInstanceInfo is defined on Cata Beta, but it ain't got any data in it yet!  
-- Moved this declaration for Sources.  
-- Gear Sets API wasn't added at the same time as the transmog API was, so a separate file is necessary for this.  
-- Reworked BFA JC discoveries  
-- Cleaned up BFA JC quests  
-- Also moved BFA JC quests for Horde  
-- Update Quests.lua  
-- Retail Errors  
-- Updated providers and objectives for Hillsbrad Foothills.  
-- Update Uldaman.lua  
-- Recipe notes  
-- Moved BFA JC quests to their correct section + small parser fix  
-- BFA JC trainers + rank notes  
-- Uldaman: Remains of a Paladin  
-- Exploration no longer required for Insane Mode in Retail due to it being buggy.  
-- Updated providers and objectives for Burning Steppes.  
-- Some Fixes for WoD Professions  
-- WoD Engineering  
-- Exploration notes for retail  
-- Marked "Magical Cleaning Broom" (200839) as uncollectible  
-- Fixed duplication and wrong place of a quest item.  
-    Removed wrong map from Fyr'alath questline.  
-- PTR: little fix for Scale of Awakening  
-- Added BFA Jewelcrafting  
-- Classic: Profession Equipment is now correctly detected as transmog for quest rewards. (such as Blump's Fishing Rod)  
-- Exploration is actually feature complete in Classic, it's just Retail land where it needs some work.  
-- Added one more SoA HQT.  
-- Added Frog Leg Stew to the new version of Marsh Frog Legs.  
-- Fyr'alath fix.  
-- Added Legion Engineering  
-- sl qi thanks darkal coding is fun  
-- Exploration marked as WIP so people can't complain anymore :D  
-- Reparsed  
-- Emerald Wardens  
-- -- Added SoD P3: Alch/BS/Ench/LW/Poisons  
-    -- Added Cata Beta: Achievements and Titles  
-    -- Added Retail: Plunderstorm Rep and Missing Title  
-    -- Fixed NYI Cosmetic/Trading Post  
-    -- Loaded in Quest in Unsorted  
-- Some HAT moved from missing  
-- Generating Missing  
-- Harvest: 1.15.2.54092  
-- Harvest: 1.15.2.54067  
-- Harvest: 1.15.2.54029  
-- Some unsorted upkeep  
+- Reparsed Retail  
+- Small Fix  
+- Reparsed All Classic Variations  
+- .toc update 10.2.7  
+- Parser and Timeline Update 10.2.7  
+- Generating Missing Files  
+- Harvest: 10.2.7.54577  
+- Harvest: 10.2.7.54543  
+- Harvest: 4.4.0.54558  
+- Guild Achievements Rework  
+    -- Timelines  
+    -- Rep requirements  
+    -- Added alot of Heirlooms  
+- Resurrected a guild header faction.  
+- Whitelisted the Guild file. This file is in dire need of timeline data!  
+- Pattern: Bracers of Shackled Souls has been simplified.  
+- Cata: Updated ItemDB to include class/race requirements from in the game. (tooltip harvesting)  
+- Classic: Minor tooltip adjustment for recipes when viewing the spell, specifically.  
+- TWW PvP S1 FORGED Achievements  
+- Added all ToT NYI items into 10.2.7 Ensembles.  
+- Horrific Visions Rework to modern standard  
+- Classic: Cleaned up the Auction module.  
+- Added ToT ensembles to the Infinite Bazaar  
+- Cleaning up Exile's Reach/SW/Orgr BfA quests  
+- Removed ghost recipe appears on vendors.  
+- Not sure why we weren't caching locked quest states in our cache for locked quests...  
+- Removed a couple unnecessary OnUpdateWindows from settings changes  
+    Clear search cache on settings change  

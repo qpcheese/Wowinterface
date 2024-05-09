@@ -11,14 +11,16 @@ ChatSoundCustomizerDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Fishanus - Ragnaros"] = "Default",
-		["Flurrq - Ragnaros"] = "Default",
-		["Qutlaw - Ravencrest"] = "Default",
-		["Qpfromagee - Ragnaros"] = "Default",
 		["Qpaladin - Ragnaros"] = "Default",
-		["Qpfromage - Ragnaros"] = "Default",
-		["Qubit - Ragnaros"] = "Default",
+		["Fishanus - Ragnaros"] = "Default",
+		["Qpcheese - Ragnaros"] = "Default",
 		["Dogson - Ragnaros"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Qpfromagee - Ragnaros"] = "Default",
+		["Qubit - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qutlaw - Ravencrest"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

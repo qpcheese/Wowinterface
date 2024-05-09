@@ -1,41 +1,42 @@
 
 userSettings = {
 	["headerTooltip"] = true,
+	["onetimeMessages"] = {
+		["vendorItems"] = true,
+	},
 	["removeCraft"] = true,
 	["reagentQuality"] = 1,
-	["backpackLoot"] = "default",
+	["useLocalReagents"] = true,
 	["windowPosition"] = {
 		["height"] = 200.0000610351563,
-		["width"] = 200.0001983642578,
-		["left"] = 1155.999755859375,
 		["bottom"] = 648.9999389648438,
+		["left"] = 1155.999755859375,
+		["width"] = 200.0001983642578,
 	},
 	["pcWindowPosition"] = {
 		["height"] = 200.0000610351563,
-		["width"] = 200.0001983642578,
-		["left"] = 1155.999755859375,
 		["bottom"] = 648.9999389648438,
+		["left"] = 1155.999755859375,
+		["width"] = 200.0001983642578,
 	},
 	["showTooltip"] = true,
-	["knowledgeHideDone"] = false,
+	["knowledgeAlwaysShowDetails"] = false,
 	["pcWindows"] = false,
-	["showRecipeCooldowns"] = true,
+	["quickOrderDuration"] = 0,
 	["hide"] = false,
 	["alvinGUID"] = "BattlePet-0-000012C4203E",
 	["showKnowledgeNotPerks"] = false,
 	["showRemaining"] = false,
-	["onetimeMessages"] = {
-		["vendorItems"] = true,
-	},
+	["knowledgeHideDone"] = false,
 	["backpackCleanup"] = "default",
 	["backpackCount"] = true,
 	["minimapPos"] = 272.121118770295,
 	["queueSound"] = false,
-	["knowledgeAlwaysShowDetails"] = false,
+	["showRecipeCooldowns"] = true,
 	["pcRecipesTracked"] = false,
 	["closeWhenDone"] = false,
 	["vendorAll"] = true,
-	["useLocalReagents"] = true,
+	["backpackLoot"] = "default",
 }
 recipesTracked = {
 	[374497] = {
@@ -50,9 +51,9 @@ recipeCooldowns = {
 		["name"] = "Transmute: Awakened Air",
 		["user"] = "Qutlaw-Ravencrest",
 		["start"] = 1709135020,
+		["maxCharges"] = 7,
 		["recipeID"] = 370711,
 		["cooldown"] = 44179,
-		["maxCharges"] = 7,
 	}, -- [1]
 }
 reagentTiers = {
@@ -23532,9 +23533,9 @@ recipeLibrary = {
 		["itemID"] = 72096,
 		["abilityID"] = 24591,
 	},
-	[419034] = {
-		["itemID"] = 208268,
-		["abilityID"] = 48975,
+	[403151] = {
+		["itemID"] = 204114,
+		["abilityID"] = 48312,
 	},
 	[339001] = {
 		["itemID"] = 191336,
@@ -23544,21 +23545,24 @@ recipeLibrary = {
 		["itemID"] = 52308,
 		["abilityID"] = 23844,
 	},
-	[419031] = {
-		["itemID"] = 208271,
-		["abilityID"] = 48978,
+	[55016] = {
+		["abilityID"] = 19545,
+		["itemID"] = 0,
+		["tradeskillID"] = 202,
 	},
-	[419005] = {
-		["itemID"] = 208237,
-		["abilityID"] = 48980,
+	[84424] = {
+		["abilityID"] = 24014,
+		["itemID"] = 0,
+		["tradeskillID"] = 202,
 	},
 	[339002] = {
 		["itemID"] = 191336,
 		["abilityID"] = 45614,
 	},
-	[419004] = {
-		["itemID"] = 208238,
-		["abilityID"] = 48979,
+	[84427] = {
+		["abilityID"] = 22257,
+		["itemID"] = 0,
+		["tradeskillID"] = 202,
 	},
 	[15972] = {
 		["itemID"] = 12259,
@@ -23578,14 +23582,15 @@ recipeLibrary = {
 		["itemID"] = 173381,
 		["tradeskillID"] = 202,
 	},
-	[419042] = {
-		["abilityID"] = 48987,
-		["itemID"] = 208313,
+	[109099] = {
+		["abilityID"] = 27353,
+		["itemID"] = 0,
 		["tradeskillID"] = 202,
 	},
-	[416682] = {
-		["itemID"] = 207555,
-		["abilityID"] = 48935,
+	[126392] = {
+		["abilityID"] = 27126,
+		["itemID"] = 0,
+		["tradeskillID"] = 202,
 	},
 	[339004] = {
 		["itemID"] = 191336,
@@ -23600,25 +23605,25 @@ recipeLibrary = {
 		["itemID"] = 22660,
 		["abilityID"] = 13909,
 	},
-	[376550] = {
-		["itemID"] = 193533,
-		["abilityID"] = 47275,
+	[7421] = {
+		["itemID"] = 6218,
+		["abilityID"] = 4291,
 	},
-	[407100] = {
-		["itemID"] = 204848,
-		["abilityID"] = 48493,
+	[413517] = {
+		["itemID"] = 206483,
+		["abilityID"] = 48761,
 	},
 	[122645] = {
 		["itemID"] = 82971,
 		["abilityID"] = 26459,
 	},
-	[413751] = {
-		["itemID"] = 206504,
-		["abilityID"] = 48771,
+	[413516] = {
+		["itemID"] = 206482,
+		["abilityID"] = 48760,
 	},
-	[28914] = {
-		["itemID"] = 23100,
-		["abilityID"] = 14032,
+	[66499] = {
+		["itemID"] = 40122,
+		["abilityID"] = 21131,
 	},
 	[413503] = {
 		["itemID"] = 206440,
@@ -23636,18 +23641,18 @@ recipeLibrary = {
 		["itemID"] = 41367,
 		["abilityID"] = 19524,
 	},
-	[408278] = {
-		["itemID"] = 204993,
-		["abilityID"] = 48575,
+	[413497] = {
+		["itemID"] = 206433,
+		["abilityID"] = 48722,
 	},
 	[343103] = {
 		["abilityID"] = 46089,
 		["itemID"] = 173384,
 		["tradeskillID"] = 202,
 	},
-	[413739] = {
-		["itemID"] = 206492,
-		["abilityID"] = 48746,
+	[413501] = {
+		["itemID"] = 206439,
+		["abilityID"] = 48726,
 	},
 	[414565] = {
 		["itemID"] = 206646,
@@ -23665,41 +23670,43 @@ recipeLibrary = {
 		["itemID"] = 93457,
 		["abilityID"] = 31403,
 	},
-	[53957] = {
-		["itemID"] = 40013,
-		["abilityID"] = 18447,
+	[419006] = {
+		["itemID"] = 208241,
+		["abilityID"] = 48991,
 	},
-	[413753] = {
-		["itemID"] = 206506,
-		["abilityID"] = 48755,
+	[419010] = {
+		["itemID"] = 208245,
+		["abilityID"] = 48990,
 	},
 	[122646] = {
 		["itemID"] = 82972,
 		["abilityID"] = 26460,
 	},
-	[282345] = {
-		["itemID"] = 164681,
-		["abilityID"] = 40066,
+	[298728] = {
+		["abilityID"] = 40656,
+		["itemID"] = 168529,
+		["tradeskillID"] = 171,
 	},
 	[419018] = {
 		["itemID"] = 208253,
 		["abilityID"] = 48998,
 	},
-	[402138] = {
-		["itemID"] = 203801,
-		["abilityID"] = 48238,
+	[419017] = {
+		["itemID"] = 208250,
+		["abilityID"] = 49001,
 	},
-	[225553] = {
-		["itemID"] = 139314,
-		["abilityID"] = 48947,
+	[419015] = {
+		["itemID"] = 208248,
+		["abilityID"] = 48996,
 	},
 	[140843] = {
 		["itemID"] = 93456,
 		["abilityID"] = 31404,
 	},
-	[282344] = {
-		["itemID"] = 164681,
-		["abilityID"] = 40065,
+	[298727] = {
+		["abilityID"] = 40655,
+		["itemID"] = 168529,
+		["tradeskillID"] = 171,
 	},
 	[424736] = {
 		["itemID"] = 210041,
@@ -23709,17 +23716,18 @@ recipeLibrary = {
 		["itemID"] = 187699,
 		["abilityID"] = 46254,
 	},
-	[413507] = {
-		["itemID"] = 206443,
-		["abilityID"] = 48732,
+	[424876] = {
+		["itemID"] = 210041,
+		["abilityID"] = 49168,
 	},
 	[427109] = {
 		["itemID"] = 191330,
 		["abilityID"] = 49268,
 	},
-	[282343] = {
-		["itemID"] = 164681,
-		["abilityID"] = 40064,
+	[298726] = {
+		["abilityID"] = 40654,
+		["itemID"] = 168529,
+		["tradeskillID"] = 171,
 	},
 	[85785] = {
 		["itemID"] = 62251,
@@ -23734,22 +23742,21 @@ recipeLibrary = {
 		["itemID"] = 207092,
 		["tradeskillID"] = 202,
 	},
-	[256133] = {
-		["abilityID"] = 42335,
-		["itemID"] = 171370,
-		["tradeskillID"] = 171,
+	[413522] = {
+		["itemID"] = 206488,
+		["abilityID"] = 48743,
 	},
 	[122647] = {
 		["itemID"] = 82973,
 		["abilityID"] = 26461,
 	},
-	[101750] = {
-		["itemID"] = 71829,
-		["abilityID"] = 24505,
+	[413521] = {
+		["itemID"] = 206487,
+		["abilityID"] = 48742,
 	},
-	[55998] = {
-		["itemID"] = 41253,
-		["abilityID"] = 19452,
+	[422330] = {
+		["itemID"] = 209351,
+		["abilityID"] = 49092,
 	},
 	[418579] = {
 		["itemID"] = 208187,
@@ -23767,38 +23774,37 @@ recipeLibrary = {
 		["itemID"] = 42420,
 		["abilityID"] = 19525,
 	},
-	[402135] = {
-		["itemID"] = 203793,
-		["abilityID"] = 48235,
+	[413520] = {
+		["itemID"] = 206486,
+		["abilityID"] = 48741,
 	},
 	[402129] = {
 		["itemID"] = 203804,
 		["abilityID"] = 48230,
 	},
-	[16659] = {
-		["itemID"] = 12417,
-		["abilityID"] = 9179,
+	[413505] = {
+		["itemID"] = 206441,
+		["abilityID"] = 48730,
 	},
 	[413523] = {
 		["itemID"] = 206489,
 		["abilityID"] = 48744,
 	},
-	[60728] = {
-		["itemID"] = 43447,
-		["abilityID"] = 20365,
+	[413518] = {
+		["itemID"] = 206484,
+		["abilityID"] = 48740,
 	},
-	[413759] = {
-		["abilityID"] = 48773,
-		["itemID"] = 206512,
-		["tradeskillID"] = 202,
+	[413514] = {
+		["itemID"] = 206480,
+		["abilityID"] = 48739,
 	},
 	[140846] = {
 		["itemID"] = 93453,
 		["abilityID"] = 31407,
 	},
-	[403149] = {
-		["itemID"] = 204120,
-		["abilityID"] = 48310,
+	[416688] = {
+		["itemID"] = 207561,
+		["abilityID"] = 48938,
 	},
 	[28569] = {
 		["abilityID"] = 13982,
@@ -23809,10 +23815,9 @@ recipeLibrary = {
 		["itemID"] = 82974,
 		["abilityID"] = 26462,
 	},
-	[382337] = {
-		["abilityID"] = 47497,
-		["itemID"] = 198268,
-		["tradeskillID"] = 202,
+	[413509] = {
+		["itemID"] = 206442,
+		["abilityID"] = 48734,
 	},
 	[62350] = {
 		["itemID"] = 44953,
@@ -23838,38 +23843,38 @@ recipeLibrary = {
 		["itemID"] = 25650,
 		["abilityID"] = 14851,
 	},
-	[137942] = {
-		["itemID"] = 93619,
-		["abilityID"] = 31213,
+	[408221] = {
+		["itemID"] = 203324,
+		["abilityID"] = 48568,
 	},
 	[230954] = {
 		["itemID"] = 142406,
 		["abilityID"] = 36324,
 	},
-	[256754] = {
-		["itemID"] = 154143,
-		["abilityID"] = 39029,
+	[413755] = {
+		["itemID"] = 206508,
+		["abilityID"] = 48756,
 	},
-	[182978] = {
-		["itemID"] = 123913,
-		["abilityID"] = 34061,
+	[413743] = {
+		["itemID"] = 206496,
+		["abilityID"] = 48770,
 	},
 	[291086] = {
 		["abilityID"] = 40339,
 		["itemID"] = 166976,
 		["tradeskillID"] = 171,
 	},
-	[413745] = {
-		["itemID"] = 206498,
-		["abilityID"] = 48751,
+	[408277] = {
+		["itemID"] = 203762,
+		["abilityID"] = 48574,
 	},
 	[408273] = {
 		["itemID"] = 203763,
 		["abilityID"] = 48573,
 	},
-	[176513] = {
-		["itemID"] = 119126,
-		["abilityID"] = 33706,
+	[419019] = {
+		["itemID"] = 208247,
+		["abilityID"] = 48997,
 	},
 	[122649] = {
 		["itemID"] = 82975,
@@ -23879,156 +23884,154 @@ recipeLibrary = {
 		["itemID"] = 142406,
 		["abilityID"] = 36325,
 	},
-	[18418] = {
-		["itemID"] = 14044,
-		["abilityID"] = 10413,
+	[376539] = {
+		["itemID"] = 194011,
+		["abilityID"] = 47264,
 	},
-	[33286] = {
-		["itemID"] = 27657,
-		["abilityID"] = 15006,
+	[125530] = {
+		["itemID"] = 82404,
+		["abilityID"] = 27046,
 	},
 	[55183] = {
 		["itemID"] = 41186,
 		["abilityID"] = 19219,
 	},
-	[370456] = {
-		["abilityID"] = 46764,
-		["itemID"] = 191324,
-		["tradeskillID"] = 171,
+	[27829] = {
+		["itemID"] = 22385,
+		["abilityID"] = 13843,
 	},
 	[9957] = {
 		["itemID"] = 7929,
 		["abilityID"] = 5327,
 	},
-	[56501] = {
-		["itemID"] = 42647,
-		["abilityID"] = 19552,
+	[413524] = {
+		["itemID"] = 206490,
+		["abilityID"] = 48745,
 	},
 	[80248] = {
 		["abilityID"] = 22010,
 		["itemID"] = 52194,
 		["tradeskillID"] = 171,
 	},
-	[28568] = {
-		["abilityID"] = 13981,
-		["itemID"] = 22452,
-		["tradeskillID"] = 171,
+	[402128] = {
+		["itemID"] = 203797,
+		["abilityID"] = 48229,
 	},
 	[78433] = {
 		["itemID"] = 56513,
 		["abilityID"] = 22375,
 	},
-	[53960] = {
-		["itemID"] = 40016,
-		["abilityID"] = 18450,
+	[9928] = {
+		["itemID"] = 7919,
+		["abilityID"] = 5316,
 	},
-	[196468] = {
-		["itemID"] = 130895,
-		["abilityID"] = 35065,
+	[376537] = {
+		["itemID"] = 193962,
+		["abilityID"] = 47262,
 	},
 	[256757] = {
 		["itemID"] = 154153,
 		["abilityID"] = 39045,
 	},
-	[53812] = {
-		["abilityID"] = 18323,
-		["itemID"] = 40195,
-		["tradeskillID"] = 171,
+	[408223] = {
+		["itemID"] = 203364,
+		["abilityID"] = 48570,
 	},
-	[19047] = {
-		["itemID"] = 15407,
-		["abilityID"] = 10756,
+	[60604] = {
+		["itemID"] = 44437,
+		["abilityID"] = 20304,
 	},
 	[122650] = {
 		["itemID"] = 82976,
 		["abilityID"] = 26469,
 	},
-	[15865] = {
-		["itemID"] = 12214,
-		["abilityID"] = 8622,
+	[376536] = {
+		["itemID"] = 193959,
+		["abilityID"] = 47261,
 	},
-	[22867] = {
-		["itemID"] = 18407,
-		["abilityID"] = 12341,
+	[101745] = {
+		["itemID"] = 71824,
+		["abilityID"] = 24500,
 	},
-	[403158] = {
-		["itemID"] = 204128,
-		["abilityID"] = 48288,
+	[402123] = {
+		["itemID"] = 203810,
+		["abilityID"] = 48225,
 	},
-	[10544] = {
-		["itemID"] = 8211,
-		["abilityID"] = 5681,
+	[39713] = {
+		["itemID"] = 32198,
+		["abilityID"] = 15777,
 	},
-	[376535] = {
-		["itemID"] = 193956,
-		["abilityID"] = 47260,
+	[196467] = {
+		["itemID"] = 130894,
+		["abilityID"] = 35064,
 	},
 	[78454] = {
 		["itemID"] = 75130,
 		["abilityID"] = 22392,
 	},
-	[80477] = {
-		["abilityID"] = 21996,
-		["itemID"] = 58084,
-		["tradeskillID"] = 171,
+	[338264] = {
+		["itemID"] = 182053,
+		["abilityID"] = 45566,
 	},
-	[19093] = {
-		["itemID"] = 15138,
-		["abilityID"] = 10800,
+	[67133] = {
+		["itemID"] = 47573,
+		["abilityID"] = 21205,
 	},
 	[80244] = {
 		["abilityID"] = 22017,
 		["itemID"] = 51950,
 		["tradeskillID"] = 171,
 	},
-	[99448] = {
-		["itemID"] = 69944,
-		["abilityID"] = 24302,
+	[403162] = {
+		["itemID"] = 204124,
+		["abilityID"] = 48284,
 	},
-	[16728] = {
-		["itemID"] = 12636,
-		["abilityID"] = 9325,
+	[136197] = {
+		["abilityID"] = 31055,
+		["itemID"] = 75274,
+		["tradeskillID"] = 171,
 	},
-	[12079] = {
-		["itemID"] = 10051,
-		["abilityID"] = 6610,
+	[137941] = {
+		["itemID"] = 93618,
+		["abilityID"] = 31195,
 	},
 	[416690] = {
 		["itemID"] = 207563,
 		["abilityID"] = 48939,
 	},
-	[23707] = {
-		["itemID"] = 19149,
-		["abilityID"] = 12700,
+	[26781] = {
+		["itemID"] = 21865,
+		["abilityID"] = 13495,
 	},
-	[256762] = {
-		["itemID"] = 154148,
-		["abilityID"] = 39040,
+	[80269] = {
+		["abilityID"] = 22005,
+		["itemID"] = 58489,
+		["tradeskillID"] = 171,
 	},
 	[122651] = {
 		["itemID"] = 82977,
 		["abilityID"] = 26470,
 	},
-	[3973] = {
-		["abilityID"] = 2422,
-		["itemID"] = 4404,
+	[19814] = {
+		["abilityID"] = 11235,
+		["itemID"] = 16023,
 		["tradeskillID"] = 202,
 	},
 	[256758] = {
 		["itemID"] = 154152,
 		["abilityID"] = 39044,
 	},
-	[12076] = {
-		["itemID"] = 10028,
-		["abilityID"] = 6607,
+	[55015] = {
+		["itemID"] = 41114,
+		["abilityID"] = 19179,
 	},
 	[55184] = {
 		["itemID"] = 41187,
 		["abilityID"] = 19220,
 	},
-	[35527] = {
-		["itemID"] = 29491,
-		["abilityID"] = 15530,
+	[256702] = {
+		["itemID"] = 153709,
+		["abilityID"] = 39001,
 	},
 	[56208] = {
 		["itemID"] = 42421,
@@ -24043,13 +24046,14 @@ recipeLibrary = {
 		["itemID"] = 52191,
 		["tradeskillID"] = 171,
 	},
-	[223940] = {
-		["itemID"] = 140567,
-		["abilityID"] = 36077,
+	[15628] = {
+		["abilityID"] = 8465,
+		["itemID"] = 11825,
+		["tradeskillID"] = 202,
 	},
-	[330150] = {
-		["itemID"] = 180057,
-		["abilityID"] = 45036,
+	[338262] = {
+		["itemID"] = 182030,
+		["abilityID"] = 45562,
 	},
 	[405803] = {
 		["itemID"] = 204401,
@@ -24059,18 +24063,17 @@ recipeLibrary = {
 		["itemID"] = 43263,
 		["abilityID"] = 20359,
 	},
-	[176405] = {
-		["itemID"] = 116992,
-		["abilityID"] = 33685,
+	[10572] = {
+		["itemID"] = 8212,
+		["abilityID"] = 5698,
 	},
-	[3188] = {
-		["abilityID"] = 1822,
-		["itemID"] = 3391,
-		["tradeskillID"] = 171,
+	[101735] = {
+		["itemID"] = 71817,
+		["abilityID"] = 24494,
 	},
-	[182129] = {
-		["itemID"] = 115504,
-		["abilityID"] = 33785,
+	[282327] = {
+		["itemID"] = 164658,
+		["abilityID"] = 40067,
 	},
 	[73503] = {
 		["itemID"] = 52320,
@@ -24081,18 +24084,17 @@ recipeLibrary = {
 		["itemID"] = 18294,
 		["tradeskillID"] = 171,
 	},
-	[42662] = {
-		["itemID"] = 33173,
-		["abilityID"] = 15900,
+	[304413] = {
+		["itemID"] = 170348,
+		["abilityID"] = 40999,
 	},
 	[31433] = {
 		["itemID"] = 24276,
 		["abilityID"] = 14622,
 	},
-	[12718] = {
-		["abilityID"] = 6943,
-		["itemID"] = 10543,
-		["tradeskillID"] = 202,
+	[56500] = {
+		["itemID"] = 42646,
+		["abilityID"] = 19551,
 	},
 	[15973] = {
 		["itemID"] = 12260,
@@ -24110,14 +24112,14 @@ recipeLibrary = {
 		["itemID"] = 12414,
 		["abilityID"] = 9180,
 	},
-	[22869] = {
-		["itemID"] = 18409,
-		["abilityID"] = 12343,
+	[53938] = {
+		["abilityID"] = 18359,
+		["itemID"] = 40217,
+		["tradeskillID"] = 171,
 	},
-	[32814] = {
-		["abilityID"] = 14918,
-		["itemID"] = 25886,
-		["tradeskillID"] = 202,
+	[63201] = {
+		["itemID"] = 45565,
+		["abilityID"] = 20825,
 	},
 	[256765] = {
 		["itemID"] = 154154,
@@ -24127,13 +24129,13 @@ recipeLibrary = {
 		["itemID"] = 4239,
 		["abilityID"] = 2164,
 	},
-	[60971] = {
-		["itemID"] = 44558,
-		["abilityID"] = 20392,
+	[146613] = {
+		["itemID"] = 102351,
+		["abilityID"] = 31856,
 	},
-	[35532] = {
-		["itemID"] = 29495,
-		["abilityID"] = 15538,
+	[278423] = {
+		["itemID"] = 165749,
+		["abilityID"] = 39846,
 	},
 	[19815] = {
 		["abilityID"] = 11237,
@@ -24148,34 +24150,34 @@ recipeLibrary = {
 		["itemID"] = 162470,
 		["abilityID"] = 39037,
 	},
-	[338273] = {
-		["itemID"] = 182103,
-		["abilityID"] = 45571,
+	[101755] = {
+		["itemID"] = 71834,
+		["abilityID"] = 24510,
 	},
-	[338270] = {
-		["itemID"] = 182005,
-		["abilityID"] = 45568,
+	[101749] = {
+		["itemID"] = 71828,
+		["abilityID"] = 24504,
 	},
 	[55185] = {
 		["itemID"] = 41188,
 		["abilityID"] = 19221,
 	},
-	[282323] = {
-		["itemID"] = 164660,
-		["abilityID"] = 40075,
+	[182127] = {
+		["itemID"] = 115524,
+		["abilityID"] = 34038,
 	},
 	[11473] = {
 		["abilityID"] = 6016,
 		["itemID"] = 9210,
 		["tradeskillID"] = 171,
 	},
-	[3764] = {
-		["itemID"] = 4247,
-		["abilityID"] = 2173,
+	[78449] = {
+		["itemID"] = 75085,
+		["abilityID"] = 22387,
 	},
-	[56010] = {
-		["itemID"] = 41603,
-		["abilityID"] = 19464,
+	[124223] = {
+		["itemID"] = 81400,
+		["abilityID"] = 26768,
 	},
 	[78470] = {
 		["itemID"] = 75061,
@@ -24185,26 +24187,26 @@ recipeLibrary = {
 		["itemID"] = 85501,
 		["abilityID"] = 26750,
 	},
-	[17566] = {
-		["abilityID"] = 9945,
-		["itemID"] = 12803,
-		["tradeskillID"] = 171,
+	[256766] = {
+		["itemID"] = 162467,
+		["abilityID"] = 39033,
 	},
-	[7752] = {
-		["itemID"] = 787,
-		["abilityID"] = 4354,
+	[31065] = {
+		["itemID"] = 24097,
+		["abilityID"] = 14558,
 	},
 	[56007] = {
 		["itemID"] = 41599,
 		["abilityID"] = 19461,
 	},
-	[18417] = {
-		["itemID"] = 13863,
-		["abilityID"] = 10412,
+	[376523] = {
+		["itemID"] = 193506,
+		["abilityID"] = 47248,
 	},
-	[19101] = {
-		["itemID"] = 15055,
-		["abilityID"] = 10806,
+	[12717] = {
+		["abilityID"] = 6940,
+		["itemID"] = 10542,
+		["tradeskillID"] = 202,
 	},
 	[122654] = {
 		["itemID"] = 82980,
@@ -24218,13 +24220,13 @@ recipeLibrary = {
 		["itemID"] = 190530,
 		["abilityID"] = 46826,
 	},
-	[86646] = {
-		["itemID"] = 63246,
-		["abilityID"] = 23410,
+	[403160] = {
+		["itemID"] = 204123,
+		["abilityID"] = 48283,
 	},
-	[282320] = {
-		["itemID"] = 164661,
-		["abilityID"] = 40078,
+	[265937] = {
+		["itemID"] = 158887,
+		["abilityID"] = 40480,
 	},
 	[54945] = {
 		["itemID"] = 40952,
@@ -24239,10 +24241,9 @@ recipeLibrary = {
 		["itemID"] = 19931,
 		["tradeskillID"] = 171,
 	},
-	[12755] = {
-		["abilityID"] = 6948,
-		["itemID"] = 10587,
-		["tradeskillID"] = 202,
+	[256769] = {
+		["itemID"] = 162469,
+		["abilityID"] = 39036,
 	},
 	[66338] = {
 		["itemID"] = 40167,
@@ -24252,13 +24253,13 @@ recipeLibrary = {
 		["itemID"] = 190536,
 		["abilityID"] = 46828,
 	},
-	[137827] = {
-		["itemID"] = 93477,
-		["abilityID"] = 31295,
+	[19049] = {
+		["itemID"] = 15083,
+		["abilityID"] = 10759,
 	},
-	[182125] = {
-		["itemID"] = 112377,
-		["abilityID"] = 20520,
+	[282319] = {
+		["itemID"] = 164661,
+		["abilityID"] = 40077,
 	},
 	[76179] = {
 		["itemID"] = 54850,
@@ -24268,9 +24269,9 @@ recipeLibrary = {
 		["itemID"] = 154160,
 		["abilityID"] = 39056,
 	},
-	[76178] = {
-		["itemID"] = 65365,
-		["abilityID"] = 23742,
+	[7624] = {
+		["itemID"] = 6241,
+		["abilityID"] = 4303,
 	},
 	[73506] = {
 		["itemID"] = 52323,
@@ -24292,34 +24293,35 @@ recipeLibrary = {
 		["itemID"] = 41189,
 		["abilityID"] = 19222,
 	},
-	[7643] = {
-		["itemID"] = 6264,
-		["abilityID"] = 4311,
+	[26914] = {
+		["itemID"] = 21789,
+		["abilityID"] = 13532,
 	},
-	[7892] = {
-		["itemID"] = 6384,
-		["abilityID"] = 4408,
+	[28581] = {
+		["abilityID"] = 13997,
+		["itemID"] = 22456,
+		["tradeskillID"] = 171,
 	},
-	[26783] = {
-		["itemID"] = 21867,
-		["abilityID"] = 13497,
+	[3979] = {
+		["abilityID"] = 2459,
+		["itemID"] = 4407,
+		["tradeskillID"] = 202,
 	},
 	[7893] = {
 		["itemID"] = 6385,
 		["abilityID"] = 4409,
 	},
-	[199007] = {
-		["abilityID"] = 35139,
-		["itemID"] = 132502,
-		["tradeskillID"] = 202,
+	[28243] = {
+		["itemID"] = 22670,
+		["abilityID"] = 13923,
 	},
-	[324036] = {
-		["itemID"] = 177876,
-		["abilityID"] = 44557,
+	[107635] = {
+		["itemID"] = 76551,
+		["abilityID"] = 26590,
 	},
-	[194771] = {
-		["itemID"] = 128903,
-		["abilityID"] = 34926,
+	[304317] = {
+		["itemID"] = 170301,
+		["abilityID"] = 40992,
 	},
 	[29642] = {
 		["itemID"] = 23520,
@@ -24333,17 +24335,17 @@ recipeLibrary = {
 		["itemID"] = 159861,
 		["abilityID"] = 39445,
 	},
-	[330242] = {
-		["itemID"] = 180055,
-		["abilityID"] = 45125,
+	[194798] = {
+		["itemID"] = 128905,
+		["abilityID"] = 34936,
 	},
-	[76180] = {
-		["itemID"] = 54852,
-		["abilityID"] = 21761,
+	[332072] = {
+		["itemID"] = 191333,
+		["abilityID"] = 45260,
 	},
-	[28912] = {
-		["itemID"] = 23099,
-		["abilityID"] = 14031,
+	[182123] = {
+		["itemID"] = 111556,
+		["abilityID"] = 34040,
 	},
 	[269422] = {
 		["itemID"] = 159861,
@@ -24358,9 +24360,9 @@ recipeLibrary = {
 		["itemID"] = 23737,
 		["tradeskillID"] = 202,
 	},
-	[256789] = {
-		["itemID"] = 154159,
-		["abilityID"] = 39060,
+	[76181] = {
+		["itemID"] = 54853,
+		["abilityID"] = 21762,
 	},
 	[269423] = {
 		["itemID"] = 159861,
@@ -24370,9 +24372,9 @@ recipeLibrary = {
 		["itemID"] = 25652,
 		["abilityID"] = 14853,
 	},
-	[246999] = {
-		["itemID"] = 151542,
-		["abilityID"] = 36881,
+	[137831] = {
+		["itemID"] = 93505,
+		["abilityID"] = 31412,
 	},
 	[209509] = {
 		["itemID"] = 136691,
@@ -24391,9 +24393,9 @@ recipeLibrary = {
 		["itemID"] = 89738,
 		["abilityID"] = 21320,
 	},
-	[30312] = {
-		["abilityID"] = 14350,
-		["itemID"] = 23742,
+	[209502] = {
+		["abilityID"] = 35784,
+		["itemID"] = 136688,
 		["tradeskillID"] = 202,
 	},
 	[269425] = {
@@ -24408,9 +24410,9 @@ recipeLibrary = {
 		["itemID"] = 153643,
 		["abilityID"] = 38975,
 	},
-	[196457] = {
-		["itemID"] = 130937,
-		["abilityID"] = 35063,
+	[376515] = {
+		["itemID"] = 193518,
+		["abilityID"] = 47240,
 	},
 	[269426] = {
 		["itemID"] = 159860,
@@ -24424,13 +24426,13 @@ recipeLibrary = {
 		["itemID"] = 41190,
 		["abilityID"] = 19223,
 	},
-	[19051] = {
-		["itemID"] = 15076,
-		["abilityID"] = 10761,
+	[137826] = {
+		["itemID"] = 93476,
+		["abilityID"] = 31285,
 	},
-	[381407] = {
-		["itemID"] = 197790,
-		["abilityID"] = 47386,
+	[311868] = {
+		["itemID"] = 173121,
+		["abilityID"] = 42922,
 	},
 	[309644] = {
 		["itemID"] = 172230,
@@ -24440,33 +24442,34 @@ recipeLibrary = {
 		["itemID"] = 154163,
 		["abilityID"] = 39065,
 	},
-	[29605] = {
-		["itemID"] = 23508,
-		["abilityID"] = 14198,
+	[12086] = {
+		["itemID"] = 10025,
+		["abilityID"] = 6617,
 	},
-	[78467] = {
-		["itemID"] = 75107,
-		["abilityID"] = 22403,
+	[256781] = {
+		["itemID"] = 154162,
+		["abilityID"] = 39063,
 	},
 	[185919] = {
 		["itemID"] = 126993,
 		["abilityID"] = 34295,
 	},
-	[182121] = {
-		["itemID"] = 110611,
-		["abilityID"] = 34039,
+	[282311] = {
+		["itemID"] = 164663,
+		["abilityID"] = 40084,
 	},
-	[376513] = {
-		["itemID"] = 193504,
-		["abilityID"] = 47238,
+	[196456] = {
+		["itemID"] = 130130,
+		["abilityID"] = 35062,
 	},
-	[31430] = {
-		["itemID"] = 24273,
-		["abilityID"] = 14619,
+	[256786] = {
+		["itemID"] = 162653,
+		["abilityID"] = 39828,
 	},
-	[3491] = {
-		["itemID"] = 3848,
-		["abilityID"] = 1984,
+	[3946] = {
+		["abilityID"] = 2442,
+		["itemID"] = 4378,
+		["tradeskillID"] = 202,
 	},
 	[12073] = {
 		["itemID"] = 10026,
@@ -24484,26 +24487,25 @@ recipeLibrary = {
 		["itemID"] = 126992,
 		["abilityID"] = 34296,
 	},
-	[338101] = {
-		["itemID"] = 182101,
-		["abilityID"] = 45505,
+	[253117] = {
+		["itemID"] = 152819,
+		["abilityID"] = 38742,
 	},
-	[182120] = {
-		["abilityID"] = 33351,
-		["itemID"] = 111366,
-		["tradeskillID"] = 202,
+	[282309] = {
+		["itemID"] = 164663,
+		["abilityID"] = 40082,
 	},
-	[45022] = {
-		["itemID"] = 34411,
-		["abilityID"] = 16157,
+	[376511] = {
+		["itemID"] = 193509,
+		["abilityID"] = 47236,
 	},
 	[107665] = {
 		["itemID"] = 76544,
 		["abilityID"] = 26630,
 	},
-	[73360] = {
-		["itemID"] = 52203,
-		["abilityID"] = 21462,
+	[256782] = {
+		["itemID"] = 154163,
+		["abilityID"] = 39064,
 	},
 	[227561] = {
 		["itemID"] = 141640,
@@ -24517,36 +24519,35 @@ recipeLibrary = {
 		["itemID"] = 126991,
 		["abilityID"] = 34297,
 	},
-	[28267] = {
-		["itemID"] = 22645,
-		["abilityID"] = 13924,
+	[10550] = {
+		["itemID"] = 8195,
+		["abilityID"] = 5686,
 	},
 	[12902] = {
 		["abilityID"] = 7067,
 		["itemID"] = 10720,
 		["tradeskillID"] = 202,
 	},
-	[330177] = {
-		["itemID"] = 180059,
-		["abilityID"] = 45063,
+	[60725] = {
+		["itemID"] = 43271,
+		["abilityID"] = 20363,
 	},
 	[24399] = {
 		["itemID"] = 20039,
 		["abilityID"] = 12901,
 	},
-	[229220] = {
-		["abilityID"] = 36281,
-		["itemID"] = 142117,
-		["tradeskillID"] = 171,
+	[376509] = {
+		["itemID"] = 193497,
+		["abilityID"] = 47234,
 	},
-	[73478] = {
-		["itemID"] = 52304,
-		["abilityID"] = 21513,
+	[78445] = {
+		["itemID"] = 75117,
+		["abilityID"] = 22383,
 	},
-	[39636] = {
-		["abilityID"] = 15768,
-		["itemID"] = 32062,
-		["tradeskillID"] = 171,
+	[19819] = {
+		["abilityID"] = 11240,
+		["itemID"] = 16009,
+		["tradeskillID"] = 202,
 	},
 	[185922] = {
 		["itemID"] = 126990,
@@ -24561,21 +24562,22 @@ recipeLibrary = {
 		["itemID"] = 141641,
 		["abilityID"] = 36206,
 	},
-	[54941] = {
-		["itemID"] = 40950,
-		["abilityID"] = 19165,
+	[19100] = {
+		["itemID"] = 15081,
+		["abilityID"] = 10804,
 	},
-	[381397] = {
-		["itemID"] = 197783,
-		["abilityID"] = 47393,
+	[30313] = {
+		["abilityID"] = 14351,
+		["itemID"] = 23746,
+		["tradeskillID"] = 202,
 	},
 	[32809] = {
 		["itemID"] = 25883,
 		["abilityID"] = 14921,
 	},
-	[18416] = {
-		["itemID"] = 14141,
-		["abilityID"] = 10411,
+	[376507] = {
+		["itemID"] = 193515,
+		["abilityID"] = 47232,
 	},
 	[338971] = {
 		["itemID"] = 191336,
@@ -24589,46 +24591,46 @@ recipeLibrary = {
 		["itemID"] = 23521,
 		["abilityID"] = 14215,
 	},
-	[253177] = {
-		["itemID"] = 152807,
-		["abilityID"] = 38735,
+	[322591] = {
+		["itemID"] = 171446,
+		["abilityID"] = 43552,
 	},
-	[19825] = {
-		["abilityID"] = 11243,
-		["itemID"] = 16008,
-		["tradeskillID"] = 202,
+	[78469] = {
+		["itemID"] = 75105,
+		["abilityID"] = 22405,
 	},
 	[16970] = {
 		["itemID"] = 12774,
 		["abilityID"] = 9440,
 	},
-	[107704] = {
-		["itemID"] = 76682,
-		["abilityID"] = 26637,
+	[253187] = {
+		["itemID"] = 162463,
+		["abilityID"] = 38739,
 	},
-	[330163] = {
-		["itemID"] = 180060,
-		["abilityID"] = 45049,
-	},
-	[31435] = {
-		["itemID"] = 24250,
-		["abilityID"] = 14624,
+	[86649] = {
+		["itemID"] = 87566,
+		["abilityID"] = 23413,
 	},
 	[185924] = {
 		["itemID"] = 126988,
 		["abilityID"] = 34300,
 	},
-	[376505] = {
-		["itemID"] = 193512,
-		["abilityID"] = 47230,
+	[31435] = {
+		["itemID"] = 24250,
+		["abilityID"] = 14624,
+	},
+	[229218] = {
+		["abilityID"] = 36280,
+		["itemID"] = 142117,
+		["tradeskillID"] = 171,
 	},
 	[31431] = {
 		["itemID"] = 24275,
 		["abilityID"] = 14620,
 	},
-	[56196] = {
-		["itemID"] = 42339,
-		["abilityID"] = 19518,
+	[73348] = {
+		["itemID"] = 52232,
+		["abilityID"] = 21450,
 	},
 	[256236] = {
 		["itemID"] = 153647,
@@ -24638,13 +24640,13 @@ recipeLibrary = {
 		["itemID"] = 32394,
 		["abilityID"] = 15820,
 	},
-	[73475] = {
-		["itemID"] = 52301,
-		["abilityID"] = 21510,
+	[3755] = {
+		["itemID"] = 4238,
+		["abilityID"] = 4001,
 	},
-	[304573] = {
-		["itemID"] = 170340,
-		["abilityID"] = 41048,
+	[259433] = {
+		["itemID"] = 154891,
+		["abilityID"] = 39640,
 	},
 	[185925] = {
 		["itemID"] = 126987,
@@ -24654,26 +24656,26 @@ recipeLibrary = {
 		["itemID"] = 2852,
 		["abilityID"] = 1633,
 	},
-	[229217] = {
-		["abilityID"] = 36279,
-		["itemID"] = 142117,
+	[376503] = {
+		["itemID"] = 193527,
+		["abilityID"] = 47228,
+	},
+	[172541] = {
+		["abilityID"] = 39668,
+		["itemID"] = 116979,
 		["tradeskillID"] = 171,
 	},
-	[330235] = {
-		["itemID"] = 180059,
-		["abilityID"] = 45118,
-	},
-	[107639] = {
-		["itemID"] = 76550,
-		["abilityID"] = 26638,
+	[253132] = {
+		["itemID"] = 152831,
+		["abilityID"] = 38754,
 	},
 	[122661] = {
 		["itemID"] = 83793,
 		["abilityID"] = 26546,
 	},
-	[73465] = {
-		["itemID"] = 52291,
-		["abilityID"] = 21502,
+	[73359] = {
+		["itemID"] = 52217,
+		["abilityID"] = 21461,
 	},
 	[3502] = {
 		["itemID"] = 3836,
@@ -24683,33 +24685,30 @@ recipeLibrary = {
 		["itemID"] = 127002,
 		["abilityID"] = 34302,
 	},
-	[3929] = {
-		["abilityID"] = 2425,
-		["itemID"] = 4364,
-		["tradeskillID"] = 202,
+	[171262] = {
+		["itemID"] = 116166,
+		["abilityID"] = 33382,
 	},
 	[100687] = {
 		["abilityID"] = 24345,
 		["itemID"] = 71077,
 		["tradeskillID"] = 202,
 	},
-	[2329] = {
-		["abilityID"] = 1378,
-		["itemID"] = 2454,
-		["tradeskillID"] = 171,
+	[282878] = {
+		["itemID"] = 164648,
+		["abilityID"] = 40029,
 	},
 	[73498] = {
 		["itemID"] = 52318,
 		["abilityID"] = 23891,
 	},
-	[127128] = {
-		["abilityID"] = 27341,
-		["itemID"] = 86607,
-		["tradeskillID"] = 202,
+	[40514] = {
+		["itemID"] = 32508,
+		["abilityID"] = 15834,
 	},
-	[40002] = {
-		["itemID"] = 32397,
-		["abilityID"] = 15817,
+	[256234] = {
+		["itemID"] = 153646,
+		["abilityID"] = 38940,
 	},
 	[269444] = {
 		["itemID"] = 159863,
@@ -24719,28 +24718,27 @@ recipeLibrary = {
 		["itemID"] = 127001,
 		["abilityID"] = 34303,
 	},
-	[3957] = {
-		["abilityID"] = 2451,
-		["itemID"] = 4386,
-		["tradeskillID"] = 202,
+	[107693] = {
+		["itemID"] = 76681,
+		["abilityID"] = 26474,
 	},
 	[11476] = {
 		["abilityID"] = 6017,
 		["itemID"] = 9264,
 		["tradeskillID"] = 171,
 	},
-	[30314] = {
-		["abilityID"] = 14352,
-		["itemID"] = 23747,
+	[3918] = {
+		["abilityID"] = 2413,
+		["itemID"] = 4357,
 		["tradeskillID"] = 202,
+	},
+	[73473] = {
+		["itemID"] = 52299,
+		["abilityID"] = 21511,
 	},
 	[44950] = {
 		["itemID"] = 151792,
 		["abilityID"] = 16155,
-	},
-	[122662] = {
-		["itemID"] = 83794,
-		["abilityID"] = 26479,
 	},
 	[74537] = {
 		["itemID"] = 53039,
@@ -24754,13 +24752,14 @@ recipeLibrary = {
 		["itemID"] = 127000,
 		["abilityID"] = 34304,
 	},
-	[53884] = {
-		["itemID"] = 39958,
-		["abilityID"] = 18405,
+	[53830] = {
+		["itemID"] = 39996,
+		["abilityID"] = 18434,
 	},
-	[101789] = {
-		["itemID"] = 71868,
-		["abilityID"] = 24544,
+	[198939] = {
+		["abilityID"] = 35096,
+		["itemID"] = 132500,
+		["tradeskillID"] = 202,
 	},
 	[269447] = {
 		["itemID"] = 159863,
@@ -24770,13 +24769,13 @@ recipeLibrary = {
 		["itemID"] = 52295,
 		["abilityID"] = 21504,
 	},
-	[10005] = {
-		["itemID"] = 7944,
-		["abilityID"] = 5347,
+	[253191] = {
+		["itemID"] = 162465,
+		["abilityID"] = 38745,
 	},
-	[107766] = {
-		["itemID"] = 76891,
-		["abilityID"] = 26567,
+	[64661] = {
+		["itemID"] = 33568,
+		["abilityID"] = 21009,
 	},
 	[269448] = {
 		["itemID"] = 159865,
@@ -24786,31 +24785,29 @@ recipeLibrary = {
 		["itemID"] = 126999,
 		["abilityID"] = 34305,
 	},
-	[330219] = {
-		["itemID"] = 180058,
-		["abilityID"] = 45102,
+	[73383] = {
+		["itemID"] = 52250,
+		["abilityID"] = 21484,
 	},
-	[11477] = {
-		["abilityID"] = 6018,
-		["itemID"] = 9224,
-		["tradeskillID"] = 171,
+	[73502] = {
+		["itemID"] = 52319,
+		["abilityID"] = 23890,
 	},
 	[269449] = {
 		["itemID"] = 159865,
 		["abilityID"] = 39452,
 	},
-	[3449] = {
-		["abilityID"] = 1932,
-		["itemID"] = 3824,
-		["tradeskillID"] = 171,
+	[52570] = {
+		["itemID"] = 39085,
+		["abilityID"] = 17885,
 	},
 	[122663] = {
 		["itemID"] = 83795,
 		["abilityID"] = 26598,
 	},
-	[16641] = {
-		["itemID"] = 12404,
-		["abilityID"] = 9156,
+	[253186] = {
+		["itemID"] = 152810,
+		["abilityID"] = 38738,
 	},
 	[269450] = {
 		["itemID"] = 159865,
@@ -24824,21 +24821,21 @@ recipeLibrary = {
 		["itemID"] = 197759,
 		["abilityID"] = 47365,
 	},
-	[19088] = {
-		["itemID"] = 15080,
-		["abilityID"] = 10795,
+	[170700] = {
+		["itemID"] = 115524,
+		["abilityID"] = 33274,
 	},
 	[269451] = {
 		["itemID"] = 159866,
 		["abilityID"] = 39454,
 	},
-	[76457] = {
-		["itemID"] = 75122,
-		["abilityID"] = 21810,
+	[182929] = {
+		["itemID"] = 123897,
+		["abilityID"] = 34092,
 	},
-	[125527] = {
-		["itemID"] = 82401,
-		["abilityID"] = 27043,
+	[8483] = {
+		["itemID"] = 6795,
+		["abilityID"] = 4715,
 	},
 	[12061] = {
 		["itemID"] = 10056,
@@ -24852,22 +24849,21 @@ recipeLibrary = {
 		["itemID"] = 126997,
 		["abilityID"] = 34307,
 	},
-	[55372] = {
-		["itemID"] = 41386,
-		["abilityID"] = 19298,
+	[381411] = {
+		["itemID"] = 197791,
+		["abilityID"] = 47387,
 	},
-	[330247] = {
-		["itemID"] = 180055,
-		["abilityID"] = 45130,
+	[73471] = {
+		["itemID"] = 52297,
+		["abilityID"] = 21512,
 	},
 	[269453] = {
 		["itemID"] = 159866,
 		["abilityID"] = 39456,
 	},
-	[3922] = {
-		["abilityID"] = 2417,
-		["itemID"] = 4359,
-		["tradeskillID"] = 202,
+	[166363] = {
+		["itemID"] = 113270,
+		["abilityID"] = 32917,
 	},
 	[122664] = {
 		["itemID"] = 83796,
@@ -24877,18 +24873,17 @@ recipeLibrary = {
 		["itemID"] = 165380,
 		["abilityID"] = 40175,
 	},
-	[56480] = {
-		["abilityID"] = 19576,
-		["itemID"] = 42549,
-		["tradeskillID"] = 202,
+	[78461] = {
+		["itemID"] = 56537,
+		["abilityID"] = 22399,
 	},
 	[185932] = {
 		["itemID"] = 126996,
 		["abilityID"] = 34308,
 	},
-	[86644] = {
-		["itemID"] = 62239,
-		["abilityID"] = 23408,
+	[293801] = {
+		["itemID"] = 167539,
+		["abilityID"] = 40429,
 	},
 	[128260] = {
 		["abilityID"] = 27265,
@@ -24899,14 +24894,13 @@ recipeLibrary = {
 		["itemID"] = 52213,
 		["abilityID"] = 21458,
 	},
-	[30315] = {
-		["abilityID"] = 14353,
-		["itemID"] = 23748,
-		["tradeskillID"] = 202,
+	[53875] = {
+		["itemID"] = 39950,
+		["abilityID"] = 18396,
 	},
-	[56531] = {
-		["itemID"] = 42702,
-		["abilityID"] = 19579,
+	[29547] = {
+		["itemID"] = 23484,
+		["abilityID"] = 14182,
 	},
 	[19050] = {
 		["itemID"] = 15045,
@@ -24920,13 +24914,13 @@ recipeLibrary = {
 		["itemID"] = 126995,
 		["abilityID"] = 34309,
 	},
-	[107758] = {
-		["itemID"] = 76897,
-		["abilityID"] = 26509,
+	[195871] = {
+		["itemID"] = 130239,
+		["abilityID"] = 34969,
 	},
-	[56021] = {
-		["itemID"] = 42093,
-		["abilityID"] = 19476,
+	[2169] = {
+		["itemID"] = 2317,
+		["abilityID"] = 1371,
 	},
 	[2158] = {
 		["itemID"] = 2307,
@@ -24953,14 +24947,14 @@ recipeLibrary = {
 		["itemID"] = 126994,
 		["abilityID"] = 34310,
 	},
-	[28586] = {
-		["abilityID"] = 13998,
-		["itemID"] = 22850,
-		["tradeskillID"] = 171,
+	[73464] = {
+		["itemID"] = 52289,
+		["abilityID"] = 21508,
 	},
-	[176425] = {
-		["itemID"] = 117008,
-		["abilityID"] = 33700,
+	[39637] = {
+		["abilityID"] = 15769,
+		["itemID"] = 32063,
+		["tradeskillID"] = 171,
 	},
 	[9959] = {
 		["itemID"] = 7930,
@@ -24970,9 +24964,9 @@ recipeLibrary = {
 		["itemID"] = 7938,
 		["abilityID"] = 5326,
 	},
-	[9208] = {
-		["itemID"] = 7391,
-		["abilityID"] = 5057,
+	[18415] = {
+		["itemID"] = 14101,
+		["abilityID"] = 10408,
 	},
 	[165456] = {
 		["itemID"] = 141644,
@@ -24994,9 +24988,10 @@ recipeLibrary = {
 		["itemID"] = 7915,
 		["abilityID"] = 5308,
 	},
-	[12052] = {
-		["itemID"] = 10002,
-		["abilityID"] = 6583,
+	[334413] = {
+		["abilityID"] = 45347,
+		["itemID"] = 180751,
+		["tradeskillID"] = 171,
 	},
 	[73384] = {
 		["itemID"] = 52237,
@@ -25006,14 +25001,13 @@ recipeLibrary = {
 		["itemID"] = 173382,
 		["abilityID"] = 45739,
 	},
-	[225534] = {
-		["itemID"] = 136826,
-		["abilityID"] = 36105,
+	[131898] = {
+		["itemID"] = 82775,
+		["abilityID"] = 27500,
 	},
-	[198967] = {
-		["abilityID"] = 35099,
-		["itemID"] = 132503,
-		["tradeskillID"] = 202,
+	[53885] = {
+		["itemID"] = 39959,
+		["abilityID"] = 18406,
 	},
 	[185936] = {
 		["itemID"] = 126992,
@@ -25023,26 +25017,25 @@ recipeLibrary = {
 		["itemID"] = 173383,
 		["abilityID"] = 46084,
 	},
-	[253180] = {
-		["itemID"] = 152808,
-		["abilityID"] = 38736,
+	[78462] = {
+		["itemID"] = 56538,
+		["abilityID"] = 22400,
 	},
 	[19052] = {
 		["itemID"] = 15084,
 		["abilityID"] = 10762,
 	},
-	[171275] = {
-		["itemID"] = 116181,
-		["abilityID"] = 33396,
+	[225551] = {
+		["itemID"] = 137289,
+		["abilityID"] = 36122,
 	},
 	[305806] = {
 		["itemID"] = 170442,
 		["abilityID"] = 41073,
 	},
-	[7836] = {
-		["abilityID"] = 4393,
-		["itemID"] = 6370,
-		["tradeskillID"] = 171,
+	[107649] = {
+		["itemID"] = 76526,
+		["abilityID"] = 26498,
 	},
 	[269464] = {
 		["itemID"] = 159853,
@@ -25065,17 +25058,17 @@ recipeLibrary = {
 		["itemID"] = 159853,
 		["abilityID"] = 39464,
 	},
-	[14809] = {
-		["itemID"] = 11289,
-		["abilityID"] = 8001,
+	[73381] = {
+		["itemID"] = 52225,
+		["abilityID"] = 21482,
 	},
 	[343189] = {
 		["itemID"] = 173384,
 		["abilityID"] = 46092,
 	},
-	[24125] = {
-		["itemID"] = 19689,
-		["abilityID"] = 12820,
+	[60608] = {
+		["itemID"] = 38438,
+		["abilityID"] = 20313,
 	},
 	[269466] = {
 		["itemID"] = 159853,
@@ -25090,29 +25083,29 @@ recipeLibrary = {
 		["itemID"] = 3825,
 		["tradeskillID"] = 171,
 	},
-	[60627] = {
-		["itemID"] = 44443,
-		["abilityID"] = 20325,
+	[53883] = {
+		["itemID"] = 39957,
+		["abilityID"] = 18404,
 	},
 	[7408] = {
 		["itemID"] = 6214,
 		["abilityID"] = 4285,
 	},
-	[391836] = {
-		["itemID"] = 196963,
-		["abilityID"] = 47879,
+	[12070] = {
+		["itemID"] = 10021,
+		["abilityID"] = 6601,
 	},
-	[192809] = {
-		["itemID"] = 128988,
-		["abilityID"] = 34652,
+	[307717] = {
+		["itemID"] = 171436,
+		["abilityID"] = 42426,
 	},
 	[165460] = {
 		["itemID"] = 141644,
 		["abilityID"] = 32903,
 	},
-	[3501] = {
-		["itemID"] = 3835,
-		["abilityID"] = 1993,
+	[29645] = {
+		["itemID"] = 23522,
+		["abilityID"] = 14216,
 	},
 	[185939] = {
 		["itemID"] = 126989,
@@ -25122,21 +25115,21 @@ recipeLibrary = {
 		["itemID"] = 173383,
 		["abilityID"] = 46079,
 	},
-	[14293] = {
-		["itemID"] = 11287,
-		["abilityID"] = 7999,
+	[122666] = {
+		["itemID"] = 83799,
+		["abilityID"] = 26550,
 	},
 	[104237] = {
 		["itemID"] = 74636,
 		["abilityID"] = 24787,
 	},
+	[31437] = {
+		["itemID"] = 24251,
+		["abilityID"] = 14625,
+	},
 	[122668] = {
 		["itemID"] = 83801,
 		["abilityID"] = 26485,
-	},
-	[343193] = {
-		["itemID"] = 173382,
-		["abilityID"] = 45749,
 	},
 	[165461] = {
 		["itemID"] = 141644,
@@ -25155,10 +25148,9 @@ recipeLibrary = {
 		["itemID"] = 4390,
 		["tradeskillID"] = 202,
 	},
-	[53841] = {
-		["abilityID"] = 18342,
-		["itemID"] = 40068,
-		["tradeskillID"] = 171,
+	[107745] = {
+		["itemID"] = 76650,
+		["abilityID"] = 26602,
 	},
 	[269471] = {
 		["itemID"] = 159855,
@@ -25172,10 +25164,9 @@ recipeLibrary = {
 		["itemID"] = 173381,
 		["abilityID"] = 45748,
 	},
-	[30317] = {
-		["abilityID"] = 14355,
-		["itemID"] = 23761,
-		["tradeskillID"] = 202,
+	[256308] = {
+		["itemID"] = 152510,
+		["abilityID"] = 38971,
 	},
 	[269472] = {
 		["itemID"] = 159855,
@@ -25185,9 +25176,9 @@ recipeLibrary = {
 		["itemID"] = 126987,
 		["abilityID"] = 34317,
 	},
-	[58485] = {
-		["itemID"] = 2289,
-		["abilityID"] = 20006,
+	[16647] = {
+		["itemID"] = 12424,
+		["abilityID"] = 9164,
 	},
 	[381415] = {
 		["itemID"] = 197794,
@@ -25209,10 +25200,9 @@ recipeLibrary = {
 		["itemID"] = 141644,
 		["abilityID"] = 32905,
 	},
-	[382375] = {
-		["abilityID"] = 47447,
-		["itemID"] = 198183,
-		["tradeskillID"] = 202,
+	[58487] = {
+		["itemID"] = 10310,
+		["abilityID"] = 20008,
 	},
 	[185942] = {
 		["itemID"] = 126994,
@@ -25222,9 +25212,9 @@ recipeLibrary = {
 		["itemID"] = 39948,
 		["abilityID"] = 18394,
 	},
-	[101796] = {
-		["itemID"] = 71880,
-		["abilityID"] = 24551,
+	[25278] = {
+		["itemID"] = 20817,
+		["abilityID"] = 13196,
 	},
 	[112430] = {
 		["itemID"] = 80588,
@@ -25234,9 +25224,9 @@ recipeLibrary = {
 		["itemID"] = 199848,
 		["abilityID"] = 47714,
 	},
-	[46136] = {
-		["itemID"] = 34371,
-		["abilityID"] = 16276,
+	[124129] = {
+		["itemID"] = 83764,
+		["abilityID"] = 26760,
 	},
 	[165464] = {
 		["itemID"] = 141644,
@@ -25254,9 +25244,9 @@ recipeLibrary = {
 		["itemID"] = 173384,
 		["abilityID"] = 46093,
 	},
-	[73521] = {
-		["itemID"] = 52350,
-		["abilityID"] = 23892,
+	[343201] = {
+		["itemID"] = 173383,
+		["abilityID"] = 46078,
 	},
 	[269477] = {
 		["itemID"] = 159857,
@@ -25266,9 +25256,9 @@ recipeLibrary = {
 		["itemID"] = 199850,
 		["abilityID"] = 47716,
 	},
-	[343201] = {
-		["itemID"] = 173383,
-		["abilityID"] = 46078,
+	[73521] = {
+		["itemID"] = 52350,
+		["abilityID"] = 23892,
 	},
 	[165465] = {
 		["itemID"] = 141644,
@@ -25286,9 +25276,9 @@ recipeLibrary = {
 		["itemID"] = 173382,
 		["abilityID"] = 45753,
 	},
-	[35543] = {
-		["itemID"] = 29529,
-		["abilityID"] = 15545,
+	[24940] = {
+		["itemID"] = 20575,
+		["abilityID"] = 13087,
 	},
 	[269479] = {
 		["itemID"] = 159858,
@@ -25299,10 +25289,9 @@ recipeLibrary = {
 		["itemID"] = 40076,
 		["tradeskillID"] = 171,
 	},
-	[382380] = {
-		["abilityID"] = 47442,
-		["itemID"] = 198198,
-		["tradeskillID"] = 202,
+	[58486] = {
+		["itemID"] = 4426,
+		["abilityID"] = 20007,
 	},
 	[165466] = {
 		["itemID"] = 141644,
@@ -25320,9 +25309,9 @@ recipeLibrary = {
 		["itemID"] = 173381,
 		["abilityID"] = 45752,
 	},
-	[36315] = {
-		["itemID"] = 30038,
-		["abilityID"] = 15652,
+	[290472] = {
+		["itemID"] = 166804,
+		["abilityID"] = 40333,
 	},
 	[269481] = {
 		["itemID"] = 159858,
@@ -25340,42 +25329,45 @@ recipeLibrary = {
 		["itemID"] = 141644,
 		["abilityID"] = 32909,
 	},
-	[124637] = {
-		["itemID"] = 85852,
-		["abilityID"] = 26933,
+	[28584] = {
+		["abilityID"] = 13994,
+		["itemID"] = 22452,
+		["tradeskillID"] = 171,
 	},
 	[185946] = {
 		["itemID"] = 127002,
 		["abilityID"] = 34322,
 	},
-	[125598] = {
-		["itemID"] = 87238,
-		["abilityID"] = 27067,
+	[42615] = {
+		["itemID"] = 22448,
+		["abilityID"] = 15898,
 	},
 	[125524] = {
 		["itemID"] = 82398,
 		["abilityID"] = 27041,
 	},
-	[64727] = {
-		["itemID"] = 45808,
-		["abilityID"] = 21016,
+	[30316] = {
+		["abilityID"] = 14354,
+		["itemID"] = 23758,
+		["tradeskillID"] = 202,
+	},
+	[19053] = {
+		["itemID"] = 15074,
+		["abilityID"] = 10763,
 	},
 	[81714] = {
 		["abilityID"] = 22126,
 		["itemID"] = 59359,
 		["tradeskillID"] = 202,
 	},
-	[7156] = {
-		["itemID"] = 5966,
-		["abilityID"] = 4165,
+	[76450] = {
+		["itemID"] = 55065,
+		["abilityID"] = 21803,
 	},
-	[60757] = {
-		["itemID"] = 43469,
-		["abilityID"] = 20385,
-	},
-	[367389] = {
-		["itemID"] = 190378,
-		["abilityID"] = 46667,
+	[12599] = {
+		["abilityID"] = 6868,
+		["itemID"] = 10561,
+		["tradeskillID"] = 202,
 	},
 	[185947] = {
 		["itemID"] = 127001,
@@ -25389,21 +25381,22 @@ recipeLibrary = {
 		["itemID"] = 170320,
 		["abilityID"] = 41038,
 	},
-	[60629] = {
-		["itemID"] = 44444,
-		["abilityID"] = 20326,
+	[31060] = {
+		["itemID"] = 24088,
+		["abilityID"] = 14553,
 	},
-	[254238] = {
-		["itemID"] = 153036,
-		["abilityID"] = 36772,
+	[170706] = {
+		["itemID"] = 115989,
+		["abilityID"] = 33281,
 	},
 	[122672] = {
 		["itemID"] = 83805,
 		["abilityID"] = 26607,
 	},
-	[195916] = {
-		["itemID"] = 130238,
-		["abilityID"] = 34996,
+	[382377] = {
+		["abilityID"] = 47445,
+		["itemID"] = 198189,
+		["tradeskillID"] = 202,
 	},
 	[8799] = {
 		["itemID"] = 7062,
@@ -25413,14 +25406,13 @@ recipeLibrary = {
 		["itemID"] = 24252,
 		["abilityID"] = 14626,
 	},
-	[122644] = {
-		["itemID"] = 82970,
-		["abilityID"] = 26458,
+	[73382] = {
+		["itemID"] = 52231,
+		["abilityID"] = 21483,
 	},
-	[3944] = {
-		["abilityID"] = 2440,
-		["itemID"] = 4376,
-		["tradeskillID"] = 202,
+	[107744] = {
+		["itemID"] = 76653,
+		["abilityID"] = 26584,
 	},
 	[29548] = {
 		["itemID"] = 23487,
@@ -25439,17 +25431,17 @@ recipeLibrary = {
 		["itemID"] = 139315,
 		["abilityID"] = 36571,
 	},
-	[122643] = {
-		["itemID"] = 82969,
-		["abilityID"] = 26457,
+	[56000] = {
+		["itemID"] = 41255,
+		["abilityID"] = 19454,
 	},
 	[185949] = {
 		["itemID"] = 126999,
 		["abilityID"] = 34325,
 	},
-	[338977] = {
-		["itemID"] = 191336,
-		["abilityID"] = 45590,
+	[125596] = {
+		["itemID"] = 87234,
+		["abilityID"] = 27065,
 	},
 	[107742] = {
 		["itemID"] = 76656,
@@ -25467,13 +25459,13 @@ recipeLibrary = {
 		["itemID"] = 83806,
 		["abilityID"] = 26632,
 	},
-	[53871] = {
-		["itemID"] = 39940,
-		["abilityID"] = 18392,
+	[383795] = {
+		["itemID"] = 190311,
+		["abilityID"] = 47550,
 	},
-	[124626] = {
-		["itemID"] = 85822,
-		["abilityID"] = 26943,
+	[165304] = {
+		["itemID"] = 141644,
+		["abilityID"] = 32901,
 	},
 	[185950] = {
 		["itemID"] = 126998,
@@ -25483,31 +25475,30 @@ recipeLibrary = {
 		["itemID"] = 32390,
 		["abilityID"] = 15823,
 	},
-	[176399] = {
-		["itemID"] = 116988,
-		["abilityID"] = 33681,
+	[322587] = {
+		["itemID"] = 171442,
+		["abilityID"] = 43548,
 	},
-	[299668] = {
-		["itemID"] = 168959,
-		["abilityID"] = 40765,
+	[288182] = {
+		["itemID"] = 156653,
+		["abilityID"] = 40235,
 	},
-	[283249] = {
-		["itemID"] = 164653,
-		["abilityID"] = 40019,
+	[371371] = {
+		["itemID"] = 191229,
+		["abilityID"] = 46853,
 	},
 	[81716] = {
 		["abilityID"] = 22123,
 		["itemID"] = 59456,
 		["tradeskillID"] = 202,
 	},
-	[198999] = {
-		["abilityID"] = 35131,
-		["itemID"] = 132509,
-		["tradeskillID"] = 202,
+	[338972] = {
+		["itemID"] = 191336,
+		["abilityID"] = 45586,
 	},
-	[122577] = {
-		["itemID"] = 82904,
-		["abilityID"] = 26404,
+	[122667] = {
+		["itemID"] = 83800,
+		["abilityID"] = 26549,
 	},
 	[185951] = {
 		["itemID"] = 126997,
@@ -25517,42 +25508,41 @@ recipeLibrary = {
 		["itemID"] = 21780,
 		["abilityID"] = 13536,
 	},
-	[122571] = {
-		["itemID"] = 82898,
-		["abilityID"] = 26393,
+	[122586] = {
+		["itemID"] = 82913,
+		["abilityID"] = 26431,
 	},
 	[53843] = {
 		["itemID"] = 39907,
 		["abilityID"] = 18366,
 	},
-	[408230] = {
-		["abilityID"] = 48537,
-		["itemID"] = 204818,
-		["tradeskillID"] = 202,
+	[53874] = {
+		["itemID"] = 39949,
+		["abilityID"] = 18395,
 	},
 	[122674] = {
 		["itemID"] = 83151,
 		["abilityID"] = 26506,
 	},
-	[19080] = {
-		["itemID"] = 15065,
-		["abilityID"] = 10786,
+	[259429] = {
+		["itemID"] = 154884,
+		["abilityID"] = 39639,
 	},
-	[53869] = {
-		["itemID"] = 39939,
-		["abilityID"] = 18390,
+	[76459] = {
+		["itemID"] = 75120,
+		["abilityID"] = 21812,
 	},
 	[185952] = {
 		["itemID"] = 126996,
 		["abilityID"] = 34328,
 	},
-	[387833] = {
-		["itemID"] = 199697,
-		["abilityID"] = 47705,
+	[124625] = {
+		["itemID"] = 85787,
+		["abilityID"] = 26942,
 	},
-	[50951] = {
-		["itemID"] = 38416,
-		["abilityID"] = 20296,
+	[201533] = {
+		["itemID"] = 133569,
+		["abilityID"] = 35192,
 	},
 	[3320] = {
 		["itemID"] = 3470,
@@ -25566,13 +25556,14 @@ recipeLibrary = {
 		["itemID"] = 128997,
 		["abilityID"] = 34661,
 	},
-	[73400] = {
-		["itemID"] = 52260,
-		["abilityID"] = 21492,
+	[122576] = {
+		["itemID"] = 82903,
+		["abilityID"] = 26428,
 	},
-	[15863] = {
-		["itemID"] = 12213,
-		["abilityID"] = 8621,
+	[3966] = {
+		["abilityID"] = 2461,
+		["itemID"] = 4393,
+		["tradeskillID"] = 202,
 	},
 	[185953] = {
 		["itemID"] = 126995,
@@ -25582,9 +25573,9 @@ recipeLibrary = {
 		["itemID"] = 165745,
 		["abilityID"] = 39845,
 	},
-	[338987] = {
-		["itemID"] = 191336,
-		["abilityID"] = 45600,
+	[26927] = {
+		["itemID"] = 21933,
+		["abilityID"] = 13539,
 	},
 	[19054] = {
 		["itemID"] = 15047,
@@ -25602,60 +25593,58 @@ recipeLibrary = {
 		["itemID"] = 164654,
 		["abilityID"] = 40022,
 	},
-	[107698] = {
-		["itemID"] = 76685,
-		["abilityID"] = 26555,
+	[73396] = {
+		["itemID"] = 52255,
+		["abilityID"] = 21486,
 	},
 	[185954] = {
 		["itemID"] = 127002,
 		["abilityID"] = 34330,
 	},
-	[3774] = {
-		["itemID"] = 4257,
-		["abilityID"] = 2183,
+	[143190] = {
+		["itemID"] = 98926,
+		["abilityID"] = 31512,
 	},
-	[124618] = {
-		["itemID"] = 85789,
-		["abilityID"] = 26917,
+	[60631] = {
+		["itemID"] = 38441,
+		["abilityID"] = 20328,
 	},
-	[64728] = {
-		["itemID"] = 45809,
-		["abilityID"] = 21017,
-	},
-	[28549] = {
-		["abilityID"] = 13965,
-		["itemID"] = 22827,
+	[39639] = {
+		["abilityID"] = 15771,
+		["itemID"] = 32068,
 		["tradeskillID"] = 171,
 	},
-	[195943] = {
-		["itemID"] = 130244,
-		["abilityID"] = 35023,
+	[12056] = {
+		["itemID"] = 10007,
+		["abilityID"] = 6586,
 	},
-	[22732] = {
-		["abilityID"] = 12299,
-		["itemID"] = 18253,
-		["tradeskillID"] = 171,
+	[2152] = {
+		["itemID"] = 2304,
+		["abilityID"] = 1356,
 	},
-	[226118] = {
-		["itemID"] = 132499,
-		["abilityID"] = 36158,
+	[26910] = {
+		["itemID"] = 21778,
+		["abilityID"] = 13529,
+	},
+	[33288] = {
+		["itemID"] = 27659,
+		["abilityID"] = 15008,
 	},
 	[185955] = {
 		["itemID"] = 127001,
 		["abilityID"] = 34331,
 	},
-	[382363] = {
-		["abilityID"] = 47459,
-		["itemID"] = 198236,
-		["tradeskillID"] = 202,
+	[29550] = {
+		["itemID"] = 23489,
+		["abilityID"] = 14185,
 	},
-	[56280] = {
-		["itemID"] = 42443,
-		["abilityID"] = 19536,
+	[143189] = {
+		["itemID"] = 98864,
+		["abilityID"] = 31528,
 	},
-	[60758] = {
-		["itemID"] = 43481,
-		["abilityID"] = 20386,
+	[192904] = {
+		["itemID"] = 129000,
+		["abilityID"] = 34747,
 	},
 	[402139] = {
 		["itemID"] = 203808,
@@ -25665,17 +25654,17 @@ recipeLibrary = {
 		["itemID"] = 83150,
 		["abilityID"] = 26491,
 	},
-	[76467] = {
-		["itemID"] = 75118,
-		["abilityID"] = 21819,
+	[26928] = {
+		["itemID"] = 21934,
+		["abilityID"] = 13540,
+	},
+	[58146] = {
+		["itemID"] = 43249,
+		["abilityID"] = 19975,
 	},
 	[388279] = {
 		["itemID"] = 191304,
 		["abilityID"] = 47751,
-	},
-	[185956] = {
-		["itemID"] = 127000,
-		["abilityID"] = 34332,
 	},
 	[163225] = {
 		["itemID"] = 25708,
@@ -25697,26 +25686,26 @@ recipeLibrary = {
 		["itemID"] = 53643,
 		["abilityID"] = 21663,
 	},
-	[185957] = {
-		["itemID"] = 126999,
-		["abilityID"] = 34333,
-	},
-	[298647] = {
-		["itemID"] = 168624,
-		["abilityID"] = 40649,
-	},
 	[388281] = {
 		["itemID"] = 199905,
 		["abilityID"] = 47723,
 	},
-	[41319] = {
-		["abilityID"] = 15857,
-		["itemID"] = 32480,
-		["tradeskillID"] = 202,
+	[3230] = {
+		["abilityID"] = 1833,
+		["itemID"] = 2457,
+		["tradeskillID"] = 171,
 	},
-	[28207] = {
-		["itemID"] = 22652,
-		["abilityID"] = 13912,
+	[185957] = {
+		["itemID"] = 126999,
+		["abilityID"] = 34333,
+	},
+	[269459] = {
+		["itemID"] = 159851,
+		["abilityID"] = 39458,
+	},
+	[391814] = {
+		["itemID"] = 200905,
+		["abilityID"] = 47893,
 	},
 	[142952] = {
 		["itemID"] = 98600,
@@ -25730,25 +25719,26 @@ recipeLibrary = {
 		["itemID"] = 83149,
 		["abilityID"] = 26618,
 	},
-	[53856] = {
-		["itemID"] = 39918,
-		["abilityID"] = 18379,
+	[55375] = {
+		["itemID"] = 41391,
+		["abilityID"] = 19302,
 	},
-	[73504] = {
-		["itemID"] = 52321,
-		["abilityID"] = 23895,
+	[259422] = {
+		["itemID"] = 156526,
+		["abilityID"] = 39632,
 	},
 	[185958] = {
 		["itemID"] = 126998,
 		["abilityID"] = 34334,
 	},
-	[107701] = {
-		["itemID"] = 76687,
-		["abilityID"] = 26603,
+	[23066] = {
+		["abilityID"] = 12420,
+		["itemID"] = 9318,
+		["tradeskillID"] = 202,
 	},
-	[53865] = {
-		["itemID"] = 39945,
-		["abilityID"] = 18386,
+	[124620] = {
+		["itemID"] = 85824,
+		["abilityID"] = 26953,
 	},
 	[142953] = {
 		["itemID"] = 98601,
@@ -25763,33 +25753,34 @@ recipeLibrary = {
 		["itemID"] = 59458,
 		["tradeskillID"] = 202,
 	},
-	[259415] = {
-		["itemID"] = 154882,
-		["abilityID"] = 39635,
+	[4942] = {
+		["abilityID"] = 2909,
+		["itemID"] = 4623,
+		["tradeskillID"] = 171,
 	},
-	[107718] = {
-		["itemID"] = 76659,
-		["abilityID"] = 26496,
+	[107696] = {
+		["itemID"] = 76680,
+		["abilityID"] = 26533,
 	},
 	[185959] = {
 		["itemID"] = 126997,
 		["abilityID"] = 34335,
 	},
-	[73466] = {
-		["itemID"] = 52292,
-		["abilityID"] = 21501,
+	[48248] = {
+		["itemID"] = 37118,
+		["abilityID"] = 17957,
 	},
-	[21943] = {
-		["itemID"] = 17721,
-		["abilityID"] = 12140,
+	[338996] = {
+		["itemID"] = 191336,
+		["abilityID"] = 42864,
 	},
 	[142954] = {
 		["itemID"] = 98602,
 		["abilityID"] = 31478,
 	},
-	[29603] = {
-		["itemID"] = 23506,
-		["abilityID"] = 14197,
+	[122678] = {
+		["itemID"] = 83148,
+		["abilityID"] = 26613,
 	},
 	[44958] = {
 		["itemID"] = 151790,
@@ -25799,9 +25790,10 @@ recipeLibrary = {
 		["itemID"] = 76691,
 		["abilityID"] = 26614,
 	},
-	[53857] = {
-		["itemID"] = 39917,
-		["abilityID"] = 18378,
+	[264960] = {
+		["abilityID"] = 39235,
+		["itemID"] = 158212,
+		["tradeskillID"] = 202,
 	},
 	[185960] = {
 		["itemID"] = 126996,
@@ -25811,10 +25803,9 @@ recipeLibrary = {
 		["itemID"] = 38558,
 		["abilityID"] = 32856,
 	},
-	[26421] = {
-		["abilityID"] = 13428,
-		["itemID"] = 21590,
-		["tradeskillID"] = 202,
+	[22967] = {
+		["itemID"] = 17771,
+		["abilityID"] = 20659,
 	},
 	[142955] = {
 		["itemID"] = 98603,
@@ -25824,10 +25815,9 @@ recipeLibrary = {
 		["itemID"] = 123893,
 		["abilityID"] = 34639,
 	},
-	[199001] = {
-		["abilityID"] = 35133,
-		["itemID"] = 132511,
-		["tradeskillID"] = 202,
+	[226121] = {
+		["itemID"] = 132498,
+		["abilityID"] = 36155,
 	},
 	[66573] = {
 		["itemID"] = 40157,
@@ -25841,10 +25831,9 @@ recipeLibrary = {
 		["itemID"] = 126995,
 		["abilityID"] = 34337,
 	},
-	[305863] = {
-		["abilityID"] = 41081,
-		["itemID"] = 170313,
-		["tradeskillID"] = 202,
+	[22480] = {
+		["itemID"] = 18045,
+		["abilityID"] = 12236,
 	},
 	[29621] = {
 		["itemID"] = 23519,
@@ -25854,9 +25843,9 @@ recipeLibrary = {
 		["itemID"] = 98604,
 		["abilityID"] = 31490,
 	},
-	[21161] = {
-		["itemID"] = 17193,
-		["abilityID"] = 11979,
+	[76470] = {
+		["itemID"] = 75133,
+		["abilityID"] = 21822,
 	},
 	[122679] = {
 		["itemID"] = 83145,
@@ -25867,10 +25856,10 @@ recipeLibrary = {
 		["itemID"] = 113262,
 		["tradeskillID"] = 171,
 	},
-	[41316] = {
-		["abilityID"] = 15854,
-		["itemID"] = 32475,
-		["tradeskillID"] = 202,
+	[181647] = {
+		["abilityID"] = 34013,
+		["itemID"] = 122601,
+		["tradeskillID"] = 171,
 	},
 	[185962] = {
 		["itemID"] = 127004,
@@ -25880,17 +25869,17 @@ recipeLibrary = {
 		["itemID"] = 94270,
 		["abilityID"] = 31392,
 	},
-	[32869] = {
-		["itemID"] = 25899,
-		["abilityID"] = 14927,
+	[107716] = {
+		["itemID"] = 76672,
+		["abilityID"] = 26481,
 	},
 	[142957] = {
 		["itemID"] = 98605,
 		["abilityID"] = 31491,
 	},
-	[53832] = {
-		["itemID"] = 39905,
-		["abilityID"] = 18363,
+	[176409] = {
+		["itemID"] = 116994,
+		["abilityID"] = 33687,
 	},
 	[81722] = {
 		["abilityID"] = 22121,
@@ -25905,21 +25894,21 @@ recipeLibrary = {
 		["itemID"] = 159884,
 		["abilityID"] = 39481,
 	},
-	[18413] = {
-		["itemID"] = 14142,
-		["abilityID"] = 10409,
+	[9207] = {
+		["itemID"] = 7390,
+		["abilityID"] = 5056,
 	},
 	[29648] = {
 		["itemID"] = 23526,
 		["abilityID"] = 14217,
 	},
+	[53977] = {
+		["itemID"] = 40039,
+		["abilityID"] = 18467,
+	},
 	[269517] = {
 		["itemID"] = 159884,
 		["abilityID"] = 39494,
-	},
-	[142958] = {
-		["itemID"] = 98606,
-		["abilityID"] = 31479,
 	},
 	[195935] = {
 		["itemID"] = 130236,
@@ -25929,9 +25918,9 @@ recipeLibrary = {
 		["itemID"] = 83146,
 		["abilityID"] = 26608,
 	},
-	[305845] = {
-		["itemID"] = 170311,
-		["abilityID"] = 43075,
+	[57703] = {
+		["itemID"] = 43115,
+		["abilityID"] = 19777,
 	},
 	[269518] = {
 		["itemID"] = 159884,
@@ -25958,26 +25947,26 @@ recipeLibrary = {
 		["itemID"] = 25656,
 		["abilityID"] = 14857,
 	},
-	[359492] = {
-		["itemID"] = 187700,
-		["abilityID"] = 46256,
+	[30574] = {
+		["abilityID"] = 14408,
+		["itemID"] = 23828,
+		["tradeskillID"] = 202,
 	},
-	[192874] = {
-		["itemID"] = 129001,
-		["abilityID"] = 34717,
+	[9145] = {
+		["itemID"] = 7348,
+		["abilityID"] = 5026,
 	},
 	[269520] = {
 		["itemID"] = 159885,
 		["abilityID"] = 39496,
 	},
-	[196428] = {
-		["itemID"] = 129975,
-		["abilityID"] = 35060,
+	[343691] = {
+		["itemID"] = 173381,
+		["abilityID"] = 45782,
 	},
-	[343102] = {
-		["abilityID"] = 46082,
-		["itemID"] = 173383,
-		["tradeskillID"] = 202,
+	[192892] = {
+		["itemID"] = 128988,
+		["abilityID"] = 34735,
 	},
 	[73505] = {
 		["itemID"] = 52322,
@@ -26003,9 +25992,9 @@ recipeLibrary = {
 		["itemID"] = 159886,
 		["abilityID"] = 39483,
 	},
-	[107714] = {
-		["itemID"] = 76698,
-		["abilityID"] = 26628,
+	[259428] = {
+		["itemID"] = 154884,
+		["abilityID"] = 39638,
 	},
 	[55199] = {
 		["itemID"] = 41238,
@@ -26019,34 +26008,35 @@ recipeLibrary = {
 		["itemID"] = 159886,
 		["abilityID"] = 39498,
 	},
-	[338100] = {
-		["itemID"] = 181381,
-		["abilityID"] = 45506,
+	[337427] = {
+		["itemID"] = 181784,
+		["abilityID"] = 45467,
 	},
 	[81724] = {
 		["abilityID"] = 22122,
 		["itemID"] = 59453,
 		["tradeskillID"] = 202,
 	},
-	[63194] = {
-		["itemID"] = 45553,
-		["abilityID"] = 20822,
+	[3866] = {
+		["itemID"] = 4330,
+		["abilityID"] = 2401,
 	},
 	[269524] = {
 		["itemID"] = 159886,
 		["abilityID"] = 39499,
 	},
-	[305847] = {
-		["itemID"] = 170310,
-		["abilityID"] = 43073,
+	[107720] = {
+		["itemID"] = 76666,
+		["abilityID"] = 26503,
 	},
-	[196427] = {
-		["itemID"] = 129964,
-		["abilityID"] = 35059,
+	[310923] = {
+		["itemID"] = 173191,
+		["abilityID"] = 42865,
 	},
-	[170720] = {
-		["itemID"] = 115804,
-		["abilityID"] = 33295,
+	[305862] = {
+		["abilityID"] = 41082,
+		["itemID"] = 170313,
+		["tradeskillID"] = 202,
 	},
 	[269525] = {
 		["itemID"] = 159887,
@@ -26068,43 +26058,44 @@ recipeLibrary = {
 		["itemID"] = 159887,
 		["abilityID"] = 39500,
 	},
-	[20849] = {
-		["itemID"] = 16979,
-		["abilityID"] = 11857,
+	[192890] = {
+		["itemID"] = 128712,
+		["abilityID"] = 34733,
 	},
 	[310484] = {
 		["abilityID"] = 42728,
 		["itemID"] = 172903,
 		["tradeskillID"] = 202,
 	},
+	[343693] = {
+		["itemID"] = 183942,
+		["abilityID"] = 45846,
+	},
 	[269527] = {
 		["itemID"] = 159887,
 		["abilityID"] = 39501,
 	},
-	[142963] = {
-		["itemID"] = 98611,
-		["abilityID"] = 31481,
-	},
-	[40004] = {
-		["itemID"] = 32395,
-		["abilityID"] = 15821,
+	[122652] = {
+		["itemID"] = 82978,
+		["abilityID"] = 26471,
 	},
 	[310485] = {
 		["abilityID"] = 42729,
 		["itemID"] = 172904,
 		["tradeskillID"] = 202,
 	},
-	[305842] = {
-		["itemID"] = 170387,
-		["abilityID"] = 41076,
+	[259427] = {
+		["itemID"] = 154884,
+		["abilityID"] = 39637,
 	},
 	[269528] = {
 		["itemID"] = 159888,
 		["abilityID"] = 39485,
 	},
-	[305839] = {
-		["itemID"] = 170390,
-		["abilityID"] = 41079,
+	[26422] = {
+		["abilityID"] = 13429,
+		["itemID"] = 21592,
+		["tradeskillID"] = 202,
 	},
 	[310486] = {
 		["abilityID"] = 42730,
@@ -26136,30 +26127,29 @@ recipeLibrary = {
 		["itemID"] = 159888,
 		["abilityID"] = 39503,
 	},
-	[29552] = {
-		["itemID"] = 23491,
-		["abilityID"] = 14187,
+	[192894] = {
+		["itemID"] = 128990,
+		["abilityID"] = 34737,
 	},
 	[55200] = {
 		["itemID"] = 41239,
 		["abilityID"] = 19239,
 	},
-	[56006] = {
-		["itemID"] = 41598,
-		["abilityID"] = 19460,
+	[142965] = {
+		["itemID"] = 98613,
+		["abilityID"] = 31494,
 	},
 	[269531] = {
 		["itemID"] = 159889,
 		["abilityID"] = 39486,
 	},
-	[39895] = {
-		["abilityID"] = 15808,
-		["itemID"] = 7191,
-		["tradeskillID"] = 202,
+	[143181] = {
+		["itemID"] = 98856,
+		["abilityID"] = 31503,
 	},
-	[107703] = {
-		["itemID"] = 76689,
-		["abilityID"] = 26633,
+	[121842] = {
+		["itemID"] = 83090,
+		["abilityID"] = 26597,
 	},
 	[185705] = {
 		["itemID"] = 126935,
@@ -26169,21 +26159,22 @@ recipeLibrary = {
 		["itemID"] = 159889,
 		["abilityID"] = 39504,
 	},
-	[101803] = {
-		["itemID"] = 71877,
-		["abilityID"] = 24558,
+	[64729] = {
+		["itemID"] = 45811,
+		["abilityID"] = 21018,
 	},
 	[29649] = {
 		["itemID"] = 23527,
 		["abilityID"] = 14218,
 	},
+	[382365] = {
+		["abilityID"] = 47457,
+		["itemID"] = 198160,
+		["tradeskillID"] = 202,
+	},
 	[269533] = {
 		["itemID"] = 159889,
 		["abilityID"] = 39505,
-	},
-	[142966] = {
-		["itemID"] = 98614,
-		["abilityID"] = 31495,
 	},
 	[63195] = {
 		["itemID"] = 45562,
@@ -26210,9 +26201,9 @@ recipeLibrary = {
 		["itemID"] = 172914,
 		["tradeskillID"] = 202,
 	},
-	[304323] = {
-		["itemID"] = 170310,
-		["abilityID"] = 40996,
+	[142967] = {
+		["itemID"] = 98615,
+		["abilityID"] = 31482,
 	},
 	[269535] = {
 		["itemID"] = 159890,
@@ -26235,18 +26226,17 @@ recipeLibrary = {
 		["itemID"] = 159890,
 		["abilityID"] = 39507,
 	},
-	[305844] = {
-		["itemID"] = 170311,
-		["abilityID"] = 43076,
+	[57704] = {
+		["itemID"] = 43116,
+		["abilityID"] = 19778,
 	},
 	[226122] = {
 		["itemID"] = 132546,
 		["abilityID"] = 36212,
 	},
-	[310495] = {
-		["abilityID"] = 42724,
-		["itemID"] = 0,
-		["tradeskillID"] = 202,
+	[269537] = {
+		["itemID"] = 159891,
+		["abilityID"] = 39488,
 	},
 	[142968] = {
 		["itemID"] = 98616,
@@ -26256,21 +26246,23 @@ recipeLibrary = {
 		["itemID"] = 28427,
 		["abilityID"] = 15642,
 	},
-	[122685] = {
-		["itemID"] = 83152,
-		["abilityID"] = 26525,
+	[310495] = {
+		["abilityID"] = 42724,
+		["itemID"] = 0,
+		["tradeskillID"] = 202,
 	},
-	[259414] = {
-		["itemID"] = 154882,
-		["abilityID"] = 39634,
+	[40036] = {
+		["itemID"] = 32401,
+		["abilityID"] = 15827,
 	},
 	[269538] = {
 		["itemID"] = 159891,
 		["abilityID"] = 39508,
 	},
-	[14810] = {
-		["itemID"] = 11290,
-		["abilityID"] = 8002,
+	[310496] = {
+		["abilityID"] = 42725,
+		["itemID"] = 0,
+		["tradeskillID"] = 202,
 	},
 	[55201] = {
 		["itemID"] = 41240,
@@ -26294,9 +26286,9 @@ recipeLibrary = {
 		["itemID"] = 0,
 		["tradeskillID"] = 202,
 	},
-	[99654] = {
-		["itemID"] = 70157,
-		["abilityID"] = 24338,
+	[269521] = {
+		["itemID"] = 159885,
+		["abilityID"] = 39497,
 	},
 	[269540] = {
 		["itemID"] = 159892,
@@ -26307,26 +26299,26 @@ recipeLibrary = {
 		["itemID"] = 132514,
 		["tradeskillID"] = 202,
 	},
-	[40033] = {
-		["itemID"] = 32402,
-		["abilityID"] = 15829,
+	[192863] = {
+		["itemID"] = 128990,
+		["abilityID"] = 34706,
 	},
-	[84408] = {
-		["abilityID"] = 22272,
-		["itemID"] = 59595,
-		["tradeskillID"] = 202,
+	[7133] = {
+		["itemID"] = 5958,
+		["abilityID"] = 4158,
 	},
 	[269541] = {
 		["itemID"] = 159892,
 		["abilityID"] = 39510,
 	},
-	[259421] = {
-		["itemID"] = 156526,
-		["abilityID"] = 39631,
+	[23096] = {
+		["abilityID"] = 12432,
+		["itemID"] = 18645,
+		["tradeskillID"] = 202,
 	},
-	[322593] = {
-		["itemID"] = 171447,
-		["abilityID"] = 43553,
+	[12071] = {
+		["itemID"] = 10023,
+		["abilityID"] = 6602,
 	},
 	[305851] = {
 		["itemID"] = 170366,
@@ -26336,13 +26328,14 @@ recipeLibrary = {
 		["itemID"] = 159892,
 		["abilityID"] = 39511,
 	},
-	[53981] = {
-		["itemID"] = 40045,
-		["abilityID"] = 18472,
+	[41315] = {
+		["abilityID"] = 15853,
+		["itemID"] = 32476,
+		["tradeskillID"] = 202,
 	},
-	[268982] = {
-		["itemID"] = 159791,
-		["abilityID"] = 39429,
+	[138596] = {
+		["itemID"] = 94276,
+		["abilityID"] = 31395,
 	},
 	[31072] = {
 		["itemID"] = 24117,
@@ -26352,10 +26345,9 @@ recipeLibrary = {
 		["itemID"] = 165733,
 		["abilityID"] = 40457,
 	},
-	[11449] = {
-		["abilityID"] = 5997,
-		["itemID"] = 8949,
-		["tradeskillID"] = 171,
+	[2159] = {
+		["itemID"] = 2308,
+		["abilityID"] = 1360,
 	},
 	[310501] = {
 		["abilityID"] = 42742,
@@ -26370,17 +26362,17 @@ recipeLibrary = {
 		["itemID"] = 159893,
 		["abilityID"] = 39512,
 	},
-	[3873] = {
-		["itemID"] = 4336,
-		["abilityID"] = 2407,
+	[122670] = {
+		["itemID"] = 83803,
+		["abilityID"] = 26535,
 	},
 	[138876] = {
 		["itemID"] = 94575,
 		["abilityID"] = 31223,
 	},
-	[305843] = {
-		["itemID"] = 170386,
-		["abilityID"] = 41075,
+	[217649] = {
+		["itemID"] = 138792,
+		["abilityID"] = 35962,
 	},
 	[269545] = {
 		["itemID"] = 159893,
@@ -26399,18 +26391,18 @@ recipeLibrary = {
 		["itemID"] = 32479,
 		["tradeskillID"] = 202,
 	},
-	[93841] = {
-		["itemID"] = 67274,
-		["abilityID"] = 24005,
-	},
-	[138877] = {
-		["itemID"] = 94576,
-		["abilityID"] = 31240,
+	[305841] = {
+		["itemID"] = 170388,
+		["abilityID"] = 41077,
 	},
 	[310504] = {
 		["abilityID"] = 42743,
 		["itemID"] = 172906,
 		["tradeskillID"] = 202,
+	},
+	[138877] = {
+		["itemID"] = 94576,
+		["abilityID"] = 31240,
 	},
 	[259424] = {
 		["itemID"] = 154883,
@@ -26420,33 +26412,35 @@ recipeLibrary = {
 		["itemID"] = 171449,
 		["abilityID"] = 43555,
 	},
-	[195931] = {
-		["itemID"] = 130231,
-		["abilityID"] = 35011,
+	[195932] = {
+		["itemID"] = 130233,
+		["abilityID"] = 35012,
 	},
-	[60605] = {
-		["itemID"] = 44438,
-		["abilityID"] = 20305,
+	[2165] = {
+		["itemID"] = 2313,
+		["abilityID"] = 1367,
 	},
 	[7221] = {
 		["itemID"] = 6042,
 		["abilityID"] = 4207,
 	},
-	[220511] = {
-		["itemID"] = 139503,
-		["abilityID"] = 36079,
+	[84406] = {
+		["abilityID"] = 22274,
+		["itemID"] = 60222,
+		["tradeskillID"] = 202,
 	},
-	[18412] = {
-		["itemID"] = 14043,
-		["abilityID"] = 10407,
+	[343677] = {
+		["abilityID"] = 46085,
+		["itemID"] = 173383,
+		["tradeskillID"] = 171,
 	},
 	[138878] = {
 		["itemID"] = 94577,
 		["abilityID"] = 31238,
 	},
-	[7213] = {
-		["itemID"] = 6038,
-		["abilityID"] = 4204,
+	[7630] = {
+		["itemID"] = 6240,
+		["abilityID"] = 4304,
 	},
 	[253192] = {
 		["itemID"] = 162466,
@@ -26467,9 +26461,9 @@ recipeLibrary = {
 		["itemID"] = 4370,
 		["tradeskillID"] = 202,
 	},
-	[170712] = {
-		["itemID"] = 115995,
-		["abilityID"] = 33287,
+	[124589] = {
+		["itemID"] = 85816,
+		["abilityID"] = 26938,
 	},
 	[31442] = {
 		["itemID"] = 24255,
@@ -26479,15 +26473,13 @@ recipeLibrary = {
 		["itemID"] = 94578,
 		["abilityID"] = 31224,
 	},
-	[84412] = {
-		["abilityID"] = 22268,
-		["itemID"] = 59597,
-		["tradeskillID"] = 202,
+	[63197] = {
+		["itemID"] = 45563,
+		["abilityID"] = 20829,
 	},
-	[199003] = {
-		["abilityID"] = 35135,
-		["itemID"] = 132514,
-		["tradeskillID"] = 202,
+	[343689] = {
+		["itemID"] = 173382,
+		["abilityID"] = 45783,
 	},
 	[32466] = {
 		["itemID"] = 25662,
@@ -26506,9 +26498,9 @@ recipeLibrary = {
 		["itemID"] = 159896,
 		["abilityID"] = 39492,
 	},
-	[28209] = {
-		["itemID"] = 22655,
-		["abilityID"] = 13913,
+	[55396] = {
+		["itemID"] = 41401,
+		["abilityID"] = 19319,
 	},
 	[138880] = {
 		["itemID"] = 94579,
@@ -26526,21 +26518,23 @@ recipeLibrary = {
 		["itemID"] = 28433,
 		["abilityID"] = 15644,
 	},
-	[322588] = {
-		["itemID"] = 171443,
-		["abilityID"] = 43549,
+	[63196] = {
+		["itemID"] = 45554,
+		["abilityID"] = 20824,
 	},
-	[170713] = {
-		["itemID"] = 115794,
-		["abilityID"] = 33288,
+	[7181] = {
+		["abilityID"] = 4177,
+		["itemID"] = 1710,
+		["tradeskillID"] = 171,
 	},
 	[269554] = {
 		["itemID"] = 159896,
 		["abilityID"] = 39517,
 	},
-	[56194] = {
-		["itemID"] = 42337,
-		["abilityID"] = 19516,
+	[382355] = {
+		["abilityID"] = 47467,
+		["itemID"] = 198207,
+		["tradeskillID"] = 202,
 	},
 	[55203] = {
 		["itemID"] = 41242,
@@ -26550,9 +26544,9 @@ recipeLibrary = {
 		["itemID"] = 15870,
 		["abilityID"] = 11184,
 	},
-	[16643] = {
-		["itemID"] = 12406,
-		["abilityID"] = 9160,
+	[304414] = {
+		["itemID"] = 170348,
+		["abilityID"] = 41000,
 	},
 	[391848] = {
 		["itemID"] = 197579,
@@ -26566,42 +26560,42 @@ recipeLibrary = {
 		["itemID"] = 38591,
 		["abilityID"] = 20294,
 	},
-	[67132] = {
-		["itemID"] = 47590,
-		["abilityID"] = 21204,
-	},
-	[359663] = {
-		["itemID"] = 187741,
-		["abilityID"] = 46269,
+	[56029] = {
+		["itemID"] = 42113,
+		["abilityID"] = 19484,
 	},
 	[138882] = {
 		["itemID"] = 94581,
 		["abilityID"] = 31235,
 	},
+	[359663] = {
+		["itemID"] = 187741,
+		["abilityID"] = 46269,
+	},
 	[391834] = {
 		["itemID"] = 197091,
 		["abilityID"] = 47881,
 	},
-	[305840] = {
-		["itemID"] = 170389,
-		["abilityID"] = 41078,
+	[63199] = {
+		["itemID"] = 45564,
+		["abilityID"] = 20827,
 	},
-	[76466] = {
-		["itemID"] = 75121,
-		["abilityID"] = 21818,
+	[107700] = {
+		["itemID"] = 76683,
+		["abilityID"] = 26589,
 	},
 	[359664] = {
 		["abilityID"] = 46270,
 		["itemID"] = 187741,
 		["tradeskillID"] = 202,
 	},
-	[192850] = {
-		["itemID"] = 129029,
-		["abilityID"] = 34695,
+	[390823] = {
+		["itemID"] = 198715,
+		["abilityID"] = 47807,
 	},
-	[41429] = {
-		["itemID"] = 32836,
-		["abilityID"] = 15873,
+	[247615] = {
+		["itemID"] = 151610,
+		["abilityID"] = 36714,
 	},
 	[309230] = {
 		["itemID"] = 172251,
@@ -26611,36 +26605,35 @@ recipeLibrary = {
 		["itemID"] = 94582,
 		["abilityID"] = 31229,
 	},
-	[76471] = {
-		["itemID"] = 75129,
-		["abilityID"] = 21823,
+	[107736] = {
+		["itemID"] = 76677,
+		["abilityID"] = 26645,
 	},
 	[76458] = {
 		["itemID"] = 75123,
 		["abilityID"] = 21811,
 	},
-	[3871] = {
-		["itemID"] = 4334,
-		["abilityID"] = 2405,
+	[28591] = {
+		["abilityID"] = 14003,
+		["itemID"] = 22866,
+		["tradeskillID"] = 171,
 	},
 	[359666] = {
 		["abilityID"] = 46272,
 		["itemID"] = 187741,
 		["tradeskillID"] = 171,
 	},
-	[55252] = {
-		["abilityID"] = 19261,
-		["itemID"] = 40769,
-		["tradeskillID"] = 202,
+	[310904] = {
+		["itemID"] = 173222,
+		["abilityID"] = 42811,
 	},
-	[2664] = {
-		["itemID"] = 2854,
-		["abilityID"] = 1635,
+	[52843] = {
+		["itemID"] = 39469,
+		["abilityID"] = 17960,
 	},
-	[198997] = {
-		["abilityID"] = 35129,
-		["itemID"] = 132506,
-		["tradeskillID"] = 202,
+	[29359] = {
+		["itemID"] = 23447,
+		["abilityID"] = 14115,
 	},
 	[138884] = {
 		["itemID"] = 94583,
@@ -26659,17 +26652,13 @@ recipeLibrary = {
 		["itemID"] = 28436,
 		["abilityID"] = 15645,
 	},
-	[229183] = {
-		["itemID"] = 142101,
-		["abilityID"] = 36276,
+	[310903] = {
+		["itemID"] = 173221,
+		["abilityID"] = 42812,
 	},
-	[73398] = {
-		["itemID"] = 52259,
-		["abilityID"] = 21489,
-	},
-	[359669] = {
-		["itemID"] = 187742,
-		["abilityID"] = 46277,
+	[73467] = {
+		["itemID"] = 52293,
+		["abilityID"] = 21507,
 	},
 	[138885] = {
 		["itemID"] = 94584,
@@ -26679,13 +26668,17 @@ recipeLibrary = {
 		["itemID"] = 41243,
 		["abilityID"] = 19242,
 	},
+	[359669] = {
+		["itemID"] = 187742,
+		["abilityID"] = 46277,
+	},
 	[106960] = {
 		["itemID"] = 76646,
 		["abilityID"] = 26484,
 	},
-	[25323] = {
-		["itemID"] = 20833,
-		["abilityID"] = 13212,
+	[50644] = {
+		["itemID"] = 38277,
+		["abilityID"] = 17513,
 	},
 	[60761] = {
 		["itemID"] = 43502,
@@ -26695,17 +26688,19 @@ recipeLibrary = {
 		["itemID"] = 187742,
 		["abilityID"] = 46278,
 	},
-	[26915] = {
-		["itemID"] = 21792,
-		["abilityID"] = 13533,
+	[198993] = {
+		["abilityID"] = 35125,
+		["itemID"] = 132502,
+		["tradeskillID"] = 202,
 	},
-	[229182] = {
-		["itemID"] = 142103,
-		["abilityID"] = 36275,
+	[310901] = {
+		["itemID"] = 173219,
+		["abilityID"] = 42814,
 	},
-	[76465] = {
-		["itemID"] = 75125,
-		["abilityID"] = 21817,
+	[2335] = {
+		["abilityID"] = 1383,
+		["itemID"] = 2459,
+		["tradeskillID"] = 171,
 	},
 	[310522] = {
 		["abilityID"] = 42754,
@@ -26728,13 +26723,14 @@ recipeLibrary = {
 		["itemID"] = 187742,
 		["abilityID"] = 46276,
 	},
-	[195911] = {
-		["itemID"] = 130233,
-		["abilityID"] = 34991,
+	[374442] = {
+		["itemID"] = 192917,
+		["abilityID"] = 46939,
 	},
-	[12087] = {
-		["itemID"] = 10038,
-		["abilityID"] = 6618,
+	[359673] = {
+		["abilityID"] = 46273,
+		["itemID"] = 187742,
+		["tradeskillID"] = 171,
 	},
 	[31443] = {
 		["itemID"] = 24256,
@@ -26745,14 +26741,13 @@ recipeLibrary = {
 		["itemID"] = 172935,
 		["tradeskillID"] = 202,
 	},
-	[84411] = {
-		["abilityID"] = 22269,
-		["itemID"] = 60223,
-		["tradeskillID"] = 202,
+	[305807] = {
+		["itemID"] = 170443,
+		["abilityID"] = 41074,
 	},
-	[310899] = {
-		["itemID"] = 173217,
-		["abilityID"] = 42816,
+	[278133] = {
+		["itemID"] = 162665,
+		["abilityID"] = 39833,
 	},
 	[32467] = {
 		["itemID"] = 25661,
@@ -26763,9 +26758,9 @@ recipeLibrary = {
 		["itemID"] = 187742,
 		["tradeskillID"] = 202,
 	},
-	[101599] = {
-		["itemID"] = 71720,
-		["abilityID"] = 24487,
+	[371366] = {
+		["itemID"] = 191223,
+		["abilityID"] = 46844,
 	},
 	[354768] = {
 		["itemID"] = 186726,
@@ -26780,9 +26775,9 @@ recipeLibrary = {
 		["itemID"] = 172937,
 		["tradeskillID"] = 202,
 	},
-	[310898] = {
-		["itemID"] = 173215,
-		["abilityID"] = 42817,
+	[278132] = {
+		["itemID"] = 162665,
+		["abilityID"] = 39832,
 	},
 	[35750] = {
 		["itemID"] = 22573,
@@ -26792,22 +26787,22 @@ recipeLibrary = {
 		["itemID"] = 28439,
 		["abilityID"] = 15646,
 	},
-	[170710] = {
-		["itemID"] = 115993,
-		["abilityID"] = 33285,
-	},
-	[198973] = {
-		["abilityID"] = 35105,
-		["itemID"] = 132510,
+	[84409] = {
+		["abilityID"] = 22271,
+		["itemID"] = 60853,
 		["tradeskillID"] = 202,
 	},
-	[2549] = {
-		["itemID"] = 1017,
-		["abilityID"] = 1548,
+	[374472] = {
+		["itemID"] = 192992,
+		["abilityID"] = 46963,
 	},
-	[229180] = {
-		["itemID"] = 142101,
-		["abilityID"] = 36273,
+	[53949] = {
+		["itemID"] = 40001,
+		["abilityID"] = 18439,
+	},
+	[278131] = {
+		["itemID"] = 162665,
+		["abilityID"] = 39831,
 	},
 	[138889] = {
 		["itemID"] = 94588,
@@ -26817,80 +26812,81 @@ recipeLibrary = {
 		["itemID"] = 15871,
 		["abilityID"] = 11185,
 	},
-	[198974] = {
-		["abilityID"] = 35106,
-		["itemID"] = 132511,
+	[310525] = {
+		["abilityID"] = 42756,
+		["itemID"] = 172936,
 		["tradeskillID"] = 202,
 	},
-	[9974] = {
-		["itemID"] = 7939,
-		["abilityID"] = 5335,
+	[143169] = {
+		["itemID"] = 98844,
+		["abilityID"] = 31514,
 	},
-	[198969] = {
-		["abilityID"] = 35101,
-		["itemID"] = 132505,
-		["tradeskillID"] = 202,
+	[56031] = {
+		["itemID"] = 41512,
+		["abilityID"] = 19485,
 	},
-	[19435] = {
-		["itemID"] = 15802,
-		["abilityID"] = 10957,
+	[343662] = {
+		["itemID"] = 183942,
+		["abilityID"] = 45767,
 	},
-	[73472] = {
-		["itemID"] = 52298,
-		["abilityID"] = 21503,
+	[383587] = {
+		["itemID"] = 197352,
+		["abilityID"] = 47591,
 	},
-	[15296] = {
-		["itemID"] = 11604,
-		["abilityID"] = 8216,
+	[226137] = {
+		["itemID"] = 132544,
+		["abilityID"] = 36140,
 	},
 	[138890] = {
 		["itemID"] = 94589,
 		["abilityID"] = 31233,
 	},
-	[176089] = {
-		["itemID"] = 118721,
-		["abilityID"] = 33669,
+	[80245] = {
+		["abilityID"] = 22013,
+		["itemID"] = 52190,
+		["tradeskillID"] = 171,
 	},
-	[9206] = {
-		["itemID"] = 7387,
-		["abilityID"] = 5055,
+	[229179] = {
+		["itemID"] = 142103,
+		["abilityID"] = 36272,
 	},
-	[27588] = {
-		["itemID"] = 22195,
-		["abilityID"] = 13804,
+	[390850] = {
+		["itemID"] = 200571,
+		["abilityID"] = 47815,
 	},
 	[60759] = {
 		["itemID"] = 43484,
 		["abilityID"] = 20387,
 	},
-	[53948] = {
-		["itemID"] = 40000,
-		["abilityID"] = 18438,
+	[192842] = {
+		["itemID"] = 129021,
+		["abilityID"] = 34687,
 	},
 	[382345] = {
 		["abilityID"] = 47489,
 		["itemID"] = 198201,
 		["tradeskillID"] = 202,
 	},
-	[38868] = {
-		["itemID"] = 31673,
-		["abilityID"] = 15736,
+	[383575] = {
+		["itemID"] = 196988,
+		["abilityID"] = 47563,
 	},
 	[138891] = {
 		["itemID"] = 94590,
 		["abilityID"] = 31227,
 	},
-	[125602] = {
-		["itemID"] = 87246,
-		["abilityID"] = 27061,
+	[342887] = {
+		["abilityID"] = 45719,
+		["itemID"] = 183823,
+		["tradeskillID"] = 171,
 	},
-	[2670] = {
-		["itemID"] = 2866,
-		["abilityID"] = 1640,
+	[78460] = {
+		["itemID"] = 56536,
+		["abilityID"] = 22398,
 	},
-	[343659] = {
-		["itemID"] = 183942,
-		["abilityID"] = 45770,
+	[229178] = {
+		["itemID"] = 142102,
+		["abilityID"] = 36271,
 	},
 	[310533] = {
 		["abilityID"] = 42762,
@@ -26914,10 +26910,9 @@ recipeLibrary = {
 		["itemID"] = 172921,
 		["tradeskillID"] = 202,
 	},
-	[53847] = {
-		["abilityID"] = 18330,
-		["itemID"] = 40072,
-		["tradeskillID"] = 171,
+	[73476] = {
+		["itemID"] = 52302,
+		["abilityID"] = 21509,
 	},
 	[35751] = {
 		["itemID"] = 22574,
@@ -26932,34 +26927,33 @@ recipeLibrary = {
 		["itemID"] = 172924,
 		["tradeskillID"] = 202,
 	},
-	[76448] = {
-		["itemID"] = 55063,
-		["abilityID"] = 21801,
+	[3775] = {
+		["itemID"] = 4258,
+		["abilityID"] = 2184,
 	},
-	[272067] = {
-		["abilityID"] = 39606,
-		["itemID"] = 160491,
-		["tradeskillID"] = 202,
+	[374448] = {
+		["itemID"] = 192936,
+		["abilityID"] = 46945,
 	},
-	[374454] = {
-		["itemID"] = 192950,
-		["abilityID"] = 46949,
+	[55206] = {
+		["itemID"] = 41245,
+		["abilityID"] = 19244,
 	},
 	[138893] = {
 		["itemID"] = 94592,
 		["abilityID"] = 31228,
 	},
-	[22868] = {
-		["itemID"] = 18408,
-		["abilityID"] = 12342,
+	[125600] = {
+		["itemID"] = 87242,
+		["abilityID"] = 27063,
 	},
 	[58490] = {
 		["itemID"] = 43465,
 		["abilityID"] = 20011,
 	},
-	[18411] = {
-		["itemID"] = 13870,
-		["abilityID"] = 10406,
+	[137825] = {
+		["itemID"] = 93475,
+		["abilityID"] = 31275,
 	},
 	[28589] = {
 		["abilityID"] = 14002,
@@ -26970,39 +26964,39 @@ recipeLibrary = {
 		["itemID"] = 4320,
 		["abilityID"] = 2391,
 	},
-	[198972] = {
-		["abilityID"] = 35104,
-		["itemID"] = 132509,
-		["tradeskillID"] = 202,
+	[53879] = {
+		["itemID"] = 39954,
+		["abilityID"] = 18400,
 	},
 	[404740] = {
 		["itemID"] = 201926,
 		["abilityID"] = 48444,
 	},
-	[374456] = {
-		["itemID"] = 192956,
-		["abilityID"] = 46951,
-	},
-	[195912] = {
-		["itemID"] = 130234,
-		["abilityID"] = 34992,
-	},
-	[128262] = {
-		["abilityID"] = 27264,
-		["itemID"] = 87764,
+	[84410] = {
+		["abilityID"] = 22270,
+		["itemID"] = 59596,
 		["tradeskillID"] = 202,
+	},
+	[3967] = {
+		["abilityID"] = 2462,
+		["itemID"] = 4394,
+		["tradeskillID"] = 202,
+	},
+	[125601] = {
+		["itemID"] = 87244,
+		["abilityID"] = 27064,
 	},
 	[145038] = {
 		["itemID"] = 101630,
 		["abilityID"] = 31658,
 	},
-	[9961] = {
-		["itemID"] = 7931,
-		["abilityID"] = 5329,
+	[107907] = {
+		["itemID"] = 77101,
+		["abilityID"] = 25209,
 	},
-	[53845] = {
-		["itemID"] = 39909,
-		["abilityID"] = 18368,
+	[63198] = {
+		["itemID"] = 45555,
+		["abilityID"] = 20826,
 	},
 	[18419] = {
 		["itemID"] = 14107,
@@ -27021,36 +27015,35 @@ recipeLibrary = {
 		["itemID"] = 132504,
 		["tradeskillID"] = 202,
 	},
-	[138892] = {
-		["itemID"] = 94591,
-		["abilityID"] = 31234,
+	[28590] = {
+		["abilityID"] = 13999,
+		["itemID"] = 22861,
+		["tradeskillID"] = 171,
 	},
 	[32468] = {
 		["itemID"] = 25660,
 		["abilityID"] = 14861,
 	},
-	[3321] = {
-		["itemID"] = 3471,
-		["abilityID"] = 1857,
-	},
-	[279162] = {
-		["abilityID"] = 39859,
-		["itemID"] = 163222,
-		["tradeskillID"] = 171,
-	},
-	[343661] = {
-		["abilityID"] = 45768,
-		["itemID"] = 183942,
+	[84420] = {
+		["abilityID"] = 22262,
+		["itemID"] = 59598,
 		["tradeskillID"] = 202,
+	},
+	[56195] = {
+		["itemID"] = 42338,
+		["abilityID"] = 19517,
+	},
+	[310897] = {
+		["itemID"] = 173214,
+		["abilityID"] = 42818,
 	},
 	[50599] = {
 		["itemID"] = 4419,
 		["abilityID"] = 17494,
 	},
-	[127134] = {
-		["abilityID"] = 27340,
-		["itemID"] = 77530,
-		["tradeskillID"] = 202,
+	[122617] = {
+		["itemID"] = 82944,
+		["abilityID"] = 26448,
 	},
 	[298255] = {
 		["abilityID"] = 40632,
@@ -27062,9 +27055,9 @@ recipeLibrary = {
 		["itemID"] = 22853,
 		["tradeskillID"] = 171,
 	},
-	[70562] = {
-		["itemID"] = 49902,
-		["abilityID"] = 21348,
+	[239414] = {
+		["itemID"] = 146668,
+		["abilityID"] = 36560,
 	},
 	[9195] = {
 		["itemID"] = 7373,
@@ -27083,30 +27076,31 @@ recipeLibrary = {
 		["itemID"] = 2578,
 		["abilityID"] = 2368,
 	},
-	[10533] = {
-		["itemID"] = 8205,
-		["abilityID"] = 5679,
+	[17572] = {
+		["abilityID"] = 9953,
+		["itemID"] = 13462,
+		["tradeskillID"] = 171,
 	},
 	[19669] = {
 		["itemID"] = 15872,
 		["abilityID"] = 11186,
 	},
-	[403133] = {
-		["itemID"] = 204098,
-		["abilityID"] = 48297,
+	[18421] = {
+		["itemID"] = 14132,
+		["abilityID"] = 10418,
 	},
-	[310896] = {
-		["itemID"] = 173216,
-		["abilityID"] = 42810,
+	[229181] = {
+		["itemID"] = 142102,
+		["abilityID"] = 36274,
 	},
 	[198970] = {
 		["abilityID"] = 35102,
 		["itemID"] = 132506,
 		["tradeskillID"] = 202,
 	},
-	[53844] = {
-		["itemID"] = 39908,
-		["abilityID"] = 18367,
+	[25280] = {
+		["itemID"] = 20818,
+		["abilityID"] = 13199,
 	},
 	[19060] = {
 		["itemID"] = 15046,
@@ -27121,26 +27115,25 @@ recipeLibrary = {
 		["itemID"] = 6466,
 		["abilityID"] = 4420,
 	},
-	[107760] = {
-		["itemID"] = 76892,
-		["abilityID"] = 26515,
+	[124576] = {
+		["itemID"] = 85834,
+		["abilityID"] = 26891,
 	},
-	[84416] = {
-		["abilityID"] = 22265,
-		["itemID"] = 60217,
-		["tradeskillID"] = 202,
+	[73474] = {
+		["itemID"] = 52300,
+		["abilityID"] = 21506,
 	},
-	[55941] = {
-		["itemID"] = 41554,
-		["abilityID"] = 19445,
+	[170701] = {
+		["itemID"] = 115526,
+		["abilityID"] = 33276,
 	},
 	[73470] = {
 		["itemID"] = 52296,
 		["abilityID"] = 21505,
 	},
-	[32455] = {
-		["itemID"] = 23793,
-		["abilityID"] = 14850,
+	[58147] = {
+		["itemID"] = 43250,
+		["abilityID"] = 19976,
 	},
 	[75597] = {
 		["itemID"] = 54797,
@@ -27151,34 +27144,35 @@ recipeLibrary = {
 		["itemID"] = 132507,
 		["tradeskillID"] = 202,
 	},
-	[70561] = {
-		["itemID"] = 49897,
-		["abilityID"] = 21362,
+	[239412] = {
+		["itemID"] = 146666,
+		["abilityID"] = 36559,
 	},
 	[26925] = {
 		["itemID"] = 21931,
 		["abilityID"] = 13537,
 	},
-	[73375] = {
-		["itemID"] = 52233,
-		["abilityID"] = 21476,
+	[12603] = {
+		["abilityID"] = 6869,
+		["itemID"] = 10514,
+		["tradeskillID"] = 202,
 	},
-	[390848] = {
-		["itemID"] = 200565,
-		["abilityID"] = 47813,
+	[34533] = {
+		["itemID"] = 28483,
+		["abilityID"] = 15222,
 	},
-	[382341] = {
-		["abilityID"] = 47493,
-		["itemID"] = 198244,
+	[360126] = {
+		["abilityID"] = 46296,
+		["itemID"] = 187836,
 		["tradeskillID"] = 202,
 	},
 	[137832] = {
 		["itemID"] = 93506,
 		["abilityID"] = 31421,
 	},
-	[124574] = {
-		["itemID"] = 85836,
-		["abilityID"] = 26895,
+	[302189] = {
+		["itemID"] = 169328,
+		["abilityID"] = 40934,
 	},
 	[50600] = {
 		["itemID"] = 10308,
@@ -27193,9 +27187,9 @@ recipeLibrary = {
 		["itemID"] = 10726,
 		["tradeskillID"] = 202,
 	},
-	[99452] = {
-		["itemID"] = 69946,
-		["abilityID"] = 24291,
+	[99447] = {
+		["itemID"] = 69943,
+		["abilityID"] = 24297,
 	},
 	[63203] = {
 		["itemID"] = 45557,
@@ -27205,34 +27199,34 @@ recipeLibrary = {
 		["itemID"] = 3472,
 		["abilityID"] = 1858,
 	},
-	[390851] = {
-		["itemID"] = 200574,
-		["abilityID"] = 47816,
+	[330153] = {
+		["itemID"] = 180060,
+		["abilityID"] = 45039,
 	},
-	[78490] = {
-		["itemID"] = 56564,
-		["abilityID"] = 22425,
+	[12069] = {
+		["itemID"] = 10042,
+		["abilityID"] = 6600,
+	},
+	[14807] = {
+		["itemID"] = 11288,
+		["abilityID"] = 8000,
 	},
 	[3451] = {
 		["abilityID"] = 1934,
 		["itemID"] = 3826,
 		["tradeskillID"] = 171,
 	},
-	[55208] = {
-		["itemID"] = 37663,
-		["abilityID"] = 19245,
-	},
-	[18410] = {
-		["itemID"] = 14143,
-		["abilityID"] = 10405,
+	[310879] = {
+		["itemID"] = 191327,
+		["abilityID"] = 42864,
 	},
 	[3515] = {
 		["itemID"] = 3847,
 		["abilityID"] = 2003,
 	},
-	[76442] = {
-		["itemID"] = 55057,
-		["abilityID"] = 21795,
+	[73379] = {
+		["itemID"] = 52245,
+		["abilityID"] = 21480,
 	},
 	[359702] = {
 		["itemID"] = 187784,
@@ -27263,17 +27257,17 @@ recipeLibrary = {
 		["itemID"] = 4254,
 		["abilityID"] = 2180,
 	},
-	[112429] = {
-		["itemID"] = 80587,
-		["abilityID"] = 26832,
+	[2666] = {
+		["itemID"] = 2857,
+		["abilityID"] = 1637,
 	},
-	[330193] = {
-		["itemID"] = 180058,
-		["abilityID"] = 45077,
+	[73497] = {
+		["itemID"] = 52309,
+		["abilityID"] = 23887,
 	},
-	[196469] = {
-		["itemID"] = 130896,
-		["abilityID"] = 35066,
+	[10007] = {
+		["itemID"] = 7961,
+		["abilityID"] = 5348,
 	},
 	[269598] = {
 		["itemID"] = 159917,
@@ -27318,29 +27312,30 @@ recipeLibrary = {
 		["itemID"] = 27499,
 		["abilityID"] = 17496,
 	},
-	[176418] = {
-		["itemID"] = 117003,
-		["abilityID"] = 33695,
+	[61009] = {
+		["itemID"] = 43587,
+		["abilityID"] = 20409,
 	},
-	[15861] = {
-		["itemID"] = 12212,
-		["abilityID"] = 8620,
+	[310876] = {
+		["itemID"] = 173200,
+		["abilityID"] = 42798,
 	},
 	[269601] = {
 		["itemID"] = 159912,
 		["abilityID"] = 39525,
 	},
-	[142964] = {
-		["itemID"] = 98612,
-		["abilityID"] = 31487,
+	[201502] = {
+		["itemID"] = 133567,
+		["abilityID"] = 35170,
 	},
-	[142962] = {
-		["itemID"] = 98610,
-		["abilityID"] = 31493,
+	[374470] = {
+		["itemID"] = 192989,
+		["abilityID"] = 46962,
 	},
-	[19107] = {
-		["itemID"] = 15052,
-		["abilityID"] = 10808,
+	[19788] = {
+		["abilityID"] = 11228,
+		["itemID"] = 15992,
+		["tradeskillID"] = 202,
 	},
 	[269602] = {
 		["itemID"] = 159913,
@@ -27350,27 +27345,26 @@ recipeLibrary = {
 		["itemID"] = 130245,
 		["abilityID"] = 34975,
 	},
-	[53842] = {
-		["abilityID"] = 18329,
-		["itemID"] = 40070,
-		["tradeskillID"] = 171,
-	},
-	[112462] = {
-		["itemID"] = 87881,
-		["abilityID"] = 27231,
+	[76446] = {
+		["itemID"] = 55061,
+		["abilityID"] = 21799,
 	},
 	[269603] = {
 		["itemID"] = 159913,
 		["abilityID"] = 39527,
+	},
+	[112462] = {
+		["itemID"] = 87881,
+		["abilityID"] = 27231,
 	},
 	[80720] = {
 		["abilityID"] = 21993,
 		["itemID"] = 58086,
 		["tradeskillID"] = 171,
 	},
-	[70559] = {
-		["itemID"] = 49896,
-		["abilityID"] = 21360,
+	[282204] = {
+		["itemID"] = 164676,
+		["abilityID"] = 40100,
 	},
 	[302190] = {
 		["itemID"] = 169302,
@@ -27380,9 +27374,9 @@ recipeLibrary = {
 		["itemID"] = 159913,
 		["abilityID"] = 39528,
 	},
-	[16726] = {
-		["itemID"] = 12612,
-		["abilityID"] = 9323,
+	[76451] = {
+		["itemID"] = 55066,
+		["abilityID"] = 21804,
 	},
 	[73370] = {
 		["itemID"] = 52240,
@@ -27404,10 +27398,9 @@ recipeLibrary = {
 		["itemID"] = 34330,
 		["abilityID"] = 16152,
 	},
-	[19790] = {
-		["abilityID"] = 11229,
-		["itemID"] = 15993,
-		["tradeskillID"] = 202,
+	[302188] = {
+		["itemID"] = 169321,
+		["abilityID"] = 40933,
 	},
 	[269606] = {
 		["itemID"] = 159914,
@@ -27417,9 +27410,10 @@ recipeLibrary = {
 		["itemID"] = 130240,
 		["abilityID"] = 35019,
 	},
-	[403157] = {
-		["itemID"] = 204115,
-		["abilityID"] = 48318,
+	[127127] = {
+		["abilityID"] = 27337,
+		["itemID"] = 77589,
+		["tradeskillID"] = 202,
 	},
 	[3770] = {
 		["itemID"] = 4253,
@@ -27438,9 +27432,9 @@ recipeLibrary = {
 		["itemID"] = 151791,
 		["abilityID"] = 16156,
 	},
-	[55374] = {
-		["itemID"] = 41388,
-		["abilityID"] = 19301,
+	[264767] = {
+		["itemID"] = 158202,
+		["abilityID"] = 39224,
 	},
 	[269608] = {
 		["itemID"] = 159915,
@@ -27450,10 +27444,9 @@ recipeLibrary = {
 		["itemID"] = 33458,
 		["abilityID"] = 17497,
 	},
-	[382371] = {
-		["abilityID"] = 47451,
-		["itemID"] = 192443,
-		["tradeskillID"] = 202,
+	[54948] = {
+		["itemID"] = 40954,
+		["abilityID"] = 19170,
 	},
 	[36257] = {
 		["itemID"] = 28485,
@@ -27463,9 +27456,9 @@ recipeLibrary = {
 		["itemID"] = 159915,
 		["abilityID"] = 39533,
 	},
-	[10556] = {
-		["itemID"] = 8185,
-		["abilityID"] = 5690,
+	[55376] = {
+		["itemID"] = 41392,
+		["abilityID"] = 19303,
 	},
 	[393796] = {
 		["abilityID"] = 47945,
@@ -27488,18 +27481,18 @@ recipeLibrary = {
 		["itemID"] = 75119,
 		["abilityID"] = 21813,
 	},
-	[382339] = {
-		["abilityID"] = 47495,
-		["itemID"] = 198263,
-		["tradeskillID"] = 202,
+	[112464] = {
+		["itemID"] = 87883,
+		["abilityID"] = 27234,
 	},
 	[269611] = {
 		["itemID"] = 159916,
 		["abilityID"] = 39535,
 	},
-	[34537] = {
-		["itemID"] = 28426,
-		["abilityID"] = 15236,
+	[11478] = {
+		["abilityID"] = 6019,
+		["itemID"] = 9233,
+		["tradeskillID"] = 171,
 	},
 	[20650] = {
 		["itemID"] = 4304,
@@ -27513,42 +27506,43 @@ recipeLibrary = {
 		["itemID"] = 159916,
 		["abilityID"] = 39536,
 	},
-	[287270] = {
-		["itemID"] = 162460,
-		["abilityID"] = 40212,
+	[330243] = {
+		["itemID"] = 180057,
+		["abilityID"] = 45126,
 	},
 	[29654] = {
 		["itemID"] = 23528,
 		["abilityID"] = 14219,
 	},
-	[143155] = {
-		["itemID"] = 98902,
-		["abilityID"] = 31596,
+	[128922] = {
+		["itemID"] = 88806,
+		["abilityID"] = 27357,
 	},
 	[269613] = {
 		["itemID"] = 159916,
 		["abilityID"] = 39537,
 	},
-	[53932] = {
-		["itemID"] = 39991,
-		["abilityID"] = 18432,
+	[3397] = {
+		["itemID"] = 3726,
+		["abilityID"] = 1901,
 	},
 	[17579] = {
 		["abilityID"] = 9960,
 		["itemID"] = 13460,
 		["tradeskillID"] = 171,
 	},
-	[55993] = {
-		["itemID"] = 41248,
-		["abilityID"] = 19447,
+	[269543] = {
+		["itemID"] = 159893,
+		["abilityID"] = 39490,
 	},
-	[287274] = {
-		["itemID"] = 162460,
-		["abilityID"] = 40217,
+	[11479] = {
+		["abilityID"] = 6020,
+		["itemID"] = 3577,
+		["tradeskillID"] = 171,
 	},
-	[22761] = {
-		["itemID"] = 18254,
-		["abilityID"] = 12304,
+	[314963] = {
+		["itemID"] = 174348,
+		["abilityID"] = 43086,
 	},
 	[126800] = {
 		["itemID"] = 87392,
@@ -27558,42 +27552,43 @@ recipeLibrary = {
 		["itemID"] = 42435,
 		["abilityID"] = 19533,
 	},
-	[9813] = {
-		["itemID"] = 7914,
-		["abilityID"] = 5307,
+	[66568] = {
+		["itemID"] = 40147,
+		["abilityID"] = 21154,
 	},
 	[80723] = {
 		["abilityID"] = 21995,
 		["itemID"] = 58088,
 		["tradeskillID"] = 171,
 	},
-	[143154] = {
-		["itemID"] = 98901,
-		["abilityID"] = 31586,
+	[60367] = {
+		["abilityID"] = 20281,
+		["itemID"] = 44332,
+		["tradeskillID"] = 171,
 	},
-	[70557] = {
-		["itemID"] = 49895,
-		["abilityID"] = 21358,
+	[282196] = {
+		["itemID"] = 164671,
+		["abilityID"] = 40105,
 	},
-	[12053] = {
-		["itemID"] = 10003,
-		["abilityID"] = 6584,
+	[377960] = {
+		["itemID"] = 194748,
+		["abilityID"] = 47338,
 	},
 	[50603] = {
 		["itemID"] = 37091,
 		["abilityID"] = 17498,
 	},
-	[18423] = {
-		["itemID"] = 13864,
-		["abilityID"] = 10420,
+	[36128] = {
+		["itemID"] = 30073,
+		["abilityID"] = 15620,
 	},
-	[226131] = {
-		["itemID"] = 132540,
-		["abilityID"] = 36146,
+	[168853] = {
+		["itemID"] = 114829,
+		["abilityID"] = 33212,
 	},
-	[282195] = {
-		["itemID"] = 164671,
-		["abilityID"] = 40104,
+	[314961] = {
+		["itemID"] = 174350,
+		["abilityID"] = 43087,
 	},
 	[9068] = {
 		["itemID"] = 7282,
@@ -27607,10 +27602,9 @@ recipeLibrary = {
 		["itemID"] = 62236,
 		["abilityID"] = 23407,
 	},
-	[291095] = {
-		["abilityID"] = 40346,
-		["itemID"] = 166985,
-		["tradeskillID"] = 202,
+	[138887] = {
+		["itemID"] = 94586,
+		["abilityID"] = 31231,
 	},
 	[176411] = {
 		["itemID"] = 116995,
@@ -27620,9 +27614,9 @@ recipeLibrary = {
 		["itemID"] = 41163,
 		["abilityID"] = 19246,
 	},
-	[314960] = {
-		["itemID"] = 174351,
-		["abilityID"] = 43090,
+	[282194] = {
+		["itemID"] = 164671,
+		["abilityID"] = 40103,
 	},
 	[9964] = {
 		["itemID"] = 7969,
@@ -27637,29 +27631,29 @@ recipeLibrary = {
 		["itemID"] = 77539,
 		["tradeskillID"] = 202,
 	},
-	[225550] = {
-		["itemID"] = 139289,
-		["abilityID"] = 36121,
+	[19062] = {
+		["itemID"] = 15067,
+		["abilityID"] = 10769,
 	},
-	[8880] = {
-		["itemID"] = 7166,
-		["abilityID"] = 4910,
+	[337621] = {
+		["itemID"] = 181792,
+		["abilityID"] = 45469,
 	},
 	[306482] = {
 		["itemID"] = 171203,
 		["abilityID"] = 43079,
 	},
-	[282193] = {
-		["itemID"] = 164672,
-		["abilityID"] = 40108,
+	[314959] = {
+		["itemID"] = 174352,
+		["abilityID"] = 43089,
 	},
-	[196397] = {
-		["itemID"] = 130887,
-		["abilityID"] = 35057,
+	[18409] = {
+		["itemID"] = 13860,
+		["abilityID"] = 10404,
 	},
-	[56552] = {
-		["itemID"] = 42730,
-		["abilityID"] = 19583,
+	[195857] = {
+		["itemID"] = 130224,
+		["abilityID"] = 34955,
 	},
 	[306483] = {
 		["itemID"] = 171203,
@@ -27669,22 +27663,22 @@ recipeLibrary = {
 		["itemID"] = 129100,
 		["abilityID"] = 35802,
 	},
-	[70556] = {
-		["itemID"] = 49899,
-		["abilityID"] = 21357,
+	[282192] = {
+		["itemID"] = 164672,
+		["abilityID"] = 40107,
 	},
-	[78476] = {
-		["itemID"] = 56549,
-		["abilityID"] = 22411,
+	[17578] = {
+		["abilityID"] = 9959,
+		["itemID"] = 13459,
+		["tradeskillID"] = 171,
 	},
-	[73357] = {
-		["itemID"] = 52220,
-		["abilityID"] = 21459,
+	[73366] = {
+		["itemID"] = 52239,
+		["abilityID"] = 21467,
 	},
-	[382333] = {
-		["abilityID"] = 47501,
-		["itemID"] = 198281,
-		["tradeskillID"] = 202,
+	[288033] = {
+		["itemID"] = 166344,
+		["abilityID"] = 40233,
 	},
 	[374488] = {
 		["itemID"] = 193004,
@@ -27699,9 +27693,10 @@ recipeLibrary = {
 		["itemID"] = 58487,
 		["tradeskillID"] = 171,
 	},
-	[73361] = {
-		["itemID"] = 52229,
-		["abilityID"] = 21463,
+	[38070] = {
+		["abilityID"] = 15714,
+		["itemID"] = 31080,
+		["tradeskillID"] = 171,
 	},
 	[60749] = {
 		["itemID"] = 43454,
@@ -27716,9 +27711,10 @@ recipeLibrary = {
 		["itemID"] = 37092,
 		["abilityID"] = 17499,
 	},
-	[66502] = {
-		["itemID"] = 40124,
-		["abilityID"] = 21134,
+	[7934] = {
+		["abilityID"] = 39671,
+		["itemID"] = 6452,
+		["tradeskillID"] = 171,
 	},
 	[12908] = {
 		["abilityID"] = 7073,
@@ -27730,60 +27726,59 @@ recipeLibrary = {
 		["itemID"] = 168489,
 		["tradeskillID"] = 171,
 	},
-	[60649] = {
-		["itemID"] = 43129,
-		["abilityID"] = 20339,
+	[374495] = {
+		["itemID"] = 192998,
+		["abilityID"] = 46976,
 	},
-	[73355] = {
-		["itemID"] = 52236,
-		["abilityID"] = 21457,
-	},
-	[36077] = {
-		["itemID"] = 29973,
-		["abilityID"] = 15617,
-	},
-	[73627] = {
-		["itemID"] = 52487,
-		["abilityID"] = 21524,
-	},
-	[84428] = {
-		["abilityID"] = 22256,
-		["itemID"] = 59594,
-		["tradeskillID"] = 202,
-	},
-	[60366] = {
-		["abilityID"] = 20280,
-		["itemID"] = 44331,
+	[80480] = {
+		["abilityID"] = 21990,
+		["itemID"] = 58089,
 		["tradeskillID"] = 171,
+	},
+	[73367] = {
+		["itemID"] = 52214,
+		["abilityID"] = 21468,
+	},
+	[196395] = {
+		["itemID"] = 130880,
+		["abilityID"] = 35056,
+	},
+	[107666] = {
+		["itemID"] = 76535,
+		["abilityID"] = 26641,
+	},
+	[143150] = {
+		["itemID"] = 98897,
+		["abilityID"] = 31595,
+	},
+	[145061] = {
+		["itemID"] = 101661,
+		["abilityID"] = 31659,
+	},
+	[360007] = {
+		["itemID"] = 187823,
+		["abilityID"] = 46291,
 	},
 	[80726] = {
 		["abilityID"] = 22007,
 		["itemID"] = 58488,
 		["tradeskillID"] = 171,
 	},
-	[29672] = {
-		["itemID"] = 23539,
-		["abilityID"] = 14230,
+	[170705] = {
+		["itemID"] = 115988,
+		["abilityID"] = 33280,
 	},
-	[145061] = {
-		["itemID"] = 101661,
-		["abilityID"] = 31659,
+	[314962] = {
+		["itemID"] = 174349,
+		["abilityID"] = 43088,
 	},
-	[32502] = {
-		["itemID"] = 25692,
-		["abilityID"] = 14886,
+	[31071] = {
+		["itemID"] = 24116,
+		["abilityID"] = 14563,
 	},
-	[374522] = {
-		["itemID"] = 193032,
-		["abilityID"] = 46992,
-	},
-	[374530] = {
-		["itemID"] = 193035,
-		["abilityID"] = 47622,
-	},
-	[171268] = {
-		["itemID"] = 116174,
-		["abilityID"] = 33389,
+	[3494] = {
+		["itemID"] = 3851,
+		["abilityID"] = 1987,
 	},
 	[374486] = {
 		["itemID"] = 193003,
@@ -27793,21 +27788,22 @@ recipeLibrary = {
 		["itemID"] = 41250,
 		["abilityID"] = 19450,
 	},
-	[182158] = {
-		["itemID"] = 118061,
-		["abilityID"] = 32910,
+	[382318] = {
+		["abilityID"] = 47516,
+		["itemID"] = 198327,
+		["tradeskillID"] = 202,
 	},
 	[145062] = {
 		["itemID"] = 101662,
 		["abilityID"] = 31660,
 	},
-	[176397] = {
-		["itemID"] = 116987,
-		["abilityID"] = 33680,
+	[101744] = {
+		["itemID"] = 71823,
+		["abilityID"] = 24499,
 	},
-	[182989] = {
-		["itemID"] = 123910,
-		["abilityID"] = 34050,
+	[53924] = {
+		["itemID"] = 39982,
+		["abilityID"] = 18424,
 	},
 	[15596] = {
 		["itemID"] = 11811,
@@ -27818,9 +27814,9 @@ recipeLibrary = {
 		["itemID"] = 198224,
 		["tradeskillID"] = 202,
 	},
-	[170704] = {
-		["itemID"] = 115987,
-		["abilityID"] = 33279,
+	[36686] = {
+		["itemID"] = 24272,
+		["abilityID"] = 15694,
 	},
 	[34538] = {
 		["itemID"] = 28428,
@@ -27834,9 +27830,9 @@ recipeLibrary = {
 		["itemID"] = 25670,
 		["abilityID"] = 14864,
 	},
-	[225541] = {
-		["itemID"] = 137239,
-		["abilityID"] = 36112,
+	[73364] = {
+		["itemID"] = 52222,
+		["abilityID"] = 21465,
 	},
 	[107656] = {
 		["itemID"] = 76530,
@@ -27855,9 +27851,9 @@ recipeLibrary = {
 		["itemID"] = 59364,
 		["tradeskillID"] = 202,
 	},
-	[330205] = {
-		["itemID"] = 180060,
-		["abilityID"] = 45089,
+	[55371] = {
+		["itemID"] = 41384,
+		["abilityID"] = 19297,
 	},
 	[384314] = {
 		["abilityID"] = 47621,
@@ -27868,47 +27864,48 @@ recipeLibrary = {
 		["itemID"] = 201023,
 		["abilityID"] = 47928,
 	},
-	[29558] = {
-		["itemID"] = 23498,
-		["abilityID"] = 14191,
+	[382329] = {
+		["abilityID"] = 47505,
+		["itemID"] = 198226,
+		["tradeskillID"] = 202,
 	},
-	[330207] = {
-		["itemID"] = 180057,
-		["abilityID"] = 45091,
+	[324088] = {
+		["itemID"] = 172347,
+		["abilityID"] = 44561,
 	},
-	[58345] = {
-		["itemID"] = 43398,
-		["abilityID"] = 20547,
+	[73354] = {
+		["itemID"] = 52221,
+		["abilityID"] = 21456,
 	},
-	[374532] = {
-		["itemID"] = 193037,
-		["abilityID"] = 46997,
+	[124053] = {
+		["itemID"] = 75037,
+		["abilityID"] = 26858,
 	},
 	[25126] = {
 		["itemID"] = 20746,
 		["abilityID"] = 13139,
 	},
-	[177043] = {
-		["itemID"] = 119293,
-		["abilityID"] = 33707,
+	[288176] = {
+		["itemID"] = 156654,
+		["abilityID"] = 40236,
 	},
 	[298746] = {
 		["abilityID"] = 40668,
 		["itemID"] = 168506,
 		["tradeskillID"] = 171,
 	},
-	[19066] = {
-		["itemID"] = 15071,
-		["abilityID"] = 10773,
+	[28918] = {
+		["itemID"] = 23105,
+		["abilityID"] = 14036,
 	},
-	[94162] = {
-		["abilityID"] = 23859,
-		["itemID"] = 67438,
-		["tradeskillID"] = 171,
+	[53958] = {
+		["itemID"] = 40014,
+		["abilityID"] = 18448,
 	},
-	[16992] = {
-		["itemID"] = 12797,
-		["abilityID"] = 9453,
+	[382326] = {
+		["abilityID"] = 47508,
+		["itemID"] = 198316,
+		["tradeskillID"] = 202,
 	},
 	[286019] = {
 		["itemID"] = 154166,
@@ -27918,25 +27915,27 @@ recipeLibrary = {
 		["itemID"] = 23573,
 		["abilityID"] = 14156,
 	},
-	[395807] = {
-		["itemID"] = 201936,
-		["abilityID"] = 47986,
+	[23080] = {
+		["abilityID"] = 12429,
+		["itemID"] = 18594,
+		["tradeskillID"] = 202,
 	},
-	[143146] = {
-		["itemID"] = 98893,
-		["abilityID"] = 31634,
+	[60365] = {
+		["abilityID"] = 20279,
+		["itemID"] = 44330,
+		["tradeskillID"] = 171,
 	},
 	[168850] = {
 		["itemID"] = 115363,
 		["abilityID"] = 33209,
 	},
-	[60996] = {
-		["itemID"] = 43590,
-		["abilityID"] = 20402,
+	[78483] = {
+		["itemID"] = 75084,
+		["abilityID"] = 22418,
 	},
-	[19833] = {
-		["abilityID"] = 11244,
-		["itemID"] = 16007,
+	[84432] = {
+		["abilityID"] = 22252,
+		["itemID"] = 59367,
 		["tradeskillID"] = 202,
 	},
 	[347457] = {
@@ -27947,41 +27946,43 @@ recipeLibrary = {
 		["itemID"] = 154166,
 		["abilityID"] = 40209,
 	},
-	[66498] = {
-		["itemID"] = 40120,
-		["abilityID"] = 21130,
+	[106962] = {
+		["itemID"] = 76648,
+		["abilityID"] = 26636,
 	},
-	[188318] = {
-		["abilityID"] = 34447,
-		["itemID"] = 127840,
+	[17573] = {
+		["abilityID"] = 9954,
+		["itemID"] = 13454,
 		["tradeskillID"] = 171,
 	},
-	[78477] = {
-		["itemID"] = 56550,
-		["abilityID"] = 22412,
-	},
-	[156568] = {
-		["abilityID"] = 32323,
-		["itemID"] = 109152,
+	[188303] = {
+		["abilityID"] = 34432,
+		["itemID"] = 127835,
 		["tradeskillID"] = 171,
+	},
+	[84430] = {
+		["abilityID"] = 22254,
+		["itemID"] = 68049,
+		["tradeskillID"] = 202,
 	},
 	[78475] = {
 		["itemID"] = 56548,
 		["abilityID"] = 22410,
 	},
-	[188319] = {
-		["abilityID"] = 34448,
-		["itemID"] = 127841,
-		["tradeskillID"] = 171,
+	[30303] = {
+		["abilityID"] = 14370,
+		["itemID"] = 23781,
+		["tradeskillID"] = 202,
 	},
 	[247696] = {
 		["abilityID"] = 36644,
 		["itemID"] = 151607,
 		["tradeskillID"] = 171,
 	},
-	[107641] = {
-		["itemID"] = 76569,
-		["abilityID"] = 26558,
+	[28583] = {
+		["abilityID"] = 13993,
+		["itemID"] = 22457,
+		["tradeskillID"] = 171,
 	},
 	[50606] = {
 		["itemID"] = 4424,
@@ -28004,34 +28005,34 @@ recipeLibrary = {
 		["itemID"] = 16040,
 		["tradeskillID"] = 202,
 	},
-	[78489] = {
-		["itemID"] = 56563,
-		["abilityID"] = 22424,
+	[381381] = {
+		["itemID"] = 197770,
+		["abilityID"] = 47376,
 	},
 	[177045] = {
 		["itemID"] = 119297,
 		["abilityID"] = 33708,
 	},
-	[70552] = {
-		["itemID"] = 49892,
-		["abilityID"] = 21365,
+	[282176] = {
+		["itemID"] = 164673,
+		["abilityID"] = 40110,
 	},
-	[6517] = {
-		["itemID"] = 5540,
-		["abilityID"] = 3972,
+	[40006] = {
+		["itemID"] = 32393,
+		["abilityID"] = 15818,
 	},
 	[171691] = {
 		["itemID"] = 116426,
 		["abilityID"] = 33453,
 	},
-	[382320] = {
-		["abilityID"] = 47514,
-		["itemID"] = 198333,
-		["tradeskillID"] = 202,
+	[17576] = {
+		["abilityID"] = 9957,
+		["itemID"] = 13458,
+		["tradeskillID"] = 171,
 	},
-	[139176] = {
-		["abilityID"] = 31427,
-		["itemID"] = 94113,
+	[235756] = {
+		["abilityID"] = 36433,
+		["itemID"] = 144334,
 		["tradeskillID"] = 202,
 	},
 	[137938] = {
@@ -28051,9 +28052,9 @@ recipeLibrary = {
 		["itemID"] = 76540,
 		["abilityID"] = 26480,
 	},
-	[26918] = {
-		["itemID"] = 21793,
-		["abilityID"] = 13535,
+	[73362] = {
+		["itemID"] = 52249,
+		["abilityID"] = 21464,
 	},
 	[29656] = {
 		["itemID"] = 23529,
@@ -28064,26 +28065,27 @@ recipeLibrary = {
 		["itemID"] = 44322,
 		["tradeskillID"] = 171,
 	},
-	[383530] = {
-		["itemID"] = 194862,
-		["abilityID"] = 47576,
+	[374542] = {
+		["itemID"] = 193041,
+		["abilityID"] = 47001,
 	},
-	[253188] = {
-		["itemID"] = 162464,
-		["abilityID"] = 38740,
-	},
-	[33289] = {
-		["itemID"] = 27660,
-		["abilityID"] = 15009,
-	},
-	[73623] = {
-		["itemID"] = 52489,
-		["abilityID"] = 21528,
-	},
-	[17571] = {
-		["abilityID"] = 9952,
-		["itemID"] = 13452,
+	[29688] = {
+		["abilityID"] = 14157,
+		["itemID"] = 23571,
 		["tradeskillID"] = 171,
+	},
+	[382321] = {
+		["abilityID"] = 47513,
+		["itemID"] = 198335,
+		["tradeskillID"] = 202,
+	},
+	[196387] = {
+		["itemID"] = 130878,
+		["abilityID"] = 35054,
+	},
+	[374550] = {
+		["itemID"] = 192892,
+		["abilityID"] = 47007,
 	},
 	[31448] = {
 		["itemID"] = 24258,
@@ -28114,9 +28116,10 @@ recipeLibrary = {
 		["itemID"] = 198084,
 		["abilityID"] = 47341,
 	},
-	[3328] = {
-		["itemID"] = 3480,
-		["abilityID"] = 1862,
+	[247695] = {
+		["abilityID"] = 36643,
+		["itemID"] = 151607,
+		["tradeskillID"] = 171,
 	},
 	[50607] = {
 		["itemID"] = 10306,
@@ -28135,18 +28138,17 @@ recipeLibrary = {
 		["itemID"] = 25655,
 		["abilityID"] = 14856,
 	},
-	[45557] = {
-		["itemID"] = 34756,
-		["abilityID"] = 19730,
+	[182982] = {
+		["itemID"] = 123917,
+		["abilityID"] = 34057,
 	},
 	[9197] = {
 		["itemID"] = 7375,
 		["abilityID"] = 5051,
 	},
-	[60403] = {
-		["abilityID"] = 20272,
-		["itemID"] = 44323,
-		["tradeskillID"] = 171,
+	[43707] = {
+		["itemID"] = 33825,
+		["abilityID"] = 16003,
 	},
 	[330171] = {
 		["itemID"] = 180058,
@@ -28160,9 +28162,9 @@ recipeLibrary = {
 		["itemID"] = 116454,
 		["abilityID"] = 33457,
 	},
-	[32469] = {
-		["itemID"] = 25659,
-		["abilityID"] = 14862,
+	[101740] = {
+		["itemID"] = 71818,
+		["abilityID"] = 24495,
 	},
 	[9811] = {
 		["itemID"] = 7913,
@@ -28184,9 +28186,9 @@ recipeLibrary = {
 		["itemID"] = 43334,
 		["abilityID"] = 20554,
 	},
-	[73622] = {
-		["itemID"] = 52490,
-		["abilityID"] = 21529,
+	[196385] = {
+		["itemID"] = 130875,
+		["abilityID"] = 35053,
 	},
 	[171696] = {
 		["itemID"] = 116644,
@@ -28197,30 +28199,32 @@ recipeLibrary = {
 		["itemID"] = 198313,
 		["tradeskillID"] = 202,
 	},
-	[143140] = {
-		["itemID"] = 98823,
-		["abilityID"] = 31591,
+	[26087] = {
+		["itemID"] = 21342,
+		["abilityID"] = 13399,
 	},
-	[70550] = {
-		["itemID"] = 49891,
-		["abilityID"] = 21363,
+	[282168] = {
+		["itemID"] = 164674,
+		["abilityID"] = 40112,
 	},
-	[39738] = {
-		["itemID"] = 32222,
-		["abilityID"] = 15801,
+	[256246] = {
+		["itemID"] = 153598,
+		["abilityID"] = 38984,
 	},
-	[34547] = {
-		["itemID"] = 28440,
-		["abilityID"] = 15228,
+	[370476] = {
+		["abilityID"] = 46772,
+		["itemID"] = 191348,
+		["tradeskillID"] = 171,
 	},
 	[2331] = {
 		["abilityID"] = 1379,
 		["itemID"] = 2455,
 		["tradeskillID"] = 171,
 	},
-	[182980] = {
-		["itemID"] = 123911,
-		["abilityID"] = 34059,
+	[28582] = {
+		["abilityID"] = 13995,
+		["itemID"] = 21884,
+		["tradeskillID"] = 171,
 	},
 	[171697] = {
 		["itemID"] = 116646,
@@ -28230,9 +28234,9 @@ recipeLibrary = {
 		["itemID"] = 197793,
 		["abilityID"] = 47399,
 	},
-	[99446] = {
-		["itemID"] = 69942,
-		["abilityID"] = 24296,
+	[122669] = {
+		["itemID"] = 83802,
+		["abilityID"] = 26582,
 	},
 	[3504] = {
 		["itemID"] = 3840,
@@ -28242,13 +28246,14 @@ recipeLibrary = {
 		["itemID"] = 76566,
 		["abilityID"] = 26629,
 	},
-	[7754] = {
-		["itemID"] = 6316,
-		["abilityID"] = 4356,
+	[188317] = {
+		["abilityID"] = 34446,
+		["itemID"] = 127840,
+		["tradeskillID"] = 171,
 	},
-	[53880] = {
-		["itemID"] = 39955,
-		["abilityID"] = 18401,
+	[19067] = {
+		["itemID"] = 15057,
+		["abilityID"] = 10774,
 	},
 	[50608] = {
 		["itemID"] = 27501,
@@ -28258,21 +28263,22 @@ recipeLibrary = {
 		["itemID"] = 116647,
 		["abilityID"] = 33460,
 	},
-	[36256] = {
-		["itemID"] = 23565,
-		["abilityID"] = 15640,
+	[330157] = {
+		["itemID"] = 180059,
+		["abilityID"] = 45043,
 	},
-	[22759] = {
-		["itemID"] = 18263,
-		["abilityID"] = 12303,
+	[282165] = {
+		["itemID"] = 164675,
+		["abilityID"] = 40116,
 	},
-	[73621] = {
-		["itemID"] = 52493,
-		["abilityID"] = 21530,
+	[196383] = {
+		["itemID"] = 130873,
+		["abilityID"] = 35051,
 	},
-	[26912] = {
-		["itemID"] = 21784,
-		["abilityID"] = 13531,
+	[8895] = {
+		["abilityID"] = 4927,
+		["itemID"] = 7189,
+		["tradeskillID"] = 202,
 	},
 	[3872] = {
 		["itemID"] = 4335,
@@ -28283,58 +28289,59 @@ recipeLibrary = {
 		["itemID"] = 4369,
 		["tradeskillID"] = 202,
 	},
-	[99458] = {
-		["itemID"] = 69952,
-		["abilityID"] = 24301,
+	[182988] = {
+		["itemID"] = 123911,
+		["abilityID"] = 34051,
 	},
 	[171699] = {
 		["itemID"] = 116654,
 		["abilityID"] = 33461,
 	},
-	[78452] = {
-		["itemID"] = 75109,
-		["abilityID"] = 22390,
+	[3776] = {
+		["itemID"] = 4259,
+		["abilityID"] = 2185,
 	},
-	[86640] = {
-		["itemID"] = 62233,
-		["abilityID"] = 23404,
+	[12754] = {
+		["abilityID"] = 6949,
+		["itemID"] = 10586,
+		["tradeskillID"] = 202,
 	},
-	[66453] = {
-		["itemID"] = 40116,
-		["abilityID"] = 21128,
+	[41420] = {
+		["itemID"] = 32833,
+		["abilityID"] = 15872,
 	},
 	[53831] = {
 		["itemID"] = 39900,
 		["abilityID"] = 18362,
 	},
-	[272230] = {
-		["itemID"] = 153687,
-		["abilityID"] = 39610,
+	[6688] = {
+		["itemID"] = 5763,
+		["abilityID"] = 4020,
 	},
-	[9972] = {
-		["itemID"] = 7935,
-		["abilityID"] = 5334,
+	[143137] = {
+		["itemID"] = 98820,
+		["abilityID"] = 31638,
 	},
-	[46777] = {
-		["itemID"] = 35700,
-		["abilityID"] = 16304,
+	[34546] = {
+		["itemID"] = 28438,
+		["abilityID"] = 15233,
 	},
 	[171700] = {
 		["itemID"] = 114231,
 		["abilityID"] = 33462,
 	},
-	[370438] = {
-		["abilityID"] = 46762,
-		["itemID"] = 191318,
-		["tradeskillID"] = 171,
+	[12620] = {
+		["abilityID"] = 6877,
+		["itemID"] = 10548,
+		["tradeskillID"] = 202,
 	},
 	[60336] = {
 		["itemID"] = 44314,
 		["abilityID"] = 20582,
 	},
-	[182974] = {
-		["itemID"] = 123917,
-		["abilityID"] = 34065,
+	[330203] = {
+		["itemID"] = 180058,
+		["abilityID"] = 45087,
 	},
 	[229041] = {
 		["itemID"] = 142075,
@@ -28344,10 +28351,9 @@ recipeLibrary = {
 		["itemID"] = 55055,
 		["abilityID"] = 21794,
 	},
-	[188346] = {
-		["abilityID"] = 34475,
-		["itemID"] = 127850,
-		["tradeskillID"] = 171,
+	[45554] = {
+		["itemID"] = 34753,
+		["abilityID"] = 19726,
 	},
 	[31449] = {
 		["itemID"] = 24259,
@@ -28357,13 +28363,14 @@ recipeLibrary = {
 		["itemID"] = 114230,
 		["abilityID"] = 33463,
 	},
-	[18407] = {
-		["itemID"] = 13857,
-		["abilityID"] = 10402,
+	[73620] = {
+		["itemID"] = 52492,
+		["abilityID"] = 21531,
 	},
-	[294753] = {
-		["itemID"] = 167968,
-		["abilityID"] = 40467,
+	[139192] = {
+		["abilityID"] = 31386,
+		["itemID"] = 95416,
+		["tradeskillID"] = 202,
 	},
 	[32473] = {
 		["itemID"] = 25671,
@@ -28373,15 +28380,13 @@ recipeLibrary = {
 		["itemID"] = 171389,
 		["abilityID"] = 42409,
 	},
-	[188343] = {
-		["abilityID"] = 34472,
-		["itemID"] = 127849,
-		["tradeskillID"] = 171,
+	[31058] = {
+		["itemID"] = 24087,
+		["abilityID"] = 14552,
 	},
-	[382331] = {
-		["abilityID"] = 47503,
-		["itemID"] = 198180,
-		["tradeskillID"] = 202,
+	[182976] = {
+		["itemID"] = 123915,
+		["abilityID"] = 34063,
 	},
 	[50609] = {
 		["itemID"] = 33460,
@@ -28391,9 +28396,9 @@ recipeLibrary = {
 		["itemID"] = 114234,
 		["abilityID"] = 33464,
 	},
-	[29693] = {
-		["itemID"] = 23541,
-		["abilityID"] = 14232,
+	[182981] = {
+		["itemID"] = 123910,
+		["abilityID"] = 34058,
 	},
 	[88033] = {
 		["itemID"] = 62660,
@@ -28407,15 +28412,13 @@ recipeLibrary = {
 		["itemID"] = 142075,
 		["abilityID"] = 36383,
 	},
-	[188345] = {
-		["abilityID"] = 34474,
-		["itemID"] = 127849,
-		["tradeskillID"] = 171,
+	[4096] = {
+		["itemID"] = 4455,
+		["abilityID"] = 2502,
 	},
-	[139197] = {
-		["abilityID"] = 31387,
-		["itemID"] = 92747,
-		["tradeskillID"] = 202,
+	[55997] = {
+		["itemID"] = 41252,
+		["abilityID"] = 19451,
 	},
 	[7935] = {
 		["abilityID"] = 39672,
@@ -28426,27 +28429,26 @@ recipeLibrary = {
 		["itemID"] = 114237,
 		["abilityID"] = 33465,
 	},
-	[310490] = {
-		["abilityID"] = 42733,
-		["itemID"] = 172912,
-		["tradeskillID"] = 202,
+	[7753] = {
+		["itemID"] = 4592,
+		["abilityID"] = 4355,
 	},
-	[46776] = {
-		["itemID"] = 35694,
-		["abilityID"] = 16303,
+	[187639] = {
+		["itemID"] = 127764,
+		["abilityID"] = 34422,
 	},
-	[294765] = {
-		["itemID"] = 167964,
-		["abilityID"] = 40479,
+	[188341] = {
+		["abilityID"] = 34470,
+		["itemID"] = 127848,
+		["tradeskillID"] = 171,
 	},
 	[8786] = {
 		["itemID"] = 7053,
 		["abilityID"] = 4870,
 	},
-	[32765] = {
-		["abilityID"] = 14913,
-		["itemID"] = 25867,
-		["tradeskillID"] = 171,
+	[35575] = {
+		["itemID"] = 29515,
+		["abilityID"] = 15565,
 	},
 	[19068] = {
 		["itemID"] = 15064,
@@ -28468,54 +28470,53 @@ recipeLibrary = {
 		["itemID"] = 44315,
 		["abilityID"] = 20598,
 	},
-	[29692] = {
-		["itemID"] = 23540,
-		["abilityID"] = 14231,
+	[28027] = {
+		["itemID"] = 22460,
+		["abilityID"] = 15155,
 	},
 	[229045] = {
 		["itemID"] = 142075,
 		["abilityID"] = 36384,
 	},
-	[78448] = {
-		["itemID"] = 75094,
-		["abilityID"] = 22386,
+	[45560] = {
+		["itemID"] = 34759,
+		["abilityID"] = 19712,
 	},
-	[294769] = {
-		["itemID"] = 167938,
-		["abilityID"] = 40486,
+	[307667] = {
+		["itemID"] = 171378,
+		["abilityID"] = 42367,
 	},
-	[173289] = {
-		["abilityID"] = 33564,
-		["itemID"] = 118008,
-		["tradeskillID"] = 202,
+	[160986] = {
+		["itemID"] = 111449,
+		["abilityID"] = 32636,
 	},
 	[171705] = {
 		["itemID"] = 114236,
 		["abilityID"] = 33467,
 	},
-	[272226] = {
-		["itemID"] = 153690,
-		["abilityID"] = 39607,
+	[107645] = {
+		["itemID"] = 76538,
+		["abilityID"] = 26476,
 	},
-	[182973] = {
-		["itemID"] = 123891,
-		["abilityID"] = 34066,
+	[78468] = {
+		["itemID"] = 75127,
+		["abilityID"] = 22404,
 	},
-	[330164] = {
-		["itemID"] = 180055,
-		["abilityID"] = 45050,
+	[402147] = {
+		["itemID"] = 203814,
+		["abilityID"] = 48243,
 	},
 	[160981] = {
 		["itemID"] = 111444,
 		["abilityID"] = 32631,
 	},
-	[29694] = {
-		["itemID"] = 23542,
-		["abilityID"] = 14233,
+	[78451] = {
+		["itemID"] = 75116,
+		["abilityID"] = 22389,
 	},
-	[182972] = {
-		["itemID"] = 123896,
-		["abilityID"] = 34067,
+	[182975] = {
+		["itemID"] = 123916,
+		["abilityID"] = 34064,
 	},
 	[50610] = {
 		["itemID"] = 37097,
@@ -28525,29 +28526,31 @@ recipeLibrary = {
 		["itemID"] = 114235,
 		["abilityID"] = 33468,
 	},
-	[31102] = {
-		["itemID"] = 24054,
-		["abilityID"] = 14534,
+	[160982] = {
+		["itemID"] = 111445,
+		["abilityID"] = 32632,
 	},
 	[185948] = {
 		["itemID"] = 127000,
 		["abilityID"] = 34324,
 	},
-	[45562] = {
-		["itemID"] = 34761,
-		["abilityID"] = 19714,
+	[176732] = {
+		["abilityID"] = 33705,
+		["itemID"] = 118741,
+		["tradeskillID"] = 202,
 	},
-	[294759] = {
-		["itemID"] = 167990,
-		["abilityID"] = 40473,
+	[382327] = {
+		["abilityID"] = 47507,
+		["itemID"] = 198172,
+		["tradeskillID"] = 202,
 	},
-	[294771] = {
-		["itemID"] = 167938,
-		["abilityID"] = 40488,
+	[375168] = {
+		["itemID"] = 193470,
+		["abilityID"] = 47140,
 	},
-	[26086] = {
-		["itemID"] = 21341,
-		["abilityID"] = 13398,
+	[143132] = {
+		["itemID"] = 98815,
+		["abilityID"] = 31614,
 	},
 	[194756] = {
 		["itemID"] = 128898,
@@ -28557,35 +28560,34 @@ recipeLibrary = {
 		["itemID"] = 114233,
 		["abilityID"] = 33469,
 	},
-	[11457] = {
-		["abilityID"] = 6005,
-		["itemID"] = 3928,
-		["tradeskillID"] = 171,
+	[294749] = {
+		["itemID"] = 167966,
+		["abilityID"] = 40463,
 	},
 	[192804] = {
 		["itemID"] = 129211,
 		["abilityID"] = 34698,
 	},
-	[253112] = {
-		["itemID"] = 152813,
-		["abilityID"] = 38748,
-	},
-	[7223] = {
-		["itemID"] = 6040,
-		["abilityID"] = 4206,
+	[125548] = {
+		["itemID"] = 82438,
+		["abilityID"] = 27016,
 	},
 	[165564] = {
 		["itemID"] = 141644,
 		["abilityID"] = 32911,
 	},
-	[370556] = {
-		["abilityID"] = 46787,
-		["itemID"] = 191393,
-		["tradeskillID"] = 171,
+	[7223] = {
+		["itemID"] = 6040,
+		["abilityID"] = 4206,
 	},
-	[3813] = {
-		["itemID"] = 4245,
-		["abilityID"] = 4003,
+	[101746] = {
+		["itemID"] = 71825,
+		["abilityID"] = 24501,
+	},
+	[188344] = {
+		["abilityID"] = 34473,
+		["itemID"] = 127849,
+		["tradeskillID"] = 171,
 	},
 	[29658] = {
 		["itemID"] = 23531,
@@ -28596,28 +28598,27 @@ recipeLibrary = {
 		["itemID"] = 18631,
 		["tradeskillID"] = 202,
 	},
-	[375141] = {
-		["itemID"] = 193443,
-		["abilityID"] = 47119,
+	[31101] = {
+		["itemID"] = 24053,
+		["abilityID"] = 14526,
 	},
 	[30334] = {
 		["abilityID"] = 14360,
 		["itemID"] = 23766,
 		["tradeskillID"] = 202,
 	},
-	[73340] = {
-		["itemID"] = 52242,
-		["abilityID"] = 21443,
+	[294767] = {
+		["itemID"] = 167936,
+		["abilityID"] = 40484,
 	},
 	[298850] = {
 		["abilityID"] = 40689,
 		["itemID"] = 168653,
 		["tradeskillID"] = 171,
 	},
-	[28543] = {
-		["abilityID"] = 13961,
-		["itemID"] = 22823,
-		["tradeskillID"] = 171,
+	[10003] = {
+		["itemID"] = 7954,
+		["abilityID"] = 5346,
 	},
 	[31450] = {
 		["itemID"] = 24260,
@@ -28627,47 +28628,45 @@ recipeLibrary = {
 		["itemID"] = 197756,
 		["abilityID"] = 47361,
 	},
-	[114781] = {
-		["abilityID"] = 26018,
-		["itemID"] = 76132,
-		["tradeskillID"] = 171,
+	[375156] = {
+		["itemID"] = 193462,
+		["abilityID"] = 47109,
 	},
 	[46775] = {
 		["itemID"] = 35693,
 		["abilityID"] = 16302,
 	},
-	[80481] = {
-		["abilityID"] = 22019,
-		["itemID"] = 58091,
-		["tradeskillID"] = 171,
+	[187066] = {
+		["itemID"] = 127373,
+		["abilityID"] = 34393,
 	},
 	[359786] = {
 		["itemID"] = 187796,
 		["abilityID"] = 46284,
 	},
-	[63192] = {
-		["itemID"] = 45560,
-		["abilityID"] = 20821,
+	[375152] = {
+		["itemID"] = 193463,
+		["abilityID"] = 47111,
 	},
-	[28955] = {
-		["itemID"] = 23120,
-		["abilityID"] = 14048,
+	[272227] = {
+		["itemID"] = 153689,
+		["abilityID"] = 39608,
 	},
 	[50611] = {
 		["itemID"] = 37098,
 		["abilityID"] = 17506,
 	},
-	[338265] = {
-		["itemID"] = 182054,
-		["abilityID"] = 45565,
+	[76269] = {
+		["itemID"] = 55031,
+		["abilityID"] = 21774,
 	},
 	[19072] = {
 		["itemID"] = 15093,
 		["abilityID"] = 10778,
 	},
-	[375145] = {
-		["itemID"] = 193454,
-		["abilityID"] = 47083,
+	[107643] = {
+		["itemID"] = 76565,
+		["abilityID"] = 26610,
 	},
 	[9070] = {
 		["itemID"] = 7283,
@@ -28677,63 +28676,66 @@ recipeLibrary = {
 		["itemID"] = 7377,
 		["abilityID"] = 5052,
 	},
-	[78459] = {
-		["itemID"] = 75081,
-		["abilityID"] = 22397,
+	[26878] = {
+		["itemID"] = 20969,
+		["abilityID"] = 13509,
 	},
 	[195924] = {
 		["itemID"] = 130224,
 		["abilityID"] = 35004,
 	},
-	[294798] = {
-		["itemID"] = 167950,
-		["abilityID"] = 40518,
+	[80496] = {
+		["abilityID"] = 21997,
+		["itemID"] = 58146,
+		["tradeskillID"] = 171,
 	},
-	[125529] = {
-		["itemID"] = 82403,
-		["abilityID"] = 27045,
+	[32766] = {
+		["abilityID"] = 14914,
+		["itemID"] = 25868,
+		["tradeskillID"] = 171,
 	},
-	[62202] = {
-		["itemID"] = 44936,
-		["abilityID"] = 20752,
+	[107624] = {
+		["itemID"] = 76560,
+		["abilityID"] = 26504,
 	},
 	[9966] = {
 		["itemID"] = 7932,
 		["abilityID"] = 5331,
 	},
-	[278419] = {
-		["itemID"] = 165743,
-		["abilityID"] = 39843,
-	},
-	[294785] = {
-		["abilityID"] = 40505,
-		["itemID"] = 167940,
+	[235755] = {
+		["abilityID"] = 36432,
+		["itemID"] = 144333,
 		["tradeskillID"] = 202,
+	},
+	[130657] = {
+		["itemID"] = 89680,
+		["abilityID"] = 27392,
 	},
 	[294763] = {
 		["itemID"] = 167964,
 		["abilityID"] = 40477,
 	},
-	[294801] = {
-		["itemID"] = 167946,
-		["abilityID"] = 40521,
+	[370551] = {
+		["abilityID"] = 46785,
+		["itemID"] = 191387,
+		["tradeskillID"] = 171,
 	},
 	[80508] = {
 		["abilityID"] = 21998,
 		["itemID"] = 58483,
 		["tradeskillID"] = 171,
 	},
-	[294803] = {
-		["itemID"] = 167948,
-		["abilityID"] = 40523,
+	[187065] = {
+		["itemID"] = 127370,
+		["abilityID"] = 34392,
 	},
-	[182966] = {
-		["itemID"] = 123894,
-		["abilityID"] = 34073,
+	[23710] = {
+		["itemID"] = 19163,
+		["abilityID"] = 12703,
 	},
-	[330149] = {
-		["itemID"] = 180055,
-		["abilityID"] = 45035,
+	[16639] = {
+		["itemID"] = 12644,
+		["abilityID"] = 9158,
 	},
 	[78458] = {
 		["itemID"] = 75110,
@@ -28743,9 +28745,9 @@ recipeLibrary = {
 		["itemID"] = 123897,
 		["abilityID"] = 34068,
 	},
-	[360317] = {
-		["itemID"] = 187849,
-		["abilityID"] = 46298,
+	[125535] = {
+		["itemID"] = 82425,
+		["abilityID"] = 27026,
 	},
 	[142961] = {
 		["itemID"] = 98609,
@@ -28759,100 +28761,103 @@ recipeLibrary = {
 		["itemID"] = 110611,
 		["abilityID"] = 33450,
 	},
-	[8789] = {
-		["itemID"] = 7056,
-		["abilityID"] = 4871,
+	[338267] = {
+		["itemID"] = 181453,
+		["abilityID"] = 45570,
 	},
-	[47049] = {
-		["abilityID"] = 16360,
-		["itemID"] = 35750,
-		["tradeskillID"] = 171,
+	[3965] = {
+		["abilityID"] = 2460,
+		["itemID"] = 4392,
+		["tradeskillID"] = 202,
 	},
 	[294784] = {
 		["abilityID"] = 40504,
 		["itemID"] = 167940,
 		["tradeskillID"] = 202,
 	},
-	[33279] = {
-		["itemID"] = 27651,
-		["abilityID"] = 15003,
+	[16640] = {
+		["itemID"] = 12643,
+		["abilityID"] = 9157,
 	},
 	[36349] = {
 		["itemID"] = 30042,
 		["abilityID"] = 15671,
 	},
-	[50941] = {
-		["itemID"] = 38409,
-		["abilityID"] = 20306,
+	[278414] = {
+		["itemID"] = 165739,
+		["abilityID"] = 39838,
 	},
 	[50612] = {
 		["itemID"] = 1711,
 		["abilityID"] = 17486,
 	},
-	[25498] = {
-		["itemID"] = 20909,
-		["abilityID"] = 13292,
+	[28572] = {
+		["abilityID"] = 13986,
+		["itemID"] = 22842,
+		["tradeskillID"] = 171,
 	},
-	[143126] = {
-		["itemID"] = 98884,
-		["abilityID"] = 31637,
+	[3773] = {
+		["itemID"] = 4256,
+		["abilityID"] = 2182,
 	},
-	[338238] = {
-		["itemID"] = 181431,
-		["abilityID"] = 45546,
+	[294796] = {
+		["itemID"] = 167950,
+		["abilityID"] = 40516,
 	},
 	[33277] = {
 		["itemID"] = 24105,
 		["abilityID"] = 15001,
 	},
-	[26907] = {
-		["itemID"] = 21775,
-		["abilityID"] = 13526,
+	[80488] = {
+		["abilityID"] = 21985,
+		["itemID"] = 58093,
+		["tradeskillID"] = 171,
 	},
 	[347509] = {
 		["itemID"] = 184690,
 		["abilityID"] = 45915,
 	},
-	[58312] = {
-		["itemID"] = 43366,
-		["abilityID"] = 20527,
+	[200466] = {
+		["abilityID"] = 35159,
+		["itemID"] = 132982,
+		["tradeskillID"] = 202,
 	},
 	[137830] = {
 		["itemID"] = 93504,
 		["abilityID"] = 31320,
 	},
-	[3371] = {
-		["itemID"] = 3220,
-		["abilityID"] = 1872,
+	[45564] = {
+		["itemID"] = 34763,
+		["abilityID"] = 19716,
 	},
-	[3508] = {
-		["itemID"] = 3844,
-		["abilityID"] = 2000,
+	[375196] = {
+		["itemID"] = 193493,
+		["abilityID"] = 47076,
 	},
 	[194740] = {
 		["itemID"] = 128894,
 		["abilityID"] = 34895,
 	},
-	[28545] = {
-		["abilityID"] = 13963,
-		["itemID"] = 22825,
-		["tradeskillID"] = 171,
+	[187064] = {
+		["itemID"] = 127372,
+		["abilityID"] = 34391,
 	},
 	[201685] = {
 		["itemID"] = 133681,
 		["abilityID"] = 35225,
 	},
-	[31104] = {
-		["itemID"] = 24056,
-		["abilityID"] = 14521,
+	[285098] = {
+		["itemID"] = 165398,
+		["abilityID"] = 40177,
 	},
-	[86005] = {
-		["itemID"] = 61981,
-		["abilityID"] = 22538,
+	[307095] = {
+		["abilityID"] = 42329,
+		["itemID"] = 171272,
+		["tradeskillID"] = 171,
 	},
-	[19074] = {
-		["itemID"] = 15069,
-		["abilityID"] = 10780,
+	[29695] = {
+		["itemID"] = 23543,
+		["abilityID"] = 14234,
 	},
 	[125533] = {
 		["itemID"] = 82423,
@@ -28862,25 +28867,25 @@ recipeLibrary = {
 		["itemID"] = 40105,
 		["abilityID"] = 18492,
 	},
-	[26085] = {
-		["itemID"] = 21340,
-		["abilityID"] = 13397,
+	[143124] = {
+		["itemID"] = 98882,
+		["abilityID"] = 31624,
 	},
-	[137835] = {
-		["itemID"] = 93511,
-		["abilityID"] = 31297,
+	[78456] = {
+		["itemID"] = 75092,
+		["abilityID"] = 22394,
 	},
-	[121841] = {
-		["itemID"] = 83087,
-		["abilityID"] = 26596,
+	[50940] = {
+		["itemID"] = 38411,
+		["abilityID"] = 20311,
 	},
 	[107617] = {
 		["itemID"] = 76502,
 		["abilityID"] = 26593,
 	},
-	[75258] = {
-		["itemID"] = 54481,
-		["abilityID"] = 21710,
+	[31451] = {
+		["itemID"] = 24261,
+		["abilityID"] = 14635,
 	},
 	[169669] = {
 		["itemID"] = 111556,
@@ -28894,42 +28899,42 @@ recipeLibrary = {
 		["itemID"] = 45773,
 		["abilityID"] = 20886,
 	},
-	[209507] = {
-		["itemID"] = 136689,
-		["abilityID"] = 35785,
+	[23068] = {
+		["abilityID"] = 12421,
+		["itemID"] = 9313,
+		["tradeskillID"] = 202,
 	},
-	[50942] = {
-		["itemID"] = 38407,
-		["abilityID"] = 20309,
+	[294794] = {
+		["itemID"] = 167943,
+		["abilityID"] = 40514,
 	},
 	[86004] = {
 		["itemID"] = 61978,
 		["abilityID"] = 22539,
 	},
-	[28570] = {
-		["abilityID"] = 13983,
-		["itemID"] = 22840,
-		["tradeskillID"] = 171,
+	[24092] = {
+		["itemID"] = 19683,
+		["abilityID"] = 12817,
 	},
 	[36351] = {
 		["itemID"] = 30040,
 		["abilityID"] = 15672,
 	},
-	[247771] = {
-		["itemID"] = 151580,
-		["abilityID"] = 36658,
+	[294800] = {
+		["itemID"] = 167946,
+		["abilityID"] = 40520,
 	},
-	[332070] = {
-		["itemID"] = 191333,
-		["abilityID"] = 45613,
+	[73336] = {
+		["itemID"] = 52212,
+		["abilityID"] = 21439,
 	},
 	[278416] = {
 		["itemID"] = 165746,
 		["abilityID"] = 39839,
 	},
-	[2737] = {
-		["itemID"] = 2844,
-		["abilityID"] = 1646,
+	[75255] = {
+		["itemID"] = 54449,
+		["abilityID"] = 21701,
 	},
 	[3956] = {
 		["abilityID"] = 2450,
@@ -28940,53 +28945,58 @@ recipeLibrary = {
 		["itemID"] = 40098,
 		["abilityID"] = 18493,
 	},
-	[125523] = {
-		["itemID"] = 82397,
-		["abilityID"] = 27038,
+	[187060] = {
+		["itemID"] = 127367,
+		["abilityID"] = 34390,
 	},
-	[75261] = {
-		["itemID"] = 54482,
-		["abilityID"] = 21711,
+	[99445] = {
+		["itemID"] = 69941,
+		["abilityID"] = 24295,
 	},
-	[6695] = {
-		["itemID"] = 5765,
-		["abilityID"] = 4024,
+	[294813] = {
+		["itemID"] = 167960,
+		["abilityID"] = 40533,
 	},
-	[29569] = {
-		["itemID"] = 23504,
-		["abilityID"] = 14195,
+	[75253] = {
+		["itemID"] = 54478,
+		["abilityID"] = 21669,
 	},
 	[187059] = {
 		["itemID"] = 127363,
 		["abilityID"] = 34389,
 	},
-	[194705] = {
-		["itemID"] = 128881,
-		["abilityID"] = 34852,
+	[2337] = {
+		["abilityID"] = 1385,
+		["itemID"] = 858,
+		["tradeskillID"] = 171,
 	},
-	[289174] = {
-		["itemID"] = 166520,
-		["abilityID"] = 40282,
+	[28544] = {
+		["abilityID"] = 13962,
+		["itemID"] = 22824,
+		["tradeskillID"] = 171,
 	},
 	[2964] = {
 		["itemID"] = 2997,
 		["abilityID"] = 2370,
 	},
-	[383534] = {
-		["itemID"] = 194869,
-		["abilityID"] = 47571,
+	[360318] = {
+		["abilityID"] = 46300,
+		["itemID"] = 187850,
+		["tradeskillID"] = 171,
 	},
-	[45571] = {
-		["itemID"] = 34768,
-		["abilityID"] = 19735,
+	[28571] = {
+		["abilityID"] = 13985,
+		["itemID"] = 22841,
+		["tradeskillID"] = 171,
 	},
-	[2397] = {
-		["itemID"] = 2580,
-		["abilityID"] = 2367,
+	[251658] = {
+		["abilityID"] = 36716,
+		["itemID"] = 152615,
+		["tradeskillID"] = 171,
 	},
-	[19075] = {
-		["itemID"] = 15079,
-		["abilityID"] = 10781,
+	[34608] = {
+		["itemID"] = 28421,
+		["abilityID"] = 15240,
 	},
 	[7841] = {
 		["abilityID"] = 4395,
@@ -28997,9 +29007,9 @@ recipeLibrary = {
 		["itemID"] = 128536,
 		["abilityID"] = 34620,
 	},
-	[60716] = {
-		["itemID"] = 43262,
-		["abilityID"] = 20358,
+	[2385] = {
+		["itemID"] = 2568,
+		["abilityID"] = 2361,
 	},
 	[160989] = {
 		["itemID"] = 111452,
@@ -29009,25 +29019,27 @@ recipeLibrary = {
 		["itemID"] = 38400,
 		["abilityID"] = 17674,
 	},
-	[19104] = {
-		["itemID"] = 15068,
-		["abilityID"] = 10809,
+	[11458] = {
+		["abilityID"] = 6006,
+		["itemID"] = 9144,
+		["tradeskillID"] = 171,
 	},
-	[78450] = {
-		["itemID"] = 75114,
-		["abilityID"] = 22388,
+	[81725] = {
+		["abilityID"] = 22120,
+		["itemID"] = 59449,
+		["tradeskillID"] = 202,
 	},
-	[375178] = {
-		["itemID"] = 193242,
-		["abilityID"] = 47157,
+	[50943] = {
+		["itemID"] = 38406,
+		["abilityID"] = 17583,
 	},
-	[19097] = {
-		["itemID"] = 15062,
-		["abilityID"] = 10798,
+	[12046] = {
+		["itemID"] = 10047,
+		["abilityID"] = 6578,
 	},
-	[137838] = {
-		["itemID"] = 93517,
-		["abilityID"] = 31278,
+	[75260] = {
+		["itemID"] = 54479,
+		["abilityID"] = 21717,
 	},
 	[39728] = {
 		["itemID"] = 32212,
@@ -29037,13 +29049,13 @@ recipeLibrary = {
 		["itemID"] = 41383,
 		["abilityID"] = 19305,
 	},
-	[94718] = {
-		["itemID"] = 67602,
-		["abilityID"] = 24011,
+	[36355] = {
+		["itemID"] = 30041,
+		["abilityID"] = 15675,
 	},
-	[187058] = {
-		["itemID"] = 127364,
-		["abilityID"] = 34388,
+	[309174] = {
+		["itemID"] = 172235,
+		["abilityID"] = 42477,
 	},
 	[50614] = {
 		["itemID"] = 4422,
@@ -29053,96 +29065,96 @@ recipeLibrary = {
 		["itemID"] = 162461,
 		["abilityID"] = 40157,
 	},
-	[57425] = {
-		["abilityID"] = 19710,
-		["itemID"] = 41266,
-		["tradeskillID"] = 171,
+	[294812] = {
+		["itemID"] = 167960,
+		["abilityID"] = 40532,
 	},
-	[76293] = {
-		["itemID"] = 55042,
-		["abilityID"] = 21785,
-	},
-	[3969] = {
-		["abilityID"] = 2464,
-		["itemID"] = 4396,
+	[23507] = {
+		["abilityID"] = 12636,
+		["itemID"] = 19026,
 		["tradeskillID"] = 202,
 	},
-	[21144] = {
-		["itemID"] = 17198,
-		["abilityID"] = 11976,
+	[66038] = {
+		["itemID"] = 44837,
+		["abilityID"] = 21070,
+	},
+	[3377] = {
+		["itemID"] = 3666,
+		["abilityID"] = 1876,
 	},
 	[194703] = {
 		["itemID"] = 128883,
 		["abilityID"] = 34850,
 	},
-	[53872] = {
-		["itemID"] = 39947,
-		["abilityID"] = 18393,
+	[60715] = {
+		["itemID"] = 43261,
+		["abilityID"] = 20357,
 	},
 	[34607] = {
 		["itemID"] = 28420,
 		["abilityID"] = 15239,
 	},
-	[54020] = {
-		["abilityID"] = 18487,
-		["itemID"] = 40248,
-		["tradeskillID"] = 171,
+	[8334] = {
+		["abilityID"] = 4606,
+		["itemID"] = 6712,
+		["tradeskillID"] = 202,
 	},
-	[125120] = {
-		["itemID"] = 86073,
-		["abilityID"] = 27218,
+	[46597] = {
+		["itemID"] = 35501,
+		["abilityID"] = 16289,
 	},
 	[143053] = {
 		["itemID"] = 98756,
 		["abilityID"] = 31532,
 	},
-	[41415] = {
-		["itemID"] = 32774,
-		["abilityID"] = 15862,
+	[66443] = {
+		["itemID"] = 40182,
+		["abilityID"] = 21118,
 	},
-	[6690] = {
-		["itemID"] = 5766,
-		["abilityID"] = 4021,
+	[194797] = {
+		["itemID"] = 128906,
+		["abilityID"] = 34935,
 	},
-	[282889] = {
-		["itemID"] = 164657,
-		["abilityID"] = 40034,
+	[370536] = {
+		["abilityID"] = 46781,
+		["itemID"] = 191375,
+		["tradeskillID"] = 171,
 	},
 	[66560] = {
 		["itemID"] = 40139,
 		["abilityID"] = 21146,
 	},
-	[73223] = {
-		["itemID"] = 52082,
-		["abilityID"] = 21389,
+	[54019] = {
+		["itemID"] = 40041,
+		["abilityID"] = 18489,
 	},
 	[107598] = {
 		["itemID"] = 76513,
 		["abilityID"] = 26483,
 	},
-	[137845] = {
-		["itemID"] = 93568,
-		["abilityID"] = 31422,
+	[104297] = {
+		["itemID"] = 74641,
+		["abilityID"] = 24788,
 	},
 	[143054] = {
 		["itemID"] = 98757,
 		["abilityID"] = 31533,
 	},
-	[282879] = {
-		["itemID"] = 164648,
-		["abilityID"] = 40030,
+	[33284] = {
+		["itemID"] = 27655,
+		["abilityID"] = 15004,
 	},
-	[383325] = {
-		["itemID"] = 194872,
-		["abilityID"] = 47672,
+	[344335] = {
+		["itemID"] = 184096,
+		["abilityID"] = 45803,
 	},
-	[86653] = {
-		["itemID"] = 87561,
-		["abilityID"] = 23416,
+	[40005] = {
+		["itemID"] = 32396,
+		["abilityID"] = 15819,
 	},
-	[55377] = {
-		["itemID"] = 41394,
-		["abilityID"] = 19306,
+	[26883] = {
+		["itemID"] = 21764,
+		["abilityID"] = 13513,
 	},
 	[31452] = {
 		["itemID"] = 24262,
@@ -29152,150 +29164,150 @@ recipeLibrary = {
 		["itemID"] = 152812,
 		["abilityID"] = 40207,
 	},
-	[66570] = {
-		["itemID"] = 40153,
-		["abilityID"] = 21156,
+	[114762] = {
+		["abilityID"] = 26032,
+		["itemID"] = 76080,
+		["tradeskillID"] = 171,
 	},
 	[143055] = {
 		["itemID"] = 98763,
 		["abilityID"] = 31539,
 	},
-	[54017] = {
-		["itemID"] = 39910,
-		["abilityID"] = 18369,
+	[391781] = {
+		["itemID"] = 191529,
+		["abilityID"] = 47872,
 	},
-	[384313] = {
-		["abilityID"] = 47620,
-		["itemID"] = 198549,
-		["tradeskillID"] = 202,
+	[75267] = {
+		["itemID"] = 54486,
+		["abilityID"] = 21716,
 	},
-	[35591] = {
-		["itemID"] = 29527,
-		["abilityID"] = 15570,
+	[171692] = {
+		["itemID"] = 116427,
+		["abilityID"] = 33454,
 	},
 	[16645] = {
 		["itemID"] = 12416,
 		["abilityID"] = 9162,
 	},
-	[101741] = {
-		["itemID"] = 71819,
-		["abilityID"] = 24496,
+	[391088] = {
+		["itemID"] = 200635,
+		["abilityID"] = 47820,
 	},
-	[33290] = {
-		["itemID"] = 27661,
-		["abilityID"] = 15010,
-	},
-	[104298] = {
-		["itemID"] = 74642,
-		["abilityID"] = 26786,
+	[398438] = {
+		["itemID"] = 202290,
+		["abilityID"] = 48015,
 	},
 	[143056] = {
 		["itemID"] = 98764,
 		["abilityID"] = 31540,
 	},
-	[12062] = {
-		["itemID"] = 10010,
-		["abilityID"] = 6590,
+	[104298] = {
+		["itemID"] = 74642,
+		["abilityID"] = 26786,
 	},
-	[126854] = {
-		["itemID"] = 87403,
-		["abilityID"] = 27149,
+	[60969] = {
+		["itemID"] = 44554,
+		["abilityID"] = 20391,
+	},
+	[47046] = {
+		["abilityID"] = 16359,
+		["itemID"] = 35748,
+		["tradeskillID"] = 171,
 	},
 	[2332] = {
 		["abilityID"] = 1380,
 		["itemID"] = 2456,
 		["tradeskillID"] = 171,
 	},
-	[53936] = {
-		["abilityID"] = 18357,
-		["itemID"] = 40213,
-		["tradeskillID"] = 171,
+	[73222] = {
+		["itemID"] = 52081,
+		["abilityID"] = 21388,
 	},
 	[2396] = {
 		["itemID"] = 2579,
 		["abilityID"] = 2369,
 	},
-	[46601] = {
-		["itemID"] = 35503,
-		["abilityID"] = 16290,
+	[86654] = {
+		["itemID"] = 63276,
+		["abilityID"] = 23392,
+	},
+	[46138] = {
+		["itemID"] = 34369,
+		["abilityID"] = 16271,
 	},
 	[143057] = {
 		["itemID"] = 98765,
 		["abilityID"] = 31541,
 	},
-	[269715] = {
-		["itemID"] = 159922,
-		["abilityID"] = 39546,
+	[19103] = {
+		["itemID"] = 15096,
+		["abilityID"] = 10812,
 	},
-	[54023] = {
-		["itemID"] = 40059,
-		["abilityID"] = 18490,
+	[107599] = {
+		["itemID"] = 76511,
+		["abilityID"] = 26508,
 	},
-	[39467] = {
-		["itemID"] = 31869,
-		["abilityID"] = 15765,
-	},
-	[143114] = {
-		["itemID"] = 98834,
-		["abilityID"] = 31582,
+	[175880] = {
+		["abilityID"] = 33666,
+		["itemID"] = 118700,
+		["tradeskillID"] = 171,
 	},
 	[269716] = {
 		["itemID"] = 159922,
 		["abilityID"] = 39547,
 	},
-	[66569] = {
-		["itemID"] = 40152,
-		["abilityID"] = 21155,
+	[50952] = {
+		["itemID"] = 38424,
+		["abilityID"] = 20298,
 	},
-	[29571] = {
-		["itemID"] = 23505,
-		["abilityID"] = 14196,
-	},
-	[104299] = {
-		["itemID"] = 74645,
-		["abilityID"] = 26787,
+	[166669] = {
+		["itemID"] = 113355,
+		["abilityID"] = 32925,
 	},
 	[143058] = {
 		["itemID"] = 98766,
 		["abilityID"] = 31542,
 	},
-	[95755] = {
-		["itemID"] = 68357,
-		["abilityID"] = 24070,
+	[104299] = {
+		["itemID"] = 74645,
+		["abilityID"] = 26787,
 	},
-	[66441] = {
-		["itemID"] = 40180,
-		["abilityID"] = 21116,
+	[332020] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45214,
 	},
-	[253122] = {
-		["abilityID"] = 39234,
-		["itemID"] = 152830,
-		["tradeskillID"] = 202,
+	[41414] = {
+		["itemID"] = 32772,
+		["abilityID"] = 15861,
 	},
-	[304431] = {
-		["itemID"] = 170358,
-		["abilityID"] = 41017,
+	[125603] = {
+		["itemID"] = 87248,
+		["abilityID"] = 27062,
+	},
+	[304322] = {
+		["itemID"] = 170309,
+		["abilityID"] = 40995,
 	},
 	[19077] = {
 		["itemID"] = 15048,
 		["abilityID"] = 10783,
 	},
-	[298996] = {
-		["abilityID"] = 40702,
-		["itemID"] = 168675,
-		["tradeskillID"] = 171,
-	},
-	[143059] = {
-		["itemID"] = 98767,
-		["abilityID"] = 31543,
+	[66567] = {
+		["itemID"] = 40142,
+		["abilityID"] = 21153,
 	},
 	[269719] = {
 		["itemID"] = 159922,
 		["abilityID"] = 39548,
 	},
-	[3500] = {
-		["itemID"] = 3856,
-		["abilityID"] = 1992,
+	[143059] = {
+		["itemID"] = 98767,
+		["abilityID"] = 31543,
+	},
+	[382343] = {
+		["abilityID"] = 47491,
+		["itemID"] = 198228,
+		["tradeskillID"] = 202,
 	},
 	[53923] = {
 		["itemID"] = 39981,
@@ -29313,17 +29325,17 @@ recipeLibrary = {
 		["itemID"] = 10307,
 		["abilityID"] = 17488,
 	},
-	[16646] = {
-		["itemID"] = 12428,
-		["abilityID"] = 9163,
-	},
-	[143060] = {
-		["itemID"] = 98768,
-		["abilityID"] = 31544,
+	[330165] = {
+		["itemID"] = 180057,
+		["abilityID"] = 45051,
 	},
 	[104300] = {
 		["itemID"] = 74646,
 		["abilityID"] = 26788,
+	},
+	[143060] = {
+		["itemID"] = 98768,
+		["abilityID"] = 31544,
 	},
 	[3292] = {
 		["itemID"] = 3487,
@@ -29350,25 +29362,26 @@ recipeLibrary = {
 		["itemID"] = 3827,
 		["tradeskillID"] = 171,
 	},
-	[23190] = {
-		["itemID"] = 18662,
-		["abilityID"] = 12516,
+	[43493] = {
+		["itemID"] = 33782,
+		["abilityID"] = 15997,
 	},
 	[143061] = {
 		["itemID"] = 98769,
 		["abilityID"] = 31545,
 	},
-	[19102] = {
-		["itemID"] = 15090,
-		["abilityID"] = 10805,
+	[30341] = {
+		["abilityID"] = 14362,
+		["itemID"] = 23768,
+		["tradeskillID"] = 202,
 	},
-	[282866] = {
-		["itemID"] = 164719,
-		["abilityID"] = 40044,
+	[332016] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45210,
 	},
-	[247801] = {
-		["itemID"] = 151577,
-		["abilityID"] = 36673,
+	[332013] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45199,
 	},
 	[269724] = {
 		["abilityID"] = 39552,
@@ -29379,27 +29392,26 @@ recipeLibrary = {
 		["itemID"] = 164677,
 		["abilityID"] = 40053,
 	},
-	[104301] = {
-		["itemID"] = 74643,
-		["abilityID"] = 26854,
-	},
-	[3772] = {
-		["itemID"] = 4255,
-		["abilityID"] = 2181,
+	[143062] = {
+		["itemID"] = 98770,
+		["abilityID"] = 31546,
 	},
 	[269725] = {
 		["abilityID"] = 39553,
 		["itemID"] = 159937,
 		["tradeskillID"] = 202,
 	},
-	[186116] = {
-		["itemID"] = 127020,
-		["abilityID"] = 34376,
+	[104301] = {
+		["itemID"] = 74643,
+		["abilityID"] = 26854,
 	},
-	[80482] = {
-		["abilityID"] = 22003,
-		["itemID"] = 57194,
-		["tradeskillID"] = 171,
+	[31459] = {
+		["itemID"] = 24270,
+		["abilityID"] = 14641,
+	},
+	[39466] = {
+		["itemID"] = 31866,
+		["abilityID"] = 15764,
 	},
 	[3868] = {
 		["itemID"] = 4331,
@@ -29418,26 +29430,27 @@ recipeLibrary = {
 		["itemID"] = 12210,
 		["abilityID"] = 8618,
 	},
-	[247808] = {
-		["itemID"] = 151571,
-		["abilityID"] = 36688,
+	[143063] = {
+		["itemID"] = 98771,
+		["abilityID"] = 31547,
 	},
 	[269727] = {
 		["abilityID"] = 39555,
 		["itemID"] = 159936,
 		["tradeskillID"] = 202,
 	},
-	[28244] = {
-		["itemID"] = 22671,
-		["abilityID"] = 13920,
+	[130658] = {
+		["itemID"] = 89674,
+		["abilityID"] = 27393,
 	},
-	[16648] = {
-		["itemID"] = 12415,
-		["abilityID"] = 9165,
+	[19095] = {
+		["itemID"] = 15059,
+		["abilityID"] = 10799,
 	},
-	[143110] = {
-		["itemID"] = 98830,
-		["abilityID"] = 31615,
+	[60356] = {
+		["abilityID"] = 20277,
+		["itemID"] = 44328,
+		["tradeskillID"] = 171,
 	},
 	[269728] = {
 		["abilityID"] = 39556,
@@ -29448,26 +29461,27 @@ recipeLibrary = {
 		["itemID"] = 27502,
 		["abilityID"] = 17489,
 	},
-	[66584] = {
-		["itemID"] = 40150,
-		["abilityID"] = 21170,
+	[104302] = {
+		["itemID"] = 74647,
+		["abilityID"] = 26855,
+	},
+	[143064] = {
+		["itemID"] = 98772,
+		["abilityID"] = 31534,
 	},
 	[269729] = {
 		["abilityID"] = 39557,
 		["itemID"] = 159936,
 		["tradeskillID"] = 202,
 	},
-	[208596] = {
-		["itemID"] = 136539,
-		["abilityID"] = 35302,
-	},
 	[247805] = {
 		["itemID"] = 151578,
 		["abilityID"] = 36677,
 	},
-	[18441] = {
-		["itemID"] = 14144,
-		["abilityID"] = 10428,
+	[12715] = {
+		["abilityID"] = 6938,
+		["itemID"] = 10644,
+		["tradeskillID"] = 202,
 	},
 	[282865] = {
 		["itemID"] = 164719,
@@ -29477,52 +29491,50 @@ recipeLibrary = {
 		["itemID"] = 30804,
 		["abilityID"] = 15706,
 	},
-	[299034] = {
-		["itemID"] = 168731,
-		["abilityID"] = 40740,
+	[66572] = {
+		["itemID"] = 40143,
+		["abilityID"] = 21158,
 	},
-	[30343] = {
-		["abilityID"] = 14364,
-		["itemID"] = 23770,
-		["tradeskillID"] = 202,
+	[66571] = {
+		["itemID"] = 40154,
+		["abilityID"] = 21157,
 	},
-	[143109] = {
-		["itemID"] = 98809,
-		["abilityID"] = 31603,
+	[96133] = {
+		["itemID"] = 68687,
+		["abilityID"] = 24137,
 	},
 	[143065] = {
 		["itemID"] = 98773,
 		["abilityID"] = 31535,
 	},
-	[25621] = {
-		["itemID"] = 20961,
-		["abilityID"] = 13334,
+	[304430] = {
+		["itemID"] = 170358,
+		["abilityID"] = 41016,
 	},
 	[253110] = {
 		["itemID"] = 152812,
 		["abilityID"] = 38747,
 	},
-	[251646] = {
-		["abilityID"] = 36718,
-		["itemID"] = 152615,
-		["tradeskillID"] = 171,
+	[186114] = {
+		["itemID"] = 127019,
+		["abilityID"] = 34374,
 	},
-	[114754] = {
-		["abilityID"] = 26024,
-		["itemID"] = 76076,
-		["tradeskillID"] = 171,
+	[299006] = {
+		["abilityID"] = 40712,
+		["itemID"] = 168691,
+		["tradeskillID"] = 202,
 	},
-	[282860] = {
-		["itemID"] = 164652,
-		["abilityID"] = 40050,
+	[39736] = {
+		["itemID"] = 32220,
+		["abilityID"] = 15796,
 	},
-	[338254] = {
-		["itemID"] = 182001,
-		["abilityID"] = 45557,
+	[382991] = {
+		["itemID"] = 198390,
+		["abilityID"] = 40912,
 	},
-	[6518] = {
-		["itemID"] = 5541,
-		["abilityID"] = 3971,
+	[143066] = {
+		["itemID"] = 98774,
+		["abilityID"] = 31536,
 	},
 	[104303] = {
 		["itemID"] = 74648,
@@ -29532,13 +29544,13 @@ recipeLibrary = {
 		["itemID"] = 8346,
 		["abilityID"] = 5688,
 	},
-	[29657] = {
-		["itemID"] = 23530,
-		["abilityID"] = 14221,
+	[66574] = {
+		["itemID"] = 40155,
+		["abilityID"] = 21160,
 	},
-	[2386] = {
-		["itemID"] = 2569,
-		["abilityID"] = 2363,
+	[247807] = {
+		["itemID"] = 151571,
+		["abilityID"] = 36687,
 	},
 	[269734] = {
 		["itemID"] = 159939,
@@ -29553,21 +29565,22 @@ recipeLibrary = {
 		["itemID"] = 27665,
 		["abilityID"] = 15014,
 	},
+	[60357] = {
+		["abilityID"] = 20278,
+		["itemID"] = 44329,
+		["tradeskillID"] = 171,
+	},
 	[143067] = {
 		["itemID"] = 98825,
 		["abilityID"] = 31548,
 	},
-	[269735] = {
-		["itemID"] = 159939,
-		["abilityID"] = 39562,
+	[26780] = {
+		["itemID"] = 21864,
+		["abilityID"] = 13494,
 	},
-	[75290] = {
-		["itemID"] = 75089,
-		["abilityID"] = 21694,
-	},
-	[194785] = {
-		["itemID"] = 128885,
-		["abilityID"] = 34883,
+	[3116] = {
+		["itemID"] = 3240,
+		["abilityID"] = 1800,
 	},
 	[247809] = {
 		["itemID"] = 151571,
@@ -29581,54 +29594,55 @@ recipeLibrary = {
 		["itemID"] = 33461,
 		["abilityID"] = 17490,
 	},
-	[299032] = {
-		["itemID"] = 168729,
-		["abilityID"] = 40738,
-	},
-	[104304] = {
-		["itemID"] = 74644,
-		["abilityID"] = 26863,
+	[307200] = {
+		["abilityID"] = 42344,
+		["itemID"] = 171323,
+		["tradeskillID"] = 171,
 	},
 	[143068] = {
 		["itemID"] = 98826,
 		["abilityID"] = 31552,
 	},
+	[104304] = {
+		["itemID"] = 74644,
+		["abilityID"] = 26863,
+	},
 	[39720] = {
 		["itemID"] = 32205,
 		["abilityID"] = 15788,
 	},
-	[370717] = {
-		["abilityID"] = 46803,
-		["itemID"] = 191493,
+	[16649] = {
+		["itemID"] = 12425,
+		["abilityID"] = 9166,
+	},
+	[9926] = {
+		["itemID"] = 7918,
+		["abilityID"] = 5315,
+	},
+	[26909] = {
+		["itemID"] = 21777,
+		["abilityID"] = 13528,
+	},
+	[55308] = {
+		["itemID"] = 41348,
+		["abilityID"] = 19282,
+	},
+	[60355] = {
+		["abilityID"] = 20276,
+		["itemID"] = 44327,
 		["tradeskillID"] = 171,
 	},
-	[58150] = {
-		["itemID"] = 43253,
-		["abilityID"] = 19979,
-	},
-	[15853] = {
-		["itemID"] = 12209,
-		["abilityID"] = 8617,
-	},
-	[184336] = {
-		["itemID"] = 124426,
-		["abilityID"] = 34135,
-	},
-	[143106] = {
-		["itemID"] = 98806,
-		["abilityID"] = 31580,
-	},
-	[55305] = {
-		["itemID"] = 41354,
-		["abilityID"] = 19279,
+	[66582] = {
+		["itemID"] = 40145,
+		["abilityID"] = 21168,
 	},
 	[143069] = {
 		["itemID"] = 98827,
 		["abilityID"] = 31556,
 	},
-	[25305] = {
-		["itemID"] = 20826,
-		["abilityID"] = 13205,
+	[304415] = {
+		["itemID"] = 170350,
+		["abilityID"] = 41001,
 	},
 	[22923] = {
 		["itemID"] = 18508,
@@ -29651,26 +29665,25 @@ recipeLibrary = {
 		["itemID"] = 23533,
 		["abilityID"] = 14224,
 	},
+	[104305] = {
+		["itemID"] = 74649,
+		["abilityID"] = 26864,
+	},
 	[269741] = {
 		["itemID"] = 159940,
 		["abilityID"] = 39565,
 	},
-	[143070] = {
-		["itemID"] = 98828,
-		["abilityID"] = 31564,
-	},
-	[11461] = {
-		["abilityID"] = 6009,
-		["itemID"] = 9155,
-		["tradeskillID"] = 171,
+	[20872] = {
+		["itemID"] = 16989,
+		["abilityID"] = 11863,
 	},
 	[36391] = {
 		["itemID"] = 30033,
 		["abilityID"] = 15681,
 	},
-	[143105] = {
-		["itemID"] = 98805,
-		["abilityID"] = 31570,
+	[9970] = {
+		["itemID"] = 7934,
+		["abilityID"] = 5333,
 	},
 	[269742] = {
 		["itemID"] = 159940,
@@ -29684,9 +29697,9 @@ recipeLibrary = {
 		["itemID"] = 6450,
 		["abilityID"] = 39393,
 	},
-	[382984] = {
-		["itemID"] = 198390,
-		["abilityID"] = 40949,
+	[33295] = {
+		["itemID"] = 27666,
+		["abilityID"] = 15016,
 	},
 	[143071] = {
 		["itemID"] = 98829,
@@ -29700,9 +29713,9 @@ recipeLibrary = {
 		["itemID"] = 194082,
 		["abilityID"] = 47192,
 	},
-	[53925] = {
-		["itemID"] = 39983,
-		["abilityID"] = 18425,
+	[31111] = {
+		["itemID"] = 24066,
+		["abilityID"] = 14528,
 	},
 	[400808] = {
 		["itemID"] = 203408,
@@ -29712,10 +29725,6 @@ recipeLibrary = {
 		["itemID"] = 37093,
 		["abilityID"] = 17491,
 	},
-	[400809] = {
-		["itemID"] = 203410,
-		["abilityID"] = 48178,
-	},
 	[104306] = {
 		["itemID"] = 74650,
 		["abilityID"] = 26865,
@@ -29724,17 +29733,21 @@ recipeLibrary = {
 		["itemID"] = 98865,
 		["abilityID"] = 31549,
 	},
+	[400809] = {
+		["itemID"] = 203410,
+		["abilityID"] = 48178,
+	},
 	[9072] = {
 		["itemID"] = 7284,
 		["abilityID"] = 4995,
 	},
-	[55309] = {
-		["itemID"] = 41349,
-		["abilityID"] = 19283,
+	[137853] = {
+		["itemID"] = 93490,
+		["abilityID"] = 31410,
 	},
-	[9202] = {
-		["itemID"] = 7386,
-		["abilityID"] = 5054,
+	[18403] = {
+		["itemID"] = 13869,
+		["abilityID"] = 10398,
 	},
 	[400810] = {
 		["abilityID"] = 48179,
@@ -29750,10 +29763,10 @@ recipeLibrary = {
 		["itemID"] = 24264,
 		["abilityID"] = 14638,
 	},
-	[396777] = {
-		["abilityID"] = 47997,
-		["itemID"] = 202087,
-		["tradeskillID"] = 202,
+	[17635] = {
+		["abilityID"] = 9978,
+		["itemID"] = 13510,
+		["tradeskillID"] = 171,
 	},
 	[400811] = {
 		["itemID"] = 203412,
@@ -29763,9 +29776,10 @@ recipeLibrary = {
 		["itemID"] = 136852,
 		["abilityID"] = 35829,
 	},
-	[359700] = {
-		["itemID"] = 187784,
-		["abilityID"] = 46279,
+	[114782] = {
+		["abilityID"] = 26019,
+		["itemID"] = 76092,
+		["tradeskillID"] = 171,
 	},
 	[304412] = {
 		["itemID"] = 170348,
@@ -29783,10 +29797,9 @@ recipeLibrary = {
 		["itemID"] = 182010,
 		["abilityID"] = 45548,
 	},
-	[282811] = {
-		["abilityID"] = 40060,
-		["itemID"] = 164679,
-		["tradeskillID"] = 202,
+	[104307] = {
+		["itemID"] = 74651,
+		["abilityID"] = 26866,
 	},
 	[143074] = {
 		["itemID"] = 98867,
@@ -29796,9 +29809,9 @@ recipeLibrary = {
 		["itemID"] = 136856,
 		["abilityID"] = 35830,
 	},
-	[26900] = {
-		["itemID"] = 21769,
-		["abilityID"] = 13520,
+	[359701] = {
+		["itemID"] = 187784,
+		["abilityID"] = 46280,
 	},
 	[2738] = {
 		["itemID"] = 2845,
@@ -29808,39 +29821,38 @@ recipeLibrary = {
 		["itemID"] = 203414,
 		["abilityID"] = 48182,
 	},
-	[143103] = {
-		["itemID"] = 98803,
-		["abilityID"] = 31620,
+	[175869] = {
+		["abilityID"] = 33640,
+		["itemID"] = 118711,
+		["tradeskillID"] = 171,
 	},
-	[23067] = {
-		["abilityID"] = 12422,
-		["itemID"] = 9312,
-		["tradeskillID"] = 202,
-	},
-	[143075] = {
-		["itemID"] = 98868,
-		["abilityID"] = 31565,
+	[143073] = {
+		["itemID"] = 98866,
+		["abilityID"] = 31553,
 	},
 	[400815] = {
 		["itemID"] = 203415,
 		["abilityID"] = 48183,
 	},
+	[143075] = {
+		["itemID"] = 98868,
+		["abilityID"] = 31565,
+	},
 	[2162] = {
 		["itemID"] = 2310,
 		["abilityID"] = 1364,
 	},
-	[285927] = {
+	[285925] = {
 		["itemID"] = 165733,
-		["abilityID"] = 40458,
+		["abilityID"] = 40456,
 	},
-	[26906] = {
-		["itemID"] = 21774,
-		["abilityID"] = 13525,
+	[53933] = {
+		["itemID"] = 39992,
+		["abilityID"] = 18433,
 	},
-	[282807] = {
-		["abilityID"] = 40056,
-		["itemID"] = 164680,
-		["tradeskillID"] = 202,
+	[112466] = {
+		["itemID"] = 87885,
+		["abilityID"] = 27236,
 	},
 	[50620] = {
 		["itemID"] = 37094,
@@ -29850,10 +29862,9 @@ recipeLibrary = {
 		["itemID"] = 3842,
 		["abilityID"] = 1998,
 	},
-	[60354] = {
-		["abilityID"] = 20275,
-		["itemID"] = 44325,
-		["tradeskillID"] = 171,
+	[143102] = {
+		["itemID"] = 98802,
+		["abilityID"] = 31612,
 	},
 	[104308] = {
 		["itemID"] = 74652,
@@ -29863,13 +29874,13 @@ recipeLibrary = {
 		["itemID"] = 136857,
 		["abilityID"] = 35831,
 	},
-	[28947] = {
-		["itemID"] = 23115,
-		["abilityID"] = 14044,
+	[400807] = {
+		["itemID"] = 203409,
+		["abilityID"] = 48177,
 	},
-	[75293] = {
-		["itemID"] = 75096,
-		["abilityID"] = 21680,
+	[16661] = {
+		["itemID"] = 12632,
+		["abilityID"] = 9579,
 	},
 	[27658] = {
 		["itemID"] = 22246,
@@ -29879,9 +29890,9 @@ recipeLibrary = {
 		["itemID"] = 115302,
 		["abilityID"] = 33226,
 	},
-	[75291] = {
-		["itemID"] = 75064,
-		["abilityID"] = 21687,
+	[16660] = {
+		["itemID"] = 12625,
+		["abilityID"] = 9174,
 	},
 	[309638] = {
 		["itemID"] = 172439,
@@ -29891,54 +29902,55 @@ recipeLibrary = {
 		["itemID"] = 98870,
 		["abilityID"] = 31550,
 	},
-	[54556] = {
-		["itemID"] = 40675,
-		["abilityID"] = 18902,
+	[391202] = {
+		["itemID"] = 191529,
+		["abilityID"] = 47828,
 	},
-	[138886] = {
-		["itemID"] = 94585,
-		["abilityID"] = 31237,
+	[36392] = {
+		["itemID"] = 30031,
+		["abilityID"] = 15682,
 	},
-	[143101] = {
-		["itemID"] = 98801,
-		["abilityID"] = 31602,
+	[175867] = {
+		["abilityID"] = 33638,
+		["itemID"] = 116276,
+		["tradeskillID"] = 171,
 	},
-	[78380] = {
-		["itemID"] = 56480,
-		["abilityID"] = 22340,
+	[143076] = {
+		["itemID"] = 98869,
+		["abilityID"] = 31561,
 	},
-	[332074] = {
-		["itemID"] = 191333,
-		["abilityID"] = 45242,
+	[54949] = {
+		["itemID"] = 40955,
+		["abilityID"] = 19171,
 	},
 	[29663] = {
 		["itemID"] = 23534,
 		["abilityID"] = 14225,
 	},
-	[104309] = {
-		["itemID"] = 74653,
-		["abilityID"] = 26868,
-	},
 	[143078] = {
 		["itemID"] = 98871,
 		["abilityID"] = 31554,
 	},
-	[2659] = {
-		["itemID"] = 2841,
-		["abilityID"] = 1600,
+	[104309] = {
+		["itemID"] = 74653,
+		["abilityID"] = 26868,
 	},
-	[28944] = {
-		["itemID"] = 23114,
-		["abilityID"] = 14043,
+	[338110] = {
+		["itemID"] = 181946,
+		["abilityID"] = 45512,
 	},
-	[7623] = {
-		["itemID"] = 6238,
-		["abilityID"] = 4302,
+	[309443] = {
+		["itemID"] = 172449,
+		["abilityID"] = 42598,
 	},
-	[61483] = {
-		["abilityID"] = 20655,
-		["itemID"] = 44742,
+	[3923] = {
+		["abilityID"] = 2418,
+		["itemID"] = 4360,
 		["tradeskillID"] = 202,
+	},
+	[3858] = {
+		["itemID"] = 4323,
+		["abilityID"] = 2394,
 	},
 	[31455] = {
 		["itemID"] = 24266,
@@ -29948,9 +29960,10 @@ recipeLibrary = {
 		["itemID"] = 13851,
 		["abilityID"] = 8619,
 	},
-	[143100] = {
-		["itemID"] = 98800,
-		["abilityID"] = 31599,
+	[175866] = {
+		["abilityID"] = 33637,
+		["itemID"] = 116271,
+		["tradeskillID"] = 171,
 	},
 	[143079] = {
 		["itemID"] = 98872,
@@ -29960,172 +29973,170 @@ recipeLibrary = {
 		["itemID"] = 25674,
 		["abilityID"] = 14868,
 	},
-	[101923] = {
-		["itemID"] = 71989,
-		["abilityID"] = 24584,
+	[50964] = {
+		["itemID"] = 38371,
+		["abilityID"] = 20332,
 	},
-	[2403] = {
-		["itemID"] = 2585,
-		["abilityID"] = 2374,
+	[2548] = {
+		["itemID"] = 2685,
+		["abilityID"] = 1547,
 	},
-	[175868] = {
-		["abilityID"] = 33639,
-		["itemID"] = 118704,
-		["tradeskillID"] = 171,
+	[75295] = {
+		["itemID"] = 75070,
+		["abilityID"] = 21684,
 	},
-	[2163] = {
-		["itemID"] = 2311,
-		["abilityID"] = 1365,
+	[269597] = {
+		["itemID"] = 159917,
+		["abilityID"] = 39521,
 	},
-	[143080] = {
-		["itemID"] = 98873,
-		["abilityID"] = 31566,
+	[104310] = {
+		["itemID"] = 74654,
+		["abilityID"] = 26860,
 	},
 	[17632] = {
 		["abilityID"] = 9976,
 		["itemID"] = 13503,
 		["tradeskillID"] = 171,
 	},
-	[104310] = {
-		["itemID"] = 74654,
-		["abilityID"] = 26860,
+	[143080] = {
+		["itemID"] = 98873,
+		["abilityID"] = 31566,
 	},
 	[227043] = {
 		["itemID"] = 141446,
 		["abilityID"] = 36198,
 	},
-	[127009] = {
-		["itemID"] = 89368,
-		["abilityID"] = 27315,
+	[58145] = {
+		["itemID"] = 43248,
+		["abilityID"] = 19974,
 	},
-	[6521] = {
-		["itemID"] = 5542,
-		["abilityID"] = 3973,
+	[50966] = {
+		["itemID"] = 38372,
+		["abilityID"] = 20331,
 	},
-	[175865] = {
-		["abilityID"] = 33636,
-		["itemID"] = 116268,
-		["tradeskillID"] = 171,
+	[143099] = {
+		["itemID"] = 98799,
+		["abilityID"] = 31589,
 	},
-	[310536] = {
-		["abilityID"] = 42764,
-		["itemID"] = 172923,
-		["tradeskillID"] = 202,
+	[16730] = {
+		["itemID"] = 12429,
+		["abilityID"] = 9324,
 	},
-	[2387] = {
-		["itemID"] = 2570,
-		["abilityID"] = 2360,
+	[111646] = {
+		["itemID"] = 79255,
+		["abilityID"] = 27296,
 	},
-	[282876] = {
-		["itemID"] = 164648,
-		["abilityID"] = 40028,
+	[272440] = {
+		["itemID"] = 158378,
+		["abilityID"] = 39612,
 	},
 	[143081] = {
 		["itemID"] = 98874,
 		["abilityID"] = 31562,
 	},
-	[3331] = {
-		["itemID"] = 3482,
-		["abilityID"] = 1864,
+	[298257] = {
+		["abilityID"] = 40634,
+		["itemID"] = 168522,
+		["tradeskillID"] = 202,
 	},
 	[359870] = {
 		["abilityID"] = 46288,
 		["itemID"] = 187802,
 		["tradeskillID"] = 171,
 	},
-	[10568] = {
-		["itemID"] = 8206,
-		["abilityID"] = 5696,
+	[288029] = {
+		["itemID"] = 166343,
+		["abilityID"] = 40230,
 	},
 	[58301] = {
 		["itemID"] = 43350,
 		["abilityID"] = 20517,
 	},
-	[3762] = {
-		["itemID"] = 4244,
-		["abilityID"] = 2171,
+	[58144] = {
+		["itemID"] = 43247,
+		["abilityID"] = 19973,
 	},
-	[331007] = {
-		["abilityID"] = 45159,
-		["itemID"] = 180208,
-		["tradeskillID"] = 202,
-	},
-	[143082] = {
-		["itemID"] = 98913,
-		["abilityID"] = 31537,
+	[101922] = {
+		["itemID"] = 71990,
+		["abilityID"] = 24583,
 	},
 	[104311] = {
 		["itemID"] = 74655,
 		["abilityID"] = 26861,
 	},
-	[391302] = {
-		["itemID"] = 200647,
-		["abilityID"] = 47829,
+	[143082] = {
+		["itemID"] = 98913,
+		["abilityID"] = 31537,
 	},
-	[39705] = {
-		["itemID"] = 32193,
-		["abilityID"] = 15772,
+	[381386] = {
+		["itemID"] = 197775,
+		["abilityID"] = 47381,
 	},
-	[39961] = {
-		["itemID"] = 32409,
-		["abilityID"] = 15810,
+	[54550] = {
+		["itemID"] = 40668,
+		["abilityID"] = 18896,
 	},
-	[39714] = {
-		["itemID"] = 32199,
-		["abilityID"] = 15775,
+	[18444] = {
+		["itemID"] = 13866,
+		["abilityID"] = 10430,
 	},
-	[257102] = {
-		["itemID"] = 154691,
-		["abilityID"] = 39082,
+	[8782] = {
+		["itemID"] = 7049,
+		["abilityID"] = 4868,
 	},
-	[19087] = {
-		["itemID"] = 15070,
-		["abilityID"] = 10794,
+	[50962] = {
+		["itemID"] = 38375,
+		["abilityID"] = 17580,
+	},
+	[332040] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45241,
+	},
+	[332035] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45613,
 	},
 	[208615] = {
 		["itemID"] = 130875,
 		["abilityID"] = 35303,
 	},
-	[143083] = {
-		["itemID"] = 98914,
-		["abilityID"] = 31538,
-	},
 	[3507] = {
 		["itemID"] = 3843,
 		["abilityID"] = 1999,
 	},
-	[8776] = {
-		["itemID"] = 7026,
-		["abilityID"] = 4848,
-	},
-	[375190] = {
-		["itemID"] = 193489,
-		["abilityID"] = 47161,
-	},
-	[387375] = {
-		["itemID"] = 199844,
-		["abilityID"] = 47710,
-	},
-	[248939] = {
-		["itemID"] = 151933,
-		["abilityID"] = 36725,
-	},
-	[256134] = {
-		["abilityID"] = 42324,
-		["itemID"] = 171263,
+	[80478] = {
+		["abilityID"] = 21984,
+		["itemID"] = 58090,
 		["tradeskillID"] = 171,
 	},
-	[104312] = {
-		["itemID"] = 74656,
-		["abilityID"] = 26862,
+	[26763] = {
+		["itemID"] = 21876,
+		["abilityID"] = 13481,
+	},
+	[291090] = {
+		["abilityID"] = 40341,
+		["itemID"] = 166980,
+		["tradeskillID"] = 202,
+	},
+	[75297] = {
+		["itemID"] = 75095,
+		["abilityID"] = 21681,
+	},
+	[182928] = {
+		["itemID"] = 123898,
+		["abilityID"] = 34048,
 	},
 	[143084] = {
 		["itemID"] = 98921,
 		["abilityID"] = 31551,
 	},
-	[73277] = {
-		["itemID"] = 52124,
-		["abilityID"] = 21431,
+	[104312] = {
+		["itemID"] = 74656,
+		["abilityID"] = 26862,
+	},
+	[19085] = {
+		["itemID"] = 15050,
+		["abilityID"] = 10788,
 	},
 	[27659] = {
 		["itemID"] = 22248,
@@ -30135,18 +30146,17 @@ recipeLibrary = {
 		["itemID"] = 7933,
 		["abilityID"] = 5332,
 	},
-	[46106] = {
-		["abilityID"] = 16258,
-		["itemID"] = 35183,
-		["tradeskillID"] = 202,
+	[182932] = {
+		["itemID"] = 123894,
+		["abilityID"] = 34089,
 	},
-	[19086] = {
-		["itemID"] = 15066,
-		["abilityID"] = 10790,
+	[2674] = {
+		["itemID"] = 2871,
+		["abilityID"] = 1644,
 	},
-	[8778] = {
-		["itemID"] = 7027,
-		["abilityID"] = 4857,
+	[101924] = {
+		["itemID"] = 71982,
+		["abilityID"] = 24567,
 	},
 	[58142] = {
 		["itemID"] = 43245,
@@ -30156,10 +30166,9 @@ recipeLibrary = {
 		["itemID"] = 98922,
 		["abilityID"] = 31555,
 	},
-	[283915] = {
-		["abilityID"] = 40120,
-		["itemID"] = 158379,
-		["tradeskillID"] = 202,
+	[60702] = {
+		["itemID"] = 43433,
+		["abilityID"] = 20350,
 	},
 	[332011] = {
 		["itemID"] = 191330,
@@ -30170,10 +30179,9 @@ recipeLibrary = {
 		["itemID"] = 9179,
 		["tradeskillID"] = 171,
 	},
-	[387246] = {
-		["abilityID"] = 47681,
-		["itemID"] = 199414,
-		["tradeskillID"] = 202,
+	[332008] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45202,
 	},
 	[186091] = {
 		["itemID"] = 127031,
@@ -30183,9 +30191,10 @@ recipeLibrary = {
 		["itemID"] = 23535,
 		["abilityID"] = 14226,
 	},
-	[359671] = {
-		["itemID"] = 187742,
-		["abilityID"] = 46274,
+	[131216] = {
+		["abilityID"] = 27420,
+		["itemID"] = 77541,
+		["tradeskillID"] = 202,
 	},
 	[143086] = {
 		["itemID"] = 98923,
@@ -30196,14 +30205,13 @@ recipeLibrary = {
 		["itemID"] = 9172,
 		["tradeskillID"] = 171,
 	},
-	[114759] = {
-		["abilityID"] = 26029,
-		["itemID"] = 76078,
-		["tradeskillID"] = 171,
+	[138888] = {
+		["itemID"] = 94587,
+		["abilityID"] = 31232,
 	},
-	[32808] = {
-		["itemID"] = 25882,
-		["abilityID"] = 14920,
+	[58149] = {
+		["itemID"] = 43252,
+		["abilityID"] = 19978,
 	},
 	[92026] = {
 		["itemID"] = 64670,
@@ -30213,13 +30221,14 @@ recipeLibrary = {
 		["itemID"] = 24267,
 		["abilityID"] = 14640,
 	},
-	[18453] = {
-		["itemID"] = 14112,
-		["abilityID"] = 10439,
+	[28563] = {
+		["abilityID"] = 13976,
+		["itemID"] = 22837,
+		["tradeskillID"] = 171,
 	},
-	[114755] = {
-		["abilityID"] = 26025,
-		["itemID"] = 76075,
+	[175853] = {
+		["abilityID"] = 33635,
+		["itemID"] = 116266,
 		["tradeskillID"] = 171,
 	},
 	[143087] = {
@@ -30238,17 +30247,17 @@ recipeLibrary = {
 		["itemID"] = 40168,
 		["abilityID"] = 21103,
 	},
-	[282863] = {
-		["itemID"] = 164651,
-		["abilityID"] = 40047,
+	[332019] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45213,
 	},
-	[36665] = {
-		["itemID"] = 30459,
-		["abilityID"] = 15693,
+	[194704] = {
+		["itemID"] = 128882,
+		["abilityID"] = 34851,
 	},
-	[54555] = {
-		["itemID"] = 40673,
-		["abilityID"] = 18901,
+	[194699] = {
+		["itemID"] = 128879,
+		["abilityID"] = 34846,
 	},
 	[70524] = {
 		["itemID"] = 12655,
@@ -30258,9 +30267,9 @@ recipeLibrary = {
 		["itemID"] = 98925,
 		["abilityID"] = 31563,
 	},
-	[67143] = {
-		["itemID"] = 47577,
-		["abilityID"] = 21224,
+	[18401] = {
+		["itemID"] = 14048,
+		["abilityID"] = 10396,
 	},
 	[9201] = {
 		["itemID"] = 7378,
@@ -30270,17 +30279,18 @@ recipeLibrary = {
 		["itemID"] = 32196,
 		["abilityID"] = 15776,
 	},
-	[359665] = {
-		["itemID"] = 187741,
-		["abilityID"] = 46271,
+	[18450] = {
+		["itemID"] = 14130,
+		["abilityID"] = 10436,
 	},
 	[186094] = {
 		["itemID"] = 127032,
 		["abilityID"] = 34354,
 	},
-	[22927] = {
-		["itemID"] = 18510,
-		["abilityID"] = 12355,
+	[60350] = {
+		["abilityID"] = 20282,
+		["itemID"] = 41163,
+		["tradeskillID"] = 171,
 	},
 	[160978] = {
 		["itemID"] = 111441,
@@ -30294,63 +30304,65 @@ recipeLibrary = {
 		["itemID"] = 3860,
 		["abilityID"] = 5387,
 	},
-	[99658] = {
-		["itemID"] = 70164,
-		["abilityID"] = 24342,
+	[114765] = {
+		["abilityID"] = 26007,
+		["itemID"] = 76089,
+		["tradeskillID"] = 171,
 	},
 	[66429] = {
 		["itemID"] = 40166,
 		["abilityID"] = 21104,
 	},
-	[359661] = {
-		["itemID"] = 187741,
-		["abilityID"] = 46267,
+	[99660] = {
+		["itemID"] = 70165,
+		["abilityID"] = 24343,
 	},
-	[282861] = {
-		["itemID"] = 164652,
-		["abilityID"] = 40051,
+	[12618] = {
+		["abilityID"] = 6875,
+		["itemID"] = 10503,
+		["tradeskillID"] = 202,
 	},
-	[24093] = {
-		["itemID"] = 19684,
-		["abilityID"] = 12816,
+	[32470] = {
+		["itemID"] = 25669,
+		["abilityID"] = 14863,
 	},
-	[282871] = {
-		["itemID"] = 164649,
-		["abilityID"] = 40037,
+	[50970] = {
+		["itemID"] = 38399,
+		["abilityID"] = 20334,
 	},
 	[143090] = {
 		["itemID"] = 98790,
 		["abilityID"] = 31578,
 	},
-	[8780] = {
-		["itemID"] = 7047,
-		["abilityID"] = 4867,
+	[332022] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45216,
 	},
-	[80487] = {
-		["abilityID"] = 22000,
-		["itemID"] = 57099,
-		["tradeskillID"] = 171,
+	[332021] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45215,
 	},
 	[26903] = {
 		["itemID"] = 21768,
 		["abilityID"] = 13522,
 	},
-	[184403] = {
-		["itemID"] = 124450,
-		["abilityID"] = 34145,
+	[332006] = {
+		["itemID"] = 191330,
+		["abilityID"] = 42388,
 	},
-	[26902] = {
-		["itemID"] = 21767,
-		["abilityID"] = 13521,
+	[114760] = {
+		["abilityID"] = 26030,
+		["itemID"] = 76095,
+		["tradeskillID"] = 171,
 	},
 	[41500] = {
 		["abilityID"] = 15864,
 		["itemID"] = 32849,
 		["tradeskillID"] = 171,
 	},
-	[138881] = {
-		["itemID"] = 94580,
-		["abilityID"] = 31225,
+	[332018] = {
+		["itemID"] = 191330,
+		["abilityID"] = 45212,
 	},
 	[143091] = {
 		["itemID"] = 98791,
@@ -30368,124 +30380,121 @@ recipeLibrary = {
 		["itemID"] = 20452,
 		["abilityID"] = 13056,
 	},
-	[332018] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45212,
+	[138881] = {
+		["itemID"] = 94580,
+		["abilityID"] = 31225,
 	},
 	[186097] = {
 		["itemID"] = 127016,
 		["abilityID"] = 34357,
 	},
-	[114760] = {
-		["abilityID"] = 26030,
-		["itemID"] = 76095,
-		["tradeskillID"] = 171,
+	[26902] = {
+		["itemID"] = 21767,
+		["abilityID"] = 13521,
 	},
-	[332006] = {
-		["itemID"] = 191330,
-		["abilityID"] = 42388,
+	[184403] = {
+		["itemID"] = 124450,
+		["abilityID"] = 34145,
 	},
 	[143092] = {
 		["itemID"] = 98792,
 		["abilityID"] = 31598,
 	},
-	[332021] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45215,
-	},
-	[332022] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45216,
-	},
-	[50970] = {
-		["itemID"] = 38399,
-		["abilityID"] = 20334,
-	},
-	[32470] = {
-		["itemID"] = 25669,
-		["abilityID"] = 14863,
-	},
-	[12618] = {
-		["abilityID"] = 6875,
-		["itemID"] = 10503,
-		["tradeskillID"] = 202,
-	},
-	[99660] = {
-		["itemID"] = 70165,
-		["abilityID"] = 24343,
-	},
-	[114765] = {
-		["abilityID"] = 26007,
-		["itemID"] = 76089,
+	[80487] = {
+		["abilityID"] = 22000,
+		["itemID"] = 57099,
 		["tradeskillID"] = 171,
+	},
+	[8780] = {
+		["itemID"] = 7047,
+		["abilityID"] = 4867,
+	},
+	[282871] = {
+		["itemID"] = 164649,
+		["abilityID"] = 40037,
+	},
+	[24093] = {
+		["itemID"] = 19684,
+		["abilityID"] = 12816,
+	},
+	[282861] = {
+		["itemID"] = 164652,
+		["abilityID"] = 40051,
+	},
+	[359661] = {
+		["itemID"] = 187741,
+		["abilityID"] = 46267,
+	},
+	[99658] = {
+		["itemID"] = 70164,
+		["abilityID"] = 24342,
 	},
 	[143093] = {
 		["itemID"] = 98793,
 		["abilityID"] = 31601,
 	},
-	[60350] = {
-		["abilityID"] = 20282,
-		["itemID"] = 41163,
-		["tradeskillID"] = 171,
+	[22927] = {
+		["itemID"] = 18510,
+		["abilityID"] = 12355,
 	},
-	[18450] = {
-		["itemID"] = 14130,
-		["abilityID"] = 10436,
+	[359665] = {
+		["itemID"] = 187741,
+		["abilityID"] = 46271,
 	},
 	[66431] = {
 		["itemID"] = 40165,
 		["abilityID"] = 21106,
 	},
-	[18401] = {
-		["itemID"] = 14048,
-		["abilityID"] = 10396,
+	[67143] = {
+		["itemID"] = 47577,
+		["abilityID"] = 21224,
 	},
-	[194699] = {
-		["itemID"] = 128879,
-		["abilityID"] = 34846,
+	[54555] = {
+		["itemID"] = 40673,
+		["abilityID"] = 18901,
 	},
-	[194704] = {
-		["itemID"] = 128882,
-		["abilityID"] = 34851,
+	[36665] = {
+		["itemID"] = 30459,
+		["abilityID"] = 15693,
 	},
-	[332019] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45213,
+	[282863] = {
+		["itemID"] = 164651,
+		["abilityID"] = 40047,
 	},
 	[143094] = {
 		["itemID"] = 98794,
 		["abilityID"] = 31611,
 	},
-	[175853] = {
-		["abilityID"] = 33635,
-		["itemID"] = 116266,
+	[114755] = {
+		["abilityID"] = 26025,
+		["itemID"] = 76075,
 		["tradeskillID"] = 171,
 	},
-	[28563] = {
-		["abilityID"] = 13976,
-		["itemID"] = 22837,
+	[18453] = {
+		["itemID"] = 14112,
+		["abilityID"] = 10439,
+	},
+	[32808] = {
+		["itemID"] = 25882,
+		["abilityID"] = 14920,
+	},
+	[114759] = {
+		["abilityID"] = 26029,
+		["itemID"] = 76078,
 		["tradeskillID"] = 171,
-	},
-	[58149] = {
-		["itemID"] = 43252,
-		["abilityID"] = 19978,
-	},
-	[138888] = {
-		["itemID"] = 94587,
-		["abilityID"] = 31232,
 	},
 	[186100] = {
 		["itemID"] = 127017,
 		["abilityID"] = 34360,
 	},
-	[131216] = {
-		["abilityID"] = 27420,
-		["itemID"] = 77541,
-		["tradeskillID"] = 202,
+	[359671] = {
+		["itemID"] = 187742,
+		["abilityID"] = 46274,
 	},
-	[332008] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45202,
+	[387246] = {
+		["abilityID"] = 47681,
+		["itemID"] = 199414,
+		["tradeskillID"] = 202,
 	},
 	[143095] = {
 		["itemID"] = 98795,
@@ -30495,25 +30504,27 @@ recipeLibrary = {
 		["itemID"] = 25676,
 		["abilityID"] = 14870,
 	},
-	[60702] = {
-		["itemID"] = 43433,
-		["abilityID"] = 20350,
+	[283915] = {
+		["abilityID"] = 40120,
+		["itemID"] = 158379,
+		["tradeskillID"] = 202,
 	},
 	[66432] = {
 		["itemID"] = 40164,
 		["abilityID"] = 21107,
 	},
-	[101924] = {
-		["itemID"] = 71982,
-		["abilityID"] = 24567,
+	[8778] = {
+		["itemID"] = 7027,
+		["abilityID"] = 4857,
 	},
-	[2674] = {
-		["itemID"] = 2871,
-		["abilityID"] = 1644,
+	[19086] = {
+		["itemID"] = 15066,
+		["abilityID"] = 10790,
 	},
-	[182932] = {
-		["itemID"] = 123894,
-		["abilityID"] = 34089,
+	[46106] = {
+		["abilityID"] = 16258,
+		["itemID"] = 35183,
+		["tradeskillID"] = 202,
 	},
 	[17634] = {
 		["abilityID"] = 9977,
@@ -30524,220 +30535,222 @@ recipeLibrary = {
 		["itemID"] = 98796,
 		["abilityID"] = 31627,
 	},
-	[19085] = {
-		["itemID"] = 15050,
-		["abilityID"] = 10788,
+	[73277] = {
+		["itemID"] = 52124,
+		["abilityID"] = 21431,
 	},
 	[18402] = {
 		["itemID"] = 13856,
 		["abilityID"] = 10397,
 	},
-	[182928] = {
-		["itemID"] = 123898,
-		["abilityID"] = 34048,
-	},
-	[75297] = {
-		["itemID"] = 75095,
-		["abilityID"] = 21681,
-	},
-	[291090] = {
-		["abilityID"] = 40341,
-		["itemID"] = 166980,
-		["tradeskillID"] = 202,
-	},
-	[26763] = {
-		["itemID"] = 21876,
-		["abilityID"] = 13481,
-	},
-	[80478] = {
-		["abilityID"] = 21984,
-		["itemID"] = 58090,
+	[256134] = {
+		["abilityID"] = 42324,
+		["itemID"] = 171263,
 		["tradeskillID"] = 171,
+	},
+	[248939] = {
+		["itemID"] = 151933,
+		["abilityID"] = 36725,
+	},
+	[387375] = {
+		["itemID"] = 199844,
+		["abilityID"] = 47710,
+	},
+	[375190] = {
+		["itemID"] = 193489,
+		["abilityID"] = 47161,
+	},
+	[8776] = {
+		["itemID"] = 7026,
+		["abilityID"] = 4848,
 	},
 	[143097] = {
 		["itemID"] = 98797,
 		["abilityID"] = 31569,
 	},
-	[332035] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45613,
+	[143083] = {
+		["itemID"] = 98914,
+		["abilityID"] = 31538,
 	},
-	[332040] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45241,
+	[19087] = {
+		["itemID"] = 15070,
+		["abilityID"] = 10794,
 	},
-	[50962] = {
-		["itemID"] = 38375,
-		["abilityID"] = 17580,
+	[257102] = {
+		["itemID"] = 154691,
+		["abilityID"] = 39082,
 	},
-	[8782] = {
-		["itemID"] = 7049,
-		["abilityID"] = 4868,
+	[39714] = {
+		["itemID"] = 32199,
+		["abilityID"] = 15775,
 	},
-	[18444] = {
-		["itemID"] = 13866,
-		["abilityID"] = 10430,
+	[39961] = {
+		["itemID"] = 32409,
+		["abilityID"] = 15810,
 	},
-	[54550] = {
-		["itemID"] = 40668,
-		["abilityID"] = 18896,
+	[39705] = {
+		["itemID"] = 32193,
+		["abilityID"] = 15772,
 	},
-	[381386] = {
-		["itemID"] = 197775,
-		["abilityID"] = 47381,
+	[391302] = {
+		["itemID"] = 200647,
+		["abilityID"] = 47829,
 	},
 	[143098] = {
 		["itemID"] = 98798,
 		["abilityID"] = 31579,
 	},
-	[101922] = {
-		["itemID"] = 71990,
-		["abilityID"] = 24583,
-	},
-	[58144] = {
-		["itemID"] = 43247,
-		["abilityID"] = 19973,
-	},
-	[288029] = {
-		["itemID"] = 166343,
-		["abilityID"] = 40230,
-	},
-	[298257] = {
-		["abilityID"] = 40634,
-		["itemID"] = 168522,
+	[331007] = {
+		["abilityID"] = 45159,
+		["itemID"] = 180208,
 		["tradeskillID"] = 202,
 	},
-	[272440] = {
-		["itemID"] = 158378,
-		["abilityID"] = 39612,
+	[3762] = {
+		["itemID"] = 4244,
+		["abilityID"] = 2171,
 	},
-	[111646] = {
-		["itemID"] = 79255,
-		["abilityID"] = 27296,
+	[10568] = {
+		["itemID"] = 8206,
+		["abilityID"] = 5696,
 	},
-	[16730] = {
-		["itemID"] = 12429,
-		["abilityID"] = 9324,
+	[3331] = {
+		["itemID"] = 3482,
+		["abilityID"] = 1864,
 	},
-	[143099] = {
-		["itemID"] = 98799,
-		["abilityID"] = 31589,
+	[282876] = {
+		["itemID"] = 164648,
+		["abilityID"] = 40028,
 	},
-	[50966] = {
-		["itemID"] = 38372,
-		["abilityID"] = 20331,
+	[2387] = {
+		["itemID"] = 2570,
+		["abilityID"] = 2360,
 	},
-	[58145] = {
-		["itemID"] = 43248,
-		["abilityID"] = 19974,
+	[310536] = {
+		["abilityID"] = 42764,
+		["itemID"] = 172923,
+		["tradeskillID"] = 202,
+	},
+	[175865] = {
+		["abilityID"] = 33636,
+		["itemID"] = 116268,
+		["tradeskillID"] = 171,
+	},
+	[6521] = {
+		["itemID"] = 5542,
+		["abilityID"] = 3973,
+	},
+	[127009] = {
+		["itemID"] = 89368,
+		["abilityID"] = 27315,
 	},
 	[66434] = {
 		["itemID"] = 40169,
 		["abilityID"] = 21109,
 	},
-	[269597] = {
-		["itemID"] = 159917,
-		["abilityID"] = 39521,
+	[2163] = {
+		["itemID"] = 2311,
+		["abilityID"] = 1365,
 	},
-	[75295] = {
-		["itemID"] = 75070,
-		["abilityID"] = 21684,
-	},
-	[2548] = {
-		["itemID"] = 2685,
-		["abilityID"] = 1547,
-	},
-	[50964] = {
-		["itemID"] = 38371,
-		["abilityID"] = 20332,
-	},
-	[175866] = {
-		["abilityID"] = 33637,
-		["itemID"] = 116271,
+	[175868] = {
+		["abilityID"] = 33639,
+		["itemID"] = 118704,
 		["tradeskillID"] = 171,
 	},
-	[3858] = {
-		["itemID"] = 4323,
-		["abilityID"] = 2394,
+	[2403] = {
+		["itemID"] = 2585,
+		["abilityID"] = 2374,
 	},
-	[3923] = {
-		["abilityID"] = 2418,
-		["itemID"] = 4360,
+	[101923] = {
+		["itemID"] = 71989,
+		["abilityID"] = 24584,
+	},
+	[143100] = {
+		["itemID"] = 98800,
+		["abilityID"] = 31599,
+	},
+	[61483] = {
+		["abilityID"] = 20655,
+		["itemID"] = 44742,
 		["tradeskillID"] = 202,
 	},
-	[309443] = {
-		["itemID"] = 172449,
-		["abilityID"] = 42598,
+	[7623] = {
+		["itemID"] = 6238,
+		["abilityID"] = 4302,
 	},
-	[338110] = {
-		["itemID"] = 181946,
-		["abilityID"] = 45512,
+	[28944] = {
+		["itemID"] = 23114,
+		["abilityID"] = 14043,
+	},
+	[2659] = {
+		["itemID"] = 2841,
+		["abilityID"] = 1600,
 	},
 	[186106] = {
 		["itemID"] = 127033,
 		["abilityID"] = 34366,
 	},
-	[54949] = {
-		["itemID"] = 40955,
-		["abilityID"] = 19171,
+	[332074] = {
+		["itemID"] = 191333,
+		["abilityID"] = 45242,
 	},
-	[143076] = {
-		["itemID"] = 98869,
-		["abilityID"] = 31561,
+	[78380] = {
+		["itemID"] = 56480,
+		["abilityID"] = 22340,
 	},
-	[175867] = {
-		["abilityID"] = 33638,
-		["itemID"] = 116276,
-		["tradeskillID"] = 171,
+	[143101] = {
+		["itemID"] = 98801,
+		["abilityID"] = 31602,
 	},
-	[36392] = {
-		["itemID"] = 30031,
-		["abilityID"] = 15682,
+	[138886] = {
+		["itemID"] = 94585,
+		["abilityID"] = 31237,
 	},
-	[391202] = {
-		["itemID"] = 191529,
-		["abilityID"] = 47828,
+	[54556] = {
+		["itemID"] = 40675,
+		["abilityID"] = 18902,
 	},
 	[66435] = {
 		["itemID"] = 40171,
 		["abilityID"] = 21110,
 	},
-	[16660] = {
-		["itemID"] = 12625,
-		["abilityID"] = 9174,
+	[75291] = {
+		["itemID"] = 75064,
+		["abilityID"] = 21687,
 	},
 	[186107] = {
 		["itemID"] = 127033,
 		["abilityID"] = 34367,
 	},
-	[16661] = {
-		["itemID"] = 12632,
-		["abilityID"] = 9579,
+	[75293] = {
+		["itemID"] = 75096,
+		["abilityID"] = 21680,
 	},
-	[400807] = {
-		["itemID"] = 203409,
-		["abilityID"] = 48177,
+	[28947] = {
+		["itemID"] = 23115,
+		["abilityID"] = 14044,
 	},
-	[143102] = {
-		["itemID"] = 98802,
-		["abilityID"] = 31612,
+	[60354] = {
+		["abilityID"] = 20275,
+		["itemID"] = 44325,
+		["tradeskillID"] = 171,
 	},
 	[60866] = {
 		["abilityID"] = 20290,
 		["itemID"] = 41508,
 		["tradeskillID"] = 202,
 	},
-	[112466] = {
-		["itemID"] = 87885,
-		["abilityID"] = 27236,
+	[282807] = {
+		["abilityID"] = 40056,
+		["itemID"] = 164680,
+		["tradeskillID"] = 202,
 	},
-	[53933] = {
-		["itemID"] = 39992,
-		["abilityID"] = 18433,
+	[26906] = {
+		["itemID"] = 21774,
+		["abilityID"] = 13525,
 	},
-	[285925] = {
+	[285927] = {
 		["itemID"] = 165733,
-		["abilityID"] = 40456,
+		["abilityID"] = 40458,
 	},
 	[186108] = {
 		["itemID"] = 127033,
@@ -30747,26 +30760,27 @@ recipeLibrary = {
 		["itemID"] = 6451,
 		["abilityID"] = 39385,
 	},
-	[143073] = {
-		["itemID"] = 98866,
-		["abilityID"] = 31553,
+	[23067] = {
+		["abilityID"] = 12422,
+		["itemID"] = 9312,
+		["tradeskillID"] = 202,
 	},
-	[175869] = {
-		["abilityID"] = 33640,
-		["itemID"] = 118711,
-		["tradeskillID"] = 171,
+	[143103] = {
+		["itemID"] = 98803,
+		["abilityID"] = 31620,
 	},
 	[32482] = {
 		["itemID"] = 25679,
 		["abilityID"] = 14871,
 	},
-	[359701] = {
-		["itemID"] = 187784,
-		["abilityID"] = 46280,
+	[26900] = {
+		["itemID"] = 21769,
+		["abilityID"] = 13520,
 	},
-	[104307] = {
-		["itemID"] = 74651,
-		["abilityID"] = 26866,
+	[282811] = {
+		["abilityID"] = 40060,
+		["itemID"] = 164679,
+		["tradeskillID"] = 202,
 	},
 	[33732] = {
 		["abilityID"] = 15043,
@@ -30777,15 +30791,14 @@ recipeLibrary = {
 		["itemID"] = 127034,
 		["abilityID"] = 34369,
 	},
-	[114782] = {
-		["abilityID"] = 26019,
-		["itemID"] = 76092,
-		["tradeskillID"] = 171,
+	[359700] = {
+		["itemID"] = 187784,
+		["abilityID"] = 46279,
 	},
-	[17635] = {
-		["abilityID"] = 9978,
-		["itemID"] = 13510,
-		["tradeskillID"] = 171,
+	[396777] = {
+		["abilityID"] = 47997,
+		["itemID"] = 202087,
+		["tradeskillID"] = 202,
 	},
 	[143104] = {
 		["itemID"] = 98804,
@@ -30795,13 +30808,13 @@ recipeLibrary = {
 		["itemID"] = 7285,
 		["abilityID"] = 4996,
 	},
-	[18403] = {
-		["itemID"] = 13869,
-		["abilityID"] = 10398,
+	[9202] = {
+		["itemID"] = 7386,
+		["abilityID"] = 5054,
 	},
-	[137853] = {
-		["itemID"] = 93490,
-		["abilityID"] = 31410,
+	[55309] = {
+		["itemID"] = 41349,
+		["abilityID"] = 19283,
 	},
 	[384491] = {
 		["abilityID"] = 47627,
@@ -30812,29 +30825,30 @@ recipeLibrary = {
 		["itemID"] = 127034,
 		["abilityID"] = 34370,
 	},
-	[31111] = {
-		["itemID"] = 24066,
-		["abilityID"] = 14528,
+	[53925] = {
+		["itemID"] = 39983,
+		["abilityID"] = 18425,
 	},
-	[33295] = {
-		["itemID"] = 27666,
-		["abilityID"] = 15016,
+	[382984] = {
+		["itemID"] = 198390,
+		["abilityID"] = 40949,
 	},
-	[9970] = {
-		["itemID"] = 7934,
-		["abilityID"] = 5333,
+	[143105] = {
+		["itemID"] = 98805,
+		["abilityID"] = 31570,
 	},
 	[10098] = {
 		["itemID"] = 6037,
 		["abilityID"] = 5386,
 	},
-	[20872] = {
-		["itemID"] = 16989,
-		["abilityID"] = 11863,
+	[11461] = {
+		["abilityID"] = 6009,
+		["itemID"] = 9155,
+		["tradeskillID"] = 171,
 	},
-	[104305] = {
-		["itemID"] = 74649,
-		["abilityID"] = 26864,
+	[143070] = {
+		["itemID"] = 98828,
+		["abilityID"] = 31564,
 	},
 	[10482] = {
 		["itemID"] = 8172,
@@ -30844,34 +30858,34 @@ recipeLibrary = {
 		["itemID"] = 127034,
 		["abilityID"] = 34371,
 	},
-	[304415] = {
-		["itemID"] = 170350,
-		["abilityID"] = 41001,
+	[25305] = {
+		["itemID"] = 20826,
+		["abilityID"] = 13205,
 	},
-	[66582] = {
-		["itemID"] = 40145,
-		["abilityID"] = 21168,
+	[55305] = {
+		["itemID"] = 41354,
+		["abilityID"] = 19279,
 	},
-	[60355] = {
-		["abilityID"] = 20276,
-		["itemID"] = 44327,
+	[143106] = {
+		["itemID"] = 98806,
+		["abilityID"] = 31580,
+	},
+	[184336] = {
+		["itemID"] = 124426,
+		["abilityID"] = 34135,
+	},
+	[15853] = {
+		["itemID"] = 12209,
+		["abilityID"] = 8617,
+	},
+	[58150] = {
+		["itemID"] = 43253,
+		["abilityID"] = 19979,
+	},
+	[370717] = {
+		["abilityID"] = 46803,
+		["itemID"] = 191493,
 		["tradeskillID"] = 171,
-	},
-	[55308] = {
-		["itemID"] = 41348,
-		["abilityID"] = 19282,
-	},
-	[26909] = {
-		["itemID"] = 21777,
-		["abilityID"] = 13528,
-	},
-	[9926] = {
-		["itemID"] = 7918,
-		["abilityID"] = 5315,
-	},
-	[16649] = {
-		["itemID"] = 12425,
-		["abilityID"] = 9166,
 	},
 	[186112] = {
 		["itemID"] = 127019,
@@ -30881,27 +30895,25 @@ recipeLibrary = {
 		["itemID"] = 87405,
 		["abilityID"] = 27153,
 	},
-	[307200] = {
-		["abilityID"] = 42344,
-		["itemID"] = 171323,
-		["tradeskillID"] = 171,
+	[299032] = {
+		["itemID"] = 168729,
+		["abilityID"] = 40738,
 	},
 	[143107] = {
 		["itemID"] = 98807,
 		["abilityID"] = 31590,
 	},
-	[3116] = {
-		["itemID"] = 3240,
-		["abilityID"] = 1800,
+	[194785] = {
+		["itemID"] = 128885,
+		["abilityID"] = 34883,
 	},
-	[26780] = {
-		["itemID"] = 21864,
-		["abilityID"] = 13494,
+	[75290] = {
+		["itemID"] = 75089,
+		["abilityID"] = 21694,
 	},
-	[60357] = {
-		["abilityID"] = 20278,
-		["itemID"] = 44329,
-		["tradeskillID"] = 171,
+	[269735] = {
+		["itemID"] = 159939,
+		["abilityID"] = 39562,
 	},
 	[33733] = {
 		["abilityID"] = 15046,
@@ -30912,133 +30924,133 @@ recipeLibrary = {
 		["itemID"] = 127019,
 		["abilityID"] = 34373,
 	},
-	[247807] = {
-		["itemID"] = 151571,
-		["abilityID"] = 36687,
+	[2386] = {
+		["itemID"] = 2569,
+		["abilityID"] = 2363,
 	},
-	[66574] = {
-		["itemID"] = 40155,
-		["abilityID"] = 21160,
+	[29657] = {
+		["itemID"] = 23530,
+		["abilityID"] = 14221,
 	},
 	[143108] = {
 		["itemID"] = 98808,
 		["abilityID"] = 31600,
 	},
-	[143066] = {
-		["itemID"] = 98774,
-		["abilityID"] = 31536,
+	[6518] = {
+		["itemID"] = 5541,
+		["abilityID"] = 3971,
 	},
-	[382991] = {
-		["itemID"] = 198390,
-		["abilityID"] = 40912,
+	[338254] = {
+		["itemID"] = 182001,
+		["abilityID"] = 45557,
 	},
-	[39736] = {
-		["itemID"] = 32220,
-		["abilityID"] = 15796,
+	[282860] = {
+		["itemID"] = 164652,
+		["abilityID"] = 40050,
 	},
-	[299006] = {
-		["abilityID"] = 40712,
-		["itemID"] = 168691,
-		["tradeskillID"] = 202,
+	[114754] = {
+		["abilityID"] = 26024,
+		["itemID"] = 76076,
+		["tradeskillID"] = 171,
 	},
-	[186114] = {
-		["itemID"] = 127019,
-		["abilityID"] = 34374,
+	[251646] = {
+		["abilityID"] = 36718,
+		["itemID"] = 152615,
+		["tradeskillID"] = 171,
 	},
 	[126851] = {
 		["itemID"] = 87406,
 		["abilityID"] = 27152,
 	},
-	[304430] = {
-		["itemID"] = 170358,
-		["abilityID"] = 41016,
+	[25621] = {
+		["itemID"] = 20961,
+		["abilityID"] = 13334,
 	},
-	[96133] = {
-		["itemID"] = 68687,
-		["abilityID"] = 24137,
+	[143109] = {
+		["itemID"] = 98809,
+		["abilityID"] = 31603,
 	},
-	[66571] = {
-		["itemID"] = 40154,
-		["abilityID"] = 21157,
+	[30343] = {
+		["abilityID"] = 14364,
+		["itemID"] = 23770,
+		["tradeskillID"] = 202,
 	},
-	[66572] = {
-		["itemID"] = 40143,
-		["abilityID"] = 21158,
+	[299034] = {
+		["itemID"] = 168731,
+		["abilityID"] = 40740,
 	},
 	[66439] = {
 		["itemID"] = 40177,
 		["abilityID"] = 21114,
 	},
-	[12715] = {
-		["abilityID"] = 6938,
-		["itemID"] = 10644,
-		["tradeskillID"] = 202,
+	[18441] = {
+		["itemID"] = 14144,
+		["abilityID"] = 10428,
 	},
 	[186115] = {
 		["itemID"] = 127020,
 		["abilityID"] = 34375,
 	},
-	[143064] = {
-		["itemID"] = 98772,
-		["abilityID"] = 31534,
+	[208596] = {
+		["itemID"] = 136539,
+		["abilityID"] = 35302,
 	},
-	[104302] = {
-		["itemID"] = 74647,
-		["abilityID"] = 26855,
+	[66584] = {
+		["itemID"] = 40150,
+		["abilityID"] = 21170,
 	},
-	[60356] = {
-		["abilityID"] = 20277,
-		["itemID"] = 44328,
+	[143110] = {
+		["itemID"] = 98830,
+		["abilityID"] = 31615,
+	},
+	[16648] = {
+		["itemID"] = 12415,
+		["abilityID"] = 9165,
+	},
+	[28244] = {
+		["itemID"] = 22671,
+		["abilityID"] = 13920,
+	},
+	[247808] = {
+		["itemID"] = 151571,
+		["abilityID"] = 36688,
+	},
+	[80482] = {
+		["abilityID"] = 22003,
+		["itemID"] = 57194,
 		["tradeskillID"] = 171,
 	},
-	[19095] = {
-		["itemID"] = 15059,
-		["abilityID"] = 10799,
-	},
-	[130658] = {
-		["itemID"] = 89674,
-		["abilityID"] = 27393,
-	},
-	[143063] = {
-		["itemID"] = 98771,
-		["abilityID"] = 31547,
-	},
-	[39466] = {
-		["itemID"] = 31866,
-		["abilityID"] = 15764,
-	},
-	[31459] = {
-		["itemID"] = 24270,
-		["abilityID"] = 14641,
+	[186116] = {
+		["itemID"] = 127020,
+		["abilityID"] = 34376,
 	},
 	[126852] = {
 		["itemID"] = 87402,
 		["abilityID"] = 27151,
 	},
-	[143062] = {
-		["itemID"] = 98770,
-		["abilityID"] = 31546,
+	[3772] = {
+		["itemID"] = 4255,
+		["abilityID"] = 2181,
 	},
 	[143111] = {
 		["itemID"] = 98831,
 		["abilityID"] = 31623,
 	},
-	[332013] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45199,
+	[247801] = {
+		["itemID"] = 151577,
+		["abilityID"] = 36673,
 	},
-	[332016] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45210,
+	[282866] = {
+		["itemID"] = 164719,
+		["abilityID"] = 40044,
 	},
-	[30341] = {
-		["abilityID"] = 14362,
-		["itemID"] = 23768,
-		["tradeskillID"] = 202,
+	[19102] = {
+		["itemID"] = 15090,
+		["abilityID"] = 10805,
 	},
-	[43493] = {
-		["itemID"] = 33782,
-		["abilityID"] = 15997,
+	[23190] = {
+		["itemID"] = 18662,
+		["abilityID"] = 12516,
 	},
 	[186117] = {
 		["itemID"] = 127020,
@@ -31057,9 +31069,9 @@ recipeLibrary = {
 		["itemID"] = 98832,
 		["abilityID"] = 31631,
 	},
-	[330165] = {
-		["itemID"] = 180057,
-		["abilityID"] = 45051,
+	[16646] = {
+		["itemID"] = 12428,
+		["abilityID"] = 9163,
 	},
 	[18404] = {
 		["itemID"] = 13868,
@@ -31074,217 +31086,217 @@ recipeLibrary = {
 		["itemID"] = 46378,
 		["tradeskillID"] = 171,
 	},
-	[382343] = {
-		["abilityID"] = 47491,
-		["itemID"] = 198228,
-		["tradeskillID"] = 202,
+	[3500] = {
+		["itemID"] = 3856,
+		["abilityID"] = 1992,
 	},
 	[126853] = {
 		["itemID"] = 87407,
 		["abilityID"] = 27150,
 	},
-	[66567] = {
-		["itemID"] = 40142,
-		["abilityID"] = 21153,
+	[298996] = {
+		["abilityID"] = 40702,
+		["itemID"] = 168675,
+		["tradeskillID"] = 171,
 	},
 	[143113] = {
 		["itemID"] = 98833,
 		["abilityID"] = 31572,
 	},
-	[304322] = {
-		["itemID"] = 170309,
-		["abilityID"] = 40995,
+	[304431] = {
+		["itemID"] = 170358,
+		["abilityID"] = 41017,
 	},
-	[125603] = {
-		["itemID"] = 87248,
-		["abilityID"] = 27062,
+	[253122] = {
+		["abilityID"] = 39234,
+		["itemID"] = 152830,
+		["tradeskillID"] = 202,
 	},
-	[41414] = {
-		["itemID"] = 32772,
-		["abilityID"] = 15861,
+	[66441] = {
+		["itemID"] = 40180,
+		["abilityID"] = 21116,
 	},
-	[332020] = {
-		["itemID"] = 191330,
-		["abilityID"] = 45214,
+	[95755] = {
+		["itemID"] = 68357,
+		["abilityID"] = 24070,
 	},
 	[251651] = {
 		["abilityID"] = 36717,
 		["itemID"] = 152615,
 		["tradeskillID"] = 171,
 	},
-	[166669] = {
-		["itemID"] = 113355,
-		["abilityID"] = 32925,
+	[29571] = {
+		["itemID"] = 23505,
+		["abilityID"] = 14196,
 	},
-	[50952] = {
-		["itemID"] = 38424,
-		["abilityID"] = 20298,
+	[66569] = {
+		["itemID"] = 40152,
+		["abilityID"] = 21155,
 	},
-	[175880] = {
-		["abilityID"] = 33666,
-		["itemID"] = 118700,
+	[143114] = {
+		["itemID"] = 98834,
+		["abilityID"] = 31582,
+	},
+	[39467] = {
+		["itemID"] = 31869,
+		["abilityID"] = 15765,
+	},
+	[54023] = {
+		["itemID"] = 40059,
+		["abilityID"] = 18490,
+	},
+	[269715] = {
+		["itemID"] = 159922,
+		["abilityID"] = 39546,
+	},
+	[46601] = {
+		["itemID"] = 35503,
+		["abilityID"] = 16290,
+	},
+	[53936] = {
+		["abilityID"] = 18357,
+		["itemID"] = 40213,
 		["tradeskillID"] = 171,
 	},
-	[107599] = {
-		["itemID"] = 76511,
-		["abilityID"] = 26508,
+	[126854] = {
+		["itemID"] = 87403,
+		["abilityID"] = 27149,
 	},
-	[19103] = {
-		["itemID"] = 15096,
-		["abilityID"] = 10812,
-	},
-	[46138] = {
-		["itemID"] = 34369,
-		["abilityID"] = 16271,
-	},
-	[86654] = {
-		["itemID"] = 63276,
-		["abilityID"] = 23392,
-	},
-	[73222] = {
-		["itemID"] = 52081,
-		["abilityID"] = 21388,
-	},
-	[47046] = {
-		["abilityID"] = 16359,
-		["itemID"] = 35748,
-		["tradeskillID"] = 171,
-	},
-	[60969] = {
-		["itemID"] = 44554,
-		["abilityID"] = 20391,
+	[12062] = {
+		["itemID"] = 10010,
+		["abilityID"] = 6590,
 	},
 	[143115] = {
 		["itemID"] = 98835,
 		["abilityID"] = 31592,
 	},
-	[398438] = {
-		["itemID"] = 202290,
-		["abilityID"] = 48015,
+	[33290] = {
+		["itemID"] = 27661,
+		["abilityID"] = 15010,
 	},
-	[391088] = {
-		["itemID"] = 200635,
-		["abilityID"] = 47820,
+	[101741] = {
+		["itemID"] = 71819,
+		["abilityID"] = 24496,
 	},
 	[66442] = {
 		["itemID"] = 40179,
 		["abilityID"] = 21117,
 	},
-	[171692] = {
-		["itemID"] = 116427,
-		["abilityID"] = 33454,
+	[35591] = {
+		["itemID"] = 29527,
+		["abilityID"] = 15570,
 	},
-	[75267] = {
-		["itemID"] = 54486,
-		["abilityID"] = 21716,
+	[384313] = {
+		["abilityID"] = 47620,
+		["itemID"] = 198549,
+		["tradeskillID"] = 202,
 	},
-	[391781] = {
-		["itemID"] = 191529,
-		["abilityID"] = 47872,
+	[54017] = {
+		["itemID"] = 39910,
+		["abilityID"] = 18369,
 	},
-	[114762] = {
-		["abilityID"] = 26032,
-		["itemID"] = 76080,
-		["tradeskillID"] = 171,
+	[66570] = {
+		["itemID"] = 40153,
+		["abilityID"] = 21156,
 	},
 	[143116] = {
 		["itemID"] = 98836,
 		["abilityID"] = 31605,
 	},
-	[26883] = {
-		["itemID"] = 21764,
-		["abilityID"] = 13513,
+	[55377] = {
+		["itemID"] = 41394,
+		["abilityID"] = 19306,
 	},
-	[40005] = {
-		["itemID"] = 32396,
-		["abilityID"] = 15819,
+	[86653] = {
+		["itemID"] = 87561,
+		["abilityID"] = 23416,
 	},
-	[344335] = {
-		["itemID"] = 184096,
-		["abilityID"] = 45803,
+	[383325] = {
+		["itemID"] = 194872,
+		["abilityID"] = 47672,
 	},
-	[33284] = {
-		["itemID"] = 27655,
-		["abilityID"] = 15004,
+	[282879] = {
+		["itemID"] = 164648,
+		["abilityID"] = 40030,
 	},
-	[104297] = {
-		["itemID"] = 74641,
-		["abilityID"] = 24788,
+	[137845] = {
+		["itemID"] = 93568,
+		["abilityID"] = 31422,
 	},
 	[126855] = {
 		["itemID"] = 87404,
 		["abilityID"] = 27148,
 	},
-	[54019] = {
-		["itemID"] = 40041,
-		["abilityID"] = 18489,
+	[73223] = {
+		["itemID"] = 52082,
+		["abilityID"] = 21389,
 	},
 	[143117] = {
 		["itemID"] = 98837,
 		["abilityID"] = 31635,
 	},
-	[370536] = {
-		["abilityID"] = 46781,
-		["itemID"] = 191375,
+	[282889] = {
+		["itemID"] = 164657,
+		["abilityID"] = 40034,
+	},
+	[6690] = {
+		["itemID"] = 5766,
+		["abilityID"] = 4021,
+	},
+	[41415] = {
+		["itemID"] = 32774,
+		["abilityID"] = 15862,
+	},
+	[125120] = {
+		["itemID"] = 86073,
+		["abilityID"] = 27218,
+	},
+	[54020] = {
+		["abilityID"] = 18487,
+		["itemID"] = 40248,
 		["tradeskillID"] = 171,
-	},
-	[194797] = {
-		["itemID"] = 128906,
-		["abilityID"] = 34935,
-	},
-	[66443] = {
-		["itemID"] = 40182,
-		["abilityID"] = 21118,
-	},
-	[46597] = {
-		["itemID"] = 35501,
-		["abilityID"] = 16289,
-	},
-	[8334] = {
-		["abilityID"] = 4606,
-		["itemID"] = 6712,
-		["tradeskillID"] = 202,
 	},
 	[29668] = {
 		["itemID"] = 23536,
 		["abilityID"] = 14227,
 	},
-	[60715] = {
-		["itemID"] = 43261,
-		["abilityID"] = 20357,
+	[53872] = {
+		["itemID"] = 39947,
+		["abilityID"] = 18393,
 	},
 	[143118] = {
 		["itemID"] = 98838,
 		["abilityID"] = 31573,
 	},
-	[3377] = {
-		["itemID"] = 3666,
-		["abilityID"] = 1876,
+	[21144] = {
+		["itemID"] = 17198,
+		["abilityID"] = 11976,
 	},
-	[66038] = {
-		["itemID"] = 44837,
-		["abilityID"] = 21070,
-	},
-	[23507] = {
-		["abilityID"] = 12636,
-		["itemID"] = 19026,
+	[3969] = {
+		["abilityID"] = 2464,
+		["itemID"] = 4396,
 		["tradeskillID"] = 202,
 	},
-	[294812] = {
-		["itemID"] = 167960,
-		["abilityID"] = 40532,
+	[76293] = {
+		["itemID"] = 55042,
+		["abilityID"] = 21785,
+	},
+	[57425] = {
+		["abilityID"] = 19710,
+		["itemID"] = 41266,
+		["tradeskillID"] = 171,
 	},
 	[31460] = {
 		["itemID"] = 24268,
 		["abilityID"] = 14642,
 	},
-	[309174] = {
-		["itemID"] = 172235,
-		["abilityID"] = 42477,
+	[187058] = {
+		["itemID"] = 127364,
+		["abilityID"] = 34388,
 	},
-	[36355] = {
-		["itemID"] = 30041,
-		["abilityID"] = 15675,
+	[94718] = {
+		["itemID"] = 67602,
+		["abilityID"] = 24011,
 	},
 	[143119] = {
 		["itemID"] = 98839,
@@ -31294,27 +31306,25 @@ recipeLibrary = {
 		["itemID"] = 101727,
 		["abilityID"] = 31696,
 	},
-	[75260] = {
-		["itemID"] = 54479,
-		["abilityID"] = 21717,
+	[137838] = {
+		["itemID"] = 93517,
+		["abilityID"] = 31278,
 	},
-	[12046] = {
-		["itemID"] = 10047,
-		["abilityID"] = 6578,
+	[19097] = {
+		["itemID"] = 15062,
+		["abilityID"] = 10798,
 	},
-	[50943] = {
-		["itemID"] = 38406,
-		["abilityID"] = 17583,
+	[375178] = {
+		["itemID"] = 193242,
+		["abilityID"] = 47157,
 	},
-	[81725] = {
-		["abilityID"] = 22120,
-		["itemID"] = 59449,
-		["tradeskillID"] = 202,
+	[78450] = {
+		["itemID"] = 75114,
+		["abilityID"] = 22388,
 	},
-	[11458] = {
-		["abilityID"] = 6006,
-		["itemID"] = 9144,
-		["tradeskillID"] = 171,
+	[19104] = {
+		["itemID"] = 15068,
+		["abilityID"] = 10809,
 	},
 	[17637] = {
 		["abilityID"] = 9980,
@@ -31325,9 +31335,9 @@ recipeLibrary = {
 		["itemID"] = 98840,
 		["abilityID"] = 31593,
 	},
-	[2385] = {
-		["itemID"] = 2568,
-		["abilityID"] = 2361,
+	[60716] = {
+		["itemID"] = 43262,
+		["abilityID"] = 20358,
 	},
 	[18405] = {
 		["itemID"] = 14046,
@@ -31338,58 +31348,53 @@ recipeLibrary = {
 		["itemID"] = 3390,
 		["tradeskillID"] = 171,
 	},
-	[34608] = {
-		["itemID"] = 28421,
-		["abilityID"] = 15240,
+	[19075] = {
+		["itemID"] = 15079,
+		["abilityID"] = 10781,
 	},
-	[251658] = {
-		["abilityID"] = 36716,
-		["itemID"] = 152615,
-		["tradeskillID"] = 171,
+	[2397] = {
+		["itemID"] = 2580,
+		["abilityID"] = 2367,
 	},
-	[28571] = {
-		["abilityID"] = 13985,
-		["itemID"] = 22841,
-		["tradeskillID"] = 171,
+	[45571] = {
+		["itemID"] = 34768,
+		["abilityID"] = 19735,
 	},
-	[360318] = {
-		["abilityID"] = 46300,
-		["itemID"] = 187850,
-		["tradeskillID"] = 171,
+	[383534] = {
+		["itemID"] = 194869,
+		["abilityID"] = 47571,
 	},
 	[143121] = {
 		["itemID"] = 98841,
 		["abilityID"] = 31606,
 	},
-	[28544] = {
-		["abilityID"] = 13962,
-		["itemID"] = 22824,
-		["tradeskillID"] = 171,
+	[289174] = {
+		["itemID"] = 166520,
+		["abilityID"] = 40282,
 	},
-	[2337] = {
-		["abilityID"] = 1385,
-		["itemID"] = 858,
-		["tradeskillID"] = 171,
+	[194705] = {
+		["itemID"] = 128881,
+		["abilityID"] = 34852,
 	},
 	[66445] = {
 		["itemID"] = 40173,
 		["abilityID"] = 21120,
 	},
-	[75253] = {
-		["itemID"] = 54478,
-		["abilityID"] = 21669,
+	[29569] = {
+		["itemID"] = 23504,
+		["abilityID"] = 14195,
 	},
-	[294813] = {
-		["itemID"] = 167960,
-		["abilityID"] = 40533,
+	[6695] = {
+		["itemID"] = 5765,
+		["abilityID"] = 4024,
 	},
-	[99445] = {
-		["itemID"] = 69941,
-		["abilityID"] = 24295,
+	[75261] = {
+		["itemID"] = 54482,
+		["abilityID"] = 21711,
 	},
-	[187060] = {
-		["itemID"] = 127367,
-		["abilityID"] = 34390,
+	[125523] = {
+		["itemID"] = 82397,
+		["abilityID"] = 27038,
 	},
 	[143122] = {
 		["itemID"] = 98842,
@@ -31399,67 +31404,67 @@ recipeLibrary = {
 		["itemID"] = 101729,
 		["abilityID"] = 31697,
 	},
-	[75255] = {
-		["itemID"] = 54449,
-		["abilityID"] = 21701,
+	[2737] = {
+		["itemID"] = 2844,
+		["abilityID"] = 1646,
 	},
 	[22757] = {
 		["itemID"] = 18262,
 		["abilityID"] = 12302,
 	},
-	[73336] = {
-		["itemID"] = 52212,
-		["abilityID"] = 21439,
+	[332070] = {
+		["itemID"] = 191333,
+		["abilityID"] = 45613,
 	},
-	[294800] = {
-		["itemID"] = 167946,
-		["abilityID"] = 40520,
+	[247771] = {
+		["itemID"] = 151580,
+		["abilityID"] = 36658,
 	},
 	[47048] = {
 		["abilityID"] = 16361,
 		["itemID"] = 35749,
 		["tradeskillID"] = 171,
 	},
-	[24092] = {
-		["itemID"] = 19683,
-		["abilityID"] = 12817,
+	[28570] = {
+		["abilityID"] = 13983,
+		["itemID"] = 22840,
+		["tradeskillID"] = 171,
 	},
 	[143123] = {
 		["itemID"] = 98881,
 		["abilityID"] = 31616,
 	},
-	[294794] = {
-		["itemID"] = 167943,
-		["abilityID"] = 40514,
+	[50942] = {
+		["itemID"] = 38407,
+		["abilityID"] = 20309,
 	},
-	[23068] = {
-		["abilityID"] = 12421,
-		["itemID"] = 9313,
-		["tradeskillID"] = 202,
+	[209507] = {
+		["itemID"] = 136689,
+		["abilityID"] = 35785,
 	},
 	[66446] = {
 		["itemID"] = 40113,
 		["abilityID"] = 21121,
 	},
-	[31451] = {
-		["itemID"] = 24261,
-		["abilityID"] = 14635,
+	[75258] = {
+		["itemID"] = 54481,
+		["abilityID"] = 21710,
 	},
 	[25317] = {
 		["itemID"] = 20827,
 		["abilityID"] = 13206,
 	},
-	[50940] = {
-		["itemID"] = 38411,
-		["abilityID"] = 20311,
+	[121841] = {
+		["itemID"] = 83087,
+		["abilityID"] = 26596,
 	},
-	[78456] = {
-		["itemID"] = 75092,
-		["abilityID"] = 22394,
+	[137835] = {
+		["itemID"] = 93511,
+		["abilityID"] = 31297,
 	},
-	[143124] = {
-		["itemID"] = 98882,
-		["abilityID"] = 31624,
+	[26085] = {
+		["itemID"] = 21340,
+		["abilityID"] = 13397,
 	},
 	[3293] = {
 		["itemID"] = 3488,
@@ -31469,96 +31474,93 @@ recipeLibrary = {
 		["itemID"] = 3474,
 		["abilityID"] = 1860,
 	},
-	[29695] = {
-		["itemID"] = 23543,
-		["abilityID"] = 14234,
+	[19074] = {
+		["itemID"] = 15069,
+		["abilityID"] = 10780,
 	},
-	[307095] = {
-		["abilityID"] = 42329,
-		["itemID"] = 171272,
-		["tradeskillID"] = 171,
+	[86005] = {
+		["itemID"] = 61981,
+		["abilityID"] = 22538,
 	},
-	[285098] = {
-		["itemID"] = 165398,
-		["abilityID"] = 40177,
+	[31104] = {
+		["itemID"] = 24056,
+		["abilityID"] = 14521,
 	},
 	[3453] = {
 		["abilityID"] = 1936,
 		["itemID"] = 3828,
 		["tradeskillID"] = 171,
 	},
-	[187064] = {
-		["itemID"] = 127372,
-		["abilityID"] = 34391,
+	[28545] = {
+		["abilityID"] = 13963,
+		["itemID"] = 22825,
+		["tradeskillID"] = 171,
 	},
 	[143125] = {
 		["itemID"] = 98883,
 		["abilityID"] = 31632,
 	},
-	[375196] = {
-		["itemID"] = 193493,
-		["abilityID"] = 47076,
+	[3508] = {
+		["itemID"] = 3844,
+		["abilityID"] = 2000,
 	},
-	[45564] = {
-		["itemID"] = 34763,
-		["abilityID"] = 19716,
+	[3371] = {
+		["itemID"] = 3220,
+		["abilityID"] = 1872,
 	},
 	[66447] = {
 		["itemID"] = 40111,
 		["abilityID"] = 21122,
 	},
-	[200466] = {
-		["abilityID"] = 35159,
-		["itemID"] = 132982,
-		["tradeskillID"] = 202,
+	[58312] = {
+		["itemID"] = 43366,
+		["abilityID"] = 20527,
 	},
-	[80488] = {
-		["abilityID"] = 21985,
-		["itemID"] = 58093,
-		["tradeskillID"] = 171,
+	[26907] = {
+		["itemID"] = 21775,
+		["abilityID"] = 13526,
 	},
 	[29669] = {
 		["itemID"] = 23537,
 		["abilityID"] = 14228,
 	},
-	[294796] = {
-		["itemID"] = 167950,
-		["abilityID"] = 40516,
+	[338238] = {
+		["itemID"] = 181431,
+		["abilityID"] = 45546,
 	},
-	[3773] = {
-		["itemID"] = 4256,
-		["abilityID"] = 2182,
+	[143126] = {
+		["itemID"] = 98884,
+		["abilityID"] = 31637,
 	},
-	[28572] = {
-		["abilityID"] = 13986,
-		["itemID"] = 22842,
-		["tradeskillID"] = 171,
+	[25498] = {
+		["itemID"] = 20909,
+		["abilityID"] = 13292,
 	},
-	[278414] = {
-		["itemID"] = 165739,
-		["abilityID"] = 39838,
+	[50941] = {
+		["itemID"] = 38409,
+		["abilityID"] = 20306,
 	},
 	[3869] = {
 		["itemID"] = 4332,
 		["abilityID"] = 2403,
 	},
-	[16640] = {
-		["itemID"] = 12643,
-		["abilityID"] = 9157,
+	[33279] = {
+		["itemID"] = 27651,
+		["abilityID"] = 15003,
 	},
 	[3933] = {
 		["abilityID"] = 2429,
 		["itemID"] = 4367,
 		["tradeskillID"] = 202,
 	},
-	[3965] = {
-		["abilityID"] = 2460,
-		["itemID"] = 4392,
-		["tradeskillID"] = 202,
+	[47049] = {
+		["abilityID"] = 16360,
+		["itemID"] = 35750,
+		["tradeskillID"] = 171,
 	},
-	[338267] = {
-		["itemID"] = 181453,
-		["abilityID"] = 45570,
+	[8789] = {
+		["itemID"] = 7056,
+		["abilityID"] = 4871,
 	},
 	[143127] = {
 		["itemID"] = 98885,
@@ -31568,9 +31570,9 @@ recipeLibrary = {
 		["itemID"] = 25680,
 		["abilityID"] = 14872,
 	},
-	[125535] = {
-		["itemID"] = 82425,
-		["abilityID"] = 27026,
+	[360317] = {
+		["itemID"] = 187849,
+		["abilityID"] = 46298,
 	},
 	[66448] = {
 		["itemID"] = 40112,
@@ -31581,220 +31583,220 @@ recipeLibrary = {
 		["itemID"] = 28102,
 		["tradeskillID"] = 171,
 	},
-	[16639] = {
-		["itemID"] = 12644,
-		["abilityID"] = 9158,
+	[330149] = {
+		["itemID"] = 180055,
+		["abilityID"] = 45035,
 	},
-	[23710] = {
-		["itemID"] = 19163,
-		["abilityID"] = 12703,
+	[182966] = {
+		["itemID"] = 123894,
+		["abilityID"] = 34073,
 	},
-	[187065] = {
-		["itemID"] = 127370,
-		["abilityID"] = 34392,
+	[294803] = {
+		["itemID"] = 167948,
+		["abilityID"] = 40523,
 	},
 	[143128] = {
 		["itemID"] = 98886,
 		["abilityID"] = 31584,
 	},
-	[370551] = {
-		["abilityID"] = 46785,
-		["itemID"] = 191387,
-		["tradeskillID"] = 171,
+	[294801] = {
+		["itemID"] = 167946,
+		["abilityID"] = 40521,
 	},
 	[18406] = {
 		["itemID"] = 13858,
 		["abilityID"] = 10400,
 	},
-	[130657] = {
-		["itemID"] = 89680,
-		["abilityID"] = 27392,
-	},
-	[235755] = {
-		["abilityID"] = 36432,
-		["itemID"] = 144333,
+	[294785] = {
+		["abilityID"] = 40505,
+		["itemID"] = 167940,
 		["tradeskillID"] = 202,
 	},
-	[107624] = {
-		["itemID"] = 76560,
-		["abilityID"] = 26504,
+	[278419] = {
+		["itemID"] = 165743,
+		["abilityID"] = 39843,
 	},
-	[32766] = {
-		["abilityID"] = 14914,
-		["itemID"] = 25868,
-		["tradeskillID"] = 171,
+	[62202] = {
+		["itemID"] = 44936,
+		["abilityID"] = 20752,
 	},
-	[80496] = {
-		["abilityID"] = 21997,
-		["itemID"] = 58146,
-		["tradeskillID"] = 171,
+	[125529] = {
+		["itemID"] = 82403,
+		["abilityID"] = 27045,
+	},
+	[294798] = {
+		["itemID"] = 167950,
+		["abilityID"] = 40518,
 	},
 	[143129] = {
 		["itemID"] = 98887,
 		["abilityID"] = 31594,
 	},
-	[26878] = {
-		["itemID"] = 20969,
-		["abilityID"] = 13509,
+	[78459] = {
+		["itemID"] = 75081,
+		["abilityID"] = 22397,
 	},
-	[107643] = {
-		["itemID"] = 76565,
-		["abilityID"] = 26610,
+	[375145] = {
+		["itemID"] = 193454,
+		["abilityID"] = 47083,
 	},
 	[41418] = {
 		["itemID"] = 32776,
 		["abilityID"] = 15860,
 	},
-	[76269] = {
-		["itemID"] = 55031,
-		["abilityID"] = 21774,
+	[338265] = {
+		["itemID"] = 182054,
+		["abilityID"] = 45565,
 	},
-	[272227] = {
-		["itemID"] = 153689,
-		["abilityID"] = 39608,
+	[28955] = {
+		["itemID"] = 23120,
+		["abilityID"] = 14048,
 	},
-	[375152] = {
-		["itemID"] = 193463,
-		["abilityID"] = 47111,
+	[63192] = {
+		["itemID"] = 45560,
+		["abilityID"] = 20821,
 	},
-	[187066] = {
-		["itemID"] = 127373,
-		["abilityID"] = 34393,
+	[80481] = {
+		["abilityID"] = 22019,
+		["itemID"] = 58091,
+		["tradeskillID"] = 171,
 	},
 	[143130] = {
 		["itemID"] = 98888,
 		["abilityID"] = 31607,
 	},
-	[375156] = {
-		["itemID"] = 193462,
-		["abilityID"] = 47109,
+	[114781] = {
+		["abilityID"] = 26018,
+		["itemID"] = 76132,
+		["tradeskillID"] = 171,
 	},
 	[196375] = {
 		["itemID"] = 130869,
 		["abilityID"] = 35048,
 	},
-	[10003] = {
-		["itemID"] = 7954,
-		["abilityID"] = 5346,
+	[28543] = {
+		["abilityID"] = 13961,
+		["itemID"] = 22823,
+		["tradeskillID"] = 171,
 	},
 	[62409] = {
 		["abilityID"] = 20768,
 		["itemID"] = 44958,
 		["tradeskillID"] = 171,
 	},
-	[294767] = {
-		["itemID"] = 167936,
-		["abilityID"] = 40484,
+	[73340] = {
+		["itemID"] = 52242,
+		["abilityID"] = 21443,
 	},
 	[47050] = {
 		["abilityID"] = 16358,
 		["itemID"] = 35751,
 		["tradeskillID"] = 171,
 	},
-	[31101] = {
-		["itemID"] = 24053,
-		["abilityID"] = 14526,
+	[375141] = {
+		["itemID"] = 193443,
+		["abilityID"] = 47119,
 	},
 	[143131] = {
 		["itemID"] = 98814,
 		["abilityID"] = 31613,
 	},
-	[188344] = {
-		["abilityID"] = 34473,
-		["itemID"] = 127849,
-		["tradeskillID"] = 171,
+	[3813] = {
+		["itemID"] = 4245,
+		["abilityID"] = 4003,
 	},
-	[101746] = {
-		["itemID"] = 71825,
-		["abilityID"] = 24501,
+	[370556] = {
+		["abilityID"] = 46787,
+		["itemID"] = 191393,
+		["tradeskillID"] = 171,
 	},
 	[66450] = {
 		["itemID"] = 40118,
 		["abilityID"] = 21125,
 	},
-	[125548] = {
-		["itemID"] = 82438,
-		["abilityID"] = 27016,
+	[253112] = {
+		["itemID"] = 152813,
+		["abilityID"] = 38748,
 	},
 	[25318] = {
 		["itemID"] = 20828,
 		["abilityID"] = 13207,
 	},
-	[294749] = {
-		["itemID"] = 167966,
-		["abilityID"] = 40463,
+	[11457] = {
+		["abilityID"] = 6005,
+		["itemID"] = 3928,
+		["tradeskillID"] = 171,
 	},
 	[6458] = {
 		["abilityID"] = 3945,
 		["itemID"] = 5507,
 		["tradeskillID"] = 202,
 	},
-	[143132] = {
-		["itemID"] = 98815,
-		["abilityID"] = 31614,
+	[26086] = {
+		["itemID"] = 21341,
+		["abilityID"] = 13398,
 	},
-	[375168] = {
-		["itemID"] = 193470,
-		["abilityID"] = 47140,
+	[294771] = {
+		["itemID"] = 167938,
+		["abilityID"] = 40488,
 	},
-	[382327] = {
-		["abilityID"] = 47507,
-		["itemID"] = 198172,
-		["tradeskillID"] = 202,
+	[294759] = {
+		["itemID"] = 167990,
+		["abilityID"] = 40473,
 	},
-	[176732] = {
-		["abilityID"] = 33705,
-		["itemID"] = 118741,
-		["tradeskillID"] = 202,
+	[45562] = {
+		["itemID"] = 34761,
+		["abilityID"] = 19714,
 	},
 	[54218] = {
 		["abilityID"] = 18532,
 		["itemID"] = 40073,
 		["tradeskillID"] = 171,
 	},
-	[160982] = {
-		["itemID"] = 111445,
-		["abilityID"] = 32632,
+	[31102] = {
+		["itemID"] = 24054,
+		["abilityID"] = 14534,
 	},
-	[182975] = {
-		["itemID"] = 123916,
-		["abilityID"] = 34064,
+	[182972] = {
+		["itemID"] = 123896,
+		["abilityID"] = 34067,
 	},
-	[78451] = {
-		["itemID"] = 75116,
-		["abilityID"] = 22389,
+	[29694] = {
+		["itemID"] = 23542,
+		["abilityID"] = 14233,
 	},
 	[143133] = {
 		["itemID"] = 98816,
 		["abilityID"] = 31621,
 	},
-	[402147] = {
-		["itemID"] = 203814,
-		["abilityID"] = 48243,
+	[330164] = {
+		["itemID"] = 180055,
+		["abilityID"] = 45050,
 	},
-	[78468] = {
-		["itemID"] = 75127,
-		["abilityID"] = 22404,
+	[182973] = {
+		["itemID"] = 123891,
+		["abilityID"] = 34066,
 	},
-	[107645] = {
-		["itemID"] = 76538,
-		["abilityID"] = 26476,
+	[272226] = {
+		["itemID"] = 153690,
+		["abilityID"] = 39607,
 	},
-	[160986] = {
-		["itemID"] = 111449,
-		["abilityID"] = 32636,
+	[173289] = {
+		["abilityID"] = 33564,
+		["itemID"] = 118008,
+		["tradeskillID"] = 202,
 	},
-	[307667] = {
-		["itemID"] = 171378,
-		["abilityID"] = 42367,
+	[294769] = {
+		["itemID"] = 167938,
+		["abilityID"] = 40486,
 	},
-	[45560] = {
-		["itemID"] = 34759,
-		["abilityID"] = 19712,
+	[78448] = {
+		["itemID"] = 75094,
+		["abilityID"] = 22386,
 	},
-	[28027] = {
-		["itemID"] = 22460,
-		["abilityID"] = 15155,
+	[29692] = {
+		["itemID"] = 23540,
+		["abilityID"] = 14231,
 	},
 	[143134] = {
 		["itemID"] = 98817,
@@ -31809,39 +31811,42 @@ recipeLibrary = {
 		["itemID"] = 130870,
 		["abilityID"] = 35049,
 	},
-	[35575] = {
-		["itemID"] = 29515,
-		["abilityID"] = 15565,
+	[32765] = {
+		["abilityID"] = 14913,
+		["itemID"] = 25867,
+		["tradeskillID"] = 171,
 	},
 	[62410] = {
 		["abilityID"] = 20769,
 		["itemID"] = 8827,
 		["tradeskillID"] = 171,
 	},
-	[188341] = {
-		["abilityID"] = 34470,
-		["itemID"] = 127848,
-		["tradeskillID"] = 171,
+	[294765] = {
+		["itemID"] = 167964,
+		["abilityID"] = 40479,
 	},
-	[187639] = {
-		["itemID"] = 127764,
-		["abilityID"] = 34422,
+	[46776] = {
+		["itemID"] = 35694,
+		["abilityID"] = 16303,
 	},
-	[7753] = {
-		["itemID"] = 4592,
-		["abilityID"] = 4355,
+	[310490] = {
+		["abilityID"] = 42733,
+		["itemID"] = 172912,
+		["tradeskillID"] = 202,
 	},
 	[143135] = {
 		["itemID"] = 98818,
 		["abilityID"] = 31629,
 	},
-	[55997] = {
-		["itemID"] = 41252,
-		["abilityID"] = 19451,
+	[139197] = {
+		["abilityID"] = 31387,
+		["itemID"] = 92747,
+		["tradeskillID"] = 202,
 	},
-	[4096] = {
-		["itemID"] = 4455,
-		["abilityID"] = 2502,
+	[188345] = {
+		["abilityID"] = 34474,
+		["itemID"] = 127849,
+		["tradeskillID"] = 171,
 	},
 	[66452] = {
 		["itemID"] = 40115,
@@ -31852,80 +31857,81 @@ recipeLibrary = {
 		["itemID"] = 28103,
 		["tradeskillID"] = 171,
 	},
-	[182981] = {
-		["itemID"] = 123910,
-		["abilityID"] = 34058,
+	[29693] = {
+		["itemID"] = 23541,
+		["abilityID"] = 14232,
 	},
-	[182976] = {
-		["itemID"] = 123915,
-		["abilityID"] = 34063,
+	[382331] = {
+		["abilityID"] = 47503,
+		["itemID"] = 198180,
+		["tradeskillID"] = 202,
 	},
-	[31058] = {
-		["itemID"] = 24087,
-		["abilityID"] = 14552,
+	[188343] = {
+		["abilityID"] = 34472,
+		["itemID"] = 127849,
+		["tradeskillID"] = 171,
 	},
 	[143136] = {
 		["itemID"] = 98819,
 		["abilityID"] = 31630,
 	},
-	[139192] = {
-		["abilityID"] = 31386,
-		["itemID"] = 95416,
-		["tradeskillID"] = 202,
+	[294753] = {
+		["itemID"] = 167968,
+		["abilityID"] = 40467,
 	},
-	[73620] = {
-		["itemID"] = 52492,
-		["abilityID"] = 21531,
+	[18407] = {
+		["itemID"] = 13857,
+		["abilityID"] = 10402,
 	},
-	[45554] = {
-		["itemID"] = 34753,
-		["abilityID"] = 19726,
+	[188346] = {
+		["abilityID"] = 34475,
+		["itemID"] = 127850,
+		["tradeskillID"] = 171,
 	},
 	[37836] = {
 		["itemID"] = 30816,
 		["abilityID"] = 15707,
 	},
-	[330203] = {
-		["itemID"] = 180058,
-		["abilityID"] = 45087,
+	[182974] = {
+		["itemID"] = 123917,
+		["abilityID"] = 34065,
 	},
-	[12620] = {
-		["abilityID"] = 6877,
-		["itemID"] = 10548,
-		["tradeskillID"] = 202,
+	[370438] = {
+		["abilityID"] = 46762,
+		["itemID"] = 191318,
+		["tradeskillID"] = 171,
 	},
-	[34546] = {
-		["itemID"] = 28438,
-		["abilityID"] = 15233,
+	[46777] = {
+		["itemID"] = 35700,
+		["abilityID"] = 16304,
 	},
-	[143137] = {
-		["itemID"] = 98820,
-		["abilityID"] = 31638,
+	[9972] = {
+		["itemID"] = 7935,
+		["abilityID"] = 5334,
 	},
-	[6688] = {
-		["itemID"] = 5763,
-		["abilityID"] = 4020,
+	[272230] = {
+		["itemID"] = 153687,
+		["abilityID"] = 39610,
 	},
 	[196382] = {
 		["itemID"] = 130872,
 		["abilityID"] = 35050,
 	},
-	[41420] = {
-		["itemID"] = 32833,
-		["abilityID"] = 15872,
+	[66453] = {
+		["itemID"] = 40116,
+		["abilityID"] = 21128,
 	},
-	[12754] = {
-		["abilityID"] = 6949,
-		["itemID"] = 10586,
-		["tradeskillID"] = 202,
+	[86640] = {
+		["itemID"] = 62233,
+		["abilityID"] = 23404,
 	},
-	[3776] = {
-		["itemID"] = 4259,
-		["abilityID"] = 2185,
+	[78452] = {
+		["itemID"] = 75109,
+		["abilityID"] = 22390,
 	},
-	[182988] = {
-		["itemID"] = 123911,
-		["abilityID"] = 34051,
+	[99458] = {
+		["itemID"] = 69952,
+		["abilityID"] = 24301,
 	},
 	[282164] = {
 		["itemID"] = 164675,
@@ -31935,31 +31941,29 @@ recipeLibrary = {
 		["itemID"] = 98821,
 		["abilityID"] = 31571,
 	},
-	[8895] = {
-		["abilityID"] = 4927,
-		["itemID"] = 7189,
-		["tradeskillID"] = 202,
+	[26912] = {
+		["itemID"] = 21784,
+		["abilityID"] = 13531,
 	},
-	[196383] = {
-		["itemID"] = 130873,
-		["abilityID"] = 35051,
+	[73621] = {
+		["itemID"] = 52493,
+		["abilityID"] = 21530,
 	},
-	[282165] = {
-		["itemID"] = 164675,
-		["abilityID"] = 40116,
+	[22759] = {
+		["itemID"] = 18263,
+		["abilityID"] = 12303,
 	},
-	[330157] = {
-		["itemID"] = 180059,
-		["abilityID"] = 45043,
+	[36256] = {
+		["itemID"] = 23565,
+		["abilityID"] = 15640,
 	},
-	[19067] = {
-		["itemID"] = 15057,
-		["abilityID"] = 10774,
+	[53880] = {
+		["itemID"] = 39955,
+		["abilityID"] = 18401,
 	},
-	[188317] = {
-		["abilityID"] = 34446,
-		["itemID"] = 127840,
-		["tradeskillID"] = 171,
+	[7754] = {
+		["itemID"] = 6316,
+		["abilityID"] = 4356,
 	},
 	[282166] = {
 		["itemID"] = 164675,
@@ -31969,48 +31973,46 @@ recipeLibrary = {
 		["itemID"] = 98822,
 		["abilityID"] = 31581,
 	},
-	[122669] = {
-		["itemID"] = 83802,
-		["abilityID"] = 26582,
+	[99446] = {
+		["itemID"] = 69942,
+		["abilityID"] = 24296,
 	},
 	[196384] = {
 		["itemID"] = 130873,
 		["abilityID"] = 35052,
 	},
-	[28582] = {
-		["abilityID"] = 13995,
-		["itemID"] = 21884,
-		["tradeskillID"] = 171,
+	[182980] = {
+		["itemID"] = 123911,
+		["abilityID"] = 34059,
 	},
 	[33741] = {
 		["abilityID"] = 15047,
 		["itemID"] = 28104,
 		["tradeskillID"] = 171,
 	},
-	[370476] = {
-		["abilityID"] = 46772,
-		["itemID"] = 191348,
-		["tradeskillID"] = 171,
+	[34547] = {
+		["itemID"] = 28440,
+		["abilityID"] = 15228,
 	},
-	[256246] = {
-		["itemID"] = 153598,
-		["abilityID"] = 38984,
+	[39738] = {
+		["itemID"] = 32222,
+		["abilityID"] = 15801,
 	},
-	[282168] = {
-		["itemID"] = 164674,
-		["abilityID"] = 40112,
+	[70550] = {
+		["itemID"] = 49891,
+		["abilityID"] = 21363,
 	},
-	[26087] = {
-		["itemID"] = 21342,
-		["abilityID"] = 13399,
+	[143140] = {
+		["itemID"] = 98823,
+		["abilityID"] = 31591,
 	},
 	[290360] = {
 		["itemID"] = 152875,
 		["abilityID"] = 40330,
 	},
-	[196385] = {
-		["itemID"] = 130875,
-		["abilityID"] = 35053,
+	[73622] = {
+		["itemID"] = 52490,
+		["abilityID"] = 21529,
 	},
 	[282169] = {
 		["itemID"] = 164674,
@@ -32025,9 +32027,9 @@ recipeLibrary = {
 		["itemID"] = 152876,
 		["abilityID"] = 40331,
 	},
-	[101740] = {
-		["itemID"] = 71818,
-		["abilityID"] = 24495,
+	[32469] = {
+		["itemID"] = 25659,
+		["abilityID"] = 14862,
 	},
 	[282170] = {
 		["itemID"] = 164674,
@@ -32037,13 +32039,14 @@ recipeLibrary = {
 		["itemID"] = 98824,
 		["abilityID"] = 31604,
 	},
-	[43707] = {
-		["itemID"] = 33825,
-		["abilityID"] = 16003,
+	[60403] = {
+		["abilityID"] = 20272,
+		["itemID"] = 44323,
+		["tradeskillID"] = 171,
 	},
-	[182982] = {
-		["itemID"] = 123917,
-		["abilityID"] = 34057,
+	[45557] = {
+		["itemID"] = 34756,
+		["abilityID"] = 19730,
 	},
 	[28903] = {
 		["itemID"] = 23094,
@@ -32053,10 +32056,9 @@ recipeLibrary = {
 		["itemID"] = 43369,
 		["abilityID"] = 20556,
 	},
-	[247695] = {
-		["abilityID"] = 36643,
-		["itemID"] = 151607,
-		["tradeskillID"] = 171,
+	[3328] = {
+		["itemID"] = 3480,
+		["abilityID"] = 1862,
 	},
 	[29671] = {
 		["itemID"] = 23538,
@@ -32070,35 +32072,34 @@ recipeLibrary = {
 		["itemID"] = 98889,
 		["abilityID"] = 31617,
 	},
-	[374550] = {
-		["itemID"] = 192892,
-		["abilityID"] = 47007,
-	},
-	[196387] = {
-		["itemID"] = 130878,
-		["abilityID"] = 35054,
-	},
-	[382321] = {
-		["abilityID"] = 47513,
-		["itemID"] = 198335,
-		["tradeskillID"] = 202,
-	},
-	[29688] = {
-		["abilityID"] = 14157,
-		["itemID"] = 23571,
+	[17571] = {
+		["abilityID"] = 9952,
+		["itemID"] = 13452,
 		["tradeskillID"] = 171,
 	},
-	[374542] = {
-		["itemID"] = 193041,
-		["abilityID"] = 47001,
+	[73623] = {
+		["itemID"] = 52489,
+		["abilityID"] = 21528,
+	},
+	[33289] = {
+		["itemID"] = 27660,
+		["abilityID"] = 15009,
+	},
+	[253188] = {
+		["itemID"] = 162464,
+		["abilityID"] = 38740,
+	},
+	[383530] = {
+		["itemID"] = 194862,
+		["abilityID"] = 47576,
 	},
 	[47053] = {
 		["itemID"] = 35759,
 		["abilityID"] = 16363,
 	},
-	[73362] = {
-		["itemID"] = 52249,
-		["abilityID"] = 21464,
+	[26918] = {
+		["itemID"] = 21793,
+		["abilityID"] = 13535,
 	},
 	[143143] = {
 		["itemID"] = 98890,
@@ -32116,31 +32117,31 @@ recipeLibrary = {
 		["itemID"] = 164673,
 		["abilityID"] = 40109,
 	},
-	[235756] = {
-		["abilityID"] = 36433,
-		["itemID"] = 144334,
+	[139176] = {
+		["abilityID"] = 31427,
+		["itemID"] = 94113,
 		["tradeskillID"] = 202,
 	},
-	[17576] = {
-		["abilityID"] = 9957,
-		["itemID"] = 13458,
-		["tradeskillID"] = 171,
+	[382320] = {
+		["abilityID"] = 47514,
+		["itemID"] = 198333,
+		["tradeskillID"] = 202,
 	},
-	[40006] = {
-		["itemID"] = 32393,
-		["abilityID"] = 15818,
+	[6517] = {
+		["itemID"] = 5540,
+		["abilityID"] = 3972,
 	},
-	[282176] = {
-		["itemID"] = 164673,
-		["abilityID"] = 40110,
+	[70552] = {
+		["itemID"] = 49892,
+		["abilityID"] = 21365,
 	},
 	[143144] = {
 		["itemID"] = 98891,
 		["abilityID"] = 31626,
 	},
-	[381381] = {
-		["itemID"] = 197770,
-		["abilityID"] = 47376,
+	[78489] = {
+		["itemID"] = 56563,
+		["abilityID"] = 22424,
 	},
 	[18408] = {
 		["itemID"] = 14042,
@@ -32155,119 +32156,114 @@ recipeLibrary = {
 		["itemID"] = 40211,
 		["tradeskillID"] = 171,
 	},
-	[28583] = {
-		["abilityID"] = 13993,
-		["itemID"] = 22457,
-		["tradeskillID"] = 171,
+	[107641] = {
+		["itemID"] = 76569,
+		["abilityID"] = 26558,
 	},
 	[126869] = {
 		["itemID"] = 80431,
 		["abilityID"] = 27154,
 	},
-	[30303] = {
-		["abilityID"] = 14370,
-		["itemID"] = 23781,
-		["tradeskillID"] = 202,
+	[188319] = {
+		["abilityID"] = 34448,
+		["itemID"] = 127841,
+		["tradeskillID"] = 171,
 	},
 	[143145] = {
 		["itemID"] = 98892,
 		["abilityID"] = 31633,
 	},
-	[84430] = {
-		["abilityID"] = 22254,
-		["itemID"] = 68049,
-		["tradeskillID"] = 202,
-	},
-	[188303] = {
-		["abilityID"] = 34432,
-		["itemID"] = 127835,
+	[156568] = {
+		["abilityID"] = 32323,
+		["itemID"] = 109152,
 		["tradeskillID"] = 171,
 	},
-	[17573] = {
-		["abilityID"] = 9954,
-		["itemID"] = 13454,
+	[78477] = {
+		["itemID"] = 56550,
+		["abilityID"] = 22412,
+	},
+	[188318] = {
+		["abilityID"] = 34447,
+		["itemID"] = 127840,
 		["tradeskillID"] = 171,
 	},
-	[106962] = {
-		["itemID"] = 76648,
-		["abilityID"] = 26636,
+	[66498] = {
+		["itemID"] = 40120,
+		["abilityID"] = 21130,
 	},
-	[84432] = {
-		["abilityID"] = 22252,
-		["itemID"] = 59367,
+	[19833] = {
+		["abilityID"] = 11244,
+		["itemID"] = 16007,
 		["tradeskillID"] = 202,
 	},
-	[78483] = {
-		["itemID"] = 75084,
-		["abilityID"] = 22418,
+	[60996] = {
+		["itemID"] = 43590,
+		["abilityID"] = 20402,
 	},
 	[70553] = {
 		["itemID"] = 49893,
 		["abilityID"] = 21366,
 	},
-	[60365] = {
-		["abilityID"] = 20279,
-		["itemID"] = 44330,
-		["tradeskillID"] = 171,
+	[143146] = {
+		["itemID"] = 98893,
+		["abilityID"] = 31634,
 	},
-	[23080] = {
-		["abilityID"] = 12429,
-		["itemID"] = 18594,
-		["tradeskillID"] = 202,
+	[395807] = {
+		["itemID"] = 201936,
+		["abilityID"] = 47986,
 	},
 	[73625] = {
 		["itemID"] = 52485,
 		["abilityID"] = 21526,
 	},
-	[382326] = {
-		["abilityID"] = 47508,
-		["itemID"] = 198316,
-		["tradeskillID"] = 202,
+	[16992] = {
+		["itemID"] = 12797,
+		["abilityID"] = 9453,
 	},
-	[53958] = {
-		["itemID"] = 40014,
-		["abilityID"] = 18448,
+	[94162] = {
+		["abilityID"] = 23859,
+		["itemID"] = 67438,
+		["tradeskillID"] = 171,
 	},
-	[28918] = {
-		["itemID"] = 23105,
-		["abilityID"] = 14036,
+	[19066] = {
+		["itemID"] = 15071,
+		["abilityID"] = 10773,
 	},
 	[47054] = {
 		["itemID"] = 35758,
 		["abilityID"] = 16364,
 	},
-	[288176] = {
-		["itemID"] = 156654,
-		["abilityID"] = 40236,
+	[177043] = {
+		["itemID"] = 119293,
+		["abilityID"] = 33707,
 	},
 	[143147] = {
 		["itemID"] = 98894,
 		["abilityID"] = 31639,
 	},
-	[124053] = {
-		["itemID"] = 75037,
-		["abilityID"] = 26858,
+	[374532] = {
+		["itemID"] = 193037,
+		["abilityID"] = 46997,
 	},
-	[73354] = {
-		["itemID"] = 52221,
-		["abilityID"] = 21456,
+	[58345] = {
+		["itemID"] = 43398,
+		["abilityID"] = 20547,
 	},
-	[324088] = {
-		["itemID"] = 172347,
-		["abilityID"] = 44561,
+	[330207] = {
+		["itemID"] = 180057,
+		["abilityID"] = 45091,
 	},
-	[382329] = {
-		["abilityID"] = 47505,
-		["itemID"] = 198226,
-		["tradeskillID"] = 202,
+	[29558] = {
+		["itemID"] = 23498,
+		["abilityID"] = 14191,
 	},
 	[25320] = {
 		["itemID"] = 20831,
 		["abilityID"] = 13210,
 	},
-	[55371] = {
-		["itemID"] = 41384,
-		["abilityID"] = 19297,
+	[330205] = {
+		["itemID"] = 180060,
+		["abilityID"] = 45089,
 	},
 	[70554] = {
 		["itemID"] = 49898,
@@ -32277,35 +32273,34 @@ recipeLibrary = {
 		["itemID"] = 98895,
 		["abilityID"] = 31575,
 	},
-	[73364] = {
-		["itemID"] = 52222,
-		["abilityID"] = 21465,
+	[225541] = {
+		["itemID"] = 137239,
+		["abilityID"] = 36112,
 	},
 	[73626] = {
 		["itemID"] = 52486,
 		["abilityID"] = 21525,
 	},
-	[36686] = {
-		["itemID"] = 24272,
-		["abilityID"] = 15694,
+	[170704] = {
+		["itemID"] = 115987,
+		["abilityID"] = 33279,
 	},
 	[54222] = {
 		["abilityID"] = 18535,
 		["itemID"] = 40212,
 		["tradeskillID"] = 171,
 	},
-	[53924] = {
-		["itemID"] = 39982,
-		["abilityID"] = 18424,
+	[182989] = {
+		["itemID"] = 123910,
+		["abilityID"] = 34050,
 	},
-	[101744] = {
-		["itemID"] = 71823,
-		["abilityID"] = 24499,
+	[176397] = {
+		["itemID"] = 116987,
+		["abilityID"] = 33680,
 	},
-	[382318] = {
-		["abilityID"] = 47516,
-		["itemID"] = 198327,
-		["tradeskillID"] = 202,
+	[182158] = {
+		["itemID"] = 118061,
+		["abilityID"] = 32910,
 	},
 	[143149] = {
 		["itemID"] = 98896,
@@ -32315,63 +32310,63 @@ recipeLibrary = {
 		["itemID"] = 101740,
 		["abilityID"] = 31698,
 	},
-	[3494] = {
-		["itemID"] = 3851,
-		["abilityID"] = 1987,
+	[171268] = {
+		["itemID"] = 116174,
+		["abilityID"] = 33389,
 	},
-	[31071] = {
-		["itemID"] = 24116,
-		["abilityID"] = 14563,
+	[374530] = {
+		["itemID"] = 193035,
+		["abilityID"] = 47622,
 	},
-	[314962] = {
-		["itemID"] = 174349,
-		["abilityID"] = 43088,
+	[374522] = {
+		["itemID"] = 193032,
+		["abilityID"] = 46992,
 	},
-	[170705] = {
-		["itemID"] = 115988,
-		["abilityID"] = 33280,
+	[32502] = {
+		["itemID"] = 25692,
+		["abilityID"] = 14886,
 	},
-	[360007] = {
-		["itemID"] = 187823,
-		["abilityID"] = 46291,
+	[29672] = {
+		["itemID"] = 23539,
+		["abilityID"] = 14230,
 	},
 	[70555] = {
 		["itemID"] = 49894,
 		["abilityID"] = 21356,
 	},
-	[143150] = {
-		["itemID"] = 98897,
-		["abilityID"] = 31595,
-	},
-	[107666] = {
-		["itemID"] = 76535,
-		["abilityID"] = 26641,
-	},
-	[196395] = {
-		["itemID"] = 130880,
-		["abilityID"] = 35056,
-	},
-	[73367] = {
-		["itemID"] = 52214,
-		["abilityID"] = 21468,
-	},
-	[80480] = {
-		["abilityID"] = 21990,
-		["itemID"] = 58089,
+	[60366] = {
+		["abilityID"] = 20280,
+		["itemID"] = 44331,
 		["tradeskillID"] = 171,
 	},
-	[374495] = {
-		["itemID"] = 192998,
-		["abilityID"] = 46976,
+	[84428] = {
+		["abilityID"] = 22256,
+		["itemID"] = 59594,
+		["tradeskillID"] = 202,
+	},
+	[73627] = {
+		["itemID"] = 52487,
+		["abilityID"] = 21524,
+	},
+	[36077] = {
+		["itemID"] = 29973,
+		["abilityID"] = 15617,
+	},
+	[73355] = {
+		["itemID"] = 52236,
+		["abilityID"] = 21457,
+	},
+	[60649] = {
+		["itemID"] = 43129,
+		["abilityID"] = 20339,
 	},
 	[47055] = {
 		["itemID"] = 35760,
 		["abilityID"] = 16365,
 	},
-	[7934] = {
-		["abilityID"] = 39671,
-		["itemID"] = 6452,
-		["tradeskillID"] = 171,
+	[66502] = {
+		["itemID"] = 40124,
+		["abilityID"] = 21134,
 	},
 	[143151] = {
 		["itemID"] = 98898,
@@ -32381,151 +32376,149 @@ recipeLibrary = {
 		["itemID"] = 25683,
 		["abilityID"] = 14875,
 	},
-	[38070] = {
-		["abilityID"] = 15714,
-		["itemID"] = 31080,
-		["tradeskillID"] = 171,
+	[73361] = {
+		["itemID"] = 52229,
+		["abilityID"] = 21463,
 	},
 	[282191] = {
 		["itemID"] = 164672,
 		["abilityID"] = 40106,
 	},
-	[288033] = {
-		["itemID"] = 166344,
-		["abilityID"] = 40233,
+	[382333] = {
+		["abilityID"] = 47501,
+		["itemID"] = 198281,
+		["tradeskillID"] = 202,
 	},
-	[73366] = {
-		["itemID"] = 52239,
-		["abilityID"] = 21467,
+	[73357] = {
+		["itemID"] = 52220,
+		["abilityID"] = 21459,
 	},
-	[17578] = {
-		["abilityID"] = 9959,
-		["itemID"] = 13459,
-		["tradeskillID"] = 171,
+	[78476] = {
+		["itemID"] = 56549,
+		["abilityID"] = 22411,
 	},
-	[282192] = {
-		["itemID"] = 164672,
-		["abilityID"] = 40107,
+	[70556] = {
+		["itemID"] = 49899,
+		["abilityID"] = 21357,
 	},
 	[143152] = {
 		["itemID"] = 98899,
 		["abilityID"] = 31640,
 	},
-	[195857] = {
-		["itemID"] = 130224,
-		["abilityID"] = 34955,
+	[56552] = {
+		["itemID"] = 42730,
+		["abilityID"] = 19583,
 	},
-	[18409] = {
-		["itemID"] = 13860,
-		["abilityID"] = 10404,
+	[196397] = {
+		["itemID"] = 130887,
+		["abilityID"] = 35057,
 	},
-	[314959] = {
-		["itemID"] = 174352,
-		["abilityID"] = 43089,
+	[282193] = {
+		["itemID"] = 164672,
+		["abilityID"] = 40108,
 	},
-	[337621] = {
-		["itemID"] = 181792,
-		["abilityID"] = 45469,
+	[8880] = {
+		["itemID"] = 7166,
+		["abilityID"] = 4910,
 	},
-	[19062] = {
-		["itemID"] = 15067,
-		["abilityID"] = 10769,
+	[225550] = {
+		["itemID"] = 139289,
+		["abilityID"] = 36121,
 	},
 	[360013] = {
 		["itemID"] = 187825,
 		["abilityID"] = 46292,
 	},
-	[282194] = {
-		["itemID"] = 164671,
-		["abilityID"] = 40103,
+	[314960] = {
+		["itemID"] = 174351,
+		["abilityID"] = 43090,
 	},
 	[143153] = {
 		["itemID"] = 98900,
 		["abilityID"] = 31576,
 	},
-	[138887] = {
-		["itemID"] = 94586,
-		["abilityID"] = 31231,
+	[291095] = {
+		["abilityID"] = 40346,
+		["itemID"] = 166985,
+		["tradeskillID"] = 202,
 	},
 	[360014] = {
 		["abilityID"] = 46293,
 		["itemID"] = 187827,
 		["tradeskillID"] = 171,
 	},
-	[314961] = {
-		["itemID"] = 174350,
-		["abilityID"] = 43087,
-	},
-	[168853] = {
-		["itemID"] = 114829,
-		["abilityID"] = 33212,
-	},
-	[36128] = {
-		["itemID"] = 30073,
-		["abilityID"] = 15620,
-	},
-	[377960] = {
-		["itemID"] = 194748,
-		["abilityID"] = 47338,
-	},
-	[282196] = {
+	[282195] = {
 		["itemID"] = 164671,
-		["abilityID"] = 40105,
+		["abilityID"] = 40104,
 	},
-	[60367] = {
-		["abilityID"] = 20281,
-		["itemID"] = 44332,
-		["tradeskillID"] = 171,
+	[226131] = {
+		["itemID"] = 132540,
+		["abilityID"] = 36146,
 	},
-	[66568] = {
-		["itemID"] = 40147,
-		["abilityID"] = 21154,
+	[18423] = {
+		["itemID"] = 13864,
+		["abilityID"] = 10420,
+	},
+	[12053] = {
+		["itemID"] = 10003,
+		["abilityID"] = 6584,
+	},
+	[70557] = {
+		["itemID"] = 49895,
+		["abilityID"] = 21358,
+	},
+	[143154] = {
+		["itemID"] = 98901,
+		["abilityID"] = 31586,
+	},
+	[9813] = {
+		["itemID"] = 7914,
+		["abilityID"] = 5307,
 	},
 	[360016] = {
 		["itemID"] = 187829,
 		["abilityID"] = 46294,
 	},
-	[314963] = {
-		["itemID"] = 174348,
-		["abilityID"] = 43086,
+	[22761] = {
+		["itemID"] = 18254,
+		["abilityID"] = 12304,
 	},
-	[11479] = {
-		["abilityID"] = 6020,
-		["itemID"] = 3577,
-		["tradeskillID"] = 171,
+	[287274] = {
+		["itemID"] = 162460,
+		["abilityID"] = 40217,
 	},
-	[269543] = {
-		["itemID"] = 159893,
-		["abilityID"] = 39490,
+	[55993] = {
+		["itemID"] = 41248,
+		["abilityID"] = 19447,
 	},
 	[47056] = {
 		["itemID"] = 35761,
 		["abilityID"] = 16366,
 	},
-	[3397] = {
-		["itemID"] = 3726,
-		["abilityID"] = 1901,
+	[53932] = {
+		["itemID"] = 39991,
+		["abilityID"] = 18432,
 	},
-	[128922] = {
-		["itemID"] = 88806,
-		["abilityID"] = 27357,
+	[143155] = {
+		["itemID"] = 98902,
+		["abilityID"] = 31596,
 	},
-	[330243] = {
-		["itemID"] = 180057,
-		["abilityID"] = 45126,
+	[287270] = {
+		["itemID"] = 162460,
+		["abilityID"] = 40212,
 	},
 	[310869] = {
 		["itemID"] = 173195,
 		["abilityID"] = 42800,
 	},
-	[11478] = {
-		["abilityID"] = 6019,
-		["itemID"] = 9233,
-		["tradeskillID"] = 171,
+	[34537] = {
+		["itemID"] = 28426,
+		["abilityID"] = 15236,
 	},
-	[112464] = {
-		["itemID"] = 87883,
-		["abilityID"] = 27234,
+	[382339] = {
+		["abilityID"] = 47495,
+		["itemID"] = 198263,
+		["tradeskillID"] = 202,
 	},
 	[25321] = {
 		["itemID"] = 20832,
@@ -32543,21 +32536,22 @@ recipeLibrary = {
 		["itemID"] = 98903,
 		["abilityID"] = 31609,
 	},
-	[55376] = {
-		["itemID"] = 41392,
-		["abilityID"] = 19303,
+	[10556] = {
+		["itemID"] = 8185,
+		["abilityID"] = 5690,
 	},
 	[310871] = {
 		["itemID"] = 173194,
 		["abilityID"] = 42793,
 	},
-	[54948] = {
-		["itemID"] = 40954,
-		["abilityID"] = 19170,
+	[382371] = {
+		["abilityID"] = 47451,
+		["itemID"] = 192443,
+		["tradeskillID"] = 202,
 	},
-	[264767] = {
-		["itemID"] = 158202,
-		["abilityID"] = 39224,
+	[55374] = {
+		["itemID"] = 41388,
+		["abilityID"] = 19301,
 	},
 	[54736] = {
 		["abilityID"] = 19539,
@@ -32568,18 +32562,18 @@ recipeLibrary = {
 		["itemID"] = 173196,
 		["abilityID"] = 42794,
 	},
-	[127127] = {
-		["abilityID"] = 27337,
-		["itemID"] = 77589,
-		["tradeskillID"] = 202,
+	[403157] = {
+		["itemID"] = 204115,
+		["abilityID"] = 48318,
 	},
 	[143157] = {
 		["itemID"] = 98904,
 		["abilityID"] = 31618,
 	},
-	[302188] = {
-		["itemID"] = 169321,
-		["abilityID"] = 40933,
+	[19790] = {
+		["abilityID"] = 11229,
+		["itemID"] = 15993,
+		["tradeskillID"] = 202,
 	},
 	[310873] = {
 		["itemID"] = 173197,
@@ -32593,50 +32587,50 @@ recipeLibrary = {
 		["itemID"] = 43373,
 		["abilityID"] = 20542,
 	},
-	[76451] = {
-		["itemID"] = 55066,
-		["abilityID"] = 21804,
+	[16726] = {
+		["itemID"] = 12612,
+		["abilityID"] = 9323,
 	},
 	[310874] = {
 		["itemID"] = 173198,
 		["abilityID"] = 42796,
 	},
-	[282204] = {
-		["itemID"] = 164676,
-		["abilityID"] = 40100,
+	[70559] = {
+		["itemID"] = 49896,
+		["abilityID"] = 21360,
 	},
 	[143158] = {
 		["itemID"] = 98905,
 		["abilityID"] = 31641,
 	},
-	[76446] = {
-		["itemID"] = 55061,
-		["abilityID"] = 21799,
+	[53842] = {
+		["abilityID"] = 18329,
+		["itemID"] = 40070,
+		["tradeskillID"] = 171,
 	},
 	[310875] = {
 		["itemID"] = 173199,
 		["abilityID"] = 42797,
 	},
-	[19788] = {
-		["abilityID"] = 11228,
-		["itemID"] = 15992,
-		["tradeskillID"] = 202,
+	[19107] = {
+		["itemID"] = 15052,
+		["abilityID"] = 10808,
 	},
-	[374470] = {
-		["itemID"] = 192989,
-		["abilityID"] = 46962,
+	[142962] = {
+		["itemID"] = 98610,
+		["abilityID"] = 31493,
 	},
-	[201502] = {
-		["itemID"] = 133567,
-		["abilityID"] = 35170,
+	[142964] = {
+		["itemID"] = 98612,
+		["abilityID"] = 31487,
 	},
-	[310876] = {
-		["itemID"] = 173200,
-		["abilityID"] = 42798,
+	[15861] = {
+		["itemID"] = 12212,
+		["abilityID"] = 8620,
 	},
-	[61009] = {
-		["itemID"] = 43587,
-		["abilityID"] = 20409,
+	[176418] = {
+		["itemID"] = 117003,
+		["abilityID"] = 33695,
 	},
 	[143159] = {
 		["itemID"] = 98906,
@@ -32650,17 +32644,17 @@ recipeLibrary = {
 		["itemID"] = 173201,
 		["abilityID"] = 42799,
 	},
-	[10007] = {
-		["itemID"] = 7961,
-		["abilityID"] = 5348,
+	[196469] = {
+		["itemID"] = 130896,
+		["abilityID"] = 35066,
 	},
-	[73497] = {
-		["itemID"] = 52309,
-		["abilityID"] = 23887,
+	[330193] = {
+		["itemID"] = 180058,
+		["abilityID"] = 45077,
 	},
-	[2666] = {
-		["itemID"] = 2857,
-		["abilityID"] = 1637,
+	[112429] = {
+		["itemID"] = 80587,
+		["abilityID"] = 26832,
 	},
 	[310878] = {
 		["itemID"] = 191327,
@@ -32674,91 +32668,91 @@ recipeLibrary = {
 		["itemID"] = 98907,
 		["abilityID"] = 31587,
 	},
-	[73379] = {
-		["itemID"] = 52245,
-		["abilityID"] = 21480,
+	[76442] = {
+		["itemID"] = 55057,
+		["abilityID"] = 21795,
 	},
-	[310879] = {
-		["itemID"] = 191327,
-		["abilityID"] = 42864,
+	[18410] = {
+		["itemID"] = 14143,
+		["abilityID"] = 10405,
 	},
-	[14807] = {
-		["itemID"] = 11288,
-		["abilityID"] = 8000,
+	[55208] = {
+		["itemID"] = 37663,
+		["abilityID"] = 19245,
 	},
-	[12069] = {
-		["itemID"] = 10042,
-		["abilityID"] = 6600,
+	[78490] = {
+		["itemID"] = 56564,
+		["abilityID"] = 22425,
 	},
-	[330153] = {
-		["itemID"] = 180060,
-		["abilityID"] = 45039,
+	[390851] = {
+		["itemID"] = 200574,
+		["abilityID"] = 47816,
 	},
 	[310880] = {
 		["itemID"] = 191327,
 		["abilityID"] = 42863,
 	},
-	[99447] = {
-		["itemID"] = 69943,
-		["abilityID"] = 24297,
+	[99452] = {
+		["itemID"] = 69946,
+		["abilityID"] = 24291,
 	},
 	[143161] = {
 		["itemID"] = 98908,
 		["abilityID"] = 31597,
 	},
-	[302189] = {
-		["itemID"] = 169328,
-		["abilityID"] = 40934,
+	[124574] = {
+		["itemID"] = 85836,
+		["abilityID"] = 26895,
 	},
 	[310881] = {
 		["itemID"] = 191327,
 		["abilityID"] = 42862,
 	},
-	[360126] = {
-		["abilityID"] = 46296,
-		["itemID"] = 187836,
+	[382341] = {
+		["abilityID"] = 47493,
+		["itemID"] = 198244,
 		["tradeskillID"] = 202,
 	},
-	[34533] = {
-		["itemID"] = 28483,
-		["abilityID"] = 15222,
+	[390848] = {
+		["itemID"] = 200565,
+		["abilityID"] = 47813,
 	},
-	[12603] = {
-		["abilityID"] = 6869,
-		["itemID"] = 10514,
-		["tradeskillID"] = 202,
+	[73375] = {
+		["itemID"] = 52233,
+		["abilityID"] = 21476,
 	},
 	[310882] = {
 		["itemID"] = 191327,
 		["abilityID"] = 42861,
 	},
-	[239412] = {
-		["itemID"] = 146666,
-		["abilityID"] = 36559,
+	[70561] = {
+		["itemID"] = 49897,
+		["abilityID"] = 21362,
 	},
 	[143162] = {
 		["itemID"] = 98909,
 		["abilityID"] = 31610,
 	},
-	[58147] = {
-		["itemID"] = 43250,
-		["abilityID"] = 19976,
+	[32455] = {
+		["itemID"] = 23793,
+		["abilityID"] = 14850,
 	},
 	[310883] = {
 		["itemID"] = 191327,
 		["abilityID"] = 45613,
 	},
-	[170701] = {
-		["itemID"] = 115526,
-		["abilityID"] = 33276,
+	[55941] = {
+		["itemID"] = 41554,
+		["abilityID"] = 19445,
 	},
-	[73474] = {
-		["itemID"] = 52300,
-		["abilityID"] = 21506,
+	[84416] = {
+		["abilityID"] = 22265,
+		["itemID"] = 60217,
+		["tradeskillID"] = 202,
 	},
-	[124576] = {
-		["itemID"] = 85834,
-		["abilityID"] = 26891,
+	[107760] = {
+		["itemID"] = 76892,
+		["abilityID"] = 26515,
 	},
 	[310884] = {
 		["itemID"] = 191327,
@@ -32772,60 +32766,60 @@ recipeLibrary = {
 		["itemID"] = 98784,
 		["abilityID"] = 31509,
 	},
-	[25280] = {
-		["itemID"] = 20818,
-		["abilityID"] = 13199,
+	[53844] = {
+		["itemID"] = 39908,
+		["abilityID"] = 18367,
 	},
 	[310885] = {
 		["itemID"] = 191327,
 		["abilityID"] = 42858,
 	},
-	[229181] = {
-		["itemID"] = 142102,
-		["abilityID"] = 36274,
+	[310896] = {
+		["itemID"] = 173216,
+		["abilityID"] = 42810,
 	},
-	[18421] = {
-		["itemID"] = 14132,
-		["abilityID"] = 10418,
+	[403133] = {
+		["itemID"] = 204098,
+		["abilityID"] = 48297,
 	},
-	[17572] = {
-		["abilityID"] = 9953,
-		["itemID"] = 13462,
-		["tradeskillID"] = 171,
+	[10533] = {
+		["itemID"] = 8205,
+		["abilityID"] = 5679,
 	},
 	[310886] = {
 		["itemID"] = 191327,
 		["abilityID"] = 45616,
 	},
-	[239414] = {
-		["itemID"] = 146668,
-		["abilityID"] = 36560,
+	[70562] = {
+		["itemID"] = 49902,
+		["abilityID"] = 21348,
 	},
 	[143164] = {
 		["itemID"] = 98785,
 		["abilityID"] = 31513,
 	},
-	[122617] = {
-		["itemID"] = 82944,
-		["abilityID"] = 26448,
-	},
-	[310897] = {
-		["itemID"] = 173214,
-		["abilityID"] = 42818,
-	},
-	[56195] = {
-		["itemID"] = 42338,
-		["abilityID"] = 19517,
-	},
-	[84420] = {
-		["abilityID"] = 22262,
-		["itemID"] = 59598,
+	[127134] = {
+		["abilityID"] = 27340,
+		["itemID"] = 77530,
 		["tradeskillID"] = 202,
 	},
-	[28590] = {
-		["abilityID"] = 13999,
-		["itemID"] = 22861,
+	[343661] = {
+		["abilityID"] = 45768,
+		["itemID"] = 183942,
+		["tradeskillID"] = 202,
+	},
+	[279162] = {
+		["abilityID"] = 39859,
+		["itemID"] = 163222,
 		["tradeskillID"] = 171,
+	},
+	[3321] = {
+		["itemID"] = 3471,
+		["abilityID"] = 1857,
+	},
+	[138892] = {
+		["itemID"] = 94591,
+		["abilityID"] = 31234,
 	},
 	[38867] = {
 		["itemID"] = 31672,
@@ -32839,31 +32833,31 @@ recipeLibrary = {
 		["itemID"] = 98786,
 		["abilityID"] = 31501,
 	},
-	[63198] = {
-		["itemID"] = 45555,
-		["abilityID"] = 20826,
+	[53845] = {
+		["itemID"] = 39909,
+		["abilityID"] = 18368,
 	},
-	[107907] = {
-		["itemID"] = 77101,
-		["abilityID"] = 25209,
+	[9961] = {
+		["itemID"] = 7931,
+		["abilityID"] = 5329,
 	},
-	[125601] = {
-		["itemID"] = 87244,
-		["abilityID"] = 27064,
-	},
-	[3967] = {
-		["abilityID"] = 2462,
-		["itemID"] = 4394,
+	[128262] = {
+		["abilityID"] = 27264,
+		["itemID"] = 87764,
 		["tradeskillID"] = 202,
 	},
-	[84410] = {
-		["abilityID"] = 22270,
-		["itemID"] = 59596,
-		["tradeskillID"] = 202,
+	[195912] = {
+		["itemID"] = 130234,
+		["abilityID"] = 34992,
 	},
-	[53879] = {
-		["itemID"] = 39954,
-		["abilityID"] = 18400,
+	[374456] = {
+		["itemID"] = 192956,
+		["abilityID"] = 46951,
+	},
+	[198972] = {
+		["abilityID"] = 35104,
+		["itemID"] = 132509,
+		["tradeskillID"] = 202,
 	},
 	[70563] = {
 		["itemID"] = 49905,
@@ -32873,33 +32867,35 @@ recipeLibrary = {
 		["itemID"] = 98787,
 		["abilityID"] = 31497,
 	},
-	[137825] = {
-		["itemID"] = 93475,
-		["abilityID"] = 31275,
+	[18411] = {
+		["itemID"] = 13870,
+		["abilityID"] = 10406,
 	},
 	[229177] = {
 		["itemID"] = 142101,
 		["abilityID"] = 36270,
 	},
-	[125600] = {
-		["itemID"] = 87242,
-		["abilityID"] = 27063,
+	[22868] = {
+		["itemID"] = 18408,
+		["abilityID"] = 12342,
 	},
-	[55206] = {
-		["itemID"] = 41245,
-		["abilityID"] = 19244,
+	[374454] = {
+		["itemID"] = 192950,
+		["abilityID"] = 46949,
 	},
-	[374448] = {
-		["itemID"] = 192936,
-		["abilityID"] = 46945,
+	[272067] = {
+		["abilityID"] = 39606,
+		["itemID"] = 160491,
+		["tradeskillID"] = 202,
 	},
-	[3775] = {
-		["itemID"] = 4258,
-		["abilityID"] = 2184,
+	[76448] = {
+		["itemID"] = 55063,
+		["abilityID"] = 21801,
 	},
-	[73476] = {
-		["itemID"] = 52302,
-		["abilityID"] = 21509,
+	[53847] = {
+		["abilityID"] = 18330,
+		["itemID"] = 40072,
+		["tradeskillID"] = 171,
 	},
 	[143167] = {
 		["itemID"] = 98788,
@@ -32909,93 +32905,92 @@ recipeLibrary = {
 		["itemID"] = 25685,
 		["abilityID"] = 14876,
 	},
-	[229178] = {
-		["itemID"] = 142102,
-		["abilityID"] = 36271,
+	[343659] = {
+		["itemID"] = 183942,
+		["abilityID"] = 45770,
 	},
-	[78460] = {
-		["itemID"] = 56536,
-		["abilityID"] = 22398,
+	[2670] = {
+		["itemID"] = 2866,
+		["abilityID"] = 1640,
 	},
-	[342887] = {
-		["abilityID"] = 45719,
-		["itemID"] = 183823,
-		["tradeskillID"] = 171,
+	[125602] = {
+		["itemID"] = 87246,
+		["abilityID"] = 27061,
 	},
-	[383575] = {
-		["itemID"] = 196988,
-		["abilityID"] = 47563,
+	[38868] = {
+		["itemID"] = 31673,
+		["abilityID"] = 15736,
 	},
 	[343660] = {
 		["itemID"] = 183942,
 		["abilityID"] = 45769,
 	},
-	[192842] = {
-		["itemID"] = 129021,
-		["abilityID"] = 34687,
+	[53948] = {
+		["itemID"] = 40000,
+		["abilityID"] = 18438,
 	},
 	[143168] = {
 		["itemID"] = 98843,
 		["abilityID"] = 31510,
 	},
-	[390850] = {
-		["itemID"] = 200571,
-		["abilityID"] = 47815,
+	[27588] = {
+		["itemID"] = 22195,
+		["abilityID"] = 13804,
 	},
-	[229179] = {
-		["itemID"] = 142103,
-		["abilityID"] = 36272,
+	[9206] = {
+		["itemID"] = 7387,
+		["abilityID"] = 5055,
 	},
-	[80245] = {
-		["abilityID"] = 22013,
-		["itemID"] = 52190,
-		["tradeskillID"] = 171,
+	[176089] = {
+		["itemID"] = 118721,
+		["abilityID"] = 33669,
 	},
-	[226137] = {
-		["itemID"] = 132544,
-		["abilityID"] = 36140,
+	[15296] = {
+		["itemID"] = 11604,
+		["abilityID"] = 8216,
 	},
-	[383587] = {
-		["itemID"] = 197352,
-		["abilityID"] = 47591,
+	[73472] = {
+		["itemID"] = 52298,
+		["abilityID"] = 21503,
 	},
-	[343662] = {
-		["itemID"] = 183942,
-		["abilityID"] = 45767,
+	[19435] = {
+		["itemID"] = 15802,
+		["abilityID"] = 10957,
 	},
-	[56031] = {
-		["itemID"] = 41512,
-		["abilityID"] = 19485,
-	},
-	[143169] = {
-		["itemID"] = 98844,
-		["abilityID"] = 31514,
-	},
-	[310525] = {
-		["abilityID"] = 42756,
-		["itemID"] = 172936,
+	[198969] = {
+		["abilityID"] = 35101,
+		["itemID"] = 132505,
 		["tradeskillID"] = 202,
 	},
-	[278131] = {
-		["itemID"] = 162665,
-		["abilityID"] = 39831,
+	[9974] = {
+		["itemID"] = 7939,
+		["abilityID"] = 5335,
 	},
-	[53949] = {
-		["itemID"] = 40001,
-		["abilityID"] = 18439,
-	},
-	[374472] = {
-		["itemID"] = 192992,
-		["abilityID"] = 46963,
-	},
-	[84409] = {
-		["abilityID"] = 22271,
-		["itemID"] = 60853,
+	[198974] = {
+		["abilityID"] = 35106,
+		["itemID"] = 132511,
 		["tradeskillID"] = 202,
 	},
-	[278132] = {
-		["itemID"] = 162665,
-		["abilityID"] = 39832,
+	[229180] = {
+		["itemID"] = 142101,
+		["abilityID"] = 36273,
+	},
+	[2549] = {
+		["itemID"] = 1017,
+		["abilityID"] = 1548,
+	},
+	[198973] = {
+		["abilityID"] = 35105,
+		["itemID"] = 132510,
+		["tradeskillID"] = 202,
+	},
+	[170710] = {
+		["itemID"] = 115993,
+		["abilityID"] = 33285,
+	},
+	[310898] = {
+		["itemID"] = 173215,
+		["abilityID"] = 42817,
 	},
 	[70565] = {
 		["itemID"] = 49903,
@@ -33005,26 +33000,26 @@ recipeLibrary = {
 		["itemID"] = 98845,
 		["abilityID"] = 31502,
 	},
-	[371366] = {
-		["itemID"] = 191223,
-		["abilityID"] = 46844,
+	[101599] = {
+		["itemID"] = 71720,
+		["abilityID"] = 24487,
 	},
-	[278133] = {
-		["itemID"] = 162665,
-		["abilityID"] = 39833,
+	[310899] = {
+		["itemID"] = 173217,
+		["abilityID"] = 42816,
 	},
-	[305807] = {
-		["itemID"] = 170443,
-		["abilityID"] = 41074,
+	[84411] = {
+		["abilityID"] = 22269,
+		["itemID"] = 60223,
+		["tradeskillID"] = 202,
 	},
-	[359673] = {
-		["abilityID"] = 46273,
-		["itemID"] = 187742,
-		["tradeskillID"] = 171,
+	[12087] = {
+		["itemID"] = 10038,
+		["abilityID"] = 6618,
 	},
-	[374442] = {
-		["itemID"] = 192917,
-		["abilityID"] = 46939,
+	[195911] = {
+		["itemID"] = 130233,
+		["abilityID"] = 34991,
 	},
 	[310900] = {
 		["itemID"] = 173218,
@@ -33039,27 +33034,25 @@ recipeLibrary = {
 		["itemID"] = 98846,
 		["abilityID"] = 31498,
 	},
-	[2335] = {
-		["abilityID"] = 1383,
-		["itemID"] = 2459,
-		["tradeskillID"] = 171,
+	[76465] = {
+		["itemID"] = 75125,
+		["abilityID"] = 21817,
 	},
-	[310901] = {
-		["itemID"] = 173219,
-		["abilityID"] = 42814,
+	[229182] = {
+		["itemID"] = 142103,
+		["abilityID"] = 36275,
 	},
-	[198993] = {
-		["abilityID"] = 35125,
-		["itemID"] = 132502,
-		["tradeskillID"] = 202,
+	[26915] = {
+		["itemID"] = 21792,
+		["abilityID"] = 13533,
 	},
 	[233278] = {
 		["itemID"] = 143750,
 		["abilityID"] = 36394,
 	},
-	[50644] = {
-		["itemID"] = 38277,
-		["abilityID"] = 17513,
+	[25323] = {
+		["itemID"] = 20833,
+		["abilityID"] = 13212,
 	},
 	[310902] = {
 		["itemID"] = 173220,
@@ -33073,62 +33066,63 @@ recipeLibrary = {
 		["itemID"] = 98847,
 		["abilityID"] = 31506,
 	},
-	[73467] = {
-		["itemID"] = 52293,
-		["abilityID"] = 21507,
+	[73398] = {
+		["itemID"] = 52259,
+		["abilityID"] = 21489,
 	},
-	[310903] = {
-		["itemID"] = 173221,
-		["abilityID"] = 42812,
+	[229183] = {
+		["itemID"] = 142101,
+		["abilityID"] = 36276,
 	},
 	[247614] = {
 		["itemID"] = 151610,
 		["abilityID"] = 36713,
 	},
-	[29359] = {
-		["itemID"] = 23447,
-		["abilityID"] = 14115,
+	[198997] = {
+		["abilityID"] = 35129,
+		["itemID"] = 132506,
+		["tradeskillID"] = 202,
 	},
-	[52843] = {
-		["itemID"] = 39469,
-		["abilityID"] = 17960,
+	[2664] = {
+		["itemID"] = 2854,
+		["abilityID"] = 1635,
 	},
-	[310904] = {
-		["itemID"] = 173222,
-		["abilityID"] = 42811,
+	[55252] = {
+		["abilityID"] = 19261,
+		["itemID"] = 40769,
+		["tradeskillID"] = 202,
 	},
-	[28591] = {
-		["abilityID"] = 14003,
-		["itemID"] = 22866,
-		["tradeskillID"] = 171,
+	[3871] = {
+		["itemID"] = 4334,
+		["abilityID"] = 2405,
 	},
 	[143173] = {
 		["itemID"] = 98848,
 		["abilityID"] = 31521,
 	},
-	[107736] = {
-		["itemID"] = 76677,
-		["abilityID"] = 26645,
+	[76471] = {
+		["itemID"] = 75129,
+		["abilityID"] = 21823,
 	},
 	[229184] = {
 		["itemID"] = 142102,
 		["abilityID"] = 36277,
 	},
-	[247615] = {
-		["itemID"] = 151610,
-		["abilityID"] = 36714,
+	[41429] = {
+		["itemID"] = 32836,
+		["abilityID"] = 15873,
 	},
-	[390823] = {
-		["itemID"] = 198715,
-		["abilityID"] = 47807,
+	[192850] = {
+		["itemID"] = 129029,
+		["abilityID"] = 34695,
 	},
-	[107700] = {
-		["itemID"] = 76683,
-		["abilityID"] = 26589,
+	[76466] = {
+		["itemID"] = 75121,
+		["abilityID"] = 21818,
 	},
-	[63199] = {
-		["itemID"] = 45564,
-		["abilityID"] = 20827,
+	[305840] = {
+		["itemID"] = 170389,
+		["abilityID"] = 41078,
 	},
 	[70567] = {
 		["itemID"] = 49904,
@@ -33138,9 +33132,9 @@ recipeLibrary = {
 		["itemID"] = 98849,
 		["abilityID"] = 31522,
 	},
-	[56029] = {
-		["itemID"] = 42113,
-		["abilityID"] = 19484,
+	[67132] = {
+		["itemID"] = 47590,
+		["abilityID"] = 21204,
 	},
 	[229185] = {
 		["itemID"] = 142103,
@@ -33150,48 +33144,48 @@ recipeLibrary = {
 		["itemID"] = 151610,
 		["abilityID"] = 36715,
 	},
-	[304414] = {
-		["itemID"] = 170348,
-		["abilityID"] = 41000,
+	[16643] = {
+		["itemID"] = 12406,
+		["abilityID"] = 9160,
 	},
-	[382355] = {
-		["abilityID"] = 47467,
-		["itemID"] = 198207,
-		["tradeskillID"] = 202,
+	[56194] = {
+		["itemID"] = 42337,
+		["abilityID"] = 19516,
 	},
-	[7181] = {
-		["abilityID"] = 4177,
-		["itemID"] = 1710,
-		["tradeskillID"] = 171,
+	[170713] = {
+		["itemID"] = 115794,
+		["abilityID"] = 33288,
 	},
-	[63196] = {
-		["itemID"] = 45554,
-		["abilityID"] = 20824,
+	[322588] = {
+		["itemID"] = 171443,
+		["abilityID"] = 43549,
 	},
 	[143175] = {
 		["itemID"] = 98850,
 		["abilityID"] = 31517,
 	},
-	[55396] = {
-		["itemID"] = 41401,
-		["abilityID"] = 19319,
+	[28209] = {
+		["itemID"] = 22655,
+		["abilityID"] = 13913,
 	},
 	[343675] = {
 		["abilityID"] = 45771,
 		["itemID"] = 183942,
 		["tradeskillID"] = 171,
 	},
-	[343689] = {
-		["itemID"] = 173382,
-		["abilityID"] = 45783,
+	[199003] = {
+		["abilityID"] = 35135,
+		["itemID"] = 132514,
+		["tradeskillID"] = 202,
 	},
-	[63197] = {
-		["itemID"] = 45563,
-		["abilityID"] = 20829,
+	[84412] = {
+		["abilityID"] = 22268,
+		["itemID"] = 59597,
+		["tradeskillID"] = 202,
 	},
-	[124589] = {
-		["itemID"] = 85816,
-		["abilityID"] = 26938,
+	[170712] = {
+		["itemID"] = 115995,
+		["abilityID"] = 33287,
 	},
 	[343676] = {
 		["abilityID"] = 46086,
@@ -33206,27 +33200,25 @@ recipeLibrary = {
 		["itemID"] = 98851,
 		["abilityID"] = 31518,
 	},
-	[7630] = {
-		["itemID"] = 6240,
-		["abilityID"] = 4304,
+	[7213] = {
+		["itemID"] = 6038,
+		["abilityID"] = 4204,
 	},
-	[343677] = {
-		["abilityID"] = 46085,
-		["itemID"] = 173383,
-		["tradeskillID"] = 171,
+	[18412] = {
+		["itemID"] = 14043,
+		["abilityID"] = 10407,
 	},
-	[84406] = {
-		["abilityID"] = 22274,
-		["itemID"] = 60222,
-		["tradeskillID"] = 202,
+	[220511] = {
+		["itemID"] = 139503,
+		["abilityID"] = 36079,
 	},
-	[2165] = {
-		["itemID"] = 2313,
-		["abilityID"] = 1367,
+	[60605] = {
+		["itemID"] = 44438,
+		["abilityID"] = 20305,
 	},
-	[195932] = {
-		["itemID"] = 130233,
-		["abilityID"] = 35012,
+	[195931] = {
+		["itemID"] = 130231,
+		["abilityID"] = 35011,
 	},
 	[343678] = {
 		["abilityID"] = 45773,
@@ -33241,9 +33233,9 @@ recipeLibrary = {
 		["itemID"] = 98852,
 		["abilityID"] = 31525,
 	},
-	[305841] = {
-		["itemID"] = 170388,
-		["abilityID"] = 41077,
+	[93841] = {
+		["itemID"] = 67274,
+		["abilityID"] = 24005,
 	},
 	[343679] = {
 		["abilityID"] = 45772,
@@ -33255,97 +33247,96 @@ recipeLibrary = {
 		["itemID"] = 151608,
 		["tradeskillID"] = 171,
 	},
-	[217649] = {
-		["itemID"] = 138792,
-		["abilityID"] = 35962,
+	[305843] = {
+		["itemID"] = 170386,
+		["abilityID"] = 41075,
 	},
-	[122670] = {
-		["itemID"] = 83803,
-		["abilityID"] = 26535,
+	[3873] = {
+		["itemID"] = 4336,
+		["abilityID"] = 2407,
 	},
 	[343680] = {
 		["itemID"] = 183942,
 		["abilityID"] = 45776,
 	},
-	[2159] = {
-		["itemID"] = 2308,
-		["abilityID"] = 1360,
+	[11449] = {
+		["abilityID"] = 5997,
+		["itemID"] = 8949,
+		["tradeskillID"] = 171,
 	},
 	[143178] = {
 		["itemID"] = 98853,
 		["abilityID"] = 31526,
 	},
-	[138596] = {
-		["itemID"] = 94276,
-		["abilityID"] = 31395,
+	[268982] = {
+		["itemID"] = 159791,
+		["abilityID"] = 39429,
 	},
-	[41315] = {
-		["abilityID"] = 15853,
-		["itemID"] = 32476,
-		["tradeskillID"] = 202,
+	[53981] = {
+		["itemID"] = 40045,
+		["abilityID"] = 18472,
 	},
 	[247620] = {
 		["abilityID"] = 36637,
 		["itemID"] = 151608,
 		["tradeskillID"] = 171,
 	},
-	[12071] = {
-		["itemID"] = 10023,
-		["abilityID"] = 6602,
+	[322593] = {
+		["itemID"] = 171447,
+		["abilityID"] = 43553,
 	},
-	[23096] = {
-		["abilityID"] = 12432,
-		["itemID"] = 18645,
+	[259421] = {
+		["itemID"] = 156526,
+		["abilityID"] = 39631,
+	},
+	[84408] = {
+		["abilityID"] = 22272,
+		["itemID"] = 59595,
 		["tradeskillID"] = 202,
 	},
-	[7133] = {
-		["itemID"] = 5958,
-		["abilityID"] = 4158,
-	},
-	[192863] = {
-		["itemID"] = 128990,
-		["abilityID"] = 34706,
+	[40033] = {
+		["itemID"] = 32402,
+		["abilityID"] = 15829,
 	},
 	[143179] = {
 		["itemID"] = 98854,
 		["abilityID"] = 31511,
 	},
-	[269521] = {
-		["itemID"] = 159885,
-		["abilityID"] = 39497,
+	[99654] = {
+		["itemID"] = 70157,
+		["abilityID"] = 24338,
 	},
 	[343683] = {
 		["itemID"] = 173382,
 		["abilityID"] = 45778,
 	},
-	[310496] = {
-		["abilityID"] = 42725,
-		["itemID"] = 0,
-		["tradeskillID"] = 202,
+	[14810] = {
+		["itemID"] = 11290,
+		["abilityID"] = 8002,
 	},
-	[40036] = {
-		["itemID"] = 32401,
-		["abilityID"] = 15827,
+	[259414] = {
+		["itemID"] = 154882,
+		["abilityID"] = 39634,
 	},
-	[269537] = {
-		["itemID"] = 159891,
-		["abilityID"] = 39488,
+	[122685] = {
+		["itemID"] = 83152,
+		["abilityID"] = 26525,
 	},
 	[343684] = {
 		["itemID"] = 173381,
 		["abilityID"] = 45777,
 	},
-	[57704] = {
-		["itemID"] = 43116,
-		["abilityID"] = 19778,
+	[305844] = {
+		["itemID"] = 170311,
+		["abilityID"] = 43076,
 	},
 	[143180] = {
 		["itemID"] = 98855,
 		["abilityID"] = 31515,
 	},
-	[142967] = {
-		["itemID"] = 98615,
-		["abilityID"] = 31482,
+	[304323] = {
+		["itemID"] = 170310,
+		["abilityID"] = 40996,
 	},
 	[196425] = {
 		["itemID"] = 129963,
@@ -33356,109 +33347,107 @@ recipeLibrary = {
 		["itemID"] = 151608,
 		["tradeskillID"] = 171,
 	},
-	[382365] = {
-		["abilityID"] = 47457,
-		["itemID"] = 198160,
-		["tradeskillID"] = 202,
+	[142966] = {
+		["itemID"] = 98614,
+		["abilityID"] = 31495,
 	},
-	[64729] = {
-		["itemID"] = 45811,
-		["abilityID"] = 21018,
+	[101803] = {
+		["itemID"] = 71877,
+		["abilityID"] = 24558,
 	},
 	[343686] = {
 		["itemID"] = 183942,
 		["abilityID"] = 45781,
 	},
-	[121842] = {
-		["itemID"] = 83090,
-		["abilityID"] = 26597,
+	[107703] = {
+		["itemID"] = 76689,
+		["abilityID"] = 26633,
 	},
-	[143181] = {
-		["itemID"] = 98856,
-		["abilityID"] = 31503,
-	},
-	[142965] = {
-		["itemID"] = 98613,
-		["abilityID"] = 31494,
-	},
-	[192894] = {
-		["itemID"] = 128990,
-		["abilityID"] = 34737,
-	},
-	[26422] = {
-		["abilityID"] = 13429,
-		["itemID"] = 21592,
+	[39895] = {
+		["abilityID"] = 15808,
+		["itemID"] = 7191,
 		["tradeskillID"] = 202,
 	},
-	[259427] = {
-		["itemID"] = 154884,
-		["abilityID"] = 39637,
+	[56006] = {
+		["itemID"] = 41598,
+		["abilityID"] = 19460,
 	},
-	[122652] = {
-		["itemID"] = 82978,
-		["abilityID"] = 26471,
+	[29552] = {
+		["itemID"] = 23491,
+		["abilityID"] = 14187,
 	},
-	[343693] = {
-		["itemID"] = 183942,
-		["abilityID"] = 45846,
+	[305839] = {
+		["itemID"] = 170390,
+		["abilityID"] = 41079,
 	},
-	[192890] = {
-		["itemID"] = 128712,
-		["abilityID"] = 34733,
+	[305842] = {
+		["itemID"] = 170387,
+		["abilityID"] = 41076,
+	},
+	[40004] = {
+		["itemID"] = 32395,
+		["abilityID"] = 15821,
+	},
+	[142963] = {
+		["itemID"] = 98611,
+		["abilityID"] = 31481,
+	},
+	[20849] = {
+		["itemID"] = 16979,
+		["abilityID"] = 11857,
 	},
 	[143182] = {
 		["itemID"] = 98857,
 		["abilityID"] = 31499,
 	},
-	[305862] = {
-		["abilityID"] = 41082,
-		["itemID"] = 170313,
-		["tradeskillID"] = 202,
+	[170720] = {
+		["itemID"] = 115804,
+		["abilityID"] = 33295,
 	},
-	[310923] = {
-		["itemID"] = 173191,
-		["abilityID"] = 42865,
+	[196427] = {
+		["itemID"] = 129964,
+		["abilityID"] = 35059,
 	},
-	[107720] = {
-		["itemID"] = 76666,
-		["abilityID"] = 26503,
+	[305847] = {
+		["itemID"] = 170310,
+		["abilityID"] = 43073,
 	},
-	[3866] = {
-		["itemID"] = 4330,
-		["abilityID"] = 2401,
+	[63194] = {
+		["itemID"] = 45553,
+		["abilityID"] = 20822,
 	},
-	[337427] = {
-		["itemID"] = 181784,
-		["abilityID"] = 45467,
+	[338100] = {
+		["itemID"] = 181381,
+		["abilityID"] = 45506,
 	},
 	[310924] = {
 		["itemID"] = 173192,
 		["abilityID"] = 42866,
 	},
-	[259428] = {
-		["itemID"] = 154884,
-		["abilityID"] = 39638,
+	[107714] = {
+		["itemID"] = 76698,
+		["abilityID"] = 26628,
 	},
 	[143183] = {
 		["itemID"] = 98858,
 		["abilityID"] = 31507,
 	},
-	[192892] = {
-		["itemID"] = 128988,
-		["abilityID"] = 34735,
-	},
-	[343691] = {
-		["itemID"] = 173381,
-		["abilityID"] = 45782,
-	},
-	[9145] = {
-		["itemID"] = 7348,
-		["abilityID"] = 5026,
-	},
-	[30574] = {
-		["abilityID"] = 14408,
-		["itemID"] = 23828,
+	[343102] = {
+		["abilityID"] = 46082,
+		["itemID"] = 173383,
 		["tradeskillID"] = 202,
+	},
+	[196428] = {
+		["itemID"] = 129975,
+		["abilityID"] = 35060,
+	},
+	[192874] = {
+		["itemID"] = 129001,
+		["abilityID"] = 34717,
+	},
+	[359492] = {
+		["itemID"] = 187700,
+		["abilityID"] = 46256,
 	},
 	[50647] = {
 		["itemID"] = 38278,
@@ -33468,143 +33457,143 @@ recipeLibrary = {
 		["itemID"] = 204832,
 		["abilityID"] = 48491,
 	},
-	[57703] = {
-		["itemID"] = 43115,
-		["abilityID"] = 19777,
+	[305845] = {
+		["itemID"] = 170311,
+		["abilityID"] = 43075,
 	},
 	[143184] = {
 		["itemID"] = 98859,
 		["abilityID"] = 31523,
 	},
-	[53977] = {
-		["itemID"] = 40039,
-		["abilityID"] = 18467,
+	[142958] = {
+		["itemID"] = 98606,
+		["abilityID"] = 31479,
 	},
-	[9207] = {
-		["itemID"] = 7390,
-		["abilityID"] = 5056,
+	[18413] = {
+		["itemID"] = 14142,
+		["abilityID"] = 10409,
 	},
 	[2334] = {
 		["abilityID"] = 1382,
 		["itemID"] = 2458,
 		["tradeskillID"] = 171,
 	},
-	[176409] = {
-		["itemID"] = 116994,
-		["abilityID"] = 33687,
+	[53832] = {
+		["itemID"] = 39905,
+		["abilityID"] = 18363,
 	},
-	[107716] = {
-		["itemID"] = 76672,
-		["abilityID"] = 26481,
+	[32869] = {
+		["itemID"] = 25899,
+		["abilityID"] = 14927,
 	},
 	[343694] = {
 		["itemID"] = 173384,
 		["abilityID"] = 46091,
 	},
-	[181647] = {
-		["abilityID"] = 34013,
-		["itemID"] = 122601,
-		["tradeskillID"] = 171,
+	[41316] = {
+		["abilityID"] = 15854,
+		["itemID"] = 32475,
+		["tradeskillID"] = 202,
 	},
 	[143185] = {
 		["itemID"] = 98860,
 		["abilityID"] = 31524,
 	},
-	[76470] = {
-		["itemID"] = 75133,
-		["abilityID"] = 21822,
+	[21161] = {
+		["itemID"] = 17193,
+		["abilityID"] = 11979,
 	},
 	[343695] = {
 		["itemID"] = 173383,
 		["abilityID"] = 46080,
 	},
-	[22480] = {
-		["itemID"] = 18045,
-		["abilityID"] = 12236,
+	[305863] = {
+		["abilityID"] = 41081,
+		["itemID"] = 170313,
+		["tradeskillID"] = 202,
 	},
 	[10487] = {
 		["itemID"] = 8173,
 		["abilityID"] = 5667,
 	},
-	[226121] = {
-		["itemID"] = 132498,
-		["abilityID"] = 36155,
+	[199001] = {
+		["abilityID"] = 35133,
+		["itemID"] = 132511,
+		["tradeskillID"] = 202,
 	},
 	[343696] = {
 		["itemID"] = 173382,
 		["abilityID"] = 45848,
 	},
-	[22967] = {
-		["itemID"] = 17771,
-		["abilityID"] = 20659,
+	[26421] = {
+		["abilityID"] = 13428,
+		["itemID"] = 21590,
+		["tradeskillID"] = 202,
 	},
 	[143186] = {
 		["itemID"] = 98861,
 		["abilityID"] = 31519,
 	},
-	[264960] = {
-		["abilityID"] = 39235,
-		["itemID"] = 158212,
-		["tradeskillID"] = 202,
+	[53857] = {
+		["itemID"] = 39917,
+		["abilityID"] = 18378,
 	},
 	[343697] = {
 		["itemID"] = 173381,
 		["abilityID"] = 45847,
 	},
-	[122678] = {
-		["itemID"] = 83148,
-		["abilityID"] = 26613,
+	[29603] = {
+		["itemID"] = 23506,
+		["abilityID"] = 14197,
 	},
-	[338996] = {
-		["itemID"] = 191336,
-		["abilityID"] = 42864,
+	[21943] = {
+		["itemID"] = 17721,
+		["abilityID"] = 12140,
 	},
-	[48248] = {
-		["itemID"] = 37118,
-		["abilityID"] = 17957,
+	[73466] = {
+		["itemID"] = 52292,
+		["abilityID"] = 21501,
 	},
-	[107696] = {
-		["itemID"] = 76680,
-		["abilityID"] = 26533,
+	[107718] = {
+		["itemID"] = 76659,
+		["abilityID"] = 26496,
 	},
-	[4942] = {
-		["abilityID"] = 2909,
-		["itemID"] = 4623,
-		["tradeskillID"] = 171,
+	[259415] = {
+		["itemID"] = 154882,
+		["abilityID"] = 39635,
 	},
 	[143187] = {
 		["itemID"] = 98862,
 		["abilityID"] = 31520,
 	},
-	[124620] = {
-		["itemID"] = 85824,
-		["abilityID"] = 26953,
+	[53865] = {
+		["itemID"] = 39945,
+		["abilityID"] = 18386,
 	},
-	[23066] = {
-		["abilityID"] = 12420,
-		["itemID"] = 9318,
+	[107701] = {
+		["itemID"] = 76687,
+		["abilityID"] = 26603,
+	},
+	[73504] = {
+		["itemID"] = 52321,
+		["abilityID"] = 23895,
+	},
+	[53856] = {
+		["itemID"] = 39918,
+		["abilityID"] = 18379,
+	},
+	[28207] = {
+		["itemID"] = 22652,
+		["abilityID"] = 13912,
+	},
+	[41319] = {
+		["abilityID"] = 15857,
+		["itemID"] = 32480,
 		["tradeskillID"] = 202,
 	},
-	[259422] = {
-		["itemID"] = 156526,
-		["abilityID"] = 39632,
-	},
-	[55375] = {
-		["itemID"] = 41391,
-		["abilityID"] = 19302,
-	},
-	[391814] = {
-		["itemID"] = 200905,
-		["abilityID"] = 47893,
-	},
-	[269459] = {
-		["itemID"] = 159851,
-		["abilityID"] = 39458,
-	},
-	[3230] = {
-		["abilityID"] = 1833,
-		["itemID"] = 2457,
-		["tradeskillID"] = 171,
+	[298647] = {
+		["itemID"] = 168624,
+		["abilityID"] = 40649,
 	},
 	[143188] = {
 		["itemID"] = 98863,
@@ -33622,63 +33611,65 @@ recipeLibrary = {
 		["itemID"] = 168624,
 		["abilityID"] = 40650,
 	},
-	[58146] = {
-		["itemID"] = 43249,
-		["abilityID"] = 19975,
+	[185956] = {
+		["itemID"] = 127000,
+		["abilityID"] = 34332,
 	},
-	[26928] = {
-		["itemID"] = 21934,
-		["abilityID"] = 13540,
+	[76467] = {
+		["itemID"] = 75118,
+		["abilityID"] = 21819,
 	},
 	[3454] = {
 		["abilityID"] = 1937,
 		["itemID"] = 3829,
 		["tradeskillID"] = 171,
 	},
-	[192904] = {
-		["itemID"] = 129000,
-		["abilityID"] = 34747,
+	[60758] = {
+		["itemID"] = 43481,
+		["abilityID"] = 20386,
 	},
-	[143189] = {
-		["itemID"] = 98864,
-		["abilityID"] = 31528,
+	[56280] = {
+		["itemID"] = 42443,
+		["abilityID"] = 19536,
 	},
-	[29550] = {
-		["itemID"] = 23489,
-		["abilityID"] = 14185,
+	[382363] = {
+		["abilityID"] = 47459,
+		["itemID"] = 198236,
+		["tradeskillID"] = 202,
 	},
-	[33288] = {
-		["itemID"] = 27659,
-		["abilityID"] = 15008,
+	[226118] = {
+		["itemID"] = 132499,
+		["abilityID"] = 36158,
 	},
-	[26910] = {
-		["itemID"] = 21778,
-		["abilityID"] = 13529,
-	},
-	[2152] = {
-		["itemID"] = 2304,
-		["abilityID"] = 1356,
-	},
-	[12056] = {
-		["itemID"] = 10007,
-		["abilityID"] = 6586,
-	},
-	[39639] = {
-		["abilityID"] = 15771,
-		["itemID"] = 32068,
+	[22732] = {
+		["abilityID"] = 12299,
+		["itemID"] = 18253,
 		["tradeskillID"] = 171,
 	},
-	[60631] = {
-		["itemID"] = 38441,
-		["abilityID"] = 20328,
+	[195943] = {
+		["itemID"] = 130244,
+		["abilityID"] = 35023,
 	},
-	[143190] = {
-		["itemID"] = 98926,
-		["abilityID"] = 31512,
+	[28549] = {
+		["abilityID"] = 13965,
+		["itemID"] = 22827,
+		["tradeskillID"] = 171,
 	},
-	[73396] = {
-		["itemID"] = 52255,
-		["abilityID"] = 21486,
+	[64728] = {
+		["itemID"] = 45809,
+		["abilityID"] = 21017,
+	},
+	[124618] = {
+		["itemID"] = 85789,
+		["abilityID"] = 26917,
+	},
+	[3774] = {
+		["itemID"] = 4257,
+		["abilityID"] = 2183,
+	},
+	[107698] = {
+		["itemID"] = 76685,
+		["abilityID"] = 26555,
 	},
 	[360088] = {
 		["abilityID"] = 46295,
@@ -33689,23 +33680,22 @@ recipeLibrary = {
 		["itemID"] = 4333,
 		["abilityID"] = 2404,
 	},
-	[26927] = {
-		["itemID"] = 21933,
-		["abilityID"] = 13539,
+	[338987] = {
+		["itemID"] = 191336,
+		["abilityID"] = 45600,
 	},
 	[3934] = {
 		["abilityID"] = 2430,
 		["itemID"] = 4368,
 		["tradeskillID"] = 202,
 	},
-	[3966] = {
-		["abilityID"] = 2461,
-		["itemID"] = 4393,
-		["tradeskillID"] = 202,
+	[15863] = {
+		["itemID"] = 12213,
+		["abilityID"] = 8621,
 	},
-	[122576] = {
-		["itemID"] = 82903,
-		["abilityID"] = 26428,
+	[73400] = {
+		["itemID"] = 52260,
+		["abilityID"] = 21492,
 	},
 	[143191] = {
 		["itemID"] = 98927,
@@ -33719,69 +33709,71 @@ recipeLibrary = {
 		["itemID"] = 4457,
 		["abilityID"] = 2499,
 	},
-	[201533] = {
-		["itemID"] = 133569,
-		["abilityID"] = 35192,
+	[50951] = {
+		["itemID"] = 38416,
+		["abilityID"] = 20296,
 	},
-	[124625] = {
-		["itemID"] = 85787,
-		["abilityID"] = 26942,
+	[387833] = {
+		["itemID"] = 199697,
+		["abilityID"] = 47705,
 	},
-	[76459] = {
-		["itemID"] = 75120,
-		["abilityID"] = 21812,
+	[53869] = {
+		["itemID"] = 39939,
+		["abilityID"] = 18390,
 	},
-	[259429] = {
-		["itemID"] = 154884,
-		["abilityID"] = 39639,
+	[19080] = {
+		["itemID"] = 15065,
+		["abilityID"] = 10786,
 	},
-	[53874] = {
-		["itemID"] = 39949,
-		["abilityID"] = 18395,
+	[408230] = {
+		["abilityID"] = 48537,
+		["itemID"] = 204818,
+		["tradeskillID"] = 202,
 	},
 	[143192] = {
 		["itemID"] = 98928,
 		["abilityID"] = 31504,
 	},
-	[122586] = {
-		["itemID"] = 82913,
-		["abilityID"] = 26431,
+	[122571] = {
+		["itemID"] = 82898,
+		["abilityID"] = 26393,
 	},
 	[18414] = {
 		["itemID"] = 14100,
 		["abilityID"] = 10410,
 	},
-	[122667] = {
-		["itemID"] = 83800,
-		["abilityID"] = 26549,
+	[122577] = {
+		["itemID"] = 82904,
+		["abilityID"] = 26404,
 	},
-	[338972] = {
-		["itemID"] = 191336,
-		["abilityID"] = 45586,
+	[198999] = {
+		["abilityID"] = 35131,
+		["itemID"] = 132509,
+		["tradeskillID"] = 202,
 	},
-	[371371] = {
-		["itemID"] = 191229,
-		["abilityID"] = 46853,
+	[283249] = {
+		["itemID"] = 164653,
+		["abilityID"] = 40019,
 	},
-	[288182] = {
-		["itemID"] = 156653,
-		["abilityID"] = 40235,
+	[299668] = {
+		["itemID"] = 168959,
+		["abilityID"] = 40765,
 	},
-	[322587] = {
-		["itemID"] = 171442,
-		["abilityID"] = 43548,
+	[176399] = {
+		["itemID"] = 116988,
+		["abilityID"] = 33681,
 	},
 	[143193] = {
 		["itemID"] = 98929,
 		["abilityID"] = 31500,
 	},
-	[165304] = {
-		["itemID"] = 141644,
-		["abilityID"] = 32901,
+	[124626] = {
+		["itemID"] = 85822,
+		["abilityID"] = 26943,
 	},
-	[383795] = {
-		["itemID"] = 190311,
-		["abilityID"] = 47550,
+	[53871] = {
+		["itemID"] = 39940,
+		["abilityID"] = 18392,
 	},
 	[282275] = {
 		["itemID"] = 164676,
@@ -33791,13 +33783,13 @@ recipeLibrary = {
 		["itemID"] = 5081,
 		["abilityID"] = 3343,
 	},
-	[125596] = {
-		["itemID"] = 87234,
-		["abilityID"] = 27065,
+	[338977] = {
+		["itemID"] = 191336,
+		["abilityID"] = 45590,
 	},
-	[56000] = {
-		["itemID"] = 41255,
-		["abilityID"] = 19454,
+	[122643] = {
+		["itemID"] = 82969,
+		["abilityID"] = 26457,
 	},
 	[282276] = {
 		["itemID"] = 164676,
@@ -33807,30 +33799,30 @@ recipeLibrary = {
 		["itemID"] = 98930,
 		["abilityID"] = 31508,
 	},
-	[107744] = {
-		["itemID"] = 76653,
-		["abilityID"] = 26584,
+	[3944] = {
+		["abilityID"] = 2440,
+		["itemID"] = 4376,
+		["tradeskillID"] = 202,
 	},
-	[73382] = {
-		["itemID"] = 52231,
-		["abilityID"] = 21483,
+	[122644] = {
+		["itemID"] = 82970,
+		["abilityID"] = 26458,
 	},
 	[282277] = {
 		["itemID"] = 164670,
 		["abilityID"] = 40097,
 	},
-	[382377] = {
-		["abilityID"] = 47445,
-		["itemID"] = 198189,
-		["tradeskillID"] = 202,
+	[195916] = {
+		["itemID"] = 130238,
+		["abilityID"] = 34996,
 	},
-	[170706] = {
-		["itemID"] = 115989,
-		["abilityID"] = 33281,
+	[254238] = {
+		["itemID"] = 153036,
+		["abilityID"] = 36772,
 	},
-	[31060] = {
-		["itemID"] = 24088,
-		["abilityID"] = 14553,
+	[60629] = {
+		["itemID"] = 44444,
+		["abilityID"] = 20326,
 	},
 	[282278] = {
 		["itemID"] = 164670,
@@ -33840,76 +33832,75 @@ recipeLibrary = {
 		["itemID"] = 98776,
 		["abilityID"] = 31529,
 	},
-	[12599] = {
-		["abilityID"] = 6868,
-		["itemID"] = 10561,
-		["tradeskillID"] = 202,
+	[367389] = {
+		["itemID"] = 190378,
+		["abilityID"] = 46667,
 	},
-	[76450] = {
-		["itemID"] = 55065,
-		["abilityID"] = 21803,
+	[60757] = {
+		["itemID"] = 43469,
+		["abilityID"] = 20385,
 	},
-	[19053] = {
-		["itemID"] = 15074,
-		["abilityID"] = 10763,
+	[7156] = {
+		["itemID"] = 5966,
+		["abilityID"] = 4165,
 	},
-	[30316] = {
-		["abilityID"] = 14354,
-		["itemID"] = 23758,
-		["tradeskillID"] = 202,
+	[64727] = {
+		["itemID"] = 45808,
+		["abilityID"] = 21016,
 	},
 	[290471] = {
 		["itemID"] = 166804,
 		["abilityID"] = 40332,
 	},
-	[42615] = {
-		["itemID"] = 22448,
-		["abilityID"] = 15898,
+	[125598] = {
+		["itemID"] = 87238,
+		["abilityID"] = 27067,
 	},
-	[28584] = {
-		["abilityID"] = 13994,
-		["itemID"] = 22452,
-		["tradeskillID"] = 171,
+	[124637] = {
+		["itemID"] = 85852,
+		["abilityID"] = 26933,
 	},
 	[143196] = {
 		["itemID"] = 98810,
 		["abilityID"] = 31530,
 	},
-	[290472] = {
-		["itemID"] = 166804,
-		["abilityID"] = 40333,
+	[36315] = {
+		["itemID"] = 30038,
+		["abilityID"] = 15652,
 	},
-	[58486] = {
-		["itemID"] = 4426,
-		["abilityID"] = 20007,
+	[382380] = {
+		["abilityID"] = 47442,
+		["itemID"] = 198198,
+		["tradeskillID"] = 202,
 	},
 	[282281] = {
 		["itemID"] = 164670,
 		["abilityID"] = 40099,
 	},
-	[24940] = {
-		["itemID"] = 20575,
-		["abilityID"] = 13087,
+	[35543] = {
+		["itemID"] = 29529,
+		["abilityID"] = 15545,
 	},
 	[290473] = {
 		["itemID"] = 166804,
 		["abilityID"] = 40334,
 	},
-	[124129] = {
-		["itemID"] = 83764,
-		["abilityID"] = 26760,
+	[46136] = {
+		["itemID"] = 34371,
+		["abilityID"] = 16276,
 	},
-	[25278] = {
-		["itemID"] = 20817,
-		["abilityID"] = 13196,
+	[101796] = {
+		["itemID"] = 71880,
+		["abilityID"] = 24551,
 	},
 	[143197] = {
 		["itemID"] = 98920,
 		["abilityID"] = 31531,
 	},
-	[58487] = {
-		["itemID"] = 10310,
-		["abilityID"] = 20008,
+	[382375] = {
+		["abilityID"] = 47447,
+		["itemID"] = 198183,
+		["tradeskillID"] = 202,
 	},
 	[196442] = {
 		["itemID"] = 130090,
@@ -33919,111 +33910,114 @@ recipeLibrary = {
 		["itemID"] = 23098,
 		["abilityID"] = 14030,
 	},
-	[16647] = {
-		["itemID"] = 12424,
-		["abilityID"] = 9164,
+	[58485] = {
+		["itemID"] = 2289,
+		["abilityID"] = 20006,
 	},
-	[256308] = {
-		["itemID"] = 152510,
-		["abilityID"] = 38971,
+	[30317] = {
+		["abilityID"] = 14355,
+		["itemID"] = 23761,
+		["tradeskillID"] = 202,
 	},
-	[107745] = {
-		["itemID"] = 76650,
-		["abilityID"] = 26602,
+	[53841] = {
+		["abilityID"] = 18342,
+		["itemID"] = 40068,
+		["tradeskillID"] = 171,
 	},
-	[31437] = {
-		["itemID"] = 24251,
-		["abilityID"] = 14625,
+	[343193] = {
+		["itemID"] = 173382,
+		["abilityID"] = 45749,
 	},
-	[122666] = {
-		["itemID"] = 83799,
-		["abilityID"] = 26550,
+	[14293] = {
+		["itemID"] = 11287,
+		["abilityID"] = 7999,
 	},
-	[29645] = {
-		["itemID"] = 23522,
-		["abilityID"] = 14216,
+	[3501] = {
+		["itemID"] = 3835,
+		["abilityID"] = 1993,
 	},
-	[307717] = {
-		["itemID"] = 171436,
-		["abilityID"] = 42426,
+	[192809] = {
+		["itemID"] = 128988,
+		["abilityID"] = 34652,
 	},
-	[12070] = {
-		["itemID"] = 10021,
-		["abilityID"] = 6601,
+	[391836] = {
+		["itemID"] = 196963,
+		["abilityID"] = 47879,
 	},
 	[286381] = {
 		["itemID"] = 165755,
 		["abilityID"] = 40140,
 	},
-	[53883] = {
-		["itemID"] = 39957,
-		["abilityID"] = 18404,
+	[60627] = {
+		["itemID"] = 44443,
+		["abilityID"] = 20325,
 	},
-	[60608] = {
-		["itemID"] = 38438,
-		["abilityID"] = 20313,
+	[24125] = {
+		["itemID"] = 19689,
+		["abilityID"] = 12820,
 	},
-	[73381] = {
-		["itemID"] = 52225,
-		["abilityID"] = 21482,
+	[14809] = {
+		["itemID"] = 11289,
+		["abilityID"] = 8001,
 	},
-	[107649] = {
-		["itemID"] = 76526,
-		["abilityID"] = 26498,
+	[7836] = {
+		["abilityID"] = 4393,
+		["itemID"] = 6370,
+		["tradeskillID"] = 171,
 	},
 	[32494] = {
 		["itemID"] = 25687,
 		["abilityID"] = 14878,
 	},
-	[225551] = {
-		["itemID"] = 137289,
-		["abilityID"] = 36122,
+	[171275] = {
+		["itemID"] = 116181,
+		["abilityID"] = 33396,
 	},
 	[282287] = {
 		["itemID"] = 164667,
 		["abilityID"] = 40094,
 	},
-	[78462] = {
-		["itemID"] = 56538,
-		["abilityID"] = 22400,
+	[253180] = {
+		["itemID"] = 152808,
+		["abilityID"] = 38736,
 	},
-	[53885] = {
-		["itemID"] = 39959,
-		["abilityID"] = 18406,
+	[198967] = {
+		["abilityID"] = 35099,
+		["itemID"] = 132503,
+		["tradeskillID"] = 202,
 	},
-	[131898] = {
-		["itemID"] = 82775,
-		["abilityID"] = 27500,
+	[225534] = {
+		["itemID"] = 136826,
+		["abilityID"] = 36105,
 	},
 	[282288] = {
 		["itemID"] = 164667,
 		["abilityID"] = 40095,
 	},
-	[334413] = {
-		["abilityID"] = 45347,
-		["itemID"] = 180751,
-		["tradeskillID"] = 171,
+	[12052] = {
+		["itemID"] = 10002,
+		["abilityID"] = 6583,
 	},
 	[36316] = {
 		["itemID"] = 30036,
 		["abilityID"] = 15654,
 	},
-	[18415] = {
-		["itemID"] = 14101,
-		["abilityID"] = 10408,
+	[9208] = {
+		["itemID"] = 7391,
+		["abilityID"] = 5057,
 	},
 	[282289] = {
 		["itemID"] = 164667,
 		["abilityID"] = 40096,
 	},
-	[39637] = {
-		["abilityID"] = 15769,
-		["itemID"] = 32063,
-		["tradeskillID"] = 171,
+	[176425] = {
+		["itemID"] = 117008,
+		["abilityID"] = 33700,
 	},
-	[73464] = {
-		["itemID"] = 52289,
-		["abilityID"] = 21508,
+	[28586] = {
+		["abilityID"] = 13998,
+		["itemID"] = 22850,
+		["tradeskillID"] = 171,
 	},
 	[376492] = {
 		["itemID"] = 193521,
@@ -34033,13 +34027,13 @@ recipeLibrary = {
 		["itemID"] = 164666,
 		["abilityID"] = 40091,
 	},
-	[2169] = {
-		["itemID"] = 2317,
-		["abilityID"] = 1371,
+	[56021] = {
+		["itemID"] = 42093,
+		["abilityID"] = 19476,
 	},
-	[195871] = {
-		["itemID"] = 130239,
-		["abilityID"] = 34969,
+	[107758] = {
+		["itemID"] = 76897,
+		["abilityID"] = 26509,
 	},
 	[376493] = {
 		["itemID"] = 193526,
@@ -34049,13 +34043,14 @@ recipeLibrary = {
 		["itemID"] = 164666,
 		["abilityID"] = 40092,
 	},
-	[29547] = {
-		["itemID"] = 23484,
-		["abilityID"] = 14182,
+	[56531] = {
+		["itemID"] = 42702,
+		["abilityID"] = 19579,
 	},
-	[53875] = {
-		["itemID"] = 39950,
-		["abilityID"] = 18396,
+	[30315] = {
+		["abilityID"] = 14353,
+		["itemID"] = 23748,
+		["tradeskillID"] = 202,
 	},
 	[376494] = {
 		["itemID"] = 193513,
@@ -34065,160 +34060,167 @@ recipeLibrary = {
 		["itemID"] = 164666,
 		["abilityID"] = 40093,
 	},
-	[293801] = {
-		["itemID"] = 167539,
-		["abilityID"] = 40429,
+	[86644] = {
+		["itemID"] = 62239,
+		["abilityID"] = 23408,
 	},
-	[78461] = {
-		["itemID"] = 56537,
-		["abilityID"] = 22399,
+	[56480] = {
+		["abilityID"] = 19576,
+		["itemID"] = 42549,
+		["tradeskillID"] = 202,
 	},
 	[376495] = {
 		["itemID"] = 193524,
 		["abilityID"] = 47220,
 	},
-	[166363] = {
-		["itemID"] = 113270,
-		["abilityID"] = 32917,
+	[3922] = {
+		["abilityID"] = 2417,
+		["itemID"] = 4359,
+		["tradeskillID"] = 202,
 	},
-	[73471] = {
-		["itemID"] = 52297,
-		["abilityID"] = 21512,
+	[330247] = {
+		["itemID"] = 180055,
+		["abilityID"] = 45130,
 	},
-	[381411] = {
-		["itemID"] = 197791,
-		["abilityID"] = 47387,
+	[55372] = {
+		["itemID"] = 41386,
+		["abilityID"] = 19298,
 	},
 	[376496] = {
 		["itemID"] = 193532,
 		["abilityID"] = 47221,
 	},
-	[8483] = {
-		["itemID"] = 6795,
-		["abilityID"] = 4715,
+	[125527] = {
+		["itemID"] = 82401,
+		["abilityID"] = 27043,
 	},
-	[182929] = {
-		["itemID"] = 123897,
-		["abilityID"] = 34092,
+	[76457] = {
+		["itemID"] = 75122,
+		["abilityID"] = 21810,
 	},
-	[170700] = {
-		["itemID"] = 115524,
-		["abilityID"] = 33274,
+	[19088] = {
+		["itemID"] = 15080,
+		["abilityID"] = 10795,
 	},
 	[376497] = {
 		["itemID"] = 193530,
 		["abilityID"] = 47222,
 	},
-	[253186] = {
-		["itemID"] = 152810,
-		["abilityID"] = 38738,
+	[16641] = {
+		["itemID"] = 12404,
+		["abilityID"] = 9156,
 	},
-	[52570] = {
-		["itemID"] = 39085,
-		["abilityID"] = 17885,
+	[3449] = {
+		["abilityID"] = 1932,
+		["itemID"] = 3824,
+		["tradeskillID"] = 171,
 	},
-	[73502] = {
-		["itemID"] = 52319,
-		["abilityID"] = 23890,
+	[11477] = {
+		["abilityID"] = 6018,
+		["itemID"] = 9224,
+		["tradeskillID"] = 171,
 	},
-	[73383] = {
-		["itemID"] = 52250,
-		["abilityID"] = 21484,
+	[330219] = {
+		["itemID"] = 180058,
+		["abilityID"] = 45102,
 	},
-	[64661] = {
-		["itemID"] = 33568,
-		["abilityID"] = 21009,
+	[107766] = {
+		["itemID"] = 76891,
+		["abilityID"] = 26567,
 	},
-	[253191] = {
-		["itemID"] = 162465,
-		["abilityID"] = 38745,
+	[10005] = {
+		["itemID"] = 7944,
+		["abilityID"] = 5347,
 	},
 	[36317] = {
 		["itemID"] = 30037,
 		["abilityID"] = 15653,
 	},
-	[198939] = {
-		["abilityID"] = 35096,
-		["itemID"] = 132500,
-		["tradeskillID"] = 202,
+	[101789] = {
+		["itemID"] = 71868,
+		["abilityID"] = 24544,
 	},
-	[53830] = {
-		["itemID"] = 39996,
-		["abilityID"] = 18434,
+	[53884] = {
+		["itemID"] = 39958,
+		["abilityID"] = 18405,
 	},
-	[73473] = {
-		["itemID"] = 52299,
-		["abilityID"] = 21511,
+	[122662] = {
+		["itemID"] = 83794,
+		["abilityID"] = 26479,
 	},
-	[3918] = {
-		["abilityID"] = 2413,
-		["itemID"] = 4357,
+	[30314] = {
+		["abilityID"] = 14352,
+		["itemID"] = 23747,
 		["tradeskillID"] = 202,
 	},
 	[376500] = {
 		["itemID"] = 193536,
 		["abilityID"] = 47225,
 	},
-	[107693] = {
-		["itemID"] = 76681,
-		["abilityID"] = 26474,
+	[3957] = {
+		["abilityID"] = 2451,
+		["itemID"] = 4386,
+		["tradeskillID"] = 202,
 	},
-	[256234] = {
-		["itemID"] = 153646,
-		["abilityID"] = 38940,
+	[40002] = {
+		["itemID"] = 32397,
+		["abilityID"] = 15817,
 	},
-	[40514] = {
-		["itemID"] = 32508,
-		["abilityID"] = 15834,
+	[127128] = {
+		["abilityID"] = 27341,
+		["itemID"] = 86607,
+		["tradeskillID"] = 202,
 	},
 	[376501] = {
 		["itemID"] = 193525,
 		["abilityID"] = 47226,
 	},
-	[282878] = {
-		["itemID"] = 164648,
-		["abilityID"] = 40029,
+	[2329] = {
+		["abilityID"] = 1378,
+		["itemID"] = 2454,
+		["tradeskillID"] = 171,
 	},
 	[58332] = {
 		["itemID"] = 43386,
 		["abilityID"] = 20544,
 	},
-	[171262] = {
-		["itemID"] = 116166,
-		["abilityID"] = 33382,
+	[3929] = {
+		["abilityID"] = 2425,
+		["itemID"] = 4364,
+		["tradeskillID"] = 202,
 	},
 	[376502] = {
 		["itemID"] = 193520,
 		["abilityID"] = 47227,
 	},
-	[73359] = {
-		["itemID"] = 52217,
-		["abilityID"] = 21461,
+	[73465] = {
+		["itemID"] = 52291,
+		["abilityID"] = 21502,
 	},
-	[253132] = {
-		["itemID"] = 152831,
-		["abilityID"] = 38754,
+	[107639] = {
+		["itemID"] = 76550,
+		["abilityID"] = 26638,
 	},
-	[172541] = {
-		["abilityID"] = 39668,
-		["itemID"] = 116979,
+	[330235] = {
+		["itemID"] = 180059,
+		["abilityID"] = 45118,
+	},
+	[229217] = {
+		["abilityID"] = 36279,
+		["itemID"] = 142117,
 		["tradeskillID"] = 171,
-	},
-	[376503] = {
-		["itemID"] = 193527,
-		["abilityID"] = 47228,
 	},
 	[182116] = {
 		["itemID"] = 108257,
 		["abilityID"] = 34036,
 	},
-	[259433] = {
-		["itemID"] = 154891,
-		["abilityID"] = 39640,
+	[304573] = {
+		["itemID"] = 170340,
+		["abilityID"] = 41048,
 	},
-	[3755] = {
-		["itemID"] = 4238,
-		["abilityID"] = 4001,
+	[73475] = {
+		["itemID"] = 52301,
+		["abilityID"] = 21510,
 	},
 	[376504] = {
 		["itemID"] = 193537,
@@ -34228,63 +34230,62 @@ recipeLibrary = {
 		["itemID"] = 164665,
 		["abilityID"] = 40088,
 	},
-	[73348] = {
-		["itemID"] = 52232,
-		["abilityID"] = 21450,
+	[56196] = {
+		["itemID"] = 42339,
+		["abilityID"] = 19518,
 	},
 	[32495] = {
 		["itemID"] = 25689,
 		["abilityID"] = 14879,
 	},
-	[229218] = {
-		["abilityID"] = 36280,
-		["itemID"] = 142117,
-		["tradeskillID"] = 171,
+	[376505] = {
+		["itemID"] = 193512,
+		["abilityID"] = 47230,
 	},
 	[282303] = {
 		["itemID"] = 164665,
 		["abilityID"] = 40089,
 	},
-	[86649] = {
-		["itemID"] = 87566,
-		["abilityID"] = 23413,
+	[330163] = {
+		["itemID"] = 180060,
+		["abilityID"] = 45049,
 	},
-	[253187] = {
-		["itemID"] = 162463,
-		["abilityID"] = 38739,
+	[107704] = {
+		["itemID"] = 76682,
+		["abilityID"] = 26637,
 	},
 	[376506] = {
 		["itemID"] = 193500,
 		["abilityID"] = 47231,
 	},
-	[78469] = {
-		["itemID"] = 75105,
-		["abilityID"] = 22405,
+	[19825] = {
+		["abilityID"] = 11243,
+		["itemID"] = 16008,
+		["tradeskillID"] = 202,
 	},
-	[322591] = {
-		["itemID"] = 171446,
-		["abilityID"] = 43552,
+	[253177] = {
+		["itemID"] = 152807,
+		["abilityID"] = 38735,
 	},
 	[36318] = {
 		["itemID"] = 30035,
 		["abilityID"] = 15655,
 	},
-	[376507] = {
-		["itemID"] = 193515,
-		["abilityID"] = 47232,
+	[18416] = {
+		["itemID"] = 14141,
+		["abilityID"] = 10411,
 	},
 	[282305] = {
 		["itemID"] = 164665,
 		["abilityID"] = 40090,
 	},
-	[30313] = {
-		["abilityID"] = 14351,
-		["itemID"] = 23746,
-		["tradeskillID"] = 202,
+	[381397] = {
+		["itemID"] = 197783,
+		["abilityID"] = 47393,
 	},
-	[19100] = {
-		["itemID"] = 15081,
-		["abilityID"] = 10804,
+	[54941] = {
+		["itemID"] = 40950,
+		["abilityID"] = 19165,
 	},
 	[376508] = {
 		["itemID"] = 193498,
@@ -34294,30 +34295,31 @@ recipeLibrary = {
 		["itemID"] = 164664,
 		["abilityID"] = 40085,
 	},
-	[19819] = {
-		["abilityID"] = 11240,
-		["itemID"] = 16009,
-		["tradeskillID"] = 202,
+	[39636] = {
+		["abilityID"] = 15768,
+		["itemID"] = 32062,
+		["tradeskillID"] = 171,
 	},
-	[78445] = {
-		["itemID"] = 75117,
-		["abilityID"] = 22383,
+	[73478] = {
+		["itemID"] = 52304,
+		["abilityID"] = 21513,
 	},
-	[376509] = {
-		["itemID"] = 193497,
-		["abilityID"] = 47234,
+	[229220] = {
+		["abilityID"] = 36281,
+		["itemID"] = 142117,
+		["tradeskillID"] = 171,
 	},
 	[282307] = {
 		["itemID"] = 164664,
 		["abilityID"] = 40086,
 	},
-	[60725] = {
-		["itemID"] = 43271,
-		["abilityID"] = 20363,
+	[330177] = {
+		["itemID"] = 180059,
+		["abilityID"] = 45063,
 	},
-	[10550] = {
-		["itemID"] = 8195,
-		["abilityID"] = 5686,
+	[28267] = {
+		["itemID"] = 22645,
+		["abilityID"] = 13924,
 	},
 	[376510] = {
 		["itemID"] = 193511,
@@ -34327,26 +34329,27 @@ recipeLibrary = {
 		["itemID"] = 164664,
 		["abilityID"] = 40087,
 	},
-	[256782] = {
-		["itemID"] = 154163,
-		["abilityID"] = 39064,
+	[73360] = {
+		["itemID"] = 52203,
+		["abilityID"] = 21462,
 	},
 	[60893] = {
 		["abilityID"] = 20381,
 		["itemID"] = 115460,
 		["tradeskillID"] = 171,
 	},
-	[376511] = {
-		["itemID"] = 193509,
-		["abilityID"] = 47236,
+	[45022] = {
+		["itemID"] = 34411,
+		["abilityID"] = 16157,
 	},
-	[282309] = {
-		["itemID"] = 164663,
-		["abilityID"] = 40082,
+	[182120] = {
+		["abilityID"] = 33351,
+		["itemID"] = 111366,
+		["tradeskillID"] = 202,
 	},
-	[253117] = {
-		["itemID"] = 152819,
-		["abilityID"] = 38742,
+	[338101] = {
+		["itemID"] = 182101,
+		["abilityID"] = 45505,
 	},
 	[62941] = {
 		["itemID"] = 45054,
@@ -34360,30 +34363,29 @@ recipeLibrary = {
 		["itemID"] = 164663,
 		["abilityID"] = 40083,
 	},
-	[3946] = {
-		["abilityID"] = 2442,
-		["itemID"] = 4378,
-		["tradeskillID"] = 202,
+	[3491] = {
+		["itemID"] = 3848,
+		["abilityID"] = 1984,
 	},
-	[256786] = {
-		["itemID"] = 162653,
-		["abilityID"] = 39828,
+	[31430] = {
+		["itemID"] = 24273,
+		["abilityID"] = 14619,
 	},
-	[196456] = {
-		["itemID"] = 130130,
-		["abilityID"] = 35062,
+	[376513] = {
+		["itemID"] = 193504,
+		["abilityID"] = 47238,
 	},
-	[282311] = {
-		["itemID"] = 164663,
-		["abilityID"] = 40084,
+	[182121] = {
+		["itemID"] = 110611,
+		["abilityID"] = 34039,
 	},
-	[256781] = {
-		["itemID"] = 154162,
-		["abilityID"] = 39063,
+	[78467] = {
+		["itemID"] = 75107,
+		["abilityID"] = 22403,
 	},
-	[12086] = {
-		["itemID"] = 10025,
-		["abilityID"] = 6617,
+	[29605] = {
+		["itemID"] = 23508,
+		["abilityID"] = 14198,
 	},
 	[376514] = {
 		["itemID"] = 193523,
@@ -34393,17 +34395,17 @@ recipeLibrary = {
 		["itemID"] = 164662,
 		["abilityID"] = 40079,
 	},
-	[311868] = {
-		["itemID"] = 173121,
-		["abilityID"] = 42922,
+	[381407] = {
+		["itemID"] = 197790,
+		["abilityID"] = 47386,
 	},
-	[137826] = {
-		["itemID"] = 93476,
-		["abilityID"] = 31285,
+	[19051] = {
+		["itemID"] = 15076,
+		["abilityID"] = 10761,
 	},
-	[376515] = {
-		["itemID"] = 193518,
-		["abilityID"] = 47240,
+	[196457] = {
+		["itemID"] = 130937,
+		["abilityID"] = 35063,
 	},
 	[282313] = {
 		["itemID"] = 164662,
@@ -34413,9 +34415,9 @@ recipeLibrary = {
 		["itemID"] = 30825,
 		["abilityID"] = 15708,
 	},
-	[209502] = {
-		["abilityID"] = 35784,
-		["itemID"] = 136688,
+	[30312] = {
+		["abilityID"] = 14350,
+		["itemID"] = 23742,
 		["tradeskillID"] = 202,
 	},
 	[376516] = {
@@ -34426,63 +34428,62 @@ recipeLibrary = {
 		["itemID"] = 164662,
 		["abilityID"] = 40081,
 	},
-	[137831] = {
-		["itemID"] = 93505,
-		["abilityID"] = 31412,
+	[246999] = {
+		["itemID"] = 151542,
+		["abilityID"] = 36881,
 	},
-	[76181] = {
-		["itemID"] = 54853,
-		["abilityID"] = 21762,
+	[256789] = {
+		["itemID"] = 154159,
+		["abilityID"] = 39060,
 	},
 	[376517] = {
 		["itemID"] = 193516,
 		["abilityID"] = 47242,
 	},
-	[182123] = {
-		["itemID"] = 111556,
-		["abilityID"] = 34040,
+	[28912] = {
+		["itemID"] = 23099,
+		["abilityID"] = 14031,
 	},
-	[332072] = {
-		["itemID"] = 191333,
-		["abilityID"] = 45260,
+	[76180] = {
+		["itemID"] = 54852,
+		["abilityID"] = 21761,
 	},
-	[194798] = {
-		["itemID"] = 128905,
-		["abilityID"] = 34936,
+	[330242] = {
+		["itemID"] = 180055,
+		["abilityID"] = 45125,
 	},
 	[376518] = {
 		["itemID"] = 193510,
 		["abilityID"] = 47243,
 	},
-	[304317] = {
-		["itemID"] = 170301,
-		["abilityID"] = 40992,
+	[194771] = {
+		["itemID"] = 128903,
+		["abilityID"] = 34926,
 	},
-	[107635] = {
-		["itemID"] = 76551,
-		["abilityID"] = 26590,
+	[324036] = {
+		["itemID"] = 177876,
+		["abilityID"] = 44557,
 	},
-	[28243] = {
-		["itemID"] = 22670,
-		["abilityID"] = 13923,
+	[199007] = {
+		["abilityID"] = 35139,
+		["itemID"] = 132502,
+		["tradeskillID"] = 202,
 	},
 	[376519] = {
 		["itemID"] = 193522,
 		["abilityID"] = 47244,
 	},
-	[3979] = {
-		["abilityID"] = 2459,
-		["itemID"] = 4407,
-		["tradeskillID"] = 202,
+	[26783] = {
+		["itemID"] = 21867,
+		["abilityID"] = 13497,
 	},
-	[28581] = {
-		["abilityID"] = 13997,
-		["itemID"] = 22456,
-		["tradeskillID"] = 171,
+	[7892] = {
+		["itemID"] = 6384,
+		["abilityID"] = 4408,
 	},
-	[26914] = {
-		["itemID"] = 21789,
-		["abilityID"] = 13532,
+	[7643] = {
+		["itemID"] = 6264,
+		["abilityID"] = 4311,
 	},
 	[376520] = {
 		["itemID"] = 193514,
@@ -34492,9 +34493,9 @@ recipeLibrary = {
 		["itemID"] = 164661,
 		["abilityID"] = 40076,
 	},
-	[7624] = {
-		["itemID"] = 6241,
-		["abilityID"] = 4303,
+	[76178] = {
+		["itemID"] = 65365,
+		["abilityID"] = 23742,
 	},
 	[32496] = {
 		["itemID"] = 25690,
@@ -34504,50 +34505,51 @@ recipeLibrary = {
 		["itemID"] = 193503,
 		["abilityID"] = 47246,
 	},
-	[282319] = {
-		["itemID"] = 164661,
-		["abilityID"] = 40077,
+	[182125] = {
+		["itemID"] = 112377,
+		["abilityID"] = 20520,
 	},
-	[19049] = {
-		["itemID"] = 15083,
-		["abilityID"] = 10759,
+	[137827] = {
+		["itemID"] = 93477,
+		["abilityID"] = 31295,
 	},
-	[256769] = {
-		["itemID"] = 162469,
-		["abilityID"] = 39036,
+	[12755] = {
+		["abilityID"] = 6948,
+		["itemID"] = 10587,
+		["tradeskillID"] = 202,
 	},
 	[376522] = {
 		["itemID"] = 193507,
 		["abilityID"] = 47247,
 	},
-	[265937] = {
-		["itemID"] = 158887,
-		["abilityID"] = 40480,
+	[282320] = {
+		["itemID"] = 164661,
+		["abilityID"] = 40078,
 	},
-	[403160] = {
-		["itemID"] = 204123,
-		["abilityID"] = 48283,
+	[86646] = {
+		["itemID"] = 63246,
+		["abilityID"] = 23410,
 	},
-	[12717] = {
-		["abilityID"] = 6940,
-		["itemID"] = 10542,
-		["tradeskillID"] = 202,
+	[19101] = {
+		["itemID"] = 15055,
+		["abilityID"] = 10806,
 	},
-	[376523] = {
-		["itemID"] = 193506,
-		["abilityID"] = 47248,
+	[18417] = {
+		["itemID"] = 13863,
+		["abilityID"] = 10412,
 	},
 	[282321] = {
 		["itemID"] = 164660,
 		["abilityID"] = 40073,
 	},
-	[31065] = {
-		["itemID"] = 24097,
-		["abilityID"] = 14558,
+	[7752] = {
+		["itemID"] = 787,
+		["abilityID"] = 4354,
 	},
-	[256766] = {
-		["itemID"] = 162467,
-		["abilityID"] = 39033,
+	[17566] = {
+		["abilityID"] = 9945,
+		["itemID"] = 12803,
+		["tradeskillID"] = 171,
 	},
 	[376524] = {
 		["itemID"] = 193501,
@@ -34557,29 +34559,29 @@ recipeLibrary = {
 		["itemID"] = 164660,
 		["abilityID"] = 40074,
 	},
-	[124223] = {
-		["itemID"] = 81400,
-		["abilityID"] = 26768,
+	[56010] = {
+		["itemID"] = 41603,
+		["abilityID"] = 19464,
 	},
-	[78449] = {
-		["itemID"] = 75085,
-		["abilityID"] = 22387,
+	[3764] = {
+		["itemID"] = 4247,
+		["abilityID"] = 2173,
 	},
 	[376525] = {
 		["itemID"] = 193502,
 		["abilityID"] = 47250,
 	},
-	[182127] = {
-		["itemID"] = 115524,
-		["abilityID"] = 34038,
+	[282323] = {
+		["itemID"] = 164660,
+		["abilityID"] = 40075,
 	},
-	[101749] = {
-		["itemID"] = 71828,
-		["abilityID"] = 24504,
+	[338270] = {
+		["itemID"] = 182005,
+		["abilityID"] = 45568,
 	},
-	[101755] = {
-		["itemID"] = 71834,
-		["abilityID"] = 24510,
+	[338273] = {
+		["itemID"] = 182103,
+		["abilityID"] = 45571,
 	},
 	[376526] = {
 		["itemID"] = 193517,
@@ -34589,13 +34591,13 @@ recipeLibrary = {
 		["itemID"] = 164659,
 		["abilityID"] = 40070,
 	},
-	[278423] = {
-		["itemID"] = 165749,
-		["abilityID"] = 39846,
+	[35532] = {
+		["itemID"] = 29495,
+		["abilityID"] = 15538,
 	},
-	[146613] = {
-		["itemID"] = 102351,
-		["abilityID"] = 31856,
+	[60971] = {
+		["itemID"] = 44558,
+		["abilityID"] = 20392,
 	},
 	[376527] = {
 		["itemID"] = 193505,
@@ -34605,14 +34607,14 @@ recipeLibrary = {
 		["itemID"] = 164659,
 		["abilityID"] = 40071,
 	},
-	[63201] = {
-		["itemID"] = 45565,
-		["abilityID"] = 20825,
+	[32814] = {
+		["abilityID"] = 14918,
+		["itemID"] = 25886,
+		["tradeskillID"] = 202,
 	},
-	[53938] = {
-		["abilityID"] = 18359,
-		["itemID"] = 40217,
-		["tradeskillID"] = 171,
+	[22869] = {
+		["itemID"] = 18409,
+		["abilityID"] = 12343,
 	},
 	[376528] = {
 		["itemID"] = 194017,
@@ -34622,29 +34624,31 @@ recipeLibrary = {
 		["itemID"] = 164659,
 		["abilityID"] = 40072,
 	},
-	[56500] = {
-		["itemID"] = 42646,
-		["abilityID"] = 19551,
+	[12718] = {
+		["abilityID"] = 6943,
+		["itemID"] = 10543,
+		["tradeskillID"] = 202,
 	},
-	[304413] = {
-		["itemID"] = 170348,
-		["abilityID"] = 40999,
+	[42662] = {
+		["itemID"] = 33173,
+		["abilityID"] = 15900,
 	},
 	[376529] = {
 		["itemID"] = 194018,
 		["abilityID"] = 47254,
 	},
-	[282327] = {
-		["itemID"] = 164658,
-		["abilityID"] = 40067,
+	[182129] = {
+		["itemID"] = 115504,
+		["abilityID"] = 33785,
 	},
-	[101735] = {
-		["itemID"] = 71817,
-		["abilityID"] = 24494,
+	[3188] = {
+		["abilityID"] = 1822,
+		["itemID"] = 3391,
+		["tradeskillID"] = 171,
 	},
-	[10572] = {
-		["itemID"] = 8212,
-		["abilityID"] = 5698,
+	[176405] = {
+		["itemID"] = 116992,
+		["abilityID"] = 33685,
 	},
 	[376530] = {
 		["itemID"] = 194048,
@@ -34654,14 +34658,13 @@ recipeLibrary = {
 		["itemID"] = 164658,
 		["abilityID"] = 40068,
 	},
-	[338262] = {
-		["itemID"] = 182030,
-		["abilityID"] = 45562,
+	[330150] = {
+		["itemID"] = 180057,
+		["abilityID"] = 45036,
 	},
-	[15628] = {
-		["abilityID"] = 8465,
-		["itemID"] = 11825,
-		["tradeskillID"] = 202,
+	[223940] = {
+		["itemID"] = 140567,
+		["abilityID"] = 36077,
 	},
 	[376531] = {
 		["itemID"] = 194042,
@@ -34671,160 +34674,162 @@ recipeLibrary = {
 		["itemID"] = 164658,
 		["abilityID"] = 40069,
 	},
-	[256702] = {
-		["itemID"] = 153709,
-		["abilityID"] = 39001,
+	[35527] = {
+		["itemID"] = 29491,
+		["abilityID"] = 15530,
 	},
-	[55015] = {
-		["itemID"] = 41114,
-		["abilityID"] = 19179,
+	[12076] = {
+		["itemID"] = 10028,
+		["abilityID"] = 6607,
 	},
 	[376532] = {
 		["itemID"] = 194045,
 		["abilityID"] = 47257,
 	},
-	[19814] = {
-		["abilityID"] = 11235,
-		["itemID"] = 16023,
+	[3973] = {
+		["abilityID"] = 2422,
+		["itemID"] = 4404,
 		["tradeskillID"] = 202,
 	},
-	[80269] = {
-		["abilityID"] = 22005,
-		["itemID"] = 58489,
-		["tradeskillID"] = 171,
+	[256762] = {
+		["itemID"] = 154148,
+		["abilityID"] = 39040,
 	},
-	[26781] = {
-		["itemID"] = 21865,
-		["abilityID"] = 13495,
+	[23707] = {
+		["itemID"] = 19149,
+		["abilityID"] = 12700,
 	},
 	[376533] = {
 		["itemID"] = 193950,
 		["abilityID"] = 47258,
 	},
-	[137941] = {
-		["itemID"] = 93618,
-		["abilityID"] = 31195,
+	[12079] = {
+		["itemID"] = 10051,
+		["abilityID"] = 6610,
 	},
-	[136197] = {
-		["abilityID"] = 31055,
-		["itemID"] = 75274,
-		["tradeskillID"] = 171,
+	[16728] = {
+		["itemID"] = 12636,
+		["abilityID"] = 9325,
 	},
-	[403162] = {
-		["itemID"] = 204124,
-		["abilityID"] = 48284,
+	[99448] = {
+		["itemID"] = 69944,
+		["abilityID"] = 24302,
 	},
 	[376534] = {
 		["itemID"] = 193953,
 		["abilityID"] = 47259,
 	},
-	[67133] = {
-		["itemID"] = 47573,
-		["abilityID"] = 21205,
+	[19093] = {
+		["itemID"] = 15138,
+		["abilityID"] = 10800,
 	},
-	[338264] = {
-		["itemID"] = 182053,
-		["abilityID"] = 45566,
+	[80477] = {
+		["abilityID"] = 21996,
+		["itemID"] = 58084,
+		["tradeskillID"] = 171,
 	},
 	[405205] = {
 		["itemID"] = 204404,
 		["abilityID"] = 48458,
 	},
-	[196467] = {
-		["itemID"] = 130894,
-		["abilityID"] = 35064,
+	[376535] = {
+		["itemID"] = 193956,
+		["abilityID"] = 47260,
 	},
-	[39713] = {
-		["itemID"] = 32198,
-		["abilityID"] = 15777,
+	[10544] = {
+		["itemID"] = 8211,
+		["abilityID"] = 5681,
 	},
-	[402123] = {
-		["itemID"] = 203810,
-		["abilityID"] = 48225,
+	[403158] = {
+		["itemID"] = 204128,
+		["abilityID"] = 48288,
 	},
-	[101745] = {
-		["itemID"] = 71824,
-		["abilityID"] = 24500,
+	[22867] = {
+		["itemID"] = 18407,
+		["abilityID"] = 12341,
 	},
-	[376536] = {
-		["itemID"] = 193959,
-		["abilityID"] = 47261,
+	[15865] = {
+		["itemID"] = 12214,
+		["abilityID"] = 8622,
 	},
-	[60604] = {
-		["itemID"] = 44437,
-		["abilityID"] = 20304,
+	[19047] = {
+		["itemID"] = 15407,
+		["abilityID"] = 10756,
 	},
-	[408223] = {
-		["itemID"] = 203364,
-		["abilityID"] = 48570,
+	[53812] = {
+		["abilityID"] = 18323,
+		["itemID"] = 40195,
+		["tradeskillID"] = 171,
 	},
 	[32497] = {
 		["itemID"] = 25691,
 		["abilityID"] = 14881,
 	},
-	[376537] = {
-		["itemID"] = 193962,
-		["abilityID"] = 47262,
+	[196468] = {
+		["itemID"] = 130895,
+		["abilityID"] = 35065,
 	},
-	[9928] = {
-		["itemID"] = 7919,
-		["abilityID"] = 5316,
+	[53960] = {
+		["itemID"] = 40016,
+		["abilityID"] = 18450,
 	},
 	[184181] = {
 		["itemID"] = 124393,
 		["abilityID"] = 34120,
 	},
-	[402128] = {
-		["itemID"] = 203797,
-		["abilityID"] = 48229,
+	[28568] = {
+		["abilityID"] = 13981,
+		["itemID"] = 22452,
+		["tradeskillID"] = 171,
 	},
 	[376538] = {
 		["itemID"] = 194008,
 		["abilityID"] = 47263,
 	},
-	[413524] = {
-		["itemID"] = 206490,
-		["abilityID"] = 48745,
+	[56501] = {
+		["itemID"] = 42647,
+		["abilityID"] = 19552,
 	},
-	[27829] = {
-		["itemID"] = 22385,
-		["abilityID"] = 13843,
+	[370456] = {
+		["abilityID"] = 46764,
+		["itemID"] = 191324,
+		["tradeskillID"] = 171,
 	},
-	[125530] = {
-		["itemID"] = 82404,
-		["abilityID"] = 27046,
+	[33286] = {
+		["itemID"] = 27657,
+		["abilityID"] = 15006,
 	},
-	[376539] = {
-		["itemID"] = 194011,
-		["abilityID"] = 47264,
+	[18418] = {
+		["itemID"] = 14044,
+		["abilityID"] = 10413,
 	},
-	[419019] = {
-		["itemID"] = 208247,
-		["abilityID"] = 48997,
+	[176513] = {
+		["itemID"] = 119126,
+		["abilityID"] = 33706,
 	},
 	[184182] = {
 		["itemID"] = 124394,
 		["abilityID"] = 34119,
 	},
-	[408277] = {
-		["itemID"] = 203762,
-		["abilityID"] = 48574,
+	[413745] = {
+		["itemID"] = 206498,
+		["abilityID"] = 48751,
 	},
 	[376540] = {
 		["itemID"] = 194014,
 		["abilityID"] = 47265,
 	},
-	[413743] = {
-		["itemID"] = 206496,
-		["abilityID"] = 48770,
+	[182978] = {
+		["itemID"] = 123913,
+		["abilityID"] = 34061,
 	},
-	[413755] = {
-		["itemID"] = 206508,
-		["abilityID"] = 48756,
+	[256754] = {
+		["itemID"] = 154143,
+		["abilityID"] = 39029,
 	},
-	[408221] = {
-		["itemID"] = 203324,
-		["abilityID"] = 48568,
+	[137942] = {
+		["itemID"] = 93619,
+		["abilityID"] = 31213,
 	},
 	[376541] = {
 		["itemID"] = 193944,
@@ -34838,108 +34843,108 @@ recipeLibrary = {
 		["itemID"] = 124395,
 		["abilityID"] = 34118,
 	},
-	[413509] = {
-		["itemID"] = 206442,
-		["abilityID"] = 48734,
+	[382337] = {
+		["abilityID"] = 47497,
+		["itemID"] = 198268,
+		["tradeskillID"] = 202,
 	},
 	[376542] = {
 		["itemID"] = 193941,
 		["abilityID"] = 47267,
 	},
-	[416688] = {
-		["itemID"] = 207561,
-		["abilityID"] = 48938,
+	[403149] = {
+		["itemID"] = 204120,
+		["abilityID"] = 48310,
 	},
-	[413514] = {
-		["itemID"] = 206480,
-		["abilityID"] = 48739,
+	[413759] = {
+		["abilityID"] = 48773,
+		["itemID"] = 206512,
+		["tradeskillID"] = 202,
 	},
-	[413518] = {
-		["itemID"] = 206484,
-		["abilityID"] = 48740,
+	[60728] = {
+		["itemID"] = 43447,
+		["abilityID"] = 20365,
 	},
 	[376543] = {
 		["itemID"] = 193528,
 		["abilityID"] = 47268,
 	},
-	[413505] = {
-		["itemID"] = 206441,
-		["abilityID"] = 48730,
+	[16659] = {
+		["itemID"] = 12417,
+		["abilityID"] = 9179,
 	},
 	[184184] = {
 		["itemID"] = 124396,
 		["abilityID"] = 34117,
 	},
-	[413520] = {
-		["itemID"] = 206486,
-		["abilityID"] = 48741,
+	[402135] = {
+		["itemID"] = 203793,
+		["abilityID"] = 48235,
 	},
 	[376544] = {
 		["itemID"] = 193544,
 		["abilityID"] = 47269,
 	},
-	[422330] = {
-		["itemID"] = 209351,
-		["abilityID"] = 49092,
+	[55998] = {
+		["itemID"] = 41253,
+		["abilityID"] = 19452,
 	},
-	[413521] = {
-		["itemID"] = 206487,
-		["abilityID"] = 48742,
+	[101750] = {
+		["itemID"] = 71829,
+		["abilityID"] = 24505,
 	},
-	[413522] = {
-		["itemID"] = 206488,
-		["abilityID"] = 48743,
+	[256133] = {
+		["abilityID"] = 42335,
+		["itemID"] = 171370,
+		["tradeskillID"] = 171,
 	},
 	[376545] = {
 		["itemID"] = 193541,
 		["abilityID"] = 47270,
 	},
-	[298726] = {
-		["abilityID"] = 40654,
-		["itemID"] = 168529,
-		["tradeskillID"] = 171,
+	[282343] = {
+		["itemID"] = 164681,
+		["abilityID"] = 40064,
 	},
 	[184185] = {
 		["itemID"] = 124397,
 		["abilityID"] = 34116,
 	},
-	[424876] = {
-		["itemID"] = 210041,
-		["abilityID"] = 49168,
+	[413507] = {
+		["itemID"] = 206443,
+		["abilityID"] = 48732,
 	},
 	[376546] = {
 		["itemID"] = 193540,
 		["abilityID"] = 47271,
 	},
-	[298727] = {
-		["abilityID"] = 40655,
-		["itemID"] = 168529,
-		["tradeskillID"] = 171,
+	[282344] = {
+		["itemID"] = 164681,
+		["abilityID"] = 40065,
 	},
-	[419015] = {
-		["itemID"] = 208248,
-		["abilityID"] = 48996,
+	[225553] = {
+		["itemID"] = 139314,
+		["abilityID"] = 48947,
 	},
-	[419017] = {
-		["itemID"] = 208250,
-		["abilityID"] = 49001,
+	[402138] = {
+		["itemID"] = 203801,
+		["abilityID"] = 48238,
 	},
 	[376547] = {
 		["itemID"] = 193534,
 		["abilityID"] = 47272,
 	},
-	[298728] = {
-		["abilityID"] = 40656,
-		["itemID"] = 168529,
-		["tradeskillID"] = 171,
+	[282345] = {
+		["itemID"] = 164681,
+		["abilityID"] = 40066,
 	},
-	[419010] = {
-		["itemID"] = 208245,
-		["abilityID"] = 48990,
+	[413753] = {
+		["itemID"] = 206506,
+		["abilityID"] = 48755,
 	},
-	[419006] = {
-		["itemID"] = 208241,
-		["abilityID"] = 48991,
+	[53957] = {
+		["itemID"] = 40013,
+		["abilityID"] = 18447,
 	},
 	[376548] = {
 		["itemID"] = 193545,
@@ -34950,71 +34955,67 @@ recipeLibrary = {
 		["itemID"] = 168489,
 		["tradeskillID"] = 171,
 	},
-	[413501] = {
-		["itemID"] = 206439,
-		["abilityID"] = 48726,
+	[413739] = {
+		["itemID"] = 206492,
+		["abilityID"] = 48746,
 	},
-	[413497] = {
-		["itemID"] = 206433,
-		["abilityID"] = 48722,
+	[408278] = {
+		["itemID"] = 204993,
+		["abilityID"] = 48575,
 	},
 	[376549] = {
 		["itemID"] = 193539,
 		["abilityID"] = 47274,
 	},
-	[66499] = {
-		["itemID"] = 40122,
-		["abilityID"] = 21131,
+	[28914] = {
+		["itemID"] = 23100,
+		["abilityID"] = 14032,
 	},
-	[413516] = {
-		["itemID"] = 206482,
-		["abilityID"] = 48760,
+	[413751] = {
+		["itemID"] = 206504,
+		["abilityID"] = 48771,
 	},
-	[413517] = {
-		["itemID"] = 206483,
-		["abilityID"] = 48761,
+	[407100] = {
+		["itemID"] = 204848,
+		["abilityID"] = 48493,
 	},
-	[7421] = {
-		["itemID"] = 6218,
-		["abilityID"] = 4291,
+	[376550] = {
+		["itemID"] = 193533,
+		["abilityID"] = 47275,
 	},
 	[298731] = {
 		["abilityID"] = 40653,
 		["itemID"] = 168489,
 		["tradeskillID"] = 171,
 	},
-	[126392] = {
-		["abilityID"] = 27126,
-		["itemID"] = 0,
-		["tradeskillID"] = 202,
+	[416682] = {
+		["itemID"] = 207555,
+		["abilityID"] = 48935,
 	},
-	[109099] = {
-		["abilityID"] = 27353,
-		["itemID"] = 0,
+	[419042] = {
+		["abilityID"] = 48987,
+		["itemID"] = 208313,
 		["tradeskillID"] = 202,
 	},
 	[376551] = {
 		["itemID"] = 193529,
 		["abilityID"] = 47276,
 	},
-	[84427] = {
-		["abilityID"] = 22257,
-		["itemID"] = 0,
-		["tradeskillID"] = 202,
+	[419004] = {
+		["itemID"] = 208238,
+		["abilityID"] = 48979,
 	},
-	[84424] = {
-		["abilityID"] = 24014,
-		["itemID"] = 0,
-		["tradeskillID"] = 202,
+	[419005] = {
+		["itemID"] = 208237,
+		["abilityID"] = 48980,
 	},
-	[55016] = {
-		["abilityID"] = 19545,
-		["itemID"] = 0,
-		["tradeskillID"] = 202,
+	[419031] = {
+		["itemID"] = 208271,
+		["abilityID"] = 48978,
 	},
-	[403151] = {
-		["itemID"] = 204114,
-		["abilityID"] = 48312,
+	[419034] = {
+		["itemID"] = 208268,
+		["abilityID"] = 48975,
 	},
 }
 fakeRecipeLibrary = {

@@ -4,6 +4,7 @@ ActionButtonSettingsDB = {
 		["Qubit - Ragnaros"] = "Default",
 		["Cheddarboy - Ravencrest"] = "Default",
 		["Fishanus - Ragnaros"] = "Default",
+		["Qpcheese - Ragnaros"] = "Default",
 		["Qutlaw - Ravencrest"] = "Default",
 		["Flurrq - Ragnaros"] = "Default",
 		["Qpe - Ravencrest"] = "Default",

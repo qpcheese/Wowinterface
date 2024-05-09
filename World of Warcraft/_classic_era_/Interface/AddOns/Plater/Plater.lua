@@ -53,7 +53,7 @@ local UnitCanAttack = UnitCanAttack
 --local IsSpellInRange = IsSpellInRange --200 locals limit
 local abs = math.abs
 local format = string.format
-local GetSpellInfo = GetSpellInfo
+local GetSpellInfo = GetSpellInfo or function(spellID) if not spellID then return nil end local si = C_Spell.GetSpellInfo(spellID) if si then return si.name, nil, si.iconID, si.castTime, si.minRange, si.maxRange, si.spellID, si.originalIconID end end
 local UnitIsUnit = UnitIsUnit
 local type = type
 local select = select
@@ -597,7 +597,7 @@ Plater.AnchorNamesByPhraseId = {
 				if (class == "PRIEST") then
 					-- SW:D is available to all priest specs
 					if IsPlayerSpell(32379) then
-						lowExecute = 0.2
+						lowExecute = 0.25
 					end
 					
 				elseif (class == "MAGE") then
@@ -689,15 +689,22 @@ Plater.AnchorNamesByPhraseId = {
 					if GetSpellInfo(GetSpellInfo(53351)) then
 						lowExecute = 0.2
 					end
-				elseif (class == "PRIEST") and IS_WOW_PROJECT_CLASSIC_WRATH then
-					for i = 1, 6 do
-						local enabled, _, glyphSpellID = GetGlyphSocketInfo(i)
-						if enabled and glyphSpellID then
-							if glyphSpellID == 55682 then --Glyph of Shadow Word: Death
-								lowExecute = 0.35
-								break
+				elseif (class == "PRIEST") then
+					if IS_WOW_PROJECT_CLASSIC_WRATH then -- why wrath again?... can't remember
+						for i = 1, 6 do
+							local enabled, _, glyphSpellID = GetGlyphSocketInfo(i)
+							if enabled and glyphSpellID then
+								if glyphSpellID == 55682 then --Glyph of Shadow Word: Death
+									lowExecute = 0.35
+									break
+								end
 							end
 						end
+					end
+					
+					-- SW:D is available to all priest specs
+					if IsPlayerSpell(32379) then
+						lowExecute = 0.25
 					end
 				end
 			end
@@ -1112,9 +1119,11 @@ Plater.AnchorNamesByPhraseId = {
 			if not hasTankAura then
 				local playerClass = Plater.PlayerClass
 				if playerClass == "WARRIOR" then
-					playerIsTank = GetShapeshiftForm() == 2 or IsEquippedItemType("Shields") -- Defensive Stance or shield
+					local stance = GetShapeshiftFormID() --18 is def, 24 is glad
+					playerIsTank = stance == 18 or ((not stance == 24) and IsEquippedItemType("Shields")) -- Defensive Stance or shield (and not glad)
 				elseif playerClass == "DRUID" then
-					playerIsTank = GetShapeshiftForm() == 1 -- Bear Form
+					local formId = GetShapeshiftFormID()
+					playerIsTank = (formId == 5) or (formId == 8) -- Bear Form or Dire Bear Form...
 				elseif playerClass == "PALADIN" then
 					for i=1,40 do
 					  local spellId = select(10, UnitBuff("player",i))
@@ -1984,7 +1993,7 @@ Plater.AnchorNamesByPhraseId = {
 	end
 	
 	--store all functions for all events that will be registered inside OnInit
-	local last_GetShapeshiftForm = GetShapeshiftForm()
+	local last_GetShapeshiftFormID = GetShapeshiftFormID()
 	local eventFunctions = {
 
 		--when a unit from unatackable change its state, this event triggers several times, a schedule is used to only update once
@@ -2272,7 +2281,7 @@ Plater.AnchorNamesByPhraseId = {
 			
 			Plater.CurrentEncounterID = nil
 			
-			local pvpType, isFFA, faction = GetZonePVPInfo()
+			local pvpType, isFFA, faction = (GetZonePVPInfo or C_PvP.GetZonePVPInfo)()
 			Plater.ZonePvpType = pvpType
 			Plater.UpdateBgPlayerRoleCache()
 			
@@ -2323,7 +2332,7 @@ Plater.AnchorNamesByPhraseId = {
 				C_Timer.After (10, delayed_guildname_check)
 			end
 			
-			local pvpType, isFFA, faction = GetZonePVPInfo()
+			local pvpType, isFFA, faction = (GetZonePVPInfo or C_PvP.GetZonePVPInfo)()
 			Plater.ZonePvpType = pvpType
 			
 			local name, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, instanceMapID, instanceGroupSize = GetInstanceInfo()
@@ -3870,10 +3879,10 @@ Plater.AnchorNamesByPhraseId = {
 		UPDATE_SHAPESHIFT_FORM = function()
 			local curTime = GetTime()
 			--this is to work around UPDATE_SHAPESHIFT_FORM firing for all units and not just the player... causing lag...
-			if last_GetShapeshiftForm == GetShapeshiftForm() then
+			if last_GetShapeshiftFormID == GetShapeshiftFormID() then
 				return
 			end
-			last_GetShapeshiftForm = GetShapeshiftForm()
+			last_GetShapeshiftFormID = GetShapeshiftFormID()
 			
 			UpdatePlayerTankState()
 			Plater.UpdateAllNameplateColors()

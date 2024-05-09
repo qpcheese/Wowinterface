@@ -5,12 +5,14 @@
 local mod, CL = BigWigs:NewBoss("Omnotron Defense System", 669, 169)
 if not mod then return end
 mod:RegisterEnableMob(42166, 42179, 42178, 42180, 49226) -- Arcanotron, Electron, Magmatron, Toxitron, Lord Victor Nefarius
+mod:SetEncounterID(1027)
+mod:SetRespawnTime(70)
 
 --------------------------------------------------------------------------------
 -- Localization
 --
 
-local L = mod:NewLocale("enUS", true)
+local L = mod:GetLocale()
 if L then
 	L.nef = "Lord Victor Nefarius"
 	L.nef_desc = "Warnings for Lord Victor Nefarius abilities."
@@ -33,25 +35,39 @@ if L then
 	L.custom_on_iconomnotron_desc = "Place a skull on the active boss (requires promoted or leader)."
 	L.custom_on_iconomnotron_icon = "Interface\\TARGETINGFRAME\\UI-RaidTargetingIcon_8"
 end
-L = mod:GetLocale()
 
 --------------------------------------------------------------------------------
 -- Initialization
 --
 
+local activatedMarker = mod:AddMarkerOption(true, "npc", 8, 78740, 8) -- Activated
 function mod:GetOptions()
 	return {
-		{79501, "ICON", "FLASH"},
-		{79888, "ICON", "FLASH", "PROXIMITY"},
-		{80161, "FLASH"}, {80157, "FLASH", "SAY"}, 80053, {80094, "FLASH"},
-		"nef", 91849, 91879, {92048, "ICON", "FLASH"}, 92023, "switch", "custom_on_iconomnotron",
+		-- Electron
+		{79501, "ICON", "ME_ONLY_EMPHASIZE"},
+		-- Magmatron
+		{79888, "ICON", "ME_ONLY_EMPHASIZE"},
+		-- Toxitron
+		80161,
+		{80157, "SAY"},
+		80053,
+		{80094, "ME_ONLY_EMPHASIZE"},
+		-- Heroic
+		"nef",
+		91849,
+		91879,
+		{92048, "ICON"},
+		92023,
+		-- General
+		78740, -- Activated
+		activatedMarker,
 		"berserk"
 	}, {
 		[79501] = -3207, -- Electron
 		[79888] = -3201, -- Magmatron
 		[80161] = -3208, -- Toxitron
 		nef = "heroic",
-		switch = "general"
+		[78740] = "general"
 	}
 end
 
@@ -70,11 +86,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "EncasingShadows", 92023)
 	self:Log("SPELL_AURA_APPLIED", "LightningConductor", 79888)
 	self:Log("SPELL_AURA_REMOVED", "LightningConductorRemoved", 79888)
-	self:Log("SPELL_AURA_APPLIED", "Switch", 78740)
-
-	self:RegisterEvent("INSTANCE_ENCOUNTER_ENGAGE_UNIT", "CheckBossStatus")
-
-	self:Death("Deaths", 42166, 42179, 42178, 42180)
+	self:Log("SPELL_AURA_APPLIED", "Activated", 78740)
 end
 
 function mod:OnEngage()
@@ -92,7 +104,7 @@ do
 		for i = 1, 4 do
 			local bossId = ("boss%d"):format(i)
 			if mod:UnitGUID(bossId) == sGUID and UnitIsUnit(bossId.."target", "player") then
-				mod:Flash(spellId)
+				--mod:Flash(spellId)
 				mod:Say(spellId)
 				break
 			end
@@ -111,23 +123,17 @@ end
 
 do
 	local prev = 0
-	function mod:Switch(args)
+	function mod:Activated(args)
 		local timer = self:Heroic() and 27 or 42
-		local t = GetTime()
-		if (t - prev) > timer then
-			prev = t
-			self:Bar("switch", timer+3, L["next_switch"], args.spellId)
-			self:MessageOld("switch", "green", "long", L["switch_message"]:format(args.destName, args.spellName), args.spellId)
-			--Using dGUID to avoid issues with names appearing as "UNKNOWN" for a second or so
-			if self.db.profile.custom_on_iconomnotron then
-				for i = 1, 4 do
-					local bossId = ("boss%d"):format(i)
-					if self:UnitGUID(bossId) == args.destGUID then
-						self:CustomIcon(false, bossId, 8)
-						break
-					end
-				end
+		if (args.time - prev) > timer then
+			prev = args.time
+			self:Bar(args.spellId, timer+3, L["next_switch"])
+			self:TargetMessage(args.spellId, "green", args.destName)
+			local unit = self:GetUnitIdByGUID(args.destGUID)
+			if unit then
+				self:CustomIcon(activatedMarker, unit, 8)
 			end
+			self:PlaySound(args.spellId, "long")
 		end
 	end
 end
@@ -138,9 +144,9 @@ function mod:Grip(args)
 end
 
 function mod:ShadowInfusion(args)
-	if self:Me(args.destGUID) then
-		self:Flash(args.spellId)
-	end
+	--if self:Me(args.destGUID) then
+	--	self:Flash(args.spellId)
+	--end
 	self:TargetMessageOld(args.spellId, args.destName, "orange")
 	self:CDBar("nef", 35, L["nef_next"], 69005)
 	self:SecondaryIcon(args.spellId, args.destName)
@@ -152,32 +158,25 @@ function mod:EncasingShadows(args)
 end
 
 function mod:AcquiringTarget(args)
-	if self:Me(args.destGUID) then
-		self:Flash(args.spellId)
-	end
 	self:TargetMessageOld(args.spellId, args.destName, "orange", "alarm")
 	self:SecondaryIcon(args.spellId, args.destName)
 end
 
 function mod:Fixate(args)
 	if self:Me(args.destGUID) then
-		self:Flash(args.spellId)
-		self:MessageOld(args.spellId, "blue", "alarm", L["bomb_message"])
+		self:PersonalMessage(args.spellId)
+		self:PlaySound(args.spellId, "warning", nil, args.destName)
 	end
 end
 
 function mod:LightningConductor(args)
-	if self:Me(args.destGUID) then
-		self:Flash(args.spellId)
-		self:OpenProximity(args.spellId, 10) --assumed
-	end
 	self:TargetMessageOld(args.spellId, args.destName, "yellow", "alarm")
 	self:SecondaryIcon(args.spellId, args.destName)
 end
 
 function mod:LightningConductorRemoved(args)
 	if not self:Me(args.destGUID) then return end
-	self:CloseProximity(args.spellId)
+	--self:CloseProximity(args.spellId)
 end
 
 function mod:PoisonProtocol(args)
@@ -193,20 +192,8 @@ do
 			last = time
 			if self:Me(args.destGUID) then
 				self:MessageOld(args.spellId, "blue", "info", L["cloud_message"])
-				self:Flash(args.spellId)
+				--self:Flash(args.spellId)
 			end
 		end
 	end
 end
-
-do
-	local deaths = 0
-	function mod:Deaths()
-		--Prevent the module from re-enabling in the second or so after 1 boss dies
-		deaths = deaths + 1
-		if deaths == 4 then
-			self:Win()
-		end
-	end
-end
-

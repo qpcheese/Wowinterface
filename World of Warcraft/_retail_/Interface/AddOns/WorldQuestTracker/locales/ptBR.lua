@@ -377,6 +377,8 @@ L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "Outros Personagems"
 L["S_TEXT_SIZE"] = "Text Size"
 --[[Translation missing --]]
 L["S_TORGAST"] = "Torgasth"
+--[[Translation missing --]]
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "indica a quantidade a receber"
 L["S_TUTORIAL_CLICKTOTRACK"] = "Clique para rastrear a missão."
 L["S_TUTORIAL_PARTY"] = "Quando estiver em grupo, uma estrela azul é mostrada em missões em que todos do grupo estão!"

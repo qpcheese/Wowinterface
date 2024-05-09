@@ -2,7 +2,7 @@
 IPMTDB = {
 }
 IPMTOptions = {
-	["MDTversion"] = "4.3.5.0",
+	["MDTversion"] = "4.4.0.5",
 	["direction"] = 1,
 	["global"] = {
 		["minimap"] = {
@@ -37,9 +37,9 @@ IPMTOptions = {
 }
 IPMTDungeon = {
 	["combat"] = {
+		["boss"] = false,
 		["killed"] = {
 		},
-		["boss"] = false,
 	},
 	["bossesKilled"] = 4,
 	["checkmobs"] = {
@@ -63,34 +63,34 @@ IPMTDungeon = {
 	["level"] = 18,
 	["players"] = {
 		["Tricksteriva-Turalyon"] = {
-			["enemy"] = "Tricksteriva-Turalyon",
-			["spellId"] = 371070,
 			["damage"] = 36841,
+			["spellId"] = 371070,
+			["enemy"] = "Tricksteriva-Turalyon",
 		},
 		["Xorok-Nemesis"] = {
-			["enemy"] = "Xorok-Nemesis",
-			["spellId"] = 425180,
 			["damage"] = 2326,
-		},
-		["Ernot-Kazzak"] = {
-			["enemy"] = "Iridikron",
-			["spellId"] = 414483,
-			["damage"] = 139887,
-		},
-		["Clappuccino-Hyjal"] = {
-			["enemy"] = "Iridikron",
-			["spellId"] = 414483,
-			["damage"] = 131250,
+			["spellId"] = 425180,
+			["enemy"] = "Xorok-Nemesis",
 		},
 		["Qutlaw"] = {
-			["enemy"] = "Iridikron",
-			["spellId"] = 414483,
 			["damage"] = 146713,
+			["spellId"] = 414483,
+			["enemy"] = "Iridikron",
+		},
+		["Clappuccino-Hyjal"] = {
+			["damage"] = 131250,
+			["spellId"] = 414483,
+			["enemy"] = "Iridikron",
+		},
+		["Ernot-Kazzak"] = {
+			["damage"] = 139887,
+			["spellId"] = 414483,
+			["enemy"] = "Iridikron",
 		},
 	},
 	["trash"] = {
-		["grabbed"] = 0,
 		["total"] = 300,
+		["grabbed"] = 0,
 		["current"] = 305,
 		["killed"] = 0,
 	},
@@ -107,34 +107,35 @@ IPMTDungeon = {
 				["time"] = 122,
 				["playerName"] = "Qutlaw",
 				["class"] = "ROGUE",
-				["enemy"] = "Chronikar",
 				["damage"] = 885155,
+				["enemy"] = "Chronikar",
 			}, -- [1]
 		},
 	},
 	["artwork"] = 5221768,
 	["bosses"] = {
 		{
-			["encounterID"] = 2666,
-			["name"] = "Chronikar",
 			["killed"] = true,
+			["name"] = "Chronikar",
+			["encounterID"] = 2666,
 		}, -- [1]
 		{
-			["encounterID"] = 2667,
-			["name"] = "Manifested Timeways",
 			["killed"] = true,
+			["name"] = "Manifested Timeways",
+			["encounterID"] = 2667,
 		}, -- [2]
 		{
-			["encounterID"] = 2668,
-			["name"] = "Blight of Galakrond",
 			["killed"] = true,
+			["name"] = "Blight of Galakrond",
+			["encounterID"] = 2668,
 		}, -- [3]
 		{
-			["encounterID"] = 2669,
-			["name"] = "Iridikron the Stonescaled",
 			["killed"] = true,
+			["name"] = "Iridikron the Stonescaled",
+			["encounterID"] = 2669,
 		}, -- [4]
 	},
+	["isTeeming"] = false,
 	["affixes"] = {
 		{
 			["id"] = 6,
@@ -152,7 +153,6 @@ IPMTDungeon = {
 			["name"] = "Tyrannical",
 		}, -- [3]
 	},
-	["isTeeming"] = false,
 }
 IPMTTheme = {
 	{

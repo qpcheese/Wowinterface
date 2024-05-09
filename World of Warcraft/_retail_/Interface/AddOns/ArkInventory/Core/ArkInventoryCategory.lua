@@ -95,7 +95,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["MOUNT"],
 			},
 			[421] = {
-				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_PROJECTILE",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_PROJECTILE"],
 			},
@@ -110,12 +110,12 @@ ArkInventory.Const.Category = {
 				text = string.format( "%s (%s)", ArkInventory.Localise["PET"], ArkInventory.Localise["BOUND"] ),
 			},
 			[441] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "SYSTEM_PET_BATTLE_TRADE",
 				text = ArkInventory.Localise["BATTLEPET"],
 			},
 			[442] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "SYSTEM_PET_BATTLE_BOUND",
 				text = string.format( "%s (%s)", ArkInventory.Localise["BATTLEPET"], ArkInventory.Localise["BOUND"] ),
 			},
@@ -128,7 +128,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["CURRENCY"],
 			},
 			[445] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
 				id = "SYSTEM_TOY",
 				text = ArkInventory.Localise["TOY"],
 			},
@@ -137,17 +137,17 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["CONFIG_DESIGN_ITEM_OVERRIDE_NEW"],
 			},
 			[447] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_HEIRLOOM",
 				text = ArkInventory.Localise["HEIRLOOM"],
 			},
 --			[448] = {
---				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.BFA, ArkInventory.ENUM.EXPANSION.BFA ),
+--				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.BFA, ArkInventory.ENUM.EXPANSION.BFA ),
 --				id = "SYSTEM_ARTIFACT_RELIC",
 --				text = ArkInventory.Localise["WOW_ITEM_CLASS_GEM_ARTIFACTRELIC"],
 --			},
 			[451] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.LEGION ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.LEGION ),
 				id = "SYSTEM_MYTHIC_KEYSTONE",
 				text = ArkInventory.Localise["CATEGORY_SYSTEM_MYTHIC_KEYSTONE"],
 			},
@@ -250,7 +250,7 @@ ArkInventory.Const.Category = {
 				end,
 			},
 			[449] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.BFA ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.BFA ),
 				id = "CONSUMABLE_VANTUSRUNE",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_VANTUSRUNE"],
 			},
@@ -265,7 +265,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["CATEGORY_CONSUMABLE_ABILITIES_AND_ACTIONS"],
 			},
 			[902] = {
-				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.TBC ),
+				ClientCheck = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "CONSUMABLE_FOOD_PET",
 				text = ArkInventory.Localise["CATEGORY_CONSUMABLE_FOOD_PET"],
 			},
@@ -274,12 +274,12 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["REPUTATION"],
 			},
 			[439] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_GLYPH",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_GLYPH"],
 			},
 			[440] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_ITEM_ENHANCEMENT",
 				text = function( )
 					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ) then
@@ -290,22 +290,22 @@ ArkInventory.Const.Category = {
 				end,
 			},
 			[454] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
 				id = "CONSUMABLE_CHAMPION_EQUIPMENT",
 				text = ArkInventory.Localise["CATEGORY_CONSUMABLE_CHAMPION_EQUIPMENT"],
 			},
 			[455] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
 				id = "CONSUMABLE_POWER_SHADOWLANDS_ANIMA",
 				text = string.format( "%s - %s", ArkInventory.Localise["COVENANT"], ArkInventory.Localise["ANIMA"] ),
 			},
 			[459] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
 				id = "CONSUMABLE_POWER_SHADOWLANDS_CONDUIT",
 				text = string.format( "%s - %s", ArkInventory.Localise["COVENANT"], ArkInventory.Localise["CONDUITS"] ),
 			},
 			[460] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
 				id = "CONSUMABLE_POWER_SHADOWLANDS",
 				text = string.format( "%s - %s", ArkInventory.Localise["COVENANT"], ArkInventory.Localise["OTHER"] ),
 			},
@@ -323,7 +323,7 @@ ArkInventory.Const.Category = {
 			},
 			[434] = {
 				-- cut gems only (which dont exist in classic)
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "TRADEGOODS_GEMS",
 				text = ArkInventory.Localise["GEMS"],
 			},
@@ -381,7 +381,7 @@ ArkInventory.Const.Category = {
 				end,
 			},
 			[514] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "TRADEGOODS_INSCRIPTION",
 				text = ArkInventory.Localise["WOW_SKILL_INSCRIPTION"],
 			},
@@ -420,7 +420,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_SKILL_HERBALISM"],
 			},
 			[109] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "SKILL_JEWELCRAFTING",
 				text = ArkInventory.Localise["WOW_SKILL_JEWELCRAFTING"],
 			},
@@ -441,12 +441,12 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_SKILL_TAILORING"],
 			},
 			[115] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SKILL_INSCRIPTION",
 				text = ArkInventory.Localise["WOW_SKILL_INSCRIPTION"],
 			},
 			[116] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "SKILL_ARCHAEOLOGY",
 				text = ArkInventory.Localise["WOW_SKILL_ARCHAEOLOGY"],
 			},
@@ -489,22 +489,22 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_CLASS_WARRIOR"],
 			},
 			[210] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "CLASS_DEATHKNIGHT",
 				text = ArkInventory.Localise["WOW_CLASS_DEATHKNIGHT"],
 			},
 			[211] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "CLASS_MONK",
 				text = ArkInventory.Localise["WOW_CLASS_MONK"],
 			},
 			[212] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.LEGION ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.LEGION ),
 				id = "CLASS_DEMONHUNTER",
 				text = ArkInventory.Localise["WOW_CLASS_DEMONHUNTER"],
 			},
 			[213] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAGONFLIGHT ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAGONFLIGHT ),
 				id = "CLASS_EVOKER",
 				text = ArkInventory.Localise["WOW_CLASS_EVOKER"],
 			},
@@ -523,12 +523,12 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONTAINER_BAG"],
 			},
 			[303] = {
-				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.CATACLYSM ),
+				ClientCheck = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "EMPTY_KEYRING",
 				text = ArkInventory.Localise["KEYRING"],
 			},
 			[304] = {
-				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "EMPTY_SOULSHARD",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONTAINER_SOULSHARD"],
 			},
@@ -541,52 +541,52 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_SKILL_ENCHANTING"],
 			},
 			[307] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_ENGINEERING",
 				text = ArkInventory.Localise["WOW_SKILL_ENGINEERING"],
 			},
 			[308] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_JEWELCRAFTING",
 				text = ArkInventory.Localise["WOW_SKILL_JEWELCRAFTING"],
 			},
 			[309] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_MINING",
 				text = ArkInventory.Localise["WOW_SKILL_MINING"],
 			},
 			[310] = {
-				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "EMPTY_QUIVER",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_QUIVER"],
 			},
 			[312] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_LEATHERWORKING",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONTAINER_LEATHERWORKING"],
 			},
 			[313] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "EMPTY_INSCRIPTION",
 				text = ArkInventory.Localise["WOW_SKILL_INSCRIPTION"],
 			},
 			[314] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "EMPTY_FISHING",
 				text = ArkInventory.Localise["WOW_SKILL_FISHING"],
 			},
 			[315] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "EMPTY_VOID",
 				text = ArkInventory.Localise["VOID_STORAGE"],
 			},
 			[316] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "EMPTY_COOKING",
 				text = ArkInventory.Localise["WOW_SKILL_COOKING"],
 			},
 			[317] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
+				ClientCheck = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
 				id = "EMPTY_REAGENT",
 				text = ArkInventory.Localise["CRAFTING_REAGENT"],
 			},
@@ -600,55 +600,6 @@ ArkInventory.Const.Category = {
 	},
 	
 }
-
-function ArkInventory.ObjectIDCategory( i, isRule )
-	
-	-- if you change these values then you need to upgrade the savedvariable data as well
-	
-	local soulbound = ArkInventory.ENUM.BIND.NEVER
-	if ArkInventory.IsBound( i.sb ) then
-		soulbound = 1
-	end
-	
-	local info = ArkInventory.GetObjectInfo( i.h )
-	local osd = info.osd
-	local r
-	
-	if osd.class == "item" then
-		r = string.format( "%s:%i:%i", osd.class, osd.id, soulbound )
-		if isRule and info.equiploc ~= "" then
-			-- equipable items get an expanded rule id
-			r = string.format( "%s:%s", r, osd.exrid )
-		end
-	elseif osd.class == "empty" then
-		local blizzard_id = ArkInventory.InternalIdToBlizzardBagId( i.loc_id, i.bag_id )
-		soulbound = ArkInventory.BagType( blizzard_id ) -- allows for unique codes per bag type
-		r = string.format( "%s:%i:%i", osd.class, osd.id, soulbound )
-	elseif osd.class == "spell" or osd.class == "currency" or osd.class == "copper" or osd.class == "reputation" or osd.class == "enchant" then
-		r = string.format( "%s:%i", osd.class, osd.id )
-	elseif osd.class == "battlepet" then
-		r = string.format( "%s:%i:%i", osd.class, osd.id, soulbound )
-	elseif osd.class == "keystone" then
-		r = string.format( "%s:%i:%i", osd.class, osd.instance, soulbound )
-	else
-		ArkInventory.OutputWarning( "uncoded object class [", i.h, "] = [", osd.class, "]" )
-		r = string.format( "%s:%i", osd.class, osd.id )
-	end
-	
-	local codex = ArkInventory.GetLocationCodex( i.loc_id )
-	local cr = string.format( "%i:%s", codex.catset_id, r )
-	
-	return cr, r, codex
-	
-end
-
-function ArkInventory.ObjectIDRule( i )
-	-- not saved, cached only, can be changed at any time
-	local id, ignore, codex = ArkInventory.ObjectIDCategory( i, true )
-	local rid = string.format( "%i:%i:%i:%i:%s", i.loc_id or 0, i.bag_id or 0, i.slot_id or 0, i.sb or ArkInventory.ENUM.BIND.NEVER, id )
-	return rid, id, codex
-end
-
 
 function ArkInventory.ItemCategoryGetDefaultActual( i )
 	
@@ -1048,7 +999,7 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	-- categorise based off characters primary professions
 	if codex.player.data.tradeskill and codex.player.data.tradeskill.priority > 0 then
 		
-		local req = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_SKILL"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short )
+		local req = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ITEM_REQUIRES_SKILL"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short )
 		
 		-- the priority profession
 		for x = 1, ArkInventory.Const.Tradeskill.numPrimary do
@@ -1200,7 +1151,7 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		end
 		
 		-- class requirement (via tooltip)
-		local req = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_CLASS"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
+		local req = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ITEM_REQUIRES_CLASS"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
 		if req and string.find( req, codex.player.data.info.class_local ) then
 			return ArkInventory.CategoryGetSystemID( string.format( "CLASS_%s", codex.player.data.info.class ) )
 		end

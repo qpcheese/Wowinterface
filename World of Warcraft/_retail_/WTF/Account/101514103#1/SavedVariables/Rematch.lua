@@ -2,12 +2,12 @@
 Rematch5Settings = {
 	["UseMinimapButton"] = false,
 	["HideLevelBubbles"] = false,
-	["LastOpenLayout"] = "3-teams",
-	["CurrentLayout"] = "3-teams",
+	["LastOpenLayout"] = "3-queue",
+	["CurrentLayout"] = "3-queue",
 	["ColorPetNames"] = true,
 	["InteractOnlyWhenInjured"] = false,
 	["AutoWinRecord"] = false,
-	["JournalLayout"] = "3-teams",
+	["JournalLayout"] = "3-queue",
 	["ImportRememberOverride"] = false,
 	["PetMarkerNames"] = {
 	},
@@ -66,7 +66,7 @@ Rematch5Settings = {
 		}, -- [5]
 	},
 	["SpecialSlots"] = {
-		[2] = 0,
+		[3] = 0,
 	},
 	["BoringLoreFont"] = false,
 	["InteractOnSoftInteract"] = 0,
@@ -88,7 +88,7 @@ Rematch5Settings = {
 	["CustomScale"] = false,
 	["ExportIncludeNotes"] = false,
 	["BreedSource"] = "BattlePetBreedID",
-	["LastSelectedGroup"] = "group:8",
+	["LastSelectedGroup"] = "group:none",
 	["HideWinRecord"] = false,
 	["ToolbarDismiss"] = false,
 	["DefaultPreferences"] = {
@@ -107,29 +107,131 @@ Rematch5Settings = {
 	["Anchor"] = "BOTTOMRIGHT",
 	["ShowFillQueueMore"] = false,
 	["LoadHealthiest"] = false,
-	["currentTeamID"] = "team:83",
+	["currentTeamID"] = "team:198",
 	["CompactQueueList"] = false,
-	["DontConfirmDeleteTeams"] = false,
+	["DontConfirmDeleteTeams"] = true,
 	["ColorTargetNames"] = true,
-	["PetNotes"] = {
+	["ExpandedOptionsHeaders"] = {
+		true, -- [1]
 	},
-	["PetCardBackground"] = "Expansion",
+	["ReverseToolbar"] = false,
 	["DontConfirmRemoveQueue"] = false,
 	["InteractPreferUninjured"] = false,
-	["ClickToDrag"] = false,
-	["HideNonBattlePets"] = false,
+	["PrioritizeBreedOnImport"] = true,
+	["PetCardShowExpansionStat"] = false,
 	["NotesWidth"] = 258.0000915527344,
-	["ShowNewGroupTab"] = true,
-	["NotesFont"] = "GameFontHighlight",
 	["KeepCompanion"] = false,
-	["HidePreferenceBadges"] = false,
+	["NotesFont"] = "GameFontHighlight",
+	["RankWinsByPercent"] = false,
+	["PetCardCompactCollected"] = false,
 	["StrongVsLevel"] = false,
 	["HideNotesBadges"] = false,
-	["PreferencesPaused"] = true,
+	["QueueSkipDead"] = false,
 	["EnableDrag"] = true,
 	["NotesHeight"] = 258,
 	["HidePetToast"] = false,
-	["ShowAbilityID"] = false,
+	["PetCardFlipKey"] = "Alt",
+	["SafariHatShine"] = false,
+	["QueueSortInTeamsFirst"] = false,
+	["BackupCount"] = 269,
+	["HideToolbarTooltips"] = false,
+	["QueueRandomWhenEmpty"] = false,
+	["ResetExceptSearch"] = false,
+	["AlwaysUsePetSatchel"] = false,
+	["HideOptionTooltips"] = false,
+	["MinimizePetSummary"] = true,
+	["NeverTeamTabs"] = false,
+	["KeepNotesOnScreen"] = false,
+	["HideNotesButtonInBattle"] = false,
+	["AlwaysTeamTabs"] = false,
+	["NotesLeft"] = 907.999755859375,
+	["NoSummonOnDblClick"] = false,
+	["AbilityBackground"] = "Icon",
+	["LastToastedPetID"] = "BattlePet-0-000013019B3B",
+	["FavoriteFilters"] = {
+	},
+	["MinimapButtonPosition"] = -162,
+	["BarChartCategory"] = 1,
+	["HideLevelingBadges"] = false,
+	["CombineGroupKey"] = "None",
+	["BreedFormat"] = 1,
+	["QueueSortOrder"] = 2,
+	["CardBehavior"] = "Normal",
+	["UseTypeBar"] = true,
+	["InteractOnTarget"] = 0,
+	["PetCardCanPin"] = false,
+	["CompactPetList"] = false,
+	["LockWindow"] = false,
+	["ImportConflictOverwrite"] = true,
+	["ExpandedGroups"] = {
+		["group:none"] = true,
+	},
+	["DontWarnMissing"] = true,
+	["HideMarkerBadges"] = false,
+	["LevelingQueue"] = {
+	},
+	["HideTooltips"] = false,
+	["ResetSortWithFilters"] = false,
+	["Filters"] = {
+		["Other"] = {
+		},
+		["Stats"] = {
+		},
+		["Strong"] = {
+		},
+		["Marker"] = {
+		},
+		["Sources"] = {
+		},
+		["Sort"] = {
+		},
+		["Level"] = {
+		},
+		["Tough"] = {
+		},
+		["Types"] = {
+		},
+		["Expansion"] = {
+		},
+		["Rarity"] = {
+		},
+		["RawSearchText"] = "Rebuilt Mechanical Spider",
+		["Similar"] = {
+		},
+		["Search"] = {
+			["Pattern"] = "[rR][eE][bB][uU][iI][lL][tT] [mM][eE][cC][hH][aA][nN][iI][cC][aA][lL] [sS][pP][iI][dD][eE][rR]",
+			["Length"] = 25,
+		},
+		["Breed"] = {
+		},
+		["Script"] = {
+		},
+		["Collected"] = {
+		},
+		["Favorite"] = {
+		},
+		["Moveset"] = {
+		},
+	},
+	["SortByNickname"] = false,
+	["GroupOrder"] = {
+		"group:favorites", -- [1]
+		"group:none", -- [2]
+		"group:11", -- [3]
+		"group:1", -- [4]
+		"group:2", -- [5]
+		"group:3", -- [6]
+		"group:4", -- [7]
+		"group:5", -- [8]
+		"group:6", -- [9]
+		"group:7", -- [10]
+		"group:8", -- [11]
+		"group:9", -- [12]
+		"group:10", -- [13]
+		"group:12", -- [14]
+	},
+	["NotesBottom"] = 456.0000305175781,
+	["WasShownOnLogout"] = false,
 	["ConvertedTeams"] = {
 		"team:1", -- [1]
 		[142114] = "team:2",
@@ -295,213 +397,114 @@ Rematch5Settings = {
 		[68463] = "team:134",
 		["Do You Even Train? (Flyer)"] = "team:252",
 		[68559] = "team:135",
-		[87124] = "team:222",
-		[66739] = "team:138",
+		[202452] = "team:171",
+		[62621] = "team:204",
 		[104553] = "team:164",
-		[116793] = "team:169",
-		["Do You Even Train? (Undead)"] = "team:235",
-		[200693] = "team:177",
-		[162471] = "team:178",
+		["Do You Even Train? (Mech)"] = "team:264",
+		["Are They Not Beautiful? (Critter)"] = "team:263",
+		["To a Land Down Under (Beast)"] = "team:262",
+		["Xu-Fu, Cub of Xuen"] = "team:260",
 		[197417] = "team:142",
 		[68464] = "team:143",
 		["Do You Even Train? (Critter)"] = "team:254",
-		[173267] = "team:141",
+		[173331] = "team:137",
 		[68560] = "team:144",
-		[119346] = "team:216",
+		[116791] = "team:145",
 		[175785] = "team:140",
-		[161658] = "team:146",
+		["Growing Ectoplasm 1"] = "team:268",
 		[150917] = "team:147",
-		[116786] = "team:148",
 		[119341] = "team:195",
+		["Are They Not Beautiful? (Beast)"] = "team:257",
 		[202440] = "team:201",
 		["wankah"] = "team:259",
 		[72291] = "team:162",
 		[173274] = "team:150",
-		["To a Land Down Under (Dragon)"] = "team:267",
+		["Do You Even Train? (Aquatic)"] = "team:258",
 		[161649] = "team:155",
 		[68465] = "team:153",
-		["Do You Even Train? (Aquatic)"] = "team:258",
-		[71934] = "team:77",
+		[140315] = "team:154",
+		[155145] = "team:5",
 		["nega"] = "team:253",
 		[141529] = "team:157",
-		[142054] = "team:213",
-		[161657] = "team:211",
 		[161650] = "team:209",
-		[146001] = "team:163",
-		[116787] = "team:166",
+		[201004] = "team:197",
+		[104970] = "team:159",
 		["Catch team"] = "team:261",
-		[200678] = "team:214",
-		[197336] = "team:181",
+		[116787] = "team:166",
+		[66741] = "team:212",
+		[154926] = "team:217",
+		[154928] = "team:219",
 		[202458] = "team:220",
 		[141077] = "team:184",
 		[161651] = "team:165",
-		[119345] = "team:205",
-		[146002] = "team:149",
+		[116790] = "team:182",
 		[200679] = "team:151",
-		[161656] = "team:203",
+		[197102] = "team:168",
+		[150925] = "team:173",
 		[105386] = "team:170",
-		[154919] = "team:187",
-		[150918] = "team:152",
+		["Are They Not Beautiful? (Humanoid)"] = "team:244",
+		[160210] = "team:54",
 		[142234] = "team:172",
-		[116788] = "team:156",
-		[119343] = "team:174",
 		[146003] = "team:175",
+		[119343] = "team:174",
+		[200680] = "team:186",
 		[119407] = "team:176",
 		[71930] = "team:208",
-		["Do You Even Train? (Magic)"] = "team:229",
+		["To a Land Down Under (Elemental)"] = "team:255",
 		[150858] = "team:179",
 		[150922] = "team:180",
-		[72009] = "team:160",
-		[204926] = "team:199",
+		[79179] = "team:198",
 		[105323] = "team:183",
+		[146004] = "team:189",
 		["To a Land Down Under"] = "team:256",
 		[139489] = "team:185",
-		["Do You Even Train? (Dragon)"] = "team:237",
-		[189376] = "team:190",
-		[150923] = "team:188",
-		[119408] = "team:192",
-		[116789] = "team:167",
-		[146005] = "team:191",
-		[155267] = "team:202",
-		[98489] = "team:193",
-		[119344] = "team:194",
 		[119342] = "team:161",
+		[116789] = "team:167",
+		[150923] = "team:188",
+		[155267] = "team:202",
+		[119344] = "team:194",
+		[146005] = "team:191",
+		[119408] = "team:192",
+		[98489] = "team:193",
+		[189376] = "team:190",
+		["Do You Even Train? (Dragon)"] = "team:237",
 		[141215] = "team:196",
-		[146004] = "team:189",
-		[79179] = "team:198",
-		["To a Land Down Under (Elemental)"] = "team:255",
+		[204926] = "team:199",
+		[72009] = "team:160",
+		["Do You Even Train? (Magic)"] = "team:229",
 		[68564] = "team:200",
-		[200680] = "team:186",
-		[160210] = "team:54",
-		["Are They Not Beautiful? (Humanoid)"] = "team:244",
-		[150925] = "team:173",
-		[197102] = "team:168",
-		[116790] = "team:182",
+		[116788] = "team:156",
+		[150918] = "team:152",
+		[154919] = "team:187",
+		[161656] = "team:203",
+		[146002] = "team:149",
+		[119345] = "team:205",
 		[200684] = "team:206",
 		[119409] = "team:207",
-		[154928] = "team:219",
-		[154926] = "team:217",
-		[66741] = "team:212",
-		[201004] = "team:197",
-		[104970] = "team:159",
+		[197336] = "team:181",
+		[200678] = "team:214",
+		[146001] = "team:163",
+		[161657] = "team:211",
+		[142054] = "team:213",
 		["Are They Not Beautiful? (Elemental)"] = "team:265",
-		[155145] = "team:5",
-		[140315] = "team:154",
+		[71934] = "team:77",
+		["To a Land Down Under (Dragon)"] = "team:267",
 		["healfuck"] = "team:266",
 		[201899] = "team:215",
-		["Are They Not Beautiful? (Beast)"] = "team:257",
-		["Growing Ectoplasm 1"] = "team:268",
+		[116786] = "team:148",
+		[161658] = "team:146",
 		["Do You Even Train? (Beast)"] = "team:269",
-		[116791] = "team:145",
-		[173331] = "team:137",
-		["Xu-Fu, Cub of Xuen"] = "team:260",
-		["To a Land Down Under (Beast)"] = "team:262",
-		["Are They Not Beautiful? (Critter)"] = "team:263",
-		["Do You Even Train? (Mech)"] = "team:264",
-		[62621] = "team:204",
-		[202452] = "team:171",
+		[119346] = "team:216",
+		[173267] = "team:141",
+		[162471] = "team:178",
+		[200693] = "team:177",
+		["Do You Even Train? (Undead)"] = "team:235",
+		[116793] = "team:169",
+		[66739] = "team:138",
+		[87124] = "team:222",
 	},
-	["QueueSortInTeamsFirst"] = false,
-	["BackupCount"] = 269,
-	["HideToolbarTooltips"] = false,
-	["QueueRandomWhenEmpty"] = false,
-	["GroupOrder"] = {
-		"group:favorites", -- [1]
-		"group:none", -- [2]
-		"group:11", -- [3]
-		"group:1", -- [4]
-		"group:2", -- [5]
-		"group:3", -- [6]
-		"group:4", -- [7]
-		"group:5", -- [8]
-		"group:6", -- [9]
-		"group:7", -- [10]
-		"group:8", -- [11]
-		"group:9", -- [12]
-		"group:10", -- [13]
-		"group:12", -- [14]
-	},
-	["AlwaysUsePetSatchel"] = false,
-	["HideOptionTooltips"] = false,
-	["MinimizePetSummary"] = true,
-	["Filters"] = {
-		["Other"] = {
-		},
-		["Stats"] = {
-		},
-		["Strong"] = {
-		},
-		["Marker"] = {
-		},
-		["Sources"] = {
-		},
-		["Sort"] = {
-		},
-		["Level"] = {
-		},
-		["Tough"] = {
-		},
-		["Types"] = {
-		},
-		["Expansion"] = {
-		},
-		["Rarity"] = {
-		},
-		["RawSearchText"] = "c",
-		["Similar"] = {
-		},
-		["Search"] = {
-		},
-		["Breed"] = {
-		},
-		["Script"] = {
-		},
-		["Collected"] = {
-		},
-		["Favorite"] = {
-		},
-		["Moveset"] = {
-		},
-	},
-	["ResetSortWithFilters"] = false,
-	["HideNotesButtonInBattle"] = false,
-	["AlwaysTeamTabs"] = false,
-	["NotesLeft"] = 907.999755859375,
-	["NoSummonOnDblClick"] = false,
-	["LevelingQueue"] = {
-	},
-	["LastToastedPetID"] = "BattlePet-0-000012FA8F1B",
-	["FavoriteFilters"] = {
-	},
-	["MinimapButtonPosition"] = -162,
-	["BarChartCategory"] = 1,
-	["HideLevelingBadges"] = false,
-	["ImportConflictOverwrite"] = true,
-	["LockWindow"] = false,
-	["QueueSortOrder"] = 2,
-	["CardBehavior"] = "Normal",
-	["CompactPetList"] = false,
-	["PetCardCanPin"] = false,
-	["InteractOnTarget"] = 0,
-	["UseTypeBar"] = true,
-	["BreedFormat"] = 1,
-	["CombineGroupKey"] = "None",
-	["ExpandedGroups"] = {
-		["group:8"] = true,
-	},
-	["DontWarnMissing"] = true,
-	["HideMarkerBadges"] = false,
-	["AbilityBackground"] = "Icon",
-	["HideTooltips"] = false,
-	["KeepNotesOnScreen"] = false,
-	["NeverTeamTabs"] = false,
-	["SortByNickname"] = false,
-	["ResetExceptSearch"] = false,
-	["NotesBottom"] = 456.0000305175781,
-	["WasShownOnLogout"] = false,
-	["SafariHatShine"] = false,
-	["PetCardFlipKey"] = "Alt",
-	["QueueSkipDead"] = false,
+	["ShowAbilityID"] = false,
+	["PreferencesPaused"] = true,
 	["LockNotesPosition"] = false,
 	["PetMarkers"] = {
 		[216] = 7,
@@ -509,14 +512,13 @@ Rematch5Settings = {
 		[331] = 7,
 		[849] = 7,
 	},
-	["PetCardCompactCollected"] = false,
-	["RankWinsByPercent"] = false,
+	["HidePreferenceBadges"] = false,
+	["ShowNewGroupTab"] = true,
 	["NoBackupReminder"] = true,
-	["PetCardShowExpansionStat"] = false,
-	["PrioritizeBreedOnImport"] = true,
-	["ReverseToolbar"] = false,
-	["ExpandedOptionsHeaders"] = {
-		true, -- [1]
+	["HideNonBattlePets"] = false,
+	["ClickToDrag"] = false,
+	["PetCardBackground"] = "Expansion",
+	["PetNotes"] = {
 	},
 }
 Rematch5SavedTeams = {
@@ -553,13 +555,13 @@ Rematch5SavedTeams = {
 			"111B39L", -- [3]
 		},
 		["teamID"] = "team:203",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			161656, -- [1]
 		},
 		["groupID"] = "group:5",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:129"] = {
 		["pets"] = {
@@ -686,13 +688,13 @@ Rematch5SavedTeams = {
 			"22181S7", -- [3]
 		},
 		["teamID"] = "team:211",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			161657, -- [1]
 		},
 		["groupID"] = "group:5",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:168"] = {
 		["pets"] = {
@@ -764,13 +766,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:30",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			175783, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:244"] = {
 		["pets"] = {
@@ -931,13 +933,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:51",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			173303, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:227"] = {
 		["pets"] = {
@@ -988,13 +990,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:214",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			200678, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:206"] = {
 		["pets"] = {
@@ -1048,13 +1050,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:114",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			162468, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:97"] = {
 		["pets"] = {
@@ -1070,14 +1072,14 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:97",
-		["preferences"] = {
-			["minHP"] = 501,
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			142151, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minHP"] = 501,
+			["minXP"] = 25,
+		},
 	},
 	["team:267"] = {
 		["pets"] = {
@@ -1109,14 +1111,14 @@ Rematch5SavedTeams = {
 			"12272D1", -- [3]
 		},
 		["teamID"] = "team:398",
-		["groupID"] = "group:12",
-		["targets"] = {
-			106552, -- [1]
-		},
 		["preferences"] = {
 			["minHP"] = 163,
 			["minXP"] = 2,
 		},
+		["targets"] = {
+			106552, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:133"] = {
 		["pets"] = {
@@ -1283,13 +1285,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:124",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			142096, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:80"] = {
 		["pets"] = {
@@ -1324,13 +1326,13 @@ Rematch5SavedTeams = {
 			"ZR3", -- [3]
 		},
 		["teamID"] = "team:299",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105674, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			105674, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:443"] = {
 		["pets"] = {
@@ -1346,13 +1348,13 @@ Rematch5SavedTeams = {
 			"ZR4", -- [3]
 		},
 		["teamID"] = "team:443",
-		["groupID"] = "group:12",
-		["targets"] = {
-			107489, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			107489, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:154"] = {
 		["pets"] = {
@@ -1368,13 +1370,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:154",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			140315, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:380"] = {
 		["pets"] = {
@@ -1390,13 +1392,13 @@ Rematch5SavedTeams = {
 			"ZR1", -- [3]
 		},
 		["teamID"] = "team:380",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99035, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			99035, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:342"] = {
 		["pets"] = {
@@ -1469,13 +1471,13 @@ Rematch5SavedTeams = {
 			"111737N", -- [3]
 		},
 		["teamID"] = "team:5",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			155145, -- [1]
 		},
 		["groupID"] = "group:8",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:17"] = {
 		["pets"] = {
@@ -1617,13 +1619,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:187",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			154919, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:382"] = {
 		["pets"] = {
@@ -1676,13 +1678,13 @@ Rematch5SavedTeams = {
 			"ZRA", -- [3]
 		},
 		["teamID"] = "team:73",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			154917, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:263"] = {
 		["pets"] = {
@@ -1714,13 +1716,13 @@ Rematch5SavedTeams = {
 			"ZL", -- [3]
 		},
 		["teamID"] = "team:116",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			162469, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:118"] = {
 		["pets"] = {
@@ -1736,13 +1738,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:118",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			140880, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:125"] = {
 		["pets"] = {
@@ -1796,13 +1798,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:132",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			141588, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:248"] = {
 		["pets"] = {
@@ -1916,25 +1918,6 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:370"] = {
-		["pets"] = {
-			"BattlePet-0-000012B99D44", -- [1]
-			"BattlePet-0-000011C8C36A", -- [2]
-			"BattlePet-0-000012B822C0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/15830\n\nStrategy added by DragonsAfterDark\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurn 3: Swap to your Mawsworn Minion\nThen follow this rotation until Quillino dies:\nTurn 1: Dark Fate - NOTE! Once Quillino gets to less than 30% hp or 505, switch to just Soul Steal\nTurn 2: Deflection\nTurn 3: Soul Steal\nTurn 4: Soul Steal\n\nLil' Spirit Guide comes in\nTurn 1: Dark Fate\nTurn 2: Deflection\nTurn 3+: Soul Steal until Mawsworn Minion dies\nBring in your Grumpling\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurn 3: Swap to your Void-Scarred Anubisath\nTurn 4: Pass\nThen:\nPriority 1: Deflection when Fethyr is Lifted-Off\nPriority 2: Soulrush on CD\nPriority 3: Spiritfire Bolt\n",
-		["name"] = "Training with Bredda (Humanoid)",
-		["tags"] = {
-			"22241LT", -- [1]
-			"111331R", -- [2]
-			"22162OH", -- [3]
-		},
-		["teamID"] = "team:370",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99077, -- [1]
-		},
-	},
 	["team:281"] = {
 		["pets"] = {
 			"BattlePet-0-000012B66DA8", -- [1]
@@ -2046,24 +2029,27 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:5",
 	},
-	["team:372"] = {
+	["team:408"] = {
 		["pets"] = {
-			"BattlePet-0-000012B01ED3", -- [1]
-			"BattlePet-0-000012BC0A5A", -- [2]
-			"BattlePet-0-000012BAC9E8", -- [3]
+			"BattlePet-0-000012BEE3D5", -- [1]
+			"BattlePet-0-000012B485C2", -- [2]
+			"random:7", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/676\n\nScript thanks to Ilyssa\n\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up - Lil' Spirit Guide resurrects\nTurn 4: Wind-Up - Lil' Spirit Guide dies\nQuillino comes in\nTurns 1+: Wind-Up until your Iron Starlette dies (it's okay if you don't hit Quillino a single time!)\nBring in your Pandaren Dragonling\nTurns 1+: Breath until Quillino is dead\nFethyr comes in\nTurn 1: Decoy\nTurn 2: Bombing Run\nTurns 3+: Breath until your Dragonling is dead\nBring in your Tranquil Mechanical Yeti\nTurn 1: Call Blizzard\nTurns 2+: Metal Fist until Fethyr dies\n",
-		["name"] = "Training with Bredda (Mech)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/604\n\nScript thanks to Wist\n\nTurn 1: Rip\nTurn 2: Lightning Shield\nTurn 3: Blood in the Water - both active pets die\nBring in your Pandaren Water Spirit - Rocket comes in\nTurns 1+: Water Jet until Rocket is dead\nMarshmallow comes in\nTurn 1: Geyser\nTurns 2+: Water Jet until your Water Spirit dies\nBring in your third Elemental\nTurns 1+: Use standard attacks to kill Marshmallow, he should be almost dead anyway.\n",
+		["name"] = "Fight Night: Tiffany Nelson (Elemental)",
 		["tags"] = {
-			"11171BB", -- [1]
-			"1125QC", -- [2]
-			"122C3K", -- [3]
+			"122314R", -- [1]
+			"1129R4", -- [2]
+			"ZR7", -- [3]
 		},
-		["teamID"] = "team:372",
-		["groupID"] = "group:12",
+		["teamID"] = "team:408",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			99077, -- [1]
+			97804, -- [1]
 		},
+		["groupID"] = "group:12",
 	},
 	["team:13"] = {
 		["pets"] = {
@@ -2209,12 +2195,12 @@ Rematch5SavedTeams = {
 			"ZR2", -- [3]
 		},
 		["teamID"] = "team:50",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["groupID"] = "group:11",
 		["targets"] = {
 			141046, -- [1]
+		},
+		["preferences"] = {
+			["minXP"] = 25,
 		},
 	},
 	["team:40"] = {
@@ -2288,13 +2274,13 @@ Rematch5SavedTeams = {
 			"212B1G9", -- [3]
 		},
 		["teamID"] = "team:167",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			116789, -- [1]
 		},
 		["groupID"] = "group:7",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:31"] = {
 		["pets"] = {
@@ -2329,14 +2315,14 @@ Rematch5SavedTeams = {
 			"0126140", -- [3]
 		},
 		["teamID"] = "team:178",
-		["preferences"] = {
-			["minHP"] = 851,
-			["minXP"] = 15,
-		},
 		["targets"] = {
 			162471, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minHP"] = 851,
+			["minXP"] = 15,
+		},
 	},
 	["team:163"] = {
 		["pets"] = {
@@ -2352,13 +2338,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:163",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			146001, -- [1]
 		},
 		["groupID"] = "group:6",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:79"] = {
 		["pets"] = {
@@ -2374,13 +2360,13 @@ Rematch5SavedTeams = {
 			"ZR8", -- [3]
 		},
 		["teamID"] = "team:79",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			173315, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:288"] = {
 		["pets"] = {
@@ -2415,13 +2401,13 @@ Rematch5SavedTeams = {
 			"ZR3", -- [3]
 		},
 		["teamID"] = "team:399",
-		["groupID"] = "group:12",
-		["targets"] = {
-			106552, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 1,
 		},
+		["targets"] = {
+			106552, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:157"] = {
 		["pets"] = {
@@ -2456,13 +2442,13 @@ Rematch5SavedTeams = {
 			"ZL", -- [3]
 		},
 		["teamID"] = "team:8",
-		["preferences"] = {
-			["minHP"] = 130,
-		},
 		["targets"] = {
 			99035, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minHP"] = 130,
+		},
 	},
 	["team:395"] = {
 		["pets"] = {
@@ -2478,13 +2464,13 @@ Rematch5SavedTeams = {
 			"ZR8", -- [3]
 		},
 		["teamID"] = "team:395",
-		["groupID"] = "group:12",
-		["targets"] = {
-			106552, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			106552, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:397"] = {
 		["pets"] = {
@@ -2500,13 +2486,13 @@ Rematch5SavedTeams = {
 			"ZR2", -- [3]
 		},
 		["teamID"] = "team:397",
-		["groupID"] = "group:12",
-		["targets"] = {
-			106552, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 1,
 		},
+		["targets"] = {
+			106552, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:441"] = {
 		["pets"] = {
@@ -2541,13 +2527,13 @@ Rematch5SavedTeams = {
 			"11141TC", -- [3]
 		},
 		["teamID"] = "team:145",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			116791, -- [1]
 		},
 		["groupID"] = "group:7",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:259"] = {
 		["pets"] = {
@@ -2578,13 +2564,13 @@ Rematch5SavedTeams = {
 			"11153Q", -- [3]
 		},
 		["teamID"] = "team:162",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			72291, -- [1]
 		},
 		["groupID"] = "group:3",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:75"] = {
 		["pets"] = {
@@ -2600,13 +2586,13 @@ Rematch5SavedTeams = {
 			"ZR6", -- [3]
 		},
 		["teamID"] = "team:75",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			72285, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:86"] = {
 		["pets"] = {
@@ -2641,13 +2627,13 @@ Rematch5SavedTeams = {
 			"ZR4", -- [3]
 		},
 		["teamID"] = "team:393",
-		["groupID"] = "group:12",
-		["targets"] = {
-			104970, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			104970, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:65"] = {
 		["pets"] = {
@@ -2663,13 +2649,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:65",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			145971, -- [1]
 		},
 		["groupID"] = "group:6",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:106"] = {
 		["pets"] = {
@@ -2757,13 +2743,13 @@ Rematch5SavedTeams = {
 			"00061CI", -- [3]
 		},
 		["teamID"] = "team:279",
-		["groupID"] = "group:11",
-		["targets"] = {
-			66551, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			66551, -- [1]
+		},
+		["groupID"] = "group:11",
 	},
 	["team:230"] = {
 		["pets"] = {
@@ -2828,8 +2814,8 @@ Rematch5SavedTeams = {
 		["notes"] = "Strategy added by nogulpfrog\nTurn 1: Sunlight\nTurn 2: Swap to your Mechanical Pandaren Dragonling\nTurn 3: Explode\nBring in your Level Pet\nTurn 4: Swap to your Sunglow Cobra\nTurn 5: Bite, Deebs died\nTurn 6: Solar Beam, Tyri died\nTurn 7: Pass\nTurn 8: Pass\nTurn 9: Solar Beam, Puzzle died\n",
 		["name"] = "Deebs, Tyri and Puzzle",
 		["tags"] = {
-			"21183D1", -- [1]
-			"0015QC", -- [2]
+			"21103D1", -- [1]
+			"0010QC", -- [2]
 			"ZL", -- [3]
 		},
 		["teamID"] = "team:198",
@@ -2887,14 +2873,14 @@ Rematch5SavedTeams = {
 			"ZL", -- [3]
 		},
 		["teamID"] = "team:142",
-		["preferences"] = {
-			["minHP"] = 204,
-			["minXP"] = 3,
-		},
 		["targets"] = {
 			197417, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minHP"] = 204,
+			["minXP"] = 3,
+		},
 	},
 	["team:60"] = {
 		["pets"] = {
@@ -2948,34 +2934,12 @@ Rematch5SavedTeams = {
 			"1215QC", -- [3]
 		},
 		["teamID"] = "team:99",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			141002, -- [1]
 		},
 		["groupID"] = "group:none",
-	},
-	["team:442"] = {
-		["pets"] = {
-			"BattlePet-0-000012BA9541", -- [1]
-			"random:10", -- [2]
-			"random:10", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/519\n\nScript thanks to Ilyssa\n\nTurns 1-3: Quake\nTurns 4-6: Repair\nTurns 7-9: Quake\nTurn 10: Pass\nTurn 11: Pass\nTurns 12-14: Quake\nTurns 15-17: Repair\nTurns 18+: Quake - all enemy pets should be dead by now (sometimes even way before)\n",
-		["name"] = "Fight Night: Amalia (Mech)",
-		["tags"] = {
-			"012485", -- [1]
-			"ZRA", -- [2]
-			"ZRA", -- [3]
-		},
-		["teamID"] = "team:442",
-		["groupID"] = "group:12",
-		["targets"] = {
-			107489, -- [1]
-		},
 		["preferences"] = {
-			["minXP"] = 25,
+			["minXP"] = 1,
 		},
 	},
 	["team:426"] = {
@@ -2992,32 +2956,13 @@ Rematch5SavedTeams = {
 			"ZR5", -- [3]
 		},
 		["teamID"] = "team:426",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99210, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
-	},
-	["team:437"] = {
-		["pets"] = {
-			"BattlePet-0-000012B4838C", -- [1]
-			"random:2", -- [2]
-			"random:2", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/809\n\nStrategy added by Jeack\nScript thanks to Karl\n\nTurn 1: Emerald Presence\nTurns 2+: Keep Emerald Presence and use Emerald Bite until Foof is dead\nStumpers comes in\nTurns 1+: Continue like above, but use Emerald Dream if you drop below ~800 health\nLil' Sizzle comes in\nTurn 1: Emerald Presence\nTurns 2-4: Emerald Dream\nTurn 5: Emerald Bite\nTurn 6: Emerald Bite\nTurn 7: Emerald Presence\nTurns 8+: When your Emerald Proto-Whelp is swapped out, either continue with one of your other Dragons or swap back and continue with Emerald Bite until the fight is won.\n",
-		["name"] = "Fight Night: Amalia (Dragon)",
-		["tags"] = {
-			"222814F", -- [1]
-			"ZR2", -- [2]
-			"ZR2", -- [3]
-		},
-		["teamID"] = "team:437",
-		["groupID"] = "group:12",
 		["targets"] = {
-			107489, -- [1]
+			99210, -- [1]
 		},
+		["groupID"] = "group:12",
 	},
 	["team:4"] = {
 		["pets"] = {
@@ -3054,28 +2999,6 @@ Rematch5SavedTeams = {
 		["teamID"] = "team:234",
 		["groupID"] = "group:none",
 	},
-	["team:205"] = {
-		["pets"] = {
-			"BattlePet-0-000012B5C2FF", -- [1]
-			"random:0", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2490\n\nStrategy added by Eekwibble\nTurns 1&2: Falcosaur Swarm!\nTurn 3: Ironskin\nTurn 4: Predatory Strike\nTurns 5&6: Falcosaur Swarm! - Krutz's Battle Monkey dies\nClean up with preferred pet/s",
-		["name"] = "Klutz's Battle Monkey",
-		["tags"] = {
-			"12171TN", -- [1]
-			"ZR0", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:205",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-		["targets"] = {
-			119345, -- [1]
-		},
-		["groupID"] = "group:4",
-	},
 	["team:402"] = {
 		["pets"] = {
 			"BattlePet-0-000012BC0A5A", -- [1]
@@ -3095,47 +3018,6 @@ Rematch5SavedTeams = {
 			106552, -- [1]
 		},
 	},
-	["team:35"] = {
-		["pets"] = {
-			"BattlePet-0-000011CA344B", -- [1]
-			"random:0", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
-		},
-		["notes"] = "Strategy added by DragonsAfterDark\n[url=https://www.youtube.com/watch?v=sxR04DaaG04]Video of Fight[/url]\n\nTurn 1: Deflection\nThen:\nPriority 1: Deflection on CD\nPriority 2: Cleave\n~*~: Note: Once Idol of Decay gets under 300 hp, they'll use Dark Rebirth.\nSometimes you'll hit the 300 threshold just as Rot is coming off CD. You'll want to Cleave instead of Deflection, because Idol of Decay will prioritize Rebirth over Rot \n\nGyrexle, the Eternal Mechanic comes in\nTurn 1: Cleave\n",
-		["name"] = "Cymre Brightblade",
-		["tags"] = {
-			"210C31Q", -- [1]
-			"ZR0", -- [2]
-			"00061CI", -- [3]
-		},
-		["teamID"] = "team:35",
-		["groupID"] = "group:11",
-		["targets"] = {
-			83837, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-	},
-	["team:368"] = {
-		["pets"] = {
-			"BattlePet-0-000012B485C2", -- [1]
-			"BattlePet-0-000012B5CC18", -- [2]
-			"BattlePet-0-000012B5CB68", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4830\n\nStrategy added by DragonsAfterDark\n30 July 22: tdScript added\n\nTurn 1: Geyser\nTurn 2+3: Dive\nTurn 4: Water Jet\nTurn 5: Water Jet (Hits Quillino)\nTurn 6: Water Jet (Water Spirit dies here)\nBring in your Unstable Tendril\nTurn 1: Scorched Earth\nTurn 3+: Deep Burn until Quillino & Lil' Spirit Guide die\nIf: Ashstone Core has to come in on the Undead round, Crystal Prison to keep from being damaged\nFethyr comes in\nIf : Unstable Tendril is still alive: Elementium Bolt \nBring in your Ashstone Core\nTurn 1: Stoneskin\nTurn 2+: Feedback until Fethyr dies\n",
-		["name"] = "Training with Bredda (Elemental)",
-		["tags"] = {
-			"1229R4", -- [1]
-			"221721C", -- [2]
-			"121913U", -- [3]
-		},
-		["teamID"] = "team:368",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99077, -- [1]
-		},
-	},
 	["team:317"] = {
 		["pets"] = {
 			"BattlePet-0-000012B48707", -- [1]
@@ -3150,13 +3032,13 @@ Rematch5SavedTeams = {
 			"ZR2", -- [3]
 		},
 		["teamID"] = "team:317",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105250, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			105250, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:334"] = {
 		["pets"] = {
@@ -3191,32 +3073,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:176",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			119407, -- [1]
 		},
 		["groupID"] = "group:4",
-	},
-	["team:159"] = {
-		["pets"] = {
-			"BattlePet-0-000012B0D34C", -- [1]
-			"BattlePet-0-000012C82AA8", -- [2]
-			0, -- [3]
+		["preferences"] = {
+			["minXP"] = 1,
 		},
-		["notes"] = "Strategy added by Mutanis\nTurn 1: Time Bomb\nTurn 2: Pass (Irradiated Elementaling comes in)\nTurn 3: Elementium Bolt\nTurn 4: Immolate\nGlobs comes in\nTurn 5: Immolate\nNightmare Sprout comes in\nTurns 6+: Immolate until Irradiated Elementaling dies (1-2x)\nBring in your Timeless Mechanical Dragonling\nQestion: Trixy is dead? -->YES go to Step B\nNo --> Priolist\nPrio 1: Flame Breath until Nightmare Sprout health < 397 (1-2x)\nPrio 2: Armageddon\n\nStep B (only if  Trixy is dead)\nTurn 1: Time Bomb\nTurn 2: Flame Breath\nTurn 3: Flame Breath\nTurn 4: Armageddon\n",
-		["name"] = "Dealing with Satyrs",
-		["tags"] = {
-			"122430S", -- [1]
-			"10242M4", -- [2]
-			"ZL", -- [3]
-		},
-		["teamID"] = "team:159",
-		["targets"] = {
-			104970, -- [1]
-		},
-		["groupID"] = "group:none",
 	},
 	["team:210"] = {
 		["pets"] = {
@@ -3232,34 +3095,12 @@ Rematch5SavedTeams = {
 			"11161T9", -- [3]
 		},
 		["teamID"] = "team:210",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			116792, -- [1]
 		},
 		["groupID"] = "group:7",
-	},
-	["team:429"] = {
-		["pets"] = {
-			"BattlePet-0-000012B5C2FF", -- [1]
-			"BattlePet-0-000012F20B9E", -- [2]
-			"random:3", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1960\n\nRepeat the following until your Direbeak Hatchling dies\nPriority 1: Ironskin\nPriority 2: Warning Squawk\nPriority 3: Falcosaur Swarm!\nBring in your Ikky\nRepeat the following until Ikky dies\nTurn 1: Black Claw\nTurns 2-4: Flock\nClean up with your third Flyer\n",
-		["name"] = "Fight Night: Bodhi Sunwayver (Flyer)",
-		["tags"] = {
-			"12271TN", -- [1]
-			"01181FS", -- [2]
-			"ZR3", -- [3]
-		},
-		["teamID"] = "team:429",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99210, -- [1]
-		},
 		["preferences"] = {
-			["minXP"] = 25,
+			["minXP"] = 1,
 		},
 	},
 	["team:225"] = {
@@ -3292,14 +3133,14 @@ Rematch5SavedTeams = {
 			"11182G7", -- [3]
 		},
 		["teamID"] = "team:67",
-		["preferences"] = {
-			["minHP"] = 256,
-			["minXP"] = 3,
-		},
 		["targets"] = {
 			154914, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minHP"] = 256,
+			["minXP"] = 3,
+		},
 	},
 	["team:242"] = {
 		["pets"] = {
@@ -3317,43 +3158,27 @@ Rematch5SavedTeams = {
 		["teamID"] = "team:242",
 		["groupID"] = "group:none",
 	},
-	["team:422"] = {
+	["team:438"] = {
 		["pets"] = {
-			"BattlePet-0-000012B99CF2", -- [1]
-			"BattlePet-0-000012BAC92C", -- [2]
-			"BattlePet-0-000012BC0A5A", -- [3]
+			"BattlePet-0-000012E38593", -- [1]
+			"random:7", -- [2]
+			"random:7", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10336\n\nStrategy added by DragonsAfterDark\nTurn 1: Supercharge\nTurn 2: Arcane Blast\nTurn 3: Fire Shield\nTurn 4: Arcane Blast\nTurn 5: Arcane Blast\nSir Murkeston comes in\nTurn 1: Supercharge\nTurn 2: Arcane Blast\nTurn 3: Pass\n\nBring in your Darkmoon Tonk\nTurn 1: Charge\nTurn 2: Minefield\nTurn 3+: Charge until Greatest Foe dies\nSir Murkeston comes in\nTurns 1+: Ion Cannon & Charge if you can\n\nBring in your Mechanical Pandaren Dragonling\nDid Sir Murkeston kill Darkmoon Tonk with Falling Murloc?\nTurn 1: Thunderbolt (While Sir Murkeston is stunned)\nTurn 2: Decoy\nTurn 3+: Breath\n\nOtherwise:\nTurn 1: Decoy\nTurn 2: Thunderbolt\nTurn 3+: Breath\n",
-		["name"] = "Fight Night: Sir Galveston (Mech)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3548\n\nStrategy added by DragonsAfterDark\nYour backline pets won't matter here, as you shouldn't need more than the crab, and Foof will kill them with his AOE\n\nTurn 1-3: Magma Wave\nTurn 4: Cauterize\nFollow 1-4 until Enemy Backline pets die\nAfter that:\nPriority 1: Cauterize on CD\nPriority 2: Burn\n",
+		["name"] = "Fight Night: Amalia (Elemental)",
 		["tags"] = {
-			"122620U", -- [1]
-			"2227AI", -- [2]
-			"1225QC", -- [3]
+			"1226D7", -- [1]
+			"ZR7", -- [2]
+			"ZR7", -- [3]
 		},
-		["teamID"] = "team:422",
+		["teamID"] = "team:438",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			107489, -- [1]
+		},
 		["groupID"] = "group:12",
-		["targets"] = {
-			99182, -- [1]
-		},
-	},
-	["team:9"] = {
-		["pets"] = {
-			"BattlePet-0-000012B4C1CA", -- [1]
-			"BattlePet-0-000012B3E06C", -- [2]
-			"BattlePet-0-000008968258", -- [3]
-		},
-		["notes"] = "Strategy added by Skattyman#21150\nTurn 1: Sunlight, enemy forces you to swap every turn with Pandaren Fire Spirit until dead\nTurn 2: Immolate\nTurn 3: Inspiring Song\nTurn 4: Conflagrate\nTurn 5: Weakening Blow\nTurn 6: Burn\nTurn 7: Sunlight\nTurn 8: Inspiring Song\nTurn 9-11: Weakening Blow until Terrible Turnip dies\nTurn 12: Pandaren Fire Spirit comes in, Immolate\nTurn 13: Conflagrate, Pandaren Fire Spirit dies\nTurn 14: Anubisath Idol comes in, Sandstorm\nTurn 15: Rupture\nTurn 16-20: Crush to victory\n",
-		["name"] = "Environeer Bert",
-		["tags"] = {
-			"1218KA", -- [1]
-			"122516D", -- [2]
-			"1126143", -- [3]
-		},
-		["teamID"] = "team:9",
-		["targets"] = {
-			124617, -- [1]
-		},
-		["groupID"] = "group:none",
 	},
 	["team:140"] = {
 		["pets"] = {
@@ -3369,13 +3194,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:140",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			175785, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:59"] = {
 		["pets"] = {
@@ -3391,34 +3216,31 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:59",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			154911, -- [1]
 		},
 		["groupID"] = "group:none",
-	},
-	["team:421"] = {
-		["pets"] = {
-			"BattlePet-0-000012B17368", -- [1]
-			"BattlePet-0-000011D3098B", -- [2]
-			"random:6", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/8849\n\nStrategy added by DragonsAfterDark\nTurn 1: Void Nova\nTurn 2: Poison Protocol\nTurn 3: Pass\nTurn 4: Corrosion\nTurn 5: Void Nova\nSir Murkeston comes in\nTurn 1: Corrosion\nBring in your Creeping Tentacle\nTurn 1: Crush\nTurn 2: Crush\nTurn 3: Crush\nSir Murkeston comes in\nTurn 1+: Crush\n",
-		["name"] = "Fight Night: Sir Galveston (Magic)",
-		["tags"] = {
-			"22142OQ", -- [1]
-			"20081TA", -- [2]
-			"ZR6", -- [3]
-		},
-		["teamID"] = "team:421",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99182, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
+		},
+	},
+	["team:437"] = {
+		["pets"] = {
+			"BattlePet-0-000012B4838C", -- [1]
+			"random:2", -- [2]
+			"random:2", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/809\n\nStrategy added by Jeack\nScript thanks to Karl\n\nTurn 1: Emerald Presence\nTurns 2+: Keep Emerald Presence and use Emerald Bite until Foof is dead\nStumpers comes in\nTurns 1+: Continue like above, but use Emerald Dream if you drop below ~800 health\nLil' Sizzle comes in\nTurn 1: Emerald Presence\nTurns 2-4: Emerald Dream\nTurn 5: Emerald Bite\nTurn 6: Emerald Bite\nTurn 7: Emerald Presence\nTurns 8+: When your Emerald Proto-Whelp is swapped out, either continue with one of your other Dragons or swap back and continue with Emerald Bite until the fight is won.\n",
+		["name"] = "Fight Night: Amalia (Dragon)",
+		["tags"] = {
+			"222814F", -- [1]
+			"ZR2", -- [2]
+			"ZR2", -- [3]
+		},
+		["teamID"] = "team:437",
+		["groupID"] = "group:12",
+		["targets"] = {
+			107489, -- [1]
 		},
 	},
 	["team:115"] = {
@@ -3440,23 +3262,26 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:418"] = {
+	["team:205"] = {
 		["pets"] = {
-			"BattlePet-0-000012B607A6", -- [1]
-			"BattlePet-0-000012B17369", -- [2]
-			"BattlePet-0-000006E4C77C", -- [3]
+			"BattlePet-0-000012B5C2FF", -- [1]
+			"random:0", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1246\n\nScript thanks to KyooShoo\n\nTurn 1: Geyser\nTurn 2: Rain Dance\nTurn 3: Pass\nTurns 4+: Jade Claw until Jademist Dancer dies\nBring in your Living Sandling\nTurns 1+: Keep Quicksand on cooldown and use Punch until your Living Sandling dies\nBring in your Tiny Snowman\nTurn 1: Call Blizzard\nTurn 2: Deep Freeze\nTurn 3: Snowball\n",
-		["name"] = "Fight Night: Sir Galveston (Elemental)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2490\n\nStrategy added by Eekwibble\nTurns 1&2: Falcosaur Swarm!\nTurn 3: Ironskin\nTurn 4: Predatory Strike\nTurns 5&6: Falcosaur Swarm! - Krutz's Battle Monkey dies\nClean up with preferred pet/s",
+		["name"] = "Klutz's Battle Monkey",
 		["tags"] = {
-			"222319L", -- [1]
-			"122A14P", -- [2]
-			"11233L", -- [3]
+			"12171TN", -- [1]
+			"ZR0", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:418",
-		["groupID"] = "group:12",
+		["teamID"] = "team:205",
 		["targets"] = {
-			99182, -- [1]
+			119345, -- [1]
+		},
+		["groupID"] = "group:4",
+		["preferences"] = {
+			["minXP"] = 25,
 		},
 	},
 	["team:348"] = {
@@ -3492,13 +3317,13 @@ Rematch5SavedTeams = {
 			"21292FM", -- [3]
 		},
 		["teamID"] = "team:173",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			150925, -- [1]
 		},
 		["groupID"] = "group:8",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:412"] = {
 		["pets"] = {
@@ -3514,13 +3339,13 @@ Rematch5SavedTeams = {
 			"ZRA", -- [3]
 		},
 		["teamID"] = "team:412",
-		["groupID"] = "group:12",
-		["targets"] = {
-			97804, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			97804, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:287"] = {
 		["pets"] = {
@@ -3560,24 +3385,22 @@ Rematch5SavedTeams = {
 			99150, -- [1]
 		},
 	},
-	["team:339"] = {
+	["team:261"] = {
 		["pets"] = {
-			"BattlePet-0-000012B6764A", -- [1]
-			"BattlePet-0-000012BA9542", -- [2]
-			"BattlePet-0-000012EA974D", -- [3]
+			"BattlePet-0-000012B17368", -- [1]
+			"BattlePet-0-000012C2D394", -- [2]
+			"BattlePet-0-000012B146CB", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/886\n\nStrategy added by Belkelel#2195\nScript thanks to AramilGaeda\n\nTurn 1: Decoy\nTurns 2+3: Haywire\nTurns 4+: Alpha Strike until Thrugtusk is dead\nWumpas comes in\nTurns 1+: Haywire or Alpha Strike until your Mechanical Axebeak dies\nBring in Stormwing\nTurn 1: Call Lightning\nTurns 2-4: Flock\nTurns 5+: Alpha Strike until Wumpas dies\nBaeloth comes in\nTurn 1: Alpha Strike\nTurn 2: Pass\nTurn 3: Call Lightning\nTurns 4+: Flock - Stormwing dies\nBring in your Cerulean Moth\nTurn 1: Call Lightning\nTurns 2+: Slicing Wind until the fight is done\n",
-		["name"] = "My Beast's Bidding (Flyer)",
+		["name"] = "Catch team",
 		["tags"] = {
-			"12171BR", -- [1]
-			"112A1GA", -- [2]
-			"10281HI", -- [3]
+			"22142OQ", -- [1]
+			"222B1T1", -- [2]
+			"21181FS", -- [3]
 		},
-		["teamID"] = "team:339",
-		["groupID"] = "group:12",
-		["targets"] = {
-			98270, -- [1]
-		},
+		["teamID"] = "team:261",
+		["homeID"] = "group:9",
+		["favorite"] = true,
+		["groupID"] = "group:favorites",
 	},
 	["team:66"] = {
 		["pets"] = {
@@ -3598,43 +3421,43 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:11",
 	},
-	["team:215"] = {
+	["team:84"] = {
 		["pets"] = {
-			"BattlePet-0-000012B4874E", -- [1]
-			"BattlePet-0-000012B6751A", -- [2]
-			"BattlePet-0-000012B67C89", -- [3]
+			"BattlePet-0-000012E7A769", -- [1]
+			"BattlePet-0-000012B146C7", -- [2]
+			"BattlePet-0-000006E4C7B4", -- [3]
 		},
-		["notes"] = "Strategy added by DragonsAfterDark\nThe enemies don't use their abilities in a particular order, hence the priority system.[url=https://youtu.be/qGCV-Bk7bLg]Video for Fight[/url]\n\n~: Priorities for pets 1 & 2\nPriority 1: Arcane Storm on CD\nPriority 2: Mana Surge on CD\nPriority 3: Tail Sweep\nBring in your Hermit Crab\nPriority 1: Bubble or Dive when Kazzquack is Lifted-Off\nPriority 2: Fish Slap\n",
-		["name"] = "A New Vocation (2)",
+		["notes"] = "Strategy added by Hollandshoop\nScript thanks to Dpaul\n\nTurn 1: Pass or use any ability with your Level Pet\nTurn 2: Swap to your Boneshard\nTurn 3: Blistering Cold\nTurn 4: Boneshard stunned. Swap to your Ikky\nTurn 5: Black Claw\nTurn 6: Flock\nAnd the job is done!!!\n",
+		["name"] = "Retinus the Seeker",
 		["tags"] = {
-			"122414D", -- [1]
-			"12281LP", -- [2]
-			"22152AV", -- [3]
+			"12252PO", -- [1]
+			"11231TB", -- [2]
+			"11181FS", -- [3]
 		},
-		["teamID"] = "team:215",
+		["teamID"] = "team:84",
 		["targets"] = {
-			201899, -- [1]
+			162458, -- [1]
 		},
 		["groupID"] = "group:none",
 	},
-	["team:48"] = {
+	["team:425"] = {
 		["pets"] = {
-			"BattlePet-0-000012B99CF8", -- [1]
-			"BattlePet-0-0000083A0A6A", -- [2]
-			"BattlePet-0-000006E4C7A0", -- [3]
+			"BattlePet-0-000012C2231A", -- [1]
+			"BattlePet-0-000012C42046", -- [2]
+			"BattlePet-0-000012C8C1E1", -- [3]
 		},
-		["notes"] = "Strategy added by DragonsAfterDark\nPet 1: Any Pet with Explode and 1575 hp or morePet 2: Any Pet with Explode and 1575 hp or morePet 3: Any Pet with Pump and 272 power or more[url=https://youtu.be/-NFCK-QT1V0]Video for Fight[/url]\n\nTurn 1: Explode\nBring in Explode Pet 2\nTurn 2: Explode\nBring in Pump Pet\nTurn 3: Pump loads\nTurn 4: Pump lands\n",
-		["name"] = "Eye of the Stormling",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3512\n\nStrategy added by DragonsAfterDark\nS/S & B/B have been confirmed as working, let me know how the H/S does ^^\n\nVideo for Fight (https://youtu.be/ppIiTwudh1c?t=1083)\n\nTurn 1+: Peck until Itchy dies\nSalty Bird comes in\nTurn 1+: Peck until Ragepeep dies\nBring in your Thaumaturgical Piglet\nHP < 928: Arcane Dash\nHP > 928: Ooze Touch > Arcane Dash\nGrommet comes in\nTurn 1+: Ooze Touch until Grommet or Thaumaturgical Piglet dies\nBring in your Antoran Bile Larva\nTurn 1: Plagued Blood\nTurn 2+: Diseased Bite\n",
+		["name"] = "Fight Night: Bodhi Sunwayver (Beast)",
 		["tags"] = {
-			"00292L", -- [1]
-			"00261G1", -- [2]
-			"002CQF", -- [3]
+			"10052C5", -- [1]
+			"20281MV", -- [2]
+			"201A22A", -- [3]
 		},
-		["teamID"] = "team:48",
+		["teamID"] = "team:425",
+		["groupID"] = "group:12",
 		["targets"] = {
-			197447, -- [1]
+			99210, -- [1]
 		},
-		["groupID"] = "group:none",
 	},
 	["team:389"] = {
 		["pets"] = {
@@ -3655,23 +3478,23 @@ Rematch5SavedTeams = {
 			104970, -- [1]
 		},
 	},
-	["team:371"] = {
+	["team:422"] = {
 		["pets"] = {
-			"BattlePet-0-000012B1DC70", -- [1]
-			"BattlePet-0-00000D58DFB6", -- [2]
-			"BattlePet-0-000012BAC9E1", -- [3]
+			"BattlePet-0-000012B99CF2", -- [1]
+			"BattlePet-0-000012BAC92C", -- [2]
+			"BattlePet-0-000012BC0A5A", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/15911\n\nStrategy added by DragonsAfterDark\nThe variance in rounds will come from 3 factors: whether or not Quillino hits the slime with Spectral Strike, whether or not Lil' Spirit Guide dies on the backline when you Phase Punch for Fethyr, and whether Fethyr hits you with 3 Thrashes or just 2.\n\nIt's solid, as far as I can tell, no matter what, those are just the reason for the round variance\n\nTurn 1: Evanescence\nTurn 2: Nether Blast\nTurn 3: Nether Blast\nTurn 4: Nether Blast\nTurn 5: Phase Punch\nQuillino comes in\nTurn 1: Evanescence\nTurn 2: Nether Blast\nTurn 3: Swap to your Plagueborn Slime\nTurn 4: Toxic Fumes\nTurn 5: Consume Magic\nTurn 6: Plague Breath\nTurn 7: Plague Breath\nLil' Spirit Guide comes back in\nTurn 1+: Any standard attack until Plagueborn Slime dies\nBring in your Zur'aj the Depleted\nTurn 1: Evanescence\nTurn 2: Nether Blast\nTurn 3: Phase Punch\nFethyr comes in\nTurn 1: Swap to your Spectral Porcupette\nTurn 2: Spirit Spikes\nTurn 3: Spectral Spine\nTurn 4+: Powerball until Fethyr dies or Spectral Spine comes off CD\nTurn 5: Spectral Spine\nLil' Spirit Guide comes in\nTurn 1+: Powerball until Spectral Porcupette or Lil' Spirit Guide dies\nBring in your Zur'aj the Depleted\nTurn 1: Evanescence\nTurn 2+: Nether Blast until Lil' Spirit Guide's undead round\nUndead: Pass\n",
-		["name"] = "Training with Bredda (Magic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10336\n\nStrategy added by DragonsAfterDark\nTurn 1: Supercharge\nTurn 2: Arcane Blast\nTurn 3: Fire Shield\nTurn 4: Arcane Blast\nTurn 5: Arcane Blast\nSir Murkeston comes in\nTurn 1: Supercharge\nTurn 2: Arcane Blast\nTurn 3: Pass\n\nBring in your Darkmoon Tonk\nTurn 1: Charge\nTurn 2: Minefield\nTurn 3+: Charge until Greatest Foe dies\nSir Murkeston comes in\nTurns 1+: Ion Cannon & Charge if you can\n\nBring in your Mechanical Pandaren Dragonling\nDid Sir Murkeston kill Darkmoon Tonk with Falling Murloc?\nTurn 1: Thunderbolt (While Sir Murkeston is stunned)\nTurn 2: Decoy\nTurn 3+: Breath\n\nOtherwise:\nTurn 1: Decoy\nTurn 2: Thunderbolt\nTurn 3+: Breath\n",
+		["name"] = "Fight Night: Sir Galveston (Mech)",
 		["tags"] = {
-			"12192FM", -- [1]
-			"12172NE", -- [2]
-			"2229151", -- [3]
+			"122620U", -- [1]
+			"2227AI", -- [2]
+			"1225QC", -- [3]
 		},
-		["teamID"] = "team:371",
+		["teamID"] = "team:422",
 		["groupID"] = "group:12",
 		["targets"] = {
-			99077, -- [1]
+			99182, -- [1]
 		},
 	},
 	["team:164"] = {
@@ -3693,24 +3516,28 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:121"] = {
+	["team:278"] = {
 		["pets"] = {
-			"BattlePet-0-000006E4C775", -- [1]
-			"BattlePet-0-000012B17368", -- [2]
-			"BattlePet-0-000012B01DE0", -- [3]
+			"BattlePet-0-00000D450505", -- [1]
+			0, -- [2]
+			0, -- [3]
 		},
-		["notes"] = "Strategy added by Mutanis\nTurn 1: Ice Tomb\nTurn 2: Call Blizzard\nTurn 3: Ice Lance\nMPD comes in\nTurn 1: Ice Lance\nTurn 2: Ice Lance\nTurn 3: Swap to your Anomalus\nTurn 4: Poison Protocol\nTurn 5: Void Nova\nTurn1 6+: Corrosion until Anomalus dies\nBring in your Winter's Little Helper\nTurns 1+: Ice Lance until Spectral Tiger Cub dies\n\n",
-		["name"] = "The Grand Master",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13420\n\nStrategy added by WildCard\nThe same team can be used for all < 21 trainers.\nFull TD Script for them is in this comment (https://wow-petguide.com/Comment/95382).\n\nTurn 1: Swap to your Level Pet #2\nTurn 2: Swap to your Level Pet #3\nTurn 3: Swap to your Celestial Dragon\nPriority 1: Ancient Blessing if health < 70%\nPriority 2: Moonfire if  (ID: 596) duration 1 or none\nPriority 3: Flamethrower\n",
+		["name"] = "Nicki Tinytech",
 		["tags"] = {
-			"21133N", -- [1]
-			"22142OQ", -- [2]
-			"20033O", -- [3]
+			"11167V", -- [1]
+			"ZL", -- [2]
+			"ZL", -- [3]
 		},
-		["teamID"] = "team:121",
+		["teamID"] = "team:278",
+		["preferences"] = {
+			["minHP"] = 353,
+			["minXP"] = 3,
+		},
 		["targets"] = {
-			196069, -- [1]
+			66550, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:11",
 	},
 	["team:181"] = {
 		["pets"] = {
@@ -3747,27 +3574,27 @@ Rematch5SavedTeams = {
 		["teamID"] = "team:226",
 		["groupID"] = "group:none",
 	},
-	["team:413"] = {
+	["team:421"] = {
 		["pets"] = {
-			"BattlePet-0-000012BAFD2D", -- [1]
-			"BattlePet-0-000012B96D70", -- [2]
-			"random:4", -- [3]
+			"BattlePet-0-000012B17368", -- [1]
+			"BattlePet-0-000011D3098B", -- [2]
+			"random:6", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2696\n\nStrategy added by DragonsAfterDark\nTurn 1: Touch of the Animus\nTurn 2+3: Lift-Off\nTurn 4+: Plagued Blood until Jinx dies\nRocket comes in\nPriority 1: Touch of the Animus & Lift-Off on CD\nPriority 2: Plagued Blood all else\nBring in your Spirit Crab\nTurn 1+: Surge until Rocket dies\nMarshmallow comes in\nTurn 1: Shell Shield and then refresh with 1 round left\nTurn 2+: Snap until Marshmallow dies\n",
-		["name"] = "Fight Night: Tiffany Nelson (Undead)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/8849\n\nStrategy added by DragonsAfterDark\nTurn 1: Void Nova\nTurn 2: Poison Protocol\nTurn 3: Pass\nTurn 4: Corrosion\nTurn 5: Void Nova\nSir Murkeston comes in\nTurn 1: Corrosion\nBring in your Creeping Tentacle\nTurn 1: Crush\nTurn 2: Crush\nTurn 3: Crush\nSir Murkeston comes in\nTurn 1+: Crush\n",
+		["name"] = "Fight Night: Sir Galveston (Magic)",
 		["tags"] = {
-			"22281H6", -- [1]
-			"1119EF", -- [2]
-			"ZR4", -- [3]
+			"22142OQ", -- [1]
+			"20081TA", -- [2]
+			"ZR6", -- [3]
 		},
-		["teamID"] = "team:413",
-		["groupID"] = "group:12",
-		["targets"] = {
-			97804, -- [1]
-		},
+		["teamID"] = "team:421",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			99182, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:11"] = {
 		["pets"] = {
@@ -3783,13 +3610,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:11",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			200689, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:144"] = {
 		["pets"] = {
@@ -3810,27 +3637,27 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:326"] = {
+	["team:356"] = {
 		["pets"] = {
-			"BattlePet-0-000011F7F5D4", -- [1]
-			"BattlePet-0-000012B90271", -- [2]
+			"BattlePet-0-000012BF63D8", -- [1]
+			"BattlePet-0-000012C4AA56", -- [2]
 			"random:5", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/637\n\nDragonsAfterDark: Updated 3 June 22 for some efficiency changes. Happy battling!\n\nScript thanks to Ratsch\n\nTurn 1: Flurry\nTurn 2: Flurry\nTurns 3-5: Stampede\nUndead: Pass\nCrawdead comes in\nTurn 1: Flurry\nTurn 2: Flurry\nTurn 3: Dodge\nTurn 4+: Flurry until Rabbit dies\nBring in your Snail\nTurn 1: Shell Shield\nTurns 2+: Ooze Touch until Crawdead resurrects\nUndead: Shell Shield\nGnaw comes in\nTurns 1+2: Dive\nTurns 2+: Ooze Touch until your Snail dies\nBring in your third pet\nTurn 1: Any standard attack will finish the fight\n",
-		["name"] = "Jarrun's Ladder (Critter)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/496\n\npbScript thanks to isthevao#1164\n\nTurn 1: Headbutt\nTurn 2: Pass\nTurn 3: Pass\nTurn 4: Shell Shield\nTurn 5: Ooze Touch\nTurn 6: Headbutt\nTurns 7+: Ooze Touch until Rocklick is dead\nSlow Moe comes in\nTurn 1: Ooze Touch\nTurn 2: Shell Shield\nTurn 3: Headbutt\nTurns 4+: Ooze Touch until your snail dies\nBring in your Rabbit\nTurn 1: Dodge\nTurns 2+: Scratch until Slow Moe is dead (should be 1 or 2 turns)\nSnot comes in\nTurn 1: Scratch\nTurn 2: Scratch\nTurn 3: Dodge\nTurn 4: Scratch\nTurns 5-6: Burrow\nTurn 7: Scratch\nTurn 8: Dodge\nTurns 9+: Scratch until Snot is dead",
+		["name"] = "Snail Fight! (Critter)",
 		["tags"] = {
-			"222BBQ", -- [1]
-			"121CN7", -- [2]
+			"1229HO", -- [1]
+			"121BMP", -- [2]
 			"ZR5", -- [3]
 		},
-		["teamID"] = "team:326",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105455, -- [1]
-		},
+		["teamID"] = "team:356",
 		["preferences"] = {
-			["minXP"] = 25,
+			["minXP"] = 15,
 		},
+		["targets"] = {
+			104553, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:119"] = {
 		["pets"] = {
@@ -3870,63 +3697,60 @@ Rematch5SavedTeams = {
 			104970, -- [1]
 		},
 	},
-	["team:396"] = {
+	["team:61"] = {
 		["pets"] = {
-			"BattlePet-0-000012C4F6DE", -- [1]
-			"BattlePet-0-000012C4AA56", -- [2]
-			"BattlePet-0-000012DEFD57", -- [3]
+			"BattlePet-0-000012B99D22", -- [1]
+			"BattlePet-0-00000839A881", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/621\n\ntdScript thanks to AramilGaeda\n\nTurns 1-3: Swarm\nTurn 4: Flank\nTurn 5: Flank - Breezy Book dies\nHelpful Spirit comes in\nIs your Roach still alive?\nYes:: Jump to Scenario 1\nNo:: Jump to Scenario 2\n\nScenario 1\nTurn 1: Swarm - your Roach dies\nBring in your Rabbit\nTurn 1: Flurry\nTurn 2: Flurry - Helpful Spirit resurrects\n\nScenario 2\nBring in your Rabbit\nTurn 1: Dodge\nTurns 2-4: Stampede\nTurns 5+: Flurry until the Helpful Spirit resurrrects\n\nThen:: Dodge\nDelicate Moth comes in\nTurns 1+: Stampede until your Rabbit dies\nBring in your snail\nTurns 1+: Ooze Touch until the Moth is dead",
-		["name"] = "Training with the Nightwatchers (Critter)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1935\n\nStrategy added by Sully\nScript thanks to TURBOKillex\n\nTurn 1: Diseased Bite\nTurn 2: Ethereal\nTurn 3: Ghostly Bite\nTurn 4: Pass - Yen swaps out and bolo comes in\nTurn 5: Diseased Bite until Ghastly Kid Resses\nTurn 7: Ghostly Bite - Bolo Dies and so does Ghastly Kid\nBring in your Fel Pup\nTurn 1: Crouch\nPass if you are stunned\nTurn 2: Diseased Bite until Yen dies\nTurn 4: Diseased Bite\nTurn 6: Howl\nTurn 7: Diseased Bite until Li dies\n",
+		["name"] = "Taran Zhu",
 		["tags"] = {
-			"221BD8", -- [1]
-			"222BMP", -- [2]
-			"1217FD", -- [3]
+			"22161D2", -- [1]
+			"21151JS", -- [2]
+			"00061CI", -- [3]
 		},
-		["teamID"] = "team:396",
+		["teamID"] = "team:61",
+		["targets"] = {
+			71931, -- [1]
+		},
+		["groupID"] = "group:11",
+	},
+	["team:407"] = {
+		["pets"] = {
+			"BattlePet-0-000012B4838C", -- [1]
+			"BattlePet-0-000012B146CC", -- [2]
+			"random:2", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/606\n\nScript thanks to KyooShoo\n\nTurns 1+2: Proto-Strike\nTurns 3+: Breath until Jinx is dead\nRocket comes in\nTurn 1: Emerald Presence\nTurns 2+3: Proto-Strike\nTurns 4+: Breath until Rocket is dead as well\nMarshmallow comes in\nTurns 1+: Breath until your Proto-Whelp dies\nBring in Chrominius\nTurn 1: Howl\nTurn 2: Surge of Power\n",
+		["name"] = "Fight Night: Tiffany Nelson (Dragon)",
+		["tags"] = {
+			"121814F", -- [1]
+			"1126140", -- [2]
+			"ZR2", -- [3]
+		},
+		["teamID"] = "team:407",
 		["groupID"] = "group:12",
 		["targets"] = {
-			106552, -- [1]
+			97804, -- [1]
 		},
 	},
-	["team:367"] = {
+	["team:184"] = {
 		["pets"] = {
-			"BattlePet-0-000012B146CC", -- [1]
-			"BattlePet-0-000012B48707", -- [2]
-			"BattlePet-0-000012B4861E", -- [3]
+			"BattlePet-0-000006E4C76E", -- [1]
+			"BattlePet-0-000012B01EBA", -- [2]
+			"BattlePet-0-000012B01ED3", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/602\n\nScript thanks to wist\n\nTurn 1: Arcane Explosion\nTurn 2: Howl\nTurns 3-5: Surge of Power\nQuillino comes in and your Chrominius dies\nBring in your Nexus Whelpling\nTurn 1: Arcane Storm\nTurns 2+: Mana Surge until Quillino dies\nIf your Nexus Whelpling dies first, no problem. Bring in your Nether Faerie Dragon and finish off Quillino with Arcane Blast, then jump down to the last 2 steps.\nFethyr comes in\nTurn 1: Pass\nTurn 2: Arcane Storm\nTurns 3+: Tail Sweep until Nexus Whelpling dies\nBring in your Nether Faerie Dragon\nTurn 1: Moonfire\nTurns 2+: Arcane Blast until Fethyr is dead\n",
-		["name"] = "Training with Bredda (Dragon)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14342\n\nStrategy added by Druzil#2921\nPass if stunned.\n\n Iron Starlette backup pet\n\nTurn 1: Supercharge\nTurn 2: Call Lightning - Chum dies\nTurn 3: Bring in Lurking Owl Kitten\nTurn 4: Screech\nTurn 5: Quills\nTurn 6: Feathered Frenzy - Bruce should die\nTurn 7: Quills - Lurking Owl Kitten dies\nTurn 8: Bring in Runeforged Servitor\nTurn 9: Supercharge\nTurn 10: Call Lightning - Maws Jr. dies\n",
+		["name"] = "Not So Bad Down Here",
 		["tags"] = {
-			"2126140", -- [1]
-			"122814D", -- [2]
-			"2215HD", -- [3]
+			"22231T5", -- [1]
+			"22181S2", -- [2]
+			"12171BB", -- [3]
 		},
-		["teamID"] = "team:367",
-		["groupID"] = "group:12",
+		["teamID"] = "team:184",
 		["targets"] = {
-			99077, -- [1]
-		},
-	},
-	["team:201"] = {
-		["pets"] = {
-			"BattlePet-0-000012B484E9", -- [1]
-			"BattlePet-0-000012B146CB", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18464\n\nStrategy added by DragonsAfterDark\nThe script will run for Ikky & the Zandalari Raptors\n\nVideo for Fight (https://youtu.be/NjYD3heC3Js)\n\nTurn 1: Curse of Doom\nTurn 2: Shadow Slash / Shadow Shock\nTurn 3: Haunt\nBring in your Ikky\nTurn 4: Black Claw\nTurns 5-6: Flock\n",
-		["name"] = "Enok the Stinky",
-		["tags"] = {
-			"021616M", -- [1]
-			"01181FS", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:201",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
-		["targets"] = {
-			202440, -- [1]
+			141077, -- [1]
 		},
 		["groupID"] = "group:none",
 	},
@@ -3944,12 +3768,12 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:3",
-		["targets"] = {
-			150929, -- [1]
-		},
-		["groupID"] = "group:8",
 		["preferences"] = {
 			["minXP"] = 25,
+		},
+		["groupID"] = "group:8",
+		["targets"] = {
+			150929, -- [1]
 		},
 	},
 	["team:55"] = {
@@ -3971,64 +3795,64 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:394"] = {
+	["team:48"] = {
 		["pets"] = {
-			"BattlePet-0-000012B0D350", -- [1]
-			"BattlePet-0-000012B66C49", -- [2]
-			"BattlePet-0-000012C633E8", -- [3]
+			"BattlePet-0-000012B99CF8", -- [1]
+			"BattlePet-0-0000083A0A6A", -- [2]
+			"BattlePet-0-000006E4C7A0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/856\n\nStrategy added by Aranesh\nScript thanks to Zaphod\n\nTurns 1+2: Dive\nTurn 3: Thunderbolt\nTurn 4: Jolt\nTurn 5: Pass\nTurn 6: Jolt\nTurns 7+8: Dive - Breezy Book dies\nHelpful Spirit comes in\nTurn 1: Jolt\nTurn 2: Thunderbolt\nTurn 3: Jolt\nTurn 4: Pass\nTurns 5+6: Dive\nTurn 7: Jolt\nTurn 8: Thunderbolt - Helpful Spirit dies\nDelicate Moth comes in\nTurn 1: Jolt - your Spawn of G'nathus dies\nBring in your next pet\nTurns 1+: From here on just use Surge. Depending on how well Spawn of G'nathus did, you might not even need the third pet.\n",
-		["name"] = "Training with the Nightwatchers (Aquatic)",
+		["notes"] = "Strategy added by DragonsAfterDark\nPet 1: Any Pet with Explode and 1575 hp or morePet 2: Any Pet with Explode and 1575 hp or morePet 3: Any Pet with Pump and 272 power or more[url=https://youtu.be/-NFCK-QT1V0]Video for Fight[/url]\n\nTurn 1: Explode\nBring in Explode Pet 2\nTurn 2: Explode\nBring in Pump Pet\nTurn 3: Pump loads\nTurn 4: Pump lands\n",
+		["name"] = "Eye of the Stormling",
 		["tags"] = {
-			"211A15H", -- [1]
-			"2004NA", -- [2]
-			"2006CH", -- [3]
+			"00292L", -- [1]
+			"00261G1", -- [2]
+			"002CQF", -- [3]
 		},
-		["teamID"] = "team:394",
-		["groupID"] = "group:12",
+		["teamID"] = "team:48",
 		["targets"] = {
-			106552, -- [1]
+			197447, -- [1]
 		},
+		["groupID"] = "group:none",
 	},
-	["team:434"] = {
+	["team:121"] = {
 		["pets"] = {
-			"BattlePet-0-000012B5CBA5", -- [1]
-			"random:9", -- [2]
-			"random:9", -- [3]
+			"BattlePet-0-000006E4C775", -- [1]
+			"BattlePet-0-000012B17368", -- [2]
+			"BattlePet-0-000012B01DE0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3552\n\nStrategy added by DragonsAfterDark\nTurn 1: Rain Dance\nTurn 2-5: Tidal Wave\nRepeat 1-5 until enemy backline pets die\nAfter that:\nPriority 1: Rain Dance\nPriority 2: Water Jet\n",
-		["name"] = "Fight Night: Amalia (Aquatic)",
+		["notes"] = "Strategy added by Mutanis\nTurn 1: Ice Tomb\nTurn 2: Call Blizzard\nTurn 3: Ice Lance\nMPD comes in\nTurn 1: Ice Lance\nTurn 2: Ice Lance\nTurn 3: Swap to your Anomalus\nTurn 4: Poison Protocol\nTurn 5: Void Nova\nTurn1 6+: Corrosion until Anomalus dies\nBring in your Winter's Little Helper\nTurns 1+: Ice Lance until Spectral Tiger Cub dies\n\n",
+		["name"] = "The Grand Master",
 		["tags"] = {
-			"11231KN", -- [1]
-			"ZR9", -- [2]
-			"ZR9", -- [3]
+			"21133N", -- [1]
+			"22142OQ", -- [2]
+			"20033O", -- [3]
 		},
-		["teamID"] = "team:434",
-		["groupID"] = "group:12",
+		["teamID"] = "team:121",
 		["targets"] = {
-			107489, -- [1]
+			196069, -- [1]
 		},
+		["groupID"] = "group:none",
+	},
+	["team:33"] = {
+		["pets"] = {
+			"BattlePet-0-000012B5C2FF", -- [1]
+			"BattlePet-0-000012B5C356", -- [2]
+			"random:0", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2255\n\nStrategy added by Eekwibble\nI changed this from having a carry pet because the xp is so lame since the nerf. The upside is, it now only lasts 13 rounds.\n\nTurn 1: Ironskin\nTurns 2&3: Falcosaur Swarm!\nTurn 4: Predatory Strike - Fungus dies\nMort comes in\nTurn 1: Pass\nTurn 2: Ironskin\nTurns 3&4: Falcosaur Swarm!\nTurn 5: Predatory Strike - Mort dies\nOld Blue comes in\nTurn 1+: Falcosaur Swarm! until Direbeak Hatchling dies\nBring in your Snowfeather Hatchling\nThen:: Predatory Strike - Old Blue dies\n",
+		["name"] = "That's a Big Carcass",
+		["tags"] = {
+			"12171TN", -- [1]
+			"00151TM", -- [2]
+			"ZR0", -- [3]
+		},
+		["teamID"] = "team:33",
+		["targets"] = {
+			141292, -- [1]
+		},
+		["groupID"] = "group:none",
 		["preferences"] = {
 			["minXP"] = 25,
-		},
-	},
-	["team:419"] = {
-		["pets"] = {
-			"BattlePet-0-000012B118A8", -- [1]
-			"BattlePet-0-000012B99CCD", -- [2]
-			"BattlePet-0-000012EA971F", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13847\n\nStrategy added by Anesthetize\nScript thanks to Malhado\n\nTurn 1: Soulrush\nTurn 2: Dark Talon\nTurn 3: Pass\nTurn 4: Ethereal\nTurn 5: Dark Talon\nTurn 6: Soulrush - Coach should be dead\nTurn 7: Dark Talon - Sentinel will probably die here. If not, Talon until Sentinel die.\nBring Nightwreathed Watcher in.\nTurn 1: Call Darkness - (assuming Sir Murkeston is stunned, the ability should hit Greatest Foe)\nTurn 2: Warning Squawk\nTurn 3: Dark Talon - Until Nightwreathed Watcher is dead.\nIf you are lucky, Sir Murkeston is dead by now, if not:\nTurn 1: Shadow Slash\n\n",
-		["name"] = "Fight Night: Sir Galveston (Flyer)",
-		["tags"] = {
-			"22281GV", -- [1]
-			"22272G3", -- [2]
-			"20061HV", -- [3]
-		},
-		["teamID"] = "team:419",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99182, -- [1]
 		},
 	},
 	["team:186"] = {
@@ -4050,27 +3874,24 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:433"] = {
+	["team:177"] = {
 		["pets"] = {
-			"BattlePet-0-000012EB3764", -- [1]
-			"BattlePet-0-000012C4ECBA", -- [2]
-			"random:4", -- [3]
+			"BattlePet-0-000012B146C7", -- [1]
+			"BattlePet-0-000012B482D2", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3513\n\nStrategy added by DragonsAfterDark\nTurn 1: Plagued Blood\nTurn 2: Phase Shift\nTurn 3-6: Arcane Blast\nTurn 7: Phase Shift\nTurn 8+: Arcane Blast until Itchy dies\nSalty Bird comes in\nTurn 1+: Arcane Blast until Salty Bird dies\nGrommet comes in\nTurn 1+: Plagued Blood until Restless Shadeling dies completely\nBring in your Spectral Spinner\nTurn 1: Blinding Poison\nTurn 2: Spectral Strike\nTurn 3+: Bone Bite until Grommet dies\n",
-		["name"] = "Fight Night: Bodhi Sunwayver (Undead)",
+		["notes"] = "Strategy added by station384\nTurn 1: Blistering Cold\nTurn 2: Chop\nTurn 3: BONESTORM\nTurn 4: Repeat till Boneshard dead\nTurn 5: Primal Cry\nTurn 6: Black Claw\nTurn 7: Hunting Party\nTurn 8: Repeat 5-7 till target dead\n",
+		["name"] = "Tremblor - Rare",
 		["tags"] = {
-			"2129DN", -- [1]
-			"12281M2", -- [2]
-			"ZR4", -- [3]
+			"11231TB", -- [1]
+			"222A15R", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:433",
-		["groupID"] = "group:12",
+		["teamID"] = "team:177",
 		["targets"] = {
-			99210, -- [1]
+			200693, -- [1]
 		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
+		["groupID"] = "group:none",
 	},
 	["team:285"] = {
 		["pets"] = {
@@ -4086,13 +3907,13 @@ Rematch5SavedTeams = {
 			"11261CI", -- [3]
 		},
 		["teamID"] = "team:285",
-		["groupID"] = "group:11",
-		["targets"] = {
-			66638, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 1,
 		},
+		["targets"] = {
+			66638, -- [1]
+		},
+		["groupID"] = "group:11",
 	},
 	["team:357"] = {
 		["pets"] = {
@@ -4108,13 +3929,13 @@ Rematch5SavedTeams = {
 			"ZR2", -- [3]
 		},
 		["teamID"] = "team:357",
-		["groupID"] = "group:12",
-		["targets"] = {
-			104553, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 1,
 		},
+		["targets"] = {
+			104553, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:88"] = {
 		["pets"] = {
@@ -4149,14 +3970,14 @@ Rematch5SavedTeams = {
 			"ZR1", -- [3]
 		},
 		["teamID"] = "team:400",
-		["groupID"] = "group:12",
-		["targets"] = {
-			106552, -- [1]
-		},
 		["preferences"] = {
 			["minHP"] = 1501,
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			106552, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:208"] = {
 		["pets"] = {
@@ -4260,13 +4081,13 @@ Rematch5SavedTeams = {
 			"221CN7", -- [3]
 		},
 		["teamID"] = "team:110",
-		["preferences"] = {
-			["minXP"] = 12,
-		},
 		["targets"] = {
 			140813, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 12,
+		},
 	},
 	["team:265"] = {
 		["pets"] = {
@@ -4322,23 +4143,23 @@ Rematch5SavedTeams = {
 			105455, -- [1]
 		},
 	},
-	["team:289"] = {
+	["team:396"] = {
 		["pets"] = {
-			"BattlePet-0-000008968258", -- [1]
-			"BattlePet-0-000012B4838C", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
+			"BattlePet-0-000012C4F6DE", -- [1]
+			"BattlePet-0-000012C4AA56", -- [2]
+			"BattlePet-0-000012DEFD57", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/384\n\nScript thanks to aidos\n\nTurn 1: Sandstorm\nTurn 2: Deflection\nTurns 3+: From here on, cast Deflection on cooldown, Sandstorm when you can and Crush in between until Diamond is no more.\nMollus comes in\nTurn 1: Crush\nTurn 2: Crush\nTurn 3: Deflection\nTurn 4: Swap to your Emerald Proto-Whelp\nTurn 5: Emerald Presence\nTurn 6: Emerald Bite\nTurn 7: Emerald Bite\nTurns 8-9: Proto-Strike\nTurn 10: Emerald Presence\nTurns 11+: Emerald Bite until Mollus dies.\nSkimmer comes in\nTurns 1+: Emerald Bite until your Emerald Proto-Whelp dies. Pass if you get stunned.\nBring in your Anubisath Idol\nTurns 1+: Cast Deflection when Skimmer is Pumped up (if possible), Sandstorm on cooldown and Crush as a filler.\n",
-		["name"] = "Seeker Zusshi",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/621\n\ntdScript thanks to AramilGaeda\n\nTurns 1-3: Swarm\nTurn 4: Flank\nTurn 5: Flank - Breezy Book dies\nHelpful Spirit comes in\nIs your Roach still alive?\nYes:: Jump to Scenario 1\nNo:: Jump to Scenario 2\n\nScenario 1\nTurn 1: Swarm - your Roach dies\nBring in your Rabbit\nTurn 1: Flurry\nTurn 2: Flurry - Helpful Spirit resurrects\n\nScenario 2\nBring in your Rabbit\nTurn 1: Dodge\nTurns 2-4: Stampede\nTurns 5+: Flurry until the Helpful Spirit resurrrects\n\nThen:: Dodge\nDelicate Moth comes in\nTurns 1+: Stampede until your Rabbit dies\nBring in your snail\nTurns 1+: Ooze Touch until the Moth is dead",
+		["name"] = "Training with the Nightwatchers (Critter)",
 		["tags"] = {
-			"1116143", -- [1]
-			"221814F", -- [2]
-			"11261CI", -- [3]
+			"221BD8", -- [1]
+			"222BMP", -- [2]
+			"1217FD", -- [3]
 		},
-		["teamID"] = "team:289",
-		["groupID"] = "group:11",
+		["teamID"] = "team:396",
+		["groupID"] = "group:12",
 		["targets"] = {
-			66918, -- [1]
+			106552, -- [1]
 		},
 	},
 	["team:29"] = {
@@ -4355,13 +4176,13 @@ Rematch5SavedTeams = {
 			"11131TC", -- [3]
 		},
 		["teamID"] = "team:29",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			116795, -- [1]
 		},
 		["groupID"] = "group:7",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:247"] = {
 		["pets"] = {
@@ -4379,42 +4200,42 @@ Rematch5SavedTeams = {
 		["teamID"] = "team:247",
 		["groupID"] = "group:none",
 	},
-	["team:390"] = {
+	["team:394"] = {
 		["pets"] = {
-			"BattlePet-0-000008968258", -- [1]
-			"BattlePet-0-000012B5C607", -- [2]
-			"random:1", -- [3]
+			"BattlePet-0-000012B0D350", -- [1]
+			"BattlePet-0-000012B66C49", -- [2]
+			"BattlePet-0-000012C633E8", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/845\n\nStrategy added by Aranesh\nTurn 1: Sandstorm\nTurn 2: Deflection\nTurn 3: Crush\nTurn 4: Crush\nTurn 5: Crush\nTurn 6: Crush\nTurn 7: Sandstorm - Trixy should die here. If not, it can work out but is a little risky. If your third pet is level 25 it's worth giving it a shot.\nTurn 8: Deflection\nTurns 9+: Crush until Trixy is dead (if that didn't happen earlier)\nGlobs comes in\nUse your spells in this priority list until Anubisath Idol dies\nPrio 1: Deflection\nPrio 2: Sandstorm\nPrio 3: Crush\n\nBring in your Kun-Lai Runt\nTurns 1+: Takedown until Globs is dead\nNightmare Sprout comes in\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurn 3: Takedown\nTurn 4: Frost Shock\nTurn 5: Takedown\nTurn 6: Frost Shock\nTurn 7: Deep Freeze\nTurns 8+: Takedown until Nightmare Sprout is dead\n",
-		["name"] = "Dealing with Satyrs (Humanoid)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/856\n\nStrategy added by Aranesh\nScript thanks to Zaphod\n\nTurns 1+2: Dive\nTurn 3: Thunderbolt\nTurn 4: Jolt\nTurn 5: Pass\nTurn 6: Jolt\nTurns 7+8: Dive - Breezy Book dies\nHelpful Spirit comes in\nTurn 1: Jolt\nTurn 2: Thunderbolt\nTurn 3: Jolt\nTurn 4: Pass\nTurns 5+6: Dive\nTurn 7: Jolt\nTurn 8: Thunderbolt - Helpful Spirit dies\nDelicate Moth comes in\nTurn 1: Jolt - your Spawn of G'nathus dies\nBring in your next pet\nTurns 1+: From here on just use Surge. Depending on how well Spawn of G'nathus did, you might not even need the third pet.\n",
+		["name"] = "Training with the Nightwatchers (Aquatic)",
 		["tags"] = {
-			"1116143", -- [1]
-			"222814E", -- [2]
-			"ZR1", -- [3]
+			"211A15H", -- [1]
+			"2004NA", -- [2]
+			"2006CH", -- [3]
 		},
-		["teamID"] = "team:390",
+		["teamID"] = "team:394",
 		["groupID"] = "group:12",
 		["targets"] = {
-			104970, -- [1]
+			106552, -- [1]
 		},
 	},
-	["team:391"] = {
+	["team:419"] = {
 		["pets"] = {
-			"BattlePet-0-000012D0B39C", -- [1]
-			"BattlePet-0-000012B01ECA", -- [2]
-			"BattlePet-0-000012B99CB5", -- [3]
+			"BattlePet-0-000012B118A8", -- [1]
+			"BattlePet-0-000012B99CCD", -- [2]
+			"BattlePet-0-000012EA971F", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/847\n\nScript thanks to wist\n\nTurn 1: Sandstorm\nTurn 2: Pass - your Lesser Voidcaller is swapped in\nTurns 3+: Shadow Shock until Trixy dies\nGlobs comes in\nTurn 1: Curse of Doom\nTurns 2+: Shadow Shock until Lesser Voidcaller dies\nBring back your Enchanted Broom\nTurn 1: Wind-Up\nTurn 2: Wind-Up\nTurn 3: Batter until Globs is dead\nNightmare Sprout comes in\nTurns 1+: Batter until Enchanted Broom dies\nBring in your Netherspawn, Spawn of Netherspawn\nTurn 1: Creeping Ooze\nTurn 2: Expunge\nTurns 3+: Creeping Ooze until Nightmare Sprout is dead\n",
-		["name"] = "Dealing with Satyrs (Magic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13847\n\nStrategy added by Anesthetize\nScript thanks to Malhado\n\nTurn 1: Soulrush\nTurn 2: Dark Talon\nTurn 3: Pass\nTurn 4: Ethereal\nTurn 5: Dark Talon\nTurn 6: Soulrush - Coach should be dead\nTurn 7: Dark Talon - Sentinel will probably die here. If not, Talon until Sentinel die.\nBring Nightwreathed Watcher in.\nTurn 1: Call Darkness - (assuming Sir Murkeston is stunned, the ability should hit Greatest Foe)\nTurn 2: Warning Squawk\nTurn 3: Dark Talon - Until Nightwreathed Watcher is dead.\nIf you are lucky, Sir Murkeston is dead by now, if not:\nTurn 1: Shadow Slash\n\n",
+		["name"] = "Fight Night: Sir Galveston (Flyer)",
 		["tags"] = {
-			"21256L", -- [1]
-			"101616I", -- [2]
-			"02271FK", -- [3]
+			"22281GV", -- [1]
+			"22272G3", -- [2]
+			"20061HV", -- [3]
 		},
-		["teamID"] = "team:391",
+		["teamID"] = "team:419",
 		["groupID"] = "group:12",
 		["targets"] = {
-			104970, -- [1]
+			99182, -- [1]
 		},
 	},
 	["team:16"] = {
@@ -4436,43 +4257,46 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:151"] = {
+	["team:104"] = {
 		["pets"] = {
-			"BattlePet-0-000012B146CB", -- [1]
-			"random:3", -- [2]
-			"random:3", -- [3]
+			"BattlePet-0-000006E4C775", -- [1]
+			"BattlePet-0-000012BC0A5A", -- [2]
+			0, -- [3]
 		},
-		["notes"] = "Strategy added by DragonsAfterDark\nIkky should be good to take out both, or almost both, Skitterers with no healing between the fights.Script thanks to Schlumpf\n\nTurn 1: Black Claw\nTurns 2-4: Flock\nTurn 5+: Quills until the fight is won\n",
-		["name"] = "Storm-Touched Skitterer",
+		["notes"] = "Strategy added by Mutanis\nI got inspired by Slayer [url=https://www.wow-petguide.com/?Strategy=12215]strategy[/url].Time: ~1:30 (11-12 rounds)Updated TD Script (5.04.2021). Strategy works also in rare critical cases now\n\nTurn 1: Ice Tomb\nTurn 2: Call Blizzard\nTurn 3: Ice Lance\nTurn 4: Ice Lance (Egcellent comes in)\nTurn 5: Ice Lance\nTurn 6: Call Blizzard\nTurn 7: Ice Tomb (Red Wire comes in)\nTurn 8: Ice Lance (Father Winter's Helper dies)\nBring in your Mechanical Pandaren Dragonling\nTurn 9: Breath\nTurn 10: Thunderbolt (Gulp comes in)\nTurn 11: Breath (if Gulp is alredy dead(crits) then Egcellent comes in --> Explode)\nEgcellent comes in\nTurn 12: Explode\n",
+		["name"] = "Tiny Poacher, Tiny Animals",
 		["tags"] = {
-			"21181FS", -- [1]
-			"ZR3", -- [2]
-			"ZR3", -- [3]
+			"21133N", -- [1]
+			"1215QC", -- [2]
+			"ZL", -- [3]
 		},
-		["teamID"] = "team:151",
+		["teamID"] = "team:104",
+		["targets"] = {
+			99150, -- [1]
+		},
+		["groupID"] = "group:none",
+	},
+	["team:433"] = {
+		["pets"] = {
+			"BattlePet-0-000012EB3764", -- [1]
+			"BattlePet-0-000012C4ECBA", -- [2]
+			"random:4", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3513\n\nStrategy added by DragonsAfterDark\nTurn 1: Plagued Blood\nTurn 2: Phase Shift\nTurn 3-6: Arcane Blast\nTurn 7: Phase Shift\nTurn 8+: Arcane Blast until Itchy dies\nSalty Bird comes in\nTurn 1+: Arcane Blast until Salty Bird dies\nGrommet comes in\nTurn 1+: Plagued Blood until Restless Shadeling dies completely\nBring in your Spectral Spinner\nTurn 1: Blinding Poison\nTurn 2: Spectral Strike\nTurn 3+: Bone Bite until Grommet dies\n",
+		["name"] = "Fight Night: Bodhi Sunwayver (Undead)",
+		["tags"] = {
+			"2129DN", -- [1]
+			"12281M2", -- [2]
+			"ZR4", -- [3]
+		},
+		["teamID"] = "team:433",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
 		["targets"] = {
-			200679, -- [1]
+			99210, -- [1]
 		},
-		["groupID"] = "group:none",
-	},
-	["team:251"] = {
-		["pets"] = {
-			"BattlePet-0-000012B5CBA7", -- [1]
-			"BattlePet-0-000012B9027A", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/214\n\nTurn 1: Immolation\nTurn 2: Wild Magic\nTurn 3: Swap to your Rapana Whelk\nTurn 4: Acidic Goo\nTurn 5: Ooze Touch\nTurn 6: Ooze Touch\nTurns 7+8: Dive\n",
-		["name"] = "Chi-Chi, Hatchling of Chi-Ji (3)",
-		["tags"] = {
-			"212813T", -- [1]
-			"111CN7", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:251",
-		["groupID"] = "group:1",
+		["groupID"] = "group:12",
 	},
 	["team:137"] = {
 		["pets"] = {
@@ -4493,24 +4317,24 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:22"] = {
+	["team:390"] = {
 		["pets"] = {
-			"BattlePet-0-000012B6764A", -- [1]
-			"BattlePet-0-000012BAC92C", -- [2]
-			"BattlePet-0-000012B146D0", -- [3]
+			"BattlePet-0-000008968258", -- [1]
+			"BattlePet-0-000012B5C607", -- [2]
+			"random:1", -- [3]
 		},
-		["notes"] = "Strategy added by RedBeard\nTurn 1: Decoy\nTurn 2: Haywire\nTurn 3: Peck\nTurn 4: Peck\nScars comes in\nTurn 5: Peck\nTurn 6: Haywire\nBring in your Darkmoon Tonk\nTurn 7: Shock and Awe\nTurn 8+: Missile until Scars dies\nUndead: Pass\nLittle Blue comes in\nTurn 9: Missile\nTurn 10: Ion Cannon\nBring in your Iron Starlette\nTurn 1: Toxic Smoke\n",
-		["name"] = "Pack Leader",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/845\n\nStrategy added by Aranesh\nTurn 1: Sandstorm\nTurn 2: Deflection\nTurn 3: Crush\nTurn 4: Crush\nTurn 5: Crush\nTurn 6: Crush\nTurn 7: Sandstorm - Trixy should die here. If not, it can work out but is a little risky. If your third pet is level 25 it's worth giving it a shot.\nTurn 8: Deflection\nTurns 9+: Crush until Trixy is dead (if that didn't happen earlier)\nGlobs comes in\nUse your spells in this priority list until Anubisath Idol dies\nPrio 1: Deflection\nPrio 2: Sandstorm\nPrio 3: Crush\n\nBring in your Kun-Lai Runt\nTurns 1+: Takedown until Globs is dead\nNightmare Sprout comes in\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurn 3: Takedown\nTurn 4: Frost Shock\nTurn 5: Takedown\nTurn 6: Frost Shock\nTurn 7: Deep Freeze\nTurns 8+: Takedown until Nightmare Sprout is dead\n",
+		["name"] = "Dealing with Satyrs (Humanoid)",
 		["tags"] = {
-			"22171BR", -- [1]
-			"1127AI", -- [2]
-			"12181BB", -- [3]
+			"1116143", -- [1]
+			"222814E", -- [2]
+			"ZR1", -- [3]
 		},
-		["teamID"] = "team:22",
+		["teamID"] = "team:390",
+		["groupID"] = "group:12",
 		["targets"] = {
-			141799, -- [1]
+			104970, -- [1]
 		},
-		["groupID"] = "group:none",
 	},
 	["team:200"] = {
 		["pets"] = {
@@ -4545,13 +4369,13 @@ Rematch5SavedTeams = {
 			"ZR9", -- [3]
 		},
 		["teamID"] = "team:424",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99210, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			99210, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:417"] = {
 		["pets"] = {
@@ -4591,6 +4415,101 @@ Rematch5SavedTeams = {
 			99150, -- [1]
 		},
 	},
+	["team:147"] = {
+		["pets"] = {
+			"BattlePet-0-000012B98D26", -- [1]
+			"random:5", -- [2]
+			"random:0", -- [3]
+		},
+		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Dodge\nTurn 2-4: Stampede\nTurn 5: Flurry\nTurn 6: Dodge\nTurn 7+: Flurry until Huncher dies\nIf needed:\nBring in your Critter pet\nAny standard attack will finish the fight\n",
+		["name"] = "Huncher",
+		["tags"] = {
+			"22281NI", -- [1]
+			"ZR5", -- [2]
+			"ZR0", -- [3]
+		},
+		["teamID"] = "team:147",
+		["targets"] = {
+			150917, -- [1]
+		},
+		["groupID"] = "group:8",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+	},
+	["team:391"] = {
+		["pets"] = {
+			"BattlePet-0-000012D0B39C", -- [1]
+			"BattlePet-0-000012B01ECA", -- [2]
+			"BattlePet-0-000012B99CB5", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/847\n\nScript thanks to wist\n\nTurn 1: Sandstorm\nTurn 2: Pass - your Lesser Voidcaller is swapped in\nTurns 3+: Shadow Shock until Trixy dies\nGlobs comes in\nTurn 1: Curse of Doom\nTurns 2+: Shadow Shock until Lesser Voidcaller dies\nBring back your Enchanted Broom\nTurn 1: Wind-Up\nTurn 2: Wind-Up\nTurn 3: Batter until Globs is dead\nNightmare Sprout comes in\nTurns 1+: Batter until Enchanted Broom dies\nBring in your Netherspawn, Spawn of Netherspawn\nTurn 1: Creeping Ooze\nTurn 2: Expunge\nTurns 3+: Creeping Ooze until Nightmare Sprout is dead\n",
+		["name"] = "Dealing with Satyrs (Magic)",
+		["tags"] = {
+			"21256L", -- [1]
+			"101616I", -- [2]
+			"02271FK", -- [3]
+		},
+		["teamID"] = "team:391",
+		["groupID"] = "group:12",
+		["targets"] = {
+			104970, -- [1]
+		},
+	},
+	["team:296"] = {
+		["pets"] = {
+			"BattlePet-0-000012B67A3C", -- [1]
+			"BattlePet-0-000012B99C95", -- [2]
+			"BattlePet-0-000012B99C7D", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16990\n\nStrategy added by DragonsAfterDark\nTurn 1: Adrenaline Rush\nTurn 2: Flamethrower\nTurn 3: Burn\nTurn 4: Burn - Gusteau dies and resurrects & kills your Crispin\nBring in your Void-Scarred Rat\nTurn 1: Creepy Chomp - to kill Gusteau\nRemy comes in\nTurn 1: Feed\nTurn 2: Creepy Chomp\nTurn 3: Bloodfang\nDinner comes in\nTurn 1: Creepy Chomp - Blocked by Bubble\nTurn 2: Creepy Chomp - Blocked by Bubble\nTurn 3+: If you survive use Feed & Bloodfang on CD & Creepy Chomp otherwise\nBring in your Lovebird Hatchling\n> 630 hp: Alpha Strike\n< 631 hp: Predatory Strike\n",
+		["name"] = "Chopped (Critter)",
+		["tags"] = {
+			"11281MO", -- [1]
+			"12242OP", -- [2]
+			"21251F7", -- [3]
+		},
+		["teamID"] = "team:296",
+		["groupID"] = "group:12",
+		["targets"] = {
+			105674, -- [1]
+		},
+	},
+	["team:120"] = {
+		["pets"] = {
+			"BattlePet-0-000012B67C89", -- [1]
+			"BattlePet-0-000012BCCE52", -- [2]
+			"BattlePet-0-000012C3D996", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3605\n\nStrategy added by DragonsAfterDark\n13 January 24:\n\n1. Updated the Hermit Crab's moves to help it last longer.\n2. Updated instructions for which pet to bring in versus the different backline pets.\n3. Script has been updated accordingly - and again. Was missing a few lines ^^'\n\nTurn 1: Pinch\nTurn 2: Pinch\nTurns 3-4: Dive\nTurn 5+: Pinch until Living Sludge is dead\n\nRandom Enemy Pet Comes In\n\nNote 1:: There are a few different pets that will come in with Living Sludge, so the turn orders won't be exact.\n\nNote 2:: Keep in mind, if you can't see the enemy attacks with an addon, Automated Drilling Machine's ability, Smoke Cloud, is on a 4 round CD, so you may need to adjust your pet's attacks\n\nNote 3:: Pass during the Undead / Dodge Rounds\n\nTurn 1: Shell Armor - Unless the enemy is the Cockroach, then Pinch\nTurn 2: Pinch\nTurn 3: Pinch - Unless the enemy is the Cockroach, then Shell Armor\nNot Cockroach:\nTurns 4-5: Dive\nTurn 6+: Pinch until dead\nCockroach:\nTurn 4: Pinch\nTurn 5: Pinch\nTurns 6-7: Dive\nTurn 8+: Pinch until dead\n\n~: If the active enemy is Mech/Undead, bring in the Autumnal Sproutling, if it's a Cockroach then go to the Blazing Cindercrawler\n\nBring in your Autumnal Sproutling\nPriority 1: Use Leech Seed on CD\nPriority 2: Use Fist of the Forest on CD\nPriority 3: Lash as filler\nBring in your Blazing Cindercrawler\nPriority 1: Cauterize as needed\nIf: Mech/Undead pet is up: Burn+\nIf : Critter is up: Brittle Webbing +\n",
+		["name"] = "Living Sludge",
+		["tags"] = {
+			"11152AV", -- [1]
+			"12291CL", -- [2]
+			"11241FD", -- [3]
+		},
+		["teamID"] = "team:120",
+		["targets"] = {
+			146182, -- [1]
+		},
+		["groupID"] = "group:6",
+	},
+	["team:264"] = {
+		["pets"] = {
+			"BattlePet-0-000012B146D0", -- [1]
+			"BattlePet-0-000012B15603", -- [2]
+			"BattlePet-0-000012B673F3", -- [3]
+		},
+		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).I recommend using the P/S Iron Starlette because it only needs 1x Powerball to be faster than the enemy pets, usually lands 2x Wind-Up hits on Brul'dan and therefore adds more control.\n\nWith your Iron Starlette stick to these priorities until dead:\nvs. Lifft\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active, Dive is not usable this and the next turn -> Supercharge\nPrio 3:: Wind-Up is active, Lifft is Underwater -> Powerball\nPrio 4:: Wind-Up\nvs. Brul'dan\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active -> Wind-Up\nPrio 3:: Your pet's Failsafe has been triggered, Drain Power not usable -> Powerball \nPrio 4:: Wind-Up\n\nBring in your Timeless Mechanical Dragonling and stick to these priorities:\nPrio 1:: Enemy is Swole, Decoy exists -> Swap to your Microbot XD\nPrio 2:: Enemy is Swole, you've taken the Headbutt -> Swap to your Microbot XD\nPrio 3:: Enemy is Brul'dan with <1097HP -> Time Bomb\nPrio 4:: Enemy is Brul'dan with <549HP, no Flame Breath DoT active -> Decoy\nPrio 5:: Enemy is Brul'dan -> Flame Breath\nPrio 6:: Enemy is Swole -> Pass turn or Flame Breath\n\nWith your Microbot XD stick to these priorities:\nPrio 1:: Brul'dan is still alive or Swole has >1726HP -> Alert!\nPrio 2:: Supercharge\nPrio 3:: Ion Cannon\n",
+		["name"] = "Do You Even Train? (Mech)",
+		["tags"] = {
+			"11181BB", -- [1]
+			"121430S", -- [2]
+			"12272KT", -- [3]
+		},
+		["teamID"] = "team:264",
+		["groupID"] = "group:none",
+	},
 	["team:294"] = {
 		["pets"] = {
 			"BattlePet-0-000012C4A520", -- [1]
@@ -4609,107 +4528,6 @@ Rematch5SavedTeams = {
 		["targets"] = {
 			105674, -- [1]
 		},
-	},
-	["team:378"] = {
-		["pets"] = {
-			"BattlePet-0-000012B485C2", -- [1]
-			"random:7", -- [2]
-			"random:7", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/642\n\nScript thanks to Taizun\n\nTurn 1: Whirlpool\nTurn 2: Water Jet\nTurns 3+4: Dive\nTurns 5+: Water Jet until Sunny dies\nRoots comes in\nTurn 1: Whirlpool\nTurn 2: Water Jet\nTurns 3+4: Dive\nTurns 5+: Water Jet until Roots dies\nBeaky comes in\nTurn 1: Whirlpool\nTurns 2+: Water Jet until your Water Spirit dies\n\nBring in your other level 25 Elemental and kill Beaky with standard attacks.\n",
-		["name"] = "Training with Durian (Elemental)",
-		["tags"] = {
-			"1219R4", -- [1]
-			"ZR7", -- [2]
-			"ZR7", -- [3]
-		},
-		["teamID"] = "team:378",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99035, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-	},
-	["team:386"] = {
-		["pets"] = {
-			"BattlePet-0-000012BF63D8", -- [1]
-			"BattlePet-0-000012C4AA56", -- [2]
-			"random:5", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/514\n\nTurns 1+2: Dive\nTurns 3+: Use Dive on cooldown and otherwise Absorb until Trixy is dead\nGlobs comes in\nTurn 1: Swap to your Rabbit\nTurn 2: Dodge\nTurn 3: Flurry\nTurn 4: Flurry\nTurns 5+6: Burrow\nTurn 7: Dodge\nTurn 8: Flurry\nTurn 9: Flurry - Globs dies\nNightmare Sprout comes in\nTurns 1+: Flurry until your Rabbit dies\nBring back your snail\nTurn 1: Shell Shield\nTurn 2: Absorb\nTurn 3: Absorb\nTurns 4+5: Dive\n\nIf the Nightmare Sprout is not dead, yet, keep Shell Shield active and use Dive or Absorb when ready.\n",
-		["name"] = "Dealing with Satyrs (Critter)",
-		["tags"] = {
-			"2219HO", -- [1]
-			"221BMP", -- [2]
-			"ZR5", -- [3]
-		},
-		["teamID"] = "team:386",
-		["groupID"] = "group:12",
-		["targets"] = {
-			104970, -- [1]
-		},
-	},
-	["team:383"] = {
-		["pets"] = {
-			"BattlePet-0-000006E4C79F", -- [1]
-			"BattlePet-0-000012B675D0", -- [2]
-			"random:4", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10906\n\nStrategy added by Berendain\nTurn 1: If your Blightbreath is faster than Sunny, use Toxic Smoke first\nTurn 2: Acid Rain\nTurns 3-5: Dreadful Breath\nTurn 6+: Continue using Acid Rain and Dreadful Breath until your Blightbreath dies\nBring in your Scourged Whelpling\nTurns 1-3: Dreadful Breath if Roots or Beaky are still alive on the backline\nTurn 4: Call Darkness when Sunny is the last pet alive\n",
-		["name"] = "Training with Durian (Undead)",
-		["tags"] = {
-			"12171TD", -- [1]
-			"0128GQ", -- [2]
-			"ZR4", -- [3]
-		},
-		["teamID"] = "team:383",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99035, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 1,
-		},
-	},
-	["team:107"] = {
-		["pets"] = {
-			"BattlePet-0-000012B521D4", -- [1]
-			"BattlePet-0-000012B01DC0", -- [2]
-			"BattlePet-0-000012B146D1", -- [3]
-		},
-		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Lil' Bling\nTurn 1-3: Inflation\nTurn 4: Make it Rain\nTurn 5+: Inflation\n\nIf needed: \nBring in your Mechanical Pandaren Dragonling\nTurn 1+: Breath\n",
-		["name"] = "Watch Where You Step",
-		["tags"] = {
-			"021316M", -- [1]
-			"2015198", -- [2]
-			"1225QC", -- [3]
-		},
-		["teamID"] = "team:107",
-		["targets"] = {
-			162466, -- [1]
-		},
-		["groupID"] = "group:none",
-	},
-	["team:53"] = {
-		["pets"] = {
-			"BattlePet-0-000012C56AF4", -- [1]
-			"BattlePet-0-000012B5CE8E", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/352\n\nTurn 1: Ice Tomb\nTurn 2: Ice Barrier\nTurn 3: Pass\nTurn 4: Pounce - Monte comes in\nTurn 5: Pounce\nTurn 6: Swap to your Elekk Plushie - it will take the damage from Burrow\nTurn 7: Pass\nTurn 8: Pass\nTurn 9: Itchin' for a Stitchin'\nTurn 10: Pounce\nTurn 11: Pounce - Monte dies\nSocks comes back in<\nTurn 1: Ice Tomb\nTurn 2: Ice Barrier - Mr. Bigglesworth dies\nBring in your Firewing\nTurn 1: Pass - Socks gets stunned\nTurn 2: Sunlight - Sully swaps to Rikki\nTurn 3: Healing Flame\nTurns 4+: Alpha Strike until Rikki dies\nSocks comes in one last time\nTurn 1: Healing Flame\nTurn 2: Sunlight\nTurns 3+: Alpha Strike and Healing Flame on cooldown until Socks is dead\n",
-		["name"] = "Sully \"The Pickle\" McLeary",
-		["tags"] = {
-			"211513P", -- [1]
-			"121B1G9", -- [2]
-			"11261CI", -- [3]
-		},
-		["teamID"] = "team:53",
-		["targets"] = {
-			71929, -- [1]
-		},
-		["groupID"] = "group:11",
 	},
 	["team:89"] = {
 		["pets"] = {
@@ -4730,24 +4548,27 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:369"] = {
+	["team:378"] = {
 		["pets"] = {
-			"BattlePet-0-000012B99CF7", -- [1]
-			"BattlePet-0-000012B66DA8", -- [2]
-			"BattlePet-0-000012B118A8", -- [3]
+			"BattlePet-0-000012B485C2", -- [1]
+			"random:7", -- [2]
+			"random:7", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/8741\n\nStrategy added by Mampii#2342\nThe only way this strategy can fail is due to missing with Alpha Strike too many times. Enjoy Folks ;)\n\nScript thanks to wist\n\n\nTurns 1-2: Slow and Steady\nTurn 3: Scratch\nLil' Spirit Guide Dies\nUndead: Nature's Touch\nQuillino comes in\nTurn 5+6: Scratch until Poro dies\nBring in your Teroclaw Hatchling\nTurn 7: Nature's Ward\nTurn 8+9: Alpha Strike until Quillino HP <618\nTurns 10-11: Ravage\nNote: If Quillino kills Teroclaw Hatchling finish off with Sentinel's Companion using Dark Talon\nFethyr comes in\nTurn 12: Nature's Ward\nTurn 13: Alpha Strike until Teroclaw Hatchling dies\nBring in your Sentinel's Companion\nTurn 14: Soulrush\nTurn 15/17: Dark Talon\nNote: If Fethyr casts Lift off use Ethereal\nYOU WIN !!!\n",
-		["name"] = "Training with Bredda (Flyer)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/642\n\nScript thanks to Taizun\n\nTurn 1: Whirlpool\nTurn 2: Water Jet\nTurns 3+4: Dive\nTurns 5+: Water Jet until Sunny dies\nRoots comes in\nTurn 1: Whirlpool\nTurn 2: Water Jet\nTurns 3+4: Dive\nTurns 5+: Water Jet until Roots dies\nBeaky comes in\nTurn 1: Whirlpool\nTurns 2+: Water Jet until your Water Spirit dies\n\nBring in your other level 25 Elemental and kill Beaky with standard attacks.\n",
+		["name"] = "Training with Durian (Elemental)",
 		["tags"] = {
-			"22272CK", -- [1]
-			"22271C8", -- [2]
-			"22281GV", -- [3]
+			"1219R4", -- [1]
+			"ZR7", -- [2]
+			"ZR7", -- [3]
 		},
-		["teamID"] = "team:369",
-		["groupID"] = "group:12",
+		["teamID"] = "team:378",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			99077, -- [1]
+			99035, -- [1]
 		},
+		["groupID"] = "group:12",
 	},
 	["team:282"] = {
 		["pets"] = {
@@ -4820,29 +4641,32 @@ Rematch5SavedTeams = {
 			"ZR6", -- [3]
 		},
 		["teamID"] = "team:331",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105455, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			105455, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
-	["team:254"] = {
+	["team:386"] = {
 		["pets"] = {
-			"BattlePet-0-000012B11883", -- [1]
-			"BattlePet-0-000012B11899", -- [2]
-			"BattlePet-0-0000080D00C4", -- [3]
+			"BattlePet-0-000012BF63D8", -- [1]
+			"BattlePet-0-000012C4AA56", -- [2]
+			"random:5", -- [3]
 		},
-		["notes"] = "Strategy added by isthevao#1164\nStrategy posted on [url=https://www.wowhead.com/npc=204934/trainer-orlogg#comments:id=5600054]WoWhead[/url] by DraikoGinger.\n\nPrio 1: Burrow if Lifft used Dive\nPrio 2: Woodchipper if fighting Brul'dan without the bleeding debuff\nPrio 3: Spirit Claws\nBring in your Plaguelouse Larva\nPrio 1: Plague Breath\nBring in your Orphaned Marsuul\nPrio 1: Feign Death if Swole can use Headbutt\nPrio 2: Burrow if Swole used Dive\nBite\n",
-		["name"] = "Do You Even Train? (Critter)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/514\n\nTurns 1+2: Dive\nTurns 3+: Use Dive on cooldown and otherwise Absorb until Trixy is dead\nGlobs comes in\nTurn 1: Swap to your Rabbit\nTurn 2: Dodge\nTurn 3: Flurry\nTurn 4: Flurry\nTurns 5+6: Burrow\nTurn 7: Dodge\nTurn 8: Flurry\nTurn 9: Flurry - Globs dies\nNightmare Sprout comes in\nTurns 1+: Flurry until your Rabbit dies\nBring back your snail\nTurn 1: Shell Shield\nTurn 2: Absorb\nTurn 3: Absorb\nTurns 4+5: Dive\n\nIf the Nightmare Sprout is not dead, yet, keep Shell Shield active and use Dive or Absorb when ready.\n",
+		["name"] = "Dealing with Satyrs (Critter)",
 		["tags"] = {
-			"22152UC", -- [1]
-			"20092SA", -- [2]
-			"1119224", -- [3]
+			"2219HO", -- [1]
+			"221BMP", -- [2]
+			"ZR5", -- [3]
 		},
-		["teamID"] = "team:254",
-		["groupID"] = "group:none",
+		["teamID"] = "team:386",
+		["groupID"] = "group:12",
+		["targets"] = {
+			104970, -- [1]
+		},
 	},
 	["team:362"] = {
 		["pets"] = {
@@ -4858,32 +4682,35 @@ Rematch5SavedTeams = {
 			"ZRA", -- [3]
 		},
 		["teamID"] = "team:362",
-		["groupID"] = "group:12",
-		["targets"] = {
-			104553, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 20,
 		},
-	},
-	["team:126"] = {
-		["pets"] = {
-			"BattlePet-0-000012B99CF2", -- [1]
-			"BattlePet-0-000012BC0A5A", -- [2]
-			"BattlePet-0-000006E4C794", -- [3]
-		},
-		["notes"] = "Strategy added by Kirandji\nIt depends on the backliners if its a onepetstrat or not. Against magics this setup strat is a onepetter, the mech pandaren will punch the undead and the magics. Thanks & credits to Shaka 4 the script\n\nTurn 1: Fire Shield on CD\nTurn 2: Lightning Shield on cd\nTurn 3: Arcane Blast as spammer\nTurn 4: it depends on the back, if no magics tron wont make it alone. Bring in the dragonling.\nTurn 5: Decoy\nTurn 6: Thunderbolt\nTurn 7: Breath\n",
-		["name"] = "Crypt Fiend",
-		["tags"] = {
-			"112620U", -- [1]
-			"1115QC", -- [2]
-			"11131TC", -- [3]
-		},
-		["teamID"] = "team:126",
 		["targets"] = {
-			150911, -- [1]
+			104553, -- [1]
 		},
-		["groupID"] = "group:8",
+		["groupID"] = "group:12",
+	},
+	["team:57"] = {
+		["pets"] = {
+			"BattlePet-0-000012B484E9", -- [1]
+			"BattlePet-0-000012B146CB", -- [2]
+			"random:6", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5969\n\nStrategy added by nurkka\nThird pet not brought in. I used a Magic pet to assure it would stay alive from the wave attacks.\n\nTurn 1: Shadow Shock\nTurn 2: Curse of Doom\nTurn 3: Haunt\nBring in your Ikky\nTurns 1-3: Flock\n",
+		["name"] = "Prince Wiggletail",
+		["tags"] = {
+			"221616M", -- [1]
+			"00181FS", -- [2]
+			"ZR6", -- [3]
+		},
+		["teamID"] = "team:57",
+		["targets"] = {
+			154910, -- [1]
+		},
+		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:94"] = {
 		["pets"] = {
@@ -4904,46 +4731,103 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:314"] = {
+	["team:218"] = {
 		["pets"] = {
-			"BattlePet-0-000012C2DA6C", -- [1]
-			"BattlePet-0-000012C56B66", -- [2]
-			"random:9", -- [3]
+			"BattlePet-0-000012B99CF2", -- [1]
+			"BattlePet-0-000012B99C8C", -- [2]
+			"BattlePet-0-000012B5CC26", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16110\n\nStrategy added by Connxo\n100% Success rate I've tried it 4 times not even close to failing never had to use a third aquatic pet. Y'all are welcome.\n\nScript thanks to Alayea\n\nTurn 1: Expunge\nTurn 2: Phase Shift\nTurn 3: Ooze Touch\nTurn 4: Ooze Touch\nTurn 5: Expunge\nBeauty Dies. Conviction comes in\nTurn 6: Ooze Touch\nTurn 7: Phase Shift it is okay if your pet dies here :)\nTurn 8: Ooze Touch if your Slimy Otter died bring in Magical Crawdad and use Wish\nPriority 1: Wish on CD.\nPriority 2: Renewing Mists at 1 round left on previous Renewing Mist buff.\nPriority 3: Snap as filler. GG\n",
-		["name"] = "The Master of Pets (Aquatic)",
+		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Rabid Strike\nTurn 2: Corpse Explosion\nBring in your Magma Rageling\nTurn 1: Fire Shield\n",
+		["name"] = "Unit 35",
 		["tags"] = {
-			"11272M5", -- [1]
-			"112644", -- [2]
-			"ZR9", -- [3]
+			"212620U", -- [1]
+			"21142D2", -- [2]
+			"111836P", -- [3]
 		},
-		["teamID"] = "team:314",
-		["groupID"] = "group:12",
+		["teamID"] = "team:218",
 		["targets"] = {
-			105250, -- [1]
+			154927, -- [1]
 		},
+		["groupID"] = "group:none",
 		["preferences"] = {
-			["minXP"] = 1,
+			["minXP"] = 25,
 		},
 	},
-	["team:408"] = {
+	["team:53"] = {
 		["pets"] = {
-			"BattlePet-0-000012BEE3D5", -- [1]
-			"BattlePet-0-000012B485C2", -- [2]
-			"random:7", -- [3]
+			"BattlePet-0-000012C56AF4", -- [1]
+			"BattlePet-0-000012B5CE8E", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/604\n\nScript thanks to Wist\n\nTurn 1: Rip\nTurn 2: Lightning Shield\nTurn 3: Blood in the Water - both active pets die\nBring in your Pandaren Water Spirit - Rocket comes in\nTurns 1+: Water Jet until Rocket is dead\nMarshmallow comes in\nTurn 1: Geyser\nTurns 2+: Water Jet until your Water Spirit dies\nBring in your third Elemental\nTurns 1+: Use standard attacks to kill Marshmallow, he should be almost dead anyway.\n",
-		["name"] = "Fight Night: Tiffany Nelson (Elemental)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/352\n\nTurn 1: Ice Tomb\nTurn 2: Ice Barrier\nTurn 3: Pass\nTurn 4: Pounce - Monte comes in\nTurn 5: Pounce\nTurn 6: Swap to your Elekk Plushie - it will take the damage from Burrow\nTurn 7: Pass\nTurn 8: Pass\nTurn 9: Itchin' for a Stitchin'\nTurn 10: Pounce\nTurn 11: Pounce - Monte dies\nSocks comes back in<\nTurn 1: Ice Tomb\nTurn 2: Ice Barrier - Mr. Bigglesworth dies\nBring in your Firewing\nTurn 1: Pass - Socks gets stunned\nTurn 2: Sunlight - Sully swaps to Rikki\nTurn 3: Healing Flame\nTurns 4+: Alpha Strike until Rikki dies\nSocks comes in one last time\nTurn 1: Healing Flame\nTurn 2: Sunlight\nTurns 3+: Alpha Strike and Healing Flame on cooldown until Socks is dead\n",
+		["name"] = "Sully \"The Pickle\" McLeary",
 		["tags"] = {
-			"122314R", -- [1]
-			"1129R4", -- [2]
-			"ZR7", -- [3]
+			"211513P", -- [1]
+			"121B1G9", -- [2]
+			"11261CI", -- [3]
 		},
-		["teamID"] = "team:408",
-		["groupID"] = "group:12",
+		["teamID"] = "team:53",
 		["targets"] = {
-			97804, -- [1]
+			71929, -- [1]
 		},
+		["groupID"] = "group:11",
+	},
+	["team:276"] = {
+		["pets"] = {
+			"BattlePet-0-000012B48707", -- [1]
+			0, -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1666\n\nStrategy added by sistercoyote\nBased on Jackobs' (http://www.wowhead.com/npc=66466/stone-cold-trixxy#comments) Nexus Whelpling strat from Wowhead. She makes an absolute mess of this trio of pets.\n\nIf Tinygos uses Surge of Power before Round 3, there is a slender chance Nexus Whelpling may die, so another Dragonkin with Magic abilities (e.g., Emerald Proto-Whelp) can also be useful for backup (replace Elekk or Leveling Pet depending on what you're doing). Normally, though, Nexus Whelpling is sufficient.\n\nBring in your Nexus Whelpling\nTurn 1: Arcane Storm\nTurn 2: Frost Breath\nTurn 3+: Frost Breath until Tinygos does Surge of Power\nIf you're leveling as well as Adventuring, make sure you don't kill Tinygos before his Surge of Power\nBring in your Level Pet\nBring in your Nexus Whelpling\nTurn 1: Mana Surge\nTurn 7: Clean up with Frost Breath if there's anything left\n",
+		["name"] = "Stone Cold Trixxy",
+		["tags"] = {
+			"222814D", -- [1]
+			"ZL", -- [2]
+			"00061CI", -- [3]
+		},
+		["teamID"] = "team:276",
+		["preferences"] = {
+			["minXP"] = 5,
+		},
+		["targets"] = {
+			66466, -- [1]
+		},
+		["groupID"] = "group:11",
+	},
+	["team:254"] = {
+		["pets"] = {
+			"BattlePet-0-000012B11883", -- [1]
+			"BattlePet-0-000012B11899", -- [2]
+			"BattlePet-0-0000080D00C4", -- [3]
+		},
+		["notes"] = "Strategy added by isthevao#1164\nStrategy posted on [url=https://www.wowhead.com/npc=204934/trainer-orlogg#comments:id=5600054]WoWhead[/url] by DraikoGinger.\n\nPrio 1: Burrow if Lifft used Dive\nPrio 2: Woodchipper if fighting Brul'dan without the bleeding debuff\nPrio 3: Spirit Claws\nBring in your Plaguelouse Larva\nPrio 1: Plague Breath\nBring in your Orphaned Marsuul\nPrio 1: Feign Death if Swole can use Headbutt\nPrio 2: Burrow if Swole used Dive\nBite\n",
+		["name"] = "Do You Even Train? (Critter)",
+		["tags"] = {
+			"22152UC", -- [1]
+			"20092SA", -- [2]
+			"1119224", -- [3]
+		},
+		["teamID"] = "team:254",
+		["groupID"] = "group:none",
+	},
+	["team:166"] = {
+		["pets"] = {
+			"BattlePet-0-000012B99CF2", -- [1]
+			"BattlePet-0-000007C1D04D", -- [2]
+			"BattlePet-0-000012B99CFC", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6224\n\nStrategy added by Lowlander#2941\nTurn 1: Fire Shield\nTurn 2: Lightning Shield\nTurn 3+: Arcane Blast (Keep spamming this till all are dead)\n",
+		["name"] = "Deviate Flapper",
+		["tags"] = {
+			"112620U", -- [1]
+			"11141IO", -- [2]
+			"11132G6", -- [3]
+		},
+		["teamID"] = "team:166",
+		["targets"] = {
+			116787, -- [1]
+		},
+		["groupID"] = "group:7",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
@@ -4962,69 +4846,12 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:207",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			119409, -- [1]
 		},
 		["groupID"] = "group:4",
-	},
-	["team:250"] = {
-		["pets"] = {
-			"BattlePet-0-000012B01EED", -- [1]
-			"BattlePet-0-000012B01EEC", -- [2]
-			"BattlePet-0-000006E4C79F", -- [3]
-		},
-		["notes"] = "Strategy added by Anesthetize\nPrio 1: Soulrush\nPrio 2: Spiritfire Bolt\nThis two abilities should kill Bassalt and Clawz.\nOnes Murrey is in use Reflective Shield and same priorities until Fragment of Desire is dead\nBlightbreath comes in \nPrio 1 : Toxic Smoke\nPrio 2: Slime\n",
-		["name"] = "To a Land Down Under (Undead)",
-		["tags"] = {
-			"10171IP", -- [1]
-			"11191IR", -- [2]
-			"22071TD", -- [3]
-		},
-		["teamID"] = "team:250",
-		["groupID"] = "group:none",
-	},
-	["team:166"] = {
-		["pets"] = {
-			"BattlePet-0-000012B99CF2", -- [1]
-			"BattlePet-0-000007C1D04D", -- [2]
-			"BattlePet-0-000012B99CFC", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6224\n\nStrategy added by Lowlander#2941\nTurn 1: Fire Shield\nTurn 2: Lightning Shield\nTurn 3+: Arcane Blast (Keep spamming this till all are dead)\n",
-		["name"] = "Deviate Flapper",
-		["tags"] = {
-			"112620U", -- [1]
-			"11141IO", -- [2]
-			"11132G6", -- [3]
-		},
-		["teamID"] = "team:166",
 		["preferences"] = {
 			["minXP"] = 25,
-		},
-		["targets"] = {
-			116787, -- [1]
-		},
-		["groupID"] = "group:7",
-	},
-	["team:303"] = {
-		["pets"] = {
-			"BattlePet-0-000012B01EED", -- [1]
-			"BattlePet-0-000012B01EEF", -- [2]
-			"BattlePet-0-000012B675D0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3904\n\nStrategy added by Aravaslac#1688\nStrategy based on a comment from Felina with an adjustment by  Nolapete#1326 here (http://www.wow-petguide.com/index.php?Strategy=853). This fight is very RNG dependent due to the stuns, so good luck!\n\nScript thanks to isthevao\n\nTurns 1+: Seethe until Gusteau dies\nRemy comes in. From this point on, it's OK if your Fragment of Anger dies\nTurns 1+: Soulrush and Spiritfire Beam on CD, otherwise Seethe until your Fragment of Anger dies\nBring in your Fossilized Hatchling\nTurns 1+: If you feel Remy is about to use Survival, Ancient Blessing and BONESTORM. Otherwise, Claw until Remy dies\nDinner comes in\nTurn 1: Claw until Fossilized Hatchling dies\nBring in your Scourged Whelpling\nTurn 1: Call Darkness\nTurn 2+: Tail Sweep\n",
-		["name"] = "Chopped (Undead)",
-		["tags"] = {
-			"21171IP", -- [1]
-			"11288A", -- [2]
-			"2108GQ", -- [3]
-		},
-		["teamID"] = "team:303",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105674, -- [1]
 		},
 	},
 	["team:141"] = {
@@ -5046,109 +4873,101 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:415"] = {
+	["team:375"] = {
 		["pets"] = {
-			"BattlePet-0-000012B528FE", -- [1]
-			"BattlePet-0-000012C222D9", -- [2]
+			"BattlePet-0-000012C222D9", -- [1]
+			"BattlePet-0-000012BA9540", -- [2]
 			"random:8", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/782\n\nScript thanks to Lochru\n\nTurn 1: Prowl\nTurn 2: Moonfire - Coach dies\nSir Murkeston comes back in\nTurns 1+: Spirit Claws until Xu-Fu dies (-.-)\nBring in your Feline Familiar - Greatest Foe should be in at this point\nTurn 1: Prowl\nTurn 2: Call Darkness - Greatest Foe dies\nSir Murkeston comes back in\nTurns 1+: Pounce until Sir Murkeston is dead\n",
-		["name"] = "Fight Night: Sir Galveston (Beast)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/703\n\nScript thanks to wist and Taizun\n\nTurn 1: Prowl\nTurn 2: Call Darkness\nTurn 3: Swap to your River Calf\nTurns 4+: Water Jet until Sunny is dead\nRoots comes in\nTurn 1: Stoneskin\nTurns 2+: Water Jet until River Calf dies\nBring back your Feline Familiar\nTurns 1+: Onyx Bite until Roots is dead\nBeaky comes in\nTurn 1: Prowl\nTurns 2+: Onyx Bite until Beaky is dead\n",
+		["name"] = "Training with Durian (Beast)",
 		["tags"] = {
-			"122417I", -- [1]
-			"222A9V", -- [2]
+			"122A9V", -- [1]
+			"22191H3", -- [2]
 			"ZR8", -- [3]
 		},
-		["teamID"] = "team:415",
+		["teamID"] = "team:375",
 		["groupID"] = "group:12",
 		["targets"] = {
-			99182, -- [1]
+			99035, -- [1]
 		},
+	},
+	["team:108"] = {
+		["pets"] = {
+			"BattlePet-0-000012B146C7", -- [1]
+			0, -- [2]
+			"BattlePet-0-000012B482D2", -- [3]
+		},
+		["notes"] = "Strategy added by Tinlar#1408\nThank you to shpungout for the suggestion on how to streamline the strategy\n\nTurn 1: Blistering Cold\nTurn 2: Chop\nTurn 3: Swap to your Level Pet\nTurn 4: Swap to your Zandalari Anklerender\nTurn 5: Black Claw\nTurns 6-7: Hunting Party\n",
+		["name"] = "Unit 17",
+		["tags"] = {
+			"11031TB", -- [1]
+			"ZL", -- [2]
+			"202A15R", -- [3]
+		},
+		["teamID"] = "team:108",
+		["targets"] = {
+			154929, -- [1]
+		},
+		["groupID"] = "group:none",
+	},
+	["team:25"] = {
+		["pets"] = {
+			"BattlePet-0-000012B146C7", -- [1]
+			"BattlePet-0-000012B482D1", -- [2]
+			0, -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/11420\n\nStrategy added by Xerxes\nAny pet with Black Claw should work in slot 2.\n\nThe first attack from the enemy pet has a small chance to crit and drop Boneshard to 1 HP. In this case, restart the fight.\n\nYour level pet can have less than 700 HP.\nThe last hit will do about 400 damage, but I've seen it crit for around 700 HP.\n\nTD Script by Yolo (https://www.wow-petguide.com/index.php?user=11440)\n\nEnjoy :)\n\nTurn 1: Blistering Cold\nBoneshard should be roughly half HP. If he's 1 HP, restart the fight.\nTurn 2: Chop\nBoneshard should be 20 HP\nTurn 3: BONESTORM\nTurn 4: Blistering Cold\nBring in your Zandalari Kneebiter\nTurn 5: Black Claw\nTurn 6: Pass\nTurn 7: Pass\n",
+		["name"] = "Sewer Creeper",
+		["tags"] = {
+			"11231TB", -- [1]
+			"020514S", -- [2]
+			"ZL", -- [3]
+		},
+		["teamID"] = "team:25",
+		["targets"] = {
+			175781, -- [1]
+		},
+		["groupID"] = "group:none",
 		["preferences"] = {
-			["minXP"] = 25,
+			["minHP"] = 701,
+			["minXP"] = 15,
 		},
 	},
-	["team:364"] = {
+	["team:303"] = {
 		["pets"] = {
-			"BattlePet-0-000012B66C49", -- [1]
-			"BattlePet-0-000012C56B66", -- [2]
-			"BattlePet-0-000012B0D350", -- [3]
+			"BattlePet-0-000012B01EED", -- [1]
+			"BattlePet-0-000012B01EEF", -- [2]
+			"BattlePet-0-000012B675D0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4823\n\nStrategy added by Rellyk\nPutting Vert's strategy from the comments up cause it was the only one that worked for me.\n\nScript thanks to Sunshine\n\nEmperor Crab Priority List:\nPriority 1: Keep Shell Shield up\nPriority 2: Healing Wave on CD\nPriority 3: Snap\n\nMagical Crawdad Priority List:\nPriority 1: Use Wish after Quillino uses his blinding ability and then on CD.\nPriority 2: Keep Renewing Mists up\nPriority 3: Snap\n\nSpawn of G'nathus Priority List:\nTurn 1: Lightning Shield\nTurn 2: Paralyzing Shock\nTurn 3: Swallow You Whole until Fethyr dies\n",
-		["name"] = "Training with Bredda (Aquatic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3904\n\nStrategy added by Aravaslac#1688\nStrategy based on a comment from Felina with an adjustment by  Nolapete#1326 here (http://www.wow-petguide.com/index.php?Strategy=853). This fight is very RNG dependent due to the stuns, so good luck!\n\nScript thanks to isthevao\n\nTurns 1+: Seethe until Gusteau dies\nRemy comes in. From this point on, it's OK if your Fragment of Anger dies\nTurns 1+: Soulrush and Spiritfire Beam on CD, otherwise Seethe until your Fragment of Anger dies\nBring in your Fossilized Hatchling\nTurns 1+: If you feel Remy is about to use Survival, Ancient Blessing and BONESTORM. Otherwise, Claw until Remy dies\nDinner comes in\nTurn 1: Claw until Fossilized Hatchling dies\nBring in your Scourged Whelpling\nTurn 1: Call Darkness\nTurn 2+: Tail Sweep\n",
+		["name"] = "Chopped (Undead)",
 		["tags"] = {
-			"1214NA", -- [1]
-			"112644", -- [2]
-			"122A15H", -- [3]
+			"21171IP", -- [1]
+			"11288A", -- [2]
+			"2108GQ", -- [3]
 		},
-		["teamID"] = "team:364",
+		["teamID"] = "team:303",
 		["groupID"] = "group:12",
 		["targets"] = {
-			99077, -- [1]
+			105674, -- [1]
 		},
 	},
-	["team:161"] = {
+	["team:250"] = {
 		["pets"] = {
-			"BattlePet-0-000012B66C49", -- [1]
-			"BattlePet-0-000012B66DA8", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000012B01EED", -- [1]
+			"BattlePet-0-000012B01EEC", -- [2]
+			"BattlePet-0-000006E4C79F", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1832\n\nStrategy added by NostrA#2338\nprops to Aranesh for his/her strategy, i just changed the TD Script and Strategy to make Teroclaw viable again\n\nTurn 1: use Whirlpool\nTurn 2: use Surge\nTurn 3: Pass\nTurn 4: use Surge\nTurn 5: use Whirlpool\nTurn 6: use Healing Wave\nTurn 7+: use Surge until Angry Geode dies\nan enemy pet comes in\nTurn 1+: Keep Whirlpool and Healing Wave on cooldown, otherwise use Surge until your Emperor Crab dies\nBring in your Teroclaw Hatchling\nenemy HP < 618: use Ravage\nif the enemy is a Flying Type, you want to use Ravage when the enemy HP is under 406 \nwhen not active: use Nature's Ward\nelse: use Alpha Strike",
-		["name"] = "Angry Geode",
+		["notes"] = "Strategy added by Anesthetize\nPrio 1: Soulrush\nPrio 2: Spiritfire Bolt\nThis two abilities should kill Bassalt and Clawz.\nOnes Murrey is in use Reflective Shield and same priorities until Fragment of Desire is dead\nBlightbreath comes in \nPrio 1 : Toxic Smoke\nPrio 2: Slime\n",
+		["name"] = "To a Land Down Under (Undead)",
 		["tags"] = {
-			"2224NA", -- [1]
-			"22271C8", -- [2]
-			"ZR0", -- [3]
+			"10171IP", -- [1]
+			"11191IR", -- [2]
+			"22071TD", -- [3]
 		},
-		["teamID"] = "team:161",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-		["targets"] = {
-			119342, -- [1]
-		},
-		["groupID"] = "group:4",
-	},
-	["team:365"] = {
-		["pets"] = {
-			"BattlePet-0-000012B399CF", -- [1]
-			"BattlePet-0-000008A86E8A", -- [2]
-			"BattlePet-0-000012C222D9", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/601\n\nScript thanks to Zaphod\n\nTurn 1: Chew\nTurns 2-4: Stampede - Lil’ Spirit Guide dies along with your Summit Kid\nBring in your Cinder Pup\nTurn 1: Crouch\nTurns 2+: Flame Breath until Quillino is dead\nFethyr comes in\nTurn 1: Crouch\nTurns 2+: Flame Breath until your Pup dies\nBring in your Feline Familiar\nTurn 1: Stoneskin\nTurn 2: Prowl\nTurns 3+: Onyx Bite until Fethyr is dead\n",
-		["name"] = "Training with Bredda (Beast)",
-		["tags"] = {
-			"2025L7", -- [1]
-			"22041JU", -- [2]
-			"112A9V", -- [3]
-		},
-		["teamID"] = "team:365",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99077, -- [1]
-		},
-	},
-	["team:361"] = {
-		["pets"] = {
-			"BattlePet-0-000012B17368", -- [1]
-			"BattlePet-0-000006E4C796", -- [2]
-			"random:6", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9541\n\nStrategy added by Naina\nScript thanks to Rinoe\n\nTurn 1: Void Nova\nTurn 2: Poison Protocol\nTurn 3: Ooze Touch\nTurn 4: Ooze Touch\nTurn 5: Void Nova\nTurn 6: Ooze Touch\nTurn 7: Ooze Touch\nTurn 8: Poison Protocol\nTurn 9: Void Nova\nTurn 10: Ooze Touch\nBring in your Sanctum Cub\nTurn 11+: Pounce should finish off all three remaing snails",
-		["name"] = "Snail Fight! (Magic)",
-		["tags"] = {
-			"12142OQ", -- [1]
-			"12171T6", -- [2]
-			"ZR6", -- [3]
-		},
-		["teamID"] = "team:361",
-		["groupID"] = "group:12",
-		["targets"] = {
-			104553, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
+		["teamID"] = "team:250",
+		["groupID"] = "group:none",
 	},
 	["team:204"] = {
 		["pets"] = {
@@ -5168,26 +4987,26 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:360"] = {
+	["team:196"] = {
 		["pets"] = {
-			"BattlePet-0-000012B5C607", -- [1]
-			"BattlePet-0-000012B6763C", -- [2]
-			"random:1", -- [3]
+			"BattlePet-0-000012C2DA6F", -- [1]
+			"BattlePet-0-000012BC09D8", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/497\n\nTurn 1: Thrash\nTurn 2: Pass\nTurn 3: Pass\nTurn 4: Mangle\nTurns 5-7: Rampage - Rocklick dies\nSlow Moe comes in\nTurn 1: Mangle\nTurn 2: Thrash\nTurn 3: Thrash (or pass if you got stunned)\nTurns 4+: Rampage - your Runt dies\nBring in your Flayer Youngling\nTurns 1+: Rampage - Slow Moe dies\nSnot comes in\nTurn 1: Rampage continues or Triple Snap\nTurn 2: Rampage continues or Triple Snap\nTurn 3: Deflection\nTurns 4+: Triple Snap until Snot is dead",
-		["name"] = "Snail Fight! (Humanoid)",
+		["notes"] = "Strategy added by kachooman\n5 rounds :D still working\n\nTurn 1: Build Turret\nTurn 2: Swap to your Experiment 13\nTurn 3: Build Turret\nTurn 4: U-238 Rounds\nTurn 5: U-238 Rounds\n",
+		["name"] = "Unbreakable",
 		["tags"] = {
-			"111814E", -- [1]
-			"2227G2", -- [2]
-			"ZR1", -- [3]
+			"020A2KS", -- [1]
+			"10252PK", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:360",
-		["groupID"] = "group:12",
-		["targets"] = {
-			104553, -- [1]
-		},
+		["teamID"] = "team:196",
 		["preferences"] = {
 			["minXP"] = 25,
+		},
+		["groupID"] = "group:none",
+		["targets"] = {
+			141215, -- [1]
 		},
 	},
 	["team:146"] = {
@@ -5204,12 +5023,12 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:146",
-		["targets"] = {
-			161658, -- [1]
-		},
-		["groupID"] = "group:5",
 		["preferences"] = {
 			["minXP"] = 25,
+		},
+		["groupID"] = "group:5",
+		["targets"] = {
+			161658, -- [1]
 		},
 	},
 	["team:155"] = {
@@ -5226,36 +5045,29 @@ Rematch5SavedTeams = {
 			"11162RJ", -- [3]
 		},
 		["teamID"] = "team:155",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			161649, -- [1]
 		},
 		["groupID"] = "group:5",
-	},
-	["team:222"] = {
-		["pets"] = {
-			"BattlePet-0-00000D450505", -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13226\n\nStrategy added by WildCard\nThe same team can be used for all < 21 trainers.\nFull TD Script for them is in this comment (https://wow-petguide.com/Comment/95382).\n\nTurn 1: Swap to your Level Pet #2\nTurn 2: Swap to your Level Pet #3\nTurn 3: Swap to your Celestial Dragon\nPriority 1: Ancient Blessing if health < 70%\nPriority 2: Moonfire\nPriority 3: Flamethrower\n",
-		["name"] = "Lydia Accoste",
-		["tags"] = {
-			"11167V", -- [1]
-			"ZL", -- [2]
-			"ZL", -- [3]
-		},
-		["teamID"] = "team:222",
-		["groupID"] = "group:11",
-		["targets"] = {
-			66522, -- [1]
-		},
 		["preferences"] = {
-			["minHP"] = 388,
 			["minXP"] = 1,
 		},
+	},
+	["team:256"] = {
+		["pets"] = {
+			"BattlePet-0-000006E4C767", -- [1]
+			"BattlePet-0-000006E4C753", -- [2]
+			"BattlePet-0-000012B146D0", -- [3]
+		},
+		["notes"] = "Strategy added by Rockmar#1116\nTurn 1: Call Blizzard\nTurn 2: Bash\nTurn 3: Bite\nClawz comes in\nTurn 1: Bite\nTurn 2: Call Blizzard\nTurn 3: Swap to your Baby Winston\nTurn 4: Barrier Projector\nTurn 5: Logic\nBassalt comes in\nTurn 6: Body Slam\nTurn 7: Logic\nTurn 8: Body Slam\nMurrey comes in\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up\nTurn 4: Wind-Up\nTurn 5: Wind-Up\n",
+		["name"] = "To a Land Down Under (2)",
+		["tags"] = {
+			"11276A", -- [1]
+			"22171P4", -- [2]
+			"11181BB", -- [3]
+		},
+		["teamID"] = "team:256",
+		["groupID"] = "group:none",
 	},
 	["team:153"] = {
 		["pets"] = {
@@ -5314,26 +5126,27 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:7",
 	},
-	["team:358"] = {
+	["team:130"] = {
 		["pets"] = {
-			"BattlePet-0-000006E4C780", -- [1]
-			"BattlePet-0-000012B96E94", -- [2]
-			"random:7", -- [3]
+			"BattlePet-0-000012B99CF8", -- [1]
+			"BattlePet-0-000012B5CDB5", -- [2]
+			0, -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/7036\n\nStrategy added by Beornwulf#2324\nScript thanks to wist\n\nPriority 1: Howl when Burrow is about to come off cooldown\nPriority 2: Burrow\nPriority 3: Thrash\nBring in your Stout Alemental\nPriority 1: Bubble if Snot is underwater\nPriority 2: Barrel Toss",
-		["name"] = "Snail Fight! (Elemental)",
+		["notes"] = "Strategy added by Kalagren\n2nd pet must be Obsidian Warwhelp.Level pet crit safe damage = 247 or more HP.\n\nPet Bombling comes in\nTurn 1: Minefield\nTurn 2: Explode\nBring in your Obsidian Warwhelp\nTurn 3: Time Bomb\nTurn 4: Flame Breath\nTurn 5: Armageddon both Cockroach and Cat die\nBring in your Level Pet\nTurn 6: Pass and Level Pet takes 164 non-critical strike critter damage\nChicken dies to Time Bomb\n",
+		["name"] = "You Have to Start Somewhere",
 		["tags"] = {
-			"21277K", -- [1]
-			"20241FE", -- [2]
-			"ZR7", -- [3]
+			"01292L", -- [1]
+			"1223455", -- [2]
+			"ZL", -- [3]
 		},
-		["teamID"] = "team:358",
-		["groupID"] = "group:12",
+		["teamID"] = "team:130",
 		["targets"] = {
-			104553, -- [1]
+			197350, -- [1]
 		},
+		["groupID"] = "group:none",
 		["preferences"] = {
-			["minXP"] = 25,
+			["minHP"] = 165,
+			["minXP"] = 2,
 		},
 	},
 	["team:223"] = {
@@ -5355,108 +5168,106 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:341"] = {
+	["team:62"] = {
 		["pets"] = {
-			"BattlePet-0-000012B822C1", -- [1]
-			"BattlePet-0-000012B67649", -- [2]
-			"random:6", -- [3]
+			"BattlePet-0-000012B146CB", -- [1]
+			"BattlePet-0-000012B48707", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2765\n\nStrategy added by DragonsAfterDark\nUpdated 11/17/20 with a new pet in slot #1\n\nTurn 1: Chaos Beam\nTurn 2: Chaos Beam\nTurn 3: Chaos Beam\nTurn 4: Chaos Beam\nWumpas comes in\nTurn 5: Life Exchange\nTurn 6: Nightmare or Pass if Stunned\nTurn 7: Chaos Beam or Nightmare\nTurn 8: Chaos Beam\nTurn 9: Chaos Beam\nTurn 10: Chaos Beam\nBaeloth comes in\nTurn 1+2: Pass \nTurn 3: Chaos Beam (Doesn't matter if it hits, but you might as well try)\nBring in your Enchanted Pen\nPriority 1: Evanescence when Baeloth's CD on Crystal Prison is up\nPriority 2: Apply Forboding Curse and reapply when there is 1 round left\nPriority 3: Quills all else\n",
-		["name"] = "My Beast's Bidding (Magic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5567\n\nStrategy added by Lazey\n*** 9.0.2 approved '''\n\nThis Manta Ray has two Beast attacks and an empowered Flyby X which will increase the damage your pet takes by 25% for 5 rounds (classic Flyby does for 3 rounds).\n\nI am using a Black Claw + Swarm ability pet in the first slot to buff attacks of my Dragonkin. The script includes Flock and Swarm because when these 8.2 pet battles go live, the Aquatic pet Chitterspine Skitterling will be available as a wild catch in Nazjatar and it has Black Claw and Swarm. Please do not use Hunting Party pets.\n\nThe Skitterling will take more damage from Flyby X so there's a chance it will die 1 round earlier than Flying pets and you can benefit of 2 rounds Shattered Defenses and Black Claw.\n\nTurn 1: Black Claw\nTurn 2+: Flock / Swarm until your pet dies. (When it does without applying Shattered Defenses, please Forfeit, Revive pets & Restart.)\n\nBring in your Nexus Whelpling\nTurn 1: Arcane Storm\nTurn 2-3: Mana Surge\nWhen your Dragon dies without killing Silence, bring in your third pet\nAny standard attack will finish the fight\n",
+		["name"] = "Silence",
 		["tags"] = {
-			"11282OK", -- [1]
-			"111B1L5", -- [2]
-			"ZR6", -- [3]
+			"01181FS", -- [1]
+			"022814D", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:341",
+		["teamID"] = "team:62",
+		["targets"] = {
+			154912, -- [1]
+		},
+		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+	},
+	["team:222"] = {
+		["pets"] = {
+			"BattlePet-0-00000D450505", -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13226\n\nStrategy added by WildCard\nThe same team can be used for all < 21 trainers.\nFull TD Script for them is in this comment (https://wow-petguide.com/Comment/95382).\n\nTurn 1: Swap to your Level Pet #2\nTurn 2: Swap to your Level Pet #3\nTurn 3: Swap to your Celestial Dragon\nPriority 1: Ancient Blessing if health < 70%\nPriority 2: Moonfire\nPriority 3: Flamethrower\n",
+		["name"] = "Lydia Accoste",
+		["tags"] = {
+			"11167V", -- [1]
+			"ZL", -- [2]
+			"ZL", -- [3]
+		},
+		["teamID"] = "team:222",
+		["preferences"] = {
+			["minHP"] = 388,
+			["minXP"] = 1,
+		},
+		["targets"] = {
+			66522, -- [1]
+		},
+		["groupID"] = "group:11",
+	},
+	["team:113"] = {
+		["pets"] = {
+			"BattlePet-0-000012C60028", -- [1]
+			"BattlePet-0-000012B99C98", -- [2]
+			"BattlePet-0-000012B608F8", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4203\n\nStrategy added by Trog\nhttps://www.youtube.com/watch?v=eij4P0pAIb8&t=1787s\n\nTurn 1: Celestial Blessing\nTurn 2: Fire Shield\nTurn 3: Volcano\nTurn 4: Flamethrower, repeat until dead\nTurn 5: Swap to your Fel Flame (enemy is likely dead by now)\nTurn 6: Immolate\nTurn 7: Conflagrate\nTurn 8: Burn\n",
+		["name"] = "Pulverizer Bot Mk 6001",
+		["tags"] = {
+			"020818O", -- [1]
+			"12141T3", -- [2]
+			"1116G7", -- [3]
+		},
+		["teamID"] = "team:113",
+		["targets"] = {
+			145988, -- [1]
+		},
+		["groupID"] = "group:6",
+	},
+	["team:338"] = {
+		["pets"] = {
+			"BattlePet-0-000012B67EA7", -- [1]
+			"BattlePet-0-000012C649B3", -- [2]
+			"BattlePet-0-000012B01E78", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18024\n\nStrategy added by Ophilla#1123\nTurn 1: Flyby\nTurn 2: Call Lightning\nTurn 3-7: Slicing Wind until Tiny Twister is dead.\nBring in your Withering Creeper\nTurn 8-11: Toxic Smoke until Wumpas dies.\nBaeloth comes in\nTurn 12: Smoke Bomb\nTurn 13-14: Toxic Smoke until Withering Creeper dies\nBring in your Primal Stormling\nTurn 15: Call Lightning\nTurn 16: If Baeloth is still alive, Slicing Wind until it dies\n\n",
+		["name"] = "My Beast's Bidding (Elemental)",
+		["tags"] = {
+			"1126DT", -- [1]
+			"01232U7", -- [2]
+			"202838K", -- [3]
+		},
+		["teamID"] = "team:338",
 		["groupID"] = "group:12",
 		["targets"] = {
 			98270, -- [1]
 		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 	},
-	["team:351"] = {
+	["team:420"] = {
 		["pets"] = {
-			"BattlePet-0-000012D0B39C", -- [1]
-			"BattlePet-0-000012B17368", -- [2]
-			"BattlePet-0-000007C1D04D", -- [3]
+			"BattlePet-0-000006E4C775", -- [1]
+			"BattlePet-0-000012B118E8", -- [2]
+			"BattlePet-0-000012B01DE0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14194\n\nStrategy added by Phoenixen#1410\nMaking strats and taking names. One shot for me, but RNG likely.\n\nScript thanks to Malhado\n\nTurn 1: Enchanted Broom - Wind-Up\nTurn 2: Sandstorm\nTurn 3: Wind-Up\nTurn 4: Batter til Gulp dies\nTurn 5: Wind-Up\nTurn 6: Wind-Up, Enchanted Broom dies\nTurn 7: Anomalus - Poison Protocol\nTurn 8: Corrosion - Egcellent feigns, Red Wire comes out\nToxic Fumes\nCorrosion, Anomalus dies\nAbyssius - Flamethrower, Red Wire dies and Egcellent comes in\nI used Immolation, but Flamethrower might be better here.\nMeteor Strike\nEgcellent Should die here, but if not, spam Flamethrower til it dies\n",
-		["name"] = "Tiny Poacher, Tiny Animals (Magic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3277\n\nStrategy added by DragonsAfterDark\nTurn 1: Call Blizzard -- Sir Murkeston uses Falling Murloc & is stunned\nTurn 2: Ice Lance -- This will hit Coach as it comes in from the stun swap\nTurn 3: Ice Tomb -- Coach uses Lift-Off\nTurn 4: Ice Lance -- Lift-Off comes down \nTurn 5: Ice Lance -- Ice Tomb hits & Coach dies\nTurn 6: Ice Lance -- Sir Murkeston uses Falling Murloc & Father Winter's Helper dies\n\nBring in your Rotten Little Helper\nTurn 1: Ice Tomb -- Applies to Greatest Foe\nTurn 2: Ice Lance -- Greatest Foe uses Darkflame\nTurn 3: Ice Lance -- Greatest Foe uses Healing Flame & Ice Tomb drops\nTurn 4: Call Blizzard -- This will hit Sir Murkeston as he comes in from the stun swap\nTurn 5: Ice Lance -- Greatest Foe is swapped in from Righteous Inspiration and dies\nTurn 6: Ice Lance -- Sir Murkeston dies\n\nBring in your Winter's Little Helper\nIf someone dies early from a crit, you may need the Winter's Little Helper to continue the steps wherever it left off in the strat\n",
+		["name"] = "Fight Night: Sir Galveston (Humanoid)",
 		["tags"] = {
-			"21256L", -- [1]
-			"21142OQ", -- [2]
-			"11241IO", -- [3]
+			"21133N", -- [1]
+			"22241A5", -- [2]
+			"21133O", -- [3]
 		},
-		["teamID"] = "team:351",
+		["teamID"] = "team:420",
 		["groupID"] = "group:12",
 		["targets"] = {
-			99150, -- [1]
-		},
-	},
-	["team:350"] = {
-		["pets"] = {
-			"BattlePet-0-000008968258", -- [1]
-			"BattlePet-0-000012B5C607", -- [2]
-			"random:1", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/579\n\nTurn 1: Deflection\nTurn 2: Sandstorm\nTurn 3: Crush\nTurn 4: Crush\nTurn 5: Crush\nTurn 6: Deflection\nTurns 7+: Crush until Gulp is dead\nEgcellent comes in\nTurn 1: Sandstorm\nTurns 2+: Crush until Egcellent feigns death\nRed Wire comes in\nTurn 1: Deflection\nTurns 2+: Crush until your Idol dies\nBring in your Kun-Lai Runt\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurn 3: Frost Shock - Egcellent comes back and is hit by this\nTurns 4+: Thrash until Egcellent is dead (or feigns death again)\nRed Wire comes back in\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurns 3+: Thrash if necessary until you're done\n",
-		["name"] = "Tiny Poacher, Tiny Animals (Humanoid)",
-		["tags"] = {
-			"1116143", -- [1]
-			"122814E", -- [2]
-			"ZR1", -- [3]
-		},
-		["teamID"] = "team:350",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99150, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-	},
-	["team:329"] = {
-		["pets"] = {
-			"BattlePet-0-000012B99CF7", -- [1]
-			"BattlePet-0-000012B5C2FF", -- [2]
-			"random:3", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9107\n\nStrategy added by DragonsAfterDark\nTurn 1: Slow and Steady\nTurn 2: Slow and Steady hits\nTurn 3: Preen\nTurn 4: Scratch\nUndead: Pass\nCrawdead comes in\nTurn 1: Scratch\nTurn 2: Preen\nTurn 3: Slow and Steady\nTurn 4: Slow and Steady hits\nUndead: Pass\nGnaw comes in\nTurn 1+: Scratch until Poro dies\n\nBring in your Direbeak Hatchling\nTurn 1: Ironskin\nTurn 2+3: Falcosaur Swarm!\nTurn 4: Predatory Strike\nTurn 5+: Falcosaur Swarm!\n",
-		["name"] = "Jarrun's Ladder (Flyer)",
-		["tags"] = {
-			"21272CK", -- [1]
-			"12171TN", -- [2]
-			"ZR3", -- [3]
-		},
-		["teamID"] = "team:329",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105455, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-	},
-	["team:307"] = {
-		["pets"] = {
-			"BattlePet-0-000006E4C76A", -- [1]
-			"BattlePet-0-000012B4861E", -- [2]
-			"BattlePet-0-000012B146CC", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/971\n\nScript thanks to Aesetha\n\nTurn 1: Ice Tomb\nTurn 2: Wild Magic\nTurn 3: Pass. Emmigosa dies\nBring in your Nether Faerie Dragon\nTurn 1: Moonfire\nTurn 2: Arcane Blast\nTurn 3: Life Exchange\nTurn 4+: Arcane Blast until Nether Faerie Dragon dies\nBring in your Chrominius\nTurn 1: Howl\nTurn 2: Surge of Power\n",
-		["name"] = "Flummoxed (Dragon)",
-		["tags"] = {
-			"02281LO", -- [1]
-			"2215HD", -- [2]
-			"1126140", -- [3]
-		},
-		["teamID"] = "team:307",
-		["groupID"] = "group:12",
-		["targets"] = {
-			97709, -- [1]
+			99182, -- [1]
 		},
 	},
 	["team:232"] = {
@@ -5508,32 +5319,35 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:7",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			85685, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
-	["team:103"] = {
+	["team:350"] = {
 		["pets"] = {
-			"BattlePet-0-000012B48958", -- [1]
-			"BattlePet-0-000012F20B9E", -- [2]
-			"BattlePet-0-000012B673F3", -- [3]
+			"BattlePet-0-000008968258", -- [1]
+			"BattlePet-0-000012B5C607", -- [2]
+			"random:1", -- [3]
 		},
-		["notes"] = "Strategy added by Freakzoid#11736\nTurn 1: Call Lightning\nTurn 2: Haywire, Boneclaw dies\nTurn 3: Fel Immolate, bring in ikky when Sunreaver dies\nTurn 4: Black Claw\nTurn 5: Quills, Spindler Dies\nTurn 6: Black Claw\nTurn 7: Flock, bring in Microbot XD when Ikky dies\nTurno 8: Supercharge\nTurno 9: Ion Cannon you win \n\n",
-		["name"] = "Eyegor's Special Friends",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/579\n\nTurn 1: Deflection\nTurn 2: Sandstorm\nTurn 3: Crush\nTurn 4: Crush\nTurn 5: Crush\nTurn 6: Deflection\nTurns 7+: Crush until Gulp is dead\nEgcellent comes in\nTurn 1: Sandstorm\nTurns 2+: Crush until Egcellent feigns death\nRed Wire comes in\nTurn 1: Deflection\nTurns 2+: Crush until your Idol dies\nBring in your Kun-Lai Runt\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurn 3: Frost Shock - Egcellent comes back and is hit by this\nTurns 4+: Thrash until Egcellent is dead (or feigns death again)\nRed Wire comes back in\nTurn 1: Frost Shock\nTurn 2: Deep Freeze\nTurns 3+: Thrash if necessary until you're done\n",
+		["name"] = "Tiny Poacher, Tiny Animals (Humanoid)",
 		["tags"] = {
-			"221414Q", -- [1]
-			"21181FS", -- [2]
-			"02272KT", -- [3]
+			"1116143", -- [1]
+			"122814E", -- [2]
+			"ZR1", -- [3]
 		},
-		["teamID"] = "team:103",
+		["teamID"] = "team:350",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			173324, -- [1]
+			99150, -- [1]
 		},
-		["groupID"] = "group:6",
+		["groupID"] = "group:12",
 	},
 	["team:410"] = {
 		["pets"] = {
@@ -5554,24 +5368,68 @@ Rematch5SavedTeams = {
 			97804, -- [1]
 		},
 	},
-	["team:219"] = {
+	["team:329"] = {
+		["pets"] = {
+			"BattlePet-0-000012B99CF7", -- [1]
+			"BattlePet-0-000012B5C2FF", -- [2]
+			"random:3", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9107\n\nStrategy added by DragonsAfterDark\nTurn 1: Slow and Steady\nTurn 2: Slow and Steady hits\nTurn 3: Preen\nTurn 4: Scratch\nUndead: Pass\nCrawdead comes in\nTurn 1: Scratch\nTurn 2: Preen\nTurn 3: Slow and Steady\nTurn 4: Slow and Steady hits\nUndead: Pass\nGnaw comes in\nTurn 1+: Scratch until Poro dies\n\nBring in your Direbeak Hatchling\nTurn 1: Ironskin\nTurn 2+3: Falcosaur Swarm!\nTurn 4: Predatory Strike\nTurn 5+: Falcosaur Swarm!\n",
+		["name"] = "Jarrun's Ladder (Flyer)",
+		["tags"] = {
+			"21272CK", -- [1]
+			"12171TN", -- [2]
+			"ZR3", -- [3]
+		},
+		["teamID"] = "team:329",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			105455, -- [1]
+		},
+		["groupID"] = "group:12",
+	},
+	["team:292"] = {
 		["pets"] = {
 			"BattlePet-0-000012B521D4", -- [1]
-			"BattlePet-0-000012B146CB", -- [2]
+			"BattlePet-0-000006E4C7B4", -- [2]
 			"random:0", -- [3]
 		},
-		["notes"] = "Strategy added by Plougz#2307\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Ikky\nTurn 1: Black Claw\nTurn 2: Flock\n",
-		["name"] = "Unit 6",
+		["notes"] = "Strategy added by unknown\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in Ikky\nTurn 1: Black Claw\nTurns 2+: Flock\n",
+		["name"] = "Fight Night: Heliosus",
 		["tags"] = {
-			"121316M", -- [1]
-			"11181FS", -- [2]
+			"021316M", -- [1]
+			"01181FS", -- [2]
 			"ZR0", -- [3]
 		},
-		["teamID"] = "team:219",
-		["targets"] = {
-			154928, -- [1]
-		},
+		["teamID"] = "team:292",
 		["groupID"] = "group:none",
+		["targets"] = {
+			99742, -- [1]
+		},
+	},
+	["team:182"] = {
+		["pets"] = {
+			"BattlePet-0-000012B5C2FF", -- [1]
+			"BattlePet-0-000012B6763C", -- [2]
+			"BattlePet-0-000012B96E89", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5693\n\nStrategy added by DragonsAfterDark\nPriority 1: Ironskin on CD\nPriority 2: Predatory Strike on Shattered Defenses\nPriority 3: Falcosaur Swarm! as filler\n",
+		["name"] = "Vilefang",
+		["tags"] = {
+			"12171TN", -- [1]
+			"2227G2", -- [2]
+			"2225G2", -- [3]
+		},
+		["teamID"] = "team:182",
+		["targets"] = {
+			116790, -- [1]
+		},
+		["groupID"] = "group:7",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:274"] = {
 		["pets"] = {
@@ -5592,50 +5450,6 @@ Rematch5SavedTeams = {
 			154922, -- [1]
 		},
 	},
-	["team:182"] = {
-		["pets"] = {
-			"BattlePet-0-000012B5C2FF", -- [1]
-			"BattlePet-0-000012B6763C", -- [2]
-			"BattlePet-0-000012B96E89", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5693\n\nStrategy added by DragonsAfterDark\nPriority 1: Ironskin on CD\nPriority 2: Predatory Strike on Shattered Defenses\nPriority 3: Falcosaur Swarm! as filler\n",
-		["name"] = "Vilefang",
-		["tags"] = {
-			"12171TN", -- [1]
-			"2227G2", -- [2]
-			"2225G2", -- [3]
-		},
-		["teamID"] = "team:182",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-		["targets"] = {
-			116790, -- [1]
-		},
-		["groupID"] = "group:7",
-	},
-	["team:324"] = {
-		["pets"] = {
-			"BattlePet-0-000012B66C49", -- [1]
-			"random:9", -- [2]
-			"random:9", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/578\n\nScript thanks to BioNIk\n\nTurn 1: Snap\nTurn 2: Renewing Mists\nTurn 3: Shell Shield\nTurn 4: Snap\nTurn 5: Snap\nTurn 6: Snap\nTurn 7: Snap\nTurn 8: Renewing Mists\nTurn 9: Shell Shield\nTurns 10+: Snap until the Mist Wraith is resurrecting\nThen:: Renewing Mists\nCrawdead comes in\nPrio 1: Refresh Renewing Mists after it runs out\nPrio 2: Refresh Shell Shield when it has 1 turn left\nPrio 3: Use Snap in between until Crawdead resurrects\nThen:: Shell Shield\nGnaw comes in\nTurns 1+: Snap until Gnaw is dead\n\nSometimes your Emperor Crab might not manage. If that happens bring in your next Aquatic and kill Gnaw off, he should be almost dead at this point.\n",
-		["name"] = "Jarrun's Ladder (Aquatic)",
-		["tags"] = {
-			"1114NA", -- [1]
-			"ZR9", -- [2]
-			"ZR9", -- [3]
-		},
-		["teamID"] = "team:324",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105455, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-	},
 	["team:344"] = {
 		["pets"] = {
 			"BattlePet-0-000012B3E786", -- [1]
@@ -5650,13 +5464,13 @@ Rematch5SavedTeams = {
 			"ZR9", -- [3]
 		},
 		["teamID"] = "team:344",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99150, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			99150, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:39"] = {
 		["pets"] = {
@@ -5677,6 +5491,25 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
+	["team:219"] = {
+		["pets"] = {
+			"BattlePet-0-000012B521D4", -- [1]
+			"BattlePet-0-000012B146CB", -- [2]
+			"random:0", -- [3]
+		},
+		["notes"] = "Strategy added by Plougz#2307\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Ikky\nTurn 1: Black Claw\nTurn 2: Flock\n",
+		["name"] = "Unit 6",
+		["tags"] = {
+			"121316M", -- [1]
+			"11181FS", -- [2]
+			"ZR0", -- [3]
+		},
+		["teamID"] = "team:219",
+		["targets"] = {
+			154928, -- [1]
+		},
+		["groupID"] = "group:none",
+	},
 	["team:169"] = {
 		["pets"] = {
 			"BattlePet-0-000012B146CA", -- [1]
@@ -5691,13 +5524,13 @@ Rematch5SavedTeams = {
 			"111737R", -- [3]
 		},
 		["teamID"] = "team:169",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			116793, -- [1]
 		},
 		["groupID"] = "group:7",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:199"] = {
 		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).\n\nTurn 1: Time Bomb\nTurn 2: Flame Breath\nTurn 3: Armageddon\nBring in your Emmigosa\nTurn 4: Ice Tomb\nTurn 5: Arcane Storm (Tempe comes in, Swoggy dies in the backline)\nTurns 6+: Arcane Storm or Breath (until dead)\nChrominius comes in\nCheck conditions each Round and continue based on these priorities:\nPrio 1:: Tempe still alive? -> Bite\nPrio 2:: Dragonkin Passive is up and Dustie has 1665HP or less? -> Surge of Power\nPrio 3:: Dustie has 1110HP or less? -> Surge of Power\nPrio 4:: Howl\nPrio 5:: Surge of Power\n",
@@ -5720,28 +5553,6 @@ Rematch5SavedTeams = {
 		["groupID"] = "group:favorites",
 		["favorite"] = true,
 	},
-	["team:330"] = {
-		["pets"] = {
-			"BattlePet-0-000006E4C775", -- [1]
-			"BattlePet-0-000012B01DE0", -- [2]
-			"random:1", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9103\n\nStrategy added by DragonsAfterDark\nTurn 1: Call Blizzard -- // -- Mist Wraith uses Arcane Blast\nTurn 2: Ice Tomb -- // -- Mist Wraith uses Phase Shift\nTurn 3: Pass -- // -- Mist Wraith uses Plagued Blood\nTurn 4: Ice Lance -- // -- Mist Wraith uses Plagued Blood & is Stunned\nTurn 5: Call Blizzard -- // -- Mist Wraith is stun swapped with Crawdead\nTurn 6+: Ice Lance until Crawdead is dead\nUndead: Pass -- // -- Father Winter's Helper should die here\n\nBring in your Winter's Little Helper\nMist Wraith comes in\nTurn 1: Call Blizzard -- // -- Mist Wraith uses Arcane Blast & dies\nUndead: Ice Tomb -- // -- Mist Wraith uses Phase Shift and dies completely \nGnaw comes in\nTurn 1: Snowball -- // -- Gnaw uses Breath of Sorrow\nTurn 2: Snowball -- // -- Gnaw uses Fel Immolate & is stunned\nTurn 3: Call Blizzard -- // -- Gnaw dies\n\nIf needed:\nBring in your Humanoid pet\nTurn 1: Any standard attack will finish the fight\n",
-		["name"] = "Jarrun's Ladder (Humanoid)",
-		["tags"] = {
-			"21133N", -- [1]
-			"11133O", -- [2]
-			"ZR1", -- [3]
-		},
-		["teamID"] = "team:330",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105455, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-	},
 	["team:406"] = {
 		["pets"] = {
 			"BattlePet-0-000011F7F5D4", -- [1]
@@ -5761,44 +5572,23 @@ Rematch5SavedTeams = {
 			97804, -- [1]
 		},
 	},
-	["team:322"] = {
+	["team:320"] = {
 		["pets"] = {
-			"BattlePet-0-000012B01ED3", -- [1]
-			"BattlePet-0-000012BC0A5A", -- [2]
-			"random:10", -- [3]
+			"BattlePet-0-000012B822C0", -- [1]
+			"BattlePet-0-000012B99945", -- [2]
+			"BattlePet-0-000008968258", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/816\n\nScript thanks to TURBOKillex\n\nTurn 1: Toxic Smoke\nTurn 2: Wind-Up\nTurn 3: Wind-Up\nTurn 4: Toxic Smoke\nTurn 5: Explode\nBring in your Mechanical Pandaren Dragonling - Aulier swaps in Conviction\nTurn 1: Decoy\nTurns 2+: Breath until Conviction casts Dark Rebirth\nThen:: Pass\nThen:: Breath until Conviction is dead\nDignity comes in\nTurns 1+: Use Decoy and Thunderbolt whenever they are ready. Otherwise Breath until your Mechanical Pandaren Dragonling dies\nBring in your third Mech\nTurns 1+: Use standard spells to finish the fight.\n",
-		["name"] = "The Master of Pets (Mech)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16112\n\nStrategy added by DragonsAfterDark\nIf things go well, you won't need the Idol, but Conviction can get a bit tricky so it's there just in case.\n\nTurn 1: Creeping Insanity\nTurn 2: Spiritfire Bolt\nTurn 3: Spiritfire Bolt\nTurn 4: Soulrush\nConviction comes in\nTurn 1+: Spiritfire Bolt until Void-Scarred Anubisath dies, Pass if Conviction has Dark Rebirth on\nBring in your Ranishu Runt\nTurn 1: Focus\nTurn 2+: Zap until Conviction dies, Pass if Dark Rebirth is up\nDignity comes in\n~: Priorities for Ranishu Runt & Anubisath Idol\nPriority 1: Sandstorm when Dignity is up\nPriority 2: Zap or Crush until Dignity dies\n",
+		["name"] = "The Master of Pets (Humanoid)",
 		["tags"] = {
-			"12271BB", -- [1]
-			"1225QC", -- [2]
-			"ZRA", -- [3]
+			"22262OH", -- [1]
+			"11142BH", -- [2]
+			"1116143", -- [3]
 		},
-		["teamID"] = "team:322",
+		["teamID"] = "team:320",
 		["groupID"] = "group:12",
 		["targets"] = {
 			105250, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-	},
-	["team:352"] = {
-		["pets"] = {
-			"BattlePet-0-000012BAC92C", -- [1]
-			"BattlePet-0-000012BC0A5A", -- [2]
-			"random:10", -- [3]
-		},
-		["name"] = "Tiny Poacher, Tiny Animals (Mech)",
-		["tags"] = {
-			"1217AI", -- [1]
-			"1225QC", -- [2]
-			"ZRA", -- [3]
-		},
-		["teamID"] = "team:352",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99150, -- [1]
 		},
 	},
 	["team:58"] = {
@@ -5818,6 +5608,25 @@ Rematch5SavedTeams = {
 		["groupID"] = "group:6",
 		["targets"] = {
 			145968, -- [1]
+		},
+	},
+	["team:340"] = {
+		["pets"] = {
+			"BattlePet-0-000006E4C775", -- [1]
+			"BattlePet-0-000012B118E8", -- [2]
+			"BattlePet-0-000012B01DE0", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9215\n\nStrategy added by DragonsAfterDark\nI'm beginning to think most of the Humanoid fights in Legion on the Broken Isles can be taken care of with this team, heh. Especially now with the buff to Blizzard's weather.\n\nThe fight won't always go as indicated, unfortunately, because of the varying damage for some of the abilities and all the stuns. The script will get you through most of it. These factors vary so widely, that sometimes you won't even need pet #3, and sometimes pet #3 will have <400 hp. It's just how this fight tends to be.\n\nTurn 1: Ice Tomb\nTurn 2: Call Blizzard\nTurn 3: Ice Lance\nTurn 4: Ice Lance -- // -- This will hit Wumpas\nTurn 5: Ice Lance\nBring in OR Swap to your Rotten Little Helper\nTurn 1: Greench's Gift\nTurn 2: Ice Lance\nThrugtusk comes back in\nTurn 1: Booby-Trapped Presents\nTurn 2: Ice Lance\nBaeloth comes in\nTurn 1+2: Pass\nTurn 3: Greench's Gift\nTurn 4+: Ice Lance until Rotten Little Helper or Baeloth dies\nIf needed:\nBring in your Winter's Little Helper\nTurn 1: Gift of Winter's Veil\nTurn 2: Call Blizzard\nTurn 3+: Ice Lance\n",
+		["name"] = "My Beast's Bidding (Humanoid)",
+		["tags"] = {
+			"21133N", -- [1]
+			"21141A5", -- [2]
+			"21233O", -- [3]
+		},
+		["teamID"] = "team:340",
+		["groupID"] = "group:12",
+		["targets"] = {
+			98270, -- [1]
 		},
 	},
 	["team:1"] = {
@@ -5858,43 +5667,49 @@ Rematch5SavedTeams = {
 			146003, -- [1]
 		},
 	},
-	["team:374"] = {
+	["team:330"] = {
 		["pets"] = {
-			"BattlePet-0-000012C56FF7", -- [1]
-			"BattlePet-0-000012C570E8", -- [2]
-			"random:9", -- [3]
+			"BattlePet-0-000006E4C775", -- [1]
+			"BattlePet-0-000012B01DE0", -- [2]
+			"random:1", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/516\n\nScript thanks to wist\n\nTurn 1: Water Jet\nTurn 2: Mudslide\nTurn 3: Bubble\nTurns 4+: Water Jet until Sunny is dead\nRoots comes in\nTurns 1+: Water Jet until Roots is dead as well\nBeaky comes in\nTurn 1: Bubble\nTurn 2: Mudslide\nTurns 3+: Water Jet until Mud Jumper dies\nBring in your Frog\nTurns 1+: Water Jet until Beaky is dead\n",
-		["name"] = "Training with Durian (Aquatic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9103\n\nStrategy added by DragonsAfterDark\nTurn 1: Call Blizzard -- // -- Mist Wraith uses Arcane Blast\nTurn 2: Ice Tomb -- // -- Mist Wraith uses Phase Shift\nTurn 3: Pass -- // -- Mist Wraith uses Plagued Blood\nTurn 4: Ice Lance -- // -- Mist Wraith uses Plagued Blood & is Stunned\nTurn 5: Call Blizzard -- // -- Mist Wraith is stun swapped with Crawdead\nTurn 6+: Ice Lance until Crawdead is dead\nUndead: Pass -- // -- Father Winter's Helper should die here\n\nBring in your Winter's Little Helper\nMist Wraith comes in\nTurn 1: Call Blizzard -- // -- Mist Wraith uses Arcane Blast & dies\nUndead: Ice Tomb -- // -- Mist Wraith uses Phase Shift and dies completely \nGnaw comes in\nTurn 1: Snowball -- // -- Gnaw uses Breath of Sorrow\nTurn 2: Snowball -- // -- Gnaw uses Fel Immolate & is stunned\nTurn 3: Call Blizzard -- // -- Gnaw dies\n\nIf needed:\nBring in your Humanoid pet\nTurn 1: Any standard attack will finish the fight\n",
+		["name"] = "Jarrun's Ladder (Humanoid)",
 		["tags"] = {
-			"111C1D1", -- [1]
-			"111CHP", -- [2]
-			"ZR9", -- [3]
+			"21133N", -- [1]
+			"11133O", -- [2]
+			"ZR1", -- [3]
 		},
-		["teamID"] = "team:374",
+		["teamID"] = "team:330",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			105455, -- [1]
+		},
 		["groupID"] = "group:12",
-		["targets"] = {
-			99035, -- [1]
-		},
 	},
-	["team:171"] = {
+	["team:322"] = {
 		["pets"] = {
-			"BattlePet-0-000012B521D4", -- [1]
-			"BattlePet-0-000012B146CB", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000012B01ED3", -- [1]
+			"BattlePet-0-000012BC0A5A", -- [2]
+			"random:10", -- [3]
 		},
-		["notes"] = "Strategy added by Wonderpray\nStraight forward pet battle, very strong team very effective!Script made by: Calipso\n\nTurn 1: Curse of Doom\nTurn 2: Haunt\nTurn 3: Bring in Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\nTurn 8: If necessary finish off with 3rd pet or Ikky\n",
-		["name"] = "Right Twice a Day",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/816\n\nScript thanks to TURBOKillex\n\nTurn 1: Toxic Smoke\nTurn 2: Wind-Up\nTurn 3: Wind-Up\nTurn 4: Toxic Smoke\nTurn 5: Explode\nBring in your Mechanical Pandaren Dragonling - Aulier swaps in Conviction\nTurn 1: Decoy\nTurns 2+: Breath until Conviction casts Dark Rebirth\nThen:: Pass\nThen:: Breath until Conviction is dead\nDignity comes in\nTurns 1+: Use Decoy and Thunderbolt whenever they are ready. Otherwise Breath until your Mechanical Pandaren Dragonling dies\nBring in your third Mech\nTurns 1+: Use standard spells to finish the fight.\n",
+		["name"] = "The Master of Pets (Mech)",
 		["tags"] = {
-			"021316M", -- [1]
-			"01181FS", -- [2]
-			"ZR0", -- [3]
+			"12271BB", -- [1]
+			"1225QC", -- [2]
+			"ZRA", -- [3]
 		},
-		["teamID"] = "team:171",
+		["teamID"] = "team:322",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			202452, -- [1]
+			105250, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:12",
 	},
 	["team:143"] = {
 		["pets"] = {
@@ -5915,23 +5730,23 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:11",
 	},
-	["team:327"] = {
+	["team:374"] = {
 		["pets"] = {
-			"BattlePet-0-000012B4838C", -- [1]
-			"BattlePet-0-000012B146CC", -- [2]
-			"random:2", -- [3]
+			"BattlePet-0-000012C56FF7", -- [1]
+			"BattlePet-0-000012C570E8", -- [2]
+			"random:9", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/634\n\nIf your Emerald Proto-Whelp has 244 speed, bring another level 25 Dragonkin. Once your Whelp dies (during Crawdead), bring in that third Dragon and kill Crawdead with it.\n\ntdScript thanks to Thordros\n\nTurn 1: Emerald Bite\nTurn 2: Emerald Presence\nTurn 3: Pass\nTurn 4: Emerald Bite\nTurn 5: Emerald Bite\nTurn 6: Emerald Bite\nTurns 7-9: Emerald Dream\nTurns 10+: Emerald Bite until Mist Wraith resurrects\nThen:: Emerald Presence\nCrawdead comes in\nTurns 1-3: Emerald Dream\nTurn 4: Emerald Bite\nTurn 5: Emerald Presence\nTurn 6: Emerald Bite\nTurns 7-9: Emerald Dream\nTurns 10+: Emerald Bite until Crawdead enters the Undead round\nThen:: Emerald Presence\nGnaw comes in\nTurns 1+: Emerald Bite until your Proto-Whelp dies\nBring in Chrominius\nHow many health points does Gnaw have left?\nMore than 1400: Bite, Howl, Surge of Power\nLess than 1400: Howl, Surge of Power\n",
-		["name"] = "Jarrun's Ladder (Dragon)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/516\n\nScript thanks to wist\n\nTurn 1: Water Jet\nTurn 2: Mudslide\nTurn 3: Bubble\nTurns 4+: Water Jet until Sunny is dead\nRoots comes in\nTurns 1+: Water Jet until Roots is dead as well\nBeaky comes in\nTurn 1: Bubble\nTurn 2: Mudslide\nTurns 3+: Water Jet until Mud Jumper dies\nBring in your Frog\nTurns 1+: Water Jet until Beaky is dead\n",
+		["name"] = "Training with Durian (Aquatic)",
 		["tags"] = {
-			"222814F", -- [1]
-			"1126140", -- [2]
-			"ZR2", -- [3]
+			"111C1D1", -- [1]
+			"111CHP", -- [2]
+			"ZR9", -- [3]
 		},
-		["teamID"] = "team:327",
+		["teamID"] = "team:374",
 		["groupID"] = "group:12",
 		["targets"] = {
-			105455, -- [1]
+			99035, -- [1]
 		},
 	},
 	["team:311"] = {
@@ -5972,61 +5787,63 @@ Rematch5SavedTeams = {
 			105250, -- [1]
 		},
 	},
-	["team:236"] = {
+	["team:12"] = {
 		["pets"] = {
-			"BattlePet-0-000012B01EED", -- [1]
-			"BattlePet-0-000012B01EEC", -- [2]
-			"random:4", -- [3]
+			"BattlePet-0-000012B146C9", -- [1]
+			"random:0", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Strategy added by Dreamingdust\nTurn 1: Spiritfire Beam\nTurn 2: Soulrush\nContinue even if the pet got stunned\nTurn 3: Spiritfire Bolt\nTurn 4: Spiritfire Bolt until Fragment of Anger is dead\nFragment of Desire comes in\nTurn 5: Soulrush\nTurn 6: Spiritfire Bolt until fight is over, or Fragment of Desire is dead\n\nAny standard attack will finish the fight\n",
-		["name"] = "Are They Not Beautiful? (Undead) (2)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10122\n\nStrategy added by DragonsAfterDark\nIt will take a while, but your bunny will end with 100% hp\n\nYou can also do this method with Lagan / Slithershock Elver (1,1,1), Scrapyard Tunneler (2,1,1), Alloyed Alleyrat (1,2,1), Specimen 97 (1,1,1)\n\nIt's also possible to do this with Inky / Nameless Octopode (1,2,2), & Sneaky Marmot (1,2,2), but you use the blind on turn two and pass on turn three, which loses one round of attack, and will make this last longer.\n\nVideo for Fight (https://www.youtube.com/watch?v=SAQqQd5HWT0)\n\nTurn 1: Scratch\nTurn 2: Scratch\nTurn 3: Dodge\nTurn 4: Scratch\nTurn 5: Scratch\nTurn 6: Burrow goes underground\nTurn 7: Burrow lands\n\nRepeat from TURN 2\n",
+		["name"] = "Briarpaw",
 		["tags"] = {
-			"11171IP", -- [1]
-			"10191IR", -- [2]
-			"ZR4", -- [3]
+			"221568", -- [1]
+			"ZR0", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:236",
+		["teamID"] = "team:12",
+		["targets"] = {
+			175778, -- [1]
+		},
 		["groupID"] = "group:none",
 		["preferences"] = {
-			["minXP"] = 25,
+			["minXP"] = 1,
 		},
 	},
-	["team:316"] = {
+	["team:171"] = {
 		["pets"] = {
-			"BattlePet-0-000012C56B2C", -- [1]
-			"BattlePet-0-000012C3D91A", -- [2]
-			"BattlePet-0-000012B99C7D", -- [3]
+			"BattlePet-0-000012B521D4", -- [1]
+			"BattlePet-0-000012B146CB", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10197\n\nStrategy added by DragonsAfterDark\nTurn 1: Acidic Goo\nTurn 2: Creeping Ooze\nTurn 3: Ooze Touch\nTurn 4: Ooze Touch\nTurn 5: Ooze Touch\nConviction comes in\nTurn 1: Acidic Goo\nTurn 2+: Ooze Touch until Bloodfeaster Larva is dead\n\nBring in your Void-Scarred Locust\nTurn 1: Toxic Fumes\nPriority 1: If Conviction is below 400 hp: Pass twice\nPriority 2: Contagion Strike until Conviction is dead\nDignity comes in\nTurn 1: Contagion Strike\nTurn 2: Psychic Blast\nTurn 3+: Alternate between Contagion Strike & Psychic Blast until Void-Scarred Locust dies\n\nBring in your Lovebird Hatchling\nClean up with Peck & Predatory Strike\n",
-		["name"] = "The Master of Pets (Critter)",
+		["notes"] = "Strategy added by Wonderpray\nStraight forward pet battle, very strong team very effective!Script made by: Calipso\n\nTurn 1: Curse of Doom\nTurn 2: Haunt\nTurn 3: Bring in Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\nTurn 8: If necessary finish off with 3rd pet or Ikky\n",
+		["name"] = "Right Twice a Day",
 		["tags"] = {
-			"22282BE", -- [1]
-			"22162PG", -- [2]
-			"10251F7", -- [3]
+			"021316M", -- [1]
+			"01181FS", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:316",
-		["groupID"] = "group:12",
+		["teamID"] = "team:171",
 		["targets"] = {
-			105250, -- [1]
+			202452, -- [1]
 		},
+		["groupID"] = "group:none",
 	},
-	["team:404"] = {
+	["team:280"] = {
 		["pets"] = {
-			"BattlePet-0-000012B3E786", -- [1]
-			"BattlePet-0-000012B99CC6", -- [2]
-			"BattlePet-0-000012B99D62", -- [3]
+			"BattlePet-0-000008968258", -- [1]
+			"BattlePet-0-000012BA1A7F", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14201\n\nStrategy added by Morell#1795\nDefinitely some RNG here.  Only tested it about 5 or six times.  Win rate is currently 50%.\n\nPriority 1: Black Claw\nPriority 2: Dive\nPriority 3: Skitter\nRocket comes in\nBring in your Bleakwater Jelly\nTurn 1: Tidal Wave\nTurn 2: Whirlpool\nTurn 3+: Tentacle Slap until Bleakwater Jelly dies\nBring in your Chitterspine Skitterling and repeat the first set of priorities until your Skitterling dies.\nChuck comes in.\nPriority 1: Rip\nPriority 2: Blood in the Water\nPriority 3: Surge\n",
-		["name"] = "Fight Night: Tiffany Nelson (Aquatic)",
+		["name"] = "Narrok",
 		["tags"] = {
-			"221B2IO", -- [1]
-			"12181MP", -- [2]
-			"11235E", -- [3]
+			"1116143", -- [1]
+			"11261CI", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:404",
-		["groupID"] = "group:12",
+		["teamID"] = "team:280",
+		["groupID"] = "group:11",
 		["targets"] = {
-			97804, -- [1]
+			66552, -- [1]
 		},
 	},
 	["team:337"] = {
@@ -6081,13 +5898,13 @@ Rematch5SavedTeams = {
 			"ZR6", -- [3]
 		},
 		["teamID"] = "team:381",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99035, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			99035, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:43"] = {
 		["pets"] = {
@@ -6108,23 +5925,24 @@ Rematch5SavedTeams = {
 			160205, -- [1]
 		},
 	},
-	["team:280"] = {
+	["team:150"] = {
 		["pets"] = {
-			"BattlePet-0-000008968258", -- [1]
-			"BattlePet-0-000012BA1A7F", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000012BEEEA6", -- [1]
+			"BattlePet-0-000012B146D1", -- [2]
+			"BattlePet-0-000012B673F3", -- [3]
 		},
-		["name"] = "Narrok",
+		["notes"] = "Strategy added by norng\n6 rounds.\n\nTurn 1: Glowing Toxin\nTurn 2: Explode\nBring in your Mechanical Pandaren Dragonling\nTurn 1: Explode\nBring in your Microbot XD\nTurn 1: Supercharge\nTurns 2-3: Ion Cannon - Gorgemouth dies\n",
+		["name"] = "Failed Experiment",
 		["tags"] = {
-			"1116143", -- [1]
-			"11261CI", -- [2]
-			"ZR0", -- [3]
+			"20241G3", -- [1]
+			"0015QC", -- [2]
+			"02272KT", -- [3]
 		},
-		["teamID"] = "team:280",
-		["groupID"] = "group:11",
+		["teamID"] = "team:150",
 		["targets"] = {
-			66552, -- [1]
+			173274, -- [1]
 		},
+		["groupID"] = "group:none",
 	},
 	["team:96"] = {
 		["pets"] = {
@@ -6145,23 +5963,45 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:139"] = {
+	["team:24"] = {
 		["pets"] = {
-			"BattlePet-0-000012BAF760", -- [1]
-			"BattlePet-0-000012BC0A5A", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
+			"BattlePet-0-000012BA9572", -- [1]
+			"BattlePet-0-000012BEEEA6", -- [2]
+			"BattlePet-0-00000D511EB1", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/7097\n\nStrategy added by Blujay00#1918\nThanks to Krigath on Wowhead for this strategy. I used Benax but Mud Jumper was the original beginning pet, both work great. \n\nhttps://www.wowhead.com/npc=66822/goz-banefury#comments\n\nThank you to Malhado below for the TDScript!\n\nBring in your Benax\nTurn 1: Bubble\nTurn 2+: Water Jet\nTurn 1: Swap to your Elekk Plushie after Twilight has resurrected from Dark Rebirth\nTurn 2+: Pass until Twilight has died from Dark Rebirth\nAmythel comes in\nTurn 3+: Continue passing turns until your Elekk Plushie dies\nBring in your Mechanical Pandaren Dragonling\nTurn 1: Decoy\nTurn 2+: Breath\nAmythel dies\nHelios comes in\nTurn 3: Breath\nTurn 4: Bombing Run\nTurn 5: Breath\nMechanical Pandaren Dragonling dies\nBring in your Benax\nTurn 1: Bubble\nTurn 2: Mudslide\nTurn 3: Water Jet \nHelios dies\n",
-		["name"] = "Goz Banefury",
+		["notes"] = "Strategy added by Lazey\nTurn 1: Wild Magic\nTurn 2: Illuminate\nTurn 3: Swap to your Seaborne Spore\nTurn 4: Glowing Toxin\nTurn 5: Explode\nBring in your Death Seeker\nTurn 6: Murder the Innocent\n",
+		["name"] = "Tremblor - Legendary",
 		["tags"] = {
-			"11171SE", -- [1]
-			"1125QC", -- [2]
-			"11261CI", -- [3]
+			"021839U", -- [1]
+			"22241G3", -- [2]
+			"02062V1", -- [3]
 		},
-		["teamID"] = "team:139",
-		["groupID"] = "group:11",
+		["teamID"] = "team:24",
 		["targets"] = {
-			66822, -- [1]
+			200692, -- [1]
+		},
+		["groupID"] = "group:none",
+	},
+	["team:209"] = {
+		["pets"] = {
+			"BattlePet-0-000012B99945", -- [1]
+			"BattlePet-0-000012B6764A", -- [2]
+			"BattlePet-0-000012692A6E", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/15795\n\nStrategy added by GCSuns\nTurn 1: Call Lightning\nTurn 2: Swarm of Flies\nTurn 3: Zap\nTurn 4: Zap\nTurn 5: Ranishu Runt dies. Switch in Mechanical Axebeak\nTurn 6: Decoy. Haywire if needed.\n",
+		["name"] = "Liz",
+		["tags"] = {
+			"12242BH", -- [1]
+			"22171BR", -- [2]
+			"11163AN", -- [3]
+		},
+		["teamID"] = "team:209",
+		["targets"] = {
+			161650, -- [1]
+		},
+		["groupID"] = "group:5",
+		["preferences"] = {
+			["minXP"] = 1,
 		},
 	},
 	["team:309"] = {
@@ -6183,26 +6023,79 @@ Rematch5SavedTeams = {
 			97709, -- [1]
 		},
 	},
-	["team:32"] = {
+	["team:139"] = {
 		["pets"] = {
-			"BattlePet-0-000012B4838C", -- [1]
-			"random:0", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000012BAF760", -- [1]
+			"BattlePet-0-000012BC0A5A", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13523\n\nStrategy added by Doc#1345\nCredit to Nilremife\n\nTurn 1: Breath\nTurn 2: Breath\nTurn 3: Ancient Blessing\nTurn 4: Emerald Dream\nRepeat these step until Gelatinous is defeat. Does not matter what pet 2 or 3 are, they will die and your dragon will be near full health.\n",
-		["name"] = "Gelatinous",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/7097\n\nStrategy added by Blujay00#1918\nThanks to Krigath on Wowhead for this strategy. I used Benax but Mud Jumper was the original beginning pet, both work great. \n\nhttps://www.wowhead.com/npc=66822/goz-banefury#comments\n\nThank you to Malhado below for the TDScript!\n\nBring in your Benax\nTurn 1: Bubble\nTurn 2+: Water Jet\nTurn 1: Swap to your Elekk Plushie after Twilight has resurrected from Dark Rebirth\nTurn 2+: Pass until Twilight has died from Dark Rebirth\nAmythel comes in\nTurn 3+: Continue passing turns until your Elekk Plushie dies\nBring in your Mechanical Pandaren Dragonling\nTurn 1: Decoy\nTurn 2+: Breath\nAmythel dies\nHelios comes in\nTurn 3: Breath\nTurn 4: Bombing Run\nTurn 5: Breath\nMechanical Pandaren Dragonling dies\nBring in your Benax\nTurn 1: Bubble\nTurn 2: Mudslide\nTurn 3: Water Jet \nHelios dies\n",
+		["name"] = "Goz Banefury",
 		["tags"] = {
-			"112814F", -- [1]
-			"ZR0", -- [2]
-			"ZR0", -- [3]
+			"11171SE", -- [1]
+			"1125QC", -- [2]
+			"11261CI", -- [3]
 		},
-		["teamID"] = "team:32",
+		["teamID"] = "team:139",
+		["groupID"] = "group:11",
+		["targets"] = {
+			66822, -- [1]
+		},
+	},
+	["team:301"] = {
+		["pets"] = {
+			"BattlePet-0-000007C1D04D", -- [1]
+			"BattlePet-0-000012C8B182", -- [2]
+			"BattlePet-0-000012B67649", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3892\n\nStrategy added by Berendain\nMinfernal and Netherspace Abyssal can be substituted in place of Abyssius.  Apply Immolation and Immolate, then use Meteor Strike, before using Immolate until your pet dies.\n\nIf you don't have an S/S Nordrassil Wisp, you can substitute it with other pets.  The best alternatives:  \n\nHyjal Wisp:  Use wish to heal up when you drop below 900 HP, use Sear Magic to cleanse poison, and kill Remy with Arcane Blast.\n\nSapphire Cub:  Screech, then Prowl, then Pounce until Remy dies.\n\nTurn 1: Immolation\nTurn 2: Volcano - if you are stunned, just pass and then use Volcano next turn, proceeding as written.\nTurn 3: Flamethrower until Abyssius dies.  Gusteau should die around the same time.\nRemy comes in\nBring in your Nordrassil Wisp\nTurn 1: Flash\nTurn 2: Light\nTurn 3: Pass\nTurn 4: Soul Ward\nTurns 5+: Repeat the previous four turns until Remy dies.\nDinner comes in\nTurn 1: Swap to your Enchanted Pen\nTurn 2: Quills\nTurn 3: Evanescence\nTurn 4: Quills\nTurn 5: Nevermore\nTurn 6: Pass if you were polymorphed, but otherwise, Quills until Dinner dies.  He is unable to use Frog Kiss again.\n",
+		["name"] = "Chopped (Magic)",
+		["tags"] = {
+			"11141IO", -- [1]
+			"2115H3", -- [2]
+			"112B1L5", -- [3]
+		},
+		["teamID"] = "team:301",
+		["groupID"] = "group:12",
+		["targets"] = {
+			105674, -- [1]
+		},
+	},
+	["team:275"] = {
+		["pets"] = {
+			"BattlePet-0-000012B58B24", -- [1]
+			"BattlePet-0-000012BA1A7F", -- [2]
+			"BattlePet-0-000012B528FE", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1816\n\nStrategy added by Ivanella#1279\nFrom Wowhead user roeevv.\n\nTurn 1+: Missile till Pyth is below 618 hp (2 will usually do).\nTurn 3: Decoy\nTurn 4: Explode\nSpring comes in\nTurn 1: Swap to your Level Pet\nTurn 2: Swap to your Xu-Fu, Cub of Xuen\nTurn 3: Prowl\nTurn 4: Moonfire (one-shot)\nClatter comes in\nTurn 1+: Spirit Claws x2\n",
+		["name"] = "Obalis",
+		["tags"] = {
+			"122CAJ", -- [1]
+			"11261CI", -- [2]
+			"122417I", -- [3]
+		},
+		["teamID"] = "team:275",
 		["preferences"] = {
 			["minXP"] = 1,
 		},
 		["targets"] = {
-			175784, -- [1]
+			66824, -- [1]
 		},
+		["groupID"] = "group:11",
+	},
+	["team:266"] = {
+		["pets"] = {
+			"BattlePet-0-000012B3995F", -- [1]
+			"BattlePet-0-000012B4C910", -- [2]
+			"BattlePet-0-000012B4838C", -- [3]
+		},
+		["name"] = "healfuck",
+		["tags"] = {
+			"11252PJ", -- [1]
+			"112434H", -- [2]
+			"222814F", -- [3]
+		},
+		["teamID"] = "team:266",
 		["groupID"] = "group:none",
 	},
 	["team:246"] = {
@@ -6240,87 +6133,6 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:11",
 	},
-	["team:275"] = {
-		["pets"] = {
-			"BattlePet-0-000012B58B24", -- [1]
-			"BattlePet-0-000012BA1A7F", -- [2]
-			"BattlePet-0-000012B528FE", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1816\n\nStrategy added by Ivanella#1279\nFrom Wowhead user roeevv.\n\nTurn 1+: Missile till Pyth is below 618 hp (2 will usually do).\nTurn 3: Decoy\nTurn 4: Explode\nSpring comes in\nTurn 1: Swap to your Level Pet\nTurn 2: Swap to your Xu-Fu, Cub of Xuen\nTurn 3: Prowl\nTurn 4: Moonfire (one-shot)\nClatter comes in\nTurn 1+: Spirit Claws x2\n",
-		["name"] = "Obalis",
-		["tags"] = {
-			"122CAJ", -- [1]
-			"11261CI", -- [2]
-			"122417I", -- [3]
-		},
-		["teamID"] = "team:275",
-		["groupID"] = "group:11",
-		["targets"] = {
-			66824, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 1,
-		},
-	},
-	["team:100"] = {
-		["pets"] = {
-			"BattlePet-0-0000080DA4CD", -- [1]
-			"BattlePet-0-000012B482D1", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10424\n\nStrategy added by norng\n5 rounds.\n\nTurn 1: Nut Barrage\nTurn 2: Woodchipper - Nuts dies\nBring in your Zandalari Kneebiter\nTurn 1: Black Claw\nTurns 2-3: Hunting Party - Zao, Calfling of Niuzao dies\n",
-		["name"] = "Zao, Calfling of Niuzao",
-		["tags"] = {
-			"2018A3", -- [1]
-			"220514S", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:100",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
-		["targets"] = {
-			72290, -- [1]
-		},
-		["groupID"] = "group:3",
-	},
-	["team:128"] = {
-		["pets"] = {
-			"BattlePet-0-000012B66DA8", -- [1]
-			"BattlePet-0-000012BA1A7F", -- [2]
-			"random:0", -- [3]
-		},
-		["name"] = "Flowing Pandaren Spirit",
-		["tags"] = {
-			"21071C8", -- [1]
-			"11261CI", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:128",
-		["groupID"] = "group:11",
-		["targets"] = {
-			68462, -- [1]
-		},
-	},
-	["team:373"] = {
-		["pets"] = {
-			"BattlePet-0-000012B99D22", -- [1]
-			"BattlePet-0-000012B675D0", -- [2]
-			"BattlePet-0-000012B118B3", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/677\n\nScript thanks to Rinoe\n\nTurn 1: Ethereal\nTurn 2: Hoof\nTurn 3: Hoof\nTurn 4: Hoof\nTurn 5: Ethereal\nTurns 6+: Hoof until the Lil’ Spirit Guide is dead\nQuillino comes in\nTurn 1: Ghostly Bite - unless your Kid is already dead, then bring in your Scourged Whelpling\nTurns 2+: Tail Sweep until Quillino is dead\nFethyr comes in\nTurn 1: Pass\nTurns 2+: Tail Sweep until you enter your undead round\nThen:: Call Darkness\nBring in your Ghostly Skull\nTurn 1: Spectral Strike\nTurns 2+: Shadow Slash until Fethyr is dead\n",
-		["name"] = "Training with Bredda (Undead)",
-		["tags"] = {
-			"12161D2", -- [1]
-			"2128GQ", -- [2]
-			"12175U", -- [3]
-		},
-		["teamID"] = "team:373",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99077, -- [1]
-		},
-	},
 	["team:152"] = {
 		["pets"] = {
 			"BattlePet-0-000012B3E786", -- [1]
@@ -6335,13 +6147,13 @@ Rematch5SavedTeams = {
 			"11182PI", -- [3]
 		},
 		["teamID"] = "team:152",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			150918, -- [1]
 		},
 		["groupID"] = "group:8",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:252"] = {
 		["pets"] = {
@@ -6362,24 +6174,27 @@ Rematch5SavedTeams = {
 			["minXP"] = 25,
 		},
 	},
-	["team:41"] = {
+	["team:100"] = {
 		["pets"] = {
-			"BattlePet-0-000012C4A66F", -- [1]
-			"BattlePet-0-00000D5451F8", -- [2]
-			"BattlePet-0-000012B3956C", -- [3]
+			"BattlePet-0-0000080DA4CD", -- [1]
+			"BattlePet-0-000012B482D1", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Strategy added by KaikkuQQ#2332\nTurn 1: Bubble\nTurns 2-4: Stampede\nTurn 5: Pinch until Main-gauche die\nAn enemy pet comes in\nTurn 6: Bubble if possible if not go next turn\nTurns 7-9: Stampede until your pet die\nBring in your Baa'l\nTurn 1: Scorched Earth\nTurn 2-...: Shadowflame until Postier-lémentaire pestiféré die\nAn enemy pet comes in\nTurn 3: Murder the Innocent\nTurn 4: Shadowflame until Baa'l die, if isn't already\nBring in your Glimmershell Scuttler\nTurn 1: Bubble\nTurn 2-3: Pinch\nTurns 4-5: Dive\nRepeat 3 last action until WIN.\n",
-		["name"] = "Postmaster Malown",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10424\n\nStrategy added by norng\n5 rounds.\n\nTurn 1: Nut Barrage\nTurn 2: Woodchipper - Nuts dies\nBring in your Zandalari Kneebiter\nTurn 1: Black Claw\nTurns 2-3: Hunting Party - Zao, Calfling of Niuzao dies\n",
+		["name"] = "Zao, Calfling of Niuzao",
 		["tags"] = {
-			"111C2AI", -- [1]
-			"122329G", -- [2]
-			"12292IN", -- [3]
+			"2018A3", -- [1]
+			"220514S", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:41",
+		["teamID"] = "team:100",
 		["targets"] = {
-			155413, -- [1]
+			72290, -- [1]
 		},
-		["groupID"] = "group:6",
+		["groupID"] = "group:3",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:302"] = {
 		["pets"] = {
@@ -6419,23 +6234,23 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:405"] = {
+	["team:304"] = {
 		["pets"] = {
-			"BattlePet-0-000012C6347A", -- [1]
-			"BattlePet-0-000012B528FE", -- [2]
-			"BattlePet-0-000012B399CF", -- [3]
+			"BattlePet-0-000012BAF760", -- [1]
+			"BattlePet-0-000012B3E786", -- [2]
+			"BattlePet-0-000012B01E47", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/864\n\nStrategy added by Ssparkles\nScript thanks to isthevao\n\nTurns 1+2: Burrow\nTurn 3: Sticky Goo\nTurn 4: Consume\nTurn 5: Sticky Goo\nTurn 6: Consume\nTurns 7+8: Burrow - Jinx dies\nRocket comes in\nTurns 1+: Continue like above, keep Burrow on cooldown and alternate between Consume and Sticky Goo until your Maggot dies\nBring in Xu-Fu, Cub of Xuen\nTurn 1: Prowl\nTurn 2: Moonfire\nTurns 3+: Spirit Claws until Xu-Fu, Cub of Xuen dies\nBring in your Summit Kid\nTurn 1: Chew\nTurns 2+: Stampede\n",
-		["name"] = "Fight Night: Tiffany Nelson (Beast)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9568\n\nStrategy added by Orgulas\nedit: TD script added, thx Wist!\n\nTurn 1: Bubble\nTurn 2: Water Jet\nTurn 3: Water Jet If your HP seems like Benax will die next hit use Swarm of Flies\nTurn 4: Swarm of Flies if not previous Benax dies\nTurn 5:  get in your Chitterspine Skitterling\nTurn 6: Black Claw\nTurn 7: Swarm Chitterspine Skitterling might die during Swarm\nTurn 8: get in Sewer-Pipe Jelly\nSqueeze\nTentacle Slap you shold be done by now, if not, use Tentacle Slap again\n",
+		["name"] = "Flummoxed (Aquatic)",
 		["tags"] = {
-			"2223E2", -- [1]
-			"122417I", -- [2]
-			"2025L7", -- [3]
+			"12171SE", -- [1]
+			"022B2IO", -- [2]
+			"10291MQ", -- [3]
 		},
-		["teamID"] = "team:405",
+		["teamID"] = "team:304",
 		["groupID"] = "group:12",
 		["targets"] = {
-			97804, -- [1]
+			97709, -- [1]
 		},
 	},
 	["team:78"] = {
@@ -6452,13 +6267,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:78",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			154918, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:122"] = {
 		["pets"] = {
@@ -6528,13 +6343,13 @@ Rematch5SavedTeams = {
 			"ZL", -- [3]
 		},
 		["teamID"] = "team:277",
-		["groupID"] = "group:11",
-		["targets"] = {
-			66557, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 5,
 		},
+		["targets"] = {
+			66557, -- [1]
+		},
+		["groupID"] = "group:11",
 	},
 	["team:2"] = {
 		["pets"] = {
@@ -6555,26 +6370,23 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:439"] = {
+	["team:284"] = {
 		["pets"] = {
-			"BattlePet-0-000012B01E1E", -- [1]
-			"BattlePet-0-000008A64479", -- [2]
-			"random:3", -- [3]
+			"BattlePet-0-000012B48707", -- [1]
+			"BattlePet-0-000008968258", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3549\n\nStrategy added by DragonsAfterDark\nTurn 1: Amplify Magic\nTurn 2-4: Arcane Explosion\nRepeat steps 1-4 until backline pets die\nAfter that:\nArcane Blast until dead\nBring in your Docile Skyfin\nTurn 1: Predatory Strike\nTurn 2+: Wild Winds\n",
-		["name"] = "Fight Night: Amalia (Flyer)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/424\n\nScript thanks to Jimmo\n\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge\nTurn 5: Arcane Storm\nTurn 6: Tail Sweep \nTurn 7: Tail Sweep \nTurns 8-10: Mana Surge\n\nIf your Nexus Whelpling dies before the enemy pets, bring in your Anubisath and finish up with Crush\n",
+		["name"] = "Beegle Blastfuse",
 		["tags"] = {
-			"21232C9", -- [1]
-			"2016226", -- [2]
-			"ZR3", -- [3]
+			"122814D", -- [1]
+			"1116143", -- [2]
+			"11261CI", -- [3]
 		},
-		["teamID"] = "team:439",
-		["groupID"] = "group:12",
+		["teamID"] = "team:284",
+		["groupID"] = "group:11",
 		["targets"] = {
-			107489, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
+			66635, -- [1]
 		},
 	},
 	["team:193"] = {
@@ -6629,13 +6441,13 @@ Rematch5SavedTeams = {
 			"ZR8", -- [3]
 		},
 		["teamID"] = "team:315",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105250, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			105250, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:149"] = {
 		["pets"] = {
@@ -6694,27 +6506,27 @@ Rematch5SavedTeams = {
 			["minXP"] = 1,
 		},
 	},
-	["team:174"] = {
+	["team:439"] = {
 		["pets"] = {
-			"BattlePet-0-000012B5C607", -- [1]
-			"BattlePet-0-000012B66DA8", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000012B01E1E", -- [1]
+			"BattlePet-0-000008A64479", -- [2]
+			"random:3", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1834\n\nStrategy added by NostrA#2338\nProps to Aranesh for his/her strategy, I just changed the TD Script and Strategy to make Teroclaw viable again\n\n\n\nTurn 1-3: use Rampage\nTurn 4+: use Thrash until Klutz's Battle Rat dies\nan enemy Pet comes in\nTurn 1+: use Rampage on cooldown otherwise use Thrash until your Kun-Lai Runt dies\nBring in your Teroclaw Hatchling\nenemy HP < 618: use Ravage\nif the enemy is a Flying Type, you want to use Ravage when the enemy HP is under 406 \nwhen not active: use Nature's Ward\nelse: use Alpha Strike",
-		["name"] = "Klutz's Battle Rat",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3549\n\nStrategy added by DragonsAfterDark\nTurn 1: Amplify Magic\nTurn 2-4: Arcane Explosion\nRepeat steps 1-4 until backline pets die\nAfter that:\nArcane Blast until dead\nBring in your Docile Skyfin\nTurn 1: Predatory Strike\nTurn 2+: Wild Winds\n",
+		["name"] = "Fight Night: Amalia (Flyer)",
 		["tags"] = {
-			"111814E", -- [1]
-			"22271C8", -- [2]
-			"ZR0", -- [3]
+			"21232C9", -- [1]
+			"2016226", -- [2]
+			"ZR3", -- [3]
 		},
-		["teamID"] = "team:174",
+		["teamID"] = "team:439",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
 		["targets"] = {
-			119343, -- [1]
+			107489, -- [1]
 		},
-		["groupID"] = "group:4",
+		["groupID"] = "group:12",
 	},
 	["team:355"] = {
 		["pets"] = {
@@ -6772,67 +6584,61 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:156"] = {
+	["team:249"] = {
 		["pets"] = {
-			"BattlePet-0-000012B67649", -- [1]
-			"BattlePet-0-000012B99D43", -- [2]
-			"BattlePet-0-000012BA9540", -- [3]
+			"BattlePet-0-00000D5451F8", -- [1]
+			"BattlePet-0-00000D511EB1", -- [2]
+			0, -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4597\n\nStrategy added by DragonsAfterDark\nPriority 1: Evanescence\nPriority 2: Forboding Curse\nPriority 3: Quills all else\nBring in your next pet\nAny standard attack will finish the fight\n",
-		["name"] = "Deviate Chomper",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/17855\n\nStrategy added by WhyDaRumGone\nTurn 1: Murder the Innocent\nTurn 2: Swap to your Death Seeker\nTurn 3: Murder the Innocent\nTurn 4: Eyeblast\nTurn 5: Pass, Death Seeker dies.\nBring in your Level Pet\nTurn 6: Swap to your Baa'l\nTurn 7: Darkflame\nTurn 8: Murder the Innocent\n",
+		["name"] = "Yu'la, Broodling of Yu'lon (2)",
 		["tags"] = {
-			"111B1L5", -- [1]
-			"11131B9", -- [2]
-			"11191H3", -- [3]
+			"220329G", -- [1]
+			"12062V1", -- [2]
+			"ZL", -- [3]
 		},
-		["teamID"] = "team:156",
+		["teamID"] = "team:249",
+		["groupID"] = "group:1",
 		["preferences"] = {
-			["minXP"] = 25,
+			["minXP"] = 1,
 		},
-		["targets"] = {
-			116788, -- [1]
-		},
-		["groupID"] = "group:7",
 	},
-	["team:36"] = {
+	["team:273"] = {
 		["pets"] = {
-			"BattlePet-0-000012B521D4", -- [1]
-			"BattlePet-0-000012B482D1", -- [2]
+			"BattlePet-0-000012C56FF7", -- [1]
+			"BattlePet-0-000008968258", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/404\n\nScript thanks to Camlas\n\nTurn 1: Bubble\nTurns 2+: Water Jet until Ruby is dead - your Mud Jumper should survive with 200-500 health\nCrystallus comes in\nTurn 1: Swap to your Anubisath Idol\nTurn 2: Stoneskin\nTurns 3+: Crush until Crystallus is dead\nFracture comes in\nTurn 1: Stoneskin\nTurn 2: Crush\nTurn 3: Crush\nTurn 4: Deflection\nTurns 5+: Crush until your Idol goes down - often it manages to finish the fight!\nBring back your Mud Jumper\nTurn 1: Bubble\nTurns 2+: Water Jet until Fracture is dead\n",
+		["name"] = "Bordin Steadyfist",
+		["tags"] = {
+			"121C1D1", -- [1]
+			"1216143", -- [2]
+			"11261CI", -- [3]
+		},
+		["teamID"] = "team:273",
+		["groupID"] = "group:11",
+		["targets"] = {
+			66815, -- [1]
+		},
+	},
+	["team:293"] = {
+		["pets"] = {
+			"BattlePet-0-000012EB3FDF", -- [1]
+			"BattlePet-0-000012F20B9E", -- [2]
 			"random:0", -- [3]
 		},
-		["notes"] = "Strategy added by Halyanth#1611\nI tried it the first time today. I will update the strategy as I continue to play with it. \n\nTurn 1: Haunt\nBring in Kneebitter\nTurn 2: Black Claw\nTurn 3: Hunting Party\nTurn 4: Hunting Party continues\nTurn 5: Leap\n",
-		["name"] = "Flow - Rare",
+		["notes"] = "Strategy added by Shin\nI've tested this on 10 characters and it has worked every time.Pet battle script included.\n\nTurn 1: Metal Fist\nTurn 2: Build Turret\nTurn 3: Swap to your Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\n~: Ikky should kill thistle or the turret will finish it off\nBring in your Clockwork Gnome\nTurn 1+: Any standard attack will finish the fight\n",
+		["name"] = "Stand Up to Bullies",
 		["tags"] = {
-			"221316M", -- [1]
-			"221514S", -- [2]
+			"111B8L", -- [1]
+			"11181FS", -- [2]
 			"ZR0", -- [3]
 		},
-		["teamID"] = "team:36",
-		["targets"] = {
-			200697, -- [1]
-		},
+		["teamID"] = "team:293",
 		["groupID"] = "group:none",
-	},
-	["team:428"] = {
-		["pets"] = {
-			"BattlePet-0-000006E4C77C", -- [1]
-			"BattlePet-0-000012B485C2", -- [2]
-			"random:7", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/868\n\nScript thanks to Zaphod\n\nTurn 1: Call Blizzard\nTurn 2: Deep Freeze\nTurns 3+: Magic Hat until Salty Bird dies\nItchy comes back in\nTurn 1: Deep Freeze\nTurn 2: Call Blizzard - this hits Grommet\nTurns 3+: Magic Hat until Tiny Snowman dies\nBring in your Pandaren Water Spirit\nTurn 1: Whirlpool\nTurn 2: Dive\nTurns 3+: Water Jet until Grommet dies\nItchy comes in a last time\nTurns 1+: Water Jet until Itchy is dead\n",
-		["name"] = "Fight Night: Bodhi Sunwayver (Elemental)",
-		["tags"] = {
-			"21233L", -- [1]
-			"1219R4", -- [2]
-			"ZR7", -- [3]
-		},
-		["teamID"] = "team:428",
-		["groupID"] = "group:12",
 		["targets"] = {
-			99210, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 25,
+			105009, -- [1]
 		},
 	},
 	["team:195"] = {
@@ -6849,13 +6655,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:195",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			119341, -- [1]
 		},
 		["groupID"] = "group:4",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:69"] = {
 		["pets"] = {
@@ -6890,35 +6696,35 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:56",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			201858, -- [1]
 		},
 		["groupID"] = "group:none",
-	},
-	["team:188"] = {
-		["pets"] = {
-			"BattlePet-0-000006E4C79F", -- [1]
-			"BattlePet-0-000012B99B2E", -- [2]
-			"BattlePet-0-000012B99CFC", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6045\n\nStrategy added by Shenk\nAny pet with a cleave attack in the 2nd slot should fine. Sometimes Blightbreath will solo the fight.\n\nTurn 1: Acid Rain\nTurn 2+: Dreadful Breath until either the fight is won or Blightbreath is dead\nTurn 3: If necessary bring in Twilight Clutch-Sister and finish with Twilight Meteorite\n",
-		["name"] = "Belchling",
-		["tags"] = {
-			"12171TD", -- [1]
-			"112B211", -- [2]
-			"11132G6", -- [3]
-		},
-		["teamID"] = "team:188",
 		["preferences"] = {
-			["minXP"] = 1,
+			["minXP"] = 25,
 		},
+	},
+	["team:156"] = {
+		["pets"] = {
+			"BattlePet-0-000012B67649", -- [1]
+			"BattlePet-0-000012B99D43", -- [2]
+			"BattlePet-0-000012BA9540", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4597\n\nStrategy added by DragonsAfterDark\nPriority 1: Evanescence\nPriority 2: Forboding Curse\nPriority 3: Quills all else\nBring in your next pet\nAny standard attack will finish the fight\n",
+		["name"] = "Deviate Chomper",
+		["tags"] = {
+			"111B1L5", -- [1]
+			"11131B9", -- [2]
+			"11191H3", -- [3]
+		},
+		["teamID"] = "team:156",
 		["targets"] = {
-			150923, -- [1]
+			116788, -- [1]
 		},
-		["groupID"] = "group:8",
+		["groupID"] = "group:7",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:388"] = {
 		["pets"] = {
@@ -6958,6 +6764,72 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
+	["team:283"] = {
+		["pets"] = {
+			"BattlePet-0-000012B01ED3", -- [1]
+			"BattlePet-0-000012B6763C", -- [2]
+			0, -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4274\n\nStrategy added by Shenk\nGood alternatives for #2 would be Kun-Lai Runt 1*1 and Lil' Bad Wolf 122.\n\nUse the secound half of the guide if you are using a P/S Iron Starlette.\n\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up. Cadavus dies\nFleshrender comes in\nTurn 1: Wind-Up\nTurn 2: Toxic Smoke\nTurn 3: Wind-Up. Fleshrender dies. (Sometimes your Iron Starlette dies here. In that case just skip the next turn and send in your Level Pet)\nBlight comes in\nTurn 4: Toxic Smoke. Iron Starlette dies\nSend in Level Pet\nTurn 1: Switch to Flayer Youngling\nTurn 2: Focus (Note: if your Flayer Youngling has a S/S breed you can skip this Turn)\nTurn 3-5: Rampage\nTurn 6: Triple Snap\n\nUse this guide if you are using a P/S Iron Starlette\nTurn 1: Wind-Up\nTurn 2: Pass\nTurn 3: Supercharge\nTurn 4: Wind-Up. Cadavus dies\nFleshrender comes in\nTurn 1: Wind-Up\nTurn 2: Toxic Smoke\nTurn 3: Wind-Up. Iron Starlette usually dies now. If it is still alive just use any ability in the next round, it will die then.\nBring in your Level Pet\nTurn 1: Swap to your Flayer Youngling\nTurn 2: Focus (Note: if your Flayer Youngling has a S/S breed you can skip this Turn)\nTurn 3-5: Rampage\nTurn 6: Triple Snap\n",
+		["name"] = "Gutretch",
+		["tags"] = {
+			"12171BB", -- [1]
+			"2127G2", -- [2]
+			"ZL", -- [3]
+		},
+		["teamID"] = "team:283",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
+		["targets"] = {
+			66639, -- [1]
+		},
+		["groupID"] = "group:11",
+	},
+	["team:213"] = {
+		["pets"] = {
+			"BattlePet-0-000012B6763C", -- [1]
+			"random:8", -- [2]
+			"random:0", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2048\n\nStrategy added by DragonsAfterDark\nScript thanks to Prudentius\n\nTurn 1: Deflection\nTurn 2-4: Rampage\nTurn 5+: Triple Snap until Beets dies\nRawly comes in\nTurn 1: Pass if you're slower than Rawly, Triple Snap if you're faster\nTurn 2: Deflection\nTurn 3: Triple Snap\nTurn 4+5: Rampage\nStinger comes in\nTurn 1: Rampage continues\nTurn 2+: Triple Snap until dead\nBring in your Beast pet\nAny standard Beast attack will finish the fight\n",
+		["name"] = "Desert Survivors",
+		["tags"] = {
+			"2227G2", -- [1]
+			"ZR8", -- [2]
+			"ZR0", -- [3]
+		},
+		["teamID"] = "team:213",
+		["targets"] = {
+			142054, -- [1]
+		},
+		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+	},
+	["team:379"] = {
+		["pets"] = {
+			"BattlePet-0-000012F20B9E", -- [1]
+			"BattlePet-0-000012B118A8", -- [2]
+			"random:3", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1957\n\nScript thanks to Kowh\n\nTurn 1: Black Claw\nTurn 2: Flock\nUse those two spells to kill both Sunny and Roots\nThen:: Flock until Ikky dies\nBring in your Sentinel's Companion\nPrio 1: Ethereal after Beaky lifts off\nPrio 2: Soulrush\nPrio 3: Dark Talon\n",
+		["name"] = "Training with Durian (Flyer)",
+		["tags"] = {
+			"21181FS", -- [1]
+			"22281GV", -- [2]
+			"ZR3", -- [3]
+		},
+		["teamID"] = "team:379",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
+		["targets"] = {
+			99035, -- [1]
+		},
+		["groupID"] = "group:12",
+	},
 	["team:109"] = {
 		["pets"] = {
 			"BattlePet-0-000012BA9562", -- [1]
@@ -6977,69 +6849,6 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:11",
 	},
-	["team:213"] = {
-		["pets"] = {
-			"BattlePet-0-000012B6763C", -- [1]
-			"random:8", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2048\n\nStrategy added by DragonsAfterDark\nScript thanks to Prudentius\n\nTurn 1: Deflection\nTurn 2-4: Rampage\nTurn 5+: Triple Snap until Beets dies\nRawly comes in\nTurn 1: Pass if you're slower than Rawly, Triple Snap if you're faster\nTurn 2: Deflection\nTurn 3: Triple Snap\nTurn 4+5: Rampage\nStinger comes in\nTurn 1: Rampage continues\nTurn 2+: Triple Snap until dead\nBring in your Beast pet\nAny standard Beast attack will finish the fight\n",
-		["name"] = "Desert Survivors",
-		["tags"] = {
-			"2227G2", -- [1]
-			"ZR8", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:213",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
-		["targets"] = {
-			142054, -- [1]
-		},
-		["groupID"] = "group:none",
-	},
-	["team:379"] = {
-		["pets"] = {
-			"BattlePet-0-000012F20B9E", -- [1]
-			"BattlePet-0-000012B118A8", -- [2]
-			"random:3", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1957\n\nScript thanks to Kowh\n\nTurn 1: Black Claw\nTurn 2: Flock\nUse those two spells to kill both Sunny and Roots\nThen:: Flock until Ikky dies\nBring in your Sentinel's Companion\nPrio 1: Ethereal after Beaky lifts off\nPrio 2: Soulrush\nPrio 3: Dark Talon\n",
-		["name"] = "Training with Durian (Flyer)",
-		["tags"] = {
-			"21181FS", -- [1]
-			"22281GV", -- [2]
-			"ZR3", -- [3]
-		},
-		["teamID"] = "team:379",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99035, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 1,
-		},
-	},
-	["team:76"] = {
-		["pets"] = {
-			"BattlePet-0-000012B146D0", -- [1]
-			"BattlePet-0-000012B146D1", -- [2]
-			"BattlePet-0-000012B146CB", -- [3]
-		},
-		["notes"] = "Strategy added by TobeDeleted#2852\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up\nTurn 4: Wind-Up\nTurn 5: Wind-Up\nTurn 6: Toxic Smoke until Wind-Up dies. You might get two goes with this if you're lucky. Swap in Mechanical Pandaren Dragonling\nTurn 7+: Breath until second pet dies.\nBlack Claw\nFlock\n",
-		["name"] = "Sharp as Flint",
-		["tags"] = {
-			"12181BB", -- [1]
-			"1225QC", -- [2]
-			"01181FS", -- [3]
-		},
-		["teamID"] = "team:76",
-		["targets"] = {
-			201802, -- [1]
-		},
-		["groupID"] = "group:none",
-	},
 	["team:27"] = {
 		["pets"] = {
 			"BattlePet-0-000012B146C7", -- [1]
@@ -7054,13 +6863,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:27",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			175782, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:68"] = {
 		["pets"] = {
@@ -7076,13 +6885,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:68",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			154915, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:411"] = {
 		["pets"] = {
@@ -7136,30 +6945,30 @@ Rematch5SavedTeams = {
 			"ZR3", -- [3]
 		},
 		["teamID"] = "team:359",
-		["groupID"] = "group:12",
-		["targets"] = {
-			104553, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 1,
 		},
-	},
-	["team:127"] = {
-		["pets"] = {
-			"BattlePet-0-000012B521D4", -- [1]
-			"BattlePet-0-000012B146CB", -- [2]
-			"BattlePet-0-000012B5C2FF", -- [3]
-		},
-		["notes"] = "Strategy added by Gershuun#1131\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Ikky\nTurn 1: Black Claw\nTurn 2: Flock\nTurn 3: Flock\nTurn 4: Flock\nTurn 5: Pass\nTurn 6: Savage Talon\nTurn 7: Black Claw (Ikky dies)\nBring in your Direbeak Hatchling\nTurn 1: Falcosaur Swarm!\n",
-		["name"] = "What Do You Mean, Mind Controlling Plants?",
-		["tags"] = {
-			"121316M", -- [1]
-			"11181FS", -- [2]
-			"12171TN", -- [3]
-		},
-		["teamID"] = "team:127",
 		["targets"] = {
-			141969, -- [1]
+			104553, -- [1]
+		},
+		["groupID"] = "group:12",
+	},
+	["team:76"] = {
+		["pets"] = {
+			"BattlePet-0-000012B146D0", -- [1]
+			"BattlePet-0-000012B146D1", -- [2]
+			"BattlePet-0-000012B146CB", -- [3]
+		},
+		["notes"] = "Strategy added by TobeDeleted#2852\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up\nTurn 4: Wind-Up\nTurn 5: Wind-Up\nTurn 6: Toxic Smoke until Wind-Up dies. You might get two goes with this if you're lucky. Swap in Mechanical Pandaren Dragonling\nTurn 7+: Breath until second pet dies.\nBlack Claw\nFlock\n",
+		["name"] = "Sharp as Flint",
+		["tags"] = {
+			"12181BB", -- [1]
+			"1225QC", -- [2]
+			"01181FS", -- [3]
+		},
+		["teamID"] = "team:76",
+		["targets"] = {
+			201802, -- [1]
 		},
 		["groupID"] = "group:none",
 	},
@@ -7182,46 +6991,46 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:98"] = {
+	["team:38"] = {
 		["pets"] = {
-			"BattlePet-0-000012B58B24", -- [1]
-			"BattlePet-0-000012B146D0", -- [2]
-			"BattlePet-0-000012B146CC", -- [3]
+			"BattlePet-0-000012BC0A5A", -- [1]
+			"BattlePet-0-0000083A0A6A", -- [2]
+			"BattlePet-0-00000D511EB1", -- [3]
 		},
-		["notes"] = "Strategy added by Taizun\nStrategy is based on another strategy by [url=https://www.wow-petguide.com/?user=4320]Lazey[/url], found [url=https://www.wow-petguide.com/?Strategy=9906]here[/url], but with enough changes that I felt a new strategy and updated tdscript was needed.Strategy has only been tested with P/P, P/B and P/S Iron Starlette, please leave a comment if other variations work as well.\n\nTurn 1: Decoy\nTurn 2+: Missile until Shelby HP <= 618, then Explode\nShelby dies, bring in Iron Starlette\nTurn 1-2: 2x Wind-Up\nTinyhoof dies, Glitterwing comes in\nTurn 3+: Toxic Smoke until Iron Starlette dies\nBring in Chrominius\nTurn 1: Surge of Power if enemy HP <= 1110, otherwise Howl\nTurn 2: Surge of Power\n",
-		["name"] = "Cliffs of Bastion",
+		["notes"] = "Strategy added by WhyDaRumGone\n1st/2nd Pet doesn't have to be flier/above 300speed but suggested;(Put slower pets in slot 2)If health pool of Exploders is >2811 (1440max per), murder insta kill\n\nTurn 1: Explode\nBring in your Crimson Spore / 2nd pet\nTurn 2: Explode\nBaa'lial / Death Seeker / Baa'l comes in\nTurn 3: Murder the Innocent\n",
+		["name"] = "Adinakon",
 		["tags"] = {
-			"122CAJ", -- [1]
-			"12081BB", -- [2]
-			"0126140", -- [3]
+			"0015QC", -- [1]
+			"00261G1", -- [2]
+			"02062V1", -- [3]
 		},
-		["teamID"] = "team:98",
+		["teamID"] = "team:38",
 		["targets"] = {
-			173131, -- [1]
+			201849, -- [1]
 		},
 		["groupID"] = "group:none",
 	},
-	["team:117"] = {
+	["team:401"] = {
 		["pets"] = {
-			"BattlePet-0-000012C2D868", -- [1]
-			"BattlePet-0-000012B14EAE", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000012B17368", -- [1]
+			"random:6", -- [2]
+			"random:6", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3607\n\nStrategy added by DragonsAfterDark\n13 January 24\n\n1. Updated Toxic Skin instructions.\n2. Updated script. I've added a section for the Shiverweb Broodling as the third pet, or you can slot another Dragonhawk. with similar abilities\n\nPriority 1: Toxic Skin:\n1: At 1 round remaining if you're slower\n2: When it falls off if you're faster\nPriority 2: Scratch all else\nPriority 3: If the Cockroach is up while your Glutted Bleeder is still alive, use Burrow\n\nBring in your Golden Dragonhawk Hatchling\nPriority 1: Pass during any Undead rounds / Dodges\nRoach:: Claw until they die\nMech & : \nUndead:: Flamethrower > Conflagrate > Flamethrower until they die\n",
-		["name"] = "Living Permafrost",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/12727\n\nStrategy added by Kingofvaarst#2227\nI did this with 3x Anomalus, but the first one soloed alle of them dying in the proces. if you were to be unlucky im sure whatever magic pet would do the job :D\n\nScript thanks to Rinoe\n\nPrio 1: Void Nova\nPrio 2: Poison Protocol\nPrio 3: Corrosion\nFollow the priorities and you should be golden :D\n",
+		["name"] = "Training with the Nightwatchers (Magic)",
 		["tags"] = {
-			"11172AR", -- [1]
-			"12234E", -- [2]
-			"ZR0", -- [3]
+			"22142OQ", -- [1]
+			"ZR6", -- [2]
+			"ZR6", -- [3]
 		},
-		["teamID"] = "team:117",
+		["teamID"] = "team:401",
 		["preferences"] = {
-			["minXP"] = 25,
+			["minXP"] = 1,
 		},
 		["targets"] = {
-			146181, -- [1]
+			106552, -- [1]
 		},
-		["groupID"] = "group:6",
+		["groupID"] = "group:12",
 	},
 	["team:83"] = {
 		["pets"] = {
@@ -7413,27 +7222,24 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:325"] = {
+	["team:127"] = {
 		["pets"] = {
-			"BattlePet-0-000012B399CF", -- [1]
-			"BattlePet-0-00000839A881", -- [2]
-			"random:8", -- [3]
+			"BattlePet-0-000012B521D4", -- [1]
+			"BattlePet-0-000012B146CB", -- [2]
+			"BattlePet-0-000012B5C2FF", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/696\n\nScript thanks to AramilGaeda\n\nTurn 1: Comeback\nTurns 2-4: Stampede\nTurn 5: Hoof - Mist Wraith resurrects\nTurns 6+: Stampede\nCrawdead comes in and gets hit in the face\nThen:: Comeback - your Summid Kid dies\nBring in your Fel Pup\nTurn 1: Diseased Bite - Crawdead resurrects\nTurn 2: Crouch - Crawdead dies\nGnaw comes in\nTurns 1+: Diseased Bite until Gnaw dies\n\nIf your Fel Pup doesn’t manage, bring in your third pet and clean up with standard attacks.\n",
-		["name"] = "Jarrun's Ladder (Beast)",
+		["notes"] = "Strategy added by Gershuun#1131\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Ikky\nTurn 1: Black Claw\nTurn 2: Flock\nTurn 3: Flock\nTurn 4: Flock\nTurn 5: Pass\nTurn 6: Savage Talon\nTurn 7: Black Claw (Ikky dies)\nBring in your Direbeak Hatchling\nTurn 1: Falcosaur Swarm!\n",
+		["name"] = "What Do You Mean, Mind Controlling Plants?",
 		["tags"] = {
-			"1125L7", -- [1]
-			"21151JS", -- [2]
-			"ZR8", -- [3]
+			"121316M", -- [1]
+			"11181FS", -- [2]
+			"12171TN", -- [3]
 		},
-		["teamID"] = "team:325",
-		["groupID"] = "group:12",
+		["teamID"] = "team:127",
 		["targets"] = {
-			105455, -- [1]
+			141969, -- [1]
 		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
+		["groupID"] = "group:none",
 	},
 	["team:392"] = {
 		["pets"] = {
@@ -7454,46 +7260,46 @@ Rematch5SavedTeams = {
 			104970, -- [1]
 		},
 	},
-	["team:401"] = {
+	["team:325"] = {
 		["pets"] = {
-			"BattlePet-0-000012B17368", -- [1]
-			"random:6", -- [2]
-			"random:6", -- [3]
+			"BattlePet-0-000012B399CF", -- [1]
+			"BattlePet-0-00000839A881", -- [2]
+			"random:8", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/12727\n\nStrategy added by Kingofvaarst#2227\nI did this with 3x Anomalus, but the first one soloed alle of them dying in the proces. if you were to be unlucky im sure whatever magic pet would do the job :D\n\nScript thanks to Rinoe\n\nPrio 1: Void Nova\nPrio 2: Poison Protocol\nPrio 3: Corrosion\nFollow the priorities and you should be golden :D\n",
-		["name"] = "Training with the Nightwatchers (Magic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/696\n\nScript thanks to AramilGaeda\n\nTurn 1: Comeback\nTurns 2-4: Stampede\nTurn 5: Hoof - Mist Wraith resurrects\nTurns 6+: Stampede\nCrawdead comes in and gets hit in the face\nThen:: Comeback - your Summid Kid dies\nBring in your Fel Pup\nTurn 1: Diseased Bite - Crawdead resurrects\nTurn 2: Crouch - Crawdead dies\nGnaw comes in\nTurns 1+: Diseased Bite until Gnaw dies\n\nIf your Fel Pup doesn’t manage, bring in your third pet and clean up with standard attacks.\n",
+		["name"] = "Jarrun's Ladder (Beast)",
 		["tags"] = {
-			"22142OQ", -- [1]
-			"ZR6", -- [2]
-			"ZR6", -- [3]
+			"1125L7", -- [1]
+			"21151JS", -- [2]
+			"ZR8", -- [3]
 		},
-		["teamID"] = "team:401",
-		["groupID"] = "group:12",
-		["targets"] = {
-			106552, -- [1]
-		},
+		["teamID"] = "team:325",
 		["preferences"] = {
-			["minXP"] = 1,
+			["minXP"] = 25,
 		},
-	},
-	["team:427"] = {
-		["pets"] = {
-			"BattlePet-0-000012B99B2E", -- [1]
-			"random:2", -- [2]
-			"random:2", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3509\n\nStrategy added by DragonsAfterDark\nVideo for Fight (https://youtu.be/ppIiTwudh1c?t=163)\n\nTurn 1: Twilight Meteorite\nTurn 2: Phase Shift\nTurn 3-6: Tail Sweep\nTurn 7: Phase Shift\nTurn 8: Tail Sweep\nTurn 9: Twilight Meteorite\nSalty Bird comes in\nTurn 1+: Tail Sweep until Salty Bird dies\nGrommet comes in\nTurn 1: Phase Shift\nTurn 2: Tail Sweep\nTurn 3: Twilight Meteorite\n",
-		["name"] = "Fight Night: Bodhi Sunwayver (Dragon)",
-		["tags"] = {
-			"112B211", -- [1]
-			"ZR2", -- [2]
-			"ZR2", -- [3]
-		},
-		["teamID"] = "team:427",
-		["groupID"] = "group:12",
 		["targets"] = {
-			99210, -- [1]
+			105455, -- [1]
 		},
+		["groupID"] = "group:12",
+	},
+	["team:117"] = {
+		["pets"] = {
+			"BattlePet-0-000012C2D868", -- [1]
+			"BattlePet-0-000012B14EAE", -- [2]
+			"random:0", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3607\n\nStrategy added by DragonsAfterDark\n13 January 24\n\n1. Updated Toxic Skin instructions.\n2. Updated script. I've added a section for the Shiverweb Broodling as the third pet, or you can slot another Dragonhawk. with similar abilities\n\nPriority 1: Toxic Skin:\n1: At 1 round remaining if you're slower\n2: When it falls off if you're faster\nPriority 2: Scratch all else\nPriority 3: If the Cockroach is up while your Glutted Bleeder is still alive, use Burrow\n\nBring in your Golden Dragonhawk Hatchling\nPriority 1: Pass during any Undead rounds / Dodges\nRoach:: Claw until they die\nMech & : \nUndead:: Flamethrower > Conflagrate > Flamethrower until they die\n",
+		["name"] = "Living Permafrost",
+		["tags"] = {
+			"11172AR", -- [1]
+			"12234E", -- [2]
+			"ZR0", -- [3]
+		},
+		["teamID"] = "team:117",
+		["targets"] = {
+			146181, -- [1]
+		},
+		["groupID"] = "group:6",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
@@ -7517,46 +7323,46 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:283"] = {
+	["team:98"] = {
 		["pets"] = {
-			"BattlePet-0-000012B01ED3", -- [1]
-			"BattlePet-0-000012B6763C", -- [2]
-			0, -- [3]
+			"BattlePet-0-000012B58B24", -- [1]
+			"BattlePet-0-000012B146D0", -- [2]
+			"BattlePet-0-000012B146CC", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4274\n\nStrategy added by Shenk\nGood alternatives for #2 would be Kun-Lai Runt 1*1 and Lil' Bad Wolf 122.\n\nUse the secound half of the guide if you are using a P/S Iron Starlette.\n\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up. Cadavus dies\nFleshrender comes in\nTurn 1: Wind-Up\nTurn 2: Toxic Smoke\nTurn 3: Wind-Up. Fleshrender dies. (Sometimes your Iron Starlette dies here. In that case just skip the next turn and send in your Level Pet)\nBlight comes in\nTurn 4: Toxic Smoke. Iron Starlette dies\nSend in Level Pet\nTurn 1: Switch to Flayer Youngling\nTurn 2: Focus (Note: if your Flayer Youngling has a S/S breed you can skip this Turn)\nTurn 3-5: Rampage\nTurn 6: Triple Snap\n\nUse this guide if you are using a P/S Iron Starlette\nTurn 1: Wind-Up\nTurn 2: Pass\nTurn 3: Supercharge\nTurn 4: Wind-Up. Cadavus dies\nFleshrender comes in\nTurn 1: Wind-Up\nTurn 2: Toxic Smoke\nTurn 3: Wind-Up. Iron Starlette usually dies now. If it is still alive just use any ability in the next round, it will die then.\nBring in your Level Pet\nTurn 1: Swap to your Flayer Youngling\nTurn 2: Focus (Note: if your Flayer Youngling has a S/S breed you can skip this Turn)\nTurn 3-5: Rampage\nTurn 6: Triple Snap\n",
-		["name"] = "Gutretch",
+		["notes"] = "Strategy added by Taizun\nStrategy is based on another strategy by [url=https://www.wow-petguide.com/?user=4320]Lazey[/url], found [url=https://www.wow-petguide.com/?Strategy=9906]here[/url], but with enough changes that I felt a new strategy and updated tdscript was needed.Strategy has only been tested with P/P, P/B and P/S Iron Starlette, please leave a comment if other variations work as well.\n\nTurn 1: Decoy\nTurn 2+: Missile until Shelby HP <= 618, then Explode\nShelby dies, bring in Iron Starlette\nTurn 1-2: 2x Wind-Up\nTinyhoof dies, Glitterwing comes in\nTurn 3+: Toxic Smoke until Iron Starlette dies\nBring in Chrominius\nTurn 1: Surge of Power if enemy HP <= 1110, otherwise Howl\nTurn 2: Surge of Power\n",
+		["name"] = "Cliffs of Bastion",
 		["tags"] = {
-			"12171BB", -- [1]
-			"2127G2", -- [2]
-			"ZL", -- [3]
+			"122CAJ", -- [1]
+			"12081BB", -- [2]
+			"0126140", -- [3]
 		},
-		["teamID"] = "team:283",
-		["groupID"] = "group:11",
+		["teamID"] = "team:98",
 		["targets"] = {
-			66639, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 1,
-		},
-	},
-	["team:38"] = {
-		["pets"] = {
-			"BattlePet-0-000012BC0A5A", -- [1]
-			"BattlePet-0-0000083A0A6A", -- [2]
-			"BattlePet-0-00000D511EB1", -- [3]
-		},
-		["notes"] = "Strategy added by WhyDaRumGone\n1st/2nd Pet doesn't have to be flier/above 300speed but suggested;(Put slower pets in slot 2)If health pool of Exploders is >2811 (1440max per), murder insta kill\n\nTurn 1: Explode\nBring in your Crimson Spore / 2nd pet\nTurn 2: Explode\nBaa'lial / Death Seeker / Baa'l comes in\nTurn 3: Murder the Innocent\n",
-		["name"] = "Adinakon",
-		["tags"] = {
-			"0015QC", -- [1]
-			"00261G1", -- [2]
-			"02062V1", -- [3]
-		},
-		["teamID"] = "team:38",
-		["targets"] = {
-			201849, -- [1]
+			173131, -- [1]
 		},
 		["groupID"] = "group:none",
+	},
+	["team:428"] = {
+		["pets"] = {
+			"BattlePet-0-000006E4C77C", -- [1]
+			"BattlePet-0-000012B485C2", -- [2]
+			"random:7", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/868\n\nScript thanks to Zaphod\n\nTurn 1: Call Blizzard\nTurn 2: Deep Freeze\nTurns 3+: Magic Hat until Salty Bird dies\nItchy comes back in\nTurn 1: Deep Freeze\nTurn 2: Call Blizzard - this hits Grommet\nTurns 3+: Magic Hat until Tiny Snowman dies\nBring in your Pandaren Water Spirit\nTurn 1: Whirlpool\nTurn 2: Dive\nTurns 3+: Water Jet until Grommet dies\nItchy comes in a last time\nTurns 1+: Water Jet until Itchy is dead\n",
+		["name"] = "Fight Night: Bodhi Sunwayver (Elemental)",
+		["tags"] = {
+			"21233L", -- [1]
+			"1219R4", -- [2]
+			"ZR7", -- [3]
+		},
+		["teamID"] = "team:428",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			99210, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:431"] = {
 		["pets"] = {
@@ -7572,50 +7378,56 @@ Rematch5SavedTeams = {
 			"ZR6", -- [3]
 		},
 		["teamID"] = "team:431",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99210, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
-	},
-	["team:293"] = {
-		["pets"] = {
-			"BattlePet-0-000012EB3FDF", -- [1]
-			"BattlePet-0-000012F20B9E", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Strategy added by Shin\nI've tested this on 10 characters and it has worked every time.Pet battle script included.\n\nTurn 1: Metal Fist\nTurn 2: Build Turret\nTurn 3: Swap to your Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\n~: Ikky should kill thistle or the turret will finish it off\nBring in your Clockwork Gnome\nTurn 1+: Any standard attack will finish the fight\n",
-		["name"] = "Stand Up to Bullies",
-		["tags"] = {
-			"111B8L", -- [1]
-			"11181FS", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:293",
-		["groupID"] = "group:none",
 		["targets"] = {
-			105009, -- [1]
+			99210, -- [1]
 		},
+		["groupID"] = "group:12",
 	},
-	["team:273"] = {
+	["team:427"] = {
 		["pets"] = {
-			"BattlePet-0-000012C56FF7", -- [1]
-			"BattlePet-0-000008968258", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
+			"BattlePet-0-000012B99B2E", -- [1]
+			"random:2", -- [2]
+			"random:2", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/404\n\nScript thanks to Camlas\n\nTurn 1: Bubble\nTurns 2+: Water Jet until Ruby is dead - your Mud Jumper should survive with 200-500 health\nCrystallus comes in\nTurn 1: Swap to your Anubisath Idol\nTurn 2: Stoneskin\nTurns 3+: Crush until Crystallus is dead\nFracture comes in\nTurn 1: Stoneskin\nTurn 2: Crush\nTurn 3: Crush\nTurn 4: Deflection\nTurns 5+: Crush until your Idol goes down - often it manages to finish the fight!\nBring back your Mud Jumper\nTurn 1: Bubble\nTurns 2+: Water Jet until Fracture is dead\n",
-		["name"] = "Bordin Steadyfist",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3509\n\nStrategy added by DragonsAfterDark\nVideo for Fight (https://youtu.be/ppIiTwudh1c?t=163)\n\nTurn 1: Twilight Meteorite\nTurn 2: Phase Shift\nTurn 3-6: Tail Sweep\nTurn 7: Phase Shift\nTurn 8: Tail Sweep\nTurn 9: Twilight Meteorite\nSalty Bird comes in\nTurn 1+: Tail Sweep until Salty Bird dies\nGrommet comes in\nTurn 1: Phase Shift\nTurn 2: Tail Sweep\nTurn 3: Twilight Meteorite\n",
+		["name"] = "Fight Night: Bodhi Sunwayver (Dragon)",
 		["tags"] = {
-			"121C1D1", -- [1]
-			"1216143", -- [2]
-			"11261CI", -- [3]
+			"112B211", -- [1]
+			"ZR2", -- [2]
+			"ZR2", -- [3]
 		},
-		["teamID"] = "team:273",
-		["groupID"] = "group:11",
+		["teamID"] = "team:427",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			66815, -- [1]
+			99210, -- [1]
+		},
+		["groupID"] = "group:12",
+	},
+	["team:188"] = {
+		["pets"] = {
+			"BattlePet-0-000006E4C79F", -- [1]
+			"BattlePet-0-000012B99B2E", -- [2]
+			"BattlePet-0-000012B99CFC", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6045\n\nStrategy added by Shenk\nAny pet with a cleave attack in the 2nd slot should fine. Sometimes Blightbreath will solo the fight.\n\nTurn 1: Acid Rain\nTurn 2+: Dreadful Breath until either the fight is won or Blightbreath is dead\nTurn 3: If necessary bring in Twilight Clutch-Sister and finish with Twilight Meteorite\n",
+		["name"] = "Belchling",
+		["tags"] = {
+			"12171TD", -- [1]
+			"112B211", -- [2]
+			"11132G6", -- [3]
+		},
+		["teamID"] = "team:188",
+		["targets"] = {
+			150923, -- [1]
+		},
+		["groupID"] = "group:8",
+		["preferences"] = {
+			["minXP"] = 1,
 		},
 	},
 	["team:240"] = {
@@ -7637,62 +7449,65 @@ Rematch5SavedTeams = {
 			["minXP"] = 25,
 		},
 	},
-	["team:284"] = {
+	["team:174"] = {
 		["pets"] = {
-			"BattlePet-0-000012B48707", -- [1]
-			"BattlePet-0-000008968258", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
+			"BattlePet-0-000012B5C607", -- [1]
+			"BattlePet-0-000012B66DA8", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/424\n\nScript thanks to Jimmo\n\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge\nTurn 5: Arcane Storm\nTurn 6: Tail Sweep \nTurn 7: Tail Sweep \nTurns 8-10: Mana Surge\n\nIf your Nexus Whelpling dies before the enemy pets, bring in your Anubisath and finish up with Crush\n",
-		["name"] = "Beegle Blastfuse",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1834\n\nStrategy added by NostrA#2338\nProps to Aranesh for his/her strategy, I just changed the TD Script and Strategy to make Teroclaw viable again\n\n\n\nTurn 1-3: use Rampage\nTurn 4+: use Thrash until Klutz's Battle Rat dies\nan enemy Pet comes in\nTurn 1+: use Rampage on cooldown otherwise use Thrash until your Kun-Lai Runt dies\nBring in your Teroclaw Hatchling\nenemy HP < 618: use Ravage\nif the enemy is a Flying Type, you want to use Ravage when the enemy HP is under 406 \nwhen not active: use Nature's Ward\nelse: use Alpha Strike",
+		["name"] = "Klutz's Battle Rat",
 		["tags"] = {
-			"122814D", -- [1]
-			"1116143", -- [2]
-			"11261CI", -- [3]
+			"111814E", -- [1]
+			"22271C8", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:284",
-		["groupID"] = "group:11",
+		["teamID"] = "team:174",
 		["targets"] = {
-			66635, -- [1]
+			119343, -- [1]
 		},
-	},
-	["team:343"] = {
-		["pets"] = {
-			"BattlePet-0-000012F0D9B3", -- [1]
-			"BattlePet-0-000006E4C7B9", -- [2]
-			"BattlePet-0-000006E4C79F", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/20065\n\nStrategy added by Kalagren\nBest breeds are B/B in first slot and H/P in 3rd slot.\n\nSharpclaw comes in\nTurn 1: Void Slap\nTurn 2: Unholy Ascension\nBring in your Soulbroken Whelpling\nPrio 1: Amplify Magic when Whelpling is in Undead phase\nPrio 2: Arcane Storm\nPrio 3: Shadow Talon (chosen for its higher low end than its slot 1 counterpart)\nBring in your Blightbreath\nSpam: Toxic Smoke\n",
-		["name"] = "My Beast's Bidding (Undead)",
-		["tags"] = {
-			"02232V0", -- [1]
-			"222B1TE", -- [2]
-			"02271TD", -- [3]
-		},
-		["teamID"] = "team:343",
-		["groupID"] = "group:12",
-		["targets"] = {
-			98270, -- [1]
-		},
-	},
-	["team:249"] = {
-		["pets"] = {
-			"BattlePet-0-00000D5451F8", -- [1]
-			"BattlePet-0-00000D511EB1", -- [2]
-			0, -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/17855\n\nStrategy added by WhyDaRumGone\nTurn 1: Murder the Innocent\nTurn 2: Swap to your Death Seeker\nTurn 3: Murder the Innocent\nTurn 4: Eyeblast\nTurn 5: Pass, Death Seeker dies.\nBring in your Level Pet\nTurn 6: Swap to your Baa'l\nTurn 7: Darkflame\nTurn 8: Murder the Innocent\n",
-		["name"] = "Yu'la, Broodling of Yu'lon (2)",
-		["tags"] = {
-			"220329G", -- [1]
-			"12062V1", -- [2]
-			"ZL", -- [3]
-		},
-		["teamID"] = "team:249",
-		["groupID"] = "group:1",
+		["groupID"] = "group:4",
 		["preferences"] = {
-			["minXP"] = 1,
+			["minXP"] = 25,
 		},
+	},
+	["team:36"] = {
+		["pets"] = {
+			"BattlePet-0-000012B521D4", -- [1]
+			"BattlePet-0-000012B482D1", -- [2]
+			"random:0", -- [3]
+		},
+		["notes"] = "Strategy added by Halyanth#1611\nI tried it the first time today. I will update the strategy as I continue to play with it. \n\nTurn 1: Haunt\nBring in Kneebitter\nTurn 2: Black Claw\nTurn 3: Hunting Party\nTurn 4: Hunting Party continues\nTurn 5: Leap\n",
+		["name"] = "Flow - Rare",
+		["tags"] = {
+			"221316M", -- [1]
+			"221514S", -- [2]
+			"ZR0", -- [3]
+		},
+		["teamID"] = "team:36",
+		["targets"] = {
+			200697, -- [1]
+		},
+		["groupID"] = "group:none",
+	},
+	["team:41"] = {
+		["pets"] = {
+			"BattlePet-0-000012C4A66F", -- [1]
+			"BattlePet-0-00000D5451F8", -- [2]
+			"BattlePet-0-000012B3956C", -- [3]
+		},
+		["notes"] = "Strategy added by KaikkuQQ#2332\nTurn 1: Bubble\nTurns 2-4: Stampede\nTurn 5: Pinch until Main-gauche die\nAn enemy pet comes in\nTurn 6: Bubble if possible if not go next turn\nTurns 7-9: Stampede until your pet die\nBring in your Baa'l\nTurn 1: Scorched Earth\nTurn 2-...: Shadowflame until Postier-lémentaire pestiféré die\nAn enemy pet comes in\nTurn 3: Murder the Innocent\nTurn 4: Shadowflame until Baa'l die, if isn't already\nBring in your Glimmershell Scuttler\nTurn 1: Bubble\nTurn 2-3: Pinch\nTurns 4-5: Dive\nRepeat 3 last action until WIN.\n",
+		["name"] = "Postmaster Malown",
+		["tags"] = {
+			"111C2AI", -- [1]
+			"122329G", -- [2]
+			"12292IN", -- [3]
+		},
+		["teamID"] = "team:41",
+		["targets"] = {
+			155413, -- [1]
+		},
+		["groupID"] = "group:6",
 	},
 	["team:345"] = {
 		["pets"] = {
@@ -7713,23 +7528,23 @@ Rematch5SavedTeams = {
 			99150, -- [1]
 		},
 	},
-	["team:304"] = {
+	["team:405"] = {
 		["pets"] = {
-			"BattlePet-0-000012BAF760", -- [1]
-			"BattlePet-0-000012B3E786", -- [2]
-			"BattlePet-0-000012B01E47", -- [3]
+			"BattlePet-0-000012C6347A", -- [1]
+			"BattlePet-0-000012B528FE", -- [2]
+			"BattlePet-0-000012B399CF", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9568\n\nStrategy added by Orgulas\nedit: TD script added, thx Wist!\n\nTurn 1: Bubble\nTurn 2: Water Jet\nTurn 3: Water Jet If your HP seems like Benax will die next hit use Swarm of Flies\nTurn 4: Swarm of Flies if not previous Benax dies\nTurn 5:  get in your Chitterspine Skitterling\nTurn 6: Black Claw\nTurn 7: Swarm Chitterspine Skitterling might die during Swarm\nTurn 8: get in Sewer-Pipe Jelly\nSqueeze\nTentacle Slap you shold be done by now, if not, use Tentacle Slap again\n",
-		["name"] = "Flummoxed (Aquatic)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/864\n\nStrategy added by Ssparkles\nScript thanks to isthevao\n\nTurns 1+2: Burrow\nTurn 3: Sticky Goo\nTurn 4: Consume\nTurn 5: Sticky Goo\nTurn 6: Consume\nTurns 7+8: Burrow - Jinx dies\nRocket comes in\nTurns 1+: Continue like above, keep Burrow on cooldown and alternate between Consume and Sticky Goo until your Maggot dies\nBring in Xu-Fu, Cub of Xuen\nTurn 1: Prowl\nTurn 2: Moonfire\nTurns 3+: Spirit Claws until Xu-Fu, Cub of Xuen dies\nBring in your Summit Kid\nTurn 1: Chew\nTurns 2+: Stampede\n",
+		["name"] = "Fight Night: Tiffany Nelson (Beast)",
 		["tags"] = {
-			"12171SE", -- [1]
-			"022B2IO", -- [2]
-			"10291MQ", -- [3]
+			"2223E2", -- [1]
+			"122417I", -- [2]
+			"2025L7", -- [3]
 		},
-		["teamID"] = "team:304",
+		["teamID"] = "team:405",
 		["groupID"] = "group:12",
 		["targets"] = {
-			97709, -- [1]
+			97804, -- [1]
 		},
 	},
 	["team:269"] = {
@@ -7751,38 +7566,41 @@ Rematch5SavedTeams = {
 			["minXP"] = 25,
 		},
 	},
-	["team:266"] = {
+	["team:343"] = {
 		["pets"] = {
-			"BattlePet-0-000012B3995F", -- [1]
-			"BattlePet-0-000012B4C910", -- [2]
-			"BattlePet-0-000012B4838C", -- [3]
+			"BattlePet-0-000012F0D9B3", -- [1]
+			"BattlePet-0-000006E4C7B9", -- [2]
+			"BattlePet-0-000006E4C79F", -- [3]
 		},
-		["name"] = "healfuck",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/20065\n\nStrategy added by Kalagren\nBest breeds are B/B in first slot and H/P in 3rd slot.\n\nSharpclaw comes in\nTurn 1: Void Slap\nTurn 2: Unholy Ascension\nBring in your Soulbroken Whelpling\nPrio 1: Amplify Magic when Whelpling is in Undead phase\nPrio 2: Arcane Storm\nPrio 3: Shadow Talon (chosen for its higher low end than its slot 1 counterpart)\nBring in your Blightbreath\nSpam: Toxic Smoke\n",
+		["name"] = "My Beast's Bidding (Undead)",
 		["tags"] = {
-			"11252PJ", -- [1]
-			"112434H", -- [2]
-			"222814F", -- [3]
+			"02232V0", -- [1]
+			"222B1TE", -- [2]
+			"02271TD", -- [3]
 		},
-		["teamID"] = "team:266",
-		["groupID"] = "group:none",
-	},
-	["team:301"] = {
-		["pets"] = {
-			"BattlePet-0-000007C1D04D", -- [1]
-			"BattlePet-0-000012C8B182", -- [2]
-			"BattlePet-0-000012B67649", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3892\n\nStrategy added by Berendain\nMinfernal and Netherspace Abyssal can be substituted in place of Abyssius.  Apply Immolation and Immolate, then use Meteor Strike, before using Immolate until your pet dies.\n\nIf you don't have an S/S Nordrassil Wisp, you can substitute it with other pets.  The best alternatives:  \n\nHyjal Wisp:  Use wish to heal up when you drop below 900 HP, use Sear Magic to cleanse poison, and kill Remy with Arcane Blast.\n\nSapphire Cub:  Screech, then Prowl, then Pounce until Remy dies.\n\nTurn 1: Immolation\nTurn 2: Volcano - if you are stunned, just pass and then use Volcano next turn, proceeding as written.\nTurn 3: Flamethrower until Abyssius dies.  Gusteau should die around the same time.\nRemy comes in\nBring in your Nordrassil Wisp\nTurn 1: Flash\nTurn 2: Light\nTurn 3: Pass\nTurn 4: Soul Ward\nTurns 5+: Repeat the previous four turns until Remy dies.\nDinner comes in\nTurn 1: Swap to your Enchanted Pen\nTurn 2: Quills\nTurn 3: Evanescence\nTurn 4: Quills\nTurn 5: Nevermore\nTurn 6: Pass if you were polymorphed, but otherwise, Quills until Dinner dies.  He is unable to use Frog Kiss again.\n",
-		["name"] = "Chopped (Magic)",
-		["tags"] = {
-			"11141IO", -- [1]
-			"2115H3", -- [2]
-			"112B1L5", -- [3]
-		},
-		["teamID"] = "team:301",
+		["teamID"] = "team:343",
 		["groupID"] = "group:12",
 		["targets"] = {
-			105674, -- [1]
+			98270, -- [1]
+		},
+	},
+	["team:128"] = {
+		["pets"] = {
+			"BattlePet-0-000012B66DA8", -- [1]
+			"BattlePet-0-000012BA1A7F", -- [2]
+			"random:0", -- [3]
+		},
+		["name"] = "Flowing Pandaren Spirit",
+		["tags"] = {
+			"21071C8", -- [1]
+			"11261CI", -- [2]
+			"ZR0", -- [3]
+		},
+		["teamID"] = "team:128",
+		["groupID"] = "group:11",
+		["targets"] = {
+			68462, -- [1]
 		},
 	},
 	["team:376"] = {
@@ -7860,24 +7678,27 @@ Rematch5SavedTeams = {
 			97709, -- [1]
 		},
 	},
-	["team:24"] = {
+	["team:32"] = {
 		["pets"] = {
-			"BattlePet-0-000012BA9572", -- [1]
-			"BattlePet-0-000012BEEEA6", -- [2]
-			"BattlePet-0-00000D511EB1", -- [3]
+			"BattlePet-0-000012B4838C", -- [1]
+			"random:0", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Strategy added by Lazey\nTurn 1: Wild Magic\nTurn 2: Illuminate\nTurn 3: Swap to your Seaborne Spore\nTurn 4: Glowing Toxin\nTurn 5: Explode\nBring in your Death Seeker\nTurn 6: Murder the Innocent\n",
-		["name"] = "Tremblor - Legendary",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13523\n\nStrategy added by Doc#1345\nCredit to Nilremife\n\nTurn 1: Breath\nTurn 2: Breath\nTurn 3: Ancient Blessing\nTurn 4: Emerald Dream\nRepeat these step until Gelatinous is defeat. Does not matter what pet 2 or 3 are, they will die and your dragon will be near full health.\n",
+		["name"] = "Gelatinous",
 		["tags"] = {
-			"021839U", -- [1]
-			"22241G3", -- [2]
-			"02062V1", -- [3]
+			"112814F", -- [1]
+			"ZR0", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:24",
+		["teamID"] = "team:32",
 		["targets"] = {
-			200692, -- [1]
+			175784, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:179"] = {
 		["pets"] = {
@@ -7898,65 +7719,62 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:none",
 	},
-	["team:209"] = {
+	["team:236"] = {
 		["pets"] = {
-			"BattlePet-0-000012B99945", -- [1]
-			"BattlePet-0-000012B6764A", -- [2]
-			"BattlePet-0-000012692A6E", -- [3]
+			"BattlePet-0-000012B01EED", -- [1]
+			"BattlePet-0-000012B01EEC", -- [2]
+			"random:4", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/15795\n\nStrategy added by GCSuns\nTurn 1: Call Lightning\nTurn 2: Swarm of Flies\nTurn 3: Zap\nTurn 4: Zap\nTurn 5: Ranishu Runt dies. Switch in Mechanical Axebeak\nTurn 6: Decoy. Haywire if needed.\n",
-		["name"] = "Liz",
+		["notes"] = "Strategy added by Dreamingdust\nTurn 1: Spiritfire Beam\nTurn 2: Soulrush\nContinue even if the pet got stunned\nTurn 3: Spiritfire Bolt\nTurn 4: Spiritfire Bolt until Fragment of Anger is dead\nFragment of Desire comes in\nTurn 5: Soulrush\nTurn 6: Spiritfire Bolt until fight is over, or Fragment of Desire is dead\n\nAny standard attack will finish the fight\n",
+		["name"] = "Are They Not Beautiful? (Undead) (2)",
 		["tags"] = {
-			"12242BH", -- [1]
-			"22171BR", -- [2]
-			"11163AN", -- [3]
+			"11171IP", -- [1]
+			"10191IR", -- [2]
+			"ZR4", -- [3]
 		},
-		["teamID"] = "team:209",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
-		["targets"] = {
-			161650, -- [1]
-		},
-		["groupID"] = "group:5",
-	},
-	["team:221"] = {
-		["pets"] = {
-			"BattlePet-0-000006E4C754", -- [1]
-			"BattlePet-0-000012BAF77C", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/15372\n\nStrategy added by DragonsAfterDark\nVideo for Fight (https://www.youtube.com/watch?v=VBQl8Mo_g7Y)\n\nTurn 1: Arcane Storm\nTurn 2: Consume Magic\nTurn 3: Swap to your Singing Sunflower\nTurn 4: Sunlight\nTurn 5: Photosynthesis\nTurn 6: Swap to your Court Scribe\nRepeat from Turn 1 until Cindy & Dah'da die\n~*~: At that point Alex should be the only one left, so leave your Singing Sunflower in, then:\nTurn 1: Solar Beam until Alex is dead \n",
-		["name"] = "Wrathion",
-		["tags"] = {
-			"01181SB", -- [1]
-			"212C93", -- [2]
-			"00061CI", -- [3]
-		},
-		["teamID"] = "team:221",
-		["targets"] = {
-			71924, -- [1]
-		},
-		["groupID"] = "group:11",
-	},
-	["team:150"] = {
-		["pets"] = {
-			"BattlePet-0-000012BEEEA6", -- [1]
-			"BattlePet-0-000012B146D1", -- [2]
-			"BattlePet-0-000012B673F3", -- [3]
-		},
-		["notes"] = "Strategy added by norng\n6 rounds.\n\nTurn 1: Glowing Toxin\nTurn 2: Explode\nBring in your Mechanical Pandaren Dragonling\nTurn 1: Explode\nBring in your Microbot XD\nTurn 1: Supercharge\nTurns 2-3: Ion Cannon - Gorgemouth dies\n",
-		["name"] = "Failed Experiment",
-		["tags"] = {
-			"20241G3", -- [1]
-			"0015QC", -- [2]
-			"02272KT", -- [3]
-		},
-		["teamID"] = "team:150",
-		["targets"] = {
-			173274, -- [1]
-		},
+		["teamID"] = "team:236",
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+	},
+	["team:404"] = {
+		["pets"] = {
+			"BattlePet-0-000012B3E786", -- [1]
+			"BattlePet-0-000012B99CC6", -- [2]
+			"BattlePet-0-000012B99D62", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14201\n\nStrategy added by Morell#1795\nDefinitely some RNG here.  Only tested it about 5 or six times.  Win rate is currently 50%.\n\nPriority 1: Black Claw\nPriority 2: Dive\nPriority 3: Skitter\nRocket comes in\nBring in your Bleakwater Jelly\nTurn 1: Tidal Wave\nTurn 2: Whirlpool\nTurn 3+: Tentacle Slap until Bleakwater Jelly dies\nBring in your Chitterspine Skitterling and repeat the first set of priorities until your Skitterling dies.\nChuck comes in.\nPriority 1: Rip\nPriority 2: Blood in the Water\nPriority 3: Surge\n",
+		["name"] = "Fight Night: Tiffany Nelson (Aquatic)",
+		["tags"] = {
+			"221B2IO", -- [1]
+			"12181MP", -- [2]
+			"11235E", -- [3]
+		},
+		["teamID"] = "team:404",
+		["groupID"] = "group:12",
+		["targets"] = {
+			97804, -- [1]
+		},
+	},
+	["team:327"] = {
+		["pets"] = {
+			"BattlePet-0-000012B4838C", -- [1]
+			"BattlePet-0-000012B146CC", -- [2]
+			"random:2", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/634\n\nIf your Emerald Proto-Whelp has 244 speed, bring another level 25 Dragonkin. Once your Whelp dies (during Crawdead), bring in that third Dragon and kill Crawdead with it.\n\ntdScript thanks to Thordros\n\nTurn 1: Emerald Bite\nTurn 2: Emerald Presence\nTurn 3: Pass\nTurn 4: Emerald Bite\nTurn 5: Emerald Bite\nTurn 6: Emerald Bite\nTurns 7-9: Emerald Dream\nTurns 10+: Emerald Bite until Mist Wraith resurrects\nThen:: Emerald Presence\nCrawdead comes in\nTurns 1-3: Emerald Dream\nTurn 4: Emerald Bite\nTurn 5: Emerald Presence\nTurn 6: Emerald Bite\nTurns 7-9: Emerald Dream\nTurns 10+: Emerald Bite until Crawdead enters the Undead round\nThen:: Emerald Presence\nGnaw comes in\nTurns 1+: Emerald Bite until your Proto-Whelp dies\nBring in Chrominius\nHow many health points does Gnaw have left?\nMore than 1400: Bite, Howl, Surge of Power\nLess than 1400: Howl, Surge of Power\n",
+		["name"] = "Jarrun's Ladder (Dragon)",
+		["tags"] = {
+			"222814F", -- [1]
+			"1126140", -- [2]
+			"ZR2", -- [3]
+		},
+		["teamID"] = "team:327",
+		["groupID"] = "group:12",
+		["targets"] = {
+			105455, -- [1]
+		},
 	},
 	["team:102"] = {
 		["pets"] = {
@@ -7991,73 +7809,69 @@ Rematch5SavedTeams = {
 			"ZRA", -- [3]
 		},
 		["teamID"] = "team:432",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99210, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
-	},
-	["team:12"] = {
-		["pets"] = {
-			"BattlePet-0-000012B146C9", -- [1]
-			"random:0", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10122\n\nStrategy added by DragonsAfterDark\nIt will take a while, but your bunny will end with 100% hp\n\nYou can also do this method with Lagan / Slithershock Elver (1,1,1), Scrapyard Tunneler (2,1,1), Alloyed Alleyrat (1,2,1), Specimen 97 (1,1,1)\n\nIt's also possible to do this with Inky / Nameless Octopode (1,2,2), & Sneaky Marmot (1,2,2), but you use the blind on turn two and pass on turn three, which loses one round of attack, and will make this last longer.\n\nVideo for Fight (https://www.youtube.com/watch?v=SAQqQd5HWT0)\n\nTurn 1: Scratch\nTurn 2: Scratch\nTurn 3: Dodge\nTurn 4: Scratch\nTurn 5: Scratch\nTurn 6: Burrow goes underground\nTurn 7: Burrow lands\n\nRepeat from TURN 2\n",
-		["name"] = "Briarpaw",
-		["tags"] = {
-			"221568", -- [1]
-			"ZR0", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:12",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
-			175778, -- [1]
+			99210, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:12",
 	},
-	["team:340"] = {
+	["team:352"] = {
 		["pets"] = {
-			"BattlePet-0-000006E4C775", -- [1]
-			"BattlePet-0-000012B118E8", -- [2]
-			"BattlePet-0-000012B01DE0", -- [3]
+			"BattlePet-0-000012BAC92C", -- [1]
+			"BattlePet-0-000012BC0A5A", -- [2]
+			"random:10", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9215\n\nStrategy added by DragonsAfterDark\nI'm beginning to think most of the Humanoid fights in Legion on the Broken Isles can be taken care of with this team, heh. Especially now with the buff to Blizzard's weather.\n\nThe fight won't always go as indicated, unfortunately, because of the varying damage for some of the abilities and all the stuns. The script will get you through most of it. These factors vary so widely, that sometimes you won't even need pet #3, and sometimes pet #3 will have <400 hp. It's just how this fight tends to be.\n\nTurn 1: Ice Tomb\nTurn 2: Call Blizzard\nTurn 3: Ice Lance\nTurn 4: Ice Lance -- // -- This will hit Wumpas\nTurn 5: Ice Lance\nBring in OR Swap to your Rotten Little Helper\nTurn 1: Greench's Gift\nTurn 2: Ice Lance\nThrugtusk comes back in\nTurn 1: Booby-Trapped Presents\nTurn 2: Ice Lance\nBaeloth comes in\nTurn 1+2: Pass\nTurn 3: Greench's Gift\nTurn 4+: Ice Lance until Rotten Little Helper or Baeloth dies\nIf needed:\nBring in your Winter's Little Helper\nTurn 1: Gift of Winter's Veil\nTurn 2: Call Blizzard\nTurn 3+: Ice Lance\n",
-		["name"] = "My Beast's Bidding (Humanoid)",
+		["name"] = "Tiny Poacher, Tiny Animals (Mech)",
 		["tags"] = {
-			"21133N", -- [1]
-			"21141A5", -- [2]
-			"21233O", -- [3]
+			"1217AI", -- [1]
+			"1225QC", -- [2]
+			"ZRA", -- [3]
 		},
-		["teamID"] = "team:340",
+		["teamID"] = "team:352",
 		["groupID"] = "group:12",
 		["targets"] = {
-			98270, -- [1]
+			99150, -- [1]
 		},
 	},
-	["team:320"] = {
+	["team:316"] = {
 		["pets"] = {
-			"BattlePet-0-000012B822C0", -- [1]
-			"BattlePet-0-000012B99945", -- [2]
-			"BattlePet-0-000008968258", -- [3]
+			"BattlePet-0-000012C56B2C", -- [1]
+			"BattlePet-0-000012C3D91A", -- [2]
+			"BattlePet-0-000012B99C7D", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16112\n\nStrategy added by DragonsAfterDark\nIf things go well, you won't need the Idol, but Conviction can get a bit tricky so it's there just in case.\n\nTurn 1: Creeping Insanity\nTurn 2: Spiritfire Bolt\nTurn 3: Spiritfire Bolt\nTurn 4: Soulrush\nConviction comes in\nTurn 1+: Spiritfire Bolt until Void-Scarred Anubisath dies, Pass if Conviction has Dark Rebirth on\nBring in your Ranishu Runt\nTurn 1: Focus\nTurn 2+: Zap until Conviction dies, Pass if Dark Rebirth is up\nDignity comes in\n~: Priorities for Ranishu Runt & Anubisath Idol\nPriority 1: Sandstorm when Dignity is up\nPriority 2: Zap or Crush until Dignity dies\n",
-		["name"] = "The Master of Pets (Humanoid)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10197\n\nStrategy added by DragonsAfterDark\nTurn 1: Acidic Goo\nTurn 2: Creeping Ooze\nTurn 3: Ooze Touch\nTurn 4: Ooze Touch\nTurn 5: Ooze Touch\nConviction comes in\nTurn 1: Acidic Goo\nTurn 2+: Ooze Touch until Bloodfeaster Larva is dead\n\nBring in your Void-Scarred Locust\nTurn 1: Toxic Fumes\nPriority 1: If Conviction is below 400 hp: Pass twice\nPriority 2: Contagion Strike until Conviction is dead\nDignity comes in\nTurn 1: Contagion Strike\nTurn 2: Psychic Blast\nTurn 3+: Alternate between Contagion Strike & Psychic Blast until Void-Scarred Locust dies\n\nBring in your Lovebird Hatchling\nClean up with Peck & Predatory Strike\n",
+		["name"] = "The Master of Pets (Critter)",
 		["tags"] = {
-			"22262OH", -- [1]
-			"11142BH", -- [2]
-			"1116143", -- [3]
+			"22282BE", -- [1]
+			"22162PG", -- [2]
+			"10251F7", -- [3]
 		},
-		["teamID"] = "team:320",
+		["teamID"] = "team:316",
 		["groupID"] = "group:12",
 		["targets"] = {
 			105250, -- [1]
 		},
+	},
+	["team:221"] = {
+		["pets"] = {
+			"BattlePet-0-000006E4C754", -- [1]
+			"BattlePet-0-000012BAF77C", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/15372\n\nStrategy added by DragonsAfterDark\nVideo for Fight (https://www.youtube.com/watch?v=VBQl8Mo_g7Y)\n\nTurn 1: Arcane Storm\nTurn 2: Consume Magic\nTurn 3: Swap to your Singing Sunflower\nTurn 4: Sunlight\nTurn 5: Photosynthesis\nTurn 6: Swap to your Court Scribe\nRepeat from Turn 1 until Cindy & Dah'da die\n~*~: At that point Alex should be the only one left, so leave your Singing Sunflower in, then:\nTurn 1: Solar Beam until Alex is dead \n",
+		["name"] = "Wrathion",
+		["tags"] = {
+			"01181SB", -- [1]
+			"212C93", -- [2]
+			"00061CI", -- [3]
+		},
+		["teamID"] = "team:221",
+		["targets"] = {
+			71924, -- [1]
+		},
+		["groupID"] = "group:11",
 	},
 	["team:231"] = {
 		["pets"] = {
@@ -8089,13 +7903,13 @@ Rematch5SavedTeams = {
 			"ZR0", -- [3]
 		},
 		["teamID"] = "team:91",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			162461, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
 	["team:135"] = {
 		["pets"] = {
@@ -8130,14 +7944,14 @@ Rematch5SavedTeams = {
 			"122414D", -- [3]
 		},
 		["teamID"] = "team:158",
-		["preferences"] = {
-			["minHP"] = 241,
-			["minXP"] = 4,
-		},
 		["targets"] = {
 			141814, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minHP"] = 241,
+			["minXP"] = 4,
+		},
 	},
 	["team:308"] = {
 		["pets"] = {
@@ -8177,24 +7991,27 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:11",
 	},
-	["team:292"] = {
+	["team:324"] = {
 		["pets"] = {
-			"BattlePet-0-000012B521D4", -- [1]
-			"BattlePet-0-000006E4C7B4", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000012B66C49", -- [1]
+			"random:9", -- [2]
+			"random:9", -- [3]
 		},
-		["notes"] = "Strategy added by unknown\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in Ikky\nTurn 1: Black Claw\nTurns 2+: Flock\n",
-		["name"] = "Fight Night: Heliosus",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/578\n\nScript thanks to BioNIk\n\nTurn 1: Snap\nTurn 2: Renewing Mists\nTurn 3: Shell Shield\nTurn 4: Snap\nTurn 5: Snap\nTurn 6: Snap\nTurn 7: Snap\nTurn 8: Renewing Mists\nTurn 9: Shell Shield\nTurns 10+: Snap until the Mist Wraith is resurrecting\nThen:: Renewing Mists\nCrawdead comes in\nPrio 1: Refresh Renewing Mists after it runs out\nPrio 2: Refresh Shell Shield when it has 1 turn left\nPrio 3: Use Snap in between until Crawdead resurrects\nThen:: Shell Shield\nGnaw comes in\nTurns 1+: Snap until Gnaw is dead\n\nSometimes your Emperor Crab might not manage. If that happens bring in your next Aquatic and kill Gnaw off, he should be almost dead at this point.\n",
+		["name"] = "Jarrun's Ladder (Aquatic)",
 		["tags"] = {
-			"021316M", -- [1]
-			"01181FS", -- [2]
-			"ZR0", -- [3]
+			"1114NA", -- [1]
+			"ZR9", -- [2]
+			"ZR9", -- [3]
 		},
-		["teamID"] = "team:292",
-		["groupID"] = "group:none",
+		["teamID"] = "team:324",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			99742, -- [1]
+			105455, -- [1]
 		},
+		["groupID"] = "group:12",
 	},
 	["team:435"] = {
 		["pets"] = {
@@ -8210,51 +8027,51 @@ Rematch5SavedTeams = {
 			"ZR8", -- [3]
 		},
 		["teamID"] = "team:435",
-		["groupID"] = "group:12",
-		["targets"] = {
-			107489, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			107489, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
-	["team:338"] = {
+	["team:307"] = {
 		["pets"] = {
-			"BattlePet-0-000012B67EA7", -- [1]
-			"BattlePet-0-000012C649B3", -- [2]
-			"BattlePet-0-000012B01E78", -- [3]
+			"BattlePet-0-000006E4C76A", -- [1]
+			"BattlePet-0-000012B4861E", -- [2]
+			"BattlePet-0-000012B146CC", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18024\n\nStrategy added by Ophilla#1123\nTurn 1: Flyby\nTurn 2: Call Lightning\nTurn 3-7: Slicing Wind until Tiny Twister is dead.\nBring in your Withering Creeper\nTurn 8-11: Toxic Smoke until Wumpas dies.\nBaeloth comes in\nTurn 12: Smoke Bomb\nTurn 13-14: Toxic Smoke until Withering Creeper dies\nBring in your Primal Stormling\nTurn 15: Call Lightning\nTurn 16: If Baeloth is still alive, Slicing Wind until it dies\n\n",
-		["name"] = "My Beast's Bidding (Elemental)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/971\n\nScript thanks to Aesetha\n\nTurn 1: Ice Tomb\nTurn 2: Wild Magic\nTurn 3: Pass. Emmigosa dies\nBring in your Nether Faerie Dragon\nTurn 1: Moonfire\nTurn 2: Arcane Blast\nTurn 3: Life Exchange\nTurn 4+: Arcane Blast until Nether Faerie Dragon dies\nBring in your Chrominius\nTurn 1: Howl\nTurn 2: Surge of Power\n",
+		["name"] = "Flummoxed (Dragon)",
 		["tags"] = {
-			"1126DT", -- [1]
-			"01232U7", -- [2]
-			"202838K", -- [3]
+			"02281LO", -- [1]
+			"2215HD", -- [2]
+			"1126140", -- [3]
 		},
-		["teamID"] = "team:338",
+		["teamID"] = "team:307",
 		["groupID"] = "group:12",
 		["targets"] = {
-			98270, -- [1]
+			97709, -- [1]
 		},
 	},
-	["team:420"] = {
+	["team:103"] = {
 		["pets"] = {
-			"BattlePet-0-000006E4C775", -- [1]
-			"BattlePet-0-000012B118E8", -- [2]
-			"BattlePet-0-000012B01DE0", -- [3]
+			"BattlePet-0-000012B48958", -- [1]
+			"BattlePet-0-000012F20B9E", -- [2]
+			"BattlePet-0-000012B673F3", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3277\n\nStrategy added by DragonsAfterDark\nTurn 1: Call Blizzard -- Sir Murkeston uses Falling Murloc & is stunned\nTurn 2: Ice Lance -- This will hit Coach as it comes in from the stun swap\nTurn 3: Ice Tomb -- Coach uses Lift-Off\nTurn 4: Ice Lance -- Lift-Off comes down \nTurn 5: Ice Lance -- Ice Tomb hits & Coach dies\nTurn 6: Ice Lance -- Sir Murkeston uses Falling Murloc & Father Winter's Helper dies\n\nBring in your Rotten Little Helper\nTurn 1: Ice Tomb -- Applies to Greatest Foe\nTurn 2: Ice Lance -- Greatest Foe uses Darkflame\nTurn 3: Ice Lance -- Greatest Foe uses Healing Flame & Ice Tomb drops\nTurn 4: Call Blizzard -- This will hit Sir Murkeston as he comes in from the stun swap\nTurn 5: Ice Lance -- Greatest Foe is swapped in from Righteous Inspiration and dies\nTurn 6: Ice Lance -- Sir Murkeston dies\n\nBring in your Winter's Little Helper\nIf someone dies early from a crit, you may need the Winter's Little Helper to continue the steps wherever it left off in the strat\n",
-		["name"] = "Fight Night: Sir Galveston (Humanoid)",
+		["notes"] = "Strategy added by Freakzoid#11736\nTurn 1: Call Lightning\nTurn 2: Haywire, Boneclaw dies\nTurn 3: Fel Immolate, bring in ikky when Sunreaver dies\nTurn 4: Black Claw\nTurn 5: Quills, Spindler Dies\nTurn 6: Black Claw\nTurn 7: Flock, bring in Microbot XD when Ikky dies\nTurno 8: Supercharge\nTurno 9: Ion Cannon you win \n\n",
+		["name"] = "Eyegor's Special Friends",
 		["tags"] = {
-			"21133N", -- [1]
-			"22241A5", -- [2]
-			"21133O", -- [3]
+			"221414Q", -- [1]
+			"21181FS", -- [2]
+			"02272KT", -- [3]
 		},
-		["teamID"] = "team:420",
-		["groupID"] = "group:12",
+		["teamID"] = "team:103",
 		["targets"] = {
-			99182, -- [1]
+			173324, -- [1]
 		},
+		["groupID"] = "group:6",
 	},
 	["team:436"] = {
 		["pets"] = {
@@ -8275,24 +8092,24 @@ Rematch5SavedTeams = {
 			107489, -- [1]
 		},
 	},
-	["team:113"] = {
+	["team:351"] = {
 		["pets"] = {
-			"BattlePet-0-000012C60028", -- [1]
-			"BattlePet-0-000012B99C98", -- [2]
-			"BattlePet-0-000012B608F8", -- [3]
+			"BattlePet-0-000012D0B39C", -- [1]
+			"BattlePet-0-000012B17368", -- [2]
+			"BattlePet-0-000007C1D04D", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4203\n\nStrategy added by Trog\nhttps://www.youtube.com/watch?v=eij4P0pAIb8&t=1787s\n\nTurn 1: Celestial Blessing\nTurn 2: Fire Shield\nTurn 3: Volcano\nTurn 4: Flamethrower, repeat until dead\nTurn 5: Swap to your Fel Flame (enemy is likely dead by now)\nTurn 6: Immolate\nTurn 7: Conflagrate\nTurn 8: Burn\n",
-		["name"] = "Pulverizer Bot Mk 6001",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14194\n\nStrategy added by Phoenixen#1410\nMaking strats and taking names. One shot for me, but RNG likely.\n\nScript thanks to Malhado\n\nTurn 1: Enchanted Broom - Wind-Up\nTurn 2: Sandstorm\nTurn 3: Wind-Up\nTurn 4: Batter til Gulp dies\nTurn 5: Wind-Up\nTurn 6: Wind-Up, Enchanted Broom dies\nTurn 7: Anomalus - Poison Protocol\nTurn 8: Corrosion - Egcellent feigns, Red Wire comes out\nToxic Fumes\nCorrosion, Anomalus dies\nAbyssius - Flamethrower, Red Wire dies and Egcellent comes in\nI used Immolation, but Flamethrower might be better here.\nMeteor Strike\nEgcellent Should die here, but if not, spam Flamethrower til it dies\n",
+		["name"] = "Tiny Poacher, Tiny Animals (Magic)",
 		["tags"] = {
-			"020818O", -- [1]
-			"12141T3", -- [2]
-			"1116G7", -- [3]
+			"21256L", -- [1]
+			"21142OQ", -- [2]
+			"11241IO", -- [3]
 		},
-		["teamID"] = "team:113",
+		["teamID"] = "team:351",
+		["groupID"] = "group:12",
 		["targets"] = {
-			145988, -- [1]
+			99150, -- [1]
 		},
-		["groupID"] = "group:6",
 	},
 	["team:20"] = {
 		["pets"] = {
@@ -8308,134 +8125,145 @@ Rematch5SavedTeams = {
 			"ZR4", -- [3]
 		},
 		["teamID"] = "team:20",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			175780, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
-	["team:62"] = {
+	["team:358"] = {
 		["pets"] = {
-			"BattlePet-0-000012B146CB", -- [1]
-			"BattlePet-0-000012B48707", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000006E4C780", -- [1]
+			"BattlePet-0-000012B96E94", -- [2]
+			"random:7", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5567\n\nStrategy added by Lazey\n*** 9.0.2 approved '''\n\nThis Manta Ray has two Beast attacks and an empowered Flyby X which will increase the damage your pet takes by 25% for 5 rounds (classic Flyby does for 3 rounds).\n\nI am using a Black Claw + Swarm ability pet in the first slot to buff attacks of my Dragonkin. The script includes Flock and Swarm because when these 8.2 pet battles go live, the Aquatic pet Chitterspine Skitterling will be available as a wild catch in Nazjatar and it has Black Claw and Swarm. Please do not use Hunting Party pets.\n\nThe Skitterling will take more damage from Flyby X so there's a chance it will die 1 round earlier than Flying pets and you can benefit of 2 rounds Shattered Defenses and Black Claw.\n\nTurn 1: Black Claw\nTurn 2+: Flock / Swarm until your pet dies. (When it does without applying Shattered Defenses, please Forfeit, Revive pets & Restart.)\n\nBring in your Nexus Whelpling\nTurn 1: Arcane Storm\nTurn 2-3: Mana Surge\nWhen your Dragon dies without killing Silence, bring in your third pet\nAny standard attack will finish the fight\n",
-		["name"] = "Silence",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/7036\n\nStrategy added by Beornwulf#2324\nScript thanks to wist\n\nPriority 1: Howl when Burrow is about to come off cooldown\nPriority 2: Burrow\nPriority 3: Thrash\nBring in your Stout Alemental\nPriority 1: Bubble if Snot is underwater\nPriority 2: Barrel Toss",
+		["name"] = "Snail Fight! (Elemental)",
 		["tags"] = {
-			"01181FS", -- [1]
-			"022814D", -- [2]
-			"ZR0", -- [3]
+			"21277K", -- [1]
+			"20241FE", -- [2]
+			"ZR7", -- [3]
 		},
-		["teamID"] = "team:62",
+		["teamID"] = "team:358",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
 		["targets"] = {
-			154912, -- [1]
+			104553, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:12",
 	},
-	["team:256"] = {
+	["team:341"] = {
 		["pets"] = {
-			"BattlePet-0-000006E4C767", -- [1]
-			"BattlePet-0-000006E4C753", -- [2]
-			"BattlePet-0-000012B146D0", -- [3]
+			"BattlePet-0-000012B822C1", -- [1]
+			"BattlePet-0-000012B67649", -- [2]
+			"random:6", -- [3]
 		},
-		["notes"] = "Strategy added by Rockmar#1116\nTurn 1: Call Blizzard\nTurn 2: Bash\nTurn 3: Bite\nClawz comes in\nTurn 1: Bite\nTurn 2: Call Blizzard\nTurn 3: Swap to your Baby Winston\nTurn 4: Barrier Projector\nTurn 5: Logic\nBassalt comes in\nTurn 6: Body Slam\nTurn 7: Logic\nTurn 8: Body Slam\nMurrey comes in\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up\nTurn 4: Wind-Up\nTurn 5: Wind-Up\n",
-		["name"] = "To a Land Down Under (2)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2765\n\nStrategy added by DragonsAfterDark\nUpdated 11/17/20 with a new pet in slot #1\n\nTurn 1: Chaos Beam\nTurn 2: Chaos Beam\nTurn 3: Chaos Beam\nTurn 4: Chaos Beam\nWumpas comes in\nTurn 5: Life Exchange\nTurn 6: Nightmare or Pass if Stunned\nTurn 7: Chaos Beam or Nightmare\nTurn 8: Chaos Beam\nTurn 9: Chaos Beam\nTurn 10: Chaos Beam\nBaeloth comes in\nTurn 1+2: Pass \nTurn 3: Chaos Beam (Doesn't matter if it hits, but you might as well try)\nBring in your Enchanted Pen\nPriority 1: Evanescence when Baeloth's CD on Crystal Prison is up\nPriority 2: Apply Forboding Curse and reapply when there is 1 round left\nPriority 3: Quills all else\n",
+		["name"] = "My Beast's Bidding (Magic)",
 		["tags"] = {
-			"11276A", -- [1]
-			"22171P4", -- [2]
-			"11181BB", -- [3]
+			"11282OK", -- [1]
+			"111B1L5", -- [2]
+			"ZR6", -- [3]
 		},
-		["teamID"] = "team:256",
-		["groupID"] = "group:none",
+		["teamID"] = "team:341",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			98270, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
-	["team:196"] = {
+	["team:360"] = {
 		["pets"] = {
-			"BattlePet-0-000012C2DA6F", -- [1]
-			"BattlePet-0-000012BC09D8", -- [2]
+			"BattlePet-0-000012B5C607", -- [1]
+			"BattlePet-0-000012B6763C", -- [2]
+			"random:1", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/497\n\nTurn 1: Thrash\nTurn 2: Pass\nTurn 3: Pass\nTurn 4: Mangle\nTurns 5-7: Rampage - Rocklick dies\nSlow Moe comes in\nTurn 1: Mangle\nTurn 2: Thrash\nTurn 3: Thrash (or pass if you got stunned)\nTurns 4+: Rampage - your Runt dies\nBring in your Flayer Youngling\nTurns 1+: Rampage - Slow Moe dies\nSnot comes in\nTurn 1: Rampage continues or Triple Snap\nTurn 2: Rampage continues or Triple Snap\nTurn 3: Deflection\nTurns 4+: Triple Snap until Snot is dead",
+		["name"] = "Snail Fight! (Humanoid)",
+		["tags"] = {
+			"111814E", -- [1]
+			"2227G2", -- [2]
+			"ZR1", -- [3]
+		},
+		["teamID"] = "team:360",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			104553, -- [1]
+		},
+		["groupID"] = "group:12",
+	},
+	["team:161"] = {
+		["pets"] = {
+			"BattlePet-0-000012B66C49", -- [1]
+			"BattlePet-0-000012B66DA8", -- [2]
 			"random:0", -- [3]
 		},
-		["notes"] = "Strategy added by kachooman\n5 rounds :D still working\n\nTurn 1: Build Turret\nTurn 2: Swap to your Experiment 13\nTurn 3: Build Turret\nTurn 4: U-238 Rounds\nTurn 5: U-238 Rounds\n",
-		["name"] = "Unbreakable",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1832\n\nStrategy added by NostrA#2338\nprops to Aranesh for his/her strategy, i just changed the TD Script and Strategy to make Teroclaw viable again\n\nTurn 1: use Whirlpool\nTurn 2: use Surge\nTurn 3: Pass\nTurn 4: use Surge\nTurn 5: use Whirlpool\nTurn 6: use Healing Wave\nTurn 7+: use Surge until Angry Geode dies\nan enemy pet comes in\nTurn 1+: Keep Whirlpool and Healing Wave on cooldown, otherwise use Surge until your Emperor Crab dies\nBring in your Teroclaw Hatchling\nenemy HP < 618: use Ravage\nif the enemy is a Flying Type, you want to use Ravage when the enemy HP is under 406 \nwhen not active: use Nature's Ward\nelse: use Alpha Strike",
+		["name"] = "Angry Geode",
 		["tags"] = {
-			"020A2KS", -- [1]
-			"10252PK", -- [2]
+			"2224NA", -- [1]
+			"22271C8", -- [2]
 			"ZR0", -- [3]
 		},
-		["teamID"] = "team:196",
+		["teamID"] = "team:161",
 		["targets"] = {
-			141215, -- [1]
+			119342, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:4",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
 	},
-	["team:130"] = {
+	["team:361"] = {
 		["pets"] = {
-			"BattlePet-0-000012B99CF8", -- [1]
-			"BattlePet-0-000012B5CDB5", -- [2]
-			0, -- [3]
+			"BattlePet-0-000012B17368", -- [1]
+			"BattlePet-0-000006E4C796", -- [2]
+			"random:6", -- [3]
 		},
-		["notes"] = "Strategy added by Kalagren\n2nd pet must be Obsidian Warwhelp.Level pet crit safe damage = 247 or more HP.\n\nPet Bombling comes in\nTurn 1: Minefield\nTurn 2: Explode\nBring in your Obsidian Warwhelp\nTurn 3: Time Bomb\nTurn 4: Flame Breath\nTurn 5: Armageddon both Cockroach and Cat die\nBring in your Level Pet\nTurn 6: Pass and Level Pet takes 164 non-critical strike critter damage\nChicken dies to Time Bomb\n",
-		["name"] = "You Have to Start Somewhere",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/9541\n\nStrategy added by Naina\nScript thanks to Rinoe\n\nTurn 1: Void Nova\nTurn 2: Poison Protocol\nTurn 3: Ooze Touch\nTurn 4: Ooze Touch\nTurn 5: Void Nova\nTurn 6: Ooze Touch\nTurn 7: Ooze Touch\nTurn 8: Poison Protocol\nTurn 9: Void Nova\nTurn 10: Ooze Touch\nBring in your Sanctum Cub\nTurn 11+: Pounce should finish off all three remaing snails",
+		["name"] = "Snail Fight! (Magic)",
 		["tags"] = {
-			"01292L", -- [1]
-			"1223455", -- [2]
-			"ZL", -- [3]
+			"12142OQ", -- [1]
+			"12171T6", -- [2]
+			"ZR6", -- [3]
 		},
-		["teamID"] = "team:130",
+		["teamID"] = "team:361",
 		["preferences"] = {
-			["minHP"] = 165,
-			["minXP"] = 2,
+			["minXP"] = 25,
 		},
 		["targets"] = {
-			197350, -- [1]
+			104553, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:12",
 	},
-	["team:375"] = {
+	["team:415"] = {
 		["pets"] = {
-			"BattlePet-0-000012C222D9", -- [1]
-			"BattlePet-0-000012BA9540", -- [2]
+			"BattlePet-0-000012B528FE", -- [1]
+			"BattlePet-0-000012C222D9", -- [2]
 			"random:8", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/703\n\nScript thanks to wist and Taizun\n\nTurn 1: Prowl\nTurn 2: Call Darkness\nTurn 3: Swap to your River Calf\nTurns 4+: Water Jet until Sunny is dead\nRoots comes in\nTurn 1: Stoneskin\nTurns 2+: Water Jet until River Calf dies\nBring back your Feline Familiar\nTurns 1+: Onyx Bite until Roots is dead\nBeaky comes in\nTurn 1: Prowl\nTurns 2+: Onyx Bite until Beaky is dead\n",
-		["name"] = "Training with Durian (Beast)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/782\n\nScript thanks to Lochru\n\nTurn 1: Prowl\nTurn 2: Moonfire - Coach dies\nSir Murkeston comes back in\nTurns 1+: Spirit Claws until Xu-Fu dies (-.-)\nBring in your Feline Familiar - Greatest Foe should be in at this point\nTurn 1: Prowl\nTurn 2: Call Darkness - Greatest Foe dies\nSir Murkeston comes back in\nTurns 1+: Pounce until Sir Murkeston is dead\n",
+		["name"] = "Fight Night: Sir Galveston (Beast)",
 		["tags"] = {
-			"122A9V", -- [1]
-			"22191H3", -- [2]
+			"122417I", -- [1]
+			"222A9V", -- [2]
 			"ZR8", -- [3]
 		},
-		["teamID"] = "team:375",
-		["groupID"] = "group:12",
+		["teamID"] = "team:415",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			99035, -- [1]
+			99182, -- [1]
 		},
-	},
-	["team:305"] = {
-		["pets"] = {
-			"BattlePet-0-000012C63412", -- [1]
-			"BattlePet-0-000012B482D1", -- [2]
-			"BattlePet-0-000012B482D2", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13090\n\nStrategy added by Enzzo#1146\nGot this one from an anonymous comment on another strat. It worked really well and I didn't even need the third pet. \nTD Script by AramilGaeda\n\nTurn 1: Brittle Webbing\nTurn 2: Leech Life\nRepeat turns 1 and 2 until your spider dies.\nBring in your Zandalari Kneebiter\nTurn 1: Black Claw\nTurn 2+: Hunting Party\nBy now, Flummox may be dead\nIf your Zandalari Kneebiter dies, bring in your Zandalari Anklerender\nTurn 1: Black Claw\nTurn 2+: Hunting Party\n",
-		["name"] = "Flummoxed (Beast)",
-		["tags"] = {
-			"221BCS", -- [1]
-			"220514S", -- [2]
-			"202A15R", -- [3]
-		},
-		["teamID"] = "team:305",
 		["groupID"] = "group:12",
-		["targets"] = {
-			97709, -- [1]
-		},
 	},
 	["team:430"] = {
 		["pets"] = {
@@ -8451,13 +8279,13 @@ Rematch5SavedTeams = {
 			"ZR1", -- [3]
 		},
 		["teamID"] = "team:430",
-		["groupID"] = "group:12",
-		["targets"] = {
-			99210, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
+		["targets"] = {
+			99210, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:409"] = {
 		["pets"] = {
@@ -8478,69 +8306,65 @@ Rematch5SavedTeams = {
 			97804, -- [1]
 		},
 	},
-	["team:108"] = {
+	["team:314"] = {
 		["pets"] = {
-			"BattlePet-0-000012B146C7", -- [1]
-			0, -- [2]
+			"BattlePet-0-000012C2DA6C", -- [1]
+			"BattlePet-0-000012C56B66", -- [2]
+			"random:9", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16110\n\nStrategy added by Connxo\n100% Success rate I've tried it 4 times not even close to failing never had to use a third aquatic pet. Y'all are welcome.\n\nScript thanks to Alayea\n\nTurn 1: Expunge\nTurn 2: Phase Shift\nTurn 3: Ooze Touch\nTurn 4: Ooze Touch\nTurn 5: Expunge\nBeauty Dies. Conviction comes in\nTurn 6: Ooze Touch\nTurn 7: Phase Shift it is okay if your pet dies here :)\nTurn 8: Ooze Touch if your Slimy Otter died bring in Magical Crawdad and use Wish\nPriority 1: Wish on CD.\nPriority 2: Renewing Mists at 1 round left on previous Renewing Mist buff.\nPriority 3: Snap as filler. GG\n",
+		["name"] = "The Master of Pets (Aquatic)",
+		["tags"] = {
+			"11272M5", -- [1]
+			"112644", -- [2]
+			"ZR9", -- [3]
+		},
+		["teamID"] = "team:314",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
+		["targets"] = {
+			105250, -- [1]
+		},
+		["groupID"] = "group:12",
+	},
+	["team:305"] = {
+		["pets"] = {
+			"BattlePet-0-000012C63412", -- [1]
+			"BattlePet-0-000012B482D1", -- [2]
 			"BattlePet-0-000012B482D2", -- [3]
 		},
-		["notes"] = "Strategy added by Tinlar#1408\nThank you to shpungout for the suggestion on how to streamline the strategy\n\nTurn 1: Blistering Cold\nTurn 2: Chop\nTurn 3: Swap to your Level Pet\nTurn 4: Swap to your Zandalari Anklerender\nTurn 5: Black Claw\nTurns 6-7: Hunting Party\n",
-		["name"] = "Unit 17",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13090\n\nStrategy added by Enzzo#1146\nGot this one from an anonymous comment on another strat. It worked really well and I didn't even need the third pet. \nTD Script by AramilGaeda\n\nTurn 1: Brittle Webbing\nTurn 2: Leech Life\nRepeat turns 1 and 2 until your spider dies.\nBring in your Zandalari Kneebiter\nTurn 1: Black Claw\nTurn 2+: Hunting Party\nBy now, Flummox may be dead\nIf your Zandalari Kneebiter dies, bring in your Zandalari Anklerender\nTurn 1: Black Claw\nTurn 2+: Hunting Party\n",
+		["name"] = "Flummoxed (Beast)",
 		["tags"] = {
-			"11031TB", -- [1]
-			"ZL", -- [2]
+			"221BCS", -- [1]
+			"220514S", -- [2]
 			"202A15R", -- [3]
 		},
-		["teamID"] = "team:108",
+		["teamID"] = "team:305",
+		["groupID"] = "group:12",
 		["targets"] = {
-			154929, -- [1]
+			97709, -- [1]
 		},
-		["groupID"] = "group:none",
 	},
-	["team:25"] = {
+	["team:126"] = {
 		["pets"] = {
-			"BattlePet-0-000012B146C7", -- [1]
-			"BattlePet-0-000012B482D1", -- [2]
-			0, -- [3]
+			"BattlePet-0-000012B99CF2", -- [1]
+			"BattlePet-0-000012BC0A5A", -- [2]
+			"BattlePet-0-000006E4C794", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/11420\n\nStrategy added by Xerxes\nAny pet with Black Claw should work in slot 2.\n\nThe first attack from the enemy pet has a small chance to crit and drop Boneshard to 1 HP. In this case, restart the fight.\n\nYour level pet can have less than 700 HP.\nThe last hit will do about 400 damage, but I've seen it crit for around 700 HP.\n\nTD Script by Yolo (https://www.wow-petguide.com/index.php?user=11440)\n\nEnjoy :)\n\nTurn 1: Blistering Cold\nBoneshard should be roughly half HP. If he's 1 HP, restart the fight.\nTurn 2: Chop\nBoneshard should be 20 HP\nTurn 3: BONESTORM\nTurn 4: Blistering Cold\nBring in your Zandalari Kneebiter\nTurn 5: Black Claw\nTurn 6: Pass\nTurn 7: Pass\n",
-		["name"] = "Sewer Creeper",
+		["notes"] = "Strategy added by Kirandji\nIt depends on the backliners if its a onepetstrat or not. Against magics this setup strat is a onepetter, the mech pandaren will punch the undead and the magics. Thanks & credits to Shaka 4 the script\n\nTurn 1: Fire Shield on CD\nTurn 2: Lightning Shield on cd\nTurn 3: Arcane Blast as spammer\nTurn 4: it depends on the back, if no magics tron wont make it alone. Bring in the dragonling.\nTurn 5: Decoy\nTurn 6: Thunderbolt\nTurn 7: Breath\n",
+		["name"] = "Crypt Fiend",
 		["tags"] = {
-			"11231TB", -- [1]
-			"020514S", -- [2]
-			"ZL", -- [3]
+			"112620U", -- [1]
+			"1115QC", -- [2]
+			"11131TC", -- [3]
 		},
-		["teamID"] = "team:25",
-		["preferences"] = {
-			["minHP"] = 701,
-			["minXP"] = 15,
-		},
+		["teamID"] = "team:126",
 		["targets"] = {
-			175781, -- [1]
+			150911, -- [1]
 		},
-		["groupID"] = "group:none",
-	},
-	["team:276"] = {
-		["pets"] = {
-			"BattlePet-0-000012B48707", -- [1]
-			0, -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1666\n\nStrategy added by sistercoyote\nBased on Jackobs' (http://www.wowhead.com/npc=66466/stone-cold-trixxy#comments) Nexus Whelpling strat from Wowhead. She makes an absolute mess of this trio of pets.\n\nIf Tinygos uses Surge of Power before Round 3, there is a slender chance Nexus Whelpling may die, so another Dragonkin with Magic abilities (e.g., Emerald Proto-Whelp) can also be useful for backup (replace Elekk or Leveling Pet depending on what you're doing). Normally, though, Nexus Whelpling is sufficient.\n\nBring in your Nexus Whelpling\nTurn 1: Arcane Storm\nTurn 2: Frost Breath\nTurn 3+: Frost Breath until Tinygos does Surge of Power\nIf you're leveling as well as Adventuring, make sure you don't kill Tinygos before his Surge of Power\nBring in your Level Pet\nBring in your Nexus Whelpling\nTurn 1: Mana Surge\nTurn 7: Clean up with Frost Breath if there's anything left\n",
-		["name"] = "Stone Cold Trixxy",
-		["tags"] = {
-			"222814D", -- [1]
-			"ZL", -- [2]
-			"00061CI", -- [3]
-		},
-		["teamID"] = "team:276",
-		["groupID"] = "group:11",
-		["targets"] = {
-			66466, -- [1]
-		},
-		["preferences"] = {
-			["minXP"] = 5,
-		},
+		["groupID"] = "group:8",
 	},
 	["team:297"] = {
 		["pets"] = {
@@ -8556,13 +8380,13 @@ Rematch5SavedTeams = {
 			"ZR2", -- [3]
 		},
 		["teamID"] = "team:297",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105674, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 1,
 		},
+		["targets"] = {
+			105674, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:257"] = {
 		["pets"] = {
@@ -8599,49 +8423,46 @@ Rematch5SavedTeams = {
 			99035, -- [1]
 		},
 	},
-	["team:218"] = {
+	["team:107"] = {
 		["pets"] = {
-			"BattlePet-0-000012B99CF2", -- [1]
-			"BattlePet-0-000012B99C8C", -- [2]
-			"BattlePet-0-000012B5CC26", -- [3]
+			"BattlePet-0-000012B521D4", -- [1]
+			"BattlePet-0-000012B01DC0", -- [2]
+			"BattlePet-0-000012B146D1", -- [3]
 		},
-		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Rabid Strike\nTurn 2: Corpse Explosion\nBring in your Magma Rageling\nTurn 1: Fire Shield\n",
-		["name"] = "Unit 35",
+		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Lil' Bling\nTurn 1-3: Inflation\nTurn 4: Make it Rain\nTurn 5+: Inflation\n\nIf needed: \nBring in your Mechanical Pandaren Dragonling\nTurn 1+: Breath\n",
+		["name"] = "Watch Where You Step",
 		["tags"] = {
-			"212620U", -- [1]
-			"21142D2", -- [2]
-			"111836P", -- [3]
+			"021316M", -- [1]
+			"2015198", -- [2]
+			"1225QC", -- [3]
 		},
-		["teamID"] = "team:218",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
+		["teamID"] = "team:107",
 		["targets"] = {
-			154927, -- [1]
+			162466, -- [1]
 		},
 		["groupID"] = "group:none",
 	},
-	["team:57"] = {
+	["team:383"] = {
 		["pets"] = {
-			"BattlePet-0-000012B484E9", -- [1]
-			"BattlePet-0-000012B146CB", -- [2]
-			"random:6", -- [3]
+			"BattlePet-0-000006E4C79F", -- [1]
+			"BattlePet-0-000012B675D0", -- [2]
+			"random:4", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5969\n\nStrategy added by nurkka\nThird pet not brought in. I used a Magic pet to assure it would stay alive from the wave attacks.\n\nTurn 1: Shadow Shock\nTurn 2: Curse of Doom\nTurn 3: Haunt\nBring in your Ikky\nTurns 1-3: Flock\n",
-		["name"] = "Prince Wiggletail",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10906\n\nStrategy added by Berendain\nTurn 1: If your Blightbreath is faster than Sunny, use Toxic Smoke first\nTurn 2: Acid Rain\nTurns 3-5: Dreadful Breath\nTurn 6+: Continue using Acid Rain and Dreadful Breath until your Blightbreath dies\nBring in your Scourged Whelpling\nTurns 1-3: Dreadful Breath if Roots or Beaky are still alive on the backline\nTurn 4: Call Darkness when Sunny is the last pet alive\n",
+		["name"] = "Training with Durian (Undead)",
 		["tags"] = {
-			"221616M", -- [1]
-			"00181FS", -- [2]
-			"ZR6", -- [3]
+			"12171TD", -- [1]
+			"0128GQ", -- [2]
+			"ZR4", -- [3]
 		},
-		["teamID"] = "team:57",
+		["teamID"] = "team:383",
 		["preferences"] = {
-			["minXP"] = 25,
+			["minXP"] = 1,
 		},
 		["targets"] = {
-			154910, -- [1]
+			99035, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:12",
 	},
 	["team:335"] = {
 		["pets"] = {
@@ -8657,13 +8478,13 @@ Rematch5SavedTeams = {
 			"ZR8", -- [3]
 		},
 		["teamID"] = "team:335",
-		["groupID"] = "group:12",
-		["targets"] = {
-			98270, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 1,
 		},
+		["targets"] = {
+			98270, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:93"] = {
 		["pets"] = {
@@ -8698,66 +8519,69 @@ Rematch5SavedTeams = {
 			"111C6B", -- [3]
 		},
 		["teamID"] = "team:18",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			161663, -- [1]
 		},
 		["groupID"] = "group:5",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
-	["team:264"] = {
+	["team:251"] = {
 		["pets"] = {
-			"BattlePet-0-000012B146D0", -- [1]
-			"BattlePet-0-000012B15603", -- [2]
-			"BattlePet-0-000012B673F3", -- [3]
+			"BattlePet-0-000012B5CBA7", -- [1]
+			"BattlePet-0-000012B9027A", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).I recommend using the P/S Iron Starlette because it only needs 1x Powerball to be faster than the enemy pets, usually lands 2x Wind-Up hits on Brul'dan and therefore adds more control.\n\nWith your Iron Starlette stick to these priorities until dead:\nvs. Lifft\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active, Dive is not usable this and the next turn -> Supercharge\nPrio 3:: Wind-Up is active, Lifft is Underwater -> Powerball\nPrio 4:: Wind-Up\nvs. Brul'dan\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active -> Wind-Up\nPrio 3:: Your pet's Failsafe has been triggered, Drain Power not usable -> Powerball \nPrio 4:: Wind-Up\n\nBring in your Timeless Mechanical Dragonling and stick to these priorities:\nPrio 1:: Enemy is Swole, Decoy exists -> Swap to your Microbot XD\nPrio 2:: Enemy is Swole, you've taken the Headbutt -> Swap to your Microbot XD\nPrio 3:: Enemy is Brul'dan with <1097HP -> Time Bomb\nPrio 4:: Enemy is Brul'dan with <549HP, no Flame Breath DoT active -> Decoy\nPrio 5:: Enemy is Brul'dan -> Flame Breath\nPrio 6:: Enemy is Swole -> Pass turn or Flame Breath\n\nWith your Microbot XD stick to these priorities:\nPrio 1:: Brul'dan is still alive or Swole has >1726HP -> Alert!\nPrio 2:: Supercharge\nPrio 3:: Ion Cannon\n",
-		["name"] = "Do You Even Train? (Mech)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/214\n\nTurn 1: Immolation\nTurn 2: Wild Magic\nTurn 3: Swap to your Rapana Whelk\nTurn 4: Acidic Goo\nTurn 5: Ooze Touch\nTurn 6: Ooze Touch\nTurns 7+8: Dive\n",
+		["name"] = "Chi-Chi, Hatchling of Chi-Ji (3)",
 		["tags"] = {
-			"11181BB", -- [1]
-			"121430S", -- [2]
-			"12272KT", -- [3]
+			"212813T", -- [1]
+			"111CN7", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:264",
+		["teamID"] = "team:251",
+		["groupID"] = "group:1",
+	},
+	["team:22"] = {
+		["pets"] = {
+			"BattlePet-0-000012B6764A", -- [1]
+			"BattlePet-0-000012BAC92C", -- [2]
+			"BattlePet-0-000012B146D0", -- [3]
+		},
+		["notes"] = "Strategy added by RedBeard\nTurn 1: Decoy\nTurn 2: Haywire\nTurn 3: Peck\nTurn 4: Peck\nScars comes in\nTurn 5: Peck\nTurn 6: Haywire\nBring in your Darkmoon Tonk\nTurn 7: Shock and Awe\nTurn 8+: Missile until Scars dies\nUndead: Pass\nLittle Blue comes in\nTurn 9: Missile\nTurn 10: Ion Cannon\nBring in your Iron Starlette\nTurn 1: Toxic Smoke\n",
+		["name"] = "Pack Leader",
+		["tags"] = {
+			"22171BR", -- [1]
+			"1127AI", -- [2]
+			"12181BB", -- [3]
+		},
+		["teamID"] = "team:22",
+		["targets"] = {
+			141799, -- [1]
+		},
 		["groupID"] = "group:none",
 	},
-	["team:120"] = {
+	["team:151"] = {
 		["pets"] = {
-			"BattlePet-0-000012B67C89", -- [1]
-			"BattlePet-0-000012BCCE52", -- [2]
-			"BattlePet-0-000012C3D996", -- [3]
+			"BattlePet-0-000012B146CB", -- [1]
+			"random:3", -- [2]
+			"random:3", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3605\n\nStrategy added by DragonsAfterDark\n13 January 24:\n\n1. Updated the Hermit Crab's moves to help it last longer.\n2. Updated instructions for which pet to bring in versus the different backline pets.\n3. Script has been updated accordingly - and again. Was missing a few lines ^^'\n\nTurn 1: Pinch\nTurn 2: Pinch\nTurns 3-4: Dive\nTurn 5+: Pinch until Living Sludge is dead\n\nRandom Enemy Pet Comes In\n\nNote 1:: There are a few different pets that will come in with Living Sludge, so the turn orders won't be exact.\n\nNote 2:: Keep in mind, if you can't see the enemy attacks with an addon, Automated Drilling Machine's ability, Smoke Cloud, is on a 4 round CD, so you may need to adjust your pet's attacks\n\nNote 3:: Pass during the Undead / Dodge Rounds\n\nTurn 1: Shell Armor - Unless the enemy is the Cockroach, then Pinch\nTurn 2: Pinch\nTurn 3: Pinch - Unless the enemy is the Cockroach, then Shell Armor\nNot Cockroach:\nTurns 4-5: Dive\nTurn 6+: Pinch until dead\nCockroach:\nTurn 4: Pinch\nTurn 5: Pinch\nTurns 6-7: Dive\nTurn 8+: Pinch until dead\n\n~: If the active enemy is Mech/Undead, bring in the Autumnal Sproutling, if it's a Cockroach then go to the Blazing Cindercrawler\n\nBring in your Autumnal Sproutling\nPriority 1: Use Leech Seed on CD\nPriority 2: Use Fist of the Forest on CD\nPriority 3: Lash as filler\nBring in your Blazing Cindercrawler\nPriority 1: Cauterize as needed\nIf: Mech/Undead pet is up: Burn+\nIf : Critter is up: Brittle Webbing +\n",
-		["name"] = "Living Sludge",
+		["notes"] = "Strategy added by DragonsAfterDark\nIkky should be good to take out both, or almost both, Skitterers with no healing between the fights.Script thanks to Schlumpf\n\nTurn 1: Black Claw\nTurns 2-4: Flock\nTurn 5+: Quills until the fight is won\n",
+		["name"] = "Storm-Touched Skitterer",
 		["tags"] = {
-			"11152AV", -- [1]
-			"12291CL", -- [2]
-			"11241FD", -- [3]
+			"21181FS", -- [1]
+			"ZR3", -- [2]
+			"ZR3", -- [3]
 		},
-		["teamID"] = "team:120",
+		["teamID"] = "team:151",
 		["targets"] = {
-			146182, -- [1]
+			200679, -- [1]
 		},
-		["groupID"] = "group:6",
-	},
-	["team:296"] = {
-		["pets"] = {
-			"BattlePet-0-000012B67A3C", -- [1]
-			"BattlePet-0-000012B99C95", -- [2]
-			"BattlePet-0-000012B99C7D", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16990\n\nStrategy added by DragonsAfterDark\nTurn 1: Adrenaline Rush\nTurn 2: Flamethrower\nTurn 3: Burn\nTurn 4: Burn - Gusteau dies and resurrects & kills your Crispin\nBring in your Void-Scarred Rat\nTurn 1: Creepy Chomp - to kill Gusteau\nRemy comes in\nTurn 1: Feed\nTurn 2: Creepy Chomp\nTurn 3: Bloodfang\nDinner comes in\nTurn 1: Creepy Chomp - Blocked by Bubble\nTurn 2: Creepy Chomp - Blocked by Bubble\nTurn 3+: If you survive use Feed & Bloodfang on CD & Creepy Chomp otherwise\nBring in your Lovebird Hatchling\n> 630 hp: Alpha Strike\n< 631 hp: Predatory Strike\n",
-		["name"] = "Chopped (Critter)",
-		["tags"] = {
-			"11281MO", -- [1]
-			"12242OP", -- [2]
-			"21251F7", -- [3]
-		},
-		["teamID"] = "team:296",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105674, -- [1]
+		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 25,
 		},
 	},
 	["team:245"] = {
@@ -8776,27 +8600,24 @@ Rematch5SavedTeams = {
 		["teamID"] = "team:245",
 		["groupID"] = "group:none",
 	},
-	["team:147"] = {
+	["team:289"] = {
 		["pets"] = {
-			"BattlePet-0-000012B98D26", -- [1]
-			"random:5", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000008968258", -- [1]
+			"BattlePet-0-000012B4838C", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
 		},
-		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Dodge\nTurn 2-4: Stampede\nTurn 5: Flurry\nTurn 6: Dodge\nTurn 7+: Flurry until Huncher dies\nIf needed:\nBring in your Critter pet\nAny standard attack will finish the fight\n",
-		["name"] = "Huncher",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/384\n\nScript thanks to aidos\n\nTurn 1: Sandstorm\nTurn 2: Deflection\nTurns 3+: From here on, cast Deflection on cooldown, Sandstorm when you can and Crush in between until Diamond is no more.\nMollus comes in\nTurn 1: Crush\nTurn 2: Crush\nTurn 3: Deflection\nTurn 4: Swap to your Emerald Proto-Whelp\nTurn 5: Emerald Presence\nTurn 6: Emerald Bite\nTurn 7: Emerald Bite\nTurns 8-9: Proto-Strike\nTurn 10: Emerald Presence\nTurns 11+: Emerald Bite until Mollus dies.\nSkimmer comes in\nTurns 1+: Emerald Bite until your Emerald Proto-Whelp dies. Pass if you get stunned.\nBring in your Anubisath Idol\nTurns 1+: Cast Deflection when Skimmer is Pumped up (if possible), Sandstorm on cooldown and Crush as a filler.\n",
+		["name"] = "Seeker Zusshi",
 		["tags"] = {
-			"22281NI", -- [1]
-			"ZR5", -- [2]
-			"ZR0", -- [3]
+			"1116143", -- [1]
+			"221814F", -- [2]
+			"11261CI", -- [3]
 		},
-		["teamID"] = "team:147",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
+		["teamID"] = "team:289",
+		["groupID"] = "group:11",
 		["targets"] = {
-			150917, -- [1]
+			66918, -- [1]
 		},
-		["groupID"] = "group:8",
 	},
 	["team:190"] = {
 		["pets"] = {
@@ -8812,13 +8633,13 @@ Rematch5SavedTeams = {
 			"ZL", -- [3]
 		},
 		["teamID"] = "team:190",
-		["preferences"] = {
-			["minXP"] = 1,
-		},
 		["targets"] = {
 			189376, -- [1]
 		},
 		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
+		},
 	},
 	["team:332"] = {
 		["pets"] = {
@@ -8839,61 +8660,67 @@ Rematch5SavedTeams = {
 			105455, -- [1]
 		},
 	},
-	["team:104"] = {
+	["team:434"] = {
 		["pets"] = {
-			"BattlePet-0-000006E4C775", -- [1]
-			"BattlePet-0-000012BC0A5A", -- [2]
-			0, -- [3]
+			"BattlePet-0-000012B5CBA5", -- [1]
+			"random:9", -- [2]
+			"random:9", -- [3]
 		},
-		["notes"] = "Strategy added by Mutanis\nI got inspired by Slayer [url=https://www.wow-petguide.com/?Strategy=12215]strategy[/url].Time: ~1:30 (11-12 rounds)Updated TD Script (5.04.2021). Strategy works also in rare critical cases now\n\nTurn 1: Ice Tomb\nTurn 2: Call Blizzard\nTurn 3: Ice Lance\nTurn 4: Ice Lance (Egcellent comes in)\nTurn 5: Ice Lance\nTurn 6: Call Blizzard\nTurn 7: Ice Tomb (Red Wire comes in)\nTurn 8: Ice Lance (Father Winter's Helper dies)\nBring in your Mechanical Pandaren Dragonling\nTurn 9: Breath\nTurn 10: Thunderbolt (Gulp comes in)\nTurn 11: Breath (if Gulp is alredy dead(crits) then Egcellent comes in --> Explode)\nEgcellent comes in\nTurn 12: Explode\n",
-		["name"] = "Tiny Poacher, Tiny Animals",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3552\n\nStrategy added by DragonsAfterDark\nTurn 1: Rain Dance\nTurn 2-5: Tidal Wave\nRepeat 1-5 until enemy backline pets die\nAfter that:\nPriority 1: Rain Dance\nPriority 2: Water Jet\n",
+		["name"] = "Fight Night: Amalia (Aquatic)",
 		["tags"] = {
-			"21133N", -- [1]
-			"1215QC", -- [2]
-			"ZL", -- [3]
+			"11231KN", -- [1]
+			"ZR9", -- [2]
+			"ZR9", -- [3]
 		},
-		["teamID"] = "team:104",
+		["teamID"] = "team:434",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
-			99150, -- [1]
+			107489, -- [1]
 		},
-		["groupID"] = "group:none",
-	},
-	["team:366"] = {
-		["pets"] = {
-			"BattlePet-0-000011F7F5D4", -- [1]
-			"BattlePet-0-000012C4AA56", -- [2]
-			"BattlePet-0-000012DEFD57", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/678\n\nScript thanks to Aesetha\n\nTurn 1: Dodge\nTurn 2: Scratch\nTurn 3: Scratch\nTurn 4: Scratch\nTurns 5+6: Burrow\nTurns 7+: If necessary, Scratch until Lil' Spirit Guide enters his undead round\nThen:: Dodge\nQuillino comes in\nTurns 1+: Scratch until your Rabbit dies\nBring in your second Rabbit\nTurns 1+: Use Burrow when available and Scratch otherwise until your Rabbit is dead\nBring in your Snail\nTurns 1+: Ooze Touch until Quillino dies\nFethyr comes in\nTurns 1+2: Dive\nTurn 3: Shell Shield\nTurn 4: Ooze Touch\nTurn 5: Ooze Touch\nTurn 6: Ooze Touch\nTurns 7+8: Burrow - Fethyr dies\n",
-		["name"] = "Training with Bredda (Critter)",
-		["tags"] = {
-			"121BBQ", -- [1]
-			"121BMP", -- [2]
-			"1217FD", -- [3]
-		},
-		["teamID"] = "team:366",
 		["groupID"] = "group:12",
+	},
+	["team:136"] = {
+		["pets"] = {
+			"BattlePet-0-00001308723A", -- [1]
+			0, -- [2]
+			"BattlePet-0-000012B673F3", -- [3]
+		},
+		["notes"] = "Strategy added by ghostpets\nFight time:  1:45 - 2:00 on 14-15 rounds usually1:43 - 1:55 usually using the TD Script as measured by the Pet Battle Log Keeper add-on.Safe for all level 1+ pets.This strategy is a faster variation of [url=https://www.wow-petguide.com/?Strategy=5193]another strategy[/url] posted by Shenk.  This one uses Rebuilt Mechanical Spider in the same manner, but replaces Twilight Clutch-Sister with Microbot XD (added in patch 8.2) for a faster kill.Possible substitutions:Slot #1 - Scrapyard Tunneler 1-1-2 (SS or SB breeds, which have speed > 280) may work here (using Chomp in place of Skitter), but will be less consistent due to the variance of damage that Chomp deals.Slot #3 - The more expensive Microbot 8D is probably not powerful enough to work well as a substitute for Microbot XD.\n\nTurn 1: Smoke Cloud\nTurn 2-5: Skitter (usually 4 times) until Lil' Spirit Guide reaches undead round\nUndead: Smoke Cloud\nLil' Spirit Guide dies.  Quillino comes in.\nTurn 1+2: Skitter twice (in the rare case that Rebuilt Mechanical Spider dies here, forfeit)\nTurn 3: Explode\nBring in your Level Pet\nTurn 4: Swap to your Microbot XD\nTurn 5-6+: Alert! (usually 2-3 times) until Quillino is dead\nQuillino dies.  Fethyr comes in.\nTurn 1: Supercharge\nTurn 2: Ion Cannon\nFethyr dies.\n",
+		["name"] = "Training with Bredda",
+		["tags"] = {
+			"21102G5", -- [1]
+			"ZL", -- [2]
+			"12272KT", -- [3]
+		},
+		["teamID"] = "team:136",
+		["groupID"] = "group:none",
 		["targets"] = {
 			99077, -- [1]
 		},
 	},
-	["team:407"] = {
+	["team:201"] = {
 		["pets"] = {
-			"BattlePet-0-000012B4838C", -- [1]
-			"BattlePet-0-000012B146CC", -- [2]
-			"random:2", -- [3]
+			"BattlePet-0-000012B484E9", -- [1]
+			"BattlePet-0-000012B146CB", -- [2]
+			"random:0", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/606\n\nScript thanks to KyooShoo\n\nTurns 1+2: Proto-Strike\nTurns 3+: Breath until Jinx is dead\nRocket comes in\nTurn 1: Emerald Presence\nTurns 2+3: Proto-Strike\nTurns 4+: Breath until Rocket is dead as well\nMarshmallow comes in\nTurns 1+: Breath until your Proto-Whelp dies\nBring in Chrominius\nTurn 1: Howl\nTurn 2: Surge of Power\n",
-		["name"] = "Fight Night: Tiffany Nelson (Dragon)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18464\n\nStrategy added by DragonsAfterDark\nThe script will run for Ikky & the Zandalari Raptors\n\nVideo for Fight (https://youtu.be/NjYD3heC3Js)\n\nTurn 1: Curse of Doom\nTurn 2: Shadow Slash / Shadow Shock\nTurn 3: Haunt\nBring in your Ikky\nTurn 4: Black Claw\nTurns 5-6: Flock\n",
+		["name"] = "Enok the Stinky",
 		["tags"] = {
-			"121814F", -- [1]
-			"1126140", -- [2]
-			"ZR2", -- [3]
+			"021616M", -- [1]
+			"01181FS", -- [2]
+			"ZR0", -- [3]
 		},
-		["teamID"] = "team:407",
-		["groupID"] = "group:12",
+		["teamID"] = "team:201",
 		["targets"] = {
-			97804, -- [1]
+			202440, -- [1]
+		},
+		["groupID"] = "group:none",
+		["preferences"] = {
+			["minXP"] = 1,
 		},
 	},
 	["team:49"] = {
@@ -8915,46 +8742,49 @@ Rematch5SavedTeams = {
 		},
 		["groupID"] = "group:5",
 	},
-	["team:177"] = {
+	["team:326"] = {
 		["pets"] = {
-			"BattlePet-0-000012B146C7", -- [1]
-			"BattlePet-0-000012B482D2", -- [2]
-			"random:0", -- [3]
+			"BattlePet-0-000011F7F5D4", -- [1]
+			"BattlePet-0-000012B90271", -- [2]
+			"random:5", -- [3]
 		},
-		["notes"] = "Strategy added by station384\nTurn 1: Blistering Cold\nTurn 2: Chop\nTurn 3: BONESTORM\nTurn 4: Repeat till Boneshard dead\nTurn 5: Primal Cry\nTurn 6: Black Claw\nTurn 7: Hunting Party\nTurn 8: Repeat 5-7 till target dead\n",
-		["name"] = "Tremblor - Rare",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/637\n\nDragonsAfterDark: Updated 3 June 22 for some efficiency changes. Happy battling!\n\nScript thanks to Ratsch\n\nTurn 1: Flurry\nTurn 2: Flurry\nTurns 3-5: Stampede\nUndead: Pass\nCrawdead comes in\nTurn 1: Flurry\nTurn 2: Flurry\nTurn 3: Dodge\nTurn 4+: Flurry until Rabbit dies\nBring in your Snail\nTurn 1: Shell Shield\nTurns 2+: Ooze Touch until Crawdead resurrects\nUndead: Shell Shield\nGnaw comes in\nTurns 1+2: Dive\nTurns 2+: Ooze Touch until your Snail dies\nBring in your third pet\nTurn 1: Any standard attack will finish the fight\n",
+		["name"] = "Jarrun's Ladder (Critter)",
 		["tags"] = {
-			"11231TB", -- [1]
-			"222A15R", -- [2]
-			"ZR0", -- [3]
+			"222BBQ", -- [1]
+			"121CN7", -- [2]
+			"ZR5", -- [3]
 		},
-		["teamID"] = "team:177",
-		["targets"] = {
-			200693, -- [1]
-		},
-		["groupID"] = "group:none",
-	},
-	["team:33"] = {
-		["pets"] = {
-			"BattlePet-0-000012B5C2FF", -- [1]
-			"BattlePet-0-000012B5C356", -- [2]
-			"random:0", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2255\n\nStrategy added by Eekwibble\nI changed this from having a carry pet because the xp is so lame since the nerf. The upside is, it now only lasts 13 rounds.\n\nTurn 1: Ironskin\nTurns 2&3: Falcosaur Swarm!\nTurn 4: Predatory Strike - Fungus dies\nMort comes in\nTurn 1: Pass\nTurn 2: Ironskin\nTurns 3&4: Falcosaur Swarm!\nTurn 5: Predatory Strike - Mort dies\nOld Blue comes in\nTurn 1+: Falcosaur Swarm! until Direbeak Hatchling dies\nBring in your Snowfeather Hatchling\nThen:: Predatory Strike - Old Blue dies\n",
-		["name"] = "That's a Big Carcass",
-		["tags"] = {
-			"12171TN", -- [1]
-			"00151TM", -- [2]
-			"ZR0", -- [3]
-		},
-		["teamID"] = "team:33",
+		["teamID"] = "team:326",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
 		["targets"] = {
-			141292, -- [1]
+			105455, -- [1]
 		},
-		["groupID"] = "group:none",
+		["groupID"] = "group:12",
+	},
+	["team:413"] = {
+		["pets"] = {
+			"BattlePet-0-000012BAFD2D", -- [1]
+			"BattlePet-0-000012B96D70", -- [2]
+			"random:4", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2696\n\nStrategy added by DragonsAfterDark\nTurn 1: Touch of the Animus\nTurn 2+3: Lift-Off\nTurn 4+: Plagued Blood until Jinx dies\nRocket comes in\nPriority 1: Touch of the Animus & Lift-Off on CD\nPriority 2: Plagued Blood all else\nBring in your Spirit Crab\nTurn 1+: Surge until Rocket dies\nMarshmallow comes in\nTurn 1: Shell Shield and then refresh with 1 round left\nTurn 2+: Snap until Marshmallow dies\n",
+		["name"] = "Fight Night: Tiffany Nelson (Undead)",
+		["tags"] = {
+			"22281H6", -- [1]
+			"1119EF", -- [2]
+			"ZR4", -- [3]
+		},
+		["teamID"] = "team:413",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			97804, -- [1]
+		},
+		["groupID"] = "group:12",
 	},
 	["team:262"] = {
 		["pets"] = {
@@ -8986,72 +8816,69 @@ Rematch5SavedTeams = {
 			"ZR1", -- [3]
 		},
 		["teamID"] = "team:300",
-		["groupID"] = "group:12",
-		["targets"] = {
-			105674, -- [1]
-		},
 		["preferences"] = {
 			["minXP"] = 25,
 		},
-	},
-	["team:184"] = {
-		["pets"] = {
-			"BattlePet-0-000006E4C76E", -- [1]
-			"BattlePet-0-000012B01EBA", -- [2]
-			"BattlePet-0-000012B01ED3", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14342\n\nStrategy added by Druzil#2921\nPass if stunned.\n\n Iron Starlette backup pet\n\nTurn 1: Supercharge\nTurn 2: Call Lightning - Chum dies\nTurn 3: Bring in Lurking Owl Kitten\nTurn 4: Screech\nTurn 5: Quills\nTurn 6: Feathered Frenzy - Bruce should die\nTurn 7: Quills - Lurking Owl Kitten dies\nTurn 8: Bring in Runeforged Servitor\nTurn 9: Supercharge\nTurn 10: Call Lightning - Maws Jr. dies\n",
-		["name"] = "Not So Bad Down Here",
-		["tags"] = {
-			"22231T5", -- [1]
-			"22181S2", -- [2]
-			"12171BB", -- [3]
-		},
-		["teamID"] = "team:184",
 		["targets"] = {
-			141077, -- [1]
+			105674, -- [1]
+		},
+		["groupID"] = "group:12",
+	},
+	["team:215"] = {
+		["pets"] = {
+			"BattlePet-0-000012B4874E", -- [1]
+			"BattlePet-0-000012B6751A", -- [2]
+			"BattlePet-0-000012B67C89", -- [3]
+		},
+		["notes"] = "Strategy added by DragonsAfterDark\nThe enemies don't use their abilities in a particular order, hence the priority system.[url=https://youtu.be/qGCV-Bk7bLg]Video for Fight[/url]\n\n~: Priorities for pets 1 & 2\nPriority 1: Arcane Storm on CD\nPriority 2: Mana Surge on CD\nPriority 3: Tail Sweep\nBring in your Hermit Crab\nPriority 1: Bubble or Dive when Kazzquack is Lifted-Off\nPriority 2: Fish Slap\n",
+		["name"] = "A New Vocation (2)",
+		["tags"] = {
+			"122414D", -- [1]
+			"12281LP", -- [2]
+			"22152AV", -- [3]
+		},
+		["teamID"] = "team:215",
+		["targets"] = {
+			201899, -- [1]
 		},
 		["groupID"] = "group:none",
 	},
-	["team:61"] = {
+	["team:339"] = {
 		["pets"] = {
-			"BattlePet-0-000012B99D22", -- [1]
-			"BattlePet-0-00000839A881", -- [2]
-			"BattlePet-0-000012BA1A7F", -- [3]
+			"BattlePet-0-000012B6764A", -- [1]
+			"BattlePet-0-000012BA9542", -- [2]
+			"BattlePet-0-000012EA974D", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1935\n\nStrategy added by Sully\nScript thanks to TURBOKillex\n\nTurn 1: Diseased Bite\nTurn 2: Ethereal\nTurn 3: Ghostly Bite\nTurn 4: Pass - Yen swaps out and bolo comes in\nTurn 5: Diseased Bite until Ghastly Kid Resses\nTurn 7: Ghostly Bite - Bolo Dies and so does Ghastly Kid\nBring in your Fel Pup\nTurn 1: Crouch\nPass if you are stunned\nTurn 2: Diseased Bite until Yen dies\nTurn 4: Diseased Bite\nTurn 6: Howl\nTurn 7: Diseased Bite until Li dies\n",
-		["name"] = "Taran Zhu",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/886\n\nStrategy added by Belkelel#2195\nScript thanks to AramilGaeda\n\nTurn 1: Decoy\nTurns 2+3: Haywire\nTurns 4+: Alpha Strike until Thrugtusk is dead\nWumpas comes in\nTurns 1+: Haywire or Alpha Strike until your Mechanical Axebeak dies\nBring in Stormwing\nTurn 1: Call Lightning\nTurns 2-4: Flock\nTurns 5+: Alpha Strike until Wumpas dies\nBaeloth comes in\nTurn 1: Alpha Strike\nTurn 2: Pass\nTurn 3: Call Lightning\nTurns 4+: Flock - Stormwing dies\nBring in your Cerulean Moth\nTurn 1: Call Lightning\nTurns 2+: Slicing Wind until the fight is done\n",
+		["name"] = "My Beast's Bidding (Flyer)",
 		["tags"] = {
-			"22161D2", -- [1]
-			"21151JS", -- [2]
-			"00061CI", -- [3]
+			"12171BR", -- [1]
+			"112A1GA", -- [2]
+			"10281HI", -- [3]
 		},
-		["teamID"] = "team:61",
-		["targets"] = {
-			71931, -- [1]
-		},
-		["groupID"] = "group:11",
-	},
-	["team:356"] = {
-		["pets"] = {
-			"BattlePet-0-000012BF63D8", -- [1]
-			"BattlePet-0-000012C4AA56", -- [2]
-			"random:5", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/496\n\npbScript thanks to isthevao#1164\n\nTurn 1: Headbutt\nTurn 2: Pass\nTurn 3: Pass\nTurn 4: Shell Shield\nTurn 5: Ooze Touch\nTurn 6: Headbutt\nTurns 7+: Ooze Touch until Rocklick is dead\nSlow Moe comes in\nTurn 1: Ooze Touch\nTurn 2: Shell Shield\nTurn 3: Headbutt\nTurns 4+: Ooze Touch until your snail dies\nBring in your Rabbit\nTurn 1: Dodge\nTurns 2+: Scratch until Slow Moe is dead (should be 1 or 2 turns)\nSnot comes in\nTurn 1: Scratch\nTurn 2: Scratch\nTurn 3: Dodge\nTurn 4: Scratch\nTurns 5-6: Burrow\nTurn 7: Scratch\nTurn 8: Dodge\nTurns 9+: Scratch until Snot is dead",
-		["name"] = "Snail Fight! (Critter)",
-		["tags"] = {
-			"1229HO", -- [1]
-			"121BMP", -- [2]
-			"ZR5", -- [3]
-		},
-		["teamID"] = "team:356",
+		["teamID"] = "team:339",
 		["groupID"] = "group:12",
 		["targets"] = {
-			104553, -- [1]
+			98270, -- [1]
 		},
-		["preferences"] = {
-			["minXP"] = 15,
+	},
+	["team:418"] = {
+		["pets"] = {
+			"BattlePet-0-000012B607A6", -- [1]
+			"BattlePet-0-000012B17369", -- [2]
+			"BattlePet-0-000006E4C77C", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1246\n\nScript thanks to KyooShoo\n\nTurn 1: Geyser\nTurn 2: Rain Dance\nTurn 3: Pass\nTurns 4+: Jade Claw until Jademist Dancer dies\nBring in your Living Sandling\nTurns 1+: Keep Quicksand on cooldown and use Punch until your Living Sandling dies\nBring in your Tiny Snowman\nTurn 1: Call Blizzard\nTurn 2: Deep Freeze\nTurn 3: Snowball\n",
+		["name"] = "Fight Night: Sir Galveston (Elemental)",
+		["tags"] = {
+			"222319L", -- [1]
+			"122A14P", -- [2]
+			"11233L", -- [3]
+		},
+		["teamID"] = "team:418",
+		["groupID"] = "group:12",
+		["targets"] = {
+			99182, -- [1]
 		},
 	},
 	["team:306"] = {
@@ -9073,28 +8900,24 @@ Rematch5SavedTeams = {
 			97709, -- [1]
 		},
 	},
-	["team:278"] = {
+	["team:9"] = {
 		["pets"] = {
-			"BattlePet-0-00000D450505", -- [1]
-			0, -- [2]
-			0, -- [3]
+			"BattlePet-0-000012B4C1CA", -- [1]
+			"BattlePet-0-000012B3E06C", -- [2]
+			"BattlePet-0-000008968258", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/13420\n\nStrategy added by WildCard\nThe same team can be used for all < 21 trainers.\nFull TD Script for them is in this comment (https://wow-petguide.com/Comment/95382).\n\nTurn 1: Swap to your Level Pet #2\nTurn 2: Swap to your Level Pet #3\nTurn 3: Swap to your Celestial Dragon\nPriority 1: Ancient Blessing if health < 70%\nPriority 2: Moonfire if  (ID: 596) duration 1 or none\nPriority 3: Flamethrower\n",
-		["name"] = "Nicki Tinytech",
+		["notes"] = "Strategy added by Skattyman#21150\nTurn 1: Sunlight, enemy forces you to swap every turn with Pandaren Fire Spirit until dead\nTurn 2: Immolate\nTurn 3: Inspiring Song\nTurn 4: Conflagrate\nTurn 5: Weakening Blow\nTurn 6: Burn\nTurn 7: Sunlight\nTurn 8: Inspiring Song\nTurn 9-11: Weakening Blow until Terrible Turnip dies\nTurn 12: Pandaren Fire Spirit comes in, Immolate\nTurn 13: Conflagrate, Pandaren Fire Spirit dies\nTurn 14: Anubisath Idol comes in, Sandstorm\nTurn 15: Rupture\nTurn 16-20: Crush to victory\n",
+		["name"] = "Environeer Bert",
 		["tags"] = {
-			"11167V", -- [1]
-			"ZL", -- [2]
-			"ZL", -- [3]
+			"1218KA", -- [1]
+			"122516D", -- [2]
+			"1126143", -- [3]
 		},
-		["teamID"] = "team:278",
-		["groupID"] = "group:11",
+		["teamID"] = "team:9",
 		["targets"] = {
-			66550, -- [1]
+			124617, -- [1]
 		},
-		["preferences"] = {
-			["minHP"] = 353,
-			["minXP"] = 3,
-		},
+		["groupID"] = "group:none",
 	},
 	["team:148"] = {
 		["pets"] = {
@@ -9110,68 +8933,76 @@ Rematch5SavedTeams = {
 			"111B1H9", -- [3]
 		},
 		["teamID"] = "team:148",
-		["preferences"] = {
-			["minXP"] = 25,
-		},
 		["targets"] = {
 			116786, -- [1]
 		},
 		["groupID"] = "group:7",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 	},
-	["team:425"] = {
+	["team:429"] = {
 		["pets"] = {
-			"BattlePet-0-000012C2231A", -- [1]
-			"BattlePet-0-000012C42046", -- [2]
-			"BattlePet-0-000012C8C1E1", -- [3]
+			"BattlePet-0-000012B5C2FF", -- [1]
+			"BattlePet-0-000012F20B9E", -- [2]
+			"random:3", -- [3]
 		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3512\n\nStrategy added by DragonsAfterDark\nS/S & B/B have been confirmed as working, let me know how the H/S does ^^\n\nVideo for Fight (https://youtu.be/ppIiTwudh1c?t=1083)\n\nTurn 1+: Peck until Itchy dies\nSalty Bird comes in\nTurn 1+: Peck until Ragepeep dies\nBring in your Thaumaturgical Piglet\nHP < 928: Arcane Dash\nHP > 928: Ooze Touch > Arcane Dash\nGrommet comes in\nTurn 1+: Ooze Touch until Grommet or Thaumaturgical Piglet dies\nBring in your Antoran Bile Larva\nTurn 1: Plagued Blood\nTurn 2+: Diseased Bite\n",
-		["name"] = "Fight Night: Bodhi Sunwayver (Beast)",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1960\n\nRepeat the following until your Direbeak Hatchling dies\nPriority 1: Ironskin\nPriority 2: Warning Squawk\nPriority 3: Falcosaur Swarm!\nBring in your Ikky\nRepeat the following until Ikky dies\nTurn 1: Black Claw\nTurns 2-4: Flock\nClean up with your third Flyer\n",
+		["name"] = "Fight Night: Bodhi Sunwayver (Flyer)",
 		["tags"] = {
-			"10052C5", -- [1]
-			"20281MV", -- [2]
-			"201A22A", -- [3]
+			"12271TN", -- [1]
+			"01181FS", -- [2]
+			"ZR3", -- [3]
 		},
-		["teamID"] = "team:425",
-		["groupID"] = "group:12",
+		["teamID"] = "team:429",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
 			99210, -- [1]
 		},
+		["groupID"] = "group:12",
 	},
-	["team:84"] = {
+	["team:159"] = {
 		["pets"] = {
-			"BattlePet-0-000012E7A769", -- [1]
-			"BattlePet-0-000012B146C7", -- [2]
-			"BattlePet-0-000006E4C7B4", -- [3]
+			"BattlePet-0-000012B0D34C", -- [1]
+			"BattlePet-0-000012C82AA8", -- [2]
+			0, -- [3]
 		},
-		["notes"] = "Strategy added by Hollandshoop\nScript thanks to Dpaul\n\nTurn 1: Pass or use any ability with your Level Pet\nTurn 2: Swap to your Boneshard\nTurn 3: Blistering Cold\nTurn 4: Boneshard stunned. Swap to your Ikky\nTurn 5: Black Claw\nTurn 6: Flock\nAnd the job is done!!!\n",
-		["name"] = "Retinus the Seeker",
+		["notes"] = "Strategy added by Mutanis\nTurn 1: Time Bomb\nTurn 2: Pass (Irradiated Elementaling comes in)\nTurn 3: Elementium Bolt\nTurn 4: Immolate\nGlobs comes in\nTurn 5: Immolate\nNightmare Sprout comes in\nTurns 6+: Immolate until Irradiated Elementaling dies (1-2x)\nBring in your Timeless Mechanical Dragonling\nQestion: Trixy is dead? -->YES go to Step B\nNo --> Priolist\nPrio 1: Flame Breath until Nightmare Sprout health < 397 (1-2x)\nPrio 2: Armageddon\n\nStep B (only if  Trixy is dead)\nTurn 1: Time Bomb\nTurn 2: Flame Breath\nTurn 3: Flame Breath\nTurn 4: Armageddon\n",
+		["name"] = "Dealing with Satyrs",
 		["tags"] = {
-			"12252PO", -- [1]
-			"11231TB", -- [2]
-			"11181FS", -- [3]
+			"122430S", -- [1]
+			"10242M4", -- [2]
+			"ZL", -- [3]
 		},
-		["teamID"] = "team:84",
+		["teamID"] = "team:159",
 		["targets"] = {
-			162458, -- [1]
+			104970, -- [1]
 		},
 		["groupID"] = "group:none",
 	},
-	["team:261"] = {
+	["team:35"] = {
 		["pets"] = {
-			"BattlePet-0-000012B17368", -- [1]
-			"BattlePet-0-000012C2D394", -- [2]
-			"BattlePet-0-000012B146CB", -- [3]
+			"BattlePet-0-000011CA344B", -- [1]
+			"random:0", -- [2]
+			"BattlePet-0-000012BA1A7F", -- [3]
 		},
-		["name"] = "Catch team",
+		["notes"] = "Strategy added by DragonsAfterDark\n[url=https://www.youtube.com/watch?v=sxR04DaaG04]Video of Fight[/url]\n\nTurn 1: Deflection\nThen:\nPriority 1: Deflection on CD\nPriority 2: Cleave\n~*~: Note: Once Idol of Decay gets under 300 hp, they'll use Dark Rebirth.\nSometimes you'll hit the 300 threshold just as Rot is coming off CD. You'll want to Cleave instead of Deflection, because Idol of Decay will prioritize Rebirth over Rot \n\nGyrexle, the Eternal Mechanic comes in\nTurn 1: Cleave\n",
+		["name"] = "Cymre Brightblade",
 		["tags"] = {
-			"22142OQ", -- [1]
-			"222B1T1", -- [2]
-			"21181FS", -- [3]
+			"210C31Q", -- [1]
+			"ZR0", -- [2]
+			"00061CI", -- [3]
 		},
-		["teamID"] = "team:261",
-		["homeID"] = "group:9",
-		["favorite"] = true,
-		["groupID"] = "group:favorites",
+		["teamID"] = "team:35",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
+		["targets"] = {
+			83837, -- [1]
+		},
+		["groupID"] = "group:11",
 	},
 	["team:81"] = {
 		["pets"] = {
@@ -9206,35 +9037,35 @@ Rematch5SavedTeams = {
 			"ZR3", -- [3]
 		},
 		["teamID"] = "team:349",
-		["groupID"] = "group:12",
+		["preferences"] = {
+			["minXP"] = 25,
+		},
 		["targets"] = {
 			99150, -- [1]
 		},
+		["groupID"] = "group:12",
+	},
+	["team:442"] = {
+		["pets"] = {
+			"BattlePet-0-000012BA9541", -- [1]
+			"random:10", -- [2]
+			"random:10", -- [3]
+		},
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/519\n\nScript thanks to Ilyssa\n\nTurns 1-3: Quake\nTurns 4-6: Repair\nTurns 7-9: Quake\nTurn 10: Pass\nTurn 11: Pass\nTurns 12-14: Quake\nTurns 15-17: Repair\nTurns 18+: Quake - all enemy pets should be dead by now (sometimes even way before)\n",
+		["name"] = "Fight Night: Amalia (Mech)",
+		["tags"] = {
+			"012485", -- [1]
+			"ZRA", -- [2]
+			"ZRA", -- [3]
+		},
+		["teamID"] = "team:442",
 		["preferences"] = {
 			["minXP"] = 25,
 		},
-	},
-	["team:438"] = {
-		["pets"] = {
-			"BattlePet-0-000012E38593", -- [1]
-			"random:7", -- [2]
-			"random:7", -- [3]
-		},
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/3548\n\nStrategy added by DragonsAfterDark\nYour backline pets won't matter here, as you shouldn't need more than the crab, and Foof will kill them with his AOE\n\nTurn 1-3: Magma Wave\nTurn 4: Cauterize\nFollow 1-4 until Enemy Backline pets die\nAfter that:\nPriority 1: Cauterize on CD\nPriority 2: Burn\n",
-		["name"] = "Fight Night: Amalia (Elemental)",
-		["tags"] = {
-			"1226D7", -- [1]
-			"ZR7", -- [2]
-			"ZR7", -- [3]
-		},
-		["teamID"] = "team:438",
-		["groupID"] = "group:12",
 		["targets"] = {
 			107489, -- [1]
 		},
-		["preferences"] = {
-			["minXP"] = 25,
-		},
+		["groupID"] = "group:12",
 	},
 }
 Rematch5SavedGroups = {
@@ -9242,256 +9073,68 @@ Rematch5SavedGroups = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "cerlestial week 2",
-		["groupID"] = "group:2",
+		["teams"] = {
+		},
 		["icon"] = 132123,
-		["teams"] = {
-		},
+		["groupID"] = "group:2",
+		["name"] = "cerlestial week 2",
 	},
-	["group:favorites"] = {
-		["showTab"] = true,
-		["sortMode"] = 1,
-		["name"] = "Favorite Teams",
-		["teams"] = {
-			"team:261", -- [1]
-			"team:199", -- [2]
-		},
-		["meta"] = true,
-		["groupID"] = "group:favorites",
-		["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_MRPOPULARITY_RANK2",
-		["isExpanded"] = true,
-	},
-	["group:4"] = {
+	["group:9"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "deadmines",
-		["groupID"] = "group:4",
-		["icon"] = 132796,
 		["teams"] = {
-			"team:192", -- [1]
-			"team:161", -- [2]
-			"team:176", -- [3]
-			"team:207", -- [4]
-			"team:194", -- [5]
-			"team:205", -- [6]
-			"team:174", -- [7]
-			"team:195", -- [8]
-			"team:216", -- [9]
+			"team:241", -- [1]
 		},
+		["icon"] = 132149,
+		["groupID"] = "group:9",
+		["name"] = "Catchers",
 	},
-	["group:3"] = {
+	["group:8"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "Celestial week 3",
-		["groupID"] = "group:3",
-		["icon"] = 645203,
 		["teams"] = {
-			"team:225", -- [1]
-			"team:160", -- [2]
-			"team:162", -- [3]
-			"team:100", -- [4]
+			"team:188", -- [1]
+			"team:126", -- [2]
+			"team:42", -- [3]
+			"team:83", -- [4]
+			"team:147", -- [5]
+			"team:173", -- [6]
+			"team:3", -- [7]
+			"team:5", -- [8]
+			"team:202", -- [9]
+			"team:180", -- [10]
+			"team:152", -- [11]
+			"team:133", -- [12]
 		},
+		["icon"] = 135983,
+		["groupID"] = "group:8",
+		["name"] = "Stratholme HC",
 	},
-	["group:1"] = {
+	["group:5"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "celestial week 1",
-		["groupID"] = "group:1",
-		["icon"] = 1519351,
 		["teams"] = {
-			"team:251", -- [1]
-			"team:260", -- [2]
-			"team:249", -- [3]
-			"team:233", -- [4]
+			"team:45", -- [1]
+			"team:14", -- [2]
+			"team:52", -- [3]
+			"team:209", -- [4]
+			"team:211", -- [5]
+			"team:43", -- [6]
+			"team:165", -- [7]
+			"team:155", -- [8]
+			"team:146", -- [9]
+			"team:203", -- [10]
+			"team:54", -- [11]
+			"team:18", -- [12]
+			"team:10", -- [13]
+			"team:49", -- [14]
 		},
-	},
-	["group:6"] = {
-		["showTab"] = true,
-		["sortMode"] = 1,
-		["isExpanded"] = true,
-		["name"] = "Gnomera",
-		["groupID"] = "group:6",
-		["icon"] = 4548874,
-		["teams"] = {
-			"team:191", -- [1]
-			"team:65", -- [2]
-			"team:72", -- [3]
-			"team:103", -- [4]
-			"team:189", -- [5]
-			"team:175", -- [6]
-			"team:149", -- [7]
-			"team:58", -- [8]
-			"team:123", -- [9]
-			"team:117", -- [10]
-			"team:120", -- [11]
-			"team:41", -- [12]
-			"team:163", -- [13]
-			"team:113", -- [14]
-		},
-	},
-	["group:12"] = {
-		["sortMode"] = 1,
-		["name"] = "Family familiar",
-		["isExpanded"] = true,
-		["icon"] = "Interface\\Icons\\INV_Pet_BattlePetTraining",
-		["groupID"] = "group:12",
-		["teams"] = {
-			"team:294", -- [1]
-			"team:295", -- [2]
-			"team:296", -- [3]
-			"team:297", -- [4]
-			"team:298", -- [5]
-			"team:299", -- [6]
-			"team:300", -- [7]
-			"team:301", -- [8]
-			"team:302", -- [9]
-			"team:303", -- [10]
-			"team:287", -- [11]
-			"team:384", -- [12]
-			"team:385", -- [13]
-			"team:386", -- [14]
-			"team:387", -- [15]
-			"team:388", -- [16]
-			"team:389", -- [17]
-			"team:390", -- [18]
-			"team:391", -- [19]
-			"team:392", -- [20]
-			"team:393", -- [21]
-			"team:434", -- [22]
-			"team:435", -- [23]
-			"team:436", -- [24]
-			"team:437", -- [25]
-			"team:438", -- [26]
-			"team:439", -- [27]
-			"team:440", -- [28]
-			"team:441", -- [29]
-			"team:442", -- [30]
-			"team:443", -- [31]
-			"team:424", -- [32]
-			"team:425", -- [33]
-			"team:426", -- [34]
-			"team:427", -- [35]
-			"team:428", -- [36]
-			"team:429", -- [37]
-			"team:430", -- [38]
-			"team:431", -- [39]
-			"team:432", -- [40]
-			"team:433", -- [41]
-			"team:414", -- [42]
-			"team:415", -- [43]
-			"team:416", -- [44]
-			"team:417", -- [45]
-			"team:418", -- [46]
-			"team:419", -- [47]
-			"team:420", -- [48]
-			"team:421", -- [49]
-			"team:422", -- [50]
-			"team:423", -- [51]
-			"team:404", -- [52]
-			"team:405", -- [53]
-			"team:406", -- [54]
-			"team:407", -- [55]
-			"team:408", -- [56]
-			"team:409", -- [57]
-			"team:410", -- [58]
-			"team:411", -- [59]
-			"team:412", -- [60]
-			"team:413", -- [61]
-			"team:304", -- [62]
-			"team:305", -- [63]
-			"team:306", -- [64]
-			"team:307", -- [65]
-			"team:308", -- [66]
-			"team:309", -- [67]
-			"team:310", -- [68]
-			"team:311", -- [69]
-			"team:312", -- [70]
-			"team:313", -- [71]
-			"team:324", -- [72]
-			"team:325", -- [73]
-			"team:326", -- [74]
-			"team:327", -- [75]
-			"team:328", -- [76]
-			"team:329", -- [77]
-			"team:330", -- [78]
-			"team:331", -- [79]
-			"team:332", -- [80]
-			"team:333", -- [81]
-			"team:288", -- [82]
-			"team:334", -- [83]
-			"team:335", -- [84]
-			"team:336", -- [85]
-			"team:337", -- [86]
-			"team:338", -- [87]
-			"team:339", -- [88]
-			"team:340", -- [89]
-			"team:341", -- [90]
-			"team:342", -- [91]
-			"team:343", -- [92]
-			"team:354", -- [93]
-			"team:355", -- [94]
-			"team:356", -- [95]
-			"team:357", -- [96]
-			"team:358", -- [97]
-			"team:359", -- [98]
-			"team:360", -- [99]
-			"team:361", -- [100]
-			"team:362", -- [101]
-			"team:363", -- [102]
-			"team:314", -- [103]
-			"team:315", -- [104]
-			"team:316", -- [105]
-			"team:317", -- [106]
-			"team:318", -- [107]
-			"team:319", -- [108]
-			"team:320", -- [109]
-			"team:321", -- [110]
-			"team:322", -- [111]
-			"team:323", -- [112]
-			"team:344", -- [113]
-			"team:345", -- [114]
-			"team:346", -- [115]
-			"team:347", -- [116]
-			"team:348", -- [117]
-			"team:349", -- [118]
-			"team:350", -- [119]
-			"team:351", -- [120]
-			"team:352", -- [121]
-			"team:353", -- [122]
-			"team:364", -- [123]
-			"team:365", -- [124]
-			"team:366", -- [125]
-			"team:367", -- [126]
-			"team:368", -- [127]
-			"team:369", -- [128]
-			"team:370", -- [129]
-			"team:371", -- [130]
-			"team:372", -- [131]
-			"team:373", -- [132]
-			"team:374", -- [133]
-			"team:375", -- [134]
-			"team:376", -- [135]
-			"team:377", -- [136]
-			"team:378", -- [137]
-			"team:379", -- [138]
-			"team:380", -- [139]
-			"team:381", -- [140]
-			"team:382", -- [141]
-			"team:383", -- [142]
-			"team:394", -- [143]
-			"team:395", -- [144]
-			"team:396", -- [145]
-			"team:397", -- [146]
-			"team:398", -- [147]
-			"team:399", -- [148]
-			"team:400", -- [149]
-			"team:401", -- [150]
-			"team:402", -- [151]
-			"team:403", -- [152]
-		},
+		["icon"] = 134337,
+		["groupID"] = "group:5",
+		["name"] = "BRD",
 	},
 	["group:none"] = {
 		["sortMode"] = 1,
@@ -9651,50 +9294,239 @@ Rematch5SavedGroups = {
 			"team:242", -- [153]
 			"team:243", -- [154]
 			"team:250", -- [155]
-			"team:8", -- [156]
-			"team:24", -- [157]
-			"team:177", -- [158]
-			"team:168", -- [159]
-			"team:196", -- [160]
-			"team:141", -- [161]
-			"team:108", -- [162]
-			"team:218", -- [163]
-			"team:219", -- [164]
-			"team:187", -- [165]
-			"team:206", -- [166]
-			"team:107", -- [167]
-			"team:127", -- [168]
-			"team:118", -- [169]
-			"team:6", -- [170]
-			"team:11", -- [171]
-			"team:270", -- [172]
-			"team:130", -- [173]
-			"team:97", -- [174]
+			"team:136", -- [156]
+			"team:8", -- [157]
+			"team:24", -- [158]
+			"team:177", -- [159]
+			"team:168", -- [160]
+			"team:196", -- [161]
+			"team:141", -- [162]
+			"team:108", -- [163]
+			"team:218", -- [164]
+			"team:219", -- [165]
+			"team:187", -- [166]
+			"team:206", -- [167]
+			"team:107", -- [168]
+			"team:127", -- [169]
+			"team:118", -- [170]
+			"team:6", -- [171]
+			"team:11", -- [172]
+			"team:270", -- [173]
+			"team:130", -- [174]
+			"team:97", -- [175]
 		},
+		["name"] = "ALL",
+		["meta"] = true,
+		["groupID"] = "group:none",
+		["icon"] = 132091,
+		["isExpanded"] = true,
+	},
+	["group:favorites"] = {
+		["showTab"] = true,
+		["sortMode"] = 1,
+		["name"] = "Favorite Teams",
 		["isExpanded"] = true,
 		["meta"] = true,
-		["icon"] = 132091,
-		["groupID"] = "group:none",
-		["name"] = "ALL",
+		["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_MRPOPULARITY_RANK2",
+		["groupID"] = "group:favorites",
+		["teams"] = {
+			"team:261", -- [1]
+			"team:199", -- [2]
+		},
 	},
-	["group:9"] = {
+	["group:12"] = {
+		["sortMode"] = 1,
+		["name"] = "Family familiar",
+		["teams"] = {
+			"team:294", -- [1]
+			"team:295", -- [2]
+			"team:296", -- [3]
+			"team:297", -- [4]
+			"team:298", -- [5]
+			"team:299", -- [6]
+			"team:300", -- [7]
+			"team:301", -- [8]
+			"team:302", -- [9]
+			"team:303", -- [10]
+			"team:287", -- [11]
+			"team:384", -- [12]
+			"team:385", -- [13]
+			"team:386", -- [14]
+			"team:387", -- [15]
+			"team:388", -- [16]
+			"team:389", -- [17]
+			"team:390", -- [18]
+			"team:391", -- [19]
+			"team:392", -- [20]
+			"team:393", -- [21]
+			"team:434", -- [22]
+			"team:435", -- [23]
+			"team:436", -- [24]
+			"team:437", -- [25]
+			"team:438", -- [26]
+			"team:439", -- [27]
+			"team:440", -- [28]
+			"team:441", -- [29]
+			"team:442", -- [30]
+			"team:443", -- [31]
+			"team:424", -- [32]
+			"team:425", -- [33]
+			"team:426", -- [34]
+			"team:427", -- [35]
+			"team:428", -- [36]
+			"team:429", -- [37]
+			"team:430", -- [38]
+			"team:431", -- [39]
+			"team:432", -- [40]
+			"team:433", -- [41]
+			"team:414", -- [42]
+			"team:415", -- [43]
+			"team:416", -- [44]
+			"team:417", -- [45]
+			"team:418", -- [46]
+			"team:419", -- [47]
+			"team:420", -- [48]
+			"team:421", -- [49]
+			"team:422", -- [50]
+			"team:423", -- [51]
+			"team:404", -- [52]
+			"team:405", -- [53]
+			"team:406", -- [54]
+			"team:407", -- [55]
+			"team:408", -- [56]
+			"team:409", -- [57]
+			"team:410", -- [58]
+			"team:411", -- [59]
+			"team:412", -- [60]
+			"team:413", -- [61]
+			"team:304", -- [62]
+			"team:305", -- [63]
+			"team:306", -- [64]
+			"team:307", -- [65]
+			"team:308", -- [66]
+			"team:309", -- [67]
+			"team:310", -- [68]
+			"team:311", -- [69]
+			"team:312", -- [70]
+			"team:313", -- [71]
+			"team:324", -- [72]
+			"team:325", -- [73]
+			"team:326", -- [74]
+			"team:327", -- [75]
+			"team:328", -- [76]
+			"team:329", -- [77]
+			"team:330", -- [78]
+			"team:331", -- [79]
+			"team:332", -- [80]
+			"team:333", -- [81]
+			"team:288", -- [82]
+			"team:334", -- [83]
+			"team:335", -- [84]
+			"team:336", -- [85]
+			"team:337", -- [86]
+			"team:338", -- [87]
+			"team:339", -- [88]
+			"team:340", -- [89]
+			"team:341", -- [90]
+			"team:342", -- [91]
+			"team:343", -- [92]
+			"team:354", -- [93]
+			"team:355", -- [94]
+			"team:356", -- [95]
+			"team:357", -- [96]
+			"team:358", -- [97]
+			"team:359", -- [98]
+			"team:360", -- [99]
+			"team:361", -- [100]
+			"team:362", -- [101]
+			"team:363", -- [102]
+			"team:314", -- [103]
+			"team:315", -- [104]
+			"team:316", -- [105]
+			"team:317", -- [106]
+			"team:318", -- [107]
+			"team:319", -- [108]
+			"team:320", -- [109]
+			"team:321", -- [110]
+			"team:322", -- [111]
+			"team:323", -- [112]
+			"team:344", -- [113]
+			"team:345", -- [114]
+			"team:346", -- [115]
+			"team:347", -- [116]
+			"team:348", -- [117]
+			"team:349", -- [118]
+			"team:350", -- [119]
+			"team:351", -- [120]
+			"team:352", -- [121]
+			"team:353", -- [122]
+			"team:374", -- [123]
+			"team:375", -- [124]
+			"team:376", -- [125]
+			"team:377", -- [126]
+			"team:378", -- [127]
+			"team:379", -- [128]
+			"team:380", -- [129]
+			"team:381", -- [130]
+			"team:382", -- [131]
+			"team:383", -- [132]
+			"team:394", -- [133]
+			"team:395", -- [134]
+			"team:396", -- [135]
+			"team:397", -- [136]
+			"team:398", -- [137]
+			"team:399", -- [138]
+			"team:400", -- [139]
+			"team:401", -- [140]
+			"team:402", -- [141]
+			"team:403", -- [142]
+		},
+		["groupID"] = "group:12",
+		["icon"] = "Interface\\Icons\\INV_Pet_BattlePetTraining",
+		["isExpanded"] = true,
+	},
+	["group:1"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "Catchers",
-		["groupID"] = "group:9",
-		["icon"] = 132149,
 		["teams"] = {
-			"team:241", -- [1]
+			"team:251", -- [1]
+			"team:260", -- [2]
+			"team:249", -- [3]
+			"team:233", -- [4]
 		},
+		["icon"] = 1519351,
+		["groupID"] = "group:1",
+		["name"] = "celestial week 1",
+	},
+	["group:6"] = {
+		["showTab"] = true,
+		["sortMode"] = 1,
+		["isExpanded"] = true,
+		["teams"] = {
+			"team:191", -- [1]
+			"team:65", -- [2]
+			"team:72", -- [3]
+			"team:103", -- [4]
+			"team:189", -- [5]
+			"team:175", -- [6]
+			"team:149", -- [7]
+			"team:58", -- [8]
+			"team:123", -- [9]
+			"team:117", -- [10]
+			"team:120", -- [11]
+			"team:41", -- [12]
+			"team:163", -- [13]
+			"team:113", -- [14]
+		},
+		["icon"] = 4548874,
+		["groupID"] = "group:6",
+		["name"] = "Gnomera",
 	},
 	["group:11"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["name"] = "PLUSHIE",
-		["isExpanded"] = true,
-		["icon"] = 1044082,
-		["groupID"] = "group:11",
 		["teams"] = {
 			"team:212", -- [1]
 			"team:291", -- [2]
@@ -9740,72 +9572,59 @@ Rematch5SavedGroups = {
 			"team:66", -- [42]
 			"team:221", -- [43]
 		},
+		["groupID"] = "group:11",
+		["icon"] = 1044082,
+		["isExpanded"] = true,
 	},
 	["group:10"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "pvp",
-		["groupID"] = "group:10",
-		["icon"] = 132485,
 		["teams"] = {
 			"team:253", -- [1]
 			"team:259", -- [2]
 		},
+		["icon"] = 132485,
+		["groupID"] = "group:10",
+		["name"] = "pvp",
 	},
-	["group:5"] = {
+	["group:3"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "BRD",
-		["groupID"] = "group:5",
-		["icon"] = 134337,
 		["teams"] = {
-			"team:45", -- [1]
-			"team:14", -- [2]
-			"team:52", -- [3]
-			"team:209", -- [4]
-			"team:211", -- [5]
-			"team:43", -- [6]
-			"team:165", -- [7]
-			"team:155", -- [8]
-			"team:146", -- [9]
-			"team:203", -- [10]
-			"team:54", -- [11]
-			"team:18", -- [12]
-			"team:10", -- [13]
-			"team:49", -- [14]
+			"team:225", -- [1]
+			"team:160", -- [2]
+			"team:162", -- [3]
+			"team:100", -- [4]
 		},
+		["icon"] = 645203,
+		["groupID"] = "group:3",
+		["name"] = "Celestial week 3",
 	},
-	["group:8"] = {
+	["group:4"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "Stratholme HC",
-		["groupID"] = "group:8",
-		["icon"] = 135983,
 		["teams"] = {
-			"team:188", -- [1]
-			"team:126", -- [2]
-			"team:42", -- [3]
-			"team:83", -- [4]
-			"team:147", -- [5]
-			"team:173", -- [6]
-			"team:3", -- [7]
-			"team:5", -- [8]
-			"team:202", -- [9]
-			"team:180", -- [10]
-			"team:152", -- [11]
-			"team:133", -- [12]
+			"team:192", -- [1]
+			"team:161", -- [2]
+			"team:176", -- [3]
+			"team:207", -- [4]
+			"team:194", -- [5]
+			"team:205", -- [6]
+			"team:174", -- [7]
+			"team:195", -- [8]
+			"team:216", -- [9]
 		},
+		["icon"] = 132796,
+		["groupID"] = "group:4",
+		["name"] = "deadmines",
 	},
 	["group:7"] = {
 		["showTab"] = true,
 		["sortMode"] = 1,
 		["isExpanded"] = true,
-		["name"] = "WC HC",
-		["groupID"] = "group:7",
-		["icon"] = 132253,
 		["teams"] = {
 			"team:156", -- [1]
 			"team:166", -- [2]
@@ -9819,6 +9638,9 @@ Rematch5SavedGroups = {
 			"team:167", -- [10]
 			"team:182", -- [11]
 		},
+		["icon"] = 132253,
+		["groupID"] = "group:7",
+		["name"] = "WC HC",
 	},
 }
 Rematch5SavedTargets = {
@@ -9879,11 +9701,11 @@ Rematch5SavedTargets = {
 	[115307] = {
 		"team:88", -- [1]
 	},
-	[162461] = {
-		"team:91", -- [1]
+	[116788] = {
+		"team:156", -- [1]
 	},
-	[66553] = {
-		"team:281", -- [1]
+	[85519] = {
+		"team:287", -- [1]
 	},
 	[99035] = {
 		"team:8", -- [1]
@@ -9901,11 +9723,11 @@ Rematch5SavedTargets = {
 	[150925] = {
 		"team:173", -- [1]
 	},
-	[201858] = {
-		"team:56", -- [1]
+	[150858] = {
+		"team:179", -- [1]
 	},
-	[71926] = {
-		"team:40", -- [1]
+	[66635] = {
+		"team:284", -- [1]
 	},
 	[142096] = {
 		"team:124", -- [1]
@@ -9916,8 +9738,8 @@ Rematch5SavedTargets = {
 	[154910] = {
 		"team:57", -- [1]
 	},
-	[161663] = {
-		"team:18", -- [1]
+	[72290] = {
+		"team:100", -- [1]
 	},
 	[141969] = {
 		"team:127", -- [1]
@@ -9934,20 +9756,20 @@ Rematch5SavedTargets = {
 	[141077] = {
 		"team:184", -- [1]
 	},
-	[141046] = {
-		"team:50", -- [1]
+	[116791] = {
+		"team:145", -- [1]
 	},
 	[154911] = {
 		"team:59", -- [1]
 	},
-	[66635] = {
-		"team:284", -- [1]
+	[173303] = {
+		"team:51", -- [1]
 	},
-	[160205] = {
-		"team:43", -- [1]
+	[66552] = {
+		"team:280", -- [1]
 	},
-	[200678] = {
-		"team:214", -- [1]
+	[161663] = {
+		"team:18", -- [1]
 	},
 	[200684] = {
 		"team:206", -- [1]
@@ -9958,23 +9780,23 @@ Rematch5SavedTargets = {
 	[141588] = {
 		"team:132", -- [1]
 	},
-	[124617] = {
-		"team:9", -- [1]
+	[119342] = {
+		"team:161", -- [1]
 	},
 	[154912] = {
 		"team:62", -- [1]
 	},
-	[204926] = {
-		"team:199", -- [1]
+	[146181] = {
+		"team:117", -- [1]
 	},
 	[68564] = {
 		"team:200", -- [1]
 	},
-	[66557] = {
-		"team:277", -- [1]
+	[141529] = {
+		"team:157", -- [1]
 	},
-	[116791] = {
-		"team:145", -- [1]
+	[119341] = {
+		"team:195", -- [1]
 	},
 	[71927] = {
 		"team:44", -- [1]
@@ -9982,8 +9804,8 @@ Rematch5SavedTargets = {
 	[201004] = {
 		"team:197", -- [1]
 	},
-	[116787] = {
-		"team:166", -- [1]
+	[161662] = {
+		"team:14", -- [1]
 	},
 	[154913] = {
 		"team:64", -- [1]
@@ -9991,8 +9813,8 @@ Rematch5SavedTargets = {
 	[66636] = {
 		"team:286", -- [1]
 	},
-	[146182] = {
-		"team:120", -- [1]
+	[160207] = {
+		"team:46", -- [1]
 	},
 	[150929] = {
 		"team:3", -- [1]
@@ -10015,20 +9837,20 @@ Rematch5SavedTargets = {
 	[105779] = {
 		"team:271", -- [1]
 	},
-	[173372] = {
-		"team:63", -- [1]
+	[141879] = {
+		"team:55", -- [1]
 	},
 	[202440] = {
 		"team:201", -- [1]
 	},
-	[119342] = {
-		"team:161", -- [1]
+	[207572] = {
+		"team:270", -- [1]
 	},
 	[162469] = {
 		"team:116", -- [1]
 	},
-	[146181] = {
-		"team:117", -- [1]
+	[160206] = {
+		"team:45", -- [1]
 	},
 	[67370] = {
 		"team:288", -- [1]
@@ -10036,14 +9858,14 @@ Rematch5SavedTargets = {
 	[154915] = {
 		"team:68", -- [1]
 	},
-	[200689] = {
-		"team:11", -- [1]
+	[139489] = {
+		"team:185", -- [1]
 	},
 	[201899] = {
 		"team:215", -- [1]
 	},
-	[139987] = {
-		"team:122", -- [1]
+	[116787] = {
+		"team:166", -- [1]
 	},
 	[200688] = {
 		"team:6", -- [1]
@@ -10051,11 +9873,11 @@ Rematch5SavedTargets = {
 	[162470] = {
 		"team:119", -- [1]
 	},
-	[160207] = {
-		"team:46", -- [1]
+	[146182] = {
+		"team:120", -- [1]
 	},
-	[141879] = {
-		"team:55", -- [1]
+	[66733] = {
+		"team:101", -- [1]
 	},
 	[154916] = {
 		"team:70", -- [1]
@@ -10073,26 +9895,36 @@ Rematch5SavedTargets = {
 		"team:353", -- [10]
 		"team:347", -- [11]
 	},
-	[162471] = {
-		"team:178", -- [1]
+	[146183] = {
+		"team:123", -- [1]
 	},
 	[155267] = {
 		"team:202", -- [1]
 	},
-	[141529] = {
-		"team:157", -- [1]
+	[104553] = {
+		"team:164", -- [1]
+		"team:354", -- [2]
+		"team:355", -- [3]
+		"team:356", -- [4]
+		"team:357", -- [5]
+		"team:358", -- [6]
+		"team:359", -- [7]
+		"team:360", -- [8]
+		"team:361", -- [9]
+		"team:362", -- [10]
+		"team:363", -- [11]
 	},
 	[71929] = {
 		"team:53", -- [1]
 	},
-	[146183] = {
-		"team:123", -- [1]
-	},
-	[154917] = {
-		"team:73", -- [1]
+	[160208] = {
+		"team:49", -- [1]
 	},
 	[119407] = {
 		"team:176", -- [1]
+	},
+	[154917] = {
+		"team:73", -- [1]
 	},
 	[66638] = {
 		"team:285", -- [1]
@@ -10106,8 +9938,8 @@ Rematch5SavedTargets = {
 	[116792] = {
 		"team:210", -- [1]
 	},
-	[160210] = {
-		"team:54", -- [1]
+	[62621] = {
+		"team:204", -- [1]
 	},
 	[160209] = {
 		"team:52", -- [1]
@@ -10121,8 +9953,8 @@ Rematch5SavedTargets = {
 	[141945] = {
 		"team:60", -- [1]
 	},
-	[154919] = {
-		"team:187", -- [1]
+	[189376] = {
+		"team:190", -- [1]
 	},
 	[196069] = {
 		"team:121", -- [1]
@@ -10133,20 +9965,30 @@ Rematch5SavedTargets = {
 	[71930] = {
 		"team:208", -- [1]
 	},
-	[62621] = {
-		"team:204", -- [1]
+	[160210] = {
+		"team:54", -- [1]
 	},
-	[162458] = {
-		"team:84", -- [1]
+	[105455] = {
+		"team:13", -- [1]
+		"team:324", -- [2]
+		"team:325", -- [3]
+		"team:326", -- [4]
+		"team:327", -- [5]
+		"team:328", -- [6]
+		"team:329", -- [7]
+		"team:330", -- [8]
+		"team:331", -- [9]
+		"team:332", -- [10]
+		"team:333", -- [11]
 	},
 	[119408] = {
 		"team:192", -- [1]
 	},
-	[189376] = {
-		"team:190", -- [1]
+	[66639] = {
+		"team:283", -- [1]
 	},
-	[161661] = {
-		"team:10", -- [1]
+	[68464] = {
+		"team:143", -- [1]
 	},
 	[119343] = {
 		"team:174", -- [1]
@@ -10154,29 +9996,20 @@ Rematch5SavedTargets = {
 	[200692] = {
 		"team:24", -- [1]
 	},
-	[116794] = {
-		"team:23", -- [1]
+	[116795] = {
+		"team:29", -- [1]
 	},
-	[66815] = {
-		"team:273", -- [1]
+	[154921] = {
+		"team:85", -- [1]
 	},
-	[155413] = {
-		"team:41", -- [1]
+	[173263] = {
+		"team:115", -- [1]
 	},
 	[154920] = {
 		"team:82", -- [1]
 	},
-	[97709] = {
-		"team:304", -- [1]
-		"team:305", -- [2]
-		"team:306", -- [3]
-		"team:307", -- [4]
-		"team:308", -- [5]
-		"team:309", -- [6]
-		"team:310", -- [7]
-		"team:311", -- [8]
-		"team:312", -- [9]
-		"team:313", -- [10]
+	[175781] = {
+		"team:25", -- [1]
 	},
 	[142234] = {
 		"team:172", -- [1]
@@ -10184,8 +10017,8 @@ Rematch5SavedTargets = {
 	[173376] = {
 		"team:71", -- [1]
 	},
-	[116795] = {
-		"team:29", -- [1]
+	[200693] = {
+		"team:177", -- [1]
 	},
 	[71931] = {
 		"team:61", -- [1]
@@ -10193,14 +10026,14 @@ Rematch5SavedTargets = {
 	[99742] = {
 		"team:292", -- [1]
 	},
-	[119345] = {
-		"team:205", -- [1]
+	[85622] = {
+		"team:16", -- [1]
 	},
-	[154921] = {
-		"team:85", -- [1]
+	[119409] = {
+		"team:207", -- [1]
 	},
-	[66822] = {
-		"team:139", -- [1]
+	[141292] = {
+		"team:33", -- [1]
 	},
 	[141215] = {
 		"team:196", -- [1]
@@ -10208,11 +10041,11 @@ Rematch5SavedTargets = {
 	[173377] = {
 		"team:74", -- [1]
 	},
-	[66551] = {
-		"team:279", -- [1]
+	[116786] = {
+		"team:148", -- [1]
 	},
-	[83837] = {
-		"team:35", -- [1]
+	[154922] = {
+		"team:274", -- [1]
 	},
 	[104970] = {
 		"team:159", -- [1]
@@ -10230,17 +10063,17 @@ Rematch5SavedTargets = {
 	[155145] = {
 		"team:5", -- [1]
 	},
-	[85622] = {
-		"team:16", -- [1]
+	[83837] = {
+		"team:35", -- [1]
 	},
 	[204934] = {
 		"team:81", -- [1]
 	},
-	[68559] = {
-		"team:135", -- [1]
+	[169501] = {
+		"team:131", -- [1]
 	},
-	[196264] = {
-		"team:129", -- [1]
+	[173274] = {
+		"team:150", -- [1]
 	},
 	[119346] = {
 		"team:216", -- [1]
@@ -10248,8 +10081,8 @@ Rematch5SavedTargets = {
 	[71932] = {
 		"team:66", -- [1]
 	},
-	[85685] = {
-		"team:7", -- [1]
+	[116793] = {
+		"team:169", -- [1]
 	},
 	[145988] = {
 		"team:113", -- [1]
@@ -10260,8 +10093,8 @@ Rematch5SavedTargets = {
 	[173315] = {
 		"team:79", -- [1]
 	},
-	[87110] = {
-		"team:109", -- [1]
+	[140813] = {
+		"team:110", -- [1]
 	},
 	[161649] = {
 		"team:155", -- [1]
@@ -10314,8 +10147,8 @@ Rematch5SavedTargets = {
 		"team:432", -- [10]
 		"team:433", -- [11]
 	},
-	[161650] = {
-		"team:209", -- [1]
+	[200696] = {
+		"team:34", -- [1]
 	},
 	[197350] = {
 		"team:130", -- [1]
@@ -10326,44 +10159,54 @@ Rematch5SavedTargets = {
 	[71933] = {
 		"team:69", -- [1]
 	},
-	[66824] = {
-		"team:275", -- [1]
+	[154925] = {
+		"team:95", -- [1]
 	},
 	[145968] = {
 		"team:58", -- [1]
 	},
-	[154925] = {
-		"team:95", -- [1]
+	[105386] = {
+		"team:170", -- [1]
 	},
-	[142151] = {
-		"team:97", -- [1]
-	},
-	[197447] = {
-		"team:48", -- [1]
-	},
-	[161651] = {
-		"team:165", -- [1]
-	},
-	[154926] = {
-		"team:217", -- [1]
-	},
-	[205065] = {
-		"team:90", -- [1]
+	[98489] = {
+		"team:193", -- [1]
 	},
 	[87122] = {
 		"team:4", -- [1]
 	},
-	[66738] = {
-		"team:290", -- [1]
+	[161651] = {
+		"team:165", -- [1]
 	},
 	[146001] = {
 		"team:163", -- [1]
 	},
+	[205065] = {
+		"team:90", -- [1]
+	},
+	[197447] = {
+		"team:48", -- [1]
+	},
+	[66738] = {
+		"team:290", -- [1]
+	},
+	[154926] = {
+		"team:217", -- [1]
+	},
 	[201878] = {
 		"team:112", -- [1]
 	},
-	[68465] = {
-		"team:153", -- [1]
+	[99182] = {
+		"team:105", -- [1]
+		"team:414", -- [2]
+		"team:415", -- [3]
+		"team:416", -- [4]
+		"team:417", -- [5]
+		"team:418", -- [6]
+		"team:419", -- [7]
+		"team:420", -- [8]
+		"team:421", -- [9]
+		"team:422", -- [10]
+		"team:423", -- [11]
 	},
 	[202452] = {
 		"team:171", -- [1]
@@ -10374,17 +10217,14 @@ Rematch5SavedTargets = {
 	[71934] = {
 		"team:77", -- [1]
 	},
-	[66550] = {
-		"team:278", -- [1]
+	[173133] = {
+		"team:106", -- [1]
 	},
-	[140461] = {
-		"team:31", -- [1]
+	[85659] = {
+		"team:39", -- [1]
 	},
 	[154927] = {
 		"team:218", -- [1]
-	},
-	[150911] = {
-		"team:126", -- [1]
 	},
 	[105674] = {
 		"team:294", -- [1]
@@ -10398,11 +10238,14 @@ Rematch5SavedTargets = {
 		"team:302", -- [9]
 		"team:303", -- [10]
 	},
+	[150911] = {
+		"team:126", -- [1]
+	},
 	[66675] = {
 		"team:282", -- [1]
 	},
-	[72285] = {
-		"team:75", -- [1]
+	[66739] = {
+		"team:138", -- [1]
 	},
 	[197417] = {
 		"team:142", -- [1]
@@ -10410,17 +10253,17 @@ Rematch5SavedTargets = {
 	[142114] = {
 		"team:2", -- [1]
 	},
-	[66739] = {
-		"team:138", -- [1]
+	[145971] = {
+		"team:65", -- [1]
 	},
 	[146003] = {
 		"team:175", -- [1]
 	},
-	[73626] = {
-		"team:223", -- [1]
+	[66741] = {
+		"team:212", -- [1]
 	},
-	[175778] = {
-		"team:12", -- [1]
+	[87125] = {
+		"team:28", -- [1]
 	},
 	[173129] = {
 		"team:93", -- [1]
@@ -10428,11 +10271,11 @@ Rematch5SavedTargets = {
 	[66819] = {
 		"team:272", -- [1]
 	},
-	[154928] = {
-		"team:219", -- [1]
+	[197102] = {
+		"team:168", -- [1]
 	},
-	[142054] = {
-		"team:213", -- [1]
+	[141799] = {
+		"team:22", -- [1]
 	},
 	[173257] = {
 		"team:94", -- [1]
@@ -10440,35 +10283,26 @@ Rematch5SavedTargets = {
 	[146004] = {
 		"team:189", -- [1]
 	},
-	[161657] = {
-		"team:211", -- [1]
+	[68462] = {
+		"team:128", -- [1]
 	},
-	[201849] = {
-		"team:38", -- [1]
+	[141002] = {
+		"team:99", -- [1]
 	},
 	[173130] = {
 		"team:96", -- [1]
 	},
 	[99077] = {
-		"team:364", -- [1]
-		"team:365", -- [2]
-		"team:366", -- [3]
-		"team:367", -- [4]
-		"team:368", -- [5]
-		"team:369", -- [6]
-		"team:370", -- [7]
-		"team:371", -- [8]
-		"team:372", -- [9]
-		"team:373", -- [10]
+		"team:136", -- [1]
 	},
-	[154929] = {
-		"team:108", -- [1]
+	[150914] = {
+		"team:133", -- [1]
 	},
 	[87124] = {
 		"team:291", -- [1]
 	},
-	[202458] = {
-		"team:220", -- [1]
+	[173131] = {
+		"team:98", -- [1]
 	},
 	[146005] = {
 		"team:191", -- [1]
@@ -10485,72 +10319,62 @@ Rematch5SavedTargets = {
 		"team:402", -- [9]
 		"team:403", -- [10]
 	},
-	[150914] = {
-		"team:133", -- [1]
-	},
-	[173131] = {
-		"team:98", -- [1]
-	},
-	[87123] = {
-		"team:15", -- [1]
-	},
-	[146002] = {
-		"team:149", -- [1]
-	},
-	[161658] = {
-		"team:146", -- [1]
-	},
-	[173381] = {
-		"team:86", -- [1]
+	[141479] = {
+		"team:19", -- [1]
 	},
 	[161656] = {
 		"team:203", -- [1]
 	},
-	[141479] = {
-		"team:19", -- [1]
+	[173381] = {
+		"team:86", -- [1]
 	},
-	[141002] = {
-		"team:99", -- [1]
+	[161658] = {
+		"team:146", -- [1]
 	},
-	[197102] = {
-		"team:168", -- [1]
+	[146002] = {
+		"team:149", -- [1]
 	},
-	[141799] = {
-		"team:22", -- [1]
+	[87123] = {
+		"team:15", -- [1]
 	},
-	[68462] = {
-		"team:128", -- [1]
+	[202458] = {
+		"team:220", -- [1]
 	},
-	[87125] = {
-		"team:28", -- [1]
+	[154929] = {
+		"team:108", -- [1]
 	},
-	[66741] = {
-		"team:212", -- [1]
+	[201849] = {
+		"team:38", -- [1]
 	},
-	[145971] = {
-		"team:65", -- [1]
+	[161657] = {
+		"team:211", -- [1]
+	},
+	[142054] = {
+		"team:213", -- [1]
+	},
+	[154928] = {
+		"team:219", -- [1]
+	},
+	[175778] = {
+		"team:12", -- [1]
+	},
+	[73626] = {
+		"team:223", -- [1]
+	},
+	[72285] = {
+		"team:75", -- [1]
 	},
 	[173324] = {
 		"team:103", -- [1]
 	},
-	[85659] = {
-		"team:39", -- [1]
+	[140461] = {
+		"team:31", -- [1]
 	},
-	[173133] = {
-		"team:106", -- [1]
+	[66550] = {
+		"team:278", -- [1]
 	},
-	[99182] = {
-		"team:105", -- [1]
-		"team:414", -- [2]
-		"team:415", -- [3]
-		"team:416", -- [4]
-		"team:417", -- [5]
-		"team:418", -- [6]
-		"team:419", -- [7]
-		"team:420", -- [8]
-		"team:421", -- [9]
-		"team:422", -- [10]
-		"team:423", -- [11]
+	[68465] = {
+		"team:153", -- [1]
 	},
 	[146932] = {
 		"team:72", -- [1]
@@ -10558,14 +10382,14 @@ Rematch5SavedTargets = {
 	[175779] = {
 		"team:17", -- [1]
 	},
-	[98489] = {
-		"team:193", -- [1]
+	[142151] = {
+		"team:97", -- [1]
 	},
-	[105386] = {
-		"team:170", -- [1]
+	[66824] = {
+		"team:275", -- [1]
 	},
-	[200696] = {
-		"team:34", -- [1]
+	[161650] = {
+		"team:209", -- [1]
 	},
 	[150917] = {
 		"team:147", -- [1]
@@ -10586,66 +10410,65 @@ Rematch5SavedTargets = {
 		"team:412", -- [10]
 		"team:413", -- [11]
 	},
-	[140813] = {
-		"team:110", -- [1]
+	[87110] = {
+		"team:109", -- [1]
 	},
 	[175780] = {
 		"team:20", -- [1]
 	},
-	[116793] = {
-		"team:169", -- [1]
+	[85685] = {
+		"team:7", -- [1]
 	},
-	[173274] = {
-		"team:150", -- [1]
+	[196264] = {
+		"team:129", -- [1]
 	},
-	[169501] = {
-		"team:131", -- [1]
+	[68559] = {
+		"team:135", -- [1]
 	},
 	[150918] = {
 		"team:152", -- [1]
 	},
-	[116786] = {
-		"team:148", -- [1]
+	[66551] = {
+		"team:279", -- [1]
 	},
-	[141292] = {
-		"team:33", -- [1]
+	[66822] = {
+		"team:139", -- [1]
 	},
-	[154922] = {
-		"team:274", -- [1]
+	[119345] = {
+		"team:205", -- [1]
 	},
-	[175781] = {
-		"team:25", -- [1]
+	[97709] = {
+		"team:304", -- [1]
+		"team:305", -- [2]
+		"team:306", -- [3]
+		"team:307", -- [4]
+		"team:308", -- [5]
+		"team:309", -- [6]
+		"team:310", -- [7]
+		"team:311", -- [8]
+		"team:312", -- [9]
+		"team:313", -- [10]
 	},
-	[173263] = {
-		"team:115", -- [1]
+	[155413] = {
+		"team:41", -- [1]
 	},
-	[119409] = {
-		"team:207", -- [1]
+	[66815] = {
+		"team:273", -- [1]
 	},
-	[200693] = {
-		"team:177", -- [1]
+	[116794] = {
+		"team:23", -- [1]
 	},
 	[66918] = {
 		"team:289", -- [1]
 	},
-	[68464] = {
-		"team:143", -- [1]
+	[161661] = {
+		"team:10", -- [1]
 	},
-	[105455] = {
-		"team:13", -- [1]
-		"team:324", -- [2]
-		"team:325", -- [3]
-		"team:326", -- [4]
-		"team:327", -- [5]
-		"team:328", -- [6]
-		"team:329", -- [7]
-		"team:330", -- [8]
-		"team:331", -- [9]
-		"team:332", -- [10]
-		"team:333", -- [11]
+	[162458] = {
+		"team:84", -- [1]
 	},
-	[66639] = {
-		"team:283", -- [1]
+	[154919] = {
+		"team:187", -- [1]
 	},
 	[175782] = {
 		"team:27", -- [1]
@@ -10659,27 +10482,17 @@ Rematch5SavedTargets = {
 	[68560] = {
 		"team:144", -- [1]
 	},
-	[160208] = {
-		"team:49", -- [1]
+	[162471] = {
+		"team:178", -- [1]
 	},
-	[66552] = {
-		"team:280", -- [1]
+	[139987] = {
+		"team:122", -- [1]
 	},
-	[104553] = {
-		"team:164", -- [1]
-		"team:354", -- [2]
-		"team:355", -- [3]
-		"team:356", -- [4]
-		"team:357", -- [5]
-		"team:358", -- [6]
-		"team:359", -- [7]
-		"team:360", -- [8]
-		"team:361", -- [9]
-		"team:362", -- [10]
-		"team:363", -- [11]
+	[200689] = {
+		"team:11", -- [1]
 	},
-	[66733] = {
-		"team:101", -- [1]
+	[173372] = {
+		"team:63", -- [1]
 	},
 	[175783] = {
 		"team:30", -- [1]
@@ -10687,38 +10500,38 @@ Rematch5SavedTargets = {
 	[140880] = {
 		"team:118", -- [1]
 	},
-	[139489] = {
-		"team:185", -- [1]
+	[66557] = {
+		"team:277", -- [1]
 	},
-	[160206] = {
-		"team:45", -- [1]
+	[204926] = {
+		"team:199", -- [1]
 	},
-	[207572] = {
-		"team:270", -- [1]
+	[124617] = {
+		"team:9", -- [1]
 	},
-	[72290] = {
-		"team:100", -- [1]
+	[200678] = {
+		"team:214", -- [1]
 	},
-	[161662] = {
-		"team:14", -- [1]
+	[160205] = {
+		"team:43", -- [1]
 	},
-	[119341] = {
-		"team:195", -- [1]
+	[141046] = {
+		"team:50", -- [1]
 	},
 	[175784] = {
 		"team:32", -- [1]
 	},
-	[173303] = {
-		"team:51", -- [1]
+	[71926] = {
+		"team:40", -- [1]
 	},
-	[150858] = {
-		"team:179", -- [1]
+	[201858] = {
+		"team:56", -- [1]
 	},
-	[85519] = {
-		"team:287", -- [1]
+	[66553] = {
+		"team:281", -- [1]
 	},
-	[116788] = {
-		"team:156", -- [1]
+	[162461] = {
+		"team:91", -- [1]
 	},
 }
 Rematch4Saved = {
@@ -11566,8 +11379,8 @@ Rematch4Saved = {
 		{
 			"random:3", -- [1]
 		}, -- [3]
-		["minXP"] = 25,
 		["notes"] = "Strategy added by Kyzna\nIm just posting my strategy that worked for me. This strategy required that you sucessfully stun. .\n\nBring in your Sentinel's Companion\nTurn 1: Soulrush if Fethres is not stunned = reset\nBeeks comes in\nTurn 2: Dark Talon\nTurn 3: Ethereal (you need to block Surge of Power) if not = reset\nTurn 4: Dark Talon\nTurn 5: Dark Talon\nTurn 6: Dark Talon\nBeeks dies. Fethres comes in\nTurn 7: Dark Talon\nTurn 8: Dark Talon\nFethres dies. Talons comes in\nTurn 9: Soulrush, Dark Talon if talons is stunned\nBring in your Squawkling\nTurn 10: Shriek\nTurn 11: Arcane Storm\nTurn 12: Arcane Blast\n",
+		["minXP"] = 25,
 	},
 	[141292] = {
 		{
@@ -12572,8 +12385,8 @@ Rematch4Saved = {
 		{
 			"random:4", -- [1]
 		}, -- [3]
-		["notes"] = "Strategy added by Dreamingdust\nTurn 1: Spiritfire Beam\nTurn 2: Soulrush\nContinue even if the pet got stunned\nTurn 3: Spiritfire Bolt\nTurn 4: Spiritfire Bolt until Fragment of Anger is dead\nFragment of Desire comes in\nTurn 5: Soulrush\nTurn 6: Spiritfire Bolt until fight is over, or Fragment of Desire is dead\n\nAny standard attack will finish the fight\n",
 		["minXP"] = 25,
+		["notes"] = "Strategy added by Dreamingdust\nTurn 1: Spiritfire Beam\nTurn 2: Soulrush\nContinue even if the pet got stunned\nTurn 3: Spiritfire Bolt\nTurn 4: Spiritfire Bolt until Fragment of Anger is dead\nFragment of Desire comes in\nTurn 5: Soulrush\nTurn 6: Spiritfire Bolt until fight is over, or Fragment of Desire is dead\n\nAny standard attack will finish the fight\n",
 	},
 	[154915] = {
 		{
@@ -13012,8 +12825,8 @@ Rematch4Saved = {
 		{
 			"random:4", -- [1]
 		}, -- [3]
-		["minXP"] = 25,
 		["notes"] = "Strategy added by Dreamingdust\nTurn 1: Spiritfire Beam\nTurn 2: Soulrush\nContinue even if the pet got stunned\nTurn 3: Spiritfire Bolt\nTurn 4: Spiritfire Bolt until Fragment of Anger is dead\nFragment of Desire comes in\nTurn 5: Soulrush\nTurn 6: Spiritfire Bolt until fight is over, or Fragment of Desire is dead\n\nAny standard attack will finish the fight\n",
+		["minXP"] = 25,
 	},
 	[99210] = {
 		{
@@ -14478,8 +14291,8 @@ Rematch4Saved = {
 		{
 			"random:3", -- [1]
 		}, -- [3]
-		["notes"] = "Strategy added by Kyzna\nBring in your Teroclaw Hatchling\nPrio 1: Hawk Eye\nPrio 2: Claw\nPrio 3: Dodge (try dodging big attacks like Curse of Doom or Dive)\nBring in your Nether Ray Fry\nPrio 1: Tail Sweep against Brul'dan\nPrio 2: Bite against Swole\nIn case something survives, you can use a backup pet.\n",
 		["minXP"] = 25,
+		["notes"] = "Strategy added by Kyzna\nBring in your Teroclaw Hatchling\nPrio 1: Hawk Eye\nPrio 2: Claw\nPrio 3: Dodge (try dodging big attacks like Curse of Doom or Dive)\nBring in your Nether Ray Fry\nPrio 1: Tail Sweep against Brul'dan\nPrio 2: Bite against Swole\nIn case something survives, you can use a backup pet.\n",
 	},
 	[68559] = {
 		{
@@ -14506,47 +14319,47 @@ Rematch4Saved = {
 		["teamName"] = "No-No",
 		["notes"] = "Strategy added by frag\nTurn 1: Wind-Up\nChange to Zandalari Anklerender\nTurn 2: Black Claw\nTurn 3-5: Hunting Party untill Anklerender is dead\nChange to Ikky\nTurn 6-9: Savage Talon untill No-No is dead (if Ikky die change to Iron Starlette)\nChange to Iron Starlette\nTurn 10: Wind-Up to end No-No\n",
 	},
-	[73626] = {
+	[99077] = {
 		{
-			"BattlePet-0-000012B484E9", -- [1]
-			422, -- [2]
-			218, -- [3]
-			321, -- [4]
-			1238, -- [5]
+			"BattlePet-0-000012C47B1C", -- [1]
+			0, -- [2]
+			256, -- [3]
+			536, -- [4]
+			1521, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B5CB5D", -- [1]
+			501, -- [2]
+			172, -- [3]
+			1380, -- [4]
+			2089, -- [5]
+		}, -- [2]
+		{
+			0, -- [1]
+		}, -- [3]
+		["teamName"] = "Training with Bredda",
+		["notes"] = "Strategy added by Rosqo\n~11 rounds (1:31mins)Follow the steps around when to use Call Darkness carefully as for the levelling pet to get XP this must be on the Cursed Birmans Immortal round.Your Pyreclaw can sometimes crit/get missed so you may need to pass to ensure that it doesn't mess up the end of the fight.Only the P/B breed will consistently winAt the end of the fight Scorched Earth ticks can crit twice and cause the last pet to heal which is super unlucky.\n\nTurn 1: Prowl\nTurn 2: Call Darkness\nSwap to Infernal Pyreclaw\nTurn 1: Shell Armor\nTurn 2: Scorched Earth\nTurn 3+: Flame Breath (If the Pyreclaw has above 500HP when Quillino 460 or less HP pass)\nQuillino dies, Fethyr comes in\nPrio: Pass until Infernal Pyreclaw dies when Fethry is active\nBring in Cursed Birman\nTurn 1: Prowl\nCheck: If Undead racial not active at the start of the turn Pass\nCheck: Call Darkness if Undead racial active (you need to be on the immortal round at the start of the turn you attack for levelling pet to get all XP)\n\n",
+	},
+	[173331] = {
+		{
+			"BattlePet-0-000012B146C7", -- [1]
+			943, -- [2]
+			786, -- [3]
+			1762, -- [4]
+			1963, -- [5]
 		}, -- [1]
 		{
 			"BattlePet-0-000012B146CB", -- [1]
-			1370, -- [2]
+			184, -- [2]
 			919, -- [3]
 			581, -- [4]
 			1532, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B146CA", -- [1]
-			1002, -- [2]
-			989, -- [3]
-			985, -- [4]
-			1320, -- [5]
+			"random:0", -- [1]
 		}, -- [3]
-		["teamName"] = "Little Tommy Newcomer",
-		["notes"] = "Strategy added by JoCo#2522\nTurn 1: Curse of Doom\nTurn 2: Replacement for a pet with maximum health. Change back to Unborn Val'kyr\nTurn 3: Unholy Ascension\nTurn 4: Choose Ikky and use Black Claw – it will die\nYour Lil' Bling remains on the battlefield\nTurn 5: Inflation to death the enemy\n",
-	},
-	[87124] = {
-		{
-			"BattlePet-0-000012B15603", -- [1]
-			501, -- [2]
-			2237, -- [3]
-			1025, -- [4]
-			3100, -- [5]
-		}, -- [1]
-		{
-			0, -- [1]
-		}, -- [2]
-		{
-			0, -- [1]
-		}, -- [3]
-		["teamName"] = "Ashlei",
-		["notes"] = "Strategy added by Remte\nSomeone had to do it :P\n\nTurn 1: Flame Breath\nTurn 2: Razor Talons\nTurn 3: Flame Breath – enemy Pixiebell dies\nDoodle comes in\nTurn 4: Flame Breath\nTurn 5: Razor Talons – enemy Doodle falls asleep\nTally comes in\nTurn 6: Flame Breath\nTurn 7: Razor Talons\nTurn 8: Armageddon – everything but your level pets is roasted\n",
+		["teamName"] = "The Mind Games of Addius",
+		["notes"] = "Strategy added by TrundleButt#2544\nTurn 1: Blistering Cold\nTurn 2: Choose option 1 for Mind games (damage to team)\nTurn 3: Chop\nTurn 4: Blistering Cold\nTurn 5: Chop\nTurn 6: Chop\nTurn 7: Bonestorm should die here, switch to Ikky\nTurn 8: Black Claw\nTurn 9: Flock Until it dies\n",
 	},
 	[66739] = {
 		{
@@ -14573,79 +14386,32 @@ Rematch4Saved = {
 		["teamName"] = "Wastewalker Shu",
 		["notes"] = "Strategy added by loller#2712\nThis might be bit breed dependent on Iron Starlette, but most breeds should work. Thanks to  DeltaHit#1131 for the TD Script!\n\nTurn 1: Thunderbolt\nTurn 2: Decoy\nTurn 3: Breath\nCast Thunderbolt and decoy on CD, use breath as a filler until the first pet is dead. Continue hitting with dragonling until it dies.\nPut on Iron Starlette and cast Wind-UpSuperchargeWind-Up If you get unlucky and miss, restart if not, you should kill the second pet.\nLast pet should be weak from your thunderbolts from earlier, just cast 2x Wind-Up and you should win\n",
 	},
-	[71924] = {
+	[66824] = {
 		{
-			"BattlePet-0-000011F7F5D4", -- [1]
-			119, -- [2]
-			312, -- [3]
-			163, -- [4]
-			378, -- [5]
+			"BattlePet-0-000012B118ED", -- [1]
+			384, -- [2]
+			1105, -- [3]
+			209, -- [4]
+			1450, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000008968258", -- [1]
-			406, -- [2]
-			436, -- [3]
-			490, -- [4]
-			1155, -- [5]
+			"BattlePet-0-000011D76CB1", -- [1]
+			838, -- [2]
+			800, -- [3]
+			1559, -- [4]
+			3117, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012C22319", -- [1]
-			1094, -- [2]
-			212, -- [3]
-			1093, -- [4]
-			1351, -- [5]
-		}, -- [3]
-		["tab"] = 2,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/204\n\nScript by DaR#1285\n\nTurn 1: Scratch\nTurn 2: Scratch\nTurn 3: Dodge\nTurns 4-6: Stampede\nTurns 7+: Scratch until Cindy is dead\nAlex comes in\nCheck the Ice Tomb debuff\nEither:: 2 Turns left: Scratch, Dodge\nOr:: 1 Turn left => Dodge\nThen:: Stampede until your Rabbit is dead\nBring in your Anubisath Idol\nTurn 1: Crush\nTurn 2: Crush\nIs Alex dead?\nYes:: Skip down to Dah'da\nNo:: Use Stoneskin and then Crush until Alex is dead\n\nDah'da comes in\nTurn 1: Crush\nTurn 2: Crush\nTurn 3: Deflection\nTurns 4+: Continue to use Crush until either Dah'da or Anubisath Idol is dead\n\nIf Anubisath Idol has died, bring in your Macabre Marionette\nTurns 1-3: Dead Man's Party\nTurns 2+: Macabre Maraca until Dah'da is dead\n",
-		["teamName"] = "Wrathion",
-	},
-	[202458] = {
-		{
-			"BattlePet-0-000012B521D4", -- [1]
-			210, -- [2]
-			218, -- [3]
-			321, -- [4]
-			1238, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B15603", -- [1]
-			501, -- [2]
-			602, -- [3]
-			1025, -- [4]
-			3100, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000006E4C782", -- [1]
-			110, -- [2]
-			0, -- [3]
-			593, -- [4]
-			1152, -- [5]
-		}, -- [3]
-		["teamName"] = "They're Full of Stars!",
-		["notes"] = "Strategy added by Mutanis\nTurn 1: Shadow Slash\nTurn 2: Curse of Doom\nTurn 3: Unholy Ascension\nBring in your Timeless Mechanical Dragonling\nTurn 4: Time Bomb\nTurn 5: Flame Breath\nTurn 6: Armageddon\n(Chrominius comes in)\nTurn 7: Bite\nTurn 8: Surge of Power\n",
-	},
-	[154928] = {
-		{
-			"BattlePet-0-000012B521D4", -- [1]
-			210, -- [2]
-			218, -- [3]
-			652, -- [4]
-			1238, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B146CB", -- [1]
-			1370, -- [2]
+			"BattlePet-0-000012B482D1", -- [1]
+			921, -- [2]
 			919, -- [3]
-			581, -- [4]
-			1532, -- [5]
-		}, -- [2]
-		{
-			"random:0", -- [1]
+			364, -- [4]
+			1180, -- [5]
 		}, -- [3]
-		["teamName"] = "Unit 6",
-		["notes"] = "Strategy added by Plougz#2307\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Ikky\nTurn 1: Black Claw\nTurn 2: Flock\n",
+		["teamName"] = "Obalis",
+		["notes"] = "Strategy added by LogicPoodle#1550\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up, Pyth dies.\nSpring comes in\nTurn 1+: Powerball until Iron Starlette dies, Pass if you get slept\nBring in your Ikky \nTurn 1: Black Claw\nTurn 2+: Flock, Spring dies. If  Ikky dies partway through, clean up with MPD.\nClatter comes in\nTurns 1+: Once Flock finishes, Black Claw then Flock until dead\nTurn 7: Decoy\nTurn 8: Breath until Clatter dies. Easy peasy.\n",
 	},
-	[154927] = {
+	["nega"] = {
 		{
 			"BattlePet-0-000012B99CF2", -- [1]
 			503, -- [2]
@@ -14654,22 +14420,67 @@ Rematch4Saved = {
 			2078, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B99C8C", -- [1]
-			178, -- [2]
-			1041, -- [3]
-			1754, -- [4]
-			2466, -- [5]
+			"BattlePet-0-000012B589F6", -- [1]
+			1958, -- [2]
+			2352, -- [3]
+			780, -- [4]
+			3119, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B5CC26", -- [1]
-			503, -- [2]
-			1754, -- [3]
-			179, -- [4]
-			3289, -- [5]
+			"BattlePet-0-00001293FB22", -- [1]
+			916, -- [2]
+			1024, -- [3]
+			459, -- [4]
+			3243, -- [5]
 		}, -- [3]
-		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Rabid Strike\nTurn 2: Corpse Explosion\nBring in your Magma Rageling\nTurn 1: Fire Shield\n",
-		["teamName"] = "Unit 35",
-		["minXP"] = 25,
+		["tab"] = 11,
+	},
+	[175785] = {
+		{
+			"BattlePet-0-000012B146C7", -- [1]
+			943, -- [2]
+			786, -- [3]
+			1762, -- [4]
+			1963, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B146CB", -- [1]
+			184, -- [2]
+			919, -- [3]
+			581, -- [4]
+			1532, -- [5]
+		}, -- [2]
+		{
+			"random:0", -- [1]
+		}, -- [3]
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10148\n\nStrategy added by Lazey\n*** Created on Beta, so maybe not final ***\n\nTurn 1: Blistering Cold\nTurn 2: BONESTORM\nTurn 3: Chop (Boneshard dies)\nBring in your Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\n",
+		["teamName"] = "Kostos",
+		["minXP"] = 1,
+	},
+	[173267] = {
+		{
+			"BattlePet-0-000006E4C76E", -- [1]
+			0, -- [2]
+			208, -- [3]
+			204, -- [4]
+			1957, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B17368", -- [1]
+			447, -- [2]
+			2356, -- [3]
+			1954, -- [4]
+			2842, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012B118ED", -- [1]
+			0, -- [2]
+			0, -- [3]
+			209, -- [4]
+			1450, -- [5]
+		}, -- [3]
+		["teamName"] = "Uncomfortably Undercover",
+		["notes"] = "Strategy added by 하늘용#3273\n8\n\nTurn 1: Supercharge\nTurn 2: Call Lightning\nTurn 3: Swap to your Anomalus\nTurn 4: Corrosion\nTurn 5: Poison Protocol\nTurn 6: Void Nova\nBring in your Draenei Micro Defender\nTurn 7: Ion Cannon\n",
 	},
 	[197417] = {
 		{
@@ -14735,26 +14546,29 @@ Rematch4Saved = {
 		}, -- [3]
 		["notes"] = "Strategy added by isthevao#1164\nStrategy posted on [url=https://www.wowhead.com/npc=204934/trainer-orlogg#comments:id=5600054]WoWhead[/url] by DraikoGinger.\n\nPrio 1: Burrow if Lifft used Dive\nPrio 2: Woodchipper if fighting Brul'dan without the bleeding debuff\nPrio 3: Spirit Claws\nBring in your Plaguelouse Larva\nPrio 1: Plague Breath\nBring in your Orphaned Marsuul\nPrio 1: Feign Death if Swole can use Headbutt\nPrio 2: Burrow if Swole used Dive\nBite\n",
 	},
-	[154926] = {
+	["To a Land Down Under (Elemental)"] = {
 		{
-			"BattlePet-0-000012BC0A5A", -- [1]
-			515, -- [2]
-			779, -- [3]
-			282, -- [4]
-			844, -- [5]
+			"BattlePet-0-000012B67B94", -- [1]
+			472, -- [2]
+			1055, -- [3]
+			593, -- [4]
+			2590, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B58B24", -- [1]
-			0, -- [2]
-			282, -- [3]
-			779, -- [4]
-			339, -- [5]
+			"BattlePet-0-000012B5CDBD", -- [1]
+			118, -- [2]
+			1955, -- [3]
+			418, -- [4]
+			2465, -- [5]
 		}, -- [2]
 		{
-			0, -- [1]
+			"BattlePet-0-000012B67EA7", -- [1]
+			514, -- [2]
+			515, -- [3]
+			204, -- [4]
+			445, -- [5]
 		}, -- [3]
-		["teamName"] = "CK-9 Micro-Oppression Unit",
-		["notes"] = "Strategy added by WhyDaRumGone\nTurn 1: Flyby\nTurn 2: Thunderbolt\nOptional:: If CK-9 is below 1154HP due to a crit last round and you're not stunned; use Explode now (turn 3) with Mechanical Pandaren Dragonling instead of turn 6 to save a turn.\nTurn 3: Swap/Bring in your Darkmoon Zeppelin\nTurn 4: Thunderbolt\nTurn 5: Explode\nBring in your Mechanical Pandaren Dragonling\nTurn 6: Explode\n",
+		["notes"] = "Strategy added by Kalixa\nThis fight is tough with elementals, due to the nature of the opponent's abilities. Bassalt, Clawz, and Murrey do NOT follow a set move pattern, its randomized for every encounter. There are roughly 3-4 different ways this can play out (at least from what I've seen in my testing). If there is a crit or something cast by the opponent's out of order, you're better off reseting the battle.If you have any suggestions, or found a tweak to this strat that works better, let me know! There are probably other combinations - feel free to add them in the comments, and I'll adjust the strat :)\n\nTurn 1: Blast of Hatred\nTurns 2-4: Surge of Power\nClawz comes in\nTurn 1: Breath of Sorrow (If possible - your Ravenous Prideling is gonna die or be dead by this point)\nBring in your Playful Frostkin If Clawz casts Whirlpool before your Frostkin enters, reset - Frostkin will die in 2 turns if you don't.\nTurn 1: Flash Freeze\nTurn 3: Water Jet\nTurn 4: Water Jet (Frostkin either dies here, or on the next round)\nTurn 5: Geyser (If Frostkin is still alive)\nMurrey comes in ; Bring in Tiny Twister\nTurn 1: Flyby\nTurn 2: Call Lightning (If Murrey casts Tough 'N' Cuddly, reset the fight)\n",
 	},
 	[68560] = {
 		{
@@ -14777,13 +14591,13 @@ Rematch4Saved = {
 		["teamName"] = "Greyhoof",
 		["notes"] = "Strategy added by Alexstrasza\nThis is relatively RNG-proof, with a bonus if you actually get Toxic Smoke to hit, which will make double Breath enough to kill him.As far as your 2nd pet, Any pet with Explode will do, in which case Breath gets replaced by whatever other damaging ability the pet you choose has.\n\nIron Starlette\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up\nTurn 4: Toxic Smoke till died 2nd time\nBring in your Level Pet\n\nLevel Pet\nTurn 1: Swap to your Mechanical Pandaren Dragonling\n\nMechanical Pandaren Dragonling\nTurn 1: Breath if Greyhoof HP is above 768, else Explode\nif Greyhoof is not yet dead:\nTurn 2: Explode if Greyhoof HP is above 240 else Breath\n\nGreyhoof Should be dead now.\n",
 	},
-	[119346] = {
+	[116791] = {
 		{
-			"BattlePet-0-000012B2E223", -- [1]
-			228, -- [2]
-			232, -- [3]
-			934, -- [4]
-			1934, -- [5]
+			"BattlePet-0-000012B01DC0", -- [1]
+			1002, -- [2]
+			392, -- [3]
+			985, -- [4]
+			1320, -- [5]
 		}, -- [1]
 		{
 			"BattlePet-0-000012B66DA8", -- [1]
@@ -14793,11 +14607,16 @@ Rematch4Saved = {
 			1416, -- [5]
 		}, -- [2]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-00000D70BC6D", -- [1]
+			499, -- [2]
+			657, -- [3]
+			1043, -- [4]
+			1964, -- [5]
 		}, -- [3]
-		["tab"] = 5,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14532\n\nStrategy added by Grevenilvec\nPrio 1: Bubble on CD\nPrio 2: Swarm of Flies if enemy doesn't have Swarm of Flies debuff\nPrio 3: Tongue Lash as filler\nBenax should kill Unfortunate Defias and Deadmines Parrot\nSwap to your Teroclaw Hatchling\nPrio 1: Nature's Ward if buff is not active\nPrio 2: Alpha Strike if enemy's health is above 309\nPrio 3: Ravage",
-		["teamName"] = "Unfortunate Defias",
+		["tab"] = 8,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1827\n\nStrategy added by NostrA#2338\nprops to Aranesh for his/her strategy, i just changed the TD Script and Strategy to make Teroclaw viable again\n\nTurn 1: use Extra Plating\nTurn 2: use Make it Rain\nTurn 3+: use Inflation until Dreadcoil is dead\nan enemy comes in\nTurn 1+: use Inflation until Lil' Bling dies\nBring in your Teroclaw Hatchling\nenemy HP < 618: use Ravage\nif the target enemy is a Flying enemy, you want to use Ravage when the enemy HP is under 406\nwhen not active: use Nature's Ward\nelse: use Alpha Strike\n",
+		["teamName"] = "Dreadcoil",
+		["minXP"] = 25,
 	},
 	["To a Land Down Under"] = {
 		{
@@ -14823,31 +14642,31 @@ Rematch4Saved = {
 		}, -- [3]
 		["notes"] = "Strategy added by Rockmar#1116\nTurn 1: Call Blizzard\nTurn 2: Bash\nTurn 3: Bite\nClawz comes in\nTurn 1: Bite\nTurn 2: Call Blizzard\nTurn 3: Swap to your Baby Winston\nTurn 4: Barrier Projector\nTurn 5: Logic\nBassalt comes in\nTurn 6: Body Slam\nTurn 7: Logic\nTurn 8: Body Slam\nMurrey comes in\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up\nTurn 4: Wind-Up\nTurn 5: Wind-Up\n",
 	},
-	["Growing Ectoplasm 1"] = {
+	[161658] = {
 		{
-			"BattlePet-0-000012B67566", -- [1]
-			163, -- [2]
-			743, -- [3]
-			663, -- [4]
-			627, -- [5]
+			"BattlePet-0-000012B5CC26", -- [1]
+			503, -- [2]
+			1754, -- [3]
+			179, -- [4]
+			3289, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B6764A", -- [1]
-			112, -- [2]
-			916, -- [3]
-			170, -- [4]
-			1403, -- [5]
+			"BattlePet-0-000012B5CE9F", -- [1]
+			113, -- [2]
+			178, -- [3]
+			179, -- [4]
+			175, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B4C5B0", -- [1]
-			360, -- [2]
-			165, -- [3]
-			163, -- [4]
-			1427, -- [5]
+			"BattlePet-0-000006E4C75E", -- [1]
+			113, -- [2]
+			178, -- [3]
+			179, -- [4]
+			270, -- [5]
 		}, -- [3]
-		["tab"] = 8,
-		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Creeping Fungus\nTurn 2-4: Stampede\nTurn 5: Corpse Explosion\n\nBring in your Mechanical Axebeak\nTurn 1: Peck\nRandom Enemy Pet comes in\n\nDeviate Flapper:\nPeck > Lift-Off > Haywire\n\nDeviate Smallclaw:\nHaywire > Peck+\n\nDeviate Chomper:\nLift-Off > Peck+\n",
-		["minXP"] = 25,
+		["tab"] = 6,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/8940\n\nStrategy added by Pankracy#2378\n11 rounds fast, using relatively easy to get pets. Enjoy ;)\n\nTD Script provided by Shadowball (https://www.wow-petguide.com/User/13817/Shadowball), Thank you!!!\n\nTurn 1: Flamethrower\nTurn 2: Conflagrate\nTurn 3: Flamethrower\nTurn 4: swap to Phoenix Hatchling\nTurn 5: Conflagrate\nTurn 6: Immolate\nTurn 7: Burn\nTurn 8: Burn, Phoenix Hatchling dies, bring Dark Phoenix Hatchling\nTurn 9: Conflagrate, Shred enters Failsafe mode\nTurn 10: Burn\nTurn 11: Burn\n",
+		["teamName"] = "Shred",
 	},
 	[150917] = {
 		{
@@ -14877,24 +14696,6 @@ Rematch4Saved = {
 		["minXP"] = 25,
 		["minHP"] = 1303,
 	},
-	[142054] = {
-		{
-			"BattlePet-0-000012B6763C", -- [1]
-			355, -- [2]
-			490, -- [3]
-			124, -- [4]
-			514, -- [5]
-		}, -- [1]
-		{
-			"random:8", -- [1]
-		}, -- [2]
-		{
-			"random:0", -- [1]
-		}, -- [3]
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2048\n\nStrategy added by DragonsAfterDark\nScript thanks to Prudentius\n\nTurn 1: Deflection\nTurn 2-4: Rampage\nTurn 5+: Triple Snap until Beets dies\nRawly comes in\nTurn 1: Pass if you're slower than Rawly, Triple Snap if you're faster\nTurn 2: Deflection\nTurn 3: Triple Snap\nTurn 4+5: Rampage\nStinger comes in\nTurn 1: Rampage continues\nTurn 2+: Triple Snap until dead\nBring in your Beast pet\nAny standard Beast attack will finish the fight\n",
-		["teamName"] = "Desert Survivors",
-		["minXP"] = 25,
-	},
 	[116786] = {
 		{
 			"BattlePet-0-000012B48958", -- [1]
@@ -14917,6 +14718,30 @@ Rematch4Saved = {
 		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4596\n\nStrategy added by DragonsAfterDark\nTurn 1: Supercharge\nTurn 2: Haywire\nAn enemy pet comes in\nTurn 1: Haywire continues\n\nAfter Turn 1 against Enemy #2:\nBeasts:: Supercharge & Haywire on CD, Laser as filler\nFlying:: Supercharge on CD & Laser \nAquatic:: Supercharge & Haywire on CD, Laser as filler\n\nFlying enemies were the only ones I needed a second pet for, so having a pet with magic abilities on hand is best. Dragonkin with Magic abilities are better.\n",
 		["teamName"] = "Deviate Smallclaw",
 		["minXP"] = 25,
+	},
+	["Are They Not Beautiful? (Beast)"] = {
+		{
+			"BattlePet-0-00000D450504", -- [1]
+			535, -- [2]
+			1398, -- [3]
+			586, -- [4]
+			2622, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-00001234372A", -- [1]
+			2430, -- [2]
+			536, -- [3]
+			1536, -- [4]
+			3110, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012B528FE", -- [1]
+			974, -- [2]
+			595, -- [3]
+			536, -- [4]
+			1266, -- [5]
+		}, -- [3]
+		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).In all my testing I've only seen Fethres using Feign Death once, so please excuse me for completely ignoring the RNG that would add to the fights.\n\nTurn 1: Feathered Frenzy\nTurn 2: Gift of Winter's Veil\nTurns 3+: Pounce (until dead, meanwhile Fethres dies and Beeks comes in)\nBring in your Gizmo\nTurn 1: Prowl\nTurn 2: Arcane Dash (Beeks dies, Talons comes in)\nSwap to your Xu-Fu, Cub of Xuen\nTurn 1: Prowl\nTurn 2: Moonfire\n",
 	},
 	[141814] = {
 		{
@@ -14965,82 +14790,6 @@ Rematch4Saved = {
 		}, -- [3]
 		["tab"] = 11,
 	},
-	[150918] = {
-		{
-			"BattlePet-0-000012B3E786", -- [1]
-			2067, -- [2]
-			919, -- [3]
-			706, -- [4]
-			2648, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B6AE80", -- [1]
-			359, -- [2]
-			2361, -- [3]
-			1049, -- [4]
-			2866, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B6C84B", -- [1]
-			359, -- [2]
-			1954, -- [3]
-			1049, -- [4]
-			2866, -- [5]
-		}, -- [3]
-		["tab"] = 9,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6035\n\nStrategy added by Shenk\nTurn 1: Black Claw\nTurn 2-4: Swarm\n",
-		["teamName"] = "Tommy the Cruel",
-		["minXP"] = 1,
-	},
-	[173274] = {
-		{
-			"BattlePet-0-000012BEEEA6", -- [1]
-			270, -- [2]
-			0, -- [3]
-			282, -- [4]
-			1539, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B146D1", -- [1]
-			0, -- [2]
-			0, -- [3]
-			282, -- [4]
-			844, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B673F3", -- [1]
-			0, -- [2]
-			208, -- [3]
-			209, -- [4]
-			2717, -- [5]
-		}, -- [3]
-		["teamName"] = "Failed Experiment",
-		["notes"] = "Strategy added by norng\n6 rounds.\n\nTurn 1: Glowing Toxin\nTurn 2: Explode\nBring in your Mechanical Pandaren Dragonling\nTurn 1: Explode\nBring in your Microbot XD\nTurn 1: Supercharge\nTurns 2-3: Ion Cannon - Gorgemouth dies\n",
-	},
-	["To a Land Down Under (Dragon)"] = {
-		{
-			"BattlePet-0-000012B4861E", -- [1]
-			421, -- [2]
-			277, -- [3]
-			595, -- [4]
-			557, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B146CC", -- [1]
-			110, -- [2]
-			362, -- [3]
-			593, -- [4]
-			1152, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B4838C", -- [1]
-			525, -- [2]
-			597, -- [3]
-			598, -- [4]
-			1167, -- [5]
-		}, -- [3]
-		["notes"] = "Strategy added by Oakwarden\nNot my strat. Full credit goes to RezokDDW#1749wrote on 5/3/2023Nether Faerie Dragon 2,2,1Chrominius 1,1,2Emerald Proto-WhelpUsed these three, and almost solo'd with the Faerie dragonStarted with putting the moonlight up with the faerie dragon then just used Arcane Blast until the first pet died.Then once the 2nd came out I used moonlight again, then Life Exchange, then Arcane Blast killed it.Arcane blast until the Faerie dragon died, swap in Chrominius to Howl and then Surge of Power to kill Murrey. \n\nTurn 1: Moonfire\nTurn 2: Arcane Blast until Bassalt dies.\nTurn 3: Life Exchange\nTurn 4: Moonfire\nTurn 5: Arcane Blast until Clawz dies or your Nether Faerie Dragon dies.\nBring in your Chrominius\nTurn 1: Howl\nTurns 2-4: Surge of Power\n",
-	},
 	[161649] = {
 		{
 			"BattlePet-0-000012B99948", -- [1]
@@ -15068,27 +14817,30 @@ Rematch4Saved = {
 		["teamName"] = "Rampage",
 		["minXP"] = 1,
 	},
-	[68465] = {
+	[173274] = {
 		{
-			"BattlePet-0-000011E9D229", -- [1]
-			2375, -- [2]
-			232, -- [3]
-			568, -- [4]
-			3038, -- [5]
+			"BattlePet-0-000012BEEEA6", -- [1]
+			270, -- [2]
+			0, -- [3]
+			282, -- [4]
+			1539, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B15603", -- [1]
-			501, -- [2]
-			2237, -- [3]
-			0, -- [4]
-			3100, -- [5]
+			"BattlePet-0-000012B146D1", -- [1]
+			0, -- [2]
+			0, -- [3]
+			282, -- [4]
+			844, -- [5]
 		}, -- [2]
 		{
-			0, -- [1]
+			"BattlePet-0-000012B673F3", -- [1]
+			0, -- [2]
+			208, -- [3]
+			209, -- [4]
+			2717, -- [5]
 		}, -- [3]
-		["notes"] = "Strategy added by Mutanis\nTurn 1: Needle Claw\nTurn 2: Needle Claw\nTurn 3: Needle Claw\nTurn 4: Swarm of Flies\nTurn 5: Needle Claw\nSludgy comes in\nTurn 6: Feign Death – your Timeless Mechanical Dragonling is brought in\nTurn 7: Flame Breath\nTurn 8: Razor Talons\nTurn 9: Swap to your Undying Deathroach (Sludgy dies)\nDarnak the Tunneler comes in\nTurn 10: Needle Claw\nTurn 11: Swarm of Flies\nTurn 12: Pass (Undying Deathroach dies)\nBring in your Timeless Mechanical Dragonling\nTurn 13: Razor Talons\nTurn 14: Flame Breath\nTurn 15: Pass (Timeless Mechanical Dragonling dies & Darnak the Tunneler dies)\n",
-		["teamName"] = "Thundering Pandaren Spirit",
-		["maxHP"] = 1440,
+		["teamName"] = "Failed Experiment",
+		["notes"] = "Strategy added by norng\n6 rounds.\n\nTurn 1: Glowing Toxin\nTurn 2: Explode\nBring in your Mechanical Pandaren Dragonling\nTurn 1: Explode\nBring in your Microbot XD\nTurn 1: Supercharge\nTurns 2-3: Ion Cannon - Gorgemouth dies\n",
 	},
 	["Do You Even Train? (Aquatic)"] = {
 		{
@@ -15114,32 +14866,97 @@ Rematch4Saved = {
 		}, -- [3]
 		["notes"] = "Strategy added by Refreshe#1641\nThis script and strat worked way better than I expected for how simple brain it was...\n\nPriority 1: Primal Cry\nPriority 2: Poison Spit\nBring in your Mallard Duckling when Leviathan Hatchling dies.\nTurn 1+: Shriek\nBring in your Juvenile Scuttleback when Mallard Duckling dies.\nPriority 1: Dive dodge dive.\nPriority 2: Claw\n",
 	},
-	[116792] = {
+	[150918] = {
 		{
-			"BattlePet-0-000006E4C7A6", -- [1]
-			384, -- [2]
-			278, -- [3]
-			208, -- [4]
-			1233, -- [5]
+			"BattlePet-0-000012B3E786", -- [1]
+			2067, -- [2]
+			919, -- [3]
+			706, -- [4]
+			2648, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012843ED8", -- [1]
-			202, -- [2]
-			524, -- [3]
-			609, -- [4]
-			3323, -- [5]
+			"BattlePet-0-000012B6AE80", -- [1]
+			359, -- [2]
+			2361, -- [3]
+			1049, -- [4]
+			2866, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000006E4C78A", -- [1]
-			390, -- [2]
-			386, -- [3]
-			209, -- [4]
-			1961, -- [5]
+			"BattlePet-0-000012B6C84B", -- [1]
+			359, -- [2]
+			1954, -- [3]
+			1049, -- [4]
+			2866, -- [5]
 		}, -- [3]
-		["tab"] = 8,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6776\n\nStrategy added by Iggzy#2288\nScript thanks to Nikyou\n\nTurn 1: Supercharge\nTurn 2: Metal Fist\nTurns 3-5: Repair\nTurn 6: Metal Fist\nTurn 7: Supercharge\nTurn 8: Metal Fist\nTurn 9+: Metal Fist until dead\nBring in your other pets\nTurn 1+: Any standard attack will finish the fights\n",
-		["teamName"] = "Phyxia",
+		["tab"] = 9,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6035\n\nStrategy added by Shenk\nTurn 1: Black Claw\nTurn 2-4: Swarm\n",
+		["teamName"] = "Tommy the Cruel",
 		["minXP"] = 1,
+	},
+	[68465] = {
+		{
+			"BattlePet-0-000011E9D229", -- [1]
+			2375, -- [2]
+			232, -- [3]
+			568, -- [4]
+			3038, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B15603", -- [1]
+			501, -- [2]
+			2237, -- [3]
+			0, -- [4]
+			3100, -- [5]
+		}, -- [2]
+		{
+			0, -- [1]
+		}, -- [3]
+		["notes"] = "Strategy added by Mutanis\nTurn 1: Needle Claw\nTurn 2: Needle Claw\nTurn 3: Needle Claw\nTurn 4: Swarm of Flies\nTurn 5: Needle Claw\nSludgy comes in\nTurn 6: Feign Death – your Timeless Mechanical Dragonling is brought in\nTurn 7: Flame Breath\nTurn 8: Razor Talons\nTurn 9: Swap to your Undying Deathroach (Sludgy dies)\nDarnak the Tunneler comes in\nTurn 10: Needle Claw\nTurn 11: Swarm of Flies\nTurn 12: Pass (Undying Deathroach dies)\nBring in your Timeless Mechanical Dragonling\nTurn 13: Razor Talons\nTurn 14: Flame Breath\nTurn 15: Pass (Timeless Mechanical Dragonling dies & Darnak the Tunneler dies)\n",
+		["teamName"] = "Thundering Pandaren Spirit",
+		["maxHP"] = 1440,
+	},
+	[140315] = {
+		{
+			"BattlePet-0-000006E4C77C", -- [1]
+			477, -- [2]
+			206, -- [3]
+			481, -- [4]
+			117, -- [5]
+		}, -- [1]
+		{
+			"random:0", -- [1]
+		}, -- [2]
+		{
+			"random:0", -- [1]
+		}, -- [3]
+		["notes"] = "Strategy added by DragonsAfterDark\nPriority 1: Call Blizzard on CD\nPriority 2: Deep Freeze on CD\nPriority 3: Snowball all else\nPriority 4: Standby when the 'Fixed' Remote Control Rocket Chicken comes in\nIf needed, bring in next pet to finish the fight. \n",
+		["teamName"] = "Automated Chaos",
+		["minXP"] = 25,
+	},
+	["Xu-Fu, Cub of Xuen"] = {
+		{
+			"BattlePet-0-000012B48958", -- [1]
+			901, -- [2]
+			392, -- [3]
+			204, -- [4]
+			1178, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B01DC0", -- [1]
+			1002, -- [2]
+			392, -- [3]
+			985, -- [4]
+			1320, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012BAC92C", -- [1]
+			777, -- [2]
+			646, -- [3]
+			209, -- [4]
+			338, -- [5]
+		}, -- [3]
+		["tab"] = 2,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/228\n\nTurn 1: Call Lightning\nTurn 2: Swap to your Lil' Bling\nTurn 3: Make it Rain\nTurn 4+5: Inflation until Lil' Bling is dead\nBring in your Darkmoon Tonk\nTurn 1: Shock and Awe\nTurn 2: Ion Cannon\n",
 	},
 	[72009] = {
 		{
@@ -15192,53 +15009,52 @@ Rematch4Saved = {
 		["teamName"] = "Marshdwellers",
 		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/7895\n\nStrategy added by Orpartlu\nTurn 1: Falcosaur Swarm!\nTurn 2: Falcosaur Swarm! Continues.\nTurn 3: Predatory Strike\nLilly Dies.\nTurn 4: Falcosaur Swarm!\nSnowfeather Hatchling gets swapped out for Nexus Whelpling by Molaze.\nTurn 5: Arcane Storm\nTurn 6: Mana Surge\nMolaze Dies.\nTurn 7: Mana Surge continues.\nTicker may die here. If not finish with anything.\n",
 	},
-	[104970] = {
+	[200678] = {
 		{
-			"BattlePet-0-000012B0D34C", -- [1]
+			"BattlePet-0-000012B6751A", -- [1]
+			0, -- [2]
+			489, -- [3]
+			589, -- [4]
+			1721, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-0000122BADD1", -- [1]
+			473, -- [2]
+			475, -- [3]
+			489, -- [4]
+			1160, -- [5]
+		}, -- [2]
+		{
+			"random:0", -- [1]
+		}, -- [3]
+		["notes"] = "Strategy added by Salkari\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge\nWhelpling dies before getting off another attack\nTurns 1-3: Mana Surge\nTurn 4: Eyeblast\nTurn 6: Arcane eye should be able to finish him off. If not, then 1 attack from 3rd pet\n",
+		["teamName"] = "Storm-Touched Slyvern",
+		["minXP"] = 25,
+	},
+	[201004] = {
+		{
+			"BattlePet-0-000012B607A8", -- [1]
+			447, -- [2]
+			0, -- [3]
+			1954, -- [4]
+			2842, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B15603", -- [1]
 			501, -- [2]
 			602, -- [3]
 			1025, -- [4]
 			3100, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012C82AA8", -- [1]
-			178, -- [2]
-			0, -- [3]
-			606, -- [4]
-			2756, -- [5]
 		}, -- [2]
 		{
-			0, -- [1]
+			"BattlePet-0-000012B866BC", -- [1]
+			186, -- [2]
+			308, -- [3]
+			204, -- [4]
+			1588, -- [5]
 		}, -- [3]
-		["teamName"] = "Dealing with Satyrs",
-		["notes"] = "Strategy added by Mutanis\nTurn 1: Time Bomb\nTurn 2: Pass (Irradiated Elementaling comes in)\nTurn 3: Elementium Bolt\nTurn 4: Immolate\nGlobs comes in\nTurn 5: Immolate\nNightmare Sprout comes in\nTurns 6+: Immolate until Irradiated Elementaling dies (1-2x)\nBring in your Timeless Mechanical Dragonling\nQestion: Trixy is dead? -->YES go to Step B\nNo --> Priolist\nPrio 1: Flame Breath until Nightmare Sprout health < 397 (1-2x)\nPrio 2: Armageddon\n\nStep B (only if  Trixy is dead)\nTurn 1: Time Bomb\nTurn 2: Flame Breath\nTurn 3: Flame Breath\nTurn 4: Armageddon\n",
-	},
-	[161657] = {
-		{
-			"BattlePet-0-000008968258", -- [1]
-			406, -- [2]
-			453, -- [3]
-			490, -- [4]
-			1155, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B4AB86", -- [1]
-			110, -- [2]
-			362, -- [3]
-			366, -- [4]
-			724, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000008A86E91", -- [1]
-			535, -- [2]
-			357, -- [3]
-			595, -- [4]
-			1927, -- [5]
-		}, -- [3]
-		["tab"] = 6,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/8239\n\nStrategy added by Silverleaf#1446\nPriority 1: Deflection when Whirlpool is at 1\nPriority 2: Sandstorm\nPriority 3: Crush\n",
-		["teamName"] = "Ninn Jah",
-		["minXP"] = 25,
+		["teamName"] = "To a Land Down Under",
+		["notes"] = "Strategy added by WhyDaRumGone\nHigher powered Moths are preferred\n\nTurn 1: Poison Protocol\nTurn 2: Corrosion\nTurn 3: Pass. Note: If Anomalus died round 2 before getting off Corrosion; use Flame Breath\nBring in your Timeless Mechanical Dragonling\nTurn 4: Time Bomb\nTurn 5: Armageddon\nBring in your Moth\nTurn 6: Reckless Strike. Note: Skip this step if Bassalt is already dead\nClawz comes in\nTurn 7: Counterspell\nNote:: If Murrey is still in; pass until Time Bomb hits\nMurrey comes in\nTurn 8: Call Lightning\n",
 	},
 	[161650] = {
 		{
@@ -15267,30 +15083,26 @@ Rematch4Saved = {
 		["teamName"] = "Liz",
 		["minXP"] = 1,
 	},
-	["Catch team"] = {
+	[66741] = {
 		{
-			"BattlePet-0-000012B17368", -- [1]
-			447, -- [2]
-			2356, -- [3]
-			1954, -- [4]
-			2842, -- [5]
+			"BattlePet-0-000008968258", -- [1]
+			406, -- [2]
+			453, -- [3]
+			490, -- [4]
+			1155, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012C2D394", -- [1]
-			111, -- [2]
-			307, -- [3]
-			826, -- [4]
-			1953, -- [5]
+			0, -- [1]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B146CB", -- [1]
-			184, -- [2]
-			919, -- [3]
-			581, -- [4]
-			1532, -- [5]
+			"BattlePet-0-000012B4838C", -- [1]
+			525, -- [2]
+			611, -- [3]
+			612, -- [4]
+			1167, -- [5]
 		}, -- [3]
-		["tab"] = 10,
-		["favorite"] = true,
+		["teamName"] = "Aki the Chosen",
+		["notes"] = "Strategy added by unknown\nGood strategy but has some variations in it. If you don't use addons for pet battles or keep a close eye on the fight progress, I recommend not using this one.\n\nTurn 1: Sandstorm\nTurn 2: Swap to Level Pet\nTurn 3: Swap back to Anubisath Idol\nTurns 4+: Crush until Chirrup is dead - do not re-apply Sandstorm!\nStormlash comes in\nTurn 1: Deflection\nTurns 2+: Crush until Stormlash is dead as well\nSometimes your Idol will die before that. You can still finish the fight with the Emerald Proto-Whelp, just use Proto-Strike first thing when Whiskers comes in.\nWhiskers comes in\nTurn 1: Pass\nTurn 2: Deflection\nTurns 3+: Crush until your Idol dies.\nBring in your Emerald Proto-Whelp\nUse Emerald Bite whenever you can and if you have an addon showing you the enemies spells, use Proto-Strike as soon as Whiskers Dive comes off cooldown.\n",
 	},
 	[119342] = {
 		{
@@ -15315,77 +15127,77 @@ Rematch4Saved = {
 		["teamName"] = "Angry Geode",
 		["minXP"] = 25,
 	},
-	[200678] = {
+	[146001] = {
 		{
-			"BattlePet-0-000012B6751A", -- [1]
-			0, -- [2]
-			489, -- [3]
-			589, -- [4]
-			1721, -- [5]
+			"BattlePet-0-000012B118E8", -- [1]
+			413, -- [2]
+			624, -- [3]
+			206, -- [4]
+			1349, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-0000122BADD1", -- [1]
-			473, -- [2]
-			475, -- [3]
-			489, -- [4]
-			1160, -- [5]
+			"BattlePet-0-000006E4C775", -- [1]
+			413, -- [2]
+			206, -- [3]
+			624, -- [4]
+			119, -- [5]
 		}, -- [2]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B99B2C", -- [1]
+			377, -- [2]
+			165, -- [3]
+			348, -- [4]
+			2459, -- [5]
 		}, -- [3]
-		["notes"] = "Strategy added by Salkari\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge\nWhelpling dies before getting off another attack\nTurns 1-3: Mana Surge\nTurn 4: Eyeblast\nTurn 6: Arcane eye should be able to finish him off. If not, then 1 attack from 3rd pet\n",
-		["teamName"] = "Storm-Touched Slyvern",
+		["tab"] = 7,
+		["notes"] = "Strategy added by DragonsAfterDark\nWhatever pet you have in the third slot should only need to be there to soak backline damage, so make sure it's one you won't be using later on. \n\nTurn 1: Ice Tomb\nTurn 2: Pass\nTurn 3: Call Blizzard\nTurn 4: Ice Lance\nTurn 5: Ice Lance\nTurn 6: Pass\nTurn 7: Ice Tomb\nTurn 8: Pass – your Rotten Little Helper dies\nBring in your Father Winter's Helper\nTurn 1: Call Blizzard\nTurn 2: Ice Lance\nTurn 3: Ice Tomb\nTurn 4: Pass\nTurn 5: Call Blizzard\nTurn 6+: Ice Lance until Annoy-O-Tron dies\n",
+		["teamName"] = "Prototype Annoy-O-Tron",
 		["minXP"] = 25,
 	},
-	[71930] = {
+	["To a Land Down Under (Beast)"] = {
 		{
-			"BattlePet-0-000012B01E39", -- [1]
-			422, -- [2]
-			218, -- [3]
-			772, -- [4]
-			1628, -- [5]
+			"BattlePet-0-000012B528FE", -- [1]
+			974, -- [2]
+			595, -- [3]
+			536, -- [4]
+			1266, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B5CB68", -- [1]
-			113, -- [2]
-			436, -- [3]
-			569, -- [4]
-			1150, -- [5]
+			"BattlePet-0-00000D450504", -- [1]
+			930, -- [2]
+			1080, -- [3]
+			586, -- [4]
+			2622, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-00001234372A", -- [1]
+			2430, -- [2]
+			536, -- [3]
+			1536, -- [4]
+			3110, -- [5]
+		}, -- [3]
+		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).\n\n-------: XU-FU, CUB OF XUEN priorities: -------\nPrio 1:: In Round 5 swap to your Jingles (or earlier when your pet dies)\nPrio 2:: Enemy pet is not Clawz -> Prowl\nPrio 3:: Moonfire\nPrio 4:: Spirit Claws\n\n-------: JINGLES priorities: -------\nPrio 1:: Enemy is Clawz -> Booby-Trapped Presents\nPrio 2:: Huge Fang\nPrio 3:: Gift of Winter's Veil\nPrio 4:: Pass\nPrio 5:: When Jingles didn't kill Clawz, bring back your Xu-Fu, Cub of Xuen\n\n-------: GIZMO priorities: -------\nPrio 1:: When you're sure it will kill Murrey -> Arcane Dash\n(check Murrey's 50% damage reduce, Moonlight bonus damage, Beast Passive, etc.)\nPrio 2:: Prowl\nPrio 3:: Scrabble\n",
+	},
+	[104553] = {
+		{
+			"BattlePet-0-000011F1418A", -- [1]
+			1392, -- [2]
+			800, -- [3]
+			1966, -- [4]
+			2921, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B5CB71", -- [1]
+			0, -- [2]
+			1063, -- [3]
+			0, -- [4]
+			2454, -- [5]
 		}, -- [2]
 		{
 			0, -- [1]
 		}, -- [3]
-		["tab"] = 3,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18685\n\nStrategy added by ImpossiblGrl#1136\nTurn 1: Curse of Doom\nTurn 2: Shadow Shock Till Nairn dies (4-5 casts) Stormoen enters\nTurn 3: Lovestruck \nTurn 4: Curse of Doom Stormoen swaps, and the CoD hits Summer\nTurn 5: Swap to Level Pet\nTurn 6: Swap to Ashstone Core\nTurn 7: Crystal Prison\nTurn 8: Stoneskin Summer swaps and Stormoen is back\nTurn 9:  Burn till Stormoen dies (around 5 casts). Summer returns\nTurn 10: Stoneskin\nTurn 11: Pass\nTurn 12: Crystal Prison\nTurn 13: Burn\nTurn 14: Burn\nTurn 15: Swap to your Sister of Temptation\nTurn 16: Pass\nTurn 17: Shadow Shock\nTurn 18: Lovestruck\nTurn 19: Shadow Shock\n",
-		["teamName"] = "Shademaster Kiryn",
-		["minXP"] = 2,
-	},
-	[116787] = {
-		{
-			"BattlePet-0-000012B99CF2", -- [1]
-			421, -- [2]
-			906, -- [3]
-			1754, -- [4]
-			2078, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000007C1D04D", -- [1]
-			409, -- [2]
-			503, -- [3]
-			176, -- [4]
-			1624, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B99CFC", -- [1]
-			184, -- [2]
-			1963, -- [3]
-			521, -- [4]
-			2566, -- [5]
-		}, -- [3]
-		["tab"] = 8,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6224\n\nStrategy added by Lowlander#2941\nTurn 1: Fire Shield\nTurn 2: Lightning Shield\nTurn 3+: Arcane Blast (Keep spamming this till all are dead)\n",
-		["teamName"] = "Deviate Flapper",
-		["minXP"] = 25,
+		["teamName"] = "Snail Fight!",
+		["notes"] = "Strategy added by nogulpfrog\nAverage time ：57S\n\nTurn 1: Great Sting\nTurn 2: Swap to your Kunchong Hatchling\nTurn 3: Pheromones\nTurn 4: Swap to your Level Pet\nTurn 5: Swap to your Gorm Harrier\nTurn 6: Great Sting\nTurn 7: Enrage\nTurn 8: Impale, finish.\n",
 	},
 	[62621] = {
 		{
@@ -15462,7 +15274,7 @@ Rematch4Saved = {
 		["teamName"] = "Ralf",
 		["minXP"] = 1,
 	},
-	[119345] = {
+	[116790] = {
 		{
 			"BattlePet-0-000012B5C2FF", -- [1]
 			1773, -- [2]
@@ -15471,32 +15283,22 @@ Rematch4Saved = {
 			1975, -- [5]
 		}, -- [1]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B6763C", -- [1]
+			355, -- [2]
+			490, -- [3]
+			124, -- [4]
+			514, -- [5]
 		}, -- [2]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B96E89", -- [1]
+			355, -- [2]
+			490, -- [3]
+			124, -- [4]
+			514, -- [5]
 		}, -- [3]
-		["tab"] = 5,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2490\n\nStrategy added by Eekwibble\nTurns 1&2: Falcosaur Swarm!\nTurn 3: Ironskin\nTurn 4: Predatory Strike\nTurns 5&6: Falcosaur Swarm! - Krutz's Battle Monkey dies\nClean up with preferred pet/s",
-		["teamName"] = "Klutz's Battle Monkey",
-		["minXP"] = 25,
-	},
-	[200679] = {
-		{
-			"BattlePet-0-000012B146CB", -- [1]
-			184, -- [2]
-			919, -- [3]
-			581, -- [4]
-			1532, -- [5]
-		}, -- [1]
-		{
-			"random:3", -- [1]
-		}, -- [2]
-		{
-			"random:3", -- [1]
-		}, -- [3]
-		["notes"] = "Strategy added by DragonsAfterDark\nIkky should be good to take out both, or almost both, Skitterers with no healing between the fights.Script thanks to Schlumpf\n\nTurn 1: Black Claw\nTurns 2-4: Flock\nTurn 5+: Quills until the fight is won\n",
-		["teamName"] = "Storm-Touched Skitterer",
+		["tab"] = 8,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5693\n\nStrategy added by DragonsAfterDark\nPriority 1: Ironskin on CD\nPriority 2: Predatory Strike on Shattered Defenses\nPriority 3: Falcosaur Swarm! as filler\n",
+		["teamName"] = "Vilefang",
 		["minXP"] = 25,
 	},
 	[146002] = {
@@ -15526,31 +15328,52 @@ Rematch4Saved = {
 		["teamName"] = "Gnomeregan Guard Wolf",
 		["minXP"] = 25,
 	},
-	[161656] = {
+	[197102] = {
 		{
-			"BattlePet-0-000012B484E9", -- [1]
-			422, -- [2]
-			218, -- [3]
-			652, -- [4]
-			1238, -- [5]
+			"BattlePet-0-000012B4874E", -- [1]
+			122, -- [2]
+			489, -- [3]
+			589, -- [4]
+			1165, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B67566", -- [1]
-			163, -- [2]
-			743, -- [3]
-			663, -- [4]
-			627, -- [5]
+			"BattlePet-0-000012B146D0", -- [1]
+			459, -- [2]
+			566, -- [3]
+			208, -- [4]
+			1387, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012707902", -- [1]
-			2346, -- [2]
-			352, -- [3]
-			762, -- [4]
-			3381, -- [5]
+			"random:0", -- [1]
 		}, -- [3]
-		["tab"] = 6,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/7094\n\nStrategy added by Shenk\nYou can use pretty much any pet with Stampede-like abilities instead of the Infected Squirrel.\n\nTurn 1: Pass\nTurn 2: Curse of Doom\nTurn 3: Haunt\nBring in your Infected Squirrel\nTurn 1: Creeping Fungus\nTurn 2-3: Stampede\n",
-		["teamName"] = "Splint",
+		["teamName"] = "Two and Two Together",
+		["notes"] = "Strategy added by Scratike#2323\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge\nTurn 5: Tail Sweep until Nexus Whelpling dies\nTurn 6: Wind-Up\nTurn 7: Wind-Up\nTurn 6: WIN\n",
+	},
+	[150925] = {
+		{
+			"BattlePet-0-000012B0D34C", -- [1]
+			501, -- [2]
+			2237, -- [3]
+			1025, -- [4]
+			3100, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B1DC70", -- [1]
+			608, -- [2]
+			483, -- [3]
+			440, -- [4]
+			2550, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-00000A3564FB", -- [1]
+			1066, -- [2]
+			483, -- [3]
+			913, -- [4]
+			2550, -- [5]
+		}, -- [3]
+		["tab"] = 9,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/19106\n\nStrategy added by Remte\nTurn 1: Flame Breath\nTurn 2: Razor Talons\nTurns 3-4: Flame Breath x2\nTurn 5: Armageddon or another Flame Breath\n",
+		["teamName"] = "Liz the Tormentor",
 		["minXP"] = 1,
 	},
 	[105386] = {
@@ -15574,33 +15397,9 @@ Rematch4Saved = {
 		["teamName"] = "Rydyr",
 		["notes"] = "Strategy added by norng\n3 rounds.\n\nTurn 1: Glowing Toxin\nTurn 2: Explode\nBring in your Crimson Spore\nTurn 1: Explode - Baby Bjorn dies\n",
 	},
-	["Do You Even Train? (Mech)"] = {
+	[202452] = {
 		{
-			"BattlePet-0-000012B146D0", -- [1]
-			459, -- [2]
-			566, -- [3]
-			208, -- [4]
-			1387, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B15603", -- [1]
-			501, -- [2]
-			602, -- [3]
-			334, -- [4]
-			3100, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B673F3", -- [1]
-			1585, -- [2]
-			208, -- [3]
-			209, -- [4]
-			2717, -- [5]
-		}, -- [3]
-		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).I recommend using the P/S Iron Starlette because it only needs 1x Powerball to be faster than the enemy pets, usually lands 2x Wind-Up hits on Brul'dan and therefore adds more control.\n\nWith your Iron Starlette stick to these priorities until dead:\nvs. Lifft\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active, Dive is not usable this and the next turn -> Supercharge\nPrio 3:: Wind-Up is active, Lifft is Underwater -> Powerball\nPrio 4:: Wind-Up\nvs. Brul'dan\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active -> Wind-Up\nPrio 3:: Your pet's Failsafe has been triggered, Drain Power not usable -> Powerball \nPrio 4:: Wind-Up\n\nBring in your Timeless Mechanical Dragonling and stick to these priorities:\nPrio 1:: Enemy is Swole, Decoy exists -> Swap to your Microbot XD\nPrio 2:: Enemy is Swole, you've taken the Headbutt -> Swap to your Microbot XD\nPrio 3:: Enemy is Brul'dan with <1097HP -> Time Bomb\nPrio 4:: Enemy is Brul'dan with <549HP, no Flame Breath DoT active -> Decoy\nPrio 5:: Enemy is Brul'dan -> Flame Breath\nPrio 6:: Enemy is Swole -> Pass turn or Flame Breath\n\nWith your Microbot XD stick to these priorities:\nPrio 1:: Brul'dan is still alive or Swole has >1726HP -> Alert!\nPrio 2:: Supercharge\nPrio 3:: Ion Cannon\n",
-	},
-	[202440] = {
-		{
-			"BattlePet-0-000012B484E9", -- [1]
+			"BattlePet-0-000012B521D4", -- [1]
 			0, -- [2]
 			218, -- [3]
 			652, -- [4]
@@ -15616,9 +15415,29 @@ Rematch4Saved = {
 		{
 			"random:0", -- [1]
 		}, -- [3]
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18464\n\nStrategy added by DragonsAfterDark\nThe script will run for Ikky & the Zandalari Raptors\n\nVideo for Fight (https://youtu.be/NjYD3heC3Js)\n\nTurn 1: Curse of Doom\nTurn 2: Shadow Slash / Shadow Shock\nTurn 3: Haunt\nBring in your Ikky\nTurn 4: Black Claw\nTurns 5-6: Flock\n",
-		["teamName"] = "Enok the Stinky",
-		["minXP"] = 1,
+		["teamName"] = "Right Twice a Day",
+		["notes"] = "Strategy added by Wonderpray\nStraight forward pet battle, very strong team very effective!Script made by: Calipso\n\nTurn 1: Curse of Doom\nTurn 2: Haunt\nTurn 3: Bring in Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\nTurn 8: If necessary finish off with 3rd pet or Ikky\n",
+	},
+	[200693] = {
+		{
+			"BattlePet-0-000012B146C7", -- [1]
+			943, -- [2]
+			786, -- [3]
+			1762, -- [4]
+			1963, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B482D2", -- [1]
+			921, -- [2]
+			920, -- [3]
+			919, -- [4]
+			1211, -- [5]
+		}, -- [2]
+		{
+			"random:0", -- [1]
+		}, -- [3]
+		["teamName"] = "Tremblor - Rare",
+		["notes"] = "Strategy added by station384\nTurn 1: Blistering Cold\nTurn 2: Chop\nTurn 3: BONESTORM\nTurn 4: Repeat till Boneshard dead\nTurn 5: Primal Cry\nTurn 6: Black Claw\nTurn 7: Hunting Party\nTurn 8: Repeat 5-7 till target dead\n",
 	},
 	[142234] = {
 		{
@@ -15645,29 +15464,6 @@ Rematch4Saved = {
 		["teamName"] = "Small Beginnings",
 		["notes"] = "Strategy added by Runisco\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up until Iron Starlette dies\nBring in your Nexus Whelpling\nTurn 1: Arcane Storm\nTurn 2: Mana Surge\nTurn 3: Tail Sweep until Nexus Whelpling dies\nBring in your Ikky\nTurn 1: Black Claw\nTurn 2: Flock\n",
 	},
-	[162471] = {
-		{
-			"BattlePet-0-000012B0D34C", -- [1]
-			0, -- [2]
-			602, -- [3]
-			1025, -- [4]
-			3100, -- [5]
-		}, -- [1]
-		{
-			0, -- [1]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B146CC", -- [1]
-			0, -- [2]
-			362, -- [3]
-			593, -- [4]
-			1152, -- [5]
-		}, -- [3]
-		["minHP"] = 851,
-		["notes"] = "Strategy added by Kalagren\nScript by Damiez\n\nTimeless Mechanical Dragonling comes in\nTurn 1: Time Bomb\nTurn 2: Armageddon\nBring in your Level Pet\nTurn 3: Swap to your Chrominius\nTurn 4: Howl (Time Bomb does NOT consume Howl at this time, yet gains the multiplier.)\nTurn 5: Surge of Power\n",
-		["teamName"] = "Flight of the Vil'thik",
-		["minXP"] = 15,
-	},
 	[119343] = {
 		{
 			"BattlePet-0-000012B5C607", -- [1]
@@ -15689,6 +15485,33 @@ Rematch4Saved = {
 		["tab"] = 5,
 		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1834\n\nStrategy added by NostrA#2338\nProps to Aranesh for his/her strategy, I just changed the TD Script and Strategy to make Teroclaw viable again\n\n\n\nTurn 1-3: use Rampage\nTurn 4+: use Thrash until Klutz's Battle Rat dies\nan enemy Pet comes in\nTurn 1+: use Rampage on cooldown otherwise use Thrash until your Kun-Lai Runt dies\nBring in your Teroclaw Hatchling\nenemy HP < 618: use Ravage\nif the enemy is a Flying Type, you want to use Ravage when the enemy HP is under 406 \nwhen not active: use Nature's Ward\nelse: use Alpha Strike",
 		["teamName"] = "Klutz's Battle Rat",
+		["minXP"] = 25,
+	},
+	[116788] = {
+		{
+			"BattlePet-0-000012B67649", -- [1]
+			184, -- [2]
+			440, -- [3]
+			1068, -- [4]
+			1701, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B99D43", -- [1]
+			393, -- [2]
+			347, -- [3]
+			170, -- [4]
+			1385, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012BA9540", -- [1]
+			110, -- [2]
+			221, -- [3]
+			350, -- [4]
+			1571, -- [5]
+		}, -- [3]
+		["tab"] = 8,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4597\n\nStrategy added by DragonsAfterDark\nPriority 1: Evanescence\nPriority 2: Forboding Curse\nPriority 3: Quills all else\nBring in your next pet\nAny standard attack will finish the fight\n",
+		["teamName"] = "Deviate Chomper",
 		["minXP"] = 25,
 	},
 	[146003] = {
@@ -15766,26 +15589,22 @@ Rematch4Saved = {
 		["teamName"] = "Delver Mardei",
 		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).\n\nTurn 1: Time Bomb\nTurn 2: Flame Breath\nTurn 3: Armageddon\nBring in your Emmigosa\nTurn 4: Ice Tomb\nTurn 5: Arcane Storm (Tempe comes in, Swoggy dies in the backline)\nTurns 6+: Arcane Storm or Breath (until dead)\nChrominius comes in\nCheck conditions each Round and continue based on these priorities:\nPrio 1:: Tempe still alive? -> Bite\nPrio 2:: Dragonkin Passive is up and Dustie has 1665HP or less? -> Surge of Power\nPrio 3:: Dustie has 1110HP or less? -> Surge of Power\nPrio 4:: Howl\nPrio 5:: Surge of Power\n",
 	},
-	[79179] = {
+	[197336] = {
 		{
-			"BattlePet-0-000012C2DB32", -- [1]
-			110, -- [2]
-			753, -- [3]
-			404, -- [4]
-			3489, -- [5]
+			"BattlePet-0-000012B146CB", -- [1]
+			1370, -- [2]
+			919, -- [3]
+			581, -- [4]
+			1532, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B146D1", -- [1]
-			0, -- [2]
-			0, -- [3]
-			282, -- [4]
-			844, -- [5]
+			"random:0", -- [1]
 		}, -- [2]
 		{
-			0, -- [1]
+			"random:0", -- [1]
 		}, -- [3]
-		["teamName"] = "Deebs, Tyri and Puzzle",
-		["notes"] = "Strategy added by nogulpfrog\nTurn 1: Sunlight\nTurn 2: Swap to your Mechanical Pandaren Dragonling\nTurn 3: Explode\nBring in your Level Pet\nTurn 4: Swap to your Sunglow Cobra\nTurn 5: Bite, Deebs died\nTurn 6: Solar Beam, Tyri died\nTurn 7: Pass\nTurn 8: Pass\nTurn 9: Solar Beam, Puzzle died\n",
+		["teamName"] = "The Oldest Dragonfly",
+		["notes"] = "Strategy added by jellyfish\nonly tested once, but it was such a quick and easy victory i thought i would share anyway. \n\nTurn 1: Black Claw\nTurn 2: Flock\nTurn 3: if needed, Savage Talon or Flock again.\n",
 	},
 	[150858] = {
 		{
@@ -15835,53 +15654,57 @@ Rematch4Saved = {
 		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5612\n\nStrategy added by Reilly\nAny pet with Toxic Skin and a direct damage abiliy will work in slots 2 and 3.\n\nTurn 1: Corpse Explosion\nBring in your Leviathan Hatchling\nTurn 1: Toxic Skin\nTurn 2: Water Jet\nTurn 3: Water Jet\nYour Boghopper is swapped in\nTurn 1: Toxic Skin\nTurn 2+: Steam Vent until Sludge Belcher dies\n",
 		["teamName"] = "Sludge Belcher",
 	},
-	[72291] = {
+	[116793] = {
 		{
-			"BattlePet-0-00000D5451F8", -- [1]
-			792, -- [2]
-			2223, -- [3]
-			172, -- [4]
-			2352, -- [5]
+			"BattlePet-0-000012B146CA", -- [1]
+			1002, -- [2]
+			989, -- [3]
+			985, -- [4]
+			1320, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-00000D511EB1", -- [1]
-			475, -- [2]
-			2223, -- [3]
-			1533, -- [4]
-			3041, -- [5]
+			"BattlePet-0-000012B118A8", -- [1]
+			112, -- [2]
+			752, -- [3]
+			595, -- [4]
+			1567, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B01E92", -- [1]
-			771, -- [2]
-			772, -- [3]
-			773, -- [4]
-			122, -- [5]
+			"BattlePet-0-0000128A10CB", -- [1]
+			202, -- [2]
+			524, -- [3]
+			609, -- [4]
+			3323, -- [5]
 		}, -- [3]
-		["tab"] = 4,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/17855\n\nStrategy added by WhyDaRumGone\nTurn 1: Murder the Innocent\nTurn 2: Swap to your Death Seeker\nTurn 3: Murder the Innocent\nTurn 4: Eyeblast\nTurn 5: Pass, Death Seeker dies.\nBring in your Level Pet\nTurn 6: Swap to your Baa'l\nTurn 7: Darkflame\nTurn 8: Murder the Innocent\n",
-		["teamName"] = "Yu'la, Broodling of Yu'lon",
-		["minXP"] = 1,
+		["tab"] = 8,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5694\n\nStrategy added by DragonsAfterDark\nTurn 1: Extra Plating\nTurn 2: Make it Rain\nTurn 3-5: Inflation\nTurn 6: Make it Rain\nRandom Enemy comes in:\nTurn 1+: Inflation until dead\nBring in your Sentinel's Companion\nPriority 1: Moonfire & Soulrush on CD\nPriority 2: Peck as filler\n",
+		["teamName"] = "Hiss",
+		["minXP"] = 25,
 	},
-	[200680] = {
+	[141077] = {
 		{
-			0, -- [1]
+			"BattlePet-0-000006E4C76E", -- [1]
+			459, -- [2]
+			208, -- [3]
+			204, -- [4]
+			1957, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B521D4", -- [1]
-			0, -- [2]
-			218, -- [3]
-			652, -- [4]
-			1238, -- [5]
+			"BattlePet-0-000012B01EBA", -- [1]
+			184, -- [2]
+			357, -- [3]
+			1398, -- [4]
+			1922, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B146CB", -- [1]
-			0, -- [2]
-			919, -- [3]
-			581, -- [4]
-			1532, -- [5]
+			"BattlePet-0-000012B01ED3", -- [1]
+			459, -- [2]
+			640, -- [3]
+			208, -- [4]
+			1387, -- [5]
 		}, -- [3]
-		["teamName"] = "Storm-Touched Ohuna",
-		["notes"] = "Strategy added by Vanpelt#1866\nTurn 1: Pass\nTurn 2: Swap to your Unborn Val'kyr\nTurn 3: Curse of Doom\nTurn 4: Haunt - Unborn Val'kyr dies\nBring in your Ikky\nTurn 5: Black Claw\nTurns 6-8: Flock\n",
+		["teamName"] = "Not So Bad Down Here",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14342\n\nStrategy added by Druzil#2921\nPass if stunned.\n\n Iron Starlette backup pet\n\nTurn 1: Supercharge\nTurn 2: Call Lightning - Chum dies\nTurn 3: Bring in Lurking Owl Kitten\nTurn 4: Screech\nTurn 5: Quills\nTurn 6: Feathered Frenzy - Bruce should die\nTurn 7: Quills - Lurking Owl Kitten dies\nTurn 8: Bring in Runeforged Servitor\nTurn 9: Supercharge\nTurn 10: Call Lightning - Maws Jr. dies\n",
 	},
 	[105323] = {
 		{
@@ -15952,49 +15775,49 @@ Rematch4Saved = {
 		["teamName"] = "Crab People",
 		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2148\n\nStrategy added by DragonsAfterDark\nGreat flocking Falcosaurs! It's hard to go wrong with any order of attacks on this one, just try to keep the debuff from Falcosaur Swarm! up, and you should have no issues. \n\nTurn 1 + 2: Falcosaur Swarm!\nTurn 3: Predatory Strike\nTurn 4: Falcosaur Swarm! until Shelly is dead. \nSheldon comes in\nTurn 1: Falcosaur Swarm! until Direbeak Hatchling dies. \nBring in your Bloodgazer Hatchling\nTurn 1: Predatory Strike\nTurn 2: Savage Talon until Sheldon is dead. \nShelby comes in\nTurn 1: Falcosaur Swarm! until Predatory Strike is up. \nTurn 2: Predatory Strike\n",
 	},
-	[119344] = {
+	[154919] = {
 		{
-			"BattlePet-0-000012B48707", -- [1]
-			122, -- [2]
-			489, -- [3]
-			589, -- [4]
-			1165, -- [5]
+			"BattlePet-0-000012B01DC0", -- [1]
+			1002, -- [2]
+			0, -- [3]
+			0, -- [4]
+			1320, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B4838C", -- [1]
-			525, -- [2]
-			597, -- [3]
-			598, -- [4]
-			1167, -- [5]
+			"random:0", -- [1]
 		}, -- [2]
 		{
 			"random:0", -- [1]
 		}, -- [3]
-		["tab"] = 5,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1236\n\nStrategy added by Aranesh\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge - Klutz's Battle Bird dies\nAn enemy pet comes in\nTurns 1+: Continue using Arcane Storm and Mana Surge when available, otherwise Tail Sweep until your Nexus Whelpling dies\n\nIf you need your Emerald Proto-Whelp, keep Emerald Presence active, use Emerald Dream if you drop low on health and otherwise use Emerald Bite",
-		["teamName"] = "Klutz's Battle Bird",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5508\n\nStrategy added by DragonsAfterDark\nBe cautious, lest you give your enemies the tools to destroy you. *laughs*\n\nVideo for Fight (https://www.youtube.com/watch?v=zXxxLMjdfII)\n\nTurn 1+: Inflation\n",
+		["teamName"] = "Voltgorger",
+		["minXP"] = 25,
 	},
-	[189376] = {
+	[146004] = {
 		{
-			"BattlePet-0-000006E4C768", -- [1]
-			753, -- [2]
-			0, -- [3]
-			404, -- [4]
-			291, -- [5]
+			"BattlePet-0-000012B67B94", -- [1]
+			1056, -- [2]
+			1055, -- [3]
+			277, -- [4]
+			2590, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-00000D5451F8", -- [1]
-			0, -- [2]
-			2223, -- [3]
-			0, -- [4]
-			2352, -- [5]
+			"BattlePet-0-000012B17369", -- [1]
+			910, -- [2]
+			453, -- [3]
+			912, -- [4]
+			1177, -- [5]
 		}, -- [2]
 		{
-			0, -- [1]
+			"BattlePet-0-000006E4C75E", -- [1]
+			0, -- [2]
+			178, -- [3]
+			179, -- [4]
+			270, -- [5]
 		}, -- [3]
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/17410\n\nStrategy added by WhyDaRumGone\nSinging Sunflower can only survive 1 crit.\nMOD: Have modified the script to account for losing Sunflower early. It will potentially save a normal run but you will need to the select the following abilities if you want it to work:\n* On Baa'l; select Darkflame, Scorched Earth\n* On Baa'lial; select Trample\n* On Death Seeker; select Eyeblast, Eye Beam\n\nAlternative pets #1 pets:\n* Golden Chirper S/S - This is a few seconds slower due to animations.\n* Soul of the Aspects (untested) - This is a the best (theoretical) for this strat BUT is a shop pet.\n\nTurn 1: Sunlight\nTurn 2: Swap to your Baa'l\nTurn 3: Murder the Innocent\nTurn 4: Swap to your Level Pet\nTurn 5: Swap to your Singing Sunflower/Soul of the Aspects/Golden Chirper\nNote:: If your Singing Sunflower dies after the swap see below alternative steps.\nTurn 6: Solar Beam or Skitter if using S/S Golden Chirper\nTurn 7: This turn will be skipped, or use Skitter if using S/S Golden Chirper\nBring in your Baa'l\nTurn 8: Murder the Innocent\n\n\nAlternative steps if #1 pet died round 5. (If you got double crit)\n----------------------------------\nBring in your Baa'l / Death Seeker\nTurn 6: Darkflame / Eyeblast\nTurn 7: Murder the Innocent\nTurn 8: Scorched Earth / Eye Beam",
-		["teamName"] = "Swog the Elder",
-		["minXP"] = 1,
+		["tab"] = 7,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16007\n\nStrategy added by Dassemps#1507\nTurn 1: Breath of Sorrow\nTurn 2: Seethe\nTurn 3: Seethe\nAn enemy pet comes in\nTurn 4: Life Exchange\nTurn 5: Seethe\nTurn 6: Breath of Sorrow\nTurn 7: Swap to your Living Sandling\nTurn 7: Sandstorm\nTurn 8: Quicksand\nTurn 9: Sand Bolt\n",
+		["teamName"] = "Gnomeregan Guard Mechanostrider",
 	},
 	[150923] = {
 		{
@@ -16023,31 +15846,27 @@ Rematch4Saved = {
 		["teamName"] = "Belchling",
 		["minXP"] = 1,
 	},
-	[155267] = {
+	[119408] = {
 		{
-			"BattlePet-0-000012BA9563", -- [1]
-			360, -- [2]
-			1049, -- [3]
-			152, -- [4]
-			2190, -- [5]
+			"BattlePet-0-000012B484E9", -- [1]
+			422, -- [2]
+			218, -- [3]
+			652, -- [4]
+			1238, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B146D1", -- [1]
-			115, -- [2]
-			779, -- [3]
-			334, -- [4]
-			844, -- [5]
+			"BattlePet-0-000012B146CB", -- [1]
+			1370, -- [2]
+			919, -- [3]
+			581, -- [4]
+			1532, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B01DE4", -- [1]
-			422, -- [2]
-			468, -- [3]
-			652, -- [4]
-			1968, -- [5]
+			"random:0", -- [1]
 		}, -- [3]
-		["tab"] = 9,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6023\n\nStrategy added by Shenk\nReads hard, but it's actually simple. Just using the abilities as you'd usually always do.\nGuardian Cobra Hatchling can solo it when there is no magic enemy pet. \n\nTurn 1: Blinding Poison\nTurn 2: Flurry until Risen Guard enters undead phase\n*: Risen Guard enters undead phase. Is the next pet a Lost Soul or Tormented Spirit?\nTurn 4:  Yes - Swap to your Mechanical Pandaren Dragonling, then skip to the \"Magic enemy\" at the bottom\nTurn 4: No - Pass\nAn enemy pet comes in\nTurn 1: Blinding Poison\nTurn 2: Flurry until the enemy enters undead phase\n The second pet enters undead phase. Is the next pet a Lost Soul or Tormented Spirit?\nTurn 3: Yes - Swap to your Mechanical Pandaren Dragonling, then skip to the \"Magic enemy\" at the bottom\nTurn 4: No - Pass\n\nMagic enemy\nTurn 1: Thunderbolt\nTurn 2: Decoy\nTurn 3: Breath until enemy pet dies\n",
-		["teamName"] = "Risen Guard",
+		["tab"] = 5,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1233\n\nTurn 1: Pass\nTurn 2: Pass\nTurn 3: Haunt\nTurn 4: Bring in Ikky\nTurn 5: Black Claw\nTurns 6+: Flock",
+		["teamName"] = "\"Captain\" Klutz",
 	},
 	[116789] = {
 		{
@@ -16099,27 +15918,31 @@ Rematch4Saved = {
 		["teamName"] = "Bloated Leper Rat",
 		["minXP"] = 25,
 	},
-	[119408] = {
+	[155267] = {
 		{
-			"BattlePet-0-000012B484E9", -- [1]
-			422, -- [2]
-			218, -- [3]
-			652, -- [4]
-			1238, -- [5]
+			"BattlePet-0-000012BA9563", -- [1]
+			360, -- [2]
+			1049, -- [3]
+			152, -- [4]
+			2190, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B146CB", -- [1]
-			1370, -- [2]
-			919, -- [3]
-			581, -- [4]
-			1532, -- [5]
+			"BattlePet-0-000012B146D1", -- [1]
+			115, -- [2]
+			779, -- [3]
+			334, -- [4]
+			844, -- [5]
 		}, -- [2]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B01DE4", -- [1]
+			422, -- [2]
+			468, -- [3]
+			652, -- [4]
+			1968, -- [5]
 		}, -- [3]
-		["tab"] = 5,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1233\n\nTurn 1: Pass\nTurn 2: Pass\nTurn 3: Haunt\nTurn 4: Bring in Ikky\nTurn 5: Black Claw\nTurns 6+: Flock",
-		["teamName"] = "\"Captain\" Klutz",
+		["tab"] = 9,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6023\n\nStrategy added by Shenk\nReads hard, but it's actually simple. Just using the abilities as you'd usually always do.\nGuardian Cobra Hatchling can solo it when there is no magic enemy pet. \n\nTurn 1: Blinding Poison\nTurn 2: Flurry until Risen Guard enters undead phase\n*: Risen Guard enters undead phase. Is the next pet a Lost Soul or Tormented Spirit?\nTurn 4:  Yes - Swap to your Mechanical Pandaren Dragonling, then skip to the \"Magic enemy\" at the bottom\nTurn 4: No - Pass\nAn enemy pet comes in\nTurn 1: Blinding Poison\nTurn 2: Flurry until the enemy enters undead phase\n The second pet enters undead phase. Is the next pet a Lost Soul or Tormented Spirit?\nTurn 3: Yes - Swap to your Mechanical Pandaren Dragonling, then skip to the \"Magic enemy\" at the bottom\nTurn 4: No - Pass\n\nMagic enemy\nTurn 1: Thunderbolt\nTurn 2: Decoy\nTurn 3: Breath until enemy pet dies\n",
+		["teamName"] = "Risen Guard",
 	},
 	[98489] = {
 		{
@@ -16146,49 +15969,49 @@ Rematch4Saved = {
 		["teamName"] = "Shipwrecked Captive",
 		["notes"] = "Strategy added by norng\n14~15 rounds.PP, PS Iron Starlette recommend.\n\nTurn 1: Alpha Strike\nTurn 2: Decoy\nTurn 3: Alpha Strike\nTurn 4: Alpha Strike - Scuttles dies\nClamps comes in\nTurn 1: Swap to your Iron Starlette\nTurn 2: Wind-Up\nTurn 3: Supercharge\nTurn 4: Wind-Up\nTurn 5: Powerball - Clamps resurrects\nTurn 6: Swap to your Sapphire Cub - Clamps dies\nKiazor the Destroyer comes in\nTurn 1: Prowl\nTurn 2: Pounce\nTurn 3: Pounce\nTurn 4: Swap to your Mechanical Axebeak\nTurns 5: Haywire - Kiazor the Destroyer dies\n",
 	},
-	[146004] = {
+	[189376] = {
 		{
-			"BattlePet-0-000012B67B94", -- [1]
-			1056, -- [2]
-			1055, -- [3]
-			277, -- [4]
-			2590, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B17369", -- [1]
-			910, -- [2]
-			453, -- [3]
-			912, -- [4]
-			1177, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000006E4C75E", -- [1]
-			0, -- [2]
-			178, -- [3]
-			179, -- [4]
-			270, -- [5]
-		}, -- [3]
-		["tab"] = 7,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/16007\n\nStrategy added by Dassemps#1507\nTurn 1: Breath of Sorrow\nTurn 2: Seethe\nTurn 3: Seethe\nAn enemy pet comes in\nTurn 4: Life Exchange\nTurn 5: Seethe\nTurn 6: Breath of Sorrow\nTurn 7: Swap to your Living Sandling\nTurn 7: Sandstorm\nTurn 8: Quicksand\nTurn 9: Sand Bolt\n",
-		["teamName"] = "Gnomeregan Guard Mechanostrider",
-	},
-	[154919] = {
-		{
-			"BattlePet-0-000012B01DC0", -- [1]
-			1002, -- [2]
+			"BattlePet-0-000006E4C768", -- [1]
+			753, -- [2]
 			0, -- [3]
-			0, -- [4]
-			1320, -- [5]
+			404, -- [4]
+			291, -- [5]
 		}, -- [1]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-00000D5451F8", -- [1]
+			0, -- [2]
+			2223, -- [3]
+			0, -- [4]
+			2352, -- [5]
+		}, -- [2]
+		{
+			0, -- [1]
+		}, -- [3]
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/17410\n\nStrategy added by WhyDaRumGone\nSinging Sunflower can only survive 1 crit.\nMOD: Have modified the script to account for losing Sunflower early. It will potentially save a normal run but you will need to the select the following abilities if you want it to work:\n* On Baa'l; select Darkflame, Scorched Earth\n* On Baa'lial; select Trample\n* On Death Seeker; select Eyeblast, Eye Beam\n\nAlternative pets #1 pets:\n* Golden Chirper S/S - This is a few seconds slower due to animations.\n* Soul of the Aspects (untested) - This is a the best (theoretical) for this strat BUT is a shop pet.\n\nTurn 1: Sunlight\nTurn 2: Swap to your Baa'l\nTurn 3: Murder the Innocent\nTurn 4: Swap to your Level Pet\nTurn 5: Swap to your Singing Sunflower/Soul of the Aspects/Golden Chirper\nNote:: If your Singing Sunflower dies after the swap see below alternative steps.\nTurn 6: Solar Beam or Skitter if using S/S Golden Chirper\nTurn 7: This turn will be skipped, or use Skitter if using S/S Golden Chirper\nBring in your Baa'l\nTurn 8: Murder the Innocent\n\n\nAlternative steps if #1 pet died round 5. (If you got double crit)\n----------------------------------\nBring in your Baa'l / Death Seeker\nTurn 6: Darkflame / Eyeblast\nTurn 7: Murder the Innocent\nTurn 8: Scorched Earth / Eye Beam",
+		["teamName"] = "Swog the Elder",
+		["minXP"] = 1,
+	},
+	[119344] = {
+		{
+			"BattlePet-0-000012B48707", -- [1]
+			122, -- [2]
+			489, -- [3]
+			589, -- [4]
+			1165, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B4838C", -- [1]
+			525, -- [2]
+			597, -- [3]
+			598, -- [4]
+			1167, -- [5]
 		}, -- [2]
 		{
 			"random:0", -- [1]
 		}, -- [3]
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5508\n\nStrategy added by DragonsAfterDark\nBe cautious, lest you give your enemies the tools to destroy you. *laughs*\n\nVideo for Fight (https://www.youtube.com/watch?v=zXxxLMjdfII)\n\nTurn 1+: Inflation\n",
-		["teamName"] = "Voltgorger",
-		["minXP"] = 25,
+		["tab"] = 5,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1236\n\nStrategy added by Aranesh\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge - Klutz's Battle Bird dies\nAn enemy pet comes in\nTurns 1+: Continue using Arcane Storm and Mana Surge when available, otherwise Tail Sweep until your Nexus Whelpling dies\n\nIf you need your Emerald Proto-Whelp, keep Emerald Presence active, use Emerald Dream if you drop low on health and otherwise use Emerald Bite",
+		["teamName"] = "Klutz's Battle Bird",
 	},
 	[141215] = {
 		{
@@ -16211,74 +16034,74 @@ Rematch4Saved = {
 		["teamName"] = "Unbreakable",
 		["notes"] = "Strategy added by Akyro\nTurn 1: Decoy\nTurn 2: Swap to your Level Pet\nTurn 3: Swap to your Direbeak Hatchling\nTurn 4: Ironskin on Cooldown\nTurn 5: Falcosaur Swarm! until Chitara has the Broken Shell debuff\nTurn 6: Predatory Strike\n",
 	},
-	[141077] = {
+	[200680] = {
 		{
-			"BattlePet-0-000006E4C76E", -- [1]
-			459, -- [2]
-			208, -- [3]
-			204, -- [4]
-			1957, -- [5]
+			0, -- [1]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B01EBA", -- [1]
-			184, -- [2]
-			357, -- [3]
-			1398, -- [4]
-			1922, -- [5]
+			"BattlePet-0-000012B521D4", -- [1]
+			0, -- [2]
+			218, -- [3]
+			652, -- [4]
+			1238, -- [5]
 		}, -- [2]
-		{
-			"BattlePet-0-000012B01ED3", -- [1]
-			459, -- [2]
-			640, -- [3]
-			208, -- [4]
-			1387, -- [5]
-		}, -- [3]
-		["teamName"] = "Not So Bad Down Here",
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14342\n\nStrategy added by Druzil#2921\nPass if stunned.\n\n Iron Starlette backup pet\n\nTurn 1: Supercharge\nTurn 2: Call Lightning - Chum dies\nTurn 3: Bring in Lurking Owl Kitten\nTurn 4: Screech\nTurn 5: Quills\nTurn 6: Feathered Frenzy - Bruce should die\nTurn 7: Quills - Lurking Owl Kitten dies\nTurn 8: Bring in Runeforged Servitor\nTurn 9: Supercharge\nTurn 10: Call Lightning - Maws Jr. dies\n",
-	},
-	[116793] = {
-		{
-			"BattlePet-0-000012B146CA", -- [1]
-			1002, -- [2]
-			989, -- [3]
-			985, -- [4]
-			1320, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B118A8", -- [1]
-			112, -- [2]
-			752, -- [3]
-			595, -- [4]
-			1567, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-0000128A10CB", -- [1]
-			202, -- [2]
-			524, -- [3]
-			609, -- [4]
-			3323, -- [5]
-		}, -- [3]
-		["tab"] = 8,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5694\n\nStrategy added by DragonsAfterDark\nTurn 1: Extra Plating\nTurn 2: Make it Rain\nTurn 3-5: Inflation\nTurn 6: Make it Rain\nRandom Enemy comes in:\nTurn 1+: Inflation until dead\nBring in your Sentinel's Companion\nPriority 1: Moonfire & Soulrush on CD\nPriority 2: Peck as filler\n",
-		["teamName"] = "Hiss",
-		["minXP"] = 25,
-	},
-	[197336] = {
 		{
 			"BattlePet-0-000012B146CB", -- [1]
-			1370, -- [2]
+			0, -- [2]
 			919, -- [3]
 			581, -- [4]
 			1532, -- [5]
+		}, -- [3]
+		["teamName"] = "Storm-Touched Ohuna",
+		["notes"] = "Strategy added by Vanpelt#1866\nTurn 1: Pass\nTurn 2: Swap to your Unborn Val'kyr\nTurn 3: Curse of Doom\nTurn 4: Haunt - Unborn Val'kyr dies\nBring in your Ikky\nTurn 5: Black Claw\nTurns 6-8: Flock\n",
+	},
+	[72291] = {
+		{
+			"BattlePet-0-00000D5451F8", -- [1]
+			792, -- [2]
+			2223, -- [3]
+			172, -- [4]
+			2352, -- [5]
 		}, -- [1]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-00000D511EB1", -- [1]
+			475, -- [2]
+			2223, -- [3]
+			1533, -- [4]
+			3041, -- [5]
 		}, -- [2]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B01E92", -- [1]
+			771, -- [2]
+			772, -- [3]
+			773, -- [4]
+			122, -- [5]
 		}, -- [3]
-		["teamName"] = "The Oldest Dragonfly",
-		["notes"] = "Strategy added by jellyfish\nonly tested once, but it was such a quick and easy victory i thought i would share anyway. \n\nTurn 1: Black Claw\nTurn 2: Flock\nTurn 3: if needed, Savage Talon or Flock again.\n",
+		["tab"] = 4,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/17855\n\nStrategy added by WhyDaRumGone\nTurn 1: Murder the Innocent\nTurn 2: Swap to your Death Seeker\nTurn 3: Murder the Innocent\nTurn 4: Eyeblast\nTurn 5: Pass, Death Seeker dies.\nBring in your Level Pet\nTurn 6: Swap to your Baa'l\nTurn 7: Darkflame\nTurn 8: Murder the Innocent\n",
+		["teamName"] = "Yu'la, Broodling of Yu'lon",
+		["minXP"] = 1,
+	},
+	[79179] = {
+		{
+			"BattlePet-0-000012C2DB32", -- [1]
+			110, -- [2]
+			753, -- [3]
+			404, -- [4]
+			3489, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B146D1", -- [1]
+			0, -- [2]
+			0, -- [3]
+			282, -- [4]
+			844, -- [5]
+		}, -- [2]
+		{
+			0, -- [1]
+		}, -- [3]
+		["teamName"] = "Deebs, Tyri and Puzzle",
+		["notes"] = "Strategy added by nogulpfrog\nTurn 1: Sunlight\nTurn 2: Swap to your Mechanical Pandaren Dragonling\nTurn 3: Explode\nBring in your Level Pet\nTurn 4: Swap to your Sunglow Cobra\nTurn 5: Bite, Deebs died\nTurn 6: Solar Beam, Tyri died\nTurn 7: Pass\nTurn 8: Pass\nTurn 9: Solar Beam, Puzzle died\n",
 	},
 	[68564] = {
 		{
@@ -16301,57 +16124,32 @@ Rematch4Saved = {
 		["teamName"] = "Dos-Ryga",
 		["notes"] = "Strategy added by Getafiks#1391\nTurn 1: Pass\nTurn 2: Swap to your Unborn Val'kyr\nTurn 3: Curse of Doom\nTurn 4: Unholy Ascension\nBring in your Ikky\nTurn 1: Black Claw\nTurns 2-4: Flock\n",
 	},
-	[116788] = {
+	[162471] = {
 		{
-			"BattlePet-0-000012B67649", -- [1]
-			184, -- [2]
-			440, -- [3]
-			1068, -- [4]
-			1701, -- [5]
+			"BattlePet-0-000012B0D34C", -- [1]
+			0, -- [2]
+			602, -- [3]
+			1025, -- [4]
+			3100, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B99D43", -- [1]
-			393, -- [2]
-			347, -- [3]
-			170, -- [4]
-			1385, -- [5]
+			0, -- [1]
 		}, -- [2]
 		{
-			"BattlePet-0-000012BA9540", -- [1]
-			110, -- [2]
-			221, -- [3]
-			350, -- [4]
-			1571, -- [5]
+			"BattlePet-0-000012B146CC", -- [1]
+			0, -- [2]
+			362, -- [3]
+			593, -- [4]
+			1152, -- [5]
 		}, -- [3]
-		["tab"] = 8,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/4597\n\nStrategy added by DragonsAfterDark\nPriority 1: Evanescence\nPriority 2: Forboding Curse\nPriority 3: Quills all else\nBring in your next pet\nAny standard attack will finish the fight\n",
-		["teamName"] = "Deviate Chomper",
-		["minXP"] = 25,
+		["minHP"] = 851,
+		["notes"] = "Strategy added by Kalagren\nScript by Damiez\n\nTimeless Mechanical Dragonling comes in\nTurn 1: Time Bomb\nTurn 2: Armageddon\nBring in your Level Pet\nTurn 3: Swap to your Chrominius\nTurn 4: Howl (Time Bomb does NOT consume Howl at this time, yet gains the multiplier.)\nTurn 5: Surge of Power\n",
+		["teamName"] = "Flight of the Vil'thik",
+		["minXP"] = 15,
 	},
-	[200693] = {
+	[202440] = {
 		{
-			"BattlePet-0-000012B146C7", -- [1]
-			943, -- [2]
-			786, -- [3]
-			1762, -- [4]
-			1963, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B482D2", -- [1]
-			921, -- [2]
-			920, -- [3]
-			919, -- [4]
-			1211, -- [5]
-		}, -- [2]
-		{
-			"random:0", -- [1]
-		}, -- [3]
-		["teamName"] = "Tremblor - Rare",
-		["notes"] = "Strategy added by station384\nTurn 1: Blistering Cold\nTurn 2: Chop\nTurn 3: BONESTORM\nTurn 4: Repeat till Boneshard dead\nTurn 5: Primal Cry\nTurn 6: Black Claw\nTurn 7: Hunting Party\nTurn 8: Repeat 5-7 till target dead\n",
-	},
-	[202452] = {
-		{
-			"BattlePet-0-000012B521D4", -- [1]
+			"BattlePet-0-000012B484E9", -- [1]
 			0, -- [2]
 			218, -- [3]
 			652, -- [4]
@@ -16367,58 +16165,80 @@ Rematch4Saved = {
 		{
 			"random:0", -- [1]
 		}, -- [3]
-		["teamName"] = "Right Twice a Day",
-		["notes"] = "Strategy added by Wonderpray\nStraight forward pet battle, very strong team very effective!Script made by: Calipso\n\nTurn 1: Curse of Doom\nTurn 2: Haunt\nTurn 3: Bring in Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\nTurn 8: If necessary finish off with 3rd pet or Ikky\n",
-	},
-	[150925] = {
-		{
-			"BattlePet-0-000012B0D34C", -- [1]
-			501, -- [2]
-			2237, -- [3]
-			1025, -- [4]
-			3100, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B1DC70", -- [1]
-			608, -- [2]
-			483, -- [3]
-			440, -- [4]
-			2550, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-00000A3564FB", -- [1]
-			1066, -- [2]
-			483, -- [3]
-			913, -- [4]
-			2550, -- [5]
-		}, -- [3]
-		["tab"] = 9,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/19106\n\nStrategy added by Remte\nTurn 1: Flame Breath\nTurn 2: Razor Talons\nTurns 3-4: Flame Breath x2\nTurn 5: Armageddon or another Flame Breath\n",
-		["teamName"] = "Liz the Tormentor",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18464\n\nStrategy added by DragonsAfterDark\nThe script will run for Ikky & the Zandalari Raptors\n\nVideo for Fight (https://youtu.be/NjYD3heC3Js)\n\nTurn 1: Curse of Doom\nTurn 2: Shadow Slash / Shadow Shock\nTurn 3: Haunt\nBring in your Ikky\nTurn 4: Black Claw\nTurns 5-6: Flock\n",
+		["teamName"] = "Enok the Stinky",
 		["minXP"] = 1,
 	},
-	[197102] = {
-		{
-			"BattlePet-0-000012B4874E", -- [1]
-			122, -- [2]
-			489, -- [3]
-			589, -- [4]
-			1165, -- [5]
-		}, -- [1]
+	["Do You Even Train? (Mech)"] = {
 		{
 			"BattlePet-0-000012B146D0", -- [1]
 			459, -- [2]
 			566, -- [3]
 			208, -- [4]
 			1387, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B15603", -- [1]
+			501, -- [2]
+			602, -- [3]
+			334, -- [4]
+			3100, -- [5]
 		}, -- [2]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B673F3", -- [1]
+			1585, -- [2]
+			208, -- [3]
+			209, -- [4]
+			2717, -- [5]
 		}, -- [3]
-		["teamName"] = "Two and Two Together",
-		["notes"] = "Strategy added by Scratike#2323\nTurn 1: Arcane Storm\nTurns 2-4: Mana Surge\nTurn 5: Tail Sweep until Nexus Whelpling dies\nTurn 6: Wind-Up\nTurn 7: Wind-Up\nTurn 6: WIN\n",
+		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).I recommend using the P/S Iron Starlette because it only needs 1x Powerball to be faster than the enemy pets, usually lands 2x Wind-Up hits on Brul'dan and therefore adds more control.\n\nWith your Iron Starlette stick to these priorities until dead:\nvs. Lifft\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active, Dive is not usable this and the next turn -> Supercharge\nPrio 3:: Wind-Up is active, Lifft is Underwater -> Powerball\nPrio 4:: Wind-Up\nvs. Brul'dan\nPrio 1:: When your pet is slower than the actual enemy pet -> Powerball\nPrio 2:: Wind-Up is active -> Wind-Up\nPrio 3:: Your pet's Failsafe has been triggered, Drain Power not usable -> Powerball \nPrio 4:: Wind-Up\n\nBring in your Timeless Mechanical Dragonling and stick to these priorities:\nPrio 1:: Enemy is Swole, Decoy exists -> Swap to your Microbot XD\nPrio 2:: Enemy is Swole, you've taken the Headbutt -> Swap to your Microbot XD\nPrio 3:: Enemy is Brul'dan with <1097HP -> Time Bomb\nPrio 4:: Enemy is Brul'dan with <549HP, no Flame Breath DoT active -> Decoy\nPrio 5:: Enemy is Brul'dan -> Flame Breath\nPrio 6:: Enemy is Swole -> Pass turn or Flame Breath\n\nWith your Microbot XD stick to these priorities:\nPrio 1:: Brul'dan is still alive or Swole has >1726HP -> Alert!\nPrio 2:: Supercharge\nPrio 3:: Ion Cannon\n",
 	},
-	[116790] = {
+	[161656] = {
+		{
+			"BattlePet-0-000012B484E9", -- [1]
+			422, -- [2]
+			218, -- [3]
+			652, -- [4]
+			1238, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B67566", -- [1]
+			163, -- [2]
+			743, -- [3]
+			663, -- [4]
+			627, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012707902", -- [1]
+			2346, -- [2]
+			352, -- [3]
+			762, -- [4]
+			3381, -- [5]
+		}, -- [3]
+		["tab"] = 6,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/7094\n\nStrategy added by Shenk\nYou can use pretty much any pet with Stampede-like abilities instead of the Infected Squirrel.\n\nTurn 1: Pass\nTurn 2: Curse of Doom\nTurn 3: Haunt\nBring in your Infected Squirrel\nTurn 1: Creeping Fungus\nTurn 2-3: Stampede\n",
+		["teamName"] = "Splint",
+		["minXP"] = 1,
+	},
+	[200679] = {
+		{
+			"BattlePet-0-000012B146CB", -- [1]
+			184, -- [2]
+			919, -- [3]
+			581, -- [4]
+			1532, -- [5]
+		}, -- [1]
+		{
+			"random:3", -- [1]
+		}, -- [2]
+		{
+			"random:3", -- [1]
+		}, -- [3]
+		["notes"] = "Strategy added by DragonsAfterDark\nIkky should be good to take out both, or almost both, Skitterers with no healing between the fights.Script thanks to Schlumpf\n\nTurn 1: Black Claw\nTurns 2-4: Flock\nTurn 5+: Quills until the fight is won\n",
+		["teamName"] = "Storm-Touched Skitterer",
+		["minXP"] = 25,
+	},
+	[119345] = {
 		{
 			"BattlePet-0-000012B5C2FF", -- [1]
 			1773, -- [2]
@@ -16427,22 +16247,14 @@ Rematch4Saved = {
 			1975, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B6763C", -- [1]
-			355, -- [2]
-			490, -- [3]
-			124, -- [4]
-			514, -- [5]
+			"random:0", -- [1]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B96E89", -- [1]
-			355, -- [2]
-			490, -- [3]
-			124, -- [4]
-			514, -- [5]
+			"random:0", -- [1]
 		}, -- [3]
-		["tab"] = 8,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/5693\n\nStrategy added by DragonsAfterDark\nPriority 1: Ironskin on CD\nPriority 2: Predatory Strike on Shattered Defenses\nPriority 3: Falcosaur Swarm! as filler\n",
-		["teamName"] = "Vilefang",
+		["tab"] = 5,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2490\n\nStrategy added by Eekwibble\nTurns 1&2: Falcosaur Swarm!\nTurn 3: Ironskin\nTurn 4: Predatory Strike\nTurns 5&6: Falcosaur Swarm! - Krutz's Battle Monkey dies\nClean up with preferred pet/s",
+		["teamName"] = "Klutz's Battle Monkey",
 		["minXP"] = 25,
 	},
 	[200684] = {
@@ -16489,104 +16301,82 @@ Rematch4Saved = {
 		["teamName"] = "Foe Reaper 50",
 		["minXP"] = 25,
 	},
-	[104553] = {
+	[116787] = {
 		{
-			"BattlePet-0-000011F1418A", -- [1]
-			1392, -- [2]
-			800, -- [3]
-			1966, -- [4]
-			2921, -- [5]
+			"BattlePet-0-000012B99CF2", -- [1]
+			421, -- [2]
+			906, -- [3]
+			1754, -- [4]
+			2078, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B5CB71", -- [1]
-			0, -- [2]
-			1063, -- [3]
-			0, -- [4]
-			2454, -- [5]
+			"BattlePet-0-000007C1D04D", -- [1]
+			409, -- [2]
+			503, -- [3]
+			176, -- [4]
+			1624, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012B99CFC", -- [1]
+			184, -- [2]
+			1963, -- [3]
+			521, -- [4]
+			2566, -- [5]
+		}, -- [3]
+		["tab"] = 8,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6224\n\nStrategy added by Lowlander#2941\nTurn 1: Fire Shield\nTurn 2: Lightning Shield\nTurn 3+: Arcane Blast (Keep spamming this till all are dead)\n",
+		["teamName"] = "Deviate Flapper",
+		["minXP"] = 25,
+	},
+	[71930] = {
+		{
+			"BattlePet-0-000012B01E39", -- [1]
+			422, -- [2]
+			218, -- [3]
+			772, -- [4]
+			1628, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B5CB68", -- [1]
+			113, -- [2]
+			436, -- [3]
+			569, -- [4]
+			1150, -- [5]
 		}, -- [2]
 		{
 			0, -- [1]
 		}, -- [3]
-		["teamName"] = "Snail Fight!",
-		["notes"] = "Strategy added by nogulpfrog\nAverage time ：57S\n\nTurn 1: Great Sting\nTurn 2: Swap to your Kunchong Hatchling\nTurn 3: Pheromones\nTurn 4: Swap to your Level Pet\nTurn 5: Swap to your Gorm Harrier\nTurn 6: Great Sting\nTurn 7: Enrage\nTurn 8: Impale, finish.\n",
+		["tab"] = 3,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/18685\n\nStrategy added by ImpossiblGrl#1136\nTurn 1: Curse of Doom\nTurn 2: Shadow Shock Till Nairn dies (4-5 casts) Stormoen enters\nTurn 3: Lovestruck \nTurn 4: Curse of Doom Stormoen swaps, and the CoD hits Summer\nTurn 5: Swap to Level Pet\nTurn 6: Swap to Ashstone Core\nTurn 7: Crystal Prison\nTurn 8: Stoneskin Summer swaps and Stormoen is back\nTurn 9:  Burn till Stormoen dies (around 5 casts). Summer returns\nTurn 10: Stoneskin\nTurn 11: Pass\nTurn 12: Crystal Prison\nTurn 13: Burn\nTurn 14: Burn\nTurn 15: Swap to your Sister of Temptation\nTurn 16: Pass\nTurn 17: Shadow Shock\nTurn 18: Lovestruck\nTurn 19: Shadow Shock\n",
+		["teamName"] = "Shademaster Kiryn",
+		["minXP"] = 2,
 	},
-	["To a Land Down Under (Beast)"] = {
+	["Catch team"] = {
 		{
-			"BattlePet-0-000012B528FE", -- [1]
-			974, -- [2]
-			595, -- [3]
-			536, -- [4]
-			1266, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-00000D450504", -- [1]
-			930, -- [2]
-			1080, -- [3]
-			586, -- [4]
-			2622, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-00001234372A", -- [1]
-			2430, -- [2]
-			536, -- [3]
-			1536, -- [4]
-			3110, -- [5]
-		}, -- [3]
-		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).\n\n-------: XU-FU, CUB OF XUEN priorities: -------\nPrio 1:: In Round 5 swap to your Jingles (or earlier when your pet dies)\nPrio 2:: Enemy pet is not Clawz -> Prowl\nPrio 3:: Moonfire\nPrio 4:: Spirit Claws\n\n-------: JINGLES priorities: -------\nPrio 1:: Enemy is Clawz -> Booby-Trapped Presents\nPrio 2:: Huge Fang\nPrio 3:: Gift of Winter's Veil\nPrio 4:: Pass\nPrio 5:: When Jingles didn't kill Clawz, bring back your Xu-Fu, Cub of Xuen\n\n-------: GIZMO priorities: -------\nPrio 1:: When you're sure it will kill Murrey -> Arcane Dash\n(check Murrey's 50% damage reduce, Moonlight bonus damage, Beast Passive, etc.)\nPrio 2:: Prowl\nPrio 3:: Scrabble\n",
-	},
-	[146001] = {
-		{
-			"BattlePet-0-000012B118E8", -- [1]
-			413, -- [2]
-			624, -- [3]
-			206, -- [4]
-			1349, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000006E4C775", -- [1]
-			413, -- [2]
-			206, -- [3]
-			624, -- [4]
-			119, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B99B2C", -- [1]
-			377, -- [2]
-			165, -- [3]
-			348, -- [4]
-			2459, -- [5]
-		}, -- [3]
-		["tab"] = 7,
-		["notes"] = "Strategy added by DragonsAfterDark\nWhatever pet you have in the third slot should only need to be there to soak backline damage, so make sure it's one you won't be using later on. \n\nTurn 1: Ice Tomb\nTurn 2: Pass\nTurn 3: Call Blizzard\nTurn 4: Ice Lance\nTurn 5: Ice Lance\nTurn 6: Pass\nTurn 7: Ice Tomb\nTurn 8: Pass – your Rotten Little Helper dies\nBring in your Father Winter's Helper\nTurn 1: Call Blizzard\nTurn 2: Ice Lance\nTurn 3: Ice Tomb\nTurn 4: Pass\nTurn 5: Call Blizzard\nTurn 6+: Ice Lance until Annoy-O-Tron dies\n",
-		["teamName"] = "Prototype Annoy-O-Tron",
-		["minXP"] = 25,
-	},
-	[201004] = {
-		{
-			"BattlePet-0-000012B607A8", -- [1]
+			"BattlePet-0-000012B17368", -- [1]
 			447, -- [2]
-			0, -- [3]
+			2356, -- [3]
 			1954, -- [4]
 			2842, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B15603", -- [1]
-			501, -- [2]
-			602, -- [3]
-			1025, -- [4]
-			3100, -- [5]
+			"BattlePet-0-000012C2D394", -- [1]
+			111, -- [2]
+			307, -- [3]
+			826, -- [4]
+			1953, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B866BC", -- [1]
-			186, -- [2]
-			308, -- [3]
-			204, -- [4]
-			1588, -- [5]
+			"BattlePet-0-000012B146CB", -- [1]
+			184, -- [2]
+			919, -- [3]
+			581, -- [4]
+			1532, -- [5]
 		}, -- [3]
-		["teamName"] = "To a Land Down Under",
-		["notes"] = "Strategy added by WhyDaRumGone\nHigher powered Moths are preferred\n\nTurn 1: Poison Protocol\nTurn 2: Corrosion\nTurn 3: Pass. Note: If Anomalus died round 2 before getting off Corrosion; use Flame Breath\nBring in your Timeless Mechanical Dragonling\nTurn 4: Time Bomb\nTurn 5: Armageddon\nBring in your Moth\nTurn 6: Reckless Strike. Note: Skip this step if Bassalt is already dead\nClawz comes in\nTurn 7: Counterspell\nNote:: If Murrey is still in; pass until Time Bomb hits\nMurrey comes in\nTurn 8: Call Lightning\n",
+		["tab"] = 10,
+		["favorite"] = true,
 	},
-	[66741] = {
+	[161657] = {
 		{
 			"BattlePet-0-000008968258", -- [1]
 			406, -- [2]
@@ -16595,17 +16385,44 @@ Rematch4Saved = {
 			1155, -- [5]
 		}, -- [1]
 		{
-			0, -- [1]
+			"BattlePet-0-000012B4AB86", -- [1]
+			110, -- [2]
+			362, -- [3]
+			366, -- [4]
+			724, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B4838C", -- [1]
-			525, -- [2]
-			611, -- [3]
-			612, -- [4]
-			1167, -- [5]
+			"BattlePet-0-000008A86E91", -- [1]
+			535, -- [2]
+			357, -- [3]
+			595, -- [4]
+			1927, -- [5]
 		}, -- [3]
-		["teamName"] = "Aki the Chosen",
-		["notes"] = "Strategy added by unknown\nGood strategy but has some variations in it. If you don't use addons for pet battles or keep a close eye on the fight progress, I recommend not using this one.\n\nTurn 1: Sandstorm\nTurn 2: Swap to Level Pet\nTurn 3: Swap back to Anubisath Idol\nTurns 4+: Crush until Chirrup is dead - do not re-apply Sandstorm!\nStormlash comes in\nTurn 1: Deflection\nTurns 2+: Crush until Stormlash is dead as well\nSometimes your Idol will die before that. You can still finish the fight with the Emerald Proto-Whelp, just use Proto-Strike first thing when Whiskers comes in.\nWhiskers comes in\nTurn 1: Pass\nTurn 2: Deflection\nTurns 3+: Crush until your Idol dies.\nBring in your Emerald Proto-Whelp\nUse Emerald Bite whenever you can and if you have an addon showing you the enemies spells, use Proto-Strike as soon as Whiskers Dive comes off cooldown.\n",
+		["tab"] = 6,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/8239\n\nStrategy added by Silverleaf#1446\nPriority 1: Deflection when Whirlpool is at 1\nPriority 2: Sandstorm\nPriority 3: Crush\n",
+		["teamName"] = "Ninn Jah",
+		["minXP"] = 25,
+	},
+	[104970] = {
+		{
+			"BattlePet-0-000012B0D34C", -- [1]
+			501, -- [2]
+			602, -- [3]
+			1025, -- [4]
+			3100, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012C82AA8", -- [1]
+			178, -- [2]
+			0, -- [3]
+			606, -- [4]
+			2756, -- [5]
+		}, -- [2]
+		{
+			0, -- [1]
+		}, -- [3]
+		["teamName"] = "Dealing with Satyrs",
+		["notes"] = "Strategy added by Mutanis\nTurn 1: Time Bomb\nTurn 2: Pass (Irradiated Elementaling comes in)\nTurn 3: Elementium Bolt\nTurn 4: Immolate\nGlobs comes in\nTurn 5: Immolate\nNightmare Sprout comes in\nTurns 6+: Immolate until Irradiated Elementaling dies (1-2x)\nBring in your Timeless Mechanical Dragonling\nQestion: Trixy is dead? -->YES go to Step B\nNo --> Priolist\nPrio 1: Flame Breath until Nightmare Sprout health < 397 (1-2x)\nPrio 2: Armageddon\n\nStep B (only if  Trixy is dead)\nTurn 1: Time Bomb\nTurn 2: Flame Breath\nTurn 3: Flame Breath\nTurn 4: Armageddon\n",
 	},
 	["Are They Not Beautiful? (Elemental)"] = {
 		{
@@ -16631,48 +16448,56 @@ Rematch4Saved = {
 		}, -- [3]
 		["notes"] = "Strategy added by Cacobeitor\nTurn 1: Dark Bolt + Weakness until your pet dies\nTurn 2: Arcane Storm + Wild Winds until your pet dies\nTurns 3-5: Surge of Power it has to be one shot ability, if enemy HP are higher than the damage of your ability, do a random attack before to lower enemy HP more and then use the strong abliity to finish\nTurn 4: \nTurn 5: \nTurn 6: \nTurn 7: \nTurn 8: \n",
 	},
-	["Xu-Fu, Cub of Xuen"] = {
+	[116792] = {
 		{
-			"BattlePet-0-000012B48958", -- [1]
-			901, -- [2]
-			392, -- [3]
-			204, -- [4]
-			1178, -- [5]
+			"BattlePet-0-000006E4C7A6", -- [1]
+			384, -- [2]
+			278, -- [3]
+			208, -- [4]
+			1233, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B01DC0", -- [1]
-			1002, -- [2]
-			392, -- [3]
-			985, -- [4]
-			1320, -- [5]
+			"BattlePet-0-000012843ED8", -- [1]
+			202, -- [2]
+			524, -- [3]
+			609, -- [4]
+			3323, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000012BAC92C", -- [1]
-			777, -- [2]
-			646, -- [3]
+			"BattlePet-0-000006E4C78A", -- [1]
+			390, -- [2]
+			386, -- [3]
 			209, -- [4]
-			338, -- [5]
+			1961, -- [5]
 		}, -- [3]
-		["tab"] = 2,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/228\n\nTurn 1: Call Lightning\nTurn 2: Swap to your Lil' Bling\nTurn 3: Make it Rain\nTurn 4+5: Inflation until Lil' Bling is dead\nBring in your Darkmoon Tonk\nTurn 1: Shock and Awe\nTurn 2: Ion Cannon\n",
+		["tab"] = 8,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/6776\n\nStrategy added by Iggzy#2288\nScript thanks to Nikyou\n\nTurn 1: Supercharge\nTurn 2: Metal Fist\nTurns 3-5: Repair\nTurn 6: Metal Fist\nTurn 7: Supercharge\nTurn 8: Metal Fist\nTurn 9+: Metal Fist until dead\nBring in your other pets\nTurn 1+: Any standard attack will finish the fights\n",
+		["teamName"] = "Phyxia",
+		["minXP"] = 1,
 	},
-	[140315] = {
+	["To a Land Down Under (Dragon)"] = {
 		{
-			"BattlePet-0-000006E4C77C", -- [1]
-			477, -- [2]
-			206, -- [3]
-			481, -- [4]
-			117, -- [5]
+			"BattlePet-0-000012B4861E", -- [1]
+			421, -- [2]
+			277, -- [3]
+			595, -- [4]
+			557, -- [5]
 		}, -- [1]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B146CC", -- [1]
+			110, -- [2]
+			362, -- [3]
+			593, -- [4]
+			1152, -- [5]
 		}, -- [2]
 		{
-			"random:0", -- [1]
+			"BattlePet-0-000012B4838C", -- [1]
+			525, -- [2]
+			597, -- [3]
+			598, -- [4]
+			1167, -- [5]
 		}, -- [3]
-		["notes"] = "Strategy added by DragonsAfterDark\nPriority 1: Call Blizzard on CD\nPriority 2: Deep Freeze on CD\nPriority 3: Snowball all else\nPriority 4: Standby when the 'Fixed' Remote Control Rocket Chicken comes in\nIf needed, bring in next pet to finish the fight. \n",
-		["teamName"] = "Automated Chaos",
-		["minXP"] = 25,
+		["notes"] = "Strategy added by Oakwarden\nNot my strat. Full credit goes to RezokDDW#1749wrote on 5/3/2023Nether Faerie Dragon 2,2,1Chrominius 1,1,2Emerald Proto-WhelpUsed these three, and almost solo'd with the Faerie dragonStarted with putting the moonlight up with the faerie dragon then just used Arcane Blast until the first pet died.Then once the 2nd came out I used moonlight again, then Life Exchange, then Arcane Blast killed it.Arcane blast until the Faerie dragon died, swap in Chrominius to Howl and then Surge of Power to kill Murrey. \n\nTurn 1: Moonfire\nTurn 2: Arcane Blast until Bassalt dies.\nTurn 3: Life Exchange\nTurn 4: Moonfire\nTurn 5: Arcane Blast until Clawz dies or your Nether Faerie Dragon dies.\nBring in your Chrominius\nTurn 1: Howl\nTurns 2-4: Surge of Power\n",
 	},
 	["healfuck"] = {
 		{
@@ -16722,55 +16547,49 @@ Rematch4Saved = {
 		["teamName"] = "A New Vocation",
 		["notes"] = "Strategy added by DragonsAfterDark\nThe enemies don't use their abilities in a particular order, hence the priority system.[url=https://youtu.be/qGCV-Bk7bLg]Video for Fight[/url]\n\n~: Priorities for pets 1 & 2\nPriority 1: Arcane Storm on CD\nPriority 2: Mana Surge on CD\nPriority 3: Tail Sweep\nBring in your Hermit Crab\nPriority 1: Bubble or Dive when Kazzquack is Lifted-Off\nPriority 2: Fish Slap\n",
 	},
-	["Are They Not Beautiful? (Beast)"] = {
+	[142054] = {
 		{
-			"BattlePet-0-00000D450504", -- [1]
-			535, -- [2]
-			1398, -- [3]
-			586, -- [4]
-			2622, -- [5]
+			"BattlePet-0-000012B6763C", -- [1]
+			355, -- [2]
+			490, -- [3]
+			124, -- [4]
+			514, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-00001234372A", -- [1]
-			2430, -- [2]
-			536, -- [3]
-			1536, -- [4]
-			3110, -- [5]
+			"random:8", -- [1]
 		}, -- [2]
 		{
-			"BattlePet-0-000012B528FE", -- [1]
-			974, -- [2]
-			595, -- [3]
-			536, -- [4]
-			1266, -- [5]
+			"random:0", -- [1]
 		}, -- [3]
-		["notes"] = "Strategy added by Lazey\nThis is based on the original 10.1 PTR tamer pets' stats/quality/etc. It might need adjustments on last-minute changes (potential nerfs).In all my testing I've only seen Fethres using Feign Death once, so please excuse me for completely ignoring the RNG that would add to the fights.\n\nTurn 1: Feathered Frenzy\nTurn 2: Gift of Winter's Veil\nTurns 3+: Pounce (until dead, meanwhile Fethres dies and Beeks comes in)\nBring in your Gizmo\nTurn 1: Prowl\nTurn 2: Arcane Dash (Beeks dies, Talons comes in)\nSwap to your Xu-Fu, Cub of Xuen\nTurn 1: Prowl\nTurn 2: Moonfire\n",
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/2048\n\nStrategy added by DragonsAfterDark\nScript thanks to Prudentius\n\nTurn 1: Deflection\nTurn 2-4: Rampage\nTurn 5+: Triple Snap until Beets dies\nRawly comes in\nTurn 1: Pass if you're slower than Rawly, Triple Snap if you're faster\nTurn 2: Deflection\nTurn 3: Triple Snap\nTurn 4+5: Rampage\nStinger comes in\nTurn 1: Rampage continues\nTurn 2+: Triple Snap until dead\nBring in your Beast pet\nAny standard Beast attack will finish the fight\n",
+		["teamName"] = "Desert Survivors",
+		["minXP"] = 25,
 	},
-	[161658] = {
+	["Growing Ectoplasm 1"] = {
 		{
-			"BattlePet-0-000012B5CC26", -- [1]
-			503, -- [2]
-			1754, -- [3]
-			179, -- [4]
-			3289, -- [5]
+			"BattlePet-0-000012B67566", -- [1]
+			163, -- [2]
+			743, -- [3]
+			663, -- [4]
+			627, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B5CE9F", -- [1]
-			113, -- [2]
-			178, -- [3]
-			179, -- [4]
-			175, -- [5]
+			"BattlePet-0-000012B6764A", -- [1]
+			112, -- [2]
+			916, -- [3]
+			170, -- [4]
+			1403, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-000006E4C75E", -- [1]
-			113, -- [2]
-			178, -- [3]
-			179, -- [4]
-			270, -- [5]
+			"BattlePet-0-000012B4C5B0", -- [1]
+			360, -- [2]
+			165, -- [3]
+			163, -- [4]
+			1427, -- [5]
 		}, -- [3]
-		["tab"] = 6,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/8940\n\nStrategy added by Pankracy#2378\n11 rounds fast, using relatively easy to get pets. Enjoy ;)\n\nTD Script provided by Shadowball (https://www.wow-petguide.com/User/13817/Shadowball), Thank you!!!\n\nTurn 1: Flamethrower\nTurn 2: Conflagrate\nTurn 3: Flamethrower\nTurn 4: swap to Phoenix Hatchling\nTurn 5: Conflagrate\nTurn 6: Immolate\nTurn 7: Burn\nTurn 8: Burn, Phoenix Hatchling dies, bring Dark Phoenix Hatchling\nTurn 9: Conflagrate, Shred enters Failsafe mode\nTurn 10: Burn\nTurn 11: Burn\n",
-		["teamName"] = "Shred",
+		["tab"] = 8,
+		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Creeping Fungus\nTurn 2-4: Stampede\nTurn 5: Corpse Explosion\n\nBring in your Mechanical Axebeak\nTurn 1: Peck\nRandom Enemy Pet comes in\n\nDeviate Flapper:\nPeck > Lift-Off > Haywire\n\nDeviate Smallclaw:\nHaywire > Peck+\n\nDeviate Chomper:\nLift-Off > Peck+\n",
+		["minXP"] = 25,
 	},
 	["Do You Even Train? (Beast)"] = {
 		{
@@ -16790,16 +16609,16 @@ Rematch4Saved = {
 		{
 			"random:8", -- [1]
 		}, -- [3]
-		["notes"] = "Strategy added by glowcloud\nEven with the worst luck possible, your third pet should only need to get in a hit or two, so preferably the first slot ability is a Beast ability (I use Dodger because I don't get to use them enough).With good luck, Gizmo almost solos the fight. It's just the classic \"hurt all three enemies at once with one pet\" strat.\n\nTurn 1: Mangle\nAfter this the fight becomes more variable\nPriority 1:: Ethereal when Lifft is Underwater\nPriority 2:: Refresh Mangle on enemy pet if it falls off\nPriority 3:: Swipe\nGizmo dies\nBring in your Infernal Pyreclaw\nTurn 1: Great Sting (if more than one enemy pet is alive)\nTurn 2: Scorched Earth\nTurn 3: Flame Breath\nUse Scorched Earth on CD and Flame Breath as filler\n\nIf Infernal Pyreclaw dies and one or two enemies are still alive, bring in 3rd pet and just hit them once or twice\n",
 		["minXP"] = 25,
+		["notes"] = "Strategy added by glowcloud\nEven with the worst luck possible, your third pet should only need to get in a hit or two, so preferably the first slot ability is a Beast ability (I use Dodger because I don't get to use them enough).With good luck, Gizmo almost solos the fight. It's just the classic \"hurt all three enemies at once with one pet\" strat.\n\nTurn 1: Mangle\nAfter this the fight becomes more variable\nPriority 1:: Ethereal when Lifft is Underwater\nPriority 2:: Refresh Mangle on enemy pet if it falls off\nPriority 3:: Swipe\nGizmo dies\nBring in your Infernal Pyreclaw\nTurn 1: Great Sting (if more than one enemy pet is alive)\nTurn 2: Scorched Earth\nTurn 3: Flame Breath\nUse Scorched Earth on CD and Flame Breath as filler\n\nIf Infernal Pyreclaw dies and one or two enemies are still alive, bring in 3rd pet and just hit them once or twice\n",
 	},
-	[116791] = {
+	[119346] = {
 		{
-			"BattlePet-0-000012B01DC0", -- [1]
-			1002, -- [2]
-			392, -- [3]
-			985, -- [4]
-			1320, -- [5]
+			"BattlePet-0-000012B2E223", -- [1]
+			228, -- [2]
+			232, -- [3]
+			934, -- [4]
+			1934, -- [5]
 		}, -- [1]
 		{
 			"BattlePet-0-000012B66DA8", -- [1]
@@ -16809,89 +16628,34 @@ Rematch4Saved = {
 			1416, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-00000D70BC6D", -- [1]
-			499, -- [2]
-			657, -- [3]
-			1043, -- [4]
-			1964, -- [5]
-		}, -- [3]
-		["tab"] = 8,
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/1827\n\nStrategy added by NostrA#2338\nprops to Aranesh for his/her strategy, i just changed the TD Script and Strategy to make Teroclaw viable again\n\nTurn 1: use Extra Plating\nTurn 2: use Make it Rain\nTurn 3+: use Inflation until Dreadcoil is dead\nan enemy comes in\nTurn 1+: use Inflation until Lil' Bling dies\nBring in your Teroclaw Hatchling\nenemy HP < 618: use Ravage\nif the target enemy is a Flying enemy, you want to use Ravage when the enemy HP is under 406\nwhen not active: use Nature's Ward\nelse: use Alpha Strike\n",
-		["teamName"] = "Dreadcoil",
-		["minXP"] = 25,
-	},
-	["To a Land Down Under (Elemental)"] = {
-		{
-			"BattlePet-0-000012B67B94", -- [1]
-			472, -- [2]
-			1055, -- [3]
-			593, -- [4]
-			2590, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B5CDBD", -- [1]
-			118, -- [2]
-			1955, -- [3]
-			418, -- [4]
-			2465, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B67EA7", -- [1]
-			514, -- [2]
-			515, -- [3]
-			204, -- [4]
-			445, -- [5]
-		}, -- [3]
-		["notes"] = "Strategy added by Kalixa\nThis fight is tough with elementals, due to the nature of the opponent's abilities. Bassalt, Clawz, and Murrey do NOT follow a set move pattern, its randomized for every encounter. There are roughly 3-4 different ways this can play out (at least from what I've seen in my testing). If there is a crit or something cast by the opponent's out of order, you're better off reseting the battle.If you have any suggestions, or found a tweak to this strat that works better, let me know! There are probably other combinations - feel free to add them in the comments, and I'll adjust the strat :)\n\nTurn 1: Blast of Hatred\nTurns 2-4: Surge of Power\nClawz comes in\nTurn 1: Breath of Sorrow (If possible - your Ravenous Prideling is gonna die or be dead by this point)\nBring in your Playful Frostkin If Clawz casts Whirlpool before your Frostkin enters, reset - Frostkin will die in 2 turns if you don't.\nTurn 1: Flash Freeze\nTurn 3: Water Jet\nTurn 4: Water Jet (Frostkin either dies here, or on the next round)\nTurn 5: Geyser (If Frostkin is still alive)\nMurrey comes in ; Bring in Tiny Twister\nTurn 1: Flyby\nTurn 2: Call Lightning (If Murrey casts Tough 'N' Cuddly, reset the fight)\n",
-	},
-	[173267] = {
-		{
-			"BattlePet-0-000006E4C76E", -- [1]
-			0, -- [2]
-			208, -- [3]
-			204, -- [4]
-			1957, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B17368", -- [1]
-			447, -- [2]
-			2356, -- [3]
-			1954, -- [4]
-			2842, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B118ED", -- [1]
-			0, -- [2]
-			0, -- [3]
-			209, -- [4]
-			1450, -- [5]
-		}, -- [3]
-		["teamName"] = "Uncomfortably Undercover",
-		["notes"] = "Strategy added by 하늘용#3273\n8\n\nTurn 1: Supercharge\nTurn 2: Call Lightning\nTurn 3: Swap to your Anomalus\nTurn 4: Corrosion\nTurn 5: Poison Protocol\nTurn 6: Void Nova\nBring in your Draenei Micro Defender\nTurn 7: Ion Cannon\n",
-	},
-	[175785] = {
-		{
-			"BattlePet-0-000012B146C7", -- [1]
-			943, -- [2]
-			786, -- [3]
-			1762, -- [4]
-			1963, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000012B146CB", -- [1]
-			184, -- [2]
-			919, -- [3]
-			581, -- [4]
-			1532, -- [5]
-		}, -- [2]
-		{
 			"random:0", -- [1]
 		}, -- [3]
-		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/10148\n\nStrategy added by Lazey\n*** Created on Beta, so maybe not final ***\n\nTurn 1: Blistering Cold\nTurn 2: BONESTORM\nTurn 3: Chop (Boneshard dies)\nBring in your Ikky\nTurn 4: Black Claw\nTurns 5-7: Flock\n",
-		["teamName"] = "Kostos",
-		["minXP"] = 1,
+		["tab"] = 5,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/14532\n\nStrategy added by Grevenilvec\nPrio 1: Bubble on CD\nPrio 2: Swarm of Flies if enemy doesn't have Swarm of Flies debuff\nPrio 3: Tongue Lash as filler\nBenax should kill Unfortunate Defias and Deadmines Parrot\nSwap to your Teroclaw Hatchling\nPrio 1: Nature's Ward if buff is not active\nPrio 2: Alpha Strike if enemy's health is above 309\nPrio 3: Ravage",
+		["teamName"] = "Unfortunate Defias",
 	},
-	["nega"] = {
+	[154926] = {
+		{
+			"BattlePet-0-000012BC0A5A", -- [1]
+			515, -- [2]
+			779, -- [3]
+			282, -- [4]
+			844, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B58B24", -- [1]
+			0, -- [2]
+			282, -- [3]
+			779, -- [4]
+			339, -- [5]
+		}, -- [2]
+		{
+			0, -- [1]
+		}, -- [3]
+		["teamName"] = "CK-9 Micro-Oppression Unit",
+		["notes"] = "Strategy added by WhyDaRumGone\nTurn 1: Flyby\nTurn 2: Thunderbolt\nOptional:: If CK-9 is below 1154HP due to a crit last round and you're not stunned; use Explode now (turn 3) with Mechanical Pandaren Dragonling instead of turn 6 to save a turn.\nTurn 3: Swap/Bring in your Darkmoon Zeppelin\nTurn 4: Thunderbolt\nTurn 5: Explode\nBring in your Mechanical Pandaren Dragonling\nTurn 6: Explode\n",
+	},
+	[154927] = {
 		{
 			"BattlePet-0-000012B99CF2", -- [1]
 			503, -- [2]
@@ -16900,57 +16664,34 @@ Rematch4Saved = {
 			2078, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B589F6", -- [1]
-			1958, -- [2]
-			2352, -- [3]
-			780, -- [4]
-			3119, -- [5]
+			"BattlePet-0-000012B99C8C", -- [1]
+			178, -- [2]
+			1041, -- [3]
+			1754, -- [4]
+			2466, -- [5]
 		}, -- [2]
 		{
-			"BattlePet-0-00001293FB22", -- [1]
-			916, -- [2]
-			1024, -- [3]
-			459, -- [4]
-			3243, -- [5]
+			"BattlePet-0-000012B5CC26", -- [1]
+			503, -- [2]
+			1754, -- [3]
+			179, -- [4]
+			3289, -- [5]
 		}, -- [3]
-		["tab"] = 11,
+		["notes"] = "Strategy added by DragonsAfterDark\nTurn 1: Rabid Strike\nTurn 2: Corpse Explosion\nBring in your Magma Rageling\nTurn 1: Fire Shield\n",
+		["teamName"] = "Unit 35",
+		["minXP"] = 25,
 	},
-	[66824] = {
+	[154928] = {
 		{
-			"BattlePet-0-000012B118ED", -- [1]
-			384, -- [2]
-			1105, -- [3]
-			209, -- [4]
-			1450, -- [5]
-		}, -- [1]
-		{
-			"BattlePet-0-000011D76CB1", -- [1]
-			838, -- [2]
-			800, -- [3]
-			1559, -- [4]
-			3117, -- [5]
-		}, -- [2]
-		{
-			"BattlePet-0-000012B482D1", -- [1]
-			921, -- [2]
-			919, -- [3]
-			364, -- [4]
-			1180, -- [5]
-		}, -- [3]
-		["teamName"] = "Obalis",
-		["notes"] = "Strategy added by LogicPoodle#1550\nTurn 1: Wind-Up\nTurn 2: Supercharge\nTurn 3: Wind-Up, Pyth dies.\nSpring comes in\nTurn 1+: Powerball until Iron Starlette dies, Pass if you get slept\nBring in your Ikky \nTurn 1: Black Claw\nTurn 2+: Flock, Spring dies. If  Ikky dies partway through, clean up with MPD.\nClatter comes in\nTurns 1+: Once Flock finishes, Black Claw then Flock until dead\nTurn 7: Decoy\nTurn 8: Breath until Clatter dies. Easy peasy.\n",
-	},
-	[173331] = {
-		{
-			"BattlePet-0-000012B146C7", -- [1]
-			943, -- [2]
-			786, -- [3]
-			1762, -- [4]
-			1963, -- [5]
+			"BattlePet-0-000012B521D4", -- [1]
+			210, -- [2]
+			218, -- [3]
+			652, -- [4]
+			1238, -- [5]
 		}, -- [1]
 		{
 			"BattlePet-0-000012B146CB", -- [1]
-			184, -- [2]
+			1370, -- [2]
 			919, -- [3]
 			581, -- [4]
 			1532, -- [5]
@@ -16958,29 +16699,101 @@ Rematch4Saved = {
 		{
 			"random:0", -- [1]
 		}, -- [3]
-		["teamName"] = "The Mind Games of Addius",
-		["notes"] = "Strategy added by TrundleButt#2544\nTurn 1: Blistering Cold\nTurn 2: Choose option 1 for Mind games (damage to team)\nTurn 3: Chop\nTurn 4: Blistering Cold\nTurn 5: Chop\nTurn 6: Chop\nTurn 7: Bonestorm should die here, switch to Ikky\nTurn 8: Black Claw\nTurn 9: Flock Until it dies\n",
+		["teamName"] = "Unit 6",
+		["notes"] = "Strategy added by Plougz#2307\nTurn 1: Curse of Doom\nTurn 2: Haunt\nBring in your Ikky\nTurn 1: Black Claw\nTurn 2: Flock\n",
 	},
-	[99077] = {
+	[202458] = {
 		{
-			"BattlePet-0-000012C47B1C", -- [1]
-			0, -- [2]
-			256, -- [3]
-			536, -- [4]
-			1521, -- [5]
+			"BattlePet-0-000012B521D4", -- [1]
+			210, -- [2]
+			218, -- [3]
+			321, -- [4]
+			1238, -- [5]
 		}, -- [1]
 		{
-			"BattlePet-0-000012B5CB5D", -- [1]
+			"BattlePet-0-000012B15603", -- [1]
 			501, -- [2]
-			172, -- [3]
-			1380, -- [4]
-			2089, -- [5]
+			602, -- [3]
+			1025, -- [4]
+			3100, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000006E4C782", -- [1]
+			110, -- [2]
+			0, -- [3]
+			593, -- [4]
+			1152, -- [5]
+		}, -- [3]
+		["teamName"] = "They're Full of Stars!",
+		["notes"] = "Strategy added by Mutanis\nTurn 1: Shadow Slash\nTurn 2: Curse of Doom\nTurn 3: Unholy Ascension\nBring in your Timeless Mechanical Dragonling\nTurn 4: Time Bomb\nTurn 5: Flame Breath\nTurn 6: Armageddon\n(Chrominius comes in)\nTurn 7: Bite\nTurn 8: Surge of Power\n",
+	},
+	[71924] = {
+		{
+			"BattlePet-0-000011F7F5D4", -- [1]
+			119, -- [2]
+			312, -- [3]
+			163, -- [4]
+			378, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000008968258", -- [1]
+			406, -- [2]
+			436, -- [3]
+			490, -- [4]
+			1155, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012C22319", -- [1]
+			1094, -- [2]
+			212, -- [3]
+			1093, -- [4]
+			1351, -- [5]
+		}, -- [3]
+		["tab"] = 2,
+		["notes"] = "Xu-Fu's Pet Guides =^_^=\nhttps://www.wow-petguide.com/Strategy/204\n\nScript by DaR#1285\n\nTurn 1: Scratch\nTurn 2: Scratch\nTurn 3: Dodge\nTurns 4-6: Stampede\nTurns 7+: Scratch until Cindy is dead\nAlex comes in\nCheck the Ice Tomb debuff\nEither:: 2 Turns left: Scratch, Dodge\nOr:: 1 Turn left => Dodge\nThen:: Stampede until your Rabbit is dead\nBring in your Anubisath Idol\nTurn 1: Crush\nTurn 2: Crush\nIs Alex dead?\nYes:: Skip down to Dah'da\nNo:: Use Stoneskin and then Crush until Alex is dead\n\nDah'da comes in\nTurn 1: Crush\nTurn 2: Crush\nTurn 3: Deflection\nTurns 4+: Continue to use Crush until either Dah'da or Anubisath Idol is dead\n\nIf Anubisath Idol has died, bring in your Macabre Marionette\nTurns 1-3: Dead Man's Party\nTurns 2+: Macabre Maraca until Dah'da is dead\n",
+		["teamName"] = "Wrathion",
+	},
+	[87124] = {
+		{
+			"BattlePet-0-000012B15603", -- [1]
+			501, -- [2]
+			2237, -- [3]
+			1025, -- [4]
+			3100, -- [5]
+		}, -- [1]
+		{
+			0, -- [1]
 		}, -- [2]
 		{
 			0, -- [1]
 		}, -- [3]
-		["teamName"] = "Training with Bredda",
-		["notes"] = "Strategy added by Rosqo\n~11 rounds (1:31mins)Follow the steps around when to use Call Darkness carefully as for the levelling pet to get XP this must be on the Cursed Birmans Immortal round.Your Pyreclaw can sometimes crit/get missed so you may need to pass to ensure that it doesn't mess up the end of the fight.Only the P/B breed will consistently winAt the end of the fight Scorched Earth ticks can crit twice and cause the last pet to heal which is super unlucky.\n\nTurn 1: Prowl\nTurn 2: Call Darkness\nSwap to Infernal Pyreclaw\nTurn 1: Shell Armor\nTurn 2: Scorched Earth\nTurn 3+: Flame Breath (If the Pyreclaw has above 500HP when Quillino 460 or less HP pass)\nQuillino dies, Fethyr comes in\nPrio: Pass until Infernal Pyreclaw dies when Fethry is active\nBring in Cursed Birman\nTurn 1: Prowl\nCheck: If Undead racial not active at the start of the turn Pass\nCheck: Call Darkness if Undead racial active (you need to be on the immortal round at the start of the turn you attack for levelling pet to get all XP)\n\n",
+		["teamName"] = "Ashlei",
+		["notes"] = "Strategy added by Remte\nSomeone had to do it :P\n\nTurn 1: Flame Breath\nTurn 2: Razor Talons\nTurn 3: Flame Breath – enemy Pixiebell dies\nDoodle comes in\nTurn 4: Flame Breath\nTurn 5: Razor Talons – enemy Doodle falls asleep\nTally comes in\nTurn 6: Flame Breath\nTurn 7: Razor Talons\nTurn 8: Armageddon – everything but your level pets is roasted\n",
+	},
+	[73626] = {
+		{
+			"BattlePet-0-000012B484E9", -- [1]
+			422, -- [2]
+			218, -- [3]
+			321, -- [4]
+			1238, -- [5]
+		}, -- [1]
+		{
+			"BattlePet-0-000012B146CB", -- [1]
+			1370, -- [2]
+			919, -- [3]
+			581, -- [4]
+			1532, -- [5]
+		}, -- [2]
+		{
+			"BattlePet-0-000012B146CA", -- [1]
+			1002, -- [2]
+			989, -- [3]
+			985, -- [4]
+			1320, -- [5]
+		}, -- [3]
+		["teamName"] = "Little Tommy Newcomer",
+		["notes"] = "Strategy added by JoCo#2522\nTurn 1: Curse of Doom\nTurn 2: Replacement for a pet with maximum health. Change back to Unborn Val'kyr\nTurn 3: Unholy Ascension\nTurn 4: Choose Ikky and use Black Claw – it will die\nYour Lil' Bling remains on the battlefield\nTurn 5: Inflation to death the enemy\n",
 	},
 }
 Rematch4Settings = {
@@ -17002,12 +16815,12 @@ Rematch4Settings = {
 		["BattlePet-0-000012C8BB03"] = "QQQ7E0",
 		["BattlePet-0-000012C8A816"] = "QQQ3D2",
 		["BattlePet-0-000012CA163D"] = "QQQC34C",
-		["BattlePet-0-000012CA14BF"] = "QQQ3348",
+		["BattlePet-0-000012CA1520"] = "QQQ933N",
 		["BattlePet-0-000012CA855A"] = "QQQ72JA",
 		["BattlePet-0-000012CA870E"] = "QQQ32JC",
 		["BattlePet-0-000012CA14FE"] = "QQQ3342",
 		["BattlePet-0-000012CA159C"] = "QQQB34D",
-		["BattlePet-0-000012CA1520"] = "QQQ933N",
+		["BattlePet-0-000012CA14BF"] = "QQQ3348",
 	},
 	["Sort"] = {
 		["Order"] = 50,
@@ -18617,14 +18430,14 @@ Rematch4Settings = {
 			305, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012C1A7C1"] = {
+		["BattlePet-0-000012CA865F"] = {
 			1, -- [1]
 			true, -- [2]
-			2865, -- [3]
-			25, -- [4]
-			1197, -- [5]
-			345, -- [6]
-			280, -- [7]
+			2675, -- [3]
+			23, -- [4]
+			1404, -- [5]
+			245, -- [6]
+			256, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000006E4C788"] = {
@@ -18637,14 +18450,14 @@ Rematch4Settings = {
 			305, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012C4A5C4"] = {
+		["BattlePet-0-000012B607A5"] = {
 			1, -- [1]
 			true, -- [2]
-			2380, -- [3]
+			2794, -- [3]
 			25, -- [4]
-			1546, -- [5]
-			273, -- [6]
-			276, -- [7]
+			1278, -- [5]
+			292, -- [6]
+			317, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012CA82BB"] = {
@@ -18677,14 +18490,14 @@ Rematch4Settings = {
 			260, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B96D57"] = {
-			1, -- [1]
+		["BattlePet-0-000012B99B2C"] = {
+			2, -- [1]
 			true, -- [2]
-			2667, -- [3]
+			2459, -- [3]
 			25, -- [4]
-			1530, -- [5]
-			291, -- [6]
-			262, -- [7]
+			1786, -- [5]
+			260, -- [6]
+			248, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000006E4C7A1"] = {
@@ -18757,24 +18570,24 @@ Rematch4Settings = {
 			227, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B822C0"] = {
-			2, -- [1]
+		["BattlePet-0-000012B6C313"] = {
+			1, -- [1]
 			true, -- [2]
-			2833, -- [3]
+			3448, -- [3]
 			25, -- [4]
-			1705, -- [5]
-			282, -- [6]
-			242, -- [7]
+			1562, -- [5]
+			276, -- [6]
+			276, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B66D54"] = {
+		["BattlePet-0-0000080DA4CD"] = {
 			2, -- [1]
 			true, -- [2]
-			1976, -- [3]
+			323, -- [3]
 			25, -- [4]
 			1400, -- [5]
-			325, -- [6]
-			260, -- [7]
+			289, -- [6]
+			289, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012B67EA7"] = {
@@ -18817,15 +18630,8 @@ Rematch4Settings = {
 			273, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B485C2"] = {
+		["random:6"] = {
 			3, -- [1]
-			true, -- [2]
-			868, -- [3]
-			25, -- [4]
-			1546, -- [5]
-			260, -- [6]
-			289, -- [7]
-			4, -- [8]
 		},
 		["random:4"] = {
 			3, -- [1]
@@ -18870,14 +18676,14 @@ Rematch4Settings = {
 			305, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B5CB60"] = {
-			1, -- [1]
+		["BattlePet-0-000012B607A8"] = {
+			7, -- [1]
 			true, -- [2]
-			2843, -- [3]
+			2842, -- [3]
 			25, -- [4]
-			1481, -- [5]
-			292, -- [6]
-			260, -- [7]
+			1034, -- [5]
+			362, -- [6]
+			297, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-0000080D00C4"] = {
@@ -18950,8 +18756,15 @@ Rematch4Settings = {
 			333, -- [7]
 			4, -- [8]
 		},
-		["random:10"] = {
-			3, -- [1]
+		["BattlePet-0-000012B11899"] = {
+			1, -- [1]
+			true, -- [2]
+			2954, -- [3]
+			25, -- [4]
+			1485, -- [5]
+			272, -- [6]
+			289, -- [7]
+			4, -- [8]
 		},
 		["BattlePet-0-000012B90271"] = {
 			1, -- [1]
@@ -18963,24 +18776,17 @@ Rematch4Settings = {
 			208, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B11899"] = {
-			1, -- [1]
-			true, -- [2]
-			2954, -- [3]
-			25, -- [4]
-			1485, -- [5]
-			272, -- [6]
-			289, -- [7]
-			4, -- [8]
+		["random:10"] = {
+			3, -- [1]
 		},
-		["BattlePet-0-000006E4C7B4"] = {
+		["BattlePet-0-000012B99CE5"] = {
 			2, -- [1]
 			true, -- [2]
-			1532, -- [3]
+			2567, -- [3]
 			25, -- [4]
-			1319, -- [5]
-			322, -- [6]
-			273, -- [7]
+			1278, -- [5]
+			297, -- [6]
+			305, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012CA15BB"] = {
@@ -18993,24 +18799,24 @@ Rematch4Settings = {
 			254, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012BA955E"] = {
-			1, -- [1]
+		["BattlePet-0-000012B482D2"] = {
+			11, -- [1]
 			true, -- [2]
-			1577, -- [3]
+			1211, -- [3]
 			25, -- [4]
-			1465, -- [5]
-			273, -- [6]
+			1302, -- [5]
+			305, -- [6]
 			289, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000011C9500C"] = {
+		["BattlePet-0-000012B5CB67"] = {
 			1, -- [1]
 			true, -- [2]
-			2898, -- [3]
+			2089, -- [3]
 			25, -- [4]
-			1465, -- [5]
-			300, -- [6]
-			262, -- [7]
+			1546, -- [5]
+			273, -- [6]
+			273, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012B99CF8"] = {
@@ -19033,13 +18839,13 @@ Rematch4Settings = {
 			257, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B482D2"] = {
-			11, -- [1]
+		["BattlePet-0-000012BA955E"] = {
+			1, -- [1]
 			true, -- [2]
-			1211, -- [3]
+			1577, -- [3]
 			25, -- [4]
-			1302, -- [5]
-			305, -- [6]
+			1465, -- [5]
+			273, -- [6]
 			289, -- [7]
 			4, -- [8]
 		},
@@ -19053,24 +18859,24 @@ Rematch4Settings = {
 			265, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B01E16"] = {
-			1, -- [1]
+		["BattlePet-0-000012B146CB"] = {
+			42, -- [1]
 			true, -- [2]
-			1629, -- [3]
+			1532, -- [3]
 			25, -- [4]
-			1465, -- [5]
-			289, -- [6]
+			1319, -- [5]
+			322, -- [6]
 			273, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012BA9563"] = {
+		["BattlePet-0-000012BEEECA"] = {
 			1, -- [1]
 			true, -- [2]
-			2190, -- [3]
+			3099, -- [3]
 			25, -- [4]
-			1400, -- [5]
-			260, -- [6]
-			325, -- [7]
+			1319, -- [5]
+			336, -- [6]
+			266, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012B673F3"] = {
@@ -19083,33 +18889,33 @@ Rematch4Settings = {
 			248, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-00001275D175"] = {
-			1, -- [1]
+		["BattlePet-0-000012B4C1CA"] = {
+			4, -- [1]
 			true, -- [2]
-			3319, -- [3]
+			650, -- [3]
 			25, -- [4]
-			1465, -- [5]
-			293, -- [6]
-			272, -- [7]
-			4, -- [8]
-		},
-		["BattlePet-0-000012B01E92"] = {
-			1, -- [1]
-			true, -- [2]
-			122, -- [3]
-			25, -- [4]
-			1400, -- [5]
-			260, -- [6]
-			325, -- [7]
-			4, -- [8]
-		},
-		["BattlePet-0-000012B5CC18"] = {
-			1, -- [1]
-			true, -- [2]
-			2092, -- [3]
-			25, -- [4]
-			1627, -- [5]
+			1481, -- [5]
 			289, -- [6]
+			273, -- [7]
+			4, -- [8]
+		},
+		["BattlePet-0-000012CA870E"] = {
+			1, -- [1]
+			true, -- [2]
+			2668, -- [3]
+			23, -- [4]
+			1348, -- [5]
+			250, -- [6]
+			263, -- [7]
+			4, -- [8]
+		},
+		["BattlePet-0-000006E4C757"] = {
+			1, -- [1]
+			true, -- [2]
+			1706, -- [3]
+			25, -- [4]
+			1806, -- [5]
+			260, -- [6]
 			244, -- [7]
 			4, -- [8]
 		},
@@ -19123,15 +18929,8 @@ Rematch4Settings = {
 			330, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B4874E"] = {
-			12, -- [1]
-			true, -- [2]
-			1165, -- [3]
-			25, -- [4]
-			1400, -- [5]
-			341, -- [6]
-			244, -- [7]
-			4, -- [8]
+		["random:0"] = {
+			79, -- [1]
 		},
 		["BattlePet-0-000006E4C793"] = {
 			2, -- [1]
@@ -19163,24 +18962,14 @@ Rematch4Settings = {
 			345, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B4C910"] = {
-			2, -- [1]
+		["BattlePet-0-000012B0D34E"] = {
+			1, -- [1]
 			true, -- [2]
-			3217, -- [3]
+			1887, -- [3]
 			25, -- [4]
-			1359, -- [5]
-			341, -- [6]
-			252, -- [7]
-			4, -- [8]
-		},
-		["BattlePet-0-000012B66C49"] = {
-			3, -- [1]
-			true, -- [2]
-			746, -- [3]
-			25, -- [4]
-			1481, -- [5]
-			357, -- [6]
-			211, -- [7]
+			1465, -- [5]
+			289, -- [6]
+			273, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-00001274E208"] = {
@@ -19193,6 +18982,16 @@ Rematch4Settings = {
 			265, -- [7]
 			4, -- [8]
 		},
+		["BattlePet-0-000012B66C49"] = {
+			3, -- [1]
+			true, -- [2]
+			746, -- [3]
+			25, -- [4]
+			1481, -- [5]
+			357, -- [6]
+			211, -- [7]
+			4, -- [8]
+		},
 		["BattlePet-0-000012B2E223"] = {
 			2, -- [1]
 			true, -- [2]
@@ -19203,24 +19002,24 @@ Rematch4Settings = {
 			244, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B67A9B"] = {
+		["BattlePet-0-000012B6047C"] = {
 			1, -- [1]
 			true, -- [2]
-			2692, -- [3]
+			4257, -- [3]
 			25, -- [4]
-			1412, -- [5]
-			271, -- [6]
-			312, -- [7]
+			1441, -- [5]
+			317, -- [6]
+			244, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000006E4C775"] = {
-			3, -- [1]
+		["BattlePet-0-000012B01DBC"] = {
+			1, -- [1]
 			true, -- [2]
-			119, -- [3]
+			1623, -- [3]
 			25, -- [4]
-			1481, -- [5]
-			276, -- [6]
-			276, -- [7]
+			1546, -- [5]
+			289, -- [6]
+			260, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012707902"] = {
@@ -19233,26 +19032,6 @@ Rematch4Settings = {
 			298, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000006E4C770"] = {
-			1, -- [1]
-			true, -- [2]
-			1451, -- [3]
-			25, -- [4]
-			1400, -- [5]
-			260, -- [6]
-			325, -- [7]
-			4, -- [8]
-		},
-		["BattlePet-0-000012B866BC"] = {
-			1, -- [1]
-			true, -- [2]
-			1588, -- [3]
-			25, -- [4]
-			1546, -- [5]
-			260, -- [6]
-			289, -- [7]
-			4, -- [8]
-		},
 		["BattlePet-0-000012BB19D8"] = {
 			2, -- [1]
 			true, -- [2]
@@ -19261,16 +19040,6 @@ Rematch4Settings = {
 			1384, -- [5]
 			305, -- [6]
 			273, -- [7]
-			4, -- [8]
-		},
-		["BattlePet-0-000012B5CDB5"] = {
-			1, -- [1]
-			true, -- [2]
-			4261, -- [3]
-			25, -- [4]
-			1481, -- [5]
-			276, -- [6]
-			276, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012B99CFC"] = {
@@ -19283,6 +19052,36 @@ Rematch4Settings = {
 			292, -- [7]
 			4, -- [8]
 		},
+		["BattlePet-0-000006E4C770"] = {
+			1, -- [1]
+			true, -- [2]
+			1451, -- [3]
+			25, -- [4]
+			1400, -- [5]
+			260, -- [6]
+			325, -- [7]
+			4, -- [8]
+		},
+		["BattlePet-0-000012B5CDB5"] = {
+			1, -- [1]
+			true, -- [2]
+			4261, -- [3]
+			25, -- [4]
+			1481, -- [5]
+			276, -- [6]
+			276, -- [7]
+			4, -- [8]
+		},
+		["BattlePet-0-000012B866BC"] = {
+			1, -- [1]
+			true, -- [2]
+			1588, -- [3]
+			25, -- [4]
+			1546, -- [5]
+			260, -- [6]
+			289, -- [7]
+			4, -- [8]
+		},
 		["BattlePet-0-000012B48707"] = {
 			4, -- [1]
 			true, -- [2]
@@ -19293,15 +19092,25 @@ Rematch4Settings = {
 			273, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B99CB5"] = {
+		["BattlePet-0-000012B61DE8"] = {
 			1, -- [1]
 			true, -- [2]
-			1524, -- [3]
+			856, -- [3]
 			25, -- [4]
 			1546, -- [5]
-			289, -- [6]
-			260, -- [7]
+			260, -- [6]
+			289, -- [7]
 			4, -- [8]
+		},
+		["BattlePet-0-000012C8A816"] = {
+			1, -- [1]
+			true, -- [2]
+			418, -- [3]
+			1, -- [4]
+			140, -- [5]
+			9, -- [6]
+			9, -- [7]
+			1, -- [8]
 		},
 		["BattlePet-0-000012B99B2E"] = {
 			3, -- [1]
@@ -19323,16 +19132,6 @@ Rematch4Settings = {
 			248, -- [7]
 			3, -- [8]
 		},
-		["BattlePet-0-000012C8A816"] = {
-			1, -- [1]
-			true, -- [2]
-			418, -- [3]
-			1, -- [4]
-			140, -- [5]
-			9, -- [6]
-			9, -- [7]
-			1, -- [8]
-		},
 		["BattlePet-0-000012BA9541"] = {
 			1, -- [1]
 			true, -- [2]
@@ -19343,14 +19142,14 @@ Rematch4Settings = {
 			260, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B61DE8"] = {
+		["BattlePet-0-000012B99CB5"] = {
 			1, -- [1]
 			true, -- [2]
-			856, -- [3]
+			1524, -- [3]
 			25, -- [4]
 			1546, -- [5]
-			260, -- [6]
-			289, -- [7]
+			289, -- [6]
+			260, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012CA855A"] = {
@@ -19383,24 +19182,24 @@ Rematch4Settings = {
 			337, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B01DBC"] = {
-			1, -- [1]
+		["BattlePet-0-000006E4C775"] = {
+			3, -- [1]
 			true, -- [2]
-			1623, -- [3]
+			119, -- [3]
 			25, -- [4]
-			1546, -- [5]
-			289, -- [6]
-			260, -- [7]
+			1481, -- [5]
+			276, -- [6]
+			276, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B6047C"] = {
+		["BattlePet-0-000012B67A9B"] = {
 			1, -- [1]
 			true, -- [2]
-			4257, -- [3]
+			2692, -- [3]
 			25, -- [4]
-			1441, -- [5]
-			317, -- [6]
-			244, -- [7]
+			1412, -- [5]
+			271, -- [6]
+			312, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000006E4C75E"] = {
@@ -19413,18 +19212,25 @@ Rematch4Settings = {
 			257, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B0D34E"] = {
-			1, -- [1]
+		["BattlePet-0-000012B4C910"] = {
+			2, -- [1]
 			true, -- [2]
-			1887, -- [3]
+			3217, -- [3]
 			25, -- [4]
-			1465, -- [5]
-			289, -- [6]
-			273, -- [7]
+			1359, -- [5]
+			341, -- [6]
+			252, -- [7]
 			4, -- [8]
 		},
-		["random:0"] = {
-			79, -- [1]
+		["BattlePet-0-000012B4874E"] = {
+			12, -- [1]
+			true, -- [2]
+			1165, -- [3]
+			25, -- [4]
+			1400, -- [5]
+			341, -- [6]
+			244, -- [7]
+			4, -- [8]
 		},
 		["BattlePet-0-000008968258"] = {
 			7, -- [1]
@@ -19436,34 +19242,34 @@ Rematch4Settings = {
 			244, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000006E4C757"] = {
+		["BattlePet-0-000012B5CC18"] = {
 			1, -- [1]
 			true, -- [2]
-			1706, -- [3]
+			2092, -- [3]
 			25, -- [4]
-			1806, -- [5]
-			260, -- [6]
+			1627, -- [5]
+			289, -- [6]
 			244, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012CA870E"] = {
+		["BattlePet-0-000012B01E92"] = {
 			1, -- [1]
 			true, -- [2]
-			2668, -- [3]
-			23, -- [4]
-			1348, -- [5]
-			250, -- [6]
-			263, -- [7]
+			122, -- [3]
+			25, -- [4]
+			1400, -- [5]
+			260, -- [6]
+			325, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B4C1CA"] = {
-			4, -- [1]
+		["BattlePet-0-00001275D175"] = {
+			1, -- [1]
 			true, -- [2]
-			650, -- [3]
+			3319, -- [3]
 			25, -- [4]
-			1481, -- [5]
-			289, -- [6]
-			273, -- [7]
+			1465, -- [5]
+			293, -- [6]
+			272, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012BA9570"] = {
@@ -19476,23 +19282,23 @@ Rematch4Settings = {
 			260, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012BEEECA"] = {
+		["BattlePet-0-000012BA9563"] = {
 			1, -- [1]
 			true, -- [2]
-			3099, -- [3]
+			2190, -- [3]
 			25, -- [4]
-			1319, -- [5]
-			336, -- [6]
-			266, -- [7]
+			1400, -- [5]
+			260, -- [6]
+			325, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B146CB"] = {
-			42, -- [1]
+		["BattlePet-0-000012B01E16"] = {
+			1, -- [1]
 			true, -- [2]
-			1532, -- [3]
+			1629, -- [3]
 			25, -- [4]
-			1319, -- [5]
-			322, -- [6]
+			1465, -- [5]
+			289, -- [6]
 			273, -- [7]
 			4, -- [8]
 		},
@@ -19506,14 +19312,14 @@ Rematch4Settings = {
 			325, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B5CB67"] = {
+		["BattlePet-0-000011C9500C"] = {
 			1, -- [1]
 			true, -- [2]
-			2089, -- [3]
+			2898, -- [3]
 			25, -- [4]
-			1546, -- [5]
-			273, -- [6]
-			273, -- [7]
+			1465, -- [5]
+			300, -- [6]
+			262, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000012B01E1E"] = {
@@ -19526,14 +19332,14 @@ Rematch4Settings = {
 			276, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B99CE5"] = {
+		["BattlePet-0-000006E4C7B4"] = {
 			2, -- [1]
 			true, -- [2]
-			2567, -- [3]
+			1532, -- [3]
 			25, -- [4]
-			1278, -- [5]
-			297, -- [6]
-			305, -- [7]
+			1319, -- [5]
+			322, -- [6]
+			273, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-0000129535D3"] = {
@@ -19566,14 +19372,14 @@ Rematch4Settings = {
 			325, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B607A8"] = {
-			7, -- [1]
+		["BattlePet-0-000012B5CB60"] = {
+			1, -- [1]
 			true, -- [2]
-			2842, -- [3]
+			2843, -- [3]
 			25, -- [4]
-			1034, -- [5]
-			362, -- [6]
-			297, -- [7]
+			1481, -- [5]
+			292, -- [6]
+			260, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000006E4C780"] = {
@@ -19586,8 +19392,15 @@ Rematch4Settings = {
 			211, -- [7]
 			4, -- [8]
 		},
-		["random:6"] = {
+		["BattlePet-0-000012B485C2"] = {
 			3, -- [1]
+			true, -- [2]
+			868, -- [3]
+			25, -- [4]
+			1546, -- [5]
+			260, -- [6]
+			289, -- [7]
+			4, -- [8]
 		},
 		["BattlePet-0-000012B96DD7"] = {
 			2, -- [1]
@@ -19609,24 +19422,24 @@ Rematch4Settings = {
 			273, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-0000080DA4CD"] = {
+		["BattlePet-0-000012B66D54"] = {
 			2, -- [1]
 			true, -- [2]
-			323, -- [3]
+			1976, -- [3]
 			25, -- [4]
 			1400, -- [5]
-			289, -- [6]
-			289, -- [7]
+			325, -- [6]
+			260, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B6C313"] = {
-			1, -- [1]
+		["BattlePet-0-000012B822C0"] = {
+			2, -- [1]
 			true, -- [2]
-			3448, -- [3]
+			2833, -- [3]
 			25, -- [4]
-			1562, -- [5]
-			276, -- [6]
-			276, -- [7]
+			1705, -- [5]
+			282, -- [6]
+			242, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000006E4C753"] = {
@@ -19659,14 +19472,14 @@ Rematch4Settings = {
 			276, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B99B2C"] = {
-			2, -- [1]
+		["BattlePet-0-000012B96D57"] = {
+			1, -- [1]
 			true, -- [2]
-			2459, -- [3]
+			2667, -- [3]
 			25, -- [4]
-			1786, -- [5]
-			260, -- [6]
-			248, -- [7]
+			1530, -- [5]
+			291, -- [6]
+			262, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-000006E4C794"] = {
@@ -19679,14 +19492,14 @@ Rematch4Settings = {
 			276, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012B607A5"] = {
+		["BattlePet-0-000012C4A5C4"] = {
 			1, -- [1]
 			true, -- [2]
-			2794, -- [3]
+			2380, -- [3]
 			25, -- [4]
-			1278, -- [5]
-			292, -- [6]
-			317, -- [7]
+			1546, -- [5]
+			273, -- [6]
+			276, -- [7]
 			4, -- [8]
 		},
 		["BattlePet-0-00000D511EB1"] = {
@@ -19699,14 +19512,14 @@ Rematch4Settings = {
 			206, -- [7]
 			4, -- [8]
 		},
-		["BattlePet-0-000012CA865F"] = {
+		["BattlePet-0-000012C1A7C1"] = {
 			1, -- [1]
 			true, -- [2]
-			2675, -- [3]
-			23, -- [4]
-			1404, -- [5]
-			245, -- [6]
-			256, -- [7]
+			2865, -- [3]
+			25, -- [4]
+			1197, -- [5]
+			345, -- [6]
+			280, -- [7]
 			4, -- [8]
 		},
 	},
@@ -19791,7 +19604,7 @@ Rematch4Settings = {
 			132485, -- [2]
 		}, -- [11]
 	},
-	["DialogXPos"] = 352.9999084472656,
+	["QueueActiveSort"] = false,
 	["Filters"] = {
 		["Other"] = {
 		},
@@ -19799,13 +19612,13 @@ Rematch4Settings = {
 		},
 		["Script"] = {
 		},
-		["Types"] = {
+		["Moveset"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
-		["Similar"] = {
+		["Strong"] = {
 		},
 		["Sources"] = {
 		},
@@ -19813,13 +19626,13 @@ Rematch4Settings = {
 		},
 		["Rarity"] = {
 		},
-		["Strong"] = {
+		["Similar"] = {
 		},
-		["Level"] = {
+		["Collected"] = {
 		},
-		["Tough"] = {
+		["Favorite"] = {
 		},
-		["Moveset"] = {
+		["Types"] = {
 		},
 	},
 	["ExpandedOptHeaders"] = {
@@ -19828,9 +19641,12 @@ Rematch4Settings = {
 	},
 	["NotesBottom"] = 233.0003814697266,
 	["XPos"] = 675,
-	["AllowHiddenPetsDefaulted"] = true,
+	["DontWarnMissing"] = true,
 	["ExpandedTargetHeaders"] = {
 	},
+	["SpecialSlots"] = {
+	},
+	["LockNotesPosition"] = false,
 	["LevelingQueue"] = {
 		"BattlePet-0-000012C8BB03", -- [1]
 		"BattlePet-0-000012C8A816", -- [2]
@@ -19851,13 +19667,10 @@ Rematch4Settings = {
 		"BattlePet-0-000012CA163D", -- [17]
 		"BattlePet-0-000012CA865F", -- [18]
 	},
-	["LockNotesPosition"] = false,
-	["SpecialSlots"] = {
-	},
-	["DontWarnMissing"] = true,
+	["AllowHiddenPetsDefaulted"] = true,
 	["CornerPos"] = "BOTTOMLEFT",
 	["NoBackupReminder"] = true,
-	["QueueActiveSort"] = false,
+	["DialogXPos"] = 352.9999084472656,
 	["UseTypeBar"] = true,
 	["CustomScaleValue"] = 100,
 	["PetNotes"] = {

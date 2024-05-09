@@ -13,26 +13,40 @@ local function FormatForPattern( text )
 	return text
 end
 
-local function FormatForCapture( text )
+local function FormatForCapture( var )
 	
-	if not text then
-		--print( RED_FONT_COLOR_CODE .. "ArkInventory: code failure - FormatForCapture was passed a nil value, blizzard have changed something." )
+	if type( var ) ~= "string" then
+		print( RED_FONT_COLOR_CODE .. "ArkInventory: code failure - FormatForCapture - a non string value wast used." )
 		--assert( false, "code failure" )
 		return
 	end
 	
-	if string.find( text, "|" ) then
-		print( RED_FONT_COLOR_CODE .. "ArkInventory: code error - FormatForCapture( " .. text .. ") contains || character.  check blizzard vlaues." )
+	local text = _G[var]
+	
+	if type( text ) ~= "string" or string.trim( text or "" ) == "" then
+--		print( RED_FONT_COLOR_CODE .. "ArkInventory: code failure - FormatForCapture - " .. var .. " does not generate a string value." )
 		return
 	end
 	
-	local text = FormatForPattern( text )
-	text = string.gsub( text, "%d%$", "" ) -- remove 1$ / 2$
+	local otext = string.gsub( text, "\124", "\124\124" )
+	
+	text = FormatForPattern( text )
+	
+	text = string.gsub( text, "|%d+.-;", ".+" ) -- replace conditional formatting |4single:plural; replace with .+
+	text = string.gsub( text, "%d%$", "" ) -- remove positional markers 1$ / 2$
+	
 	text = string.gsub( text, "%%s", "(.+)" ) -- replace %s with (.+)
 	text = string.gsub( text, "%%d", "%(%%d+%)" ) -- replace %d with (%d+)
-	--text = string.gsub( text, "|4(.-):(.-);", "%(%1%)?%(%2%)?" )
 	
-	return string.format( "^%s$", text )
+	text = string.format( "^%s$", text )
+	
+	if string.match( otext, "%d%$" ) then -- has positional markers
+		ArkInventory.OutputDebug( "variable with possible out of order placements [", var, "]" )
+		ArkInventory.OutputDebug( "  [", otext, "]" )
+		ArkInventory.OutputDebug( "  [", text, "]" )
+	end
+	
+	return text
 	
 end
 
@@ -65,11 +79,10 @@ L["WOW_SKILL_ARCHAEOLOGY"] = PROFESSIONS_ARCHAEOLOGY or true
 L["WOW_SKILL_COOKING"] = PROFESSIONS_COOKING or true
 L["WOW_SKILL_FIRSTAID"] = PROFESSIONS_FIRST_AID or true
 L["WOW_SKILL_FISHING"] = PROFESSIONS_FISHING or true
-L["WOW_SKILL_HERBALISM"] = string.match( UNIT_SKINNABLE_HERB, FormatForCapture( ITEM_REQ_SKILL ) ) or true
+L["WOW_SKILL_HERBALISM"] = string.match( UNIT_SKINNABLE_HERB, FormatForCapture( "ITEM_REQ_SKILL" ) ) or true
 L["WOW_SKILL_INSCRIPTION"] = INSCRIPTION or true
-L["WOW_SKILL_MINING"] = string.match( UNIT_SKINNABLE_ROCK, FormatForCapture( ITEM_REQ_SKILL ) ) or true
---L["WOW_SKILL_ENGINEERING"] = string.match( UNIT_SKINNABLE_BOLTS, FormatForCapture( ITEM_REQ_SKILL ) ) or true
-
+L["WOW_SKILL_MINING"] = string.match( UNIT_SKINNABLE_ROCK, FormatForCapture( "ITEM_REQ_SKILL" ) ) or true
+--L["WOW_SKILL_ENGINEERING"] = string.match( UNIT_SKINNABLE_BOLTS, FormatForCapture( "ITEM_REQ_SKILL" ) ) or true
 
 -- category descriptions
 L["CATEGORY_SYSTEM"] = CHAT_MSG_SYSTEM or true
@@ -314,38 +327,38 @@ L["YES"] = YES or true
 
 -- calculated
 
-L["WOW_TOOLTIP_ITEM_BIND_ON_USE"] = FormatForCapture( ITEM_BIND_ON_USE ) or true
-L["WOW_TOOLTIP_ITEM_BIND_ON_EQUIP"] = FormatForCapture( ITEM_BIND_ON_EQUIP ) or true
-L["WOW_TOOLTIP_ITEM_SOULBOUND"] = FormatForCapture( ITEM_SOULBOUND ) or true
-L["WOW_TOOLTIP_ITEM_BIND_ON_PICKUP"] = FormatForCapture( ITEM_BIND_ON_PICKUP ) or true
-L["WOW_TOOLTIP_ITEM_ACCOUNTBOUND"] = FormatForCapture( ITEM_ACCOUNTBOUND ) or true
-L["WOW_TOOLTIP_ITEM_BIND_TO_ACCOUNT"] = FormatForCapture( ITEM_BIND_TO_ACCOUNT ) or true
-L["WOW_TOOLTIP_ITEM_BIND_TO_BNETACCOUNT"] = FormatForCapture( ITEM_BIND_TO_BNETACCOUNT ) or true
-L["WOW_TOOLTIP_ITEM_BNETACCOUNTBOUND"] = FormatForCapture( ITEM_BNETACCOUNTBOUND ) or true
-L["WOW_TOOLTIP_ITEM_TOY_ONUSE"] = FormatForCapture( ITEM_TOY_ONUSE ) or true
-L["WOW_TOOLTIP_ITEM_COSMETIC"] = FormatForCapture( ITEM_COSMETIC ) or true
-
-L["WOW_TOOLTIP_REQUIRES_SKILL"] = FormatForCapture( ITEM_MIN_SKILL ) or true
-L["WOW_TOOLTIP_REQUIRES_LEVEL"] = FormatForCapture( ITEM_MIN_LEVEL ) or true
-L["WOW_TOOLTIP_REQUIRES_CLASS"] = FormatForCapture( ITEM_CLASSES_ALLOWED ) or true
-L["WOW_TOOLTIP_REQUIRES"] = FormatForCapture( ITEM_REQ_SKILL ) or true
-L["WOW_TOOLTIP_ITEMUPGRADELEVEL"] = FormatForCapture( ITEM_UPGRADE_TOOLTIP_FORMAT ) or true
-L["WOW_TOOLTIP_ITEM_LEVEL"] = FormatForCapture( ITEM_LEVEL ) or true
+L["WOW_TOOLTIP_ITEM_BIND_ON_USE"] = FormatForCapture( "ITEM_BIND_ON_USE" ) or true
+L["WOW_TOOLTIP_ITEM_BIND_ON_EQUIP"] = FormatForCapture( "ITEM_BIND_ON_EQUIP" ) or true
+L["WOW_TOOLTIP_ITEM_SOULBOUND"] = FormatForCapture( "ITEM_SOULBOUND" ) or true
+L["WOW_TOOLTIP_ITEM_BIND_ON_PICKUP"] = FormatForCapture( "ITEM_BIND_ON_PICKUP" ) or true
+L["WOW_TOOLTIP_ITEM_ACCOUNTBOUND"] = FormatForCapture( "ITEM_ACCOUNTBOUND" ) or true
+L["WOW_TOOLTIP_ITEM_BIND_TO_ACCOUNT"] = FormatForCapture( "ITEM_BIND_TO_ACCOUNT" ) or true
+L["WOW_TOOLTIP_ITEM_BIND_TO_BNETACCOUNT"] = FormatForCapture( "ITEM_BIND_TO_BNETACCOUNT" ) or true
+L["WOW_TOOLTIP_ITEM_BNETACCOUNTBOUND"] = FormatForCapture( "ITEM_BNETACCOUNTBOUND" ) or true
+L["WOW_TOOLTIP_ITEM_TOY_ONUSE"] = FormatForCapture( "ITEM_TOY_ONUSE" ) or true
+L["WOW_TOOLTIP_ITEM_COSMETIC"] = FormatForCapture( "ITEM_COSMETIC" ) or true
+L["WOW_TOOLTIP_ITEM_CHARGES"] = FormatForCapture( "ITEM_SPELL_CHARGES" ) or true
+L["WOW_TOOLTIP_ITEM_CONTAINER_SLOTS"] = FormatForCapture( "CONTAINER_SLOTS" ) or true
+L["WOW_TOOLTIP_ITEM_REQUIRES_SKILL"] = FormatForCapture( "ITEM_MIN_SKILL" ) or true
+L["WOW_TOOLTIP_ITEM_REQUIRES_LEVEL"] = FormatForCapture( "ITEM_MIN_LEVEL" ) or true
+L["WOW_TOOLTIP_ITEM_REQUIRES_CLASS"] = FormatForCapture( "ITEM_CLASSES_ALLOWED" ) or true
+L["WOW_TOOLTIP_ITEM_REQUIRES"] = FormatForCapture( "ITEM_REQ_SKILL" ) or true
+L["WOW_TOOLTIP_ITEM_UPGRADE_LEVEL"] = FormatForCapture( "ITEM_UPGRADE_TOOLTIP_FORMAT" ) or true
+L["WOW_TOOLTIP_ITEM_LEVEL"] = FormatForCapture( "ITEM_LEVEL" ) or true
 L["WOW_TOOLTIP_ANCIENT_MANA"] = helper_GetCurrencyName( 1155 ) or true
-L["WOW_TOOLTIP_ARTIFACT_POWER"] = FormatForCapture( ARTIFACT_POWER ) or true
+L["WOW_TOOLTIP_ARTIFACT_POWER"] = FormatForCapture( "ARTIFACT_POWER" ) or true
 L["WOW_TOOLTIP_ARTIFACT_POWER_AMOUNT"] = "^.-([%d,.]+)%s(.+)"
-if POWER_TYPE_ANIMA then
-	L["WOW_TOOLTIP_ANIMA"] = FormatForCapture( POWER_TYPE_ANIMA ) or true
-end
+L["WOW_TOOLTIP_ANIMA"] = FormatForCapture( "POWER_TYPE_ANIMA" ) or true
+
 L["WOW_TOOLTIP_CONDUIT_POTENCY"] = CONDUIT_TYPE_POTENCY or true
 L["WOW_TOOLTIP_CONDUIT_FINESSE"] = CONDUIT_TYPE_FINESSE or true
 L["WOW_TOOLTIP_CONDUIT_ENDURANCE"] = CONDUIT_TYPE_ENDURANCE or true
 L["WOW_TOOLTIP_RETRIEVING_ITEM_INFO"] = RETRIEVING_ITEM_INFO or true
-L["WOW_TOOLTIP_RELIC_LEVEL"] = FormatForCapture( RELIC_TOOLTIP_ILVL_INCREASE ) or true
-L["WOW_TOOLTIP_DURABLITY"] = FormatForCapture( DURABILITY_TEMPLATE ) or true
+L["WOW_TOOLTIP_RELIC_LEVEL"] = FormatForCapture( "RELIC_TOOLTIP_ILVL_INCREASE" ) or true
+L["WOW_TOOLTIP_DURABLITY"] = FormatForCapture( "DURABILITY_TEMPLATE" ) or true
 
-L["WOW_TOOLTIP_BIND_PARTYLOOT"] = FormatForCapture( BIND_TRADE_TIME_REMAINING ) or true
-L["WOW_TOOLTIP_BIND_REFUNDABLE"] = FormatForCapture( REFUND_TIME_REMAINING ) or true
+L["WOW_TOOLTIP_BIND_PARTYLOOT"] = FormatForCapture( "BIND_TRADE_TIME_REMAINING" ) or true
+L["WOW_TOOLTIP_BIND_REFUNDABLE"] = FormatForCapture( "REFUND_TIME_REMAINING" ) or true
 
 L["WOW_TOOLTIP_DAMAGE"] = string.format( " %s$", DAMAGE )
 

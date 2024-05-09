@@ -9,8 +9,6 @@ WeakAuras = {}
 WeakAuras.L = {}
 Private.frames = {}
 
-local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
-
 --- @alias uid string
 --- @alias auraId string
 
@@ -194,8 +192,8 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 ---@field GetNameAndIcon (fun(trigger: triggerData): string?, string?)|nil
 ---@field iconFunc (fun(trigger: triggerData): string?)|nil
 ---@field nameFunc (fun(trigger: triggerData): string?)|nil
----@field events (fun(tigger: triggerData): table)|nil
----@field internal_events (fun(tigger: triggerData): table)|nil
+---@field events (fun(trigger: triggerData): table)|nil
+---@field internal_events (fun(trigger: triggerData): table)|nil
 ---@field name string
 ---@field statesParamater "unit"|"one"|"all"|nil
 ---@field progressType "timed"|"static"|"none"
@@ -375,11 +373,11 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
-local versionStringFromToc = GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.12.8"
-local buildTime = "20240410155357"
+local versionStringFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "Version")
+local versionString = "5.13.0"
+local buildTime = "20240508050128"
 
-local flavorFromToc = GetAddOnMetadata("WeakAuras", "X-Flavor")
+local flavorFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
   Vanilla = 1,
   TBC = 2,
@@ -405,7 +403,7 @@ WeakAuras.buildType = "pr"
 --@end-experimental@]=====]
 
 --[==[@debug@
-if versionStringFromToc == "5.12.8" then
+if versionStringFromToc == "5.13.0" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
   WeakAuras.buildType = "dev"
@@ -417,51 +415,61 @@ WeakAuras.buildTime = buildTime
 WeakAuras.newFeatureString = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0|t"
 WeakAuras.BuildInfo = select(4, GetBuildInfo())
 
+---@return boolean result
 function WeakAuras.IsClassicEra()
   return flavor == 1
 end
 -- save compatibility with old auras
 WeakAuras.IsClassic = WeakAuras.IsClassicEra
 
+---@return boolean result
 function WeakAuras.IsWrathClassic()
   return flavor == 3
 end
 
+---@return boolean result
 function WeakAuras.IsCataClassic()
   return flavor == 4
 end
 
+---@return boolean result
 function WeakAuras.IsRetail()
   return flavor == 10
 end
 
+---@return boolean result
 function WeakAuras.IsClassicEraOrWrath()
   return WeakAuras.IsClassicEra() or WeakAuras.IsWrathClassic()
 end
 
+---@return boolean result
 function WeakAuras.IsWrathOrCataOrRetail()
   return WeakAuras.IsRetail() or WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
 end
 
+---@return boolean result
 function WeakAuras.IsWrathOrCata()
   return WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
 end
 
+---@return boolean result
 function WeakAuras.IsCataOrRetail()
   return WeakAuras.IsCataClassic() or WeakAuras.IsRetail()
 end
 
+---@return boolean result
 function WeakAuras.IsClassicEraOrWrathOrCata()
   return WeakAuras.IsClassicEra() or WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
 end
 
+---@param ... string
 WeakAuras.prettyPrint = function(...)
   print("|cff9900ffWeakAuras:|r ", ...)
 end
 
 -- Force enable WeakAurasCompanion and Archive because some addon managers interfere with it
-EnableAddOn("WeakAurasCompanion")
-EnableAddOn("WeakAurasArchive")
+C_AddOns.EnableAddOn("WeakAurasCompanion")
+C_AddOns.EnableAddOn("WeakAurasArchive")
 
 local libsAreOk = true
 do

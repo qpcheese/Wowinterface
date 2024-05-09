@@ -1,26 +1,30 @@
 ---@class BetterBags: AceAddon
 local BetterBags = LibStub('AceAddon-3.0'):GetAddon("BetterBags")
+assert(BetterBags, "BetterBags_Tabards requires BetterBags")
+
+local addonName, root = ...;
+
+---@class BetterBags_Tabards: AceModule
+local addon = LibStub("AceAddon-3.0"):NewAddon(root, addonName, 'AceHook-3.0')
+
 ---@class Categories: AceModule
 local categories = BetterBags:GetModule('Categories')
----@class Config: AceModule
-local config = BetterBags:GetModule('Config')
----@class Constants: AceModule
-local const = BetterBags:GetModule('Constants')
 ---@class Constants: AceModule
 local db = BetterBags:GetModule('Database')
 
-local _, ns = ...;
-local L = ns.L;
-local _G = _G
+local L = root.L;
+
+--@param itemInfo ItemData.itemInfo
+function addon:IsTabard(itemInfo)
+    return itemInfo.itemEquipLoc == "INVTYPE_TABARD"
+end
 
 categories:CreateCategory(L["CATEGORY_NAME"])
 
 --@param data ItemData
 categories:RegisterCategoryFunction("TabardsCategoryFilter", function(data)
-	if (data.itemInfo.itemEquipLoc == "INVTYPE_TABARD" and db.GetItemCategoryByItemID(data.itemInfo.itemID) ~= nil) then
-        categories:AddItemToCategory(data.itemInfo.itemID, L["CATEGORY_NAME"])
-        config:GetBag(const.BAG_KIND.BACKPACK):Refresh()
-        config:GetBag(const.BAG_KIND.BANK):Refresh()
+	if (addon:IsTabard(data.itemInfo)) then
+        return L["CATEGORY_NAME"]
     end
 
 	return nil

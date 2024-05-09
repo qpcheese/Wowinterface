@@ -417,8 +417,8 @@ function ArkInventory.MoneyText( money, condense )
 	
 	local money = money or 0
 	
-	local numGold = floor( money / COPPER_PER_GOLD )
-	local numSilver = floor( ( money - ( numGold * COPPER_PER_GOLD ) ) / COPPER_PER_SILVER )
+	local numGold = math.floor( money / COPPER_PER_GOLD )
+	local numSilver = math.floor( ( money - ( numGold * COPPER_PER_GOLD ) ) / COPPER_PER_SILVER )
 	local numCopper = money % COPPER_PER_SILVER
 	
 	local txtGold = ""
@@ -631,9 +631,9 @@ function ArkInventory.MoneyFrame_Update(frameName, money, forceShow)
 	end
 
 	-- Breakdown the money into denominations
-	local gold = floor(money / (COPPER_PER_SILVER * SILVER_PER_GOLD));
+	local gold = math.floor(money / (COPPER_PER_SILVER * SILVER_PER_GOLD));
 	local goldDisplay = BreakUpLargeNumbers(gold);
-	local silver = floor((money - (gold * COPPER_PER_SILVER * SILVER_PER_GOLD)) / COPPER_PER_SILVER);
+	local silver = math.floor((money - (gold * COPPER_PER_SILVER * SILVER_PER_GOLD)) / COPPER_PER_SILVER);
 	local copper = mod(money, COPPER_PER_SILVER);
 
 	local copperButton = _G[frameName.."CopperButton"];

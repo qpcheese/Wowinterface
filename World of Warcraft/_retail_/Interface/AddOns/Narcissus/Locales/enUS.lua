@@ -156,7 +156,6 @@ L["Screen Effects"] ="Screen Effects";
 
 L["Gemma"] = "\"Gemma\"";   --Don't translate
 L["Gemma Description"] = "Show a list of gems when socketing an item.";
-L["Gem Manager"] = "Gem Manager";
 L["Dressing Room"] = "Dressing Room";
 L["Dressing Room Description"] = "Bigger dressing room with the abilities to view and copy other players' item lists and generate Wowhead dressing room links.";
 L["General"] = "General";   --General options
@@ -253,6 +252,7 @@ L["New Option"] = NARCI_NEW_ENTRY_PREFIX.." NEW".."|r"
 L["Expansion Features"] = "Expansion Features";
 L["LFR Wing Details"] = "LFR Wing Details";
 L["LFR Wing Details Description"] = "Show boss names and lockouts when you talk with solo queue LFR NPCs.";
+L["Speedy Screenshot Alert"] = "Make Screenshot Message Disappear Faster";
 
 --Model Control--
 L["Ranged Weapon"] = "Ranged Weapon";
@@ -470,8 +470,8 @@ L["Save New Look"] = "Save New Look";
 L["No Available Slot"] = "No Available Save Slot";
 L["Look Saved"] = "Look Saved";
 L["Cannot Save Forms"] = "Cannot Save This Form";
-L["Profiles"] = SOCIAL_SHARE_TEXT or "Share";
-L["Share"] = "Share";
+L["Profile"] = "Profile";
+L["Share"] =  SOCIAL_SHARE_TEXT or "Share";
 L["Save Notify"] = "Notify You to Save New Appearance";
 L["Save Notify Tooltip"] = "Notify you to save the customization after clicking Accept button.";
 L["Show Randomize Button"] = "Show Randomize Appearance Button";
@@ -498,6 +498,12 @@ L["Decode Good"] = "Decoded successfully.";
 L["Barbershop Export Tooltip"] = "Encodes the currently used customization into a string that can be shared online.\n\nYou may change any texts before the colon (:)";
 L["Settings And Share"] = (SETTINGS or "Settings") .." & ".. (SOCIAL_SHARE_TEXT or "Share");
 L["Loading Portraits"] = "Loading Portraits";
+L["Private Profile"] = "Private";   --used by the current character
+L["Public Profile"] = "Public";     --shared among all your characters
+L["Profile Type Tooltip"] = "Select the profile to use on this character.\n\nPrivate:|cffedd100 Profile created by the current character|r\n\nPublic:|cffedd100 Profile shared among all your characters|r";
+L["No Saves"] = "No Saves";
+L["Profile Migration Tooltip"] = "You can copy existing presets to the public profile.";
+L["Profile Migration Okay"] = "Okey dokey";
 
 --Tutorial--
 L["Alert"] = "Warning";
@@ -722,3 +728,25 @@ L["Auto Display Quest Item"] = "Auto Display Quest Item Descriptions";
 L["Drag To Move"] = "Drag to Move";
 L["Middle Click Reset Position"] = "Middle-click to reset position."
 L["Change Position"] = "Change Position";
+
+
+--Timerunning--
+L["Primary Stat"] = "Primary Stat";
+L["Stamina"] = ITEM_MOD_STAMINA_SHORT or "Stamina";
+L["Crit"] = ITEM_MOD_CRIT_RATING_SHOR or "Critical Strike";
+L["Haste"] = ITEM_MOD_HASTE_RATING_SHORT or "Haste";
+L["Mastery"] = ITEM_MOD_MASTERY_RATING_SHORT or "Mastery";
+L["Versatility"] = ITEM_MOD_VERSATILITY or "Versatility";
+
+L["Leech"] = ITEM_MOD_CR_LIFESTEAL_SHORT or "Leech";
+L["Speed"] = ITEM_MOD_CR_UNUSED_3_SHORT or "Speed";
+L["Format Stat EXP"] = "+%d%% EXP Gain";
+L["Format Rank"] = AZERITE_ESSENCE_RANK or "Rank %d";
+
+
+--Gem Manager--
+L["Gem Manager"] = "Gem Manager";
+L["Pandamonium Gem Category 1"] = "Major";      --Major Cooldown Abilities
+L["Pandamonium Gem Category 2"] = "Tinker";     --Tinker Gem
+L["Pandamonium Gem Category 3"] = PRISMATIC_GEM or "Prismatic";
+L["Click To Activate"] = "Left click to activate";

@@ -2,5 +2,5 @@
 MinArchOptions = {
 	["ABOptions"] = {
 	},
-	["CurrentHistPage"] = 18,
+	["CurrentHistPage"] = 1,
 }

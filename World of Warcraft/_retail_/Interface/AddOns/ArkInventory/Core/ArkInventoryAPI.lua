@@ -270,7 +270,7 @@ function ArkInventory.API.LocationIsOffline( loc_id )
 		
 ]]--
 	
-	if ArkInventory.Global.Location[loc_id] then
+	if loc_id and ArkInventory.Global.Location[loc_id] then
 		return not not ArkInventory.Global.Location[loc_id].isOffline
 	end
 	

@@ -1,6 +1,6 @@
 --[[
 Name: LibTourist-3.0
-Revision: $Rev: 305 $
+Revision: $Rev: 307 $
 Author(s): Odica (owner), originally created by ckknight and Arrowmaster
 Documentation: https://www.wowace.com/projects/libtourist-3-0/pages/api-reference
 SVN: svn://svn.wowace.com/wow/libtourist-3-0/mainline/trunk
@@ -9,7 +9,7 @@ License: MIT
 ]]
 
 local MAJOR_VERSION = "LibTourist-3.0"
-local MINOR_VERSION = 90000 + tonumber(("$Revision: 305 $"):match("(%d+)"))
+local MINOR_VERSION = 90000 + tonumber(("$Revision: 307 $"):match("(%d+)"))
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 local C_Map = C_Map
@@ -1935,6 +1935,7 @@ local MapIdLookupTable = {
     [2252] = "Dragon Isles",
     [2253] = "Sor'theril Barrow Den",
     [2254] = "Barrows of Reverie",
+	[2257] = "Arathi Highlands",
     [2262] = "Traitor's Rest",
     [2266] = "Millenia's Threshold",
     [2268] = "Amirdrassil",

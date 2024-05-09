@@ -184,6 +184,9 @@ VER 3 0000000000000006 "nova/fb" "134400"
 #showtooltip
 /castsequence reset=10 Ice nova, Fire Blast
 END
+VER 3 000000000000003A "personals " "134400"
+/rw Stack on orange
+END
 VER 3 0000000000000015 "pp" "134400"
 #showtooltip
 /targetenemy

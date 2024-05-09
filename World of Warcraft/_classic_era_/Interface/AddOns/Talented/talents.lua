@@ -46,7 +46,7 @@ do
 			local talents = result[tab].talents
 			local count = 0
 			for index = 1, GetNumTalents(tab, inspect) do
-				local name, icon, row, column, rank, ranks, exceptional = Talented:MatchedGetTalentInfo(tab, index, inspect)
+				local name, icon, row, column, rank, ranks, exceptional = Talented:MatchedGetTalentInfo(tab, index, inspect, GetActiveTalentGroup())
 				G:SetTalent(tab, index, inspect)
 				local n = G:NumLines()
 				local tips = G:GetLine(n)

@@ -52,7 +52,7 @@ BigWigs:AddColors("Sinestra", {
 	[87654] = "red",
 	[90045] = "orange",
 	[90125] = "orange",
-	[92852] = "blue",
+	[92852] = {"blue","yellow"},
 	["phase"] = "green",
 	["whelps"] = "red",
 })

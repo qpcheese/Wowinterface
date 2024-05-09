@@ -510,6 +510,10 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED
 	L["Fade"] = "Fondu"
 	L["Fade In"] = "Fondu entrant"
 	L["Fade Out"] = "Fondu sortant"
+	--[[Translation missing --]]
+	L["Fadeout Sound"] = "Fadeout Sound"
+	--[[Translation missing --]]
+	L["Fadeout Time (seconds)"] = "Fadeout Time (seconds)"
 	L["False"] = "Faux"
 	--[[Translation missing --]]
 	L["Fetch Affected/Unaffected Names and Units"] = "Fetch Affected/Unaffected Names and Units"
@@ -570,8 +574,6 @@ Can use \ to escape -.]=]
 	L["Frame Height"] = "Frame Height"
 	--[[Translation missing --]]
 	L["Frame Rate"] = "Frame Rate"
-	--[[Translation missing --]]
-	L["Frame Selector"] = "Frame Selector"
 	L["Frame Strata"] = "Strate du cadre"
 	--[[Translation missing --]]
 	L["Frame Width"] = "Frame Width"
@@ -750,6 +752,8 @@ Si cette case est cochée, ce séparateur inclura du texte. Sinon, ce sera juste
 	L["Length"] = "Longueur"
 	--[[Translation missing --]]
 	L["Length of |cFFFF0000%s|r"] = "Length of |cFFFF0000%s|r"
+	--[[Translation missing --]]
+	L["LibSharedMedia"] = "LibSharedMedia"
 	L["Limit"] = "Limite"
 	--[[Translation missing --]]
 	L["Line"] = "Line"
@@ -785,8 +789,6 @@ Si cette case est cochée, ce séparateur inclura du texte. Sinon, ce sera juste
 	L["Media Type"] = "Media Type"
 	L["Medium Icon"] = "Icône moyenne"
 	L["Message"] = "Message"
-	L["Message Prefix"] = "Préfixe du message"
-	L["Message Suffix"] = "Suffixe du message"
 	L["Message Type"] = "Type de message"
 	L["Min"] = "Min (minutes?)"
 	--[[Translation missing --]]
@@ -827,8 +829,6 @@ Seule une unique valeur peut être choisie]=]
 	L["Name Pattern Match"] = "Correspondance de modèle de nom"
 	L["Name(s)"] = "Nom(s)"
 	L["Name:"] = "Nom:"
-	--[[Translation missing --]]
-	L["Nameplate"] = "Nameplate"
 	L["Nameplates"] = "Barres de vie"
 	L["Negator"] = "Pas"
 	L["New Aura"] = "Nouvelle aura"
@@ -1124,6 +1124,10 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	--[[Translation missing --]]
 	L["Sub Option %i"] = "Sub Option %i"
 	--[[Translation missing --]]
+	L["Subevent"] = "Subevent"
+	--[[Translation missing --]]
+	L["Subevent Suffix"] = "Subevent Suffix"
+	--[[Translation missing --]]
 	L["Supports multiple entries, separated by commas"] = "Supports multiple entries, separated by commas"
 	L["Swipe Overlay Settings"] = "Paramètres de la superposition des balayages"
 	--[[Translation missing --]]
@@ -1139,6 +1143,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Texture Picker"] = "Texture Picker"
 	--[[Translation missing --]]
 	L["Texture Rotation"] = "Texture Rotation"
+	--[[Translation missing --]]
+	L["Texture Selection Mode"] = "Texture Selection Mode"
 	L["Texture Settings"] = "Paramètres de la texture"
 	L["Texture Wrap"] = "Enveloppe de texture"
 	--[[Translation missing --]]
@@ -1238,8 +1244,6 @@ Upgrade your version of WeakAuras or wait for next release before installing thi
 	--[[Translation missing --]]
 	L["Unit %s is not a valid unit for RegisterUnitEvent"] = "Unit %s is not a valid unit for RegisterUnitEvent"
 	L["Unit Count"] = "Nombre d'unité"
-	--[[Translation missing --]]
-	L["Unit Frame"] = "Unit Frame"
 	L["Unit Frames"] = "Cadre d'unité"
 	--[[Translation missing --]]
 	L["Unknown property '%s' found in '%s'"] = "Unknown property '%s' found in '%s'"

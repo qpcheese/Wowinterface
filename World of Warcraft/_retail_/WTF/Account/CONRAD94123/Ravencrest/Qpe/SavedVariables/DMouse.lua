@@ -9,11 +9,11 @@ DMouseDB = {
 	["Effect1ScaleLimit"] = 1,
 	["Effect3CrosshairR"] = 1,
 	["Effect1EnableFade"] = true,
-	["Effect3CrosshairG"] = 1,
-	["MainFrameOpacity"] = 1,
-	["Effect3CrosshairSize"] = 1,
-	["Effect1FixFadeForScale"] = true,
-	["HideWhenInVehicle"] = true,
 	["ShowWhenInCombatOnly"] = true,
+	["MainFrameOpacity"] = 1,
+	["HideWhenInVehicle"] = true,
+	["Effect1FixFadeForScale"] = true,
+	["Effect3CrosshairSize"] = 1,
+	["Effect3CrosshairG"] = 1,
 }
 DMouseDBAceDB = nil

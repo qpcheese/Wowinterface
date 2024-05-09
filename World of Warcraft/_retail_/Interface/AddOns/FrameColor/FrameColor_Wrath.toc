@@ -1,0 +1,24 @@
+## Interface: 30403
+## Version: 3.4.0
+## Title: FrameColor
+## Author: Slothpala
+## SavedVariables: FrameColorDB
+## OptionalDeps: Ace3, LibDeflate
+## X-Curse-Project-ID: 693720
+
+embeds.xml
+Init_Wrath.lua
+locales.xml
+
+Core.lua
+Options\Options.lua
+Options\OptionsFrame.lua
+DB.lua
+SkinEngine.lua
+UnitColors.lua
+ProfileSharing.lua
+ColorControl.lua
+HookRegistry.lua
+Api.lua
+
+modules_Wrath.xml

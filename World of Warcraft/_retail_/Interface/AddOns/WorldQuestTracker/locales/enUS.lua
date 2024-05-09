@@ -2,6 +2,9 @@ local addonId = ...
 local languageTable = DetailsFramework.Language.RegisterLanguage(addonId, "enUS")
 local L = languageTable
 
+
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
+
 L["S_OPTTIONS_TAB_DRAGONRACE_SETTINGS"] = "Dragon Race"
 L["S_OPTTIONS_DRAGONRACE_MINIMAP"] = "Show Track Minimap"
 L["S_OPTTIONS_DRAGONRACE_TRACKCOLOR"] = "Track Color"
@@ -370,6 +373,7 @@ L["S_SUMMARYPANEL_LIFETIMESTATISTICS_CHARACTER"] = "Character Life Time Statisti
 L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "Other Characters"
 L["S_TEXT_SIZE"] = "Text Size"
 L["S_TORGAST"] = "Torgasth"
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "indicates the amount to receive"
 L["S_TUTORIAL_CLICKTOTRACK"] = "Click to track a quest."
 L["S_TUTORIAL_PARTY"] = "When in party, a blue star is shown on quests that all party members have!"

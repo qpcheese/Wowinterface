@@ -407,6 +407,7 @@ function MoveAny:MenuOptions(opt, frame)
 			local max = getn(frame.btns)
 			local count = opts["COUNT"] or max
 			local rows = opts["ROWS"] or 1
+			local offset = opts["OFFSET"] or 0
 			local PY = -20
 			if frame ~= MAMenuBar and frame ~= StanceBar then
 				slides.sliderCount = CreateFrame("Slider", nil, content, "OptionsSliderTemplate")
@@ -478,6 +479,32 @@ function MoveAny:MenuOptions(opt, frame)
 				PY = PY - 30
 			end
 
+			slides.offset = CreateFrame("Slider", nil, content, "OptionsSliderTemplate")
+			local sliderOffset = slides.offset
+			sliderOffset:SetWidth(content:GetWidth() - 110)
+			sliderOffset:SetPoint("TOPLEFT", content, "TOPLEFT", 10, PY)
+			sliderOffset.Low:SetText(-4)
+			sliderOffset.High:SetText(8)
+			sliderOffset.Text:SetText(MoveAny:GT("LID_OFFSET") .. ": " .. offset)
+			sliderOffset:SetMinMaxValues(-4, 8)
+			sliderOffset:SetObeyStepOnDrag(true)
+			sliderOffset:SetValueStep(1)
+			sliderOffset:SetValue(offset)
+			sliderOffset:SetScript(
+				"OnValueChanged",
+				function(sel, value)
+					val = tonumber(string.format("%" .. 0 .. "f", value))
+					if value and value ~= opts["OFFSET"] then
+						opts["OFFSET"] = value
+						sel.Text:SetText(MoveAny:GT("LID_OFFSET") .. ": " .. value)
+						if MoveAny.UpdateActionBar then
+							MoveAny:UpdateActionBar(frame)
+						end
+					end
+				end
+			)
+
+			PY = PY - 30
 			local flipped = CreateFrame("CheckButton", "flipped", content, "ChatConfigCheckButtonTemplate")
 			flipped:SetSize(btnsize, btnsize)
 			flipped:SetPoint("TOPLEFT", content, "TOPLEFT", 4, PY)
@@ -1457,28 +1484,35 @@ function MoveAny:CheckAlphas()
 
 	local ele = GetMouseFocus()
 	if ele and ele ~= CompactRaidFrameManager then
-		local dufloaded = IsAddOnLoaded("DUnitFrames")
-		if not dufloaded or (dufloaded and ele ~= PlayerFrame and ele ~= TargetFrame and ele.GetMAEle and ele:GetMAEle() and ele:GetMAEle() ~= PlayerFrame and ele:GetMAEle() ~= TargetFrame) then
-			if tContains(MoveAny:GetAlphaFrames(), ele) then
-				ele:SetAlpha(1)
-				MoveAny:SetMouseEleAlpha(ele)
-			elseif ele.GetMAEle then
-				ele = ele:GetMAEle()
-				if ele then
+		if ele and (ele == WorldFrame or ele == UIParent) and lastEle ~= nil and ele ~= lastEle then
+			lastEle = nil
+			MoveAny:UpdateAlphas()
+		end
+
+		if ele ~= WorldFrame and ele ~= UIParent then
+			local dufloaded = IsAddOnLoaded("DUnitFrames")
+			if not dufloaded or (dufloaded and ele ~= PlayerFrame and ele ~= TargetFrame and ele.GetMAEle and ele:GetMAEle() and ele:GetMAEle() ~= PlayerFrame and ele:GetMAEle() ~= TargetFrame) then
+				if tContains(MoveAny:GetAlphaFrames(), ele) then
 					ele:SetAlpha(1)
 					MoveAny:SetMouseEleAlpha(ele)
+				elseif ele.GetMAEle then
+					ele = ele:GetMAEle()
+					if ele then
+						ele:SetAlpha(1)
+						MoveAny:SetMouseEleAlpha(ele)
+					end
+				elseif lastEle then
+					lastEle = nil
+					MoveAny:UpdateAlphas()
 				end
-			elseif lastEle then
-				lastEle = nil
-				MoveAny:UpdateAlphas()
 			end
 		end
-	elseif lastEle then
+	elseif lastEle ~= nil then
 		lastEle = nil
 		MoveAny:UpdateAlphas()
 	end
 
-	C_Timer.After(0.11, MoveAny.CheckAlphas)
+	C_Timer.After(0.12, MoveAny.CheckAlphas)
 end
 
 function MoveAny:UpdateAlpha(ele, mouseEle)
@@ -1497,7 +1531,9 @@ function MoveAny:UpdateAlpha(ele, mouseEle)
 			local alphaIsInPetBattle = MoveAny:GetEleOption(name, "ALPHAISINPETBATTLE", 1, "Alpha7")
 			local alphaNotInCombat = MoveAny:GetEleOption(name, "ALPHANOTINCOMBAT", 1, "Alpha8")
 			if not dufloaded or (dufloaded and ele ~= PlayerFrame and ele ~= TargetFrame) then
-				if MoveAny.IsInPetBattle and MoveAny:IsInPetBattle() then
+				if ele.ma_show ~= nil and ele.ma_show == false then
+					MoveAny:SetEleAlpha(ele, 0)
+				elseif MoveAny.IsInPetBattle and MoveAny:IsInPetBattle() then
 					MoveAny:SetEleAlpha(ele, alphaIsInPetBattle)
 				elseif ele == mouseEle then
 					MoveAny:SetEleAlpha(ele, 1)

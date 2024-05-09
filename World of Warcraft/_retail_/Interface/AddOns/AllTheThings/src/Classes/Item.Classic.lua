@@ -3,13 +3,14 @@ local L = app.L;
 
 -- Global locals
 local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, GetItemCount, GetItemInfo, GetItemInfoInstant
+---@diagnostic disable-next-line: deprecated
 	= ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, GetItemCount, GetItemInfo, GetItemInfoInstant;
 local C_QuestLog_IsOnQuest
 	= C_QuestLog.IsOnQuest;
 
 -- App locals
-local GetRelativeValue, IsQuestFlaggedCompletedForObject, SearchForField, SearchForFieldContainer
-	= app.GetRelativeValue, app.IsQuestFlaggedCompletedForObject, app.SearchForField, app.SearchForFieldContainer;
+local AssignChildren, GetRelativeValue, IsQuestFlaggedCompletedForObject, NestObject, SearchForField, SearchForFieldContainer
+	= app.AssignChildren, app.GetRelativeValue, app.IsQuestFlaggedCompletedForObject, app.NestObject, app.SearchForField, app.SearchForFieldContainer;
 
 local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
 	local link = select(2, GetItemInfo(id));
@@ -109,9 +110,6 @@ local isCollectibleTransmog = function(t)
 		end
 		local itemID = t.itemID;
 		if itemID and t.collectible ~= false then
-			--if t.rwp or (t.u and (t.u == 2 or t.u == 3 or t.u == 4)) then
-			--	print("Missing SourceID for RWP", itemID);
-			--end
 			t.missingSourceID = true;
 		end
 	end
@@ -149,13 +147,6 @@ local collectedAsTransmog = function(t)
 		end
 	end
 end;
-local isCollectibleTransmogField = function(t)
-	if t.collectibleAsCost then return true; end
-	if app.Settings.Collectibles.Transmog then
-		if app.Settings.OnlyRWP and not t.rwp then return false; end
-		return true;
-	end
-end
 local itemFields = {
 	["text"] = function(t)
 		return t.link;
@@ -197,13 +188,25 @@ local itemFields = {
 };
 app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 "AsTransmog", {
-	collectible = isCollectibleTransmogField,
+	collectible = app.GameBuildVersion >= 40000 and function(t)
+		if t.collectibleAsCost then return true; end
+		return app.Settings.Collectibles.Transmog;
+	end or function(t)
+		if t.collectibleAsCost then return true; end
+		if app.Settings.Collectibles.Transmog then
+			if app.Settings.OnlyRWP and not t.rwp then return false; end
+			return true;
+		end
+	end,
 	collected = function(t)
 		if t.collectedAsCost == false then
 			return;
 		end
 		return collectedAsTransmog(t);
 	end,
+	["description"] = app.GameBuildVersion > 40000 and function(t)
+		return "Blizzard isn't detecting white/grey quality transmogs as collectible, so for the meantime, send this item to an alt to hold on to until they fix it. If its soulbound and from a quest, you're probably okay to vendor it.";
+	end or nil,
 }, isCollectibleTransmog,
 "WithQuest", {
 	collectible = function(t)
@@ -393,7 +396,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 
 			-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
 			local Search = app.SearchForObject;
-			local uniques, heirloom, upgrades = {};
+			local uniques, heirloom, upgrades = {}, nil, nil;
 			for _,itemID in ipairs(heirloomIDs) do
 				if not uniques[itemID] then
 					uniques[itemID] = true;
@@ -425,7 +428,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 			-- build groups for each upgrade token
 			-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
 			-- where the sources of the upgrade tokens exist
-			for i,item in ipairs(armorTokens) do
+			for _,item in ipairs(armorTokens) do
 				for _,token in ipairs(SearchForField("itemID", item.itemID)) do
 					-- ensure the tokens do not have a modID attached
 					token.modID = nil;
@@ -438,7 +441,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 					end
 				end
 			end
-			for i,item in ipairs(weaponTokens) do
+			for _,item in ipairs(weaponTokens) do
 				for _,token in ipairs(SearchForField("itemID", item.itemID)) do
 					-- ensure the tokens do not have a modID attached
 					token.modID = nil;

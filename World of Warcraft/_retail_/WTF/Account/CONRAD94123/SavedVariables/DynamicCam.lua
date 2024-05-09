@@ -8,8 +8,8 @@ DynamicCamDB = {
 		["Qpe - Ravencrest"] = "Default",
 		["Qpcheeso - Sylvanas"] = "Default",
 		["Qpcheese - Todeswache"] = "Default",
-		["Qpefromage - Draenor"] = "Default",
 		["Qpet - Kor'gall"] = "Default",
+		["Qpefromage - Draenor"] = "Default",
 		["Qpfromage - Blackrock"] = "Default",
 	},
 	["profiles"] = {

@@ -1,0 +1,26 @@
+## Interface: 100206
+## Version: 3.4.0
+## Title: FrameColor
+## Author: Slothpala
+## SavedVariables: FrameColorDB
+## AddonCompartmentFunc: FrameColor_OnAddonCompartmentClick
+## IconTexture: Interface\AddOns\FrameColor\Textures\Icon.tga
+## OptionalDeps: Ace3, LibDeflate
+## X-Curse-Project-ID: 693720
+
+embeds.xml
+Init.lua
+locales.xml
+
+Core.lua
+Options\Options.lua
+Options\OptionsFrame.lua
+DB.lua
+SkinEngine.lua
+UnitColors.lua
+ProfileSharing.lua
+ColorControl.lua
+HookRegistry.lua
+Api.lua
+
+modules.xml

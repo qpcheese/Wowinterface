@@ -1,2008 +1,2031 @@
 
 RCLootCouncilDB = {
+	["profileKeys"] = {
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpcheese - Chamber of Aspects"] = "Default",
+		["Qpebank - Draenor"] = "Default",
+		["Qpc - Draenor"] = "Default",
+		["Zelení - Draenor"] = "Default",
+		["Flurrq - Ragnaros"] = "Default",
+		["Djagon - Ragnaros"] = "Default",
+		["Qubit - Ragnaros"] = "Default",
+		["Myfficraider - Ragnaros"] = "Default",
+		["Cyclosarin - Ragnaros"] = "Default",
+		["Laurs - Ragnaros"] = "Default",
+		["Qpe - Ravencrest"] = "Default",
+		["Qpcheese - Ragnaros"] = "Default",
+		["Jerwin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qpew - Ragnaros"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+	},
 	["global"] = {
 		["log"] = {
-			"<01:30:43> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1]
-			"<01:30:48> <DEBUG>		GetPlayersGuildRank()", -- [2]
-			"<01:30:48> <DEBUG>		GetPlayersGuildRank()", -- [3]
-			"<01:30:48> <DEBUG>		Found Guild Rank: Raider", -- [4]
-			"<01:31:28> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [5]
-			"<01:31:28> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Buffdotcom-Ragnaros", -- [6]
-			"<01:31:28> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Buffdotcom-Ragnaros", -- [7]
-			"<01:31:28> <WARNING>		Non-ML:	Buffdotcom-Ragnaros	sent Mldb!", -- [8]
-			"<01:31:30> <DEBUG>		GetML()", -- [9]
-			"<01:31:30> <DEBUG>		Resetting council as we have a new ML!", -- [10]
-			"<01:31:30> <INFO>		MasterLooter	Buffdotcom-Ragnaros	LootMethod	personalloot", -- [11]
-			"<01:31:30> <Comm>		^1^Scouncil^T^N1^T^S3682-0B2BF87A^B^t^t^^	PARTY	Buffdotcom-Ragnaros", -- [12]
-			"<01:31:30> <DEBUG>		isCouncil	false", -- [13]
-			"<01:31:45> <DEBUG>		Timer MLdb_check passed", -- [14]
-			"<01:31:45> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Buffdotcom-Ragnaros", -- [15]
-			"<01:31:45> <INFO>		OnMLDBReceived", -- [16]
-			"<01:33:08> <DEBUG>		Event:	GROUP_LEFT	1	Party-3682-1-0000386866DD", -- [17]
-			"<01:33:08> <DEBUG>		GetML()", -- [18]
-			"<01:33:08> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [19]
-			"<01:33:10> <DEBUG>		GetML()", -- [20]
-			"<01:33:10> <Data.Player>		CreatePlayer	Player-1615-0A623298", -- [21]
-			"<01:33:10> <DEBUG>		Resetting council as we have a new ML!", -- [22]
-			"<01:33:10> <INFO>		MasterLooter	варикафура-Ревущийфьорд	LootMethod	personalloot", -- [23]
-			"<01:33:25> <DEBUG>		Timer MLdb_check passed", -- [24]
-			"<01:34:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [25]
-			"<01:34:43> <INFO>		UpdatePlayersData()", -- [26]
-			"<01:34:44> <DEBUG>		GetML()", -- [27]
-			"<01:35:17> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papee-Ragnaros", -- [28]
-			"<01:35:17> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [29]
-			"<01:35:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [30]
-			"<01:35:57> <INFO>		UpdatePlayersData()", -- [31]
-			"<01:35:59> <DEBUG>		GetML()", -- [32]
-			"<01:35:59> <Data.Player>		CreatePlayer	Player-1305-0AD9E380", -- [33]
-			"<01:43:21> <DEBUG>		Event:	ENCOUNTER_START	1043	Grand Vizier Ertan	8	5", -- [34]
-			"<01:43:21> <INFO>		UpdatePlayersData()", -- [35]
-			"<01:45:41> <DEBUG>		Event:	ENCOUNTER_END	1043	Grand Vizier Ertan	8	5	1", -- [36]
-			"<01:51:50> <DEBUG>		Event:	ENCOUNTER_START	1041	Altairus	8	5", -- [37]
-			"<01:51:50> <INFO>		UpdatePlayersData()", -- [38]
-			"<01:54:38> <DEBUG>		Event:	ENCOUNTER_END	1041	Altairus	8	5	1", -- [39]
-			"<01:59:23> <DEBUG>		Event:	ENCOUNTER_START	1042	Asaad	8	5", -- [40]
-			"<01:59:23> <INFO>		UpdatePlayersData()", -- [41]
-			"<02:03:16> <DEBUG>		Event:	ENCOUNTER_END	1042	Asaad	8	5	1", -- [42]
-			"<02:03:19> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1042	133362	|cffa335ee|Hitem:133362::::::::70:62::16:7:9331:6652:9223:9220:9144:3323:8767:1:28:1279:::::|h[Billowing Skydrape]|h|r	1	Tambra-Kazzak	DEMONHUNTER", -- [43]
-			"<02:03:19> <Comm>		^1^Sl^T^N1^S389539^t^^	PARTY	Tambra-Kazzak", -- [44]
-			"<02:03:22> <Comm>		^1^Stradable^T^N1^S|cffa335ee|Hitem:133362::::::::70:581::16:7:9331:6652:9223:9220:9144:3323:8767:1:28:1279:::::|h[Billowing~`Skydrape]|h|r^N2^S389539^t^^	PARTY	Tambra-Kazzak", -- [45]
-			"<02:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [46]
-			"<02:03:34> <DEBUG>		Ignoring	nil	as it's a currency", -- [47]
-			"<02:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::|h[Leggings of Iridescent Clouds]|h|r	4	1	GameObject-0-4252-657-24651-389539-00004062C5	1", -- [48]
-			"<02:03:34> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::|h[Leggings of Iridescent Clouds]|h|r	4", -- [49]
-			"<02:03:34> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1042	133250	|cffa335ee|Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::|h[Leggings of Iridescent Clouds]|h|r	1	Qpfromage	MAGE", -- [50]
-			"<02:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [51]
-			"<02:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [52]
-			"<02:03:34> <Comm>		^1^Sl^T^N1^S389539^t^^	PARTY	Qpfromage-Ragnaros", -- [53]
-			"<02:03:34> <Comm>		^1^Sl^T^N1^S389539^t^^	PARTY	Qpfromage-Ragnaros", -- [54]
-			"<02:03:36> <DEBUG>		Storage:New	|cffa335ee|Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::|h[Leggings of Iridescent Clouds]|h|r	temp", -- [55]
-			"<02:03:36> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::||h[Leggings of Iridescent Clouds]||h||r	5", -- [56]
-			"<02:03:36> <DEBUG>		Found item at	3	23", -- [57]
-			"<02:03:37> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::||h[Leggings of Iridescent Clouds]||h||r	5", -- [58]
-			"<02:03:37> <DEBUG>		Found item at	3	23", -- [59]
-			"<02:03:37> <Comm>		^1^Stradable^T^N1^S|cffa335ee|Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::|h[Leggings~`of~`Iridescent~`Clouds]|h|r^N2^S389539^t^^	PARTY	Qpfromage-Ragnaros", -- [60]
-			"<02:03:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [61]
-			"<02:03:50> <INFO>		UpdatePlayersData()", -- [62]
-			"<02:03:52> <DEBUG>		GetML()", -- [63]
-			"<02:04:44> <DEBUG>		Event:	GROUP_LEFT	1	Party-1615-1-000038686A76", -- [64]
-			"<02:04:44> <DEBUG>		GetML()", -- [65]
-			"07/26/23", -- [66]
-			"<02:31:57> <INFO>		Logged In", -- [67]
-			"<02:31:57> <INFO>[ML]		Init", -- [68]
-			"<02:31:57> <INFO>		RCLootCouncil	TradeUI enabled", -- [69]
-			"<02:32:03> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [70]
-			"<02:32:03> <DEBUG>		ActivateSkin	bfa", -- [71]
-			"<02:32:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [72]
-			"<02:32:06> <INFO>		UpdatePlayersData()", -- [73]
-			"<02:32:06> <INFO>		Player relog...", -- [74]
-			"<02:32:07> <DEBUG>		GetPlayersGuildRank()", -- [75]
-			"<02:32:07> <DEBUG>		Found Guild Rank: Raider", -- [76]
-			"<02:32:10> <DEBUG>		GetML()", -- [77]
-			"<02:32:10> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::||h[Leggings of Iridescent Clouds]||h||r	5", -- [78]
-			"<02:32:10> <DEBUG>		Found item at	3	23", -- [79]
-			"<02:32:10> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::||h[Leggings of Iridescent Clouds]||h||r	5", -- [80]
-			"<02:32:10> <DEBUG>		Found item at	3	23", -- [81]
-			"<02:32:10> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [82]
-			"07/26/23", -- [83]
-			"<18:13:02> <INFO>		Logged In", -- [84]
-			"<18:13:02> <INFO>[ML]		Init", -- [85]
-			"<18:13:02> <INFO>		RCLootCouncil	TradeUI enabled", -- [86]
-			"<18:13:09> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [87]
-			"<18:13:09> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [88]
-			"<18:13:09> <DEBUG>		ActivateSkin	bfa", -- [89]
-			"<18:13:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [90]
-			"<18:13:11> <INFO>		UpdatePlayersData()", -- [91]
-			"<18:13:11> <INFO>		Player relog...", -- [92]
-			"<18:13:12> <DEBUG>		GetPlayersGuildRank()", -- [93]
-			"<18:13:12> <DEBUG>		GetPlayersGuildRank()", -- [94]
-			"<18:13:12> <DEBUG>		Found Guild Rank: Raider", -- [95]
-			"<18:13:15> <DEBUG>		GetML()", -- [96]
-			"<18:13:15> <WARNING>		ItemStorage, db item no link or timeout	|cffa335ee|Hitem:133250::::::::70:62::33:7:9331:6652:9223:9221:9144:3323:8767:1:28:1279:::::|h[Leggings of Iridescent Clouds]|h|r	12660	1690331530	temp", -- [97]
-			"<18:13:15> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [98]
-			"<18:13:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zeroe-Ragnaros", -- [99]
-			"<18:32:13> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Nèlliel-Ragnaros", -- [100]
-			"<18:34:59> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Infernodh-Ragnaros", -- [101]
-			"<18:38:22> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Infernodh-Ragnaros", -- [102]
-			"<18:39:49> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Nèlliel-Ragnaros", -- [103]
-			"07/26/23", -- [104]
-			"<20:21:52> <INFO>		Logged In", -- [105]
-			"<20:21:52> <INFO>[ML]		Init", -- [106]
-			"<20:21:52> <INFO>		RCLootCouncil	TradeUI enabled", -- [107]
-			"<20:21:59> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [108]
-			"<20:21:59> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [109]
-			"<20:21:59> <DEBUG>		ActivateSkin	bfa", -- [110]
-			"<20:22:02> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [111]
-			"<20:22:02> <INFO>		UpdatePlayersData()", -- [112]
-			"<20:22:02> <INFO>		Player relog...", -- [113]
-			"<20:22:04> <DEBUG>		GetPlayersGuildRank()", -- [114]
-			"<20:22:04> <DEBUG>		GetPlayersGuildRank()", -- [115]
-			"<20:22:04> <DEBUG>		Found Guild Rank: Raider", -- [116]
-			"<20:22:07> <DEBUG>		GetML()", -- [117]
-			"<20:22:07> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [118]
-			"<20:22:07> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mordekaisar-Ragnaros", -- [119]
-			"<20:22:20> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [120]
-			"<20:22:22> <DEBUG>		GetML()", -- [121]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1390-0AF63C1B", -- [122]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1403-0A69ADE2", -- [123]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1621-0B09C7B6", -- [124]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1390-08460BF8", -- [125]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1305-0C8060FA", -- [126]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1305-06FCD3A0", -- [127]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1084-0AA3352A", -- [128]
-			"<20:22:22> <Data.Player>		CreatePlayer	Player-1390-086A105F", -- [129]
-			"<20:22:22> <DEBUG>		Resetting council as we have a new ML!", -- [130]
-			"<20:22:22> <INFO>		MasterLooter	Sûnder-Hyjal	LootMethod	personalloot", -- [131]
-			"<20:22:37> <DEBUG>		Timer MLdb_check passed", -- [132]
-			"<20:22:37> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Qpfromage-Ragnaros", -- [133]
-			"<20:22:37> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Qpfromage-Ragnaros", -- [134]
-			"<20:22:37> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Brussewayn-Kazzak", -- [135]
-			"<20:22:37> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Brussewayn-Kazzak", -- [136]
-			"<20:22:58> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Aeranoss-MarécagedeZangar", -- [137]
-			"<20:24:43> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Nèlliel-Ragnaros", -- [138]
-			"<20:24:44> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mordekaisar-Ragnaros", -- [139]
-			"<20:28:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [140]
-			"<20:28:12> <INFO>		UpdatePlayersData()", -- [141]
-			"<20:28:14> <DEBUG>		GetML()", -- [142]
-			"<20:28:14> <Data.Player>		CreatePlayer	Player-3674-05AEAA2B", -- [143]
-			"<20:28:14> <Data.Player>		CreatePlayer	Player-1621-0854C3FC", -- [144]
-			"<20:28:14> <Data.Player>		CreatePlayer	Player-1127-0A4CA8A2", -- [145]
-			"<20:28:14> <Data.Player>		CreatePlayer	Player-3674-0A8089CA", -- [146]
-			"<20:28:14> <Data.Player>		CreatePlayer	Player-1303-0592D932", -- [147]
-			"<20:28:14> <Data.Player>		CreatePlayer	Player-1390-09E57D63", -- [148]
-			"<20:28:30> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	552689	0	0", -- [149]
-			"<20:28:31> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [150]
-			"<20:28:31> <INFO>		UpdatePlayersData()", -- [151]
-			"<20:28:32> <DEBUG>		GetML()", -- [152]
-			"<20:28:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [153]
-			"<20:28:53> <INFO>		UpdatePlayersData()", -- [154]
-			"<20:28:54> <DEBUG>		GetML()", -- [155]
-			"<20:29:36> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Altdani-Ragnaros", -- [156]
-			"<20:29:36> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mordekaisar-Ragnaros", -- [157]
-			"<20:30:43> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	552556	0	0", -- [158]
-			"<20:30:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [159]
-			"<20:30:43> <INFO>		UpdatePlayersData()", -- [160]
-			"<20:30:45> <DEBUG>		GetML()", -- [161]
-			"<20:30:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [162]
-			"<20:30:52> <INFO>		UpdatePlayersData()", -- [163]
-			"<20:30:53> <DEBUG>		GetML()", -- [164]
-			"<20:33:56> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^STrial^N4^N0^N5^N445.125^N6^N254^t^^	RAID	Amenía-TarrenMill", -- [165]
-			"<20:33:56> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Sreconnect^t^^	RAID	Amenía-TarrenMill", -- [166]
-			"<20:34:08> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Amenía-TarrenMill", -- [167]
-			"<20:34:08> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Amenía-TarrenMill", -- [168]
-			"<20:35:38> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	552261	0	0", -- [169]
-			"<20:35:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [170]
-			"<20:35:38> <INFO>		UpdatePlayersData()", -- [171]
-			"<20:35:40> <DEBUG>		GetML()", -- [172]
-			"<20:35:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [173]
-			"<20:35:50> <INFO>		UpdatePlayersData()", -- [174]
-			"<20:35:51> <DEBUG>		GetML()", -- [175]
-			"<20:35:59> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [176]
-			"<20:36:01> <DEBUG>		GetML()", -- [177]
-			"<20:36:01> <DEBUG>		Resetting council as we have a new ML!", -- [178]
-			"<20:36:01> <INFO>		MasterLooter	Retardinxx-Draenor	LootMethod	personalloot", -- [179]
-			"<20:36:01> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Retardinxx-Draenor", -- [180]
-			"<20:36:01> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Retardinxx-Draenor", -- [181]
-			"<20:36:01> <INFO>		OnMLDBReceived", -- [182]
-			"<20:36:01> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [183]
-			"<20:36:01> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [184]
-			"<20:36:01> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^STANK^N4^SSans~`guilde^N6^N0^N7^N443.75^N8^N73^t^^	RAID	Karno-Hyjal", -- [185]
-			"<20:36:01> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^STrial^N6^N0^N7^N445.125^N8^N254^t^^	RAID	Amenía-TarrenMill", -- [186]
-			"<20:36:01> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [187]
-			"<20:36:01> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^SRoster^N6^N0^N7^N444.125^N8^N263^t^^	RAID	Linte-Hyjal", -- [188]
-			"<20:36:01> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [189]
-			"<20:36:03> <Comm>		^1^Scouncil^T^N1^T^S1403-0A69ADE2^B^t^t^^	RAID	Retardinxx-Draenor", -- [190]
-			"<20:36:03> <DEBUG>		isCouncil	false", -- [191]
-			"<20:36:16> <Comm>		^1^SStartHandleLoot^T^t^^	RAID	Retardinxx-Draenor", -- [192]
-			"<20:36:16> <DEBUG>		Timer MLdb_check passed", -- [193]
-			"<20:38:32> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SMLdb_request^t^^	RAID	Tomorrowland-Drak'thul", -- [194]
-			"<20:38:32> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^Scouncil_request^t^^	RAID	Tomorrowland-Drak'thul", -- [195]
-			"<20:38:32> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Retardinxx-Draenor", -- [196]
-			"<20:38:32> <INFO>		OnMLDBReceived", -- [197]
-			"<20:38:32> <Comm>		^1^Scouncil^T^N1^T^S1403-0A69ADE2^B^t^t^^	RAID	Retardinxx-Draenor", -- [198]
-			"<20:38:32> <DEBUG>		isCouncil	false", -- [199]
-			"<20:45:21> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	551678	0	0", -- [200]
-			"<20:45:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [201]
-			"<20:45:21> <INFO>		UpdatePlayersData()", -- [202]
-			"<20:45:23> <DEBUG>		GetML()", -- [203]
-			"<20:45:23> <Data.Player>		CreatePlayer	Player-1390-0C8502ED", -- [204]
-			"<20:45:23> <Data.Player>		CreatePlayer	Player-1092-080D1C5C", -- [205]
-			"<20:45:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [206]
-			"<20:45:29> <INFO>		UpdatePlayersData()", -- [207]
-			"<20:45:30> <DEBUG>		GetML()", -- [208]
-			"<20:46:48> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	551591	0	0", -- [209]
-			"<20:46:48> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Retardinxx-Draenor", -- [210]
-			"<20:46:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [211]
-			"<20:46:48> <INFO>		UpdatePlayersData()", -- [212]
-			"<20:46:49> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [213]
-			"<20:46:50> <DEBUG>		GetML()", -- [214]
-			"<20:46:50> <DEBUG>		Resetting council as we have a new ML!", -- [215]
-			"<20:46:50> <INFO>		MasterLooter	Sûnder-Hyjal	LootMethod	personalloot", -- [216]
-			"<20:46:51> <DEBUG>		GetML()", -- [217]
-			"<20:47:05> <DEBUG>		Timer MLdb_check passed", -- [218]
-			"<20:48:33> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Dwafzik-TarrenMill", -- [219]
-			"<20:48:33> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Dwafzik-TarrenMill", -- [220]
-			"<20:48:43> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Linte-Hyjal", -- [221]
-			"<20:49:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	3	Xacyum-TwistingNether	HUNTER", -- [222]
-			"<20:51:08> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [223]
-			"<20:51:08> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [224]
-			"<20:51:17> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [225]
-			"<20:51:17> <INFO>		UpdatePlayersData()", -- [226]
-			"<20:51:17> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [227]
-			"<20:51:22> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Linte-Hyjal", -- [228]
-			"<20:51:22> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Linte-Hyjal", -- [229]
-			"<20:57:41> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [230]
-			"<20:58:59> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Dangerss-Ragnaros", -- [231]
-			"<21:01:51> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [232]
-			"<21:01:51> <INFO>		UpdatePlayersData()", -- [233]
-			"<21:02:54> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [234]
-			"<21:03:31> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [235]
-			"<21:04:09> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mordekaisar-Ragnaros", -- [236]
-			"<21:06:55> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [237]
-			"<21:06:55> <INFO>		UpdatePlayersData()", -- [238]
-			"<21:09:06> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [239]
-			"<21:10:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Mordekaisar-Ragnaros", -- [240]
-			"<21:10:22> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [241]
-			"<21:11:01> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [242]
-			"<21:11:01> <INFO>		UpdatePlayersData()", -- [243]
-			"<21:14:27> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [244]
-			"<21:19:25> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [245]
-			"<21:19:25> <INFO>		UpdatePlayersData()", -- [246]
-			"<21:22:17> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [247]
-			"<21:24:34> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Altdani-Ragnaros", -- [248]
-			"<21:24:34> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [249]
-			"<21:25:07> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [250]
-			"<21:25:07> <INFO>		UpdatePlayersData()", -- [251]
-			"<21:26:02> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [252]
-			"<21:27:05> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [253]
-			"<21:27:05> <INFO>		UpdatePlayersData()", -- [254]
-			"<21:30:39> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [255]
-			"<21:32:26> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Infernodh-Ragnaros", -- [256]
-			"<21:32:27> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [257]
-			"<21:33:02> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [258]
-			"<21:33:02> <INFO>		UpdatePlayersData()", -- [259]
-			"<21:36:06> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [260]
-			"<21:38:18> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [261]
-			"<21:38:18> <INFO>		UpdatePlayersData()", -- [262]
-			"<21:41:11> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [263]
-			"<21:44:07> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [264]
-			"<21:44:07> <INFO>		UpdatePlayersData()", -- [265]
-			"<21:46:59> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [266]
-			"<21:48:14> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [267]
-			"<21:48:14> <INFO>		UpdatePlayersData()", -- [268]
-			"<21:49:09> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [269]
-			"<21:50:25> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [270]
-			"<21:51:34> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [271]
-			"<21:51:34> <INFO>		UpdatePlayersData()", -- [272]
-			"<21:54:35> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [273]
-			"<21:55:48> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [274]
-			"<21:55:48> <INFO>		UpdatePlayersData()", -- [275]
-			"<21:57:56> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Voljinson-Ragnaros", -- [276]
-			"<21:57:57> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [277]
-			"<21:58:57> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [278]
-			"<22:01:05> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [279]
-			"<22:01:05> <INFO>		UpdatePlayersData()", -- [280]
-			"<22:05:38> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [281]
-			"<22:07:32> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [282]
-			"<22:07:32> <INFO>		UpdatePlayersData()", -- [283]
-			"<22:08:31> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [284]
-			"<22:09:55> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [285]
-			"<22:09:55> <INFO>		UpdatePlayersData()", -- [286]
-			"<22:10:11> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papee-Ragnaros", -- [287]
-			"<22:10:11> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [288]
-			"<22:14:46> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [289]
-			"<22:17:00> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [290]
-			"<22:17:00> <INFO>		UpdatePlayersData()", -- [291]
-			"<22:20:02> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [292]
-			"<22:20:30> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvsham-Ragnaros", -- [293]
-			"<22:20:30> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [294]
-			"<22:24:02> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [295]
-			"<22:24:04> <DEBUG>		GetML()", -- [296]
-			"<22:24:04> <Data.Player>		CreatePlayer	Player-1305-0AE8B190", -- [297]
-			"<22:24:04> <Data.Player>		CreatePlayer	Player-3391-0C636F3D", -- [298]
-			"<22:24:04> <Data.Player>		CreatePlayer	Player-1084-0A9DA3CC", -- [299]
-			"<22:24:04> <DEBUG>		Resetting council as we have a new ML!", -- [300]
-			"<22:24:04> <INFO>		MasterLooter	Retardinxx-Draenor	LootMethod	personalloot", -- [301]
-			"<22:24:04> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Retardinxx-Draenor", -- [302]
-			"<22:24:04> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Retardinxx-Draenor", -- [303]
-			"<22:24:04> <INFO>		OnMLDBReceived", -- [304]
-			"<22:24:04> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^STrial^N6^N0^N7^N445.125^N8^N254^t^^	RAID	Amenía-TarrenMill", -- [305]
-			"<22:24:05> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [306]
-			"<22:24:05> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [307]
-			"<22:24:05> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^STANK^N4^SSans~`guilde^N6^N0^N7^N443.75^N8^N73^t^^	RAID	Karno-Hyjal", -- [308]
-			"<22:24:05> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^SRoster^N6^N0^N7^N444.5^N8^N263^t^^	RAID	Linte-Hyjal", -- [309]
-			"<22:24:05> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [310]
-			"<22:24:05> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [311]
-			"<22:24:05> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [312]
-			"<22:24:06> <Comm>		^1^Scouncil^T^N1^T^S1403-0A69ADE2^B^t^t^^	RAID	Retardinxx-Draenor", -- [313]
-			"<22:24:06> <DEBUG>		isCouncil	false", -- [314]
-			"<22:24:19> <DEBUG>		Timer MLdb_check passed", -- [315]
-			"<22:25:56> <Comm>		^1^SpI^T^N1^STANK^N2^SSans~`guilde^N4^N0^N5^N443.75^N6^N73^t^^	RAID	Karno-Hyjal", -- [316]
-			"<22:25:56> <Comm>		^1^Sxrealm^T^N1^SRetardinxx-Draenor^N2^Sreconnect^t^^	RAID	Karno-Hyjal", -- [317]
-			"<22:25:56> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^Smldb^N3^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Retardinxx-Draenor", -- [318]
-			"<22:25:56> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^Scouncil^N3^T^S1403-0A69ADE2^B^t^t^^	RAID	Retardinxx-Draenor", -- [319]
-			"<22:29:24> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [320]
-			"<22:29:26> <DEBUG>		GetML()", -- [321]
-			"<22:29:26> <DEBUG>		Resetting council as we have a new ML!", -- [322]
-			"<22:29:26> <INFO>		MasterLooter	Sûnder-Hyjal	LootMethod	personalloot", -- [323]
-			"<22:29:26> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Retardinxx-Draenor", -- [324]
-			"<22:29:33> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [325]
-			"<22:29:35> <DEBUG>		GetML()", -- [326]
-			"<22:29:35> <DEBUG>		Resetting council as we have a new ML!", -- [327]
-			"<22:29:35> <INFO>		MasterLooter	Karno-Hyjal	LootMethod	personalloot", -- [328]
-			"<22:29:35> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Karno-Hyjal", -- [329]
-			"<22:29:35> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Karno-Hyjal", -- [330]
-			"<22:29:35> <INFO>		OnMLDBReceived", -- [331]
-			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [332]
-			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^STrial^N6^N0^N7^N445.125^N8^N254^t^^	RAID	Amenía-TarrenMill", -- [333]
-			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SObsidian^N6^N0^N7^N444.75^N8^N70^t^^	RAID	Retardinxx-Draenor", -- [334]
-			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [335]
-			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [336]
-			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [337]
-			"<22:29:36> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [338]
-			"<22:29:37> <Comm>		^1^Scouncil^T^N1^T^S1390-086A105F^B^t^t^^	RAID	Karno-Hyjal", -- [339]
-			"<22:29:37> <DEBUG>		isCouncil	false", -- [340]
-			"<22:29:41> <DEBUG>		Timer MLdb_check passed", -- [341]
-			"<22:29:47> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Karno-Hyjal", -- [342]
-			"<22:29:50> <DEBUG>		Timer MLdb_check passed", -- [343]
-			"<22:30:41> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [344]
-			"<22:30:43> <DEBUG>		GetML()", -- [345]
-			"<22:30:43> <Data.Player>		CreatePlayer	Player-1390-0AF6393B", -- [346]
-			"<22:30:43> <DEBUG>		Resetting council as we have a new ML!", -- [347]
-			"<22:30:43> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [348]
-			"<22:30:43> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Strongdps-Hyjal", -- [349]
-			"<22:30:43> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Strongdps-Hyjal", -- [350]
-			"<22:30:43> <INFO>		OnMLDBReceived", -- [351]
-			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [352]
-			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [353]
-			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SObsidian^N6^N0^N7^N444.75^N8^N70^t^^	RAID	Retardinxx-Draenor", -- [354]
-			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [355]
-			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [356]
-			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^STrial^N6^N0^N7^N445.125^N8^N254^t^^	RAID	Amenía-TarrenMill", -- [357]
-			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [358]
-			"<22:30:45> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [359]
-			"<22:30:58> <DEBUG>		Timer MLdb_check passed", -- [360]
-			"<22:31:03> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [361]
-			"<22:33:39> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [362]
-			"<22:33:39> <INFO>		UpdatePlayersData()", -- [363]
-			"<22:36:18> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [364]
-			"<22:37:22> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [365]
-			"<22:37:22> <INFO>		UpdatePlayersData()", -- [366]
-			"<22:38:39> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Mecap-Ragnaros", -- [367]
-			"<22:38:39> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [368]
-			"<22:39:31> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [369]
-			"<22:40:37> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [370]
-			"<22:40:37> <INFO>		UpdatePlayersData()", -- [371]
-			"<22:44:13> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [372]
-			"<22:47:55> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [373]
-			"<22:47:55> <INFO>		UpdatePlayersData()", -- [374]
-			"<22:50:21> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [375]
-			"<22:52:03> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [376]
-			"<22:52:03> <INFO>		UpdatePlayersData()", -- [377]
-			"<22:56:36> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [378]
-			"<22:58:56> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [379]
-			"<22:58:56> <INFO>		UpdatePlayersData()", -- [380]
-			"<23:02:03> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [381]
-			"<23:03:42> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [382]
-			"<23:03:42> <INFO>		UpdatePlayersData()", -- [383]
-			"<23:07:59> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [384]
-			"<23:09:31> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [385]
-			"<23:09:31> <INFO>		UpdatePlayersData()", -- [386]
-			"<23:14:30> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [387]
-			"<23:17:28> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [388]
-			"<23:17:28> <INFO>		UpdatePlayersData()", -- [389]
-			"<23:19:17> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [390]
-			"<23:20:27> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [391]
-			"<23:20:27> <INFO>		UpdatePlayersData()", -- [392]
-			"<23:25:17> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [393]
-			"<23:25:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [394]
-			"<23:25:40> <INFO>		UpdatePlayersData()", -- [395]
-			"<23:25:41> <DEBUG>		GetML()", -- [396]
-			"<23:26:25> <DEBUG>		Event:	GROUP_LEFT	1	Party-1390-1-0000614B3FB2", -- [397]
-			"<23:26:25> <DEBUG>		GetML()", -- [398]
-			"<23:27:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rap-Ragnaros", -- [399]
-			"<23:27:03> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [400]
-			"<00:01:51> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvlife-Ragnaros", -- [401]
-			"<00:01:51> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [402]
-			"<00:02:52> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvsham-Ragnaros", -- [403]
-			"<00:02:52> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [404]
-			"<00:05:16> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [405]
-			"<00:05:17> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [406]
-			"<00:06:19> <DEBUG>		Event:	LOOT_READY	true", -- [407]
-			"<00:06:31> <DEBUG>		Event:	LOOT_READY	true", -- [408]
-			"<00:06:45> <DEBUG>		Event:	LOOT_READY	true", -- [409]
-			"<00:06:57> <DEBUG>		Event:	LOOT_READY	true", -- [410]
-			"<00:07:05> <DEBUG>		Event:	LOOT_READY	true", -- [411]
-			"<00:07:17> <DEBUG>		Event:	LOOT_READY	true", -- [412]
-			"<00:07:31> <DEBUG>		Event:	LOOT_READY	true", -- [413]
-			"<00:07:53> <DEBUG>		Event:	LOOT_READY	true", -- [414]
-			"<00:11:17> <DEBUG>		Event:	LOOT_READY	true", -- [415]
-			"<00:11:18> <DEBUG>		Event:	LOOT_READY	true", -- [416]
-			"<00:11:26> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papee-Ragnaros", -- [417]
-			"<00:11:26> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [418]
-			"<00:14:46> <DEBUG>		Event:	LOOT_READY	true", -- [419]
-			"<00:14:55> <DEBUG>		Event:	LOOT_READY	true", -- [420]
-			"<00:14:58> <DEBUG>		Event:	LOOT_READY	true", -- [421]
-			"<00:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [422]
-			"<00:15:10> <DEBUG>		Event:	LOOT_READY	true", -- [423]
-			"<00:15:15> <DEBUG>		Event:	LOOT_READY	true", -- [424]
-			"<00:15:24> <DEBUG>		Event:	LOOT_READY	true", -- [425]
-			"<00:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [426]
-			"<00:15:43> <DEBUG>		Event:	LOOT_READY	true", -- [427]
-			"<00:15:51> <DEBUG>		Event:	LOOT_READY	true", -- [428]
-			"<00:15:58> <DEBUG>		Event:	LOOT_READY	true", -- [429]
-			"<00:16:17> <DEBUG>		Event:	LOOT_READY	true", -- [430]
-			"<00:16:20> <DEBUG>		Event:	LOOT_READY	true", -- [431]
-			"<00:16:31> <DEBUG>		Event:	LOOT_READY	true", -- [432]
-			"<00:16:31> <DEBUG>		Event:	LOOT_READY	true", -- [433]
-			"<00:16:31> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	205188	|cff0070dd|Hitem:205188::::::::70:62:::::::::|h[Barter Boulder]|h|r	1	Qpfromage	MAGE", -- [434]
-			"<00:16:44> <DEBUG>		Event:	LOOT_READY	true", -- [435]
-			"<00:16:54> <DEBUG>		Event:	LOOT_READY	true", -- [436]
-			"<00:17:18> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [437]
-			"<00:17:20> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Zebulight-Blackrock", -- [438]
-			"<00:17:20> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Zebulight-Blackrock", -- [439]
-			"<00:17:20> <DEBUG>		GetML()", -- [440]
-			"<00:17:20> <Data.Player>		CreatePlayer	Player-1092-096E0A20", -- [441]
-			"<00:17:20> <Data.Player>		CreatePlayer	Player-581-0A3CD12A", -- [442]
-			"<00:17:20> <Data.Player>		CreatePlayer	Player-1396-0948CD31", -- [443]
-			"<00:17:20> <Data.Player>		CreatePlayer	Player-1621-0A5BB8C3", -- [444]
-			"<00:17:20> <Data.Player>		CreatePlayer	Player-512-056B435F", -- [445]
-			"<00:17:20> <Data.Player>		CreatePlayer	Player-1092-0AA53599", -- [446]
-			"<00:17:20> <Data.Player>		CreatePlayer	Player-1403-0A54A773", -- [447]
-			"<00:17:20> <DEBUG>		Resetting council as we have a new ML!", -- [448]
-			"<00:17:20> <INFO>		MasterLooter	Vexxy-Drak'thul	LootMethod	personalloot", -- [449]
-			"<00:17:35> <DEBUG>		Timer MLdb_check passed", -- [450]
-			"<00:17:44> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Cazzker-Ragnaros", -- [451]
-			"<00:17:44> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Cazzker-Ragnaros", -- [452]
-			"<00:17:45> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Frantik-Kazzak", -- [453]
-			"<00:17:45> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Frantik-Kazzak", -- [454]
-			"<00:18:18> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Arîana-Ragnaros", -- [455]
-			"<00:18:18> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Arîana-Ragnaros", -- [456]
-			"<00:23:09> <DEBUG>		Event:	LOOT_READY	true", -- [457]
-			"<00:23:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2696	194481	|cffa335ee|Hitem:194481::::::::70:62::::1:28:2706:::::|h[Plans: Obsidian Seared Crusher]|h|r	1	Cazzker	MAGE", -- [458]
-			"<00:23:16> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [459]
-			"<00:23:18> <DEBUG>		Event:	LOOT_READY	true", -- [460]
-			"<00:23:18> <DEBUG>		GetML()", -- [461]
-			"<00:23:18> <Data.Player>		CreatePlayer	Player-3682-097055B2", -- [462]
-			"<00:23:18> <Data.Player>		CreatePlayer	Player-2073-0A096743", -- [463]
-			"<00:23:18> <Data.Player>		CreatePlayer	Player-1379-052B8E2E", -- [464]
-			"<00:23:18> <Data.Player>		CreatePlayer	Player-1379-0922EE7A", -- [465]
-			"<00:23:18> <Data.Player>		CreatePlayer	Player-604-07C21039", -- [466]
-			"<00:23:18> <DEBUG>		Resetting council as we have a new ML!", -- [467]
-			"<00:23:18> <INFO>		MasterLooter	Húdeex-Drak'thul	LootMethod	personalloot", -- [468]
-			"<00:23:22> <DEBUG>		Event:	GROUP_LEFT	1	Party-1092-1-00006788B93E", -- [469]
-			"<00:23:22> <DEBUG>		GetML()", -- [470]
-			"<00:23:33> <DEBUG>		Timer MLdb_check passed", -- [471]
-			"<00:23:57> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [472]
-			"<00:23:59> <DEBUG>		GetML()", -- [473]
-			"<00:23:59> <Data.Player>		CreatePlayer	Player-633-0737F6AF", -- [474]
-			"<00:23:59> <DEBUG>		Resetting council as we have a new ML!", -- [475]
-			"<00:23:59> <INFO>		MasterLooter	Phoqyhu-BurningSteppes	LootMethod	personalloot", -- [476]
-			"<00:24:14> <DEBUG>		Timer MLdb_check passed", -- [477]
-			"<00:25:39> <DEBUG>		Event:	LOOT_READY	true", -- [478]
-			"<00:26:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190320	|cff0070dd|Hitem:190320::::::::70:62:::::::::|h[Rousing Fire]|h|r	2	Suzox-Sanguino	DEATHKNIGHT", -- [479]
-			"<00:26:38> <DEBUG>		Event:	LOOT_READY	true", -- [480]
-			"<00:26:38> <DEBUG>		Event:	LOOT_READY	true", -- [481]
-			"<00:27:02> <DEBUG>		Event:	LOOT_READY	true", -- [482]
-			"<00:27:02> <DEBUG>		Event:	LOOT_READY	true", -- [483]
-			"<00:27:02> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	3	Qpfromage	MAGE", -- [484]
-			"<00:27:13> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190313	|cff0070dd|Hitem:190313::::::::70:62::::1:38:2:::::|h[Khaz'gorite Ore |A:Professions-ChatIcon-Quality-Tier2:17:23::1|a]|h|r	2	Danilow-Aggra(Português)	WARRIOR", -- [485]
-			"<00:27:31> <DEBUG>		Event:	LOOT_READY	true", -- [486]
-			"<00:27:32> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190320	|cff0070dd|Hitem:190320::::::::70:62:::::::::|h[Rousing Fire]|h|r	2	Qpfromage	MAGE", -- [487]
-			"<00:28:03> <DEBUG>		Event:	LOOT_READY	true", -- [488]
-			"<00:28:09> <DEBUG>		Event:	GROUP_LEFT	1	Party-633-1-00002EF3F4E1", -- [489]
-			"<00:28:09> <DEBUG>		GetML()", -- [490]
-			"<00:28:31> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [491]
-			"<00:28:33> <DEBUG>		GetML()", -- [492]
-			"<00:28:33> <Data.Player>		CreatePlayer	Player-1302-0C316EF0", -- [493]
-			"<00:28:33> <Data.Player>		CreatePlayer	Player-1335-0A0A70AC", -- [494]
-			"<00:28:33> <Data.Player>		CreatePlayer	Player-3674-0AED5EB3", -- [495]
-			"<00:28:33> <DEBUG>		Resetting council as we have a new ML!", -- [496]
-			"<00:28:33> <INFO>		MasterLooter	Yachty-Archimonde	LootMethod	personalloot", -- [497]
-			"<00:28:48> <DEBUG>		Timer MLdb_check passed", -- [498]
-			"<00:29:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	4	Yachty-Archimonde	MONK", -- [499]
-			"<00:30:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	2	Addalici-TwistingNether	SHAMAN", -- [500]
-			"<00:30:50> <DEBUG>		Event:	LOOT_READY	true", -- [501]
-			"<00:30:50> <DEBUG>		Event:	LOOT_READY	true", -- [502]
-			"<00:30:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	3	Qpfromage	MAGE", -- [503]
-			"<00:30:53> <DEBUG>		Event:	GROUP_LEFT	1	Party-1335-1-0000316EA082", -- [504]
-			"<00:30:53> <DEBUG>		GetML()", -- [505]
-			"<00:32:33> <DEBUG>		Event:	LOOT_READY	true", -- [506]
-			"<00:33:44> <DEBUG>		Event:	LOOT_READY	true", -- [507]
-			"<00:34:58> <DEBUG>		Event:	LOOT_READY	true", -- [508]
-			"<00:35:24> <DEBUG>		Event:	LOOT_READY	true", -- [509]
-			"<00:35:41> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Mecap-Ragnaros", -- [510]
-			"<00:35:41> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [511]
-			"<00:35:50> <DEBUG>		Event:	LOOT_READY	true", -- [512]
-			"<00:36:24> <DEBUG>		Event:	LOOT_READY	true", -- [513]
-			"<00:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [514]
-			"<00:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [515]
-			"<00:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [516]
-			"<00:43:13> <DEBUG>		Event:	LOOT_READY	true", -- [517]
-			"<00:43:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [518]
-			"<00:43:39> <INFO>		UpdatePlayersData()", -- [519]
-			"<00:43:41> <DEBUG>		GetML()", -- [520]
-			"<00:45:46> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [521]
-			"<00:45:46> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [522]
-			"<00:53:02> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [523]
-			"07/27/23", -- [524]
-			"<00:54:14> <INFO>		Logged In", -- [525]
-			"<00:54:14> <INFO>[ML]		Init", -- [526]
-			"<00:54:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [527]
-			"<00:54:20> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [528]
-			"<00:54:20> <DEBUG>		ActivateSkin	bfa", -- [529]
-			"<00:54:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [530]
-			"<00:54:24> <INFO>		UpdatePlayersData()", -- [531]
-			"<00:54:24> <INFO>		Player relog...", -- [532]
-			"<00:54:26> <DEBUG>		GetPlayersGuildRank()", -- [533]
-			"<00:54:26> <DEBUG>		Found Guild Rank: Raider", -- [534]
-			"<00:54:27> <DEBUG>		GetML()", -- [535]
-			"<00:54:28> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [536]
-			"<00:54:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [537]
-			"<00:56:00> <DEBUG>		Event:	LOOT_READY	true", -- [538]
-			"<01:08:41> <DEBUG>		Event:	LOOT_READY	true", -- [539]
-			"07/27/23", -- [540]
-			"<20:25:56> <INFO>		Logged In", -- [541]
-			"<20:25:56> <INFO>[ML]		Init", -- [542]
-			"<20:25:56> <INFO>		RCLootCouncil	TradeUI enabled", -- [543]
-			"<20:26:04> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [544]
-			"<20:26:04> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [545]
-			"<20:26:04> <DEBUG>		ActivateSkin	bfa", -- [546]
-			"<20:26:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [547]
-			"<20:26:06> <INFO>		UpdatePlayersData()", -- [548]
-			"<20:26:06> <INFO>		Player relog...", -- [549]
-			"<20:26:08> <DEBUG>		GetPlayersGuildRank()", -- [550]
-			"<20:26:08> <DEBUG>		Found Guild Rank: Raider", -- [551]
-			"<20:26:10> <DEBUG>		GetML()", -- [552]
-			"<20:26:10> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [553]
-			"<20:26:10> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [554]
-			"<20:26:10> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [555]
-			"<20:26:30> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [556]
-			"<20:26:32> <DEBUG>		GetML()", -- [557]
-			"<20:26:32> <Data.Player>		CreatePlayer	Player-1302-0C945858", -- [558]
-			"<20:26:32> <Data.Player>		CreatePlayer	Player-1403-0A738523", -- [559]
-			"<20:26:32> <DEBUG>		Resetting council as we have a new ML!", -- [560]
-			"<20:26:32> <INFO>		MasterLooter	Sûnder-Hyjal	LootMethod	personalloot", -- [561]
-			"<20:26:47> <DEBUG>		Timer MLdb_check passed", -- [562]
-			"<20:26:47> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Qpfromage-Ragnaros", -- [563]
-			"<20:26:47> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Qpfromage-Ragnaros", -- [564]
-			"<20:27:36> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [565]
-			"<20:27:36> <INFO>		UpdatePlayersData()", -- [566]
-			"<20:27:38> <DEBUG>		GetML()", -- [567]
-			"<20:27:46> <Comm>		^1^SpI^T^N1^SHEALER^N2^SRoster^N4^N0^N5^N444.5^N6^N1468^t^^	RAID	Valfor-Dalaran", -- [568]
-			"<20:27:47> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Sreconnect^t^^	RAID	Valfor-Dalaran", -- [569]
-			"<20:27:58> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Valfor-Dalaran", -- [570]
-			"<20:29:05> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Tapir-Dalaran", -- [571]
-			"<20:29:05> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Tapir-Dalaran", -- [572]
-			"<20:29:41> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Dwafzik-TarrenMill", -- [573]
-			"<20:29:41> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Dwafzik-TarrenMill", -- [574]
-			"<20:34:09> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	465950	1	0", -- [575]
-			"<20:34:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [576]
-			"<20:34:10> <INFO>		UpdatePlayersData()", -- [577]
-			"<20:34:11> <DEBUG>		GetML()", -- [578]
-			"<20:34:11> <Data.Player>		CreatePlayer	Player-1621-0B175E27", -- [579]
-			"<20:38:38> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [580]
-			"<20:38:40> <DEBUG>		GetML()", -- [581]
-			"<20:38:40> <Data.Player>		CreatePlayer	Player-1403-07CA91C8", -- [582]
-			"<20:38:40> <DEBUG>		Resetting council as we have a new ML!", -- [583]
-			"<20:38:40> <INFO>		MasterLooter	Karno-Hyjal	LootMethod	personalloot", -- [584]
-			"<20:38:40> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Karno-Hyjal", -- [585]
-			"<20:38:40> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Karno-Hyjal", -- [586]
-			"<20:38:40> <INFO>		OnMLDBReceived", -- [587]
-			"<20:38:40> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N445.125^N8^N252^t^^	RAID	Tapir-Dalaran", -- [588]
-			"<20:38:40> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [589]
-			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SCookie^N6^N0^N7^N444.125^N8^N258^t^^	RAID	Steffmôll-Draenor", -- [590]
-			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [591]
-			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [592]
-			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SNovice^N6^N0^N7^N444.375^N8^N70^t^^	RAID	Vilytria-Archimonde", -- [593]
-			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [594]
-			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [595]
-			"<20:38:43> <Comm>		^1^Scouncil^T^N1^T^S1390-086A105F^B^t^t^^	RAID	Karno-Hyjal", -- [596]
-			"<20:38:43> <DEBUG>		isCouncil	false", -- [597]
-			"<20:38:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [598]
-			"<20:38:43> <INFO>		UpdatePlayersData()", -- [599]
-			"<20:38:44> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Karno-Hyjal", -- [600]
-			"<20:38:45> <DEBUG>		GetML()", -- [601]
-			"<20:38:55> <DEBUG>		Timer MLdb_check passed", -- [602]
-			"<20:38:55> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SMLdb_request^t^^	RAID	Tapir-Dalaran", -- [603]
-			"<20:39:47> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Karno-Hyjal", -- [604]
-			"<20:39:50> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [605]
-			"<20:39:52> <DEBUG>		GetML()", -- [606]
-			"<20:39:52> <DEBUG>		Resetting council as we have a new ML!", -- [607]
-			"<20:39:52> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [608]
-			"<20:39:52> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Strongdps-Hyjal", -- [609]
-			"<20:39:52> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Strongdps-Hyjal", -- [610]
-			"<20:39:52> <INFO>		OnMLDBReceived", -- [611]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SNovice^N6^N0^N7^N444.125^N8^N70^t^^	RAID	Vilytria-Archimonde", -- [612]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [613]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [614]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [615]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [616]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N445.125^N8^N252^t^^	RAID	Tapir-Dalaran", -- [617]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [618]
-			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SCookie^N6^N0^N7^N444.125^N8^N258^t^^	RAID	Steffmôll-Draenor", -- [619]
-			"<20:39:53> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [620]
-			"<20:40:07> <DEBUG>		Timer MLdb_check passed", -- [621]
-			"<20:41:04> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	465535	1	0", -- [622]
-			"<20:41:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [623]
-			"<20:41:04> <INFO>		UpdatePlayersData()", -- [624]
-			"<20:41:06> <DEBUG>		GetML()", -- [625]
-			"<20:42:08> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [626]
-			"<20:42:55> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Linte-Hyjal", -- [627]
-			"<20:42:55> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Linte-Hyjal", -- [628]
-			"<20:43:47> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Tapir-Dalaran", -- [629]
-			"<20:43:52> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [630]
-			"<20:43:52> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [631]
-			"<20:44:45> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [632]
-			"<20:44:45> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [633]
-			"<20:44:49> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Steffmôll-Draenor", -- [634]
-			"<20:44:49> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Steffmôll-Draenor", -- [635]
-			"<20:44:52> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [636]
-			"<20:44:52> <INFO>		UpdatePlayersData()", -- [637]
-			"<20:44:52> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [638]
-			"<20:50:05> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rap-Ragnaros", -- [639]
-			"<20:50:06> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [640]
-			"<20:50:06> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [641]
-			"<20:50:21> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Nèlliel-Ragnaros", -- [642]
-			"<20:50:21> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [643]
-			"<20:50:21> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [644]
-			"<20:55:24> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [645]
-			"<20:56:19> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [646]
-			"<20:56:19> <INFO>		UpdatePlayersData()", -- [647]
-			"<21:00:21> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [648]
-			"<21:03:46> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [649]
-			"<21:03:46> <INFO>		UpdatePlayersData()", -- [650]
-			"<21:05:47> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [651]
-			"<21:07:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [652]
-			"<21:07:35> <INFO>		UpdatePlayersData()", -- [653]
-			"<21:10:10> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [654]
-			"<21:10:40> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Hdç-Ragnaros", -- [655]
-			"<21:10:40> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [656]
-			"<21:10:40> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [657]
-			"<21:11:24> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papee-Ragnaros", -- [658]
-			"<21:11:24> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [659]
-			"<21:11:24> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [660]
-			"<21:16:19> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [661]
-			"<21:16:19> <INFO>		UpdatePlayersData()", -- [662]
-			"<21:20:01> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [663]
-			"<21:20:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	3	Brussewayn-Kazzak	WARLOCK", -- [664]
-			"<21:21:58> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [665]
-			"<21:21:58> <INFO>		UpdatePlayersData()", -- [666]
-			"<21:26:56> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [667]
-			"<21:28:41> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [668]
-			"<21:28:41> <INFO>		UpdatePlayersData()", -- [669]
-			"<21:32:10> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [670]
-			"<21:33:02> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [671]
-			"<21:33:02> <INFO>		UpdatePlayersData()", -- [672]
-			"<21:33:03> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [673]
-			"<21:34:21> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [674]
-			"<21:34:21> <INFO>		UpdatePlayersData()", -- [675]
-			"<21:36:49> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [676]
-			"<21:40:32> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [677]
-			"<21:40:32> <INFO>		UpdatePlayersData()", -- [678]
-			"<21:41:43> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [679]
-			"<21:41:43> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [680]
-			"<21:41:43> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [681]
-			"<21:45:30> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [682]
-			"<21:48:13> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Altdani-Ragnaros", -- [683]
-			"<21:48:13> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [684]
-			"<21:48:13> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [685]
-			"<21:49:48> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [686]
-			"<21:49:48> <INFO>		UpdatePlayersData()", -- [687]
-			"<21:52:16> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [688]
-			"<21:54:52> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [689]
-			"<21:54:52> <INFO>		UpdatePlayersData()", -- [690]
-			"<21:55:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [691]
-			"<21:55:22> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [692]
-			"<21:55:22> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [693]
-			"<21:57:00> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [694]
-			"<22:00:32> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [695]
-			"<22:00:32> <INFO>		UpdatePlayersData()", -- [696]
-			"<22:05:48> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [697]
-			"<22:06:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [698]
-			"<22:06:45> <INFO>		UpdatePlayersData()", -- [699]
-			"<22:06:46> <DEBUG>		GetML()", -- [700]
-			"<22:12:31> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	460048	1	0", -- [701]
-			"<22:12:32> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [702]
-			"<22:12:32> <INFO>		UpdatePlayersData()", -- [703]
-			"<22:12:34> <DEBUG>		GetML()", -- [704]
-			"<22:13:57> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [705]
-			"<22:15:23> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Nèlliel-Ragnaros", -- [706]
-			"<22:15:23> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [707]
-			"<22:15:23> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [708]
-			"<22:17:31> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Nèlliel-Ragnaros", -- [709]
-			"<22:17:31> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [710]
-			"<22:17:31> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [711]
-			"<22:19:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [712]
-			"<22:19:35> <INFO>		UpdatePlayersData()", -- [713]
-			"<22:24:16> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [714]
-			"<22:26:17> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [715]
-			"<22:26:17> <INFO>		UpdatePlayersData()", -- [716]
-			"<22:31:07> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [717]
-			"<22:32:53> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [718]
-			"<22:32:53> <INFO>		UpdatePlayersData()", -- [719]
-			"<22:34:56> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [720]
-			"<22:35:33> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [721]
-			"<22:35:33> <INFO>		UpdatePlayersData()", -- [722]
-			"<22:35:34> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [723]
-			"<22:36:57> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [724]
-			"<22:36:57> <INFO>		UpdatePlayersData()", -- [725]
-			"<22:38:28> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [726]
-			"<22:39:48> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [727]
-			"<22:39:48> <INFO>		UpdatePlayersData()", -- [728]
-			"<22:44:32> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [729]
-			"<22:47:19> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [730]
-			"<22:47:19> <INFO>		UpdatePlayersData()", -- [731]
-			"<22:52:31> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [732]
-			"<22:54:05> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [733]
-			"<22:54:05> <INFO>		UpdatePlayersData()", -- [734]
-			"<22:57:39> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [735]
-			"<22:58:52> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [736]
-			"<22:58:52> <INFO>		UpdatePlayersData()", -- [737]
-			"<23:03:33> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [738]
-			"<23:06:03> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Goshdarn-Ragnaros", -- [739]
-			"<23:06:30> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SMember^N3^B^N4^N55^N5^N444.75^N6^N267^t^^	RAID	Brussewayn-Kazzak", -- [740]
-			"<23:06:30> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Sreconnect^t^^	RAID	Brussewayn-Kazzak", -- [741]
-			"<23:06:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SMLdb_request^t^^	RAID	Brussewayn-Kazzak", -- [742]
-			"<23:06:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Scouncil_request^t^^	RAID	Brussewayn-Kazzak", -- [743]
-			"<23:06:47> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [744]
-			"<23:06:56> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [745]
-			"<23:06:56> <INFO>		UpdatePlayersData()", -- [746]
-			"<23:12:32> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [747]
-			"<23:13:30> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [748]
-			"<23:13:56> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [749]
-			"<23:13:56> <INFO>		UpdatePlayersData()", -- [750]
-			"<23:17:43> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [751]
-			"<23:19:31> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [752]
-			"<23:19:31> <INFO>		UpdatePlayersData()", -- [753]
-			"<23:24:08> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [754]
-			"<23:24:40> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [755]
-			"<23:24:40> <INFO>		UpdatePlayersData()", -- [756]
-			"<23:24:53> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [757]
-			"<23:25:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [758]
-			"<23:25:52> <INFO>		UpdatePlayersData()", -- [759]
-			"<23:25:53> <DEBUG>		GetML()", -- [760]
-			"<23:26:29> <DEBUG>		Event:	GROUP_LEFT	1	Party-1390-1-0000614DE3C9", -- [761]
-			"<23:26:29> <DEBUG>		GetML()", -- [762]
-			"<23:43:30> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Infernodh-Ragnaros", -- [763]
-			"<23:43:30> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [764]
-			"<23:43:30> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [765]
-			"07/27/23", -- [766]
-			"<23:51:31> <INFO>		Logged In", -- [767]
-			"<23:51:31> <INFO>[ML]		Init", -- [768]
-			"<23:51:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [769]
-			"<23:51:35> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [770]
-			"<23:51:35> <DEBUG>		ActivateSkin	bfa", -- [771]
-			"<23:51:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [772]
-			"<23:51:37> <INFO>		UpdatePlayersData()", -- [773]
-			"<23:51:37> <INFO>		Player relog...", -- [774]
-			"<23:51:39> <DEBUG>		GetPlayersGuildRank()", -- [775]
-			"<23:51:39> <DEBUG>		Found Guild Rank: Raider", -- [776]
-			"<23:51:39> <DEBUG>		GetML()", -- [777]
-			"<23:51:39> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [778]
-			"<23:51:39> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [779]
-			"<23:51:39> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [780]
-			"07/28/23", -- [781]
-			"<00:29:14> <INFO>		Logged In", -- [782]
-			"<00:29:14> <INFO>[ML]		Init", -- [783]
-			"<00:29:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [784]
-			"<00:29:15> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [785]
-			"<00:29:15> <DEBUG>		ActivateSkin	bfa", -- [786]
-			"<00:29:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [787]
-			"<00:29:17> <INFO>		UpdatePlayersData()", -- [788]
-			"<00:29:17> <INFO>		Player relog...", -- [789]
-			"<00:29:19> <DEBUG>		GetPlayersGuildRank()", -- [790]
-			"<00:29:19> <DEBUG>		Found Guild Rank: Raider", -- [791]
-			"<00:29:19> <DEBUG>		GetML()", -- [792]
-			"<00:29:19> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [793]
-			"<00:29:19> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [794]
-			"<00:29:19> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [795]
-			"07/28/23", -- [796]
-			"<00:29:54> <INFO>		Logged In", -- [797]
-			"<00:29:54> <INFO>[ML]		Init", -- [798]
-			"<00:29:54> <INFO>		RCLootCouncil	TradeUI enabled", -- [799]
-			"<00:29:55> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [800]
-			"<00:29:55> <DEBUG>		ActivateSkin	bfa", -- [801]
-			"<00:29:58> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [802]
-			"<00:29:58> <INFO>		UpdatePlayersData()", -- [803]
-			"<00:29:58> <INFO>		Player relog...", -- [804]
-			"<00:29:59> <DEBUG>		GetPlayersGuildRank()", -- [805]
-			"<00:29:59> <DEBUG>		Found Guild Rank: Raider", -- [806]
-			"<00:29:59> <DEBUG>		GetML()", -- [807]
-			"<00:29:59> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [808]
-			"<00:30:00> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [809]
-			"<00:30:00> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [810]
-			"07/28/23", -- [811]
-			"<00:31:39> <INFO>		Logged In", -- [812]
-			"<00:31:39> <INFO>[ML]		Init", -- [813]
-			"<00:31:40> <INFO>		RCLootCouncil	TradeUI enabled", -- [814]
-			"<00:31:41> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [815]
-			"<00:31:41> <DEBUG>		ActivateSkin	bfa", -- [816]
-			"<00:31:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [817]
-			"<00:31:43> <INFO>		UpdatePlayersData()", -- [818]
-			"<00:31:43> <INFO>		Player relog...", -- [819]
-			"<00:31:44> <DEBUG>		GetPlayersGuildRank()", -- [820]
-			"<00:31:44> <DEBUG>		Found Guild Rank: Raider", -- [821]
-			"<00:31:45> <DEBUG>		GetML()", -- [822]
-			"<00:31:45> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [823]
-			"<00:31:45> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [824]
-			"<00:31:45> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [825]
-			"07/28/23", -- [826]
-			"<00:38:45> <INFO>		Logged In", -- [827]
-			"<00:38:45> <INFO>[ML]		Init", -- [828]
-			"<00:38:45> <INFO>		RCLootCouncil	TradeUI enabled", -- [829]
-			"<00:38:50> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [830]
-			"<00:38:50> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [831]
-			"<00:38:50> <DEBUG>		ActivateSkin	bfa", -- [832]
-			"<00:38:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [833]
-			"<00:38:52> <INFO>		UpdatePlayersData()", -- [834]
-			"<00:38:52> <INFO>		Player relog...", -- [835]
-			"<00:38:54> <DEBUG>		GetPlayersGuildRank()", -- [836]
-			"<00:38:54> <DEBUG>		Found Guild Rank: Raider", -- [837]
-			"<00:38:56> <DEBUG>		GetML()", -- [838]
-			"<00:38:56> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [839]
-			"<00:38:57> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [840]
-			"<00:38:57> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [841]
-			"<00:51:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [842]
-			"<00:51:06> <INFO>		UpdatePlayersData()", -- [843]
-			"<00:51:07> <DEBUG>		GetML()", -- [844]
-			"<00:57:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [845]
-			"<00:57:35> <INFO>		UpdatePlayersData()", -- [846]
-			"<00:57:36> <DEBUG>		GetML()", -- [847]
-			"<01:21:31> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [848]
-			"<01:23:08> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [849]
-			"<01:25:17> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [850]
-			"<01:31:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [851]
-			"<01:31:47> <INFO>		UpdatePlayersData()", -- [852]
-			"<01:31:48> <DEBUG>		GetML()", -- [853]
-			"<01:46:01> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvsham-Ragnaros", -- [854]
-			"<01:46:02> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [855]
-			"<01:46:31> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [856]
-			"<02:01:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [857]
-			"<02:01:38> <INFO>		UpdatePlayersData()", -- [858]
-			"<02:01:40> <DEBUG>		GetML()", -- [859]
-			"<03:28:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Therion-Ragnaros", -- [860]
-			"<03:50:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [861]
-			"<03:50:37> <INFO>		UpdatePlayersData()", -- [862]
-			"<03:50:39> <DEBUG>		GetML()", -- [863]
-			"07/28/23", -- [864]
-			"<03:52:40> <INFO>		Logged In", -- [865]
-			"<03:52:40> <INFO>[ML]		Init", -- [866]
-			"<03:52:40> <INFO>		RCLootCouncil	TradeUI enabled", -- [867]
-			"<03:52:43> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [868]
-			"<03:52:43> <DEBUG>		ActivateSkin	bfa", -- [869]
-			"<03:52:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [870]
-			"<03:52:46> <INFO>		UpdatePlayersData()", -- [871]
-			"<03:52:46> <INFO>		Player relog...", -- [872]
-			"<03:52:47> <DEBUG>		GetPlayersGuildRank()", -- [873]
-			"<03:52:47> <DEBUG>		Found Guild Rank: Raider", -- [874]
-			"<03:52:48> <DEBUG>		GetML()", -- [875]
-			"<03:52:48> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [876]
-			"<03:59:54> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [877]
-			"<03:59:56> <DEBUG>		GetML()", -- [878]
-			"<03:59:56> <Data.Player>		CreatePlayer	Player-3702-09C22E16", -- [879]
-			"<03:59:56> <Data.Player>		CreatePlayer	Player-3674-05A52B4A", -- [880]
-			"<03:59:56> <Data.Player>		CreatePlayer	Player-3691-0A07326E", -- [881]
-			"<03:59:56> <DEBUG>		Resetting council as we have a new ML!", -- [882]
-			"<03:59:56> <INFO>		MasterLooter	Tordrale-ArgentDawn	LootMethod	personalloot", -- [883]
-			"<04:00:11> <DEBUG>		Timer MLdb_check passed", -- [884]
-			"<04:00:11> <Comm>		^1^Sxrealm^T^N1^STordrale-ArgentDawn^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [885]
-			"<04:00:11> <Comm>		^1^Sxrealm^T^N1^STordrale-ArgentDawn^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [886]
-			"<04:00:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [887]
-			"<04:00:57> <INFO>		UpdatePlayersData()", -- [888]
-			"<04:00:58> <DEBUG>		GetML()", -- [889]
-			"<04:00:58> <Data.Player>		CreatePlayer	Player-1379-0A7D517F", -- [890]
-			"<04:01:26> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Uldaman: Legacy of Tyr (Mythic)	439113	0	0", -- [891]
-			"<04:01:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [892]
-			"<04:01:26> <INFO>		UpdatePlayersData()", -- [893]
-			"<04:01:28> <DEBUG>		GetML()", -- [894]
-			"<04:08:55> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [895]
-			"<04:08:57> <DEBUG>		GetML()", -- [896]
-			"<04:08:57> <Data.Player>		CreatePlayer	Player-1305-0C8FFED1", -- [897]
-			"<04:08:57> <DEBUG>		Resetting council as we have a new ML!", -- [898]
-			"<04:08:57> <INFO>		MasterLooter	Renegade-TwistingNether	LootMethod	personalloot", -- [899]
-			"<04:08:58> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Renegade-TwistingNether", -- [900]
-			"<04:08:58> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Renegade-TwistingNether", -- [901]
-			"<04:08:58> <INFO>		OnMLDBReceived", -- [902]
-			"<04:08:58> <Comm>		^1^Sxrealm^T^N1^SRenegade-TwistingNether^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	PARTY	Qpfromage-Ragnaros", -- [903]
-			"<04:08:58> <Comm>		^1^Sxrealm^T^N1^SRenegade-TwistingNether^N2^SpI^N3^SDAMAGER^N4^STrial~`Raider^N6^N0^N7^N443.625^N8^N1473^t^^	PARTY	Marcen-Kazzak", -- [904]
-			"<04:09:00> <Comm>		^1^Scouncil^T^N1^T^S3674-05A52B4A^B^t^t^^	PARTY	Renegade-TwistingNether", -- [905]
-			"<04:09:00> <DEBUG>		isCouncil	false", -- [906]
-			"<04:09:12> <DEBUG>		Timer MLdb_check passed", -- [907]
-			"<04:13:33> <DEBUG>		Event:	ENCOUNTER_START	2555	The Lost Dwarves	8	5", -- [908]
-			"<04:13:33> <INFO>		UpdatePlayersData()", -- [909]
-			"<04:16:23> <DEBUG>		Event:	ENCOUNTER_END	2555	The Lost Dwarves	8	5	1", -- [910]
-			"<04:19:32> <DEBUG>		Event:	ENCOUNTER_START	2556	Bromach	8	5", -- [911]
-			"<04:19:32> <INFO>		UpdatePlayersData()", -- [912]
-			"<04:20:18> <DEBUG>		Event:	ENCOUNTER_END	2556	Bromach	8	5	0", -- [913]
-			"<04:21:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [914]
-			"<04:21:05> <INFO>		UpdatePlayersData()", -- [915]
-			"<04:21:07> <DEBUG>		GetML()", -- [916]
-			"<04:21:52> <DEBUG>		Event:	GROUP_LEFT	1	Party-3702-1-0000678D4692", -- [917]
-			"<04:21:52> <DEBUG>		GetML()", -- [918]
-			"<04:23:04> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [919]
-			"<04:23:06> <DEBUG>		GetML()", -- [920]
-			"<04:23:06> <Data.Player>		CreatePlayer	Player-1305-0C23CE59", -- [921]
-			"<04:23:06> <Data.Player>		CreatePlayer	Player-1615-0AE3F563", -- [922]
-			"<04:23:06> <Data.Player>		CreatePlayer	Player-1084-0A852B39", -- [923]
-			"<04:23:06> <DEBUG>		Resetting council as we have a new ML!", -- [924]
-			"<04:23:06> <INFO>		MasterLooter	Tanksslave-Kazzak	LootMethod	personalloot", -- [925]
-			"<04:23:15> <DEBUG>		Event:	GROUP_LEFT	1	Party-1305-1-0000614EFB83", -- [926]
-			"<04:23:15> <DEBUG>		GetML()", -- [927]
-			"<04:23:21> <DEBUG>		Timer MLdb_check passed", -- [928]
-			"<04:58:49> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [929]
-			"<04:58:51> <DEBUG>		GetML()", -- [930]
-			"<04:58:51> <Data.Player>		CreatePlayer	Player-3674-093812D6", -- [931]
-			"<04:58:51> <Data.Player>		CreatePlayer	Player-1085-0A3019AE", -- [932]
-			"<04:58:51> <DEBUG>		Resetting council as we have a new ML!", -- [933]
-			"<04:58:51> <INFO>		MasterLooter	Eekadh-TwistingNether	LootMethod	personalloot", -- [934]
-			"<04:59:06> <DEBUG>		Timer MLdb_check passed", -- [935]
-			"<05:04:03> <Comm>		^1^Sxrealm^T^N1^SEekadh-TwistingNether^N2^SMLdb_request^t^^	PARTY	Woopilicious-Antonidas", -- [936]
-			"<05:04:03> <Comm>		^1^Sxrealm^T^N1^SEekadh-TwistingNether^N2^Scouncil_request^t^^	PARTY	Woopilicious-Antonidas", -- [937]
-			"<05:04:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [938]
-			"<05:04:20> <INFO>		UpdatePlayersData()", -- [939]
-			"<05:04:22> <DEBUG>		GetML()", -- [940]
-			"<05:04:22> <Data.Player>		CreatePlayer	Player-1092-0447CD8C", -- [941]
-			"<05:04:22> <Data.Player>		CreatePlayer	Player-3686-09E7D779", -- [942]
-			"<05:05:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [943]
-			"<05:05:39> <INFO>		UpdatePlayersData()", -- [944]
-			"<05:05:40> <DEBUG>		GetML()", -- [945]
-			"<05:06:00> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [946]
-			"<05:06:00> <INFO>		UpdatePlayersData()", -- [947]
-			"<05:06:01> <DEBUG>		GetML()", -- [948]
-			"<05:06:23> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Neltharus (Mythic)	435216	0	0", -- [949]
-			"<05:06:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [950]
-			"<05:06:23> <INFO>		UpdatePlayersData()", -- [951]
-			"<05:06:25> <DEBUG>		GetML()", -- [952]
-			"<05:12:58> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [953]
-			"<05:12:58> <INFO>		UpdatePlayersData()", -- [954]
-			"<05:12:59> <DEBUG>		Event:	GROUP_LEFT	1	Party-3674-1-0000386BE815", -- [955]
-			"<05:12:59> <DEBUG>		GetML()", -- [956]
-			"<05:13:00> <DEBUG>		GetML()", -- [957]
-			"07/28/23", -- [958]
-			"<06:42:14> <INFO>		Logged In", -- [959]
-			"<06:42:14> <INFO>[ML]		Init", -- [960]
-			"<06:42:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [961]
-			"<06:42:22> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [962]
-			"<06:42:22> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [963]
-			"<06:42:22> <DEBUG>		ActivateSkin	bfa", -- [964]
-			"<06:42:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [965]
-			"<06:42:24> <INFO>		UpdatePlayersData()", -- [966]
-			"<06:42:24> <INFO>		Player relog...", -- [967]
-			"<06:42:26> <DEBUG>		GetPlayersGuildRank()", -- [968]
-			"<06:42:26> <DEBUG>		Found Guild Rank: Raider", -- [969]
-			"<06:42:28> <DEBUG>		GetML()", -- [970]
-			"<06:42:29> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [971]
-			"<06:42:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [972]
-			"<06:42:46> <INFO>		UpdatePlayersData()", -- [973]
-			"<06:42:48> <DEBUG>		GetML()", -- [974]
-			"<06:44:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [975]
-			"<06:44:50> <INFO>		UpdatePlayersData()", -- [976]
-			"<06:44:52> <DEBUG>		GetML()", -- [977]
-			"07/28/23", -- [978]
-			"<06:46:31> <INFO>		Logged In", -- [979]
-			"<06:46:31> <INFO>[ML]		Init", -- [980]
-			"<06:46:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [981]
-			"<06:46:32> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [982]
-			"<06:46:32> <DEBUG>		ActivateSkin	bfa", -- [983]
-			"<06:46:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [984]
-			"<06:46:35> <INFO>		UpdatePlayersData()", -- [985]
-			"<06:46:35> <INFO>		Player relog...", -- [986]
-			"<06:46:36> <DEBUG>		GetPlayersGuildRank()", -- [987]
-			"<06:46:36> <DEBUG>		Found Guild Rank: Raider", -- [988]
-			"<06:46:36> <DEBUG>		GetML()", -- [989]
-			"<06:46:37> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [990]
-			"07/28/23", -- [991]
-			"<07:01:49> <INFO>		Logged In", -- [992]
-			"<07:01:49> <INFO>[ML]		Init", -- [993]
-			"<07:01:49> <INFO>		RCLootCouncil	TradeUI enabled", -- [994]
-			"<07:01:50> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [995]
-			"<07:01:50> <DEBUG>		ActivateSkin	bfa", -- [996]
-			"<07:01:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [997]
-			"<07:01:52> <INFO>		UpdatePlayersData()", -- [998]
-			"<07:01:52> <INFO>		Player relog...", -- [999]
-			"<07:01:53> <DEBUG>		GetPlayersGuildRank()", -- [1000]
-			"<07:01:53> <DEBUG>		Found Guild Rank: Raider", -- [1001]
-			"<07:01:53> <DEBUG>		GetML()", -- [1002]
-			"<07:01:54> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1003]
-			"<07:13:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1004]
-			"<07:13:08> <INFO>		UpdatePlayersData()", -- [1005]
-			"<07:13:09> <DEBUG>		GetML()", -- [1006]
-			"<07:13:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1007]
-			"<07:13:39> <INFO>		UpdatePlayersData()", -- [1008]
-			"<07:13:40> <DEBUG>		GetML()", -- [1009]
-			"<08:06:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1010]
-			"<08:06:42> <INFO>		UpdatePlayersData()", -- [1011]
-			"<08:06:44> <DEBUG>		GetML()", -- [1012]
-			"<08:28:23> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [1013]
-			"<08:38:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1014]
-			"<08:38:37> <INFO>		UpdatePlayersData()", -- [1015]
-			"<08:38:39> <DEBUG>		GetML()", -- [1016]
-			"07/28/23", -- [1017]
-			"<08:42:02> <INFO>		Logged In", -- [1018]
-			"<08:42:02> <INFO>[ML]		Init", -- [1019]
-			"<08:42:02> <INFO>		RCLootCouncil	TradeUI enabled", -- [1020]
-			"<08:42:10> <INFO>		Flurrq-Ragnaros	3.9.1	nil", -- [1021]
-			"<08:42:10> <DEBUG>		ActivateSkin	bfa", -- [1022]
-			"<08:42:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1023]
-			"<08:42:12> <INFO>		UpdatePlayersData()", -- [1024]
-			"<08:42:12> <INFO>		Player relog...", -- [1025]
-			"<08:42:18> <DEBUG>		GetPlayersGuildRank()", -- [1026]
-			"<08:42:18> <DEBUG>		Found Guild Rank: Alt", -- [1027]
-			"<08:42:20> <DEBUG>		GetML()", -- [1028]
-			"<08:42:20> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Flurrq-Ragnaros", -- [1029]
-			"07/28/23", -- [1030]
-			"<08:45:55> <INFO>		Logged In", -- [1031]
-			"<08:45:55> <INFO>[ML]		Init", -- [1032]
-			"<08:45:55> <INFO>		RCLootCouncil	TradeUI enabled", -- [1033]
-			"<08:45:59> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1034]
-			"<08:45:59> <DEBUG>		ActivateSkin	bfa", -- [1035]
-			"<08:46:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1036]
-			"<08:46:01> <INFO>		UpdatePlayersData()", -- [1037]
-			"<08:46:01> <INFO>		Player relog...", -- [1038]
-			"<08:46:02> <DEBUG>		GetPlayersGuildRank()", -- [1039]
-			"<08:46:02> <DEBUG>		GetPlayersGuildRank()", -- [1040]
-			"<08:46:02> <DEBUG>		Found Guild Rank: Raider", -- [1041]
-			"<08:46:04> <DEBUG>		GetML()", -- [1042]
-			"<08:46:04> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1043]
-			"<08:53:31> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [1044]
-			"<08:54:28> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1045]
-			"<08:54:28> <INFO>		UpdatePlayersData()", -- [1046]
-			"<08:54:30> <DEBUG>		GetML()", -- [1047]
-			"<09:20:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1048]
-			"<09:20:29> <INFO>		UpdatePlayersData()", -- [1049]
-			"<09:20:31> <DEBUG>		GetML()", -- [1050]
-			"<09:21:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1051]
-			"<09:21:19> <INFO>		UpdatePlayersData()", -- [1052]
-			"<09:21:21> <DEBUG>		GetML()", -- [1053]
-			"<10:07:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1054]
-			"<10:07:42> <INFO>		UpdatePlayersData()", -- [1055]
-			"<10:07:43> <DEBUG>		GetML()", -- [1056]
-			"<10:10:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1057]
-			"<10:10:38> <INFO>		UpdatePlayersData()", -- [1058]
-			"<10:10:40> <DEBUG>		GetML()", -- [1059]
-			"<10:11:44> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1060]
-			"<10:11:44> <INFO>		UpdatePlayersData()", -- [1061]
-			"<10:11:46> <DEBUG>		GetML()", -- [1062]
-			"<10:20:34> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Hev-Ragnaros", -- [1063]
-			"<10:23:15> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1064]
-			"<10:23:15> <INFO>		UpdatePlayersData()", -- [1065]
-			"<10:23:17> <DEBUG>		GetML()", -- [1066]
-			"<10:24:49> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1067]
-			"<10:24:49> <INFO>		UpdatePlayersData()", -- [1068]
-			"<10:24:51> <DEBUG>		GetML()", -- [1069]
-			"07/28/23", -- [1070]
-			"<11:13:23> <INFO>		Logged In", -- [1071]
-			"<11:13:23> <INFO>[ML]		Init", -- [1072]
-			"<11:13:23> <INFO>		RCLootCouncil	TradeUI enabled", -- [1073]
-			"<11:13:25> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1074]
-			"<11:13:25> <DEBUG>		ActivateSkin	bfa", -- [1075]
-			"<11:13:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1076]
-			"<11:13:26> <INFO>		UpdatePlayersData()", -- [1077]
-			"<11:13:26> <INFO>		Player relog...", -- [1078]
-			"<11:13:27> <DEBUG>		GetPlayersGuildRank()", -- [1079]
-			"<11:13:27> <DEBUG>		Found Guild Rank: Raider", -- [1080]
-			"<11:13:27> <DEBUG>		GetML()", -- [1081]
-			"<11:13:27> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1082]
-			"07/28/23", -- [1083]
-			"<11:14:01> <INFO>		Logged In", -- [1084]
-			"<11:14:01> <INFO>[ML]		Init", -- [1085]
-			"<11:14:01> <INFO>		RCLootCouncil	TradeUI enabled", -- [1086]
-			"<11:14:02> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1087]
-			"<11:14:02> <DEBUG>		ActivateSkin	bfa", -- [1088]
-			"<11:14:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1089]
-			"<11:14:05> <INFO>		UpdatePlayersData()", -- [1090]
-			"<11:14:05> <INFO>		Player relog...", -- [1091]
-			"<11:14:06> <DEBUG>		GetPlayersGuildRank()", -- [1092]
-			"<11:14:06> <DEBUG>		Found Guild Rank: Raider", -- [1093]
-			"<11:14:06> <DEBUG>		GetML()", -- [1094]
-			"<11:14:07> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1095]
-			"07/28/23", -- [1096]
-			"<11:17:23> <INFO>		Logged In", -- [1097]
-			"<11:17:23> <INFO>[ML]		Init", -- [1098]
-			"<11:17:23> <INFO>		RCLootCouncil	TradeUI enabled", -- [1099]
-			"<11:17:25> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1100]
-			"<11:17:25> <DEBUG>		ActivateSkin	bfa", -- [1101]
-			"<11:17:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1102]
-			"<11:17:27> <INFO>		UpdatePlayersData()", -- [1103]
-			"<11:17:27> <INFO>		Player relog...", -- [1104]
-			"<11:17:28> <DEBUG>		GetPlayersGuildRank()", -- [1105]
-			"<11:17:28> <DEBUG>		Found Guild Rank: Raider", -- [1106]
-			"<11:17:28> <DEBUG>		GetML()", -- [1107]
-			"<11:17:29> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1108]
-			"<11:24:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1109]
-			"<11:24:35> <INFO>		UpdatePlayersData()", -- [1110]
-			"<11:24:36> <DEBUG>		GetML()", -- [1111]
-			"<11:27:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1112]
-			"<11:27:05> <INFO>		UpdatePlayersData()", -- [1113]
-			"<11:27:06> <DEBUG>		GetML()", -- [1114]
-			"<11:34:41> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [1115]
-			"<11:38:13> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1116]
-			"<11:38:13> <INFO>		UpdatePlayersData()", -- [1117]
-			"<11:38:14> <DEBUG>		GetML()", -- [1118]
-			"<11:40:18> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [1119]
-			"<11:53:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1120]
-			"<11:53:57> <INFO>		UpdatePlayersData()", -- [1121]
-			"<11:53:59> <DEBUG>		GetML()", -- [1122]
-			"<11:56:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1123]
-			"<11:56:43> <INFO>		UpdatePlayersData()", -- [1124]
-			"<11:56:44> <DEBUG>		GetML()", -- [1125]
-			"<12:08:47> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1126]
-			"<12:27:03> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [1127]
-			"<12:30:40> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1128]
-			"<12:33:52> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1129]
-			"<12:36:44> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1130]
-			"<12:38:39> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [1131]
-			"<12:45:32> <DEBUG>		Event:	LOOT_READY	false", -- [1132]
-			"<12:54:39> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [1133]
-			"<12:54:52> <DEBUG>		Event:	LOOT_READY	false", -- [1134]
-			"<12:54:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	103624	|cff0070dd|Hitem:103624::::::::70:64::::1:28:173:::::|h[Treasures of the Vale]|h|r	1	Qpfromage	MAGE", -- [1135]
-			"<12:55:59> <DEBUG>		Event:	LOOT_READY	false", -- [1136]
-			"<13:03:33> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1137]
-			"<13:03:33> <INFO>		UpdatePlayersData()", -- [1138]
-			"<13:03:35> <DEBUG>		GetML()", -- [1139]
-			"<13:07:10> <DEBUG>		Event:	LOOT_READY	true", -- [1140]
-			"<13:07:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1141]
-			"<13:07:38> <INFO>		UpdatePlayersData()", -- [1142]
-			"<13:07:40> <DEBUG>		GetML()", -- [1143]
-			"<13:10:48> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1144]
-			"<13:47:36> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1145]
-			"<13:47:37> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1146]
-			"<13:47:37> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1147]
-			"<13:49:46> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Asset-Ragnaros", -- [1148]
-			"<13:51:29> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1149]
-			"<13:56:26> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [1150]
-			"<14:05:16> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mábashí-Ragnaros", -- [1151]
-			"<14:16:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1152]
-			"<14:16:27> <INFO>		UpdatePlayersData()", -- [1153]
-			"<14:16:28> <DEBUG>		GetML()", -- [1154]
-			"<14:26:25> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1155]
-			"<15:16:41> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [1156]
-			"<15:16:53> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [1157]
-			"<15:17:06> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [1158]
-			"<15:20:32> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [1159]
-			"<15:29:47> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1160]
-			"<15:29:47> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1161]
-			"<15:29:47> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [1162]
-			"<15:31:33> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1163]
-			"<15:31:34> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [1164]
-			"<15:31:34> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1165]
-			"<15:42:34> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [1166]
-			"<15:42:34> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [1167]
-			"<15:44:30> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1168]
-			"<15:44:30> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [1169]
-			"<15:57:10> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [1170]
-			"<15:58:15> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1171]
-			"<15:58:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1172]
-			"<16:15:14> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1173]
-			"<16:26:15> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [1174]
-			"<16:26:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1175]
-			"<16:26:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1176]
-			"<16:47:48> <DEBUG>		Event:	LOOT_READY	true", -- [1177]
-			"<16:48:37> <DEBUG>		Event:	LOOT_READY	true", -- [1178]
-			"<16:48:59> <DEBUG>		Event:	LOOT_READY	true", -- [1179]
-			"<16:51:50> <DEBUG>		Event:	LOOT_READY	true", -- [1180]
-			"<16:52:14> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1181]
-			"<16:52:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1182]
-			"<16:52:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1183]
-			"<16:52:34> <DEBUG>		Event:	LOOT_READY	true", -- [1184]
-			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [1185]
-			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [1186]
-			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [1187]
-			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [1188]
-			"<16:56:50> <DEBUG>		Event:	LOOT_READY	true", -- [1189]
-			"<16:59:35> <DEBUG>		Event:	LOOT_READY	true", -- [1190]
-			"<16:59:35> <DEBUG>		Event:	LOOT_READY	true", -- [1191]
-			"<16:59:35> <DEBUG>		Event:	LOOT_READY	true", -- [1192]
-			"<16:59:42> <DEBUG>		Event:	LOOT_READY	true", -- [1193]
-			"<17:13:07> <DEBUG>		Event:	LOOT_READY	true", -- [1194]
-			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [1195]
-			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [1196]
-			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [1197]
-			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [1198]
-			"<17:14:43> <DEBUG>		Event:	LOOT_READY	true", -- [1199]
-			"<17:14:50> <DEBUG>		Event:	LOOT_READY	true", -- [1200]
-			"<17:16:35> <DEBUG>		Event:	LOOT_READY	true", -- [1201]
-			"<17:19:50> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mábashí-Ragnaros", -- [1202]
-			"<17:20:18> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1203]
-			"<17:20:18> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1204]
-			"<17:20:18> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [1205]
-			"<17:20:18> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1206]
-			"<17:21:08> <DEBUG>		Event:	LOOT_READY	true", -- [1207]
-			"<17:21:19> <DEBUG>		Event:	LOOT_READY	true", -- [1208]
-			"<17:21:28> <DEBUG>		Event:	LOOT_READY	true", -- [1209]
-			"<17:22:39> <DEBUG>		Event:	LOOT_READY	true", -- [1210]
-			"<17:22:44> <DEBUG>		Event:	LOOT_READY	true", -- [1211]
-			"<17:22:44> <DEBUG>		Event:	LOOT_READY	true", -- [1212]
-			"<17:22:45> <DEBUG>		Event:	LOOT_READY	true", -- [1213]
-			"<17:23:29> <DEBUG>		Event:	LOOT_READY	true", -- [1214]
-			"<17:24:42> <DEBUG>		Event:	LOOT_READY	true", -- [1215]
-			"<17:34:54> <DEBUG>		Event:	LOOT_READY	true", -- [1216]
-			"<17:35:01> <DEBUG>		Event:	LOOT_READY	true", -- [1217]
-			"<17:35:08> <DEBUG>		Event:	LOOT_READY	true", -- [1218]
-			"<17:35:08> <DEBUG>		Event:	LOOT_READY	true", -- [1219]
-			"<17:35:28> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [1220]
-			"<17:35:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1221]
-			"<17:35:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [1222]
-			"<17:35:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1223]
-			"<17:38:15> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1224]
-			"<18:09:50> <DEBUG>		Event:	LOOT_READY	true", -- [1225]
-			"<18:10:31> <DEBUG>		Event:	LOOT_READY	true", -- [1226]
-			"07/29/23", -- [1227]
-			"<00:27:01> <INFO>		Logged In", -- [1228]
-			"<00:27:01> <INFO>[ML]		Init", -- [1229]
-			"<00:27:01> <INFO>		RCLootCouncil	TradeUI enabled", -- [1230]
-			"<00:27:09> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1231]
-			"<00:27:09> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1232]
-			"<00:27:09> <DEBUG>		ActivateSkin	bfa", -- [1233]
-			"<00:27:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1234]
-			"<00:27:11> <INFO>		UpdatePlayersData()", -- [1235]
-			"<00:27:11> <INFO>		Player relog...", -- [1236]
-			"<00:27:12> <DEBUG>		GetPlayersGuildRank()", -- [1237]
-			"<00:27:12> <DEBUG>		Found Guild Rank: Raider", -- [1238]
-			"<00:27:15> <DEBUG>		GetML()", -- [1239]
-			"<00:27:15> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1240]
-			"<00:27:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1241]
-			"<00:33:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1242]
-			"<00:33:47> <INFO>		UpdatePlayersData()", -- [1243]
-			"<00:33:48> <DEBUG>		GetML()", -- [1244]
-			"<00:36:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1245]
-			"<00:36:17> <INFO>		UpdatePlayersData()", -- [1246]
-			"<00:36:19> <DEBUG>		GetML()", -- [1247]
-			"<00:38:26> <DEBUG>		Event:	LOOT_READY	true", -- [1248]
-			"<00:39:22> <DEBUG>		Event:	LOOT_READY	true", -- [1249]
-			"<00:39:39> <DEBUG>		Event:	LOOT_READY	true", -- [1250]
-			"<00:45:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1251]
-			"<00:45:04> <INFO>		UpdatePlayersData()", -- [1252]
-			"<00:45:05> <DEBUG>		GetML()", -- [1253]
-			"<00:45:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1254]
-			"<00:45:11> <INFO>		UpdatePlayersData()", -- [1255]
-			"<00:45:13> <DEBUG>		GetML()", -- [1256]
-			"<00:46:56> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1257]
-			"<00:46:56> <INFO>		UpdatePlayersData()", -- [1258]
-			"<00:46:57> <DEBUG>		GetML()", -- [1259]
-			"<00:49:16> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1260]
-			"<00:49:16> <INFO>		UpdatePlayersData()", -- [1261]
-			"<00:49:18> <DEBUG>		GetML()", -- [1262]
-			"<00:49:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1263]
-			"<00:49:54> <INFO>		UpdatePlayersData()", -- [1264]
-			"<00:49:55> <DEBUG>		GetML()", -- [1265]
-			"<00:50:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1266]
-			"<00:50:42> <INFO>		UpdatePlayersData()", -- [1267]
-			"<00:50:43> <DEBUG>		GetML()", -- [1268]
-			"<00:52:51> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1269]
-			"<00:52:51> <INFO>		UpdatePlayersData()", -- [1270]
-			"<00:52:51> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1271]
-			"<00:52:53> <DEBUG>		GetML()", -- [1272]
-			"<00:52:53> <DEBUG>		GetML()", -- [1273]
-			"<00:53:23> <DEBUG>		Event:	LOOT_READY	true", -- [1274]
-			"<00:53:23> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	1	Creature-0-4251-2207-19355-151638-00004446C1	1", -- [1275]
-			"<00:53:23> <DEBUG>		Event:	LOOT_READY	true", -- [1276]
-			"<00:53:23> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	2	Creature-0-4251-2207-19355-151639-00004446C1	1	Creature-0-4251-2207-19355-151638-00004446C1	1", -- [1277]
-			"<00:53:24> <DEBUG>		Event:	LOOT_READY	true", -- [1278]
-			"<00:53:24> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	1	Creature-0-4251-2207-19355-151639-00004446C1	1", -- [1279]
-			"<00:53:24> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0", -- [1280]
-			"<00:53:24> <DEBUG>		Event:	LOOT_CLOSED", -- [1281]
-			"<00:53:24> <DEBUG>		Event:	LOOT_CLOSED", -- [1282]
-			"<00:53:24> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [1283]
-			"<00:53:24> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [1284]
-			"<00:54:09> <DEBUG>		Event:	LOOT_READY	true", -- [1285]
-			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	4	Creature-0-4251-2207-19355-151638-00014446C1	1	Creature-0-4251-2207-19355-151639-0000C446C1	1	Creature-0-4251-2207-19355-151638-0000C446C1	1	Creature-0-4251-2207-19355-151638-00024446C1	1", -- [1286]
-			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0	1	Creature-0-4251-2207-19355-151638-00034446C1	1", -- [1287]
-			"<00:54:09> <DEBUG>		Event:	LOOT_READY	true", -- [1288]
-			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	4	Creature-0-4251-2207-19355-151638-00014446C1	1	Creature-0-4251-2207-19355-151639-0000C446C1	1	Creature-0-4251-2207-19355-151638-0000C446C1	1	Creature-0-4251-2207-19355-151638-00024446C1	1", -- [1289]
-			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0	2	Creature-0-4251-2207-19355-151638-0002C446C1	1	Creature-0-4251-2207-19355-151638-00034446C1	1", -- [1290]
-			"<00:54:09> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0", -- [1291]
-			"<00:54:10> <DEBUG>		Event:	LOOT_READY	true", -- [1292]
-			"<00:54:10> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0	1	Creature-0-4251-2207-19355-151638-0002C446C1	1", -- [1293]
-			"<00:54:10> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0", -- [1294]
-			"<00:54:10> <DEBUG>		Event:	LOOT_CLOSED", -- [1295]
-			"<00:54:10> <DEBUG>		Event:	LOOT_CLOSED", -- [1296]
-			"<00:54:10> <Comm>		^1^Sl^T^N1^S151638^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [1297]
-			"<00:54:10> <Comm>		^1^Sl^T^N1^S151638^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [1298]
-			"<00:54:53> <DEBUG>		Event:	LOOT_READY	true", -- [1299]
-			"<00:54:53> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	1	Creature-0-4251-2207-19355-151639-00014446C1	1", -- [1300]
-			"<00:54:53> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0", -- [1301]
-			"<00:54:53> <DEBUG>		Event:	LOOT_CLOSED", -- [1302]
-			"<00:54:53> <DEBUG>		Event:	LOOT_CLOSED", -- [1303]
-			"<00:54:54> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [1304]
-			"<00:54:54> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [1305]
-			"<00:56:49> <DEBUG>		Event:	LOOT_READY	true", -- [1306]
-			"<00:56:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1307]
-			"<00:56:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1308]
-			"<00:56:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	167830	|cffe6cc80|Hitem:167830::::::::70:64:::::::::|h[Petrified Ebony Scale]|h|r	1	Qpfromage	MAGE", -- [1309]
-			"<00:57:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1310]
-			"<00:57:45> <INFO>		UpdatePlayersData()", -- [1311]
-			"<00:57:46> <DEBUG>		Event:	GROUP_LEFT	2	Party-3682-1-0000386D73E5", -- [1312]
-			"<00:57:46> <DEBUG>		GetML()", -- [1313]
-			"<00:57:47> <DEBUG>		GetML()", -- [1314]
-			"<00:59:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1315]
-			"<00:59:21> <INFO>		UpdatePlayersData()", -- [1316]
-			"<00:59:23> <DEBUG>		GetML()", -- [1317]
-			"<01:01:47> <DEBUG>		Event:	LOOT_READY	true", -- [1318]
-			"<01:08:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1319]
-			"<01:08:37> <INFO>		UpdatePlayersData()", -- [1320]
-			"<01:08:38> <DEBUG>		GetML()", -- [1321]
-			"<01:10:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1322]
-			"<01:10:20> <INFO>		UpdatePlayersData()", -- [1323]
-			"<01:10:22> <DEBUG>		GetML()", -- [1324]
-			"<01:10:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1325]
-			"<01:10:37> <INFO>		UpdatePlayersData()", -- [1326]
-			"<01:10:39> <DEBUG>		GetML()", -- [1327]
-			"<01:11:38> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1328]
-			"<01:11:40> <DEBUG>		GetML()", -- [1329]
-			"<01:11:40> <DEBUG>		Resetting council as we have a new ML!", -- [1330]
-			"<01:11:40> <INFO>		MasterLooter	Kfcsniffer-Ragnaros	LootMethod	personalloot", -- [1331]
-			"<01:11:55> <DEBUG>		Timer MLdb_check passed", -- [1332]
-			"<01:12:43> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [1333]
-			"<01:12:43> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1334]
-			"<01:12:43> <DEBUG>		Event:	GROUP_LEFT	1	Party-3682-1-0000386D7531", -- [1335]
-			"<01:12:43> <DEBUG>		GetML()", -- [1336]
-			"<01:12:43> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1337]
-			"<01:12:45> <DEBUG>		GetML()", -- [1338]
-			"<01:12:45> <Data.Player>		CreatePlayer	Player-1084-05CC5F1B", -- [1339]
-			"<01:12:45> <DEBUG>		Resetting council as we have a new ML!", -- [1340]
-			"<01:12:45> <INFO>		MasterLooter	Priestatsu-TarrenMill	LootMethod	personalloot", -- [1341]
-			"<01:13:00> <DEBUG>		Timer MLdb_check passed", -- [1342]
-			"<01:13:00> <Comm>		^1^Sxrealm^T^N1^SPriestatsu-TarrenMill^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1343]
-			"<01:13:00> <Comm>		^1^Sxrealm^T^N1^SPriestatsu-TarrenMill^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1344]
-			"<01:14:52> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [1345]
-			"<01:15:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1346]
-			"<01:15:05> <INFO>		UpdatePlayersData()", -- [1347]
-			"<01:15:07> <DEBUG>		GetML()", -- [1348]
-			"<01:15:16> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1349]
-			"<01:15:16> <INFO>		UpdatePlayersData()", -- [1350]
-			"<01:15:18> <DEBUG>		GetML()", -- [1351]
-			"<01:15:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1352]
-			"<01:15:24> <INFO>		UpdatePlayersData()", -- [1353]
-			"<01:15:26> <DEBUG>		GetML()", -- [1354]
-			"<01:17:19> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [1355]
-			"<01:17:20> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1356]
-			"<01:18:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1357]
-			"<01:18:34> <INFO>		UpdatePlayersData()", -- [1358]
-			"<01:18:35> <DEBUG>		GetML()", -- [1359]
-			"<01:18:35> <Data.Player>		CreatePlayer	Player-3391-0C495EEF", -- [1360]
-			"<01:18:50> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1361]
-			"<01:20:37> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Halls of Infusion (Mythic)	362362	0	0", -- [1362]
-			"<01:20:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1363]
-			"<01:20:38> <INFO>		UpdatePlayersData()", -- [1364]
-			"<01:20:39> <DEBUG>		GetML()", -- [1365]
-			"<01:21:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1366]
-			"<01:21:26> <INFO>		UpdatePlayersData()", -- [1367]
-			"<01:21:28> <DEBUG>		GetML()", -- [1368]
-			"<01:21:47> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Halls of Infusion (Mythic)	362292	0	0", -- [1369]
-			"<01:21:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1370]
-			"<01:21:48> <INFO>		UpdatePlayersData()", -- [1371]
-			"<01:21:49> <DEBUG>		GetML()", -- [1372]
-			"<01:23:58> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1373]
-			"<01:23:58> <INFO>		UpdatePlayersData()", -- [1374]
-			"<01:23:59> <DEBUG>		GetML()", -- [1375]
-			"<01:25:13> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Halls of Infusion (Mythic)	362086	0	0", -- [1376]
-			"<01:25:14> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1377]
-			"<01:25:14> <INFO>		UpdatePlayersData()", -- [1378]
-			"<01:25:15> <DEBUG>		GetML()", -- [1379]
-			"<01:34:07> <DEBUG>		Event:	ENCOUNTER_START	2615	Watcher Irideus	8	5", -- [1380]
-			"<01:34:07> <INFO>		UpdatePlayersData()", -- [1381]
-			"<01:37:56> <DEBUG>		Event:	ENCOUNTER_END	2615	Watcher Irideus	8	5	0", -- [1382]
-			"<01:38:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1383]
-			"<01:38:20> <INFO>		UpdatePlayersData()", -- [1384]
-			"<01:38:21> <DEBUG>		GetML()", -- [1385]
-			"<01:38:35> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1386]
-			"<01:38:35> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1387]
-			"<01:38:35> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1388]
-			"<01:39:25> <DEBUG>		Event:	GROUP_LEFT	1	Party-1084-1-000067906BF7", -- [1389]
-			"<01:39:25> <DEBUG>		GetML()", -- [1390]
-			"<01:39:45> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1391]
-			"<01:39:47> <DEBUG>		GetML()", -- [1392]
-			"<01:39:47> <DEBUG>		Resetting council as we have a new ML!", -- [1393]
-			"<01:39:47> <INFO>		MasterLooter	Yamáto-Ragnaros	LootMethod	personalloot", -- [1394]
-			"<01:40:02> <DEBUG>		Timer MLdb_check passed", -- [1395]
-			"<01:56:05> <DEBUG>		Event:	GROUP_LEFT	1	Party-3682-1-0000386D7705", -- [1396]
-			"<01:56:05> <DEBUG>		GetML()", -- [1397]
-			"<01:56:05> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1398]
-			"<01:56:07> <DEBUG>		GetML()", -- [1399]
-			"<01:56:07> <Data.Player>		CreatePlayer	Player-1305-0BF757C0", -- [1400]
-			"<01:56:07> <DEBUG>		Resetting council as we have a new ML!", -- [1401]
-			"<01:56:07> <INFO>		MasterLooter	Bestbaby-Kazzak	LootMethod	personalloot", -- [1402]
-			"<01:56:22> <DEBUG>		Timer MLdb_check passed", -- [1403]
-			"<01:56:23> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1404]
-			"<01:56:23> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1405]
-			"<02:01:59> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Brackenhide Hollow (Mythic)	359880	0	0", -- [1406]
-			"<02:02:00> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1407]
-			"<02:02:00> <INFO>		UpdatePlayersData()", -- [1408]
-			"<02:02:01> <DEBUG>		GetML()", -- [1409]
-			"<02:02:01> <Data.Player>		CreatePlayer	Player-1416-09F8B967", -- [1410]
-			"<02:03:00> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1411]
-			"<02:03:02> <DEBUG>		GetML()", -- [1412]
-			"<02:03:02> <DEBUG>		Resetting council as we have a new ML!", -- [1413]
-			"<02:03:02> <INFO>		MasterLooter	Yamáto-Ragnaros	LootMethod	personalloot", -- [1414]
-			"<02:03:17> <DEBUG>		Timer MLdb_check passed", -- [1415]
-			"<02:13:43> <DEBUG>		Event:	ENCOUNTER_START	2570	Hackclaw's War-Band	8	5", -- [1416]
-			"<02:13:43> <INFO>		UpdatePlayersData()", -- [1417]
-			"<02:16:10> <DEBUG>		Event:	ENCOUNTER_END	2570	Hackclaw's War-Band	8	5	1", -- [1418]
-			"<02:25:07> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1419]
-			"<02:25:09> <DEBUG>		GetML()", -- [1420]
-			"<02:25:09> <DEBUG>		Resetting council as we have a new ML!", -- [1421]
-			"<02:25:09> <INFO>		MasterLooter	Bestbaby-Kazzak	LootMethod	personalloot", -- [1422]
-			"<02:25:22> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1423]
-			"<02:25:22> <INFO>		UpdatePlayersData()", -- [1424]
-			"<02:25:23> <DEBUG>		GetML()", -- [1425]
-			"<02:25:24> <DEBUG>		Timer MLdb_check passed", -- [1426]
-			"<02:25:25> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1427]
-			"<02:25:27> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1428]
-			"<02:25:27> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1429]
-			"<02:25:29> <DEBUG>		GetML()", -- [1430]
-			"<02:25:29> <DEBUG>		Resetting council as we have a new ML!", -- [1431]
-			"<02:25:29> <INFO>		MasterLooter	Qpfromage-Ragnaros	LootMethod	personalloot", -- [1432]
-			"<02:25:29> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1433]
-			"<02:25:29> <DEBUG>[ML]		NewML	Qpfromage-Ragnaros", -- [1434]
-			"<02:25:29> <DEBUG>[ML]		UpdateMLdb", -- [1435]
-			"<02:25:29> <INFO>		OnMLDBReceived", -- [1436]
-			"<02:25:29> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpfromage-Ragnaros", -- [1437]
-			"<02:25:29> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1438]
-			"<02:25:29> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SRaider^N4^N0^N5^N446.25^N6^N62^t^^	WHISPER	Qpfromage-Ragnaros", -- [1439]
-			"<02:25:31> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1440]
-			"<02:25:31> <Comm>		^1^Scouncil^T^N1^T^S3682-0B236980^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1441]
-			"<02:25:31> <DEBUG>		isCouncil	true", -- [1442]
-			"<02:25:31> <DEBUG>		GetLootDBStatistics()", -- [1443]
-			"<02:25:31> <DEBUG>		GetGuildRankNum()", -- [1444]
-			"<02:25:31> <INFO>		RCVotingFrame	enabled", -- [1445]
-			"<02:25:44> <DEBUG>		Timer MLdb_check passed", -- [1446]
-			"<02:25:48> <DEBUG>		Event:	GROUP_LEFT	1	Party-1305-1-000061518DD1", -- [1447]
-			"<02:25:48> <DEBUG>		GetML()", -- [1448]
-			"<02:25:48> <INFO>		Stop handling loot", -- [1449]
-			"<02:25:48> <INFO>[ML]		Disabled", -- [1450]
-			"<02:25:48> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Qpfromage-Ragnaros", -- [1451]
-			"<02:25:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1452]
-			"<02:25:53> <INFO>		UpdatePlayersData()", -- [1453]
-			"<02:25:54> <DEBUG>		GetML()", -- [1454]
-			"<02:25:54> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1455]
-			"<02:27:01> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Therion-Ragnaros", -- [1456]
-			"<02:27:01> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1457]
-			"<02:27:01> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1458]
-			"07/29/23", -- [1459]
-			"<10:49:54> <INFO>		Logged In", -- [1460]
-			"<10:49:54> <INFO>[ML]		Init", -- [1461]
-			"<10:49:54> <INFO>		RCLootCouncil	TradeUI enabled", -- [1462]
-			"<10:50:02> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1463]
-			"<10:50:02> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1464]
-			"<10:50:02> <DEBUG>		ActivateSkin	bfa", -- [1465]
-			"<10:50:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1466]
-			"<10:50:04> <INFO>		UpdatePlayersData()", -- [1467]
-			"<10:50:04> <INFO>		Player relog...", -- [1468]
-			"<10:50:06> <DEBUG>		GetPlayersGuildRank()", -- [1469]
-			"<10:50:06> <DEBUG>		GetPlayersGuildRank()", -- [1470]
-			"<10:50:06> <DEBUG>		Found Guild Rank: Raider", -- [1471]
-			"<10:50:08> <DEBUG>		GetML()", -- [1472]
-			"<10:50:08> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1473]
-			"<10:50:08> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1474]
-			"07/30/23", -- [1475]
-			"<21:52:04> <INFO>		Logged In", -- [1476]
-			"<21:52:04> <INFO>[ML]		Init", -- [1477]
-			"<21:52:04> <INFO>		RCLootCouncil	TradeUI enabled", -- [1478]
-			"<21:52:12> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1479]
-			"<21:52:12> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1480]
-			"<21:52:12> <DEBUG>		ActivateSkin	bfa", -- [1481]
-			"<21:52:14> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1482]
-			"<21:52:14> <INFO>		UpdatePlayersData()", -- [1483]
-			"<21:52:14> <INFO>		Player relog...", -- [1484]
-			"<21:52:15> <DEBUG>		GetPlayersGuildRank()", -- [1485]
-			"<21:52:16> <DEBUG>		GetPlayersGuildRank()", -- [1486]
-			"<21:52:16> <DEBUG>		Found Guild Rank: Raider", -- [1487]
-			"<21:52:18> <DEBUG>		GetML()", -- [1488]
-			"<21:52:18> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1489]
-			"07/30/23", -- [1490]
-			"<22:32:50> <INFO>		Logged In", -- [1491]
-			"<22:32:50> <INFO>[ML]		Init", -- [1492]
-			"<22:32:50> <INFO>		RCLootCouncil	TradeUI enabled", -- [1493]
-			"<22:32:54> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1494]
-			"<22:32:54> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1495]
-			"<22:32:54> <DEBUG>		ActivateSkin	bfa", -- [1496]
-			"<22:32:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1497]
-			"<22:32:57> <INFO>		UpdatePlayersData()", -- [1498]
-			"<22:32:57> <INFO>		Player relog...", -- [1499]
-			"<22:32:58> <DEBUG>		GetPlayersGuildRank()", -- [1500]
-			"<22:32:58> <DEBUG>		GetPlayersGuildRank()", -- [1501]
-			"<22:32:58> <DEBUG>		Found Guild Rank: Raider", -- [1502]
-			"<22:33:00> <DEBUG>		GetML()", -- [1503]
-			"<22:33:01> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1504]
-			"<22:33:49> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1505]
-			"<22:33:51> <DEBUG>		GetML()", -- [1506]
-			"<22:33:51> <Data.Player>		CreatePlayer	Player-3713-0732419C", -- [1507]
-			"<22:33:51> <Data.Player>		CreatePlayer	Player-1615-0A846180", -- [1508]
-			"<22:33:51> <Data.Player>		CreatePlayer	Player-1084-097B0F6E", -- [1509]
-			"<22:33:51> <Data.Player>		CreatePlayer	Player-1396-06651835", -- [1510]
-			"<22:33:51> <Data.Player>		CreatePlayer	Player-1403-080C65AF", -- [1511]
-			"<22:33:51> <DEBUG>		Resetting council as we have a new ML!", -- [1512]
-			"<22:33:51> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [1513]
-			"<22:34:06> <DEBUG>		Timer MLdb_check passed", -- [1514]
-			"<22:34:06> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SMLdb_request^t^^	RAID	Qpfromage-Ragnaros", -- [1515]
-			"<22:34:06> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Scouncil_request^t^^	RAID	Qpfromage-Ragnaros", -- [1516]
-			"<22:34:46> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	199513	1	0", -- [1517]
-			"<22:34:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1518]
-			"<22:34:47> <INFO>		UpdatePlayersData()", -- [1519]
-			"<22:34:48> <DEBUG>		GetML()", -- [1520]
-			"<22:35:24> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1521]
-			"<22:35:24> <INFO>		UpdatePlayersData()", -- [1522]
-			"<22:37:26> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1523]
-			"<22:38:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Smaugthis-Ragnaros", -- [1524]
-			"<22:39:03> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1525]
-			"<22:39:03> <INFO>		UpdatePlayersData()", -- [1526]
-			"<22:43:58> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1527]
-			"<22:45:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1528]
-			"<22:45:35> <INFO>		UpdatePlayersData()", -- [1529]
-			"<22:50:17> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Zerow-Ragnaros", -- [1530]
-			"<22:50:24> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1531]
-			"<22:51:59> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1532]
-			"<22:51:59> <INFO>		UpdatePlayersData()", -- [1533]
-			"<22:55:34> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1534]
-			"<22:56:45> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1535]
-			"<22:56:45> <INFO>		UpdatePlayersData()", -- [1536]
-			"<22:59:13> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1537]
-			"07/30/23", -- [1538]
-			"<23:00:15> <INFO>		Logged In", -- [1539]
-			"<23:00:15> <INFO>[ML]		Init", -- [1540]
-			"<23:00:15> <INFO>		RCLootCouncil	TradeUI enabled", -- [1541]
-			"<23:00:17> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1542]
-			"<23:00:17> <DEBUG>		ActivateSkin	bfa", -- [1543]
-			"<23:00:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1544]
-			"<23:00:19> <INFO>		UpdatePlayersData()", -- [1545]
-			"<23:00:19> <INFO>		Player relog...", -- [1546]
-			"<23:00:21> <DEBUG>		GetPlayersGuildRank()", -- [1547]
-			"<23:00:21> <DEBUG>		Found Guild Rank: Raider", -- [1548]
-			"<23:00:21> <DEBUG>		GetML()", -- [1549]
-			"<23:00:21> <DEBUG>		Resetting council as we have a new ML!", -- [1550]
-			"<23:00:21> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [1551]
-			"<23:00:21> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1552]
-			"<23:00:21> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SRaider^N4^N0^N5^N446.25^N6^N62^t^^	RAID	Qpfromage-Ragnaros", -- [1553]
-			"<23:00:21> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Sreconnect^t^^	RAID	Qpfromage-Ragnaros", -- [1554]
-			"<23:00:36> <DEBUG>		Timer MLdb_check passed", -- [1555]
-			"<23:00:36> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SMLdb_request^t^^	RAID	Qpfromage-Ragnaros", -- [1556]
-			"<23:00:36> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Scouncil_request^t^^	RAID	Qpfromage-Ragnaros", -- [1557]
-			"<23:00:59> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1558]
-			"<23:00:59> <INFO>		UpdatePlayersData()", -- [1559]
-			"<23:06:29> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1560]
-			"<23:07:47> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1561]
-			"<23:07:47> <INFO>		UpdatePlayersData()", -- [1562]
-			"<23:13:25> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1563]
-			"<23:16:32> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1564]
-			"<23:16:32> <INFO>		UpdatePlayersData()", -- [1565]
-			"<23:21:58> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1566]
-			"<23:23:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1567]
-			"<23:23:35> <INFO>		UpdatePlayersData()", -- [1568]
-			"<23:25:46> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1569]
-			"08/01/23", -- [1570]
-			"<00:22:35> <INFO>		Logged In", -- [1571]
-			"<00:22:35> <INFO>[ML]		Init", -- [1572]
-			"<00:22:35> <INFO>		RCLootCouncil	TradeUI enabled", -- [1573]
-			"<00:22:44> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1574]
-			"<00:22:44> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1575]
-			"<00:22:44> <DEBUG>		ActivateSkin	bfa", -- [1576]
-			"<00:22:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1577]
-			"<00:22:46> <INFO>		UpdatePlayersData()", -- [1578]
-			"<00:22:46> <INFO>		Player relog...", -- [1579]
-			"<00:22:49> <DEBUG>		GetML()", -- [1580]
-			"<00:22:49> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1581]
-			"<00:23:33> <DEBUG>		GetPlayersGuildRank()", -- [1582]
-			"<00:23:33> <DEBUG>		Found Guild Rank: Raider", -- [1583]
-			"08/01/23", -- [1584]
-			"<00:23:50> <INFO>		Logged In", -- [1585]
-			"<00:23:50> <INFO>[ML]		Init", -- [1586]
-			"<00:23:50> <INFO>		RCLootCouncil	TradeUI enabled", -- [1587]
-			"<00:23:52> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1588]
-			"<00:23:52> <DEBUG>		ActivateSkin	bfa", -- [1589]
-			"<00:23:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1590]
-			"<00:23:54> <INFO>		UpdatePlayersData()", -- [1591]
-			"<00:23:54> <INFO>		Player relog...", -- [1592]
-			"<00:23:56> <DEBUG>		GetPlayersGuildRank()", -- [1593]
-			"<00:23:56> <DEBUG>		Found Guild Rank: Raider", -- [1594]
-			"<00:23:56> <DEBUG>		GetML()", -- [1595]
-			"<00:23:56> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1596]
-			"<00:25:02> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1597]
-			"<00:25:02> <INFO>		UpdatePlayersData()", -- [1598]
-			"<00:25:04> <DEBUG>		GetML()", -- [1599]
-			"<00:28:21> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Smaugthis-Ragnaros", -- [1600]
-			"08/01/23", -- [1601]
-			"<02:22:43> <INFO>		Logged In", -- [1602]
-			"<02:22:43> <INFO>[ML]		Init", -- [1603]
-			"<02:22:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1604]
-			"<02:22:51> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1605]
-			"<02:22:51> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1606]
-			"<02:22:51> <DEBUG>		ActivateSkin	bfa", -- [1607]
-			"<02:22:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1608]
-			"<02:22:53> <INFO>		UpdatePlayersData()", -- [1609]
-			"<02:22:53> <INFO>		Player relog...", -- [1610]
-			"<02:22:55> <DEBUG>		GetPlayersGuildRank()", -- [1611]
-			"<02:22:55> <DEBUG>		Found Guild Rank: Raider", -- [1612]
-			"<02:22:57> <DEBUG>		GetML()", -- [1613]
-			"<02:22:57> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1614]
-			"<02:52:10> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	çookie-Ragnaros", -- [1615]
-			"<03:26:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1616]
-			"<03:26:45> <INFO>		UpdatePlayersData()", -- [1617]
-			"<03:26:47> <DEBUG>		GetML()", -- [1618]
-			"<04:41:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1619]
-			"<04:41:50> <INFO>		UpdatePlayersData()", -- [1620]
-			"<04:41:52> <DEBUG>		GetML()", -- [1621]
-			"<04:51:03> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1622]
-			"<04:51:03> <INFO>		UpdatePlayersData()", -- [1623]
-			"<04:51:05> <DEBUG>		GetML()", -- [1624]
-			"08/01/23", -- [1625]
-			"<05:56:45> <INFO>		Logged In", -- [1626]
-			"<05:56:45> <INFO>[ML]		Init", -- [1627]
-			"<05:56:45> <INFO>		RCLootCouncil	TradeUI enabled", -- [1628]
-			"<05:56:53> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1629]
-			"<05:56:53> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1630]
-			"<05:56:53> <DEBUG>		ActivateSkin	bfa", -- [1631]
-			"<05:56:55> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1632]
-			"<05:56:55> <INFO>		UpdatePlayersData()", -- [1633]
-			"<05:56:55> <INFO>		Player relog...", -- [1634]
-			"<05:56:57> <DEBUG>		GetML()", -- [1635]
-			"<05:56:58> <DEBUG>		GetPlayersGuildRank()", -- [1636]
-			"<05:56:58> <DEBUG>		GetPlayersGuildRank()", -- [1637]
-			"<05:56:58> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1638]
-			"08/01/23", -- [1639]
-			"<06:14:19> <INFO>		Logged In", -- [1640]
-			"<06:14:19> <INFO>[ML]		Init", -- [1641]
-			"<06:14:19> <INFO>		RCLootCouncil	TradeUI enabled", -- [1642]
-			"<06:14:20> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1643]
-			"<06:14:20> <DEBUG>		ActivateSkin	bfa", -- [1644]
-			"<06:14:22> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1645]
-			"<06:14:22> <INFO>		UpdatePlayersData()", -- [1646]
-			"<06:14:22> <INFO>		Player relog...", -- [1647]
-			"<06:14:22> <DEBUG>		GetML()", -- [1648]
-			"<06:14:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1649]
-			"<06:14:28> <DEBUG>		GetPlayersGuildRank()", -- [1650]
-			"<06:14:28> <DEBUG>		Found Guild Rank: Raider", -- [1651]
-			"<06:17:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1652]
-			"<06:17:53> <INFO>		UpdatePlayersData()", -- [1653]
-			"<06:17:55> <DEBUG>		GetML()", -- [1654]
-			"<06:35:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1655]
-			"<06:35:17> <INFO>		UpdatePlayersData()", -- [1656]
-			"<06:35:19> <DEBUG>		GetML()", -- [1657]
-			"<06:35:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1658]
-			"<06:35:37> <INFO>		UpdatePlayersData()", -- [1659]
-			"<06:35:39> <DEBUG>		GetML()", -- [1660]
-			"<06:35:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1661]
-			"<06:35:53> <INFO>		UpdatePlayersData()", -- [1662]
-			"<06:35:55> <DEBUG>		GetML()", -- [1663]
-			"08/01/23", -- [1664]
-			"<06:54:31> <INFO>		Logged In", -- [1665]
-			"<06:54:31> <INFO>[ML]		Init", -- [1666]
-			"<06:54:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [1667]
-			"<06:54:32> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1668]
-			"<06:54:32> <DEBUG>		ActivateSkin	bfa", -- [1669]
-			"<06:54:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1670]
-			"<06:54:34> <INFO>		UpdatePlayersData()", -- [1671]
-			"<06:54:34> <INFO>		Player relog...", -- [1672]
-			"<06:54:36> <DEBUG>		GetPlayersGuildRank()", -- [1673]
-			"<06:54:36> <DEBUG>		Found Guild Rank: Raider", -- [1674]
-			"<06:54:36> <DEBUG>		GetML()", -- [1675]
-			"<06:54:36> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1676]
-			"08/01/23", -- [1677]
-			"<07:03:31> <INFO>		Logged In", -- [1678]
-			"<07:03:31> <INFO>[ML]		Init", -- [1679]
-			"<07:03:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [1680]
-			"<07:03:32> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1681]
-			"<07:03:32> <DEBUG>		ActivateSkin	bfa", -- [1682]
-			"<07:03:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1683]
-			"<07:03:35> <INFO>		UpdatePlayersData()", -- [1684]
-			"<07:03:35> <INFO>		Player relog...", -- [1685]
-			"<07:03:36> <DEBUG>		GetPlayersGuildRank()", -- [1686]
-			"<07:03:36> <DEBUG>		Found Guild Rank: Raider", -- [1687]
-			"<07:03:36> <DEBUG>		GetML()", -- [1688]
-			"<07:03:36> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1689]
-			"<07:57:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1690]
-			"<07:57:29> <INFO>		UpdatePlayersData()", -- [1691]
-			"<07:57:31> <DEBUG>		GetML()", -- [1692]
-			"<08:31:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1693]
-			"<08:31:12> <INFO>		UpdatePlayersData()", -- [1694]
-			"<08:31:13> <DEBUG>		GetML()", -- [1695]
-			"<09:31:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1696]
-			"<09:31:21> <INFO>		UpdatePlayersData()", -- [1697]
-			"<09:31:22> <DEBUG>		GetML()", -- [1698]
-			"<09:33:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1699]
-			"<09:33:21> <INFO>		UpdatePlayersData()", -- [1700]
-			"<09:33:22> <DEBUG>		GetML()", -- [1701]
-			"08/01/23", -- [1702]
-			"<09:40:16> <INFO>		Logged In", -- [1703]
-			"<09:40:16> <INFO>[ML]		Init", -- [1704]
-			"<09:40:16> <INFO>		RCLootCouncil	TradeUI enabled", -- [1705]
-			"<09:40:17> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1706]
-			"<09:40:17> <DEBUG>		ActivateSkin	bfa", -- [1707]
-			"<09:40:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1708]
-			"<09:40:20> <INFO>		UpdatePlayersData()", -- [1709]
-			"<09:40:20> <INFO>		Player relog...", -- [1710]
-			"<09:40:21> <DEBUG>		GetPlayersGuildRank()", -- [1711]
-			"<09:40:21> <DEBUG>		Found Guild Rank: Raider", -- [1712]
-			"<09:40:21> <DEBUG>		GetML()", -- [1713]
-			"<09:40:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1714]
-			"08/01/23", -- [1715]
-			"<09:44:48> <INFO>		Logged In", -- [1716]
-			"<09:44:48> <INFO>[ML]		Init", -- [1717]
-			"<09:44:48> <INFO>		RCLootCouncil	TradeUI enabled", -- [1718]
-			"<09:44:50> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1719]
-			"<09:44:50> <DEBUG>		ActivateSkin	bfa", -- [1720]
-			"<09:44:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1721]
-			"<09:44:52> <INFO>		UpdatePlayersData()", -- [1722]
-			"<09:44:52> <INFO>		Player relog...", -- [1723]
-			"<09:44:53> <DEBUG>		GetPlayersGuildRank()", -- [1724]
-			"<09:44:53> <DEBUG>		Found Guild Rank: Raider", -- [1725]
-			"<09:44:53> <DEBUG>		GetML()", -- [1726]
-			"<09:44:54> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1727]
-			"<09:56:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1728]
-			"<09:56:40> <INFO>		UpdatePlayersData()", -- [1729]
-			"<09:56:42> <DEBUG>		GetML()", -- [1730]
-			"<09:57:44> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1731]
-			"<09:57:44> <INFO>		UpdatePlayersData()", -- [1732]
-			"<09:57:46> <DEBUG>		GetML()", -- [1733]
-			"<10:08:36> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1734]
-			"<10:08:36> <INFO>		UpdatePlayersData()", -- [1735]
-			"<10:08:38> <DEBUG>		GetML()", -- [1736]
-			"08/01/23", -- [1737]
-			"<10:09:39> <INFO>		Logged In", -- [1738]
-			"<10:09:39> <INFO>[ML]		Init", -- [1739]
-			"<10:09:39> <INFO>		RCLootCouncil	TradeUI enabled", -- [1740]
-			"<10:09:40> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1741]
-			"<10:09:40> <DEBUG>		ActivateSkin	bfa", -- [1742]
-			"<10:09:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1743]
-			"<10:09:43> <INFO>		UpdatePlayersData()", -- [1744]
-			"<10:09:43> <INFO>		Player relog...", -- [1745]
-			"<10:09:45> <DEBUG>		GetML()", -- [1746]
-			"<10:09:45> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1747]
-			"<10:09:48> <DEBUG>		GetPlayersGuildRank()", -- [1748]
-			"<10:09:48> <DEBUG>		Found Guild Rank: Raider", -- [1749]
-			"<10:10:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1750]
-			"<10:10:23> <INFO>		UpdatePlayersData()", -- [1751]
-			"<10:10:24> <DEBUG>		GetML()", -- [1752]
-			"<10:26:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1753]
-			"<10:26:47> <INFO>		UpdatePlayersData()", -- [1754]
-			"<10:26:49> <DEBUG>		GetML()", -- [1755]
-			"<10:28:25> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1756]
-			"<10:28:25> <INFO>		UpdatePlayersData()", -- [1757]
-			"<10:28:27> <DEBUG>		GetML()", -- [1758]
-			"<10:32:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1759]
-			"<10:32:41> <INFO>		UpdatePlayersData()", -- [1760]
-			"<10:32:43> <DEBUG>		GetML()", -- [1761]
-			"<10:34:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1762]
-			"<10:34:01> <INFO>		UpdatePlayersData()", -- [1763]
-			"<10:34:03> <DEBUG>		GetML()", -- [1764]
-			"<10:35:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1765]
-			"<10:35:47> <INFO>		UpdatePlayersData()", -- [1766]
-			"<10:35:49> <DEBUG>		GetML()", -- [1767]
-			"<10:39:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1768]
-			"<10:39:41> <INFO>		UpdatePlayersData()", -- [1769]
-			"<10:39:42> <DEBUG>		GetML()", -- [1770]
-			"<10:41:54> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Mábashí-Ragnaros", -- [1771]
-			"08/01/23", -- [1772]
-			"<10:49:53> <INFO>		Logged In", -- [1773]
-			"<10:49:53> <INFO>[ML]		Init", -- [1774]
-			"<10:49:53> <INFO>		RCLootCouncil	TradeUI enabled", -- [1775]
-			"<10:49:54> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1776]
-			"<10:49:54> <DEBUG>		ActivateSkin	bfa", -- [1777]
-			"<10:49:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1778]
-			"<10:49:57> <INFO>		UpdatePlayersData()", -- [1779]
-			"<10:49:57> <INFO>		Player relog...", -- [1780]
-			"<10:49:59> <DEBUG>		GetPlayersGuildRank()", -- [1781]
-			"<10:49:59> <DEBUG>		Found Guild Rank: Raider", -- [1782]
-			"<10:49:59> <DEBUG>		GetML()", -- [1783]
-			"<10:49:59> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1784]
-			"08/01/23", -- [1785]
-			"<11:43:38> <INFO>		Logged In", -- [1786]
-			"<11:43:38> <INFO>[ML]		Init", -- [1787]
-			"<11:43:38> <INFO>		RCLootCouncil	TradeUI enabled", -- [1788]
-			"<11:43:46> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1789]
-			"<11:43:46> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1790]
-			"<11:43:46> <DEBUG>		ActivateSkin	bfa", -- [1791]
-			"<11:43:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1792]
-			"<11:43:48> <INFO>		UpdatePlayersData()", -- [1793]
-			"<11:43:48> <INFO>		Player relog...", -- [1794]
-			"<11:43:49> <DEBUG>		GetPlayersGuildRank()", -- [1795]
-			"<11:43:49> <DEBUG>		Found Guild Rank: Raider", -- [1796]
-			"<11:43:52> <DEBUG>		GetML()", -- [1797]
-			"<11:43:53> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1798]
-			"08/01/23", -- [1799]
-			"<11:45:44> <INFO>		Logged In", -- [1800]
-			"<11:45:44> <INFO>[ML]		Init", -- [1801]
-			"<11:45:44> <INFO>		RCLootCouncil	TradeUI enabled", -- [1802]
-			"<11:45:45> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1803]
-			"<11:45:45> <DEBUG>		ActivateSkin	bfa", -- [1804]
-			"<11:45:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1805]
-			"<11:45:47> <INFO>		UpdatePlayersData()", -- [1806]
-			"<11:45:47> <INFO>		Player relog...", -- [1807]
-			"<11:45:48> <DEBUG>		GetPlayersGuildRank()", -- [1808]
-			"<11:45:48> <DEBUG>		Found Guild Rank: Raider", -- [1809]
-			"<11:45:49> <DEBUG>		GetML()", -- [1810]
-			"<11:45:49> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1811]
-			"<12:16:56> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1812]
-			"<12:17:44> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1813]
-			"<12:22:52> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1814]
-			"<12:56:12> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1815]
-			"<14:53:13> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1816]
-			"<14:53:15> <DEBUG>		GetML()", -- [1817]
-			"<14:53:15> <Data.Player>		CreatePlayer	Player-1305-0BDA3903", -- [1818]
-			"<14:53:15> <Data.Player>		CreatePlayer	Player-1315-0C45D562", -- [1819]
-			"<14:53:15> <Data.Player>		CreatePlayer	Player-3682-0B27F34E", -- [1820]
-			"<14:53:15> <Data.Player>		CreatePlayer	Player-604-0A75088C", -- [1821]
-			"<14:53:15> <DEBUG>		Resetting council as we have a new ML!", -- [1822]
-			"<14:53:15> <INFO>		MasterLooter	Myërs-Kazzak	LootMethod	personalloot", -- [1823]
-			"<14:53:30> <DEBUG>		Timer MLdb_check passed", -- [1824]
-			"<14:53:30> <Comm>		^1^Sxrealm^T^N1^SMyërs-Kazzak^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1825]
-			"<14:53:30> <Comm>		^1^Sxrealm^T^N1^SMyërs-Kazzak^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1826]
-			"<14:53:31> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Myërs-Kazzak", -- [1827]
-			"<14:53:31> <INFO>		OnMLDBReceived", -- [1828]
-			"<14:53:31> <Comm>		^1^Scouncil^T^N1^T^S1305-0BDA3903^B^t^t^^	PARTY	Myërs-Kazzak", -- [1829]
-			"<14:53:31> <DEBUG>		isCouncil	false", -- [1830]
-			"<14:54:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1831]
-			"<14:54:40> <INFO>		UpdatePlayersData()", -- [1832]
-			"<14:54:41> <DEBUG>		GetML()", -- [1833]
-			"<14:56:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1834]
-			"<14:56:08> <INFO>		UpdatePlayersData()", -- [1835]
-			"<14:56:09> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Freehold (Mythic)	54230	0	0", -- [1836]
-			"<14:56:10> <DEBUG>		GetML()", -- [1837]
-			"<14:57:21> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1838]
-			"<14:57:23> <DEBUG>		GetML()", -- [1839]
-			"<14:57:23> <DEBUG>		Resetting council as we have a new ML!", -- [1840]
-			"<14:57:23> <INFO>		MasterLooter	Laylona-Thrall	LootMethod	personalloot", -- [1841]
-			"<14:57:23> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Laylona-Thrall", -- [1842]
-			"<14:57:23> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Laylona-Thrall", -- [1843]
-			"<14:57:23> <INFO>		OnMLDBReceived", -- [1844]
-			"<14:57:23> <Comm>		^1^Sxrealm^T^N1^SLaylona-Thrall^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N445.875^N8^N64^t^^	PARTY	Qpfromage-Ragnaros", -- [1845]
-			"<14:57:23> <Comm>		^1^Sxrealm^T^N1^SLaylona-Thrall^N2^SpI^N3^SDAMAGER^N4^SJust~`Fingertip^N6^N0^N7^N440.6875^N8^N252^t^^	PARTY	Myërs-Kazzak", -- [1846]
-			"<14:57:23> <Comm>		^1^SStopHandleLoot^T^t^^	PARTY	Myërs-Kazzak", -- [1847]
-			"<14:57:25> <Comm>		^1^Scouncil^T^N1^T^S604-0A75088C^B^t^t^^	PARTY	Laylona-Thrall", -- [1848]
-			"<14:57:25> <DEBUG>		isCouncil	false", -- [1849]
-			"<14:57:38> <DEBUG>		Timer MLdb_check passed", -- [1850]
-			"<15:01:43> <DEBUG>		Event:	ENCOUNTER_START	2093	Skycap'n Kragg	8	5", -- [1851]
-			"<15:01:43> <INFO>		UpdatePlayersData()", -- [1852]
-			"<15:04:32> <DEBUG>		Event:	ENCOUNTER_END	2093	Skycap'n Kragg	8	5	1", -- [1853]
-			"<15:09:12> <DEBUG>		Event:	ENCOUNTER_START	2094	Council o' Captains	8	5", -- [1854]
-			"<15:09:12> <INFO>		UpdatePlayersData()", -- [1855]
-			"<15:12:18> <DEBUG>		Event:	ENCOUNTER_END	2094	Council o' Captains	8	5	1", -- [1856]
-			"<15:16:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1857]
-			"<15:16:48> <INFO>		UpdatePlayersData()", -- [1858]
-			"<15:16:50> <DEBUG>		GetML()", -- [1859]
-			"<15:18:39> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1860]
-			"<15:18:41> <DEBUG>		GetML()", -- [1861]
-			"<15:18:41> <DEBUG>		Resetting council as we have a new ML!", -- [1862]
-			"<15:18:41> <INFO>		MasterLooter	Dragondog-Ragnaros	LootMethod	personalloot", -- [1863]
-			"<15:18:56> <DEBUG>		Timer MLdb_check passed", -- [1864]
-			"<15:19:03> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1865]
-			"<15:19:05> <DEBUG>		GetML()", -- [1866]
-			"<15:19:05> <DEBUG>		Resetting council as we have a new ML!", -- [1867]
-			"<15:19:05> <INFO>		MasterLooter	Qpfromage-Ragnaros	LootMethod	personalloot", -- [1868]
-			"<15:19:05> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1869]
-			"<15:19:05> <DEBUG>[ML]		NewML	Qpfromage-Ragnaros", -- [1870]
-			"<15:19:05> <DEBUG>[ML]		UpdateMLdb", -- [1871]
-			"<15:19:05> <INFO>		OnMLDBReceived", -- [1872]
-			"<15:19:05> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpfromage-Ragnaros", -- [1873]
-			"<15:19:05> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1874]
-			"<15:19:05> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SRaider^N4^N0^N5^N445.875^N6^N64^t^^	WHISPER	Qpfromage-Ragnaros", -- [1875]
-			"<15:19:07> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1876]
-			"<15:19:07> <Comm>		^1^Scouncil^T^N1^T^S3682-0B236980^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1877]
-			"<15:19:07> <DEBUG>		isCouncil	true", -- [1878]
-			"<15:19:07> <DEBUG>		GetLootDBStatistics()", -- [1879]
-			"<15:19:07> <DEBUG>		GetGuildRankNum()", -- [1880]
-			"<15:19:07> <INFO>		RCVotingFrame	enabled", -- [1881]
-			"<15:19:20> <DEBUG>		Timer MLdb_check passed", -- [1882]
-			"<15:19:25> <DEBUG>		Event:	GROUP_LEFT	1	Party-1305-1-0000615B18EA", -- [1883]
-			"<15:19:25> <DEBUG>		GetML()", -- [1884]
-			"<15:19:25> <INFO>		Stop handling loot", -- [1885]
-			"<15:19:25> <INFO>[ML]		Disabled", -- [1886]
-			"<15:19:25> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Qpfromage-Ragnaros", -- [1887]
-			"08/01/23", -- [1888]
-			"<15:29:18> <INFO>		Logged In", -- [1889]
-			"<15:29:18> <INFO>[ML]		Init", -- [1890]
-			"<15:29:18> <INFO>		RCLootCouncil	TradeUI enabled", -- [1891]
-			"<15:29:19> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1892]
-			"<15:29:19> <DEBUG>		ActivateSkin	bfa", -- [1893]
-			"<15:29:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1894]
-			"<15:29:20> <INFO>		UpdatePlayersData()", -- [1895]
-			"<15:29:20> <INFO>		Player relog...", -- [1896]
-			"<15:29:22> <DEBUG>		GetML()", -- [1897]
-			"<15:29:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1898]
-			"<15:29:27> <DEBUG>		GetPlayersGuildRank()", -- [1899]
-			"<15:29:27> <DEBUG>		Found Guild Rank: Raider", -- [1900]
-			"<16:10:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvlife-Ragnaros", -- [1901]
-			"08/01/23", -- [1902]
-			"<19:51:17> <INFO>		Logged In", -- [1903]
-			"<19:51:17> <INFO>[ML]		Init", -- [1904]
-			"<19:51:17> <INFO>		RCLootCouncil	TradeUI enabled", -- [1905]
-			"<19:51:22> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1906]
-			"<19:51:22> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1907]
-			"<19:51:22> <DEBUG>		ActivateSkin	bfa", -- [1908]
-			"<19:51:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1909]
-			"<19:51:23> <INFO>		UpdatePlayersData()", -- [1910]
-			"<19:51:23> <INFO>		Player relog...", -- [1911]
-			"<19:51:24> <DEBUG>		GetPlayersGuildRank()", -- [1912]
-			"<19:51:24> <DEBUG>		Found Guild Rank: Raider", -- [1913]
-			"<19:51:26> <DEBUG>		GetML()", -- [1914]
-			"<19:51:27> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1915]
-			"<20:10:05> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Asset-Ragnaros", -- [1916]
-			"<20:16:25> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Infernodh-Ragnaros", -- [1917]
-			"<20:16:25> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Asset-Ragnaros", -- [1918]
-			"<20:46:30> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [1919]
-			"<20:46:32> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1920]
-			"<20:46:34> <DEBUG>		GetML()", -- [1921]
-			"<20:46:34> <Data.Player>		CreatePlayer	Player-3656-07BF9982", -- [1922]
-			"<20:46:34> <Data.Player>		CreatePlayer	Player-3691-09B76285", -- [1923]
-			"<20:46:34> <Data.Player>		CreatePlayer	Player-3674-0B219B18", -- [1924]
-			"<20:46:34> <DEBUG>		Resetting council as we have a new ML!", -- [1925]
-			"<20:46:34> <INFO>		MasterLooter	Jöötikkä-Stormreaver	LootMethod	personalloot", -- [1926]
-			"<20:46:49> <DEBUG>		Timer MLdb_check passed", -- [1927]
-			"<20:46:49> <Comm>		^1^Sxrealm^T^N1^SJöötikkä-Stormreaver^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1928]
-			"<20:46:49> <Comm>		^1^Sxrealm^T^N1^SJöötikkä-Stormreaver^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1929]
-			"<20:47:31> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1930]
-			"<20:47:31> <INFO>		UpdatePlayersData()", -- [1931]
-			"<20:47:32> <DEBUG>		GetML()", -- [1932]
-			"<20:48:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Smaugthis-Ragnaros", -- [1933]
-			"<20:50:37> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Freehold (Mythic)	32962	0	0", -- [1934]
-			"<20:50:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1935]
-			"<20:50:38> <INFO>		UpdatePlayersData()", -- [1936]
-			"<20:50:39> <DEBUG>		GetML()", -- [1937]
-			"<20:50:39> <Data.Player>		CreatePlayer	Player-3674-081BF176", -- [1938]
-			"<20:56:05> <DEBUG>		Event:	ENCOUNTER_START	2093	Skycap'n Kragg	8	5", -- [1939]
-			"<20:56:05> <INFO>		UpdatePlayersData()", -- [1940]
-			"<20:58:50> <DEBUG>		Event:	ENCOUNTER_END	2093	Skycap'n Kragg	8	5	1", -- [1941]
-			"<21:02:47> <DEBUG>		Event:	ENCOUNTER_START	2094	Council o' Captains	8	5", -- [1942]
-			"<21:02:47> <INFO>		UpdatePlayersData()", -- [1943]
-			"<21:05:07> <DEBUG>		Event:	ENCOUNTER_END	2094	Council o' Captains	8	5	0", -- [1944]
-			"<21:05:16> <DEBUG>		Event:	GROUP_LEFT	1	Party-3656-1-0000679EE16B", -- [1945]
-			"<21:05:16> <DEBUG>		GetML()", -- [1946]
-			"08/01/23", -- [1947]
-			"<21:06:27> <INFO>		Logged In", -- [1948]
-			"<21:06:27> <INFO>[ML]		Init", -- [1949]
-			"<21:06:27> <INFO>		RCLootCouncil	TradeUI enabled", -- [1950]
-			"<21:06:30> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1951]
-			"<21:06:30> <DEBUG>		ActivateSkin	bfa", -- [1952]
-			"<21:06:32> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1953]
-			"<21:06:32> <INFO>		UpdatePlayersData()", -- [1954]
-			"<21:06:32> <INFO>		Player relog...", -- [1955]
-			"<21:06:34> <DEBUG>		GetML()", -- [1956]
-			"<21:06:35> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1957]
-			"<21:06:36> <DEBUG>		GetPlayersGuildRank()", -- [1958]
-			"<21:06:36> <DEBUG>		Found Guild Rank: Raider", -- [1959]
-			"<21:06:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1960]
-			"<21:06:50> <INFO>		UpdatePlayersData()", -- [1961]
-			"<21:06:52> <DEBUG>		GetML()", -- [1962]
-			"08/01/23", -- [1963]
-			"<21:08:13> <INFO>		Logged In", -- [1964]
-			"<21:08:13> <INFO>[ML]		Init", -- [1965]
-			"<21:08:13> <INFO>		RCLootCouncil	TradeUI enabled", -- [1966]
-			"<21:08:14> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1967]
-			"<21:08:14> <DEBUG>		ActivateSkin	bfa", -- [1968]
-			"<21:08:15> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1969]
-			"<21:08:15> <INFO>		UpdatePlayersData()", -- [1970]
-			"<21:08:15> <INFO>		Player relog...", -- [1971]
-			"<21:08:16> <DEBUG>		GetPlayersGuildRank()", -- [1972]
-			"<21:08:16> <DEBUG>		Found Guild Rank: Raider", -- [1973]
-			"<21:08:17> <DEBUG>		GetML()", -- [1974]
-			"<21:08:17> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1975]
-			"08/01/23", -- [1976]
-			"<21:08:45> <INFO>		Logged In", -- [1977]
-			"<21:08:45> <INFO>[ML]		Init", -- [1978]
-			"<21:08:45> <INFO>		RCLootCouncil	TradeUI enabled", -- [1979]
-			"<21:08:46> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1980]
-			"<21:08:46> <DEBUG>		ActivateSkin	bfa", -- [1981]
-			"<21:08:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1982]
-			"<21:08:47> <INFO>		UpdatePlayersData()", -- [1983]
-			"<21:08:47> <INFO>		Player relog...", -- [1984]
-			"<21:08:48> <DEBUG>		GetPlayersGuildRank()", -- [1985]
-			"<21:08:48> <DEBUG>		Found Guild Rank: Raider", -- [1986]
-			"<21:08:49> <DEBUG>		GetML()", -- [1987]
-			"<21:08:49> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1988]
-			"<21:10:59> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Hev-Ragnaros", -- [1989]
-			"08/22/23", -- [1990]
-			"<03:29:19> <INFO>		Logged In", -- [1991]
-			"<03:29:19> <INFO>[ML]		Init", -- [1992]
-			"<03:29:19> <INFO>		RCLootCouncil	TradeUI enabled", -- [1993]
-			"<03:29:34> <Data.Player>		CreatePlayer	Player-3682-0B310D76", -- [1994]
-			"<03:29:34> <INFO>		Unknown	3.9.1	nil", -- [1995]
-			"<03:29:34> <DEBUG>		ActivateSkin	bfa", -- [1996]
-			"<03:29:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1997]
-			"<03:29:38> <INFO>		UpdatePlayersData()", -- [1998]
-			"<03:29:38> <INFO>		Player relog...", -- [1999]
-			"<03:29:44> <DEBUG>		GetML()", -- [2000]
+			"<22:25:56> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^Smldb^N3^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Retardinxx-Draenor", -- [1]
+			"<22:25:56> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^Scouncil^N3^T^S1403-0A69ADE2^B^t^t^^	RAID	Retardinxx-Draenor", -- [2]
+			"<22:29:24> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [3]
+			"<22:29:26> <DEBUG>		GetML()", -- [4]
+			"<22:29:26> <DEBUG>		Resetting council as we have a new ML!", -- [5]
+			"<22:29:26> <INFO>		MasterLooter	Sûnder-Hyjal	LootMethod	personalloot", -- [6]
+			"<22:29:26> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Retardinxx-Draenor", -- [7]
+			"<22:29:33> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [8]
+			"<22:29:35> <DEBUG>		GetML()", -- [9]
+			"<22:29:35> <DEBUG>		Resetting council as we have a new ML!", -- [10]
+			"<22:29:35> <INFO>		MasterLooter	Karno-Hyjal	LootMethod	personalloot", -- [11]
+			"<22:29:35> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Karno-Hyjal", -- [12]
+			"<22:29:35> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Karno-Hyjal", -- [13]
+			"<22:29:35> <INFO>		OnMLDBReceived", -- [14]
+			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [15]
+			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^STrial^N6^N0^N7^N445.125^N8^N254^t^^	RAID	Amenía-TarrenMill", -- [16]
+			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SObsidian^N6^N0^N7^N444.75^N8^N70^t^^	RAID	Retardinxx-Draenor", -- [17]
+			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [18]
+			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [19]
+			"<22:29:35> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [20]
+			"<22:29:36> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [21]
+			"<22:29:37> <Comm>		^1^Scouncil^T^N1^T^S1390-086A105F^B^t^t^^	RAID	Karno-Hyjal", -- [22]
+			"<22:29:37> <DEBUG>		isCouncil	false", -- [23]
+			"<22:29:41> <DEBUG>		Timer MLdb_check passed", -- [24]
+			"<22:29:47> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Karno-Hyjal", -- [25]
+			"<22:29:50> <DEBUG>		Timer MLdb_check passed", -- [26]
+			"<22:30:41> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [27]
+			"<22:30:43> <DEBUG>		GetML()", -- [28]
+			"<22:30:43> <Data.Player>		CreatePlayer	Player-1390-0AF6393B", -- [29]
+			"<22:30:43> <DEBUG>		Resetting council as we have a new ML!", -- [30]
+			"<22:30:43> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [31]
+			"<22:30:43> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Strongdps-Hyjal", -- [32]
+			"<22:30:43> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Strongdps-Hyjal", -- [33]
+			"<22:30:43> <INFO>		OnMLDBReceived", -- [34]
+			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [35]
+			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [36]
+			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SObsidian^N6^N0^N7^N444.75^N8^N70^t^^	RAID	Retardinxx-Draenor", -- [37]
+			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [38]
+			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [39]
+			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^STrial^N6^N0^N7^N445.125^N8^N254^t^^	RAID	Amenía-TarrenMill", -- [40]
+			"<22:30:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [41]
+			"<22:30:45> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [42]
+			"<22:30:58> <DEBUG>		Timer MLdb_check passed", -- [43]
+			"<22:31:03> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [44]
+			"<22:33:39> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [45]
+			"<22:33:39> <INFO>		UpdatePlayersData()", -- [46]
+			"<22:36:18> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [47]
+			"<22:37:22> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [48]
+			"<22:37:22> <INFO>		UpdatePlayersData()", -- [49]
+			"<22:38:39> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Mecap-Ragnaros", -- [50]
+			"<22:38:39> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [51]
+			"<22:39:31> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [52]
+			"<22:40:37> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [53]
+			"<22:40:37> <INFO>		UpdatePlayersData()", -- [54]
+			"<22:44:13> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [55]
+			"<22:47:55> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [56]
+			"<22:47:55> <INFO>		UpdatePlayersData()", -- [57]
+			"<22:50:21> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [58]
+			"<22:52:03> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [59]
+			"<22:52:03> <INFO>		UpdatePlayersData()", -- [60]
+			"<22:56:36> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [61]
+			"<22:58:56> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [62]
+			"<22:58:56> <INFO>		UpdatePlayersData()", -- [63]
+			"<23:02:03> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [64]
+			"<23:03:42> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [65]
+			"<23:03:42> <INFO>		UpdatePlayersData()", -- [66]
+			"<23:07:59> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [67]
+			"<23:09:31> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [68]
+			"<23:09:31> <INFO>		UpdatePlayersData()", -- [69]
+			"<23:14:30> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [70]
+			"<23:17:28> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [71]
+			"<23:17:28> <INFO>		UpdatePlayersData()", -- [72]
+			"<23:19:17> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [73]
+			"<23:20:27> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [74]
+			"<23:20:27> <INFO>		UpdatePlayersData()", -- [75]
+			"<23:25:17> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [76]
+			"<23:25:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [77]
+			"<23:25:40> <INFO>		UpdatePlayersData()", -- [78]
+			"<23:25:41> <DEBUG>		GetML()", -- [79]
+			"<23:26:25> <DEBUG>		Event:	GROUP_LEFT	1	Party-1390-1-0000614B3FB2", -- [80]
+			"<23:26:25> <DEBUG>		GetML()", -- [81]
+			"<23:27:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rap-Ragnaros", -- [82]
+			"<23:27:03> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [83]
+			"<00:01:51> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvlife-Ragnaros", -- [84]
+			"<00:01:51> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [85]
+			"<00:02:52> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvsham-Ragnaros", -- [86]
+			"<00:02:52> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [87]
+			"<00:05:16> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [88]
+			"<00:05:17> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [89]
+			"<00:06:19> <DEBUG>		Event:	LOOT_READY	true", -- [90]
+			"<00:06:31> <DEBUG>		Event:	LOOT_READY	true", -- [91]
+			"<00:06:45> <DEBUG>		Event:	LOOT_READY	true", -- [92]
+			"<00:06:57> <DEBUG>		Event:	LOOT_READY	true", -- [93]
+			"<00:07:05> <DEBUG>		Event:	LOOT_READY	true", -- [94]
+			"<00:07:17> <DEBUG>		Event:	LOOT_READY	true", -- [95]
+			"<00:07:31> <DEBUG>		Event:	LOOT_READY	true", -- [96]
+			"<00:07:53> <DEBUG>		Event:	LOOT_READY	true", -- [97]
+			"<00:11:17> <DEBUG>		Event:	LOOT_READY	true", -- [98]
+			"<00:11:18> <DEBUG>		Event:	LOOT_READY	true", -- [99]
+			"<00:11:26> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papee-Ragnaros", -- [100]
+			"<00:11:26> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [101]
+			"<00:14:46> <DEBUG>		Event:	LOOT_READY	true", -- [102]
+			"<00:14:55> <DEBUG>		Event:	LOOT_READY	true", -- [103]
+			"<00:14:58> <DEBUG>		Event:	LOOT_READY	true", -- [104]
+			"<00:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [105]
+			"<00:15:10> <DEBUG>		Event:	LOOT_READY	true", -- [106]
+			"<00:15:15> <DEBUG>		Event:	LOOT_READY	true", -- [107]
+			"<00:15:24> <DEBUG>		Event:	LOOT_READY	true", -- [108]
+			"<00:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [109]
+			"<00:15:43> <DEBUG>		Event:	LOOT_READY	true", -- [110]
+			"<00:15:51> <DEBUG>		Event:	LOOT_READY	true", -- [111]
+			"<00:15:58> <DEBUG>		Event:	LOOT_READY	true", -- [112]
+			"<00:16:17> <DEBUG>		Event:	LOOT_READY	true", -- [113]
+			"<00:16:20> <DEBUG>		Event:	LOOT_READY	true", -- [114]
+			"<00:16:31> <DEBUG>		Event:	LOOT_READY	true", -- [115]
+			"<00:16:31> <DEBUG>		Event:	LOOT_READY	true", -- [116]
+			"<00:16:31> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	205188	|cff0070dd|Hitem:205188::::::::70:62:::::::::|h[Barter Boulder]|h|r	1	Qpfromage	MAGE", -- [117]
+			"<00:16:44> <DEBUG>		Event:	LOOT_READY	true", -- [118]
+			"<00:16:54> <DEBUG>		Event:	LOOT_READY	true", -- [119]
+			"<00:17:18> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [120]
+			"<00:17:20> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Zebulight-Blackrock", -- [121]
+			"<00:17:20> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Zebulight-Blackrock", -- [122]
+			"<00:17:20> <DEBUG>		GetML()", -- [123]
+			"<00:17:20> <Data.Player>		CreatePlayer	Player-1092-096E0A20", -- [124]
+			"<00:17:20> <Data.Player>		CreatePlayer	Player-581-0A3CD12A", -- [125]
+			"<00:17:20> <Data.Player>		CreatePlayer	Player-1396-0948CD31", -- [126]
+			"<00:17:20> <Data.Player>		CreatePlayer	Player-1621-0A5BB8C3", -- [127]
+			"<00:17:20> <Data.Player>		CreatePlayer	Player-512-056B435F", -- [128]
+			"<00:17:20> <Data.Player>		CreatePlayer	Player-1092-0AA53599", -- [129]
+			"<00:17:20> <Data.Player>		CreatePlayer	Player-1403-0A54A773", -- [130]
+			"<00:17:20> <DEBUG>		Resetting council as we have a new ML!", -- [131]
+			"<00:17:20> <INFO>		MasterLooter	Vexxy-Drak'thul	LootMethod	personalloot", -- [132]
+			"<00:17:35> <DEBUG>		Timer MLdb_check passed", -- [133]
+			"<00:17:44> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Cazzker-Ragnaros", -- [134]
+			"<00:17:44> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Cazzker-Ragnaros", -- [135]
+			"<00:17:45> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Frantik-Kazzak", -- [136]
+			"<00:17:45> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Frantik-Kazzak", -- [137]
+			"<00:18:18> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^SMLdb_request^t^^	RAID	Arîana-Ragnaros", -- [138]
+			"<00:18:18> <Comm>		^1^Sxrealm^T^N1^SVexxy-Drak'thul^N2^Scouncil_request^t^^	RAID	Arîana-Ragnaros", -- [139]
+			"<00:23:09> <DEBUG>		Event:	LOOT_READY	true", -- [140]
+			"<00:23:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2696	194481	|cffa335ee|Hitem:194481::::::::70:62::::1:28:2706:::::|h[Plans: Obsidian Seared Crusher]|h|r	1	Cazzker	MAGE", -- [141]
+			"<00:23:16> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [142]
+			"<00:23:18> <DEBUG>		Event:	LOOT_READY	true", -- [143]
+			"<00:23:18> <DEBUG>		GetML()", -- [144]
+			"<00:23:18> <Data.Player>		CreatePlayer	Player-3682-097055B2", -- [145]
+			"<00:23:18> <Data.Player>		CreatePlayer	Player-2073-0A096743", -- [146]
+			"<00:23:18> <Data.Player>		CreatePlayer	Player-1379-052B8E2E", -- [147]
+			"<00:23:18> <Data.Player>		CreatePlayer	Player-1379-0922EE7A", -- [148]
+			"<00:23:18> <Data.Player>		CreatePlayer	Player-604-07C21039", -- [149]
+			"<00:23:18> <DEBUG>		Resetting council as we have a new ML!", -- [150]
+			"<00:23:18> <INFO>		MasterLooter	Húdeex-Drak'thul	LootMethod	personalloot", -- [151]
+			"<00:23:22> <DEBUG>		Event:	GROUP_LEFT	1	Party-1092-1-00006788B93E", -- [152]
+			"<00:23:22> <DEBUG>		GetML()", -- [153]
+			"<00:23:33> <DEBUG>		Timer MLdb_check passed", -- [154]
+			"<00:23:57> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [155]
+			"<00:23:59> <DEBUG>		GetML()", -- [156]
+			"<00:23:59> <Data.Player>		CreatePlayer	Player-633-0737F6AF", -- [157]
+			"<00:23:59> <DEBUG>		Resetting council as we have a new ML!", -- [158]
+			"<00:23:59> <INFO>		MasterLooter	Phoqyhu-BurningSteppes	LootMethod	personalloot", -- [159]
+			"<00:24:14> <DEBUG>		Timer MLdb_check passed", -- [160]
+			"<00:25:39> <DEBUG>		Event:	LOOT_READY	true", -- [161]
+			"<00:26:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190320	|cff0070dd|Hitem:190320::::::::70:62:::::::::|h[Rousing Fire]|h|r	2	Suzox-Sanguino	DEATHKNIGHT", -- [162]
+			"<00:26:38> <DEBUG>		Event:	LOOT_READY	true", -- [163]
+			"<00:26:38> <DEBUG>		Event:	LOOT_READY	true", -- [164]
+			"<00:27:02> <DEBUG>		Event:	LOOT_READY	true", -- [165]
+			"<00:27:02> <DEBUG>		Event:	LOOT_READY	true", -- [166]
+			"<00:27:02> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	3	Qpfromage	MAGE", -- [167]
+			"<00:27:13> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190313	|cff0070dd|Hitem:190313::::::::70:62::::1:38:2:::::|h[Khaz'gorite Ore |A:Professions-ChatIcon-Quality-Tier2:17:23::1|a]|h|r	2	Danilow-Aggra(Português)	WARRIOR", -- [168]
+			"<00:27:31> <DEBUG>		Event:	LOOT_READY	true", -- [169]
+			"<00:27:32> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190320	|cff0070dd|Hitem:190320::::::::70:62:::::::::|h[Rousing Fire]|h|r	2	Qpfromage	MAGE", -- [170]
+			"<00:28:03> <DEBUG>		Event:	LOOT_READY	true", -- [171]
+			"<00:28:09> <DEBUG>		Event:	GROUP_LEFT	1	Party-633-1-00002EF3F4E1", -- [172]
+			"<00:28:09> <DEBUG>		GetML()", -- [173]
+			"<00:28:31> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [174]
+			"<00:28:33> <DEBUG>		GetML()", -- [175]
+			"<00:28:33> <Data.Player>		CreatePlayer	Player-1302-0C316EF0", -- [176]
+			"<00:28:33> <Data.Player>		CreatePlayer	Player-1335-0A0A70AC", -- [177]
+			"<00:28:33> <Data.Player>		CreatePlayer	Player-3674-0AED5EB3", -- [178]
+			"<00:28:33> <DEBUG>		Resetting council as we have a new ML!", -- [179]
+			"<00:28:33> <INFO>		MasterLooter	Yachty-Archimonde	LootMethod	personalloot", -- [180]
+			"<00:28:48> <DEBUG>		Timer MLdb_check passed", -- [181]
+			"<00:29:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	4	Yachty-Archimonde	MONK", -- [182]
+			"<00:30:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	2	Addalici-TwistingNether	SHAMAN", -- [183]
+			"<00:30:50> <DEBUG>		Event:	LOOT_READY	true", -- [184]
+			"<00:30:50> <DEBUG>		Event:	LOOT_READY	true", -- [185]
+			"<00:30:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	3	Qpfromage	MAGE", -- [186]
+			"<00:30:53> <DEBUG>		Event:	GROUP_LEFT	1	Party-1335-1-0000316EA082", -- [187]
+			"<00:30:53> <DEBUG>		GetML()", -- [188]
+			"<00:32:33> <DEBUG>		Event:	LOOT_READY	true", -- [189]
+			"<00:33:44> <DEBUG>		Event:	LOOT_READY	true", -- [190]
+			"<00:34:58> <DEBUG>		Event:	LOOT_READY	true", -- [191]
+			"<00:35:24> <DEBUG>		Event:	LOOT_READY	true", -- [192]
+			"<00:35:41> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Mecap-Ragnaros", -- [193]
+			"<00:35:41> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [194]
+			"<00:35:50> <DEBUG>		Event:	LOOT_READY	true", -- [195]
+			"<00:36:24> <DEBUG>		Event:	LOOT_READY	true", -- [196]
+			"<00:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [197]
+			"<00:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [198]
+			"<00:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [199]
+			"<00:43:13> <DEBUG>		Event:	LOOT_READY	true", -- [200]
+			"<00:43:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [201]
+			"<00:43:39> <INFO>		UpdatePlayersData()", -- [202]
+			"<00:43:41> <DEBUG>		GetML()", -- [203]
+			"<00:45:46> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [204]
+			"<00:45:46> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [205]
+			"<00:53:02> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [206]
+			"07/27/23", -- [207]
+			"<00:54:14> <INFO>		Logged In", -- [208]
+			"<00:54:14> <INFO>[ML]		Init", -- [209]
+			"<00:54:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [210]
+			"<00:54:20> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [211]
+			"<00:54:20> <DEBUG>		ActivateSkin	bfa", -- [212]
+			"<00:54:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [213]
+			"<00:54:24> <INFO>		UpdatePlayersData()", -- [214]
+			"<00:54:24> <INFO>		Player relog...", -- [215]
+			"<00:54:26> <DEBUG>		GetPlayersGuildRank()", -- [216]
+			"<00:54:26> <DEBUG>		Found Guild Rank: Raider", -- [217]
+			"<00:54:27> <DEBUG>		GetML()", -- [218]
+			"<00:54:28> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [219]
+			"<00:54:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [220]
+			"<00:56:00> <DEBUG>		Event:	LOOT_READY	true", -- [221]
+			"<01:08:41> <DEBUG>		Event:	LOOT_READY	true", -- [222]
+			"07/27/23", -- [223]
+			"<20:25:56> <INFO>		Logged In", -- [224]
+			"<20:25:56> <INFO>[ML]		Init", -- [225]
+			"<20:25:56> <INFO>		RCLootCouncil	TradeUI enabled", -- [226]
+			"<20:26:04> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [227]
+			"<20:26:04> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [228]
+			"<20:26:04> <DEBUG>		ActivateSkin	bfa", -- [229]
+			"<20:26:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [230]
+			"<20:26:06> <INFO>		UpdatePlayersData()", -- [231]
+			"<20:26:06> <INFO>		Player relog...", -- [232]
+			"<20:26:08> <DEBUG>		GetPlayersGuildRank()", -- [233]
+			"<20:26:08> <DEBUG>		Found Guild Rank: Raider", -- [234]
+			"<20:26:10> <DEBUG>		GetML()", -- [235]
+			"<20:26:10> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [236]
+			"<20:26:10> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [237]
+			"<20:26:10> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [238]
+			"<20:26:30> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [239]
+			"<20:26:32> <DEBUG>		GetML()", -- [240]
+			"<20:26:32> <Data.Player>		CreatePlayer	Player-1302-0C945858", -- [241]
+			"<20:26:32> <Data.Player>		CreatePlayer	Player-1403-0A738523", -- [242]
+			"<20:26:32> <DEBUG>		Resetting council as we have a new ML!", -- [243]
+			"<20:26:32> <INFO>		MasterLooter	Sûnder-Hyjal	LootMethod	personalloot", -- [244]
+			"<20:26:47> <DEBUG>		Timer MLdb_check passed", -- [245]
+			"<20:26:47> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Qpfromage-Ragnaros", -- [246]
+			"<20:26:47> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Qpfromage-Ragnaros", -- [247]
+			"<20:27:36> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [248]
+			"<20:27:36> <INFO>		UpdatePlayersData()", -- [249]
+			"<20:27:38> <DEBUG>		GetML()", -- [250]
+			"<20:27:46> <Comm>		^1^SpI^T^N1^SHEALER^N2^SRoster^N4^N0^N5^N444.5^N6^N1468^t^^	RAID	Valfor-Dalaran", -- [251]
+			"<20:27:47> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Sreconnect^t^^	RAID	Valfor-Dalaran", -- [252]
+			"<20:27:58> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Valfor-Dalaran", -- [253]
+			"<20:29:05> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Tapir-Dalaran", -- [254]
+			"<20:29:05> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Tapir-Dalaran", -- [255]
+			"<20:29:41> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^SMLdb_request^t^^	RAID	Dwafzik-TarrenMill", -- [256]
+			"<20:29:41> <Comm>		^1^Sxrealm^T^N1^SSûnder-Hyjal^N2^Scouncil_request^t^^	RAID	Dwafzik-TarrenMill", -- [257]
+			"<20:34:09> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	465950	1	0", -- [258]
+			"<20:34:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [259]
+			"<20:34:10> <INFO>		UpdatePlayersData()", -- [260]
+			"<20:34:11> <DEBUG>		GetML()", -- [261]
+			"<20:34:11> <Data.Player>		CreatePlayer	Player-1621-0B175E27", -- [262]
+			"<20:38:38> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [263]
+			"<20:38:40> <DEBUG>		GetML()", -- [264]
+			"<20:38:40> <Data.Player>		CreatePlayer	Player-1403-07CA91C8", -- [265]
+			"<20:38:40> <DEBUG>		Resetting council as we have a new ML!", -- [266]
+			"<20:38:40> <INFO>		MasterLooter	Karno-Hyjal	LootMethod	personalloot", -- [267]
+			"<20:38:40> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Karno-Hyjal", -- [268]
+			"<20:38:40> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Karno-Hyjal", -- [269]
+			"<20:38:40> <INFO>		OnMLDBReceived", -- [270]
+			"<20:38:40> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N445.125^N8^N252^t^^	RAID	Tapir-Dalaran", -- [271]
+			"<20:38:40> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [272]
+			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SCookie^N6^N0^N7^N444.125^N8^N258^t^^	RAID	Steffmôll-Draenor", -- [273]
+			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [274]
+			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [275]
+			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SNovice^N6^N0^N7^N444.375^N8^N70^t^^	RAID	Vilytria-Archimonde", -- [276]
+			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [277]
+			"<20:38:43> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [278]
+			"<20:38:43> <Comm>		^1^Scouncil^T^N1^T^S1390-086A105F^B^t^t^^	RAID	Karno-Hyjal", -- [279]
+			"<20:38:43> <DEBUG>		isCouncil	false", -- [280]
+			"<20:38:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [281]
+			"<20:38:43> <INFO>		UpdatePlayersData()", -- [282]
+			"<20:38:44> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Karno-Hyjal", -- [283]
+			"<20:38:45> <DEBUG>		GetML()", -- [284]
+			"<20:38:55> <DEBUG>		Timer MLdb_check passed", -- [285]
+			"<20:38:55> <Comm>		^1^Sxrealm^T^N1^SKarno-Hyjal^N2^SMLdb_request^t^^	RAID	Tapir-Dalaran", -- [286]
+			"<20:39:47> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Karno-Hyjal", -- [287]
+			"<20:39:50> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [288]
+			"<20:39:52> <DEBUG>		GetML()", -- [289]
+			"<20:39:52> <DEBUG>		Resetting council as we have a new ML!", -- [290]
+			"<20:39:52> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [291]
+			"<20:39:52> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Strongdps-Hyjal", -- [292]
+			"<20:39:52> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Strongdps-Hyjal", -- [293]
+			"<20:39:52> <INFO>		OnMLDBReceived", -- [294]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SNovice^N6^N0^N7^N444.125^N8^N70^t^^	RAID	Vilytria-Archimonde", -- [295]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N444.5^N8^N64^t^^	RAID	Dwafzik-TarrenMill", -- [296]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRôle-Historique^N6^N0^N7^N442.75^N8^N65^t^^	RAID	Aeranoss-MarécagedeZangar", -- [297]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	RAID	Qpfromage-Ragnaros", -- [298]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SHEALER^N4^SRoster^N6^N0^N7^N444.5^N8^N1468^t^^	RAID	Valfor-Dalaran", -- [299]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N445.125^N8^N252^t^^	RAID	Tapir-Dalaran", -- [300]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SMember^N5^B^N6^N55^N7^N444.75^N8^N267^t^^	RAID	Brussewayn-Kazzak", -- [301]
+			"<20:39:52> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SpI^N3^SDAMAGER^N4^SCookie^N6^N0^N7^N444.125^N8^N258^t^^	RAID	Steffmôll-Draenor", -- [302]
+			"<20:39:53> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [303]
+			"<20:40:07> <DEBUG>		Timer MLdb_check passed", -- [304]
+			"<20:41:04> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	465535	1	0", -- [305]
+			"<20:41:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [306]
+			"<20:41:04> <INFO>		UpdatePlayersData()", -- [307]
+			"<20:41:06> <DEBUG>		GetML()", -- [308]
+			"<20:42:08> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Strongdps-Hyjal", -- [309]
+			"<20:42:55> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Linte-Hyjal", -- [310]
+			"<20:42:55> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Linte-Hyjal", -- [311]
+			"<20:43:47> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Tapir-Dalaran", -- [312]
+			"<20:43:52> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [313]
+			"<20:43:52> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [314]
+			"<20:44:45> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [315]
+			"<20:44:45> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Valfor-Dalaran", -- [316]
+			"<20:44:49> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Steffmôll-Draenor", -- [317]
+			"<20:44:49> <Comm>		^1^Sl^T^N1^S203825^t^^	RAID	Steffmôll-Draenor", -- [318]
+			"<20:44:52> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [319]
+			"<20:44:52> <INFO>		UpdatePlayersData()", -- [320]
+			"<20:44:52> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [321]
+			"<20:50:05> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rap-Ragnaros", -- [322]
+			"<20:50:06> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [323]
+			"<20:50:06> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [324]
+			"<20:50:21> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Nèlliel-Ragnaros", -- [325]
+			"<20:50:21> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [326]
+			"<20:50:21> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [327]
+			"<20:55:24> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [328]
+			"<20:56:19> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [329]
+			"<20:56:19> <INFO>		UpdatePlayersData()", -- [330]
+			"<21:00:21> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [331]
+			"<21:03:46> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [332]
+			"<21:03:46> <INFO>		UpdatePlayersData()", -- [333]
+			"<21:05:47> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [334]
+			"<21:07:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [335]
+			"<21:07:35> <INFO>		UpdatePlayersData()", -- [336]
+			"<21:10:10> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [337]
+			"<21:10:40> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Hdç-Ragnaros", -- [338]
+			"<21:10:40> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [339]
+			"<21:10:40> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [340]
+			"<21:11:24> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papee-Ragnaros", -- [341]
+			"<21:11:24> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [342]
+			"<21:11:24> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [343]
+			"<21:16:19> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [344]
+			"<21:16:19> <INFO>		UpdatePlayersData()", -- [345]
+			"<21:20:01> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [346]
+			"<21:20:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190315	|cff0070dd|Hitem:190315::::::::70:62:::::::::|h[Rousing Earth]|h|r	3	Brussewayn-Kazzak	WARLOCK", -- [347]
+			"<21:21:58> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [348]
+			"<21:21:58> <INFO>		UpdatePlayersData()", -- [349]
+			"<21:26:56> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [350]
+			"<21:28:41> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [351]
+			"<21:28:41> <INFO>		UpdatePlayersData()", -- [352]
+			"<21:32:10> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [353]
+			"<21:33:02> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [354]
+			"<21:33:02> <INFO>		UpdatePlayersData()", -- [355]
+			"<21:33:03> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [356]
+			"<21:34:21> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [357]
+			"<21:34:21> <INFO>		UpdatePlayersData()", -- [358]
+			"<21:36:49> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [359]
+			"<21:40:32> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [360]
+			"<21:40:32> <INFO>		UpdatePlayersData()", -- [361]
+			"<21:41:43> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [362]
+			"<21:41:43> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [363]
+			"<21:41:43> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [364]
+			"<21:45:30> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [365]
+			"<21:48:13> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Altdani-Ragnaros", -- [366]
+			"<21:48:13> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [367]
+			"<21:48:13> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [368]
+			"<21:49:48> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [369]
+			"<21:49:48> <INFO>		UpdatePlayersData()", -- [370]
+			"<21:52:16> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [371]
+			"<21:54:52> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [372]
+			"<21:54:52> <INFO>		UpdatePlayersData()", -- [373]
+			"<21:55:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [374]
+			"<21:55:22> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [375]
+			"<21:55:22> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [376]
+			"<21:57:00> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [377]
+			"<22:00:32> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [378]
+			"<22:00:32> <INFO>		UpdatePlayersData()", -- [379]
+			"<22:05:48> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [380]
+			"<22:06:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [381]
+			"<22:06:45> <INFO>		UpdatePlayersData()", -- [382]
+			"<22:06:46> <DEBUG>		GetML()", -- [383]
+			"<22:12:31> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	460048	1	0", -- [384]
+			"<22:12:32> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [385]
+			"<22:12:32> <INFO>		UpdatePlayersData()", -- [386]
+			"<22:12:34> <DEBUG>		GetML()", -- [387]
+			"<22:13:57> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [388]
+			"<22:15:23> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Nèlliel-Ragnaros", -- [389]
+			"<22:15:23> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [390]
+			"<22:15:23> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [391]
+			"<22:17:31> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Nèlliel-Ragnaros", -- [392]
+			"<22:17:31> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [393]
+			"<22:17:31> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [394]
+			"<22:19:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [395]
+			"<22:19:35> <INFO>		UpdatePlayersData()", -- [396]
+			"<22:24:16> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [397]
+			"<22:26:17> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [398]
+			"<22:26:17> <INFO>		UpdatePlayersData()", -- [399]
+			"<22:31:07> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [400]
+			"<22:32:53> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [401]
+			"<22:32:53> <INFO>		UpdatePlayersData()", -- [402]
+			"<22:34:56> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [403]
+			"<22:35:33> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [404]
+			"<22:35:33> <INFO>		UpdatePlayersData()", -- [405]
+			"<22:35:34> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [406]
+			"<22:36:57> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [407]
+			"<22:36:57> <INFO>		UpdatePlayersData()", -- [408]
+			"<22:38:28> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [409]
+			"<22:39:48> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [410]
+			"<22:39:48> <INFO>		UpdatePlayersData()", -- [411]
+			"<22:44:32> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [412]
+			"<22:47:19> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [413]
+			"<22:47:19> <INFO>		UpdatePlayersData()", -- [414]
+			"<22:52:31> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [415]
+			"<22:54:05> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [416]
+			"<22:54:05> <INFO>		UpdatePlayersData()", -- [417]
+			"<22:57:39> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [418]
+			"<22:58:52> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [419]
+			"<22:58:52> <INFO>		UpdatePlayersData()", -- [420]
+			"<23:03:33> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [421]
+			"<23:06:03> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Goshdarn-Ragnaros", -- [422]
+			"<23:06:30> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SMember^N3^B^N4^N55^N5^N444.75^N6^N267^t^^	RAID	Brussewayn-Kazzak", -- [423]
+			"<23:06:30> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Sreconnect^t^^	RAID	Brussewayn-Kazzak", -- [424]
+			"<23:06:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SMLdb_request^t^^	RAID	Brussewayn-Kazzak", -- [425]
+			"<23:06:43> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Scouncil_request^t^^	RAID	Brussewayn-Kazzak", -- [426]
+			"<23:06:47> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [427]
+			"<23:06:56> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [428]
+			"<23:06:56> <INFO>		UpdatePlayersData()", -- [429]
+			"<23:12:32> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [430]
+			"<23:13:30> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [431]
+			"<23:13:56> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [432]
+			"<23:13:56> <INFO>		UpdatePlayersData()", -- [433]
+			"<23:17:43> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [434]
+			"<23:19:31> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [435]
+			"<23:19:31> <INFO>		UpdatePlayersData()", -- [436]
+			"<23:24:08> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [437]
+			"<23:24:40> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [438]
+			"<23:24:40> <INFO>		UpdatePlayersData()", -- [439]
+			"<23:24:53> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [440]
+			"<23:25:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [441]
+			"<23:25:52> <INFO>		UpdatePlayersData()", -- [442]
+			"<23:25:53> <DEBUG>		GetML()", -- [443]
+			"<23:26:29> <DEBUG>		Event:	GROUP_LEFT	1	Party-1390-1-0000614DE3C9", -- [444]
+			"<23:26:29> <DEBUG>		GetML()", -- [445]
+			"<23:43:30> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Infernodh-Ragnaros", -- [446]
+			"<23:43:30> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [447]
+			"<23:43:30> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [448]
+			"07/27/23", -- [449]
+			"<23:51:31> <INFO>		Logged In", -- [450]
+			"<23:51:31> <INFO>[ML]		Init", -- [451]
+			"<23:51:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [452]
+			"<23:51:35> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [453]
+			"<23:51:35> <DEBUG>		ActivateSkin	bfa", -- [454]
+			"<23:51:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [455]
+			"<23:51:37> <INFO>		UpdatePlayersData()", -- [456]
+			"<23:51:37> <INFO>		Player relog...", -- [457]
+			"<23:51:39> <DEBUG>		GetPlayersGuildRank()", -- [458]
+			"<23:51:39> <DEBUG>		Found Guild Rank: Raider", -- [459]
+			"<23:51:39> <DEBUG>		GetML()", -- [460]
+			"<23:51:39> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [461]
+			"<23:51:39> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [462]
+			"<23:51:39> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [463]
+			"07/28/23", -- [464]
+			"<00:29:14> <INFO>		Logged In", -- [465]
+			"<00:29:14> <INFO>[ML]		Init", -- [466]
+			"<00:29:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [467]
+			"<00:29:15> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [468]
+			"<00:29:15> <DEBUG>		ActivateSkin	bfa", -- [469]
+			"<00:29:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [470]
+			"<00:29:17> <INFO>		UpdatePlayersData()", -- [471]
+			"<00:29:17> <INFO>		Player relog...", -- [472]
+			"<00:29:19> <DEBUG>		GetPlayersGuildRank()", -- [473]
+			"<00:29:19> <DEBUG>		Found Guild Rank: Raider", -- [474]
+			"<00:29:19> <DEBUG>		GetML()", -- [475]
+			"<00:29:19> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [476]
+			"<00:29:19> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [477]
+			"<00:29:19> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [478]
+			"07/28/23", -- [479]
+			"<00:29:54> <INFO>		Logged In", -- [480]
+			"<00:29:54> <INFO>[ML]		Init", -- [481]
+			"<00:29:54> <INFO>		RCLootCouncil	TradeUI enabled", -- [482]
+			"<00:29:55> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [483]
+			"<00:29:55> <DEBUG>		ActivateSkin	bfa", -- [484]
+			"<00:29:58> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [485]
+			"<00:29:58> <INFO>		UpdatePlayersData()", -- [486]
+			"<00:29:58> <INFO>		Player relog...", -- [487]
+			"<00:29:59> <DEBUG>		GetPlayersGuildRank()", -- [488]
+			"<00:29:59> <DEBUG>		Found Guild Rank: Raider", -- [489]
+			"<00:29:59> <DEBUG>		GetML()", -- [490]
+			"<00:29:59> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [491]
+			"<00:30:00> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [492]
+			"<00:30:00> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [493]
+			"07/28/23", -- [494]
+			"<00:31:39> <INFO>		Logged In", -- [495]
+			"<00:31:39> <INFO>[ML]		Init", -- [496]
+			"<00:31:40> <INFO>		RCLootCouncil	TradeUI enabled", -- [497]
+			"<00:31:41> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [498]
+			"<00:31:41> <DEBUG>		ActivateSkin	bfa", -- [499]
+			"<00:31:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [500]
+			"<00:31:43> <INFO>		UpdatePlayersData()", -- [501]
+			"<00:31:43> <INFO>		Player relog...", -- [502]
+			"<00:31:44> <DEBUG>		GetPlayersGuildRank()", -- [503]
+			"<00:31:44> <DEBUG>		Found Guild Rank: Raider", -- [504]
+			"<00:31:45> <DEBUG>		GetML()", -- [505]
+			"<00:31:45> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [506]
+			"<00:31:45> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [507]
+			"<00:31:45> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [508]
+			"07/28/23", -- [509]
+			"<00:38:45> <INFO>		Logged In", -- [510]
+			"<00:38:45> <INFO>[ML]		Init", -- [511]
+			"<00:38:45> <INFO>		RCLootCouncil	TradeUI enabled", -- [512]
+			"<00:38:50> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [513]
+			"<00:38:50> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [514]
+			"<00:38:50> <DEBUG>		ActivateSkin	bfa", -- [515]
+			"<00:38:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [516]
+			"<00:38:52> <INFO>		UpdatePlayersData()", -- [517]
+			"<00:38:52> <INFO>		Player relog...", -- [518]
+			"<00:38:54> <DEBUG>		GetPlayersGuildRank()", -- [519]
+			"<00:38:54> <DEBUG>		Found Guild Rank: Raider", -- [520]
+			"<00:38:56> <DEBUG>		GetML()", -- [521]
+			"<00:38:56> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [522]
+			"<00:38:57> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [523]
+			"<00:38:57> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [524]
+			"<00:51:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [525]
+			"<00:51:06> <INFO>		UpdatePlayersData()", -- [526]
+			"<00:51:07> <DEBUG>		GetML()", -- [527]
+			"<00:57:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [528]
+			"<00:57:35> <INFO>		UpdatePlayersData()", -- [529]
+			"<00:57:36> <DEBUG>		GetML()", -- [530]
+			"<01:21:31> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [531]
+			"<01:23:08> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [532]
+			"<01:25:17> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [533]
+			"<01:31:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [534]
+			"<01:31:47> <INFO>		UpdatePlayersData()", -- [535]
+			"<01:31:48> <DEBUG>		GetML()", -- [536]
+			"<01:46:01> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvsham-Ragnaros", -- [537]
+			"<01:46:02> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [538]
+			"<01:46:31> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [539]
+			"<02:01:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [540]
+			"<02:01:38> <INFO>		UpdatePlayersData()", -- [541]
+			"<02:01:40> <DEBUG>		GetML()", -- [542]
+			"<03:28:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Therion-Ragnaros", -- [543]
+			"<03:50:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [544]
+			"<03:50:37> <INFO>		UpdatePlayersData()", -- [545]
+			"<03:50:39> <DEBUG>		GetML()", -- [546]
+			"07/28/23", -- [547]
+			"<03:52:40> <INFO>		Logged In", -- [548]
+			"<03:52:40> <INFO>[ML]		Init", -- [549]
+			"<03:52:40> <INFO>		RCLootCouncil	TradeUI enabled", -- [550]
+			"<03:52:43> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [551]
+			"<03:52:43> <DEBUG>		ActivateSkin	bfa", -- [552]
+			"<03:52:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [553]
+			"<03:52:46> <INFO>		UpdatePlayersData()", -- [554]
+			"<03:52:46> <INFO>		Player relog...", -- [555]
+			"<03:52:47> <DEBUG>		GetPlayersGuildRank()", -- [556]
+			"<03:52:47> <DEBUG>		Found Guild Rank: Raider", -- [557]
+			"<03:52:48> <DEBUG>		GetML()", -- [558]
+			"<03:52:48> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [559]
+			"<03:59:54> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [560]
+			"<03:59:56> <DEBUG>		GetML()", -- [561]
+			"<03:59:56> <Data.Player>		CreatePlayer	Player-3702-09C22E16", -- [562]
+			"<03:59:56> <Data.Player>		CreatePlayer	Player-3674-05A52B4A", -- [563]
+			"<03:59:56> <Data.Player>		CreatePlayer	Player-3691-0A07326E", -- [564]
+			"<03:59:56> <DEBUG>		Resetting council as we have a new ML!", -- [565]
+			"<03:59:56> <INFO>		MasterLooter	Tordrale-ArgentDawn	LootMethod	personalloot", -- [566]
+			"<04:00:11> <DEBUG>		Timer MLdb_check passed", -- [567]
+			"<04:00:11> <Comm>		^1^Sxrealm^T^N1^STordrale-ArgentDawn^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [568]
+			"<04:00:11> <Comm>		^1^Sxrealm^T^N1^STordrale-ArgentDawn^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [569]
+			"<04:00:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [570]
+			"<04:00:57> <INFO>		UpdatePlayersData()", -- [571]
+			"<04:00:58> <DEBUG>		GetML()", -- [572]
+			"<04:00:58> <Data.Player>		CreatePlayer	Player-1379-0A7D517F", -- [573]
+			"<04:01:26> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Uldaman: Legacy of Tyr (Mythic)	439113	0	0", -- [574]
+			"<04:01:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [575]
+			"<04:01:26> <INFO>		UpdatePlayersData()", -- [576]
+			"<04:01:28> <DEBUG>		GetML()", -- [577]
+			"<04:08:55> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [578]
+			"<04:08:57> <DEBUG>		GetML()", -- [579]
+			"<04:08:57> <Data.Player>		CreatePlayer	Player-1305-0C8FFED1", -- [580]
+			"<04:08:57> <DEBUG>		Resetting council as we have a new ML!", -- [581]
+			"<04:08:57> <INFO>		MasterLooter	Renegade-TwistingNether	LootMethod	personalloot", -- [582]
+			"<04:08:58> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Renegade-TwistingNether", -- [583]
+			"<04:08:58> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Renegade-TwistingNether", -- [584]
+			"<04:08:58> <INFO>		OnMLDBReceived", -- [585]
+			"<04:08:58> <Comm>		^1^Sxrealm^T^N1^SRenegade-TwistingNether^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N446.25^N8^N62^t^^	PARTY	Qpfromage-Ragnaros", -- [586]
+			"<04:08:58> <Comm>		^1^Sxrealm^T^N1^SRenegade-TwistingNether^N2^SpI^N3^SDAMAGER^N4^STrial~`Raider^N6^N0^N7^N443.625^N8^N1473^t^^	PARTY	Marcen-Kazzak", -- [587]
+			"<04:09:00> <Comm>		^1^Scouncil^T^N1^T^S3674-05A52B4A^B^t^t^^	PARTY	Renegade-TwistingNether", -- [588]
+			"<04:09:00> <DEBUG>		isCouncil	false", -- [589]
+			"<04:09:12> <DEBUG>		Timer MLdb_check passed", -- [590]
+			"<04:13:33> <DEBUG>		Event:	ENCOUNTER_START	2555	The Lost Dwarves	8	5", -- [591]
+			"<04:13:33> <INFO>		UpdatePlayersData()", -- [592]
+			"<04:16:23> <DEBUG>		Event:	ENCOUNTER_END	2555	The Lost Dwarves	8	5	1", -- [593]
+			"<04:19:32> <DEBUG>		Event:	ENCOUNTER_START	2556	Bromach	8	5", -- [594]
+			"<04:19:32> <INFO>		UpdatePlayersData()", -- [595]
+			"<04:20:18> <DEBUG>		Event:	ENCOUNTER_END	2556	Bromach	8	5	0", -- [596]
+			"<04:21:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [597]
+			"<04:21:05> <INFO>		UpdatePlayersData()", -- [598]
+			"<04:21:07> <DEBUG>		GetML()", -- [599]
+			"<04:21:52> <DEBUG>		Event:	GROUP_LEFT	1	Party-3702-1-0000678D4692", -- [600]
+			"<04:21:52> <DEBUG>		GetML()", -- [601]
+			"<04:23:04> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [602]
+			"<04:23:06> <DEBUG>		GetML()", -- [603]
+			"<04:23:06> <Data.Player>		CreatePlayer	Player-1305-0C23CE59", -- [604]
+			"<04:23:06> <Data.Player>		CreatePlayer	Player-1615-0AE3F563", -- [605]
+			"<04:23:06> <Data.Player>		CreatePlayer	Player-1084-0A852B39", -- [606]
+			"<04:23:06> <DEBUG>		Resetting council as we have a new ML!", -- [607]
+			"<04:23:06> <INFO>		MasterLooter	Tanksslave-Kazzak	LootMethod	personalloot", -- [608]
+			"<04:23:15> <DEBUG>		Event:	GROUP_LEFT	1	Party-1305-1-0000614EFB83", -- [609]
+			"<04:23:15> <DEBUG>		GetML()", -- [610]
+			"<04:23:21> <DEBUG>		Timer MLdb_check passed", -- [611]
+			"<04:58:49> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [612]
+			"<04:58:51> <DEBUG>		GetML()", -- [613]
+			"<04:58:51> <Data.Player>		CreatePlayer	Player-3674-093812D6", -- [614]
+			"<04:58:51> <Data.Player>		CreatePlayer	Player-1085-0A3019AE", -- [615]
+			"<04:58:51> <DEBUG>		Resetting council as we have a new ML!", -- [616]
+			"<04:58:51> <INFO>		MasterLooter	Eekadh-TwistingNether	LootMethod	personalloot", -- [617]
+			"<04:59:06> <DEBUG>		Timer MLdb_check passed", -- [618]
+			"<05:04:03> <Comm>		^1^Sxrealm^T^N1^SEekadh-TwistingNether^N2^SMLdb_request^t^^	PARTY	Woopilicious-Antonidas", -- [619]
+			"<05:04:03> <Comm>		^1^Sxrealm^T^N1^SEekadh-TwistingNether^N2^Scouncil_request^t^^	PARTY	Woopilicious-Antonidas", -- [620]
+			"<05:04:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [621]
+			"<05:04:20> <INFO>		UpdatePlayersData()", -- [622]
+			"<05:04:22> <DEBUG>		GetML()", -- [623]
+			"<05:04:22> <Data.Player>		CreatePlayer	Player-1092-0447CD8C", -- [624]
+			"<05:04:22> <Data.Player>		CreatePlayer	Player-3686-09E7D779", -- [625]
+			"<05:05:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [626]
+			"<05:05:39> <INFO>		UpdatePlayersData()", -- [627]
+			"<05:05:40> <DEBUG>		GetML()", -- [628]
+			"<05:06:00> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [629]
+			"<05:06:00> <INFO>		UpdatePlayersData()", -- [630]
+			"<05:06:01> <DEBUG>		GetML()", -- [631]
+			"<05:06:23> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Neltharus (Mythic)	435216	0	0", -- [632]
+			"<05:06:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [633]
+			"<05:06:23> <INFO>		UpdatePlayersData()", -- [634]
+			"<05:06:25> <DEBUG>		GetML()", -- [635]
+			"<05:12:58> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [636]
+			"<05:12:58> <INFO>		UpdatePlayersData()", -- [637]
+			"<05:12:59> <DEBUG>		Event:	GROUP_LEFT	1	Party-3674-1-0000386BE815", -- [638]
+			"<05:12:59> <DEBUG>		GetML()", -- [639]
+			"<05:13:00> <DEBUG>		GetML()", -- [640]
+			"07/28/23", -- [641]
+			"<06:42:14> <INFO>		Logged In", -- [642]
+			"<06:42:14> <INFO>[ML]		Init", -- [643]
+			"<06:42:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [644]
+			"<06:42:22> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [645]
+			"<06:42:22> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [646]
+			"<06:42:22> <DEBUG>		ActivateSkin	bfa", -- [647]
+			"<06:42:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [648]
+			"<06:42:24> <INFO>		UpdatePlayersData()", -- [649]
+			"<06:42:24> <INFO>		Player relog...", -- [650]
+			"<06:42:26> <DEBUG>		GetPlayersGuildRank()", -- [651]
+			"<06:42:26> <DEBUG>		Found Guild Rank: Raider", -- [652]
+			"<06:42:28> <DEBUG>		GetML()", -- [653]
+			"<06:42:29> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [654]
+			"<06:42:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [655]
+			"<06:42:46> <INFO>		UpdatePlayersData()", -- [656]
+			"<06:42:48> <DEBUG>		GetML()", -- [657]
+			"<06:44:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [658]
+			"<06:44:50> <INFO>		UpdatePlayersData()", -- [659]
+			"<06:44:52> <DEBUG>		GetML()", -- [660]
+			"07/28/23", -- [661]
+			"<06:46:31> <INFO>		Logged In", -- [662]
+			"<06:46:31> <INFO>[ML]		Init", -- [663]
+			"<06:46:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [664]
+			"<06:46:32> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [665]
+			"<06:46:32> <DEBUG>		ActivateSkin	bfa", -- [666]
+			"<06:46:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [667]
+			"<06:46:35> <INFO>		UpdatePlayersData()", -- [668]
+			"<06:46:35> <INFO>		Player relog...", -- [669]
+			"<06:46:36> <DEBUG>		GetPlayersGuildRank()", -- [670]
+			"<06:46:36> <DEBUG>		Found Guild Rank: Raider", -- [671]
+			"<06:46:36> <DEBUG>		GetML()", -- [672]
+			"<06:46:37> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [673]
+			"07/28/23", -- [674]
+			"<07:01:49> <INFO>		Logged In", -- [675]
+			"<07:01:49> <INFO>[ML]		Init", -- [676]
+			"<07:01:49> <INFO>		RCLootCouncil	TradeUI enabled", -- [677]
+			"<07:01:50> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [678]
+			"<07:01:50> <DEBUG>		ActivateSkin	bfa", -- [679]
+			"<07:01:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [680]
+			"<07:01:52> <INFO>		UpdatePlayersData()", -- [681]
+			"<07:01:52> <INFO>		Player relog...", -- [682]
+			"<07:01:53> <DEBUG>		GetPlayersGuildRank()", -- [683]
+			"<07:01:53> <DEBUG>		Found Guild Rank: Raider", -- [684]
+			"<07:01:53> <DEBUG>		GetML()", -- [685]
+			"<07:01:54> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [686]
+			"<07:13:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [687]
+			"<07:13:08> <INFO>		UpdatePlayersData()", -- [688]
+			"<07:13:09> <DEBUG>		GetML()", -- [689]
+			"<07:13:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [690]
+			"<07:13:39> <INFO>		UpdatePlayersData()", -- [691]
+			"<07:13:40> <DEBUG>		GetML()", -- [692]
+			"<08:06:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [693]
+			"<08:06:42> <INFO>		UpdatePlayersData()", -- [694]
+			"<08:06:44> <DEBUG>		GetML()", -- [695]
+			"<08:28:23> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [696]
+			"<08:38:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [697]
+			"<08:38:37> <INFO>		UpdatePlayersData()", -- [698]
+			"<08:38:39> <DEBUG>		GetML()", -- [699]
+			"07/28/23", -- [700]
+			"<08:42:02> <INFO>		Logged In", -- [701]
+			"<08:42:02> <INFO>[ML]		Init", -- [702]
+			"<08:42:02> <INFO>		RCLootCouncil	TradeUI enabled", -- [703]
+			"<08:42:10> <INFO>		Flurrq-Ragnaros	3.9.1	nil", -- [704]
+			"<08:42:10> <DEBUG>		ActivateSkin	bfa", -- [705]
+			"<08:42:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [706]
+			"<08:42:12> <INFO>		UpdatePlayersData()", -- [707]
+			"<08:42:12> <INFO>		Player relog...", -- [708]
+			"<08:42:18> <DEBUG>		GetPlayersGuildRank()", -- [709]
+			"<08:42:18> <DEBUG>		Found Guild Rank: Alt", -- [710]
+			"<08:42:20> <DEBUG>		GetML()", -- [711]
+			"<08:42:20> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Flurrq-Ragnaros", -- [712]
+			"07/28/23", -- [713]
+			"<08:45:55> <INFO>		Logged In", -- [714]
+			"<08:45:55> <INFO>[ML]		Init", -- [715]
+			"<08:45:55> <INFO>		RCLootCouncil	TradeUI enabled", -- [716]
+			"<08:45:59> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [717]
+			"<08:45:59> <DEBUG>		ActivateSkin	bfa", -- [718]
+			"<08:46:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [719]
+			"<08:46:01> <INFO>		UpdatePlayersData()", -- [720]
+			"<08:46:01> <INFO>		Player relog...", -- [721]
+			"<08:46:02> <DEBUG>		GetPlayersGuildRank()", -- [722]
+			"<08:46:02> <DEBUG>		GetPlayersGuildRank()", -- [723]
+			"<08:46:02> <DEBUG>		Found Guild Rank: Raider", -- [724]
+			"<08:46:04> <DEBUG>		GetML()", -- [725]
+			"<08:46:04> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [726]
+			"<08:53:31> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [727]
+			"<08:54:28> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [728]
+			"<08:54:28> <INFO>		UpdatePlayersData()", -- [729]
+			"<08:54:30> <DEBUG>		GetML()", -- [730]
+			"<09:20:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [731]
+			"<09:20:29> <INFO>		UpdatePlayersData()", -- [732]
+			"<09:20:31> <DEBUG>		GetML()", -- [733]
+			"<09:21:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [734]
+			"<09:21:19> <INFO>		UpdatePlayersData()", -- [735]
+			"<09:21:21> <DEBUG>		GetML()", -- [736]
+			"<10:07:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [737]
+			"<10:07:42> <INFO>		UpdatePlayersData()", -- [738]
+			"<10:07:43> <DEBUG>		GetML()", -- [739]
+			"<10:10:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [740]
+			"<10:10:38> <INFO>		UpdatePlayersData()", -- [741]
+			"<10:10:40> <DEBUG>		GetML()", -- [742]
+			"<10:11:44> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [743]
+			"<10:11:44> <INFO>		UpdatePlayersData()", -- [744]
+			"<10:11:46> <DEBUG>		GetML()", -- [745]
+			"<10:20:34> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Hev-Ragnaros", -- [746]
+			"<10:23:15> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [747]
+			"<10:23:15> <INFO>		UpdatePlayersData()", -- [748]
+			"<10:23:17> <DEBUG>		GetML()", -- [749]
+			"<10:24:49> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [750]
+			"<10:24:49> <INFO>		UpdatePlayersData()", -- [751]
+			"<10:24:51> <DEBUG>		GetML()", -- [752]
+			"07/28/23", -- [753]
+			"<11:13:23> <INFO>		Logged In", -- [754]
+			"<11:13:23> <INFO>[ML]		Init", -- [755]
+			"<11:13:23> <INFO>		RCLootCouncil	TradeUI enabled", -- [756]
+			"<11:13:25> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [757]
+			"<11:13:25> <DEBUG>		ActivateSkin	bfa", -- [758]
+			"<11:13:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [759]
+			"<11:13:26> <INFO>		UpdatePlayersData()", -- [760]
+			"<11:13:26> <INFO>		Player relog...", -- [761]
+			"<11:13:27> <DEBUG>		GetPlayersGuildRank()", -- [762]
+			"<11:13:27> <DEBUG>		Found Guild Rank: Raider", -- [763]
+			"<11:13:27> <DEBUG>		GetML()", -- [764]
+			"<11:13:27> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [765]
+			"07/28/23", -- [766]
+			"<11:14:01> <INFO>		Logged In", -- [767]
+			"<11:14:01> <INFO>[ML]		Init", -- [768]
+			"<11:14:01> <INFO>		RCLootCouncil	TradeUI enabled", -- [769]
+			"<11:14:02> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [770]
+			"<11:14:02> <DEBUG>		ActivateSkin	bfa", -- [771]
+			"<11:14:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [772]
+			"<11:14:05> <INFO>		UpdatePlayersData()", -- [773]
+			"<11:14:05> <INFO>		Player relog...", -- [774]
+			"<11:14:06> <DEBUG>		GetPlayersGuildRank()", -- [775]
+			"<11:14:06> <DEBUG>		Found Guild Rank: Raider", -- [776]
+			"<11:14:06> <DEBUG>		GetML()", -- [777]
+			"<11:14:07> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [778]
+			"07/28/23", -- [779]
+			"<11:17:23> <INFO>		Logged In", -- [780]
+			"<11:17:23> <INFO>[ML]		Init", -- [781]
+			"<11:17:23> <INFO>		RCLootCouncil	TradeUI enabled", -- [782]
+			"<11:17:25> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [783]
+			"<11:17:25> <DEBUG>		ActivateSkin	bfa", -- [784]
+			"<11:17:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [785]
+			"<11:17:27> <INFO>		UpdatePlayersData()", -- [786]
+			"<11:17:27> <INFO>		Player relog...", -- [787]
+			"<11:17:28> <DEBUG>		GetPlayersGuildRank()", -- [788]
+			"<11:17:28> <DEBUG>		Found Guild Rank: Raider", -- [789]
+			"<11:17:28> <DEBUG>		GetML()", -- [790]
+			"<11:17:29> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [791]
+			"<11:24:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [792]
+			"<11:24:35> <INFO>		UpdatePlayersData()", -- [793]
+			"<11:24:36> <DEBUG>		GetML()", -- [794]
+			"<11:27:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [795]
+			"<11:27:05> <INFO>		UpdatePlayersData()", -- [796]
+			"<11:27:06> <DEBUG>		GetML()", -- [797]
+			"<11:34:41> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [798]
+			"<11:38:13> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [799]
+			"<11:38:13> <INFO>		UpdatePlayersData()", -- [800]
+			"<11:38:14> <DEBUG>		GetML()", -- [801]
+			"<11:40:18> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [802]
+			"<11:53:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [803]
+			"<11:53:57> <INFO>		UpdatePlayersData()", -- [804]
+			"<11:53:59> <DEBUG>		GetML()", -- [805]
+			"<11:56:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [806]
+			"<11:56:43> <INFO>		UpdatePlayersData()", -- [807]
+			"<11:56:44> <DEBUG>		GetML()", -- [808]
+			"<12:08:47> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [809]
+			"<12:27:03> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [810]
+			"<12:30:40> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [811]
+			"<12:33:52> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [812]
+			"<12:36:44> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [813]
+			"<12:38:39> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [814]
+			"<12:45:32> <DEBUG>		Event:	LOOT_READY	false", -- [815]
+			"<12:54:39> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [816]
+			"<12:54:52> <DEBUG>		Event:	LOOT_READY	false", -- [817]
+			"<12:54:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	103624	|cff0070dd|Hitem:103624::::::::70:64::::1:28:173:::::|h[Treasures of the Vale]|h|r	1	Qpfromage	MAGE", -- [818]
+			"<12:55:59> <DEBUG>		Event:	LOOT_READY	false", -- [819]
+			"<13:03:33> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [820]
+			"<13:03:33> <INFO>		UpdatePlayersData()", -- [821]
+			"<13:03:35> <DEBUG>		GetML()", -- [822]
+			"<13:07:10> <DEBUG>		Event:	LOOT_READY	true", -- [823]
+			"<13:07:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [824]
+			"<13:07:38> <INFO>		UpdatePlayersData()", -- [825]
+			"<13:07:40> <DEBUG>		GetML()", -- [826]
+			"<13:10:48> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [827]
+			"<13:47:36> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [828]
+			"<13:47:37> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [829]
+			"<13:47:37> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [830]
+			"<13:49:46> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Asset-Ragnaros", -- [831]
+			"<13:51:29> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [832]
+			"<13:56:26> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [833]
+			"<14:05:16> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mábashí-Ragnaros", -- [834]
+			"<14:16:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [835]
+			"<14:16:27> <INFO>		UpdatePlayersData()", -- [836]
+			"<14:16:28> <DEBUG>		GetML()", -- [837]
+			"<14:26:25> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [838]
+			"<15:16:41> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [839]
+			"<15:16:53> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [840]
+			"<15:17:06> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [841]
+			"<15:20:32> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Miakasa-Ragnaros", -- [842]
+			"<15:29:47> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [843]
+			"<15:29:47> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [844]
+			"<15:29:47> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [845]
+			"<15:31:33> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [846]
+			"<15:31:34> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [847]
+			"<15:31:34> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [848]
+			"<15:42:34> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Paorel-Ragnaros", -- [849]
+			"<15:42:34> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [850]
+			"<15:44:30> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [851]
+			"<15:44:30> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [852]
+			"<15:57:10> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Jfree-Ragnaros", -- [853]
+			"<15:58:15> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [854]
+			"<15:58:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [855]
+			"<16:15:14> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [856]
+			"<16:26:15> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [857]
+			"<16:26:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [858]
+			"<16:26:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [859]
+			"<16:47:48> <DEBUG>		Event:	LOOT_READY	true", -- [860]
+			"<16:48:37> <DEBUG>		Event:	LOOT_READY	true", -- [861]
+			"<16:48:59> <DEBUG>		Event:	LOOT_READY	true", -- [862]
+			"<16:51:50> <DEBUG>		Event:	LOOT_READY	true", -- [863]
+			"<16:52:14> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [864]
+			"<16:52:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [865]
+			"<16:52:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [866]
+			"<16:52:34> <DEBUG>		Event:	LOOT_READY	true", -- [867]
+			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [868]
+			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [869]
+			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [870]
+			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [871]
+			"<16:56:50> <DEBUG>		Event:	LOOT_READY	true", -- [872]
+			"<16:59:35> <DEBUG>		Event:	LOOT_READY	true", -- [873]
+			"<16:59:35> <DEBUG>		Event:	LOOT_READY	true", -- [874]
+			"<16:59:35> <DEBUG>		Event:	LOOT_READY	true", -- [875]
+			"<16:59:42> <DEBUG>		Event:	LOOT_READY	true", -- [876]
+			"<17:13:07> <DEBUG>		Event:	LOOT_READY	true", -- [877]
+			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [878]
+			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [879]
+			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [880]
+			"<17:14:28> <DEBUG>		Event:	LOOT_READY	true", -- [881]
+			"<17:14:43> <DEBUG>		Event:	LOOT_READY	true", -- [882]
+			"<17:14:50> <DEBUG>		Event:	LOOT_READY	true", -- [883]
+			"<17:16:35> <DEBUG>		Event:	LOOT_READY	true", -- [884]
+			"<17:19:50> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mábashí-Ragnaros", -- [885]
+			"<17:20:18> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [886]
+			"<17:20:18> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [887]
+			"<17:20:18> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [888]
+			"<17:20:18> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [889]
+			"<17:21:08> <DEBUG>		Event:	LOOT_READY	true", -- [890]
+			"<17:21:19> <DEBUG>		Event:	LOOT_READY	true", -- [891]
+			"<17:21:28> <DEBUG>		Event:	LOOT_READY	true", -- [892]
+			"<17:22:39> <DEBUG>		Event:	LOOT_READY	true", -- [893]
+			"<17:22:44> <DEBUG>		Event:	LOOT_READY	true", -- [894]
+			"<17:22:44> <DEBUG>		Event:	LOOT_READY	true", -- [895]
+			"<17:22:45> <DEBUG>		Event:	LOOT_READY	true", -- [896]
+			"<17:23:29> <DEBUG>		Event:	LOOT_READY	true", -- [897]
+			"<17:24:42> <DEBUG>		Event:	LOOT_READY	true", -- [898]
+			"<17:34:54> <DEBUG>		Event:	LOOT_READY	true", -- [899]
+			"<17:35:01> <DEBUG>		Event:	LOOT_READY	true", -- [900]
+			"<17:35:08> <DEBUG>		Event:	LOOT_READY	true", -- [901]
+			"<17:35:08> <DEBUG>		Event:	LOOT_READY	true", -- [902]
+			"<17:35:28> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Miakasa-Ragnaros", -- [903]
+			"<17:35:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [904]
+			"<17:35:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mábashí-Ragnaros", -- [905]
+			"<17:35:28> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [906]
+			"<17:38:15> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [907]
+			"<18:09:50> <DEBUG>		Event:	LOOT_READY	true", -- [908]
+			"<18:10:31> <DEBUG>		Event:	LOOT_READY	true", -- [909]
+			"07/29/23", -- [910]
+			"<00:27:01> <INFO>		Logged In", -- [911]
+			"<00:27:01> <INFO>[ML]		Init", -- [912]
+			"<00:27:01> <INFO>		RCLootCouncil	TradeUI enabled", -- [913]
+			"<00:27:09> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [914]
+			"<00:27:09> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [915]
+			"<00:27:09> <DEBUG>		ActivateSkin	bfa", -- [916]
+			"<00:27:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [917]
+			"<00:27:11> <INFO>		UpdatePlayersData()", -- [918]
+			"<00:27:11> <INFO>		Player relog...", -- [919]
+			"<00:27:12> <DEBUG>		GetPlayersGuildRank()", -- [920]
+			"<00:27:12> <DEBUG>		Found Guild Rank: Raider", -- [921]
+			"<00:27:15> <DEBUG>		GetML()", -- [922]
+			"<00:27:15> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [923]
+			"<00:27:15> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [924]
+			"<00:33:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [925]
+			"<00:33:47> <INFO>		UpdatePlayersData()", -- [926]
+			"<00:33:48> <DEBUG>		GetML()", -- [927]
+			"<00:36:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [928]
+			"<00:36:17> <INFO>		UpdatePlayersData()", -- [929]
+			"<00:36:19> <DEBUG>		GetML()", -- [930]
+			"<00:38:26> <DEBUG>		Event:	LOOT_READY	true", -- [931]
+			"<00:39:22> <DEBUG>		Event:	LOOT_READY	true", -- [932]
+			"<00:39:39> <DEBUG>		Event:	LOOT_READY	true", -- [933]
+			"<00:45:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [934]
+			"<00:45:04> <INFO>		UpdatePlayersData()", -- [935]
+			"<00:45:05> <DEBUG>		GetML()", -- [936]
+			"<00:45:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [937]
+			"<00:45:11> <INFO>		UpdatePlayersData()", -- [938]
+			"<00:45:13> <DEBUG>		GetML()", -- [939]
+			"<00:46:56> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [940]
+			"<00:46:56> <INFO>		UpdatePlayersData()", -- [941]
+			"<00:46:57> <DEBUG>		GetML()", -- [942]
+			"<00:49:16> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [943]
+			"<00:49:16> <INFO>		UpdatePlayersData()", -- [944]
+			"<00:49:18> <DEBUG>		GetML()", -- [945]
+			"<00:49:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [946]
+			"<00:49:54> <INFO>		UpdatePlayersData()", -- [947]
+			"<00:49:55> <DEBUG>		GetML()", -- [948]
+			"<00:50:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [949]
+			"<00:50:42> <INFO>		UpdatePlayersData()", -- [950]
+			"<00:50:43> <DEBUG>		GetML()", -- [951]
+			"<00:52:51> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [952]
+			"<00:52:51> <INFO>		UpdatePlayersData()", -- [953]
+			"<00:52:51> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [954]
+			"<00:52:53> <DEBUG>		GetML()", -- [955]
+			"<00:52:53> <DEBUG>		GetML()", -- [956]
+			"<00:53:23> <DEBUG>		Event:	LOOT_READY	true", -- [957]
+			"<00:53:23> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	1	Creature-0-4251-2207-19355-151638-00004446C1	1", -- [958]
+			"<00:53:23> <DEBUG>		Event:	LOOT_READY	true", -- [959]
+			"<00:53:23> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	2	Creature-0-4251-2207-19355-151639-00004446C1	1	Creature-0-4251-2207-19355-151638-00004446C1	1", -- [960]
+			"<00:53:24> <DEBUG>		Event:	LOOT_READY	true", -- [961]
+			"<00:53:24> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	1	Creature-0-4251-2207-19355-151639-00004446C1	1", -- [962]
+			"<00:53:24> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0", -- [963]
+			"<00:53:24> <DEBUG>		Event:	LOOT_CLOSED", -- [964]
+			"<00:53:24> <DEBUG>		Event:	LOOT_CLOSED", -- [965]
+			"<00:53:24> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [966]
+			"<00:53:24> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [967]
+			"<00:54:09> <DEBUG>		Event:	LOOT_READY	true", -- [968]
+			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	4	Creature-0-4251-2207-19355-151638-00014446C1	1	Creature-0-4251-2207-19355-151639-0000C446C1	1	Creature-0-4251-2207-19355-151638-0000C446C1	1	Creature-0-4251-2207-19355-151638-00024446C1	1", -- [969]
+			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0	1	Creature-0-4251-2207-19355-151638-00034446C1	1", -- [970]
+			"<00:54:09> <DEBUG>		Event:	LOOT_READY	true", -- [971]
+			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	4	Creature-0-4251-2207-19355-151638-00014446C1	1	Creature-0-4251-2207-19355-151639-0000C446C1	1	Creature-0-4251-2207-19355-151638-0000C446C1	1	Creature-0-4251-2207-19355-151638-00024446C1	1", -- [972]
+			"<00:54:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0	2	Creature-0-4251-2207-19355-151638-0002C446C1	1	Creature-0-4251-2207-19355-151638-00034446C1	1", -- [973]
+			"<00:54:09> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0", -- [974]
+			"<00:54:10> <DEBUG>		Event:	LOOT_READY	true", -- [975]
+			"<00:54:10> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0	1	Creature-0-4251-2207-19355-151638-0002C446C1	1", -- [976]
+			"<00:54:10> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:159140::::::::70:64:::::::::|h[Lifeless Clay]|h|r	0", -- [977]
+			"<00:54:10> <DEBUG>		Event:	LOOT_CLOSED", -- [978]
+			"<00:54:10> <DEBUG>		Event:	LOOT_CLOSED", -- [979]
+			"<00:54:10> <Comm>		^1^Sl^T^N1^S151638^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [980]
+			"<00:54:10> <Comm>		^1^Sl^T^N1^S151638^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [981]
+			"<00:54:53> <DEBUG>		Event:	LOOT_READY	true", -- [982]
+			"<00:54:53> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0	1	Creature-0-4251-2207-19355-151639-00014446C1	1", -- [983]
+			"<00:54:53> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:157844::::::::70:64:::::::::|h[Iridescent Speck]|h|r	0", -- [984]
+			"<00:54:53> <DEBUG>		Event:	LOOT_CLOSED", -- [985]
+			"<00:54:53> <DEBUG>		Event:	LOOT_CLOSED", -- [986]
+			"<00:54:54> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [987]
+			"<00:54:54> <Comm>		^1^Sl^T^N1^S151639^t^^	INSTANCE_CHAT	Qpfromage-Ragnaros", -- [988]
+			"<00:56:49> <DEBUG>		Event:	LOOT_READY	true", -- [989]
+			"<00:56:49> <DEBUG>		Event:	LOOT_CLOSED", -- [990]
+			"<00:56:49> <DEBUG>		Event:	LOOT_CLOSED", -- [991]
+			"<00:56:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	167830	|cffe6cc80|Hitem:167830::::::::70:64:::::::::|h[Petrified Ebony Scale]|h|r	1	Qpfromage	MAGE", -- [992]
+			"<00:57:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [993]
+			"<00:57:45> <INFO>		UpdatePlayersData()", -- [994]
+			"<00:57:46> <DEBUG>		Event:	GROUP_LEFT	2	Party-3682-1-0000386D73E5", -- [995]
+			"<00:57:46> <DEBUG>		GetML()", -- [996]
+			"<00:57:47> <DEBUG>		GetML()", -- [997]
+			"<00:59:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [998]
+			"<00:59:21> <INFO>		UpdatePlayersData()", -- [999]
+			"<00:59:23> <DEBUG>		GetML()", -- [1000]
+			"<01:01:47> <DEBUG>		Event:	LOOT_READY	true", -- [1001]
+			"<01:08:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1002]
+			"<01:08:37> <INFO>		UpdatePlayersData()", -- [1003]
+			"<01:08:38> <DEBUG>		GetML()", -- [1004]
+			"<01:10:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1005]
+			"<01:10:20> <INFO>		UpdatePlayersData()", -- [1006]
+			"<01:10:22> <DEBUG>		GetML()", -- [1007]
+			"<01:10:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1008]
+			"<01:10:37> <INFO>		UpdatePlayersData()", -- [1009]
+			"<01:10:39> <DEBUG>		GetML()", -- [1010]
+			"<01:11:38> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1011]
+			"<01:11:40> <DEBUG>		GetML()", -- [1012]
+			"<01:11:40> <DEBUG>		Resetting council as we have a new ML!", -- [1013]
+			"<01:11:40> <INFO>		MasterLooter	Kfcsniffer-Ragnaros	LootMethod	personalloot", -- [1014]
+			"<01:11:55> <DEBUG>		Timer MLdb_check passed", -- [1015]
+			"<01:12:43> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Papeë-Ragnaros", -- [1016]
+			"<01:12:43> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Jfree-Ragnaros", -- [1017]
+			"<01:12:43> <DEBUG>		Event:	GROUP_LEFT	1	Party-3682-1-0000386D7531", -- [1018]
+			"<01:12:43> <DEBUG>		GetML()", -- [1019]
+			"<01:12:43> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1020]
+			"<01:12:45> <DEBUG>		GetML()", -- [1021]
+			"<01:12:45> <Data.Player>		CreatePlayer	Player-1084-05CC5F1B", -- [1022]
+			"<01:12:45> <DEBUG>		Resetting council as we have a new ML!", -- [1023]
+			"<01:12:45> <INFO>		MasterLooter	Priestatsu-TarrenMill	LootMethod	personalloot", -- [1024]
+			"<01:13:00> <DEBUG>		Timer MLdb_check passed", -- [1025]
+			"<01:13:00> <Comm>		^1^Sxrealm^T^N1^SPriestatsu-TarrenMill^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1026]
+			"<01:13:00> <Comm>		^1^Sxrealm^T^N1^SPriestatsu-TarrenMill^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1027]
+			"<01:14:52> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Zerow-Ragnaros", -- [1028]
+			"<01:15:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1029]
+			"<01:15:05> <INFO>		UpdatePlayersData()", -- [1030]
+			"<01:15:07> <DEBUG>		GetML()", -- [1031]
+			"<01:15:16> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1032]
+			"<01:15:16> <INFO>		UpdatePlayersData()", -- [1033]
+			"<01:15:18> <DEBUG>		GetML()", -- [1034]
+			"<01:15:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1035]
+			"<01:15:24> <INFO>		UpdatePlayersData()", -- [1036]
+			"<01:15:26> <DEBUG>		GetML()", -- [1037]
+			"<01:17:19> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [1038]
+			"<01:17:20> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1039]
+			"<01:18:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1040]
+			"<01:18:34> <INFO>		UpdatePlayersData()", -- [1041]
+			"<01:18:35> <DEBUG>		GetML()", -- [1042]
+			"<01:18:35> <Data.Player>		CreatePlayer	Player-3391-0C495EEF", -- [1043]
+			"<01:18:50> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Mimmick-Ragnaros", -- [1044]
+			"<01:20:37> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Halls of Infusion (Mythic)	362362	0	0", -- [1045]
+			"<01:20:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1046]
+			"<01:20:38> <INFO>		UpdatePlayersData()", -- [1047]
+			"<01:20:39> <DEBUG>		GetML()", -- [1048]
+			"<01:21:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1049]
+			"<01:21:26> <INFO>		UpdatePlayersData()", -- [1050]
+			"<01:21:28> <DEBUG>		GetML()", -- [1051]
+			"<01:21:47> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Halls of Infusion (Mythic)	362292	0	0", -- [1052]
+			"<01:21:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1053]
+			"<01:21:48> <INFO>		UpdatePlayersData()", -- [1054]
+			"<01:21:49> <DEBUG>		GetML()", -- [1055]
+			"<01:23:58> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1056]
+			"<01:23:58> <INFO>		UpdatePlayersData()", -- [1057]
+			"<01:23:59> <DEBUG>		GetML()", -- [1058]
+			"<01:25:13> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Halls of Infusion (Mythic)	362086	0	0", -- [1059]
+			"<01:25:14> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1060]
+			"<01:25:14> <INFO>		UpdatePlayersData()", -- [1061]
+			"<01:25:15> <DEBUG>		GetML()", -- [1062]
+			"<01:34:07> <DEBUG>		Event:	ENCOUNTER_START	2615	Watcher Irideus	8	5", -- [1063]
+			"<01:34:07> <INFO>		UpdatePlayersData()", -- [1064]
+			"<01:37:56> <DEBUG>		Event:	ENCOUNTER_END	2615	Watcher Irideus	8	5	0", -- [1065]
+			"<01:38:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1066]
+			"<01:38:20> <INFO>		UpdatePlayersData()", -- [1067]
+			"<01:38:21> <DEBUG>		GetML()", -- [1068]
+			"<01:38:35> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1069]
+			"<01:38:35> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1070]
+			"<01:38:35> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1071]
+			"<01:39:25> <DEBUG>		Event:	GROUP_LEFT	1	Party-1084-1-000067906BF7", -- [1072]
+			"<01:39:25> <DEBUG>		GetML()", -- [1073]
+			"<01:39:45> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1074]
+			"<01:39:47> <DEBUG>		GetML()", -- [1075]
+			"<01:39:47> <DEBUG>		Resetting council as we have a new ML!", -- [1076]
+			"<01:39:47> <INFO>		MasterLooter	Yamáto-Ragnaros	LootMethod	personalloot", -- [1077]
+			"<01:40:02> <DEBUG>		Timer MLdb_check passed", -- [1078]
+			"<01:56:05> <DEBUG>		Event:	GROUP_LEFT	1	Party-3682-1-0000386D7705", -- [1079]
+			"<01:56:05> <DEBUG>		GetML()", -- [1080]
+			"<01:56:05> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1081]
+			"<01:56:07> <DEBUG>		GetML()", -- [1082]
+			"<01:56:07> <Data.Player>		CreatePlayer	Player-1305-0BF757C0", -- [1083]
+			"<01:56:07> <DEBUG>		Resetting council as we have a new ML!", -- [1084]
+			"<01:56:07> <INFO>		MasterLooter	Bestbaby-Kazzak	LootMethod	personalloot", -- [1085]
+			"<01:56:22> <DEBUG>		Timer MLdb_check passed", -- [1086]
+			"<01:56:23> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1087]
+			"<01:56:23> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1088]
+			"<02:01:59> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Brackenhide Hollow (Mythic)	359880	0	0", -- [1089]
+			"<02:02:00> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1090]
+			"<02:02:00> <INFO>		UpdatePlayersData()", -- [1091]
+			"<02:02:01> <DEBUG>		GetML()", -- [1092]
+			"<02:02:01> <Data.Player>		CreatePlayer	Player-1416-09F8B967", -- [1093]
+			"<02:03:00> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1094]
+			"<02:03:02> <DEBUG>		GetML()", -- [1095]
+			"<02:03:02> <DEBUG>		Resetting council as we have a new ML!", -- [1096]
+			"<02:03:02> <INFO>		MasterLooter	Yamáto-Ragnaros	LootMethod	personalloot", -- [1097]
+			"<02:03:17> <DEBUG>		Timer MLdb_check passed", -- [1098]
+			"<02:13:43> <DEBUG>		Event:	ENCOUNTER_START	2570	Hackclaw's War-Band	8	5", -- [1099]
+			"<02:13:43> <INFO>		UpdatePlayersData()", -- [1100]
+			"<02:16:10> <DEBUG>		Event:	ENCOUNTER_END	2570	Hackclaw's War-Band	8	5	1", -- [1101]
+			"<02:25:07> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1102]
+			"<02:25:09> <DEBUG>		GetML()", -- [1103]
+			"<02:25:09> <DEBUG>		Resetting council as we have a new ML!", -- [1104]
+			"<02:25:09> <INFO>		MasterLooter	Bestbaby-Kazzak	LootMethod	personalloot", -- [1105]
+			"<02:25:22> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1106]
+			"<02:25:22> <INFO>		UpdatePlayersData()", -- [1107]
+			"<02:25:23> <DEBUG>		GetML()", -- [1108]
+			"<02:25:24> <DEBUG>		Timer MLdb_check passed", -- [1109]
+			"<02:25:25> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1110]
+			"<02:25:27> <Comm>		^1^Sxrealm^T^N1^SBestbaby-Kazzak^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1111]
+			"<02:25:27> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1112]
+			"<02:25:29> <DEBUG>		GetML()", -- [1113]
+			"<02:25:29> <DEBUG>		Resetting council as we have a new ML!", -- [1114]
+			"<02:25:29> <INFO>		MasterLooter	Qpfromage-Ragnaros	LootMethod	personalloot", -- [1115]
+			"<02:25:29> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1116]
+			"<02:25:29> <DEBUG>[ML]		NewML	Qpfromage-Ragnaros", -- [1117]
+			"<02:25:29> <DEBUG>[ML]		UpdateMLdb", -- [1118]
+			"<02:25:29> <INFO>		OnMLDBReceived", -- [1119]
+			"<02:25:29> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpfromage-Ragnaros", -- [1120]
+			"<02:25:29> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1121]
+			"<02:25:29> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SRaider^N4^N0^N5^N446.25^N6^N62^t^^	WHISPER	Qpfromage-Ragnaros", -- [1122]
+			"<02:25:31> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1123]
+			"<02:25:31> <Comm>		^1^Scouncil^T^N1^T^S3682-0B236980^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1124]
+			"<02:25:31> <DEBUG>		isCouncil	true", -- [1125]
+			"<02:25:31> <DEBUG>		GetLootDBStatistics()", -- [1126]
+			"<02:25:31> <DEBUG>		GetGuildRankNum()", -- [1127]
+			"<02:25:31> <INFO>		RCVotingFrame	enabled", -- [1128]
+			"<02:25:44> <DEBUG>		Timer MLdb_check passed", -- [1129]
+			"<02:25:48> <DEBUG>		Event:	GROUP_LEFT	1	Party-1305-1-000061518DD1", -- [1130]
+			"<02:25:48> <DEBUG>		GetML()", -- [1131]
+			"<02:25:48> <INFO>		Stop handling loot", -- [1132]
+			"<02:25:48> <INFO>[ML]		Disabled", -- [1133]
+			"<02:25:48> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Qpfromage-Ragnaros", -- [1134]
+			"<02:25:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1135]
+			"<02:25:53> <INFO>		UpdatePlayersData()", -- [1136]
+			"<02:25:54> <DEBUG>		GetML()", -- [1137]
+			"<02:25:54> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1138]
+			"<02:27:01> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Therion-Ragnaros", -- [1139]
+			"<02:27:01> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Mimmick-Ragnaros", -- [1140]
+			"<02:27:01> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1141]
+			"07/29/23", -- [1142]
+			"<10:49:54> <INFO>		Logged In", -- [1143]
+			"<10:49:54> <INFO>[ML]		Init", -- [1144]
+			"<10:49:54> <INFO>		RCLootCouncil	TradeUI enabled", -- [1145]
+			"<10:50:02> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1146]
+			"<10:50:02> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1147]
+			"<10:50:02> <DEBUG>		ActivateSkin	bfa", -- [1148]
+			"<10:50:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1149]
+			"<10:50:04> <INFO>		UpdatePlayersData()", -- [1150]
+			"<10:50:04> <INFO>		Player relog...", -- [1151]
+			"<10:50:06> <DEBUG>		GetPlayersGuildRank()", -- [1152]
+			"<10:50:06> <DEBUG>		GetPlayersGuildRank()", -- [1153]
+			"<10:50:06> <DEBUG>		Found Guild Rank: Raider", -- [1154]
+			"<10:50:08> <DEBUG>		GetML()", -- [1155]
+			"<10:50:08> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1156]
+			"<10:50:08> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Zerow-Ragnaros", -- [1157]
+			"07/30/23", -- [1158]
+			"<21:52:04> <INFO>		Logged In", -- [1159]
+			"<21:52:04> <INFO>[ML]		Init", -- [1160]
+			"<21:52:04> <INFO>		RCLootCouncil	TradeUI enabled", -- [1161]
+			"<21:52:12> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1162]
+			"<21:52:12> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1163]
+			"<21:52:12> <DEBUG>		ActivateSkin	bfa", -- [1164]
+			"<21:52:14> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1165]
+			"<21:52:14> <INFO>		UpdatePlayersData()", -- [1166]
+			"<21:52:14> <INFO>		Player relog...", -- [1167]
+			"<21:52:15> <DEBUG>		GetPlayersGuildRank()", -- [1168]
+			"<21:52:16> <DEBUG>		GetPlayersGuildRank()", -- [1169]
+			"<21:52:16> <DEBUG>		Found Guild Rank: Raider", -- [1170]
+			"<21:52:18> <DEBUG>		GetML()", -- [1171]
+			"<21:52:18> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1172]
+			"07/30/23", -- [1173]
+			"<22:32:50> <INFO>		Logged In", -- [1174]
+			"<22:32:50> <INFO>[ML]		Init", -- [1175]
+			"<22:32:50> <INFO>		RCLootCouncil	TradeUI enabled", -- [1176]
+			"<22:32:54> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1177]
+			"<22:32:54> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1178]
+			"<22:32:54> <DEBUG>		ActivateSkin	bfa", -- [1179]
+			"<22:32:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1180]
+			"<22:32:57> <INFO>		UpdatePlayersData()", -- [1181]
+			"<22:32:57> <INFO>		Player relog...", -- [1182]
+			"<22:32:58> <DEBUG>		GetPlayersGuildRank()", -- [1183]
+			"<22:32:58> <DEBUG>		GetPlayersGuildRank()", -- [1184]
+			"<22:32:58> <DEBUG>		Found Guild Rank: Raider", -- [1185]
+			"<22:33:00> <DEBUG>		GetML()", -- [1186]
+			"<22:33:01> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1187]
+			"<22:33:49> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1188]
+			"<22:33:51> <DEBUG>		GetML()", -- [1189]
+			"<22:33:51> <Data.Player>		CreatePlayer	Player-3713-0732419C", -- [1190]
+			"<22:33:51> <Data.Player>		CreatePlayer	Player-1615-0A846180", -- [1191]
+			"<22:33:51> <Data.Player>		CreatePlayer	Player-1084-097B0F6E", -- [1192]
+			"<22:33:51> <Data.Player>		CreatePlayer	Player-1396-06651835", -- [1193]
+			"<22:33:51> <Data.Player>		CreatePlayer	Player-1403-080C65AF", -- [1194]
+			"<22:33:51> <DEBUG>		Resetting council as we have a new ML!", -- [1195]
+			"<22:33:51> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [1196]
+			"<22:34:06> <DEBUG>		Timer MLdb_check passed", -- [1197]
+			"<22:34:06> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SMLdb_request^t^^	RAID	Qpfromage-Ragnaros", -- [1198]
+			"<22:34:06> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Scouncil_request^t^^	RAID	Qpfromage-Ragnaros", -- [1199]
+			"<22:34:46> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Aberrus, the Shadowed Crucible (Mythic)	199513	1	0", -- [1200]
+			"<22:34:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1201]
+			"<22:34:47> <INFO>		UpdatePlayersData()", -- [1202]
+			"<22:34:48> <DEBUG>		GetML()", -- [1203]
+			"<22:35:24> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1204]
+			"<22:35:24> <INFO>		UpdatePlayersData()", -- [1205]
+			"<22:37:26> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1206]
+			"<22:38:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Smaugthis-Ragnaros", -- [1207]
+			"<22:39:03> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1208]
+			"<22:39:03> <INFO>		UpdatePlayersData()", -- [1209]
+			"<22:43:58> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1210]
+			"<22:45:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1211]
+			"<22:45:35> <INFO>		UpdatePlayersData()", -- [1212]
+			"<22:50:17> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Zerow-Ragnaros", -- [1213]
+			"<22:50:24> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1214]
+			"<22:51:59> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1215]
+			"<22:51:59> <INFO>		UpdatePlayersData()", -- [1216]
+			"<22:55:34> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1217]
+			"<22:56:45> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1218]
+			"<22:56:45> <INFO>		UpdatePlayersData()", -- [1219]
+			"<22:59:13> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1220]
+			"07/30/23", -- [1221]
+			"<23:00:15> <INFO>		Logged In", -- [1222]
+			"<23:00:15> <INFO>[ML]		Init", -- [1223]
+			"<23:00:15> <INFO>		RCLootCouncil	TradeUI enabled", -- [1224]
+			"<23:00:17> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1225]
+			"<23:00:17> <DEBUG>		ActivateSkin	bfa", -- [1226]
+			"<23:00:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1227]
+			"<23:00:19> <INFO>		UpdatePlayersData()", -- [1228]
+			"<23:00:19> <INFO>		Player relog...", -- [1229]
+			"<23:00:21> <DEBUG>		GetPlayersGuildRank()", -- [1230]
+			"<23:00:21> <DEBUG>		Found Guild Rank: Raider", -- [1231]
+			"<23:00:21> <DEBUG>		GetML()", -- [1232]
+			"<23:00:21> <DEBUG>		Resetting council as we have a new ML!", -- [1233]
+			"<23:00:21> <INFO>		MasterLooter	Strongdps-Hyjal	LootMethod	personalloot", -- [1234]
+			"<23:00:21> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1235]
+			"<23:00:21> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SRaider^N4^N0^N5^N446.25^N6^N62^t^^	RAID	Qpfromage-Ragnaros", -- [1236]
+			"<23:00:21> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Sreconnect^t^^	RAID	Qpfromage-Ragnaros", -- [1237]
+			"<23:00:36> <DEBUG>		Timer MLdb_check passed", -- [1238]
+			"<23:00:36> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^SMLdb_request^t^^	RAID	Qpfromage-Ragnaros", -- [1239]
+			"<23:00:36> <Comm>		^1^Sxrealm^T^N1^SStrongdps-Hyjal^N2^Scouncil_request^t^^	RAID	Qpfromage-Ragnaros", -- [1240]
+			"<23:00:59> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1241]
+			"<23:00:59> <INFO>		UpdatePlayersData()", -- [1242]
+			"<23:06:29> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1243]
+			"<23:07:47> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1244]
+			"<23:07:47> <INFO>		UpdatePlayersData()", -- [1245]
+			"<23:13:25> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1246]
+			"<23:16:32> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1247]
+			"<23:16:32> <INFO>		UpdatePlayersData()", -- [1248]
+			"<23:21:58> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1249]
+			"<23:23:35> <DEBUG>		Event:	ENCOUNTER_START	2683	Magmorax	16	20", -- [1250]
+			"<23:23:35> <INFO>		UpdatePlayersData()", -- [1251]
+			"<23:25:46> <DEBUG>		Event:	ENCOUNTER_END	2683	Magmorax	16	20	0", -- [1252]
+			"08/01/23", -- [1253]
+			"<00:22:35> <INFO>		Logged In", -- [1254]
+			"<00:22:35> <INFO>[ML]		Init", -- [1255]
+			"<00:22:35> <INFO>		RCLootCouncil	TradeUI enabled", -- [1256]
+			"<00:22:44> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1257]
+			"<00:22:44> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1258]
+			"<00:22:44> <DEBUG>		ActivateSkin	bfa", -- [1259]
+			"<00:22:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1260]
+			"<00:22:46> <INFO>		UpdatePlayersData()", -- [1261]
+			"<00:22:46> <INFO>		Player relog...", -- [1262]
+			"<00:22:49> <DEBUG>		GetML()", -- [1263]
+			"<00:22:49> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1264]
+			"<00:23:33> <DEBUG>		GetPlayersGuildRank()", -- [1265]
+			"<00:23:33> <DEBUG>		Found Guild Rank: Raider", -- [1266]
+			"08/01/23", -- [1267]
+			"<00:23:50> <INFO>		Logged In", -- [1268]
+			"<00:23:50> <INFO>[ML]		Init", -- [1269]
+			"<00:23:50> <INFO>		RCLootCouncil	TradeUI enabled", -- [1270]
+			"<00:23:52> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1271]
+			"<00:23:52> <DEBUG>		ActivateSkin	bfa", -- [1272]
+			"<00:23:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1273]
+			"<00:23:54> <INFO>		UpdatePlayersData()", -- [1274]
+			"<00:23:54> <INFO>		Player relog...", -- [1275]
+			"<00:23:56> <DEBUG>		GetPlayersGuildRank()", -- [1276]
+			"<00:23:56> <DEBUG>		Found Guild Rank: Raider", -- [1277]
+			"<00:23:56> <DEBUG>		GetML()", -- [1278]
+			"<00:23:56> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1279]
+			"<00:25:02> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1280]
+			"<00:25:02> <INFO>		UpdatePlayersData()", -- [1281]
+			"<00:25:04> <DEBUG>		GetML()", -- [1282]
+			"<00:28:21> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Smaugthis-Ragnaros", -- [1283]
+			"08/01/23", -- [1284]
+			"<02:22:43> <INFO>		Logged In", -- [1285]
+			"<02:22:43> <INFO>[ML]		Init", -- [1286]
+			"<02:22:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1287]
+			"<02:22:51> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1288]
+			"<02:22:51> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1289]
+			"<02:22:51> <DEBUG>		ActivateSkin	bfa", -- [1290]
+			"<02:22:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1291]
+			"<02:22:53> <INFO>		UpdatePlayersData()", -- [1292]
+			"<02:22:53> <INFO>		Player relog...", -- [1293]
+			"<02:22:55> <DEBUG>		GetPlayersGuildRank()", -- [1294]
+			"<02:22:55> <DEBUG>		Found Guild Rank: Raider", -- [1295]
+			"<02:22:57> <DEBUG>		GetML()", -- [1296]
+			"<02:22:57> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1297]
+			"<02:52:10> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	çookie-Ragnaros", -- [1298]
+			"<03:26:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1299]
+			"<03:26:45> <INFO>		UpdatePlayersData()", -- [1300]
+			"<03:26:47> <DEBUG>		GetML()", -- [1301]
+			"<04:41:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1302]
+			"<04:41:50> <INFO>		UpdatePlayersData()", -- [1303]
+			"<04:41:52> <DEBUG>		GetML()", -- [1304]
+			"<04:51:03> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1305]
+			"<04:51:03> <INFO>		UpdatePlayersData()", -- [1306]
+			"<04:51:05> <DEBUG>		GetML()", -- [1307]
+			"08/01/23", -- [1308]
+			"<05:56:45> <INFO>		Logged In", -- [1309]
+			"<05:56:45> <INFO>[ML]		Init", -- [1310]
+			"<05:56:45> <INFO>		RCLootCouncil	TradeUI enabled", -- [1311]
+			"<05:56:53> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1312]
+			"<05:56:53> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1313]
+			"<05:56:53> <DEBUG>		ActivateSkin	bfa", -- [1314]
+			"<05:56:55> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1315]
+			"<05:56:55> <INFO>		UpdatePlayersData()", -- [1316]
+			"<05:56:55> <INFO>		Player relog...", -- [1317]
+			"<05:56:57> <DEBUG>		GetML()", -- [1318]
+			"<05:56:58> <DEBUG>		GetPlayersGuildRank()", -- [1319]
+			"<05:56:58> <DEBUG>		GetPlayersGuildRank()", -- [1320]
+			"<05:56:58> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1321]
+			"08/01/23", -- [1322]
+			"<06:14:19> <INFO>		Logged In", -- [1323]
+			"<06:14:19> <INFO>[ML]		Init", -- [1324]
+			"<06:14:19> <INFO>		RCLootCouncil	TradeUI enabled", -- [1325]
+			"<06:14:20> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1326]
+			"<06:14:20> <DEBUG>		ActivateSkin	bfa", -- [1327]
+			"<06:14:22> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1328]
+			"<06:14:22> <INFO>		UpdatePlayersData()", -- [1329]
+			"<06:14:22> <INFO>		Player relog...", -- [1330]
+			"<06:14:22> <DEBUG>		GetML()", -- [1331]
+			"<06:14:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1332]
+			"<06:14:28> <DEBUG>		GetPlayersGuildRank()", -- [1333]
+			"<06:14:28> <DEBUG>		Found Guild Rank: Raider", -- [1334]
+			"<06:17:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1335]
+			"<06:17:53> <INFO>		UpdatePlayersData()", -- [1336]
+			"<06:17:55> <DEBUG>		GetML()", -- [1337]
+			"<06:35:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1338]
+			"<06:35:17> <INFO>		UpdatePlayersData()", -- [1339]
+			"<06:35:19> <DEBUG>		GetML()", -- [1340]
+			"<06:35:37> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1341]
+			"<06:35:37> <INFO>		UpdatePlayersData()", -- [1342]
+			"<06:35:39> <DEBUG>		GetML()", -- [1343]
+			"<06:35:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1344]
+			"<06:35:53> <INFO>		UpdatePlayersData()", -- [1345]
+			"<06:35:55> <DEBUG>		GetML()", -- [1346]
+			"08/01/23", -- [1347]
+			"<06:54:31> <INFO>		Logged In", -- [1348]
+			"<06:54:31> <INFO>[ML]		Init", -- [1349]
+			"<06:54:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [1350]
+			"<06:54:32> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1351]
+			"<06:54:32> <DEBUG>		ActivateSkin	bfa", -- [1352]
+			"<06:54:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1353]
+			"<06:54:34> <INFO>		UpdatePlayersData()", -- [1354]
+			"<06:54:34> <INFO>		Player relog...", -- [1355]
+			"<06:54:36> <DEBUG>		GetPlayersGuildRank()", -- [1356]
+			"<06:54:36> <DEBUG>		Found Guild Rank: Raider", -- [1357]
+			"<06:54:36> <DEBUG>		GetML()", -- [1358]
+			"<06:54:36> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1359]
+			"08/01/23", -- [1360]
+			"<07:03:31> <INFO>		Logged In", -- [1361]
+			"<07:03:31> <INFO>[ML]		Init", -- [1362]
+			"<07:03:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [1363]
+			"<07:03:32> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1364]
+			"<07:03:32> <DEBUG>		ActivateSkin	bfa", -- [1365]
+			"<07:03:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1366]
+			"<07:03:35> <INFO>		UpdatePlayersData()", -- [1367]
+			"<07:03:35> <INFO>		Player relog...", -- [1368]
+			"<07:03:36> <DEBUG>		GetPlayersGuildRank()", -- [1369]
+			"<07:03:36> <DEBUG>		Found Guild Rank: Raider", -- [1370]
+			"<07:03:36> <DEBUG>		GetML()", -- [1371]
+			"<07:03:36> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1372]
+			"<07:57:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1373]
+			"<07:57:29> <INFO>		UpdatePlayersData()", -- [1374]
+			"<07:57:31> <DEBUG>		GetML()", -- [1375]
+			"<08:31:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1376]
+			"<08:31:12> <INFO>		UpdatePlayersData()", -- [1377]
+			"<08:31:13> <DEBUG>		GetML()", -- [1378]
+			"<09:31:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1379]
+			"<09:31:21> <INFO>		UpdatePlayersData()", -- [1380]
+			"<09:31:22> <DEBUG>		GetML()", -- [1381]
+			"<09:33:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1382]
+			"<09:33:21> <INFO>		UpdatePlayersData()", -- [1383]
+			"<09:33:22> <DEBUG>		GetML()", -- [1384]
+			"08/01/23", -- [1385]
+			"<09:40:16> <INFO>		Logged In", -- [1386]
+			"<09:40:16> <INFO>[ML]		Init", -- [1387]
+			"<09:40:16> <INFO>		RCLootCouncil	TradeUI enabled", -- [1388]
+			"<09:40:17> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1389]
+			"<09:40:17> <DEBUG>		ActivateSkin	bfa", -- [1390]
+			"<09:40:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1391]
+			"<09:40:20> <INFO>		UpdatePlayersData()", -- [1392]
+			"<09:40:20> <INFO>		Player relog...", -- [1393]
+			"<09:40:21> <DEBUG>		GetPlayersGuildRank()", -- [1394]
+			"<09:40:21> <DEBUG>		Found Guild Rank: Raider", -- [1395]
+			"<09:40:21> <DEBUG>		GetML()", -- [1396]
+			"<09:40:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1397]
+			"08/01/23", -- [1398]
+			"<09:44:48> <INFO>		Logged In", -- [1399]
+			"<09:44:48> <INFO>[ML]		Init", -- [1400]
+			"<09:44:48> <INFO>		RCLootCouncil	TradeUI enabled", -- [1401]
+			"<09:44:50> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1402]
+			"<09:44:50> <DEBUG>		ActivateSkin	bfa", -- [1403]
+			"<09:44:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1404]
+			"<09:44:52> <INFO>		UpdatePlayersData()", -- [1405]
+			"<09:44:52> <INFO>		Player relog...", -- [1406]
+			"<09:44:53> <DEBUG>		GetPlayersGuildRank()", -- [1407]
+			"<09:44:53> <DEBUG>		Found Guild Rank: Raider", -- [1408]
+			"<09:44:53> <DEBUG>		GetML()", -- [1409]
+			"<09:44:54> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1410]
+			"<09:56:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1411]
+			"<09:56:40> <INFO>		UpdatePlayersData()", -- [1412]
+			"<09:56:42> <DEBUG>		GetML()", -- [1413]
+			"<09:57:44> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1414]
+			"<09:57:44> <INFO>		UpdatePlayersData()", -- [1415]
+			"<09:57:46> <DEBUG>		GetML()", -- [1416]
+			"<10:08:36> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1417]
+			"<10:08:36> <INFO>		UpdatePlayersData()", -- [1418]
+			"<10:08:38> <DEBUG>		GetML()", -- [1419]
+			"08/01/23", -- [1420]
+			"<10:09:39> <INFO>		Logged In", -- [1421]
+			"<10:09:39> <INFO>[ML]		Init", -- [1422]
+			"<10:09:39> <INFO>		RCLootCouncil	TradeUI enabled", -- [1423]
+			"<10:09:40> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1424]
+			"<10:09:40> <DEBUG>		ActivateSkin	bfa", -- [1425]
+			"<10:09:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1426]
+			"<10:09:43> <INFO>		UpdatePlayersData()", -- [1427]
+			"<10:09:43> <INFO>		Player relog...", -- [1428]
+			"<10:09:45> <DEBUG>		GetML()", -- [1429]
+			"<10:09:45> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1430]
+			"<10:09:48> <DEBUG>		GetPlayersGuildRank()", -- [1431]
+			"<10:09:48> <DEBUG>		Found Guild Rank: Raider", -- [1432]
+			"<10:10:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1433]
+			"<10:10:23> <INFO>		UpdatePlayersData()", -- [1434]
+			"<10:10:24> <DEBUG>		GetML()", -- [1435]
+			"<10:26:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1436]
+			"<10:26:47> <INFO>		UpdatePlayersData()", -- [1437]
+			"<10:26:49> <DEBUG>		GetML()", -- [1438]
+			"<10:28:25> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1439]
+			"<10:28:25> <INFO>		UpdatePlayersData()", -- [1440]
+			"<10:28:27> <DEBUG>		GetML()", -- [1441]
+			"<10:32:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1442]
+			"<10:32:41> <INFO>		UpdatePlayersData()", -- [1443]
+			"<10:32:43> <DEBUG>		GetML()", -- [1444]
+			"<10:34:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1445]
+			"<10:34:01> <INFO>		UpdatePlayersData()", -- [1446]
+			"<10:34:03> <DEBUG>		GetML()", -- [1447]
+			"<10:35:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1448]
+			"<10:35:47> <INFO>		UpdatePlayersData()", -- [1449]
+			"<10:35:49> <DEBUG>		GetML()", -- [1450]
+			"<10:39:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1451]
+			"<10:39:41> <INFO>		UpdatePlayersData()", -- [1452]
+			"<10:39:42> <DEBUG>		GetML()", -- [1453]
+			"<10:41:54> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Mábashí-Ragnaros", -- [1454]
+			"08/01/23", -- [1455]
+			"<10:49:53> <INFO>		Logged In", -- [1456]
+			"<10:49:53> <INFO>[ML]		Init", -- [1457]
+			"<10:49:53> <INFO>		RCLootCouncil	TradeUI enabled", -- [1458]
+			"<10:49:54> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1459]
+			"<10:49:54> <DEBUG>		ActivateSkin	bfa", -- [1460]
+			"<10:49:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1461]
+			"<10:49:57> <INFO>		UpdatePlayersData()", -- [1462]
+			"<10:49:57> <INFO>		Player relog...", -- [1463]
+			"<10:49:59> <DEBUG>		GetPlayersGuildRank()", -- [1464]
+			"<10:49:59> <DEBUG>		Found Guild Rank: Raider", -- [1465]
+			"<10:49:59> <DEBUG>		GetML()", -- [1466]
+			"<10:49:59> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1467]
+			"08/01/23", -- [1468]
+			"<11:43:38> <INFO>		Logged In", -- [1469]
+			"<11:43:38> <INFO>[ML]		Init", -- [1470]
+			"<11:43:38> <INFO>		RCLootCouncil	TradeUI enabled", -- [1471]
+			"<11:43:46> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1472]
+			"<11:43:46> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1473]
+			"<11:43:46> <DEBUG>		ActivateSkin	bfa", -- [1474]
+			"<11:43:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1475]
+			"<11:43:48> <INFO>		UpdatePlayersData()", -- [1476]
+			"<11:43:48> <INFO>		Player relog...", -- [1477]
+			"<11:43:49> <DEBUG>		GetPlayersGuildRank()", -- [1478]
+			"<11:43:49> <DEBUG>		Found Guild Rank: Raider", -- [1479]
+			"<11:43:52> <DEBUG>		GetML()", -- [1480]
+			"<11:43:53> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1481]
+			"08/01/23", -- [1482]
+			"<11:45:44> <INFO>		Logged In", -- [1483]
+			"<11:45:44> <INFO>[ML]		Init", -- [1484]
+			"<11:45:44> <INFO>		RCLootCouncil	TradeUI enabled", -- [1485]
+			"<11:45:45> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1486]
+			"<11:45:45> <DEBUG>		ActivateSkin	bfa", -- [1487]
+			"<11:45:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1488]
+			"<11:45:47> <INFO>		UpdatePlayersData()", -- [1489]
+			"<11:45:47> <INFO>		Player relog...", -- [1490]
+			"<11:45:48> <DEBUG>		GetPlayersGuildRank()", -- [1491]
+			"<11:45:48> <DEBUG>		Found Guild Rank: Raider", -- [1492]
+			"<11:45:49> <DEBUG>		GetML()", -- [1493]
+			"<11:45:49> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1494]
+			"<12:16:56> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1495]
+			"<12:17:44> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1496]
+			"<12:22:52> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1497]
+			"<12:56:12> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Torashi-Ragnaros", -- [1498]
+			"<14:53:13> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1499]
+			"<14:53:15> <DEBUG>		GetML()", -- [1500]
+			"<14:53:15> <Data.Player>		CreatePlayer	Player-1305-0BDA3903", -- [1501]
+			"<14:53:15> <Data.Player>		CreatePlayer	Player-1315-0C45D562", -- [1502]
+			"<14:53:15> <Data.Player>		CreatePlayer	Player-3682-0B27F34E", -- [1503]
+			"<14:53:15> <Data.Player>		CreatePlayer	Player-604-0A75088C", -- [1504]
+			"<14:53:15> <DEBUG>		Resetting council as we have a new ML!", -- [1505]
+			"<14:53:15> <INFO>		MasterLooter	Myërs-Kazzak	LootMethod	personalloot", -- [1506]
+			"<14:53:30> <DEBUG>		Timer MLdb_check passed", -- [1507]
+			"<14:53:30> <Comm>		^1^Sxrealm^T^N1^SMyërs-Kazzak^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1508]
+			"<14:53:30> <Comm>		^1^Sxrealm^T^N1^SMyërs-Kazzak^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1509]
+			"<14:53:31> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Myërs-Kazzak", -- [1510]
+			"<14:53:31> <INFO>		OnMLDBReceived", -- [1511]
+			"<14:53:31> <Comm>		^1^Scouncil^T^N1^T^S1305-0BDA3903^B^t^t^^	PARTY	Myërs-Kazzak", -- [1512]
+			"<14:53:31> <DEBUG>		isCouncil	false", -- [1513]
+			"<14:54:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1514]
+			"<14:54:40> <INFO>		UpdatePlayersData()", -- [1515]
+			"<14:54:41> <DEBUG>		GetML()", -- [1516]
+			"<14:56:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1517]
+			"<14:56:08> <INFO>		UpdatePlayersData()", -- [1518]
+			"<14:56:09> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Freehold (Mythic)	54230	0	0", -- [1519]
+			"<14:56:10> <DEBUG>		GetML()", -- [1520]
+			"<14:57:21> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1521]
+			"<14:57:23> <DEBUG>		GetML()", -- [1522]
+			"<14:57:23> <DEBUG>		Resetting council as we have a new ML!", -- [1523]
+			"<14:57:23> <INFO>		MasterLooter	Laylona-Thrall	LootMethod	personalloot", -- [1524]
+			"<14:57:23> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Laylona-Thrall", -- [1525]
+			"<14:57:23> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Laylona-Thrall", -- [1526]
+			"<14:57:23> <INFO>		OnMLDBReceived", -- [1527]
+			"<14:57:23> <Comm>		^1^Sxrealm^T^N1^SLaylona-Thrall^N2^SpI^N3^SDAMAGER^N4^SRaider^N6^N0^N7^N445.875^N8^N64^t^^	PARTY	Qpfromage-Ragnaros", -- [1528]
+			"<14:57:23> <Comm>		^1^Sxrealm^T^N1^SLaylona-Thrall^N2^SpI^N3^SDAMAGER^N4^SJust~`Fingertip^N6^N0^N7^N440.6875^N8^N252^t^^	PARTY	Myërs-Kazzak", -- [1529]
+			"<14:57:23> <Comm>		^1^SStopHandleLoot^T^t^^	PARTY	Myërs-Kazzak", -- [1530]
+			"<14:57:25> <Comm>		^1^Scouncil^T^N1^T^S604-0A75088C^B^t^t^^	PARTY	Laylona-Thrall", -- [1531]
+			"<14:57:25> <DEBUG>		isCouncil	false", -- [1532]
+			"<14:57:38> <DEBUG>		Timer MLdb_check passed", -- [1533]
+			"<15:01:43> <DEBUG>		Event:	ENCOUNTER_START	2093	Skycap'n Kragg	8	5", -- [1534]
+			"<15:01:43> <INFO>		UpdatePlayersData()", -- [1535]
+			"<15:04:32> <DEBUG>		Event:	ENCOUNTER_END	2093	Skycap'n Kragg	8	5	1", -- [1536]
+			"<15:09:12> <DEBUG>		Event:	ENCOUNTER_START	2094	Council o' Captains	8	5", -- [1537]
+			"<15:09:12> <INFO>		UpdatePlayersData()", -- [1538]
+			"<15:12:18> <DEBUG>		Event:	ENCOUNTER_END	2094	Council o' Captains	8	5	1", -- [1539]
+			"<15:16:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1540]
+			"<15:16:48> <INFO>		UpdatePlayersData()", -- [1541]
+			"<15:16:50> <DEBUG>		GetML()", -- [1542]
+			"<15:18:39> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1543]
+			"<15:18:41> <DEBUG>		GetML()", -- [1544]
+			"<15:18:41> <DEBUG>		Resetting council as we have a new ML!", -- [1545]
+			"<15:18:41> <INFO>		MasterLooter	Dragondog-Ragnaros	LootMethod	personalloot", -- [1546]
+			"<15:18:56> <DEBUG>		Timer MLdb_check passed", -- [1547]
+			"<15:19:03> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1548]
+			"<15:19:05> <DEBUG>		GetML()", -- [1549]
+			"<15:19:05> <DEBUG>		Resetting council as we have a new ML!", -- [1550]
+			"<15:19:05> <INFO>		MasterLooter	Qpfromage-Ragnaros	LootMethod	personalloot", -- [1551]
+			"<15:19:05> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1552]
+			"<15:19:05> <DEBUG>[ML]		NewML	Qpfromage-Ragnaros", -- [1553]
+			"<15:19:05> <DEBUG>[ML]		UpdateMLdb", -- [1554]
+			"<15:19:05> <INFO>		OnMLDBReceived", -- [1555]
+			"<15:19:05> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpfromage-Ragnaros", -- [1556]
+			"<15:19:05> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1557]
+			"<15:19:05> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SRaider^N4^N0^N5^N445.875^N6^N64^t^^	WHISPER	Qpfromage-Ragnaros", -- [1558]
+			"<15:19:07> <DEBUG>[ML]		UpdateGroupCouncil	Qpfromage-Ragnaros", -- [1559]
+			"<15:19:07> <Comm>		^1^Scouncil^T^N1^T^S3682-0B236980^B^t^t^^	PARTY	Qpfromage-Ragnaros", -- [1560]
+			"<15:19:07> <DEBUG>		isCouncil	true", -- [1561]
+			"<15:19:07> <DEBUG>		GetLootDBStatistics()", -- [1562]
+			"<15:19:07> <DEBUG>		GetGuildRankNum()", -- [1563]
+			"<15:19:07> <INFO>		RCVotingFrame	enabled", -- [1564]
+			"<15:19:20> <DEBUG>		Timer MLdb_check passed", -- [1565]
+			"<15:19:25> <DEBUG>		Event:	GROUP_LEFT	1	Party-1305-1-0000615B18EA", -- [1566]
+			"<15:19:25> <DEBUG>		GetML()", -- [1567]
+			"<15:19:25> <INFO>		Stop handling loot", -- [1568]
+			"<15:19:25> <INFO>[ML]		Disabled", -- [1569]
+			"<15:19:25> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Qpfromage-Ragnaros", -- [1570]
+			"08/01/23", -- [1571]
+			"<15:29:18> <INFO>		Logged In", -- [1572]
+			"<15:29:18> <INFO>[ML]		Init", -- [1573]
+			"<15:29:18> <INFO>		RCLootCouncil	TradeUI enabled", -- [1574]
+			"<15:29:19> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1575]
+			"<15:29:19> <DEBUG>		ActivateSkin	bfa", -- [1576]
+			"<15:29:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1577]
+			"<15:29:20> <INFO>		UpdatePlayersData()", -- [1578]
+			"<15:29:20> <INFO>		Player relog...", -- [1579]
+			"<15:29:22> <DEBUG>		GetML()", -- [1580]
+			"<15:29:22> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1581]
+			"<15:29:27> <DEBUG>		GetPlayersGuildRank()", -- [1582]
+			"<15:29:27> <DEBUG>		Found Guild Rank: Raider", -- [1583]
+			"<16:10:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Rejuvlife-Ragnaros", -- [1584]
+			"08/01/23", -- [1585]
+			"<19:51:17> <INFO>		Logged In", -- [1586]
+			"<19:51:17> <INFO>[ML]		Init", -- [1587]
+			"<19:51:17> <INFO>		RCLootCouncil	TradeUI enabled", -- [1588]
+			"<19:51:22> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Qpfromage-Ragnaros	Player-3682-0B236980", -- [1589]
+			"<19:51:22> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1590]
+			"<19:51:22> <DEBUG>		ActivateSkin	bfa", -- [1591]
+			"<19:51:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1592]
+			"<19:51:23> <INFO>		UpdatePlayersData()", -- [1593]
+			"<19:51:23> <INFO>		Player relog...", -- [1594]
+			"<19:51:24> <DEBUG>		GetPlayersGuildRank()", -- [1595]
+			"<19:51:24> <DEBUG>		Found Guild Rank: Raider", -- [1596]
+			"<19:51:26> <DEBUG>		GetML()", -- [1597]
+			"<19:51:27> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1598]
+			"<20:10:05> <Comm>		^1^Sv^T^N1^S3.9.0^t^^	GUILD	Asset-Ragnaros", -- [1599]
+			"<20:16:25> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Infernodh-Ragnaros", -- [1600]
+			"<20:16:25> <Comm>		^1^Sr^T^N1^S3.9.0^N3^T^t^t^^	GUILD	Asset-Ragnaros", -- [1601]
+			"<20:46:30> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Wrathwings-Ragnaros", -- [1602]
+			"<20:46:32> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1603]
+			"<20:46:34> <DEBUG>		GetML()", -- [1604]
+			"<20:46:34> <Data.Player>		CreatePlayer	Player-3656-07BF9982", -- [1605]
+			"<20:46:34> <Data.Player>		CreatePlayer	Player-3691-09B76285", -- [1606]
+			"<20:46:34> <Data.Player>		CreatePlayer	Player-3674-0B219B18", -- [1607]
+			"<20:46:34> <DEBUG>		Resetting council as we have a new ML!", -- [1608]
+			"<20:46:34> <INFO>		MasterLooter	Jöötikkä-Stormreaver	LootMethod	personalloot", -- [1609]
+			"<20:46:49> <DEBUG>		Timer MLdb_check passed", -- [1610]
+			"<20:46:49> <Comm>		^1^Sxrealm^T^N1^SJöötikkä-Stormreaver^N2^SMLdb_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1611]
+			"<20:46:49> <Comm>		^1^Sxrealm^T^N1^SJöötikkä-Stormreaver^N2^Scouncil_request^t^^	PARTY	Qpfromage-Ragnaros", -- [1612]
+			"<20:47:31> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1613]
+			"<20:47:31> <INFO>		UpdatePlayersData()", -- [1614]
+			"<20:47:32> <DEBUG>		GetML()", -- [1615]
+			"<20:48:03> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Smaugthis-Ragnaros", -- [1616]
+			"<20:50:37> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Freehold (Mythic)	32962	0	0", -- [1617]
+			"<20:50:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1618]
+			"<20:50:38> <INFO>		UpdatePlayersData()", -- [1619]
+			"<20:50:39> <DEBUG>		GetML()", -- [1620]
+			"<20:50:39> <Data.Player>		CreatePlayer	Player-3674-081BF176", -- [1621]
+			"<20:56:05> <DEBUG>		Event:	ENCOUNTER_START	2093	Skycap'n Kragg	8	5", -- [1622]
+			"<20:56:05> <INFO>		UpdatePlayersData()", -- [1623]
+			"<20:58:50> <DEBUG>		Event:	ENCOUNTER_END	2093	Skycap'n Kragg	8	5	1", -- [1624]
+			"<21:02:47> <DEBUG>		Event:	ENCOUNTER_START	2094	Council o' Captains	8	5", -- [1625]
+			"<21:02:47> <INFO>		UpdatePlayersData()", -- [1626]
+			"<21:05:07> <DEBUG>		Event:	ENCOUNTER_END	2094	Council o' Captains	8	5	0", -- [1627]
+			"<21:05:16> <DEBUG>		Event:	GROUP_LEFT	1	Party-3656-1-0000679EE16B", -- [1628]
+			"<21:05:16> <DEBUG>		GetML()", -- [1629]
+			"08/01/23", -- [1630]
+			"<21:06:27> <INFO>		Logged In", -- [1631]
+			"<21:06:27> <INFO>[ML]		Init", -- [1632]
+			"<21:06:27> <INFO>		RCLootCouncil	TradeUI enabled", -- [1633]
+			"<21:06:30> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1634]
+			"<21:06:30> <DEBUG>		ActivateSkin	bfa", -- [1635]
+			"<21:06:32> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1636]
+			"<21:06:32> <INFO>		UpdatePlayersData()", -- [1637]
+			"<21:06:32> <INFO>		Player relog...", -- [1638]
+			"<21:06:34> <DEBUG>		GetML()", -- [1639]
+			"<21:06:35> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1640]
+			"<21:06:36> <DEBUG>		GetPlayersGuildRank()", -- [1641]
+			"<21:06:36> <DEBUG>		Found Guild Rank: Raider", -- [1642]
+			"<21:06:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1643]
+			"<21:06:50> <INFO>		UpdatePlayersData()", -- [1644]
+			"<21:06:52> <DEBUG>		GetML()", -- [1645]
+			"08/01/23", -- [1646]
+			"<21:08:13> <INFO>		Logged In", -- [1647]
+			"<21:08:13> <INFO>[ML]		Init", -- [1648]
+			"<21:08:13> <INFO>		RCLootCouncil	TradeUI enabled", -- [1649]
+			"<21:08:14> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1650]
+			"<21:08:14> <DEBUG>		ActivateSkin	bfa", -- [1651]
+			"<21:08:15> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1652]
+			"<21:08:15> <INFO>		UpdatePlayersData()", -- [1653]
+			"<21:08:15> <INFO>		Player relog...", -- [1654]
+			"<21:08:16> <DEBUG>		GetPlayersGuildRank()", -- [1655]
+			"<21:08:16> <DEBUG>		Found Guild Rank: Raider", -- [1656]
+			"<21:08:17> <DEBUG>		GetML()", -- [1657]
+			"<21:08:17> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1658]
+			"08/01/23", -- [1659]
+			"<21:08:45> <INFO>		Logged In", -- [1660]
+			"<21:08:45> <INFO>[ML]		Init", -- [1661]
+			"<21:08:45> <INFO>		RCLootCouncil	TradeUI enabled", -- [1662]
+			"<21:08:46> <INFO>		Qpfromage-Ragnaros	3.9.1	nil", -- [1663]
+			"<21:08:46> <DEBUG>		ActivateSkin	bfa", -- [1664]
+			"<21:08:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1665]
+			"<21:08:47> <INFO>		UpdatePlayersData()", -- [1666]
+			"<21:08:47> <INFO>		Player relog...", -- [1667]
+			"<21:08:48> <DEBUG>		GetPlayersGuildRank()", -- [1668]
+			"<21:08:48> <DEBUG>		Found Guild Rank: Raider", -- [1669]
+			"<21:08:49> <DEBUG>		GetML()", -- [1670]
+			"<21:08:49> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Qpfromage-Ragnaros", -- [1671]
+			"<21:10:59> <Comm>		^1^Sv^T^N1^S3.9.1^t^^	GUILD	Hev-Ragnaros", -- [1672]
+			"08/22/23", -- [1673]
+			"<03:29:19> <INFO>		Logged In", -- [1674]
+			"<03:29:19> <INFO>[ML]		Init", -- [1675]
+			"<03:29:19> <INFO>		RCLootCouncil	TradeUI enabled", -- [1676]
+			"<03:29:34> <Data.Player>		CreatePlayer	Player-3682-0B310D76", -- [1677]
+			"<03:29:34> <INFO>		Unknown	3.9.1	nil", -- [1678]
+			"<03:29:34> <DEBUG>		ActivateSkin	bfa", -- [1679]
+			"<03:29:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1680]
+			"<03:29:38> <INFO>		UpdatePlayersData()", -- [1681]
+			"<03:29:38> <INFO>		Player relog...", -- [1682]
+			"<03:29:44> <DEBUG>		GetML()", -- [1683]
+			"04/24/24", -- [1684]
+			"<17:41:56> <INFO>		Logged In", -- [1685]
+			"<17:41:56> <INFO>[ML]		Init", -- [1686]
+			"<17:41:56> <INFO>		RCLootCouncil	TradeUI enabled", -- [1687]
+			"<17:42:03> <INFO>		Qpcheese-Ragnaros	3.11.0	nil", -- [1688]
+			"<17:42:03> <DEBUG>		ActivateSkin	bfa", -- [1689]
+			"<17:42:09> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1690]
+			"<17:42:09> <INFO>		UpdatePlayersData()", -- [1691]
+			"<17:42:09> <INFO>		Player relog...", -- [1692]
+			"<17:42:13> <DEBUG>		GetML()", -- [1693]
+			"<17:58:50> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1694]
+			"<17:58:52> <DEBUG>		GetML()", -- [1695]
+			"<17:58:52> <Data.Player>		CreatePlayer	Player-3682-0B310D76", -- [1696]
+			"<17:58:52> <DEBUG>		Resetting council as we have a new ML!", -- [1697]
+			"<17:58:52> <INFO>		MasterLooter	Qpcheese-Ragnaros	LootMethod	personalloot", -- [1698]
+			"<17:58:52> <DEBUG>[ML]		UpdateGroupCouncil	Qpcheese-Ragnaros", -- [1699]
+			"<17:58:52> <DEBUG>[ML]		NewML	Qpcheese-Ragnaros", -- [1700]
+			"<17:58:52> <DEBUG>[ML]		UpdateMLdb", -- [1701]
+			"<17:58:52> <INFO>		OnMLDBReceived", -- [1702]
+			"<17:58:52> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpcheese-Ragnaros", -- [1703]
+			"<17:58:53> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1704]
+			"<17:58:53> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SUnguilded^N4^N0^N5^N420.4375^N6^N62^t^^	WHISPER	Qpcheese-Ragnaros", -- [1705]
+			"<17:58:54> <DEBUG>[ML]		UpdateGroupCouncil	Qpcheese-Ragnaros", -- [1706]
+			"<17:58:55> <Comm>		^1^Scouncil^T^N1^T^S3682-0B038C9A^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1707]
+			"<17:58:55> <DEBUG>		isCouncil	true", -- [1708]
+			"<17:58:55> <DEBUG>		GetLootDBStatistics()", -- [1709]
+			"<17:58:55> <INFO>		RCVotingFrame	enabled", -- [1710]
+			"<17:58:58> <DEBUG>[ML]		Group size changed to 2", -- [1711]
+			"<17:58:58> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1712]
+			"<17:59:00> <Comm>		^1^Scouncil^T^N1^T^S3682-0B038C9A^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1713]
+			"<17:59:00> <DEBUG>		isCouncil	true", -- [1714]
+			"<17:59:07> <DEBUG>		Timer MLdb_check passed", -- [1715]
+			"<18:09:28> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1716]
+			"<18:09:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1717]
+			"<18:09:35> <INFO>		UpdatePlayersData()", -- [1718]
+			"<18:09:37> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1719]
+			"<18:09:37> <DEBUG>		GetML()", -- [1720]
+			"<18:09:37> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1721]
+			"<18:10:23> <DEBUG>[ML]		ML event	PLAYER_REGEN_ENABLED", -- [1722]
+			"<18:11:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1723]
+			"<18:11:52> <INFO>		UpdatePlayersData()", -- [1724]
+			"<18:11:53> <DEBUG>		GetML()", -- [1725]
+			"<18:11:54> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1726]
+			"<18:12:13> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1727]
+			"<18:15:22> <DEBUG>		Event:	GROUP_LEFT	1	Party-3682-1-00003A36852B", -- [1728]
+			"<18:15:22> <DEBUG>		GetML()", -- [1729]
+			"<18:15:22> <INFO>		Stop handling loot", -- [1730]
+			"<18:15:22> <INFO>[ML]		Disabled", -- [1731]
+			"<18:15:22> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Qpcheese-Ragnaros", -- [1732]
+			"<18:15:45> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1733]
+			"<18:34:26> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1734]
+			"<18:34:30> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1735]
+			"<18:34:39> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1736]
+			"<18:35:36> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1737]
+			"<18:35:36> <INFO>		UpdatePlayersData()", -- [1738]
+			"<18:35:37> <DEBUG>		GetML()", -- [1739]
+			"<18:35:37> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1740]
+			"04/24/24", -- [1741]
+			"<18:39:16> <INFO>		Logged In", -- [1742]
+			"<18:39:16> <INFO>[ML]		Init", -- [1743]
+			"<18:39:16> <INFO>		RCLootCouncil	TradeUI enabled", -- [1744]
+			"<18:39:23> <INFO>		Qpcheese-Ragnaros	3.11.0	nil", -- [1745]
+			"<18:39:23> <DEBUG>		ActivateSkin	bfa", -- [1746]
+			"<18:39:25> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1747]
+			"<18:39:25> <INFO>		UpdatePlayersData()", -- [1748]
+			"<18:39:25> <INFO>		Player relog...", -- [1749]
+			"<18:39:28> <DEBUG>		GetML()", -- [1750]
+			"<18:50:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1751]
+			"<18:50:10> <INFO>		UpdatePlayersData()", -- [1752]
+			"<18:50:11> <DEBUG>		GetML()", -- [1753]
+			"<18:50:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1754]
+			"<18:50:45> <INFO>		UpdatePlayersData()", -- [1755]
+			"<18:50:46> <DEBUG>		GetML()", -- [1756]
+			"<18:50:58> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1757]
+			"<18:51:00> <DEBUG>		GetML()", -- [1758]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-3696-07652307", -- [1759]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1096-09C75365", -- [1760]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1408-049F5C3A", -- [1761]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-3691-06A18821", -- [1762]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1396-08E17E2B", -- [1763]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-3691-0499717C", -- [1764]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-3696-09951945", -- [1765]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-3691-0A2986AE", -- [1766]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1325-09EAFA23", -- [1767]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1403-0A7AE1E1", -- [1768]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-2073-09DAF9EF", -- [1769]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1104-07416C30", -- [1770]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1403-0AA827AA", -- [1771]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1390-0CA87D82", -- [1772]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1305-0B3228AF", -- [1773]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-570-09B7B4FF", -- [1774]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-3696-07650B35", -- [1775]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1305-087EC699", -- [1776]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1084-0A84E687", -- [1777]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1084-0ACB7ED4", -- [1778]
+			"<18:51:00> <Data.Player>		CreatePlayer	Player-1406-048E939A", -- [1779]
+			"<18:51:00> <DEBUG>		Resetting council as we have a new ML!", -- [1780]
+			"<18:51:00> <INFO>		MasterLooter	Forti-Nethersturm	LootMethod	personalloot", -- [1781]
+			"<18:51:01> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^SMLdb_request^t^^	RAID	Pasco-DefiasBrotherhood", -- [1782]
+			"<18:51:01> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^Scouncil_request^t^^	RAID	Pasco-DefiasBrotherhood", -- [1783]
+			"<18:51:10> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^SMLdb_request^t^^	RAID	Pasco-DefiasBrotherhood", -- [1784]
+			"<18:51:10> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^Scouncil_request^t^^	RAID	Pasco-DefiasBrotherhood", -- [1785]
+			"<18:51:15> <DEBUG>		Timer MLdb_check passed", -- [1786]
+			"<18:51:16> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^SMLdb_request^t^^	RAID	Qpcheese-Ragnaros", -- [1787]
+			"<18:51:16> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^Scouncil_request^t^^	RAID	Qpcheese-Ragnaros", -- [1788]
+			"<18:51:16> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^SMLdb_request^t^^	RAID	Aibelf-Hellscream", -- [1789]
+			"<18:51:16> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^Scouncil_request^t^^	RAID	Aibelf-Hellscream", -- [1790]
+			"<18:51:18> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^SMLdb_request^t^^	RAID	Angelictear-Draenor", -- [1791]
+			"<18:51:18> <Comm>		^1^Sxrealm^T^N1^SForti-Nethersturm^N2^Scouncil_request^t^^	RAID	Angelictear-Draenor", -- [1792]
+			"<18:52:42> <DEBUG>		Event:	LOOT_READY	true", -- [1793]
+			"<18:52:54> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1794]
+			"<18:52:56> <DEBUG>		GetML()", -- [1795]
+			"<18:52:56> <DEBUG>		Resetting council as we have a new ML!", -- [1796]
+			"<18:52:56> <INFO>		MasterLooter	Malgorzata-Alexstrasza	LootMethod	personalloot", -- [1797]
+			"<18:52:56> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Malgorzata-Alexstrasza", -- [1798]
+			"<18:52:56> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	RAID	Malgorzata-Alexstrasza", -- [1799]
+			"<18:52:56> <INFO>		OnMLDBReceived", -- [1800]
+			"<18:52:56> <Comm>		^1^Sxrealm^T^N1^SMalgorzata-Alexstrasza^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N420.4375^N8^N62^t^^	RAID	Qpcheese-Ragnaros", -- [1801]
+			"<18:52:58> <Comm>		^1^Sxrealm^T^N1^SMalgorzata-Alexstrasza^N2^SpI^N3^SDAMAGER^N4^SRanger^N6^N0^N7^N485.4375^N8^N266^t^^	RAID	Râggnâr-Blackhand", -- [1802]
+			"<18:53:07> <Comm>		^1^SStopHandleLoot^T^t^^	RAID	Malgorzata-Alexstrasza", -- [1803]
+			"<18:53:09> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1804]
+			"<18:53:11> <DEBUG>		Timer MLdb_check passed", -- [1805]
+			"<18:53:11> <Comm>		^1^Sxrealm^T^N1^SMalgorzata-Alexstrasza^N2^Scouncil_request^t^^	RAID	Qpcheese-Ragnaros", -- [1806]
+			"<18:53:11> <DEBUG>		GetML()", -- [1807]
+			"<18:53:11> <DEBUG>		Resetting council as we have a new ML!", -- [1808]
+			"<18:53:11> <INFO>		MasterLooter	Baldvín-Kazzak	LootMethod	personalloot", -- [1809]
+			"<18:53:21> <DEBUG>		Event:	GROUP_LEFT	1	Party-3696-1-00003383C9A9", -- [1810]
+			"<18:53:21> <DEBUG>		GetML()", -- [1811]
+			"<18:53:26> <DEBUG>		Timer MLdb_check passed", -- [1812]
+			"<18:53:55> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1813]
+			"<18:53:55> <INFO>		UpdatePlayersData()", -- [1814]
+			"<18:53:56> <DEBUG>		GetML()", -- [1815]
+			"04/27/24", -- [1816]
+			"<04:01:58> <INFO>		Logged In", -- [1817]
+			"<04:01:58> <INFO>[ML]		Init", -- [1818]
+			"<04:01:58> <INFO>		RCLootCouncil	TradeUI enabled", -- [1819]
+			"<04:02:05> <INFO>		Qpe-Ravencrest	3.11.0	nil", -- [1820]
+			"<04:02:05> <DEBUG>		ActivateSkin	bfa", -- [1821]
+			"<04:02:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1822]
+			"<04:02:06> <INFO>		UpdatePlayersData()", -- [1823]
+			"<04:02:06> <INFO>		Player relog...", -- [1824]
+			"<04:02:09> <DEBUG>		GetML()", -- [1825]
+			"<04:02:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1826]
+			"<04:02:47> <INFO>		UpdatePlayersData()", -- [1827]
+			"<04:02:48> <DEBUG>		GetML()", -- [1828]
+			"<04:03:51> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1829]
+			"<04:03:51> <INFO>		UpdatePlayersData()", -- [1830]
+			"<04:03:52> <DEBUG>		GetML()", -- [1831]
+			"<04:10:13> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1832]
+			"<04:10:13> <INFO>		UpdatePlayersData()", -- [1833]
+			"<04:10:15> <DEBUG>		GetML()", -- [1834]
+			"04/30/24", -- [1835]
+			"<06:38:54> <INFO>		Logged In", -- [1836]
+			"<06:38:54> <INFO>[ML]		Init", -- [1837]
+			"<06:38:54> <INFO>		RCLootCouncil	TradeUI enabled", -- [1838]
+			"<06:39:02> <INFO>		Qpcheese-Ragnaros	3.11.0	nil", -- [1839]
+			"<06:39:02> <DEBUG>		ActivateSkin	bfa", -- [1840]
+			"<06:39:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1841]
+			"<06:39:04> <INFO>		UpdatePlayersData()", -- [1842]
+			"<06:39:04> <INFO>		Player relog...", -- [1843]
+			"<06:39:08> <DEBUG>		GetML()", -- [1844]
+			"<06:39:29> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1845]
+			"<06:39:31> <DEBUG>		GetML()", -- [1846]
+			"<06:39:31> <DEBUG>		Resetting council as we have a new ML!", -- [1847]
+			"<06:39:31> <INFO>		MasterLooter	Qpcheese-Ragnaros	LootMethod	personalloot", -- [1848]
+			"<06:39:31> <DEBUG>[ML]		UpdateGroupCouncil	Qpcheese-Ragnaros", -- [1849]
+			"<06:39:31> <DEBUG>[ML]		NewML	Qpcheese-Ragnaros", -- [1850]
+			"<06:39:31> <DEBUG>[ML]		UpdateMLdb", -- [1851]
+			"<06:39:31> <INFO>		OnMLDBReceived", -- [1852]
+			"<06:39:32> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpcheese-Ragnaros", -- [1853]
+			"<06:39:32> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1854]
+			"<06:39:32> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SUnguilded^N4^N0^N5^N426.1875^N6^N62^t^^	WHISPER	Qpcheese-Ragnaros", -- [1855]
+			"<06:39:33> <DEBUG>[ML]		UpdateGroupCouncil	Qpcheese-Ragnaros", -- [1856]
+			"<06:39:34> <Comm>		^1^Scouncil^T^N1^T^S3682-0B038C9A^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1857]
+			"<06:39:34> <DEBUG>		isCouncil	true", -- [1858]
+			"<06:39:34> <DEBUG>		GetLootDBStatistics()", -- [1859]
+			"<06:39:34> <INFO>		RCVotingFrame	enabled", -- [1860]
+			"<06:39:37> <DEBUG>[ML]		Group size changed to 2", -- [1861]
+			"<06:39:37> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1862]
+			"<06:39:39> <Comm>		^1^Scouncil^T^N1^T^S3682-0B038C9A^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1863]
+			"<06:39:39> <DEBUG>		isCouncil	true", -- [1864]
+			"<06:39:46> <DEBUG>		Timer MLdb_check passed", -- [1865]
+			"<06:39:55> <DEBUG>		TradeUI: Traded item(s) to	Qpfromage-Sylvanas", -- [1866]
+			"<06:39:55> <DEBUG>		TradeUI:Show()	nil", -- [1867]
+			"<06:39:55> <DEBUG>		TradeUI:Hide()", -- [1868]
+			"<06:39:56> <DEBUG>[ML]		ML event	CHAT_MSG_WHISPER	Completed trade with Qpcheese-Ragnaros. - I gave: 344000g 00s 00c	Qpfromage-Sylvanas			Qpfromage-Sylvanas		0	0		0	49	Player-1597-0F7AB124	0	false	false	false	false", -- [1869]
+			"<06:40:53> <DEBUG>		Event:	GROUP_LEFT	1	Party-3682-1-00003A430F05", -- [1870]
+			"<06:40:53> <DEBUG>		GetML()", -- [1871]
+			"<06:40:53> <INFO>		Stop handling loot", -- [1872]
+			"<06:40:53> <INFO>[ML]		Disabled", -- [1873]
+			"<06:40:53> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Qpcheese-Ragnaros", -- [1874]
+			"05/01/24", -- [1875]
+			"<08:03:31> <INFO>		Logged In", -- [1876]
+			"<08:03:31> <INFO>[ML]		Init", -- [1877]
+			"<08:03:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [1878]
+			"<08:03:40> <INFO>		Qpcheese-Ragnaros	3.11.0	nil", -- [1879]
+			"<08:03:40> <DEBUG>		ActivateSkin	bfa", -- [1880]
+			"<08:03:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1881]
+			"<08:03:41> <INFO>		UpdatePlayersData()", -- [1882]
+			"<08:03:41> <INFO>		Player relog...", -- [1883]
+			"<08:03:45> <DEBUG>		GetML()", -- [1884]
+			"<08:06:41> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1885]
+			"<08:06:43> <DEBUG>		GetML()", -- [1886]
+			"<08:06:43> <Data.Player>		CreatePlayer	Player-1597-0F7AB124", -- [1887]
+			"<08:06:43> <DEBUG>		Resetting council as we have a new ML!", -- [1888]
+			"<08:06:43> <INFO>		MasterLooter	Qpcheese-Ragnaros	LootMethod	personalloot", -- [1889]
+			"<08:06:43> <DEBUG>[ML]		UpdateGroupCouncil	Qpcheese-Ragnaros", -- [1890]
+			"<08:06:43> <DEBUG>[ML]		NewML	Qpcheese-Ragnaros", -- [1891]
+			"<08:06:43> <DEBUG>[ML]		UpdateMLdb", -- [1892]
+			"<08:06:43> <INFO>		OnMLDBReceived", -- [1893]
+			"<08:06:44> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpcheese-Ragnaros", -- [1894]
+			"<08:06:44> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1895]
+			"<08:06:44> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SUnguilded^N4^N0^N5^N426.1875^N6^N62^t^^	WHISPER	Qpcheese-Ragnaros", -- [1896]
+			"<08:06:44> <Comm>		^1^Sxrealm^T^N1^SQpcheese-Ragnaros^N2^SpI^N3^SDAMAGER^N4^SSocial^N6^N0^N7^N495.625^N8^N62^t^^	PARTY	Qpfromage-Sylvanas", -- [1897]
+			"<08:06:45> <DEBUG>[ML]		UpdateGroupCouncil	Qpcheese-Ragnaros", -- [1898]
+			"<08:06:46> <Comm>		^1^Scouncil^T^N1^T^S3682-0B038C9A^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1899]
+			"<08:06:46> <DEBUG>		isCouncil	true", -- [1900]
+			"<08:06:46> <DEBUG>		GetLootDBStatistics()", -- [1901]
+			"<08:06:46> <INFO>		RCVotingFrame	enabled", -- [1902]
+			"<08:06:49> <DEBUG>[ML]		Group size changed to 2", -- [1903]
+			"<08:06:49> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1904]
+			"<08:06:51> <Comm>		^1^Scouncil^T^N1^T^S3682-0B038C9A^B^t^t^^	PARTY	Qpcheese-Ragnaros", -- [1905]
+			"<08:06:51> <DEBUG>		isCouncil	true", -- [1906]
+			"<08:06:58> <DEBUG>		Timer MLdb_check passed", -- [1907]
+			"<08:09:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1908]
+			"<08:09:29> <INFO>		UpdatePlayersData()", -- [1909]
+			"<08:09:30> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1910]
+			"<08:09:31> <DEBUG>		GetML()", -- [1911]
+			"<08:09:31> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1912]
+			"<08:10:19> <DEBUG>[ML]		ML event	PLAYER_REGEN_ENABLED", -- [1913]
+			"<08:10:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1914]
+			"<08:10:46> <INFO>		UpdatePlayersData()", -- [1915]
+			"<08:10:48> <DEBUG>		GetML()", -- [1916]
+			"<08:10:48> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1917]
+			"<08:13:05> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1918]
+			"<08:13:10> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1919]
+			"<08:14:11> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1920]
+			"05/02/24", -- [1921]
+			"<01:54:08> <INFO>		Logged In", -- [1922]
+			"<01:54:08> <INFO>[ML]		Init", -- [1923]
+			"<01:54:08> <INFO>		RCLootCouncil	TradeUI enabled", -- [1924]
+			"<01:54:13> <INFO>		Qpe-Ravencrest	3.11.0	nil", -- [1925]
+			"<01:54:13> <DEBUG>		ActivateSkin	bfa", -- [1926]
+			"<01:54:15> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1927]
+			"<01:54:15> <INFO>		UpdatePlayersData()", -- [1928]
+			"<01:54:15> <INFO>		Player relog...", -- [1929]
+			"<01:54:17> <DEBUG>		GetML()", -- [1930]
+			"05/04/24", -- [1931]
+			"<09:01:11> <INFO>		Logged In", -- [1932]
+			"<09:01:11> <INFO>[ML]		Init", -- [1933]
+			"<09:01:11> <INFO>		RCLootCouncil	TradeUI enabled", -- [1934]
+			"<09:01:16> <INFO>		Qpe-Ravencrest	3.11.0	nil", -- [1935]
+			"<09:01:16> <DEBUG>		ActivateSkin	bfa", -- [1936]
+			"<09:01:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1937]
+			"<09:01:17> <INFO>		UpdatePlayersData()", -- [1938]
+			"<09:01:17> <INFO>		Player relog...", -- [1939]
+			"<09:01:19> <DEBUG>		GetML()", -- [1940]
+			"<09:02:00> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1941]
+			"<09:02:02> <DEBUG>		GetML()", -- [1942]
+			"<09:02:02> <DEBUG>		Resetting council as we have a new ML!", -- [1943]
+			"<09:02:02> <INFO>		MasterLooter	Qpe-Ravencrest	LootMethod	personalloot", -- [1944]
+			"<09:02:02> <DEBUG>[ML]		UpdateGroupCouncil	Qpe-Ravencrest", -- [1945]
+			"<09:02:02> <DEBUG>[ML]		NewML	Qpe-Ravencrest", -- [1946]
+			"<09:02:02> <DEBUG>[ML]		UpdateMLdb", -- [1947]
+			"<09:02:02> <INFO>		OnMLDBReceived", -- [1948]
+			"<09:02:02> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpe-Ravencrest", -- [1949]
+			"<09:02:02> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1950]
+			"<09:02:03> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SUnguilded^N4^N0^N5^N294.9375^N6^N62^t^^	WHISPER	Qpe-Ravencrest", -- [1951]
+			"<09:02:04> <DEBUG>[ML]		UpdateGroupCouncil	Qpe-Ravencrest", -- [1952]
+			"<09:02:04> <Comm>		^1^Scouncil^T^N1^T^S1329-09D764A3^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1953]
+			"<09:02:04> <DEBUG>		isCouncil	true", -- [1954]
+			"<09:02:04> <DEBUG>		GetLootDBStatistics()", -- [1955]
+			"<09:02:04> <INFO>		RCVotingFrame	enabled", -- [1956]
+			"<09:02:17> <DEBUG>		Timer MLdb_check passed", -- [1957]
+			"<09:02:23> <DEBUG>		Event:	GROUP_LEFT	1	Party-1329-1-0000339C414F", -- [1958]
+			"<09:02:23> <DEBUG>		GetML()", -- [1959]
+			"<09:02:23> <INFO>		Stop handling loot", -- [1960]
+			"<09:02:23> <INFO>[ML]		Disabled", -- [1961]
+			"<09:02:23> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Qpe-Ravencrest", -- [1962]
+			"<09:02:28> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1963]
+			"<09:02:30> <DEBUG>		GetML()", -- [1964]
+			"<09:02:30> <DEBUG>		Resetting council as we have a new ML!", -- [1965]
+			"<09:02:30> <INFO>		MasterLooter	Qpe-Ravencrest	LootMethod	personalloot", -- [1966]
+			"<09:02:30> <DEBUG>[ML]		UpdateGroupCouncil	Qpe-Ravencrest", -- [1967]
+			"<09:02:30> <DEBUG>[ML]		NewML	Qpe-Ravencrest", -- [1968]
+			"<09:02:30> <DEBUG>[ML]		UpdateMLdb", -- [1969]
+			"<09:02:30> <INFO>		OnMLDBReceived", -- [1970]
+			"<09:02:30> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Qpe-Ravencrest", -- [1971]
+			"<09:02:30> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1972]
+			"<09:02:30> <Comm>		^1^SpI^T^N1^SDAMAGER^N2^SUnguilded^N4^N0^N5^N294.9375^N6^N62^t^^	WHISPER	Qpe-Ravencrest", -- [1973]
+			"<09:02:32> <DEBUG>[ML]		UpdateGroupCouncil	Qpe-Ravencrest", -- [1974]
+			"<09:02:32> <Comm>		^1^Scouncil^T^N1^T^S1329-09D764A3^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1975]
+			"<09:02:32> <DEBUG>		isCouncil	true", -- [1976]
+			"<09:02:42> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1977]
+			"<09:02:45> <DEBUG>		Timer MLdb_check passed", -- [1978]
+			"<09:02:45> <DEBUG>[ML]		Group size changed to 2", -- [1979]
+			"<09:02:46> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1980]
+			"<09:02:46> <Comm>		^1^Scouncil^T^N1^T^S1329-09D764A3^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1981]
+			"<09:02:46> <DEBUG>		isCouncil	true", -- [1982]
+			"<09:03:39> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1983]
+			"<09:03:42> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1984]
+			"<09:03:43> <DEBUG>[ML]		Group size changed to 3", -- [1985]
+			"<09:03:43> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|2^B^S|5^N3^S|17^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1986]
+			"<09:03:43> <Comm>		^1^Scouncil^T^N1^T^S1329-09D764A3^B^t^t^^	PARTY	Qpe-Ravencrest", -- [1987]
+			"<09:03:43> <DEBUG>		isCouncil	true", -- [1988]
+			"<09:03:44> <DEBUG>		GetML()", -- [1989]
+			"<09:03:44> <Data.Player>		CreatePlayer	Player-1597-0F7C7072", -- [1990]
+			"<09:03:44> <INFO>		Stop handling loot", -- [1991]
+			"<09:03:44> <INFO>[ML]		Disabled", -- [1992]
+			"<09:03:44> <DEBUG>		Resetting council as we have a new ML!", -- [1993]
+			"<09:03:44> <INFO>		MasterLooter	Qute-Sylvanas	LootMethod	personalloot", -- [1994]
+			"<09:03:44> <Comm>		^1^SStopHandleLoot^T^t^^	PARTY	Qpe-Ravencrest", -- [1995]
+			"<09:03:59> <DEBUG>		Timer MLdb_check passed", -- [1996]
+			"<09:04:02> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1997]
+			"<09:04:02> <INFO>		UpdatePlayersData()", -- [1998]
+			"<09:04:03> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1999]
+			"<09:04:03> <DEBUG>		GetML()", -- [2000]
 		},
+		["locale"] = "enUS",
+		["version"] = "3.11.0",
+		["oldVersion"] = "3.9.1",
+		["regionID"] = 3,
 		["cache"] = {
 			["player"] = {
 				["Player-3682-0B116533"] = {
@@ -2081,11 +2104,11 @@ RCLootCouncilDB = {
 					["class"] = "SHAMAN",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680432796,
-					["realm"] = "Blackmoore",
+					["rank"] = "Raider",
 					["name"] = "Kwekiidoili-Blackmoore",
 					["specID"] = 263,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Blackmoore",
 				},
 				["Player-3674-0ADA4672"] = {
 					["name"] = "Bildodaggins-TwistingNether",
@@ -2177,11 +2200,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1678066914,
-					["realm"] = "Silvermoon",
+					["rank"] = "Vantus Runer",
 					["name"] = "Melwalor-Silvermoon",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["rank"] = "Vantus Runer",
+					["realm"] = "Silvermoon",
 				},
 				["Player-1127-08FB53FB"] = {
 					["name"] = "Chrônicle-KirinTor",
@@ -2201,10 +2224,10 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Leydi-TwistingNether",
 					["guid"] = "Player-3674-087C0AA6",
-					["realm"] = "TwistingNether",
+					["rank"] = "Trail Raider",
 					["class"] = "WARRIOR",
 					["cache_time"] = 1677665910,
-					["rank"] = "Trail Raider",
+					["realm"] = "TwistingNether",
 				},
 				["Player-1305-0C7F3743"] = {
 					["name"] = "Chilldust-Kazzak",
@@ -2238,10 +2261,10 @@ RCLootCouncilDB = {
 					["role"] = "HEALER",
 					["name"] = "Lopan-ArgentDawn",
 					["guid"] = "Player-3702-0A4622CE",
-					["rank"] = "Member",
+					["realm"] = "ArgentDawn",
 					["class"] = "PALADIN",
 					["cache_time"] = 1676343727,
-					["realm"] = "ArgentDawn",
+					["rank"] = "Member",
 				},
 				["Player-1084-0A8947B4"] = {
 					["name"] = "Níõhöggr-TarrenMill",
@@ -2445,11 +2468,11 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679519132,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Crunchypie-Ragnaros",
 					["specID"] = 577,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 				},
 				["Player-570-05B25455"] = {
 					["name"] = "Kredar-Baelgun",
@@ -2485,11 +2508,11 @@ RCLootCouncilDB = {
 					["class"] = "WARLOCK",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
+					["rank"] = "Core",
 					["name"] = "Grats-Ragnaros",
 					["specID"] = 266,
 					["enchantingLvl"] = 0,
-					["rank"] = "Core",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1390-0C5ABBAE"] = {
 					["name"] = "Yødà-Hyjal",
@@ -2511,11 +2534,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "TANK",
 					["cache_time"] = 1680437946,
-					["realm"] = "Kazzak",
+					["rank"] = "Team 1",
 					["name"] = "Ogrihm-Kazzak",
 					["specID"] = 73,
 					["enchantingLvl"] = 0,
-					["rank"] = "Team 1",
+					["realm"] = "Kazzak",
 				},
 				["Player-3682-0B0E28E2"] = {
 					["name"] = "Homei-Ragnaros",
@@ -2642,11 +2665,11 @@ RCLootCouncilDB = {
 					["class"] = "MAGE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1690916927,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Qpfromage-Ragnaros",
 					["specID"] = 64,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 				},
 				["Player-3713-0AD15516"] = {
 					["name"] = "Widzet-BurningLegion",
@@ -2722,10 +2745,10 @@ RCLootCouncilDB = {
 					["role"] = "HEALER",
 					["name"] = "Funkyevoker-TarrenMill",
 					["guid"] = "Player-1084-0A811422",
-					["realm"] = "TarrenMill",
+					["rank"] = "Unguilded",
 					["class"] = "EVOKER",
 					["cache_time"] = 1676377737,
-					["rank"] = "Unguilded",
+					["realm"] = "TarrenMill",
 				},
 				["Player-1602-0F54C333"] = {
 					["name"] = "шокич-Гордунни",
@@ -2747,11 +2770,11 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "TANK",
 					["cache_time"] = 1686184517,
-					["rank"] = "Unguilded",
+					["realm"] = "TwistingNether",
 					["name"] = "Lúkè-TwistingNether",
 					["specID"] = 581,
 					["enchantingLvl"] = 0,
-					["realm"] = "TwistingNether",
+					["rank"] = "Unguilded",
 				},
 				["Player-1402-07508EC4"] = {
 					["name"] = "Sweetkatha-Doomhammer",
@@ -2771,14 +2794,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 422.5625,
 					["guid"] = "Player-3682-06ECD02B",
 					["class"] = "DRUID",
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686170430,
 					["name"] = "Shaamoo-Ragnaros",
-					["specID"] = 103,
 					["enchanter"] = true,
+					["specID"] = 103,
 					["enchantingLvl"] = 100,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-580-0A39949F"] = {
 					["name"] = "Setokaya-Blackmoore",
@@ -2973,14 +2996,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 444.375,
 					["guid"] = "Player-3682-0B292768",
 					["class"] = "SHAMAN",
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688676359,
 					["name"] = "Helpdotcom-Ragnaros",
-					["enchanter"] = true,
 					["specID"] = 263,
+					["enchanter"] = true,
 					["enchantingLvl"] = 88,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 				},
 				["Player-1305-0C551600"] = {
 					["name"] = "Fireføx-Kazzak",
@@ -3121,11 +3144,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679348432,
-					["realm"] = "Kazzak",
+					["rank"] = "Rubber Duck",
 					["name"] = "Envyspoon-Kazzak",
 					["specID"] = 255,
 					["enchantingLvl"] = 0,
-					["rank"] = "Rubber Duck",
+					["realm"] = "Kazzak",
 				},
 				["Player-3682-0B1970EA"] = {
 					["name"] = "Dracainé-Ragnaros",
@@ -3147,11 +3170,11 @@ RCLootCouncilDB = {
 					["class"] = "MONK",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688072566,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 					["name"] = "Skaterble-Ragnaros",
 					["specID"] = 269,
 					["enchantingLvl"] = 0,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 				},
 				["Player-581-06930F71"] = {
 					["name"] = "Theprotz-Blackrock",
@@ -3215,11 +3238,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686182992,
-					["rank"] = "Unguilded",
+					["realm"] = "Ragnaros",
 					["name"] = "Rambónér-Ragnaros",
 					["specID"] = 72,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Unguilded",
 				},
 				["Player-1301-0C42CB7A"] = {
 					["name"] = "Nahó-Outland",
@@ -3246,14 +3269,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 439.0625,
 					["guid"] = "Player-3682-0B09E34C",
 					["class"] = "EVOKER",
-					["realm"] = "Ragnaros",
+					["rank"] = "Officer Alt",
 					["role"] = "HEALER",
 					["cache_time"] = 1687302868,
 					["name"] = "Notasset-Ragnaros",
-					["specID"] = 1468,
 					["enchanter"] = true,
+					["specID"] = 1468,
 					["enchantingLvl"] = 28,
-					["rank"] = "Officer Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0B1813BE"] = {
 					["name"] = "Selini-TwistingNether",
@@ -3597,11 +3620,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685651466,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Shadyb-Ragnaros",
 					["specID"] = 254,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1379-0AAF5546"] = {
 					["name"] = "Cyrodiil-Sanguino",
@@ -3644,11 +3667,11 @@ RCLootCouncilDB = {
 					["class"] = "DEATHKNIGHT",
 					["role"] = "DAMAGER",
 					["name"] = "Pippix-TarrenMill",
-					["rank"] = "Raider",
+					["realm"] = "TarrenMill",
 					["cache_time"] = 1688888541,
 					["specID"] = 252,
 					["enchantingLvl"] = 0,
-					["realm"] = "TarrenMill",
+					["rank"] = "Raider",
 				},
 				["Player-1084-0A94E906"] = {
 					["name"] = "Glück-TarrenMill",
@@ -3684,11 +3707,11 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680437145,
-					["realm"] = "TwistingNether",
+					["rank"] = "ALT",
 					["name"] = "Niclasxd-TwistingNether",
 					["specID"] = 577,
 					["enchantingLvl"] = 0,
-					["rank"] = "ALT",
+					["realm"] = "TwistingNether",
 				},
 				["Player-1305-0C2A6DEB"] = {
 					["name"] = "Incbank-Kazzak",
@@ -3920,11 +3943,11 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1684204457,
-					["realm"] = "Ревущийфьорд",
+					["rank"] = "ЯСТРУБ",
 					["name"] = "атмена-Ревущийфьорд",
 					["specID"] = 577,
 					["enchantingLvl"] = 0,
-					["rank"] = "ЯСТРУБ",
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1305-0C5E03CC"] = {
 					["name"] = "Magiguzzen-Kazzak",
@@ -4065,11 +4088,11 @@ RCLootCouncilDB = {
 					["class"] = "DEATHKNIGHT",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685539073,
-					["realm"] = "Drak'thul",
+					["rank"] = "Alt",
 					["name"] = "Satyraa-Drak'thul",
 					["specID"] = 252,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Drak'thul",
 				},
 				["Player-1329-09FDBA80"] = {
 					["name"] = "Kikkh-Ravencrest",
@@ -4119,11 +4142,11 @@ RCLootCouncilDB = {
 					["class"] = "SHAMAN",
 					["role"] = "HEALER",
 					["cache_time"] = 1685386842,
-					["realm"] = "Ragnaros",
+					["rank"] = "Recruiter",
 					["name"] = "Maccasham-Ragnaros",
 					["specID"] = 264,
 					["enchantingLvl"] = 0,
-					["rank"] = "Recruiter",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3682-06594359"] = {
 					["name"] = "Amandacerny-Ragnaros",
@@ -4138,11 +4161,11 @@ RCLootCouncilDB = {
 					["class"] = "ROGUE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1684235960,
-					["rank"] = "Trial",
+					["realm"] = "Stormscale",
 					["name"] = "Ritchiejr-Stormscale",
 					["specID"] = 261,
 					["enchantingLvl"] = 0,
-					["realm"] = "Stormscale",
+					["rank"] = "Trial",
 				},
 				["Player-3686-09C01F21"] = {
 					["name"] = "Barlianhunt-Antonidas",
@@ -4255,11 +4278,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "HEALER",
 					["cache_time"] = 1689281451,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Wituwu-Ragnaros",
 					["specID"] = 257,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 				},
 				["Player-1122-092505C7"] = {
 					["name"] = "Ratüs-Eitrigg",
@@ -4309,6 +4332,13 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["cache_time"] = 1685871367,
 					["realm"] = "Elune",
+				},
+				["Player-1403-0A7AE1E1"] = {
+					["name"] = "Vósjé-Draenor",
+					["guid"] = "Player-1403-0A7AE1E1",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1713977576,
+					["realm"] = "Draenor",
 				},
 				["Player-3691-09CA2561"] = {
 					["name"] = "Rêês-Blackhand",
@@ -4377,14 +4407,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 440.9375,
 					["guid"] = "Player-1621-0B281B41",
 					["class"] = "PRIEST",
-					["realm"] = "Dalaran",
+					["rank"] = "Test",
 					["role"] = "HEALER",
 					["cache_time"] = 1686696451,
 					["name"] = "Ainoko-Dalaran",
-					["specID"] = 257,
 					["enchanter"] = true,
+					["specID"] = 257,
 					["enchantingLvl"] = 25,
-					["rank"] = "Test",
+					["realm"] = "Dalaran",
 				},
 				["Player-3674-0AFE3074"] = {
 					["name"] = "Bë-TwistingNether",
@@ -4439,14 +4469,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 401.6875,
 					["guid"] = "Player-1403-0A618AFB",
 					["class"] = "HUNTER",
-					["rank"] = "Raider",
+					["realm"] = "Draenor",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1676768223,
 					["name"] = "Kayydá-Draenor",
-					["enchanter"] = true,
 					["specID"] = 253,
+					["enchanter"] = true,
 					["enchantingLvl"] = 50,
-					["realm"] = "Draenor",
+					["rank"] = "Raider",
 				},
 				["Player-1602-0A99A46E"] = {
 					["name"] = "боллукс-Гордунни",
@@ -4580,11 +4610,11 @@ RCLootCouncilDB = {
 					["class"] = "MAGE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1690123270,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["name"] = "Jfree-Ragnaros",
 					["specID"] = 63,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0B095659"] = {
 					["name"] = "Tokopeli-TwistingNether",
@@ -4676,11 +4706,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "HEALER",
 					["name"] = "Treece-Kazzak",
-					["realm"] = "Kazzak",
+					["rank"] = "Officer Alt",
 					["cache_time"] = 1677337923,
 					["specID"] = 105,
 					["enchantingLvl"] = 0,
-					["rank"] = "Officer Alt",
+					["realm"] = "Kazzak",
 				},
 				["Player-1097-0A94F56C"] = {
 					["name"] = "Racco-Ysera",
@@ -4794,6 +4824,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686035755,
 					["realm"] = "Draenor",
 				},
+				["Player-1084-0ACB7ED4"] = {
+					["name"] = "Larsh-Dentarg",
+					["guid"] = "Player-1084-0ACB7ED4",
+					["class"] = "PALADIN",
+					["cache_time"] = 1713977576,
+					["realm"] = "Dentarg",
+				},
 				["Player-581-09F17D83"] = {
 					["name"] = "Zeyol-Blackrock",
 					["guid"] = "Player-581-09F17D83",
@@ -4807,11 +4844,11 @@ RCLootCouncilDB = {
 					["class"] = "SHAMAN",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
+					["rank"] = "Core",
 					["name"] = "Lonz-Ragnaros",
 					["specID"] = 262,
 					["enchantingLvl"] = 0,
-					["rank"] = "Core",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1305-040AF0DD"] = {
 					["name"] = "Lelene-Kazzak",
@@ -4987,11 +5024,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "HEALER",
 					["cache_time"] = 1680383988,
-					["rank"] = "Raider",
+					["realm"] = "TarrenMill",
 					["name"] = "Makèá-TarrenMill",
 					["specID"] = 257,
 					["enchantingLvl"] = 0,
-					["realm"] = "TarrenMill",
+					["rank"] = "Raider",
 				},
 				["Player-1325-03C61918"] = {
 					["name"] = "Zhiros-Aggramar",
@@ -5151,14 +5188,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 384.4375,
 					["guid"] = "Player-1615-0A4548A3",
 					["class"] = "WARLOCK",
-					["realm"] = "Ревущийфьорд",
+					["rank"] = "Член ги",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1676372637,
 					["name"] = "соложмых-Ревущийфьорд",
-					["specID"] = 266,
 					["enchanter"] = true,
+					["specID"] = 266,
 					["enchantingLvl"] = 25,
-					["rank"] = "Член ги",
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3674-0B18EC32"] = {
 					["name"] = "Keshandr-TwistingNether",
@@ -5290,14 +5327,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 441.9375,
 					["guid"] = "Player-3682-0A7A0140",
 					["class"] = "PALADIN",
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1687802886,
 					["name"] = "Pad-Ragnaros",
-					["specID"] = 70,
 					["enchanter"] = true,
+					["specID"] = 70,
 					["enchantingLvl"] = 120,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1604-0BFBF699"] = {
 					["name"] = "падшаялоа-СвежевательДуш",
@@ -5464,14 +5501,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 413.8125,
 					["guid"] = "Player-3682-0AFB2442",
 					["class"] = "WARRIOR",
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["role"] = "TANK",
 					["cache_time"] = 1676323969,
 					["name"] = "Eldoii-Ragnaros",
-					["specID"] = 73,
 					["enchanter"] = true,
+					["specID"] = 73,
 					["enchantingLvl"] = 82,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3682-0B09339F"] = {
 					["ilvl"] = 414.8125,
@@ -5479,11 +5516,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679949497,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["name"] = "Iliyana-Ragnaros",
 					["specID"] = 253,
 					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3686-0A03B046"] = {
 					["name"] = "Cendor-Antonidas",
@@ -5498,11 +5535,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "HEALER",
 					["name"] = "Zeroe-Ragnaros",
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["cache_time"] = 1689951104,
 					["specID"] = 65,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3713-0AD73D8A"] = {
 					["name"] = "Hrfun-BurningLegion",
@@ -5587,11 +5624,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677792661,
-					["rank"] = "Social",
+					["realm"] = "Ragnaros",
 					["name"] = "Itharíus-Ragnaros",
 					["specID"] = 254,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Social",
 				},
 				["Player-3692-09FC4358"] = {
 					["name"] = "Atneus-Eredar",
@@ -5620,11 +5657,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1676913794,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 					["name"] = "Gosumvp-Ragnaros",
 					["specID"] = 71,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 				},
 				["Player-1084-0A9A28C3"] = {
 					["name"] = "Mjnd-TarrenMill",
@@ -5646,11 +5683,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Cödhead-Ragnaros",
 					["specID"] = 254,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1379-0ADAB80C"] = {
 					["name"] = "Hêllion-Sanguino",
@@ -5896,11 +5933,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "HEALER",
 					["cache_time"] = 1685651079,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 					["name"] = "Brinsiguruu-Ragnaros",
 					["specID"] = 105,
 					["enchantingLvl"] = 0,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0AF4F919"] = {
 					["name"] = "Woottôdoo-TwistingNether",
@@ -5943,24 +5980,24 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688676359,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Smurkio-Ragnaros",
 					["specID"] = 577,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3682-07424F59"] = {
 					["ilvl"] = 443.3125,
 					["guid"] = "Player-3682-07424F59",
 					["class"] = "MONK",
-					["realm"] = "Ragnaros",
+					["rank"] = "Officer Alt",
 					["role"] = "HEALER",
 					["cache_time"] = 1689281451,
 					["name"] = "Barryscotty-Ragnaros",
-					["specID"] = 270,
 					["enchanter"] = true,
+					["specID"] = 270,
 					["enchantingLvl"] = 86,
-					["rank"] = "Officer Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3691-0A0274A2"] = {
 					["name"] = "Schmilfy-Blackhand",
@@ -6088,6 +6125,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677879103,
 					["realm"] = "Ragnaros",
 				},
+				["Player-1305-0B3228AF"] = {
+					["name"] = "Scitro-Kazzak",
+					["guid"] = "Player-1305-0B3228AF",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1713977460,
+					["realm"] = "Kazzak",
+				},
 				["Player-1305-09DDAF9B"] = {
 					["name"] = "Dulnok-Kazzak",
 					["guid"] = "Player-1305-09DDAF9B",
@@ -6199,11 +6243,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "HEALER",
 					["cache_time"] = 1688881144,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["name"] = "Dogson-Ragnaros",
 					["specID"] = 257,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-580-0A6B1C75"] = {
 					["name"] = "Zaw-Blackmoore",
@@ -6412,10 +6456,10 @@ RCLootCouncilDB = {
 					["role"] = "TANK",
 					["name"] = "Uglybaby-Ysondre",
 					["guid"] = "Player-1335-09B494A6",
-					["rank"] = "Unguilded",
+					["realm"] = "Ysondre",
 					["class"] = "DRUID",
 					["cache_time"] = 1679780488,
-					["realm"] = "Ysondre",
+					["rank"] = "Unguilded",
 				},
 				["Player-3691-0924CCBB"] = {
 					["name"] = "Andiwms-Mal'Ganis",
@@ -6456,10 +6500,10 @@ RCLootCouncilDB = {
 					["role"] = "HEALER",
 					["name"] = "Elicjd-Pozzodell'Eternità",
 					["guid"] = "Player-1309-049712FA",
-					["rank"] = "Membro",
+					["realm"] = "Pozzodell'Eternità",
 					["class"] = "DRUID",
 					["cache_time"] = 1677489750,
-					["realm"] = "Pozzodell'Eternità",
+					["rank"] = "Membro",
 				},
 				["Player-3674-0B133FA1"] = {
 					["name"] = "Oora-TwistingNether",
@@ -6488,11 +6532,11 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "TANK",
 					["cache_time"] = 1687260396,
-					["realm"] = "Ysondre",
+					["rank"] = "Magma",
 					["name"] = "Leguerrecsgo-Ysondre",
 					["specID"] = 581,
 					["enchantingLvl"] = 0,
-					["rank"] = "Magma",
+					["realm"] = "Ysondre",
 				},
 				["Player-1084-0A82B0F7"] = {
 					["name"] = "Rommél-TarrenMill",
@@ -6528,11 +6572,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688407659,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Zerow-Ragnaros",
 					["specID"] = 103,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0B192E2D"] = {
 					["name"] = "Lyvian-TwistingNether",
@@ -6561,11 +6605,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "TANK",
 					["cache_time"] = 1677513829,
-					["rank"] = "BoldgeBoy",
+					["realm"] = "Ravencrest",
 					["name"] = "Protbrampa-Ravencrest",
 					["specID"] = 66,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ravencrest",
+					["rank"] = "BoldgeBoy",
 				},
 				["Player-1084-09D3CC33"] = {
 					["name"] = "Hasanii-TarrenMill",
@@ -6629,11 +6673,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1687260449,
-					["realm"] = "Ysondre",
+					["rank"] = "Magma",
 					["name"] = "Plooky-Ysondre",
 					["specID"] = 102,
 					["enchantingLvl"] = 0,
-					["rank"] = "Magma",
+					["realm"] = "Ysondre",
 				},
 				["Player-604-0A39911D"] = {
 					["name"] = "Gologrion-Thrall",
@@ -6716,14 +6760,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 417.4375,
 					["guid"] = "Player-3682-0B1CD5E6",
 					["class"] = "PALADIN",
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["role"] = "TANK",
 					["cache_time"] = 1680115423,
 					["name"] = "Aquamentes-Ragnaros",
-					["specID"] = 66,
 					["enchanter"] = true,
+					["specID"] = 66,
 					["enchantingLvl"] = 71,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-633-0A4A8FF2"] = {
 					["name"] = "Plaguestrike-Darkspear",
@@ -6766,11 +6810,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679747022,
-					["realm"] = "Sanguino",
+					["rank"] = "Raider",
 					["name"] = "Urrik-Sanguino",
 					["specID"] = 253,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Sanguino",
 				},
 				["Player-1329-0A0726EE"] = {
 					["name"] = "Greasyfist-Ravencrest",
@@ -6839,14 +6883,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 444,
 					["guid"] = "Player-3682-0B247C30",
 					["class"] = "MAGE",
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
 					["name"] = "Ståck-Ragnaros",
-					["specID"] = 62,
 					["enchanter"] = true,
+					["specID"] = 62,
 					["enchantingLvl"] = 100,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1604-0EA11588"] = {
 					["name"] = "думрай-СвежевательДуш",
@@ -7001,11 +7045,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679517906,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Nindz-Ragnaros",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 				},
 				["Player-580-0A6DD6DE"] = {
 					["name"] = "Deluxo-Blackmoore",
@@ -7109,14 +7153,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 423.25,
 					["guid"] = "Player-3691-06FB690E",
 					["class"] = "WARRIOR",
-					["realm"] = "Blackhand",
+					["rank"] = "Mainraider",
 					["role"] = "TANK",
 					["name"] = "Mancubus-Blackhand",
 					["cache_time"] = 1684218160,
-					["specID"] = 73,
 					["enchanter"] = true,
+					["specID"] = 73,
 					["enchantingLvl"] = 100,
-					["rank"] = "Mainraider",
+					["realm"] = "Blackhand",
 				},
 				["Player-1335-03EBBE96"] = {
 					["name"] = "ímpact-Ysondre",
@@ -7157,10 +7201,10 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Woxiss-BurningBlade",
 					["guid"] = "Player-1092-0A920318",
-					["realm"] = "BurningBlade",
+					["rank"] = "Unguilded",
 					["class"] = "DRUID",
 					["cache_time"] = 1676377737,
-					["rank"] = "Unguilded",
+					["realm"] = "BurningBlade",
 				},
 				["Player-1623-07210475"] = {
 					["name"] = "корольллич-Дракономор",
@@ -7315,11 +7359,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "TANK",
 					["cache_time"] = 1679618143,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 					["name"] = "Fugglypuff-Ragnaros",
 					["specID"] = 66,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 				},
 				["Player-581-0A673693"] = {
 					["name"] = "Filly-Blackrock",
@@ -7334,11 +7378,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679747022,
-					["realm"] = "Dalaran",
+					["rank"] = "Membre",
 					["name"] = "Aleoust-Dalaran",
 					["specID"] = 102,
 					["enchantingLvl"] = 0,
-					["rank"] = "Membre",
+					["realm"] = "Dalaran",
 				},
 				["Player-1623-0AFEFC71"] = {
 					["name"] = "палерояль-Дракономор",
@@ -7386,14 +7430,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 375,
 					["guid"] = "Player-1092-07D3C203",
 					["class"] = "DRUID",
-					["realm"] = "BurningBlade",
+					["rank"] = "Tunneler",
 					["role"] = "HEALER",
 					["cache_time"] = 1676387096,
 					["name"] = "Hapytree-BurningBlade",
-					["specID"] = 105,
 					["enchanter"] = true,
+					["specID"] = 105,
 					["enchantingLvl"] = 49,
-					["rank"] = "Tunneler",
+					["realm"] = "BurningBlade",
 				},
 				["Player-1127-09027EEB"] = {
 					["name"] = "Vënum-KirinTor",
@@ -7403,16 +7447,16 @@ RCLootCouncilDB = {
 					["realm"] = "KirinTor",
 				},
 				["Player-3682-0B038C9A"] = {
-					["ilvl"] = 419.5,
+					["ilvl"] = 426.1875,
 					["guid"] = "Player-3682-0B038C9A",
 					["class"] = "MAGE",
 					["role"] = "DAMAGER",
-					["cache_time"] = 1680813585,
-					["realm"] = "Ragnaros",
+					["cache_time"] = 1714543847,
+					["rank"] = "Unguilded",
 					["name"] = "Qpcheese-Ragnaros",
 					["specID"] = 62,
 					["enchantingLvl"] = 0,
-					["rank"] = "Recruiter",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1305-07CC402D"] = {
 					["name"] = "Lõst-Kazzak",
@@ -7665,11 +7709,11 @@ RCLootCouncilDB = {
 					["class"] = "MAGE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677879103,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 					["name"] = "Dumbassmage-Ragnaros",
 					["specID"] = 64,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 				},
 				["Player-1084-08DF19DE"] = {
 					["name"] = "Spoenie-TarrenMill",
@@ -7789,11 +7833,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "HEALER",
 					["cache_time"] = 1680813583,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Bathboi-Ragnaros",
 					["specID"] = 105,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 				},
 				["Player-3713-0AD7C96A"] = {
 					["name"] = "Kaská-BurningLegion",
@@ -7850,11 +7894,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689620241,
-					["rank"] = "Officer Alt",
+					["realm"] = "Ragnaros",
 					["name"] = "Assetp-Ragnaros",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Officer Alt",
 				},
 				["Player-1302-0C07A3E0"] = {
 					["name"] = "Vpé-Archimonde",
@@ -7869,11 +7913,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679747022,
-					["realm"] = "Silvermoon",
+					["rank"] = "Unguilded",
 					["name"] = "Lnsx-Silvermoon",
 					["specID"] = 70,
 					["enchantingLvl"] = 0,
-					["rank"] = "Unguilded",
+					["realm"] = "Silvermoon",
 				},
 				["Player-1305-07C44D45"] = {
 					["name"] = "Valkyrion-Kazzak",
@@ -7951,11 +7995,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685046636,
-					["rank"] = "Unguilded",
+					["realm"] = "Kazzak",
 					["name"] = "Vyapriest-Kazzak",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["realm"] = "Kazzak",
+					["rank"] = "Unguilded",
 				},
 				["Player-1403-0A600529"] = {
 					["name"] = "Jessed-Draenor",
@@ -8026,11 +8070,11 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686170267,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Whískyy-Ragnaros",
 					["specID"] = 577,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 				},
 				["Player-1305-0BBECEE3"] = {
 					["name"] = "Bombomdie-Kazzak",
@@ -8045,11 +8089,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677518213,
-					["realm"] = "ShatteredHand",
+					["rank"] = "Officer",
 					["name"] = "Stèrnit-ShatteredHand",
 					["specID"] = 72,
 					["enchantingLvl"] = 0,
-					["rank"] = "Officer",
+					["realm"] = "ShatteredHand",
 				},
 				["Player-1084-09C925F0"] = {
 					["name"] = "Zazaz-TarrenMill",
@@ -8202,10 +8246,10 @@ RCLootCouncilDB = {
 					["role"] = "HEALER",
 					["name"] = "Straich-TwistingNether",
 					["guid"] = "Player-3674-091A8325",
-					["rank"] = "Raider Alt",
+					["realm"] = "TwistingNether",
 					["class"] = "PALADIN",
 					["cache_time"] = 1688950979,
-					["realm"] = "TwistingNether",
+					["rank"] = "Raider Alt",
 				},
 				["Player-3674-0B11F07D"] = {
 					["name"] = "Rockarsp-TwistingNether",
@@ -8220,11 +8264,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "TANK",
 					["cache_time"] = 1685482769,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 					["name"] = "Moglight-Ragnaros",
 					["specID"] = 66,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 				},
 				["Player-3391-08225B1C"] = {
 					["name"] = "Ebonmaster-Silvermoon",
@@ -8323,11 +8367,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1678485980,
-					["rank"] = "Social",
+					["realm"] = "Ragnaros",
 					["name"] = "Fartbending-Ragnaros",
 					["specID"] = 255,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Social",
 				},
 				["Player-3391-0C918479"] = {
 					["name"] = "Haribalsac-Silvermoon",
@@ -8393,11 +8437,16 @@ RCLootCouncilDB = {
 					["realm"] = "TwistingNether",
 				},
 				["Player-1329-09D764A3"] = {
-					["name"] = "Qpe-Ravencrest",
+					["ilvl"] = 294.9375,
 					["guid"] = "Player-1329-09D764A3",
 					["class"] = "MAGE",
-					["cache_time"] = 1675996532,
+					["role"] = "DAMAGER",
+					["cache_time"] = 1714806242,
 					["realm"] = "Ravencrest",
+					["name"] = "Qpe-Ravencrest",
+					["specID"] = 62,
+					["enchantingLvl"] = 0,
+					["rank"] = "Unguilded",
 				},
 				["Player-1302-0C16D127"] = {
 					["name"] = "Pouleetpurée-Archimonde",
@@ -8501,19 +8550,19 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Hascharov-Stormscale",
 					["guid"] = "Player-2073-09F65475",
-					["realm"] = "Stormscale",
+					["rank"] = "Alts",
 					["class"] = "WARRIOR",
 					["cache_time"] = 1676423903,
-					["rank"] = "Alts",
+					["realm"] = "Stormscale",
 				},
 				["Player-1615-0B00A4FB"] = {
 					["role"] = "DAMAGER",
 					["name"] = "эллви-Ревущийфьорд",
 					["guid"] = "Player-1615-0B00A4FB",
-					["rank"] = "Новичок",
+					["realm"] = "Ревущийфьорд",
 					["class"] = "SHAMAN",
 					["cache_time"] = 1676336936,
-					["realm"] = "Ревущийфьорд",
+					["rank"] = "Новичок",
 				},
 				["Player-1396-0AE0B6E3"] = {
 					["name"] = "ægá-Quel'Thalas",
@@ -8584,11 +8633,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "TANK",
 					["cache_time"] = 1676928123,
-					["rank"] = "Guild Master",
+					["realm"] = "Ragnaros",
 					["name"] = "Otpclap-Ragnaros",
 					["specID"] = 73,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Guild Master",
 				},
 				["Player-580-0A2A8C7E"] = {
 					["name"] = "Athemes-Blackmoore",
@@ -8685,14 +8734,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 442.9375,
 					["guid"] = "Player-3682-0A9166E0",
 					["class"] = "WARLOCK",
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688407200,
 					["name"] = "Dangerss-Ragnaros",
-					["specID"] = 267,
 					["enchanter"] = true,
+					["specID"] = 267,
 					["enchantingLvl"] = 100,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-099BFDAE"] = {
 					["name"] = "Milkysmite-TwistingNether",
@@ -8714,11 +8763,11 @@ RCLootCouncilDB = {
 					["class"] = "ROGUE",
 					["role"] = "DAMAGER",
 					["name"] = "Oreowastaken-TarrenMill",
-					["rank"] = " Officer",
+					["realm"] = "TarrenMill",
 					["cache_time"] = 1684233824,
 					["specID"] = 261,
 					["enchantingLvl"] = 0,
-					["realm"] = "TarrenMill",
+					["rank"] = " Officer",
 				},
 				["Player-1305-0C51B8A0"] = {
 					["name"] = "Gamemethods-Kazzak",
@@ -8796,11 +8845,11 @@ RCLootCouncilDB = {
 					["class"] = "EVOKER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1683751096,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 					["name"] = "Visharys-Ragnaros",
 					["specID"] = 1467,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 				},
 				["Player-1305-0C941BD2"] = {
 					["name"] = "Elixí-Kazzak",
@@ -8820,10 +8869,10 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Xapharian-Hyjal",
 					["guid"] = "Player-1390-06D41EA3",
-					["realm"] = "Hyjal",
+					["rank"] = "Membre",
 					["class"] = "DEATHKNIGHT",
 					["cache_time"] = 1676765465,
-					["rank"] = "Membre",
+					["realm"] = "Hyjal",
 				},
 				["Player-1329-09FA003E"] = {
 					["name"] = "Filiduttdk-Ravencrest",
@@ -9118,11 +9167,11 @@ RCLootCouncilDB = {
 					["class"] = "WARLOCK",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686170543,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Extincter-Ragnaros",
 					["specID"] = 266,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1602-0B32BC39"] = {
 					["name"] = "урлеада-Гордунни",
@@ -9200,11 +9249,11 @@ RCLootCouncilDB = {
 					["class"] = "ROGUE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680813097,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["name"] = "Gondar-Ragnaros",
 					["specID"] = 261,
 					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1084-0A53E773"] = {
 					["name"] = "Zeralightng-TarrenMill",
@@ -9280,14 +9329,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 439.9375,
 					["guid"] = "Player-1335-06E39A2C",
 					["class"] = "SHAMAN",
-					["rank"] = "Officier",
+					["realm"] = "Ysondre",
 					["role"] = "HEALER",
 					["cache_time"] = 1685514335,
 					["name"] = "Kakawet-Ysondre",
-					["enchanter"] = true,
 					["specID"] = 264,
+					["enchanter"] = true,
 					["enchantingLvl"] = 28,
-					["realm"] = "Ysondre",
+					["rank"] = "Officier",
 				},
 				["Player-1615-0B0B1A62"] = {
 					["name"] = "деорим-Ревущийфьорд",
@@ -9330,11 +9379,11 @@ RCLootCouncilDB = {
 					["class"] = "ROGUE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1678320307,
-					["rank"] = "Gildenlos",
+					["realm"] = "Blackhand",
 					["name"] = "Pêwqt-Blackhand",
 					["specID"] = 260,
 					["enchantingLvl"] = 0,
-					["realm"] = "Blackhand",
+					["rank"] = "Gildenlos",
 				},
 				["Player-1602-05B24C2E"] = {
 					["name"] = "лиорити-Гордунни",
@@ -9426,11 +9475,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "HEALER",
 					["cache_time"] = 1684877955,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider - Doki",
 					["name"] = "Araxxor-Ragnaros",
 					["specID"] = 257,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider - Doki",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3682-07E81ED9"] = {
 					["name"] = "Magicginger-Ragnaros",
@@ -9443,10 +9492,10 @@ RCLootCouncilDB = {
 					["role"] = "TANK",
 					["name"] = "Snorryy-Eredar",
 					["guid"] = "Player-3692-04606A58",
-					["realm"] = "Eredar",
+					["rank"] = "GM-Twink",
 					["class"] = "PALADIN",
 					["cache_time"] = 1676372637,
-					["rank"] = "GM-Twink",
+					["realm"] = "Eredar",
 				},
 				["Player-580-0A73B78D"] = {
 					["name"] = "Delorý-Blackmoore",
@@ -9473,14 +9522,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 433.25,
 					["guid"] = "Player-3682-0B038A40",
 					["class"] = "PRIEST",
-					["rank"] = "Guild Master",
+					["realm"] = "Ragnaros",
 					["role"] = "HEALER",
 					["cache_time"] = 1686170394,
 					["name"] = "Filsket-Ragnaros",
-					["enchanter"] = true,
 					["specID"] = 257,
+					["enchanter"] = true,
 					["enchantingLvl"] = 97,
-					["realm"] = "Ragnaros",
+					["rank"] = "Guild Master",
 				},
 				["Player-1408-0A5DEDFD"] = {
 					["name"] = "Wargrem-DunMorogh",
@@ -9572,11 +9621,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680815900,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 					["name"] = "Jerwin-Ragnaros",
 					["specID"] = 70,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 				},
 				["Player-3682-0B21E85C"] = {
 					["ilvl"] = 445.875,
@@ -9584,11 +9633,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Nèlliel-Ragnaros",
 					["specID"] = 253,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3692-09FDFCB0"] = {
 					["name"] = "Sálly-Eredar",
@@ -9657,10 +9706,10 @@ RCLootCouncilDB = {
 					["role"] = "HEALER",
 					["name"] = "Lousindra-Draenor",
 					["guid"] = "Player-1403-0A68FC80",
-					["rank"] = "Core Raider",
+					["realm"] = "Draenor",
 					["class"] = "PRIEST",
 					["cache_time"] = 1684223711,
-					["realm"] = "Draenor",
+					["rank"] = "Core Raider",
 				},
 				["Player-3674-0B1DA514"] = {
 					["name"] = "Iondon-TwistingNether",
@@ -9682,11 +9731,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1684182960,
-					["rank"] = "Unguilded",
+					["realm"] = "LesSentinelles",
 					["name"] = "Chibibowa-LesSentinelles",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["realm"] = "LesSentinelles",
+					["rank"] = "Unguilded",
 				},
 				["Player-1403-0A1D1ED7"] = {
 					["name"] = "Waifulolly-Draenor",
@@ -9743,11 +9792,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688418037,
-					["realm"] = "Ragnaros",
+					["rank"] = "Lord of Things",
 					["name"] = "Pad-Ragnaros",
 					["specID"] = 70,
 					["enchantingLvl"] = 0,
-					["rank"] = "Lord of Things",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1390-0BA157D6"] = {
 					["name"] = "Bütäne-Hyjal",
@@ -9795,14 +9844,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 440.25,
 					["guid"] = "Player-3682-0B1E83A7",
 					["class"] = "WARRIOR",
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686170267,
 					["name"] = "Ryleei-Ragnaros",
-					["specID"] = 72,
 					["enchanter"] = true,
+					["specID"] = 72,
 					["enchantingLvl"] = 100,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1305-0C61B8D3"] = {
 					["name"] = "Zigorat-Kazzak",
@@ -9850,14 +9899,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 443.75,
 					["guid"] = "Player-3682-0B22F42A",
 					["class"] = "DRUID",
-					["realm"] = "Ragnaros",
+					["rank"] = "Core",
 					["role"] = "HEALER",
 					["cache_time"] = 1690329832,
 					["name"] = "Rejuvlife-Ragnaros",
-					["specID"] = 105,
 					["enchanter"] = true,
+					["specID"] = 105,
 					["enchantingLvl"] = 100,
-					["rank"] = "Core",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3391-0C84EFA8"] = {
 					["name"] = "Vixtor-Silvermoon",
@@ -10264,11 +10313,11 @@ RCLootCouncilDB = {
 					["class"] = "DEATHKNIGHT",
 					["role"] = "TANK",
 					["cache_time"] = 1680813097,
-					["realm"] = "Kazzak",
+					["rank"] = "Recruit",
 					["name"] = "Mogdead-Kazzak",
 					["specID"] = 250,
 					["enchantingLvl"] = 0,
-					["rank"] = "Recruit",
+					["realm"] = "Kazzak",
 				},
 				["Player-3674-09D4040C"] = {
 					["name"] = "Maleficentt-TwistingNether",
@@ -10290,11 +10339,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686170427,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 					["name"] = "Chibibowa-Ragnaros",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1305-0B86916D"] = {
 					["name"] = "Bangsummums-Kazzak",
@@ -10415,6 +10464,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676370489,
 					["realm"] = "Dalaran",
 				},
+				["Player-1597-0F7C7072"] = {
+					["name"] = "Qute-Sylvanas",
+					["guid"] = "Player-1597-0F7C7072",
+					["class"] = "HUNTER",
+					["cache_time"] = 1714806242,
+					["realm"] = "Sylvanas",
+				},
 				["Player-3692-046AB18E"] = {
 					["name"] = "Duktig-Eredar",
 					["guid"] = "Player-3692-046AB18E",
@@ -10450,12 +10506,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676079047,
 					["realm"] = "Корольлич",
 				},
+				["Player-1305-087EC699"] = {
+					["name"] = "Baldvín-Kazzak",
+					["guid"] = "Player-1305-087EC699",
+					["class"] = "HUNTER",
+					["cache_time"] = 1713977591,
+					["realm"] = "Kazzak",
+				},
 				["Player-1302-09B6BE5E"] = {
 					["name"] = "ßigßañg-Archimonde",
 					["guid"] = "Player-1302-09B6BE5E",
 					["class"] = "WARRIOR",
 					["cache_time"] = 1686702897,
 					["realm"] = "Archimonde",
+				},
+				["Player-1403-0AA827AA"] = {
+					["name"] = "Pewpewpoes-Draenor",
+					["guid"] = "Player-1403-0AA827AA",
+					["class"] = "HUNTER",
+					["cache_time"] = 1713977591,
+					["realm"] = "Draenor",
 				},
 				["Player-3691-06DD86F3"] = {
 					["name"] = "Brüll-Blackhand",
@@ -10464,12 +10534,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676957174,
 					["realm"] = "Blackhand",
 				},
+				["Player-3674-0B219B18"] = {
+					["name"] = "Däkuookami-TwistingNether",
+					["guid"] = "Player-3674-0B219B18",
+					["class"] = "EVOKER",
+					["cache_time"] = 1690915840,
+					["realm"] = "TwistingNether",
+				},
+				["Player-1084-0A852B39"] = {
+					["name"] = "Vxevo-TarrenMill",
+					["guid"] = "Player-1084-0A852B39",
+					["class"] = "EVOKER",
+					["cache_time"] = 1690510985,
+					["realm"] = "TarrenMill",
+				},
+				["Player-1305-0C3AA360"] = {
+					["name"] = "Dictatör-Kazzak",
+					["guid"] = "Player-1305-0C3AA360",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690229185,
+					["realm"] = "Kazzak",
+				},
 				["Player-580-0A74FC93"] = {
 					["name"] = "Tesayë-Blackmoore",
 					["guid"] = "Player-580-0A74FC93",
 					["class"] = "HUNTER",
 					["cache_time"] = 1687791302,
 					["realm"] = "Blackmoore",
+				},
+				["Player-2073-09DE394F"] = {
+					["name"] = "Kellton-Stormscale",
+					["guid"] = "Player-2073-09DE394F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1690210423,
+					["realm"] = "Stormscale",
 				},
 				["Player-1597-0F110A5E"] = {
 					["name"] = "Leman-Sylvanas",
@@ -10478,12 +10576,54 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684598292,
 					["realm"] = "Sylvanas",
 				},
+				["Player-1403-0A76B39F"] = {
+					["name"] = "Nímona-Draenor",
+					["guid"] = "Player-1403-0A76B39F",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690214800,
+					["realm"] = "Draenor",
+				},
+				["Player-1597-0F5321CD"] = {
+					["name"] = "Cubish-Sylvanas",
+					["guid"] = "Player-1597-0F5321CD",
+					["class"] = "EVOKER",
+					["cache_time"] = 1686687418,
+					["realm"] = "Sylvanas",
+				},
+				["Player-3691-09B76285"] = {
+					["name"] = "Liltrashxo-Blackhand",
+					["guid"] = "Player-3691-09B76285",
+					["class"] = "HUNTER",
+					["cache_time"] = 1690915840,
+					["realm"] = "Blackhand",
+				},
 				["Player-3713-072D0370"] = {
 					["name"] = "Cataon-BurningLegion",
 					["guid"] = "Player-3713-072D0370",
 					["class"] = "SHAMAN",
 					["cache_time"] = 1676792336,
 					["realm"] = "BurningLegion",
+				},
+				["Player-1084-097B0F6E"] = {
+					["name"] = "Balamonk-TarrenMill",
+					["guid"] = "Player-1084-097B0F6E",
+					["class"] = "MONK",
+					["cache_time"] = 1690750821,
+					["realm"] = "TarrenMill",
+				},
+				["Player-3682-0B27F34E"] = {
+					["name"] = "Dragondog-Ragnaros",
+					["guid"] = "Player-3682-0B27F34E",
+					["class"] = "EVOKER",
+					["cache_time"] = 1690895922,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1379-052B8E2E"] = {
+					["name"] = "Emanie-Uldum",
+					["guid"] = "Player-1379-052B8E2E",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690410198,
+					["realm"] = "Uldum",
 				},
 				["Player-1602-05A91B91"] = {
 					["name"] = "докторищще-Гордунни",
@@ -10492,12 +10632,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686062737,
 					["realm"] = "Гордунни",
 				},
-				["Player-612-0A6F1ACD"] = {
-					["name"] = "Trapattoni-Destromath",
-					["guid"] = "Player-612-0A6F1ACD",
-					["class"] = "EVOKER",
-					["cache_time"] = 1680292466,
-					["realm"] = "Destromath",
+				["Player-1403-080C65AF"] = {
+					["name"] = "Mushasha-Draenor",
+					["guid"] = "Player-1403-080C65AF",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690750821,
+					["realm"] = "Draenor",
 				},
 				["Player-3674-081BF176"] = {
 					["name"] = "Tayylorswift-TwistingNether",
@@ -10506,19 +10646,75 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690915840,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3674-0B219B18"] = {
-					["name"] = "Däkuookami-TwistingNether",
-					["guid"] = "Player-3674-0B219B18",
-					["class"] = "EVOKER",
-					["cache_time"] = 1690915840,
+				["Player-1923-0A39E2B2"] = {
+					["name"] = "магерыч-Ясеневыйлес",
+					["guid"] = "Player-1923-0A39E2B2",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676385549,
+					["realm"] = "Ясеневыйлес",
+				},
+				["Player-1305-0C23D6E8"] = {
+					["name"] = "Underlurd-Kazzak",
+					["guid"] = "Player-1305-0C23D6E8",
+					["class"] = "PALADIN",
+					["cache_time"] = 1688878042,
+					["realm"] = "Kazzak",
+				},
+				["Player-3682-097055B2"] = {
+					["name"] = "Arîana-Ragnaros",
+					["guid"] = "Player-3682-097055B2",
+					["class"] = "MAGE",
+					["cache_time"] = 1690410198,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1084-08B3BE10"] = {
+					["name"] = "Keikóp-TarrenMill",
+					["guid"] = "Player-1084-08B3BE10",
+					["class"] = "PRIEST",
+					["cache_time"] = 1685685471,
+					["realm"] = "TarrenMill",
+				},
+				["Player-3674-093812D6"] = {
+					["name"] = "Eekadh-TwistingNether",
+					["guid"] = "Player-3674-093812D6",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1690513584,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3691-09B76285"] = {
-					["name"] = "Liltrashxo-Blackhand",
-					["guid"] = "Player-3691-09B76285",
-					["class"] = "HUNTER",
-					["cache_time"] = 1690915840,
-					["realm"] = "Blackhand",
+				["Player-612-0A6F1ACD"] = {
+					["name"] = "Trapattoni-Destromath",
+					["guid"] = "Player-612-0A6F1ACD",
+					["class"] = "EVOKER",
+					["cache_time"] = 1680292466,
+					["realm"] = "Destromath",
+				},
+				["Player-3690-0A630B34"] = {
+					["name"] = "Tobiase-KhazModan",
+					["guid"] = "Player-3690-0A630B34",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676988319,
+					["realm"] = "KhazModan",
+				},
+				["Player-3691-0765B008"] = {
+					["name"] = "Makie-Echsenkessel",
+					["guid"] = "Player-3691-0765B008",
+					["class"] = "ROGUE",
+					["cache_time"] = 1686754263,
+					["realm"] = "Echsenkessel",
+				},
+				["Player-581-09D45C59"] = {
+					["name"] = "Nellomotto-Blackrock",
+					["guid"] = "Player-581-09D45C59",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685340864,
+					["realm"] = "Blackrock",
+				},
+				["Player-1305-0C6244FE"] = {
+					["name"] = "Mulletgodxqt-Kazzak",
+					["guid"] = "Player-1305-0C6244FE",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689948802,
+					["realm"] = "Kazzak",
 				},
 				["Player-581-083708C1"] = {
 					["name"] = "Itankthat-Blackrock",
@@ -10534,68 +10730,21 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689253178,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3682-0B178079"] = {
-					["name"] = "Fredknight-Ragnaros",
-					["guid"] = "Player-3682-0B178079",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1675886183,
-					["realm"] = "Ragnaros",
-				},
-				["Player-3682-0B27F34E"] = {
-					["name"] = "Dragondog-Ragnaros",
-					["guid"] = "Player-3682-0B27F34E",
+				["Player-3391-0C920B01"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Augmentxd-Silvermoon",
+					["guid"] = "Player-3391-0C920B01",
+					["rank"] = "Unguilded",
 					["class"] = "EVOKER",
-					["cache_time"] = 1690895922,
-					["realm"] = "Ragnaros",
+					["cache_time"] = 1690157734,
+					["realm"] = "Silvermoon",
 				},
-				["Player-1315-0C45D562"] = {
-					["name"] = "Harûu-Elune",
-					["guid"] = "Player-1315-0C45D562",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690894644,
-					["realm"] = "Elune",
-				},
-				["Player-1084-070E90E4"] = {
-					["name"] = "Anódia-TarrenMill",
-					["guid"] = "Player-1084-070E90E4",
-					["class"] = "DRUID",
-					["cache_time"] = 1676501074,
-					["realm"] = "TarrenMill",
-				},
-				["Player-1403-080C65AF"] = {
-					["name"] = "Mushasha-Draenor",
-					["guid"] = "Player-1403-080C65AF",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690750821,
+				["Player-1403-0A35DC5A"] = {
+					["name"] = "Ethaelwolf-Draenor",
+					["guid"] = "Player-1403-0A35DC5A",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689768575,
 					["realm"] = "Draenor",
-				},
-				["Player-1335-09E71105"] = {
-					["name"] = "Staroke-Ysondre",
-					["guid"] = "Player-1335-09E71105",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687248521,
-					["realm"] = "Ysondre",
-				},
-				["Player-1923-0EE99921"] = {
-					["name"] = "таунед-Ясеневыйлес",
-					["guid"] = "Player-1923-0EE99921",
-					["class"] = "DRUID",
-					["cache_time"] = 1676973948,
-					["realm"] = "Ясеневыйлес",
-				},
-				["Player-1084-097B0F6E"] = {
-					["name"] = "Balamonk-TarrenMill",
-					["guid"] = "Player-1084-097B0F6E",
-					["class"] = "MONK",
-					["cache_time"] = 1690750821,
-					["realm"] = "TarrenMill",
-				},
-				["Player-1335-02DBA557"] = {
-					["name"] = "Guluum-Ysondre",
-					["guid"] = "Player-1335-02DBA557",
-					["class"] = "MAGE",
-					["cache_time"] = 1676803606,
-					["realm"] = "Ysondre",
 				},
 				["Player-1329-04EC0F70"] = {
 					["name"] = "Ragnár-Ravencrest",
@@ -10604,6 +10753,60 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677251886,
 					["realm"] = "Ravencrest",
 				},
+				["Player-1084-070E90E4"] = {
+					["name"] = "Anódia-TarrenMill",
+					["guid"] = "Player-1084-070E90E4",
+					["class"] = "DRUID",
+					["cache_time"] = 1676501074,
+					["realm"] = "TarrenMill",
+				},
+				["Player-3391-0C495EEF"] = {
+					["name"] = "Kraéz-Silvermoon",
+					["guid"] = "Player-3391-0C495EEF",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1690587500,
+					["realm"] = "Silvermoon",
+				},
+				["Player-1335-09E71105"] = {
+					["name"] = "Staroke-Ysondre",
+					["guid"] = "Player-1335-09E71105",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687248521,
+					["realm"] = "Ysondre",
+				},
+				["Player-1305-0C23CE59"] = {
+					["name"] = "Tanksslave-Kazzak",
+					["guid"] = "Player-1305-0C23CE59",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690510985,
+					["realm"] = "Kazzak",
+				},
+				["Player-1379-0AE1A09C"] = {
+					["ilvl"] = 442.0625,
+					["guid"] = "Player-1379-0AE1A09C",
+					["class"] = "EVOKER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1687258024,
+					["rank"] = "Trial",
+					["name"] = "Radâe-Sanguino",
+					["specID"] = 1467,
+					["enchantingLvl"] = 0,
+					["realm"] = "Sanguino",
+				},
+				["Player-1335-02DBA557"] = {
+					["name"] = "Guluum-Ysondre",
+					["guid"] = "Player-1335-02DBA557",
+					["class"] = "MAGE",
+					["cache_time"] = 1676803606,
+					["realm"] = "Ysondre",
+				},
+				["Player-2073-09E8B2B3"] = {
+					["name"] = "Vherax-Stormscale",
+					["guid"] = "Player-2073-09E8B2B3",
+					["class"] = "EVOKER",
+					["cache_time"] = 1675737337,
+					["realm"] = "Stormscale",
+				},
 				["Player-1302-06684DA3"] = {
 					["name"] = "Leemon-Archimonde",
 					["guid"] = "Player-1302-06684DA3",
@@ -10611,26 +10814,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677106953,
 					["realm"] = "Archimonde",
 				},
-				["Player-1379-052B8E2E"] = {
-					["name"] = "Emanie-Uldum",
-					["guid"] = "Player-1379-052B8E2E",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690410198,
-					["realm"] = "Uldum",
+				["Player-3691-09FD2ACF"] = {
+					["name"] = "Speccs-Blackhand",
+					["guid"] = "Player-3691-09FD2ACF",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689699139,
+					["realm"] = "Blackhand",
 				},
-				["Player-1302-0C316EF0"] = {
-					["name"] = "Yachty-Archimonde",
-					["guid"] = "Player-1302-0C316EF0",
-					["class"] = "MONK",
-					["cache_time"] = 1690410513,
-					["realm"] = "Archimonde",
-				},
-				["Player-3674-093812D6"] = {
-					["name"] = "Eekadh-TwistingNether",
-					["guid"] = "Player-3674-093812D6",
+				["Player-3682-0B27A07F"] = {
+					["ilvl"] = 437.125,
+					["guid"] = "Player-3682-0B27A07F",
 					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1690513584,
-					["realm"] = "TwistingNether",
+					["role"] = "TANK",
+					["cache_time"] = 1687304879,
+					["rank"] = "Alt",
+					["name"] = "Hdç-Ragnaros",
+					["specID"] = 581,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
 				["Player-510-099C1B96"] = {
 					["name"] = "Flotov-Chantséternels",
@@ -10638,6 +10839,13 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["cache_time"] = 1688922052,
 					["realm"] = "Chantséternels",
+				},
+				["Player-1615-043E8FD7"] = {
+					["name"] = "дёргаюбибу-Ревущийфьорд",
+					["guid"] = "Player-1615-043E8FD7",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687949013,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-2073-09335868"] = {
 					["name"] = "Fierca-Stormscale",
@@ -10671,40 +10879,35 @@ RCLootCouncilDB = {
 					["ilvl"] = 444.5,
 					["guid"] = "Player-3682-0B238D73",
 					["class"] = "DEATHKNIGHT",
-					["realm"] = "Ragnaros",
+					["rank"] = "Officer Alt",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
 					["name"] = "Asset-Ragnaros",
-					["specID"] = 252,
 					["enchanter"] = true,
-					["enchantingLvl"] = 99,
-					["rank"] = "Officer Alt",
-				},
-				["Player-3674-088691BD"] = {
-					["name"] = "Graveweed-TwistingNether",
-					["guid"] = "Player-3674-088691BD",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687956237,
-					["realm"] = "TwistingNether",
-				},
-				["Player-3682-0AEC5E2E"] = {
-					["ilvl"] = 438.375,
-					["guid"] = "Player-3682-0AEC5E2E",
-					["class"] = "DEATHKNIGHT",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1685651466,
-					["realm"] = "Ragnaros",
-					["name"] = "Slowone-Ragnaros",
 					["specID"] = 252,
-					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+					["enchantingLvl"] = 99,
+					["realm"] = "Ragnaros",
 				},
-				["Player-3691-0765B008"] = {
-					["name"] = "Makie-Echsenkessel",
-					["guid"] = "Player-3691-0765B008",
-					["class"] = "ROGUE",
-					["cache_time"] = 1686754263,
-					["realm"] = "Echsenkessel",
+				["Player-1403-0A5A1CF8"] = {
+					["name"] = "Trackpad-Draenor",
+					["guid"] = "Player-1403-0A5A1CF8",
+					["class"] = "EVOKER",
+					["cache_time"] = 1677518150,
+					["realm"] = "Draenor",
+				},
+				["Player-1925-0F06F9FE"] = {
+					["name"] = "гелтрон-ВечнаяПесня",
+					["guid"] = "Player-1925-0F06F9FE",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1688930496,
+					["realm"] = "ВечнаяПесня",
+				},
+				["Player-3682-0B1015F7"] = {
+					["name"] = "Berzerker-Ragnaros",
+					["guid"] = "Player-3682-0B1015F7",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686933987,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3391-0C8CDFDD"] = {
 					["ilvl"] = 437.375,
@@ -10712,18 +10915,18 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685797754,
-					["realm"] = "Silvermoon",
+					["rank"] = "Raider",
 					["name"] = "Neviem-Silvermoon",
 					["specID"] = 255,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Silvermoon",
 				},
-				["Player-1379-0A7D517F"] = {
-					["name"] = "Väleska-Sanguino",
-					["guid"] = "Player-1379-0A7D517F",
-					["class"] = "PALADIN",
-					["cache_time"] = 1690509687,
-					["realm"] = "Sanguino",
+				["Player-1104-0A17F37C"] = {
+					["name"] = "Avalenon-Gul'dan",
+					["guid"] = "Player-1104-0A17F37C",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690042087,
+					["realm"] = "Gul'dan",
 				},
 				["Player-580-0A639882"] = {
 					["name"] = "Waynez-Blackmoore",
@@ -10732,19 +10935,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677518150,
 					["realm"] = "Blackmoore",
 				},
-				["Player-1121-0A6A8673"] = {
-					["name"] = "Airesa-DerAbyssischeRat",
-					["guid"] = "Player-1121-0A6A8673",
-					["class"] = "MONK",
-					["cache_time"] = 1676950723,
-					["realm"] = "DerAbyssischeRat",
+				["Player-1329-097837DC"] = {
+					["name"] = "Jòcke-Ravencrest",
+					["guid"] = "Player-1329-097837DC",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686121310,
+					["realm"] = "Ravencrest",
 				},
-				["Player-3691-09FD2ACF"] = {
-					["name"] = "Speccs-Blackhand",
-					["guid"] = "Player-3691-09FD2ACF",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689699139,
-					["realm"] = "Blackhand",
+				["Player-1127-093373F8"] = {
+					["name"] = "Miniratie-KirinTor",
+					["guid"] = "Player-1127-093373F8",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1690056758,
+					["realm"] = "KirinTor",
 				},
 				["Player-3674-0B131680"] = {
 					["name"] = "Enotus-TwistingNether",
@@ -10767,26 +10970,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676768222,
 					["realm"] = "Blackrock",
 				},
-				["Player-1305-0C23CE59"] = {
-					["name"] = "Tanksslave-Kazzak",
-					["guid"] = "Player-1305-0C23CE59",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690510985,
-					["realm"] = "Kazzak",
-				},
-				["Player-1416-0A44CFC0"] = {
-					["name"] = "Wanda-Vek'nilash",
-					["guid"] = "Player-1416-0A44CFC0",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1689800841,
-					["realm"] = "Vek'nilash",
-				},
-				["Player-1305-0C6244FE"] = {
-					["name"] = "Mulletgodxqt-Kazzak",
-					["guid"] = "Player-1305-0C6244FE",
-					["class"] = "EVOKER",
+				["Player-1602-0F52D1AD"] = {
+					["name"] = "рейнатян-Гордунни",
+					["guid"] = "Player-1602-0F52D1AD",
+					["class"] = "SHAMAN",
 					["cache_time"] = 1689948802,
-					["realm"] = "Kazzak",
+					["realm"] = "Гордунни",
+				},
+				["Player-1401-0A4D70ED"] = {
+					["name"] = "Theralia-Nozdormu",
+					["guid"] = "Player-1401-0A4D70ED",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689339555,
+					["realm"] = "Nozdormu",
+				},
+				["Player-1325-03C6080A"] = {
+					["name"] = "Nostramu-Aggramar",
+					["guid"] = "Player-1325-03C6080A",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689800841,
+					["realm"] = "Aggramar",
 				},
 				["Player-3391-0C869F13"] = {
 					["name"] = "Tbhdenes-Silvermoon",
@@ -10795,24 +10998,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684883011,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1379-0AE1A09C"] = {
-					["ilvl"] = 442.0625,
-					["guid"] = "Player-1379-0AE1A09C",
-					["class"] = "EVOKER",
+				["Player-3682-07B1496C"] = {
+					["ilvl"] = 437.875,
+					["guid"] = "Player-3682-07B1496C",
+					["class"] = "DEMONHUNTER",
 					["role"] = "DAMAGER",
-					["cache_time"] = 1687258024,
-					["realm"] = "Sanguino",
-					["name"] = "Radâe-Sanguino",
-					["specID"] = 1467,
+					["cache_time"] = 1690135547,
+					["rank"] = "Alt",
+					["name"] = "Goshdarn-Ragnaros",
+					["specID"] = 577,
 					["enchantingLvl"] = 0,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 				},
-				["Player-2073-09E8B2B3"] = {
-					["name"] = "Vherax-Stormscale",
-					["guid"] = "Player-2073-09E8B2B3",
-					["class"] = "EVOKER",
-					["cache_time"] = 1675737337,
-					["realm"] = "Stormscale",
+				["Player-580-0A5F5CF1"] = {
+					["name"] = "Gaeng-Blackmoore",
+					["guid"] = "Player-580-0A5F5CF1",
+					["class"] = "MONK",
+					["cache_time"] = 1677878374,
+					["realm"] = "Blackmoore",
 				},
 				["Player-3691-09C80BFE"] = {
 					["name"] = "Lemasi-Blackhand",
@@ -10821,19 +11024,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685398638,
 					["realm"] = "Blackhand",
 				},
-				["Player-2073-0A096743"] = {
-					["name"] = "Ashaugmen-Stormscale",
-					["guid"] = "Player-2073-0A096743",
-					["class"] = "EVOKER",
-					["cache_time"] = 1690410198,
-					["realm"] = "Stormscale",
+				["Player-1379-0AC4FA8F"] = {
+					["name"] = "Yusikaria-Sanguino",
+					["guid"] = "Player-1379-0AC4FA8F",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1677665404,
+					["realm"] = "Sanguino",
 				},
-				["Player-3674-0AE61C3C"] = {
-					["name"] = "Bigdondon-TwistingNether",
-					["guid"] = "Player-3674-0AE61C3C",
+				["Player-1305-0C01C028"] = {
+					["name"] = "Dxbdruid-Kazzak",
+					["guid"] = "Player-1305-0C01C028",
 					["class"] = "DRUID",
-					["cache_time"] = 1686754474,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1677395628,
+					["realm"] = "Kazzak",
 				},
 				["Player-3691-09F04439"] = {
 					["ilvl"] = 416.5,
@@ -10841,11 +11044,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["name"] = "Schëinhëilig-Blackhand",
-					["realm"] = "Blackhand",
+					["rank"] = "Raidmöwe",
 					["cache_time"] = 1676381729,
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raidmöwe",
+					["realm"] = "Blackhand",
 				},
 				["Player-1335-06EBC8CF"] = {
 					["name"] = "Azriä-Ysondre",
@@ -10861,17 +11064,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678052884,
 					["realm"] = "Antonidas",
 				},
-				["Player-3674-0B0CABEA"] = {
-					["ilvl"] = 442.875,
-					["guid"] = "Player-3674-0B0CABEA",
-					["class"] = "DRUID",
-					["role"] = "HEALER",
-					["cache_time"] = 1686690665,
-					["rank"] = "Raider",
-					["name"] = "Juuyuu-TwistingNether",
-					["specID"] = 105,
-					["enchantingLvl"] = 0,
-					["realm"] = "TwistingNether",
+				["Player-1615-0B0AD519"] = {
+					["name"] = "табха-Ревущийфьорд",
+					["guid"] = "Player-1615-0B0AD519",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689951102,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1084-0A63C601"] = {
 					["name"] = "Bittergal-TarrenMill",
@@ -10880,12 +11078,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676186369,
 					["realm"] = "TarrenMill",
 				},
-				["Player-3656-04D6B055"] = {
-					["name"] = "Sushiman-Haomarush",
-					["guid"] = "Player-3656-04D6B055",
+				["Player-3702-0A637276"] = {
+					["name"] = "Cthulhas-ArgentDawn",
+					["guid"] = "Player-3702-0A637276",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1687157932,
-					["realm"] = "Haomarush",
+					["cache_time"] = 1690056758,
+					["realm"] = "ArgentDawn",
 				},
 				["Player-1379-0922EE7A"] = {
 					["name"] = "Zacu-Sanguino",
@@ -10901,19 +11099,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686035755,
 					["realm"] = "Ragnaros",
 				},
-				["Player-3674-0A8089CA"] = {
-					["name"] = "Dopex-TwistingNether",
-					["guid"] = "Player-3674-0A8089CA",
-					["class"] = "ROGUE",
-					["cache_time"] = 1690750821,
-					["realm"] = "TwistingNether",
+				["Player-1305-06FCD3A0"] = {
+					["name"] = "Vejeta-Kazzak",
+					["guid"] = "Player-1305-06FCD3A0",
+					["class"] = "PALADIN",
+					["cache_time"] = 1690493152,
+					["realm"] = "Kazzak",
 				},
-				["Player-1329-097837DC"] = {
-					["name"] = "Jòcke-Ravencrest",
-					["guid"] = "Player-1329-097837DC",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686121310,
-					["realm"] = "Ravencrest",
+				["Player-1403-054D07E6"] = {
+					["name"] = "Mëgei-Draenor",
+					["guid"] = "Player-1403-054D07E6",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680290994,
+					["realm"] = "Draenor",
 				},
 				["Player-1084-08728B66"] = {
 					["name"] = "Donthil-TarrenMill",
@@ -10922,12 +11120,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687791012,
 					["realm"] = "TarrenMill",
 				},
-				["Player-3682-0B00340B"] = {
-					["name"] = "Voodoojohn-Ragnaros",
-					["guid"] = "Player-3682-0B00340B",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1689286279,
-					["realm"] = "Ragnaros",
+				["Player-1403-099E8C25"] = {
+					["name"] = "Priëstitute-Draenor",
+					["guid"] = "Player-1403-099E8C25",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689804288,
+					["realm"] = "Draenor",
 				},
 				["Player-1084-0A847EAD"] = {
 					["name"] = "Sneezehuntz-TarrenMill",
@@ -10957,12 +11155,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680400229,
 					["realm"] = "Kazzak",
 				},
-				["Player-1403-0A5A1CF8"] = {
-					["name"] = "Trackpad-Draenor",
-					["guid"] = "Player-1403-0A5A1CF8",
-					["class"] = "EVOKER",
-					["cache_time"] = 1677518150,
-					["realm"] = "Draenor",
+				["Player-1615-0A623298"] = {
+					["name"] = "варикафура-Ревущийфьорд",
+					["guid"] = "Player-1615-0A623298",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1690329832,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3702-0A9ECE4F"] = {
 					["name"] = "Gættabæs-ArgentDawn",
@@ -10978,12 +11176,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683906553,
 					["realm"] = "Hyjal",
 				},
-				["Player-3674-07789A7A"] = {
-					["name"] = "Vinegarr-TwistingNether",
-					["guid"] = "Player-3674-07789A7A",
-					["class"] = "PRIEST",
-					["cache_time"] = 1685393886,
-					["realm"] = "TwistingNether",
+				["Player-1305-0C535649"] = {
+					["name"] = "Evokuga-Kazzak",
+					["guid"] = "Player-1305-0C535649",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689802006,
+					["realm"] = "Kazzak",
 				},
 				["Player-1379-09A8843D"] = {
 					["name"] = "Python-Zul'jin",
@@ -10992,19 +11190,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678860427,
 					["realm"] = "Zul'jin",
 				},
-				["Player-1127-0A4CA8A2"] = {
-					["name"] = "Mevira-KirinTor",
-					["guid"] = "Player-1127-0A4CA8A2",
-					["class"] = "EVOKER",
-					["cache_time"] = 1690750821,
-					["realm"] = "KirinTor",
+				["Player-1313-053CFB65"] = {
+					["name"] = "Baybas-Wildhammer",
+					["guid"] = "Player-1313-053CFB65",
+					["class"] = "MONK",
+					["cache_time"] = 1687298820,
+					["realm"] = "Wildhammer",
 				},
-				["Player-1335-0691C8F0"] = {
-					["name"] = "Mëkags-Ysondre",
-					["guid"] = "Player-1335-0691C8F0",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1684052763,
-					["realm"] = "Ysondre",
+				["Player-1098-09D50710"] = {
+					["name"] = "Zwarley-Malfurion",
+					["guid"] = "Player-1098-09D50710",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676220419,
+					["realm"] = "Malfurion",
 				},
 				["Player-1092-0A988492"] = {
 					["name"] = "Molière-Drak'thul",
@@ -11020,12 +11218,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678616145,
 					["realm"] = "Blackhand",
 				},
-				["Player-1303-07975494"] = {
-					["name"] = "Scyshamy-Aggra(Português)",
-					["guid"] = "Player-1303-07975494",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1690156137,
-					["realm"] = "Aggra(Português)",
+				["Player-3703-0945246A"] = {
+					["name"] = "Stungodx-Frostwolf",
+					["guid"] = "Player-3703-0945246A",
+					["class"] = "ROGUE",
+					["cache_time"] = 1676973948,
+					["realm"] = "Frostwolf",
 				},
 				["Player-1305-0C7FBF89"] = {
 					["name"] = "Tromponii-Kazzak",
@@ -11041,12 +11239,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687248521,
 					["realm"] = "Ysondre",
 				},
-				["Player-1615-08CFE5F0"] = {
-					["name"] = "автократ-Ревущийфьорд",
-					["guid"] = "Player-1615-08CFE5F0",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689352223,
-					["realm"] = "Ревущийфьорд",
+				["Player-3391-08E995F8"] = {
+					["name"] = "Rime-Silvermoon",
+					["guid"] = "Player-3391-08E995F8",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1689802006,
+					["realm"] = "Silvermoon",
 				},
 				["Player-3682-0A7C5C5E"] = {
 					["ilvl"] = 417.625,
@@ -11054,11 +11252,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679002272,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Samantro-Ragnaros",
 					["specID"] = 72,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 				},
 				["Player-3702-0A95698B"] = {
 					["name"] = "Seregos-ArgentDawn",
@@ -11067,31 +11265,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678730018,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-3682-07B1496C"] = {
-					["ilvl"] = 437.875,
-					["guid"] = "Player-3682-07B1496C",
-					["class"] = "DEMONHUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1690135547,
+				["Player-1928-0E441E4E"] = {
+					["name"] = "ороти-Седогрив",
+					["guid"] = "Player-1928-0E441E4E",
+					["class"] = "ROGUE",
+					["cache_time"] = 1678733070,
+					["realm"] = "Седогрив",
+				},
+				["Player-3691-09FD4023"] = {
+					["name"] = "Gwyndra-Blackhand",
+					["guid"] = "Player-3691-09FD4023",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689698521,
+					["realm"] = "Blackhand",
+				},
+				["Player-3682-0B0A5868"] = {
+					["name"] = "Agorafóbia-Ragnaros",
+					["guid"] = "Player-3682-0B0A5868",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689699139,
 					["realm"] = "Ragnaros",
-					["name"] = "Goshdarn-Ragnaros",
-					["specID"] = 577,
-					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
-				},
-				["Player-1127-093373F8"] = {
-					["name"] = "Miniratie-KirinTor",
-					["guid"] = "Player-1127-093373F8",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1690056758,
-					["realm"] = "KirinTor",
-				},
-				["Player-581-08C4480E"] = {
-					["name"] = "Lyriane-Blackrock",
-					["guid"] = "Player-581-08C4480E",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687949013,
-					["realm"] = "Blackrock",
 				},
 				["Player-1084-0A3CC77B"] = {
 					["name"] = "Maresal-TarrenMill",
@@ -11100,19 +11293,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685191876,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1390-0AF6393B"] = {
-					["name"] = "Strongdps-Hyjal",
-					["guid"] = "Player-1390-0AF6393B",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1690750821,
-					["realm"] = "Hyjal",
-				},
-				["Player-1084-0A9D1D36"] = {
-					["name"] = "Iceyy-Dentarg",
-					["guid"] = "Player-1084-0A9D1D36",
-					["class"] = "DRUID",
+				["Player-3691-09737BB5"] = {
+					["name"] = "Ennvî-Blackhand",
+					["guid"] = "Player-3691-09737BB5",
+					["class"] = "PRIEST",
 					["cache_time"] = 1689704202,
-					["realm"] = "Dentarg",
+					["realm"] = "Blackhand",
+				},
+				["Player-1403-0A4C702B"] = {
+					["name"] = "Albersoar-Draenor",
+					["guid"] = "Player-1403-0A4C702B",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689800841,
+					["realm"] = "Draenor",
 				},
 				["Player-1390-0C2CBA33"] = {
 					["name"] = "Rayonlumiere-Hyjal",
@@ -11121,12 +11314,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677249984,
 					["realm"] = "Hyjal",
 				},
-				["Player-1615-0B0AD519"] = {
-					["name"] = "табха-Ревущийфьорд",
-					["guid"] = "Player-1615-0B0AD519",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689951102,
-					["realm"] = "Ревущийфьорд",
+				["Player-3674-0B294E6C"] = {
+					["name"] = "Euslapal-TwistingNether",
+					["guid"] = "Player-3674-0B294E6C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689769880,
+					["realm"] = "TwistingNether",
 				},
 				["Player-2073-09DF1CE9"] = {
 					["name"] = "Careyou-Stormscale",
@@ -11135,6 +11328,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680278206,
 					["realm"] = "Stormscale",
 				},
+				["Player-1329-09D14A6F"] = {
+					["name"] = "Kalho-Ravencrest",
+					["guid"] = "Player-1329-09D14A6F",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676473627,
+					["realm"] = "Ravencrest",
+				},
 				["Player-3674-08CA3448"] = {
 					["name"] = "Dugar-TwistingNether",
 					["guid"] = "Player-3674-08CA3448",
@@ -11142,54 +11342,52 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677665404,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1403-0A72640C"] = {
-					["name"] = "Robrands-Draenor",
-					["guid"] = "Player-1403-0A72640C",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689804288,
-					["realm"] = "Draenor",
+				["Player-1302-089519F9"] = {
+					["name"] = "Frøzzenart-Archimonde",
+					["guid"] = "Player-1302-089519F9",
+					["class"] = "MAGE",
+					["cache_time"] = 1689772053,
+					["realm"] = "Archimonde",
 				},
-				["Player-1403-09D8CFFD"] = {
-					["name"] = "Néithyo-Draenor",
-					["guid"] = "Player-1403-09D8CFFD",
-					["class"] = "HUNTER",
-					["cache_time"] = 1680258337,
-					["realm"] = "Draenor",
+				["Player-3696-09951945"] = {
+					["name"] = "Lazissa-Alexstrasza",
+					["guid"] = "Player-3696-09951945",
+					["class"] = "DRUID",
+					["cache_time"] = 1713977460,
+					["realm"] = "Alexstrasza",
 				},
-				["Player-1621-0A5BB8C3"] = {
-					["name"] = "Pacollito-Eldre'Thalas",
-					["guid"] = "Player-1621-0A5BB8C3",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1690410198,
-					["realm"] = "Eldre'Thalas",
+				["Player-1315-0719B2F6"] = {
+					["name"] = "Scrappicoco-Elune",
+					["guid"] = "Player-1315-0719B2F6",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1689800841,
+					["realm"] = "Elune",
 				},
-				["Player-1379-0AA673FF"] = {
-					["name"] = "Lezil-Sanguino",
-					["guid"] = "Player-1379-0AA673FF",
+				["Player-1390-0C8CD41F"] = {
+					["ilvl"] = 435.1875,
+					["guid"] = "Player-1390-0C8CD41F",
 					["class"] = "PRIEST",
-					["cache_time"] = 1676861407,
-					["realm"] = "Sanguino",
+					["role"] = "HEALER",
+					["cache_time"] = 1686934581,
+					["rank"] = "Nouveau",
+					["name"] = "Holybaq-Hyjal",
+					["specID"] = 257,
+					["enchantingLvl"] = 0,
+					["realm"] = "Hyjal",
 				},
-				["Player-1403-099E8C25"] = {
-					["name"] = "Priëstitute-Draenor",
-					["guid"] = "Player-1403-099E8C25",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689804288,
-					["realm"] = "Draenor",
-				},
-				["Player-1305-0C535649"] = {
-					["name"] = "Evokuga-Kazzak",
-					["guid"] = "Player-1305-0C535649",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689802006,
+				["Player-1305-0B9493F8"] = {
+					["name"] = "Holypojk-Kazzak",
+					["guid"] = "Player-1305-0B9493F8",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689698521,
 					["realm"] = "Kazzak",
 				},
-				["Player-1615-0A5DEDEE"] = {
-					["name"] = "эстал-Ревущийфьорд",
-					["guid"] = "Player-1615-0A5DEDEE",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689954010,
-					["realm"] = "Ревущийфьорд",
+				["Player-3692-06733F12"] = {
+					["name"] = "Bibamuspower-Eredar",
+					["guid"] = "Player-3692-06733F12",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1684883011,
+					["realm"] = "Eredar",
 				},
 				["Player-1122-0A70A6BF"] = {
 					["name"] = "Uina-Uldaman",
@@ -11198,19 +11396,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685059364,
 					["realm"] = "Uldaman",
 				},
-				["Player-3391-08E995F8"] = {
-					["name"] = "Rime-Silvermoon",
-					["guid"] = "Player-3391-08E995F8",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1689802006,
-					["realm"] = "Silvermoon",
+				["Player-3690-0B23E2D1"] = {
+					["name"] = "Daléno-KhazModan",
+					["guid"] = "Player-3690-0B23E2D1",
+					["class"] = "DRUID",
+					["cache_time"] = 1685751153,
+					["realm"] = "KhazModan",
 				},
-				["Player-1621-0AFE7358"] = {
-					["name"] = "Elëkträ-Dalaran",
-					["guid"] = "Player-1621-0AFE7358",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689340203,
-					["realm"] = "Dalaran",
+				["Player-3391-0C4B5ED2"] = {
+					["name"] = "Inspirationx-Silvermoon",
+					["guid"] = "Player-3391-0C4B5ED2",
+					["class"] = "MONK",
+					["cache_time"] = 1689772053,
+					["realm"] = "Silvermoon",
 				},
 				["Player-1587-0326EF65"] = {
 					["name"] = "Inyeza-Hellfire",
@@ -11223,65 +11421,67 @@ RCLootCouncilDB = {
 					["ilvl"] = 385.0625,
 					["guid"] = "Player-1403-06359CAD",
 					["class"] = "SHAMAN",
-					["realm"] = "Draenor",
+					["rank"] = "Unguilded",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679012111,
 					["name"] = "Helpdotcom-Draenor",
-					["specID"] = 263,
 					["enchanter"] = true,
+					["specID"] = 263,
 					["enchantingLvl"] = 1,
-					["rank"] = "Unguilded",
+					["realm"] = "Draenor",
 				},
-				["Player-1928-0E441E4E"] = {
-					["name"] = "ороти-Седогрив",
-					["guid"] = "Player-1928-0E441E4E",
-					["class"] = "ROGUE",
-					["cache_time"] = 1678733070,
-					["realm"] = "Седогрив",
+				["Player-1403-0A06ED6B"] = {
+					["name"] = "Notron-Draenor",
+					["guid"] = "Player-1403-0A06ED6B",
+					["class"] = "DRUID",
+					["cache_time"] = 1684158100,
+					["realm"] = "Draenor",
 				},
-				["Player-1615-0A623298"] = {
-					["name"] = "варикафура-Ревущийфьорд",
-					["guid"] = "Player-1615-0A623298",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1690329832,
+				["Player-1615-0AE9AD75"] = {
+					["name"] = "мистерсушняк-Ревущийфьорд",
+					["guid"] = "Player-1615-0AE9AD75",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684926332,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3691-09DA0A31"] = {
-					["name"] = "Káshá-Blackhand",
-					["guid"] = "Player-3691-09DA0A31",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1684926332,
-					["realm"] = "Blackhand",
+				["Player-1325-09FB6162"] = {
+					["name"] = "Maddbone-Aggramar",
+					["guid"] = "Player-1325-09FB6162",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1689800841,
+					["realm"] = "Aggramar",
 				},
 				["Player-1403-0A4D747F"] = {
 					["role"] = "HEALER",
 					["name"] = "Scalybishop-Draenor",
 					["guid"] = "Player-1403-0A4D747F",
-					["realm"] = "Draenor",
+					["rank"] = "Dark Ranger",
 					["class"] = "EVOKER",
 					["cache_time"] = 1687956944,
-					["rank"] = "Dark Ranger",
-				},
-				["Player-3682-0B0A5868"] = {
-					["name"] = "Agorafóbia-Ragnaros",
-					["guid"] = "Player-3682-0B0A5868",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689699139,
-					["realm"] = "Ragnaros",
-				},
-				["Player-581-081CC700"] = {
-					["name"] = "Rømpø-Blackrock",
-					["guid"] = "Player-581-081CC700",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1680292466,
-					["realm"] = "Blackrock",
-				},
-				["Player-1403-0A4C702B"] = {
-					["name"] = "Albersoar-Draenor",
-					["guid"] = "Player-1403-0A4C702B",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689800841,
 					["realm"] = "Draenor",
+				},
+				["Player-3674-0B0A3148"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Draktherion-TwistingNether",
+					["guid"] = "Player-3674-0B0A3148",
+					["rank"] = "Officer",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689183684,
+					["realm"] = "TwistingNether",
+				},
+				["Player-3713-088E5B3C"] = {
+					["name"] = "Ghuurall-BurningLegion",
+					["guid"] = "Player-3713-088E5B3C",
+					["class"] = "MAGE",
+					["cache_time"] = 1689699139,
+					["realm"] = "BurningLegion",
+				},
+				["Player-1615-0838905A"] = {
+					["name"] = "одрихеппберн-Ревущийфьорд",
+					["guid"] = "Player-1615-0838905A",
+					["class"] = "DRUID",
+					["cache_time"] = 1689353263,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1403-07CA91C8"] = {
 					["name"] = "Kiraxx-Draenor",
@@ -11303,18 +11503,18 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1678136508,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Avantoe-Ragnaros",
 					["specID"] = 253,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 				},
-				["Player-3691-09FD4023"] = {
-					["name"] = "Gwyndra-Blackhand",
-					["guid"] = "Player-3691-09FD4023",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689698521,
-					["realm"] = "Blackhand",
+				["Player-1305-0C866B9C"] = {
+					["name"] = "Nzoko-Kazzak",
+					["guid"] = "Player-1305-0C866B9C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689352223,
+					["realm"] = "Kazzak",
 				},
 				["Player-1305-0C8CF483"] = {
 					["name"] = "Hatewarlock-Kazzak",
@@ -11330,12 +11530,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689769880,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1302-089519F9"] = {
-					["name"] = "Frøzzenart-Archimonde",
-					["guid"] = "Player-1302-089519F9",
-					["class"] = "MAGE",
+				["Player-3674-0A707994"] = {
+					["name"] = "Enfeebsp-TwistingNether",
+					["guid"] = "Player-3674-0A707994",
+					["class"] = "PRIEST",
 					["cache_time"] = 1689772053,
-					["realm"] = "Archimonde",
+					["realm"] = "TwistingNether",
 				},
 				["Player-3391-0C852C94"] = {
 					["name"] = "Bzanbahador-Silvermoon",
@@ -11344,26 +11544,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679424868,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1315-0719B2F6"] = {
-					["name"] = "Scrappicoco-Elune",
-					["guid"] = "Player-1315-0719B2F6",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1689800841,
-					["realm"] = "Elune",
-				},
-				["Player-3691-09737BB5"] = {
-					["name"] = "Ennvî-Blackhand",
-					["guid"] = "Player-3691-09737BB5",
+				["Player-1416-0A24A309"] = {
+					["name"] = "Therenewer-Eonar",
+					["guid"] = "Player-1416-0A24A309",
 					["class"] = "PRIEST",
-					["cache_time"] = 1689704202,
-					["realm"] = "Blackhand",
+					["cache_time"] = 1678233163,
+					["realm"] = "Eonar",
 				},
-				["Player-3674-093AFC1C"] = {
-					["name"] = "Ertunçp-TwistingNether",
-					["guid"] = "Player-3674-093AFC1C",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687791012,
+				["Player-3674-059B0E5E"] = {
+					["name"] = "Eilis-TwistingNether",
+					["guid"] = "Player-3674-059B0E5E",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1689699139,
 					["realm"] = "TwistingNether",
+				},
+				["Player-1390-0C8A8F0B"] = {
+					["name"] = "Vaykia-Hyjal",
+					["guid"] = "Player-1390-0C8A8F0B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689004698,
+					["realm"] = "Hyjal",
 				},
 				["Player-3674-0AC31BCC"] = {
 					["name"] = "Nyeldris-TwistingNether",
@@ -11372,21 +11572,21 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683815885,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3713-088E5B3C"] = {
-					["name"] = "Ghuurall-BurningLegion",
-					["guid"] = "Player-3713-088E5B3C",
-					["class"] = "MAGE",
-					["cache_time"] = 1689699139,
-					["realm"] = "BurningLegion",
+				["Player-1615-0A61D529"] = {
+					["name"] = "газаврик-Ревущийфьорд",
+					["guid"] = "Player-1615-0A61D529",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689804288,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1618-0B10B9DB"] = {
 					["role"] = "DAMAGER",
 					["name"] = "Brumrum-DieAldor",
 					["guid"] = "Player-1618-0B10B9DB",
-					["realm"] = "DieAldor",
+					["rank"] = "Gefährte",
 					["class"] = "WARRIOR",
 					["cache_time"] = 1676911145,
-					["rank"] = "Gefährte",
+					["realm"] = "DieAldor",
 				},
 				["Player-3682-0B0A8A5E"] = {
 					["ilvl"] = 417.75,
@@ -11394,11 +11594,11 @@ RCLootCouncilDB = {
 					["class"] = "DEATHKNIGHT",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1679599567,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["name"] = "Hamut-Ragnaros",
 					["specID"] = 252,
 					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1302-0A195BAC"] = {
 					["name"] = "Warmachinee-Archimonde",
@@ -11414,12 +11614,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676973948,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1615-0A61D529"] = {
-					["name"] = "газаврик-Ревущийфьорд",
-					["guid"] = "Player-1615-0A61D529",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689804288,
-					["realm"] = "Ревущийфьорд",
+				["Player-3692-09E7D1DE"] = {
+					["name"] = "Schmatsu-Eredar",
+					["guid"] = "Player-3692-09E7D1DE",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689802006,
+					["realm"] = "Eredar",
 				},
 				["Player-1597-0CEACD99"] = {
 					["name"] = "Maldeb-Sylvanas",
@@ -11428,12 +11628,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685826137,
 					["realm"] = "Sylvanas",
 				},
-				["Player-3692-06733F12"] = {
-					["name"] = "Bibamuspower-Eredar",
-					["guid"] = "Player-3692-06733F12",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1684883011,
-					["realm"] = "Eredar",
+				["Player-3674-0B264826"] = {
+					["name"] = "Deadcorrupt-TwistingNether",
+					["guid"] = "Player-3674-0B264826",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689799678,
+					["realm"] = "TwistingNether",
 				},
 				["Player-604-08C3545A"] = {
 					["name"] = "Bùmblebee-Thrall",
@@ -11456,12 +11656,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685487968,
 					["realm"] = "Blackmoore",
 				},
-				["Player-1403-0A06ED6B"] = {
-					["name"] = "Notron-Draenor",
-					["guid"] = "Player-1403-0A06ED6B",
+				["Player-3682-0ADF29F8"] = {
+					["name"] = "Molesboom-Ragnaros",
+					["guid"] = "Player-3682-0ADF29F8",
 					["class"] = "DRUID",
-					["cache_time"] = 1684158100,
-					["realm"] = "Draenor",
+					["cache_time"] = 1689800841,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1390-0C825728"] = {
 					["name"] = "Chffaar-Hyjal",
@@ -11470,31 +11670,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678234610,
 					["realm"] = "Hyjal",
 				},
-				["Player-1390-0C8CD41F"] = {
-					["ilvl"] = 435.1875,
-					["guid"] = "Player-1390-0C8CD41F",
-					["class"] = "PRIEST",
-					["role"] = "HEALER",
-					["cache_time"] = 1686934581,
-					["realm"] = "Hyjal",
-					["name"] = "Holybaq-Hyjal",
-					["specID"] = 257,
-					["enchantingLvl"] = 0,
-					["rank"] = "Nouveau",
-				},
-				["Player-3674-0B27DA3B"] = {
-					["name"] = "Teabase-TwistingNether",
-					["guid"] = "Player-3674-0B27DA3B",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689769880,
-					["realm"] = "TwistingNether",
-				},
 				["Player-1379-0A257339"] = {
 					["name"] = "Euphoryya-Sanguino",
 					["guid"] = "Player-1379-0A257339",
 					["class"] = "HUNTER",
 					["cache_time"] = 1676383325,
 					["realm"] = "Sanguino",
+				},
+				["Player-1598-0B7DE5BB"] = {
+					["name"] = "Oderov-Sunstrider",
+					["guid"] = "Player-1598-0B7DE5BB",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1689698521,
+					["realm"] = "Sunstrider",
+				},
+				["Player-1305-0ACE46C5"] = {
+					["name"] = "Mattadoorr-Kazzak",
+					["guid"] = "Player-1305-0ACE46C5",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677347909,
+					["realm"] = "Kazzak",
 				},
 				["Player-3656-0A8AA7C8"] = {
 					["name"] = "Wintersun-Stormreaver",
@@ -11510,19 +11705,21 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687257934,
 					["realm"] = "Hyjal",
 				},
-				["Player-1325-09FB6162"] = {
-					["name"] = "Maddbone-Aggramar",
-					["guid"] = "Player-1325-09FB6162",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1689800841,
-					["realm"] = "Aggramar",
+				["Player-1597-0F7AB124"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Qpfromage-Sylvanas",
+					["guid"] = "Player-1597-0F7AB124",
+					["realm"] = "Sylvanas",
+					["class"] = "MAGE",
+					["cache_time"] = 1714806242,
+					["rank"] = "Social",
 				},
-				["Player-612-056C9612"] = {
-					["name"] = "Sarkhan-Mannoroth",
-					["guid"] = "Player-612-056C9612",
-					["class"] = "PRIEST",
-					["cache_time"] = 1677607191,
-					["realm"] = "Mannoroth",
+				["Player-1335-09D0EAA6"] = {
+					["name"] = "Millko-Ysondre",
+					["guid"] = "Player-1335-09D0EAA6",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676448650,
+					["realm"] = "Ysondre",
 				},
 				["Player-3703-06D01785"] = {
 					["name"] = "Nekali-Frostwolf",
@@ -11538,19 +11735,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685740823,
 					["realm"] = "Blackmoore",
 				},
-				["Player-1923-04E0B087"] = {
-					["name"] = "соулл-Ясеневыйлес",
-					["guid"] = "Player-1923-04E0B087",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689353247,
-					["realm"] = "Ясеневыйлес",
+				["Player-1325-03C607E1"] = {
+					["name"] = "Firestormed-Aggramar",
+					["guid"] = "Player-1325-03C607E1",
+					["class"] = "MAGE",
+					["cache_time"] = 1689800841,
+					["realm"] = "Aggramar",
 				},
-				["Player-3391-0C4B5ED2"] = {
-					["name"] = "Inspirationx-Silvermoon",
-					["guid"] = "Player-3391-0C4B5ED2",
-					["class"] = "MONK",
-					["cache_time"] = 1689772053,
-					["realm"] = "Silvermoon",
+				["Player-1127-04F7D9CD"] = {
+					["name"] = "Corsopapa-LesSentinelles",
+					["guid"] = "Player-1127-04F7D9CD",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1689699139,
+					["realm"] = "LesSentinelles",
 				},
 				["Player-1621-0AFD4310"] = {
 					["ilvl"] = 416.6875,
@@ -11558,11 +11755,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
 					["name"] = "æthelwolf-Dalaran",
-					["realm"] = "Dalaran",
+					["rank"] = "Apply",
 					["cache_time"] = 1676382197,
 					["specID"] = 71,
 					["enchantingLvl"] = 0,
-					["rank"] = "Apply",
+					["realm"] = "Dalaran",
 				},
 				["Player-1335-09E768FB"] = {
 					["name"] = "Lyrean-Ysondre",
@@ -11571,19 +11768,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684926332,
 					["realm"] = "Ysondre",
 				},
-				["Player-1305-0C866B9C"] = {
-					["name"] = "Nzoko-Kazzak",
-					["guid"] = "Player-1305-0C866B9C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689352223,
-					["realm"] = "Kazzak",
+				["Player-1127-0A4DA04B"] = {
+					["name"] = "Agraou-LesClairvoyants",
+					["guid"] = "Player-1127-0A4DA04B",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689617426,
+					["realm"] = "LesClairvoyants",
 				},
-				["Player-1615-0AE9AD75"] = {
-					["name"] = "мистерсушняк-Ревущийфьорд",
-					["guid"] = "Player-1615-0AE9AD75",
-					["class"] = "PRIEST",
-					["cache_time"] = 1684926332,
-					["realm"] = "Ревущийфьорд",
+				["Player-1309-0865757B"] = {
+					["ilvl"] = 414.625,
+					["guid"] = "Player-1309-0865757B",
+					["class"] = "WARRIOR",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1676814570,
+					["realm"] = "Pozzodell'Eternità",
+					["name"] = "Wakkos-Pozzodell'Eternità",
+					["specID"] = 72,
+					["enchantingLvl"] = 0,
+					["rank"] = "Raider ",
 				},
 				["Player-1096-03EAEDE6"] = {
 					["name"] = "Hikidoki-ScarshieldLegion",
@@ -11599,12 +11801,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684292453,
 					["realm"] = "Sanguino",
 				},
-				["Player-3674-059B0E5E"] = {
-					["name"] = "Eilis-TwistingNether",
-					["guid"] = "Player-3674-059B0E5E",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1689699139,
-					["realm"] = "TwistingNether",
+				["Player-3391-0C7CAEB5"] = {
+					["name"] = "Katalonan-Silvermoon",
+					["guid"] = "Player-3391-0C7CAEB5",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676763406,
+					["realm"] = "Silvermoon",
 				},
 				["Player-1329-06D5C77D"] = {
 					["name"] = "Venaticus-Ravencrest",
@@ -11620,26 +11822,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690135301,
 					["realm"] = "Blackhand",
 				},
-				["Player-3391-0C7CAEB5"] = {
-					["name"] = "Katalonan-Silvermoon",
-					["guid"] = "Player-3391-0C7CAEB5",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676763406,
-					["realm"] = "Silvermoon",
-				},
-				["Player-3702-0A73D54C"] = {
-					["name"] = "Sportzdruid-ArgentDawn",
-					["guid"] = "Player-3702-0A73D54C",
+				["Player-3674-0B240A7E"] = {
+					["name"] = "Ayugard-TwistingNether",
+					["guid"] = "Player-3674-0B240A7E",
 					["class"] = "DRUID",
-					["cache_time"] = 1687041442,
-					["realm"] = "ArgentDawn",
+					["cache_time"] = 1689677188,
+					["realm"] = "TwistingNether",
 				},
-				["Player-3692-09E7D1DE"] = {
-					["name"] = "Schmatsu-Eredar",
-					["guid"] = "Player-3692-09E7D1DE",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689802006,
-					["realm"] = "Eredar",
+				["Player-1305-0C92AA2F"] = {
+					["name"] = "Zulskar-Kazzak",
+					["guid"] = "Player-1305-0C92AA2F",
+					["class"] = "ROGUE",
+					["cache_time"] = 1689247435,
+					["realm"] = "Kazzak",
+				},
+				["Player-1615-07606BF9"] = {
+					["name"] = "йоулон-Ревущийфьорд",
+					["guid"] = "Player-1615-07606BF9",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687248521,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3391-0C4DD949"] = {
 					["name"] = "Jucksx-Silvermoon",
@@ -11648,12 +11850,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677394231,
 					["realm"] = "Silvermoon",
 				},
-				["Player-3657-0A20C7C9"] = {
-					["name"] = "Shakiraz-Darksorrow",
-					["guid"] = "Player-3657-0A20C7C9",
-					["class"] = "MAGE",
-					["cache_time"] = 1689401454,
-					["realm"] = "Darksorrow",
+				["Player-581-0A7346D0"] = {
+					["name"] = "Ichbinmax-Blackrock",
+					["guid"] = "Player-581-0A7346D0",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686934454,
+					["realm"] = "Blackrock",
 				},
 				["Player-1403-0A3A1881"] = {
 					["name"] = "Reckfisting-Draenor",
@@ -11662,19 +11864,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685516014,
 					["realm"] = "Draenor",
 				},
-				["Player-1335-066E7C35"] = {
-					["name"] = "Bistoukette-Ysondre",
-					["guid"] = "Player-1335-066E7C35",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676369902,
-					["realm"] = "Ysondre",
+				["Player-1602-0F53F60C"] = {
+					["name"] = "лоркрафтер-Гордунни",
+					["guid"] = "Player-1602-0F53F60C",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1676387096,
+					["realm"] = "Гордунни",
 				},
-				["Player-1416-0A24A309"] = {
-					["name"] = "Therenewer-Eonar",
-					["guid"] = "Player-1416-0A24A309",
-					["class"] = "PRIEST",
-					["cache_time"] = 1678233163,
-					["realm"] = "Eonar",
+				["Player-2073-0748F011"] = {
+					["name"] = "Rm-Stormscale",
+					["guid"] = "Player-2073-0748F011",
+					["class"] = "ROGUE",
+					["cache_time"] = 1688930496,
+					["realm"] = "Stormscale",
 				},
 				["Player-1604-0BE5CE58"] = {
 					["name"] = "сериэл-СвежевательДуш",
@@ -11683,33 +11885,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676973948,
 					["realm"] = "СвежевательДуш",
 				},
-				["Player-1598-0B7DE5BB"] = {
-					["name"] = "Oderov-Sunstrider",
-					["guid"] = "Player-1598-0B7DE5BB",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1689698521,
-					["realm"] = "Sunstrider",
-				},
-				["Player-1325-03C607E1"] = {
-					["name"] = "Firestormed-Aggramar",
-					["guid"] = "Player-1325-03C607E1",
+				["Player-1329-09F7D6B5"] = {
+					["name"] = "Legitbruv-Ravencrest",
+					["guid"] = "Player-1329-09F7D6B5",
 					["class"] = "MAGE",
-					["cache_time"] = 1689800841,
-					["realm"] = "Aggramar",
+					["cache_time"] = 1676165355,
+					["realm"] = "Ravencrest",
 				},
-				["Player-1127-04F7D9CD"] = {
-					["name"] = "Corsopapa-LesSentinelles",
-					["guid"] = "Player-1127-04F7D9CD",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1689699139,
-					["realm"] = "LesSentinelles",
+				["Player-1084-099142B8"] = {
+					["name"] = "Nyuû-TarrenMill",
+					["guid"] = "Player-1084-099142B8",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1689677216,
+					["realm"] = "TarrenMill",
 				},
-				["Player-3674-0B264826"] = {
-					["name"] = "Deadcorrupt-TwistingNether",
-					["guid"] = "Player-3674-0B264826",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689799678,
-					["realm"] = "TwistingNether",
+				["Player-3682-081BF5BE"] = {
+					["name"] = "Täkacs-Ragnaros",
+					["guid"] = "Player-3682-081BF5BE",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1687949013,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1618-0769A112"] = {
+					["name"] = "Canary-DieAldor",
+					["guid"] = "Player-1618-0769A112",
+					["class"] = "DRUID",
+					["cache_time"] = 1689253178,
+					["realm"] = "DieAldor",
 				},
 				["Player-3682-0AFF9141"] = {
 					["name"] = "Múrsu-Ragnaros",
@@ -11722,14 +11924,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 412.8125,
 					["guid"] = "Player-3682-0B09DA3D",
 					["class"] = "EVOKER",
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686262031,
 					["name"] = "Jerevoker-Ragnaros",
-					["enchanter"] = true,
 					["specID"] = 1467,
+					["enchanter"] = true,
 					["enchantingLvl"] = 31,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 				},
 				["Player-1305-0878924F"] = {
 					["ilvl"] = 442.5,
@@ -11737,25 +11939,25 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "TANK",
 					["cache_time"] = 1686988340,
-					["rank"] = "Ognjen",
+					["realm"] = "Kazzak",
 					["name"] = "Ognjen-Kazzak",
 					["specID"] = 581,
 					["enchantingLvl"] = 0,
-					["realm"] = "Kazzak",
+					["rank"] = "Ognjen",
 				},
-				["Player-1127-0A4DA04B"] = {
-					["name"] = "Agraou-LesClairvoyants",
-					["guid"] = "Player-1127-0A4DA04B",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689617426,
-					["realm"] = "LesClairvoyants",
-				},
-				["Player-3674-0AE5F61E"] = {
-					["name"] = "Lorennzo-TwistingNether",
-					["guid"] = "Player-3674-0AE5F61E",
-					["class"] = "MAGE",
-					["cache_time"] = 1689677222,
+				["Player-3674-0B297374"] = {
+					["name"] = "Distasteful-TwistingNether",
+					["guid"] = "Player-3674-0B297374",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1689397818,
 					["realm"] = "TwistingNether",
+				},
+				["Player-1604-0F5861FB"] = {
+					["name"] = "зенофар-СвежевательДуш",
+					["guid"] = "Player-1604-0F5861FB",
+					["class"] = "ROGUE",
+					["cache_time"] = 1688993030,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-2073-09F3D1F9"] = {
 					["name"] = "Eiq-Stormscale",
@@ -11778,26 +11980,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687259300,
 					["realm"] = "Dethecus",
 				},
-				["Player-3391-0C3904BA"] = {
-					["name"] = "Maryberrý-Silvermoon",
-					["guid"] = "Player-3391-0C3904BA",
-					["class"] = "DRUID",
-					["cache_time"] = 1689800841,
-					["realm"] = "Silvermoon",
+				["Player-604-0A734E6F"] = {
+					["name"] = "Silendris-Thrall",
+					["guid"] = "Player-604-0A734E6F",
+					["class"] = "PRIEST",
+					["cache_time"] = 1688985349,
+					["realm"] = "Thrall",
 				},
-				["Player-581-0A7346D0"] = {
-					["name"] = "Ichbinmax-Blackrock",
-					["guid"] = "Player-581-0A7346D0",
+				["Player-612-06CFD2E0"] = {
+					["name"] = "Krongsmlu-Destromath",
+					["guid"] = "Player-612-06CFD2E0",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1689768633,
+					["realm"] = "Destromath",
+				},
+				["Player-604-0A2B6ED5"] = {
+					["name"] = "Somna-Thrall",
+					["guid"] = "Player-604-0A2B6ED5",
 					["class"] = "PALADIN",
-					["cache_time"] = 1686934454,
-					["realm"] = "Blackrock",
-				},
-				["Player-3674-06B13670"] = {
-					["name"] = "Torhian-TwistingNether",
-					["guid"] = "Player-3674-06B13670",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1687102798,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1689297589,
+					["realm"] = "Thrall",
 				},
 				["Player-580-08CB8094"] = {
 					["name"] = "Thrêgor-Blackmoore",
@@ -11806,13 +12008,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680437946,
 					["realm"] = "Blackmoore",
 				},
-				["Player-3686-09F5D3F8"] = {
-					["name"] = "Milian-Antonidas",
-					["guid"] = "Player-3686-09F5D3F8",
-					["class"] = "DRUID",
-					["cache_time"] = 1689338809,
-					["realm"] = "Antonidas",
-				},
 				["Player-1309-06EBE45A"] = {
 					["name"] = "ândre-Pozzodell'Eternità",
 					["guid"] = "Player-1309-06EBE45A",
@@ -11820,36 +12015,32 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684294594,
 					["realm"] = "Pozzodell'Eternità",
 				},
-				["Player-3682-0B034970"] = {
-					["ilvl"] = 414,
-					["guid"] = "Player-3682-0B034970",
-					["class"] = "DRUID",
-					["rank"] = "Alt",
-					["role"] = "TANK",
-					["cache_time"] = 1675972134,
-					["name"] = "Freddle-Ragnaros",
-					["enchanter"] = true,
-					["specID"] = 104,
-					["enchantingLvl"] = 88,
-					["realm"] = "Ragnaros",
-				},
-				["Player-1309-0865757B"] = {
-					["ilvl"] = 414.625,
-					["guid"] = "Player-1309-0865757B",
+				["Player-570-09B7B4FF"] = {
+					["name"] = "Sescheron-Azshara",
+					["guid"] = "Player-570-09B7B4FF",
 					["class"] = "WARRIOR",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1676814570,
-					["rank"] = "Raider ",
-					["name"] = "Wakkos-Pozzodell'Eternità",
-					["specID"] = 72,
-					["enchantingLvl"] = 0,
-					["realm"] = "Pozzodell'Eternità",
+					["cache_time"] = 1713977460,
+					["realm"] = "Azshara",
 				},
-				["Player-604-0A734E6F"] = {
-					["name"] = "Silendris-Thrall",
-					["guid"] = "Player-604-0A734E6F",
+				["Player-3692-092EFA0D"] = {
+					["name"] = "Hurtsmonk-Eredar",
+					["guid"] = "Player-3692-092EFA0D",
+					["class"] = "MONK",
+					["cache_time"] = 1687949013,
+					["realm"] = "Eredar",
+				},
+				["Player-581-040E0850"] = {
+					["name"] = "Nyerâ-Blackrock",
+					["guid"] = "Player-581-040E0850",
 					["class"] = "PRIEST",
-					["cache_time"] = 1688985349,
+					["cache_time"] = 1687949013,
+					["realm"] = "Blackrock",
+				},
+				["Player-604-0A6BF2EE"] = {
+					["name"] = "Hûmunûku-Thrall",
+					["guid"] = "Player-604-0A6BF2EE",
+					["class"] = "HUNTER",
+					["cache_time"] = 1679027919,
 					["realm"] = "Thrall",
 				},
 				["Player-3674-0A1622B1"] = {
@@ -11877,14 +12068,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 444.75,
 					["guid"] = "Player-1305-0C8060FA",
 					["class"] = "WARLOCK",
-					["realm"] = "Kazzak",
+					["rank"] = "Member",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1690750821,
 					["name"] = "Brussewayn-Kazzak",
-					["specID"] = 267,
 					["enchanter"] = true,
+					["specID"] = 267,
 					["enchantingLvl"] = 55,
-					["rank"] = "Member",
+					["realm"] = "Kazzak",
 				},
 				["Player-604-0A60DF5D"] = {
 					["name"] = "Mirrin-Thrall",
@@ -11900,19 +12091,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684424313,
 					["realm"] = "BurningLegion",
 				},
-				["Player-1618-0769A112"] = {
-					["name"] = "Canary-DieAldor",
-					["guid"] = "Player-1618-0769A112",
-					["class"] = "DRUID",
-					["cache_time"] = 1689253178,
-					["realm"] = "DieAldor",
-				},
-				["Player-2074-09B40E7F"] = {
-					["name"] = "Eneprya-EmeraldDream",
-					["guid"] = "Player-2074-09B40E7F",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1684883011,
-					["realm"] = "EmeraldDream",
+				["Player-1403-0A223886"] = {
+					["name"] = "Pandalow-Draenor",
+					["guid"] = "Player-1403-0A223886",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1689417619,
+					["realm"] = "Draenor",
 				},
 				["Player-1390-0ADD748D"] = {
 					["name"] = "Eldjazairi-Hyjal",
@@ -11921,6 +12105,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689804288,
 					["realm"] = "Hyjal",
 				},
+				["Player-2074-09B40E7F"] = {
+					["name"] = "Eneprya-EmeraldDream",
+					["guid"] = "Player-2074-09B40E7F",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1684883011,
+					["realm"] = "EmeraldDream",
+				},
 				["Player-1403-0A54A773"] = {
 					["name"] = "Giandragon-Draenor",
 					["guid"] = "Player-1403-0A54A773",
@@ -11928,12 +12119,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690410198,
 					["realm"] = "Draenor",
 				},
-				["Player-2073-0748F011"] = {
-					["name"] = "Rm-Stormscale",
-					["guid"] = "Player-2073-0748F011",
-					["class"] = "ROGUE",
-					["cache_time"] = 1688930496,
-					["realm"] = "Stormscale",
+				["Player-1615-0B0A4102"] = {
+					["name"] = "змиаш-Ревущийфьорд",
+					["guid"] = "Player-1615-0B0A4102",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689353247,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1403-07F5DECB"] = {
 					["name"] = "Raindead-Draenor",
@@ -11956,6 +12147,20 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689699139,
 					["realm"] = "Sporeggar",
 				},
+				["Player-1084-0AA25722"] = {
+					["name"] = "Chillspy-TarrenMill",
+					["guid"] = "Player-1084-0AA25722",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1689395307,
+					["realm"] = "TarrenMill",
+				},
+				["Player-580-0A6EFF20"] = {
+					["name"] = "Healdrake-Blackmoore",
+					["guid"] = "Player-580-0A6EFF20",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689340203,
+					["realm"] = "Blackmoore",
+				},
 				["Player-3713-0AE7F838"] = {
 					["name"] = "Sõren-BurningLegion",
 					["guid"] = "Player-3713-0AE7F838",
@@ -11963,26 +12168,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689699139,
 					["realm"] = "BurningLegion",
 				},
-				["Player-3674-070B7880"] = {
-					["name"] = "Kenreis-TwistingNether",
-					["guid"] = "Player-3674-070B7880",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1685745460,
-					["realm"] = "TwistingNether",
-				},
-				["Player-1615-0B214D3D"] = {
-					["name"] = "айсайсбейби-Ревущийфьорд",
-					["guid"] = "Player-1615-0B214D3D",
-					["class"] = "DRUID",
-					["cache_time"] = 1685864518,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-3682-09A25FEC"] = {
-					["name"] = "Yajin-Ragnaros",
-					["guid"] = "Player-3682-09A25FEC",
-					["class"] = "ROGUE",
-					["cache_time"] = 1680431963,
-					["realm"] = "Ragnaros",
+				["Player-1604-0AEE4236"] = {
+					["name"] = "дланьгоспода-СвежевательДуш",
+					["guid"] = "Player-1604-0AEE4236",
+					["class"] = "HUNTER",
+					["cache_time"] = 1688947447,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-1378-0A340845"] = {
 					["name"] = "Isthähar-C'Thun",
@@ -11991,12 +12182,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683073733,
 					["realm"] = "C'Thun",
 				},
-				["Player-3702-0A80BBC6"] = {
-					["name"] = "Ancelyn-ArgentDawn",
-					["guid"] = "Player-3702-0A80BBC6",
-					["class"] = "DRUID",
-					["cache_time"] = 1679997750,
-					["realm"] = "ArgentDawn",
+				["Player-1329-0A018999"] = {
+					["name"] = "Hellgardigan-Ravencrest",
+					["guid"] = "Player-1329-0A018999",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1687298820,
+					["realm"] = "Ravencrest",
 				},
 				["Player-1615-06F1B671"] = {
 					["name"] = "тимтимми-Ревущийфьорд",
@@ -12012,47 +12203,53 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677701795,
 					["realm"] = "Ragnaros",
 				},
-				["Player-581-085C27B2"] = {
-					["name"] = "Dannyexqt-Blackrock",
-					["guid"] = "Player-581-085C27B2",
+				["Player-2074-058A7D7F"] = {
+					["name"] = "Chunkblower-EmeraldDream",
+					["guid"] = "Player-2074-058A7D7F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689253178,
+					["realm"] = "EmeraldDream",
+				},
+				["Player-3682-0B292702"] = {
+					["name"] = "Wârpig-Ragnaros",
+					["guid"] = "Player-3682-0B292702",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1686049857,
-					["realm"] = "Blackrock",
+					["cache_time"] = 1689297589,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1084-0AA25722"] = {
-					["name"] = "Chillspy-TarrenMill",
-					["guid"] = "Player-1084-0AA25722",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1689395307,
-					["realm"] = "TarrenMill",
+				["Player-1925-0B4A7FCF"] = {
+					["name"] = "флаурос-ВечнаяПесня",
+					["guid"] = "Player-1925-0B4A7FCF",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1686126505,
+					["realm"] = "ВечнаяПесня",
 				},
-				["Player-1305-0C904AFA"] = {
-					["name"] = "Blazeimpact-Kazzak",
-					["guid"] = "Player-1305-0C904AFA",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689292721,
-					["realm"] = "Kazzak",
+				["Player-1303-0598CAFC"] = {
+					["name"] = "Feuwa-Aggra(Português)",
+					["guid"] = "Player-1303-0598CAFC",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1688306751,
+					["realm"] = "Aggra(Português)",
 				},
-				["Player-3674-0B297374"] = {
-					["name"] = "Distasteful-TwistingNether",
-					["guid"] = "Player-3674-0B297374",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1689397818,
-					["realm"] = "TwistingNether",
+				["Player-531-07B0224C"] = {
+					["name"] = "Heiligebohne-Terrordar",
+					["guid"] = "Player-531-07B0224C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677607044,
+					["realm"] = "Terrordar",
 				},
-				["Player-1305-0C60A604"] = {
-					["name"] = "Nisio-Kazzak",
-					["guid"] = "Player-1305-0C60A604",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687248139,
-					["realm"] = "Kazzak",
-				},
-				["Player-3656-07BF9982"] = {
-					["name"] = "Jöötikkä-Stormreaver",
-					["guid"] = "Player-3656-07BF9982",
-					["class"] = "DRUID",
-					["cache_time"] = 1690915840,
-					["realm"] = "Stormreaver",
+				["Player-3682-0B0664C7"] = {
+					["ilvl"] = 441.25,
+					["guid"] = "Player-3682-0B0664C7",
+					["class"] = "WARRIOR",
+					["rank"] = "Raider",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1688676359,
+					["name"] = "Rap-Ragnaros",
+					["enchanter"] = true,
+					["specID"] = 72,
+					["enchantingLvl"] = 57,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1104-0A0C117B"] = {
 					["name"] = "Kill-Nathrezim",
@@ -12061,18 +12258,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687949013,
 					["realm"] = "Nathrezim",
 				},
-				["Player-1099-0A6CA4A9"] = {
-					["name"] = "Trû-Alleria",
-					["guid"] = "Player-1099-0A6CA4A9",
-					["class"] = "DRUID",
-					["cache_time"] = 1677665404,
-					["realm"] = "Alleria",
+				["Player-1416-079B2F55"] = {
+					["name"] = "Egyptian-Blade'sEdge",
+					["guid"] = "Player-1416-079B2F55",
+					["class"] = "HUNTER",
+					["cache_time"] = 1688889814,
+					["realm"] = "Blade'sEdge",
 				},
-				["Player-604-0A2B6ED5"] = {
-					["name"] = "Somna-Thrall",
-					["guid"] = "Player-604-0A2B6ED5",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689297589,
+				["Player-604-0435ACEB"] = {
+					["name"] = "Teufelsseele-Thrall",
+					["guid"] = "Player-604-0435ACEB",
+					["class"] = "ROGUE",
+					["cache_time"] = 1686121947,
 					["realm"] = "Thrall",
 				},
 				["Player-1305-0C73E1A2"] = {
@@ -12082,19 +12279,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680221149,
 					["realm"] = "Kazzak",
 				},
-				["Player-1084-0AA1234E"] = {
-					["name"] = "Kumadruid-TarrenMill",
-					["guid"] = "Player-1084-0AA1234E",
-					["class"] = "DRUID",
-					["cache_time"] = 1689287073,
-					["realm"] = "TarrenMill",
+				["Player-3682-0B15D370"] = {
+					["ilvl"] = 441.5,
+					["guid"] = "Player-3682-0B15D370",
+					["class"] = "PRIEST",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1687467846,
+					["rank"] = "Trial",
+					["name"] = "Cryst-Ragnaros",
+					["specID"] = 258,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
-				["Player-580-0A6EFF20"] = {
-					["name"] = "Healdrake-Blackmoore",
-					["guid"] = "Player-580-0A6EFF20",
+				["Player-1403-0A5A7790"] = {
+					["name"] = "Rigidum-Draenor",
+					["guid"] = "Player-1403-0A5A7790",
 					["class"] = "EVOKER",
-					["cache_time"] = 1689340203,
-					["realm"] = "Blackmoore",
+					["cache_time"] = 1678230027,
+					["realm"] = "Draenor",
 				},
 				["Player-1305-03E6C04D"] = {
 					["name"] = "Ragnâr-Kazzak",
@@ -12110,12 +12312,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677665404,
 					["realm"] = "Draenor",
 				},
-				["Player-1390-0C72E07B"] = {
-					["name"] = "Nanomurloc-Hyjal",
-					["guid"] = "Player-1390-0C72E07B",
+				["Player-1122-0A029734"] = {
+					["name"] = "Shanila-Eitrigg",
+					["guid"] = "Player-1122-0A029734",
 					["class"] = "PRIEST",
-					["cache_time"] = 1678894799,
-					["realm"] = "Hyjal",
+					["cache_time"] = 1688927498,
+					["realm"] = "Eitrigg",
 				},
 				["Player-1302-099B1309"] = {
 					["name"] = "Veynz-Archimonde",
@@ -12124,19 +12326,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689772053,
 					["realm"] = "Archimonde",
 				},
-				["Player-570-05B4125E"] = {
-					["name"] = "Emilynn-Baelgun",
-					["guid"] = "Player-570-05B4125E",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689290162,
-					["realm"] = "Baelgun",
+				["Player-3682-08395E75"] = {
+					["ilvl"] = 442.875,
+					["guid"] = "Player-3682-08395E75",
+					["class"] = "MONK",
+					["role"] = "TANK",
+					["cache_time"] = 1690326975,
+					["rank"] = "Member",
+					["name"] = "Paorel-Ragnaros",
+					["specID"] = 268,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
-				["Player-2074-058A7D7F"] = {
-					["name"] = "Chunkblower-EmeraldDream",
-					["guid"] = "Player-2074-058A7D7F",
-					["class"] = "PALADIN",
+				["Player-1615-0B22522B"] = {
+					["name"] = "кашера-Ревущийфьорд",
+					["guid"] = "Player-1615-0B22522B",
+					["class"] = "SHAMAN",
 					["cache_time"] = 1689253178,
-					["realm"] = "EmeraldDream",
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3674-08F00583"] = {
 					["name"] = "Gudeen-TwistingNether",
@@ -12152,11 +12359,11 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690410198,
 					["realm"] = "Thrall",
 				},
-				["Player-1403-0A223886"] = {
-					["name"] = "Pandalow-Draenor",
-					["guid"] = "Player-1403-0A223886",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1689417619,
+				["Player-1403-0A30FB22"] = {
+					["name"] = "Nvä-Draenor",
+					["guid"] = "Player-1403-0A30FB22",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1687041442,
 					["realm"] = "Draenor",
 				},
 				["Player-1305-0C8DD08F"] = {
@@ -12173,24 +12380,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679747022,
 					["realm"] = "TarrenMill",
 				},
-				["Player-3682-08395E75"] = {
-					["ilvl"] = 442.875,
-					["guid"] = "Player-3682-08395E75",
-					["class"] = "MONK",
-					["role"] = "TANK",
-					["cache_time"] = 1690326975,
-					["realm"] = "Ragnaros",
-					["name"] = "Paorel-Ragnaros",
-					["specID"] = 268,
-					["enchantingLvl"] = 0,
-					["rank"] = "Member",
+				["Player-1084-08C897A9"] = {
+					["name"] = "Shadowslady-TarrenMill",
+					["guid"] = "Player-1084-08C897A9",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687953965,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1615-09DD7BC3"] = {
-					["name"] = "таздингот-Ревущийфьорд",
-					["guid"] = "Player-1615-09DD7BC3",
+				["Player-3691-0A0572BC"] = {
+					["name"] = "Brânde-Blackhand",
+					["guid"] = "Player-3691-0A0572BC",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1688888605,
-					["realm"] = "Ревущийфьорд",
+					["cache_time"] = 1687954070,
+					["realm"] = "Blackhand",
 				},
 				["Player-1615-0A91909C"] = {
 					["name"] = "фрозбуу-Ревущийфьорд",
@@ -12199,19 +12401,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688876703,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1604-0AEE4236"] = {
-					["name"] = "дланьгоспода-СвежевательДуш",
-					["guid"] = "Player-1604-0AEE4236",
-					["class"] = "HUNTER",
-					["cache_time"] = 1688947447,
-					["realm"] = "СвежевательДуш",
+				["Player-1379-0A7EE962"] = {
+					["name"] = "Endrelock-Sanguino",
+					["guid"] = "Player-1379-0A7EE962",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1680262695,
+					["realm"] = "Sanguino",
 				},
-				["Player-512-06B42935"] = {
-					["name"] = "Moarn-Kael'thas",
-					["guid"] = "Player-512-06B42935",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686121310,
-					["realm"] = "Kael'thas",
+				["Player-3691-09CFE765"] = {
+					["name"] = "Rethias-Blackhand",
+					["guid"] = "Player-3691-09CFE765",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1688687303,
+					["realm"] = "Blackhand",
 				},
 				["Player-1329-09F1D62C"] = {
 					["name"] = "Billythebob-Ravencrest",
@@ -12227,12 +12429,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678732140,
 					["realm"] = "Nemesis",
 				},
-				["Player-3674-0B29F332"] = {
-					["name"] = "Sakuranoyuki-TwistingNether",
-					["guid"] = "Player-3674-0B29F332",
-					["class"] = "HUNTER",
-					["cache_time"] = 1689183014,
-					["realm"] = "TwistingNether",
+				["Player-1403-079985C6"] = {
+					["name"] = "Tylk-Draenor",
+					["guid"] = "Player-1403-079985C6",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1687949672,
+					["realm"] = "Draenor",
 				},
 				["Player-3713-0760A04D"] = {
 					["name"] = "Sixu-BurningLegion",
@@ -12248,26 +12450,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686754973,
 					["realm"] = "Draenor",
 				},
-				["Player-3391-0C93F0DF"] = {
-					["name"] = "Kayekin-Silvermoon",
-					["guid"] = "Player-3391-0C93F0DF",
-					["class"] = "MAGE",
-					["cache_time"] = 1688985349,
-					["realm"] = "Silvermoon",
+				["Player-1305-0A4D68BF"] = {
+					["name"] = "Thelitemaze-Kazzak",
+					["guid"] = "Player-1305-0A4D68BF",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680292466,
+					["realm"] = "Kazzak",
 				},
-				["Player-1303-0598CAFC"] = {
-					["name"] = "Feuwa-Aggra(Português)",
-					["guid"] = "Player-1303-0598CAFC",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1688306751,
-					["realm"] = "Aggra(Português)",
+				["Player-3674-05B0E23F"] = {
+					["name"] = "Kapaski-TwistingNether",
+					["guid"] = "Player-3674-05B0E23F",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1689677222,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1122-0A029734"] = {
-					["name"] = "Shanila-Eitrigg",
-					["guid"] = "Player-1122-0A029734",
-					["class"] = "PRIEST",
-					["cache_time"] = 1688927498,
-					["realm"] = "Eitrigg",
+				["Player-1402-0A4B67D9"] = {
+					["name"] = "Qwerbae-Doomhammer",
+					["guid"] = "Player-1402-0A4B67D9",
+					["class"] = "MONK",
+					["cache_time"] = 1687955030,
+					["realm"] = "Doomhammer",
 				},
 				["Player-3391-0BD1AC0D"] = {
 					["name"] = "Xerkis-Silvermoon",
@@ -12290,12 +12492,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680258337,
 					["realm"] = "Pozzodell'Eternità",
 				},
-				["Player-3674-0AF44219"] = {
-					["name"] = "Sørenspind-TwistingNether",
-					["guid"] = "Player-3674-0AF44219",
-					["class"] = "DRUID",
-					["cache_time"] = 1686933987,
-					["realm"] = "TwistingNether",
+				["Player-3682-09412B6D"] = {
+					["name"] = "Sausagelife-Ragnaros",
+					["guid"] = "Player-3682-09412B6D",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689699139,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1335-09D96550"] = {
 					["name"] = "Mamyjée-Ysondre",
@@ -12304,12 +12506,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689004698,
 					["realm"] = "Ysondre",
 				},
-				["Player-3391-0C930D21"] = {
-					["name"] = "Dodgeland-Silvermoon",
-					["guid"] = "Player-3391-0C930D21",
-					["class"] = "PALADIN",
-					["cache_time"] = 1688923372,
-					["realm"] = "Silvermoon",
+				["Player-3686-09E7D779"] = {
+					["name"] = "Woopilicious-Antonidas",
+					["guid"] = "Player-3686-09E7D779",
+					["class"] = "EVOKER",
+					["cache_time"] = 1690513584,
+					["realm"] = "Antonidas",
 				},
 				["Player-1602-0C3A8FEF"] = {
 					["name"] = "хенесса-Гордунни",
@@ -12318,33 +12520,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676444247,
 					["realm"] = "Гордунни",
 				},
-				["Player-3686-09E7D779"] = {
-					["name"] = "Woopilicious-Antonidas",
-					["guid"] = "Player-3686-09E7D779",
+				["Player-3391-0C930D21"] = {
+					["name"] = "Dodgeland-Silvermoon",
+					["guid"] = "Player-3391-0C930D21",
+					["class"] = "PALADIN",
+					["cache_time"] = 1688923372,
+					["realm"] = "Silvermoon",
+				},
+				["Player-1390-0C546112"] = {
+					["name"] = "Cône-Hyjal",
+					["guid"] = "Player-1390-0C546112",
 					["class"] = "EVOKER",
-					["cache_time"] = 1690513584,
-					["realm"] = "Antonidas",
+					["cache_time"] = 1687955030,
+					["realm"] = "Hyjal",
 				},
-				["Player-1615-0B09B609"] = {
-					["name"] = "ржаволёт-Ревущийфьорд",
-					["guid"] = "Player-1615-0B09B609",
-					["class"] = "EVOKER",
-					["cache_time"] = 1686934454,
-					["realm"] = "Ревущийфьорд",
+				["Player-1307-06F98010"] = {
+					["name"] = "Bloodanger-ChamberofAspects",
+					["guid"] = "Player-1307-06F98010",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687949013,
+					["realm"] = "ChamberofAspects",
 				},
-				["Player-1403-0A30FB22"] = {
-					["name"] = "Nvä-Draenor",
-					["guid"] = "Player-1403-0A30FB22",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1687041442,
-					["realm"] = "Draenor",
-				},
-				["Player-1379-0ACE126A"] = {
-					["name"] = "Sneigramos-Sanguino",
-					["guid"] = "Player-1379-0ACE126A",
-					["class"] = "DRUID",
-					["cache_time"] = 1689617412,
-					["realm"] = "Sanguino",
+				["Player-3682-07AC867F"] = {
+					["name"] = "Sugarpanda-Ragnaros",
+					["guid"] = "Player-3682-07AC867F",
+					["class"] = "MONK",
+					["cache_time"] = 1689286279,
+					["realm"] = "Ragnaros",
 				},
 				["Player-2073-09EEA802"] = {
 					["name"] = "Barackoshamy-Stormscale",
@@ -12360,12 +12562,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684212905,
 					["realm"] = "Kazzak",
 				},
-				["Player-3702-062408EE"] = {
-					["name"] = "Darkyoda-ArgentDawn",
-					["guid"] = "Player-3702-062408EE",
+				["Player-1305-0C61E899"] = {
+					["name"] = "Cybermom-Kazzak",
+					["guid"] = "Player-1305-0C61E899",
 					["class"] = "PRIEST",
-					["cache_time"] = 1679427324,
-					["realm"] = "ArgentDawn",
+					["cache_time"] = 1680437946,
+					["realm"] = "Kazzak",
 				},
 				["Player-1329-09BBF010"] = {
 					["name"] = "Dean-Ravencrest",
@@ -12388,19 +12590,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676479581,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1597-0F43080E"] = {
-					["name"] = "Nordsee-Sylvanas",
-					["guid"] = "Player-1597-0F43080E",
-					["class"] = "PRIEST",
-					["cache_time"] = 1688922037,
-					["realm"] = "Sylvanas",
+				["Player-1085-050FA9BC"] = {
+					["name"] = "Grúmpz-TheSha'tar",
+					["guid"] = "Player-1085-050FA9BC",
+					["class"] = "HUNTER",
+					["cache_time"] = 1677665404,
+					["realm"] = "TheSha'tar",
 				},
-				["Player-1301-0BC336D4"] = {
-					["name"] = "Krullee-Outland",
-					["guid"] = "Player-1301-0BC336D4",
-					["class"] = "DRUID",
-					["cache_time"] = 1687961749,
-					["realm"] = "Outland",
+				["Player-1602-0F58B7EF"] = {
+					["name"] = "суперслива-Гордунни",
+					["guid"] = "Player-1602-0F58B7EF",
+					["class"] = "ROGUE",
+					["cache_time"] = 1686614799,
+					["realm"] = "Гордунни",
 				},
 				["Player-1403-079EFDE0"] = {
 					["name"] = "Binayo-Draenor",
@@ -12423,12 +12625,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676356988,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1615-0B22522B"] = {
-					["name"] = "кашера-Ревущийфьорд",
-					["guid"] = "Player-1615-0B22522B",
+				["Player-1302-0667E989"] = {
+					["name"] = "Rexvitae-Archimonde",
+					["guid"] = "Player-1302-0667E989",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1689253178,
-					["realm"] = "Ревущийфьорд",
+					["cache_time"] = 1688687303,
+					["realm"] = "Archimonde",
 				},
 				["Player-1305-0BF757C0"] = {
 					["name"] = "Bestbaby-Kazzak",
@@ -12458,12 +12660,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686121310,
 					["realm"] = "Hyjal",
 				},
-				["Player-1305-0A13B021"] = {
-					["name"] = "Morphioos-Kazzak",
-					["guid"] = "Player-1305-0A13B021",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1680437946,
-					["realm"] = "Kazzak",
+				["Player-580-0A4A07F7"] = {
+					["name"] = "Latriax-Blackmoore",
+					["guid"] = "Player-580-0A4A07F7",
+					["class"] = "DRUID",
+					["cache_time"] = 1689677188,
+					["realm"] = "Blackmoore",
 				},
 				["Player-3682-0B1BBF64"] = {
 					["name"] = "Zaggmonk-Ragnaros",
@@ -12472,18 +12674,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685358170,
 					["realm"] = "Ragnaros",
 				},
-				["Player-3674-05B0E23F"] = {
-					["name"] = "Kapaski-TwistingNether",
-					["guid"] = "Player-3674-05B0E23F",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1689677222,
-					["realm"] = "TwistingNether",
-				},
-				["Player-3682-09412B6D"] = {
-					["name"] = "Sausagelife-Ragnaros",
-					["guid"] = "Player-3682-09412B6D",
+				["Player-3682-097B06C7"] = {
+					["name"] = "Redpool-Ragnaros",
+					["guid"] = "Player-3682-097B06C7",
 					["class"] = "PALADIN",
-					["cache_time"] = 1689699139,
+					["cache_time"] = 1687304879,
+					["realm"] = "Ragnaros",
+				},
+				["Player-3682-075BDFB1"] = {
+					["name"] = "Voldeath-Ragnaros",
+					["guid"] = "Player-3682-075BDFB1",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1679506666,
 					["realm"] = "Ragnaros",
 				},
 				["Player-1092-0A8071DD"] = {
@@ -12514,109 +12716,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685126676,
 					["realm"] = "Blackhand",
 				},
-				["Player-3682-095A2094"] = {
-					["name"] = "ätalia-Ragnaros",
-					["guid"] = "Player-3682-095A2094",
-					["class"] = "DRUID",
-					["cache_time"] = 1688908568,
-					["realm"] = "Ragnaros",
-				},
-				["Player-512-09D0CC28"] = {
-					["name"] = "Mílenas-Kael'thas",
-					["guid"] = "Player-512-09D0CC28",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676973948,
-					["realm"] = "Kael'thas",
-				},
-				["Player-3682-07AC867F"] = {
-					["name"] = "Sugarpanda-Ragnaros",
-					["guid"] = "Player-3682-07AC867F",
-					["class"] = "MONK",
-					["cache_time"] = 1689286279,
-					["realm"] = "Ragnaros",
-				},
-				["Player-1929-0CA305A5"] = {
-					["name"] = "страхмен-Термоштепсель",
-					["guid"] = "Player-1929-0CA305A5",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1686754263,
-					["realm"] = "Термоштепсель",
-				},
-				["Player-1305-0C61E899"] = {
-					["name"] = "Cybermom-Kazzak",
-					["guid"] = "Player-1305-0C61E899",
-					["class"] = "PRIEST",
-					["cache_time"] = 1680437946,
-					["realm"] = "Kazzak",
-				},
-				["Player-3682-0B262074"] = {
-					["name"] = "Fakker-Ragnaros",
-					["guid"] = "Player-3682-0B262074",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686690665,
-					["realm"] = "Ragnaros",
-				},
-				["Player-3686-09E70649"] = {
-					["name"] = "Wargreatmon-Antonidas",
-					["guid"] = "Player-3686-09E70649",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687952836,
-					["realm"] = "Antonidas",
-				},
-				["Player-3682-0AF73C46"] = {
-					["name"] = "Anitsirk-Ragnaros",
-					["guid"] = "Player-3682-0AF73C46",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676185839,
-					["realm"] = "Ragnaros",
-				},
-				["Player-3682-0B28E027"] = {
-					["ilvl"] = 442.75,
-					["guid"] = "Player-3682-0B28E027",
-					["class"] = "SHAMAN",
-					["rank"] = "Alt",
-					["role"] = "HEALER",
-					["cache_time"] = 1690135545,
-					["name"] = "Rejuvsham-Ragnaros",
-					["enchanter"] = true,
-					["specID"] = 264,
-					["enchantingLvl"] = 25,
-					["realm"] = "Ragnaros",
-				},
-				["Player-1402-0A4B67D9"] = {
-					["name"] = "Qwerbae-Doomhammer",
-					["guid"] = "Player-1402-0A4B67D9",
-					["class"] = "MONK",
-					["cache_time"] = 1687955030,
-					["realm"] = "Doomhammer",
-				},
-				["Player-3674-0B1C6C9E"] = {
-					["name"] = "Icedragon-TwistingNether",
-					["guid"] = "Player-3674-0B1C6C9E",
-					["class"] = "PALADIN",
-					["cache_time"] = 1688923372,
-					["realm"] = "TwistingNether",
-				},
-				["Player-3391-0C2F015B"] = {
-					["name"] = "Nayòmi-Silvermoon",
-					["guid"] = "Player-3391-0C2F015B",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685797754,
-					["realm"] = "Silvermoon",
-				},
-				["Player-1390-08C5F72E"] = {
-					["name"] = "Tauriél-Hyjal",
-					["guid"] = "Player-1390-08C5F72E",
-					["class"] = "HUNTER",
-					["cache_time"] = 1677071253,
-					["realm"] = "Hyjal",
-				},
-				["Player-580-09DF8E68"] = {
-					["name"] = "Wellactually-Blackmoore",
-					["guid"] = "Player-580-09DF8E68",
-					["class"] = "DRUID",
-					["cache_time"] = 1685998340,
-					["realm"] = "Blackmoore",
+				["Player-1379-0AA7C84F"] = {
+					["name"] = "Flashkete-Sanguino",
+					["guid"] = "Player-1379-0AA7C84F",
+					["class"] = "ROGUE",
+					["cache_time"] = 1687245813,
+					["realm"] = "Sanguino",
 				},
 				["Player-3674-0B17DD98"] = {
 					["name"] = "Ezgoodness-TwistingNether",
@@ -12625,12 +12730,109 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676423903,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1085-050FA9BC"] = {
-					["name"] = "Grúmpz-TheSha'tar",
-					["guid"] = "Player-1085-050FA9BC",
+				["Player-1084-05D22D45"] = {
+					["name"] = "Nobrainopain-TarrenMill",
+					["guid"] = "Player-1084-05D22D45",
 					["class"] = "HUNTER",
-					["cache_time"] = 1677665404,
-					["realm"] = "TheSha'tar",
+					["cache_time"] = 1689352223,
+					["realm"] = "TarrenMill",
+				},
+				["Player-1929-0CA305A5"] = {
+					["name"] = "страхмен-Термоштепсель",
+					["guid"] = "Player-1929-0CA305A5",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1686754263,
+					["realm"] = "Термоштепсель",
+				},
+				["Player-3703-04CDCF36"] = {
+					["name"] = "Firstwarrior-Frostwolf",
+					["guid"] = "Player-3703-04CDCF36",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686121310,
+					["realm"] = "Frostwolf",
+				},
+				["Player-1615-07FB2370"] = {
+					["name"] = "вылечуска-Ревущийфьорд",
+					["guid"] = "Player-1615-07FB2370",
+					["class"] = "PRIEST",
+					["cache_time"] = 1688908574,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-3682-0B28E027"] = {
+					["ilvl"] = 442.75,
+					["guid"] = "Player-3682-0B28E027",
+					["class"] = "SHAMAN",
+					["realm"] = "Ragnaros",
+					["role"] = "HEALER",
+					["cache_time"] = 1690135545,
+					["name"] = "Rejuvsham-Ragnaros",
+					["specID"] = 264,
+					["enchanter"] = true,
+					["enchantingLvl"] = 25,
+					["rank"] = "Alt",
+				},
+				["Player-3682-0AF73C46"] = {
+					["name"] = "Anitsirk-Ragnaros",
+					["guid"] = "Player-3682-0AF73C46",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676185839,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1598-081A7697"] = {
+					["name"] = "Trizza-Chromaggus",
+					["guid"] = "Player-1598-081A7697",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676973948,
+					["realm"] = "Chromaggus",
+				},
+				["Player-1604-0F589CBD"] = {
+					["name"] = "драге-СвежевательДуш",
+					["guid"] = "Player-1604-0F589CBD",
+					["class"] = "ROGUE",
+					["cache_time"] = 1680290994,
+					["realm"] = "СвежевательДуш",
+				},
+				["Player-1302-0C1DFDB1"] = {
+					["name"] = "Turtlerollup-Archimonde",
+					["guid"] = "Player-1302-0C1DFDB1",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676912354,
+					["realm"] = "Archimonde",
+				},
+				["Player-3703-04E2CD70"] = {
+					["name"] = "Sommerly-Frostwolf",
+					["guid"] = "Player-3703-04E2CD70",
+					["class"] = "PRIEST",
+					["cache_time"] = 1678860427,
+					["realm"] = "Frostwolf",
+				},
+				["Player-1313-0C8B8FBE"] = {
+					["name"] = "Teryc-Wildhammer",
+					["guid"] = "Player-1313-0C8B8FBE",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1688301840,
+					["realm"] = "Wildhammer",
+				},
+				["Player-580-09DF8E68"] = {
+					["name"] = "Wellactually-Blackmoore",
+					["guid"] = "Player-580-09DF8E68",
+					["class"] = "DRUID",
+					["cache_time"] = 1685998340,
+					["realm"] = "Blackmoore",
+				},
+				["Player-3702-073206ED"] = {
+					["name"] = "Lúthienn-ArgentDawn",
+					["guid"] = "Player-3702-073206ED",
+					["class"] = "PRIEST",
+					["cache_time"] = 1688687270,
+					["realm"] = "ArgentDawn",
+				},
+				["Player-3691-09FB59BC"] = {
+					["name"] = "Xowi-Blackhand",
+					["guid"] = "Player-3691-09FB59BC",
+					["class"] = "ROGUE",
+					["cache_time"] = 1688687303,
+					["realm"] = "Blackhand",
 				},
 				["Player-1302-0C80B670"] = {
 					["name"] = "Rollssfire-Archimonde",
@@ -12646,19 +12848,25 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680258337,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1084-0A4E1384"] = {
-					["name"] = "Varoa-TarrenMill",
-					["guid"] = "Player-1084-0A4E1384",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1689182151,
-					["realm"] = "TarrenMill",
+				["Player-3682-05D07C90"] = {
+					["ilvl"] = 443.625,
+					["guid"] = "Player-3682-05D07C90",
+					["class"] = "WARLOCK",
+					["realm"] = "Ragnaros",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1689281451,
+					["name"] = "Papee-Ragnaros",
+					["specID"] = 267,
+					["enchanter"] = true,
+					["enchantingLvl"] = 105,
+					["rank"] = "Trial",
 				},
-				["Player-1305-0C891B3F"] = {
-					["name"] = "Neymor-Kazzak",
-					["guid"] = "Player-1305-0C891B3F",
-					["class"] = "PALADIN",
-					["cache_time"] = 1688874501,
-					["realm"] = "Kazzak",
+				["Player-3391-0BB7AEA6"] = {
+					["name"] = "Therca-Silvermoon",
+					["guid"] = "Player-3391-0BB7AEA6",
+					["class"] = "DRUID",
+					["cache_time"] = 1687791302,
+					["realm"] = "Silvermoon",
 				},
 				["Player-3681-0ADAB4DA"] = {
 					["name"] = "Madirl-Magtheridon",
@@ -12667,32 +12875,32 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676359629,
 					["realm"] = "Magtheridon",
 				},
-				["Player-3682-097B06C7"] = {
-					["name"] = "Redpool-Ragnaros",
-					["guid"] = "Player-3682-097B06C7",
+				["Player-3391-0C2F015B"] = {
+					["name"] = "Nayòmi-Silvermoon",
+					["guid"] = "Player-3391-0C2F015B",
 					["class"] = "PALADIN",
-					["cache_time"] = 1687304879,
+					["cache_time"] = 1685797754,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3682-0B03A601"] = {
+					["ilvl"] = 416.625,
+					["guid"] = "Player-3682-0B03A601",
+					["class"] = "PALADIN",
+					["rank"] = "Mythic Raider",
+					["role"] = "HEALER",
+					["cache_time"] = 1680813097,
+					["name"] = "Banaltro-Ragnaros",
+					["enchanter"] = true,
+					["specID"] = 65,
+					["enchantingLvl"] = 82,
 					["realm"] = "Ragnaros",
 				},
-				["Player-3686-0A0248F7"] = {
-					["ilvl"] = 430.125,
-					["guid"] = "Player-3686-0A0248F7",
-					["class"] = "PRIEST",
-					["rank"] = "Raider",
-					["role"] = "HEALER",
-					["cache_time"] = 1685128648,
-					["name"] = "Graywolf-Antonidas",
-					["enchanter"] = true,
-					["specID"] = 256,
-					["enchantingLvl"] = 97,
-					["realm"] = "Antonidas",
-				},
-				["Player-1598-081A7697"] = {
-					["name"] = "Trizza-Chromaggus",
-					["guid"] = "Player-1598-081A7697",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676973948,
-					["realm"] = "Chromaggus",
+				["Player-1621-0AC1786A"] = {
+					["name"] = "Yusgan-Cho'gall",
+					["guid"] = "Player-1621-0AC1786A",
+					["class"] = "DRUID",
+					["cache_time"] = 1680292466,
+					["realm"] = "Cho'gall",
 				},
 				["Player-1084-07F39176"] = {
 					["name"] = "Shadballs-TarrenMill",
@@ -12701,17 +12909,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687245813,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1621-0B09C7B6"] = {
-					["ilvl"] = 444.5,
-					["guid"] = "Player-1621-0B09C7B6",
-					["class"] = "EVOKER",
-					["role"] = "HEALER",
-					["cache_time"] = 1690750821,
-					["realm"] = "Dalaran",
-					["name"] = "Valfor-Dalaran",
-					["specID"] = 1468,
-					["enchantingLvl"] = 0,
-					["rank"] = "Roster",
+				["Player-1390-0B8BC333"] = {
+					["name"] = "Banyuk-Hyjal",
+					["guid"] = "Player-1390-0B8BC333",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676973948,
+					["realm"] = "Hyjal",
 				},
 				["Player-3682-0B29E284"] = {
 					["ilvl"] = 443.625,
@@ -12719,18 +12922,18 @@ RCLootCouncilDB = {
 					["class"] = "MONK",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Skaterble-Ragnaros",
 					["specID"] = 269,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
-				["Player-1302-0C1DFDB1"] = {
-					["name"] = "Turtlerollup-Archimonde",
-					["guid"] = "Player-1302-0C1DFDB1",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676912354,
-					["realm"] = "Archimonde",
+				["Player-1305-0C5339CC"] = {
+					["name"] = "Aryzath-Kazzak",
+					["guid"] = "Player-1305-0C5339CC",
+					["class"] = "EVOKER",
+					["cache_time"] = 1684926332,
+					["realm"] = "Kazzak",
 				},
 				["Player-3682-0B050205"] = {
 					["ilvl"] = 410.0625,
@@ -12738,11 +12941,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677093174,
-					["realm"] = "Ragnaros",
+					["rank"] = "Recruiter",
 					["name"] = "Omegacum-Ragnaros",
 					["specID"] = 255,
 					["enchantingLvl"] = 0,
-					["rank"] = "Recruiter",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1085-08F405B7"] = {
 					["name"] = "Maidchan-Moonglade",
@@ -12758,12 +12961,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680262695,
 					["realm"] = "Uldum",
 				},
-				["Player-3703-04E2CD70"] = {
-					["name"] = "Sommerly-Frostwolf",
-					["guid"] = "Player-3703-04E2CD70",
-					["class"] = "PRIEST",
-					["cache_time"] = 1678860427,
-					["realm"] = "Frostwolf",
+				["Player-1305-0C84876A"] = {
+					["name"] = "Palaster-Kazzak",
+					["guid"] = "Player-1305-0C84876A",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687955030,
+					["realm"] = "Kazzak",
 				},
 				["Player-1403-0A683964"] = {
 					["name"] = "Deymoo-Draenor",
@@ -12779,33 +12982,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680470479,
 					["realm"] = "Kazzak",
 				},
-				["Player-1084-05D22D45"] = {
-					["name"] = "Nobrainopain-TarrenMill",
-					["guid"] = "Player-1084-05D22D45",
-					["class"] = "HUNTER",
-					["cache_time"] = 1689352223,
-					["realm"] = "TarrenMill",
-				},
-				["Player-3702-073206ED"] = {
-					["name"] = "Lúthienn-ArgentDawn",
-					["guid"] = "Player-3702-073206ED",
+				["Player-1084-0A2D63E7"] = {
+					["name"] = "Anduinsasimp-TarrenMill",
+					["guid"] = "Player-1084-0A2D63E7",
 					["class"] = "PRIEST",
-					["cache_time"] = 1688687270,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-1379-0AD15E0C"] = {
-					["name"] = "Krysiotv-Zul'jin",
-					["guid"] = "Player-1379-0AD15E0C",
-					["class"] = "EVOKER",
-					["cache_time"] = 1676973948,
-					["realm"] = "Zul'jin",
-				},
-				["Player-1084-0A728CBF"] = {
-					["name"] = "Shrog-TarrenMill",
-					["guid"] = "Player-1084-0A728CBF",
-					["class"] = "HUNTER",
-					["cache_time"] = 1686754263,
+					["cache_time"] = 1687157927,
 					["realm"] = "TarrenMill",
+				},
+				["Player-1084-0A9CD615"] = {
+					["name"] = "Sikyyferal-TarrenMill",
+					["guid"] = "Player-1084-0A9CD615",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687955400,
+					["realm"] = "TarrenMill",
+				},
+				["Player-1597-0D7E2AD8"] = {
+					["name"] = "Rourbe-Sylvanas",
+					["guid"] = "Player-1597-0D7E2AD8",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1688295537,
+					["realm"] = "Sylvanas",
+				},
+				["Player-1335-0507C506"] = {
+					["name"] = "Kéoru-Ysondre",
+					["guid"] = "Player-1335-0507C506",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687949672,
+					["realm"] = "Ysondre",
 				},
 				["Player-1127-0925A26B"] = {
 					["name"] = "Irenicüs-KirinTor",
@@ -12821,12 +13024,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676190291,
 					["realm"] = "Ragnaros",
 				},
-				["Player-581-0A66A0F7"] = {
-					["name"] = "Geniehendrix-Blackrock",
-					["guid"] = "Player-581-0A66A0F7",
-					["class"] = "ROGUE",
-					["cache_time"] = 1676190291,
-					["realm"] = "Blackrock",
+				["Player-1615-0B0B6E52"] = {
+					["name"] = "окейдуд-Ревущийфьорд",
+					["guid"] = "Player-1615-0B0B6E52",
+					["class"] = "MAGE",
+					["cache_time"] = 1687791302,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3691-09EA449E"] = {
 					["name"] = "Druidkuron-Blackhand",
@@ -12835,19 +13038,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689677208,
 					["realm"] = "Blackhand",
 				},
-				["Player-1621-0AC1786A"] = {
-					["name"] = "Yusgan-Cho'gall",
-					["guid"] = "Player-1621-0AC1786A",
-					["class"] = "DRUID",
-					["cache_time"] = 1680292466,
-					["realm"] = "Cho'gall",
+				["Player-1928-0E643539"] = {
+					["name"] = "тембертиг-Седогрив",
+					["guid"] = "Player-1928-0E643539",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1684207643,
+					["realm"] = "Седогрив",
 				},
-				["Player-1084-0A9297E9"] = {
-					["name"] = "Phoeniixx-TarrenMill",
-					["guid"] = "Player-1084-0A9297E9",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676606635,
-					["realm"] = "TarrenMill",
+				["Player-3674-0B0D28D3"] = {
+					["name"] = "Thañatøs-TwistingNether",
+					["guid"] = "Player-3674-0B0D28D3",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1683073733,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1378-081D99CB"] = {
 					["ilvl"] = 417.9375,
@@ -12855,11 +13058,11 @@ RCLootCouncilDB = {
 					["class"] = "SHAMAN",
 					["role"] = "HEALER",
 					["cache_time"] = 1679747022,
-					["realm"] = "DunModr",
+					["rank"] = "Raider Noche",
 					["name"] = "Balp-DunModr",
 					["specID"] = 264,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider Noche",
+					["realm"] = "DunModr",
 				},
 				["Player-3682-05C24B4E"] = {
 					["ilvl"] = 411.3125,
@@ -12867,18 +13070,18 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677533507,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 					["name"] = "Dröw-Ragnaros",
 					["specID"] = 253,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 				},
-				["Player-3391-0C6C954D"] = {
-					["name"] = "Nightrez-Silvermoon",
-					["guid"] = "Player-3391-0C6C954D",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1688303691,
-					["realm"] = "Silvermoon",
+				["Player-1604-0F2A39AA"] = {
+					["name"] = "быканнутый-СвежевательДуш",
+					["guid"] = "Player-1604-0F2A39AA",
+					["class"] = "DRUID",
+					["cache_time"] = 1688866939,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-580-0A718E61"] = {
 					["name"] = "ðasda-Blackmoore",
@@ -12908,12 +13111,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678778673,
 					["realm"] = "Outland",
 				},
-				["Player-1305-0C5339CC"] = {
-					["name"] = "Aryzath-Kazzak",
-					["guid"] = "Player-1305-0C5339CC",
-					["class"] = "EVOKER",
-					["cache_time"] = 1684926332,
-					["realm"] = "Kazzak",
+				["Player-1403-08121AE0"] = {
+					["name"] = "Voedh-Draenor",
+					["guid"] = "Player-1403-08121AE0",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1687041442,
+					["realm"] = "Draenor",
 				},
 				["Player-1403-0A187592"] = {
 					["name"] = "Karikatur-Draenor",
@@ -12922,12 +13125,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676473513,
 					["realm"] = "Draenor",
 				},
-				["Player-1390-0BE351C7"] = {
-					["name"] = "Echysman-Hyjal",
-					["guid"] = "Player-1390-0BE351C7",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1689004698,
-					["realm"] = "Hyjal",
+				["Player-3656-0A9C8ED1"] = {
+					["name"] = "Maggmawl-Stormreaver",
+					["guid"] = "Player-3656-0A9C8ED1",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1686873759,
+					["realm"] = "Stormreaver",
 				},
 				["Player-3691-04D6E251"] = {
 					["name"] = "Ayls-Blackhand",
@@ -12936,25 +13139,25 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684501707,
 					["realm"] = "Blackhand",
 				},
-				["Player-3691-09FB59BC"] = {
-					["name"] = "Xowi-Blackhand",
-					["guid"] = "Player-3691-09FB59BC",
-					["class"] = "ROGUE",
-					["cache_time"] = 1688687303,
-					["realm"] = "Blackhand",
+				["Player-3674-0AC1BDD8"] = {
+					["name"] = "Meap-TwistingNether",
+					["guid"] = "Player-3674-0AC1BDD8",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1680392947,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3682-0A135FA6"] = {
 					["ilvl"] = 441.5625,
 					["guid"] = "Player-3682-0A135FA6",
 					["class"] = "PALADIN",
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688072566,
 					["name"] = "Wrathwings-Ragnaros",
-					["specID"] = 70,
 					["enchanter"] = true,
+					["specID"] = 70,
 					["enchantingLvl"] = 54,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1379-08346B74"] = {
 					["name"] = "Apøcalypse-Zul'jin",
@@ -12977,12 +13180,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684926332,
 					["realm"] = "Blackhand",
 				},
-				["Player-1084-0A2D63E7"] = {
-					["name"] = "Anduinsasimp-TarrenMill",
-					["guid"] = "Player-1084-0A2D63E7",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687157927,
-					["realm"] = "TarrenMill",
+				["Player-581-092D17E0"] = {
+					["name"] = "Fihptak-Blackrock",
+					["guid"] = "Player-581-092D17E0",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1678642525,
+					["realm"] = "Blackrock",
 				},
 				["Player-1587-0EC41F92"] = {
 					["name"] = "Botini-Nagrand",
@@ -13012,32 +13215,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686754263,
 					["realm"] = "Zul'jin",
 				},
-				["Player-1597-0D7E2AD8"] = {
-					["name"] = "Rourbe-Sylvanas",
-					["guid"] = "Player-1597-0D7E2AD8",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1688295537,
-					["realm"] = "Sylvanas",
+				["Player-3674-09213C1F"] = {
+					["name"] = "Kubaiisi-TwistingNether",
+					["guid"] = "Player-3674-09213C1F",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1686935978,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1335-0507C506"] = {
-					["name"] = "Kéoru-Ysondre",
-					["guid"] = "Player-1335-0507C506",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687949672,
-					["realm"] = "Ysondre",
-				},
-				["Player-3682-0B03A601"] = {
-					["ilvl"] = 416.625,
-					["guid"] = "Player-3682-0B03A601",
+				["Player-1305-0C901852"] = {
+					["name"] = "Pikhoo-Kazzak",
+					["guid"] = "Player-1305-0C901852",
 					["class"] = "PALADIN",
-					["realm"] = "Ragnaros",
-					["role"] = "HEALER",
-					["cache_time"] = 1680813097,
-					["name"] = "Banaltro-Ragnaros",
-					["specID"] = 65,
-					["enchanter"] = true,
-					["enchantingLvl"] = 82,
-					["rank"] = "Mythic Raider",
+					["cache_time"] = 1687257934,
+					["realm"] = "Kazzak",
+				},
+				["Player-1602-0C9C71BA"] = {
+					["name"] = "упругийбанан-Гордунни",
+					["guid"] = "Player-1602-0C9C71BA",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1688687270,
+					["realm"] = "Гордунни",
 				},
 				["Player-3682-0B1CE45D"] = {
 					["name"] = "Pleading-Ragnaros",
@@ -13046,12 +13243,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684590154,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1928-0E643539"] = {
-					["name"] = "тембертиг-Седогрив",
-					["guid"] = "Player-1928-0E643539",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1684207643,
-					["realm"] = "Седогрив",
+				["Player-1379-0547C5A6"] = {
+					["name"] = "Shïnna-Sanguino",
+					["guid"] = "Player-1379-0547C5A6",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1688889814,
+					["realm"] = "Sanguino",
 				},
 				["Player-3690-0B15AFBF"] = {
 					["name"] = "Soyon-KhazModan",
@@ -13067,19 +13264,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676201349,
 					["realm"] = "Blackhand",
 				},
-				["Player-1604-0F2A39AA"] = {
-					["name"] = "быканнутый-СвежевательДуш",
-					["guid"] = "Player-1604-0F2A39AA",
-					["class"] = "DRUID",
-					["cache_time"] = 1688866939,
-					["realm"] = "СвежевательДуш",
-				},
-				["Player-1305-0C84876A"] = {
-					["name"] = "Palaster-Kazzak",
-					["guid"] = "Player-1305-0C84876A",
+				["Player-1096-08BC646E"] = {
+					["name"] = "Exion-Ravenholdt",
+					["guid"] = "Player-1096-08BC646E",
 					["class"] = "PALADIN",
-					["cache_time"] = 1687955030,
-					["realm"] = "Kazzak",
+					["cache_time"] = 1687298820,
+					["realm"] = "Ravenholdt",
+				},
+				["Player-581-08B1C644"] = {
+					["name"] = "Teliriyon-Blackrock",
+					["guid"] = "Player-581-08B1C644",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684926332,
+					["realm"] = "Blackrock",
 				},
 				["Player-3674-0B1D5AF9"] = {
 					["name"] = "Kraanpastei-TwistingNether",
@@ -13088,26 +13285,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686935978,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1615-0A61833E"] = {
-					["name"] = "наэки-Ревущийфьорд",
-					["guid"] = "Player-1615-0A61833E",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1687791012,
-					["realm"] = "Ревущийфьорд",
+				["Player-580-07FC697B"] = {
+					["name"] = "Cáph-Blackmoore",
+					["guid"] = "Player-580-07FC697B",
+					["class"] = "MAGE",
+					["cache_time"] = 1687949013,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1084-0A9CD615"] = {
-					["name"] = "Sikyyferal-TarrenMill",
-					["guid"] = "Player-1084-0A9CD615",
+				["Player-580-0A7024EA"] = {
+					["name"] = "Hovérup-Blackmoore",
+					["guid"] = "Player-580-0A7024EA",
 					["class"] = "EVOKER",
-					["cache_time"] = 1687955400,
-					["realm"] = "TarrenMill",
+					["cache_time"] = 1687791302,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1305-0C29064C"] = {
-					["name"] = "Titanïa-Kazzak",
-					["guid"] = "Player-1305-0C29064C",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1688985357,
-					["realm"] = "Kazzak",
+				["Player-1390-0BEB40F9"] = {
+					["name"] = "Tshadow-Hyjal",
+					["guid"] = "Player-1390-0BEB40F9",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1687952836,
+					["realm"] = "Hyjal",
 				},
 				["Player-3713-0A98B5B1"] = {
 					["name"] = "Shavi-BurningLegion",
@@ -13123,40 +13320,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678064508,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-08D84DA2"] = {
-					["name"] = "Kaizokuoprst-Kazzak",
-					["guid"] = "Player-1305-08D84DA2",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687949172,
-					["realm"] = "Kazzak",
-				},
-				["Player-1615-0B0B6E52"] = {
-					["name"] = "окейдуд-Ревущийфьорд",
-					["guid"] = "Player-1615-0B0B6E52",
-					["class"] = "MAGE",
-					["cache_time"] = 1687791302,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-1329-09D666B4"] = {
-					["name"] = "Kanexs-Ravencrest",
-					["guid"] = "Player-1329-09D666B4",
-					["class"] = "ROGUE",
-					["cache_time"] = 1689259343,
-					["realm"] = "Ravencrest",
-				},
-				["Player-1403-0992C7CB"] = {
-					["name"] = "Roastbeff-Draenor",
-					["guid"] = "Player-1403-0992C7CB",
-					["class"] = "DRUID",
-					["cache_time"] = 1680275084,
-					["realm"] = "Draenor",
-				},
-				["Player-3674-0B0D28D3"] = {
-					["name"] = "Thañatøs-TwistingNether",
-					["guid"] = "Player-3674-0B0D28D3",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1683073733,
-					["realm"] = "TwistingNether",
+				["Player-3702-0A94BAE2"] = {
+					["name"] = "Heycj-ArgentDawn",
+					["guid"] = "Player-3702-0A94BAE2",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680437946,
+					["realm"] = "ArgentDawn",
 				},
 				["Player-1307-062DCCCA"] = {
 					["name"] = "Bangrim-ChamberofAspects",
@@ -13165,12 +13334,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676806970,
 					["realm"] = "ChamberofAspects",
 				},
-				["Player-1329-07017853"] = {
-					["name"] = "Afashop-Ravencrest",
-					["guid"] = "Player-1329-07017853",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687248521,
-					["realm"] = "Ravencrest",
+				["Player-3702-0995F4A6"] = {
+					["name"] = "Nieena-ArgentDawn",
+					["guid"] = "Player-3702-0995F4A6",
+					["class"] = "DRUID",
+					["cache_time"] = 1685740823,
+					["realm"] = "ArgentDawn",
+				},
+				["Player-1403-0992C7CB"] = {
+					["name"] = "Roastbeff-Draenor",
+					["guid"] = "Player-1403-0992C7CB",
+					["class"] = "DRUID",
+					["cache_time"] = 1680275084,
+					["realm"] = "Draenor",
+				},
+				["Player-3703-0A030A34"] = {
+					["name"] = "Strongkong-Frostwolf",
+					["guid"] = "Player-3703-0A030A34",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686121310,
+					["realm"] = "Frostwolf",
+				},
+				["Player-580-046B9C68"] = {
+					["name"] = "Hógen-Blackmoore",
+					["guid"] = "Player-580-046B9C68",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1687298820,
+					["realm"] = "Blackmoore",
+				},
+				["Player-1615-0B227E9C"] = {
+					["name"] = "паживойфлекс-Ревущийфьорд",
+					["guid"] = "Player-1615-0B227E9C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685751153,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1624-0B21CC5C"] = {
 					["name"] = "Teia-Illidan",
@@ -13186,12 +13383,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689261945,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1615-0B227E9C"] = {
-					["name"] = "паживойфлекс-Ревущийфьорд",
-					["guid"] = "Player-1615-0B227E9C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685751153,
-					["realm"] = "Ревущийфьорд",
+				["Player-1329-07017853"] = {
+					["name"] = "Afashop-Ravencrest",
+					["guid"] = "Player-1329-07017853",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687248521,
+					["realm"] = "Ravencrest",
 				},
 				["Player-1084-09932012"] = {
 					["name"] = "Burkan-TarrenMill",
@@ -13207,39 +13404,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677392792,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-580-046B9C68"] = {
-					["name"] = "Hógen-Blackmoore",
-					["guid"] = "Player-580-046B9C68",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1687298820,
-					["realm"] = "Blackmoore",
+				["Player-1096-01D4AEF4"] = {
+					["name"] = "Pabby-ScarshieldLegion",
+					["guid"] = "Player-1096-01D4AEF4",
+					["class"] = "HUNTER",
+					["cache_time"] = 1687259258,
+					["realm"] = "ScarshieldLegion",
 				},
-				["Player-1316-0497005A"] = {
-					["ilvl"] = 434.625,
-					["guid"] = "Player-1316-0497005A",
-					["class"] = "SHAMAN",
-					["rank"] = "Social",
-					["role"] = "HEALER",
-					["cache_time"] = 1687949444,
-					["name"] = "Restregone-Nemesis",
-					["enchanter"] = true,
-					["specID"] = 264,
-					["enchantingLvl"] = 98,
+				["Player-1316-0C8E81D7"] = {
+					["name"] = "Bøompleãsure-Nemesis",
+					["guid"] = "Player-1316-0C8E81D7",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687248521,
 					["realm"] = "Nemesis",
 				},
-				["Player-1305-0C02D470"] = {
-					["name"] = "Scrumptlous-Kazzak",
-					["guid"] = "Player-1305-0C02D470",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1680388235,
-					["realm"] = "Kazzak",
+				["Player-1396-0ADCB20F"] = {
+					["name"] = "Mifunesanjur-Quel'Thalas",
+					["guid"] = "Player-1396-0ADCB20F",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1686121310,
+					["realm"] = "Quel'Thalas",
 				},
-				["Player-581-08E406E3"] = {
-					["name"] = "Joghurtladen-Blackrock",
-					["guid"] = "Player-581-08E406E3",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687949013,
-					["realm"] = "Blackrock",
+				["Player-1602-097179CF"] = {
+					["name"] = "алёналёд-Гордунни",
+					["guid"] = "Player-1602-097179CF",
+					["class"] = "MAGE",
+					["cache_time"] = 1687791012,
+					["realm"] = "Гордунни",
 				},
 				["Player-3656-08A88408"] = {
 					["name"] = "Laizkiz-Stormreaver",
@@ -13248,19 +13439,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684413259,
 					["realm"] = "Stormreaver",
 				},
-				["Player-580-0A7024EA"] = {
-					["name"] = "Hovérup-Blackmoore",
-					["guid"] = "Player-580-0A7024EA",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687791302,
-					["realm"] = "Blackmoore",
+				["Player-1084-05CC5F1B"] = {
+					["name"] = "Priestatsu-TarrenMill",
+					["guid"] = "Player-1084-05CC5F1B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690587500,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1602-0F594037"] = {
-					["name"] = "дайвердаун-Гордунни",
-					["guid"] = "Player-1602-0F594037",
-					["class"] = "MONK",
-					["cache_time"] = 1688878042,
-					["realm"] = "Гордунни",
+				["Player-581-0A035A13"] = {
+					["name"] = "Janubian-Blackrock",
+					["guid"] = "Player-581-0A035A13",
+					["class"] = "PRIEST",
+					["cache_time"] = 1678052884,
+					["realm"] = "Blackrock",
 				},
 				["Player-1379-0919A988"] = {
 					["name"] = "Yaküza-Sanguino",
@@ -13269,19 +13460,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679027119,
 					["realm"] = "Sanguino",
 				},
-				["Player-1329-09F67613"] = {
-					["name"] = "Tankbrampa-Ravencrest",
-					["guid"] = "Player-1329-09F67613",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1677524161,
-					["realm"] = "Ravencrest",
+				["Player-1084-0A9DA3CC"] = {
+					["name"] = "Dwafzik-TarrenMill",
+					["guid"] = "Player-1084-0A9DA3CC",
+					["class"] = "MAGE",
+					["cache_time"] = 1690750821,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1390-0C928DFE"] = {
-					["name"] = "Minytonton-Hyjal",
-					["guid"] = "Player-1390-0C928DFE",
-					["class"] = "HUNTER",
-					["cache_time"] = 1689346075,
-					["realm"] = "Hyjal",
+				["Player-3391-0C838AFC"] = {
+					["name"] = "Grêatlord-Silvermoon",
+					["guid"] = "Player-3391-0C838AFC",
+					["class"] = "EVOKER",
+					["cache_time"] = 1680392947,
+					["realm"] = "Silvermoon",
 				},
 				["Player-581-086A47F7"] = {
 					["name"] = "åshley-Blackrock",
@@ -13297,12 +13488,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689800841,
 					["realm"] = "Aggramar",
 				},
-				["Player-1305-0881A7BF"] = {
-					["name"] = "Zoulian-Kazzak",
-					["guid"] = "Player-1305-0881A7BF",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1677885943,
-					["realm"] = "Kazzak",
+				["Player-3674-08FF5A34"] = {
+					["name"] = "Oipi-TwistingNether",
+					["guid"] = "Player-3674-08FF5A34",
+					["class"] = "PRIEST",
+					["cache_time"] = 1679506666,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3674-09BFE70D"] = {
 					["name"] = "Imbaku-TwistingNether",
@@ -13339,12 +13530,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686769399,
 					["realm"] = "Blackmoore",
 				},
-				["Player-1403-0A57D0E7"] = {
-					["name"] = "Penelopex-Draenor",
-					["guid"] = "Player-1403-0A57D0E7",
-					["class"] = "PRIEST",
-					["cache_time"] = 1686696451,
-					["realm"] = "Draenor",
+				["Player-3691-0946A932"] = {
+					["name"] = "Pushl-Blackhand",
+					["guid"] = "Player-3691-0946A932",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1677665404,
+					["realm"] = "Blackhand",
 				},
 				["Player-1602-0F45A2D3"] = {
 					["name"] = "хвал-Гордунни",
@@ -13367,19 +13558,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676479581,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1096-01D4AEF4"] = {
-					["name"] = "Pabby-ScarshieldLegion",
-					["guid"] = "Player-1096-01D4AEF4",
-					["class"] = "HUNTER",
-					["cache_time"] = 1687259258,
-					["realm"] = "ScarshieldLegion",
-				},
-				["Player-1597-0D09B42A"] = {
-					["name"] = "Pewsey-Sylvanas",
-					["guid"] = "Player-1597-0D09B42A",
+				["Player-3692-061461CE"] = {
+					["name"] = "Gauntlgrym-Eredar",
+					["guid"] = "Player-3692-061461CE",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1678411108,
-					["realm"] = "Sylvanas",
+					["cache_time"] = 1687949013,
+					["realm"] = "Eredar",
+				},
+				["Player-2073-09C9E9F2"] = {
+					["name"] = "Sjöhäst-Stormscale",
+					["guid"] = "Player-2073-09C9E9F2",
+					["class"] = "DRUID",
+					["cache_time"] = 1687949013,
+					["realm"] = "Stormscale",
 				},
 				["Player-3692-08132E02"] = {
 					["name"] = "Jayreischamy-Eredar",
@@ -13388,26 +13579,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684502528,
 					["realm"] = "Eredar",
 				},
-				["Player-1396-0ADCB20F"] = {
-					["name"] = "Mifunesanjur-Quel'Thalas",
-					["guid"] = "Player-1396-0ADCB20F",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1686121310,
-					["realm"] = "Quel'Thalas",
+				["Player-3691-050C3777"] = {
+					["name"] = "Rúdi-Blackhand",
+					["guid"] = "Player-3691-050C3777",
+					["class"] = "DRUID",
+					["cache_time"] = 1686988340,
+					["realm"] = "Blackhand",
 				},
-				["Player-1390-0BEB40F9"] = {
-					["name"] = "Tshadow-Hyjal",
-					["guid"] = "Player-1390-0BEB40F9",
+				["Player-3682-0B083399"] = {
+					["name"] = "Olgey-Ragnaros",
+					["guid"] = "Player-3682-0B083399",
 					["class"] = "WARLOCK",
-					["cache_time"] = 1687952836,
-					["realm"] = "Hyjal",
+					["cache_time"] = 1688687303,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1329-09E17821"] = {
-					["name"] = "Syrra-Ravencrest",
-					["guid"] = "Player-1329-09E17821",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1685573070,
-					["realm"] = "Ravencrest",
+				["Player-1615-0AEC533E"] = {
+					["name"] = "майндоф-Ревущийфьорд",
+					["guid"] = "Player-1615-0AEC533E",
+					["class"] = "PRIEST",
+					["cache_time"] = 1686121310,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-2074-0590DAF2"] = {
 					["name"] = "Raylvana-EmeraldDream",
@@ -13430,26 +13621,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689397951,
 					["realm"] = "TarrenMill",
 				},
-				["Player-3657-0AD0802E"] = {
-					["name"] = "Meromay-Bladefist",
-					["guid"] = "Player-3657-0AD0802E",
-					["class"] = "MONK",
-					["cache_time"] = 1687245813,
-					["realm"] = "Bladefist",
+				["Player-1121-05DFF8B7"] = {
+					["name"] = "Klyra-KultderVerdammten",
+					["guid"] = "Player-1121-05DFF8B7",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687298820,
+					["realm"] = "KultderVerdammten",
 				},
-				["Player-1084-0A9DA3CC"] = {
-					["name"] = "Dwafzik-TarrenMill",
-					["guid"] = "Player-1084-0A9DA3CC",
-					["class"] = "MAGE",
-					["cache_time"] = 1690750821,
-					["realm"] = "TarrenMill",
+				["Player-1305-0C520500"] = {
+					["name"] = "Toxiicdemon-Kazzak",
+					["guid"] = "Player-1305-0C520500",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1679861251,
+					["realm"] = "Kazzak",
 				},
-				["Player-3691-06209390"] = {
-					["name"] = "åsenath-Blackhand",
-					["guid"] = "Player-3691-06209390",
-					["class"] = "ROGUE",
-					["cache_time"] = 1686934454,
-					["realm"] = "Blackhand",
+				["Player-3702-0A802FE5"] = {
+					["name"] = "Azolian-ArgentDawn",
+					["guid"] = "Player-3702-0A802FE5",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687791302,
+					["realm"] = "ArgentDawn",
 				},
 				["Player-1302-0C945858"] = {
 					["name"] = "Vilytria-Archimonde",
@@ -13465,26 +13656,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677665404,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-3692-09C174CC"] = {
-					["name"] = "Himmelsseele-Eredar",
-					["guid"] = "Player-3692-09C174CC",
-					["class"] = "DRUID",
-					["cache_time"] = 1687259300,
-					["realm"] = "Eredar",
+				["Player-580-0A602214"] = {
+					["name"] = "Bovar-Blackmoore",
+					["guid"] = "Player-580-0A602214",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687006559,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1096-0A5B4088"] = {
-					["name"] = "Tarras-DefiasBrotherhood",
-					["guid"] = "Player-1096-0A5B4088",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676783114,
-					["realm"] = "DefiasBrotherhood",
+				["Player-3391-0BD1B55C"] = {
+					["name"] = "Juicewrldger-Silvermoon",
+					["guid"] = "Player-3391-0BD1B55C",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676370489,
+					["realm"] = "Silvermoon",
 				},
-				["Player-1597-0D029888"] = {
-					["name"] = "Magpiez-Sylvanas",
-					["guid"] = "Player-1597-0D029888",
-					["class"] = "MAGE",
-					["cache_time"] = 1687958136,
-					["realm"] = "Sylvanas",
+				["Player-580-04AB32C1"] = {
+					["name"] = "Grigórij-Blackmoore",
+					["guid"] = "Player-580-04AB32C1",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676988297,
+					["realm"] = "Blackmoore",
 				},
 				["Player-3691-09E800B8"] = {
 					["name"] = "Drannih-Blackhand",
@@ -13493,12 +13684,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684926332,
 					["realm"] = "Blackhand",
 				},
-				["Player-1316-0C8E81D7"] = {
-					["name"] = "Bøompleãsure-Nemesis",
-					["guid"] = "Player-1316-0C8E81D7",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687248521,
-					["realm"] = "Nemesis",
+				["Player-1597-0D029888"] = {
+					["name"] = "Magpiez-Sylvanas",
+					["guid"] = "Player-1597-0D029888",
+					["class"] = "MAGE",
+					["cache_time"] = 1687958136,
+					["realm"] = "Sylvanas",
 				},
 				["Player-509-0A1D453C"] = {
 					["name"] = "Rehezark-Ner'zhul",
@@ -13507,12 +13698,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685781186,
 					["realm"] = "Ner'zhul",
 				},
-				["Player-1390-06DC3558"] = {
-					["name"] = "Schad-Hyjal",
-					["guid"] = "Player-1390-06DC3558",
-					["class"] = "DRUID",
-					["cache_time"] = 1677607044,
-					["realm"] = "Hyjal",
+				["Player-1104-0A2E6840"] = {
+					["name"] = "Thamantis-Gul'dan",
+					["guid"] = "Player-1104-0A2E6840",
+					["class"] = "MAGE",
+					["cache_time"] = 1686754263,
+					["realm"] = "Gul'dan",
 				},
 				["Player-1305-0C7934BE"] = {
 					["name"] = "Zelenjy-Kazzak",
@@ -13535,12 +13726,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687949013,
 					["realm"] = "Kazzak",
 				},
-				["Player-1403-0A261BEC"] = {
-					["name"] = "Whaytank-Draenor",
-					["guid"] = "Player-1403-0A261BEC",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1677665404,
-					["realm"] = "Draenor",
+				["Player-604-04040D35"] = {
+					["name"] = "Caddi-Thrall",
+					["guid"] = "Player-604-04040D35",
+					["class"] = "DRUID",
+					["cache_time"] = 1687949172,
+					["realm"] = "Thrall",
 				},
 				["Player-1305-0C02A011"] = {
 					["name"] = "Coldcuut-Kazzak",
@@ -13562,11 +13753,18 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686170267,
-					["realm"] = "Ragnaros",
+					["rank"] = "Guild Master",
 					["name"] = "Otplorettv-Ragnaros",
 					["specID"] = 70,
 					["enchantingLvl"] = 0,
-					["rank"] = "Guild Master",
+					["realm"] = "Ragnaros",
+				},
+				["Player-3696-09B813FA"] = {
+					["name"] = "Brewio-Nethersturm",
+					["guid"] = "Player-3696-09B813FA",
+					["class"] = "MONK",
+					["cache_time"] = 1689677222,
+					["realm"] = "Nethersturm",
 				},
 				["Player-1325-09F8A36E"] = {
 					["name"] = "Wastra-Hellscream",
@@ -13574,13 +13772,6 @@ RCLootCouncilDB = {
 					["class"] = "EVOKER",
 					["cache_time"] = 1676170280,
 					["realm"] = "Hellscream",
-				},
-				["Player-1303-0C0546D3"] = {
-					["name"] = "Reydemon-Aggra(Português)",
-					["guid"] = "Player-1303-0C0546D3",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1689853880,
-					["realm"] = "Aggra(Português)",
 				},
 				["Player-2073-0693D5F2"] = {
 					["name"] = "Xanaro-Stormscale",
@@ -13614,24 +13805,10 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Rbj-Kazzak",
 					["guid"] = "Player-1305-0C93D336",
-					["realm"] = "Kazzak",
+					["rank"] = "Unguilded",
 					["class"] = "HUNTER",
 					["cache_time"] = 1687956944,
-					["rank"] = "Unguilded",
-				},
-				["Player-1403-0A2FA03E"] = {
-					["name"] = "Hunderri-Draenor",
-					["guid"] = "Player-1403-0A2FA03E",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676387096,
-					["realm"] = "Draenor",
-				},
-				["Player-1329-0A028AAF"] = {
-					["name"] = "Pewpewdrake-Ravencrest",
-					["guid"] = "Player-1329-0A028AAF",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689245123,
-					["realm"] = "Ravencrest",
+					["realm"] = "Kazzak",
 				},
 				["Player-1305-0C831A40"] = {
 					["name"] = "Monsterii-Kazzak",
@@ -13640,12 +13817,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684561507,
 					["realm"] = "Kazzak",
 				},
-				["Player-3690-0A8FD22C"] = {
-					["name"] = "Vultix-KhazModan",
-					["guid"] = "Player-3690-0A8FD22C",
-					["class"] = "ROGUE",
-					["cache_time"] = 1685751153,
-					["realm"] = "KhazModan",
+				["Player-1329-0A028AAF"] = {
+					["name"] = "Pewpewdrake-Ravencrest",
+					["guid"] = "Player-1329-0A028AAF",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689245123,
+					["realm"] = "Ravencrest",
+				},
+				["Player-1303-0C0546D3"] = {
+					["name"] = "Reydemon-Aggra(Português)",
+					["guid"] = "Player-1303-0C0546D3",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1689853880,
+					["realm"] = "Aggra(Português)",
+				},
+				["Player-1084-0A8F9558"] = {
+					["name"] = "Zóya-TarrenMill",
+					["guid"] = "Player-1084-0A8F9558",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676387096,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1390-0C88F594"] = {
 					["name"] = "Rëpùrgãteur-Hyjal",
@@ -13654,26 +13845,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689346075,
 					["realm"] = "Hyjal",
 				},
-				["Player-1602-0AF7EF79"] = {
-					["name"] = "стелогрив-Гордунни",
-					["guid"] = "Player-1602-0AF7EF79",
-					["class"] = "HUNTER",
-					["cache_time"] = 1686971553,
-					["realm"] = "Гордунни",
+				["Player-1316-0C547B0D"] = {
+					["name"] = "Shevana-Nemesis",
+					["guid"] = "Player-1316-0C547B0D",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687952836,
+					["realm"] = "Nemesis",
 				},
-				["Player-3691-050C3777"] = {
-					["name"] = "Rúdi-Blackhand",
-					["guid"] = "Player-3691-050C3777",
-					["class"] = "DRUID",
-					["cache_time"] = 1686988340,
-					["realm"] = "Blackhand",
+				["Player-1316-07F55442"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Zarhigna-Nemesis",
+					["guid"] = "Player-1316-07F55442",
+					["realm"] = "Nemesis",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1677489750,
+					["rank"] = "Alt Officer",
 				},
-				["Player-1379-030F2A31"] = {
-					["name"] = "Primitivix-Zul'jin",
-					["guid"] = "Player-1379-030F2A31",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685745517,
-					["realm"] = "Zul'jin",
+				["Player-1598-0F0402B8"] = {
+					["ilvl"] = 437.0625,
+					["guid"] = "Player-1598-0F0402B8",
+					["class"] = "MONK",
+					["role"] = "HEALER",
+					["cache_time"] = 1687260231,
+					["rank"] = "Officer Main",
+					["name"] = "Sprecher-LaughingSkull",
+					["specID"] = 270,
+					["enchantingLvl"] = 0,
+					["realm"] = "LaughingSkull",
 				},
 				["Player-1329-052CADD1"] = {
 					["name"] = "Athanasius-Ravencrest",
@@ -13682,12 +13880,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685872694,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1621-055E5FDE"] = {
-					["name"] = "Avøne-Dalaran",
-					["guid"] = "Player-1621-055E5FDE",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687041442,
-					["realm"] = "Dalaran",
+				["Player-1929-0E5FEE22"] = {
+					["name"] = "такмор-ПиратскаяБухта",
+					["guid"] = "Player-1929-0E5FEE22",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686985298,
+					["realm"] = "ПиратскаяБухта",
 				},
 				["Player-1329-097E0E51"] = {
 					["name"] = "Illidrious-Ravencrest",
@@ -13696,12 +13894,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687257934,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1403-0A553F12"] = {
-					["name"] = "Tamii-Draenor",
-					["guid"] = "Player-1403-0A553F12",
-					["class"] = "ROGUE",
-					["cache_time"] = 1678536389,
-					["realm"] = "Draenor",
+				["Player-3686-05E38088"] = {
+					["name"] = "Brechthilde-Antonidas",
+					["guid"] = "Player-3686-05E38088",
+					["class"] = "HUNTER",
+					["cache_time"] = 1686933987,
+					["realm"] = "Antonidas",
 				},
 				["Player-1403-0A1D9A57"] = {
 					["name"] = "Knæbind-Draenor",
@@ -13717,12 +13915,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684235960,
 					["realm"] = "Hyjal",
 				},
-				["Player-1302-0C8EAD97"] = {
-					["name"] = "Wzaka-Archimonde",
-					["guid"] = "Player-1302-0C8EAD97",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687261056,
-					["realm"] = "Archimonde",
+				["Player-3666-07C8FB83"] = {
+					["name"] = "Strago-Shadowsong",
+					["guid"] = "Player-3666-07C8FB83",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687949172,
+					["realm"] = "Shadowsong",
 				},
 				["Player-1929-0E44602D"] = {
 					["name"] = "квестер-ПиратскаяБухта",
@@ -13731,12 +13929,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685745460,
 					["realm"] = "ПиратскаяБухта",
 				},
-				["Player-3674-0B1D4BE8"] = {
-					["name"] = "Demorc-TwistingNether",
-					["guid"] = "Player-3674-0B1D4BE8",
-					["class"] = "ROGUE",
-					["cache_time"] = 1679963788,
-					["realm"] = "TwistingNether",
+				["Player-612-0A668579"] = {
+					["name"] = "Exxo-Destromath",
+					["guid"] = "Player-612-0A668579",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687102798,
+					["realm"] = "Destromath",
 				},
 				["Player-3674-0B1ED41F"] = {
 					["name"] = "Curlide-TwistingNether",
@@ -13752,26 +13950,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687006559,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-1305-0C520500"] = {
-					["name"] = "Toxiicdemon-Kazzak",
-					["guid"] = "Player-1305-0C520500",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1679861251,
+				["Player-1379-07C085B3"] = {
+					["name"] = "Vunlak-Sanguino",
+					["guid"] = "Player-1379-07C085B3",
+					["class"] = "DRUID",
+					["cache_time"] = 1687949172,
+					["realm"] = "Sanguino",
+				},
+				["Player-1329-09DB39A1"] = {
+					["name"] = "Blueyed-Ravencrest",
+					["guid"] = "Player-1329-09DB39A1",
+					["class"] = "MAGE",
+					["cache_time"] = 1686933987,
+					["realm"] = "Ravencrest",
+				},
+				["Player-1305-0C8EF384"] = {
+					["name"] = "Tóothlèss-Kazzak",
+					["guid"] = "Player-1305-0C8EF384",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689677222,
 					["realm"] = "Kazzak",
-				},
-				["Player-1084-0A8F9558"] = {
-					["name"] = "Zóya-TarrenMill",
-					["guid"] = "Player-1084-0A8F9558",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676387096,
-					["realm"] = "TarrenMill",
-				},
-				["Player-3674-0B10B5BC"] = {
-					["name"] = "Kishidan-TwistingNether",
-					["guid"] = "Player-3674-0B10B5BC",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1683963823,
-					["realm"] = "TwistingNether",
 				},
 				["Player-1624-056BC846"] = {
 					["name"] = "Eltharyon-Illidan",
@@ -13787,12 +13985,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680416854,
 					["realm"] = "Draenor",
 				},
-				["Player-3691-09D3ED6C"] = {
-					["name"] = "Reddáwn-Blackhand",
-					["guid"] = "Player-3691-09D3ED6C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684926332,
-					["realm"] = "Blackhand",
+				["Player-1604-0F454DAD"] = {
+					["name"] = "аленкинакин-СвежевательДуш",
+					["guid"] = "Player-1604-0F454DAD",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1687102801,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-1403-09D770C3"] = {
 					["name"] = "Starnter-Draenor",
@@ -13801,19 +13999,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676516463,
 					["realm"] = "Draenor",
 				},
-				["Player-580-04AB32C1"] = {
-					["name"] = "Grigórij-Blackmoore",
-					["guid"] = "Player-580-04AB32C1",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676988297,
-					["realm"] = "Blackmoore",
+				["Player-604-09EEA15F"] = {
+					["name"] = "Milian-Thrall",
+					["guid"] = "Player-604-09EEA15F",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1687257934,
+					["realm"] = "Thrall",
 				},
-				["Player-3686-0A03847B"] = {
-					["name"] = "Maoami-Antonidas",
-					["guid"] = "Player-3686-0A03847B",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687259300,
-					["realm"] = "Antonidas",
+				["Player-1127-09755ACD"] = {
+					["name"] = "ölwu-LaCroisadeécarlate",
+					["guid"] = "Player-1127-09755ACD",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1688927498,
+					["realm"] = "LaCroisadeécarlate",
 				},
 				["Player-1403-0A4D9729"] = {
 					["name"] = "Chronio-Draenor",
@@ -13836,25 +14034,25 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684481197,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1127-09755ACD"] = {
-					["name"] = "ölwu-LaCroisadeécarlate",
-					["guid"] = "Player-1127-09755ACD",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1688927498,
-					["realm"] = "LaCroisadeécarlate",
+				["Player-3713-0A883B8B"] = {
+					["name"] = "Riupala-BurningLegion",
+					["guid"] = "Player-3713-0A883B8B",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686037845,
+					["realm"] = "BurningLegion",
 				},
-				["Player-1104-0A2E6840"] = {
-					["name"] = "Thamantis-Gul'dan",
-					["guid"] = "Player-1104-0A2E6840",
-					["class"] = "MAGE",
-					["cache_time"] = 1686754263,
-					["realm"] = "Gul'dan",
-				},
-				["Player-3682-0B09B14B"] = {
-					["name"] = "Angale-Ragnaros",
-					["guid"] = "Player-3682-0B09B14B",
+				["Player-3391-0C61E24A"] = {
+					["name"] = "Borryusa-Silvermoon",
+					["guid"] = "Player-3391-0C61E24A",
 					["class"] = "EVOKER",
-					["cache_time"] = 1687956943,
+					["cache_time"] = 1686934454,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3682-05C5D679"] = {
+					["name"] = "Lódís-Ragnaros",
+					["guid"] = "Player-3682-05C5D679",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1676533093,
 					["realm"] = "Ragnaros",
 				},
 				["Player-1602-0F5EF797"] = {
@@ -13871,12 +14069,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680646233,
 					["realm"] = "Draenor",
 				},
-				["Player-3686-05E38088"] = {
-					["name"] = "Brechthilde-Antonidas",
-					["guid"] = "Player-3686-05E38088",
-					["class"] = "HUNTER",
-					["cache_time"] = 1686933987,
-					["realm"] = "Antonidas",
+				["Player-1379-079F03EA"] = {
+					["name"] = "Quoperz-Sanguino",
+					["guid"] = "Player-1379-079F03EA",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1677665404,
+					["realm"] = "Sanguino",
 				},
 				["Player-1335-09E805C0"] = {
 					["name"] = "Mostrasza-Ysondre",
@@ -13892,12 +14090,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690510866,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-1390-0C7CFB8D"] = {
-					["name"] = "Winghost-Hyjal",
-					["guid"] = "Player-1390-0C7CFB8D",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676169646,
-					["realm"] = "Hyjal",
+				["Player-581-0A5EEC98"] = {
+					["name"] = "Translucent-Blackrock",
+					["guid"] = "Player-581-0A5EEC98",
+					["class"] = "PRIEST",
+					["cache_time"] = 1686935978,
+					["realm"] = "Blackrock",
 				},
 				["Player-3674-0AED5EB3"] = {
 					["name"] = "Addalici-TwistingNether",
@@ -13906,19 +14104,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690410513,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1305-087AA155"] = {
-					["name"] = "Kushina-Kazzak",
-					["guid"] = "Player-1305-087AA155",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686934454,
-					["realm"] = "Kazzak",
+				["Player-1604-0EC9B2C7"] = {
+					["name"] = "джиэл-СвежевательДуш",
+					["guid"] = "Player-1604-0EC9B2C7",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1675869114,
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1316-0C547B0D"] = {
-					["name"] = "Shevana-Nemesis",
-					["guid"] = "Player-1316-0C547B0D",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687952836,
-					["realm"] = "Nemesis",
+				["Player-1596-075D11E3"] = {
+					["name"] = "Naughtykitty-TheMaelstrom",
+					["guid"] = "Player-1596-075D11E3",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677665404,
+					["realm"] = "TheMaelstrom",
 				},
 				["Player-1325-0A07A9D2"] = {
 					["name"] = "Elderbeast-Aggramar",
@@ -13934,19 +14132,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677607191,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3391-0C61E24A"] = {
-					["name"] = "Borryusa-Silvermoon",
-					["guid"] = "Player-3391-0C61E24A",
-					["class"] = "EVOKER",
-					["cache_time"] = 1686934454,
-					["realm"] = "Silvermoon",
-				},
-				["Player-1379-07C085B3"] = {
-					["name"] = "Vunlak-Sanguino",
-					["guid"] = "Player-1379-07C085B3",
-					["class"] = "DRUID",
-					["cache_time"] = 1687949172,
-					["realm"] = "Sanguino",
+				["Player-1403-05A6F28E"] = {
+					["name"] = "Fandensjølv-Draenor",
+					["guid"] = "Player-1403-05A6F28E",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687157927,
+					["realm"] = "Draenor",
 				},
 				["Player-3657-0A968AF9"] = {
 					["name"] = "Dampovnen-Frostwhisper",
@@ -13954,6 +14145,13 @@ RCLootCouncilDB = {
 					["class"] = "MONK",
 					["cache_time"] = 1677253640,
 					["realm"] = "Frostwhisper",
+				},
+				["Player-3681-07F449E5"] = {
+					["name"] = "Glassildur-Magtheridon",
+					["guid"] = "Player-3681-07F449E5",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677879103,
+					["realm"] = "Magtheridon",
 				},
 				["Player-1325-03FC8BBF"] = {
 					["name"] = "Elldritch-Hellscream",
@@ -13969,12 +14167,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677607191,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3681-07F449E5"] = {
-					["name"] = "Glassildur-Magtheridon",
-					["guid"] = "Player-3681-07F449E5",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677879103,
-					["realm"] = "Magtheridon",
+				["Player-1406-0488401E"] = {
+					["name"] = "Wombad-Khaz'goroth",
+					["guid"] = "Player-1406-0488401E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1689699139,
+					["realm"] = "Khaz'goroth",
 				},
 				["Player-1604-0F3DE26A"] = {
 					["name"] = "аксвойд-СвежевательДуш",
@@ -14018,19 +14216,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687041442,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1929-0E5FEE22"] = {
-					["name"] = "такмор-ПиратскаяБухта",
-					["guid"] = "Player-1929-0E5FEE22",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686985298,
-					["realm"] = "ПиратскаяБухта",
+				["Player-2073-071707DF"] = {
+					["name"] = "Agapimenus-Stormscale",
+					["guid"] = "Player-2073-071707DF",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1684413259,
+					["realm"] = "Stormscale",
 				},
-				["Player-1379-079F03EA"] = {
-					["name"] = "Quoperz-Sanguino",
-					["guid"] = "Player-1379-079F03EA",
+				["Player-3674-0AEB1E44"] = {
+					["name"] = "Gacangur-TwistingNether",
+					["guid"] = "Player-3674-0AEB1E44",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1677665404,
-					["realm"] = "Sanguino",
+					["cache_time"] = 1680290994,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1305-0512B06B"] = {
 					["name"] = "Braincow-Kazzak",
@@ -14046,19 +14244,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676169646,
 					["realm"] = "ShatteredHand",
 				},
-				["Player-3666-07C8FB83"] = {
-					["name"] = "Strago-Shadowsong",
-					["guid"] = "Player-3666-07C8FB83",
+				["Player-1379-054CD187"] = {
+					["name"] = "Eathordk-Sanguino",
+					["guid"] = "Player-1379-054CD187",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687949172,
-					["realm"] = "Shadowsong",
+					["cache_time"] = 1678860427,
+					["realm"] = "Sanguino",
 				},
-				["Player-581-0A5EEC98"] = {
-					["name"] = "Translucent-Blackrock",
-					["guid"] = "Player-581-0A5EEC98",
-					["class"] = "PRIEST",
-					["cache_time"] = 1686935978,
-					["realm"] = "Blackrock",
+				["Player-1084-0A68C9A1"] = {
+					["name"] = "Sokekboii-TarrenMill",
+					["guid"] = "Player-1084-0A68C9A1",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1687040673,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1403-0A6A5C44"] = {
 					["name"] = "Azarekh-Draenor",
@@ -14074,32 +14272,32 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676976224,
 					["realm"] = "Antonidas",
 				},
-				["Player-1305-0C800179"] = {
-					["name"] = "Mahejdi-Kazzak",
-					["guid"] = "Player-1305-0C800179",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687791012,
-					["realm"] = "Kazzak",
+				["Player-1379-052D61CE"] = {
+					["name"] = "Bullord-Uldum",
+					["guid"] = "Player-1379-052D61CE",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686934454,
+					["realm"] = "Uldum",
 				},
-				["Player-1379-054CD187"] = {
-					["name"] = "Eathordk-Sanguino",
-					["guid"] = "Player-1379-054CD187",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1678860427,
-					["realm"] = "Sanguino",
+				["Player-3674-0902FA6E"] = {
+					["name"] = "Indix-TwistingNether",
+					["guid"] = "Player-3674-0902FA6E",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686933987,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3682-08D0CBD2"] = {
 					["ilvl"] = 436.6875,
 					["guid"] = "Player-3682-08D0CBD2",
 					["class"] = "PRIEST",
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686165996,
 					["name"] = "Mylkme-Ragnaros",
-					["enchanter"] = true,
 					["specID"] = 258,
+					["enchanter"] = true,
 					["enchantingLvl"] = 51,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 				},
 				["Player-1329-0419295C"] = {
 					["name"] = "Valdrion-Ravencrest",
@@ -14108,12 +14306,17 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688295537,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1623-0A9AA869"] = {
-					["name"] = "белоусов-Дракономор",
-					["guid"] = "Player-1623-0A9AA869",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1685437969,
-					["realm"] = "Дракономор",
+				["Player-1378-0AD5981A"] = {
+					["ilvl"] = 439.75,
+					["guid"] = "Player-1378-0AD5981A",
+					["class"] = "DEMONHUNTER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1685488946,
+					["rank"] = "Oficial",
+					["name"] = "Mortha-DunModr",
+					["specID"] = 577,
+					["enchantingLvl"] = 0,
+					["realm"] = "DunModr",
 				},
 				["Player-3691-064C321A"] = {
 					["name"] = "Dämoschlitz-Blackhand",
@@ -14129,12 +14332,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687954070,
 					["realm"] = "Kazzak",
 				},
-				["Player-1604-0EC9B2C7"] = {
-					["name"] = "джиэл-СвежевательДуш",
-					["guid"] = "Player-1604-0EC9B2C7",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1675869114,
-					["realm"] = "СвежевательДуш",
+				["Player-1602-0BEC9ED5"] = {
+					["name"] = "сикама-Гордунни",
+					["guid"] = "Player-1602-0BEC9ED5",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1679197333,
+					["realm"] = "Гордунни",
 				},
 				["Player-1403-0A089F59"] = {
 					["name"] = "Jøkér-Draenor",
@@ -14143,26 +14346,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684501707,
 					["realm"] = "Draenor",
 				},
-				["Player-3391-086EA3AF"] = {
-					["name"] = "Elhesia-Silvermoon",
-					["guid"] = "Player-3391-086EA3AF",
-					["class"] = "DRUID",
-					["cache_time"] = 1687298820,
-					["realm"] = "Silvermoon",
-				},
-				["Player-1403-05A6F28E"] = {
-					["name"] = "Fandensjølv-Draenor",
-					["guid"] = "Player-1403-05A6F28E",
+				["Player-1390-0AE4C87D"] = {
+					["name"] = "Zïwak-Hyjal",
+					["guid"] = "Player-1390-0AE4C87D",
 					["class"] = "PALADIN",
-					["cache_time"] = 1687157927,
-					["realm"] = "Draenor",
+					["cache_time"] = 1687041442,
+					["realm"] = "Hyjal",
 				},
-				["Player-1329-09DB39A1"] = {
-					["name"] = "Blueyed-Ravencrest",
-					["guid"] = "Player-1329-09DB39A1",
-					["class"] = "MAGE",
-					["cache_time"] = 1686933987,
-					["realm"] = "Ravencrest",
+				["Player-1305-0C1CD47D"] = {
+					["name"] = "Cllaaw-Kazzak",
+					["guid"] = "Player-1305-0C1CD47D",
+					["class"] = "HUNTER",
+					["cache_time"] = 1687157932,
+					["realm"] = "Kazzak",
+				},
+				["Player-2073-043063D3"] = {
+					["name"] = "Vegapuncked-Stormscale",
+					["guid"] = "Player-2073-043063D3",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1680754040,
+					["realm"] = "Stormscale",
 				},
 				["Player-1602-0A5764ED"] = {
 					["name"] = "еллизаздрра-Гордунни",
@@ -14185,31 +14388,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1675869174,
 					["realm"] = "Ysondre",
 				},
-				["Player-1378-0AD5981A"] = {
-					["ilvl"] = 439.75,
-					["guid"] = "Player-1378-0AD5981A",
-					["class"] = "DEMONHUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1685488946,
-					["realm"] = "DunModr",
-					["name"] = "Mortha-DunModr",
-					["specID"] = 577,
-					["enchantingLvl"] = 0,
-					["rank"] = "Oficial",
+				["Player-3674-0B1F7105"] = {
+					["name"] = "Nagå-TwistingNether",
+					["guid"] = "Player-3674-0B1F7105",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1680470506,
+					["realm"] = "TwistingNether",
 				},
-				["Player-3682-0AF6EC75"] = {
-					["name"] = "Samysk-Ragnaros",
-					["guid"] = "Player-3682-0AF6EC75",
-					["class"] = "DRUID",
-					["cache_time"] = 1676814556,
-					["realm"] = "Ragnaros",
+				["Player-1329-09D6ACF2"] = {
+					["name"] = "Acidbullet-Ravencrest",
+					["guid"] = "Player-1329-09D6ACF2",
+					["class"] = "ROGUE",
+					["cache_time"] = 1677491796,
+					["realm"] = "Ravencrest",
 				},
-				["Player-3713-0AB9ED7F"] = {
-					["name"] = "Asterdk-BurningLegion",
-					["guid"] = "Player-3713-0AB9ED7F",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1677077290,
-					["realm"] = "BurningLegion",
+				["Player-3674-0AA86D60"] = {
+					["name"] = "Qcr-TwistingNether",
+					["guid"] = "Player-3674-0AA86D60",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687248521,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1127-099C0190"] = {
 					["name"] = "Panamros-KirinTor",
@@ -14225,12 +14423,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687131682,
 					["realm"] = "Ysondre",
 				},
-				["Player-3674-0AA86D60"] = {
-					["name"] = "Qcr-TwistingNether",
-					["guid"] = "Player-3674-0AA86D60",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687248521,
-					["realm"] = "TwistingNether",
+				["Player-3713-0AB9ED7F"] = {
+					["name"] = "Asterdk-BurningLegion",
+					["guid"] = "Player-3713-0AB9ED7F",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1677077290,
+					["realm"] = "BurningLegion",
 				},
 				["Player-1615-0AFB5C51"] = {
 					["name"] = "ерликх-Ревущийфьорд",
@@ -14246,12 +14444,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677518150,
 					["realm"] = "Magtheridon",
 				},
-				["Player-1403-0A244158"] = {
-					["name"] = "Healstone-Draenor",
-					["guid"] = "Player-1403-0A244158",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1684277685,
-					["realm"] = "Draenor",
+				["Player-2073-09DAF9EF"] = {
+					["name"] = "Felhorns-Stormscale",
+					["guid"] = "Player-2073-09DAF9EF",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1713977591,
+					["realm"] = "Stormscale",
 				},
 				["Player-3682-0821C83F"] = {
 					["ilvl"] = 403.75,
@@ -14259,18 +14457,18 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "HEALER",
 					["cache_time"] = 1677101991,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["name"] = "Greituke-Ragnaros",
 					["specID"] = 256,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
-				["Player-3674-0902FA6E"] = {
-					["name"] = "Indix-TwistingNether",
-					["guid"] = "Player-3674-0902FA6E",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686933987,
-					["realm"] = "TwistingNether",
+				["Player-1309-0C93D1BD"] = {
+					["name"] = "Bustagiusta-Pozzodell'Eternità",
+					["guid"] = "Player-1309-0C93D1BD",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1687248521,
+					["realm"] = "Pozzodell'Eternità",
 				},
 				["Player-1615-0AF0052D"] = {
 					["name"] = "николетка-Ревущийфьорд",
@@ -14279,12 +14477,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676957174,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1305-0C1CD47D"] = {
-					["name"] = "Cllaaw-Kazzak",
-					["guid"] = "Player-1305-0C1CD47D",
-					["class"] = "HUNTER",
-					["cache_time"] = 1687157932,
-					["realm"] = "Kazzak",
+				["Player-3674-0B18C8DE"] = {
+					["name"] = "Güldaan-TwistingNether",
+					["guid"] = "Player-3674-0B18C8DE",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676201349,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1379-0ABC46B0"] = {
 					["ilvl"] = 399.875,
@@ -14292,11 +14490,11 @@ RCLootCouncilDB = {
 					["class"] = "MAGE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1676958063,
-					["rank"] = "Raider",
+					["realm"] = "Sanguino",
 					["name"] = "Atryx-Sanguino",
 					["specID"] = 64,
 					["enchantingLvl"] = 0,
-					["realm"] = "Sanguino",
+					["rank"] = "Raider",
 				},
 				["Player-3682-0AE8B7FF"] = {
 					["ilvl"] = 444.1875,
@@ -14304,18 +14502,18 @@ RCLootCouncilDB = {
 					["class"] = "MAGE",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1688418037,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Djsmurkioqtx-Ragnaros",
 					["specID"] = 63,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
-				["Player-1390-0AE4C87D"] = {
-					["name"] = "Zïwak-Hyjal",
-					["guid"] = "Player-1390-0AE4C87D",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687041442,
-					["realm"] = "Hyjal",
+				["Player-1305-0C3EA383"] = {
+					["name"] = "Eledudu-Kazzak",
+					["guid"] = "Player-1305-0C3EA383",
+					["class"] = "DRUID",
+					["cache_time"] = 1686933987,
+					["realm"] = "Kazzak",
 				},
 				["Player-1084-0A6FD916"] = {
 					["name"] = "Kitiandra-TarrenMill",
@@ -14338,12 +14536,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684221806,
 					["realm"] = "Silvermoon",
 				},
-				["Player-3691-09E58712"] = {
-					["name"] = "Yinna-Blackhand",
-					["guid"] = "Player-3691-09E58712",
+				["Player-3682-0B0C0F10"] = {
+					["name"] = "Milkeix-Ragnaros",
+					["guid"] = "Player-3682-0B0C0F10",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1676208606,
-					["realm"] = "Blackhand",
+					["cache_time"] = 1677879103,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1329-09EDBAAE"] = {
 					["name"] = "Chocolina-Ravencrest",
@@ -14359,32 +14557,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676372636,
 					["realm"] = "Drek'Thar",
 				},
-				["Player-1121-04B021BC"] = {
-					["name"] = "Quelly-DasSyndikat",
-					["guid"] = "Player-1121-04B021BC",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676973948,
-					["realm"] = "DasSyndikat",
-				},
-				["Player-3674-0AF8F5A7"] = {
-					["ilvl"] = 426.375,
-					["guid"] = "Player-3674-0AF8F5A7",
-					["class"] = "SHAMAN",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1684235960,
-					["rank"] = "Raider",
-					["name"] = "Duriann-TwistingNether",
-					["specID"] = 263,
-					["enchantingLvl"] = 0,
-					["realm"] = "TwistingNether",
-				},
-				["Player-1305-0C6436AD"] = {
-					["name"] = "Xoraa-Kazzak",
-					["guid"] = "Player-1305-0C6436AD",
-					["class"] = "DRUID",
-					["cache_time"] = 1677339563,
-					["realm"] = "Kazzak",
-				},
 				["Player-3657-0ABCF53F"] = {
 					["name"] = "Ruipelo-Frostwhisper",
 					["guid"] = "Player-3657-0ABCF53F",
@@ -14399,12 +14571,38 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689253178,
 					["realm"] = "Kazzak",
 				},
-				["Player-3691-099C70CE"] = {
-					["name"] = "Suppay-Blackhand",
-					["guid"] = "Player-3691-099C70CE",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1687298820,
-					["realm"] = "Blackhand",
+				["Player-1305-0C6436AD"] = {
+					["name"] = "Xoraa-Kazzak",
+					["guid"] = "Player-1305-0C6436AD",
+					["class"] = "DRUID",
+					["cache_time"] = 1677339563,
+					["realm"] = "Kazzak",
+				},
+				["Player-578-075A3050"] = {
+					["name"] = "Umbraculum-Wrathbringer",
+					["guid"] = "Player-578-075A3050",
+					["class"] = "PRIEST",
+					["cache_time"] = 1679570387,
+					["realm"] = "Wrathbringer",
+				},
+				["Player-3674-0AF8F5A7"] = {
+					["ilvl"] = 426.375,
+					["guid"] = "Player-3674-0AF8F5A7",
+					["class"] = "SHAMAN",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1684235960,
+					["realm"] = "TwistingNether",
+					["name"] = "Duriann-TwistingNether",
+					["specID"] = 263,
+					["enchantingLvl"] = 0,
+					["rank"] = "Raider",
+				},
+				["Player-1615-0B05BAEE"] = {
+					["name"] = "квинталь-Ревущийфьорд",
+					["guid"] = "Player-1615-0B05BAEE",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676606635,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1416-09C1B9FD"] = {
 					["name"] = "Arrk-AeriePeak",
@@ -14427,38 +14625,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677073065,
 					["realm"] = "Hyjal",
 				},
-				["Player-1305-0C628E35"] = {
-					["name"] = "Xiuhipo-Kazzak",
-					["guid"] = "Player-1305-0C628E35",
-					["class"] = "MONK",
-					["cache_time"] = 1676328082,
+				["Player-1403-0A696926"] = {
+					["name"] = "Marrozz-Draenor",
+					["guid"] = "Player-1403-0A696926",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1686935978,
+					["realm"] = "Draenor",
+				},
+				["Player-3713-09CA0F5D"] = {
+					["name"] = "Huuba-BurningLegion",
+					["guid"] = "Player-3713-09CA0F5D",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1685745460,
+					["realm"] = "BurningLegion",
+				},
+				["Player-1305-0C9006A5"] = {
+					["name"] = "Gunborgh-Kazzak",
+					["guid"] = "Player-1305-0C9006A5",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686121310,
 					["realm"] = "Kazzak",
 				},
-				["Player-578-075A3050"] = {
-					["name"] = "Umbraculum-Wrathbringer",
-					["guid"] = "Player-578-075A3050",
-					["class"] = "PRIEST",
-					["cache_time"] = 1679570387,
-					["realm"] = "Wrathbringer",
-				},
-				["Player-3681-0AE53FFF"] = {
-					["name"] = "Storcator-Magtheridon",
-					["guid"] = "Player-3681-0AE53FFF",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1687102798,
-					["realm"] = "Magtheridon",
-				},
-				["Player-3682-0A804BA4"] = {
-					["ilvl"] = 418.3125,
-					["guid"] = "Player-3682-0A804BA4",
-					["class"] = "DEMONHUNTER",
-					["role"] = "TANK",
-					["cache_time"] = 1680553185,
-					["realm"] = "Ragnaros",
-					["name"] = "Odalicious-Ragnaros",
-					["specID"] = 581,
-					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+				["Player-3674-0AF940D8"] = {
+					["name"] = "Nomadel-TwistingNether",
+					["guid"] = "Player-3674-0AF940D8",
+					["class"] = "DRUID",
+					["cache_time"] = 1686933987,
+					["realm"] = "TwistingNether",
 				},
 				["Player-580-0A6BA239"] = {
 					["name"] = "Vynlash-Blackmoore",
@@ -14474,26 +14667,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684182960,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1602-0BEC9ED5"] = {
-					["name"] = "сикама-Гордунни",
-					["guid"] = "Player-1602-0BEC9ED5",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1679197333,
-					["realm"] = "Гордунни",
-				},
-				["Player-1084-0A92B32B"] = {
-					["name"] = "Ionix-TarrenMill",
-					["guid"] = "Player-1084-0A92B32B",
-					["class"] = "ROGUE",
-					["cache_time"] = 1679133580,
-					["realm"] = "TarrenMill",
-				},
-				["Player-1621-0B01394C"] = {
-					["name"] = "Nzenpersonne-Dalaran",
-					["guid"] = "Player-1621-0B01394C",
-					["class"] = "DRUID",
-					["cache_time"] = 1688985357,
-					["realm"] = "Dalaran",
+				["Player-633-0AC2AEF6"] = {
+					["name"] = "Othros-ShatteredHand",
+					["guid"] = "Player-633-0AC2AEF6",
+					["class"] = "PALADIN",
+					["cache_time"] = 1683073477,
+					["realm"] = "ShatteredHand",
 				},
 				["Player-3682-09C2C7B8"] = {
 					["name"] = "Merumo-Ragnaros",
@@ -14502,6 +14681,20 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685032038,
 					["realm"] = "Ragnaros",
 				},
+				["Player-1621-0B01394C"] = {
+					["name"] = "Nzenpersonne-Dalaran",
+					["guid"] = "Player-1621-0B01394C",
+					["class"] = "DRUID",
+					["cache_time"] = 1688985357,
+					["realm"] = "Dalaran",
+				},
+				["Player-1084-0A92B32B"] = {
+					["name"] = "Ionix-TarrenMill",
+					["guid"] = "Player-1084-0A92B32B",
+					["class"] = "ROGUE",
+					["cache_time"] = 1679133580,
+					["realm"] = "TarrenMill",
+				},
 				["Player-1301-0A35957C"] = {
 					["name"] = "Ostropel-Outland",
 					["guid"] = "Player-1301-0A35957C",
@@ -14509,12 +14702,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679564691,
 					["realm"] = "Outland",
 				},
-				["Player-1379-0AA03F9C"] = {
-					["name"] = "Rehiser-Sanguino",
-					["guid"] = "Player-1379-0AA03F9C",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1684926332,
-					["realm"] = "Sanguino",
+				["Player-1378-0A365E1C"] = {
+					["name"] = "Shidoki-C'Thun",
+					["guid"] = "Player-1378-0A365E1C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676768222,
+					["realm"] = "C'Thun",
 				},
 				["Player-3713-08D5BAA5"] = {
 					["name"] = "Wojus-BurningLegion",
@@ -14572,12 +14765,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687949013,
 					["realm"] = "Blackrock",
 				},
-				["Player-1615-0B05BAEE"] = {
-					["name"] = "квинталь-Ревущийфьорд",
-					["guid"] = "Player-1615-0B05BAEE",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676606635,
-					["realm"] = "Ревущийфьорд",
+				["Player-1335-09F8FF15"] = {
+					["name"] = "Yukihmito-Ysondre",
+					["guid"] = "Player-1335-09F8FF15",
+					["class"] = "PRIEST",
+					["cache_time"] = 1677258735,
+					["realm"] = "Ysondre",
 				},
 				["Player-1390-0C8F5B9A"] = {
 					["name"] = "Abrax-Hyjal",
@@ -14586,12 +14779,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689772053,
 					["realm"] = "Hyjal",
 				},
-				["Player-3682-0B265B0E"] = {
-					["name"] = "Szabolcskin-Ragnaros",
-					["guid"] = "Player-3682-0B265B0E",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686935978,
-					["realm"] = "Ragnaros",
+				["Player-1602-0B2E29C5"] = {
+					["name"] = "тыквонька-Гордунни",
+					["guid"] = "Player-1602-0B2E29C5",
+					["class"] = "DRUID",
+					["cache_time"] = 1678894799,
+					["realm"] = "Гордунни",
 				},
 				["Player-1084-0A85E947"] = {
 					["name"] = "Zyrloin-TarrenMill",
@@ -14600,12 +14793,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676768222,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1403-0A4EBEF5"] = {
-					["name"] = "Sinnersun-Draenor",
-					["guid"] = "Player-1403-0A4EBEF5",
+				["Player-3674-0915BEBC"] = {
+					["name"] = "Ryliliana-TwistingNether",
+					["guid"] = "Player-3674-0915BEBC",
 					["class"] = "PRIEST",
-					["cache_time"] = 1684510785,
-					["realm"] = "Draenor",
+					["cache_time"] = 1677333500,
+					["realm"] = "TwistingNether",
 				},
 				["Player-581-08195223"] = {
 					["name"] = "Hómká-Blackrock",
@@ -14614,26 +14807,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678320295,
 					["realm"] = "Blackrock",
 				},
-				["Player-3674-0915BEBC"] = {
-					["name"] = "Ryliliana-TwistingNether",
-					["guid"] = "Player-3674-0915BEBC",
-					["class"] = "PRIEST",
-					["cache_time"] = 1677333500,
-					["realm"] = "TwistingNether",
+				["Player-1084-0A84E687"] = {
+					["name"] = "Bonkboy-TarrenMill",
+					["guid"] = "Player-1084-0A84E687",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1713977460,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1329-09D6ACF2"] = {
-					["name"] = "Acidbullet-Ravencrest",
-					["guid"] = "Player-1329-09D6ACF2",
-					["class"] = "ROGUE",
-					["cache_time"] = 1677491796,
-					["realm"] = "Ravencrest",
+				["Player-581-0A4C509B"] = {
+					["name"] = "Hauntedlock-Blackrock",
+					["guid"] = "Player-581-0A4C509B",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1678865303,
+					["realm"] = "Blackrock",
 				},
-				["Player-1403-0A696926"] = {
-					["name"] = "Marrozz-Draenor",
-					["guid"] = "Player-1403-0A696926",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1686935978,
-					["realm"] = "Draenor",
+				["Player-1092-043DB71A"] = {
+					["name"] = "Levijathan-Drak'thul",
+					["guid"] = "Player-1092-043DB71A",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1688687303,
+					["realm"] = "Drak'thul",
 				},
 				["Player-1127-04564F7B"] = {
 					["name"] = "Sâphirâ-ConfrérieduThorium",
@@ -14663,26 +14856,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678066914,
 					["realm"] = "Ragnaros",
 				},
-				["Player-3713-09CA0F5D"] = {
-					["name"] = "Huuba-BurningLegion",
-					["guid"] = "Player-3713-09CA0F5D",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1685745460,
-					["realm"] = "BurningLegion",
+				["Player-3674-06F39AB3"] = {
+					["name"] = "Kabôm-TwistingNether",
+					["guid"] = "Player-3674-06F39AB3",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684413259,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1309-0C93D1BD"] = {
-					["name"] = "Bustagiusta-Pozzodell'Eternità",
-					["guid"] = "Player-1309-0C93D1BD",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687248521,
-					["realm"] = "Pozzodell'Eternità",
-				},
-				["Player-1378-05EF8C80"] = {
-					["name"] = "Baikushêv-DunModr",
-					["guid"] = "Player-1378-05EF8C80",
+				["Player-1615-0A6E114A"] = {
+					["name"] = "даркхолмвитя-Ревущийфьорд",
+					["guid"] = "Player-1615-0A6E114A",
 					["class"] = "PALADIN",
-					["cache_time"] = 1686934454,
-					["realm"] = "DunModr",
+					["cache_time"] = 1676439582,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1596-0F54DDC8"] = {
+					["name"] = "Thomméé-Deathwing",
+					["guid"] = "Player-1596-0F54DDC8",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1676973948,
+					["realm"] = "Deathwing",
 				},
 				["Player-3686-094361EF"] = {
 					["name"] = "Sçarface-Antonidas",
@@ -14691,12 +14884,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686935978,
 					["realm"] = "Antonidas",
 				},
-				["Player-1084-0A829DB3"] = {
-					["name"] = "Bat-TarrenMill",
-					["guid"] = "Player-1084-0A829DB3",
-					["class"] = "EVOKER",
-					["cache_time"] = 1686933987,
-					["realm"] = "TarrenMill",
+				["Player-3691-06A18821"] = {
+					["name"] = "Bloodyhooney-Blackhand",
+					["guid"] = "Player-3691-06A18821",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1713977460,
+					["realm"] = "Blackhand",
 				},
 				["Player-580-096BFD71"] = {
 					["name"] = "Lokinos-Blackmoore",
@@ -14705,18 +14898,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680222925,
 					["realm"] = "Blackmoore",
 				},
-				["Player-1303-0C0FA27B"] = {
-					["ilvl"] = 445.5,
-					["guid"] = "Player-1303-0C0FA27B",
-					["class"] = "ROGUE",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1690156139,
-					["realm"] = "Aggra(Português)",
-					["name"] = "Sinelf-Aggra(Português)",
-					["specID"] = 261,
-					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
-				},
 				["Player-3702-09902F07"] = {
 					["name"] = "Ghanoushy-ArgentDawn",
 					["guid"] = "Player-3702-09902F07",
@@ -14724,17 +14905,17 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687006559,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-3682-0A80C2F0"] = {
-					["ilvl"] = 442.1875,
-					["guid"] = "Player-3682-0A80C2F0",
-					["class"] = "DEMONHUNTER",
-					["role"] = "TANK",
-					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
-					["name"] = "Fiò-Ragnaros",
-					["specID"] = 581,
-					["enchantingLvl"] = 0,
+				["Player-1303-0C0FA27B"] = {
+					["ilvl"] = 445.5,
+					["guid"] = "Player-1303-0C0FA27B",
+					["class"] = "ROGUE",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1690156139,
 					["rank"] = "Raider",
+					["name"] = "Sinelf-Aggra(Português)",
+					["specID"] = 261,
+					["enchantingLvl"] = 0,
+					["realm"] = "Aggra(Português)",
 				},
 				["Player-1400-03DCAFCF"] = {
 					["name"] = "Fuegos-Area52",
@@ -14743,18 +14924,30 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687041442,
 					["realm"] = "Area52",
 				},
-				["Player-1378-0A365E1C"] = {
-					["name"] = "Shidoki-C'Thun",
-					["guid"] = "Player-1378-0A365E1C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676768222,
-					["realm"] = "C'Thun",
+				["Player-3682-0A80C2F0"] = {
+					["ilvl"] = 442.1875,
+					["guid"] = "Player-3682-0A80C2F0",
+					["class"] = "DEMONHUNTER",
+					["role"] = "TANK",
+					["cache_time"] = 1689281451,
+					["rank"] = "Raider",
+					["name"] = "Fiò-Ragnaros",
+					["specID"] = 581,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1084-0A990F17"] = {
-					["name"] = "Klyddigt-TarrenMill",
-					["guid"] = "Player-1084-0A990F17",
-					["class"] = "MONK",
-					["cache_time"] = 1687040673,
+				["Player-580-0A5781A8"] = {
+					["name"] = "Mokileinchen-Blackmoore",
+					["guid"] = "Player-580-0A5781A8",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680437946,
+					["realm"] = "Blackmoore",
+				},
+				["Player-1084-0A1F3293"] = {
+					["name"] = "Moje-TarrenMill",
+					["guid"] = "Player-1084-0A1F3293",
+					["class"] = "DRUID",
+					["cache_time"] = 1676387096,
 					["realm"] = "TarrenMill",
 				},
 				["Player-1302-0A0234D4"] = {
@@ -14764,18 +14957,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678223169,
 					["realm"] = "Archimonde",
 				},
-				["Player-1091-04FAA19C"] = {
-					["name"] = "Narrat-Bloodscalp",
-					["guid"] = "Player-1091-04FAA19C",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687157922,
-					["realm"] = "Bloodscalp",
+				["Player-1598-0B6C7988"] = {
+					["name"] = "Shadowfel-Sunstrider",
+					["guid"] = "Player-1598-0B6C7988",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1684926332,
+					["realm"] = "Sunstrider",
 				},
-				["Player-1615-0A6E114A"] = {
-					["name"] = "даркхолмвитя-Ревущийфьорд",
-					["guid"] = "Player-1615-0A6E114A",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676439582,
+				["Player-1615-0808D522"] = {
+					["name"] = "зиранель-Ревущийфьорд",
+					["guid"] = "Player-1615-0808D522",
+					["class"] = "ROGUE",
+					["cache_time"] = 1687949013,
 					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1379-0A72E891"] = {
@@ -14813,19 +15006,21 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686935978,
 					["realm"] = "Kazzak",
 				},
-				["Player-1596-0F54DDC8"] = {
-					["name"] = "Thomméé-Deathwing",
-					["guid"] = "Player-1596-0F54DDC8",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1676973948,
-					["realm"] = "Deathwing",
+				["Player-1091-04FAA19C"] = {
+					["name"] = "Narrat-Bloodscalp",
+					["guid"] = "Player-1091-04FAA19C",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687157922,
+					["realm"] = "Bloodscalp",
 				},
-				["Player-1127-0905918F"] = {
-					["name"] = "Leelunna-KirinTor",
-					["guid"] = "Player-1127-0905918F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676377737,
-					["realm"] = "KirinTor",
+				["Player-1385-09BF0C06"] = {
+					["role"] = "HEALER",
+					["name"] = "Ahkines-Minahonda",
+					["guid"] = "Player-1385-09BF0C06",
+					["realm"] = "Minahonda",
+					["class"] = "DRUID",
+					["cache_time"] = 1678499437,
+					["rank"] = "Oficial",
 				},
 				["Player-1417-05823D6A"] = {
 					["name"] = "Philsan-Stormrage",
@@ -14841,12 +15036,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689800841,
 					["realm"] = "Kazzak",
 				},
-				["Player-1379-05529A35"] = {
-					["name"] = "Yusicosafina-Sanguino",
-					["guid"] = "Player-1379-05529A35",
-					["class"] = "MAGE",
-					["cache_time"] = 1677665404,
-					["realm"] = "Sanguino",
+				["Player-3703-06D5DD31"] = {
+					["name"] = "Rogodk-Frostwolf",
+					["guid"] = "Player-3703-06D5DD31",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1679419392,
+					["realm"] = "Frostwolf",
 				},
 				["Player-1305-0C62D5A5"] = {
 					["name"] = "Bingpumper-Kazzak",
@@ -14855,12 +15050,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676373286,
 					["realm"] = "Kazzak",
 				},
-				["Player-3674-0AF940D8"] = {
-					["name"] = "Nomadel-TwistingNether",
-					["guid"] = "Player-3674-0AF940D8",
-					["class"] = "DRUID",
-					["cache_time"] = 1686933987,
-					["realm"] = "TwistingNether",
+				["Player-1305-0BDD87EF"] = {
+					["name"] = "Absorbent-Kazzak",
+					["guid"] = "Player-1305-0BDD87EF",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676783114,
+					["realm"] = "Kazzak",
 				},
 				["Player-1402-05DF25EE"] = {
 					["name"] = "Sewen-Turalyon",
@@ -14869,19 +15064,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678459218,
 					["realm"] = "Turalyon",
 				},
-				["Player-2073-05025566"] = {
-					["name"] = "Warkimad-Stormscale",
-					["guid"] = "Player-2073-05025566",
-					["class"] = "DRUID",
-					["cache_time"] = 1687791302,
-					["realm"] = "Stormscale",
+				["Player-1105-0A633AA0"] = {
+					["name"] = "Sundriel-Dalvengyr",
+					["guid"] = "Player-1105-0A633AA0",
+					["class"] = "MONK",
+					["cache_time"] = 1676210025,
+					["realm"] = "Dalvengyr",
 				},
-				["Player-1084-06956079"] = {
-					["name"] = "Centac-TarrenMill",
-					["guid"] = "Player-1084-06956079",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687949013,
-					["realm"] = "TarrenMill",
+				["Player-1390-09719275"] = {
+					["name"] = "Twinnx-Hyjal",
+					["guid"] = "Player-1390-09719275",
+					["class"] = "DRUID",
+					["cache_time"] = 1687259258,
+					["realm"] = "Hyjal",
 				},
 				["Player-1596-0F072F13"] = {
 					["ilvl"] = 411.875,
@@ -14889,18 +15084,18 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677334722,
-					["realm"] = "TheMaelstrom",
+					["rank"] = "Warmasters",
 					["name"] = "Lupie-TheMaelstrom",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["rank"] = "Warmasters",
+					["realm"] = "TheMaelstrom",
 				},
-				["Player-3703-06D5DD31"] = {
-					["name"] = "Rogodk-Frostwolf",
-					["guid"] = "Player-3703-06D5DD31",
+				["Player-1084-06956079"] = {
+					["name"] = "Centac-TarrenMill",
+					["guid"] = "Player-1084-06956079",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1679419392,
-					["realm"] = "Frostwolf",
+					["cache_time"] = 1687949013,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1105-0A5091C6"] = {
 					["name"] = "Thrreswar-Frostmourne",
@@ -14923,19 +15118,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687102801,
 					["realm"] = "Archimonde",
 				},
-				["Player-1598-0B6C7988"] = {
-					["name"] = "Shadowfel-Sunstrider",
-					["guid"] = "Player-1598-0B6C7988",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1684926332,
-					["realm"] = "Sunstrider",
+				["Player-1615-0AFDF5E4"] = {
+					["name"] = "стенденсх-Ревущийфьорд",
+					["guid"] = "Player-1615-0AFDF5E4",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686933987,
+					["realm"] = "Ревущийфьорд",
 				},
-				["Player-581-0A4C509B"] = {
-					["name"] = "Hauntedlock-Blackrock",
-					["guid"] = "Player-581-0A4C509B",
+				["Player-1390-0898359D"] = {
+					["name"] = "Kennyaan-Hyjal",
+					["guid"] = "Player-1390-0898359D",
 					["class"] = "WARLOCK",
-					["cache_time"] = 1678865303,
-					["realm"] = "Blackrock",
+					["cache_time"] = 1686934454,
+					["realm"] = "Hyjal",
 				},
 				["Player-1329-09FE6EFA"] = {
 					["name"] = "Oktay-Ravencrest",
@@ -14965,12 +15160,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679133580,
 					["realm"] = "Eredar",
 				},
-				["Player-3682-0B2B7804"] = {
-					["name"] = "Zerog-Ragnaros",
-					["guid"] = "Player-3682-0B2B7804",
-					["class"] = "ROGUE",
-					["cache_time"] = 1689802006,
-					["realm"] = "Ragnaros",
+				["Player-1403-0A2F32E5"] = {
+					["name"] = "Spykerp-Draenor",
+					["guid"] = "Player-1403-0A2F32E5",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676768222,
+					["realm"] = "Draenor",
 				},
 				["Player-1929-0ED5282F"] = {
 					["name"] = "массарахш-ПиратскаяБухта",
@@ -14979,25 +15174,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686196139,
 					["realm"] = "ПиратскаяБухта",
 				},
-				["Player-3682-0B118F21"] = {
-					["ilvl"] = 440.0625,
-					["guid"] = "Player-3682-0B118F21",
-					["class"] = "HUNTER",
-					["rank"] = "Mythic Raider",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1686170267,
-					["name"] = "Jereunter-Ragnaros",
-					["enchanter"] = true,
-					["specID"] = 253,
-					["enchantingLvl"] = 65,
-					["realm"] = "Ragnaros",
-				},
-				["Player-3674-0A773A87"] = {
-					["name"] = "Iloveyou-TwistingNether",
-					["guid"] = "Player-3674-0A773A87",
-					["class"] = "DRUID",
-					["cache_time"] = 1686935978,
+				["Player-3674-05B1998D"] = {
+					["name"] = "Nidix-TwistingNether",
+					["guid"] = "Player-3674-05B1998D",
+					["class"] = "ROGUE",
+					["cache_time"] = 1686121310,
 					["realm"] = "TwistingNether",
+				},
+				["Player-3682-0A931218"] = {
+					["name"] = "Rebrew-Ragnaros",
+					["guid"] = "Player-3682-0A931218",
+					["class"] = "MONK",
+					["cache_time"] = 1686754474,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3391-0C270AD0"] = {
 					["name"] = "Lightway-Silvermoon",
@@ -15010,17 +15199,17 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Anga-BurningBlade",
 					["guid"] = "Player-1092-0A695687",
-					["realm"] = "BurningBlade",
+					["rank"] = "Spoluhrac",
 					["class"] = "DEATHKNIGHT",
 					["cache_time"] = 1676377737,
-					["rank"] = "Spoluhrac",
+					["realm"] = "BurningBlade",
 				},
-				["Player-1084-0A470115"] = {
-					["name"] = "Mabbitx-TarrenMill",
-					["guid"] = "Player-1084-0A470115",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686933987,
-					["realm"] = "TarrenMill",
+				["Player-1335-09E6F766"] = {
+					["name"] = "Whiiteknight-Ysondre",
+					["guid"] = "Player-1335-09E6F766",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676516463,
+					["realm"] = "Ysondre",
 				},
 				["Player-1403-0A5DD145"] = {
 					["name"] = "Shotaholíc-Draenor",
@@ -15029,40 +15218,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676452417,
 					["realm"] = "Draenor",
 				},
-				["Player-1302-0A3BA227"] = {
-					["name"] = "Tiberian-Archimonde",
-					["guid"] = "Player-1302-0A3BA227",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1679027741,
-					["realm"] = "Archimonde",
+				["Player-1335-07621357"] = {
+					["name"] = "Alenthas-Ysondre",
+					["guid"] = "Player-1335-07621357",
+					["class"] = "MONK",
+					["cache_time"] = 1677319954,
+					["realm"] = "Ysondre",
 				},
-				["Player-1615-0AFDF5E4"] = {
-					["name"] = "стенденсх-Ревущийфьорд",
-					["guid"] = "Player-1615-0AFDF5E4",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686933987,
-					["realm"] = "Ревущийфьорд",
+				["Player-3674-0B1B08BD"] = {
+					["name"] = "Sjuksystern-TwistingNether",
+					["guid"] = "Player-3674-0B1B08BD",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677518270,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1390-0898359D"] = {
-					["name"] = "Kennyaan-Hyjal",
-					["guid"] = "Player-1390-0898359D",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1686934454,
-					["realm"] = "Hyjal",
+				["Player-1329-06A03100"] = {
+					["name"] = "Rambopus-Ravencrest",
+					["guid"] = "Player-1329-06A03100",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685195489,
+					["realm"] = "Ravencrest",
 				},
-				["Player-1084-0A1F3293"] = {
-					["name"] = "Moje-TarrenMill",
-					["guid"] = "Player-1084-0A1F3293",
+				["Player-1403-0A51489B"] = {
+					["name"] = "Sakunä-Draenor",
+					["guid"] = "Player-1403-0A51489B",
 					["class"] = "DRUID",
-					["cache_time"] = 1676387096,
-					["realm"] = "TarrenMill",
-				},
-				["Player-1403-0A2F32E5"] = {
-					["name"] = "Spykerp-Draenor",
-					["guid"] = "Player-1403-0A2F32E5",
-					["class"] = "PRIEST",
-					["cache_time"] = 1676768222,
+					["cache_time"] = 1676533093,
 					["realm"] = "Draenor",
+				},
+				["Player-3674-0AF1E07E"] = {
+					["name"] = "Sifasagir-TwistingNether",
+					["guid"] = "Player-3674-0AF1E07E",
+					["class"] = "PRIEST",
+					["cache_time"] = 1678461554,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3674-08A8C2A5"] = {
 					["name"] = "Sparkbrew-TwistingNether",
@@ -15071,12 +15260,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677518150,
 					["realm"] = "TwistingNether",
 				},
-				["Player-580-0A719ECB"] = {
-					["name"] = "Bommburr-Blackmoore",
-					["guid"] = "Player-580-0A719ECB",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685487968,
-					["realm"] = "Blackmoore",
+				["Player-3391-06FBA7A8"] = {
+					["name"] = "Eladri-Silvermoon",
+					["guid"] = "Player-3391-06FBA7A8",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684559790,
+					["realm"] = "Silvermoon",
 				},
 				["Player-531-04F5FA15"] = {
 					["name"] = "Lyneria-Onyxia",
@@ -15085,50 +15274,48 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688901714,
 					["realm"] = "Onyxia",
 				},
-				["Player-3391-0C4DC7D1"] = {
-					["name"] = "Chpdrz-Silvermoon",
-					["guid"] = "Player-3391-0C4DC7D1",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677258721,
-					["realm"] = "Silvermoon",
+				["Player-1305-0C6EB944"] = {
+					["name"] = "Prydz-Kazzak",
+					["guid"] = "Player-1305-0C6EB944",
+					["class"] = "ROGUE",
+					["cache_time"] = 1680218725,
+					["realm"] = "Kazzak",
 				},
 				["Player-1305-0C618FA5"] = {
 					["ilvl"] = 418.1875,
 					["guid"] = "Player-1305-0C618FA5",
 					["class"] = "WARRIOR",
-					["realm"] = "Kazzak",
+					["rank"] = "Raider",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680813097,
 					["name"] = "Tankcred-Kazzak",
-					["specID"] = 71,
 					["enchanter"] = true,
+					["specID"] = 71,
 					["enchantingLvl"] = 100,
-					["rank"] = "Raider",
+					["realm"] = "Kazzak",
 				},
-				["Player-1385-09BF0C06"] = {
-					["role"] = "HEALER",
-					["name"] = "Ahkines-Minahonda",
-					["guid"] = "Player-1385-09BF0C06",
-					["rank"] = "Oficial",
-					["class"] = "DRUID",
-					["cache_time"] = 1678499437,
-					["realm"] = "Minahonda",
+				["Player-3713-09BED8B8"] = {
+					["name"] = "Neessandra-BurningLegion",
+					["guid"] = "Player-3713-09BED8B8",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1685538250,
+					["realm"] = "BurningLegion",
 				},
-				["Player-1602-059D7745"] = {
-					["name"] = "травкоед-Гордунни",
-					["guid"] = "Player-1602-059D7745",
+				["Player-1597-0F2FAB89"] = {
+					["name"] = "Plaguemug-Sylvanas",
+					["guid"] = "Player-1597-0F2FAB89",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1685487968,
-					["realm"] = "Гордунни",
+					["cache_time"] = 1678223169,
+					["realm"] = "Sylvanas",
 				},
 				["Player-1384-0AD58AD9"] = {
 					["role"] = "DAMAGER",
 					["name"] = "Llorabirras-Tyrande",
 					["guid"] = "Player-1384-0AD58AD9",
-					["rank"] = "Miembro",
+					["realm"] = "Tyrande",
 					["class"] = "MONK",
 					["cache_time"] = 1676768222,
-					["realm"] = "Tyrande",
+					["rank"] = "Miembro",
 				},
 				["Player-1305-0C51F61B"] = {
 					["name"] = "Gaalladriell-Kazzak",
@@ -15151,12 +15338,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687261056,
 					["realm"] = "Antonidas",
 				},
-				["Player-1923-0F46EFE1"] = {
-					["name"] = "варигоса-Ясеневыйлес",
-					["guid"] = "Player-1923-0F46EFE1",
-					["class"] = "EVOKER",
-					["cache_time"] = 1677607191,
-					["realm"] = "Ясеневыйлес",
+				["Player-1127-0933E28C"] = {
+					["name"] = "Krinoe-KirinTor",
+					["guid"] = "Player-1127-0933E28C",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1676912169,
+					["realm"] = "KirinTor",
 				},
 				["Player-3656-0AA1A94F"] = {
 					["name"] = "Enchisedmy-Stormreaver",
@@ -15165,12 +15352,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687956237,
 					["realm"] = "Stormreaver",
 				},
-				["Player-1604-0AA8F1E3"] = {
-					["name"] = "някоборщик-СвежевательДуш",
-					["guid"] = "Player-1604-0AA8F1E3",
-					["class"] = "PALADIN",
-					["cache_time"] = 1683073733,
-					["realm"] = "СвежевательДуш",
+				["Player-1096-0A5CF353"] = {
+					["name"] = "Taroth-Ravenholdt",
+					["guid"] = "Player-1096-0A5CF353",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689800841,
+					["realm"] = "Ravenholdt",
 				},
 				["Player-1390-0C8968A4"] = {
 					["name"] = "Tylura-Hyjal",
@@ -15186,26 +15373,31 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685781186,
 					["realm"] = "Mal'Ganis",
 				},
-				["Player-1403-07FD895B"] = {
-					["name"] = "Mayocat-Draenor",
-					["guid"] = "Player-1403-07FD895B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1686934454,
-					["realm"] = "Draenor",
-				},
-				["Player-1305-0C835430"] = {
-					["name"] = "Aquamentes-Kazzak",
-					["guid"] = "Player-1305-0C835430",
-					["class"] = "PALADIN",
-					["cache_time"] = 1678139156,
+				["Player-1305-0C922687"] = {
+					["ilvl"] = 442.75,
+					["guid"] = "Player-1305-0C922687",
+					["class"] = "DEMONHUNTER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1686937315,
+					["rank"] = "Raider",
+					["name"] = "Malvanis-Kazzak",
+					["specID"] = 577,
+					["enchantingLvl"] = 0,
 					["realm"] = "Kazzak",
 				},
-				["Player-1325-09E787A8"] = {
-					["name"] = "Offliné-Aggramar",
-					["guid"] = "Player-1325-09E787A8",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689800217,
-					["realm"] = "Aggramar",
+				["Player-1615-0B1E4A10"] = {
+					["name"] = "гдемоикрылъя-Ревущийфьорд",
+					["guid"] = "Player-1615-0B1E4A10",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686196139,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1403-09CADEC1"] = {
+					["name"] = "Serâph-Draenor",
+					["guid"] = "Player-1403-09CADEC1",
+					["class"] = "PRIEST",
+					["cache_time"] = 1680383988,
+					["realm"] = "Draenor",
 				},
 				["Player-3682-0B055FA1"] = {
 					["name"] = "Palaace-Ragnaros",
@@ -15235,33 +15427,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677665404,
 					["realm"] = "Turalyon",
 				},
-				["Player-3391-0C4F3DD7"] = {
-					["name"] = "Hyúng-Silvermoon",
-					["guid"] = "Player-3391-0C4F3DD7",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686933987,
-					["realm"] = "Silvermoon",
+				["Player-580-09FCF008"] = {
+					["name"] = "Bloodsquad-Blackmoore",
+					["guid"] = "Player-580-09FCF008",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1688922052,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1615-0B1B8449"] = {
-					["name"] = "баскими-Ревущийфьорд",
-					["guid"] = "Player-1615-0B1B8449",
-					["class"] = "ROGUE",
-					["cache_time"] = 1687949013,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-1335-09E6F766"] = {
-					["name"] = "Whiiteknight-Ysondre",
-					["guid"] = "Player-1335-09E6F766",
-					["class"] = "EVOKER",
-					["cache_time"] = 1676516463,
-					["realm"] = "Ysondre",
-				},
-				["Player-1390-0C77161C"] = {
-					["name"] = "Sêiju-Hyjal",
-					["guid"] = "Player-1390-0C77161C",
+				["Player-1305-0C1A22A7"] = {
+					["name"] = "Tokem-Kazzak",
+					["guid"] = "Player-1305-0C1A22A7",
 					["class"] = "HUNTER",
-					["cache_time"] = 1684056553,
-					["realm"] = "Hyjal",
+					["cache_time"] = 1686121310,
+					["realm"] = "Kazzak",
+				},
+				["Player-1316-0C82217F"] = {
+					["name"] = "Narletto-Nemesis",
+					["guid"] = "Player-1316-0C82217F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684501707,
+					["realm"] = "Nemesis",
+				},
+				["Player-3674-0632FF9E"] = {
+					["name"] = "Légostin-TwistingNether",
+					["guid"] = "Player-3674-0632FF9E",
+					["class"] = "DRUID",
+					["cache_time"] = 1685305181,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1092-09E7B314"] = {
 					["name"] = "Umobuton-Drak'thul",
@@ -15276,11 +15468,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "DAMAGER",
 					["name"] = "Muhrtele-Ragnaros",
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["cache_time"] = 1689281451,
 					["specID"] = 70,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0AD6A3B5"] = {
 					["name"] = "Zerberus-TwistingNether",
@@ -15289,33 +15481,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678860427,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1127-0933E28C"] = {
-					["name"] = "Krinoe-KirinTor",
-					["guid"] = "Player-1127-0933E28C",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1676912169,
-					["realm"] = "KirinTor",
+				["Player-1604-08808D45"] = {
+					["name"] = "гойдэмир-СвежевательДуш",
+					["guid"] = "Player-1604-08808D45",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684309599,
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1122-0A59DA9B"] = {
-					["name"] = "Estrell-Uldaman",
-					["guid"] = "Player-1122-0A59DA9B",
-					["class"] = "HUNTER",
-					["cache_time"] = 1677607191,
-					["realm"] = "Uldaman",
-				},
-				["Player-1084-0A81131A"] = {
-					["name"] = "Luffvoker-TarrenMill",
-					["guid"] = "Player-1084-0A81131A",
-					["class"] = "EVOKER",
-					["cache_time"] = 1685781186,
-					["realm"] = "TarrenMill",
-				},
-				["Player-1403-0A51489B"] = {
-					["name"] = "Sakunä-Draenor",
-					["guid"] = "Player-1403-0A51489B",
+				["Player-1091-066B2DDF"] = {
+					["name"] = "Trippyhippy-Twilight'sHammer",
+					["guid"] = "Player-1091-066B2DDF",
 					["class"] = "DRUID",
-					["cache_time"] = 1676533093,
-					["realm"] = "Draenor",
+					["cache_time"] = 1676768222,
+					["realm"] = "Twilight'sHammer",
+				},
+				["Player-3682-09E0FA89"] = {
+					["name"] = "Skreamoutlau-Ragnaros",
+					["guid"] = "Player-3682-09E0FA89",
+					["class"] = "ROGUE",
+					["cache_time"] = 1689700268,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1390-09B619DB"] = {
+					["name"] = "Shänne-Hyjal",
+					["guid"] = "Player-1390-09B619DB",
+					["class"] = "DRUID",
+					["cache_time"] = 1684006618,
+					["realm"] = "Hyjal",
 				},
 				["Player-3391-0C5C22CA"] = {
 					["name"] = "Edrental-Silvermoon",
@@ -15324,12 +15516,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689253178,
 					["realm"] = "Silvermoon",
 				},
-				["Player-3674-08D2B44C"] = {
-					["name"] = "Turhis-TwistingNether",
-					["guid"] = "Player-3674-08D2B44C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684157801,
-					["realm"] = "TwistingNether",
+				["Player-1084-0A7960B7"] = {
+					["name"] = "Toogum-TarrenMill",
+					["guid"] = "Player-1084-0A7960B7",
+					["class"] = "DRUID",
+					["cache_time"] = 1676606635,
+					["realm"] = "TarrenMill",
 				},
 				["Player-580-0A7738D1"] = {
 					["name"] = "Kyohp-Blackmoore",
@@ -15345,13 +15537,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684125836,
 					["realm"] = "Draenor",
 				},
-				["Player-1390-09B619DB"] = {
-					["name"] = "Shänne-Hyjal",
-					["guid"] = "Player-1390-09B619DB",
-					["class"] = "DRUID",
-					["cache_time"] = 1684006618,
-					["realm"] = "Hyjal",
-				},
 				["Player-1303-0B5CE481"] = {
 					["name"] = "Dammtrasan-Frostmane",
 					["guid"] = "Player-1303-0B5CE481",
@@ -15359,12 +15544,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687041442,
 					["realm"] = "Frostmane",
 				},
-				["Player-3391-0C90B0B4"] = {
-					["name"] = "Häxdöktör-Silvermoon",
-					["guid"] = "Player-3391-0C90B0B4",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687791012,
-					["realm"] = "Silvermoon",
+				["Player-1615-0B1C5C18"] = {
+					["name"] = "кальн-Ревущийфьорд",
+					["guid"] = "Player-1615-0B1C5C18",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684006618,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1597-0D0020AA"] = {
+					["name"] = "Beelii-Sylvanas",
+					["guid"] = "Player-1597-0D0020AA",
+					["class"] = "MAGE",
+					["cache_time"] = 1676335902,
+					["realm"] = "Sylvanas",
 				},
 				["Player-3682-0B0CE1BC"] = {
 					["ilvl"] = 406.5625,
@@ -15372,11 +15564,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680553185,
-					["realm"] = "Ragnaros",
+					["rank"] = "Guild Master",
 					["name"] = "Senpãi-Ragnaros",
 					["specID"] = 102,
 					["enchantingLvl"] = 0,
-					["rank"] = "Guild Master",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1305-0C64E730"] = {
 					["name"] = "Sixdo-Kazzak",
@@ -15385,12 +15577,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685781186,
 					["realm"] = "Kazzak",
 				},
-				["Player-1403-09CADEC1"] = {
-					["name"] = "Serâph-Draenor",
-					["guid"] = "Player-1403-09CADEC1",
+				["Player-1329-04195E75"] = {
+					["ilvl"] = 405.75,
+					["guid"] = "Player-1329-04195E75",
 					["class"] = "PRIEST",
-					["cache_time"] = 1680383988,
-					["realm"] = "Draenor",
+					["rank"] = "Member",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1680513310,
+					["name"] = "Gabrial-Ravencrest",
+					["enchanter"] = true,
+					["specID"] = 258,
+					["enchantingLvl"] = 2,
+					["realm"] = "Ravencrest",
 				},
 				["Player-1329-06B40565"] = {
 					["name"] = "ûn-Ravencrest",
@@ -15399,12 +15597,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686873759,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1316-0C82217F"] = {
-					["name"] = "Narletto-Nemesis",
-					["guid"] = "Player-1316-0C82217F",
+				["Player-3690-0AA55C5C"] = {
+					["name"] = "Paslàxou-KhazModan",
+					["guid"] = "Player-3690-0AA55C5C",
 					["class"] = "PALADIN",
-					["cache_time"] = 1684501707,
-					["realm"] = "Nemesis",
+					["cache_time"] = 1684008541,
+					["realm"] = "KhazModan",
 				},
 				["Player-3674-05A9F570"] = {
 					["name"] = "Cartilago-TwistingNether",
@@ -15417,10 +15615,10 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Ghrypus-Sanguino",
 					["guid"] = "Player-1379-0A8AACB0",
-					["rank"] = "Incursor Sangre",
+					["realm"] = "Sanguino",
 					["class"] = "DEMONHUNTER",
 					["cache_time"] = 1677489750,
-					["realm"] = "Sanguino",
+					["rank"] = "Incursor Sangre",
 				},
 				["Player-1615-045B13A1"] = {
 					["name"] = "крузерштерн-Ревущийфьорд",
@@ -15443,52 +15641,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680292466,
 					["realm"] = "DefiasBrotherhood",
 				},
-				["Player-3686-05D64033"] = {
-					["name"] = "Holylok-Antonidas",
-					["guid"] = "Player-3686-05D64033",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684352037,
-					["realm"] = "Antonidas",
-				},
-				["Player-1604-08808D45"] = {
-					["name"] = "гойдэмир-СвежевательДуш",
-					["guid"] = "Player-1604-08808D45",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684309599,
-					["realm"] = "СвежевательДуш",
-				},
-				["Player-1305-0C922687"] = {
-					["ilvl"] = 442.75,
-					["guid"] = "Player-1305-0C922687",
-					["class"] = "DEMONHUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1686937315,
+				["Player-1305-0C50F1F3"] = {
+					["name"] = "Zerosixtyòne-Kazzak",
+					["guid"] = "Player-1305-0C50F1F3",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1684128158,
 					["realm"] = "Kazzak",
-					["name"] = "Malvanis-Kazzak",
-					["specID"] = 577,
-					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
 				},
-				["Player-3713-0ACDEE87"] = {
-					["name"] = "Szyszuluna-BurningLegion",
-					["guid"] = "Player-3713-0ACDEE87",
+				["Player-1615-0B1A5DBE"] = {
+					["name"] = "берсэк-Ревущийфьорд",
+					["guid"] = "Player-1615-0B1A5DBE",
 					["class"] = "DRUID",
-					["cache_time"] = 1676377737,
-					["realm"] = "BurningLegion",
+					["cache_time"] = 1677665404,
+					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1379-0ADE3E85"] = {
-					["name"] = "Dragomanca-Sanguino",
-					["guid"] = "Player-1379-0ADE3E85",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687952836,
-					["realm"] = "Sanguino",
-				},
-				["Player-1091-066B2DDF"] = {
-					["name"] = "Trippyhippy-Twilight'sHammer",
-					["guid"] = "Player-1091-066B2DDF",
-					["class"] = "DRUID",
-					["cache_time"] = 1676768222,
-					["realm"] = "Twilight'sHammer",
+				["Player-1615-032D57FC"] = {
+					["name"] = "капыто-Ревущийфьорд",
+					["guid"] = "Player-1615-032D57FC",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1685398638,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1329-093088F0"] = {
 					["name"] = "Schnuddlo-Ravencrest",
@@ -15497,17 +15669,38 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686252129,
 					["realm"] = "Ravencrest",
 				},
+				["Player-1379-0ADE3E85"] = {
+					["name"] = "Dragomanca-Sanguino",
+					["guid"] = "Player-1379-0ADE3E85",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687952836,
+					["realm"] = "Sanguino",
+				},
+				["Player-1604-0AFDB3F4"] = {
+					["name"] = "ольмекаголд-СвежевательДуш",
+					["guid"] = "Player-1604-0AFDB3F4",
+					["class"] = "PALADIN",
+					["cache_time"] = 1678766133,
+					["realm"] = "СвежевательДуш",
+				},
+				["Player-1305-0C8CA374"] = {
+					["name"] = "Scarespriest-Kazzak",
+					["guid"] = "Player-1305-0C8CA374",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687953965,
+					["realm"] = "Kazzak",
+				},
 				["Player-1602-0C798673"] = {
 					["ilvl"] = 431.0625,
 					["guid"] = "Player-1602-0C798673",
 					["class"] = "MONK",
 					["role"] = "TANK",
 					["cache_time"] = 1689251296,
-					["realm"] = "Гордунни",
+					["rank"] = "Легат",
 					["name"] = "илонаспейсха-Гордунни",
 					["specID"] = 268,
 					["enchantingLvl"] = 0,
-					["rank"] = "Легат",
+					["realm"] = "Гордунни",
 				},
 				["Player-1096-0A73DB1D"] = {
 					["name"] = "Célissa-DarkmoonFaire",
@@ -15516,12 +15709,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684311131,
 					["realm"] = "DarkmoonFaire",
 				},
-				["Player-1615-0B1C5C18"] = {
-					["name"] = "кальн-Ревущийфьорд",
-					["guid"] = "Player-1615-0B1C5C18",
+				["Player-1587-08450F40"] = {
+					["name"] = "Cudär-Arathor",
+					["guid"] = "Player-1587-08450F40",
 					["class"] = "PALADIN",
-					["cache_time"] = 1684006618,
-					["realm"] = "Ревущийфьорд",
+					["cache_time"] = 1684561238,
+					["realm"] = "Arathor",
 				},
 				["Player-1305-0C528E58"] = {
 					["name"] = "Wwiwnka-Kazzak",
@@ -15530,19 +15723,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680022216,
 					["realm"] = "Kazzak",
 				},
+				["Player-3391-0AF07C2C"] = {
+					["name"] = "Sjoowie-Silvermoon",
+					["guid"] = "Player-3391-0AF07C2C",
+					["class"] = "DRUID",
+					["cache_time"] = 1685032038,
+					["realm"] = "Silvermoon",
+				},
 				["Player-1379-0AA69710"] = {
 					["name"] = "Mohat-Zul'jin",
 					["guid"] = "Player-1379-0AA69710",
 					["class"] = "SHAMAN",
 					["cache_time"] = 1689699139,
 					["realm"] = "Zul'jin",
-				},
-				["Player-3682-087D942D"] = {
-					["name"] = "Pórketill-Ragnaros",
-					["guid"] = "Player-3682-087D942D",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687157844,
-					["realm"] = "Ragnaros",
 				},
 				["Player-1403-09FFD0DE"] = {
 					["name"] = "Npsy-Draenor",
@@ -15565,12 +15758,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677665404,
 					["realm"] = "BurningLegion",
 				},
-				["Player-2073-09D848A3"] = {
-					["name"] = "Ravehizz-Stormscale",
-					["guid"] = "Player-2073-09D848A3",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1676486995,
-					["realm"] = "Stormscale",
+				["Player-1127-095E3A96"] = {
+					["name"] = "Elraldur-CultedelaRivenoire",
+					["guid"] = "Player-1127-095E3A96",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676768222,
+					["realm"] = "CultedelaRivenoire",
 				},
 				["Player-1329-0A02FC0E"] = {
 					["name"] = "Vaaderi-Ravencrest",
@@ -15579,12 +15772,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684157836,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1615-0B1A5DBE"] = {
-					["name"] = "берсэк-Ревущийфьорд",
-					["guid"] = "Player-1615-0B1A5DBE",
-					["class"] = "DRUID",
-					["cache_time"] = 1677665404,
-					["realm"] = "Ревущийфьорд",
+				["Player-1602-0F334E5D"] = {
+					["name"] = "стэпаут-Гордунни",
+					["guid"] = "Player-1602-0F334E5D",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1685878014,
+					["realm"] = "Гордунни",
 				},
 				["Player-1305-0B39EA51"] = {
 					["name"] = "Doomtrax-Kazzak",
@@ -15600,29 +15793,27 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690895946,
 					["realm"] = "Thrall",
 				},
-				["Player-1305-0C1A22A7"] = {
-					["name"] = "Tokem-Kazzak",
-					["guid"] = "Player-1305-0C1A22A7",
-					["class"] = "HUNTER",
-					["cache_time"] = 1686121310,
-					["realm"] = "Kazzak",
-				},
-				["Player-1602-0EED4A54"] = {
-					["name"] = "алаянорочка-Гордунни",
-					["guid"] = "Player-1602-0EED4A54",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685305181,
-					["realm"] = "Гордунни",
-				},
-				["Player-3682-079C05CE"] = {
-					["ilvl"] = 437,
-					["guid"] = "Player-3682-079C05CE",
-					["class"] = "DRUID",
-					["role"] = "TANK",
-					["cache_time"] = 1689855648,
+				["Player-3682-0B2B9B92"] = {
+					["ilvl"] = 442.875,
+					["guid"] = "Player-3682-0B2B9B92",
+					["class"] = "WARRIOR",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1689387110,
+					["realm"] = "Ragnaros",
+					["name"] = "Wârpig-Ragnaros",
+					["specID"] = 71,
+					["enchantingLvl"] = 0,
 					["rank"] = "Unguilded",
-					["name"] = "Paoral-Ragnaros",
-					["specID"] = 102,
+				},
+				["Player-3682-0ABD785A"] = {
+					["ilvl"] = 433.0625,
+					["guid"] = "Player-3682-0ABD785A",
+					["class"] = "WARRIOR",
+					["role"] = "TANK",
+					["cache_time"] = 1686170543,
+					["rank"] = "Mythic Raider",
+					["name"] = "Baptistbarry-Ragnaros",
+					["specID"] = 73,
 					["enchantingLvl"] = 0,
 					["realm"] = "Ragnaros",
 				},
@@ -15633,6 +15824,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686253971,
 					["realm"] = "TwistingNether",
 				},
+				["Player-1305-0C8436A1"] = {
+					["name"] = "Sygur-Kazzak",
+					["guid"] = "Player-1305-0C8436A1",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687956908,
+					["realm"] = "Kazzak",
+				},
 				["Player-1092-0A58B971"] = {
 					["name"] = "Pirátskull-Drak'thul",
 					["guid"] = "Player-1092-0A58B971",
@@ -15640,12 +15838,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688687303,
 					["realm"] = "Drak'thul",
 				},
-				["Player-3702-0A803890"] = {
-					["name"] = "Meylos-ArgentDawn",
-					["guid"] = "Player-3702-0A803890",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689677222,
-					["realm"] = "ArgentDawn",
+				["Player-1379-0ACE5D9B"] = {
+					["name"] = "Bartolox-Sanguino",
+					["guid"] = "Player-1379-0ACE5D9B",
+					["class"] = "DRUID",
+					["cache_time"] = 1677071253,
+					["realm"] = "Sanguino",
 				},
 				["Player-3674-0B0EDABB"] = {
 					["name"] = "Dwamadwagon-TwistingNether",
@@ -15654,12 +15852,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687259300,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1604-0AFDB3F4"] = {
-					["name"] = "ольмекаголд-СвежевательДуш",
-					["guid"] = "Player-1604-0AFDB3F4",
-					["class"] = "PALADIN",
-					["cache_time"] = 1678766133,
-					["realm"] = "СвежевательДуш",
+				["Player-3702-07E5C53C"] = {
+					["name"] = "Slitaruzz-ArgentDawn",
+					["guid"] = "Player-3702-07E5C53C",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1676168537,
+					["realm"] = "ArgentDawn",
 				},
 				["Player-1305-0B84C762"] = {
 					["name"] = "Kezsul-Kazzak",
@@ -15668,46 +15866,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680112361,
 					["realm"] = "Kazzak",
 				},
-				["Player-3674-0632FF9E"] = {
-					["name"] = "Légostin-TwistingNether",
-					["guid"] = "Player-3674-0632FF9E",
-					["class"] = "DRUID",
-					["cache_time"] = 1685305181,
+				["Player-1303-0061E128"] = {
+					["name"] = "Amour-GrimBatol",
+					["guid"] = "Player-1303-0061E128",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676327182,
+					["realm"] = "GrimBatol",
+				},
+				["Player-3674-0B09AD38"] = {
+					["name"] = "Mcdragon-TwistingNether",
+					["guid"] = "Player-3674-0B09AD38",
+					["class"] = "EVOKER",
+					["cache_time"] = 1686121310,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1602-0F334E5D"] = {
-					["name"] = "стэпаут-Гордунни",
-					["guid"] = "Player-1602-0F334E5D",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1685878014,
-					["realm"] = "Гордунни",
-				},
-				["Player-1305-0C8436A1"] = {
-					["name"] = "Sygur-Kazzak",
-					["guid"] = "Player-1305-0C8436A1",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687956908,
-					["realm"] = "Kazzak",
-				},
-				["Player-1329-04195E75"] = {
-					["ilvl"] = 405.75,
-					["guid"] = "Player-1329-04195E75",
+				["Player-3656-0A603C45"] = {
+					["name"] = "Azalenne-Stormreaver",
+					["guid"] = "Player-3656-0A603C45",
 					["class"] = "PRIEST",
-					["realm"] = "Ravencrest",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1680513310,
-					["name"] = "Gabrial-Ravencrest",
-					["specID"] = 258,
-					["enchanter"] = true,
-					["enchantingLvl"] = 2,
-					["rank"] = "Member",
+					["cache_time"] = 1683069512,
+					["realm"] = "Stormreaver",
 				},
-				["Player-512-03DFE2ED"] = {
-					["name"] = "Rhiannön-Throk'Feroth",
-					["guid"] = "Player-512-03DFE2ED",
+				["Player-1416-09F8B967"] = {
+					["name"] = "ðarksoul-AeriePeak",
+					["guid"] = "Player-1416-09F8B967",
 					["class"] = "PALADIN",
-					["cache_time"] = 1677665404,
-					["realm"] = "Throk'Feroth",
+					["cache_time"] = 1690590328,
+					["realm"] = "AeriePeak",
+				},
+				["Player-3674-05A312AD"] = {
+					["name"] = "Demirdokum-TwistingNether",
+					["guid"] = "Player-3674-05A312AD",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1679138037,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1305-0C0D7B72"] = {
 					["name"] = "Réponja-Kazzak",
@@ -15723,12 +15915,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677687759,
 					["realm"] = "Frostwolf",
 				},
-				["Player-3686-09DB0DFC"] = {
-					["name"] = "Ansaniâ-Antonidas",
-					["guid"] = "Player-3686-09DB0DFC",
-					["class"] = "PRIEST",
-					["cache_time"] = 1676479581,
-					["realm"] = "Antonidas",
+				["Player-1615-0B220DDE"] = {
+					["name"] = "хандырик-Ревущийфьорд",
+					["guid"] = "Player-1615-0B220DDE",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1685797754,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1390-0C3AFD48"] = {
 					["name"] = "Absollem-Hyjal",
@@ -15751,26 +15943,28 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676486742,
 					["realm"] = "Eredar",
 				},
-				["Player-1379-0ACE5D9B"] = {
-					["name"] = "Bartolox-Sanguino",
-					["guid"] = "Player-1379-0ACE5D9B",
-					["class"] = "DRUID",
-					["cache_time"] = 1677071253,
-					["realm"] = "Sanguino",
+				["Player-3713-0A725A08"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Hrabiawons-BurningLegion",
+					["guid"] = "Player-3713-0A725A08",
+					["realm"] = "BurningLegion",
+					["class"] = "ROGUE",
+					["cache_time"] = 1685748809,
+					["rank"] = "Raider",
 				},
-				["Player-1615-0B220DDE"] = {
-					["name"] = "хандырик-Ревущийфьорд",
-					["guid"] = "Player-1615-0B220DDE",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1685797754,
-					["realm"] = "Ревущийфьорд",
+				["Player-1305-08422581"] = {
+					["name"] = "Nagas-Kazzak",
+					["guid"] = "Player-1305-08422581",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1679968027,
+					["realm"] = "Kazzak",
 				},
-				["Player-3391-08A2C9BB"] = {
-					["name"] = "Loubie-Silvermoon",
-					["guid"] = "Player-3391-08A2C9BB",
-					["class"] = "HUNTER",
-					["cache_time"] = 1689677222,
-					["realm"] = "Silvermoon",
+				["Player-3682-07B747DB"] = {
+					["name"] = "Paorol-Ragnaros",
+					["guid"] = "Player-3682-07B747DB",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686253971,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0B22DA2F"] = {
 					["name"] = "Buddskiimedp-TwistingNether",
@@ -15779,19 +15973,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687952836,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1621-0B1561BC"] = {
-					["name"] = "Kiokek-Dalaran",
-					["guid"] = "Player-1621-0B1561BC",
-					["class"] = "MONK",
-					["cache_time"] = 1676361246,
-					["realm"] = "Dalaran",
+				["Player-1396-08E17E2B"] = {
+					["name"] = "Lorent-Quel'Thalas",
+					["guid"] = "Player-1396-08E17E2B",
+					["class"] = "PALADIN",
+					["cache_time"] = 1713977460,
+					["realm"] = "Quel'Thalas",
 				},
-				["Player-1621-0B1D4CB3"] = {
-					["name"] = "Xlv-Dalaran",
-					["guid"] = "Player-1621-0B1D4CB3",
-					["class"] = "DRUID",
-					["cache_time"] = 1687133300,
-					["realm"] = "Dalaran",
+				["Player-3691-048CC02A"] = {
+					["name"] = "Beledino-Blackhand",
+					["guid"] = "Player-3691-048CC02A",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684926332,
+					["realm"] = "Blackhand",
 				},
 				["Player-3674-09608CFE"] = {
 					["name"] = "Tarte-TwistingNether",
@@ -15800,12 +15994,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677258735,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1615-08283B00"] = {
-					["name"] = "порнахд-Ревущийфьорд",
-					["guid"] = "Player-1615-08283B00",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1677198346,
-					["realm"] = "Ревущийфьорд",
+				["Player-1602-0A5205DB"] = {
+					["name"] = "причэр-Гордунни",
+					["guid"] = "Player-1602-0A5205DB",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689398192,
+					["realm"] = "Гордунни",
 				},
 				["Player-1615-0AD0235D"] = {
 					["name"] = "эленажь-Ревущийфьорд",
@@ -15821,6 +16015,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678485980,
 					["realm"] = "Ragnaros",
 				},
+				["Player-1305-0BDA3903"] = {
+					["name"] = "Myërs-Kazzak",
+					["guid"] = "Player-1305-0BDA3903",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1690894644,
+					["realm"] = "Kazzak",
+				},
 				["Player-509-09AFC612"] = {
 					["name"] = "Varæl-Garona",
 					["guid"] = "Player-509-09AFC612",
@@ -15828,11 +16029,11 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680292466,
 					["realm"] = "Garona",
 				},
-				["Player-1305-0BDA3903"] = {
-					["name"] = "Myërs-Kazzak",
-					["guid"] = "Player-1305-0BDA3903",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1690894644,
+				["Player-1305-0C14884E"] = {
+					["name"] = "Chalupabates-Kazzak",
+					["guid"] = "Player-1305-0C14884E",
+					["class"] = "MAGE",
+					["cache_time"] = 1678236367,
 					["realm"] = "Kazzak",
 				},
 				["Player-1302-0C86D21A"] = {
@@ -15842,26 +16043,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687953960,
 					["realm"] = "Archimonde",
 				},
-				["Player-1305-0C14884E"] = {
-					["name"] = "Chalupabates-Kazzak",
-					["guid"] = "Player-1305-0C14884E",
-					["class"] = "MAGE",
-					["cache_time"] = 1678236367,
-					["realm"] = "Kazzak",
+				["Player-3682-05BA316B"] = {
+					["name"] = "ürbemarkoló-Ragnaros",
+					["guid"] = "Player-3682-05BA316B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1677672192,
+					["realm"] = "Ragnaros",
 				},
-				["Player-3674-0B1E9EB5"] = {
-					["name"] = "Lúfÿ-TwistingNether",
-					["guid"] = "Player-3674-0B1E9EB5",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686934003,
-					["realm"] = "TwistingNether",
-				},
-				["Player-1302-09C90F82"] = {
-					["name"] = "Viraïna-Archimonde",
-					["guid"] = "Player-1302-09C90F82",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687041442,
-					["realm"] = "Archimonde",
+				["Player-1615-0B19B8AB"] = {
+					["name"] = "соулдилер-Ревущийфьорд",
+					["guid"] = "Player-1615-0B19B8AB",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676525453,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1929-0E2E58FF"] = {
 					["name"] = "мормонка-Борейскаятундра",
@@ -15870,17 +16064,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678052884,
 					["realm"] = "Борейскаятундра",
 				},
-				["Player-3682-0ABD785A"] = {
-					["ilvl"] = 433.0625,
-					["guid"] = "Player-3682-0ABD785A",
-					["class"] = "WARRIOR",
-					["role"] = "TANK",
-					["cache_time"] = 1686170543,
-					["realm"] = "Ragnaros",
-					["name"] = "Baptistbarry-Ragnaros",
-					["specID"] = 73,
-					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+				["Player-3656-04D21E42"] = {
+					["name"] = "Zerosun-Haomarush",
+					["guid"] = "Player-3656-04D21E42",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1678894799,
+					["realm"] = "Haomarush",
 				},
 				["Player-580-08444612"] = {
 					["name"] = "Argerion-Blackmoore",
@@ -15917,12 +16106,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683073733,
 					["realm"] = "BurningLegion",
 				},
-				["Player-1092-08D59F5B"] = {
-					["name"] = "Totis-Drak'thul",
-					["guid"] = "Player-1092-08D59F5B",
+				["Player-1615-0B1B8449"] = {
+					["name"] = "баскими-Ревущийфьорд",
+					["guid"] = "Player-1615-0B1B8449",
 					["class"] = "ROGUE",
-					["cache_time"] = 1683073733,
-					["realm"] = "Drak'thul",
+					["cache_time"] = 1687949013,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1335-0A04CEE5"] = {
 					["name"] = "Snowynters-Ysondre",
@@ -15931,33 +16120,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686000336,
 					["realm"] = "Ysondre",
 				},
-				["Player-3682-05BA316B"] = {
-					["name"] = "ürbemarkoló-Ragnaros",
-					["guid"] = "Player-3682-05BA316B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1677672192,
-					["realm"] = "Ragnaros",
+				["Player-3674-0A5E30C2"] = {
+					["name"] = "Nazjra-TwistingNether",
+					["guid"] = "Player-3674-0A5E30C2",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684231108,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1303-0061E128"] = {
-					["name"] = "Amour-GrimBatol",
-					["guid"] = "Player-1303-0061E128",
+				["Player-1084-0A7EEEA9"] = {
+					["name"] = "Femboylock-TarrenMill",
+					["guid"] = "Player-1084-0A7EEEA9",
 					["class"] = "WARLOCK",
-					["cache_time"] = 1676327182,
-					["realm"] = "GrimBatol",
+					["cache_time"] = 1684883011,
+					["realm"] = "TarrenMill",
 				},
-				["Player-633-0AD1BD87"] = {
-					["name"] = "Tabaluga-Darkspear",
-					["guid"] = "Player-633-0AD1BD87",
+				["Player-3702-0A810F41"] = {
+					["name"] = "Nixaria-ArgentDawn",
+					["guid"] = "Player-3702-0A810F41",
 					["class"] = "EVOKER",
-					["cache_time"] = 1684218174,
-					["realm"] = "Darkspear",
+					["cache_time"] = 1686754474,
+					["realm"] = "ArgentDawn",
 				},
-				["Player-3656-04D21E42"] = {
-					["name"] = "Zerosun-Haomarush",
-					["guid"] = "Player-3656-04D21E42",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1678894799,
-					["realm"] = "Haomarush",
+				["Player-3691-0745F2AA"] = {
+					["name"] = "Paise-Blackhand",
+					["guid"] = "Player-3691-0745F2AA",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1680292466,
+					["realm"] = "Blackhand",
 				},
 				["Player-3691-0A020AA1"] = {
 					["name"] = "Panicroll-Blackhand",
@@ -15973,47 +16162,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676799685,
 					["realm"] = "Elune",
 				},
-				["Player-3713-071DFDA4"] = {
-					["name"] = "Luxipux-BurningLegion",
-					["guid"] = "Player-3713-071DFDA4",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1680262695,
-					["realm"] = "BurningLegion",
-				},
-				["Player-1305-05148664"] = {
-					["name"] = "Torbs-Kazzak",
-					["guid"] = "Player-1305-05148664",
-					["class"] = "ROGUE",
-					["cache_time"] = 1677957827,
-					["realm"] = "Kazzak",
-				},
-				["Player-510-0602F6CD"] = {
-					["name"] = "Juliien-Vol'jin",
-					["guid"] = "Player-510-0602F6CD",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676372636,
-					["realm"] = "Vol'jin",
-				},
-				["Player-3391-0BAC08E4"] = {
-					["name"] = "Omfgsisa-Silvermoon",
-					["guid"] = "Player-3391-0BAC08E4",
-					["class"] = "PRIEST",
-					["cache_time"] = 1684207657,
-					["realm"] = "Silvermoon",
-				},
-				["Player-3702-0A810F41"] = {
-					["name"] = "Nixaria-ArgentDawn",
-					["guid"] = "Player-3702-0A810F41",
-					["class"] = "EVOKER",
-					["cache_time"] = 1686754474,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-1615-0B25EBC4"] = {
-					["name"] = "палавдин-Ревущийфьорд",
-					["guid"] = "Player-1615-0B25EBC4",
+				["Player-1098-0566EB01"] = {
+					["name"] = "Excess-Malfurion",
+					["guid"] = "Player-1098-0566EB01",
 					["class"] = "PALADIN",
-					["cache_time"] = 1686121310,
-					["realm"] = "Ревущийфьорд",
+					["cache_time"] = 1685872694,
+					["realm"] = "Malfurion",
+				},
+				["Player-1092-08D59F5B"] = {
+					["name"] = "Totis-Drak'thul",
+					["guid"] = "Player-1092-08D59F5B",
+					["class"] = "ROGUE",
+					["cache_time"] = 1683073733,
+					["realm"] = "Drak'thul",
+				},
+				["Player-1602-0F344B97"] = {
+					["name"] = "дыхачило-Гордунни",
+					["guid"] = "Player-1602-0F344B97",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1685342409,
+					["realm"] = "Гордунни",
+				},
+				["Player-1316-0C85FAD1"] = {
+					["name"] = "Pallasacra-Nemesis",
+					["guid"] = "Player-1316-0C85FAD1",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680292466,
+					["realm"] = "Nemesis",
 				},
 				["Player-1403-0A6173C0"] = {
 					["name"] = "Hølysmoke-Draenor",
@@ -16022,6 +16197,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688687303,
 					["realm"] = "Draenor",
 				},
+				["Player-1615-0B25EBC4"] = {
+					["name"] = "палавдин-Ревущийфьорд",
+					["guid"] = "Player-1615-0B25EBC4",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686121310,
+					["realm"] = "Ревущийфьорд",
+				},
 				["Player-1379-0AD07D9D"] = {
 					["name"] = "Prhitz-Sanguino",
 					["guid"] = "Player-1379-0AD07D9D",
@@ -16029,12 +16211,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687949013,
 					["realm"] = "Sanguino",
 				},
-				["Player-1302-065C8493"] = {
-					["name"] = "Kyouhu-Archimonde",
-					["guid"] = "Player-1302-065C8493",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685341872,
-					["realm"] = "Archimonde",
+				["Player-3682-0AFEE871"] = {
+					["name"] = "Bkhunt-Ragnaros",
+					["guid"] = "Player-3682-0AFEE871",
+					["class"] = "HUNTER",
+					["cache_time"] = 1677250012,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1604-0B028B26"] = {
 					["name"] = "лояльность-СвежевательДуш",
@@ -16043,19 +16225,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684502528,
 					["realm"] = "СвежевательДуш",
 				},
-				["Player-3682-0A544AB0"] = {
-					["name"] = "Smóke-Ragnaros",
-					["guid"] = "Player-3682-0A544AB0",
-					["class"] = "PRIEST",
-					["cache_time"] = 1679616541,
+				["Player-3682-0B2105ED"] = {
+					["ilvl"] = 433.1875,
+					["guid"] = "Player-3682-0B2105ED",
+					["class"] = "WARLOCK",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1686170267,
+					["rank"] = "Recruiter",
+					["name"] = "Moglocked-Ragnaros",
+					["specID"] = 266,
+					["enchantingLvl"] = 0,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1403-0A55A0E2"] = {
-					["name"] = "Arrowdeen-Draenor",
-					["guid"] = "Player-1403-0A55A0E2",
-					["class"] = "HUNTER",
-					["cache_time"] = 1677223354,
-					["realm"] = "Draenor",
+				["Player-1615-0AD743BF"] = {
+					["name"] = "кенипаладин-Ревущийфьорд",
+					["guid"] = "Player-1615-0AD743BF",
+					["class"] = "PALADIN",
+					["cache_time"] = 1688877348,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1305-0C88E87B"] = {
 					["name"] = "Hsalione-Kazzak",
@@ -16064,6 +16251,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688866939,
 					["realm"] = "Kazzak",
 				},
+				["Player-3674-0A722438"] = {
+					["name"] = "çøøkie-TwistingNether",
+					["guid"] = "Player-3674-0A722438",
+					["class"] = "DRUID",
+					["cache_time"] = 1684131204,
+					["realm"] = "TwistingNether",
+				},
 				["Player-1602-0BF4A094"] = {
 					["name"] = "лачето-Гордунни",
 					["guid"] = "Player-1602-0BF4A094",
@@ -16071,12 +16265,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687791302,
 					["realm"] = "Гордунни",
 				},
-				["Player-1615-0B19B8AB"] = {
-					["name"] = "соулдилер-Ревущийфьорд",
-					["guid"] = "Player-1615-0B19B8AB",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676525453,
-					["realm"] = "Ревущийфьорд",
+				["Player-3682-0B12B697"] = {
+					["name"] = "Myfficraider-Ragnaros",
+					["guid"] = "Player-3682-0B12B697",
+					["class"] = "EVOKER",
+					["cache_time"] = 1675884019,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1615-0AE3F563"] = {
 					["name"] = "жруборг-Ревущийфьорд",
@@ -16085,12 +16279,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690510985,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-580-0A668B95"] = {
-					["name"] = "Ráo-Blackmoore",
-					["guid"] = "Player-580-0A668B95",
-					["class"] = "MONK",
-					["cache_time"] = 1676796439,
-					["realm"] = "Blackmoore",
+				["Player-3391-0C84E7A8"] = {
+					["name"] = "Kixer-Silvermoon",
+					["guid"] = "Player-3391-0C84E7A8",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1680708830,
+					["realm"] = "Silvermoon",
 				},
 				["Player-3682-0A79222F"] = {
 					["name"] = "Búbbly-Ragnaros",
@@ -16099,12 +16293,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687298820,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0C4E7AEB"] = {
-					["name"] = "Noxxîe-Kazzak",
-					["guid"] = "Player-1305-0C4E7AEB",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687248139,
-					["realm"] = "Kazzak",
+				["Player-581-0A67E740"] = {
+					["name"] = "Jéllywatch-Blackrock",
+					["guid"] = "Player-581-0A67E740",
+					["class"] = "MONK",
+					["cache_time"] = 1676448663,
+					["realm"] = "Blackrock",
 				},
 				["Player-3702-0629DC7E"] = {
 					["name"] = "Rebeccá-ArgentDawn",
@@ -16148,12 +16342,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676372636,
 					["realm"] = "Eredar",
 				},
-				["Player-3674-0A5E30C2"] = {
-					["name"] = "Nazjra-TwistingNether",
-					["guid"] = "Player-3674-0A5E30C2",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684231108,
+				["Player-3674-0B157091"] = {
+					["name"] = "Civel-TwistingNether",
+					["guid"] = "Player-3674-0B157091",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1679506666,
 					["realm"] = "TwistingNether",
+				},
+				["Player-1403-0A608D66"] = {
+					["name"] = "Trezglock-Draenor",
+					["guid"] = "Player-1403-0A608D66",
+					["class"] = "HUNTER",
+					["cache_time"] = 1677665419,
+					["realm"] = "Draenor",
 				},
 				["Player-1335-0394EEDD"] = {
 					["name"] = "Wikerman-Ysondre",
@@ -16162,19 +16363,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687949273,
 					["realm"] = "Ysondre",
 				},
-				["Player-3674-0B157091"] = {
-					["name"] = "Civel-TwistingNether",
-					["guid"] = "Player-3674-0B157091",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1679506666,
-					["realm"] = "TwistingNether",
-				},
-				["Player-1305-0B0C2D71"] = {
-					["name"] = "Chaosnether-Kazzak",
-					["guid"] = "Player-1305-0B0C2D71",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1685534275,
-					["realm"] = "Kazzak",
+				["Player-1615-0B21A3F5"] = {
+					["name"] = "пиайпоскидке-Ревущийфьорд",
+					["guid"] = "Player-1615-0B21A3F5",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684883011,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1315-05D5745D"] = {
 					["name"] = "Als-Elune",
@@ -16190,62 +16384,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677606779,
 					["realm"] = "Blackmoore",
 				},
-				["Player-581-0A67E740"] = {
-					["name"] = "Jéllywatch-Blackrock",
-					["guid"] = "Player-581-0A67E740",
-					["class"] = "MONK",
-					["cache_time"] = 1676448663,
-					["realm"] = "Blackrock",
-				},
-				["Player-3691-0745F2AA"] = {
-					["name"] = "Paise-Blackhand",
-					["guid"] = "Player-3691-0745F2AA",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1680292466,
-					["realm"] = "Blackhand",
-				},
-				["Player-1390-0BE399B9"] = {
-					["ilvl"] = 427.4375,
-					["guid"] = "Player-1390-0BE399B9",
-					["class"] = "PALADIN",
-					["rank"] = "Unguilded",
-					["role"] = "TANK",
-					["cache_time"] = 1685468704,
-					["name"] = "Goldenshait-Hyjal",
-					["enchanter"] = true,
-					["specID"] = 66,
-					["enchantingLvl"] = 47,
-					["realm"] = "Hyjal",
-				},
-				["Player-581-0A451F80"] = {
-					["role"] = "HEALER",
-					["name"] = "Mistskeren-Blackrock",
-					["guid"] = "Player-581-0A451F80",
-					["realm"] = "Blackrock",
-					["class"] = "MONK",
-					["cache_time"] = 1684927057,
-					["rank"] = "Rookie",
-				},
-				["Player-3682-08133A02"] = {
-					["name"] = "Korose-Ragnaros",
-					["guid"] = "Player-3682-08133A02",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1677672192,
-					["realm"] = "Ragnaros",
-				},
-				["Player-1403-0A608D66"] = {
-					["name"] = "Trezglock-Draenor",
-					["guid"] = "Player-1403-0A608D66",
-					["class"] = "HUNTER",
-					["cache_time"] = 1677665419,
+				["Player-1403-0A73AE6D"] = {
+					["name"] = "Pingwini-Draenor",
+					["guid"] = "Player-1403-0A73AE6D",
+					["class"] = "DRUID",
+					["cache_time"] = 1689262982,
 					["realm"] = "Draenor",
-				},
-				["Player-1390-0C804582"] = {
-					["name"] = "Bottomtwinky-Hyjal",
-					["guid"] = "Player-1390-0C804582",
-					["class"] = "EVOKER",
-					["cache_time"] = 1677198355,
-					["realm"] = "Hyjal",
 				},
 				["Player-3674-09A35B1F"] = {
 					["name"] = "Zerotooth-TwistingNether",
@@ -16254,12 +16398,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684054876,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1602-0F344B97"] = {
-					["name"] = "дыхачило-Гордунни",
-					["guid"] = "Player-1602-0F344B97",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1685342409,
-					["realm"] = "Гордунни",
+				["Player-1390-0BE399B9"] = {
+					["ilvl"] = 427.4375,
+					["guid"] = "Player-1390-0BE399B9",
+					["class"] = "PALADIN",
+					["realm"] = "Hyjal",
+					["role"] = "TANK",
+					["cache_time"] = 1685468704,
+					["name"] = "Goldenshait-Hyjal",
+					["specID"] = 66,
+					["enchanter"] = true,
+					["enchantingLvl"] = 47,
+					["rank"] = "Unguilded",
 				},
 				["Player-1615-0971A846"] = {
 					["name"] = "апокалипсит-Ревущийфьорд",
@@ -16268,12 +16418,54 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689253178,
 					["realm"] = "Ревущийфьорд",
 				},
+				["Player-3682-08133A02"] = {
+					["name"] = "Korose-Ragnaros",
+					["guid"] = "Player-3682-08133A02",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1677672192,
+					["realm"] = "Ragnaros",
+				},
 				["Player-1615-0AF4534C"] = {
 					["name"] = "вирнс-Ревущийфьорд",
 					["guid"] = "Player-1615-0AF4534C",
 					["class"] = "SHAMAN",
 					["cache_time"] = 1680292466,
 					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1305-0AD9E380"] = {
+					["name"] = "Tambra-Kazzak",
+					["guid"] = "Player-1305-0AD9E380",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1690329832,
+					["realm"] = "Kazzak",
+				},
+				["Player-1085-0A9C8A87"] = {
+					["name"] = "Drainár-Moonglade",
+					["guid"] = "Player-1085-0A9C8A87",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684926617,
+					["realm"] = "Moonglade",
+				},
+				["Player-1390-0C241258"] = {
+					["name"] = "Reïner-Hyjal",
+					["guid"] = "Player-1390-0C241258",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677198355,
+					["realm"] = "Hyjal",
+				},
+				["Player-2073-043CB090"] = {
+					["name"] = "Agoraa-Stormscale",
+					["guid"] = "Player-2073-043CB090",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676144825,
+					["realm"] = "Stormscale",
+				},
+				["Player-1305-0A47E856"] = {
+					["name"] = "Whitesonja-Kazzak",
+					["guid"] = "Player-1305-0A47E856",
+					["class"] = "PRIEST",
+					["cache_time"] = 1677126111,
+					["realm"] = "Kazzak",
 				},
 				["Player-1329-094A06DB"] = {
 					["name"] = "Ptaciz-Ravencrest",
@@ -16324,19 +16516,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684202637,
 					["realm"] = "Thrall",
 				},
-				["Player-3674-08D31498"] = {
-					["name"] = "Sickdpsxd-TwistingNether",
-					["guid"] = "Player-3674-08D31498",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1676387096,
-					["realm"] = "TwistingNether",
+				["Player-1604-0BA0386A"] = {
+					["name"] = "могууступить-СвежевательДуш",
+					["guid"] = "Player-1604-0BA0386A",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1684413259,
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1305-0A47E856"] = {
-					["name"] = "Whitesonja-Kazzak",
-					["guid"] = "Player-1305-0A47E856",
-					["class"] = "PRIEST",
-					["cache_time"] = 1677126111,
-					["realm"] = "Kazzak",
+				["Player-1084-0A9A64B1"] = {
+					["name"] = "Turat-TarrenMill",
+					["guid"] = "Player-1084-0A9A64B1",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685059364,
+					["realm"] = "TarrenMill",
 				},
 				["Player-3686-0887B92B"] = {
 					["name"] = "Locey-Antonidas",
@@ -16352,33 +16544,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685780231,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1388-0AD75B5A"] = {
-					["name"] = "énid-Mazrigos",
-					["guid"] = "Player-1388-0AD75B5A",
+				["Player-3713-0AD60C99"] = {
+					["name"] = "Ajwory-BurningLegion",
+					["guid"] = "Player-3713-0AD60C99",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676335902,
+					["realm"] = "BurningLegion",
+				},
+				["Player-1390-0C804582"] = {
+					["name"] = "Bottomtwinky-Hyjal",
+					["guid"] = "Player-1390-0C804582",
 					["class"] = "EVOKER",
-					["cache_time"] = 1676973948,
-					["realm"] = "Mazrigos",
+					["cache_time"] = 1677198355,
+					["realm"] = "Hyjal",
 				},
-				["Player-3682-08163C0A"] = {
-					["name"] = "øops-Ragnaros",
-					["guid"] = "Player-3682-08163C0A",
-					["class"] = "HUNTER",
-					["cache_time"] = 1679027833,
-					["realm"] = "Ragnaros",
-				},
-				["Player-1597-0D099842"] = {
-					["name"] = "Ancestral-Sylvanas",
-					["guid"] = "Player-1597-0D099842",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1678733387,
-					["realm"] = "Sylvanas",
-				},
-				["Player-581-0A43F14C"] = {
-					["name"] = "Inlight-Blackrock",
-					["guid"] = "Player-581-0A43F14C",
-					["class"] = "PRIEST",
-					["cache_time"] = 1679506666,
-					["realm"] = "Blackrock",
+				["Player-1615-0B039914"] = {
+					["name"] = "ронухан-Ревущийфьорд",
+					["guid"] = "Player-1615-0B039914",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1678234395,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1305-0C4F8361"] = {
 					["name"] = "Envoyligh-Kazzak",
@@ -16386,6 +16571,13 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["cache_time"] = 1679427119,
 					["realm"] = "Kazzak",
+				},
+				["Player-2073-094BB938"] = {
+					["name"] = "Ftohës-Stormscale",
+					["guid"] = "Player-2073-094BB938",
+					["class"] = "MAGE",
+					["cache_time"] = 1687102801,
+					["realm"] = "Stormscale",
 				},
 				["Player-1604-0F1D98F8"] = {
 					["name"] = "кучкин-СвежевательДуш",
@@ -16408,26 +16600,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686935978,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1084-0A9A64B1"] = {
-					["name"] = "Turat-TarrenMill",
-					["guid"] = "Player-1084-0A9A64B1",
+				["Player-1329-09EC49D1"] = {
+					["name"] = "Alerandir-Ravencrest",
+					["guid"] = "Player-1329-09EC49D1",
+					["class"] = "HUNTER",
+					["cache_time"] = 1685573068,
+					["realm"] = "Ravencrest",
+				},
+				["Player-581-0A6FA21E"] = {
+					["name"] = "Kaybu-Blackrock",
+					["guid"] = "Player-581-0A6FA21E",
 					["class"] = "PALADIN",
-					["cache_time"] = 1685059364,
-					["realm"] = "TarrenMill",
+					["cache_time"] = 1686049852,
+					["realm"] = "Blackrock",
 				},
-				["Player-1615-0B039914"] = {
-					["name"] = "ронухан-Ревущийфьорд",
-					["guid"] = "Player-1615-0B039914",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1678234395,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-1615-0A846180"] = {
-					["name"] = "мисстергусь-Ревущийфьорд",
-					["guid"] = "Player-1615-0A846180",
-					["class"] = "ROGUE",
-					["cache_time"] = 1690750821,
-					["realm"] = "Ревущийфьорд",
+				["Player-1390-0C31736D"] = {
+					["name"] = "Elylia-Hyjal",
+					["guid"] = "Player-1390-0C31736D",
+					["class"] = "PRIEST",
+					["cache_time"] = 1688502238,
+					["realm"] = "Hyjal",
 				},
 				["Player-3713-0AD0EC99"] = {
 					["name"] = "Papamobil-BurningLegion",
@@ -16436,46 +16628,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680292466,
 					["realm"] = "BurningLegion",
 				},
-				["Player-1587-0F4DE4DB"] = {
-					["name"] = "Vinesolar-Runetotem",
-					["guid"] = "Player-1587-0F4DE4DB",
+				["Player-3703-09F0ED8A"] = {
+					["name"] = "Nêmø-Frostwolf",
+					["guid"] = "Player-3703-09F0ED8A",
 					["class"] = "DRUID",
-					["cache_time"] = 1678733272,
-					["realm"] = "Runetotem",
+					["cache_time"] = 1685397111,
+					["realm"] = "Frostwolf",
 				},
-				["Player-1602-0F2058A6"] = {
-					["name"] = "грассфеникс-Гордунни",
-					["guid"] = "Player-1602-0F2058A6",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676354879,
-					["realm"] = "Гордунни",
+				["Player-1121-05CBC21E"] = {
+					["name"] = "Durbuz-KultderVerdammten",
+					["guid"] = "Player-1121-05CBC21E",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676973948,
+					["realm"] = "KultderVerdammten",
 				},
-				["Player-1085-0A9C8A87"] = {
-					["name"] = "Drainár-Moonglade",
-					["guid"] = "Player-1085-0A9C8A87",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684926617,
-					["realm"] = "Moonglade",
+				["Player-1331-09F7C69B"] = {
+					["name"] = "Bavmorda-Medivh",
+					["guid"] = "Player-1331-09F7C69B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1677607191,
+					["realm"] = "Medivh",
 				},
-				["Player-3682-0B247217"] = {
-					["ilvl"] = 431.375,
-					["guid"] = "Player-3682-0B247217",
-					["class"] = "PALADIN",
-					["rank"] = "Mythic Raider",
-					["role"] = "HEALER",
-					["cache_time"] = 1686170432,
-					["name"] = "Banaltro-Ragnaros",
-					["enchanter"] = true,
-					["specID"] = 65,
-					["enchantingLvl"] = 82,
-					["realm"] = "Ragnaros",
+				["Player-581-0A2CFAC5"] = {
+					["name"] = "Hypedorc-Blackrock",
+					["guid"] = "Player-581-0A2CFAC5",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1678631557,
+					["realm"] = "Blackrock",
 				},
-				["Player-1084-09814B85"] = {
-					["name"] = "Milatios-TarrenMill",
-					["guid"] = "Player-1084-09814B85",
-					["class"] = "DRUID",
-					["cache_time"] = 1677665404,
-					["realm"] = "TarrenMill",
+				["Player-1615-0A5A1441"] = {
+					["name"] = "дедотмороз-Ревущийфьорд",
+					["guid"] = "Player-1615-0A5A1441",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1685516014,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1092-053C803B"] = {
 					["name"] = "Larthos-BurningBlade",
@@ -16484,25 +16670,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678902000,
 					["realm"] = "BurningBlade",
 				},
-				["Player-3682-0B29ABF2"] = {
-					["ilvl"] = 444.75,
-					["guid"] = "Player-3682-0B29ABF2",
-					["class"] = "PALADIN",
-					["realm"] = "Ragnaros",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1690157726,
-					["name"] = "Wrathwings-Ragnaros",
-					["specID"] = 70,
-					["enchanter"] = true,
-					["enchantingLvl"] = 52,
-					["rank"] = "Raider",
+				["Player-1305-0C9256C2"] = {
+					["name"] = "Fistbreaker-Kazzak",
+					["guid"] = "Player-1305-0C9256C2",
+					["class"] = "MONK",
+					["cache_time"] = 1686935978,
+					["realm"] = "Kazzak",
 				},
-				["Player-3674-0AE9C2E2"] = {
-					["name"] = "Düsentus-TwistingNether",
-					["guid"] = "Player-3674-0AE9C2E2",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1685766281,
-					["realm"] = "TwistingNether",
+				["Player-1379-0AC3B0DC"] = {
+					["name"] = "Namespeligro-Sanguino",
+					["guid"] = "Player-1379-0AC3B0DC",
+					["class"] = "MONK",
+					["cache_time"] = 1676377737,
+					["realm"] = "Sanguino",
 				},
 				["Player-3682-08E46049"] = {
 					["name"] = "Tyny-Ragnaros",
@@ -16511,19 +16691,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676473627,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0C4F4F58"] = {
-					["name"] = "Servvia-Kazzak",
-					["guid"] = "Player-1305-0C4F4F58",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1688923981,
-					["realm"] = "Kazzak",
+				["Player-1084-0A4BBDD2"] = {
+					["name"] = "Ollgaa-TarrenMill",
+					["guid"] = "Player-1084-0A4BBDD2",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680401778,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1604-0BA0386A"] = {
-					["name"] = "могууступить-СвежевательДуш",
-					["guid"] = "Player-1604-0BA0386A",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1684413259,
-					["realm"] = "СвежевательДуш",
+				["Player-3713-072D66CA"] = {
+					["name"] = "Bigcritz-BurningLegion",
+					["guid"] = "Player-3713-072D66CA",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1680262695,
+					["realm"] = "BurningLegion",
 				},
 				["Player-3692-0937E7A4"] = {
 					["name"] = "Bwonsamdii-Eredar",
@@ -16539,12 +16719,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687955030,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1305-0C9256C2"] = {
-					["name"] = "Fistbreaker-Kazzak",
-					["guid"] = "Player-1305-0C9256C2",
+				["Player-1403-0A019103"] = {
+					["name"] = "Homellander-Draenor",
+					["guid"] = "Player-1403-0A019103",
 					["class"] = "MONK",
-					["cache_time"] = 1686935978,
-					["realm"] = "Kazzak",
+					["cache_time"] = 1684277685,
+					["realm"] = "Draenor",
 				},
 				["Player-3682-0B1210AA"] = {
 					["ilvl"] = 442.625,
@@ -16552,11 +16732,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
+					["rank"] = "Alt",
 					["name"] = "Mordekaisar-Ragnaros",
 					["specID"] = 72,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Ragnaros",
 				},
 				["Player-581-0A12AF4F"] = {
 					["name"] = "Deathsolty-Blackrock",
@@ -16565,12 +16745,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678052884,
 					["realm"] = "Blackrock",
 				},
-				["Player-3391-0C59D9DF"] = {
-					["name"] = "Mômonga-Silvermoon",
-					["guid"] = "Player-3391-0C59D9DF",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1679966556,
-					["realm"] = "Silvermoon",
+				["Player-1390-0C52B174"] = {
+					["name"] = "Cräcki-Hyjal",
+					["guid"] = "Player-1390-0C52B174",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690305151,
+					["realm"] = "Hyjal",
 				},
 				["Player-1099-0A8F6F95"] = {
 					["name"] = "Kaydosku-Rexxar",
@@ -16579,12 +16759,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680400036,
 					["realm"] = "Rexxar",
 				},
-				["Player-580-0A729677"] = {
-					["name"] = "Duffdruid-Blackmoore",
-					["guid"] = "Player-580-0A729677",
+				["Player-1597-0D6823FC"] = {
+					["name"] = "Sorrowborne-Sylvanas",
+					["guid"] = "Player-1597-0D6823FC",
+					["class"] = "PALADIN",
+					["cache_time"] = 1678066914,
+					["realm"] = "Sylvanas",
+				},
+				["Player-2073-09F4BC52"] = {
+					["name"] = "Adoonis-Stormscale",
+					["guid"] = "Player-2073-09F4BC52",
 					["class"] = "DRUID",
-					["cache_time"] = 1686062753,
-					["realm"] = "Blackmoore",
+					["cache_time"] = 1685823297,
+					["realm"] = "Stormscale",
 				},
 				["Player-1390-0BCD61C6"] = {
 					["name"] = "Nägass-Hyjal",
@@ -16593,19 +16780,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690305136,
 					["realm"] = "Hyjal",
 				},
-				["Player-1335-057EBB59"] = {
-					["name"] = "Gazaslim-Ysondre",
-					["guid"] = "Player-1335-057EBB59",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1685398638,
-					["realm"] = "Ysondre",
-				},
-				["Player-580-08CD9FDE"] = {
-					["name"] = "Greenflame-Blackmoore",
-					["guid"] = "Player-580-08CD9FDE",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687259258,
-					["realm"] = "Blackmoore",
+				["Player-1388-07921908"] = {
+					["name"] = "Tencanto-Lightbringer",
+					["guid"] = "Player-1388-07921908",
+					["class"] = "MAGE",
+					["cache_time"] = 1687791012,
+					["realm"] = "Lightbringer",
 				},
 				["Player-1305-0B05E7DB"] = {
 					["name"] = "Coachn-Kazzak",
@@ -16628,12 +16808,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687102798,
 					["realm"] = "EmeraldDream",
 				},
-				["Player-1602-0F0A6986"] = {
-					["name"] = "гатсберсеркк-Гордунни",
-					["guid"] = "Player-1602-0F0A6986",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676479581,
-					["realm"] = "Гордунни",
+				["Player-1390-0C5A1AD9"] = {
+					["name"] = "Kiteshi-Hyjal",
+					["guid"] = "Player-1390-0C5A1AD9",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1684883011,
+					["realm"] = "Hyjal",
 				},
 				["Player-3391-0C1697D1"] = {
 					["name"] = "Mitrandiir-Silvermoon",
@@ -16642,12 +16822,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680644778,
 					["realm"] = "Silvermoon",
 				},
-				["Player-3391-0C5573F8"] = {
-					["name"] = "Shiroazhi-Silvermoon",
-					["guid"] = "Player-3391-0C5573F8",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676385549,
-					["realm"] = "Silvermoon",
+				["Player-3691-058A159E"] = {
+					["name"] = "Schatulli-Blackhand",
+					["guid"] = "Player-3691-058A159E",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1680290994,
+					["realm"] = "Blackhand",
 				},
 				["Player-3682-0B0A2A36"] = {
 					["ilvl"] = 442.4375,
@@ -16655,18 +16835,18 @@ RCLootCouncilDB = {
 					["class"] = "EVOKER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689265296,
-					["realm"] = "Ragnaros",
+					["rank"] = "Social",
 					["name"] = "Rambroner-Ragnaros",
 					["specID"] = 1473,
 					["enchantingLvl"] = 0,
-					["rank"] = "Social",
+					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0BD7F4F7"] = {
-					["name"] = "Noisess-Kazzak",
-					["guid"] = "Player-1305-0BD7F4F7",
-					["class"] = "DRUID",
-					["cache_time"] = 1680222925,
-					["realm"] = "Kazzak",
+				["Player-1403-0A21CD46"] = {
+					["name"] = "Pulsaria-Draenor",
+					["guid"] = "Player-1403-0A21CD46",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1677072459,
+					["realm"] = "Draenor",
 				},
 				["Player-3391-0C8FBA1A"] = {
 					["name"] = "Bnathean-Silvermoon",
@@ -16695,18 +16875,18 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685565208,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 					["name"] = "Kijul-Ragnaros",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 				},
-				["Player-1084-0A9C83F3"] = {
-					["name"] = "Cephandrius-TarrenMill",
-					["guid"] = "Player-1084-0A9C83F3",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689704202,
-					["realm"] = "TarrenMill",
+				["Player-1388-0ADBEB3E"] = {
+					["name"] = "Sinziee-Mazrigos",
+					["guid"] = "Player-1388-0ADBEB3E",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676759633,
+					["realm"] = "Mazrigos",
 				},
 				["Player-1305-08D05F02"] = {
 					["name"] = "Gerbal-Kazzak",
@@ -16715,12 +16895,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677253640,
 					["realm"] = "Kazzak",
 				},
-				["Player-1084-081F100F"] = {
-					["name"] = "Sðra-TarrenMill",
-					["guid"] = "Player-1084-081F100F",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1677515492,
-					["realm"] = "TarrenMill",
+				["Player-604-0A4DB677"] = {
+					["name"] = "Picso-Thrall",
+					["guid"] = "Player-604-0A4DB677",
+					["class"] = "HUNTER",
+					["cache_time"] = 1680292466,
+					["realm"] = "Thrall",
 				},
 				["Player-1390-0C93B0FF"] = {
 					["ilvl"] = 439.25,
@@ -16728,27 +16908,27 @@ RCLootCouncilDB = {
 					["class"] = "DEMONHUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686696461,
-					["realm"] = "Hyjal",
+					["rank"] = "Sans guilde",
 					["name"] = "Blackneath-Hyjal",
 					["specID"] = 577,
 					["enchantingLvl"] = 0,
-					["rank"] = "Sans guilde",
-				},
-				["Player-1390-0C5A1AD9"] = {
-					["name"] = "Kiteshi-Hyjal",
-					["guid"] = "Player-1390-0C5A1AD9",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1684883011,
 					["realm"] = "Hyjal",
+				},
+				["Player-580-08A85E71"] = {
+					["name"] = "Nelenaidh-Blackmoore",
+					["guid"] = "Player-580-08A85E71",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1688901714,
+					["realm"] = "Blackmoore",
 				},
 				["Player-1405-0A67C748"] = {
 					["role"] = "DAMAGER",
 					["name"] = "Duglum-DerRatvonDalaran",
 					["guid"] = "Player-1405-0A67C748",
-					["rank"] = "Gildenlos",
+					["realm"] = "DerRatvonDalaran",
 					["class"] = "WARLOCK",
 					["cache_time"] = 1679846287,
-					["realm"] = "DerRatvonDalaran",
+					["rank"] = "Gildenlos",
 				},
 				["Player-1329-06A3254E"] = {
 					["name"] = "Shdowp-Ravencrest",
@@ -16768,10 +16948,10 @@ RCLootCouncilDB = {
 					["role"] = "HEALER",
 					["name"] = "Killævoke-TwistingNether",
 					["guid"] = "Player-3674-0B0A50DC",
-					["realm"] = "TwistingNether",
+					["rank"] = "Social",
 					["class"] = "EVOKER",
 					["cache_time"] = 1685816533,
-					["rank"] = "Social",
+					["realm"] = "TwistingNether",
 				},
 				["Player-1084-0A64A097"] = {
 					["name"] = "Mørtís-TarrenMill",
@@ -16780,12 +16960,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683073733,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1388-0ADBEB3E"] = {
-					["name"] = "Sinziee-Mazrigos",
-					["guid"] = "Player-1388-0ADBEB3E",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676759633,
-					["realm"] = "Mazrigos",
+				["Player-3691-09F0BF08"] = {
+					["name"] = "Døømlock-Blackhand",
+					["guid"] = "Player-3691-09F0BF08",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1685191876,
+					["realm"] = "Blackhand",
 				},
 				["Player-1393-0AD1D68F"] = {
 					["name"] = "Mappee-BronzeDragonflight",
@@ -16794,26 +16974,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686754263,
 					["realm"] = "BronzeDragonflight",
 				},
-				["Player-3691-050A8706"] = {
-					["name"] = "Tatzino-Blackhand",
-					["guid"] = "Player-3691-050A8706",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676387096,
-					["realm"] = "Blackhand",
+				["Player-1096-0A5CD35E"] = {
+					["name"] = "Watermelon-EarthenRing",
+					["guid"] = "Player-1096-0A5CD35E",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689253178,
+					["realm"] = "EarthenRing",
 				},
-				["Player-1084-0A902537"] = {
-					["name"] = "Ashdrasil-TarrenMill",
-					["guid"] = "Player-1084-0A902537",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1679844347,
-					["realm"] = "TarrenMill",
+				["Player-1335-057EBB59"] = {
+					["name"] = "Gazaslim-Ysondre",
+					["guid"] = "Player-1335-057EBB59",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1685398638,
+					["realm"] = "Ysondre",
 				},
-				["Player-3682-0B20D298"] = {
-					["name"] = "Akilles-Ragnaros",
-					["guid"] = "Player-3682-0B20D298",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684491463,
-					["realm"] = "Ragnaros",
+				["Player-3674-086CC206"] = {
+					["name"] = "Rêqt-TwistingNether",
+					["guid"] = "Player-3674-086CC206",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1679995682,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1305-0C880AC5"] = {
 					["name"] = "Aslankalepaz-Kazzak",
@@ -16822,12 +17002,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686933987,
 					["realm"] = "Kazzak",
 				},
-				["Player-1305-0C62A0B9"] = {
-					["name"] = "Emamalii-Kazzak",
-					["guid"] = "Player-1305-0C62A0B9",
-					["class"] = "HUNTER",
-					["cache_time"] = 1680290994,
-					["realm"] = "Kazzak",
+				["Player-1604-0A9C4049"] = {
+					["name"] = "мнебобо-СвежевательДуш",
+					["guid"] = "Player-1604-0A9C4049",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1684052763,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-1403-0A6F4953"] = {
 					["name"] = "Baldec-Draenor",
@@ -16836,26 +17016,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686121310,
 					["realm"] = "Draenor",
 				},
-				["Player-3391-068AF832"] = {
-					["name"] = "Merenth-Silvermoon",
-					["guid"] = "Player-3391-068AF832",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1684603502,
-					["realm"] = "Silvermoon",
-				},
-				["Player-580-0A610818"] = {
-					["name"] = "Zakurai-Blackmoore",
-					["guid"] = "Player-580-0A610818",
-					["class"] = "EVOKER",
-					["cache_time"] = 1686934454,
-					["realm"] = "Blackmoore",
-				},
-				["Player-604-09D1564A"] = {
-					["name"] = "Kaldorak-Ambossar",
-					["guid"] = "Player-604-09D1564A",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689395817,
-					["realm"] = "Ambossar",
+				["Player-1305-0C62A0B9"] = {
+					["name"] = "Emamalii-Kazzak",
+					["guid"] = "Player-1305-0C62A0B9",
+					["class"] = "HUNTER",
+					["cache_time"] = 1680290994,
+					["realm"] = "Kazzak",
 				},
 				["Player-1390-08D23DA3"] = {
 					["name"] = "Elzäh-Hyjal",
@@ -16864,40 +17030,54 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680292466,
 					["realm"] = "Hyjal",
 				},
-				["Player-1403-0A72E61F"] = {
-					["name"] = "Nganouu-Draenor",
-					["guid"] = "Player-1403-0A72E61F",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1688685563,
-					["realm"] = "Draenor",
+				["Player-604-09D1564A"] = {
+					["name"] = "Kaldorak-Ambossar",
+					["guid"] = "Player-604-09D1564A",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689395817,
+					["realm"] = "Ambossar",
 				},
-				["Player-604-0A4DB677"] = {
-					["name"] = "Picso-Thrall",
-					["guid"] = "Player-604-0A4DB677",
-					["class"] = "HUNTER",
-					["cache_time"] = 1680292466,
-					["realm"] = "Thrall",
-				},
-				["Player-3691-09F0BF08"] = {
-					["name"] = "Døømlock-Blackhand",
-					["guid"] = "Player-3691-09F0BF08",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1685191876,
-					["realm"] = "Blackhand",
-				},
-				["Player-1096-0A5CD35E"] = {
-					["name"] = "Watermelon-EarthenRing",
-					["guid"] = "Player-1096-0A5CD35E",
+				["Player-580-0A610818"] = {
+					["name"] = "Zakurai-Blackmoore",
+					["guid"] = "Player-580-0A610818",
 					["class"] = "EVOKER",
-					["cache_time"] = 1689253178,
-					["realm"] = "EarthenRing",
+					["cache_time"] = 1686934454,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1403-0A370A86"] = {
-					["name"] = "Pipik-Draenor",
-					["guid"] = "Player-1403-0A370A86",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1680421920,
-					["realm"] = "Draenor",
+				["Player-1302-0C7F499B"] = {
+					["name"] = "Neys-Archimonde",
+					["guid"] = "Player-1302-0C7F499B",
+					["class"] = "MAGE",
+					["cache_time"] = 1676387096,
+					["realm"] = "Archimonde",
+				},
+				["Player-3657-0ADB174F"] = {
+					["name"] = "Talexhunts-Genjuros",
+					["guid"] = "Player-3657-0ADB174F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676182188,
+					["realm"] = "Genjuros",
+				},
+				["Player-3674-09ECE4C4"] = {
+					["name"] = "Ozma-TwistingNether",
+					["guid"] = "Player-3674-09ECE4C4",
+					["class"] = "DRUID",
+					["cache_time"] = 1687949013,
+					["realm"] = "TwistingNether",
+				},
+				["Player-1084-07F602FB"] = {
+					["name"] = "Atzira-TarrenMill",
+					["guid"] = "Player-1084-07F602FB",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1685052602,
+					["realm"] = "TarrenMill",
+				},
+				["Player-509-05506E73"] = {
+					["name"] = "Sween-Sargeras",
+					["guid"] = "Player-509-05506E73",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676973948,
+					["realm"] = "Sargeras",
 				},
 				["Player-3674-08ED83F3"] = {
 					["name"] = "Parkla-TwistingNether",
@@ -16906,17 +17086,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680754040,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1305-0C88DC6F"] = {
-					["ilvl"] = 365.6875,
-					["guid"] = "Player-1305-0C88DC6F",
-					["class"] = "PALADIN",
-					["role"] = "TANK",
-					["name"] = "Cowmuu-Kazzak",
-					["realm"] = "Kazzak",
-					["cache_time"] = 1680436995,
-					["specID"] = 66,
-					["enchantingLvl"] = 0,
-					["rank"] = "Unguilded",
+				["Player-1403-0734968B"] = {
+					["name"] = "Sebbwl-Draenor",
+					["guid"] = "Player-1403-0734968B",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676439596,
+					["realm"] = "Draenor",
 				},
 				["Player-1596-0A839459"] = {
 					["name"] = "Sinneri-TheMaelstrom",
@@ -16932,6 +17107,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678052884,
 					["realm"] = "Darkspear",
 				},
+				["Player-3391-09177F31"] = {
+					["name"] = "Gregios-Silvermoon",
+					["guid"] = "Player-3391-09177F31",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1680258337,
+					["realm"] = "Silvermoon",
+				},
 				["Player-3691-0A04E4E8"] = {
 					["name"] = "Nookeyy-Blackhand",
 					["guid"] = "Player-3691-0A04E4E8",
@@ -16939,19 +17121,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687261056,
 					["realm"] = "Blackhand",
 				},
-				["Player-1305-0C8D76D4"] = {
-					["name"] = "Bloodmournee-Kazzak",
-					["guid"] = "Player-1305-0C8D76D4",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687245813,
-					["realm"] = "Kazzak",
-				},
-				["Player-1096-0A72F4A5"] = {
-					["name"] = "Jayee-Ravenholdt",
-					["guid"] = "Player-1096-0A72F4A5",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1689374076,
-					["realm"] = "Ravenholdt",
+				["Player-1378-0A6826BC"] = {
+					["name"] = "Piit-C'Thun",
+					["guid"] = "Player-1378-0A6826BC",
+					["class"] = "MAGE",
+					["cache_time"] = 1687248521,
+					["realm"] = "C'Thun",
 				},
 				["Player-3682-08B00D21"] = {
 					["ilvl"] = 415.9375,
@@ -16959,11 +17134,11 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1678914310,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["name"] = "Spooke-Ragnaros",
 					["specID"] = 253,
 					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1615-09B6ED2F"] = {
 					["name"] = "додопицца-Ревущийфьорд",
@@ -16972,12 +17147,17 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685491336,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3391-09177F31"] = {
-					["name"] = "Gregios-Silvermoon",
-					["guid"] = "Player-3391-09177F31",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1680258337,
-					["realm"] = "Silvermoon",
+				["Player-3674-0A4F88AA"] = {
+					["ilvl"] = 406.9375,
+					["guid"] = "Player-3674-0A4F88AA",
+					["class"] = "DEMONHUNTER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1676069534,
+					["realm"] = "TwistingNether",
+					["name"] = "Chaosbrìnger-TwistingNether",
+					["specID"] = 577,
+					["enchantingLvl"] = 0,
+					["rank"] = "Unguilded",
 				},
 				["Player-1596-06AA532A"] = {
 					["name"] = "Casmeister-Deathwing",
@@ -16993,38 +17173,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684926332,
 					["realm"] = "Sanguino",
 				},
-				["Player-509-05506E73"] = {
-					["name"] = "Sween-Sargeras",
-					["guid"] = "Player-509-05506E73",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676973948,
-					["realm"] = "Sargeras",
-				},
-				["Player-3713-0719EFCE"] = {
-					["name"] = "Qrdu-BurningLegion",
-					["guid"] = "Player-3713-0719EFCE",
+				["Player-1302-09F8B814"] = {
+					["name"] = "Ménéthael-Archimonde",
+					["guid"] = "Player-1302-09F8B814",
 					["class"] = "PALADIN",
-					["cache_time"] = 1680292466,
-					["realm"] = "BurningLegion",
+					["cache_time"] = 1677606207,
+					["realm"] = "Archimonde",
 				},
-				["Player-3682-0AAF5EE2"] = {
-					["ilvl"] = 436.75,
-					["guid"] = "Player-3682-0AAF5EE2",
-					["class"] = "PALADIN",
-					["role"] = "TANK",
-					["cache_time"] = 1686170394,
-					["rank"] = "Recruiter",
-					["name"] = "Fatpeonlover-Ragnaros",
-					["specID"] = 66,
-					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
-				},
-				["Player-581-09904BB6"] = {
-					["name"] = "Snixxer-Blackrock",
-					["guid"] = "Player-581-09904BB6",
+				["Player-3691-09BF0910"] = {
+					["name"] = "Nerghata-Blackhand",
+					["guid"] = "Player-3691-09BF0910",
 					["class"] = "DRUID",
-					["cache_time"] = 1684158100,
-					["realm"] = "Blackrock",
+					["cache_time"] = 1677665404,
+					["realm"] = "Blackhand",
 				},
 				["Player-3674-07876E27"] = {
 					["name"] = "Javicdh-TwistingNether",
@@ -17033,39 +17194,52 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687157922,
 					["realm"] = "TwistingNether",
 				},
-				["Player-570-09B5F816"] = {
-					["name"] = "Démónlul-Azshara",
-					["guid"] = "Player-570-09B5F816",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1676768222,
-					["realm"] = "Azshara",
+				["Player-2074-0587D74C"] = {
+					["name"] = "Chunksblown-EmeraldDream",
+					["guid"] = "Player-2074-0587D74C",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687102801,
+					["realm"] = "EmeraldDream",
 				},
-				["Player-1378-0A6826BC"] = {
-					["name"] = "Piit-C'Thun",
-					["guid"] = "Player-1378-0A6826BC",
-					["class"] = "MAGE",
-					["cache_time"] = 1687248521,
-					["realm"] = "C'Thun",
+				["Player-581-09904BB6"] = {
+					["name"] = "Snixxer-Blackrock",
+					["guid"] = "Player-581-09904BB6",
+					["class"] = "DRUID",
+					["cache_time"] = 1684158100,
+					["realm"] = "Blackrock",
 				},
-				["Player-1604-093E2639"] = {
-					["name"] = "пандоёжик-СвежевательДуш",
-					["guid"] = "Player-1604-093E2639",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1685864518,
-					["realm"] = "СвежевательДуш",
+				["Player-1305-0BB083F4"] = {
+					["name"] = "Growlon-Kazzak",
+					["guid"] = "Player-1305-0BB083F4",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676601603,
+					["realm"] = "Kazzak",
 				},
-				["Player-3682-0B23244A"] = {
-					["ilvl"] = 420.5625,
-					["guid"] = "Player-3682-0B23244A",
-					["class"] = "SHAMAN",
-					["rank"] = "Raider",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1686167877,
-					["name"] = "Earthshakêr-Ragnaros",
-					["enchanter"] = true,
-					["specID"] = 262,
-					["enchantingLvl"] = 80,
+				["Player-3682-0AAF5EE2"] = {
+					["ilvl"] = 436.75,
+					["guid"] = "Player-3682-0AAF5EE2",
+					["class"] = "PALADIN",
+					["role"] = "TANK",
+					["cache_time"] = 1686170394,
 					["realm"] = "Ragnaros",
+					["name"] = "Fatpeonlover-Ragnaros",
+					["specID"] = 66,
+					["enchantingLvl"] = 0,
+					["rank"] = "Recruiter",
+				},
+				["Player-3691-09C723B4"] = {
+					["name"] = "Zaados-Blackhand",
+					["guid"] = "Player-3691-09C723B4",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1675869700,
+					["realm"] = "Blackhand",
+				},
+				["Player-1096-0A72F4A5"] = {
+					["name"] = "Jayee-Ravenholdt",
+					["guid"] = "Player-1096-0A72F4A5",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1689374076,
+					["realm"] = "Ravenholdt",
 				},
 				["Player-3703-0687CDA1"] = {
 					["name"] = "Araxs-Frostwolf",
@@ -17074,17 +17248,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679138037,
 					["realm"] = "Frostwolf",
 				},
-				["Player-580-0A732313"] = {
-					["ilvl"] = 438.75,
-					["guid"] = "Player-580-0A732313",
-					["class"] = "WARRIOR",
-					["role"] = "TANK",
-					["cache_time"] = 1686062777,
-					["rank"] = "Raider",
-					["name"] = "Altøn-Blackmoore",
-					["specID"] = 73,
-					["enchantingLvl"] = 0,
-					["realm"] = "Blackmoore",
+				["Player-3674-088E330E"] = {
+					["name"] = "Nemesisz-TwistingNether",
+					["guid"] = "Player-3674-088E330E",
+					["class"] = "DRUID",
+					["cache_time"] = 1683809510,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1329-08D98636"] = {
 					["name"] = "Mcbair-Ravencrest",
@@ -17093,19 +17262,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677227556,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1302-09F8B814"] = {
-					["name"] = "Ménéthael-Archimonde",
-					["guid"] = "Player-1302-09F8B814",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677606207,
-					["realm"] = "Archimonde",
+				["Player-1604-0F0640DC"] = {
+					["name"] = "капучинно-СвежевательДуш",
+					["guid"] = "Player-1604-0F0640DC",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1686933987,
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1602-0F1FC3A9"] = {
-					["name"] = "ёкоканно-Гордунни",
-					["guid"] = "Player-1602-0F1FC3A9",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687248139,
-					["realm"] = "Гордунни",
+				["Player-580-0A43492F"] = {
+					["name"] = "Cryka-Blackmoore",
+					["guid"] = "Player-580-0A43492F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1687949013,
+					["realm"] = "Blackmoore",
 				},
 				["Player-1098-099103AB"] = {
 					["name"] = "Rotnichtblau-Malygos",
@@ -17135,12 +17304,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688685563,
 					["realm"] = "TheMaelstrom",
 				},
-				["Player-3656-0A1040AE"] = {
-					["name"] = "Máuw-Stormreaver",
-					["guid"] = "Player-3656-0A1040AE",
+				["Player-3692-0516AB11"] = {
+					["name"] = "Rhannox-Eredar",
+					["guid"] = "Player-3692-0516AB11",
 					["class"] = "DRUID",
-					["cache_time"] = 1684883011,
-					["realm"] = "Stormreaver",
+					["cache_time"] = 1685048856,
+					["realm"] = "Eredar",
 				},
 				["Player-3391-0C814EEB"] = {
 					["name"] = "Holyshadöw-Silvermoon",
@@ -17160,26 +17329,21 @@ RCLootCouncilDB = {
 					["ilvl"] = 432,
 					["guid"] = "Player-3674-05A3FD15",
 					["class"] = "WARLOCK",
-					["realm"] = "TwistingNether",
+					["rank"] = "Social",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689802006,
 					["name"] = "Khaêle-TwistingNether",
-					["specID"] = 267,
 					["enchanter"] = true,
+					["specID"] = 267,
 					["enchantingLvl"] = 1,
-					["rank"] = "Social",
+					["realm"] = "TwistingNether",
 				},
-				["Player-581-0A700349"] = {
-					["ilvl"] = 389.4375,
-					["guid"] = "Player-581-0A700349",
-					["class"] = "ROGUE",
-					["role"] = "DAMAGER",
-					["name"] = "Vockerogue-Blackrock",
-					["realm"] = "Blackrock",
-					["cache_time"] = 1680432546,
-					["specID"] = 261,
-					["enchantingLvl"] = 0,
-					["rank"] = "Unguilded",
+				["Player-1390-0B89EB35"] = {
+					["name"] = "Giovanx-Hyjal",
+					["guid"] = "Player-1390-0B89EB35",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686000336,
+					["realm"] = "Hyjal",
 				},
 				["Player-2073-0663C8C0"] = {
 					["name"] = "Mope-Stormscale",
@@ -17188,26 +17352,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677339563,
 					["realm"] = "Stormscale",
 				},
-				["Player-3674-086CC206"] = {
-					["name"] = "Rêqt-TwistingNether",
-					["guid"] = "Player-3674-086CC206",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1679995682,
-					["realm"] = "TwistingNether",
-				},
-				["Player-3391-0C56FE1E"] = {
-					["name"] = "Jumpingjeff-Silvermoon",
-					["guid"] = "Player-3391-0C56FE1E",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1684420122,
-					["realm"] = "Silvermoon",
-				},
-				["Player-3657-0844E08B"] = {
-					["name"] = "Nofco-Frostwhisper",
-					["guid"] = "Player-3657-0844E08B",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687257934,
-					["realm"] = "Frostwhisper",
+				["Player-1587-0F2F9461"] = {
+					["name"] = "Nagyhus-Arathor",
+					["guid"] = "Player-1587-0F2F9461",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1685745460,
+					["realm"] = "Arathor",
 				},
 				["Player-580-0A231417"] = {
 					["name"] = "Grendul-Blackmoore",
@@ -17216,19 +17366,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689804288,
 					["realm"] = "Blackmoore",
 				},
-				["Player-3682-0B15D86C"] = {
-					["name"] = "Rîz-Ragnaros",
-					["guid"] = "Player-3682-0B15D86C",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676369902,
-					["realm"] = "Ragnaros",
+				["Player-3657-0844E08B"] = {
+					["name"] = "Nofco-Frostwhisper",
+					["guid"] = "Player-3657-0844E08B",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1687257934,
+					["realm"] = "Frostwhisper",
 				},
-				["Player-1604-0A9C4049"] = {
-					["name"] = "мнебобо-СвежевательДуш",
-					["guid"] = "Player-1604-0A9C4049",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1684052763,
-					["realm"] = "СвежевательДуш",
+				["Player-3391-0C56FE1E"] = {
+					["name"] = "Jumpingjeff-Silvermoon",
+					["guid"] = "Player-3391-0C56FE1E",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1684420122,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3674-0B1653C7"] = {
+					["name"] = "Wíndblow-TwistingNether",
+					["guid"] = "Player-3674-0B1653C7",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684590154,
+					["realm"] = "TwistingNether",
+				},
+				["Player-3690-0AF597B3"] = {
+					["name"] = "Fläve-KhazModan",
+					["guid"] = "Player-3690-0AF597B3",
+					["class"] = "DRUID",
+					["cache_time"] = 1676988319,
+					["realm"] = "KhazModan",
 				},
 				["Player-1099-0A4AB9D3"] = {
 					["name"] = "Shálltear-Rexxar",
@@ -17237,19 +17401,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676465421,
 					["realm"] = "Rexxar",
 				},
-				["Player-3703-09FFE232"] = {
-					["name"] = "Jacklsøn-Frostwolf",
-					["guid"] = "Player-3703-09FFE232",
-					["class"] = "ROGUE",
-					["cache_time"] = 1684417826,
-					["realm"] = "Frostwolf",
+				["Player-3682-05C7EE38"] = {
+					["name"] = "Dipzz-Ragnaros",
+					["guid"] = "Player-3682-05C7EE38",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1678714910,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1602-0F4CA135"] = {
-					["name"] = "дракздорму-Гордунни",
-					["guid"] = "Player-1602-0F4CA135",
-					["class"] = "EVOKER",
-					["cache_time"] = 1677110266,
-					["realm"] = "Гордунни",
+				["Player-1325-03C1028E"] = {
+					["name"] = "Inamorata-Aggramar",
+					["guid"] = "Player-1325-03C1028E",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689800841,
+					["realm"] = "Aggramar",
 				},
 				["Player-1596-0F55DD08"] = {
 					["name"] = "Xalaluha-TheMaelstrom",
@@ -17265,26 +17429,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679244313,
 					["realm"] = "TarrenMill",
 				},
-				["Player-2073-0426B2C2"] = {
-					["name"] = "Icozy-Stormscale",
-					["guid"] = "Player-2073-0426B2C2",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1685780231,
-					["realm"] = "Stormscale",
+				["Player-3713-07131E61"] = {
+					["name"] = "Kosimazaki-BurningLegion",
+					["guid"] = "Player-3713-07131E61",
+					["class"] = "DRUID",
+					["cache_time"] = 1680139732,
+					["realm"] = "BurningLegion",
 				},
-				["Player-1325-03C1028E"] = {
-					["name"] = "Inamorata-Aggramar",
-					["guid"] = "Player-1325-03C1028E",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689800841,
-					["realm"] = "Aggramar",
-				},
-				["Player-1305-0C205D37"] = {
-					["name"] = "Nedtùr-Kazzak",
-					["guid"] = "Player-1305-0C205D37",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1686121310,
-					["realm"] = "Kazzak",
+				["Player-1302-0C430837"] = {
+					["name"] = "Crowelle-Archimonde",
+					["guid"] = "Player-1302-0C430837",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676370489,
+					["realm"] = "Archimonde",
 				},
 				["Player-1403-09D889A9"] = {
 					["name"] = "Plagueborer-Draenor",
@@ -17293,12 +17450,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676439591,
 					["realm"] = "Draenor",
 				},
-				["Player-3674-0B1653C7"] = {
-					["name"] = "Wíndblow-TwistingNether",
-					["guid"] = "Player-3674-0B1653C7",
+				["Player-1390-0A4F495F"] = {
+					["name"] = "Asthélios-Hyjal",
+					["guid"] = "Player-1390-0A4F495F",
 					["class"] = "PRIEST",
-					["cache_time"] = 1684590154,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1690121076,
+					["realm"] = "Hyjal",
+				},
+				["Player-1621-0B058547"] = {
+					["name"] = "Elanora-Dalaran",
+					["guid"] = "Player-1621-0B058547",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1683965309,
+					["realm"] = "Dalaran",
+				},
+				["Player-1621-0AE41BF6"] = {
+					["name"] = "Chyppy-Dalaran",
+					["guid"] = "Player-1621-0AE41BF6",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1689804288,
+					["realm"] = "Dalaran",
 				},
 				["Player-3682-0B1484A5"] = {
 					["name"] = "Empod-Ragnaros",
@@ -17306,13 +17477,6 @@ RCLootCouncilDB = {
 					["class"] = "WARLOCK",
 					["cache_time"] = 1676490465,
 					["realm"] = "Ragnaros",
-				},
-				["Player-1928-0819AF31"] = {
-					["name"] = "хоризма-Голдринн",
-					["guid"] = "Player-1928-0819AF31",
-					["class"] = "MONK",
-					["cache_time"] = 1688985357,
-					["realm"] = "Голдринн",
 				},
 				["Player-1084-0A921527"] = {
 					["name"] = "Barco-TarrenMill",
@@ -17341,32 +17505,37 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686936164,
-					["realm"] = "Kazzak",
+					["rank"] = "Alt",
 					["name"] = "Ctoxx-Kazzak",
 					["specID"] = 102,
 					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
+					["realm"] = "Kazzak",
 				},
-				["Player-1408-0A4CCDCA"] = {
-					["name"] = "Driaris-DunMorogh",
-					["guid"] = "Player-1408-0A4CCDCA",
-					["class"] = "EVOKER",
-					["cache_time"] = 1679939195,
-					["realm"] = "DunMorogh",
-				},
-				["Player-3691-09BF0910"] = {
-					["name"] = "Nerghata-Blackhand",
-					["guid"] = "Player-3691-09BF0910",
-					["class"] = "DRUID",
-					["cache_time"] = 1677665404,
-					["realm"] = "Blackhand",
-				},
-				["Player-1621-0B058547"] = {
-					["name"] = "Elanora-Dalaran",
-					["guid"] = "Player-1621-0B058547",
+				["Player-570-05B51F84"] = {
+					["name"] = "Everend-Baelgun",
+					["guid"] = "Player-570-05B51F84",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1683965309,
-					["realm"] = "Dalaran",
+					["cache_time"] = 1689290162,
+					["realm"] = "Baelgun",
+				},
+				["Player-581-0A700349"] = {
+					["ilvl"] = 389.4375,
+					["guid"] = "Player-581-0A700349",
+					["class"] = "ROGUE",
+					["role"] = "DAMAGER",
+					["name"] = "Vockerogue-Blackrock",
+					["rank"] = "Unguilded",
+					["cache_time"] = 1680432546,
+					["specID"] = 261,
+					["enchantingLvl"] = 0,
+					["realm"] = "Blackrock",
+				},
+				["Player-1096-098F98AD"] = {
+					["name"] = "Kronblom-EarthenRing",
+					["guid"] = "Player-1096-098F98AD",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1678729942,
+					["realm"] = "EarthenRing",
 				},
 				["Player-3703-092713DC"] = {
 					["name"] = "Xayalin-Frostwolf",
@@ -17375,12 +17544,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676220405,
 					["realm"] = "Frostwolf",
 				},
-				["Player-1305-0C59B9D7"] = {
-					["name"] = "Demidrake-Kazzak",
-					["guid"] = "Player-1305-0C59B9D7",
-					["class"] = "EVOKER",
-					["cache_time"] = 1678374221,
-					["realm"] = "Kazzak",
+				["Player-1084-0A8B3B03"] = {
+					["name"] = "Stepbloodelf-TarrenMill",
+					["guid"] = "Player-1084-0A8B3B03",
+					["class"] = "ROGUE",
+					["cache_time"] = 1676452417,
+					["realm"] = "TarrenMill",
 				},
 				["Player-3391-0C2C9468"] = {
 					["name"] = "Alekazi-Silvermoon",
@@ -17389,12 +17558,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677126111,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1084-0A8B3B03"] = {
-					["name"] = "Stepbloodelf-TarrenMill",
-					["guid"] = "Player-1084-0A8B3B03",
-					["class"] = "ROGUE",
-					["cache_time"] = 1676452417,
-					["realm"] = "TarrenMill",
+				["Player-1305-0C59B9D7"] = {
+					["name"] = "Demidrake-Kazzak",
+					["guid"] = "Player-1305-0C59B9D7",
+					["class"] = "EVOKER",
+					["cache_time"] = 1678374221,
+					["realm"] = "Kazzak",
 				},
 				["Player-1402-0A2AE41F"] = {
 					["name"] = "Gémli-Doomhammer",
@@ -17431,19 +17600,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679133580,
 					["realm"] = "Hyjal",
 				},
-				["Player-1305-0B9D3594"] = {
-					["name"] = "Psymode-Kazzak",
-					["guid"] = "Player-1305-0B9D3594",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687257934,
-					["realm"] = "Kazzak",
+				["Player-3674-0B1A59BF"] = {
+					["name"] = "Ayyoron-TwistingNether",
+					["guid"] = "Player-3674-0B1A59BF",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680513310,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1305-0C4DDE17"] = {
-					["name"] = "Buufu-Kazzak",
-					["guid"] = "Player-1305-0C4DDE17",
-					["class"] = "DRUID",
-					["cache_time"] = 1687248139,
-					["realm"] = "Kazzak",
+				["Player-581-0A6F5BC9"] = {
+					["name"] = "Xythuz-Blackrock",
+					["guid"] = "Player-581-0A6F5BC9",
+					["class"] = "HUNTER",
+					["cache_time"] = 1680292466,
+					["realm"] = "Blackrock",
 				},
 				["Player-3702-09CD0F20"] = {
 					["name"] = "Gigasneak-ArgentDawn",
@@ -17452,19 +17621,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676519225,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-3686-09D9874F"] = {
-					["name"] = "Quweridon-Antonidas",
-					["guid"] = "Player-3686-09D9874F",
-					["class"] = "DRUID",
-					["cache_time"] = 1689712190,
-					["realm"] = "Antonidas",
+				["Player-3682-0A7AEBD2"] = {
+					["ilvl"] = 419.875,
+					["guid"] = "Player-3682-0A7AEBD2",
+					["class"] = "HUNTER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1680433453,
+					["rank"] = "Raider",
+					["name"] = "Zathaa-Ragnaros",
+					["specID"] = 253,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
-				["Player-3674-0B1A59BF"] = {
-					["name"] = "Ayyoron-TwistingNether",
-					["guid"] = "Player-3674-0B1A59BF",
-					["class"] = "PALADIN",
-					["cache_time"] = 1680513310,
-					["realm"] = "TwistingNether",
+				["Player-580-0A6D21F0"] = {
+					["name"] = "Hayhatschi-Blackmoore",
+					["guid"] = "Player-580-0A6D21F0",
+					["class"] = "ROGUE",
+					["cache_time"] = 1679027919,
+					["realm"] = "Blackmoore",
 				},
 				["Player-1084-09DA8345"] = {
 					["name"] = "Nozemuledja-TarrenMill",
@@ -17480,12 +17654,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689799678,
 					["realm"] = "Ysondre",
 				},
-				["Player-2073-06CDA785"] = {
-					["name"] = "Meerliin-Stormscale",
-					["guid"] = "Player-2073-06CDA785",
-					["class"] = "MAGE",
-					["cache_time"] = 1676340212,
-					["realm"] = "Stormscale",
+				["Player-633-0A65B392"] = {
+					["name"] = "Amilo-Saurfang",
+					["guid"] = "Player-633-0A65B392",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685047577,
+					["realm"] = "Saurfang",
 				},
 				["Player-1596-0F35A258"] = {
 					["name"] = "Duskstrike-TheMaelstrom",
@@ -17494,19 +17668,25 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688687270,
 					["realm"] = "TheMaelstrom",
 				},
-				["Player-633-0A65B392"] = {
-					["name"] = "Amilo-Saurfang",
-					["guid"] = "Player-633-0A65B392",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685047577,
-					["realm"] = "Saurfang",
+				["Player-2073-06CDA785"] = {
+					["name"] = "Meerliin-Stormscale",
+					["guid"] = "Player-2073-06CDA785",
+					["class"] = "MAGE",
+					["cache_time"] = 1676340212,
+					["realm"] = "Stormscale",
 				},
-				["Player-1403-0614E05A"] = {
-					["name"] = "Ziepoesnetni-Draenor",
-					["guid"] = "Player-1403-0614E05A",
-					["class"] = "DRUID",
-					["cache_time"] = 1689804288,
-					["realm"] = "Draenor",
+				["Player-3682-0B23244A"] = {
+					["ilvl"] = 420.5625,
+					["guid"] = "Player-3682-0B23244A",
+					["class"] = "SHAMAN",
+					["realm"] = "Ragnaros",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1686167877,
+					["name"] = "Earthshakêr-Ragnaros",
+					["specID"] = 262,
+					["enchanter"] = true,
+					["enchantingLvl"] = 80,
+					["rank"] = "Raider",
 				},
 				["Player-1602-06A1C7B5"] = {
 					["name"] = "корадо-Гордунни",
@@ -17515,24 +17695,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684927056,
 					["realm"] = "Гордунни",
 				},
-				["Player-581-0A6F5BC9"] = {
-					["name"] = "Xythuz-Blackrock",
-					["guid"] = "Player-581-0A6F5BC9",
-					["class"] = "HUNTER",
-					["cache_time"] = 1680292466,
-					["realm"] = "Blackrock",
+				["Player-1305-0B351875"] = {
+					["name"] = "Ultrabolts-Kazzak",
+					["guid"] = "Player-1305-0B351875",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1688983952,
+					["realm"] = "Kazzak",
 				},
-				["Player-3682-0A7AEBD2"] = {
-					["ilvl"] = 419.875,
-					["guid"] = "Player-3682-0A7AEBD2",
-					["class"] = "HUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1680433453,
-					["realm"] = "Ragnaros",
-					["name"] = "Zathaa-Ragnaros",
-					["specID"] = 253,
-					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+				["Player-1390-0CA87D82"] = {
+					["name"] = "Nõp-Hyjal",
+					["guid"] = "Player-1390-0CA87D82",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1713977460,
+					["realm"] = "Hyjal",
 				},
 				["Player-581-0A5E2CDD"] = {
 					["name"] = "Darcurion-Blackrock",
@@ -17541,12 +17716,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684235960,
 					["realm"] = "Blackrock",
 				},
-				["Player-3391-0C982368"] = {
-					["name"] = "Afroblue-Silvermoon",
-					["guid"] = "Player-3391-0C982368",
-					["class"] = "MAGE",
-					["cache_time"] = 1689677222,
-					["realm"] = "Silvermoon",
+				["Player-1615-0A5B269B"] = {
+					["name"] = "новичок-Ревущийфьорд",
+					["guid"] = "Player-1615-0A5B269B",
+					["class"] = "ROGUE",
+					["cache_time"] = 1684926079,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-2073-09FBF834"] = {
 					["name"] = "Shreksie-Stormscale",
@@ -17555,12 +17730,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678894799,
 					["realm"] = "Stormscale",
 				},
-				["Player-580-0A6D21F0"] = {
-					["name"] = "Hayhatschi-Blackmoore",
-					["guid"] = "Player-580-0A6D21F0",
-					["class"] = "ROGUE",
-					["cache_time"] = 1679027919,
-					["realm"] = "Blackmoore",
+				["Player-1335-0A0A70AC"] = {
+					["name"] = "Moufti-Ysondre",
+					["guid"] = "Player-1335-0A0A70AC",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1690410513,
+					["realm"] = "Ysondre",
 				},
 				["Player-1084-0A95F2AC"] = {
 					["name"] = "Valroath-TarrenMill",
@@ -17569,26 +17744,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679244313,
 					["realm"] = "TarrenMill",
 				},
-				["Player-3690-0AF597B3"] = {
-					["name"] = "Fläve-KhazModan",
-					["guid"] = "Player-3690-0AF597B3",
+				["Player-1084-0A8E0FFE"] = {
+					["name"] = "Failproof-TarrenMill",
+					["guid"] = "Player-1084-0A8E0FFE",
+					["class"] = "MAGE",
+					["cache_time"] = 1676768222,
+					["realm"] = "TarrenMill",
+				},
+				["Player-1602-0F1FC3A9"] = {
+					["name"] = "ёкоканно-Гордунни",
+					["guid"] = "Player-1602-0F1FC3A9",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1687248139,
+					["realm"] = "Гордунни",
+				},
+				["Player-3656-0A1040AE"] = {
+					["name"] = "Máuw-Stormreaver",
+					["guid"] = "Player-3656-0A1040AE",
 					["class"] = "DRUID",
-					["cache_time"] = 1676988319,
-					["realm"] = "KhazModan",
-				},
-				["Player-1390-0AF63C1B"] = {
-					["name"] = "Sûnder-Hyjal",
-					["guid"] = "Player-1390-0AF63C1B",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1690483124,
-					["realm"] = "Hyjal",
-				},
-				["Player-1604-09B9D2AD"] = {
-					["name"] = "гольфштерн-СвежевательДуш",
-					["guid"] = "Player-1604-09B9D2AD",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684052763,
-					["realm"] = "СвежевательДуш",
+					["cache_time"] = 1684883011,
+					["realm"] = "Stormreaver",
 				},
 				["Player-1602-0F47490E"] = {
 					["name"] = "эратурим-Гордунни",
@@ -17608,14 +17783,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 436.0625,
 					["guid"] = "Player-3682-0B260071",
 					["class"] = "PALADIN",
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685651466,
 					["name"] = "Holylok-Ragnaros",
-					["enchanter"] = true,
 					["specID"] = 70,
+					["enchanter"] = true,
 					["enchantingLvl"] = 55,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 				},
 				["Player-3682-06F1E341"] = {
 					["ilvl"] = 427.9375,
@@ -17623,11 +17798,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "HEALER",
 					["cache_time"] = 1684475088,
-					["rank"] = "Fárajóóó",
+					["realm"] = "Ragnaros",
 					["name"] = "Mackósajtt-Ragnaros",
 					["specID"] = 105,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Fárajóóó",
 				},
 				["Player-581-03DAA3BE"] = {
 					["name"] = "Hordala-Blackrock",
@@ -17678,12 +17853,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687791012,
 					["realm"] = "EarthenRing",
 				},
-				["Player-1335-0A0A70AC"] = {
-					["name"] = "Moufti-Ysondre",
-					["guid"] = "Player-1335-0A0A70AC",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1690410513,
-					["realm"] = "Ysondre",
+				["Player-1085-09963573"] = {
+					["name"] = "Bonnybon-TheSha'tar",
+					["guid"] = "Player-1085-09963573",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687949172,
+					["realm"] = "TheSha'tar",
 				},
 				["Player-3682-0A977845"] = {
 					["ilvl"] = 437.375,
@@ -17691,11 +17866,11 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1689183684,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider1",
 					["name"] = "Fapàsztor-Ragnaros",
 					["specID"] = 103,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider1",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1405-0823877A"] = {
 					["name"] = "Alkazone-DieNachtwache",
@@ -17711,12 +17886,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687261056,
 					["realm"] = "Archimonde",
 				},
-				["Player-1085-09963573"] = {
-					["name"] = "Bonnybon-TheSha'tar",
-					["guid"] = "Player-1085-09963573",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687949172,
-					["realm"] = "TheSha'tar",
+				["Player-580-0A4DB79A"] = {
+					["name"] = "Yágamí-Blackmoore",
+					["guid"] = "Player-580-0A4DB79A",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677410550,
+					["realm"] = "Blackmoore",
 				},
 				["Player-1335-037588CE"] = {
 					["name"] = "Drin-Ysondre",
@@ -17731,11 +17906,11 @@ RCLootCouncilDB = {
 					["class"] = "MONK",
 					["role"] = "TANK",
 					["cache_time"] = 1679942445,
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["name"] = "Snuggzugg-Ragnaros",
 					["specID"] = 268,
 					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0B0A369C"] = {
 					["name"] = "Kumawakawoke-TwistingNether",
@@ -17744,50 +17919,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687259300,
 					["realm"] = "TwistingNether",
 				},
-				["Player-580-0A4DB79A"] = {
-					["name"] = "Yágamí-Blackmoore",
-					["guid"] = "Player-580-0A4DB79A",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677410550,
-					["realm"] = "Blackmoore",
+				["Player-1335-06B845A1"] = {
+					["name"] = "Papinius-Ysondre",
+					["guid"] = "Player-1335-06B845A1",
+					["class"] = "MONK",
+					["cache_time"] = 1689346075,
+					["realm"] = "Ysondre",
 				},
-				["Player-3682-0B262FDE"] = {
-					["ilvl"] = 446.5,
-					["guid"] = "Player-3682-0B262FDE",
-					["class"] = "EVOKER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1689281451,
-					["realm"] = "Ragnaros",
-					["name"] = "çakey-Ragnaros",
-					["specID"] = 1467,
-					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+				["Player-1084-0A8E54D2"] = {
+					["name"] = "Benk-TarrenMill",
+					["guid"] = "Player-1084-0A8E54D2",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1678480586,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1390-06D343B0"] = {
-					["name"] = "Fenum-Hyjal",
-					["guid"] = "Player-1390-06D343B0",
-					["class"] = "PALADIN",
+				["Player-1305-0C63546F"] = {
+					["name"] = "Beefdáddy-Kazzak",
+					["guid"] = "Player-1305-0C63546F",
+					["class"] = "DRUID",
+					["cache_time"] = 1677665404,
+					["realm"] = "Kazzak",
+				},
+				["Player-1604-0F063C3E"] = {
+					["name"] = "касторий-СвежевательДуш",
+					["guid"] = "Player-1604-0F063C3E",
+					["class"] = "MAGE",
 					["cache_time"] = 1676973948,
-					["realm"] = "Hyjal",
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1329-09F7ADCB"] = {
-					["name"] = "Frukostboll-Ravencrest",
-					["guid"] = "Player-1329-09F7ADCB",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1677110266,
-					["realm"] = "Ravencrest",
-				},
-				["Player-3682-0B1A2316"] = {
-					["ilvl"] = 416.75,
-					["guid"] = "Player-3682-0B1A2316",
-					["class"] = "DEMONHUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1686044481,
-					["realm"] = "Ragnaros",
-					["name"] = "Chaosbrìnger-Ragnaros",
-					["specID"] = 577,
-					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+				["Player-1305-0A46FA85"] = {
+					["name"] = "Oldowl-Kazzak",
+					["guid"] = "Player-1305-0A46FA85",
+					["class"] = "DRUID",
+					["cache_time"] = 1679938772,
+					["realm"] = "Kazzak",
 				},
 				["Player-3713-0876A71C"] = {
 					["name"] = "Acosta-BurningLegion",
@@ -17796,12 +17961,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676479581,
 					["realm"] = "BurningLegion",
 				},
-				["Player-1305-0C63546F"] = {
-					["name"] = "Beefdáddy-Kazzak",
-					["guid"] = "Player-1305-0C63546F",
-					["class"] = "DRUID",
-					["cache_time"] = 1677665404,
-					["realm"] = "Kazzak",
+				["Player-2073-09F87F47"] = {
+					["ilvl"] = 416.5625,
+					["guid"] = "Player-2073-09F87F47",
+					["class"] = "ROGUE",
+					["rank"] = "Unguilded",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1678481387,
+					["name"] = "Stabbynick-Stormscale",
+					["enchanter"] = true,
+					["specID"] = 261,
+					["enchantingLvl"] = 67,
+					["realm"] = "Stormscale",
 				},
 				["Player-1305-0C7FC78D"] = {
 					["name"] = "Pumpér-Kazzak",
@@ -17821,14 +17992,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 424.3125,
 					["guid"] = "Player-3682-09450CB0",
 					["class"] = "MONK",
-					["realm"] = "Ragnaros",
+					["rank"] = "Mythic Raider",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1684960646,
 					["name"] = "Bhikkhu-Ragnaros",
-					["specID"] = 269,
 					["enchanter"] = true,
+					["specID"] = 269,
 					["enchantingLvl"] = 35,
-					["rank"] = "Mythic Raider",
+					["realm"] = "Ragnaros",
 				},
 				["Player-1379-0AE43E90"] = {
 					["name"] = "Notobrew-Sanguino",
@@ -17837,18 +18008,11 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684603502,
 					["realm"] = "Sanguino",
 				},
-				["Player-3674-0B26863D"] = {
-					["name"] = "Bábíer-TwistingNether",
-					["guid"] = "Player-3674-0B26863D",
-					["class"] = "PRIEST",
-					["cache_time"] = 1685305181,
-					["realm"] = "TwistingNether",
-				},
-				["Player-1305-0C82BF78"] = {
-					["name"] = "àgentgirl-Kazzak",
-					["guid"] = "Player-1305-0C82BF78",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684501707,
+				["Player-1305-0C85E41F"] = {
+					["name"] = "Osamodas-Kazzak",
+					["guid"] = "Player-1305-0C85E41F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1684502528,
 					["realm"] = "Kazzak",
 				},
 				["Player-3679-0C62DEEC"] = {
@@ -17858,40 +18022,47 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679228248,
 					["realm"] = "Aegwynn",
 				},
-				["Player-580-0A723F71"] = {
-					["name"] = "Antíí-Blackmoore",
-					["guid"] = "Player-580-0A723F71",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685837361,
-					["realm"] = "Blackmoore",
+				["Player-3391-0B7CF249"] = {
+					["name"] = "Víctór-Silvermoon",
+					["guid"] = "Player-3391-0B7CF249",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676465368,
+					["realm"] = "Silvermoon",
 				},
-				["Player-1302-066822CC"] = {
-					["name"] = "Jhinbo-Archimonde",
-					["guid"] = "Player-1302-066822CC",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1677106953,
-					["realm"] = "Archimonde",
+				["Player-1379-0AA1A32B"] = {
+					["name"] = "Yokosenpai-Sanguino",
+					["guid"] = "Player-1379-0AA1A32B",
+					["class"] = "MAGE",
+					["cache_time"] = 1684926971,
+					["realm"] = "Sanguino",
 				},
-				["Player-1305-0C452F39"] = {
-					["name"] = "Zitlock-Kazzak",
-					["guid"] = "Player-1305-0C452F39",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1684566068,
-					["realm"] = "Kazzak",
+				["Player-3682-0B1FB0FD"] = {
+					["name"] = "Qpew-Ragnaros",
+					["guid"] = "Player-3682-0B1FB0FD",
+					["class"] = "HUNTER",
+					["cache_time"] = 1680236701,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1615-0A5B269B"] = {
-					["name"] = "новичок-Ревущийфьорд",
-					["guid"] = "Player-1615-0A5B269B",
-					["class"] = "ROGUE",
-					["cache_time"] = 1684926079,
-					["realm"] = "Ревущийфьорд",
+				["Player-1092-0158521B"] = {
+					["name"] = "Icenova-Drak'thul",
+					["guid"] = "Player-1092-0158521B",
+					["class"] = "MAGE",
+					["cache_time"] = 1680421947,
+					["realm"] = "Drak'thul",
 				},
-				["Player-1615-0A5FC4AC"] = {
-					["name"] = "симпоз-Ревущийфьорд",
-					["guid"] = "Player-1615-0A5FC4AC",
-					["class"] = "PRIEST",
-					["cache_time"] = 1685834664,
-					["realm"] = "Ревущийфьорд",
+				["Player-1084-0A23AE2A"] = {
+					["name"] = "Nezukô-TarrenMill",
+					["guid"] = "Player-1084-0A23AE2A",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1689395307,
+					["realm"] = "TarrenMill",
+				},
+				["Player-3692-09E3060E"] = {
+					["name"] = "Ralphi-Eredar",
+					["guid"] = "Player-3692-09E3060E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676439596,
+					["realm"] = "Eredar",
 				},
 				["Player-1305-07ADC3A8"] = {
 					["name"] = "Uaeload-Kazzak",
@@ -17907,12 +18078,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678894799,
 					["realm"] = "Hyjal",
 				},
-				["Player-1305-0C572B9F"] = {
-					["name"] = "Thu-Kazzak",
-					["guid"] = "Player-1305-0C572B9F",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1680218725,
-					["realm"] = "Kazzak",
+				["Player-1615-0A5FC4AC"] = {
+					["name"] = "симпоз-Ревущийфьорд",
+					["guid"] = "Player-1615-0A5FC4AC",
+					["class"] = "PRIEST",
+					["cache_time"] = 1685834664,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1379-08A7E534"] = {
 					["name"] = "Arakalada-Uldum",
@@ -17935,26 +18106,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678616145,
 					["realm"] = "Archimonde",
 				},
-				["Player-1096-0855519F"] = {
-					["name"] = "Borp-DefiasBrotherhood",
-					["guid"] = "Player-1096-0855519F",
-					["class"] = "MAGE",
-					["cache_time"] = 1678458531,
-					["realm"] = "DefiasBrotherhood",
+				["Player-1329-06A2CD3D"] = {
+					["name"] = "Gonamo-Ravencrest",
+					["guid"] = "Player-1329-06A2CD3D",
+					["class"] = "ROGUE",
+					["cache_time"] = 1677085516,
+					["realm"] = "Ravencrest",
 				},
-				["Player-1379-0A9FC242"] = {
-					["name"] = "Drakmanu-Sanguino",
-					["guid"] = "Player-1379-0A9FC242",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1685539218,
-					["realm"] = "Sanguino",
+				["Player-1305-0C80F3F5"] = {
+					["name"] = "Liglig-Kazzak",
+					["guid"] = "Player-1305-0C80F3F5",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676955286,
+					["realm"] = "Kazzak",
 				},
-				["Player-1105-08336222"] = {
-					["name"] = "Yamà-Nazjatar",
-					["guid"] = "Player-1105-08336222",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1676785859,
-					["realm"] = "Nazjatar",
+				["Player-581-07B0F01F"] = {
+					["name"] = "Smîck-Blackrock",
+					["guid"] = "Player-581-07B0F01F",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1677607044,
+					["realm"] = "Blackrock",
 				},
 				["Player-1403-09CC3594"] = {
 					["name"] = "Faleha-Draenor",
@@ -17963,11 +18134,11 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680112361,
 					["realm"] = "Draenor",
 				},
-				["Player-1084-0A8E54D2"] = {
-					["name"] = "Benk-TarrenMill",
-					["guid"] = "Player-1084-0A8E54D2",
+				["Player-1084-0A6C253C"] = {
+					["name"] = "Nantus-TarrenMill",
+					["guid"] = "Player-1084-0A6C253C",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1678480586,
+					["cache_time"] = 1676502766,
 					["realm"] = "TarrenMill",
 				},
 				["Player-1602-0F5574BB"] = {
@@ -17977,12 +18148,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678894799,
 					["realm"] = "Гордунни",
 				},
-				["Player-3682-0A567F6A"] = {
-					["name"] = "Vallgar-Ragnaros",
-					["guid"] = "Player-3682-0A567F6A",
-					["class"] = "HUNTER",
-					["cache_time"] = 1688671393,
-					["realm"] = "Ragnaros",
+				["Player-1104-07416C30"] = {
+					["name"] = "Nayaki-Nathrezim",
+					["guid"] = "Player-1104-07416C30",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1713977591,
+					["realm"] = "Nathrezim",
 				},
 				["Player-1084-0979329F"] = {
 					["name"] = "Mofasa-TarrenMill",
@@ -17998,19 +18169,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677258735,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1305-0A46FA85"] = {
-					["name"] = "Oldowl-Kazzak",
-					["guid"] = "Player-1305-0A46FA85",
+				["Player-1309-0AA9ED6E"] = {
+					["name"] = "Areidhel-Pozzodell'Eternità",
+					["guid"] = "Player-1309-0AA9ED6E",
 					["class"] = "DRUID",
-					["cache_time"] = 1679938772,
-					["realm"] = "Kazzak",
+					["cache_time"] = 1679415375,
+					["realm"] = "Pozzodell'Eternità",
 				},
-				["Player-1092-07F7ED64"] = {
-					["name"] = "Hemly-Drak'thul",
-					["guid"] = "Player-1092-07F7ED64",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1678126084,
-					["realm"] = "Drak'thul",
+				["Player-1390-0C55B9D9"] = {
+					["name"] = "Nythog-Hyjal",
+					["guid"] = "Player-1390-0C55B9D9",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676311312,
+					["realm"] = "Hyjal",
 				},
 				["Player-3686-09F1424C"] = {
 					["name"] = "Muichirô-Antonidas",
@@ -18019,19 +18190,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689804288,
 					["realm"] = "Antonidas",
 				},
-				["Player-1084-0A3927EB"] = {
-					["name"] = "Rickyjo-TarrenMill",
-					["guid"] = "Player-1084-0A3927EB",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677322749,
-					["realm"] = "TarrenMill",
+				["Player-1929-0EFA2E9A"] = {
+					["name"] = "катанадэмон-ЧерныйШрам",
+					["guid"] = "Player-1929-0EFA2E9A",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1678628555,
+					["realm"] = "ЧерныйШрам",
 				},
-				["Player-1084-0A8478A8"] = {
-					["name"] = "Drakepumpa-TarrenMill",
-					["guid"] = "Player-1084-0A8478A8",
-					["class"] = "EVOKER",
-					["cache_time"] = 1680290994,
-					["realm"] = "TarrenMill",
+				["Player-3686-09647B8F"] = {
+					["name"] = "Kaischi-Antonidas",
+					["guid"] = "Player-3686-09647B8F",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1685393886,
+					["realm"] = "Antonidas",
 				},
 				["Player-1305-0BB0C5EA"] = {
 					["name"] = "Kaffelito-Kazzak",
@@ -18040,19 +18211,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677665404,
 					["realm"] = "Kazzak",
 				},
-				["Player-3692-09AEE02B"] = {
-					["name"] = "Knaertzel-Eredar",
-					["guid"] = "Player-3692-09AEE02B",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1685393886,
-					["realm"] = "Eredar",
+				["Player-3674-0AF614FD"] = {
+					["name"] = "Caprîestsun-TwistingNether",
+					["guid"] = "Player-3674-0AF614FD",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687157922,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1602-0F27097B"] = {
-					["name"] = "наглаямакака-Гордунни",
-					["guid"] = "Player-1602-0F27097B",
-					["class"] = "MAGE",
-					["cache_time"] = 1678766041,
-					["realm"] = "Гордунни",
+				["Player-3691-09FB6E6B"] = {
+					["name"] = "Pewshok-Blackhand",
+					["guid"] = "Player-3691-09FB6E6B",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1678319979,
+					["realm"] = "Blackhand",
 				},
 				["Player-1403-0A4D366F"] = {
 					["name"] = "Injokar-Draenor",
@@ -18067,11 +18238,11 @@ RCLootCouncilDB = {
 					["class"] = "DEATHKNIGHT",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677792647,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 					["name"] = "Carrieddk-Ragnaros",
 					["specID"] = 252,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 				},
 				["Player-633-0AC40C09"] = {
 					["name"] = "Rydgez-Bloodfeather",
@@ -18094,12 +18265,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679417616,
 					["realm"] = "Frostwolf",
 				},
-				["Player-1604-0F504F71"] = {
-					["name"] = "минилайф-СвежевательДуш",
-					["guid"] = "Player-1604-0F504F71",
-					["class"] = "EVOKER",
-					["cache_time"] = 1675869174,
-					["realm"] = "СвежевательДуш",
+				["Player-3674-0B19DB8C"] = {
+					["name"] = "Pelaboy-TwistingNether",
+					["guid"] = "Player-3674-0B19DB8C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676957174,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1390-0C87452F"] = {
 					["name"] = "åyððke-Hyjal",
@@ -18108,33 +18279,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680437946,
 					["realm"] = "Hyjal",
 				},
-				["Player-3691-09FB6E6B"] = {
-					["name"] = "Pewshok-Blackhand",
-					["guid"] = "Player-3691-09FB6E6B",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1678319979,
-					["realm"] = "Blackhand",
+				["Player-580-0A6FD1FE"] = {
+					["name"] = "Nîkaprego-Blackmoore",
+					["guid"] = "Player-580-0A6FD1FE",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1680262695,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1329-06A2CD3D"] = {
-					["name"] = "Gonamo-Ravencrest",
-					["guid"] = "Player-1329-06A2CD3D",
-					["class"] = "ROGUE",
-					["cache_time"] = 1677085516,
-					["realm"] = "Ravencrest",
-				},
-				["Player-1309-0C2672AA"] = {
-					["name"] = "Shog-Pozzodell'Eternità",
-					["guid"] = "Player-1309-0C2672AA",
-					["class"] = "MAGE",
-					["cache_time"] = 1680258337,
-					["realm"] = "Pozzodell'Eternità",
-				},
-				["Player-581-083D7B7A"] = {
-					["name"] = "Braknar-Blackrock",
-					["guid"] = "Player-581-083D7B7A",
+				["Player-2073-09CCDD02"] = {
+					["name"] = "Furydream-Stormscale",
+					["guid"] = "Player-2073-09CCDD02",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1678640480,
-					["realm"] = "Blackrock",
+					["cache_time"] = 1680483861,
+					["realm"] = "Stormscale",
+				},
+				["Player-1390-0C3D4E40"] = {
+					["name"] = "Heyer-Hyjal",
+					["guid"] = "Player-1390-0C3D4E40",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1680437946,
+					["realm"] = "Hyjal",
+				},
+				["Player-1305-08AC16F5"] = {
+					["name"] = "Erinnaa-Kazzak",
+					["guid"] = "Player-1305-08AC16F5",
+					["class"] = "MAGE",
+					["cache_time"] = 1680470506,
+					["realm"] = "Kazzak",
 				},
 				["Player-1092-0A80EB57"] = {
 					["name"] = "Kormios-Drak'thul",
@@ -18150,19 +18321,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676486995,
 					["realm"] = "Stormscale",
 				},
-				["Player-3674-0B09C400"] = {
-					["name"] = "Dadwink-TwistingNether",
-					["guid"] = "Player-3674-0B09C400",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689677222,
-					["realm"] = "TwistingNether",
+				["Player-3691-0709D594"] = {
+					["name"] = "Ascobøl-Blackhand",
+					["guid"] = "Player-3691-0709D594",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1689339567,
+					["realm"] = "Blackhand",
 				},
-				["Player-1305-05BD8DA6"] = {
-					["name"] = "Windzi-Kazzak",
-					["guid"] = "Player-1305-05BD8DA6",
-					["class"] = "ROGUE",
-					["cache_time"] = 1680292466,
-					["realm"] = "Kazzak",
+				["Player-3682-0B038E40"] = {
+					["ilvl"] = 413.3125,
+					["guid"] = "Player-3682-0B038E40",
+					["class"] = "DRUID",
+					["role"] = "HEALER",
+					["cache_time"] = 1680813097,
+					["realm"] = "Ragnaros",
+					["name"] = "Macca-Ragnaros",
+					["specID"] = 105,
+					["enchantingLvl"] = 0,
+					["rank"] = "Recruiter",
 				},
 				["Player-1602-0F4B7B50"] = {
 					["name"] = "янедемон-Гордунни",
@@ -18171,12 +18347,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676377737,
 					["realm"] = "Гордунни",
 				},
-				["Player-3391-0C53DFAE"] = {
-					["name"] = "Xîuhcoatl-Silvermoon",
-					["guid"] = "Player-3391-0C53DFAE",
-					["class"] = "EVOKER",
-					["cache_time"] = 1676797643,
-					["realm"] = "Silvermoon",
+				["Player-3682-0B1E81F6"] = {
+					["ilvl"] = 443,
+					["guid"] = "Player-3682-0B1E81F6",
+					["class"] = "SHAMAN",
+					["rank"] = "Trial",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1687203840,
+					["name"] = "Helpdotcom-Ragnaros",
+					["enchanter"] = true,
+					["specID"] = 263,
+					["enchantingLvl"] = 86,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-0AF8597F"] = {
 					["name"] = "Azuwrath-TwistingNether",
@@ -18185,12 +18367,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685291997,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3702-09266390"] = {
-					["name"] = "Rignasroh-ArgentDawn",
-					["guid"] = "Player-3702-09266390",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1675870763,
-					["realm"] = "ArgentDawn",
+				["Player-1604-0F504F71"] = {
+					["name"] = "минилайф-СвежевательДуш",
+					["guid"] = "Player-1604-0F504F71",
+					["class"] = "EVOKER",
+					["cache_time"] = 1675869174,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-1396-06651835"] = {
 					["name"] = "Hp-AzjolNerub",
@@ -18206,12 +18388,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685032038,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1305-08AC16F5"] = {
-					["name"] = "Erinnaa-Kazzak",
-					["guid"] = "Player-1305-08AC16F5",
-					["class"] = "MAGE",
-					["cache_time"] = 1680470506,
-					["realm"] = "Kazzak",
+				["Player-1615-0579CB60"] = {
+					["name"] = "бабабревно-Ревущийфьорд",
+					["guid"] = "Player-1615-0579CB60",
+					["class"] = "DRUID",
+					["cache_time"] = 1676444247,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3682-0B09C349"] = {
 					["ilvl"] = 444.125,
@@ -18219,50 +18401,39 @@ RCLootCouncilDB = {
 					["class"] = "EVOKER",
 					["role"] = "HEALER",
 					["cache_time"] = 1689281451,
-					["rank"] = "Raider",
+					["realm"] = "Ragnaros",
 					["name"] = "Dokterdrake-Ragnaros",
 					["specID"] = 1468,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Raider",
 				},
-				["Player-1084-0A461A7D"] = {
-					["name"] = "Madharvester-TarrenMill",
-					["guid"] = "Player-1084-0A461A7D",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1680139732,
-					["realm"] = "TarrenMill",
+				["Player-3691-05C654B7"] = {
+					["name"] = "Archímedes-Blackhand",
+					["guid"] = "Player-3691-05C654B7",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676647023,
+					["realm"] = "Blackhand",
 				},
-				["Player-3682-0B038E40"] = {
-					["ilvl"] = 413.3125,
-					["guid"] = "Player-3682-0B038E40",
-					["class"] = "DRUID",
-					["role"] = "HEALER",
-					["cache_time"] = 1680813097,
-					["rank"] = "Recruiter",
-					["name"] = "Macca-Ragnaros",
-					["specID"] = 105,
-					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
-				},
-				["Player-3682-0B1E81F6"] = {
-					["ilvl"] = 443,
-					["guid"] = "Player-3682-0B1E81F6",
-					["class"] = "SHAMAN",
-					["realm"] = "Ragnaros",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1687203840,
-					["name"] = "Helpdotcom-Ragnaros",
-					["specID"] = 263,
-					["enchanter"] = true,
-					["enchantingLvl"] = 86,
-					["rank"] = "Trial",
-				},
-				["Player-1929-0E488477"] = {
-					["name"] = "тогард-ПиратскаяБухта",
-					["guid"] = "Player-1929-0E488477",
+				["Player-1121-0A68DAA2"] = {
+					["name"] = "Poosajj-DerAbyssischeRat",
+					["guid"] = "Player-1121-0A68DAA2",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1676446776,
-					["realm"] = "ПиратскаяБухта",
+					["cache_time"] = 1676950723,
+					["realm"] = "DerAbyssischeRat",
+				},
+				["Player-3702-081E799B"] = {
+					["name"] = "Roggmash-ArgentDawn",
+					["guid"] = "Player-3702-081E799B",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1675873556,
+					["realm"] = "ArgentDawn",
+				},
+				["Player-3391-0C20BAA0"] = {
+					["name"] = "Pingvinbanan-Silvermoon",
+					["guid"] = "Player-3391-0C20BAA0",
+					["class"] = "DRUID",
+					["cache_time"] = 1676385549,
+					["realm"] = "Silvermoon",
 				},
 				["Player-1403-0A6498D9"] = {
 					["name"] = "Aztonmartin-Draenor",
@@ -18285,66 +18456,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678226933,
 					["realm"] = "Ysondre",
 				},
-				["Player-3682-0B19EC37"] = {
-					["ilvl"] = 409.0625,
-					["guid"] = "Player-3682-0B19EC37",
-					["class"] = "MONK",
-					["role"] = "TANK",
-					["cache_time"] = 1679952487,
-					["rank"] = "Alt",
-					["name"] = "Qubit-Ragnaros",
-					["specID"] = 268,
-					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
-				},
-				["Player-1928-0454D1D9"] = {
-					["name"] = "йоказуна-Голдринн",
-					["guid"] = "Player-1928-0454D1D9",
-					["class"] = "PALADIN",
-					["cache_time"] = 1675869700,
-					["realm"] = "Голдринн",
-				},
-				["Player-3391-0C20BAA0"] = {
-					["name"] = "Pingvinbanan-Silvermoon",
-					["guid"] = "Player-3391-0C20BAA0",
-					["class"] = "DRUID",
-					["cache_time"] = 1676385549,
-					["realm"] = "Silvermoon",
-				},
-				["Player-578-059EEE11"] = {
-					["name"] = "Fíora-Kel'Thuzad",
-					["guid"] = "Player-578-059EEE11",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1678052884,
-					["realm"] = "Kel'Thuzad",
-				},
-				["Player-3391-0766706F"] = {
-					["name"] = "Guteridrood-Silvermoon",
-					["guid"] = "Player-3391-0766706F",
-					["class"] = "DRUID",
-					["cache_time"] = 1676452417,
-					["realm"] = "Silvermoon",
-				},
-				["Player-1121-0A68DAA2"] = {
-					["name"] = "Poosajj-DerAbyssischeRat",
-					["guid"] = "Player-1121-0A68DAA2",
+				["Player-1316-0564FFCD"] = {
+					["name"] = "Quando-Nemesis",
+					["guid"] = "Player-1316-0564FFCD",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1676950723,
-					["realm"] = "DerAbyssischeRat",
-				},
-				["Player-3702-081E799B"] = {
-					["name"] = "Roggmash-ArgentDawn",
-					["guid"] = "Player-3702-081E799B",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1675873556,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-604-0A640E86"] = {
-					["name"] = "Almoo-Thrall",
-					["guid"] = "Player-604-0A640E86",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687791012,
-					["realm"] = "Thrall",
+					["cache_time"] = 1676973948,
+					["realm"] = "Nemesis",
 				},
 				["Player-1379-0AD1977F"] = {
 					["name"] = "Drògon-Uldum",
@@ -18353,41 +18470,87 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684566068,
 					["realm"] = "Uldum",
 				},
-				["Player-3682-05C4B3BD"] = {
-					["name"] = "Attiladk-Ragnaros",
-					["guid"] = "Player-3682-05C4B3BD",
+				["Player-3391-0766706F"] = {
+					["name"] = "Guteridrood-Silvermoon",
+					["guid"] = "Player-3391-0766706F",
+					["class"] = "DRUID",
+					["cache_time"] = 1676452417,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3702-09266390"] = {
+					["name"] = "Rignasroh-ArgentDawn",
+					["guid"] = "Player-3702-09266390",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1675870763,
+					["realm"] = "ArgentDawn",
+				},
+				["Player-578-059EEE11"] = {
+					["name"] = "Fíora-Kel'Thuzad",
+					["guid"] = "Player-578-059EEE11",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1678052884,
+					["realm"] = "Kel'Thuzad",
+				},
+				["Player-1604-0E962C2B"] = {
+					["name"] = "цветочик-СвежевательДуш",
+					["guid"] = "Player-1604-0E962C2B",
+					["class"] = "DRUID",
+					["cache_time"] = 1676078692,
+					["realm"] = "СвежевательДуш",
+				},
+				["Player-3691-09C79F3F"] = {
+					["name"] = "Anirael-Blackhand",
+					["guid"] = "Player-3691-09C79F3F",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1685398638,
+					["realm"] = "Blackhand",
+				},
+				["Player-604-0A640E86"] = {
+					["name"] = "Almoo-Thrall",
+					["guid"] = "Player-604-0A640E86",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687791012,
+					["realm"] = "Thrall",
+				},
+				["Player-3657-0ADB8339"] = {
+					["name"] = "Ellaer-Darksorrow",
+					["guid"] = "Player-3657-0ADB8339",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676768222,
+					["realm"] = "Darksorrow",
+				},
+				["Player-1329-099EE51B"] = {
+					["name"] = "Deathsu-Ravencrest",
+					["guid"] = "Player-1329-099EE51B",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1677665404,
-					["realm"] = "Ragnaros",
+					["cache_time"] = 1677333500,
+					["realm"] = "Ravencrest",
 				},
-				["Player-1384-098B518B"] = {
-					["name"] = "Chimueló-Tyrande",
-					["guid"] = "Player-1384-098B518B",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676338183,
-					["realm"] = "Tyrande",
+				["Player-581-0A3CD12A"] = {
+					["name"] = "Zebulight-Blackrock",
+					["guid"] = "Player-581-0A3CD12A",
+					["class"] = "PALADIN",
+					["cache_time"] = 1690409840,
+					["realm"] = "Blackrock",
 				},
-				["Player-3682-0AA2B1F5"] = {
-					["ilvl"] = 409.625,
-					["guid"] = "Player-3682-0AA2B1F5",
-					["class"] = "WARLOCK",
-					["rank"] = "Trial",
-					["role"] = "DAMAGER",
-					["name"] = "Tattz-Ragnaros",
-					["cache_time"] = 1678912228,
-					["enchanter"] = true,
-					["specID"] = 267,
-					["enchantingLvl"] = 97,
-					["realm"] = "Ragnaros",
+				["Player-1929-0E488477"] = {
+					["name"] = "тогард-ПиратскаяБухта",
+					["guid"] = "Player-1929-0E488477",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676446776,
+					["realm"] = "ПиратскаяБухта",
 				},
-				["Player-1092-0A8E6944"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Turbone-BurningBlade",
-					["guid"] = "Player-1092-0A8E6944",
-					["realm"] = "BurningBlade",
-					["class"] = "ROGUE",
-					["cache_time"] = 1676387096,
-					["rank"] = "Novácek",
+				["Player-1379-0AE3A851"] = {
+					["ilvl"] = 417.1875,
+					["guid"] = "Player-1379-0AE3A851",
+					["class"] = "SHAMAN",
+					["role"] = "HEALER",
+					["cache_time"] = 1684501931,
+					["rank"] = "Raider",
+					["name"] = "Ragmar-Sanguino",
+					["specID"] = 264,
+					["enchantingLvl"] = 0,
+					["realm"] = "Sanguino",
 				},
 				["Player-1092-0A974870"] = {
 					["name"] = "Akrinn-BurningBlade",
@@ -18403,12 +18566,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687790447,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1329-09FC6A1E"] = {
-					["name"] = "Hunger-Ravencrest",
-					["guid"] = "Player-1329-09FC6A1E",
+				["Player-1302-0C83B371"] = {
+					["name"] = "åplüs-Archimonde",
+					["guid"] = "Player-1302-0C83B371",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1684569933,
-					["realm"] = "Ravencrest",
+					["cache_time"] = 1684203016,
+					["realm"] = "Archimonde",
 				},
 				["Player-3674-0A90F3D0"] = {
 					["name"] = "Healshamy-TwistingNether",
@@ -18417,12 +18580,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689772053,
 					["realm"] = "TwistingNether",
 				},
-				["Player-581-0A3CD12A"] = {
-					["name"] = "Zebulight-Blackrock",
-					["guid"] = "Player-581-0A3CD12A",
-					["class"] = "PALADIN",
-					["cache_time"] = 1690409840,
-					["realm"] = "Blackrock",
+				["Player-1597-0F5E96EB"] = {
+					["name"] = "Lolypop-Jaedenar",
+					["guid"] = "Player-1597-0F5E96EB",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687133300,
+					["realm"] = "Jaedenar",
 				},
 				["Player-1390-0C2C964B"] = {
 					["name"] = "Neorax-Hyjal",
@@ -18438,33 +18601,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680437946,
 					["realm"] = "Blackhand",
 				},
-				["Player-1092-0A956B5C"] = {
-					["name"] = "Konylka-Drak'thul",
-					["guid"] = "Player-1092-0A956B5C",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686754973,
-					["realm"] = "Drak'thul",
-				},
-				["Player-1587-072EC0E3"] = {
-					["name"] = "Itsvalling-Arathor",
-					["guid"] = "Player-1587-072EC0E3",
-					["class"] = "DRUID",
-					["cache_time"] = 1688303691,
-					["realm"] = "Arathor",
-				},
-				["Player-3690-0B242DC5"] = {
-					["name"] = "Leeshia-KhazModan",
-					["guid"] = "Player-3690-0B242DC5",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687298820,
-					["realm"] = "KhazModan",
-				},
-				["Player-3713-0AC35C70"] = {
-					["name"] = "Cactuus-Xavius",
-					["guid"] = "Player-3713-0AC35C70",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1689699139,
-					["realm"] = "Xavius",
+				["Player-3682-05C4B3BD"] = {
+					["name"] = "Attiladk-Ragnaros",
+					["guid"] = "Player-3682-05C4B3BD",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1677665404,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3691-052B188B"] = {
 					["name"] = "Teramatinart-Blackhand",
@@ -18473,17 +18615,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687791302,
 					["realm"] = "Blackhand",
 				},
-				["Player-1379-0AE3A851"] = {
-					["ilvl"] = 417.1875,
-					["guid"] = "Player-1379-0AE3A851",
-					["class"] = "SHAMAN",
-					["role"] = "HEALER",
-					["cache_time"] = 1684501931,
-					["realm"] = "Sanguino",
-					["name"] = "Ragmar-Sanguino",
-					["specID"] = 264,
-					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+				["Player-3681-08DDD8ED"] = {
+					["name"] = "Nekasidin-Magtheridon",
+					["guid"] = "Player-3681-08DDD8ED",
+					["class"] = "PALADIN",
+					["cache_time"] = 1688687270,
+					["realm"] = "Magtheridon",
+				},
+				["Player-3713-0AC35C70"] = {
+					["name"] = "Cactuus-Xavius",
+					["guid"] = "Player-3713-0AC35C70",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1689699139,
+					["realm"] = "Xavius",
+				},
+				["Player-3690-0B242DC5"] = {
+					["name"] = "Leeshia-KhazModan",
+					["guid"] = "Player-3690-0B242DC5",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687298820,
+					["realm"] = "KhazModan",
+				},
+				["Player-1621-0B1CF343"] = {
+					["name"] = "Sslaah-MarécagedeZangar",
+					["guid"] = "Player-1621-0B1CF343",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1678778036,
+					["realm"] = "MarécagedeZangar",
 				},
 				["Player-1305-0BC4A43D"] = {
 					["name"] = "Alhampriest-Kazzak",
@@ -18492,12 +18650,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689676343,
 					["realm"] = "Kazzak",
 				},
-				["Player-1615-0A7755CD"] = {
-					["name"] = "креветулечка-Ревущийфьорд",
-					["guid"] = "Player-1615-0A7755CD",
-					["class"] = "MONK",
-					["cache_time"] = 1689804288,
-					["realm"] = "Ревущийфьорд",
+				["Player-3674-0AE430AF"] = {
+					["name"] = "Viggøs-TwistingNether",
+					["guid"] = "Player-3674-0AE430AF",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677665404,
+					["realm"] = "TwistingNether",
 				},
 				["Player-2073-09B22158"] = {
 					["name"] = "Resoñ-Stormscale",
@@ -18534,21 +18692,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680290994,
 					["realm"] = "Dalaran",
 				},
-				["Player-3674-0AB824CD"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Deathbsnusnu-TwistingNether",
-					["guid"] = "Player-3674-0AB824CD",
-					["rank"] = "Unguilded",
-					["class"] = "ROGUE",
-					["cache_time"] = 1686184517,
-					["realm"] = "TwistingNether",
-				},
-				["Player-3656-04F193E3"] = {
-					["name"] = "Omgifoundyou-Vashj",
-					["guid"] = "Player-3656-04F193E3",
+				["Player-3703-04D7391A"] = {
+					["name"] = "Aerîon-Frostwolf",
+					["guid"] = "Player-3703-04D7391A",
 					["class"] = "PALADIN",
-					["cache_time"] = 1687949013,
-					["realm"] = "Vashj",
+					["cache_time"] = 1686196330,
+					["realm"] = "Frostwolf",
 				},
 				["Player-1621-0AB74A5A"] = {
 					["name"] = "Elníniel-Dalaran",
@@ -18564,33 +18713,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688930496,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1597-0F5E96EB"] = {
-					["name"] = "Lolypop-Jaedenar",
-					["guid"] = "Player-1597-0F5E96EB",
+				["Player-1929-0E5370C4"] = {
+					["name"] = "рейдбосс-ПиратскаяБухта",
+					["guid"] = "Player-1929-0E5370C4",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1688947447,
+					["realm"] = "ПиратскаяБухта",
+				},
+				["Player-1403-0A1C115F"] = {
+					["name"] = "Bradli-Draenor",
+					["guid"] = "Player-1403-0A1C115F",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687133300,
-					["realm"] = "Jaedenar",
-				},
-				["Player-512-08271455"] = {
-					["name"] = "Minachips-Kael'thas",
-					["guid"] = "Player-512-08271455",
-					["class"] = "PRIEST",
-					["cache_time"] = 1684413259,
-					["realm"] = "Kael'thas",
-				},
-				["Player-1305-0C03A3CA"] = {
-					["name"] = "Calften-Kazzak",
-					["guid"] = "Player-1305-0C03A3CA",
-					["class"] = "ROGUE",
-					["cache_time"] = 1684311131,
-					["realm"] = "Kazzak",
-				},
-				["Player-1305-0C2777B4"] = {
-					["name"] = "Qivectimus-Kazzak",
-					["guid"] = "Player-1305-0C2777B4",
-					["class"] = "MAGE",
-					["cache_time"] = 1686121310,
-					["realm"] = "Kazzak",
+					["cache_time"] = 1676646998,
+					["realm"] = "Draenor",
 				},
 				["Player-1329-0648BA2D"] = {
 					["name"] = "Faayth-Ravencrest",
@@ -18599,19 +18734,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684413259,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1403-0A615A36"] = {
-					["name"] = "Kalsdkern-Draenor",
-					["guid"] = "Player-1403-0A615A36",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1678233785,
+				["Player-1305-0C8D3661"] = {
+					["name"] = "àdrian-Kazzak",
+					["guid"] = "Player-1305-0C8D3661",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1683965309,
+					["realm"] = "Kazzak",
+				},
+				["Player-1403-0A53B27A"] = {
+					["name"] = "Mavedrag-Draenor",
+					["guid"] = "Player-1403-0A53B27A",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689855648,
 					["realm"] = "Draenor",
 				},
-				["Player-1929-0E5370C4"] = {
-					["name"] = "рейдбосс-ПиратскаяБухта",
-					["guid"] = "Player-1929-0E5370C4",
+				["Player-1305-0C03A3CA"] = {
+					["name"] = "Calften-Kazzak",
+					["guid"] = "Player-1305-0C03A3CA",
+					["class"] = "ROGUE",
+					["cache_time"] = 1684311131,
+					["realm"] = "Kazzak",
+				},
+				["Player-3713-0A726421"] = {
+					["name"] = "Zabakun-BurningLegion",
+					["guid"] = "Player-3713-0A726421",
 					["class"] = "WARLOCK",
-					["cache_time"] = 1688947447,
-					["realm"] = "ПиратскаяБухта",
+					["cache_time"] = 1677324336,
+					["realm"] = "BurningLegion",
+				},
+				["Player-3674-0A88CDB7"] = {
+					["name"] = "Madinwarlock-TwistingNether",
+					["guid"] = "Player-3674-0A88CDB7",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1675782439,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3674-0B284021"] = {
 					["ilvl"] = 445.25,
@@ -18619,24 +18775,24 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "HEALER",
 					["cache_time"] = 1689251791,
-					["realm"] = "TwistingNether",
+					["rank"] = "Trial",
 					["name"] = "Pandaelia-TwistingNether",
 					["specID"] = 257,
 					["enchantingLvl"] = 0,
-					["rank"] = "Trial",
+					["realm"] = "TwistingNether",
 				},
 				["Player-3692-09F57EF5"] = {
 					["ilvl"] = 440,
 					["guid"] = "Player-3692-09F57EF5",
 					["class"] = "WARLOCK",
-					["rank"] = "Schlachtzügler",
+					["realm"] = "Eredar",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685395577,
 					["name"] = "Cíel-Eredar",
-					["enchanter"] = true,
 					["specID"] = 266,
+					["enchanter"] = true,
 					["enchantingLvl"] = 100,
-					["realm"] = "Eredar",
+					["rank"] = "Schlachtzügler",
 				},
 				["Player-580-0A5A6177"] = {
 					["name"] = "Wiau-Blackmoore",
@@ -18652,12 +18808,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684564034,
 					["realm"] = "Sargeras",
 				},
-				["Player-3674-08C979CF"] = {
-					["name"] = "Harennval-TwistingNether",
-					["guid"] = "Player-3674-08C979CF",
-					["class"] = "DRUID",
-					["cache_time"] = 1684509144,
-					["realm"] = "TwistingNether",
+				["Player-1403-0A68E53B"] = {
+					["ilvl"] = 419.125,
+					["guid"] = "Player-1403-0A68E53B",
+					["class"] = "DEMONHUNTER",
+					["realm"] = "Draenor",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1680695598,
+					["name"] = "Zvet-Draenor",
+					["specID"] = 577,
+					["enchanter"] = true,
+					["enchantingLvl"] = 105,
+					["rank"] = "Unguilded",
 				},
 				["Player-3681-0AA7BD99"] = {
 					["name"] = "Levide-Magtheridon",
@@ -18673,12 +18835,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677249989,
 					["realm"] = "Ragnaros",
 				},
-				["Player-3391-0C90E349"] = {
-					["name"] = "Tukiiz-Silvermoon",
-					["guid"] = "Player-3391-0C90E349",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685534275,
-					["realm"] = "Silvermoon",
+				["Player-3682-0B14C6D1"] = {
+					["name"] = "Crazy-Ragnaros",
+					["guid"] = "Player-3682-0B14C6D1",
+					["class"] = "DRUID",
+					["cache_time"] = 1676784514,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1390-0C7E97CD"] = {
 					["name"] = "Elnath-Hyjal",
@@ -18687,12 +18849,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676370489,
 					["realm"] = "Hyjal",
 				},
-				["Player-3656-0A8F72C5"] = {
-					["name"] = "Depsimestari-Stormreaver",
-					["guid"] = "Player-3656-0A8F72C5",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676377737,
-					["realm"] = "Stormreaver",
+				["Player-3692-045EA519"] = {
+					["name"] = "Isengate-Eredar",
+					["guid"] = "Player-3692-045EA519",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1680292466,
+					["realm"] = "Eredar",
 				},
 				["Player-1615-092BB47B"] = {
 					["name"] = "орзамар-Ревущийфьорд",
@@ -18701,12 +18863,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684596359,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3657-0A2438DD"] = {
-					["name"] = "Alli-Neptulon",
-					["guid"] = "Player-3657-0A2438DD",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690056758,
-					["realm"] = "Neptulon",
+				["Player-1403-054D88EB"] = {
+					["name"] = "Toby-Draenor",
+					["guid"] = "Player-1403-054D88EB",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684926332,
+					["realm"] = "Draenor",
 				},
 				["Player-1929-093E68DB"] = {
 					["name"] = "вендьета-ЧерныйШрам",
@@ -18715,25 +18877,25 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679426740,
 					["realm"] = "ЧерныйШрам",
 				},
+				["Player-3682-0B1DBDAE"] = {
+					["ilvl"] = 416.9375,
+					["guid"] = "Player-3682-0B1DBDAE",
+					["class"] = "ROGUE",
+					["rank"] = "Raider",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1680546104,
+					["name"] = "Stabbynick-Ragnaros",
+					["enchanter"] = true,
+					["specID"] = 261,
+					["enchantingLvl"] = 67,
+					["realm"] = "Ragnaros",
+				},
 				["Player-3682-0B04F7CE"] = {
 					["name"] = "Niato-Ragnaros",
 					["guid"] = "Player-3682-0B04F7CE",
 					["class"] = "PRIEST",
 					["cache_time"] = 1683012561,
 					["realm"] = "Ragnaros",
-				},
-				["Player-3682-0B1DBDAE"] = {
-					["ilvl"] = 416.9375,
-					["guid"] = "Player-3682-0B1DBDAE",
-					["class"] = "ROGUE",
-					["realm"] = "Ragnaros",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1680546104,
-					["name"] = "Stabbynick-Ragnaros",
-					["specID"] = 261,
-					["enchanter"] = true,
-					["enchantingLvl"] = 67,
-					["rank"] = "Raider",
 				},
 				["Player-1302-085506AB"] = {
 					["name"] = "Paspique-Archimonde",
@@ -18749,12 +18911,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680437946,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1329-09D4AFB4"] = {
-					["name"] = "Filiduttkatt-Ravencrest",
-					["guid"] = "Player-1329-09D4AFB4",
-					["class"] = "DRUID",
-					["cache_time"] = 1677521837,
-					["realm"] = "Ravencrest",
+				["Player-1403-0A70D56D"] = {
+					["name"] = "Wickedfap-Draenor",
+					["guid"] = "Player-1403-0A70D56D",
+					["class"] = "PRIEST",
+					["cache_time"] = 1685398638,
+					["realm"] = "Draenor",
 				},
 				["Player-1305-0A37B460"] = {
 					["name"] = "Zhozhø-Kazzak",
@@ -18777,19 +18939,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687949013,
 					["realm"] = "Ysondre",
 				},
-				["Player-3682-0B14C6D1"] = {
-					["name"] = "Crazy-Ragnaros",
-					["guid"] = "Player-3682-0B14C6D1",
-					["class"] = "DRUID",
-					["cache_time"] = 1676784514,
-					["realm"] = "Ragnaros",
+				["Player-1097-06C4C435"] = {
+					["name"] = "Grafparty-Malorne",
+					["guid"] = "Player-1097-06C4C435",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1679861251,
+					["realm"] = "Malorne",
 				},
-				["Player-580-081BE3AD"] = {
-					["name"] = "Séné-Blackmoore",
-					["guid"] = "Player-580-081BE3AD",
-					["class"] = "MONK",
-					["cache_time"] = 1687041442,
-					["realm"] = "Blackmoore",
+				["Player-1403-0A615A36"] = {
+					["name"] = "Kalsdkern-Draenor",
+					["guid"] = "Player-1403-0A615A36",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1678233785,
+					["realm"] = "Draenor",
 				},
 				["Player-580-0A59BCA0"] = {
 					["name"] = "Wiiko-Blackmoore",
@@ -18798,12 +18960,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686754474,
 					["realm"] = "Blackmoore",
 				},
-				["Player-3692-045EA519"] = {
-					["name"] = "Isengate-Eredar",
-					["guid"] = "Player-3692-045EA519",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1680292466,
-					["realm"] = "Eredar",
+				["Player-1379-0AD5574C"] = {
+					["name"] = "Iyio-Sanguino",
+					["guid"] = "Player-1379-0AD5574C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687949273,
+					["realm"] = "Sanguino",
 				},
 				["Player-1084-097356ED"] = {
 					["name"] = "Veramonk-TarrenMill",
@@ -18812,19 +18974,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687791012,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1329-09EAD398"] = {
-					["name"] = "Aestheticbro-Ravencrest",
-					["guid"] = "Player-1329-09EAD398",
-					["class"] = "EVOKER",
-					["cache_time"] = 1688983952,
-					["realm"] = "Ravencrest",
+				["Player-1084-092EDDCF"] = {
+					["name"] = "Kappadinho-TarrenMill",
+					["guid"] = "Player-1084-092EDDCF",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1689698521,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1615-091ABA85"] = {
-					["name"] = "сатанейл-Ревущийфьорд",
-					["guid"] = "Player-1615-091ABA85",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677227556,
-					["realm"] = "Ревущийфьорд",
+				["Player-580-081BE3AD"] = {
+					["name"] = "Séné-Blackmoore",
+					["guid"] = "Player-580-081BE3AD",
+					["class"] = "MONK",
+					["cache_time"] = 1687041442,
+					["realm"] = "Blackmoore",
 				},
 				["Player-3682-0B2927AE"] = {
 					["name"] = "Zerotwofour-Ragnaros",
@@ -18833,12 +18995,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687957630,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1379-0AC74D70"] = {
-					["name"] = "Shinaloa-Sanguino",
-					["guid"] = "Player-1379-0AC74D70",
-					["class"] = "MONK",
-					["cache_time"] = 1676973948,
-					["realm"] = "Sanguino",
+				["Player-1329-09EAD398"] = {
+					["name"] = "Aestheticbro-Ravencrest",
+					["guid"] = "Player-1329-09EAD398",
+					["class"] = "EVOKER",
+					["cache_time"] = 1688983952,
+					["realm"] = "Ravencrest",
 				},
 				["Player-3674-0B1C68E6"] = {
 					["ilvl"] = 434.25,
@@ -18846,11 +19008,11 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1685059364,
-					["realm"] = "TwistingNether",
+					["rank"] = "Officer",
 					["name"] = "Kralexxd-TwistingNether",
 					["specID"] = 72,
 					["enchantingLvl"] = 0,
-					["rank"] = "Officer",
+					["realm"] = "TwistingNether",
 				},
 				["Player-1335-05FA682D"] = {
 					["name"] = "Waromiko-Ysondre",
@@ -18866,24 +19028,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679425766,
 					["realm"] = "Azshara",
 				},
-				["Player-1084-09F0CE7B"] = {
-					["name"] = "Worlazpallyy-TarrenMill",
-					["guid"] = "Player-1084-09F0CE7B",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686985298,
-					["realm"] = "TarrenMill",
+				["Player-3674-08C979CF"] = {
+					["name"] = "Harennval-TwistingNether",
+					["guid"] = "Player-3674-08C979CF",
+					["class"] = "DRUID",
+					["cache_time"] = 1684509144,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1084-0AA3352A"] = {
-					["ilvl"] = 445.125,
-					["guid"] = "Player-1084-0AA3352A",
-					["class"] = "HUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1690403443,
-					["realm"] = "TarrenMill",
-					["name"] = "Amenía-TarrenMill",
-					["specID"] = 254,
-					["enchantingLvl"] = 0,
-					["rank"] = "Trial",
+				["Player-581-0A738916"] = {
+					["name"] = "Miosan-Blackrock",
+					["guid"] = "Player-581-0A738916",
+					["class"] = "MONK",
+					["cache_time"] = 1684218174,
+					["realm"] = "Blackrock",
 				},
 				["Player-1092-096E0A20"] = {
 					["name"] = "Vexxy-Drak'thul",
@@ -18892,37 +19049,32 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690409840,
 					["realm"] = "Drak'thul",
 				},
-				["Player-3713-0AD80FCF"] = {
-					["ilvl"] = 414.8125,
-					["guid"] = "Player-3713-0AD80FCF",
-					["class"] = "DEATHKNIGHT",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1677515492,
-					["realm"] = "BurningLegion",
-					["name"] = "Leonorek-BurningLegion",
-					["specID"] = 252,
-					["enchantingLvl"] = 0,
-					["rank"] = "Swieza Krew",
+				["Player-3682-098BDB1B"] = {
+					["name"] = "Marcipan-Ragnaros",
+					["guid"] = "Player-3682-098BDB1B",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686121310,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3682-05CD7131"] = {
 					["ilvl"] = 442.625,
 					["guid"] = "Player-3682-05CD7131",
 					["class"] = "PALADIN",
-					["realm"] = "Ragnaros",
+					["rank"] = "Officer",
 					["role"] = "TANK",
 					["cache_time"] = 1689281451,
 					["name"] = "Grendizer-Ragnaros",
-					["specID"] = 66,
 					["enchanter"] = true,
+					["specID"] = 66,
 					["enchantingLvl"] = 100,
-					["rank"] = "Officer",
+					["realm"] = "Ragnaros",
 				},
-				["Player-3713-0A726421"] = {
-					["name"] = "Zabakun-BurningLegion",
-					["guid"] = "Player-3713-0A726421",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1677324336,
-					["realm"] = "BurningLegion",
+				["Player-1084-09F0CE7B"] = {
+					["name"] = "Worlazpallyy-TarrenMill",
+					["guid"] = "Player-1084-09F0CE7B",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686985298,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1615-0A882064"] = {
 					["name"] = "дженчиган-Ревущийфьорд",
@@ -18945,12 +19097,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678236367,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1403-0A1C115F"] = {
-					["name"] = "Bradli-Draenor",
-					["guid"] = "Player-1403-0A1C115F",
+				["Player-1604-0BF71325"] = {
+					["name"] = "антистий-СвежевательДуш",
+					["guid"] = "Player-1604-0BF71325",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1676646998,
-					["realm"] = "Draenor",
+					["cache_time"] = 1677665404,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-581-075457C2"] = {
 					["name"] = "Fiqqusuterus-Blackrock",
@@ -18959,13 +19111,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683073477,
 					["realm"] = "Blackrock",
 				},
-				["Player-1615-0B21053F"] = {
-					["name"] = "ресокс-Ревущийфьорд",
-					["guid"] = "Player-1615-0B21053F",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685740823,
-					["realm"] = "Ревущийфьорд",
-				},
 				["Player-1923-0F5C16A3"] = {
 					["name"] = "жабапёс-Ясеневыйлес",
 					["guid"] = "Player-1923-0F5C16A3",
@@ -18973,12 +19118,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683073733,
 					["realm"] = "Ясеневыйлес",
 				},
-				["Player-3682-0B0D90B2"] = {
-					["name"] = "Odapaín-Ragnaros",
-					["guid"] = "Player-3682-0B0D90B2",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1679435365,
-					["realm"] = "Ragnaros",
+				["Player-3674-0AE318E7"] = {
+					["name"] = "Hgayboys-TwistingNether",
+					["guid"] = "Player-3674-0AE318E7",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1684231108,
+					["realm"] = "TwistingNether",
+				},
+				["Player-1305-0A977267"] = {
+					["name"] = "Falzelight-Kazzak",
+					["guid"] = "Player-1305-0A977267",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684292453,
+					["realm"] = "Kazzak",
 				},
 				["Player-3691-04EE1563"] = {
 					["name"] = "Dennilox-Blackhand",
@@ -18994,19 +19146,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684566068,
 					["realm"] = "C'Thun",
 				},
-				["Player-581-0A716136"] = {
-					["name"] = "Zândâlâdîn-Blackrock",
-					["guid"] = "Player-581-0A716136",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685794414,
-					["realm"] = "Blackrock",
+				["Player-1127-0A5A0060"] = {
+					["name"] = "Rhanamir-KirinTor",
+					["guid"] = "Player-1127-0A5A0060",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1678052884,
+					["realm"] = "KirinTor",
 				},
-				["Player-1305-0A977267"] = {
-					["name"] = "Falzelight-Kazzak",
-					["guid"] = "Player-1305-0A977267",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684292453,
-					["realm"] = "Kazzak",
+				["Player-3691-065BA551"] = {
+					["name"] = "Elènor-Blackhand",
+					["guid"] = "Player-3691-065BA551",
+					["class"] = "DRUID",
+					["cache_time"] = 1680290994,
+					["realm"] = "Blackhand",
 				},
 				["Player-1403-06C3D7DE"] = {
 					["name"] = "Corkii-Draenor",
@@ -19029,12 +19181,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688908576,
 					["realm"] = "Drak'thul",
 				},
-				["Player-3682-0A6EE216"] = {
-					["name"] = "Nuurii-Ragnaros",
-					["guid"] = "Player-3682-0A6EE216",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676372636,
-					["realm"] = "Ragnaros",
+				["Player-3686-09FD4937"] = {
+					["name"] = "Radiantman-Antonidas",
+					["guid"] = "Player-3686-09FD4937",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680437946,
+					["realm"] = "Antonidas",
 				},
 				["Player-3713-07229606"] = {
 					["name"] = "Bästion-BurningLegion",
@@ -19050,18 +19202,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689769880,
 					["realm"] = "Draenor",
 				},
-				["Player-1127-0A5A0060"] = {
-					["name"] = "Rhanamir-KirinTor",
-					["guid"] = "Player-1127-0A5A0060",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1678052884,
-					["realm"] = "KirinTor",
+				["Player-1604-0F3E0EE1"] = {
+					["name"] = "яхвэ-СвежевательДуш",
+					["guid"] = "Player-1604-0F3E0EE1",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1688876703,
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1615-0ACBB7C6"] = {
-					["name"] = "кхир-Ревущийфьорд",
-					["guid"] = "Player-1615-0ACBB7C6",
-					["class"] = "DRUID",
-					["cache_time"] = 1685780231,
+				["Player-1615-091ABA85"] = {
+					["name"] = "сатанейл-Ревущийфьорд",
+					["guid"] = "Player-1615-091ABA85",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677227556,
 					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1615-0AEC85C3"] = {
@@ -19071,19 +19223,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685864518,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1390-0766E8C1"] = {
-					["name"] = "Ander-Hyjal",
-					["guid"] = "Player-1390-0766E8C1",
-					["class"] = "HUNTER",
-					["cache_time"] = 1678409718,
-					["realm"] = "Hyjal",
+				["Player-1329-09FA95C1"] = {
+					["name"] = "Leverfläck-Ravencrest",
+					["guid"] = "Player-1329-09FA95C1",
+					["class"] = "EVOKER",
+					["cache_time"] = 1677518213,
+					["realm"] = "Ravencrest",
 				},
-				["Player-1390-0B260813"] = {
-					["name"] = "Brunimonde-Hyjal",
-					["guid"] = "Player-1390-0B260813",
-					["class"] = "MAGE",
-					["cache_time"] = 1676973948,
-					["realm"] = "Hyjal",
+				["Player-3674-0B1AFC1D"] = {
+					["name"] = "Aurisera-TwistingNether",
+					["guid"] = "Player-3674-0B1AFC1D",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676952903,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1403-09959DA8"] = {
 					["name"] = "Blackslight-Draenor",
@@ -19092,19 +19244,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685358170,
 					["realm"] = "Draenor",
 				},
-				["Player-1621-0AEF8A2D"] = {
-					["name"] = "Ontario-Dalaran",
-					["guid"] = "Player-1621-0AEF8A2D",
-					["class"] = "DRUID",
-					["cache_time"] = 1678638104,
-					["realm"] = "Dalaran",
-				},
 				["Player-1403-098E127C"] = {
 					["name"] = "Asyrine-Draenor",
 					["guid"] = "Player-1403-098E127C",
 					["class"] = "MAGE",
 					["cache_time"] = 1679747022,
 					["realm"] = "Draenor",
+				},
+				["Player-1329-09C364CF"] = {
+					["name"] = "Mehix-Ravencrest",
+					["guid"] = "Player-1329-09C364CF",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1680218725,
+					["realm"] = "Ravencrest",
 				},
 				["Player-581-05671D72"] = {
 					["name"] = "Yamâtø-Blackrock",
@@ -19120,12 +19272,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683811886,
 					["realm"] = "Silvermoon",
 				},
-				["Player-580-09E8EDEE"] = {
-					["name"] = "Blutrót-Blackmoore",
-					["guid"] = "Player-580-09E8EDEE",
-					["class"] = "ROGUE",
-					["cache_time"] = 1687961749,
-					["realm"] = "Blackmoore",
+				["Player-1092-07DBE65C"] = {
+					["name"] = "Terond-BurningBlade",
+					["guid"] = "Player-1092-07DBE65C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685054657,
+					["realm"] = "BurningBlade",
 				},
 				["Player-1403-0A65B67A"] = {
 					["name"] = "Grimmalf-Draenor",
@@ -19141,19 +19293,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685437969,
 					["realm"] = "Kazzak",
 				},
-				["Player-1604-0BF71325"] = {
-					["name"] = "антистий-СвежевательДуш",
-					["guid"] = "Player-1604-0BF71325",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1677665404,
-					["realm"] = "СвежевательДуш",
+				["Player-1084-098AD01E"] = {
+					["name"] = "Hexagram-TarrenMill",
+					["guid"] = "Player-1084-098AD01E",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686605803,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1329-09FA95C1"] = {
-					["name"] = "Leverfläck-Ravencrest",
-					["guid"] = "Player-1329-09FA95C1",
-					["class"] = "EVOKER",
-					["cache_time"] = 1677518213,
-					["realm"] = "Ravencrest",
+				["Player-1621-0AEF8A2D"] = {
+					["name"] = "Ontario-Dalaran",
+					["guid"] = "Player-1621-0AEF8A2D",
+					["class"] = "DRUID",
+					["cache_time"] = 1678638104,
+					["realm"] = "Dalaran",
 				},
 				["Player-1085-0A3019AE"] = {
 					["name"] = "Disco-TheSha'tar",
@@ -19204,47 +19356,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676794444,
 					["realm"] = "Shattrath",
 				},
-				["Player-1092-07DBE65C"] = {
-					["name"] = "Terond-BurningBlade",
-					["guid"] = "Player-1092-07DBE65C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685054657,
-					["realm"] = "BurningBlade",
+				["Player-1390-0766E8C1"] = {
+					["name"] = "Ander-Hyjal",
+					["guid"] = "Player-1390-0766E8C1",
+					["class"] = "HUNTER",
+					["cache_time"] = 1678409718,
+					["realm"] = "Hyjal",
 				},
-				["Player-1604-0F3E0EE1"] = {
-					["name"] = "яхвэ-СвежевательДуш",
-					["guid"] = "Player-1604-0F3E0EE1",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1688876703,
-					["realm"] = "СвежевательДуш",
-				},
-				["Player-3691-065BA551"] = {
-					["name"] = "Elènor-Blackhand",
-					["guid"] = "Player-3691-065BA551",
+				["Player-1615-0ACBB7C6"] = {
+					["name"] = "кхир-Ревущийфьорд",
+					["guid"] = "Player-1615-0ACBB7C6",
 					["class"] = "DRUID",
-					["cache_time"] = 1680290994,
-					["realm"] = "Blackhand",
-				},
-				["Player-3391-0C7B52C5"] = {
-					["name"] = "Vankydh-Silvermoon",
-					["guid"] = "Player-3391-0C7B52C5",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1684475489,
-					["realm"] = "Silvermoon",
-				},
-				["Player-3686-09FD4937"] = {
-					["name"] = "Radiantman-Antonidas",
-					["guid"] = "Player-3686-09FD4937",
-					["class"] = "PALADIN",
-					["cache_time"] = 1680437946,
-					["realm"] = "Antonidas",
-				},
-				["Player-3674-0AE318E7"] = {
-					["name"] = "Hgayboys-TwistingNether",
-					["guid"] = "Player-3674-0AE318E7",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1684231108,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1685780231,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1615-0B251AA3"] = {
 					["name"] = "слтпес-Ревущийфьорд",
@@ -19253,6 +19377,34 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685393886,
 					["realm"] = "Ревущийфьорд",
 				},
+				["Player-3391-0C7B52C5"] = {
+					["name"] = "Vankydh-Silvermoon",
+					["guid"] = "Player-3391-0C7B52C5",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1684475489,
+					["realm"] = "Silvermoon",
+				},
+				["Player-1403-0A5A74BC"] = {
+					["name"] = "Shays-Draenor",
+					["guid"] = "Player-1403-0A5A74BC",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676144825,
+					["realm"] = "Draenor",
+				},
+				["Player-581-0A716136"] = {
+					["name"] = "Zândâlâdîn-Blackrock",
+					["guid"] = "Player-581-0A716136",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685794414,
+					["realm"] = "Blackrock",
+				},
+				["Player-3682-0B0D90B2"] = {
+					["name"] = "Odapaín-Ragnaros",
+					["guid"] = "Player-3682-0B0D90B2",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1679435365,
+					["realm"] = "Ragnaros",
+				},
 				["Player-633-0ADB4BFF"] = {
 					["name"] = "Angelb-Darkspear",
 					["guid"] = "Player-633-0ADB4BFF",
@@ -19260,12 +19412,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680698303,
 					["realm"] = "Darkspear",
 				},
-				["Player-3674-0B1AFC1D"] = {
-					["name"] = "Aurisera-TwistingNether",
-					["guid"] = "Player-3674-0B1AFC1D",
-					["class"] = "EVOKER",
-					["cache_time"] = 1676952903,
-					["realm"] = "TwistingNether",
+				["Player-1615-0B21053F"] = {
+					["name"] = "ресокс-Ревущийфьорд",
+					["guid"] = "Player-1615-0B21053F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685740823,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-1329-0680E44E"] = {
 					["name"] = "Filiduttmage-Ravencrest",
@@ -19274,12 +19426,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677522488,
 					["realm"] = "Ravencrest",
 				},
-				["Player-581-0A738916"] = {
-					["name"] = "Miosan-Blackrock",
-					["guid"] = "Player-581-0A738916",
-					["class"] = "MONK",
-					["cache_time"] = 1684218174,
-					["realm"] = "Blackrock",
+				["Player-580-09E8EDEE"] = {
+					["name"] = "Blutrót-Blackmoore",
+					["guid"] = "Player-580-09E8EDEE",
+					["class"] = "ROGUE",
+					["cache_time"] = 1687961749,
+					["realm"] = "Blackmoore",
 				},
 				["Player-1302-0C4E3F45"] = {
 					["name"] = "Feylor-Archimonde",
@@ -19295,40 +19447,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686121310,
 					["realm"] = "Blackhand",
 				},
-				["Player-1084-092EDDCF"] = {
-					["name"] = "Kappadinho-TarrenMill",
-					["guid"] = "Player-1084-092EDDCF",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1689698521,
-					["realm"] = "TarrenMill",
+				["Player-3691-0A2986AE"] = {
+					["name"] = "Qrwaatotem-Blackhand",
+					["guid"] = "Player-3691-0A2986AE",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1713977460,
+					["realm"] = "Blackhand",
 				},
-				["Player-1379-0AD5574C"] = {
-					["name"] = "Iyio-Sanguino",
-					["guid"] = "Player-1379-0AD5574C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687949273,
+				["Player-1390-0B260813"] = {
+					["name"] = "Brunimonde-Hyjal",
+					["guid"] = "Player-1390-0B260813",
+					["class"] = "MAGE",
+					["cache_time"] = 1676973948,
+					["realm"] = "Hyjal",
+				},
+				["Player-1379-0AC74D70"] = {
+					["name"] = "Shinaloa-Sanguino",
+					["guid"] = "Player-1379-0AC74D70",
+					["class"] = "MONK",
+					["cache_time"] = 1676973948,
 					["realm"] = "Sanguino",
 				},
-				["Player-1084-098AD01E"] = {
-					["name"] = "Hexagram-TarrenMill",
-					["guid"] = "Player-1084-098AD01E",
+				["Player-3691-0A02A5C0"] = {
+					["name"] = "Holzon-Blackhand",
+					["guid"] = "Player-3691-0A02A5C0",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686687418,
+					["realm"] = "Blackhand",
+				},
+				["Player-1329-09CC2D95"] = {
+					["name"] = "åhnejulla-Ravencrest",
+					["guid"] = "Player-1329-09CC2D95",
 					["class"] = "PALADIN",
-					["cache_time"] = 1686605803,
-					["realm"] = "TarrenMill",
-				},
-				["Player-1097-06C4C435"] = {
-					["name"] = "Grafparty-Malorne",
-					["guid"] = "Player-1097-06C4C435",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1679861251,
-					["realm"] = "Malorne",
-				},
-				["Player-1403-0A70D56D"] = {
-					["name"] = "Wickedfap-Draenor",
-					["guid"] = "Player-1403-0A70D56D",
-					["class"] = "PRIEST",
-					["cache_time"] = 1685398638,
-					["realm"] = "Draenor",
+					["cache_time"] = 1679747022,
+					["realm"] = "Ravencrest",
 				},
 				["Player-1084-0A54898C"] = {
 					["name"] = "Simbaheal-TarrenMill",
@@ -19344,39 +19496,35 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685781186,
 					["realm"] = "C'Thun",
 				},
-				["Player-1403-0A5A74BC"] = {
-					["name"] = "Shays-Draenor",
-					["guid"] = "Player-1403-0A5A74BC",
-					["class"] = "EVOKER",
-					["cache_time"] = 1676144825,
-					["realm"] = "Draenor",
-				},
-				["Player-1403-0A68E53B"] = {
-					["ilvl"] = 419.125,
-					["guid"] = "Player-1403-0A68E53B",
-					["class"] = "DEMONHUNTER",
-					["rank"] = "Unguilded",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1680695598,
-					["name"] = "Zvet-Draenor",
-					["enchanter"] = true,
-					["specID"] = 577,
-					["enchantingLvl"] = 105,
-					["realm"] = "Draenor",
-				},
-				["Player-3702-07C9C032"] = {
-					["name"] = "Frassle-ArgentDawn",
-					["guid"] = "Player-3702-07C9C032",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685745494,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-3682-098BDB1B"] = {
-					["name"] = "Marcipan-Ragnaros",
-					["guid"] = "Player-3682-098BDB1B",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686121310,
+				["Player-3682-0A6EE216"] = {
+					["name"] = "Nuurii-Ragnaros",
+					["guid"] = "Player-3682-0A6EE216",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676372636,
 					["realm"] = "Ragnaros",
+				},
+				["Player-1329-09D4AFB4"] = {
+					["name"] = "Filiduttkatt-Ravencrest",
+					["guid"] = "Player-1329-09D4AFB4",
+					["class"] = "DRUID",
+					["cache_time"] = 1677521837,
+					["realm"] = "Ravencrest",
+				},
+				["Player-3656-0A8F72C5"] = {
+					["name"] = "Depsimestari-Stormreaver",
+					["guid"] = "Player-3656-0A8F72C5",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676377737,
+					["realm"] = "Stormreaver",
+				},
+				["Player-3674-0AB824CD"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Deathbsnusnu-TwistingNether",
+					["guid"] = "Player-3674-0AB824CD",
+					["realm"] = "TwistingNether",
+					["class"] = "ROGUE",
+					["cache_time"] = 1686184517,
+					["rank"] = "Unguilded",
 				},
 				["Player-1084-0A5FEC5F"] = {
 					["name"] = "Ollorin-TarrenMill",
@@ -19385,26 +19533,36 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685874644,
 					["realm"] = "TarrenMill",
 				},
-				["Player-3674-0A88CDB7"] = {
-					["name"] = "Madinwarlock-TwistingNether",
-					["guid"] = "Player-3674-0A88CDB7",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1675782439,
-					["realm"] = "TwistingNether",
+				["Player-3702-07C9C032"] = {
+					["name"] = "Frassle-ArgentDawn",
+					["guid"] = "Player-3702-07C9C032",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685745494,
+					["realm"] = "ArgentDawn",
 				},
-				["Player-1403-0A53B27A"] = {
-					["name"] = "Mavedrag-Draenor",
-					["guid"] = "Player-1403-0A53B27A",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689855648,
-					["realm"] = "Draenor",
+				["Player-3713-0AD80FCF"] = {
+					["ilvl"] = 414.8125,
+					["guid"] = "Player-3713-0AD80FCF",
+					["class"] = "DEATHKNIGHT",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1677515492,
+					["rank"] = "Swieza Krew",
+					["name"] = "Leonorek-BurningLegion",
+					["specID"] = 252,
+					["enchantingLvl"] = 0,
+					["realm"] = "BurningLegion",
 				},
-				["Player-1305-0C8D3661"] = {
-					["name"] = "àdrian-Kazzak",
-					["guid"] = "Player-1305-0C8D3661",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1683965309,
-					["realm"] = "Kazzak",
+				["Player-1084-0AA3352A"] = {
+					["ilvl"] = 445.125,
+					["guid"] = "Player-1084-0AA3352A",
+					["class"] = "HUNTER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1690403443,
+					["rank"] = "Trial",
+					["name"] = "Amenía-TarrenMill",
+					["specID"] = 254,
+					["enchantingLvl"] = 0,
+					["realm"] = "TarrenMill",
 				},
 				["Player-3674-0AB9BFE6"] = {
 					["name"] = "Discopino-TwistingNether",
@@ -19413,12 +19571,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689677222,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3691-0A02A5C0"] = {
-					["name"] = "Holzon-Blackhand",
-					["guid"] = "Player-3691-0A02A5C0",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686687418,
-					["realm"] = "Blackhand",
+				["Player-1305-0C2777B4"] = {
+					["name"] = "Qivectimus-Kazzak",
+					["guid"] = "Player-1305-0C2777B4",
+					["class"] = "MAGE",
+					["cache_time"] = 1686121310,
+					["realm"] = "Kazzak",
 				},
 				["Player-1615-0AB5B1AC"] = {
 					["name"] = "инбарлави-Ревущийфьорд",
@@ -19434,19 +19592,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677073121,
 					["realm"] = "Draenor",
 				},
-				["Player-1329-09CC2D95"] = {
-					["name"] = "åhnejulla-Ravencrest",
-					["guid"] = "Player-1329-09CC2D95",
+				["Player-3391-0C90E349"] = {
+					["name"] = "Tukiiz-Silvermoon",
+					["guid"] = "Player-3391-0C90E349",
 					["class"] = "PALADIN",
-					["cache_time"] = 1679747022,
-					["realm"] = "Ravencrest",
+					["cache_time"] = 1685534275,
+					["realm"] = "Silvermoon",
 				},
-				["Player-1621-0B1CF343"] = {
-					["name"] = "Sslaah-MarécagedeZangar",
-					["guid"] = "Player-1621-0B1CF343",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1678778036,
-					["realm"] = "MarécagedeZangar",
+				["Player-512-08271455"] = {
+					["name"] = "Minachips-Kael'thas",
+					["guid"] = "Player-512-08271455",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684413259,
+					["realm"] = "Kael'thas",
 				},
 				["Player-1396-0AE6474D"] = {
 					["name"] = "Shadowehsan-AzjolNerub",
@@ -19455,12 +19613,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687157922,
 					["realm"] = "AzjolNerub",
 				},
-				["Player-1403-054D88EB"] = {
-					["name"] = "Toby-Draenor",
-					["guid"] = "Player-1403-054D88EB",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684926332,
-					["realm"] = "Draenor",
+				["Player-1615-0A7755CD"] = {
+					["name"] = "креветулечка-Ревущийфьорд",
+					["guid"] = "Player-1615-0A7755CD",
+					["class"] = "MONK",
+					["cache_time"] = 1689804288,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3692-09F90E7F"] = {
 					["name"] = "Snowboh-Eredar",
@@ -19469,12 +19627,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689270799,
 					["realm"] = "Eredar",
 				},
-				["Player-3681-08DDD8ED"] = {
-					["name"] = "Nekasidin-Magtheridon",
-					["guid"] = "Player-3681-08DDD8ED",
-					["class"] = "PALADIN",
-					["cache_time"] = 1688687270,
-					["realm"] = "Magtheridon",
+				["Player-3657-0A2438DD"] = {
+					["name"] = "Alli-Neptulon",
+					["guid"] = "Player-3657-0A2438DD",
+					["class"] = "PRIEST",
+					["cache_time"] = 1690056758,
+					["realm"] = "Neptulon",
 				},
 				["Player-1305-0C923D5D"] = {
 					["name"] = "Triggeréd-Kazzak",
@@ -19490,12 +19648,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689352223,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1329-09C364CF"] = {
-					["name"] = "Mehix-Ravencrest",
-					["guid"] = "Player-1329-09C364CF",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1680218725,
-					["realm"] = "Ravencrest",
+				["Player-1092-0A956B5C"] = {
+					["name"] = "Konylka-Drak'thul",
+					["guid"] = "Player-1092-0A956B5C",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686754973,
+					["realm"] = "Drak'thul",
 				},
 				["Player-1417-070BE438"] = {
 					["name"] = "Mjoz-Azuremyst",
@@ -19511,26 +19669,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676079047,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3703-04D7391A"] = {
-					["name"] = "Aerîon-Frostwolf",
-					["guid"] = "Player-3703-04D7391A",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686196330,
-					["realm"] = "Frostwolf",
+				["Player-1390-0BEB3939"] = {
+					["name"] = "Chléøs-Hyjal",
+					["guid"] = "Player-1390-0BEB3939",
+					["class"] = "HUNTER",
+					["cache_time"] = 1679747022,
+					["realm"] = "Hyjal",
 				},
-				["Player-1329-099EE51B"] = {
-					["name"] = "Deathsu-Ravencrest",
-					["guid"] = "Player-1329-099EE51B",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1677333500,
+				["Player-1329-09FC6A1E"] = {
+					["name"] = "Hunger-Ravencrest",
+					["guid"] = "Player-1329-09FC6A1E",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1684569933,
 					["realm"] = "Ravencrest",
 				},
-				["Player-3657-0ADB8339"] = {
-					["name"] = "Ellaer-Darksorrow",
-					["guid"] = "Player-3657-0ADB8339",
-					["class"] = "PRIEST",
-					["cache_time"] = 1676768222,
-					["realm"] = "Darksorrow",
+				["Player-3691-09FB5FD8"] = {
+					["name"] = "Trottor-Blackhand",
+					["guid"] = "Player-3691-09FB5FD8",
+					["class"] = "HUNTER",
+					["cache_time"] = 1678894799,
+					["realm"] = "Blackhand",
 				},
 				["Player-3391-0C86F2D6"] = {
 					["name"] = "Redoomer-Silvermoon",
@@ -19539,26 +19697,28 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690305151,
 					["realm"] = "Silvermoon",
 				},
-				["Player-3674-0AE430AF"] = {
-					["name"] = "Viggøs-TwistingNether",
-					["guid"] = "Player-3674-0AE430AF",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1677665404,
-					["realm"] = "TwistingNether",
+				["Player-1092-0A8E6944"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Turbone-BurningBlade",
+					["guid"] = "Player-1092-0A8E6944",
+					["rank"] = "Novácek",
+					["class"] = "ROGUE",
+					["cache_time"] = 1676387096,
+					["realm"] = "BurningBlade",
 				},
-				["Player-1604-0E962C2B"] = {
-					["name"] = "цветочик-СвежевательДуш",
-					["guid"] = "Player-1604-0E962C2B",
-					["class"] = "DRUID",
-					["cache_time"] = 1676078692,
-					["realm"] = "СвежевательДуш",
+				["Player-3656-04F193E3"] = {
+					["name"] = "Omgifoundyou-Vashj",
+					["guid"] = "Player-3656-04F193E3",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687949013,
+					["realm"] = "Vashj",
 				},
-				["Player-1316-0564FFCD"] = {
-					["name"] = "Quando-Nemesis",
-					["guid"] = "Player-1316-0564FFCD",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676973948,
-					["realm"] = "Nemesis",
+				["Player-1384-098B518B"] = {
+					["name"] = "Chimueló-Tyrande",
+					["guid"] = "Player-1384-098B518B",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676338183,
+					["realm"] = "Tyrande",
 				},
 				["Player-3713-0AC03220"] = {
 					["name"] = "Wamu-BurningLegion",
@@ -19574,19 +19734,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680754040,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1302-0C83B371"] = {
-					["name"] = "åplüs-Archimonde",
-					["guid"] = "Player-1302-0C83B371",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1684203016,
-					["realm"] = "Archimonde",
+				["Player-1587-0F58981A"] = {
+					["name"] = "Nyilazoltán-Arathor",
+					["guid"] = "Player-1587-0F58981A",
+					["class"] = "HUNTER",
+					["cache_time"] = 1685740823,
+					["realm"] = "Arathor",
 				},
-				["Player-1615-0579CB60"] = {
-					["name"] = "бабабревно-Ревущийфьорд",
-					["guid"] = "Player-1615-0579CB60",
-					["class"] = "DRUID",
-					["cache_time"] = 1676444247,
-					["realm"] = "Ревущийфьорд",
+				["Player-3682-0B19EC37"] = {
+					["ilvl"] = 409.0625,
+					["guid"] = "Player-3682-0B19EC37",
+					["class"] = "MONK",
+					["role"] = "TANK",
+					["cache_time"] = 1679952487,
+					["realm"] = "Ragnaros",
+					["name"] = "Qubit-Ragnaros",
+					["specID"] = 268,
+					["enchantingLvl"] = 0,
+					["rank"] = "Alt",
 				},
 				["Player-3681-0ADBC10F"] = {
 					["name"] = "Litoprot-Magtheridon",
@@ -19595,12 +19760,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676973948,
 					["realm"] = "Magtheridon",
 				},
-				["Player-3691-05C654B7"] = {
-					["name"] = "Archímedes-Blackhand",
-					["guid"] = "Player-3691-05C654B7",
-					["class"] = "PRIEST",
-					["cache_time"] = 1676647023,
-					["realm"] = "Blackhand",
+				["Player-1587-072EC0E3"] = {
+					["name"] = "Itsvalling-Arathor",
+					["guid"] = "Player-1587-072EC0E3",
+					["class"] = "DRUID",
+					["cache_time"] = 1688303691,
+					["realm"] = "Arathor",
 				},
 				["Player-578-0946AA05"] = {
 					["name"] = "Keelgarr-Durotan",
@@ -19616,12 +19781,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679506666,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1390-0BEB3939"] = {
-					["name"] = "Chléøs-Hyjal",
-					["guid"] = "Player-1390-0BEB3939",
-					["class"] = "HUNTER",
-					["cache_time"] = 1679747022,
-					["realm"] = "Hyjal",
+				["Player-1084-0A461A7D"] = {
+					["name"] = "Madharvester-TarrenMill",
+					["guid"] = "Player-1084-0A461A7D",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1680139732,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1302-0C899FF0"] = {
 					["name"] = "Parrudor-Archimonde",
@@ -19630,47 +19795,53 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685397111,
 					["realm"] = "Archimonde",
 				},
-				["Player-3691-0709D594"] = {
-					["name"] = "Ascobøl-Blackhand",
-					["guid"] = "Player-3691-0709D594",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1689339567,
-					["realm"] = "Blackhand",
-				},
-				["Player-3691-09FB5FD8"] = {
-					["name"] = "Trottor-Blackhand",
-					["guid"] = "Player-3691-09FB5FD8",
-					["class"] = "HUNTER",
-					["cache_time"] = 1678894799,
-					["realm"] = "Blackhand",
-				},
-				["Player-1390-0C3D4E40"] = {
-					["name"] = "Heyer-Hyjal",
-					["guid"] = "Player-1390-0C3D4E40",
+				["Player-3682-0AA2B1F5"] = {
+					["ilvl"] = 409.625,
+					["guid"] = "Player-3682-0AA2B1F5",
 					["class"] = "WARLOCK",
-					["cache_time"] = 1680437946,
-					["realm"] = "Hyjal",
+					["realm"] = "Ragnaros",
+					["role"] = "DAMAGER",
+					["name"] = "Tattz-Ragnaros",
+					["cache_time"] = 1678912228,
+					["specID"] = 267,
+					["enchanter"] = true,
+					["enchantingLvl"] = 97,
+					["rank"] = "Trial",
 				},
-				["Player-2073-09CCDD02"] = {
-					["name"] = "Furydream-Stormscale",
-					["guid"] = "Player-2073-09CCDD02",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1680483861,
-					["realm"] = "Stormscale",
+				["Player-3391-0C53DFAE"] = {
+					["name"] = "Xîuhcoatl-Silvermoon",
+					["guid"] = "Player-3391-0C53DFAE",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676797643,
+					["realm"] = "Silvermoon",
 				},
-				["Player-3691-09C79F3F"] = {
-					["name"] = "Anirael-Blackhand",
-					["guid"] = "Player-3691-09C79F3F",
+				["Player-1305-05BD8DA6"] = {
+					["name"] = "Windzi-Kazzak",
+					["guid"] = "Player-1305-05BD8DA6",
+					["class"] = "ROGUE",
+					["cache_time"] = 1680292466,
+					["realm"] = "Kazzak",
+				},
+				["Player-1096-0855519F"] = {
+					["name"] = "Borp-DefiasBrotherhood",
+					["guid"] = "Player-1096-0855519F",
+					["class"] = "MAGE",
+					["cache_time"] = 1678458531,
+					["realm"] = "DefiasBrotherhood",
+				},
+				["Player-1305-0C572B9F"] = {
+					["name"] = "Thu-Kazzak",
+					["guid"] = "Player-1305-0C572B9F",
 					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1685398638,
-					["realm"] = "Blackhand",
+					["cache_time"] = 1680218725,
+					["realm"] = "Kazzak",
 				},
-				["Player-580-0A6FD1FE"] = {
-					["name"] = "Nîkaprego-Blackmoore",
-					["guid"] = "Player-580-0A6FD1FE",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1680262695,
-					["realm"] = "Blackmoore",
+				["Player-1378-004F7F98"] = {
+					["name"] = "Kelturah-DunModr",
+					["guid"] = "Player-1378-004F7F98",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1683073477,
+					["realm"] = "DunModr",
 				},
 				["Player-3682-0AA2160B"] = {
 					["name"] = "Mábashí-Ragnaros",
@@ -19679,20 +19850,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689281451,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1587-0F58981A"] = {
-					["name"] = "Nyilazoltán-Arathor",
-					["guid"] = "Player-1587-0F58981A",
-					["class"] = "HUNTER",
-					["cache_time"] = 1685740823,
-					["realm"] = "Arathor",
-				},
-				["Player-3686-09647B8F"] = {
-					["name"] = "Kaischi-Antonidas",
-					["guid"] = "Player-3686-09647B8F",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1685393886,
-					["realm"] = "Antonidas",
-				},
 				["Player-1615-0B0BCB96"] = {
 					["name"] = "материон-Ревущийфьорд",
 					["guid"] = "Player-1615-0B0BCB96",
@@ -19700,75 +19857,89 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686754263,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3674-0AF614FD"] = {
-					["name"] = "Caprîestsun-TwistingNether",
-					["guid"] = "Player-3674-0AF614FD",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687157922,
-					["realm"] = "TwistingNether",
+				["Player-1928-0454D1D9"] = {
+					["name"] = "йоказуна-Голдринн",
+					["guid"] = "Player-1928-0454D1D9",
+					["class"] = "PALADIN",
+					["cache_time"] = 1675869700,
+					["realm"] = "Голдринн",
 				},
-				["Player-1929-0EFA2E9A"] = {
-					["name"] = "катанадэмон-ЧерныйШрам",
-					["guid"] = "Player-1929-0EFA2E9A",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1678628555,
-					["realm"] = "ЧерныйШрам",
+				["Player-1602-0F27097B"] = {
+					["name"] = "наглаямакака-Гордунни",
+					["guid"] = "Player-1602-0F27097B",
+					["class"] = "MAGE",
+					["cache_time"] = 1678766041,
+					["realm"] = "Гордунни",
 				},
-				["Player-1390-0C55B9D9"] = {
-					["name"] = "Nythog-Hyjal",
-					["guid"] = "Player-1390-0C55B9D9",
-					["class"] = "EVOKER",
-					["cache_time"] = 1676311312,
-					["realm"] = "Hyjal",
-				},
-				["Player-1309-0AA9ED6E"] = {
-					["name"] = "Areidhel-Pozzodell'Eternità",
-					["guid"] = "Player-1309-0AA9ED6E",
-					["class"] = "DRUID",
-					["cache_time"] = 1679415375,
-					["realm"] = "Pozzodell'Eternità",
-				},
-				["Player-1084-0A6C253C"] = {
-					["name"] = "Nantus-TarrenMill",
-					["guid"] = "Player-1084-0A6C253C",
+				["Player-3692-09AEE02B"] = {
+					["name"] = "Knaertzel-Eredar",
+					["guid"] = "Player-3692-09AEE02B",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1676502766,
-					["realm"] = "TarrenMill",
-				},
-				["Player-581-07B0F01F"] = {
-					["name"] = "Smîck-Blackrock",
-					["guid"] = "Player-581-07B0F01F",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1677607044,
-					["realm"] = "Blackrock",
-				},
-				["Player-1305-0C80F3F5"] = {
-					["name"] = "Liglig-Kazzak",
-					["guid"] = "Player-1305-0C80F3F5",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676955286,
-					["realm"] = "Kazzak",
-				},
-				["Player-3692-09E3060E"] = {
-					["name"] = "Ralphi-Eredar",
-					["guid"] = "Player-3692-09E3060E",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676439596,
+					["cache_time"] = 1685393886,
 					["realm"] = "Eredar",
 				},
-				["Player-1084-0A23AE2A"] = {
-					["name"] = "Nezukô-TarrenMill",
-					["guid"] = "Player-1084-0A23AE2A",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1689395307,
+				["Player-1084-0A8478A8"] = {
+					["name"] = "Drakepumpa-TarrenMill",
+					["guid"] = "Player-1084-0A8478A8",
+					["class"] = "EVOKER",
+					["cache_time"] = 1680290994,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1092-0158521B"] = {
-					["name"] = "Icenova-Drak'thul",
-					["guid"] = "Player-1092-0158521B",
-					["class"] = "MAGE",
-					["cache_time"] = 1680421947,
+				["Player-1084-0A3927EB"] = {
+					["name"] = "Rickyjo-TarrenMill",
+					["guid"] = "Player-1084-0A3927EB",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677322749,
+					["realm"] = "TarrenMill",
+				},
+				["Player-1092-07F7ED64"] = {
+					["name"] = "Hemly-Drak'thul",
+					["guid"] = "Player-1092-07F7ED64",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1678126084,
 					["realm"] = "Drak'thul",
+				},
+				["Player-3682-0A567F6A"] = {
+					["name"] = "Vallgar-Ragnaros",
+					["guid"] = "Player-3682-0A567F6A",
+					["class"] = "HUNTER",
+					["cache_time"] = 1688671393,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1105-08336222"] = {
+					["name"] = "Yamà-Nazjatar",
+					["guid"] = "Player-1105-08336222",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1676785859,
+					["realm"] = "Nazjatar",
+				},
+				["Player-1379-0A9FC242"] = {
+					["name"] = "Drakmanu-Sanguino",
+					["guid"] = "Player-1379-0A9FC242",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1685539218,
+					["realm"] = "Sanguino",
+				},
+				["Player-3674-0B09C400"] = {
+					["name"] = "Dadwink-TwistingNether",
+					["guid"] = "Player-3674-0B09C400",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689677222,
+					["realm"] = "TwistingNether",
+				},
+				["Player-581-083D7B7A"] = {
+					["name"] = "Braknar-Blackrock",
+					["guid"] = "Player-581-083D7B7A",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1678640480,
+					["realm"] = "Blackrock",
+				},
+				["Player-1309-0C2672AA"] = {
+					["name"] = "Shog-Pozzodell'Eternità",
+					["guid"] = "Player-1309-0C2672AA",
+					["class"] = "MAGE",
+					["cache_time"] = 1680258337,
+					["realm"] = "Pozzodell'Eternità",
 				},
 				["Player-3686-09C0656B"] = {
 					["ilvl"] = 435.6875,
@@ -19776,71 +19947,60 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1686126505,
-					["rank"] = "Social",
+					["realm"] = "Antonidas",
 					["name"] = "Silversonic-Antonidas",
 					["specID"] = 70,
 					["enchantingLvl"] = 0,
-					["realm"] = "Antonidas",
+					["rank"] = "Social",
 				},
-				["Player-3674-0B19DB8C"] = {
-					["name"] = "Pelaboy-TwistingNether",
-					["guid"] = "Player-3674-0B19DB8C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676957174,
+				["Player-1302-066822CC"] = {
+					["name"] = "Jhinbo-Archimonde",
+					["guid"] = "Player-1302-066822CC",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1677106953,
+					["realm"] = "Archimonde",
+				},
+				["Player-3674-0AF2703A"] = {
+					["name"] = "Bigexecutie-TwistingNether",
+					["guid"] = "Player-3674-0AF2703A",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677339563,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3682-0B1FB0FD"] = {
-					["name"] = "Qpew-Ragnaros",
-					["guid"] = "Player-3682-0B1FB0FD",
-					["class"] = "HUNTER",
-					["cache_time"] = 1680236701,
-					["realm"] = "Ragnaros",
+				["Player-580-0A723F71"] = {
+					["name"] = "Antíí-Blackmoore",
+					["guid"] = "Player-580-0A723F71",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685837361,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1379-0AA1A32B"] = {
-					["name"] = "Yokosenpai-Sanguino",
-					["guid"] = "Player-1379-0AA1A32B",
-					["class"] = "MAGE",
-					["cache_time"] = 1684926971,
-					["realm"] = "Sanguino",
+				["Player-1096-09C75365"] = {
+					["name"] = "Pasco-DefiasBrotherhood",
+					["guid"] = "Player-1096-09C75365",
+					["class"] = "PRIEST",
+					["cache_time"] = 1713977460,
+					["realm"] = "DefiasBrotherhood",
 				},
-				["Player-3391-0B7CF249"] = {
-					["name"] = "Víctór-Silvermoon",
-					["guid"] = "Player-3391-0B7CF249",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676465368,
-					["realm"] = "Silvermoon",
+				["Player-1084-0A7A961D"] = {
+					["name"] = "Ajoz-TarrenMill",
+					["guid"] = "Player-1084-0A7A961D",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677395628,
+					["realm"] = "TarrenMill",
 				},
-				["Player-3682-0B2105ED"] = {
-					["ilvl"] = 433.1875,
-					["guid"] = "Player-3682-0B2105ED",
-					["class"] = "WARLOCK",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1686170267,
-					["realm"] = "Ragnaros",
-					["name"] = "Moglocked-Ragnaros",
-					["specID"] = 266,
-					["enchantingLvl"] = 0,
-					["rank"] = "Recruiter",
-				},
-				["Player-1305-0C85E41F"] = {
-					["name"] = "Osamodas-Kazzak",
-					["guid"] = "Player-1305-0C85E41F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1684502528,
+				["Player-1305-0C82BF78"] = {
+					["name"] = "àgentgirl-Kazzak",
+					["guid"] = "Player-1305-0C82BF78",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684501707,
 					["realm"] = "Kazzak",
 				},
-				["Player-2073-09F87F47"] = {
-					["ilvl"] = 416.5625,
-					["guid"] = "Player-2073-09F87F47",
-					["class"] = "ROGUE",
-					["realm"] = "Stormscale",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1678481387,
-					["name"] = "Stabbynick-Stormscale",
-					["specID"] = 261,
-					["enchanter"] = true,
-					["enchantingLvl"] = 67,
-					["rank"] = "Unguilded",
+				["Player-3674-0B26863D"] = {
+					["name"] = "Bábíer-TwistingNether",
+					["guid"] = "Player-3674-0B26863D",
+					["class"] = "PRIEST",
+					["cache_time"] = 1685305181,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1084-0A49D2A4"] = {
 					["ilvl"] = 419.5,
@@ -19848,18 +20008,18 @@ RCLootCouncilDB = {
 					["class"] = "DRUID",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680262695,
-					["realm"] = "TarrenMill",
+					["rank"] = "Raider",
 					["name"] = "Boomkek-TarrenMill",
 					["specID"] = 102,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "TarrenMill",
 				},
-				["Player-1597-0D0020AA"] = {
-					["name"] = "Beelii-Sylvanas",
-					["guid"] = "Player-1597-0D0020AA",
-					["class"] = "MAGE",
-					["cache_time"] = 1676335902,
-					["realm"] = "Sylvanas",
+				["Player-1390-06D343B0"] = {
+					["name"] = "Fenum-Hyjal",
+					["guid"] = "Player-1390-06D343B0",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676973948,
+					["realm"] = "Hyjal",
 				},
 				["Player-3690-0AF32B59"] = {
 					["name"] = "Arhaam-KhazModan",
@@ -19896,12 +20056,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678374238,
 					["realm"] = "Outland",
 				},
-				["Player-1378-004F7F98"] = {
-					["name"] = "Kelturah-DunModr",
-					["guid"] = "Player-1378-004F7F98",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1683073477,
-					["realm"] = "DunModr",
+				["Player-1604-09B9D2AD"] = {
+					["name"] = "гольфштерн-СвежевательДуш",
+					["guid"] = "Player-1604-09B9D2AD",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684052763,
+					["realm"] = "СвежевательДуш",
 				},
 				["Player-531-04E5D622"] = {
 					["name"] = "Heilkuh-Onyxia",
@@ -19910,11 +20070,11 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676372636,
 					["realm"] = "Onyxia",
 				},
-				["Player-1305-0B351875"] = {
-					["name"] = "Ultrabolts-Kazzak",
-					["guid"] = "Player-1305-0B351875",
+				["Player-1305-0C452F39"] = {
+					["name"] = "Zitlock-Kazzak",
+					["guid"] = "Player-1305-0C452F39",
 					["class"] = "WARLOCK",
-					["cache_time"] = 1688983952,
+					["cache_time"] = 1684566068,
 					["realm"] = "Kazzak",
 				},
 				["Player-531-05A92275"] = {
@@ -19938,19 +20098,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680708830,
 					["realm"] = "Kazzak",
 				},
-				["Player-1084-0A7A961D"] = {
-					["name"] = "Ajoz-TarrenMill",
-					["guid"] = "Player-1084-0A7A961D",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677395628,
-					["realm"] = "TarrenMill",
+				["Player-1302-0C522719"] = {
+					["name"] = "Erbag-Archimonde",
+					["guid"] = "Player-1302-0C522719",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1676372636,
+					["realm"] = "Archimonde",
 				},
-				["Player-1335-06B845A1"] = {
-					["name"] = "Papinius-Ysondre",
-					["guid"] = "Player-1335-06B845A1",
-					["class"] = "MONK",
-					["cache_time"] = 1689346075,
-					["realm"] = "Ysondre",
+				["Player-3686-09E377C2"] = {
+					["name"] = "Mînoque-Antonidas",
+					["guid"] = "Player-3686-09E377C2",
+					["class"] = "HUNTER",
+					["cache_time"] = 1680431963,
+					["realm"] = "Antonidas",
 				},
 				["Player-1303-07953D1D"] = {
 					["name"] = "Manåu-Aggra(Português)",
@@ -19959,19 +20119,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676520404,
 					["realm"] = "Aggra(Português)",
 				},
-				["Player-1604-0F063C3E"] = {
-					["name"] = "касторий-СвежевательДуш",
-					["guid"] = "Player-1604-0F063C3E",
-					["class"] = "MAGE",
-					["cache_time"] = 1676973948,
-					["realm"] = "СвежевательДуш",
+				["Player-1307-0C8F5C3B"] = {
+					["name"] = "Ravenbell-ChamberofAspects",
+					["guid"] = "Player-1307-0C8F5C3B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687956237,
+					["realm"] = "ChamberofAspects",
 				},
-				["Player-1096-098F98AD"] = {
-					["name"] = "Kronblom-EarthenRing",
-					["guid"] = "Player-1096-098F98AD",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1678729942,
-					["realm"] = "EarthenRing",
+				["Player-3682-0B1A2316"] = {
+					["ilvl"] = 416.75,
+					["guid"] = "Player-3682-0B1A2316",
+					["class"] = "DEMONHUNTER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1686044481,
+					["rank"] = "Raider",
+					["name"] = "Chaosbrìnger-Ragnaros",
+					["specID"] = 577,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1329-09EB493A"] = {
 					["name"] = "Lukzus-Ravencrest",
@@ -19980,12 +20145,17 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685491336,
 					["realm"] = "Ravencrest",
 				},
-				["Player-570-05B51F84"] = {
-					["name"] = "Everend-Baelgun",
-					["guid"] = "Player-570-05B51F84",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1689290162,
-					["realm"] = "Baelgun",
+				["Player-3682-0B262FDE"] = {
+					["ilvl"] = 446.5,
+					["guid"] = "Player-3682-0B262FDE",
+					["class"] = "EVOKER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1689281451,
+					["rank"] = "Raider",
+					["name"] = "çakey-Ragnaros",
+					["specID"] = 1467,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1390-0C066A5D"] = {
 					["name"] = "Samw-Hyjal",
@@ -19994,26 +20164,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688983867,
 					["realm"] = "Hyjal",
 				},
-				["Player-1084-0A8E0FFE"] = {
-					["name"] = "Failproof-TarrenMill",
-					["guid"] = "Player-1084-0A8E0FFE",
-					["class"] = "MAGE",
-					["cache_time"] = 1676768222,
-					["realm"] = "TarrenMill",
-				},
-				["Player-3682-05C7EE38"] = {
-					["name"] = "Dipzz-Ragnaros",
-					["guid"] = "Player-3682-05C7EE38",
+				["Player-1329-09F7ADCB"] = {
+					["name"] = "Frukostboll-Ravencrest",
+					["guid"] = "Player-1329-09F7ADCB",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1678714910,
-					["realm"] = "Ragnaros",
+					["cache_time"] = 1677110266,
+					["realm"] = "Ravencrest",
 				},
-				["Player-3713-07131E61"] = {
-					["name"] = "Kosimazaki-BurningLegion",
-					["guid"] = "Player-3713-07131E61",
-					["class"] = "DRUID",
-					["cache_time"] = 1680139732,
-					["realm"] = "BurningLegion",
+				["Player-1928-0819AF31"] = {
+					["name"] = "хоризма-Голдринн",
+					["guid"] = "Player-1928-0819AF31",
+					["class"] = "MONK",
+					["cache_time"] = 1688985357,
+					["realm"] = "Голдринн",
+				},
+				["Player-1390-0AF63C1B"] = {
+					["name"] = "Sûnder-Hyjal",
+					["guid"] = "Player-1390-0AF63C1B",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1690483124,
+					["realm"] = "Hyjal",
 				},
 				["Player-1615-092B0F08"] = {
 					["name"] = "баночкасечи-Ревущийфьорд",
@@ -20022,11 +20192,46 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684204457,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3674-0AF2703A"] = {
-					["name"] = "Bigexecutie-TwistingNether",
-					["guid"] = "Player-3674-0AF2703A",
+				["Player-1602-0F4CA135"] = {
+					["name"] = "дракздорму-Гордунни",
+					["guid"] = "Player-1602-0F4CA135",
+					["class"] = "EVOKER",
+					["cache_time"] = 1677110266,
+					["realm"] = "Гордунни",
+				},
+				["Player-1305-0C205D37"] = {
+					["name"] = "Nedtùr-Kazzak",
+					["guid"] = "Player-1305-0C205D37",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1686121310,
+					["realm"] = "Kazzak",
+				},
+				["Player-2073-0426B2C2"] = {
+					["name"] = "Icozy-Stormscale",
+					["guid"] = "Player-2073-0426B2C2",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1685780231,
+					["realm"] = "Stormscale",
+				},
+				["Player-3674-0B099A85"] = {
+					["name"] = "Immale-TwistingNether",
+					["guid"] = "Player-3674-0B099A85",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1677339563,
+					["cache_time"] = 1676960971,
+					["realm"] = "TwistingNether",
+				},
+				["Player-1403-0614E05A"] = {
+					["name"] = "Ziepoesnetni-Draenor",
+					["guid"] = "Player-1403-0614E05A",
+					["class"] = "DRUID",
+					["cache_time"] = 1689804288,
+					["realm"] = "Draenor",
+				},
+				["Player-3674-05A68E5C"] = {
+					["name"] = "Sisyus-TwistingNether",
+					["guid"] = "Player-3674-05A68E5C",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1685468704,
 					["realm"] = "TwistingNether",
 				},
 				["Player-1329-09755BD9"] = {
@@ -20036,95 +20241,65 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677524172,
 					["realm"] = "Ravencrest",
 				},
-				["Player-1390-0B89EB35"] = {
-					["name"] = "Giovanx-Hyjal",
-					["guid"] = "Player-1390-0B89EB35",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686000336,
-					["realm"] = "Hyjal",
-				},
-				["Player-3692-0516AB11"] = {
-					["name"] = "Rhannox-Eredar",
-					["guid"] = "Player-3692-0516AB11",
+				["Player-3686-09D9874F"] = {
+					["name"] = "Quweridon-Antonidas",
+					["guid"] = "Player-3686-09D9874F",
 					["class"] = "DRUID",
-					["cache_time"] = 1685048856,
-					["realm"] = "Eredar",
-				},
-				["Player-1587-0F2F9461"] = {
-					["name"] = "Nagyhus-Arathor",
-					["guid"] = "Player-1587-0F2F9461",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1685745460,
-					["realm"] = "Arathor",
-				},
-				["Player-3674-05A68E5C"] = {
-					["name"] = "Sisyus-TwistingNether",
-					["guid"] = "Player-3674-05A68E5C",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1685468704,
-					["realm"] = "TwistingNether",
-				},
-				["Player-3686-09E377C2"] = {
-					["name"] = "Mînoque-Antonidas",
-					["guid"] = "Player-3686-09E377C2",
-					["class"] = "HUNTER",
-					["cache_time"] = 1680431963,
+					["cache_time"] = 1689712190,
 					["realm"] = "Antonidas",
 				},
-				["Player-580-0A43492F"] = {
-					["name"] = "Cryka-Blackmoore",
-					["guid"] = "Player-580-0A43492F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1687949013,
-					["realm"] = "Blackmoore",
-				},
-				["Player-1604-0F0640DC"] = {
-					["name"] = "капучинно-СвежевательДуш",
-					["guid"] = "Player-1604-0F0640DC",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1686933987,
-					["realm"] = "СвежевательДуш",
-				},
-				["Player-3674-088E330E"] = {
-					["name"] = "Nemesisz-TwistingNether",
-					["guid"] = "Player-3674-088E330E",
+				["Player-1305-0C4DDE17"] = {
+					["name"] = "Buufu-Kazzak",
+					["guid"] = "Player-1305-0C4DDE17",
 					["class"] = "DRUID",
-					["cache_time"] = 1683809510,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1687248139,
+					["realm"] = "Kazzak",
 				},
-				["Player-1307-0C8F5C3B"] = {
-					["name"] = "Ravenbell-ChamberofAspects",
-					["guid"] = "Player-1307-0C8F5C3B",
+				["Player-1305-0B9D3594"] = {
+					["name"] = "Psymode-Kazzak",
+					["guid"] = "Player-1305-0B9D3594",
 					["class"] = "PRIEST",
-					["cache_time"] = 1687956237,
-					["realm"] = "ChamberofAspects",
+					["cache_time"] = 1687257934,
+					["realm"] = "Kazzak",
 				},
-				["Player-3691-09C723B4"] = {
-					["name"] = "Zaados-Blackhand",
-					["guid"] = "Player-3691-09C723B4",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1675869700,
-					["realm"] = "Blackhand",
+				["Player-580-0A732313"] = {
+					["ilvl"] = 438.75,
+					["guid"] = "Player-580-0A732313",
+					["class"] = "WARRIOR",
+					["role"] = "TANK",
+					["cache_time"] = 1686062777,
+					["realm"] = "Blackmoore",
+					["name"] = "Altøn-Blackmoore",
+					["specID"] = 73,
+					["enchantingLvl"] = 0,
+					["rank"] = "Raider",
+				},
+				["Player-1602-0C75EE8D"] = {
+					["name"] = "астрамара-Гордунни",
+					["guid"] = "Player-1602-0C75EE8D",
+					["class"] = "MAGE",
+					["cache_time"] = 1676354879,
+					["realm"] = "Гордунни",
 				},
 				["Player-3674-09A009DC"] = {
 					["ilvl"] = 402.625,
 					["guid"] = "Player-3674-09A009DC",
 					["class"] = "WARRIOR",
-					["realm"] = "TwistingNether",
+					["rank"] = "Raider Alt",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677072459,
 					["name"] = "Bravewolf-TwistingNether",
-					["specID"] = 71,
 					["enchanter"] = true,
+					["specID"] = 71,
 					["enchantingLvl"] = 45,
-					["rank"] = "Raider Alt",
+					["realm"] = "TwistingNether",
 				},
-				["Player-2074-0587D74C"] = {
-					["name"] = "Chunksblown-EmeraldDream",
-					["guid"] = "Player-2074-0587D74C",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687102801,
-					["realm"] = "EmeraldDream",
+				["Player-1408-0A4CCDCA"] = {
+					["name"] = "Driaris-DunMorogh",
+					["guid"] = "Player-1408-0A4CCDCA",
+					["class"] = "EVOKER",
+					["cache_time"] = 1679939195,
+					["realm"] = "DunMorogh",
 				},
 				["Player-1403-0677D169"] = {
 					["name"] = "Tautruß-Draenor",
@@ -20133,40 +20308,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686263765,
 					["realm"] = "Draenor",
 				},
-				["Player-1302-0C430837"] = {
-					["name"] = "Crowelle-Archimonde",
-					["guid"] = "Player-1302-0C430837",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676370489,
-					["realm"] = "Archimonde",
-				},
-				["Player-1621-0AE41BF6"] = {
-					["name"] = "Chyppy-Dalaran",
-					["guid"] = "Player-1621-0AE41BF6",
+				["Player-1604-093E2639"] = {
+					["name"] = "пандоёжик-СвежевательДуш",
+					["guid"] = "Player-1604-093E2639",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1689804288,
-					["realm"] = "Dalaran",
+					["cache_time"] = 1685864518,
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1390-0A4F495F"] = {
-					["name"] = "Asthélios-Hyjal",
-					["guid"] = "Player-1390-0A4F495F",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690121076,
-					["realm"] = "Hyjal",
+				["Player-1084-0A902537"] = {
+					["name"] = "Ashdrasil-TarrenMill",
+					["guid"] = "Player-1084-0A902537",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1679844347,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1302-0C7F499B"] = {
-					["name"] = "Neys-Archimonde",
-					["guid"] = "Player-1302-0C7F499B",
-					["class"] = "MAGE",
-					["cache_time"] = 1676387096,
-					["realm"] = "Archimonde",
+				["Player-3713-0719EFCE"] = {
+					["name"] = "Qrdu-BurningLegion",
+					["guid"] = "Player-3713-0719EFCE",
+					["class"] = "PALADIN",
+					["cache_time"] = 1680292466,
+					["realm"] = "BurningLegion",
 				},
-				["Player-1403-0734968B"] = {
-					["name"] = "Sebbwl-Draenor",
-					["guid"] = "Player-1403-0734968B",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676439596,
-					["realm"] = "Draenor",
+				["Player-1305-0C8D76D4"] = {
+					["name"] = "Bloodmournee-Kazzak",
+					["guid"] = "Player-1305-0C8D76D4",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687245813,
+					["realm"] = "Kazzak",
+				},
+				["Player-3703-09FFE232"] = {
+					["name"] = "Jacklsøn-Frostwolf",
+					["guid"] = "Player-3703-09FFE232",
+					["class"] = "ROGUE",
+					["cache_time"] = 1684417826,
+					["realm"] = "Frostwolf",
 				},
 				["Player-1378-0967D17E"] = {
 					["name"] = "Vexare-DunModr",
@@ -20175,19 +20350,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676479581,
 					["realm"] = "DunModr",
 				},
-				["Player-1084-07F602FB"] = {
-					["name"] = "Atzira-TarrenMill",
-					["guid"] = "Player-1084-07F602FB",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1685052602,
-					["realm"] = "TarrenMill",
+				["Player-3682-0B15D86C"] = {
+					["name"] = "Rîz-Ragnaros",
+					["guid"] = "Player-3682-0B15D86C",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676369902,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1302-0C522719"] = {
-					["name"] = "Erbag-Archimonde",
-					["guid"] = "Player-1302-0C522719",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676372636,
-					["realm"] = "Archimonde",
+				["Player-1305-0C88DC6F"] = {
+					["ilvl"] = 365.6875,
+					["guid"] = "Player-1305-0C88DC6F",
+					["class"] = "PALADIN",
+					["role"] = "TANK",
+					["name"] = "Cowmuu-Kazzak",
+					["rank"] = "Unguilded",
+					["cache_time"] = 1680436995,
+					["specID"] = 66,
+					["enchantingLvl"] = 0,
+					["realm"] = "Kazzak",
 				},
 				["Player-3681-0AACFEC3"] = {
 					["name"] = "Linaa-Magtheridon",
@@ -20217,47 +20397,52 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677321823,
 					["realm"] = "GrimBatol",
 				},
-				["Player-1602-0C75EE8D"] = {
-					["name"] = "астрамара-Гордунни",
-					["guid"] = "Player-1602-0C75EE8D",
-					["class"] = "MAGE",
-					["cache_time"] = 1676354879,
-					["realm"] = "Гордунни",
+				["Player-3391-068AF832"] = {
+					["name"] = "Merenth-Silvermoon",
+					["guid"] = "Player-3391-068AF832",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1684603502,
+					["realm"] = "Silvermoon",
 				},
-				["Player-3674-09ECE4C4"] = {
-					["name"] = "Ozma-TwistingNether",
-					["guid"] = "Player-3674-09ECE4C4",
-					["class"] = "DRUID",
-					["cache_time"] = 1687949013,
-					["realm"] = "TwistingNether",
-				},
-				["Player-1403-0A21CD46"] = {
-					["name"] = "Pulsaria-Draenor",
-					["guid"] = "Player-1403-0A21CD46",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1677072459,
+				["Player-1403-0A72E61F"] = {
+					["name"] = "Nganouu-Draenor",
+					["guid"] = "Player-1403-0A72E61F",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1688685563,
 					["realm"] = "Draenor",
 				},
-				["Player-3691-058A159E"] = {
-					["name"] = "Schatulli-Blackhand",
-					["guid"] = "Player-3691-058A159E",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1680290994,
-					["realm"] = "Blackhand",
+				["Player-3682-092092DD"] = {
+					["ilvl"] = 419.875,
+					["guid"] = "Player-3682-092092DD",
+					["class"] = "WARLOCK",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1680813097,
+					["rank"] = "Mythic Raider",
+					["name"] = "Faewynn-Ragnaros",
+					["specID"] = 266,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
-				["Player-580-08A85E71"] = {
-					["name"] = "Nelenaidh-Blackmoore",
-					["guid"] = "Player-580-08A85E71",
+				["Player-3682-0B20D298"] = {
+					["name"] = "Akilles-Ragnaros",
+					["guid"] = "Player-3682-0B20D298",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684491463,
+					["realm"] = "Ragnaros",
+				},
+				["Player-570-09B5F816"] = {
+					["name"] = "Démónlul-Azshara",
+					["guid"] = "Player-570-09B5F816",
 					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1688901714,
-					["realm"] = "Blackmoore",
+					["cache_time"] = 1676768222,
+					["realm"] = "Azshara",
 				},
-				["Player-1305-0BB083F4"] = {
-					["name"] = "Growlon-Kazzak",
-					["guid"] = "Player-1305-0BB083F4",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676601603,
-					["realm"] = "Kazzak",
+				["Player-1379-0ADD5CDD"] = {
+					["name"] = "Drü-Uldum",
+					["guid"] = "Player-1379-0ADD5CDD",
+					["class"] = "DRUID",
+					["cache_time"] = 1683073733,
+					["realm"] = "Uldum",
 				},
 				["Player-1305-087AD471"] = {
 					["name"] = "Lankycheese-Kazzak",
@@ -20280,66 +20465,61 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684926079,
 					["realm"] = "Hyjal",
 				},
-				["Player-3674-0B099A85"] = {
-					["name"] = "Immale-TwistingNether",
-					["guid"] = "Player-3674-0B099A85",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676960971,
-					["realm"] = "TwistingNether",
+				["Player-1084-0A9C83F3"] = {
+					["name"] = "Cephandrius-TarrenMill",
+					["guid"] = "Player-1084-0A9C83F3",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689704202,
+					["realm"] = "TarrenMill",
 				},
-				["Player-3674-0A4F88AA"] = {
-					["ilvl"] = 406.9375,
-					["guid"] = "Player-3674-0A4F88AA",
+				["Player-580-08CD9FDE"] = {
+					["name"] = "Greenflame-Blackmoore",
+					["guid"] = "Player-580-08CD9FDE",
 					["class"] = "DEMONHUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1676069534,
-					["rank"] = "Unguilded",
-					["name"] = "Chaosbrìnger-TwistingNether",
-					["specID"] = 577,
-					["enchantingLvl"] = 0,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1687259258,
+					["realm"] = "Blackmoore",
 				},
-				["Player-3657-0ADB174F"] = {
-					["name"] = "Talexhunts-Genjuros",
-					["guid"] = "Player-3657-0ADB174F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676182188,
-					["realm"] = "Genjuros",
+				["Player-1305-0BD7F4F7"] = {
+					["name"] = "Noisess-Kazzak",
+					["guid"] = "Player-1305-0BD7F4F7",
+					["class"] = "DRUID",
+					["cache_time"] = 1680222925,
+					["realm"] = "Kazzak",
 				},
-				["Player-1597-0D6823FC"] = {
-					["name"] = "Sorrowborne-Sylvanas",
-					["guid"] = "Player-1597-0D6823FC",
-					["class"] = "PALADIN",
-					["cache_time"] = 1678066914,
-					["realm"] = "Sylvanas",
-				},
-				["Player-1390-0C52B174"] = {
-					["name"] = "Cräcki-Hyjal",
-					["guid"] = "Player-1390-0C52B174",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690305151,
-					["realm"] = "Hyjal",
-				},
-				["Player-1403-0A019103"] = {
-					["name"] = "Homellander-Draenor",
-					["guid"] = "Player-1403-0A019103",
-					["class"] = "MONK",
-					["cache_time"] = 1684277685,
+				["Player-1403-0A370A86"] = {
+					["name"] = "Pipik-Draenor",
+					["guid"] = "Player-1403-0A370A86",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1680421920,
 					["realm"] = "Draenor",
 				},
-				["Player-3713-072D66CA"] = {
-					["name"] = "Bigcritz-BurningLegion",
-					["guid"] = "Player-3713-072D66CA",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1680262695,
-					["realm"] = "BurningLegion",
+				["Player-3391-0C982368"] = {
+					["name"] = "Afroblue-Silvermoon",
+					["guid"] = "Player-3391-0C982368",
+					["class"] = "MAGE",
+					["cache_time"] = 1689677222,
+					["realm"] = "Silvermoon",
 				},
-				["Player-1084-0A4BBDD2"] = {
-					["name"] = "Ollgaa-TarrenMill",
-					["guid"] = "Player-1084-0A4BBDD2",
+				["Player-3391-0C5573F8"] = {
+					["name"] = "Shiroazhi-Silvermoon",
+					["guid"] = "Player-3391-0C5573F8",
 					["class"] = "PALADIN",
-					["cache_time"] = 1680401778,
-					["realm"] = "TarrenMill",
+					["cache_time"] = 1676385549,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3391-0C59D9DF"] = {
+					["name"] = "Mômonga-Silvermoon",
+					["guid"] = "Player-3391-0C59D9DF",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1679966556,
+					["realm"] = "Silvermoon",
+				},
+				["Player-580-0A729677"] = {
+					["name"] = "Duffdruid-Blackmoore",
+					["guid"] = "Player-580-0A729677",
+					["class"] = "DRUID",
+					["cache_time"] = 1686062753,
+					["realm"] = "Blackmoore",
 				},
 				["Player-1305-0C5D7EAC"] = {
 					["name"] = "Ræjin-Kazzak",
@@ -20355,73 +20535,70 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676755006,
 					["realm"] = "TarrenMill",
 				},
-				["Player-3682-092092DD"] = {
-					["ilvl"] = 419.875,
-					["guid"] = "Player-3682-092092DD",
-					["class"] = "WARLOCK",
+				["Player-3691-09E2B765"] = {
 					["role"] = "DAMAGER",
-					["cache_time"] = 1680813097,
-					["realm"] = "Ragnaros",
-					["name"] = "Faewynn-Ragnaros",
-					["specID"] = 266,
-					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+					["name"] = "Satepa-Blackhand",
+					["guid"] = "Player-3691-09E2B765",
+					["rank"] = "Gildenleader",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1680399047,
+					["realm"] = "Blackhand",
 				},
-				["Player-1615-0A5A1441"] = {
-					["name"] = "дедотмороз-Ревущийфьорд",
-					["guid"] = "Player-1615-0A5A1441",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1685516014,
-					["realm"] = "Ревущийфьорд",
+				["Player-1305-0C4F4F58"] = {
+					["name"] = "Servvia-Kazzak",
+					["guid"] = "Player-1305-0C4F4F58",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1688923981,
+					["realm"] = "Kazzak",
 				},
-				["Player-1331-09F7C69B"] = {
-					["name"] = "Bavmorda-Medivh",
-					["guid"] = "Player-1331-09F7C69B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1677607191,
-					["realm"] = "Medivh",
+				["Player-3691-050A8706"] = {
+					["name"] = "Tatzino-Blackhand",
+					["guid"] = "Player-3691-050A8706",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676387096,
+					["realm"] = "Blackhand",
 				},
-				["Player-581-0A2CFAC5"] = {
-					["name"] = "Hypedorc-Blackrock",
-					["guid"] = "Player-581-0A2CFAC5",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1678631557,
-					["realm"] = "Blackrock",
-				},
-				["Player-1121-05CBC21E"] = {
-					["name"] = "Durbuz-KultderVerdammten",
-					["guid"] = "Player-1121-05CBC21E",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676973948,
-					["realm"] = "KultderVerdammten",
-				},
-				["Player-1390-0C31736D"] = {
-					["name"] = "Elylia-Hyjal",
-					["guid"] = "Player-1390-0C31736D",
-					["class"] = "PRIEST",
-					["cache_time"] = 1688502238,
-					["realm"] = "Hyjal",
-				},
-				["Player-3703-09F0ED8A"] = {
-					["name"] = "Nêmø-Frostwolf",
-					["guid"] = "Player-3703-09F0ED8A",
-					["class"] = "DRUID",
-					["cache_time"] = 1685397111,
+				["Player-3703-061F3D9D"] = {
+					["name"] = "Körperklaus-Frostwolf",
+					["guid"] = "Player-3703-061F3D9D",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685780231,
 					["realm"] = "Frostwolf",
 				},
-				["Player-581-0A6FA21E"] = {
-					["name"] = "Kaybu-Blackrock",
-					["guid"] = "Player-581-0A6FA21E",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686049852,
-					["realm"] = "Blackrock",
+				["Player-1084-09814B85"] = {
+					["name"] = "Milatios-TarrenMill",
+					["guid"] = "Player-1084-09814B85",
+					["class"] = "DRUID",
+					["cache_time"] = 1677665404,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1329-09EC49D1"] = {
-					["name"] = "Alerandir-Ravencrest",
-					["guid"] = "Player-1329-09EC49D1",
-					["class"] = "HUNTER",
-					["cache_time"] = 1685573068,
-					["realm"] = "Ravencrest",
+				["Player-1084-081F100F"] = {
+					["name"] = "Sðra-TarrenMill",
+					["guid"] = "Player-1084-081F100F",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1677515492,
+					["realm"] = "TarrenMill",
+				},
+				["Player-1602-0F2058A6"] = {
+					["name"] = "грассфеникс-Гордунни",
+					["guid"] = "Player-1602-0F2058A6",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676354879,
+					["realm"] = "Гордунни",
+				},
+				["Player-1587-0F4DE4DB"] = {
+					["name"] = "Vinesolar-Runetotem",
+					["guid"] = "Player-1587-0F4DE4DB",
+					["class"] = "DRUID",
+					["cache_time"] = 1678733272,
+					["realm"] = "Runetotem",
+				},
+				["Player-1401-0A4D4318"] = {
+					["name"] = "Dragoran-Perenolde",
+					["guid"] = "Player-1401-0A4D4318",
+					["class"] = "EVOKER",
+					["cache_time"] = 1675869700,
+					["realm"] = "Perenolde",
 				},
 				["Player-612-08CFA30F"] = {
 					["name"] = "Cloudmcfox-Nera'thor",
@@ -20430,12 +20607,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677606207,
 					["realm"] = "Nera'thor",
 				},
-				["Player-1388-07921908"] = {
-					["name"] = "Tencanto-Lightbringer",
-					["guid"] = "Player-1388-07921908",
-					["class"] = "MAGE",
-					["cache_time"] = 1687791012,
-					["realm"] = "Lightbringer",
+				["Player-1602-0F0A6986"] = {
+					["name"] = "гатсберсеркк-Гордунни",
+					["guid"] = "Player-1602-0F0A6986",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676479581,
+					["realm"] = "Гордунни",
 				},
 				["Player-1621-0B12751F"] = {
 					["name"] = "Kesium-Dalaran",
@@ -20444,12 +20621,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676370489,
 					["realm"] = "Dalaran",
 				},
-				["Player-3713-0AD60C99"] = {
-					["name"] = "Ajwory-BurningLegion",
-					["guid"] = "Player-3713-0AD60C99",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676335902,
-					["realm"] = "BurningLegion",
+				["Player-3696-07652307"] = {
+					["name"] = "Forti-Nethersturm",
+					["guid"] = "Player-3696-07652307",
+					["class"] = "PALADIN",
+					["cache_time"] = 1713977460,
+					["realm"] = "Nethersturm",
 				},
 				["Player-1385-08AC0C05"] = {
 					["name"] = "Elentärï-Minahonda",
@@ -20458,12 +20635,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678499437,
 					["realm"] = "Minahonda",
 				},
-				["Player-1379-0AC3B0DC"] = {
-					["name"] = "Namespeligro-Sanguino",
-					["guid"] = "Player-1379-0AC3B0DC",
-					["class"] = "MONK",
-					["cache_time"] = 1676377737,
-					["realm"] = "Sanguino",
+				["Player-581-0A43F14C"] = {
+					["name"] = "Inlight-Blackrock",
+					["guid"] = "Player-581-0A43F14C",
+					["class"] = "PRIEST",
+					["cache_time"] = 1679506666,
+					["realm"] = "Blackrock",
 				},
 				["Player-1096-0A60013A"] = {
 					["name"] = "Zarrpala-Ravenholdt",
@@ -20472,14 +20649,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676758015,
 					["realm"] = "Ravenholdt",
 				},
-				["Player-3691-09E2B765"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Satepa-Blackhand",
-					["guid"] = "Player-3691-09E2B765",
-					["realm"] = "Blackhand",
+				["Player-1597-0D099842"] = {
+					["name"] = "Ancestral-Sylvanas",
+					["guid"] = "Player-1597-0D099842",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1680399047,
-					["rank"] = "Gildenleader",
+					["cache_time"] = 1678733387,
+					["realm"] = "Sylvanas",
 				},
 				["Player-1379-08DB2BA8"] = {
 					["name"] = "Caiman-Sanguino",
@@ -20488,26 +20663,38 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677256326,
 					["realm"] = "Sanguino",
 				},
-				["Player-1390-0C241258"] = {
-					["name"] = "Reïner-Hyjal",
-					["guid"] = "Player-1390-0C241258",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1677198355,
-					["realm"] = "Hyjal",
+				["Player-3682-0B29ABF2"] = {
+					["ilvl"] = 444.75,
+					["guid"] = "Player-3682-0B29ABF2",
+					["class"] = "PALADIN",
+					["rank"] = "Raider",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1690157726,
+					["name"] = "Wrathwings-Ragnaros",
+					["enchanter"] = true,
+					["specID"] = 70,
+					["enchantingLvl"] = 52,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1379-0ADD5CDD"] = {
-					["name"] = "Drü-Uldum",
-					["guid"] = "Player-1379-0ADD5CDD",
-					["class"] = "DRUID",
-					["cache_time"] = 1683073733,
-					["realm"] = "Uldum",
+				["Player-3674-0AE9C2E2"] = {
+					["name"] = "Düsentus-TwistingNether",
+					["guid"] = "Player-3674-0AE9C2E2",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1685766281,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1305-0AD9E380"] = {
-					["name"] = "Tambra-Kazzak",
-					["guid"] = "Player-1305-0AD9E380",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1690329832,
-					["realm"] = "Kazzak",
+				["Player-3682-0B247217"] = {
+					["ilvl"] = 431.375,
+					["guid"] = "Player-3682-0B247217",
+					["class"] = "PALADIN",
+					["realm"] = "Ragnaros",
+					["role"] = "HEALER",
+					["cache_time"] = 1686170432,
+					["name"] = "Banaltro-Ragnaros",
+					["specID"] = 65,
+					["enchanter"] = true,
+					["enchantingLvl"] = 82,
+					["rank"] = "Mythic Raider",
 				},
 				["Player-604-0A6716FC"] = {
 					["name"] = "Thannak-Thrall",
@@ -20530,26 +20717,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689772053,
 					["realm"] = "Draenor",
 				},
-				["Player-1403-0A73AE6D"] = {
-					["name"] = "Pingwini-Draenor",
-					["guid"] = "Player-1403-0A73AE6D",
-					["class"] = "DRUID",
-					["cache_time"] = 1689262982,
-					["realm"] = "Draenor",
-				},
-				["Player-1401-0A4D4318"] = {
-					["name"] = "Dragoran-Perenolde",
-					["guid"] = "Player-1401-0A4D4318",
-					["class"] = "EVOKER",
-					["cache_time"] = 1675869700,
-					["realm"] = "Perenolde",
-				},
-				["Player-1615-0B21A3F5"] = {
-					["name"] = "пиайпоскидке-Ревущийфьорд",
-					["guid"] = "Player-1615-0B21A3F5",
-					["class"] = "PRIEST",
-					["cache_time"] = 1684883011,
+				["Player-1615-0A846180"] = {
+					["name"] = "мисстергусь-Ревущийфьорд",
+					["guid"] = "Player-1615-0A846180",
+					["class"] = "ROGUE",
+					["cache_time"] = 1690750821,
 					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1305-0B0C2D71"] = {
+					["name"] = "Chaosnether-Kazzak",
+					["guid"] = "Player-1305-0B0C2D71",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1685534275,
+					["realm"] = "Kazzak",
+				},
+				["Player-3674-0AED09B6"] = {
+					["name"] = "Skoufis-TwistingNether",
+					["guid"] = "Player-3674-0AED09B6",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1679414930,
+					["realm"] = "TwistingNether",
 				},
 				["Player-510-0A6883D4"] = {
 					["name"] = "Varass-Chantséternels",
@@ -20558,19 +20745,21 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683906208,
 					["realm"] = "Chantséternels",
 				},
-				["Player-2073-094BB938"] = {
-					["name"] = "Ftohës-Stormscale",
-					["guid"] = "Player-2073-094BB938",
-					["class"] = "MAGE",
-					["cache_time"] = 1687102801,
-					["realm"] = "Stormscale",
+				["Player-581-0A451F80"] = {
+					["role"] = "HEALER",
+					["name"] = "Mistskeren-Blackrock",
+					["guid"] = "Player-581-0A451F80",
+					["rank"] = "Rookie",
+					["class"] = "MONK",
+					["cache_time"] = 1684927057,
+					["realm"] = "Blackrock",
 				},
-				["Player-3391-0C84E7A8"] = {
-					["name"] = "Kixer-Silvermoon",
-					["guid"] = "Player-3391-0C84E7A8",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1680708830,
-					["realm"] = "Silvermoon",
+				["Player-1305-0C4E7AEB"] = {
+					["name"] = "Noxxîe-Kazzak",
+					["guid"] = "Player-1305-0C4E7AEB",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1687248139,
+					["realm"] = "Kazzak",
 				},
 				["Player-1379-08685233"] = {
 					["name"] = "Averapaco-Uldum",
@@ -20579,12 +20768,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686934454,
 					["realm"] = "Uldum",
 				},
-				["Player-3674-0A722438"] = {
-					["name"] = "çøøkie-TwistingNether",
-					["guid"] = "Player-3674-0A722438",
-					["class"] = "DRUID",
-					["cache_time"] = 1684131204,
-					["realm"] = "TwistingNether",
+				["Player-1388-0AD75B5A"] = {
+					["name"] = "énid-Mazrigos",
+					["guid"] = "Player-1388-0AD75B5A",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676973948,
+					["realm"] = "Mazrigos",
 				},
 				["Player-3702-0A220B4A"] = {
 					["name"] = "Djihad-ArgentDawn",
@@ -20593,33 +20782,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684218171,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-1615-0AD743BF"] = {
-					["name"] = "кенипаладин-Ревущийфьорд",
-					["guid"] = "Player-1615-0AD743BF",
-					["class"] = "PALADIN",
-					["cache_time"] = 1688877348,
-					["realm"] = "Ревущийфьорд",
+				["Player-3674-08D31498"] = {
+					["name"] = "Sickdpsxd-TwistingNether",
+					["guid"] = "Player-3674-08D31498",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1676387096,
+					["realm"] = "TwistingNether",
 				},
-				["Player-3703-061F3D9D"] = {
-					["name"] = "Körperklaus-Frostwolf",
-					["guid"] = "Player-3703-061F3D9D",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685780231,
-					["realm"] = "Frostwolf",
-				},
-				["Player-3682-0AFEE871"] = {
-					["name"] = "Bkhunt-Ragnaros",
-					["guid"] = "Player-3682-0AFEE871",
+				["Player-3682-08163C0A"] = {
+					["name"] = "øops-Ragnaros",
+					["guid"] = "Player-3682-08163C0A",
 					["class"] = "HUNTER",
-					["cache_time"] = 1677250012,
+					["cache_time"] = 1679027833,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1316-0C85FAD1"] = {
-					["name"] = "Pallasacra-Nemesis",
-					["guid"] = "Player-1316-0C85FAD1",
-					["class"] = "PALADIN",
-					["cache_time"] = 1680292466,
-					["realm"] = "Nemesis",
+				["Player-580-0A668B95"] = {
+					["name"] = "Ráo-Blackmoore",
+					["guid"] = "Player-580-0A668B95",
+					["class"] = "MONK",
+					["cache_time"] = 1676796439,
+					["realm"] = "Blackmoore",
+				},
+				["Player-1403-0A55A0E2"] = {
+					["name"] = "Arrowdeen-Draenor",
+					["guid"] = "Player-1403-0A55A0E2",
+					["class"] = "HUNTER",
+					["cache_time"] = 1677223354,
+					["realm"] = "Draenor",
 				},
 				["Player-2073-042E07C9"] = {
 					["name"] = "Gogopowerful-Stormscale",
@@ -20642,19 +20831,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684501707,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3674-0AED09B6"] = {
-					["name"] = "Skoufis-TwistingNether",
-					["guid"] = "Player-3674-0AED09B6",
+				["Player-1390-0923ECCF"] = {
+					["name"] = "Xlightniight-Hyjal",
+					["guid"] = "Player-1390-0923ECCF",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1679414930,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1684009880,
+					["realm"] = "Hyjal",
 				},
-				["Player-1098-0566EB01"] = {
-					["name"] = "Excess-Malfurion",
-					["guid"] = "Player-1098-0566EB01",
+				["Player-1302-065C8493"] = {
+					["name"] = "Kyouhu-Archimonde",
+					["guid"] = "Player-1302-065C8493",
 					["class"] = "PALADIN",
-					["cache_time"] = 1685872694,
-					["realm"] = "Malfurion",
+					["cache_time"] = 1685341872,
+					["realm"] = "Archimonde",
 				},
 				["Player-3682-08788FC1"] = {
 					["name"] = "Norbih-Ragnaros",
@@ -20663,26 +20852,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688874501,
 					["realm"] = "Ragnaros",
 				},
-				["Player-3682-0B12B697"] = {
-					["name"] = "Myfficraider-Ragnaros",
-					["guid"] = "Player-3682-0B12B697",
-					["class"] = "EVOKER",
-					["cache_time"] = 1675884019,
-					["realm"] = "Ragnaros",
+				["Player-3391-0BAC08E4"] = {
+					["name"] = "Omfgsisa-Silvermoon",
+					["guid"] = "Player-3391-0BAC08E4",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684207657,
+					["realm"] = "Silvermoon",
 				},
-				["Player-1084-0A7EEEA9"] = {
-					["name"] = "Femboylock-TarrenMill",
-					["guid"] = "Player-1084-0A7EEEA9",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1684883011,
-					["realm"] = "TarrenMill",
+				["Player-510-0602F6CD"] = {
+					["name"] = "Juliien-Vol'jin",
+					["guid"] = "Player-510-0602F6CD",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676372636,
+					["realm"] = "Vol'jin",
 				},
-				["Player-2073-043CB090"] = {
-					["name"] = "Agoraa-Stormscale",
-					["guid"] = "Player-2073-043CB090",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676144825,
-					["realm"] = "Stormscale",
+				["Player-1305-05148664"] = {
+					["name"] = "Torbs-Kazzak",
+					["guid"] = "Player-1305-05148664",
+					["class"] = "ROGUE",
+					["cache_time"] = 1677957827,
+					["realm"] = "Kazzak",
 				},
 				["Player-1587-0F41C6BD"] = {
 					["name"] = "Plex-Hellfire",
@@ -20698,12 +20887,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678730018,
 					["realm"] = "Zenedar",
 				},
-				["Player-2073-09F4BC52"] = {
-					["name"] = "Adoonis-Stormscale",
-					["guid"] = "Player-2073-09F4BC52",
-					["class"] = "DRUID",
-					["cache_time"] = 1685823297,
-					["realm"] = "Stormscale",
+				["Player-633-0AD1BD87"] = {
+					["name"] = "Tabaluga-Darkspear",
+					["guid"] = "Player-633-0AD1BD87",
+					["class"] = "EVOKER",
+					["cache_time"] = 1684218174,
+					["realm"] = "Darkspear",
 				},
 				["Player-1615-0ABCD7D1"] = {
 					["name"] = "марпина-Ревущийфьорд",
@@ -20725,83 +20914,81 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["role"] = "TANK",
 					["cache_time"] = 1690750821,
-					["realm"] = "Hyjal",
+					["rank"] = "Sans guilde",
 					["name"] = "Karno-Hyjal",
 					["specID"] = 73,
 					["enchantingLvl"] = 0,
-					["rank"] = "Sans guilde",
-				},
-				["Player-1602-0A5205DB"] = {
-					["name"] = "причэр-Гордунни",
-					["guid"] = "Player-1602-0A5205DB",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689398192,
-					["realm"] = "Гордунни",
-				},
-				["Player-1390-0923ECCF"] = {
-					["name"] = "Xlightniight-Hyjal",
-					["guid"] = "Player-1390-0923ECCF",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1684009880,
 					["realm"] = "Hyjal",
 				},
-				["Player-3691-048CC02A"] = {
-					["name"] = "Beledino-Blackhand",
-					["guid"] = "Player-3691-048CC02A",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684926332,
-					["realm"] = "Blackhand",
-				},
-				["Player-3682-07B747DB"] = {
-					["name"] = "Paorol-Ragnaros",
-					["guid"] = "Player-3682-07B747DB",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1686253971,
+				["Player-3682-0A544AB0"] = {
+					["name"] = "Smóke-Ragnaros",
+					["guid"] = "Player-3682-0A544AB0",
+					["class"] = "PRIEST",
+					["cache_time"] = 1679616541,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-08422581"] = {
-					["name"] = "Nagas-Kazzak",
-					["guid"] = "Player-1305-08422581",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1679968027,
-					["realm"] = "Kazzak",
+				["Player-580-08D32892"] = {
+					["name"] = "Zinista-Blackmoore",
+					["guid"] = "Player-580-08D32892",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1676806970,
+					["realm"] = "Blackmoore",
 				},
-				["Player-3713-0A725A08"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Hrabiawons-BurningLegion",
-					["guid"] = "Player-3713-0A725A08",
-					["rank"] = "Raider",
-					["class"] = "ROGUE",
-					["cache_time"] = 1685748809,
-					["realm"] = "BurningLegion",
+				["Player-1621-0B1D4CB3"] = {
+					["name"] = "Xlv-Dalaran",
+					["guid"] = "Player-1621-0B1D4CB3",
+					["class"] = "DRUID",
+					["cache_time"] = 1687133300,
+					["realm"] = "Dalaran",
 				},
-				["Player-3674-05A312AD"] = {
-					["name"] = "Demirdokum-TwistingNether",
-					["guid"] = "Player-3674-05A312AD",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1679138037,
-					["realm"] = "TwistingNether",
+				["Player-1621-0B1561BC"] = {
+					["name"] = "Kiokek-Dalaran",
+					["guid"] = "Player-1621-0B1561BC",
+					["class"] = "MONK",
+					["cache_time"] = 1676361246,
+					["realm"] = "Dalaran",
 				},
-				["Player-1416-09F8B967"] = {
-					["name"] = "ðarksoul-AeriePeak",
-					["guid"] = "Player-1416-09F8B967",
-					["class"] = "PALADIN",
-					["cache_time"] = 1690590328,
-					["realm"] = "AeriePeak",
-				},
-				["Player-3656-0A603C45"] = {
-					["name"] = "Azalenne-Stormreaver",
-					["guid"] = "Player-3656-0A603C45",
+				["Player-3391-0C24D1F0"] = {
+					["name"] = "Niato-Silvermoon",
+					["guid"] = "Player-3391-0C24D1F0",
 					["class"] = "PRIEST",
-					["cache_time"] = 1683069512,
+					["cache_time"] = 1680437946,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3656-0698E1D3"] = {
+					["name"] = "Smythet-Stormreaver",
+					["guid"] = "Player-3656-0698E1D3",
+					["class"] = "MAGE",
+					["cache_time"] = 1686754474,
 					["realm"] = "Stormreaver",
 				},
-				["Player-3674-0B09AD38"] = {
-					["name"] = "Mcdragon-TwistingNether",
-					["guid"] = "Player-3674-0B09AD38",
-					["class"] = "EVOKER",
-					["cache_time"] = 1686121310,
+				["Player-3391-08A2C9BB"] = {
+					["name"] = "Loubie-Silvermoon",
+					["guid"] = "Player-3391-08A2C9BB",
+					["class"] = "HUNTER",
+					["cache_time"] = 1689677222,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3713-071DFDA4"] = {
+					["name"] = "Luxipux-BurningLegion",
+					["guid"] = "Player-3713-071DFDA4",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1680262695,
+					["realm"] = "BurningLegion",
+				},
+				["Player-3674-0B1E9EB5"] = {
+					["name"] = "Lúfÿ-TwistingNether",
+					["guid"] = "Player-3674-0B1E9EB5",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686934003,
 					["realm"] = "TwistingNether",
+				},
+				["Player-1307-05B5D20A"] = {
+					["name"] = "Daleda-ChamberofAspects",
+					["guid"] = "Player-1307-05B5D20A",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676186152,
+					["realm"] = "ChamberofAspects",
 				},
 				["Player-1305-0BF412B5"] = {
 					["name"] = "Molekh-Kazzak",
@@ -20817,19 +21004,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686935978,
 					["realm"] = "Archimonde",
 				},
-				["Player-580-08D32892"] = {
-					["name"] = "Zinista-Blackmoore",
-					["guid"] = "Player-580-08D32892",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1676806970,
-					["realm"] = "Blackmoore",
+				["Player-3686-09DB0DFC"] = {
+					["name"] = "Ansaniâ-Antonidas",
+					["guid"] = "Player-3686-09DB0DFC",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676479581,
+					["realm"] = "Antonidas",
 				},
-				["Player-1096-061521FC"] = {
-					["name"] = "Hephaisto-DefiasBrotherhood",
-					["guid"] = "Player-1096-061521FC",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676757146,
-					["realm"] = "DefiasBrotherhood",
+				["Player-3674-08D2B44C"] = {
+					["name"] = "Turhis-TwistingNether",
+					["guid"] = "Player-3674-08D2B44C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684157801,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1621-0A2538D0"] = {
 					["name"] = "Bambinaa-Eldre'Thalas",
@@ -20838,24 +21025,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1675779446,
 					["realm"] = "Eldre'Thalas",
 				},
-				["Player-3682-0B2B9B92"] = {
-					["ilvl"] = 442.875,
-					["guid"] = "Player-3682-0B2B9B92",
-					["class"] = "WARRIOR",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1689387110,
-					["rank"] = "Unguilded",
-					["name"] = "Wârpig-Ragnaros",
-					["specID"] = 71,
-					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+				["Player-1302-09C90F82"] = {
+					["name"] = "Viraïna-Archimonde",
+					["guid"] = "Player-1302-09C90F82",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687041442,
+					["realm"] = "Archimonde",
 				},
-				["Player-3391-0C24D1F0"] = {
-					["name"] = "Niato-Silvermoon",
-					["guid"] = "Player-3391-0C24D1F0",
-					["class"] = "PRIEST",
-					["cache_time"] = 1680437946,
-					["realm"] = "Silvermoon",
+				["Player-1096-061521FC"] = {
+					["name"] = "Hephaisto-DefiasBrotherhood",
+					["guid"] = "Player-1096-061521FC",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676757146,
+					["realm"] = "DefiasBrotherhood",
 				},
 				["Player-1923-0F4FC9EA"] = {
 					["name"] = "фелфаер-Ясеневыйлес",
@@ -20871,26 +21053,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687955030,
 					["realm"] = "Pozzodell'Eternità",
 				},
-				["Player-1587-08450F40"] = {
-					["name"] = "Cudär-Arathor",
-					["guid"] = "Player-1587-08450F40",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684561238,
-					["realm"] = "Arathor",
-				},
-				["Player-1307-05B5D20A"] = {
-					["name"] = "Daleda-ChamberofAspects",
-					["guid"] = "Player-1307-05B5D20A",
-					["class"] = "PRIEST",
-					["cache_time"] = 1676186152,
-					["realm"] = "ChamberofAspects",
-				},
-				["Player-1615-032D57FC"] = {
-					["name"] = "капыто-Ревущийфьорд",
-					["guid"] = "Player-1615-032D57FC",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1685398638,
+				["Player-1615-08283B00"] = {
+					["name"] = "порнахд-Ревущийфьорд",
+					["guid"] = "Player-1615-08283B00",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1677198346,
 					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1127-07640C74"] = {
+					["name"] = "Psykiti-LesSentinelles",
+					["guid"] = "Player-1127-07640C74",
+					["class"] = "DRUID",
+					["cache_time"] = 1683965309,
+					["realm"] = "LesSentinelles",
+				},
+				["Player-1602-0EED4A54"] = {
+					["name"] = "алаянорочка-Гордунни",
+					["guid"] = "Player-1602-0EED4A54",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685305181,
+					["realm"] = "Гордунни",
 				},
 				["Player-581-045A13CB"] = {
 					["name"] = "Bomah-Blackrock",
@@ -20899,26 +21081,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680292466,
 					["realm"] = "Blackrock",
 				},
-				["Player-3702-07E5C53C"] = {
-					["name"] = "Slitaruzz-ArgentDawn",
-					["guid"] = "Player-3702-07E5C53C",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1676168537,
-					["realm"] = "ArgentDawn",
+				["Player-580-082FE794"] = {
+					["name"] = "Lagily-Blackmoore",
+					["guid"] = "Player-580-082FE794",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1685780231,
+					["realm"] = "Blackmoore",
 				},
-				["Player-1305-0C50F1F3"] = {
-					["name"] = "Zerosixtyòne-Kazzak",
-					["guid"] = "Player-1305-0C50F1F3",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1684128158,
-					["realm"] = "Kazzak",
+				["Player-2073-09D848A3"] = {
+					["name"] = "Ravehizz-Stormscale",
+					["guid"] = "Player-2073-09D848A3",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1676486995,
+					["realm"] = "Stormscale",
 				},
-				["Player-3690-0AA55C5C"] = {
-					["name"] = "Paslàxou-KhazModan",
-					["guid"] = "Player-3690-0AA55C5C",
+				["Player-512-03DFE2ED"] = {
+					["name"] = "Rhiannön-Throk'Feroth",
+					["guid"] = "Player-512-03DFE2ED",
 					["class"] = "PALADIN",
-					["cache_time"] = 1684008541,
-					["realm"] = "KhazModan",
+					["cache_time"] = 1677665404,
+					["realm"] = "Throk'Feroth",
 				},
 				["Player-3657-091F0764"] = {
 					["name"] = "Fellishlemon-Zenedar",
@@ -20934,12 +21116,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676359629,
 					["realm"] = "Kazzak",
 				},
-				["Player-3656-0698E1D3"] = {
-					["name"] = "Smythet-Stormreaver",
-					["guid"] = "Player-3656-0698E1D3",
-					["class"] = "MAGE",
-					["cache_time"] = 1686754474,
-					["realm"] = "Stormreaver",
+				["Player-3391-0C90B0B4"] = {
+					["name"] = "Häxdöktör-Silvermoon",
+					["guid"] = "Player-3391-0C90B0B4",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1687791012,
+					["realm"] = "Silvermoon",
 				},
 				["Player-3682-05C12C72"] = {
 					["name"] = "Tandre-Ragnaros",
@@ -20948,19 +21130,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684883011,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1127-095E3A96"] = {
-					["name"] = "Elraldur-CultedelaRivenoire",
-					["guid"] = "Player-1127-095E3A96",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676768222,
-					["realm"] = "CultedelaRivenoire",
+				["Player-3713-0ACDEE87"] = {
+					["name"] = "Szyszuluna-BurningLegion",
+					["guid"] = "Player-3713-0ACDEE87",
+					["class"] = "DRUID",
+					["cache_time"] = 1676377737,
+					["realm"] = "BurningLegion",
 				},
-				["Player-3682-09E0FA89"] = {
-					["name"] = "Skreamoutlau-Ragnaros",
-					["guid"] = "Player-3682-09E0FA89",
-					["class"] = "ROGUE",
-					["cache_time"] = 1689700268,
-					["realm"] = "Ragnaros",
+				["Player-3702-0A803890"] = {
+					["name"] = "Meylos-ArgentDawn",
+					["guid"] = "Player-3702-0A803890",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689677222,
+					["realm"] = "ArgentDawn",
 				},
 				["Player-3674-05A16624"] = {
 					["name"] = "Shattox-TwistingNether",
@@ -20969,12 +21151,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677339602,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1127-07640C74"] = {
-					["name"] = "Psykiti-LesSentinelles",
-					["guid"] = "Player-1127-07640C74",
-					["class"] = "DRUID",
-					["cache_time"] = 1683965309,
-					["realm"] = "LesSentinelles",
+				["Player-1390-0C5C1713"] = {
+					["name"] = "Drackharys-Hyjal",
+					["guid"] = "Player-1390-0C5C1713",
+					["class"] = "EVOKER",
+					["cache_time"] = 1684883011,
+					["realm"] = "Hyjal",
 				},
 				["Player-1316-0C233F90"] = {
 					["name"] = "Zarrotar-Nemesis",
@@ -20990,108 +21172,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680006982,
 					["realm"] = "TwistingNether",
 				},
-				["Player-580-082FE794"] = {
-					["name"] = "Lagily-Blackmoore",
-					["guid"] = "Player-580-082FE794",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1685780231,
-					["realm"] = "Blackmoore",
-				},
-				["Player-580-09FCF008"] = {
-					["name"] = "Bloodsquad-Blackmoore",
-					["guid"] = "Player-580-09FCF008",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1688922052,
-					["realm"] = "Blackmoore",
-				},
-				["Player-3391-0AF07C2C"] = {
-					["name"] = "Sjoowie-Silvermoon",
-					["guid"] = "Player-3391-0AF07C2C",
+				["Player-3682-079C05CE"] = {
+					["ilvl"] = 437,
+					["guid"] = "Player-3682-079C05CE",
 					["class"] = "DRUID",
-					["cache_time"] = 1685032038,
-					["realm"] = "Silvermoon",
-				},
-				["Player-1305-0C8CA374"] = {
-					["name"] = "Scarespriest-Kazzak",
-					["guid"] = "Player-1305-0C8CA374",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687953965,
-					["realm"] = "Kazzak",
-				},
-				["Player-1615-0B1E4A10"] = {
-					["name"] = "гдемоикрылъя-Ревущийфьорд",
-					["guid"] = "Player-1615-0B1E4A10",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686196139,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-1305-0A1CDE8E"] = {
-					["name"] = "Pongers-Kazzak",
-					["guid"] = "Player-1305-0A1CDE8E",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1677227556,
-					["realm"] = "Kazzak",
-				},
-				["Player-1390-0C5C1713"] = {
-					["name"] = "Drackharys-Hyjal",
-					["guid"] = "Player-1390-0C5C1713",
-					["class"] = "EVOKER",
-					["cache_time"] = 1684883011,
-					["realm"] = "Hyjal",
-				},
-				["Player-1597-0F2FAB89"] = {
-					["name"] = "Plaguemug-Sylvanas",
-					["guid"] = "Player-1597-0F2FAB89",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1678223169,
-					["realm"] = "Sylvanas",
-				},
-				["Player-3713-09BED8B8"] = {
-					["name"] = "Neessandra-BurningLegion",
-					["guid"] = "Player-3713-09BED8B8",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1685538250,
-					["realm"] = "BurningLegion",
-				},
-				["Player-1305-0C6EB944"] = {
-					["name"] = "Prydz-Kazzak",
-					["guid"] = "Player-1305-0C6EB944",
-					["class"] = "ROGUE",
-					["cache_time"] = 1680218725,
-					["realm"] = "Kazzak",
-				},
-				["Player-3391-06FBA7A8"] = {
-					["name"] = "Eladri-Silvermoon",
-					["guid"] = "Player-3391-06FBA7A8",
-					["class"] = "PRIEST",
-					["cache_time"] = 1684559790,
-					["realm"] = "Silvermoon",
-				},
-				["Player-3674-0AF1E07E"] = {
-					["name"] = "Sifasagir-TwistingNether",
-					["guid"] = "Player-3674-0AF1E07E",
-					["class"] = "PRIEST",
-					["cache_time"] = 1678461554,
-					["realm"] = "TwistingNether",
-				},
-				["Player-1084-0A7960B7"] = {
-					["name"] = "Toogum-TarrenMill",
-					["guid"] = "Player-1084-0A7960B7",
-					["class"] = "DRUID",
-					["cache_time"] = 1676606635,
-					["realm"] = "TarrenMill",
-				},
-				["Player-3391-0C82C9F4"] = {
-					["ilvl"] = 410.125,
-					["guid"] = "Player-3391-0C82C9F4",
-					["class"] = "PRIEST",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1677096006,
-					["realm"] = "Silvermoon",
-					["name"] = "Teckko-Silvermoon",
-					["specID"] = 258,
+					["role"] = "TANK",
+					["cache_time"] = 1689855648,
+					["realm"] = "Ragnaros",
+					["name"] = "Paoral-Ragnaros",
+					["specID"] = 102,
 					["enchantingLvl"] = 0,
 					["rank"] = "Unguilded",
+				},
+				["Player-3682-087D942D"] = {
+					["name"] = "Pórketill-Ragnaros",
+					["guid"] = "Player-3682-087D942D",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687157844,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3713-082641C3"] = {
 					["name"] = "Ekszala-BurningLegion",
@@ -21100,26 +21198,115 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677075763,
 					["realm"] = "BurningLegion",
 				},
-				["Player-3674-0B1B08BD"] = {
-					["name"] = "Sjuksystern-TwistingNether",
-					["guid"] = "Player-3674-0B1B08BD",
+				["Player-1084-0A81131A"] = {
+					["name"] = "Luffvoker-TarrenMill",
+					["guid"] = "Player-1084-0A81131A",
+					["class"] = "EVOKER",
+					["cache_time"] = 1685781186,
+					["realm"] = "TarrenMill",
+				},
+				["Player-1122-0A59DA9B"] = {
+					["name"] = "Estrell-Uldaman",
+					["guid"] = "Player-1122-0A59DA9B",
+					["class"] = "HUNTER",
+					["cache_time"] = 1677607191,
+					["realm"] = "Uldaman",
+				},
+				["Player-1305-0A1CDE8E"] = {
+					["name"] = "Pongers-Kazzak",
+					["guid"] = "Player-1305-0A1CDE8E",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1677227556,
+					["realm"] = "Kazzak",
+				},
+				["Player-1325-09E787A8"] = {
+					["name"] = "Offliné-Aggramar",
+					["guid"] = "Player-1325-09E787A8",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689800217,
+					["realm"] = "Aggramar",
+				},
+				["Player-3686-05D64033"] = {
+					["name"] = "Holylok-Antonidas",
+					["guid"] = "Player-3686-05D64033",
 					["class"] = "PALADIN",
-					["cache_time"] = 1677518270,
+					["cache_time"] = 1684352037,
+					["realm"] = "Antonidas",
+				},
+				["Player-3391-0C4DC7D1"] = {
+					["name"] = "Chpdrz-Silvermoon",
+					["guid"] = "Player-3391-0C4DC7D1",
+					["class"] = "PALADIN",
+					["cache_time"] = 1677258721,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3391-0C4F3DD7"] = {
+					["name"] = "Hyúng-Silvermoon",
+					["guid"] = "Player-3391-0C4F3DD7",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686933987,
+					["realm"] = "Silvermoon",
+				},
+				["Player-1099-0A90B87A"] = {
+					["name"] = "Dämo-Rexxar",
+					["guid"] = "Player-1099-0A90B87A",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1678894799,
+					["realm"] = "Rexxar",
+				},
+				["Player-1305-0C835430"] = {
+					["name"] = "Aquamentes-Kazzak",
+					["guid"] = "Player-1305-0C835430",
+					["class"] = "PALADIN",
+					["cache_time"] = 1678139156,
+					["realm"] = "Kazzak",
+				},
+				["Player-1403-07FD895B"] = {
+					["name"] = "Mayocat-Draenor",
+					["guid"] = "Player-1403-07FD895B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1686934454,
+					["realm"] = "Draenor",
+				},
+				["Player-3391-0C82C9F4"] = {
+					["ilvl"] = 410.125,
+					["guid"] = "Player-3391-0C82C9F4",
+					["class"] = "PRIEST",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1677096006,
+					["rank"] = "Unguilded",
+					["name"] = "Teckko-Silvermoon",
+					["specID"] = 258,
+					["enchantingLvl"] = 0,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3674-0A773A87"] = {
+					["name"] = "Iloveyou-TwistingNether",
+					["guid"] = "Player-3674-0A773A87",
+					["class"] = "DRUID",
+					["cache_time"] = 1686935978,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1335-07621357"] = {
-					["name"] = "Alenthas-Ysondre",
-					["guid"] = "Player-1335-07621357",
-					["class"] = "MONK",
-					["cache_time"] = 1677319954,
-					["realm"] = "Ysondre",
+				["Player-1602-059D7745"] = {
+					["name"] = "травкоед-Гордунни",
+					["guid"] = "Player-1602-059D7745",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1685487968,
+					["realm"] = "Гордунни",
 				},
-				["Player-3682-0A931218"] = {
-					["name"] = "Rebrew-Ragnaros",
-					["guid"] = "Player-3682-0A931218",
-					["class"] = "MONK",
-					["cache_time"] = 1686754474,
-					["realm"] = "Ragnaros",
+				["Player-1302-0BFE55BD"] = {
+					["name"] = "Meyk-Archimonde",
+					["guid"] = "Player-1302-0BFE55BD",
+					["class"] = "DRUID",
+					["cache_time"] = 1685343927,
+					["realm"] = "Archimonde",
+				},
+				["Player-1390-0C77161C"] = {
+					["name"] = "Sêiju-Hyjal",
+					["guid"] = "Player-1390-0C77161C",
+					["class"] = "HUNTER",
+					["cache_time"] = 1684056553,
+					["realm"] = "Hyjal",
 				},
 				["Player-1614-0AE460D6"] = {
 					["name"] = "делит-Галакронд",
@@ -21149,40 +21336,46 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687955030,
 					["realm"] = "Kazzak",
 				},
-				["Player-1099-0A90B87A"] = {
-					["name"] = "Dämo-Rexxar",
-					["guid"] = "Player-1099-0A90B87A",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1678894799,
-					["realm"] = "Rexxar",
+				["Player-1302-0A3BA227"] = {
+					["name"] = "Tiberian-Archimonde",
+					["guid"] = "Player-1302-0A3BA227",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1679027741,
+					["realm"] = "Archimonde",
 				},
-				["Player-1390-09719275"] = {
-					["name"] = "Twinnx-Hyjal",
-					["guid"] = "Player-1390-09719275",
-					["class"] = "DRUID",
-					["cache_time"] = 1687259258,
-					["realm"] = "Hyjal",
+				["Player-1084-0A470115"] = {
+					["name"] = "Mabbitx-TarrenMill",
+					["guid"] = "Player-1084-0A470115",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686933987,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1105-0A633AA0"] = {
-					["name"] = "Sundriel-Dalvengyr",
-					["guid"] = "Player-1105-0A633AA0",
-					["class"] = "MONK",
-					["cache_time"] = 1676210025,
-					["realm"] = "Dalvengyr",
+				["Player-1604-0AA8F1E3"] = {
+					["name"] = "някоборщик-СвежевательДуш",
+					["guid"] = "Player-1604-0AA8F1E3",
+					["class"] = "PALADIN",
+					["cache_time"] = 1683073733,
+					["realm"] = "СвежевательДуш",
 				},
-				["Player-1305-0BDD87EF"] = {
-					["name"] = "Absorbent-Kazzak",
-					["guid"] = "Player-1305-0BDD87EF",
-					["class"] = "PRIEST",
-					["cache_time"] = 1676783114,
-					["realm"] = "Kazzak",
-				},
-				["Player-1096-0A5CF353"] = {
-					["name"] = "Taroth-Ravenholdt",
-					["guid"] = "Player-1096-0A5CF353",
+				["Player-1923-0F46EFE1"] = {
+					["name"] = "варигоса-Ясеневыйлес",
+					["guid"] = "Player-1923-0F46EFE1",
 					["class"] = "EVOKER",
-					["cache_time"] = 1689800841,
-					["realm"] = "Ravenholdt",
+					["cache_time"] = 1677607191,
+					["realm"] = "Ясеневыйлес",
+				},
+				["Player-3682-0B118F21"] = {
+					["ilvl"] = 440.0625,
+					["guid"] = "Player-3682-0B118F21",
+					["class"] = "HUNTER",
+					["realm"] = "Ragnaros",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1686170267,
+					["name"] = "Jereunter-Ragnaros",
+					["specID"] = 253,
+					["enchanter"] = true,
+					["enchantingLvl"] = 65,
+					["rank"] = "Mythic Raider",
 				},
 				["Player-1305-0B8D720E"] = {
 					["name"] = "Vangzz-Kazzak",
@@ -21191,12 +21384,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678635547,
 					["realm"] = "Kazzak",
 				},
-				["Player-1302-0BFE55BD"] = {
-					["name"] = "Meyk-Archimonde",
-					["guid"] = "Player-1302-0BFE55BD",
-					["class"] = "DRUID",
-					["cache_time"] = 1685343927,
-					["realm"] = "Archimonde",
+				["Player-1623-0270D649"] = {
+					["name"] = "сириус-Дракономор",
+					["guid"] = "Player-1623-0270D649",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677072459,
+					["realm"] = "Дракономор",
 				},
 				["Player-1618-0B0AA842"] = {
 					["name"] = "Rimmon-DieAldor",
@@ -21205,12 +21398,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686121310,
 					["realm"] = "DieAldor",
 				},
-				["Player-3674-05B1998D"] = {
-					["name"] = "Nidix-TwistingNether",
-					["guid"] = "Player-3674-05B1998D",
-					["class"] = "ROGUE",
-					["cache_time"] = 1686121310,
-					["realm"] = "TwistingNether",
+				["Player-580-0A719ECB"] = {
+					["name"] = "Bommburr-Blackmoore",
+					["guid"] = "Player-580-0A719ECB",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685487968,
+					["realm"] = "Blackmoore",
 				},
 				["Player-3691-0A0223F3"] = {
 					["name"] = "Lykhie-Blackhand",
@@ -21237,14 +21430,14 @@ RCLootCouncilDB = {
 					["ilvl"] = 398.375,
 					["guid"] = "Player-1305-0BA3309A",
 					["class"] = "PRIEST",
-					["realm"] = "Kazzak",
+					["rank"] = "Worky  Peon",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1676792336,
 					["name"] = "Nautronpr-Kazzak",
-					["specID"] = 258,
 					["enchanter"] = true,
+					["specID"] = 258,
 					["enchantingLvl"] = 15,
-					["rank"] = "Worky  Peon",
+					["realm"] = "Kazzak",
 				},
 				["Player-3682-0B2BF87A"] = {
 					["ilvl"] = 443.1875,
@@ -21252,32 +21445,32 @@ RCLootCouncilDB = {
 					["class"] = "EVOKER",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1690590308,
-					["realm"] = "Ragnaros",
+					["rank"] = "Unguilded",
 					["name"] = "Buffdotcom-Ragnaros",
 					["specID"] = 1473,
 					["enchantingLvl"] = 0,
-					["rank"] = "Unguilded",
+					["realm"] = "Ragnaros",
 				},
-				["Player-1329-06A03100"] = {
-					["name"] = "Rambopus-Ravencrest",
-					["guid"] = "Player-1329-06A03100",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685195489,
-					["realm"] = "Ravencrest",
-				},
-				["Player-1379-0AB44B38"] = {
-					["name"] = "Metalkarp-Sanguino",
-					["guid"] = "Player-1379-0AB44B38",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1685398638,
+				["Player-1379-05529A35"] = {
+					["name"] = "Yusicosafina-Sanguino",
+					["guid"] = "Player-1379-05529A35",
+					["class"] = "MAGE",
+					["cache_time"] = 1677665404,
 					["realm"] = "Sanguino",
 				},
-				["Player-3674-06F39AB3"] = {
-					["name"] = "Kabôm-TwistingNether",
-					["guid"] = "Player-3674-06F39AB3",
-					["class"] = "PRIEST",
-					["cache_time"] = 1684413259,
-					["realm"] = "TwistingNether",
+				["Player-1127-0905918F"] = {
+					["name"] = "Leelunna-KirinTor",
+					["guid"] = "Player-1127-0905918F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676377737,
+					["realm"] = "KirinTor",
+				},
+				["Player-3682-0B2B7804"] = {
+					["name"] = "Zerog-Ragnaros",
+					["guid"] = "Player-3682-0B2B7804",
+					["class"] = "ROGUE",
+					["cache_time"] = 1689802006,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1379-09A8A8E6"] = {
 					["name"] = "Loyufell-Sanguino",
@@ -21286,12 +21479,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676408322,
 					["realm"] = "Sanguino",
 				},
-				["Player-1623-0270D649"] = {
-					["name"] = "сириус-Дракономор",
-					["guid"] = "Player-1623-0270D649",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1677072459,
-					["realm"] = "Дракономор",
+				["Player-1379-0AB44B38"] = {
+					["name"] = "Metalkarp-Sanguino",
+					["guid"] = "Player-1379-0AB44B38",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1685398638,
+					["realm"] = "Sanguino",
 				},
 				["Player-3691-09C86FB8"] = {
 					["name"] = "Llóki-Blackhand",
@@ -21300,19 +21493,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676465368,
 					["realm"] = "Blackhand",
 				},
-				["Player-580-0A5781A8"] = {
-					["name"] = "Mokileinchen-Blackmoore",
-					["guid"] = "Player-580-0A5781A8",
-					["class"] = "PALADIN",
-					["cache_time"] = 1680437946,
-					["realm"] = "Blackmoore",
+				["Player-1084-0A990F17"] = {
+					["name"] = "Klyddigt-TarrenMill",
+					["guid"] = "Player-1084-0A990F17",
+					["class"] = "MONK",
+					["cache_time"] = 1687040673,
+					["realm"] = "TarrenMill",
 				},
-				["Player-1335-09F8FF15"] = {
-					["name"] = "Yukihmito-Ysondre",
-					["guid"] = "Player-1335-09F8FF15",
-					["class"] = "PRIEST",
-					["cache_time"] = 1677258735,
-					["realm"] = "Ysondre",
+				["Player-2073-05025566"] = {
+					["name"] = "Warkimad-Stormscale",
+					["guid"] = "Player-2073-05025566",
+					["class"] = "DRUID",
+					["cache_time"] = 1687791302,
+					["realm"] = "Stormscale",
 				},
 				["Player-1335-093062A4"] = {
 					["name"] = "Tahmar-Ysondre",
@@ -21342,40 +21535,45 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685745460,
 					["realm"] = "Arathor",
 				},
-				["Player-1615-0808D522"] = {
-					["name"] = "зиранель-Ревущийфьорд",
-					["guid"] = "Player-1615-0808D522",
-					["class"] = "ROGUE",
-					["cache_time"] = 1687949013,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-580-0A3479A2"] = {
-					["name"] = "Lidllasagne-Blackmoore",
-					["guid"] = "Player-580-0A3479A2",
-					["class"] = "DRUID",
-					["cache_time"] = 1679428338,
-					["realm"] = "Blackmoore",
-				},
-				["Player-580-0A66C5A3"] = {
-					["name"] = "Ferinah-Blackmoore",
-					["guid"] = "Player-580-0A66C5A3",
-					["class"] = "DRUID",
-					["cache_time"] = 1675869700,
-					["realm"] = "Blackmoore",
-				},
-				["Player-3682-0B0C0F10"] = {
-					["name"] = "Milkeix-Ragnaros",
-					["guid"] = "Player-3682-0B0C0F10",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1677879103,
+				["Player-3682-0A804BA4"] = {
+					["ilvl"] = 418.3125,
+					["guid"] = "Player-3682-0A804BA4",
+					["class"] = "DEMONHUNTER",
+					["role"] = "TANK",
+					["cache_time"] = 1680553185,
+					["rank"] = "Mythic Raider",
+					["name"] = "Odalicious-Ragnaros",
+					["specID"] = 581,
+					["enchantingLvl"] = 0,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0C3EA383"] = {
-					["name"] = "Eledudu-Kazzak",
-					["guid"] = "Player-1305-0C3EA383",
-					["class"] = "DRUID",
-					["cache_time"] = 1686933987,
-					["realm"] = "Kazzak",
+				["Player-1378-05EF8C80"] = {
+					["name"] = "Baikushêv-DunModr",
+					["guid"] = "Player-1378-05EF8C80",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686934454,
+					["realm"] = "DunModr",
+				},
+				["Player-1403-0A4EBEF5"] = {
+					["name"] = "Sinnersun-Draenor",
+					["guid"] = "Player-1403-0A4EBEF5",
+					["class"] = "PRIEST",
+					["cache_time"] = 1684510785,
+					["realm"] = "Draenor",
+				},
+				["Player-3702-0A8FD1A6"] = {
+					["name"] = "Tayur-ArgentDawn",
+					["guid"] = "Player-3702-0A8FD1A6",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677392792,
+					["realm"] = "ArgentDawn",
+				},
+				["Player-3682-0B265B0E"] = {
+					["name"] = "Szabolcskin-Ragnaros",
+					["guid"] = "Player-3682-0B265B0E",
+					["class"] = "PALADIN",
+					["cache_time"] = 1686935978,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1303-059D16C2"] = {
 					["name"] = "Taninhaa-Aggra(Português)",
@@ -21391,19 +21589,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684123613,
 					["realm"] = "Drak'thul",
 				},
-				["Player-1602-0B2E29C5"] = {
-					["name"] = "тыквонька-Гордунни",
-					["guid"] = "Player-1602-0B2E29C5",
+				["Player-580-0A3479A2"] = {
+					["name"] = "Lidllasagne-Blackmoore",
+					["guid"] = "Player-580-0A3479A2",
 					["class"] = "DRUID",
-					["cache_time"] = 1678894799,
-					["realm"] = "Гордунни",
+					["cache_time"] = 1679428338,
+					["realm"] = "Blackmoore",
 				},
-				["Player-3674-0B18C8DE"] = {
-					["name"] = "Güldaan-TwistingNether",
-					["guid"] = "Player-3674-0B18C8DE",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1676201349,
-					["realm"] = "TwistingNether",
+				["Player-580-0A66C5A3"] = {
+					["name"] = "Ferinah-Blackmoore",
+					["guid"] = "Player-580-0A66C5A3",
+					["class"] = "DRUID",
+					["cache_time"] = 1675869700,
+					["realm"] = "Blackmoore",
 				},
 				["Player-1379-0A6A2AAF"] = {
 					["name"] = "Bokken-Uldum",
@@ -21412,19 +21610,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684413259,
 					["realm"] = "Uldum",
 				},
-				["Player-1305-0C9006A5"] = {
-					["name"] = "Gunborgh-Kazzak",
-					["guid"] = "Player-1305-0C9006A5",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686121310,
-					["realm"] = "Kazzak",
+				["Player-3681-0AE53FFF"] = {
+					["name"] = "Storcator-Magtheridon",
+					["guid"] = "Player-3681-0AE53FFF",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1687102798,
+					["realm"] = "Magtheridon",
 				},
-				["Player-1092-043DB71A"] = {
-					["name"] = "Levijathan-Drak'thul",
-					["guid"] = "Player-1092-043DB71A",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1688687303,
-					["realm"] = "Drak'thul",
+				["Player-1305-0C628E35"] = {
+					["name"] = "Xiuhipo-Kazzak",
+					["guid"] = "Player-1305-0C628E35",
+					["class"] = "MONK",
+					["cache_time"] = 1676328082,
+					["realm"] = "Kazzak",
 				},
 				["Player-3691-092485BE"] = {
 					["ilvl"] = 444,
@@ -21432,11 +21630,11 @@ RCLootCouncilDB = {
 					["class"] = "PALADIN",
 					["role"] = "HEALER",
 					["cache_time"] = 1690229188,
-					["rank"] = "Twink",
+					["realm"] = "Mal'Ganis",
 					["name"] = "Galaadrìel-Mal'Ganis",
 					["specID"] = 65,
 					["enchantingLvl"] = 0,
-					["realm"] = "Mal'Ganis",
+					["rank"] = "Twink",
 				},
 				["Player-3686-09FE6AF4"] = {
 					["name"] = "Patrioi-Antonidas",
@@ -21445,19 +21643,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683910142,
 					["realm"] = "Antonidas",
 				},
-				["Player-3702-0A8FD1A6"] = {
-					["name"] = "Tayur-ArgentDawn",
-					["guid"] = "Player-3702-0A8FD1A6",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1677392792,
-					["realm"] = "ArgentDawn",
+				["Player-1313-0C6EADBF"] = {
+					["name"] = "Keksicek-Thunderhorn",
+					["guid"] = "Player-1313-0C6EADBF",
+					["class"] = "PRIEST",
+					["cache_time"] = 1677223354,
+					["realm"] = "Thunderhorn",
 				},
-				["Player-1602-0F50C767"] = {
-					["name"] = "коунтрин-Гордунни",
-					["guid"] = "Player-1602-0F50C767",
-					["class"] = "EVOKER",
-					["cache_time"] = 1676385549,
-					["realm"] = "Гордунни",
+				["Player-3691-09E58712"] = {
+					["name"] = "Yinna-Blackhand",
+					["guid"] = "Player-3691-09E58712",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676208606,
+					["realm"] = "Blackhand",
 				},
 				["Player-1305-0C4050A6"] = {
 					["name"] = "Mootivation-Kazzak",
@@ -21466,19 +21664,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684412175,
 					["realm"] = "Kazzak",
 				},
-				["Player-2073-043063D3"] = {
-					["name"] = "Vegapuncked-Stormscale",
-					["guid"] = "Player-2073-043063D3",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1680754040,
-					["realm"] = "Stormscale",
+				["Player-1379-0AA03F9C"] = {
+					["name"] = "Rehiser-Sanguino",
+					["guid"] = "Player-1379-0AA03F9C",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1684926332,
+					["realm"] = "Sanguino",
 				},
-				["Player-633-0AC2AEF6"] = {
-					["name"] = "Othros-ShatteredHand",
-					["guid"] = "Player-633-0AC2AEF6",
-					["class"] = "PALADIN",
-					["cache_time"] = 1683073477,
-					["realm"] = "ShatteredHand",
+				["Player-3691-099C70CE"] = {
+					["name"] = "Suppay-Blackhand",
+					["guid"] = "Player-3691-099C70CE",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1687298820,
+					["realm"] = "Blackhand",
 				},
 				["Player-1403-0A49E12E"] = {
 					["name"] = "Jawady-Draenor",
@@ -21487,19 +21685,24 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680027948,
 					["realm"] = "Draenor",
 				},
-				["Player-1313-0C6EADBF"] = {
-					["name"] = "Keksicek-Thunderhorn",
-					["guid"] = "Player-1313-0C6EADBF",
-					["class"] = "PRIEST",
-					["cache_time"] = 1677223354,
-					["realm"] = "Thunderhorn",
+				["Player-1602-0F50C767"] = {
+					["name"] = "коунтрин-Гордунни",
+					["guid"] = "Player-1602-0F50C767",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676385549,
+					["realm"] = "Гордунни",
 				},
-				["Player-1379-052D61CE"] = {
-					["name"] = "Bullord-Uldum",
-					["guid"] = "Player-1379-052D61CE",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686934454,
-					["realm"] = "Uldum",
+				["Player-3682-0B09E3F2"] = {
+					["ilvl"] = 437.9375,
+					["guid"] = "Player-3682-0B09E3F2",
+					["class"] = "EVOKER",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1686170372,
+					["rank"] = "Mythic Raider",
+					["name"] = "Sliyrak-Ragnaros",
+					["specID"] = 1467,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3674-05B1449F"] = {
 					["name"] = "Blessis-TwistingNether",
@@ -21515,12 +21718,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676377737,
 					["realm"] = "Ревущийфьорд",
 				},
-				["Player-3674-0B1F7105"] = {
-					["name"] = "Nagå-TwistingNether",
-					["guid"] = "Player-3674-0B1F7105",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1680470506,
-					["realm"] = "TwistingNether",
+				["Player-3682-0AF6EC75"] = {
+					["name"] = "Samysk-Ragnaros",
+					["guid"] = "Player-3682-0AF6EC75",
+					["class"] = "DRUID",
+					["cache_time"] = 1676814556,
+					["realm"] = "Ragnaros",
 				},
 				["Player-580-0A6A92ED"] = {
 					["name"] = "Ahímoth-Blackmoore",
@@ -21529,12 +21732,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677606207,
 					["realm"] = "Blackmoore",
 				},
-				["Player-3674-0AEB1E44"] = {
-					["name"] = "Gacangur-TwistingNether",
-					["guid"] = "Player-3674-0AEB1E44",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1680290994,
-					["realm"] = "TwistingNether",
+				["Player-1121-04B021BC"] = {
+					["name"] = "Quelly-DasSyndikat",
+					["guid"] = "Player-1121-04B021BC",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676973948,
+					["realm"] = "DasSyndikat",
 				},
 				["Player-1602-0F4700CA"] = {
 					["name"] = "древесница-Гордунни",
@@ -21570,37 +21773,32 @@ RCLootCouncilDB = {
 					["class"] = "WARLOCK",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1680122031,
-					["realm"] = "Kazzak",
+					["rank"] = "Raider",
 					["name"] = "Moglocked-Kazzak",
 					["specID"] = 266,
 					["enchantingLvl"] = 0,
-					["rank"] = "Raider",
+					["realm"] = "Kazzak",
 				},
-				["Player-1596-075D11E3"] = {
-					["name"] = "Naughtykitty-TheMaelstrom",
-					["guid"] = "Player-1596-075D11E3",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677665404,
-					["realm"] = "TheMaelstrom",
+				["Player-1403-0A244158"] = {
+					["name"] = "Healstone-Draenor",
+					["guid"] = "Player-1403-0A244158",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1684277685,
+					["realm"] = "Draenor",
 				},
-				["Player-3682-0B09E3F2"] = {
-					["ilvl"] = 437.9375,
-					["guid"] = "Player-3682-0B09E3F2",
-					["class"] = "EVOKER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1686170372,
-					["realm"] = "Ragnaros",
-					["name"] = "Sliyrak-Ragnaros",
-					["specID"] = 1467,
-					["enchantingLvl"] = 0,
-					["rank"] = "Mythic Raider",
+				["Player-3391-086EA3AF"] = {
+					["name"] = "Elhesia-Silvermoon",
+					["guid"] = "Player-3391-086EA3AF",
+					["class"] = "DRUID",
+					["cache_time"] = 1687298820,
+					["realm"] = "Silvermoon",
 				},
-				["Player-604-09EEA15F"] = {
-					["name"] = "Milian-Thrall",
-					["guid"] = "Player-604-09EEA15F",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1687257934,
-					["realm"] = "Thrall",
+				["Player-1305-0C800179"] = {
+					["name"] = "Mahejdi-Kazzak",
+					["guid"] = "Player-1305-0C800179",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687791012,
+					["realm"] = "Kazzak",
 				},
 				["Player-1403-09BF6AC3"] = {
 					["name"] = "Eatmeillidan-Draenor",
@@ -21609,12 +21807,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689618153,
 					["realm"] = "Draenor",
 				},
-				["Player-2073-071707DF"] = {
-					["name"] = "Agapimenus-Stormscale",
-					["guid"] = "Player-2073-071707DF",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1684413259,
-					["realm"] = "Stormscale",
+				["Player-1091-04FF0CD1"] = {
+					["name"] = "Nouch-Emeriss",
+					["guid"] = "Player-1091-04FF0CD1",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1686971553,
+					["realm"] = "Emeriss",
 				},
 				["Player-604-08B5F3AD"] = {
 					["name"] = "Schlìtz-Thrall",
@@ -21644,91 +21842,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680708830,
 					["realm"] = "ShatteredHand",
 				},
-				["Player-1305-0C8EF384"] = {
-					["name"] = "Tóothlèss-Kazzak",
-					["guid"] = "Player-1305-0C8EF384",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689677222,
-					["realm"] = "Kazzak",
-				},
-				["Player-3682-05C5D679"] = {
-					["name"] = "Lódís-Ragnaros",
-					["guid"] = "Player-3682-05C5D679",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1676533093,
-					["realm"] = "Ragnaros",
-				},
-				["Player-612-0A668579"] = {
-					["name"] = "Exxo-Destromath",
-					["guid"] = "Player-612-0A668579",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687102798,
-					["realm"] = "Destromath",
-				},
-				["Player-1084-0A68C9A1"] = {
-					["name"] = "Sokekboii-TarrenMill",
-					["guid"] = "Player-1084-0A68C9A1",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1687040673,
-					["realm"] = "TarrenMill",
-				},
-				["Player-3691-09F7DE4D"] = {
-					["name"] = "Ilonie-Blackhand",
-					["guid"] = "Player-3691-09F7DE4D",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676439631,
-					["realm"] = "Blackhand",
-				},
-				["Player-1604-0F454DAD"] = {
-					["name"] = "аленкинакин-СвежевательДуш",
-					["guid"] = "Player-1604-0F454DAD",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687102801,
-					["realm"] = "СвежевательДуш",
-				},
-				["Player-3691-06A1F1AA"] = {
-					["name"] = "Depletion-Blackhand",
-					["guid"] = "Player-3691-06A1F1AA",
-					["class"] = "DRUID",
-					["cache_time"] = 1676331628,
-					["realm"] = "Blackhand",
-				},
-				["Player-1406-0488401E"] = {
-					["name"] = "Wombad-Khaz'goroth",
-					["guid"] = "Player-1406-0488401E",
-					["class"] = "HUNTER",
-					["cache_time"] = 1689699139,
-					["realm"] = "Khaz'goroth",
-				},
-				["Player-1302-0C81E0D3"] = {
-					["name"] = "Wiilybenched-Archimonde",
-					["guid"] = "Player-1302-0C81E0D3",
-					["class"] = "MAGE",
-					["cache_time"] = 1677319954,
-					["realm"] = "Archimonde",
-				},
-				["Player-1091-04FF0CD1"] = {
-					["name"] = "Nouch-Emeriss",
-					["guid"] = "Player-1091-04FF0CD1",
+				["Player-1623-0A9AA869"] = {
+					["name"] = "белоусов-Дракономор",
+					["guid"] = "Player-1623-0A9AA869",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1686971553,
-					["realm"] = "Emeriss",
-				},
-				["Player-1316-07F55442"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Zarhigna-Nemesis",
-					["guid"] = "Player-1316-07F55442",
-					["rank"] = "Alt Officer",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1677489750,
-					["realm"] = "Nemesis",
-				},
-				["Player-1403-080AF440"] = {
-					["name"] = "Shylena-Draenor",
-					["guid"] = "Player-1403-080AF440",
-					["class"] = "PRIEST",
-					["cache_time"] = 1676387096,
-					["realm"] = "Draenor",
+					["cache_time"] = 1685437969,
+					["realm"] = "Дракономор",
 				},
 				["Player-1621-0B165433"] = {
 					["name"] = "Koralion-MarécagedeZangar",
@@ -21737,155 +21856,75 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686934343,
 					["realm"] = "MarécagedeZangar",
 				},
-				["Player-3696-09B813FA"] = {
-					["name"] = "Brewio-Nethersturm",
-					["guid"] = "Player-3696-09B813FA",
-					["class"] = "MONK",
-					["cache_time"] = 1689677222,
-					["realm"] = "Nethersturm",
+				["Player-1305-087AA155"] = {
+					["name"] = "Kushina-Kazzak",
+					["guid"] = "Player-1305-087AA155",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686934454,
+					["realm"] = "Kazzak",
 				},
-				["Player-604-04040D35"] = {
-					["name"] = "Caddi-Thrall",
-					["guid"] = "Player-604-04040D35",
-					["class"] = "DRUID",
-					["cache_time"] = 1687949172,
-					["realm"] = "Thrall",
-				},
-				["Player-580-0A4C8ED1"] = {
-					["name"] = "Nukepriest-Blackmoore",
-					["guid"] = "Player-580-0A4C8ED1",
+				["Player-3691-0491ED87"] = {
+					["name"] = "Allune-Blackhand",
+					["guid"] = "Player-3691-0491ED87",
 					["class"] = "PRIEST",
-					["cache_time"] = 1676370489,
-					["realm"] = "Blackmoore",
+					["cache_time"] = 1687949013,
+					["realm"] = "Blackhand",
 				},
-				["Player-1403-0A5047A7"] = {
-					["name"] = "Bergo-Draenor",
-					["guid"] = "Player-1403-0A5047A7",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686196010,
-					["realm"] = "Draenor",
-				},
-				["Player-3713-0A883B8B"] = {
-					["name"] = "Riupala-BurningLegion",
-					["guid"] = "Player-3713-0A883B8B",
+				["Player-3691-09F7DE4D"] = {
+					["name"] = "Ilonie-Blackhand",
+					["guid"] = "Player-3691-09F7DE4D",
 					["class"] = "PALADIN",
-					["cache_time"] = 1686037845,
-					["realm"] = "BurningLegion",
+					["cache_time"] = 1676439631,
+					["realm"] = "Blackhand",
 				},
-				["Player-1923-0F5F5687"] = {
-					["name"] = "шилка-Ясеневыйлес",
-					["guid"] = "Player-1923-0F5F5687",
-					["class"] = "MONK",
-					["cache_time"] = 1686773989,
-					["realm"] = "Ясеневыйлес",
-				},
-				["Player-3391-0BD1B55C"] = {
-					["name"] = "Juicewrldger-Silvermoon",
-					["guid"] = "Player-3391-0BD1B55C",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676370489,
-					["realm"] = "Silvermoon",
-				},
-				["Player-1598-0F0402B8"] = {
-					["ilvl"] = 437.0625,
-					["guid"] = "Player-1598-0F0402B8",
-					["class"] = "MONK",
-					["role"] = "HEALER",
-					["cache_time"] = 1687260231,
-					["realm"] = "LaughingSkull",
-					["name"] = "Sprecher-LaughingSkull",
-					["specID"] = 270,
-					["enchantingLvl"] = 0,
-					["rank"] = "Officer Main",
-				},
-				["Player-3702-0A802FE5"] = {
-					["name"] = "Azolian-ArgentDawn",
-					["guid"] = "Player-3702-0A802FE5",
+				["Player-3682-0B09B14B"] = {
+					["name"] = "Angale-Ragnaros",
+					["guid"] = "Player-3682-0B09B14B",
 					["class"] = "EVOKER",
-					["cache_time"] = 1687791302,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-1329-0933B86B"] = {
-					["name"] = "Ormal-Ravencrest",
-					["guid"] = "Player-1329-0933B86B",
-					["class"] = "PALADIN",
-					["cache_time"] = 1679747022,
-					["realm"] = "Ravencrest",
-				},
-				["Player-1121-05DFF8B7"] = {
-					["name"] = "Klyra-KultderVerdammten",
-					["guid"] = "Player-1121-05DFF8B7",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687298820,
-					["realm"] = "KultderVerdammten",
-				},
-				["Player-1390-08E062D4"] = {
-					["name"] = "Gromuscle-Hyjal",
-					["guid"] = "Player-1390-08E062D4",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687245813,
-					["realm"] = "Hyjal",
-				},
-				["Player-3682-0B083399"] = {
-					["name"] = "Olgey-Ragnaros",
-					["guid"] = "Player-3682-0B083399",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1688687303,
+					["cache_time"] = 1687956943,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1615-0AEC533E"] = {
-					["name"] = "майндоф-Ревущийфьорд",
-					["guid"] = "Player-1615-0AEC533E",
-					["class"] = "PRIEST",
-					["cache_time"] = 1686121310,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-2073-09C9E9F2"] = {
-					["name"] = "Sjöhäst-Stormscale",
-					["guid"] = "Player-2073-09C9E9F2",
+				["Player-3691-06A1F1AA"] = {
+					["name"] = "Depletion-Blackhand",
+					["guid"] = "Player-3691-06A1F1AA",
 					["class"] = "DRUID",
-					["cache_time"] = 1687949013,
-					["realm"] = "Stormscale",
+					["cache_time"] = 1676331628,
+					["realm"] = "Blackhand",
 				},
-				["Player-3656-083B0CBE"] = {
-					["ilvl"] = 419.75,
-					["guid"] = "Player-3656-083B0CBE",
-					["class"] = "SHAMAN",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1685745494,
-					["realm"] = "Stormreaver",
-					["name"] = "Sortaja-Stormreaver",
-					["specID"] = 262,
-					["enchantingLvl"] = 0,
-					["rank"] = "Sosiaali",
+				["Player-3686-0A03847B"] = {
+					["name"] = "Maoami-Antonidas",
+					["guid"] = "Player-3686-0A03847B",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687259300,
+					["realm"] = "Antonidas",
 				},
-				["Player-580-0A602214"] = {
-					["name"] = "Bovar-Blackmoore",
-					["guid"] = "Player-580-0A602214",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687006559,
-					["realm"] = "Blackmoore",
+				["Player-1302-0C81E0D3"] = {
+					["name"] = "Wiilybenched-Archimonde",
+					["guid"] = "Player-1302-0C81E0D3",
+					["class"] = "MAGE",
+					["cache_time"] = 1677319954,
+					["realm"] = "Archimonde",
 				},
-				["Player-3674-08FF5A34"] = {
-					["name"] = "Oipi-TwistingNether",
-					["guid"] = "Player-3674-08FF5A34",
-					["class"] = "PRIEST",
-					["cache_time"] = 1679506666,
+				["Player-1602-0AF7EF79"] = {
+					["name"] = "стелогрив-Гордунни",
+					["guid"] = "Player-1602-0AF7EF79",
+					["class"] = "HUNTER",
+					["cache_time"] = 1686971553,
+					["realm"] = "Гордунни",
+				},
+				["Player-3674-0B10B5BC"] = {
+					["name"] = "Kishidan-TwistingNether",
+					["guid"] = "Player-3674-0B10B5BC",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1683963823,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3391-0C838AFC"] = {
-					["name"] = "Grêatlord-Silvermoon",
-					["guid"] = "Player-3391-0C838AFC",
-					["class"] = "EVOKER",
-					["cache_time"] = 1680392947,
-					["realm"] = "Silvermoon",
-				},
-				["Player-510-0A4299FF"] = {
-					["name"] = "Gariashy-Vol'jin",
-					["guid"] = "Player-510-0A4299FF",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1677607044,
-					["realm"] = "Vol'jin",
+				["Player-1403-080AF440"] = {
+					["name"] = "Shylena-Draenor",
+					["guid"] = "Player-1403-080AF440",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676387096,
+					["realm"] = "Draenor",
 				},
 				["Player-1084-0A5DE985"] = {
 					["name"] = "Jasmaya-TarrenMill",
@@ -21894,26 +21933,178 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680383988,
 					["realm"] = "TarrenMill",
 				},
-				["Player-1084-05CC5F1B"] = {
-					["name"] = "Priestatsu-TarrenMill",
-					["guid"] = "Player-1084-05CC5F1B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690587500,
-					["realm"] = "TarrenMill",
+				["Player-1390-0C7CFB8D"] = {
+					["name"] = "Winghost-Hyjal",
+					["guid"] = "Player-1390-0C7CFB8D",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676169646,
+					["realm"] = "Hyjal",
 				},
-				["Player-581-0A035A13"] = {
-					["name"] = "Janubian-Blackrock",
-					["guid"] = "Player-581-0A035A13",
-					["class"] = "PRIEST",
-					["cache_time"] = 1678052884,
-					["realm"] = "Blackrock",
+				["Player-1390-08E062D4"] = {
+					["name"] = "Gromuscle-Hyjal",
+					["guid"] = "Player-1390-08E062D4",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1687245813,
+					["realm"] = "Hyjal",
 				},
-				["Player-1602-097179CF"] = {
-					["name"] = "алёналёд-Гордунни",
-					["guid"] = "Player-1602-097179CF",
-					["class"] = "MAGE",
-					["cache_time"] = 1687791012,
+				["Player-1302-0C8EAD97"] = {
+					["name"] = "Wzaka-Archimonde",
+					["guid"] = "Player-1302-0C8EAD97",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687261056,
+					["realm"] = "Archimonde",
+				},
+				["Player-1403-0A5047A7"] = {
+					["name"] = "Bergo-Draenor",
+					["guid"] = "Player-1403-0A5047A7",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686196010,
+					["realm"] = "Draenor",
+				},
+				["Player-580-0A4C8ED1"] = {
+					["name"] = "Nukepriest-Blackmoore",
+					["guid"] = "Player-580-0A4C8ED1",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676370489,
+					["realm"] = "Blackmoore",
+				},
+				["Player-1923-0F5F5687"] = {
+					["name"] = "шилка-Ясеневыйлес",
+					["guid"] = "Player-1923-0F5F5687",
+					["class"] = "MONK",
+					["cache_time"] = 1686773989,
+					["realm"] = "Ясеневыйлес",
+				},
+				["Player-3691-09D3ED6C"] = {
+					["name"] = "Reddáwn-Blackhand",
+					["guid"] = "Player-3691-09D3ED6C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1684926332,
+					["realm"] = "Blackhand",
+				},
+				["Player-1621-055E5FDE"] = {
+					["name"] = "Avøne-Dalaran",
+					["guid"] = "Player-1621-055E5FDE",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1687041442,
+					["realm"] = "Dalaran",
+				},
+				["Player-3691-06209390"] = {
+					["name"] = "åsenath-Blackhand",
+					["guid"] = "Player-3691-06209390",
+					["class"] = "ROGUE",
+					["cache_time"] = 1686934454,
+					["realm"] = "Blackhand",
+				},
+				["Player-1329-0933B86B"] = {
+					["name"] = "Ormal-Ravencrest",
+					["guid"] = "Player-1329-0933B86B",
+					["class"] = "PALADIN",
+					["cache_time"] = 1679747022,
+					["realm"] = "Ravencrest",
+				},
+				["Player-3674-0B1D4BE8"] = {
+					["name"] = "Demorc-TwistingNether",
+					["guid"] = "Player-3674-0B1D4BE8",
+					["class"] = "ROGUE",
+					["cache_time"] = 1679963788,
+					["realm"] = "TwistingNether",
+				},
+				["Player-1329-09F67613"] = {
+					["name"] = "Tankbrampa-Ravencrest",
+					["guid"] = "Player-1329-09F67613",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677524161,
+					["realm"] = "Ravencrest",
+				},
+				["Player-1403-0A553F12"] = {
+					["name"] = "Tamii-Draenor",
+					["guid"] = "Player-1403-0A553F12",
+					["class"] = "ROGUE",
+					["cache_time"] = 1678536389,
+					["realm"] = "Draenor",
+				},
+				["Player-1390-06DC3558"] = {
+					["name"] = "Schad-Hyjal",
+					["guid"] = "Player-1390-06DC3558",
+					["class"] = "DRUID",
+					["cache_time"] = 1677607044,
+					["realm"] = "Hyjal",
+				},
+				["Player-1379-030F2A31"] = {
+					["name"] = "Primitivix-Zul'jin",
+					["guid"] = "Player-1379-030F2A31",
+					["class"] = "PALADIN",
+					["cache_time"] = 1685745517,
+					["realm"] = "Zul'jin",
+				},
+				["Player-3656-083B0CBE"] = {
+					["ilvl"] = 419.75,
+					["guid"] = "Player-3656-083B0CBE",
+					["class"] = "SHAMAN",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1685745494,
+					["rank"] = "Sosiaali",
+					["name"] = "Sortaja-Stormreaver",
+					["specID"] = 262,
+					["enchantingLvl"] = 0,
+					["realm"] = "Stormreaver",
+				},
+				["Player-1096-0A5B4088"] = {
+					["name"] = "Tarras-DefiasBrotherhood",
+					["guid"] = "Player-1096-0A5B4088",
+					["class"] = "PALADIN",
+					["cache_time"] = 1676783114,
+					["realm"] = "DefiasBrotherhood",
+				},
+				["Player-3690-0A8FD22C"] = {
+					["name"] = "Vultix-KhazModan",
+					["guid"] = "Player-3690-0A8FD22C",
+					["class"] = "ROGUE",
+					["cache_time"] = 1685751153,
+					["realm"] = "KhazModan",
+				},
+				["Player-1403-0A2FA03E"] = {
+					["name"] = "Hunderri-Draenor",
+					["guid"] = "Player-1403-0A2FA03E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676387096,
+					["realm"] = "Draenor",
+				},
+				["Player-510-0A4299FF"] = {
+					["name"] = "Gariashy-Vol'jin",
+					["guid"] = "Player-510-0A4299FF",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677607044,
+					["realm"] = "Vol'jin",
+				},
+				["Player-1602-0F594037"] = {
+					["name"] = "дайвердаун-Гордунни",
+					["guid"] = "Player-1602-0F594037",
+					["class"] = "MONK",
+					["cache_time"] = 1688878042,
 					["realm"] = "Гордунни",
+				},
+				["Player-1403-0A261BEC"] = {
+					["name"] = "Whaytank-Draenor",
+					["guid"] = "Player-1403-0A261BEC",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1677665404,
+					["realm"] = "Draenor",
+				},
+				["Player-3657-0AD0802E"] = {
+					["name"] = "Meromay-Bladefist",
+					["guid"] = "Player-3657-0AD0802E",
+					["class"] = "MONK",
+					["cache_time"] = 1687245813,
+					["realm"] = "Bladefist",
+				},
+				["Player-1305-0C87633C"] = {
+					["name"] = "Ylandaa-Kazzak",
+					["guid"] = "Player-1305-0C87633C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1687952836,
+					["realm"] = "Kazzak",
 				},
 				["Player-1305-0BCA9F41"] = {
 					["name"] = "Rhenya-Kazzak",
@@ -21929,12 +22120,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687304879,
 					["realm"] = "Ragnaros",
 				},
-				["Player-3692-061461CE"] = {
-					["name"] = "Gauntlgrym-Eredar",
-					["guid"] = "Player-3692-061461CE",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687949013,
-					["realm"] = "Eredar",
+				["Player-1305-0C02D470"] = {
+					["name"] = "Scrumptlous-Kazzak",
+					["guid"] = "Player-1305-0C02D470",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1680388235,
+					["realm"] = "Kazzak",
 				},
 				["Player-3682-0B1C6402"] = {
 					["name"] = "Jeresmash-Ragnaros",
@@ -21950,26 +22141,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690056758,
 					["realm"] = "Гордунни",
 				},
-				["Player-3702-0995F4A6"] = {
-					["name"] = "Nieena-ArgentDawn",
-					["guid"] = "Player-3702-0995F4A6",
-					["class"] = "DRUID",
-					["cache_time"] = 1685740823,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-3691-0491ED87"] = {
-					["name"] = "Allune-Blackhand",
-					["guid"] = "Player-3691-0491ED87",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687949013,
+				["Player-3691-0499717C"] = {
+					["name"] = "Râggnâr-Blackhand",
+					["guid"] = "Player-3691-0499717C",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1713977576,
 					["realm"] = "Blackhand",
 				},
-				["Player-3702-0A94BAE2"] = {
-					["name"] = "Heycj-ArgentDawn",
-					["guid"] = "Player-3702-0A94BAE2",
-					["class"] = "PALADIN",
-					["cache_time"] = 1680437946,
-					["realm"] = "ArgentDawn",
+				["Player-3692-09C174CC"] = {
+					["name"] = "Himmelsseele-Eredar",
+					["guid"] = "Player-3692-09C174CC",
+					["class"] = "DRUID",
+					["cache_time"] = 1687259300,
+					["realm"] = "Eredar",
+				},
+				["Player-1329-09E17821"] = {
+					["name"] = "Syrra-Ravencrest",
+					["guid"] = "Player-1329-09E17821",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1685573070,
+					["realm"] = "Ravencrest",
 				},
 				["Player-3682-0B08F657"] = {
 					["name"] = "Prototyilli-Ragnaros",
@@ -21978,96 +22169,102 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677672192,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0C87633C"] = {
-					["name"] = "Ylandaa-Kazzak",
-					["guid"] = "Player-1305-0C87633C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687952836,
-					["realm"] = "Kazzak",
-				},
-				["Player-580-07FC697B"] = {
-					["name"] = "Cáph-Blackmoore",
-					["guid"] = "Player-580-07FC697B",
-					["class"] = "MAGE",
+				["Player-581-08E406E3"] = {
+					["name"] = "Joghurtladen-Blackrock",
+					["guid"] = "Player-581-08E406E3",
+					["class"] = "DEMONHUNTER",
 					["cache_time"] = 1687949013,
-					["realm"] = "Blackmoore",
-				},
-				["Player-581-08B1C644"] = {
-					["name"] = "Teliriyon-Blackrock",
-					["guid"] = "Player-581-08B1C644",
-					["class"] = "PALADIN",
-					["cache_time"] = 1684926332,
 					["realm"] = "Blackrock",
 				},
-				["Player-1096-08BC646E"] = {
-					["name"] = "Exion-Ravenholdt",
-					["guid"] = "Player-1096-08BC646E",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687298820,
-					["realm"] = "Ravenholdt",
-				},
-				["Player-1379-0547C5A6"] = {
-					["name"] = "Shïnna-Sanguino",
-					["guid"] = "Player-1379-0547C5A6",
+				["Player-1597-0D09B42A"] = {
+					["name"] = "Pewsey-Sylvanas",
+					["guid"] = "Player-1597-0D09B42A",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1688889814,
-					["realm"] = "Sanguino",
+					["cache_time"] = 1678411108,
+					["realm"] = "Sylvanas",
 				},
-				["Player-1602-0C9C71BA"] = {
-					["name"] = "упругийбанан-Гордунни",
-					["guid"] = "Player-1602-0C9C71BA",
+				["Player-1316-0497005A"] = {
+					["ilvl"] = 434.625,
+					["guid"] = "Player-1316-0497005A",
+					["class"] = "SHAMAN",
+					["realm"] = "Nemesis",
+					["role"] = "HEALER",
+					["cache_time"] = 1687949444,
+					["name"] = "Restregone-Nemesis",
+					["specID"] = 264,
+					["enchanter"] = true,
+					["enchantingLvl"] = 98,
+					["rank"] = "Social",
+				},
+				["Player-1403-0A57D0E7"] = {
+					["name"] = "Penelopex-Draenor",
+					["guid"] = "Player-1403-0A57D0E7",
+					["class"] = "PRIEST",
+					["cache_time"] = 1686696451,
+					["realm"] = "Draenor",
+				},
+				["Player-1305-0881A7BF"] = {
+					["name"] = "Zoulian-Kazzak",
+					["guid"] = "Player-1305-0881A7BF",
 					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1688687270,
-					["realm"] = "Гордунни",
-				},
-				["Player-3691-0946A932"] = {
-					["name"] = "Pushl-Blackhand",
-					["guid"] = "Player-3691-0946A932",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1677665404,
-					["realm"] = "Blackhand",
-				},
-				["Player-1305-0C901852"] = {
-					["name"] = "Pikhoo-Kazzak",
-					["guid"] = "Player-1305-0C901852",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687257934,
+					["cache_time"] = 1677885943,
 					["realm"] = "Kazzak",
 				},
-				["Player-3674-09213C1F"] = {
-					["name"] = "Kubaiisi-TwistingNether",
-					["guid"] = "Player-3674-09213C1F",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1686935978,
-					["realm"] = "TwistingNether",
+				["Player-1390-0C928DFE"] = {
+					["name"] = "Minytonton-Hyjal",
+					["guid"] = "Player-1390-0C928DFE",
+					["class"] = "HUNTER",
+					["cache_time"] = 1689346075,
+					["realm"] = "Hyjal",
 				},
-				["Player-581-092D17E0"] = {
-					["name"] = "Fihptak-Blackrock",
-					["guid"] = "Player-581-092D17E0",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1678642525,
-					["realm"] = "Blackrock",
-				},
-				["Player-3674-0AC1BDD8"] = {
-					["name"] = "Meap-TwistingNether",
-					["guid"] = "Player-3674-0AC1BDD8",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1680392947,
-					["realm"] = "TwistingNether",
-				},
-				["Player-3656-0A9C8ED1"] = {
-					["name"] = "Maggmawl-Stormreaver",
-					["guid"] = "Player-3656-0A9C8ED1",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1686873759,
-					["realm"] = "Stormreaver",
-				},
-				["Player-1403-08121AE0"] = {
-					["name"] = "Voedh-Draenor",
-					["guid"] = "Player-1403-08121AE0",
-					["class"] = "DEMONHUNTER",
+				["Player-1305-0C8D4967"] = {
+					["name"] = "Szkala-Kazzak",
+					["guid"] = "Player-1305-0C8D4967",
+					["class"] = "HUNTER",
 					["cache_time"] = 1687041442,
-					["realm"] = "Draenor",
+					["realm"] = "Kazzak",
+				},
+				["Player-1329-09D666B4"] = {
+					["name"] = "Kanexs-Ravencrest",
+					["guid"] = "Player-1329-09D666B4",
+					["class"] = "ROGUE",
+					["cache_time"] = 1689259343,
+					["realm"] = "Ravencrest",
+				},
+				["Player-1305-08D84DA2"] = {
+					["name"] = "Kaizokuoprst-Kazzak",
+					["guid"] = "Player-1305-08D84DA2",
+					["class"] = "PRIEST",
+					["cache_time"] = 1687949172,
+					["realm"] = "Kazzak",
+				},
+				["Player-1615-0AE02942"] = {
+					["name"] = "шамёр-Ревущийфьорд",
+					["guid"] = "Player-1615-0AE02942",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676790256,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1305-0C29064C"] = {
+					["name"] = "Titanïa-Kazzak",
+					["guid"] = "Player-1305-0C29064C",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1688985357,
+					["realm"] = "Kazzak",
+				},
+				["Player-1615-0A57CFF8"] = {
+					["name"] = "эллектор-Ревущийфьорд",
+					["guid"] = "Player-1615-0A57CFF8",
+					["class"] = "MONK",
+					["cache_time"] = 1679506666,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-1615-0A61833E"] = {
+					["name"] = "наэки-Ревущийфьорд",
+					["guid"] = "Player-1615-0A61833E",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1687791012,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3674-0B2411A0"] = {
 					["ilvl"] = 423.25,
@@ -22075,18 +22272,18 @@ RCLootCouncilDB = {
 					["class"] = "WARLOCK",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1683918892,
-					["realm"] = "TwistingNether",
+					["rank"] = "Member",
 					["name"] = "Shínza-TwistingNether",
 					["specID"] = 267,
 					["enchantingLvl"] = 0,
-					["rank"] = "Member",
+					["realm"] = "TwistingNether",
 				},
-				["Player-3703-0A030A34"] = {
-					["name"] = "Strongkong-Frostwolf",
-					["guid"] = "Player-3703-0A030A34",
-					["class"] = "PALADIN",
-					["cache_time"] = 1686121310,
-					["realm"] = "Frostwolf",
+				["Player-509-0553DD72"] = {
+					["name"] = "Chamenerve-Sargeras",
+					["guid"] = "Player-509-0553DD72",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1687949367,
+					["realm"] = "Sargeras",
 				},
 				["Player-581-06E83C99"] = {
 					["name"] = "Buhôi-Blackrock",
@@ -22095,12 +22292,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683073477,
 					["realm"] = "Blackrock",
 				},
-				["Player-1305-0C8D4967"] = {
-					["name"] = "Szkala-Kazzak",
-					["guid"] = "Player-1305-0C8D4967",
-					["class"] = "HUNTER",
-					["cache_time"] = 1687041442,
-					["realm"] = "Kazzak",
+				["Player-3674-0B276C98"] = {
+					["name"] = "Burntleather-TwistingNether",
+					["guid"] = "Player-3674-0B276C98",
+					["class"] = "MONK",
+					["cache_time"] = 1687157687,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1379-0ADD039B"] = {
 					["name"] = "Shyrlero-Uldum",
@@ -22116,12 +22313,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684926332,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1615-0AE02942"] = {
-					["name"] = "шамёр-Ревущийфьорд",
-					["guid"] = "Player-1615-0AE02942",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676790256,
-					["realm"] = "Ревущийфьорд",
+				["Player-1305-08B552BC"] = {
+					["name"] = "Samwide-Kazzak",
+					["guid"] = "Player-1305-08B552BC",
+					["class"] = "HUNTER",
+					["cache_time"] = 1688296901,
+					["realm"] = "Kazzak",
 				},
 				["Player-3674-0B21A24F"] = {
 					["name"] = "Grimoirepala-TwistingNether",
@@ -22130,12 +22327,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684125836,
 					["realm"] = "TwistingNether",
 				},
-				["Player-1615-0A57CFF8"] = {
-					["name"] = "эллектор-Ревущийфьорд",
-					["guid"] = "Player-1615-0A57CFF8",
-					["class"] = "MONK",
-					["cache_time"] = 1679506666,
-					["realm"] = "Ревущийфьорд",
+				["Player-1390-0BE351C7"] = {
+					["name"] = "Echysman-Hyjal",
+					["guid"] = "Player-1390-0BE351C7",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1689004698,
+					["realm"] = "Hyjal",
 				},
 				["Player-3682-0B0AE781"] = {
 					["name"] = "Tessarionn-Ragnaros",
@@ -22151,12 +22348,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687791012,
 					["realm"] = "Sylvanas",
 				},
-				["Player-509-0553DD72"] = {
-					["name"] = "Chamenerve-Sargeras",
-					["guid"] = "Player-509-0553DD72",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687949367,
-					["realm"] = "Sargeras",
+				["Player-3391-0C6C954D"] = {
+					["name"] = "Nightrez-Silvermoon",
+					["guid"] = "Player-3391-0C6C954D",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1688303691,
+					["realm"] = "Silvermoon",
 				},
 				["Player-3674-0B26A942"] = {
 					["name"] = "Wasert-TwistingNether",
@@ -22165,19 +22362,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685329621,
 					["realm"] = "TwistingNether",
 				},
-				["Player-3674-0B276C98"] = {
-					["name"] = "Burntleather-TwistingNether",
-					["guid"] = "Player-3674-0B276C98",
-					["class"] = "MONK",
-					["cache_time"] = 1687157687,
-					["realm"] = "TwistingNether",
+				["Player-581-0A66A0F7"] = {
+					["name"] = "Geniehendrix-Blackrock",
+					["guid"] = "Player-581-0A66A0F7",
+					["class"] = "ROGUE",
+					["cache_time"] = 1676190291,
+					["realm"] = "Blackrock",
 				},
-				["Player-3391-0BB7AEA6"] = {
-					["name"] = "Therca-Silvermoon",
-					["guid"] = "Player-3391-0BB7AEA6",
-					["class"] = "DRUID",
-					["cache_time"] = 1687791302,
-					["realm"] = "Silvermoon",
+				["Player-1084-0A728CBF"] = {
+					["name"] = "Shrog-TarrenMill",
+					["guid"] = "Player-1084-0A728CBF",
+					["class"] = "HUNTER",
+					["cache_time"] = 1686754263,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1305-0C795508"] = {
 					["name"] = "Infectedmosh-Kazzak",
@@ -22186,11 +22383,11 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688983952,
 					["realm"] = "Kazzak",
 				},
-				["Player-1305-08B552BC"] = {
-					["name"] = "Samwide-Kazzak",
-					["guid"] = "Player-1305-08B552BC",
-					["class"] = "HUNTER",
-					["cache_time"] = 1688296901,
+				["Player-1305-0C891B3F"] = {
+					["name"] = "Neymor-Kazzak",
+					["guid"] = "Player-1305-0C891B3F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1688874501,
 					["realm"] = "Kazzak",
 				},
 				["Player-3691-0A0156EA"] = {
@@ -22221,12 +22418,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676808823,
 					["realm"] = "Nagrand",
 				},
-				["Player-1604-0F589CBD"] = {
-					["name"] = "драге-СвежевательДуш",
-					["guid"] = "Player-1604-0F589CBD",
-					["class"] = "ROGUE",
-					["cache_time"] = 1680290994,
-					["realm"] = "СвежевательДуш",
+				["Player-1084-0A9297E9"] = {
+					["name"] = "Phoeniixx-TarrenMill",
+					["guid"] = "Player-1084-0A9297E9",
+					["class"] = "HUNTER",
+					["cache_time"] = 1676606635,
+					["realm"] = "TarrenMill",
 				},
 				["Player-510-0A540A85"] = {
 					["name"] = "Ainoko-Vol'jin",
@@ -22249,25 +22446,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676311312,
 					["realm"] = "Draenor",
 				},
-				["Player-3703-04CDCF36"] = {
-					["name"] = "Firstwarrior-Frostwolf",
-					["guid"] = "Player-3703-04CDCF36",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686121310,
-					["realm"] = "Frostwolf",
+				["Player-1379-0AD15E0C"] = {
+					["name"] = "Krysiotv-Zul'jin",
+					["guid"] = "Player-1379-0AD15E0C",
+					["class"] = "EVOKER",
+					["cache_time"] = 1676973948,
+					["realm"] = "Zul'jin",
 				},
-				["Player-3682-05D07C90"] = {
-					["ilvl"] = 443.625,
-					["guid"] = "Player-3682-05D07C90",
-					["class"] = "WARLOCK",
-					["rank"] = "Trial",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1689281451,
-					["name"] = "Papee-Ragnaros",
-					["enchanter"] = true,
-					["specID"] = 267,
-					["enchantingLvl"] = 105,
-					["realm"] = "Ragnaros",
+				["Player-1084-0A4E1384"] = {
+					["name"] = "Varoa-TarrenMill",
+					["guid"] = "Player-1084-0A4E1384",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1689182151,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1303-0B5B24AE"] = {
 					["name"] = "Zarodai-Frostmane",
@@ -22276,40 +22467,51 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678461554,
 					["realm"] = "Frostmane",
 				},
-				["Player-1313-0C8B8FBE"] = {
-					["name"] = "Teryc-Wildhammer",
-					["guid"] = "Player-1313-0C8B8FBE",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1688301840,
-					["realm"] = "Wildhammer",
-				},
-				["Player-1379-0AA7C84F"] = {
-					["name"] = "Flashkete-Sanguino",
-					["guid"] = "Player-1379-0AA7C84F",
-					["class"] = "ROGUE",
-					["cache_time"] = 1687245813,
-					["realm"] = "Sanguino",
-				},
-				["Player-3682-075BDFB1"] = {
-					["name"] = "Voldeath-Ragnaros",
-					["guid"] = "Player-3682-075BDFB1",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1679506666,
-					["realm"] = "Ragnaros",
-				},
-				["Player-1390-0B8BC333"] = {
-					["name"] = "Banyuk-Hyjal",
-					["guid"] = "Player-1390-0B8BC333",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676973948,
+				["Player-1390-0C63D639"] = {
+					["name"] = "Becksai-Hyjal",
+					["guid"] = "Player-1390-0C63D639",
+					["class"] = "DRUID",
+					["cache_time"] = 1689346075,
 					["realm"] = "Hyjal",
 				},
-				["Player-580-0A4A07F7"] = {
-					["name"] = "Latriax-Blackmoore",
-					["guid"] = "Player-580-0A4A07F7",
-					["class"] = "DRUID",
-					["cache_time"] = 1689677188,
-					["realm"] = "Blackmoore",
+				["Player-3702-062408EE"] = {
+					["name"] = "Darkyoda-ArgentDawn",
+					["guid"] = "Player-3702-062408EE",
+					["class"] = "PRIEST",
+					["cache_time"] = 1679427324,
+					["realm"] = "ArgentDawn",
+				},
+				["Player-1621-0B09C7B6"] = {
+					["ilvl"] = 444.5,
+					["guid"] = "Player-1621-0B09C7B6",
+					["class"] = "EVOKER",
+					["role"] = "HEALER",
+					["cache_time"] = 1690750821,
+					["rank"] = "Roster",
+					["name"] = "Valfor-Dalaran",
+					["specID"] = 1468,
+					["enchantingLvl"] = 0,
+					["realm"] = "Dalaran",
+				},
+				["Player-3674-0B1C6C9E"] = {
+					["name"] = "Icedragon-TwistingNether",
+					["guid"] = "Player-3674-0B1C6C9E",
+					["class"] = "PALADIN",
+					["cache_time"] = 1688923372,
+					["realm"] = "TwistingNether",
+				},
+				["Player-3686-0A0248F7"] = {
+					["ilvl"] = 430.125,
+					["guid"] = "Player-3686-0A0248F7",
+					["class"] = "PRIEST",
+					["realm"] = "Antonidas",
+					["role"] = "HEALER",
+					["cache_time"] = 1685128648,
+					["name"] = "Graywolf-Antonidas",
+					["specID"] = 256,
+					["enchanter"] = true,
+					["enchantingLvl"] = 97,
+					["rank"] = "Raider",
 				},
 				["Player-581-0A72E628"] = {
 					["name"] = "Hpaly-Blackrock",
@@ -22318,19 +22520,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684877955,
 					["realm"] = "Blackrock",
 				},
-				["Player-1615-07FB2370"] = {
-					["name"] = "вылечуска-Ревущийфьорд",
-					["guid"] = "Player-1615-07FB2370",
-					["class"] = "PRIEST",
-					["cache_time"] = 1688908574,
-					["realm"] = "Ревущийфьорд",
+				["Player-3686-09E70649"] = {
+					["name"] = "Wargreatmon-Antonidas",
+					["guid"] = "Player-3686-09E70649",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687952836,
+					["realm"] = "Antonidas",
 				},
-				["Player-1602-0F58B7EF"] = {
-					["name"] = "суперслива-Гордунни",
-					["guid"] = "Player-1602-0F58B7EF",
-					["class"] = "ROGUE",
-					["cache_time"] = 1686614799,
-					["realm"] = "Гордунни",
+				["Player-1301-0BC336D4"] = {
+					["name"] = "Krullee-Outland",
+					["guid"] = "Player-1301-0BC336D4",
+					["class"] = "DRUID",
+					["cache_time"] = 1687961749,
+					["realm"] = "Outland",
 				},
 				["Player-1615-0AE8CC4D"] = {
 					["name"] = "энджиайс-Ревущийфьорд",
@@ -22346,26 +22548,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685342409,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1307-06F98010"] = {
-					["name"] = "Bloodanger-ChamberofAspects",
-					["guid"] = "Player-1307-06F98010",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687949013,
-					["realm"] = "ChamberofAspects",
+				["Player-1390-08C5F72E"] = {
+					["name"] = "Tauriél-Hyjal",
+					["guid"] = "Player-1390-08C5F72E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1677071253,
+					["realm"] = "Hyjal",
 				},
-				["Player-1390-0C63D639"] = {
-					["name"] = "Becksai-Hyjal",
-					["guid"] = "Player-1390-0C63D639",
+				["Player-3682-095A2094"] = {
+					["name"] = "ätalia-Ragnaros",
+					["guid"] = "Player-3682-095A2094",
 					["class"] = "DRUID",
-					["cache_time"] = 1689346075,
-					["realm"] = "Hyjal",
+					["cache_time"] = 1688908568,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1390-0C546112"] = {
-					["name"] = "Cône-Hyjal",
-					["guid"] = "Player-1390-0C546112",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687955030,
-					["realm"] = "Hyjal",
+				["Player-3696-07650B35"] = {
+					["name"] = "Malgorzata-Alexstrasza",
+					["guid"] = "Player-3696-07650B35",
+					["class"] = "HUNTER",
+					["cache_time"] = 1713977576,
+					["realm"] = "Alexstrasza",
 				},
 				["Player-1417-0A00379B"] = {
 					["name"] = "Platepriest-Stormrage",
@@ -22381,47 +22583,47 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680221247,
 					["realm"] = "Kazzak",
 				},
-				["Player-1302-0667E989"] = {
-					["name"] = "Rexvitae-Archimonde",
-					["guid"] = "Player-1302-0667E989",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1688687303,
-					["realm"] = "Archimonde",
-				},
-				["Player-1305-0A4D68BF"] = {
-					["name"] = "Thelitemaze-Kazzak",
-					["guid"] = "Player-1305-0A4D68BF",
-					["class"] = "PALADIN",
-					["cache_time"] = 1680292466,
+				["Player-1305-0A13B021"] = {
+					["name"] = "Morphioos-Kazzak",
+					["guid"] = "Player-1305-0A13B021",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1680437946,
 					["realm"] = "Kazzak",
 				},
-				["Player-3691-09CFE765"] = {
-					["name"] = "Rethias-Blackhand",
-					["guid"] = "Player-3691-09CFE765",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1688687303,
-					["realm"] = "Blackhand",
+				["Player-3682-0B262074"] = {
+					["name"] = "Fakker-Ragnaros",
+					["guid"] = "Player-3682-0B262074",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1686690665,
+					["realm"] = "Ragnaros",
 				},
-				["Player-3691-0A0572BC"] = {
-					["name"] = "Brânde-Blackhand",
-					["guid"] = "Player-3691-0A0572BC",
-					["class"] = "WARRIOR",
+				["Player-1316-0A70E50B"] = {
+					["name"] = "Venethor-Nemesis",
+					["guid"] = "Player-1316-0A70E50B",
+					["class"] = "SHAMAN",
 					["cache_time"] = 1687954070,
-					["realm"] = "Blackhand",
+					["realm"] = "Nemesis",
 				},
-				["Player-1379-0A7EE962"] = {
-					["name"] = "Endrelock-Sanguino",
-					["guid"] = "Player-1379-0A7EE962",
+				["Player-1597-0F43080E"] = {
+					["name"] = "Nordsee-Sylvanas",
+					["guid"] = "Player-1597-0F43080E",
+					["class"] = "PRIEST",
+					["cache_time"] = 1688922037,
+					["realm"] = "Sylvanas",
+				},
+				["Player-512-09D0CC28"] = {
+					["name"] = "Mílenas-Kael'thas",
+					["guid"] = "Player-512-09D0CC28",
 					["class"] = "WARLOCK",
-					["cache_time"] = 1680262695,
-					["realm"] = "Sanguino",
+					["cache_time"] = 1676973948,
+					["realm"] = "Kael'thas",
 				},
-				["Player-1084-08C897A9"] = {
-					["name"] = "Shadowslady-TarrenMill",
-					["guid"] = "Player-1084-08C897A9",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1687953965,
-					["realm"] = "TarrenMill",
+				["Player-1379-0ACE126A"] = {
+					["name"] = "Sneigramos-Sanguino",
+					["guid"] = "Player-1379-0ACE126A",
+					["class"] = "DRUID",
+					["cache_time"] = 1689617412,
+					["realm"] = "Sanguino",
 				},
 				["Player-1302-0BEBD3C3"] = {
 					["name"] = "Diposite-Archimonde",
@@ -22444,12 +22646,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1675869700,
 					["realm"] = "Eredar",
 				},
-				["Player-1403-079985C6"] = {
-					["name"] = "Tylk-Draenor",
-					["guid"] = "Player-1403-079985C6",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687949672,
-					["realm"] = "Draenor",
+				["Player-1305-0C629985"] = {
+					["name"] = "Loordmonk-Kazzak",
+					["guid"] = "Player-1305-0C629985",
+					["class"] = "MONK",
+					["cache_time"] = 1688985357,
+					["realm"] = "Kazzak",
 				},
 				["Player-3713-0ADFE068"] = {
 					["name"] = "Badxman-BurningLegion",
@@ -22465,72 +22667,61 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684926332,
 					["realm"] = "Blackhand",
 				},
-				["Player-1316-0A70E50B"] = {
-					["name"] = "Venethor-Nemesis",
-					["guid"] = "Player-1316-0A70E50B",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1687954070,
-					["realm"] = "Nemesis",
+				["Player-3391-0C93F0DF"] = {
+					["name"] = "Kayekin-Silvermoon",
+					["guid"] = "Player-3391-0C93F0DF",
+					["class"] = "MAGE",
+					["cache_time"] = 1688985349,
+					["realm"] = "Silvermoon",
 				},
-				["Player-1403-0A5A7790"] = {
-					["name"] = "Rigidum-Draenor",
-					["guid"] = "Player-1403-0A5A7790",
-					["class"] = "EVOKER",
-					["cache_time"] = 1678230027,
-					["realm"] = "Draenor",
+				["Player-1390-0C505AE7"] = {
+					["name"] = "Ishuzú-Hyjal",
+					["guid"] = "Player-1390-0C505AE7",
+					["class"] = "MONK",
+					["cache_time"] = 1689387100,
+					["realm"] = "Hyjal",
 				},
-				["Player-3682-0B15D370"] = {
-					["ilvl"] = 441.5,
-					["guid"] = "Player-3682-0B15D370",
-					["class"] = "PRIEST",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1687467846,
-					["realm"] = "Ragnaros",
-					["name"] = "Cryst-Ragnaros",
-					["specID"] = 258,
-					["enchantingLvl"] = 0,
-					["rank"] = "Trial",
-				},
-				["Player-604-0435ACEB"] = {
-					["name"] = "Teufelsseele-Thrall",
-					["guid"] = "Player-604-0435ACEB",
-					["class"] = "ROGUE",
-					["cache_time"] = 1686121947,
-					["realm"] = "Thrall",
-				},
-				["Player-531-07B0224C"] = {
-					["name"] = "Heiligebohne-Terrordar",
-					["guid"] = "Player-531-07B0224C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677607044,
-					["realm"] = "Terrordar",
-				},
-				["Player-1416-079B2F55"] = {
-					["name"] = "Egyptian-Blade'sEdge",
-					["guid"] = "Player-1416-079B2F55",
+				["Player-3674-0B29F332"] = {
+					["name"] = "Sakuranoyuki-TwistingNether",
+					["guid"] = "Player-3674-0B29F332",
 					["class"] = "HUNTER",
-					["cache_time"] = 1688889814,
-					["realm"] = "Blade'sEdge",
+					["cache_time"] = 1689183014,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1925-0B4A7FCF"] = {
-					["name"] = "флаурос-ВечнаяПесня",
-					["guid"] = "Player-1925-0B4A7FCF",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1686126505,
-					["realm"] = "ВечнаяПесня",
+				["Player-3656-07BF9982"] = {
+					["name"] = "Jöötikkä-Stormreaver",
+					["guid"] = "Player-3656-07BF9982",
+					["class"] = "DRUID",
+					["cache_time"] = 1690915840,
+					["realm"] = "Stormreaver",
 				},
-				["Player-3682-0B0664C7"] = {
-					["ilvl"] = 441.25,
-					["guid"] = "Player-3682-0B0664C7",
+				["Player-1615-0B09B609"] = {
+					["name"] = "ржаволёт-Ревущийфьорд",
+					["guid"] = "Player-1615-0B09B609",
+					["class"] = "EVOKER",
+					["cache_time"] = 1686934454,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-512-06B42935"] = {
+					["name"] = "Moarn-Kael'thas",
+					["guid"] = "Player-512-06B42935",
 					["class"] = "WARRIOR",
-					["realm"] = "Ragnaros",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1688676359,
-					["name"] = "Rap-Ragnaros",
-					["specID"] = 72,
-					["enchanter"] = true,
-					["enchantingLvl"] = 57,
-					["rank"] = "Raider",
+					["cache_time"] = 1686121310,
+					["realm"] = "Kael'thas",
+				},
+				["Player-3674-0AF44219"] = {
+					["name"] = "Sørenspind-TwistingNether",
+					["guid"] = "Player-3674-0AF44219",
+					["class"] = "DRUID",
+					["cache_time"] = 1686933987,
+					["realm"] = "TwistingNether",
+				},
+				["Player-1615-09DD7BC3"] = {
+					["name"] = "таздингот-Ревущийфьорд",
+					["guid"] = "Player-1615-09DD7BC3",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1688888605,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3674-0B264AA1"] = {
 					["name"] = "Ziyankar-TwistingNether",
@@ -22546,19 +22737,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687949172,
 					["realm"] = "Hyjal",
 				},
-				["Player-1390-0C505AE7"] = {
-					["name"] = "Ishuzú-Hyjal",
-					["guid"] = "Player-1390-0C505AE7",
-					["class"] = "MONK",
-					["cache_time"] = 1689387100,
-					["realm"] = "Hyjal",
+				["Player-570-05B4125E"] = {
+					["name"] = "Emilynn-Baelgun",
+					["guid"] = "Player-570-05B4125E",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689290162,
+					["realm"] = "Baelgun",
 				},
-				["Player-1329-0A018999"] = {
-					["name"] = "Hellgardigan-Ravencrest",
-					["guid"] = "Player-1329-0A018999",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1687298820,
-					["realm"] = "Ravencrest",
+				["Player-1615-0B214D3D"] = {
+					["name"] = "айсайсбейби-Ревущийфьорд",
+					["guid"] = "Player-1615-0B214D3D",
+					["class"] = "DRUID",
+					["cache_time"] = 1685864518,
+					["realm"] = "Ревущийфьорд",
 				},
 				["Player-3713-09303A55"] = {
 					["name"] = "Kawa-BurningLegion",
@@ -22567,75 +22758,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685745494,
 					["realm"] = "BurningLegion",
 				},
-				["Player-1305-0C629985"] = {
-					["name"] = "Loordmonk-Kazzak",
-					["guid"] = "Player-1305-0C629985",
-					["class"] = "MONK",
-					["cache_time"] = 1688985357,
-					["realm"] = "Kazzak",
-				},
-				["Player-1615-0B0A4102"] = {
-					["name"] = "змиаш-Ревущийфьорд",
-					["guid"] = "Player-1615-0B0A4102",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689353247,
-					["realm"] = "Ревущийфьорд",
-				},
-				["Player-1302-09F279A5"] = {
-					["name"] = "Eclawpé-Archimonde",
-					["guid"] = "Player-1302-09F279A5",
+				["Player-1084-0AA1234E"] = {
+					["name"] = "Kumadruid-TarrenMill",
+					["guid"] = "Player-1084-0AA1234E",
 					["class"] = "DRUID",
-					["cache_time"] = 1689772053,
-					["realm"] = "Archimonde",
-				},
-				["Player-3682-0B292702"] = {
-					["name"] = "Wârpig-Ragnaros",
-					["guid"] = "Player-3682-0B292702",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1689297589,
-					["realm"] = "Ragnaros",
-				},
-				["Player-604-0A6BF2EE"] = {
-					["name"] = "Hûmunûku-Thrall",
-					["guid"] = "Player-604-0A6BF2EE",
-					["class"] = "HUNTER",
-					["cache_time"] = 1679027919,
-					["realm"] = "Thrall",
-				},
-				["Player-581-040E0850"] = {
-					["name"] = "Nyerâ-Blackrock",
-					["guid"] = "Player-581-040E0850",
-					["class"] = "PRIEST",
-					["cache_time"] = 1687949013,
-					["realm"] = "Blackrock",
-				},
-				["Player-3692-092EFA0D"] = {
-					["name"] = "Hurtsmonk-Eredar",
-					["guid"] = "Player-3692-092EFA0D",
-					["class"] = "MONK",
-					["cache_time"] = 1687949013,
-					["realm"] = "Eredar",
-				},
-				["Player-3682-0A42895A"] = {
-					["name"] = "Yamáto-Ragnaros",
-					["guid"] = "Player-3682-0A42895A",
-					["class"] = "DRUID",
-					["cache_time"] = 1690588981,
-					["realm"] = "Ragnaros",
-				},
-				["Player-604-0A696CE4"] = {
-					["name"] = "Tae-Ambossar",
-					["guid"] = "Player-604-0A696CE4",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689257602,
-					["realm"] = "Ambossar",
-				},
-				["Player-612-06CFD2E0"] = {
-					["name"] = "Krongsmlu-Destromath",
-					["guid"] = "Player-612-06CFD2E0",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1689768633,
-					["realm"] = "Destromath",
+					["cache_time"] = 1689287073,
+					["realm"] = "TarrenMill",
 				},
 				["Player-1604-0EAB94D0"] = {
 					["name"] = "гунфрид-СвежевательДуш",
@@ -22644,12 +22772,75 @@ RCLootCouncilDB = {
 					["cache_time"] = 1688993030,
 					["realm"] = "СвежевательДуш",
 				},
-				["Player-1604-0F5861FB"] = {
-					["name"] = "зенофар-СвежевательДуш",
-					["guid"] = "Player-1604-0F5861FB",
+				["Player-1302-09F279A5"] = {
+					["name"] = "Eclawpé-Archimonde",
+					["guid"] = "Player-1302-09F279A5",
+					["class"] = "DRUID",
+					["cache_time"] = 1689772053,
+					["realm"] = "Archimonde",
+				},
+				["Player-1305-0C60A604"] = {
+					["name"] = "Nisio-Kazzak",
+					["guid"] = "Player-1305-0C60A604",
+					["class"] = "EVOKER",
+					["cache_time"] = 1687248139,
+					["realm"] = "Kazzak",
+				},
+				["Player-1305-0C904AFA"] = {
+					["name"] = "Blazeimpact-Kazzak",
+					["guid"] = "Player-1305-0C904AFA",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689292721,
+					["realm"] = "Kazzak",
+				},
+				["Player-1390-0C72E07B"] = {
+					["name"] = "Nanomurloc-Hyjal",
+					["guid"] = "Player-1390-0C72E07B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1678894799,
+					["realm"] = "Hyjal",
+				},
+				["Player-1335-04EA33C3"] = {
+					["name"] = "Nutsa-Ysondre",
+					["guid"] = "Player-1335-04EA33C3",
+					["class"] = "DRUID",
+					["cache_time"] = 1689004698,
+					["realm"] = "Ysondre",
+				},
+				["Player-581-085C27B2"] = {
+					["name"] = "Dannyexqt-Blackrock",
+					["guid"] = "Player-581-085C27B2",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1686049857,
+					["realm"] = "Blackrock",
+				},
+				["Player-604-0A696CE4"] = {
+					["name"] = "Tae-Ambossar",
+					["guid"] = "Player-604-0A696CE4",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689257602,
+					["realm"] = "Ambossar",
+				},
+				["Player-1099-0A6CA4A9"] = {
+					["name"] = "Trû-Alleria",
+					["guid"] = "Player-1099-0A6CA4A9",
+					["class"] = "DRUID",
+					["cache_time"] = 1677665404,
+					["realm"] = "Alleria",
+				},
+				["Player-3682-0A42895A"] = {
+					["name"] = "Yamáto-Ragnaros",
+					["guid"] = "Player-3682-0A42895A",
+					["class"] = "DRUID",
+					["cache_time"] = 1690588981,
+					["realm"] = "Ragnaros",
+				},
+				["Player-3682-09A25FEC"] = {
+					["name"] = "Yajin-Ragnaros",
+					["guid"] = "Player-3682-09A25FEC",
 					["class"] = "ROGUE",
-					["cache_time"] = 1688993030,
-					["realm"] = "СвежевательДуш",
+					["cache_time"] = 1680431963,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1615-06CC62B4"] = {
 					["name"] = "бильбауфмэн-Ревущийфьорд",
@@ -22671,46 +22862,57 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "DAMAGER",
 					["cache_time"] = 1677180283,
-					["rank"] = "Trial",
+					["realm"] = "Ragnaros",
 					["name"] = "Teckó-Ragnaros",
 					["specID"] = 258,
 					["enchantingLvl"] = 0,
-					["realm"] = "Ragnaros",
+					["rank"] = "Trial",
 				},
-				["Player-1335-04EA33C3"] = {
-					["name"] = "Nutsa-Ysondre",
-					["guid"] = "Player-1335-04EA33C3",
+				["Player-1615-0AE95813"] = {
+					["ilvl"] = 444.5,
+					["guid"] = "Player-1615-0AE95813",
+					["class"] = "PRIEST",
+					["role"] = "DAMAGER",
+					["name"] = "простзайка-Ревущийфьорд",
+					["rank"] = "Тельце",
+					["cache_time"] = 1689252254,
+					["specID"] = 258,
+					["enchantingLvl"] = 0,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-3702-0A80BBC6"] = {
+					["name"] = "Ancelyn-ArgentDawn",
+					["guid"] = "Player-3702-0A80BBC6",
 					["class"] = "DRUID",
-					["cache_time"] = 1689004698,
-					["realm"] = "Ysondre",
+					["cache_time"] = 1679997750,
+					["realm"] = "ArgentDawn",
 				},
-				["Player-1329-09F7D6B5"] = {
-					["name"] = "Legitbruv-Ravencrest",
-					["guid"] = "Player-1329-09F7D6B5",
-					["class"] = "MAGE",
-					["cache_time"] = 1676165355,
-					["realm"] = "Ravencrest",
-				},
-				["Player-3682-081BF5BE"] = {
-					["name"] = "Täkacs-Ragnaros",
-					["guid"] = "Player-3682-081BF5BE",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1687949013,
+				["Player-3682-0B034970"] = {
+					["ilvl"] = 414,
+					["guid"] = "Player-3682-0B034970",
+					["class"] = "DRUID",
 					["realm"] = "Ragnaros",
+					["role"] = "TANK",
+					["cache_time"] = 1675972134,
+					["name"] = "Freddle-Ragnaros",
+					["specID"] = 104,
+					["enchanter"] = true,
+					["enchantingLvl"] = 88,
+					["rank"] = "Alt",
 				},
-				["Player-1602-0F53F60C"] = {
-					["name"] = "лоркрафтер-Гордунни",
-					["guid"] = "Player-1602-0F53F60C",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1676387096,
-					["realm"] = "Гордунни",
+				["Player-3674-070B7880"] = {
+					["name"] = "Kenreis-TwistingNether",
+					["guid"] = "Player-3674-070B7880",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1685745460,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1084-099142B8"] = {
-					["name"] = "Nyuû-TarrenMill",
-					["guid"] = "Player-1084-099142B8",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1689677216,
-					["realm"] = "TarrenMill",
+				["Player-3686-09F5D3F8"] = {
+					["name"] = "Milian-Antonidas",
+					["guid"] = "Player-3686-09F5D3F8",
+					["class"] = "DRUID",
+					["cache_time"] = 1689338809,
+					["realm"] = "Antonidas",
 				},
 				["Player-1390-0C4962A1"] = {
 					["name"] = "Saveme-Hyjal",
@@ -22733,23 +22935,18 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689287248,
 					["realm"] = "Silvermoon",
 				},
-				["Player-1615-0AE95813"] = {
-					["ilvl"] = 444.5,
-					["guid"] = "Player-1615-0AE95813",
-					["class"] = "PRIEST",
-					["role"] = "DAMAGER",
-					["name"] = "простзайка-Ревущийфьорд",
-					["realm"] = "Ревущийфьорд",
-					["cache_time"] = 1689252254,
-					["specID"] = 258,
-					["enchantingLvl"] = 0,
-					["rank"] = "Тельце",
-				},
-				["Player-3674-0B240A7E"] = {
-					["name"] = "Ayugard-TwistingNether",
-					["guid"] = "Player-3674-0B240A7E",
+				["Player-3391-0C3904BA"] = {
+					["name"] = "Maryberrý-Silvermoon",
+					["guid"] = "Player-3391-0C3904BA",
 					["class"] = "DRUID",
-					["cache_time"] = 1689677188,
+					["cache_time"] = 1689800841,
+					["realm"] = "Silvermoon",
+				},
+				["Player-3674-0AE5F61E"] = {
+					["name"] = "Lorennzo-TwistingNether",
+					["guid"] = "Player-3674-0AE5F61E",
+					["class"] = "MAGE",
+					["cache_time"] = 1689677222,
 					["realm"] = "TwistingNether",
 				},
 				["Player-1587-0EC64E72"] = {
@@ -22773,12 +22970,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1679506666,
 					["realm"] = "Balnazzar",
 				},
-				["Player-1335-09D0EAA6"] = {
-					["name"] = "Millko-Ysondre",
-					["guid"] = "Player-1335-09D0EAA6",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1676448650,
-					["realm"] = "Ysondre",
+				["Player-3674-06B13670"] = {
+					["name"] = "Torhian-TwistingNether",
+					["guid"] = "Player-3674-06B13670",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1687102798,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3682-0B09EF1E"] = {
 					["name"] = "Kcu-Ragnaros",
@@ -22787,26 +22984,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687157687,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0C92AA2F"] = {
-					["name"] = "Zulskar-Kazzak",
-					["guid"] = "Player-1305-0C92AA2F",
-					["class"] = "ROGUE",
-					["cache_time"] = 1689247435,
-					["realm"] = "Kazzak",
+				["Player-1335-066E7C35"] = {
+					["name"] = "Bistoukette-Ysondre",
+					["guid"] = "Player-1335-066E7C35",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1676369902,
+					["realm"] = "Ysondre",
 				},
-				["Player-1305-0ACE46C5"] = {
-					["name"] = "Mattadoorr-Kazzak",
-					["guid"] = "Player-1305-0ACE46C5",
-					["class"] = "PALADIN",
-					["cache_time"] = 1677347909,
-					["realm"] = "Kazzak",
+				["Player-1403-06DC14B3"] = {
+					["name"] = "Smellyhands-Draenor",
+					["guid"] = "Player-1403-06DC14B3",
+					["class"] = "MONK",
+					["cache_time"] = 1685573068,
+					["realm"] = "Draenor",
 				},
-				["Player-3682-0ADF29F8"] = {
-					["name"] = "Molesboom-Ragnaros",
-					["guid"] = "Player-3682-0ADF29F8",
-					["class"] = "DRUID",
-					["cache_time"] = 1689800841,
-					["realm"] = "Ragnaros",
+				["Player-3657-0A20C7C9"] = {
+					["name"] = "Shakiraz-Darksorrow",
+					["guid"] = "Player-3657-0A20C7C9",
+					["class"] = "MAGE",
+					["cache_time"] = 1689401454,
+					["realm"] = "Darksorrow",
 				},
 				["Player-1084-09D19613"] = {
 					["name"] = "Rukkari-TarrenMill",
@@ -22829,12 +23026,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686773989,
 					["realm"] = "Hyjal",
 				},
-				["Player-1615-07606BF9"] = {
-					["name"] = "йоулон-Ревущийфьорд",
-					["guid"] = "Player-1615-07606BF9",
-					["class"] = "PALADIN",
-					["cache_time"] = 1687248521,
-					["realm"] = "Ревущийфьорд",
+				["Player-3702-0A73D54C"] = {
+					["name"] = "Sportzdruid-ArgentDawn",
+					["guid"] = "Player-3702-0A73D54C",
+					["class"] = "DRUID",
+					["cache_time"] = 1687041442,
+					["realm"] = "ArgentDawn",
 				},
 				["Player-1390-0C53F8D3"] = {
 					["name"] = "Ilepsyr-Hyjal",
@@ -22850,28 +23047,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1683073733,
 					["realm"] = "Sanguino",
 				},
-				["Player-1403-06DC14B3"] = {
-					["name"] = "Smellyhands-Draenor",
-					["guid"] = "Player-1403-06DC14B3",
-					["class"] = "MONK",
-					["cache_time"] = 1685573068,
+				["Player-1403-0A69ADE2"] = {
+					["name"] = "Retardinxx-Draenor",
+					["guid"] = "Player-1403-0A69ADE2",
+					["class"] = "PALADIN",
+					["cache_time"] = 1690406741,
 					["realm"] = "Draenor",
 				},
-				["Player-1615-0838905A"] = {
-					["name"] = "одрихеппберн-Ревущийфьорд",
-					["guid"] = "Player-1615-0838905A",
-					["class"] = "DRUID",
-					["cache_time"] = 1689353263,
-					["realm"] = "Ревущийфьорд",
+				["Player-1923-04E0B087"] = {
+					["name"] = "соулл-Ясеневыйлес",
+					["guid"] = "Player-1923-04E0B087",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689353247,
+					["realm"] = "Ясеневыйлес",
 				},
-				["Player-3674-0B0A3148"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Draktherion-TwistingNether",
-					["guid"] = "Player-3674-0B0A3148",
-					["realm"] = "TwistingNether",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689183684,
-					["rank"] = "Officer",
+				["Player-1379-0AE75F28"] = {
+					["name"] = "Lamakinamtal-Sanguino",
+					["guid"] = "Player-1379-0AE75F28",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689800300,
+					["realm"] = "Sanguino",
 				},
 				["Player-1305-0BEB3916"] = {
 					["name"] = "Dunkitty-Kazzak",
@@ -22880,12 +23075,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678372296,
 					["realm"] = "Kazzak",
 				},
-				["Player-1390-0C8A8F0B"] = {
-					["name"] = "Vaykia-Hyjal",
-					["guid"] = "Player-1390-0C8A8F0B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689004698,
-					["realm"] = "Hyjal",
+				["Player-3674-0B27DA3B"] = {
+					["name"] = "Teabase-TwistingNether",
+					["guid"] = "Player-3674-0B27DA3B",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689769880,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3681-07BAD478"] = {
 					["name"] = "Sectorclear-Magtheridon",
@@ -22894,12 +23089,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689024234,
 					["realm"] = "Magtheridon",
 				},
-				["Player-3674-0A707994"] = {
-					["name"] = "Enfeebsp-TwistingNether",
-					["guid"] = "Player-3674-0A707994",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689772053,
-					["realm"] = "TwistingNether",
+				["Player-1305-0C8FE493"] = {
+					["name"] = "Bartim-Kazzak",
+					["guid"] = "Player-1305-0C8FE493",
+					["class"] = "ROGUE",
+					["cache_time"] = 1689677208,
+					["realm"] = "Kazzak",
 				},
 				["Player-3703-09F157BF"] = {
 					["name"] = "Høneý-Frostwolf",
@@ -22914,32 +23109,32 @@ RCLootCouncilDB = {
 					["class"] = "DEATHKNIGHT",
 					["role"] = "TANK",
 					["cache_time"] = 1686165354,
-					["realm"] = "Ragnaros",
+					["rank"] = "Recruiter",
 					["name"] = "Mogdead-Ragnaros",
 					["specID"] = 250,
 					["enchantingLvl"] = 0,
-					["rank"] = "Recruiter",
+					["realm"] = "Ragnaros",
 				},
-				["Player-3690-0B23E2D1"] = {
-					["name"] = "Daléno-KhazModan",
-					["guid"] = "Player-3690-0B23E2D1",
-					["class"] = "DRUID",
-					["cache_time"] = 1685751153,
-					["realm"] = "KhazModan",
+				["Player-612-056C9612"] = {
+					["name"] = "Sarkhan-Mannoroth",
+					["guid"] = "Player-612-056C9612",
+					["class"] = "PRIEST",
+					["cache_time"] = 1677607191,
+					["realm"] = "Mannoroth",
 				},
-				["Player-1379-0AE75F28"] = {
-					["name"] = "Lamakinamtal-Sanguino",
-					["guid"] = "Player-1379-0AE75F28",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689800300,
-					["realm"] = "Sanguino",
+				["Player-1615-0A5DEDEE"] = {
+					["name"] = "эстал-Ревущийфьорд",
+					["guid"] = "Player-1615-0A5DEDEE",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689954010,
+					["realm"] = "Ревущийфьорд",
 				},
-				["Player-1305-0B9493F8"] = {
-					["name"] = "Holypojk-Kazzak",
-					["guid"] = "Player-1305-0B9493F8",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689698521,
-					["realm"] = "Kazzak",
+				["Player-1309-0C7B28A3"] = {
+					["name"] = "Eigengrau-Pozzodell'Eternità",
+					["guid"] = "Player-1309-0C7B28A3",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1689954010,
+					["realm"] = "Pozzodell'Eternità",
 				},
 				["Player-1305-0C8441B0"] = {
 					["name"] = "Adefted-Kazzak",
@@ -22955,32 +23150,32 @@ RCLootCouncilDB = {
 					["cache_time"] = 1676951384,
 					["realm"] = "Гордунни",
 				},
-				["Player-1305-0C8FE493"] = {
-					["name"] = "Bartim-Kazzak",
-					["guid"] = "Player-1305-0C8FE493",
-					["class"] = "ROGUE",
-					["cache_time"] = 1689677208,
-					["realm"] = "Kazzak",
+				["Player-1406-048E939A"] = {
+					["name"] = "Daut-Khaz'goroth",
+					["guid"] = "Player-1406-048E939A",
+					["class"] = "MAGE",
+					["cache_time"] = 1713977460,
+					["realm"] = "Khaz'goroth",
 				},
-				["Player-1325-05F6EDC1"] = {
-					["name"] = "Thoragrin-Aggramar",
-					["guid"] = "Player-1325-05F6EDC1",
+				["Player-581-0A5EA180"] = {
+					["name"] = "Komadrac-Blackrock",
+					["guid"] = "Player-581-0A5EA180",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689804288,
+					["realm"] = "Blackrock",
+				},
+				["Player-1403-0A72640C"] = {
+					["name"] = "Robrands-Draenor",
+					["guid"] = "Player-1403-0A72640C",
+					["class"] = "EVOKER",
+					["cache_time"] = 1689804288,
+					["realm"] = "Draenor",
+				},
+				["Player-3674-093AFC1C"] = {
+					["name"] = "Ertunçp-TwistingNether",
+					["guid"] = "Player-3674-093AFC1C",
 					["class"] = "PRIEST",
-					["cache_time"] = 1689800841,
-					["realm"] = "Aggramar",
-				},
-				["Player-1329-09D14A6F"] = {
-					["name"] = "Kalho-Ravencrest",
-					["guid"] = "Player-1329-09D14A6F",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676473627,
-					["realm"] = "Ravencrest",
-				},
-				["Player-3674-0B294E6C"] = {
-					["name"] = "Euslapal-TwistingNether",
-					["guid"] = "Player-3674-0B294E6C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689769880,
+					["cache_time"] = 1687791012,
 					["realm"] = "TwistingNether",
 				},
 				["Player-3682-06E4D0D0"] = {
@@ -22990,61 +23185,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1689183044,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1309-0C7B28A3"] = {
-					["name"] = "Eigengrau-Pozzodell'Eternità",
-					["guid"] = "Player-1309-0C7B28A3",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1689954010,
-					["realm"] = "Pozzodell'Eternità",
-				},
-				["Player-1403-0A69ADE2"] = {
-					["name"] = "Retardinxx-Draenor",
-					["guid"] = "Player-1403-0A69ADE2",
-					["class"] = "PALADIN",
-					["cache_time"] = 1690406741,
-					["realm"] = "Draenor",
-				},
-				["Player-1092-088451EA"] = {
-					["name"] = "Xvaynegodxqt-Drak'thul",
-					["guid"] = "Player-1092-088451EA",
-					["class"] = "HUNTER",
-					["cache_time"] = 1684122124,
-					["realm"] = "Drak'thul",
-				},
-				["Player-581-0A5EA180"] = {
-					["name"] = "Komadrac-Blackrock",
-					["guid"] = "Player-581-0A5EA180",
+				["Player-1390-0C845CEF"] = {
+					["name"] = "Ennìx-Hyjal",
+					["guid"] = "Player-1390-0C845CEF",
 					["class"] = "EVOKER",
-					["cache_time"] = 1689804288,
-					["realm"] = "Blackrock",
-				},
-				["Player-3703-0945246A"] = {
-					["name"] = "Stungodx-Frostwolf",
-					["guid"] = "Player-3703-0945246A",
-					["class"] = "ROGUE",
-					["cache_time"] = 1676973948,
-					["realm"] = "Frostwolf",
-				},
-				["Player-1098-09D50710"] = {
-					["name"] = "Zwarley-Malfurion",
-					["guid"] = "Player-1098-09D50710",
-					["class"] = "PALADIN",
-					["cache_time"] = 1676220419,
-					["realm"] = "Malfurion",
-				},
-				["Player-1313-053CFB65"] = {
-					["name"] = "Baybas-Wildhammer",
-					["guid"] = "Player-1313-053CFB65",
-					["class"] = "MONK",
-					["cache_time"] = 1687298820,
-					["realm"] = "Wildhammer",
-				},
-				["Player-3682-0B18B5F0"] = {
-					["name"] = "Winstreak-Ragnaros",
-					["guid"] = "Player-3682-0B18B5F0",
-					["class"] = "DRUID",
-					["cache_time"] = 1678233785,
-					["realm"] = "Ragnaros",
+					["cache_time"] = 1687257934,
+					["realm"] = "Hyjal",
 				},
 				["Player-581-0A6F3BF7"] = {
 					["name"] = "Zêusx-Blackrock",
@@ -23053,12 +23199,61 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685794414,
 					["realm"] = "Blackrock",
 				},
-				["Player-1403-054D07E6"] = {
-					["name"] = "Mëgei-Draenor",
-					["guid"] = "Player-1403-054D07E6",
+				["Player-1092-088451EA"] = {
+					["name"] = "Xvaynegodxqt-Drak'thul",
+					["guid"] = "Player-1092-088451EA",
+					["class"] = "HUNTER",
+					["cache_time"] = 1684122124,
+					["realm"] = "Drak'thul",
+				},
+				["Player-1621-0AFE7358"] = {
+					["name"] = "Elëkträ-Dalaran",
+					["guid"] = "Player-1621-0AFE7358",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689340203,
+					["realm"] = "Dalaran",
+				},
+				["Player-581-081CC700"] = {
+					["name"] = "Rømpø-Blackrock",
+					["guid"] = "Player-581-081CC700",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1680292466,
+					["realm"] = "Blackrock",
+				},
+				["Player-1615-08CFE5F0"] = {
+					["name"] = "автократ-Ревущийфьорд",
+					["guid"] = "Player-1615-08CFE5F0",
 					["class"] = "PALADIN",
-					["cache_time"] = 1680290994,
-					["realm"] = "Draenor",
+					["cache_time"] = 1689352223,
+					["realm"] = "Ревущийфьорд",
+				},
+				["Player-3691-09DA0A31"] = {
+					["name"] = "Káshá-Blackhand",
+					["guid"] = "Player-3691-09DA0A31",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1684926332,
+					["realm"] = "Blackhand",
+				},
+				["Player-3682-0B18B5F0"] = {
+					["name"] = "Winstreak-Ragnaros",
+					["guid"] = "Player-3682-0B18B5F0",
+					["class"] = "DRUID",
+					["cache_time"] = 1678233785,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1390-0AF6393B"] = {
+					["name"] = "Strongdps-Hyjal",
+					["guid"] = "Player-1390-0AF6393B",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1690750821,
+					["realm"] = "Hyjal",
+				},
+				["Player-581-08C4480E"] = {
+					["name"] = "Lyriane-Blackrock",
+					["guid"] = "Player-581-08C4480E",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1687949013,
+					["realm"] = "Blackrock",
 				},
 				["Player-3702-08A7414D"] = {
 					["name"] = "Pikachi-ArgentDawn",
@@ -23081,33 +23276,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1686121310,
 					["realm"] = "Eredar",
 				},
-				["Player-1390-0C845CEF"] = {
-					["name"] = "Ennìx-Hyjal",
-					["guid"] = "Player-1390-0C845CEF",
-					["class"] = "EVOKER",
-					["cache_time"] = 1687257934,
-					["realm"] = "Hyjal",
-				},
-				["Player-1305-0C01C028"] = {
-					["name"] = "Dxbdruid-Kazzak",
-					["guid"] = "Player-1305-0C01C028",
+				["Player-1084-0A9D1D36"] = {
+					["name"] = "Iceyy-Dentarg",
+					["guid"] = "Player-1084-0A9D1D36",
 					["class"] = "DRUID",
-					["cache_time"] = 1677395628,
-					["realm"] = "Kazzak",
+					["cache_time"] = 1689704202,
+					["realm"] = "Dentarg",
 				},
-				["Player-1379-0AC4FA8F"] = {
-					["name"] = "Yusikaria-Sanguino",
-					["guid"] = "Player-1379-0AC4FA8F",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1677665404,
+				["Player-1379-0AA673FF"] = {
+					["name"] = "Lezil-Sanguino",
+					["guid"] = "Player-1379-0AA673FF",
+					["class"] = "PRIEST",
+					["cache_time"] = 1676861407,
 					["realm"] = "Sanguino",
 				},
-				["Player-580-0A5F5CF1"] = {
-					["name"] = "Gaeng-Blackmoore",
-					["guid"] = "Player-580-0A5F5CF1",
-					["class"] = "MONK",
-					["cache_time"] = 1677878374,
-					["realm"] = "Blackmoore",
+				["Player-1621-0A5BB8C3"] = {
+					["name"] = "Pacollito-Eldre'Thalas",
+					["guid"] = "Player-1621-0A5BB8C3",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1690410198,
+					["realm"] = "Eldre'Thalas",
+				},
+				["Player-1403-09D8CFFD"] = {
+					["name"] = "Néithyo-Draenor",
+					["guid"] = "Player-1403-09D8CFFD",
+					["class"] = "HUNTER",
+					["cache_time"] = 1680258337,
+					["realm"] = "Draenor",
 				},
 				["Player-580-0A43BF24"] = {
 					["name"] = "Nousklock-Blackmoore",
@@ -23116,33 +23311,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687259300,
 					["realm"] = "Blackmoore",
 				},
-				["Player-3702-0A637276"] = {
-					["name"] = "Cthulhas-ArgentDawn",
-					["guid"] = "Player-3702-0A637276",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1690056758,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-1325-03C6080A"] = {
-					["name"] = "Nostramu-Aggramar",
-					["guid"] = "Player-1325-03C6080A",
-					["class"] = "PRIEST",
-					["cache_time"] = 1689800841,
-					["realm"] = "Aggramar",
-				},
-				["Player-1401-0A4D70ED"] = {
-					["name"] = "Theralia-Nozdormu",
-					["guid"] = "Player-1401-0A4D70ED",
-					["class"] = "EVOKER",
-					["cache_time"] = 1689339555,
-					["realm"] = "Nozdormu",
-				},
-				["Player-1602-0F52D1AD"] = {
-					["name"] = "рейнатян-Гордунни",
-					["guid"] = "Player-1602-0F52D1AD",
+				["Player-1303-07975494"] = {
+					["name"] = "Scyshamy-Aggra(Português)",
+					["guid"] = "Player-1303-07975494",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1689948802,
-					["realm"] = "Гордунни",
+					["cache_time"] = 1690156137,
+					["realm"] = "Aggra(Português)",
+				},
+				["Player-3656-04D6B055"] = {
+					["name"] = "Sushiman-Haomarush",
+					["guid"] = "Player-3656-04D6B055",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1687157932,
+					["realm"] = "Haomarush",
+				},
+				["Player-1127-0A4CA8A2"] = {
+					["name"] = "Mevira-KirinTor",
+					["guid"] = "Player-1127-0A4CA8A2",
+					["class"] = "EVOKER",
+					["cache_time"] = 1690750821,
+					["realm"] = "KirinTor",
+				},
+				["Player-1379-054441E2"] = {
+					["name"] = "Verx-Sanguino",
+					["guid"] = "Player-1379-054441E2",
+					["class"] = "PALADIN",
+					["cache_time"] = 1689772053,
+					["realm"] = "Sanguino",
 				},
 				["Player-3702-0A914008"] = {
 					["name"] = "Cartwell-ArgentDawn",
@@ -23151,40 +23346,45 @@ RCLootCouncilDB = {
 					["cache_time"] = 1677104859,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-1305-06FCD3A0"] = {
-					["name"] = "Vejeta-Kazzak",
-					["guid"] = "Player-1305-06FCD3A0",
-					["class"] = "PALADIN",
-					["cache_time"] = 1690493152,
-					["realm"] = "Kazzak",
+				["Player-2073-0A096743"] = {
+					["name"] = "Ashaugmen-Stormscale",
+					["guid"] = "Player-2073-0A096743",
+					["class"] = "EVOKER",
+					["cache_time"] = 1690410198,
+					["realm"] = "Stormscale",
 				},
-				["Player-1104-0A17F37C"] = {
-					["name"] = "Avalenon-Gul'dan",
-					["guid"] = "Player-1104-0A17F37C",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690042087,
-					["realm"] = "Gul'dan",
+				["Player-3674-0A8089CA"] = {
+					["name"] = "Dopex-TwistingNether",
+					["guid"] = "Player-3674-0A8089CA",
+					["class"] = "ROGUE",
+					["cache_time"] = 1690750821,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1925-0F06F9FE"] = {
-					["name"] = "гелтрон-ВечнаяПесня",
-					["guid"] = "Player-1925-0F06F9FE",
+				["Player-1335-0691C8F0"] = {
+					["name"] = "Mëkags-Ysondre",
+					["guid"] = "Player-1335-0691C8F0",
 					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1688930496,
-					["realm"] = "ВечнаяПесня",
+					["cache_time"] = 1684052763,
+					["realm"] = "Ysondre",
 				},
-				["Player-3682-0B1015F7"] = {
-					["name"] = "Berzerker-Ragnaros",
-					["guid"] = "Player-3682-0B1015F7",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1686933987,
-					["realm"] = "Ragnaros",
+				["Player-3674-0B0CABEA"] = {
+					["ilvl"] = 442.875,
+					["guid"] = "Player-3674-0B0CABEA",
+					["class"] = "DRUID",
+					["role"] = "HEALER",
+					["cache_time"] = 1686690665,
+					["realm"] = "TwistingNether",
+					["name"] = "Juuyuu-TwistingNether",
+					["specID"] = 105,
+					["enchantingLvl"] = 0,
+					["rank"] = "Raider",
 				},
-				["Player-1615-043E8FD7"] = {
-					["name"] = "дёргаюбибу-Ревущийфьорд",
-					["guid"] = "Player-1615-043E8FD7",
+				["Player-3674-07789A7A"] = {
+					["name"] = "Vinegarr-TwistingNether",
+					["guid"] = "Player-3674-07789A7A",
 					["class"] = "PRIEST",
-					["cache_time"] = 1687949013,
-					["realm"] = "Ревущийфьорд",
+					["cache_time"] = 1685393886,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1604-09AF56BC"] = {
 					["name"] = "сайлерх-СвежевательДуш",
@@ -23193,17 +23393,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1684883011,
 					["realm"] = "СвежевательДуш",
 				},
-				["Player-3682-0B27A07F"] = {
-					["ilvl"] = 437.125,
-					["guid"] = "Player-3682-0B27A07F",
-					["class"] = "DEMONHUNTER",
-					["role"] = "TANK",
-					["cache_time"] = 1687304879,
+				["Player-3682-0B00340B"] = {
+					["name"] = "Voodoojohn-Ragnaros",
+					["guid"] = "Player-3682-0B00340B",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1689286279,
 					["realm"] = "Ragnaros",
-					["name"] = "Hdç-Ragnaros",
-					["specID"] = 581,
-					["enchantingLvl"] = 0,
-					["rank"] = "Alt",
 				},
 				["Player-1604-0F6090CA"] = {
 					["name"] = "помнипровуду-СвежевательДуш",
@@ -23233,35 +23428,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1680708830,
 					["realm"] = "Ravencrest",
 				},
-				["Player-3391-0C495EEF"] = {
-					["name"] = "Kraéz-Silvermoon",
-					["guid"] = "Player-3391-0C495EEF",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1690587500,
-					["realm"] = "Silvermoon",
+				["Player-3674-0AE61C3C"] = {
+					["name"] = "Bigdondon-TwistingNether",
+					["guid"] = "Player-3674-0AE61C3C",
+					["class"] = "DRUID",
+					["cache_time"] = 1686754474,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1379-054441E2"] = {
-					["name"] = "Verx-Sanguino",
-					["guid"] = "Player-1379-054441E2",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689772053,
-					["realm"] = "Sanguino",
+				["Player-1121-0A6A8673"] = {
+					["name"] = "Airesa-DerAbyssischeRat",
+					["guid"] = "Player-1121-0A6A8673",
+					["class"] = "MONK",
+					["cache_time"] = 1676950723,
+					["realm"] = "DerAbyssischeRat",
 				},
-				["Player-1403-0A35DC5A"] = {
-					["name"] = "Ethaelwolf-Draenor",
-					["guid"] = "Player-1403-0A35DC5A",
+				["Player-1403-0A62542B"] = {
+					["name"] = "Brimstonee-Draenor",
+					["guid"] = "Player-1403-0A62542B",
 					["class"] = "PALADIN",
-					["cache_time"] = 1689768575,
+					["cache_time"] = 1689804288,
 					["realm"] = "Draenor",
 				},
-				["Player-3391-0C920B01"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Augmentxd-Silvermoon",
-					["guid"] = "Player-3391-0C920B01",
-					["realm"] = "Silvermoon",
-					["class"] = "EVOKER",
-					["cache_time"] = 1690157734,
-					["rank"] = "Unguilded",
+				["Player-1379-0A7D517F"] = {
+					["name"] = "Väleska-Sanguino",
+					["guid"] = "Player-1379-0A7D517F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1690509687,
+					["realm"] = "Sanguino",
 				},
 				["Player-1303-0592D932"] = {
 					["name"] = "Biigdealer-Aggra(Português)",
@@ -23270,12 +23463,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690488753,
 					["realm"] = "Aggra(Português)",
 				},
-				["Player-581-09D45C59"] = {
-					["name"] = "Nellomotto-Blackrock",
-					["guid"] = "Player-581-09D45C59",
-					["class"] = "PALADIN",
-					["cache_time"] = 1685340864,
-					["realm"] = "Blackrock",
+				["Player-1416-0A44CFC0"] = {
+					["name"] = "Wanda-Vek'nilash",
+					["guid"] = "Player-1416-0A44CFC0",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1689800841,
+					["realm"] = "Vek'nilash",
 				},
 				["Player-1096-0A649A69"] = {
 					["name"] = "Leocadir-DefiasBrotherhood",
@@ -23298,33 +23491,38 @@ RCLootCouncilDB = {
 					["cache_time"] = 1687259258,
 					["realm"] = "Thrall",
 				},
-				["Player-1403-0A62542B"] = {
-					["name"] = "Brimstonee-Draenor",
-					["guid"] = "Player-1403-0A62542B",
-					["class"] = "PALADIN",
-					["cache_time"] = 1689804288,
-					["realm"] = "Draenor",
+				["Player-1302-0C316EF0"] = {
+					["name"] = "Yachty-Archimonde",
+					["guid"] = "Player-1302-0C316EF0",
+					["class"] = "MONK",
+					["cache_time"] = 1690410513,
+					["realm"] = "Archimonde",
 				},
-				["Player-3682-097055B2"] = {
-					["name"] = "Arîana-Ragnaros",
-					["guid"] = "Player-3682-097055B2",
-					["class"] = "MAGE",
-					["cache_time"] = 1690410198,
+				["Player-3692-070BFD22"] = {
+					["name"] = "Asrisuri-Eredar",
+					["guid"] = "Player-3692-070BFD22",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1676486742,
+					["realm"] = "Eredar",
+				},
+				["Player-3682-0AEC5E2E"] = {
+					["ilvl"] = 438.375,
+					["guid"] = "Player-3682-0AEC5E2E",
+					["class"] = "DEATHKNIGHT",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1685651466,
+					["rank"] = "Mythic Raider",
+					["name"] = "Slowone-Ragnaros",
+					["specID"] = 252,
+					["enchantingLvl"] = 0,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0C23D6E8"] = {
-					["name"] = "Underlurd-Kazzak",
-					["guid"] = "Player-1305-0C23D6E8",
-					["class"] = "PALADIN",
-					["cache_time"] = 1688878042,
-					["realm"] = "Kazzak",
-				},
-				["Player-1923-0A39E2B2"] = {
-					["name"] = "магерыч-Ясеневыйлес",
-					["guid"] = "Player-1923-0A39E2B2",
-					["class"] = "HUNTER",
-					["cache_time"] = 1676385549,
-					["realm"] = "Ясеневыйлес",
+				["Player-3674-088691BD"] = {
+					["name"] = "Graveweed-TwistingNether",
+					["guid"] = "Player-3674-088691BD",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1687956237,
+					["realm"] = "TwistingNether",
 				},
 				["Player-1390-0A559FDA"] = {
 					["name"] = "Harrysky-Hyjal",
@@ -23340,12 +23538,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1685291173,
 					["realm"] = "Zul'jin",
 				},
-				["Player-1084-08B3BE10"] = {
-					["name"] = "Keikóp-TarrenMill",
-					["guid"] = "Player-1084-08B3BE10",
+				["Player-1315-0C45D562"] = {
+					["name"] = "Harûu-Elune",
+					["guid"] = "Player-1315-0C45D562",
 					["class"] = "PRIEST",
-					["cache_time"] = 1685685471,
-					["realm"] = "TarrenMill",
+					["cache_time"] = 1690894644,
+					["realm"] = "Elune",
 				},
 				["Player-1390-0C8F3AFD"] = {
 					["name"] = "Shèng-Hyjal",
@@ -23354,12 +23552,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1690044601,
 					["realm"] = "Hyjal",
 				},
-				["Player-3692-070BFD22"] = {
-					["name"] = "Asrisuri-Eredar",
-					["guid"] = "Player-3692-070BFD22",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676486742,
-					["realm"] = "Eredar",
+				["Player-3682-0B178079"] = {
+					["name"] = "Fredknight-Ragnaros",
+					["guid"] = "Player-3682-0B178079",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1675886183,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1305-0C834EB9"] = {
 					["name"] = "Chìva-Kazzak",
@@ -23368,47 +23566,47 @@ RCLootCouncilDB = {
 					["cache_time"] = 1678143779,
 					["realm"] = "Kazzak",
 				},
-				["Player-1597-0F5321CD"] = {
-					["name"] = "Cubish-Sylvanas",
-					["guid"] = "Player-1597-0F5321CD",
-					["class"] = "EVOKER",
-					["cache_time"] = 1686687418,
-					["realm"] = "Sylvanas",
+				["Player-1923-0EE99921"] = {
+					["name"] = "таунед-Ясеневыйлес",
+					["guid"] = "Player-1923-0EE99921",
+					["class"] = "DRUID",
+					["cache_time"] = 1676973948,
+					["realm"] = "Ясеневыйлес",
 				},
-				["Player-3690-0A630B34"] = {
-					["name"] = "Tobiase-KhazModan",
-					["guid"] = "Player-3690-0A630B34",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1676988319,
-					["realm"] = "KhazModan",
-				},
-				["Player-1403-0A76B39F"] = {
-					["name"] = "Nímona-Draenor",
-					["guid"] = "Player-1403-0A76B39F",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690214800,
-					["realm"] = "Draenor",
-				},
-				["Player-2073-09DE394F"] = {
-					["name"] = "Kellton-Stormscale",
-					["guid"] = "Player-2073-09DE394F",
+				["Player-3682-0B310D76"] = {
+					["name"] = "Qpaladin-Ragnaros",
+					["guid"] = "Player-3682-0B310D76",
 					["class"] = "PALADIN",
-					["cache_time"] = 1690210423,
-					["realm"] = "Stormscale",
+					["cache_time"] = 1713975112,
+					["realm"] = "Ragnaros",
 				},
-				["Player-1305-0C3AA360"] = {
-					["name"] = "Dictatör-Kazzak",
-					["guid"] = "Player-1305-0C3AA360",
-					["class"] = "PRIEST",
-					["cache_time"] = 1690229185,
-					["realm"] = "Kazzak",
+				["Player-1408-049F5C3A"] = {
+					["name"] = "Unichunter-DunMorogh",
+					["guid"] = "Player-1408-049F5C3A",
+					["class"] = "HUNTER",
+					["cache_time"] = 1713977591,
+					["realm"] = "DunMorogh",
 				},
-				["Player-1084-0A852B39"] = {
-					["name"] = "Vxevo-TarrenMill",
-					["guid"] = "Player-1084-0A852B39",
+				["Player-1084-0A829DB3"] = {
+					["name"] = "Bat-TarrenMill",
+					["guid"] = "Player-1084-0A829DB3",
 					["class"] = "EVOKER",
-					["cache_time"] = 1690510985,
+					["cache_time"] = 1686933987,
 					["realm"] = "TarrenMill",
+				},
+				["Player-1325-05F6EDC1"] = {
+					["name"] = "Thoragrin-Aggramar",
+					["guid"] = "Player-1325-05F6EDC1",
+					["class"] = "PRIEST",
+					["cache_time"] = 1689800841,
+					["realm"] = "Aggramar",
+				},
+				["Player-1325-09EAFA23"] = {
+					["name"] = "Aibelf-Hellscream",
+					["guid"] = "Player-1325-09EAFA23",
+					["class"] = "MONK",
+					["cache_time"] = 1713977460,
+					["realm"] = "Hellscream",
 				},
 				["Player-1305-0BE3D537"] = {
 					["name"] = "Leadreà-Kazzak",
@@ -23426,29 +23624,6 @@ RCLootCouncilDB = {
 				},
 			},
 		},
-		["oldVersion"] = "3.9.0",
-		["regionID"] = 3,
-		["locale"] = "enUS",
-		["version"] = "3.9.1",
-	},
-	["profileKeys"] = {
-		["Qpaladin - Ragnaros"] = "Default",
-		["Qpcheese - Chamber of Aspects"] = "Default",
-		["Qpebank - Draenor"] = "Default",
-		["Qpc - Draenor"] = "Default",
-		["Zelení - Draenor"] = "Default",
-		["Flurrq - Ragnaros"] = "Default",
-		["Djagon - Ragnaros"] = "Default",
-		["Qubit - Ragnaros"] = "Default",
-		["Myfficraider - Ragnaros"] = "Default",
-		["Dogson - Ragnaros"] = "Default",
-		["Laurs - Ragnaros"] = "Default",
-		["Qpe - Ravencrest"] = "Default",
-		["Qpcheese - Ragnaros"] = "Default",
-		["Jerwin - Ragnaros"] = "Default",
-		["Qpfromage - Ragnaros"] = "Default",
-		["Qpew - Ragnaros"] = "Default",
-		["Cyclosarin - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -23577,14 +23752,14 @@ RCLootCouncilLootDB = {
 		["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 		["Qubit - Ragnaros"] = "Qubit - Ragnaros",
 		["Myfficraider - Ragnaros"] = "Myfficraider - Ragnaros",
-		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
 		["Laurs - Ragnaros"] = "Laurs - Ragnaros",
 		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 		["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
 		["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 		["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 		["Qpew - Ragnaros"] = "Qpew - Ragnaros",
-		["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+		["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 	},
 	["factionrealm"] = {
 		["Horde - Ragnaros"] = {
@@ -23607,14 +23782,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Disenchant",
-					["typeCode"] = "default",
+					["isAwardReason"] = true,
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202595::::::::70:66::6:7:9410:9380:6652:9224:9218:1498:8767::::::|h[Shoulderplates of Planar Isolation]|h|r",
-					["id"] = "1686842073-6",
+					["votes"] = 0,
 					["date"] = "15/06/23",
 					["responseID"] = 1,
-					["votes"] = 0,
-					["isAwardReason"] = true,
+					["id"] = "1686842073-6",
+					["typeCode"] = "default",
 				}, -- [1]
 				{
 					["mapID"] = 2569,
@@ -23628,21 +23803,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202451:6496:::::::70:66::5:6:6652:9228:9409:9334:1498:8767:1:28:2615:::::|h[Heartfire Sentinel's Faulds]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1687444912-7",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202597::::::::70:66::6:7:9410:9380:6652:9224:9221:1498:8767::::::|h[Obsidian Guard's Chausses]|h|r",
+					["note"] = "447 UPGRADE",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "Assault of the Zaqali",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Mainspec/Need",
-					["boss"] = "Assault of the Zaqali",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202597::::::::70:66::6:7:9410:9380:6652:9224:9221:1498:8767::::::|h[Obsidian Guard's Chausses]|h|r",
-					["note"] = "447 UPGRADE",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["id"] = "1687444912-7",
-					["typeCode"] = "default",
 				}, -- [2]
 				{
 					["mapID"] = 2569,
@@ -23656,21 +23831,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202453::::::::70:66::5:6:6652:9230:9409:9334:1492:8767:1:28:1040:::::|h[Heartfire Sentinel's Protectors]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1687450917-15",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202626::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Venerated Mixing Fluid]|h|r",
+					["note"] = "ilvl upgrade",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "The Forgotten Experiments",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Mainspec/Need",
-					["boss"] = "The Forgotten Experiments",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202626::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Venerated Mixing Fluid]|h|r",
-					["note"] = "ilvl upgrade",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["id"] = "1687450917-15",
-					["typeCode"] = "default",
 				}, -- [3]
 				{
 					["mapID"] = 2569,
@@ -23690,14 +23865,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Disenchant",
-					["isAwardReason"] = true,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202594::::::::70:66::6:8:9410:9380:6652:9415:9224:9220:1498:8767::::::|h[Bloodstench Skinguards]|h|r",
-					["votes"] = 0,
+					["id"] = "1688048149-1",
 					["date"] = "29/06/23",
 					["responseID"] = 1,
-					["id"] = "1688048149-1",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = true,
 				}, -- [4]
 				{
 					["mapID"] = 2569,
@@ -23716,14 +23891,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Disenchant",
-					["isAwardReason"] = true,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cff0070dd|Hitem:205145::::::::70:66::6:::::::|h[Plans: Shadowed Impact Buckler]|h|r",
-					["votes"] = 0,
+					["id"] = "1688048226-2",
 					["date"] = "29/06/23",
 					["responseID"] = 1,
-					["id"] = "1688048226-2",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = true,
 				}, -- [5]
 				{
 					["mapID"] = 2569,
@@ -23737,7 +23912,7 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202617::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Elementium Pocket Anvil]|h|r",
 					["typeCode"] = "default",
 					["owner"] = "Grendizer-Ragnaros",
-					["votes"] = 0,
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["response"] = "Disenchant",
 					["id"] = "1689260129-5",
 					["difficultyID"] = 16,
@@ -23751,7 +23926,7 @@ RCLootCouncilLootDB = {
 					},
 					["responseID"] = 1,
 					["itemReplaced2"] = "|cffa335ee|Hitem:203963::::::::70:66::3:5:6652:7979:9329:1485:8767:1:28:2645:::::|h[Beacon to the Beyond]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["votes"] = 0,
 				}, -- [6]
 			},
 			["Cödhead-Ragnaros"] = {
@@ -23773,14 +23948,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202607::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Brutal Dragonslayer's Trophy]|h|r",
-					["votes"] = 0,
+					["id"] = "1688049059-5",
 					["date"] = "29/06/23",
 					["responseID"] = 1,
-					["id"] = "1688049059-5",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = false,
 				}, -- [1]
 				{
 					["mapID"] = 2569,
@@ -23794,21 +23969,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:193428:6586:::::::70:66::13:10:8836:8840:8902:9405:9373:8797:8960:8790:9366:9414:10:28:2164:29:40:30:32:38:8:40:351:45:204682:46:193555:47:192552:50:204440:52:206041:::::|h[Flame-Touched Cuffs |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1688049127-7",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202604::::::::70:66::6:8:9410:9380:42:9413:9224:9220:1498:8767::::::|h[Boulder-Tossing Bands]|h|r",
+					["note"] = "massive masssive massive.",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "Assault of the Zaqali",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Mainspec/Need",
-					["boss"] = "Assault of the Zaqali",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202604::::::::70:66::6:8:9410:9380:42:9413:9224:9220:1498:8767::::::|h[Boulder-Tossing Bands]|h|r",
-					["note"] = "massive masssive massive.",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["id"] = "1688049127-7",
-					["typeCode"] = "default",
 				}, -- [2]
 			},
 			["Barryscotty-Ragnaros"] = {
@@ -23830,14 +24005,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Offspec/Greed",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202574::::::::70:66::6:7:9410:9380:6652:9224:9219:1498:8767::::::|h[Flamebound Huntsman's Footpads]|h|r",
-					["votes"] = 1,
+					["id"] = "1686840161-3",
 					["date"] = "15/06/23",
 					["responseID"] = 2,
-					["id"] = "1686840161-3",
-					["typeCode"] = "default",
+					["votes"] = 1,
+					["isAwardReason"] = false,
 				}, -- [1]
 			},
 			["Pad-Ragnaros"] = {
@@ -23851,24 +24026,24 @@ RCLootCouncilLootDB = {
 					["time"] = "22:42:05",
 					["iClass"] = 4,
 					["itemReplaced1"] = "|cffa335ee|Hitem:202617::::::::70:66::5:5:9409:6652:9334:1498:8767::::::|h[Elementium Pocket Anvil]|h|r",
-					["votes"] = 1,
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["typeCode"] = "default",
 					["owner"] = "Grendizer-Ragnaros",
 					["id"] = "1686840125-1",
 					["response"] = "Minor Upgrade",
 					["note"] = "can use for m+ if no one needs",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202613::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Zaqali Chaos Grapnel]|h|r",
+					["isAwardReason"] = false,
 					["color"] = {
 						0, -- [1]
 						0.7, -- [2]
 						0.7, -- [3]
 						1, -- [4]
 					},
-					["isAwardReason"] = false,
 					["responseID"] = 3,
 					["itemReplaced2"] = "|cffa335ee|Hitem:203963::::::::70:66::3:5:6652:7979:9329:1485:8767:1:28:2645:::::|h[Beacon to the Beyond]|h|r",
-					["typeCode"] = "default",
+					["votes"] = 1,
 				}, -- [1]
 				{
 					["mapID"] = 2569,
@@ -23888,14 +24063,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Offspec/Greed",
-					["typeCode"] = "default",
+					["isAwardReason"] = false,
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202595::::::::70:66::6:7:9410:9380:6652:9224:9218:1498:8767::::::|h[Shoulderplates of Planar Isolation]|h|r",
-					["id"] = "1686842069-5",
+					["votes"] = 1,
 					["date"] = "15/06/23",
 					["responseID"] = 2,
-					["votes"] = 1,
-					["isAwardReason"] = false,
+					["id"] = "1686842069-5",
+					["typeCode"] = "default",
 				}, -- [2]
 				{
 					["mapID"] = 2569,
@@ -23909,7 +24084,7 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202617::::::::70:66::5:5:9409:6652:9334:1498:8767::::::|h[Elementium Pocket Anvil]|h|r",
 					["typeCode"] = "default",
 					["owner"] = "Grendizer-Ragnaros",
-					["votes"] = 0,
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["response"] = "Offspec/Greed",
 					["id"] = "1687443631-0",
 					["difficultyID"] = 16,
@@ -23923,7 +24098,7 @@ RCLootCouncilLootDB = {
 					},
 					["responseID"] = 2,
 					["itemReplaced2"] = "|cffa335ee|Hitem:203963::::::::70:66::3:5:6652:7979:9329:1485:8767:1:28:2645:::::|h[Beacon to the Beyond]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["votes"] = 0,
 				}, -- [3]
 				{
 					["mapID"] = 2569,
@@ -23937,7 +24112,7 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202617::::::::70:66::5:5:9409:6652:9334:1498:8767::::::|h[Elementium Pocket Anvil]|h|r",
 					["typeCode"] = "default",
 					["owner"] = "Grendizer-Ragnaros",
-					["votes"] = 2,
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["response"] = "Mainspec/Need",
 					["id"] = "1688403640-0",
 					["difficultyID"] = 16,
@@ -23951,7 +24126,7 @@ RCLootCouncilLootDB = {
 					},
 					["responseID"] = 1,
 					["itemReplaced2"] = "|cffa335ee|Hitem:203963::::::::70:66::5:5:6652:9409:9334:1489:8767::::::|h[Beacon to the Beyond]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["votes"] = 2,
 				}, -- [4]
 			},
 			["Mylkme-Ragnaros"] = {
@@ -23973,159 +24148,15 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["owner"] = "Maccasham-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 15,
 					["lootWon"] = "|cffa335ee|Hitem:202578::::::::70:264::5:7:9409:9330:6652:9226:9218:1485:8767::::::|h[Phoenix-Plume Gloves]|h|r",
-					["votes"] = 0,
-					["date"] = "11/05/23",
-					["responseID"] = 1,
 					["id"] = "1683834907-1",
-					["typeCode"] = "default",
-				}, -- [1]
-			},
-			["Ryleei-Ragnaros"] = {
-				{
-					["mapID"] = 2569,
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["class"] = "WARRIOR",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
-					["boss"] = "The Forgotten Experiments",
-					["time"] = "20:37:07",
-					["iClass"] = 15,
-					["itemReplaced1"] = "|cffa335ee|Hitem:200425::::::::70:264::35:5:6652:7977:8974:8829:1495::::::|h[Gauntlets of the Walking Mountain]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
-					["owner"] = "Maccasham-Ragnaros",
-					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
-					["difficultyID"] = 15,
-					["lootWon"] = "|cffa335ee|Hitem:202638::::::::70:264::5:4:9230:9409:1485:8767::::::|h[Zenith Mixing Fluid]|h|r",
-					["votes"] = 0,
 					["date"] = "11/05/23",
 					["responseID"] = 1,
-					["id"] = "1683833827-2",
-					["typeCode"] = "default",
-				}, -- [1]
-			},
-			["Kijul-Ragnaros"] = {
-				{
-					["mapID"] = 2569,
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["class"] = "PRIEST",
-					["iSubClass"] = 1,
-					["groupSize"] = 11,
-					["boss"] = "Rashok, the Elder",
-					["time"] = "21:33:37",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:109784:6607:::::::70:264::33:8:7977:6652:8822:8818:9144:8971:3293:8767:1:28:1279:::::|h[Sandals of Arcane Mystery]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
-					["owner"] = "Maccasham-Ragnaros",
-					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
-					["difficultyID"] = 15,
-					["lootWon"] = "|cffa335ee|Hitem:202603::::::::70:264::5:7:6652:9226:9219:9409:9331:1485:8767::::::|h[Sandals of Ancient Fury]|h|r",
 					["votes"] = 0,
-					["date"] = "11/05/23",
-					["responseID"] = 1,
-					["id"] = "1683837217-6",
-					["typeCode"] = "default",
+					["isAwardReason"] = false,
 				}, -- [1]
-			},
-			["Grats-Ragnaros"] = {
-				{
-					["mapID"] = 2569,
-					["date"] = "15/06/23",
-					["class"] = "WARLOCK",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
-					["boss"] = "The Amalgamation Chamber",
-					["time"] = "23:15:29",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:206184:6562:::::::70:66::35:6:9382:6652:9415:9144:1669:8767::::::|h[Skyshard Ring]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["typeCode"] = "default",
-					["owner"] = "Grendizer-Ragnaros",
-					["id"] = "1686842129-8",
-					["response"] = "Mainspec/Need",
-					["note"] = "i have a 421 ring i guess",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202572::::::::70:66::6:6:9410:9380:6652:9415:1498:8767::::::|h[Entropic Convergence Loop]|h|r",
-					["isAwardReason"] = false,
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["responseID"] = 1,
-					["itemReplaced2"] = "|cffa335ee|Hitem:192999:6562:192967::::::70:66::13:8:8836:8840:8902:8780:9405:8846:8174:9365:8:28:2164:29:36:30:49:38:8:40:258:49:198046:50:200652:51:190453:::::|h[Signet of Titanic Insight |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
-					["votes"] = 3,
-				}, -- [1]
-				{
-					["mapID"] = 2569,
-					["date"] = "22/06/23",
-					["class"] = "WARLOCK",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
-					["boss"] = "Kazzara, the Hellforged",
-					["time"] = "22:22:05",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:193769::::::::70:66::16:5:6652:9144:9329:1659:8767:1:28:1279:::::|h[Erupting Spear Fragment]|h|r",
-					["typeCode"] = "default",
-					["owner"] = "Grendizer-Ragnaros",
-					["votes"] = 1,
-					["response"] = "Mainspec/Need",
-					["id"] = "1687443725-3",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202612::::::::70:66::6:5:6652:9410:9382:1498:8767::::::|h[Screaming Black Dragonscale]|h|r",
-					["isAwardReason"] = false,
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["responseID"] = 1,
-					["itemReplaced2"] = "|cffa335ee|Hitem:203996::::::::70:66::5:5:6652:9409:9334:1492:8767::::::|h[Igneous Flowstone]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-				}, -- [2]
-				{
-					["mapID"] = 2569,
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["class"] = "WARLOCK",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
-					["boss"] = "The Forgotten Experiments",
-					["time"] = "00:47:06",
-					["iClass"] = 15,
-					["itemReplaced1"] = "|cffa335ee|Hitem:134420::::::::70:66::33:7:6652:9223:9218:9144:9329:3316:8767:1:28:1279:::::|h[Gloves of the Mountain Conquest]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202624::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Dreadful Mixing Fluid]|h|r",
-					["votes"] = 1,
-					["date"] = "07/07/23",
-					["responseID"] = 1,
-					["id"] = "1688662026-4",
-					["typeCode"] = "default",
-				}, -- [3]
 			},
 			["Qpfromage-Ragnaros"] = {
 				{
@@ -24146,14 +24177,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["owner"] = "Maccasham-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 15,
 					["lootWon"] = "|cffa335ee|Hitem:202580::::::::70:264::5:7:9409:9330:6652:9226:9218:1485:8767::::::|h[Mystic's Scalding Frame]|h|r",
-					["votes"] = 0,
+					["id"] = "1683834889-0",
 					["date"] = "11/05/23",
 					["responseID"] = 1,
-					["id"] = "1683834889-0",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = false,
 				}, -- [1]
 				{
 					["mapID"] = 2569,
@@ -24173,14 +24204,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202578::::::::70:66::6:7:9410:9380:6652:9224:9218:1498:8767::::::|h[Phoenix-Plume Gloves]|h|r",
-					["votes"] = 1,
+					["id"] = "1686840154-2",
 					["date"] = "15/06/23",
 					["responseID"] = 1,
-					["id"] = "1686840154-2",
-					["typeCode"] = "default",
+					["votes"] = 1,
+					["isAwardReason"] = false,
 				}, -- [2]
 				{
 					["mapID"] = 2569,
@@ -24194,6 +24225,64 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202551::::::::70:66::5:7:6652:9414:9229:9409:9334:1498:8767:1:28:1040:::::|h[Underlight Conjurer's Arcanocowl]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1687446353-9",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202579::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Attendant's Concocting Cover]|h|r",
+					["note"] = "Catalyst upgrade .5 ",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "The Amalgamation Chamber",
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+				}, -- [3]
+			},
+			["Ståck-Ragnaros"] = {
+				{
+					["mapID"] = 2569,
+					["date"] = "16/06/23",
+					["class"] = "MAGE",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["votes"] = 0,
+					["time"] = "00:23:26",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:193745::::::::70:66::16:5:6652:9144:9334:1663:8767:1:28:1279:::::|h[Rod of Perfect Order]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["response"] = "Mainspec/Need",
+					["boss"] = "The Forgotten Experiments",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:204318::::::::70:66::6:5:6652:9410:9381:1498:8767::::::|h[Thadrion's Erratic Arcanotrode]|h|r",
+					["note"] = "pretty good upgrade",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["id"] = "1686846206-10",
+					["typeCode"] = "default",
+				}, -- [1]
+				{
+					["mapID"] = 2569,
+					["date"] = "06/07/23",
+					["class"] = "MAGE",
+					["iSubClass"] = 1,
+					["groupSize"] = 20,
+					["votes"] = 2,
+					["time"] = "23:19:18",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202551::192922::::::70:66::5:7:41:9413:9229:9409:9334:1498:8767:1:28:1040:::::|h[Underlight Conjurer's Arcanocowl]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
@@ -24204,12 +24293,155 @@ RCLootCouncilLootDB = {
 					["boss"] = "The Amalgamation Chamber",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202579::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Attendant's Concocting Cover]|h|r",
-					["note"] = "Catalyst upgrade .5 ",
+					["note"] = "good upgrade for 447",
 					["isAwardReason"] = false,
 					["responseID"] = 1,
-					["id"] = "1687446353-9",
+					["id"] = "1688656758-1",
+					["typeCode"] = "default",
+				}, -- [2]
+				{
+					["mapID"] = 2569,
+					["date"] = "06/07/23",
+					["class"] = "MAGE",
+					["iSubClass"] = 1,
+					["groupSize"] = 20,
+					["votes"] = 3,
+					["time"] = "23:19:25",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:193724:6574:::::::70:66::33:8:6652:9414:9223:9220:9144:9334:1663:8767:1:28:1279:::::|h[Lily-Laced Bracelets]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["response"] = "Mainspec/Need",
+					["boss"] = "The Amalgamation Chamber",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202593::::::::70:66::6:8:9410:9380:6652:9413:9224:9220:1498:8767::::::|h[Unstable Vial Handlers]|h|r",
+					["note"] = "insane next patch",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["id"] = "1688656765-2",
 					["typeCode"] = "default",
 				}, -- [3]
+			},
+			["Grats-Ragnaros"] = {
+				{
+					["mapID"] = 2569,
+					["date"] = "15/06/23",
+					["class"] = "WARLOCK",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["boss"] = "The Amalgamation Chamber",
+					["time"] = "23:15:29",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:206184:6562:::::::70:66::35:6:9382:6652:9415:9144:1669:8767::::::|h[Skyshard Ring]|h|r",
+					["votes"] = 3,
+					["typeCode"] = "default",
+					["owner"] = "Grendizer-Ragnaros",
+					["id"] = "1686842129-8",
+					["response"] = "Mainspec/Need",
+					["note"] = "i have a 421 ring i guess",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202572::::::::70:66::6:6:9410:9380:6652:9415:1498:8767::::::|h[Entropic Convergence Loop]|h|r",
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["itemReplaced2"] = "|cffa335ee|Hitem:192999:6562:192967::::::70:66::13:8:8836:8840:8902:8780:9405:8846:8174:9365:8:28:2164:29:36:30:49:38:8:40:258:49:198046:50:200652:51:190453:::::|h[Signet of Titanic Insight |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+				}, -- [1]
+				{
+					["mapID"] = 2569,
+					["date"] = "22/06/23",
+					["class"] = "WARLOCK",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["boss"] = "Kazzara, the Hellforged",
+					["time"] = "22:22:05",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:193769::::::::70:66::16:5:6652:9144:9329:1659:8767:1:28:1279:::::|h[Erupting Spear Fragment]|h|r",
+					["typeCode"] = "default",
+					["owner"] = "Grendizer-Ragnaros",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["response"] = "Mainspec/Need",
+					["id"] = "1687443725-3",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202612::::::::70:66::6:5:6652:9410:9382:1498:8767::::::|h[Screaming Black Dragonscale]|h|r",
+					["isAwardReason"] = false,
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["responseID"] = 1,
+					["itemReplaced2"] = "|cffa335ee|Hitem:203996::::::::70:66::5:5:6652:9409:9334:1492:8767::::::|h[Igneous Flowstone]|h|r",
+					["votes"] = 1,
+				}, -- [2]
+				{
+					["mapID"] = 2569,
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["class"] = "WARLOCK",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["boss"] = "The Forgotten Experiments",
+					["time"] = "00:47:06",
+					["iClass"] = 15,
+					["itemReplaced1"] = "|cffa335ee|Hitem:134420::::::::70:66::33:7:6652:9223:9218:9144:9329:3316:8767:1:28:1279:::::|h[Gloves of the Mountain Conquest]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["response"] = "Mainspec/Need",
+					["typeCode"] = "default",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202624::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Dreadful Mixing Fluid]|h|r",
+					["id"] = "1688662026-4",
+					["date"] = "07/07/23",
+					["responseID"] = 1,
+					["votes"] = 1,
+					["isAwardReason"] = false,
+				}, -- [3]
+			},
+			["Ryleei-Ragnaros"] = {
+				{
+					["mapID"] = 2569,
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["class"] = "WARRIOR",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["boss"] = "The Forgotten Experiments",
+					["time"] = "20:37:07",
+					["iClass"] = 15,
+					["itemReplaced1"] = "|cffa335ee|Hitem:200425::::::::70:264::35:5:6652:7977:8974:8829:1495::::::|h[Gauntlets of the Walking Mountain]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
+					["owner"] = "Maccasham-Ragnaros",
+					["response"] = "Mainspec/Need",
+					["typeCode"] = "default",
+					["difficultyID"] = 15,
+					["lootWon"] = "|cffa335ee|Hitem:202638::::::::70:264::5:4:9230:9409:1485:8767::::::|h[Zenith Mixing Fluid]|h|r",
+					["id"] = "1683833827-2",
+					["date"] = "11/05/23",
+					["responseID"] = 1,
+					["votes"] = 0,
+					["isAwardReason"] = false,
+				}, -- [1]
 			},
 			["Whískyy-Ragnaros"] = {
 				{
@@ -24224,7 +24456,7 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:190508:6643:::::::70:264::13:7:8836:8840:8902:9405:8846:8791:9365:8:28:2164:29:32:30:40:38:8:40:193:44:198046:45:194578:49:190453:::::|h[Primal Molten Warglaive |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
 					["typeCode"] = "default",
 					["owner"] = "Maccasham-Ragnaros",
-					["votes"] = 0,
+					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["response"] = "Offspec/Greed",
 					["id"] = "1683835082-3",
 					["difficultyID"] = 15,
@@ -24238,63 +24470,57 @@ RCLootCouncilLootDB = {
 					},
 					["responseID"] = 2,
 					["itemReplaced2"] = "|cffa335ee|Hitem:190518:6643:::::::70:264::13:8:8836:8840:8902:9405:8846:8791:8174:9365:9:28:2164:29:36:30:32:38:8:40:182:45:198046:46:194578:47:200652:50:190453:::::|h[Obsidian Seared Slicer |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
+					["votes"] = 0,
 				}, -- [1]
 			},
-			["Nèlliel-Ragnaros"] = {
+			["Buffdotcom-Ragnaros"] = {
 				{
 					["mapID"] = 2569,
-					["color"] = {
-						0, -- [1]
-						0.7, -- [2]
-						0.7, -- [3]
-						1, -- [4]
-					},
-					["class"] = "HUNTER",
-					["iSubClass"] = 2,
+					["date"] = "19/07/23",
+					["class"] = "EVOKER",
+					["iSubClass"] = 1,
 					["groupSize"] = 20,
-					["boss"] = "Assault of the Zaqali",
-					["time"] = "22:41:13",
-					["iClass"] = 2,
-					["itemReplaced1"] = "|cffa335ee|Hitem:133251:6528:::::::70:66::35:5:9382:6652:9147:9466:8767::::::|h[Thundercall]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Minor Upgrade",
 					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202607::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Brutal Dragonslayer's Trophy]|h|r",
-					["votes"] = 0,
-					["date"] = "22/06/23",
-					["responseID"] = 3,
-					["id"] = "1687444873-5",
-					["typeCode"] = "default",
-				}, -- [1]
-				{
-					["mapID"] = 2569,
+					["time"] = "15:33:34",
+					["iClass"] = 4,
+					["id"] = "1689770014-0",
+					["owner"] = "Buffdotcom-Ragnaros",
+					["response"] = "Personal Loot - Non tradeable",
+					["difficultyID"] = 15,
+					["lootWon"] = "|cffa335ee|Hitem:204467::::::::70:1473::5:7:6652:9226:9220:9409:9332:1485:8767::::::|h[Drape of the Dracthyr Trials]|h|r",
 					["color"] = {
-						0, -- [1]
-						1, -- [2]
+						1, -- [1]
+						0.6, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["class"] = "HUNTER",
+					["responseID"] = "PL",
+					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
+					["boss"] = "The Vigilant Steward, Zskarn",
+				}, -- [1]
+				{
+					["mapID"] = 2569,
+					["date"] = "19/07/23",
+					["class"] = "EVOKER",
 					["iSubClass"] = 1,
 					["groupSize"] = 20,
-					["boss"] = "Kazzara, the Hellforged",
-					["time"] = "22:17:17",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:133362:6592:::::::70:66::16:7:6652:9223:9220:9144:9334:9458:8767:1:28:1279:::::|h[Billowing Skydrape]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Mainspec/Need",
 					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202573::::::::70:66::6:7:9410:9380:6652:9224:9220:1498:8767::::::|h[Etchings of the Captive Revenant]|h|r",
-					["votes"] = 1,
-					["date"] = "29/06/23",
-					["responseID"] = 1,
-					["id"] = "1688048237-3",
-					["typeCode"] = "default",
+					["time"] = "15:33:36",
+					["iClass"] = 4,
+					["id"] = "1689770016-1",
+					["owner"] = "Buffdotcom-Ragnaros",
+					["response"] = "Personal Loot - Non tradeable",
+					["difficultyID"] = 15,
+					["lootWon"] = "|cffa335ee|Hitem:204467::::::::70:1473::5:7:6652:9226:9220:9409:9332:1485:8767::::::|h[Drape of the Dracthyr Trials]|h|r",
+					["color"] = {
+						1, -- [1]
+						0.6, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["responseID"] = "PL",
+					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
+					["boss"] = "The Vigilant Steward, Zskarn",
 				}, -- [2]
 			},
 			["Vallgar-Ragnaros"] = {
@@ -24316,27 +24542,27 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Minor Upgrade",
-					["typeCode"] = "default",
+					["isAwardReason"] = false,
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202605::::::::70:66::6:8:9410:9380:6652:9413:9224:9219:1498:8767::::::|h[Gloomfused Chemistry Belt]|h|r",
-					["id"] = "1686842125-7",
+					["votes"] = 2,
 					["date"] = "15/06/23",
 					["responseID"] = 3,
-					["votes"] = 2,
-					["isAwardReason"] = false,
+					["id"] = "1686842125-7",
+					["typeCode"] = "default",
 				}, -- [1]
 			},
-			["Fiò-Ragnaros"] = {
+			["Dokterdrake-Ragnaros"] = {
 				{
 					["mapID"] = 2569,
-					["date"] = "22/06/23",
-					["class"] = "DEMONHUNTER",
-					["iSubClass"] = 1,
+					["date"] = "16/06/23",
+					["class"] = "EVOKER",
+					["iSubClass"] = 0,
 					["groupSize"] = 20,
 					["votes"] = 0,
-					["time"] = "22:21:00",
+					["time"] = "00:23:43",
 					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:133247:6598:::::::70:66::16:7:9223:9220:9144:6652:9329:3329:8767:1:28:1279:::::|h[Shadow of Perfect Bliss]|h|r",
+					["itemReplaced1"] = "|cffa335ee|Hitem:202565:6655:::::::70:66::5:5:6652:9409:9334:1489:8767:1:28:2645:::::|h[Erethos, the Empty Promise]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["color"] = {
@@ -24346,15 +24572,42 @@ RCLootCouncilLootDB = {
 						1, -- [4]
 					},
 					["response"] = "Mainspec/Need",
-					["boss"] = "Kazzara, the Hellforged",
+					["boss"] = "The Forgotten Experiments",
 					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202573::::::::70:66::6:7:9410:9380:6652:9224:9220:1498:8767::::::|h[Etchings of the Captive Revenant]|h|r",
-					["note"] = "2nd bis",
+					["lootWon"] = "|cffa335ee|Hitem:204318::::::::70:66::6:5:6652:9410:9381:1498:8767::::::|h[Thadrion's Erratic Arcanotrode]|h|r",
+					["note"] = "need it when i get legendary",
 					["isAwardReason"] = false,
 					["responseID"] = 1,
-					["id"] = "1687443660-1",
+					["id"] = "1686846223-11",
 					["typeCode"] = "default",
 				}, -- [1]
+				{
+					["mapID"] = 2569,
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["class"] = "EVOKER",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["boss"] = "The Forgotten Experiments",
+					["time"] = "00:23:47",
+					["iClass"] = 15,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202489::::::::70:66::5:6:6652:9230:9409:9334:1492:8767:1:28:1040:::::|h[Claws of Obsidian Secrets]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["response"] = "Mainspec/Need",
+					["isAwardReason"] = false,
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202638::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Zenith Mixing Fluid]|h|r",
+					["votes"] = 1,
+					["date"] = "16/06/23",
+					["responseID"] = 1,
+					["id"] = "1686846227-12",
+					["typeCode"] = "default",
+				}, -- [2]
 				{
 					["mapID"] = 2569,
 					["color"] = {
@@ -24363,25 +24616,136 @@ RCLootCouncilLootDB = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["class"] = "DEMONHUNTER",
-					["iSubClass"] = 2,
+					["class"] = "EVOKER",
+					["iSubClass"] = 3,
 					["groupSize"] = 20,
-					["boss"] = "The Forgotten Experiments",
-					["time"] = "00:19:30",
+					["boss"] = "Kazzara, the Hellforged",
+					["time"] = "22:21:04",
 					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202522::::::::70:66::35:5:6652:9227:9381:1501:8767::::::|h[Kinslayer's Tainted Spaulders]|h|r",
+					["itemReplaced1"] = "|cffa335ee|Hitem:133235::::::::70:66::35:8:9382:43:9223:9218:9144:6652:9466:8767::::::|h[Fallen Snow Shoulderguards]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Offspec/Greed",
-					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202575::::::::70:66::6:7:6652:9224:9218:9410:9381:1498:8767::::::|h[Neldris's Sinewy Scapula]|h|r",
-					["votes"] = 0,
-					["date"] = "23/06/23",
-					["responseID"] = 2,
-					["id"] = "1687450770-12",
 					["typeCode"] = "default",
-				}, -- [2]
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202590::::::::70:66::6:7:9410:9380:6652:9224:9218:1498:8767::::::|h[Kazzara's Grafted Companion]|h|r",
+					["id"] = "1687443664-2",
+					["date"] = "22/06/23",
+					["responseID"] = 2,
+					["votes"] = 1,
+					["isAwardReason"] = false,
+				}, -- [3]
+				{
+					["mapID"] = 2569,
+					["color"] = {
+						1, -- [1]
+						0.5, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["class"] = "EVOKER",
+					["iSubClass"] = 3,
+					["groupSize"] = 20,
+					["boss"] = "Assault of the Zaqali",
+					["time"] = "22:41:08",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202488::::::::70:66::5:7:6652:9414:9229:9409:9334:1498:8767:1:28:1040:::::|h[Crown of Obsidian Secrets]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["response"] = "Offspec/Greed",
+					["typeCode"] = "default",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202591::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Gatecrasher Giant's Coif]|h|r",
+					["id"] = "1687444868-4",
+					["date"] = "22/06/23",
+					["responseID"] = 2,
+					["votes"] = 0,
+					["isAwardReason"] = false,
+				}, -- [4]
+				{
+					["mapID"] = 2569,
+					["color"] = {
+						1, -- [1]
+						0.5, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["class"] = "EVOKER",
+					["iSubClass"] = 3,
+					["groupSize"] = 20,
+					["boss"] = "The Amalgamation Chamber",
+					["time"] = "23:06:05",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202491:6619:::::::70:66::5:6:6652:9231:9409:9334:1492:8767:1:28:2615:::::|h[Hauberk of Obsidian Secrets]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["response"] = "Offspec/Greed",
+					["typeCode"] = "default",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202598::::::::70:66::6:7:9410:9380:6652:9224:9221:1498:8767::::::|h[Cuirass of Meticulous Mixture]|h|r",
+					["id"] = "1687446365-10",
+					["date"] = "22/06/23",
+					["responseID"] = 2,
+					["votes"] = 0,
+					["isAwardReason"] = false,
+				}, -- [5]
+				{
+					["mapID"] = 2569,
+					["date"] = "23/06/23",
+					["class"] = "EVOKER",
+					["iSubClass"] = 3,
+					["groupSize"] = 20,
+					["votes"] = 0,
+					["time"] = "00:20:16",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:193460:6613:::::::70:66::13:7:8836:8840:8902:8960:9405:9376:9366:5:28:2164:38:8:40:386:45:204697:48:204440:::::|h[Venom-Steeped Stompers |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Offspec/Greed",
+					["id"] = "1687450816-13",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202588::::::::70:66::6:7:9410:9381:6652:9224:9219:1498:8767::::::|h[Exacting Augmenter's Sabatons]|h|r",
+					["note"] = "tmog",
+					["isAwardReason"] = false,
+					["responseID"] = 2,
+					["boss"] = "The Forgotten Experiments",
+					["color"] = {
+						1, -- [1]
+						0.5, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+				}, -- [6]
+				{
+					["mapID"] = 2569,
+					["date"] = "29/06/23",
+					["class"] = "EVOKER",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["boss"] = "Kazzara, the Hellforged",
+					["time"] = "22:20:43",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202612::::::::70:66::5:4:9409:9334:1492:8767::::::|h[Screaming Black Dragonscale]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["typeCode"] = "default",
+					["owner"] = "Grendizer-Ragnaros",
+					["id"] = "1688048443-4",
+					["response"] = "Minor Upgrade",
+					["note"] = "i have 441 version",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202612::::::::70:66::6:5:42:9410:9382:1498:8767::::::|h[Screaming Black Dragonscale]|h|r",
+					["isAwardReason"] = false,
+					["color"] = {
+						0, -- [1]
+						0.7, -- [2]
+						0.7, -- [3]
+						1, -- [4]
+					},
+					["responseID"] = 3,
+					["itemReplaced2"] = "|cffa335ee|Hitem:202614::::::::70:66::3:5:6652:7979:9329:1491:8767::::::|h[Rashok's Molten Heart]|h|r",
+					["votes"] = 0,
+				}, -- [7]
 			},
 			["Helpdotcom-Ragnaros"] = {
 				{
@@ -24402,14 +24766,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202604::::::::70:66::6:8:9410:9380:6652:9413:9224:9220:1498:8767::::::|h[Boulder-Tossing Bands]|h|r",
-					["votes"] = 1,
+					["id"] = "1688049130-8",
 					["date"] = "29/06/23",
 					["responseID"] = 1,
-					["id"] = "1688049130-8",
-					["typeCode"] = "default",
+					["votes"] = 1,
+					["isAwardReason"] = false,
 				}, -- [1]
 			},
 			["Muhrtele-Ragnaros"] = {
@@ -24425,7 +24789,7 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202613::::::::70:66::5:5:9409:6652:9333:1494:8767::::::|h[Zaqali Chaos Grapnel]|h|r",
 					["typeCode"] = "default",
 					["owner"] = "Grendizer-Ragnaros",
-					["votes"] = 0,
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["response"] = "Mainspec/Need",
 					["id"] = "1687444893-6",
 					["difficultyID"] = 16,
@@ -24439,7 +24803,7 @@ RCLootCouncilLootDB = {
 					},
 					["responseID"] = 1,
 					["itemReplaced2"] = "|cffa335ee|Hitem:204736::::::::70:66::42:4:6652:9309:1533:8767:1:28:2641:::::|h[Heatbound Medallion]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["votes"] = 0,
 				}, -- [1]
 			},
 			["çakey-Ragnaros"] = {
@@ -24455,41 +24819,41 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202488::::::::70:66::5:7:6652:9414:9229:9409:9334:1498:8767:1:28:2615:::::|h[Crown of Obsidian Secrets]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
-					["color"] = {
-						1, -- [1]
-						0.5, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
+					["typeCode"] = "default",
 					["response"] = "Offspec/Greed",
-					["boss"] = "Assault of the Zaqali",
+					["id"] = "1686840198-4",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202591::::::::70:66::6:8:9410:9380:6652:9414:9224:9221:1498:8767::::::|h[Gatecrasher Giant's Coif]|h|r",
 					["note"] = "Would take for when i can upgto 447",
 					["isAwardReason"] = false,
 					["responseID"] = 2,
-					["id"] = "1686840198-4",
-					["typeCode"] = "default",
+					["boss"] = "Assault of the Zaqali",
+					["color"] = {
+						1, -- [1]
+						0.5, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
 				}, -- [1]
 			},
-			["Sliyrak-Ragnaros"] = {
+			["Rap-Ragnaros"] = {
 				{
 					["mapID"] = 2569,
-					["date"] = "11/05/23",
-					["class"] = "EVOKER",
-					["iSubClass"] = 4,
-					["groupSize"] = 11,
-					["boss"] = "Rashok, the Elder",
-					["time"] = "21:33:16",
-					["iClass"] = 2,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202555:6643:::::::70:264::3:5:42:7979:9324:1475:8767::::::|h[Zskarn's Autopsy Scalpel]|h|r",
+					["date"] = "06/07/23",
+					["class"] = "WARRIOR",
+					["iSubClass"] = 0,
+					["groupSize"] = 20,
+					["boss"] = "The Amalgamation Chamber",
+					["time"] = "23:19:45",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202612::::::::70:66::5:5:6652:9409:9333:1488:8767:1:28:2474:::::|h[Screaming Black Dragonscale]|h|r",
 					["typeCode"] = "default",
-					["owner"] = "Maccasham-Ragnaros",
-					["votes"] = 0,
+					["owner"] = "Grendizer-Ragnaros",
+					["votes"] = 1,
 					["response"] = "Offspec/Greed",
-					["id"] = "1683837196-5",
-					["difficultyID"] = 15,
-					["lootWon"] = "|cffa335ee|Hitem:204319::::::::70:264::5:5:6652:9409:9331:1485:8767::::::|h[Bloodfire Extraction Conduit]|h|r",
+					["id"] = "1688656785-3",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202617::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Elementium Pocket Anvil]|h|r",
 					["isAwardReason"] = false,
 					["color"] = {
 						1, -- [1]
@@ -24498,8 +24862,8 @@ RCLootCouncilLootDB = {
 						1, -- [4]
 					},
 					["responseID"] = 2,
-					["itemReplaced2"] = "|cffa335ee|Hitem:195484::::::::70:264::6:4:6652:7981:1498:8767::::::|h[Icewrath's Channeling Conduit]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
+					["itemReplaced2"] = "|cffa335ee|Hitem:203963::::::::70:66::5:5:6652:9409:9333:1485:8767::::::|h[Beacon to the Beyond]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 				}, -- [1]
 			},
 			["Shaamoo-Ragnaros"] = {
@@ -24521,14 +24885,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["owner"] = "Maccasham-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 15,
 					["lootWon"] = "|cffa335ee|Hitem:202586::::::::70:264::5:7:9409:9330:6652:9226:9221:1485:8767::::::|h[Warlord's Volcanic Vest]|h|r",
-					["votes"] = 0,
+					["id"] = "1683835010-2",
 					["date"] = "11/05/23",
 					["responseID"] = 1,
-					["id"] = "1683835010-2",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = false,
 				}, -- [1]
 			},
 			["Maccasham-Ragnaros"] = {
@@ -24550,14 +24914,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["owner"] = "Maccasham-Ragnaros",
 					["response"] = "Offspec/Greed",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 15,
 					["lootWon"] = "|cffa335ee|Hitem:202571::::::::70:264::5:5:6652:9409:9331:1485:8767::::::|h[Experiment 1, Kitewing]|h|r",
-					["votes"] = 0,
+					["id"] = "1683833373-0",
 					["date"] = "11/05/23",
 					["responseID"] = 2,
-					["id"] = "1683833373-0",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = false,
 				}, -- [1]
 			},
 			["Wituwu-Ragnaros"] = {
@@ -24579,14 +24943,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["typeCode"] = "default",
+					["isAwardReason"] = false,
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202626::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Venerated Mixing Fluid]|h|r",
-					["id"] = "1686846137-9",
+					["votes"] = 1,
 					["date"] = "16/06/23",
 					["responseID"] = 1,
-					["votes"] = 1,
-					["isAwardReason"] = false,
+					["id"] = "1686846137-9",
+					["typeCode"] = "default",
 				}, -- [1]
 				{
 					["mapID"] = 2569,
@@ -24600,21 +24964,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202545:6619:::::::70:66::5:6:6652:9231:9409:9334:1492:8767:1:28:2615:::::|h[Command of the Furnace Seraph]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1688048136-0",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202600::::::::70:66::6:7:9410:9380:6652:9224:9221:1498:8767::::::|h[Reanimator's Wicked Cassock]|h|r",
+					["note"] = "for mythic path",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "Kazzara, the Hellforged",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Mainspec/Need",
-					["boss"] = "Kazzara, the Hellforged",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202600::::::::70:66::6:7:9410:9380:6652:9224:9221:1498:8767::::::|h[Reanimator's Wicked Cassock]|h|r",
-					["note"] = "for mythic path",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["id"] = "1688048136-0",
-					["typeCode"] = "default",
 				}, -- [2]
 				{
 					["mapID"] = 2569,
@@ -24634,44 +24998,73 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["typeCode"] = "default",
+					["isAwardReason"] = false,
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202579::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Attendant's Concocting Cover]|h|r",
-					["id"] = "1688656756-0",
+					["votes"] = 2,
 					["date"] = "06/07/23",
 					["responseID"] = 1,
-					["votes"] = 2,
-					["isAwardReason"] = false,
+					["id"] = "1688656756-0",
+					["typeCode"] = "default",
 				}, -- [3]
 			},
-			["Skaterble-Ragnaros"] = {
+			["Djsmurkioqtx-Ragnaros"] = {
+				{
+					["mapID"] = 2569,
+					["date"] = "22/06/23",
+					["class"] = "MAGE",
+					["iSubClass"] = 10,
+					["groupSize"] = 20,
+					["boss"] = "The Amalgamation Chamber",
+					["time"] = "23:06:20",
+					["iClass"] = 2,
+					["itemReplaced1"] = "|cffa335ee|Hitem:190506:6643:::::::70:66::13:7:8836:8840:8902:9405:9376:8793:9366:8:28:2164:29:40:30:49:38:8:40:191:44:204697:45:194566:49:204440:::::|h[Primal Molten Spellblade |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["typeCode"] = "default",
+					["owner"] = "Grendizer-Ragnaros",
+					["id"] = "1687446380-11",
+					["response"] = "Mainspec/Need",
+					["note"] = "for 447 ",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202563::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Obsidian Stirring Staff]|h|r",
+					["isAwardReason"] = false,
+					["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["responseID"] = 1,
+					["itemReplaced2"] = "|cffa335ee|Hitem:193745::::::::70:66::33:5:6652:9144:9334:1663:8767:1:28:1279:::::|h[Rod of Perfect Order]|h|r",
+					["votes"] = 1,
+				}, -- [1]
 				{
 					["mapID"] = 2569,
 					["color"] = {
-						0.7, -- [1]
-						0.7, -- [2]
-						0.7, -- [3]
+						0, -- [1]
+						1, -- [2]
+						0, -- [3]
 						1, -- [4]
 					},
-					["class"] = "MONK",
-					["iSubClass"] = 2,
+					["class"] = "MAGE",
+					["iSubClass"] = 0,
 					["groupSize"] = 20,
-					["boss"] = "Unknown",
-					["time"] = "22:37:11",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202506::::::::70:66::5:7:6652:9409:9415:9334:8094:9229:1498::::::|h[Cover of the Vermillion Forge]|h|r",
+					["boss"] = "The Forgotten Experiments",
+					["time"] = "00:21:44",
+					["iClass"] = 15,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202552::::::::70:66::5:6:6652:9230:9409:9334:1492:8767:1:28:1040:::::|h[Underlight Conjurer's Gloves]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Pass",
-					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202602::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Violent Gravemask]|h|r",
-					["votes"] = 0,
-					["date"] = "13/07/23",
-					["responseID"] = "PASS",
-					["id"] = "1689259031-0",
+					["response"] = "Mainspec/Need",
 					["typeCode"] = "default",
-				}, -- [1]
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202625::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Mystic Mixing Fluid]|h|r",
+					["id"] = "1687450904-14",
+					["date"] = "23/06/23",
+					["responseID"] = 1,
+					["votes"] = 2,
+					["isAwardReason"] = false,
+				}, -- [2]
 			},
 			["Slowone-Ragnaros"] = {
 				{
@@ -24686,21 +25079,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:200409:6490:::::::70:264::6:5:7981:6652:8827:1498:8767:1:28:1040:::::|h[Greaves of the Haunted Frostbrood]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["owner"] = "Maccasham-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1683837055-4",
+					["difficultyID"] = 15,
+					["lootWon"] = "|cffa335ee|Hitem:202634::::::::70:264::5:4:9409:9228:1485:8767::::::|h[Dreadful Cooling Fluid]|h|r",
+					["note"] = "2/4",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "Rashok, the Elder",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Mainspec/Need",
-					["boss"] = "Rashok, the Elder",
-					["difficultyID"] = 15,
-					["lootWon"] = "|cffa335ee|Hitem:202634::::::::70:264::5:4:9409:9228:1485:8767::::::|h[Dreadful Cooling Fluid]|h|r",
-					["note"] = "2/4",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["id"] = "1683837055-4",
-					["typeCode"] = "default",
 				}, -- [1]
 			},
 			["Asset-Ragnaros"] = {
@@ -24716,21 +25109,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:133371:3368:::::::70:66::16:5:6652:9147:9334:9458:8767:1:28:1279:::::|h[Thundercleaver Axe]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1687446327-8",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202568::::::::70:66::6:5:9410:9380:42:1498:8767::::::|h[Scholar's Thinking Cudgel]|h|r",
+					["note"] = "for frost",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "The Amalgamation Chamber",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Mainspec/Need",
-					["boss"] = "The Amalgamation Chamber",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202568::::::::70:66::6:5:9410:9380:42:1498:8767::::::|h[Scholar's Thinking Cudgel]|h|r",
-					["note"] = "for frost",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["id"] = "1687446327-8",
-					["typeCode"] = "default",
 				}, -- [1]
 			},
 			["Papee-Ragnaros"] = {
@@ -24746,21 +25139,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:202534::::::::70:66::5:6:6652:9230:9409:9334:1492:8767:1:28:1040:::::|h[Grips of the Sinister Savant]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Mainspec/Need",
+					["id"] = "1688049099-6",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202578::::::::70:66::6:7:9410:9380:6652:9224:9218:1498:8767::::::|h[Phoenix-Plume Gloves]|h|r",
+					["note"] = "Main spec for 447 catalyst",
+					["isAwardReason"] = false,
+					["responseID"] = 1,
+					["boss"] = "Assault of the Zaqali",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Mainspec/Need",
-					["boss"] = "Assault of the Zaqali",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202578::::::::70:66::6:7:9410:9380:6652:9224:9218:1498:8767::::::|h[Phoenix-Plume Gloves]|h|r",
-					["note"] = "Main spec for 447 catalyst",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["id"] = "1688049099-6",
-					["typeCode"] = "default",
 				}, -- [1]
 			},
 			["Dangerss-Ragnaros"] = {
@@ -24781,14 +25174,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:194490::::::::70:66::6:::::::|h[Plans: Allied Wristguard of Companionship]|h|r",
-					["votes"] = 0,
+					["id"] = "1686840113-0",
 					["date"] = "15/06/23",
 					["responseID"] = 1,
-					["id"] = "1686840113-0",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = false,
 				}, -- [1]
 			},
 			["Mordekaisar-Ragnaros"] = {
@@ -24802,24 +25195,24 @@ RCLootCouncilLootDB = {
 					["time"] = "22:37:29",
 					["iClass"] = 4,
 					["itemReplaced1"] = "|cffa335ee|Hitem:207566::::::::70:66::23:5:7977:6652:9334:1492:8767:1:28:2731:::::|h[Accelerating Sandglass]|h|r",
-					["votes"] = 0,
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["typeCode"] = "default",
 					["owner"] = "Grendizer-Ragnaros",
 					["id"] = "1689259049-1",
 					["response"] = "Minor Upgrade",
 					["note"] = "OS",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202616::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Enduring Dreadplate]|h|r",
+					["isAwardReason"] = false,
 					["color"] = {
 						0, -- [1]
 						0.7, -- [2]
 						0.7, -- [3]
 						1, -- [4]
 					},
-					["isAwardReason"] = false,
 					["responseID"] = 3,
 					["itemReplaced2"] = "|cffa335ee|Hitem:203729::::::::70:66::5:5:9409:6652:9334:1495:8767::::::|h[Ominous Chromatic Essence]|h|r",
-					["typeCode"] = "default",
+					["votes"] = 0,
 				}, -- [1]
 				{
 					["mapID"] = 2569,
@@ -24839,14 +25232,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["response"] = "Autopass",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 16,
 					["lootWon"] = "|cffa335ee|Hitem:202607::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Brutal Dragonslayer's Trophy]|h|r",
-					["votes"] = 0,
+					["id"] = "1689260095-2",
 					["date"] = "13/07/23",
 					["responseID"] = "AUTOPASS",
-					["id"] = "1689260095-2",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = false,
 				}, -- [2]
 				{
 					["mapID"] = 2569,
@@ -24860,21 +25253,21 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:190501::::::::70:66::13:8:8836:8840:8902:9405:9376:8793:9366:9415:9:28:2164:29:36:30:49:38:8:40:173:44:204697:45:194566:49:204440:51:206041:::::|h[Primal Molten Greatbelt |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
+					["typeCode"] = "default",
+					["response"] = "Offspec/Greed",
+					["id"] = "1689260110-3",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202577::::::::70:66::6:8:9410:9380:6652:9415:9224:9219:1498:8767::::::|h[Seal of the Defiant Hordes]|h|r",
+					["note"] = "Tmog",
+					["isAwardReason"] = false,
+					["responseID"] = 2,
+					["boss"] = "Assault of the Zaqali",
 					["color"] = {
 						1, -- [1]
 						0.5, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["response"] = "Offspec/Greed",
-					["boss"] = "Assault of the Zaqali",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202577::::::::70:66::6:8:9410:9380:6652:9415:9224:9219:1498:8767::::::|h[Seal of the Defiant Hordes]|h|r",
-					["note"] = "Tmog",
-					["isAwardReason"] = false,
-					["responseID"] = 2,
-					["id"] = "1689260110-3",
-					["typeCode"] = "default",
 				}, -- [3]
 				{
 					["mapID"] = 2569,
@@ -24888,7 +25281,7 @@ RCLootCouncilLootDB = {
 					["itemReplaced1"] = "|cffa335ee|Hitem:207566::::::::70:66::23:5:7977:6652:9334:1492:8767:1:28:2731:::::|h[Accelerating Sandglass]|h|r",
 					["typeCode"] = "default",
 					["owner"] = "Grendizer-Ragnaros",
-					["votes"] = 0,
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["response"] = "Offspec/Greed",
 					["id"] = "1689260118-4",
 					["difficultyID"] = 16,
@@ -24902,85 +25295,56 @@ RCLootCouncilLootDB = {
 					},
 					["responseID"] = 2,
 					["itemReplaced2"] = "|cffa335ee|Hitem:203729::::::::70:66::5:5:9409:6652:9334:1495:8767::::::|h[Ominous Chromatic Essence]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["votes"] = 0,
 				}, -- [4]
 			},
-			["Djsmurkioqtx-Ragnaros"] = {
+			["Skaterble-Ragnaros"] = {
 				{
 					["mapID"] = 2569,
-					["date"] = "22/06/23",
-					["class"] = "MAGE",
-					["iSubClass"] = 10,
+					["color"] = {
+						0.7, -- [1]
+						0.7, -- [2]
+						0.7, -- [3]
+						1, -- [4]
+					},
+					["class"] = "MONK",
+					["iSubClass"] = 2,
 					["groupSize"] = 20,
-					["boss"] = "The Amalgamation Chamber",
-					["time"] = "23:06:20",
+					["boss"] = "Unknown",
+					["time"] = "22:37:11",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202506::::::::70:66::5:7:6652:9409:9415:9334:8094:9229:1498::::::|h[Cover of the Vermillion Forge]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["response"] = "Pass",
+					["typeCode"] = "default",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202602::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Violent Gravemask]|h|r",
+					["id"] = "1689259031-0",
+					["date"] = "13/07/23",
+					["responseID"] = "PASS",
+					["votes"] = 0,
+					["isAwardReason"] = false,
+				}, -- [1]
+			},
+			["Sliyrak-Ragnaros"] = {
+				{
+					["mapID"] = 2569,
+					["date"] = "11/05/23",
+					["class"] = "EVOKER",
+					["iSubClass"] = 4,
+					["groupSize"] = 11,
+					["boss"] = "Rashok, the Elder",
+					["time"] = "21:33:16",
 					["iClass"] = 2,
-					["itemReplaced1"] = "|cffa335ee|Hitem:190506:6643:::::::70:66::13:7:8836:8840:8902:9405:9376:8793:9366:8:28:2164:29:40:30:49:38:8:40:191:44:204697:45:194566:49:204440:::::|h[Primal Molten Spellblade |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
-					["votes"] = 1,
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["id"] = "1687446380-11",
-					["response"] = "Mainspec/Need",
-					["note"] = "for 447 ",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202563::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Obsidian Stirring Staff]|h|r",
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["itemReplaced2"] = "|cffa335ee|Hitem:193745::::::::70:66::33:5:6652:9144:9334:1663:8767:1:28:1279:::::|h[Rod of Perfect Order]|h|r",
+					["itemReplaced1"] = "|cffa335ee|Hitem:202555:6643:::::::70:264::3:5:42:7979:9324:1475:8767::::::|h[Zskarn's Autopsy Scalpel]|h|r",
 					["typeCode"] = "default",
-				}, -- [1]
-				{
-					["mapID"] = 2569,
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["class"] = "MAGE",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
-					["boss"] = "The Forgotten Experiments",
-					["time"] = "00:21:44",
-					["iClass"] = 15,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202552::::::::70:66::5:6:6652:9230:9409:9334:1492:8767:1:28:1040:::::|h[Underlight Conjurer's Gloves]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202625::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Mystic Mixing Fluid]|h|r",
-					["votes"] = 2,
-					["date"] = "23/06/23",
-					["responseID"] = 1,
-					["id"] = "1687450904-14",
-					["typeCode"] = "default",
-				}, -- [2]
-			},
-			["Rap-Ragnaros"] = {
-				{
-					["mapID"] = 2569,
-					["date"] = "06/07/23",
-					["class"] = "WARRIOR",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
-					["boss"] = "The Amalgamation Chamber",
-					["time"] = "23:19:45",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202612::::::::70:66::5:5:6652:9409:9333:1488:8767:1:28:2474:::::|h[Screaming Black Dragonscale]|h|r",
-					["typeCode"] = "default",
-					["owner"] = "Grendizer-Ragnaros",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Maccasham-Ragnaros",
+					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["response"] = "Offspec/Greed",
-					["id"] = "1688656785-3",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202617::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Elementium Pocket Anvil]|h|r",
+					["id"] = "1683837196-5",
+					["difficultyID"] = 15,
+					["lootWon"] = "|cffa335ee|Hitem:204319::::::::70:264::5:5:6652:9409:9331:1485:8767::::::|h[Bloodfire Extraction Conduit]|h|r",
 					["isAwardReason"] = false,
 					["color"] = {
 						1, -- [1]
@@ -24989,32 +25353,32 @@ RCLootCouncilLootDB = {
 						1, -- [4]
 					},
 					["responseID"] = 2,
-					["itemReplaced2"] = "|cffa335ee|Hitem:203963::::::::70:66::5:5:6652:9409:9333:1485:8767::::::|h[Beacon to the Beyond]|h|r",
-					["votes"] = 1,
+					["itemReplaced2"] = "|cffa335ee|Hitem:195484::::::::70:264::6:4:6652:7981:1498:8767::::::|h[Icewrath's Channeling Conduit]|h|r",
+					["votes"] = 0,
 				}, -- [1]
 			},
-			["Dokterdrake-Ragnaros"] = {
+			["Fiò-Ragnaros"] = {
 				{
 					["mapID"] = 2569,
-					["date"] = "16/06/23",
-					["class"] = "EVOKER",
-					["iSubClass"] = 0,
+					["date"] = "22/06/23",
+					["class"] = "DEMONHUNTER",
+					["iSubClass"] = 1,
 					["groupSize"] = 20,
 					["votes"] = 0,
-					["time"] = "00:23:43",
+					["time"] = "22:21:00",
 					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202565:6655:::::::70:66::5:5:6652:9409:9334:1489:8767:1:28:2645:::::|h[Erethos, the Empty Promise]|h|r",
+					["itemReplaced1"] = "|cffa335ee|Hitem:133247:6598:::::::70:66::16:7:9223:9220:9144:6652:9329:3329:8767:1:28:1279:::::|h[Shadow of Perfect Bliss]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
 					["typeCode"] = "default",
 					["response"] = "Mainspec/Need",
-					["id"] = "1686846223-11",
+					["id"] = "1687443660-1",
 					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:204318::::::::70:66::6:5:6652:9410:9381:1498:8767::::::|h[Thadrion's Erratic Arcanotrode]|h|r",
-					["note"] = "need it when i get legendary",
+					["lootWon"] = "|cffa335ee|Hitem:202573::::::::70:66::6:7:9410:9380:6652:9224:9220:1498:8767::::::|h[Etchings of the Captive Revenant]|h|r",
+					["note"] = "2nd bis",
 					["isAwardReason"] = false,
 					["responseID"] = 1,
-					["boss"] = "The Forgotten Experiments",
+					["boss"] = "Kazzara, the Hellforged",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
@@ -25025,304 +25389,115 @@ RCLootCouncilLootDB = {
 				{
 					["mapID"] = 2569,
 					["color"] = {
-						0, -- [1]
-						1, -- [2]
+						1, -- [1]
+						0.5, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-					["class"] = "EVOKER",
-					["iSubClass"] = 0,
+					["class"] = "DEMONHUNTER",
+					["iSubClass"] = 2,
 					["groupSize"] = 20,
 					["boss"] = "The Forgotten Experiments",
-					["time"] = "00:23:47",
-					["iClass"] = 15,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202489::::::::70:66::5:6:6652:9230:9409:9334:1492:8767:1:28:1040:::::|h[Claws of Obsidian Secrets]|h|r",
+					["time"] = "00:19:30",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:202522::::::::70:66::35:5:6652:9227:9381:1501:8767::::::|h[Kinslayer's Tainted Spaulders]|h|r",
 					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
 					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Mainspec/Need",
+					["response"] = "Offspec/Greed",
 					["typeCode"] = "default",
 					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202638::::::::70:66::6:4:9230:9410:1498:8767::::::|h[Zenith Mixing Fluid]|h|r",
-					["id"] = "1686846227-12",
-					["date"] = "16/06/23",
-					["responseID"] = 1,
-					["votes"] = 1,
+					["lootWon"] = "|cffa335ee|Hitem:202575::::::::70:66::6:7:6652:9224:9218:9410:9381:1498:8767::::::|h[Neldris's Sinewy Scapula]|h|r",
+					["id"] = "1687450770-12",
+					["date"] = "23/06/23",
+					["responseID"] = 2,
+					["votes"] = 0,
 					["isAwardReason"] = false,
 				}, -- [2]
+			},
+			["Nèlliel-Ragnaros"] = {
 				{
 					["mapID"] = 2569,
-					["color"] = {
-						1, -- [1]
-						0.5, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["class"] = "EVOKER",
-					["iSubClass"] = 3,
-					["groupSize"] = 20,
-					["boss"] = "Kazzara, the Hellforged",
-					["time"] = "22:21:04",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:133235::::::::70:66::35:8:9382:43:9223:9218:9144:6652:9466:8767::::::|h[Fallen Snow Shoulderguards]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Offspec/Greed",
-					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202590::::::::70:66::6:7:9410:9380:6652:9224:9218:1498:8767::::::|h[Kazzara's Grafted Companion]|h|r",
-					["votes"] = 1,
-					["date"] = "22/06/23",
-					["responseID"] = 2,
-					["id"] = "1687443664-2",
-					["typeCode"] = "default",
-				}, -- [3]
-				{
-					["mapID"] = 2569,
-					["color"] = {
-						1, -- [1]
-						0.5, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["class"] = "EVOKER",
-					["iSubClass"] = 3,
-					["groupSize"] = 20,
-					["boss"] = "Assault of the Zaqali",
-					["time"] = "22:41:08",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202488::::::::70:66::5:7:6652:9414:9229:9409:9334:1498:8767:1:28:1040:::::|h[Crown of Obsidian Secrets]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Offspec/Greed",
-					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202591::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Gatecrasher Giant's Coif]|h|r",
-					["votes"] = 0,
-					["date"] = "22/06/23",
-					["responseID"] = 2,
-					["id"] = "1687444868-4",
-					["typeCode"] = "default",
-				}, -- [4]
-				{
-					["mapID"] = 2569,
-					["color"] = {
-						1, -- [1]
-						0.5, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["class"] = "EVOKER",
-					["iSubClass"] = 3,
-					["groupSize"] = 20,
-					["boss"] = "The Amalgamation Chamber",
-					["time"] = "23:06:05",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202491:6619:::::::70:66::5:6:6652:9231:9409:9334:1492:8767:1:28:2615:::::|h[Hauberk of Obsidian Secrets]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["response"] = "Offspec/Greed",
-					["isAwardReason"] = false,
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202598::::::::70:66::6:7:9410:9380:6652:9224:9221:1498:8767::::::|h[Cuirass of Meticulous Mixture]|h|r",
-					["votes"] = 0,
-					["date"] = "22/06/23",
-					["responseID"] = 2,
-					["id"] = "1687446365-10",
-					["typeCode"] = "default",
-				}, -- [5]
-				{
-					["mapID"] = 2569,
-					["date"] = "23/06/23",
-					["class"] = "EVOKER",
-					["iSubClass"] = 3,
-					["groupSize"] = 20,
-					["votes"] = 0,
-					["time"] = "00:20:16",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:193460:6613:::::::70:66::13:7:8836:8840:8902:8960:9405:9376:9366:5:28:2164:38:8:40:386:45:204697:48:204440:::::|h[Venom-Steeped Stompers |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["color"] = {
-						1, -- [1]
-						0.5, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["response"] = "Offspec/Greed",
-					["boss"] = "The Forgotten Experiments",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202588::::::::70:66::6:7:9410:9381:6652:9224:9219:1498:8767::::::|h[Exacting Augmenter's Sabatons]|h|r",
-					["note"] = "tmog",
-					["isAwardReason"] = false,
-					["responseID"] = 2,
-					["id"] = "1687450816-13",
-					["typeCode"] = "default",
-				}, -- [6]
-				{
-					["mapID"] = 2569,
-					["date"] = "29/06/23",
-					["class"] = "EVOKER",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
-					["boss"] = "Kazzara, the Hellforged",
-					["time"] = "22:20:43",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202612::::::::70:66::5:4:9409:9334:1492:8767::::::|h[Screaming Black Dragonscale]|h|r",
-					["votes"] = 0,
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["id"] = "1688048443-4",
-					["response"] = "Minor Upgrade",
-					["note"] = "i have 441 version",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202612::::::::70:66::6:5:42:9410:9382:1498:8767::::::|h[Screaming Black Dragonscale]|h|r",
 					["color"] = {
 						0, -- [1]
 						0.7, -- [2]
 						0.7, -- [3]
 						1, -- [4]
 					},
-					["isAwardReason"] = false,
+					["class"] = "HUNTER",
+					["iSubClass"] = 2,
+					["groupSize"] = 20,
+					["boss"] = "Assault of the Zaqali",
+					["time"] = "22:41:13",
+					["iClass"] = 2,
+					["itemReplaced1"] = "|cffa335ee|Hitem:133251:6528:::::::70:66::35:5:9382:6652:9147:9466:8767::::::|h[Thundercall]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["response"] = "Minor Upgrade",
+					["typeCode"] = "default",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202607::::::::70:66::6:5:9410:9380:6652:1498:8767::::::|h[Brutal Dragonslayer's Trophy]|h|r",
+					["id"] = "1687444873-5",
+					["date"] = "22/06/23",
 					["responseID"] = 3,
-					["itemReplaced2"] = "|cffa335ee|Hitem:202614::::::::70:66::3:5:6652:7979:9329:1491:8767::::::|h[Rashok's Molten Heart]|h|r",
-					["typeCode"] = "default",
-				}, -- [7]
-			},
-			["Buffdotcom-Ragnaros"] = {
-				{
-					["mapID"] = 2569,
-					["date"] = "19/07/23",
-					["class"] = "EVOKER",
-					["iSubClass"] = 1,
-					["groupSize"] = 20,
-					["isAwardReason"] = false,
-					["time"] = "15:33:34",
-					["iClass"] = 4,
-					["id"] = "1689770014-0",
-					["owner"] = "Buffdotcom-Ragnaros",
-					["response"] = "Personal Loot - Non tradeable",
-					["difficultyID"] = 15,
-					["lootWon"] = "|cffa335ee|Hitem:204467::::::::70:1473::5:7:6652:9226:9220:9409:9332:1485:8767::::::|h[Drape of the Dracthyr Trials]|h|r",
-					["boss"] = "The Vigilant Steward, Zskarn",
-					["responseID"] = "PL",
-					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
-					["color"] = {
-						1, -- [1]
-						0.6, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-				}, -- [1]
-				{
-					["mapID"] = 2569,
-					["date"] = "19/07/23",
-					["class"] = "EVOKER",
-					["iSubClass"] = 1,
-					["groupSize"] = 20,
-					["isAwardReason"] = false,
-					["time"] = "15:33:36",
-					["iClass"] = 4,
-					["id"] = "1689770016-1",
-					["owner"] = "Buffdotcom-Ragnaros",
-					["response"] = "Personal Loot - Non tradeable",
-					["difficultyID"] = 15,
-					["lootWon"] = "|cffa335ee|Hitem:204467::::::::70:1473::5:7:6652:9226:9220:9409:9332:1485:8767::::::|h[Drape of the Dracthyr Trials]|h|r",
-					["boss"] = "The Vigilant Steward, Zskarn",
-					["responseID"] = "PL",
-					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
-					["color"] = {
-						1, -- [1]
-						0.6, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-				}, -- [2]
-			},
-			["Ståck-Ragnaros"] = {
-				{
-					["mapID"] = 2569,
-					["date"] = "16/06/23",
-					["class"] = "MAGE",
-					["iSubClass"] = 0,
-					["groupSize"] = 20,
 					["votes"] = 0,
-					["time"] = "00:23:26",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:193745::::::::70:66::16:5:6652:9144:9334:1663:8767:1:28:1279:::::|h[Rod of Perfect Order]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["typeCode"] = "default",
-					["response"] = "Mainspec/Need",
-					["id"] = "1686846206-10",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:204318::::::::70:66::6:5:6652:9410:9381:1498:8767::::::|h[Thadrion's Erratic Arcanotrode]|h|r",
-					["note"] = "pretty good upgrade",
 					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["boss"] = "The Forgotten Experiments",
-					["color"] = {
-						0, -- [1]
-						1, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
 				}, -- [1]
 				{
 					["mapID"] = 2569,
-					["date"] = "06/07/23",
-					["class"] = "MAGE",
-					["iSubClass"] = 1,
-					["groupSize"] = 20,
-					["votes"] = 2,
-					["time"] = "23:19:18",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:202551::192922::::::70:66::5:7:41:9413:9229:9409:9334:1498:8767:1:28:1040:::::|h[Underlight Conjurer's Arcanocowl]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["typeCode"] = "default",
-					["response"] = "Mainspec/Need",
-					["id"] = "1688656758-1",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202579::::::::70:66::6:8:9410:9380:6652:9415:9224:9221:1498:8767::::::|h[Attendant's Concocting Cover]|h|r",
-					["note"] = "good upgrade for 447",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["boss"] = "The Amalgamation Chamber",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
+					["class"] = "HUNTER",
+					["iSubClass"] = 1,
+					["groupSize"] = 20,
+					["boss"] = "Kazzara, the Hellforged",
+					["time"] = "22:17:17",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:133362:6592:::::::70:66::16:7:6652:9223:9220:9144:9334:9458:8767:1:28:1279:::::|h[Billowing Skydrape]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
+					["owner"] = "Grendizer-Ragnaros",
+					["response"] = "Mainspec/Need",
+					["typeCode"] = "default",
+					["difficultyID"] = 16,
+					["lootWon"] = "|cffa335ee|Hitem:202573::::::::70:66::6:7:9410:9380:6652:9224:9220:1498:8767::::::|h[Etchings of the Captive Revenant]|h|r",
+					["id"] = "1688048237-3",
+					["date"] = "29/06/23",
+					["responseID"] = 1,
+					["votes"] = 1,
+					["isAwardReason"] = false,
 				}, -- [2]
+			},
+			["Kijul-Ragnaros"] = {
 				{
 					["mapID"] = 2569,
-					["date"] = "06/07/23",
-					["class"] = "MAGE",
-					["iSubClass"] = 1,
-					["groupSize"] = 20,
-					["votes"] = 3,
-					["time"] = "23:19:25",
-					["iClass"] = 4,
-					["itemReplaced1"] = "|cffa335ee|Hitem:193724:6574:::::::70:66::33:8:6652:9414:9223:9220:9144:9334:1663:8767:1:28:1279:::::|h[Lily-Laced Bracelets]|h|r",
-					["instance"] = "Aberrus, the Shadowed Crucible-Mythic",
-					["owner"] = "Grendizer-Ragnaros",
-					["typeCode"] = "default",
-					["response"] = "Mainspec/Need",
-					["id"] = "1688656765-2",
-					["difficultyID"] = 16,
-					["lootWon"] = "|cffa335ee|Hitem:202593::::::::70:66::6:8:9410:9380:6652:9413:9224:9220:1498:8767::::::|h[Unstable Vial Handlers]|h|r",
-					["note"] = "insane next patch",
-					["isAwardReason"] = false,
-					["responseID"] = 1,
-					["boss"] = "The Amalgamation Chamber",
 					["color"] = {
 						0, -- [1]
 						1, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
-				}, -- [3]
+					["class"] = "PRIEST",
+					["iSubClass"] = 1,
+					["groupSize"] = 11,
+					["boss"] = "Rashok, the Elder",
+					["time"] = "21:33:37",
+					["iClass"] = 4,
+					["itemReplaced1"] = "|cffa335ee|Hitem:109784:6607:::::::70:264::33:8:7977:6652:8822:8818:9144:8971:3293:8767:1:28:1279:::::|h[Sandals of Arcane Mystery]|h|r",
+					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
+					["owner"] = "Maccasham-Ragnaros",
+					["response"] = "Mainspec/Need",
+					["typeCode"] = "default",
+					["difficultyID"] = 15,
+					["lootWon"] = "|cffa335ee|Hitem:202603::::::::70:264::5:7:6652:9226:9219:9409:9331:1485:8767::::::|h[Sandals of Ancient Fury]|h|r",
+					["id"] = "1683837217-6",
+					["date"] = "11/05/23",
+					["responseID"] = 1,
+					["votes"] = 0,
+					["isAwardReason"] = false,
+				}, -- [1]
 			},
 			["Shadyb-Ragnaros"] = {
 				{
@@ -25343,14 +25518,14 @@ RCLootCouncilLootDB = {
 					["instance"] = "Aberrus, the Shadowed Crucible-Heroic",
 					["owner"] = "Maccasham-Ragnaros",
 					["response"] = "Mainspec/Need",
-					["isAwardReason"] = false,
+					["typeCode"] = "default",
 					["difficultyID"] = 15,
 					["lootWon"] = "|cffa335ee|Hitem:202625::::::::70:264::5:4:9230:9409:1485:8767::::::|h[Mystic Mixing Fluid]|h|r",
-					["votes"] = 0,
+					["id"] = "1683833662-1",
 					["date"] = "11/05/23",
 					["responseID"] = 1,
-					["id"] = "1683833662-1",
-					["typeCode"] = "default",
+					["votes"] = 0,
+					["isAwardReason"] = false,
 				}, -- [1]
 			},
 		},

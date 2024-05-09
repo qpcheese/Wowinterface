@@ -33,10 +33,10 @@ local locale = GetLocale()
 
 
 
--- For Classic there is no GetProfessions() so we have to scan the spell book for
+-- For pre-Cata there is no GetProfessions() so we have to scan the spell book for
 -- spells indicating that a profession was learned.
 local professionSpells = nil
-if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
+if LE_EXPANSION_LEVEL_CURRENT < 3 then
 
   -- Very cool trick by MunkDev: https://www.wowinterface.com/forums/showthread.php?p=325688#post325688
   local function StopLastSound()
@@ -307,9 +307,9 @@ local CharacterHasProfession = function(bagnonItem, itemId)
   local _, _, _, _, _, _, itemSubType, _, _, _, _, _, itemSubTypeId = GetItemInfo(itemId)
 
 
-  -- For Classic there is no GetProfessions() so we have to scan the spell book for
+  -- For pre-Cata there is no GetProfessions() so we have to scan the spell book for
   -- spells indicating that a profession was learned.
-  if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
+  if LE_EXPANSION_LEVEL_CURRENT < 3 then
 
     for i = 1, 24 do
       if _G["SpellButton" .. i] then
@@ -440,7 +440,7 @@ local ReadRecipeTooltip = function(professionName, bagnonItem)
   local searchOnlySkillPattern = nil
 
   -- If the locale is not known, just search for the required skill and ignore the expansion.
-  -- The same, if we are in Classic or BCC, because there were no expansion specific profession levels then.
+  -- The same, if we are in Classic, because there were no expansion specific profession levels then.
   if not moduleData.itemMinSkillString[locale] or not moduleData.expansionIdentifierToVersionNumber[locale]
       or WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
     searchOnlySkillPattern = "^.*%((%d+)%).*$"

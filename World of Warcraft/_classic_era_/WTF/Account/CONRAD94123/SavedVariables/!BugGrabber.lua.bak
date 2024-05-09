@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 112,
 	["lastSanitation"] = 3,
-	["session"] = 111,
 	["errors"] = {
 		{
 			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
@@ -216,8 +216,8 @@ BugGrabberDB = {
 			["time"] = "2024/04/06 14:07:09",
 			["locals"] = "(*temporary) = QuestWatchFrame {\n 0 = <userdata>\n SetWidth = <function> defined =[C]:-1\n SetScript = <function> defined =[C]:-1\n SetHeight = <function> defined =[C]:-1\n SetPoint = <function> defined =[C]:-1\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = \"MinimapCluster\"\n(*temporary) = \"BOTTOMRIGHT\"\n(*temporary) = 0\n(*temporary) = -75\n",
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2603: in function `UIParentManageFramePositions'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1890: in function <Interface_Vanilla/FrameXML/UIParent.lua:1877>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2614: in function `UIParent_ManageFramePositions'\n[string \"@Interface/AddOns/Blizzard_UIWidgets/Blizzard_UIWidgetBelowMinimapFrame.lua\"]:25: in function `layoutFunc'\n[string \"@Interface/AddOns/Blizzard_UIWidgets/Blizzard_UIWidgetManager.lua\"]:225: in function `UpdateWidgetSetContainerLayout'\n[string \"@Interface/AddOns/Blizzard_UIWidgets/Blizzard_UIWidgetManager.lua\"]:318: in function `ProcessWidgetSet'\n[string \"@Interface/AddOns/Blizzard_UIWidgets/Blizzard_UIWidgetManager.lua\"]:340: in function `UpdateAllWidgets'\n[string \"@Interface/AddOns/Blizzard_UIWidgets/Blizzard_UIWidgetManager.lua\"]:33: in function <...dOns/Blizzard_UIWidgets/Blizzard_UIWidgetManager.lua:31>",
-			["session"] = 111,
-			["counter"] = 3245,
+			["session"] = 112,
+			["counter"] = 3265,
 		}, -- [27]
 	},
 }

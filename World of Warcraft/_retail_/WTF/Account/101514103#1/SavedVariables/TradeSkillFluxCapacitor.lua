@@ -43,6 +43,8 @@ TradeSkillFluxCapacitorDB = {
 				},
 			},
 			["Player-3682-0B310D76"] = {
+				[164] = {
+				},
 			},
 			["Player-3682-0B241018"] = {
 			},

@@ -1,5 +1,5 @@
-local L = LibStub("AceLocale-3.0"):GetLocale("OmniCD", "zhTW")
-if not L then return end
+local L = LibStub("AceLocale-3.0"):GetLocale("OmniCD")
+if not L or GetLocale() ~= "zhTW" then return end
 
 L["Charge Position"] = "Charge Position"
 L["Counter Position"] = "Counter Position"

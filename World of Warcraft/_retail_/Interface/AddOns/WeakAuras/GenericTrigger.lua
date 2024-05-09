@@ -56,7 +56,6 @@ local tinsert, tconcat, wipe = table.insert, table.concat, wipe
 local tostring, pairs, type = tostring, pairs, type
 local error, setmetatable = error, setmetatable
 local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo;
-local GetItemCooldown = GetItemCooldown or (C_Container and C_Container.GetItemCooldown) or nil
 
 -- WoW APIs
 local IsPlayerMoving = IsPlayerMoving
@@ -863,6 +862,7 @@ function WeakAuras.ScanUnitEvents(event, unit, ...)
   Private.StopProfileSystem("generictrigger " .. event .. " " .. unit)
 end
 
+---@private
 ---@param event_list table<string>
 ---@param event string
 ---@param arg1? any
@@ -987,7 +987,7 @@ local function ProgressType(data, triggernum)
     elseif (trigger.customDuration and trigger.customDuration ~= "") then
       return "timed";
     elseif (trigger.custom_type == "stateupdate") then
-      return "timed";
+      return false
     end
   end
   return false
@@ -1631,7 +1631,6 @@ function GenericTrigger.Add(data, region)
                 force_events = force_events(trigger, untrigger)
               end
 
-
               if prototype.includePets then
                 includePets = trigger.use_includePets == true and trigger.includePets or nil
               end
@@ -1907,7 +1906,7 @@ do
   function WeakAuras.GetSwingTimerInfo(hand)
     if(hand == "main") then
       local itemId = GetInventoryItemID("player", mh);
-      local name, _, _, _, _, _, _, _, _, icon = GetItemInfo(itemId or 0);
+      local name, _, _, _, _, _, _, _, _, icon = C_Item.GetItemInfo(itemId or 0);
       if(lastSwingMain) then
         return swingDurationMain, lastSwingMain + swingDurationMain - mainSwingOffset, name, icon;
       elseif WeakAuras.IsRetail() and lastSwingRange then
@@ -1917,7 +1916,7 @@ do
       end
     elseif(hand == "off") then
       local itemId = GetInventoryItemID("player", oh);
-      local name, _, _, _, _, _, _, _, _, icon = GetItemInfo(itemId or 0);
+      local name, _, _, _, _, _, _, _, _, icon = C_Item.GetItemInfo(itemId or 0);
       if(lastSwingOff) then
         return swingDurationOff, lastSwingOff + swingDurationOff, name, icon;
       else
@@ -1925,7 +1924,7 @@ do
       end
     elseif(hand == "ranged") then
       local itemId = GetInventoryItemID("player", ranged);
-      local name, _, _, _, _, _, _, _, _, icon = GetItemInfo(itemId or 0);
+      local name, _, _, _, _, _, _, _, _, icon = C_Item.GetItemInfo(itemId or 0);
       if (lastSwingRange) then
         return swingDurationRange, lastSwingRange + swingDurationRange, name, icon;
       else
@@ -2105,6 +2104,7 @@ do
     Private.StopProfileSystem("generictrigger swing");
   end
 
+  ---@private
   function WeakAuras.InitSwingTimer()
     if not(swingTimerFrame) then
       swingTimerFrame = CreateFrame("Frame");
@@ -2485,6 +2485,7 @@ do
 
   local initEssenceCooldown = false
   local essenceCache = {{},{},{},{},{},{}}
+  ---@private
   function WeakAuras.InitEssenceCooldown()
     if initEssenceCooldown then
       return true
@@ -2648,8 +2649,8 @@ do
   end
 
   ---@param id string
-  ---@param ignoreSpellKnown boolean
-  ---@param followoverride boolean
+  ---@param ignoreSpellKnown? boolean
+  ---@param followoverride? boolean
   ---@return integer? charges
   ---@return integer? chargesMax
   ---@return integer? count
@@ -2843,8 +2844,11 @@ do
       startTimeCooldown = startTimeCooldown - 2^32 / 1000
     end
 
-    -- Default to GetSpellCharges
-    local unifiedCooldownBecauseRune, cooldownBecauseRune = false, false;
+    -- Default to
+    ---@type boolean?
+    local unifiedCooldownBecauseRune = false
+    ---@type boolean?
+    local cooldownBecauseRune = false
     -- Paused cooldowns are:
     -- Spells like Presence of Mind/Nature's Swiftness that start their cooldown after the effect is consumed
     -- But also oddly some Evoker spells
@@ -2981,7 +2985,7 @@ do
     if not cooldownBecauseRune then
       changed = spellCdsOnlyCooldownRune:HandleSpell(id, startTimeCooldown, durationCooldown, modRate, paused) or changed
     end
-    local chargeChanged, chargeNowReady = spellCdsCharges:HandleSpell(id, startTimeCharges, durationCharges, modRateCharges, paused)
+    local chargeChanged, chargeNowReady = spellCdsCharges:HandleSpell(id, startTimeCharges, durationCharges, modRateCharges)
     changed = chargeChanged or changed
     nowReady = chargeNowReady or nowReady
 
@@ -3010,7 +3014,7 @@ do
   ---@type fun()
   function Private.CheckItemCooldowns()
     for id, _ in pairs(items) do
-      local startTime, duration, enabled = GetItemCooldown(id);
+      local startTime, duration, enabled = C_Container.GetItemCooldown(id);
       -- TODO: In 10.2.6 the apis return values changed from 1,0 for enabled to true, false
       -- We should adjust once its on all versions
       if enabled == false then
@@ -3145,12 +3149,14 @@ do
     Private.CheckItemSlotCooldowns();
   end
 
+  ---@private
   function WeakAuras.WatchGCD()
     if not(cdReadyFrame) then
       Private.InitCooldownReady();
     end
   end
 
+  ---@private
   function WeakAuras.WatchRuneCooldown(id)
     if not(cdReadyFrame) then
       Private.InitCooldownReady();
@@ -3179,6 +3185,7 @@ do
     end
   end
 
+  ---@private
   function WeakAuras.WatchSpellCooldown(id, ignoreRunes, followoverride)
     if not(cdReadyFrame) then
       Private.InitCooldownReady();
@@ -3240,6 +3247,7 @@ do
     end
   end
 
+  ---@private
   function WeakAuras.WatchItemCooldown(id)
     if not(cdReadyFrame) then
       Private.InitCooldownReady();
@@ -3251,7 +3259,7 @@ do
       items[id] = true;
       -- TODO: In 10.2.6 the apis return values changed from 1,0 for enabled to true, false
       -- We should adjust once its on all versions
-      local startTime, duration, enabled = GetItemCooldown(id);
+      local startTime, duration, enabled = C_Container.GetItemCooldown(id);
       if (duration == 0) then
         enabled = 1;
       end
@@ -3271,6 +3279,7 @@ do
     end
   end
 
+  ---@private
   function WeakAuras.WatchItemSlotCooldown(id)
     if not(cdReadyFrame) then
       Private.InitCooldownReady();
@@ -3320,6 +3329,7 @@ do
     end);
   end
 
+  ---@private
   function WeakAuras.WatchSpellActivation(id)
     if (not id) then
       return;
@@ -3340,9 +3350,8 @@ end
 local watchUnitChange
 
 -- Nameplates only distinguish between friends and everyone else
----@alias reaction "hostile" | "friendly"
 ---@param unit UnitToken
----@return reaction? reaction
+---@return string? reaction
 function WeakAuras.GetPlayerReaction(unit)
   local r = UnitReaction("player", unit)
   if r then
@@ -3564,11 +3573,14 @@ if WeakAuras.IsClassicEraOrWrath() then
     end
   end
 
+  ---@return integer? spellID
   function WeakAuras.GetQueuedSpell()
     return queuedSpellFrame and queuedSpellFrame.queuedSpell
   end
 end
 
+---@param powerTypeToCheck integer
+---@return number? cost
 function WeakAuras.GetSpellCost(powerTypeToCheck)
   local spellID = select(9, WeakAuras.UnitCastingInfo("player"))
   if WeakAuras.IsClassicEraOrWrath() and not spellID then
@@ -3587,6 +3599,8 @@ end
 
 -- Weapon Enchants
 do
+  local isCata = WeakAuras.IsCataClassic()
+
   local mh = GetInventorySlotInfo("MainHandSlot")
   local oh = GetInventorySlotInfo("SecondaryHandSlot")
 
@@ -3598,10 +3612,18 @@ do
   ---@type string?
   local oh_icon = GetInventoryItemTexture("player", oh) or "Interface\\Icons\\INV_Misc_QuestionMark"
 
+  local rw, rw_icon, rw_exp, rw_dur, rw_name, rw_shortenedName, rw_charges, rw_EnchantID;
+  ---@type string?
+  if isCata then
+    rw = GetInventorySlotInfo("RANGEDSLOT")
+    rw_icon = GetInventoryItemTexture("player", rw) or "Interface\\Icons\\INV_Misc_QuestionMark"
+  end
+
   local tenchFrame = nil
   Private.frames["Temporary Enchant Handler"] = tenchFrame;
   local tenchTip;
 
+  ---@private
   function WeakAuras.TenchInit()
     if not(tenchFrame) then
       tenchFrame = CreateFrame("Frame");
@@ -3658,11 +3680,12 @@ do
 
       local function tenchUpdate()
         Private.StartProfileSystem("generictrigger");
-        local _, mh_rem, oh_rem
-        _, mh_rem, mh_charges, mh_EnchantID, _, oh_rem, oh_charges, oh_EnchantID = GetWeaponEnchantInfo();
+        local _, mh_rem, oh_rem, rw_rem
+        _, mh_rem, mh_charges, mh_EnchantID, _, oh_rem, oh_charges, oh_EnchantID, _, rw_rem, rw_charges, rw_EnchantID = GetWeaponEnchantInfo();
         local time = GetTime();
         local mh_exp_new = mh_rem and (time + (mh_rem / 1000));
         local oh_exp_new = oh_rem and (time + (oh_rem / 1000));
+        local rw_exp_new = rw_rem and (time + (rw_rem / 1000));
         if(math.abs((mh_exp or 0) - (mh_exp_new or 0)) > 1) then
           mh_exp = mh_exp_new;
           mh_dur = mh_rem and mh_rem / 1000;
@@ -3682,6 +3705,18 @@ do
             oh_name, oh_shortenedName = "None", "None"
           end
           oh_icon = GetInventoryItemTexture("player", oh)
+        end
+        if isCata then
+          if(math.abs((rw_exp or 0) - (rw_exp_new or 0)) > 1) then
+            rw_exp = rw_exp_new;
+            rw_dur = rw_rem and rw_rem / 1000;
+            if rw_exp then
+              rw_name, rw_shortenedName = getTenchName(rw)
+            else
+              rw_name, rw_shortenedName = "None", "None"
+            end
+            rw_icon = GetInventoryItemTexture("player", rw)
+          end
         end
         WeakAuras.ScanEvents("TENCH_UPDATE");
         Private.StopProfileSystem("generictrigger");
@@ -3704,12 +3739,17 @@ do
   function WeakAuras.GetOHTenchInfo()
     return oh_exp, oh_dur, oh_name, oh_shortenedName, oh_icon, oh_charges, oh_EnchantID;
   end
+
+  function WeakAuras.GetRangeTenchInfo()
+    return rw_exp, rw_dur, rw_name, rw_shortenedName, rw_icon, rw_charges, rw_EnchantID;
+  end
 end
 
 -- Pets
 do
   local petFrame = nil
   Private.frames["Pet Use Handler"] = petFrame;
+  ---@private
   function WeakAuras.WatchForPetDeath()
     if not(petFrame) then
       petFrame = CreateFrame("Frame");
@@ -3727,6 +3767,7 @@ end
 do
   local castLatencyFrame
 
+  ---@private
   function WeakAuras.WatchForCastLatency()
     if not castLatencyFrame then
       ---@class CastLatencyFrame: FrameScriptObject
@@ -3762,6 +3803,7 @@ do
     end
   end
 
+  ---@return number castLatencyF
   function WeakAuras.GetCastLatency()
     return castLatencyFrame and castLatencyFrame.timeDiff or 0
   end
@@ -3799,6 +3841,7 @@ do
   end
 
   Private.frames["Nameplate Target Handler"] = nameplateTargetFrame
+  ---@private
   function WeakAuras.WatchForNameplateTargetChange()
     if not nameplateTargetFrame then
       nameplateTargetFrame = CreateFrame("Frame")
@@ -3835,6 +3878,7 @@ do
     Private.StopProfileSystem("generictrigger");
   end
 
+  ---@private
   function WeakAuras.WatchForPlayerMoving()
     if not(playerMovingFrame) then
       playerMovingFrame = CreateFrame("Frame");
@@ -3848,6 +3892,7 @@ end
 
 -- Item Count
 local itemCountWatchFrame
+---@private
 function WeakAuras.RegisterItemCountWatch()
   if not itemCountWatchFrame then
     itemCountWatchFrame = CreateFrame("Frame")
@@ -3916,6 +3961,7 @@ do
 end
 
 local uniqueId = 0;
+---@return integer cloneId
 function WeakAuras.GetUniqueCloneId()
   uniqueId = (uniqueId + 1) % 1000000;
   return uniqueId;
@@ -4597,7 +4643,7 @@ WeakAuras.GetBonusIdInfo = function(ids, specificSlot)
     for slot in pairs(checkSlots) do
       local itemLink = GetInventoryItemLink('player', slot)
       if itemLink and findIdInLink(id, itemLink, 1) then
-        local itemID, _, _, _, icon = GetItemInfoInstant(itemLink)
+        local itemID, _, _, _, icon = C_Item.GetItemInfoInstant(itemLink)
         local itemName = itemLink:match("%[(.*)%]")
         return id, itemID, itemName, icon, slot, Private.item_slot_types[slot]
       end
@@ -4610,7 +4656,7 @@ end
 ---@return boolean|nil isItemEquipped
 WeakAuras.CheckForItemEquipped = function(itemName, specificSlot)
   if not specificSlot then
-    return IsEquippedItem(itemName or '')
+    return C_Item.IsEquippedItem(itemName or '')
   else
     local item = Item:CreateFromEquipmentSlot(specificSlot)
     if item and not item:IsItemEmpty() then
@@ -4622,7 +4668,7 @@ end
 Private.ExecEnv.GetItemSubClassInfo = function(i)
   local subClassId = i % 256
   local classId = (i - subClassId) / 256
-  return GetItemSubClassInfo(classId, subClassId)
+  return C_Item.GetItemSubClassInfo(classId, subClassId)
 end
 
 Private.ExecEnv.IsEquippedItemType = function(itemType, itemSlot)
@@ -4631,11 +4677,11 @@ Private.ExecEnv.IsEquippedItemType = function(itemType, itemSlot)
     if itemId then
       local triggerSubClassId = itemType % 256
       local triggerClassId = (itemType - triggerSubClassId) / 256
-      local _, _, _, _, _, classId, subclassId = GetItemInfoInstant(itemId)
+      local _, _, _, _, _, classId, subclassId = C_Item.GetItemInfoInstant(itemId)
       return classId == triggerClassId and subclassId == triggerSubClassId
     end
   else
-    return IsEquippedItemType(Private.ExecEnv.GetItemSubClassInfo(itemType) or '')
+    return C_Item.IsEquippedItemType(Private.ExecEnv.GetItemSubClassInfo(itemType) or '')
   end
 end
 

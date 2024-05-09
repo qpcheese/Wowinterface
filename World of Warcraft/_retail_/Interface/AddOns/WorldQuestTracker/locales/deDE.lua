@@ -388,6 +388,8 @@ L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "Andere Charaktere"
 L["S_TEXT_SIZE"] = "Text Size"
 --[[Translation missing --]]
 L["S_TORGAST"] = "Torgasth"
+--[[Translation missing --]]
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "Zeigt die zu erhaltene Anzahl an"
 L["S_TUTORIAL_CLICKTOTRACK"] = "Klicken, um eine Quest zu verfolgen."
 L["S_TUTORIAL_PARTY"] = "Wenn du in einer Gruppe bist, zeigt ein blauer Stern bei einer Quest an, dass diese alle Gruppenmitglieder haben."

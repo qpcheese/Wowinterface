@@ -1,4 +1,37 @@
-﻿# 3.10.26 (20-MAR-2024)
+﻿# 3.10.28 (30-APR-2024)
+ - fixed - issue with pawn based item upgrade icon not displaying
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1879 - code updated to handle tooltips with empty info values
+ - fixed - issue with mount selection code where preferring normal flying mounts would fail down to ground mounts in zones where only dragonriding mounts are usable (primalist future) instead of selecting a dragonriding mount.  it should now select the other mount type when the preferred type is not usable in that zone
+ - fixed - issue with zone restricted mounts getting selected when not in that zone
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1857 - issue with currency headers not restoring to their original state after scanning
+ - fixed - ldb currency menu (unused) wasnt triggering a rescan on being changed
+ - fixed - ldb reputation menu (inactive) wasnt triggering a rescan on being changed
+ - fixed - ldb reputation menu (inactive) was enabled when it shouldnt be
+ - fixed - ldb reputation menu (at war) was enabled when it shouldnt be
+ - fixed - stock value for reputation items should now display properly
+ - fixed - stock value for container items should now display properly (INVTYPE_BAG is no longer assigned to them)
+ - fixed - issue with item level config options display not being applied properly
+ - fixed - issue with bag highlight
+ - fixed - typo on the LDB pet object
+ - changed - (cata beta) disabling void storage temporarily as it has not been implemented which is causing equipment manager outfit rules to not work properly.
+ - changed - broke apart the onenter and updatetooltip code for item frames to reduce resource usage
+ - changed - (classic) toc updated to 11502
+ - added - individual item charges will now display in the item level text, total will not
+ - added - rule function `category( )`
+ - updated - category for some items
+
+ - added - stack compression - only one stack of each item in each bar is displayed, all stacks of that item (from the same bar) are then shown in a popup bar when you enter the compressed item frame
+ - added - config > settings > designs > items > stack
+ - added - config > settings > designs > items > stack > identify
+ - moved - moved original stack limit settings to config > settings > designs > items > stack > identify
+ - note - only the bag and bank are currently enabled for compression
+ - note - instant sort is forced on by default when stack compression is active. you can disable it if youre ok with the mess between refreshes
+ - note - clicking on the compressed item will toggle the popup bar
+
+# 3.10.27 (20-MAR-2024)
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1871 - updated object code to handle any new INVTYPE values better
+
+# 3.10.26 (20-MAR-2024)
  - changed - (retail) toc updated to 100206
  - changed - (classic) toc updated to 11501
  - fixed - https://github.com/arkayenro/arkinventory/issues/1871 - issue with INVTYPE_NON_EQUIP_IGNORE

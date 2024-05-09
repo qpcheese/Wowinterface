@@ -29,7 +29,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ]]
 local MAJOR_VERSION = "LibActionButton-1.0"
-local MINOR_VERSION = 110
+local MINOR_VERSION = 111
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub.") end
 local lib, oldversion = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
@@ -1792,7 +1792,7 @@ function UpdateUsable(self)
 		end
 	end
 
-	if not WoWClassic and not WoWBCC and not WoWWrath and self._state_type == "action" then
+	if WoWRetail and self._state_type == "action" then
 		local isLevelLinkLocked = C_LevelLink.IsActionLocked(self._state_action)
 		if not self.icon:IsDesaturated() then
 			self.icon:SetDesaturated(isLevelLinkLocked)
@@ -2302,7 +2302,7 @@ if WoWClassic then
 	end
 end
 
-if WoWClassic or WoWBCC or WoWWrath then
+if not WoWRetail then
 	-- disable loss of control cooldown on classic
 	Action.GetLossOfControlCooldown = function(self) return 0,0 end
 end
@@ -2397,7 +2397,7 @@ Custom.RunCustom               = function(self, unit, button) return self._state
 Custom.GetPassiveCooldownSpellID = function(self) return nil end
 
 --- WoW Classic overrides
-if WoWClassic or WoWBCC or WoWWrath then
+if not WoWRetail then
 	UpdateOverlayGlow = function() end
 end
 

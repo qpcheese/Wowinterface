@@ -1,15 +1,15 @@
 ## Interface: 100105
-## Title: Gnosis (|cffaaff44Castbars and Timers|r) v5.10
+## Title: Gnosis (|cffaaff44Castbars and Timers|r) v5.11
 ## Notes: Highly configurable castbar and single timer addon.
-## Author: rose
-## Version: v5.10
+## Author: Chabb91
+## Version: v5.11
 ## SavedVariables: GnosisDB, GnosisConfigs
 ## SavedVariablesPerCharacter: GnosisChar, GnosisCharConfig
 ## OptionalDeps: Ace3, AceGUI-3.0-SharedMediaWidgets, LibClassicCasterino, LibClassicDurations, LibCompress, LibDialog-1.0, LibRangeCheck-2.0, LibSharedMedia-3.0
 ## LoadOnDemand: 0
 ## DefaultState: enabled
-## X-Revision: bb5680e633fb878c0cc2bdaac5e31c52f33fffa1
-## X-Date: 2023-09-25T16:03:34Z
+## X-Revision: 0db0f233dc637704e4ef0d5ccd219c7ff332fc96
+## X-Date: 2024-05-01T22:09:43Z
 ## IconTexture: 425951
 
 # Libraries

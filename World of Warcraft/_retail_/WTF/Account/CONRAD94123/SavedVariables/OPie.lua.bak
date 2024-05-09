@@ -1,11 +1,11 @@
 
 OneRing_Config = nil
 OPie_SavedData = {
-	["_GameVersion"] = "10.2.5",
+	["_GameVersion"] = "10.2.6",
 	["CharProfiles"] = {
 	},
 	["_TimeBand"] = 0.5625,
-	["_OPieVersion"] = "Zeta 4.5 (4.119)",
+	["_OPieVersion"] = "Zeta 5a (4.121)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingOptions"] = {
@@ -130,7 +130,7 @@ OPie_SavedData = {
 					["sliceToken"] = "ABuenYKaMWt",
 				}, -- [13]
 				["save"] = true,
-				["v"] = 1,
+				["v"] = 2,
 				["name"] = "Specializations and Travel",
 				["vm"] = 127,
 				["hotkey"] = "ALT-H",
@@ -148,8 +148,8 @@ OPie_SavedData = {
 			},
 			["MageTools"] = {
 				{
-					["id"] = "/cast [nomod] {{spell:110959}}; {{spell:66}}; {{spell:110959}}",
 					["sliceToken"] = "OPCMTi",
+					["id"] = "/cast [nomod] {{spell:110959}}; {{spell:66}}; {{spell:110959}}",
 					["vm"] = 2,
 				}, -- [1]
 				{
@@ -159,39 +159,39 @@ OPie_SavedData = {
 					["vm"] = 2,
 				}, -- [2]
 				{
-					["id"] = 130,
 					["sliceToken"] = "OPCMTs",
+					["id"] = 130,
 					["vm"] = 2,
 				}, -- [3]
 				{
-					["id"] = 1459,
 					["sliceToken"] = "OPCMTn",
+					["id"] = 1459,
 				}, -- [4]
 				{
-					["id"] = 42955,
 					["sliceToken"] = "OPCMTf",
+					["id"] = 42955,
 					["vm"] = 2,
 				}, -- [5]
 				{
-					["id"] = "#imp critical\n/cast [advflyable] {{mount:dragon}}; [flyable] {{mount:air}}; {{mount:ground}}\n/changeactionbar [advflyable,nocombat,outdoors] 1",
 					["sliceToken"] = "OPCMTm",
+					["id"] = "#imp critical\n/cast [advflyable] {{mount:dragon}}; [flyable] {{mount:air}}; {{mount:ground}}\n/changeactionbar [advflyable,nocombat,outdoors] 1",
 					["fastClick"] = true,
 				}, -- [6]
 				{
-					["id"] = 125439,
 					["sliceToken"] = "ABue6EEht1w",
+					["id"] = 125439,
 				}, -- [7]
 				{
 					"item", -- [1]
 					86143, -- [2]
 					["sliceToken"] = "ABue6EEht1e",
 				}, -- [8]
-				["limit"] = "MAGE",
-				["name"] = "Utility",
-				["vm"] = 127,
 				["save"] = true,
-				["hotkey"] = "BUTTON4",
 				["v"] = 1,
+				["vm"] = 127,
+				["name"] = "Utility",
+				["limit"] = "MAGE",
+				["hotkey"] = "BUTTON4",
 			},
 			["TOYS"] = {
 				{

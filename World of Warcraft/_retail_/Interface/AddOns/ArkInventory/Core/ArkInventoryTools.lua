@@ -41,13 +41,14 @@ end
 
 
 --[[
-local z = "other realms"
+local z = "beta"
 ArkInventory.Output( "search=", z )
 for k, v in pairs (_G) do
 	if type( k ) == "string" and type( v ) == "string" then
 		--if string.match( string.lower( k ), string.lower( z ) ) then -- found in key
 		if string.match( string.lower( v ), string.lower( z ) ) then -- found in value
 		--if string.lower( v ) == string.lower( z ) then -- exact match with value
+			v = string.gsub( v, "\124", "\124\124" )
 			ArkInventory.Output( k, "=", v )
 		end
 	end

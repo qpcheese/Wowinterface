@@ -1,5 +1,9 @@
 # OmniCC Changelog
 
+## 10.2.6
+
+* Update TOCs
+
 ## 10.2.5
 
 * Updated Russian translation (thanks to [Hollicsh](https://github.com/Hollicsh))

@@ -22,6 +22,7 @@ local wowmainline = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE);
 local wowclassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC);
 local wowbcc = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC);
 local wowwc = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC);
+local wowcc = (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC);
 
 -- libraries
 Gnosis = LibStub("AceAddon-3.0"):NewAddon("Gnosis", "AceConsole-3.0", "AceEvent-3.0");
@@ -84,11 +85,14 @@ end
 
 -- generate configuration frames
 function Gnosis:InitialConfig()
+	self.optCBsName = "Gnosis Castbars";
+	self.optCfgsName = "Gnosis Configurations";
+	
 	self.optFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Gnosis", self.L["AddonName"]);
-	self.optCBs = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Gnosis Castbars", Gnosis.L["TabCastbars"], "Gnosis");
+	self.optCBs = LibStub("AceConfigDialog-3.0"):AddToBlizOptions(self.optCBsName, Gnosis.L["TabCastbars"], "Gnosis");
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Gnosis Channeled Spells", Gnosis.L["TabChanneledSpells"], "Gnosis");
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Gnosis Combattext/Clip test", Gnosis.L["TabCTClipTest"], "Gnosis");
-	self.optCfgs = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Gnosis Configurations", Gnosis.L["TabConfig"], "Gnosis");
+	self.optCfgs = LibStub("AceConfigDialog-3.0"):AddToBlizOptions(self.optCfgsName, Gnosis.L["TabConfig"], "Gnosis");
 end
 
 function Gnosis:En(status)
@@ -136,7 +140,7 @@ function Gnosis:En(status)
 		self:PLAYER_TALENT_UPDATE();
 
 		-- resize interface options frame
-		if (self.s.bResizeOptions and wowwc) then
+		if (self.s.bResizeOptions and (wowwc or wowcc)) then
 			InterfaceOptionsFrame:SetWidth(835);
 		end
 	else
@@ -181,14 +185,14 @@ end
 function Gnosis:OpenOptions()
 	if (not self.iofcalled) then
 		-- call twice the first time
-		if (wowmainline) then
+		if (wowmainline) or (wowwc) or (wowcc) then
 			Settings.OpenToCategory(Gnosis.optFrame.name);
 		else
 			InterfaceOptionsFrame_OpenToCategory(Gnosis.optFrame);
 		end
 	end
 
-	if (wowmainline) then
+	if (wowmainline) or (wowwc) or (wowcc) then
 		Settings.OpenToCategory(Gnosis.optFrame.name);
 	else
 		InterfaceOptionsFrame_OpenToCategory(Gnosis.optFrame);
@@ -201,6 +205,8 @@ function Gnosis:OpenCfgOptions()
 		-- call twice the first time
 		if (wowmainline) then
 			Settings.OpenToCategory(Gnosis.optCfgs);
+		elseif (wowwc or wowcc) then
+			LibStub("AceConfigRegistry-3.0"):NotifyChange(Gnosis.optCfgsName);
 		else
 			InterfaceOptionsFrame_OpenToCategory(Gnosis.optCfgs);
 		end
@@ -208,6 +214,8 @@ function Gnosis:OpenCfgOptions()
 
 	if (wowmainline) then
 		Settings.OpenToCategory(Gnosis.optCfgs);
+	elseif (wowwc or wowcc) then
+		LibStub("AceConfigRegistry-3.0"):NotifyChange(Gnosis.optCfgsName);
 	else
 		InterfaceOptionsFrame_OpenToCategory(Gnosis.optCfgs);
 	end
@@ -219,6 +227,8 @@ function Gnosis:OpenCastbarOptions()
 		-- call twice the first time
 		if (wowmainline) then
 			Settings.OpenToCategory(Gnosis.optCBs);
+		elseif (wowwc or wowcc) then
+			LibStub("AceConfigRegistry-3.0"):NotifyChange(Gnosis.optCBsName);
 		else
 			InterfaceOptionsFrame_OpenToCategory(Gnosis.optCBs);
 		end
@@ -226,6 +236,8 @@ function Gnosis:OpenCastbarOptions()
 
 	if (wowmainline) then
 		Settings.OpenToCategory(Gnosis.optCBs);
+	elseif (wowwc or wowcc) then
+		LibStub("AceConfigRegistry-3.0"):NotifyChange(Gnosis.optCBsName);
 	else
 		InterfaceOptionsFrame_OpenToCategory(Gnosis.optCBs);
 	end
@@ -468,7 +480,7 @@ function Gnosis:SetupHooks()
 			Gnosis:CloseAllTradeskillBars();
 		end)
 
-	elseif (wowclassic) or (wowbcc) or (wowwc) then
+	elseif (wowclassic) or (wowbcc) or (wowwc) or (wowcc) then
 		-- tradeskill hooking
 		hooksecurefunc('DoTradeSkill', function(index, num)
 				Gnosis.bNewTradeSkill = tonumber(num) and true or nil;

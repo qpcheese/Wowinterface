@@ -48,6 +48,9 @@ local calculatedOverallScore = 0
 local overallScore = 0
 local contents = {L["Keystone"], L["Mythic Plus Rewards"], L["Great Vault Rewards"], L["Seasonal Achievements"]}
 
+local eodItemLevel = {0, 496, 499, 499, 502, 502, 506, 506, 509, 509}
+local weeklyItemLevel = {0, 509, 509, 512, 512, 515, 515, 519, 519, 522}
+
 local savedVariables = {
 	profile = {
 		addonSize = 1.2,
@@ -340,7 +343,7 @@ function mdc:CreateMain()
 	mdcFrame("topFrame", mainFrame, mainX, 35, "TOP", mainFrame, "TOP", 0, 0, nil)
 	mdcLine("topLine", topFrame, 0.7, 0.7, 0.7, 0.7, "BOTTOMLEFT", 0, 5, "BOTTOMRIGHT", 0, 5, 2)
 	mdcFontString("title", topFrame, highlightFont, "CENTER", topFrame, "CENTER", 0, 0, L["MDC"])
-	mdcFontString("currentPlayerRating", topFrame, highlightFont, "CENTER", topFrame, "CENTER", -350, 0, L["Current Rating"] .. ": " .. overallScore)
+	mdcFontString("currentPlayerRating", topFrame, highlightFont, "CENTER", topFrame, "CENTER", -350, 0, L["Current Rating"] .. ": " .. (C_ChallengeMode.GetDungeonScoreRarityColor(overallScore):WrapTextInColorCode(overallScore) or overallScore))
 	mdcFontString("calculatedPlayerRating", topFrame, highlightFont, "CENTER", topFrame, "CENTER", 350, 0, nil)
 
 	local resetButton = mainFrame .. ".resetButton"
@@ -572,25 +575,28 @@ function mdc:GetDungeons()
 end
 
 local function mdcCalculateAffixScore(mythicLevel, dungeonTime, affixTime)
-	--       baseScore lvl 2 + fort/tyr => 25+5,    lvl 3-10 => each 5,            lvl 11+ => additional 2,                                                each affix => 10
-	local baseScore = (mythicLevel >= 2 and 30 or 0) + mythicLevel * 5 + math.max(mythicLevel - 10, 0) * 2 + math.floor((mythicLevel <= 14 and mythicLevel or 14 )/ 7) * 10
-	local affixScore = 0
+	if mythicLevel >= 2 then
+		-- baseScore lvl 2 + fort/tyr => 70+10 + level => each 7 + each affix => 10
+		local baseScore = 80 + mythicLevel * 7 + math.floor((mythicLevel <= 10 and mythicLevel or 10 )/ 5) * 10
+		local affixScore = 0
+		if baseScore ~= 0 then
+			local percentageOffset = 1 - (affixTime / dungeonTime)
 
-	if baseScore ~= 0 then
-		local percentageOffset = 1 - (affixTime / dungeonTime)
-
-		if percentageOffset >= 0.4 then
-			affixScore = 5
-		elseif percentageOffset >= 0 then
-			affixScore = percentageOffset * 5 / 0.4
-		elseif percentageOffset >= -0.4 then
-			affixScore = percentageOffset * 5 / 0.4 - 5
-		else
-			return 0
+			if percentageOffset >= 0.4 then
+				affixScore = 5
+			elseif percentageOffset >= 0 then
+				affixScore = percentageOffset * 5 / 0.4
+			elseif percentageOffset >= -0.4 then
+				affixScore = percentageOffset * 5 / 0.4 - 5
+			else
+				return 0
+			end
 		end
-	end
 
-	return baseScore + affixScore
+		return baseScore + affixScore
+	else
+		return 0
+	end
 end
 
 local function mdcUpdateScores(level, dungeon, minutes, seconds, backdrop, affix)
@@ -600,12 +606,12 @@ local function mdcUpdateScores(level, dungeon, minutes, seconds, backdrop, affix
 		calculatedScore = mdcCalculateAffixScore(F[level]:GetNumber(), dungeons[dungeon][3], F[minutes]:GetNumber() * 60 + F[seconds]:GetNumber())
 	end
 
-	F[backdrop .. ".calculatedScoreText" .. affix]:SetText(mdcRound(calculatedScore))
+	F[backdrop .. ".calculatedScoreText" .. affix]:SetText(C_ChallengeMode.GetSpecificDungeonScoreRarityColor(mdcRound(calculatedScore)):WrapTextInColorCode(mdcRound(calculatedScore)))
 
 	calculatedAffixScores[dungeon][affix] = calculatedScore
 
 	local calculatetDungeonScore = math.max(calculatedAffixScores[dungeon][1], calculatedAffixScores[dungeon][2]) * 1.5 + math.min(calculatedAffixScores[dungeon][1], calculatedAffixScores[dungeon][2]) * 0.5
-	F[backdrop .. ".calculatedDungeonScoreText"]:SetText("(" .. mdcRound(calculatetDungeonScore) .. ")")
+	F[backdrop .. ".calculatedDungeonScoreText"]:SetText("(" .. C_ChallengeMode.GetSpecificDungeonOverallScoreRarityColor(mdcRound(calculatetDungeonScore)):WrapTextInColorCode(mdcRound(calculatetDungeonScore)) .. ")")
 
 	local calculatedPlayerRating = 0
 	for _, affixScores in pairs(calculatedAffixScores) do
@@ -617,7 +623,7 @@ local function mdcUpdateScores(level, dungeon, minutes, seconds, backdrop, affix
 		calculatedPlayerRating = overallScore
 	end
 
-	F[topFrame .. ".calculatedPlayerRating"]:SetText(L["Calculated Rating"] .. ": " .. mdcRound(calculatedPlayerRating))
+	F[topFrame .. ".calculatedPlayerRating"]:SetText(L["Calculated Rating"] .. ": " .. C_ChallengeMode.GetDungeonScoreRarityColor(mdcRound(calculatedPlayerRating)):WrapTextInColorCode(mdcRound(calculatedPlayerRating)))
 end
 
 local function mdcSetTimeLimit(dungeon, affix, up)
@@ -708,9 +714,9 @@ function mdc:CreateDungeonFrames()
 
 			if dungeons[dungeon][5][affix][1] then
 				mdcFontString("affixName", backdrop, normalFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -60, dungeons[dungeon][5][affix][1])
-				mdcFontString("affixLevel", backdrop, highlightFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -90, dungeons[dungeon][5][affix][3])
+				mdcFontString("affixLevel", backdrop, highlightFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -90, C_ChallengeMode.GetSpecificDungeonScoreRarityColor(dungeons[dungeon][5][affix][3]):WrapTextInColorCode(dungeons[dungeon][5][affix][3]))
 				mdcFontString("affixTime", backdrop, highlightFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -120, dungeons[dungeon][5][affix][5] and WrapTextInColorCode(SecondsToClock(dungeons[dungeon][5][affix][4]), "FFFF0000") or WrapTextInColorCode(SecondsToClock(dungeons[dungeon][5][affix][4]), "99FFFFFF"))
-				mdcFontString("affixScore", backdrop, highlightFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -150, dungeons[dungeon][5][affix][2])
+				mdcFontString("affixScore", backdrop, highlightFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -150, C_ChallengeMode.GetSpecificDungeonScoreRarityColor(dungeons[dungeon][5][affix][2]):WrapTextInColorCode(dungeons[dungeon][5][affix][2]))
 			else
 				mdcFontString("noAffixName", backdrop, normalFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -60, affix == 1 and fortified or tyrannical)
 				mdcFontString("noAffixLevel", backdrop, highlightFont, "TOP", dungeonFrame, "TOP", affixOffsetX, -90, "---")
@@ -861,8 +867,8 @@ function mdc:CreateDungeonFrames()
 
 		mdcLine("separator", backdrop, 0.5, 0.5, 0.5, 0.5, "TOP", 50, -40, "BOTTOM", 50, 10, 2)
 		mdcFontString("calculateText" .. dungeon, backdrop, normalFont, "CENTER", dungeonFrame, "CENTER", 165, 30, L["Score calculator"])
-		mdcFontString("dungeonName", backdrop, normalFont, "TOPLEFT", dungeonFrame, "TOPLEFT", 50, -30, dungeons[dungeon][2] .. ": ", (addonSize == addonSizeSmall and (dungeon == 7 or dungeon == 8)) and 1.3 or nil)
-		mdcFontString("dungeonPoints", backdrop, normalFont, "LEFT", backdrop .. ".dungeonName", "RIGHT", 4, 0, (dungeonScore > 0 and mdcRound(dungeonScore) or "---"))
+		mdcFontString("dungeonName", backdrop, normalFont, "TOPLEFT", dungeonFrame, "TOPLEFT", 50, -30, dungeons[dungeon][2] .. ": ")
+		mdcFontString("dungeonPoints", backdrop, normalFont, "LEFT", backdrop .. ".dungeonName", "RIGHT", 4, 0, (dungeonScore > 0 and C_ChallengeMode.GetSpecificDungeonOverallScoreRarityColor(mdcRound(dungeonScore)):WrapTextInColorCode(mdcRound(dungeonScore)) or "---"))
 		mdcFontString("levelText", backdrop, highlightFont, "TOPLEFT", dungeonFrame, "TOPLEFT", 50, -90, WrapTextInColorCode(L["Level"] .. ":", "A9999999"))
 		mdcFontString("timeText", backdrop, highlightFont, "TOPLEFT", dungeonFrame, "TOPLEFT", 50, -120, WrapTextInColorCode(L["Time"] .. ":", "A9999999"))
 		mdcFontString("scoreText", backdrop, highlightFont, "TOPLEFT", dungeonFrame, "TOPLEFT", 50, -150, WrapTextInColorCode(L["Score"] .. ":", "A9999999"))
@@ -942,11 +948,11 @@ local function getRecommendedLevel()
 	local _, avgItemLevelEquipped = GetAverageItemLevel()
 	avgItemLevelEquipped = mdcRound(avgItemLevelEquipped)
 
-	for i = 2, 20 do
+	for i = 2, 10 do
 		local greatVaultReward = C_MythicPlus.GetRewardLevelForDifficultyLevel(i)
-		local itemLevel = avgItemLevelEquipped + 35 - 1.225 * i
+		local itemLevel = avgItemLevelEquipped + 30 - 3 * i
 
-		if itemLevel < greatVaultReward - 25 then
+		if itemLevel < greatVaultReward - 20 then
 			recommendedLevel = 0
 			break
 		elseif itemLevel < greatVaultReward and i == 2 then
@@ -958,7 +964,7 @@ local function getRecommendedLevel()
 		elseif itemLevel >= greatVaultReward and itemLevel < greatVaultReward + 2 then
 			recommendedLevel = i + 1
 			break
-		elseif i == 20 then
+		elseif i == 10 then
 			recommendedLevel = i
 			break
 		end
@@ -974,7 +980,7 @@ local function getRecommendedLevel()
 		end
 	end
 
-	if recommendedLevel == 20 and averageAffixLevel >= 18 and highestAffixLevel >= 18 then
+	if recommendedLevel == 10 and averageAffixLevel >= 9 and highestAffixLevel >= 9 then
 		if highestAffixLevel == averageAffixLevel then
 			recommendedLevel = highestAffixLevel + 2
 		elseif highestAffixLevel - averageAffixLevel <= 3 then
@@ -1143,6 +1149,10 @@ local function mdcKeystone(content)
 	if cID ~= 0 and cLevel > 0 then
 		cRatings = mdcGetKeystoneRatings(currentAffix, cID, cLevel)
 		_, cExpectedItemLevel = C_MythicPlus.GetRewardLevelForDifficultyLevel(cLevel)
+
+		if cExpectedItemLevel == 0 then
+			cExpectedItemLevel = eodItemLevel[math.min(cLevel, 10)]
+		end
 	end
 
 	mdcFontString("cKey", contentFrame, normalFont, "LEFT", contentFrame, "LEFT", 200, 60, L["Your Keystone"], 1.6)
@@ -1182,6 +1192,10 @@ local function mdcKeystone(content)
 	if rDungeon[2] ~= "" and rLevel > 0 then
 		rRatings = mdcGetKeystoneRatings(currentAffix, rDungeon[1], rLevel)
 		_, rExpectedItemLevel = C_MythicPlus.GetRewardLevelForDifficultyLevel(rLevel)
+
+		if rExpectedItemLevel == 0 then
+			rExpectedItemLevel = eodItemLevel[math.min(rLevel, 10)]
+		end
 	end
 
 	if rDungeon[2] ~= "" and rLevel > 0 and mdc.db.profile.showDungeonTexture then
@@ -1242,78 +1256,71 @@ local function mdcKeystone(content)
 end
 
 local function mdcMythicPlusRewards(content)
-	local xOffset = 55;
-	local xOffsetLevel = 8;
+	local xOffset = 100
 
-	local contentFrame = optionalBottomFrame .. ".content" .. content;
-	mdcFrame("content" .. content, optionalBottomFrame, mainX, 175, "TOPLEFT", optionalBottomFrame, "TOPLEFT", 0, 0, BackdropTemplateMixin and "BackdropTemplate");
-	mdcFontString("keystone", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, 60, L["Keystone Level"]);
-	mdcFontString("upgrade", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, 20, L["End of Dungeon"]);
-	mdcFontString("greatVault", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, -20, L["Great Vault"]);
-	mdcFontString("itemLevel", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, -60, L["Item Level"]);
+	local contentFrame = optionalBottomFrame .. ".content" .. content
+	mdcFrame("content" .. content, optionalBottomFrame, mainX, 175, "TOPLEFT", optionalBottomFrame, "TOPLEFT", 0, 0, BackdropTemplateMixin and "BackdropTemplate")
+	mdcFontString("keystone", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, 60, L["Keystone Level"])
+	mdcFontString("upgrade", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, 20, L["End of Dungeon"])
+	mdcFontString("greatVault", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, -20, L["Great Vault"])
+	mdcFontString("itemLevel", contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", 14, -60, L["Item Level"])
 
-	local itemUpgrades = {L["Veteran"] .. ": 441 - 463", L["Champion"] .. ": 454 - 476", L["Hero"] .. ": 467 - 483", L["Myth"] .. ": 480 - 489"}
-	for i = 1, 4 do
+	local itemUpgrades = {L["Champion"] .. ": 493 - 515", L["Hero"] .. ": 506 - 522", L["Myth"] .. ": 519 - 528"}
+	for i = 1, #itemUpgrades do
 		local button = contentFrame .. "." .. i
-		mdcButton(i, contentFrame, nil, 200, 34, "LEFT", contentFrame, "LEFT", 200 + 250 * (i - 1), -60, nil);
-		mdcFontString("content", button, highlightFont, "CENTER", button, "CENTER", 0, 0, WrapTextInColorCode(itemUpgrades[i], "A9999999"));
-		F[button]:SetScript("OnEnter", function(self)
-			F[button .. ".content"]:SetText(WrapTextInColorCode(itemUpgrades[i], "C7FFFFFF"));
+		mdcButton(i, contentFrame, nil, 200, 34, "LEFT", contentFrame, "LEFT", 300 + 300 * (i - 1), -60, nil)
+
+		mdcFontString("content", button, highlightFont, "CENTER", button, "CENTER", 0, 0, WrapTextInColorCode(itemUpgrades[i], "A9999999"))
+		F[button]:SetScript("OnEnter", function()
+			F[button .. ".content"]:SetText(WrapTextInColorCode(itemUpgrades[i], "C7FFFFFF"))
 			F[contentFrame .. ".EODLine" .. i]:Show()
 			F[contentFrame .. ".GVLine" .. i]:Show()
-		end);
-		F[button]:SetScript("OnLeave", function(self)
-			F[button .. ".content"]:SetText(WrapTextInColorCode(itemUpgrades[i], "A9999999"));
+		end)
+		F[button]:SetScript("OnLeave", function()
+			F[button .. ".content"]:SetText(WrapTextInColorCode(itemUpgrades[i], "A9999999"))
 			F[contentFrame .. ".EODLine" .. i]:Hide()
 			F[contentFrame .. ".GVLine" .. i]:Hide()
-		end);
-		mdcLine("leftLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT", 1, 0, "BOTTOMLEFT", 1, 0, 2);
-		mdcLine("rightLine", button, 0.7, 0.7, 0.7, 0.7, "TOPRIGHT", -1, 0, "BOTTOMRIGHT", -1, 0, 2);
-		mdcLine("topLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT",  0, 0, "TOPRIGHT", 0, 0, 2);
-		mdcLine("bottomLine", button, 0.7, 0.7, 0.7, 0.7, "BOTTOMLEFT", 0, 0, "BOTTOMRIGHT", 0, 0, 2);
+		end)
+
+		mdcLine("leftLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT", 1, 0, "BOTTOMLEFT", 1, 0, 2)
+		mdcLine("rightLine", button, 0.7, 0.7, 0.7, 0.7, "TOPRIGHT", -1, 0, "BOTTOMRIGHT", -1, 0, 2)
+		mdcLine("topLine", button, 0.7, 0.7, 0.7, 0.7, "TOPLEFT",  0, 0, "TOPRIGHT", 0, 0, 2)
+		mdcLine("bottomLine", button, 0.7, 0.7, 0.7, 0.7, "BOTTOMLEFT", 0, 0, "BOTTOMRIGHT", 0, 0, 2)
 	end
 
-	mdcLine("EODLine1", contentFrame, 1, 1, 1, 0.5, "LEFT", 159, 20, "LEFT", 544, 20, 20);
-	mdcLine("GVLine1", contentFrame, 0, 0, 0, 0, "LEFT", 0, 0, "LEFT", 0, 0, 0);
+	mdcLine("EODLine1", contentFrame, 1, 1, 1, 0.5, "LEFT", 225, 20, "LEFT", 775, 20, 20)
+	mdcLine("GVLine1", contentFrame, 0, 0, 0, 0, "LEFT", 0, 0, "LEFT", 0, 0, 0)
 	F[contentFrame .. ".EODLine1"]:Hide()
 	F[contentFrame .. ".GVLine1"]:Hide()
 
-	mdcLine("EODLine2", contentFrame, 1, 1, 1, 0.5, "LEFT", 544, 20, "LEFT", 983, 20, 20);
-	mdcLine("GVLine2", contentFrame, 1, 1, 1, 0.5, "LEFT", 159, -20, "LEFT", 488, -20, 20);
+	mdcLine("EODLine2", contentFrame, 1, 1, 1, 0.5, "LEFT", 825, 20, "LEFT", 1175, 20, 20)
+	mdcLine("GVLine2", contentFrame, 1, 1, 1, 0.5, "LEFT", 225, -20, "LEFT", 875, -20, 20)
 	F[contentFrame .. ".EODLine2"]:Hide()
 	F[contentFrame .. ".GVLine2"]:Hide()
 
-	mdcLine("EODLine3", contentFrame, 1, 1, 1, 0.5, "LEFT", 983, 20, "LEFT", 1198, 20, 20);
-	mdcLine("GVLine3", contentFrame, 1, 1, 1, 0.5, "LEFT", 488, -20, "LEFT", 1039, -20, 20);
+	mdcLine("EODLine3", contentFrame, 0, 0, 0, 0, "LEFT", 0, 0, "LEFT", 0, 0, 0)
+	mdcLine("GVLine3", contentFrame, 1, 1, 1, 0.5, "LEFT", 925, -20, "LEFT", 1175, -20, 20)
 	F[contentFrame .. ".EODLine3"]:Hide()
 	F[contentFrame .. ".GVLine3"]:Hide()
 
-	mdcLine("EODLine4", contentFrame, 0, 0, 0, 0, "LEFT", 0, 0, "LEFT", 0, 0, 0);
-	mdcLine("GVLine4", contentFrame, 1, 1, 1, 0.5, "LEFT", 1039, -20, "LEFT", 1198, -20, 20);
-	F[contentFrame .. ".EODLine4"]:Hide()
-	F[contentFrame .. ".GVLine4"]:Hide()
+	mdcFontString("mythic", contentFrame, highlightFont, "CENTER", contentFrame, "LEFT", 150 + xOffset, 60, 0)
+	mdcFontString("mythicEOD", contentFrame, highlightFont, "CENTER", contentFrame, "LEFT", 150 + xOffset, 20, 493)
+	mdcFontString("mythicGV", contentFrame, highlightFont, "CENTER", contentFrame, "LEFT", 150 + xOffset, -20, 506)
 
-	if locale == "ruRU" then
-		F[contentFrame .. ".upgrade"]:SetTextScale(1.29 / addonSize);
-		F[contentFrame .. ".greatVault"]:SetTextScale(1.19 / addonSize);
-	end
+	for i = 2, 10 do
+		local weeklyRewardLevel, endOfRunRewardLevel = C_MythicPlus.GetRewardLevelForDifficultyLevel(i)
 
-	for i = 2, 20 do
-		if i >= 10 then
-			xOffsetLevel = 5;
+		if weeklyRewardLevel == 0 then
+			weeklyRewardLevel = weeklyItemLevel[i]
 		end
 
-		local weeklyRewardLevel, endOfRunRewardLevel = C_MythicPlus.GetRewardLevelForDifficultyLevel(i);
+		if endOfRunRewardLevel == 0 then
+			endOfRunRewardLevel = eodItemLevel[i]
+		end
 
-		mdcFontString("keystoneLevel" .. i, contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", (60 + xOffsetLevel + xOffset * i ), 60, i);
-		mdcFontString("endOfDungeonReward" .. i, contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", (60 + xOffset * i ), 20, endOfRunRewardLevel);
-		mdcFontString("greatVaultReward" .. i, contentFrame, highlightFont, "LEFT", contentFrame, "LEFT", (60 + xOffset * i ), -20, weeklyRewardLevel);
-
-		local separator = F[contentFrame]:CreateLine();
-		separator:SetColorTexture(0.5, 0.5, 0.5, 0.5, 0.5);
-		separator:SetStartPoint("LEFT", 48 / addonSize + xOffset / addonSize * i, 75 / addonSize);
-		separator:SetEndPoint("LEFT", 48 / addonSize + xOffset / addonSize * i, -35 / addonSize);
-		separator:SetThickness(1);
+		mdcFontString("keystoneLevel" .. i, contentFrame, highlightFont, "CENTER", contentFrame, "LEFT", (150 + xOffset * i ), 60, i)
+		mdcFontString("endOfDungeonReward" .. i, contentFrame, highlightFont, "CENTER", contentFrame, "LEFT", (150 + xOffset * i ), 20, endOfRunRewardLevel)
+		mdcFontString("greatVaultReward" .. i, contentFrame, highlightFont, "CENTER", contentFrame, "LEFT", (150 + xOffset * i ), -20, weeklyRewardLevel)
 	end
 end
 
@@ -1439,11 +1446,11 @@ local function mdcSeasonalAchievements(content)
 	local contentFrame = optionalBottomFrame .. ".content" .. content
 	mdcFrame("content" .. content, optionalBottomFrame, mainX, 175, "TOPLEFT", optionalBottomFrame, "TOPLEFT", 0, 0, BackdropTemplateMixin and "BackdropTemplate")
 
-	local xOffset = -440
+	local xOffset = -450
 	local achievement = {"name", "desc", "reward"}
 	local scale = {1.6, 1.2, 1.4}
 	for i = 0, 3 do
-		local _, name, _, _, _, _, _, desc, _, icon, reward, _, wasEarnedByMe = GetAchievementInfo(19009 + i) -- change every season
+		local _, name, _, _, _, _, _, desc, _, icon, reward, _, wasEarnedByMe = GetAchievementInfo(19780 + i) -- change every season
 
 		for j = 1, 3 do
 			mdcFontString(achievement[j] .. i, contentFrame, highlightFont, "CENTER", contentFrame, "CENTER", xOffset + 300 * i , 116 - 58 * j, "", scale[j])
@@ -1455,9 +1462,9 @@ local function mdcSeasonalAchievements(content)
 
 		F[contentFrame .. ".icon"] = F[contentFrame]:CreateTexture(nil, "BACKGROUND")
 		F[contentFrame .. ".icon"]:SetTexture(icon)
-		F[contentFrame .. ".icon"]:SetSize(170 / addonSize, 170 / addonSize)
+		F[contentFrame .. ".icon"]:SetSize(300 / addonSize, 170 / addonSize)
 		F[contentFrame .. ".icon"]:SetPoint("CENTER", F[contentFrame], "CENTER", xOffset / addonSize + 300 * i / addonSize, 0)
-		F[contentFrame .. ".icon"]:SetVertexColor(0.25, 0.25, 0.25, 1)
+		F[contentFrame .. ".icon"]:SetVertexColor(0.2, 0.2, 0.2, 1)
 		F[contentFrame .. ".icon"]:SetTexCoord(0.1, 0.9, 0.1, 0.9)
 
 		if wasEarnedByMe then
@@ -1548,7 +1555,7 @@ function mdc:OptionalBottomFrame()
 	end
 
 	if locale == "ruRU" then
-		F[bottomFrame .. ".content3"]:SetTextScale(1.4 / addonSize)  -- Great Vault Rewards
+		F[bottomFrame .. ".content3"]:SetTextScale(1.4 / addonSize)  -- Great Vault Rewards Tab
 	end
 
 	if mdc.db.profile.optionalBottomFrame.show == true then

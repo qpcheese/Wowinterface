@@ -1,6 +1,12 @@
-# 3.10.27 (20-MAR-2024)
- - fixed - https://github.com/arkayenro/arkinventory/issues/1871 - updated object code to handle any new INVTYPE values better
-
+# 3.10.29 (05-MAY-2024)
+ - fixed - issue with packager not handling cataclysm toc files/values
+ - fixed - issue with pawn based item upgrade icon displaying on non equipable items
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1880 - issue with CONTAINER_SLOTS in most non english languages using a conditional format, as well as being reversed, which breaks the matching and the value capture
+ - changed - (cataclysm) enabled mounts location
+ - changed - (cataclysm) enabled toys location
+ - added - cataclysm toc files 40400
+ - added - ability to disable the text for each bag type in the status bar - config > design > window > style > status > empty slot
+ - added - ability to disable the text for each bag type in the ldb object text - right click > ldb > display
 
 
 # known issues

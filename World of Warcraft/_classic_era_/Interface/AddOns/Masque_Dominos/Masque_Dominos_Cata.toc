@@ -2,7 +2,7 @@
 
 ## Author: StormFX, Tuller
 ## Title: Masque: Dominos
-## Version: 10.2.6
+## Version: 10.2.7
 
 ## Dependencies: Masque
 ## IconTexture: Interface\AddOns\Masque_Dominos\Textures\Icon

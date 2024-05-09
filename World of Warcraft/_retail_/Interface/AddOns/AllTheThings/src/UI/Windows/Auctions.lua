@@ -3,7 +3,8 @@ local appName, app = ...;
 local CloneReference = app.CloneReference;
 
 -- Global locals
-local tinsert, _GetAuctionItemInfo, _GetAuctionItemLink = tinsert, GetAuctionItemInfo, GetAuctionItemLink;
+local pcall, select, tinsert, tonumber, CanSendAuctionQuery, GetNumAuctionItems, GetAuctionItemInfo, GetAuctionItemLink
+	= pcall, select, tinsert, tonumber, CanSendAuctionQuery, GetNumAuctionItems, GetAuctionItemInfo, GetAuctionItemLink;
 
 -- Module locals
 local auctionData = {};
@@ -18,36 +19,25 @@ app:CreateWindow("Auctions", {
 			-- Gather the Auctions
 			local numItems = GetNumAuctionItems("list");
 			if numItems > 0 then
+				pcall(self.UnregisterEvent, self, "AUCTION_ITEM_LIST_UPDATE");
 				local iter, index = 0, 1;
 				repeat
 					-- Process the Auction
-					local link = _GetAuctionItemLink("list", index);
-					if link then
-						local _,itemID = (":"):split(link:match("item[%-?%d:]+"));
-						auctionData[tonumber(itemID)] = 1;
-						--print("ProcessAuctions", index, link, itemID);
-					else
-						local name, texture, count, quality, canUse, level, levelColHeader, minBid,
-							minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
-							ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", index);
-						if itemID and itemID > 0 and saleStatus == 0 then
-							--print("ProcessAuctions", index, itemID);
-							auctionData[itemID] = 1;
-						end
+					local saleStatus, itemID = select(16, GetAuctionItemInfo("list", index));
+					if itemID and itemID > 0 and saleStatus == 0 then
+						--print("ProcessAuctions", index, itemID);
+						auctionData[itemID] = 1;
 					end
 					
 					-- Increment the index and check the iteration variable.
 					iter = iter + 1;
-					if iter >= 10000 then
+					if iter >= 100 then
 						coroutine.yield();
 						iter = 0;
 					end
 					index = index + 1;
 				until index > numItems;
-				
-				if numItems > 10000 then
-					app.print("Scan complete.");
-				end
+				app.print("Scan complete.");
 				
 				-- Write back the valid auction data to saved variables.
 				AllTheThingsAuctionData = auctionData;
@@ -174,6 +164,8 @@ app:CreateWindow("Auctions", {
 						
 							-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
 							if select(2, CanSendAuctionQuery()) then
+								pcall(self.RegisterEvent, self, "AUCTION_ITEM_LIST_UPDATE");
+								
 								-- Disable the button and register for the event.
 								QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
 								app.print("Full Scan Initiated... Please Wait!");
@@ -330,7 +322,7 @@ app:CreateWindow("Auctions", {
 						end
 						if any then
 							-- Search the ATT Database for information related to the auction links (items, species, etc)
-							local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
+							local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {}, nil, nil, nil, nil, nil, nil;
 							for itemID,unused in pairs(auctionData) do
 								searchResults = app.SearchForField("itemID", itemID);
 								if searchResults and #searchResults > 0 then
@@ -429,7 +421,6 @@ app:CreateWindow("Auctions", {
 					end
 				end,
 			};
-			pcall(self.RegisterEvent, self, "AUCTION_ITEM_LIST_UPDATE");
 		end
 		self:UpdatePosition();
 	end

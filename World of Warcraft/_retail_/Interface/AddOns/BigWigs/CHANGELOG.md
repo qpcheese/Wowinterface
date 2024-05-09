@@ -1,9 +1,8 @@
 # BigWigs
 
-## [v326](https://github.com/BigWigsMods/BigWigs/tree/v326) (2024-04-05)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v325...v326) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v328.5](https://github.com/BigWigsMods/BigWigs/tree/v328.5) (2024-05-06)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v328.4...v328.5) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- bump version  
-- bump toc  
-- Loader: Add Sunken Temple  
-- Plugins/Statistics: Add Sunken Temple  
+- Plugins/AltPower: Cleanups  
+- Move LibSpec from the core to the loader  
+- Loader: Remove the version re-broadcast when the core enables  

@@ -1,11 +1,13 @@
 ------------------------------------------------------------------------------
 --
 --  Battle Res plugin for OmniCD
---  © 2021-2023 Treebonker, All rights reserved.
+--  © 2021-2024 Treebonker, All rights reserved.
 --
 --  Tracks battle resurrection in keystone dungeons and raids.
 --  Adds a new option tab called 'Battle Res' to OmniCD.
 --  OmniCD's Friendly CD module must be enabled for the corresponding instance zone.
+--
+--  10.2.7 LFR uses the same shared-charge system as other raid difficulties.
 --
 ------------------------------------------------------------------------------
 
@@ -26,6 +28,7 @@ local defaults = { profile = {
 		[14] = false,
 		[15] = false,
 		[16] = false,
+		[17] = false,
 	},
 	locked		= false,
 	showCounter	= true,
@@ -181,7 +184,7 @@ module.options = {
 						[14] = PLAYER_DIFFICULTY1,  -- Normal
 						[15] = PLAYER_DIFFICULTY2,  -- Heroic
 						[16] = PLAYER_DIFFICULTY6,  -- Mythic
---						[17] = PLAYER_DIFFICULTY3,  -- Raid Finder (no longer works)
+						[17] = PLAYER_DIFFICULTY3,  -- Raid Finder (no longer works -> added back in 10.2.7)
 					},
 					get = getDifficulty,
 					set = setDifficulty,

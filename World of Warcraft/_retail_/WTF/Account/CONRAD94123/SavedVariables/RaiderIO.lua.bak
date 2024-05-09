@@ -24,6 +24,12 @@ RaiderIO_Config = {
 	["disableScoreColors"] = false,
 	["showMainBestScore"] = true,
 	["allowClientToControlCombatLog"] = false,
+	["minimapIcon"] = {
+		["minimapPos"] = 180,
+		["showInCompartment"] = true,
+		["lock"] = false,
+		["hide"] = false,
+	},
 	["dockReplay"] = false,
 	["replayBackground"] = {
 		["a"] = 0.5,
@@ -31,14 +37,14 @@ RaiderIO_Config = {
 		["g"] = 0,
 		["b"] = 0,
 	},
-	["inverseProfileModifier"] = false,
-	["showRaiderIOProfile"] = true,
 	["showScoreInCombat"] = true,
+	["inverseProfileModifier"] = false,
+	["replaySelection"] = "user_best_replay",
 	["enableGuildTooltips"] = true,
 	["enableWhoTooltips"] = true,
-	["positionProfileAuto"] = true,
 	["hidePersonalRaiderIOProfile"] = false,
 	["enableProfileModifier"] = true,
+	["positionProfileAuto"] = true,
 	["showRoleIcons"] = true,
 	["enableFriendsTooltips"] = true,
 	["enableUnitTooltips"] = true,
@@ -49,16 +55,16 @@ RaiderIO_Config = {
 	["enableCombatLogTracking"] = false,
 	["lockProfile"] = false,
 	["showSimpleScoreColors"] = false,
-	["replaySelection"] = "user_best_replay",
+	["showRaiderIOProfile"] = true,
 	["showClientGuildBest"] = true,
 }
-RaiderIO_LastCharacter = "eu-Qubit-ragnaros"
+RaiderIO_LastCharacter = "eu-Qpe-ravencrest"
 RaiderIO_MissingCharacters = {
-	["eu-Cragz-ragnaros"] = true,
-	["eu-Nagylepény-ragnaros"] = true,
-	["eu-Uterah-ragnaros"] = true,
-	["eu-Ravyel-nemesis"] = true,
-	["eu-Slagpåsen-ragnaros"] = true,
+	["eu-Qpfromage-ravencrest"] = true,
+	["eu-Millendïr-argent-dawn"] = true,
+	["eu-Camelia-terokkar"] = true,
+	["eu-Farig-dun-morogh"] = true,
+	["eu-Qpe-ravencrest"] = true,
 }
 RaiderIO_MissingServers = {
 }

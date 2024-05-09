@@ -1,5 +1,5 @@
 
 Misspelled_DB = {
-	["LoadDictionary"] = "enUS",
-	["AutoSelectDictionary"] = true,
+["LoadDictionary"] = "enUS",
+["AutoSelectDictionary"] = true,
 }

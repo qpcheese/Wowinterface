@@ -15,7 +15,7 @@ end
 
 CraftSim.PRICE_OVERRIDE.FRAMES = {}
 
-local print = CraftSim.UTIL:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.PRICE_OVERRIDE)
+local print = CraftSim.DEBUG:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.PRICE_OVERRIDE)
 
 function CraftSim.PRICE_OVERRIDE.FRAMES:Init()
     local sizeX = 450
@@ -33,9 +33,9 @@ function CraftSim.PRICE_OVERRIDE.FRAMES:Init()
         moveable = true,
         backdropOptions = CraftSim.CONST.DEFAULT_BACKDROP_OPTIONS,
         frameStrata = "DIALOG",
-        onCloseCallback = CraftSim.FRAME:HandleModuleClose("modulesPriceOverride"),
-        frameTable = CraftSim.MAIN.FRAMES,
-        frameConfigTable = CraftSimGGUIConfig,
+        onCloseCallback = CraftSim.CONTROL_PANEL:HandleModuleClose("MODULE_PRICE_OVERRIDE"),
+        frameTable = CraftSim.INIT.FRAMES,
+        frameConfigTable = CraftSim.DB.OPTIONS:Get("GGUI_CONFIG"),
     })
     local frameWO = CraftSim.GGUI.Frame({
         parent = ProfessionsFrame.OrdersPage.OrderView.OrderDetails.SchematicForm,
@@ -50,9 +50,9 @@ function CraftSim.PRICE_OVERRIDE.FRAMES:Init()
         moveable = true,
         backdropOptions = CraftSim.CONST.DEFAULT_BACKDROP_OPTIONS,
         frameStrata = "DIALOG",
-        onCloseCallback = CraftSim.FRAME:HandleModuleClose("modulesPriceOverride"),
-        frameTable = CraftSim.MAIN.FRAMES,
-        frameConfigTable = CraftSimGGUIConfig,
+        onCloseCallback = CraftSim.CONTROL_PANEL:HandleModuleClose("MODULE_PRICE_OVERRIDE"),
+        frameTable = CraftSim.INIT.FRAMES,
+        frameConfigTable = CraftSim.DB.OPTIONS:Get("GGUI_CONFIG"),
     })
 
     local function createContentV2(frame)
@@ -101,9 +101,9 @@ function CraftSim.PRICE_OVERRIDE.FRAMES:Init()
 
             local overrideData = nil
             if currentData.isResult then
-                overrideData = CraftSim.PRICE_OVERRIDE:GetResultOverride(frame.recipeID, currentData.qualityID)
+                overrideData = CraftSim.DB.PRICE_OVERRIDE:GetResultOverride(frame.recipeID, currentData.qualityID)
             else
-                overrideData = CraftSim.PRICE_OVERRIDE:GetGlobalOverride(currentData.item:GetItemID())
+                overrideData = CraftSim.DB.PRICE_OVERRIDE:GetGlobalOverride(currentData.item:GetItemID())
             end
 
             overrideOptions.removeButton:SetEnabled(overrideData)
@@ -140,9 +140,9 @@ function CraftSim.PRICE_OVERRIDE.FRAMES:Init()
             sizeY = 25,
             adjustWidth = true,
             clickCallback = function()
-                CraftSim.PRICE_OVERRIDE:SaveOverrideData(frame.recipeID, frame.currentDropdownData)
+                CraftSim.PRICE_OVERRIDE:SaveOverrideDataByDropdown(frame.recipeID, frame.currentDropdownData)
                 overrideOptions:updateButtonStatus()
-                CraftSim.MAIN:TriggerModuleUpdate()
+                CraftSim.INIT:TriggerModuleUpdate()
             end,
             initialStatus = "READY",
             label = CraftSim.LOCAL:GetText(CraftSim.CONST.TEXT.PRICE_OVERRIDE_SAVE),
@@ -175,10 +175,10 @@ function CraftSim.PRICE_OVERRIDE.FRAMES:Init()
             sizeY = 25,
             adjustWidth = true,
             clickCallback = function()
-                CraftSim.PRICE_OVERRIDE:RemoveOverrideData(frame.recipeID, frame.currentDropdownData)
+                CraftSim.PRICE_OVERRIDE:DeleteOverrideDataByDropdown(frame.recipeID, frame.currentDropdownData)
                 overrideOptions:updateButtonStatus()
                 overrideOptions.currencyInputGold:SetValue(0)
-                CraftSim.MAIN:TriggerModuleUpdate()
+                CraftSim.INIT:TriggerModuleUpdate()
             end,
             label = CraftSim.LOCAL:GetText(CraftSim.CONST.TEXT.PRICE_OVERRIDE_REMOVE),
         })
@@ -223,7 +223,7 @@ function CraftSim.PRICE_OVERRIDE.FRAMES:Init()
                 if frame.currentDropdownData then
                     overrideOptions:updateButtonStatus()
                 end
-                CraftSim.MAIN:TriggerModuleUpdate()
+                CraftSim.INIT:TriggerModuleUpdate()
             end
         })
 
@@ -243,10 +243,10 @@ function CraftSim.PRICE_OVERRIDE.FRAMES:UpdateOverrideItem(overrideData)
     local exportMode = CraftSim.UTIL:GetExportModeByVisibility()
     local priceOverrideFrame = nil
     if exportMode == CraftSim.CONST.EXPORT_MODE.WORK_ORDER then
-        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.MAIN.FRAMES, CraftSim.CONST.FRAMES
+        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.INIT.FRAMES, CraftSim.CONST.FRAMES
             .PRICE_OVERRIDE_WORK_ORDER)
     else
-        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.MAIN.FRAMES, CraftSim.CONST.FRAMES.PRICE_OVERRIDE)
+        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.INIT.FRAMES, CraftSim.CONST.FRAMES.PRICE_OVERRIDE)
     end
 
     local overrideOptions = priceOverrideFrame.content.overrideOptions
@@ -261,10 +261,10 @@ end
 function CraftSim.PRICE_OVERRIDE.FRAMES:UpdateDisplay(recipeData, exportMode)
     local priceOverrideFrame = nil
     if exportMode == CraftSim.CONST.EXPORT_MODE.WORK_ORDER then
-        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.MAIN.FRAMES, CraftSim.CONST.FRAMES
+        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.INIT.FRAMES, CraftSim.CONST.FRAMES
             .PRICE_OVERRIDE_WORK_ORDER)
     else
-        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.MAIN.FRAMES, CraftSim.CONST.FRAMES.PRICE_OVERRIDE)
+        priceOverrideFrame = CraftSim.GGUI:GetFrame(CraftSim.INIT.FRAMES, CraftSim.CONST.FRAMES.PRICE_OVERRIDE)
     end
 
     CraftSim.PRICE_OVERRIDE.FRAMES:UpdateOverrideList(priceOverrideFrame)
@@ -386,8 +386,8 @@ end
 function CraftSim.PRICE_OVERRIDE.FRAMES:UpdateOverrideList(priceOverrideFrame)
     local overrideText = priceOverrideFrame.content.activeOverridesBox.overrideList
 
-    local globalOverrides = CraftSimPriceOverridesV2.globalOverrides or {}
-    local recipeOverrides = CraftSimPriceOverridesV2.recipeResultOverrides or {}
+    local globalOverrides = CraftSim.DB.PRICE_OVERRIDE:GetGlobalOverrides()
+    local recipeOverrides = CraftSim.DB.PRICE_OVERRIDE:GetResultOverrides()
     local resultOverrides = {}
     table.foreach(recipeOverrides, function(_, resultOverrideList)
         table.foreach(resultOverrideList, function(_, resultOverride)

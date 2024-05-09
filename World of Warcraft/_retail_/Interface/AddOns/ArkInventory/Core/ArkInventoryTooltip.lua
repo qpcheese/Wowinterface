@@ -39,14 +39,14 @@ ArkInventory.Const.BLIZZARD.TooltipFunctions = {
 	["SetBagItem"] = true,
 	["SetBackpackToken"] = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ), -- FIX ME
 	["SetBuybackItem"] = true,
-	["SetCurrencyByID"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Currency].proj,
+	["SetCurrencyByID"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Currency].ClientCheck ),
 	["SetCurrencyToken"] = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ), -- FIX ME
 	["SetCurrencyTokenByID"] = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ), -- FIX ME
 	["SetCompanionPet"] = true, -- FIX ME
 	["SetCraftItem"] = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.SHADOWLANDS ), -- FIX ME
 	["SetCraftSpell"] = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CLASSIC ), -- FIX ME
-	["SetGuildBankItem"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Vault].proj,
-	["SetHeirloomByItemID"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Heirloom].proj,
+	["SetGuildBankItem"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Vault].ClientCheck ),
+	["SetHeirloomByItemID"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Heirloom].ClientCheck ),
 	["SetHyperlink"] = true,
 	["SetInboxItem"] = true,
 	["SetInventoryItem"] = true,
@@ -67,14 +67,14 @@ ArkInventory.Const.BLIZZARD.TooltipFunctions = {
 	["SetRecipeReagentItem"] = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ), -- FIX ME
 	["SetRecipeResultItem"] = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ), -- FIX ME
 	["SetSendMailItem"] = true,
-	["SetToyByItemID"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Toybox].proj,
+	["SetToyByItemID"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Toybox].ClientCheck ),
 	["SetTradePlayerItem"] = true,
-	["SetTradeSkillItem"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Tradeskill].proj,
+	["SetTradeSkillItem"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Tradeskill].ClientCheck ),
 	["SetTradeTargetItem"] = true,
 --	["SetUnit"] = true, --  > conflicts with OnSetUnit, do NOT use
-	["SetVoidItem"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Void].proj,
-	["SetVoidDepositItem"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Void].proj,
-	["SetVoidWithdrawalItem"] = ArkInventory.Global.Location[ArkInventory.Const.Location.Void].proj,
+	["SetVoidItem"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Void].ClientCheck ),
+	["SetVoidDepositItem"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Void].ClientCheck ),
+	["SetVoidWithdrawalItem"] = ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Void].ClientCheck ),
 	
 }
 
@@ -209,7 +209,7 @@ end
 
 function ArkInventory.TooltipGetNumLines( tooltip )
 	if ArkInventory.TooltipInfoUse( tooltip ) then
-		if tooltip.ARKTTD.info.lines then
+		if tooltip.ARKTTD.info and tooltip.ARKTTD.info.lines then
 			return #tooltip.ARKTTD.info.lines
 		else
 			return 0
@@ -1055,19 +1055,24 @@ function ArkInventory.TooltipGetLine( tooltip, i )
 	
 	if ArkInventory.TooltipInfoUse( tooltip ) then
 		
-		line = tooltip.ARKTTD.info.lines[i]
-		if line then
+		if tooltip.ARKTTD.info and tooltip.ARKTTD.info.lines then
 			
-			if line.leftText then
-				leftColor = line.leftColor
-				leftTextClean = ArkInventory.TooltipCleanText( line.leftText )
-				leftText = leftColor:WrapTextInColorCode( line.leftText )
-			end
+			line = tooltip.ARKTTD.info.lines[i]
 			
-			if line.rightText then
-				rightColor = line.rightColor
-				rightTextClean = ArkInventory.TooltipCleanText( line.rightText )
-				rightText = rightColor:WrapTextInColorCode( line.rightText )
+			if line then
+				
+				if line.leftText then
+					leftColor = line.leftColor
+					leftTextClean = ArkInventory.TooltipCleanText( line.leftText )
+					leftText = leftColor:WrapTextInColorCode( line.leftText )
+				end
+				
+				if line.rightText then
+					rightColor = line.rightColor
+					rightTextClean = ArkInventory.TooltipCleanText( line.rightText )
+					rightText = rightColor:WrapTextInColorCode( line.rightText )
+				end
+				
 			end
 			
 		end
@@ -1342,8 +1347,8 @@ local function helper_AcceptableRedText( txt, ignore_known, ignore_level )
 		return true
 	elseif txt == ArkInventory.Localise["CANNOT_UNEQUIP_TORGHAST"] then
 		return true
-	elseif string.match( txt, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_LEVEL"] ) then
-		--ArkInventory.Output( "WOW_TOOLTIP_REQUIRES_LEVEL" )
+	elseif string.match( txt, ArkInventory.Localise["WOW_TOOLTIP_ITEM_REQUIRES_LEVEL"] ) then
+		--ArkInventory.Output( "WOW_TOOLTIP_ITEM_REQUIRES_LEVEL" )
 		if ignore_level then
 			return true
 		else
@@ -2799,7 +2804,7 @@ function ArkInventory.TooltipDataDump( tooltipInfo )
 		end
 		
 		--tooltipInfo.type
-			
+		
 		local show = false
 		for k, line in ipairs( tooltipInfo.lines ) do
 			

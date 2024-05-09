@@ -2,21 +2,21 @@
 ENABLED = 1
 VERBOSE = 0
 WHITELIST = {
-	"Temple of Fal'adora", -- [1]
-	"Falanaar Tunnels", -- [2]
-	"Shattered Locus", -- [3]
-	"Crestfall", -- [4]
-	"Snowblossom Village", -- [5]
-	"Havenswood", -- [6]
-	"Jorundall", -- [7]
-	"Molten Cay", -- [8]
-	"Un'gol Ruins", -- [9]
-	"The Rotting Mire", -- [10]
-	"Whispering Reef", -- [11]
-	"Verdant Wilds", -- [12]
-	"The Dread Chain", -- [13]
-	"Skittering Hollow", -- [14]
-	"Torghast, Tower of the Damned", -- [15]
+"Temple of Fal'adora",
+"Falanaar Tunnels",
+"Shattered Locus",
+"Crestfall",
+"Snowblossom Village",
+"Havenswood",
+"Jorundall",
+"Molten Cay",
+"Un'gol Ruins",
+"The Rotting Mire",
+"Whispering Reef",
+"Verdant Wilds",
+"The Dread Chain",
+"Skittering Hollow",
+"Torghast, Tower of the Damned",
 }
 BLACKLIST = {
 }

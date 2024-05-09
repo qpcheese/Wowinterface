@@ -113,7 +113,7 @@ function Talented:SetTooltipInfo(frame, class, tab, index)
 	end
 	local s = self:GetTalentState(template, tab, index)
 	if self.mode == "edit" then
-		if template == self.current then
+		if template == self.template then
 			if s == "available" or s == "empty" then
 				addline(TOOLTIP_TALENT_LEARN, GREEN_FONT_COLOR)
 			end

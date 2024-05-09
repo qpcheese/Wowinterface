@@ -88,12 +88,10 @@ local function FilterActionBackup( )
 			
 			local info = ArkInventory.CrossClient.GetCurrencyListInfo( index )
 			
-			--ArkInventory.Output( "i=[",index,"] h=[", info.isHeader, "] e=[", info.isExpanded, "] [", info.name, "]" )
-			
-			if info.isHeader and not info.isExpanded then
-				--ArkInventory.Output( "expanding ", index )
+			if info.isHeader and not info.isHeaderExpanded then
+				--ArkInventory.Output( "expand header i=[",index,"] [", info.name, "]" )
 				collection.filter.expanded[index] = true
-				ArkInventory.CrossClient.ExpandCurrencyList( index, 1 )
+				ArkInventory.CrossClient.ExpandCurrencyHeader( index )
 				e = false
 				break
 			end
@@ -113,10 +111,13 @@ local function FilterActionRestore( )
 	local n = ArkInventory.CrossClient.GetCurrencyListSize( )
 	
 	for index = n, 1, -1 do
+		
 		if collection.filter.expanded[index] then
-			--ArkInventory.Output( "collapsing ", index )
-			ArkInventory.CrossClient.ExpandCurrencyList( index, 0 )
+			local info = ArkInventory.CrossClient.GetCurrencyListInfo( index )
+			--ArkInventory.Output( "collapse header i=[",index,"] [", info.name, "]" )
+			ArkInventory.CrossClient.CollapseCurrencyHeader( index )
 		end
+		
 	end
 	
 	collection.filter.backup = false
@@ -182,14 +183,15 @@ function ArkInventory.Collection.Currency.ListSetActive( index, state, bulk )
 		--ArkInventory.Output2( index, " / ", state, " / ", entry.active )
 		
 		if state ~= entry.active then
-			--ArkInventory.Output2( "Change: ", state, ", INDEX[=", entry.index, "] NAME=[", entry.name, "]" )
-			ArkInventory.CrossClient.SetCurrencyUnused( index, state and 0 or 1 )
+			--ArkInventory.Output( "Change: ", state, ", INDEX[=", entry.index, "] NAME=[", entry.name, "]" )
+			ArkInventory.CrossClient.SetCurrencyUnused( index, not state )
 		end
 		
 	end
 	
 	if not bulk then
 		FilterActionRestore( )
+		ArkInventory:SendMessage( "EVENT_ARKINV_COLLECTION_CURRENCY_UPDATE_BUCKET", "TOGGLE_ACTIVE" )
 	end
 	
 end
@@ -511,6 +513,7 @@ function ArkInventory:EVENT_ARKINV_COLLECTION_CURRENCY_UPDATE_BUCKET( events )
 	
 	if not collection.isScanning then
 		collection.isScanning = true
+		--ArkInventory.Output( "CURRENCY SCAN" )
 		Scan( )
 		collection.isScanning = false
 	else
@@ -521,6 +524,7 @@ function ArkInventory:EVENT_ARKINV_COLLECTION_CURRENCY_UPDATE_BUCKET( events )
 end
 
 function ArkInventory:EVENT_ARKINV_COLLECTION_CURRENCY_UPDATE( event, ... )
+	-- /run ArkInventory:EVENT_ARKINV_COLLECTION_CURRENCY_UPDATE( "Test" )
 	
 	--ArkInventory.Output( "CURRENCY UPDATE [", event, "]" )
 	

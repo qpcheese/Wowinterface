@@ -12,9 +12,10 @@ local table_insert, table_concat, fmt = table.insert, table.concat, string.forma
 -- GLOBALS: GetSpellInfo, InCombatLockdown, GetNumShapeshiftForms
 -- GLOBALS: MainMenuBarArtFrame, OverrideActionBar, RegisterStateDriver, UnregisterStateDriver
 
-local WoWClassic = (WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE)
+local WoWRetail = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE)
 local WoWBC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
 local WoWWrath = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC)
+local WoWCata = (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC)
 
 local StateBar = setmetatable({}, {__index = ButtonBar})
 local StateBar_MT = {__index = StateBar}
@@ -46,7 +47,7 @@ function Bartender4.StateBar:Create(id, config, name)
 	local bar = setmetatable(Bartender4.ButtonBar:Create(id, config, name), StateBar_MT)
 
 	if playerclass == "DRUID" then
-		if not WoWClassic then
+		if WoWRetail or WoWCata then
 			bar:RegisterEvent("PLAYER_TALENT_UPDATE")
 			bar:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
 		end
@@ -86,7 +87,7 @@ local modifiers = { "ctrl", "alt", "shift" }
 -- specifiy the available stances for each class
 local DefaultStanceMap
 
-if WoWClassic then
+if not WoWRetail then
 DefaultStanceMap = setmetatable({}, { __index = function(t,k)
 	local newT = nil
 	if k == "DRUID" then
@@ -96,12 +97,12 @@ DefaultStanceMap = setmetatable({}, { __index = function(t,k)
 				-- prowl is virtual, no real stance
 			{ id = "prowl", name = ("%s (%s)"):format((GetSpellInfo(768)), (GetSpellInfo(5215))), index = false},
 			{ id = "moonkin", name = GetSpellInfo(24858), index = 4 },
-			(WoWBC or WoWWrath) and { id = "treeoflife", name = GetSpellInfo(33891), index = 2 } or nil,
+			(WoWBC or WoWWrath or WoWCata) and { id = "treeoflife", name = GetSpellInfo(33891), index = 2 } or nil,
 		}
 	elseif k == "ROGUE" then
 		newT = {
 			{ id = "stealth", name = GetSpellInfo(1784), index = 1 },
-			WoWWrath and { id = "shadowdance", name = GetSpellInfo(51713), index = 2 } or nil,
+			(WoWWrath or WoWCata) and { id = "shadowdance", name = GetSpellInfo(51713), index = 2 } or nil,
 		}
 	elseif k ==  "WARRIOR" then
 		newT = {
@@ -109,7 +110,7 @@ DefaultStanceMap = setmetatable({}, { __index = function(t,k)
 			{ id = "def", name = GetSpellInfo(71), index = 2 },
 			{ id = "berserker", name = GetSpellInfo(2458), index = 3 },
 		}
-	elseif k == "PRIEST" and (WoWBC or WoWWrath) then
+	elseif k == "PRIEST" and (WoWBC or WoWWrath or WoWCata) then
 		newT = {
 			{ id = "shadowform", name = GetSpellInfo(15473), index = 1 },
 		}

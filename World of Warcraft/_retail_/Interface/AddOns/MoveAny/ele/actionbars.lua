@@ -57,6 +57,7 @@ function MoveAny:UpdateActionBar(frame)
 	local name = frame:GetName() or BarNames[frame]
 	local opts = MoveAny:GetEleOptions(name, "UpdateActionBar")
 	opts["ROWS"] = opts["ROWS"] or nil
+	opts["OFFSET"] = opts["OFFSET"] or nil
 	opts["SPACING"] = opts["SPACING"] or dSpacing
 	opts["FLIPPED"] = opts["FLIPPED"] or dFlipped
 	local flipped = opts["FLIPPED"]
@@ -64,6 +65,7 @@ function MoveAny:UpdateActionBar(frame)
 		opts["ROWS"] = abpoints[name]["ROWS"]
 	end
 
+	local offset = opts["OFFSET"] or 0
 	local rows = opts["ROWS"] or 1
 	rows = tonumber(rows)
 	if frame == MAMenuBar then
@@ -85,6 +87,40 @@ function MoveAny:UpdateActionBar(frame)
 					MainMenuMicroButton:SetParent(MAMenuBar)
 				end
 			elseif rows == 10 or rows == 5 or rows == 2 then
+				if HelpMicroButton then
+					HelpMicroButton:SetParent(MAHIDDEN)
+				end
+
+				if MainMenuMicroButton then
+					MainMenuMicroButton:SetParent(MAHIDDEN)
+				end
+			else
+				if HelpMicroButton then
+					HelpMicroButton:SetParent(MAHIDDEN)
+				end
+
+				if MainMenuMicroButton then
+					MainMenuMicroButton:SetParent(MAMenuBar)
+				end
+			end
+		elseif D4:GetWoWBuild() == "CATA" then
+			if rows == 1 or rows == 2 or rows == 3 or rows == 4 or rows == 6 or rows == 7 or rows == 8 or rows == 9 or rows == 12 then
+				if HelpMicroButton then
+					HelpMicroButton:SetParent(MAMenuBar)
+				end
+
+				if MainMenuMicroButton then
+					MainMenuMicroButton:SetParent(MAMenuBar)
+				end
+			elseif rows == 11 then
+				if HelpMicroButton then
+					HelpMicroButton:SetParent(MAHIDDEN)
+				end
+
+				if MainMenuMicroButton then
+					MainMenuMicroButton:SetParent(MAMenuBar)
+				end
+			elseif rows == 10 or rows == 5 then
 				if HelpMicroButton then
 					HelpMicroButton:SetParent(MAHIDDEN)
 				end
@@ -187,9 +223,9 @@ function MoveAny:UpdateActionBar(frame)
 			if not InCombatLockdown() then
 				abtn:ClearAllPoints()
 				if flipped then
-					abtn:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", (id - 1) % cols * (fSizeW + spacing) + ofx, ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing) + ofy)
+					abtn:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", (id - 1) % cols * (fSizeW + spacing) + ofx + offset, ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing) + ofy - offset)
 				else
-					abtn:SetPoint("TOPLEFT", frame, "TOPLEFT", (id - 1) % cols * (fSizeW + spacing) + ofx, 1 - ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing) + ofy)
+					abtn:SetPoint("TOPLEFT", frame, "TOPLEFT", (id - 1) % cols * (fSizeW + spacing) + ofx + offset, 1 - ((id - 1) / cols - (id - 1) % cols / cols) * (fSizeH + spacing) + ofy - offset)
 				end
 
 				if abtn.setup == nil then
@@ -245,7 +281,7 @@ function MoveAny:UpdateActionBar(frame)
 		end
 
 		if not InCombatLockdown() then
-			frame:SetSize(cols * (fSizeW + spacing) - spacing, rows * (fSizeH + spacing) - spacing)
+			frame:SetSize(cols * (fSizeW + spacing) - spacing + offset * 2, rows * (fSizeH + spacing) - spacing + offset * 2)
 			local mover = _G[name .. "_MA_DRAG"]
 			local sw, sh = frame:GetSize()
 			local osw, osh = MoveAny:GetEleSize(name)

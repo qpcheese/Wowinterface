@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert, unpack
-	= type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert, unpack;
+local type, ipairs, pairs, setmetatable, rawget, tinsert, unpack
+	= type, ipairs, pairs, setmetatable, rawget, tinsert, unpack;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -66,7 +66,7 @@ local function CreateHash(t)
 				end
 			end
 		elseif key == "difficultyID" then
-			local instanceID = GetRelativeValue(t, "instanceID") or GetRelativeValue(t, "headerID");
+			local instanceID = GetRelativeValue(t, "instanceID") or GetRelativeValue(t, "headerID") or (t.symParent and t.symParent.instanceID)
 			if instanceID then hash = hash .. "-" .. instanceID; end
 		elseif key == "headerID" then
 			-- for custom headers, they may be used in conjunction with other bits of data that we don't want to merge together (because it makes no sense)
@@ -123,6 +123,34 @@ local DefaultFields = {
     ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
+	["AccessibilityScore"] = function(t)
+		local score = 0;
+		if GetRelativeValue(t, "nmr") then
+			score = score + 20;
+		end
+		if GetRelativeValue(t, "nmc") then
+			score = score + 10;
+		end
+		if GetRelativeValue(t, "rwp") then
+			score = score + 5;
+		end
+		if GetRelativeValue(t, "e") then
+			score = score + 1;
+		end
+		local u = GetRelativeValue(t, "u");
+		if u then
+			if u < 3 then
+				score = score + 100000;
+			elseif u < 4 then
+				score = score + 10;
+			else
+				score = score + 1;
+			end
+		end
+		score = score + (t.distance or 99999);
+		t.AccessibilityScore = score;
+		return score;
+	end
 };
 
 if app.IsRetail then
@@ -154,7 +182,7 @@ if app.IsRetail then
 			local missing = true;
 			while o do
 				missing = rawget(o, "_missing");
-				o = not missing and (o.sourceParent or o.parent) or nil;
+				o = not missing and (o.sourceParent or o.parent);
 			end
 			t._missing = missing or false;
 			return missing;
@@ -190,7 +218,7 @@ if app.IsRetail then
 end
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
-local classDefinitions, _cache = {};
+local classDefinitions, _cache = {}, nil;
 local call = function(class, key, t)
 	_cache = rawget(class, key);
 	if _cache then return _cache(t) end
@@ -221,6 +249,7 @@ local BaseObjectFields = not app.__perf and function(fields, className)
 		__class = class,
 		__index = function(t, key)
 			_cache = class[key];
+			---@diagnostic disable-next-line: redundant-parameter
 			if _cache then return _cache(t); end
 		end
 	};
@@ -257,6 +286,7 @@ or function(fields, className)
 		__class = class,
 		__index = function(t, key)
 			_cache = class[key] or class.__missing[key]
+			---@diagnostic disable-next-line: redundant-parameter
 			if _cache then return _cache(t); end
 			-- capture a new empty function return for missing keys so we can track how much missing keys are called on various classes
 			class.__missing[key] = function() end
@@ -610,7 +640,7 @@ end
 -- without requiring a full copied definition of identical field functions and raw Object content
 app.WrapObject = function(object, baseObject)
 	if not object or not baseObject then
-		error("Tried to WrapObject with none provided!",object,baseObject)
+		error("Tried to WrapObject with none provided!")
 	end
 	-- need to preserve the existing object's meta AND return the object being wrapped while also allowing fallback to the base object
 	local objectMeta = getmetatable(object)
@@ -648,7 +678,7 @@ end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store shared
 -- information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
-	local cache, _t, v = {};
+	local cache, _t, v = {}, nil, nil;
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then
@@ -659,7 +689,7 @@ app.CreateCache = function(idField)
 			end
 			return _t, id;
 		end
-		app.PrintDebug("CACHE_MISS",idField,t.__type,t.hash)
+		app.PrintDebug("CACHE_MISS",idField,">",id,t.__type,t.hash)
 		app.PrintTable(t)
 	end;
 	cache.GetCachedField = function(t, field, default_function)
@@ -776,15 +806,17 @@ end
 ]]--
 
 -- Collected helper functions.
-app.SetAccountCollected = function()
-	app.print("SetCollected not initialized yet...");
-end;
-app.SetAccountCollectedForSubType = function()
-	app.print("SetCollectedForSubType not initialized yet...");
+local function NotInitialized(name)
+	app.print(name,"not initialized yet...");
 end
-app.SetCollected = function()
-	app.print("SetCollected not initialized yet...");
-end;
-app.SetCollectedForSubType = function()
-	app.print("SetCollectedForSubType not initialized yet...");
-end
+app.SetAccountCollected = function() NotInitialized("SetAccountCollected") end;
+app.SetAccountCollectedForSubType = function() NotInitialized("SetAccountCollectedForSubType") end
+app.SetCollected = function() NotInitialized("SetCollected") end;
+app.SetCollectedForSubType = function() NotInitialized("SetCollectedForSubType") end
+-- Classic needs to use modules/Collection.lua pls
+app.SetCached = function() NotInitialized("SetCached") end;
+app.IsCached = function() NotInitialized("IsCached") end;
+app.IsAccountCached = function() NotInitialized("IsAccountCached") end;
+app.IsAccountTracked = function() NotInitialized("IsAccountTracked") end;
+app.SetBatchAccountCached = function() NotInitialized("SetBatchAccountCached") end;
+app.SetBatchCached = function() NotInitialized("SetBatchCached") end;

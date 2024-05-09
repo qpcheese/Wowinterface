@@ -1,81 +1,80 @@
-VER 3 0100000000000068 "/ert note" "237133"
-/ert note
-END
-VER 3 0100000000000070 "ap" "136048"
-#showtooltip Arcane Power
-/cast Arcane Power
-/use 13
-/use 14
-END
-VER 3 0100000000000071 "ayt" "609811"
+VER 3 0100000000000014 "1" "134400"
 #showtooltip
-/castsequence reset=1 alter time, .
+/cast icy veins
+/cast berserking
+/use item:191388
 END
-VER 3 010000000000006D "blink stopcast" "135736"
+VER 3 0100000000000001 "2" "135838"
+#showtooltip
+/cast icy veins
+/cast berserking
+/use item:191913
+END
+VER 3 010000000000000B "abarrtotm" "134400"
+#showtooltip
+/castsequence reset=5 Arcane barrage, touch of the magi
+END
+VER 3 010000000000000A "AI" "134400"
+#showtooltip
+/cast [@player]Arcane Intellect
+END
+VER 3 010000000000000C "asd" "132091"
+/s Dw just an arcane thing
+END
+VER 3 0100000000000008 "blink stopcast" "135736"
 #showtooltip
 /stopcasting
 /cast Blink
 END
-VER 3 010000000000006B "COV MAGE" "3565446"
+VER 3 0100000000000006 "COV MAGE" "134400"
 #showtooltip
-/cast Radiant Spark
-/cast Mirrors of Torment
-/cast Deathborne
-/cast Shifting Power
-/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"Radiant Spark" or G"Mirrors of Torment" or G"Deathborne"or G"Shifting Power")
+/castsequence reset=10 Cone of cold, Fire Blast
 END
-VER 3 0100000000000072 "Hp pot" "3566860"
-#showooltip
-/use Spiritual Healing Potion
-END
-VER 3 0100000000000067 "iceblock" "135841"
+VER 3 0100000000000002 "iceblock" "135841"
 #showtooltip
 /stopcasting
 /cancelaura Ice Block
 /cast Ice Block
 END
-VER 3 010000000000006A "mana gem" "134132"
+VER 3 010000000000000E "iouhasd" "3459801"
+END
+VER 3 0100000000000010 "lance" "134400"
+#showtooltip
+/cast ice lance
+/cqs
+END
+VER 3 0100000000000005 "mana gem" "134132"
 #showtooltip
 /click DeleteManaGem
 /use Conjure Mana Gem
 END
-VER 3 010000000000006F "Meow" "3742944"
-/meow
+VER 3 0100000000000013 "MI" "134400"
+/cast mirror image
+/s KAGE BUNSHIN NO JUTSU!!!
 END
-VER 3 0100000000000073 "missile" "136096"
+VER 3 0100000000000011 "open" "134400"
 #showtooltip
-/cast arcane missiles
-/use Celebration Firework
+/cast frostbolt
 END
-VER 3 0100000000000074 "Phial" "134400"
-#showtooltip
-/use Phial of Serenity
-END
-VER 3 0100000000000075 "pi" "4095289"
-/w wishful Pi plz!
-END
-VER 3 010000000000006C "pomgem" "136031"
+VER 3 0100000000000007 "pomgem" "136031"
 #showtooltip Presence of Mind
 /cast Presence of Mind
-/Use Mana Gem
 /cast Arcane Blast
 END
-VER 3 0100000000000069 "Shadowcore" "463543"
+VER 3 0100000000000012 "pot" "134400"
 #showtooltip
-/use Shadowcore oil
+/use item:191388
+/use item:191387
 END
-VER 3 010000000000006E "slowfall" "135992"
+VER 3 010000000000000D "sa" "132351"
+/s stack ehre to bait puddle
+END
+VER 3 0100000000000009 "slowfall" "135992"
 #showtooltip
 /cast slow fall
 /cancelaura slow fall
 END
-VER 3 0100000000000076 "tinker" "132536"
-/script TradeSkillFrame.DetailsFrame:Create();
-/use 6
-/click StaticPopup1Button1
-END
-VER 3 0100000000000077 "trink" "1411833"
-#showtooltip
-/use 13
-/use 14
+VER 3 010000000000000F "sp" "3636841"
+#showtooltip shifting power
+/cast [nochanneling] shifting power
 END

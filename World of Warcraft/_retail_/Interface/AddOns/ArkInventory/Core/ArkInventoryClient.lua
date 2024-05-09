@@ -342,19 +342,32 @@ function ArkInventory.CrossClient.GetBackpackCurrencyInfo( ... )
 	
 end
 
-function ArkInventory.CrossClient.SetCurrencyUnused( ... )
+function ArkInventory.CrossClient.SetCurrencyUnused( index, unused )
 	if C_CurrencyInfo and C_CurrencyInfo.SetCurrencyUnused then
-		return C_CurrencyInfo.SetCurrencyUnused( ... )
+		return C_CurrencyInfo.SetCurrencyUnused( index, unused )
 	elseif SetCurrencyUnused then
-		return SetCurrencyUnused( ... )
+		if unused then
+			unused = 1
+		else
+			unused = 0
+		end
+		return SetCurrencyUnused( index, unused )
 	end
 end
 
-function ArkInventory.CrossClient.ExpandCurrencyList( ... )
+function ArkInventory.CrossClient.ExpandCurrencyHeader( index )
 	if C_CurrencyInfo and C_CurrencyInfo.ExpandCurrencyList then
-		return C_CurrencyInfo.ExpandCurrencyList( ... )
+		return C_CurrencyInfo.ExpandCurrencyList( index, true )
 	elseif ExpandCurrencyList then
-		return ExpandCurrencyList( ... )
+		return ExpandCurrencyList( index, 1 )
+	end
+end
+
+function ArkInventory.CrossClient.CollapseCurrencyHeader( index )
+	if C_CurrencyInfo and C_CurrencyInfo.ExpandCurrencyList then
+		return C_CurrencyInfo.ExpandCurrencyList( index, false )
+	elseif ExpandCurrencyList then
+		return ExpandCurrencyList( index, 0 )
 	end
 end
 
@@ -383,7 +396,7 @@ function ArkInventory.CrossClient.GetFactionInfo( ... )
 		
 		local r = { }
 		
-		r.name, r.description, r.standingID, r.barMin, r.barMax, r.barValue, r.atWarWith, r.canToggleAtWar, r.isHeader, r.isCollapsed, r.hasRep, r.isWatched, r.isChild, r.factionID, r.hasBonusRepGain, r.canBeLFGBonus = GetFactionInfo( ... )
+		r.name, r.description, r.standingID, r.barMin, r.barMax, r.barValue, r.atWarWith, r.canToggleAtWar, r.isHeader, r.isCollapsed, r.hasRep, r.isWatched, r.isChild, r.factionID, r.hasBonusRepGain, r.canSetInactive = GetFactionInfo( ... )
 		
 		r.standingID = r.standingID or 0
 		r.barMin = r.barMin or 0
@@ -401,7 +414,7 @@ function ArkInventory.CrossClient.GetFactionInfoByID( ... )
 	local r = { }
 	
 	if GetFactionInfoByID then
-		r.name, r.description, r.standingID, r.barMin, r.barMax, r.barValue, r.atWarWith, r.canToggleAtWar, r.isHeader, r.isCollapsed, r.hasRep, r.isWatched, r.isChild, r.factionID, r.hasBonusRepGain, r.canBeLFGBonus = GetFactionInfoByID( ... )
+		r.name, r.description, r.standingID, r.barMin, r.barMax, r.barValue, r.atWarWith, r.canToggleAtWar, r.isHeader, r.isCollapsed, r.hasRep, r.isWatched, r.isChild, r.factionID, r.hasBonusRepGain, r.canSetInactive = GetFactionInfoByID( ... )
 	end
 	
 	return r
@@ -792,8 +805,37 @@ function ArkInventory.CrossClient.TooltipSetCurrencyByID( tooltip, ... )
 	end
 end
 
+function ArkInventory.CrossClient.GetCreateFrameItemType( )
+	if ArkInventory.CrossClient.TemplateVersion == 1 then
+		return "ItemButton"
+	end
+	return "Button"
+end
 
+function ArkInventory.CrossClient.IsAdvancedFlyableArea( )
+	if IsAdvancedFlyableArea then
+		return IsAdvancedFlyableArea( )
+	end
+end
 
+function ArkInventory.CrossClient.GetItemCooldown( ... )
+	
+	if C_Container and C_Container.GetItemCooldown then
+		return C_Container.GetItemCooldown( ... )
+	end
+	
+	if GetItemCooldown then
+		return GetItemCooldown( ... )
+	end
+	
+end
+
+function ArkInventory.CrossClient.GetNumWorldPVPAreas( ... )
+	if GetNumWorldPVPAreas then
+		return GetNumWorldPVPAreas( ... )
+	end
+	return 0
+end
 
 
 

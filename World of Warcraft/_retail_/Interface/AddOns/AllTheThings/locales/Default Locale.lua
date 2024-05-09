@@ -45,6 +45,11 @@ local L = setmetatable({
 	-- Features
 	NEARBY = "Nearby:";
 	
+	-- Tooltips
+	AND_OTHER_SOURCES = "And %s other sources...";
+	FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
+	RACE_LOCKED = "Race Locked";
+	
 	-- Windows
 	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
 	HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
@@ -265,6 +270,99 @@ L.SETTINGS_MENU = {
 		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
 	
 	-- Interface Page
+		INTERFACE_PAGE = UIOPTIONS_MENU;
+		TOOLTIP_LABEL = "Tooltips";
+		TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
+		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
+		ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
+		ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
+		DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
+		DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
+		TOOLTIP_MOD_LABEL = "Modifier";
+		TOOLTIP_MOD_NONE = NONE_KEY;
+		TOOLTIP_MOD_SHIFT = SHIFT_KEY_TEXT;
+		TOOLTIP_MOD_CTRL = CTRL_KEY_TEXT;
+		TOOLTIP_MOD_ALT = ALT_KEY_TEXT;
+		TOOLTIP_MOD_CMD = CMD_KEY_TEXT;
+		TOOLTIP_SHOW_LABEL = "Shown Information";
+		SHOW_COLLECTION_PROGRESS_CHECKBOX = "Collection Progress";
+		SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
+		ICON_ONLY_CHECKBOX = "Icon Only";
+		ICON_ONLY_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...";
+		KNOWN_BY_CHECKBOX = "Known By";
+		KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
+		COMPLETED_BY_CHECKBOX = "Completed By";
+		COMPLETED_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip.";
+		SHOW_CRAFTED_ITEMS_CHECKBOX = "Show Crafted Items";
+		SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the items that can be crafted by any of your characters for a reagent in its tooltip.";
+		SHOW_RECIPES_CHECKBOX = "Show Recipes";
+		SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
+		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX = "Only Non-Trivial";
+		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you only want to see non-trivial recipes in the recipe list.";
+		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
+		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";
+		SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
+		SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
+		INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
+		INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
+		ONLY_RELEVANT_CHECKBOX = "Only Relevant";
+		ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
+		SPEC_CHECKBOX = "Specializations";
+		SPEC_CHECKBOX_TOOLTIP = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.";
+		SUMMARIZE_CHECKBOX = "Summarize Things";
+		SUMMARIZE_CHECKBOX_TOOLTIP = "Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.";
+		CONTAINS_SLIDER_TOOLTIP = 'Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25';
+		SOURCE_LOCATIONS_CHECKBOX = "Source Locations";
+		SOURCE_LOCATIONS_CHECKBOX_TOOLTIP = "Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.";
+		LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
+		COMPLETED_SOURCES_CHECKBOX = "For Completed";
+		COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
+		DROP_CHANCES_CHECKBOX = "Drop Chances";
+		DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
+		FOR_CREATURES_CHECKBOX = "For Creatures";
+		FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
+		FOR_THINGS_CHECKBOX = "For Things";
+		FOR_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Things.";
+		FOR_UNSORTED_CHECKBOX = "For Unsorted";
+		FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
+		WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
+		WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
+		
+		BEHAVIOR_LABEL = "List Behavior";
+		MAIN_LIST_SLIDER_LABEL = "Main List Scale";
+		MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
+		MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
+		MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+		ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
+		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
+		EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
+		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
+		SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
+		SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On";
+		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "For Quests";
+		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On";
+		SHOW_MODELS_CHECKBOX = "Model Preview";
+		SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
+		FILL_DYNAMIC_QUESTS_CHECKBOX = "Fill Dynamic Quests";
+		FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be filled with those purchases when under automatically-populated Quests.\n\nFor example, this will cause the [World Quests] window to behave like the minilist rather than the Main list regarding Cost display.\nNote that in most cases, this will drastically increase the apparent content within the window.";
+		FILL_NPC_DATA_CHECKBOX = "Fill NPC Data";
+		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc) when shown in a mini list. This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible on the mini list if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off";
+		NESTED_QUEST_CHAIN_CHECKBOX = "Show Nested Quest Chains";
+		NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
+		SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
+		SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." right click) to sort by the total progress of each group (instead of by Name)";
+		SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
+		SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
+		PERCENTAGES_CHECKBOX = "Show Percentage Completion";
+		PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
+		PRECISION_SLIDER = "Precision Level";
+		PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
+		DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
+		DYNAMIC_CATEGORY_SIMPLE = "Simple";
+		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
+		DYNAMIC_CATEGORY_NESTED = "Nested";
+		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
+		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 	
 	-- Interface: Accessibility Page

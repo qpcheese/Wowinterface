@@ -54,12 +54,12 @@ BigWigs_BattleForAzeroth: disabled
 BigWigs_BurningCrusade: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_Classic: disabled
-BigWigs_Core: disabled
+BigWigs_Core: enabled
 BigWigs_DragonIsles: disabled
 BigWigs_Legion: disabled
 BigWigs_MistsOfPandaria: disabled
-BigWigs_Options: disabled
-BigWigs_Plugins: disabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
 BigWigs_Shadowlands: disabled
 BigWigs_VaultOfTheIncarnates: disabled
 BigWigs_WarlordsOfDraenor: disabled
@@ -263,8 +263,8 @@ TwitchEmotes: disabled
 UltraSquirt: disabled
 WarpDeplete: disabled
 WeakAuras: disabled
-WeakAurasArchive: disabled
-WeakAurasCompanion: disabled
+WeakAurasArchive: enabled
+WeakAurasCompanion: enabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasStopMotion: disabled

@@ -14,12 +14,12 @@ if not C_TransmogCollection then
 	end
 
 	-- External Functionality
-	app.AddSourceInformation = app.DoNothing;
-	app.BuildSourceInformationForPopout = app.DoNothing;
-	app.GetGroupSourceID = app.DoNothing
+	app.AddSourceInformation = app.EmptyFunction;
+	app.BuildSourceInformationForPopout = app.EmptyFunction;
+	app.GetGroupSourceID = app.EmptyFunction
 
 	-- Extend the Filter Module to include ItemSource
-	app.Modules.Filter.Set.ItemSource = app.DoNothing;
+	app.Modules.Filter.Set.ItemSource = app.EmptyFunction;
 	return
 end
 
@@ -28,7 +28,8 @@ end
 local ipairs, select, tinsert, pairs, rawget
 	= ipairs, select, tinsert, pairs, rawget;
 local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
-	= GetItemInfoInstant, C_Item.IsDressableItemByID, GetItemInfo, C_Transmog.GetSlotForInventoryType
+---@diagnostic disable-next-line: deprecated
+	= ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), C_Item.IsDressableItemByID, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local L, contains, containsAny, SearchForField, SearchForFieldContainer
 	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer;
@@ -39,7 +40,7 @@ local C_TransmogCollection_GetAppearanceSourceInfo, C_TransmogCollection_GetAllA
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance
 	= C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
-local ATTAccountWideData
+local ATTAccountWideData, AccountSources
 
 -- Inventory Slot Harvester
 local SlotByInventoryType = setmetatable({}, {
@@ -96,18 +97,22 @@ local function GetSourceID(itemLink)
 			DressUpModel:SetUnit("player");
 			DressUpModel:Undress();
 			for _,slot in pairs(slots) do
+				---@diagnostic disable-next-line: param-type-mismatch
 				DressUpModel:TryOn(itemLink, slot);
 				local tmogInfo = DressUpModel:GetItemTransmogInfo(slot);
-				-- app.PrintDebug("SlotInfo",slot)
-				-- app.PrintTable(tmogInfo)
-				local sourceID = tmogInfo and tmogInfo.appearanceID;
-				if sourceID and sourceID ~= 0 then
-					-- Adjusted to account for non-transmoggable SourceIDs which are collectible
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo then
-						if sourceInfo.itemID == itemID then
-							-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
-							return sourceID, true;
+				if tmogInfo then
+					-- app.PrintDebug("SlotInfo",slot)
+					-- app.PrintTable(tmogInfo)
+					---@diagnostic disable-next-line: undefined-field
+					local sourceID = tmogInfo.appearanceID;
+					if sourceID and sourceID ~= 0 then
+						-- Adjusted to account for non-transmoggable SourceIDs which are collectible
+						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+						if sourceInfo then
+							if sourceInfo.itemID == itemID then
+								-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
+								return sourceID, true;
+							end
 						end
 					end
 				end
@@ -142,6 +147,10 @@ app.DetermineItemLink = function(sourceID)
 		-- app.PrintTable(sourceInfo)
 		return link;
 	end
+	-- Cannot do this process until the base Item is loaded in the Client
+	if not GetItemInfo(link) then
+		return RETRIEVING_DATA
+	end
 	local checkID, found = GetSourceID(link);
 	if found and checkID == sourceID then return link; end
 
@@ -154,6 +163,7 @@ app.DetermineItemLink = function(sourceID)
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
 	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
 	for m=1,129,1 do
+		---@diagnostic disable-next-line: undefined-field
 		link = itemFormat:format(m);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
@@ -163,6 +173,7 @@ app.DetermineItemLink = function(sourceID)
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
 	for b=1,10999,1 do
+		---@diagnostic disable-next-line: undefined-field
 		link = itemFormat:format(b);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
@@ -189,11 +200,10 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item then
 			local knownItem, knownSource, valid;
-			local acctSources = ATTAccountWideData.Sources;
 			local factionRaces = app.Modules.FactionData.FACTION_RACES;
 			for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- only compare against other Sources of the VisualID which the Account knows
-				if sourceID ~= sourceInfo.sourceID and acctSources[sourceID] == 1 then
+				if sourceID ~= sourceInfo.sourceID and AccountSources[sourceID] == 1 then
 					knownItem = SearchForSourceIDQuickly(sourceID);
 					if knownItem then
 						-- filter matches or one item is Cosmetic
@@ -327,10 +337,10 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		local unlockedSourceIDs, allSources = { sourceID }, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for _,otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it
-			if otherSourceID ~= sourceID and not ATTAccountWideData.Sources[otherSourceID] then
+			if otherSourceID ~= sourceID and not AccountSources[otherSourceID] then
 				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 				if otherSourceInfo and filter(otherSourceInfo, allSources) then
-					ATTAccountWideData.Sources[otherSourceID] = otherSourceInfo.isCollected and 1 or 2;
+					AccountSources[otherSourceID] = otherSourceInfo.isCollected and 1 or 2;
 					tinsert(unlockedSourceIDs, otherSourceID);
 				end
 			end
@@ -386,10 +396,10 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 			app.PrintDebug("Failed to get source info for",knownSourceID)
 			return;
 		end
-		local acctSources = ATTAccountWideData.Sources;
 		local checkItem, checkSource, valid;
 		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
 		local checkFilter;
+		currentCharacterOnly = currentCharacterOnly or app.Settings:Get("MainOnly")
 		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
 		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
 		-- For each shared Visual SourceID
@@ -411,12 +421,12 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		for _,sourceID in ipairs(visualIDs) do
 			-- app.PrintDebug("visualID",knownSource.visualID,"sourceID",sourceID,"known:",acctSources[sourceID)]
 			-- If it is not currently marked collected on the account
-			if not acctSources[sourceID] then
+			if not AccountSources[sourceID] then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
 				-- race/class to consider all shared appearances as 'collected' for the current character
 				if currentCharacterUsable then
 					-- app.PrintDebug("current character usable")
-					acctSources[sourceID] = 2;
+					AccountSources[sourceID] = 2;
 				else
 					-- Find the check Source in ATT
 					checkItem = SearchForSourceIDQuickly(sourceID);
@@ -466,7 +476,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 										or SlotByInventoryType[knownSource.invType] == SlotByInventoryType[checkSource.invType])
 								then
 									-- app.PrintDebug("Unique Collected sourceID:",sourceID);
-									acctSources[sourceID] = 2;
+									AccountSources[sourceID] = 2;
 								-- else print("sources share visual and filters but different equips",item.sourceID,sourceID)
 								end
 							end
@@ -482,7 +492,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 								or SlotByInventoryType[checkSource.invType] == SlotByInventoryType[knownSource.invType])
 						then
 							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-							acctSources[sourceID] = 2;
+							AccountSources[sourceID] = 2;
 						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
 						end
 					end
@@ -492,11 +502,45 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		-- app.Debugging = nil;
 	end
 end
+local function CollectUniqueAppearances()
+	local brokenUniqueSources = ATTAccountWideData.BrokenUniqueSources;
+	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
+	-- app.PrintDebug("Unique Refresh")
+	local currentCharacterOnly = app.Settings:Get("MainOnly");
+	local ItemSourceFilter = app.ItemSourceFilter;
+	if not app.MaxSourceID then
+		-- app.PrintDebug("Initial Session Refresh")
+		local maxSourceID = 0;
+		for id,_ in pairs(SearchForFieldContainer("sourceID")) do
+			-- track the max sourceID so we can evaluate sources not in ATT as well
+			if id > maxSourceID then maxSourceID = id; end
+		end
+		app.MaxSourceID = maxSourceID;
+		-- app.PrintDebug("MaxSourceID",maxSourceID)
+	end
+	for sourceID=1,app.MaxSourceID do
+		-- for each known source
+		if AccountSources[sourceID] == 1 then
+			-- collect shared visual sources
+			MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly);
+		elseif brokenUniqueSources then
+			-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
+			-- and haven't already been marked as unique-collected
+			if brokenUniqueSources[sourceID] and not AccountSources[sourceID] then
+				local sInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+				if ItemSourceFilter(sInfo) then
+					-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
+					AccountSources[sourceID] = 2;
+				end
+			end
+		end
+	end
+	-- app.PrintDebug("Unique Refresh done")
+end
 local function RefreshAppearanceSources()
 	-- app.PrintDebug("RefreshAppearanceSources")
 	app.DoRefreshAppearanceSources = nil;
-	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
-	wipe(collectedSources);
+	wipe(AccountSources);
 	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then
@@ -514,40 +558,28 @@ local function RefreshAppearanceSources()
 	for sourceID=1,app.MaxSourceID do
 		-- don't need to check for existing value... everything is cleared beforehand
 		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-			collectedSources[sourceID] = 1;
+			AccountSources[sourceID] = 1;
 		end
 	end
-	-- app.PrintDebug("Completionist Refresh done")
-	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
-	if not app.Settings:Get("Completionist") then
-		-- app.PrintDebug("Unique Refresh")
-		local currentCharacterOnly = app.Settings:Get("MainOnly");
-		local ItemSourceFilter = app.ItemSourceFilter;
-		for sourceID=1,app.MaxSourceID do
-			-- for each known source
-			if collectedSources[sourceID] == 1 then
-				-- collect shared visual sources
-				MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly);
-			elseif brokenUniqueSources then
-				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
-				-- and haven't already been marked as unique-collected
-				if brokenUniqueSources[sourceID] and not collectedSources[sourceID] then
-					local sInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if ItemSourceFilter(sInfo) then
-						-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
-						collectedSources[sourceID] = 2;
-					end
-				end
-			end
-		end
-		-- app.PrintDebug("Unique Refresh done")
-	end
+	-- app.PrintDebugPrior("Completionist Refresh done")
 end
-app.AddEventHandler("OnRecalculate", function()
-	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
+-- These events are technically 'refresh' of collections, but they also cause different results on
+-- 'new settings' since they literally change the cached collection state of SourceIDs based on current
+-- settings... maybe in future we can revise how these work so that changing settings doesn't require
+-- a full refresh of all SourceID data when we simply want to adjust which SourceIDs we consider collected
+-- for instance, Data.Sources would only change in refresh, with nil or 1 being stored
+-- and a separate storage for Unique-collected Sources, then adjusting Transmog class logic to allow referencing
+-- the Unique table when in Unique mode? maybe once events are all good it won't really matter
+app.AddEventHandler("OnSourceCollection", function()
+	if app.DoRefreshAppearanceSources then
 		RefreshAppearanceSources();
 	end
-end);
+end)
+app.AddEventHandler("OnUniqueSourceCollection", function()
+	if app.Settings:Get("Thing:Transmog") and not app.Settings:Get("Completionist") then
+		CollectUniqueAppearances();
+	end
+end)
 
 -- Adds necessary SourceID information for Item data into the Harvest variable
 app.SaveHarvestSource = function(data)
@@ -581,6 +613,15 @@ do
 		if not link then return; end
 		-- app.PrintDebug("GGLUS",sourceID,link)
 
+		if IsRetrieving(link) then
+			group.retries = (group.retries or 0) + 1
+			if group.retries > 10 then
+				return
+			end
+			app.FunctionRunner.Run(GenerateGroupLinkUsingSourceID, group)
+			return
+		end
+
 		app.ImportRawLink(group, link, true);
 
 		local sourceGroup = app.SearchForObject("sourceID", sourceID, "key");
@@ -595,7 +636,7 @@ do
 			return app.Settings.Collectibles.Transmog;
 		end,
 		["collected"] = function(t)
-			return ATTAccountWideData.Sources[t.sourceID];
+			return AccountSources[t.sourceID];
 		end,
 		trackable = app.ReturnTrue,
 		saved = function(t)
@@ -614,7 +655,15 @@ do
 			return rawget(t, "itemID")
 		end,
 	});
-	app.CreateItemSource = function(sourceID, itemID, t)
+	app.CreateItemSource = app.GameBuildVersion < 50000 and function(sourceID, itemID, t)
+		if t and (not t.q or t.q < 2) then
+			t.sourceID = sourceID;
+			return app.CreateItem(itemID, t);
+		end
+		t = createItemWithAppearance(sourceID, t);
+		t.itemID = itemID;
+		return t;
+	end or function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		t.itemID = itemID;
 		return t;
@@ -655,7 +704,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 							else
 								text = "   ";
 							end
-							tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = app.GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+							tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = app.GetCollectionIcon(AccountSources[sourceID])});
 						end
 					else
 						local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
@@ -689,7 +738,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 									working = true;
 								end
 								text = " |CFFFF0000!|r " .. link .. (useItemIDs and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-								if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
+								if otherSource.isCollected then AccountSources[otherSourceID] = 1; end
 								tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = app.GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 							end
 						end
@@ -715,7 +764,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 							else
 								text = "   ";
 							end
-							tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = app.GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+							tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = app.GetCollectionIcon(AccountSources[sourceID])});
 						end
 					else
 						local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
@@ -773,7 +822,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 									working = true;
 								end
 								text = " |CFFFF0000!|r " .. link .. (useItemIDs and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-								if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
+								if otherSource.isCollected then AccountSources[otherSourceID] = 1; end
 								tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = app.GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 							end
 						end
@@ -784,7 +833,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 
 		-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
 		-- non-collected SourceID, non-collected* for Account, and in Unique Mode
-		if not sourceInfo.isCollected and not ATTAccountWideData.Sources[sourceID] and not app.Settings:Get("Completionist") then
+		if not sourceInfo.isCollected and not AccountSources[sourceID] and not app.Settings:Get("Completionist") then
 			local collected = app.ItemSourceFilter(sourceInfo);
 			if collected then
 				-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
@@ -854,7 +903,7 @@ app.BuildSourceInformationForPopout = function(group)
 						if otherSourceInfo then
 							local newItem = app.CreateItemSource(otherSourceID);
 							if otherSourceInfo.isCollected then
-								ATTAccountWideData.Sources[otherSourceID] = 1;
+								AccountSources[otherSourceID] = 1;
 							end
 							tinsert(g, newItem);
 						end
@@ -891,12 +940,12 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
-		local oldState = ATTAccountWideData.Sources[sourceID] or 0;
+		local oldState = AccountSources[sourceID] or 0;
 
 		-- Only do work if we weren't already learned.
 		-- We check here because Blizzard likes to double notify for items with timers.
 		if oldState ~= 1 then
-			ATTAccountWideData.Sources[sourceID] = 1;
+			AccountSources[sourceID] = 1;
 			ActiveItemCollectionHelper(sourceID, oldState);
 			app.WipeSearchCache();
 		end
@@ -904,11 +953,11 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
-	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
+	local oldState = sourceID and AccountSources[sourceID];
 	if oldState then
 		local unlearnedSourceIDs = { sourceID };
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-		ATTAccountWideData.Sources[sourceID] = nil;
+		AccountSources[sourceID] = nil;
 
 		-- If the user is a Completionist
 		if app.Settings:Get("Completionist") then
@@ -923,11 +972,11 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 			local categoryID, appearanceID, canEnchant, texture, isCollected, itemLink = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
 			if categoryID then
 				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-					if ATTAccountWideData.Sources[otherSourceID] then
+					if AccountSources[otherSourceID] then
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if not otherSourceInfo.isCollected and otherSourceInfo.categoryID == categoryID then
 							tinsert(unlearnedSourceIDs, otherSourceID);
-							ATTAccountWideData.Sources[otherSourceID] = nil;
+							AccountSources[otherSourceID] = nil;
 							shared = shared + 1;
 						end
 					end
@@ -963,6 +1012,7 @@ end);
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
 	if not accountWideData.Sources then accountWideData.Sources = {}; end
+	AccountSources = ATTAccountWideData.Sources
 end);
 
 -- Extend the Filter Module to include ItemSource

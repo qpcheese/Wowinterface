@@ -6,7 +6,7 @@ local UnitHealth, UnitIsConnected, UnitIsDeadOrGhost = UnitHealth, UnitIsConnect
 local GetSpellLevelLearned = GetSpellLevelLearned
 if E.spell_requiredLevel then
 	GetSpellLevelLearned = function(id) return not P.isInTestMode and E.spell_requiredLevel[id] or 0 end
-elseif E.preCata then
+elseif E.preMoP then
 	GetSpellLevelLearned = function() return 0 end
 end
 
@@ -16,7 +16,7 @@ SpellTooltip.updateTooltipTimer = TOOLTIP_UPDATE_TIME
 
 local FEIGN_DEATH = 5384
 local TOUCH_OF_KARMA = 125174
-local DEBUFF_HEARTSTOP_AURA = 214975
+
 
 local unitBars = {}
 local unusedBars = {}
@@ -84,7 +84,8 @@ local function CooldownBarFrame_OnEvent(self, event, ...)
 
 		if P.spell_enabled[spellID] or E.spell_modifiers[spellID] then
 			E.ProcessSpell(spellID, guid)
-		elseif spellID == 384255 or (E.isWOTLKC and (spellID == 63644 or spellID == 63645)) then
+		elseif spellID == 384255
+			or ((E.isWOTLKC or E.isCata) and (spellID == 63644 or spellID == 63645)) then
 			if guid ~= E.userGUID and not CM.syncedGroupMembers[guid] then
 				CM:EnqueueInspect(nil, guid)
 			end
@@ -103,7 +104,7 @@ local function CooldownBarFrame_OnEvent(self, event, ...)
 
 
 		if not UnitIsDeadOrGhost(unit) then
-			if E.preCata then
+			if E.preMoP then
 				local icon = info.spellIcons[20608]
 				if icon then
 					local mult = info.talentData[16184] and 0.3 or (info.talentData[16209] and 0.4) or 0.2
@@ -187,6 +188,7 @@ local function CooldownBarFrame_OnEvent(self, event, ...)
 		if UnitIsConnected(unit) then
 			CM:EnqueueInspect(nil, guid)
 		end
+
 	elseif event == 'UNIT_CONNECTION' then
 		local unit, isConnected = ...
 		if unit == info.unit then
@@ -503,7 +505,7 @@ function P:UpdateUnitBar(guid, isUpdateBarsOrGRU)
 		return
 	end
 
-	if not E.preCata and notUser then
+	if not E.preMoP and notUser then
 		frame:RegisterUnitEvent('PLAYER_SPECIALIZATION_CHANGED', unit)
 	end
 	if E.isBFA then
@@ -553,6 +555,31 @@ function P:UpdateUnitBar(guid, isUpdateBarsOrGRU)
 		end
 	end
 
+
+	if AuraUtil and AuraUtil.ForEachAura then
+		if info.auras.hasWeyrnstone then
+			info.itemData[205146] = true
+		end
+		AuraUtil.ForEachAura(unit, "HELPFUL", nil, function(_,_,_,_,_,_, source, _,_, id)
+
+			if id == 423510 then
+				if not info.auras[2050] then
+					info.auras[2050] = true
+					info.auras[34861] = true
+				end
+
+			elseif id == 410318 then
+				if source and not info.itemData[205146] then
+					local pairedUnit = UnitGUID(source)
+					if pairedUnit then
+						info.auras.hasWeyrnstone = pairedUnit
+						info.itemData[205146] = true
+					end
+				end
+			end
+		end)
+	end
+
 	for i = 1, 7 do
 		local spells = (i == 1 and E.spell_db.PVPTRINKET)
 			or (i == 2 and E.spell_db.RACIAL)
@@ -569,7 +596,7 @@ function P:UpdateUnitBar(guid, isUpdateBarsOrGRU)
 
 				local isValidSpell
 				local enabledSpell = self.spell_enabled[spellID]
-				local extraBarKey, extraBarFrame, isUnitBar
+				local extraBarKey, extraBarFrame
 				if type(enabledSpell) == "number" then
 					extraBarKey = "raidBar" .. enabledSpell
 					extraBarFrame = E.db.extraBars[extraBarKey].enabled and self.extraBars[extraBarKey]
@@ -593,33 +620,11 @@ function P:UpdateUnitBar(guid, isUpdateBarsOrGRU)
 							isValidSpell = (not E.postBFA or not E.covenant_abilities[spellID] or self.isInShadowlands)
 								and self:IsSpecOrTalentForPvpStatus(spec==true and spellID or spec, info, lvl >= GetSpellLevelLearned(spellID), disabledSpec and disabledSpec[info.spec])
 								and (not talent or not self:IsSpecOrTalentForPvpStatus(talent, info, true))
-
-							if ( isValidSpell and info.spec == 257 and not info.auras[2050] ) then
-								local _, src = P:GetBuffDuration(unit, 423510)
-								if ( src ) then
-									info.auras[2050] = true
-									info.auras[34861] = true
-								end
-							end
 						elseif i == 5 then
 							isValidSpell = self.isInShadowlands and self:IsSpecOrTalentForPvpStatus(spec==true and spellID or spec, info, true)
 						elseif i == 4 then
 							isValidSpell = info.talentData[spec]
 						else
-
-
-							if info.auras.hasWeyrnstone then
-								info.itemData[205146] = true
-							else
-								local _, pairedUnit = P:GetBuffDuration(unit, 410318)
-								if pairedUnit then
-									pairedUnit = UnitGUID(pairedUnit)
-									if pairedUnit then
-										info.auras.hasWeyrnstone = pairedUnit
-										info.itemData[205146] = true
-									end
-								end
-							end
 							isValidSpell = self:IsEquipped(info, item, item2)
 						end
 					else
@@ -635,7 +640,7 @@ function P:UpdateUnitBar(guid, isUpdateBarsOrGRU)
 
 				if isValidSpell then
 					local cd = self:GetValueByType(spell.duration, guid, item2)
-					if not E.preCata or not self.isInArena or cd < 900 then
+					if not E.preMoP or not self.isInArena or cd < 900 then
 						local category, buffID, iconTexture = spell.class, spell.buff, spell.icon
 						local ch = self:GetValueByType(spell.charges, guid) or 1
 						local baseCooldown = cd
@@ -684,7 +689,7 @@ function P:UpdateUnitBar(guid, isUpdateBarsOrGRU)
 
 								modData = E.spell_cdmod_by_haste[spellID]
 								if modData == true or modData == info.spec then
-									if E.preCata then
+									if E.preMoP then
 										cd = cd + (info.rangedWeaponSpeed or 0)
 									else
 										local spellHasteMult = info.spellHasteMult or 1/(1 + UnitSpellHaste("player")/100)

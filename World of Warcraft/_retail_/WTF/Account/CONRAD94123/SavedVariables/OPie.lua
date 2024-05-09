@@ -1,11 +1,11 @@
 
 OneRing_Config = nil
 OPie_SavedData = {
-	["_GameVersion"] = "10.2.5",
+	["_GameVersion"] = "10.2.6",
 	["CharProfiles"] = {
 	},
 	["_TimeBand"] = 0.5625,
-	["_OPieVersion"] = "Zeta 4.5 (4.119)",
+	["_OPieVersion"] = "Zeta 5a (4.121)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingOptions"] = {
@@ -130,7 +130,7 @@ OPie_SavedData = {
 					["sliceToken"] = "ABuenYKaMWt",
 				}, -- [13]
 				["save"] = true,
-				["v"] = 1,
+				["v"] = 2,
 				["name"] = "Specializations and Travel",
 				["vm"] = 127,
 				["hotkey"] = "ALT-H",
@@ -186,8 +186,8 @@ OPie_SavedData = {
 					86143, -- [2]
 					["sliceToken"] = "ABue6EEht1e",
 				}, -- [8]
-				["name"] = "Utility",
 				["limit"] = "MAGE",
+				["name"] = "Utility",
 				["vm"] = 127,
 				["save"] = true,
 				["hotkey"] = "BUTTON4",

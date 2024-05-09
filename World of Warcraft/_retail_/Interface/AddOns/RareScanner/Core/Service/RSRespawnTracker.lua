@@ -166,9 +166,9 @@ function RSRespawnTracker.Init()
 		if (respawnTime == RSConstants.ETERNAL_DEATH) then
 			if (npcInfo and npcInfo.questID) then
 				for _, questID in ipairs (npcInfo.questID) do
-					if (not C_QuestLog.IsQuestFlaggedCompleted(questID)) then
+					if (not C_QuestLog.IsQuestFlaggedCompleted(questID) and (npcInfo.reset == nil or npcInfo.reset)) then
 						RSNpcDB.DeleteNpcKilled(npcID)
-						RSEntityStateHandler.SetDeadNpc(npcID)
+						--RSEntityStateHandler.SetDeadNpc(npcID)
 						RSLogger:PrintDebugMessageEntityID(npcID, string.format("CheckRespawnTimers [NPC: %s]. Respawn!", npcID))
 					end
 				end
@@ -183,9 +183,9 @@ function RSRespawnTracker.Init()
 		if (respawnTime == RSConstants.ETERNAL_OPENED) then
 			if (containerInfo and containerInfo.questID) then
 				for _, questID in ipairs (containerInfo.questID) do
-					if (not C_QuestLog.IsQuestFlaggedCompleted(questID)) then
+					if (not C_QuestLog.IsQuestFlaggedCompleted(questID) and (containerInfo.reset == nil or containerInfo.reset)) then
 						RSContainerDB.DeleteContainerOpened(containerID)
-						RSEntityStateHandler.SetContainerOpen(containerID)
+						--RSEntityStateHandler.SetContainerOpen(containerID)
 						RSLogger:PrintDebugMessage(string.format("CheckRespawnTimers [Contenedor: %s]. Respawn!", containerID))
 					end
 				end

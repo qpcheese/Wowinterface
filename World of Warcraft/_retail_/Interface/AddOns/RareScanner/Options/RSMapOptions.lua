@@ -507,13 +507,24 @@ function RSMapOptions.GetMapOptions()
 							end,
 							width = "full",
 						},
-						separatorLootAchievements = {
+						filterState = {
 							order = 8,
+							type = "toggle",
+							name = AL["MAP_TOOLTIPS_FILTER_STATE"],
+							desc = AL["MAP_TOOLTIPS_FILTER_STATE_DESC"],
+							get = function() return RSConfigDB.IsShowingTooltipsFilterState() end,
+							set = function(_, value)
+								RSConfigDB.SetShowingTooltipsFilterState(value)
+							end,
+							width = "full",
+						},
+						separatorLootAchievements = {
+							order = 9,
 							type = "header",
 							name = AL["MAP_TOOLTIPS_LOOT_ACHIEVEMENT"],
 						},
 						lootAchievementsScale = {
-							order = 9,
+							order = 10,
 							type = "range",
 							name = AL["MAP_TOOLTIPS_LOOT_ACHIEVEMENT_SCALE"],
 							desc = AL["MAP_TOOLTIPS_LOOT_ACHIEVEMENT_SCALE_DESC"],
@@ -527,7 +538,7 @@ function RSMapOptions.GetMapOptions()
 							width = "full"
 						},
 						lootAchievementsPosition = {
-							order = 10,
+							order = 11,
 							type = "select",
 							name = AL["MAP_TOOLTIPS_LOOT_ACHIEVEMENT_POSITION"],
 							desc = AL["MAP_TOOLTIPS_LOOT_ACHIEVEMENT_POSITION_DESC"],

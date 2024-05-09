@@ -25,14 +25,14 @@ end
 
 function Talented:LearnTalent(tab, index)
 	local p = self.db.profile
-
+	local current = self:GetActiveSpec()
 	if not p.confirmlearn then
 		self:MatchedLearnTalent(tab, index)
 		return
 	end
 
 	if not p.always_call_learn_talents then
-		local state = self:GetTalentState(self.current, tab, index)
+		local state = self:GetTalentState(current, tab, index)
 		if
 			state == "full" or -- talent maxed out
 			state == "unavailable" or -- prereqs not fullfilled
@@ -43,13 +43,13 @@ function Talented:LearnTalent(tab, index)
 	end
 
 	--Create confirmation dialogue
-	local info = self:GetTalentInfo(self.current.class)
+	local info = self:GetTalentInfo(current.class)
 	if not info then return end
 	local talent = info[tab].talents[index]
 	
 	ShowDialog(L["Are you sure that you want to learn \"%s (%d/%d)\" ?"]:format(
 			talent.info.name,
-			self.current[tab][index] + 1,
+			current[tab][index] + 1,
 			talent.info.ranks),
 		tab, index)
 end
@@ -89,8 +89,8 @@ function Talented:MatchedLearnTalent(tab, index)
 	return LearnTalent(tab, new2OldIdx[tab][index])
 end
 
-function Talented:MatchedGetTalentInfo(tab, index, isInspect)
-	return GetTalentInfo(tab, new2OldIdx[tab][index], isInspect)
+function Talented:MatchedGetTalentInfo(tab, index, isInspect, talentGroup)
+	return GetTalentInfo(tab, new2OldIdx[tab][index], isInspect, nil, talentGroup)
 end
 
 --[tab].talents[index].info

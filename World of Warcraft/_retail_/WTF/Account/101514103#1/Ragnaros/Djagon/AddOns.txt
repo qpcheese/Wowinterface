@@ -1,8 +1,8 @@
 Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
-BigWigs_Core: disabled
-BigWigs_Options: disabled
-BigWigs_Plugins: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
 ElvUI_AuraBarsMovers: disabled
 ElvUI_CastBarOverlay: disabled
 ElvUI_CustomTags: disabled
@@ -18,8 +18,8 @@ ElvUI_SecondsToBuff: disabled
 ElvUI_BuffHighlight: disabled
 WunderUI: disabled
 kExtraBossFrames: disabled
-WeakAurasCompanion: disabled
-WeakAurasArchive: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
 Leatrix_Plus: disabled
 OPie_Classic: disabled
 RaiderIO_DB_US_R: disabled
@@ -58,11 +58,11 @@ BigWigs: disabled
 BigWigs_CommonAuras: disabled
 BigWigs_Transcriptor: disabled
 BigWigs_Voice: disabled
-BigWigs_Aberrus: disabled
+BigWigs_Aberrus: enabled
 BigWigs_BurningCrusade: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_Classic: disabled
-BigWigs_DragonIsles: disabled
+BigWigs_DragonIsles: enabled
 BigWigs_Legion: disabled
 BigWigs_MistsOfPandaria: disabled
 BigWigs_VaultOfTheIncarnates: disabled
@@ -114,7 +114,7 @@ JojoMonk_JosukeHigashikata: disabled
 JojoMonk_JotaroKujo: disabled
 LFGSpamFilter: disabled
 LibGroupInSpecT-1.1: disabled
-LittleWigs: disabled
+LittleWigs: enabled
 LittleWigs_BattleForAzeroth: disabled
 LittleWigs_BurningCrusade: disabled
 LittleWigs_Cataclysm: disabled
@@ -264,7 +264,7 @@ Battle Pet Daily Tamer: disabled
 BLU: disabled
 BigWigs_CountDown_Narwhal: disabled
 BigWigs_Countdown_Sabinico: disabled
-BigWigs_VoiceGCP: disabled
+BigWigs_VoiceGCP: enabled
 BigWigs_Voice_Arnold: disabled
 BigWigs_Voice_Eminem: disabled
 BigWigs_Voice_Marine: disabled

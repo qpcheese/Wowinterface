@@ -5,7 +5,7 @@
 ## AddonCompartmentFunc: ProfessionShoppingList_Click
 ## AddonCompartmentFuncOnEnter: ProfessionShoppingList_Enter
 ## AddonCompartmentFuncOnLeave: ProfessionShoppingList_Leave
-## Version: v10.2.6-001
+## Version: v10.2.6-002
 ## X-Curse-Project-ID: 498475
 ## X-Wago-ID: Xb6X71Np
 

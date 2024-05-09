@@ -9,12 +9,14 @@ local L = app.L;
 -- Global locals
 local ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
 	= ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
+---@diagnostic disable-next-line: deprecated
+local GetItemInfo = ((C_Item and C_Item.GetItemInfo) or GetItemInfo);
 
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 
 -- App locals
-local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
+local GetRelativeValue, SearchForField, SearchForObject = app.GetRelativeValue, app.SearchForField, app.SearchForObject
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
 local SearchForLink
@@ -38,10 +40,12 @@ local function distance( x1, y1, x2, y2 )
 end
 local function GetPlayerPosition()
 	local mapID = app.CurrentMapID;
-	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-	if pos then
-		local px, py = pos:GetXY();
-		return mapID, px * 100, py * 100;
+	if mapID and not IsInInstance() then
+		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
+		if pos then
+			local px, py = pos:GetXY();
+			return mapID, px * 100, py * 100;
+		end
 	end
 	return mapID, 50, 50;
 end
@@ -54,12 +58,18 @@ if app.IsRetail then
 		local o = objectNamesToIDs[name];
 		if o and #o > 0 then
 			local mapID, px, py = GetPlayerPosition();
+			-- if we don't know where the player is, we have literally no way to reduce the set of matching objects by name
+			if not mapID then
+				return o[1]
+			end
 			local closestDistance = 99999
-			local closestObjectID, dist, searchCoord, unmappedObject
+			local closestObjectID, mappedObjectID, unmappedObjectID, dist, searchCoord
+			-- app.PrintDebug("Checking objects",#o,mapID,px,py)
 			for i,objectID in ipairs(o) do
 				-- SFO includes baked-in accessibility filtering/prioritization of the results
 				local searchResults = SearchForObject("objectID", objectID, "any", true);
 				if searchResults and #searchResults > 0 then
+					-- app.PrintDebug("Checking results",#searchResults,objectID)
 					for j,searchResult in ipairs(searchResults) do
 						searchCoord = searchResult.coord;
 						if searchCoord then
@@ -80,15 +90,34 @@ if app.IsRetail then
 									end
 								end
 							end
-						else
-							-- app.PrintDebug("unmapped object assumed",objectID,app:SearchLink(searchResult))
-							unmappedObject = objectID
+						end
+						-- if we haven't found any object by coord-distance, we can check the hierarchy for matching Location-based mapID
+						if not closestObjectID then
+							-- check the parent hierarchy for a map or maps
+							local hierarchyMapID = app.GetRelativeValue(searchResult, "mapID")
+							-- app.PrintDebug("Check hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+							if hierarchyMapID == mapID then
+								-- app.PrintDebug("Object by hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+								mappedObjectID = objectID
+							else
+								local hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
+								-- app.PrintDebug("Check hierarchy maps",app:SearchLink(searchResult),hierarchyMaps and #hierarchyMaps)
+								if hierarchyMaps and app.contains(hierarchyMaps, mapID) then
+									-- app.PrintDebug("Object by hierarchy maps",app:SearchLink(searchResult),hierarchyMapID)
+									mappedObjectID = objectID
+								end
+							end
+							-- if we also haven't found any map-based object, then this object is unmapped
+							if not mappedObjectID then
+								unmappedObjectID = objectID
+							end
 						end
 					end
 				end
 			end
 			-- When player has a valid position, only return valid objects or if there's an unmapped object which matches
-			return closestObjectID or unmappedObject;
+			-- app.PrintDebug(closestObjectID, mappedObjectID, unmappedObjectID)
+			return closestObjectID or mappedObjectID or unmappedObjectID;
 		end
 	end
 else
@@ -125,17 +154,45 @@ else
 								end
 							end
 						end
+
+						if searchResult.maps then
+							for k,m in ipairs(searchResult.maps) do
+								if m == mapID then
+									dist = distance(px, py, 0.5, 0.5);
+									if dist and dist < closestDistance then
+										closestDistance = dist;
+										closestInstance = searchResult;
+									end
+								end
+							end
+						end
+						if GetRelativeValue(searchResult, "mapID") == mapID then
+							dist = distance(px, py, 0.5, 0.5);
+							if dist and dist < closestDistance then
+								closestDistance = dist;
+								closestInstance = searchResult;
+							end
+						end
 					end
 				end
-				tinsert(objects, {
-					objectID = objectID,
-					parent = closestInstance,
-					distance = closestDistance
-				});
+				if closestInstance then
+					tinsert(objects, {
+						objectID = objectID,
+						distance = closestDistance,
+						AccessibilityScore = closestInstance.AccessibilityScore + closestDistance
+					});
+				end
 			end
 			if #objects > 0 then
-				app.Sort(objects, app.SortDefaults.AccessibilityAndDistance);
+				app.Sort(objects, app.SortDefaults.Accessibility);
+				--[[
+				for i,o in ipairs(objects) do
+					print(i, o.objectID, o.AccessibilityScore);
+				end
+				]]--
 				return objects[1].objectID;
+			elseif #o == 1 then
+				return o[1];
 			end
 		end
 	end
@@ -150,7 +207,7 @@ local PLAYER_TOOLTIPS = {
 		local leftSide = _G[self:GetName() .. "TextLeft1"];
 		if leftSide then leftSide:SetText("|cff665a2c" .. name .. " the Time-Loser|r"); end
 		local rightSide = _G[self:GetName() .. "TextRight2"];
-		if rightSide then rightSide:SetText(GetCollectionIcon(0)); end
+		if rightSide then rightSide:SetText(app.GetCollectionIcon(0)); end
 		self:AddLine("This scumbag abused an auto-invite addon to steal the Time-Lost Proto Drake from a person that had them on their friends list. ATT has deemed this unacceptable behaviour and will forever stain this player's reputation so long as they remain on the server.", 0.4, 0.8, 1, true);
 	end,
 };
@@ -540,7 +597,7 @@ local function StripColorAndTextureData(txt)
 		c = txt:sub(i,i);
 		if c == "|" then
 			local foundCommand, j = FindCommandEnd(txt, i, l)
-			if foundCommand then
+			if foundCommand and j then
 				i = j;
 			else
 				str = str .. "\\" .. c;
@@ -612,7 +669,7 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 end
 local function AttachTooltipInformation(tooltip, tooltipInfo)
 	if tooltipInfo and #tooltipInfo > 0 then
-		-- if app.Debugging then app.PrintTable(tooltipInfo) end
+		-- if app.Debugging then app.PrintDebug("ATI") app.PrintTable(tooltipInfo) end
 		for _,entry in ipairs(tooltipInfo) do
 			AttachTooltipInformationEntry(tooltip, entry);
 		end
@@ -686,11 +743,12 @@ end
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 -- Tooltip API Differences between Modern and Legacy APIs.
-if TooltipDataProcessor then
+if TooltipDataProcessor and app.GameBuildVersion > 50000 then
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
-	local Enum_TooltipDataType, GetItemInfoInstant, TooltipUtil = Enum.TooltipDataType, GetItemInfoInstant, TooltipUtil;
+	---@diagnostic disable-next-line: deprecated
+	local Enum_TooltipDataType, GetItemInfoInstant, TooltipUtil = Enum.TooltipDataType, ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), TooltipUtil;
 	local TooltipTypes = {
 		[Enum_TooltipDataType.Toy] = "itemID",
 		[Enum_TooltipDataType.Item] = "itemID",
@@ -723,13 +781,14 @@ if TooltipDataProcessor then
 
 	local function RerenderCurrency(self, currencyID)
 		if self:IsVisible() then
+			---@diagnostic disable-next-line: redundant-parameter
 			GameTooltip.SetCurrencyByID(self, currencyID, 1);
 		end
 	end
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
-		local ttType, ttId = ttdata and ttdata.type;
+		local ttType, ttId = ttdata and ttdata.type, nil;
 		if ttType then
 			ttId = ttdata.id;
 			-- Debugging without ATT exclusions
@@ -817,6 +876,7 @@ if TooltipDataProcessor then
 		end
 
 		-- app.PrintDebug(self:GetName(),link,target,spellID,id,ttType,ttId)
+		-- app.PrintTable(ttdata)
 
 		--[[--]
 		-- Debug all of the available fields on the tooltip.
@@ -907,6 +967,10 @@ if TooltipDataProcessor then
 			local knownSearchField = TooltipTypes[ttType];
 			if not knownSearchField then
 				-- other ways to search
+				if ttId and app.ActiveRowReference and ttType == Enum_TooltipDataType.Spell then
+					-- allow spell tooltip information when it's an ATT row
+					knownSearchField = "spellID";
+				end
 				if ttType == Enum_TooltipDataType.Mount then
 					knownSearchField = "spellID";
 					ttId = select(2, C_MountJournal.GetMountInfoByID(ttId));
@@ -920,7 +984,7 @@ if TooltipDataProcessor then
 						ttId = objectID;
 					end
 				end
-				if ttType == 21 then	-- Minimap mouseover
+				if ttType == Enum_TooltipDataType.MinimapMouseover then
 					local content = ttdata.lines;
 					if content and #content > 0 then
 						local text = content[1].leftText;
@@ -943,13 +1007,14 @@ if TooltipDataProcessor then
 				return true;
 			end
 		end
-		-- print("AttachTooltip-Return");
+		-- app.PrintDebug("AttachTooltip-Return");
 	end
 
 	app.AddEventRegistration("TOOLTIP_DATA_UPDATE", function(...)
 		if GameTooltip and GameTooltip:IsVisible() then
 			-- app.PrintDebug("Auto-refresh tooltip")
 			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+			---@diagnostic disable-next-line: inject-field
 			GameTooltip.ATT_AttachComplete = nil;
 			GameTooltip:Show();
 		end
@@ -1099,6 +1164,7 @@ else
 	ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
 	ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 
+	local WorldMapTooltip = WorldMapTooltip;
 	if WorldMapTooltip then
 		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
@@ -1110,6 +1176,7 @@ else
 
 	local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
 	if GameTooltip_SetLFGDungeonReward then
+		---@diagnostic disable-next-line: duplicate-set-field
 		GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
 			GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
 			if CanAttachTooltips() then
@@ -1129,6 +1196,7 @@ else
 
 	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
 	if GameTooltip_SetLFGDungeonShortageReward then
+		---@diagnostic disable-next-line: duplicate-set-field
 		GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
 			--app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
 			GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
@@ -1148,8 +1216,10 @@ else
 	end
 
 	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
+	---@diagnostic disable-next-line: duplicate-set-field
 	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
 		if GameTooltip_SetCurrencyByID then
+			---@diagnostic disable-next-line: redundant-parameter
 			GameTooltip_SetCurrencyByID(self, currencyID, count);
 		end
 		if CanAttachTooltips() then
@@ -1160,6 +1230,9 @@ else
 
 	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 	if GameTooltip_SetCurrencyToken then
+		---@diagnostic disable-next-line: undefined-global
+		local GetCurrencyListInfo = GetCurrencyListInfo;
+		---@diagnostic disable-next-line: duplicate-set-field
 		GameTooltip.SetCurrencyToken = function(self, tokenID)
 			GameTooltip_SetCurrencyToken(self, tokenID);
 			if CanAttachTooltips() then
@@ -1207,6 +1280,7 @@ local function ShowItemCompareTooltips(...)
 	local count = #items;
 	if count > 0 then
 		for i,item in ipairs(items) do
+			---@diagnostic disable-next-line: undefined-field
 			local shoppingTooltip = GameTooltip.shoppingTooltips[i];
 			if shoppingTooltip then
 				shoppingTooltip.attItem = type(item) == "number" and select(2, GetItemInfo(item)) or item;
@@ -1218,6 +1292,7 @@ local function ShowItemCompareTooltips(...)
 
 		-- Quick maths
 		-- Taken from https://github.com/Ennie/wow-ui-source/blob/master/FrameXML/GameTooltip.lua
+		---@diagnostic disable-next-line: undefined-field
 		local shoppingTooltip1, shoppingTooltip2, shoppingTooltip3 = unpack(GameTooltip.shoppingTooltips);
 		local leftPos, rightPos = (GameTooltip:GetLeft() or 0), (GameTooltip:GetRight() or 0);
 		if GetScreenWidth() - rightPos < leftPos then

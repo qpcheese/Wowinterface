@@ -375,6 +375,8 @@ L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "其他角色"
 L["S_TEXT_SIZE"] = "Text Size"
 --[[Translation missing --]]
 L["S_TORGAST"] = "Torgasth"
+--[[Translation missing --]]
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "表示可獲得的數量"
 L["S_TUTORIAL_CLICKTOTRACK"] = "點一下追蹤任務。"
 L["S_TUTORIAL_PARTY"] = "組隊時，藍色星星表示所有隊伍成員都有這些任務!"

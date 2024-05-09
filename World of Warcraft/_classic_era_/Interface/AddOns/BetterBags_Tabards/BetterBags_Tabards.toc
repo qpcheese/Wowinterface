@@ -1,8 +1,8 @@
-## Interface: 100206
+## Interface: 100206, 40400, 11501
 ## Title: BetterBags - Tabards
 ## Notes: Adds a Tabards category to BetterBags.
 ## Author: OrenYoh
-## Version: 1.0.1
+## Version: 1.0.2
 ## IconTexture: Interface\AddOns\BetterBags_Tabards\images\tabard
 ## Dependencies: BetterBags
 ## X-Curse-Project-ID: 979135

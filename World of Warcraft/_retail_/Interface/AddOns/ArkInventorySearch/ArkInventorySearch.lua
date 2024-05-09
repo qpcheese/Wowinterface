@@ -1,5 +1,5 @@
 ﻿
---License: All Rights Reserved, (c) 2006-2023
+--License: All Rights Reserved, (c) 2006-2024
 
 
 ArkInventorySearch = LibStub( "AceAddon-3.0" ):NewAddon( "ArkInventorySearch" )
@@ -256,7 +256,7 @@ function ArkInventorySearch.Frame_Table_Refresh_Threaded( frame, thread_id )
 			
 			for l, ld in pairs( pd.location ) do
 				
-				if ( not ArkInventory.Global.Location[l].excludeFromGlobalSearch ) and ArkInventory.ClientCheck( ArkInventory.Global.Location[l].proj ) then
+				if ( not ArkInventory.Global.Location[l].excludeFromGlobalSearch ) and ArkInventory.ClientCheck( ArkInventory.Global.Location[l].ClientCheck ) then
 					
 					for b, bd in pairs( ld.bag ) do
 						

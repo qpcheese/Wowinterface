@@ -1,14 +1,14 @@
 # CraftSim
 
-## [14.4.1](https://github.com/derfloh205/CraftSim/tree/14.4.1) (2024-01-30)
-[Full Changelog](https://github.com/derfloh205/CraftSim/compare/14.4.0...14.4.1) [Previous Releases](https://github.com/derfloh205/CraftSim/releases)
+## [16.1.8](https://github.com/derfloh205/CraftSim/tree/16.1.8) (2024-05-08)
+[Full Changelog](https://github.com/derfloh205/CraftSim/compare/16.1.7...16.1.8) [Previous Releases](https://github.com/derfloh205/CraftSim/releases)
 
-- SpecInfo Update  
-- small text change  
-- Flash Taskbar Option for CraftQueue  
-- Added/Removed Localization IDs  
-- Supporterlist update  
-- Version Update  
-- Russian Localization for 14.4.0 (#222)  
-    * Russian locale for 14.3.0  
-    * Russian locale for 14.4.0  
+- news update  
+- fix 10.2.7 (#275)  
+- toc bump  
+- Fix/#272 (#274)  
+    * ggui lib adaptions  
+    * news  
+- hook recraft api calls for craft results processing for material coun… (#270)  
+    * hook recraft api calls for craft results processing for material count update  
+    * revert OnCraft  

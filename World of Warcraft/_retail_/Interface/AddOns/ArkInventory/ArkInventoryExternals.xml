@@ -5,6 +5,7 @@
 	<Include file="Libs\CallBackHandler\CallbackHandler-1.0.xml" />
 	<Include file="Libs\LibDataBroker\lib.xml" />
 	<Include file="Libs\LibDialog\lib.xml" />
+	<Include file="Libs\ArkDewdrop\lib.xml" />
 	
 	<Include file="Externals\Ace3\AceAddon\AceAddon-3.0.xml" />
 	<Include file="Externals\Ace3\AceEvent\AceEvent-3.0.xml" />

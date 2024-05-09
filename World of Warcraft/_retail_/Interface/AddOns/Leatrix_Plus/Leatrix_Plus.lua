@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 10.2.23 (10th April 2024)
+-- 	Leatrix Plus 10.2.25 (1st May 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -18,7 +18,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "10.2.23"
+	LeaPlusLC["AddonVer"] = "10.2.25"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -679,6 +679,7 @@
 
 		-- System
 		or	(LeaPlusLC["NoRestedEmotes"]		~= LeaPlusDB["NoRestedEmotes"])			-- Silence rested emotes
+		or	(LeaPlusLC["KeepAudioSynced"]		~= LeaPlusDB["KeepAudioSynced"])		-- Keep audio synced
 		or	(LeaPlusLC["NoPetAutomation"]		~= LeaPlusDB["NoPetAutomation"])		-- Disable pet automation
 		or	(LeaPlusLC["CharAddonList"]			~= LeaPlusDB["CharAddonList"])			-- Show character addons
 		or	(LeaPlusLC["FasterLooting"]			~= LeaPlusDB["FasterLooting"])			-- Faster auto loot
@@ -4362,6 +4363,22 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		-- Keep audio synced
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["KeepAudioSynced"] == "On" then
+
+			SetCVar("Sound_OutputDriverIndex", "0")
+			local event = CreateFrame("FRAME")
+			event:RegisterEvent("VOICE_CHAT_OUTPUT_DEVICES_UPDATED")
+			event:SetScript("OnEvent", function()
+				SetCVar("Sound_OutputDriverIndex", "0")
+				Sound_GameSystem_RestartSoundSystem()
+			end)
+
+		end
 
 		----------------------------------------------------------------------
 		-- Mute custom sounds (no reload required)
@@ -10965,6 +10982,7 @@
 				LeaPlusLC:LoadVarChk("MaxCameraZoom", "Off")				-- Max camera zoom
 
 				LeaPlusLC:LoadVarChk("NoRestedEmotes", "Off")				-- Silence rested emotes
+				LeaPlusLC:LoadVarChk("KeepAudioSynced", "Off")				-- Keep audio synced
 				LeaPlusLC:LoadVarChk("MuteGameSounds", "Off")				-- Mute game sounds
 				LeaPlusLC:LoadVarChk("MuteMountSounds", "Off")				-- Mute mount sounds
 				LeaPlusLC:LoadVarChk("MuteCustomSounds", "Off")				-- Mute custom sounds
@@ -11319,6 +11337,7 @@
 			LeaPlusDB["MaxCameraZoom"] 			= LeaPlusLC["MaxCameraZoom"]
 
 			LeaPlusDB["NoRestedEmotes"]			= LeaPlusLC["NoRestedEmotes"]
+			LeaPlusDB["KeepAudioSynced"]		= LeaPlusLC["KeepAudioSynced"]
 			LeaPlusDB["MuteGameSounds"]			= LeaPlusLC["MuteGameSounds"]
 			LeaPlusDB["MuteMountSounds"]		= LeaPlusLC["MuteMountSounds"]
 			LeaPlusDB["MuteCustomSounds"]		= LeaPlusLC["MuteCustomSounds"]
@@ -13284,39 +13303,6 @@
 					end
 				end
 				return
-			elseif str == "camp" then
-				-- Camp
-				if not LeaPlusLC.NoCampFrame then
-					-- Load LibChatAnims
-					Leatrix_Plus:LeaPlusLCA()
-					-- Chat filter
-					function LeaPlusLC.CampFilterFunc(self, event, msg)
-						if msg:match(_G["MARKED_AFK_MESSAGE"]:gsub("%%s", "%s-"))
-						or msg:match(_G["MARKED_AFK"])
-						or msg:match(_G["CLEARED_AFK"])
-						or msg:match(_G["IDLE_MESSAGE"])
-						then return true
-						end
-					end
-					LeaPlusLC.NoCampFrame = CreateFrame("FRAME", nil, UIParent)
-				end
-				if LeaPlusLC.NoCampFrame:IsEventRegistered("PLAYER_CAMPING") then
-					-- Disable camp
-					LeaPlusLC.NoCampFrame:UnregisterEvent("PLAYER_CAMPING")
-					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_SYSTEM", LeaPlusLC.CampFilterFunc)
-					LeaPlusLC:Print("Camping enabled.  You will camp.")
-				else
-					-- Enable camp
-					LeaPlusLC.NoCampFrame:RegisterEvent("PLAYER_CAMPING")
-					ChatFrame_AddMessageEventFilter("CHAT_MSG_SYSTEM", LeaPlusLC.CampFilterFunc)
-					LeaPlusLC:Print("Camping disabled.  You won't camp.")
-				end
-				-- Event handler
-				LeaPlusLC.NoCampFrame:SetScript("OnEvent", function()
-					local p = StaticPopup_Visible("CAMP")
-					_G[p .. "Button1"]:Click()
-				end)
-				return
 			elseif str == "ach" then
 				-- Set Instance Achievement Tracker window properties
 				if AchievementTracker then
@@ -14032,6 +14018,7 @@
 				LeaPlusDB["WeatherLevel"] = 0					-- Weather density level
 				LeaPlusDB["MaxCameraZoom"] = "On"				-- Max camera zoom
 				LeaPlusDB["NoRestedEmotes"] = "On"				-- Silence rested emotes
+				LeaPlusDB["KeepAudioSynced"] = "On"				-- Keep audio synced
 				LeaPlusDB["MuteGameSounds"] = "On"				-- Mute game sounds
 				LeaPlusDB["MuteMountSounds"] = "On"				-- Mute mount sounds
 				LeaPlusDB["MuteCustomSounds"] = "On"			-- Mute custom sounds
@@ -14460,9 +14447,10 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "SetWeatherDensity"			, 	"Set weather density"			, 	146, -132, 	false,	"If checked, you will be able to set the density of weather effects.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -152, 	false,	"If checked, you will be able to zoom out to a greater distance.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -172, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -192, 	false,	"If checked, you will be able to mute a selection of game sounds.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteMountSounds"			, 	"Mute mount sounds"				,	146, -212, 	false,	"If checked, you will be able to mute a selection of mount sounds.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteCustomSounds"			, 	"Mute custom sounds"			,	146, -232, 	false,	"If checked, you will be able to mute your own choice of sounds.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "KeepAudioSynced"			, 	"Keep audio synced"				,	146, -192, 	true,	"If checked, when you change the audio output device in your operating system, the game audio output device will change automatically.|n|nFor this to work, the game audio output device will be set to system default.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -212, 	false,	"If checked, you will be able to mute a selection of game sounds.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteMountSounds"			, 	"Mute mount sounds"				,	146, -232, 	false,	"If checked, you will be able to mute a selection of mount sounds.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteCustomSounds"			, 	"Mute custom sounds"			,	146, -252, 	false,	"If checked, you will be able to mute your own choice of sounds.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CharAddonList"				, 	"Show character addons"			, 	340, -92, 	true,	"If checked, the addon list (accessible from the game menu) will show character based addons by default.")

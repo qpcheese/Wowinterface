@@ -374,8 +374,8 @@ function MoveAny:InitMALock()
 		end
 	)
 
-	D4:SetVersion(AddonName, 135994, "1.6.156")
-	MALock.TitleText:SetText(format("MoveAny |T135994:16:16:0:0|t v|cff3FC7EB%s", "1.6.156"))
+	D4:SetVersion(AddonName, 135994, "1.6.166")
+	MALock.TitleText:SetText(format("MoveAny |T135994:16:16:0:0|t v|cff3FC7EB%s", "1.6.166"))
 	MALock.CloseButton:SetScript(
 		"OnClick",
 		function()
@@ -609,7 +609,7 @@ function MoveAny:InitMALock()
 			AddCheckBox(4, "RUNEFRAME", false)
 		end
 
-		if D4:GetWoWBuild() == "WRATH" and class == "SHAMAN" then
+		if (D4:GetWoWBuild() == "WRATH" or D4:GetWoWBuild() == "CATA") and class == "SHAMAN" then
 			AddCheckBox(4, "TOTEMBAR", false)
 		end
 
@@ -636,6 +636,10 @@ function MoveAny:InitMALock()
 
 		if (MoveAny:IsValidFrame(RogueComboPointBarFrame) or MoveAny:IsValidFrame(DruidComboPointBarFrame)) and (class == "ROGUE" or class == "DRUID") then
 			AddCheckBox(4, "COMBOPOINTPLAYERFRAME", false)
+		end
+
+		if class == "DRUID" and MoveAny:IsValidFrame(EclipseBarFrame) then
+			AddCheckBox(4, "EclipseBarFrame", false)
 		end
 
 		if MoveAny:IsValidFrame(EssencePlayerFrame) and class == "EVOKER" then
@@ -997,7 +1001,7 @@ function MoveAny:ShowProfiles()
 			end
 		)
 
-		MAProfiles.TitleText:SetText(format("MoveAny |T135994:16:16:0:0|t v|cff3FC7EB%s", "1.6.156"))
+		MAProfiles.TitleText:SetText(format("MoveAny |T135994:16:16:0:0|t v|cff3FC7EB%s", "1.6.166"))
 		MAProfiles.CloseButton:SetScript(
 			"OnClick",
 			function()
@@ -2014,6 +2018,15 @@ function MoveAny:LoadAddon()
 				}
 			)
 		end
+	end
+
+	if EclipseBarFrame and MoveAny:IsEnabled("EclipseBarFrame", false) then
+		MoveAny:RegisterWidget(
+			{
+				["name"] = "EclipseBarFrame",
+				["lstr"] = "LID_EclipseBarFrame"
+			}
+		)
 	end
 
 	if EssencePlayerFrame and MoveAny:IsEnabled("ESSENCEPLAYERFRAME", false) and class == "EVOKER" then
@@ -4033,7 +4046,7 @@ function MoveAny:LoadAddon()
 		end
 	end
 
-	if D4:GetWoWBuild() == "WRATH" and class == "SHAMAN" then
+	if (D4:GetWoWBuild() == "WRATH" or D4:GetWoWBuild() == "CATA") and class == "SHAMAN" then
 		if MultiCastActionBarFrame then
 			MultiCastActionBarFrame:SetParent(MoveAny:GetMainPanel())
 		end

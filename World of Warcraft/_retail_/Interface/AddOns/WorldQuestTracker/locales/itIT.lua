@@ -498,6 +498,8 @@ L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "Altri Personaggi"
 L["S_TEXT_SIZE"] = "Text Size"
 --[[Translation missing --]]
 L["S_TORGAST"] = "Torgasth"
+--[[Translation missing --]]
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "indica la quantità da ricevere"
 L["S_TUTORIAL_CLICKTOTRACK"] = "Clicca per tracciare una missione."
 --[[Translation missing --]]

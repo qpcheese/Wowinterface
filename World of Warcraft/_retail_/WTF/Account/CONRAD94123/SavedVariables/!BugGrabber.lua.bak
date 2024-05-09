@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2604,
+	["session"] = 2612,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -4162,8 +4162,8 @@ BugGrabberDB = {
 			["time"] = "2024/01/17 08:06:08",
 			["locals"] = "AddonName = \"iPMythicTimer\"\nAddon = <table> {\n PROGRESS_FORMAT_PERCENT = 1\n DECOR_FONT = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Regular.ttf\"\n TIMER_DIRECTION_DESC = 1\n cleanDungeon = <table> {\n }\n TIMER_DIRECTION_ASC = 2\n PROGRESS_DIRECTION_ASC = 1\n THEME_ACTIONS_IMPORT = 3\n opened = <table> {\n }\n DECOR_FONTSIZE_DELTA = 0\n PROGRESS_FORMAT_FORCES = 2\n optionList = <table> {\n }\n defaultOption = <table> {\n }\n THEME_ACTIONS_COPY = 2\n frames = <table> {\n }\n FONT_ROBOTO = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Regular.ttf\"\n ACOUSTIC_STRING_X3 = \"Interface\\AddOns\\iPMythicTimer\\media\\acoustic_string_x3.mp3\"\n AFFIX_TEEMING = 5\n backdrop = <table> {\n }\n THEME_ACTIONS_EXPORT = 4\n FONT_ROBOTO_LIGHT = \"Interface\\AddOns\\iPMythicTimer\\media\\RobotoCondensed-Light.ttf\"\n affixesCount = 4\n version = 1349\n PROGRESS_DIRECTION_DESC = 2\n localization = <table> {\n }\n season = <table> {\n }\n THEME_ACTIONS_NEW = 1\n DUNGEON_ARTWORK = \"dungeon\"\n}\nbackdrop = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8X8\"\n tileSize = 8\n edgeFile = \"Interface\\Buttons\\WHITE8X8\"\n edgeSize = 1\n tile = false\n}\ncurrentButton = nil\nColorChange = <function> defined @Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:14\nShowColorPicker = <function> defined @Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua:27\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'ColorPickerCancelButton' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface/AddOns/iPMythicTimer/libs/iPElems/ColorButton.lua\"]:39: in main chunk",
-			["session"] = 2604,
-			["counter"] = 71,
+			["session"] = 2605,
+			["counter"] = 72,
 		}, -- [542]
 	},
 }

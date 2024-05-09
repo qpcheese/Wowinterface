@@ -280,17 +280,17 @@
     </PushedTexture>
     
     <Layers>
-      <Layer level="OVERLAY" textureSubLevel="3">
+      <Layer level="OVERLAY" textureSubLevel="7">
         <Texture parentKey="ArkHighlight" name="$parentArkHighlight" setAllPoints="true" hidden="true" >
           <Color r="0" g="0" b="0" a="0.8" />
         </Texture>
       </Layer>
-      <Layer level="OVERLAY" textureSubLevel="2">
+      <Layer level="OVERLAY" textureSubLevel="6">
         <Texture parentKey="ArkTint" name="$parentArkTint" setAllPoints="true" hidden="true" >
           <Color r="1" g="0" b="0" a="0.5"/>
         </Texture>
       </Layer>
-      <Layer level="OVERLAY" textureSubLevel="7">
+      <Layer level="OVERLAY" textureSubLevel="4">
         <Texture parentKey="ArkIconProfessionRank" name="$parentArkIconProfessionRank" hidden="true" >
           <Size x="12" y="12" />
           <Anchors>
@@ -302,20 +302,8 @@
             <Anchor point="TOPLEFT" x="0" y="0" />
           </Anchors>
         </FontString>
-        <Texture parentKey="ArkIconTransmog" name="$parentArkIconTransmog" hidden="true" >
-          <Size x="12" y="12" />
-          <Anchors>
-            <Anchor point="BOTTOMLEFT" x="0" y="0" />
-          </Anchors>
-        </Texture>
-        <Texture parentKey="ArkIconCorrupted" name="$parentArkIconCorrupted" hidden="true" >
-          <Size x="12" y="12" />
-          <Anchors>
-            <Anchor point="BOTTOMLEFT" x="0" y="0" />
-          </Anchors>
-        </Texture>
       </Layer>
-      <Layer level="OVERLAY" textureSubLevel="6">
+      <Layer level="OVERLAY" textureSubLevel="3">
         <FontString parentKey="ArkLevel" name="$parentLevel" inherits="NumberFontNormalYellow" justifyH="LEFT" hidden="true" >
           <Anchors>
             <Anchor point="TOPLEFT" x="0" y="0" />
@@ -334,6 +322,18 @@
           <Size x="8" y="24" />
           <Anchors>
             <Anchor point="BOTTOMLEFT" />
+          </Anchors>
+        </Texture>
+        <Texture parentKey="ArkIconTransmog" name="$parentArkIconTransmog" hidden="true" >
+          <Size x="12" y="12" />
+          <Anchors>
+            <Anchor point="BOTTOMLEFT" x="0" y="0" />
+          </Anchors>
+        </Texture>
+        <Texture parentKey="ArkIconCorrupted" name="$parentArkIconCorrupted" hidden="true" >
+          <Size x="12" y="12" />
+          <Anchors>
+            <Anchor point="BOTTOMLEFT" x="0" y="0" />
           </Anchors>
         </Texture>
       </Layer>
@@ -382,7 +382,7 @@
     
   </ItemButton>
   
-  <Button virtual="true" name="ARKINV_TemplateButtonItem2" inherits="ContainerFrameItemButtonTemplate" hidden="true">
+  <Button virtual="true" name="ARKINV_TemplateButtonItem2" inherits="ContainerFrameItemButtonTemplate" hidden="false">
     
     <NormalTexture name="$parentNormalTexture" file="Interface\Buttons\UI-PassiveHighlight" >
       <Anchors>
@@ -400,6 +400,16 @@
     
     <Layers>
       <Layer level="OVERLAY" textureSubLevel="7">
+        <Texture parentKey="ArkHighlight" name="$parentArkHighlight" setAllPoints="true" hidden="true" >
+          <Color r="0" g="0" b="0" a="0.8" />
+        </Texture>
+      </Layer>
+      <Layer level="OVERLAY" textureSubLevel="6">
+        <Texture parentKey="ArkTint" name="$parentArkTint" setAllPoints="true" hidden="true" >
+          <Color r="1" g="0" b="0" a="0.5"/>
+        </Texture>
+      </Layer>
+      <Layer level="OVERLAY" textureSubLevel="4">
         <Texture parentKey="ArkIconProfessionRank" name="$parentArkIconProfessionRank" hidden="true" >
           <Size x="12" y="12" />
           <Anchors>
@@ -411,29 +421,20 @@
             <Anchor point="TOPLEFT" x="0" y="0" />
           </Anchors>
         </FontString>
-        <Texture parentKey="ArkIconCorrupted" name="$parentArkIconCorrupted" hidden="true" >
-          <Size x="12" y="12" />
-          <Anchors>
-            <Anchor point="BOTTOMLEFT" x="0" y="0" />
-          </Anchors>
-        </Texture>
       </Layer>
-      <Layer level="OVERLAY" textureSubLevel="6">
+      <Layer level="OVERLAY" textureSubLevel="3">
         <FontString parentKey="ArkLevel" name="$parentLevel" inherits="NumberFontNormalYellow" justifyH="LEFT" hidden="true" >
           <Anchors>
             <Anchor point="TOPLEFT" x="0" y="0" />
           </Anchors>
         </FontString>
       </Layer>
-      <Layer level="OVERLAY" textureSubLevel="3">
-        <Texture parentKey="ArkHighlight" name="$parentArkHighlight" setAllPoints="true" hidden="true" >
-          <Color r="0" g="0" b="0" a="0.8" />
-        </Texture>
-      </Layer>
-      <Layer level="OVERLAY" textureSubLevel="2">
-        <Texture parentKey="ArkTint" name="$parentArkTint" setAllPoints="true" hidden="true" >
-          <Color r="1" g="0" b="0" a="0.5"/>
-        </Texture>
+      <Layer level="ARTWORK" textureSubLevel="2">
+        <FontString parentKey="ArkItemAge" name="$parentArkItemAge" inherits="ARKINV_NewItemFont" hidden="true" >
+          <Anchors>
+            <Anchor point="CENTER" />
+          </Anchors>
+        </FontString>
       </Layer>
       <Layer level="OVERLAY" textureSubLevel="1">
         <Texture parentKey="ArkIconQuestBang" name="$parentArkIconQuestBang" hidden="true" >
@@ -454,19 +455,6 @@
             <Anchor point="BOTTOMLEFT" x="0" y="0" />
           </Anchors>
         </Texture>
-        <Texture parentKey="ArkIconProfessionRank" name="$parentArkIconProfessionRank" hidden="true" >
-          <Size x="12" y="12" />
-          <Anchors>
-            <Anchor point="TOPLEFT" />
-          </Anchors>
-        </Texture>
-      </Layer>
-      <Layer level="ARTWORK" textureSubLevel="2">
-        <FontString parentKey="ArkItemAge" name="$parentArkItemAge" inherits="ARKINV_NewItemFont" hidden="true" >
-          <Anchors>
-            <Anchor point="CENTER" />
-          </Anchors>
-        </FontString>
       </Layer>
     </Layers>
     
@@ -512,7 +500,6 @@
     </Scripts>
     
   </Button>
-  
   
   <ItemButton virtual="true" name="ARKINV_TemplateButtonVaultItem1" inherits="ARKINV_TemplateButtonItem1" hidden="true">
     
@@ -562,7 +549,6 @@
     
   </Button>
   
-  
   <ItemButton virtual="true" name="ARKINV_TemplateButtonMailboxItem1" inherits="ARKINV_TemplateButtonItem1" hidden="true">
     
     <Scripts>
@@ -610,7 +596,6 @@
     </Scripts>
     
   </Button>
-  
   
   <ItemButton virtual="true" name="ARKINV_TemplateButtonMountItem1" inherits="ARKINV_TemplateButtonItem1" hidden="true">
     
@@ -817,7 +802,7 @@
   </Button>
   
   
-  <ItemButton virtual="true" name="ARKINV_TemplateButtonItemTainted1" inherits="ContainerFrameItemButtonTemplate" hidden="true">
+  <ItemButton virtual="true" name="ARKINV_TemplateButtonItem1Tainted" inherits="ContainerFrameItemButtonTemplate" hidden="true">
     
     <NormalTexture name="$parentNormalTexture" file="Interface\Buttons\UI-PassiveHighlight" >
       <Anchors>
@@ -848,11 +833,11 @@
     <Scripts>
       
       <OnLoad>
-        ArkInventory.Frame_Item_OnLoad_Tainted( self )
+        ArkInventory.Frame_Item_OnLoad( self )
       </OnLoad>
       
       <OnEnter>
-        ArkInventory.Frame_Item_OnEnter_Tainted( self )
+        ArkInventory.Frame_Item_OnEnter( self )
       </OnEnter>
       
       <OnClick>
@@ -875,7 +860,7 @@
     
   </ItemButton>
   
-  <Button virtual="true" name="ARKINV_TemplateButtonItemTainted2" inherits="ContainerFrameItemButtonTemplate" hidden="true">
+  <Button virtual="true" name="ARKINV_TemplateButtonItem2Tainted" inherits="ContainerFrameItemButtonTemplate" hidden="true">
     
     <NormalTexture name="$parentNormalTexture" file="Interface\Buttons\UI-PassiveHighlight" >
       <Anchors>
@@ -906,11 +891,11 @@
     <Scripts>
       
       <OnLoad>
-        ArkInventory.Frame_Item_OnLoad_Tainted( self )
+        ArkInventory.Frame_Item_OnLoad( self )
       </OnLoad>
       
       <OnEnter>
-        ArkInventory.Frame_Item_OnEnter_Tainted( self )
+        ArkInventory.Frame_Item_OnEnter( self )
       </OnEnter>
       
       <OnClick>
@@ -933,6 +918,21 @@
     
   </Button>
   
+  <ItemButton virtual="true" name="ARKINV_TemplateButtonItem1Popup" inherits="ARKINV_TemplateButtonItem1">
+    <Scripts>
+      <OnLoad>
+        ArkInventory.Frame_Item_OnLoad( self, ArkInventory.Const.ItemFrameType.Popup )
+      </OnLoad>
+    </Scripts>
+  </ItemButton>
+  
+  <Button virtual="true" name="ARKINV_TemplateButtonItem2Popup" inherits="ARKINV_TemplateButtonItem2" hidden="true">
+    <Scripts>
+      <OnLoad>
+        ArkInventory.Frame_Item_OnLoad( self, ArkInventory.Const.ItemFrameType.Popup )
+      </OnLoad>
+    </Scripts>
+  </Button>
   
   <ItemButton virtual="true" name="ARKINV_TemplateButtonBarEdit1" inherits="ARKINV_TemplateButtonItem1" hidden="true">
     
@@ -1325,6 +1325,29 @@
   </Button>
   
   
+  <Frame virtual="true" name="ARKINV_TemplateFrameBag" >
+    
+    <Size x="1" y="1" />
+    
+    <Scripts>
+      <OnLoad>
+        ArkInventory.Frame_Bag_OnLoad( self )
+      </OnLoad>
+    </Scripts>
+    
+  </Frame>
+  
+  <Frame virtual="true" name="ARKINV_TemplateFrameBagPopup" inherits="ARKINV_TemplateFrameBag" >
+    
+    <Scripts>
+      <OnLoad>
+        ArkInventory.Frame_Bag_OnLoad( self, ArkInventory.Const.ItemFrameType.Popup )
+      </OnLoad>
+    </Scripts>
+    
+  </Frame>
+  
+  
   <Frame virtual="true" name="ARKINV_TemplateFrameBar" inherits="ARKINV_TemplateFrameStandard">
     
     <Size x="1" y="1" />
@@ -1377,17 +1400,6 @@
     
   </Frame>
   
-  <Frame virtual="true" name="ARKINV_TemplateFrameBag" hidden="false" >  <!-- 100000 mouseEnabled="true" -->
-    
-    <Size x="1" y="1" />
-    
-    <Scripts>
-      <OnLoad>
-        ArkInventory.Frame_Bag_OnLoad( self )
-      </OnLoad>
-    </Scripts>
-    
-  </Frame>
   
   <Frame virtual="true" name="ARKINV_TemplateFrameMainTitle" inherits="ARKINV_TemplateFrameStandard">
     
@@ -2499,6 +2511,40 @@
   <Frame name="ARKINV_Frame16" inherits="ARKINV_TemplateFrameMain" id="16" /> <!-- reputation -->
   
   <Frame name="ARKINV_Frame17" inherits="ARKINV_TemplateFrameMain" id="17" /> <!-- mount equipment -->
+  
+  
+  <Frame name="ARKINV_PopupBarFrame" inherits="ARKINV_TemplateFrameBar" parent="UIParent" toplevel="true" movable="false" clampedToScreen="true" hidden="true" > <!-- compressed item bar -->
+    
+    <Scripts>
+      
+      <OnLoad>
+        ArkInventory.Frame_Bar_Popup_OnLoad( self )
+      </OnLoad>
+      
+      <OnEnter>
+        ArkInventory.Frame_Bar_Popup_OnEnter( self )
+      </OnEnter>
+      
+      <OnLeave>
+        ArkInventory.Frame_Bar_Popup_OnLeave( self )
+      </OnLeave>
+      
+      <OnShow>
+        ArkInventory.Frame_Bar_Popup_OnShow( self )
+      </OnShow>
+      
+      <OnHide>
+        ArkInventory.Frame_Bar_Popup_OnHide( self )
+      </OnHide>
+      
+      <OnUpdate>
+        ArkInventory.Frame_Bar_Popup_OnUpdate( self, elapsed )
+      </OnUpdate>
+      
+    </Scripts>
+    
+  </Frame>
+  
   
 <!-- END OF ADD ON FRAME -->
   

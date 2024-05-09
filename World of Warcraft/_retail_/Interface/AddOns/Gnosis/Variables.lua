@@ -11,6 +11,7 @@ local wowmainline = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE);
 local wowclassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC);
 local wowbcc = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC);
 local wowwc = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC);
+local wowcc = (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC);
 
 if (wowmainline) then
 	-- global Gnosis event tables
@@ -41,6 +42,34 @@ if (wowmainline) then
 		"PLAYER_TARGET_CHANGED",
 		"DISPLAY_SIZE_CHANGED",
 		"PLAYER_TALENT_UPDATE",
+	};
+	elseif (wowcc) then --cata has some additional events
+	-- global Gnosis event tables
+	Gnosis.tCastbarEvents = {
+		"UNIT_SPELLCAST_CHANNEL_START",
+		"UNIT_SPELLCAST_CHANNEL_STOP",
+		"UNIT_SPELLCAST_CHANNEL_UPDATE",
+		"UNIT_SPELLCAST_START",
+		"UNIT_SPELLCAST_STOP",
+		"UNIT_SPELLCAST_DELAYED",
+		"UNIT_SPELLCAST_INTERRUPTIBLE",
+		"UNIT_SPELLCAST_NOT_INTERRUPTIBLE",
+		"UNIT_SPELLCAST_INTERRUPTED",
+		"UNIT_SPELLCAST_FAILED",
+		"UNIT_SPELLCAST_FAILED_QUIET",
+		"UNIT_SPELLCAST_SUCCEEDED",
+	};
+
+	Gnosis.tMiscEvents = {
+		"PLAYER_REGEN_DISABLED",
+		"PLAYER_REGEN_ENABLED",
+		"COMBAT_LOG_EVENT_UNFILTERED",
+		"UNIT_SPELLCAST_SENT",
+		"PLAYER_ENTERING_WORLD",
+		"PLAYER_FOCUS_CHANGED",
+		"PLAYER_TARGET_CHANGED",
+		"DISPLAY_SIZE_CHANGED",
+		--"PLAYER_TALENT_UPDATE",
 	};
 else	-- wow classic (wowclassic or wowbcc or wowwc)
 	-- global Gnosis event tables
@@ -194,9 +223,9 @@ Gnosis.tSoundChannels = {
 function Gnosis:StartupVariables()
 	local fCurTime = GetTime() * 1000;
 
-	self.ver = 5.10;
+	self.ver = 5.11;
 	self.optver = 4.62;
-	self.build = "v5.10";
+	self.build = "v5.11";
 	self.addonname = "Gnosis";
 	local strVer = string_format("v%.2f", self.ver);
 	if(self.build == strVer) then

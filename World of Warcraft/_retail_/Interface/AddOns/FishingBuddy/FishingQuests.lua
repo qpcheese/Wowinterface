@@ -158,7 +158,7 @@ QuestEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, mapId, subzone, tex
 						end
 					end
 				elseif QuestFish[id].limit then
-					limit = PagQuestFishleFish[id].limit
+					limit = QuestFish[id].limit
 				end
 				if limit > 0 then
 					local fishcount = GetItemCount(id);

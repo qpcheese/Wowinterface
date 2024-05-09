@@ -884,6 +884,9 @@ ArkInventory.Const = { -- constants
 			MinHeight = 100,
 			MinWidth = 400,
 		},
+		BarPopup = {
+			Name = "ARKINV_PopupBarFrame",
+		},
 	},
 	
 	Event = {
@@ -1035,6 +1038,14 @@ ArkInventory.Const = { -- constants
 			["INVTYPE_BAG"] = 0,
 			["INVTYPE_QUIVER"] = 0,
 		},
+		
+		Stack = {
+			Mode = {
+				Limit = 1,
+				Compress = 2,
+			},
+		},
+		
 		
 	},
 	
@@ -1441,6 +1452,13 @@ ArkInventory.Const = { -- constants
 		Min = 0.01,
 		Max = 60,
 	},
+	
+	ItemFrameType = {
+		Normal = "",
+		Tainted = "Tainted",
+		Popup = "Popup",
+	},
+	
 }
 
 

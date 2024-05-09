@@ -29,6 +29,8 @@ E.spell_marked = {
 
 
 	[360806] = 410962,
+	[34433] = 314867,
+	[123040] = 314867,
 }
 
 function E:ProcessSpellDB()
@@ -83,7 +85,7 @@ function E:ProcessSpellDB()
 	end
 end
 
-if E.preCata then
+if E.preMoP then
 	E.spell_cxmod_azerite = E.BLANK
 	E.spellcast_cdr_azerite = E.BLANK
 	E.spell_damage_cdr_azerite = E.BLANK

@@ -1,8 +1,8 @@
 
 local appName, app = ...;
 
-local rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall
-	= rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall
+local rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall, tinsert
+	= rawget, ipairs, pairs, rawset, setmetatable, print, type, pcall, tinsert
 
 -- Declare Custom Event Handlers
 local EventHandlers = setmetatable({
@@ -16,13 +16,17 @@ local EventHandlers = setmetatable({
 		return item;
 	end,
 })
-app.AddEventHandler = function(eventName, handler)
+app.AddEventHandler = function(eventName, handler, forceStart)
 	if type(handler) ~= "function" then
 		app.print("AddEventHandler was provided a non-function",handler)
 		return
 	end
 	local handlers = EventHandlers[eventName]
-	handlers[#handlers + 1] = handler;
+	if forceStart then
+		tinsert(handlers, 1, handler)
+	else
+		handlers[#handlers + 1] = handler;
+	end
 	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
 end
 app.RemoveEventHandler = function(handler)
@@ -69,39 +73,81 @@ app.AddEventHandler("OnReady", function()
 		-- safely attempt to register the event incase it is not available in a game version
 		pcall(app.RegisterFuncEvent, app, event, func);
 	end
+	OnReadyEventRegistrations = nil
 end)
 
+-- Represents Events whose individual handlers should be processed over multiple frames to reduce potential stutter
+local RunnerEvents = {
+	OnRefreshCollections = true,
+	OnRecalculate = true,
+	OnUpdateWindows = true,
+	OnRefreshWindows = true,
+}
+-- Represents Events which should always fire upon completion of a prior Event. These cannot be passed arguments currently
+local EventSequence = {
+	OnLoad = {
+		"OnStartup"
+	},
+	OnStartup = {
+		"OnStartupDone"
+	},
+	OnRefreshCollections = {
+		"OnRefreshCollectionsDone",
+	},
+	OnRecalculate = {
+		"OnSourceCollection",
+		"OnUniqueSourceCollection",
+		"OnRecalculateDone",
+	},
+	-- OnRecalculate_NewSettings = {
+	-- },
+	-- OnRecalculateDone = {
+	-- 	"OnRefreshComplete",
+	-- },
+}
 
--- need lib/Runner.lua to be used in Classic so we can consolidate stuff
-if app.IsRetail then
-	local RunnerEvents = {
-		OnRefreshCollections = true
-	}
-	local Runner = app.CreateRunner("events")
-	app.HandleEvent = function(eventName, ...)
-		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
-		-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
-		-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
-		if RunnerEvents[eventName] then
-			Runner.SetPerFrame(3)
-			for i,handler in ipairs(EventHandlers[eventName]) do
-				Runner.Run(handler, ...)
-			end
-			-- Runner.Run(app.PrintDebug,"HandleEvent:Done",eventName)
-			Runner.Run(app.HandleEvent, eventName.."Done")
-		else
-			for i,handler in ipairs(EventHandlers[eventName]) do
-				handler(...);
-			end
-			-- app.PrintDebugPrior("HandleEvent:Done")
-		end
+local Runner = app.CreateRunner("events")
+-- Runner.SetPerFrameDefault(5)
+local Callback = app.CallbackHandlers.Callback
+local function EventStart(eventName,...)
+	app.PrintDebug("HandleEvent:Start",app.Modules.Color.Colorize(eventName,app.Colors.Alliance),...)
+end
+local function EventDone(eventName,...)
+	app.PrintDebug("HandleEvent:Done",app.Modules.Color.Colorize(eventName,app.Colors.Horde),...)
+end
+local function HandleSequenceEvents(sequenceEvents)
+	for _,event in ipairs(sequenceEvents) do
+		app.HandleEvent(event)
 	end
-else
-	app.HandleEvent = function(eventName, ...)
-		-- app.PrintDebug("HandleEvent",eventName,...)
+end
+
+app.HandleEvent = function(eventName, ...)
+	local sequenceEvents = EventSequence[eventName]
+	-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
+	-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
+	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
+	-- the Event Runner so that they execute in the expected sequence
+	if RunnerEvents[eventName] or Runner.IsRunning() then
+		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
+		-- Runner.Run(EventStart, eventName, ...)
+		for i,handler in ipairs(EventHandlers[eventName]) do
+			Runner.Run(handler, ...)
+		end
+		-- Runner.Run(EventDone, eventName)
+		if sequenceEvents then
+			-- run the sequence events immediately when in a Runner
+			HandleSequenceEvents(sequenceEvents)
+		end
+	else
+		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Renown),...)
+		-- EventStart(eventName, ...)
 		for i,handler in ipairs(EventHandlers[eventName]) do
 			handler(...);
 		end
-		-- app.PrintDebugPrior("HandleEvent")
+		-- EventDone(eventName)
+		if sequenceEvents then
+			-- run the sequence events on the next frame when not in a Runner
+			Callback(HandleSequenceEvents, sequenceEvents)
+		end
 	end
 end

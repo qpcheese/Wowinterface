@@ -54,7 +54,8 @@ local UnitCanAttack, UnitExists, UnitIsVisible, UnitGUID, UnitClassification = U
 local UnitName, UnitPower, UnitPowerMax, UnitPowerType, UnitHealth = UnitName, UnitPower, UnitPowerMax, UnitPowerType, UnitHealth
 local UnitLevel, UnitCreatureType, UnitPercentHealthFromGUID, UnitTokenFromGUID = UnitLevel, UnitCreatureType, UnitPercentHealthFromGUID, UnitTokenFromGUID
 local GetInstanceInfo, IsAltKeyDown = GetInstanceInfo, IsAltKeyDown
-local GetZoneText, GetRealZoneText, GetSubZoneText, GetSpellInfo = GetZoneText, GetRealZoneText, GetSubZoneText, GetSpellInfo
+local GetZoneText, GetRealZoneText, GetSubZoneText = GetZoneText, GetRealZoneText, GetSubZoneText
+local GetSpellName = C_Spell and C_Spell.GetSpellName or GetSpellInfo
 local GetBestMapForUnit = C_Map.GetBestMapForUnit
 local C_GossipInfo_GetOptions = C_GossipInfo.GetOptions
 
@@ -379,7 +380,7 @@ do
 		local text = "-- SPELL_AURA_[APPLIED/REMOVED/REFRESH]\n"
 		for i = 1, #aurasSorted do
 			local id = aurasSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, auraTbl[id])
 		end
 
@@ -387,7 +388,7 @@ do
 		text = text.. "\n-- SPELL_CAST_[START/SUCCESS]\n"
 		for i = 1, #castsSorted do
 			local id = castsSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, castTbl[id])
 		end
 
@@ -395,7 +396,7 @@ do
 		text = text.. "\n-- SPELL_SUMMON\n"
 		for i = 1, #summonSorted do
 			local id = summonSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, summonTbl[id])
 		end
 
@@ -403,7 +404,7 @@ do
 		text = text.. "\n-- SPELL_EXTRA_ATTACKS\n"
 		for i = 1, #extraAttacksSorted do
 			local id = extraAttacksSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, extraAttacksTbl[id])
 		end
 
@@ -411,7 +412,7 @@ do
 		text = text.. "\n-- SPELL_EMPOWER_[START/END/INTERRUPT]\n"
 		for i = 1, #empowerSorted do
 			local id = empowerSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, empowerTbl[id])
 		end
 
@@ -419,7 +420,7 @@ do
 		text = text.. "\n-- SPELL_[HEAL/PERIODIC_HEAL]\n"
 		for i = 1, #healSorted do
 			local id = healSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, healTbl[id])
 		end
 
@@ -427,7 +428,7 @@ do
 		text = text.. "\n-- SPELL_[ENERGIZE/PERIODIC_ENERGIZE]\n"
 		for i = 1, #energizeSorted do
 			local id = energizeSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, energizeTbl[id])
 		end
 
@@ -435,13 +436,13 @@ do
 		text = text.. "\n-- SPELL_[DAMAGE/PERIODIC_DAMAGE/MISSED]\n"
 		for i = 1, #spellDmgSorted do
 			local id = spellDmgSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, id, id, name, spellDmgTbl[id])
 		end
 
 		text = text.. "\n-- PLAYER_CASTS\n"
 		for k, v in next, playerCastList do
-			local name = GetSpellInfo(k)
+			local name = GetSpellName(k)
 			text = format("%s%d || |cFFFFFF00|Hspell:%d|h%s|h|r || %s\n", text, k, k, name, v)
 		end
 
@@ -460,7 +461,7 @@ do
 		frame[1]:Show()
 
 		for k in next, PLAYER_SPELL_BLOCKLIST do
-			if GetSpellInfo(k) then -- Filter out removed spells when a new patch hits
+			if GetSpellName(k) then -- Filter out removed spells when a new patch hits
 				total[k] = true
 			end
 		end
@@ -474,7 +475,7 @@ do
 
 		for i = 1, #totalSorted do
 			local id = totalSorted[i]
-			local name = GetSpellInfo(id)
+			local name = GetSpellName(id)
 			exportText = format("%s\t[%d] = true, -- %s\n", exportText, id, name)
 		end
 		exportText = exportText .."}\n"
@@ -537,11 +538,12 @@ do
 		L["|cffFF0000Recording|r"] = "|cffFF0000記錄中|r"
 		--L["|cFFFFD200Transcriptor|r - Disabled Events"] = "|cFFFFD200Transcriptor|r - Disabled Events"
 	elseif locale == "zhCN" then
+		L["Remember to stop and start Transcriptor between each wipe or boss kill to get the best logs."] = "提醒，最好在每次清理小怪时暂停Transcriptor，在准备击杀首领前启用Transcriptor，以获得最佳记录。"
 		L["You are already logging an encounter."] = "你已经准备记录战斗"
 		L["Beginning Transcript: "] = "开始记录于: "
 		L["You are not logging an encounter."] = "你不处于记录状态"
 		L["Ending Transcript: "] = "结束记录于："
-		L["Logs will probably be saved to WoW\\WTF\\Account\\<name>\\SavedVariables\\Transcriptor.lua once you relog or reload the user interface."] = "记录保存于WoW\\WTF\\Account\\<名字>\\SavedVariables\\Transcriptor.lua中,你可以上传于Cwowaddon.com论坛,提供最新的BOSS数据."
+		L["Logs will probably be saved to WoW\\WTF\\Account\\<name>\\SavedVariables\\Transcriptor.lua once you relog or reload the user interface."] = "记录保存于WoW\\WTF\\Account\\<名字>\\SavedVariables\\Transcriptor.lua中,你可以上传到github.com/BigWigsMods和Discord的地址,提供最新的BOSS数据。"
 		L["You are not logging an encounter."] = "你没有记录此次战斗"
 		L["Added Note: "] = "添加书签于: "
 		L["All transcripts cleared."] = "所有记录已清除"
@@ -1038,7 +1040,7 @@ do
 			local maxPower = UnitPowerMax(unit)
 			local hp = maxHP == 0 and maxHP or (UnitHealth(unit) / maxHP * 100)
 			local power = maxPower == 0 and maxPower or (UnitPower(unit) / maxPower * 100)
-			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellInfo(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
+			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellName(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
 		end
 	end
 	sh.UNIT_SPELLCAST_CHANNEL_STOP = sh.UNIT_SPELLCAST_STOP
@@ -1056,7 +1058,7 @@ do
 			local maxPower = UnitPowerMax(unit)
 			local hp = maxHP == 0 and maxHP or (UnitHealth(unit) / maxHP * 100)
 			local power = maxPower == 0 and maxPower or (UnitPower(unit) / maxPower * 100)
-			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellInfo(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
+			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellName(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
 		end
 	end
 
@@ -1090,14 +1092,14 @@ do
 			local maxPower = UnitPowerMax(unit)
 			local hp = maxHP == 0 and maxHP or (UnitHealth(unit) / maxHP * 100)
 			local power = maxPower == 0 and maxPower or (UnitPower(unit) / maxPower * 100)
-			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellInfo(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
+			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellName(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
 		elseif groupList[unit] and not PLAYER_SPELL_BLOCKLIST[spellId] then
 			if not playerSpellCollector[spellId] then
-				playerSpellCollector[spellId] = strjoin("#", tostringall(spellId, GetSpellInfo(spellId), unit, UnitName(unit)))
+				playerSpellCollector[spellId] = strjoin("#", tostringall(spellId, GetSpellName(spellId), unit, UnitName(unit)))
 			end
 			if castId ~= prevCast then
 				prevCast = castId
-				return format("PLAYER_SPELL{%s} -%s- [[%s]]", UnitName(unit), GetSpellInfo(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
+				return format("PLAYER_SPELL{%s} -%s- [[%s]]", UnitName(unit), GetSpellName(spellId), strjoin(":", tostringall(unit, castId, spellId, ...)))
 			end
 		end
 	end
@@ -1110,7 +1112,7 @@ do
 			local maxPower = UnitPowerMax(unit)
 			local hp = maxHP == 0 and maxHP or (UnitHealth(unit) / maxHP * 100)
 			local power = maxPower == 0 and maxPower or (UnitPower(unit) / maxPower * 100)
-			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- %ss [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellInfo(spellId), time, strjoin(":", tostringall(unit, castId, spellId, ...)))
+			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- %ss [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellName(spellId), time, strjoin(":", tostringall(unit, castId, spellId, ...)))
 		end
 	end
 	function sh.UNIT_SPELLCAST_CHANNEL_START(unit, castId, spellId, ...)
@@ -1122,7 +1124,7 @@ do
 			local maxPower = UnitPowerMax(unit)
 			local hp = maxHP == 0 and maxHP or (UnitHealth(unit) / maxHP * 100)
 			local power = maxPower == 0 and maxPower or (UnitPower(unit) / maxPower * 100)
-			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- %ss [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellInfo(spellId), time, strjoin(":", tostringall(unit, castId, spellId, ...)))
+			return format("%s(%.1f%%-%.1f%%){Target:%s} -%s- %ss [[%s]]", UnitName(unit), hp, power, UnitName(unit.."target"), GetSpellName(spellId), time, strjoin(":", tostringall(unit, castId, spellId, ...)))
 		end
 	end
 
@@ -1761,7 +1763,8 @@ do
 
 			hiddenAuraEngageList = {}
 			do
-				local UnitAura, UnitPosition = UnitAura, UnitPosition
+				local UnitAura = C_UnitAuras and C_UnitAuras.GetAuraDataByIndex or UnitAura
+				local UnitPosition = UnitPosition
 				local _, _, _, myInstance = UnitPosition("player")
 				for unit in Transcriptor:IterateGroup() do
 					local _, _, _, tarInstanceId = UnitPosition(unit)
@@ -1909,7 +1912,7 @@ function Transcriptor:StopLog(silent)
 					for npcPartialGUID, list in next, tbl do
 						local npcId = strsplit("-", npcPartialGUID)
 						if not TIMERS_BLOCKLIST[spellId] or not TIMERS_BLOCKLIST[spellId][tonumber(npcId)] then
-							local n = format("%s-%d-npc:%s", GetSpellInfo(spellId), spellId, npcPartialGUID)
+							local n = format("%s-%d-npc:%s", GetSpellName(spellId), spellId, npcPartialGUID)
 							local str
 							for i = 2, #list do
 								if not str then
@@ -1982,7 +1985,7 @@ function Transcriptor:StopLog(silent)
 					for npcPartialGUID, list in next, tbl do
 						local npcId = strsplit("-", npcPartialGUID)
 						if not TIMERS_BLOCKLIST[spellId] or not TIMERS_BLOCKLIST[spellId][tonumber(npcId)] then
-							local n = format("%s-%d-npc:%s", GetSpellInfo(spellId), spellId, npcPartialGUID)
+							local n = format("%s-%d-npc:%s", GetSpellName(spellId), spellId, npcPartialGUID)
 							local str
 							for i = 2, #list do
 								if not str then
@@ -2055,7 +2058,7 @@ function Transcriptor:StopLog(silent)
 					for npcPartialGUID, list in next, tbl do
 						local npcId = strsplit("-", npcPartialGUID)
 						if not TIMERS_BLOCKLIST[spellId] or not TIMERS_BLOCKLIST[spellId][tonumber(npcId)] then
-							local n = format("%s-%d-npc:%s", GetSpellInfo(spellId), spellId, npcPartialGUID)
+							local n = format("%s-%d-npc:%s", GetSpellName(spellId), spellId, npcPartialGUID)
 							local str
 							local zeroCounter = 1
 							for i = 2, #list do
@@ -2148,7 +2151,7 @@ function Transcriptor:StopLog(silent)
 						if not compareSuccess or not compareSuccess[spellId] or not compareSuccess[spellId][npcPartialGUID] then
 							local npcId = strsplit("-", npcPartialGUID)
 							if not TIMERS_BLOCKLIST[spellId] or not TIMERS_BLOCKLIST[spellId][tonumber(npcId)] then
-								local n = format("%s-%d-npc:%s", GetSpellInfo(spellId), spellId, npcPartialGUID)
+								local n = format("%s-%d-npc:%s", GetSpellName(spellId), spellId, npcPartialGUID)
 								local str
 								for i = 2, #list do
 									if not str then
@@ -2220,7 +2223,7 @@ function Transcriptor:StopLog(silent)
 				currentLog.TIMERS.EMOTES = {}
 				for spellId,tbl in next, compareEmotes do
 					for npcName, list in next, tbl do
-						local n = format("%s-%d-npc:%s", GetSpellInfo(spellId) or "?", spellId, npcName)
+						local n = format("%s-%d-npc:%s", GetSpellName(spellId) or "?", spellId, npcName)
 						local str
 						for i = 2, #list do
 							if not str then
@@ -2291,7 +2294,7 @@ function Transcriptor:StopLog(silent)
 			if not currentLog.TIMERS then currentLog.TIMERS = {} end
 			currentLog.TIMERS.PLAYER_AURAS = {}
 			for spellId,tbl in next, collectPlayerAuras do
-				local n = format("%d-%s", spellId, (GetSpellInfo(spellId)))
+				local n = format("%d-%s", spellId, (GetSpellName(spellId)))
 				currentLog.TIMERS.PLAYER_AURAS[n] = {}
 				for event in next, tbl do
 					currentLog.TIMERS.PLAYER_AURAS[n][#currentLog.TIMERS.PLAYER_AURAS[n]+1] = event

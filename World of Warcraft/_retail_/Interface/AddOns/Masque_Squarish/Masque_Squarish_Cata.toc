@@ -2,7 +2,7 @@
 
 ## Author: StormFX
 ## Title: Masque: Squarish
-## Version: 10.2.6
+## Version: 10.2.7
 
 ## Dependencies: Masque
 ## IconTexture: Interface\AddOns\Masque_Squarish\Textures\Icon

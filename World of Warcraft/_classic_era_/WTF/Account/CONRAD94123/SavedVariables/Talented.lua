@@ -1,8 +1,5 @@
 
 TalentedDB = {
-	["profileKeys"] = {
-		["Qpfromage - Living Flame"] = "Qpfromage - Living Flame",
-	},
 	["global"] = {
 		["templates"] = {
 			["HUNTER"] = {
@@ -14,8 +11,8 @@ TalentedDB = {
 			["MAGE"] = {
 				["arcane p3"] = "aFA53a3fn",
 				["fyre"] = "aAZtv21A3m",
-				["Healer"] = "aDc53a3fa",
 				["Frost?"] = "aaZZ3rC0c0u",
+				["Healer"] = "aDc53a3fa",
 			},
 			["PRIEST"] = {
 			},
@@ -23,11 +20,14 @@ TalentedDB = {
 			},
 			["DRUID"] = {
 			},
-			["PALADIN"] = {
-			},
 			["SHAMAN"] = {
 			},
+			["PALADIN"] = {
+			},
 		},
+	},
+	["profileKeys"] = {
+		["Qpfromage - Living Flame"] = "Qpfromage - Living Flame",
 	},
 	["profiles"] = {
 		["Qpfromage - Living Flame"] = {

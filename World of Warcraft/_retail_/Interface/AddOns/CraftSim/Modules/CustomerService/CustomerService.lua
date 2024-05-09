@@ -8,7 +8,7 @@ local PREVIEW_RECIPE_LIST_RESPONSE_PREFIX = "CraftSimRes1"
 local PREVIEW_REQUEST_RECIPE_UPDATE = "CraftSimReq2"
 local PREVIEW_RECIPE_UPDATE_RESPONSE = "CraftSimRes2"
 
-local print = CraftSim.UTIL:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.CUSTOMER_SERVICE)
+local print = CraftSim.DEBUG:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.CUSTOMER_SERVICE)
 
 local versionWarningShowed = false
 
@@ -26,11 +26,11 @@ function CraftSim.CUSTOMER_SERVICE:Init()
 end
 
 function CraftSim.CUSTOMER_SERVICE:ClearPreviewIDs()
-    CraftSimOptions.customerServiceActivePreviewIDs = {}
+    wipe(CraftSim.DB.OPTIONS:Get("CUSTOMER_SERVICE_ACTIVE_PREVIEW_IDS"))
 end
 
 function CraftSim.CUSTOMER_SERVICE:GeneratePreviewInviteLink()
-    local recipeData = CraftSim.MAIN.currentRecipeData
+    local recipeData = CraftSim.INIT.currentRecipeData
     if not recipeData then
         return
     end
@@ -39,7 +39,7 @@ function CraftSim.CUSTOMER_SERVICE:GeneratePreviewInviteLink()
     local inviteLink = "CraftSimLivePreview:" ..
         GetUnitName("player", true) ..
         ":" .. professionID .. ":" .. recipeData.professionData.professionInfo.parentProfessionName .. ":" .. timeID
-    table.insert(CraftSimOptions.customerServiceActivePreviewIDs, timeID)
+    table.insert(CraftSim.DB.OPTIONS:Get("CUSTOMER_SERVICE_ACTIVE_PREVIEW_IDS"), timeID)
     return inviteLink
 end
 
@@ -84,9 +84,10 @@ function CraftSim.CUSTOMER_SERVICE:SendPreviewRequest(crafter, previewID, profes
     CraftSim.COMM:SendData(PREVIEW_REQUEST_PREFIX, requestData, "WHISPER", crafter)
 end
 
+---@deprecated
 function CraftSim.CUSTOMER_SERVICE.OnPreviewRequest(payload)
     print("OnPreviewRequest: " .. type(payload.previewID), false, true)
-    if not tContains(CraftSimOptions.customerServiceActivePreviewIDs, tonumber(payload.previewID)) then
+    if not tContains(CraftSim.DB.OPTIONS:Get("CUSTOMER_SERVICE_ACTIVE_PREVIEW_IDS"), tonumber(payload.previewID)) then
         print("PreviewID not active: " .. tostring(payload.previewID))
         return
     end
@@ -112,9 +113,8 @@ function CraftSim.CUSTOMER_SERVICE.OnPreviewRequest(payload)
 
     -- get all cached recipe ids of that character for that profession
     local crafterUID = CraftSim.UTIL:GetPlayerCrafterUID()
-    local professions = CraftSimRecipeDataCache.cachedRecipeIDs[crafterUID] or {}
 
-    local professionRecipeIDs = professions(profession)
+    local professionRecipeIDs = CraftSim.DB.CRAFTER:GetCachedRecipeIDs(crafterUID, profession)
 
     -- map to recipeInfo and filter
     local response = {
@@ -178,7 +178,7 @@ function CraftSim.CUSTOMER_SERVICE.OnRecipeListResponse(payload)
 end
 
 function CraftSim.CUSTOMER_SERVICE.SendRecipeUpdateRequest(recipeID, isInit)
-    local previewFrame = CraftSim.GGUI:GetFrame(CraftSim.MAIN.FRAMES, CraftSim.CONST.FRAMES.LIVE_PREVIEW)
+    local previewFrame = CraftSim.GGUI:GetFrame(CraftSim.INIT.FRAMES, CraftSim.CONST.FRAMES.LIVE_PREVIEW)
 
     local optionalReagents = nil
     if not isInit then
@@ -233,7 +233,7 @@ function CraftSim.CUSTOMER_SERVICE.OnRecipeUpdateRequest(payload)
 
     -- TODO: make it its own method/function
     local inspPercent = (recipeData.supportsInspiration and recipeData.professionStats.inspiration:GetPercent()) or nil
-    local hsvChance, withInspiration = CraftSim.CALC:getHSVChance(recipeData)
+    local hsvChance, withInspiration = CraftSim.CALC:GetHSVChance(recipeData)
     hsvChance = hsvChance / 100
     local upgradeChance = 0
     if hsvChance == 0 and recipeData.supportsInspiration then
@@ -260,7 +260,7 @@ function CraftSim.CUSTOMER_SERVICE.OnRecipeUpdateRequest(payload)
         recipeIcon = recipeData.recipeIcon,
         supportsQualities = recipeData.supportsQualities,
         upgradeChance = upgradeChance,
-        reagents = recipeData.reagentData:SerializeReagents(),
+        reagents = recipeData.reagentData:SerializeRequiredReagents(),
         optionalReagents = recipeData.reagentData:SerializeOptionalReagentSlots(),
         finishingReagents = recipeData.reagentData:SerializeFinishingReagentSlots(),
         resultData = recipeData.resultData:Serialize(),
@@ -315,17 +315,17 @@ function CraftSim.CUSTOMER_SERVICE:TransformLink(event, message, sender, ...)
 end
 
 function CraftSim.CUSTOMER_SERVICE:StartLivePreviewUpdating()
-    local previewFrame = CraftSim.GGUI:GetFrame(CraftSim.MAIN.FRAMES, CraftSim.CONST.FRAMES.LIVE_PREVIEW)
+    local previewFrame = CraftSim.GGUI:GetFrame(CraftSim.INIT.FRAMES, CraftSim.CONST.FRAMES.LIVE_PREVIEW)
     previewFrame.content.StartUpdate()
 end
 
 function CraftSim.CUSTOMER_SERVICE:StopLivePreviewUpdating()
-    local previewFrame = CraftSim.GGUI:GetFrame(CraftSim.MAIN.FRAMES, CraftSim.CONST.FRAMES.LIVE_PREVIEW)
+    local previewFrame = CraftSim.GGUI:GetFrame(CraftSim.INIT.FRAMES, CraftSim.CONST.FRAMES.LIVE_PREVIEW)
     previewFrame.content.StopUpdate()
 end
 
 function CraftSim.CUSTOMER_SERVICE:WhisperRecipeDetails(whisperTarget)
-    local recipeData = CraftSim.MAIN.currentRecipeData
+    local recipeData = CraftSim.INIT.currentRecipeData
 
     if not recipeData then
         return
@@ -339,7 +339,7 @@ function CraftSim.CUSTOMER_SERVICE:WhisperRecipeDetails(whisperTarget)
     local requiredReagents = recipeData.reagentData.requiredReagents
 
     -- replace formattext with values
-    local responseText = CraftSimOptions.customerServiceRecipeWhisperFormat
+    local responseText = CraftSim.DB.OPTIONS:Get("CUSTOMER_SERVICE_WHISPER_FORMAT")
 
     local inspStat = (recipeData.supportsInspiration and (professionStats.inspiration:GetPercent() .. "%%")) or "-"
     local mcStat = (recipeData.supportsMulticraft and (professionStats.multicraft:GetPercent() .. "%%")) or "-"

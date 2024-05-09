@@ -29,7 +29,7 @@ local API_VERSION = 100105
 
 -- Skin Info
 local Authors = {"StormFX", "|cff999999Craygz|r"}
-local Version = "10.2.6"
+local Version = "10.2.7"
 local Websites = {
 	"https://github.com/SFX-WoW/Masque_Gears",
 	"https://www.curseforge.com/wow/addons/masque-gears",

@@ -1016,5 +1016,27 @@ ElvCharacterDB = {
 			[51] = 1675970775,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [46]
+		{
+			"Svensk Chill Guild [Bryggeriet] Rekryterar. Vi kommer fokusera på HC Raiding samt +M. Gött häng i discorden är alltid prio 1 för oss . Intresserad?  Psst ", -- [1]
+			"Kungfat-Ragnaros", -- [2]
+			"", -- [3]
+			"1. General - Zaralek Cavern", -- [4]
+			"Kungfat-Ragnaros", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Zaralek Cavern", -- [9]
+			0, -- [10]
+			6, -- [11]
+			"Player-3682-0A7C0FAE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffffffffKungfat|r",
+			[51] = 1683557523,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [47]
 	},
 }

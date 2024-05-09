@@ -14,11 +14,16 @@ SimpleAddonManagerDB = {
 			["hide"] = false,
 		},
 		["hookMenuButton"] = true,
-		["sorting"] = "smart",
+		["memoryUpdate"] = 0,
 		["showSecureAddons"] = false,
 		["addonListStyle"] = "list",
 		["showMemoryInBrokerTtp"] = true,
-		["memoryUpdate"] = 0,
+		["sorting"] = "smart",
+	},
+	["sets"] = {
+	},
+	["setsVersion"] = 1,
+	["collapsedAddons"] = {
 	},
 	["autoProfile"] = {
 		["Qpfromage-LivingFlame"] = {
@@ -103,10 +108,5 @@ SimpleAddonManagerDB = {
 				["Bagnon_ItemLevel"] = true,
 			},
 		},
-	},
-	["setsVersion"] = 1,
-	["collapsedAddons"] = {
-	},
-	["sets"] = {
 	},
 }

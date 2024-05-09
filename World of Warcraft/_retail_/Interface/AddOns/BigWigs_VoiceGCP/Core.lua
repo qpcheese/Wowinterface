@@ -11,7 +11,7 @@ local function handler(_, module, key, sound, isOnMe)
         "Master"
     )
     if not success then
-        addon:SendMessage("BigWigs_Sound", module, key, sound)
+        addon.SendMessage("BigWigs_Sound", module, key, sound)
     end
 end
 BigWigsLoader.RegisterMessage(addon, "BigWigs_Voice", handler)

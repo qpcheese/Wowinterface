@@ -1,6 +1,71 @@
 ------------------------------------------------------------------------------
 -- Dragonflight
 --
+v10.2.7.2789
+	MAY 7, 2024 Hotfixes
+		Sigil of Silence cooldown increased to 90 seconds (was 60 seconds).
+		Cycle of Binding now reduces Sigil cooldowns by 2 seconds per trigger (was 3 seconds).
+		Disrupting Shout’s cooldown reduced to 75 seconds (was 90 seconds).
+	Time of Need (Evoker, Preservation) moved to External Defensives.
+	Added tank trinkets
+
+v10.2.7.2788
+	Fixed 2pc tier set bonus for Holy Paladin.
+	Embeded AceComm w/ ChatThrottleLib.
+		> No longer syncs with earlier versions of this addon.
+
+	Updated for Cataclysm Classic
+
+v10.2.7.2787
+	bump toc
+	Season 4 PvP trinkets added
+	Season 4 tier set bonus added
+
+v10.2.6.2786
+	bump toc
+	10.2.6 Class Updates
+		Casting Holy Word: Chastise with Divine Word active now refunds 15 seconds from the cooldown of Holy Word: Chastise.
+		Voice of Harmony now causes Holy Nova to reduce the cooldown of Chastise in addition to Holy Fire.
+		Lightwell cooldown reduced by 3 seconds when you cast Holy Word: Serenity or Holy Word: Sanctify.
+
+v10.2.5.2785
+	Fixed Float Like a Butterfly will correctly reduce Evasion and Feint by 0.5 sec per combo point spent (was 1 sec).
+	Hotfixes: March 12, 2024
+		Float Like a Butterfly (talent) effectiveness is now reduced by 50% in PvP combat.
+
+v10.2.5.2784
+	Dark Arbiter will correctly replace Summon Gargoyle.
+	Searing Glare cd fix.
+	Purification id fix.
+	nil err fix (on entering instance w/ Weyrnstone buff).
+
+v10.2.5.2783
+	Fixed Void Summoner CDR to include Smite by 4pc set bonus and Dark Reprimand
+	Death and Madness CD fixed to 10s (was 20s)
+
+v10.2.5.2782
+	Shadowfield will correctly be replaced by Mindbender (disc, talent)
+	Void Summoner (disc, talent) will correctly reduce the remaining Cd of Mindbender
+	Highlighting fixed/added for numerous spells
+	 - Ebon Might
+	 - Invoke Xuen, the White Tiger
+	 - Ultimate Sacrifice, Guardian of the Forgotten Queen, Blessing of Sanctuary, Divine Stead, Eye of Tyr
+	 - Empyreal Blaze, Ray of Hope, Shadowfiend, Mindbender
+	 - Feral Spirit, Healing Tide Totem, Earth/Fire/Storm Elemental
+
+v10.2.5.2781
+	Fixed option panel color picker for 10.2.5
+	Fixed option panel nil err (iss#672)
+	Added option to use class colors on icon names
+
+	January 23. 2024 Hotfixes
+	  Fury, PvP only
+	    Anger Management now reduces Recklessness and Ravager’s cooldown by 1 second per 15 rage spent (was 20 rage).
+
+v10.2.5.2780
+	Missing talent abilities after 10.2.5 will correctly show
+	Addon will no longer sync with older versions
+
 v10.2.5.2777
 	Fixed Cycle of Binding CDR when auras are refreshed.
 	Fixed Illuminated Sigils not adding a charge to Elysian Decree.
@@ -962,6 +1027,11 @@ v2.6.01-bcc
 ------------------------------------------------------------------------------
 -- classic era
 --
+v1.15.2.2788
+	bump toc
+	Embeded AceComm w/ ChatThrottleLib.
+		> No longer syncs with earlier versions of this addon.
+
 v1.15.0.2775
 	Talent inspection will correctly work for group members without OmniCD
 
@@ -1012,3 +1082,9 @@ v2.6.35
 
 v2.6.30
 	Initial release for WoW: Classic Era.
+
+------------------------------------------------------------------------------
+-- Cataclysm
+--
+v4.4.0.2788
+	Cataclysm Classic release (4.4.0.54525)

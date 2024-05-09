@@ -11,6 +11,7 @@ local LSM = LibStub("LibSharedMedia-3.0")
 -- -----
 --   FONT
 -- -----
+LSM:Register("font", "Zytech_TV_Old", [[Interface\Addons\SharedMedia_Zytech\font\Zytech_TV_Old.ttf]]) 
 LSM:Register("font", "Zytech_TV", [[Interface\Addons\SharedMedia_Zytech\font\Zytech_TV.ttf]]) 
 -- -----
 --   SOUND

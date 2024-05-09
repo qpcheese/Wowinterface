@@ -111,10 +111,13 @@ L["BiggerHealthBar_desc"] = "Resizes the player's health bar to cover the entire
 --BiggerHealthBars for classic the plural is not a typo
 L["BiggerHealthBars_name"] = "BiggerHealthBars"
 L["BiggerHealthBars_desc"] = "Use larger health bars for player and target frames."
+--PartyColor
+L["PartyColor_name"] = "PartyColor"
+L["PartyColor_desc"] = "Enable class colors for party frames (non raid style)."
 --HideClassPowerBar
 L["HideClassPowerBar_name"] = "HideClassPowerBar"
 L["HideClassPowerBar_desc"] = "Hide the class power bar (Monk Chi Bar, Warlock Soul Shards, Combo Points, etc.)"
---BackgroundTextures 
+--BackgroundTextures
 L["BackgroundTextures_name"] = "Background Textures"
 L["BackgroundTextures_desc"] = "Create background Textures beneath health bars."
 L["Texture"] = true
@@ -122,8 +125,8 @@ L["Texture"] = true
 L["DebuffColor_name"] = "DebuffColor"
 L["DebuffColor_desc"] = "Color the player health bar by debuff color if you are affected by a debuff that you can dispel."
 --Fonts
-L["font_module_name"] = "Fonts" 
-L["font_module_desc"] = "Use custom SharedMedia fonts and customize font size and color." 
+L["font_module_name"] = "Fonts"
+L["font_module_desc"] = "Use custom SharedMedia fonts and customize font size and color."
 --Overabsorbs
 L["Overabsorbs_name"] = "Overabsorbs"
 L["Overabsorbs_desc"] = "Reanchor the absorb bar to fill from right to left if an absorb shield above max life is present."

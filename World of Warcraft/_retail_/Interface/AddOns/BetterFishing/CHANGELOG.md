@@ -1,3 +1,6 @@
+### 1.1.23
+- Cata Support
+
 ### 1.1.22
 - Version Update
 

@@ -9,9 +9,9 @@ RaiderIO_DB_TW_F: disabled
 RaiderIO_DB_KR_R: disabled
 RaiderIO_DB_KR_M: disabled
 RaiderIO_DB_KR_F: disabled
-RaiderIO: disabled
-RaiderIO_DB_EU_M: disabled
-RaiderIO_DB_EU_R: disabled
+RaiderIO: enabled
+RaiderIO_DB_EU_M: enabled
+RaiderIO_DB_EU_R: enabled
 RaiderIO_DB_EU_F: disabled
 WorldQuestsList: disabled
 QuickQuest: disabled
@@ -29,7 +29,7 @@ BigWigs_MistsOfPandaria: disabled
 BigWigs_Legion: disabled
 BigWigs_Classic: disabled
 BigWigs_Cataclysm: enabled
-BigWigs_BurningCrusade: disabled
+BigWigs_BurningCrusade: enabled
 BigWigs_Core: enabled
 BigWigs_Options: enabled
 BigWigs_Plugins: enabled
@@ -113,7 +113,7 @@ Details_Compare2: enabled
 Details_EncounterDetails: disabled
 Details_DataStorage: disabled
 FarmHud: disabled
-Hermes: disabled
+Hermes: enabled
 I_Hear_You_RealID: enabled
 I_Hear_You_Whisper: enabled
 idTip: enabled
@@ -129,7 +129,7 @@ LittleWigs_Shadowlands: enabled
 LittleWigs_WrathOfTheLichKing: enabled
 Mapster: enabled
 Masque_Caith: enabled
-MRT: disabled
+MRT: enabled
 Misspelled: enabled
 MythicDungeonTools: enabled
 MythicPlusTimer: enabled
@@ -158,7 +158,7 @@ Narcissus_GamePad: disabled
 Narcissus_BagFilter: disabled
 Narcissus_Achievements: disabled
 Narcissus_Barbershop: disabled
-TwitchEmotes: enabled
+TwitchEmotes: disabled
 WoWPro: disabled
 WoWPro_Achievements: disabled
 WoWPro_Dailies: disabled
@@ -433,8 +433,8 @@ DBM-WorldEvents: disabled
 iPMythicTimer: disabled
 MythicIOGrabber: disabled
 LFGMPLUSGROUP: disabled
-Plumber: disabled
-MythicDungeonCalculator: disabled
+Plumber: enabled
+MythicDungeonCalculator: enabled
 SharedMedia_Celestian: enabled
 FailFeed: disabled
 HandyNotes_NooksAndCrannies: disabled

@@ -1,8 +1,8 @@
-## Interface: 100206
+## Interface: 100207
 ## Title: Battle Pet Battle UI Tweaks
 ## Notes: A collection of quality-of-life improvements for the pet battle UI
 ## Author: Gello
-## Version: 2.1.12
+## Version: 2.1.13
 ## X-WoWI-ID: 25718
 ## X-Wago-ID: qv63gD6b
 ## X-Curse-Project-ID: 412845

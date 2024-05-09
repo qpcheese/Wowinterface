@@ -1,4 +1,4 @@
-do
+
 local _, app = ...;
 
 -- Global locals
@@ -63,6 +63,8 @@ local CreateDataCache = function(name, skipMapCaching)
 	end
 	setmetatable(cache, fieldMeta);
 	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
+	-- cache.mountID = cache.spellID;	-- identical cache as spellID
+	cache.recipeID = cache.spellID;	-- identical cache as spellID
 	--cache.requireSkill = cache.professionID;	-- identical cache as professionID (in Retail)
 	return cache;
 end
@@ -100,6 +102,7 @@ local cacheMapID = function(group, mapID)
 	return true
 end
 local cacheObjectID = function(group, objectID)
+	if group.__ignoreCaching then return end
 	CacheField(group, "objectID", objectID);
 end;
 local cacheQuestID = function(group, questID)
@@ -162,6 +165,7 @@ if app.Debugging and app.Version == "[Git]" then
 		CacheField(group, "headerID", headerID);
 	end
 	cacheObjectID = function(group, objectID)
+		if group.__ignoreCaching then return end
 		if not app.ObjectNames[objectID] then
 			print("Object Missing Name ", objectID);
 			app.ObjectNames[objectID] = "Object #" .. objectID;
@@ -176,11 +180,11 @@ local providerTypeConverters = {
 	["o"] = cacheObjectID,
 	["c"] = function(group, providerID)
 		CacheField(group, "currencyIDAsCost", providerID);
-		CacheField(group, "currencyID", providerID);
+		--CacheField(group, "currencyID", providerID);
 	end,
 	["i"] = function(group, providerID)
 		CacheField(group, "itemIDAsCost", providerID);
-		CacheField(group, "itemID", providerID);
+		--CacheField(group, "itemID", providerID);
 	end,
 	["g"] = function(group, providerID)
 		-- Do nothing, nothing to cache.
@@ -313,7 +317,7 @@ local function zoneTextAreasRunner(group, value)
 	if name then app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name; end
 
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
-	local mapIDs, parentMapID, info = {};
+	local mapIDs, parentMapID, info = {}, nil, nil;
 	if group.coords then
 		parentMapID = group.coords[1][3];
 		if parentMapID then
@@ -437,6 +441,7 @@ local fieldConverters = {
 	["garrisonBuildingID"] = function(group, value)
 		CacheField(group, "garrisonBuildingID", value);
 	end,
+	["guildAchievementID"] = cacheAchievementID,
 	["headerID"] = cacheHeaderID,
 	["heirloomUnlockID"] = function(group, value)
 		CacheField(group, "heirloomUnlockID", value);
@@ -471,6 +476,9 @@ local fieldConverters = {
 	["questID"] = cacheQuestID,
 	["questIDA"] = cacheQuestID,
 	["questIDH"] = cacheQuestID,
+	["recipeID"] = function(group, value)
+		CacheField(group, "spellID", value);
+	end,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "requireSkill", value);	-- NOTE: professionID in Retail, investigate why
 	end,
@@ -523,7 +531,7 @@ local fieldConverters = {
 		-- Retail used this commented out section instead, see which one is better
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
 		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID) then
+		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID or (group.headerID and group.parent and group.parent.instanceID)) then
 			return cacheMapID(group, coord[3]);
 		end
 	end,
@@ -531,7 +539,7 @@ local fieldConverters = {
 		-- Retail used this commented out section instead, see which one is better
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
 		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID) then
+		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID or (group.headerID and group.parent and group.parent.instanceID)) then
 			for i,coord in ipairs(coords) do
 				cacheMapID(group, coord[3]);
 			end
@@ -619,7 +627,7 @@ local fieldConverters = {
 local _converter;
 local function _CacheFields(group)
 	local n = 0;
-	local clone, mapKeys, key, value, hasG = {};
+	local clone, mapKeys, key, value, hasG = {}, nil, nil, nil, nil;
 	for key,value in pairs(group) do
 		if key == "g" then
 			hasG = true;
@@ -707,6 +715,7 @@ if app.IsRetail then
 	fieldConverters.drakewatcherManuscriptID = fieldConverters.itemID;
 	fieldConverters.heirloomID = fieldConverters.itemID;
 	tinsert(postscripts, function()
+		if #cacheGroupForModItemID == 0 then return end
 		local modItemID
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
 		for _,group in ipairs(cacheGroupForModItemID) do
@@ -725,12 +734,12 @@ if app.IsRetail then
 	-- Retail doesn't have objectives so don't bother checking for it
 	fieldConverters.coord = function(group, coord)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") then return end
+		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") or (group.headerID and group.parent and group.parent.instanceID) then return end
 		return cacheMapID(group, coord[3]);
 	end
 	fieldConverters.coords = function(group, coords)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") then return end
+		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") or (group.headerID and group.parent and group.parent.instanceID) then return end
 		local any
 		for i,coord in ipairs(coords) do
 			any = cacheMapID(group, coord[3]) or any
@@ -837,6 +846,32 @@ local function SearchForRelativeItems(group, listing)
 	end
 end
 
+local function GetFilteredResults(results)
+	local result
+	local filterMatch = {}
+	local Filter = app.RecursiveCharacterRequirementsFilter
+	for i=1,#results do
+		result = results[i]
+		if Filter(result) then
+			filterMatch[#filterMatch + 1] = result
+			-- app.PrintDebug("SFO:Char",app:SearchLink(result))
+		end
+	end
+	-- no filtered results for specific character, try filter by only faction
+	if #filterMatch == 0 then
+		Filter = app.RecursiveFilter
+		for i=1,#results do
+			result = results[i]
+			if Filter(result, "Race_CurrentFaction") then
+				filterMatch[#filterMatch + 1] = result
+				-- app.PrintDebug("SFO:Faction",app:SearchLink(result))
+			end
+		end
+	end
+	-- app.PrintDebug("SFO-F","?>",#filterMatch,#results)
+	return (#filterMatch > 0 and filterMatch) or results
+end
+
 -- Search for a thing that matches some requirements
 local function SearchForObject(field, id, require, allowMultiple)
 	-- This method performs the SearchForField logic, but then may verifies that ONLY a specific matching, filtered-priority object is returned
@@ -846,14 +881,24 @@ local function SearchForObject(field, id, require, allowMultiple)
 	-- * none - accept any object which is cached against the specific field value
 	-- allowMultiple - Whether to return multiple matching objects as an array (within the 'require' restriction)
 	local fcache, count
+	-- Direct search by modItemID means not to allow an itemID fallback in the search
+	-- however, base itemIDs are not cached by modItemID, so a modItemID search on a base itemID
+	-- should instead be considered as an itemID search
+	if field == "modItemID" then
+		local idBase = math_floor(id)
+		if idBase == id then
+			id = idBase
+			field = "itemID"
+		end
 	-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
-	-- match requirement accuracy
-	if field == "itemID" then
+	-- match requirement accuracy if possible, with fallback to base itemID
+	elseif field == "itemID" then
 		-- try searching by modItemID cache, any results are the EXACT id searched for
 		fcache = GetRawField("modItemID", id)
 		if fcache and #fcache > 0 then
 			-- use modItemID as the field for 'require' since it returned results
 			field = "modItemID"
+			require = "field"
 		else
 			local idBase = math_floor(id)
 			-- if we're NOT searching for a plain itemID and found no results, we can revert to the plain itemID
@@ -864,8 +909,8 @@ local function SearchForObject(field, id, require, allowMultiple)
 		end
 	end
 	fcache = fcache or GetRawField(field, id)
-	count = fcache and #fcache;
-	if not count or count == 0 then
+	count = fcache and #fcache or 0;
+	if count == 0 then
 		-- app.PrintDebug("SFO",field,id,require,"0~")
 		return allowMultiple and app.EmptyTable or nil
 	end
@@ -886,145 +931,61 @@ local function SearchForObject(field, id, require, allowMultiple)
 		return allowMultiple and app.EmptyTable or nil
 	end
 
-	local keyMatch, fieldMatch, match;
-	local Filter = app.RecursiveCharacterRequirementsFilter;
+	local keyMatch, fieldMatch, match = {},{},{}
 
-	-- split logic based on allowMultiple to reduce conditionals within loop
-	if allowMultiple then
-		local filterMatch
-		-- split logic based on require to reduce conditionals within loop
-		if require == 2 then
-			-- Key require
-			for i=1,count,1 do
-				fcacheObj = fcache[i];
-				-- field matching id
-				if fcacheObj[field] == id then
-					if fcacheObj.key == field then
-						-- with keyed-field matching key & current filters
-						if Filter(fcacheObj) then
-							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
-							if filterMatch then filterMatch[#filterMatch + 1] = fcacheObj
-							else filterMatch = {fcacheObj} end
-						end
-						if keyMatch then keyMatch[#keyMatch + 1] = fcacheObj
-						else keyMatch = {fcacheObj} end
-					end
-				end
-			end
-		elseif require == 1 then
-			-- Field require
-			for i=1,count,1 do
-				fcacheObj = fcache[i];
-				-- field matching id
-				if fcacheObj[field] == id then
-					if fcacheObj.key == field then
-						-- with keyed-field matching key & current filters
-						if Filter(fcacheObj) then
-							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
-							if filterMatch then filterMatch[#filterMatch + 1] = fcacheObj
-							else filterMatch = {fcacheObj} end
-						end
-						if keyMatch then keyMatch[#keyMatch + 1] = fcacheObj
-						else keyMatch = {fcacheObj} end
-					else
-						-- with field matching id
-						if fieldMatch then fieldMatch[#fieldMatch + 1] = fcacheObj
-						else fieldMatch = {fcacheObj} end
-					end
-				end
-			end
-		else
-			-- No require
-			for i=1,count,1 do
-				fcacheObj = fcache[i];
-				-- field matching id
-				if fcacheObj[field] == id then
-					if fcacheObj.key == field then
-						-- with keyed-field matching key & current filters
-						if Filter(fcacheObj) then
-							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
-							if filterMatch then filterMatch[#filterMatch + 1] = fcacheObj
-							else filterMatch = {fcacheObj} end
-						end
-						if keyMatch then keyMatch[#keyMatch + 1] = fcacheObj
-						else keyMatch = {fcacheObj} end
-					else
-						-- with field matching id
-						if fieldMatch then fieldMatch[#fieldMatch + 1] = fcacheObj
-						else fieldMatch = {fcacheObj} end
-					end
-				-- basic group related to search
-				else
-					if match then match[#match + 1] = fcacheObj
-					else match = {fcacheObj} end
+	-- split logic based on require to reduce conditionals within loop
+	if require == 2 then
+		-- Key require
+		for i=1,count,1 do
+			fcacheObj = fcache[i];
+			-- field matching id
+			if fcacheObj[field] == id then
+				if fcacheObj.key == field then
+					-- with keyed-field matching key
+					keyMatch[#keyMatch + 1] = fcacheObj
 				end
 			end
 		end
-		-- app.PrintDebug("SFO",field,id,require,"?>",filterMatch and #filterMatch,keyMatch and #keyMatch,fieldMatch and #fieldMatch,match and #match)
-		return filterMatch or keyMatch or fieldMatch or match or app.EmptyTable
-	else	-- single returnd object
-		-- split logic based on require to reduce conditionals within loop
-		if require == 2 then
-			-- Key require
-			for i=1,count,1 do
-				fcacheObj = fcache[i];
-				-- field matching id
-				if fcacheObj[field] == id then
-					if fcacheObj.key == field then
-						-- with keyed-field matching key & current filters
-						if Filter(fcacheObj) then
-							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
-							return fcacheObj;
-						end
-						keyMatch = keyMatch or fcacheObj;
-					end
-				end
-			end
-		elseif require == 1 then
-			-- Field require
-			for i=1,count,1 do
-				fcacheObj = fcache[i];
-				-- field matching id
-				if fcacheObj[field] == id then
-					if fcacheObj.key == field then
-						-- with keyed-field matching key & current filters
-						if Filter(fcacheObj) then
-							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
-							return fcacheObj;
-						end
-						keyMatch = keyMatch or fcacheObj;
-					else
-						-- with field matching id
-						fieldMatch = fieldMatch or fcacheObj;
-					end
-				end
-			end
-		else
-			-- No require
-			for i=1,count,1 do
-				fcacheObj = fcache[i];
-				-- field matching id
-				if fcacheObj[field] == id then
-					if fcacheObj.key == field then
-						-- with keyed-field matching key & current filters
-						if Filter(fcacheObj) then
-							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
-							return fcacheObj;
-						end
-						keyMatch = keyMatch or fcacheObj;
-					else
-						-- with field matching id
-						fieldMatch = fieldMatch or fcacheObj;
-					end
-				-- basic group related to search
+	elseif require == 1 then
+		-- Field require
+		for i=1,count,1 do
+			fcacheObj = fcache[i];
+			-- field matching id
+			if fcacheObj[field] == id then
+				if fcacheObj.key == field then
+					-- with keyed-field matching key
+					keyMatch[#keyMatch + 1] = fcacheObj
 				else
-					match = match or fcacheObj;
+					-- with field matching id
+					fieldMatch[#fieldMatch + 1] = fcacheObj
 				end
 			end
 		end
-		-- app.PrintDebug("SFO",field,id,require,"?>",keyMatch and keyMatch.hash,fieldMatch and fieldMatch.hash,match and match.hash)
-		return keyMatch or fieldMatch or match or nil;
+	else
+		-- No require
+		for i=1,count,1 do
+			fcacheObj = fcache[i];
+			-- field matching id
+			if fcacheObj[field] == id then
+				if fcacheObj.key == field then
+					-- with keyed-field matching key
+					keyMatch[#keyMatch + 1] = fcacheObj
+				else
+					-- with field matching id
+					fieldMatch[#fieldMatch + 1] = fcacheObj
+				end
+			else
+				-- basic group related to search
+				match[#match + 1] = fcacheObj
+			end
+		end
 	end
+	-- app.PrintDebug("SFO",field,id,require,"?>",#keyMatch,#fieldMatch,#match)
+	local results = (#keyMatch > 0 and keyMatch) or (#fieldMatch > 0 and fieldMatch) or (#match > 0 and match) or app.EmptyTable
+	-- if only 1 or no result, no point to try filtering
+	if #results <= 1 then return allowMultiple and results or results[1] end
+	results = GetFilteredResults(results)
+	return allowMultiple and results or results[1]
 end
 
 -- All Cache Searching
@@ -1285,4 +1246,3 @@ app.VerifyCache = VerifyCache;
 app.VerifyRecursion = VerifyRecursion;
 -- this table is deleted once used
 app.__CacheQuestTriggers = QuestTriggers;
-end

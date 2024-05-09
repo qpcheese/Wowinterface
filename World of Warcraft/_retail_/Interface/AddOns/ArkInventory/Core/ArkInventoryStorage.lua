@@ -387,9 +387,8 @@ function ArkInventory:EVENT_ARKINV_COMBAT_LEAVE( ... )
 	for loc_id, loc_data in pairs( ArkInventory.Global.Location ) do
 		if loc_data.canView then
 			
-			if loc_data.tainted then
+			if loc_data.isDirty then --FIX ME - this doesnt ever get set?
 				
-				--ArkInventory.Output( "tainted ", loc_id )
 				--ArkInventory.OutputWarning( "EVENT_ARKINV_COMBAT_LEAVE - .Recalculate" )
 				ArkInventory.Frame_Main_Generate( loc_id, ArkInventory.Const.Window.Draw.Recalculate )
 				
@@ -520,6 +519,7 @@ function ArkInventory:EVENT_ARKINV_ITEM_UPDATE_BUCKET( ... )
 		--ArkInventory.Output( "bucket: ", loc_id, "-", bag_id, "-", slot_id )
 --		changer[loc_id] = true
 		ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id )
+		ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id, ArkInventory.Const.ItemFrameType.Popup )
 	end
 	
 --	for id in pairs( changer ) do
@@ -577,7 +577,8 @@ function ArkInventory:EVENT_ARKINV_ITEM_LOCK_CHANGED( ... )
 				
 				-- bank item lock
 				local loc_id, bag_id = ArkInventory.BlizzardBagIdToInternalId( blizzard_id )
-				ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id, true )
+				ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id, nil, true )
+				ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id, ArkInventory.Const.ItemFrameType.Popup, true )
 				
 			else
 				
@@ -591,7 +592,8 @@ function ArkInventory:EVENT_ARKINV_ITEM_LOCK_CHANGED( ... )
 			-- player item lock
 			local loc_id, bag_id = ArkInventory.BlizzardBagIdToInternalId( blizzard_id )
 			if loc_id then
-				ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id, true )
+				ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id, nil, true )
+				ArkInventory.Frame_Item_Update_Instant( loc_id, bag_id, slot_id, ArkInventory.Const.ItemFrameType.Popup, true )
 			end
 			
 		end
@@ -1892,10 +1894,17 @@ function ArkInventory.Scan( bucket, rescan )
 				--ArkInventory.Output( "scanning [", blizzard_id, "] [", loc_id, "].[", bag_id, "]" )
 				
 				if ArkInventory.Global.Location[loc_id].canView then
-					local codex = ArkInventory.GetPlayerCodex( loc_id )
+					
+					local codex = ArkInventory.GetLocationCodex( loc_id )
+					
 					if codex.style.sort.when == ArkInventory.ENUM.SORTWHEN.ALWAYS then
 						ArkInventory.Frame_Main_DrawStatus( loc_id, ArkInventory.Const.Window.Draw.Recalculate )
 					end
+					
+					if ArkInventory.Global.Location[loc_id].canCompress and codex.style.slot.stack.mode == ArkInventory.Const.Slot.Stack.Mode.Compress and codex.style.slot.stack.compress.enable and codex.style.slot.stack.compress.sort then
+						ArkInventory.Frame_Main_DrawStatus( loc_id, ArkInventory.Const.Window.Draw.Recalculate )
+					end
+					
 				end
 				
 				if loc_id == ArkInventory.Const.Location.Bag or loc_id == ArkInventory.Const.Location.Bank then
@@ -3226,13 +3235,13 @@ function ArkInventory.ScanMailbox_Threaded( blizzard_id, loc_id, bag_id, thread_
 		if itemCount then
 			
 			--if ( daysLeft >= 1 ) then
---			daysLeft = string.format( "%s%s%s%s", GREEN_FONT_COLOR_CODE, string.format( DAYS_ABBR, floor(daysLeft) ), " ", FONT_COLOR_CODE_CLOSE )
+--			daysLeft = string.format( "%s%s%s%s", GREEN_FONT_COLOR_CODE, string.format( DAYS_ABBR, math.floor(daysLeft) ), " ", FONT_COLOR_CODE_CLOSE )
 			--else
---			daysLeft = string.format( "%s%s%s", RED_FONT_COLOR_CODE, SecondsToTime( floor( daysLeft * 24 * 60 * 60 ) ), FONT_COLOR_CODE_CLOSE )
+--			daysLeft = string.format( "%s%s%s", RED_FONT_COLOR_CODE, SecondsToTime( math.floor( daysLeft * 24 * 60 * 60 ) ), FONT_COLOR_CODE_CLOSE )
 			--end
 			
-			--local expires_d = floor( daysLeft )
-			--local expires_s = ( daysLeft - floor( daysLeft ) ) * 24 * 60* 60
+			--local expires_d = math.floor( daysLeft )
+			--local expires_s = ( daysLeft - math.floor( daysLeft ) ) * 24 * 60* 60
 			--local purge = not not ( wasReturned ) or ( not canReply )
 			
 			--ArkInventory.Output( "message ", index, " has item(s)" )

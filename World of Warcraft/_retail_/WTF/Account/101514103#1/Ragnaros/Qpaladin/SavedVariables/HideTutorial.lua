@@ -1,2 +1,2 @@
 
-HideTutorialDB2 = 100205
+HideTutorialDB2 = 100206

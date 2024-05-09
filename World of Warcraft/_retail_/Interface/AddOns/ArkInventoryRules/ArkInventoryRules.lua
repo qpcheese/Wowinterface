@@ -1,5 +1,5 @@
 
---License: All Rights Reserved, (c) 2009-2023
+--License: All Rights Reserved, (c) 2006-2024
 
 
 local _G = _G
@@ -1155,9 +1155,12 @@ function ArkInventoryRules.System.boolean_outfit_blizzard( ... )
 				loc_id = nil
 				bag_id = nil
 				slot_id = nil
+				void = nil
+				voidtab = nil
+				voidslot = nil
 				id = nil
 				
-				if ArkInventory.Global.Location[ArkInventory.Const.Location.Void].proj then
+				if ArkInventory.ClientCheck( ArkInventory.Global.Location[ArkInventory.Const.Location.Void].ClientCheck ) then
 					player, bank, bags, void, slot, bag, voidtab, voidslot = EquipmentManager_UnpackLocation( location )
 				else
 					player, bank, bags, slot, bag = EquipmentManager_UnpackLocation( location )
@@ -1889,6 +1892,45 @@ function ArkInventoryRules.System.boolean_player_class( ... )
 	
 end
 
+function ArkInventoryRules.System.boolean_category( ... )
+	
+	local fn = "category"
+	
+	local ac = select( '#', ... )
+	
+	if ac == 0 then
+		error( string.format( ArkInventory.Localise["RULE_FAILED_ARGUMENT_NONE_SPECIFIED"], fn ), 0 )
+	end
+	
+	for ax = 1, ac do
+		
+		local arg = select( ax, ... )
+		
+		if not arg then
+			error( string.format( ArkInventory.Localise["RULE_FAILED_ARGUMENT_IS_NIL"], fn, ax ), 0 )
+		end
+		
+		if type( arg ) ~= "number" then
+			error( string.format( ArkInventory.Localise["RULE_FAILED_ARGUMENT_IS_NOT"], fn, ax, ArkInventory.Localise["NUMBER"] ), 0 )
+		end
+		
+		
+		
+		local cat_id = ArkInventory.ItemCategoryGetDefault( ArkInventoryRules.Object )
+		local cat_type, cat_num = ArkInventory.CategoryIdSplit( cat_id )
+		if cat_type == 1 then
+			if arg == cat_num then
+				--ArkInventory.Output( "category rule check [", arg, "] == [", cat_num, "]" )
+				return true
+			end
+		end
+		
+	end
+	
+	return false
+	
+end
+
 
 
 --[[
@@ -2330,6 +2372,9 @@ ArkInventoryRules.Environment = {
 	
 --	playerclass = ArkInventoryRules.System.boolean_player_class,
 --	class = ArkInventoryRules.System.boolean_player_class,
+	
+	category = ArkInventoryRules.System.boolean_category,
+	cat = ArkInventoryRules.System.boolean_category,
 	
 }
 

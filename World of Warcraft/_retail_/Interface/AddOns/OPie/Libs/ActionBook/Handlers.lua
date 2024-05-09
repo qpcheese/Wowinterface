@@ -48,6 +48,7 @@ if MODERN_MOUNTS then -- mount: mount ID
 			local MOONKIN_FORM = GetSpellInfo(24858)
 			local bn = newWidgetName("AB:M!")
 			local b = CreateFrame("Button", bn, nil, "SecureActionButtonTemplate")
+			b:SetAttribute("pressAndHoldAction", 1)
 			b:SetAttribute("macrotext", "/cancelform [nocombat]")
 			b:SetScript("PreClick", function()
 				local sf = GetShapeshiftForm()
@@ -66,11 +67,10 @@ if MODERN_MOUNTS then -- mount: mount ID
 					C_MountJournal.SummonByID(btn)
 				end
 			end)
-			T.TenSABT(b)
 			clickPrefix = SLASH_CLICK1 .. " " .. bn .. " "
 		end
 		summonAction = function(mountID)
-			return "attribute", "type","macro", "macrotext",clickPrefix .. mountID
+			return "attribute", "type","macro", "macrotext",clickPrefix .. mountID .. " 1"
 		end
 	end
 
@@ -1088,7 +1088,8 @@ do -- disenchant: iid
 	local ICON_PREFIX = "|TInterface/Buttons/UI-GroupLoot-DE-Up:0:0|t "
 	local SLASH_SPELL_TARGET_ITEM1 = '/spelltargetitem' do
 		local wn = newWidgetName("AB:I!")
-		local w = T.TenSABT(CreateFrame("Button", wn, nil, "SecureActionButtonTemplate"))
+		local w = CreateFrame("Button", wn, nil, "SecureActionButtonTemplate")
+		w:SetAttribute("pressAndHoldAction", 1)
 		w:Hide()
 		SecureHandlerWrapScript(w, "OnClick", w, [[return nil, 'post']], [[self:SetAttribute("target-item", nil)]])
 		local er = {u="\\117", ["{"]="\\123", ["}"]="\\125"}
@@ -1101,7 +1102,7 @@ do -- disenchant: iid
 				self:SetAttribute("target-item", v)
 				return "%s"
 			end
-		]]):format(escape(SLASH_SPELL_TARGET_ITEM1), escape(SLASH_CLICK1 .. " " .. wn)))
+		]]):format(escape(SLASH_SPELL_TARGET_ITEM1), escape(SLASH_CLICK1 .. " " .. wn .. " 1")))
 		RW:RegisterCommand(SLASH_SPELL_TARGET_ITEM1, true, false, w)
 	end
 	local function disenchantTip(self, iid)
@@ -1171,6 +1172,7 @@ do -- uipanel: token
 		local pyName, attrCounter = newWidgetName("AB:PY!"), 500
 		local py = CreateFrame("Button", pyName, nil, "SecureActionButtonTemplate")
 		py:SetAttribute("type", "click")
+		py:SetAttribute("pressAndHoldAction", 1)
 		pyCLICK = CLICK .. pyName .. " "
 		function widgetClickCommand(k, w)
 			if w == nil then return "" end
@@ -1181,7 +1183,7 @@ do -- uipanel: token
 				py:SetAttribute("clickbutton-" .. k, w)
 				tn = pyName .. " " .. k
 			end
-			return CLICK .. tn .. "\n"
+			return CLICK .. tn .. " 1\n"
 		end
 		function widgetAttrCommand(w, ...)
 			local r = ""
@@ -1191,7 +1193,7 @@ do -- uipanel: token
 				py:SetAttribute("attribute-frame" .. bs, w)
 				py:SetAttribute("attribute-name" .. bs, k)
 				py:SetAttribute("attribute-value" .. bs, v)
-				r, attrCounter = r .. CLICK .. pyName .. " at" .. attrCounter .. "\n", attrCounter + 1
+				r, attrCounter = r .. CLICK .. pyName .. " at" .. attrCounter .. " 1\n", attrCounter + 1
 			end
 			return r
 		end
@@ -1230,7 +1232,7 @@ do -- uipanel: token
 		panels.macro.cw = closeButton(nil)
 		panels.csp.cw, panels.options.cw = closeButton(SettingsPanel)
 		panels.cgm.cw = closeButton(GameMenuFrame)
-		panels.options.postmt = pyCLICK .. "csp\n" .. pyCLICK .. "cgm"
+		panels.options.postmt = pyCLICK .. "csp 1\n" .. pyCLICK .. "cgm 1"
 		panels.macro.postmt = widgetClickCommand("cmf", panels.macro.cw)
 		if not MODERN then
 			panels.guild = {title=GUILD, icon="Interface/Icons/INV_Shirt_GuildTabard_01", gw=GuildFrame, ow=FriendsFrameTab3, cw=FriendsFrameCloseButton, req=IsInGuild}
@@ -1279,8 +1281,9 @@ do -- uipanel: token
 		local clickEx = CLICK .. " " .. exName .. " "
 		local ex = CreateFrame("Button", exName, nil, "SecureActionButtonTemplate")
 		ex:SetAttribute("type", "macro")
-		cmdPrefix = clickEx .. "csf\n" .. clickEx
-		cmdDuckPrefix = cmdPrefix .. "csp\n" .. clickEx .. "cgm\n" .. clickEx
+		ex:SetAttribute("pressAndHoldAction", 1)
+		cmdPrefix = clickEx .. "csf 1\n" .. clickEx
+		cmdDuckPrefix = cmdPrefix .. "csp 1\n" .. clickEx .. "cgm 1\n" .. clickEx
 		local function prerun(k)
 			local i, r = panels[k], 0
 			local tw, gw, cw, ow, scs = i.tw, i.gw, i.cw, i.ow, i.skipCloseSound
@@ -1373,7 +1376,7 @@ do -- uipanel: token
 		local r = panelMap[tk]
 		local pi = r == nil and panels[tk]
 		if pi and pi[1] and (pi.req == nil or pi.req()) then
-			local mt = (pi.noduck and cmdPrefix or cmdDuckPrefix) .. tk
+			local mt = (pi.noduck and cmdPrefix or cmdDuckPrefix) .. tk .. " 1"
 			r = AB:CreateActionSlot(panelHint, tk, "attribute", "type","macro", "macrotext",mt)
 			panelMap[tk] = r
 		end

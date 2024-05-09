@@ -1,10 +1,10 @@
 Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
-BigWigs_Core: disabled
-BigWigs_Options: disabled
-BigWigs_Plugins: disabled
-WeakAurasCompanion: disabled
-WeakAurasArchive: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
 OPie_Classic: disabled
 RaiderIO_DB_US_R: disabled
 RaiderIO_DB_US_M: disabled
@@ -33,8 +33,8 @@ Bartender4: disabled
 BeQuiet: disabled
 BigWigs: disabled
 BigWigs_Voice: disabled
-BigWigs_Aberrus: disabled
-BigWigs_DragonIsles: disabled
+BigWigs_Aberrus: enabled
+BigWigs_DragonIsles: enabled
 BigWigs_VaultOfTheIncarnates: disabled
 !BugGrabber: disabled
 BugSack: disabled
@@ -77,7 +77,7 @@ Leatrix_Maps: disabled
 Leatrix_Plus: disabled
 LFGSpamFilter: disabled
 LibGroupInSpecT-1.1: disabled
-LittleWigs: disabled
+LittleWigs: enabled
 LittleWigs_BattleForAzeroth: disabled
 LittleWigs_BurningCrusade: disabled
 LittleWigs_Cataclysm: disabled
@@ -283,7 +283,7 @@ BigWigs_Voice_Eminem: disabled
 BigWigs_Voice_Marine: disabled
 BigWigs_Voice_TBD: disabled
 BigWigs_Voice_UT: disabled
-BigWigs_VoiceGCP: disabled
+BigWigs_VoiceGCP: enabled
 BlizzMove: disabled
 BlizzMove_Debug: disabled
 BlizzMovePlugin_Rematch: disabled

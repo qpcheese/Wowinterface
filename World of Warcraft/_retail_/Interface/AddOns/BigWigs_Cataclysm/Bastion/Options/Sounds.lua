@@ -24,7 +24,7 @@ BigWigs:AddSounds("Ascendant Council", {
 	[84948] = "alert",
 	[92067] = "alarm",
 	[92075] = "alarm",
-	[92307] = "alarm",
+	[92307] = {"alarm","warning"},
 	["switch"] = "info",
 })
 
@@ -40,6 +40,6 @@ BigWigs:AddSounds("Cho'gall", {
 BigWigs:AddSounds("Sinestra", {
 	[87654] = "alert",
 	[90045] = "info",
-	[92852] = "alarm",
+	[92852] = "warning",
 	["phase"] = "info",
 })

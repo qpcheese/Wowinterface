@@ -4,7 +4,7 @@
 ## Notes: Configuration options for ArkInventory
 ## Author: Arkayenro - Khaz'goroth
 ## Email: arkayenro at gmail dot com
-## Version: 31027
+## Version: 31029
 ## X-ReleaseType: 
 ## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
 

@@ -19,7 +19,8 @@ local wowmainline = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE);
 local wowclassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC);
 local wowbcc = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC);
 local wowwc = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC);
-local wowanyclassic = (wowclassic or wowbcc or wowwc);
+local wowcc = (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC);
+local wowanyclassic = (wowclassic or wowbcc or wowwc or wowcc);
 
 -- WOW classic support
 local UnitCastingInfo = UnitCastingInfo;

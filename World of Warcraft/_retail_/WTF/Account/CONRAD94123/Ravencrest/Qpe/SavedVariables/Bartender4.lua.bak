@@ -1,0 +1,2701 @@
+
+Bartender4DB = {
+	["namespaces"] = {
+		["StatusTrackingBar"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 29,
+						["x"] = -289.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cyclosarin"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 11.0242919921875,
+						["x"] = -292.1828002929688,
+						["point"] = "TOP",
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 29,
+						["x"] = -289.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 29,
+						["x"] = -289.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 11.0242919921875,
+						["x"] = -292.1828002929688,
+						["point"] = "TOP",
+					},
+				},
+				["Qpcheese - Ragnaros"] = {
+					["position"] = {
+						["y"] = 11.0242919921875,
+						["x"] = -292.1828002929688,
+						["point"] = "TOP",
+					},
+					["version"] = 3,
+				},
+				["evoker"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 11.0242919921875,
+						["x"] = -292.1828002929688,
+						["point"] = "TOP",
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 11.0242919921875,
+						["x"] = -292.1828002929688,
+						["point"] = "TOP",
+					},
+				},
+				["qutlaww"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -3.9998779296875,
+						["x"] = -264.0716552734375,
+						["point"] = "TOP",
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 29,
+						["x"] = -289.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cheddarbob"] = {
+					["width"] = 419,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 195.2039193894088,
+						["x"] = 15.92247806330579,
+						["point"] = "BOTTOMLEFT",
+						["scale"] = 0.8999999761581421,
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["enabled"] = true,
+					["width"] = 344,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 29.31386412212942,
+						["x"] = 362.0436051145225,
+						["point"] = "BOTTOM",
+						["scale"] = 0.8999999761581421,
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 29,
+						["x"] = -289.5,
+						["point"] = "BOTTOM",
+					},
+				},
+			},
+		},
+		["QueueStatus"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 40.5,
+						["x"] = -271,
+					},
+				},
+				["cyclosarin"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -210.668701171875,
+						["x"] = -271.1162109375,
+						["point"] = "TOPRIGHT",
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 40.5,
+						["x"] = -271,
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 40.5,
+						["x"] = -271,
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -138.1917114257813,
+						["x"] = -46.4200439453125,
+						["point"] = "TOPRIGHT",
+					},
+				},
+				["Qpcheese - Ragnaros"] = {
+					["position"] = {
+						["y"] = -210.668701171875,
+						["x"] = -271.1162109375,
+						["point"] = "TOPRIGHT",
+					},
+					["version"] = 3,
+				},
+				["evoker"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -210.668701171875,
+						["x"] = -271.1162109375,
+						["point"] = "TOPRIGHT",
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -208.0311889648438,
+						["x"] = -208.7353515625,
+						["point"] = "TOPRIGHT",
+					},
+				},
+				["qutlaww"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 40.5,
+						["x"] = -271,
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 40.5,
+						["x"] = -271,
+					},
+				},
+				["cheddarbob"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 146.0001831054688,
+						["x"] = -411.000244140625,
+						["point"] = "RIGHT",
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 40.5,
+						["x"] = -271,
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 40.5,
+						["x"] = -271,
+					},
+				},
+			},
+		},
+		["ActionBars"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 82,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -54,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -104,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 184,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 133,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+				["cyclosarin"] = {
+					["actionbars"] = {
+						{
+							["version"] = 3,
+							["showgrid"] = true,
+							["position"] = {
+								["y"] = 88.00006183824962,
+								["x"] = -262.9753717569656,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["hideborder"] = true,
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["showgrid"] = true,
+							["rows"] = 3,
+							["fadeoutdelay"] = 0,
+							["WoW10Layout"] = true,
+							["fadeoutalpha"] = 0.6000000000000001,
+							["fadeout"] = true,
+							["position"] = {
+								["y"] = -4.149944253344984,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+								["x"] = -391.2254571227368,
+							},
+							["version"] = 3,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["buttons"] = 9,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["showgrid"] = true,
+							["rows"] = 3,
+							["fadeoutdelay"] = 0,
+							["WoW10Layout"] = true,
+							["fadeoutalpha"] = 0.6000000000000001,
+							["fadeout"] = true,
+							["position"] = {
+								["y"] = 130.7500685497325,
+								["x"] = 250.0246797891305,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+							["version"] = 3,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["buttons"] = 9,
+						}, -- [4]
+						{
+							["version"] = 3,
+							["showgrid"] = true,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -3.988262984774451,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+								["x"] = -262.9757486490507,
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["showgrid"] = true,
+							["position"] = {
+								["y"] = 130.987728001096,
+								["x"] = -262.9755167154599,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["hideborder"] = true,
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["enabled"] = true,
+							["position"] = {
+								["y"] = 201.0964965820313,
+								["x"] = 384.1998291015625,
+								["point"] = "BOTTOM",
+							},
+							["fadeout"] = true,
+							["showgrid"] = true,
+							["version"] = 3,
+							["rows"] = 4,
+							["WoW10Layout"] = true,
+							["fadeoutalpha"] = 0,
+						},
+						[13] = {
+							["enabled"] = true,
+							["showgrid"] = true,
+							["alpha"] = 0.15,
+							["buttons"] = 1,
+							["WoW10Layout"] = true,
+							["fadeout"] = true,
+							["fadeoutdelay"] = 0,
+							["position"] = {
+								["y"] = -138.5614402593537,
+								["x"] = 356.4872202232327,
+								["point"] = "CENTER",
+								["scale"] = 1.649999976158142,
+							},
+							["version"] = 3,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["fadeoutalpha"] = 0,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						},
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 82,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -54,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -104,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 184,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 133,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 82,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -54,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -104,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 184,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 133,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["actionbars"] = {
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 145,
+								["x"] = -278.9999389648438,
+								["point"] = "BOTTOM",
+							},
+							["visibility"] = {
+								["stance"] = {
+									false, -- [1]
+								},
+							},
+							["padding"] = 1,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["version"] = 3,
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["flyoutDirection"] = "RIGHT",
+							["position"] = {
+								["y"] = 51,
+								["x"] = -278.9999389648438,
+								["point"] = "BOTTOM",
+							},
+							["fadeoutalpha"] = 0.45,
+							["padding"] = 1,
+							["WoW10Layout"] = true,
+							["fadeoutdelay"] = 0,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["buttons"] = 1,
+							["fadeoutdelay"] = 0,
+							["fadeoutalpha"] = 0.45,
+							["position"] = {
+								["growHorizontal"] = "LEFT",
+								["x"] = 272,
+								["point"] = "BOTTOM",
+								["scale"] = 1.65,
+								["y"] = 181,
+							},
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["padding"] = -10,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["position"] = {
+								["y"] = 187.4000148720206,
+								["x"] = -279.0499017582552,
+								["point"] = "BOTTOM",
+								["scale"] = 0.8999999761581421,
+							},
+						}, -- [5]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 97,
+								["x"] = -278.9999389648438,
+								["point"] = "BOTTOM",
+							},
+							["WoW10Layout"] = true,
+							["padding"] = 1,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["version"] = 3,
+						}, -- [6]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 154,
+								["x"] = -315,
+								["point"] = "BOTTOM",
+								["scale"] = 1.25,
+							},
+							["WoW10Layout"] = true,
+							["padding"] = -6,
+							["visibility"] = {
+								["stance"] = {
+									[0] = false,
+								},
+							},
+							["version"] = 3,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["enabled"] = true,
+							["showgrid"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 136.0965352311214,
+								["x"] = -320.5166898663119,
+								["point"] = "BOTTOM",
+								["scale"] = 0.800000011920929,
+							},
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["padding"] = -10,
+							["WoW10Layout"] = true,
+							["buttons"] = 1,
+						},
+						[13] = {
+							["enabled"] = true,
+							["elements"] = {
+								["count"] = {
+									["fontColor"] = {
+										0.2352941334247589, -- [1]
+										nil, -- [2]
+										0, -- [3]
+									},
+									["textOffsetX"] = -5,
+								},
+								["hotkey"] = {
+									["fontSize"] = 15,
+									["textOffsetX"] = -5,
+									["textOffsetY"] = -5,
+								},
+							},
+							["showgrid"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 87.48548714347908,
+								["x"] = -318.7658597620975,
+								["point"] = "BOTTOM",
+								["scale"] = 0.800000011920929,
+							},
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["padding"] = 1,
+							["WoW10Layout"] = true,
+							["buttons"] = 1,
+						},
+						[15] = {
+							["enabled"] = true,
+							["showgrid"] = true,
+							["buttons"] = 1,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 189.1639798695442,
+								["x"] = -317.9972074068937,
+								["point"] = "BOTTOM",
+								["scale"] = 0.800000011920929,
+							},
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["padding"] = -10,
+							["WoW10Layout"] = true,
+							["states"] = {
+								["stance"] = {
+									["ROGUE"] = {
+										["stealth"] = 0,
+									},
+								},
+							},
+						},
+					},
+				},
+				["Qpcheese - Ragnaros"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["fadeout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 78.46538725643677,
+								["x"] = -232.4748422643679,
+								["point"] = "BOTTOM",
+								["scale"] = 0.8500000238418579,
+							},
+							["fadeoutalpha"] = 1,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+							["WoW10Layout"] = true,
+						}, -- [2]
+						{
+							["rows"] = 3,
+							["fadeoutdelay"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["buttons"] = 9,
+							["fadeout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -3.400005769729773,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.8500000238418579,
+								["x"] = -347.6835674197137,
+							},
+							["fadeoutalpha"] = 0,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["rows"] = 3,
+							["fadeoutdelay"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["buttons"] = 9,
+							["fadeout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 117.3000032901764,
+								["x"] = 225.7341580148059,
+								["point"] = "BOTTOM",
+								["scale"] = 0.8500000238418579,
+							},
+							["fadeoutalpha"] = 0,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+						}, -- [4]
+						{
+							["fadeout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -3.399997460842059,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.8500000238418579,
+								["x"] = -232.4748422643679,
+							},
+							["fadeoutalpha"] = 1,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+						}, -- [5]
+						{
+							["fadeout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 117.0951555671454,
+								["x"] = -232.4748422643679,
+								["point"] = "BOTTOM",
+								["scale"] = 0.8500000238418579,
+							},
+							["fadeoutalpha"] = 1,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["rows"] = 4,
+							["enabled"] = true,
+							["fadeout"] = true,
+							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = 201.0964965820313,
+								["x"] = 384.1998291015625,
+								["point"] = "BOTTOM",
+							},
+							["version"] = 3,
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["fadeoutdelay"] = 0,
+							["enabled"] = true,
+							["fadeout"] = true,
+							["buttons"] = 1,
+							["alpha"] = 0.15,
+							["version"] = 3,
+							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = -206.9373377288848,
+								["x"] = 434.4852841104839,
+								["point"] = "CENTER",
+								["scale"] = 1.649999976158142,
+							},
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+				["evoker"] = {
+					["actionbars"] = {
+						{
+							["version"] = 3,
+							["showgrid"] = true,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 88.00006183824962,
+								["x"] = -262.9753717569656,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["buttons"] = 6,
+							["rows"] = 3,
+							["fadeoutalpha"] = 0.45,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -4.150009031672113,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+								["x"] = -348,
+							},
+							["fadeout"] = true,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["fadeoutdelay"] = 0,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["buttons"] = 6,
+							["rows"] = 5,
+							["fadeoutalpha"] = 0.45,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 130.7500685497325,
+								["x"] = 250.0246797891305,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+							["fadeout"] = true,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["fadeoutdelay"] = 0,
+						}, -- [4]
+						{
+							["version"] = 3,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -3.988262984774451,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+								["x"] = -262.9757486490507,
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 130.987728001096,
+								["x"] = -262.9755167154599,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["enabled"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 146.2978210449219,
+								["x"] = 339.40087890625,
+								["point"] = "BOTTOM",
+							},
+							["rows"] = 3,
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["enabled"] = true,
+							["buttons"] = 1,
+							["alpha"] = 0.15,
+							["fadeoutdelay"] = 0,
+							["WoW10Layout"] = true,
+							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = -138.5614402593537,
+								["x"] = 356.4872202232327,
+								["point"] = "CENTER",
+								["scale"] = 1.649999976158142,
+							},
+							["version"] = 3,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["fadeout"] = true,
+						},
+						[15] = {
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						},
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["actionbars"] = {
+						{
+							["flyoutDirection"] = "LEFT",
+							["showgrid"] = true,
+							["position"] = {
+								["y"] = 151,
+								["x"] = -287.5000190734863,
+								["point"] = "BOTTOM",
+								["scale"] = 1.25,
+							},
+							["padding"] = -8,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["showgrid"] = true,
+							["version"] = 3,
+							["fadeoutdelay"] = 0,
+							["position"] = {
+								["y"] = 57,
+								["x"] = -287.5000190734863,
+								["point"] = "BOTTOM",
+								["scale"] = 1.25,
+							},
+							["WoW10Layout"] = true,
+							["padding"] = -8,
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["fadeoutalpha"] = 0.45,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["showgrid"] = true,
+							["rows"] = 5,
+							["fadeoutalpha"] = 0.45,
+							["WoW10Layout"] = true,
+							["fadeoutdelay"] = 0,
+							["position"] = {
+								["y"] = -134,
+								["x"] = -46.54999216794977,
+								["point"] = "CENTER",
+								["scale"] = 0.949999988079071,
+							},
+							["version"] = 3,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["buttons"] = 6,
+						}, -- [4]
+						{
+							["showgrid"] = true,
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 195,
+								["x"] = -270.8249943852425,
+								["point"] = "BOTTOM",
+								["scale"] = 1.149999976158142,
+							},
+							["WoW10Layout"] = true,
+							["padding"] = -7,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["version"] = 3,
+						}, -- [5]
+						{
+							["showgrid"] = true,
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 102,
+								["x"] = -270.8249943852425,
+								["point"] = "BOTTOM",
+								["scale"] = 1.149999976158142,
+							},
+							["WoW10Layout"] = true,
+							["padding"] = -7,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["version"] = 3,
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["enabled"] = true,
+							["version"] = 3,
+							["showgrid"] = true,
+							["position"] = {
+								["y"] = 134.3739318847656,
+								["x"] = -421.3528442382813,
+								["point"] = "BOTTOM",
+							},
+							["WoW10Layout"] = true,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["buttons"] = 1,
+						},
+						[13] = {
+							["enabled"] = true,
+							["version"] = 3,
+							["showgrid"] = true,
+							["position"] = {
+								["y"] = 179.0739250600473,
+								["x"] = -413.7419760052308,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+							["WoW10Layout"] = true,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["buttons"] = 1,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						},
+					},
+				},
+				["qutlaww"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 96.4812240600586,
+								["x"] = -284.4999694824219,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -224.0000305175781,
+								["x"] = -284.5001220703125,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -54,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -104,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 141.4851684570313,
+								["x"] = -284.4999694824219,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 55.99999618530273,
+								["x"] = -284.4999694824219,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 82,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -54,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -104,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["enabled"] = false,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 184,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 133,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+				["cheddarbob"] = {
+					["actionbars"] = {
+						{
+							["version"] = 3,
+							["showgrid"] = true,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 88.00006183824962,
+								["x"] = -262.9753717569656,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["buttons"] = 6,
+							["rows"] = 3,
+							["fadeout"] = true,
+							["WoW10Layout"] = true,
+							["fadeoutdelay"] = 0,
+							["position"] = {
+								["y"] = -4.150009031672113,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+								["x"] = -348,
+							},
+							["fadeoutalpha"] = 0.45,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["buttons"] = 6,
+							["rows"] = 5,
+							["fadeout"] = true,
+							["WoW10Layout"] = true,
+							["fadeoutdelay"] = 0,
+							["position"] = {
+								["y"] = 130.7500685497325,
+								["x"] = 250.0246797891305,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+							["fadeoutalpha"] = 0.45,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["version"] = 3,
+						}, -- [4]
+						{
+							["version"] = 3,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -3.988262984774451,
+								["growVertical"] = "UP",
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+								["x"] = -262.9757486490507,
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["padding"] = 0,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 130.987728001096,
+								["x"] = -262.9755167154599,
+								["point"] = "BOTTOM",
+								["scale"] = 0.949999988079071,
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						},
+						[13] = {
+							["enabled"] = true,
+							["buttons"] = 1,
+							["alpha"] = 0.15,
+							["fadeout"] = true,
+							["WoW10Layout"] = true,
+							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = -138.5614402593537,
+								["x"] = 356.4872202232327,
+								["point"] = "CENTER",
+								["scale"] = 1.649999976158142,
+							},
+							["fadeoutdelay"] = 0,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = false,
+								["overridebar"] = false,
+							},
+							["version"] = 3,
+						},
+						[15] = {
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						},
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["actionbars"] = {
+						{
+							["fadeout"] = true,
+							["showgrid"] = true,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 49.0000114440918,
+								["x"] = -284.5,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -54,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -104,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 184,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["WoW10Layout"] = true,
+							["version"] = 3,
+							["fadeout"] = true,
+							["position"] = {
+								["y"] = 94.32292938232422,
+								["x"] = -284.5,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 82,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = -223.9998168945313,
+								["x"] = -284.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -54,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [3]
+						{
+							["flyoutDirection"] = "LEFT",
+							["position"] = {
+								["y"] = 193,
+								["x"] = -104,
+								["point"] = "RIGHT",
+							},
+							["rows"] = 12,
+							["WoW10Layout"] = true,
+							["version"] = 3,
+						}, -- [4]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 184,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["WoW10Layout"] = true,
+							["position"] = {
+								["y"] = 133,
+								["x"] = -285,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+							["WoW10Layout"] = true,
+						}, -- [7]
+						{
+							["WoW10Layout"] = true,
+						}, -- [8]
+						{
+							["WoW10Layout"] = true,
+						}, -- [9]
+						{
+							["WoW10Layout"] = true,
+						}, -- [10]
+						[14] = {
+							["WoW10Layout"] = true,
+						},
+						[13] = {
+							["WoW10Layout"] = true,
+						},
+						[15] = {
+							["WoW10Layout"] = true,
+						},
+					},
+				},
+			},
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["ExtraActionBar"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
+				["cyclosarin"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 124.4500129342077,
+						["x"] = 439.6984548706951,
+						["point"] = "BOTTOMLEFT",
+						["scale"] = 0.949999988079071,
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["fadeoutalpha"] = 0,
+					["visibility"] = {
+						["always"] = false,
+					},
+					["version"] = 3,
+					["position"] = {
+						["y"] = -82.71142380641504,
+						["x"] = 275.8087950661684,
+						["point"] = "CENTER",
+						["scale"] = 0.949999988079071,
+					},
+				},
+				["Qpcheese - Ragnaros"] = {
+					["position"] = {
+						["y"] = -179.8861037619972,
+						["x"] = -401.5605842394507,
+						["point"] = "RIGHT",
+						["scale"] = 0.949999988079071,
+					},
+					["version"] = 3,
+				},
+				["evoker"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 192.0851530767095,
+						["x"] = 448.6788945163062,
+						["point"] = "BOTTOMLEFT",
+						["scale"] = 0.949999988079071,
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -57.39646911621094,
+						["x"] = 467.2626647949219,
+						["point"] = "LEFT",
+					},
+				},
+				["qutlaww"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -245.8333587646484,
+						["x"] = -63.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
+				["cheddarbob"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -161.7716706170741,
+						["x"] = 446.1806587730098,
+						["point"] = "CENTER",
+						["scale"] = 0.949999988079071,
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
+			},
+		},
+		["MicroMenu"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 34,
+						["x"] = -229,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["cyclosarin"] = {
+					["fadeout"] = true,
+					["position"] = {
+						["y"] = 246.6086369491386,
+						["growVertical"] = "UP",
+						["point"] = "RIGHT",
+						["scale"] = 1.200000047683716,
+						["x"] = -233.0991038323555,
+					},
+					["fadeoutdelay"] = 0,
+					["padding"] = -2,
+					["version"] = 3,
+					["fadeoutalpha"] = 1,
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 34,
+						["x"] = -229,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 34,
+						["x"] = -229,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["fadeoutdelay"] = 0,
+					["position"] = {
+						["y"] = -197.8402458425408,
+						["x"] = -183.5127674462856,
+						["point"] = "TOPRIGHT",
+						["scale"] = 0.800000011920929,
+					},
+					["padding"] = 2,
+					["fadeoutalpha"] = 0,
+					["version"] = 3,
+				},
+				["Qpcheese - Ragnaros"] = {
+					["fadeout"] = true,
+					["fadeoutalpha"] = 1,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 246.6086369491386,
+						["x"] = -233.0991038323555,
+						["point"] = "RIGHT",
+						["scale"] = 1.200000047683716,
+						["growVertical"] = "UP",
+					},
+					["padding"] = -2,
+					["fadeoutdelay"] = 0,
+				},
+				["evoker"] = {
+					["fadeout"] = true,
+					["position"] = {
+						["y"] = 247.5876653083542,
+						["growVertical"] = "UP",
+						["point"] = "RIGHT",
+						["scale"] = 1.200000047683716,
+						["x"] = -240.0002759815834,
+					},
+					["fadeoutdelay"] = 0,
+					["padding"] = -2,
+					["version"] = 3,
+					["fadeoutalpha"] = 1,
+				},
+				["Qutlaw - Ravencrest"] = {
+					["fadeout"] = true,
+					["fadeoutalpha"] = 0,
+					["position"] = {
+						["y"] = -196.8058248098387,
+						["x"] = -151.3048623008945,
+						["point"] = "TOPRIGHT",
+						["scale"] = 1.200000047683716,
+					},
+					["padding"] = -2,
+					["rows"] = 2,
+					["version"] = 3,
+					["fadeoutdelay"] = 0,
+				},
+				["qutlaww"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 34,
+						["x"] = -229,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 34,
+						["x"] = -229,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["cheddarbob"] = {
+					["fadeout"] = true,
+					["fadeoutdelay"] = 0,
+					["position"] = {
+						["y"] = -196.8058248098387,
+						["x"] = -151.3048623008945,
+						["point"] = "TOPRIGHT",
+						["scale"] = 1.200000047683716,
+					},
+					["fadeoutalpha"] = 0,
+					["rows"] = 2,
+					["padding"] = -2,
+					["version"] = 3,
+				},
+				["Qpe - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 34,
+						["x"] = -229,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 34,
+						["x"] = -229,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+			},
+		},
+		["BagBar"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 74,
+						["x"] = -212,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["cyclosarin"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -243.5666351318359,
+						["x"] = -397.958740234375,
+						["point"] = "RIGHT",
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 74,
+						["x"] = -212,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 74,
+						["x"] = -212,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["enabled"] = false,
+					["onebagreagents"] = false,
+					["position"] = {
+						["y"] = -9,
+						["growVertical"] = "UP",
+						["point"] = "BOTTOM",
+						["scale"] = 1.149999976158142,
+						["x"] = 304.315769932291,
+					},
+					["padding"] = -1,
+					["version"] = 3,
+				},
+				["Qpcheese - Ragnaros"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -243.5666351318359,
+						["x"] = -397.958740234375,
+						["point"] = "RIGHT",
+					},
+				},
+				["evoker"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -243.5666351318359,
+						["x"] = -397.958740234375,
+						["point"] = "RIGHT",
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -243.5666351318359,
+						["x"] = -397.958740234375,
+						["point"] = "RIGHT",
+					},
+				},
+				["qutlaww"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 74,
+						["x"] = -212,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 74,
+						["x"] = -212,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["cheddarbob"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -243.5666351318359,
+						["x"] = -397.958740234375,
+						["point"] = "RIGHT",
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 74,
+						["x"] = -212,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 74,
+						["x"] = -212,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+			},
+		},
+		["BlizzardArt"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["enabled"] = true,
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cyclosarin"] = {
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+					["version"] = 3,
+					["artLayout"] = "MODERN",
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["enabled"] = true,
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["enabled"] = true,
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+					["version"] = 3,
+					["artLayout"] = "MODERN",
+				},
+				["Qpcheese - Ragnaros"] = {
+					["artLayout"] = "MODERN",
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+					["version"] = 3,
+				},
+				["evoker"] = {
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+					["version"] = 3,
+					["artLayout"] = "MODERN",
+				},
+				["qutlaww"] = {
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 71.28155517578125,
+						["x"] = -271.4908142089844,
+						["point"] = "CENTER",
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["enabled"] = true,
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cheddarbob"] = {
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["enabled"] = true,
+					["artLayout"] = "MODERN",
+					["version"] = 3,
+					["position"] = {
+						["y"] = 87,
+						["x"] = -288.5,
+						["point"] = "BOTTOM",
+					},
+				},
+			},
+		},
+		["StanceBar"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
+						["point"] = "CENTER",
+					},
+				},
+				["cyclosarin"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 173.8803291320801,
+						["x"] = -411.3889312744141,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 168,
+						["x"] = -285,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["enabled"] = false,
+					["fadeoutalpha"] = 0,
+					["position"] = {
+						["y"] = 164.4225769042969,
+						["x"] = 288.922119140625,
+						["point"] = "BOTTOM",
+						["scale"] = 2,
+					},
+					["hidehotkey"] = false,
+					["padding"] = 20,
+					["visibility"] = {
+						["stance"] = {
+							false, -- [1]
+						},
+					},
+					["version"] = 3,
+				},
+				["Qpcheese - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 173.8803291320801,
+						["x"] = -411.3889312744141,
+						["point"] = "BOTTOM",
+					},
+				},
+				["evoker"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 173.8803291320801,
+						["x"] = -411.3889312744141,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["version"] = 3,
+					["padding"] = 1,
+					["hidehotkey"] = false,
+					["position"] = {
+						["y"] = 82.00001525878906,
+						["x"] = 359.5340576171875,
+						["point"] = "BOTTOM",
+						["scale"] = 2,
+					},
+				},
+				["qutlaww"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 151.6000061035156,
+						["x"] = -346.16259765625,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
+						["point"] = "CENTER",
+					},
+				},
+				["cheddarbob"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 180.6065940856934,
+						["x"] = 447.0145568847656,
+						["point"] = "BOTTOMLEFT",
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
+						["point"] = "CENTER",
+					},
+				},
+			},
+		},
+		["PetBar"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 168,
+						["x"] = -285,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cyclosarin"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 251.282958984375,
+						["x"] = 113.035041809082,
+						["point"] = "BOTTOMLEFT",
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 168,
+						["x"] = -41,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 168,
+						["x"] = -285,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -90.65341186523438,
+						["x"] = -162.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Qpcheese - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -54.05560302734375,
+						["x"] = 38.0445556640625,
+						["point"] = "LEFT",
+					},
+				},
+				["evoker"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -226.0555725097656,
+						["x"] = 74.04454803466797,
+						["point"] = "LEFT",
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -183.3077392578125,
+						["x"] = -162.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["qutlaww"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 239.8989105224609,
+						["x"] = 68.11746978759766,
+						["point"] = "BOTTOMLEFT",
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 168,
+						["x"] = -285,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cheddarbob"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 219.2434997558594,
+						["x"] = 23.23750877380371,
+						["point"] = "BOTTOMLEFT",
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 254.8667297363281,
+						["x"] = 104.0889587402344,
+						["point"] = "BOTTOMLEFT",
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 168,
+						["x"] = -285,
+						["point"] = "BOTTOM",
+					},
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Qope - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 153,
+						["x"] = -337,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cyclosarin"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -212.7442016601563,
+						["x"] = 463.0000915527344,
+						["point"] = "LEFT",
+					},
+				},
+				["Cheddarboy - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 153,
+						["x"] = -337,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Myfficraider - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 153,
+						["x"] = -337,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qutlaw tbord layout"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -212.7442016601563,
+						["x"] = 463.0000915527344,
+						["point"] = "LEFT",
+					},
+				},
+				["Qpcheese - Ragnaros"] = {
+					["position"] = {
+						["y"] = -155.451416015625,
+						["x"] = 439.2223205566406,
+						["point"] = "LEFT",
+					},
+					["version"] = 3,
+				},
+				["evoker"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -212.7442016601563,
+						["x"] = 463.0000915527344,
+						["point"] = "LEFT",
+					},
+				},
+				["Qutlaw - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -212.7442016601563,
+						["x"] = 463.0000915527344,
+						["point"] = "LEFT",
+					},
+				},
+				["qutlaww"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 147.9402618408203,
+						["x"] = -404.2935180664063,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Itgma - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 153,
+						["x"] = -337,
+						["point"] = "BOTTOM",
+					},
+				},
+				["cheddarbob"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 247.2665863037109,
+						["x"] = -392.4768676757813,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Qpe - Ravencrest"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 153,
+						["x"] = -337,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Cyclosarin - Ragnaros"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 153,
+						["x"] = -337,
+						["point"] = "BOTTOM",
+					},
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
+		["Qutlaw - Ravencrest"] = "Qutlaw tbord layout",
+		["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+		["Qope - Ragnaros"] = "Qope - Ragnaros",
+		["Itgma - Grim Batol"] = "Itgma - Grim Batol",
+		["Cheddarboy - Ravencrest"] = "cheddarbob",
+		["Myfficraider - Ragnaros"] = "evoker",
+		["Cyclosarin - Ragnaros"] = "cyclosarin",
+	},
+	["profiles"] = {
+		["Qope - Ragnaros"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["cyclosarin"] = {
+			["snapping"] = false,
+			["minimapIcon"] = {
+				["minimapPos"] = 157.655231684542,
+				["hide"] = false,
+			},
+			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
+			["outofrange"] = "hotkey",
+		},
+		["Cheddarboy - Ravencrest"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["Myfficraider - Ragnaros"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["Qutlaw tbord layout"] = {
+			["snapping"] = false,
+			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
+			["outofrange"] = "hotkey",
+		},
+		["Qpcheese - Ragnaros"] = {
+			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
+			["minimapIcon"] = {
+				["minimapPos"] = 157.655231684542,
+				["hide"] = false,
+			},
+			["outofrange"] = "hotkey",
+		},
+		["evoker"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["minimapIcon"] = {
+				["minimapPos"] = 157.655231684542,
+			},
+			["outofrange"] = "hotkey",
+		},
+		["Qutlaw - Ravencrest"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["qutlaww"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["Itgma - Grim Batol"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["cheddarbob"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["minimapIcon"] = {
+				["minimapPos"] = 157.655231684542,
+			},
+			["outofrange"] = "hotkey",
+		},
+		["Qpe - Ravencrest"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["Cyclosarin - Ragnaros"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+	},
+}

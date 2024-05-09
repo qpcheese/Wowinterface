@@ -1,11 +1,21 @@
 
 TD_DB_BATTLEPETSCRIPT_GLOBAL = {
+	["profileKeys"] = {
+		["Flurrq - Ragnaros"] = "Default",
+		["Fishanus - Ragnaros"] = "Default",
+		["Qpaladin - Ragnaros"] = "Default",
+		["Qpfromage - Ragnaros"] = "Default",
+		["Qpfromage - Sylvanas"] = "Default",
+		["Dogson - Ragnaros"] = "Default",
+	},
 	["global"] = {
 		["version"] = "v1.10.1",
 		["scripts"] = {
 			["FirstEnemy"] = {
 			},
 			["AllInOne"] = {
+			},
+			["Base"] = {
 			},
 			["Rematch4"] = {
 				[150922] = {
@@ -272,17 +282,17 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Sully \"The Pickle\" McLeary",
 					["code"] = "use(Drain Blood:1043) [enemy.aura(Undead:242).exists]\nuse(Lift-Off:170) [enemy.aura(Underground:340).exists]\nuse(Drain Blood:1043) [enemy.aura(Vicious Streak:850).exists]\nuse(Drain Blood:1043) [enemy(Rikki:1290).active]\nuse(Lift-Off:170) [enemy(Rikki:1290).active]\nuse(Call Darkness:256) [enemy(Rikki:1290).active]\nuse(Nocturnal Strike:517) [enemy(Rikki:1290).active]\nuse(Flurry:360)\nuse(Bite:110)\nchange(next)",
 				},
-				[200688] = {
-					["name"] = "Wildfire - Legendary",
-					["code"] = "use(Illuminate:460)\nuse(Murder the Innocent:2223)\nchange(next)",
+				[141814] = {
+					["name"] = "Accidental Dread",
+					["code"] = "if [ !self(#2).active ]\n    ability(Life Exchange:277) [ enemy(#2).active ]\n    ability(Moonfire:595) [ enemy.round<3 ]\n    ability(Arcane Blast:421)\nendif\nchange(#3) [ self(#2).played ]\nchange(#2) [ !self(#2).played ]\nability(Arcane Storm:589)\nability(Mana Surge:489)\nability(Tail Sweep:122)",
 				},
 				[160209] = {
 					["name"] = "Horu Cloudwatcher",
 					["code"] = "ability(Bubble:934) [round=1]\nability(Stampede:163) [!enemy.aura(Shattered Defenses:542).exists]\nability(Explode:282) [self.hp<1061 & enemy.round>1 & enemy(#3).active]\nability(Supercharge:208) [enemy(#3).active]\nability(#1)\nchange(next)",
 				},
-				[150858] = {
-					["name"] = "Blackmane",
-					["code"] = "ability(Zusätzlicher Beschlag:392) [round==1]\nability(Goldregen:985)\nability(Inflation:1002)\nability(Schlaghagel:360)\nchange(next)",
+				[201858] = {
+					["name"] = "Lyver",
+					["code"] = "use(919) [round=1] \nuse(581) [round=2] \nuse(1370) [round=5]",
 				},
 				[154918] = {
 					["name"] = "Kelpstone",
@@ -292,9 +302,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Snakes on a Terrace",
 					["code"] = "standby [ round=1 ]\nuse(Magic Sword:1085) [ enemy(Clubber:2355).active ]\nchange(#3)\nstandby [enemy.aura(Underwater:830).exists ]\nuse(Leap:364) [ enemy.hp<730 ]\nuse(Hunting Party:921) [ enemy.aura(claw:918).exists ]\nuse(Leap:364) [ enemy(Squeezer:2353).aura(claw:918).exists ]\nuse(Black Claw:919)\nuse(#1)\nchange(#1)",
 				},
-				[154917] = {
-					["name"] = "Mindshackle",
-					["code"] = "use(Blistering Cold:786) [ round~1,4 ]\nuse(BONESTORM:1762) [ round=3 ]\nuse(Chop:943)\nuse(Black Claw:919) [ self.round=1 ]\nuse(Hunting Party:921)\nuse(Flock:581)\nuse(Swarm:706)\nchange(next)\nstandby",
+				[200689] = {
+					["name"] = "Wildfire - Rare",
+					["code"] = "ability(Blistering Cold:786)\nability(Chop:943) [!enemy.aura(Bleeding:491).exists]\nability(BONESTORM!!:1762) [!self.aura(Undead:242).exists]\nability(Chop:943)\n\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\n\nchange(next)",
 				},
 				[196069] = {
 					["name"] = "The Grand Master (Humanoid)",
@@ -312,9 +322,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Tasha Riley",
 					["code"] = "standby [enemy.aura(Undead:242).exists]\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Swarm:706)\nability(Inflation:1002) [enemy(#3).active]\nability(#2)\nability(#3)\nability(#1)\nchange(next)",
 				},
-				[155267] = {
-					["name"] = "Risen Guard",
-					["code"] = "standby [enemy(#2).type=4 & enemy(#1).aura(Undead:242).exists]\nstandby [enemy(#3).type=4 & enemy(#2).aura(Undead:242).exists]\nstandby [enemy(#2).type=2 & enemy(#1).aura(Undead:242).exists]\nstandby [enemy(#3).type=2 & enemy(#2).aura(Undead:242).exists]\nchange(#2) [enemy(#1).aura(Undead:242).exists & enemy(#2).type=6]\nchange(#2) [enemy(#2).aura(Undead:242).exists & enemy(#3).type=6]\n-----------------------\nability(Blinding Poison:1049) [round=1]\nability(Decoy:334) [enemy.round=2]\nability(Thunderbolt:779)\nchange(#1) [self(#2).active & enemy.type=4]\nability(Poison Fang:152) [enemy.is(Plague Whelp:2606) & enemy.round=1]\nability(Blinding Poison:1049) [!enemy(#1).active & !enemy.aura(Undead:242).exists]\nability(Poison Fang:152) [!enemy(#1).active & !enemy.aura(Poisoned:379).exists & enemy.type=6]\nchange(#1) [self(#2).active & enemy.type=4]\nability(#1)\nchange(next)",
+				[72291] = {
+					["name"] = "Yu'la, Broodling of Yu'lon",
+					["code"] = "standby [round=5]\nuse(Darkflame:792) [round=7]\nchange(#1) [self(#3).active]\nuse(Murder the Innocent)\nuse(Eyeblast:475)\nchange(next)",
 				},
 				[119408] = {
 					["name"] = "\"Captain\" Klutz",
@@ -324,9 +334,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Swog the Elder (Humanoid)",
 					["code"] = "change(#1) [self(#3).active]\nuse(Sunlight:404) [round=1]\nuse(Murder the Innocent:2223)\nif [self(#3).played]\nuse(Solar Beam:753)\nuse(Skitter:626)\nuse(Darkflame:792)\nuse(Scorched Earth:172)\nuse(Eyeblast:475)\nuse(Eye Beam:1533)\nuse(Trample:377)\nendif\nchange(next)",
 				},
-				["To a Land Down Under (Beast)"] = {
-					["name"] = "To a Land Down Under (Beast)",
-					["code"] = "change(#2) [ round=5 ]\nchange(#1) [ self(#2).dead & !enemy(Clawz:3559).dead ]\nuse(Prowl:536) [ !enemy.is(Clawz:3559) & enemy.hp>339 & !weather(Moonlight:596) ]\nuse(Prowl:536) [ !enemy.is(Clawz:3559) & enemy.hp>309 ]\nuse(Arcane Dash:1536)\nuse(Scrabble:2430)\nuse(Moonfire:595)\nuse(Spirit Claws:974)\nuse(Booby-Trapped Presents:1080) [ enemy.is(Clawz:3559) ]\nuse(Huge Fang:930)\nuse(Gift of Winter's Veil:586)\nstandby\nchange(next)",
+				["Are They Not Beautiful? (Humanoid)"] = {
+					["name"] = "Are They Not Beautiful? (Humanoid)",
+					["code"] = "change(#2) [round=4]\nquit [self(#3).active & enemy(#2).active]\nuse(Soulrush:752) [enemy(Beeks:3566).active]\nuse(Creeping Insanity:1760) [!enemy(Beeks:3566).active]\nuse(Spiritfire Bolt:1066)\nuse(Ice Lance:413) [enemy(Fethres:3565).active]\nuse(Gift of Winter's Veil:586)\nuse(Call Blizzard:206)\nuse(Ice Lance:413)\nchange(Void-Scarred Anubisath:2833) [self.dead]\nuse(Weakness:471) [enemy.aura(Creeping Insanity:1759).exists]\nuse(Nether Blast:608)",
 				},
 				["Are They Not Beautiful? (Mech)"] = {
 					["name"] = "Are They Not Beautiful? (Mech)",
@@ -336,17 +346,17 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Tremblor - Legendary",
 					["code"] = "use(Blistering Cold:786)\nuse(Chop:943)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Flock:581)\nuse(Hunting Party:921)\nuse(Leap:364)\nchange(next)",
 				},
-				[145988] = {
-					["name"] = "Pulverizer Bot Mk 6001",
-					["code"] = "if [self(Fel-Afflicted Skyfin).active]\nuse(#2)\nendif\n\nif [self(Boneshard).active]\nuse(#2)\nuse(#1)\nendif\n\nif [self(Fel-Afflicted Skyfin).active]\nuse(#2)\nendif\n\nchange(next)",
+				[68465] = {
+					["name"] = "Thundering Pandaren Spirit",
+					["code"] = "change(#1) [enemy(#2).active & enemy.aura(Flame Breath:500).exists & enemy.aura(Razor Talons:2238).exists]\nuse(Feign Death:568) [enemy(#2).active]\nuse(Swarm of Flies:232) [round=4]\nuse(Swarm of Flies:232) [enemy(#3).active & enemy.aura(Poisoned:379).exists]\n\nuse(Flame Breath:501) [self.round=1 & enemy(#2).active]\nuse(Needle Claw:2375)\nuse(Razor Talons:2237) [!enemy.aura(Razor Talons:2238).exists]\n\nuse(Flame Breath:501)\nchange(#2)",
 				},
-				[72290] = {
-					["name"] = "Zao, Calfling of Niuzao",
-					["code"] = "use(167)\nuse(411)\nuse(919) [ round=3 ]\nuse(921)\nchange(#2)",
+				[200678] = {
+					["name"] = "Storm-Touched Slyvern",
+					["code"] = "use(Arcane Storm:589) [round=1]\nuse(Mana Surge:489)\nchange(Arcane Eye:1160)\nuse(Eyeblast:475)\nuse(#1)\nchange(next)",
 				},
-				[200693] = {
-					["name"] = "Tremblor - Rare",
-					["code"] = "ability(Blistering Cold:786)\nability(Chop:943) [!enemy.aura(Bleeding:491).exists]\nability(BONESTORM!!:1762)\n\nability(Primal Cry:920)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\n\nability(#1)\nchange(next)",
+				[119345] = {
+					["name"] = "Klutz's Battle Monkey",
+					["code"] = "ability(Ironskin:1758) [ round>2 ]\nability(Predatory Strike:518) [ enemy.aura(Shattered Defenses:542).exists & enemy.hpp>25 ]\nability(#1)\nchange(#2)",
 				},
 				[154920] = {
 					["name"] = "Frenzied Knifefang",
@@ -364,9 +374,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Lurking In The Shadows",
 					["code"] = "use(Appel de la foudre:204)\nuse(Détraqué:916)",
 				},
-				[119345] = {
-					["name"] = "Klutz's Battle Monkey",
-					["code"] = "ability(Ironskin:1758) [ round>2 ]\nability(Predatory Strike:518) [ enemy.aura(Shattered Defenses:542).exists & enemy.hpp>25 ]\nability(#1)\nchange(#2)",
+				[200693] = {
+					["name"] = "Tremblor - Rare",
+					["code"] = "ability(Blistering Cold:786)\nability(Chop:943) [!enemy.aura(Bleeding:491).exists]\nability(BONESTORM!!:1762)\n\nability(Primal Cry:920)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\n\nability(#1)\nchange(next)",
 				},
 				[71931] = {
 					["name"] = "Taran Zhu",
@@ -384,9 +394,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Foe Reaper 50",
 					["code"] = "ability(418)\nability(564)\nability(118)\nchange(#2)\nability(#1)",
 				},
-				[162465] = {
-					["name"] = "Dune Buggy",
-					["code"] = "ability(Blistering Cold:786) [round=1]\nability(BONESTORM:1762) [round>2]\nability(Chop:943)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\nchange(next)",
+				[141879] = {
+					["name"] = "Keeyo's Champions of Vol'dun",
+					["code"] = "change(#2) [enemy(#2).active]\nability(459) [self.aura(458).exists]\nability(1921) [self.round=1]\nability(459) [self.round=2]\nability(#3)\nability(974) [enemy(#3).active]\nability(595) [enemy(#1).active]\nchange(#1) [self(#2).dead]",
 				},
 				[141215] = {
 					["name"] = "Unbreakable",
@@ -396,13 +406,13 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Airborne Defense Force",
 					["code"] = "use(Void Crash:2358)\nuse(Flame Breath:501) [round=3]\nuse(Time Bomb:602)\nuse(Armageddon:1025)\nif [enemy(#2).active]\nstandby [round=6 & !enemy(#1).dead & enemy(#1).hp<207]\nuse(Arcane Explosion:299)\nendif\nuse(Howl:362) [!self.aura(Dragonkin:245).exists]\nuse(Surge of Power:593)\nchange(next)",
 				},
-				["To a Land Down Under (Flyer)"] = {
-					["name"] = "To a Land Down Under (Flyer)",
-					["code"] = "ability(Ironskin:1758)\nability(Predatory Strike:518) [round=4]\nability(Falcosaur Swarm!:1773)\n\nability(Quills:184) [enemy(#1).active]\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Flock:581)\nability(Quills:184)\n\nability(#2)\nability(#3)\nability(#1)\n\nchange(next)",
+				[140880] = {
+					["name"] = "What's the Buzz?",
+					["code"] = "ability(Emerald Presence:597) [ !self.aura(Emerald Presence:823).exists ]\nability(Emerald Presence:597) [ self.aura(Emerald Presence:823).duration = 1 ]\nability(Emerald Dream:598) [ self.hp <750 ]\nstandby",
 				},
-				[116794] = {
-					["name"] = "Growing Ectoplasm 2",
-					["code"] = "change(#2) [self(#1).dead]\nchange(#3) [self(#2).dead]\nif [enemy(#1).active]\n    ability(919) [!enemy.aura(918).exists]\n    ability(921)\n    ability(364) [enemy.aura(542).exists]\nendif\nability(919) [!enemy.aura(918).exists]\nability(921)\nability(597) [self.aura(823).duration<=1]\nability(598) [self.hp<1000]\nability(525)",
+				[141046] = {
+					["name"] = "Captured Evil",
+					["code"] = "ability(321)\nability(#2)\nability(#3)\nability(#1)\nchange(next)",
 				},
 				[104970] = {
 					["name"] = "Dealing with Satyrs",
@@ -420,29 +430,29 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Do You Even Train?",
 					["code"] = "use(Moonfire:595) [!weather(Moonlight:596)]\nuse(Prowl:536) [enemy(Lifft:3572).active]\nuse(Spirit Claws:974)\n\nuse(Decoy:334) [enemy(Swole:3573).active]\nuse(Breath:115)\n\nuse(Deflection:490) [enemy(Swole:3573).aura(Underwater:830).exists]\nuse(Rampage:124) [!enemy(Swole:3573).ability(Dive:564).usable]\nuse(Triple Snap:355)\n\nstandby\nchange(next)",
 				},
-				[140315] = {
-					["name"] = "Automated Chaos",
-					["code"] = "standby [enemy(\"Fixed\" Remote Control Rocket Chicken:2204).active]\nability(Call Blizzard:206)\nability(Deep Freeze:481) [enemy.hp>=444]\nability(#1)\nchange(next)",
-				},
-				[161663] = {
-					["name"] = "Tempton",
-					["code"] = "ability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Flock:581)",
-				},
-				[119346] = {
-					["name"] = "Unfortunate Defias",
-					["code"] = "ability(Bubble:934)\nability(Swarm of Flies:232) [ !enemy.aura(Swarm of Flies:231).exists ]\nability(Tongue Lash:228)\nchange(#2)\nability(Nature's Ward:574) [ !self.aura(Nature's Ward:820).exists ]\nability(Alpha Strike:504) [ enemy.hp > 309 ]\nability(Ravage:802)",
+				["Do You Even Train? (Mech)"] = {
+					["name"] = "Do You Even Train? (Mech)",
+					["code"] = "change(#3) [ enemy.is(Swole:3573) & self.aura(Decoy:333).exists ]\nchange(#3) [ enemy.is(Swole:3573) & !enemy.ability(Headbutt:376).usable ]\nuse(Powerball:566) [ !self.speed.fast ]\nif [ self.aura(Wind-Up:458).exists ]\n    use(Supercharge:208) [ enemy.is(Lifft:3572) & enemy.ability(Dive:564).duration~2,3,4 ]\n    use(Powerball:566) [ enemy.aura(Underwater:830).exists ]\n    use(Wind-Up:459) [ enemy.is(Brul'dan:3571) ]\nendif\nuse(Powerball:566) [ enemy.is(Brul'dan:3571) & self.aura(Mechanical:244).exists & !enemy.ability(Drain Power:486).usable ]\nuse(Wind-Up:459)\nif [ enemy.is(Brul'dan:3571) ]\n    use(Time Bomb:602) [ enemy.hp<1097 ]\n    use(Decoy:334) [ enemy.hp<549 & !enemy.aura(Flame Breath:500).exists ]\nendif\nuse(Flame Breath:501) [ !enemy.is(Swole:3573) ]\nuse(Alert!:1585) [ enemy.hp>1726 ]\nuse(Alert!:1585) [ enemy.is(Brul'dan:3571) ]\nuse(Ion Cannon:209) [ self.aura(Supercharged:207).exists ]\nuse(Supercharge:208)\nstandby [ self(#2).active ]\nchange(next)",
 				},
 				["Chi-Chi, Hatchling of Chi-Ji (2)"] = {
 					["name"] = "Chi-Chi, Hatchling of Chi-Ji (2)",
 					["code"] = "ability(Immolation:409) [!self.aura(Immolation:408).exists]\nability(Wild Magic:592) [!enemy.aura(Wild Magic:591).exists]\nability(Acidic Goo:369) [self.round=1]\nability(Dive:564) [self.round=4]\nchange(#2)\nability(#1)",
 				},
-				[161662] = {
-					["name"] = "Char",
-					["code"] = "change(#2) [round=3]\nuse(Howl:362)\nuse(Surge of Power:593)\nuse(Time Bomb:602)\nuse(Decoy:334)\nstandby",
+				[119346] = {
+					["name"] = "Unfortunate Defias",
+					["code"] = "ability(Bubble:934)\nability(Swarm of Flies:232) [ !enemy.aura(Swarm of Flies:231).exists ]\nability(Tongue Lash:228)\nchange(#2)\nability(Nature's Ward:574) [ !self.aura(Nature's Ward:820).exists ]\nability(Alpha Strike:504) [ enemy.hp > 309 ]\nability(Ravage:802)",
 				},
-				[98270] = {
-					["name"] = "My Beast's Bidding",
-					["code"] = "quit [!self(#3).exists]\n\nchange(next) [self.dead]\nchange(#3) [self(#2).played]\n\nuse(#2) \nuse(#3) [self(#1).active]\nuse(#3) [enemy(#2).dead]\n\nuse(#1)\nstandby",
+				[71932] = {
+					["name"] = "Wise Mari",
+					["code"] = "ability(Blingtron Gift Package:989) [ enemy.aura(Make it Rain:986).duration=1 ]\nability(Make it Rain:985)\nability(Inflation:1002)\nability(Consume Magic:1231) [ self.aura(Whirlpool:512).exists ]\nability(Creeping Ooze:448)\nchange(#2)",
+				},
+				[139987] = {
+					["name"] = "This Little Piggy Has Sharp Tusks",
+					["code"] = "change(next) [ self(#1).dead & !self(#3).played ] \nability(#2) [ !enemy.aura(217).exists ] \nability(#3) \nability(#1)",
+				},
+				[85685] = {
+					["name"] = "Stitches Jr.",
+					["code"] = "standby [round~3,7]\nability(Supercharge:208) [round=5]\nability(Wind-Up:459)\nchange(#2)",
 				},
 				[154923] = {
 					["name"] = "Sputtertube",
@@ -452,9 +462,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Resilient Survivors",
 					["code"] = "ability(Prowl:536) [self.aura(Blinding Poison:1048).exists]\nstandby [self.aura(Blinding Poison:1048).exists]\nability(Whirlpool:513) [enemy.round=1]\nability(Dive:564) [round=2]\nability(Arcane Storm:589)\nability(Mana Surge:489)\nability(#1)\nchange(next)",
 				},
-				[200696] = {
-					["name"] = "Flow - Legendary",
-					["code"] = "use(#1) [round~1,2]\nuse(#3) [enemy(#1).aura(918).exists]\nuse(#2)\nuse(#3) [enemy(#1).aura(217).exists]\nchange(#2)",
+				[116792] = {
+					["name"] = "Phyxia",
+					["code"] = "use(Supercharge:208) [enemy.hp>361]\nuse(Repair:278) [round=3]\nuse(Metal Fist:384)\nuse(#1)\nchange(next)",
 				},
 				[161649] = {
 					["name"] = "Rampage",
@@ -464,9 +474,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Fight Night: Amalia",
 					["code"] = "change(#1) [self(#2).active]\nchange(#2) [enemy.aura(Cute Face:904).exists & !self(#2).played]\nchange(#3) [enemy(#3).active]\nuse(Cleansing Rain:230) [self.aura(Pumped Up:296).exists]\nuse(Acid Rain:1051) [self.aura(Pumped Up:296).exists]\nuse(Pump:297)\nuse(Focus:426) [self.aura(Focused:425).duration<2]\nuse(Sandstorm:453)\nuse(Zap:116)",
 				},
-				[146183] = {
-					["name"] = "Living Napalm",
-					["code"] = "ability(Shell Armor:1380) \nability(Swallow You Whole:276) [enemy.hpp < 25]\nability(Deep Bite:1372)\nability(Shell Shield:310) [!self.aura(Shell Shield:309).exists]\nchange(next) [self.dead]\nability(#1)",
+				[104553] = {
+					["name"] = "Snail Fight!",
+					["code"] = "change(#1) [self(#3).played]\nchange(#2) [round=2]\nchange(#3) [round=4]\nuse(Great Sting:1966)\nstandby [round=5 & self(#2).dead]\nuse(Enrage:1392) [!self.aura(Enraged:1391).exists]\nuse(Impale:800)\nuse(Pheromones:1063)",
 				},
 				["Ashes Will Fall"] = {
 					["name"] = "Ashes Will Fall",
@@ -484,9 +494,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Xu-Fu, Cub of Xuen",
 					["code"] = "use(Call Lightning:204) [round=1]\nchange(#2) [round = 2]\nuse(Make it Rain:985)\nuse(Inflation:1002)\nchange(#3) [self(#2).dead & self(#1).played]\nuse(Shock and Awe:646)\nuse(Ion Cannon:209)",
 				},
-				[197350] = {
-					["name"] = "You Have to Start Somewhere (Critter)",
-					["code"] = "change(#2) [round=2]\nuse(Armageddon:1025)\nuse(Surge of Power:593) [enemy(#3).active]\nuse(Bite:110)",
+				[99210] = {
+					["name"] = "Fight Night: Bodhi Sunwayver",
+					["code"] = "use(#1) [round>5]\nuse(#2) [round~1,5]\nuse(#3) [round~2,4]\nchange(next)",
 				},
 				[161650] = {
 					["name"] = "Liz",
@@ -500,9 +510,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Blingtron 4000",
 					["code"] = "ability(Pump:297) [round~1,3]\nability(Water Jet:118)\n\nability(Nature's Ward:574) [!self.aura(Nature's Ward:820).exists]\nability(Hawk Eye:521) [!self.aura(Hawk Eye:520).exists]\nability(Claw:429)\n\nability(Conflagrate:179) [enemy.aura(Immolate:177).exists]\nability(Immolate:178) [!enemy.aura(Immolate:177).exists]\nability(Burn:113)\n\nchange(next)",
 				},
-				[105455] = {
-					["name"] = "Jarrun's Ladder",
-					["code"] = "if [self(#1).active]\nchange(#2) [round=3]\nchange(#2) [self(#1).dead]\nuse(Poison Protocol:1954)\nuse(Void Nova:2356) [enemy(#2).hp>95]\nstandby [enemy.aura(Undead:242).exists]\nuse(Ooze Touch:445)\nendif\n\nif [self(#2).active]\nstandby [enemy.aura(Undead:242).exists]\nchange(#3) [round=8]\nuse(Great Sting:1966) [round>4]\nuse(Cleave:1273)\nendif\n\nif [self(#3).active]\nchange(#1)\nendif",
+				[162458] = {
+					["name"] = "Retinus the Seeker",
+					["code"] = "use(Explode:282) [enemy.hp<610]\nuse(Flock:581) [enemy.aura(Black Claw:918).exists]\nuse(Black Claw:919)\nuse(Thunderbolt:779)\nuse(Missile:777)\nchange(next)",
 				},
 				[145968] = {
 					["name"] = "Leper Rat",
@@ -524,21 +534,21 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Ardenweald's Tricksters",
 					["code"] = "use(Curse of Doom:218)\nuse(Haunt:652)\nchange(Ikky:1532)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Flock:581)",
 				},
-				[119343] = {
-					["name"] = "Klutz's Battle Rat",
-					["code"] = "ability(124)\nability(202)\nchange(#2)\n\nability(#3) [enemy.hp<618 & enemy.type !~ 3]\nability(#3) [enemy.hp<406 & enemy.type ~ 3]\nability(#2) [!self(#2).aura(820).exists]\nability(#1)",
+				[99182] = {
+					["name"] = "Fight Night: Sir Galveston",
+					["code"] = "change(#3) [self(#2).played]\nuse(Armageddon:1025) [round=4]\nuse(Zeitbombe:602) [round=3]\nuse(Flammenatem:501)\nuse(Tiefer Atem:169) [enemy(#2).active]\nuse(Dunkelheit herbeirufen:256)\nchange(#2)",
 				},
-				[116788] = {
-					["name"] = "Deviate Chomper",
-					["code"] = "ability(Evanescence:440)\nability(Forboding Curse:1068) [!enemy.aura(Forboding Curse:1067).exists]\nability(#1)\nchange(next)",
+				[105386] = {
+					["name"] = "Rydyr",
+					["code"] = "use(Glowing Toxin:270) [ round=1 ]\nuse(Explode:282)\nchange(#2)",
 				},
 				[197447] = {
 					["name"] = "Eye of the Stormling (Dragon)",
 					["code"] = "ability(Explode:282)\nability(Pump:297)\nchange(next)",
 				},
-				[116795] = {
-					["name"] = "Everliving Spore",
-					["code"] = "ability(Paralyzing Venom:1559)\nability(Acidic Goo:369) [!enemy.aura(Acidic Goo:368).exists]\nability(Swallow You Whole:276)\nability(#1)\nchange(next)",
+				[146182] = {
+					["name"] = "Living Sludge",
+					["code"] = "change(Chitterspine Skitterling:2648) [enemy.type=4]\nchange(Terrible Turnip:650) [enemy.type=10]\nchange(next) [self.dead]\nability(Dive:564)\nability(Bubble:934)\nability(Pinch:2067)\nability(Black Claw:919) [enemy.aura(Black Claw:918).exists]\nability(Swarm:706)\nability(Skitter:626)\nability(Sons of the Root:828)\nability(Leech Seed:745)\nability(Tidal Wave:419)",
 				},
 				[154926] = {
 					["name"] = "CK-9 Micro-Oppression Unit",
@@ -548,9 +558,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Paws of Thunder",
 					["code"] = "use(Toxic Fumes:2349)\nuse(Poison Protocol:1954)\nuse(Time Bomb:602)\nuse(Armageddon:1025)\n\nstandby [enemy(#2).active & enemy.hp<733 & enemy.aura(601).duration=1]\nif [enemy(#2).aura(927).exists]\nuse(Puncture Wound:1050)\nstandby [enemy(#2).active]\nendif\n\nuse(Impale:800)\nuse(Slicing Wind:420)\nchange(next)",
 				},
-				[173263] = {
-					["name"] = "Extra Pieces",
-					["code"] = "use(Zeitbombe:602)\nuse(Armageddon:1025)\nstandby [self(#2).active & enemy(#2).active & enemy.hp<1000]\nuse(Giftprotokoll:1954) [enemy.aura(Korrosion:446).exists]\nuse(Leerennova:2356) [enemy(#2).active]\nuse(Korrosion:447)\nuse(Ionenkanone:209) [enemy(#3).active]\nstandby\nchange(next)",
+				[155413] = {
+					["name"] = "Postmaster Malown",
+					["code"] = "use(Swarm of Flies:232) [enemy(#1).aura(Undead:242).exists]\nuse(Swarm of Flies:232) [round=1]\nuse(Bubble:934) [self.aura(Curse of Doom:217).duration=1]\nuse(Swarm of Flies:232) [!enemy.aura(Swarm of Flies:231).exists]\nuse(Tongue Lash:228)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Flock:581)\nchange(next) [self.dead]",
 				},
 				[202452] = {
 					["name"] = "Right Twice a Day",
@@ -564,33 +574,33 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Dr. Ion Goldbloom",
 					["code"] = "use(Howl:362) [enemy.aura(Flying:341).exists]\nuse(Surge of Power:593) [enemy.aura(Howl:1725).exists]\nuse(Arcane Explosion:299)\nuse(Conflagrate:179) [enemy(#3).active]\nuse(Flame Breath:501) [!enemy.aura(Flame Breath:500).exists]\nuse(Scorched Earth:172)\nuse(Ion Cannon:209) [enemy(#3).hp<1142]\nuse(#1)\nchange(next)",
 				},
-				["Do You Even Train? (Humanoid)"] = {
-					["name"] = "Do You Even Train? (Humanoid)",
-					["code"] = "standby [self(#2).active & self.speed.slow & enemy(#3).active & enemy.ability(Dive:564).usable]\nability(Howl:362) [round=1]\nability(Dodge:312) [enemy.aura(Underwater:830).exists]\nability(Dodge:312) [enemy.aura(Attack Boost:485).exists]\nability(Howl:362) [enemy(#1).active]\nability(Deflection:490) [enemy(#3).active & enemy.ability(Headbutt:376).usable]\nability(Dark Fate:2432)\nability(Rampage:124) [enemy.ability(Headbutt:376).duration>2]\nability(#1)\nchange(next)",
-				},
-				[116787] = {
-					["name"] = "Deviate Flapper",
-					["code"] = "use(#3) [round=1]\nuse(#2) [round=2]\nuse(#1)",
+				[160206] = {
+					["name"] = "Alran Heartshade",
+					["code"] = "use(Apocalipsis:519) [enemy.hp.full]\nuse(Cauterizar:173)\n\nchange(Putrinfecto:1629)\nuse(Putrefacción:476) [enemy(Ruddy:2805).active]\nuse(Deflagración de cadáver:663) [enemy(Ruddy:2805).active]\nstandby [self.aura(Aturdido:927).exists]\n\nchange(Cucaracha experimental:2664)\nuse(Mordedura enfermiza:499) [enemy.aura(Defensas desarmadas:542).exists]\nuse(Enjambre:706) [self.aura(Glándulas suprarrenales:841).exists]\nuse(Glándulas suprarrenales:197)\n\nuse(#1)",
 				},
 				[146002] = {
 					["name"] = "Gnomeregan Guard Wolf",
 					["code"] = "use(Sandstorm:453)\nuse(Rupture:814)\nuse(Crush:406)\nuse(#3)\nuse(#2)\nuse(#1)\nchange(#2)\nchange(#3)",
 				},
-				[72285] = {
-					["name"] = "Chi-Chi, Hatchling of Chi-Ji",
-					["code"] = "standby [round=3]\nability(Curse of Doom:218)\nability(Haunt:652)\nability(Creeping Fungus:743) [self.round=2]\nability(#1)\nchange(next)",
-				},
-				[150911] = {
-					["name"] = "Crypt Fiend",
-					["code"] = "use(Lightning Shield:906) \nuse(Fire Shield:1754) \nuse(Arcane Blast:421) \nuse(Decoy:334) \nuse(Thunderbolt:779) \nuse(Breath:115) \nuse(#1) \nchange(next)",
+				[154927] = {
+					["name"] = "Unit 35",
+					["code"] = "ability(Rabid Strike:666) [!enemy.aura(Rabies:807).exists]\nability(Corpse Explosion:663)\n\nability(Fire Shield:1754)\nability(Flamethrower:503)\n\nchange(next)",
 				},
 				["Are They Not Beautiful? (Beast)"] = {
 					["name"] = "Are They Not Beautiful? (Beast)",
 					["code"] = "use(Feathered Frenzy:1398) [ round=1 ]\nuse(Gift of Winter's Veil:586)\nuse(Pounce:535)\nuse(Prowl:536)\nuse(Arcane Dash:1536)\nuse(Moonfire:595)\nchange(next)",
 				},
-				[66739] = {
-					["name"] = "Wastewalker Shu",
-					["code"] = "change(#3) [ self(#1).active & self.dead ]\nchange(#2) [ self(#3).active ]\nchange(#3) [ self(#2).active & self.dead ]\n\nif [ self(#1).active & enemy(#1).active ]\nuse(Breath:115) [ enemy(#1).hp<248 ]\nuse(Thunderbolt:779)\nuse(Decoy:334) [ round=2 ]\nuse(Decoy:334) [ self.aura(Whirlpool:512).exists ]\nuse(Breath:115)\nendif\n\nif [ self(#1).active & enemy(#2).active ]\nuse(Decoy:334)\nuse(Thunderbolt:779)\nuse(Breath:115)\nendif\n\nstandby [ self.aura(Stunned:927).exists ]\nuse(Wind-Up:459) [ enemy(#3).active ]\nuse(Toxic Smoke:640) [ enemy(#1).active ]\nuse(Toxic Smoke:640) [ enemy(#2).hp<190 ]\nuse(Supercharge:208) [ self.aura(Wind-Up:458).exists ]\nuse(Wind-Up:459) (edited)",
+				[150911] = {
+					["name"] = "Crypt Fiend",
+					["code"] = "use(Lightning Shield:906) \nuse(Fire Shield:1754) \nuse(Arcane Blast:421) \nuse(Decoy:334) \nuse(Thunderbolt:779) \nuse(Breath:115) \nuse(#1) \nchange(next)",
+				},
+				[72285] = {
+					["name"] = "Chi-Chi, Hatchling of Chi-Ji",
+					["code"] = "standby [round=3]\nability(Curse of Doom:218)\nability(Haunt:652)\nability(Creeping Fungus:743) [self.round=2]\nability(#1)\nchange(next)",
+				},
+				[145971] = {
+					["name"] = "Cockroach",
+					["code"] = "ability(Barkskin:1045) [!self.aura(Barkskin:1044).exists]\nability(Dazzling Dance:366) [enemy.aura(Dodge:2060).exists]\nability(#1)\n\nchange(next)",
 				},
 				[197417] = {
 					["name"] = "Mini Manafiend Melee (Aquatic)",
@@ -600,9 +610,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Add More to the Collection",
 					["code"] = "change(#3) [enemy(#3).active]\nability(어슬렁:536) [enemy(#2).active]\nability(비전 폭풍:589)\nability(부정한 희생:321)\nability(#2)\nability(#1) \nchange(next)",
 				},
-				[145971] = {
-					["name"] = "Cockroach",
-					["code"] = "ability(Barkskin:1045) [!self.aura(Barkskin:1044).exists]\nability(Dazzling Dance:366) [enemy.aura(Dodge:2060).exists]\nability(#1)\n\nchange(next)",
+				[66739] = {
+					["name"] = "Wastewalker Shu",
+					["code"] = "change(#3) [ self(#1).active & self.dead ]\nchange(#2) [ self(#3).active ]\nchange(#3) [ self(#2).active & self.dead ]\n\nif [ self(#1).active & enemy(#1).active ]\nuse(Breath:115) [ enemy(#1).hp<248 ]\nuse(Thunderbolt:779)\nuse(Decoy:334) [ round=2 ]\nuse(Decoy:334) [ self.aura(Whirlpool:512).exists ]\nuse(Breath:115)\nendif\n\nif [ self(#1).active & enemy(#2).active ]\nuse(Decoy:334)\nuse(Thunderbolt:779)\nuse(Breath:115)\nendif\n\nstandby [ self.aura(Stunned:927).exists ]\nuse(Wind-Up:459) [ enemy(#3).active ]\nuse(Toxic Smoke:640) [ enemy(#1).active ]\nuse(Toxic Smoke:640) [ enemy(#2).hp<190 ]\nuse(Supercharge:208) [ self.aura(Wind-Up:458).exists ]\nuse(Wind-Up:459) (edited)",
 				},
 				[154928] = {
 					["name"] = "Unit 6",
@@ -620,17 +630,17 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Thenia's Loyal Companions",
 					["code"] = "standby [ self.aura(Asleep:498).exists ]\nchange(#2) [ enemy.aura(Stunned:927).exists ]\nchange(#3) [ enemy(#3).active ]\nuse(Ethereal:998) [ round=1 ]\nuse(Soulrush:752)\nuse(Arcane Storm:589)\nuse(Mana Surge:489)\nuse(Supercharge:208)\nuse(Ion Cannon:209)\nstandby",
 				},
-				[83837] = {
-					["name"] = "Cymre Brightblade",
-					["code"] = "change(#1) [self(#3).played]\nchange(#2) [round=3]\nuse(Nether Gate:466) [round=2]\nuse(Burn:113) [enemy(#3).active]\nuse(Flamethrower:503)\nuse(Flame Breath:501) [enemy(#2).active]\nuse(Time Bomb:602)\nuse(Armageddon:1025)\nchange(#3)",
+				["Do You Even Train? (Flyer)"] = {
+					["name"] = "Do You Even Train? (Flyer)",
+					["code"] = "use(Tail Sweep:122) [enemy(Brul'dan:3571).active]\nuse(Dodge:312) [enemy.aura(Underwater:830).exists]\nuse(Dodge:312) [self.aura(Curse of Doom:217).duration=1]\nuse(Hawk Eye:521) [!self.aura(Hawk Eye:520).exists]\nuse(Claw:429)\nuse(#1)\nchange(next)",
 				},
-				["Do You Even Train? (Critter)"] = {
-					["name"] = "Do You Even Train? (Critter)",
-					["code"] = "use(Burrow:159) [enemy.aura(Underwater:830).exists]\nuse(Woodchipper:411) [!enemy.aura(Bleeding:491).exists & enemy(#1).dead]\n\nuse(Feign Death:568) [enemy.ability(Headbutt:376).usable]\nuse(#1)\n\nchange(next)",
+				[119341] = {
+					["name"] = "Mining Monkey",
+					["code"] = "ability(Launch Rocket:293) [ !self.aura(Setup Rocket:294).exists ]\nability(Launch Rocket:293) [ self.round>2 ]\nability(Blingtron Gift Package:989) [ !enemy(#1).active ]\nability(#1)\nchange(next)",
 				},
-				["Do You Even Train? (Aquatic)"] = {
-					["name"] = "Do You Even Train? (Aquatic)",
-					["code"] = "if [ally(#1).active]\nuse(#3)\nuse(#2)\nendif\n\nif [ally(#2).active]\nuse(#2)\nendif\n\nif [ally(#3).active]\nuse(#3) [enemy.aura(Underwater:830).exists]\nuse(#1)\nendif\nchange(next)",
+				[161651] = {
+					["name"] = "Ralf",
+					["code"] = "use(Clean-Up:456)\nuse(Soulrush:752)\nchange(#2) [self(#1).active]\nuse(Magic Sword:1085)\nuse(Toxic Smoke:640) [enemy(Ralf:2817).hp<500]\nuse(Supercharge:208) [self.aura(Wind-Up:458).exists]\nuse(Wind-Up:459)\nchange(#1) [self(#2).dead]",
 				},
 				[173257] = {
 					["name"] = "Mighty Minions of Maldraxxus",
@@ -640,9 +650,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Unit 17",
 					["code"] = "change(#2) [round=3]\nchange(#3) [self(#2).active]\n\nability(Blistering Cold:786)\nability(Black Claw:919) [self.round=1]\nability(#1)\nchange(next)",
 				},
-				["Do You Even Train? (Undead)"] = {
-					["name"] = "Do You Even Train? (Undead)",
-					["code"] = "use(#3) [ally(#1).active&round=1]\nuse(#1) [ally(#1).active]\n\nif [ally(#2).active]\nuse(#1)\nuse(#2)\nuse(#3)\nstandby\nendif\n\nuse(#3) [enemy.aura(Underwater:830).exists]\nuse(#2)\nuse(#1)\n\nchange(next)",
+				[201849] = {
+					["name"] = "Adinakon",
+					["code"] = "use(Explode:282)\nuse(Murder the Innocent:2223)\nchange(next)",
 				},
 				[196264] = {
 					["name"] = "The Terrible Three",
@@ -664,65 +674,65 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Ashlei",
 					["code"] = "use(Armageddon:1025) [enemy.aura(Flammenatem:500).exists & enemy.aura(Messerkrallen:2238).exists & enemy(#3).active]\nuse(Messerkrallen:2237) [enemy.aura(Flammenatem:500).exists & !enemy.aura(Messerkrallen:2238).exists]\nuse(Flammenatem:501)",
 				},
-				[141479] = {
-					["name"] = "Strange Looking Dogs",
-					["code"] = "use(Supercharge:208) [ round>1 ]\nuse(Call Lightning:204) [ round>1 ]\nuse(Ion Cannon:209)\nuse(Metal Fist:384) [ !enemy.aura(Undead:242).exists ]\nchange(next)",
+				[146001] = {
+					["name"] = "Prototype Annoy-O-Tron",
+					["code"] = "standby [round~2,6,8,12]\nability(624) [round~1,7,11]\nability(206) [round~3,9,13]\nability(413) [round~4,5,10]\nability(#1)\nchange(next)",
 				},
 				[146005] = {
 					["name"] = "Bloated Leper Rat",
 					["code"] = "ability(Toxic Skin:1087) [!self.aura(Toxic Skin:1086).exists & self.hp>313]\nability(Whirlpool:513) [!enemy.aura(Whirlpool:512).exists]\nability(#1)\n\nchange(next)",
 				},
-				[161656] = {
-					["name"] = "Splint",
-					["code"] = "standby [round=1]\nability(#2) [!enemy.aura(Creeping Fungus:742).exists]\nability(Haunt:652)\nability(#1)\nchange(next)",
+				[173131] = {
+					["name"] = "Cliffs of Bastion",
+					["code"] = "use(Decoy:334) [round=1]\nuse(Explode:282) [enemy.hp<=618]\nuse(Missile:777)\nuse(Wind-Up:459) [enemy(#2).active]\nuse(Toxic Smoke:640)\nuse(Surge of Power:593) [enemy.hp<=1110]\nuse(Howl:362)\nchange(next)",
 				},
 				[150914] = {
 					["name"] = "Wandering Phantasm",
 					["code"] = "ability(#2) [round=2]\nability(#1) [self(#1).active]\nchange(next) [self.dead]\nability(#2)\nability(#1) [enemy.aura(Shattered Defenses:542).exists]\nability(#3)\nstandby",
 				},
-				[173131] = {
-					["name"] = "Cliffs of Bastion",
-					["code"] = "use(Decoy:334) [round=1]\nuse(Explode:282) [enemy.hp<=618]\nuse(Missile:777)\nuse(Wind-Up:459) [enemy(#2).active]\nuse(Toxic Smoke:640)\nuse(Surge of Power:593) [enemy.hp<=1110]\nuse(Howl:362)\nchange(next)",
+				[161656] = {
+					["name"] = "Splint",
+					["code"] = "standby [round=1]\nability(#2) [!enemy.aura(Creeping Fungus:742).exists]\nability(Haunt:652)\nability(#1)\nchange(next)",
 				},
-				[139489] = {
-					["name"] = "Crab People",
-					["code"] = "ability(Predatory Strike:518) [enemy.aura(Shattered Defenses:542).exists]\nability(Savage Talon:1370) [enemy.aura(Shattered Defenses:542).exists]\nability(Falcosaur Swarm!:1773)\nchange(next)",
+				[146004] = {
+					["name"] = "Gnomeregan Guard Mechanostrider",
+					["code"] = "use(Sandstorm:453)\nuse(Rupture:814)\nuse(Crush:406)\nuse(#3)\nuse(#2)\nuse(#1)\nchange(#2)\nchange(#3)",
 				},
-				[87123] = {
-					["name"] = "Vesharr",
-					["code"] = "ability(Arcane Explosion:299)\nability(Explode:282) [enemy.aura(Mechanical:244).exists]\nability(Thunderbolt:779) [!enemy.aura(Flying Mark:1420).exists]\nability(Breath:115)\nchange(#2)",
+				[85622] = {
+					["name"] = "Brutus and Rukus",
+					["code"] = "ability(Wind-Up:459) [ round=1 ]\nability(Supercharge:208) [ round=2 ]\nability(Wind-Up:459) [ round=3 ]\nability(Wind-Up:459) [ round=4 ]\nability(Wind-Up:459) [ round=5 ]\nability(Toxic Smoke:640) [ round=6 ]\nchange(Mechanical Pandaren Dragonling:844) [ round=7 ]\nability(Thunderbolt:779)\nability(Explode:282) [ enemy.hp<560 ]\nability(Breath:115) [ enemy.hp>560 ]",
 				},
-				[141002] = {
-					["name"] = "Sea Creatures Are Weird",
-					["code"] = "quit [ enemy(#1).active & !enemy.ability(Sweep:457).usable ]\nchange(#1) [ self(#3).active ]\nchange(#3) [ self(#1).dead ]\nif [ self(#1).active ]\n    ability(Supercharge:208) [ round~2,6 ]\n    ability(Wind-Up:459) [ enemy(#1).active ]\n    ability(Wind-Up:459) [ round>6 & self.aura(Mechanical:244).exists & self.aura(Wind-Up:458).exists ]\n    ability(Powerball:566)\nendif\nability(Explode:282) [ enemy(#3).active & enemy(#3).hp<561 ]\nability(Thunderbolt:779) [ !enemy(#2).dead & enemy(#2).hp<245 ]\nability(Thunderbolt:779) [ enemy(#3).active ]\nability(Breath:115)",
+				[173133] = {
+					["name"] = "Mega Bite",
+					["code"] = "use(Aufladen:208) [ !enemy.ability(Stachelpanzerschale:2324).usable ]\nuse(Aufziehen:459)",
 				},
-				["Are They Not Beautiful? (Undead) (2)"] = {
-					["name"] = "Are They Not Beautiful? (Undead) (2)",
-					["code"] = "use(beam:1035) [ round = 1 ]\nuse(rush:752)\nuse(filler:1066)\nchange(next)\ntest(Bad RNG, clean up somehow)",
-				},
-				[202458] = {
-					["name"] = "They're Full of Stars!",
-					["code"] = "use(Shadow Slash:210) [round=1]\nuse(Curse of Doom:218)\nuse(Unholy Ascension:321)\nuse(Time Bomb:602)\nuse(Flame Breath:501) [round=5]\nuse(Armageddon:1025)\nuse(Surge of Power:593) [enemy(#3).active]\nuse(Bite:110)\nchange(next)",
-				},
-				[142054] = {
-					["name"] = "Desert Survivors",
-					["code"] = "standby [ enemy.speed.fast & enemy.ability(Burrow:159).usable & enemy(#2).active ] \nability(Deflection:490) [ enemy.ability(Mudslide:572).usable ] \nability(Deflection:490) [enemy.aura(Underground:340).exists] \nability(#3) \nability(#1) \nchange(next)",
-				},
-				[161658] = {
-					["name"] = "Shred",
-					["code"] = "use(Flamethrower:503) [round~1,3]\nuse(Conflagrate:179)\nuse(Immolate:178) [round=6]\nuse(Burn:113)\nchange(next)",
+				[175779] = {
+					["name"] = "Chittermaw",
+					["code"] = "ability(Murder the Innocent:2223)\nability(Explode:282)\nchange(next)",
 				},
 				[197102] = {
 					["name"] = "Two and Two Together",
 					["code"] = "use(Arcane Storm:589) [!weather(Arcane Winds:590)]\nuse(Mana Surge:489)\nuse(Tail Sweep:122)\nchange(#2)\nuse(Wind-Up:459)\nuse(Wind-Up:459)",
 				},
+				[141002] = {
+					["name"] = "Sea Creatures Are Weird",
+					["code"] = "quit [ enemy(#1).active & !enemy.ability(Sweep:457).usable ]\nchange(#1) [ self(#3).active ]\nchange(#3) [ self(#1).dead ]\nif [ self(#1).active ]\n    ability(Supercharge:208) [ round~2,6 ]\n    ability(Wind-Up:459) [ enemy(#1).active ]\n    ability(Wind-Up:459) [ round>6 & self.aura(Mechanical:244).exists & self.aura(Wind-Up:458).exists ]\n    ability(Powerball:566)\nendif\nability(Explode:282) [ enemy(#3).active & enemy(#3).hp<561 ]\nability(Thunderbolt:779) [ !enemy(#2).dead & enemy(#2).hp<245 ]\nability(Thunderbolt:779) [ enemy(#3).active ]\nability(Breath:115)",
+				},
+				[202458] = {
+					["name"] = "They're Full of Stars!",
+					["code"] = "use(Shadow Slash:210) [round=1]\nuse(Curse of Doom:218)\nuse(Unholy Ascension:321)\nuse(Time Bomb:602)\nuse(Flame Breath:501) [round=5]\nuse(Armageddon:1025)\nuse(Surge of Power:593) [enemy(#3).active]\nuse(Bite:110)\nchange(next)",
+				},
+				[161657] = {
+					["name"] = "Ninn Jah",
+					["code"] = "ability(Deflection:490) [self.aura(Whirlpool:512).duration=1]\nability(Sandstorm:453)\nability(Crush:406)",
+				},
 				[141799] = {
 					["name"] = "Pack Leader",
 					["code"] = "standby [enemy.aura(Undead:242).exists]\nability(Ion Cannon:209) [enemy(#3).active & enemy.round=2]\nability(Decoy:334)\nability(Haywire:916)\nability(Shock and Awe:646)\nability(Toxic Smoke:640)\nability(#1)\nchange(next)",
 				},
-				[140461] = {
-					["name"] = "Night Horrors",
-					["code"] = "change(next) [ self(#1).dead & !self(#3).played ]\nability(Black Claw:919) [ !enemy.aura(Black Claw:918).exists ]\nability(Black Claw:919) [ enemy(#3).active & self.hp>366 ]\nability(Flock:581)\nability(Make it Rain:985)\nability(#1)",
+				[85659] = {
+					["name"] = "The Beakinator",
+					["code"] = "use(Arcane Storm:589)\nuse(Mana Surge:489)",
 				},
 				[175778] = {
 					["name"] = "Briarpaw",
@@ -740,45 +750,45 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Eyegor's Special Friends",
 					["code"] = "use(Extra Plating:392) [self.round=1]\nuse(Make it Rain:985) [self.round=2]\nuse(Inflation:1002) [self.round=3]\nuse(Make it Rain:985) [!enemy(Boneclaw:2992).dead]\n\nif [enemy(Boneclaw:2992).dead]\nchange(Iron Starlette:1387)\nendif\n\nif [self(#2).active]\nuse(Wind-Up:459) [self.round=1]\nuse(Supercharge:208) [self.round=2]\nuse(Wind-Up:459) [self.round=3]\nif [self.hp>550]\nuse(Wind-Up:459) [enemy.hp>350]\nendif\nuse(Wind-Up:459) [self.aura(Wind-Up:458).exists]\nif [enemy.hp<350]\nuse(Toxic Smoke:640) [!self.aura(Wind-Up:458).exists]\nendif\nif [self.hp<550]\nuse(Toxic Smoke:640)\nendif\nuse(Wind-Up:459)\nendif\n\nchange(#3)\nuse(Curse Of Doom:218) [self.round=1]\nability(Shadow Slash:210)",
 				},
-				[85659] = {
-					["name"] = "The Beakinator",
-					["code"] = "use(Arcane Storm:589)\nuse(Mana Surge:489)",
+				[140461] = {
+					["name"] = "Night Horrors",
+					["code"] = "change(next) [ self(#1).dead & !self(#3).played ]\nability(Black Claw:919) [ !enemy.aura(Black Claw:918).exists ]\nability(Black Claw:919) [ enemy(#3).active & self.hp>366 ]\nability(Flock:581)\nability(Make it Rain:985)\nability(#1)",
 				},
-				[173133] = {
-					["name"] = "Mega Bite",
-					["code"] = "use(Aufladen:208) [ !enemy.ability(Stachelpanzerschale:2324).usable ]\nuse(Aufziehen:459)",
+				[161658] = {
+					["name"] = "Shred",
+					["code"] = "use(Flamethrower:503) [round~1,3]\nuse(Conflagrate:179)\nuse(Immolate:178) [round=6]\nuse(Burn:113)\nchange(next)",
 				},
-				[161657] = {
-					["name"] = "Ninn Jah",
-					["code"] = "ability(Deflection:490) [self.aura(Whirlpool:512).duration=1]\nability(Sandstorm:453)\nability(Crush:406)",
+				[142054] = {
+					["name"] = "Desert Survivors",
+					["code"] = "standby [ enemy.speed.fast & enemy.ability(Burrow:159).usable & enemy(#2).active ] \nability(Deflection:490) [ enemy.ability(Mudslide:572).usable ] \nability(Deflection:490) [enemy.aura(Underground:340).exists] \nability(#3) \nability(#1) \nchange(next)",
 				},
 				[146932] = {
 					["name"] = "Door Control Console",
 					["code"] = "change(#2) [ self(#1).dead ]\nuse(Primal Cry:920) [ !self.speed.fast & round=1 ]\nuse(Black Claw:919) [ !enemy.aura(Black Claw:918).exists ]\nuse(Hunting Party:921)\nuse(Stampede:163)\nuse(Squeeze:1572)\nuse(Tentacle Slap:1570)",
 				},
-				[175779] = {
-					["name"] = "Chittermaw",
-					["code"] = "ability(Murder the Innocent:2223)\nability(Explode:282)\nchange(next)",
+				["Are They Not Beautiful? (Undead) (2)"] = {
+					["name"] = "Are They Not Beautiful? (Undead) (2)",
+					["code"] = "use(beam:1035) [ round = 1 ]\nuse(rush:752)\nuse(filler:1066)\nchange(next)\ntest(Bad RNG, clean up somehow)",
 				},
 				[142151] = {
 					["name"] = "You've Never Seen Jammer Upset",
 					["code"] = "if [ self(Iron Starlette:1387).active ] \nability(Wind-Up:459) [ round=1 ] \nability(Supercharge:208) [ round=2 ] \nability(Wind-Up:459) [ round=3 ] \nability(Wind-Up:459) [ round=4 ] \nchange(#2) [ round=5 ] \nability(Wind-Up:459) [ round >= 6 ] \nendif \nchange(Iron Starlette:1387) [ self(#2).active ]",
 				},
-				[85622] = {
-					["name"] = "Brutus and Rukus",
-					["code"] = "ability(Wind-Up:459) [ round=1 ]\nability(Supercharge:208) [ round=2 ]\nability(Wind-Up:459) [ round=3 ]\nability(Wind-Up:459) [ round=4 ]\nability(Wind-Up:459) [ round=5 ]\nability(Toxic Smoke:640) [ round=6 ]\nchange(Mechanical Pandaren Dragonling:844) [ round=7 ]\nability(Thunderbolt:779)\nability(Explode:282) [ enemy.hp<560 ]\nability(Breath:115) [ enemy.hp>560 ]",
+				[87123] = {
+					["name"] = "Vesharr",
+					["code"] = "ability(Arcane Explosion:299)\nability(Explode:282) [enemy.aura(Mechanical:244).exists]\nability(Thunderbolt:779) [!enemy.aura(Flying Mark:1420).exists]\nability(Breath:115)\nchange(#2)",
 				},
-				[146004] = {
-					["name"] = "Gnomeregan Guard Mechanostrider",
-					["code"] = "use(Sandstorm:453)\nuse(Rupture:814)\nuse(Crush:406)\nuse(#3)\nuse(#2)\nuse(#1)\nchange(#2)\nchange(#3)",
+				[139489] = {
+					["name"] = "Crab People",
+					["code"] = "ability(Predatory Strike:518) [enemy.aura(Shattered Defenses:542).exists]\nability(Savage Talon:1370) [enemy.aura(Shattered Defenses:542).exists]\nability(Falcosaur Swarm!:1773)\nchange(next)",
 				},
 				[150917] = {
 					["name"] = "Huncher",
 					["code"] = "use(Exposed Wounds:305)\nuse(Black Claw:919) [ self.round = 1 ]\nuse(Hunting Party:921)\nstandby",
 				},
-				[146001] = {
-					["name"] = "Prototype Annoy-O-Tron",
-					["code"] = "standby [round~2,6,8,12]\nability(624) [round~1,7,11]\nability(206) [round~3,9,13]\nability(413) [round~4,5,10]\nability(#1)\nchange(next)",
+				[141479] = {
+					["name"] = "Strange Looking Dogs",
+					["code"] = "use(Supercharge:208) [ round>1 ]\nuse(Call Lightning:204) [ round>1 ]\nuse(Ion Cannon:209)\nuse(Metal Fist:384) [ !enemy.aura(Undead:242).exists ]\nchange(next)",
 				},
 				[97804] = {
 					["name"] = "Fight Night: Tiffany Nelson",
@@ -788,21 +798,21 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Tarr the Terrible",
 					["code"] = "change(next) [self(#3).active] \n\nchange(#3) [enemy(#3).active & enemy.aura(217).exists & !self(#3).played] \n\nability(772) [round=3] \n\nability(218) [!enemy.aura(217).exists &!enemy(#2).active & enemy(#3).hpp > 60] \n\nability(652) [round=2] \n\nability(#1) \nchange(next)",
 				},
-				[201849] = {
-					["name"] = "Adinakon",
-					["code"] = "use(Explode:282)\nuse(Murder the Innocent:2223)\nchange(next)",
+				["Do You Even Train? (Undead)"] = {
+					["name"] = "Do You Even Train? (Undead)",
+					["code"] = "use(#3) [ally(#1).active&round=1]\nuse(#1) [ally(#1).active]\n\nif [ally(#2).active]\nuse(#1)\nuse(#2)\nuse(#3)\nstandby\nendif\n\nuse(#3) [enemy.aura(Underwater:830).exists]\nuse(#2)\nuse(#1)\n\nchange(next)",
 				},
-				[161651] = {
-					["name"] = "Ralf",
-					["code"] = "use(Clean-Up:456)\nuse(Soulrush:752)\nchange(#2) [self(#1).active]\nuse(Magic Sword:1085)\nuse(Toxic Smoke:640) [enemy(Ralf:2817).hp<500]\nuse(Supercharge:208) [self.aura(Wind-Up:458).exists]\nuse(Wind-Up:459)\nchange(#1) [self(#2).dead]",
+				["Do You Even Train? (Aquatic)"] = {
+					["name"] = "Do You Even Train? (Aquatic)",
+					["code"] = "if [ally(#1).active]\nuse(#3)\nuse(#2)\nendif\n\nif [ally(#2).active]\nuse(#2)\nendif\n\nif [ally(#3).active]\nuse(#3) [enemy.aura(Underwater:830).exists]\nuse(#1)\nendif\nchange(next)",
 				},
-				[119341] = {
-					["name"] = "Mining Monkey",
-					["code"] = "ability(Launch Rocket:293) [ !self.aura(Setup Rocket:294).exists ]\nability(Launch Rocket:293) [ self.round>2 ]\nability(Blingtron Gift Package:989) [ !enemy(#1).active ]\nability(#1)\nchange(next)",
+				["Do You Even Train? (Critter)"] = {
+					["name"] = "Do You Even Train? (Critter)",
+					["code"] = "use(Burrow:159) [enemy.aura(Underwater:830).exists]\nuse(Woodchipper:411) [!enemy.aura(Bleeding:491).exists & enemy(#1).dead]\n\nuse(Feign Death:568) [enemy.ability(Headbutt:376).usable]\nuse(#1)\n\nchange(next)",
 				},
-				["Do You Even Train? (Flyer)"] = {
-					["name"] = "Do You Even Train? (Flyer)",
-					["code"] = "use(Tail Sweep:122) [enemy(Brul'dan:3571).active]\nuse(Dodge:312) [enemy.aura(Underwater:830).exists]\nuse(Dodge:312) [self.aura(Curse of Doom:217).duration=1]\nuse(Hawk Eye:521) [!self.aura(Hawk Eye:520).exists]\nuse(Claw:429)\nuse(#1)\nchange(next)",
+				[83837] = {
+					["name"] = "Cymre Brightblade",
+					["code"] = "change(#1) [self(#3).played]\nchange(#2) [round=3]\nuse(Nether Gate:466) [round=2]\nuse(Burn:113) [enemy(#3).active]\nuse(Flamethrower:503)\nuse(Flame Breath:501) [enemy(#2).active]\nuse(Time Bomb:602)\nuse(Armageddon:1025)\nchange(#3)",
 				},
 				[150918] = {
 					["name"] = "Tommy the Cruel",
@@ -816,41 +826,41 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "That's a Big Carcass",
 					["code"] = "standby [ enemy(#2).active & enemy.round=1 ]\nability(#2) [ !enemy(#3).active ]\nability(#3) [ enemy.aura(Shattered Defenses:542).exists ]\nability(#1)\nchange(#2)",
 				},
-				[154927] = {
-					["name"] = "Unit 35",
-					["code"] = "ability(Rabid Strike:666) [!enemy.aura(Rabies:807).exists]\nability(Corpse Explosion:663)\n\nability(Fire Shield:1754)\nability(Flamethrower:503)\n\nchange(next)",
+				[116787] = {
+					["name"] = "Deviate Flapper",
+					["code"] = "use(#3) [round=1]\nuse(#2) [round=2]\nuse(#1)",
 				},
-				[160206] = {
-					["name"] = "Alran Heartshade",
-					["code"] = "use(Apocalipsis:519) [enemy.hp.full]\nuse(Cauterizar:173)\n\nchange(Putrinfecto:1629)\nuse(Putrefacción:476) [enemy(Ruddy:2805).active]\nuse(Deflagración de cadáver:663) [enemy(Ruddy:2805).active]\nstandby [self.aura(Aturdido:927).exists]\n\nchange(Cucaracha experimental:2664)\nuse(Mordedura enfermiza:499) [enemy.aura(Defensas desarmadas:542).exists]\nuse(Enjambre:706) [self.aura(Glándulas suprarrenales:841).exists]\nuse(Glándulas suprarrenales:197)\n\nuse(#1)",
+				["Do You Even Train? (Humanoid)"] = {
+					["name"] = "Do You Even Train? (Humanoid)",
+					["code"] = "standby [self(#2).active & self.speed.slow & enemy(#3).active & enemy.ability(Dive:564).usable]\nability(Howl:362) [round=1]\nability(Dodge:312) [enemy.aura(Underwater:830).exists]\nability(Dodge:312) [enemy.aura(Attack Boost:485).exists]\nability(Howl:362) [enemy(#1).active]\nability(Deflection:490) [enemy(#3).active & enemy.ability(Headbutt:376).usable]\nability(Dark Fate:2432)\nability(Rampage:124) [enemy.ability(Headbutt:376).duration>2]\nability(#1)\nchange(next)",
 				},
-				[155413] = {
-					["name"] = "Postmaster Malown",
-					["code"] = "use(Swarm of Flies:232) [enemy(#1).aura(Undead:242).exists]\nuse(Swarm of Flies:232) [round=1]\nuse(Bubble:934) [self.aura(Curse of Doom:217).duration=1]\nuse(Swarm of Flies:232) [!enemy.aura(Swarm of Flies:231).exists]\nuse(Tongue Lash:228)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Flock:581)\nchange(next) [self.dead]",
+				[173263] = {
+					["name"] = "Extra Pieces",
+					["code"] = "use(Zeitbombe:602)\nuse(Armageddon:1025)\nstandby [self(#2).active & enemy(#2).active & enemy.hp<1000]\nuse(Giftprotokoll:1954) [enemy.aura(Korrosion:446).exists]\nuse(Leerennova:2356) [enemy(#2).active]\nuse(Korrosion:447)\nuse(Ionenkanone:209) [enemy(#3).active]\nstandby\nchange(next)",
 				},
-				[146182] = {
-					["name"] = "Living Sludge",
-					["code"] = "change(Chitterspine Skitterling:2648) [enemy.type=4]\nchange(Terrible Turnip:650) [enemy.type=10]\nchange(next) [self.dead]\nability(Dive:564)\nability(Bubble:934)\nability(Pinch:2067)\nability(Black Claw:919) [enemy.aura(Black Claw:918).exists]\nability(Swarm:706)\nability(Skitter:626)\nability(Sons of the Root:828)\nability(Leech Seed:745)\nability(Tidal Wave:419)",
+				[116795] = {
+					["name"] = "Everliving Spore",
+					["code"] = "ability(Paralyzing Venom:1559)\nability(Acidic Goo:369) [!enemy.aura(Acidic Goo:368).exists]\nability(Swallow You Whole:276)\nability(#1)\nchange(next)",
 				},
-				[105386] = {
-					["name"] = "Rydyr",
-					["code"] = "use(Glowing Toxin:270) [ round=1 ]\nuse(Explode:282)\nchange(#2)",
+				[116788] = {
+					["name"] = "Deviate Chomper",
+					["code"] = "ability(Evanescence:440)\nability(Forboding Curse:1068) [!enemy.aura(Forboding Curse:1067).exists]\nability(#1)\nchange(next)",
 				},
-				[99182] = {
-					["name"] = "Fight Night: Sir Galveston",
-					["code"] = "change(#3) [self(#2).played]\nuse(Armageddon:1025) [round=4]\nuse(Zeitbombe:602) [round=3]\nuse(Flammenatem:501)\nuse(Tiefer Atem:169) [enemy(#2).active]\nuse(Dunkelheit herbeirufen:256)\nchange(#2)",
+				[119343] = {
+					["name"] = "Klutz's Battle Rat",
+					["code"] = "ability(124)\nability(202)\nchange(#2)\n\nability(#3) [enemy.hp<618 & enemy.type !~ 3]\nability(#3) [enemy.hp<406 & enemy.type ~ 3]\nability(#2) [!self(#2).aura(820).exists]\nability(#1)",
 				},
 				[161661] = {
 					["name"] = "Wilbur",
 					["code"] = "ability(Warning Squawk)\nability(Falcosaur Swarm!)\nchange(next)",
 				},
-				[162458] = {
-					["name"] = "Retinus the Seeker",
-					["code"] = "use(Explode:282) [enemy.hp<610]\nuse(Flock:581) [enemy.aura(Black Claw:918).exists]\nuse(Black Claw:919)\nuse(Thunderbolt:779)\nuse(Missile:777)\nchange(next)",
+				[105455] = {
+					["name"] = "Jarrun's Ladder",
+					["code"] = "if [self(#1).active]\nchange(#2) [round=3]\nchange(#2) [self(#1).dead]\nuse(Poison Protocol:1954)\nuse(Void Nova:2356) [enemy(#2).hp>95]\nstandby [enemy.aura(Undead:242).exists]\nuse(Ooze Touch:445)\nendif\n\nif [self(#2).active]\nstandby [enemy.aura(Undead:242).exists]\nchange(#3) [round=8]\nuse(Great Sting:1966) [round>4]\nuse(Cleave:1273)\nendif\n\nif [self(#3).active]\nchange(#1)\nendif",
 				},
-				[99210] = {
-					["name"] = "Fight Night: Bodhi Sunwayver",
-					["code"] = "use(#1) [round>5]\nuse(#2) [round~1,5]\nuse(#3) [round~2,4]\nchange(next)",
+				[197350] = {
+					["name"] = "You Have to Start Somewhere (Critter)",
+					["code"] = "change(#2) [round=2]\nuse(Armageddon:1025)\nuse(Surge of Power:593) [enemy(#3).active]\nuse(Bite:110)",
 				},
 				["Wrathion"] = {
 					["name"] = "Wrathion",
@@ -860,41 +870,41 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Ezra Grimm",
 					["code"] = "use(Bite:110) [round=1]\nuse(Howl:362) [self.ability(Surge of Power:593).usable]\nuse(Surge of Power:593)\nuse(Bite:110)\n\nuse(Deflection:490) [self.aura(Elementium Bolt:605).duration=1]\nuse(Sandstorm:453) [enemy(#2).active]\nuse(Crush:406)\n\nuse(Consume Corpse:665) [self.hpp<55]\nuse(Flurry:360)\n\nchange(next) [self.dead]",
 				},
-				[104553] = {
-					["name"] = "Snail Fight!",
-					["code"] = "change(#1) [self(#3).played]\nchange(#2) [round=2]\nchange(#3) [round=4]\nuse(Great Sting:1966)\nstandby [round=5 & self(#2).dead]\nuse(Enrage:1392) [!self.aura(Enraged:1391).exists]\nuse(Impale:800)\nuse(Pheromones:1063)",
+				[146183] = {
+					["name"] = "Living Napalm",
+					["code"] = "ability(Shell Armor:1380) \nability(Swallow You Whole:276) [enemy.hpp < 25]\nability(Deep Bite:1372)\nability(Shell Shield:310) [!self.aura(Shell Shield:309).exists]\nchange(next) [self.dead]\nability(#1)",
 				},
-				[116792] = {
-					["name"] = "Phyxia",
-					["code"] = "use(Supercharge:208) [enemy.hp>361]\nuse(Repair:278) [round=3]\nuse(Metal Fist:384)\nuse(#1)\nchange(next)",
+				[200696] = {
+					["name"] = "Flow - Legendary",
+					["code"] = "use(#1) [round~1,2]\nuse(#3) [enemy(#1).aura(918).exists]\nuse(#2)\nuse(#3) [enemy(#1).aura(217).exists]\nchange(#2)",
 				},
-				[85685] = {
-					["name"] = "Stitches Jr.",
-					["code"] = "standby [round~3,7]\nability(Supercharge:208) [round=5]\nability(Wind-Up:459)\nchange(#2)",
+				[98270] = {
+					["name"] = "My Beast's Bidding",
+					["code"] = "quit [!self(#3).exists]\n\nchange(next) [self.dead]\nchange(#3) [self(#2).played]\n\nuse(#2) \nuse(#3) [self(#1).active]\nuse(#3) [enemy(#2).dead]\n\nuse(#1)\nstandby",
 				},
-				[139987] = {
-					["name"] = "This Little Piggy Has Sharp Tusks",
-					["code"] = "change(next) [ self(#1).dead & !self(#3).played ] \nability(#2) [ !enemy.aura(217).exists ] \nability(#3) \nability(#1)",
+				[161662] = {
+					["name"] = "Char",
+					["code"] = "change(#2) [round=3]\nuse(Howl:362)\nuse(Surge of Power:593)\nuse(Time Bomb:602)\nuse(Decoy:334)\nstandby",
 				},
-				[71932] = {
-					["name"] = "Wise Mari",
-					["code"] = "ability(Blingtron Gift Package:989) [ enemy.aura(Make it Rain:986).duration=1 ]\nability(Make it Rain:985)\nability(Inflation:1002)\nability(Consume Magic:1231) [ self.aura(Whirlpool:512).exists ]\nability(Creeping Ooze:448)\nchange(#2)",
+				[161663] = {
+					["name"] = "Tempton",
+					["code"] = "ability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Flock:581)",
 				},
-				["Do You Even Train? (Mech)"] = {
-					["name"] = "Do You Even Train? (Mech)",
-					["code"] = "change(#3) [ enemy.is(Swole:3573) & self.aura(Decoy:333).exists ]\nchange(#3) [ enemy.is(Swole:3573) & !enemy.ability(Headbutt:376).usable ]\nuse(Powerball:566) [ !self.speed.fast ]\nif [ self.aura(Wind-Up:458).exists ]\n    use(Supercharge:208) [ enemy.is(Lifft:3572) & enemy.ability(Dive:564).duration~2,3,4 ]\n    use(Powerball:566) [ enemy.aura(Underwater:830).exists ]\n    use(Wind-Up:459) [ enemy.is(Brul'dan:3571) ]\nendif\nuse(Powerball:566) [ enemy.is(Brul'dan:3571) & self.aura(Mechanical:244).exists & !enemy.ability(Drain Power:486).usable ]\nuse(Wind-Up:459)\nif [ enemy.is(Brul'dan:3571) ]\n    use(Time Bomb:602) [ enemy.hp<1097 ]\n    use(Decoy:334) [ enemy.hp<549 & !enemy.aura(Flame Breath:500).exists ]\nendif\nuse(Flame Breath:501) [ !enemy.is(Swole:3573) ]\nuse(Alert!:1585) [ enemy.hp>1726 ]\nuse(Alert!:1585) [ enemy.is(Brul'dan:3571) ]\nuse(Ion Cannon:209) [ self.aura(Supercharged:207).exists ]\nuse(Supercharge:208)\nstandby [ self(#2).active ]\nchange(next)",
+				[140315] = {
+					["name"] = "Automated Chaos",
+					["code"] = "standby [enemy(\"Fixed\" Remote Control Rocket Chicken:2204).active]\nability(Call Blizzard:206)\nability(Deep Freeze:481) [enemy.hp>=444]\nability(#1)\nchange(next)",
 				},
-				[141046] = {
-					["name"] = "Captured Evil",
-					["code"] = "ability(321)\nability(#2)\nability(#3)\nability(#1)\nchange(next)",
+				[116794] = {
+					["name"] = "Growing Ectoplasm 2",
+					["code"] = "change(#2) [self(#1).dead]\nchange(#3) [self(#2).dead]\nif [enemy(#1).active]\n    ability(919) [!enemy.aura(918).exists]\n    ability(921)\n    ability(364) [enemy.aura(542).exists]\nendif\nability(919) [!enemy.aura(918).exists]\nability(921)\nability(597) [self.aura(823).duration<=1]\nability(598) [self.hp<1000]\nability(525)",
 				},
-				[140880] = {
-					["name"] = "What's the Buzz?",
-					["code"] = "ability(Emerald Presence:597) [ !self.aura(Emerald Presence:823).exists ]\nability(Emerald Presence:597) [ self.aura(Emerald Presence:823).duration = 1 ]\nability(Emerald Dream:598) [ self.hp <750 ]\nstandby",
+				["To a Land Down Under (Flyer)"] = {
+					["name"] = "To a Land Down Under (Flyer)",
+					["code"] = "ability(Ironskin:1758)\nability(Predatory Strike:518) [round=4]\nability(Falcosaur Swarm!:1773)\n\nability(Quills:184) [enemy(#1).active]\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Flock:581)\nability(Quills:184)\n\nability(#2)\nability(#3)\nability(#1)\n\nchange(next)",
 				},
-				[141879] = {
-					["name"] = "Keeyo's Champions of Vol'dun",
-					["code"] = "change(#2) [enemy(#2).active]\nability(459) [self.aura(458).exists]\nability(1921) [self.round=1]\nability(459) [self.round=2]\nability(#3)\nability(974) [enemy(#3).active]\nability(595) [enemy(#1).active]\nchange(#1) [self(#2).dead]",
+				[162465] = {
+					["name"] = "Dune Buggy",
+					["code"] = "ability(Blistering Cold:786) [round=1]\nability(BONESTORM:1762) [round>2]\nability(Chop:943)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\nchange(next)",
 				},
 				["Growing Ectoplasm 1"] = {
 					["name"] = "Growing Ectoplasm 1",
@@ -904,40 +914,38 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Do You Even Train? (Beast)",
 					["code"] = "change(next) [self.dead]\n\nuse(Ethereal:998) [enemy.aura(Underwater:830).exists]\nuse(Mangle:314) [!enemy.aura(Mangle:313).exists]\nuse(Swipe:2346)\n\nuse(Great Sting:1966) [!enemy(Brul'dan:3571).dead]\nuse(Scorched Earth:172)\nuse(Flame Breath:501)\n\nuse(#1)\nstandby",
 				},
-				[68465] = {
-					["name"] = "Thundering Pandaren Spirit",
-					["code"] = "change(#1) [enemy(#2).active & enemy.aura(Flame Breath:500).exists & enemy.aura(Razor Talons:2238).exists]\nuse(Feign Death:568) [enemy(#2).active]\nuse(Swarm of Flies:232) [round=4]\nuse(Swarm of Flies:232) [enemy(#3).active & enemy.aura(Poisoned:379).exists]\n\nuse(Flame Breath:501) [self.round=1 & enemy(#2).active]\nuse(Needle Claw:2375)\nuse(Razor Talons:2237) [!enemy.aura(Razor Talons:2238).exists]\n\nuse(Flame Breath:501)\nchange(#2)",
+				[72290] = {
+					["name"] = "Zao, Calfling of Niuzao",
+					["code"] = "use(167)\nuse(411)\nuse(919) [ round=3 ]\nuse(921)\nchange(#2)",
 				},
-				[200678] = {
-					["name"] = "Storm-Touched Slyvern",
-					["code"] = "use(Arcane Storm:589) [round=1]\nuse(Mana Surge:489)\nchange(Arcane Eye:1160)\nuse(Eyeblast:475)\nuse(#1)\nchange(next)",
+				[145988] = {
+					["name"] = "Pulverizer Bot Mk 6001",
+					["code"] = "if [self(Fel-Afflicted Skyfin).active]\nuse(#2)\nendif\n\nif [self(Boneshard).active]\nuse(#2)\nuse(#1)\nendif\n\nif [self(Fel-Afflicted Skyfin).active]\nuse(#2)\nendif\n\nchange(next)",
 				},
-				["Are They Not Beautiful? (Humanoid)"] = {
-					["name"] = "Are They Not Beautiful? (Humanoid)",
-					["code"] = "change(#2) [round=4]\nquit [self(#3).active & enemy(#2).active]\nuse(Soulrush:752) [enemy(Beeks:3566).active]\nuse(Creeping Insanity:1760) [!enemy(Beeks:3566).active]\nuse(Spiritfire Bolt:1066)\nuse(Ice Lance:413) [enemy(Fethres:3565).active]\nuse(Gift of Winter's Veil:586)\nuse(Call Blizzard:206)\nuse(Ice Lance:413)\nchange(Void-Scarred Anubisath:2833) [self.dead]\nuse(Weakness:471) [enemy.aura(Creeping Insanity:1759).exists]\nuse(Nether Blast:608)",
+				["To a Land Down Under (Beast)"] = {
+					["name"] = "To a Land Down Under (Beast)",
+					["code"] = "change(#2) [ round=5 ]\nchange(#1) [ self(#2).dead & !enemy(Clawz:3559).dead ]\nuse(Prowl:536) [ !enemy.is(Clawz:3559) & enemy.hp>339 & !weather(Moonlight:596) ]\nuse(Prowl:536) [ !enemy.is(Clawz:3559) & enemy.hp>309 ]\nuse(Arcane Dash:1536)\nuse(Scrabble:2430)\nuse(Moonfire:595)\nuse(Spirit Claws:974)\nuse(Booby-Trapped Presents:1080) [ enemy.is(Clawz:3559) ]\nuse(Huge Fang:930)\nuse(Gift of Winter's Veil:586)\nstandby\nchange(next)",
 				},
-				[72291] = {
-					["name"] = "Yu'la, Broodling of Yu'lon",
-					["code"] = "standby [round=5]\nuse(Darkflame:792) [round=7]\nchange(#1) [self(#3).active]\nuse(Murder the Innocent)\nuse(Eyeblast:475)\nchange(next)",
+				[155267] = {
+					["name"] = "Risen Guard",
+					["code"] = "standby [enemy(#2).type=4 & enemy(#1).aura(Undead:242).exists]\nstandby [enemy(#3).type=4 & enemy(#2).aura(Undead:242).exists]\nstandby [enemy(#2).type=2 & enemy(#1).aura(Undead:242).exists]\nstandby [enemy(#3).type=2 & enemy(#2).aura(Undead:242).exists]\nchange(#2) [enemy(#1).aura(Undead:242).exists & enemy(#2).type=6]\nchange(#2) [enemy(#2).aura(Undead:242).exists & enemy(#3).type=6]\n-----------------------\nability(Blinding Poison:1049) [round=1]\nability(Decoy:334) [enemy.round=2]\nability(Thunderbolt:779)\nchange(#1) [self(#2).active & enemy.type=4]\nability(Poison Fang:152) [enemy.is(Plague Whelp:2606) & enemy.round=1]\nability(Blinding Poison:1049) [!enemy(#1).active & !enemy.aura(Undead:242).exists]\nability(Poison Fang:152) [!enemy(#1).active & !enemy.aura(Poisoned:379).exists & enemy.type=6]\nchange(#1) [self(#2).active & enemy.type=4]\nability(#1)\nchange(next)",
 				},
-				[200689] = {
-					["name"] = "Wildfire - Rare",
-					["code"] = "ability(Blistering Cold:786)\nability(Chop:943) [!enemy.aura(Bleeding:491).exists]\nability(BONESTORM!!:1762) [!self.aura(Undead:242).exists]\nability(Chop:943)\n\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\n\nchange(next)",
+				[154917] = {
+					["name"] = "Mindshackle",
+					["code"] = "use(Blistering Cold:786) [ round~1,4 ]\nuse(BONESTORM:1762) [ round=3 ]\nuse(Chop:943)\nuse(Black Claw:919) [ self.round=1 ]\nuse(Hunting Party:921)\nuse(Flock:581)\nuse(Swarm:706)\nchange(next)\nstandby",
 				},
-				[201858] = {
-					["name"] = "Lyver",
-					["code"] = "use(919) [round=1] \nuse(581) [round=2] \nuse(1370) [round=5]",
+				[150858] = {
+					["name"] = "Blackmane",
+					["code"] = "ability(Zusätzlicher Beschlag:392) [round==1]\nability(Goldregen:985)\nability(Inflation:1002)\nability(Schlaghagel:360)\nchange(next)",
 				},
-				[141814] = {
-					["name"] = "Accidental Dread",
-					["code"] = "if [ !self(#2).active ]\n    ability(Life Exchange:277) [ enemy(#2).active ]\n    ability(Moonfire:595) [ enemy.round<3 ]\n    ability(Arcane Blast:421)\nendif\nchange(#3) [ self(#2).played ]\nchange(#2) [ !self(#2).played ]\nability(Arcane Storm:589)\nability(Mana Surge:489)\nability(Tail Sweep:122)",
+				[200688] = {
+					["name"] = "Wildfire - Legendary",
+					["code"] = "use(Illuminate:460)\nuse(Murder the Innocent:2223)\nchange(next)",
 				},
 				["Are They Not Beautiful? (Undead)"] = {
 					["name"] = "Are They Not Beautiful? (Undead)",
 					["code"] = "use(beam:1035) [ round = 1 ]\nuse(rush:752)\nuse(filler:1066)\nchange(next)\ntest(Bad RNG, clean up somehow)",
 				},
-			},
-			["Base"] = {
 			},
 			["Rematch"] = {
 				["team:46"] = {
@@ -991,10 +999,6 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 				["team:228"] = {
 					["name"] = "Are They Not Beautiful? (Flyer)",
 					["code"] = "quit [round = 2 & !enemy.aura(Stunned:927).exists]\nquit [round = 4 & self.hpp < 100]\n\nuse(Soulrush:752)\nuse(Ethereal:998) [enemy(#2).active]\nuse(Dark Talon:1233)\n\nuse(Shriek:784) [!enemy.aura(Attack Reduction:494).exists]\nuse(Arcane Storm:589)\nuse(Arcane Blast:421)\n\nchange(next)",
-				},
-				["team:369"] = {
-					["name"] = "Training with Bredda (Flyer)",
-					["code"] = "use(Dark Talon:1233) [ enemy(#2).active ]\nif [ enemy.aura(Flying:341).exists ]\nuse(Ethereal:998)\nuse(Nature's Ward:574)\nendif\nuse(Nature's Touch:573) [ enemy.aura(Undead:242).exists ]\nuse(Nature's Ward:574) [ enemy.ability(Lift-Off:170).usable ]\nuse(Slow and Steady:1360)\nuse(Ravage:802) [ enemy.hp<618 ]\nuse(Nature's Ward:574) [ !self.aura(Nature's Ward:820).exists ]\nuse(Soulrush:752)\nuse(#1)\nchange(next)",
 				},
 				["team:290"] = {
 					["name"] = "Courageous Yon",
@@ -1164,10 +1168,6 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Paws of Thunder",
 					["code"] = "use(Toxic Fumes:2349)\nuse(Poison Protocol:1954)\nuse(Time Bomb:602)\nuse(Armageddon:1025)\n\nstandby [enemy(#2).active & enemy.hp<733 & enemy.aura(601).duration=1]\nif [enemy(#2).aura(927).exists]\nuse(Puncture Wound:1050)\nstandby [enemy(#2).active]\nendif\n\nuse(Impale:800)\nuse(Slicing Wind:420)\nchange(next)",
 				},
-				["team:370"] = {
-					["name"] = "Training with Bredda (Humanoid)",
-					["code"] = "change(#2) [enemy.aura(Stunned:927).exists]\nchange(#3) [enemy.aura(Stunned:927).exists]\n\nability(Dark Fate:2432) [enemy(#2).active & enemy.ability(Spectral Spine:913).usable & enemy.hpp>30]\nability(Dark Fate:2432) [enemy(#1).active & enemy.round=1]\nability(Deflection:490) [enemy(#2).active & self(#2).active & enemy.ability(Spectral Strike:442).usable]\nability(Deflection:490) [enemy(#1).active & enemy.ability(Rot:476).duration=3]\n\nstandby [enemy(#3).active & enemy.ability(Lift-Off:170).usable]\nability(Deflection:490) [enemy(#3).active & enemy.aura(Flying:341).exists]\nability(Soulrush:752)\n\nability(Frost Shock:416) [!enemy.aura(Frost Shock:415).exists]\nability(Deep Freeze:481)\n\nability(#1)\nchange(#1)",
-				},
 				["team:281"] = {
 					["name"] = "Morulu the Elder",
 					["code"] = "ability(Dodge:312) [round=3]\nability(Ravage:802) [round=4]\nability(Dodge:312) [enemy(#3).active & enemy.round=1]\nability(Sandstorm:453)\nability(#1)\nchange(next)",
@@ -1183,10 +1183,6 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 				["team:54"] = {
 					["name"] = "Tasha Riley",
 					["code"] = "if [round<24]\nchange(#2) [enemy.ability(Surge of Power:593).duration=5]\nuse(Glowing Toxin:270) [enemy(#2).aura(Stunned:927).exists]\nuse(Amber Prison:1026) [enemy(#1).active]\nuse(Cocoon Strike:506) [enemy(#2).active & !enemy.ability(Howl:362).usable]\nuse(Glowing Toxin:270) [round>8]\nuse(Ice Tomb:624)\nchange(#1)\nstandby\nendif\n\nuse(Roar of the Dead:2071) [self.round=1]\nuse(Tornado Punch:1052)\nuse(Jab:219)\nuse(Call Blizzard:206) [enemy(#3).active]\nuse(Ice Tomb:624) [enemy.aura(Undead:242).exists]\nuse(Call Blizzard:206) [!weather(Blizzard:205)]\nuse(Ice Lance:413)\nuse(Amber Prison:1026)\nuse(Glowing Toxin:270)\nstandby\nchange(#3)",
-				},
-				["team:372"] = {
-					["name"] = "Training with Bredda (Mech)",
-					["code"] = "ability(Supercharge:208) [self.aura(Wind-Up:458).exists]\nability(Decoy:334) [enemy(Fethyr:1792).active]\nability(Bombing Run:647) [enemy(Fethyr:1792).active]\nability(Call Blizzard:206)\nability(#1)\nchange(next)",
 				},
 				["team:13"] = {
 					["name"] = "Jarrun's Ladder",
@@ -1348,10 +1344,6 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Training with the Nightwatchers (Mech)",
 					["code"] = "change(Darkmoon Tonk:338) [enemy(Helpful Spirit:1898).active]\nchange(Mechanical Pandaren Dragonling:844) [enemy(Delicate Moth:1899).active]\nability(Decoy:334)\nability(Thunderbolt:779)\nability(Breath:115)\nability(Missile:777) [ enemy.hp >=733 ]\nability(Minefield:634)\nability(Ion Cannon:209)\nability(Missile:777)\nability(#1)\nchange(next)",
 				},
-				["team:368"] = {
-					["name"] = "Training with Bredda (Elemental)",
-					["code"] = "standby [enemy(#1).active & enemy.aura(Undead:242).exists]\n\nability(Geyser:418) [round=1]\nability(Dive:564) [round=2]\n\nability(Elementium Bolt:606) [enemy(#3).active]\nability(Scorched Earth:172)\n\nability(Crystal Prison:569) [enemy(#1).active]\nability(Stoneskin:436) [!self.aura(Stoneskin:435).exists]\n\nability(#1)\nchange(next)",
-				},
 				["team:176"] = {
 					["name"] = "Cookie's Leftovers",
 					["code"] = "standby [ self.aura(926).exists & self.speed.fast ]\nability(334)\nability(779)\nability(115)\nchange(#2)\nability(312) [ enemy.ability(#3).usable ]\nability(574) [ self.aura(820).duration < 2 & self.speed.slow ]\nability(574) [ !self.aura(820).exists ]\nability(504)",
@@ -1400,10 +1392,6 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Enok the Stinky",
 					["code"] = "ability(Curse of Doom:218)\nability(Haunt:652) [round=3]\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Flock:581)\nability(Hunting Party:921)\nability(Leap:364)\nability(#1)\nchange(next)",
 				},
-				["team:371"] = {
-					["name"] = "Training with Bredda (Magic)",
-					["code"] = "change(#2) [enemy(#2).active & self(#1).active & self(#1).ability(Evanescence:440).duration=3]\nchange(#3) [enemy(#3).active]\n\nability(Phase Punch:1765) [round=5]\nability(Phase Punch:1765) [self(#1).active & self(#1).ability(Evanescence:440).duration=3 & enemy(#2).dead & enemy(#3).hp>0]\nability(Evanescence:440)\n\nstandby [enemy.aura(Undead:242).exists]\n\nability(Consume Magic:1231) [enemy(#2).active & enemy(#2).ability(Spectral Spine:913).usable]\nability(Toxic Fumes:2349)\n\nability(Spirit Spikes:914) [self.round=1]\nability(Spectral Spine:913)\n\nability(#1)\nchange(#1)",
-				},
 				["team:164"] = {
 					["name"] = "Snail Fight!",
 					["code"] = "change(#1) [self(#3).played]\nchange(#2) [round=2]\nchange(#3) [round=4]\nuse(Great Sting:1966)\nstandby [round=5 & self(#2).dead]\nuse(Enrage:1392) [!self.aura(Enraged:1391).exists]\nuse(Impale:800)\nuse(Pheromones:1063)",
@@ -1427,10 +1415,6 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 				["team:119"] = {
 					["name"] = "Living Statues Are Tough",
 					["code"] = "use(212) [round=1]\nuse(652)\nuse(581) [enemy.aura(918).exists]\nuse(919)\nchange(next)",
-				},
-				["team:367"] = {
-					["name"] = "Training with Bredda (Dragon)",
-					["code"] = "standby [enemy.aura(Flying:341).exists]\nuse(Howl:362) [round=2]\nuse(Surge of Power:593) [round=3]\nuse(Arcane Storm:589) [!weather(Arcane Winds:590)]\nuse(Mana Surge:489)\nuse(Moonfire:595)\nuse(#1)\nchange(next)",
 				},
 				["team:3"] = {
 					["name"] = "Nefarious Terry",
@@ -1543,10 +1527,6 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 				["team:250"] = {
 					["name"] = "To a Land Down Under (Undead)",
 					["code"] = "use(Enrage:1392) [!self.aura(Enraged:1391).exists && self.ability(Soulrush:752).usable]\nuse(Reflective Shield:1105) [enemy(Murrey:3558).active]\nuse(Spiritfire Bolt:1066) [enemy.hp < 216]\nuse(Soulrush:752)\nuse(Spiritfire Bolt:1066)\n\nuse(Toxic Smoke:640) [!enemy.aura(Toxic Smoke:639).exists]\nuse(Slime:1763)\n\nchange(next)",
-				},
-				["team:364"] = {
-					["name"] = "Training with Bredda (Aquatic)",
-					["code"] = "use(Shell Shield:310) [self.aura(Shell Shield:309).duration<=1]\nif [self.hpp<80]\nuse(Healing Wave:123)\nuse(Wish:273)\nendif\nuse(Renewing Mists:511) [!self.aura(Renewing Mists:510).exists]\nuse(Lightning Shield:906)\nuse(Swallow You Whole:276) [enemy.hpp<25]\nuse(Paralyzing Shock:909)\nuse(#1)\nchange(next)\nstandby",
 				},
 				["team:146"] = {
 					["name"] = "Shred",
@@ -1692,25 +1672,17 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Desert Survivors",
 					["code"] = "standby [ enemy.speed.fast & enemy.ability(Burrow:159).usable & enemy(#2).active ] \nability(Deflection:490) [ enemy.ability(Mudslide:572).usable ] \nability(Deflection:490) [enemy.aura(Underground:340).exists] \nability(#3) \nability(#1) \nchange(next)",
 				},
-				["team:373"] = {
-					["name"] = "Training with Bredda (Undead)",
-					["code"] = "use(Ethereal:998)\nuse(Call Darkness:256) [self.aura(Undead:242).exists]\nuse(Spectral Strike:442)\nuse(#1)\nchange(next)",
-				},
-				["team:365"] = {
-					["name"] = "Training with Bredda (Beast)",
-					["code"] = "ability(541)\nability(163)\nability(165)\nability(501)\nability(436) [ self.round=1 ]\nability(536)\nability(437)\nchange(next)",
-				},
-				["team:351"] = {
-					["name"] = "Tiny Poacher, Tiny Animals (Magic)",
-					["code"] = "use(Batter:455) [enemy(Gulp:1798).active & enemy.round>3]\nuse(Batter:455) [enemy(Egcellent:1793).active & enemy.round>2]\nuse(Sandstorm:453) [round=2]\nuse(Wind-Up:459)\nuse(Poison Protocol:1954)\nuse(Toxic Fumes:2349) [enemy(Red Wire:1794).active & !weather(Toxic Gas:2350)]\nuse(Corrosion:447)\nuse(Meteor Strike:407) [enemy.aura(Flamethrower:502).exists]\nuse(Flamethrower:503)\nchange(next)",
+				["team:221"] = {
+					["name"] = "Wrathion",
+					["code"] = "ability(Solar Beam:753) [enemy(#2).active & enemy(#3).dead]\nability(Arcane Storm:589)\nability(Consume Magic:1231)\nability(Sunlight:404)\nability(Photosynthesis:268) [!self.aura(Photosynthesis:267).exists]\nchange(#2) [self(#1).active]\nchange(#1) [self(#2).active]",
 				},
 				["team:68"] = {
 					["name"] = "Elderspawn of Nalaada",
 					["code"] = "ability(#1) [enemy.aura(Shattered Defenses:542).exists]\nability(#2) [self.round=1]\nability(#3)\nchange(next)",
 				},
-				["team:350"] = {
-					["name"] = "Tiny Poacher, Tiny Animals (Humanoid)",
-					["code"] = "ability(Deflection:490) [enemy.ability(Mudslide:572).usable]\nability(Deflection:490) [enemy.ability(Flame Jet:1041).usable]\nability(Sandstorm:453) [round=2]\nability(Sandstorm:453) [enemy.round=1 & enemy(#2).active]\nability(Frost Shock:416) [self.round~1,3]\nability(Frost Shock:416) [enemy.round=1 & enemy(#3).active]\nability(Deep Freeze:481)\nability(#1)\nstandby\nchange(next)",
+				["team:127"] = {
+					["name"] = "What Do You Mean, Mind Controlling Plants?",
+					["code"] = "use(Curse of Doom:218)\nuse(Haunt:652)\nchange(#2) [self(#1).dead & !self(#2).active]\nuse(Black Claw:919) [round=3]\nuse(Black Claw:919) [round=9]\nstandby [self.aura(Stunned).duration>=1]\nuse(Savage Talon:518) [enemy.aura(Shattered Defenses:542).exists]\nuse(Flock:581)\nuse(Arcane Storm:589)\nchange(#3) [self(#2).dead & !self(#3).active]\nuse(Falcosaur Swarm!:1773)",
 				},
 				["team:138"] = {
 					["name"] = "Wastewalker Shu",
@@ -1720,21 +1692,21 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Snail Fight! (Flyer)",
 					["code"] = "ability(Dodge:312) [enemy.ability(Headbutt:376).usable]\nability(Dodge:312) [enemy.aura(Underwater:830).exists]\nability(Ravage:802) [enemy.hp<500 & enemy(#2).active]\nability(Call Darkness:256)\nability(Nocturnal Strike:517)\nability(#1)\nchange(next)",
 				},
-				["team:44"] = {
-					["name"] = "Chen Stormstout",
-					["code"] = "change(next) [ enemy(#2).active & !self(#3).played ]\nability(Decoy:334)\nability(Haywire:916)\nability(Dodge:312) [ enemy(#2).active ]\nability(Dodge:312) [ enemy.aura(Barrel Ready:353).exists ]\nability(Ravage:802) [ enemy(#2).active & enemy.hp<927 ]\nability(Ravage:802) [ enemy(#3).hp<619 ]\nability(#1)\nchange(#1)",
+				["team:350"] = {
+					["name"] = "Tiny Poacher, Tiny Animals (Humanoid)",
+					["code"] = "ability(Deflection:490) [enemy.ability(Mudslide:572).usable]\nability(Deflection:490) [enemy.ability(Flame Jet:1041).usable]\nability(Sandstorm:453) [round=2]\nability(Sandstorm:453) [enemy.round=1 & enemy(#2).active]\nability(Frost Shock:416) [self.round~1,3]\nability(Frost Shock:416) [enemy.round=1 & enemy(#3).active]\nability(Deep Freeze:481)\nability(#1)\nstandby\nchange(next)",
 				},
 				["team:401"] = {
 					["name"] = "Training with the Nightwatchers (Magic)",
 					["code"] = "use(Void Nova:2356)\nuse(Poison Protocol:1954)\nuse(#1)\nchange(next)",
 				},
-				["team:72"] = {
-					["name"] = "Door Control Console",
-					["code"] = "ability(Acidic Goo:369) [ enemy.hp.full ]\nuse(Dive:564) [round=2] \nuse(Dive:564) [self.aura(Ice Tomb:623).duration=1] \nuse(Dive:564) [self.aura(Sewage Eruption:2063).duration=1] \nuse(Ooze Touch:445) \nchange(next)",
+				["team:16"] = {
+					["name"] = "Brutus and Rukus",
+					["code"] = "ability(Wind-Up:459) [ round=1 ]\nability(Supercharge:208) [ round=2 ]\nability(Wind-Up:459) [ round=3 ]\nability(Wind-Up:459) [ round=4 ]\nability(Wind-Up:459) [ round=5 ]\nability(Toxic Smoke:640) [ round=6 ]\nchange(Mechanical Pandaren Dragonling:844) [ round=7 ]\nability(Thunderbolt:779)\nability(Explode:282) [ enemy.hp<560 ]\nability(Breath:115) [ enemy.hp>560 ]",
 				},
-				["team:363"] = {
-					["name"] = "Snail Fight! (Undead)",
-					["code"] = "ability(Acid Rain:1051)\nability(Dreadful Breath:668)\nability(Prowl:536) [enemy(Rocklick:1842).active]\nability(Pounce:535)\nstandby\nchange(next)",
+				["team:278"] = {
+					["name"] = "Nicki Tinytech",
+					["code"] = "change(#3) [ !self(#3).played ]\nchange(#2) [ !self(#2).played ]\nchange(#2) [ self(#1).dead ]\nchange(#1)\nuse(Ancient Blessing:611) [ self.hpp < 70 & !self.aura(Dragonkin:245).exists ]\nuse(Ancient Blessing:611) [ self.hpp < 50 ]\nuse(Moonfire:595) [ weather(Moonlight:596).duration <= 1 ]\nuse(#1)\nstandby",
 				},
 				["team:83"] = {
 					["name"] = "Fight Night: Bodhi Sunwayver",
@@ -1744,9 +1716,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Natural Defenders",
 					["code"] = "use(Surge of Power:593) [enemy.hp<1111]\nuse(Tail Sweep:122) [round=1]\nuse(Arcane Storm:589) [round=2]\nuse(Mana Surge:489)\nuse(Wind-Up:459) [!enemy(#2).active]\nuse(Supercharge:208)\nuse(Call Lightning:204)\nuse(Howl:362)\nuse(Surge of Power:593)\nchange(next)",
 				},
-				["team:361"] = {
-					["name"] = "Snail Fight! (Magic)",
-					["code"] = "use(Void Nova:2356)\nuse(Poison Protocol:1954)\nuse(#1)\nchange(next)",
+				["team:363"] = {
+					["name"] = "Snail Fight! (Undead)",
+					["code"] = "ability(Acid Rain:1051)\nability(Dreadful Breath:668)\nability(Prowl:536) [enemy(Rocklick:1842).active]\nability(Pounce:535)\nstandby\nchange(next)",
 				},
 				["team:271"] = {
 					["name"] = "Threads of Fate",
@@ -1764,17 +1736,21 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Fight Night: Sir Galveston",
 					["code"] = "change(#3) [self(#2).played]\nuse(Armageddon:1025) [round=4]\nuse(Zeitbombe:602) [round=3]\nuse(Flammenatem:501)\nuse(Tiefer Atem:169) [enemy(#2).active]\nuse(Dunkelheit herbeirufen:256)\nchange(#2)",
 				},
-				["team:360"] = {
-					["name"] = "Snail Fight! (Humanoid)",
-					["code"] = "standby [round~2,3]\nability(Deflection:490) [enemy.aura(Underwater:830).exists]\nstandby [enemy.aura(Underwater:830).exists & self(#1).active]\nability(Mangle:314) [round=4]\nability(Mangle:314) [enemy.round=1 & enemy(#2).active]\nability(Rampage:124) [round>3]\nability(#1)\nstandby\nchange(next)",
+				["team:361"] = {
+					["name"] = "Snail Fight! (Magic)",
+					["code"] = "use(Void Nova:2356)\nuse(Poison Protocol:1954)\nuse(#1)\nchange(next)",
 				},
-				["team:358"] = {
-					["name"] = "Snail Fight! (Elemental)",
-					["code"] = "use(Howl:362)\nuse(Burrow:159)\nuse(#1)\nstandby\nchange(next)",
+				["team:36"] = {
+					["name"] = "Flow - Rare",
+					["code"] = "use(Haunt:652)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Hunting party:921)\nuse(Leap:364)\nchange(next)\n\n--Script created by Anolaszun#1423",
 				},
 				["team:92"] = {
 					["name"] = "Goldenbot XD",
 					["code"] = "change(#2) [ round=3 ]\nchange(#1) [ self(#2).active ]\nuse(786)\nstandby [self(#1).active]\nuse(919) [ self.round = 1 ]\nuse(581)\nchange(#3)",
+				},
+				["team:219"] = {
+					["name"] = "Unit 6",
+					["code"] = "ability(Curse of Doom:218)\nability(Haunt:652)\nability(Black Claw:919) [self.round=1]\nability(Flock:581)\nability(#1)\nchange(next)",
 				},
 				["team:356"] = {
 					["name"] = "Snail Fight! (Critter)",
@@ -1784,49 +1760,45 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Training with the Nightwatchers (Aquatic)",
 					["code"] = "use(564)\nuse(779)\nuse(908)\nuse(509)\nstandby\nchange(next)",
 				},
-				["team:293"] = {
-					["name"] = "Stand Up to Bullies",
-					["code"] = "change(#1) [self(#2).dead]\nuse(#1) [round=1]\nuse(#3) [round=2]\nchange(#2) [round=3]\nuse(Black Claw:919) [!enemy.aura(Black Claw).exists]\nuse(Flock:581)\nuse(Build Turret:710) [enemy.aura(Black Claw).exists]\nuse(Metal Fist:384)",
+				["team:254"] = {
+					["name"] = "Do You Even Train? (Critter)",
+					["code"] = "use(Burrow:159) [enemy.aura(Underwater:830).exists]\nuse(Woodchipper:411) [!enemy.aura(Bleeding:491).exists & enemy(#1).dead]\n\nuse(Feign Death:568) [enemy.ability(Headbutt:376).usable]\nuse(#1)\n\nchange(next)",
 				},
 				["team:88"] = {
 					["name"] = "Algalon the Observer",
 					["code"] = "change(#2) [round=3]\nchange(#1) [round=5]\nuse(Explode:282) [round=8]\nuse(Blinding Powder:1015) [round~2,6]\nuse(Sting:359)\n\nuse(Decoy:334) [enemy(#3).active]\nuse(Razor Talons:2237) [!enemy.aura(Razor Talons:2238).exists]\nuse(Flame Breath:501) [enemy(#3).active]\n\nuse(Chop:943) [enemy(#2).active & !enemy.ability(#1).usable]\nuse(Blistering Cold:786) [!enemy(#1).active]\nuse(Chop:943)\n\nchange(#3)",
 				},
-				["team:156"] = {
-					["name"] = "Deviate Chomper",
-					["code"] = "ability(Evanescence:440)\nability(Forboding Curse:1068) [!enemy.aura(Forboding Curse:1067).exists]\nability(#1)\nchange(next)",
-				},
-				["team:177"] = {
-					["name"] = "Tremblor - Rare",
-					["code"] = "ability(Blistering Cold:786)\nability(Chop:943) [!enemy.aura(Bleeding:491).exists]\nability(BONESTORM!!:1762)\n\nability(Primal Cry:920)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\n\nability(#1)\nchange(next)",
+				["team:198"] = {
+					["name"] = "Deebs, Tyri and Puzzle",
+					["code"] = "change(#3) [self.dead]\nchange(#1) [self(#3).active]\nuse(Sunlight:404) [!weather(Sunny Day:403) & self(#1).active]\nchange(#2) [self(#1).active]\nuse(Explode:282)\nuse(Bite:110) [enemy(Deebs:1400).active]\nuse(Solar Beam:753)",
 				},
 				["team:38"] = {
 					["name"] = "Adinakon",
 					["code"] = "use(Explode:282)\nuse(Murder the Innocent:2223)\nchange(next)",
 				},
-				["team:198"] = {
-					["name"] = "Deebs, Tyri and Puzzle",
-					["code"] = "change(#3) [self.dead]\nchange(#1) [self(#3).active]\nuse(Sunlight:404) [!weather(Sunny Day:403) & self(#1).active]\nchange(#2) [self(#1).active]\nuse(Explode:282)\nuse(Bite:110) [enemy(Deebs:1400).active]\nuse(Solar Beam:753)",
+				["team:141"] = {
+					["name"] = "Uncomfortably Undercover",
+					["code"] = "change(#3) [enemy(#3).dead]\nability(208)\nability(447) [!enemy.aura(446).exists]\nability(#3)\nability(#2)\nchange(next)",
+				},
+				["team:284"] = {
+					["name"] = "Beegle Blastfuse",
+					["code"] = "use(Arcane Storm:589)\nuse(Mana Surge:489)\nuse(Tail Sweep:122)\nchange(Anubis:1155) [self(Nexus Whelpling:1165).dead]\nuse(Sandstorm:453)\nuse(Crush:406)",
 				},
 				["team:205"] = {
 					["name"] = "Klutz's Battle Monkey",
 					["code"] = "ability(Ironskin:1758) [ round>2 ]\nability(Predatory Strike:518) [ enemy.aura(Shattered Defenses:542).exists & enemy.hpp>25 ]\nability(#1)\nchange(#2)",
 				},
-				["team:4"] = {
-					["name"] = "Gargra",
-					["code"] = "ability(Explode:282) [enemy(#3).active & enemy.hp.can_explode]\nability(Decoy:334) [enemy(#3).active & enemy.ability(Howl:362).duration=1]\nability(Make it Rain:985) [round=1]\nability(Extra Plating:392)\nstandby [enemy.aura(Dodge:311).exists]\nability(Make it Rain:985)\nability(#1)\nchange(next)",
-				},
 				["team:240"] = {
 					["name"] = "Are They Not Beautiful? (Undead)",
 					["code"] = "use(beam:1035) [ round = 1 ]\nuse(rush:752)\nuse(filler:1066)\nchange(next)\ntest(Bad RNG, clean up somehow)",
 				},
-				["team:169"] = {
-					["name"] = "Hiss",
-					["code"] = "ability(Extra Plating:392) [round=1]\nability(Make it Rain:985)\nability(Inflation:1002)\nability(Moonfire:595)\nability(Soulrush:752)\nability(#1)\nchange(next)",
+				["team:4"] = {
+					["name"] = "Gargra",
+					["code"] = "ability(Explode:282) [enemy(#3).active & enemy.hp.can_explode]\nability(Decoy:334) [enemy(#3).active & enemy.ability(Howl:362).duration=1]\nability(Make it Rain:985) [round=1]\nability(Extra Plating:392)\nstandby [enemy.aura(Dodge:311).exists]\nability(Make it Rain:985)\nability(#1)\nchange(next)",
 				},
-				["team:41"] = {
-					["name"] = "Postmaster Malown",
-					["code"] = "use(Swarm of Flies:232) [enemy(#1).aura(Undead:242).exists]\nuse(Swarm of Flies:232) [round=1]\nuse(Bubble:934) [self.aura(Curse of Doom:217).duration=1]\nuse(Swarm of Flies:232) [!enemy.aura(Swarm of Flies:231).exists]\nuse(Tongue Lash:228)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Flock:581)\nchange(next) [self.dead]",
+				["team:292"] = {
+					["name"] = "Fight Night: Heliosus",
+					["code"] = "ability(218)\nability(652)\nchange(#2) \nability(919) [self.round=1]\nability(581)",
 				},
 				["team:249"] = {
 					["name"] = "Yu'la, Broodling of Yu'lon (2)",
@@ -1836,25 +1808,25 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Tiny Poacher, Tiny Animals (Beast)",
 					["code"] = "standby [enemy(#2).hp<800 & enemy.ability(Feign Death:568).usable]\nability(Rake:492) [enemy.round=1 & enemy(#1).active]\nability(Rake:492) [enemy(#2).active]\nability(Feathered Frenzy:1398)\nability(Burrow:159) [enemy.ability(Flame Jet:1041).duration=2]\nability(Deep Burn:1407) [enemy.aura(Flame Breath:500).exists]\nability(Beaver Dam:325) [enemy(#3).active]\nability(Chew:541) [self.aura(Beaver Dam:326).exists]\nability(#1)\nchange(next)",
 				},
-				["team:162"] = {
-					["name"] = "Yu'la, Broodling of Yu'lon",
-					["code"] = "standby [round=5]\nuse(Darkflame:792) [round=7]\nchange(#1) [self(#3).active]\nuse(Murder the Innocent)\nuse(Eyeblast:475)\nchange(next)",
+				["team:41"] = {
+					["name"] = "Postmaster Malown",
+					["code"] = "use(Swarm of Flies:232) [enemy(#1).aura(Undead:242).exists]\nuse(Swarm of Flies:232) [round=1]\nuse(Bubble:934) [self.aura(Curse of Doom:217).duration=1]\nuse(Swarm of Flies:232) [!enemy.aura(Swarm of Flies:231).exists]\nuse(Tongue Lash:228)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Flock:581)\nchange(next) [self.dead]",
 				},
 				["team:269"] = {
 					["name"] = "Do You Even Train? (Beast)",
 					["code"] = "change(next) [self.dead]\n\nuse(Ethereal:998) [enemy.aura(Underwater:830).exists]\nuse(Mangle:314) [!enemy.aura(Mangle:313).exists]\nuse(Swipe:2346)\n\nuse(Great Sting:1966) [!enemy(Brul'dan:3571).dead]\nuse(Scorched Earth:172)\nuse(Flame Breath:501)\n\nuse(#1)\nstandby",
 				},
-				["team:147"] = {
-					["name"] = "Huncher",
-					["code"] = "standby [enemy.aura(Undead:242).exists]\nability(Flurry:360) [enemy.aura(Shattered Defenses:542).duration=2]\nability(Dodge:312)\nability(Flurry:360) [enemy.hp<=309]\nability(Stampede:163)\nability(#1)\nchange(next)",
-				},
-				["team:282"] = {
-					["name"] = "Major Payne",
-					["code"] = "ability(Extra Plating:392)\nability(Make it Rain:985) [!enemy.aura(Make it Rain:986).exists]\nability(SMCKTHAT.EXE:983)\nstandby [self.aura(Stunned:927).exists]\nability(Shell Shield:310) [self.aura(Shell Shield:309).duration = 1]\nability(Surge:509)\nchange(next)",
+				["team:162"] = {
+					["name"] = "Yu'la, Broodling of Yu'lon",
+					["code"] = "standby [round=5]\nuse(Darkflame:792) [round=7]\nchange(#1) [self(#3).active]\nuse(Murder the Innocent)\nuse(Eyeblast:475)\nchange(next)",
 				},
 				["team:145"] = {
 					["name"] = "Dreadcoil",
 					["code"] = "if [enemy(#1).active]\n    ability(392) [self.round=1]\n    ability(985) [self.round=2]\n    ability(1002)\nendif\nability(1002)\nchange(#2) [self(#1).dead]\n\nability(#3) [enemy.hp<618 & enemy.type !~ 3]\nability(#3) [enemy.hp<406 & enemy.type ~ 3]\nability(#2) [!self(#2).aura(820).exists]\nability(#1)",
+				},
+				["team:289"] = {
+					["name"] = "Seeker Zusshi",
+					["code"] = "if [enemy(#1).active]\nability(453)\nability(490)\nability(406)\nendif\n\nif [enemy(#2).active]\nability(490) [enemy.round=3]\nability(406) [enemy.round <=2]\nchange(#2) [self(#1).active]\nability(597) [!self.aura(823).exists]\nability(612) [enemy.round= 8]\nability(525)\nendif\n\nif [enemy(#3).active]\nability(525)\nchange(#1) [self(#2).dead]\nability(490) [enemy.aura(269).exists]\nability(453)\nability(406)\nstandby\nendif",
 				},
 				["team:87"] = {
 					["name"] = "Hyuna of the Shrines",
@@ -1868,17 +1840,17 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "The Grand Master",
 					["code"] = "change(#2) [round=6]\nuse(Ice Tomb:624) [enemy(#1).active]\nuse(Call Blizzard:206) [round=2]\nuse(Ice Lance:413)\nuse(Poison Protocol:1954)\nuse(Void Nova:2356)\nuse(Corrosion:447)\nchange(#3)",
 				},
-				["team:107"] = {
-					["name"] = "Watch Where You Step",
-					["code"] = "ability(Curse of Doom:218)\nability(Inflation:1002) [enemy.aura(Shattered Defenses:542).duration<2]\nability(#1) [self(#3).active]\nability(#3)\nchange(next)",
+				["team:236"] = {
+					["name"] = "Are They Not Beautiful? (Undead) (2)",
+					["code"] = "use(beam:1035) [ round = 1 ]\nuse(rush:752)\nuse(filler:1066)\nchange(next)\ntest(Bad RNG, clean up somehow)",
 				},
 				["team:179"] = {
 					["name"] = "Blackmane",
 					["code"] = "if [enemy.aura(Undead:242).exists]\nstandby [self(#3).level=25]\nchange(#1) [self(#3).played]\nchange(#3) [self(#3).level<25]\nendif\nuse(Curse of Doom:218)\nuse(Haunt:652)\nuse(Black Claw:919) [self.round=1]\nuse(Flock:581) [enemy.aura(918).exists & round<7]\nuse(#1)\nchange(next)",
 				},
-				["team:236"] = {
-					["name"] = "Are They Not Beautiful? (Undead) (2)",
-					["code"] = "use(beam:1035) [ round = 1 ]\nuse(rush:752)\nuse(filler:1066)\nchange(next)\ntest(Bad RNG, clean up somehow)",
+				["team:209"] = {
+					["name"] = "Liz",
+					["code"] = "ability(Call Lightning:204)\nability(Zap:116) [enemy.aura(Swarm of Flies:231).exists]\nability(Swarm of Flies:232)\nchange(#2)\nuse(Decoy:334)",
 				},
 				["team:94"] = {
 					["name"] = "Mighty Minions of Maldraxxus",
@@ -1892,21 +1864,21 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Dune Buggy",
 					["code"] = "ability(Blistering Cold:786) [round=1]\nability(BONESTORM:1762) [round>2]\nability(Chop:943)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\nchange(next)",
 				},
-				["team:227"] = {
-					["name"] = "To a Land Down Under (Humanoid)",
-					["code"] = "change(next) [self.dead]\n\nuse(Jar of Smelly Liquid:1556) [!enemy.aura(Corrosion:446).exists]\nuse(Corrosion:447) [round=2]\nuse(Nether Gate:466) [round=3]\nuse(Corrosion:447)\n\nuse(Clobber:350)\nuse(Fish Slap:1737) [enemy(Bassalt:3560).active]\nuse(Bubble:934) [enemy(Clawz:3559).active]\nuse(Fish Slap:1737)\n\nuse(Ice Tomb:624)\nuse(Call Blizzard:206)\nuse(Ice Lance:413)",
+				["team:264"] = {
+					["name"] = "Do You Even Train? (Mech)",
+					["code"] = "change(#3) [ enemy.is(Swole:3573) & self.aura(Decoy:333).exists ]\nchange(#3) [ enemy.is(Swole:3573) & !enemy.ability(Headbutt:376).usable ]\nuse(Powerball:566) [ !self.speed.fast ]\nif [ self.aura(Wind-Up:458).exists ]\n    use(Supercharge:208) [ enemy.is(Lifft:3572) & enemy.ability(Dive:564).duration~2,3,4 ]\n    use(Powerball:566) [ enemy.aura(Underwater:830).exists ]\n    use(Wind-Up:459) [ enemy.is(Brul'dan:3571) ]\nendif\nuse(Powerball:566) [ enemy.is(Brul'dan:3571) & self.aura(Mechanical:244).exists & !enemy.ability(Drain Power:486).usable ]\nuse(Wind-Up:459)\nif [ enemy.is(Brul'dan:3571) ]\n    use(Time Bomb:602) [ enemy.hp<1097 ]\n    use(Decoy:334) [ enemy.hp<549 & !enemy.aura(Flame Breath:500).exists ]\nendif\nuse(Flame Breath:501) [ !enemy.is(Swole:3573) ]\nuse(Alert!:1585) [ enemy.hp>1726 ]\nuse(Alert!:1585) [ enemy.is(Brul'dan:3571) ]\nuse(Ion Cannon:209) [ self.aura(Supercharged:207).exists ]\nuse(Supercharge:208)\nstandby [ self(#2).active ]\nchange(next)",
 				},
 				["team:352"] = {
 					["name"] = "Tiny Poacher, Tiny Animals (Mech)",
 					["code"] = "change(#1) [self(#2).dead]\nability(Lock-On:301) [round~1,2]\nability(Minefield:634)\n\nability(Decoy:334)\nability(Thunderbolt:779) [!enemy(#2).active]\nability(Breath:115)\n\nability(Lock-On:301) [enemy(#3).active]\nstandby [self(#3).active]\nchange(next)",
 				},
+				["team:183"] = {
+					["name"] = "Clear the Catacombs",
+					["code"] = "use(Extra Plating:392) [!self.aura(Extra Plating:391).exists]\nuse(Make it Rain:985) [!enemy.aura(Make it Rain:986).exists]\nuse(Inflation:1002)\nchange(Ikky:1532) [self(#1).dead]\nuse(Savage Talon:1370) [!enemy(Ancient Catacomb Spider:1860).dead]\nif [enemy(Catacomb Bat:1861).active]\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nendif\nuse(Flock:581)\nchange(Iron Starlette:1387) [enemy(Catacomb Snake:1862).active]\nuse(Supercharge:208) [self.aura(Wind-Up:458).exists]\nuse(Wind-Up:459)",
+				},
 				["team:62"] = {
 					["name"] = "Silence",
 					["code"] = "quit [ round<4 & self(#1).dead & !enemy.aura(Shattered Defenses:542).exists ]\ntest(\"Please finish the fight with standard attacks.\") [ self(#3).active ]\nuse(Black Claw:919) [ round=1 ]\nuse(Swarm:706)\nuse(Flock:581)\nuse(Arcane Storm:589)\nuse(Mana Surge:489)\nchange(#2)",
-				},
-				["team:117"] = {
-					["name"] = "Living Permafrost",
-					["code"] = "ability(Toxic Skin:1087) [!self.aura(Toxic Skin:1086).exists & self.speed.fast]\nability(Toxic Skin:1087) [self.aura(Toxic Skin:1086).duration<2 & self.speed.slow]\n\nstandby [enemy.aura(Dodge:2060).exists]\nstandby [enemy.aura(Undead:242).exists]\n\nability(Burrow:159) [enemy(Cockroach:2486).active]\nability(Scratch:119)\n\nability(Claw:429) [enemy(Cockroach:2486).active]\nability(Flamethrower:503) [!enemy.aura(Flamethrower:502).exists]\nability(Conflagrate:179) [enemy.aura(Flamethrower:502).exists]\nability(Flamethrower:503)\n\nability(Strike:378) [enemy(Cockroach:2486).active]\nability(Frostbite Webbing:2478) [!enemy.aura(Brittle Webbing:381).exists]\nability(Shiverweb Swarm:2477) [enemy.aura(Brittle Webbing:381).exists]\nability(Strike:378)\n\nchange(next)",
 				},
 				["team:231"] = {
 					["name"] = "Do You Even Train? (Elemental)",
@@ -1916,21 +1888,25 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "I Am The One Who Whispers",
 					["code"] = "ability(Curse of Doom:218) [round=2]\nability(Haunt:652) [round=3]\nability(Black Claw:919) [self.round=1]\nability(Flock:581) [!enemy.aura(Shattered Defenses:542).exists]\nability(#1)\nchange(next)",
 				},
-				["team:23"] = {
-					["name"] = "Growing Ectoplasm 2",
-					["code"] = "change(#2) [self(#1).dead]\nchange(#3) [self(#2).dead]\nif [enemy(#1).active]\n    ability(919) [!enemy.aura(918).exists]\n    ability(921)\n    ability(364) [enemy.aura(542).exists]\nendif\nability(919) [!enemy.aura(918).exists]\nability(921)\nability(597) [self.aura(823).duration<=1]\nability(598) [self.hp<1000]\nability(525)",
+				["team:57"] = {
+					["name"] = "Prince Wiggletail",
+					["code"] = "ability(Shadow Shock:422) [round=1]\nability(Curse of Doom:218)\nability(Haunt:652)\nability(#1) [enemy.aura(Shattered Defenses:542).exists]\nability(Flock:581)\nchange(next)",
 				},
 				["team:158"] = {
 					["name"] = "Accidental Dread",
 					["code"] = "if [ !self(#2).active ]\n    ability(Life Exchange:277) [ enemy(#2).active ]\n    ability(Moonfire:595) [ enemy.round<3 ]\n    ability(Arcane Blast:421)\nendif\nchange(#3) [ self(#2).played ]\nchange(#2) [ !self(#2).played ]\nability(Arcane Storm:589)\nability(Mana Surge:489)\nability(Tail Sweep:122)",
 				},
-				["team:12"] = {
-					["name"] = "Briarpaw",
-					["code"] = "ability(Dodge:312) [enemy.aura(Dodge:311).exists]\nability(Burrow:159) [self.ability(Dodge:312).duration=2]\nability(#1)",
+				["team:100"] = {
+					["name"] = "Zao, Calfling of Niuzao",
+					["code"] = "use(167)\nuse(411)\nuse(919) [ round=3 ]\nuse(921)\nchange(#2)",
 				},
 				["team:111"] = {
 					["name"] = "Farmer Nishi",
 					["code"] = "if [enemy(#1).active]\nability(453)\nability(490) [self.round> 2]\nability(406)\nendif\nif [enemy(#2).active]\nstandby [enemy.round <= 3]\nstandby [enemy.round=11]\nstandby [enemy.round= 12]\nability(490) [enemy.round=4]\nability(490) [enemy.round=9]\nability(490) [enemy.round=14]\nability(453) [enemy.round=10]\nability(406)\nendif\nif [enemy(#3).active]\nstandby [enemy.round=2]\nability(490) [enemy.round=3]\nability(406) [enemy.round= 1]\nchange(#2) [self(#1).active]\nability(646)\nability(777) [enemy.round = 6]\nability(209)\nendif",
+				},
+				["team:132"] = {
+					["name"] = "Crawg in the Bog",
+					["code"] = "ability(Alert!:1585) [round=1]\nability(Supercharge:208)\nability(Ion Cancon:209)",
 				},
 				["team:24"] = {
 					["name"] = "Tremblor - Legendary",
@@ -1940,13 +1916,13 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Failed Experiment",
 					["code"] = "use(Glowing Toxin:270) [ round=1 ]\nuse(Explode:282)\nuse(Supercharge:208)\nuse(Ion Cannon:209)\nchange(#2)",
 				},
-				["team:103"] = {
-					["name"] = "Eyegor's Special Friends",
-					["code"] = "use(Call Lightning:204)\nuse(Haywire:916)\nuse(Fel Imolate:901)\n\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Quills:184) [enemy(#2).active]\nuse(Flock:581) [enemy(#3).active]\n\nuse(Supercharge:208)\nuse(Ion Cannon:209)\n\nchange(next)",
+				["team:280"] = {
+					["name"] = "Narrok",
+					["code"] = "ability(453)\nability(406)\nstandby",
 				},
-				["team:76"] = {
-					["name"] = "Sharp as Flint",
-					["code"] = "ability(Supercharge:208) [round=2]\nability(Toxic Smoke:640) [round>5]\nability(Wind-Up:459)\n\nability(Breath:115) [!enemy(Lord Flappinsby:3451).dead]\n\nability(Flock:581) [enemy.aura(Black Claw:918).exists]\nability(Black Claw:919)\n\nchange(Mechanical Pandaren Dragonling:844) [!enemy(Lord Flappinsby:3451).dead]\nchange(Ikky:1532)",
+				["team:47"] = {
+					["name"] = "Are They Not Beautiful? (Dragon)",
+					["code"] = "use(Mana Surge:489) [weather(Arcane Winds:590).duration>1]\nuse(Surge of Power:593) [enemy(#3).active & enemy.hp<1099]\nuse(Surge of Power:593) [enemy(#3).active & self.aura(Dragonkin:245).exists]\nuse(Arcane Storm:589)\n\nuse(Arcane Blast:421)\nuse(#1)\n\nchange(next)",
 				},
 				["team:52"] = {
 					["name"] = "Horu Cloudwatcher",
@@ -1956,77 +1932,73 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Cliffs of Bastion",
 					["code"] = "use(Decoy:334) [round=1]\nuse(Explode:282) [enemy.hp<=618]\nuse(Missile:777)\nuse(Wind-Up:459) [enemy(#2).active]\nuse(Toxic Smoke:640)\nuse(Surge of Power:593) [enemy.hp<=1110]\nuse(Howl:362)\nchange(next)",
 				},
-				["team:71"] = {
-					["name"] = "Lurking In The Shadows",
-					["code"] = "use(Appel de la foudre:204)\nuse(Détraqué:916)",
-				},
-				["team:66"] = {
-					["name"] = "Wise Mari",
-					["code"] = "if [enemy(#1).active]\nability(453)\nability(490)\nability(406)\nendif\nif [enemy(#2).active]\nchange(#2) [self(#1).active]\nability(334) [enemy.round= 2]\nability(779)\nability(115)\nendif\nif [enemy(#3).active]\nchange(#1) [self(#2).active]\nability(453)\nability(490)\nability(406)\nendif",
-				},
-				["team:218"] = {
-					["name"] = "Unit 35",
-					["code"] = "ability(Rabid Strike:666) [!enemy.aura(Rabies:807).exists]\nability(Corpse Explosion:663)\n\nability(Fire Shield:1754)\nability(Flamethrower:503)\n\nchange(next)",
-				},
-				["team:130"] = {
-					["name"] = "You Have to Start Somewhere",
-					["code"] = "standby [self(#3).active]\n\nuse(Minefield:634)\nuse(Explode:282)\n \nuse(Time Bomb:602)\nuse(Flame Breath:501) [round=4]\nuse(Armageddon:1025)\n\nchange(next)",
-				},
-				["team:161"] = {
-					["name"] = "Angry Geode",
-					["code"] = "standby [ self.aura(734).exists ]\nability(513)\nability(123) [ self.round > 5 ]\nability(509)\nchange(#2)\n\nability(#3) [enemy.hp<618 & enemy.type !~ 3]\nability(#3) [enemy.hp<406 & enemy.type ~ 3]\nability(#2) [!self(#2).aura(820).exists]\nability(#1)",
-				},
-				["team:188"] = {
-					["name"] = "Belchling",
-					["code"] = "ability(Acid Rain:1051) [round=1]\nability(Dreadful Breath:668)\nability(Twilight Meteorite:1960)\nability(#1)\nchange(next)",
+				["team:42"] = {
+					["name"] = "Ezra Grimm",
+					["code"] = "ability(Garra negra:919) [!enemy.aura(Garra negra:918).exists]\nability(Grupo de caza:921) [!enemy.aura(Defensas desarmadas:542).exists]\nability(Saltar:364)\n---------------------------------------------------------------\nability(Fiesta de los muertos:1093) [self.aura(No-muerto:242).exists]\nability(Fiesta de los muertos:1093) [!enemy.aura(Defensas desarmadas:542).exists]\nability(Maraca macabra:1094)\n-----------------------------------------------------------------\nability(Excavar:159) [enemy.aura(No-muerto:242).exists]\nability(Esquivar:312) [self.aura(Aullido:1725).exists]\nability(Aluvión:360)\n------------------------------------------------------------------\nstandby [self.aura(Aturdido:927).exists]\nchange(next)",
 				},
 				["team:140"] = {
 					["name"] = "Kostos",
 					["code"] = "use(Blistering Cold:786)\nuse(BONESTORM!!:1762)\nuse(Chop:943)\nuse(Black Claw:919) [ self.round=1 ]\nuse(Flock:581)\nchange(next)",
 				},
-				["team:42"] = {
-					["name"] = "Ezra Grimm",
-					["code"] = "ability(Garra negra:919) [!enemy.aura(Garra negra:918).exists]\nability(Grupo de caza:921) [!enemy.aura(Defensas desarmadas:542).exists]\nability(Saltar:364)\n---------------------------------------------------------------\nability(Fiesta de los muertos:1093) [self.aura(No-muerto:242).exists]\nability(Fiesta de los muertos:1093) [!enemy.aura(Defensas desarmadas:542).exists]\nability(Maraca macabra:1094)\n-----------------------------------------------------------------\nability(Excavar:159) [enemy.aura(No-muerto:242).exists]\nability(Esquivar:312) [self.aura(Aullido:1725).exists]\nability(Aluvión:360)\n------------------------------------------------------------------\nstandby [self.aura(Aturdido:927).exists]\nchange(next)",
+				["team:188"] = {
+					["name"] = "Belchling",
+					["code"] = "ability(Acid Rain:1051) [round=1]\nability(Dreadful Breath:668)\nability(Twilight Meteorite:1960)\nability(#1)\nchange(next)",
 				},
-				["team:128"] = {
-					["name"] = "Flowing Pandaren Spirit",
-					["code"] = "if [enemy(#1).active]\nability(312) [enemy.round=3]\nability(504)\nendif\n\nif [enemy(#2).active]\nability(312)\nability(504)\nendif\n\nif [enemy(#3).active]\nability(312) [enemy.round=4]\nability(504)\nendif",
+				["team:161"] = {
+					["name"] = "Angry Geode",
+					["code"] = "standby [ self.aura(734).exists ]\nability(513)\nability(123) [ self.round > 5 ]\nability(509)\nchange(#2)\n\nability(#3) [enemy.hp<618 & enemy.type !~ 3]\nability(#3) [enemy.hp<406 & enemy.type ~ 3]\nability(#2) [!self(#2).aura(820).exists]\nability(#1)",
+				},
+				["team:130"] = {
+					["name"] = "You Have to Start Somewhere",
+					["code"] = "standby [self(#3).active]\n\nuse(Minefield:634)\nuse(Explode:282)\n \nuse(Time Bomb:602)\nuse(Flame Breath:501) [round=4]\nuse(Armageddon:1025)\n\nchange(next)",
+				},
+				["team:218"] = {
+					["name"] = "Unit 35",
+					["code"] = "ability(Rabid Strike:666) [!enemy.aura(Rabies:807).exists]\nability(Corpse Explosion:663)\n\nability(Fire Shield:1754)\nability(Flamethrower:503)\n\nchange(next)",
+				},
+				["team:66"] = {
+					["name"] = "Wise Mari",
+					["code"] = "if [enemy(#1).active]\nability(453)\nability(490)\nability(406)\nendif\nif [enemy(#2).active]\nchange(#2) [self(#1).active]\nability(334) [enemy.round= 2]\nability(779)\nability(115)\nendif\nif [enemy(#3).active]\nchange(#1) [self(#2).active]\nability(453)\nability(490)\nability(406)\nendif",
+				},
+				["team:71"] = {
+					["name"] = "Lurking In The Shadows",
+					["code"] = "use(Appel de la foudre:204)\nuse(Détraqué:916)",
 				},
 				["team:108"] = {
 					["name"] = "Unit 17",
 					["code"] = "change(#2) [round=3]\nchange(#3) [self(#2).active]\n\nability(Blistering Cold:786)\nability(Black Claw:919) [self.round=1]\nability(#1)\nchange(next)",
 				},
-				["team:47"] = {
-					["name"] = "Are They Not Beautiful? (Dragon)",
-					["code"] = "use(Mana Surge:489) [weather(Arcane Winds:590).duration>1]\nuse(Surge of Power:593) [enemy(#3).active & enemy.hp<1099]\nuse(Surge of Power:593) [enemy(#3).active & self.aura(Dragonkin:245).exists]\nuse(Arcane Storm:589)\n\nuse(Arcane Blast:421)\nuse(#1)\n\nchange(next)",
+				["team:128"] = {
+					["name"] = "Flowing Pandaren Spirit",
+					["code"] = "if [enemy(#1).active]\nability(312) [enemy.round=3]\nability(504)\nendif\n\nif [enemy(#2).active]\nability(312)\nability(504)\nendif\n\nif [enemy(#3).active]\nability(312) [enemy.round=4]\nability(504)\nendif",
 				},
-				["team:280"] = {
-					["name"] = "Narrok",
-					["code"] = "ability(453)\nability(406)\nstandby",
+				["team:76"] = {
+					["name"] = "Sharp as Flint",
+					["code"] = "ability(Supercharge:208) [round=2]\nability(Toxic Smoke:640) [round>5]\nability(Wind-Up:459)\n\nability(Breath:115) [!enemy(Lord Flappinsby:3451).dead]\n\nability(Flock:581) [enemy.aura(Black Claw:918).exists]\nability(Black Claw:919)\n\nchange(Mechanical Pandaren Dragonling:844) [!enemy(Lord Flappinsby:3451).dead]\nchange(Ikky:1532)",
 				},
-				["team:15"] = {
-					["name"] = "Vesharr",
-					["code"] = "ability(Arcane Explosion:299) [round=1]\nability(Arcane Explosion:299) [round=2]\nability(Ancient Blessing:611) [round=3]\nability(Surge of Power:593) [enemy(Apexis Guardian:1559).active & enemy.aura(Flying Mark:1420).exists]\nability(Ancient Blessing:611)\nability(Arcane Explosion:299)\nchange(Mechanical Pandaren Dragonling:844)\nability(Thunderbolt:779)\nability(Breath:115)",
+				["team:103"] = {
+					["name"] = "Eyegor's Special Friends",
+					["code"] = "use(Call Lightning:204)\nuse(Haywire:916)\nuse(Fel Imolate:901)\n\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Quills:184) [enemy(#2).active]\nuse(Flock:581) [enemy(#3).active]\n\nuse(Supercharge:208)\nuse(Ion Cannon:209)\n\nchange(next)",
 				},
 				["team:257"] = {
 					["name"] = "Are They Not Beautiful? (Beast)",
 					["code"] = "use(Feathered Frenzy:1398) [ round=1 ]\nuse(Gift of Winter's Veil:586)\nuse(Pounce:535)\nuse(Prowl:536)\nuse(Arcane Dash:1536)\nuse(Moonfire:595)\nchange(next)",
 				},
-				["team:132"] = {
-					["name"] = "Crawg in the Bog",
-					["code"] = "ability(Alert!:1585) [round=1]\nability(Supercharge:208)\nability(Ion Cancon:209)",
+				["team:15"] = {
+					["name"] = "Vesharr",
+					["code"] = "ability(Arcane Explosion:299) [round=1]\nability(Arcane Explosion:299) [round=2]\nability(Ancient Blessing:611) [round=3]\nability(Surge of Power:593) [enemy(Apexis Guardian:1559).active & enemy.aura(Flying Mark:1420).exists]\nability(Ancient Blessing:611)\nability(Arcane Explosion:299)\nchange(Mechanical Pandaren Dragonling:844)\nability(Thunderbolt:779)\nability(Breath:115)",
 				},
-				["team:100"] = {
-					["name"] = "Zao, Calfling of Niuzao",
-					["code"] = "use(167)\nuse(411)\nuse(919) [ round=3 ]\nuse(921)\nchange(#2)",
+				["team:12"] = {
+					["name"] = "Briarpaw",
+					["code"] = "ability(Dodge:312) [enemy.aura(Dodge:311).exists]\nability(Burrow:159) [self.ability(Dodge:312).duration=2]\nability(#1)",
 				},
-				["team:57"] = {
-					["name"] = "Prince Wiggletail",
-					["code"] = "ability(Shadow Shock:422) [round=1]\nability(Curse of Doom:218)\nability(Haunt:652)\nability(#1) [enemy.aura(Shattered Defenses:542).exists]\nability(Flock:581)\nchange(next)",
+				["team:23"] = {
+					["name"] = "Growing Ectoplasm 2",
+					["code"] = "change(#2) [self(#1).dead]\nchange(#3) [self(#2).dead]\nif [enemy(#1).active]\n    ability(919) [!enemy.aura(918).exists]\n    ability(921)\n    ability(364) [enemy.aura(542).exists]\nendif\nability(919) [!enemy.aura(918).exists]\nability(921)\nability(597) [self.aura(823).duration<=1]\nability(598) [self.hp<1000]\nability(525)",
 				},
-				["team:183"] = {
-					["name"] = "Clear the Catacombs",
-					["code"] = "use(Extra Plating:392) [!self.aura(Extra Plating:391).exists]\nuse(Make it Rain:985) [!enemy.aura(Make it Rain:986).exists]\nuse(Inflation:1002)\nchange(Ikky:1532) [self(#1).dead]\nuse(Savage Talon:1370) [!enemy(Ancient Catacomb Spider:1860).dead]\nif [enemy(Catacomb Bat:1861).active]\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nendif\nuse(Flock:581)\nchange(Iron Starlette:1387) [enemy(Catacomb Snake:1862).active]\nuse(Supercharge:208) [self.aura(Wind-Up:458).exists]\nuse(Wind-Up:459)",
+				["team:117"] = {
+					["name"] = "Living Permafrost",
+					["code"] = "ability(Toxic Skin:1087) [!self.aura(Toxic Skin:1086).exists & self.speed.fast]\nability(Toxic Skin:1087) [self.aura(Toxic Skin:1086).duration<2 & self.speed.slow]\n\nstandby [enemy.aura(Dodge:2060).exists]\nstandby [enemy.aura(Undead:242).exists]\n\nability(Burrow:159) [enemy(Cockroach:2486).active]\nability(Scratch:119)\n\nability(Claw:429) [enemy(Cockroach:2486).active]\nability(Flamethrower:503) [!enemy.aura(Flamethrower:502).exists]\nability(Conflagrate:179) [enemy.aura(Flamethrower:502).exists]\nability(Flamethrower:503)\n\nability(Strike:378) [enemy(Cockroach:2486).active]\nability(Frostbite Webbing:2478) [!enemy.aura(Brittle Webbing:381).exists]\nability(Shiverweb Swarm:2477) [enemy.aura(Brittle Webbing:381).exists]\nability(Strike:378)\n\nchange(next)",
 				},
 				["team:93"] = {
 					["name"] = "Thenia's Loyal Companions",
@@ -2036,53 +2008,53 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Tempton",
 					["code"] = "ability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Flock:581)",
 				},
-				["team:264"] = {
-					["name"] = "Do You Even Train? (Mech)",
-					["code"] = "change(#3) [ enemy.is(Swole:3573) & self.aura(Decoy:333).exists ]\nchange(#3) [ enemy.is(Swole:3573) & !enemy.ability(Headbutt:376).usable ]\nuse(Powerball:566) [ !self.speed.fast ]\nif [ self.aura(Wind-Up:458).exists ]\n    use(Supercharge:208) [ enemy.is(Lifft:3572) & enemy.ability(Dive:564).duration~2,3,4 ]\n    use(Powerball:566) [ enemy.aura(Underwater:830).exists ]\n    use(Wind-Up:459) [ enemy.is(Brul'dan:3571) ]\nendif\nuse(Powerball:566) [ enemy.is(Brul'dan:3571) & self.aura(Mechanical:244).exists & !enemy.ability(Drain Power:486).usable ]\nuse(Wind-Up:459)\nif [ enemy.is(Brul'dan:3571) ]\n    use(Time Bomb:602) [ enemy.hp<1097 ]\n    use(Decoy:334) [ enemy.hp<549 & !enemy.aura(Flame Breath:500).exists ]\nendif\nuse(Flame Breath:501) [ !enemy.is(Swole:3573) ]\nuse(Alert!:1585) [ enemy.hp>1726 ]\nuse(Alert!:1585) [ enemy.is(Brul'dan:3571) ]\nuse(Ion Cannon:209) [ self.aura(Supercharged:207).exists ]\nuse(Supercharge:208)\nstandby [ self(#2).active ]\nchange(next)",
-				},
-				["team:209"] = {
-					["name"] = "Liz",
-					["code"] = "ability(Call Lightning:204)\nability(Zap:116) [enemy.aura(Swarm of Flies:231).exists]\nability(Swarm of Flies:232)\nchange(#2)\nuse(Decoy:334)",
+				["team:107"] = {
+					["name"] = "Watch Where You Step",
+					["code"] = "ability(Curse of Doom:218)\nability(Inflation:1002) [enemy.aura(Shattered Defenses:542).duration<2]\nability(#1) [self(#3).active]\nability(#3)\nchange(next)",
 				},
 				["team:251"] = {
 					["name"] = "Chi-Chi, Hatchling of Chi-Ji (3)",
 					["code"] = "ability(Immolation:409) [!self.aura(Immolation:408).exists]\nability(Wild Magic:592) [!enemy.aura(Wild Magic:591).exists]\nability(Acidic Goo:369) [self.round=1]\nability(Dive:564) [self.round=4]\nchange(#2)\nability(#1)",
 				},
+				["team:227"] = {
+					["name"] = "To a Land Down Under (Humanoid)",
+					["code"] = "change(next) [self.dead]\n\nuse(Jar of Smelly Liquid:1556) [!enemy.aura(Corrosion:446).exists]\nuse(Corrosion:447) [round=2]\nuse(Nether Gate:466) [round=3]\nuse(Corrosion:447)\n\nuse(Clobber:350)\nuse(Fish Slap:1737) [enemy(Bassalt:3560).active]\nuse(Bubble:934) [enemy(Clawz:3559).active]\nuse(Fish Slap:1737)\n\nuse(Ice Tomb:624)\nuse(Call Blizzard:206)\nuse(Ice Lance:413)",
+				},
 				["team:245"] = {
 					["name"] = "To a Land Down Under (Aquatic)",
 					["code"] = "quit [self(#1).dead & enemy.aura(Sewage Eruption:2063).exists]\n\nchange(#3) [enemy(#3).active & enemy.aura(Void Tremors:2359).exists & self(#2).active & self.hp>352]\n\nability(Sewage Eruption:2062)\nability(Moonfire:595)\n\nability(Feedback:484) [enemy(#1).active]\n\nability(Pump:297) [!self.aura(Pumped Up:296).exists & enemy(#2).active]\nability(Pump:297) [enemy(#2).active & enemy.hp<1226]\nability(Void Tremors:2360) [enemy.aura(Tough n' Cuddly:1111).exists & enemy(#3).active]\n\nability(Overcharge:2342) [enemy(#3).active & enemy.hp<116]\n\nability(#1)\nchange(next)",
 				},
-				["team:289"] = {
-					["name"] = "Seeker Zusshi",
-					["code"] = "if [enemy(#1).active]\nability(453)\nability(490)\nability(406)\nendif\n\nif [enemy(#2).active]\nability(490) [enemy.round=3]\nability(406) [enemy.round <=2]\nchange(#2) [self(#1).active]\nability(597) [!self.aura(823).exists]\nability(612) [enemy.round= 8]\nability(525)\nendif\n\nif [enemy(#3).active]\nability(525)\nchange(#1) [self(#2).dead]\nability(490) [enemy.aura(269).exists]\nability(453)\nability(406)\nstandby\nendif",
+				["team:147"] = {
+					["name"] = "Huncher",
+					["code"] = "standby [enemy.aura(Undead:242).exists]\nability(Flurry:360) [enemy.aura(Shattered Defenses:542).duration=2]\nability(Dodge:312)\nability(Flurry:360) [enemy.hp<=309]\nability(Stampede:163)\nability(#1)\nchange(next)",
 				},
 				["team:190"] = {
 					["name"] = "Swog the Elder",
 					["code"] = "change(#1) [self(#3).active]\nuse(Sunlight:404) [round=1]\nuse(Murder the Innocent:2223)\nif [self(#3).played]\nuse(Solar Beam:753)\nuse(Skitter:626)\nuse(Darkflame:792)\nuse(Scorched Earth:172)\nuse(Eyeblast:475)\nuse(Eye Beam:1533)\nuse(Trample:377)\nendif\nchange(next)",
 				},
-				["team:292"] = {
-					["name"] = "Fight Night: Heliosus",
-					["code"] = "ability(218)\nability(652)\nchange(#2) \nability(919) [self.round=1]\nability(581)",
+				["team:282"] = {
+					["name"] = "Major Payne",
+					["code"] = "ability(Extra Plating:392)\nability(Make it Rain:985) [!enemy.aura(Make it Rain:986).exists]\nability(SMCKTHAT.EXE:983)\nstandby [self.aura(Stunned:927).exists]\nability(Shell Shield:310) [self.aura(Shell Shield:309).duration = 1]\nability(Surge:509)\nchange(next)",
 				},
 				["team:104"] = {
 					["name"] = "Tiny Poacher, Tiny Animals",
 					["code"] = "-- rng in the beginning (<0.5%)\nquit [enemy(#1).dead & round=4]\n--\n-- rare case: too many critical strikes Ice lance Turn4+ 5\nuse(Explode:282) [enemy(#1).dead & enemy(#2).dead]\n--\nuse(Explode:282) [enemy(#1).dead & enemy(#3).dead & enemy(#2).hp<561]\nuse(Ice Tomb:624)\nuse(Call Blizzard:206)\nuse(Ice Lance:413)\nuse(Thunderbolt:779) [enemy(#3).active & enemy.aura(Stunned:927).exists]\nuse(Breath:115)\nchange(next)",
 				},
-				["team:366"] = {
-					["name"] = "Training with Bredda (Critter)",
-					["code"] = "use(Dodge:312) [round=1]\nuse(Dodge:312) [enemy.aura(Undead:242).exists]\nuse(Dodge:312) [enemy(Fethyr:1792).active]\nuse(Burrow:159) [round=5]\nuse(Burrow:159) [enemy(Quillino:1791).active]\nuse(Scratch:119)\nuse(Dive:564) [enemy.ability(Lift-Off:170).usable]\nuse(Shell Shield:310) [!self.aura(Shell Shield:309).exists & enemy(Fethyr:1792).active]\nuse(Ooze Touch:445)\nchange(next)",
+				["team:136"] = {
+					["name"] = "Training with Bredda",
+					["code"] = "quit [!self(#3).exists]\nquit [self(#2).dead]\nquit [self(#1).dead & enemy(#2).hp>963]\n\nif [self(#1).active]\n    use(Smoke Cloud:2239) [round=1]\n    use(Smoke Cloud:2239) [enemy(#1).aura(Undead:242).exists]\n    use(Explode:282) [enemy(#2).active & enemy.round=3]\n    use(Skitter:626)\n    use(Chomp:367)\nendif\n\nif [self(#3).active]\n   use(Alert!:1585) [enemy(#2).active]\n   use(Supercharge:208)\n   use(Ion Cannon:209)\nendif\n\nchange(next)",
 				},
-				["team:141"] = {
-					["name"] = "Uncomfortably Undercover",
-					["code"] = "change(#3) [enemy(#3).dead]\nability(208)\nability(447) [!enemy.aura(446).exists]\nability(#3)\nability(#2)\nchange(next)",
+				["team:169"] = {
+					["name"] = "Hiss",
+					["code"] = "ability(Extra Plating:392) [round=1]\nability(Make it Rain:985)\nability(Inflation:1002)\nability(Moonfire:595)\nability(Soulrush:752)\nability(#1)\nchange(next)",
 				},
 				["team:49"] = {
 					["name"] = "Zuna Skullcrush",
 					["code"] = "-- just in case\nuse(Predatory Strike:518) [enemy(#3).active]\n--\nchange(#2) [round~4,15]\nchange(#1) [round=12]\nuse(Crouch:165) [round=7]\nuse(Glowing Toxin:270) [round=3]\nuse(Glowing Toxin:270) [!enemy.aura(Glowing Toxin:271).exists]\nuse(Amber Prison:1026)\nuse(Bash:348) [round~5,11]\nuse(Bash:348) [enemy(#3).active]\nuse(Trample:377)\nuse(Twilight Meteorite:1960) [self.aura(Dragonkin:245).exists]\nuse(Phase Shift:764) [enemy.hp>800]\nuse(Tail Sweep:122)\nchange(#3)\nchange(next)",
 				},
-				["team:284"] = {
-					["name"] = "Beegle Blastfuse",
-					["code"] = "use(Arcane Storm:589)\nuse(Mana Surge:489)\nuse(Tail Sweep:122)\nchange(Anubis:1155) [self(Nexus Whelpling:1165).dead]\nuse(Sandstorm:453)\nuse(Crush:406)",
+				["team:177"] = {
+					["name"] = "Tremblor - Rare",
+					["code"] = "ability(Blistering Cold:786)\nability(Chop:943) [!enemy.aura(Bleeding:491).exists]\nability(BONESTORM!!:1762)\n\nability(Primal Cry:920)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Hunting Party:921)\n\nability(#1)\nchange(next)",
 				},
 				["team:33"] = {
 					["name"] = "That's a Big Carcass",
@@ -2092,45 +2064,45 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "To a Land Down Under (Beast)",
 					["code"] = "change(#2) [ round=5 ]\nchange(#1) [ self(#2).dead & !enemy(Clawz:3559).dead ]\nuse(Prowl:536) [ !enemy.is(Clawz:3559) & enemy.hp>339 & !weather(Moonlight:596) ]\nuse(Prowl:536) [ !enemy.is(Clawz:3559) & enemy.hp>309 ]\nuse(Arcane Dash:1536)\nuse(Scrabble:2430)\nuse(Moonfire:595)\nuse(Spirit Claws:974)\nuse(Booby-Trapped Presents:1080) [ enemy.is(Clawz:3559) ]\nuse(Huge Fang:930)\nuse(Gift of Winter's Veil:586)\nstandby\nchange(next)",
 				},
-				["team:254"] = {
-					["name"] = "Do You Even Train? (Critter)",
-					["code"] = "use(Burrow:159) [enemy.aura(Underwater:830).exists]\nuse(Woodchipper:411) [!enemy.aura(Bleeding:491).exists & enemy(#1).dead]\n\nuse(Feign Death:568) [enemy.ability(Headbutt:376).usable]\nuse(#1)\n\nchange(next)",
+				["team:156"] = {
+					["name"] = "Deviate Chomper",
+					["code"] = "ability(Evanescence:440)\nability(Forboding Curse:1068) [!enemy.aura(Forboding Curse:1067).exists]\nability(#1)\nchange(next)",
 				},
-				["team:199"] = {
-					["name"] = "Delver Mardei",
-					["code"] = "use(Time Bomb:602)\nuse(Armageddon:1025) [ enemy.aura(Flame Breath:500).exists ]\nuse(Flame Breath:501)\nuse(Ice Tomb:624) [ !enemy.is(Dustie:3568) ]\nuse(Arcane Storm:589)\nuse(Breath:115)\nif [ enemy.is(Dustie:3568) ]\n    use(Howl:362) [ enemy.hp>1665 & self.aura(Dragonkin).exists ]\n    use(Howl:362) [ enemy.hp>1110 & !self.aura(Dragonkin).exists ]\n    use(Surge of Power:593)\nendif\nuse(Bite:110)\nchange(next)",
+				["team:293"] = {
+					["name"] = "Stand Up to Bullies",
+					["code"] = "change(#1) [self(#2).dead]\nuse(#1) [round=1]\nuse(#3) [round=2]\nchange(#2) [round=3]\nuse(Black Claw:919) [!enemy.aura(Black Claw).exists]\nuse(Flock:581)\nuse(Build Turret:710) [enemy.aura(Black Claw).exists]\nuse(Metal Fist:384)",
 				},
 				["team:61"] = {
 					["name"] = "Taran Zhu",
 					["code"] = "change(#2) [self(#1).dead]\nif [self(#1).active]\nuse(998) [round=2]\nuse(654) [round=3]\nuse(654) [enemy.hp<840]\nuse(499)\nendif\nif [self(#2).active]\nuse(165) [self.round=1]\nuse(362) [enemy.round=2 & enemy(#2).active]\nuse(499)\nendif\nstandby",
 				},
-				["team:219"] = {
-					["name"] = "Unit 6",
-					["code"] = "ability(Curse of Doom:218)\nability(Haunt:652)\nability(Black Claw:919) [self.round=1]\nability(Flock:581)\nability(#1)\nchange(next)",
+				["team:199"] = {
+					["name"] = "Delver Mardei",
+					["code"] = "use(Time Bomb:602)\nuse(Armageddon:1025) [ enemy.aura(Flame Breath:500).exists ]\nuse(Flame Breath:501)\nuse(Ice Tomb:624) [ !enemy.is(Dustie:3568) ]\nuse(Arcane Storm:589)\nuse(Breath:115)\nif [ enemy.is(Dustie:3568) ]\n    use(Howl:362) [ enemy.hp>1665 & self.aura(Dragonkin).exists ]\n    use(Howl:362) [ enemy.hp>1110 & !self.aura(Dragonkin).exists ]\n    use(Surge of Power:593)\nendif\nuse(Bite:110)\nchange(next)",
 				},
-				["team:36"] = {
-					["name"] = "Flow - Rare",
-					["code"] = "use(Haunt:652)\nuse(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nuse(Hunting party:921)\nuse(Leap:364)\nchange(next)\n\n--Script created by Anolaszun#1423",
+				["team:358"] = {
+					["name"] = "Snail Fight! (Elemental)",
+					["code"] = "use(Howl:362)\nuse(Burrow:159)\nuse(#1)\nstandby\nchange(next)",
 				},
-				["team:168"] = {
-					["name"] = "Two and Two Together",
-					["code"] = "use(Arcane Storm:589) [!weather(Arcane Winds:590)]\nuse(Mana Surge:489)\nuse(Tail Sweep:122)\nchange(#2)\nuse(Wind-Up:459)\nuse(Wind-Up:459)",
+				["team:360"] = {
+					["name"] = "Snail Fight! (Humanoid)",
+					["code"] = "standby [round~2,3]\nability(Deflection:490) [enemy.aura(Underwater:830).exists]\nstandby [enemy.aura(Underwater:830).exists & self(#1).active]\nability(Mangle:314) [round=4]\nability(Mangle:314) [enemy.round=1 & enemy(#2).active]\nability(Rampage:124) [round>3]\nability(#1)\nstandby\nchange(next)",
 				},
 				["team:148"] = {
 					["name"] = "Deviate Smallclaw",
 					["code"] = "ability(Supercharge:208) [enemy.hpp>50]\nability(Laser:482) [enemy(Deviate Flapper:1987).active]\nability(Haywire:916)\nability(#1)\nchange(next)",
 				},
-				["team:278"] = {
-					["name"] = "Nicki Tinytech",
-					["code"] = "change(#3) [ !self(#3).played ]\nchange(#2) [ !self(#2).played ]\nchange(#2) [ self(#1).dead ]\nchange(#1)\nuse(Ancient Blessing:611) [ self.hpp < 70 & !self.aura(Dragonkin:245).exists ]\nuse(Ancient Blessing:611) [ self.hpp < 50 ]\nuse(Moonfire:595) [ weather(Moonlight:596).duration <= 1 ]\nuse(#1)\nstandby",
+				["team:168"] = {
+					["name"] = "Two and Two Together",
+					["code"] = "use(Arcane Storm:589) [!weather(Arcane Winds:590)]\nuse(Mana Surge:489)\nuse(Tail Sweep:122)\nchange(#2)\nuse(Wind-Up:459)\nuse(Wind-Up:459)",
 				},
-				["team:16"] = {
-					["name"] = "Brutus and Rukus",
-					["code"] = "ability(Wind-Up:459) [ round=1 ]\nability(Supercharge:208) [ round=2 ]\nability(Wind-Up:459) [ round=3 ]\nability(Wind-Up:459) [ round=4 ]\nability(Wind-Up:459) [ round=5 ]\nability(Toxic Smoke:640) [ round=6 ]\nchange(Mechanical Pandaren Dragonling:844) [ round=7 ]\nability(Thunderbolt:779)\nability(Explode:282) [ enemy.hp<560 ]\nability(Breath:115) [ enemy.hp>560 ]",
+				["team:72"] = {
+					["name"] = "Door Control Console",
+					["code"] = "ability(Acidic Goo:369) [ enemy.hp.full ]\nuse(Dive:564) [round=2] \nuse(Dive:564) [self.aura(Ice Tomb:623).duration=1] \nuse(Dive:564) [self.aura(Sewage Eruption:2063).duration=1] \nuse(Ooze Touch:445) \nchange(next)",
 				},
-				["team:127"] = {
-					["name"] = "What Do You Mean, Mind Controlling Plants?",
-					["code"] = "use(Curse of Doom:218)\nuse(Haunt:652)\nchange(#2) [self(#1).dead & !self(#2).active]\nuse(Black Claw:919) [round=3]\nuse(Black Claw:919) [round=9]\nstandby [self.aura(Stunned).duration>=1]\nuse(Savage Talon:518) [enemy.aura(Shattered Defenses:542).exists]\nuse(Flock:581)\nuse(Arcane Storm:589)\nchange(#3) [self(#2).dead & !self(#3).active]\nuse(Falcosaur Swarm!:1773)",
+				["team:44"] = {
+					["name"] = "Chen Stormstout",
+					["code"] = "change(next) [ enemy(#2).active & !self(#3).played ]\nability(Decoy:334)\nability(Haywire:916)\nability(Dodge:312) [ enemy(#2).active ]\nability(Dodge:312) [ enemy.aura(Barrel Ready:353).exists ]\nability(Ravage:802) [ enemy(#2).active & enemy.hp<927 ]\nability(Ravage:802) [ enemy(#3).hp<619 ]\nability(#1)\nchange(#1)",
 				},
 				["team:81"] = {
 					["name"] = "Do You Even Train?",
@@ -2140,20 +2112,12 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "Tiny Poacher, Tiny Animals (Flyer)",
 					["code"] = "change(#2) [enemy(#2).active]\nchange(#1) [self(#2).dead]\nability(Dodge:312)\nability(Black Claw:919) [!enemy.aura(Black Claw:918).exists]\nability(Flock:581)\nability(#1)",
 				},
-				["team:221"] = {
-					["name"] = "Wrathion",
-					["code"] = "ability(Solar Beam:753) [enemy(#2).active & enemy(#3).dead]\nability(Arcane Storm:589)\nability(Consume Magic:1231)\nability(Sunlight:404)\nability(Photosynthesis:268) [!self.aura(Photosynthesis:267).exists]\nchange(#2) [self(#1).active]\nchange(#1) [self(#2).active]",
+				["team:351"] = {
+					["name"] = "Tiny Poacher, Tiny Animals (Magic)",
+					["code"] = "use(Batter:455) [enemy(Gulp:1798).active & enemy.round>3]\nuse(Batter:455) [enemy(Egcellent:1793).active & enemy.round>2]\nuse(Sandstorm:453) [round=2]\nuse(Wind-Up:459)\nuse(Poison Protocol:1954)\nuse(Toxic Fumes:2349) [enemy(Red Wire:1794).active & !weather(Toxic Gas:2350)]\nuse(Corrosion:447)\nuse(Meteor Strike:407) [enemy.aura(Flamethrower:502).exists]\nuse(Flamethrower:503)\nchange(next)",
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Dogson - Ragnaros"] = "Default",
-		["Fishanus - Ragnaros"] = "Default",
-		["Qpaladin - Ragnaros"] = "Default",
-		["Qpfromage - Ragnaros"] = "Default",
-		["Qpfromage - Sylvanas"] = "Default",
-		["Flurrq - Ragnaros"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

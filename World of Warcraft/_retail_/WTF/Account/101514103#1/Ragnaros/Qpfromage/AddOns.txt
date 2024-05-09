@@ -30,11 +30,11 @@ BigWigs_Legion: disabled
 BigWigs_Classic: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_BurningCrusade: disabled
-BigWigs_Core: disabled
-BigWigs_Options: disabled
-BigWigs_Plugins: disabled
-WeakAurasCompanion: disabled
-WeakAurasArchive: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
 PitBull4: disabled
 MinimalArchaeology: disabled
 Blizzard_CombatText: enabled
@@ -55,7 +55,7 @@ Bagnon_BoE: disabled
 Oilvl: disabled
 OmniCC: disabled
 Narcissus: disabled
-BigWigs_DragonIsles: disabled
+BigWigs_DragonIsles: enabled
 FarmHud_TrailPath: disabled
 FarmHud_QuestArrow: disabled
 MBB: disabled
@@ -93,7 +93,7 @@ Details_TinyThreat: disabled
 Details_Vanguard: disabled
 LibEasing: enabled
 LittleWigs_WarlordsOfDraenor: disabled
-LittleWigs: disabled
+LittleWigs: enabled
 Chatter: disabled
 LibSink-2.0: enabled
 LibAlts-1.0: enabled
@@ -267,7 +267,7 @@ ArkInventoryRules: disabled
 ArkInventorySearch: disabled
 ArkInventoryRules_Example: disabled
 InsertAnyModsHereThatYourRuleMightNeed: enabled
-BigWigs_Aberrus: disabled
+BigWigs_Aberrus: enabled
 Details_ExplosiveOrbs: disabled
 OmniCC_Config: disabled
 ZerethMortisPuzzleHelper: disabled
@@ -329,7 +329,7 @@ Masque_Dominos: disabled
 AddOnSkins: enabled
 ButtonForge: enabled
 ConsolePort: enabled
-BigWigs_VoiceGCP: disabled
+BigWigs_VoiceGCP: enabled
 BigWigs_Voice_PipkinPippa: disabled
 LibPetJournal-2.0: enabled
 pet-battle-hud: disabled

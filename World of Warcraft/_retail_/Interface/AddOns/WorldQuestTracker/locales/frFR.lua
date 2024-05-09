@@ -366,6 +366,8 @@ L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "Autres personnages"
 L["S_TEXT_SIZE"] = "Taille du texte"
 --[[Translation missing --]]
 L["S_TORGAST"] = "Torgasth"
+--[[Translation missing --]]
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Background Alpha"
 L["S_TUTORIAL_AMOUNT"] = "Indique le montant à recevoir"
 L["S_TUTORIAL_CLICKTOTRACK"] = "Cliquez pour suivre une quête."
 L["S_TUTORIAL_PARTY"] = "Dans un groupe, une étoile bleue indique les quêtes que tous le groupe fait !"

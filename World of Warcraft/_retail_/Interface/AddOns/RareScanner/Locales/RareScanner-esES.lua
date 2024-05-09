@@ -1039,6 +1039,11 @@ AL["MAP_TOOLTIPS_ACHIEVEMENT_DESC"] = "Cuando se desactiva no se muestra informa
 AL["MAP_TOOLTIPS_COMMANDS"] = "Mostrar comandos"
 AL["MAP_TOOLTIPS_COMMANDS_DESC"] = "Cuando se desactiva no se muestran las descripciones de los comandos en el pie del tooltip."
 AL["MAP_TOOLTIPS_DESC"] = "Opciones para configurar que mostrar en los tooltips"
+AL["MAP_TOOLTIPS_FILTER_STATE"] = "Mostrar si la entidad está filtrada"
+AL["MAP_TOOLTIPS_FILTER_STATE_ALERTS"] = "Filtradas alertas de audio/visuales"
+AL["MAP_TOOLTIPS_FILTER_STATE_ALL"] = "Filtrado completamente"
+AL["MAP_TOOLTIPS_FILTER_STATE_DESC"] = "Cuando se desactiva no se muestra el texto indicando si la entidad está filtrada y el tipo de filtro en el tooltip."
+AL["MAP_TOOLTIPS_FILTER_STATE_WORLDMAP"] = "Filtrado en el mapa del mundo"
 AL["MAP_TOOLTIPS_LOOT"] = "Mostrar botín"
 AL["MAP_TOOLTIPS_LOOT_ACHIEVEMENT"] = "Botín/Logros"
 AL["MAP_TOOLTIPS_LOOT_ACHIEVEMENT_POSITION"] = "Posición de las ventanas del botín y logros"
@@ -1940,7 +1945,6 @@ AL["ZONE_318"] = "%s (Lado no-muertos)"
 AL["ZONE_943"] = "%s (Frente de guerra)"
 AL["ZONES_FILTER"] = "Filtros de zonas"
 AL["ZONES_FILTERS_SEARCH_DESC"] = "Escribe el nombre de la zona para filtrar la lista de abajo"
-
 
 	-- CONTINENT names
 	AL["ZONES_CONTINENT_LIST"] = {

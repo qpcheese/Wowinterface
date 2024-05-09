@@ -241,10 +241,10 @@ do
 		end
 
 		local msg = CL.count:format(L.test, lastTest)
-		local icon = GetSpellTexture(lastSpell)
+		local icon = loader.GetSpellTexture(lastSpell)
 		while not icon or icon == ((loader.isVanilla or loader.isTBC) and 136235 or 136243) do -- 136243 = cogwheel, 136235 = samwise (classic)
 			lastSpell = lastSpell + 1
-			icon = GetSpellTexture(lastSpell)
+			icon = loader.GetSpellTexture(lastSpell)
 		end
 		lastSpell = lastSpell + 1
 		lastTest = lastTest + 1
@@ -458,7 +458,9 @@ do
 	local errorAlreadyRegistered = "%q already exists as a module in BigWigs, but something is trying to register it again."
 	local errorJournalIdInvalid = "%q is using the invalid journal id of %q."
 	local bossMeta = { __index = bossPrototype, __metatable = false }
-	local EJ_GetEncounterInfo = EJ_GetEncounterInfo or function(key)
+	local EJ_GetEncounterInfo = loader.isCata and function(key)
+		return EJ_GetEncounterInfo(key) or BigWigsAPI:GetLocale("BigWigs: Encounters")[key]
+	end or EJ_GetEncounterInfo or function(key)
 		return BigWigsAPI:GetLocale("BigWigs: Encounters")[key]
 	end
 	function core:NewBoss(moduleName, zoneId, journalId)
@@ -554,8 +556,9 @@ function core:GetPlugin(moduleName, silent)
 end
 
 do
-	local GetSpellInfo = GetSpellInfo
-	local C_EncounterJournal_GetSectionInfo = C_EncounterJournal and C_EncounterJournal.GetSectionInfo or function(key)
+	local C_EncounterJournal_GetSectionInfo = loader.isCata and function(key)
+		return C_EncounterJournal.GetSectionInfo(key) or BigWigsAPI:GetLocale("BigWigs: Encounter Info")[key]
+	end or C_EncounterJournal and C_EncounterJournal.GetSectionInfo or function(key)
 		return BigWigsAPI:GetLocale("BigWigs: Encounter Info")[key]
 	end
 	local C = core.C -- Set from Constants.lua
@@ -578,7 +581,7 @@ do
 					end
 				elseif type(v) == "number" then
 					if v > 0 then
-						local n = GetSpellInfo(v)
+						local n = loader.GetSpellName(v)
 						if not n then core:Error(("Invalid spell ID %d in the optionHeaders for module %s."):format(v, module.name)) end
 						module.optionHeaders[k] = n or v
 					else
@@ -635,7 +638,7 @@ do
 					end
 				elseif t == "number" then
 					if v > 0 then
-						local n = GetSpellInfo(v)
+						local n = loader.GetSpellName(v)
 						if not n then core:Error(("Invalid spell ID %d in the toggleOptions for module %s."):format(v, module.name)) end
 						module.toggleDefaults[v] = bitflags
 					else

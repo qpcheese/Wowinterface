@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on Tue Apr 09 2024 09:49:45 GMT+0000 (Coordinated Universal Time)
+-- RaiderIO Client Data. Generated on Tue May 07 2024 00:33:32 GMT+0000 (Coordinated Universal Time)
 --
 local _, ns = ...
 ns.CLIENT_CHARACTERS = {
@@ -13,105 +13,12 @@ ns.CLIENT_CHARACTERS = {
     },
     ["mythic_keystone"] = {
       ["all"] = {
-        ["score"] = 241.5,
-        ["best"] = {
-          ["zone_id"] = 1000010,
-          ["level"] = 18,
-          ["upgrades"] = 3,
-          ["fraction"] = 0.584,
-          ["score"] = 161.00000156023594,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/27804009-18-doti-galakronds-fall?utm_source=client"
-        },
+        ["score"] = 0,
+        ["best"] = nil,
         ["bestFortified"] = nil,
-        ["bestTyrannical"] = {
-          ["zone_id"] = 1000010,
-          ["level"] = 18,
-          ["upgrades"] = 3,
-          ["fraction"] = 0.584,
-          ["score"] = 161.00000156023594,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/27804009-18-doti-galakronds-fall?utm_source=client"
-        },
+        ["bestTyrannical"] = nil,
         ["runs"] = {
-          {
-            ["zone_id"] = 13954,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13968,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13982,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13991,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14011,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14032,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14063,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14082,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 1000010,
-            ["level"] = 18,
-            ["upgrades"] = 3,
-            ["fraction"] = 0.584,
-            ["score"] = 161.00000156023594,
-            ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/27804009-18-doti-galakronds-fall?utm_source=client"
-          },
-          {
-            ["zone_id"] = 1000011,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          }
+
         }
       }
     }
@@ -166,112 +73,12 @@ ns.CLIENT_CHARACTERS = {
     },
     ["mythic_keystone"] = {
       ["all"] = {
-        ["score"] = 1060,
-        ["best"] = {
-          ["zone_id"] = 9028,
-          ["level"] = 16,
-          ["upgrades"] = 0,
-          ["fraction"] = 1.041,
-          ["score"] = 136.4930383081834,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/19341404-16-ataldazar?utm_source=client"
-        },
-        ["bestFortified"] = {
-          ["zone_id"] = 9028,
-          ["level"] = 16,
-          ["upgrades"] = 0,
-          ["fraction"] = 1.041,
-          ["score"] = 136.4930383081834,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/19341404-16-ataldazar?utm_source=client"
-        },
-        ["bestTyrannical"] = {
-          ["zone_id"] = 7109,
-          ["level"] = 9,
-          ["upgrades"] = 3,
-          ["fraction"] = 0.556,
-          ["score"] = 90.00000443520668,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/17052439-9-everbloom?utm_source=client"
-        },
+        ["score"] = 0,
+        ["best"] = nil,
+        ["bestFortified"] = nil,
+        ["bestTyrannical"] = nil,
         ["runs"] = {
-          {
-            ["zone_id"] = 13954,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13968,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13982,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13991,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14011,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14032,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14063,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14082,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 1000010,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 1000011,
-            ["level"] = 2,
-            ["upgrades"] = 3,
-            ["fraction"] = 0.479,
-            ["score"] = 45.000012136211076,
-            ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/16672608-2-doti-murozonds-rise?utm_source=client"
-          }
+
         }
       }
     }
@@ -306,105 +113,12 @@ ns.CLIENT_CHARACTERS = {
     },
     ["mythic_keystone"] = {
       ["all"] = {
-        ["score"] = 237.1,
-        ["best"] = {
-          ["zone_id"] = 9028,
-          ["level"] = 18,
-          ["upgrades"] = 1,
-          ["fraction"] = 0.834,
-          ["score"] = 158.0759520132993,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/14480823-18-ataldazar?utm_source=client"
-        },
+        ["score"] = 0,
+        ["best"] = nil,
         ["bestFortified"] = nil,
-        ["bestTyrannical"] = {
-          ["zone_id"] = 9028,
-          ["level"] = 18,
-          ["upgrades"] = 1,
-          ["fraction"] = 0.834,
-          ["score"] = 158.0759520132993,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/14480823-18-ataldazar?utm_source=client"
-        },
+        ["bestTyrannical"] = nil,
         ["runs"] = {
-          {
-            ["zone_id"] = 13954,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13968,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13982,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 13991,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14011,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14032,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14063,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 14082,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 1000010,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          },
-          {
-            ["zone_id"] = 1000011,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
-          }
+
         }
       }
     }
@@ -419,90 +133,98 @@ ns.CLIENT_CHARACTERS = {
     },
     ["mythic_keystone"] = {
       ["all"] = {
-        ["score"] = 2878.8,
+        ["score"] = 2036.7,
         ["best"] = {
-          ["zone_id"] = 7805,
-          ["level"] = 25,
-          ["upgrades"] = 1,
-          ["fraction"] = 0.858,
-          ["score"] = 206.77329443465732,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/25601413-25-black-rook-hold?utm_source=client"
+          ["zone_id"] = 13954,
+          ["level"] = 9,
+          ["upgrades"] = 3,
+          ["fraction"] = 0.599,
+          ["score"] = 158.00000009295428,
+          ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/2974715-9-the-azure-vault?utm_source=client"
         },
         ["bestFortified"] = {
-          ["zone_id"] = 7805,
-          ["level"] = 25,
-          ["upgrades"] = 1,
-          ["fraction"] = 0.858,
-          ["score"] = 206.77329443465732,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/25601413-25-black-rook-hold?utm_source=client"
+          ["zone_id"] = 13954,
+          ["level"] = 9,
+          ["upgrades"] = 3,
+          ["fraction"] = 0.599,
+          ["score"] = 158.00000009295428,
+          ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/2974715-9-the-azure-vault?utm_source=client"
         },
         ["bestTyrannical"] = {
-          ["zone_id"] = 1000010,
-          ["level"] = 22,
+          ["zone_id"] = 14082,
+          ["level"] = 6,
           ["upgrades"] = 1,
-          ["fraction"] = 0.952,
-          ["score"] = 184.60461813063114,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/21706420-22-doti-galakronds-fall?utm_source=client"
+          ["fraction"] = 0.937,
+          ["score"] = 132.78810722898965,
+          ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/1502106-6-halls-of-infusion?utm_source=client"
         },
         ["runs"] = {
           {
             ["zone_id"] = 13954,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
+            ["level"] = 9,
+            ["upgrades"] = 3,
+            ["fraction"] = 0.599,
+            ["score"] = 158.00000009295428,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/2974715-9-the-azure-vault?utm_source=client"
           },
           {
             ["zone_id"] = 13968,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
+            ["level"] = 8,
+            ["upgrades"] = 1,
+            ["fraction"] = 0.906,
+            ["score"] = 147.16896176533163,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/3126242-8-uldaman-legacy-of-tyr?utm_source=client"
           },
           {
             ["zone_id"] = 13982,
-            ["level"] = 0,
+            ["level"] = 8,
             ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
+            ["fraction"] = 1.054,
+            ["score"] = 140.32276627353863,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/1836891-8-the-nokhud-offensive?utm_source=client"
           },
           {
             ["zone_id"] = 13991,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
+            ["level"] = 8,
+            ["upgrades"] = 1,
+            ["fraction"] = 0.901,
+            ["score"] = 147.23986256061997,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/3008754-8-brackenhide-hollow?utm_source=client"
           },
           {
             ["zone_id"] = 14011,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
+            ["level"] = 8,
+            ["upgrades"] = 2,
+            ["fraction"] = 0.771,
+            ["score"] = 148.86184521042162,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/2243734-8-neltharus?utm_source=client"
           },
           {
             ["zone_id"] = 14032,
-            ["level"] = 0,
-            ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
+            ["level"] = 7,
+            ["upgrades"] = 2,
+            ["fraction"] = 0.62,
+            ["score"] = 143.75197410305785,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/2459041-7-algethar-academy?utm_source=client"
           },
           {
             ["zone_id"] = 14063,
-            ["level"] = 0,
+            ["level"] = 7,
             ["upgrades"] = 0,
-            ["fraction"] = 0,
-            ["score"] = 0,
-            ["url"] = nil
+            ["fraction"] = 1.161,
+            ["score"] = 131.98710326879694,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/2419873-7-ruby-life-pools?utm_source=client"
           },
           {
             ["zone_id"] = 14082,
+            ["level"] = 8,
+            ["upgrades"] = 1,
+            ["fraction"] = 0.852,
+            ["score"] = 147.85080406987342,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-4/3079456-8-halls-of-infusion?utm_source=client"
+          },
+          {
+            ["zone_id"] = 1000010,
             ["level"] = 0,
             ["upgrades"] = 0,
             ["fraction"] = 0,
@@ -510,20 +232,12 @@ ns.CLIENT_CHARACTERS = {
             ["url"] = nil
           },
           {
-            ["zone_id"] = 1000010,
-            ["level"] = 22,
-            ["upgrades"] = 1,
-            ["fraction"] = 0.952,
-            ["score"] = 184.60461813063114,
-            ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/21706420-22-doti-galakronds-fall?utm_source=client"
-          },
-          {
             ["zone_id"] = 1000011,
-            ["level"] = 20,
-            ["upgrades"] = 2,
-            ["fraction"] = 0.737,
-            ["score"] = 173.2835565865602,
-            ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/21392791-20-doti-murozonds-rise?utm_source=client"
+            ["level"] = 0,
+            ["upgrades"] = 0,
+            ["fraction"] = 0,
+            ["score"] = 0,
+            ["url"] = nil
           }
         }
       }

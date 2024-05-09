@@ -333,6 +333,7 @@ L["S_SUMMARYPANEL_LIFETIMESTATISTICS_CHARACTER"] = "Estadísticas históricas de
 L["S_SUMMARYPANEL_OTHERCHARACTERS"] = "Otros personajes"
 L["S_TEXT_SIZE"] = "Tamaño del Texto"
 L["S_TORGAST"] = "Torghast"
+L["S_TRACKEROPTIONS_BACKGROUNDALPHA"] = "Alfa del Fondo"
 L["S_TUTORIAL_AMOUNT"] = "Indica la cantidad a recibir"
 L["S_TUTORIAL_CLICKTOTRACK"] = "Pulsa para seguir una misión."
 L["S_TUTORIAL_PARTY"] = "Estando en grupo, ¡una estrella azul indica las misiones que todos los miembros del grupo tienen!"
