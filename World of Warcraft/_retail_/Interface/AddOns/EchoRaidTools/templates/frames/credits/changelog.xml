@@ -1,0 +1,92 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidToolsCreditsChangelogTemplate" virtual="true">
+        <Size x="500" y="400" />
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString parentKey="Title" inherits="EchoRaidToolsH1" text="Changelog">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="5" y="5" />
+					</Anchors>
+				</FontString>
+                <FontString parentKey="v000100" inherits="EchoRaidToolsH2" text="Version 0.1.0">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="10" y="-12" relativeKey="$parent.Title" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="echoColor" inherits="GameFontHighlight" text="Has now a function to provide the echo red">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="10" y="-2" relativeKey="$parent.v000100" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="xmlUI" inherits="GameFontHighlight" text="Is now using blizzard XML to create UI elements">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="-2" relativeKey="$parent.echoColor" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="notesModule" inherits="EchoRaidToolsH3" text="Notes">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-10" y="-7" relativeKey="$parent.xmlUI" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="syntaxHighlighting" inherits="GameFontHighlight" text="Has now dedicated syntax highlight for the note description language">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="10" y="-2" relativeKey="$parent.notesModule" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="cooldownModule" inherits="EchoRaidToolsH3" text="Cooldowns">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-10" y="-7" relativeKey="$parent.syntaxHighlighting" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="cooldownsCreated" inherits="GameFontHighlight" text="New module created to track and monitor cooldowns">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="10" y="-2" relativeKey="$parent.cooldownModule" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="v000001" inherits="EchoRaidToolsH2" text="Version 0.0.1">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-10" y="-12" relativeKey="$parent.cooldownsCreated" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="addonCreated" inherits="GameFontHighlight" text="Initial version of the addon created">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="10" y="-2" relativeKey="$parent.v000001" relativePoint="BOTTOMLEFT" />
+                    </Anchors>
+                </FontString>
+            </Layer>
+            <Layer level="ARTWORK">
+                <Texture parentKey="dot1" atlas="levelup-dot-gold" useAtlasSize="false">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="RIGHT" x="-2" y="-1" relativeKey="$parent.echoColor" relativePoint="LEFT" />    
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="dot1" atlas="levelup-dot-gold" useAtlasSize="false">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="RIGHT" x="-2" y="-1" relativeKey="$parent.xmlUI" relativePoint="LEFT" />    
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="dot1" atlas="levelup-dot-gold" useAtlasSize="false">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="RIGHT" x="-2" y="-1" relativeKey="$parent.syntaxHighlighting" relativePoint="LEFT" />    
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="dot1" atlas="levelup-dot-gold" useAtlasSize="false">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="RIGHT" x="-2" y="-1" relativeKey="$parent.cooldownsCreated" relativePoint="LEFT" />    
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="dot1" atlas="levelup-dot-gold" useAtlasSize="false">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="RIGHT" x="-2" y="-1" relativeKey="$parent.addonCreated" relativePoint="LEFT" />    
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

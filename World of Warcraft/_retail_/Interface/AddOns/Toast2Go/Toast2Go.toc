@@ -1,0 +1,7 @@
+## Interface: 60000
+## Title: Toast2Go
+## Notes: RealID Toast Frame Mover.  Now have your Toast2Go!
+## Version: (v1.6.0)
+
+Toast2Go.lua
+Toast2Go.xml

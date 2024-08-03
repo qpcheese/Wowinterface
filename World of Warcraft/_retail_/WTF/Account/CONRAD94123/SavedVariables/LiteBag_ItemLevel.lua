@@ -1,0 +1,4 @@
+
+LiteBagItemLevelDB = {
+["useColoring"] = true,
+}

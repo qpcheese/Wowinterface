@@ -1,0 +1,100 @@
+
+EncounterDetailsDB = {
+["chartData"] = {
+[13] = {
+["Raid Damage Done"] = {
+["__time"] = 1721704791,
+},
+},
+[14] = {
+["Raid Damage Done"] = {
+122,
+0,
+122,
+["max_value"] = 122,
+["__time"] = 1721704810,
+},
+},
+[15] = {
+["Raid Damage Done"] = {
+["__time"] = 1721704814,
+},
+},
+[16] = {
+["Raid Damage Done"] = {
+84,
+212,
+["max_value"] = 212,
+["__time"] = 1721704821,
+},
+},
+[17] = {
+["Raid Damage Done"] = {
+0,
+44,
+255,
+0,
+45,
+["max_value"] = 255,
+["__time"] = 1721704843,
+},
+},
+[18] = {
+["Raid Damage Done"] = {
+2,
+41,
+83,
+["max_value"] = 83,
+["__time"] = 1721704848,
+},
+},
+[10] = {
+["Raid Damage Done"] = {
+38,
+40,
+11,
+976,
+["max_value"] = 976,
+["__time"] = 1721704772,
+},
+},
+[20] = {
+["Raid Damage Done"] = {
+221,
+40,
+91,
+0,
+40,
+["max_value"] = 221,
+["__time"] = 1721704874,
+},
+},
+[11] = {
+["Raid Damage Done"] = {
+166,
+0,
+["max_value"] = 166,
+["__time"] = 1721704784,
+},
+},
+[12] = {
+["Raid Damage Done"] = {
+["__time"] = 1721704788,
+},
+},
+[19] = {
+["Raid Damage Done"] = {
+218,
+0,
+0,
+83,
+["max_value"] = 218,
+["__time"] = 1721704857,
+},
+},
+},
+["encounter_spells"] = {
+},
+["emotes"] = {
+},
+}

@@ -1,0 +1,12 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<Script file="rmUtils.lua" />
+	<Script file="rmUtils-tables.lua" />
+	<Script file="rmUtils-version.lua" />
+	<Script file="rmUtils-numbers.lua" />
+	<Script file="rmUtils-text.lua" />
+	<Script file="rmUtils-debug.lua" />
+	<Script file="rmUtils-l10n.lua" />
+	<!-- Script file="rmUtils-tooltip.lua" / -->
+	<Script file="rmEvent.lua" />
+</Ui>

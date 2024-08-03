@@ -1,0 +1,10 @@
+## Interface: 100207
+## Title: BlizzMove Plugin - Rematch
+## Notes: Allows you to move the Rematch collection window with BlizzMove
+## Author: Numy
+## IconTexture: Interface\Addons\BlizzMovePlugin_Rematch\media\icon
+## RequiredDeps: BlizzMove, Rematch
+## Version: v1.0.13
+## X-Curse-Project-ID: 688004
+
+BlizzMovePlugin_Rematch.lua

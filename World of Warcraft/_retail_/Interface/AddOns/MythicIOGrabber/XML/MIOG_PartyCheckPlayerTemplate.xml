@@ -1,0 +1,246 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+    <Frame name="MIOG_PartyCheckPlayerTemplate" virtual="true">
+        <Size y="17" />
+
+        <Scripts>
+            <OnEnter>
+                self.BackgroundHover:Show()
+
+                GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                GameTooltip:SetText(self.data.name)
+                GameTooltip:SetUnit(self.data.unitID)
+                GameTooltip_AddBlankLineToTooltip(GameTooltip)
+
+                --GameTooltip:AddLine("Level " .. self.data.level .. " " .. WrapTextInColorCode((self.data.specID and self.data.specID ~= 0 and (select(2, GetSpecializationInfoForSpecID(self.data.specID)) .. " ") or "") .. UnitClass(self.data.unitID), C_ClassColor.GetClassColor(self.data.classFileName):GenerateHexColor()))
+                GameTooltip:AddLine(WrapTextInColorCode((self.data.specID and self.data.specID ~= 0 and (select(2, GetSpecializationInfoForSpecID(self.data.specID)) .. " ") or "") .. UnitClass(self.data.unitID), C_ClassColor.GetClassColor(self.data.classFileName):GenerateHexColor()))
+
+                if (self.data.rank == 2 ) then
+                    GameTooltip_AddBlankLineToTooltip(GameTooltip)
+                    GameTooltip:AddLine("Rank: " .. RAID_LEADER)
+
+                elseif (self.data.rank == 1 ) then
+                    GameTooltip_AddBlankLineToTooltip(GameTooltip)
+                    GameTooltip:AddLine("Rank: " .. RAID_ASSISTANT)
+
+                end
+
+                if (self.data.raidRole ~= nil) then
+                    GameTooltip_AddBlankLineToTooltip(GameTooltip)
+
+                    if ( self.data.raidRole == "MAINTANK" ) then
+                        GameTooltip:AddLine("Raid role: " .. MAIN_TANK);
+                    elseif ( self.data.raidRole == "MAINASSIST" ) then
+                        GameTooltip:AddLine("Raid role: " .. MAIN_ASSIST);
+                    end
+                end
+
+                if(self.data.keystone) then
+                    GameTooltip_AddBlankLineToTooltip(GameTooltip)
+                    GameTooltip:AddLine("Keystone: +" .. self.data.keylevel .. " " .. self.data.keyname)
+
+                end
+
+                if(self.data.progressTooltipData) then
+                    GameTooltip_AddBlankLineToTooltip(GameTooltip)
+                    GameTooltip:AddLine(self.data.progressTooltipData)
+
+                end
+
+                GameTooltip:Show()
+            </OnEnter>
+            <OnLeave>
+                self.BackgroundHover:Hide()
+                GameTooltip:Hide()
+            </OnLeave>
+        </Scripts>
+
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="Background" atlas="pvpqueue-button-casual-up" setAllPoints="true" hidden="true" />
+                <Texture parentKey="BackgroundHover" atlas="pvpqueue-button-casual-highlight" setAllPoints="true" alphaMode="ADD" hidden="true"/>
+            </Layer>
+
+            <Layer level="OVERLAY">
+                <FontString parentKey="Group" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="">
+                    <Size x="35" />
+                    <FontHeight val="11"/>
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="3" />
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Name" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="">
+                    <Size x="100" />
+                    <FontHeight val="11"/>
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Group" relativePoint="RIGHT" x="3"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+
+            <Layer level="ARTWORK">
+                <Texture parentKey="Role" horizTile="true" hWrapMode="CLAMPTOBLACKADDITIVE">
+                    <Size x="15" y="15" />
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Name" relativePoint="RIGHT" x="3"/>
+                    </Anchors>
+                </Texture>
+
+                <Texture parentKey="Spec">
+                    <Size x="15" y="15" />
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Role" relativePoint="RIGHT" x="35"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+
+            <Layer level="OVERLAY">
+                <FontString parentKey="ILvl" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="N/A">
+                    <Size x="33" />
+                    <FontHeight val="11"/>
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Spec" relativePoint="RIGHT" x="35"/>
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Durability" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="N/A">
+                    <Size x="25" />
+                    <FontHeight val="11"/>
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.ILvl" relativePoint="RIGHT" x="20"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+
+        <Frames>
+            <!--<Frame parentKey="MissingEnchantSlots" inherits="HorizontalLayoutFrame">
+                <KeyValues>
+                    <KeyValue key="fixedWidth" value="120" type="number" />
+                    <KeyValue key="fixedHeight" value="17" type="number" />
+                </KeyValues>
+
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Durability" relativePoint="RIGHT" x="3"/>
+                </Anchors>
+
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture parentKey="1" file="interface/paperdoll/ui-paperdoll-slot-head" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="2" file="interface/paperdoll/ui-paperdoll-slot-neck" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="3" file="interface/paperdoll/ui-paperdoll-slot-shoulder" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="15" file="interface/paperdoll/ui-paperdoll-slot-rear" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="5" file="interface/paperdoll/ui-paperdoll-slot-chest" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+                        <Texture parentKey="9" file="interface/paperdoll/ui-paperdoll-slot-wrists" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="10" file="interface/paperdoll/ui-paperdoll-slot-hands" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="6" file="interface/paperdoll/ui-paperdoll-slot-waist" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="7" file="interface/paperdoll/ui-paperdoll-slot-legs" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="8" file="interface/paperdoll/ui-paperdoll-slot-feet" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+                        <Texture parentKey="11" file="interface/paperdoll/ui-paperdoll-slot-finger" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="12" file="interface/paperdoll/ui-paperdoll-slot-finger" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="13" file="interface/paperdoll/ui-paperdoll-slot-trinket" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="14" file="interface/paperdoll/ui-paperdoll-slot-trinket" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="16" file="interface/paperdoll/ui-paperdoll-slot-mainhand" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+
+                        <Texture parentKey="17" file="interface/paperdoll/ui-paperdoll-slot-secondaryhand" hidden="true">
+                            <Size x="15" y="15" />
+                        </Texture>
+                    </Layer>
+                </Layers>
+            </Frame>-->
+        </Frames>
+
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="Keystone">
+                    <Size x="15" y="15" />
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Durability" relativePoint="RIGHT" x="20"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+
+            <Layer level="OVERLAY">
+                <FontString parentKey="Keylevel" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="">
+                    <Size x="30" />
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Keystone" relativePoint="RIGHT" x="4"/>
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Score" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="N/A">
+                    <Size x="40" />
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Keylevel" relativePoint="RIGHT" x="10"/>
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Progress" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="N/A">
+                    <Size x="100" />
+                    <FontHeight val="11"/>
+                    
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Score" relativePoint="RIGHT" x="20"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+
+            <Layer level="ARTWORK">
+                <Texture parentKey="Divider" atlas="dragonflight-weeklyrewards-divider">
+                    <Size y="4" />
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="BOTTOMLEFT" />
+                        <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

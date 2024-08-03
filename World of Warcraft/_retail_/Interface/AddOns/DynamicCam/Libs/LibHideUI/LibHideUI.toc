@@ -1,0 +1,7 @@
+## Interface: 100207
+## Version: @project-version@
+## Title: LibHideUI
+## Author: LudiusMaximus
+## Notes: A library for UI hiding.
+
+LibHideUI.lua

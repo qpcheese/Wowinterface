@@ -1,0 +1,31 @@
+## Interface: 110000, 110002
+## Title: Advanced Interface Options
+## Author: Stanzilla, Semlar
+## Version: 2.0.0
+## IconTexture: 134521
+## Notes: Restores access to removed interface options in Legion
+## X-Category: Interface Enhancements
+## X-Website: https://www.curseforge.com/wow/addons/advancedinterfaceoptions
+## X-Curse-Project-ID: 99982
+## X-WoWI-ID: 25002
+## X-Wago-ID: ZQ6aPNW7
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: AdvancedInterfaceOptionsSaved
+
+semlib\semlib.xml
+embeds.xml
+
+utils.lua
+cvars.lua
+
+gui\GeneralConfigPanel.lua
+gui\ChatConfigPanel.lua
+gui\CombatConfigPanel.lua
+gui\FloatingCombatTextConfigPanel.lua
+gui\StatusTextConfigPanel.lua
+gui\NameplateConfigPanel.lua
+gui\CVarConfigPanel.lua
+
+browser.lua
+basicOptions.lua

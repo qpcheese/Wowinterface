@@ -1,0 +1,100 @@
+
+PetBattleMasterDb = {
+["namespaces"] = {
+["PetTeamManager"] = {
+},
+["PetTeamView"] = {
+["profiles"] = {
+["Default"] = {
+["teams"] = {
+{
+["pets"] = {
+{
+["speciesId"] = 3100,
+["abilities"] = {
+501,
+2237,
+334,
+},
+["creatureId"] = 179125,
+["petType"] = 10,
+["petId"] = "BattlePet-0-000012B0D34C",
+["level"] = 25,
+["name"] = "Timeless Mechanical Dragonling",
+},
+{
+["speciesId"] = 262,
+["abilities"] = {
+202,
+389,
+390,
+},
+["creatureId"] = 43916,
+["petType"] = 10,
+["petId"] = "BattlePet-0-000012BCCD57",
+["level"] = 25,
+["name"] = "De-Weaponized Mechanical Companion",
+},
+{
+["speciesId"] = 1320,
+["abilities"] = {
+1002,
+392,
+293,
+},
+["creatureId"] = 73011,
+["petType"] = 10,
+["petId"] = "BattlePet-0-000012B146CA",
+["level"] = 25,
+["name"] = "Lil' Bling",
+},
+},
+["name"] = "Unnamed",
+["icon"] = "Interface\\Icons\\ability_deathknight_summongargoyle",
+},
+},
+},
+},
+},
+},
+["profileKeys"] = {
+["Flurrq - Ragnaros"] = "Default",
+["Qpe - Ravencrest"] = "Default",
+["Qutlaw - Ravencrest"] = "Default",
+["Qubit - Ragnaros"] = "Default",
+["Qpaladin - Ragnaros"] = "Default",
+["Qpfromage - Ragnaros"] = "Default",
+["Dogson - Ragnaros"] = "Default",
+["Fishanus - Ragnaros"] = "Default",
+},
+["profiles"] = {
+["Default"] = {
+["tooltipAttachment"] = false,
+["frames"] = {
+["petbmNameIconEditor"] = {
+},
+["CollectionsJournal"] = {
+},
+["petbmTeamView"] = {
+["windowPosition"] = {
+["y"] = -98,
+["x"] = 339,
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+},
+},
+["petbmInfoView"] = {
+["windowPosition"] = {
+["y"] = -49,
+["x"] = 0,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+},
+},
+},
+["minimapIcon"] = {
+["minimapPos"] = 159.6956079638037,
+},
+},
+},
+}

@@ -1,0 +1,13 @@
+## Interface: 100207
+## Title: Raider.IO |cffFFFFFFMythic Plus|r (Europe)
+## Author: Vladinator (Vladinator-TarrenMill), Aspyr (Aspyrox-Skullcrusher) and Isak (Isak-Sargeras)
+## Version: 10.2.7 (v202407240755)
+## IconTexture: Interface\AddOns\RaiderIO\icons\logo
+## Dependencies: RaiderIO
+## DefaultState: enabled
+## X-Type: Mythic Plus
+## X-Region: Europe
+## X-Faction: Both
+## X-Website: https://raider.io
+../RaiderIO/db/db_mythicplus_eu_characters.lua
+../RaiderIO/db/db_mythicplus_eu_lookup.lua

@@ -1,0 +1,83 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+    <Frame name="MIOG_MPlusStatistics" inherits="BackdropTemplate" virtual="true" toplevel="true">
+        <Frames>
+            <Frame parentKey="CharacterInfo">
+                <Size x="130" y="25" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT"/>
+                </Anchors>
+
+                <Frames>
+                    <Frame parentKey="KeystoneDropdown" inherits="MIOG_DropDownMenu" mixin="SlickDropDown">
+                        <Size x="130" y="20" />
+
+                        <Anchors>
+                            <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT"/>
+                        </Anchors>
+                    </Frame>
+
+                    <Slider parentKey="TimelimitSlider" inherits="UISliderTemplate" virtual="true">
+                        <Size x="90" y="15"/>
+
+                        <Anchors>
+                            <Anchor point="TOPLEFT" relativeKey="$parent.KeystoneDropdown" relativePoint="BOTTOMLEFT"/>
+                        </Anchors>
+
+                        <Layers>
+                            <Layer level="ARTWORK">
+                                <FontString name="$parentText" parentKey="Text" inherits="GameFontHighlight">
+                                    <Anchors>
+                                        <Anchor point="LEFT" relativeKey="$parent" relativePoint="RIGHT" x="5"/>
+                                    </Anchors>
+                                </FontString>
+                            </Layer>
+                        </Layers>
+
+                        <Scripts>
+                            <OnLoad>
+                                self:SetMinMaxValues(1, 40)
+                                self:SetValue(40)
+	                            self.Text:SetText(self:GetValue() .. "%")
+                            </OnLoad>
+                        </Scripts>
+                    </Slider>
+                </Frames>
+            
+            </Frame>
+
+            <Frame parentKey="DungeonColumns" inherits="HorizontalLayoutFrame" frameStrata="LOW">
+                <KeyValues>
+                    <KeyValue key="spacing" value="3" type="number"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.CharacterInfo" relativePoint="TOPRIGHT"/>
+                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" />
+                </Anchors>
+
+                <Frames>
+                    <Frame parentKey="Selection" inherits="BackdropTemplate" frameStrata="HIGH">
+                        <Size x="51" />
+                    </Frame>
+                </Frames>
+            </Frame>
+
+            <ScrollFrame parentKey="ScrollFrame" inherits="ScrollFrameTemplate" topLevel="true">
+                <KeyValues>
+                    <KeyValue key="scrollBarHideIfUnscrollable" value="true" type="string" />
+                    <KeyValue key="scrollBarTopY" value="-70" type="number" />
+                    <KeyValue key="scrollBarX" value="-5" type="number" />
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.CharacterInfo" relativePoint="BOTTOMLEFT"/>
+                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" />
+                </Anchors>
+
+                <ScrollChild>
+                    <Frame parentKey="Rows" inherits="BackdropTemplate, VerticalLayoutFrame" setAllPoints="true">
+                    </Frame>
+                </ScrollChild>
+            </ScrollFrame>
+        </Frames>
+    </Frame>
+</Ui>

@@ -1,0 +1,46 @@
+## Interface: 110000
+## Title: Trade Skill Flux Capacitor
+## Notes: This Trade Skill Flux Capacitor is what makes navigating the trade skills window possible
+## Notes-deDE: Dieser Fluxkompensator macht eine gute Navigation im Handwerksfenster überhaupt erst möglich
+## Author: Expelliarm5s
+## Version: 1.21.45
+## IconTexture: Interface\Icons\Spell_Shadow_MindBomb.blp
+## SavedVariables: TradeSkillFluxCapacitorDB
+## X-License: All rights reserved.
+
+# Libs
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+
+Libs\Ace3\AceAddon-3.0\AceAddon-3.0.xml
+Libs\Ace3\AceEvent-3.0\AceEvent-3.0.xml
+# Libs\Ace3\AceTimer-3.0\AceTimer-3.0.xml
+# Libs\Ace3\AceBucket-3.0\AceBucket-3.0.xml
+Libs\Ace3\AceHook-3.0\AceHook-3.0.xml
+Libs\Ace3\AceDB-3.0\AceDB-3.0.xml
+Libs\Ace3\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\Ace3\AceLocale-3.0\AceLocale-3.0.xml
+Libs\Ace3\AceConsole-3.0\AceConsole-3.0.xml
+Libs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
+Libs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+# Libs\Ace3\AceComm-3.0\AceComm-3.0.xml
+# Libs\Ace3\AceTab-3.0\AceTab-3.0.xml
+# Libs\Ace3\AceSerializer-3.0\AceSerializer-3.0.xml
+
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.xml
+Libs\LibQTip-1.0\lib.xml
+# Libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua
+# Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+Libs\LibDBIcon-1.0\lib.xml
+
+# Locales
+Locale\enUS.lua
+Locale\deDE.lua
+
+# Base Addon Files
+TradeSkillFluxCapacitor.lua
+Modules\Options.lua
+Modules\LDB.lua
+Modules\FluxCapacitor.lua
+
+## EOF

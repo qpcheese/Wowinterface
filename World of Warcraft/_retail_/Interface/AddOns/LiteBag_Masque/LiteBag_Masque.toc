@@ -1,0 +1,8 @@
+## Interface: 110000
+## Author: Voopie
+## Title: LiteBag Masque
+## Version: 0.15
+## IconTexture: 133639
+## Dependencies: LiteBag, Masque
+
+LiteBag_Masque.lua

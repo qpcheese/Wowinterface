@@ -1,0 +1,142 @@
+## Interface: 100207
+## Title: Mythic IO Grabber
+## Author: Rhany-Ravencrest
+## OptionalDeps: RaiderIO
+## IconTexture: Interface\AddOns\MythicIOGrabber\res\infoIcons\logo_noText_128.png
+## Notes: Detailed raider io output of applicants
+## Version: 2.1.2
+## SavedVariables: MIOG_SavedSettings
+## SavedVariablesPerCharacter: MIOG_QueueUpTime, MIOG_InspectQueue, MIOG_InspectedGUIDs, MIOG_SavedSpecIDs
+## AddonCompartmentFunc: MIOG_OpenInterfaceOptions
+
+## X-Curse-Project-ID: 916354
+## X-Wago-ID: EGPXd3G1
+## X-Website: https://github.com/NintendoLink07/MythicIOGrabber
+
+Libs\libs.xml
+RawBlizzardData.lua
+
+Blizzard_WeeklyRewards2.lua
+
+MythicIOGrabber.lua
+Settings.lua
+UtilFunctions.lua
+PersistentData.lua
+FrameManagement.lua
+UI.lua
+MultiStateButton.lua
+SlickDropDown.lua
+PVEFrame2.lua
+EditDistance.lua
+QueueManagement.lua
+
+ApplicationViewer.lua
+SearchPanel.lua
+EntryCreation.lua
+FilterPanel.lua
+InspectCoroutine.lua
+Calendar.lua
+SharedFunctions.lua
+ClassPanel.lua
+
+MythicPlusStatistics.lua
+PVPStatistics.lua
+RaidStatistics.lua
+
+LastInvites.lua
+GearingChart.lua
+AdventureJournal.lua
+PartyCheck.lua
+
+XML\MIOG_MainFrameTemplate.xml
+XML\MIOG_Plugin.xml
+
+XML\MIOG_MultiStateButtonTemplate.xml
+XML\MIOG_SortButtonTemplate.xml
+
+XML\MIOG_ApplicantFrameTemplate.xml
+XML\MIOG_ApplicantMemberFrameTemplate.xml
+
+XML\MIOG_ResultFrameTemplate.xml
+
+XML\MIOG_DetailedInformationPanelTemplate.xml
+XML\MIOG_DetailedInformationPanelBackgroundRows.xml
+XML\MIOG_DetailedInformationPanelTextRowTemplate.xml
+XML\MIOG_DetailedInformationPanelSinglePanelTemplate.xml
+XML\MIOG_DungeonRowTemplate.xml
+XML\MIOG_RaidRowTemplate.xml
+XML\MIOG_RaidBossFrameTemplate.xml
+XML\MIOG_GroupMemberTemplate.xml
+XML\MIOG_SmallGroupMemberTemplate.xml
+XML\MIOG_ResultFrameBossFrameTemplate.xml
+XML\MIOG_RaidPanelTemplate.xml
+XML\MIOG_RaidPanelTierTemplate.xml
+
+XML\MIOG_VerticalButtonTemplate.xml
+XML\MIOG_QueueFrame.xml
+XML\MIOG_MenuButtonTemplate.xml
+
+XML\MIOG_EntryCreation.xml
+XML\MIOG_ApplicationViewer.xml
+XML\MIOG_SearchPanel.xml
+
+XML\MIOG_InviteBox.xml
+XML\MIOG_InviteBoxFrameTemplate.xml
+
+XML\Filter\MIOG_FilterPanel.xml
+XML\Filter\MIOG_FilterOption.xml
+XML\Filter\MIOG_FilterOptionSpinnerTemplate.xml
+XML\Filter\MIOG_FilterOptionDualSpinnerTemplate.xml
+XML\Filter\MIOG_FilterOptionDualFieldTemplate.xml
+XML\Filter\MIOG_FilterPanelBossFrameTemplate.xml
+XML\MIOG_LastInvitesTemplate.xml
+XML\MIOG_LastInvitesPlayerTemplate.xml
+
+XML\CLassPanel\MIOG_ClassPanel.xml
+XML\CLassPanel\MIOG_ClassPanelClassFrameTemplate.xml
+XML\CLassPanel\MIOG_ClassPanelSpecFrameTemplate.xml
+
+XML\MIOG_DropDownMenu.xml
+XML\MIOG_DropDownMenuEntry.xml
+
+XML\MIOG_MinimalCheckButtonTemplate.xml
+XML\MIOG_ClassSpecFilterRowTemplate.xml
+XML\MIOG_ClassSpecSingleOptionTemplate.xml
+
+XML\MythicPlus\MIOG_MPlusStatistics.xml
+XML\MythicPlus\MIOG_MPlusStatisticsCharacterTemplate.xml
+XML\MythicPlus\MIOG_MPlusStatisticsColumnTemplate.xml
+XML\MythicPlus\MIOG_MPlusStatisticsDungeonTemplate.xml
+
+XML\Raid\MIOG_RaidStatistics.xml
+XML\Raid\MIOG_RaidStatisticsCharacterTemplate.xml
+XML\Raid\MIOG_RaidStatisticsRaidTemplate.xml
+XML\Raid\MIOG_RaidStatisticsColumnTemplate.xml
+
+XML\PVP\MIOG_PVPStatistics.xml
+XML\PVP\MIOG_PVPStatisticsCharacterTemplate.xml
+XML\PVP\MIOG_PVPStatisticsBracketTemplate.xml
+XML\PVP\MIOG_PVPStatisticsColumnTemplate.xml
+
+XML\MIOG_Teleports.xml
+XML\MIOG_GearingChart.xml
+XML\MIOG_GearingChartLine.xml
+XML\MIOG_GearingChartLegendTextureTemplate.xml
+
+XML\MIOG_CurrencySingleTemplate.xml
+XML\MIOG_HolidayFrameTemplate.xml
+
+XML\MIOG_AdventureJournal.xml
+XML\MIOG_AdventureJournalAbilityTemplate.xml
+XML\MIOG_AdventureJournalAbilityDifficultyTemplate.xml
+XML\MIOG_AdventureJournalLootItemTemplate.xml
+XML\MIOG_AdventureJournalLootSlotLineTemplate.xml
+XML\MIOG_AdventureJournalCreatureButtonTemplate.xml
+XML\MIOG_AdventureJournalAbilitySwitchTemplate.xml
+
+XML\MIOG_PartyCheck.xml
+XML\MIOG_PartyCheckPlayerTemplate.xml
+
+XML\MIOG_SortButtonWithTextTemplate.xml
+
+FuzzyAlgorithm.lua

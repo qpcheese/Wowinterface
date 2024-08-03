@@ -1,0 +1,7822 @@
+
+_detalhes_database = {
+["savedbuffs"] = {
+},
+["mythic_dungeon_id"] = 0,
+["tabela_historico"] = {
+["tabelas"] = {
+{
+{
+["combatId"] = 19,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001618,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 738.001618,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 738.001618,
+["spec"] = 257,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Sha Harbinger"] = 189,
+["Sha Haunt"] = 549,
+},
+["colocacao"] = 1,
+["aID"] = "1597-0F92592E",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009198,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 189,
+["targets"] = {
+["Sha Harbinger"] = 189,
+["Sha Haunt"] = 549,
+},
+["n_total"] = 738,
+["n_min"] = 181,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 738,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 486.4875530629831,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.001618,
+["start_time"] = 1722009197,
+["delay"] = 0,
+["last_event"] = 1722009198,
+},
+{
+["flag_original"] = 2632,
+["totalabsorbed"] = 0.005094,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.005094,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.005094,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66424-000023C510",
+["aID"] = "66424",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009198,
+["nome"] = "Sha Harbinger",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 189.005094,
+["start_time"] = 1722009198,
+["delay"] = 0,
+["last_event"] = 0,
+},
+{
+["flag_original"] = 2632,
+["totalabsorbed"] = 0.001486,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.001486,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.001486,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66423-000023C485",
+["aID"] = "66423",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009198,
+["nome"] = "Sha Haunt",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 549.001486,
+["start_time"] = 1722009198,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 19,
+["tipo"] = 3,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["heal_enemy_amt"] = 0,
+["totalover"] = 124.007771,
+["total_without_pet"] = 0.007771,
+["total"] = 0.007771,
+["targets_absorbs"] = {
+},
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["totalabsorb"] = 0.007771,
+["last_hps"] = 0,
+["aID"] = "1597-0F92592E",
+["targets"] = {
+},
+["spec"] = 257,
+["serial"] = "Player-1597-0F92592E",
+["totalover_without_pet"] = 0.007771,
+["grupo"] = true,
+["healing_taken"] = 0.007771,
+["healing_from"] = {
+},
+["classe"] = "PRIEST",
+["end_time"] = 1722009198,
+["targets_overheal"] = {
+["Twinkelton"] = 124,
+},
+["start_time"] = 1722009198,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 3,
+["_ActorTable"] = {
+[281265] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 124,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 124,
+["total"] = 0,
+["c_max"] = 0,
+["id"] = 281265,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["spellschool"] = 2,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+},
+["custom"] = 0,
+["last_event"] = 1722009198,
+["totaldenied"] = 0.007771,
+["delay"] = 0,
+["tipo"] = 2,
+},
+},
+},
+{
+["combatId"] = 19,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 19,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["buff_uptime"] = 3,
+["classe"] = "PRIEST",
+["buff_uptime_targets"] = {
+},
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[443457] = {
+["activedamt"] = 1,
+["id"] = 443457,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443483] = {
+["activedamt"] = 1,
+["id"] = 443483,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["activedamt"] = 2,
+["id"] = 77489,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 2,
+["refreshamt"] = 1,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["serial"] = "Player-1597-0F92592E",
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["last_event"] = 1722009198,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 19,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["tempo_start"] = 1722009197,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Twinkelton"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+738,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Twinkelton"] = {
+["Holy Nova"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:53:19",
+["hasTimer"] = 1.001000000003842,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Sha Haunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 99041.755,
+["CombatEndedAt"] = 99041.755,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["appliedAt"] = 99040.238,
+["spellId"] = 77489,
+["data"] = {
+{
+99040.238,
+99041.755,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:53:17",
+["end_time"] = 99041.755,
+["mapId"] = 870,
+["combat_id"] = 19,
+["overall_added"] = true,
+["playing_solo"] = true,
+["boss_hp"] = 1,
+["is_challenge"] = false,
+["frags"] = {
+["Sha Harbinger"] = 1,
+["Sha Haunt"] = 3,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 0.007771,
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Twinkelton"] = 738.001618,
+},
+},
+},
+["combat_counter"] = 22,
+["totals_grupo"] = {
+738,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+{
+99041.755,
+132157,
+},
+},
+},
+["start_time"] = 99040.238,
+["TimeData"] = {
+},
+["contra"] = "Sha Haunt",
+},
+{
+{
+["combatId"] = 18,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001816,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 578.001816,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 578.001816,
+["spec"] = 257,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Sha Harbinger"] = 578,
+},
+["colocacao"] = 1,
+["aID"] = "1597-0F92592E",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009191,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 578,
+["targets"] = {
+["Sha Harbinger"] = 578,
+},
+["n_total"] = 578,
+["n_min"] = 578,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 578,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 389.2268121210595,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.001816,
+["start_time"] = 1722009190,
+["delay"] = 0,
+["last_event"] = 1722009190,
+},
+{
+["flag_original"] = 68168,
+["totalabsorbed"] = 0.005927,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.005927,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.005927,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66424-000023C4D1",
+["aID"] = "66424",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009191,
+["nome"] = "Sha Harbinger",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 578.005927,
+["start_time"] = 1722009191,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 18,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 18,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 18,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["pets"] = {
+},
+["buff_uptime"] = 2,
+["classe"] = "PRIEST",
+["buff_uptime_targets"] = {
+},
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[443483] = {
+["activedamt"] = 1,
+["id"] = 443483,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443457] = {
+["activedamt"] = 1,
+["id"] = 443457,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["serial"] = "Player-1597-0F92592E",
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["last_event"] = 1722009191,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 18,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["CombatStartedAt"] = 99039.363,
+["tempo_start"] = 1722009190,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+578,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:53:12",
+["hasTimer"] = 1.004000000000815,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Sha Harbinger",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 99034.504,
+["CombatEndedAt"] = 99034.504,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["data_inicio"] = "17:53:10",
+["end_time"] = 99034.504,
+["mapId"] = 870,
+["combat_id"] = 18,
+["overall_added"] = true,
+["playing_solo"] = true,
+["boss_hp"] = 1,
+["is_challenge"] = false,
+["frags"] = {
+["Sha Harbinger"] = 1,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Twinkelton"] = 578.001816,
+},
+},
+},
+["combat_counter"] = 21,
+["totals_grupo"] = {
+578,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["start_time"] = 99033.019,
+["TimeData"] = {
+},
+["contra"] = "Sha Harbinger",
+},
+{
+{
+["combatId"] = 17,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008356,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 184.008356,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 184.008356,
+["spec"] = 257,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Sha Haunt"] = 184,
+},
+["colocacao"] = 1,
+["aID"] = "1597-0F92592E",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009181,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 184,
+["targets"] = {
+["Sha Haunt"] = 184,
+},
+["n_total"] = 184,
+["n_min"] = 184,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 184,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 832.6169954562536,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.008356,
+["start_time"] = 1722009180,
+["delay"] = 0,
+["last_event"] = 1722009180,
+},
+{
+["flag_original"] = 2632,
+["totalabsorbed"] = 0.008067,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.008067,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.008067,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66423-000123C346",
+["aID"] = "66423",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009181,
+["nome"] = "Sha Haunt",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 184.008067,
+["start_time"] = 1722009181,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 17,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 17,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 17,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["buff_uptime"] = 4,
+["classe"] = "PRIEST",
+["buff_uptime_targets"] = {
+},
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[443457] = {
+["activedamt"] = 1,
+["id"] = 443457,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443483] = {
+["activedamt"] = 1,
+["id"] = 443483,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[21562] = {
+["activedamt"] = 1,
+["id"] = 21562,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["activedamt"] = 2,
+["id"] = 77489,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 2,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["serial"] = "Player-1597-0F92592E",
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["last_event"] = 1722009181,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 17,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["CombatStartedAt"] = 99033.019,
+["tempo_start"] = 1722009180,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+184,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:53:01",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Sha Haunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 1.099000000001979,
+["CombatEndedAt"] = 99031.68400000001,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["appliedAt"] = 99023.704,
+["spellId"] = 77489,
+["data"] = {
+{
+99023.704,
+99023.925,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:53:01",
+["end_time"] = 99023.925,
+["mapId"] = 870,
+["combat_id"] = 17,
+["overall_added"] = true,
+["playing_solo"] = true,
+["boss_hp"] = 1,
+["is_challenge"] = false,
+["frags"] = {
+["Sha Haunt"] = 1,
+},
+["combat_counter"] = 20,
+["totals_grupo"] = {
+184,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Twinkelton"] = 184.008356,
+},
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["start_time"] = 99023.704,
+["TimeData"] = {
+},
+["contra"] = "Sha Haunt",
+},
+{
+{
+["combatId"] = 16,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001363,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 915.001363,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 915.001363,
+["spec"] = 257,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Sha Harbinger"] = 366,
+["Sha Haunt"] = 549,
+},
+["colocacao"] = 1,
+["aID"] = "1597-0F92592E",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009174,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 185,
+["targets"] = {
+["Sha Harbinger"] = 366,
+["Sha Haunt"] = 549,
+},
+["n_total"] = 546,
+["n_min"] = 180,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 915,
+["c_max"] = 369,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 369,
+["successful_casted"] = 0,
+["c_total"] = 369,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 448.0907752200912,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.001363,
+["start_time"] = 1722009172,
+["delay"] = 0,
+["last_event"] = 1722009174,
+},
+{
+["flag_original"] = 2632,
+["totalabsorbed"] = 0.008255,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.008255,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.008255,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66424-000023C49D",
+["aID"] = "66424",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009174,
+["nome"] = "Sha Harbinger",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 366.008255,
+["start_time"] = 1722009174,
+["delay"] = 0,
+["last_event"] = 0,
+},
+{
+["flag_original"] = 2632,
+["totalabsorbed"] = 0.006852,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.006852,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.006852,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66423-000023C46C",
+["aID"] = "66423",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009174,
+["nome"] = "Sha Haunt",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 549.006852,
+["start_time"] = 1722009174,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 16,
+["tipo"] = 3,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["heal_enemy_amt"] = 0,
+["totalover"] = 260.004405,
+["total_without_pet"] = 0.004405,
+["total"] = 0.004405,
+["targets_absorbs"] = {
+},
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["totalabsorb"] = 0.004405,
+["last_hps"] = 0,
+["aID"] = "1597-0F92592E",
+["spec"] = 257,
+["targets"] = {
+},
+["serial"] = "Player-1597-0F92592E",
+["totalover_without_pet"] = 0.004405,
+["grupo"] = true,
+["healing_taken"] = 0.004405,
+["healing_from"] = {
+},
+["classe"] = "PRIEST",
+["end_time"] = 1722009174,
+["targets_overheal"] = {
+["Twinkelton"] = 260,
+},
+["start_time"] = 1722009174,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 3,
+["_ActorTable"] = {
+[281265] = {
+["c_amt"] = 1,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 247,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 247,
+["total"] = 0,
+["c_max"] = 0,
+["id"] = 281265,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["spellschool"] = 2,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 0,
+["absorbed"] = 0,
+},
+[77489] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 13,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 13,
+["total"] = 0,
+["c_max"] = 0,
+["id"] = 77489,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["spellschool"] = 2,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+},
+["custom"] = 0,
+["last_event"] = 1722009174,
+["totaldenied"] = 0.004405,
+["delay"] = 0,
+["tipo"] = 2,
+},
+},
+},
+{
+["combatId"] = 16,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 16,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["buff_uptime"] = 6,
+["classe"] = "PRIEST",
+["buff_uptime_targets"] = {
+},
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[443457] = {
+["activedamt"] = 1,
+["id"] = 443457,
+["targets"] = {
+},
+["uptime"] = 2,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443483] = {
+["activedamt"] = 1,
+["id"] = 443483,
+["targets"] = {
+},
+["uptime"] = 2,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["activedamt"] = 2,
+["id"] = 77489,
+["targets"] = {
+},
+["uptime"] = 2,
+["appliedamt"] = 2,
+["refreshamt"] = 1,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["serial"] = "Player-1597-0F92592E",
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["last_event"] = 1722009174,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 16,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["CombatStartedAt"] = 99021.553,
+["tempo_start"] = 1722009172,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+915,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Twinkelton"] = {
+["Holy Nova"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:52:55",
+["hasTimer"] = 2.00800000000163,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Sha Haunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 99017.41,
+["CombatEndedAt"] = 99017.41,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["appliedAt"] = 99015.368,
+["spellId"] = 77489,
+["data"] = {
+{
+99015.368,
+99017.41,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:52:53",
+["end_time"] = 99017.41,
+["mapId"] = 870,
+["combat_id"] = 16,
+["overall_added"] = true,
+["playing_solo"] = true,
+["boss_hp"] = 1,
+["is_challenge"] = false,
+["frags"] = {
+["Sha Harbinger"] = 1,
+["Sha Haunt"] = 2,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 0.004405,
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Twinkelton"] = 915.001363,
+},
+},
+},
+["combat_counter"] = 19,
+["totals_grupo"] = {
+915,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+{
+99016.952,
+132157,
+},
+},
+},
+["start_time"] = 99015.368,
+["TimeData"] = {
+},
+["contra"] = "Sha Harbinger",
+},
+{
+{
+["combatId"] = 15,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006067,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 367.006067,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 367.006067,
+["spec"] = 257,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Sha Haunt"] = 367,
+},
+["colocacao"] = 1,
+["aID"] = "1597-0F92592E",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009164,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 186,
+["targets"] = {
+["Sha Haunt"] = 367,
+},
+["n_total"] = 367,
+["n_min"] = 181,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 367,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 432.7901733500073,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.006067,
+["start_time"] = 1722009163,
+["delay"] = 0,
+["last_event"] = 1722009163,
+},
+{
+["flag_original"] = 2632,
+["totalabsorbed"] = 0.001797,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.001797,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.001797,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66423-000023C434",
+["aID"] = "66423",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009164,
+["nome"] = "Sha Haunt",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 367.001797,
+["start_time"] = 1722009164,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 15,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 15,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 15,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["buff_uptime"] = 4,
+["classe"] = "PRIEST",
+["buff_uptime_targets"] = {
+},
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[443457] = {
+["activedamt"] = 1,
+["id"] = 443457,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443483] = {
+["activedamt"] = 1,
+["id"] = 443483,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[21562] = {
+["activedamt"] = 1,
+["id"] = 21562,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["activedamt"] = 2,
+["id"] = 77489,
+["targets"] = {
+},
+["uptime"] = 1,
+["appliedamt"] = 2,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["serial"] = "Player-1597-0F92592E",
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["last_event"] = 1722009164,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 15,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["CombatStartedAt"] = 99014.975,
+["tempo_start"] = 1722009163,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+367,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:52:44",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Sha Haunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 99007.228,
+["CombatEndedAt"] = 99007.228,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["appliedAt"] = 99006.38,
+["spellId"] = 77489,
+["data"] = {
+{
+99006.38,
+99007.228,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:52:44",
+["end_time"] = 99007.228,
+["mapId"] = 870,
+["combat_id"] = 15,
+["overall_added"] = true,
+["playing_solo"] = true,
+["boss_hp"] = 1,
+["is_challenge"] = false,
+["frags"] = {
+["Sha Haunt"] = 2,
+},
+["combat_counter"] = 18,
+["totals_grupo"] = {
+367,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Twinkelton"] = 367.006067,
+},
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["start_time"] = 99006.38,
+["TimeData"] = {
+},
+["contra"] = "Sha Haunt",
+},
+{
+{
+["combatId"] = 14,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.002223,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 367.002223,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 367.002223,
+["spec"] = 257,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Sha Harbinger"] = 186,
+["Sha Haunt"] = 181,
+},
+["colocacao"] = 1,
+["aID"] = "1597-0F92592E",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009156,
+["nome"] = "Twinkelton",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 186,
+["targets"] = {
+["Sha Harbinger"] = 186,
+["Sha Haunt"] = 181,
+},
+["n_total"] = 367,
+["n_min"] = 181,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 367,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 917.5055575133514,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.002223,
+["start_time"] = 1722009156,
+["delay"] = 0,
+["last_event"] = 1722009156,
+},
+{
+["flag_original"] = 68168,
+["totalabsorbed"] = 0.001842,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.001842,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.001842,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66424-000023C485",
+["aID"] = "66424",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009156,
+["nome"] = "Sha Harbinger",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 186.001842,
+["start_time"] = 1722009156,
+["delay"] = 0,
+["last_event"] = 0,
+},
+{
+["flag_original"] = 2632,
+["totalabsorbed"] = 0.001037,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.001037,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.001037,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66423-000023C493",
+["aID"] = "66423",
+["fight_component"] = true,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009156,
+["nome"] = "Sha Haunt",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 181.001037,
+["start_time"] = 1722009156,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 14,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 14,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 14,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["buff_uptime"] = 0,
+["classe"] = "PRIEST",
+["buff_uptime_targets"] = {
+},
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[443457] = {
+["activedamt"] = 1,
+["id"] = 443457,
+["targets"] = {
+},
+["uptime"] = 0,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443483] = {
+["activedamt"] = 1,
+["id"] = 443483,
+["targets"] = {
+},
+["uptime"] = 0,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["activedamt"] = 2,
+["id"] = 77489,
+["targets"] = {
+},
+["uptime"] = 0,
+["appliedamt"] = 2,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["serial"] = "Player-1597-0F92592E",
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["last_event"] = 1722009156,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 14,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["CombatStartedAt"] = 99006.05,
+["tempo_start"] = 1722009156,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+367,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:52:36",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Sha Harbinger",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98999.166,
+["CombatEndedAt"] = 98999.166,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["appliedAt"] = 98998.766,
+["spellId"] = 77489,
+["data"] = {
+{
+98998.766,
+98999.166,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:52:36",
+["end_time"] = 98999.166,
+["mapId"] = 870,
+["combat_id"] = 14,
+["overall_added"] = true,
+["playing_solo"] = true,
+["boss_hp"] = 1,
+["is_challenge"] = false,
+["frags"] = {
+["Sha Harbinger"] = 1,
+["Sha Haunt"] = 1,
+},
+["combat_counter"] = 17,
+["totals_grupo"] = {
+367,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Twinkelton"] = 367.002223,
+},
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["start_time"] = 98998.766,
+["TimeData"] = {
+},
+["contra"] = "Sha Harbinger",
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 13,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.002072,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 1112.002072,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 1112.002072,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+["Sha Haunt"] = true,
+},
+["targets"] = {
+["Sha Harbinger"] = 365,
+["Sha Haunt"] = 747,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009128,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Sha Harbinger"] = 365,
+["Sha Haunt"] = 747,
+},
+["n_total"] = 735,
+["n_min"] = 180,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 1112,
+["c_max"] = 377,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 377,
+["successful_casted"] = 0,
+["c_total"] = 377,
+["n_amt"] = 4,
+["n_max"] = 189,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009128,
+["damage_taken"] = 2.002072,
+["start_time"] = 1722009125,
+["delay"] = 0,
+["last_dps"] = 316.2690762226874,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.007311,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 2.007311,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66423-000023C346",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+["Twinkelton"] = 2,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.007311,
+["fight_component"] = true,
+["end_time"] = 1722009128,
+["aID"] = "66423",
+["nome"] = "Sha Haunt",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 2,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 2,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009128,
+["damage_taken"] = 747.007311,
+["start_time"] = 1722009128,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.004146,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.004146,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66424-0000A3C353",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.004146,
+["fight_component"] = true,
+["end_time"] = 1722009128,
+["aID"] = "66424",
+["nome"] = "Sha Harbinger",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 365.004146,
+["start_time"] = 1722009128,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 13,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Twinkelton"] = 246,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["classe"] = "PRIEST",
+["totalover"] = 246.008102,
+["total_without_pet"] = 3.008102,
+["total"] = 3.008102,
+["spec"] = 257,
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["serial"] = "Player-1597-0F92592E",
+["totalabsorb"] = 0.008102,
+["last_hps"] = 0,
+["targets"] = {
+["Twinkelton"] = 3,
+},
+["last_event"] = 1722009128,
+["totalover_without_pet"] = 0.008102,
+["healing_taken"] = 3.008102,
+["fight_component"] = true,
+["end_time"] = 1722009128,
+["healing_from"] = {
+["Twinkelton"] = true,
+},
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[281265] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 239,
+},
+["n_max"] = 3,
+["targets"] = {
+["Twinkelton"] = 3,
+},
+["n_total"] = 3,
+["n_min"] = 3,
+["counter"] = 2,
+["overheal"] = 239,
+["total"] = 3,
+["spellschool"] = 2,
+["id"] = 281265,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 2,
+["absorbed"] = 0,
+},
+[77489] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 7,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 7,
+["total"] = 0,
+["spellschool"] = 2,
+["id"] = 77489,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1722009126,
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.008102,
+["delay"] = 0,
+["targets_absorbs"] = {
+},
+},
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 13,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 13,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["buff_uptime"] = 18,
+["classe"] = "PRIEST",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443483] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 3,
+["id"] = 443483,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 3,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 3,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 3,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 3,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 2,
+["targets"] = {
+},
+["activedamt"] = 2,
+["uptime"] = 3,
+["id"] = 77489,
+["refreshamt"] = 2,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["nome"] = "Twinkelton",
+["pets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["spec"] = 257,
+["grupo"] = true,
+["tipo"] = 4,
+["aID"] = "1597-0F92592E",
+["serial"] = "Player-1597-0F92592E",
+["last_event"] = 1722009128,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 13,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98997.932,
+["tempo_start"] = 1722009125,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Twinkelton"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Sha Harbinger"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Sha Haunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+1114,
+3,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Twinkelton"] = {
+["Holy Nova"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:52:08",
+["hasTimer"] = 3.002000000007683,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Sha Haunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98971.137,
+["CombatEndedAt"] = 98971.137,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["spellId"] = 77489,
+["appliedAt"] = 98967.621,
+["data"] = {
+{
+98967.621,
+98971.137,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:52:05",
+["end_time"] = 98971.137,
+["mapId"] = 870,
+["combat_id"] = 13,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+{
+98969.085,
+132157,
+},
+{
+98970.63100000001,
+132157,
+},
+},
+},
+["is_challenge"] = false,
+["frags"] = {
+["Sha Harbinger"] = 1,
+["Sha Haunt"] = 3,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 3.008102,
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 1112.002072,
+},
+},
+},
+["combat_counter"] = 16,
+["totals_grupo"] = {
+1112,
+3,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["start_time"] = 98967.621,
+["contra"] = "Sha Haunt",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 12,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005737,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 374.005737,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 374.005737,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Garrosh'ar Grunt"] = 374,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009075,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Grunt"] = 374,
+},
+["n_total"] = 374,
+["n_min"] = 186,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 374,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 188,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009074,
+["damage_taken"] = 0.005737,
+["start_time"] = 1722009074,
+["delay"] = 0,
+["last_dps"] = 310.8942119716092,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.00682,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.00682,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C5EF",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.00682,
+["fight_component"] = true,
+["end_time"] = 1722009075,
+["aID"] = "66282",
+["nome"] = "Garrosh'ar Grunt",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 374.00682,
+["start_time"] = 1722009075,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 12,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 12,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 12,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 2,
+["targets"] = {
+},
+["activedamt"] = 2,
+["uptime"] = 1,
+["id"] = 77489,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 5,
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["grupo"] = true,
+["buff_uptime_targets"] = {
+},
+["last_event"] = 1722009075,
+["classe"] = "PRIEST",
+["serial"] = "Player-1597-0F92592E",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 12,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98967.484,
+["tempo_start"] = 1722009074,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Twinkelton"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+374,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:51:16",
+["hasTimer"] = 1.002999999996973,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Grunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98919,
+["CombatEndedAt"] = 98919,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["spellId"] = 77489,
+["appliedAt"] = 98917.797,
+["data"] = {
+{
+98917.797,
+98919,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:51:15",
+["end_time"] = 98919,
+["mapId"] = 870,
+["combat_id"] = 12,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["is_challenge"] = false,
+["frags"] = {
+["Garrosh'ar Grunt"] = 2,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 374.005737,
+},
+},
+},
+["combat_counter"] = 15,
+["totals_grupo"] = {
+374,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["start_time"] = 98917.797,
+["contra"] = "Garrosh'ar Grunt",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 11,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005039,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 187.005039,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 187.005039,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Garrosh'ar Grunt"] = 187,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009066,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Grunt"] = 187,
+},
+["n_total"] = 187,
+["n_min"] = 187,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 187,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 187,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009065,
+["damage_taken"] = 0.005039,
+["start_time"] = 1722009065,
+["delay"] = 0,
+["last_dps"] = 184.060077755315,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.003847,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.003847,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C5E5",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.003847,
+["fight_component"] = true,
+["end_time"] = 1722009066,
+["aID"] = "66282",
+["nome"] = "Garrosh'ar Grunt",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 187.003847,
+["start_time"] = 1722009066,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 11,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Twinkelton"] = 6,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["classe"] = "PRIEST",
+["totalover"] = 6.008524,
+["total_without_pet"] = 0.008524,
+["total"] = 0.008524,
+["spec"] = 257,
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["serial"] = "Player-1597-0F92592E",
+["totalabsorb"] = 0.008524,
+["last_hps"] = 0,
+["targets"] = {
+},
+["totalover_without_pet"] = 0.008524,
+["last_event"] = 1722009065,
+["healing_taken"] = 0.008524,
+["end_time"] = 1722009066,
+["healing_from"] = {
+},
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[77489] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 6,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 6,
+["total"] = 0,
+["spellschool"] = 2,
+["id"] = 77489,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1722009065,
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.008524,
+["delay"] = 0,
+["targets_absorbs"] = {
+},
+},
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 11,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 11,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 77489,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 5,
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["grupo"] = true,
+["buff_uptime_targets"] = {
+},
+["last_event"] = 1722009066,
+["classe"] = "PRIEST",
+["serial"] = "Player-1597-0F92592E",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 11,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98917.797,
+["tempo_start"] = 1722009065,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Grunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+187,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:51:06",
+["hasTimer"] = 1.002000000007683,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Grunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98909.3,
+["CombatEndedAt"] = 98909.3,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["data_inicio"] = "17:51:05",
+["end_time"] = 98909.3,
+["mapId"] = 870,
+["combat_id"] = 11,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["is_challenge"] = false,
+["frags"] = {
+["Garrosh'ar Grunt"] = 1,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 0.008524,
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 187.005039,
+},
+},
+},
+["combat_counter"] = 14,
+["totals_grupo"] = {
+187,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["start_time"] = 98908.284,
+["contra"] = "Garrosh'ar Grunt",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 10,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001703,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 179.001703,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 179.001703,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Garrosh'ar Gear-Greaser"] = 179,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009032,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Gear-Greaser"] = 179,
+},
+["n_total"] = 179,
+["n_min"] = 179,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 179,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 179,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009032,
+["damage_taken"] = 0.001703,
+["start_time"] = 1722009032,
+["delay"] = 0,
+["last_dps"] = 534.333441780832,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.006162,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.006162,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66290-000023C1DA",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.006162,
+["fight_component"] = true,
+["end_time"] = 1722009032,
+["aID"] = "66290",
+["nome"] = "Garrosh'ar Gear-Greaser",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 179.006162,
+["start_time"] = 1722009032,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 10,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Twinkelton"] = 8,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["classe"] = "PRIEST",
+["totalover"] = 8.00631,
+["total_without_pet"] = 0.00631,
+["total"] = 0.00631,
+["spec"] = 257,
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["serial"] = "Player-1597-0F92592E",
+["totalabsorb"] = 0.00631,
+["last_hps"] = 0,
+["targets"] = {
+},
+["totalover_without_pet"] = 0.00631,
+["last_event"] = 1722009032,
+["healing_taken"] = 0.00631,
+["end_time"] = 1722009032,
+["healing_from"] = {
+},
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[77489] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 8,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 8,
+["total"] = 0,
+["spellschool"] = 2,
+["id"] = 77489,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1722009032,
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.00631,
+["delay"] = 0,
+["targets_absorbs"] = {
+},
+},
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 10,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 10,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 77489,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 0,
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["grupo"] = true,
+["buff_uptime_targets"] = {
+},
+["last_event"] = 1722009032,
+["classe"] = "PRIEST",
+["serial"] = "Player-1597-0F92592E",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 10,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98906.773,
+["tempo_start"] = 1722009032,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Gear-Greaser"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Twinkelton"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+179,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:50:33",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Gear-Greaser",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98876.016,
+["CombatEndedAt"] = 98876.016,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["data_inicio"] = "17:50:33",
+["end_time"] = 98876.016,
+["mapId"] = 870,
+["combat_id"] = 10,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["is_challenge"] = false,
+["frags"] = {
+["Garrosh'ar Gear-Greaser"] = 1,
+},
+["combat_counter"] = 13,
+["totals_grupo"] = {
+179,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 0.00631,
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 179.001703,
+},
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["start_time"] = 98875.681,
+["contra"] = "Garrosh'ar Gear-Greaser",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.004657,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 368.004657,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 368.004657,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Garrosh'ar Gear-Greaser"] = 181,
+["Garrosh'ar Grunt"] = 187,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009030,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Gear-Greaser"] = 181,
+["Garrosh'ar Grunt"] = 187,
+},
+["n_total"] = 368,
+["n_min"] = 181,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 368,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 187,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009029,
+["damage_taken"] = 0.004657,
+["start_time"] = 1722009028,
+["delay"] = 0,
+["last_dps"] = 136.8047052043426,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.008198,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.008198,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C17D",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.008198,
+["fight_component"] = true,
+["end_time"] = 1722009030,
+["aID"] = "66282",
+["nome"] = "Garrosh'ar Grunt",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 187.008198,
+["start_time"] = 1722009030,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.00613,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.00613,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66290-000023C1A9",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.00613,
+["fight_component"] = true,
+["end_time"] = 1722009030,
+["aID"] = "66290",
+["nome"] = "Garrosh'ar Gear-Greaser",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 181.00613,
+["start_time"] = 1722009030,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Twinkelton"] = 134,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["classe"] = "PRIEST",
+["totalover"] = 134.005201,
+["total_without_pet"] = 0.005201,
+["total"] = 0.005201,
+["spec"] = 257,
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["serial"] = "Player-1597-0F92592E",
+["totalabsorb"] = 0.005201,
+["last_hps"] = 0,
+["targets"] = {
+},
+["totalover_without_pet"] = 0.005201,
+["last_event"] = 1722009030,
+["healing_taken"] = 0.005201,
+["end_time"] = 1722009030,
+["healing_from"] = {
+},
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[77489] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 13,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 2,
+["overheal"] = 13,
+["total"] = 0,
+["spellschool"] = 2,
+["id"] = 77489,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 2,
+["absorbed"] = 0,
+},
+[281265] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 121,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 121,
+["total"] = 0,
+["spellschool"] = 2,
+["id"] = 281265,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1722009028,
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.005201,
+["delay"] = 0,
+["targets_absorbs"] = {
+},
+},
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 9,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 77489,
+["refreshamt"] = 1,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 10,
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["grupo"] = true,
+["buff_uptime_targets"] = {
+},
+["last_event"] = 1722009030,
+["classe"] = "PRIEST",
+["serial"] = "Player-1597-0F92592E",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 9,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98874.852,
+["tempo_start"] = 1722009028,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Gear-Greaser"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Garrosh'ar Grunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+368,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Twinkelton"] = {
+["Holy Nova"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:50:31",
+["hasTimer"] = 2.004000000000815,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Grunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98874.094,
+["CombatEndedAt"] = 98874.094,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["data_inicio"] = "17:50:29",
+["end_time"] = 98874.094,
+["mapId"] = 870,
+["combat_id"] = 9,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["is_challenge"] = false,
+["frags"] = {
+["Garrosh'ar Gear-Greaser"] = 1,
+["Garrosh'ar Grunt"] = 1,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 0.005201,
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 368.004657,
+},
+},
+},
+["combat_counter"] = 12,
+["totals_grupo"] = {
+368,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+{
+98872.84300000001,
+132157,
+},
+},
+},
+["start_time"] = 98871.404,
+["contra"] = "Garrosh'ar Gear-Greaser",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 8,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006227,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 372.006227,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 372.006227,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Emerald Turtle"] = 185,
+["Garrosh'ar Grunt"] = 187,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009025,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Emerald Turtle"] = 185,
+["Garrosh'ar Grunt"] = 187,
+},
+["n_total"] = 372,
+["n_min"] = 185,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 372,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 187,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009025,
+["damage_taken"] = 0.006227,
+["start_time"] = 1722009025,
+["delay"] = 0,
+["last_dps"] = 786.4825095168392,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.00544,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.00544,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C15E",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.00544,
+["fight_component"] = true,
+["end_time"] = 1722009025,
+["aID"] = "66282",
+["nome"] = "Garrosh'ar Grunt",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 187.00544,
+["start_time"] = 1722009025,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2600,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.005169,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.005169,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-62994-0000A3BBBF",
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "62994",
+["fight_component"] = true,
+["end_time"] = 1722009025,
+["totalabsorbed"] = 0.005169,
+["nome"] = "Emerald Turtle",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 185.005169,
+["start_time"] = 1722009025,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 8,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 8,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 8,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 77489,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 0,
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["grupo"] = true,
+["buff_uptime_targets"] = {
+},
+["last_event"] = 1722009025,
+["classe"] = "PRIEST",
+["serial"] = "Player-1597-0F92592E",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 8,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98870.761,
+["tempo_start"] = 1722009025,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Grunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+372,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:50:26",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Grunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98868.768,
+["CombatEndedAt"] = 98868.768,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["data_inicio"] = "17:50:25",
+["end_time"] = 98868.768,
+["mapId"] = 870,
+["combat_id"] = 8,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["is_challenge"] = false,
+["frags"] = {
+["Emerald Turtle"] = 1,
+["Garrosh'ar Grunt"] = 1,
+},
+["combat_counter"] = 11,
+["totals_grupo"] = {
+372,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 372.006227,
+},
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["start_time"] = 98868.295,
+["contra"] = "Garrosh'ar Grunt",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 7,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001372,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 560.001372,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 560.001372,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+["Garrosh'ar Grunt"] = true,
+},
+["targets"] = {
+["Garrosh'ar Peon"] = 184,
+["Garrosh'ar Grunt"] = 376,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009024,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Peon"] = 184,
+["Garrosh'ar Grunt"] = 376,
+},
+["n_total"] = 184,
+["n_min"] = 184,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 560,
+["c_max"] = 376,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 376,
+["successful_casted"] = 0,
+["c_total"] = 376,
+["n_amt"] = 1,
+["n_max"] = 184,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009022,
+["damage_taken"] = 10.001372,
+["start_time"] = 1722009022,
+["delay"] = 0,
+["last_dps"] = 431.1019030026185,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 10.001966,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 10.001966,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C18B",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+["Twinkelton"] = 10,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.001966,
+["fight_component"] = true,
+["end_time"] = 1722009024,
+["aID"] = "66282",
+["nome"] = "Garrosh'ar Grunt",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 10,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009022,
+["damage_taken"] = 376.001966,
+["start_time"] = 1722009022,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2600,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.00486,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.00486,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66280-000023C17F",
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "66280",
+["fight_component"] = true,
+["end_time"] = 1722009024,
+["totalabsorbed"] = 0.00486,
+["nome"] = "Garrosh'ar Peon",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 184.00486,
+["start_time"] = 1722009024,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 7,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Twinkelton"] = 113,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["classe"] = "PRIEST",
+["totalover"] = 113.006381,
+["total_without_pet"] = 10.006381,
+["total"] = 10.006381,
+["spec"] = 257,
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["serial"] = "Player-1597-0F92592E",
+["totalabsorb"] = 0.006381,
+["last_hps"] = 0,
+["targets"] = {
+["Twinkelton"] = 10,
+},
+["last_event"] = 1722009022,
+["totalover_without_pet"] = 0.006381,
+["healing_taken"] = 10.006381,
+["fight_component"] = true,
+["end_time"] = 1722009024,
+["healing_from"] = {
+["Twinkelton"] = true,
+},
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[281265] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 113,
+},
+["n_max"] = 10,
+["targets"] = {
+["Twinkelton"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["counter"] = 1,
+["overheal"] = 113,
+["total"] = 10,
+["spellschool"] = 2,
+["id"] = 281265,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1722009022,
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.006381,
+["delay"] = 0,
+["targets_absorbs"] = {
+},
+},
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 7,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[8122] = {
+["activedamt"] = -1,
+["id"] = 8122,
+["targets"] = {
+},
+["actived_at"] = 1722009022,
+["uptime"] = 0,
+["appliedamt"] = 0,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 12,
+["classe"] = "PRIEST",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[21562] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 21562,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 77489,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["debuff_uptime"] = 0,
+["buff_uptime_targets"] = {
+},
+["spec"] = 257,
+["grupo"] = true,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["tipo"] = 4,
+["last_event"] = 1722009024,
+["nome"] = "Twinkelton",
+["serial"] = "Player-1597-0F92592E",
+["debuff_uptime_targets"] = {
+},
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 7,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98867.566,
+["tempo_start"] = 1722009022,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Grunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Garrosh'ar Peon"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+570,
+10,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Twinkelton"] = {
+["Holy Nova"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:50:24",
+["hasTimer"] = 1.005999999993946,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Grunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98867.16,
+["CombatEndedAt"] = 98867.16,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["spellId"] = 77489,
+["appliedAt"] = 98865.961,
+["data"] = {
+{
+98865.961,
+98867.16,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:50:23",
+["end_time"] = 98867.16,
+["mapId"] = 870,
+["combat_id"] = 7,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["is_challenge"] = false,
+["frags"] = {
+["Garrosh'ar Grunt"] = 1,
+["Garrosh'ar Peon"] = 1,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 10.006381,
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 560.001372,
+},
+},
+},
+["combat_counter"] = 10,
+["totals_grupo"] = {
+560,
+10,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+{
+98865.961,
+132157,
+},
+},
+},
+["start_time"] = 98865.861,
+["contra"] = "Garrosh'ar Grunt",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 6,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007397,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 184.007397,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 184.007397,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+},
+["targets"] = {
+["Garrosh'ar Grunt"] = 184,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722009010,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Grunt"] = 184,
+},
+["n_total"] = 184,
+["n_min"] = 184,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 184,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 184,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722009010,
+["damage_taken"] = 0.007397,
+["start_time"] = 1722009010,
+["delay"] = 0,
+["last_dps"] = 373.240156184938,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.001454,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.001454,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C2EE",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.001454,
+["fight_component"] = true,
+["end_time"] = 1722009010,
+["aID"] = "66282",
+["nome"] = "Garrosh'ar Grunt",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 184.001454,
+["start_time"] = 1722009010,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 6,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 6,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 6,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 0,
+["id"] = 77489,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 0,
+["nome"] = "Twinkelton",
+["spec"] = 257,
+["grupo"] = true,
+["buff_uptime_targets"] = {
+},
+["last_event"] = 1722009010,
+["classe"] = "PRIEST",
+["serial"] = "Player-1597-0F92592E",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 6,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98863.486,
+["tempo_start"] = 1722009010,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Grunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+184,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:50:11",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Grunt",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 98853.746,
+["CombatEndedAt"] = 98853.746,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["data_inicio"] = "17:50:10",
+["end_time"] = 98853.746,
+["mapId"] = 870,
+["combat_id"] = 6,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+},
+},
+["is_challenge"] = false,
+["frags"] = {
+["Garrosh'ar Grunt"] = 1,
+},
+["combat_counter"] = 9,
+["totals_grupo"] = {
+184,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 184.007397,
+},
+},
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["start_time"] = 98853.253,
+["contra"] = "Garrosh'ar Grunt",
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 5,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005279,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 185.005279,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 185.005279,
+["spec"] = 257,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+["Garrosh'ar Gear-Greaser"] = true,
+},
+["targets"] = {
+["Garrosh'ar Gear-Greaser"] = 185,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722008996,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Gear-Greaser"] = 185,
+},
+["n_total"] = 185,
+["n_min"] = 185,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 185,
+["c_max"] = 0,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 185,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722008995,
+["damage_taken"] = 8.005279,
+["start_time"] = 1722008995,
+["delay"] = 0,
+["last_dps"] = 137.1425344697766,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 8.002099,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 8.002099,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66290-000023C367",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+["Twinkelton"] = 8,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.002099,
+["fight_component"] = true,
+["end_time"] = 1722008996,
+["aID"] = "66290",
+["nome"] = "Garrosh'ar Gear-Greaser",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 8,
+},
+["n_total"] = 8,
+["n_min"] = 8,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 8,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 8,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1722008995,
+["damage_taken"] = 185.002099,
+["start_time"] = 1722008995,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 5,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Twinkelton"] = 238,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["classe"] = "PRIEST",
+["totalover"] = 238.008782,
+["total_without_pet"] = 8.008782,
+["total"] = 8.008782,
+["spec"] = 257,
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["serial"] = "Player-1597-0F92592E",
+["totalabsorb"] = 0.008782,
+["last_hps"] = 0,
+["targets"] = {
+["Twinkelton"] = 8,
+},
+["last_event"] = 1722008995,
+["totalover_without_pet"] = 0.008782,
+["healing_taken"] = 8.008782,
+["fight_component"] = true,
+["end_time"] = 1722008996,
+["healing_from"] = {
+["Twinkelton"] = true,
+},
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[281265] = {
+["c_amt"] = 1,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 238,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 8,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 1,
+["overheal"] = 238,
+["total"] = 8,
+["spellschool"] = 2,
+["id"] = 281265,
+["targets_absorbs"] = {
+},
+["c_min"] = 8,
+["c_max"] = 8,
+["c_total"] = 8,
+["totaldenied"] = 0,
+["n_amt"] = 0,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1722008995,
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.008782,
+["delay"] = 0,
+["targets_absorbs"] = {
+},
+},
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 5,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 5,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["buff_uptime"] = 5,
+["classe"] = "PRIEST",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443457] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 443457,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[440393] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 440393,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[459337] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 459337,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[424143] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 424143,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[77489] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 1,
+["id"] = 77489,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["nome"] = "Twinkelton",
+["pets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["spec"] = 257,
+["grupo"] = true,
+["tipo"] = 4,
+["aID"] = "1597-0F92592E",
+["serial"] = "Player-1597-0F92592E",
+["last_event"] = 1722008996,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 5,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["CombatStartedAt"] = 98852.464,
+["tempo_start"] = 1722008995,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Gear-Greaser"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+193,
+8,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Twinkelton"] = {
+["Holy Nova"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:49:57",
+["hasTimer"] = 1.003000000011525,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Garrosh'ar Gear-Greaser",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 0.9740000000019791,
+["CombatEndedAt"] = 98850.917,
+["aura_timeline"] = {
+["Player-1597-0F92592E"] = {
+[77489] = {
+["enabled"] = false,
+["spellId"] = 77489,
+["appliedAt"] = 98838.49,
+["data"] = {
+{
+98838.49,
+98839.564,
+},
+},
+["amountUp"] = 0,
+},
+},
+},
+["data_inicio"] = "17:49:55",
+["end_time"] = 98839.564,
+["mapId"] = 870,
+["combat_id"] = 5,
+["overall_added"] = true,
+["TimeData"] = {
+},
+["raid_roster"] = {
+["Twinkelton"] = "Player-1597-0F92592E",
+},
+["is_challenge"] = false,
+["frags"] = {
+["Garrosh'ar Gear-Greaser"] = 1,
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Twinkelton"] = 8.008782,
+},
+},
+["damage"] = {
+{
+["Twinkelton"] = 185.005279,
+},
+},
+},
+["combat_counter"] = 8,
+["totals_grupo"] = {
+185,
+8,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["spells_cast_timeline"] = {
+["Player-1597-0F92592E"] = {
+{
+98838.49,
+132157,
+},
+},
+},
+["start_time"] = 98838.215,
+["contra"] = "Garrosh'ar Gear-Greaser",
+["playerTalents"] = {
+},
+},
+},
+},
+["ocd_tracker"] = {
+["show_title"] = true,
+["current_cooldowns"] = {
+},
+["lines_per_column"] = 12,
+["group_frames"] = true,
+["show_options"] = false,
+["frames"] = {
+["defensive-raid"] = {
+},
+["main"] = {
+},
+["ofensive"] = {
+},
+["defensive-target"] = {
+},
+["utility"] = {
+},
+["defensive-personal"] = {
+},
+},
+["width"] = 120,
+["ignored_cooldowns"] = {
+},
+["framme_locked"] = false,
+["cooldowns"] = {
+},
+["own_frame"] = {
+["defensive-raid"] = false,
+["ofensive"] = false,
+["defensive-target"] = false,
+["utility"] = false,
+["defensive-personal"] = false,
+},
+["height"] = 18,
+["show_conditions"] = {
+["only_inside_instance"] = true,
+["only_in_group"] = true,
+},
+["enabled"] = false,
+["filters"] = {
+["itemutil"] = false,
+["itempower"] = false,
+["defensive-target"] = false,
+["itemheal"] = false,
+["defensive-personal"] = false,
+["defensive-raid"] = false,
+["ofensive"] = true,
+["crowdcontrol"] = false,
+["utility"] = false,
+},
+},
+["last_version"] = "11.0.0 12819",
+["player_stats"] = {
+},
+["force_font_outline"] = "",
+["tabela_instancias"] = {
+},
+["coach"] = {
+["enabled"] = false,
+["welcome_panel_pos"] = {
+},
+["last_coach_name"] = false,
+},
+["local_instances_config"] = {
+{
+["modo"] = 2,
+["sub_attribute"] = 1,
+["sub_atributo_last"] = {
+1,
+1,
+1,
+1,
+1,
+},
+["is_open"] = true,
+["isLocked"] = false,
+["snap"] = {
+},
+["segment"] = 0,
+["mode"] = 2,
+["attribute"] = 1,
+["pos"] = {
+["normal"] = {
+["y"] = -444,
+["x"] = 503.000244140625,
+["w"] = 309.9999389648438,
+["h"] = 157.9999847412109,
+},
+["solo"] = {
+["y"] = 2,
+["x"] = 1,
+["w"] = 300,
+["h"] = 200,
+},
+},
+},
+},
+["cached_talents"] = {
+},
+["last_instance_id"] = 0,
+["data_harvest_for_charsts"] = {
+["players"] = {
+{
+["playerKey"] = "total",
+["combatObjectContainer"] = 1,
+["name"] = "Damage of Each Individual Player",
+["playerOnly"] = true,
+},
+},
+["totals"] = {
+{
+["combatObjectSubTableKey"] = 1,
+["name"] = "Damage of All Player Combined",
+["combatObjectSubTableName"] = "totals",
+},
+},
+},
+["announce_interrupts"] = {
+["enabled"] = false,
+["whisper"] = "",
+["channel"] = "SAY",
+["custom"] = "",
+["next"] = "",
+},
+["announce_prepots"] = {
+["enabled"] = false,
+["channel"] = "SELF",
+["reverse"] = false,
+},
+["active_profile"] = "Twinkelton-Sylvanas",
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
+},
+["benchmark_db"] = {
+["frame"] = {
+},
+},
+["combat_log"] = {
+["inverse_deathlog_overalldata"] = false,
+["merge_gemstones_1007"] = false,
+["track_hunter_frenzy"] = false,
+["merge_critical_heals"] = false,
+["inverse_deathlog_raid"] = false,
+["calc_evoker_damage"] = true,
+["evoker_show_realtimedps"] = false,
+["inverse_deathlog_mplus"] = false,
+},
+["combat_counter"] = 22,
+["mythic_plus_log"] = {
+},
+["data_harvested_for_charts"] = {
+},
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
+},
+["on_death_menu"] = false,
+["nick_tag_cache"] = {
+["nextreset"] = 1723304330,
+["last_version"] = 16,
+},
+["SoloTablesSaved"] = {
+["Mode"] = 1,
+},
+["last_realversion"] = 158,
+["last_instance_time"] = 0,
+["combat_id"] = 19,
+["savedStyles"] = {
+},
+["last_day"] = "26",
+["character_data"] = {
+["logons"] = 2,
+},
+["announce_deaths"] = {
+["enabled"] = false,
+["last_hits"] = 1,
+["only_first"] = 5,
+["where"] = 1,
+},
+["tabela_overall"] = {
+{
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 46.037487,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 46.037487,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C284",
+["on_hold"] = false,
+["damage_from"] = {
+["Skyfire Marine"] = true,
+["Twinkelton"] = true,
+},
+["targets"] = {
+["Twinkelton"] = 39,
+["Skyfire Marine"] = 7,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.037487,
+["fight_component"] = true,
+["end_time"] = 1722008799,
+["aID"] = "66282",
+["nome"] = "Garrosh'ar Grunt",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 27,
+["Skyfire Marine"] = 0,
+},
+["n_total"] = 27,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 27,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 10,
+["r_amt"] = 0,
+},
+[15496] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 8,
+["Skyfire Marine"] = 7,
+},
+["n_total"] = 15,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 15,
+["c_max"] = 0,
+["id"] = 15496,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 2,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 8,
+["r_amt"] = 0,
+},
+[130437] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 4,
+},
+["n_total"] = 4,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 4,
+["c_max"] = 0,
+["id"] = 130437,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 1,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 4,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 2506.037487,
+["start_time"] = 1722008789,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 8228.08338,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 8228.08338,
+["spec"] = 258,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-1597-0F92592E",
+["damage_from"] = {
+["Garrosh'ar Gear-Greaser"] = true,
+["Sha Haunt"] = true,
+["Garrosh'ar Grunt"] = true,
+},
+["targets"] = {
+["Garrosh'ar Peon"] = 184,
+["Garrosh'ar Grunt"] = 2462,
+["Garrosh'ar Gear-Greaser"] = 1136,
+["Sha Haunt"] = 2577,
+["Sha Harbinger"] = 1684,
+["Emerald Turtle"] = 185,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722008799,
+["totalabsorbed"] = 0.08338,
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[132157] = {
+["c_amt"] = 3,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Peon"] = 184,
+["Garrosh'ar Grunt"] = 1683,
+["Garrosh'ar Gear-Greaser"] = 545,
+["Sha Haunt"] = 2577,
+["Sha Harbinger"] = 1106,
+["Emerald Turtle"] = 185,
+},
+["n_total"] = 5158,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 31,
+["total"] = 6280,
+["c_max"] = 377,
+["id"] = 132157,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 1122,
+["n_amt"] = 28,
+["n_max"] = 189,
+["r_amt"] = 0,
+},
+[589] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Grunt"] = 202,
+},
+["n_total"] = 202,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 202,
+["c_max"] = 0,
+["id"] = 589,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 80,
+["r_amt"] = 0,
+},
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Garrosh'ar Gear-Greaser"] = 591,
+["Sha Harbinger"] = 578,
+["Garrosh'ar Grunt"] = 577,
+},
+["n_total"] = 1746,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 1746,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 591,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 49.08338,
+["start_time"] = 1722008773,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 8.028538,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 8.028538,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66290-000023C2FC",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+["Twinkelton"] = 8,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.028538,
+["fight_component"] = true,
+["end_time"] = 1722008914,
+["aID"] = "66290",
+["nome"] = "Garrosh'ar Gear-Greaser",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 8,
+},
+["n_total"] = 8,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 8,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 8,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 1136.028538,
+["start_time"] = 1722008910,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2600,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.007764,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.007764,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66280-000023C17F",
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "66280",
+["fight_component"] = true,
+["end_time"] = 1722009024,
+["totalabsorbed"] = 0.007764,
+["nome"] = "Garrosh'ar Peon",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 184.007764,
+["start_time"] = 1722009021,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2600,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.01053,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.01053,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-62994-0000A3BBBF",
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "62994",
+["fight_component"] = true,
+["end_time"] = 1722009026,
+["totalabsorbed"] = 0.01053,
+["nome"] = "Emerald Turtle",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 185.01053,
+["start_time"] = 1722009023,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.032208,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 2.032208,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66423-000023C346",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+["Twinkelton"] = 2,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.032208,
+["fight_component"] = true,
+["end_time"] = 1722009128,
+["aID"] = "66423",
+["nome"] = "Sha Haunt",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Twinkelton"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 2,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 2,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 2577.032208,
+["start_time"] = 1722009125,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.028866,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 0.028866,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66424-0000A3C353",
+["on_hold"] = false,
+["damage_from"] = {
+["Twinkelton"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.028866,
+["fight_component"] = true,
+["end_time"] = 1722009128,
+["aID"] = "66424",
+["nome"] = "Sha Harbinger",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 1684.028866,
+["start_time"] = 1722009125,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Twinkelton"] = 1129,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["classe"] = "PRIEST",
+["totalover"] = 1129.061793,
+["total_without_pet"] = 21.061793,
+["total"] = 21.061793,
+["spec"] = 257,
+["heal_enemy"] = {
+},
+["on_hold"] = false,
+["serial"] = "Player-1597-0F92592E",
+["totalabsorb"] = 0.06179299999999999,
+["last_hps"] = 0,
+["targets"] = {
+["Twinkelton"] = 21,
+},
+["last_event"] = 0,
+["totalover_without_pet"] = 0.06179299999999999,
+["healing_taken"] = 21.061793,
+["fight_component"] = true,
+["end_time"] = 1722008997,
+["healing_from"] = {
+["Twinkelton"] = true,
+},
+["aID"] = "1597-0F92592E",
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+[281265] = {
+["c_amt"] = 2,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 1082,
+},
+["n_max"] = 10,
+["targets"] = {
+["Twinkelton"] = 21,
+},
+["n_total"] = 13,
+["n_min"] = 0,
+["counter"] = 7,
+["overheal"] = 1082,
+["total"] = 21,
+["spellschool"] = 2,
+["id"] = 281265,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 8,
+["c_total"] = 8,
+["totaldenied"] = 0,
+["n_amt"] = 5,
+["absorbed"] = 0,
+},
+[77489] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Twinkelton"] = 47,
+},
+["n_max"] = 0,
+["targets"] = {
+["Twinkelton"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 6,
+["overheal"] = 47,
+["total"] = 0,
+["spellschool"] = 2,
+["id"] = 77489,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 6,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1722008986,
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.06179299999999999,
+["delay"] = 0,
+["targets_absorbs"] = {
+},
+},
+},
+},
+{
+["tipo"] = 7,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["resource"] = 14.009339,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["passiveover"] = 0.004975,
+["resource_type"] = 13,
+["spec"] = 258,
+["serial"] = "Player-1597-0F92592E",
+["received"] = 0.007157,
+["targets"] = {
+},
+["powertype"] = 0,
+["alternatepower"] = 0.007157,
+["nome"] = "Twinkelton",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 7,
+},
+["grupo"] = true,
+["totalover"] = 0.004975,
+["classe"] = "PRIEST",
+["last_event"] = 0,
+["total"] = 0.007157,
+["tipo"] = 3,
+},
+},
+},
+{
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[8122] = {
+["refreshamt"] = 0,
+["appliedamt"] = 0,
+["activedamt"] = -1,
+["uptime"] = 0,
+["id"] = 8122,
+["actived_at"] = 1722009022,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[589] = {
+["refreshamt"] = 0,
+["activedamt"] = 0,
+["appliedamt"] = 1,
+["id"] = 589,
+["uptime"] = 4,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[34914] = {
+["refreshamt"] = 0,
+["activedamt"] = 0,
+["appliedamt"] = 1,
+["id"] = 34914,
+["uptime"] = 1,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime"] = 96,
+["classe"] = "PRIEST",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[443483] = {
+["refreshamt"] = 0,
+["activedamt"] = 7,
+["appliedamt"] = 7,
+["id"] = 443483,
+["uptime"] = 9,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[443457] = {
+["refreshamt"] = 0,
+["activedamt"] = 15,
+["appliedamt"] = 15,
+["id"] = 443457,
+["uptime"] = 16,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[440393] = {
+["refreshamt"] = 0,
+["activedamt"] = 13,
+["appliedamt"] = 13,
+["id"] = 440393,
+["uptime"] = 17,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[459337] = {
+["refreshamt"] = 0,
+["activedamt"] = 13,
+["appliedamt"] = 13,
+["id"] = 459337,
+["uptime"] = 17,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[424143] = {
+["refreshamt"] = 0,
+["activedamt"] = 13,
+["appliedamt"] = 13,
+["id"] = 424143,
+["uptime"] = 17,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[77489] = {
+["refreshamt"] = 5,
+["activedamt"] = 23,
+["appliedamt"] = 23,
+["id"] = 77489,
+["uptime"] = 16,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[21562] = {
+["refreshamt"] = 0,
+["activedamt"] = 3,
+["appliedamt"] = 3,
+["id"] = 21562,
+["uptime"] = 4,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["debuff_uptime"] = 5,
+["debuff_uptime_targets"] = {
+},
+["spec"] = 258,
+["grupo"] = true,
+["pets"] = {
+},
+["aID"] = "1597-0F92592E",
+["tipo"] = 4,
+["nome"] = "Twinkelton",
+["buff_uptime_targets"] = {
+},
+["serial"] = "Player-1597-0F92592E",
+["last_event"] = 0,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["monster"] = true,
+["nome"] = "Garrosh'ar Grunt",
+["fight_component"] = true,
+["tipo"] = 4,
+["last_event"] = 0,
+["serial"] = "Creature-0-3891-870-5577-66282-000023C284",
+["aID"] = "66282",
+},
+},
+},
+{
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["tempo_start"] = 1722008793,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+["Garrosh'ar Peon"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Garrosh'ar Grunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Garrosh'ar Gear-Greaser"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Sha Haunt"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Sha Harbinger"] = {
+["total"] = 0,
+["last"] = 0,
+},
+["Twinkelton"] = {
+["total"] = 0,
+["last"] = 0,
+},
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 3,
+["playerTalents"] = {
+},
+["totals"] = {
+8328.198327,
+21.055476,
+{
+0,
+[0] = 0.002182,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+8228.078864000001,
+21.055476,
+{
+0,
+[0] = 0.002182,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = false,
+["overall_refreshed"] = true,
+["amountCasts"] = {
+["Twinkelton"] = {
+["Shadow Word: Pain"] = 1,
+["Vampiric Touch"] = 1,
+["Holy Nova"] = 7,
+},
+["Garrosh'ar Grunt"] = {
+["Cleave"] = 2,
+["Thunderclap"] = 1,
+},
+},
+["zoneName"] = "Pandaria",
+["data_fim"] = "17:53:19",
+["cleu_timeline"] = {
+},
+["trinketProcs"] = {
+},
+["aura_timeline"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+},
+["damage"] = {
+},
+},
+["end_time"] = 99041.755,
+["mapId"] = 870,
+["raid_roster"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["is_challenge"] = false,
+["frags"] = {
+},
+["player_last_events"] = {
+},
+["overall_enemy_name"] = "-- x -- x --",
+["data_inicio"] = "17:46:33",
+["segments_added"] = {
+{
+["elapsed"] = 1.517000000007101,
+["type"] = 0,
+["name"] = "Sha Haunt",
+["clock"] = "17:53:17",
+},
+{
+["elapsed"] = 1.485000000000582,
+["type"] = 0,
+["name"] = "Sha Harbinger",
+["clock"] = "17:53:10",
+},
+{
+["elapsed"] = 0.2210000000050059,
+["type"] = 0,
+["name"] = "Sha Haunt",
+["clock"] = "17:53:01",
+},
+{
+["elapsed"] = 2.042000000001281,
+["type"] = 0,
+["name"] = "Sha Haunt",
+["clock"] = "17:52:53",
+},
+{
+["elapsed"] = 0.8479999999981374,
+["type"] = 0,
+["name"] = "Sha Haunt",
+["clock"] = "17:52:44",
+},
+{
+["elapsed"] = 0.3999999999941792,
+["type"] = 0,
+["name"] = "Sha Harbinger",
+["clock"] = "17:52:36",
+},
+{
+["elapsed"] = 3.51600000000326,
+["type"] = 0,
+["name"] = "Sha Haunt",
+["clock"] = "17:52:05",
+},
+{
+["elapsed"] = 1.202999999994063,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:51:15",
+},
+{
+["elapsed"] = 1.01600000000326,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:51:05",
+},
+{
+["elapsed"] = 0.3350000000064028,
+["type"] = 0,
+["name"] = "Garrosh'ar Gear-Greaser",
+["clock"] = "17:50:33",
+},
+{
+["elapsed"] = 2.690000000002328,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:50:29",
+},
+{
+["elapsed"] = 0.4729999999981374,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:50:25",
+},
+{
+["elapsed"] = 1.298999999999069,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:50:23",
+},
+{
+["elapsed"] = 0.4930000000022119,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:50:10",
+},
+{
+["elapsed"] = 1.349000000001979,
+["type"] = 0,
+["name"] = "Garrosh'ar Gear-Greaser",
+["clock"] = "17:49:55",
+},
+{
+["elapsed"] = 1.254000000000815,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:49:19",
+},
+{
+["elapsed"] = 0.4370000000053551,
+["type"] = 0,
+["name"] = "Garrosh'ar Gear-Greaser",
+["clock"] = "17:48:34",
+},
+{
+["elapsed"] = 1.254000000000815,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:48:28",
+},
+{
+["elapsed"] = 5.787000000011176,
+["type"] = 0,
+["name"] = "Garrosh'ar Grunt",
+["clock"] = "17:46:33",
+},
+},
+["start_time"] = 99014.13599999997,
+["TimeData"] = {
+["Raid Damage Done"] = {
+},
+},
+["spells_cast_timeline"] = {
+},
+},
+["plugin_database"] = {
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+["enabled"] = true,
+["encounter_timers_bw"] = {
+},
+["max_emote_segments"] = 3,
+["last_section_selected"] = "main",
+["author"] = "Terciob",
+["window_scale"] = 1,
+["encounter_timers_dbm"] = {
+},
+["show_icon"] = 5,
+["opened"] = 0,
+["hide_on_combat"] = false,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["use_square_mode"] = false,
+["is_first_run"] = false,
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["author"] = "Terciob",
+["main_frame_size"] = {
+300,
+500.0000305175781,
+},
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = false,
+},
+["main_frame_locked"] = false,
+["arrow_anchor_x"] = 0,
+["font_size"] = 10,
+["row_texture"] = "Details Serenity",
+["square_grow_direction"] = "right",
+["arrow_anchor_y"] = 0,
+["use_spark"] = true,
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["row_color"] = {
+0.1,
+0.1,
+0.1,
+0.4,
+},
+["row_spacement"] = 21,
+["main_frame_color"] = {
+0,
+0,
+0,
+0.2,
+},
+["main_frame_strata"] = "LOW",
+["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = 0.00115966796875,
+["x"] = 3.0517578125e-05,
+["attribute_type"] = 1,
+["update_speed"] = 0.05,
+["size"] = 32,
+},
+["y"] = 0.0009307861328125,
+["x"] = 0,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["point"] = "CENTER",
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["row_height"] = 20,
+["scale"] = 1,
+},
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["animate"] = false,
+["hide_pull_bar"] = false,
+["author"] = "Terciob",
+["playercolor"] = {
+1,
+1,
+1,
+},
+["usefocus"] = false,
+["updatespeed"] = 1,
+["useclasscolors"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["playSound"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["disable_gouge"] = false,
+},
+["DETAILS_PLUGIN_TIME_LINE"] = {
+["enabled"] = true,
+["author"] = "Details! Team",
+},
+["DETAILS_PLUGIN_VANGUARD"] = {
+["tank_block_size_height"] = 50,
+["show_power_bar"] = false,
+["first_run"] = false,
+["aura_timer_text_size"] = 14,
+["tank_block_castbar_size_height"] = 16,
+["show_health_bar"] = true,
+["aura_offset_y"] = 0,
+["enabled"] = true,
+["show_cast_bar"] = false,
+["author"] = "Terciob",
+["tank_block_size"] = 150,
+["bar_height"] = 24,
+["tank_block_texture"] = "Details Serenity",
+["show_inc_bars"] = true,
+["tank_block_powerbar_size_height"] = 10,
+["tank_block_height"] = 40,
+["tank_block_color"] = {
+0.074509,
+0.035294,
+0.035294,
+0.832845,
+},
+},
+["DETAILS_PLUGIN_EXPLOSIVE_ORBS"] = {
+["enabled"] = true,
+["author"] = "Rhythm",
+["useShortText"] = false,
+["onlyShowHit"] = false,
+},
+["DETAILS_PLUGIN_CAST_LOG"] = {
+["enabled"] = true,
+["ignored_spells"] = {
+["HUNTER"] = {
+},
+["WARRIOR"] = {
+},
+["ROGUE"] = {
+},
+["MAGE"] = {
+},
+["PRIEST"] = {
+},
+["ALL"] = {
+[227518] = true,
+[272790] = true,
+[75] = true,
+[228597] = true,
+[324748] = true,
+[196711] = true,
+[201428] = true,
+[147193] = true,
+[341263] = true,
+},
+["EVOKER"] = {
+},
+["SHAMAN"] = {
+},
+["WARLOCK"] = {
+},
+["DEMONHUNTER"] = {
+},
+["PALADIN"] = {
+},
+["DRUID"] = {
+},
+["MONK"] = {
+},
+["DEATHKNIGHT"] = {
+},
+},
+["author"] = "Terciob",
+["only_players_attack_cooldowns"] = false,
+["merged_spells"] = {
+["HUNTER"] = {
+[308495] = 308491,
+[308498] = 308491,
+},
+["WARRIOR"] = {
+[85739] = 44949,
+[184367] = 201363,
+[126664] = 100,
+[147833] = 3411,
+[316531] = 3411,
+[227847] = 50622,
+[184709] = 201363,
+[190411] = 44949,
+[52174] = 6544,
+[317488] = 317485,
+[199667] = 44949,
+},
+["SHAMAN"] = {
+},
+["MAGE"] = {
+[7268] = 5143,
+},
+["PRIEST"] = {
+[33076] = 41635,
+},
+["ROGUE"] = {
+[199672] = 1943,
+[185313] = 185422,
+},
+["EVOKER"] = {
+},
+["WARLOCK"] = {
+[146739] = 172,
+},
+["DEMONHUNTER"] = {
+[222031] = 199547,
+[201453] = 191427,
+[232893] = 213241,
+[213243] = 213241,
+},
+["PALADIN"] = {
+},
+["DRUID"] = {
+},
+["MONK"] = {
+[148187] = 116847,
+[124503] = 124506,
+},
+["DEATHKNIGHT"] = {
+},
+},
+["only_cooldowns"] = false,
+["only_auras"] = false,
+["only_players_defensive_cooldowns"] = false,
+["user_blacklisted_spells"] = {
+},
+},
+["DETAILS_PLUGIN_RAIDCHECK"] = {
+["enabled"] = true,
+["food_tier1"] = true,
+["mythic_1_4"] = true,
+["food_tier2"] = true,
+["author"] = "Terciob",
+["use_report_panel"] = true,
+["pre_pot_healers"] = false,
+["pre_pot_tanks"] = false,
+["food_tier3"] = true,
+},
+},
+["ignore_nicktag"] = false,
+["announce_firsthit"] = {
+["enabled"] = true,
+["channel"] = "SELF",
+},
+["announce_cooldowns"] = {
+["ignored_cooldowns"] = {
+},
+["enabled"] = false,
+["custom"] = "",
+["channel"] = "RAID",
+},
+["rank_window"] = {
+["last_difficulty"] = 15,
+["last_raid"] = "",
+},
+["cached_roles"] = {
+},
+["cached_specs"] = {
+["Player-1597-0F92592E"] = 257,
+},
+}

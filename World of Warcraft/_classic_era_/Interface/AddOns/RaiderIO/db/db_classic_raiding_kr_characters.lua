@@ -1,0 +1,2 @@
+-- File removed during manifest build. If you need this file, download the full
+-- build from CurseForge, or use our Client and look at the _retail_ version.

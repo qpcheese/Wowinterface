@@ -1,0 +1,13 @@
+## Interface: 100207, 110000, 110002
+## Title: HandyNotes_DragonGlyphs
+## Notes: Dragon Glyphs on the Map
+## IconTexture: Interface/AddOns/HandyNotes_DragonGlyphs/icon.blp
+## Author: Keyboardturn
+## Version: 0.1.5
+## SavedVariables: HandyNotes_DragonGlyphsDB
+## RequiredDeps: HandyNotes
+## X-Curse-Project-ID: 667897
+## X-WoWI-ID: 26489
+## X-Wago-ID: vEGP9WN1
+
+DragonGlyphs.lua

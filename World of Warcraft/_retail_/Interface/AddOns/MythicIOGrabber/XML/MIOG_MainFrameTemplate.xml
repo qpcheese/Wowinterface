@@ -1,0 +1,856 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">    
+    <Font name="LibMono" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" outline="NORMAL" fixedSize="true">
+        <FontHeight val="11" />
+    </Font>
+
+    <Frame name="MIOG_MainFrameTemplate" inherits="BackdropTemplate" mixin="WeeklyRewardsMixin" movable="true" hidden="true" virtual="true" toplevel="true" enableMouse="true" parent="UIParent">
+        <Frames>
+            <Frame parentKey="TitleBar">
+                <Size y="23" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" />
+                    <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT" />
+                </Anchors>
+
+                <Frames>
+                    <Button parentKey="BlizzardFrame" inherits="UIButtonTemplate" mixin="LFDMicroButtonMixin">
+                        <KeyValues>
+                            <KeyValue key="commandName" value="TOGGLEGROUPFINDER" type="string"/>
+                            <KeyValue key="newbieText" value="NEWBIE_TOOLTIP_LFGPARENT" type="global"/>
+                        </KeyValues>
+
+                        <Size x="20" y="20"/>
+
+						<Anchors>
+							<Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" />
+						</Anchors>
+
+                        <NormalTexture atlas="Battlenet-ClientIcon-WoW" />
+                        
+						<Scripts>
+							<OnClick>
+                                --ConquestFrame.selectedButton = nil --entrypoint for Blizzard to fuck up
+
+                                LFGListUtil_OpenBestWindow(false)
+							</OnClick>
+
+                            <OnEnter>
+                                GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                                GameTooltip:SetText("Show the stock Blizzard frame")
+                                GameTooltip:Show()
+                            </OnEnter>
+
+                            <OnLeave>
+                                GameTooltip:Hide()
+                            </OnLeave>
+                            <OnLoad>
+                                self:RegisterForClicks("AnyUp");
+                                self:RegisterEvent("UPDATE_BINDINGS");
+                                self:RegisterEvent("NEUTRAL_FACTION_SELECT_RESULT");
+                                self:RegisterEvent("QUEST_LOG_UPDATE");
+
+                                SetDesaturation(LFDMicroButton:GetDisabledTexture(), true);
+                                self.tooltipText = MicroButtonTooltipText(DUNGEONS_BUTTON, "TOGGLEGROUPFINDER");
+
+                                self.disabledTooltip =	function()
+                                    local canUse, failureReason = C_LFGInfo.CanPlayerUseGroupFinder();
+                                    return canUse and FEATURE_UNAVAILBLE_PLAYER_IS_NEUTRAL or failureReason;
+                                end
+
+                                self.IsActive =	function()
+                                    local factionGroup = UnitFactionGroup("player");
+                                    local canUse, failureReason = C_LFGInfo.CanPlayerUseGroupFinder();
+                                    return canUse and factionGroup ~= "Neutral" and not Kiosk.IsEnabled();
+                                end
+                            </OnLoad>
+                            <OnShow function="MicroButton_KioskModeDisable" inherit="append"/>
+                            <OnEvent method="OnEvent"/>
+						</Scripts>
+					</Button>
+
+                    <Button parentKey="KnownIssuesPanel" inherits="IconButtonTemplate" hidden="true">
+                        <Size x="15" y="15"/>
+						<Anchors>
+							<Anchor point="LEFT" relativeKey="$parent.BlizzardFrame" relativePoint="RIGHT" />
+						</Anchors>
+
+                        <NormalTexture atlas="glueannouncementpopup-icon-info" />
+                        <HighlightTexture atlas="glueannouncementpopup-icon-info" />
+
+                        <Scripts>
+                            <OnEnter>
+                                GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                                GameTooltip:SetText(self.text)
+                                GameTooltip:Show()
+                            </OnEnter>
+                            <OnLeave>
+		                        GameTooltip:Hide()
+                            </OnLeave>
+                        </Scripts>
+                    </Button>
+
+                    <Button parentKey="CloseButton" inherits="UIPanelCloseButton">
+                        <Size x="20" y="20"/>
+						<Anchors>
+							<Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT" x="-2" />
+						</Anchors>
+						<Scripts>
+							<OnClick>
+                                self:GetParent():GetParent():Hide()
+							</OnClick>
+						</Scripts>
+					</Button>
+
+                    <Button parentKey="Expand">
+                        <Size x="12" y="12"/>
+                        <Anchors>
+                            <Anchor point="RIGHT" relativeKey="$parent.Settings" relativePoint="LEFT" x="-2" y="-3"/>
+                        </Anchors>
+                        <NormalTexture file="interface/buttons/arrow-down-up.blp" />
+                        <PushedTexture file="interface/buttons/arrow-down-down.blp" />
+                        <DisabledTexture file="interface/buttons/arrow-down-disabled.blp" />
+                    </Button>
+                </Frames>    
+
+                <Layers>
+                    <Layer level="OVERLAY">
+                        <FontString parentKey="TitleString" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL" text="Mythic IO Grabber">
+                            <FontHeight val="12"/>
+                            <Anchors>
+                                <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER"/>
+                            </Anchors>
+                        </FontString>
+                        
+                        <FontString parentKey="RaiderIOLoaded" font="LibMono" justifyH="RIGHT">
+                            <Anchors>
+                                <Anchor point="RIGHT" relativeKey="$parent.TitleString" relativePoint="LEFT" x="-3" />
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>            
+            </Frame>
+
+            <Frame parentKey="TabFramesPanel">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.TitleBar" relativePoint="BOTTOMLEFT" x="1" y="-5" />
+                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" x="-1" y="1" />
+                </Anchors>
+
+                <Frames>
+                    <Frame parentKey="MainTab" setAllPoints="true">
+                        <Frames>
+                            <Frame parentKey="QueueInformation">
+                                <Anchors>
+                                    <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT"  />
+                                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMLEFT" x="200"/>
+                                </Anchors>
+
+                                <Frames>
+                                    <Frame parentKey="RolePanel">
+                                        <Size y="30" />
+                                        <Anchors>
+                                            <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" />
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT" />
+                                        </Anchors>
+
+                                        <Frames>
+                                            <Frame parentKey="Leader">
+                                                <Size x="40" y="20" />
+
+                                                <Anchors>
+                                                    <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="5"/>
+                                                </Anchors>
+
+                                                <Frames>
+                                                    <CheckButton parentKey="Checkbox" inherits="MIOG_MinimalCheckButtonTemplate">
+                                                        <Size x="22" y="22" />
+                                                        <Anchors>
+                                                            <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" />
+                                                        </Anchors>
+                                                    </CheckButton>
+                                                </Frames>
+
+                                                <Layers>
+                                                    <Layer level="ARTWORK">
+                                                        <Texture parentKey="Icon" file="Interface/Addons/MythicIOGrabber/res/infoIcons/leaderIcon.png">
+                                                            <Size x="18" y="18" />
+                                                            <Anchors>
+                                                                <Anchor point="LEFT" relativeKey="$parent.Checkbox" relativePoint="RIGHT" />
+                                                            </Anchors>
+                                                        </Texture>
+                                                    </Layer>
+                                                </Layers>
+                                            </Frame>
+
+                                            <Frame parentKey="Tank">
+                                                <Size x="40" y="20" />
+
+                                                <Anchors>
+                                                    <Anchor point="LEFT" relativeKey="$parent.Leader" relativePoint="RIGHT" x="5"/>
+                                                </Anchors>
+
+                                                <Frames>
+                                                    <CheckButton parentKey="Checkbox" inherits="MIOG_MinimalCheckButtonTemplate">
+                                                        <Size x="22" y="22" />
+                                                        <Anchors>
+                                                            <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" />
+                                                        </Anchors>
+                                                    </CheckButton>
+                                                </Frames>
+
+                                                <Layers>
+                                                    <Layer level="ARTWORK">
+                                                        <Texture parentKey="Icon" file="Interface/Addons/MythicIOGrabber/res/infoIcons/tankIcon.png">
+                                                            <Size x="18" y="18" />
+                                                            <Anchors>
+                                                                <Anchor point="LEFT" relativeKey="$parent.Checkbox" relativePoint="RIGHT" />
+                                                            </Anchors>
+                                                        </Texture>
+                                                    </Layer>
+                                                </Layers>
+                                            </Frame>
+
+                                            <Frame parentKey="Healer">
+                                                <Size x="40" y="20" />
+
+                                                <Anchors>
+                                                    <Anchor point="LEFT" relativeKey="$parent.Tank" relativePoint="RIGHT" x="5"/>
+                                                </Anchors>
+
+                                                <Frames>
+                                                    <CheckButton parentKey="Checkbox" inherits="MIOG_MinimalCheckButtonTemplate">
+                                                        <Size x="22" y="22" />
+                                                        <Anchors>
+                                                            <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" />
+                                                        </Anchors>
+                                                    </CheckButton>
+                                                </Frames>
+
+                                                <Layers>
+                                                    <Layer level="ARTWORK">
+                                                        <Texture parentKey="Icon" file="Interface/Addons/MythicIOGrabber/res/infoIcons/healerIcon.png">
+                                                            <Size x="18" y="18" />
+                                                            <Anchors>
+                                                                <Anchor point="LEFT" relativeKey="$parent.Checkbox" relativePoint="RIGHT" />
+                                                            </Anchors>
+                                                        </Texture>
+                                                    </Layer>
+                                                </Layers>
+                                            </Frame>
+
+                                            <Frame parentKey="Damager">
+                                                <Size x="40" y="20" />
+
+                                                <Anchors>
+                                                    <Anchor point="LEFT" relativeKey="$parent.Healer" relativePoint="RIGHT" x="5"/>
+                                                </Anchors>
+
+                                                <Frames>
+                                                    <CheckButton parentKey="Checkbox" inherits="MIOG_MinimalCheckButtonTemplate">
+                                                        <Size x="22" y="22" />
+                                                        <Anchors>
+                                                            <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" />
+                                                        </Anchors>
+                                                    </CheckButton>
+                                                </Frames>
+
+                                                <Layers>
+                                                    <Layer level="ARTWORK">
+                                                        <Texture parentKey="Icon" file="Interface/Addons/MythicIOGrabber/res/infoIcons/damagerIcon.png">
+                                                            <Size x="18" y="18" />
+                                                            <Anchors>
+                                                                <Anchor point="LEFT" relativeKey="$parent.Checkbox" relativePoint="RIGHT" />
+                                                            </Anchors>
+                                                        </Texture>
+                                                    </Layer>
+                                                </Layers>
+                                            </Frame>
+
+                                        </Frames>
+                                    </Frame>
+
+                                    <Frame parentKey="DropDown" inherits="MIOG_DropDownMenu" mixin="SlickDropDown" frameLevel="5">
+                                        <Size y="25" />
+                                        <Anchors>
+                                            <Anchor point="TOPLEFT" relativeKey="$parent.RolePanel" relativePoint="BOTTOMLEFT"/>
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent.RolePanel" relativePoint="BOTTOMRIGHT"/>
+                                        </Anchors>
+                                    </Frame>
+                                    
+                                    <Frame parentKey="LastGroup" inherits="BackdropTemplate">
+                                        <Size y="50" />
+
+                                        <Anchors>
+                                            <Anchor point="BOTTOMLEFT" relativeKey="$parent" relativePoint="BOTTOMLEFT" x="2" y="2"/>
+                                            <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" x="-2" y="2"/>
+                                        </Anchors>
+
+                                        <Layers>
+                                            <Layer level="OVERLAY">
+                                                <FontString parentKey="Text" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL" text="" setAllPoints="true">
+                                                    <FontHeight val="12"/>
+                                                </FontString>
+                                            </Layer>
+                                        </Layers>
+                                    </Frame>
+
+                                    <Frame parentKey="Panel" inherits="BackdropTemplate" frameLevel="2">
+                                        <KeyValues>
+                                            <KeyValue key="backdropInfo" value="BACKDROP_TEXT_PANEL_0_16" type="global"/>
+                                        </KeyValues>
+
+                                        <Anchors>
+                                            <Anchor point="TOPLEFT" relativeKey="$parent.DropDown" relativePoint="BOTTOMLEFT"/>
+                                            <Anchor point="BOTTOMRIGHT" relativeKey="$parent.LastGroup" relativePoint="TOPRIGHT"/>
+                                        </Anchors>
+
+                                        <Frames>
+                                            <Frame parentKey="Title" inherits="BackdropTemplate">
+                                                <Size y="20" />
+                                                <Anchors>
+                                                    <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT"/>
+                                                    <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT"/>
+                                                </Anchors>
+
+                                                <Layers>
+                                                    <Layer level="OVERLAY">
+                                                        <FontString parentKey="FontString" font="LibMono" text="Active queues">
+                                                            <Anchors>
+                                                                <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER"/>
+                                                            </Anchors>
+                                                        </FontString>
+                                                    </Layer>
+                                                </Layers>
+                                            </Frame>
+                                        </Frames>
+
+                                        <Layers>
+                                            <Layer level="BACKGROUND">
+                                                <Texture parentKey="Background" horizTile="true" vertTile="true">
+                                                    <Anchors>
+                                                        <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" x="2" y="-1"/>
+                                                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" x="-2" y="3"/>
+                                                    </Anchors>
+                                                    <Color r="0" g="0" b="0" a="0.7" />
+                                                </Texture>
+                                            </Layer>
+                                            <Layer level="BORDER">
+                                                <Texture parentKey="Divider" atlas="UI-LFG-DividerLine">
+                                                    <Size y="4" />
+                                                    <Anchors>
+                                                        <Anchor point="TOPLEFT" relativeKey="$parent.Title" relativePoint="BOTTOMLEFT" />
+                                                        <Anchor point="TOPRIGHT" relativeKey="$parent.Title" relativePoint="BOTTOMRIGHT" />
+                                                    </Anchors>
+                                                </Texture>
+                                            </Layer>
+                                        </Layers>
+                                        
+                                        <Frames>
+                                            <ScrollFrame parentKey="ScrollFrame" inherits="BackdropTemplate, ScrollFrameTemplate">
+                                                <KeyValues>
+                                                    <KeyValue key="scrollBarHideIfUnscrollable" value="true" type="string" />
+                                                </KeyValues>
+
+                                                <Anchors>
+                                                    <Anchor point="TOPLEFT" relativeKey="$parent.Title" relativePoint="BOTTOMLEFT" x="4" y="-5"/>
+                                                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" x="-4" y="3"/>
+                                                </Anchors>
+
+                                                <ScrollChild>
+                                                    <Frame parentKey="Container" inherits="VerticalLayoutFrame, BackdropTemplate" setAllPoints="true">
+                                                        <KeyValues>
+                                                            <KeyValue key="align" value="top" />
+                                                            <KeyValue key="spacing" value="0" />
+                                                        </KeyValues>
+                                                    </Frame>
+                                                </ScrollChild>
+                                            </ScrollFrame>
+                                        </Frames>
+                                    </Frame>
+                                </Frames>
+                            </Frame>
+
+                            <Frame parentKey="CategoryPanel" inherits="BackdropTemplate">
+                                <Anchors>
+                                    <Anchor point="TOPLEFT" relativeKey="$parent.QueueInformation" relativePoint="TOPRIGHT"/>
+                                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent.QueueInformation" relativePoint="BOTTOMRIGHT" x="185" y="45"/>
+                                </Anchors>
+                            </Frame>
+
+                            <!--<Button parentKey="AdventureJournal" inherits="MIOG_MenuButtonTemplate">
+                                <Anchors>
+                                    <Anchor point="TOPLEFT" relativeKey="$parent.CategoryPanel" relativePoint="BOTTOMLEFT"/>
+                                    <Anchor point="TOPRIGHT" relativeKey="$parent.CategoryPanel" relativePoint="BOTTOMRIGHT"/>
+                                </Anchors>
+                            </Button>-->
+
+                            <Frame parentKey="Information" inherits="BackdropTemplate">
+                                <Anchors>
+                                    <Anchor point="TOPLEFT" relativeKey="$parent.CategoryPanel" relativePoint="TOPRIGHT"/>
+                                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT"/>
+                                </Anchors>                      
+                                <Layers>
+                                    <Layer level="OVERLAY">
+                                        <FontString parentKey="Affixes" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL" text="">
+                                            <FontHeight val="12"/>
+                                            <Anchors>
+                                                <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT"/>
+                                            </Anchors>
+                                            <Scripts>
+                                                <OnEnter>
+                                                    if(self.text) then
+                                                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                                                        GameTooltip:SetText(self.text)
+                                                        GameTooltip:Show()
+                                                    end
+                                                </OnEnter>
+                                                <OnLeave>
+                                                    GameTooltip:Hide()
+                                                </OnLeave>
+                                            </Scripts>
+                                        </FontString>
+                                    </Layer>
+                                </Layers>
+
+                                <Frames>
+                                    <Frame parentKey="Keystone" inherits="BackdropTemplate">
+                                        <Size x="200" y="20" />
+                                        <Anchors>
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent.Affixes" relativePoint="BOTTOMRIGHT"/>
+                                        </Anchors>
+
+                                        <Layers>
+                                            <Layer level="ARTWORK">
+                                                <Texture parentKey="Icon" atlas="Dungeon">
+                                                    <Size x="20" y="20" />
+                                                    <Anchors>
+                                                        <Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT"/>
+                                                    </Anchors>
+                                                </Texture>
+                                            </Layer>
+
+                                            <Layer level="OVERLAY">
+                                                <FontString parentKey="Text" setAllPoints="true" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" text="NO KEYSTONE" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL">
+                                                    <FontHeight val="12" />
+                                                    <Color r="1" g="0" b="0" a="1" />
+                                                    <Anchors>
+                                                        <Anchor point="RIGHT" relativeKey="$parent.Icon" relativePoint="LEFT" x="-5"/>
+                                                    </Anchors>
+                                                </FontString>
+                                            </Layer>
+                                        </Layers>
+                                    </Frame>
+
+                                    <Frame parentKey="Awakened" inherits="BackdropTemplate">
+                                        <Size x="200" y="20" />
+                                        <Anchors>
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent.Keystone" relativePoint="BOTTOMRIGHT"/>
+                                        </Anchors>
+
+                                        <Layers>
+                                            <Layer level="ARTWORK">
+                                                <Texture parentKey="Icon" atlas="Raid">
+                                                    <Size x="20" y="20" />
+                                                    <Anchors>
+                                                        <Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT"/>
+                                                    </Anchors>
+                                                </Texture>
+                                            </Layer>
+
+                                            <Layer level="OVERLAY">
+                                                <FontString parentKey="Text" setAllPoints="true" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" text="NO AWAKENED RAID" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL">
+                                                    <FontHeight val="12" />
+                                                    <Color r="1" g="0" b="0" a="1" />
+                                                    <Anchors>
+                                                        <Anchor point="RIGHT" relativeKey="$parent.Icon" relativePoint="LEFT" x="-5"/>
+                                                    </Anchors>
+                                                </FontString>
+                                            </Layer>
+                                        </Layers>
+                                    </Frame>
+
+                                    <StatusBar parentKey="MPlusStatus" inherits="BackdropTemplate" mixin="WeeklyRewardsActivityMixin">
+                                        <BarTexture atlas="ui-castingbar-filling-standard" />
+                                        <Size x="144" y="16" />
+                                        <Anchors>
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent.Awakened" relativePoint="BOTTOMRIGHT" />
+                                        </Anchors>
+
+                                        <Layers>
+                                            <Layer level="BACKGROUND">
+                                                <Texture parentKey="Background" file="Interface/Addons/MythicIOGrabber/res/backgrounds/horizontal/dungeonrewardsbackground.png" setAllPoints="true" />
+                                            </Layer>
+
+                                            <Layer level="OVERLAY">
+                                                <FontString parentKey="Text" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" text="0/8 Dungeons" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL">
+                                                    <FontHeight val="12" />
+                                                    <Color r="1" g="0" b="0" a="1" />
+                                                    <Anchors>
+                                                        <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER" y="-1"/>
+                                                    </Anchors>
+                                                </FontString>
+                                            </Layer>
+                                        </Layers>
+
+                                        <Scripts>
+                                            <OnMouseDown>
+                                                WeeklyRewards_ShowUI()
+                                            </OnMouseDown>
+                                            <OnLeave>
+                                                    GameTooltip:Hide()
+                                            </OnLeave>
+                                        </Scripts>
+                                    </StatusBar>
+
+                                    <StatusBar parentKey="RaidStatus" inherits="BackdropTemplate" mixin="WeeklyRewardsActivityMixin">
+                                        <BarTexture atlas="ui-castingbar-filling-standard" />
+                                        <Size x="144" y="16" />
+                                        <Anchors>
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent.MPlusStatus" relativePoint="BOTTOMRIGHT" y="-3"/>
+                                        </Anchors>
+
+                                        <Layers>
+                                            <Layer level="BACKGROUND">
+                                                <Texture parentKey="Background" file="Interface/Addons/MythicIOGrabber/res/backgrounds/horizontal/raidrewardsbackground.png" setAllPoints="true" />
+                                            </Layer>
+
+                                            <Layer level="OVERLAY">
+                                                <FontString parentKey="Text" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" text="0/7 Bosses" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL">        
+                                                    <FontHeight val="12" />
+                                                    <Color r="1" g="0" b="0" a="1" />
+                                                    <Anchors>
+                                                        <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER" y="-1"/>
+                                                    </Anchors>
+                                                </FontString>
+                                            </Layer>
+                                        </Layers>
+
+                                        <Scripts>
+                                            <OnMouseDown>
+                                                WeeklyRewards_ShowUI()
+                                            </OnMouseDown>
+                                            <OnLeave>
+                                                    GameTooltip:Hide()
+                                            </OnLeave>
+                                        </Scripts>
+                                    </StatusBar>
+
+                                    <StatusBar parentKey="HonorStatus" inherits="BackdropTemplate" mixin="WeeklyRewardsActivityMixin">
+                                        <BarTexture atlas="ui-castingbar-filling-standard" />
+                                        <Size x="144" y="16" />
+                                        <Anchors>
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent.RaidStatus" relativePoint="BOTTOMRIGHT" y="-3"/>
+                                        </Anchors>
+
+                                        <Layers>
+                                            <Layer level="BACKGROUND">
+                                                <Texture parentKey="Background" file="Interface/Addons/MythicIOGrabber/res/backgrounds/horizontal/pvprewardsbackground.png" setAllPoints="true" />
+                                            </Layer>
+
+                                            <Layer level="OVERLAY">
+                                                <FontString parentKey="Text" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" text="0/5000 Honor" justifyH="CENTER" justifyV="MIDDLE" outline="NORMAL">
+                                                    <FontHeight val="12" />
+                                                    <Color r="1" g="0" b="0" a="1" />
+                                                    <Anchors>
+                                                        <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER" y="-1"/>
+                                                    </Anchors>
+                                                </FontString>
+                                            </Layer>
+                                        </Layers>
+
+                                        <Scripts>
+                                            <OnMouseDown>
+                                                WeeklyRewards_ShowUI()
+
+                                            </OnMouseDown>
+                                            <OnLeave>
+                                                    GameTooltip:Hide()
+                                            </OnLeave>
+                                        </Scripts>
+                                    </StatusBar>
+
+                                    <Frame parentKey="Holiday" inherits="VerticalLayoutFrame">
+                                        <KeyValues>
+                                            <KeyValue key="spacing" value="5" />
+                                        </KeyValues>
+                                        <Size x="165" y="120" />
+
+                                        <Anchors>
+                                            <Anchor point="TOPRIGHT" relativeKey="$parent.HonorStatus" relativePoint="BOTTOMRIGHT" y="-3"/>
+                                        </Anchors>
+                                    </Frame>
+
+                                    <Frame parentKey="Currency">
+                                        <Size x="40" y="80" />
+                                        <Anchors>
+                                            <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" x="-3" y="3"/>
+                                        </Anchors>
+
+                                        <Frames>
+                                            <Frame parentKey="Aspect" inherits="MIOG_CurrencySingleTemplate">
+                                                <Size x="40" y="20" />
+                                                <Anchors>
+                                                    <Anchor point="TOP" relativeKey="$parent" relativePoint="TOP"/>
+                                                </Anchors>
+                                            </Frame>
+
+                                            <Frame parentKey="Wyrm" inherits="MIOG_CurrencySingleTemplate">
+                                                <Size x="40" y="20" />
+                                                <Anchors>
+                                                    <Anchor point="TOP" relativeKey="$parent.Aspect" relativePoint="BOTTOM"/>
+                                                </Anchors>
+                                            </Frame>
+
+                                            <Frame parentKey="Drake" inherits="MIOG_CurrencySingleTemplate">
+                                                <Size x="40" y="20" />
+                                                <Anchors>
+                                                    <Anchor point="TOP" relativeKey="$parent.Wyrm" relativePoint="BOTTOM"/>
+                                                </Anchors>
+                                            </Frame>
+
+                                            <Frame parentKey="Whelpling" inherits="MIOG_CurrencySingleTemplate">
+                                                <Size x="40" y="20" />
+                                                <Anchors>
+                                                    <Anchor point="TOP" relativeKey="$parent.Drake" relativePoint="BOTTOM"/>
+                                                </Anchors>
+                                            </Frame>
+                                        </Frames>
+                                    </Frame>
+                                </Frames>
+                            </Frame>
+                        </Frames>
+                    </Frame>
+
+                    <Frame parentKey="PartyCheck" inherits="MIOG_PartyCheck" hidden="true" setAllPoints="true">
+                    </Frame>
+
+                    <Frame parentKey="MPlusStatistics" inherits="MIOG_MPlusStatistics" hidden="true" setAllPoints="true">
+                    </Frame>
+
+                    <Frame parentKey="RaidStatistics" inherits="MIOG_RaidStatistics" hidden="true" setAllPoints="true">
+                    </Frame>
+
+                    <Frame parentKey="PVPStatistics" inherits="MIOG_PVPStatistics" hidden="true" setAllPoints="true">
+                    </Frame>
+
+                    <Frame parentKey="Teleports" inherits="MIOG_Teleports" hidden="true" setAllPoints="true">
+                    </Frame>
+
+                    <Frame parentKey="Gearing" inherits="MIOG_GearingChart" hidden="true" setAllPoints="true">
+                    </Frame>
+                </Frames>
+            </Frame>
+
+            <Button name="$parentTab1" inherits="PanelTabButtonTemplate" id="1" text="Main">
+               <Anchors>
+                   <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="BOTTOMLEFT" />
+               </Anchors>
+               <Scripts>
+                   <OnClick>
+		                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        local parent = self:GetParent()
+                        PanelTemplates_SetTab(parent, 1)
+
+                        parent.TabFramesPanel.MainTab:Show()
+                        
+                        parent.TabFramesPanel.PartyCheck:Hide()
+                        parent.TabFramesPanel.MPlusStatistics:Hide()
+                        parent.TabFramesPanel.RaidStatistics:Hide()
+                        parent.TabFramesPanel.PVPStatistics:Hide()
+                        parent.TabFramesPanel.Teleports:Hide()
+                        parent.TabFramesPanel.Gearing:Hide()
+                   </OnClick>
+               </Scripts>
+            </Button>
+
+            <Button name="$parentTab2" inherits="PanelTabButtonTemplate" id="2" text="PartyCheck">
+               <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentTab1" relativePoint="RIGHT" />
+               </Anchors>
+               <Scripts>
+                   <OnClick>
+		                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        local parent = self:GetParent()
+                        PanelTemplates_SetTab(parent, 2)
+
+                        parent.TabFramesPanel.PartyCheck:Show()
+                        
+                        parent.TabFramesPanel.MainTab:Hide()
+                        parent.TabFramesPanel.MPlusStatistics:Hide()
+                        parent.TabFramesPanel.RaidStatistics:Hide()
+                        parent.TabFramesPanel.PVPStatistics:Hide()
+                        parent.TabFramesPanel.Teleports:Hide()
+                        parent.TabFramesPanel.Gearing:Hide()
+                   </OnClick>
+               </Scripts>
+            </Button>
+
+            <Button name="$parentTab3" inherits="PanelTabButtonTemplate" id="3" text="Mythic+">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentTab2" relativePoint="RIGHT">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+		                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        local parent = self:GetParent()
+                        PanelTemplates_SetTab(parent, 3)
+
+                        parent.TabFramesPanel.MPlusStatistics:Show()
+                        
+                        parent.TabFramesPanel.MainTab:Hide()
+                        parent.TabFramesPanel.PartyCheck:Hide()
+                        parent.TabFramesPanel.RaidStatistics:Hide()
+                        parent.TabFramesPanel.PVPStatistics:Hide()
+                        parent.TabFramesPanel.Teleports:Hide()
+                        parent.TabFramesPanel.Gearing:Hide()
+
+                    </OnClick>
+                </Scripts>
+            </Button>
+            
+            <Button name="$parentTab4" inherits="PanelTabButtonTemplate" id="4" text="Raid">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentTab3" relativePoint="RIGHT">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+		                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        local parent = self:GetParent()
+                        PanelTemplates_SetTab(parent, 4)
+                        
+                        parent.TabFramesPanel.RaidStatistics:Show()
+
+                        parent.TabFramesPanel.MainTab:Hide()
+                        parent.TabFramesPanel.PartyCheck:Hide()
+                        parent.TabFramesPanel.MPlusStatistics:Hide()
+                        parent.TabFramesPanel.PVPStatistics:Hide()
+                        parent.TabFramesPanel.Teleports:Hide()
+                        parent.TabFramesPanel.Gearing:Hide()
+
+                    </OnClick>
+                </Scripts>
+            </Button>
+            
+            <Button name="$parentTab5" inherits="PanelTabButtonTemplate" id="5" text="PVP">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentTab4" relativePoint="RIGHT">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+		                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        local parent = self:GetParent()
+                        PanelTemplates_SetTab(parent, 5)
+
+                        parent.TabFramesPanel.PVPStatistics:Show()
+
+                        parent.TabFramesPanel.MainTab:Hide()
+                        parent.TabFramesPanel.PartyCheck:Hide()
+                        parent.TabFramesPanel.MPlusStatistics:Hide()
+                        parent.TabFramesPanel.RaidStatistics:Hide()
+                        parent.TabFramesPanel.Teleports:Hide()
+                        parent.TabFramesPanel.Gearing:Hide()
+
+                    </OnClick>
+                </Scripts>
+            </Button>
+
+            <Button name="$parentTab6" inherits="PanelTabButtonTemplate" id="6" text="Teleports">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentTab5" relativePoint="RIGHT" />
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+		                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        local parent = self:GetParent()
+                        PanelTemplates_SetTab(parent, 6)
+
+                        parent.TabFramesPanel.Teleports:Show()
+
+                        parent.TabFramesPanel.MainTab:Hide()
+                        parent.TabFramesPanel.PartyCheck:Hide()
+                        parent.TabFramesPanel.MPlusStatistics:Hide()
+                        parent.TabFramesPanel.RaidStatistics:Hide()
+                        parent.TabFramesPanel.PVPStatistics:Hide()
+                        parent.TabFramesPanel.Gearing:Hide()
+
+                    </OnClick>
+                </Scripts>
+            </Button>        
+
+            <Button name="$parentTab7" inherits="PanelTabButtonTemplate" id="7" text="Gearing Chart">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentTab6" relativePoint="RIGHT" />
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+		                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        local parent = self:GetParent()
+                        PanelTemplates_SetTab(parent, 7)
+
+                        parent.TabFramesPanel.Gearing:Show()
+
+                        parent.TabFramesPanel.MainTab:Hide()
+                        parent.TabFramesPanel.PartyCheck:Hide()
+                        parent.TabFramesPanel.MPlusStatistics:Hide()
+                        parent.TabFramesPanel.RaidStatistics:Hide()
+                        parent.TabFramesPanel.PVPStatistics:Hide()
+                        parent.TabFramesPanel.Teleports:Hide()
+
+                    </OnClick>
+                </Scripts>
+            </Button>    
+        </Frames>
+
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="Background" setAllPoints="true" />
+            </Layer>
+        </Layers>
+
+        <Scripts>
+            <OnDragStart>
+                self:StartMoving()
+            </OnDragStart>
+
+            <OnDragStop>
+                self:StopMovingOrSizing()
+            </OnDragStop>
+
+            <OnLoad>
+                self:RegisterForDrag("LeftButton")
+                PanelTemplates_SetNumTabs(self, 7)
+                PanelTemplates_SetTab(self, 1)
+                tinsert(UISpecialFrames, self:GetName());
+            </OnLoad>
+
+            <OnMouseDown>         
+                self.TabFramesPanel.MainTab.QueueInformation.DropDown.List:Hide()
+
+                if(self.TabFramesPanel.MainTab.QueueInformation.DropDown.currentList) then
+                    self.TabFramesPanel.MainTab.QueueInformation.DropDown.currentList:Hide()
+                end
+            </OnMouseDown>
+
+            <OnShow>
+                PlaySound(SOUNDKIT.IG_CHARACTER_INFO_OPEN);
+            </OnShow>
+
+            <OnHide>
+                PlaySound(SOUNDKIT.IG_CHARACTER_INFO_CLOSE);
+            </OnHide>
+        </Scripts>
+    </Frame>
+</Ui>

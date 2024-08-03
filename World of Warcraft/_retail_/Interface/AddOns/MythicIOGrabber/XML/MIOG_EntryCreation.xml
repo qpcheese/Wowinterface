@@ -1,0 +1,239 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+    <Frame name="MIOG_EntryCreation" inherits="BackdropTemplate" virtual="true">
+        <Anchors>
+            <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" />
+            <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" />
+        </Anchors>
+
+        <Frames>
+            <Frame parentKey="ActivityDropDown" inherits="MIOG_DropDownMenu" mixin="SlickDropDown">
+                <Size y="22" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" x="2" y="-4"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT" x="-4" y="-4"/>
+                </Anchors>
+            </Frame>
+            
+            <Frame parentKey="DifficultyDropDown" inherits="MIOG_DropDownMenu" mixin="SlickDropDown">
+                <Size y="22" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.ActivityDropDown" relativePoint="TOPLEFT" y="-25"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent.ActivityDropDown" relativePoint="TOPRIGHT" y="-25"/>
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="PlaystyleDropDown" inherits="MIOG_DropDownMenu" mixin="SlickDropDown">
+                <Size y="22" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.DifficultyDropDown" relativePoint="TOPLEFT" y="-25"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent.DifficultyDropDown" relativePoint="TOPRIGHT" y="-25"/>
+                </Anchors>
+            </Frame>
+
+            <EditBox parentKey="Name" autoFocus="false" hidden="true">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.PlaystyleDropDown" relativePoint="TOPLEFT" x="10" y="-45"/>
+                </Anchors>
+            </EditBox>
+
+            <EditBox parentKey="Description" inherits="LargeInputBoxTemplate" autoFocus="false" multiLine="true" hidden="true">
+                <Size x="350" y="25" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Name" relativePoint="BOTTOMLEFT" y="-20"/>
+                </Anchors>
+            </EditBox>
+
+            <EditBox parentKey="Rating" inherits="InputBoxTemplate" autoFocus="false" numeric="true" letters="4">
+                <Size x="100" y="25" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Description" relativePoint="BOTTOMLEFT" y="-20"/>
+                </Anchors>
+                <Scripts>
+                    <OnTextChanged>
+                        local categoryID = LFGListFrame.EntryCreation.selectedCategory
+                        local isAboveRating = nil
+
+                        if(categoryID == 2) then
+                            isAboveRating = LFGListUtil_ValidateMythicPlusRatingReq(nil, self:GetText())
+
+                        else
+                            isAboveRating = LFGListUtil_ValidatePvpRatingReq(self, self:GetText())
+
+                        end
+
+                        if(isAboveRating) then
+                            GameTooltip:SetOwner(self, "ANCHOR_TOP")
+                            GameTooltip:SetText(isAboveRating)
+                            GameTooltip:Show()
+
+                        else
+                            GameTooltip:Hide()
+
+                        end
+
+                    </OnTextChanged>
+                </Scripts>
+
+                <Frames>
+                    <Frame parentKey="DropDown" inherits="MIOG_DropDownMenu" mixin="SlickDropDown">
+                        <Anchors>
+                            <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT"/>
+                            <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT"/>
+                        </Anchors>
+                    </Frame>
+                </Frames>
+            </EditBox>
+
+            <EditBox parentKey="ItemLevel" inherits="InputBoxTemplate" autoFocus="false" numeric="true" letters="3">
+                <Size x="100" y="25" />
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Rating" relativePoint="RIGHT" x="10" />
+                </Anchors>
+                <Scripts>
+                    <OnTextChanged>
+                        local categoryID = LFGListFrame.EntryCreation.selectedCategory
+                        local isAboveIlvl = nil
+
+                        if(categoryID == 1 or categoryID == 2 or categoryID == 3 or categoryID == 6) then
+                            isAboveIlvl = LFGListUtil_ValidateLevelReq(nil, self:GetText())
+
+                        else
+                            isAboveIlvl = LFGListUtil_ValidatePvPLevelReq(self, self:GetText())
+
+                        end
+
+                        if(isAboveIlvl) then
+                            GameTooltip:SetOwner(self, "ANCHOR_TOP")
+                            GameTooltip:SetText(isAboveIlvl)
+                            GameTooltip:Show()
+
+                        else
+                            GameTooltip:Hide()
+
+                        end
+                    </OnTextChanged>
+                </Scripts>
+
+                <Frames>
+                    <Frame parentKey="DropDown" inherits="MIOG_DropDownMenu" mixin="SlickDropDown">
+                        <Anchors>
+                            <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT"/>
+                            <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT"/>
+                        </Anchors>
+                    </Frame>
+                </Frames>
+            </EditBox>
+
+            <EditBox parentKey="VoiceChat" inherits="InputBoxTemplate" autoFocus="false" hidden="true">
+                <Size x="100" y="25" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Rating" relativePoint="BOTTOMLEFT" y="-20"/>
+                </Anchors>
+            </EditBox>
+
+            <CheckButton parentKey="PrivateGroup" inherits="MIOG_MinimalCheckButtonTemplate">
+                <Size x="22" y="22" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.VoiceChat" relativePoint="BOTTOMLEFT" x="-6" y="-10"/>
+                </Anchors>
+            </CheckButton>
+
+            <CheckButton parentKey="CrossFaction" inherits="MIOG_MinimalCheckButtonTemplate">
+                <Size x="22" y="22" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.PrivateGroup" relativePoint="BOTTOMLEFT" y="-10"/>
+                </Anchors>
+            </CheckButton>
+        </Frames>
+
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="-2">
+                <Texture parentKey="Border">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" />
+                        <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT" />
+                        <Anchor point="BOTTOM" relativeKey="$parent.PlaystyleDropDown" relativePoint="BOTTOM" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+
+            <Layer level="BACKGROUND" textureSubLevel="-1">
+                <Texture parentKey="Background" horizTile="true" vertTile="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent.Border" relativePoint="TOPLEFT" x="1" y="-1" />
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent.Border" relativePoint="BOTTOMRIGHT" x="-1" y="1" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+
+            <Layer level="OVERLAY">
+                <FontString parentKey="NameString" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Title" wordwrap="false">
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.Name" relativePoint="TOPLEFT" />
+                    </Anchors>
+                </FontString>
+                
+                <FontString parentKey="DescriptionString" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Description" wordwrap="false">
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.Description" relativePoint="TOPLEFT" />
+                    </Anchors>
+                </FontString>
+                
+                <FontString parentKey="RatingString" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Rating" wordwrap="false">
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.Rating" relativePoint="TOPLEFT" x="-5" />
+                    </Anchors>
+                </FontString>
+                
+                <FontString parentKey="ItemLevelString" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Item level" wordwrap="false">
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.ItemLevel" relativePoint="TOPLEFT" x="-5" />
+                    </Anchors>
+                </FontString>
+                
+                <FontString parentKey="VoiceChatString" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Voice Chat" wordwrap="false">
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.VoiceChat" relativePoint="TOPLEFT" x="-5" />
+                    </Anchors>
+                </FontString>
+                
+                <FontString parentKey="PrivateGroupString" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Set group to private" wordwrap="false">
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.PrivateGroup" relativePoint="RIGHT" x="5" />
+                    </Anchors>
+                </FontString>
+                
+                <FontString parentKey="CrossFactionString" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Set group to your faction only" wordwrap="false">
+                    <FontHeight val="11"/>
+
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.CrossFaction" relativePoint="RIGHT" x="5" />
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+
+        <Scripts>
+            <OnMouseDown>         
+                self.ActivityDropDown.List:Hide()
+
+                if(self.ActivityDropDown.currentList) then
+                    self.ActivityDropDown.currentList:Hide()
+                end
+            </OnMouseDown>
+        </Scripts>
+    </Frame>
+</Ui>

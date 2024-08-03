@@ -1,0 +1,141 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <EditBox name="EchoRaidToolsConfig_EditboxTemplate" mixin="EchoRaidToolsConfig_EditboxTemplateMixin" virtual="true">
+        <Size x="90" y="28"/>
+        <Layers>
+			<Layer level="BORDER">
+                <Texture parentKey="Left" atlas="widgetstatusbar-borderleft" useAtlasSize="true" alpha="0.5">
+					<Anchors>
+						<Anchor point="LEFT" x="-10" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="Right" atlas="widgetstatusbar-borderright" useAtlasSize="true" alpha="0.5">
+					<Anchors>
+						<Anchor point="RIGHT" x="10" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="Middle" atlas="widgetstatusbar-bordercenter" useAtlasSize="true" alpha="0.5">
+					<Anchors>
+						<Anchor point="LEFT" relativeKey="$parent.Left" relativePoint="RIGHT"/>
+						<Anchor point="RIGHT" relativeKey="$parent.Right" relativePoint="LEFT"/>
+					</Anchors>
+				</Texture>
+            </Layer>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="BGLeft" atlas="widgetstatusbar-bgleft" useAtlasSize="true" alpha="0.3">
+					<Anchors>
+						<Anchor point="LEFT" x="-6" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="BGRight" atlas="widgetstatusbar-bgright" useAtlasSize="true" alpha="0.3">
+					<Anchors>
+						<Anchor point="RIGHT" x="6" y="0"/>
+					</Anchors>
+				</Texture>
+				<Texture parentKey="BGMiddle" atlas="widgetstatusbar-bgcenter" useAtlasSize="true" alpha="0.3">
+					<Anchors>
+						<Anchor point="LEFT" relativeKey="$parent.BGLeft" relativePoint="RIGHT"/>
+						<Anchor point="RIGHT" relativeKey="$parent.BGRight" relativePoint="LEFT"/>
+					</Anchors>
+				</Texture>
+            </Layer>
+		</Layers>
+		<FontString inherits="ChatFontNormal"/>
+        <Scripts>
+            <OnEnter method="OnEnter" inherit="append"/>
+            <OnLeave method="OnLeave" inherit="append"/>
+        </Scripts>
+    </EditBox>
+
+    <Frame name="EchoRaidToolsConfig_EditBox" virtual="true" mixin="EchoRaidToolsConfig_EditBoxMixin"> 
+        <Size>
+            <AbsDimension x="90" y="28"/>
+        </Size>
+        <Frames>
+            <EditBox parentKey="Editbox" multiLine="false" enableMouse="true" inherits="EchoRaidToolsConfig_EditboxTemplate" autoFocus="false" setAllPoints="true"> <!-- numeric="true" -->
+				<!--Size x="90" y="28"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="5" y="0"/>
+                </Anchors-->
+            </EditBox>
+        </Frames>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString parentKey="TopText" inherits="GameTooltipTextSmall" nonspacewrap="false" maxLines="1" justifyH="LEFT" hidden="true">
+                    <Color r="1.0" g="0.82" b="0" a="0.7"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.Editbox" relativePoint="TOPLEFT" x="0" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <EditBox name="EchoRaidToolsConfig_ExportBox" mixin="EchoRaidToolsConfig_ExportBoxMixin" virtual="true" 
+    letters="0" multiLine="false" autoFocus="false" ignoreArrows="true" blinkSpeed="0" inherits="EchoRaidToolsConfig_EditboxTemplate">
+        <Size x="500" y="28"/>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnHide method="OnHide"/>
+            <OnEscapePressed method="OnEscapePressed"/>
+            <OnTextSet method="OnTextSet"/>
+            <OnTextChanged method="OnTextChanged"/>
+            <OnEditFocusGained method="OnEditFocusGained"/>
+            <OnEditFocusLost method="OnEditFocusLost"/>
+            <OnMouseUp method="OnMouseUp"/>
+        </Scripts>
+    </EditBox>
+    <EditBox name="EchoRaidToolsConfig_ExportBoxEditboxTemplate" inherits="EchoRaidToolsConfig_EditboxTemplate" virtual="true"
+    mixin="EchoRaidToolsConfig_ExportBoxEditboxTemplateMixin" letters="0" multiLine="false" autoFocus="false">
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEscapePressed method="OnEscapePressed"/>
+            <OnTextChanged method="OnTextChanged"/>
+            <OnEditFocusGained method="OnEditFocusGained"/>
+            <OnEditFocusLost method="OnEditFocusLost"/>
+            <OnMouseUp method="OnMouseUp"/>
+        </Scripts>
+    </EditBox>
+    <Frame name="EchoRaidToolsConfig_ImportBox" mixin="EchoRaidToolsConfig_ImportBoxMixin" virtual="true" >
+        <Size x="500" y="28"/>
+        <Frames>
+            <Button parentKey="Button" inherits="EchoRaidTools_ButtonTemplate" text="Import">
+                
+                <Size x="80" y="28"/>
+                <Anchors>
+                    <Anchor point="LEFT"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="ClearTextButton">
+                <Size x="14" y="14"/>
+                <Anchors>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+                <NormalTexture atlas="common-search-clearbutton" alpha="0.4"/>
+                <HighlightTexture atlas="common-search-clearbutton" alpha="0.5" alphaMode="ADD"/>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture parentKey="ClearTextTexture" atlas="common-search-clearbutton">
+                        </Texture>
+                    </Layer>
+                </Layers>
+            </Button>
+            <EditBox parentKey="Editbox" inherits="EchoRaidToolsConfig_ExportBoxEditboxTemplate">
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Button" relativePoint="RIGHT" x="12"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.ClearTextButton" relativePoint="LEFT" x="-7"/>
+                </Anchors>
+            </EditBox>
+
+        </Frames>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+</Ui>

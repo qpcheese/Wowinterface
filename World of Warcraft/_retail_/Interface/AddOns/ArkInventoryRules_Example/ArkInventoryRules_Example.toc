@@ -1,0 +1,22 @@
+## License: LGPL v2.1 (this file specifically)
+
+## Interface: 100107
+
+## Title: ArkInventory [Rules] Example
+## Notes: Example rule for ArkInventory
+## Author: Arkayenro - Khaz'goroth
+## Version: 3.10.33
+## X-ReleaseType: 
+## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
+
+## DefaultState: Disabled
+## LoadOnDemand: 0
+## RequiredDeps: ArkInventoryRules
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always:delayed
+
+## OptionalDeps: InsertAnyModsHereThatYourRuleMightNeed
+
+
+ArkInventoryRules_Example.lua

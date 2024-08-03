@@ -1,0 +1,8 @@
+Version: 1
+Frame: SimpleAddonManager
+FrameLevel: 1
+Anchor: CENTER
+X: 2
+Y: 20
+W: 470
+H: 400

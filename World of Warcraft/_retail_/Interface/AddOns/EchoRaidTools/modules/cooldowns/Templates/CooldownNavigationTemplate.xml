@@ -1,0 +1,163 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Button name="EchoRaidTools_CooldownsNavigationButtonFrame" inherits="EchoRaidTools_Treeview_Button" mixin="EchoRaidTools_CooldownsNavigationButtonFrameMixin" virtual="true">
+        <Frames>
+            <CheckButton parentKey="CheckButton" inherits="EchoRaidTools_CheckButtonTemplate">
+                <Size x="18" y="18"/>
+                <Anchors>   
+                    <Anchor point="LEFT"/>
+                </Anchors>
+            </CheckButton>
+            <Button parentKey="DeleteButton" inherits="EchoRaidTools_MainMenu_DeleteButtonTemplate">
+                <Anchors>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="CopyButton" inherits="EchoRaidTools_MainMenu_CopyButtonTemplate">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.DeleteButton"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="RenameButton" inherits="EchoRaidTools_MainMenu_RenameButtonTemplate" mixin="EchoRaidTools_CooldownsNavigation_RenameButtonMixin">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.CopyButton"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick"/>
+                </Scripts>
+            </Button>
+            <EditBox parentKey="EditBox" numeric="false" multiLine="false" autoFocus="false" justifyH="left"
+            hidden="true" inherits="EchoRaidToolsConfig_EditboxTemplate" mixin="EchoRaidTools_CooldownsNavigation_EditBoxMixin">
+                <FontString justifyH="LEFT" inherits="GameFontNormal"/>
+                <Size x="190" y="25"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.ButtonText"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.ButtonText"/>
+                    <!--Anchor point="LEFT" x="4"/>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.RenameButton" x="-3"/-->
+                </Anchors>
+                <Scripts>
+                    <OnEscapePressed method="OnEscapePressed"/>
+                    <OnEnterPressed method="OnEnterPressed"/>
+                    <OnEditFocusLost method="OnEditFocusLost"/>
+                </Scripts>
+            </EditBox>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="NotLoadedTexture" setAllPoints="true" alphaMode="ADD" atlas="UI-Frame-Venthyr-Subtitle" alpha="0.3" hidden="true"/>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture parentKey="SelectedTexture" atlas="groupfinder-button-select" alphaMode="ADD" alpha="0.4" hidden="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-3" y="1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="AdditionalLoad" inherit="append"/>
+        </Scripts>
+    </Button>
+
+    <Button name="EchoRaidTools_CooldownsNavigationGroupNodeFrame" inherits="EchoRaidTools_Treeview_Node" mixin="EchoRaidTools_CooldownsNavigationGroupNodeFrameMixin" virtual="true">
+        <Frames>
+            <CheckButton parentKey="CheckButton" inherits="EchoRaidTools_CheckButtonTemplate">
+                <Size x="18" y="18"/>
+                <Anchors>   
+                    <Anchor point="LEFT" x="1"/> <!--  relativePoint="LEFT" x="0" y="0"-->
+                </Anchors>
+            </CheckButton>
+            <Button parentKey="DeleteButton" inherits="EchoRaidTools_MainMenu_DeleteButtonTemplate">
+                <Anchors>
+                    <Anchor point="RIGHT"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="CopyButton" inherits="EchoRaidTools_MainMenu_CopyButtonTemplate">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.DeleteButton"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="RenameButton" inherits="EchoRaidTools_MainMenu_RenameButtonTemplate" mixin="EchoRaidTools_CooldownsNavigation_RenameButtonMixin">
+                <Anchors>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.CopyButton"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick method="OnClick"/>
+                </Scripts>
+            </Button>
+            <EditBox parentKey="EditBox" numeric="false" multiLine="false" autoFocus="false" justifyH="left"
+            hidden="true" inherits="EchoRaidToolsConfig_EditboxTemplate" mixin="EchoRaidTools_CooldownsNavigation_EditBoxMixin">
+                <FontString justifyH="LEFT" inherits="GameFontNormal"/>
+                <Size x="190" y="25"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.ButtonText"/>
+                    <Anchor point="RIGHT" relativeKey="$parent.ButtonText"/>
+                    <!--Anchor point="LEFT" x="4"/>
+                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.RenameButton" x="-3"/-->
+                </Anchors>
+                <Scripts>
+                    <OnEscapePressed method="OnEscapePressed"/>
+                    <OnEnterPressed method="OnEnterPressed"/>
+                    <OnEditFocusLost method="OnEditFocusLost"/>
+                </Scripts>
+            </EditBox>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture parentKey="NotLoadedTexture" alphaMode="ADD" atlas="UI-Frame-Venthyr-Subtitle" alpha="0.5" hidden="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="-70"/>
+                        <Anchor point="BOTTOMRIGHT"/>
+                    </Anchors>
+                    <TexCoords left="0" right="0.5" top="0" bottom="1"/>
+                </Texture>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <!--Texture parentKey="SelectedTexture" atlas="groupfinder-button-select" setAllPoints="true" alphaMode="ADD" alpha="0.4" hidden="true"/--> <!-- groupfinder-button-select-->
+                <Texture parentKey="SelectedTexture" atlas="auctionhouse-nav-button-select" alphaMode="ADD" alpha="0.2" hidden="true">
+                    <TexCoords left="0" right="0.7" top="0" bottom="1"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-4" y="1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="AdditionalLoad" inherit="append"/>
+        </Scripts>
+    </Button>
+
+    <Frame name="EchoRaidTools_CooldownsNavigation_NodeFrame" inherits="EchoRaidTools_Treeview_Node" mixin="EchoRaidTools_CooldownsNavigation_NodeFrameMixin" virtual="true">
+        <Frames>
+            <Button parentKey="AddButton" inherits="EchoRaidTools_MainMenu_AddButtonTemplate" > <!--frameStrata="TOOLTIP" mixin="EchoRaidTools_MainMenu_ExpandButton_AddButtonMixin"-->
+                <Size x="15" y="15"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.Button.ButtonText" x="3"/>
+                </Anchors>
+            </Button>
+        </Frames>
+        <Scripts>
+            <OnLoad method="AdditionalLoad" inherit="append"/>
+        </Scripts>
+    </Frame>
+
+    <Button name="EchoRaidTools_CooldownsNavigationSelectableButtonFrame" inherits="EchoRaidTools_Treeview_Button" mixin="EchoRaidTools_CooldownsNavigationSelectableButtonFrameMixin" virtual="true">
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture parentKey="SelectedTexture" atlas="CreditsScreen-Selected" setAllPoints="true" alphaMode="ADD" alpha="0.2" hidden="true"> <!--heartofazeroth-list-item-selected-->
+                    <TexCoords left="0.5" right="1" top="0" bottom="1"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-3" y="-1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="AdditionalLoad" inherit="append"/>
+        </Scripts>
+    </Button>
+</Ui>

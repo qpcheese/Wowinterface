@@ -1,0 +1,83 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+    <Frame name="MIOG_RaidStatisticsCharacterTemplate" inherits="BackdropTemplate" virtual="true">
+        <Size y="40"/>
+
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString parentKey="Name" font="LibMono" justifyH="CENTER" justifyV="MIDDLE" text="NAME">
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="5" y="6"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+
+            <Layer level="BACKGROUND">
+                <Texture parentKey="TransparentDark" >
+                    <Size y="32" />
+                    <Color r="0.03" g="0.03" b="0.03" a="0.6" />
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="1" />
+                        <Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT" x="-1" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+            
+            <Layer level="BORDER">
+                <Texture parentKey="Divider1" atlas="dragonflight-weeklyrewards-divider">
+                    <Size y="7" />
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent.TransparentDark" relativePoint="TOPLEFT" x="-10" y="2"/>
+                        <Anchor point="TOPRIGHT" relativeKey="$parent.TransparentDark" relativePoint="TOPRIGHT" x="10" y="2" />
+                    </Anchors>
+                </Texture>
+
+                <Texture parentKey="Divider2" atlas="dragonflight-weeklyrewards-divider">
+                    <Size y="4" />
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent.TransparentDark" relativePoint="BOTTOMLEFT" x="-10" y="-2"/>
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent.TransparentDark" relativePoint="BOTTOMRIGHT" x="10" y="-2" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+
+        <Frames>
+            <Frame parentKey="Raid1" inherits="MIOG_RaidStatisticsRaidTemplate">
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="130"/>
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="Raid2" inherits="MIOG_RaidStatisticsRaidTemplate">
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Raid1" relativePoint="RIGHT" x="10"/>
+                </Anchors>
+            </Frame>
+
+            <Frame parentKey="Raid3" inherits="MIOG_RaidStatisticsRaidTemplate">
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Raid2" relativePoint="RIGHT" x="10"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString parentKey="Awakened" font="Interface\Addons\MythicIOGrabber\res\fonts\LiberationMono-Regular.ttf" justifyH="CENTER" justifyV="MIDDLE" text="S4" outline="NORMAL" >
+                    <FontHeight val="14" />
+                    <Anchors>
+                        <Anchor point="RIGHT" relativeKey="$parent.Raid1" relativePoint="LEFT" x="-4" y="5"/>
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Previous" font="LibMono" justifyH="CENTER" justifyV="MIDDLE" text="S3">
+                    <Color r="0.4" g="0.4" b="0.4" a="1" />
+                    <Anchors>
+                        <Anchor point="RIGHT" relativeKey="$parent.Raid1" relativePoint="LEFT" x="-4" y="-10"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

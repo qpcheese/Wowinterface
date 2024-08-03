@@ -1,0 +1,18 @@
+
+BlizzMoveDB = {
+["saveScaleStrategy"] = "session",
+["scales"] = {
+["MerchantFrame"] = 1.000000023841858,
+["CollectionsJournal"] = 0.8999998807907105,
+},
+["points"] = {
+},
+["enabledFrames"] = {
+["Blizzard_UIWidgets"] = {
+["UIWidgetTopCenterContainerFrame"] = true,
+["UIWidgetBelowMinimapContainerFrame"] = true,
+["UIWidgetPowerBarContainerFrame"] = true,
+},
+},
+["savePosStrategy"] = "session",
+}

@@ -1,0 +1,16 @@
+## Interface: 100207, 110000, 110002
+## Title: HandyNotes_Valdrakken
+## Notes: Valdrakken map locations.
+## IconTexture: Interface/Addons/HandyNotes_Valdrakken/icons/vista.blp
+## Author: Keyboardturn
+## Version: 0.1.4
+## SavedVariables: HandyNotes_ValdrakkenDB
+## RequiredDeps: HandyNotes
+## X-Curse-Project-ID: 683304
+## X-WoWI-ID: 26488
+## X-Wago-ID: R4N2e9GL
+
+Localization.lua
+Core.lua
+locations.lua
+icons.lua

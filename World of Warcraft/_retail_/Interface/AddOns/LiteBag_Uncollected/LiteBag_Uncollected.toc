@@ -1,0 +1,8 @@
+## Interface: 110000
+## Author: Voopie
+## Title: LiteBag Uncollected
+## Version: 0.19
+## IconTexture: 133639
+## Dependencies: LiteBag
+
+LiteBag_Uncollected.lua

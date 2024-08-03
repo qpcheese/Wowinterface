@@ -1,0 +1,511 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <EditBox name="EchoRaidTools_Cooldowns_SpellSearch" mixin="EchoRaidTools_Cooldowns_SpellSearchMixin" inherits="EchoRaidToolsConfig_EditboxTemplate"
+    letters="0" multiLine="false" enableMouse="true" autoFocus="false" virtual="true" >
+        <Scripts>
+            <OnEnterPressed method="OnEnterPressed"/>
+            <OnEscapePressed method="OnEscapePressed"/>
+            <OnTextChanged method="OnTextChanged"/>
+            <OnEditFocusGained  method="OnEditFocusGained"/>
+            <OnEditFocusLost  method="OnEditFocusLost"/>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="searchIcon" atlas="common-search-magnifyingglass">
+                    <Size x="11" y="11"/>
+                    <Anchors>
+                        <Anchor point="RIGHT" x="-2"/>
+                    </Anchors>
+                </Texture>
+                <FontString parentKey="HintText" font="GameFontDisableSmall" justifyH="true" hidden="true" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="LEFT" x="5"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Button parentKey="clearSearch" hidden="true">
+                <Size x="11" y="11"/>
+                <Anchors>
+                    <Anchor point="RIGHT" x="-2"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture atlas="common-search-clearbutton" setAllPoints="true"/>
+                    </Layer>
+                </Layers>
+            </Button>
+        </Frames>
+    </EditBox>
+
+    <Button name="EchoRaidTools_UpDownButton" virtual="true">
+        <Size x="12" y="8"/>
+    </Button>
+    <Frame name="EchorRaidTools_UpDownFrame" virtual="true" mixin="EchorRaidTools_UpDownFrameMixin">
+        <Size x="20" y="28"/>
+        <Frames>
+            <Button parentKey="UpButton" inherits="EchoRaidTools_UpDownButton">
+                <Anchors>
+                    <Anchor point="BOTTOM" y="1" relativePoint="CENTER"/>
+                </Anchors>
+                <NormalTexture parentKey="Normal" atlas="Azerite-PointingArrow" alpha="0.8"/>
+                <DisabledTexture parentKey="Disabled" atlas="Azerite-PointingArrow" desaturated="true" alpha="0.4"/>
+                <HighlightTexture parentKey="Highlight" atlas="Azerite-PointingArrow" alphaMode="ADD" alpha="0.6"/>
+                <Scripts>
+                    <OnLoad>
+                        self.Normal:SetRotation(math.rad(180))
+                        self.Disabled:SetRotation(math.rad(180))
+                        self.Highlight:SetRotation(math.rad(180))
+                    </OnLoad>
+                </Scripts>
+            </Button>
+            <Button parentKey="DownButton" inherits="EchoRaidTools_UpDownButton">
+                <Anchors>
+                    <Anchor point="TOP" y="-1" relativePoint="CENTER"/>
+                </Anchors>
+                <NormalTexture parentKey="Normal" atlas="Azerite-PointingArrow" alpha="0.8"/>
+                <DisabledTexture parentKey="Disabled" atlas="Azerite-PointingArrow" desaturated="true" alpha="0.4"/>
+                <HighlightTexture parentKey="Highlight" atlas="Azerite-PointingArrow" alphaMode="ADD" alpha="0.6"/>
+            </Button>
+        </Frames>
+    </Frame>
+
+    <Button name="EchoRaidTools_ScrollUpButtonTemplate" virtual="true">
+        <Size x="14" y="7"/>
+        <NormalTexture parentKey="Normal" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-top"/>
+        <PushedTexture parentKey="Pushed" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-top-down"/>
+        <DisabledTexture parentKey="Disabled" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-top" alpha="0.4"/>
+        <HighlightTexture parentKey="Highlight" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-top-over" alphaMode="ADD"/>
+    </Button>
+    <Button name="EchoRaidTools_ScrollDownButtonTemplate" virtual="true">
+        <Size x="14" y="7"/>
+        <NormalTexture parentKey="Normal" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-bottom"/>
+        <PushedTexture parentKey="Pushed" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-bottom-down"/>
+        <DisabledTexture parentKey="Disabled" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-bottom" alpha="0.4"/>
+        <HighlightTexture parentKey="Highlight" inherits="UIPanelScrollBarButton" atlas="minimal-scrollbar-arrow-bottom-over" alphaMode="ADD"/>
+    </Button>
+
+    <Slider name="EchoRaidTools_MinimalHybridScrollBarTemplate" parentKey="scrollBar" virtual="true">
+		<Size x="10" y="0"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+                <Texture parentKey="Begin" atlas="minimal-scrollbar-track-top" useAtlasSize="true">
+                    <Anchors>
+                        <Anchor point="TOP"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="End" atlas="minimal-scrollbar-track-bottom" useAtlasSize="true">
+                    <Anchors>
+                        <Anchor point="BOTTOM"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="Middle" atlas="!minimal-scrollbar-track-middle" useAtlasSize="true">
+                    <Anchors>
+                        <Anchor point="TOP" relativeKey="$parent.Begin" relativePoint="BOTTOM"/>
+                        <Anchor point="BOTTOM" relativeKey="$parent.End" relativePoint="TOP"/>
+                    </Anchors>
+                </Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="$parentScrollUpButton" inherits="EchoRaidTools_ScrollUpButtonTemplate">
+				<Anchors>
+					<Anchor point="TOP" x="0" y="7"/>
+				</Anchors>
+				<Scripts>
+					<OnLoad function="HybridScrollFrameScrollUp_OnLoad"/>
+					<OnClick function="HybridScrollFrameScrollButton_OnClick"/>
+				</Scripts>
+			</Button>
+			<Button name="$parentScrollDownButton" inherits="EchoRaidTools_ScrollDownButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOM" x="0" y="-7"/>
+				</Anchors>
+				<Scripts>
+					<OnLoad function="HybridScrollFrameScrollDown_OnLoad"/>
+					<OnClick function="HybridScrollFrameScrollButton_OnClick"/>
+				</Scripts>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnValueChanged function="HybridScrollFrame_OnValueChanged"/>
+		</Scripts>
+		<ThumbTexture name="$parentThumbTexture" atlas="ClassOverlay-ComboPoint" parentKey="thumbTexture" desaturated="true">
+			<Size x="17" y="17"/>
+		</ThumbTexture>
+	</Slider>
+
+    <Frame name="EchoRaidTools_TextIconFrame" virtual="true" mixin="EchoRaidTools_TextIconFrameMixin">
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="SpellIcon">
+                    <Size x="21" y="21" />
+                    <Anchors>
+                        <Anchor point="LEFT"/>
+                    </Anchors>
+                </Texture>
+                <FontString parentKey="SpellName" font="GameFontNormalLarge" wordWrap="false" justifyH="LEFT">
+                    <Size x="250"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="25"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <Frame name="EchoRaidTools_Cooldowns_SpellSelectionHeader" mixin="EchoRaidTools_Cooldowns_SpellSelectionHeaderMixin" virtual="true">
+        <Frames>
+            <EditBox parentKey="Searchbox" inherits="EchoRaidTools_Cooldowns_SpellSearch">
+                <KeyValues>
+                    <KeyValue key="tooltip" type="string" value="Search by Spell Name or ID, by Class, or by the Spell's Tooltip"/>
+                    <KeyValue key="hint" type="string" value="Search"/>
+                </KeyValues>    
+                <Size x="150" y="38"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="10"/>
+                </Anchors>
+            </EditBox>
+            <Frame parentKey="CategoryDropdown" inherits="EchoRaidToolsConfig_Dropdown">
+                <Size x="150" y="38"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="350"/>
+                </Anchors>
+            </Frame>
+
+            <Button parentKey="AddAllButton" inherits="EchoRaidTools_AddButton"> 
+                <Size x="26" y="26"/>
+                <KeyValues>
+                    <KeyValue key="tooltip" type="string" value="Add ALL currently shown spells to the Group."/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" x="518"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="RemoveAllButton" inherits="EchoRaidTools_MinusButton"> 
+                <Size x="26" y="26"/>
+                <KeyValues>
+                    <KeyValue key="tooltip" type="string" value="Remove ALL currently shown spells from the Group."/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" x="560"/>
+                </Anchors>
+            </Button>
+            
+            <Frame parentKey="Info" inherits="EchoRaidTools_InfoButton">
+                <Size x="20" y="20"/>
+                <Anchors>
+                    <Anchor point="RIGHT" x="-5"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="HeaderBG" atlas="challenges-blackfade" setAllPoints="true"/>
+            </Layer>
+            <Layer level="ARTWORK">
+                <Texture parentKey="Underline" atlas="communities-chat-date-line-orange">
+                    <Color r="1" g="1" b="1" a="1"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" x="5"/>
+                        <Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT" x="-10" y="3"/>
+                    </Anchors>
+                </Texture>
+                <FontString parentKey="LeftSideHeaderText" font="GameFontNormal" text="Available Spells" justifyH="CENTER">
+                    <Size x="150"/>
+                    <Anchors>
+                        <Anchor point="CENTER" relativePoint="LEFT" x="250"/>
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="RightSideHeaderText" font="GameFontNormal" text="Included Spells">
+                    <Anchors>
+                        <Anchor point="CENTER" relativePoint="LEFT" x="720"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <Frame name="EchoRaidTools_Cooldowns_SpellSelectionPanel" mixin="EchoRaidTools_Cooldowns_SpellSelectionPanelMixin" virtual="true">
+        <Frames>
+            <Frame parentKey="SpellSelectionHeader" inherits="EchoRaidTools_Cooldowns_SpellSelectionHeader">
+                <Anchors>
+                    <Anchor point="TOPLEFT" y="-40" x="2"/>
+                    <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="-2" y="-78"/>
+                </Anchors>
+            </Frame>
+            <ScrollFrame name="EchoRaidTools_Cooldowns_LeftSide_HybridScroll" parentKey="ScrollFrame" mixin="EchoRaidTools_Cooldowns_LeftSide_HybridScrollMixin" inherits="HybridScrollFrameTemplate">
+                <Size x="550" y="446"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.SpellSelectionHeader" relativePoint="BOTTOMLEFT"/>
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="550"/>
+                </Anchors>
+
+                <Frames>
+                    <Slider parentKey="ScrollBar" inherits="EchoRaidTools_MinimalHybridScrollBarTemplate">
+                        <Anchors>
+                            <Anchor point="TOPRIGHT" x="10" y="-7"/>
+                            <Anchor point="BOTTOMRIGHT" x="10" y="9"/>
+                        </Anchors>
+                    </Slider>
+                </Frames>
+                <Scripts>
+                    <OnShow method="OnShow"/>
+                </Scripts>
+            </ScrollFrame>
+            <ScrollFrame name="EchoRaidTools_Cooldowns_RightSide_HybridScroll" parentKey="ScrollFrameRight" mixin="EchoRaidTools_Cooldowns_RightSide_HybridScrollMixin" inherits="HybridScrollFrameTemplate">
+                <Size x="340" y="446"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.SpellSelectionHeader" relativePoint="BOTTOMLEFT" x="560"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+                <Frames>
+                    <Slider parentKey="ScrollBar2" inherits="EchoRaidTools_MinimalHybridScrollBarTemplate">
+                        <Anchors>
+                            <Anchor point="TOPRIGHT" x="-5" y="-7"/>
+                            <Anchor point="BOTTOMRIGHT" x="-5" y="9"/>
+                        </Anchors>
+                    </Slider>
+                </Frames>
+                <Scripts>
+                    <OnShow method="OnShow"/>
+                </Scripts>
+            </ScrollFrame>
+        </Frames>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnSizeChanged method="OnSizeChanged"/>
+        </Scripts>
+    </Frame>    
+
+    <Frame name="EchoRaidTools_Cooldowns_SpellSelectionLine" mixin="EchoRaidTools_Cooldowns_SpellSelectionLineMixin" virtual="true">
+        <Size x="550" y="25"/>
+        <Frames>
+            <Button parentKey="LineButton" setAllPoints="true"/>
+            <Frame parentKey="SpellFrame" inherits="EchoRaidTools_TextIconFrame">
+                <Size x="275" y="23"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="10"/>
+                </Anchors>
+            </Frame>
+            <Button parentKey="AddButton" inherits="EchoRaidTools_AddButton"> 
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="tooltip" type="string" value="Add this spell to the Group."/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" x="520"/>
+                </Anchors>
+            </Button>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <!--Texture parentKey="lineBG" atlas="perks-list-active" desaturated="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+                    </Anchors>
+                </Texture-->
+                <Texture parentKey="lineBGLeft" atlas="Adventures-Mission-Highlight-Left" desaturated="true">
+                    <Size x="13.5" y="25"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="lineBGRight" atlas="Adventures-Mission-Highlight-Right" desaturated="true">
+                    <Size x="13.5" y="25"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="lineBGMid" atlas="_Adventures-Mission-Highlight-Mid" desaturated="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent.lineBGLeft" relativePoint="TOPRIGHT" x="0" y="0"/>
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent.lineBGRight" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+                <FontString parentKey="SpellIDText" font="GameFontDisableSmallLeft" wordWrap="false" justifyH="LEFT">
+                    <Size x="50"/>
+                    <Anchors>
+                        <Anchor point="LEFT" x="300"/>
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="Category" font="GameFontWhite" wordWrap="false" justifyH="CENTER">
+                    <Size x="150"/>
+                    <Anchors>
+                        <Anchor point="CENTER" relativePoint="LEFT" x="430"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <Frame name="EchoRaidTools_SpellSelectionLineRight_DropRegionTop" virtual="true">
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="highlight" setAllPoints="true" atlas="GarrMission_ListGlow-Highlight" hidden="true"/>
+            </Layer>
+        </Layers>
+    </Frame>
+    <Frame name="EchoRaidTools_SpellSelectionLineRight_DropRegionBottom" virtual="true">
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="highlight" setAllPoints="true" atlas="GarrMission_ListGlow-Highlight" hidden="true"/>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad>
+                self.highlight:SetRotation(math.rad(180))
+            </OnLoad>
+        </Scripts>
+    </Frame>
+
+
+    <Frame name="EchoRaidTools_Cooldowns_SpellSelectionLineRight" mixin="EchoRaidTools_Cooldowns_SpellSelectionLineRightMixin"
+     virtual="true" movable="true" enableMouse="true" >
+        <Size x="340" y="25"/>
+        <Frames>
+            <Frame parentKey="DropRegionTop" inherits="EchoRaidTools_SpellSelectionLineRight_DropRegionTop">
+                <KeyValues>
+                    <KeyValue key="isTop" value="true" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT" y="12.5"/>
+                </Anchors>
+            </Frame>
+            <Frame parentKey="DropRegionBottom" inherits="EchoRaidTools_SpellSelectionLineRight_DropRegionBottom">
+                <KeyValues>
+                    <KeyValue key="isTop" value="false" type="boolean"/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="TOPLEFT" y="-12.5"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+            </Frame>
+            <Button parentKey="LineButton" setAllPoints="true" mixin="EchoRaidTools_SpellSelectionLineRight_LineButton" movable="true" enableMouse="true">
+                <Scripts>
+                    <OnMouseDown method="OnMouseDown"/>
+                    <OnDragStart method="OnDragStart"/>
+                    <!--OnDragStop method="OnDragStop"/-->
+                </Scripts>
+            </Button>
+            <Frame parentKey="SpellFrame" inherits="EchoRaidTools_TextIconFrame">
+                <Size x="275" y="23"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="57"/>
+                </Anchors>
+            </Frame>
+            <Button parentKey="RemoveButton" inherits="EchoRaidTools_MinusButton"> 
+                <Size x="22" y="22"/>
+                <KeyValues>
+                    <KeyValue key="tooltip" type="string" value="Remove this spell from the Group."/>
+                </KeyValues>
+                <Anchors>
+                    <Anchor point="LEFT" x="2"/>
+                </Anchors>
+            </Button>
+            <Button parentKey="UpDownFrame" inherits="EchorRaidTools_UpDownFrame">
+                <Anchors>
+                    <Anchor point="LEFT" x="27"/>
+                </Anchors>
+            </Button>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <!--Texture parentKey="lineBG" atlas="perks-list-active" desaturated="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+                    </Anchors>
+                </Texture-->
+                <Texture parentKey="lineBGLeft" atlas="Adventures-Mission-Highlight-Left" desaturated="true">
+                    <Size x="13.5" y="25"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="lineBGRight" atlas="Adventures-Mission-Highlight-Right" desaturated="true">
+                    <Size x="13.5" y="25"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="lineBGMid" atlas="_Adventures-Mission-Highlight-Mid" desaturated="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent.lineBGLeft" relativePoint="TOPRIGHT" x="0" y="0"/>
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent.lineBGRight" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <!--OnMouseDown method="OnMouseDown"/>
+            <OnDragStart method="OnDragStart"/>
+            <OnDragStop method="OnDragStop"/-->
+        </Scripts>
+    </Frame>
+    
+    <Frame name="EchoRaidTools_Cooldowns_SpellSelectionDragLine" virtual="true" movable="true">
+        <Size x="340" y="25"/>
+        <Frames>
+            <Frame parentKey="SpellFrame" inherits="EchoRaidTools_TextIconFrame">
+                <Size x="275" y="23"/>
+                <Anchors>
+                    <Anchor point="LEFT" x="57"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <!--Texture parentKey="lineBG" atlas="perks-list-active" desaturated="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+                    </Anchors>
+                </Texture-->
+                <Texture parentKey="lineBGLeft" atlas="Adventures-Mission-Highlight-Left" desaturated="true">
+                    <Size x="13.5" y="25"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="lineBGRight" atlas="Adventures-Mission-Highlight-Right" desaturated="true">
+                    <Size x="13.5" y="25"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="lineBGMid" atlas="_Adventures-Mission-Highlight-Mid" desaturated="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent.lineBGLeft" relativePoint="TOPRIGHT" x="0" y="0"/>
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent.lineBGRight" relativePoint="BOTTOMLEFT" x="0" y="0"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

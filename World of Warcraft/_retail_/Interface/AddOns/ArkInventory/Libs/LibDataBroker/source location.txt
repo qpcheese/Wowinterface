@@ -1,0 +1,4 @@
+https://github.com/tekkub/libdatabroker-1-1
+
+https://www.curseforge.com/wow/addons/libdatabroker-1-1
+git https://repos.curseforge.com/wow/libdatabroker-1-1

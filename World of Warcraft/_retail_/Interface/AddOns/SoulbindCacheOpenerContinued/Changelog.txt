@@ -1,0 +1,91 @@
+7.0.1 - changed cli - documenation update pending
+
+6.5.4 - Tamuko - created new addon and added a bunch of missing items from  the comments
+
+6.5.3 - Updated for 10.1.5
+
+6.5.2 - Rollback to 6.5 by request
+
+6.5.1 - Added missing items
+
+6.5 - Added Addon Icon, Added Patch 10.0.5, 10.0.7 and 10.1 + additions for curseforge comments
+
+6.4.9 - Winter Veil Presents
+
+6.4.8 - Windborne Velocidrake Manuscripts
+
+6.4.7 - Bugfix - Should no longer give lua error on new characters, Added more openables
+
+6.4.6 - Added more profession knowledge
+
+6.4.5 - Bugfix - updated logic to assign default value sooner to avoid lua error
+
+6.4.4 - Winter Veil! - Stolen Gifts and Smokywood Pastures
+
+6.4.3 - Added option to not show stacks of 10 rousing elements as buttons using /sco rousing
+
+6.4.2 - Added Rousing elements, Added the logic to show buttons for items when they reach a certain stack size, in this case 10 Rousing to create an Awakened 
+
+6.4.1 - Removed Draconic Treatise as it can only be clicked weekly. Added Supply Packs and Hunt Spoils and few other items.
+
+6.4 - Added many Drake glyphs and openable rewards
+
+6.3 - Added many items related to Profession Knowledge
+
+6.2 - Dragonflight
+
+6.1 - Updated for Dragonflight Pre-Patch, Added openable for 10.0.2 from wowhead
+
+6.0.3 - Added 2022 Anniversary Gift
+
+6.0.1 - Added missing items from 9.2
+
+6.0 - Updated for Dragonflight Pre-Patch & 9.2
+
+5.4 - Updated for 9.1.5
+
+5.3 - Handful of Treats
+
+5.2 - Removed duplicate gift from Ve'nari, added Stygic Cluster, Brewfest, Hallows End
+
+5.1 - Changed code to solve protected function error - thanks comiluv, Added Brewfest Keg-Shaped Treasure Chest
+
+5.0 - Added 'Gold Filled' Items
+
+4.9 - Removed Duplicate, Added Death's Advance Supplies and Small Korthian Supply Chest
+
+4.8 - Added many openables from Korthia and table missions.
+
+4.7 - Added Talon-Pierced Mawsworn Lockbox
+
+4.6 - Added Feather-Stuffed Helm and Diviner's Rune Chit - Thanks Modrogon
+
+4.5 - Added War Chests for 5 factions
+
+4.4 - Updated for 9.1 - Added Abandoned Broker Satchel and Tormentor's Cache
+
+4.3 - Added Pet Supply Caches - Thanks Z
+
+4.2 - Noblegarden! Now supports Brightly Colored Egg
+
+4.1 - Updated toc for 9.0.5
+
+4.0 - Removed a duplicate entry
+
+3.9.5 - Added Veiled Satchel of Cooperation from LGF Call to Arms
+
+3.9 - Added Salvaged Supplies from Necrolord Abomination Table
+
+3.8 - Added Cache of Nathrian Treasures from Timewalking Weekly, Added Paragon rewards for all covenants
+
+3.7 - Added Champion and Hero Caches for Table Missions, Added Blingtron gift packages
+
+3.6 - Fixed Openables from Torghast, Added Pouch of Shinies
+
+3.5 - Added Venthyr's Coin Purse from Torghast
+
+3.0 - Added Blooded Satchel and Satchel of Nature's Bounty from Torghast
+
+2.0 - Added Fallen Adventurer's Cache which drops in The Maw
+
+1.0 - Initial Release

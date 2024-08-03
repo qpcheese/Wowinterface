@@ -1,0 +1,28 @@
+tag d12cb1fb800ad4aea279731e98a27a2a83c6a65e 10.2.7
+Author:	Rubio <RubioTwitch@curseforge>
+Date:	Tue Jul 23 05:30:33 2024 -0500
+
+Interim release 10.2.7 for TWW Prepatch
+
+commit dbe69194933947bfd02cf4a25ddd3c6be225117a
+Author: Rubio <RubioTwitch@curseforge>
+Date:   Tue Jul 23 05:27:37 2024 -0500
+
+    Interim release for TWW prepatch
+    
+    - Made API compatibility updates
+    - Switched TOC from Wrath to Cata (finally)
+    - Updated TOC versions
+    - Started groundwork toward supporting Warbands bank tabs
+
+commit ef3c3e9d403f33a4e442afb383b64c7c25d6212a
+Author: Rubio <RubioTwitch@curseforge>
+Date:   Tue Jul 23 04:43:09 2024 -0500
+
+    Interim release for TWW prepatch
+    
+    - Made API compatibility updates
+    - Switched TOC from Wrath to Cata (finally)
+    - Updated TOC versions
+    - Started groundwork toward supporting Warbands bank tabs
+

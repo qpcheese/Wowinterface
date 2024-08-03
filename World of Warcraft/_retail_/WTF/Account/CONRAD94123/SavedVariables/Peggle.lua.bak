@@ -1,0 +1,102 @@
+
+PeggleData = {
+["newData"] = {
+["levelScores"] = {
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+{
+["score"] = 0,
+["progress"] = 0,
+},
+},
+["talentData"] = {
+["activated"] = {
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+},
+},
+["settings"] = {
+["highFPS"] = false,
+["openLogIn"] = false,
+["openDeath"] = false,
+["mouseOffTrans"] = 0.6,
+["closeCombat"] = true,
+["showMinimapIcon"] = true,
+["mouseOnTrans"] = 1,
+["inviteRaid"] = false,
+["openDuel"] = true,
+["hideOutdated"] = false,
+["closeReadyCheck"] = true,
+["closePeggleLoot"] = false,
+["closeDuelComplete"] = false,
+["inviteChat"] = true,
+["openFlightStart"] = false,
+["inviteDecline"] = false,
+["closeFlightEnd"] = false,
+["inviteMinimap"] = true,
+["soundVolume"] = 0,
+["minimapAngle"] = 26,
+["defaultPublish"] = "GUILD",
+},
+["recent"] = {
+},
+["legalDisplayed"] = true,
+["version"] = 2.2,
+["loggedIn"] = "Qpcheeso",
+}

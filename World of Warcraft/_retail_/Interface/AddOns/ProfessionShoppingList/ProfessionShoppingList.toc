@@ -1,0 +1,24 @@
+## Interface: 110000
+## Title: |cffC69B6DProfession Shopping List|r
+## Author: Sluimerstand
+## IconTexture: Interface\AddOns\ProfessionShoppingList\assets\psl_icon.blp
+## AddonCompartmentFunc: ProfessionShoppingList_Click
+## AddonCompartmentFuncOnEnter: ProfessionShoppingList_Enter
+## AddonCompartmentFuncOnLeave: ProfessionShoppingList_Leave
+## Version: v11.0.0-004
+## X-Curse-Project-ID: 498475
+## X-Wago-ID: Xb6X71Np
+
+## SavedVariables: ProfessionShoppingList_Settings, ProfessionShoppingList_Data, ProfessionShoppingList_Library, ProfessionShoppingList_Cache
+## SavedVariablesPerCharacter: ProfessionShoppingList_CharacterData
+
+libs\LibDBIcon-1.0\embeds.xml
+libs\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua
+libs\ChatThrottleLib\ChatThrottleLib.xml
+libs\LibBattlePetTooltipLine\LibBattlePetTooltipLine.lua
+Core.lua
+Database.lua
+modules\AuctionHouse.lua
+modules\CraftingOrders.lua
+modules\ProfessionKnowledge.lua
+modules\Tweaks.lua

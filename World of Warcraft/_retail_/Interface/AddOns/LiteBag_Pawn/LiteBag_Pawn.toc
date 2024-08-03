@@ -1,0 +1,8 @@
+## Interface: 110000
+## Author: Voopie
+## Title: LiteBag Pawn
+## Version: 0.16
+## IconTexture: 133639
+## Dependencies: LiteBag, Pawn
+
+LiteBag_Pawn.lua

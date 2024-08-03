@@ -1,0 +1,7 @@
+## Interface: 90105
+## Title: LibReadOnly
+## Notes: Provides read only table implementation.
+## Author: Dradux/Grim
+## Version: 1.0.0
+
+LibReadOnly.lua

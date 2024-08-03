@@ -1,0 +1,16 @@
+## Interface: 11502
+
+## Title: ArkInventory [Classic] [Search]
+## Notes: Search for ArkInventory
+## Author: Arkayenro - Khaz'goroth
+## Email: arkayenro at gmail dot com
+## Version: 31033
+## X-ReleaseType: 
+## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
+
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## RequiredDeps: ArkInventory
+
+ArkInventorySearch.lua
+ArkInventorySearch.xml

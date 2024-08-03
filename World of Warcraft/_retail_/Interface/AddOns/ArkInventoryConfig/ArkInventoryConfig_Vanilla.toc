@@ -1,0 +1,15 @@
+## Interface: 11502
+
+## Title: ArkInventory [Classic] [Configuration]
+## Notes: Configuration options for ArkInventory
+## Author: Arkayenro - Khaz'goroth
+## Email: arkayenro at gmail dot com
+## Version: 31033
+## X-ReleaseType: 
+## IconTexture: Interface\Icons\INV_Misc_Bag_07_Green
+
+## DefaultState: Enabled
+## LoadOnDemand: 1
+## RequiredDeps: ArkInventory
+
+ArkInventoryConfig.lua

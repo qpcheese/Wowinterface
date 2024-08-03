@@ -1,0 +1,131 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	
+	<Script file="HealBandageButtons.lua" />
+	
+	<Button name="PTHBButton" inherits="SecureActionButtonTemplate, ActionButtonTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="46" y="46" />
+		</Size>
+		<Scripts>
+			<OnLoad>
+				local _, name, icon, count;
+				local module = PT:GetModule("HealBandageButtons");
+				
+				if( self:GetID() == 1 ) then
+					local id = module.petHealSpell;
+					name, _, icon = _G.GetSpellInfo(id);
+					self:SetAttribute("spell", name);
+				else
+					local id = module.petBandage;
+					name, _, _, _, _, _, _, count, _, icon = _G.GetItemInfo(id);
+					self:SetAttribute("item", name);
+				end
+				
+				self.icon:SetTexture(icon);
+			</OnLoad>
+			<OnShow>
+				local module = PT:GetModule("HealBandageButtons");
+				
+				self:RegisterEvent("PET_BATTLE_OPENING_START");
+				self:RegisterEvent("PET_BATTLE_CLOSE");
+
+				module.Button_UpdateCooldown(self);
+				module.Button_UpdateUsability(self);
+
+				if( self:GetID() == 1 ) then
+					self:RegisterEvent("SPELL_UPDATE_COOLDOWN");
+					self:RegisterEvent("SPELLS_CHANGED");
+				else
+					self:RegisterEvent("BAG_UPDATE_COOLDOWN");
+					self:RegisterEvent("BAG_UPDATE");
+					self:RegisterEvent("BAG_UPDATE_DELAYED");
+				end
+			</OnShow>
+			<OnHide>
+				self:UnregisterEvent("PET_BATTLE_OPENING_START");
+				self:UnregisterEvent("PET_BATTLE_CLOSE");
+				
+				if( self:GetID() == 1 ) then
+					self:UnregisterEvent("SPELL_UPDATE_COOLDOWN");
+					if( self:IsEventRegistered("SPELLS_CHANGED") ) then
+						self:UnregisterEvent("SPELLS_CHANGED");
+					end
+				else
+					self:UnregisterEvent("BAG_UPDATE_COOLDOWN");
+					self:UnregisterEvent("BAG_UPDATE");
+					if( self:IsEventRegistered("BAG_UPDATE_DELAYED") ) then
+						self:UnregisterEvent("BAG_UPDATE_DELAYED");
+					end
+				end
+			</OnHide>
+			<OnEvent>
+				local module = PT:GetModule("HealBandageButtons");
+				
+				if( self:GetID() == 1 ) then
+					if( event == "SPELL_UPDATE_COOLDOWN" ) then
+						module.Button_UpdateCooldown(self);
+						
+						if( _G.GameTooltip:GetOwner() == self ) then
+							-- self onenter
+						end
+					else
+						module.Button_UpdateUsability(self);
+					end
+				else
+					if( event == "BAG_UPDATE_COOLDOWN" ) then
+						module.Button_UpdateCooldown(self);
+					end
+					module.Button_UpdateUsability(self);
+				end
+			</OnEvent>
+			<OnDragStart>
+				self:GetParent():StartMoving();
+			</OnDragStart>
+			<OnDragStop>
+				self:GetParent():StopMovingOrSizing();
+			</OnDragStop>
+		</Scripts>
+	</Button>
+	
+	<Frame name="PTHealBandageFrame" parent="UIParent" frameStrata="MEDIUM" enablemouse="true" movable="true" clampedtoscreen="true" hidden="true">
+		<Size>
+			<AbsDimension x="99" y="50" />
+		</Size>
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture parentKey="bg" setallpoints="true">
+					<Color r="0" g="0" b="0" a="0.5" />
+				</Texture>
+			</Layer>
+		</Layers>
+		<Anchors>
+			<Anchor point="CENTER" />
+		</Anchors>
+		<Scripts>
+			<OnLoad>
+				self:Hide();
+			</OnLoad>
+			<OnDragStart>
+				self:StartMoving();
+			</OnDragStart>
+			<OnDragStop>
+				self:StopMovingOrSizing();
+			</OnDragStop>
+		</Scripts>
+		<Frames>
+			<Button name="$parentHealButton" id="1" inherits="PTHBButton">
+				<Anchors>
+					<Anchor point="LEFT" x="2" y="0" />
+				</Anchors>
+			</Button>
+			
+			<Button name="$parentBandageButton" id="2" inherits="PTHBButton">
+				<Anchors>
+					<Anchor point="RIGHT" x="-3" y="0" />
+				</Anchors>
+			</Button>
+		</Frames>
+	</Frame>
+	
+</Ui>

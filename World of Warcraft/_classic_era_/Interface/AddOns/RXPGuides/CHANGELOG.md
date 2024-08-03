@@ -1,0 +1,68 @@
+# RestedXP Guides
+
+## [v4.6.14](https://github.com/RestedXP/RXPGuides/tree/v4.6.14) (2024-06-05)
+[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.6.13...v4.6.14) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
+
+- Fixed quest automation issues for some dailies  
+- Added debug messages  
+- Added missing nil check  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Removed & Added a few quests  
+- Added Daillies  
+- SoD 250% xp Shadowglen Warrior routing changes  
+- SoD 250%xp Darkshore Large Routing Changes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Hillsbrad level range update SoD  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- improved achievement check  
+- Wellson Cannon coordinate update  
+- Fix faction tag  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- SoD 150% lvl 10-25 fixes/improvements  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Add formatting improvements  
+- SoD 250% xp buff small Teldrassil Adjustments  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Route & Bug Fixes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Durotar SoD small improvements  
+- Added Tol Barad Daily Quests  
+- SoD 250% xp Teldrassil Druid routing changes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Druid sod 250% xp Teldrassil routing changes  
+- Typo fix  
+- Tirisfal 150% route update + small improvements  
+- Added missing event trigger  
+- Better daily quest support for rotating dailies  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Dragonriding & Nostwin Bug Fixes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Removing herbalism steps for SoD druids  
+- SoD Tirisfal 150% update / small fixes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- misc  
+- SoD Spell auto training adjustments for Hunter  
+- Better SoD auto training support  
+- Small Teldrassil Fixes  
+- Small Teldrassil fixes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Removed Dragonriding Quests  
+- Mulgore 150% update / Barrens small improvements  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Barrens/Durotar small fixes/improvements  
+- Added missing nil check  
+- Fixed an issue where completed quests would get stuck on retrieving quest data  
+- SoD Mulgore/Barrens 150% update  
+- Durotar 150% SoD update  
+- Improved SoD xp buff support  
+- Miscellaneous Bug Fixes  
+- Bug Fixes & Route Improvements  
+- Improved Dragonriding Teleport Steps,Improved Pandaria Remix Quests  
+- Add Intro Skip & Bug Fixes  
+- Improved xp calculations  
+- Dragonriding Quest Bug Fixes  
+- Rework Dragonriding Quests & Introduction  
+- Added Anglers Daily Template  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Dragonriding Alliance Fixes  
+- SoD fixes  

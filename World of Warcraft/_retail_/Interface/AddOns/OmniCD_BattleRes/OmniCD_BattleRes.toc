@@ -1,0 +1,14 @@
+## Interface: 100207
+## Title: OmniCD Battle Res
+## Version: 0.0.20
+## Author: Treebonker
+## Notes: Battle res plugin for OmniCD
+## X-License: All Rights Reserved
+## X-Localizations: enUS
+## X-Website: https://wow.curseforge.com/projects/omnicd-battleres
+## DefaultState: Disabled
+## Dependencies: OmniCD
+## IconTexture: Interface\AddOns\OmniCD\Config\Libs\Media\omnicd-logo64-c
+
+Locales\locales.xml
+core.lua

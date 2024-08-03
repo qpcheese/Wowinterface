@@ -1,0 +1,7 @@
+
+BigWigs3DB = nil
+BigWigsIconDB = {
+["minimapPos"] = 144.6375216584007,
+}
+BigWigsStatsDB = nil
+BigWigsBarsReset = true

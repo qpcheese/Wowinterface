@@ -1,0 +1,45 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidTools_PermaMarks_RaidTarget" virtual="true">
+        <Size x="500" y="30" />
+        <Anchors>
+            <Anchor point="TOPLEFT" y="-50" />
+            <Anchor point="TOPRIGHT" />
+        </Anchors>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="Icon">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="26" y="-7" />
+                        <Anchor point="BOTTOMRIGHT" x="42" y="-23" relativePoint="TOPLEFT"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Frames>
+            <EditBox parentKey="EditBox" numeric="false" multiLine="false" autoFocus="false" hidden="false" inherits="EchoRaidToolsConfig_EditboxTemplate">
+                <Size x="450" y="26"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="50" y="-2" />
+                    <Anchor point="BOTTOMRIGHT" x="-50" y="2" />
+                </Anchors>
+            </EditBox>
+            <Button parentKey="Wizard" text="" inherits="EchoRaidTools_ButtonTemplate">
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.EditBox" relativePoint="RIGHT" x="10" />
+                    <Anchor point="RIGHT" relativeKey="$parent.EditBox" relativePoint="RIGHT" x="30" /> 
+                </Anchors>
+                <Layers>
+                    <Layer level="OVERLAY">
+                        <Texture parentKey="Icon" atlas="Warfronts-BaseMapIcons-Empty-Workshop-Minimap" useAtlasSize="false">
+                            <Size x="16" y="16" />
+                            <Anchors>
+                                <Anchor point="CENTER" />
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                </Layers>
+            </Button>
+        </Frames>
+    </Frame>        
+</Ui>

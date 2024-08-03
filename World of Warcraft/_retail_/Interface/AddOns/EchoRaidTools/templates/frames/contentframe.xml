@@ -1,0 +1,32 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Frame name="EchoRaidToolsContentFrame" virtual="true">
+        <Size x="500" y="400" />
+        <Frames>
+            <Frame parentKey="Header">
+                <Size x="1050" y="30"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="TOPRIGHT"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture parentKey="Background" atlas="communities-chat-date-line-orange"> <!--atlas="Adventure-MissionEnd-Line" file="Interface\Buttons\grad1C"-->
+                            <Size x="1000" y="10"/>
+                            <Color r="1" g="1" b="1" a="1"/>
+                            <Anchors>
+                                <Anchor point="BOTTOMLEFT" x="10" y="-3"/>
+                                <Anchor point="BOTTOMRIGHT" x="-10" y="-3"/>
+                            </Anchors>
+                        </Texture>
+                        <FontString parentKey="HeaderText" inherits="SystemFont_Shadow_Large">
+                            <Anchors>
+                                <Anchor point="TOPLEFT" x="25" y="-5"/>
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+        </Frames>
+    </Frame>
+</Ui>

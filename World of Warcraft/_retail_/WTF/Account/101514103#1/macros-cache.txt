@@ -1,0 +1,244 @@
+VER 3 0000000000000022 "1314" "134400"
+#showtooltip
+/use 13
+/use item:191914
+/use item:36799
+/use item:191383
+END
+VER 3 0000000000000039 "14" "134400"
+#showtooltip
+/use 14
+END
+VER 3 000000000000001E "1ST" "134400"
+#showtooltip
+/use 13
+/use 14
+END
+VER 3 0000000000000029 "2r0" "134400"
+#showtooltip
+/cast icy veins
+/use 13
+END
+VER 3 0000000000000028 "2r2" "134400"
+#showtooltip
+/cast icy veins
+/use 13
+/use item:191382
+END
+VER 3 0000000000000005 "2r3" "135838"
+#showtooltip
+/cast icy veins
+/use 13
+/use item:191383
+END
+VER 3 000000000000002D "a" "134400"
+/target Grizzlefur Cub
+/cleartarget [dead]
+/stopmacro [dead][noexists]
+/run SetRaidTarget("target", 8)
+/cast arcane barrage
+END
+VER 3 0000000000000013 "a" "134400"
+/use Rogues Deck
+/script AcceptQuest()
+END
+VER 3 000000000000000E "asd" "134400"
+/targetenemy [noharm][dead]
+/cast fire blast
+END
+VER 3 0000000000000014 "asd" "134400"
+/script SelectGossipActiveQuest(1)
+/script CompleteQuest()
+/script GetQuestReward(3)
+/script GetQuestReward() 
+END
+VER 3 0000000000000026 "asd" "134400"
+#showtooltip item:174927
+/stopmacro [channeling:Catching]
+/cleartarget
+/tar Ivory Cloud Serpent
+/use Zan-Tien Lasso
+END
+VER 3 000000000000000F "asddd" "135738"
+/run local a=0;TargetNearestEnemy();while (UnitAffectingCombat("target")~=true and a < 10) do TargetNearestEnemy();a=a+1;end
+END
+VER 3 000000000000002E "AT canc" "2026009"
+/cancelaura Alter Time
+END
+VER 3 0000000000000032 "ATT" "134881"
+/att
+END
+VER 3 000000000000001A "barry" "134400"
+#showtooltip arcane barrage
+/castsequence reset=2 arcane barrage, null
+END
+VER 3 0000000000000004 "Belt" "134400"
+#showtooltip
+/use 6
+END
+VER 3 0000000000000002 "blizzard" "134400"
+#showtooltip
+/cast [@cursor] blizzard
+END
+VER 3 000000000000002F "cind" "514016"
+/target cinderfall
+/cast Arcane Blast
+END
+VER 3 0000000000000023 "CollectMeRC" "INV_PET_BABYBLIZZARDBEAR"
+/cm rc
+END
+VER 3 0000000000000025 "CollectMeRM" "ABILITY_MOUNT_BIGBLIZZARDBEAR"
+/cm rm
+END
+VER 3 0000000000000024 "CollectMeRT" "INV_PET_SCORCHEDSTONE"
+/cm rt
+END
+VER 3 000000000000000B "CROSS" "878244"
+/rw CROSS
+END
+VER 3 000000000000000D "cuim" "134400"
+#showtooltip Combustion
+/cast Combustion
+/use 13
+/use item:p191.382
+END
+VER 3 0000000000000017 "delete" "134400"
+/run for i=0,4 do for j=1,GetContainerNumSlots(i)do n=(GetContainerItemLink(i,j)or"") if(not n:find("Hearthstone") and not n:find("Junkbox")) then PickupContainerItem(i,j) DeleteCursorItem()end end end
+END
+VER 3 000000000000002A "disp" "134400"
+#showtooltip
+/castsequence reset=10 blink, displacement
+END
+VER 3 000000000000000C "dispell" "1445240"
+/rw DISPELL!
+END
+VER 3 0000000000000030 "firework" "459026"
+/use Bronze Fireflight
+/use Green Fireflight
+/use Red Fireflight
+/use Blue Fireflight
+END
+VER 3 0000000000000033 "Flask" "134400"
+#showtooltip Iced Phial of Corrupting Rage
+/use item:191329
+/use item:191328
+END
+VER 3 0000000000000020 "freeze" "134400"
+#showtooltip
+/cast [@cursor] Freeze
+END
+VER 3 000000000000001C "FS" "134400"
+#showtooltip Flamestrike
+/cast [@cursor] Flamestrike
+/use 14
+END
+VER 3 0000000000000011 "grinvis" "134400"
+#showtooltip Greater Invisibility
+/cancelaura Unstable Flames
+/cast Greater invisibility
+END
+VER 3 0000000000000027 "heart" "134400"
+#showtooltip
+/cast azeroth's radiance
+END
+VER 3 000000000000001F "hi im arcane" "236225"
+/p Hi im arcane, feel free to replace me.
+END
+VER 3 0000000000000003 "ib" "134400"
+#showtooltip
+/cancelaura Ice Block
+/cast Ice Block
+END
+VER 3 0000000000000010 "invis" "134400"
+#showtooltip Invisibility
+/cancelaura Unstable Flames
+/cast Invisibility
+END
+VER 3 000000000000002B "m+" "236205"
+/loi 3
+END
+VER 3 0000000000000035 "M++" "135857"
+/loi 2
+END
+VER 3 000000000000001B "Mb" "134400"
+#showtooltip
+/cast mass barrier
+END
+VER 3 000000000000001D "meteor" "134400"
+#showtooltip Meteor
+/cast [@cursor] Meteor;
+END
+VER 3 0000000000000038 "mote" "134400"
+/target  Frothing gorger
+/Cast arcane barrage
+END
+VER 3 0000000000000001 "mount" "4640486"
+/use surf jelly
+/use Ashes of Al'ar
+/dismount
+END
+VER 3 0000000000000006 "nova/fb" "134400"
+#showtooltip
+/castsequence reset=10 Ice nova, Fire Blast
+END
+VER 3 000000000000003A "personals " "134400"
+/rw Stack on orange
+END
+VER 3 0000000000000015 "pp" "134400"
+#showtooltip
+/targetenemy
+/cast Pick Pocket
+END
+VER 3 0000000000000016 "ppm" "134400"
+/cleartarget
+/cast [@mouseover] Pick Pocket
+/script SetRaidTargetIcon("mouseover",1)
+END
+VER 3 0000000000000018 "ppppppp" "134400"
+#showtooltip Pick Pocket
+/cleartarget
+/console targetNearestDistance 10.000000
+/targetenemy [noharm][dead]
+/cast [harm,nodead] Pick Pocket
+END
+VER 3 0000000000000009 "reload" "3610506"
+/reload
+END
+VER 3 0000000000000012 "ress" "134400"
+#showtooltip
+/use 9
+END
+VER 3 0000000000000037 "shimmer" "134400"
+#showtooltip
+/cast shimmer
+/cqc
+END
+VER 3 0000000000000008 "spark" "134400"
+#showtooltip
+/cast Radiant Spark
+/use 13
+END
+VER 3 000000000000002C "ST" "236225"
+/loi 2
+END
+VER 3 0000000000000034 "ST" "1698700"
+/loi 1
+END
+VER 3 0000000000000019 "sword deckl" "135328"
+/use Swords Deck
+/script AcceptQuest()
+END
+VER 3 0000000000000031 "target" "132149"
+/target Yellow Junkhopper
+END
+VER 3 000000000000000A "totm" "236222"
+#showtooltip Touch of the Magi
+/cast 16
+/castsequence  reset=10 Arcane Barrage, Touch of the Magi, Touch of the Magi
+END
+VER 3 0000000000000021 "volcanic macro" "135822"
+/run WeakAuras.ScanEvents("LIQUID_PRIVATE_AURA_MACRO", true)
+END
+VER 3 0000000000000036 "yet" "135849"
+/tar globe yeti
+END

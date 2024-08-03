@@ -1,0 +1,29 @@
+## Interface: 40400
+## Title: XP MultiBar
+## Notes: XP / Reputation bar
+## Notes-ruRU: Панель досвіду / репутації
+## Author: RainmakerUA
+## Version: 10.1.2-final
+## SavedVariables: XPMultiBarDB
+## OptionalDeps: Ace3, LibQTip-1.0, LibSharedMedia-3.0
+## X-Category: Miscellaneous, Artwork, Combat, Quests & Leveling
+## X-Website: https://github.com/RainmakerUA/XPMultiBar
+## X-Embeds: Ace3, LibQTip-1.0, LibSharedMedia-3.0
+## X-ReleaseDate: 20240501
+
+libs.xml
+
+Locales\locales.xml
+
+XPMultiBar.lua
+XPMultiBar_Data.lua
+XPMultiBar_Bars.lua
+XPMultiBar_Config.lua
+XPMultiBar_Frame.lua
+XPMultiBar_ReputationInfo.lua
+XPMultiBar_ReputationFavoriteCheckbox.lua
+XPMultiBar_Reputation.lua
+XPMultiBar_Main.lua
+
+XPMultiBar_Frame.xml
+XPMultiBar_Reputation.xml

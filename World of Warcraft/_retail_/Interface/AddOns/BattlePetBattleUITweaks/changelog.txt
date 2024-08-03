@@ -1,0 +1,109 @@
+07/23/2024 version 2.2.1
+- toc update for 11.0.0 patch
+
+07/06/2024 version 2.2.0
+- Updated to work with The War Within beta/PTR clients (if 'Load out of date AddOns' is enabled)
+
+05/07/2024 version 2.1.13
+- toc update for 10.2.7 patch
+
+03/19/2024 version 2.1.12
+- toc update for 10.2.6 patch
+
+01/16/2024 version 2.1.11
+- toc update for 10.2.5 patch
+
+11/07/2023 version 2.1.10
+- toc update for 10.2 patch
+
+09/05/2023 version 2.1.9
+- toc update for 10.1.7 patch
+
+07/11/2023 version 2.1.8
+- toc update for 10.1.5 patch
+
+05/03/2023 version 2.1.7
+- toc update for icon and 10.1.0 patch
+
+03/21/2023 version 2.1.6
+- toc update for 10.0.7 patch
+
+01/25/2023 version 2.1.5
+- toc update for 10.0.5 patch
+
+11/15/2022 version 2.1.4
+- toc update for 10.0.2 patch
+
+10/27/2022 version 2.1.3
+- Fix for Health Ticks and Current Stats anchoring on 10.0.2 (beta) clients
+
+10/25/2022 version 2.1.2
+- Update for Dragonflight clients
+
+10/22/2022 version 2.1.1
+- Fix for Dragonflight beta (10.0.2) lua errors introduced with last week's beta build
+
+10/10/2022 version 2.1.0
+- Updated for Dragonflight clients
+- Beta/PTR users will need to load out of date addons for this to work until the update for the Dragonflight pre-patch
+
+08/16/2022 version 2.0.12
+- toc update for 9.2.7 patch
+
+05/31/2022 version 2.0.11
+- toc update for 9.2.5 patch
+
+05/22/2022 version 2.0.10
+- Added wago and curse project IDs to toc
+
+05/12/2022 version 2.0.9
+- Fix to make wowup recognize the wowinterface provider. (May require a rescan of folders in wowup)
+
+02/22/2022 version 2.0.8
+- Updated toc for 9.2
+
+11/02/2021 version 2.0.7
+- Updated toc for 9.1.5
+
+09/18/2021 version 2.0.6
+- Updated Key Binds tweak: Holding down the Forfeit bind (6 key) will display a cooldown spinner on the Forfeit button. If it completes while the key was down (1.5 seconds), then the confirmation popup will dismiss and releasing the key will forfeit the match without further confirmation.
+- (Version 2.0.6b removes debug code I accidentally left in)
+
+08/23/2021 version 2.0.5
+- Added support for PetTracker Switcher for Key Binds tweak
+
+06/29/2021 version 2.0.4
+- Fix for enemy ability border texture in 9.1 clients
+- Added global reference to this addon's namespace for other addons to use
+- Updated toc for 9.1
+
+03/13/2021 version 2.0.3
+- Updated toc for 9.0.5
+
+12/05/2020 version 2.0.2
+- Fix for tooltip overlapping abilities while in pet selection mode.
+- Updated toc for 9.0.2
+
+10/24/2020 version 2.0.1
+- Removed the "titlebar" and border to the enemy abilities.
+- Moved enemy abilities down a bit closer to the bottom UI.
+
+10/13/2020 version 2.0.0
+- Renamed from 'Battle Pet Battle Stats' to 'Battle Pet Battle UI Tweaks'.
+- Added key bindings for forfeit, pass and pet swaps.
+- Added enemy ability buttons and cooldowns in a small window at the bottom of the battle UI.
+- Added options in the Interface Options Panel (ESC -> Interface -> AddOns) to turn each of the modules on or off.
+
+Prior versions were named Battle Pet Battle Stats
+-- 07/17/2018 1.0.11 toc update for 8.0 patch
+-- 08/29/2017 1.0.10 toc update for 7.3 patch
+-- 03/28/2017 1.0.9 toc update for 7.2 patch
+-- 10/30/2016 1.0.8 toc update for 7.1 patch
+-- 07/16/2016 1.0.7 toc update for 7.0 patch
+-- 07/04/2015 1.0.6 added tick to mark where an unmodified Explode would kill opponent
+-- 06/22/2015 1.0.5 toc update for 6.2 patch
+-- 05/26/2015 1.0.4 round number displayed at top in place of "VS" after battle starts
+-- 05/22/2015 1.0.3 ticks only show when you mouseover health bar area; fixed /fstack issue caused by new ticks
+-- 05/20/2015 1.0.2 added ticks to mark important health percents (25% and 50% for all pets, 35% and 70% for magic pets); mouseover of ticks will show damage or heals needed to reach it.
+-- 05/18/2015 1.0.1 initial release
+-- 03/28/2014 1.0.0 posted on comments to another addon on wowinterface

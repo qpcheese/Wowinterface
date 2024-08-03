@@ -1,0 +1,28 @@
+lightweight tag 5a3ca40ae7dadaf3c64cf0abb35b64d7d391f975 11.0.0
+Author:	GitHub <noreply@github.com>
+Date:	Tue Jul 23 18:59:21 2024 -0500
+
+commit c06a8bacf0386c743ed7869db5d5b14b80f8c22b
+Author: Jason Burch <jburch@runningbirdstudios.com>
+Date:   Tue Jul 23 18:57:23 2024 -0500
+
+    Updated for 11.0.0 client release
+    
+    Updated for 11.0.0 client release
+
+commit c06a8bacf0386c743ed7869db5d5b14b80f8c22b
+Author: Jason Burch <jburch@runningbirdstudios.com>
+Date:   Tue Jul 23 18:57:23 2024 -0500
+
+    Updated for 11.0.0 client release
+    
+    Updated for 11.0.0 client release
+
+commit c06a8bacf0386c743ed7869db5d5b14b80f8c22b
+Author: Jason Burch <jburch@runningbirdstudios.com>
+Date:   Tue Jul 23 18:57:23 2024 -0500
+
+    Updated for 11.0.0 client release
+    
+    Updated for 11.0.0 client release
+

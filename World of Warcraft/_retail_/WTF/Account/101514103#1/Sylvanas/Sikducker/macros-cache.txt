@@ -1,0 +1,5 @@
+VER 3 0100000000000001 "blinkroll" "134400"
+#showtooltip
+/cast blink
+/cast Spirit Walk
+END

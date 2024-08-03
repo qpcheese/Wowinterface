@@ -1,0 +1,10 @@
+lightweight tag 96b13df5a8567bf832235a24f4df0c0077fbb8b7 v1.6.1
+Author:	romdeau23 <43295566+romdeau23@users.noreply.github.com>
+Date:	Sat Jul 27 21:21:55 2024 +0200
+
+commit 96b13df5a8567bf832235a24f4df0c0077fbb8b7
+Author: romdeau23 <43295566+romdeau23@users.noreply.github.com>
+Date:   Sat Jul 27 21:21:55 2024 +0200
+
+    Fix interface version
+

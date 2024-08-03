@@ -1,0 +1,129 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Frame name="EchoRaidToolsCollapsableConfig" virtual="true" mixin="EchoRaidToolsCollapsableConfigMixin">
+        <Size x="1" y="46"/>
+        <Frames>
+            <Button parentKey="Button" mixin="EchoRaidToolsCollapsableConfigButtonMixin">
+                <Size x="1" y="46"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT" />
+                    <Anchor point="BOTTOMRIGHT" y="4"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="BACKGROUND">
+                        <Texture parentKey="BGLeft" atlas="dropdown-left-cap">
+                            <Color r="0.5" g="0.45" b="0.5"/>
+                            <Size>
+                                <AbsDimension x="16" y="46"/>
+                            </Size>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" x="0" y="0"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="BGRight" atlas="dropdown-right-cap">
+                            <Color r="0.5" g="0.45" b="0.5"/>
+                            <Size>
+                                <AbsDimension x="16" y="46"/>
+                            </Size>
+                            <Anchors>
+                                <Anchor point="TOPRIGHT" x="0" y="0"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="BGMiddle" atlas="_dropdown-middle">
+                            <Color r="0.5" g="0.45" b="0.5"/>
+                            <Size>
+                                <AbsDimension x="16" y="46"/>
+                            </Size>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" relativeKey="$parent.BGLeft" relativePoint="TOPRIGHT" x="0" y="0"/>
+                                <Anchor point="TOPRIGHT" relativeKey="$parent.BGRight" relativePoint="TOPLEFT" x="0" y="0"/>
+                            </Anchors>
+                            <!--TexCoords bottom="0.7"/-->
+                        </Texture>
+                    </Layer>
+                    <Layer level="BORDER">
+                        <Texture parentKey="HLLeft" atlas="dropdown-hover-left-cap" hidden="true">
+                            <Color r="0.7" g="0.65" b="0.7"/>
+                            <Size>
+                                <AbsDimension x="16" y="46"/>
+                            </Size>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" x="0" y="0"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="HLRight" atlas="dropdown-hover-right-cap" hidden="true">
+                            <Color r="0.7" g="0.65" b="0.7"/>
+                            <Size>
+                                <AbsDimension x="16" y="46"/>
+                            </Size>
+                            <Anchors>
+                                <Anchor point="TOPRIGHT" x="0" y="0"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="HLMiddle" atlas="_dropdown-hover-middle"  hidden="true">
+                            <Color r="0.7" g="0.65" b="0.7"/>
+                            <Size>
+                                <AbsDimension x="16" y="46"/>
+                            </Size>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" relativeKey="$parent.HLLeft" relativePoint="TOPRIGHT" x="0" y="0"/>
+                                <Anchor point="TOPRIGHT" relativeKey="$parent.HLRight" relativePoint="TOPLEFT" x="0" y="0"/>
+                            </Anchors>
+                            <!--TexCoords bottom="0.7"/-->
+                        </Texture>
+                    </Layer>
+                    <Layer level="ARTWORK">
+                        <FontString parentKey="ButtonText" inherits="GameFontNormal"> <!--"Number14FontWhite"-->
+                            <Color r="1" g="1" b="1" a="1"/>
+                            <Anchors>
+                                <Anchor point="LEFT" x="20" y="-2"/>
+                            </Anchors>
+                        </FontString>
+                        <Texture parentKey="OpenArrow" atlas="Azerite-PointingArrow" desaturated="true" alpha="0.3">
+                            <Size x="20" y="13"/>
+                            <Anchors>
+                                <Anchor point="RIGHT" x="-20" y="-2"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                </Layers>
+                <Scripts>
+                    <OnClick method="OnClick"/>
+                    <OnLoad method="OnLoad"/>
+                    <OnEnter method="OnEnter"/>
+                    <OnLeave method="OnLeave"/>
+                </Scripts>
+            </Button>
+            <Frame parentKey="ContentPanel" hidden="true">
+                <Size x="1" y="1"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Button" relativePoint="BOTTOMLEFT" x="0" y="4"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent.Button" relativePoint="BOTTOMRIGHT" x="0" y="4"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="BACKGROUND">
+                        <Texture parentKey="background" atlas="Options_InnerFrame"> <!--file="Interface\Buttons\grad1C"-->
+                            <Anchors>
+                                <Anchor point="TOPLEFT" x="12" y="-1"/>
+                                <Anchor point="BOTTOMRIGHT" x="-12" y="-2"/>
+                            </Anchors>
+                            <TexCoords top="0.1"/>
+                        </Texture>
+                        <Texture parentKey="background-highlight" atlas="_GarrMission_MissionListTopHighlight"> <!--atlas="UI-Achievement-Border-7"  atlas="GarrMission_ListGlow-Select"  -->
+                            <Color r="1" g="1" b="1" a="0.6"/>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" x="12" y="0"/>
+                                <Anchor point="BOTTOMRIGHT" x="-12" y="25"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                </Layers>
+            </Frame>
+        </Frames>
+        <Scripts>
+            <OnLoad/> <!--method="OnLoad"/-->
+        </Scripts>
+    </Frame>
+
+    </Ui>

@@ -1,0 +1,9 @@
+## Interface: 110000
+## Author: Voopie
+## Title: LiteBag Item Level
+## Version: 0.21
+## IconTexture: 133639
+## Dependencies: LiteBag
+## SavedVariables: LiteBagItemLevelDB
+
+LiteBag_ItemLevel.lua

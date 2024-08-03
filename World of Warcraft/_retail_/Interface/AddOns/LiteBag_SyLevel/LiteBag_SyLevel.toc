@@ -1,0 +1,12 @@
+## Interface: 70100
+## Title: LiteBag_SyLevel
+## Version: 7.1.1
+## Author: Xodiv of Nagrand
+## Email: mib@post.com
+## Dependencies: LiteBag, SyLevel
+## X-Curse-Packaged-Version: 7.1.1
+## X-Curse-Project-Name: LiteBag_SyLevel
+## X-Curse-Project-ID: litebag_sylevel
+## X-Curse-Repository-ID: wow/litebag_sylevel/mainline
+
+LiteBag_SyLevel.lua

@@ -1,0 +1,42 @@
+## Interface: 110000
+## Title: New |cffffff88Openables|r
+## Author: cont1nuity (previous maintainers/creators: srhinos, PeknaMrcha alias EduardCurse alias Edik)
+## Version: v1.10k
+## Notes: Popup Button and keybind for opening or using items in your bags. Continued version of the original NOP to support Dragonflight.
+## SavedVariables: NewOpenablesProfile
+## OptionalDeps: Masque, WagoAnalytics
+## X-Curse-Project-ID: 790748
+## X-Wago-ID: RBKpYOGE
+
+LibStub\LibStub.lua
+WagoAnalytics\Shim.lua
+CallbackHandler-1.0\CallbackHandler-1.0.lua
+AceAddon-3.0\AceAddon-3.0.xml
+AceDB-3.0\AceDB-3.0.xml 
+AceDBOptions-3.0\AceDBOptions-3.0.xml 
+AceGUI-3.0\AceGUI-3.0.xml
+AceConfig-3.0\AceConfig-3.0.xml
+AceConsole-3.0\AceConsole-3.0.xml
+AceEvent-3.0\AceEvent-3.0.xml
+AceTimer-3.0\AceTimer-3.0.xml
+AceLocale-3.0\AceLocale-3.0.xml
+LibBabble-SubZone-3.0\lib.xml
+LibQuestItem-1.0\lib.xml
+HereBeDragons\HereBeDragons-2.0.lua
+HereBeDragons\HereBeDragons-Migrate.lua
+
+nop-locale-enUS.lua
+nop-locale-deDE.lua
+nop-locale-esES.lua 
+nop-locale-zhTW.lua
+nop-locale-zhCN.lua
+
+nop-private.lua
+nop-data.lua 
+nop-button.lua
+nop-profile.lua
+nop-events.lua
+nop-core.lua
+nop-item.lua
+nop-slash.lua
+nop-quest.lua

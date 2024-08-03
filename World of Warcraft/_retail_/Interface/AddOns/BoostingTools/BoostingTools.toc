@@ -1,0 +1,59 @@
+## Interface: 100207
+## Title: [BT] Boosting Tools
+## Author: Zaazu
+## Notes: Contains tools which boosters may find helpful. 
+## Version: 1.6.9
+## SavedVariables: BToolsDB
+## X-Curse-Project-ID: 545028
+
+#Libs
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\StdUi\StdUi.xml
+Libs\LibParse\LibParse.lua
+#Libs\LibRealmInfo\LibRealmInfo.lua
+
+#Libs\MinimapIcon
+Libs\LibDBIcon-1.0\lib.xml
+
+#Libs\AceAddon
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceTimer-3.0\AceTimer-3.0.xml
+
+#Debug
+Modules\Debug\DebugTools.lua
+
+#BoostingTools
+BoostingTools.lua
+Modules\Core\Utils.lua
+Modules\Core\Resources.lua
+Modules\Core\AddonEvents.lua
+Modules\Core\DatabaseManager.lua
+Modules\Core\ThemeManager.lua
+Modules\Core\CommandManager.lua
+
+#Model
+Modules\MailLogger.lua
+Modules\TradeLogger.lua
+Modules\RealmLanguageInfo.lua
+
+#View
+Modules\UI\MinimapIconUI.lua
+Modules\UI\SettingsUI.lua
+Modules\UI\TooltipUI.lua
+Modules\UI\DataWindowUI.lua
+Modules\UI\CharacterInfoUI.lua
+
+#View\Mail
+Modules\UI\Mail\MailMenuPanelUI.lua
+Modules\UI\Mail\MailLogUI.lua
+Modules\UI\Mail\MailViewerUI.lua
+
+#View\Trade
+Modules\UI\Trade\TradeLogUI.lua
+Modules\UI\Trade\TradeViewerUI.lua
+Modules\UI\Trade\TradePanelUI.lua

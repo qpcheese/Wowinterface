@@ -1,0 +1,24 @@
+
+UltraSquirtSettingsDB = {
+["profileKeys"] = {
+["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
+["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+["Qpfromagee - Ragnaros"] = "Qpfromagee - Ragnaros",
+["Qutlaw - Ravencrest"] = "Qutlaw - Ravencrest",
+["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
+},
+["global"] = {
+["BattleHealingThreshold"] = {
+[107489] = 70,
+},
+["AutoBandage"] = true,
+["HealDelay"] = 1,
+["PetBattleCloseDelay"] = 1,
+["KEYBIND"] = "NUMPADDIVIDE",
+["AutoPetTreat"] = true,
+},
+}

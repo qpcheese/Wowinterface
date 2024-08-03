@@ -1,0 +1,24 @@
+## Interface: 40400
+## Version: 3.7.1
+## Title: FrameColor
+## Author: Slothpala
+## SavedVariables: FrameColorDB
+## OptionalDeps: Ace3, LibDeflate
+## X-Curse-Project-ID: 693720
+
+embeds.xml
+Init_Cata.lua
+locales.xml
+
+Core.lua
+Options\Options.lua
+Options\OptionsFrame.lua
+DB.lua
+SkinEngine.lua
+UnitColors.lua
+ProfileSharing.lua
+ColorControl.lua
+HookRegistry.lua
+Api.lua
+
+modules_Cata.xml

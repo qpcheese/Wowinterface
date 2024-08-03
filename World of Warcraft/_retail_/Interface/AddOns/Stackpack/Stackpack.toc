@@ -1,0 +1,17 @@
+## Title: Stackpack
+## Version: 10.2.7
+## Interface: 100207
+## X-Interface: 100207
+## Author: Djuice, now maintained by Rubio
+## Notes: Finds and stacks unstacked items in your bags, bank and guild bank.
+## SavedVariables: StackpackGlobalSettings
+## SavedVariablesPerCharacter: StackpackSettings
+## X-Curse-Packaged-Version: 10.2.7
+## X-Curse-Project-Name: Stackpack
+## X-Curse-Project-ID: 93340
+## X-Curse-Repository-ID: wow/stackpack-revived/mainline
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+Stackpack.xml

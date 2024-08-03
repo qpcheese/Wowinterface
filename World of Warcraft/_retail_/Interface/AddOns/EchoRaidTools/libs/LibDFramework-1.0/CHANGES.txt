@@ -1,0 +1,94 @@
+tag de4a8b62c32c03be5280c47f0d3a7f1657f37194 v10.0.1.430
+Author:	Tercio Jose <terciob19@hotmail.com>
+Date:	Sat May 20 14:10:29 2023 -0300
+
+commit 6a9294472080a0804e50cf00c9e430c6a35c9ab8
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Sat May 20 14:10:14 2023 -0300
+
+    added tabcontainer, more code on headers
+
+commit c0df1086447585c7f76c9c4b92c1954d2a5b3e4a
+Author: Continuity <continuity@gmx.net>
+Date:   Fri May 12 08:11:48 2023 +0200
+
+    - new evoker spec
+
+commit 87a95c6aa24f87319af87214cf507f0e1494f1ba
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Thu May 11 22:26:54 2023 -0300
+
+    Reskin sliders visual update
+
+commit 87a95c6aa24f87319af87214cf507f0e1494f1ba
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Thu May 11 22:26:54 2023 -0300
+
+    Reskin sliders visual update
+
+commit ab30965ece170ba5d1a8121bbf97ff149732a494
+Author: Continuity <continuity@gmx.net>
+Date:   Wed May 10 17:11:26 2023 +0200
+
+    - fix classic-era LibClassicCasterino support
+
+commit 77ab0f03a3ab406948d408351c0628e46148a77a
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Sat May 6 15:41:36 2023 -0300
+
+    small update
+
+commit a81c64b61b7089498c4d5f53c553ab52eb162284
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Fri May 5 19:03:53 2023 -0300
+
+    DF Update
+
+commit 4942780a3abb24bd2adc615fdfa4731a4e395ea7
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Tue May 2 18:49:12 2023 -0300
+
+    Bump Version
+
+commit 468911bc278517ae306742f0b6a9c83a04ebc1bf
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Tue May 2 18:48:09 2023 -0300
+
+    Added containers, Headers now has its own file
+
+commit 468911bc278517ae306742f0b6a9c83a04ebc1bf
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Tue May 2 18:48:09 2023 -0300
+
+    Added containers, Headers now has its own file
+
+commit b868197df30bfc5a6760d3e72e89e7a68e91d007
+Author: Continuity <continuity@gmx.net>
+Date:   Sat Apr 8 19:57:36 2023 +0200
+
+    - cast data cleanup
+
+commit 3dd1c78734d558a5732522e70d13256a10cc62e7
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Sun Mar 19 19:55:56 2023 -0300
+
+    Language and Tooltips update
+
+commit 3dd1c78734d558a5732522e70d13256a10cc62e7
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Sun Mar 19 19:55:56 2023 -0300
+
+    Language and Tooltips update
+
+commit fbaba7c28bf6174e39653aa64197c6e1f3cca3a9
+Author: Continuity <continuity@gmx.net>
+Date:   Thu Mar 16 10:01:47 2023 +0100
+
+    - respect "no fade" settings
+
+commit 1139ca8fe030df6ab0a6fc006bac96640a1c2b0c
+Author: Continuity <continuity@gmx.net>
+Date:   Sat Mar 4 21:41:44 2023 +0100
+
+    - text entry callback
+

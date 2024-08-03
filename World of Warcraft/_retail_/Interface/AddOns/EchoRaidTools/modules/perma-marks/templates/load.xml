@@ -1,0 +1,10 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Include file="raidtarget.xml" />
+	<Include file="options.xml" />
+    <Script file="wizarditem.lua" />
+    <Include file="wizarditem.xml" />
+    <Include file="availableitems.xml" />
+    <Include file="currentsetup.xml" />
+    <Include file="wizard.xml" />
+</Ui>

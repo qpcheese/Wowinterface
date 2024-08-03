@@ -1,0 +1,24 @@
+## Interface: 110000
+## Title: LFGSpamFilter
+## Version: 1.6.1
+## Author: romdeau23
+## Notes: LFG tool spam filtering and reporting
+## SavedVariables: LFGSpamFilterAddonConfig
+## OptionalDeps: PremadeGroupsFilter
+## IconTexture: Interface\AddOns\LFGSpamFilter\icon
+## X-Website: https://github.com/romdeau23/wow-lfgspamfilter
+
+lib/globals.lua
+lib/event.lua
+lib/module.lua
+modules/config.lua
+modules/interop.lua
+modules/tempBan.lua
+modules/ui.lua
+modules/ui/statusButton.xml
+modules/ui/statusButton.lua
+modules/ui/banButton.xml
+modules/ui/banButton.lua
+modules/ui/options.xml
+modules/ui/options.lua
+modules/main.lua

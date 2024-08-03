@@ -1,0 +1,25 @@
+<Bindings>
+	<Binding name="PETWALKER_TOGGLE_AUTO" category="PetWalker ">
+        PetWalker_binding_toggle_autosummon()
+    </Binding>
+    <Binding name="PETWALKER_NEW_PET" category="PetWalker ">
+		 PetWalker_binding_new_pet()
+    </Binding>
+    <Binding name="PETWALKER_PREVIOUS_PET" category="PetWalker ">
+		 PetWalker_binding_previous_pet()
+    </Binding>
+    <Binding name="PETWALKER_TARGET_PET" category="PetWalker ">
+		 PetWalker_binding_target_pet()
+    </Binding>
+    <Binding name="PETWALKER_DISMISS_PET" category="PetWalker ">
+        PetWalker_binding_dismiss_and_disable()
+    </Binding>
+</Bindings>
+
+<!--
+Note on the category:
+
+As of now (Nov 2022, client 100002), using a variable for the category produces taint. Hence the string. The space at the end should ensure that it doesn't resolve to a global `PetWalker` namespace, should I introduce one in the future.
+
+More info: https://us.forums.blizzard.com/en/wow/t/bindingsxml-taint-and-other-issues/1394681/8
+ -->

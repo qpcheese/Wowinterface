@@ -1,0 +1,72 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+    <Button name="MIOG_QueueFrame" inherits="BackdropTemplate, InsetFrameTemplate" virtual="true">        
+        <Size y="43" />
+
+        <Frames>
+            <Button parentKey="CancelApplication" inherits="SecureActionButtonTemplate">
+                <Size x="14" y="14" />
+                <Anchors>
+                    <Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT" x="-5" />
+                </Anchors>
+
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture parentKey="Icon" file="Interface\Addons\MythicIOGrabber\res\infoIcons\xSmallIcon.png" setAllPoints="true" />
+                    </Layer>
+                </Layers>
+
+                <Scripts>
+                    <OnLeave>
+                        GameTooltip:Hide()
+                    </OnLeave>
+                </Scripts>
+            </Button>
+        </Frames>
+
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="ActiveIDFrame" hidden="true">
+                    <Size x="9" y="9" />
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT" x="-3" y="-3"/>
+                    </Anchors>
+                    <Color r="1" g="0" b="0" a="1" />
+                </Texture>
+            </Layer>
+
+            <Layer level="OVERLAY">
+                <FontString parentKey="Name" font="LibMono" justifyH="LEFT" justifyV="TOP" outline="NORMAL" text="Name" wordwrap="true" spacing="0">
+                    <FontHeight val="11"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" x="4" y="-5"/>
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT" y="-30" x="-18"/>
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Age" font="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL" text="Age">
+                    <FontHeight val="11"/>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativeKey="$parent" relativePoint="BOTTOMLEFT" x="4" y="3" />
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Wait" font="LibMono" justifyH="RIGHT" justifyV="MIDDLE" outline="NORMAL" text="Wait">
+                    <FontHeight val="11"/>
+                    <Anchors>
+                        <Anchor point="LEFT" relativeKey="$parent.Age" relativePoint="RIGHT" x="3" />
+                    </Anchors>
+                </FontString>
+            </Layer>
+
+            <Layer level="BACKGROUND">
+                <Texture parentKey="Background">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+    </Button>
+</Ui>

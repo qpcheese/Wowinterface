@@ -1,0 +1,12 @@
+tag 7.1.1
+e1dbe7a1032bfe652da5860d965b9a6bf5b6df4a
+Mike Battersby <mib@unimelb.edu.au>
+2016-10-31 11:28:16 +1100
+
+Tagging 7.1.1
+
+
+--------------------
+
+Mike Battersby:
+	- Try to update for LiteBag 7.1

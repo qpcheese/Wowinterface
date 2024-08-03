@@ -1,0 +1,10 @@
+lightweight tag ad308a1ac8831f3c0831625be0e3c54d3e7af577 10.2.7-01
+Author:	Dave Hendler <sollaires@gmail.com>
+Date:	Tue May 7 15:54:02 2024 -0700
+
+commit ad308a1ac8831f3c0831625be0e3c54d3e7af577
+Author: Dave Hendler <sollaires@gmail.com>
+Date:   Tue May 7 15:54:02 2024 -0700
+
+    Bump version for 10.2.7
+

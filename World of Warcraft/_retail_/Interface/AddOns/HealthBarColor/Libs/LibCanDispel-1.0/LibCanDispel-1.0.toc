@@ -1,0 +1,6 @@
+## Interface: 100206
+## Version: 7db1117
+## Title: Lib: CanDispel-1.0
+## Author: Slothpala
+
+LibCanDispel-1.0.lua

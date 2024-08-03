@@ -1,0 +1,29 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+	<Script file="cooldowns.lua"/>
+	<Script file="EventHandling.lua"/>
+	<Script file="types.lua"/>
+	<Script file="savedSettings.lua"/>
+	<Script file="cooldownsFrame.lua"/>
+	<Script file="options.lua"/>
+	<Script file="config.lua"/>
+	<Script file="states.lua"/>
+	<Script file="modernise.lua"/>
+	<Script file="SpellSelection.lua"/>
+	<Script file="Profiles.lua"/>
+	
+	<Script file="Templates\cooldownsFrameTemplates.lua"/>
+	<Script file="Templates\CooldownsTemplates.lua"/>
+	<Script file="Templates\DropdownControl.lua"/>
+	<Script file="Templates\FilterSpellButton.lua"/>
+	<Script file="Templates\CooldownNavigationTemplate.lua"/>
+	<Script file="Templates\SpellSelectionTemplate.lua"/>
+
+	<Include file="Templates\cooldownsFrameTemplates.xml"/>
+	<Include file="Templates\CooldownsTemplates.xml"/>
+	<Include file="Templates\DropdownControl.xml"/>
+	<Include file="Templates\FilterSpellButton.xml"/> 
+	<Include file="Templates\CooldownNavigationTemplate.xml"/>
+	<Include file="Templates\SpellSelectionTemplate.xml"/>
+</Ui>

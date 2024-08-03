@@ -1,0 +1,97 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+	<Frame name="EchoCooldownDisplayTemplate" inherits="EchoIconAndBarBaseTemplate" frameStrata="LOW" enableMouseClicks="false" mixin="EchoCooldownDisplayTemplateMixin" virtual="true"/>
+
+	<Frame name="EchoCooldownsHeaderTemplate" virtual="true" frameStrata="MEDIUM">
+		<Size x="200" y="20"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture file="Interface\Buttons\BlueGrad64_faded" desaturated="true" alphaMode="BLEND" alpha="0.3">
+					<Color r="0" g="0" b="0"/>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<FontString inherits="Number13FontWhite" parentKey="HeaderText" justifyH="CENTER" justifyV="MIDDLE">
+					<Anchors>
+						<Anchor point="LEFT"/>
+						<Anchor point="RIGHT"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+	</Frame>
+
+	<Frame name="EchoCooldownsDraggableAnchor" virtual="true" enableMouse="true" movable="true" mixin="EchoCooldownsDraggableAnchorMixin" clampedToScreen="true">
+		<Size x="30" y="30" />
+		<Scripts>
+			<OnLoad method="OnLoad"/>
+			<OnDragStart method="OnDragStart"/>
+			<OnDragStop method="OnDragStop"/>
+			<OnEnter method="OnEnter"/>
+			<OnLeave method="OnLeave"/>
+		</Scripts>
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture setAllPoints="true" parentKey="Background">
+					<Color r="1.0" g="0.5" b="0.3" a="0.7" />
+					<Animations>
+						<AnimationGroup looping="REPEAT" parentKey="AnimationGroup">
+							<Alpha parentKey="FadeIn" duration="1" order="1" fromAlpha=".8" toAlpha="1"/>
+							<Alpha parentKey="FadeOut" duration="1" order="2" fromAlpha="1" toAlpha=".5"/>
+						</AnimationGroup>
+					</Animations>
+				</Texture>
+				<Texture setAllPoints="true" parentKey="LocateTexture" alpha="0">
+					<Color r="1.0" g="0.5" b="0.3" a="1" />
+					<Animations>
+						<AnimationGroup looping="NONE" parentKey="LocateAnim">
+							<Alpha parentKey="FadeIn" duration="1" order="1" fromAlpha="0" toAlpha="0.8" smoothing="IN"/>
+							<Scale fromScaleX="40" fromScaleY="40" toScaleX="1" toScaleY="1" duration="1" order="1" parentKey="scaleIn" smoothing="IN"/>
+							<Alpha parentKey="reset" duration="0" order="2" fromAlpha="1" toAlpha="0"/>
+						</AnimationGroup>
+					</Animations>
+				</Texture>
+				<Texture file="Interface/AddOns/EchoRaidTools/assets/textures/anchor.tga" alpha="0.5">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="4" y="-4"/>
+						<Anchor point="BOTTOMRIGHT" x="-4" y="4"/>
+					</Anchors>
+				</Texture>
+				<FontString inherits="Number13FontWhite" parentKey="GroupName" hidden="true">
+					<Anchors>
+						<Anchor point="BOTTOM" relativePoint="TOP" x="0" y="3"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Anchors>
+			<Anchor point="CENTER"/>
+		</Anchors>
+		
+	</Frame>
+
+	<Frame name="EchoCooldownsOutline" frameStrata="BACKGROUND" virtual="true" inherits="BackdropTemplate" mixin="EchoCooldownsOutlineMixin">
+		<KeyValues>
+			<KeyValue key="backdropInfo" value="BACKDROP_TEXT_PANEL_0_16" type="global" />
+		</KeyValues>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture setAllPoints="true" parentKey="BG">
+					<Color r="0.95" g="0.9" b="0.6" a="0.1" />
+					
+				</Texture>
+			</Layer>
+		</Layers>
+		<Animations>
+			<AnimationGroup looping="REPEAT" parentKey="AnimationGroup">
+				<Alpha parentKey="FadeIn" duration=".5" order="1" fromAlpha=".7" toAlpha="1"/>
+				<Alpha parentKey="FadeOut" duration=".5" order="2" fromAlpha="1" toAlpha=".7"/>
+			</AnimationGroup>
+		</Animations>
+		<Scripts>
+			<OnShow method="OnShow"/>
+			<OnHide method="OnHide"/>
+		</Scripts>
+	</Frame>
+</Ui>

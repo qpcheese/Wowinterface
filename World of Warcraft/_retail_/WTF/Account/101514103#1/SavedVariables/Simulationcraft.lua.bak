@@ -1,0 +1,86 @@
+
+SimulationCraftDB = {
+["profileKeys"] = {
+["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+["Qpcheese - Chamber of Aspects"] = "Qpcheese - Chamber of Aspects",
+["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
+["Qpc - Draenor"] = "Qpc - Draenor",
+["Zelení - Draenor"] = "Zelení - Draenor",
+["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+["Sikducker - Sylvanas"] = "Sikducker - Sylvanas",
+["Qpebank - Draenor"] = "Qpebank - Draenor",
+["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+["Qtte - Sylvanas"] = "Qtte - Sylvanas",
+["Qute - Sylvanas"] = "Qute - Sylvanas",
+["Myfficraider - Ragnaros"] = "Myfficraider - Ragnaros",
+["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
+["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
+["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
+["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+["Qpew - Ragnaros"] = "Qpew - Ragnaros",
+["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
+},
+["profiles"] = {
+["Qpaladin - Ragnaros"] = {
+},
+["Qpcheese - Chamber of Aspects"] = {
+},
+["Qpcheese - Ragnaros"] = {
+["frame"] = {
+["ofsx"] = 0.9999418258666992,
+["ofsy"] = 1.000040292739868,
+},
+["minimap"] = {
+["minimapPos"] = 283.5359443822794,
+},
+},
+["Qpc - Draenor"] = {
+},
+["Zelení - Draenor"] = {
+},
+["Dogson - Ragnaros"] = {
+},
+["Sikducker - Sylvanas"] = {
+},
+["Qpebank - Draenor"] = {
+},
+["Qubit - Ragnaros"] = {
+},
+["Djagon - Ragnaros"] = {
+},
+["Qtte - Sylvanas"] = {
+},
+["Qute - Sylvanas"] = {
+},
+["Myfficraider - Ragnaros"] = {
+},
+["Fishanus - Ragnaros"] = {
+},
+["Laurs - Ragnaros"] = {
+},
+["Cyclosarin - Ragnaros"] = {
+},
+["Qpe - Ravencrest"] = {
+},
+["Jerwin - Ragnaros"] = {
+},
+["Flurrq - Ragnaros"] = {
+},
+["Qpfromage - Ragnaros"] = {
+["frame"] = {
+["ofsx"] = 201,
+["ofsy"] = 19.0001106262207,
+["point"] = "BOTTOM",
+["relativePoint"] = "BOTTOM",
+},
+},
+["Qpew - Ragnaros"] = {
+},
+["Qpfromage - Sylvanas"] = {
+},
+},
+}

@@ -1,0 +1,12 @@
+
+WeakAurasOptionsSaved = {
+["locale"] = "enUS",
+["needsRebuild"] = true,
+["version"] = "5.15.3",
+["magnetAlign"] = true,
+["spellCache"] = {
+},
+["spellCacheStrings"] = true,
+["spellCacheAchievements"] = true,
+["build"] = "55824",
+}

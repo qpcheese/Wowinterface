@@ -1,0 +1,82 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+    <Frame name="MIOG_LastInvitesTemplate" inherits="BackdropTemplate" virtual="true">
+        <Frames>
+            <Frame parentKey="TitleBar" inherits="BackdropTemplate">
+                <Size y="20" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent" relativePoint="TOPRIGHT" />
+                </Anchors>
+
+                <Frames>
+                    <Button parentKey="Retract" inherits="UIButtonTemplate">
+                        <Size x="20" y="20" />
+                        <Anchors>
+                            <Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT" x="-5" y="-1"/>
+                        </Anchors>
+
+                        <NormalTexture file="interface/buttons/arrow-down-up.blp" />
+                        <DisabledTexture file="interface/buttons/arrow-down-disabled.blp" />
+
+                        <Scripts>
+                            <OnLoad>
+                                self:GetNormalTexture():SetRotation(-math.pi/2)
+                                self:GetDisabledTexture():SetRotation(-math.pi/2)
+                            </OnLoad>
+                        </Scripts>
+                    </Button>
+                </Frames>
+
+                <Layers>
+                    <Layer level="OVERLAY">
+                        <FontString parentKey="FontString" font="LibMono" justifyH="CENTER" justifyV="TOP" outline="NORMAL" text="Last invites" wordwrap="true" nonspacewrap="true" spacing="0">
+
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+
+            <Frame parentKey="SpecificScrollBox" inherits="WowScrollBoxList" frameStrata="HIGH">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.TitleBar" relativePoint="BOTTOMLEFT"/>
+                    <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" />
+                </Anchors>
+            </Frame>
+            <EventFrame parentKey="SpecificScrollBar" inherits="MinimalScrollBar" frameStrata="HIGH">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.SpecificScrollBox" relativePoint="TOPRIGHT"/>
+                    <Anchor point="BOTTOMLEFT" relativeKey="$parent.SpecificScrollBox" relativePoint="BOTTOMRIGHT" />
+                </Anchors>
+            </EventFrame>
+
+            <!--<ScrollFrame parentKey="ScrollFrame" inherits="ScrollFrameTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.TitleBar" relativePoint="BOTTOMLEFT"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent.TitleBar" relativePoint="BOTTOMRIGHT" />
+                </Anchors>
+
+                <ScrollChild>
+                    <Frame parentKey="Container" inherits="VerticalLayoutFrame, BackdropTemplate">
+                        <KeyValues>
+                            <KeyValue key="spacing" value="3" type="number" />
+                            <KeyValue key="align" value="top" type="global" />
+                            <KeyValue key="scrollBarHideIfUnscrollable" value="true" type="string" />
+                        </KeyValues>
+
+                        <Anchors>
+                            <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" />
+                            <Anchor point="BOTTOMRIGHT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" />
+                        </Anchors>
+                    </Frame>
+                </ScrollChild>
+            </ScrollFrame>-->
+        </Frames>
+
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="Background" setAllPoints="true" />
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

@@ -1,0 +1,71 @@
+
+RaiderIO_Config = {
+["replayAlpha"] = 1,
+["enableKeystoneTooltips"] = true,
+["profilePoint"] = {
+["y"] = 0,
+["x"] = -16,
+["point"] = "TOPLEFT",
+},
+["enableReplay"] = false,
+["enableLFGDropdown"] = true,
+["displayWeeklyGuildBest"] = false,
+["mplusHeadlineMode"] = 1,
+["showMainsScore"] = true,
+["showRaidEncountersInProfile"] = true,
+["showAverageScore"] = true,
+["enableWhoMessages"] = true,
+["useEnglishAbbreviations"] = false,
+["replayPoint"] = {
+["y"] = 67.99994659423828,
+["x"] = -18.0001335144043,
+["point"] = "RIGHT",
+},
+["disableScoreColors"] = false,
+["showMainBestScore"] = true,
+["allowClientToControlCombatLog"] = false,
+["minimapIcon"] = {
+["minimapPos"] = 180,
+["showInCompartment"] = true,
+["lock"] = false,
+["hide"] = false,
+},
+["dockReplay"] = false,
+["replayBackground"] = {
+["a"] = 0.5,
+["r"] = 0,
+["g"] = 0,
+["b"] = 0,
+},
+["showScoreInCombat"] = true,
+["showRaiderIOProfile"] = true,
+["replaySelection"] = "user_best_replay",
+["enableGuildTooltips"] = true,
+["enableWhoTooltips"] = true,
+["hidePersonalRaiderIOProfile"] = false,
+["enableProfileModifier"] = true,
+["enableFriendsTooltips"] = true,
+["showRoleIcons"] = true,
+["positionProfileAuto"] = true,
+["enableUnitTooltips"] = true,
+["showDropDownCopyURL"] = true,
+["enableClientEnhancements"] = true,
+["enableLFGTooltips"] = true,
+["showScoreModifier"] = false,
+["enableCombatLogTracking"] = false,
+["lockProfile"] = false,
+["showSimpleScoreColors"] = false,
+["inverseProfileModifier"] = false,
+["showClientGuildBest"] = true,
+}
+RaiderIO_LastCharacter = "eu-Qpe-ravencrest"
+RaiderIO_MissingCharacters = {
+["eu-Qpe-ravencrest"] = true,
+}
+RaiderIO_MissingServers = {
+}
+RaiderIO_CachedRuns = nil
+RaiderIO_RWF = {
+}
+RaiderIO_CompletedReplays = {
+}

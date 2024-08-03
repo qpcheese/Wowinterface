@@ -1,0 +1,19 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Button name="EchoRaidTools_ProfilesNavigationSelectableButtonFrame" inherits="EchoRaidTools_Treeview_Button" mixin="EchoRaidTools_ProfilesNavigationSelectableButtonFrameMixin" virtual="true">
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture parentKey="SelectedTexture" atlas="CreditsScreen-Selected" setAllPoints="true" alphaMode="ADD" alpha="0.2" hidden="true"> <!--heartofazeroth-list-item-selected-->
+                    <TexCoords left="0.5" right="1" top="0" bottom="1"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-3" y="-1"/>
+                        <Anchor point="BOTTOMRIGHT" x="0" y="1"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="AdditionalLoad" inherit="append"/>
+        </Scripts>
+    </Button>
+</Ui>

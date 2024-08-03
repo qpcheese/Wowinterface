@@ -1,0 +1,115 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!--HUD-->
+    <Script file="Modules\_retail_\HUD\PlayerFrame.lua"/>
+    <Script file="Modules\_retail_\HUD\TargetFrame.lua"/>
+    <Script file="Modules\_retail_\HUD\TargetFrameToT.lua"/>
+    <Script file="Modules\_retail_\HUD\FocusFrame.lua"/>
+    <Script file="Modules\_retail_\HUD\FocusFrameToT.lua"/>
+    <Script file="Modules\_retail_\HUD\BossFrames.lua"/>
+    <Script file="Modules\_retail_\HUD\PetFrameTexture.lua"/>
+    <Script file="Modules\_retail_\HUD\MinimapCompassTexture.lua"/>
+    <Script file="Modules\_retail_\HUD\BuffFrame.lua"/>
+    <Script file="Modules\_retail_\HUD\DropDown.lua"/>
+    <Script file="Modules\_retail_\HUD\ObjectiveTrackerFrame.lua"/>
+    <Script file="Modules\_retail_\HUD\StatusTrackingBars.lua"/>
+    <Script file="Modules\_retail_\HUD\Tooltips.lua"/>
+    <Script file="Modules\_retail_\HUD\PopUps.lua"/>
+    <Script file="Modules\_retail_\HUD\MirrorTimerContainer.lua"/>
+    <Script file="Modules\_retail_\HUD\Castbars.lua"/>
+    <Script file="Modules\_retail_\HUD\ChatFrame.lua"/>
+    <!--ActionBars-->
+    <Script file="Modules\_retail_\ActionBars\ActionBar1.lua"/>
+    <Script file="Modules\_retail_\ActionBars\ActionBar2.lua"/>
+    <Script file="Modules\_retail_\ActionBars\ActionBar3.lua"/>
+    <Script file="Modules\_retail_\ActionBars\ActionBar4.lua"/>
+    <Script file="Modules\_retail_\ActionBars\ActionBar5.lua"/>
+    <Script file="Modules\_retail_\ActionBars\ActionBar6.lua"/>
+    <Script file="Modules\_retail_\ActionBars\ActionBar7.lua"/>
+    <Script file="Modules\_retail_\ActionBars\ActionBar8.lua"/>
+    <Script file="Modules\_retail_\ActionBars\PetActionBar.lua"/>
+    <Script file="Modules\_retail_\ActionBars\StanceBar.lua"/>
+    <Script file="Modules\_retail_\ActionBars\SpellFlyout.lua"/>
+        <!--Bartender-->
+        <Script file="Modules\_retail_\ActionBars\Bartender4BonusActionBar.lua"/>
+        <Script file="Modules\_retail_\ActionBars\Bartender4ClassBar1.lua"/>
+        <Script file="Modules\_retail_\ActionBars\Bartender4ClassBar2.lua"/>
+        <Script file="Modules\_retail_\ActionBars\Bartender4ClassBar3.lua"/>
+        <Script file="Modules\_retail_\ActionBars\Bartender4ClassBar4.lua"/>
+        <!--Dominos-->
+        <Script file="Modules\_retail_\ActionBars\DominosBar9.lua"/>
+        <Script file="Modules\_retail_\ActionBars\DominosBar10.lua"/>
+        <Script file="Modules\_retail_\ActionBars\DominosBar11.lua"/>
+        <Script file="Modules\_retail_\ActionBars\DominosBar12.lua"/>
+        <Script file="Modules\_retail_\ActionBars\DominosBar13.lua"/>
+        <Script file="Modules\_retail_\ActionBars\DominosBar14.lua"/>
+    <!--MicroMenu-->
+    <Script file="Modules\_retail_\MicroMenu\CharacterMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\ProfessionMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\PlayerSpellsMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\AchievementMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\QuestLogMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\GuildMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\LFDMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\CollectionsMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\EJMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\StoreMicroButton.lua"/>
+    <Script file="Modules\_retail_\MicroMenu\MainMenuMicroButton.lua"/>
+    <!--Windows-->
+    <Script file="Modules\_retail_\Windows\CharacterFrame.lua"/>
+
+    <Script file="Modules\_retail_\Windows\PlayerSpellsFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\WorldMapFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\CommunitiesFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\PVEFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ContainerFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\MailFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\EncounterJournal.lua"/>
+    <Script file="Modules\_retail_\Windows\GameMenuFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\FlightMapFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\CollectionsJournal.lua"/>
+    <Script file="Modules\_retail_\Windows\GossipFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\SettingsPanel.lua"/>
+    <Script file="Modules\_retail_\Windows\InspectFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\FriendsFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\DressUpFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ProfessionsFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\MacroFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\AuctionHouseFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ItemSocketingFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\QuestFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ChannelFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ItemUpgradeFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\AddonList.lua"/>
+    <Script file="Modules\_retail_\Windows\ClickBindingFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\MerchantFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\WardrobeFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ColorPickerFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ItemTextFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ItemInteractionFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ClassTrainerFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\TradeFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\CalendarFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\BankFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ReadyCheckListenerFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\LootFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ScrappingMachineFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\IslandsQueueFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\AzeriteRespecFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ProfessionsCustomerOrdersFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\AlliedRacesFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\AchievementFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\PetStableFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\StopwatchFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\ProfessionsBookFrame.lua"/>
+    <Script file="Modules\_retail_\Windows\DelvesCompanion.lua"/>
+    <Script file="Modules\_retail_\Windows\DelvesDifficultyPicker.lua"/>
+    <!--Group-->
+    <Script file="Modules\_retail_\Group\CompactRaidFrameManager.lua"/>
+    <Script file="Modules\_retail_\Group\CompactRaidGroupBorderFrame.lua"/>
+    <Script file="Modules\_retail_\Group\CompactPartyFrameBorderFrame.lua"/>
+    <Script file="Modules\_retail_\Group\PartyFrame.lua"/>
+    <!--Skins-->
+    <Script file="Modules\_retail_\Skins\FrameColor_Skin.lua"/>
+    <Script file="Modules\_retail_\Skins\Ace3_Skin.lua"/>
+    <Script file="Modules\_retail_\Skins\LibDBIcon_Skin.lua"/>
+</Ui>

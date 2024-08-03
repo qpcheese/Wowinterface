@@ -1,0 +1,99 @@
+
+PetBattleMasterDb = {
+["namespaces"] = {
+["PetTeamManager"] = {
+},
+["PetTeamView"] = {
+["profiles"] = {
+["Default"] = {
+["teams"] = {
+{
+["pets"] = {
+{
+["speciesId"] = 2842,
+["abilities"] = {
+445,
+2356,
+1954,
+},
+["creatureId"] = 161964,
+["petType"] = 6,
+["petId"] = "BattlePet-0-000012B81435",
+["level"] = 25,
+["name"] = "Anomalus",
+},
+{
+["speciesId"] = 2921,
+["abilities"] = {
+1392,
+800,
+1966,
+},
+["creatureId"] = 171230,
+["petType"] = 3,
+["petId"] = "BattlePet-0-000011F1418A",
+["level"] = 25,
+["name"] = "Gorm Harrier",
+},
+{
+["speciesId"] = 4565,
+["abilities"] = {
+219,
+350,
+1078,
+},
+["creatureId"] = 223600,
+["petType"] = 1,
+["petId"] = "BattlePet-0-0000131EEDE0",
+["level"] = 25,
+["name"] = "Trishi",
+},
+},
+["name"] = "Unnamed",
+["icon"] = "Interface\\Icons\\ability_deathknight_summongargoyle",
+},
+},
+},
+},
+},
+},
+["profileKeys"] = {
+["Dogson - Ragnaros"] = "Default",
+["Fishanus - Ragnaros"] = "Default",
+["Qpaladin - Ragnaros"] = "Default",
+["Sikducker - Sylvanas"] = "Default",
+["Qpfromage - Ragnaros"] = "Default",
+["Qpfromage - Sylvanas"] = "Default",
+["Flurrq - Ragnaros"] = "Default",
+},
+["profiles"] = {
+["Default"] = {
+["tooltipAttachment"] = false,
+["frames"] = {
+["petbmInfoView"] = {
+["windowPosition"] = {
+["y"] = -49,
+["x"] = 0,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+},
+},
+["CollectionsJournal"] = {
+},
+["petbmTeamView"] = {
+["windowPosition"] = {
+["y"] = -45,
+["x"] = -11,
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+},
+},
+["petbmNameIconEditor"] = {
+},
+},
+["minimapIcon"] = {
+["minimapPos"] = 159.6956079638037,
+},
+},
+},
+}

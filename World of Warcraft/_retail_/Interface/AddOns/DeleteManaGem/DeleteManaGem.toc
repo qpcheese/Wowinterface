@@ -1,0 +1,6 @@
+## Interface: 100207
+## Title: Delete mana gem
+## Author: Exo - Credits to Dorovon
+## Version: 1.0
+
+DeleteManaGem.lua

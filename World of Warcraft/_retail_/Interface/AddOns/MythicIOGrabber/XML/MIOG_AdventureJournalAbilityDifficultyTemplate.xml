@@ -1,0 +1,24 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">    
+    <Frame name="MIOG_AdventureJournalAbilityDifficultyTemplate" inherits="ResizeLayoutFrame" virtual="true">
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString parentKey="Name" inherits="LibMono" justifyH="LEFT" justifyV="MIDDLE" outline="NORMAL">
+                    <FontHeight val="11" />
+                    <Size x="85" />
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" />
+                    </Anchors>
+                </FontString>
+
+                <FontString parentKey="Description" font="LibMono" justifyH="LEFT" justifyV="TOP" wordwrap="true" nonspacewrap="true">
+                    <FontHeight val="11" />
+                    <Size x="270" />
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeKey="$parent.Name" relativePoint="TOPRIGHT" />
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>
