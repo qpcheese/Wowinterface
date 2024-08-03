@@ -1,3 +1,0 @@
-
-PetTracker_State = {
-}

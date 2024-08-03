@@ -1,9 +1,0 @@
-## Interface: 100002 
-## Title: |cFFFFFF00<UwU Soundpack>|r |cff69ccf0by Deezi|r
-## Notes: UwU sounds you know what you downloaded
-## IconTexture: Interface\AddOns\SharedMedia_Deezi\icons\UwU Icon2
-
-libs\LibStub\LibStub.lua
-libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
-libs\LibSharedMedia-3.0\lib.xml
-Deezi.lua 

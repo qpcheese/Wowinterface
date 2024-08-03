@@ -1,2 +1,0 @@
-
-BagnonItemLevel_DB = nil

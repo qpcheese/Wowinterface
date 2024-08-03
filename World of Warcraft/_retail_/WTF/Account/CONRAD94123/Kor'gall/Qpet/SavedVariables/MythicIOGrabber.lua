@@ -1,2 +1,0 @@
-
-MIOG_QueueUpTime = nil

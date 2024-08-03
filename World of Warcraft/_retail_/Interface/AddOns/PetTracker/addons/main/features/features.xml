@@ -1,6 +1,0 @@
-<Ui>
-  <Script file="mapCanvas.lua"/>
-  <Script file="mapSearch.lua"/>
-  <Script file="objectives.lua"/>
-  <Script file="tooltips.lua"/>
-</Ui>

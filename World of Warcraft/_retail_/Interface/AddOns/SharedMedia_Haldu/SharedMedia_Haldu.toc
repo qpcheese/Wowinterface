@@ -1,7 +1,0 @@
-## Interface: 100200
-## Title: SharedMedia_|cFFff8effHaldu|r
-
-libs\LibStub\LibStub.lua
-libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
-embeds.xml
-SharedMedia_Haldu.lua 

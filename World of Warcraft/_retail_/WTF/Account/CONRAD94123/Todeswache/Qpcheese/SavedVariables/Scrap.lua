@@ -1,2 +1,0 @@
-
-Scrap_CharSets = nil

@@ -1,6 +1,0 @@
-## Interface: 80300
-## Title: MinimapLine
-## Notes: Draws a line extending from the player arrow on the minimap
-## Author: Semlar
-## Version: 8.3.0.2
-MinimapLine.lua

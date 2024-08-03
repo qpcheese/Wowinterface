@@ -1,3 +1,0 @@
-https://www.wowace.com/projects/libdialog-1-0/files
-
-mercurial/hg

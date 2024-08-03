@@ -1,5 +1,0 @@
-
-CursorTrail_Config = {
-	["Profiles"] = {
-	},
-}

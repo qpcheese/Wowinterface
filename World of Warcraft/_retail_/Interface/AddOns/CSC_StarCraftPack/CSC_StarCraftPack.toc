@@ -1,8 +1,0 @@
-## Interface: 100007
-## Title: Chat Sound Customizer [StarCraft Pack]
-## Notes: A pack with 12 StarCraft sounds to be used in CSC or where else you want. :)
-## Author: Paulo & Eliote
-## Version: 1.1
-
-Sounds.lua
-Main.lua

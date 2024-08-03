@@ -1,2 +1,0 @@
-
-BagnonBoE_DB = nil

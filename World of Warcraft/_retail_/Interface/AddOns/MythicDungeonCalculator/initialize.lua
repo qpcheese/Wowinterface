@@ -1,3 +1,0 @@
-local AddonName, MDC = ...
-_G["MDC"] = MDC
-MDC.L = {}

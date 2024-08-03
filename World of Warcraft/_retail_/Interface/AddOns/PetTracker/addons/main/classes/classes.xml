@@ -1,6 +1,0 @@
-<Ui>
-	<Include file="abstract\abstract.xml"/>
-  <Include file="maps\maps.xml"/>
-	<Include file="combat\combat.xml"/>
-  <Include file="tracking\tracking.xml"/>
-</Ui>

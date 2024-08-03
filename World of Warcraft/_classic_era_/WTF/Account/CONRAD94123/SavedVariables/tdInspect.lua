@@ -1,2 +1,0 @@
-
-TDDB_INSPECT = nil

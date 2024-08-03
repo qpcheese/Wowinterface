@@ -1,4 +1,0 @@
-
-CinematicMovieSoundDB = {
-	["TalkingHead"] = true,
-}

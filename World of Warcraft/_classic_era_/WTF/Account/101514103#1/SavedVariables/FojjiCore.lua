@@ -1,6 +1,0 @@
-
-FojjiTimersSavedVars = {
-}
-FojjiSkipWTF = {
-	["skip"] = true,
-}

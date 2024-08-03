@@ -1,4 +1,0 @@
-
-MATABPC = {
-	["CURRENTPROFILE"] = "DEFAULT",
-}

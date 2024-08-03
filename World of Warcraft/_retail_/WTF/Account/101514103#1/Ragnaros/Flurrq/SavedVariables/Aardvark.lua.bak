@@ -1,7 +1,0 @@
-
-AVKCharacterSellTable = {
-}
-AVKCharacterDestroyTable = {
-}
-AVKCharacterProtectTable = {
-}

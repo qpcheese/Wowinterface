@@ -1,9 +1,0 @@
-Sound files (C)
-Pitbull: Calle Ocho
-
-The contents of BigWigs_Countdown_Overwatch.toc and Core.lua have been
-identified as being free of known restrictions under copyright law, including
-all related and neighboring rights.
-
-You can copy, modify, distribute and perform the work, only for non commercial
-purposes, without asking permission

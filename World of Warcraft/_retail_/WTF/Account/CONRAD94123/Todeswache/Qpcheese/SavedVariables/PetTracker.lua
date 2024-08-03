@@ -1,2 +1,0 @@
-
-PetTracker_State = nil

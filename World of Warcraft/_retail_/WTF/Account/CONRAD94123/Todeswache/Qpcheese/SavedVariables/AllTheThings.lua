@@ -1,5 +1,0 @@
-
-AllTheThingsSettingsPerCharacter = {
-	["Filters"] = {
-	},
-}
