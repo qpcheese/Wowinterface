@@ -1,0 +1,30 @@
+--localization file for German
+local L = LibStub("AceLocale-3.0"):NewLocale("UltraSquirt", "deDE")
+
+if not L then return end
+
+L["Keybind Missing"] = "Die Tastenbindung ist nicht festgelegt"
+L["Cannot Modify In Battle"] = "Der NPC \"Haustierkampf als Ziel\" kann während eines Haustierkampfes nicht geändert werden - bitte versuche es erneut, wenn der Kampf vorbei ist"
+L["Invalid Target"] = "Ungültiges Ziel - bitte wähle einen gültigen, wiederholbaren Haustierkampf-NPC aus und versuche es erneut."
+L["Addon Enabled"] = "Addon aktiviert"
+L["Addon Disabled"] = "Addon deaktiviert"
+L["Resetting Options"] = "Zurücksetzen von Addon-Optionen und Fensterposition"
+L["Resetting Options OOC"] = "Optionen werden zurückgesetzt, wenn der Kampf endet"
+L["General Settings Group"] = "Allgemeine Einstellungen"
+L["Delay Settings Group"] = "Verzögerungseinstellungen"
+L["Delay Settings Description"] = "Mit den folgenden Einstellungen können Sie die verwendeten Verzögerungstimer anpassen.  Die Standardeinstellungen sollten in den allermeisten Fällen funktionieren.  Wenn Sie eine hohe Latenz haben oder anderweitig auf Probleme stoßen, bei denen das Addon unerwartet heilt, versuchen Sie, die Zeiten leicht zu erhöhen."
+L["Rematch Load Team Delay Setting"] = "Rematch Load Team Delay"
+L["Rematch Load Team Delay Description"] = "Während du die Rematch-Optionen \"Load Healthiest Pets\" und \"After Pet Battles Too\" verwendest, pausiert das Addon nach Abschluss eines Pet Battle alle weiteren Aktionen, während Rematch ein neues Team lädt.  Dies sollte maximal 1 oder 2 Sekunden dauern.  Wenn Sie diese Einstellung anpassen, wird die maximal zulässige Verzögerung geändert."
+L["Pet Battle Close Delay Setting"] = "Pet Battle Close Verzögerung"
+L["Pet Battle Close Delay Description"] = "Nachdem ein Haustiergefecht beendet ist, verzögert sich das Addon für einen kurzen Zeitraum, damit das Spiel den Status und die Gesundheit der geladenen Haustiere aktualisieren kann.  Ändern Sie diesen Wert, um die maximale Verzögerung zu erhöhen oder zu verringern.  Dies gilt nur, wenn Sie nicht die Rematch-Optionen \"Load Healthiest Pets\" und \"After Pet Battles Too\" verwenden."
+L["Heal Delay Setting"] = "Heilungsverzögerung"
+L["Heal Delay Description"] = "Nachdem Sie Ihre Haustiere mit einem Verband oder Revice Battle Pets geheilt haben, verzögert sich das Addon für einen kurzen Zeitraum, damit das Spiel aktualisiert werden kann.  Ändern Sie diesen Wert, um die maximale Verzögerung zu erhöhen oder zu verringern."
+L["Help Header"] = "Verfügbare Schrägstrichbefehle:"
+L["Help Default"] = "Schalten Sie das UltraSquirt-Hauptfenster um."
+L["Help Config"] = "Konfigurationsfenster anzeigen."
+L["Help Advanced"] = "Bereich \"Erweiterte Teams\" anzeigen."
+L["Help Reset"] = "Setzen Sie alle UltraSquirt-Einstellungen und Fensterpositionen auf die Standardeinstellungen zurück."
+L["Help Help"] = "Zeigen Sie diese Liste der verfügbaren Befehle an."
+L["Invalid Command"] = "Ungültiger Befehl."
+L["Team Name"] = "Teamname"
+L["Mute Addon Enabled and Disabled Messages"] = "Nachrichten zum Aktivieren und Deaktivieren von aktivierten und deaktivierten Nachrichten zum Stummschalten des Addons"

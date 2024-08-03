@@ -1,0 +1,62 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!--HUD-->
+    <Script file="Modules\_classic_\HUD\PlayerFrame.lua"/>
+    <Script file="Modules\_classic_\HUD\TargetFrame.lua"/>
+    <Script file="Modules\_retail_\HUD\PetFrameTexture.lua"/>
+    <Script file="Modules\_classic_\HUD\TargetFrameToT.lua"/>
+    <Script file="Modules\_wrath_\HUD\FocusFrame.lua"/>
+    <Script file="Modules\_wrath_\HUD\FocusFrameToT.lua"/>
+    <Script file="Modules\_classic_\HUD\ChatFrame.lua"/>
+    <Script file="Modules\_retail_\HUD\DropDown.lua"/>
+    <Script file="Modules\_classic_\HUD\PopUps.lua"/>
+    <Script file="Modules\_retail_\HUD\Tooltips.lua"/>
+    <Script file="Modules\_classic_\HUD\MinimapCompassTexture.lua"/>
+    <Script file="Modules\_classic_\HUD\StatusTrackingBars.lua"/>
+    <Script file="Modules\_classic_\HUD\Castbars.lua"/>
+    <!--ActionBars-->
+    <Script file="Modules\_classic_\ActionBars\MainMenuBar.lua"/>
+    <Script file="Modules\_classic_\ActionBars\MultiBarBottomLeft.lua"/>
+    <Script file="Modules\_classic_\ActionBars\MultiBarBottomRight.lua"/>
+    <Script file="Modules\_classic_\ActionBars\MultiBarRight.lua"/>
+    <Script file="Modules\_classic_\ActionBars\MultiBarLeft.lua"/>
+    <Script file="Modules\_classic_\ActionBars\PetActionBar.lua"/>
+    <Script file="Modules\_classic_\ActionBars\StanceBar.lua"/>
+    <!--Windows-->
+    <Script file="Modules\_classic_\Windows\GameMenuFrame.lua"/>
+    <Script file="Modules\_cata_\Windows\CharacterFrame.lua"/>
+    <Script file="Modules\_cata_\Windows\SpellBookFrame.lua"/>
+    <Script file="Modules\_wrath_\Windows\QuestLogFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\QuestFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\GossipFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\MerchantFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\ClassTrainerFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\InspectFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\ContainerFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\LootFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\FriendsFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\MailFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\AddonList.lua"/>
+    <Script file="Modules\_classic_\Windows\WorldMapFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\FlightMapFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\ChannelFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\SettingsPanel.lua"/>
+    <Script file="Modules\_cata_\Windows\ClassTalentFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\MacroFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\AuctionHouseFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\ColorPickerFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\TradeFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\DressUpFrame.lua"/>
+    <Script file="Modules\_classic_\Windows\ProfessionsFrame.lua"/>
+    <Script file="Modules\_wrath_\Windows\AchievementFrame.lua"/>
+    <Script file="Modules\_cata_\Windows\CollectionsJournal.lua"/>
+    <Script file="Modules\_cata_\Windows\PVPFrame.lua"/>
+    <Script file="Modules\_wrath_\Windows\PVEFrame_Wrath.lua"/>
+    <Script file="Modules\_retail_\Windows\StopwatchFrame.lua"/>
+    <Script file="Modules\_cata_\Windows\CommunitiesFrame.lua"/>
+    <Script file="Modules\_cata_\Windows\EncounterJournal.lua"/>
+    <!--Group-->
+    <Script file="Modules\_retail_\Group\CompactRaidFrameManager.lua"/>
+    <!--Skins-->
+    <Script file="Modules\_classic_\Skins\FrameColor_Skin.lua"/>
+    <Script file="Modules\_retail_\Skins\LibDBIcon_Skin.lua"/>
+</Ui>

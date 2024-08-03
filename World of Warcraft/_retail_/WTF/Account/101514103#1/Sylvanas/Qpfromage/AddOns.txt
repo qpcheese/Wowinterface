@@ -139,7 +139,7 @@ Postal: disabled
 ProfessionShoppingList: enabled
 RCLootCouncil: disabled
 ShadowedUF_Options: enabled
-ShadowedUnitFrames: disabled
+ShadowedUnitFrames: enabled
 SharedMedia: enabled
 SharedMedia_MyMedia: enabled
 SilverDragon: disabled

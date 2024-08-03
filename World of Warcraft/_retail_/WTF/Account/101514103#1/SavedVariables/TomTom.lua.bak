@@ -26,6 +26,9 @@ TomTomDB = {
 },
 ["profiles"] = {
 ["Default"] = {
+["persistence"] = {
+["cleardistance"] = 0,
+},
 ["arrow"] = {
 ["position"] = {
 "TOP",
@@ -35,12 +38,6 @@ nil,
 -12.00192737579346,
 },
 },
-["minimap"] = {
-["default_iconsize"] = 20,
-},
-["persistence"] = {
-["cleardistance"] = 0,
-},
 ["block"] = {
 ["position"] = {
 "TOPRIGHT",
@@ -49,6 +46,9 @@ nil,
 -76.99742126464844,
 -19.99916458129883,
 },
+},
+["minimap"] = {
+["default_iconsize"] = 20,
 },
 ["worldmap"] = {
 ["default_icon"] = "Interface\\AddOns\\TomTom\\Images\\GoldRedDotNew",

@@ -1,0 +1,30 @@
+--localization file for Chinese (Simplified)
+local L = LibStub("AceLocale-3.0"):NewLocale("UltraSquirt", "zhCN")
+
+if not L then return end
+
+L["Keybind Missing"] = "未設置鍵綁定"
+L["Cannot Modify In Battle"] = "寵物戰鬥中無法修改目標寵物戰NPC - 戰鬥結束後請重試"
+L["Invalid Target"] = "目標無效 - 請選擇有效的可重複寵物戰鬥NPC，然後重試"
+L["Addon Enabled"] = "外掛程式已啟用"
+L["Addon Disabled"] = "外掛程式已禁用"
+L["Resetting Options"] = "重置外掛程式選項和視窗位置"
+L["Resetting Options OOC"] = "戰鬥結束時將重置選項。"
+L["General Settings Group"] = "常規設置"
+L["Delay Settings Group"] = "延遲設置"
+L["Delay Settings Description"] = "以下設置允許您自定義使用的延遲計時器。 預設值應該在絕大多數情況下有效。 如果您的延遲很高，或者遇到外掛程式意外修復的問題，請嘗試稍微增加時間。"
+L["Rematch Load Team Delay Setting"] = "複賽載入團隊延遲"
+L["Rematch Load Team Delay Description"] = "使用複賽選項「載入最健康的寵物」和「寵物戰鬥后」時，在寵物戰鬥完成後，外掛程式將暫停任何進一步的操作，而重新比賽載入新團隊。 這最多需要 1 或 2 秒。 調整此設定將更改允許的最大延遲。"
+L["Pet Battle Close Delay Setting"] = "寵物戰鬥關閉延遲"
+L["Pet Battle Close Delay Description"] = "寵物對戰完成後，外掛程式將延遲一小段時間，以允許遊戲更新載入寵物的狀態和生命值。 更改此值可增加或減少最大延遲。 這僅適用於不使用複賽選項「載入最健康的寵物」和「寵物戰鬥后」 的情況。"
+L["Heal Delay Setting"] = "癒合延遲"
+L["Heal Delay Description"] = "用繃帶或Revice Battle寵物治癒您的寵物后，外掛程式將延遲一小段時間以允許遊戲更新。 更改此值可增加或減少最大延遲。"
+L["Help Header"] = "可用的斜杠命令："
+L["Help Default"] = "切換 UltraSquirt 主視窗。"
+L["Help Config"] = "顯示配置面板。"
+L["Help Advanced"] = "顯示「高級團隊」面板。"
+L["Help Reset"] = "將所有 UltraSquirt 設置和視窗位置重置為預設值。"
+L["Help Help"] = "顯示此可用命令清單。"
+L["Invalid Command"] = "命令無效。"
+L["Team Name"] = "團隊名稱"
+L["Mute Addon Enabled and Disabled Messages"] = "啟用和禁用外掛程式的靜音消息"

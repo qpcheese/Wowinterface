@@ -2,28 +2,28 @@
 MDC_Settings = nil
 MDCDB = {
 ["profileKeys"] = {
-["Qtte - Sylvanas"] = "Qtte - Sylvanas",
 ["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
-["Kaijid - Ragnaros"] = "Kaijid - Ragnaros",
-["Qute - Sylvanas"] = "Qute - Sylvanas",
 ["Sikducker - Sylvanas"] = "Sikducker - Sylvanas",
+["Kaijid - Ragnaros"] = "Kaijid - Ragnaros",
 ["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+["Qtte - Sylvanas"] = "Qtte - Sylvanas",
+["Qute - Sylvanas"] = "Qute - Sylvanas",
 ["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
 ["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 },
 ["profiles"] = {
-["Qtte - Sylvanas"] = {
-["iLvl"] = 4,
-["class"] = "HUNTER",
-},
 ["Qpaladin - Ragnaros"] = {
+},
+["Sikducker - Sylvanas"] = {
+["iLvl"] = 311,
+["class"] = "MAGE",
 },
 ["Kaijid - Ragnaros"] = {
 ["addonPosition"] = {
 ["xOffset"] = 196.9996948242188,
-["yOffset"] = -20.33326530456543,
-["anchorFrom"] = "TOPLEFT",
 ["anchorTo"] = "TOPLEFT",
+["anchorFrom"] = "TOPLEFT",
+["yOffset"] = -20.33326530456543,
 },
 ["optionalBottomFrame"] = {
 ["show"] = true,
@@ -66,12 +66,6 @@ MDCDB = {
 },
 },
 },
-["Qute - Sylvanas"] = {
-},
-["Sikducker - Sylvanas"] = {
-["iLvl"] = 311,
-["class"] = "MAGE",
-},
 ["Qpfromage - Ragnaros"] = {
 ["addonPosition"] = {
 ["xOffset"] = 2.999956607818604,
@@ -82,6 +76,40 @@ MDCDB = {
 ["content"] = 2,
 },
 ["calculation"] = {
+["affixLevel"] = {
+{
+22,
+22,
+},
+{
+22,
+22,
+},
+{
+22,
+22,
+},
+{
+22,
+22,
+},
+{
+22,
+22,
+},
+{
+22,
+22,
+},
+{
+22,
+22,
+},
+{
+22,
+22,
+},
+},
 ["affixTime"] = {
 {
 1808,
@@ -116,76 +144,17 @@ MDCDB = {
 2160,
 },
 },
-["affixLevel"] = {
-{
-22,
-22,
-},
-{
-22,
-22,
-},
-{
-22,
-22,
-},
-{
-22,
-22,
-},
-{
-22,
-22,
-},
-{
-22,
-22,
-},
-{
-22,
-22,
-},
-{
-22,
-22,
 },
 },
+["Qtte - Sylvanas"] = {
+["iLvl"] = 4,
+["class"] = "HUNTER",
 },
+["Qute - Sylvanas"] = {
 },
 ["Qpfromage - Sylvanas"] = {
 ["class"] = "MAGE",
 ["calculation"] = {
-["affixLevel"] = {
-{
-7,
-4,
-},
-{
-8,
-},
-{
-5,
-5,
-},
-{
-7,
-3,
-},
-{
-7,
-},
-{
-8,
-},
-{
-7,
-2,
-},
-{
-8,
-6,
-},
-},
 ["affixTime"] = {
 {
 2091,
@@ -220,8 +189,39 @@ MDCDB = {
 1968,
 },
 },
+["affixLevel"] = {
+{
+7,
+4,
 },
-["iLvl"] = 524,
+{
+8,
+},
+{
+5,
+5,
+},
+{
+7,
+3,
+},
+{
+7,
+},
+{
+8,
+},
+{
+7,
+2,
+},
+{
+8,
+6,
+},
+},
+},
+["iLvl"] = 458,
 ["weeklyRewards"] = {
 nil,
 519,

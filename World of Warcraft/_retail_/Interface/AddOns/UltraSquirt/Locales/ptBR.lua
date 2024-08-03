@@ -1,0 +1,30 @@
+--localization file for Portuguese
+local L = LibStub("AceLocale-3.0"):NewLocale("UltraSquirt", "ptBR")
+
+if not L then return end
+
+L["Keybind Missing"] = "O keybind não está definido"
+L["Cannot Modify In Battle"] = "Não é possível modificar o NPC de batalha do animal de estimação do alvo durante uma batalha do animal de estimação - por favor, tente novamente quando a batalha terminar"
+L["Invalid Target"] = "Alvo inválido - selecione um NPC de batalha de animal de estimação válido e tente novamente"
+L["Addon Enabled"] = "Addon ativado"
+L["Addon Disabled"] = "Addon desativado"
+L["Resetting Options"] = "Redefinindo as opções do addon e a posição da janela"
+L["Resetting Options OOC"] = "As opções serão redefinidas quando o combate terminar"
+L["General Settings Group"] = "Configurações gerais"
+L["Delay Settings Group"] = "Configurações de atraso"
+L["Delay Settings Description"] = "As configurações abaixo permitem que você personalize os temporizadores de atraso usados.  Os padrões devem funcionar na grande maioria dos casos.  Se você tiver alta latência ou se deparar com problemas em que o addon se cura inesperadamente, tente aumentar um pouco os tempos."
+L["Rematch Load Team Delay Setting"] = "Atraso da equipe de carregamento de revanche"
+L["Rematch Load Team Delay Description"] = "Ao usar as opções de revanche \"Load Healthiest Pets\" e \"After Pet Battles Too\", depois que uma Pet Battle for concluída, o addon pausará quaisquer outras ações enquanto a Rematch carrega uma nova equipe.  Isso deve levar 1 ou 2 segundos no máximo.  Ajustar essa configuração alterará o atraso máximo permitido."
+L["Pet Battle Close Delay Setting"] = "Pet Battle Close Delay"
+L["Pet Battle Close Delay Description"] = "Depois que uma Batalha de Animais de Estimação for concluída, o addon atrasará por um curto período para permitir que o jogo atualize o status e a saúde dos animais de estimação carregados.  Altere esse valor para aumentar ou diminuir o atraso máximo.  Isso só se aplica enquanto não estiver usando as opções de revanche \"Load Healthiest Pets\" e \"After Pet Battles Too\"."
+L["Heal Delay Setting"] = "Atraso de cura"
+L["Heal Delay Description"] = "Depois de curar seus animais de estimação com um curativo, ou Revice Battle Pets, o addon irá atrasar por um curto período para permitir que o jogo seja atualizado.  Altere esse valor para aumentar ou diminuir o atraso máximo."
+L["Help Header"] = "Comandos de barra disponíveis:"
+L["Help Default"] = "Alterne a janela principal do UltraSquirt."
+L["Help Config"] = "Exibir painel de configuração."
+L["Help Advanced"] = "Exibir o painel Equipes avançadas."
+L["Help Reset"] = "Redefina todas as configurações do UltraSquirt e as posições das janelas para o padrão."
+L["Help Help"] = "Exiba esta lista de comandos disponíveis."
+L["Invalid Command"] = "Comando inválido."
+L["Team Name"] = "Nome da Equipe"
+L["Mute Addon Enabled and Disabled Messages"] = "Silenciar Addon Mensagens Habilitadas e Desabilitadas"

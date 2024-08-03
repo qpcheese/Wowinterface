@@ -8,14 +8,6 @@ OPie_SavedData = {
 ["_OPieVersion"] = "Zeta 8a (4.126)",
 ["ProfileStorage"] = {
 ["default"] = {
-["RingOptions"] = {
-["WORMHOLES#MouseBucket"] = 1,
-["WORMHOLES#ShowCooldowns"] = true,
-["WORMHOLES#RingAtMouse"] = true,
-["WORMHOLES#SliceBinding"] = false,
-["WORMHOLES#ShowRecharge"] = true,
-["WORMHOLES#CenterAction"] = true,
-},
 ["Bindings"] = {
 ["TOYS"] = "F2",
 ["SpecMenu"] = "F2",
@@ -27,6 +19,14 @@ OPie_SavedData = {
 ["CommonTrades"] = false,
 ["MageCombat"] = false,
 ["WorldMarkers"] = "F1",
+},
+["RingOptions"] = {
+["WORMHOLES#MouseBucket"] = 1,
+["WORMHOLES#ShowCooldowns"] = true,
+["WORMHOLES#RingAtMouse"] = true,
+["WORMHOLES#SliceBinding"] = false,
+["WORMHOLES#ShowRecharge"] = true,
+["WORMHOLES#CenterAction"] = true,
 },
 },
 },
@@ -100,81 +100,81 @@ OPie_SavedData = {
 {
 "item",
 217930,
-["sliceToken"] = "OPCTAx",
 ["vm"] = 2,
+["sliceToken"] = "OPCTAx",
 },
 {
-["sliceToken"] = "ABue6ko5i1e",
 ["id"] = 410080,
+["sliceToken"] = "ABue6ko5i1e",
 },
 {
-["sliceToken"] = "ABue6ko5i1w",
 ["id"] = 393276,
+["sliceToken"] = "ABue6ko5i1w",
 },
 {
-["sliceToken"] = "ABue6ko5i1r",
 ["id"] = 410071,
+["sliceToken"] = "ABue6ko5i1r",
 },
 {
-["sliceToken"] = "ABue6ko5i11",
 ["id"] = 410074,
+["sliceToken"] = "ABue6ko5i11",
 },
 {
-["sliceToken"] = "ABue6ko5i1u",
 ["id"] = 410078,
+["sliceToken"] = "ABue6ko5i1u",
 },
 {
-["sliceToken"] = "ABue6ko5i1t",
 ["id"] = 393267,
+["sliceToken"] = "ABue6ko5i1t",
 },
 {
-["sliceToken"] = "ABue6ko5i1y",
 ["id"] = 393283,
+["sliceToken"] = "ABue6ko5i1y",
 },
 {
-["sliceToken"] = "ABue6ko5i1i",
 ["id"] = 393222,
+["sliceToken"] = "ABue6ko5i1i",
 },
 {
-["sliceToken"] = "ABuenYKaMWw",
 ["id"] = 424187,
+["sliceToken"] = "ABuenYKaMWw",
 },
 {
-["sliceToken"] = "ABuenYKaMWe",
 ["id"] = 424197,
+["sliceToken"] = "ABuenYKaMWe",
 },
 {
-["sliceToken"] = "ABuenYKaMWr",
 ["id"] = 424142,
+["sliceToken"] = "ABuenYKaMWr",
 },
 {
-["sliceToken"] = "ABuenYKaMW1",
 ["id"] = 424153,
+["sliceToken"] = "ABuenYKaMW1",
 },
 {
-["sliceToken"] = "ABuenAZCmWe",
 ["id"] = 424167,
+["sliceToken"] = "ABuenAZCmWe",
 },
 {
-["sliceToken"] = "ABuenAZCmWw",
 ["id"] = 424163,
+["sliceToken"] = "ABuenAZCmWw",
 },
 {
-["sliceToken"] = "ABuenYKaMWt",
 ["id"] = 159901,
+["sliceToken"] = "ABuenYKaMWt",
 },
 {
-["sliceToken"] = "ABueQpGl3hw",
 ["id"] = 393279,
+["sliceToken"] = "ABueQpGl3hw",
 },
 {
-["sliceToken"] = "ABueQpGl3he",
 ["id"] = 393273,
+["sliceToken"] = "ABueQpGl3he",
 },
-["save"] = true,
-["v"] = 3,
 ["name"] = "Specializations and Travel",
+["v"] = 3,
 ["vm"] = 127,
+["save"] = true,
 ["hotkey"] = "ALT-H",
 ["dropTokens"] = {
 ["OPCTAc"] = 1,
@@ -190,50 +190,50 @@ OPie_SavedData = {
 },
 ["MageTools"] = {
 {
-["sliceToken"] = "OPCMTi",
 ["id"] = "/cast [nomod] {{spell:110959}}; {{spell:66}}; {{spell:110959}}",
+["sliceToken"] = "OPCMTi",
 ["vm"] = 2,
 },
 {
 "ring",
 "MagePolymorph",
+["vm"] = 2,
 ["sliceToken"] = "OPCMTt",
-["vm"] = 2,
 },
 {
-["sliceToken"] = "OPCMTs",
 ["id"] = 130,
+["sliceToken"] = "OPCMTs",
 ["vm"] = 2,
 },
 {
-["sliceToken"] = "OPCMTn",
 ["id"] = 1459,
+["sliceToken"] = "OPCMTn",
 },
 {
-["sliceToken"] = "OPCMTf",
 ["id"] = 42955,
+["sliceToken"] = "OPCMTf",
 ["vm"] = 2,
 },
 {
-["sliceToken"] = "OPCMTm",
 ["id"] = "#imp critical\n/cast [advflyable] {{mount:dragon}}; [flyable] {{mount:air}}; {{mount:ground}}\n/changeactionbar [advflyable,nocombat,outdoors] 1",
+["sliceToken"] = "OPCMTm",
 ["fastClick"] = true,
 },
 {
-["sliceToken"] = "ABue6EEht1w",
 ["id"] = 125439,
+["sliceToken"] = "ABue6EEht1w",
 },
 {
 "item",
 86143,
 ["sliceToken"] = "ABue6EEht1e",
 },
-["save"] = true,
-["v"] = 1,
-["vm"] = 127,
 ["name"] = "Utility",
 ["limit"] = "MAGE",
+["vm"] = 127,
+["save"] = true,
 ["hotkey"] = "BUTTON4",
+["v"] = 1,
 },
 ["TOYS"] = {
 {
@@ -286,10 +286,10 @@ OPie_SavedData = {
 "guild",
 ["sliceToken"] = "ABuebccIZrn",
 },
-["limit"] = "Qpcheese-Ragnaros",
-["save"] = true,
-["hotkey"] = "F2",
 ["name"] = "TOYS",
+["save"] = true,
+["limit"] = "Qpcheese-Ragnaros",
+["hotkey"] = "F2",
 },
 ["OPieFlagStore"] = {
 ["StoreVersion"] = 3,

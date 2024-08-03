@@ -1,0 +1,7 @@
+## Interface: 100005
+## Title: |cff00ff00<WA Soundpack>|r |cff69ccf0by Zytech|r
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+embeds.xml
+Soundpaths.lua 

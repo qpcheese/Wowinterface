@@ -1,0 +1,102 @@
+local LSM = LibStub("LibSharedMedia-3.0") 
+
+-- ----- 
+-- BACKGROUND 
+-- ----- 
+
+-- ----- 
+--  BORDER 
+-- ---- 
+
+-- -----
+--   FONT
+-- -----
+LSM:Register("font", "Zytech_TV_Old", [[Interface\Addons\SharedMedia_Zytech\font\Zytech_TV_Old.ttf]]) 
+LSM:Register("font", "Zytech_TV", [[Interface\Addons\SharedMedia_Zytech\font\Zytech_TV.ttf]]) 
+-- -----
+--   SOUND
+-- -----
+
+LSM:Register("sound", "|cff00ff00[ZTV] Adds|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Adds.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] AoE|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] AoE.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Avoid|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Avoid.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Decurse|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Decurse.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Dispel|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Dispel.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Dodge|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Dodge.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Enraged|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Enraged.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Focus|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Focus.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Frontal|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Frontal.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Get Good|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Get Good.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Healer Diff|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Healer Diff.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Hide|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Hide.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Kick|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Kick.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Move Out|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Move Out.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Personal|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Personal.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Spread|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Spread.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Stack|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Stack.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Stop Cast|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Stop Cast.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Stun|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Stun.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] Swap|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Swap.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] 1 - One|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] 1 - One.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] 2 - Two|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] 2 - Two.mp3]]) 
+LSM:Register("sound", "|cff00ff00[ZTV] 3 - Three|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] 3 - Three.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Back|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Back.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Big Dick Damage|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Big Dick Damage.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Dance|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Dance.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Front|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Front.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Left|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Left.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Purge|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Purge.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Right|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Right.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Smash|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Smash.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Jump|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Jump.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Soak|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Soak.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Kite|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Kite.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Run|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Run.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Fixate|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Fixate.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Clear|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Clear.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Bait|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Bait.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Group 1|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Group 1.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Group 2|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Group 2.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Group 3|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Group 3.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Group 4|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Group 4.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Healer|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Healer.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Melee|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Melee.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Range|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Range.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Tanks|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Tanks.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Next|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Next.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Sooth|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Sooth.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] CC|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] CC.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Potion|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Potion.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Healthstone|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Healthstone.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Totem|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Totem.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Collect|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Collect.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Shield|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Shield.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Drop Void|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Drop Void.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Pool|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Pool.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Portal|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Portal.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Beam|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Beam.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Idiot|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Idiot.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Thorns|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Thorns.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Silence|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Silence.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Trap|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Trap.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Mind Control|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Mind Control.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Knock Up|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Knock Up.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Knock Back|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Knock Back.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Leap|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Leap.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Charge|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Charge.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Taunt|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Taunt.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Add|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Add.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Orb|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Orb.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Out|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Out.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] In|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] In.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Intermission|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Intermission.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Targeted|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Targeted.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Grip|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Grip.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Pull|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Pull.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Push|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Push.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] High Stacks|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] High Stacks.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Buff|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Buff.mp3]])
+LSM:Register("sound", "|cff00ff00[ZTV] Debuff|r", [[Interface\Addons\SharedMedia_Zytech\sound\[ZTV] Debuff.mp3]])
+-- -----
+--   STATUSBAR
+-- -----

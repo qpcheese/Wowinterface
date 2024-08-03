@@ -23,24 +23,24 @@ ProfessionShoppingList_Settings = {
 ["pcWindows"] = false,
 ["closeWhenDone"] = false,
 ["hide"] = false,
-["minimapPos"] = 272.121118770295,
+["alvinGUID"] = "BattlePet-0-000012C4203E",
 ["minimapIcon"] = true,
 ["onetimeMessages"] = {
 ["vendorItems"] = true,
 },
-["showRemaining"] = false,
+["pcRecipes"] = false,
 ["pcRecipesTracked"] = false,
 ["backpackCleanup"] = 0,
 ["backpackCount"] = true,
 ["removeCraft"] = true,
 ["queueSound"] = false,
-["showRecipeCooldowns"] = true,
 ["knowledgeAlwaysShowDetails"] = false,
+["showRecipeCooldowns"] = true,
 ["showKnowledgeNotPerks"] = false,
 ["windowLocked"] = false,
-["pcRecipes"] = false,
+["showRemaining"] = false,
 ["vendorAll"] = true,
-["alvinGUID"] = "BattlePet-0-000012C4203E",
+["minimapPos"] = 272.121118770295,
 }
 ProfessionShoppingList_Data = {
 ["Cooldowns"] = {
@@ -50,8 +50,8 @@ ProfessionShoppingList_Data = {
 ["user"] = "Qpfromage-Sylvanas",
 ["start"] = 1717680970,
 ["maxCharges"] = 7,
-["recipeID"] = 370714,
 ["cooldown"] = 51829,
+["recipeID"] = 370714,
 },
 },
 ["Recipes"] = {
@@ -27403,15 +27403,15 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 22196,
 ["tradeskillID"] = 164,
 },
-[367605] = {
-["abilityID"] = 46688,
-["itemID"] = 190498,
-["tradeskillID"] = 164,
-},
 [159236] = {
 ["abilityID"] = 32452,
 ["itemID"] = 0,
 ["tradeskillID"] = 333,
+},
+[367605] = {
+["abilityID"] = 46688,
+["itemID"] = 190498,
+["tradeskillID"] = 164,
 },
 [73478] = {
 ["abilityID"] = 21513,
@@ -27819,13 +27819,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 2585,
 ["abilityID"] = 2374,
 },
-[69388] = {
-["itemID"] = 49634,
-["abilityID"] = 21316,
-},
 [2169] = {
 ["itemID"] = 2317,
 ["abilityID"] = 1371,
+},
+[69388] = {
+["itemID"] = 49634,
+["abilityID"] = 21316,
 },
 [297999] = {
 ["abilityID"] = 40618,
@@ -28108,9 +28108,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 41255,
 ["abilityID"] = 19454,
 },
-[355354] = {
-["itemID"] = 186985,
-["abilityID"] = 46194,
+[338971] = {
+["abilityID"] = 45585,
+["itemID"] = 191336,
+["tradeskillID"] = 164,
 },
 [125596] = {
 ["itemID"] = 87234,
@@ -28160,14 +28161,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 14530,
 ["abilityID"] = 39384,
 },
-[322591] = {
-["abilityID"] = 43552,
-["itemID"] = 171446,
-["tradeskillID"] = 164,
-},
 [338974] = {
 ["abilityID"] = 45587,
 ["itemID"] = 191336,
+["tradeskillID"] = 164,
+},
+[322591] = {
+["abilityID"] = 43552,
+["itemID"] = 171446,
 ["tradeskillID"] = 164,
 },
 [55177] = {
@@ -29182,10 +29183,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 129032,
 ["abilityID"] = 35806,
 },
-[122651] = {
-["abilityID"] = 26470,
-["itemID"] = 82977,
-["tradeskillID"] = 164,
+[73502] = {
+["abilityID"] = 23890,
+["itemID"] = 52319,
+["tradeskillID"] = 755,
 },
 [185704] = {
 ["abilityID"] = 34289,
@@ -29535,14 +29536,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 23520,
 ["tradeskillID"] = 164,
 },
+[302187] = {
+["itemID"] = 169301,
+["abilityID"] = 40932,
+},
 [269421] = {
 ["abilityID"] = 39445,
 ["itemID"] = 159861,
 ["tradeskillID"] = 164,
-},
-[302187] = {
-["itemID"] = 169301,
-["abilityID"] = 40932,
 },
 [229180] = {
 ["itemID"] = 142101,
@@ -29987,18 +29988,19 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 14143,
 ["abilityID"] = 10405,
 },
+[44950] = {
+["itemID"] = 151792,
+["abilityID"] = 16155,
+},
 [122662] = {
 ["abilityID"] = 26479,
 ["itemID"] = 83794,
 ["tradeskillID"] = 755,
 },
-[44950] = {
-["itemID"] = 151792,
-["abilityID"] = 16155,
-},
-[74537] = {
-["itemID"] = 53039,
-["abilityID"] = 21623,
+[22732] = {
+["abilityID"] = 12299,
+["itemID"] = 18253,
+["tradeskillID"] = 171,
 },
 [269446] = {
 ["abilityID"] = 39449,
@@ -30237,14 +30239,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 0,
 ["tradeskillID"] = 333,
 },
-[269459] = {
-["abilityID"] = 39458,
-["itemID"] = 159851,
-["tradeskillID"] = 164,
-},
 [9959] = {
 ["abilityID"] = 5328,
 ["itemID"] = 7930,
+["tradeskillID"] = 164,
+},
+[269459] = {
+["abilityID"] = 39458,
+["itemID"] = 159851,
 ["tradeskillID"] = 164,
 },
 [304565] = {
@@ -30283,15 +30285,15 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 43454,
 ["abilityID"] = 20377,
 },
-[122666] = {
-["abilityID"] = 26550,
-["itemID"] = 83799,
-["tradeskillID"] = 755,
-},
 [343185] = {
 ["abilityID"] = 45739,
 ["itemID"] = 173382,
 ["tradeskillID"] = 164,
+},
+[122666] = {
+["abilityID"] = 26550,
+["itemID"] = 83799,
+["tradeskillID"] = 755,
 },
 [58486] = {
 ["itemID"] = 4426,
@@ -30444,9 +30446,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 159855,
 ["tradeskillID"] = 164,
 },
-[31437] = {
-["itemID"] = 24251,
-["abilityID"] = 14625,
+[185940] = {
+["itemID"] = 126988,
+["abilityID"] = 34316,
 },
 [3962] = {
 ["abilityID"] = 2456,
@@ -31021,9 +31023,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 17721,
 ["abilityID"] = 12140,
 },
-[185956] = {
-["itemID"] = 127000,
-["abilityID"] = 34332,
+[388279] = {
+["abilityID"] = 47751,
+["itemID"] = 191304,
+["tradeskillID"] = 164,
 },
 [73504] = {
 ["abilityID"] = 23895,
@@ -31050,13 +31053,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 154882,
 ["abilityID"] = 39635,
 },
-[185957] = {
-["itemID"] = 126999,
-["abilityID"] = 34333,
-},
 [388281] = {
 ["itemID"] = 199905,
 ["abilityID"] = 47723,
+},
+[185957] = {
+["itemID"] = 126999,
+["abilityID"] = 34333,
 },
 [29621] = {
 ["abilityID"] = 14210,
@@ -31136,19 +31139,19 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 52489,
 ["tradeskillID"] = 755,
 },
-[122678] = {
-["abilityID"] = 26613,
-["itemID"] = 83148,
-["tradeskillID"] = 755,
+[44958] = {
+["itemID"] = 151790,
+["abilityID"] = 16154,
 },
 [142954] = {
 ["abilityID"] = 31478,
 ["itemID"] = 98602,
 ["tradeskillID"] = 164,
 },
-[44958] = {
-["itemID"] = 151790,
-["abilityID"] = 16154,
+[122678] = {
+["abilityID"] = 26613,
+["itemID"] = 83148,
+["tradeskillID"] = 755,
 },
 [22480] = {
 ["abilityID"] = 12236,
@@ -31279,14 +31282,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 23526,
 ["tradeskillID"] = 164,
 },
+[269517] = {
+["itemID"] = 159884,
+["abilityID"] = 39494,
+},
 [142958] = {
 ["abilityID"] = 31479,
 ["itemID"] = 98606,
 ["tradeskillID"] = 164,
-},
-[269517] = {
-["itemID"] = 159884,
-["abilityID"] = 39494,
 },
 [122670] = {
 ["abilityID"] = 26535,
@@ -31368,9 +31371,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 83144,
 ["tradeskillID"] = 755,
 },
-[74556] = {
-["itemID"] = 53049,
-["abilityID"] = 39375,
+[181870] = {
+["itemID"] = 0,
+["abilityID"] = 34025,
 },
 [269522] = {
 ["itemID"] = 159886,
@@ -31422,13 +31425,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 32476,
 ["tradeskillID"] = 202,
 },
-[142962] = {
-["itemID"] = 98610,
-["abilityID"] = 31493,
-},
 [269525] = {
 ["itemID"] = 159887,
 ["abilityID"] = 39484,
+},
+[142962] = {
+["itemID"] = 98610,
+["abilityID"] = 31493,
 },
 [307676] = {
 ["abilityID"] = 42409,
@@ -31529,13 +31532,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 41239,
 ["tradeskillID"] = 164,
 },
-[269531] = {
-["itemID"] = 159889,
-["abilityID"] = 39486,
-},
 [142965] = {
 ["itemID"] = 98613,
 ["abilityID"] = 31494,
+},
+[269531] = {
+["itemID"] = 159889,
+["abilityID"] = 39486,
 },
 [188341] = {
 ["abilityID"] = 34470,
@@ -31564,13 +31567,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 23527,
 ["tradeskillID"] = 164,
 },
-[142966] = {
-["itemID"] = 98614,
-["abilityID"] = 31495,
-},
 [269533] = {
 ["itemID"] = 159889,
 ["abilityID"] = 39505,
+},
+[142966] = {
+["itemID"] = 98614,
+["abilityID"] = 31495,
 },
 [104338] = {
 ["abilityID"] = 26258,
@@ -31600,14 +31603,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 172914,
 ["tradeskillID"] = 202,
 },
-[269535] = {
-["itemID"] = 159890,
-["abilityID"] = 39506,
-},
 [142967] = {
 ["abilityID"] = 31482,
 ["itemID"] = 98615,
 ["tradeskillID"] = 164,
+},
+[269535] = {
+["itemID"] = 159890,
+["abilityID"] = 39506,
 },
 [32465] = {
 ["itemID"] = 25657,
@@ -31636,25 +31639,24 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 34759,
 ["tradeskillID"] = 185,
 },
-[310495] = {
-["abilityID"] = 42724,
-["itemID"] = 0,
-["tradeskillID"] = 202,
+[122685] = {
+["abilityID"] = 26525,
+["itemID"] = 83152,
+["tradeskillID"] = 755,
 },
-[142968] = {
-["abilityID"] = 31483,
-["itemID"] = 98616,
-["tradeskillID"] = 164,
+[269537] = {
+["itemID"] = 159891,
+["abilityID"] = 39488,
 },
 [36258] = {
 ["abilityID"] = 15642,
 ["itemID"] = 28427,
 ["tradeskillID"] = 164,
 },
-[122685] = {
-["abilityID"] = 26525,
-["itemID"] = 83152,
-["tradeskillID"] = 755,
+[310495] = {
+["abilityID"] = 42724,
+["itemID"] = 0,
+["tradeskillID"] = 202,
 },
 [50948] = {
 ["itemID"] = 38404,
@@ -31811,15 +31813,15 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 85816,
 ["abilityID"] = 26938,
 },
-[310504] = {
-["abilityID"] = 42743,
-["itemID"] = 172906,
-["tradeskillID"] = 202,
-},
 [138877] = {
 ["abilityID"] = 31240,
 ["itemID"] = 94576,
 ["tradeskillID"] = 164,
+},
+[310504] = {
+["abilityID"] = 42743,
+["itemID"] = 172906,
+["tradeskillID"] = 202,
 },
 [125548] = {
 ["itemID"] = 82438,
@@ -32000,10 +32002,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 52318,
 ["tradeskillID"] = 755,
 },
-[359663] = {
-["abilityID"] = 46269,
-["itemID"] = 187741,
-["tradeskillID"] = 755,
+[138882] = {
+["abilityID"] = 31235,
+["itemID"] = 94581,
+["tradeskillID"] = 164,
 },
 [107624] = {
 ["abilityID"] = 26504,
@@ -32115,9 +32117,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 41243,
 ["tradeskillID"] = 164,
 },
-[359669] = {
-["itemID"] = 187742,
-["abilityID"] = 46277,
+[138885] = {
+["abilityID"] = 31236,
+["itemID"] = 94584,
+["tradeskillID"] = 164,
 },
 [3775] = {
 ["itemID"] = 4258,
@@ -32198,18 +32201,18 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 98884,
 ["abilityID"] = 31637,
 },
-[310525] = {
-["abilityID"] = 42756,
-["itemID"] = 172936,
+[359674] = {
+["abilityID"] = 46275,
+["itemID"] = 187742,
 ["tradeskillID"] = 202,
 },
 [32467] = {
 ["itemID"] = 25661,
 ["abilityID"] = 14860,
 },
-[359674] = {
-["abilityID"] = 46275,
-["itemID"] = 187742,
+[310525] = {
+["abilityID"] = 42756,
+["itemID"] = 172936,
 ["tradeskillID"] = 202,
 },
 [201685] = {
@@ -32705,9 +32708,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 43587,
 ["tradeskillID"] = 164,
 },
-[55208] = {
-["itemID"] = 37663,
-["abilityID"] = 19245,
+[3451] = {
+["abilityID"] = 1934,
+["itemID"] = 3826,
+["tradeskillID"] = 171,
 },
 [13931] = {
 ["abilityID"] = 7676,
@@ -32844,17 +32848,17 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 77589,
 ["tradeskillID"] = 202,
 },
-[112462] = {
-["itemID"] = 87881,
-["abilityID"] = 27231,
+[269603] = {
+["itemID"] = 159913,
+["abilityID"] = 39527,
 },
 [173719] = {
 ["itemID"] = 0,
 ["abilityID"] = 33645,
 },
-[269603] = {
-["itemID"] = 159913,
-["abilityID"] = 39527,
+[112462] = {
+["itemID"] = 87881,
+["abilityID"] = 27231,
 },
 [80720] = {
 ["abilityID"] = 21993,
@@ -33232,9 +33236,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 40124,
 ["tradeskillID"] = 755,
 },
-[173730] = {
-["itemID"] = 0,
-["abilityID"] = 33662,
+[12908] = {
+["abilityID"] = 7073,
+["itemID"] = 10727,
+["tradeskillID"] = 202,
 },
 [73361] = {
 ["abilityID"] = 21463,
@@ -33362,10 +33367,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 172347,
 ["abilityID"] = 44561,
 },
-[286015] = {
-["abilityID"] = 40206,
-["itemID"] = 152812,
-["tradeskillID"] = 164,
+[384313] = {
+["abilityID"] = 47620,
+["itemID"] = 198549,
+["tradeskillID"] = 202,
 },
 [50605] = {
 ["itemID"] = 1712,
@@ -33591,9 +33596,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 76569,
 ["tradeskillID"] = 755,
 },
-[29656] = {
-["abilityID"] = 14220,
-["itemID"] = 23529,
+[171692] = {
+["abilityID"] = 33454,
+["itemID"] = 116427,
 ["tradeskillID"] = 164,
 },
 [374550] = {
@@ -33807,14 +33812,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 7189,
 ["tradeskillID"] = 202,
 },
-[50608] = {
-["itemID"] = 27501,
-["abilityID"] = 17503,
-},
 [25305] = {
 ["abilityID"] = 13205,
 ["itemID"] = 20826,
 ["tradeskillID"] = 755,
+},
+[50608] = {
+["itemID"] = 27501,
+["abilityID"] = 17503,
 },
 [171698] = {
 ["abilityID"] = 33460,
@@ -34228,10 +34233,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 127373,
 ["abilityID"] = 34393,
 },
-[7863] = {
-["abilityID"] = 4402,
-["itemID"] = 0,
-["tradeskillID"] = 333,
+[31450] = {
+["itemID"] = 24260,
+["abilityID"] = 14634,
 },
 [9201] = {
 ["itemID"] = 7378,
@@ -34507,13 +34511,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 15069,
 ["abilityID"] = 10780,
 },
-[169669] = {
-["itemID"] = 111556,
-["abilityID"] = 33222,
-},
 [31451] = {
 ["itemID"] = 24261,
 ["abilityID"] = 14635,
+},
+[169669] = {
+["itemID"] = 111556,
+["abilityID"] = 33222,
 },
 [278416] = {
 ["abilityID"] = 39839,
@@ -34770,9 +34774,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 198198,
 ["tradeskillID"] = 202,
 },
-[143054] = {
-["itemID"] = 98757,
-["abilityID"] = 31533,
+[104297] = {
+["itemID"] = 74641,
+["abilityID"] = 24788,
 },
 [57425] = {
 ["abilityID"] = 19710,
@@ -34842,9 +34846,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 76080,
 ["tradeskillID"] = 171,
 },
-[143056] = {
-["itemID"] = 98764,
-["abilityID"] = 31540,
+[104298] = {
+["itemID"] = 74642,
+["abilityID"] = 26786,
 },
 [138887] = {
 ["abilityID"] = 31231,
@@ -34877,10 +34881,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 152812,
 ["tradeskillID"] = 164,
 },
-[269715] = {
-["abilityID"] = 39546,
-["itemID"] = 159922,
-["tradeskillID"] = 333,
+[143057] = {
+["itemID"] = 98765,
+["abilityID"] = 31541,
 },
 [9968] = {
 ["abilityID"] = 5332,
@@ -34908,13 +34911,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 74650,
 ["abilityID"] = 26865,
 },
-[143058] = {
-["itemID"] = 98766,
-["abilityID"] = 31542,
-},
 [104299] = {
 ["itemID"] = 74645,
 ["abilityID"] = 26787,
+},
+[143058] = {
+["itemID"] = 98766,
+["abilityID"] = 31542,
 },
 [54017] = {
 ["abilityID"] = 18369,
@@ -34978,13 +34981,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 162460,
 ["abilityID"] = 40217,
 },
-[143060] = {
-["itemID"] = 98768,
-["abilityID"] = 31544,
-},
 [104300] = {
 ["itemID"] = 74646,
 ["abilityID"] = 26788,
+},
+[143060] = {
+["itemID"] = 98768,
+["abilityID"] = 31544,
 },
 [3292] = {
 ["abilityID"] = 1849,
@@ -35047,17 +35050,18 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 2845,
 ["tradeskillID"] = 164,
 },
-[104301] = {
-["itemID"] = 74643,
-["abilityID"] = 26854,
-},
-[3772] = {
-["itemID"] = 4255,
-["abilityID"] = 2181,
+[269725] = {
+["abilityID"] = 39553,
+["itemID"] = 159937,
+["tradeskillID"] = 202,
 },
 [143062] = {
 ["itemID"] = 98770,
 ["abilityID"] = 31546,
+},
+[3772] = {
+["itemID"] = 4255,
+["abilityID"] = 2181,
 },
 [359701] = {
 ["abilityID"] = 46280,
@@ -35087,14 +35091,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 12210,
 ["tradeskillID"] = 185,
 },
+[143063] = {
+["itemID"] = 98771,
+["abilityID"] = 31547,
+},
 [269727] = {
 ["abilityID"] = 39555,
 ["itemID"] = 159936,
 ["tradeskillID"] = 202,
-},
-[143063] = {
-["itemID"] = 98771,
-["abilityID"] = 31547,
 },
 [30341] = {
 ["abilityID"] = 14362,
@@ -35197,13 +35201,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 23770,
 ["tradeskillID"] = 202,
 },
-[104303] = {
-["itemID"] = 74648,
-["abilityID"] = 26856,
-},
 [143066] = {
 ["itemID"] = 98774,
 ["abilityID"] = 31536,
+},
+[104303] = {
+["itemID"] = 74648,
+["abilityID"] = 26856,
 },
 [304415] = {
 ["itemID"] = 170350,
@@ -35239,14 +35243,14 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 115987,
 ["tradeskillID"] = 755,
 },
+[143067] = {
+["itemID"] = 98825,
+["abilityID"] = 31548,
+},
 [269735] = {
 ["abilityID"] = 39562,
 ["itemID"] = 159939,
 ["tradeskillID"] = 755,
-},
-[143067] = {
-["itemID"] = 98825,
-["abilityID"] = 31548,
 },
 [114754] = {
 ["abilityID"] = 26024,
@@ -35321,10 +35325,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 27666,
 ["abilityID"] = 15016,
 },
-[269725] = {
-["abilityID"] = 39553,
-["itemID"] = 159937,
-["tradeskillID"] = 202,
+[104301] = {
+["itemID"] = 74643,
+["abilityID"] = 26854,
 },
 [7224] = {
 ["abilityID"] = 4205,
@@ -35350,13 +35353,13 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 3240,
 ["tradeskillID"] = 164,
 },
-[143070] = {
-["itemID"] = 98828,
-["abilityID"] = 31564,
-},
 [104305] = {
 ["itemID"] = 74649,
 ["abilityID"] = 26864,
+},
+[143070] = {
+["itemID"] = 98828,
+["abilityID"] = 31564,
 },
 [23190] = {
 ["itemID"] = 18662,
@@ -35442,9 +35445,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 203411,
 ["tradeskillID"] = 202,
 },
-[143057] = {
-["itemID"] = 98765,
-["abilityID"] = 31541,
+[269715] = {
+["abilityID"] = 39546,
+["itemID"] = 159922,
+["tradeskillID"] = 333,
 },
 [66569] = {
 ["abilityID"] = 21155,
@@ -35463,9 +35467,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 136852,
 ["abilityID"] = 35829,
 },
-[104298] = {
-["itemID"] = 74642,
-["abilityID"] = 26786,
+[143056] = {
+["itemID"] = 98764,
+["abilityID"] = 31540,
 },
 [29657] = {
 ["abilityID"] = 14221,
@@ -35520,9 +35524,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 182010,
 ["abilityID"] = 45548,
 },
-[104297] = {
-["itemID"] = 74641,
-["abilityID"] = 24788,
+[143054] = {
+["itemID"] = 98757,
+["abilityID"] = 31533,
 },
 [143075] = {
 ["itemID"] = 98868,
@@ -36004,9 +36008,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 14048,
 ["abilityID"] = 10396,
 },
-[31450] = {
-["itemID"] = 24260,
-["abilityID"] = 14634,
+[7863] = {
+["abilityID"] = 4402,
+["itemID"] = 0,
+["tradeskillID"] = 333,
 },
 [387246] = {
 ["abilityID"] = 47681,
@@ -36452,9 +36457,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 127033,
 ["abilityID"] = 34366,
 },
-[171692] = {
-["abilityID"] = 33454,
-["itemID"] = 116427,
+[29656] = {
+["abilityID"] = 14220,
+["itemID"] = 23529,
 ["tradeskillID"] = 164,
 },
 [111646] = {
@@ -36637,10 +36642,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 43398,
 ["abilityID"] = 20547,
 },
-[384313] = {
-["abilityID"] = 47620,
-["itemID"] = 198549,
-["tradeskillID"] = 202,
+[286015] = {
+["abilityID"] = 40206,
+["itemID"] = 152812,
+["tradeskillID"] = 164,
 },
 [60355] = {
 ["abilityID"] = 20276,
@@ -36732,10 +36737,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 44329,
 ["tradeskillID"] = 171,
 },
-[12908] = {
-["abilityID"] = 7073,
-["itemID"] = 10727,
-["tradeskillID"] = 202,
+[173730] = {
+["itemID"] = 0,
+["abilityID"] = 33662,
 },
 [186114] = {
 ["itemID"] = 127019,
@@ -37010,10 +37014,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 98836,
 ["abilityID"] = 31605,
 },
-[3451] = {
-["abilityID"] = 1934,
-["itemID"] = 3826,
-["tradeskillID"] = 171,
+[55208] = {
+["itemID"] = 37663,
+["abilityID"] = 19245,
 },
 [73222] = {
 ["abilityID"] = 21388,
@@ -37437,10 +37440,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 28102,
 ["tradeskillID"] = 171,
 },
-[138885] = {
-["abilityID"] = 31236,
-["itemID"] = 94584,
-["tradeskillID"] = 164,
+[359669] = {
+["itemID"] = 187742,
+["abilityID"] = 46277,
 },
 [76465] = {
 ["abilityID"] = 21817,
@@ -37510,10 +37512,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 191387,
 ["tradeskillID"] = 171,
 },
-[138882] = {
-["abilityID"] = 31235,
-["itemID"] = 94581,
-["tradeskillID"] = 164,
+[359663] = {
+["abilityID"] = 46269,
+["itemID"] = 187741,
+["tradeskillID"] = 755,
 },
 [53949] = {
 ["abilityID"] = 18439,
@@ -37721,9 +37723,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 22521,
 ["tradeskillID"] = 333,
 },
-[269537] = {
-["itemID"] = 159891,
-["abilityID"] = 39488,
+[142968] = {
+["abilityID"] = 31483,
+["itemID"] = 98616,
+["tradeskillID"] = 164,
 },
 [66452] = {
 ["abilityID"] = 21127,
@@ -37841,9 +37844,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 34753,
 ["tradeskillID"] = 185,
 },
-[181870] = {
-["itemID"] = 0,
-["abilityID"] = 34025,
+[74556] = {
+["itemID"] = 53049,
+["abilityID"] = 39375,
 },
 [76441] = {
 ["abilityID"] = 21794,
@@ -38034,10 +38037,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 98891,
 ["abilityID"] = 31626,
 },
-[388279] = {
-["abilityID"] = 47751,
-["itemID"] = 191304,
-["tradeskillID"] = 164,
+[185956] = {
+["itemID"] = 127000,
+["abilityID"] = 34332,
 },
 [18408] = {
 ["itemID"] = 14042,
@@ -38374,9 +38376,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 174350,
 ["abilityID"] = 43087,
 },
-[185940] = {
-["itemID"] = 126988,
-["abilityID"] = 34316,
+[31437] = {
+["itemID"] = 24251,
+["abilityID"] = 14625,
 },
 [374495] = {
 ["abilityID"] = 46976,
@@ -38608,10 +38610,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 98907,
 ["abilityID"] = 31587,
 },
-[22732] = {
-["abilityID"] = 12299,
-["itemID"] = 18253,
-["tradeskillID"] = 171,
+[74537] = {
+["itemID"] = 53039,
+["abilityID"] = 21623,
 },
 [310879] = {
 ["itemID"] = 191327,
@@ -39210,10 +39211,10 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 170348,
 ["abilityID"] = 41000,
 },
-[73502] = {
-["abilityID"] = 23890,
-["itemID"] = 52319,
-["tradeskillID"] = 755,
+[122651] = {
+["abilityID"] = 26470,
+["itemID"] = 82977,
+["tradeskillID"] = 164,
 },
 [343678] = {
 ["abilityID"] = 45773,
@@ -39881,10 +39882,9 @@ ProfessionShoppingList_Library = {
 ["itemID"] = 190311,
 ["abilityID"] = 47550,
 },
-[338971] = {
-["abilityID"] = 45585,
-["itemID"] = 191336,
-["tradeskillID"] = 164,
+[355354] = {
+["itemID"] = 186985,
+["abilityID"] = 46194,
 },
 [389530] = {
 ["abilityID"] = 47786,
